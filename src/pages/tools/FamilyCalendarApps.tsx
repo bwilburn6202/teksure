@@ -33,7 +33,7 @@ export default function FamilyCalendarApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function FamilyCalendarApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup family calendar (Apple)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → tap your name → Family Sharing.</li>
               <li>Add family members.</li>
               <li>Open Calendar app → Calendars → "Add Calendar" → Family.</li>
@@ -55,7 +55,7 @@ export default function FamilyCalendarApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup family calendar (Google)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Google Calendar → Other Calendars → "+" → Create New.</li>
               <li>Name it "Family".</li>
               <li>Settings → Share with: add family member emails.</li>
@@ -68,7 +68,7 @@ export default function FamilyCalendarApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Doctor appointments.</li>
               <li>Family birthdays + anniversaries.</li>
               <li>Grandkid school events you want to attend.</li>
@@ -82,7 +82,7 @@ export default function FamilyCalendarApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Skylight on the kitchen wall</h3>
-            <p className="text-sm text-muted-foreground">Best gift for non-tech grandparent — Skylight Calendar wall-mounted. Family adds events from their phones. It shows up on grandparent&apos;s wall display. They never have to open an app. Just glance. $200 once + $80/yr.</p>
+            <p className="text-base text-muted-foreground">Best gift for non-tech grandparent — Skylight Calendar wall-mounted. Family adds events from their phones. It shows up on grandparent&apos;s wall display. They never have to open an app. Just glance. $200 once + $80/yr.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function DebtCollectorRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">FDCPA protections</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Federal Fair Debt Collection Practices Act.</li>
               <li>Collectors CAN&apos;T call before 8am or after 9pm.</li>
               <li>CAN&apos;T threaten arrest or legal action they can&apos;t take.</li>
@@ -34,7 +34,7 @@ export default function DebtCollectorRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Validate the debt FIRST</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Within 30 days of first contact — request validation in writing.</li>
               <li>Sample letter at consumerfinance.gov.</li>
               <li>Send certified mail.</li>
@@ -48,7 +48,7 @@ export default function DebtCollectorRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Protected income</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Social Security</strong> — generally can&apos;t be garnished by private collectors.</li>
               <li><strong>VA benefits</strong> — protected.</li>
               <li><strong>Federal pensions</strong> — protected.</li>
@@ -63,7 +63,7 @@ export default function DebtCollectorRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stop the calls</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Send written &quot;cease &amp; desist&quot; letter.</li>
               <li>They can only contact you to confirm receipt or lawsuit.</li>
               <li>Sample letter at CFPB.</li>
@@ -77,7 +77,7 @@ export default function DebtCollectorRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Negotiate down</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Old debts often negotiable to 20-50% of amount.</li>
               <li>Get any settlement IN WRITING before paying.</li>
               <li>Pay by check (NOT direct from bank account).</li>
@@ -91,7 +91,7 @@ export default function DebtCollectorRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Report violations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>CFPB</strong> — consumerfinance.gov/complaint. Free.</li>
               <li><strong>FTC</strong> — reportfraud.ftc.gov.</li>
               <li><strong>State Attorney General</strong> — most active on this.</li>
@@ -105,7 +105,7 @@ export default function DebtCollectorRights() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t pay scams</h3>
-            <p className="text-sm text-muted-foreground">Common scam: caller demands cash for &quot;old debt.&quot; If unfamiliar — DON&apos;T PAY. Demand validation. Most are scams or expired debts. Never pay by gift card / wire / Venmo. Real collectors accept check + give written validation. Hang up if pressure tactics. Call your bank. Free help: <strong>NCLC</strong> — nclc.org.</p>
+            <p className="text-base text-muted-foreground">Common scam: caller demands cash for &quot;old debt.&quot; If unfamiliar — DON&apos;T PAY. Demand validation. Most are scams or expired debts. Never pay by gift card / wire / Venmo. Real collectors accept check + give written validation. Hang up if pressure tactics. Call your bank. Free help: <strong>NCLC</strong> — nclc.org.</p>
           </CardContent>
         </Card>
       </main>

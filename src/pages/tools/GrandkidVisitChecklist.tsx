@@ -19,7 +19,7 @@ export default function GrandkidVisitChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Childproof basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Outlet covers everywhere.</li>
               <li>Cabinet locks (medications + chemicals).</li>
               <li>Stair gates if visiting multiple days.</li>
@@ -34,7 +34,7 @@ export default function GrandkidVisitChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medication safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lock ALL meds high.</li>
               <li>Don&apos;t leave on counter.</li>
               <li>Pill organizer in locked drawer.</li>
@@ -49,7 +49,7 @@ export default function GrandkidVisitChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Activities</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bake cookies together.</li>
               <li>Family photo album look-through.</li>
               <li>Crafts (age-appropriate).</li>
@@ -65,7 +65,7 @@ export default function GrandkidVisitChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly snacks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cheese cubes.</li>
               <li>Fruit slices.</li>
               <li>Crackers.</li>
@@ -82,7 +82,7 @@ export default function GrandkidVisitChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pace yourself</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Quiet time during day for senior rest.</li>
               <li>Movie / TV time okay sometimes.</li>
               <li>Activities matched to your energy.</li>
@@ -96,7 +96,7 @@ export default function GrandkidVisitChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Memorable not perfect</h3>
-            <p className="text-sm text-muted-foreground">Grandkids remember the love + time, not perfect activities. Bake cookies even if they break. Read same book 5 times. Sing songs. Hugs. Laugh together. These memories last decades. Pace + plan for joy.</p>
+            <p className="text-base text-muted-foreground">Grandkids remember the love + time, not perfect activities. Bake cookies even if they break. Read same book 5 times. Sing songs. Hugs. Laugh together. These memories last decades. Pace + plan for joy.</p>
           </CardContent>
         </Card>
       </main>

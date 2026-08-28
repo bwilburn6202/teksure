@@ -229,7 +229,7 @@ export default function CordCuttingPlanner() {
                 </div>
               </div>
 
-              <div className="space-y-2 text-sm">
+              <div className="space-y-2 text-base">
                 <div className="flex justify-between py-1 border-b border-gray-200 dark:border-gray-700">
                   <span className="text-gray-600 dark:text-gray-400">Current cable + internet</span>
                   <span className="font-semibold text-gray-900 dark:text-gray-100">${currentTotal.toFixed(0)}/mo</span>

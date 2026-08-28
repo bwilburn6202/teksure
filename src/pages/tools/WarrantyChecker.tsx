@@ -396,7 +396,7 @@ export default function WarrantyChecker() {
                           <Clock className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                           <div>
                             <p className="font-semibold mb-1">Standard warranty period</p>
-                            <p className="text-sm text-muted-foreground">{info.standardPeriod}</p>
+                            <p className="text-base text-muted-foreground">{info.standardPeriod}</p>
                             {info.extendedOption && (
                               <p className="text-sm text-green-600 dark:text-green-400 mt-1">
                                 <strong>Extended option:</strong> {info.extendedOption}

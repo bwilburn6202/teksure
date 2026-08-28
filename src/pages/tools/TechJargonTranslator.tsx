@@ -879,7 +879,7 @@ export default function TechJargonTranslator() {
                     ))}
                   </div>
 
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Showing <strong>{filteredDict.length}</strong> of {DICTIONARY.length} terms.
                     Tap a card to see the full explanation.
                   </p>
@@ -1069,7 +1069,7 @@ export default function TechJargonTranslator() {
                           {translatorOutput.plain}
                         </p>
                       </div>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         <strong>{translatorOutput.replacementCount}</strong> tech term
                         {translatorOutput.replacementCount === 1 ? '' : 's'} translated.
                       </p>
@@ -1133,7 +1133,7 @@ export default function TechJargonTranslator() {
                       </Button>
                     )}
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Showing <strong>{filteredErrors.length}</strong> common errors.
                     Can't find yours? Try pasting the first line of the error message.
                   </p>
@@ -1233,7 +1233,7 @@ export default function TechJargonTranslator() {
                     <Eye className="h-5 w-5 text-violet-600 dark:text-violet-300" aria-hidden="true" />
                     <span className="font-semibold text-base">Is it safe to click?</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Verify a news story, email, deal, or text before you act.
                   </p>
                 </Link>
@@ -1245,7 +1245,7 @@ export default function TechJargonTranslator() {
                     <Mail className="h-5 w-5 text-violet-600 dark:text-violet-300" aria-hidden="true" />
                     <span className="font-semibold text-base">Is this email real?</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Clean up spam and phishing with a senior-friendly walkthrough.
                   </p>
                 </Link>
@@ -1257,7 +1257,7 @@ export default function TechJargonTranslator() {
                     <Lock className="h-5 w-5 text-violet-600 dark:text-violet-300" aria-hidden="true" />
                     <span className="font-semibold text-base">Password strength?</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     See how long a hacker would take to crack your password.
                   </p>
                 </Link>

@@ -26,7 +26,7 @@ export default function HomeInventoryApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easiest way — phone video walkthrough</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open your phone camera, switch to video mode.</li>
               <li>Walk through every room, narrating what you see.</li>
               <li>Open closets, drawers, garage, attic. Linger on expensive items — TVs, jewelry, computers, instruments.</li>
@@ -41,7 +41,7 @@ export default function HomeInventoryApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real home inventory apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sortly</strong> — free for up to 100 items. Photos, categories, barcode scan. Best free option.</li>
               <li><strong>Encircle</strong> — free, made for insurance claims. Backed up to cloud.</li>
               <li><strong>NAIC Home Inventory app</strong> — free, from the National Association of Insurance Commissioners.</li>
@@ -81,7 +81,7 @@ export default function HomeInventoryApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best time to do it</h3>
-            <p className="text-sm text-muted-foreground">Right now. A 15-minute video walkthrough today is infinitely better than a perfect spreadsheet you never finish. Just walk through and record. Update later.</p>
+            <p className="text-base text-muted-foreground">Right now. A 15-minute video walkthrough today is infinitely better than a perfect spreadsheet you never finish. Just walk through and record. Update later.</p>
           </CardContent>
         </Card>
       </main>

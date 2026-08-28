@@ -31,7 +31,7 @@ export default function CallerIdVerification() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Red flags during a call</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>They say there's an emergency, fraud, or warrant — and you must act <strong>right now</strong>.</li>
               <li>They tell you not to hang up, not to talk to family, or not to tell the bank.</li>
               <li>They ask for passwords, PINs, Social Security numbers, or codes you just got by text.</li>
@@ -48,7 +48,7 @@ export default function CallerIdVerification() {
               <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
               <div>
                 <h3 className="font-bold mb-2">The safe way to verify ANY call</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li><strong>Hang up.</strong> A real bank, doctor, or government agency will NEVER pressure you to stay on the line.</li>
                   <li>Wait 30 seconds — scammers sometimes hold the line open hoping you'll dial.</li>
                   <li>Find the company's real number yourself: the back of your card, a bill, or by typing the company name into Google.</li>
@@ -63,7 +63,7 @@ export default function CallerIdVerification() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common spoofed callers</h2>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-base">
               <li><strong>"Your bank" about fraud:</strong> Hang up. Call the number on the back of your card.</li>
               <li><strong>"Medicare" or "Social Security":</strong> They mail you, they don't call. Hang up. Real number for SSA: 1-800-772-1213.</li>
               <li><strong>"IRS":</strong> Always mails first. Real number: 1-800-829-1040.</li>
@@ -77,7 +77,7 @@ export default function CallerIdVerification() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Trust your gut</h3>
-            <p className="text-sm text-muted-foreground">If a call feels off — pushy, scary, urgent, or asking for money — it almost always IS off. There's nothing rude about hanging up. A real business will not be insulted by a callback.</p>
+            <p className="text-base text-muted-foreground">If a call feels off — pushy, scary, urgent, or asking for money — it almost always IS off. There's nothing rude about hanging up. A real business will not be insulted by a callback.</p>
           </CardContent>
         </Card>
       </main>

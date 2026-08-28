@@ -468,7 +468,7 @@ export default function NotificationDecoder() {
                           <span className="text-xs text-muted-foreground">{n.category}</span>
                         </div>
                         <h2 className="font-semibold text-base leading-snug mb-0.5">{n.title}</h2>
-                        <p className="text-sm text-muted-foreground">{n.subtitle}</p>
+                        <p className="text-base text-muted-foreground">{n.subtitle}</p>
                       </div>
                       <div className="flex-shrink-0 mt-1">
                         {isOpen

@@ -19,7 +19,7 @@ export default function SoupRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5 senior-favorite soups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Chicken noodle</strong> — rotisserie chicken + noodles + carrots + celery + chicken broth.</li>
               <li><strong>Vegetable beef</strong> — ground beef + canned tomatoes + frozen veggie mix + barley.</li>
               <li><strong>Tomato basil</strong> — canned tomatoes + cream + fresh basil. 20 min.</li>
@@ -32,7 +32,7 @@ export default function SoupRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why soups for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Easy to chew + swallow.</li>
               <li>Hydrating.</li>
               <li>Digestible.</li>
@@ -47,7 +47,7 @@ export default function SoupRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use canned soup smarter</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Add fresh spinach + frozen veggies — quick upgrade.</li>
               <li>Squeeze of lemon brightens canned tomato.</li>
               <li>Toss in shredded rotisserie chicken.</li>
@@ -61,7 +61,7 @@ export default function SoupRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Slow cooker soup base</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Onion + celery + carrots in 4-6qt slow cooker.</li>
               <li>1 lb meat (chicken, beef, sausage).</li>
               <li>Beans, lentils, OR pasta.</li>
@@ -76,7 +76,7 @@ export default function SoupRecipes() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free recipe sources</h3>
-            <p className="text-sm text-muted-foreground"><strong>America&apos;s Test Kitchen</strong> — most-tested. <strong>Damn Delicious</strong> blog — easy + reliable. <strong>Skinnytaste</strong> — healthy + WW points. <strong>Pinch of Yum</strong> — beautiful photos + clear instructions. All free + senior-friendly.</p>
+            <p className="text-base text-muted-foreground"><strong>America&apos;s Test Kitchen</strong> — most-tested. <strong>Damn Delicious</strong> blog — easy + reliable. <strong>Skinnytaste</strong> — healthy + WW points. <strong>Pinch of Yum</strong> — beautiful photos + clear instructions. All free + senior-friendly.</p>
           </CardContent>
         </Card>
       </main>

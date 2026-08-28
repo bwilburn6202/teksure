@@ -19,7 +19,7 @@ export default function PillIdentifierApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best free pill identifiers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Drugs.com Pill Identifier</strong> — best free option. Search by imprint (the letters/numbers on the pill), shape, color. Or upload a photo.</li>
               <li><strong>WebMD Pill Identifier</strong> — similar, also free.</li>
               <li><strong>Pill Identifier by Drugs.com mobile app</strong> — free phone app version.</li>
@@ -32,7 +32,7 @@ export default function PillIdentifierApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to identify a pill</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Look at the pill closely. Most have an imprint — letters, numbers, a logo.</li>
               <li>Note the shape (round, oval, capsule, etc.).</li>
               <li>Note the color(s).</li>
@@ -66,7 +66,7 @@ export default function PillIdentifierApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">Take a photo of EACH of your medications when you start them. Save in a "Meds" album in your phone. If a pill spills, you can match against your photos. Add a note: "Atenolol 50mg, take with breakfast, refill every 90 days at CVS."</p>
+            <p className="text-base text-muted-foreground">Take a photo of EACH of your medications when you start them. Save in a "Meds" album in your phone. If a pill spills, you can match against your photos. Add a note: "Atenolol 50mg, take with breakfast, refill every 90 days at CVS."</p>
           </CardContent>
         </Card>
       </main>

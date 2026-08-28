@@ -1289,7 +1289,7 @@ export default function SettingsFinder() {
         {results.length > 0 && (
           <div className="space-y-10">
             {trimmed && (
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Showing {results.length} {results.length === 1 ? 'match' : 'matches'} for "{trimmed}"
               </p>
             )}

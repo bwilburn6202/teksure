@@ -36,7 +36,7 @@ export default function EmergencySosSetup() {
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone — Emergency SOS</h3>
               <p className="text-sm mb-3">Already on by default — but let's set it up properly.</p>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → <strong>Emergency SOS</strong>.</li>
                 <li>Turn ON <strong>"Call with Hold and Release"</strong> — press and hold side button + either volume button → countdown starts → release to call 911.</li>
                 <li>Turn ON <strong>"Call with 5 Presses"</strong> — pressing the side button 5 times in a row also calls 911. Easier with one hand.</li>
@@ -61,7 +61,7 @@ export default function EmergencySosSetup() {
               <h3 className="font-bold text-lg mb-3">Android — Emergency SOS</h3>
               <p className="text-sm mb-3">Setup varies by phone — most common paths:</p>
               <p className="font-semibold text-sm mt-3">Pixel, Motorola, OnePlus and most others:</p>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → <strong>Safety & emergency</strong>.</li>
                 <li>Tap <strong>Emergency SOS</strong>.</li>
                 <li>Turn ON. Press the power button 5 times to trigger.</li>
@@ -69,7 +69,7 @@ export default function EmergencySosSetup() {
                 <li>Add Emergency contacts in the same menu — they get notified.</li>
               </ol>
               <p className="font-semibold text-sm mt-4">Samsung Galaxy:</p>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → <strong>Safety and emergency</strong> → <strong>Send SOS messages</strong>.</li>
                 <li>Turn it on.</li>
                 <li>Pressing the side button 3 or 5 times sends a text with your location to chosen contacts (and optionally calls 911).</li>
@@ -85,7 +85,7 @@ export default function EmergencySosSetup() {
               <AlertTriangle className="w-6 h-6 text-yellow-700 dark:text-yellow-400 shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Test it (just once, carefully)</h3>
-                <p className="text-sm text-muted-foreground">Don't accidentally call 911. Instead — practice the button presses without going through the countdown. On iPhone, you'll see a countdown circle — let go of the buttons before it ends. That confirms you know how to trigger it.</p>
+                <p className="text-base text-muted-foreground">Don't accidentally call 911. Instead — practice the button presses without going through the countdown. On iPhone, you'll see a countdown circle — let go of the buttons before it ends. That confirms you know how to trigger it.</p>
               </div>
             </div>
           </CardContent>
@@ -94,7 +94,7 @@ export default function EmergencySosSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For caregivers</h3>
-            <p className="text-sm text-muted-foreground">If you help an aging parent — set this up for them, then practice it together. Have them try the button press while you watch. Add yourself AND a sibling as emergency contacts (don't put all eggs in one basket).</p>
+            <p className="text-base text-muted-foreground">If you help an aging parent — set this up for them, then practice it together. Have them try the button press while you watch. Add yourself AND a sibling as emergency contacts (don't put all eggs in one basket).</p>
           </CardContent>
         </Card>
       </main>

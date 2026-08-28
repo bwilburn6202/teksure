@@ -35,7 +35,7 @@ export default function OnlineTutoringApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function OnlineTutoringApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to start</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Get the kid a library card (free).</li>
               <li>Check the library website for "online tutoring" — most offer Brainfuse or Tutor.com FREE.</li>
               <li>If grandkid wants more (specific weekly tutor) — Wyzant or local tutors.</li>
@@ -56,7 +56,7 @@ export default function OnlineTutoringApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best gift for a struggling student</h3>
-            <p className="text-sm text-muted-foreground">5 sessions on Wyzant ($150-500) often turns around a slipping grade. The right tutor for 5 weeks beats the wrong tutor for a year. Read reviews carefully and book a 30-minute trial first.</p>
+            <p className="text-base text-muted-foreground">5 sessions on Wyzant ($150-500) often turns around a slipping grade. The right tutor for 5 weeks beats the wrong tutor for a year. Read reviews carefully and book a 30-minute trial first.</p>
           </CardContent>
         </Card>
       </main>

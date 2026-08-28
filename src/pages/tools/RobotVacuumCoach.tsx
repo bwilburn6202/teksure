@@ -34,7 +34,7 @@ export default function RobotVacuumCoach() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function RobotVacuumCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best features for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Self-emptying</strong> — robot empties itself into a bin you change every 30-60 days. No bending.</li>
               <li><strong>Voice control</strong> — "Alexa, start the Roomba."</li>
               <li><strong>Schedule</strong> — runs while you\'re out or asleep.</li>
@@ -57,7 +57,7 @@ export default function RobotVacuumCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips before you buy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pick up cords and small rugs</strong> the first time — robots eat them.</li>
               <li><strong>Many small obstacles</strong> (chair legs, pet beds) — better robots map and avoid.</li>
               <li><strong>Pet hair</strong> — get one rated for it. Cheap robots clog quickly.</li>
@@ -83,7 +83,7 @@ export default function RobotVacuumCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">If you have pets — Roomba Combo j7+ or Roborock S8. If you want simple — Eufy 11S. If $200 budget — Roomba 694. Black Friday and Prime Day usually have $100-300 off the premium models.</p>
+            <p className="text-base text-muted-foreground">If you have pets — Roomba Combo j7+ or Roborock S8. If you want simple — Eufy 11S. If $200 budget — Roomba 694. Black Friday and Prime Day usually have $100-300 off the premium models.</p>
           </CardContent>
         </Card>
       </main>

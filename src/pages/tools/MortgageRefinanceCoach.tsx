@@ -54,7 +54,7 @@ export default function MortgageRefinanceCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to shop</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bankrate.com / NerdWallet</strong> — current rates by zip code.</li>
               <li><strong>Your existing lender</strong> — sometimes offers "streamline" refinance with lower closing costs.</li>
               <li><strong>Local credit union</strong> — often cheapest. NavyFed, USAA for military / families.</li>
@@ -67,7 +67,7 @@ export default function MortgageRefinanceCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch out for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"No closing cost" refis</strong> — the costs are rolled into the loan or a higher rate.</li>
               <li><strong>Cash-out refinance</strong> — fine for clear purposes, but don\'t refi to fund vacations.</li>
               <li><strong>Resetting a 30-year</strong> when you\'re 65 — you might pass before paid off, leaving heirs with the mortgage.</li>
@@ -80,7 +80,7 @@ export default function MortgageRefinanceCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For seniors specifically</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If close to paying off — DON\'T restart 30 years. Better: refi to remaining term (15-year, 10-year).</li>
               <li>If income is reduced — lower payment may help cash flow.</li>
               <li>Check VA loan refinance if veteran — usually lowest rate available.</li>
@@ -92,7 +92,7 @@ export default function MortgageRefinanceCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free tools</h3>
-            <p className="text-sm text-muted-foreground"><strong>Bankrate refinance calculator</strong>, <strong>NerdWallet</strong>, or <strong>your bank\'s app</strong>. Plug in current loan + new rate. Tells you break-even and lifetime savings instantly.</p>
+            <p className="text-base text-muted-foreground"><strong>Bankrate refinance calculator</strong>, <strong>NerdWallet</strong>, or <strong>your bank\'s app</strong>. Plug in current loan + new rate. Tells you break-even and lifetime savings instantly.</p>
           </CardContent>
         </Card>
       </main>

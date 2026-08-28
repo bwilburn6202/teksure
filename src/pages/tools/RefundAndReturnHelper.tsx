@@ -1340,28 +1340,28 @@ export default function RefundAndReturnHelper() {
                 className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-colors p-4 min-h-[4.5rem]"
               >
                 <p className="font-semibold text-base mb-1">Is This Real?</p>
-                <p className="text-sm text-muted-foreground">Verify emails, deals, texts, and photos before you act.</p>
+                <p className="text-base text-muted-foreground">Verify emails, deals, texts, and photos before you act.</p>
               </Link>
               <Link
                 to="/tools/scam-simulator"
                 className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-colors p-4 min-h-[4.5rem]"
               >
                 <p className="font-semibold text-base mb-1">Scam Simulator</p>
-                <p className="text-sm text-muted-foreground">Practice spotting scams in a safe, fake environment.</p>
+                <p className="text-base text-muted-foreground">Practice spotting scams in a safe, fake environment.</p>
               </Link>
               <Link
                 to="/tools/subscription-auditor"
                 className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-colors p-4 min-h-[4.5rem]"
               >
                 <p className="font-semibold text-base mb-1">Subscription Auditor</p>
-                <p className="text-sm text-muted-foreground">Find forgotten subscriptions quietly draining your account.</p>
+                <p className="text-base text-muted-foreground">Find forgotten subscriptions quietly draining your account.</p>
               </Link>
               <Link
                 to="/guides?category=Safety"
                 className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-colors p-4 min-h-[4.5rem]"
               >
                 <p className="font-semibold text-base mb-1">Safety Guides</p>
-                <p className="text-sm text-muted-foreground">Deep-dive articles on scams, fraud, and staying safe online.</p>
+                <p className="text-base text-muted-foreground">Deep-dive articles on scams, fraud, and staying safe online.</p>
               </Link>
             </div>
           </CardContent>

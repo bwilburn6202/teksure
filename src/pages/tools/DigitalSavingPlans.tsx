@@ -19,7 +19,7 @@ export default function DigitalSavingPlans() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best account types</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>529 College Plan</strong> — tax-free for college expenses. Open at Vanguard, Fidelity. $25 starting deposit.</li>
               <li><strong>UTMA / UGMA custodial</strong> — for any purpose at age 18-21.</li>
               <li><strong>Roth IRA for working teens</strong> — they earn, you match. Tax-free retirement.</li>
@@ -32,7 +32,7 @@ export default function DigitalSavingPlans() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy gifting platforms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Greenlight Card</strong> — debit card + savings + investing for kids.</li>
               <li><strong>UNest / Acorns Early</strong> — grandparents gift to UTMA.</li>
               <li><strong>Goalsetter</strong> — kids&apos; banking + gifting.</li>
@@ -45,7 +45,7 @@ export default function DigitalSavingPlans() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tax-smart gifting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$19,000 / yr / grandkid tax-free (2025).</li>
               <li>Couples can give $38K each grandkid.</li>
               <li>Direct tuition payment — UNLIMITED, no gift tax.</li>
@@ -59,7 +59,7 @@ export default function DigitalSavingPlans() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">$50 monthly for 18 years</h3>
-            <p className="text-sm text-muted-foreground">$50/month from birth at 7% return = $21K at 18 (college). $80K at 30 (down payment). Best legacy gift = consistent small contributions over years. Better than one big gift later.</p>
+            <p className="text-base text-muted-foreground">$50/month from birth at 7% return = $21K at 18 (college). $80K at 30 (down payment). Best legacy gift = consistent small contributions over years. Better than one big gift later.</p>
           </CardContent>
         </Card>
       </main>

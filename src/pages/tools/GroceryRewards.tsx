@@ -35,7 +35,7 @@ export default function GroceryRewards() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function GroceryRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save more with apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ibotta</strong> — cash back on groceries via app. Scan receipt, get $0.50-5 back.</li>
               <li><strong>Fetch Rewards</strong> — scan ANY receipt, earn points → gift cards.</li>
               <li><strong>Receipt Hog</strong> — similar to Fetch.</li>
@@ -71,7 +71,7 @@ export default function GroceryRewards() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For most grocery shoppers</h3>
-            <p className="text-sm text-muted-foreground">Stack: 1) Free store rewards card. 2) Digital coupons in store app. 3) Ibotta cash back. 4) Credit card with grocery cash back (Amex Blue Cash Preferred = 6% on groceries up to $6k). Can save 10-15% combined.</p>
+            <p className="text-base text-muted-foreground">Stack: 1) Free store rewards card. 2) Digital coupons in store app. 3) Ibotta cash back. 4) Credit card with grocery cash back (Amex Blue Cash Preferred = 6% on groceries up to $6k). Can save 10-15% combined.</p>
           </CardContent>
         </Card>
       </main>

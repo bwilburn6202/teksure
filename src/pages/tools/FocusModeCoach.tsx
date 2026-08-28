@@ -41,7 +41,7 @@ export default function FocusModeCoach() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone — Focus / Sleep mode</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → <strong>Focus</strong>.</li>
                 <li>Tap <strong>Sleep</strong> (or "Do Not Disturb").</li>
                 <li>Tap <strong>People</strong> → Allow Notifications From → Add anyone who can ALWAYS reach you (spouse, kids, your doctor's office).</li>
@@ -61,7 +61,7 @@ export default function FocusModeCoach() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android — Do Not Disturb</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → <strong>Sound & vibration</strong> → <strong>Do Not Disturb</strong>. (Samsung: Notifications → Do not disturb.)</li>
                 <li>Tap <strong>People</strong> → Calls → "Starred contacts" or "Contacts". (Star your spouse and kids in the Contacts app first.)</li>
                 <li>Turn ON <strong>"Allow repeat callers"</strong> — second call within 15 minutes rings through.</li>
@@ -95,7 +95,7 @@ export default function FocusModeCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worried about missing a real emergency?</h3>
-            <p className="text-sm text-muted-foreground">Don't be. With Repeated Calls turned on, anyone calling twice within a few minutes rings through. And family members starred as contacts always reach you. Real emergencies get through; midnight Amazon delivery alerts don't.</p>
+            <p className="text-base text-muted-foreground">Don't be. With Repeated Calls turned on, anyone calling twice within a few minutes rings through. And family members starred as contacts always reach you. Real emergencies get through; midnight Amazon delivery alerts don't.</p>
           </CardContent>
         </Card>
       </main>

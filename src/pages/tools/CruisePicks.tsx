@@ -35,7 +35,7 @@ export default function CruisePicks() {
                   <span className="text-sm font-semibold text-primary">{l.cost}</span>
                 </div>
                 <p className="text-sm">{l.best}</p>
-                <p className="text-sm text-muted-foreground">{l.good}</p>
+                <p className="text-base text-muted-foreground">{l.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function CruisePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mid-size ships</strong> (1,500-2,500 passengers) = sweet spot. Big enough for variety, small enough to navigate.</li>
               <li><strong>Mid-ship cabins</strong> = least motion sickness.</li>
               <li><strong>Balcony rooms</strong> = worth the $200 upgrade.</li>
@@ -58,7 +58,7 @@ export default function CruisePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best destinations for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Caribbean</strong> — short, cheap, easy. First-timer favorite.</li>
               <li><strong>Alaska</strong> — scenic, cool weather, gentler ports.</li>
               <li><strong>Mediterranean</strong> — Italy, Greece, Spain. Cultural.</li>
@@ -72,7 +72,7 @@ export default function CruisePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Book 12-18 months ahead for best cabins.</li>
               <li>Costco Travel — cash card + onboard credit. Same price as cruise line.</li>
               <li>Last-minute deals 30-60 days out (if cabins still open).</li>
@@ -86,7 +86,7 @@ export default function CruisePicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">First-time tip</h3>
-            <p className="text-sm text-muted-foreground">First cruise — pick 7-night Caribbean from Florida. Direct flights cheap, ship docks daily, easy ports. Holland America Eurodam or Princess Caribbean Princess are senior-perfect picks. Test-cruise before committing to longer voyages.</p>
+            <p className="text-base text-muted-foreground">First cruise — pick 7-night Caribbean from Florida. Direct flights cheap, ship docks daily, easy ports. Holland America Eurodam or Princess Caribbean Princess are senior-perfect picks. Test-cruise before committing to longer voyages.</p>
           </CardContent>
         </Card>
       </main>

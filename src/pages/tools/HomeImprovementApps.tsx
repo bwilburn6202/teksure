@@ -34,7 +34,7 @@ export default function HomeImprovementApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function HomeImprovementApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best YouTube channels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>This Old House</strong> — pro-quality, decades of expertise.</li>
               <li><strong>Home RenoVision DIY</strong> — Jeff teaches like a buddy.</li>
               <li><strong>Honest Carpenter</strong> — pro carpenter explains both sides.</li>
@@ -56,7 +56,7 @@ export default function HomeImprovementApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When DIY is great</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Painting (any room).</li>
               <li>Replacing faucet aerators, showerheads.</li>
               <li>Caulking around tub, sink.</li>
@@ -72,7 +72,7 @@ export default function HomeImprovementApps() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t DIY</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Electrical inside walls — fire risk.</li>
               <li>Gas line work — explosion risk.</li>
               <li>Major plumbing — water damage.</li>
@@ -86,7 +86,7 @@ export default function HomeImprovementApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free in-store classes</h3>
-            <p className="text-sm text-muted-foreground">Home Depot + Lowes both run FREE in-store classes — paint, plumbing, basic electrical. Saturday mornings. Hands-on. Perfect for seniors who want to learn before buying tools.</p>
+            <p className="text-base text-muted-foreground">Home Depot + Lowes both run FREE in-store classes — paint, plumbing, basic electrical. Saturday mornings. Hands-on. Perfect for seniors who want to learn before buying tools.</p>
           </CardContent>
         </Card>
       </main>

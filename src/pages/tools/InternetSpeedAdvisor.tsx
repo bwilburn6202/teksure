@@ -48,7 +48,7 @@ export default function InternetSpeedAdvisor() {
           <p className="text-sm text-muted-foreground mb-1">Recommended speed for your household</p>
           <p className="text-4xl font-bold text-primary mb-1">{recommended} Mbps</p>
           <Badge variant="outline" className="mb-4">{tier} plan</Badge>
-          <p className="text-sm text-muted-foreground">This is the download speed you should look for when comparing internet plans. Most providers like AT&T, Xfinity, Spectrum, and Verizon offer plans in this range.</p>
+          <p className="text-base text-muted-foreground">This is the download speed you should look for when comparing internet plans. Most providers like AT&T, Xfinity, Spectrum, and Verizon offer plans in this range.</p>
         </CardContent></Card>
       </div></main>
       <Footer />

@@ -660,7 +660,7 @@ export default function TechBreakReminder() {
                   )}
                   <div>
                     <p className="font-medium">Gentle chime</p>
-                    <p className="text-sm text-muted-foreground">A soft bell when a reminder fires. Off by default.</p>
+                    <p className="text-base text-muted-foreground">A soft bell when a reminder fires. Off by default.</p>
                   </div>
                 </div>
                 <Switch checked={settings.sound} onCheckedChange={toggleSound} aria-label="Toggle sound" />
@@ -743,7 +743,7 @@ export default function TechBreakReminder() {
                     <p className="font-semibold">{s.name}</p>
                     <span className="ml-auto text-xs text-muted-foreground">{s.duration}</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">{s.instruction}</p>
+                  <p className="text-base text-muted-foreground">{s.instruction}</p>
                 </div>
               ))}
             </CardContent>
@@ -968,7 +968,7 @@ function PostureItem({ label, detail }: { label: string; detail: string }) {
       <span className="mt-1 h-2.5 w-2.5 rounded-full bg-emerald-500 flex-shrink-0" aria-hidden="true" />
       <div>
         <p className="font-semibold">{label}</p>
-        <p className="text-sm text-muted-foreground">{detail}</p>
+        <p className="text-base text-muted-foreground">{detail}</p>
       </div>
     </li>
   );

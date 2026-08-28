@@ -19,7 +19,7 @@ export default function AppleWatchAccessibility() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Big text + larger touch</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Display + Brightness → Text Size.</li>
               <li>Slide to largest size.</li>
               <li>Settings → Accessibility → Bold Text ON.</li>
@@ -33,7 +33,7 @@ export default function AppleWatchAccessibility() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vibration alerts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Sounds + Haptics.</li>
               <li>Set Haptic Strength to &quot;Strong&quot;.</li>
               <li>Or set to &quot;Prominent&quot; for tap alerts.</li>
@@ -47,7 +47,7 @@ export default function AppleWatchAccessibility() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fall detection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Watch Series 4+ have fall detection.</li>
               <li>Detects hard fall — buzzes wrist for 60 seconds.</li>
               <li>If no response — auto-calls 911.</li>
@@ -61,7 +61,7 @@ export default function AppleWatchAccessibility() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Emergency SOS</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Press + hold side button for 5 seconds.</li>
               <li>Auto-calls 911 in your location.</li>
               <li>Sends GPS location to emergency contacts.</li>
@@ -75,7 +75,7 @@ export default function AppleWatchAccessibility() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Heart + health alerts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Atrial fibrillation alerts.</li>
               <li>High + low heart rate notifications.</li>
               <li>ECG when symptomatic.</li>
@@ -89,7 +89,7 @@ export default function AppleWatchAccessibility() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">VoiceOver + dictation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VoiceOver — reads everything aloud.</li>
               <li>Dictate replies — no typing.</li>
               <li>Walkie-talkie feature.</li>
@@ -103,7 +103,7 @@ export default function AppleWatchAccessibility() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth $250 for fall detection alone</h3>
-            <p className="text-sm text-muted-foreground">For seniors at risk of falls or living alone, Apple Watch SE ($250) provides fall detection, emergency SOS, heart monitoring, and GPS location sharing with family. It&apos;s essentially a medical alert device that also tells time and runs apps. Cellular version ($300) works even without phone nearby. Many adult children gift Apple Watch to parents for the safety features alone.</p>
+            <p className="text-base text-muted-foreground">For seniors at risk of falls or living alone, Apple Watch SE ($250) provides fall detection, emergency SOS, heart monitoring, and GPS location sharing with family. It&apos;s essentially a medical alert device that also tells time and runs apps. Cellular version ($300) works even without phone nearby. Many adult children gift Apple Watch to parents for the safety features alone.</p>
           </CardContent>
         </Card>
       </main>

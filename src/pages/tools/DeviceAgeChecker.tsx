@@ -508,7 +508,7 @@ export default function DeviceAgeChecker() {
                     </span>
                     <div>
                       <p className="font-semibold text-base">{dt.label}</p>
-                      <p className="text-sm text-muted-foreground">{dt.description}</p>
+                      <p className="text-base text-muted-foreground">{dt.description}</p>
                     </div>
                   </button>
                 ))}
@@ -551,7 +551,7 @@ export default function DeviceAgeChecker() {
                   <h2 className="text-2xl font-semibold">
                     Which {selectedDevice.label} do you have?
                   </h2>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Pick the closest match. If you're not sure, there's a "not sure" option at the
                     bottom — we'll help.
                   </p>
@@ -598,7 +598,7 @@ export default function DeviceAgeChecker() {
                 <span className="text-2xl" aria-hidden="true">
                   {selectedDevice.emoji}
                 </span>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   {selectedDevice.label} · {model.label}
                 </p>
               </div>
@@ -741,7 +741,7 @@ export default function DeviceAgeChecker() {
                 <p className="text-sm text-muted-foreground mb-3">
                   Whatever your device's age, these habits dramatically reduce your risk:
                 </p>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground">
                   <li className="flex gap-2">
                     <CheckCircle className="h-4 w-4 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <span>Use a unique password for every account, or a password manager.</span>

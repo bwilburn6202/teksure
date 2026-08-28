@@ -34,7 +34,7 @@ export default function ConsumerCellularPlans() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function ConsumerCellularPlans() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why switch from major carriers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Verizon/AT&amp;T plans = $80-110/mo per line.</li>
               <li>Same network through MVNOs = $15-30/mo.</li>
               <li>SAME service quality.</li>
@@ -58,7 +58,7 @@ export default function ConsumerCellularPlans() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How much data do you need?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mostly WiFi at home</strong> — 1-2 GB.</li>
               <li><strong>Light usage</strong> — 5-10 GB.</li>
               <li><strong>Streaming on cellular</strong> — 15+ GB.</li>
@@ -71,7 +71,7 @@ export default function ConsumerCellularPlans() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lifeline FREE program</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Federal program — free phone + service.</li>
               <li>Income-eligible: SNAP, Medicaid, SSI, etc.</li>
               <li>Or 135% federal poverty line.</li>
@@ -85,7 +85,7 @@ export default function ConsumerCellularPlans() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Switch in 30 minutes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick new plan online.</li>
               <li>Order SIM card or eSIM.</li>
               <li>Old phone unlocked? Most are.</li>
@@ -100,7 +100,7 @@ export default function ConsumerCellularPlans() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Switching support</h3>
-            <p className="text-sm text-muted-foreground">Consumer Cellular has the best phone support for seniors switching. Real US-based agents help you. Walk through every step. Best Buy + T-Mobile stores help too. Don&apos;t let &quot;switching anxiety&quot; cost you $1,000/yr. Free help available.</p>
+            <p className="text-base text-muted-foreground">Consumer Cellular has the best phone support for seniors switching. Real US-based agents help you. Walk through every step. Best Buy + T-Mobile stores help too. Don&apos;t let &quot;switching anxiety&quot; cost you $1,000/yr. Free help available.</p>
           </CardContent>
         </Card>
       </main>

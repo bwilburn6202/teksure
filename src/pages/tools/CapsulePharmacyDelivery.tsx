@@ -19,7 +19,7 @@ export default function CapsulePharmacyDelivery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Capsule?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mail-order pharmacy with same-day delivery.</li>
               <li>Free 2-hour delivery in many cities.</li>
               <li>Available in 15+ major US metros.</li>
@@ -33,7 +33,7 @@ export default function CapsulePharmacyDelivery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where it&apos;s available</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NYC + tri-state area.</li>
               <li>Boston, Philadelphia, DC.</li>
               <li>Chicago, Twin Cities.</li>
@@ -47,7 +47,7 @@ export default function CapsulePharmacyDelivery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to Capsule.com or download app.</li>
               <li>Enter zip code to confirm coverage.</li>
               <li>Add insurance info or pay cash.</li>
@@ -61,7 +61,7 @@ export default function CapsulePharmacyDelivery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Text or call pharmacist anytime.</li>
               <li>Delivery to door — no driving needed.</li>
               <li>Birth-control + many specialties supported.</li>
@@ -75,7 +75,7 @@ export default function CapsulePharmacyDelivery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance accepted</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most major insurance accepted.</li>
               <li>Medicare Part D supported.</li>
               <li>Medicaid in supported states.</li>
@@ -89,7 +89,7 @@ export default function CapsulePharmacyDelivery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Capsule alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Amazon Pharmacy — covered separately.</li>
               <li>PillPack (also Amazon-owned) — pre-sorted by date.</li>
               <li>Costco Pharmacy delivery.</li>
@@ -103,7 +103,7 @@ export default function CapsulePharmacyDelivery() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For seniors with mobility issues</h3>
-            <p className="text-sm text-muted-foreground">For seniors who have trouble getting to the pharmacy — limited driving, mobility issues, no nearby family — Capsule&apos;s same-day delivery is life-changing. They handle transfers from your old pharmacy automatically, accept insurance, and deliver free. If you live in a covered metro, this is one of the best healthcare upgrades available.</p>
+            <p className="text-base text-muted-foreground">For seniors who have trouble getting to the pharmacy — limited driving, mobility issues, no nearby family — Capsule&apos;s same-day delivery is life-changing. They handle transfers from your old pharmacy automatically, accept insurance, and deliver free. If you live in a covered metro, this is one of the best healthcare upgrades available.</p>
           </CardContent>
         </Card>
       </main>

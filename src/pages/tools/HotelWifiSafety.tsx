@@ -37,7 +37,7 @@ export default function HotelWifiSafety() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> At the hotel — picking the right network</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Ask the front desk for the EXACT network name. Crooks copy hotel names like "Marriott_Guest" vs "Marriott-Guest".</li>
               <li>If the network has no password, it's open to everyone. Be extra careful.</li>
               <li>If the network DOES have a password — that's safer, but don't assume it's foolproof.</li>
@@ -76,7 +76,7 @@ export default function HotelWifiSafety() {
               <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Easiest answer: use your phone</h3>
-                <p className="text-sm text-muted-foreground">For anything important — banking, paying bills, signing in to important accounts — turn on your phone's <strong>Personal Hotspot</strong> and use cellular instead. It's almost always safer than hotel Wi-Fi.</p>
+                <p className="text-base text-muted-foreground">For anything important — banking, paying bills, signing in to important accounts — turn on your phone's <strong>Personal Hotspot</strong> and use cellular instead. It's almost always safer than hotel Wi-Fi.</p>
               </div>
             </div>
           </CardContent>
@@ -88,7 +88,7 @@ export default function HotelWifiSafety() {
               <ShieldAlert className="w-6 h-6 text-muted-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Should I get a VPN?</h3>
-                <p className="text-sm text-muted-foreground">A VPN (Virtual Private Network) hides your traffic from the public Wi-Fi. For most travelers, it's helpful but not required — modern websites already use encryption (HTTPS). If you do get one, stick to well-known names: ExpressVPN, NordVPN, or Proton VPN. Avoid free VPNs.</p>
+                <p className="text-base text-muted-foreground">A VPN (Virtual Private Network) hides your traffic from the public Wi-Fi. For most travelers, it's helpful but not required — modern websites already use encryption (HTTPS). If you do get one, stick to well-known names: ExpressVPN, NordVPN, or Proton VPN. Avoid free VPNs.</p>
               </div>
             </div>
           </CardContent>

@@ -42,7 +42,7 @@ export default function SeniorExerciseApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -74,7 +74,7 @@ export default function SeniorExerciseApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best place to start</h3>
-            <p className="text-sm text-muted-foreground">Walk 20 minutes a day. That\'s it. Add light resistance (canned soup or 1-2lb dumbbells) twice a week. Add balance — stand on one foot for 30 seconds while brushing teeth. Three pillars, no gym needed, dramatic health benefits.</p>
+            <p className="text-base text-muted-foreground">Walk 20 minutes a day. That\'s it. Add light resistance (canned soup or 1-2lb dumbbells) twice a week. Add balance — stand on one foot for 30 seconds while brushing teeth. Three pillars, no gym needed, dramatic health benefits.</p>
           </CardContent>
         </Card>
       </main>

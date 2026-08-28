@@ -19,7 +19,7 @@ export default function KindleVsPaperbookSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Kindle wins for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adjustable font size.</li>
               <li>Backlit — read in dark.</li>
               <li>Lightweight.</li>
@@ -34,7 +34,7 @@ export default function KindleVsPaperbookSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Paper book wins</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No screen for tired eyes some say.</li>
               <li>Don&apos;t need charging.</li>
               <li>Easier to share/lend.</li>
@@ -48,7 +48,7 @@ export default function KindleVsPaperbookSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best Kindles 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Kindle Scribe</strong> — $400. Larger 10.2&quot; screen. Take notes.</li>
               <li><strong>Kindle Paperwhite</strong> — $160. Best value.</li>
               <li><strong>Kindle Oasis</strong> (older) — page turn buttons.</li>
@@ -62,7 +62,7 @@ export default function KindleVsPaperbookSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Kindle settings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Font size — make as large as needed.</li>
               <li>Bold text option.</li>
               <li>OpenDyslexic font available.</li>
@@ -76,7 +76,7 @@ export default function KindleVsPaperbookSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free books FREE</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Libby — library Kindle books FREE.</li>
               <li>Project Gutenberg — public domain.</li>
               <li>Amazon Prime Reading — included.</li>
@@ -90,7 +90,7 @@ export default function KindleVsPaperbookSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hybrid approach</h3>
-            <p className="text-sm text-muted-foreground">Many seniors use BOTH. Kindle for travel + reading in bed. Paper for treasured books + book club. Library has free Kindle and paper books. Pick what brings joy. Reading itself = win.</p>
+            <p className="text-base text-muted-foreground">Many seniors use BOTH. Kindle for travel + reading in bed. Paper for treasured books + book club. Library has free Kindle and paper books. Pick what brings joy. Reading itself = win.</p>
           </CardContent>
         </Card>
       </main>

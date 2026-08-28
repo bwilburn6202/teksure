@@ -208,7 +208,7 @@ export default function RealEstateWireScam() {
                       </div>
                       <div>
                         <p className="font-semibold text-base mb-1">{rule.title}</p>
-                        <p className="text-sm text-muted-foreground">{rule.body}</p>
+                        <p className="text-base text-muted-foreground">{rule.body}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -249,7 +249,7 @@ export default function RealEstateWireScam() {
                       </div>
                       <div>
                         <p className="font-semibold text-base mb-1">{step.title}</p>
-                        <p className="text-sm text-muted-foreground">{step.body}</p>
+                        <p className="text-base text-muted-foreground">{step.body}</p>
                       </div>
                     </div>
                   </CardContent>

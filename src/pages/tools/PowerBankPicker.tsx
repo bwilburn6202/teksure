@@ -44,7 +44,7 @@ export default function PowerBankPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -65,7 +65,7 @@ export default function PowerBankPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Surge protectors worth knowing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>APC P11VT3 / P11U2</strong> — basic 11-outlet, $30. Good for most homes.</li>
               <li><strong>Tripp Lite Isobar</strong> — premium, longer warranty, better filtering.</li>
               <li><strong>Whole-house surge protector</strong> — $250-500 installed by electrician at the panel. Stops big surges before they reach individual outlets.</li>
@@ -77,7 +77,7 @@ export default function PowerBankPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For medical equipment</h3>
-            <p className="text-sm text-muted-foreground">If you use a CPAP, home oxygen concentrator, or other plug-in medical device — a Jackery or EcoFlow power station is genuinely lifesaving in an outage. Add solar panels for $200-400 if you live in storm country.</p>
+            <p className="text-base text-muted-foreground">If you use a CPAP, home oxygen concentrator, or other plug-in medical device — a Jackery or EcoFlow power station is genuinely lifesaving in an outage. Add solar panels for $200-400 if you live in storm country.</p>
           </CardContent>
         </Card>
       </main>

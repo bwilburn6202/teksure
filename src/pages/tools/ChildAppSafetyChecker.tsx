@@ -280,7 +280,7 @@ export default function ChildAppSafetyChecker() {
 
                   <div className="mb-4">
                     <h3 className="font-semibold mb-1">What to know</h3>
-                    <p className="text-sm text-muted-foreground">{result.notes}</p>
+                    <p className="text-base text-muted-foreground">{result.notes}</p>
                   </div>
 
                   <div className="bg-background/60 rounded-lg p-4 border">
@@ -288,7 +288,7 @@ export default function ChildAppSafetyChecker() {
                       <Shield className="h-4 w-4 text-primary" />
                       Parental control steps
                     </h3>
-                    <p className="text-sm text-muted-foreground">{result.parentalControls}</p>
+                    <p className="text-base text-muted-foreground">{result.parentalControls}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -317,7 +317,7 @@ export default function ChildAppSafetyChecker() {
             <Card>
               <CardContent className="p-6">
                 <h2 className="font-bold text-lg mb-3">General tips for any app</h2>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
                     <span>Download and use the app yourself before letting your child install it.</span>
@@ -340,7 +340,7 @@ export default function ChildAppSafetyChecker() {
                   </li>
                 </ul>
                 <div className="mt-4 pt-4 border-t">
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     For comprehensive app reviews:{' '}
                     <a href="https://www.commonsensemedia.org" target="_blank" rel="noopener noreferrer" className="text-primary underline">
                       Common Sense Media

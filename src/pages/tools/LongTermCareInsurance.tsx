@@ -26,7 +26,7 @@ export default function LongTermCareInsurance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reality of the cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Buy at age 55-65 = $2,000-5,000/year.</li>
               <li>Buy at 70+ = $5,000-10,000+/year (or denied).</li>
               <li>Premiums often increase 5-15% per year.</li>
@@ -39,7 +39,7 @@ export default function LongTermCareInsurance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Who should consider it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Net worth $500K-$2M (too much for Medicaid, not enough to self-insure).</li>
               <li>Family history of dementia, Parkinson&apos;s, etc.</li>
               <li>Buy by age 60-65.</li>
@@ -52,7 +52,7 @@ export default function LongTermCareInsurance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip if...</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Net worth under $250K — Medicaid will cover.</li>
               <li>Net worth $5M+ — self-insure.</li>
               <li>You&apos;re 70+ in poor health — too expensive.</li>
@@ -64,7 +64,7 @@ export default function LongTermCareInsurance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hybrid life + LTC</strong> — combines life insurance + LTC. If unused, heirs get life insurance.</li>
               <li><strong>Self-insure</strong> — set aside $250-500K specifically.</li>
               <li><strong>Continuing Care community (CCRC)</strong> — see /tools/ccrc-explained.</li>
@@ -78,7 +78,7 @@ export default function LongTermCareInsurance() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Use fee-only fiduciary</h3>
-            <p className="text-sm text-muted-foreground">LTC insurance commissions are huge — agents push regardless of fit. Use fee-only fiduciary advisor (NAPFA.org). Pay $300-1,000 for honest analysis. May save $20K+ in unnecessary premiums OR find right policy fit.</p>
+            <p className="text-base text-muted-foreground">LTC insurance commissions are huge — agents push regardless of fit. Use fee-only fiduciary advisor (NAPFA.org). Pay $300-1,000 for honest analysis. May save $20K+ in unnecessary premiums OR find right policy fit.</p>
           </CardContent>
         </Card>
       </main>

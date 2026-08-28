@@ -742,7 +742,7 @@ export default function FakeNewsChecker() {
         >
           <div className="mb-4">
             <h2 className="text-2xl font-bold mb-1">TekSure Fake News Pocket Guide</h2>
-            <p className="text-sm text-muted-foreground">teksure.com/tools/fake-news-checker</p>
+            <p className="text-base text-muted-foreground">teksure.com/tools/fake-news-checker</p>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div>

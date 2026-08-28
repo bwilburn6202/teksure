@@ -19,7 +19,7 @@ export default function HalloweenSafetySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Welcoming trick-or-treaters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Porch light on = welcome.</li>
               <li>Light off = no candy.</li>
               <li>Bowl on porch — leave self-serve.</li>
@@ -33,7 +33,7 @@ export default function HalloweenSafetySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart tech help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ring Doorbell</strong> — see who&apos;s at door.</li>
               <li><strong>Smart bulbs</strong> — orange/purple Halloween lights.</li>
               <li><strong>Smart speakers</strong> — &quot;Alexa, play spooky music.&quot;</li>
@@ -47,7 +47,7 @@ export default function HalloweenSafetySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Battery candles — no fire risk.</li>
               <li>LED string lights — cheaper electricity.</li>
               <li>Remove tripping hazards.</li>
@@ -61,7 +61,7 @@ export default function HalloweenSafetySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stay-home options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Trunk or Treat&quot; at church / school.</li>
               <li>Senior center Halloween parties.</li>
               <li>Skip if mobility-limited — no shame.</li>
@@ -75,7 +75,7 @@ export default function HalloweenSafetySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Connect with grandkids</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FaceTime — see costumes!</li>
               <li>Send Halloween cards.</li>
               <li>Bake cookies, mail decorated.</li>
@@ -89,7 +89,7 @@ export default function HalloweenSafetySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fake costume sites — only known retailers.</li>
               <li>Suspicious &quot;decoration deals&quot; ads.</li>
               <li>Unknown trick-or-treaters at non-Halloween hours.</li>
@@ -103,7 +103,7 @@ export default function HalloweenSafetySeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior costume ideas</h3>
-            <p className="text-sm text-muted-foreground">No costume needed if not visited. Easy ones: pajamas + sleep mask = &quot;just woke up&quot;. T-shirt with name = &quot;costume&quot;. Witch hat + black clothes = classic. Football jersey = sports fan. Costco sells senior-comfort costumes. Amazon — endless options. Comfort &gt; complexity.</p>
+            <p className="text-base text-muted-foreground">No costume needed if not visited. Easy ones: pajamas + sleep mask = &quot;just woke up&quot;. T-shirt with name = &quot;costume&quot;. Witch hat + black clothes = classic. Football jersey = sports fan. Costco sells senior-comfort costumes. Amazon — endless options. Comfort &gt; complexity.</p>
           </CardContent>
         </Card>
       </main>

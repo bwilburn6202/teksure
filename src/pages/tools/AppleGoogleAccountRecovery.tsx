@@ -29,7 +29,7 @@ export default function AppleGoogleAccountRecovery() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Recover your Apple ID</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>Go to <strong>iforgot.apple.com</strong>.</li>
                   <li>Type your Apple ID email.</li>
                   <li>Apple sends a code to a trusted device or phone number you previously set up.</li>
@@ -42,7 +42,7 @@ export default function AppleGoogleAccountRecovery() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Set up safety nets NOW (before you\'re locked out)</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li><strong>Recovery Contact</strong>: iPhone → Settings → tap your name → Sign-In & Security → "Account Recovery" → "Add Recovery Contact". Pick a trusted family member with their own Apple ID. They can help verify it\'s really you.</li>
                   <li><strong>Recovery Key</strong>: Same menu → "Recovery Key" → "Generate". A 28-character code. PRINT IT — store with your will or in safe deposit. With this you can ALWAYS recover. WITHOUT it AND without recovery contacts, Apple may not be able to help.</li>
                   <li><strong>Trusted phone numbers</strong> — make sure your spouse\'s number is also on the account.</li>
@@ -58,7 +58,7 @@ export default function AppleGoogleAccountRecovery() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Recover your Google account</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>Go to <strong>accounts.google.com/signin/recovery</strong>.</li>
                   <li>Type your Gmail address.</li>
                   <li>Google asks for the last password you remember.</li>
@@ -71,7 +71,7 @@ export default function AppleGoogleAccountRecovery() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Set up safety nets NOW</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>Go to <strong>myaccount.google.com</strong>.</li>
                   <li>Security → Recovery phone — add a trusted phone number.</li>
                   <li>Security → Recovery email — add an alternate email (a spouse\'s or a backup Gmail).</li>
@@ -100,7 +100,7 @@ export default function AppleGoogleAccountRecovery() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tell your spouse / kids</h3>
-            <p className="text-sm text-muted-foreground">Set up legacy contacts on your Apple ID and Google account NOW. Tell your spouse and adult kids that they\'re listed. If something happens to you, they can recover your accounts and the photos / emails inside.</p>
+            <p className="text-base text-muted-foreground">Set up legacy contacts on your Apple ID and Google account NOW. Tell your spouse and adult kids that they\'re listed. If something happens to you, they can recover your accounts and the photos / emails inside.</p>
           </CardContent>
         </Card>
       </main>

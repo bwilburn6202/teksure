@@ -28,7 +28,7 @@ export default function BatteryDrainFix() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → Battery. Wait 10 sec for it to load.</li>
                 <li>See list of apps + percent of battery used.</li>
                 <li>If ONE app is over 30% — that\'s your culprit. Open it less.</li>
@@ -43,7 +43,7 @@ export default function BatteryDrainFix() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → Battery → Battery usage.</li>
                 <li>List of apps with % drain.</li>
                 <li>Tap an app to see if it has "Background activity" — restrict if not needed.</li>
@@ -57,7 +57,7 @@ export default function BatteryDrainFix() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common drain causes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Brightness too high</strong> — auto-brightness ON saves a lot.</li>
               <li><strong>Old apps</strong> running in background — uninstall ones you haven\'t used in months.</li>
               <li><strong>Location services</strong> for unnecessary apps — Settings → Privacy & Security → Location → check each app.</li>
@@ -86,7 +86,7 @@ export default function BatteryDrainFix() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tip</h3>
-            <p className="text-sm text-muted-foreground">For trips, keep phone in Low Power Mode (Settings → Battery). Reduces background activity. Adds 30-50% to daily life. Also bring a portable battery pack.</p>
+            <p className="text-base text-muted-foreground">For trips, keep phone in Low Power Mode (Settings → Battery). Reduces background activity. Adds 30-50% to daily life. Also bring a portable battery pack.</p>
           </CardContent>
         </Card>
       </main>

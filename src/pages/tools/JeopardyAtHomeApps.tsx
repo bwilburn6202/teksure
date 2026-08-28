@@ -19,7 +19,7 @@ export default function JeopardyAtHomeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch new episodes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local ABC station weekday evening.</li>
               <li>Hulu — usually next-day.</li>
               <li>Pluto TV — free, has Jeopardy channel.</li>
@@ -33,7 +33,7 @@ export default function JeopardyAtHomeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Jeopardy! World Tour app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Official Jeopardy mobile game.</li>
               <li>Free download with in-app purchases.</li>
               <li>Real Jeopardy clues.</li>
@@ -47,7 +47,7 @@ export default function JeopardyAtHomeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">J! Archive</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>J-Archive.com — free fan-maintained site.</li>
               <li>Clue archive going back decades.</li>
               <li>Search by topic.</li>
@@ -61,7 +61,7 @@ export default function JeopardyAtHomeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Play with grandkids</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Print J-Archive game.</li>
               <li>One person reads clues.</li>
               <li>Others answer.</li>
@@ -75,7 +75,7 @@ export default function JeopardyAtHomeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior Jeopardy clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior centers often have trivia nights.</li>
               <li>Library trivia events.</li>
               <li>Restaurant trivia (Bingo Bango, etc.).</li>
@@ -89,7 +89,7 @@ export default function JeopardyAtHomeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apply to be a contestant</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Anyone 18+ can audition.</li>
               <li>Take online test at Jeopardy.com.</li>
               <li>Specific seasons for senior tournaments.</li>
@@ -103,7 +103,7 @@ export default function JeopardyAtHomeApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free Pluto TV channel</h3>
-            <p className="text-sm text-muted-foreground">Pluto TV (free, no subscription) has a 24/7 Jeopardy channel. Old episodes play on rotation. Great for background while doing other things or for Jeopardy fans who want unlimited. Combined with current episodes on local ABC, you can watch Jeopardy daily without paying for anything. Many seniors love this free entertainment.</p>
+            <p className="text-base text-muted-foreground">Pluto TV (free, no subscription) has a 24/7 Jeopardy channel. Old episodes play on rotation. Great for background while doing other things or for Jeopardy fans who want unlimited. Combined with current episodes on local ABC, you can watch Jeopardy daily without paying for anything. Many seniors love this free entertainment.</p>
           </CardContent>
         </Card>
       </main>

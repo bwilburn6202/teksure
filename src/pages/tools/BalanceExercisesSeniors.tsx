@@ -19,7 +19,7 @@ export default function BalanceExercisesSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why balance matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Falls are the #1 cause of injury in seniors.</li>
               <li>Balance naturally declines with age.</li>
               <li>Good news: balance can be trained and improved.</li>
@@ -33,7 +33,7 @@ export default function BalanceExercisesSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Starting exercises (beginners)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stand on one foot — hold counter for support.</li>
               <li>Hold for 10 seconds, switch feet.</li>
               <li>Heel-to-toe walk — one foot directly in front of other.</li>
@@ -47,7 +47,7 @@ export default function BalanceExercisesSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safe practice setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stand near kitchen counter or sturdy chair.</li>
               <li>Wear shoes with good grip — not socks.</li>
               <li>Clear floor area — no rugs to trip on.</li>
@@ -61,7 +61,7 @@ export default function BalanceExercisesSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tai chi for balance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Strongest research for fall prevention.</li>
               <li>Gentle, slow movements — safe for all fitness levels.</li>
               <li>Free beginner classes on YouTube.</li>
@@ -75,7 +75,7 @@ export default function BalanceExercisesSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps + resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Otago Exercise Program — free PDF from government.</li>
               <li>STOP FALLS app — evidence-based exercises.</li>
               <li>CDC STEADI program — balance resources for seniors.</li>
@@ -89,7 +89,7 @@ export default function BalanceExercisesSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Environment check too</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Remove loose rugs — major fall hazard.</li>
               <li>Grab bars in shower and toilet area.</li>
               <li>Good lighting in hallways and stairs.</li>
@@ -103,7 +103,7 @@ export default function BalanceExercisesSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">One-leg stand every day</h3>
-            <p className="text-sm text-muted-foreground">The simplest daily balance exercise: while brushing teeth, stand on one foot while holding the counter. Switch feet halfway through. That&apos;s it — 2 minutes, twice a day, while doing something you already do. Over 4–8 weeks this measurably improves balance. If you can eventually do it without holding the counter, even better. Start with support and build confidence.</p>
+            <p className="text-base text-muted-foreground">The simplest daily balance exercise: while brushing teeth, stand on one foot while holding the counter. Switch feet halfway through. That&apos;s it — 2 minutes, twice a day, while doing something you already do. Over 4–8 weeks this measurably improves balance. If you can eventually do it without holding the counter, even better. Start with support and build confidence.</p>
           </CardContent>
         </Card>
       </main>

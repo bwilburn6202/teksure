@@ -27,7 +27,7 @@ export default function SafeWithdrawalRate() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Updated thinking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>3.3-3.7%</strong> may be safer for current low-yield environment, says Morningstar 2024.</li>
               <li><strong>5-5.5%</strong> may be okay if you start a "guard rails" plan — flex up/down based on market.</li>
               <li><strong>For longer retirements (40 years)</strong>, lower the starting rate to 3-3.5%.</li>
@@ -40,7 +40,7 @@ export default function SafeWithdrawalRate() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bucket strategy — popular alternative</h2>
             <p className="text-sm mb-2">Split retirement money into 3 buckets:</p>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bucket 1 (1-2 years of expenses)</strong> — cash + money market. Spend from this.</li>
               <li><strong>Bucket 2 (3-7 years)</strong> — bonds and bond funds. Refill bucket 1.</li>
               <li><strong>Bucket 3 (8+ years)</strong> — stocks. Long-term growth. Refill bucket 2.</li>
@@ -78,7 +78,7 @@ export default function SafeWithdrawalRate() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get a real plan</h3>
-            <p className="text-sm text-muted-foreground">For decisions this big, pay a one-time fee-only fiduciary advisor ($1,000-3,000). They build a 30-year plan accounting for Social Security, inflation, taxes, RMDs, healthcare. Worth far more than the fee. Find at NAPFA.org.</p>
+            <p className="text-base text-muted-foreground">For decisions this big, pay a one-time fee-only fiduciary advisor ($1,000-3,000). They build a 30-year plan accounting for Social Security, inflation, taxes, RMDs, healthcare. Worth far more than the fee. Find at NAPFA.org.</p>
           </CardContent>
         </Card>
       </main>

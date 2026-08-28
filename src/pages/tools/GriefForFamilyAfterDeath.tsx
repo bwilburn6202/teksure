@@ -19,7 +19,7 @@ export default function GriefForFamilyAfterDeath() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First days</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Notify close family.</li>
               <li>Funeral home arrangements.</li>
               <li>Don&apos;t make big decisions.</li>
@@ -34,7 +34,7 @@ export default function GriefForFamilyAfterDeath() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First weeks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Funeral / memorial.</li>
               <li>Notify financial accounts.</li>
               <li>Insurance claims.</li>
@@ -49,7 +49,7 @@ export default function GriefForFamilyAfterDeath() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First months</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Probate process.</li>
               <li>Update deeds, accounts to surviving spouse.</li>
               <li>Don&apos;t move yet (most regret quick moves).</li>
@@ -64,7 +64,7 @@ export default function GriefForFamilyAfterDeath() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First year</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Anniversaries hard — birthdays, holidays.</li>
               <li>Plan ahead for triggers.</li>
               <li>Make small decisions.</li>
@@ -80,7 +80,7 @@ export default function GriefForFamilyAfterDeath() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get help if</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Can&apos;t function 3 months in.</li>
               <li>Severe isolation.</li>
               <li>Substance abuse.</li>
@@ -95,7 +95,7 @@ export default function GriefForFamilyAfterDeath() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free senior bereavement</h3>
-            <p className="text-sm text-muted-foreground"><strong>Hospice bereavement</strong> — free 13 months. <strong>GriefShare</strong> — Christian groups. <strong>Widowed Persons Service</strong> — local. <strong>Modern Loss</strong> — online community. Don&apos;t walk this path alone.</p>
+            <p className="text-base text-muted-foreground"><strong>Hospice bereavement</strong> — free 13 months. <strong>GriefShare</strong> — Christian groups. <strong>Widowed Persons Service</strong> — local. <strong>Modern Loss</strong> — online community. Don&apos;t walk this path alone.</p>
           </CardContent>
         </Card>
       </main>

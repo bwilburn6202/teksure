@@ -26,7 +26,7 @@ export default function WaterShutoffGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to look</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Basement</strong> — most common. Wall closest to street, near floor.</li>
               <li><strong>Crawl space</strong> — entry point of water line.</li>
               <li><strong>Garage</strong> — sometimes mounted on inside wall.</li>
@@ -40,7 +40,7 @@ export default function WaterShutoffGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Two types of valves</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ball valve</strong> — straight handle. Turn 90° to close. Easiest. Most newer homes.</li>
               <li><strong>Gate valve</strong> — round wheel. Turn CLOCKWISE multiple times to close. Older homes.</li>
               <li>If gate valve is stuck — don&apos;t force it. Call plumber.</li>
@@ -51,7 +51,7 @@ export default function WaterShutoffGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Test it once a year</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Turn it OFF.</li>
               <li>Try a faucet — should run dry within 30 seconds.</li>
               <li>Turn it back ON.</li>
@@ -77,7 +77,7 @@ export default function WaterShutoffGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart auto-shutoff (worth it)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Moen Flo</strong> ($350-500 + plumber install) — installs at main line. Auto-shuts off if leak detected.</li>
               <li><strong>Phyn Plus</strong> ($600 + install) — same idea.</li>
               <li><strong>Insurance discount</strong> — many insurers give 5-10% off for these.</li>
@@ -89,7 +89,7 @@ export default function WaterShutoffGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tag the valve</h3>
-            <p className="text-sm text-muted-foreground">Hang a bright sign or piece of duct tape labeled "MAIN WATER" on the valve. In a panicked moment — at midnight, in the dark — you&apos;ll thank yourself. Tell every adult in the house. Pet sitters too.</p>
+            <p className="text-base text-muted-foreground">Hang a bright sign or piece of duct tape labeled "MAIN WATER" on the valve. In a panicked moment — at midnight, in the dark — you&apos;ll thank yourself. Tell every adult in the house. Pet sitters too.</p>
           </CardContent>
         </Card>
       </main>

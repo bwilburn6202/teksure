@@ -19,7 +19,7 @@ export default function OutlookForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Outlook vs others</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Email + calendar + contacts unified.</li>
               <li>Better than Gmail for those who use Microsoft.</li>
               <li>Free Outlook.com or paid via Microsoft 365.</li>
@@ -32,7 +32,7 @@ export default function OutlookForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5 essentials</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Compose + reply email.</li>
               <li>Add attachment.</li>
               <li>Add to calendar (events + appointments).</li>
@@ -46,7 +46,7 @@ export default function OutlookForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Calendar key feature</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Create event from email — drag email to calendar.</li>
               <li>Reminders 15 min before.</li>
               <li>Recurring events (medication, appointments).</li>
@@ -60,7 +60,7 @@ export default function OutlookForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior settings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → larger font sizes.</li>
               <li>Reading pane (split inbox + email).</li>
               <li>Auto-archive old emails.</li>
@@ -74,7 +74,7 @@ export default function OutlookForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free vs paid</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Outlook.com</strong> — FREE web version.</li>
               <li><strong>Microsoft 365 ($70/yr)</strong> — full desktop app + Office.</li>
               <li>Free version covers most senior needs.</li>
@@ -87,7 +87,7 @@ export default function OutlookForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Apple users</h3>
-            <p className="text-sm text-muted-foreground">Apple Mail + Apple Calendar work great if iPhone user. Built into iPhone, iPad, Mac. iCloud syncs all 3. Don&apos;t need Outlook unless used at work. Apple Mail simpler interface for many seniors.</p>
+            <p className="text-base text-muted-foreground">Apple Mail + Apple Calendar work great if iPhone user. Built into iPhone, iPad, Mac. iCloud syncs all 3. Don&apos;t need Outlook unless used at work. Apple Mail simpler interface for many seniors.</p>
           </CardContent>
         </Card>
       </main>

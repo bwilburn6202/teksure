@@ -34,7 +34,7 @@ export default function MentalHealthAppsCompare() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function MentalHealthAppsCompare() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Crisis right now?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>988 Suicide &amp; Crisis Lifeline</strong> — call or text 988. 24/7. Free.</li>
               <li><strong>Crisis Text Line</strong> — text HOME to 741741.</li>
               <li><strong>Veterans Crisis Line</strong> — call 988, press 1.</li>
@@ -55,7 +55,7 @@ export default function MentalHealthAppsCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior mental health</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Depression often shows differently in seniors — fatigue, withdrawal, "just getting old".</li>
               <li>Untreated depression is NOT normal aging.</li>
               <li>Loneliness raises mortality more than smoking.</li>
@@ -69,7 +69,7 @@ export default function MentalHealthAppsCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find a real therapist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Psychology Today</strong> — directory by zip + insurance + specialty.</li>
               <li><strong>Medicare provider finder</strong> — medicare.gov/care-compare.</li>
               <li><strong>Inclusive Therapists, Therapy for Black Girls</strong> — community-specific.</li>
@@ -82,7 +82,7 @@ export default function MentalHealthAppsCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Apps don&apos;t replace therapy</h3>
-            <p className="text-sm text-muted-foreground">Meditation apps help. Therapy helps MORE. If you&apos;re struggling, ask doctor for a referral. Medicare + most Medicare Advantage cover mental health visits the same as physical visits.</p>
+            <p className="text-base text-muted-foreground">Meditation apps help. Therapy helps MORE. If you&apos;re struggling, ask doctor for a referral. Medicare + most Medicare Advantage cover mental health visits the same as physical visits.</p>
           </CardContent>
         </Card>
       </main>

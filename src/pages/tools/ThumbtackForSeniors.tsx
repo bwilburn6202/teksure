@@ -19,7 +19,7 @@ export default function ThumbtackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What Thumbtack does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find local pros — plumbers, electricians, etc.</li>
               <li>Free for customers.</li>
               <li>Get multiple quotes.</li>
@@ -33,7 +33,7 @@ export default function ThumbtackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plumbing repairs.</li>
               <li>Electrical work.</li>
               <li>Lawn + tree care.</li>
@@ -47,7 +47,7 @@ export default function ThumbtackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Describe your project.</li>
               <li>Get matched with 5-10 pros.</li>
               <li>Pros send quotes.</li>
@@ -61,7 +61,7 @@ export default function ThumbtackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Compared to alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Angi (formerly Angie&apos;s List) — similar.</li>
               <li>HomeAdvisor — owned by Angi.</li>
               <li>TaskRabbit — small task focus.</li>
@@ -75,7 +75,7 @@ export default function ThumbtackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vet the pros</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read multiple reviews.</li>
               <li>Verify license + insurance.</li>
               <li>Check Better Business Bureau.</li>
@@ -89,7 +89,7 @@ export default function ThumbtackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t let strangers in unaccompanied.</li>
               <li>Friend or family member present if possible.</li>
               <li>Watch them work.</li>
@@ -103,7 +103,7 @@ export default function ThumbtackForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free quote alternative to phone book</h3>
-            <p className="text-sm text-muted-foreground">For seniors who used to use the phone book to find handyman/plumber, Thumbtack works similarly but in app form. Get 5+ quotes in 30 minutes. Read reviews. Pick the best fit. Free for customers. Combined with Nextdoor neighbor recommendations + Yelp reviews, you&apos;ll find quality local pros.</p>
+            <p className="text-base text-muted-foreground">For seniors who used to use the phone book to find handyman/plumber, Thumbtack works similarly but in app form. Get 5+ quotes in 30 minutes. Read reviews. Pick the best fit. Free for customers. Combined with Nextdoor neighbor recommendations + Yelp reviews, you&apos;ll find quality local pros.</p>
           </CardContent>
         </Card>
       </main>

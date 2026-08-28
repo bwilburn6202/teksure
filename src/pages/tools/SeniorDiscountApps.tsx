@@ -32,7 +32,7 @@ export default function SeniorDiscountApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Prescription savings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>GoodRx (free app)</strong> — show your phone at the pharmacy. Often beats your insurance copay. Saves seniors hundreds per year.</li>
               <li><strong>Mark Cuban Cost Plus Drug Co (costplusdrugs.com)</strong> — generic prescriptions at cost + 15%. Often dramatically cheaper.</li>
               <li><strong>Amazon Pharmacy</strong> — for Prime members, often discounted, delivered.</li>
@@ -88,7 +88,7 @@ export default function SeniorDiscountApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Just ASK</h3>
-            <p className="text-sm text-muted-foreground">Many businesses offer senior discounts but don't advertise them. At the cash register, just ask: "Do you have a senior discount?" Restaurants, hotels, airlines, hair salons — about 1 in 3 gives you something. Worst case, they say no.</p>
+            <p className="text-base text-muted-foreground">Many businesses offer senior discounts but don't advertise them. At the cash register, just ask: "Do you have a senior discount?" Restaurants, hotels, airlines, hair salons — about 1 in 3 gives you something. Worst case, they say no.</p>
           </CardContent>
         </Card>
       </main>

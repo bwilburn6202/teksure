@@ -19,7 +19,7 @@ export default function AirDropForSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is AirDrop?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Share photos, videos, files between Apple devices.</li>
               <li>iPhone to iPhone, iPad, Mac.</li>
               <li>No internet needed.</li>
@@ -33,7 +33,7 @@ export default function AirDropForSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to AirDrop a photo</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Photos app, find photo.</li>
               <li>Tap Share button (square + arrow).</li>
               <li>Tap AirDrop icon.</li>
@@ -47,7 +47,7 @@ export default function AirDropForSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best uses for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Send photos to grandkids during visits.</li>
               <li>Share contacts with friends.</li>
               <li>Send PDFs from email to family member.</li>
@@ -61,7 +61,7 @@ export default function AirDropForSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Settings + privacy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → General → AirDrop.</li>
               <li>Choose: Receiving Off, Contacts Only, or Everyone.</li>
               <li>Best: Contacts Only (most secure).</li>
@@ -75,7 +75,7 @@ export default function AirDropForSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Troubleshooting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Both devices need WiFi + Bluetooth ON.</li>
               <li>Both devices unlocked + screens on.</li>
               <li>Get within 30 feet.</li>
@@ -89,7 +89,7 @@ export default function AirDropForSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android equivalent</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Quick Share (formerly Nearby Share).</li>
               <li>Android-to-Android transfers.</li>
               <li>Settings → Connected devices.</li>
@@ -103,7 +103,7 @@ export default function AirDropForSharing() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No more emailing photos to yourself</h3>
-            <p className="text-sm text-muted-foreground">Many seniors email photos to themselves to move between iPhone and Mac. AirDrop eliminates that. Tap photo → Share → AirDrop → tap your Mac. Photo arrives in seconds. Same for moving files between iPhone and iPad. Once you learn AirDrop, you&apos;ll wonder how you lived without it. Practice once with a family member.</p>
+            <p className="text-base text-muted-foreground">Many seniors email photos to themselves to move between iPhone and Mac. AirDrop eliminates that. Tap photo → Share → AirDrop → tap your Mac. Photo arrives in seconds. Same for moving files between iPhone and iPad. Once you learn AirDrop, you&apos;ll wonder how you lived without it. Practice once with a family member.</p>
           </CardContent>
         </Card>
       </main>

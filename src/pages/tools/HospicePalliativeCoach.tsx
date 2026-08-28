@@ -75,7 +75,7 @@ export default function HospicePalliativeCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to get started</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Ask your doctor: "Would I qualify for palliative care or hospice?" — directly.</li>
               <li>Ask for a referral.</li>
               <li>Compare local hospice agencies at <strong>medicare.gov/care-compare</strong>.</li>
@@ -89,7 +89,7 @@ export default function HospicePalliativeCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>National Hospice and Palliative Care Organization (nhpco.org)</strong> — biggest national resource. <strong>Get Palliative Care (getpalliativecare.org)</strong> — find local providers. <strong>Care Compare on medicare.gov</strong> — quality ratings for every Medicare-certified hospice in the US.</p>
+            <p className="text-base text-muted-foreground"><strong>National Hospice and Palliative Care Organization (nhpco.org)</strong> — biggest national resource. <strong>Get Palliative Care (getpalliativecare.org)</strong> — find local providers. <strong>Care Compare on medicare.gov</strong> — quality ratings for every Medicare-certified hospice in the US.</p>
           </CardContent>
         </Card>
       </main>

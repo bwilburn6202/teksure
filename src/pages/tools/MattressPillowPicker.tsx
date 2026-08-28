@@ -33,7 +33,7 @@ export default function MattressPillowPicker() {
                   <span className="text-sm font-semibold text-primary">{m.cost}</span>
                 </div>
                 <p className="text-sm">{m.best}</p>
-                <p className="text-sm text-muted-foreground">{m.good}</p>
+                <p className="text-base text-muted-foreground">{m.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function MattressPillowPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior mattress rules</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medium-firm best for back support.</li>
               <li>Too soft = hard to get out of bed.</li>
               <li>Replace every 7-10 years.</li>
@@ -56,7 +56,7 @@ export default function MattressPillowPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pillow picks ($30-100)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Side sleeper</strong> — thick firm pillow + pillow between knees.</li>
               <li><strong>Back sleeper</strong> — thinner pillow + small pillow under knees.</li>
               <li><strong>Neck pain</strong> — Tempur-Pedic Neck or Coop Home Goods.</li>
@@ -70,7 +70,7 @@ export default function MattressPillowPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Adjustable beds</h3>
-            <p className="text-sm text-muted-foreground"><strong>Costco</strong> + <strong>Amazon</strong> sell adjustable bases $700-1,500. Helps reflux, snoring, back pain, easier in/out. Pair with new mattress for best results. Some HSAs cover with doctor prescription.</p>
+            <p className="text-base text-muted-foreground"><strong>Costco</strong> + <strong>Amazon</strong> sell adjustable bases $700-1,500. Helps reflux, snoring, back pain, easier in/out. Pair with new mattress for best results. Some HSAs cover with doctor prescription.</p>
           </CardContent>
         </Card>
       </main>

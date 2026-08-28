@@ -19,7 +19,7 @@ export default function FidelityAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Fidelity?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Among most popular brokerages for retirees.</li>
               <li>$0 commission stocks + ETFs.</li>
               <li>Excellent retirement planning tools.</li>
@@ -33,7 +33,7 @@ export default function FidelityAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">App features for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>See all accounts in one place — IRA, 401(k), brokerage.</li>
               <li>Required Minimum Distribution (RMD) calculator.</li>
               <li>Income planning for retirement.</li>
@@ -47,7 +47,7 @@ export default function FidelityAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RMD management</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Required at age 73 (most accounts).</li>
               <li>App calculates exact RMD amount.</li>
               <li>Schedule automatic monthly distributions.</li>
@@ -61,7 +61,7 @@ export default function FidelityAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Income strategies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Income generator tool — find dividend stocks.</li>
               <li>Bond ladder calculator.</li>
               <li>Annuity quotes inside the app.</li>
@@ -75,7 +75,7 @@ export default function FidelityAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free phone advisors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free retirement advisor consultation.</li>
               <li>Phone or in-person at branch.</li>
               <li>Help with rollovers, RMDs, beneficiaries.</li>
@@ -89,7 +89,7 @@ export default function FidelityAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior security</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Add Trusted Contact — Fidelity contacts if suspicious activity.</li>
               <li>Set up 2FA.</li>
               <li>Voice biometric ID for phone calls.</li>
@@ -103,7 +103,7 @@ export default function FidelityAppForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Add Trusted Contact today</h3>
-            <p className="text-sm text-muted-foreground">If your retirement accounts are at Fidelity, add a Trusted Contact this week — usually adult child or spouse. Fidelity will reach out to them if they suspect fraud or you appear cognitively impaired. This safeguard has saved many seniors from being scammed out of retirement savings. Free, takes 5 minutes, requires their consent.</p>
+            <p className="text-base text-muted-foreground">If your retirement accounts are at Fidelity, add a Trusted Contact this week — usually adult child or spouse. Fidelity will reach out to them if they suspect fraud or you appear cognitively impaired. This safeguard has saved many seniors from being scammed out of retirement savings. Free, takes 5 minutes, requires their consent.</p>
           </CardContent>
         </Card>
       </main>

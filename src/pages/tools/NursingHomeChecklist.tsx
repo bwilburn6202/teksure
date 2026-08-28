@@ -19,7 +19,7 @@ export default function NursingHomeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 1: Medicare Care Compare</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>medicare.gov/care-compare — FREE.</li>
               <li>Star ratings 1-5.</li>
               <li>Health inspections, staffing, quality measures.</li>
@@ -33,7 +33,7 @@ export default function NursingHomeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tour visit checklist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Smell</strong> — clean? Or strong cleaner masking?</li>
               <li><strong>Residents</strong> — engaged or sleeping in chairs?</li>
               <li><strong>Staff</strong> — chatting with residents? Rushed?</li>
@@ -50,7 +50,7 @@ export default function NursingHomeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Questions to ask</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Staff-to-resident ratio (day + night)?</li>
               <li>RN coverage 24/7?</li>
               <li>Staff turnover rate (lower = better)?</li>
@@ -68,7 +68,7 @@ export default function NursingHomeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost + payment</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Average: $9,000-12,000/month nationally.</li>
               <li>Medicare covers 100 days post-hospital ONLY.</li>
               <li>Medicaid covers long-term once savings spent down.</li>
@@ -83,7 +83,7 @@ export default function NursingHomeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Once admitted</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Visit OFTEN — best advocate.</li>
               <li>Get to know aides + nurses by name.</li>
               <li>Watch for changes (skin breakdown, weight loss).</li>
@@ -98,7 +98,7 @@ export default function NursingHomeChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Alternatives first</h3>
-            <p className="text-sm text-muted-foreground">Most seniors want to stay home. Consider in-home care + adult day care + assisted living before nursing home. Nursing home best for those needing 24/7 medical care. PACE program (see /tools/adult-day-care-guide) — alternative for Medicaid-eligible.</p>
+            <p className="text-base text-muted-foreground">Most seniors want to stay home. Consider in-home care + adult day care + assisted living before nursing home. Nursing home best for those needing 24/7 medical care. PACE program (see /tools/adult-day-care-guide) — alternative for Medicaid-eligible.</p>
           </CardContent>
         </Card>
       </main>

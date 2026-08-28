@@ -38,7 +38,7 @@ export default function RmdExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Key deadlines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Your first RMD:</strong> You can wait until April 1 of the year AFTER you turn 73. (But this means doing two in one calendar year — most people just take it the year they turn 73 to avoid that.)</li>
               <li><strong>Every RMD after:</strong> December 31 each year. Don't wait until December 30 — banks get backed up.</li>
               <li><strong>Best practice:</strong> Take it in early November. Plenty of buffer.</li>
@@ -77,7 +77,7 @@ export default function RmdExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to actually take it</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign into your retirement account (Fidelity, Vanguard, Schwab, or wherever).</li>
               <li>Look for "Required Minimum Distribution" or "RMD" in the menu. They calculate it for you.</li>
               <li>Pick how to take it: bank transfer, check, or move to another taxable account.</li>
@@ -90,7 +90,7 @@ export default function RmdExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart RMD moves</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Qualified Charitable Distribution (QCD):</strong> Send up to $105,000 from your IRA directly to a charity. It counts toward your RMD AND is tax-free. Best for the charitably inclined.</li>
               <li><strong>Combine accounts:</strong> If you have multiple traditional IRAs, you can take the total RMD from any one of them.</li>
               <li><strong>Multiple 401(k)s</strong> have to be taken separately — RMD from each.</li>
@@ -102,7 +102,7 @@ export default function RmdExplainer() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get help</h3>
-            <p className="text-sm text-muted-foreground">RMDs aren't complicated, but the rules around early withdrawals, inheriting accounts, and penalty waivers ARE. A fee-only fiduciary advisor (one-time consult, $300-500) can save you thousands. Look at NAPFA.org. Or call your broker — Fidelity and Vanguard offer free 30-minute calls about RMDs to account holders.</p>
+            <p className="text-base text-muted-foreground">RMDs aren't complicated, but the rules around early withdrawals, inheriting accounts, and penalty waivers ARE. A fee-only fiduciary advisor (one-time consult, $300-500) can save you thousands. Look at NAPFA.org. Or call your broker — Fidelity and Vanguard offer free 30-minute calls about RMDs to account holders.</p>
           </CardContent>
         </Card>
       </main>

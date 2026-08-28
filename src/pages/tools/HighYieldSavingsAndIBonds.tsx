@@ -26,7 +26,7 @@ export default function HighYieldSavingsAndIBonds() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best high-yield savings accounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ally Bank</strong> — best overall. Strong customer service, easy app. ~4-5% APY.</li>
               <li><strong>Marcus by Goldman Sachs</strong> — high rates, simple interface.</li>
               <li><strong>Discover Bank</strong> — competitive rates, integrated with Discover credit card.</li>
@@ -42,7 +42,7 @@ export default function HighYieldSavingsAndIBonds() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to open one</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Apply online at the bank\'s website (5-10 minutes). Need name, address, SSN, ID.</li>
               <li>Link your existing checking account.</li>
               <li>Transfer money — first transfer takes 2-3 days.</li>
@@ -84,7 +84,7 @@ export default function HighYieldSavingsAndIBonds() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick math</h3>
-            <p className="text-sm text-muted-foreground">If you have $25,000+ in a regular savings account at 0.05% — moving to a 4.5% online account earns you ~$1,100/year in interest. Pure profit for 30 minutes of paperwork. The risk is exactly the same (both FDIC-insured up to $250k).</p>
+            <p className="text-base text-muted-foreground">If you have $25,000+ in a regular savings account at 0.05% — moving to a 4.5% online account earns you ~$1,100/year in interest. Pure profit for 30 minutes of paperwork. The risk is exactly the same (both FDIC-insured up to $250k).</p>
           </CardContent>
         </Card>
       </main>

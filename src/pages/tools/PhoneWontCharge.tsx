@@ -19,7 +19,7 @@ export default function PhoneWontCharge() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick fixes (try in order)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Try a different cable</strong>. Cables fail more than anything else.</li>
               <li><strong>Try a different power brick</strong>. Wall plug fails next-most.</li>
               <li><strong>Try a different wall outlet</strong>. Especially if other things plugged in stopped working.</li>
@@ -60,7 +60,7 @@ export default function PhoneWontCharge() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When the battery is dying (not charging issue)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone shuts off above 20% randomly.</li>
               <li>Drops from 100% to 50% in an hour.</li>
               <li>Old phone (3+ years).</li>
@@ -73,7 +73,7 @@ export default function PhoneWontCharge() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Charge port repair</h3>
-            <p className="text-sm text-muted-foreground">If everything else fails — port may be physically damaged. Apple charges $80-150 to replace; local repair shops $40-80. Often quickest fix to get years more life out of phone.</p>
+            <p className="text-base text-muted-foreground">If everything else fails — port may be physically damaged. Apple charges $80-150 to replace; local repair shops $40-80. Often quickest fix to get years more life out of phone.</p>
           </CardContent>
         </Card>
       </main>

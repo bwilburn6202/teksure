@@ -561,7 +561,7 @@ export default function EmailSpamManager() {
               <CardContent className="p-5 flex flex-col sm:flex-row sm:items-center gap-3 justify-between">
                 <div>
                   <h4 className="font-semibold mb-1">Need more help from {selected.name}?</h4>
-                  <p className="text-sm text-muted-foreground">The official help site has screenshots and short videos.</p>
+                  <p className="text-base text-muted-foreground">The official help site has screenshots and short videos.</p>
                 </div>
                 <Button asChild variant="outline" className="min-h-11 shrink-0">
                   <a href={selected.support.url} target="_blank" rel="noopener noreferrer">

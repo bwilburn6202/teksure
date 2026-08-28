@@ -45,7 +45,7 @@ export default function GroupTextCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Group text etiquette (and your sanity)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Reply All" sends to everyone. If you only want to tell one person something, start a one-on-one text instead.</li>
               <li>Photos go to everyone. Think before sending — Aunt Carol probably doesn't need the X-ray of your knee.</li>
               <li>Late at night, a message to a 12-person family chat dings 12 phones. Save personal rambles for morning.</li>
@@ -58,7 +58,7 @@ export default function GroupTextCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When iPhone and Android mix</h3>
-            <p className="text-sm text-muted-foreground">If your family has both iPhones and Android phones, the group becomes "MMS" — bubbles look green and some features (typing dots, read receipts, leaving the group) won't work. Newer phones use "RCS" which fixes most of this. Or move the family to <strong>WhatsApp</strong> or <strong>Signal</strong> — both are free and work the same on every phone.</p>
+            <p className="text-base text-muted-foreground">If your family has both iPhones and Android phones, the group becomes "MMS" — bubbles look green and some features (typing dots, read receipts, leaving the group) won't work. Newer phones use "RCS" which fixes most of this. Or move the family to <strong>WhatsApp</strong> or <strong>Signal</strong> — both are free and work the same on every phone.</p>
           </CardContent>
         </Card>
       </main>

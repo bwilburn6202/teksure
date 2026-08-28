@@ -39,7 +39,7 @@ export default function LeakDetectionSensors() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.good}</p>
-                <p className="text-sm text-muted-foreground">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.best}</p>
               </CardContent>
             </Card>
           ))}
@@ -48,7 +48,7 @@ export default function LeakDetectionSensors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to put sensors</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Under kitchen sink</strong> — slow drips most common.</li>
               <li><strong>Under bathroom sinks</strong> (each one).</li>
               <li><strong>Under water heater</strong> — when it dies, it dies wet.</li>
@@ -64,7 +64,7 @@ export default function LeakDetectionSensors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How they work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Battery-powered. 1-3 year life.</li>
               <li>Two metal contacts on bottom. Water completes the circuit.</li>
               <li>Sensor connects to your wifi.</li>
@@ -84,7 +84,7 @@ export default function LeakDetectionSensors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Vacation peace of mind</h3>
-            <p className="text-sm text-muted-foreground">Heading south for the winter? Add 4-6 sensors before you leave + a smart valve. Phone gets alert from 2,000 miles away — call neighbor or plumber before damage spreads. Cheaper than a new floor.</p>
+            <p className="text-base text-muted-foreground">Heading south for the winter? Add 4-6 sensors before you leave + a smart valve. Phone gets alert from 2,000 miles away — call neighbor or plumber before damage spreads. Cheaper than a new floor.</p>
           </CardContent>
         </Card>
       </main>

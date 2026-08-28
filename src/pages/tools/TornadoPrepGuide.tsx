@@ -19,7 +19,7 @@ export default function TornadoPrepGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch vs Warning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Watch</strong> — conditions favorable. Be ready.</li>
               <li><strong>Warning</strong> — tornado spotted. Take shelter NOW.</li>
               <li>Don&apos;t wait to see it.</li>
@@ -32,7 +32,7 @@ export default function TornadoPrepGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to shelter</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>BEST</strong>: storm shelter / underground.</li>
               <li><strong>2nd best</strong>: basement.</li>
               <li><strong>3rd</strong>: interior bathroom (mid-house, no windows).</li>
@@ -46,7 +46,7 @@ export default function TornadoPrepGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tornado kit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Closed-toe shoes (debris).</li>
               <li>Flashlight + battery.</li>
               <li>Phone fully charged.</li>
@@ -62,7 +62,7 @@ export default function TornadoPrepGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If mobile home</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>LEAVE — get to nearest sturdy building.</li>
               <li>Many parks have community shelters.</li>
               <li>Plan ahead — know where to go.</li>
@@ -76,7 +76,7 @@ export default function TornadoPrepGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After tornado</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stay in shelter 30 min after.</li>
               <li>Watch for downed power lines.</li>
               <li>Don&apos;t step on debris (nails).</li>
@@ -91,7 +91,7 @@ export default function TornadoPrepGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Storm shelter</h3>
-            <p className="text-sm text-muted-foreground">$3K-15K install. Tax-deductible in some states. Above-ground steel safer than basement (basement could collapse). FEMA has free design plans. <strong>Tornado Alley states</strong> — worth investing if no basement. Could save lives.</p>
+            <p className="text-base text-muted-foreground">$3K-15K install. Tax-deductible in some states. Above-ground steel safer than basement (basement could collapse). FEMA has free design plans. <strong>Tornado Alley states</strong> — worth investing if no basement. Could save lives.</p>
           </CardContent>
         </Card>
       </main>

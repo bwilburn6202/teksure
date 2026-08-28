@@ -58,7 +58,7 @@ export default function WifiExtenderVsMesh() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free fixes to try first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Move router</strong> — central in home, off floor, away from microwave/big appliances.</li>
               <li><strong>Restart router</strong> — unplug 30 sec, plug back. Fixes 50% of complaints.</li>
               <li><strong>Update firmware</strong> — log into router admin page, click "Check for updates".</li>
@@ -71,7 +71,7 @@ export default function WifiExtenderVsMesh() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Decision rule</h3>
-            <p className="text-sm text-muted-foreground">One small dead zone → extender. Multiple dead zones / whole-house → mesh. Stuck on bad Wi-Fi for years → just upgrade to mesh, spend the money once. The savings on stress is enormous.</p>
+            <p className="text-base text-muted-foreground">One small dead zone → extender. Multiple dead zones / whole-house → mesh. Stuck on bad Wi-Fi for years → just upgrade to mesh, spend the money once. The savings on stress is enormous.</p>
           </CardContent>
         </Card>
       </main>

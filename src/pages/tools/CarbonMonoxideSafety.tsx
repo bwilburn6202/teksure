@@ -19,7 +19,7 @@ export default function CarbonMonoxideSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is carbon monoxide?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Colorless, odorless, tasteless gas.</li>
               <li>Can&apos;t see it, smell it, or taste it.</li>
               <li>Produced by combustion — gas, propane, wood, charcoal.</li>
@@ -33,7 +33,7 @@ export default function CarbonMonoxideSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Symptoms of CO poisoning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Headache.</li>
               <li>Dizziness or confusion.</li>
               <li>Nausea or vomiting.</li>
@@ -47,7 +47,7 @@ export default function CarbonMonoxideSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Detector requirements</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Required by law in most states.</li>
               <li>One on every floor of home.</li>
               <li>Outside each sleeping area.</li>
@@ -61,7 +61,7 @@ export default function CarbonMonoxideSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best CO detectors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Kidde Nighthawk — battery + plug-in, $30.</li>
               <li>First Alert SCO5CN — combo CO + smoke, $40.</li>
               <li>Nest Protect — smart, smartphone alerts, $120.</li>
@@ -75,7 +75,7 @@ export default function CarbonMonoxideSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common danger sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Gas furnaces — annual maintenance critical.</li>
               <li>Gas stoves + ovens.</li>
               <li>Gas water heaters.</li>
@@ -89,7 +89,7 @@ export default function CarbonMonoxideSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If alarm goes off</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Get everyone outside immediately.</li>
               <li>Call 911 from outside.</li>
               <li>Do NOT re-enter to investigate.</li>
@@ -103,7 +103,7 @@ export default function CarbonMonoxideSafety() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Check your detectors today</h3>
-            <p className="text-sm text-muted-foreground">Push the test button on every smoke and CO detector right now. If they don&apos;t beep loudly, replace the batteries (or the unit if older than 7 years). $30 per detector versus your life is the easiest math you&apos;ll ever do. If you don&apos;t have CO detectors at all, buy them today on Amazon — they&apos;ll arrive tomorrow. Many seniors have died from CO poisoning that a $30 detector would have prevented.</p>
+            <p className="text-base text-muted-foreground">Push the test button on every smoke and CO detector right now. If they don&apos;t beep loudly, replace the batteries (or the unit if older than 7 years). $30 per detector versus your life is the easiest math you&apos;ll ever do. If you don&apos;t have CO detectors at all, buy them today on Amazon — they&apos;ll arrive tomorrow. Many seniors have died from CO poisoning that a $30 detector would have prevented.</p>
           </CardContent>
         </Card>
       </main>

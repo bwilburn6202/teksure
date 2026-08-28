@@ -90,7 +90,7 @@ export default function IndexFundCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to learn more</h3>
-            <p className="text-sm text-muted-foreground"><strong>Bogleheads.org</strong> — friendly forum with thousands of retirees discussing this. <strong>"The Little Book of Common Sense Investing" by John Bogle</strong> — 200 pages, life-changing. <strong>Reddit r/Bogleheads</strong> for community Q&A.</p>
+            <p className="text-base text-muted-foreground"><strong>Bogleheads.org</strong> — friendly forum with thousands of retirees discussing this. <strong>"The Little Book of Common Sense Investing" by John Bogle</strong> — 200 pages, life-changing. <strong>Reddit r/Bogleheads</strong> for community Q&A.</p>
           </CardContent>
         </Card>
       </main>

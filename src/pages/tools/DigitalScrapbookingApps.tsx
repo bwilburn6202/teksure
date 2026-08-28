@@ -19,7 +19,7 @@ export default function DigitalScrapbookingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why go digital?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No more paper, glue, scissors, mess.</li>
               <li>Easier on hands and eyesight.</li>
               <li>Backup — never lost in fire or flood.</li>
@@ -33,7 +33,7 @@ export default function DigitalScrapbookingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best apps for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Project Life — popular scrapbooking app.</li>
               <li>Mosaic — auto-creates beautiful pages.</li>
               <li>Canva — flexible, free, lots of templates.</li>
@@ -47,7 +47,7 @@ export default function DigitalScrapbookingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Project Life — designed for scrapbookers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Made by scrapbookers for scrapbookers.</li>
               <li>Pre-designed page layouts.</li>
               <li>Templates with photo + journal spots.</li>
@@ -61,7 +61,7 @@ export default function DigitalScrapbookingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mosaic — easiest</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick 20 photos — Mosaic designs the book.</li>
               <li>$25 + shipping — printed within days.</li>
               <li>Almost no work required.</li>
@@ -75,7 +75,7 @@ export default function DigitalScrapbookingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Print options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Home printer — basic page printing.</li>
               <li>FedEx Office — better quality prints.</li>
               <li>Costco Photo Center — best price.</li>
@@ -89,7 +89,7 @@ export default function DigitalScrapbookingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Combining digital + physical</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Print pages, slide into 3-ring album.</li>
               <li>Add real items — ticket stubs, pressed flowers.</li>
               <li>Best of both — digital ease, physical keepsake.</li>
@@ -103,7 +103,7 @@ export default function DigitalScrapbookingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with Mosaic for first book</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;ve never made a scrapbook digitally, Mosaic is the easiest entry point. The app walks you through picking 20 photos, then designs and prints a hardcover book. After your first one, you can graduate to more flexible tools like Canva or Project Life. Many seniors love the lower physical effort while keeping the creative joy of scrapbooking.</p>
+            <p className="text-base text-muted-foreground">If you&apos;ve never made a scrapbook digitally, Mosaic is the easiest entry point. The app walks you through picking 20 photos, then designs and prints a hardcover book. After your first one, you can graduate to more flexible tools like Canva or Project Life. Many seniors love the lower physical effort while keeping the creative joy of scrapbooking.</p>
           </CardContent>
         </Card>
       </main>

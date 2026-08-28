@@ -19,7 +19,7 @@ export default function ElectricalBasicsForSeniors() {
         <Card className="mb-4 border-red-300">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3 text-red-700">SAFETY FIRST</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Always shut off breaker before electrical work.</li>
               <li>Voltage tester ($15) — verify off.</li>
               <li>Only work when dry hands + dry floor.</li>
@@ -33,7 +33,7 @@ export default function ElectricalBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find your breaker box</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Usually basement, garage, or utility room.</li>
               <li>Label every breaker.</li>
               <li>Test which breaker controls each room.</li>
@@ -47,7 +47,7 @@ export default function ElectricalBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY safe tasks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Replace lightbulb</strong> — anyone can.</li>
               <li><strong>Replace electrical outlet cover</strong>.</li>
               <li><strong>Replace switch plate</strong>.</li>
@@ -61,7 +61,7 @@ export default function ElectricalBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tasks for electrician</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Replace outlet (involve wires).</li>
               <li>Install new outlet.</li>
               <li>Replace ceiling fan.</li>
@@ -75,7 +75,7 @@ export default function ElectricalBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common issues</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tripped breaker</strong> — flip off then on.</li>
               <li><strong>Dead outlet</strong> — check GFCI button.</li>
               <li><strong>Flickering lights</strong> — bulb or wiring.</li>
@@ -89,7 +89,7 @@ export default function ElectricalBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use surge protectors (not power strips).</li>
               <li>Don&apos;t overload outlets.</li>
               <li>Replace frayed cords immediately.</li>
@@ -103,7 +103,7 @@ export default function ElectricalBasicsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hire wisely</h3>
-            <p className="text-sm text-muted-foreground">Licensed electrician = $100-200/hr. Get 3 quotes for big jobs. Ask for license + insurance. Senior discount common. Pay only after work complete + tested. Some areas free electrician for low-income seniors. Local AAA + senior services. Don&apos;t risk DIY electrical beyond your skill.</p>
+            <p className="text-base text-muted-foreground">Licensed electrician = $100-200/hr. Get 3 quotes for big jobs. Ask for license + insurance. Senior discount common. Pay only after work complete + tested. Some areas free electrician for low-income seniors. Local AAA + senior services. Don&apos;t risk DIY electrical beyond your skill.</p>
           </CardContent>
         </Card>
       </main>

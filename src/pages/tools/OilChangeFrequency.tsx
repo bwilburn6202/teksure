@@ -19,7 +19,7 @@ export default function OilChangeFrequency() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Modern car reality</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Old advice: every 3,000 miles.</li>
               <li>Modern cars: 5,000-10,000 miles.</li>
               <li>Synthetic oil: 7,500-15,000 miles.</li>
@@ -33,7 +33,7 @@ export default function OilChangeFrequency() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to go</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Dealer</strong> — most expensive but full service.</li>
               <li><strong>Trusted independent</strong> — best value.</li>
               <li><strong>Quick lube (Jiffy, Valvoline)</strong> — convenient, watch upsells.</li>
@@ -47,7 +47,7 @@ export default function OilChangeFrequency() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Beware upsells</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Engine flush&quot; — usually unnecessary.</li>
               <li>&quot;Transmission flush&quot; — only per manufacturer schedule.</li>
               <li>&quot;Coolant flush&quot; — usually only every 100K miles.</li>
@@ -61,7 +61,7 @@ export default function OilChangeFrequency() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tip: keep records</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Notebook in glove box.</li>
               <li>Date + mileage + service.</li>
               <li>Or app: Drivvo, MileIQ.</li>
@@ -75,7 +75,7 @@ export default function OilChangeFrequency() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Modern cars</h3>
-            <p className="text-sm text-muted-foreground">Most 2010+ cars have oil life monitor on dashboard. Trust it. Says &quot;15% remaining&quot; — schedule change. Use synthetic if newer car. Saves money + time vs over-changing.</p>
+            <p className="text-base text-muted-foreground">Most 2010+ cars have oil life monitor on dashboard. Trust it. Says &quot;15% remaining&quot; — schedule change. Use synthetic if newer car. Saves money + time vs over-changing.</p>
           </CardContent>
         </Card>
       </main>

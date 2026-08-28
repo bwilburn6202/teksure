@@ -34,7 +34,7 @@ export default function WineApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function WineApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time Vivino tour</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install Vivino. Sign up.</li>
               <li>Press camera button. Photograph a wine label.</li>
               <li>App shows ratings (1-5 stars), reviews, food pairing, price.</li>
@@ -57,7 +57,7 @@ export default function WineApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wine clubs worth knowing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Costco</strong> — best wine-per-dollar bargains in retail. The Kirkland branded wines are often legitimately good.</li>
               <li><strong>Naked Wines</strong> — direct from independent winemakers. $40-100/month subscription.</li>
               <li><strong>Cellars Wine Club</strong> — gift-giver and seasonal subscriptions.</li>
@@ -69,7 +69,7 @@ export default function WineApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For your grandkids</h3>
-            <p className="text-sm text-muted-foreground">Photograph wines from family weddings/anniversaries — saved in Vivino. Great keepsake AND lets you remember which wine you actually liked at someone\'s 50th anniversary.</p>
+            <p className="text-base text-muted-foreground">Photograph wines from family weddings/anniversaries — saved in Vivino. Great keepsake AND lets you remember which wine you actually liked at someone\'s 50th anniversary.</p>
           </CardContent>
         </Card>
       </main>

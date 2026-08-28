@@ -36,7 +36,7 @@ export default function DigitalCleanup() {
             <CardContent className="p-4 flex gap-3"><div className="mt-0.5">{done.has(task.id) ? <CheckCircle className="h-5 w-5 text-green-500" /> : <Circle className="h-5 w-5 text-muted-foreground" />}</div><div><h3 className={`font-medium text-sm ${done.has(task.id) ? 'line-through text-muted-foreground' : ''}`}>{task.title}</h3><p className="text-xs text-muted-foreground mt-1">{task.tip}</p></div></CardContent>
           </Card>
         ))}</div>
-        {done.size === TASKS.length && <div className="text-center mt-8 p-6 rounded-xl bg-green-500/10 border border-green-500/30"><Sparkles className="h-8 w-8 text-green-500 mx-auto mb-2" /><h2 className="text-lg font-bold">All clean!</h2><p className="text-sm text-muted-foreground">Your digital life is freshly organized.</p></div>}
+        {done.size === TASKS.length && <div className="text-center mt-8 p-6 rounded-xl bg-green-500/10 border border-green-500/30"><Sparkles className="h-8 w-8 text-green-500 mx-auto mb-2" /><h2 className="text-lg font-bold">All clean!</h2><p className="text-base text-muted-foreground">Your digital life is freshly organized.</p></div>}
       </div></main>
       <Footer />
     </>

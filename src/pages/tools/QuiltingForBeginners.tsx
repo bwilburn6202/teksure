@@ -19,7 +19,7 @@ export default function QuiltingForBeginners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why quilt?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family heirloom potential.</li>
               <li>Use scraps + memory clothing.</li>
               <li>Therapeutic + meditative.</li>
@@ -33,7 +33,7 @@ export default function QuiltingForBeginners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tools needed ($150 start)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sewing machine</strong> — basic OK.</li>
               <li><strong>Rotary cutter + mat</strong> ($40).</li>
               <li><strong>Quilting ruler</strong> — clear plastic.</li>
@@ -48,7 +48,7 @@ export default function QuiltingForBeginners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First quilt: Easy 9-patch</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>9 squares per block.</li>
               <li>Cut 5&quot; x 5&quot; squares.</li>
               <li>Sew 3 rows of 3 squares.</li>
@@ -62,7 +62,7 @@ export default function QuiltingForBeginners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quilt sandwich</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bottom: backing fabric.</li>
               <li>Middle: cotton batting.</li>
               <li>Top: pieced quilt top.</li>
@@ -76,7 +76,7 @@ export default function QuiltingForBeginners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Learn online (free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YouTube</strong> — Jenny Doan, Missouri Star.</li>
               <li><strong>Suzy Quilts</strong> — patterns + blog.</li>
               <li><strong>FreeQuiltingPatterns.com</strong>.</li>
@@ -90,7 +90,7 @@ export default function QuiltingForBeginners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quilting groups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local quilt guild — most towns.</li>
               <li>Quilt shops — host classes.</li>
               <li>Senior centers — quilting circles.</li>
@@ -104,7 +104,7 @@ export default function QuiltingForBeginners() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Memory quilts</h3>
-            <p className="text-sm text-muted-foreground">Most meaningful: cut squares from loved one&apos;s shirts after passing — memory quilt for family. T-shirt quilt from college / sports days. Wedding-dress quilt. Baby clothes quilt for grandchild. Time + love = treasured heirloom.</p>
+            <p className="text-base text-muted-foreground">Most meaningful: cut squares from loved one&apos;s shirts after passing — memory quilt for family. T-shirt quilt from college / sports days. Wedding-dress quilt. Baby clothes quilt for grandchild. Time + love = treasured heirloom.</p>
           </CardContent>
         </Card>
       </main>

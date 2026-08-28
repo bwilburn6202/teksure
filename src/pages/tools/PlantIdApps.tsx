@@ -34,7 +34,7 @@ export default function PlantIdApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,7 +56,7 @@ export default function PlantIdApps() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground"><strong>Seek</strong> for free, ad-free identification. <strong>PictureThis</strong> if you want plant care reminders for houseplants and a polished interface — start with the free trial, decide if it\'s worth $30/year.</p>
+            <p className="text-base text-muted-foreground"><strong>Seek</strong> for free, ad-free identification. <strong>PictureThis</strong> if you want plant care reminders for houseplants and a polished interface — start with the free trial, decide if it\'s worth $30/year.</p>
           </CardContent>
         </Card>
       </main>

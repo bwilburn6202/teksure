@@ -19,7 +19,7 @@ export default function FiverrFreelanceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best platforms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fiverr</strong> — gigs starting $5-1,000+. Beginner friendly.</li>
               <li><strong>Upwork</strong> — long-term contracts, professional services.</li>
               <li><strong>LinkedIn ProFinder</strong> — your network knows you.</li>
@@ -33,7 +33,7 @@ export default function FiverrFreelanceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly skills</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Writing + editing</strong> — high demand.</li>
               <li><strong>Bookkeeping / accounting</strong> — QuickBooks.</li>
               <li><strong>Resume writing</strong> — your career experience valuable.</li>
@@ -49,7 +49,7 @@ export default function FiverrFreelanceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get started Fiverr</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free signup at fiverr.com.</li>
               <li>Create &quot;gigs&quot; — services you offer.</li>
               <li>Start prices low ($5-25) to get first reviews.</li>
@@ -63,7 +63,7 @@ export default function FiverrFreelanceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set your hours</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Decide — 5 hrs/week? 20?</li>
               <li>Block calendar.</li>
               <li>Don&apos;t overcommit — burnout is real.</li>
@@ -77,7 +77,7 @@ export default function FiverrFreelanceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Realistic income</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Beginner (3-6 months): $0-500/mo.</li>
               <li>Established (1-2 yrs): $500-3,000/mo.</li>
               <li>Pro (2+ yrs reputation): $3,000-10,000/mo.</li>
@@ -91,7 +91,7 @@ export default function FiverrFreelanceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Social Security impact</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Above Full Retirement Age (67) = no impact.</li>
               <li>Below FRA — earnings limit ($23,400/yr 2026 reduces benefits).</li>
               <li>$1 reduction for every $2 over.</li>
@@ -105,7 +105,7 @@ export default function FiverrFreelanceSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Why work in retirement</h3>
-            <p className="text-sm text-muted-foreground">More than money — purpose, mental sharpness, social. Studies: working seniors stay healthier longer. Even 5 hrs/week meaningful. Your skills + experience = valuable. Many career-second-act seniors find more fulfillment than career one. Try it.</p>
+            <p className="text-base text-muted-foreground">More than money — purpose, mental sharpness, social. Studies: working seniors stay healthier longer. Even 5 hrs/week meaningful. Your skills + experience = valuable. Many career-second-act seniors find more fulfillment than career one. Try it.</p>
           </CardContent>
         </Card>
       </main>

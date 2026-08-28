@@ -19,7 +19,7 @@ export default function PharmacyAppRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">CVS app features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Refill prescriptions — tap or scan label.</li>
               <li>Schedule pickup time.</li>
               <li>Schedule vaccinations.</li>
@@ -33,7 +33,7 @@ export default function PharmacyAppRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">CVS ExtraCare</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free membership.</li>
               <li>2% back as ExtraBucks.</li>
               <li>Carepass — $5/month for free shipping + extra perks.</li>
@@ -47,7 +47,7 @@ export default function PharmacyAppRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Walgreens app features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pill reminders + refill alerts.</li>
               <li>Photo printing from phone.</li>
               <li>Refill via Express Pharmacy.</li>
@@ -61,7 +61,7 @@ export default function PharmacyAppRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">MyWalgreens rewards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free membership.</li>
               <li>1% back on health + wellness.</li>
               <li>5% back on Walgreens brand.</li>
@@ -75,7 +75,7 @@ export default function PharmacyAppRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photo printing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Both apps print photos from phone.</li>
               <li>Same-day pickup.</li>
               <li>4x6 prints — $0.40 typically.</li>
@@ -89,7 +89,7 @@ export default function PharmacyAppRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart refill strategy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Schedule auto-refill in app.</li>
               <li>Get text when ready.</li>
               <li>Drive-through pickup if avail.</li>
@@ -103,7 +103,7 @@ export default function PharmacyAppRewards() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior Tuesday is real</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re 60+, mark Tuesdays on your calendar. Both CVS (50% off) and Walgreens (20% off) have senior Tuesday discounts on regular merchandise. Combine with digital coupons in app for biggest savings. Many seniors save $30–$50 per shopping trip just by timing visits to Tuesdays.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re 60+, mark Tuesdays on your calendar. Both CVS (50% off) and Walgreens (20% off) have senior Tuesday discounts on regular merchandise. Combine with digital coupons in app for biggest savings. Many seniors save $30–$50 per shopping trip just by timing visits to Tuesdays.</p>
           </CardContent>
         </Card>
       </main>

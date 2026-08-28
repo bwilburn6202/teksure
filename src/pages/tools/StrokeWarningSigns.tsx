@@ -19,7 +19,7 @@ export default function StrokeWarningSigns() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">FAST signs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>F</strong>ace droop — one side of face droops.</li>
               <li><strong>A</strong>rm weakness — one arm drifts down.</li>
               <li><strong>S</strong>peech slurred or strange.</li>
@@ -33,7 +33,7 @@ export default function StrokeWarningSigns() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other signs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sudden severe headache (worst of life).</li>
               <li>Sudden vision change.</li>
               <li>Sudden confusion / trouble understanding.</li>
@@ -47,7 +47,7 @@ export default function StrokeWarningSigns() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mini-stroke (TIA)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Symptoms last minutes to hours.</li>
               <li>Then go away.</li>
               <li>STILL emergency — predicts full stroke.</li>
@@ -61,7 +61,7 @@ export default function StrokeWarningSigns() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reduce stroke risk</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Control BP — single biggest factor.</li>
               <li>Treat AFib if have it.</li>
               <li>Don&apos;t smoke.</li>
@@ -77,7 +77,7 @@ export default function StrokeWarningSigns() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After stroke</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Aggressive rehab = best outcomes.</li>
               <li>Physical, occupational, speech therapy.</li>
               <li>Medicare covers extensively.</li>
@@ -92,7 +92,7 @@ export default function StrokeWarningSigns() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Apple Watch detection</h3>
-            <p className="text-sm text-muted-foreground">Apple Watch fall detection auto-calls 911 if you fall. Crash detection too. AFib alerts catch irregular rhythm = stroke risk warning. See /tools/apple-watch-fall-detection. Senior life saver.</p>
+            <p className="text-base text-muted-foreground">Apple Watch fall detection auto-calls 911 if you fall. Crash detection too. AFib alerts catch irregular rhythm = stroke risk warning. See /tools/apple-watch-fall-detection. Senior life saver.</p>
           </CardContent>
         </Card>
       </main>

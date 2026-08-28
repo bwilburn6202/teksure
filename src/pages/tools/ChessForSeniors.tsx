@@ -19,7 +19,7 @@ export default function ChessForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why chess for brains</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Slows cognitive decline.</li>
               <li>Improves planning + strategic thinking.</li>
               <li>Memory boost (study openings).</li>
@@ -34,7 +34,7 @@ export default function ChessForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Chess.com</strong> — best free chess platform. App + web.</li>
               <li><strong>Lichess</strong> — completely free, no ads.</li>
               <li><strong>Magnus Trainer</strong> — learn from world champion.</li>
@@ -48,7 +48,7 @@ export default function ChessForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Beginner steps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Learn moves first (lichess.org/learn — free).</li>
               <li>Play computer at lowest level.</li>
               <li>Solve puzzles (chess.com puzzles free).</li>
@@ -62,7 +62,7 @@ export default function ChessForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local chess clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>US Chess Federation — find local club.</li>
               <li>Senior centers often have chess groups.</li>
               <li>Coffee shops + libraries host casual play.</li>
@@ -76,7 +76,7 @@ export default function ChessForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly accessories</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Large pieces (3-4&quot; king) — easier to grip.</li>
               <li>High-contrast board (clear black + white).</li>
               <li>Magnetic travel set $20.</li>
@@ -89,7 +89,7 @@ export default function ChessForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Watch + learn</h3>
-            <p className="text-sm text-muted-foreground">YouTube has best free instruction: <strong>GothamChess</strong> (Levy Rozman) — most popular. <strong>Saint Louis Chess Club</strong> — free lectures by grandmasters. <strong>Hanging Pawns</strong> — methodical lessons. <strong>The Queen&apos;s Gambit</strong> Netflix sparked chess interest in millions of seniors. Hours of free expert teaching.</p>
+            <p className="text-base text-muted-foreground">YouTube has best free instruction: <strong>GothamChess</strong> (Levy Rozman) — most popular. <strong>Saint Louis Chess Club</strong> — free lectures by grandmasters. <strong>Hanging Pawns</strong> — methodical lessons. <strong>The Queen&apos;s Gambit</strong> Netflix sparked chess interest in millions of seniors. Hours of free expert teaching.</p>
           </CardContent>
         </Card>
       </main>

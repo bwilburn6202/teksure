@@ -19,7 +19,7 @@ export default function AmazonPrimePerks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior $7/mo discount</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If on EBT, Medicaid — Prime is $6.99/mo (vs $14.99).</li>
               <li>Saves $96/year.</li>
               <li>Re-verify yearly.</li>
@@ -33,7 +33,7 @@ export default function AmazonPrimePerks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Often-missed benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Amazon Photos</strong> — UNLIMITED photo storage. HUGE perk.</li>
               <li><strong>Prime Reading</strong> — 1,000+ ebooks free.</li>
               <li><strong>Amazon Music</strong> — 100M songs (basic tier).</li>
@@ -49,7 +49,7 @@ export default function AmazonPrimePerks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save more on Amazon</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Subscribe &amp; Save</strong> — 5-15% off recurring orders.</li>
               <li><strong>Camelcamelcamel.com</strong> — price history tracker.</li>
               <li><strong>Honey browser extension</strong> — auto-applies coupons.</li>
@@ -64,7 +64,7 @@ export default function AmazonPrimePerks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid Amazon traps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Watch &quot;sponsored&quot; results — usually not best.</li>
               <li>Read recent reviews (last 6 months).</li>
               <li>Check seller — &quot;Sold by Amazon&quot; safer than 3rd party.</li>
@@ -78,7 +78,7 @@ export default function AmazonPrimePerks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cancel if not using</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Account → Manage Prime Membership → End Membership.</li>
               <li>If under-25 orders/yr — probably not worth it.</li>
               <li>Free pickup at Whole Foods/Kohl&apos;s an alternative.</li>
@@ -91,7 +91,7 @@ export default function AmazonPrimePerks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Family share</h3>
-            <p className="text-sm text-muted-foreground">Amazon Household — share Prime with 1 adult + 4 kids/teens free. Spouse/family member gets Prime free. Both shopping accounts kept separate. Combine 2 households into one Prime — save $139. Settings → Amazon Household.</p>
+            <p className="text-base text-muted-foreground">Amazon Household — share Prime with 1 adult + 4 kids/teens free. Spouse/family member gets Prime free. Both shopping accounts kept separate. Combine 2 households into one Prime — save $139. Settings → Amazon Household.</p>
           </CardContent>
         </Card>
       </main>

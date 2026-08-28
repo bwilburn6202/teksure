@@ -34,7 +34,7 @@ export default function BluetoothSpeakerPicks() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function BluetoothSpeakerPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pair with phone</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Turn speaker on.</li>
               <li>iPhone — Settings → Bluetooth → Tap speaker name.</li>
               <li>Or pull down Control Center → tap Bluetooth icon → speaker.</li>
@@ -56,7 +56,7 @@ export default function BluetoothSpeakerPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best uses for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Music in kitchen while cooking.</li>
               <li>Audiobooks in garden / outside.</li>
               <li>Phone calls hands-free (most have mic).</li>
@@ -70,7 +70,7 @@ export default function BluetoothSpeakerPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Echo as TV speaker</h3>
-            <p className="text-sm text-muted-foreground">Echo + smart TV combo: TV audio routed to Echo Bluetooth — louder + clearer than TV speakers. Especially helpful for hard-of-hearing seniors. $50 Echo Dot upgrade is huge accessibility help.</p>
+            <p className="text-base text-muted-foreground">Echo + smart TV combo: TV audio routed to Echo Bluetooth — louder + clearer than TV speakers. Especially helpful for hard-of-hearing seniors. $50 Echo Dot upgrade is huge accessibility help.</p>
           </CardContent>
         </Card>
       </main>

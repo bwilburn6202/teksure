@@ -170,7 +170,7 @@ export default function TwoFactorSetup() {
                     </div>
                     <div>
                       <p className="font-semibold mb-1">What is two-factor authentication (2FA)?</p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         It's a second lock on your accounts. Even if someone steals your password, they can't get in without a code from your phone. Think of it as a deadbolt on top of your regular lock.
                       </p>
                     </div>
@@ -263,7 +263,7 @@ export default function TwoFactorSetup() {
                   <CardTitle className="text-base">Want extra security? Use an authenticator app</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-3">
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     An authenticator app generates codes on your phone — more secure than SMS because they can't be intercepted. All of these are free:
                   </p>
                   {authApps.map((app, i) => (

@@ -27,7 +27,7 @@ export default function PauseStreamingRotation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to rotate</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>List shows you want to watch this year.</li>
               <li>Match each to its streaming service.</li>
               <li>Pick service for THIS month based on what you most want now.</li>
@@ -69,7 +69,7 @@ export default function PauseStreamingRotation() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Math</h3>
-            <p className="text-sm text-muted-foreground">Stacked: Netflix + Hulu + Disney+ + Max + Apple TV+ = $100/month. Rotating one at a time: ~$15/month. Savings: $1,020/year.</p>
+            <p className="text-base text-muted-foreground">Stacked: Netflix + Hulu + Disney+ + Max + Apple TV+ = $100/month. Rotating one at a time: ~$15/month. Savings: $1,020/year.</p>
           </CardContent>
         </Card>
       </main>

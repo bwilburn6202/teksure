@@ -35,7 +35,7 @@ export default function ResumeBuilderApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function ResumeBuilderApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Resume tips for 50+ workers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Limit to 1-2 pages</strong> — older workers don\'t need to list every job from 1985.</li>
               <li><strong>Show last 15 years</strong>. Earlier work goes in a brief "Earlier Career" section.</li>
               <li><strong>Skip graduation dates</strong> — protects from age discrimination.</li>
@@ -81,7 +81,7 @@ export default function ResumeBuilderApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">AARP Resume Advisor — best free help</h3>
-            <p className="text-sm text-muted-foreground">If you\'re an AARP member ($16/year), use the free Resume Advisor. They review your resume and give specific feedback. Volunteers are often retired HR professionals — exactly the right perspective for senior job-seekers.</p>
+            <p className="text-base text-muted-foreground">If you\'re an AARP member ($16/year), use the free Resume Advisor. They review your resume and give specific feedback. Volunteers are often retired HR professionals — exactly the right perspective for senior job-seekers.</p>
           </CardContent>
         </Card>
       </main>

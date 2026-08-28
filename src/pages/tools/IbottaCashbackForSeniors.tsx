@@ -19,7 +19,7 @@ export default function IbottaCashbackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Ibotta?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free app — earn cashback on grocery purchases.</li>
               <li>Browse offers before shopping.</li>
               <li>Buy qualifying items at any participating store.</li>
@@ -33,7 +33,7 @@ export default function IbottaCashbackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use Ibotta</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Ibotta free from app store.</li>
               <li>Browse offers — pick ones for items you&apos;d buy anyway.</li>
               <li>Shop normally at any participating store.</li>
@@ -47,7 +47,7 @@ export default function IbottaCashbackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fetch Rewards — easier alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free app — scan ANY grocery receipt.</li>
               <li>No browsing offers required first.</li>
               <li>Points on most items, bonus for partner brands.</li>
@@ -61,7 +61,7 @@ export default function IbottaCashbackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Rakuten — for online shopping</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cashback on online purchases — Amazon, Macy&apos;s, Walmart, etc.</li>
               <li>Install browser extension on computer.</li>
               <li>Pop-up reminds you to activate cashback.</li>
@@ -75,7 +75,7 @@ export default function IbottaCashbackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Honey — coupon finder</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free browser extension by PayPal.</li>
               <li>Auto-finds coupon codes at checkout.</li>
               <li>Tries every code — applies the best one.</li>
@@ -89,7 +89,7 @@ export default function IbottaCashbackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t buy items just because of cashback.</li>
               <li>Stick to brands you already use.</li>
               <li>Ibotta + grocery store loyalty = double savings.</li>
@@ -103,7 +103,7 @@ export default function IbottaCashbackForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with Fetch — it&apos;s easiest</h3>
-            <p className="text-sm text-muted-foreground">Fetch Rewards is the easiest cashback app for seniors because you don&apos;t browse offers — just scan every grocery receipt. No thinking required. Earnings are smaller than Ibotta, but the simplicity wins. Once comfortable, try Ibotta for higher earnings on items you&apos;d buy anyway. Both apps free, no commitment, real money back.</p>
+            <p className="text-base text-muted-foreground">Fetch Rewards is the easiest cashback app for seniors because you don&apos;t browse offers — just scan every grocery receipt. No thinking required. Earnings are smaller than Ibotta, but the simplicity wins. Once comfortable, try Ibotta for higher earnings on items you&apos;d buy anyway. Both apps free, no commitment, real money back.</p>
           </CardContent>
         </Card>
       </main>

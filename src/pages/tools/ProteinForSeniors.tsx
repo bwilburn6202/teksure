@@ -19,7 +19,7 @@ export default function ProteinForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How much protein</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Old recommendation: 0.36g per pound (too low for seniors).</li>
               <li>Senior target: 0.5-0.7g per pound body weight.</li>
               <li>150 lb senior = 75-105g protein/day.</li>
@@ -32,7 +32,7 @@ export default function ProteinForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best protein sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Eggs</strong> — 6g each. 2 eggs = 12g.</li>
               <li><strong>Greek yogurt</strong> — 15-20g per cup.</li>
               <li><strong>Chicken breast</strong> — 25g per 3oz.</li>
@@ -48,7 +48,7 @@ export default function ProteinForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors need more</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Muscle loss (sarcopenia) starts at 30, accelerates after 65.</li>
               <li>Weak muscles = falls + frailty.</li>
               <li>Bodies less efficient at using protein after 65.</li>
@@ -61,7 +61,7 @@ export default function ProteinForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy ways to add 30g</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Breakfast: 2 eggs + Greek yogurt = 30g.</li>
               <li>Snack: protein shake = 30g.</li>
               <li>Lunch: tuna/chicken sandwich = 25g.</li>
@@ -74,7 +74,7 @@ export default function ProteinForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Talk to doctor first</h3>
-            <p className="text-sm text-muted-foreground">If kidney disease or specific condition — protein needs vary. Get blood test for kidney function. For most healthy seniors, MORE protein = better outcomes. Free MyPlate.gov has senior nutrition guides.</p>
+            <p className="text-base text-muted-foreground">If kidney disease or specific condition — protein needs vary. Get blood test for kidney function. For most healthy seniors, MORE protein = better outcomes. Free MyPlate.gov has senior nutrition guides.</p>
           </CardContent>
         </Card>
       </main>

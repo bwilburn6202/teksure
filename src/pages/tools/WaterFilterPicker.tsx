@@ -42,7 +42,7 @@ export default function WaterFilterPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -51,7 +51,7 @@ export default function WaterFilterPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Test water at home</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lead test strips</strong> — $10-20 from hardware store. Particularly important if home was built pre-1986.</li>
               <li><strong>Tap Score (mytapscore.com)</strong> — $50-300 mail-in. Most thorough analysis.</li>
               <li><strong>Annual EPA report</strong> — your water utility must mail you one each year. Read it.</li>
@@ -75,7 +75,7 @@ export default function WaterFilterPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick recommendation</h3>
-            <p className="text-sm text-muted-foreground">For most homes — a <strong>LifeStraw Home pitcher</strong> ($50) covers 95% of taste/odor issues + removes lead. If you have an old home with lead pipes — under-sink RO ($300). If well water — get a full water test first; results determine which filter.</p>
+            <p className="text-base text-muted-foreground">For most homes — a <strong>LifeStraw Home pitcher</strong> ($50) covers 95% of taste/odor issues + removes lead. If you have an old home with lead pipes — under-sink RO ($300). If well water — get a full water test first; results determine which filter.</p>
           </CardContent>
         </Card>
       </main>

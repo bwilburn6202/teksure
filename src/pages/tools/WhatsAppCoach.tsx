@@ -27,7 +27,7 @@ export default function WhatsAppCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (5 minutes)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install <strong>WhatsApp</strong> from the App Store or Play Store. Free.</li>
               <li>Open it. Verify with your phone number — they text you a 6-digit code.</li>
               <li>Add your name and (optionally) a photo. People will see this.</li>
@@ -40,7 +40,7 @@ export default function WhatsAppCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Text any contact</strong> — same as Messages, but works between iPhone and Android with no extra cost (even internationally).</li>
               <li><strong>Voice notes</strong> — press and hold the microphone icon, talk, release. Faster than typing for long messages. Family loves these.</li>
               <li><strong>Voice calls</strong> — tap phone icon. Free anywhere in the world over Wi-Fi.</li>
@@ -94,7 +94,7 @@ export default function WhatsAppCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best for keeping in touch with</h3>
-            <p className="text-sm text-muted-foreground">Adult kids in different countries. Grandkids who use Android. Bridge club, golf buddies. International friends. Old college roommates. Anyone you want to call without paying long-distance.</p>
+            <p className="text-base text-muted-foreground">Adult kids in different countries. Grandkids who use Android. Bridge club, golf buddies. International friends. Old college roommates. Anyone you want to call without paying long-distance.</p>
           </CardContent>
         </Card>
       </main>

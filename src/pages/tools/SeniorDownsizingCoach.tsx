@@ -42,7 +42,7 @@ export default function SeniorDownsizingCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Declutter strategy that actually works</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>4-box method</strong> — KEEP, DONATE, SELL, TRASH. Every item goes in one. No "maybe" pile.</li>
               <li><strong>One room a week</strong> — not the whole house. Sustainable.</li>
               <li><strong>Photos save sentiment</strong> — take a photo of the keepsake, then donate. The memory is what you wanted, not the object.</li>
@@ -55,7 +55,7 @@ export default function SeniorDownsizingCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to sell the good stuff</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Facebook Marketplace</strong> — best for big furniture, tools, appliances.</li>
               <li><strong>Estate sale company</strong> — for whole-house contents. They take 25-40% but handle everything.</li>
               <li><strong>Live auction</strong> — for antiques. Search "[your area] estate auction".</li>
@@ -84,7 +84,7 @@ export default function SeniorDownsizingCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly housing options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>55+ active adult community</strong> — you own. Maintenance handled.</li>
               <li><strong>Independent living</strong> — apartment-style, optional meals/services. Rental.</li>
               <li><strong>CCRC (Continuing Care Retirement Community)</strong> — independent + assisted + nursing on one campus. Big buy-in but lifetime care.</li>
@@ -97,7 +97,7 @@ export default function SeniorDownsizingCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best resource</h3>
-            <p className="text-sm text-muted-foreground">A geriatric care manager (find at <strong>aginglifecare.org</strong>) helps assess what level of housing fits your current and future needs. Worth the consultation fee. Plus your local <strong>Area Agency on Aging</strong> ({"<"}eldercare.acl.gov{">"}) is free.</p>
+            <p className="text-base text-muted-foreground">A geriatric care manager (find at <strong>aginglifecare.org</strong>) helps assess what level of housing fits your current and future needs. Worth the consultation fee. Plus your local <strong>Area Agency on Aging</strong> ({"<"}eldercare.acl.gov{">"}) is free.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function EbayForSeniorSellers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What sells well</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vintage clothing + accessories.</li>
               <li>Collectibles + antiques.</li>
               <li>Old toys + games.</li>
@@ -33,7 +33,7 @@ export default function EbayForSeniorSellers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free seller account at eBay.com.</li>
               <li>250 free listings/month.</li>
               <li>13.25% final value fee on sale.</li>
@@ -47,7 +47,7 @@ export default function EbayForSeniorSellers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior selling tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photograph from multiple angles.</li>
               <li>Plain background.</li>
               <li>Include scale (item next to coin).</li>
@@ -61,7 +61,7 @@ export default function EbayForSeniorSellers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Shipping options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Print labels at home — eBay app.</li>
               <li>USPS pickup — schedule online.</li>
               <li>UPS + FedEx pickup options.</li>
@@ -75,7 +75,7 @@ export default function EbayForSeniorSellers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Only accept eBay&apos;s payment system.</li>
               <li>Refuse direct payment offers.</li>
               <li>Buyer wants to overpay = scam.</li>
@@ -89,7 +89,7 @@ export default function EbayForSeniorSellers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tax implications</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1099-K if sales over $20,000 (lower limits coming).</li>
               <li>Selling personal items at loss = no tax.</li>
               <li>Selling for profit = taxable income.</li>
@@ -103,7 +103,7 @@ export default function EbayForSeniorSellers() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with one item</h3>
-            <p className="text-sm text-muted-foreground">Pick one item from your home that&apos;s collecting dust. Photograph well. List on eBay. Watch it sell. Many seniors discover their grandparent&apos;s old camera or vintage clothing items are worth $50–$500. Used to fund hobbies, travel, or grandkid gifts. Many lifelong eBay sellers started this way.</p>
+            <p className="text-base text-muted-foreground">Pick one item from your home that&apos;s collecting dust. Photograph well. List on eBay. Watch it sell. Many seniors discover their grandparent&apos;s old camera or vintage clothing items are worth $50–$500. Used to fund hobbies, travel, or grandkid gifts. Many lifelong eBay sellers started this way.</p>
           </CardContent>
         </Card>
       </main>

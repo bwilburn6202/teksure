@@ -19,7 +19,7 @@ export default function AutomaticEmergencyBraking() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Must-have features for senior drivers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AEB (Auto Emergency Braking)</strong> — stops car if you don&apos;t.</li>
               <li><strong>Forward Collision Warning</strong> — alerts before AEB triggers.</li>
               <li><strong>Backup camera</strong> — required by law on new cars.</li>
@@ -35,7 +35,7 @@ export default function AutomaticEmergencyBraking() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Most cars 2020+ have these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>2020+ models — most include AEB + lane assist standard.</li>
               <li>Federal 2022 mandate for AEB.</li>
               <li>Don&apos;t need fancy car — even Honda Accord, Toyota Camry have full suite.</li>
@@ -48,7 +48,7 @@ export default function AutomaticEmergencyBraking() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best safety-rated cars 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Subaru Forester / Outback</strong> — EyeSight system. Senior favorite.</li>
               <li><strong>Honda CR-V</strong> — Honda Sensing standard.</li>
               <li><strong>Toyota RAV4</strong> — Toyota Safety Sense.</li>
@@ -62,7 +62,7 @@ export default function AutomaticEmergencyBraking() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Retrofit older cars</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Backup camera retrofit</strong> — $100-300 install. See /tools/backup-camera-retrofit.</li>
               <li><strong>Mobileye 8 Connect</strong> — adds AEB warning to old cars. $1,000-2,000 install.</li>
               <li><strong>Dashcam with AI</strong> — Garmin DriveAssist, $300. Forward collision alerts.</li>
@@ -75,7 +75,7 @@ export default function AutomaticEmergencyBraking() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t over-rely</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tech is BACKUP, not replacement for attention.</li>
               <li>Phantom braking — system thinks something there.</li>
               <li>Sensors miss in fog, heavy rain, snow.</li>
@@ -89,7 +89,7 @@ export default function AutomaticEmergencyBraking() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Insurance discounts</h3>
-            <p className="text-sm text-muted-foreground">Most insurers discount 5-15% for cars with AEB + safety tech. Take AARP Smart Driver course = additional 5-10% senior discount most states. Combined = 20%+ off auto insurance. Updated cars = safer + cheaper to insure.</p>
+            <p className="text-base text-muted-foreground">Most insurers discount 5-15% for cars with AEB + safety tech. Take AARP Smart Driver course = additional 5-10% senior discount most states. Combined = 20%+ off auto insurance. Updated cars = safer + cheaper to insure.</p>
           </CardContent>
         </Card>
       </main>

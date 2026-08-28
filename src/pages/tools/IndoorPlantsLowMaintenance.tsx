@@ -19,7 +19,7 @@ export default function IndoorPlantsLowMaintenance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best beginner plants</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Snake plant (Sansevieria)</strong> — water once / 2-4 weeks. Tolerates neglect.</li>
               <li><strong>ZZ plant</strong> — basically indestructible.</li>
               <li><strong>Pothos</strong> — vining. Tolerates low light.</li>
@@ -42,7 +42,7 @@ export default function IndoorPlantsLowMaintenance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Air-purifying plants (NASA list)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Snake plant — releases oxygen at night.</li>
               <li>Spider plant — removes formaldehyde.</li>
               <li>Peace lily — removes ammonia + benzene.</li>
@@ -56,7 +56,7 @@ export default function IndoorPlantsLowMaintenance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pet-safe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Safe</strong>: spider plant, Christmas cactus, parlor palm, areca palm, Boston fern, prayer plant.</li>
               <li><strong>TOXIC to cats/dogs</strong>: pothos, peace lily, philodendron, snake plant, aloe vera.</li>
               <li>If pet, check ASPCA toxic plant list before buying.</li>
@@ -67,7 +67,7 @@ export default function IndoorPlantsLowMaintenance() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Self-watering pots</h3>
-            <p className="text-sm text-muted-foreground">For forgetful seniors — self-watering pots ($15-50). Reservoir bottom keeps soil moist. Water every 2-3 weeks instead of weekly. Saves plants. Saves anxiety.</p>
+            <p className="text-base text-muted-foreground">For forgetful seniors — self-watering pots ($15-50). Reservoir bottom keeps soil moist. Water every 2-3 weeks instead of weekly. Saves plants. Saves anxiety.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function BurnerPhoneTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you need a second number</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Selling on Craigslist, Facebook Marketplace.</li>
               <li>Online dating apps.</li>
               <li>Signing up for unknown services.</li>
@@ -33,7 +33,7 @@ export default function BurnerPhoneTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheap virtual numbers (best)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Google Voice</strong> — FREE forever for personal use. Real US number. Calls + texts. Voicemail. Use any phone.</li>
               <li><strong>TextNow</strong> — FREE with ads. iOS/Android.</li>
               <li><strong>Hushed</strong> — $5-7/mo. Disposable numbers for short-term use.</li>
@@ -46,7 +46,7 @@ export default function BurnerPhoneTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Google Voice setup (FREE)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>voice.google.com</strong>.</li>
               <li>Sign in with Gmail.</li>
               <li>Pick a number (search by area code).</li>
@@ -62,7 +62,7 @@ export default function BurnerPhoneTips() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Physical burner phone (rare)</h2>
             <p className="text-sm">If you really need a separate phone (escaping abuse):</p>
-            <ul className="list-disc pl-5 space-y-2 text-sm mt-2">
+            <ul className="list-disc pl-5 space-y-2 text-base mt-2">
               <li>Walmart Tracfone or Family Mobile — $30-50, prepaid SIM.</li>
               <li>Pay cash. Don&apos;t register your real name.</li>
               <li>Buy at store far from home/work.</li>
@@ -74,7 +74,7 @@ export default function BurnerPhoneTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Domestic violence resources</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re escaping abuse — call <strong>National Domestic Violence Hotline 1-800-799-7233</strong>. They have safety planning, including phone safety. Free, confidential. Many shelters provide secure phones.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re escaping abuse — call <strong>National Domestic Violence Hotline 1-800-799-7233</strong>. They have safety planning, including phone safety. Free, confidential. Many shelters provide secure phones.</p>
           </CardContent>
         </Card>
       </main>

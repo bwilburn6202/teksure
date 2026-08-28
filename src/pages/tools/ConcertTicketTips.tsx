@@ -19,7 +19,7 @@ export default function ConcertTicketTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to buy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Official venue site</strong> — best for first-tier seats.</li>
               <li><strong>Ticketmaster / Live Nation</strong> — primary market. Beware fees.</li>
               <li><strong>StubHub</strong> — legitimate resale. FanProtect Guarantee.</li>
@@ -33,7 +33,7 @@ export default function ConcertTicketTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Wait until day-of</strong> — resale prices often drop 30-70% as show approaches.</li>
               <li><strong>Tuesday-Wednesday</strong> evening shows = cheaper.</li>
               <li><strong>Senior + member discounts</strong> — AAA, AARP often partner.</li>
@@ -46,7 +46,7 @@ export default function ConcertTicketTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior accessibility</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ADA-accessible seating — every venue required to offer.</li>
               <li>Aisle seats — easier to leave for restroom.</li>
               <li>Avoid GA (general admission) standing-only shows.</li>
@@ -60,7 +60,7 @@ export default function ConcertTicketTips() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NEVER buy outside venue or via random Craigslist listing.</li>
               <li>"Limited time! Today only!" = often scam.</li>
               <li>Pay with credit card (chargeback if scammed).</li>
@@ -74,7 +74,7 @@ export default function ConcertTicketTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free music</h3>
-            <p className="text-sm text-muted-foreground">Local libraries + parks + churches host FREE concerts year-round. Search "[your city] free concerts". Most major cities have weekly summer concert series. Beats $200 ticket — different vibe but real fun.</p>
+            <p className="text-base text-muted-foreground">Local libraries + parks + churches host FREE concerts year-round. Search "[your city] free concerts". Most major cities have weekly summer concert series. Beats $200 ticket — different vibe but real fun.</p>
           </CardContent>
         </Card>
       </main>

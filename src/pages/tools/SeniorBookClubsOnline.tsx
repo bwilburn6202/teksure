@@ -19,7 +19,7 @@ export default function SeniorBookClubsOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Goodreads</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free reading community — 100M users.</li>
               <li>Track books read.</li>
               <li>Read reviews + ratings.</li>
@@ -33,7 +33,7 @@ export default function SeniorBookClubsOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">BookBub</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free e-book deal alerts.</li>
               <li>Daily email with discounted books.</li>
               <li>Often $0.99 or $2.99 deals.</li>
@@ -47,7 +47,7 @@ export default function SeniorBookClubsOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Celebrity book clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reese&apos;s Book Club — Reese Witherspoon picks.</li>
               <li>Oprah&apos;s Book Club — long-running.</li>
               <li>Jenna Hager (Today Show).</li>
@@ -61,7 +61,7 @@ export default function SeniorBookClubsOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Library book clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local library hosts free clubs.</li>
               <li>Often Zoom + in-person hybrid.</li>
               <li>Senior-specific clubs available.</li>
@@ -75,7 +75,7 @@ export default function SeniorBookClubsOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Virtual book clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Behind the Bookshelf, Modern Mrs Darcy.</li>
               <li>Tea Reads — international tea + book pairings.</li>
               <li>Senior Reads — over-55 specific.</li>
@@ -89,7 +89,7 @@ export default function SeniorBookClubsOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start your own</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Round up 5–10 friends.</li>
               <li>Pick monthly book.</li>
               <li>Meet via Zoom or in person.</li>
@@ -103,7 +103,7 @@ export default function SeniorBookClubsOnline() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Library book club is the gold</h3>
-            <p className="text-sm text-muted-foreground">Most local libraries host free senior book clubs. Combines social interaction with mental engagement. Books often free or library has copies. Discussion led by librarian. Friendships form. Beats online-only clubs. Visit your library this week and ask. Combined with Libby for free reading, you have a complete free reading lifestyle.</p>
+            <p className="text-base text-muted-foreground">Most local libraries host free senior book clubs. Combines social interaction with mental engagement. Books often free or library has copies. Discussion led by librarian. Friendships form. Beats online-only clubs. Visit your library this week and ask. Combined with Libby for free reading, you have a complete free reading lifestyle.</p>
           </CardContent>
         </Card>
       </main>

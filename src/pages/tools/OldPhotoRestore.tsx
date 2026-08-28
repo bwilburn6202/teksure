@@ -33,7 +33,7 @@ export default function OldPhotoRestore() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 1 — Get a clean photo of the photo</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Lay the old photo flat on a table near a window — daylight is best, no flash.</li>
               <li>Hold your phone directly over the photo (not at an angle).</li>
               <li>Take the picture. Or — even better — use the free <strong>"PhotoScan by Google Photos"</strong> app. It does the lining-up automatically and removes glare.</li>
@@ -48,23 +48,23 @@ export default function OldPhotoRestore() {
             <div className="space-y-3">
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">Google Photos (free, built in)</p>
-                <p className="text-sm text-muted-foreground">Open the photo → tap "Edit" → tap "Tools" → "Photo Unblur" or "Colorize". Works well, no extra app.</p>
+                <p className="text-base text-muted-foreground">Open the photo → tap "Edit" → tap "Tools" → "Photo Unblur" or "Colorize". Works well, no extra app.</p>
               </div>
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">Remini (free with limits)</p>
-                <p className="text-sm text-muted-foreground">Famous for sharpening blurry old photos. Free with a daily limit and a "watch ad" option for more.</p>
+                <p className="text-base text-muted-foreground">Famous for sharpening blurry old photos. Free with a daily limit and a "watch ad" option for more.</p>
               </div>
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">MyHeritage In Color</p>
-                <p className="text-sm text-muted-foreground">Adds color to black-and-white photos. Free for a few photos; paid plan for unlimited.</p>
+                <p className="text-base text-muted-foreground">Adds color to black-and-white photos. Free for a few photos; paid plan for unlimited.</p>
               </div>
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">Apple Photos (built in to iPhone/Mac)</p>
-                <p className="text-sm text-muted-foreground">Edit → tap the wand. Modern iPhones automatically improve faded photos.</p>
+                <p className="text-base text-muted-foreground">Edit → tap the wand. Modern iPhones automatically improve faded photos.</p>
               </div>
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">Photomyne</p>
-                <p className="text-sm text-muted-foreground">Scans multiple old photos at once (great for an album). Then you can colorize and enhance.</p>
+                <p className="text-base text-muted-foreground">Scans multiple old photos at once (great for an album). Then you can colorize and enhance.</p>
               </div>
             </div>
           </CardContent>
@@ -97,7 +97,7 @@ export default function OldPhotoRestore() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Privacy note</h3>
-            <p className="text-sm text-muted-foreground">When you upload a photo to an AI app, the app's company can see it. Don't upload photos with sensitive content (driver's license info, medical records) to free apps. For family photos, it's generally fine — but read the app's privacy policy if you're unsure.</p>
+            <p className="text-base text-muted-foreground">When you upload a photo to an AI app, the app's company can see it. Don't upload photos with sensitive content (driver's license info, medical records) to free apps. For family photos, it's generally fine — but read the app's privacy policy if you're unsure.</p>
           </CardContent>
         </Card>
       </main>

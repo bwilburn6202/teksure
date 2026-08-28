@@ -39,7 +39,7 @@ export default function BrokeragePicker() {
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{p.name}</h3>
                 <p className="text-sm mb-1"><strong>Best:</strong> {p.best}</p>
-                <p className="text-sm text-muted-foreground"><strong>Cons:</strong> {p.cons}</p>
+                <p className="text-base text-muted-foreground"><strong>Cons:</strong> {p.cons}</p>
               </CardContent>
             </Card>
           ))}
@@ -70,7 +70,7 @@ export default function BrokeragePicker() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">If you don\'t have a broker — open a free Schwab or Fidelity account. Both are excellent for retirees. Vanguard if you\'re happy holding a few index funds and don\'t need much hand-holding.</p>
+            <p className="text-base text-muted-foreground">If you don\'t have a broker — open a free Schwab or Fidelity account. Both are excellent for retirees. Vanguard if you\'re happy holding a few index funds and don\'t need much hand-holding.</p>
           </CardContent>
         </Card>
       </main>

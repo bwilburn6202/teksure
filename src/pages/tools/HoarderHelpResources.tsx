@@ -19,7 +19,7 @@ export default function HoarderHelpResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Understanding hoarding</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Recognized mental health condition (DSM-5).</li>
               <li>Common in seniors who lived through Depression.</li>
               <li>Often linked to grief, trauma, anxiety.</li>
@@ -33,7 +33,7 @@ export default function HoarderHelpResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health + safety risks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fall hazard — narrow paths.</li>
               <li>Fire hazard — paper, blocked exits.</li>
               <li>Mold + pest infestations.</li>
@@ -48,7 +48,7 @@ export default function HoarderHelpResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Therapy approaches</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>CBT for Hoarding</strong> — gold standard. Look for therapist trained in it.</li>
               <li><strong>Buried in Treasures workshop</strong> — group, evidence-based.</li>
               <li><strong>SSRIs</strong> — sometimes prescribed alongside therapy.</li>
@@ -61,7 +61,7 @@ export default function HoarderHelpResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free + low-cost help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Children of Hoarders</strong> — childrenofhoarders.com. Family support.</li>
               <li><strong>International OCD Foundation</strong> — iocdf.org. Resources.</li>
               <li><strong>Adult Protective Services</strong> — last resort if endangered.</li>
@@ -75,7 +75,7 @@ export default function HoarderHelpResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cleaning specialists</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NASP-certified hoarding cleanup specialists.</li>
               <li>$2,000-50,000 depending on severity.</li>
               <li>Some homeowner&apos;s insurance covers (check).</li>
@@ -89,7 +89,7 @@ export default function HoarderHelpResources() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For family members</h3>
-            <p className="text-sm text-muted-foreground">DON&apos;T do surprise cleanouts. DON&apos;T shame. DO offer help with one corner at a time. Read &quot;Buried in Treasures&quot; book ($15). Join Children of Hoarders support group. Care for yourself first — change is slow.</p>
+            <p className="text-base text-muted-foreground">DON&apos;T do surprise cleanouts. DON&apos;T shame. DO offer help with one corner at a time. Read &quot;Buried in Treasures&quot; book ($15). Join Children of Hoarders support group. Care for yourself first — change is slow.</p>
           </CardContent>
         </Card>
       </main>

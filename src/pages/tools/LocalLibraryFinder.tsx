@@ -537,7 +537,7 @@ export default function LocalLibraryFinder() {
                       Open state directory
                     </Button>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     {selectedState
                       ? `Links to the ${selectedState.name} state library — the official directory for every public library in the state.`
                       : 'Each state has an official library commission that lists every public library and its services.'}
@@ -908,7 +908,7 @@ export default function LocalLibraryFinder() {
                 <BookOpen className="h-5 w-5 text-teal-600" aria-hidden="true" />
                 <span className="font-bold text-base">Library Tech Helper</span>
               </div>
-              <p className="text-sm text-muted-foreground">Set up Libby, Hoopla, Kanopy, and other library apps.</p>
+              <p className="text-base text-muted-foreground">Set up Libby, Hoopla, Kanopy, and other library apps.</p>
             </Link>
             <Link
               to="/tools/free-learning-hub"
@@ -918,7 +918,7 @@ export default function LocalLibraryFinder() {
                 <GraduationCap className="h-5 w-5 text-teal-600" aria-hidden="true" />
                 <span className="font-bold text-base">Free Learning Hub</span>
               </div>
-              <p className="text-sm text-muted-foreground">Free courses on any topic from real universities.</p>
+              <p className="text-base text-muted-foreground">Free courses on any topic from real universities.</p>
             </Link>
             <Link
               to="/tools/free-resource-hub"
@@ -928,7 +928,7 @@ export default function LocalLibraryFinder() {
                 <DollarSign className="h-5 w-5 text-teal-600" aria-hidden="true" />
                 <span className="font-bold text-base">Free Resource Hub</span>
               </div>
-              <p className="text-sm text-muted-foreground">Free tech, internet, and utility programs you may qualify for.</p>
+              <p className="text-base text-muted-foreground">Free tech, internet, and utility programs you may qualify for.</p>
             </Link>
           </div>
         </section>

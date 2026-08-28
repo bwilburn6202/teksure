@@ -32,7 +32,7 @@ export default function InternetSpeedTestCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Read your numbers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Download speed (Mbps)</strong> — how fast info comes IN. The big number. Streaming and browsing.</li>
               <li><strong>Upload speed (Mbps)</strong> — how fast info goes OUT. Matters for video calls, posting photos.</li>
               <li><strong>Ping or latency (ms)</strong> — delay. Lower is better. Most matters for gaming and video calls.</li>
@@ -43,7 +43,7 @@ export default function InternetSpeedTestCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What speeds do you really need?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>10 Mbps</strong> — email, web browsing, one HD video stream.</li>
               <li><strong>25 Mbps</strong> — comfortable for one household, including HD streaming and Zoom.</li>
               <li><strong>50-100 Mbps</strong> — multiple devices streaming simultaneously, 4K video.</li>
@@ -57,7 +57,7 @@ export default function InternetSpeedTestCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If your speed is much lower than promised</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Test wired vs wireless.</strong> Connect a laptop directly to the modem with an Ethernet cable. Test again. If wired is fast but Wi-Fi is slow — your router/Wi-Fi is the problem.</li>
               <li><strong>Restart the modem.</strong> Unplug for 30 seconds, plug back in. Solves a surprising amount.</li>
               <li><strong>Check for a "modem upgrade" need.</strong> Old modems can\'t deliver new speeds. Call your ISP.</li>
@@ -71,7 +71,7 @@ export default function InternetSpeedTestCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior internet discounts</h3>
-            <p className="text-sm text-muted-foreground">Many providers (Comcast Internet Essentials, AT&T Access, Spectrum Internet Assist) offer $10-30/month plans for low-income or senior customers. Speeds vary but often 50-100 Mbps. Eligibility: usually if you receive SNAP, Medicaid, or live below certain income thresholds. Worth asking.</p>
+            <p className="text-base text-muted-foreground">Many providers (Comcast Internet Essentials, AT&T Access, Spectrum Internet Assist) offer $10-30/month plans for low-income or senior customers. Speeds vary but often 50-100 Mbps. Eligibility: usually if you receive SNAP, Medicaid, or live below certain income thresholds. Worth asking.</p>
           </CardContent>
         </Card>
       </main>

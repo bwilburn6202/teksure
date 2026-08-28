@@ -19,7 +19,7 @@ export default function RetirementHobbyMonetize() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Etsy + handmade</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Knitting, quilts, woodworking, jewelry, painted signs.</li>
               <li>Etsy fees ~10% of sales.</li>
               <li>Best: niche + quality + good photos.</li>
@@ -32,7 +32,7 @@ export default function RetirementHobbyMonetize() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photography</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Stock photos</strong> — Shutterstock, Getty. $0.30-3 per download.</li>
               <li><strong>Prints on Etsy / Society6</strong> — sell your photos as posters.</li>
               <li><strong>Local portrait sessions</strong> — families, seniors, pets. $100-300/session.</li>
@@ -45,7 +45,7 @@ export default function RetirementHobbyMonetize() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Writing + content</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Substack</strong> — your newsletter, free or paid. Some seniors make $1,000+/month writing about their expertise.</li>
               <li><strong>Blogging</strong> — niche topic, ad revenue + affiliate links.</li>
               <li><strong>Self-publish on Amazon Kindle</strong> — your memoir, expert book, family stories.</li>
@@ -58,7 +58,7 @@ export default function RetirementHobbyMonetize() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Teaching + coaching</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Outschool</strong> — teach kids online. $15-30/class. Your hobby = curriculum.</li>
               <li><strong>Skillshare / Udemy</strong> — pre-record courses. Earn passive royalties.</li>
               <li><strong>Local community center</strong> — teach in-person classes.</li>
@@ -71,7 +71,7 @@ export default function RetirementHobbyMonetize() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Selling physical things</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Farmers market</strong> — baked goods, jam, eggs, plants. Hyper-local.</li>
               <li><strong>Garage sales / estate sales</strong> — paid to organize for others.</li>
               <li><strong>Antiques + flipping</strong> — eBay, Mercari. Use your knowledge.</li>
@@ -84,7 +84,7 @@ export default function RetirementHobbyMonetize() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tax + Social Security</h3>
-            <p className="text-sm text-muted-foreground">Income from hobby = self-employment. File Schedule C. Pay self-employment tax (15.3%). Earnings before age 67 may reduce Social Security if over $22,320/yr. Check with CPA. Many hobbies stay under that.</p>
+            <p className="text-base text-muted-foreground">Income from hobby = self-employment. File Schedule C. Pay self-employment tax (15.3%). Earnings before age 67 may reduce Social Security if over $22,320/yr. Check with CPA. Many hobbies stay under that.</p>
           </CardContent>
         </Card>
       </main>

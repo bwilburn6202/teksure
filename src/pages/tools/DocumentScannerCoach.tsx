@@ -28,7 +28,7 @@ export default function DocumentScannerCoach() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone — Scan in Notes (built in)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open the <strong>Notes</strong> app.</li>
                 <li>Tap "+ New Note".</li>
                 <li>Tap the camera icon → "Scan Documents".</li>
@@ -47,7 +47,7 @@ export default function DocumentScannerCoach() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android — Google Drive (built in, free)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open the <strong>Google Drive</strong> app.</li>
                 <li>Tap the colorful <strong>+</strong> button.</li>
                 <li>Tap "Scan".</li>
@@ -65,7 +65,7 @@ export default function DocumentScannerCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best free apps (better than built-in for some)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Adobe Scan</strong> — best free scanner. Auto-OCR (reads text in the image, lets you copy/paste). Very clean PDFs.</li>
               <li><strong>Microsoft Lens</strong> — great if you use Outlook/OneDrive. Free.</li>
               <li><strong>CamScanner</strong> — popular but free version has watermarks. Avoid the privacy concerns from older versions.</li>

@@ -19,7 +19,7 @@ export default function ASLLearningSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors learn ASL</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Communicate with deaf grandchild/family.</li>
               <li>Backup for hearing loss progression.</li>
               <li>Volunteer at deaf school/community.</li>
@@ -33,7 +33,7 @@ export default function ASLLearningSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free learning resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lifeprint.com</strong> — free ASL course Dr. Bill Vicars. GOLD standard.</li>
               <li><strong>Bill Vicars YouTube</strong> — videos free.</li>
               <li><strong>Sign Language 101</strong> — free site.</li>
@@ -47,7 +47,7 @@ export default function ASLLearningSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Paid apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lingvano</strong> — Duolingo for ASL. $50/yr.</li>
               <li><strong>The ASL App</strong> — $5. Reference dictionary.</li>
               <li><strong>SignSchool Premium</strong> — varied.</li>
@@ -59,7 +59,7 @@ export default function ASLLearningSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start simple</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Alphabet (fingerspelling).</li>
               <li>Numbers 1-100.</li>
               <li>Common phrases (hello, please, thank you, sorry).</li>
@@ -74,7 +74,7 @@ export default function ASLLearningSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Community college ASL classes — affordable.</li>
               <li>Library Deaf Coffee gatherings.</li>
               <li>Local Deaf community Meetup groups.</li>
@@ -88,7 +88,7 @@ export default function ASLLearningSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Live captioning helps too</h3>
-            <p className="text-sm text-muted-foreground">Modern phones auto-caption conversations. iPhone Live Captions, Android Live Transcribe — both free. Useful in noisy restaurants. Combine ASL learning + auto-captions = senior hearing-loss toolkit.</p>
+            <p className="text-base text-muted-foreground">Modern phones auto-caption conversations. iPhone Live Captions, Android Live Transcribe — both free. Useful in noisy restaurants. Combine ASL learning + auto-captions = senior hearing-loss toolkit.</p>
           </CardContent>
         </Card>
       </main>

@@ -689,7 +689,7 @@ export default function ErrorDecoder() {
                     <h3 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-2">
                       What to do
                     </h3>
-                    <ol className="space-y-2 text-sm">
+                    <ol className="space-y-2 text-base">
                       {result.whatToDo.map((step, i) => (
                         <li key={i} className="flex gap-3">
                           <span className="font-semibold text-foreground/60 min-w-[1.25rem]">

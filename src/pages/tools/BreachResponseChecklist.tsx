@@ -43,7 +43,7 @@ export default function BreachResponseChecklist() {
                   <div className="flex-1">
                     <p className="text-xs text-primary uppercase tracking-wide font-semibold">{s.hour}</p>
                     <h3 className="font-bold text-lg">{s.title}</h3>
-                    <p className="text-sm text-muted-foreground">{s.body}</p>
+                    <p className="text-base text-muted-foreground">{s.body}</p>
                   </div>
                 </div>
               </CardContent>
@@ -57,7 +57,7 @@ export default function BreachResponseChecklist() {
               <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Once you're locked back in</h3>
-                <p className="text-sm text-muted-foreground">Watch your bank statements and email closely for 30 days. If something else strange happens, repeat this checklist. And tell a family member what happened — they may need to watch their own accounts too if you share any.</p>
+                <p className="text-base text-muted-foreground">Watch your bank statements and email closely for 30 days. If something else strange happens, repeat this checklist. And tell a family member what happened — they may need to watch their own accounts too if you share any.</p>
               </div>
             </div>
           </CardContent>

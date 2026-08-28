@@ -45,7 +45,7 @@ export default function TrustVsWillExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you NEED a trust (not just want)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Real estate in multiple states (avoids multi-state probate).</li>
               <li>Estate over your state\'s estate tax limit.</li>
               <li>Special needs heir (special needs trust protects benefits).</li>
@@ -86,7 +86,7 @@ export default function TrustVsWillExplainer() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get one or the other</h3>
-            <p className="text-sm text-muted-foreground">Without a will OR trust, the state decides who gets your stuff. Probate court fees + delays cost your family thousands. The cheapest will (LegalZoom $200) beats nothing. The right plan beats the cheapest. Talk to a fee-only attorney once. Done.</p>
+            <p className="text-base text-muted-foreground">Without a will OR trust, the state decides who gets your stuff. Probate court fees + delays cost your family thousands. The cheapest will (LegalZoom $200) beats nothing. The right plan beats the cheapest. Talk to a fee-only attorney once. Done.</p>
           </CardContent>
         </Card>
       </main>

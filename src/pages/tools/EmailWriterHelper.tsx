@@ -862,7 +862,7 @@ export default function EmailWriterHelper() {
                   <span className="text-3xl" aria-hidden="true">{active.icon}</span>
                   <div>
                     <h2 className="text-2xl font-bold">{active.title}</h2>
-                    <p className="text-sm text-muted-foreground">{active.description}</p>
+                    <p className="text-base text-muted-foreground">{active.description}</p>
                   </div>
                 </div>
               </div>
@@ -969,7 +969,7 @@ export default function EmailWriterHelper() {
               <CheckCircle2 className="h-4 w-4 text-primary" aria-hidden="true" />
               Read it before you send
             </h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-2 text-base text-muted-foreground">
               <li className="flex gap-2"><span>•</span> Did you spell names right?</li>
               <li className="flex gap-2"><span>•</span> Right email address in the "To" field?</li>
               <li className="flex gap-2"><span>•</span> Right dates, amounts, and reference numbers?</li>

@@ -199,7 +199,7 @@ export default function RouterUpgradeHelper() {
                     <p className="font-semibold">{result.pick}</p>
                     <Badge variant="outline">{result.pickPrice}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground">{result.pickWhy}</p>
+                  <p className="text-base text-muted-foreground">{result.pickWhy}</p>
                 </CardContent>
               </Card>
 

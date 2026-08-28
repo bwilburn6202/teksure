@@ -32,7 +32,7 @@ export default function AeroGardenForSeniors() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -41,7 +41,7 @@ export default function AeroGardenForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior-friendly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No bending — countertop height.</li>
               <li>No dirt = no mess.</li>
               <li>Water + light automatic.</li>
@@ -56,7 +56,7 @@ export default function AeroGardenForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best plants</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lettuce + greens</strong> — fastest, easiest.</li>
               <li><strong>Herbs</strong> — basil, parsley, mint, rosemary.</li>
               <li><strong>Cherry tomatoes</strong> — slow but rewarding.</li>
@@ -70,7 +70,7 @@ export default function AeroGardenForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (15 min)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Place near electrical outlet.</li>
               <li>Fill water reservoir.</li>
               <li>Insert seed pods.</li>
@@ -84,7 +84,7 @@ export default function AeroGardenForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Costs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Seed pods: $4-15 per pod (lasts 2-6 months).</li>
               <li>Use reusable pods + own seeds = much cheaper.</li>
               <li>Nutrients: $30/yr.</li>
@@ -98,7 +98,7 @@ export default function AeroGardenForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Therapy benefit</h3>
-            <p className="text-sm text-muted-foreground">Indoor gardening proven to reduce depression + anxiety. Daily caring routine. Mindful + grounding. Senior living facilities install for residents. Especially valuable in winter / for those with limited mobility. Watching things grow = quiet joy.</p>
+            <p className="text-base text-muted-foreground">Indoor gardening proven to reduce depression + anxiety. Daily caring routine. Mindful + grounding. Senior living facilities install for residents. Especially valuable in winter / for those with limited mobility. Watching things grow = quiet joy.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function SubstackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Substack?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Newsletter platform.</li>
               <li>Writers publish directly to subscribers.</li>
               <li>Many free, some paid ($5–$10/month).</li>
@@ -33,7 +33,7 @@ export default function SubstackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Popular for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heather Cox Richardson — daily history + politics.</li>
               <li>The Pour Over — neutral news summary.</li>
               <li>Garbage Day — internet culture.</li>
@@ -47,7 +47,7 @@ export default function SubstackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to subscribe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Visit Substack.com.</li>
               <li>Search topics or writers.</li>
               <li>Click Subscribe — enter email.</li>
@@ -61,7 +61,7 @@ export default function SubstackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reading experience</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Substack app — read all subscriptions.</li>
               <li>Or read via email.</li>
               <li>Audio narration on many posts.</li>
@@ -75,7 +75,7 @@ export default function SubstackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start your own newsletter</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free to publish.</li>
               <li>Substack takes 10% of paid subscriptions.</li>
               <li>Many seniors share life stories or expertise.</li>
@@ -89,7 +89,7 @@ export default function SubstackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cancel subscriptions easily</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Each newsletter has Manage Subscription link.</li>
               <li>Or visit Substack.com → Settings.</li>
               <li>See all paid subscriptions in one place.</li>
@@ -103,7 +103,7 @@ export default function SubstackForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Heather Cox Richardson is free</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re curious about Substack, subscribe free to Heather Cox Richardson&apos;s &quot;Letters from an American.&quot; She&apos;s a Boston College history professor who writes daily about American history + current events. Over 1 million subscribers. Free. It&apos;ll show you the format. Then explore other writers in topics you care about.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re curious about Substack, subscribe free to Heather Cox Richardson&apos;s &quot;Letters from an American.&quot; She&apos;s a Boston College history professor who writes daily about American history + current events. Over 1 million subscribers. Free. It&apos;ll show you the format. Then explore other writers in topics you care about.</p>
           </CardContent>
         </Card>
       </main>

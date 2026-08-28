@@ -19,7 +19,7 @@ export default function GutterCleaningOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why gutters matter</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Clogged gutters = water in basement/foundation.</li>
               <li>Foundation repair $5K-50K.</li>
               <li>Roof rot from backed-up water.</li>
@@ -34,7 +34,7 @@ export default function GutterCleaningOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">PROS — hire someone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Local handyman</strong> — $75-200 single story, $150-400 two story.</li>
               <li><strong>TaskRabbit / Thumbtack</strong> — vetted contractors.</li>
               <li><strong>Roofing companies</strong> — often offer cleaning.</li>
@@ -48,7 +48,7 @@ export default function GutterCleaningOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Permanent solution: gutter guards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mesh or screen covers prevent leaves entering.</li>
               <li>$300-2,000 DIY for whole house.</li>
               <li>$1,500-5,000 professional install.</li>
@@ -63,7 +63,7 @@ export default function GutterCleaningOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">From-the-ground tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Gutter wand</strong> for hose — $30-60. Spray clean from ground.</li>
               <li><strong>Telescoping gutter cleaner</strong> — wet/dry vac attachment.</li>
               <li><strong>iRobot Looj</strong> — gutter robot. Mixed reviews. $300.</li>
@@ -77,7 +77,7 @@ export default function GutterCleaningOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you MUST climb</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NEVER alone — falls top senior killer.</li>
               <li>Don&apos;t lean over — climb down + reposition.</li>
               <li>Stable level ground.</li>
@@ -92,7 +92,7 @@ export default function GutterCleaningOptions() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Vetting gutter companies</h3>
-            <p className="text-sm text-muted-foreground">Get 3 quotes. Check reviews + BBB. Insured + bonded. Avoid door-to-door pitches. LeafFilter etc. high-pressure sales — wait + get other quotes. NEVER pay full upfront. Ask for references. Some companies install gutter guards FREE as &quot;showcase&quot; for marketing — ask.</p>
+            <p className="text-base text-muted-foreground">Get 3 quotes. Check reviews + BBB. Insured + bonded. Avoid door-to-door pitches. LeafFilter etc. high-pressure sales — wait + get other quotes. NEVER pay full upfront. Ask for references. Some companies install gutter guards FREE as &quot;showcase&quot; for marketing — ask.</p>
           </CardContent>
         </Card>
       </main>

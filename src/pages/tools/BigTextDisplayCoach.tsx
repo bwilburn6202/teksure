@@ -78,7 +78,7 @@ export default function BigTextDisplayCoach() {
               <Eye className="w-6 h-6 text-muted-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Don't forget your computer</h3>
-                <p className="text-sm text-muted-foreground">On a Mac: System Settings → Accessibility → Display. On Windows: Settings → Accessibility → Text size. Same idea, even bigger payoff for long sessions.</p>
+                <p className="text-base text-muted-foreground">On a Mac: System Settings → Accessibility → Display. On Windows: Settings → Accessibility → Text size. Same idea, even bigger payoff for long sessions.</p>
               </div>
             </div>
           </CardContent>

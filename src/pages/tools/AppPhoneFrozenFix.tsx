@@ -105,7 +105,7 @@ export default function AppPhoneFrozenFix() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Restart fixes a lot</h3>
-            <p className="text-sm text-muted-foreground">"Have you tried turning it off and on again?" exists as a meme because it works. Restart any device once a week. Solves 60% of weird tech problems.</p>
+            <p className="text-base text-muted-foreground">"Have you tried turning it off and on again?" exists as a meme because it works. Restart any device once a week. Solves 60% of weird tech problems.</p>
           </CardContent>
         </Card>
       </main>

@@ -34,7 +34,7 @@ export default function PrescriptionGlassesOnline() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function PrescriptionGlassesOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you need to order</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Current Rx</strong> — written prescription from eye doctor (federal law REQUIRES they give you copy).</li>
               <li><strong>PD (Pupillary Distance)</strong> — distance between pupils. Eye doctor measures, OR measure with ruler + Zenni&apos;s free tool.</li>
               <li><strong>Frame size</strong> — measurements from a frame you like (printed inside arm).</li>
@@ -55,7 +55,7 @@ export default function PrescriptionGlassesOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Progressive lenses online</strong> — Zenni $30, retail $300. Order multiple pairs.</li>
               <li><strong>Reading glasses-only</strong> — for menus, books. Cheap online ($10-20).</li>
               <li><strong>Prescription sunglasses</strong> — bought online for $40 vs $300 retail.</li>
@@ -69,7 +69,7 @@ export default function PrescriptionGlassesOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When in-store is better</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Strong Rx ( -8.0 or higher diopters).</li>
               <li>High-prism lenses.</li>
               <li>Bifocals (lined) — adjustment needed.</li>
@@ -82,7 +82,7 @@ export default function PrescriptionGlassesOnline() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Insurance</h3>
-            <p className="text-sm text-muted-foreground">Vision insurance (VSP, EyeMed) often covers $130-200 frame allowance. Original Medicare does NOT cover routine glasses (only post-cataract surgery). Medicare Advantage often does. Online sites sometimes accept FSA/HSA cards.</p>
+            <p className="text-base text-muted-foreground">Vision insurance (VSP, EyeMed) often covers $130-200 frame allowance. Original Medicare does NOT cover routine glasses (only post-cataract surgery). Medicare Advantage often does. Online sites sometimes accept FSA/HSA cards.</p>
           </CardContent>
         </Card>
       </main>

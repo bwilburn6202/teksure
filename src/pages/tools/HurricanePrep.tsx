@@ -19,7 +19,7 @@ export default function HurricanePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">June 1 — start of hurricane season</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Check insurance — flood + windstorm separate.</li>
               <li>Trim trees away from home.</li>
               <li>Test generator (if owned).</li>
@@ -34,7 +34,7 @@ export default function HurricanePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">3-5 days before storm</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fill gas tank.</li>
               <li>Stock 1 week food + water.</li>
               <li>Cash from ATM.</li>
@@ -50,7 +50,7 @@ export default function HurricanePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If staying — 1 day before</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Board / shutter windows.</li>
               <li>Move outdoor furniture inside.</li>
               <li>Fill bathtubs with water (toilet flushing).</li>
@@ -65,7 +65,7 @@ export default function HurricanePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If evacuating</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Leave EARLY — gridlock by Day -1.</li>
               <li>Bring evacuation go-bag.</li>
               <li>Bring medications + medical equipment.</li>
@@ -80,7 +80,7 @@ export default function HurricanePrep() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior-specific resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>Special-needs evacuation registry</strong> — many coastal counties. Lets first responders know seniors needing help. Sign up at county emergency management. Free transportation in some areas.</p>
+            <p className="text-base text-muted-foreground"><strong>Special-needs evacuation registry</strong> — many coastal counties. Lets first responders know seniors needing help. Sign up at county emergency management. Free transportation in some areas.</p>
           </CardContent>
         </Card>
       </main>

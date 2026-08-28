@@ -19,7 +19,7 @@ export default function LiveCaptionsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Live Captions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Accessibility → Live Captions.</li>
               <li>Captions appear on screen for any audio.</li>
               <li>FaceTime calls captioned.</li>
@@ -34,7 +34,7 @@ export default function LiveCaptionsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android Live Transcribe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FREE app from Google.</li>
               <li>70+ languages.</li>
               <li>Captions in real time.</li>
@@ -48,7 +48,7 @@ export default function LiveCaptionsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best apps for hearing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Otter.ai</strong> — captions + transcripts. Free tier.</li>
               <li><strong>Ava</strong> — designed for deaf. Tags speakers.</li>
               <li><strong>Live Transcribe</strong> (Android) — free Google.</li>
@@ -62,7 +62,7 @@ export default function LiveCaptionsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior use cases</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Restaurants — read captions of dining companion.</li>
               <li>Doctor appointments — capture instructions.</li>
               <li>Family gatherings — follow conversations.</li>
@@ -76,7 +76,7 @@ export default function LiveCaptionsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">CapTel phone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Captioned phone — built-in screen.</li>
               <li>FREE if hearing loss certified.</li>
               <li>Plug into landline.</li>
@@ -91,7 +91,7 @@ export default function LiveCaptionsApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quality varies</h3>
-            <p className="text-sm text-muted-foreground">Auto-captions 90-95% accurate now. Sometimes funny errors. Position phone near speaker. Quiet room = better. Combined with hearing aids = excellent communication. Don&apos;t struggle with hearing alone — free tools available.</p>
+            <p className="text-base text-muted-foreground">Auto-captions 90-95% accurate now. Sometimes funny errors. Position phone near speaker. Quiet room = better. Combined with hearing aids = excellent communication. Don&apos;t struggle with hearing alone — free tools available.</p>
           </CardContent>
         </Card>
       </main>

@@ -34,7 +34,7 @@ export default function AudiobookApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function AudiobookApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Library cards make audiobooks free</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Get a free library card from your local library (in-person OR many libraries do online sign-up).</li>
               <li>Download Libby app + Hoopla app.</li>
               <li>Tap "Add Library Card". Enter card number.</li>
@@ -57,7 +57,7 @@ export default function AudiobookApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for better listening</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adjust speed — most apps allow 0.8x to 2x. 1.1x or 1.2x speeds up without sounding chipmunky.</li>
               <li>Sleep timer — most apps have one. Pause after 15 min.</li>
               <li>Bluetooth headphones (or AirPods) keep cord out of way.</li>
@@ -70,7 +70,7 @@ export default function AudiobookApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Audible vs Library</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Library</strong> — free, but waits 1-12 weeks for popular new books.</li>
               <li><strong>Audible</strong> — $15/month, instant access, you own the credit.</li>
               <li>Many people use Library for older books, Audible only for new releases they can&apos;t wait for.</li>
@@ -81,7 +81,7 @@ export default function AudiobookApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For low vision or fading eyesight</h3>
-            <p className="text-sm text-muted-foreground">If reading print is hard, ask your library about <strong>BARD</strong> (Braille and Audio Reading Download) — a free service from the Library of Congress for people with vision loss. Tens of thousands of audiobooks. Doctor or librarian can certify eligibility.</p>
+            <p className="text-base text-muted-foreground">If reading print is hard, ask your library about <strong>BARD</strong> (Braille and Audio Reading Download) — a free service from the Library of Congress for people with vision loss. Tens of thousands of audiobooks. Doctor or librarian can certify eligibility.</p>
           </CardContent>
         </Card>
       </main>

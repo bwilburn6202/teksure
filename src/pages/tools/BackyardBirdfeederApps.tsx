@@ -19,7 +19,7 @@ export default function BackyardBirdfeederApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why birding for seniors?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Peaceful + meditative.</li>
               <li>Connect with nature without leaving home.</li>
               <li>Mental engagement — learning species.</li>
@@ -33,7 +33,7 @@ export default function BackyardBirdfeederApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart bird feeders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bird Buddy — camera feeder, AI bird ID, app alerts.</li>
               <li>Around $200 — sees + identifies visiting birds.</li>
               <li>Photos automatically taken and saved.</li>
@@ -47,7 +47,7 @@ export default function BackyardBirdfeederApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bird ID apps (free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Merlin Bird ID — free from Cornell Lab.</li>
               <li>Identify by sound, photo, or color.</li>
               <li>Most accurate ID app — completely free.</li>
@@ -61,7 +61,7 @@ export default function BackyardBirdfeederApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up feeders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Place near windows — enjoy from inside.</li>
               <li>5 feet from glass minimizes window strikes.</li>
               <li>Or 30+ feet away — too fast at 5–30 ft.</li>
@@ -75,7 +75,7 @@ export default function BackyardBirdfeederApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best seed types</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Black oil sunflower — attracts most species.</li>
               <li>Nyjer (thistle) — finches and small birds.</li>
               <li>Safflower — squirrels won&apos;t eat it.</li>
@@ -89,7 +89,7 @@ export default function BackyardBirdfeederApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Squirrel solutions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Squirrel baffles — dome above hanging feeder.</li>
               <li>Pole-mounted with cone baffle below.</li>
               <li>Weight-activated feeders close under squirrel weight.</li>
@@ -103,7 +103,7 @@ export default function BackyardBirdfeederApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with Merlin and one feeder</h3>
-            <p className="text-sm text-muted-foreground">Download the free Merlin Bird ID app from Cornell Lab. Hang one good hopper feeder filled with black oil sunflower seed near your kitchen window. Within 2 weeks you&apos;ll have regular visitors. Use Merlin&apos;s sound ID to identify the birds you hear but can&apos;t see. Cornell&apos;s All About Birds website has free guides for everything else. Total cost: about $40. Lifetime joy.</p>
+            <p className="text-base text-muted-foreground">Download the free Merlin Bird ID app from Cornell Lab. Hang one good hopper feeder filled with black oil sunflower seed near your kitchen window. Within 2 weeks you&apos;ll have regular visitors. Use Merlin&apos;s sound ID to identify the birds you hear but can&apos;t see. Cornell&apos;s All About Birds website has free guides for everything else. Total cost: about $40. Lifetime joy.</p>
           </CardContent>
         </Card>
       </main>

@@ -46,7 +46,7 @@ export default function MedicalAlertPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -55,7 +55,7 @@ export default function MedicalAlertPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Features to look for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Automatic fall detection</strong> — calls help even if you can\'t press the button. Worth $5-10/month extra.</li>
               <li><strong>2-way voice</strong> — talk to the operator through the pendant or base.</li>
               <li><strong>Battery life</strong> — pendant should last 5+ days; base unit should have backup battery.</li>
@@ -86,7 +86,7 @@ export default function MedicalAlertPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Insurance / Medicare</h3>
-            <p className="text-sm text-muted-foreground">Original Medicare does NOT cover medical alerts. Many Medicare Advantage plans do — call your plan to ask. Some long-term care insurance and Medicaid waivers cover it.</p>
+            <p className="text-base text-muted-foreground">Original Medicare does NOT cover medical alerts. Many Medicare Advantage plans do — call your plan to ask. Some long-term care insurance and Medicaid waivers cover it.</p>
           </CardContent>
         </Card>
       </main>

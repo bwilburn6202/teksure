@@ -19,7 +19,7 @@ export default function SocialSecurityOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sign up at SSA.gov</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>ssa.gov/myaccount</strong>.</li>
               <li>Click "Create an Account".</li>
               <li>Use Login.gov or ID.me for identity verification.</li>
@@ -33,7 +33,7 @@ export default function SocialSecurityOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can do online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Check current + future benefits.</li>
               <li>Apply for retirement benefits.</li>
               <li>Apply for disability benefits.</li>
@@ -50,7 +50,7 @@ export default function SocialSecurityOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lock your SSN online</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Account settings → Security.</li>
               <li>Self-Lock SSN — prevents fraudulent use.</li>
               <li>Unlocks for legitimate use later.</li>
@@ -62,7 +62,7 @@ export default function SocialSecurityOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common scams to avoid</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SSA NEVER calls demanding immediate payment.</li>
               <li>SSA NEVER threatens arrest.</li>
               <li>SSA NEVER asks for gift card payment.</li>
@@ -76,7 +76,7 @@ export default function SocialSecurityOnline() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground">Local Social Security office — but make appointment online (busy walk-ins often turned away). 1-800-772-1213 free hotline. SHIP for Medicare-related questions free.</p>
+            <p className="text-base text-muted-foreground">Local Social Security office — but make appointment online (busy walk-ins often turned away). 1-800-772-1213 free hotline. SHIP for Medicare-related questions free.</p>
           </CardContent>
         </Card>
       </main>

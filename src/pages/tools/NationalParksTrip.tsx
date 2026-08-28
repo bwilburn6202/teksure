@@ -19,7 +19,7 @@ export default function NationalParksTrip() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior Pass = $80 lifetime</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>62+ get LIFETIME pass for $80 ($20/yr option).</li>
               <li>Free entry to ALL 2,000+ federal recreation sites.</li>
               <li>50% off camping at federal sites.</li>
@@ -33,7 +33,7 @@ export default function NationalParksTrip() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Most senior-friendly parks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Acadia (Maine)</strong> — drive most viewpoints.</li>
               <li><strong>Yellowstone</strong> — drive thru, boardwalks accessible.</li>
               <li><strong>Grand Canyon (South Rim)</strong> — accessible viewpoints.</li>
@@ -48,7 +48,7 @@ export default function NationalParksTrip() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plan ahead</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lodgings book 1-2 years ahead for popular parks.</li>
               <li>Yellowstone, Glacier, Yosemite especially.</li>
               <li>Recreation.gov for permits + reservations.</li>
@@ -62,7 +62,7 @@ export default function NationalParksTrip() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-paced visits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>3-5 days minimum at major parks.</li>
               <li>Don&apos;t try to see everything.</li>
               <li>Drive scenic routes — many sites visible from car.</li>
@@ -78,7 +78,7 @@ export default function NationalParksTrip() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps + resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NPS app</strong> — official, free. Each park&apos;s details.</li>
               <li><strong>AllTrails</strong> — find easy trails.</li>
               <li><strong>Recreation.gov</strong> — book lodging + camping.</li>
@@ -91,7 +91,7 @@ export default function NationalParksTrip() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Group tours</h3>
-            <p className="text-sm text-muted-foreground"><strong>Road Scholar</strong> — senior-paced national park trips. <strong>Tauck</strong>, <strong>Trafalgar</strong> — bus tours. Logistics done. Park lodges shared. Naturalist guides. $2K-5K/week. Worth it for those overwhelmed by planning. See /tools/senior-travel-groups.</p>
+            <p className="text-base text-muted-foreground"><strong>Road Scholar</strong> — senior-paced national park trips. <strong>Tauck</strong>, <strong>Trafalgar</strong> — bus tours. Logistics done. Park lodges shared. Naturalist guides. $2K-5K/week. Worth it for those overwhelmed by planning. See /tools/senior-travel-groups.</p>
           </CardContent>
         </Card>
       </main>

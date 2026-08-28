@@ -19,7 +19,7 @@ export default function AlcoholForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors react differently</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Less water in body = stronger effect.</li>
               <li>Slower metabolism — alcohol stays longer.</li>
               <li>Many medications interact dangerously.</li>
@@ -34,7 +34,7 @@ export default function AlcoholForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior limits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NIH says 65+ men: &lt;3 drinks/day, &lt;7/week.</li>
               <li>Women: &lt;2/day, &lt;7/week.</li>
               <li>1 drink = 5oz wine, 12oz beer, 1.5oz spirits.</li>
@@ -48,7 +48,7 @@ export default function AlcoholForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medication interactions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>BP meds — stronger drop.</li>
               <li>Sleep meds — dangerous combo.</li>
               <li>Pain meds — overdose risk.</li>
@@ -63,7 +63,7 @@ export default function AlcoholForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior alcohol problems</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Late-onset alcoholism more common than realized.</li>
               <li>Often hidden — &quot;just a glass of wine.&quot;</li>
               <li>Common after retirement / loss.</li>
@@ -77,7 +77,7 @@ export default function AlcoholForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cutting back / quitting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Talk to doctor — taper safely if heavy drinker.</li>
               <li>Never cold-turkey if heavy — DTs dangerous.</li>
               <li>AA + senior chapters.</li>
@@ -91,7 +91,7 @@ export default function AlcoholForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Help</h3>
-            <p className="text-sm text-muted-foreground"><strong>SAMHSA helpline</strong> — 1-800-662-4357. FREE 24/7. <strong>AA</strong> — local meetings free. <strong>Senior alcohol treatment</strong> programs exist. Mental health counselors specialized. Many seniors find non-drinking liberating + healthier.</p>
+            <p className="text-base text-muted-foreground"><strong>SAMHSA helpline</strong> — 1-800-662-4357. FREE 24/7. <strong>AA</strong> — local meetings free. <strong>Senior alcohol treatment</strong> programs exist. Mental health counselors specialized. Many seniors find non-drinking liberating + healthier.</p>
           </CardContent>
         </Card>
       </main>

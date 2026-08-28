@@ -184,7 +184,7 @@ export default function CyberScorecard() {
                     <div className="text-5xl font-black">{grade!.grade}</div>
                     <div className="text-left">
                       <p className={`text-xl font-bold ${grade!.color}`}>{grade!.label}</p>
-                      <p className="text-sm text-muted-foreground">Score: {totalScore} / {MAX_SCORE} ({pct}%)</p>
+                      <p className="text-base text-muted-foreground">Score: {totalScore} / {MAX_SCORE} ({pct}%)</p>
                     </div>
                   </div>
                   <div className="w-full bg-white/50 dark:bg-black/20 rounded-full h-3 overflow-hidden">

@@ -42,7 +42,7 @@ export default function ReadAloudAnywhere() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone — Speak Screen</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → Accessibility → Spoken Content.</li>
                 <li>Turn ON "Speak Screen".</li>
                 <li>To use: open any article, email, book. Swipe DOWN with TWO FINGERS from top of screen.</li>
@@ -57,7 +57,7 @@ export default function ReadAloudAnywhere() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android — Select to Speak</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → Accessibility → Select to Speak (or "Talkback" for full reader).</li>
                 <li>Turn ON.</li>
                 <li>An icon appears bottom right of screen. Tap it, then tap any text or "Read all".</li>
@@ -71,7 +71,7 @@ export default function ReadAloudAnywhere() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Mac — Spoken Content</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>System Settings → Accessibility → Spoken Content.</li>
                 <li>Turn ON "Speak announcements" or "Speak Selection".</li>
                 <li>Set the keyboard shortcut (default: Option + Esc).</li>
@@ -85,7 +85,7 @@ export default function ReadAloudAnywhere() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Windows — Narrator + Edge Read Aloud</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li><strong>Edge browser</strong>: Open any webpage → click the three-dot menu → "Read aloud". Press start.</li>
                 <li><strong>Word documents</strong>: Review menu → "Read Aloud".</li>
                 <li><strong>Full screen reader</strong>: Press <kbd className="bg-muted px-1.5 py-0.5 rounded">Win</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Ctrl</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Enter</kbd> for Narrator.</li>
@@ -97,7 +97,7 @@ export default function ReadAloudAnywhere() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps for read-aloud</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pocket</strong> — save articles, listen later.</li>
               <li><strong>Kindle "Listen"</strong> — read most Kindle books aloud (text-to-speech).</li>
               <li><strong>Speechify</strong> — premium app with very natural voices.</li>
@@ -111,7 +111,7 @@ export default function ReadAloudAnywhere() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For long articles</h3>
-            <p className="text-sm text-muted-foreground">Save to <strong>Pocket</strong> (free) or <strong>Speechify</strong> ($12/mo). Listen during walks. Many people who "don\'t read" actually love this — articles become podcasts.</p>
+            <p className="text-base text-muted-foreground">Save to <strong>Pocket</strong> (free) or <strong>Speechify</strong> ($12/mo). Listen during walks. Many people who "don\'t read" actually love this — articles become podcasts.</p>
           </CardContent>
         </Card>
       </main>

@@ -260,7 +260,7 @@ export default function TravelTechChecklist() {
                 </div>
               </div>
               <div className="flex flex-col items-end gap-2">
-                <p className="text-sm text-muted-foreground">{done.size} of {totalItems} done</p>
+                <p className="text-base text-muted-foreground">{done.size} of {totalItems} done</p>
                 <Button onClick={printIt} variant="outline" size="sm" className="gap-2">
                   <Printer className="h-4 w-4" /> Print
                 </Button>

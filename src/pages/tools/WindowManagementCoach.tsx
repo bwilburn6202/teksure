@@ -109,7 +109,7 @@ export default function WindowManagementCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">The single best one-window tip</h3>
-            <p className="text-sm text-muted-foreground">If you only learn one: <strong>Alt + Tab (Windows)</strong> or <strong> + Tab (Mac)</strong> to switch between open apps. Hold the modifier; tap Tab to cycle. Game changer once it\'s muscle memory.</p>
+            <p className="text-base text-muted-foreground">If you only learn one: <strong>Alt + Tab (Windows)</strong> or <strong> + Tab (Mac)</strong> to switch between open apps. Hold the modifier; tap Tab to cycle. Game changer once it\'s muscle memory.</p>
           </CardContent>
         </Card>
       </main>

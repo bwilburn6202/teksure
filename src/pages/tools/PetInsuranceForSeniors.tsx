@@ -33,7 +33,7 @@ export default function PetInsuranceForSeniors() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function PetInsuranceForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What&apos;s covered</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Accidents</strong> — broken leg, swallowed object.</li>
               <li><strong>Illness</strong> — cancer, diabetes, kidney.</li>
               <li><strong>Surgery</strong> — major medical.</li>
@@ -56,7 +56,7 @@ export default function PetInsuranceForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pet considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many insurers refuse pets over 8-10 yrs.</li>
               <li>AKC, ASPCA, Pets Best accept older.</li>
               <li>Pre-existing conditions excluded forever.</li>
@@ -70,7 +70,7 @@ export default function PetInsuranceForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When insurance is worth it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Young pet (under 5).</li>
               <li>Breed prone to issues (bulldogs, larger dogs).</li>
               <li>Can&apos;t afford $5K-15K emergency vet.</li>
@@ -84,7 +84,7 @@ export default function PetInsuranceForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alternative: vet wellness plans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Banfield, VCA — $30-60/mo wellness plans.</li>
               <li>Cover routine: exams, vaccines, dental cleaning.</li>
               <li>NOT major medical (separate insurance for that).</li>
@@ -96,7 +96,7 @@ export default function PetInsuranceForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">CareCredit + GoodRx</h3>
-            <p className="text-sm text-muted-foreground"><strong>CareCredit</strong> — interest-free vet financing 6-24 months. Apply ahead, use as needed. <strong>GoodRx for Pets</strong> — discounts on pet meds 50-80%. <strong>RedRover Relief grants</strong> — emergency vet help for low income. <strong>The Pet Fund</strong> — grants for chronic care.</p>
+            <p className="text-base text-muted-foreground"><strong>CareCredit</strong> — interest-free vet financing 6-24 months. Apply ahead, use as needed. <strong>GoodRx for Pets</strong> — discounts on pet meds 50-80%. <strong>RedRover Relief grants</strong> — emergency vet help for low income. <strong>The Pet Fund</strong> — grants for chronic care.</p>
           </CardContent>
         </Card>
       </main>

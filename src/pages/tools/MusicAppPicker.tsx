@@ -34,7 +34,7 @@ export default function MusicAppPicker() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -55,7 +55,7 @@ export default function MusicAppPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">If you have Amazon Prime — Amazon Music is already paid for. Open it. If you have an iPhone — try Apple Music\'s 1-month free trial. Otherwise, Spotify Free is the easiest first step.</p>
+            <p className="text-base text-muted-foreground">If you have Amazon Prime — Amazon Music is already paid for. Open it. If you have an iPhone — try Apple Music\'s 1-month free trial. Otherwise, Spotify Free is the easiest first step.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function ShortStoryWriting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why write?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Brain cardio — stay sharp.</li>
               <li>Process life experiences.</li>
               <li>Family heirloom potential.</li>
@@ -33,7 +33,7 @@ export default function ShortStoryWriting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5-step structure</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>1. Hook</strong> — first sentence catches attention.</li>
               <li><strong>2. Setup</strong> — character + setting.</li>
               <li><strong>3. Conflict</strong> — what goes wrong?</li>
@@ -47,7 +47,7 @@ export default function ShortStoryWriting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Writing apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Microsoft Word</strong> — most familiar.</li>
               <li><strong>Google Docs</strong> — FREE, save automatically.</li>
               <li><strong>Pages</strong> — Apple FREE.</li>
@@ -61,7 +61,7 @@ export default function ShortStoryWriting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Story idea sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Real-life family stories (fictionalize).</li>
               <li>What if?... ask hypotheticals.</li>
               <li>News stories twisted.</li>
@@ -76,7 +76,7 @@ export default function ShortStoryWriting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for new writers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Write first, don&apos;t edit.</li>
               <li>Keep going even when bad.</li>
               <li>Edit next week, not same day.</li>
@@ -91,7 +91,7 @@ export default function ShortStoryWriting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Submit + publish</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Reedsy</strong> — weekly contests.</li>
               <li><strong>Glimmer Train</strong> — literary mag.</li>
               <li><strong>The Sun Magazine</strong>.</li>
@@ -105,7 +105,7 @@ export default function ShortStoryWriting() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Family stories book</h3>
-            <p className="text-sm text-muted-foreground">Best gift to grandkids: collection of family stories you write. 10-20 short stories about people, places, times. Print at Lulu / Shutterfly. Heirloom for generations. Late-life writers like Frank McCourt, Jim Harrison. Library — short story craft books. Just write. 1 hour/day. 6 months = book.</p>
+            <p className="text-base text-muted-foreground">Best gift to grandkids: collection of family stories you write. 10-20 short stories about people, places, times. Print at Lulu / Shutterfly. Heirloom for generations. Late-life writers like Frank McCourt, Jim Harrison. Library — short story craft books. Just write. 1 hour/day. 6 months = book.</p>
           </CardContent>
         </Card>
       </main>

@@ -274,10 +274,10 @@ export default function RobocallBlocker() {
               </div>
               {phoneType === 'iphone' ? (
                 <div className="space-y-3">
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     iOS has a built-in feature that sends any number not in your contacts straight to voicemail. It won't ring your phone, but legitimate calls still leave a voicemail so you don't miss anything important.
                   </p>
-                  <ol className="space-y-2 text-sm pl-1">
+                  <ol className="space-y-2 text-base pl-1">
                     <li className="flex gap-2">
                       <span className="font-bold text-rose-600">1.</span>
                       <span>Open <strong>Settings</strong></span>
@@ -297,7 +297,7 @@ export default function RobocallBlocker() {
                 </div>
               ) : (
                 <div className="space-y-3">
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Android phones include call screening and spam filtering. The exact menu names depend on your manufacturer — here are the two most common.
                   </p>
                   <div className="rounded-xl bg-muted p-4">

@@ -34,7 +34,7 @@ export default function ScannerAppPicks() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function ScannerAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Notes scanner — step by step</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Notes. Tap "+" to make new note.</li>
               <li>Tap camera icon → "Scan Documents".</li>
               <li>Hold phone over document. App auto-detects edges + scans.</li>
@@ -58,7 +58,7 @@ export default function ScannerAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android — Google Drive scanner</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Google Drive.</li>
               <li>Tap "+" → Scan.</li>
               <li>Take photo of document.</li>
@@ -72,7 +72,7 @@ export default function ScannerAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use scanner apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Insurance receipts.</li>
               <li>Medical records to share with family.</li>
               <li>Legal documents to email.</li>
@@ -88,7 +88,7 @@ export default function ScannerAppPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t buy a scanner</h3>
-            <p className="text-sm text-muted-foreground">Standalone scanners $50-200 — mostly unnecessary now. Phone scanner apps make a sharper PDF in 5 seconds. The exception: bulk archiving (1000+ photos), where Epson FastFoto is faster. For occasional household needs, your phone is enough.</p>
+            <p className="text-base text-muted-foreground">Standalone scanners $50-200 — mostly unnecessary now. Phone scanner apps make a sharper PDF in 5 seconds. The exception: bulk archiving (1000+ photos), where Epson FastFoto is faster. For occasional household needs, your phone is enough.</p>
           </CardContent>
         </Card>
       </main>

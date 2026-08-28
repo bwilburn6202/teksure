@@ -33,7 +33,7 @@ export default function SmartDoorbellCompare() {
                   <span className="text-sm font-semibold text-primary">{b.cost}</span>
                 </div>
                 <p className="text-sm">{b.best}</p>
-                <p className="text-sm text-muted-foreground">{b.good}</p>
+                <p className="text-base text-muted-foreground">{b.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SmartDoorbellCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why bother</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>See who&apos;s at the door</strong> from anywhere — phone, tablet, watch.</li>
               <li><strong>Talk to delivery drivers</strong> — "leave it on the porch please".</li>
               <li><strong>Scare off strangers</strong> — "Can I help you?" through speaker.</li>
@@ -55,7 +55,7 @@ export default function SmartDoorbellCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Battery vs wired</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Battery</strong> — easy install (3 screws). Charge every 2-6 months. Most people pick this.</li>
               <li><strong>Wired</strong> — uses existing doorbell wires. Always on. No charging. Needs minor electrical knowledge or installer.</li>
             </ul>
@@ -79,7 +79,7 @@ export default function SmartDoorbellCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly setup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Have a tech-savvy family member do the wifi setup.</li>
               <li>Install on phone. Test "answer doorbell" once.</li>
               <li>Set up "snooze" if you don&apos;t want notifications during nap (1-12 hours).</li>
@@ -92,7 +92,7 @@ export default function SmartDoorbellCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Privacy note</h3>
-            <p className="text-sm text-muted-foreground">Ring shares footage with police on request, sometimes without notifying you. If that bothers you, Eufy or Wyze (local storage) are safer choices. All doorbells should follow local laws — don&apos;t aim camera at neighbor&apos;s yard.</p>
+            <p className="text-base text-muted-foreground">Ring shares footage with police on request, sometimes without notifying you. If that bothers you, Eufy or Wyze (local storage) are safer choices. All doorbells should follow local laws — don&apos;t aim camera at neighbor&apos;s yard.</p>
           </CardContent>
         </Card>
       </main>

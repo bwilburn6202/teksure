@@ -537,7 +537,7 @@ export default function BillDecoder() {
                   <Icon className="h-6 w-6 text-primary" />
                   <h2 className="text-xl font-bold">{bill.provider} — {bill.title}</h2>
                 </div>
-                <p className="text-sm text-muted-foreground">{bill.accountDetail}</p>
+                <p className="text-base text-muted-foreground">{bill.accountDetail}</p>
                 <p className="text-xs text-muted-foreground mt-2 italic">
                   This is a realistic example bill. Click any line to see what it means.
                 </p>

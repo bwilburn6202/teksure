@@ -19,7 +19,7 @@ export default function GrandparentLegalRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Visitation rights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vary by state significantly.</li>
               <li>Limited compared to parent rights.</li>
               <li>Only if parents divorced, deceased, or unfit.</li>
@@ -33,7 +33,7 @@ export default function GrandparentLegalRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Custody scenarios</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Parent dies — grandparent may seek custody.</li>
               <li>Parent unfit (drugs, abuse) — protect child.</li>
               <li>Kinship care preferred over foster.</li>
@@ -47,7 +47,7 @@ export default function GrandparentLegalRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If denied access</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Try mediation first.</li>
               <li>Family therapist.</li>
               <li>Court only if must.</li>
@@ -61,7 +61,7 @@ export default function GrandparentLegalRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Raising grandkids resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AARP GrandFamilies</strong> — free guide.</li>
               <li><strong>Generations United</strong> — gu.org.</li>
               <li><strong>State kinship navigators</strong> — find services.</li>
@@ -75,7 +75,7 @@ export default function GrandparentLegalRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to call attorney</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Custody dispute.</li>
               <li>Visitation denied.</li>
               <li>Unfit parent situation.</li>
@@ -89,7 +89,7 @@ export default function GrandparentLegalRights() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best path</h3>
-            <p className="text-sm text-muted-foreground">Maintain good relationship with parents. Keep love at center. Court should be last resort. Many family ruptures heal with time. Children benefit from grandparents IF parents allow. Don&apos;t let pride end relationships.</p>
+            <p className="text-base text-muted-foreground">Maintain good relationship with parents. Keep love at center. Court should be last resort. Many family ruptures heal with time. Children benefit from grandparents IF parents allow. Don&apos;t let pride end relationships.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function AtticBasementClearout() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NEVER do attic alone — heat exhaustion + falls common.</li>
               <li>Wear N95 mask — dust, mold, asbestos, rodent droppings.</li>
               <li>Sturdy closed-toe shoes — nails common.</li>
@@ -34,7 +34,7 @@ export default function AtticBasementClearout() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hire help when</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mobility issues.</li>
               <li>Heavy items (furniture, boxes 30+ lbs).</li>
               <li>Spaces with mold, pests, asbestos.</li>
@@ -48,7 +48,7 @@ export default function AtticBasementClearout() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Junk hauling services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>1-800-Got-Junk</strong> — most popular. $250-800.</li>
               <li><strong>College Hunks Hauling Junk</strong> — competitor.</li>
               <li><strong>Junk King</strong> — recycles more.</li>
@@ -62,7 +62,7 @@ export default function AtticBasementClearout() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sort categories</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Keep</strong> — actively used / true sentiment.</li>
               <li><strong>Family/heirs</strong> — text photos, see who wants.</li>
               <li><strong>Sell</strong> — Facebook Marketplace, garage sale.</li>
@@ -77,7 +77,7 @@ export default function AtticBasementClearout() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Special items</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Paint, chemicals</strong> — Hazardous waste day at town landfill (free).</li>
               <li><strong>Electronics</strong> — Best Buy, Staples free recycling.</li>
               <li><strong>Old computers</strong> — wipe drive first / drill holes.</li>
@@ -91,7 +91,7 @@ export default function AtticBasementClearout() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Reward yourself</h3>
-            <p className="text-sm text-muted-foreground">Each box cleared = a small reward. Reorganized space = peace of mind. Many seniors find unexpected items: WWII letters, old jewelry, savings bonds. Search before tossing anything that looks valuable. Antique appraiser visit if many old items ($50-100).</p>
+            <p className="text-base text-muted-foreground">Each box cleared = a small reward. Reorganized space = peace of mind. Many seniors find unexpected items: WWII letters, old jewelry, savings bonds. Search before tossing anything that looks valuable. Antique appraiser visit if many old items ($50-100).</p>
           </CardContent>
         </Card>
       </main>

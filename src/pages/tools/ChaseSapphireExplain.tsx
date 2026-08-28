@@ -19,7 +19,7 @@ export default function ChaseSapphireExplain() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Two versions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sapphire Preferred</strong> — $95/yr. Travel + dining bonuses.</li>
               <li><strong>Sapphire Reserve</strong> — $550/yr. Premium travel benefits.</li>
               <li>Most seniors fine with Preferred.</li>
@@ -31,7 +31,7 @@ export default function ChaseSapphireExplain() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sapphire Preferred ($95/yr)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>5X points on travel via Chase portal.</li>
               <li>3X dining + groceries.</li>
               <li>2X all travel.</li>
@@ -46,7 +46,7 @@ export default function ChaseSapphireExplain() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sapphire Reserve ($550/yr)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$300 travel credit yearly = effective $250.</li>
               <li>Priority Pass airport lounge access ($550 value).</li>
               <li>Global Entry / TSA PreCheck reimbursement.</li>
@@ -60,7 +60,7 @@ export default function ChaseSapphireExplain() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior travel benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>TSA PreCheck reimbursement = $78 saved.</li>
               <li>Trip cancellation if illness.</li>
               <li>Lost luggage reimbursement.</li>
@@ -75,7 +75,7 @@ export default function ChaseSapphireExplain() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Should seniors get one?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YES</strong> if 1+ trip/year.</li>
               <li><strong>YES</strong> if dining out frequently.</li>
               <li><strong>YES</strong> if hate carrying multiple cards.</li>
@@ -89,7 +89,7 @@ export default function ChaseSapphireExplain() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hawaii / Europe trip</h3>
-            <p className="text-sm text-muted-foreground">Sign up for Sapphire Preferred — hit 75K bonus + earn through everyday spend = 100K+ points = enough for round-trip Hawaii or Europe flights. Many seniors get free trips this way. Pair with Chase Freedom Unlimited for points on EVERYTHING.</p>
+            <p className="text-base text-muted-foreground">Sign up for Sapphire Preferred — hit 75K bonus + earn through everyday spend = 100K+ points = enough for round-trip Hawaii or Europe flights. Many seniors get free trips this way. Pair with Chase Freedom Unlimited for points on EVERYTHING.</p>
           </CardContent>
         </Card>
       </main>

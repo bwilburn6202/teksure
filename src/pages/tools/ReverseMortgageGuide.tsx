@@ -26,7 +26,7 @@ export default function ReverseMortgageGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When it might make sense</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You&apos;re 70+ and want to age in place.</li>
               <li>House is paid off / nearly paid off.</li>
               <li>You need monthly income — pension/SS not enough.</li>
@@ -40,7 +40,7 @@ export default function ReverseMortgageGuide() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Big downsides</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>High fees</strong> — 4-6% upfront. Eats home equity fast.</li>
               <li><strong>Compounding interest</strong> — balance grows monthly.</li>
               <li><strong>Heirs lose home</strong> — they must sell or pay off loan.</li>
@@ -55,7 +55,7 @@ export default function ReverseMortgageGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Better alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Downsize</strong> — sell home, buy smaller, pocket difference. Often best.</li>
               <li><strong>HELOC</strong> — line of credit. Lower fees. Can be cancelled by bank.</li>
               <li><strong>Cash-out refinance</strong> — at lower rate.</li>
@@ -76,7 +76,7 @@ export default function ReverseMortgageGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Fee-only advisor first</h3>
-            <p className="text-sm text-muted-foreground">Reverse mortgages are right for ~10% of 62+ who consider them. For the rest, alternatives are better. Talk to fee-only fiduciary (NAPFA.org). Pay $300-500 for unbiased opinion. Salesman gets paid $5,000+ to sell you one — they&apos;re biased.</p>
+            <p className="text-base text-muted-foreground">Reverse mortgages are right for ~10% of 62+ who consider them. For the rest, alternatives are better. Talk to fee-only fiduciary (NAPFA.org). Pay $300-500 for unbiased opinion. Salesman gets paid $5,000+ to sell you one — they&apos;re biased.</p>
           </CardContent>
         </Card>
       </main>

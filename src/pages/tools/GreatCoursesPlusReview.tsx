@@ -19,7 +19,7 @@ export default function GreatCoursesPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Wondrium?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Formerly The Great Courses Plus.</li>
               <li>$20/month — unlimited streaming.</li>
               <li>Top university professors lecture.</li>
@@ -33,7 +33,7 @@ export default function GreatCoursesPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Topics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>History — every era.</li>
               <li>Science + medicine.</li>
               <li>Music + art appreciation.</li>
@@ -47,7 +47,7 @@ export default function GreatCoursesPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-popular series</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>The Story of Human Language.</li>
               <li>How the World Looks to a Bee.</li>
               <li>Understanding Russia.</li>
@@ -61,7 +61,7 @@ export default function GreatCoursesPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free trial</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>14-day free trial standard.</li>
               <li>Try one full course free.</li>
               <li>Cancel before charged.</li>
@@ -75,7 +75,7 @@ export default function GreatCoursesPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Library DVDs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many libraries have Great Courses DVDs.</li>
               <li>Free borrowing.</li>
               <li>Watch on TV — no streaming.</li>
@@ -89,7 +89,7 @@ export default function GreatCoursesPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cast to TV</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Better than watching on phone.</li>
               <li>Roku, Apple TV, Fire TV apps.</li>
               <li>Pause + rewind.</li>
@@ -103,7 +103,7 @@ export default function GreatCoursesPlusReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Library DVDs first</h3>
-            <p className="text-sm text-muted-foreground">Before subscribing to $20/month Wondrium, check your library — most carry The Great Courses DVDs. Free with library card. Same professors, same content. If your library has limited selection or you watch heavily, then $20/month is reasonable. Some seniors auto-renew Wondrium for years and never run out of new content.</p>
+            <p className="text-base text-muted-foreground">Before subscribing to $20/month Wondrium, check your library — most carry The Great Courses DVDs. Free with library card. Same professors, same content. If your library has limited selection or you watch heavily, then $20/month is reasonable. Some seniors auto-renew Wondrium for years and never run out of new content.</p>
           </CardContent>
         </Card>
       </main>

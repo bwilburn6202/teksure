@@ -39,7 +39,7 @@ export default function RelayServicesTty() {
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{s.name}</h3>
                 <p className="text-sm">{s.what}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -84,7 +84,7 @@ export default function RelayServicesTty() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hearing aids + phone</h3>
-            <p className="text-sm text-muted-foreground">"MFi hearing aids" (Made for iPhone) pair to iPhone for direct streaming. Phone calls go straight to hearing aids — clearer than holding phone to ear. Most modern hearing aids support this.</p>
+            <p className="text-base text-muted-foreground">"MFi hearing aids" (Made for iPhone) pair to iPhone for direct streaming. Phone calls go straight to hearing aids — clearer than holding phone to ear. Most modern hearing aids support this.</p>
           </CardContent>
         </Card>
       </main>

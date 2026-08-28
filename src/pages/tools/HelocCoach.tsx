@@ -27,7 +27,7 @@ export default function HelocCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">HELOC vs Home Equity Loan vs Cash-Out Refi</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>HELOC</strong> — line of credit. Borrow as needed. Variable rate. Best for ongoing needs (renovations, medical bills as they come).</li>
               <li><strong>Home Equity Loan</strong> — lump sum. Fixed rate. Best for one-time big purchase.</li>
               <li><strong>Cash-out refinance</strong> — replace mortgage with bigger one. Best when current rate is much higher than refi rate.</li>
@@ -38,7 +38,7 @@ export default function HelocCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When HELOC makes sense</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Major home repair (roof, foundation).</li>
               <li>Medical emergency without enough cash.</li>
               <li>Bridge while waiting for IRA withdrawal or pension to start.</li>
@@ -65,7 +65,7 @@ export default function HelocCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to get one</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Your existing bank/credit union</strong> — usually best terms for existing customers.</li>
               <li><strong>Local credit union</strong> — typically lowest rates.</li>
               <li><strong>Bankrate.com</strong> — compare current HELOC rates.</li>
@@ -90,7 +90,7 @@ export default function HelocCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For senior homeowners specifically</h3>
-            <p className="text-sm text-muted-foreground">A HELOC opened for "emergency fund" purposes (carry $0 balance) is wise. Pay nothing if unused. Available if a real emergency hits. Compare to reverse mortgage — HELOC is usually cheaper and more flexible. (See our Reverse Mortgage Explained tool.)</p>
+            <p className="text-base text-muted-foreground">A HELOC opened for "emergency fund" purposes (carry $0 balance) is wise. Pay nothing if unused. Available if a real emergency hits. Compare to reverse mortgage — HELOC is usually cheaper and more flexible. (See our Reverse Mortgage Explained tool.)</p>
           </CardContent>
         </Card>
       </main>

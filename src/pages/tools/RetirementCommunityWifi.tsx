@@ -19,7 +19,7 @@ export default function RetirementCommunityWifi() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common problems</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One wifi for the whole building — slow at 7 PM.</li>
               <li>Signal drops off in your unit (concrete walls).</li>
               <li>Logged out every 24 hours.</li>
@@ -32,7 +32,7 @@ export default function RetirementCommunityWifi() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick fixes (no extra cost)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Move closer to wifi access point. Often in hallway.</li>
               <li>Remove walls — sit in a different room.</li>
               <li>Turn off auto-update on phone, laptop, tablet (uses bandwidth in background).</li>
@@ -45,7 +45,7 @@ export default function RetirementCommunityWifi() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Boost your unit&apos;s signal</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Wifi extender</strong> — TP-Link RE220 ($30). Plugs into outlet, repeats wifi signal. Best simple fix.</li>
               <li><strong>Mesh wifi</strong> — Eero, Nest. $100-200. Better but overkill for a small unit.</li>
               <li><strong>USB wifi adapter</strong> for laptop ($20). Adds a longer antenna.</li>
@@ -57,7 +57,7 @@ export default function RetirementCommunityWifi() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get your own internet (often allowed)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most retirement communities allow private internet in your unit.</li>
               <li>Cellular hotspot — Verizon, T-Mobile sell home-internet hotspots, $30-50/mo unlimited.</li>
               <li>5G home internet — T-Mobile $50/mo, Verizon $50/mo. No installer needed.</li>
@@ -70,7 +70,7 @@ export default function RetirementCommunityWifi() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Public wifi safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t do banking on public wifi (community wifi counts).</li>
               <li>Use cellular data for banking instead.</li>
               <li>OR use a VPN ($3-5/mo from Mullvad, ProtonVPN, or NordVPN).</li>
@@ -82,7 +82,7 @@ export default function RetirementCommunityWifi() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Lifeline / Affordable Connectivity</h3>
-            <p className="text-sm text-muted-foreground">Federal Lifeline program subsidizes phone/internet for seniors on Medicaid, SNAP, or low income. Up to $9.25/month off. Apply at <strong>lifelinesupport.org</strong>. Many community managers can help with the form.</p>
+            <p className="text-base text-muted-foreground">Federal Lifeline program subsidizes phone/internet for seniors on Medicaid, SNAP, or low income. Up to $9.25/month off. Apply at <strong>lifelinesupport.org</strong>. Many community managers can help with the form.</p>
           </CardContent>
         </Card>
       </main>

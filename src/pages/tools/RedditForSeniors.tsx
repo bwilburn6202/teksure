@@ -19,7 +19,7 @@ export default function RedditForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly subreddits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>r/AskOldPeople</strong> — friendly community.</li>
               <li><strong>r/Retirement</strong> — planning + life.</li>
               <li><strong>r/Medicare</strong> — questions answered.</li>
@@ -34,7 +34,7 @@ export default function RedditForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How Reddit works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Communities = subreddits (r/something).</li>
               <li>Read without account.</li>
               <li>Make account to post + comment.</li>
@@ -49,7 +49,7 @@ export default function RedditForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why useful for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Specific niche questions answered.</li>
               <li>Anonymous medical / personal questions.</li>
               <li>Wide range of perspectives.</li>
@@ -63,7 +63,7 @@ export default function RedditForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid pitfalls</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Politics subreddits = polarized.</li>
               <li>Don&apos;t share personal info.</li>
               <li>Some subs hostile (avoid).</li>
@@ -77,7 +77,7 @@ export default function RedditForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Reddit Premium</h3>
-            <p className="text-sm text-muted-foreground">$6/mo Reddit Premium = no ads. Worth it for daily users. FREE version fine. Reddit&apos;s open-source third-party apps gone — official app required now. Web version old.reddit.com still cleaner UI for many seniors.</p>
+            <p className="text-base text-muted-foreground">$6/mo Reddit Premium = no ads. Worth it for daily users. FREE version fine. Reddit&apos;s open-source third-party apps gone — official app required now. Web version old.reddit.com still cleaner UI for many seniors.</p>
           </CardContent>
         </Card>
       </main>

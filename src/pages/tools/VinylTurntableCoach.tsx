@@ -42,7 +42,7 @@ export default function VinylTurntableCoach() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -51,7 +51,7 @@ export default function VinylTurntableCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Connect to speakers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Powered speakers (Audioengine A2+, Edifier R1280T)</strong> — connect turntable directly. ~$200-400.</li>
               <li><strong>Vintage receiver + speakers</strong> — find at thrift stores, often great quality $50-100.</li>
               <li><strong>Bluetooth turntable + Sonos</strong> — many newer turntables have Bluetooth out.</li>
@@ -89,7 +89,7 @@ export default function VinylTurntableCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Recommended starter setup</h3>
-            <p className="text-sm text-muted-foreground"><strong>Audio-Technica AT-LP60X-BT</strong> ($200) + <strong>Edifier R1280T powered speakers</strong> ($130). Total $330. Plays vinyl like your dad\'s setup did. Bluetooth-pair to phone for digital backup.</p>
+            <p className="text-base text-muted-foreground"><strong>Audio-Technica AT-LP60X-BT</strong> ($200) + <strong>Edifier R1280T powered speakers</strong> ($130). Total $330. Plays vinyl like your dad\'s setup did. Bluetooth-pair to phone for digital backup.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function PaintByNumbersAdult() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior-favorite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NO art skill required.</li>
               <li>Number = color. Just fill in.</li>
               <li>Meditative, relaxing.</li>
@@ -34,7 +34,7 @@ export default function PaintByNumbersAdult() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best brands</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Plaid CraftsBigComplete</strong> — quality Reds.</li>
               <li><strong>DIY Custom Paint By Numbers</strong> — your photo as kit. $30.</li>
               <li><strong>Winnie&apos;s Picks</strong> — senior-friendly designs.</li>
@@ -48,7 +48,7 @@ export default function PaintByNumbersAdult() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for success</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Good lighting (daylight or daylight bulb).</li>
               <li>Magnifying glass for fine numbers.</li>
               <li>Start with largest areas first.</li>
@@ -63,7 +63,7 @@ export default function PaintByNumbersAdult() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Difficulty levels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Beginner</strong> — large areas, fewer colors. Start here.</li>
               <li><strong>Intermediate</strong> — more detail.</li>
               <li><strong>Advanced</strong> — many tiny spaces, complex.</li>
@@ -76,7 +76,7 @@ export default function PaintByNumbersAdult() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After completion</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Spray varnish — protects + adds shine.</li>
               <li>Frame at Michael&apos;s, Hobby Lobby (50% off coupons).</li>
               <li>Display proudly.</li>
@@ -90,7 +90,7 @@ export default function PaintByNumbersAdult() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Custom from photo</h3>
-            <p className="text-sm text-muted-foreground">Paint family photo. Many websites turn photos to paint-by-number kits ($30-60). Wedding photos, pet portraits, family gatherings. Personalized + meaningful. Search &quot;custom paint by numbers from photo.&quot; Great gift for grandkids&apos; weddings.</p>
+            <p className="text-base text-muted-foreground">Paint family photo. Many websites turn photos to paint-by-number kits ($30-60). Wedding photos, pet portraits, family gatherings. Personalized + meaningful. Search &quot;custom paint by numbers from photo.&quot; Great gift for grandkids&apos; weddings.</p>
           </CardContent>
         </Card>
       </main>

@@ -26,7 +26,7 @@ export default function DigitalLegacyPlanner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple — Legacy Contact</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → tap your name → Sign-In &amp; Security.</li>
               <li>Tap "Legacy Contact".</li>
               <li>Add 1-3 trusted family members.</li>
@@ -39,7 +39,7 @@ export default function DigitalLegacyPlanner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Google — Inactive Account Manager</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>myaccount.google.com</strong> → Data &amp; Privacy.</li>
               <li>Scroll to "Make a plan for your digital legacy".</li>
               <li>Click "Inactive Account Manager".</li>
@@ -53,7 +53,7 @@ export default function DigitalLegacyPlanner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Facebook — Legacy Contact</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Personal &amp; Account Info → Account Ownership and Control.</li>
               <li>Tap "Memorialization".</li>
               <li>Add a legacy contact.</li>
@@ -78,7 +78,7 @@ export default function DigitalLegacyPlanner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The full checklist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Legacy Contact set.</li>
               <li>Google Inactive Account Manager set.</li>
               <li>Facebook Legacy Contact set.</li>
@@ -95,7 +95,7 @@ export default function DigitalLegacyPlanner() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">One sealed envelope</h3>
-            <p className="text-sm text-muted-foreground">Write down phone passcode, computer login, password manager master password. Seal in an envelope. Tell your executor or trusted family where it is. Don&apos;t put it WITH the will (those become public). Put it next to the will, in a separate envelope.</p>
+            <p className="text-base text-muted-foreground">Write down phone passcode, computer login, password manager master password. Seal in an envelope. Tell your executor or trusted family where it is. Don&apos;t put it WITH the will (those become public). Put it next to the will, in a separate envelope.</p>
           </CardContent>
         </Card>
       </main>

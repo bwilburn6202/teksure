@@ -97,7 +97,7 @@ export default function FreeTaxFilingCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When to hire a pro</h3>
-            <p className="text-sm text-muted-foreground">If you have rental property, sold a business, did a Roth conversion, inherited an IRA, have multiple states, or sold a house — pay a CPA or Enrolled Agent ($300-700). They\'ll save you more than they cost.</p>
+            <p className="text-base text-muted-foreground">If you have rental property, sold a business, did a Roth conversion, inherited an IRA, have multiple states, or sold a house — pay a CPA or Enrolled Agent ($300-700). They\'ll save you more than they cost.</p>
           </CardContent>
         </Card>
       </main>

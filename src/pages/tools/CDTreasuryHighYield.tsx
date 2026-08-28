@@ -19,7 +19,7 @@ export default function CDTreasuryHighYield() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">High-Yield Savings (HYSA)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most flexible. Withdraw anytime.</li>
               <li>Currently 4-5% APY.</li>
               <li><strong>Marcus by Goldman Sachs</strong>, <strong>Ally</strong>, <strong>SoFi</strong>, <strong>Discover</strong> — all good.</li>
@@ -33,7 +33,7 @@ export default function CDTreasuryHighYield() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">CDs (Certificates of Deposit)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lock money for 3 months to 5 years.</li>
               <li>Locked rate — won&apos;t drop.</li>
               <li>Currently 4-5% for 1-yr CDs.</li>
@@ -48,7 +48,7 @@ export default function CDTreasuryHighYield() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Treasuries</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Backed by US government — safest.</li>
               <li><strong>T-Bills</strong> — 4 weeks to 1 year. 4-5%.</li>
               <li><strong>T-Notes</strong> — 2-10 years. 4-5%.</li>
@@ -63,7 +63,7 @@ export default function CDTreasuryHighYield() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Money Market Funds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>At brokerages — Fidelity SPAXX, Vanguard VMFXX.</li>
               <li>Currently 4-5% APY.</li>
               <li>Withdraw anytime.</li>
@@ -77,7 +77,7 @@ export default function CDTreasuryHighYield() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">CD Ladder</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Split money across 1-yr, 2-yr, 3-yr, 4-yr, 5-yr CDs.</li>
               <li>Each year, one matures — reinvest at then-current rates.</li>
               <li>Liquidity + locked rates.</li>
@@ -90,7 +90,7 @@ export default function CDTreasuryHighYield() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tax tip</h3>
-            <p className="text-sm text-muted-foreground">Treasuries = no state income tax (big in high-tax states like CA, NY, NJ). CDs/HYSA = state + federal tax. In Roth IRA = tax-free everywhere. In Traditional IRA = tax-deferred. For taxable accounts, Treasuries often better than CDs after tax for high-tax-state residents.</p>
+            <p className="text-base text-muted-foreground">Treasuries = no state income tax (big in high-tax states like CA, NY, NJ). CDs/HYSA = state + federal tax. In Roth IRA = tax-free everywhere. In Traditional IRA = tax-deferred. For taxable accounts, Treasuries often better than CDs after tax for high-tax-state residents.</p>
           </CardContent>
         </Card>
       </main>

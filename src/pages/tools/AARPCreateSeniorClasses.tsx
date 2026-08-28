@@ -19,7 +19,7 @@ export default function AARPCreateSeniorClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AARP membership perks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$16/year membership unlocks lots.</li>
               <li>Free + member-discount classes.</li>
               <li>Webinars on dozens of topics.</li>
@@ -33,7 +33,7 @@ export default function AARPCreateSeniorClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AARP Smart Driver TEK</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free online driving safety course.</li>
               <li>Insurance discount in many states.</li>
               <li>Refreshes traffic laws + best practices.</li>
@@ -47,7 +47,7 @@ export default function AARPCreateSeniorClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AARP TEK Academy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free tech classes for seniors.</li>
               <li>Smartphone, computer, tablet basics.</li>
               <li>Online safety + privacy.</li>
@@ -61,7 +61,7 @@ export default function AARPCreateSeniorClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AARP Foundation programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tax-Aide — free tax prep (covered separately).</li>
               <li>SCSEP — paid job training for low-income 55+.</li>
               <li>Senior Community Service Employment.</li>
@@ -75,7 +75,7 @@ export default function AARPCreateSeniorClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local AARP events</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AARP.org/local — events near you.</li>
               <li>Health screenings.</li>
               <li>Tech workshops.</li>
@@ -89,7 +89,7 @@ export default function AARPCreateSeniorClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free without membership</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many AARP webinars free to all.</li>
               <li>News + advice articles free.</li>
               <li>Podcasts — Take on Today, Bulletin Today.</li>
@@ -103,7 +103,7 @@ export default function AARPCreateSeniorClasses() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">$16 = best deal in retirement</h3>
-            <p className="text-sm text-muted-foreground">For $16/year, AARP membership pays for itself many times over in just the discounts on hotels, restaurants, car rentals, and prescriptions. Plus the free classes, free Tax-Aide, free TEK Academy, free webinars. If you&apos;re 50+ and not a member, this is the easiest financial decision you&apos;ll make this year. Sign up at AARP.org.</p>
+            <p className="text-base text-muted-foreground">For $16/year, AARP membership pays for itself many times over in just the discounts on hotels, restaurants, car rentals, and prescriptions. Plus the free classes, free Tax-Aide, free TEK Academy, free webinars. If you&apos;re 50+ and not a member, this is the easiest financial decision you&apos;ll make this year. Sign up at AARP.org.</p>
           </CardContent>
         </Card>
       </main>

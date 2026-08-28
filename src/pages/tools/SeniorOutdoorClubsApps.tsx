@@ -19,7 +19,7 @@ export default function SeniorOutdoorClubsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Meetup.com</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free to join.</li>
               <li>Search hiking, walking, nature groups.</li>
               <li>Filter for 50+ groups.</li>
@@ -33,7 +33,7 @@ export default function SeniorOutdoorClubsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sierra Club</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$15/year membership.</li>
               <li>1.4 million members.</li>
               <li>Local outings + hikes.</li>
@@ -47,7 +47,7 @@ export default function SeniorOutdoorClubsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Audubon Society</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local Audubon chapters.</li>
               <li>Free birding walks.</li>
               <li>Educational lectures.</li>
@@ -61,7 +61,7 @@ export default function SeniorOutdoorClubsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AMC + Outdoor Clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Appalachian Mountain Club — $60/yr.</li>
               <li>Mountaineers (PNW).</li>
               <li>Adirondack Mountain Club.</li>
@@ -75,7 +75,7 @@ export default function SeniorOutdoorClubsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Walking groups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>YMCA group walks.</li>
               <li>Mall walking clubs.</li>
               <li>Senior center weekly walks.</li>
@@ -89,7 +89,7 @@ export default function SeniorOutdoorClubsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Walk With a Doc</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free monthly walks led by doctors.</li>
               <li>Health discussion + walking.</li>
               <li>Worldwide program.</li>
@@ -103,7 +103,7 @@ export default function SeniorOutdoorClubsApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Local Audubon for gentle start</h3>
-            <p className="text-sm text-muted-foreground">If you want to get outdoors but not rugged hiking, look up your local Audubon Society. Their bird walks are slow-paced, beginner-friendly, and focus on observing nature. Lots of seniors. Free or very low cost. Great way to explore parks and meet outdoor-loving people your age. Search &quot;[your city] Audubon&quot; for local chapter.</p>
+            <p className="text-base text-muted-foreground">If you want to get outdoors but not rugged hiking, look up your local Audubon Society. Their bird walks are slow-paced, beginner-friendly, and focus on observing nature. Lots of seniors. Free or very low cost. Great way to explore parks and meet outdoor-loving people your age. Search &quot;[your city] Audubon&quot; for local chapter.</p>
           </CardContent>
         </Card>
       </main>

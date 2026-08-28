@@ -33,7 +33,7 @@ export default function WarehouseClubPick() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -71,7 +71,7 @@ export default function WarehouseClubPick() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick math</h3>
-            <p className="text-sm text-muted-foreground">If you spend $200/month at the warehouse club + use the gas + use the pharmacy or eye exam — Costco Executive ($130/yr) earns back 2%. Most families end up break-even or net-positive after the rebate.</p>
+            <p className="text-base text-muted-foreground">If you spend $200/month at the warehouse club + use the gas + use the pharmacy or eye exam — Costco Executive ($130/yr) earns back 2%. Most families end up break-even or net-positive after the rebate.</p>
           </CardContent>
         </Card>
       </main>

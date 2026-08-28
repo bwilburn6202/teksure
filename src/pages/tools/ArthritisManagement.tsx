@@ -19,7 +19,7 @@ export default function ArthritisManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Exercise — counterintuitive but #1</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Movement REDUCES arthritis pain.</li>
               <li>Inactivity worsens stiffness.</li>
               <li>Walking 30 min/day = proven help.</li>
@@ -34,7 +34,7 @@ export default function ArthritisManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medications</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Acetaminophen</strong> (Tylenol) — first try. Liver-safe under 3g/day.</li>
               <li><strong>NSAIDs</strong> (Advil, Aleve) — work better but stomach + kidney risk.</li>
               <li><strong>Topical NSAIDs</strong> (Voltaren gel) — fewer side effects.</li>
@@ -49,7 +49,7 @@ export default function ArthritisManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly gadgets</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Jar opener</strong> — see /tools/grip-strength-tools.</li>
               <li><strong>OXO ergonomic kitchen tools</strong> — easier grip.</li>
               <li><strong>Long-handled brush + sponges</strong> — less bending.</li>
@@ -65,7 +65,7 @@ export default function ArthritisManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Diet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Anti-inflammatory eating (see /tools/anti-inflammatory-eating).</li>
               <li>Lose 5-10 lbs = 4x less pressure on knees.</li>
               <li>Turmeric — some studies show benefit.</li>
@@ -79,7 +79,7 @@ export default function ArthritisManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When surgery makes sense</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Knee/hip replacement — 95%+ success.</li>
               <li>Most successful surgeries in modern medicine.</li>
               <li>Try conservative options first.</li>
@@ -93,7 +93,7 @@ export default function ArthritisManagement() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground"><strong>Arthritis.org</strong> (Arthritis Foundation) — free magazine, exercise videos, support groups. <strong>CDC Walk With Ease</strong> — free 6-week program. Most YMCAs offer free Tai Chi for arthritis. Talk to physical therapist — Medicare covers with referral.</p>
+            <p className="text-base text-muted-foreground"><strong>Arthritis.org</strong> (Arthritis Foundation) — free magazine, exercise videos, support groups. <strong>CDC Walk With Ease</strong> — free 6-week program. Most YMCAs offer free Tai Chi for arthritis. Talk to physical therapist — Medicare covers with referral.</p>
           </CardContent>
         </Card>
       </main>

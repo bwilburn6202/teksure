@@ -19,7 +19,7 @@ export default function EmergencyContactsLockScreen() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Medical ID</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Health app.</li>
               <li>Tap your photo (top right) → Medical ID.</li>
               <li>Tap "Edit".</li>
@@ -34,7 +34,7 @@ export default function EmergencyContactsLockScreen() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How EMTs see it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Locked iPhone — press emergency call button.</li>
               <li>Tap "Medical ID" — shows your info WITHOUT unlocking.</li>
               <li>EMT sees: medications, allergies, conditions, contacts.</li>
@@ -47,7 +47,7 @@ export default function EmergencyContactsLockScreen() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android emergency info</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → About phone → Emergency Information.</li>
               <li>Add medical conditions, allergies, blood type.</li>
               <li>Add emergency contacts.</li>
@@ -60,7 +60,7 @@ export default function EmergencyContactsLockScreen() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other lock screen tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lock screen widget</strong> — name, "If found, call ___" (Settings → Lock Screen).</li>
               <li><strong>iOS 16+ Lock Screen</strong> — emergency contact widget.</li>
               <li><strong>Apple Watch</strong> — automatically calls emergency contacts on fall/SOS.</li>
@@ -73,7 +73,7 @@ export default function EmergencyContactsLockScreen() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Update twice a year</h3>
-            <p className="text-sm text-muted-foreground">Set reminder Jan + July — verify Medical ID + emergency contacts current. New medications? Update. New phone? Re-set up. 5 minutes / year — could save your life.</p>
+            <p className="text-base text-muted-foreground">Set reminder Jan + July — verify Medical ID + emergency contacts current. New medications? Update. New phone? Re-set up. 5 minutes / year — could save your life.</p>
           </CardContent>
         </Card>
       </main>

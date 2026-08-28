@@ -19,7 +19,7 @@ export default function MicrosoftTeamsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Teams?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free for personal use.</li>
               <li>Video + audio + chat.</li>
               <li>Up to 100 people.</li>
@@ -33,7 +33,7 @@ export default function MicrosoftTeamsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install Teams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download from teams.microsoft.com.</li>
               <li>Or App Store / Google Play.</li>
               <li>Sign in with Microsoft account.</li>
@@ -47,7 +47,7 @@ export default function MicrosoftTeamsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Join a meeting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Click link in email/text.</li>
               <li>Or open Teams &gt; &quot;Join a meeting&quot;.</li>
               <li>Type meeting ID.</li>
@@ -61,7 +61,7 @@ export default function MicrosoftTeamsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">During meeting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bottom toolbar: mute, video, share.</li>
               <li>Mute when not speaking.</li>
               <li>Raise hand button.</li>
@@ -75,7 +75,7 @@ export default function MicrosoftTeamsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior comforts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Background blur — privacy.</li>
               <li>Live captions for hearing.</li>
               <li>Make text larger.</li>
@@ -89,7 +89,7 @@ export default function MicrosoftTeamsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Teams vs Zoom</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Both excellent.</li>
               <li>Teams — Microsoft account.</li>
               <li>Zoom — separate account.</li>
@@ -103,7 +103,7 @@ export default function MicrosoftTeamsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Test before important call</h3>
-            <p className="text-sm text-muted-foreground">First time? Schedule test with family. 5 minutes verifies all working. Better than embarrassed at real meeting. Volume, camera, microphone test. Good lighting matters. Sit facing window — natural light. Headphones reduce echo. Doctor visits typical — practice first.</p>
+            <p className="text-base text-muted-foreground">First time? Schedule test with family. 5 minutes verifies all working. Better than embarrassed at real meeting. Volume, camera, microphone test. Good lighting matters. Sit facing window — natural light. Headphones reduce echo. Doctor visits typical — practice first.</p>
           </CardContent>
         </Card>
       </main>

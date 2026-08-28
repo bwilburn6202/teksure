@@ -34,7 +34,7 @@ export default function AudiobookKids() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function AudiobookKids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Yoto vs Toniebox vs phone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Yoto</strong> ($100) — for ages 3-12. Cards loaded with stories. Screen-free. Tactile.</li>
               <li><strong>Toniebox</strong> ($100) — ages 3-7. Cute figurines = each story.</li>
               <li><strong>Phone with Libby</strong> — free if you already have a phone. Less child-proof.</li>
@@ -55,7 +55,7 @@ export default function AudiobookKids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best kids&apos; audiobook series</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Magic Tree House</strong> (ages 6-9) — Mary Pope Osborne adventures.</li>
               <li><strong>Junie B. Jones</strong> (5-8) — funny, narrated by Lana Quintal.</li>
               <li><strong>Diary of a Wimpy Kid</strong> (8-12) — narrated by Ramon de Ocampo.</li>
@@ -70,7 +70,7 @@ export default function AudiobookKids() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best for road trips</h3>
-            <p className="text-sm text-muted-foreground">Audiobooks turn 6-hour drives into 2 hours. Library cards make it free. Or grandparent&apos;s gift: Yoto + 5 cards = $150 of joy. Kids end up asking for "another chapter" when you arrive.</p>
+            <p className="text-base text-muted-foreground">Audiobooks turn 6-hour drives into 2 hours. Library cards make it free. Or grandparent&apos;s gift: Yoto + 5 cards = $150 of joy. Kids end up asking for "another chapter" when you arrive.</p>
           </CardContent>
         </Card>
       </main>

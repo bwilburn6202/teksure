@@ -19,7 +19,7 @@ export default function AdultChildBoundaries() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common boundary issues</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Calling too often / not enough.</li>
               <li>Unsolicited parenting advice.</li>
               <li>Money loans → unspoken expectations.</li>
@@ -35,7 +35,7 @@ export default function AdultChildBoundaries() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Rules that work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ask before advising</strong> — "Do you want my opinion?"</li>
               <li><strong>Respect their parenting</strong> — they&apos;re raising YOUR grandkids how THEY see fit.</li>
               <li><strong>Don&apos;t triangulate</strong> — direct conversations beat going through siblings.</li>
@@ -50,7 +50,7 @@ export default function AdultChildBoundaries() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tools that help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Family therapy</strong> — even occasional sessions help.</li>
               <li><strong>Adult-child relationship books</strong> — "Boundaries" by Cloud + Townsend, "Difficult Mothers" by Streep.</li>
               <li><strong>Family group chat</strong> — shares photos / news without one-on-one demands.</li>
@@ -63,7 +63,7 @@ export default function AdultChildBoundaries() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Estranged adult child</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 in 4 US adults estranged from family member.</li>
               <li>Don&apos;t give up — but also respect their space.</li>
               <li>Send 1-2 cards/year — birthdays, holidays. No pressure.</li>
@@ -78,7 +78,7 @@ export default function AdultChildBoundaries() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Long game</h3>
-            <p className="text-sm text-muted-foreground">Adult kids&apos; relationships with parents often improve in 50s-60s+ when grandkids arrive. Patience pays. Focus on being someone they WANT to call — not someone they HAVE to. Less advice + more interest = better calls.</p>
+            <p className="text-base text-muted-foreground">Adult kids&apos; relationships with parents often improve in 50s-60s+ when grandkids arrive. Patience pays. Focus on being someone they WANT to call — not someone they HAVE to. Less advice + more interest = better calls.</p>
           </CardContent>
         </Card>
       </main>

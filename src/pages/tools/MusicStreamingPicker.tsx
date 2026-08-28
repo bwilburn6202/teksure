@@ -284,7 +284,7 @@ export default function MusicStreamingPicker() {
               <div className="p-4 rounded-lg bg-primary/5 border border-primary/20">
                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">{pick.label}</p>
                 <p className="font-semibold text-sm mb-2">Our pick: {pick.pick}</p>
-                <p className="text-sm text-muted-foreground">{pick.reason}</p>
+                <p className="text-base text-muted-foreground">{pick.reason}</p>
               </div>
             </CardContent>
           </Card>

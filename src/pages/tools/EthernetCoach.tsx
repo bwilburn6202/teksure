@@ -19,7 +19,7 @@ export default function EthernetCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use Ethernet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Smart TV / streaming box in living room</strong> — eliminates buffering. Connect to nearest Ethernet jack.</li>
               <li><strong>Desktop computer / video calls</strong> — most stable.</li>
               <li><strong>Gaming console</strong> — lower lag.</li>
@@ -45,7 +45,7 @@ export default function EthernetCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to add Ethernet without rewiring</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cat6 cable</strong> — 25-50ft. $10-20 on Amazon. Run along baseboard.</li>
               <li><strong>Powerline adapters</strong> — $80 for a pair. Plug one near router, one near device. Internet over electrical.</li>
               <li><strong>MoCA adapter</strong> — uses your home\'s coax (cable TV) wiring. Often the FASTEST non-wired option.</li>
@@ -69,7 +69,7 @@ export default function EthernetCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick win</h3>
-            <p className="text-sm text-muted-foreground">Plug your living room smart TV / Apple TV / Roku into Ethernet via a long Cat6 cable from the router. Tape it along the baseboard. Streaming becomes instant — no more "buffering" pauses on Netflix.</p>
+            <p className="text-base text-muted-foreground">Plug your living room smart TV / Apple TV / Roku into Ethernet via a long Cat6 cable from the router. Tape it along the baseboard. Streaming becomes instant — no more "buffering" pauses on Netflix.</p>
           </CardContent>
         </Card>
       </main>

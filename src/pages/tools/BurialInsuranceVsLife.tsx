@@ -19,7 +19,7 @@ export default function BurialInsuranceVsLife() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Types explained</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Burial / final expense</strong> — small ($5K-25K). Covers funeral.</li>
               <li><strong>Term life</strong> — temporary. Cheap. 10-30 year terms.</li>
               <li><strong>Whole life</strong> — permanent. Expensive. Cash value.</li>
@@ -32,7 +32,7 @@ export default function BurialInsuranceVsLife() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Average funeral 2026: $9,000-15,000.</li>
               <li>Cremation: $1,000-3,000.</li>
               <li>Direct cremation: $500-1,500.</li>
@@ -45,7 +45,7 @@ export default function BurialInsuranceVsLife() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you DON&apos;T need life insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>House paid off + savings cover funeral.</li>
               <li>No dependents.</li>
               <li>Spouse has own resources.</li>
@@ -59,7 +59,7 @@ export default function BurialInsuranceVsLife() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reasonable picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mutual of Omaha Living Promise</strong> — $10K guaranteed issue, no exam.</li>
               <li><strong>AARP/New York Life</strong> — bundle.</li>
               <li><strong>Colonial Penn</strong> — small, low cost. Watch for graded benefit.</li>
@@ -72,7 +72,7 @@ export default function BurialInsuranceVsLife() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Free quote&quot; calls — high pressure.</li>
               <li>&quot;Graded benefit&quot; — only pays full after 2-3 yrs.</li>
               <li>Premiums rise dramatically with age.</li>
@@ -86,7 +86,7 @@ export default function BurialInsuranceVsLife() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Talk to fee-only advisor</h3>
-            <p className="text-sm text-muted-foreground">Fee-only fiduciary advisor (NAPFA.org) gives unbiased advice — they don&apos;t earn commission. $200-400 one-time. Insurance agents earn 50-100% first-year premium as commission. Conflict of interest is huge. Get independent advice.</p>
+            <p className="text-base text-muted-foreground">Fee-only fiduciary advisor (NAPFA.org) gives unbiased advice — they don&apos;t earn commission. $200-400 one-time. Insurance agents earn 50-100% first-year premium as commission. Conflict of interest is huge. Get independent advice.</p>
           </CardContent>
         </Card>
       </main>

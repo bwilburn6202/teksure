@@ -19,7 +19,7 @@ export default function RecordPlayerStreaming() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best record players (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Audio-Technica AT-LP60X</strong> ($150) — beginner-favorite. Auto-stop. Bluetooth options.</li>
               <li><strong>Audio-Technica AT-LP120XBT</strong> ($330) — Bluetooth + USB to digitize.</li>
               <li><strong>Pro-Ject Debut Carbon Evo</strong> ($600) — premium for serious listeners.</li>
@@ -32,7 +32,7 @@ export default function RecordPlayerStreaming() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Modern setup combo</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Real turntable (above) → Bluetooth speaker OR home audio system.</li>
               <li>Stream Spotify on phone → same speaker via Bluetooth.</li>
               <li>One speaker, both vinyl + streaming.</li>
@@ -45,7 +45,7 @@ export default function RecordPlayerStreaming() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Digitize old vinyl</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>USB turntable (Audio-Technica LP120) → computer → Audacity (free).</li>
               <li>Record song, save as MP3.</li>
               <li>Add to iTunes / Apple Music / Spotify (upload).</li>
@@ -58,7 +58,7 @@ export default function RecordPlayerStreaming() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to buy records</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Local record store</strong> — best for community.</li>
               <li><strong>Discogs.com</strong> — biggest used market.</li>
               <li><strong>Half Price Books</strong> — surprising vinyl section.</li>
@@ -72,7 +72,7 @@ export default function RecordPlayerStreaming() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quality matters with vinyl</h3>
-            <p className="text-sm text-muted-foreground">$50-100 record players damage records over time (poor needles, wrong weight). $150+ Audio-Technica properly cared for plays records gently. Worth the upgrade if you have collection. Replace stylus every 1-2 years ($50).</p>
+            <p className="text-base text-muted-foreground">$50-100 record players damage records over time (poor needles, wrong weight). $150+ Audio-Technica properly cared for plays records gently. Worth the upgrade if you have collection. Replace stylus every 1-2 years ($50).</p>
           </CardContent>
         </Card>
       </main>

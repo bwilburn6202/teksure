@@ -19,7 +19,7 @@ export default function AllrecipesYummlyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Allrecipes — community recipes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>50,000+ recipes contributed by home cooks.</li>
               <li>Real reviews from real cooks.</li>
               <li>Free to use — ad-supported.</li>
@@ -33,7 +33,7 @@ export default function AllrecipesYummlyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Yummly — personalized</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>2 million+ recipes from web + magazines.</li>
               <li>Tells you recipes based on diet preferences.</li>
               <li>Filter by allergies — gluten-free, dairy-free.</li>
@@ -47,7 +47,7 @@ export default function AllrecipesYummlyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">NYT Cooking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$5/month — chef-quality recipes.</li>
               <li>Test kitchen tested.</li>
               <li>Beautiful recipe organization.</li>
@@ -61,7 +61,7 @@ export default function AllrecipesYummlyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly cooking apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cook&apos;n — recipe organizer with grocery lists.</li>
               <li>BigOven — community + meal planning.</li>
               <li>SuperCook — type ingredients, get recipes.</li>
@@ -75,7 +75,7 @@ export default function AllrecipesYummlyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cooking with iPad/tablet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tablet stand for kitchen counter.</li>
               <li>Larger text easier on eyes.</li>
               <li>Voice control — &quot;next step&quot; with hands dirty.</li>
@@ -89,7 +89,7 @@ export default function AllrecipesYummlyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Diet-specific apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Diabetic-friendly: ADA Diabetes Food Hub.</li>
               <li>Heart-healthy: AHA Heart Healthy Recipes.</li>
               <li>Low-sodium: Salt Sense by Mayo Clinic.</li>
@@ -103,7 +103,7 @@ export default function AllrecipesYummlyApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Allrecipes for trying new things</h3>
-            <p className="text-sm text-muted-foreground">For most seniors, free Allrecipes is the best starting point. The community reviews are gold — real cooks describe what they changed and why. When you find a winner, save it to Paprika or AnyList. Then build your weekly grocery list from saved recipes. This three-app combo (Allrecipes for finding + Paprika for saving + grocery delivery) transforms cooking for many seniors.</p>
+            <p className="text-base text-muted-foreground">For most seniors, free Allrecipes is the best starting point. The community reviews are gold — real cooks describe what they changed and why. When you find a winner, save it to Paprika or AnyList. Then build your weekly grocery list from saved recipes. This three-app combo (Allrecipes for finding + Paprika for saving + grocery delivery) transforms cooking for many seniors.</p>
           </CardContent>
         </Card>
       </main>

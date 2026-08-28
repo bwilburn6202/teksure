@@ -33,7 +33,7 @@ export default function ToasterOvenGuide() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function ToasterOvenGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors love them</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heats up in 2-3 min (full oven 10-15).</li>
               <li>Less electricity for small meals.</li>
               <li>Don&apos;t heat whole kitchen in summer.</li>
@@ -57,7 +57,7 @@ export default function ToasterOvenGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Big buttons + clear display.</li>
               <li>Knobs (vs touchscreen).</li>
               <li>Light inside oven.</li>
@@ -73,7 +73,7 @@ export default function ToasterOvenGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can cook</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>4-slice toast.</li>
               <li>1-2 person dinners.</li>
               <li>Frozen pizza.</li>
@@ -89,7 +89,7 @@ export default function ToasterOvenGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip your big oven</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many seniors stop using oven entirely.</li>
               <li>Less energy + heat.</li>
               <li>Hot meal in 15 min not 45.</li>
@@ -102,7 +102,7 @@ export default function ToasterOvenGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Air fryer combo</h3>
-            <p className="text-sm text-muted-foreground">Cuisinart TOA-65 + Breville Combi = toaster oven + air fryer + dehydrator. One appliance replaces 3. Senior favorite. Air fry: chicken, fries, salmon, vegetables — healthier than deep frying. See /tools/air-fryer-basics for recipes.</p>
+            <p className="text-base text-muted-foreground">Cuisinart TOA-65 + Breville Combi = toaster oven + air fryer + dehydrator. One appliance replaces 3. Senior favorite. Air fry: chicken, fries, salmon, vegetables — healthier than deep frying. See /tools/air-fryer-basics for recipes.</p>
           </CardContent>
         </Card>
       </main>

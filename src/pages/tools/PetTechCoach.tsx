@@ -33,7 +33,7 @@ export default function PetTechCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> If your pet is lost</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Call your vet — confirm the microchip is registered in YOUR name with current phone numbers. (Many seniors discover the chip is still in the breeder's name from years ago.)</li>
               <li>Post on <strong>Nextdoor</strong>, <strong>Facebook neighborhood groups</strong>, and <strong>PawBoost</strong> (free lost-pet alert site).</li>
               <li>Call the local animal shelter and county animal control — they need a description in case someone brings the pet in.</li>
@@ -46,7 +46,7 @@ export default function PetTechCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Dog walking & sitting apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Rover</strong> — biggest dog walker / sitter network. Verified profiles, reviews, in-app messaging. Insurance built in.</li>
               <li><strong>Wag</strong> — similar idea. Often a bit cheaper, slightly less consistent walker quality.</li>
               <li><strong>Local Facebook groups</strong> — "[Your town] dog walkers" — sometimes finds neighbors with reasonable rates.</li>
@@ -58,7 +58,7 @@ export default function PetTechCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Vet apps and health tracking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pawprint / iVet</strong> — keep vaccine and shot records on your phone. Useful for boarding kennels.</li>
               <li><strong>Banfield (PetSmart vet) app</strong> — schedule, see records, refill meds.</li>
               <li><strong>VetLIVE / Pawp / Airvet</strong> — telehealth vet calls when something's wrong at 9 PM. $20-30 per video call. Often answers "is this an emergency?" quickly.</li>
@@ -80,7 +80,7 @@ export default function PetTechCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">What's NOT worth it</h3>
-            <p className="text-sm text-muted-foreground">"Pet DNA tests" beyond Embark or Wisdom Panel are gimmicks. "Pet wellness subscriptions" through retail brands are usually overpriced. Stick to your real vet plus a couple of trusted apps above.</p>
+            <p className="text-base text-muted-foreground">"Pet DNA tests" beyond Embark or Wisdom Panel are gimmicks. "Pet wellness subscriptions" through retail brands are usually overpriced. Stick to your real vet plus a couple of trusted apps above.</p>
           </CardContent>
         </Card>
       </main>

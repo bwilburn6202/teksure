@@ -440,7 +440,7 @@ export default function EmailDeclutter() {
                     ].map(({ icon: Icon, tip, color }, i) => (
                       <div key={i} className="flex gap-3 p-3 rounded-lg border border-border bg-muted/30">
                         <Icon className={`h-5 w-5 ${color} shrink-0 mt-0.5`} />
-                        <p className="text-sm text-muted-foreground">{tip}</p>
+                        <p className="text-base text-muted-foreground">{tip}</p>
                       </div>
                     ))}
                   </div>

@@ -32,7 +32,7 @@ export default function RemoteHelpSetup() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Mac to Mac (or iPhone to iPhone) — SharePlay screen sharing</h2>
             <p className="text-sm mb-2">If both of you have Apple devices, this is built in.</p>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Start a FaceTime call with the family member.</li>
               <li>Tap the <strong>SharePlay</strong> icon (a person with sparkles, top right of FaceTime).</li>
               <li>Tap <strong>"Share My Screen"</strong>. They see what you see.</li>
@@ -45,7 +45,7 @@ export default function RemoteHelpSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Windows — Quick Assist (free)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>You: press the <strong>Windows key</strong>, type "Quick Assist", press Enter.</li>
               <li>You: tap "Get help".</li>
               <li>Helper does the same on their PC and clicks "Help someone".</li>
@@ -60,7 +60,7 @@ export default function RemoteHelpSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Android — Google Meet screen share</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Start a Google Meet video call with the family member.</li>
               <li>Tap the three-dot menu → "Share screen" → "Start sharing".</li>
               <li>They can see your screen but cannot click for you. Verbal coaching only.</li>
@@ -72,7 +72,7 @@ export default function RemoteHelpSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cross-platform — TeamViewer (free for personal)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Both of you install <strong>TeamViewer</strong> from teamviewer.com or your app store.</li>
               <li>Choose "Personal use" when it asks.</li>
               <li>You: open TeamViewer. It shows a 9-digit ID and 4-digit password.</li>

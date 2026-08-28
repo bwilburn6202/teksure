@@ -342,7 +342,7 @@ export default function StreamingCalculator() {
                   ${monthlyTotal}
                   <span className="text-xl font-normal">/mo</span>
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   {selectedCount === 0
                     ? 'Check services on the left to get started.'
                     : `$${annualTotal} per year · ${selectedCount} service${selectedCount !== 1 ? 's' : ''}`}
@@ -357,7 +357,7 @@ export default function StreamingCalculator() {
 
                     <div className="border-t border-black/10 dark:border-white/10 mt-4 pt-4 flex items-start gap-2">
                       <Coffee className="h-4 w-4 mt-0.5 flex-shrink-0 text-amber-600" aria-hidden="true" />
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         That's about <span className="font-semibold text-foreground">{coffees} cups of coffee</span> per year at $5 each.
                       </p>
                     </div>

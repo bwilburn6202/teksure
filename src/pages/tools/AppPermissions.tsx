@@ -263,7 +263,7 @@ export default function AppPermissions() {
                 <Shield className="h-5 w-5 text-[hsl(var(--teksure-success))] shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold text-sm mb-1">Quick audit tip</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Start with the <strong>High Risk</strong> permissions — Location, Camera, and Microphone. Spend 5 minutes reviewing those three, and you'll significantly reduce your privacy exposure.
                   </p>
                 </div>

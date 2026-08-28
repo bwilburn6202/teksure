@@ -19,7 +19,7 @@ export default function InHomeCareAgencyVet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Agency vs private hire</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Agency</strong> — handles taxes, insurance, backup. $25-40/hr. Safer.</li>
               <li><strong>Private hire</strong> — $15-25/hr. You handle taxes + payroll. Riskier.</li>
               <li>Most families start with agency, switch to private after finding good aide.</li>
@@ -31,7 +31,7 @@ export default function InHomeCareAgencyVet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Agency vetting checklist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>State-licensed home care agency.</li>
               <li>Bonded + insured (workers comp + liability).</li>
               <li>Background-checked employees.</li>
@@ -48,7 +48,7 @@ export default function InHomeCareAgencyVet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Aide interview questions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Years of experience + types of seniors cared for.</li>
               <li>CPR + first aid certified?</li>
               <li>Worked with dementia / mobility issues?</li>
@@ -65,7 +65,7 @@ export default function InHomeCareAgencyVet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Protect senior + valuables</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lock up jewelry, cash, prescriptions.</li>
               <li>Inventory valuables before aide starts.</li>
               <li>Bank statements + checkbooks secure.</li>
@@ -80,7 +80,7 @@ export default function InHomeCareAgencyVet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags in agencies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No state license to share.</li>
               <li>Cash-only payments.</li>
               <li>Aides change constantly.</li>
@@ -96,7 +96,7 @@ export default function InHomeCareAgencyVet() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground"><strong>Care.com</strong> — find aides + caregivers. <strong>A Place for Mom</strong> — free senior placement. <strong>Eldercare Locator</strong> — 1-800-677-1116. Medicaid + VA programs cover home care for eligible. Long-term care insurance covers if pre-existing policy.</p>
+            <p className="text-base text-muted-foreground"><strong>Care.com</strong> — find aides + caregivers. <strong>A Place for Mom</strong> — free senior placement. <strong>Eldercare Locator</strong> — 1-800-677-1116. Medicaid + VA programs cover home care for eligible. Long-term care insurance covers if pre-existing policy.</p>
           </CardContent>
         </Card>
       </main>

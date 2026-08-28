@@ -40,7 +40,7 @@ export default function SmartHomePlatformPick() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -49,7 +49,7 @@ export default function SmartHomePlatformPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Match platform to your phone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone user</strong> → Apple HomeKit (most private) OR Alexa (most devices).</li>
               <li><strong>Samsung Galaxy user</strong> → SmartThings (built in) or Alexa.</li>
               <li><strong>Google Pixel / Android</strong> → Google Home or Alexa.</li>
@@ -61,7 +61,7 @@ export default function SmartHomePlatformPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start small — first 3 things</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>One smart speaker</strong> — Echo Dot ($20-50) or Nest Mini ($30) for voice control.</li>
               <li><strong>2-3 smart bulbs</strong> — for the lamps you use most.</li>
               <li><strong>Smart plug</strong> ($10-20) — turns ANY device into a "smart" device. Plug a coffee maker into it, schedule "on" at 7 AM.</li>

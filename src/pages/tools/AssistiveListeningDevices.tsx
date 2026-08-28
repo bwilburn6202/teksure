@@ -33,7 +33,7 @@ export default function AssistiveListeningDevices() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function AssistiveListeningDevices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When ALDs help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>TV too loud for family but quiet for you.</li>
               <li>Hearing in noisy restaurants.</li>
               <li>Group conversations.</li>
@@ -56,7 +56,7 @@ export default function AssistiveListeningDevices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AirPods Pro = secret weapon</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone Live Listen feature — phone becomes microphone.</li>
               <li>AirPods amplify what phone hears.</li>
               <li>Place phone near speaker, listen via AirPods.</li>
@@ -71,7 +71,7 @@ export default function AssistiveListeningDevices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Loop systems (T-coil)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Hearing loops&quot; in churches, theaters, courts.</li>
               <li>If hearing aid has T-coil — auto-connects.</li>
               <li>Audio direct to your hearing aid.</li>
@@ -86,7 +86,7 @@ export default function AssistiveListeningDevices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free for veterans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VA provides hearing aids + ALDs to eligible vets.</li>
               <li>VA hearing programs comprehensive.</li>
               <li>Apply through VA benefits.</li>
@@ -99,7 +99,7 @@ export default function AssistiveListeningDevices() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Combine devices</h3>
-            <p className="text-sm text-muted-foreground">Hearing aids for daily + Pocketalker for restaurants + TV Ears for TV + AirPods Pro for travel. Don&apos;t rely on one device. Each best for specific situation. Multi-tool approach = best senior hearing experience.</p>
+            <p className="text-base text-muted-foreground">Hearing aids for daily + Pocketalker for restaurants + TV Ears for TV + AirPods Pro for travel. Don&apos;t rely on one device. Each best for specific situation. Multi-tool approach = best senior hearing experience.</p>
           </CardContent>
         </Card>
       </main>

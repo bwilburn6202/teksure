@@ -19,7 +19,7 @@ export default function SeniorMemoirWriting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why write your memoir?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Preserve your story for grandchildren.</li>
               <li>Process your life experience.</li>
               <li>Therapeutic for difficult memories.</li>
@@ -33,7 +33,7 @@ export default function SeniorMemoirWriting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">StoryWorth — easiest</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$99/year service.</li>
               <li>Sends one question per week by email.</li>
               <li>You reply — that becomes a chapter.</li>
@@ -47,7 +47,7 @@ export default function SeniorMemoirWriting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free DIY approach</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Google Doc — type your stories.</li>
               <li>Free question lists online.</li>
               <li>Voice memos for thinking aloud.</li>
@@ -61,7 +61,7 @@ export default function SeniorMemoirWriting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Memoir writing apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Scrivener — pro writing tool, $49.</li>
               <li>Day One — daily journal style.</li>
               <li>Lifetales — guided memoir prompts.</li>
@@ -75,7 +75,7 @@ export default function SeniorMemoirWriting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice + speech-to-text</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Talk easier than type for many.</li>
               <li>iPhone Voice Memos — record stories.</li>
               <li>Auto-transcription on newer iPhones.</li>
@@ -89,7 +89,7 @@ export default function SeniorMemoirWriting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Self-publishing options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Amazon KDP — free to publish.</li>
               <li>Shutterfly photo book — for photo-heavy memoirs.</li>
               <li>Lulu — print on demand.</li>
@@ -103,7 +103,7 @@ export default function SeniorMemoirWriting() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with childhood memories</h3>
-            <p className="text-sm text-muted-foreground">Begin by writing about your earliest memories. Where you grew up, your parents, school days, first job. These are the stories your grandchildren will treasure most. Use voice memos if typing is hard. Don&apos;t edit, don&apos;t worry about quality. Just capture the stories. You can polish later. Many seniors who never thought they could &quot;write&quot; produce beautiful memoirs by recording memories.</p>
+            <p className="text-base text-muted-foreground">Begin by writing about your earliest memories. Where you grew up, your parents, school days, first job. These are the stories your grandchildren will treasure most. Use voice memos if typing is hard. Don&apos;t edit, don&apos;t worry about quality. Just capture the stories. You can polish later. Many seniors who never thought they could &quot;write&quot; produce beautiful memoirs by recording memories.</p>
           </CardContent>
         </Card>
       </main>

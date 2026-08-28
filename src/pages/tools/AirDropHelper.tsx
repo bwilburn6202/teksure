@@ -41,7 +41,7 @@ export default function AirDropHelper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h3 className="font-bold text-lg mb-3">Step 2 — Send the photo</h3>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open the photo (or photos — you can pick several) in the Photos app.</li>
               <li>Tap the <strong>Share</strong> button (square with arrow up) in the bottom-left.</li>
               <li>Tap <strong>AirDrop</strong>.</li>
@@ -85,7 +85,7 @@ export default function AirDropHelper() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Sharing with Android friends</h3>
-            <p className="text-sm text-muted-foreground">AirDrop only works between Apple devices. To send to Android, use Messages (compress to MMS), email, or a free app like <strong>Google Photos</strong> or <strong>WhatsApp</strong> — all work between iPhone and Android.</p>
+            <p className="text-base text-muted-foreground">AirDrop only works between Apple devices. To send to Android, use Messages (compress to MMS), email, or a free app like <strong>Google Photos</strong> or <strong>WhatsApp</strong> — all work between iPhone and Android.</p>
           </CardContent>
         </Card>
       </main>

@@ -60,7 +60,7 @@ export default function SmokeCoDetectorMaintenance() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -91,7 +91,7 @@ export default function SmokeCoDetectorMaintenance() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Fire extinguisher too</h3>
-            <p className="text-sm text-muted-foreground">One ABC-rated 5-pound fire extinguisher in kitchen, garage, and bedroom. ~$30 each. Replace or recharge every 5-12 years (check tag). Most kitchen fires are STOVE fires — extinguisher near the stove (but not directly above) saves homes.</p>
+            <p className="text-base text-muted-foreground">One ABC-rated 5-pound fire extinguisher in kitchen, garage, and bedroom. ~$30 each. Replace or recharge every 5-12 years (check tag). Most kitchen fires are STOVE fires — extinguisher near the stove (but not directly above) saves homes.</p>
           </CardContent>
         </Card>
       </main>

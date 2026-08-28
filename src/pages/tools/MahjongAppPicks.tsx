@@ -33,7 +33,7 @@ export default function MahjongAppPicks() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function MahjongAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Solitaire vs traditional</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mahjong Solitaire</strong> — match pairs + remove. Solo. Easy.</li>
               <li><strong>Traditional Mahjong</strong> — 4-player. Like rummy. Complex.</li>
               <li><strong>American Mahjong</strong> — different rules than Chinese.</li>
@@ -56,7 +56,7 @@ export default function MahjongAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local mahjong groups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior centers run weekly games.</li>
               <li>Synagogues + churches host.</li>
               <li>Country clubs / rec centers.</li>
@@ -71,7 +71,7 @@ export default function MahjongAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Brain benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pattern recognition.</li>
               <li>Strategic planning.</li>
               <li>Memory training.</li>
@@ -85,7 +85,7 @@ export default function MahjongAppPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior-friendly settings</h3>
-            <p className="text-sm text-muted-foreground">Most apps allow: large tiles, slower animations, easy difficulty. Adjust before playing. Some apps designed for seniors with extra-large fonts. Daily challenge keeps you returning. Brain exercise + fun = senior tech sweet spot.</p>
+            <p className="text-base text-muted-foreground">Most apps allow: large tiles, slower animations, easy difficulty. Adjust before playing. Some apps designed for seniors with extra-large fonts. Daily challenge keeps you returning. Brain exercise + fun = senior tech sweet spot.</p>
           </CardContent>
         </Card>
       </main>

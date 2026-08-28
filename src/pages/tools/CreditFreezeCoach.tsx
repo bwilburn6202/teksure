@@ -53,7 +53,7 @@ export default function CreditFreezeCoach() {
                   <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold shrink-0">{i + 1}</div>
                   <div className="flex-1">
                     <h3 className="font-bold text-lg">{b.name}</h3>
-                    <p className="text-sm text-muted-foreground">Sign up for an account, verify your identity, then click "Place a freeze".</p>
+                    <p className="text-base text-muted-foreground">Sign up for an account, verify your identity, then click "Place a freeze".</p>
                   </div>
                 </div>
                 <div className="grid sm:grid-cols-2 gap-2">
@@ -68,7 +68,7 @@ export default function CreditFreezeCoach() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you need a loan or credit card later</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Ask the lender which bureau they pull from (most pull just one).</li>
               <li>Go to that bureau's website or call them.</li>
               <li>Sign in with the username and PIN you saved.</li>
@@ -84,7 +84,7 @@ export default function CreditFreezeCoach() {
               <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Bonus protection — also free</h3>
-                <p className="text-sm text-muted-foreground">Sign up for <strong>USPS Informed Delivery</strong> at informeddelivery.usps.com. It emails you photos of mail before it arrives — so you'll know if a thief steals letters from your mailbox (Medicare cards, tax forms, etc.).</p>
+                <p className="text-base text-muted-foreground">Sign up for <strong>USPS Informed Delivery</strong> at informeddelivery.usps.com. It emails you photos of mail before it arrives — so you'll know if a thief steals letters from your mailbox (Medicare cards, tax forms, etc.).</p>
               </div>
             </div>
           </CardContent>

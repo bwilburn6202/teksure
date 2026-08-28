@@ -19,7 +19,7 @@ export default function GeneratorTestRoutine() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Monthly test (5 min)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Run generator 5-10 minutes monthly.</li>
               <li>Check fuel.</li>
               <li>Listen for unusual sounds.</li>
@@ -33,7 +33,7 @@ export default function GeneratorTestRoutine() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annual service</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Oil change.</li>
               <li>Air filter check.</li>
               <li>Spark plug.</li>
@@ -48,7 +48,7 @@ export default function GeneratorTestRoutine() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fuel matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use stabilizer (Sta-bil) — gas spoils in 3 months.</li>
               <li>Or use ethanol-free gas.</li>
               <li>Drain gas before long storage.</li>
@@ -61,7 +61,7 @@ export default function GeneratorTestRoutine() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NEVER run inside garage / home (CO poisoning).</li>
               <li>20+ feet from house, doors, windows.</li>
               <li>Carbon monoxide detectors in home.</li>
@@ -75,7 +75,7 @@ export default function GeneratorTestRoutine() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Whole-home worth?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$5K-15K install + propane tank.</li>
               <li>Auto-starts when power out.</li>
               <li>Worth it: medical equipment, frequent outages, hot/cold climates.</li>
@@ -89,7 +89,7 @@ export default function GeneratorTestRoutine() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior priority</h3>
-            <p className="text-sm text-muted-foreground">If on oxygen, CPAP, or have refrigerated meds — generator critical. Talk to power company about medical priority restoration. Battery backup ($2K-5K) covers fridge + medical 24-48 hours. Cheaper than whole-home generator.</p>
+            <p className="text-base text-muted-foreground">If on oxygen, CPAP, or have refrigerated meds — generator critical. Talk to power company about medical priority restoration. Battery backup ($2K-5K) covers fridge + medical 24-48 hours. Cheaper than whole-home generator.</p>
           </CardContent>
         </Card>
       </main>

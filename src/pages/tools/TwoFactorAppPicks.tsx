@@ -40,7 +40,7 @@ export default function TwoFactorAppPicks() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,7 +56,7 @@ export default function TwoFactorAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup — first time</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install one app from the App Store / Play Store.</li>
               <li>Log into a website (Gmail, bank, Facebook).</li>
               <li>Go to Account → Security → "Two-Factor Authentication".</li>
@@ -71,7 +71,7 @@ export default function TwoFactorAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Accounts to enable 2FA on FIRST</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Email (Gmail, Outlook, Yahoo, iCloud) — most important. If hacker gets email, they can reset everything else.</li>
               <li>Bank and brokerage accounts.</li>
               <li>Apple ID / Google Account / Microsoft Account.</li>
@@ -84,7 +84,7 @@ export default function TwoFactorAppPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save the backup codes</h3>
-            <p className="text-sm text-muted-foreground">When you set up 2FA, the site gives you 10 backup codes. Print them. Put with your will or in a safe. If you lose your phone, these get you back into accounts. Without them — recovery is painful.</p>
+            <p className="text-base text-muted-foreground">When you set up 2FA, the site gives you 10 backup codes. Print them. Put with your will or in a safe. If you lose your phone, these get you back into accounts. Without them — recovery is painful.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function ChronicPainManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Beyond meds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Physical therapy</strong> — proven, Medicare covered.</li>
               <li><strong>Acupuncture</strong> — some Medicare coverage 2020+.</li>
               <li><strong>Tai Chi</strong> — proven for arthritis.</li>
@@ -35,7 +35,7 @@ export default function ChronicPainManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medication options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tylenol</strong> — first try. Safe under 3g/day.</li>
               <li><strong>NSAIDs</strong> — Advil, Aleve. Watch stomach + kidneys.</li>
               <li><strong>Topical NSAIDs</strong> — Voltaren gel. Fewer side effects.</li>
@@ -50,7 +50,7 @@ export default function ChronicPainManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid these in seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Long-term opioids (addictive, falls).</li>
               <li>Benzodiazepines (confusion, falls).</li>
               <li>Muscle relaxants (drowsy).</li>
@@ -64,7 +64,7 @@ export default function ChronicPainManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lifestyle helps most</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Movement — counterintuitive but helps.</li>
               <li>Anti-inflammatory diet.</li>
               <li>Lose 5-10 lbs = 4x less knee pressure.</li>
@@ -79,7 +79,7 @@ export default function ChronicPainManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to see specialist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pain &gt; 3 months.</li>
               <li>Limiting daily activities.</li>
               <li>Multiple meds not working.</li>
@@ -93,7 +93,7 @@ export default function ChronicPainManagement() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>Arthritis Foundation</strong> — free pain courses. <strong>Walk With Ease</strong> — proven. <strong>Pain Management apps</strong> — Curable, MyPainDiary. <strong>Stanford Self-Management</strong> — chronic disease courses. Living with pain doesn&apos;t mean accepting suffering. Manageable.</p>
+            <p className="text-base text-muted-foreground"><strong>Arthritis Foundation</strong> — free pain courses. <strong>Walk With Ease</strong> — proven. <strong>Pain Management apps</strong> — Curable, MyPainDiary. <strong>Stanford Self-Management</strong> — chronic disease courses. Living with pain doesn&apos;t mean accepting suffering. Manageable.</p>
           </CardContent>
         </Card>
       </main>

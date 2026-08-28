@@ -19,7 +19,7 @@ export default function DoctorVisitPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Day before — write 3 things</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Top concern</strong> — the ONE thing you most want addressed.</li>
               <li><strong>Symptoms list</strong> — when started, frequency, what makes worse/better.</li>
               <li><strong>Questions</strong> — top 3 (any more, doctor will skip).</li>
@@ -31,7 +31,7 @@ export default function DoctorVisitPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bring</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Updated medication list (with doses, all OTC + supplements). See /tools/med-reconciliation.</li>
               <li>Recent BP / blood sugar logs if applicable.</li>
               <li>Symptom journal — dates + descriptions.</li>
@@ -48,7 +48,7 @@ export default function DoctorVisitPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">In the visit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>State your top concern FIRST. (Don&apos;t save it for end.)</li>
               <li>Be specific — "sharp pain in left knee, started 3 weeks ago, worse going downstairs".</li>
               <li>Ask: "What&apos;s your best guess?" + "What else could it be?"</li>
@@ -64,7 +64,7 @@ export default function DoctorVisitPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tools that help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Voice memo</strong> — record visit (ASK doctor first; some allow).</li>
               <li><strong>Patient portal</strong> — visit summary appears 24-48 hours after.</li>
               <li><strong>Apple Health Medications</strong> — share with doctor via QR code.</li>
@@ -77,7 +77,7 @@ export default function DoctorVisitPrep() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t leave confused</h3>
-            <p className="text-sm text-muted-foreground">If you didn&apos;t understand something — tell doctor. They will explain again. Patients who leave confused make worse decisions. 90 extra seconds at the desk saves a follow-up visit + better outcomes.</p>
+            <p className="text-base text-muted-foreground">If you didn&apos;t understand something — tell doctor. They will explain again. Patients who leave confused make worse decisions. 90 extra seconds at the desk saves a follow-up visit + better outcomes.</p>
           </CardContent>
         </Card>
       </main>

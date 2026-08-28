@@ -466,7 +466,7 @@ export default function AccessibilityProfileBuilder() {
                       </Button>
                       <Badge variant="secondary">Sample badge</Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       Smaller supporting text looks like this.
                     </p>
                   </div>

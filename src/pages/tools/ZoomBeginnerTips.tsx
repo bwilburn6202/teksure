@@ -19,7 +19,7 @@ export default function ZoomBeginnerTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup before first call</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Download Zoom app on phone OR computer.</li>
               <li>Sign up with email + password (free).</li>
               <li>Test camera + mic in app settings.</li>
@@ -32,7 +32,7 @@ export default function ZoomBeginnerTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Joining a meeting</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Click meeting link in email OR open Zoom app + enter Meeting ID.</li>
               <li>Click "Join with Computer Audio" (very important).</li>
               <li>Click camera icon to turn ON video.</li>
@@ -45,7 +45,7 @@ export default function ZoomBeginnerTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common problems</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Can&apos;t hear anything"</strong> — click computer audio button. Check volume up.</li>
               <li><strong>"They can&apos;t hear me"</strong> — check mic icon (should be black, not red).</li>
               <li><strong>"Video upside down"</strong> — Settings → Video → flip.</li>
@@ -58,7 +58,7 @@ export default function ZoomBeginnerTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wired headphones improve audio.</li>
               <li>Phone propped up at eye level (not lap).</li>
               <li>Lighting on FACE, not behind.</li>
@@ -72,7 +72,7 @@ export default function ZoomBeginnerTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Practice with grandkid</h3>
-            <p className="text-sm text-muted-foreground">Best practice: ask grandkid for a 15-min Zoom test. They show you tricks. You show them the buttons you&apos;ve mastered. Builds confidence + connection. Better than YouTube tutorial.</p>
+            <p className="text-base text-muted-foreground">Best practice: ask grandkid for a 15-min Zoom test. They show you tricks. You show them the buttons you&apos;ve mastered. Builds confidence + connection. Better than YouTube tutorial.</p>
           </CardContent>
         </Card>
       </main>

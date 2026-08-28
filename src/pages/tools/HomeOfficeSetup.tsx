@@ -442,7 +442,7 @@ export default function HomeOfficeSetup() {
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
               <p className="font-semibold mb-2">A note on cables and outlets</p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Add a $25 surge protector with USB ports — protects all this gear from a power surge during a storm and gives you spots to charge a phone or tablet without crawling under the desk. Belkin and APC are the brands to look for.
               </p>
             </CardContent>

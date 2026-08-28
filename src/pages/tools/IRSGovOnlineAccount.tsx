@@ -19,7 +19,7 @@ export default function IRSGovOnlineAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can do</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>View tax records + balance.</li>
               <li>Make payments.</li>
               <li>Set up payment plan.</li>
@@ -33,7 +33,7 @@ export default function IRSGovOnlineAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup process</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to IRS.gov.</li>
               <li>Click &quot;Sign In to Your Account.&quot;</li>
               <li>Verify identity through ID.me.</li>
@@ -47,7 +47,7 @@ export default function IRSGovOnlineAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get transcripts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Often required for mortgage applications.</li>
               <li>For Medicare/Medicaid applications.</li>
               <li>Replace lost W-2s + 1099s.</li>
@@ -61,7 +61,7 @@ export default function IRSGovOnlineAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Payment plan</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If you owe taxes you can&apos;t pay.</li>
               <li>Set up online payment plan.</li>
               <li>Short-term (120 days) — no fee.</li>
@@ -75,7 +75,7 @@ export default function IRSGovOnlineAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch for IRS scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>IRS NEVER calls demanding payment.</li>
               <li>NEVER threatens arrest.</li>
               <li>NEVER asks for gift cards.</li>
@@ -89,7 +89,7 @@ export default function IRSGovOnlineAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you receive IRS letter</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t panic.</li>
               <li>Read carefully.</li>
               <li>Login to IRS.gov to verify.</li>
@@ -103,7 +103,7 @@ export default function IRSGovOnlineAccount() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Set up account now</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t wait until you need it. Set up your IRS online account in low-stress times. Spend 30 minutes verifying identity through ID.me. Once active, you can access tax info anytime. Lost W-2s, transcript needs for mortgage, payment questions — all immediate access. Saves months of mail back-and-forth with IRS.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t wait until you need it. Set up your IRS online account in low-stress times. Spend 30 minutes verifying identity through ID.me. Once active, you can access tax info anytime. Lost W-2s, transcript needs for mortgage, payment questions — all immediate access. Saves months of mail back-and-forth with IRS.</p>
           </CardContent>
         </Card>
       </main>

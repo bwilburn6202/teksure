@@ -33,7 +33,7 @@ export default function SmartThermostatPicks() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SmartThermostatPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why upgrade</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Auto-adjusts when away — saves money.</li>
               <li>Schedule different temps for sleep, away, home.</li>
               <li>Voice control — "Alexa, set thermostat to 72."</li>
@@ -56,7 +56,7 @@ export default function SmartThermostatPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Utility rebates</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most US utilities offer $50-100 rebates for smart thermostats.</li>
               <li>Some give them FREE if you sign up for demand-response programs.</li>
               <li>Search "[your utility] smart thermostat rebate".</li>
@@ -68,7 +68,7 @@ export default function SmartThermostatPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY install (30 min)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Turn off HVAC at breaker.</li>
               <li>Photo your existing wires (back of old thermostat).</li>
               <li>Remove old thermostat.</li>
@@ -84,7 +84,7 @@ export default function SmartThermostatPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No "C-wire"?</h3>
-            <p className="text-sm text-muted-foreground">Some smart thermostats need a "common wire" (C-wire). Check what you have first. Nest works without one. Ecobee includes a "PEK" adapter to add one. Honeywell C-wire kit is $35-50.</p>
+            <p className="text-base text-muted-foreground">Some smart thermostats need a "common wire" (C-wire). Check what you have first. Nest works without one. Ecobee includes a "PEK" adapter to add one. Honeywell C-wire kit is $35-50.</p>
           </CardContent>
         </Card>
       </main>

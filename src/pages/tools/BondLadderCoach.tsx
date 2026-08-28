@@ -27,7 +27,7 @@ export default function BondLadderCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why use one</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Predictable income</strong> — known cash on known dates.</li>
               <li><strong>Reduces interest-rate risk</strong> — some rungs renew at higher rates if rates rise.</li>
               <li><strong>No need to time the market</strong>.</li>
@@ -39,7 +39,7 @@ export default function BondLadderCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Building one — easiest path</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Decide how many years of expenses you want laddered (often 5-10).</li>
               <li>Pick the type:
                 <ul className="list-disc pl-5 mt-1 text-muted-foreground">
@@ -58,7 +58,7 @@ export default function BondLadderCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to buy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fidelity, Schwab, Vanguard</strong> — all have bond / CD ladder tools right in their platforms. Often most efficient.</li>
               <li><strong>TreasuryDirect.gov</strong> — direct from the US government. No fees but a separate account.</li>
               <li><strong>Your bank</strong> — for CD ladders. Usually higher rates online (Ally, Marcus).</li>
@@ -81,7 +81,7 @@ export default function BondLadderCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">For a $200,000 ladder over 5 years, buy $40,000 each in Treasury bonds maturing in 2026, 2027, 2028, 2029, 2030. Yields 4-5% currently. Backed by US government. Predictable retirement income.</p>
+            <p className="text-base text-muted-foreground">For a $200,000 ladder over 5 years, buy $40,000 each in Treasury bonds maturing in 2026, 2027, 2028, 2029, 2030. Yields 4-5% currently. Backed by US government. Predictable retirement income.</p>
           </CardContent>
         </Card>
       </main>

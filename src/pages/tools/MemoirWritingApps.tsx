@@ -34,7 +34,7 @@ export default function MemoirWritingApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function MemoirWritingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">StoryWorth (most popular)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Family member buys subscription as gift.</li>
               <li>Each week, you receive a prompt by email — "Tell me about your wedding day."</li>
               <li>Write OR voice-record your answer. Add photos.</li>
@@ -57,7 +57,7 @@ export default function MemoirWritingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY prompts (free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Earliest memory.</li>
               <li>How parents met.</li>
               <li>Favorite teacher / mentor.</li>
@@ -76,7 +76,7 @@ export default function MemoirWritingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice-recorded life stories</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Voice Memos (iPhone)</strong> — built-in. Record, save.</li>
               <li><strong>Otter.ai</strong> — records + auto-transcribes voice to text. Free for 5 hours.</li>
               <li><strong>StoryCorps app</strong> — free. Interview a loved one, archive in Library of Congress.</li>
@@ -88,7 +88,7 @@ export default function MemoirWritingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">The biggest gift</h3>
-            <p className="text-sm text-muted-foreground">After a parent&apos;s death, families regret not having more stories. Photos, recipes, voice recordings — these become priceless. Spend 30 min/week. Future grandkids will thank you.</p>
+            <p className="text-base text-muted-foreground">After a parent&apos;s death, families regret not having more stories. Photos, recipes, voice recordings — these become priceless. Spend 30 min/week. Future grandkids will thank you.</p>
           </CardContent>
         </Card>
       </main>

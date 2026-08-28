@@ -19,7 +19,7 @@ export default function HarmonicaForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why harmonica?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pocket-size — anywhere.</li>
               <li>$30-50 = good harmonica.</li>
               <li>Lung exercise — proven for COPD.</li>
@@ -33,7 +33,7 @@ export default function HarmonicaForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best beginner</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hohner Special 20</strong> ($45) — gold standard.</li>
               <li><strong>Lee Oskar Major Diatonic</strong> ($45).</li>
               <li><strong>Suzuki Harpmaster</strong> ($35).</li>
@@ -47,7 +47,7 @@ export default function HarmonicaForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First steps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hold loosely between thumb + finger.</li>
               <li>Mouth wide enough for 3 holes.</li>
               <li>Blow gently (not hard).</li>
@@ -61,7 +61,7 @@ export default function HarmonicaForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Learn online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>JP Allen</strong> — YouTube + free course.</li>
               <li><strong>Tomlin Leckie</strong> — YouTube blues.</li>
               <li><strong>Mickey Raphael</strong> — Willie Nelson&apos;s harmonica player.</li>
@@ -75,7 +75,7 @@ export default function HarmonicaForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First easy songs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mary Had a Little Lamb.</li>
               <li>When the Saints Go Marching In.</li>
               <li>You Are My Sunshine.</li>
@@ -89,7 +89,7 @@ export default function HarmonicaForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Strengthens diaphragm.</li>
               <li>Studies — improves COPD breathing.</li>
               <li>Lung capacity increased.</li>
@@ -103,7 +103,7 @@ export default function HarmonicaForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior bands</h3>
-            <p className="text-sm text-muted-foreground">Lots of senior centers + churches have country / bluegrass jams. Bring harmonica — join in. Folks happy to play with you. Don&apos;t need to read music. 30 days = playing songs. 90 days = playing along. Make friends through music. Lifetime hobby.</p>
+            <p className="text-base text-muted-foreground">Lots of senior centers + churches have country / bluegrass jams. Bring harmonica — join in. Folks happy to play with you. Don&apos;t need to read music. 30 days = playing songs. 90 days = playing along. Make friends through music. Lifetime hobby.</p>
           </CardContent>
         </Card>
       </main>

@@ -42,7 +42,7 @@ export default function EmailSecurityCheck() {
             <div className="space-y-3">{CHECKS.map(c => { const yes = answers[c.id]; const isGood = c.yesIsGood ? yes : !yes; return (
               <div key={c.id} className={`rounded-lg p-4 border ${isGood ? 'bg-green-500/5 border-green-500/20' : 'bg-red-500/5 border-red-500/20'}`}>
                 <div className="flex items-center gap-2 mb-1">{isGood ? <CheckCircle className="h-4 w-4 text-green-500" /> : <AlertTriangle className="h-4 w-4 text-red-500" />}<span className="font-medium text-sm">{c.question.split('?')[0].split('(')[0].trim()}</span></div>
-                <p className="text-sm text-muted-foreground">{isGood ? c.goodAdvice : c.badAdvice}</p>
+                <p className="text-base text-muted-foreground">{isGood ? c.goodAdvice : c.badAdvice}</p>
                 {!isGood && c.link && <a href={c.link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-primary font-medium mt-2 hover:underline">{c.link.label} <ExternalLink className="h-3 w-3" /></a>}
               </div>
             ); })}</div>

@@ -19,7 +19,7 @@ export default function BankOfAmericaAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Bank of America Mobile from app store.</li>
               <li>Sign in with online banking credentials.</li>
               <li>Enable biometric login (Face ID / fingerprint).</li>
@@ -33,7 +33,7 @@ export default function BankOfAmericaAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Erica — virtual assistant</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap Erica icon in app.</li>
               <li>Ask: &quot;What&apos;s my balance?&quot;</li>
               <li>&quot;When did I last pay electric bill?&quot;</li>
@@ -47,7 +47,7 @@ export default function BankOfAmericaAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mobile check deposit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap &quot;Deposit Checks.&quot;</li>
               <li>Endorse check + write &quot;For Mobile Deposit Only.&quot;</li>
               <li>Photograph front and back.</li>
@@ -61,7 +61,7 @@ export default function BankOfAmericaAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bill pay</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pay credit cards, utilities, mortgages.</li>
               <li>Schedule recurring payments.</li>
               <li>Set autopay reminders.</li>
@@ -75,7 +75,7 @@ export default function BankOfAmericaAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Travel notice + card lock</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Travel notice — tell bank you&apos;ll be away.</li>
               <li>Prevents declined cards in hotels/restaurants.</li>
               <li>Card lock — instantly disable lost/stolen card.</li>
@@ -89,7 +89,7 @@ export default function BankOfAmericaAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior security tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Enable 2-step verification.</li>
               <li>Set up text alerts for ALL transactions over $100.</li>
               <li>Use app biometric login — not password each time.</li>
@@ -103,7 +103,7 @@ export default function BankOfAmericaAppGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Erica saves customer service calls</h3>
-            <p className="text-sm text-muted-foreground">Most senior questions about banking — &quot;what&apos;s my balance?&quot; &quot;when did social security deposit?&quot; — Erica answers instantly without holding on customer service. Just type or speak the question. Combined with mobile deposit and bill pay, the BofA app eliminates 90% of in-person banking visits. Set up account alerts as your fraud-detection system.</p>
+            <p className="text-base text-muted-foreground">Most senior questions about banking — &quot;what&apos;s my balance?&quot; &quot;when did social security deposit?&quot; — Erica answers instantly without holding on customer service. Just type or speak the question. Combined with mobile deposit and bill pay, the BofA app eliminates 90% of in-person banking visits. Set up account alerts as your fraud-detection system.</p>
           </CardContent>
         </Card>
       </main>

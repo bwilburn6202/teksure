@@ -40,7 +40,7 @@ export default function PhoneHotspotHelper() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone Personal Hotspot</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open <strong>Settings</strong>.</li>
                 <li>Tap <strong>Personal Hotspot</strong> near the top.</li>
                 <li>Turn on <strong>"Allow Others to Join"</strong>.</li>
@@ -58,7 +58,7 @@ export default function PhoneHotspotHelper() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android Hotspot</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open <strong>Settings</strong>.</li>
                 <li>Tap <strong>Network & internet</strong> (or <strong>Connections</strong> on Samsung).</li>
                 <li>Tap <strong>Hotspot & tethering</strong> → <strong>Wi-Fi hotspot</strong>.</li>
@@ -91,7 +91,7 @@ export default function PhoneHotspotHelper() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Battery tip</h3>
-            <p className="text-sm text-muted-foreground">Hotspot drains the phone fast. Plug your phone into a charger (or a battery pack) while using it. Turn the hotspot off when you're done.</p>
+            <p className="text-base text-muted-foreground">Hotspot drains the phone fast. Plug your phone into a charger (or a battery pack) while using it. Turn the hotspot off when you're done.</p>
           </CardContent>
         </Card>
       </main>

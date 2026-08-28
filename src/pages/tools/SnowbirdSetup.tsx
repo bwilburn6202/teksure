@@ -19,7 +19,7 @@ export default function SnowbirdSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mail forwarding</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>USPS Premium Forwarding — weekly box of mail. ~$25/wk.</li>
               <li>USPS regular forwarding — free, 12 months max.</li>
               <li>Switch to e-statements before leaving.</li>
@@ -32,7 +32,7 @@ export default function SnowbirdSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medicare + healthcare</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Original Medicare works nationwide.</li>
               <li>Medicare Advantage often LOCAL ONLY — check network in winter state.</li>
               <li>Get records on patient portal before leaving.</li>
@@ -46,7 +46,7 @@ export default function SnowbirdSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Taxes + residency</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Florida, Texas, Tennessee = no state income tax.</li>
               <li>183-day rule — over half year = resident in that state.</li>
               <li>Keep voter registration, driver&apos;s license consistent.</li>
@@ -59,7 +59,7 @@ export default function SnowbirdSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Empty home checklist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smart thermostat + leak detectors (Nest, Govee).</li>
               <li>Smart cameras (Ring, Wyze) — check from south.</li>
               <li>Drain pipes if very cold — or set heat to 55°F.</li>
@@ -74,7 +74,7 @@ export default function SnowbirdSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tech setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Same cell carrier works both states.</li>
               <li>Internet — pause northern service or keep for security cameras.</li>
               <li>Streaming services follow you (Netflix, Hulu nationwide).</li>
@@ -87,7 +87,7 @@ export default function SnowbirdSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best snowbird states</h3>
-            <p className="text-sm text-muted-foreground"><strong>Florida</strong> — most snowbirds. No state tax. <strong>Arizona</strong> — dry heat, golf. <strong>Texas</strong> — Hill Country, Gulf. <strong>South Carolina</strong> — beaches, mild. <strong>Mexico (Lake Chapala, Puerto Vallarta)</strong> — cheaper, growing senior community.</p>
+            <p className="text-base text-muted-foreground"><strong>Florida</strong> — most snowbirds. No state tax. <strong>Arizona</strong> — dry heat, golf. <strong>Texas</strong> — Hill Country, Gulf. <strong>South Carolina</strong> — beaches, mild. <strong>Mexico (Lake Chapala, Puerto Vallarta)</strong> — cheaper, growing senior community.</p>
           </CardContent>
         </Card>
       </main>

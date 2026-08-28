@@ -19,7 +19,7 @@ export default function AppleNewsPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you get</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$12.99/month subscription.</li>
               <li>300+ magazines (Time, People, Vogue, etc.).</li>
               <li>Major newspapers (LA Times, WSJ partial).</li>
@@ -33,7 +33,7 @@ export default function AppleNewsPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best magazines for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>National Geographic — beautiful photography.</li>
               <li>Smithsonian — history + culture.</li>
               <li>The Atlantic — long-form essays.</li>
@@ -47,7 +47,7 @@ export default function AppleNewsPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior reading features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adjustable text size.</li>
               <li>Listen to articles aloud.</li>
               <li>Save for later.</li>
@@ -61,7 +61,7 @@ export default function AppleNewsPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple One bundle</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple One Premier — $37.95/month.</li>
               <li>Includes News+, Music, TV+, Arcade, iCloud.</li>
               <li>5-person family plan.</li>
@@ -75,7 +75,7 @@ export default function AppleNewsPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Library Libby app — magazines free.</li>
               <li>Many magazines free in print at libraries.</li>
               <li>Google News — free aggregator.</li>
@@ -89,7 +89,7 @@ export default function AppleNewsPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Worth it?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heavy magazine reader: yes.</li>
               <li>Already pay for 2+ magazine subscriptions: yes.</li>
               <li>Casual reader: probably not.</li>
@@ -103,7 +103,7 @@ export default function AppleNewsPlusReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try Library Libby first</h3>
-            <p className="text-sm text-muted-foreground">Before paying for Apple News+, get a library card and download Libby. Many libraries offer most popular magazines free through Libby. National Geographic, People, Time, Better Homes — all available free with library card. If your library&apos;s collection is limited, then Apple News+ is worth considering. Most senior readers find free options sufficient.</p>
+            <p className="text-base text-muted-foreground">Before paying for Apple News+, get a library card and download Libby. Many libraries offer most popular magazines free through Libby. National Geographic, People, Time, Better Homes — all available free with library card. If your library&apos;s collection is limited, then Apple News+ is worth considering. Most senior readers find free options sufficient.</p>
           </CardContent>
         </Card>
       </main>

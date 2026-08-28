@@ -19,7 +19,7 @@ export default function StylusForSeniorTablets() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why a stylus?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Easier than precise finger taps.</li>
               <li>Better for shaky or arthritic hands.</li>
               <li>Hit small buttons accurately.</li>
@@ -33,7 +33,7 @@ export default function StylusForSeniorTablets() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Pencil (iPad)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Pencil 2 — $129, charges magnetically on side.</li>
               <li>Apple Pencil USB-C — $79, basic functionality.</li>
               <li>Pressure-sensitive — varies line thickness.</li>
@@ -47,7 +47,7 @@ export default function StylusForSeniorTablets() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheaper options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Logitech Crayon — $70, no pressure sensitivity but works great.</li>
               <li>Adonit Note+ — $70, iPad-compatible.</li>
               <li>Generic capacitive stylus — $10–$20.</li>
@@ -61,7 +61,7 @@ export default function StylusForSeniorTablets() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Samsung S Pen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Comes free with Samsung Galaxy Tab S series.</li>
               <li>Comes free with Galaxy Note phones.</li>
               <li>Excellent palm rejection.</li>
@@ -75,7 +75,7 @@ export default function StylusForSeniorTablets() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for best use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hold like a regular pen.</li>
               <li>Tablet must be capacitive (modern iPads + Androids).</li>
               <li>Doesn&apos;t need to press hard — gentle touch works.</li>
@@ -89,7 +89,7 @@ export default function StylusForSeniorTablets() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best note-taking apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Notes — free, simple.</li>
               <li>Notability — popular, $14.99/year.</li>
               <li>GoodNotes 6 — premium, $9.99/year.</li>
@@ -103,7 +103,7 @@ export default function StylusForSeniorTablets() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">$15 cheap stylus is enough for most</h3>
-            <p className="text-sm text-muted-foreground">If you just want easier tapping for seniors with arthritis, a $15 generic capacitive stylus from Amazon works perfectly. The expensive Apple Pencil is only worth it if you specifically want to draw or take handwritten notes. For senior accessibility, the cheap option fixes 90% of the problem.</p>
+            <p className="text-base text-muted-foreground">If you just want easier tapping for seniors with arthritis, a $15 generic capacitive stylus from Amazon works perfectly. The expensive Apple Pencil is only worth it if you specifically want to draw or take handwritten notes. For senior accessibility, the cheap option fixes 90% of the problem.</p>
           </CardContent>
         </Card>
       </main>

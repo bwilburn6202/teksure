@@ -852,7 +852,7 @@ export default function FreeLearningHub() {
                   <CheckCircle2 className="h-5 w-5" aria-hidden="true" />
                   Auditing (free)
                 </h4>
-                <ul className="space-y-2 text-sm text-green-900/90 dark:text-green-100/90">
+                <ul className="space-y-2 text-base text-green-900/90 dark:text-green-100/90">
                   <li>Watch all the lectures</li>
                   <li>Read all the readings</li>
                   <li>Follow along at your own pace</li>
@@ -865,7 +865,7 @@ export default function FreeLearningHub() {
                   <AlertTriangle className="h-5 w-5" aria-hidden="true" />
                   Paid certificate track
                 </h4>
-                <ul className="space-y-2 text-sm text-amber-900/90 dark:text-amber-100/90">
+                <ul className="space-y-2 text-base text-amber-900/90 dark:text-amber-100/90">
                   <li>Includes graded assignments and quizzes</li>
                   <li>A piece of paper with the school name</li>
                   <li>$50 to $300 per course on average</li>
@@ -1024,25 +1024,25 @@ export default function FreeLearningHub() {
                 <Link to="/tools/free-resource-hub" className="text-base font-semibold text-primary hover:underline inline-flex items-center gap-1.5">
                   Free Resource Hub
                 </Link>
-                <p className="text-sm text-muted-foreground">Free tech programs, devices, and internet for seniors and low-income households.</p>
+                <p className="text-base text-muted-foreground">Free tech programs, devices, and internet for seniors and low-income households.</p>
               </li>
               <li>
                 <Link to="/tools/library-tech-helper" className="text-base font-semibold text-primary hover:underline inline-flex items-center gap-1.5">
                   Library Tech Helper
                 </Link>
-                <p className="text-sm text-muted-foreground">Everything a library card gets you — free streaming, audiobooks, classes, newspapers.</p>
+                <p className="text-base text-muted-foreground">Everything a library card gets you — free streaming, audiobooks, classes, newspapers.</p>
               </li>
               <li>
                 <Link to="/tools/low-vision-tech-hub" className="text-base font-semibold text-primary hover:underline inline-flex items-center gap-1.5">
                   Low Vision Tech Hub
                 </Link>
-                <p className="text-sm text-muted-foreground">Make any device easier on your eyes — bigger text, better contrast, screen readers.</p>
+                <p className="text-base text-muted-foreground">Make any device easier on your eyes — bigger text, better contrast, screen readers.</p>
               </li>
               <li>
                 <Link to="/guides?category=education" className="text-base font-semibold text-primary hover:underline inline-flex items-center gap-1.5">
                   Education guides
                 </Link>
-                <p className="text-sm text-muted-foreground">Step-by-step TekSure guides for learning online.</p>
+                <p className="text-base text-muted-foreground">Step-by-step TekSure guides for learning online.</p>
               </li>
             </ul>
           </CardContent>

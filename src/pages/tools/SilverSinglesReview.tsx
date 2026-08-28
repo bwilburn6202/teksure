@@ -19,7 +19,7 @@ export default function SilverSinglesReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What makes it different</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Personality test-based matching.</li>
               <li>Higher quality profiles than OurTime.</li>
               <li>50+ only, no younger users.</li>
@@ -33,7 +33,7 @@ export default function SilverSinglesReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Premium: $24/month (3-month).</li>
               <li>$60/month (1-month).</li>
               <li>Free profile + view matches.</li>
@@ -47,7 +47,7 @@ export default function SilverSinglesReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Personality test</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30-minute questionnaire on signup.</li>
               <li>Personality + values questions.</li>
               <li>Algorithm matches you with compatibles.</li>
@@ -61,7 +61,7 @@ export default function SilverSinglesReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Profile tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Take personality test honestly.</li>
               <li>Quality photos — clear face.</li>
               <li>Detailed profile descriptions.</li>
@@ -75,7 +75,7 @@ export default function SilverSinglesReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for these seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Looking for serious relationship.</li>
               <li>Want quality over quantity.</li>
               <li>Educated/professional crowd.</li>
@@ -89,7 +89,7 @@ export default function SilverSinglesReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">vs OurTime</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SilverSingles — fewer but higher quality.</li>
               <li>OurTime — more users to choose from.</li>
               <li>SilverSingles — better personality matching.</li>
@@ -103,7 +103,7 @@ export default function SilverSinglesReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth premium pricing</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re serious about finding a long-term partner and OurTime didn&apos;t work, SilverSingles&apos; premium pricing filters out casual daters and scammers. The personality test takes 30 minutes but produces better matches. Many senior couples meet here. Worth the investment for those committed to finding a meaningful relationship in their later years.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re serious about finding a long-term partner and OurTime didn&apos;t work, SilverSingles&apos; premium pricing filters out casual daters and scammers. The personality test takes 30 minutes but produces better matches. Many senior couples meet here. Worth the investment for those committed to finding a meaningful relationship in their later years.</p>
           </CardContent>
         </Card>
       </main>

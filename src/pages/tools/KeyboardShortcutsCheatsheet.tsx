@@ -99,7 +99,7 @@ export default function KeyboardShortcutsCheatsheet() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best way to learn</h3>
-            <p className="text-sm text-muted-foreground">Pick ONE shortcut a week. Use it every chance. Once it\'s automatic, learn the next. After 10 weeks, you\'ll be twice as fast at the computer.</p>
+            <p className="text-base text-muted-foreground">Pick ONE shortcut a week. Use it every chance. Once it\'s automatic, learn the next. After 10 weeks, you\'ll be twice as fast at the computer.</p>
           </CardContent>
         </Card>
       </main>

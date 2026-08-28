@@ -19,7 +19,7 @@ export default function HairCareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mature hair changes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drier — less oil production.</li>
               <li>Thinner — fewer follicles.</li>
               <li>Gray — pigment cells decline.</li>
@@ -33,7 +33,7 @@ export default function HairCareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hydration first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wash less often — every 2-3 days.</li>
               <li>Sulfate-free shampoo.</li>
               <li>Deep conditioner weekly.</li>
@@ -47,7 +47,7 @@ export default function HairCareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Thinning hair</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>See doctor about cause.</li>
               <li>Thyroid, iron deficiency common.</li>
               <li>Minoxidil 5% (Rogaine) — works.</li>
@@ -61,7 +61,7 @@ export default function HairCareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Gray hair embrace</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Silver shampoo (Klorane) prevents yellowing.</li>
               <li>Show off natural — popular trend.</li>
               <li>Stop dyeing = healthier hair.</li>
@@ -75,7 +75,7 @@ export default function HairCareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best senior cuts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lob</strong> — long bob, easy.</li>
               <li><strong>Pixie</strong> — short, low-maintenance.</li>
               <li><strong>Layered shoulder length</strong>.</li>
@@ -89,7 +89,7 @@ export default function HairCareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior money-savers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Beauty schools cut for $20.</li>
               <li>Blow-dry training for free.</li>
               <li>Costco hair products.</li>
@@ -103,7 +103,7 @@ export default function HairCareForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Diet + hair</h3>
-            <p className="text-sm text-muted-foreground">Hair grows from what you eat. Protein — eggs, salmon, beans. Iron — leafy greens, beef. Biotin — eggs, nuts. Vitamin D — sun, supplement. Omega-3 — fish oil. Stress reduction. 7-8 hours sleep. Hair changes signal health changes — listen to your body.</p>
+            <p className="text-base text-muted-foreground">Hair grows from what you eat. Protein — eggs, salmon, beans. Iron — leafy greens, beef. Biotin — eggs, nuts. Vitamin D — sun, supplement. Omega-3 — fish oil. Stress reduction. 7-8 hours sleep. Hair changes signal health changes — listen to your body.</p>
           </CardContent>
         </Card>
       </main>

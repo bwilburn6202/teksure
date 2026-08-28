@@ -120,7 +120,7 @@ export default function CountdownToRetirement() {
             <AlertDescription className="text-amber-900/80 dark:text-amber-200/80 text-sm">Real Medicare will never call out of the blue asking for your Social Security number, bank info, or a new card fee. During the months around your 65th birthday, scammers ramp up. If a caller pressures you, hang up and call 1-800-MEDICARE yourself. Report scams at ftc.gov/complaint.</AlertDescription>
           </Alert>
           <Card className="border-border shadow-sm mb-6"><CardContent className="p-5 flex items-center justify-between flex-wrap gap-3">
-            <p className="text-sm text-muted-foreground">{done.size} of {total} done</p>
+            <p className="text-base text-muted-foreground">{done.size} of {total} done</p>
             <Button onClick={printIt} variant="outline" size="sm" className="gap-2"><Printer className="h-4 w-4" /> Print the checklist</Button>
           </CardContent></Card>
           <Card className="border-border bg-muted/30 mb-6"><CardContent className="p-5">

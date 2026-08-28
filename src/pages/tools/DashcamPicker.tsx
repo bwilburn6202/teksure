@@ -33,7 +33,7 @@ export default function DashcamPicker() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function DashcamPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior need dashcam</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Proof of fault in accidents.</li>
               <li>Defends against staged accidents (target seniors).</li>
               <li>Insurance disputes resolved.</li>
@@ -56,7 +56,7 @@ export default function DashcamPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup easy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plug into 12V outlet (cigarette lighter).</li>
               <li>Stick to windshield (back of mirror).</li>
               <li>SD card included.</li>
@@ -71,7 +71,7 @@ export default function DashcamPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1080p minimum (4K nice but bigger files).</li>
               <li>GPS tracking.</li>
               <li>Auto-save on impact.</li>
@@ -85,7 +85,7 @@ export default function DashcamPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Install help</h3>
-            <p className="text-sm text-muted-foreground">Most DIY 30 min. If uncomfortable — Best Buy Geek Squad installs $50-100. Permanent install hides wires + uses constant power for parking mode. Worth it for protection.</p>
+            <p className="text-base text-muted-foreground">Most DIY 30 min. If uncomfortable — Best Buy Geek Squad installs $50-100. Permanent install hides wires + uses constant power for parking mode. Worth it for protection.</p>
           </CardContent>
         </Card>
       </main>

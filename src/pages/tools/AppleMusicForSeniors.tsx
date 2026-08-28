@@ -19,7 +19,7 @@ export default function AppleMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Apple Music?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>100M+ songs.</li>
               <li>Lossless audio quality.</li>
               <li>Lyrics with sing-along.</li>
@@ -33,7 +33,7 @@ export default function AppleMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pricing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Individual — $11/mo.</li>
               <li>Student — $6/mo.</li>
               <li>Family (6 ppl) — $17/mo.</li>
@@ -47,7 +47,7 @@ export default function AppleMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sign up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Music app on iPhone.</li>
               <li>Tap &quot;Try It Free&quot;.</li>
               <li>Or Settings &gt; Music &gt; Subscribe.</li>
@@ -61,7 +61,7 @@ export default function AppleMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Hey Siri, play Frank Sinatra&quot;.</li>
               <li>Auto-create playlists by mood.</li>
               <li>Lyrics on screen.</li>
@@ -75,7 +75,7 @@ export default function AppleMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior playlist ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Big Band classics.</li>
               <li>50s + 60s rock.</li>
               <li>Frank Sinatra essentials.</li>
@@ -90,7 +90,7 @@ export default function AppleMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Music alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Spotify</strong> — non-Apple users.</li>
               <li><strong>Amazon Music</strong> — Prime included.</li>
               <li><strong>YouTube Music</strong> — videos too.</li>
@@ -104,7 +104,7 @@ export default function AppleMusicForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Music + memory</h3>
-            <p className="text-sm text-muted-foreground">Music from teens-20s most powerful for memory. Play music from your youth daily — proven brain health benefit. Family sing-alongs. Apple Music Classical sub-section. Karaoke versions of favorites. Play during cooking, walking, gardening. Music = senior wellness foundation.</p>
+            <p className="text-base text-muted-foreground">Music from teens-20s most powerful for memory. Play music from your youth daily — proven brain health benefit. Family sing-alongs. Apple Music Classical sub-section. Karaoke versions of favorites. Play during cooking, walking, gardening. Music = senior wellness foundation.</p>
           </CardContent>
         </Card>
       </main>

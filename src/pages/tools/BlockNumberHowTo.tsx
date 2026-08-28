@@ -28,14 +28,14 @@ export default function BlockNumberHowTo() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone — block from a call</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm mb-4">
+              <ol className="list-decimal pl-5 space-y-2 text-base mb-4">
                 <li>Open Phone app → Recents.</li>
                 <li>Tap the (i) info circle next to the number.</li>
                 <li>Scroll down. Tap "Block this Caller".</li>
                 <li>Confirm. Done.</li>
               </ol>
               <h3 className="font-bold text-lg mb-3">iPhone — block from a text</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open the text. Tap the contact name/number at top.</li>
                 <li>Tap the (i) info button.</li>
                 <li>Tap "Block Caller". Confirm.</li>
@@ -48,14 +48,14 @@ export default function BlockNumberHowTo() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android — block from a call</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm mb-4">
+              <ol className="list-decimal pl-5 space-y-2 text-base mb-4">
                 <li>Open Phone app → Recents.</li>
                 <li>Tap and hold the number.</li>
                 <li>Tap "Block / report spam".</li>
                 <li>Confirm.</li>
               </ol>
               <h3 className="font-bold text-lg mb-3">Android — block from a text</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open Messages app. Open the conversation.</li>
                 <li>Tap three-dot menu (top right).</li>
                 <li>Tap "Block / report spam".</li>
@@ -68,7 +68,7 @@ export default function BlockNumberHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Block all unknown callers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone</strong> — Settings → Phone → "Silence Unknown Callers" ON.</li>
               <li><strong>Android</strong> — Phone app → three dots → Settings → "Caller ID &amp; spam" → "Filter spam calls" ON.</li>
               <li>Unknown calls go straight to voicemail. Real callers leave a message.</li>
@@ -79,7 +79,7 @@ export default function BlockNumberHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Carrier-level blocking (free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Verizon</strong> — Call Filter app (free).</li>
               <li><strong>AT&amp;T</strong> — ActiveArmor app (free).</li>
               <li><strong>T-Mobile</strong> — Scam Shield app (free).</li>
@@ -91,7 +91,7 @@ export default function BlockNumberHowTo() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t answer "yes"</h3>
-            <p className="text-sm text-muted-foreground">Scammers record you saying "yes" and use it to authorize charges. Best practice: don&apos;t say "yes" to a stranger asking "Can you hear me?". Just say "Who&apos;s calling?" or hang up.</p>
+            <p className="text-base text-muted-foreground">Scammers record you saying "yes" and use it to authorize charges. Best practice: don&apos;t say "yes" to a stranger asking "Can you hear me?". Just say "Who&apos;s calling?" or hang up.</p>
           </CardContent>
         </Card>
       </main>

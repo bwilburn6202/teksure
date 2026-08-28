@@ -27,7 +27,7 @@ export default function CarbonMonoxidePicks() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why every home needs one</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>400 CO deaths/year in US. Many preventable with a $30 alarm.</li>
               <li>Sources: gas furnace, water heater, fireplace, attached garage, generator, gas range.</li>
               <li>Symptoms — headache, dizziness, nausea — often mistaken for flu.</li>
@@ -45,7 +45,7 @@ export default function CarbonMonoxidePicks() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -54,7 +54,7 @@ export default function CarbonMonoxidePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to place</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One per floor.</li>
               <li>One outside each sleeping area.</li>
               <li>Within 10 feet of bedroom doors.</li>
@@ -69,7 +69,7 @@ export default function CarbonMonoxidePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If alarm sounds</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>GET OUT immediately. Take everyone + pets.</li>
               <li>Call 911 from outside.</li>
               <li>Don&apos;t go back until fire department clears.</li>
@@ -83,7 +83,7 @@ export default function CarbonMonoxidePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Prevent CO buildup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Annual furnace + chimney inspection ($100-300).</li>
               <li>Never run generator in attached garage — even with door open.</li>
               <li>Never use BBQ grill or camp stove indoors.</li>
@@ -97,7 +97,7 @@ export default function CarbonMonoxidePicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free for seniors</h3>
-            <p className="text-sm text-muted-foreground">Most fire departments give FREE smoke + CO alarms to seniors. Some install them too. Call your local non-emergency fire line. American Red Cross also runs "Sound the Alarm" — free installation events.</p>
+            <p className="text-base text-muted-foreground">Most fire departments give FREE smoke + CO alarms to seniors. Some install them too. Call your local non-emergency fire line. American Red Cross also runs "Sound the Alarm" — free installation events.</p>
           </CardContent>
         </Card>
       </main>

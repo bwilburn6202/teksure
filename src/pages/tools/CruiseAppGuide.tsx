@@ -19,7 +19,7 @@ export default function CruiseAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Major cruise line apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Royal Caribbean App</strong> — best app overall. Boarding pass, dining, shows, deck plans.</li>
               <li><strong>Carnival HUB</strong> — same idea. Free chat between family on board ($5/cruise).</li>
               <li><strong>Norwegian Cruise Line (NCL)</strong> — itinerary, dining, shows.</li>
@@ -33,7 +33,7 @@ export default function CruiseAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why download BEFORE you sail</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Onboard wifi is slow and expensive — downloads take forever.</li>
               <li>You need the app for boarding pass at port (most lines).</li>
               <li>Pre-book dining and shows — best slots fill before sailing.</li>
@@ -59,7 +59,7 @@ export default function CruiseAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Phone settings before boarding</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Turn ON Airplane Mode.</li>
               <li>Turn wifi BACK ON (still works on ship).</li>
               <li>This avoids cellular roaming charges (often $10/MB at sea).</li>
@@ -72,7 +72,7 @@ export default function CruiseAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for first-time cruisers (60+)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pre-book 2 specialty restaurants on day 1 — best windows fill fast.</li>
               <li>Download deck plans before sailing — confusing ships are confusing.</li>
               <li>Get medallion / cruise card at port — keys to room, ID, charge card.</li>
@@ -86,7 +86,7 @@ export default function CruiseAppGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Costco Travel cruises</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re a Costco member, book your cruise through Costco Travel. Same price as the cruise line, plus Costco gives a $50-300 cash card per cabin AND on-board credit. Members report saving 5-10% per booking. No extra cost.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re a Costco member, book your cruise through Costco Travel. Same price as the cruise line, plus Costco gives a $50-300 cash card per cabin AND on-board credit. Members report saving 5-10% per booking. No extra cost.</p>
           </CardContent>
         </Card>
       </main>

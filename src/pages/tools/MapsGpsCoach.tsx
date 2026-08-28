@@ -19,7 +19,7 @@ export default function MapsGpsCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Which app to use?</h2>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-base">
               <li><strong>Apple Maps</strong> — built into iPhone, very good now (was bad years ago). Cleaner look. Best if you're in the Apple world.</li>
               <li><strong>Google Maps</strong> — most accurate everywhere. Best business hours, best reviews. Works on iPhone too.</li>
               <li><strong>Waze</strong> — best for daily commutes — finds the fastest route around traffic, accidents, police, road closures. Owned by Google.</li>
@@ -85,7 +85,7 @@ export default function MapsGpsCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Helpful tricks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Avoid highways</strong> — in the navigation menu, toggle this on to scenic-route a drive.</li>
               <li><strong>Avoid tolls</strong> — same menu. Saves $5-30 on long drives.</li>
               <li><strong>Speed limit</strong> — Google Maps and Waze show the current speed limit on screen.</li>
@@ -98,7 +98,7 @@ export default function MapsGpsCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Stay safe</h3>
-            <p className="text-sm text-muted-foreground">Mount the phone where you can see the screen without looking down. Use voice directions ("Hey Siri, take me home"). Don't tap the phone while driving — pull over first.</p>
+            <p className="text-base text-muted-foreground">Mount the phone where you can see the screen without looking down. Use voice directions ("Hey Siri, take me home"). Don't tap the phone while driving — pull over first.</p>
           </CardContent>
         </Card>
       </main>

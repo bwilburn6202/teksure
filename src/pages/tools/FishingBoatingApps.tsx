@@ -35,7 +35,7 @@ export default function FishingBoatingApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -66,7 +66,7 @@ export default function FishingBoatingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Safety apps too</h3>
-            <p className="text-sm text-muted-foreground">USCG\'s "USCG Mobile" app — float plan, distress button. Check it BEFORE going out. Wearing PFD + sharing float plan with someone on shore = simple way to come back safely.</p>
+            <p className="text-base text-muted-foreground">USCG\'s "USCG Mobile" app — float plan, distress button. Check it BEFORE going out. Wearing PFD + sharing float plan with someone on shore = simple way to come back safely.</p>
           </CardContent>
         </Card>
       </main>

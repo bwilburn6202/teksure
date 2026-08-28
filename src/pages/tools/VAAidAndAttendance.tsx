@@ -19,7 +19,7 @@ export default function VAAidAndAttendance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is it?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pension PLUS extra for vets needing care.</li>
               <li>$2,300-2,800/month tax-free typically.</li>
               <li>Couples can get more.</li>
@@ -33,7 +33,7 @@ export default function VAAidAndAttendance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eligibility</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Veteran served 90+ days active duty (1+ during wartime).</li>
               <li>Honorable / general discharge.</li>
               <li>Wartime periods: WWII, Korea, Vietnam, Gulf War.</li>
@@ -48,7 +48,7 @@ export default function VAAidAndAttendance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apply</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Form 21-2680 (medical) + Form 21P-527EZ (pension).</li>
               <li>VA.gov or visit local VA office.</li>
               <li>Doctor must complete medical eval.</li>
@@ -62,7 +62,7 @@ export default function VAAidAndAttendance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SCAM alert</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NEVER pay anyone to help apply — VA help is FREE.</li>
               <li>Predatory &quot;veterans benefits&quot; advisors charge $$$.</li>
               <li>Some push annuity / trust products to qualify (often hurts more than helps).</li>
@@ -76,7 +76,7 @@ export default function VAAidAndAttendance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free help applying</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>VFW</strong> — vfw.org/assistance.</li>
               <li><strong>American Legion</strong> — legion.org.</li>
               <li><strong>DAV (Disabled American Veterans)</strong> — dav.org.</li>
@@ -90,7 +90,7 @@ export default function VAAidAndAttendance() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Other VA benefits often missed</h3>
-            <p className="text-sm text-muted-foreground"><strong>Healthcare</strong> — many qualify, never enrolled. <strong>Burial benefits</strong> — free at national cemetery + headstone. <strong>Survivor benefits</strong> — DIC for surviving spouses. <strong>Property tax exemptions</strong> — most states for disabled vets. Apply for ALL — much money goes unclaimed.</p>
+            <p className="text-base text-muted-foreground"><strong>Healthcare</strong> — many qualify, never enrolled. <strong>Burial benefits</strong> — free at national cemetery + headstone. <strong>Survivor benefits</strong> — DIC for surviving spouses. <strong>Property tax exemptions</strong> — most states for disabled vets. Apply for ALL — much money goes unclaimed.</p>
           </CardContent>
         </Card>
       </main>

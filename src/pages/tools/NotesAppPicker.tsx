@@ -35,7 +35,7 @@ export default function NotesAppPicker() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -60,7 +60,7 @@ export default function NotesAppPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground"><strong>iPhone user?</strong> Apple Notes is excellent and already there. <strong>Android or mixed?</strong> Google Keep. <strong>Want hand-written notes with a stylus on iPad?</strong> Apple Notes (free) or GoodNotes (one-time $10). Don\'t over-think this — pick one, use it daily, switch later if you outgrow it.</p>
+            <p className="text-base text-muted-foreground"><strong>iPhone user?</strong> Apple Notes is excellent and already there. <strong>Android or mixed?</strong> Google Keep. <strong>Want hand-written notes with a stylus on iPad?</strong> Apple Notes (free) or GoodNotes (one-time $10). Don\'t over-think this — pick one, use it daily, switch later if you outgrow it.</p>
           </CardContent>
         </Card>
       </main>

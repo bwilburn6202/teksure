@@ -76,7 +76,7 @@ export default function CaregiverPhoneSetup() {
               <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Most important</h3>
-                <p className="text-sm text-muted-foreground">Don't try to teach everything at once. Pick 2-3 things they'll use this week, and only those. Come back next month and add 2 more. Confidence beats coverage every time.</p>
+                <p className="text-base text-muted-foreground">Don't try to teach everything at once. Pick 2-3 things they'll use this week, and only those. Come back next month and add 2 more. Confidence beats coverage every time.</p>
               </div>
             </div>
           </CardContent>

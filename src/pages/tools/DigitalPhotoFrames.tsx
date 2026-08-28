@@ -33,7 +33,7 @@ export default function DigitalPhotoFrames() {
                   <span className="text-sm font-semibold text-primary">{f.cost}</span>
                 </div>
                 <p className="text-sm">{f.best}</p>
-                <p className="text-sm text-muted-foreground">{f.good}</p>
+                <p className="text-base text-muted-foreground">{f.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function DigitalPhotoFrames() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How they work</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Plug frame into wall outlet.</li>
               <li>Connect to your wifi (one-time setup).</li>
               <li>Family downloads matching app OR emails photos to a frame address.</li>
@@ -55,7 +55,7 @@ export default function DigitalPhotoFrames() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to look for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>10 inch screen or larger</strong> — anything smaller is hard to enjoy from a couch.</li>
               <li><strong>Auto-rotate</strong> — turns frame portrait/landscape to match photo.</li>
               <li><strong>No subscription</strong> — Aura, Pix-Star don&apos;t lock features behind subscription.</li>
@@ -75,7 +75,7 @@ export default function DigitalPhotoFrames() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Ongoing</h3>
-            <p className="text-sm text-muted-foreground">Once a month, send 5-10 new photos. Doesn&apos;t need to be holiday or special — random Tuesday photos are best. Garden, dog, grandkids&apos; baseball game. Routine sends keep grandparents in your daily life.</p>
+            <p className="text-base text-muted-foreground">Once a month, send 5-10 new photos. Doesn&apos;t need to be holiday or special — random Tuesday photos are best. Garden, dog, grandkids&apos; baseball game. Routine sends keep grandparents in your daily life.</p>
           </CardContent>
         </Card>
       </main>

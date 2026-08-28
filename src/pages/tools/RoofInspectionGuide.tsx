@@ -19,7 +19,7 @@ export default function RoofInspectionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annual ground-level check</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walk around house with binoculars.</li>
               <li>Look for missing/curled/cracked shingles.</li>
               <li>Sagging areas.</li>
@@ -34,7 +34,7 @@ export default function RoofInspectionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to call pro</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>After hailstorm or major wind.</li>
               <li>If 15+ years old asphalt shingle.</li>
               <li>20+ years architectural shingles.</li>
@@ -49,7 +49,7 @@ export default function RoofInspectionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Roof lifespan</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Asphalt shingle</strong> — 15-30 years.</li>
               <li><strong>Architectural shingle</strong> — 25-40 years.</li>
               <li><strong>Metal</strong> — 40-70 years.</li>
@@ -63,7 +63,7 @@ export default function RoofInspectionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Roof replacement cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Average asphalt: $8,000-18,000.</li>
               <li>Architectural shingle: $10,000-25,000.</li>
               <li>Metal: $20,000-40,000.</li>
@@ -77,7 +77,7 @@ export default function RoofInspectionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Storm chaser scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Show up after hailstorm offering &quot;free inspection.&quot;</li>
               <li>Find &quot;damage&quot; that wasn&apos;t there before.</li>
               <li>Sometimes CAUSE damage during &quot;inspection.&quot;</li>
@@ -93,7 +93,7 @@ export default function RoofInspectionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find good roofer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>BBB A+ rating.</li>
               <li>Ask for 3 recent local references — drive by.</li>
               <li>5+ years in business.</li>
@@ -109,7 +109,7 @@ export default function RoofInspectionGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Drone inspections</h3>
-            <p className="text-sm text-muted-foreground">Some inspectors use drones — safer + thorough. iRoof, IMGING etc. send drone, get full report. Often $50-150. Ask current home insurance — they&apos;ll often inspect for free since they want to know about damage. Use this. Document conditions yearly.</p>
+            <p className="text-base text-muted-foreground">Some inspectors use drones — safer + thorough. iRoof, IMGING etc. send drone, get full report. Often $50-150. Ask current home insurance — they&apos;ll often inspect for free since they want to know about damage. Use this. Document conditions yearly.</p>
           </CardContent>
         </Card>
       </main>

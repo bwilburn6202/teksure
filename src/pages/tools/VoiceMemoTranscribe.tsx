@@ -155,7 +155,7 @@ export default function VoiceMemoTranscribe() {
             <Card className="border-green-300 bg-green-50/50 dark:bg-green-950/10">
               <CardContent className="p-5">
                 <p className="text-xs font-semibold uppercase tracking-wider text-green-700 dark:text-green-400 mb-3">Pros</p>
-                <ul className="space-y-2 text-sm">
+                <ul className="space-y-2 text-base">
                   {active.pros.map((p, i) => (<li key={i} className="flex gap-2"><span className="text-green-600 shrink-0">+</span><span>{p}</span></li>))}
                 </ul>
               </CardContent>
@@ -163,7 +163,7 @@ export default function VoiceMemoTranscribe() {
             <Card className="border-rose-300 bg-rose-50/50 dark:bg-rose-950/10">
               <CardContent className="p-5">
                 <p className="text-xs font-semibold uppercase tracking-wider text-rose-700 dark:text-rose-400 mb-3">Cons</p>
-                <ul className="space-y-2 text-sm">
+                <ul className="space-y-2 text-base">
                   {active.cons.map((c, i) => (<li key={i} className="flex gap-2"><span className="text-rose-600 shrink-0">−</span><span>{c}</span></li>))}
                 </ul>
               </CardContent>

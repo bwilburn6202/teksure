@@ -32,7 +32,7 @@ export default function FoodDeliveryCompare() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -55,7 +55,7 @@ export default function FoodDeliveryCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pickup instead of delivery</strong> — saves $7-10 per order. Many people forget this option.</li>
               <li><strong>DashPass / Uber One / Grubhub+</strong> — $10/mo, kills delivery fee. Worth it if 4+ orders/month.</li>
               <li><strong>Order from restaurant directly</strong> — many use ChowNow or own app. No service fee.</li>
@@ -68,7 +68,7 @@ export default function FoodDeliveryCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time order — easy</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Download app. Sign up with phone, email, credit card.</li>
               <li>Enter your delivery address.</li>
               <li>Browse restaurants. Filter by "fastest" or "best rated".</li>
@@ -83,7 +83,7 @@ export default function FoodDeliveryCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tip generously</h3>
-            <p className="text-sm text-muted-foreground">Drivers earn most income from tips. $3-5 minimum, $5-8 in bad weather or long drives. Pre-tip in app gets your order picked up faster — drivers see the tip before accepting.</p>
+            <p className="text-base text-muted-foreground">Drivers earn most income from tips. $3-5 minimum, $5-8 in bad weather or long drives. Pre-tip in app gets your order picked up faster — drivers see the tip before accepting.</p>
           </CardContent>
         </Card>
       </main>

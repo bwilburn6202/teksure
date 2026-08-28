@@ -19,7 +19,7 @@ export default function TsaPrecheckGlobal() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What each one does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>TSA PreCheck</strong> — $78 for 5 years. Faster security in 200+ US airports. Keep shoes/belt on, keep laptop in bag.</li>
               <li><strong>Global Entry</strong> — $100 for 5 years. INCLUDES TSA PreCheck. Skip US Customs returning from abroad.</li>
               <li><strong>CLEAR</strong> — $189/year. Skips ID-check line (different from security). Some airports only.</li>
@@ -30,7 +30,7 @@ export default function TsaPrecheckGlobal() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick decision</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Travel domestic only</strong> → TSA PreCheck ($78).</li>
               <li><strong>Travel internationally</strong> → Global Entry ($100). It&apos;s only $22 more and includes PreCheck.</li>
               <li><strong>Fly often through busy airports</strong> (Atlanta, LAX, Newark) → also add CLEAR.</li>
@@ -43,7 +43,7 @@ export default function TsaPrecheckGlobal() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">FREE through credit cards</h2>
             <p className="text-sm">Many credit cards reimburse the application fee:</p>
-            <ul className="list-disc pl-5 space-y-2 text-sm mt-2">
+            <ul className="list-disc pl-5 space-y-2 text-base mt-2">
               <li><strong>Chase Sapphire Reserve</strong> ($550 annual fee) — covers Global Entry every 4 years.</li>
               <li><strong>AmEx Platinum</strong> ($695 annual fee) — covers Global Entry + CLEAR Plus.</li>
               <li><strong>Capital One Venture X</strong> ($395) — covers Global Entry.</li>
@@ -57,7 +57,7 @@ export default function TsaPrecheckGlobal() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apply for Global Entry (best deal)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>ttp.dhs.gov</strong> (Trusted Traveler Programs).</li>
               <li>Create login. Pay $100.</li>
               <li>Wait for "conditionally approved" email (1-12 months).</li>
@@ -85,7 +85,7 @@ export default function TsaPrecheckGlobal() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t pay for CLEAR if...</h3>
-            <p className="text-sm text-muted-foreground">CLEAR is $189/year. Many CLEAR lines are now LONGER than TSA PreCheck during peak hours. Only worth it if you fly weekly through Atlanta, LaGuardia, or Newark. Most travelers skip CLEAR and just use PreCheck.</p>
+            <p className="text-base text-muted-foreground">CLEAR is $189/year. Many CLEAR lines are now LONGER than TSA PreCheck during peak hours. Only worth it if you fly weekly through Atlanta, LaGuardia, or Newark. Most travelers skip CLEAR and just use PreCheck.</p>
           </CardContent>
         </Card>
       </main>

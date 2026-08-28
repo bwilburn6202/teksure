@@ -293,7 +293,7 @@ export default function FamilyTechPlanner() {
             </div>
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold">Family Tech Planner</h1>
-              <p className="text-sm text-muted-foreground">For families organizing tech support for aging parents</p>
+              <p className="text-base text-muted-foreground">For families organizing tech support for aging parents</p>
             </div>
           </div>
           <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
@@ -612,7 +612,7 @@ export default function FamilyTechPlanner() {
                     </p>
                   ) : (
                     <div className="space-y-3">
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         Try the first option below first — set it up once on a calm afternoon so it's ready when it's needed.
                       </p>
                       {plan.remoteSupport.map((r, i) => (
@@ -624,7 +624,7 @@ export default function FamilyTechPlanner() {
                             <span className="font-semibold text-base">{r.name}</span>
                             {r.best && <Badge className="bg-primary text-primary-foreground text-xs">Best pick</Badge>}
                           </div>
-                          <p className="text-sm text-muted-foreground">{r.desc}</p>
+                          <p className="text-base text-muted-foreground">{r.desc}</p>
                         </div>
                       ))}
                     </div>

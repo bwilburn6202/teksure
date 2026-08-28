@@ -46,7 +46,7 @@ export default function SmartDisplayForGrandparents() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -55,7 +55,7 @@ export default function SmartDisplayForGrandparents() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup as a gift (best practices)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>BEFORE wrapping — set it up at YOUR home with their Wi-Fi password.</li>
               <li>Add their Amazon (or Google) account.</li>
               <li>Pre-load family photos: open the Photos section in the Alexa or Google Home app, link the family Amazon Photos / Google Photos account.</li>
@@ -85,7 +85,7 @@ export default function SmartDisplayForGrandparents() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Privacy concern?</h3>
-            <p className="text-sm text-muted-foreground">Echo and Nest devices listen for the wake word ("Alexa", "Hey Google"). They don\'t record full conversations. There\'s a microphone-off button if it ever bothers them. Some seniors put it in the kitchen, away from the bedroom.</p>
+            <p className="text-base text-muted-foreground">Echo and Nest devices listen for the wake word ("Alexa", "Hey Google"). They don\'t record full conversations. There\'s a microphone-off button if it ever bothers them. Some seniors put it in the kitchen, away from the bedroom.</p>
           </CardContent>
         </Card>
       </main>

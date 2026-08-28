@@ -33,7 +33,7 @@ export default function ZelleVenmoCashApp() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -49,7 +49,7 @@ export default function ZelleVenmoCashApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use Zelle ONLY with people you know</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Spouse, kids, grandkids, sibling, trusted close friend.</li>
               <li>NEVER for online purchases (no buyer protection).</li>
               <li>NEVER to a stranger.</li>
@@ -69,7 +69,7 @@ export default function ZelleVenmoCashApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set up 2FA on the app and your bank.</li>
               <li>Set a transfer limit (most apps allow $500-1,000/day max).</li>
               <li>Don&apos;t leave money sitting in Venmo/Cash App — they&apos;re not FDIC-insured. Move to bank.</li>
@@ -82,7 +82,7 @@ export default function ZelleVenmoCashApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you got scammed</h3>
-            <p className="text-sm text-muted-foreground">Call your BANK immediately — same day, ideally within an hour. New 2024 federal rules require some Zelle scam refunds. Report to <strong>reportfraud.ftc.gov</strong>. File a police report (paper trail). Scams via Venmo/Cash App: open dispute in app + report to FTC. Recovery rare but try.</p>
+            <p className="text-base text-muted-foreground">Call your BANK immediately — same day, ideally within an hour. New 2024 federal rules require some Zelle scam refunds. Report to <strong>reportfraud.ftc.gov</strong>. File a police report (paper trail). Scams via Venmo/Cash App: open dispute in app + report to FTC. Recovery rare but try.</p>
           </CardContent>
         </Card>
       </main>

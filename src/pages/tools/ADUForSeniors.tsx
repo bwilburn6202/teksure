@@ -19,7 +19,7 @@ export default function ADUForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is ADU</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Accessory Dwelling Unit (mother-in-law unit, granny flat).</li>
               <li>Smaller home on same property as main.</li>
               <li>Detached or attached.</li>
@@ -33,7 +33,7 @@ export default function ADUForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost + types</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Garage conversion</strong> — $50K-150K.</li>
               <li><strong>Basement conversion</strong> — $30K-100K.</li>
               <li><strong>Detached new build</strong> — $200K-400K.</li>
@@ -47,7 +47,7 @@ export default function ADUForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly design</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Single-level (no stairs).</li>
               <li>Wide doorways (32+ inches).</li>
               <li>Walk-in shower with grab bars.</li>
@@ -63,7 +63,7 @@ export default function ADUForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Family arrangement</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Discuss boundaries clearly.</li>
               <li>Schedule shared meals.</li>
               <li>Privacy expectations.</li>
@@ -78,7 +78,7 @@ export default function ADUForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Build process</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Check local zoning (some still restrict).</li>
               <li>Architect / designer.</li>
               <li>Permits — can take months.</li>
@@ -93,7 +93,7 @@ export default function ADUForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth it?</h3>
-            <p className="text-sm text-muted-foreground">If: family near, want to age in place near loved ones, can afford ($150K+). Adds property value 30-50%. Less expensive than care facility long-term. Some seniors retire to ADU + rent main house. Family proximity = wellbeing boost.</p>
+            <p className="text-base text-muted-foreground">If: family near, want to age in place near loved ones, can afford ($150K+). Adds property value 30-50%. Less expensive than care facility long-term. Some seniors retire to ADU + rent main house. Family proximity = wellbeing boost.</p>
           </CardContent>
         </Card>
       </main>

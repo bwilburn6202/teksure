@@ -19,7 +19,7 @@ export default function TouristAttractionPasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">CityPass cities</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NYC</strong>, <strong>Chicago</strong>, <strong>Boston</strong>, <strong>Philadelphia</strong>.</li>
               <li><strong>Dallas</strong>, <strong>Houston</strong>, <strong>San Antonio</strong>.</li>
               <li><strong>San Francisco</strong>, <strong>Atlanta</strong>, <strong>Seattle</strong>.</li>
@@ -33,7 +33,7 @@ export default function TouristAttractionPasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">GoCity passes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>50+ cities worldwide.</li>
               <li>All-inclusive (unlimited attractions in days).</li>
               <li>Or Explorer pass (pick X attractions).</li>
@@ -47,7 +47,7 @@ export default function TouristAttractionPasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most major museums offer 50%+ senior discount.</li>
               <li>Some FREE for 65+ (NYC museums on certain days).</li>
               <li>National Park senior pass ($80 lifetime — see /tools/national-parks-trip).</li>
@@ -61,7 +61,7 @@ export default function TouristAttractionPasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Should you buy pass?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plan to do 4+ included attractions = yes.</li>
               <li>Casual visiting 1-2 spots = no, skip.</li>
               <li>Calculate before buying.</li>
@@ -74,7 +74,7 @@ export default function TouristAttractionPasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free city sights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most cities have free walking tours (tip-based).</li>
               <li>Public parks always free.</li>
               <li>Federal museums often free.</li>
@@ -88,7 +88,7 @@ export default function TouristAttractionPasses() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior travel hack</h3>
-            <p className="text-sm text-muted-foreground">Skip pre-buying passes. Walk into attractions, ask &quot;senior discount?&quot; Often 25-50% off vs paid pass advance. Combine with library passes (free). Smithsonian free. Many cities have free museum days. Save $$.</p>
+            <p className="text-base text-muted-foreground">Skip pre-buying passes. Walk into attractions, ask &quot;senior discount?&quot; Often 25-50% off vs paid pass advance. Combine with library passes (free). Smithsonian free. Many cities have free museum days. Save $$.</p>
           </CardContent>
         </Card>
       </main>

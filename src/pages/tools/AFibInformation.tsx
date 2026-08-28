@@ -19,7 +19,7 @@ export default function AFibInformation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What AFib is</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Irregular heart rhythm.</li>
               <li>10% of seniors 65+ have it.</li>
               <li>Many don&apos;t know.</li>
@@ -33,7 +33,7 @@ export default function AFibInformation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Symptoms (some have)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heart palpitations / racing.</li>
               <li>Skipped beats sensation.</li>
               <li>Chest fluttering.</li>
@@ -48,7 +48,7 @@ export default function AFibInformation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Detection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pulse check — irregular = could be AFib.</li>
               <li>EKG at doctor.</li>
               <li>Apple Watch / Fitbit ECG.</li>
@@ -62,7 +62,7 @@ export default function AFibInformation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Treatment</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Blood thinner</strong> — Eliquis, Xarelto. Prevents stroke.</li>
               <li><strong>Rate control</strong> — beta blockers slow heart.</li>
               <li><strong>Rhythm control</strong> — antiarrhythmics restore normal rhythm.</li>
@@ -76,7 +76,7 @@ export default function AFibInformation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reduce AFib triggers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lose weight if overweight.</li>
               <li>Limit alcohol.</li>
               <li>Treat sleep apnea.</li>
@@ -91,7 +91,7 @@ export default function AFibInformation() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Stroke risk = top concern</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t skip blood thinner. Many AFib stroke deaths preventable. Eliquis + Xarelto have less bleeding risk than Coumadin. Cost $400-500/mo brand — assistance programs available. Generic apixaban 2026.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t skip blood thinner. Many AFib stroke deaths preventable. Eliquis + Xarelto have less bleeding risk than Coumadin. Cost $400-500/mo brand — assistance programs available. Generic apixaban 2026.</p>
           </CardContent>
         </Card>
       </main>

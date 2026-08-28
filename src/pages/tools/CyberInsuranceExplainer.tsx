@@ -19,7 +19,7 @@ export default function CyberInsuranceExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it usually covers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Identity theft restoration</strong> — case manager helps clean up after fraud.</li>
               <li><strong>Lost wages</strong> while resolving fraud (limited).</li>
               <li><strong>Legal fees</strong> if needed.</li>
@@ -33,7 +33,7 @@ export default function CyberInsuranceExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to get it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Add to existing homeowners or renters insurance</strong> — usually $25-100/year. Cheapest path. Talk to your existing insurer.</li>
               <li><strong>AARP — also offers identity-theft restoration</strong> as a member benefit.</li>
               <li><strong>LifeLock / IdentityForce / Identity Guard</strong> — $10-30/month standalone services. Includes monitoring + insurance.</li>
@@ -70,7 +70,7 @@ export default function CyberInsuranceExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Credit freeze</strong> at all 3 bureaus (free, federal). Stops most identity theft cold.</li>
               <li><strong>USPS Informed Delivery</strong> (free) — see mail before it arrives.</li>
               <li><strong>Free credit monitoring from Credit Karma, Capital One CreditWise, Chase Credit Journey</strong> — alerts on credit changes.</li>
@@ -85,7 +85,7 @@ export default function CyberInsuranceExplainer() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best path</h3>
-            <p className="text-sm text-muted-foreground">Do the FREE steps first (credit freeze, two-factor, password manager). Then ADD identity-theft coverage to your existing homeowners insurance for $25-100/year. Best ratio of protection to cost. Skip the standalone $30/month services unless you really want a personal "case manager" if it ever happens.</p>
+            <p className="text-base text-muted-foreground">Do the FREE steps first (credit freeze, two-factor, password manager). Then ADD identity-theft coverage to your existing homeowners insurance for $25-100/year. Best ratio of protection to cost. Skip the standalone $30/month services unless you really want a personal "case manager" if it ever happens.</p>
           </CardContent>
         </Card>
       </main>

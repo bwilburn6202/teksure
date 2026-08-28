@@ -19,7 +19,7 @@ export default function AmazonReturnsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When can you return?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most items — 30 days from delivery.</li>
               <li>Holiday gifts — extended through January.</li>
               <li>Electronics — 30 days, working or not.</li>
@@ -33,7 +33,7 @@ export default function AmazonReturnsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step-by-step return</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Amazon app or go to Amazon.com.</li>
               <li>Tap &quot;Your Orders.&quot;</li>
               <li>Find item, tap &quot;Return or Replace.&quot;</li>
@@ -47,7 +47,7 @@ export default function AmazonReturnsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Return drop-off options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Whole Foods — bring item, show QR code.</li>
               <li>Kohl&apos;s — they pack + ship for you, free.</li>
               <li>UPS Store — free drop-off with QR code.</li>
@@ -61,7 +61,7 @@ export default function AmazonReturnsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best return option for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Kohl&apos;s — best for most seniors.</li>
               <li>No box or label needed.</li>
               <li>Bring item + QR code on phone.</li>
@@ -75,7 +75,7 @@ export default function AmazonReturnsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Refund timing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Refund triggered once item dropped off.</li>
               <li>Credit card — 3–5 business days.</li>
               <li>Amazon gift card balance — instant.</li>
@@ -89,7 +89,7 @@ export default function AmazonReturnsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoiding returns</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read reviews carefully before buying.</li>
               <li>Check size charts for clothing.</li>
               <li>&quot;Verified Purchase&quot; reviews most reliable.</li>
@@ -103,7 +103,7 @@ export default function AmazonReturnsBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Use Kohl&apos;s for everything</h3>
-            <p className="text-sm text-muted-foreground">For seniors, Kohl&apos;s Amazon returns are by far the easiest. Just bring the item — no box, no label, no packing required. The associate scans your QR code from your phone (have Amazon open to the return page), takes the item, and you&apos;re done in 30 seconds. Plus you get a 25% off coupon. It&apos;s a small reason to shop Kohl&apos;s if you needed one.</p>
+            <p className="text-base text-muted-foreground">For seniors, Kohl&apos;s Amazon returns are by far the easiest. Just bring the item — no box, no label, no packing required. The associate scans your QR code from your phone (have Amazon open to the return page), takes the item, and you&apos;re done in 30 seconds. Plus you get a 25% off coupon. It&apos;s a small reason to shop Kohl&apos;s if you needed one.</p>
           </CardContent>
         </Card>
       </main>

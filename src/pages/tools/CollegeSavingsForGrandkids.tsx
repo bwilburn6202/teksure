@@ -31,7 +31,7 @@ export default function CollegeSavingsForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why grandparents love them</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YOU stay in control</strong> — even though grandkid is the beneficiary, you decide when and how to spend.</li>
               <li><strong>Big growth over time</strong> — $100/month from age 0 = $50,000+ at age 18 with average market returns.</li>
               <li><strong>State tax deduction</strong> — many states offer deductions on contributions to your home state\'s 529.</li>
@@ -46,7 +46,7 @@ export default function CollegeSavingsForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best 529 plans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Utah\'s my529</strong> — top-rated nationally. Open to anyone in any state. Low fees.</li>
               <li><strong>Nevada Vanguard 529</strong> — Vanguard\'s low-cost funds. Open to all.</li>
               <li><strong>NY 529 (run by Vanguard)</strong> — top New York deduction.</li>
@@ -58,7 +58,7 @@ export default function CollegeSavingsForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to open one</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick a plan (above).</li>
               <li>Apply online — 10 minutes. Need your info + grandkid\'s name and SSN.</li>
               <li>Pick an investment — most plans offer "age-based" portfolios that auto-adjust as the grandkid gets closer to college.</li>
@@ -71,7 +71,7 @@ export default function CollegeSavingsForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other gift options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>UTMA / UGMA account</strong> — kid gets full control at 18-21. Less restrictive than 529 but counts more against financial aid.</li>
               <li><strong>Series I Bonds</strong> — for younger grandkids. Tax-free if used for college.</li>
               <li><strong>Roth IRA for the working teen</strong> — once your grandkid has any earned income (16+), you can fund a Roth IRA in their name. Best gift you can give.</li>
@@ -82,7 +82,7 @@ export default function CollegeSavingsForGrandkids() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — start the day they\'re born</h3>
-            <p className="text-sm text-muted-foreground">$100/month from age 0 to 18 at average 7% growth = ~$48,000. The same $100/month from age 12 to 18 only = ~$10,000. Time matters more than amount.</p>
+            <p className="text-base text-muted-foreground">$100/month from age 0 to 18 at average 7% growth = ~$48,000. The same $100/month from age 12 to 18 only = ~$10,000. Time matters more than amount.</p>
           </CardContent>
         </Card>
       </main>

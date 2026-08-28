@@ -19,7 +19,7 @@ export default function VoiceTextingTrick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone — Dictation</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Messages → tap conversation OR new message.</li>
               <li>Tap message field — keyboard appears.</li>
               <li>Tap microphone icon (bottom right of keyboard).</li>
@@ -34,7 +34,7 @@ export default function VoiceTextingTrick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android — Voice typing</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Messages app.</li>
               <li>Tap microphone icon on keyboard.</li>
               <li>Or hold spacebar.</li>
@@ -48,7 +48,7 @@ export default function VoiceTextingTrick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice messages (audio sent)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone Messages: hold microphone in message field.</li>
               <li>Speak. Release sends audio file.</li>
               <li>Recipient plays your voice.</li>
@@ -61,7 +61,7 @@ export default function VoiceTextingTrick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Watch dictation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap Messages → reply to text.</li>
               <li>Tap microphone.</li>
               <li>Speak. Watch translates.</li>
@@ -74,7 +74,7 @@ export default function VoiceTextingTrick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hands-free with Siri</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Hey Siri, send text to John."</li>
               <li>Siri asks: "What do you want to say?"</li>
               <li>Speak full message.</li>
@@ -88,7 +88,7 @@ export default function VoiceTextingTrick() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Why type at all?</h3>
-            <p className="text-sm text-muted-foreground">For most seniors, voice is faster + easier than tapping tiny letters. After 1 week, voice texting becomes natural. 30 seconds of typing = 5 seconds of speaking.</p>
+            <p className="text-base text-muted-foreground">For most seniors, voice is faster + easier than tapping tiny letters. After 1 week, voice texting becomes natural. 30 seconds of typing = 5 seconds of speaking.</p>
           </CardContent>
         </Card>
       </main>

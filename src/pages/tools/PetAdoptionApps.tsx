@@ -34,7 +34,7 @@ export default function PetAdoptionApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -57,7 +57,7 @@ export default function PetAdoptionApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Considerations for older adopters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Outliving the pet</strong> — talk to family. Have a plan if pet outlives you.</li>
               <li><strong>Mobility</strong> — cats, smaller dogs, older dogs better than energetic puppies.</li>
               <li><strong>Allergies</strong> — try a "meet and greet" or foster first.</li>
@@ -77,7 +77,7 @@ export default function PetAdoptionApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best fit for many seniors</h3>
-            <p className="text-sm text-muted-foreground">Adult cats (2-7 years old) — already house-trained, social, lower-maintenance than dogs. Many languish in shelters because puppies/kittens get adopted first. Save a life and gain a quiet companion.</p>
+            <p className="text-base text-muted-foreground">Adult cats (2-7 years old) — already house-trained, social, lower-maintenance than dogs. Many languish in shelters because puppies/kittens get adopted first. Save a life and gain a quiet companion.</p>
           </CardContent>
         </Card>
       </main>

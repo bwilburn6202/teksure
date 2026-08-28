@@ -32,7 +32,7 @@ export default function CreditFreezeHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bureau 1 — Equifax</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>equifax.com/personal/credit-report-services</strong>.</li>
               <li>Click "Place a freeze".</li>
               <li>Create account (or sign in).</li>
@@ -46,7 +46,7 @@ export default function CreditFreezeHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bureau 2 — Experian</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>experian.com/freeze</strong>.</li>
               <li>Click "Add a security freeze".</li>
               <li>Create account (or sign in).</li>
@@ -59,7 +59,7 @@ export default function CreditFreezeHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bureau 3 — TransUnion</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>transunion.com/credit-freeze</strong>.</li>
               <li>Click "Place a credit freeze".</li>
               <li>Create account.</li>
@@ -72,7 +72,7 @@ export default function CreditFreezeHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bonus — also freeze these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ChexSystems</strong> — banks pull this when opening checking. Freeze at <strong>chexsystems.com</strong>.</li>
               <li><strong>Innovis</strong> — 4th bureau most don&apos;t know. <strong>innovis.com/personal/securityFreeze</strong>.</li>
               <li><strong>NCTUE</strong> — telecom/utility bureau. <strong>nctue.com</strong>.</li>
@@ -83,7 +83,7 @@ export default function CreditFreezeHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you need to thaw</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign back into the bureau&apos;s website.</li>
               <li>Click "Lift" or "Thaw freeze".</li>
               <li>Set duration: temporary (1-30 days) OR permanent.</li>
@@ -97,7 +97,7 @@ export default function CreditFreezeHowTo() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save your PINs</h3>
-            <p className="text-sm text-muted-foreground">Each bureau gives a unique PIN. WRITE THEM ALL DOWN. Keep with your will or in your password manager. If you lose them, you can recover by mailing in a notarized form — but it takes weeks.</p>
+            <p className="text-base text-muted-foreground">Each bureau gives a unique PIN. WRITE THEM ALL DOWN. Keep with your will or in your password manager. If you lose them, you can recover by mailing in a notarized form — but it takes weeks.</p>
           </CardContent>
         </Card>
       </main>

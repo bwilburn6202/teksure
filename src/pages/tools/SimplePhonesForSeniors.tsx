@@ -33,7 +33,7 @@ export default function SimplePhonesForSeniors() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SimplePhonesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Configure regular phone for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Display → Text Size → biggest.</li>
               <li>Bold Text ON.</li>
               <li>Display Zoom → "Larger Text".</li>
@@ -58,7 +58,7 @@ export default function SimplePhonesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why iPhone SE is best for many</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Familiar Apple brand most know.</li>
               <li>Plenty of accessibility settings.</li>
               <li>Family already on iPhone — FaceTime, iMessage easy.</li>
@@ -72,7 +72,7 @@ export default function SimplePhonesForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best gift</h3>
-            <p className="text-sm text-muted-foreground">If grandparent struggles with phone — DON&apos;T just buy a simple replacement. SETUP and DELIVER it ready-to-use. Pre-load contacts, pre-configure all settings, pre-install apps. 2 hours of work — months of usability.</p>
+            <p className="text-base text-muted-foreground">If grandparent struggles with phone — DON&apos;T just buy a simple replacement. SETUP and DELIVER it ready-to-use. Pre-load contacts, pre-configure all settings, pre-install apps. 2 hours of work — months of usability.</p>
           </CardContent>
         </Card>
       </main>

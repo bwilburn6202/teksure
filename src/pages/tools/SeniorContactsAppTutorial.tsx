@@ -19,7 +19,7 @@ export default function SeniorContactsAppTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Add contacts properly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap + to add new contact.</li>
               <li>Full name + nickname.</li>
               <li>Multiple phone numbers.</li>
@@ -33,7 +33,7 @@ export default function SeniorContactsAppTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photos help memory</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Add photos to all contacts.</li>
               <li>Photo shows on incoming calls.</li>
               <li>Easy identification at glance.</li>
@@ -47,7 +47,7 @@ export default function SeniorContactsAppTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Emergency contacts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mark as ICE (In Case of Emergency).</li>
               <li>Add &quot;ICE&quot; before name.</li>
               <li>First responders look for ICE entries.</li>
@@ -61,7 +61,7 @@ export default function SeniorContactsAppTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Group contacts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family group.</li>
               <li>Doctors group.</li>
               <li>Friends group.</li>
@@ -75,7 +75,7 @@ export default function SeniorContactsAppTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Backup contacts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone — iCloud syncs automatically.</li>
               <li>Android — Google syncs.</li>
               <li>Lost phone won&apos;t lose contacts.</li>
@@ -89,7 +89,7 @@ export default function SeniorContactsAppTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Share contact</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap contact → Share Contact.</li>
               <li>Send via text or email.</li>
               <li>Recipient gets full contact info.</li>
@@ -103,7 +103,7 @@ export default function SeniorContactsAppTutorial() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Spend hour cleaning contacts</h3>
-            <p className="text-sm text-muted-foreground">Most senior contact lists are messy — duplicate entries, old numbers, no photos. Spend one hour cleaning. Add photos to family. Mark ICE contacts. Group by category. Delete old/unused. Set up iCloud/Google backup. Result: easier-to-use phone, emergency-ready, organized. Worth the time.</p>
+            <p className="text-base text-muted-foreground">Most senior contact lists are messy — duplicate entries, old numbers, no photos. Spend one hour cleaning. Add photos to family. Mark ICE contacts. Group by category. Delete old/unused. Set up iCloud/Google backup. Result: easier-to-use phone, emergency-ready, organized. Worth the time.</p>
           </CardContent>
         </Card>
       </main>

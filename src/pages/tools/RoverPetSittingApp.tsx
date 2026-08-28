@@ -19,7 +19,7 @@ export default function RoverPetSittingApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Rover?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>App + website connecting pet owners with sitters.</li>
               <li>Largest pet-sitting platform in the US.</li>
               <li>Find dog walkers, sitters, boarding, daycare.</li>
@@ -33,7 +33,7 @@ export default function RoverPetSittingApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Services available</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Boarding — dog stays at sitter&apos;s home.</li>
               <li>House sitting — sitter stays at your home.</li>
               <li>Drop-in visits — short check-ins, feeding, potty.</li>
@@ -47,7 +47,7 @@ export default function RoverPetSittingApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Boarding — $35–$75/night per dog.</li>
               <li>House sitting — $50–$100/night.</li>
               <li>Drop-in visits — $15–$25 per visit.</li>
@@ -61,7 +61,7 @@ export default function RoverPetSittingApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Booking safely</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read all reviews — focus on multiple recent ones.</li>
               <li>Look for &quot;Star Sitter&quot; badge.</li>
               <li>Request meet-and-greet before booking.</li>
@@ -75,7 +75,7 @@ export default function RoverPetSittingApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly perks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily photo updates from sitter.</li>
               <li>Sitter takes pet out for daily walks.</li>
               <li>Reduces caregiver burden.</li>
@@ -89,7 +89,7 @@ export default function RoverPetSittingApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other pet care options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wag — similar app, dog-walking focused.</li>
               <li>Care.com — also has pet sitters.</li>
               <li>Local nonprofit pet pantries — emergency pet food.</li>
@@ -103,7 +103,7 @@ export default function RoverPetSittingApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try one drop-in visit first</h3>
-            <p className="text-sm text-muted-foreground">Before booking a multi-day stay, try a single $20 drop-in visit while you&apos;re home. See how the sitter interacts with your pet, how communication works through the app, and how detailed the photo updates are. If it goes well, book longer stays with confidence.</p>
+            <p className="text-base text-muted-foreground">Before booking a multi-day stay, try a single $20 drop-in visit while you&apos;re home. See how the sitter interacts with your pet, how communication works through the app, and how detailed the photo updates are. If it goes well, book longer stays with confidence.</p>
           </CardContent>
         </Card>
       </main>

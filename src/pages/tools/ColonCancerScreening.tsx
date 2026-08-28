@@ -19,7 +19,7 @@ export default function ColonCancerScreening() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to screen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Start age 45 average risk.</li>
               <li>Continue until 75 (or 85 if healthy).</li>
               <li>Family history — start earlier.</li>
@@ -33,7 +33,7 @@ export default function ColonCancerScreening() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Test options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Colonoscopy</strong> — every 10 years. Gold standard.</li>
               <li><strong>Cologuard</strong> — every 3 years. Stool DNA. At home.</li>
               <li><strong>FIT test</strong> — yearly. Stool blood. At home.</li>
@@ -47,7 +47,7 @@ export default function ColonCancerScreening() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Colonoscopy facts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30-min outpatient procedure.</li>
               <li>Sedation = no pain.</li>
               <li>Removes polyps during procedure (prevents cancer).</li>
@@ -62,7 +62,7 @@ export default function ColonCancerScreening() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cologuard at home</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mail-order kit.</li>
               <li>Collect stool sample at home.</li>
               <li>Mail back.</li>
@@ -77,7 +77,7 @@ export default function ColonCancerScreening() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Healthy + 75-85 — discuss with doctor.</li>
               <li>Multiple comorbidities — may stop screening.</li>
               <li>Polyps removed — back next 1-3 years.</li>
@@ -90,7 +90,7 @@ export default function ColonCancerScreening() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free with Medicare</h3>
-            <p className="text-sm text-muted-foreground">Medicare Part B covers colorectal cancer screening fully. No copay for screening colonoscopy. If polyp removed, becomes &quot;diagnostic&quot; — small copay. Cologuard fully covered. FIT yearly fully covered. Take advantage.</p>
+            <p className="text-base text-muted-foreground">Medicare Part B covers colorectal cancer screening fully. No copay for screening colonoscopy. If polyp removed, becomes &quot;diagnostic&quot; — small copay. Cologuard fully covered. FIT yearly fully covered. Take advantage.</p>
           </CardContent>
         </Card>
       </main>

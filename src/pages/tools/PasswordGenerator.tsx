@@ -167,7 +167,7 @@ export default function PasswordGenerator() {
                 <ShieldCheck className="h-5 w-5 text-violet-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <p className="font-semibold text-sm mb-1">Why This Matters</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     A short or predictable password can be cracked in seconds. A 16-character random password with mixed characters would take millions of years to crack with current technology. Using a unique password for every account prevents a breach at one site from compromising all your accounts.
                   </p>
                 </div>

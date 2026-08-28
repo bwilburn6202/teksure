@@ -19,7 +19,7 @@ export default function HomeGymStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">$200 starter kit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Resistance bands set</strong> ($30) — 5 levels, door anchor.</li>
               <li><strong>Adjustable dumbbells (2-25 lbs)</strong> ($80) — Bowflex 552 or Powerblock.</li>
               <li><strong>Yoga mat</strong> ($25) — for floor exercises.</li>
@@ -35,7 +35,7 @@ export default function HomeGymStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily 20-minute routine</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Warm-up — 3 min walking in place.</li>
               <li>Strength (10 min):
                 <ul className="list-disc pl-5 mt-1">
@@ -60,7 +60,7 @@ export default function HomeGymStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip these (waste money)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Treadmills — knees and price. Walk outside or mall.</li>
               <li>Peloton bike — $1,500 + $44/mo. Stationary bike at YMCA does same.</li>
               <li>Big home gyms — collect dust.</li>
@@ -74,7 +74,7 @@ export default function HomeGymStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Add-ons if budget allows</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bowflex Max Trainer</strong> — best low-impact cardio. $1,200.</li>
               <li><strong>Stationary bike</strong> — $200-500 basic, $1,500+ Peloton-class.</li>
               <li><strong>Recumbent bike</strong> — easiest on back/knees.</li>
@@ -87,7 +87,7 @@ export default function HomeGymStarter() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free is best</h3>
-            <p className="text-sm text-muted-foreground">Your YMCA via SilverSneakers is FREE with most Medicare Advantage. Pool, weights, classes, social. Beats any home gym for total benefit. Build basics at home + go YMCA 2-3 times/week.</p>
+            <p className="text-base text-muted-foreground">Your YMCA via SilverSneakers is FREE with most Medicare Advantage. Pool, weights, classes, social. Beats any home gym for total benefit. Build basics at home + go YMCA 2-3 times/week.</p>
           </CardContent>
         </Card>
       </main>

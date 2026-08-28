@@ -19,7 +19,7 @@ export default function VanguardForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Vanguard?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pioneered index funds — Jack Bogle&apos;s creation.</li>
               <li>Lowest expense ratios in industry.</li>
               <li>Owned by its fund shareholders.</li>
@@ -33,7 +33,7 @@ export default function VanguardForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best Vanguard funds for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vanguard Total Stock Market ETF (VTI).</li>
               <li>Vanguard Total International Stock (VXUS).</li>
               <li>Vanguard Total Bond Market (BND).</li>
@@ -47,7 +47,7 @@ export default function VanguardForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vanguard Personal Advisor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Human advisor for $50K+ in assets.</li>
               <li>0.30% annual fee (very low for human advisor).</li>
               <li>Personalized retirement planning.</li>
@@ -61,7 +61,7 @@ export default function VanguardForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">App features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Account aggregation — see total net worth.</li>
               <li>Performance tracking + analytics.</li>
               <li>Required Minimum Distributions tools.</li>
@@ -75,7 +75,7 @@ export default function VanguardForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vanguard vs Fidelity</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vanguard — slightly lower fees on funds.</li>
               <li>Fidelity — better app + customer service.</li>
               <li>Both have $0 stock commissions.</li>
@@ -89,7 +89,7 @@ export default function VanguardForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set up RMD distributions before age 73.</li>
               <li>Rebalance to more bonds as you age.</li>
               <li>Update beneficiaries after life changes.</li>
@@ -103,7 +103,7 @@ export default function VanguardForRetirees() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Stick with simple at retirement</h3>
-            <p className="text-sm text-muted-foreground">In retirement, complexity hurts. Many financial advisors recommend simplifying to 2–3 Vanguard index funds: total stock market (VTI), total bond market (BND), and possibly international stock (VXUS). Set the allocation, rebalance once a year, take RMDs as needed. Decades of research show this beats most active investors. Vanguard makes it easiest.</p>
+            <p className="text-base text-muted-foreground">In retirement, complexity hurts. Many financial advisors recommend simplifying to 2–3 Vanguard index funds: total stock market (VTI), total bond market (BND), and possibly international stock (VXUS). Set the allocation, rebalance once a year, take RMDs as needed. Decades of research show this beats most active investors. Vanguard makes it easiest.</p>
           </CardContent>
         </Card>
       </main>

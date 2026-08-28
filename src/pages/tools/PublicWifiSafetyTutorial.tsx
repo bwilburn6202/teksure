@@ -19,7 +19,7 @@ export default function PublicWifiSafetyTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why public WiFi is risky</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Anyone on same network can sometimes intercept data.</li>
               <li>Fake hotspots called &quot;evil twin&quot; mimic real ones.</li>
               <li>Hotels + airports common attack targets.</li>
@@ -33,7 +33,7 @@ export default function PublicWifiSafetyTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safe practices</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Never bank on public WiFi without VPN.</li>
               <li>Use cell data instead when possible.</li>
               <li>Hotspot from your phone if needed.</li>
@@ -47,7 +47,7 @@ export default function PublicWifiSafetyTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">VPN protects you</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VPN encrypts everything.</li>
               <li>Even on hostile WiFi, traffic safe.</li>
               <li>Especially for banking, email, sensitive info.</li>
@@ -61,7 +61,7 @@ export default function PublicWifiSafetyTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cellular hotspot</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use phone&apos;s data plan via hotspot.</li>
               <li>Settings → Personal Hotspot.</li>
               <li>Connect laptop to phone&apos;s WiFi.</li>
@@ -75,7 +75,7 @@ export default function PublicWifiSafetyTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Verify network name</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ask staff what hotel WiFi is called.</li>
               <li>Don&apos;t trust generic-named networks.</li>
               <li>&quot;Free Public WiFi&quot; — often fake.</li>
@@ -89,7 +89,7 @@ export default function PublicWifiSafetyTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After traveling</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Forget hotel + airport WiFi networks.</li>
               <li>Settings → Wi-Fi → tap network → Forget.</li>
               <li>Prevents auto-reconnect later.</li>
@@ -103,7 +103,7 @@ export default function PublicWifiSafetyTutorial() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">VPN if you travel</h3>
-            <p className="text-sm text-muted-foreground">If you travel even occasionally — hotel stays, airport waiting, vacation — a $5/month VPN like NordVPN is worth the peace of mind. Banking from a hotel without VPN is risky. With VPN it&apos;s safe. Set it to auto-connect on unknown networks. One simple subscription that protects all your devices for travel.</p>
+            <p className="text-base text-muted-foreground">If you travel even occasionally — hotel stays, airport waiting, vacation — a $5/month VPN like NordVPN is worth the peace of mind. Banking from a hotel without VPN is risky. With VPN it&apos;s safe. Set it to auto-connect on unknown networks. One simple subscription that protects all your devices for travel.</p>
           </CardContent>
         </Card>
       </main>

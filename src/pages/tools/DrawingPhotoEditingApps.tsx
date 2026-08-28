@@ -35,7 +35,7 @@ export default function DrawingPhotoEditingApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -68,7 +68,7 @@ export default function DrawingPhotoEditingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free YouTube tutorials beat paid courses</h3>
-            <p className="text-sm text-muted-foreground">Whatever app you pick — search YouTube for "[app name] tutorial for beginners". Hundreds of free hours of teaching. Watch 30 minutes, then play. Better than any paid course for first-timers.</p>
+            <p className="text-base text-muted-foreground">Whatever app you pick — search YouTube for "[app name] tutorial for beginners". Hundreds of free hours of teaching. Watch 30 minutes, then play. Better than any paid course for first-timers.</p>
           </CardContent>
         </Card>
       </main>

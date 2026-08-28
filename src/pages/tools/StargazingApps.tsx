@@ -40,7 +40,7 @@ export default function StargazingApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -64,7 +64,7 @@ export default function StargazingApps() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best with grandkids</h3>
-            <p className="text-sm text-muted-foreground">SkyView Lite + a meteor shower night = magic. Bring lawn chairs, tea, and pick a date 1-2 days BEFORE the peak (less crowded, often clearer). Most kids remember the first time they spotted Saturn for life.</p>
+            <p className="text-base text-muted-foreground">SkyView Lite + a meteor shower night = magic. Bring lawn chairs, tea, and pick a date 1-2 days BEFORE the peak (less crowded, often clearer). Most kids remember the first time they spotted Saturn for life.</p>
           </CardContent>
         </Card>
       </main>

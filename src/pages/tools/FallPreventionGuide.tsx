@@ -19,7 +19,7 @@ export default function FallPreventionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Top home hazards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Loose rugs — tape down or remove.</li>
               <li>Dim hallways — add motion-sensor night lights ($15 set of 6).</li>
               <li>Wet bathroom floors — non-slip mat + grab bars.</li>
@@ -33,7 +33,7 @@ export default function FallPreventionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bathroom upgrades ($50-300)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Grab bars (not towel bars) — $20-40 each.</li>
               <li>Shower bench — $40-100.</li>
               <li>Raised toilet seat — $30-60.</li>
@@ -47,7 +47,7 @@ export default function FallPreventionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Strength + balance exercises</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tai Chi — proven to reduce falls 30%+.</li>
               <li>Sit-to-stands — 10 reps, 2x/day.</li>
               <li>Heel-to-toe walking — 20 steps daily.</li>
@@ -61,7 +61,7 @@ export default function FallPreventionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medical fall risks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Annual eye exam — vision changes cause falls.</li>
               <li>Annual hearing test — balance + hearing linked.</li>
               <li>Review meds with pharmacist — many cause dizziness.</li>
@@ -74,7 +74,7 @@ export default function FallPreventionGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tech that helps</h3>
-            <p className="text-sm text-muted-foreground"><strong>Apple Watch fall detection</strong> — auto-calls 911 + emergency contacts. <strong>Medical alert pendants</strong> (Lively, Medical Guardian) — $20-40/mo. <strong>Ring/Nest cameras</strong> — family can check in. See /tools/medical-alert-comparison.</p>
+            <p className="text-base text-muted-foreground"><strong>Apple Watch fall detection</strong> — auto-calls 911 + emergency contacts. <strong>Medical alert pendants</strong> (Lively, Medical Guardian) — $20-40/mo. <strong>Ring/Nest cameras</strong> — family can check in. See /tools/medical-alert-comparison.</p>
           </CardContent>
         </Card>
       </main>

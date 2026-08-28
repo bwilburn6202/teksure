@@ -32,7 +32,7 @@ export default function SeniorTvBuyingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">OLED vs QLED vs LED</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>OLED (LG, Sony)</strong> — best picture. Perfect blacks. $1,200-3,000.</li>
               <li><strong>QLED / Mini-LED (Samsung, TCL, Hisense)</strong> — very bright. Good for sunlit rooms. $700-2,500.</li>
               <li><strong>LED (most TVs)</strong> — basic. Fine for casual viewing. $300-1,500.</li>
@@ -44,7 +44,7 @@ export default function SeniorTvBuyingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart TV platform</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Roku TV (TCL, Hisense, some others)</strong> — easiest interface. Most senior-friendly.</li>
               <li><strong>Google TV (Sony, Hisense, others)</strong> — strong if you use Google.</li>
               <li><strong>LG webOS</strong> — clean, simple.</li>
@@ -58,7 +58,7 @@ export default function SeniorTvBuyingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Brand picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>LG OLED C-series</strong> — best premium picture. Senior-friendly remote.</li>
               <li><strong>Sony Bravia</strong> — best motion handling. Premium.</li>
               <li><strong>Samsung QLED</strong> — bright, vibrant.</li>
@@ -92,7 +92,7 @@ export default function SeniorTvBuyingGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best sale times</h3>
-            <p className="text-sm text-muted-foreground">Black Friday + the week before Super Bowl have the year\'s best TV deals. Costco and Best Buy carry extended warranties worth considering for a $1,000+ TV.</p>
+            <p className="text-base text-muted-foreground">Black Friday + the week before Super Bowl have the year\'s best TV deals. Costco and Best Buy carry extended warranties worth considering for a $1,000+ TV.</p>
           </CardContent>
         </Card>
       </main>

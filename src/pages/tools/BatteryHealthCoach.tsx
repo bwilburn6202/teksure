@@ -213,7 +213,7 @@ export default function BatteryHealthCoach() {
                       }`}
                     >
                       <p className="font-semibold mb-1">iPhone</p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         Find: Settings → Battery → Battery Health & Charging
                       </p>
                     </button>
@@ -227,7 +227,7 @@ export default function BatteryHealthCoach() {
                       }`}
                     >
                       <p className="font-semibold mb-1">Android Phone</p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         Samsung: Settings → Battery and device care → Battery
                       </p>
                     </button>
@@ -355,7 +355,7 @@ export default function BatteryHealthCoach() {
                       <Lightbulb className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
                       Expected remaining life
                     </h3>
-                    <p className="text-sm text-muted-foreground">{result.remainingLifeYears}</p>
+                    <p className="text-base text-muted-foreground">{result.remainingLifeYears}</p>
                   </CardContent>
                 </Card>
                 <Card>
@@ -364,7 +364,7 @@ export default function BatteryHealthCoach() {
                       <DollarSign className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
                       Replacement cost
                     </h3>
-                    <p className="text-sm text-muted-foreground">{result.replacementCost}</p>
+                    <p className="text-base text-muted-foreground">{result.replacementCost}</p>
                   </CardContent>
                 </Card>
               </div>
@@ -376,7 +376,7 @@ export default function BatteryHealthCoach() {
                     <Wrench className="h-5 w-5 text-muted-foreground" aria-hidden="true" />
                     Habits that extend battery life
                   </h3>
-                  <ul className="space-y-2 text-sm">
+                  <ul className="space-y-2 text-base">
                     {result.habits.map((h, i) => (
                       <li key={i} className="flex gap-2">
                         <span className="text-primary font-semibold">•</span>

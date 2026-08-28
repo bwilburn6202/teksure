@@ -35,7 +35,7 @@ export default function RuralInternet() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function RuralInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Decision tree</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Cell signal at home (any carrier)? → Try T-Mobile, Verizon, or AT&T home internet first. Cheapest.</li>
               <li>No cellular? Clear sky view? → Starlink. ~$120/mo, fast, reliable.</li>
               <li>No cellular AND tree-covered? → HughesNet/Viasat (limited speed) or wait for Starlink Mini.</li>
@@ -67,7 +67,7 @@ export default function RuralInternet() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For most rural seniors</h3>
-            <p className="text-sm text-muted-foreground"><strong>Try cellular home internet first</strong> — T-Mobile / Verizon. Cheapest, often great. If it doesn\'t work — Starlink. Skip HughesNet unless desperate.</p>
+            <p className="text-base text-muted-foreground"><strong>Try cellular home internet first</strong> — T-Mobile / Verizon. Cheapest, often great. If it doesn\'t work — Starlink. Skip HughesNet unless desperate.</p>
           </CardContent>
         </Card>
       </main>

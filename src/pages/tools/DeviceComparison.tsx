@@ -568,7 +568,7 @@ export default function DeviceComparison() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-base">
                 {active.takeaway.map((line, i) => (
                   <li key={i} className="flex gap-3">
                     <span className="text-foreground/40 mt-1">•</span>
@@ -588,7 +588,7 @@ export default function DeviceComparison() {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-5">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Answer these in your head. If most answers lean the same way, that's probably the right pick for you.
               </p>
               {active.decision.map((d, i) => (

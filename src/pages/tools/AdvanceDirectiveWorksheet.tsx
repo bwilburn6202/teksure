@@ -107,7 +107,7 @@ export default function AdvanceDirectiveWorksheet() {
             <h2 className="text-xl font-bold mb-2">My Advance Directive Wishes</h2>
             {name && <p className="text-sm">Patient: <strong>{name}</strong></p>}
             {proxy.name && <p className="text-sm">Healthcare proxy: <strong>{proxy.name}</strong>{proxy.relationship && ` (${proxy.relationship})`}{proxy.phone && ` — ${proxy.phone}`}</p>}
-            <div className="mt-3 space-y-2 text-sm">
+            <div className="mt-3 space-y-2 text-base">
               {QUESTIONS.map(q => answers[q.id] && (
                 <div key={q.id}>
                   <p className="font-semibold">{q.text}</p>

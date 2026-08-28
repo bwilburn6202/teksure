@@ -34,7 +34,7 @@ export default function FreelanceSenior() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function FreelanceSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best fields for senior freelancers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Writing + editing</strong> — articles, books, marketing.</li>
               <li><strong>Bookkeeping + accounting</strong> — small businesses.</li>
               <li><strong>HR consulting</strong> — for past managers/execs.</li>
@@ -60,7 +60,7 @@ export default function FreelanceSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set rates correctly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Charge full corporate value of your time, not hourly office rate.</li>
               <li>$50-150/hr typical for experienced consultants.</li>
               <li>$200-500/hr for specialists (legal, medical, financial).</li>
@@ -74,7 +74,7 @@ export default function FreelanceSenior() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Big mistake: undercharging</h3>
-            <p className="text-sm text-muted-foreground">Senior freelancers often underprice — feel guilty charging "real" rates. Don&apos;t. Your 30 years of experience is what clients pay premium for. They couldn&apos;t hire someone like you for $20/hr if they tried.</p>
+            <p className="text-base text-muted-foreground">Senior freelancers often underprice — feel guilty charging "real" rates. Don&apos;t. Your 30 years of experience is what clients pay premium for. They couldn&apos;t hire someone like you for $20/hr if they tried.</p>
           </CardContent>
         </Card>
       </main>

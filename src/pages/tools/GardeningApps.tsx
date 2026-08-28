@@ -33,7 +33,7 @@ export default function GardeningApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function GardeningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free gardening references</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>USDA Plant Hardiness Zone Map</strong> — type your zip code at planthardiness.ars.usda.gov to find your zone. Tells what survives winter.</li>
               <li><strong>Old Farmer\'s Almanac (almanac.com)</strong> — when to plant tomatoes, peppers, etc., for your zone.</li>
               <li><strong>Your county Extension office</strong> — most US counties have a free Cooperative Extension service. Free advice from real horticulturists. Search "[your county] cooperative extension".</li>
@@ -54,7 +54,7 @@ export default function GardeningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart garden gear worth knowing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Smart sprinkler controller (Rachio, Rain Bird LNK Wi-Fi)</strong> — $100-200. Skips watering on rainy days. Can save 30% on water bill.</li>
               <li><strong>Soil moisture meter</strong> — $20 stick that tells you whether to water. Cheap and surprisingly accurate.</li>
               <li><strong>Smart bird feeder camera</strong> — $150-300 (Bird Buddy, Birdfy). Identifies birds and emails you photos.</li>
@@ -65,7 +65,7 @@ export default function GardeningApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">If you forget to water — start with <strong>Planta\'s free version</strong>. If you want to grow vegetables — bookmark <strong>almanac.com</strong> and look up your zone\'s frost dates. If a plant is sick — open <strong>Vera</strong> (free) and let it diagnose.</p>
+            <p className="text-base text-muted-foreground">If you forget to water — start with <strong>Planta\'s free version</strong>. If you want to grow vegetables — bookmark <strong>almanac.com</strong> and look up your zone\'s frost dates. If a plant is sick — open <strong>Vera</strong> (free) and let it diagnose.</p>
           </CardContent>
         </Card>
       </main>

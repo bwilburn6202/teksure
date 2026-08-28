@@ -19,7 +19,7 @@ export default function OsteoporosisGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get tested</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>DEXA scan — measures bone density.</li>
               <li>Medicare covers every 2 yrs for women 65+.</li>
               <li>Men 70+ should get tested.</li>
@@ -32,7 +32,7 @@ export default function OsteoporosisGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Calcium + Vitamin D</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Calcium 1,200mg/day for women 50+, men 70+.</li>
               <li>From food first — yogurt, milk, cheese, fortified.</li>
               <li>Calcium supplement only if not getting enough food.</li>
@@ -46,7 +46,7 @@ export default function OsteoporosisGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Weight-bearing exercise</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walking, hiking, dancing — bones load.</li>
               <li>Strength training 2-3x/week — biggest impact.</li>
               <li>Avoid: forward bending, twisting if osteoporosis.</li>
@@ -60,7 +60,7 @@ export default function OsteoporosisGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medications</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bisphosphonates</strong> (Fosamax, Boniva) — first-line.</li>
               <li><strong>Reclast (zoledronic acid)</strong> — yearly IV. Avoids stomach issues.</li>
               <li><strong>Prolia (denosumab)</strong> — every 6 months injection.</li>
@@ -74,7 +74,7 @@ export default function OsteoporosisGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fall prevention essential</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 fall = potential hip fracture = 50% chance never walking same.</li>
               <li>See /tools/fall-prevention-guide.</li>
               <li>See /tools/stair-safety-checklist.</li>
@@ -88,7 +88,7 @@ export default function OsteoporosisGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>National Osteoporosis Foundation</strong> — bonehealthandosteoporosis.org. <strong>FRAX calculator</strong> — predicts 10-year fracture risk. <strong>NIH Osteoporosis Resource Center</strong> — niams.nih.gov. Quit smoking + limit alcohol = bones improve. It&apos;s never too late.</p>
+            <p className="text-base text-muted-foreground"><strong>National Osteoporosis Foundation</strong> — bonehealthandosteoporosis.org. <strong>FRAX calculator</strong> — predicts 10-year fracture risk. <strong>NIH Osteoporosis Resource Center</strong> — niams.nih.gov. Quit smoking + limit alcohol = bones improve. It&apos;s never too late.</p>
           </CardContent>
         </Card>
       </main>

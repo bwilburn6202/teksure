@@ -33,7 +33,7 @@ export default function BroadwayHDForSeniors() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BroadwayHDForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free / cheap options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YouTube</strong> — many free historic Broadway recordings.</li>
               <li><strong>PBS</strong> — Great Performances FREE (with ads or PBS app).</li>
               <li><strong>Hoopla</strong> (library) — many performance DVDs free.</li>
@@ -56,7 +56,7 @@ export default function BroadwayHDForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">In-person discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>TodayTix</strong> — last-minute Broadway 50% off.</li>
               <li><strong>TKTS booth</strong> — same-day NYC half-price.</li>
               <li><strong>Senior rush tickets</strong> — many Broadway shows.</li>
@@ -70,7 +70,7 @@ export default function BroadwayHDForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stream to TV</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most apps work on Roku, Apple TV, Fire TV.</li>
               <li>BroadwayHD on Smart TVs.</li>
               <li>Cast from phone via Chromecast / AirPlay.</li>
@@ -83,7 +83,7 @@ export default function BroadwayHDForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior season subscriptions</h3>
-            <p className="text-sm text-muted-foreground">Local symphony, opera, ballet, theater all offer SENIOR season subscriptions. Often 30-50% off individual tickets. Same seat each time. Some include parking + dinner. Great social outings. Search &quot;[your city] symphony senior subscription.&quot;</p>
+            <p className="text-base text-muted-foreground">Local symphony, opera, ballet, theater all offer SENIOR season subscriptions. Often 30-50% off individual tickets. Same seat each time. Some include parking + dinner. Great social outings. Search &quot;[your city] symphony senior subscription.&quot;</p>
           </CardContent>
         </Card>
       </main>

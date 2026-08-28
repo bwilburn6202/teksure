@@ -46,7 +46,7 @@ export default function SmartGarageOpener() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -69,7 +69,7 @@ export default function SmartGarageOpener() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For new install</h3>
-            <p className="text-sm text-muted-foreground">If buying a new opener, get the Chamberlain B6753T or similar belt-drive WITH built-in myQ. Quieter than chain drives, smart features included. Lasts 15+ years.</p>
+            <p className="text-base text-muted-foreground">If buying a new opener, get the Chamberlain B6753T or similar belt-drive WITH built-in myQ. Quieter than chain drives, smart features included. Lasts 15+ years.</p>
           </CardContent>
         </Card>
       </main>

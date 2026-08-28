@@ -19,7 +19,7 @@ export default function WalmartPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you get</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Free grocery delivery</strong> over $35 (huge for seniors).</li>
               <li><strong>Free shipping</strong> — no minimum on Walmart.com.</li>
               <li><strong>Same-day delivery</strong> in many areas.</li>
@@ -34,7 +34,7 @@ export default function WalmartPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Walmart+ vs Prime</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Walmart+ wins for</strong>: groceries, gas, in-store shopping, lower price.</li>
               <li><strong>Prime wins for</strong>: general merchandise, books/music/video, photo storage.</li>
               <li><strong>Both</strong> — fast delivery + savings.</li>
@@ -48,7 +48,7 @@ export default function WalmartPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for seniors who...</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Want grocery delivery instead of shopping.</li>
               <li>Live in Walmart trade area (most rural / suburban areas).</li>
               <li>Drive a lot (gas savings).</li>
@@ -62,7 +62,7 @@ export default function WalmartPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Walmart pharmacy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$4 generic prescriptions (4 dozen common drugs).</li>
               <li>Walmart+ members get more discounts.</li>
               <li>Free Rx delivery for Walmart+.</li>
@@ -75,7 +75,7 @@ export default function WalmartPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>App easier to use than Amazon for seniors.</li>
               <li>Larger text + simpler navigation.</li>
               <li>Schedule recurring grocery orders.</li>
@@ -89,7 +89,7 @@ export default function WalmartPlusReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try free first</h3>
-            <p className="text-sm text-muted-foreground">30-day free trial — try grocery delivery 4-5 times. If saved time + happy = keep. If only used 1-2x = cancel + use Walmart pickup (free) instead. Many seniors find Walmart+ more practical than Prime for daily life.</p>
+            <p className="text-base text-muted-foreground">30-day free trial — try grocery delivery 4-5 times. If saved time + happy = keep. If only used 1-2x = cancel + use Walmart pickup (free) instead. Many seniors find Walmart+ more practical than Prime for daily life.</p>
           </CardContent>
         </Card>
       </main>

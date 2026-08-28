@@ -40,7 +40,7 @@ export default function CognitiveSelfTest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to take it</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>sagetest.osu.edu</strong> and download the free PDF (4 different versions).</li>
               <li>Print it. You\'ll need a pen and a quiet 10-15 minutes.</li>
               <li>NO time pressure. Take as long as you need.</li>
@@ -54,7 +54,7 @@ export default function CognitiveSelfTest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other free options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mini-Cog</strong> — your doctor can do it in 3 minutes. Just ask at your next visit.</li>
               <li><strong>BrainTest (paid app, $30)</strong> — at-home tablet test. Mixed reviews.</li>
               <li><strong>Annual wellness visit</strong> — Medicare covers a free yearly cognitive screening as part of your annual wellness check. Most patients don\'t know to ask. Ask: "Can we do a cognitive screening today?"</li>
@@ -78,7 +78,7 @@ export default function CognitiveSelfTest() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best dementia prevention isn&apos;t apps</h3>
-            <p className="text-sm text-muted-foreground">Daily walks, social engagement, learning a language, treating high BP and diabetes, sleeping well, treating hearing loss. The data on these is much stronger than on brain-training apps.</p>
+            <p className="text-base text-muted-foreground">Daily walks, social engagement, learning a language, treating high BP and diabetes, sleeping well, treating hearing loss. The data on these is much stronger than on brain-training apps.</p>
           </CardContent>
         </Card>
       </main>

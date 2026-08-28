@@ -48,7 +48,7 @@ export default function SmartDeadboltPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -57,7 +57,7 @@ export default function SmartDeadboltPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Most smart deadbolts replace your existing deadbolt — same hole.</li>
               <li>Remove old deadbolt (4 screws).</li>
               <li>Drop in new deadbolt + secure.</li>
@@ -83,7 +83,7 @@ export default function SmartDeadboltPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best pick</h3>
-            <p className="text-sm text-muted-foreground"><strong>Schlage Encode Plus</strong> — keypad, Wi-Fi, key backup, Apple Home Key support. Reliable, well-built. Worth $80 over Kwikset Halo for build quality.</p>
+            <p className="text-base text-muted-foreground"><strong>Schlage Encode Plus</strong> — keypad, Wi-Fi, key backup, Apple Home Key support. Reliable, well-built. Worth $80 over Kwikset Halo for build quality.</p>
           </CardContent>
         </Card>
       </main>

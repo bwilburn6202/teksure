@@ -61,7 +61,7 @@ export default function PublicChargingSafety() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you MUST use a public USB</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>If your phone asks "Trust this computer?"</strong> — tap "Don't trust" or "Charge only".</li>
               <li>Turn the phone OFF before plugging in. It can charge while off.</li>
               <li>Buy a "USB data blocker" — a small adapter (around $8) that lets power through but blocks data. Put it between the public port and your cable.</li>

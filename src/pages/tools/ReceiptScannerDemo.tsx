@@ -163,7 +163,7 @@ export default function ReceiptScannerDemo() {
                       <Lightbulb className="h-5 w-5 text-primary" />
                       What can you do with receipt scanning?
                     </h2>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
+                    <ul className="space-y-2 text-base text-muted-foreground">
                       <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /><span>Track spending by category without manually entering anything</span></li>
                       <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /><span>Keep digital copies of receipts for returns or expense reports</span></li>
                       <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /><span>Check if you were charged the right price at checkout</span></li>
@@ -187,7 +187,7 @@ export default function ReceiptScannerDemo() {
                   <h2 className="font-bold text-lg mb-2">
                     {mode === 'uploading' ? 'Reading your receipt…' : 'Identifying items and prices…'}
                   </h2>
-                  <p className="text-sm text-muted-foreground">{fileName}</p>
+                  <p className="text-base text-muted-foreground">{fileName}</p>
                   <div className="mt-4 flex justify-center">
                     <div className="flex gap-1">
                       {[0, 1, 2].map((i) => (

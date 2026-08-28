@@ -166,7 +166,7 @@ export default function InternetSpeedNeeds() {
 
               <div className="rounded-lg bg-cyan-50 dark:bg-cyan-950/30 p-4">
                 <p className="font-semibold text-sm mb-1">Match: {result.plan}</p>
-                <p className="text-sm text-muted-foreground">{result.planNote}</p>
+                <p className="text-base text-muted-foreground">{result.planNote}</p>
               </div>
 
               {result.breakdown.length > 0 && (

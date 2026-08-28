@@ -19,7 +19,7 @@ export default function VideoLettersGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why video over written</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Grandkids will remember your VOICE.</li>
               <li>Easier than writing.</li>
               <li>Show personality, mannerisms.</li>
@@ -33,7 +33,7 @@ export default function VideoLettersGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Topics to record</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>The day grandkid was born — your memory.</li>
               <li>What you hope for them as adults.</li>
               <li>Family stories not in books.</li>
@@ -49,7 +49,7 @@ export default function VideoLettersGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to record</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone camera — Camera app → Video.</li>
               <li>Front camera so you see yourself.</li>
               <li>Good lighting (face the window).</li>
@@ -65,7 +65,7 @@ export default function VideoLettersGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to store</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iCloud / Google Photos</strong> — automatic backup.</li>
               <li><strong>External hard drive</strong> — give to kids.</li>
               <li><strong>YouTube</strong> — set as &quot;Unlisted&quot; for private sharing.</li>
@@ -79,7 +79,7 @@ export default function VideoLettersGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Time-locked services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>FutureMe.org</strong> — schedule emails to deliver later.</li>
               <li><strong>Vimeo Showcase</strong> — release on date you set.</li>
               <li><strong>Trust + Estate</strong> — instructions for video releases (graduations, marriages, births).</li>
@@ -92,7 +92,7 @@ export default function VideoLettersGrandkids() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Voicemail magic</h3>
-            <p className="text-sm text-muted-foreground">Save your phone&apos;s voicemail greeting from grandkids. Family member who passed = leave their voicemail recorded forever. Your voice = better than any written letter for grandkids&apos; memory. Even short clips become treasures decades later.</p>
+            <p className="text-base text-muted-foreground">Save your phone&apos;s voicemail greeting from grandkids. Family member who passed = leave their voicemail recorded forever. Your voice = better than any written letter for grandkids&apos; memory. Even short clips become treasures decades later.</p>
           </CardContent>
         </Card>
       </main>

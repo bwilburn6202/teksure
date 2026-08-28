@@ -36,7 +36,7 @@ export default function DigitalCameraPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1"><strong>Best:</strong> {p.best}</p>
-                <p className="text-sm text-muted-foreground"><strong>Cons:</strong> {p.cons}</p>
+                <p className="text-base text-muted-foreground"><strong>Cons:</strong> {p.cons}</p>
               </CardContent>
             </Card>
           ))}
@@ -45,7 +45,7 @@ export default function DigitalCameraPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you NEED a real camera</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sports / fast action</strong> — phones blur.</li>
               <li><strong>Wildlife / birds</strong> — need real zoom.</li>
               <li><strong>Low-light venues (concerts, recitals)</strong> — phones get noisy.</li>
@@ -81,7 +81,7 @@ export default function DigitalCameraPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — buy used</h3>
-            <p className="text-sm text-muted-foreground">A 2-year-old mirrorless camera with a kit lens is 90% as good as a brand new one. Save 30-50%. KEH and MPB stand behind their used gear.</p>
+            <p className="text-base text-muted-foreground">A 2-year-old mirrorless camera with a kit lens is 90% as good as a brand new one. Save 30-50%. KEH and MPB stand behind their used gear.</p>
           </CardContent>
         </Card>
       </main>

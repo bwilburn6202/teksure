@@ -34,7 +34,7 @@ export default function PhysicalTherapyApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function PhysicalTherapyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you need real PT</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>After surgery — knee, hip, back.</li>
               <li>After fall or fracture.</li>
               <li>Stroke recovery.</li>
@@ -58,7 +58,7 @@ export default function PhysicalTherapyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medicare PT coverage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medicare Part B covers PT — 80% after deductible.</li>
               <li>Need doctor referral.</li>
               <li>"Maintenance therapy" covered too (was previously denied — appeal won 2013).</li>
@@ -72,7 +72,7 @@ export default function PhysicalTherapyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best YouTube channels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bob and Brad PT</strong> — "Most Famous PTs on Internet". Senior-friendly.</li>
               <li><strong>Eldergym</strong> — Doug Schrift PT. Senior-specific.</li>
               <li><strong>SilverSneakers</strong> — free with Medicare Advantage. PT-style classes.</li>
@@ -85,7 +85,7 @@ export default function PhysicalTherapyApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Daily 15 minutes</h3>
-            <p className="text-sm text-muted-foreground">Daily 15-min PT exercise = better than weekly 1-hr session. Apps + YouTube fill gaps between in-person visits. Print exercises from in-person session — taping to wall reminds you.</p>
+            <p className="text-base text-muted-foreground">Daily 15-min PT exercise = better than weekly 1-hr session. Apps + YouTube fill gaps between in-person visits. Print exercises from in-person session — taping to wall reminds you.</p>
           </CardContent>
         </Card>
       </main>

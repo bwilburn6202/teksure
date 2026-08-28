@@ -41,7 +41,7 @@ export default function AntivirusPicker() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -93,7 +93,7 @@ export default function AntivirusPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best protection isn\'t software</h3>
-            <p className="text-sm text-muted-foreground">Strong unique passwords (use a password manager). Two-factor on important accounts. Don\'t click random links. Keep your operating system updated. These prevent more attacks than any antivirus catches.</p>
+            <p className="text-base text-muted-foreground">Strong unique passwords (use a password manager). Two-factor on important accounts. Don\'t click random links. Keep your operating system updated. These prevent more attacks than any antivirus catches.</p>
           </CardContent>
         </Card>
       </main>

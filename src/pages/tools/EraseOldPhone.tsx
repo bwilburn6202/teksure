@@ -35,7 +35,7 @@ export default function EraseOldPhone() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone wipe (do these IN ORDER)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li><strong>Back up first</strong> — Settings → tap your name → iCloud → "iCloud Backup" → "Back Up Now". Wait until done.</li>
                 <li><strong>Sign out of iCloud</strong> — Settings → tap your name → scroll down → "Sign Out". CRITICAL — without this, the phone is locked to YOU forever (Activation Lock).</li>
                 <li><strong>Sign out of iMessage and FaceTime</strong> — Settings → Messages → off. Settings → FaceTime → off. (Otherwise iPhone-to-iPhone messages won\'t reach the new owner\'s number.)</li>
@@ -52,7 +52,7 @@ export default function EraseOldPhone() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android wipe (do these IN ORDER)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li><strong>Back up first</strong> — Settings → Google → Backup → "Back up now".</li>
                 <li><strong>Remove your Google account</strong> — Settings → Accounts → tap your Google account → Remove account. (CRITICAL — without this, "Factory Reset Protection" locks the phone to you.)</li>
                 <li><strong>Remove Samsung account</strong> if Samsung Galaxy.</li>
@@ -69,7 +69,7 @@ export default function EraseOldPhone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For computers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mac</strong>: System Settings → General → "Transfer or Reset" → "Erase All Content and Settings". (Also signs out of all Apple services.)</li>
               <li><strong>Windows</strong>: Settings → Update & Security → Recovery → "Reset this PC" → "Remove everything" → "Clean drive".</li>
               <li><strong>Old hard drives (HDD)</strong> — physically destroy: drill, hammer, or use a $5 UPS Store shredding service.</li>
@@ -81,7 +81,7 @@ export default function EraseOldPhone() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For peace of mind</h3>
-            <p className="text-sm text-muted-foreground">After wiping, walk through the new-phone setup briefly. If your old name appears anywhere — wipe again. Most modern wipes are thorough enough that even forensic recovery tools can\'t get data back.</p>
+            <p className="text-base text-muted-foreground">After wiping, walk through the new-phone setup briefly. If your old name appears anywhere — wipe again. Most modern wipes are thorough enough that even forensic recovery tools can\'t get data back.</p>
           </CardContent>
         </Card>
       </main>

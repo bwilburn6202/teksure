@@ -19,7 +19,7 @@ export default function EmergencyFundForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How much?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>3-6 months of expenses minimum.</li>
               <li>Seniors — 6-12 months ideal.</li>
               <li>$10,000 baseline for most.</li>
@@ -33,7 +33,7 @@ export default function EmergencyFundForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to keep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>High-yield savings</strong> — 4-5% APY currently.</li>
               <li><strong>Marcus, Ally, Capital One 360</strong>.</li>
               <li>Online banks — better rates.</li>
@@ -47,7 +47,7 @@ export default function EmergencyFundForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior emergencies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medical bills not covered.</li>
               <li>Home repair (roof, HVAC).</li>
               <li>Car repair / replacement.</li>
@@ -62,7 +62,7 @@ export default function EmergencyFundForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Build slowly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Start with $1,000 baby step.</li>
               <li>Auto-transfer $50/wk.</li>
               <li>Tax refund into emergency.</li>
@@ -76,7 +76,7 @@ export default function EmergencyFundForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Real emergency only.</li>
               <li>Holiday spending = NOT emergency.</li>
               <li>Vacation = NOT emergency.</li>
@@ -90,7 +90,7 @@ export default function EmergencyFundForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Replace credit cards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t emergency = credit card.</li>
               <li>Interest 20%+ buries seniors.</li>
               <li>Cash = no debt fight.</li>
@@ -104,7 +104,7 @@ export default function EmergencyFundForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Sources beyond fund</h3>
-            <p className="text-sm text-muted-foreground">If emergency exceeds fund: home equity line, tax-free Roth withdrawal, family loan, payment plans (most providers offer). NEVER payday loans (predatory). NEVER &quot;reverse mortgage to fix problem&quot; (drains equity). Emergency fund first defense. Other sources as backup.</p>
+            <p className="text-base text-muted-foreground">If emergency exceeds fund: home equity line, tax-free Roth withdrawal, family loan, payment plans (most providers offer). NEVER payday loans (predatory). NEVER &quot;reverse mortgage to fix problem&quot; (drains equity). Emergency fund first defense. Other sources as backup.</p>
           </CardContent>
         </Card>
       </main>

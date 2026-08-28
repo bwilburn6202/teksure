@@ -663,7 +663,7 @@ export default function AppleWatchSetup() {
                 Start the setup walkthrough
                 <ArrowRight className="w-5 h-5" />
               </Button>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 12 short steps. Your progress is saved automatically.
               </p>
             </div>
@@ -1182,7 +1182,7 @@ function HealthFeaturesWalkthrough() {
                   <div className="flex-1">
                     <h3 className="text-lg md:text-xl font-semibold">{f.title}</h3>
                     {f.eligibility && (
-                      <p className="text-sm text-muted-foreground">{f.eligibility}</p>
+                      <p className="text-base text-muted-foreground">{f.eligibility}</p>
                     )}
                   </div>
                 </div>

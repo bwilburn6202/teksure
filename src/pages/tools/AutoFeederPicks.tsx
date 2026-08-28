@@ -33,7 +33,7 @@ export default function AutoFeederPicks() {
                   <span className="text-sm font-semibold text-primary">{f.cost}</span>
                 </div>
                 <p className="text-sm">{f.best}</p>
-                <p className="text-sm text-muted-foreground">{f.good}</p>
+                <p className="text-base text-muted-foreground">{f.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function AutoFeederPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When auto-feeders help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Diabetic pet needs precise meals.</li>
               <li>Pet who wakes you at 5 AM for food.</li>
               <li>Travel — short trips you can leave food set.</li>
@@ -56,7 +56,7 @@ export default function AutoFeederPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup tips</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Start in the room you currently feed — don&apos;t change locations + machines at once.</li>
               <li>Run on schedule for 1 week WITHOUT food in feeder, so pet learns the sound.</li>
               <li>Then start regular meals.</li>
@@ -69,7 +69,7 @@ export default function AutoFeederPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Auto water fountains too</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>PetSafe Drinkwell</strong> — $40-80. Filters + circulates.</li>
               <li><strong>Catit Flower Fountain</strong> — $30. Cats love flowing water.</li>
               <li>Cleaner water = better drinking habits = better kidneys.</li>
@@ -81,7 +81,7 @@ export default function AutoFeederPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t auto-feed for vacations longer than 3 days</h3>
-            <p className="text-sm text-muted-foreground">Auto-feeders fail. Hoppers jam. Pets need real check-ins for trips longer than 2-3 days. Hire a pet sitter (Rover, Wag, neighbor). Auto-feeder is supplement, not replacement, for actual visits.</p>
+            <p className="text-base text-muted-foreground">Auto-feeders fail. Hoppers jam. Pets need real check-ins for trips longer than 2-3 days. Hire a pet sitter (Rover, Wag, neighbor). Auto-feeder is supplement, not replacement, for actual visits.</p>
           </CardContent>
         </Card>
       </main>

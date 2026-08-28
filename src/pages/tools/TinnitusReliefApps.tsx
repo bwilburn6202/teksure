@@ -33,7 +33,7 @@ export default function TinnitusReliefApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function TinnitusReliefApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tinnitus 101</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ringing/buzzing/whistling in ears.</li>
               <li>50% of seniors have it.</li>
               <li>No cure but management possible.</li>
@@ -56,7 +56,7 @@ export default function TinnitusReliefApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What helps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>White / pink / brown noise (find what works for you).</li>
               <li>Hearing aids with masking feature.</li>
               <li>Cognitive Behavioral Therapy (CBT) for tinnitus.</li>
@@ -71,7 +71,7 @@ export default function TinnitusReliefApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Background Sounds (FREE)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Accessibility → Audio &amp; Visual → Background Sounds.</li>
               <li>White, pink, brown noise built-in.</li>
               <li>Play continuously.</li>
@@ -85,7 +85,7 @@ export default function TinnitusReliefApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to see audiologist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tinnitus disrupting sleep.</li>
               <li>Affecting concentration.</li>
               <li>One ear only (rule out medical cause).</li>
@@ -100,7 +100,7 @@ export default function TinnitusReliefApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>American Tinnitus Association</strong> — ata.org. Free guides + support. <strong>Tinnitus Practitioners Association</strong> — find specialists. <strong>BTA (UK)</strong> — also has US resources. Many seniors live well with tinnitus once they find right strategies. Don&apos;t give up.</p>
+            <p className="text-base text-muted-foreground"><strong>American Tinnitus Association</strong> — ata.org. Free guides + support. <strong>Tinnitus Practitioners Association</strong> — find specialists. <strong>BTA (UK)</strong> — also has US resources. Many seniors live well with tinnitus once they find right strategies. Don&apos;t give up.</p>
           </CardContent>
         </Card>
       </main>

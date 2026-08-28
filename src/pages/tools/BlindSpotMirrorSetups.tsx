@@ -19,7 +19,7 @@ export default function BlindSpotMirrorSetups() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best blind spot mirrors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ampper Round 2"</strong> — $7. Most popular. Stick-on, adjustable.</li>
               <li><strong>Utopicar 2-pack</strong> — $10. Frameless design.</li>
               <li><strong>Liberrway Convex</strong> — $10. Wider angle.</li>
@@ -33,7 +33,7 @@ export default function BlindSpotMirrorSetups() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Side mirror angle (BAS Method)</h2>
             <p className="text-sm">SAE / BAS Method by SAE International — eliminates traditional blind spots:</p>
-            <ol className="list-decimal pl-5 space-y-2 text-sm mt-2">
+            <ol className="list-decimal pl-5 space-y-2 text-base mt-2">
               <li>Sit in driver seat, head against window.</li>
               <li>Adjust LEFT mirror — see only EDGE of car.</li>
               <li>Sit upright, head toward center.</li>
@@ -48,7 +48,7 @@ export default function BlindSpotMirrorSetups() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other senior-driving safety tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bigger interior rearview mirror</strong> ($30) — clip-on extension.</li>
               <li><strong>Anti-glare film</strong> for windshield ($20).</li>
               <li><strong>Lighted rearview mirror</strong> ($15) — for night.</li>
@@ -62,7 +62,7 @@ export default function BlindSpotMirrorSetups() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bigger advice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Avoid lane-changes on busy highways when possible.</li>
               <li>Always shoulder-check before changing lanes (mirror + glance).</li>
               <li>Slow down 5 mph below traffic flow if comfortable — let others pass.</li>
@@ -75,7 +75,7 @@ export default function BlindSpotMirrorSetups() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Newer cars do this for you</h3>
-            <p className="text-sm text-muted-foreground">Cars 2018+ often have blind spot warning beeps + lane departure alerts. If considering new car, prioritize these features. They prevent way more accidents than horsepower.</p>
+            <p className="text-base text-muted-foreground">Cars 2018+ often have blind spot warning beeps + lane departure alerts. If considering new car, prioritize these features. They prevent way more accidents than horsepower.</p>
           </CardContent>
         </Card>
       </main>

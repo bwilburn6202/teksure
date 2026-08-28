@@ -19,7 +19,7 @@ export default function AppleWalletForLoyalty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What Apple Wallet does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Built into every iPhone — free.</li>
               <li>Stores credit cards, loyalty cards, boarding passes.</li>
               <li>Movie + concert tickets.</li>
@@ -33,7 +33,7 @@ export default function AppleWalletForLoyalty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Add loyalty cards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most chain stores — CVS, Walgreens, Target, Kroger.</li>
               <li>Open store&apos;s app first — find &quot;Add to Apple Wallet.&quot;</li>
               <li>Or scan physical card barcode in Wallet.</li>
@@ -47,7 +47,7 @@ export default function AppleWalletForLoyalty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best loyalty cards to add</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>CVS ExtraCare.</li>
               <li>Walgreens MyWalgreens.</li>
               <li>Kroger Plus.</li>
@@ -61,7 +61,7 @@ export default function AppleWalletForLoyalty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tap to Pay</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Add credit card to Wallet.</li>
               <li>Tap iPhone on payment terminal.</li>
               <li>Use Face ID / Touch ID to confirm.</li>
@@ -75,7 +75,7 @@ export default function AppleWalletForLoyalty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Boarding passes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Airline app → Add to Apple Wallet.</li>
               <li>Show phone at TSA + gate.</li>
               <li>Auto-displays before flight.</li>
@@ -89,7 +89,7 @@ export default function AppleWalletForLoyalty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android Google Wallet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Same concept on Android.</li>
               <li>Stores loyalty cards, payment cards.</li>
               <li>Tap to pay.</li>
@@ -103,7 +103,7 @@ export default function AppleWalletForLoyalty() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Empty your wallet</h3>
-            <p className="text-sm text-muted-foreground">If your physical wallet is bursting with loyalty cards, spend 30 minutes adding them all to Apple Wallet. Most chain store apps have an &quot;Add to Apple Wallet&quot; button. Once added, you can leave the physical cards at home. Combined with Tap to Pay for credit cards, you might never need a physical wallet for shopping again.</p>
+            <p className="text-base text-muted-foreground">If your physical wallet is bursting with loyalty cards, spend 30 minutes adding them all to Apple Wallet. Most chain store apps have an &quot;Add to Apple Wallet&quot; button. Once added, you can leave the physical cards at home. Combined with Tap to Pay for credit cards, you might never need a physical wallet for shopping again.</p>
           </CardContent>
         </Card>
       </main>

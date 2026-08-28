@@ -19,7 +19,7 @@ export default function BedtimePhoneRoutine() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">2-hour wind down</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>2 hours before bed</strong> — last big meal, no caffeine.</li>
               <li><strong>1.5 hours before</strong> — dim lights at home.</li>
               <li><strong>1 hour before</strong> — stop news, work email.</li>
@@ -33,7 +33,7 @@ export default function BedtimePhoneRoutine() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Bedtime</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Focus → Sleep.</li>
               <li>Set schedule (e.g., 10 PM-6 AM).</li>
               <li>All notifications silenced except chosen people (kids).</li>
@@ -47,7 +47,7 @@ export default function BedtimePhoneRoutine() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Replace phone with</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Kindle e-reader</strong> ($110) — no blue light, like real paper.</li>
               <li><strong>Audiobook on Echo Dot</strong> — bedside, eyes closed.</li>
               <li><strong>Old-school alarm clock</strong> — $15. No phone next to bed needed.</li>
@@ -61,7 +61,7 @@ export default function BedtimePhoneRoutine() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why phone in bed hurts sleep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Blue light suppresses melatonin (sleep hormone).</li>
               <li>Notifications spike cortisol (stress).</li>
               <li>News + social media = anxiety.</li>
@@ -75,7 +75,7 @@ export default function BedtimePhoneRoutine() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you sleep poorly anyway</h3>
-            <p className="text-sm text-muted-foreground">Up to 50% of seniors have sleep apnea (often undiagnosed). If snoring + tired despite 8 hrs in bed — ask doctor for sleep study. Treating apnea (CPAP) can transform health. Sleep apnea is also a major heart disease + dementia risk factor.</p>
+            <p className="text-base text-muted-foreground">Up to 50% of seniors have sleep apnea (often undiagnosed). If snoring + tired despite 8 hrs in bed — ask doctor for sleep study. Treating apnea (CPAP) can transform health. Sleep apnea is also a major heart disease + dementia risk factor.</p>
           </CardContent>
         </Card>
       </main>

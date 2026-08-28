@@ -19,7 +19,7 @@ export default function DigitalLegacyPlanning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why this matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family will need access to photos + emails.</li>
               <li>Without planning, accounts may be permanently locked.</li>
               <li>Banks need access to close accounts.</li>
@@ -33,7 +33,7 @@ export default function DigitalLegacyPlanning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Legacy Contact</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Apple ID → Legacy Contact.</li>
               <li>Designate up to 5 trusted people.</li>
               <li>They can request data after death certificate.</li>
@@ -47,7 +47,7 @@ export default function DigitalLegacyPlanning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Google Inactive Account</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>myaccount.google.com → Data + Privacy.</li>
               <li>Inactive Account Manager.</li>
               <li>Set period (3, 6, 12, 18 months inactivity).</li>
@@ -61,7 +61,7 @@ export default function DigitalLegacyPlanning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Facebook + social media</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Facebook: Memorialize or delete account.</li>
               <li>Settings → Memorialization Settings.</li>
               <li>Designate &quot;Legacy Contact&quot; to manage.</li>
@@ -75,7 +75,7 @@ export default function DigitalLegacyPlanning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Password manager + access</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1Password — Family plan with emergency access.</li>
               <li>LastPass + Bitwarden — emergency access settings.</li>
               <li>Designate trusted person for password access.</li>
@@ -89,7 +89,7 @@ export default function DigitalLegacyPlanning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Document for executor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>List all online accounts (without passwords).</li>
               <li>Banking + investment login URLs.</li>
               <li>Subscription services to cancel.</li>
@@ -103,7 +103,7 @@ export default function DigitalLegacyPlanning() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Set up Legacy Contact this week</h3>
-            <p className="text-sm text-muted-foreground">If you have an iPhone, set up Apple Legacy Contact today (10 minutes). Same for Google Inactive Account Manager. These ensure your photos, emails, and digital memories pass to family members. Without these, after death, accounts often become impossible to access. Your children deserve to inherit your photos and memories — not lose them to corporate policy.</p>
+            <p className="text-base text-muted-foreground">If you have an iPhone, set up Apple Legacy Contact today (10 minutes). Same for Google Inactive Account Manager. These ensure your photos, emails, and digital memories pass to family members. Without these, after death, accounts often become impossible to access. Your children deserve to inherit your photos and memories — not lose them to corporate policy.</p>
           </CardContent>
         </Card>
       </main>

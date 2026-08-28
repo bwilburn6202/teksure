@@ -43,7 +43,7 @@ export default function SmartScaleBpCuffPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -68,7 +68,7 @@ export default function SmartScaleBpCuffPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sharing data with your doctor</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sync the device with Apple Health (iPhone) or Google Fit / Health Connect (Android).</li>
               <li>Show your doctor the trend chart at next visit.</li>
               <li>Some patient portals (MyChart, Epic) accept Apple Health data directly.</li>
@@ -80,7 +80,7 @@ export default function SmartScaleBpCuffPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Insurance coverage</h3>
-            <p className="text-sm text-muted-foreground">Many Medicare Advantage plans include a free BP cuff or smart scale. Some traditional insurance covers them with prescription. Ask your doctor and call your plan before paying.</p>
+            <p className="text-base text-muted-foreground">Many Medicare Advantage plans include a free BP cuff or smart scale. Some traditional insurance covers them with prescription. Ask your doctor and call your plan before paying.</p>
           </CardContent>
         </Card>
       </main>

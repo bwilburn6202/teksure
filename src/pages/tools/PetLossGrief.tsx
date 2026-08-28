@@ -19,7 +19,7 @@ export default function PetLossGrief() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pet loss helplines (free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ASPCA Pet Loss Hotline</strong> — 1-877-474-3310, daytime hours.</li>
               <li><strong>Cornell University Pet Loss Support Hotline</strong> — 607-218-7457.</li>
               <li><strong>Lap of Love</strong> — 855-327-4212. Hospice + grief support.</li>
@@ -32,7 +32,7 @@ export default function PetLossGrief() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online support</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Association for Pet Loss and Bereavement (aplb.org)</strong>.</li>
               <li><strong>Reddit r/Petloss</strong> — kind community, 24/7.</li>
               <li><strong>Pet Compassion Careline</strong> — 855-245-8214.</li>
@@ -73,7 +73,7 @@ export default function PetLossGrief() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For kids</h3>
-            <p className="text-sm text-muted-foreground">If grandkids are processing pet loss — books like "The Tenth Good Thing About Barney" (preschool), "Goodbye Mog" (older), "Where the Red Fern Grows" (teens) help. Be honest about death; kids often handle it better when not protected from it.</p>
+            <p className="text-base text-muted-foreground">If grandkids are processing pet loss — books like "The Tenth Good Thing About Barney" (preschool), "Goodbye Mog" (older), "Where the Red Fern Grows" (teens) help. Be honest about death; kids often handle it better when not protected from it.</p>
           </CardContent>
         </Card>
       </main>

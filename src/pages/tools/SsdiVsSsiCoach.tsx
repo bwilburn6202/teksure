@@ -57,7 +57,7 @@ export default function SsdiVsSsiCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to apply</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Apply online at <strong>ssa.gov/applyfordisability</strong>.</li>
               <li>Or call 1-800-772-1213.</li>
               <li>Or visit a local SSA office (long lines, but personal help).</li>
@@ -78,7 +78,7 @@ export default function SsdiVsSsiCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get help — fee is free if you don\'t win</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Disability lawyers</strong> — typically work on contingency. They get paid only if you win, capped at 25% of back-pay (max ~$7,200 in 2025). Look for "non-attorney representative" too — same idea, sometimes cheaper.</li>
               <li><strong>State Vocational Rehabilitation</strong> — free.</li>
               <li><strong>NOSSCR.org</strong> — find disability advocates by state.</li>
@@ -103,7 +103,7 @@ export default function SsdiVsSsiCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you\'re close to retirement age</h3>
-            <p className="text-sm text-muted-foreground">If you\'re within a few years of full retirement age, sometimes early retirement is faster than fighting for SSDI. SSDI converts to retirement at FRA anyway. A disability lawyer can help you decide which path is better for your situation.</p>
+            <p className="text-base text-muted-foreground">If you\'re within a few years of full retirement age, sometimes early retirement is faster than fighting for SSDI. SSDI converts to retirement at FRA anyway. A disability lawyer can help you decide which path is better for your situation.</p>
           </CardContent>
         </Card>
       </main>

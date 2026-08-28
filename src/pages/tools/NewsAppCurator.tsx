@@ -71,7 +71,7 @@ export default function NewsAppCurator() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — turn off most notifications</h3>
-            <p className="text-sm text-muted-foreground">News apps default to "breaking news" alerts every 20 minutes. Almost none are urgent. Settings → Notifications → tap each news app → "Important only" or off. Read on your schedule, not theirs.</p>
+            <p className="text-base text-muted-foreground">News apps default to "breaking news" alerts every 20 minutes. Almost none are urgent. Settings → Notifications → tap each news app → "Important only" or off. Read on your schedule, not theirs.</p>
           </CardContent>
         </Card>
       </main>

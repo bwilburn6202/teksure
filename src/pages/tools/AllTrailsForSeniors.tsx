@@ -19,7 +19,7 @@ export default function AllTrailsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is AllTrails?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most popular hiking app — 50 million users.</li>
               <li>Free with optional Pro ($36/year).</li>
               <li>Browse + filter trails by difficulty.</li>
@@ -33,7 +33,7 @@ export default function AllTrailsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Filter for senior-friendly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Difficulty — Easy.</li>
               <li>Length — under 3 miles.</li>
               <li>Elevation gain — under 200 feet.</li>
@@ -47,7 +47,7 @@ export default function AllTrailsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pro features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download maps for offline use.</li>
               <li>Live updates — wrong turn alerts.</li>
               <li>Share location with family.</li>
@@ -61,7 +61,7 @@ export default function AllTrailsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hiking safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Always tell someone where you go.</li>
               <li>Carry water + snacks.</li>
               <li>Charged phone with offline map.</li>
@@ -75,7 +75,7 @@ export default function AllTrailsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly trails</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>National parks have senior loops.</li>
               <li>State parks often easier.</li>
               <li>Rail trails — flat, gravel paths.</li>
@@ -89,7 +89,7 @@ export default function AllTrailsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Group hiking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior hiking groups via Meetup.com.</li>
               <li>Local Audubon Society walks.</li>
               <li>Park rangers lead free hikes.</li>
@@ -103,7 +103,7 @@ export default function AllTrailsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Filter Easy + under 3 miles</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t be intimidated by hiking apps. Filter AllTrails for &quot;Easy&quot; difficulty + under 3 miles + under 200 feet elevation gain. You&apos;ll find dozens of beautiful walks near you. Many are paved, accessible. Take your time, bring water, enjoy the views. Many seniors discover wonderful trails 15 minutes from home they never knew existed.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t be intimidated by hiking apps. Filter AllTrails for &quot;Easy&quot; difficulty + under 3 miles + under 200 feet elevation gain. You&apos;ll find dozens of beautiful walks near you. Many are paved, accessible. Take your time, bring water, enjoy the views. Many seniors discover wonderful trails 15 minutes from home they never knew existed.</p>
           </CardContent>
         </Card>
       </main>

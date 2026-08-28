@@ -19,7 +19,7 @@ export default function PrimeDayBlackFriday() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sale calendar</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Prime Day</strong> — early/mid July. 2 days.</li>
               <li><strong>Big Deal Days</strong> — Amazon&apos;s October Prime Day.</li>
               <li><strong>Black Friday</strong> — day after Thanksgiving (now starts in early Nov).</li>
@@ -34,7 +34,7 @@ export default function PrimeDayBlackFriday() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real deals on these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Amazon devices</strong> — Echo, Fire TV, Kindle. Best prices yearly.</li>
               <li><strong>TVs</strong> — November-December.</li>
               <li><strong>Laptops</strong> — Black Friday, back-to-school.</li>
@@ -48,7 +48,7 @@ export default function PrimeDayBlackFriday() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fake deal warning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many &quot;deals&quot; are SAME PRICE rest of year.</li>
               <li>Use Camelcamelcamel.com for Amazon price history.</li>
               <li>Honey extension shows &quot;is this lowest price?&quot;</li>
@@ -62,7 +62,7 @@ export default function PrimeDayBlackFriday() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior strategy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Make wishlist BEFORE sales.</li>
               <li>Add items to Amazon wishlist — alerts on price drops.</li>
               <li>Set price tracking on Camelcamelcamel.</li>
@@ -76,7 +76,7 @@ export default function PrimeDayBlackFriday() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stack discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sale price + Rakuten cashback + credit card reward = 20-30% off.</li>
               <li>AARP discounts at participating retailers.</li>
               <li>Senior days (1st Tuesday at Goodwill, last Wed at Kohl&apos;s).</li>
@@ -89,7 +89,7 @@ export default function PrimeDayBlackFriday() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>Slickdeals.net</strong> — community-vetted deals. <strong>The Wirecutter</strong> — only legit deals on their picks. <strong>Reddit r/buildapcsales</strong> — tech. Skip pre-Black Friday hype articles. Buy what you need, when you need, at lowest historical price.</p>
+            <p className="text-base text-muted-foreground"><strong>Slickdeals.net</strong> — community-vetted deals. <strong>The Wirecutter</strong> — only legit deals on their picks. <strong>Reddit r/buildapcsales</strong> — tech. Skip pre-Black Friday hype articles. Buy what you need, when you need, at lowest historical price.</p>
           </CardContent>
         </Card>
       </main>

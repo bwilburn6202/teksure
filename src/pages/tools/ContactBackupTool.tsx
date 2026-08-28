@@ -295,7 +295,7 @@ export default function ContactBackupTool() {
                 </button>
                 {showExport && (
                   <div className="mt-4 space-y-3">
-                    <p className="text-sm text-muted-foreground">Save a copy of your contacts as a file that you can store on your computer or a USB drive.</p>
+                    <p className="text-base text-muted-foreground">Save a copy of your contacts as a file that you can store on your computer or a USB drive.</p>
                     {exportSteps.map((step, i) => (
                       <div key={i} className="flex gap-3 text-sm">
                         <span className="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-950/30 text-blue-700 text-xs flex items-center justify-center font-medium">{i + 1}</span>

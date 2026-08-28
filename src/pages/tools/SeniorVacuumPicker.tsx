@@ -47,7 +47,7 @@ export default function SeniorVacuumPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -81,7 +81,7 @@ export default function SeniorVacuumPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best combo</h3>
-            <p className="text-sm text-muted-foreground">Cordless stick (Shark or Dyson) + a robot vacuum (Roomba). Stick for "I see crumbs, let me clean now". Robot for daily floor maintenance. Together about $500-1,000. Knees never hurt again.</p>
+            <p className="text-base text-muted-foreground">Cordless stick (Shark or Dyson) + a robot vacuum (Roomba). Stick for "I see crumbs, let me clean now". Robot for daily floor maintenance. Together about $500-1,000. Knees never hurt again.</p>
           </CardContent>
         </Card>
       </main>

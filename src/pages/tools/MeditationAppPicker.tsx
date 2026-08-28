@@ -62,7 +62,7 @@ export default function MeditationAppPicker() {
         <Card className="mt-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free options that work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Insight Timer</strong> — 200,000+ free meditations. Pick a teacher you like. Most work is free; the "Member Plus" upgrade isn't needed.</li>
               <li><strong>Smiling Mind</strong> — completely free, no ads. Australian non-profit. Strong programs for sleep and chronic pain.</li>
               <li><strong>YouTube</strong> — search "guided meditation for sleep, 30 minutes". Hundreds of free options.</li>
@@ -86,7 +86,7 @@ export default function MeditationAppPicker() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Important caveat</h3>
-            <p className="text-sm text-muted-foreground">Meditation can help mild anxiety and sleep issues. It's not a substitute for therapy or medication for depression, anxiety disorders, or insomnia. If you've been struggling, talk to your doctor.</p>
+            <p className="text-base text-muted-foreground">Meditation can help mild anxiety and sleep issues. It's not a substitute for therapy or medication for depression, anxiety disorders, or insomnia. If you've been struggling, talk to your doctor.</p>
           </CardContent>
         </Card>
       </main>

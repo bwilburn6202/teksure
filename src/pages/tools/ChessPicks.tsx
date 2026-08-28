@@ -33,7 +33,7 @@ export default function ChessPicks() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function ChessPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Chess.com vs Lichess</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Chess.com</strong> — biggest community, more features. Free is plenty.</li>
               <li><strong>Lichess</strong> — completely free + open-source. No paid wall.</li>
               <li>Both have apps. Both let you play humans worldwide 24/7.</li>
@@ -55,7 +55,7 @@ export default function ChessPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior strategies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Play "rapid" or "daily" — not 1-minute "bullet" (too fast/stressful).</li>
               <li>Play computer at YOUR level. Win 50% of time = right level.</li>
               <li>Daily puzzles 5-10 min — best chess training there is.</li>
@@ -68,7 +68,7 @@ export default function ChessPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Brain benefits</h3>
-            <p className="text-sm text-muted-foreground">Studies show chess players have lower dementia rates. The pattern recognition, memory + planning all light up brain. Even 30 min/day measurably benefits cognitive aging. AND it&apos;s fun.</p>
+            <p className="text-base text-muted-foreground">Studies show chess players have lower dementia rates. The pattern recognition, memory + planning all light up brain. Even 30 min/day measurably benefits cognitive aging. AND it&apos;s fun.</p>
           </CardContent>
         </Card>
       </main>

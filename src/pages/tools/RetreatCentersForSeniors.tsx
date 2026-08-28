@@ -19,7 +19,7 @@ export default function RetreatCentersForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Buddhist / meditation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Insight Meditation Society (Massachusetts)</strong> — silent meditation retreats.</li>
               <li><strong>Spirit Rock (California)</strong> — Buddhist meditation.</li>
               <li><strong>Plum Village (worldwide)</strong> — Thich Nhat Hanh tradition.</li>
@@ -33,7 +33,7 @@ export default function RetreatCentersForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Christian retreats</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Trappist monasteries</strong> — silent retreats welcome guests.</li>
               <li><strong>Catholic retreat centers</strong> — most dioceses have.</li>
               <li><strong>Jesuit retreats</strong> — Ignatian spirituality.</li>
@@ -47,7 +47,7 @@ export default function RetreatCentersForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Yoga + wellness retreats</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Kripalu (Massachusetts)</strong> — yoga + wellness.</li>
               <li><strong>Esalen (California)</strong> — Big Sur, healing arts.</li>
               <li><strong>Omega Institute (NY)</strong> — varied programs.</li>
@@ -61,7 +61,7 @@ export default function RetreatCentersForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific retreats</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Road Scholar retreats</strong> — educational + spiritual.</li>
               <li><strong>Sage-ing International</strong> — conscious aging programs.</li>
               <li><strong>Encore Adventures</strong> — second-act retreats.</li>
@@ -75,7 +75,7 @@ export default function RetreatCentersForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why retreat?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Break from routine.</li>
               <li>Process big life changes (retirement, loss).</li>
               <li>Deepen meditation / spiritual practice.</li>
@@ -90,7 +90,7 @@ export default function RetreatCentersForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Local + free options</h3>
-            <p className="text-sm text-muted-foreground">No need to travel. <strong>Local Buddhist temples</strong> often have weekend retreats. <strong>Catholic monasteries</strong> welcome day visitors free. <strong>Quaker silent meetings</strong> — totally free. Even a 24-hour personal retreat at hotel — phone off, journal, walk = transformative. Try once a year.</p>
+            <p className="text-base text-muted-foreground">No need to travel. <strong>Local Buddhist temples</strong> often have weekend retreats. <strong>Catholic monasteries</strong> welcome day visitors free. <strong>Quaker silent meetings</strong> — totally free. Even a 24-hour personal retreat at hotel — phone off, journal, walk = transformative. Try once a year.</p>
           </CardContent>
         </Card>
       </main>

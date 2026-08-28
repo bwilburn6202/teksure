@@ -362,7 +362,7 @@ export default function StorageCleanup() {
                         {osOptions.find(o => o.type === os)?.emoji}{' '}
                         {osOptions.find(o => o.type === os)?.label} — Cleanup Checklist
                       </h2>
-                      <p className="text-sm text-muted-foreground">Tick each step as you go</p>
+                      <p className="text-base text-muted-foreground">Tick each step as you go</p>
                     </div>
                     <Button variant="ghost" size="sm" onClick={handleReset} className="text-muted-foreground">
                       <RotateCcw className="h-3.5 w-3.5 mr-1" /> Change

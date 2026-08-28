@@ -35,7 +35,7 @@ export default function DebtPayoffPlanner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Snowball vs Avalanche</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Snowball</strong> — pay smallest first. Quick wins motivate. Best for emotional motivation.</li>
               <li><strong>Avalanche</strong> — pay highest-rate first. Saves more money. Best for math.</li>
               <li>Pick whichever you&apos;ll stick with — winning habit beats optimal math.</li>
@@ -46,7 +46,7 @@ export default function DebtPayoffPlanner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Undebt.it</strong> — free. Builds payoff timeline.</li>
               <li><strong>Debt Free Charts (printable)</strong> — color in as you pay off. Visual motivation.</li>
               <li><strong>Empower Debt Tracker</strong> — free.</li>
@@ -59,7 +59,7 @@ export default function DebtPayoffPlanner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior debt tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Don&apos;t cash out 401k early</strong> — taxes + lost retirement. Last resort.</li>
               <li><strong>0% balance transfer cards</strong> — pay off before promo ends.</li>
               <li><strong>Personal loans (5-10% APR)</strong> often beat credit card rates (18-29%).</li>
@@ -73,7 +73,7 @@ export default function DebtPayoffPlanner() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AVOID debt-relief scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Debt forgiveness" + government loans = often lies.</li>
               <li>Stop-paying-creditors schemes hurt credit + may not work.</li>
               <li>Door-to-door = always scam.</li>
@@ -87,7 +87,7 @@ export default function DebtPayoffPlanner() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free non-profit help</h3>
-            <p className="text-sm text-muted-foreground"><strong>NFCC.org</strong> — National Foundation for Credit Counseling. Real non-profit. Free counseling. Can negotiate debt management plans with creditors. <strong>Money Management International</strong> — same thing. Avoid for-profit "debt relief" companies.</p>
+            <p className="text-base text-muted-foreground"><strong>NFCC.org</strong> — National Foundation for Credit Counseling. Real non-profit. Free counseling. Can negotiate debt management plans with creditors. <strong>Money Management International</strong> — same thing. Avoid for-profit "debt relief" companies.</p>
           </CardContent>
         </Card>
       </main>

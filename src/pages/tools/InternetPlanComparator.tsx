@@ -212,7 +212,7 @@ export default function InternetPlanComparator() {
                             {!hasEnoughSpeed && <Badge variant="outline" className="text-amber-600 border-amber-600">Speed may be low</Badge>}
                             {!withinBudget && <Badge variant="outline" className="text-red-600 border-red-600">Over budget</Badge>}
                           </div>
-                          <p className="text-sm text-muted-foreground">{plan.planName}</p>
+                          <p className="text-base text-muted-foreground">{plan.planName}</p>
                         </div>
                         <div className="text-right">
                           {plan.firstYearPrice ? (

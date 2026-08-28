@@ -35,7 +35,7 @@ export default function FreeStreamingChannels() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function FreeStreamingChannels() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How they work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free apps — no credit card needed.</li>
               <li>Watch on phone, tablet, smart TV, Roku, FireTV.</li>
               <li>Ads every 10-15 minutes (like old TV).</li>
@@ -57,7 +57,7 @@ export default function FreeStreamingChannels() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Specialty free streaming</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>FilmBox</strong> — independent + foreign films free.</li>
               <li><strong>Free PBS Masterpiece</strong> via PBS app (some content).</li>
               <li><strong>Plex</strong> — free music, movies, TV. Build your own library.</li>
@@ -71,7 +71,7 @@ export default function FreeStreamingChannels() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior watch list</h3>
-            <p className="text-sm text-muted-foreground">Tubi has many classic films seniors love. Pluto has classic TV channels (MASH, Carol Burnett, Bonanza). PBS app has Masterpiece (some), Antiques Roadshow, Nature, Nova. Three free apps + library Hoopla = endless free entertainment.</p>
+            <p className="text-base text-muted-foreground">Tubi has many classic films seniors love. Pluto has classic TV channels (MASH, Carol Burnett, Bonanza). PBS app has Masterpiece (some), Antiques Roadshow, Nature, Nova. Three free apps + library Hoopla = endless free entertainment.</p>
           </CardContent>
         </Card>
       </main>

@@ -104,7 +104,7 @@ export default function FamilyTechRoundtable() {
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">How to run it</p>
-              <ol className="space-y-2 text-sm">
+              <ol className="space-y-2 text-base">
                 <li className="flex gap-2"><span className="text-primary font-semibold">1.</span><span>Pick a calm 30 minutes — no rushed dinners, no holidays.</span></li>
                 <li className="flex gap-2"><span className="text-primary font-semibold">2.</span><span>Pass the prompts around. Everyone answers each one — kids included.</span></li>
                 <li className="flex gap-2"><span className="text-primary font-semibold">3.</span><span>Listen. Do not fix anything yet. Just listen.</span></li>
@@ -133,7 +133,7 @@ export default function FamilyTechRoundtable() {
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Action ideas to pick from</p>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-base">
                 {ACTIONS.map((a, i) => (
                   <li key={i} className="flex gap-2"><span className="text-primary">•</span><span>{a}</span></li>
                 ))}
@@ -170,7 +170,7 @@ export default function FamilyTechRoundtable() {
 
           <section className="mb-5">
             <h2 className="text-base font-bold uppercase tracking-wider mb-2">Conversation prompts</h2>
-            <ol className="space-y-2 text-sm">
+            <ol className="space-y-2 text-base">
               {PROMPTS.map((p, i) => (
                 <li key={i} className="break-inside-avoid">
                   <p className="font-semibold">{i + 1}. {p.title}</p>

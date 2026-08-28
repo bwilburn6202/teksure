@@ -33,7 +33,7 @@ export default function ScrabbleAlternatives() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function ScrabbleAlternatives() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Words With Friends = senior favorite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Like Scrabble + easier rules.</li>
               <li>Play with family/friends remote.</li>
               <li>Make moves whenever — turn-based.</li>
@@ -56,7 +56,7 @@ export default function ScrabbleAlternatives() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">NYT word games</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Wordle</strong> — daily 5-letter word. FREE.</li>
               <li><strong>Spelling Bee</strong> — daily anagrams.</li>
               <li><strong>Connections</strong> — categorize words.</li>
@@ -70,7 +70,7 @@ export default function ScrabbleAlternatives() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Solo word games</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Wordscapes</strong> — anagram crossword combo.</li>
               <li><strong>Word Search Pro</strong> — find words in grid.</li>
               <li><strong>Letterzap</strong> — high-paced anagrams.</li>
@@ -83,7 +83,7 @@ export default function ScrabbleAlternatives() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Brain games sweet spot</h3>
-            <p className="text-sm text-muted-foreground">Word games + bridge + chess + sudoku = best brain games for seniors. Mix variety. Daily 15-30 min total. Brain stays sharp. Cheap or free. Apps make solo play fun. Group play (Words With Friends) connects family.</p>
+            <p className="text-base text-muted-foreground">Word games + bridge + chess + sudoku = best brain games for seniors. Mix variety. Daily 15-30 min total. Brain stays sharp. Cheap or free. Apps make solo play fun. Group play (Words With Friends) connects family.</p>
           </CardContent>
         </Card>
       </main>

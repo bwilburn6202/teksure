@@ -19,7 +19,7 @@ export default function ActiveAdultCommunity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Top US communities</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>The Villages, FL</strong> — 150K residents. Largest.</li>
               <li><strong>Sun City, AZ</strong> — original active adult.</li>
               <li><strong>Del Webb communities</strong> — nationwide.</li>
@@ -33,7 +33,7 @@ export default function ActiveAdultCommunity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What they offer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pools, golf, tennis.</li>
               <li>Clubhouses + fitness centers.</li>
               <li>Hundreds of clubs (from quilting to dancing).</li>
@@ -49,7 +49,7 @@ export default function ActiveAdultCommunity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Home prices: $200K-1M+.</li>
               <li>HOA fees: $200-1,000/month.</li>
               <li>Includes amenities + maintenance.</li>
@@ -63,7 +63,7 @@ export default function ActiveAdultCommunity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pros + cons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>+</strong> Friends made easily.</li>
               <li><strong>+</strong> Active lifestyle.</li>
               <li><strong>+</strong> Maintenance-free.</li>
@@ -79,7 +79,7 @@ export default function ActiveAdultCommunity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Visit before buying</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stay 1-3 nights minimum.</li>
               <li>Many offer trial stays.</li>
               <li>Visit different times of day.</li>
@@ -94,7 +94,7 @@ export default function ActiveAdultCommunity() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior moving</h3>
-            <p className="text-sm text-muted-foreground">Average move 70+ — 1 in 4 regret. Don&apos;t move impulsively after spouse death. Visit + try before commit. Some find paradise. Others miss old home + family. Decision must be RIGHT for you. See /tools/senior-relocation-services.</p>
+            <p className="text-base text-muted-foreground">Average move 70+ — 1 in 4 regret. Don&apos;t move impulsively after spouse death. Visit + try before commit. Some find paradise. Others miss old home + family. Decision must be RIGHT for you. See /tools/senior-relocation-services.</p>
           </CardContent>
         </Card>
       </main>

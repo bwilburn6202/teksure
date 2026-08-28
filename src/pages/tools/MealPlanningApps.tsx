@@ -19,7 +19,7 @@ export default function MealPlanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why plan meals?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Save money — fewer grocery trips, less waste.</li>
               <li>Eat better — no &quot;what&apos;s for dinner&quot; takeout.</li>
               <li>Less stress — decision made ahead.</li>
@@ -33,7 +33,7 @@ export default function MealPlanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plan to Eat — best dedicated app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$5/month, 30-day free trial.</li>
               <li>Drag recipes onto calendar days.</li>
               <li>Auto-generates grocery list.</li>
@@ -47,7 +47,7 @@ export default function MealPlanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mealime — easiest</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free, with optional Pro at $5/month.</li>
               <li>Pick recipes — app makes grocery list.</li>
               <li>Quick recipes, mostly under 30 minutes.</li>
@@ -61,7 +61,7 @@ export default function MealPlanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eat This Much</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Auto-generates meal plans from your goals.</li>
               <li>Set calories + diet preferences.</li>
               <li>App designs full week of meals.</li>
@@ -75,7 +75,7 @@ export default function MealPlanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free option: simple notes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone&apos;s Notes app — list 7 dinners.</li>
               <li>Make grocery list from those.</li>
               <li>No app, no subscription.</li>
@@ -89,7 +89,7 @@ export default function MealPlanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior meal planning tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plan 5 dinners — leave 2 for leftovers/eating out.</li>
               <li>Cook bigger batches — freeze portions.</li>
               <li>Theme nights — Meatless Monday, Fish Friday.</li>
@@ -103,7 +103,7 @@ export default function MealPlanningApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Sunday is meal-plan day</h3>
-            <p className="text-sm text-muted-foreground">Pick Sunday afternoon as your weekly meal-planning ritual. Spend 20 minutes choosing 5 dinners for the week and writing the grocery list. Order from Instacart or shop Monday morning. The rest of the week, &quot;what&apos;s for dinner?&quot; is already answered. Many seniors say this single habit dramatically reduced cooking stress and improved their nutrition.</p>
+            <p className="text-base text-muted-foreground">Pick Sunday afternoon as your weekly meal-planning ritual. Spend 20 minutes choosing 5 dinners for the week and writing the grocery list. Order from Instacart or shop Monday morning. The rest of the week, &quot;what&apos;s for dinner?&quot; is already answered. Many seniors say this single habit dramatically reduced cooking stress and improved their nutrition.</p>
           </CardContent>
         </Card>
       </main>

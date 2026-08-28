@@ -19,7 +19,7 @@ export default function SolarTaxCredits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Federal credit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30% off solar install costs.</li>
               <li>Includes panels, battery, inverters.</li>
               <li>Tax credit (not rebate) — reduces taxes owed.</li>
@@ -33,7 +33,7 @@ export default function SolarTaxCredits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">State + utility rebates</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many states add 5-30% more.</li>
               <li>NY, MA, CA — generous.</li>
               <li>Net metering — sell excess to utility.</li>
@@ -46,7 +46,7 @@ export default function SolarTaxCredits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Worth it for seniors?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cost: $15K-30K typical 6-10 kW system.</li>
               <li>After credits: $10K-20K.</li>
               <li>Saves $1,500-3,000/yr electricity.</li>
@@ -60,7 +60,7 @@ export default function SolarTaxCredits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Income-tax-credit only — must owe taxes.</li>
               <li>Carry forward unused credit.</li>
               <li>Adds home value (sometimes).</li>
@@ -74,7 +74,7 @@ export default function SolarTaxCredits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick installer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Get 3+ quotes.</li>
               <li>NABCEP-certified installer.</li>
               <li>Local + been in business 5+ years.</li>
@@ -89,7 +89,7 @@ export default function SolarTaxCredits() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Solar leases = avoid</h3>
-            <p className="text-sm text-muted-foreground">Solar leases / PPAs lock you in 20+ years. Tax credits go to LEASING company. Hard to sell home with lease attached. Senior tip: only OWN solar. Pay cash if can. Solar loan with credit union if not. Run from leases.</p>
+            <p className="text-base text-muted-foreground">Solar leases / PPAs lock you in 20+ years. Tax credits go to LEASING company. Hard to sell home with lease attached. Senior tip: only OWN solar. Pay cash if can. Solar loan with credit union if not. Run from leases.</p>
           </CardContent>
         </Card>
       </main>

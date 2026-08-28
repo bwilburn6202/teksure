@@ -19,7 +19,7 @@ export default function MarijuanaForMedicalSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">CBD vs THC</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>CBD</strong> — non-psychoactive. Calms without high.</li>
               <li><strong>THC</strong> — psychoactive. Causes high.</li>
               <li>Hemp CBD = federal legal. THC varies by state.</li>
@@ -32,7 +32,7 @@ export default function MarijuanaForMedicalSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior conditions some help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Arthritis pain.</li>
               <li>Sleep issues.</li>
               <li>Anxiety.</li>
@@ -47,7 +47,7 @@ export default function MarijuanaForMedicalSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior cautions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drug interactions — many.</li>
               <li>Increased fall risk.</li>
               <li>Confusion possible.</li>
@@ -62,7 +62,7 @@ export default function MarijuanaForMedicalSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safer use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>CBD first — non-psychoactive.</li>
               <li>If THC — start 2.5mg or less.</li>
               <li>Wait 2 hours before more (edibles slow).</li>
@@ -77,7 +77,7 @@ export default function MarijuanaForMedicalSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Legal landscape</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>24+ states have medical marijuana.</li>
               <li>Some require state ID card.</li>
               <li>Recreational legal in some states.</li>
@@ -91,7 +91,7 @@ export default function MarijuanaForMedicalSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free guides</h3>
-            <p className="text-sm text-muted-foreground"><strong>Project CBD</strong> — projectcbd.org. Free education. <strong>NIH National Center for Complementary Health</strong>. <strong>Americans for Safe Access</strong> — patient education. Talk to primary doctor first. Some doctors anti-marijuana — find open one if interested.</p>
+            <p className="text-base text-muted-foreground"><strong>Project CBD</strong> — projectcbd.org. Free education. <strong>NIH National Center for Complementary Health</strong>. <strong>Americans for Safe Access</strong> — patient education. Talk to primary doctor first. Some doctors anti-marijuana — find open one if interested.</p>
           </CardContent>
         </Card>
       </main>

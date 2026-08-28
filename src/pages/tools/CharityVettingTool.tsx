@@ -58,7 +58,7 @@ export default function CharityVettingTool() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Name sounds almost like a famous one.</strong> "American Red Cross Foundation Inc." (the real one is just "American Red Cross"). Scammers copy famous names.</li>
               <li><strong>High-pressure phone calls.</strong> "Send your donation TONIGHT to help fire victims." Real charities give you time.</li>
               <li><strong>Vague mission.</strong> "To help children" — but who, where, how?</li>
@@ -73,7 +73,7 @@ export default function CharityVettingTool() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to give safely</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Type the charity's full website yourself — don't click a link in an email.</li>
               <li>Donate through their site, not a third-party "donation aggregator".</li>
               <li>Use a credit card — chargeback protection if it's a scam.</li>
@@ -86,7 +86,7 @@ export default function CharityVettingTool() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">A note on overhead</h3>
-            <p className="text-sm text-muted-foreground">Don't penalize a charity for "high overhead" alone. A small charity may spend more on administration just because of fixed costs. The questions to ask: Is the work effective? Are programs reaching real people? Charity Navigator's "Impact" score gets at this better than overhead alone.</p>
+            <p className="text-base text-muted-foreground">Don't penalize a charity for "high overhead" alone. A small charity may spend more on administration just because of fixed costs. The questions to ask: Is the work effective? Are programs reaching real people? Charity Navigator's "Impact" score gets at this better than overhead alone.</p>
           </CardContent>
         </Card>
       </main>

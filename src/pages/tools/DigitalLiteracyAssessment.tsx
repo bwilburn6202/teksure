@@ -250,7 +250,7 @@ export default function DigitalLiteracyAssessment() {
                   {/* Section score */}
                   {currentSectionComplete && (
                     <div className="rounded-lg bg-muted/50 p-4 text-center">
-                      <p className="text-sm text-muted-foreground">Section score</p>
+                      <p className="text-base text-muted-foreground">Section score</p>
                       <p className="text-2xl font-bold">{sectionScores[currentSection]} / {maxSectionScore}</p>
                       <p className="text-xs text-muted-foreground mt-1">
                         {sectionScores[currentSection] >= 12 ? 'Great job!' : sectionScores[currentSection] >= 7 ? 'Good foundation — keep learning!' : 'This is a good area to focus on.'}
@@ -327,7 +327,7 @@ export default function DigitalLiteracyAssessment() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Based on your results, here are the areas where you would benefit most from additional learning:
                   </p>
                   {weakestSections.map(({ index }) => {

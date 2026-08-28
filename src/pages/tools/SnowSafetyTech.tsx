@@ -19,7 +19,7 @@ export default function SnowSafetyTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stay upright</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Yaktrax / Stabilicers ice cleats</strong> ($25-50) — slip on/off shoes. Saves a fall.</li>
               <li><strong>Walking poles / cane</strong> with ice tip — $30 at REI.</li>
               <li><strong>Yak Tracks Pro</strong> for serious icy walks.</li>
@@ -31,7 +31,7 @@ export default function SnowSafetyTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Heated mats + paths</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>HeatTrak heated walkway mat</strong> — $200-400. Plug in. Snow melts on contact.</li>
               <li><strong>HeatTrak stairs mat</strong> — for outdoor stairs.</li>
               <li><strong>Heated driveway</strong> — under-pavement system, $7-25/sq ft. Best when re-paving anyway.</li>
@@ -43,7 +43,7 @@ export default function SnowSafetyTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Snow removal</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hire it out</strong> — $30-60/visit. Cheap insurance against heart attack.</li>
               <li><strong>Single-stage snowblower</strong> — $300-700. For light/moderate snow.</li>
               <li><strong>Two-stage snowblower</strong> — $700-1,500. For wet/heavy snow + drifts.</li>
@@ -56,7 +56,7 @@ export default function SnowSafetyTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Heart-friendly shoveling</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Shoveling causes 100+ heart attacks/year in seniors.</li>
               <li>Shovel SMALL amounts often — not 12 inches at once.</li>
               <li>PUSH snow, don&apos;t lift. Ergonomic shovel.</li>
@@ -70,7 +70,7 @@ export default function SnowSafetyTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Ice melt — pet/plant safe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Calcium chloride</strong> — works to -25°F. Tougher on concrete + plants.</li>
               <li><strong>Magnesium chloride</strong> — pet-safer.</li>
               <li><strong>Safe Paw, Paw Thaw</strong> — pet-safe ice melt brands.</li>
@@ -83,7 +83,7 @@ export default function SnowSafetyTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Power outage prep (winter)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Backup heat source (small propane heater, kerosene heater) + ventilation.</li>
               <li>Extra blankets, sleeping bags rated to 30°F.</li>
               <li>Battery + crank radio for storm updates.</li>
@@ -97,7 +97,7 @@ export default function SnowSafetyTech() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hire snow removal NOW</h3>
-            <p className="text-sm text-muted-foreground">Best snow contractors are booked in October-November. Get on the schedule before you need it. Cost $300-700 for the season is much cheaper than ER trip after a fall ($3,000-30,000).</p>
+            <p className="text-base text-muted-foreground">Best snow contractors are booked in October-November. Get on the schedule before you need it. Cost $300-700 for the season is much cheaper than ER trip after a fall ($3,000-30,000).</p>
           </CardContent>
         </Card>
       </main>

@@ -33,7 +33,7 @@ export default function PhotoBookCreator() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Steps (any service)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install the app or go to the website.</li>
               <li>Pick book size (8×8" softcover is the most common starter size).</li>
               <li>Pick a theme — they\'ll suggest layouts.</li>
@@ -74,7 +74,7 @@ export default function PhotoBookCreator() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">Photo books take 1-2 hours to make the first time, less after. Order ONE printed copy first, look it over, then order copies for everyone. Saves expensive mistakes.</p>
+            <p className="text-base text-muted-foreground">Photo books take 1-2 hours to make the first time, less after. Order ONE printed copy first, look it over, then order copies for everyone. Saves expensive mistakes.</p>
           </CardContent>
         </Card>
       </main>

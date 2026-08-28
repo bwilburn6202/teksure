@@ -232,7 +232,7 @@ export default function TabletOrLaptop() {
                       <Badge variant="outline" className="mt-1">{rec.modelPrice}</Badge>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground">{rec.modelWhy}</p>
+                  <p className="text-base text-muted-foreground">{rec.modelWhy}</p>
                 </CardContent>
               </Card>
 

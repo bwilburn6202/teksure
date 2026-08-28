@@ -208,15 +208,15 @@ export default function QrCodeExplainer() {
             <CardContent className="space-y-4">
               <div className="rounded-lg border p-4">
                 <p className="font-semibold text-sm mb-1">On iPhone</p>
-                <p className="text-sm text-muted-foreground">Open the Camera app and point it at the QR code. iOS shows the URL as a banner first — it does not open automatically. Read the URL. If it looks wrong, do not tap.</p>
+                <p className="text-base text-muted-foreground">Open the Camera app and point it at the QR code. iOS shows the URL as a banner first — it does not open automatically. Read the URL. If it looks wrong, do not tap.</p>
               </div>
               <div className="rounded-lg border p-4">
                 <p className="font-semibold text-sm mb-1">On Android</p>
-                <p className="text-sm text-muted-foreground">Use Google Lens (built into the Camera app on most Androids). It previews the URL before opening. If your phone auto-opens links, switch to Lens for QR codes.</p>
+                <p className="text-base text-muted-foreground">Use Google Lens (built into the Camera app on most Androids). It previews the URL before opening. If your phone auto-opens links, switch to Lens for QR codes.</p>
               </div>
               <div className="rounded-lg border p-4">
                 <p className="font-semibold text-sm mb-1">Use a desktop QR decoder</p>
-                <p className="text-sm text-muted-foreground">If you suspect a QR is malicious, take a photo and upload it to a decoder website like qrserver.com or qr.io on a computer. Read the URL there before deciding to visit.</p>
+                <p className="text-base text-muted-foreground">If you suspect a QR is malicious, take a photo and upload it to a decoder website like qrserver.com or qr.io on a computer. Read the URL there before deciding to visit.</p>
               </div>
             </CardContent>
           </Card>
@@ -266,7 +266,7 @@ export default function QrCodeExplainer() {
                       </div>
                       <div>
                         <p className="font-medium text-sm">{r.label}</p>
-                        <p className="text-sm text-muted-foreground">{r.detail}</p>
+                        <p className="text-base text-muted-foreground">{r.detail}</p>
                       </div>
                     </div>
                   ))}
@@ -282,7 +282,7 @@ export default function QrCodeExplainer() {
               {QR_SCAMS.map((s) => (
                 <div key={s.title} className="rounded-lg border p-4">
                   <p className="font-semibold text-sm mb-1">{s.title}</p>
-                  <p className="text-sm text-muted-foreground">{s.detail}</p>
+                  <p className="text-base text-muted-foreground">{s.detail}</p>
                 </div>
               ))}
             </CardContent>
@@ -297,7 +297,7 @@ export default function QrCodeExplainer() {
                   <Check className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
                     <p className="font-semibold text-sm">{s.title}</p>
-                    <p className="text-sm text-muted-foreground">{s.detail}</p>
+                    <p className="text-base text-muted-foreground">{s.detail}</p>
                   </div>
                 </div>
               ))}

@@ -19,7 +19,7 @@ export default function SeniorReadingGlassesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drugstore reading glasses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$10–$30 at any pharmacy.</li>
               <li>Strengths +1.00 to +4.00.</li>
               <li>Both eyes same prescription.</li>
@@ -33,7 +33,7 @@ export default function SeniorReadingGlassesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Which strength to buy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>40s: +1.00 to +1.50.</li>
               <li>50s: +1.50 to +2.00.</li>
               <li>60s: +2.00 to +2.50.</li>
@@ -47,7 +47,7 @@ export default function SeniorReadingGlassesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you need prescription</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Astigmatism — drugstore won&apos;t correct.</li>
               <li>Different strength each eye.</li>
               <li>Reading + distance both needed (progressives).</li>
@@ -61,7 +61,7 @@ export default function SeniorReadingGlassesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart strategies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Multiple pairs — bedside, kitchen, car, purse.</li>
               <li>Magnetic neck holder — never lost.</li>
               <li>Reading glasses lanyard.</li>
@@ -75,7 +75,7 @@ export default function SeniorReadingGlassesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best places to buy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>CVS, Walgreens — pricey but convenient.</li>
               <li>Dollar Tree, Family Dollar — $1–$5 each, good for backup.</li>
               <li>Costco — quality readers in 3-packs.</li>
@@ -89,7 +89,7 @@ export default function SeniorReadingGlassesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Computer glasses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Slightly weaker than reading glasses.</li>
               <li>Designed for 18–24 inches (computer distance).</li>
               <li>Often blue-light filtering.</li>
@@ -103,7 +103,7 @@ export default function SeniorReadingGlassesGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get a full eye exam first</h3>
-            <p className="text-sm text-muted-foreground">Before stocking up on drugstore readers, get a full eye exam annually after age 60. Many seniors think they just need readers when they actually have early cataracts, glaucoma, or macular degeneration that need treatment. Once your eyes are checked, buy 5 pairs of $5 readers from the dollar store and scatter them throughout the house. The bedside, kitchen, and car pair will save you constant frustration.</p>
+            <p className="text-base text-muted-foreground">Before stocking up on drugstore readers, get a full eye exam annually after age 60. Many seniors think they just need readers when they actually have early cataracts, glaucoma, or macular degeneration that need treatment. Once your eyes are checked, buy 5 pairs of $5 readers from the dollar store and scatter them throughout the house. The bedside, kitchen, and car pair will save you constant frustration.</p>
           </CardContent>
         </Card>
       </main>

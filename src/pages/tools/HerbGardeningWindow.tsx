@@ -19,7 +19,7 @@ export default function HerbGardeningWindow() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easiest herbs to grow</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Basil</strong> — fastest, summer herb.</li>
               <li><strong>Mint</strong> — practically indestructible (use own pot, spreads).</li>
               <li><strong>Chives</strong> — perennial, easy.</li>
@@ -34,7 +34,7 @@ export default function HerbGardeningWindow() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup in 30 min</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>South-facing window best (most sun).</li>
               <li>4-inch pots minimum.</li>
               <li>Drainage holes essential.</li>
@@ -49,7 +49,7 @@ export default function HerbGardeningWindow() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Water when top of soil dry.</li>
               <li>Don&apos;t overwater — kills more herbs than under.</li>
               <li>Rotate pots weekly (even sun).</li>
@@ -63,7 +63,7 @@ export default function HerbGardeningWindow() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">North-facing? Use grow light</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cheap clip-on grow light $30.</li>
               <li>Window has too little sun? Add light.</li>
               <li>14 hrs/day with timer.</li>
@@ -76,7 +76,7 @@ export default function HerbGardeningWindow() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save $$ vs store herbs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Store basil bunch: $4 for 2 oz.</li>
               <li>One basil plant: $3, produces months.</li>
               <li>5-6 plants = endless herbs all summer.</li>
@@ -91,7 +91,7 @@ export default function HerbGardeningWindow() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best window planters</h3>
-            <p className="text-sm text-muted-foreground"><strong>Window-mounted herb planter</strong> — IKEA + Amazon $30. Sits in window frame. <strong>Mason jar wall hanging</strong> — DIY look. <strong>AeroGarden Sprout</strong> — $50 hydroponic for window. <strong>Self-watering pots</strong> — $15-30 each. Many beautiful options.</p>
+            <p className="text-base text-muted-foreground"><strong>Window-mounted herb planter</strong> — IKEA + Amazon $30. Sits in window frame. <strong>Mason jar wall hanging</strong> — DIY look. <strong>AeroGarden Sprout</strong> — $50 hydroponic for window. <strong>Self-watering pots</strong> — $15-30 each. Many beautiful options.</p>
           </CardContent>
         </Card>
       </main>

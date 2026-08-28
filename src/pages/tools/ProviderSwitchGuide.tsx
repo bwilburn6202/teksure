@@ -19,7 +19,7 @@ export default function ProviderSwitchGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Are you overpaying?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Verizon/AT&amp;T/T-Mobile postpaid — typically $70-90 per line.</li>
               <li>"MVNO" prepaid (uses same towers) — $15-30 per line.</li>
               <li>Most seniors use 2-5 GB/month — postpaid plans waste data you don&apos;t use.</li>
@@ -31,7 +31,7 @@ export default function ProviderSwitchGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best cheap plans (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mint Mobile</strong> — $15/mo (5GB), $20 (15GB), $25 (20GB), $30 unlimited. T-Mobile network. Buy 12 months upfront.</li>
               <li><strong>US Mobile</strong> — $10-50. Pick your network — Verizon, T-Mobile, or AT&amp;T tower.</li>
               <li><strong>Visible (by Verizon)</strong> — $25-45. Verizon network. Unlimited.</li>
@@ -46,7 +46,7 @@ export default function ProviderSwitchGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Switching steps (1 hour)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick new carrier. Check coverage map for your zip.</li>
               <li>Most have 7-30 day money-back trials.</li>
               <li>Get your "PIN" or "transfer number" from current carrier (call or app).</li>
@@ -61,7 +61,7 @@ export default function ProviderSwitchGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Will my phone work?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most US phones bought after 2018 are "unlocked" or unlock-able.</li>
               <li>Search "[your phone model] compatible carriers" or use carrier&apos;s checker.</li>
               <li>If under contract — finish payments first OR get phone "unlocked" by old carrier.</li>
@@ -73,7 +73,7 @@ export default function ProviderSwitchGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior plans + discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Verizon 55+ plan</strong> — $40/line (FL only) or $62 unlimited.</li>
               <li><strong>T-Mobile Essentials 55+</strong> — $35/line for 2 lines (in select states).</li>
               <li><strong>AT&amp;T senior discount</strong> — limited, FL/NY only.</li>
@@ -86,7 +86,7 @@ export default function ProviderSwitchGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try before fully committing</h3>
-            <p className="text-sm text-muted-foreground">Mint Mobile and US Mobile both let you test their network on your phone for FREE for 7 days using eSIM. Make sure coverage works at home before switching. Reduces switching anxiety.</p>
+            <p className="text-base text-muted-foreground">Mint Mobile and US Mobile both let you test their network on your phone for FREE for 7 days using eSIM. Make sure coverage works at home before switching. Reduces switching anxiety.</p>
           </CardContent>
         </Card>
       </main>

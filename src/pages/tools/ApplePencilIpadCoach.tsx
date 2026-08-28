@@ -32,7 +32,7 @@ export default function ApplePencilIpadCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best apps with Pencil</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>GoodNotes 6</strong> ($30 once or $10/yr) — best note-taking. Handwriting search.</li>
               <li><strong>Notability</strong> ($15/yr) — alternative. Strong audio recording with notes.</li>
               <li><strong>Procreate</strong> ($13 once) — best digital art app.</li>
@@ -46,7 +46,7 @@ export default function ApplePencilIpadCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sign documents</strong> — markup PDFs without printing.</li>
               <li><strong>Note-taking in church / class</strong> — handwriting becomes searchable text.</li>
               <li><strong>Recipe cards</strong> — digitize with handwritten notes preserved.</li>
@@ -61,7 +61,7 @@ export default function ApplePencilIpadCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Great gift idea</h3>
-            <p className="text-sm text-muted-foreground">iPad (10th gen, $349) + Logitech Crayon ($70) + GoodNotes ($30 once) = $450 art studio + notebook. For serious artists, iPad Pro + Apple Pencil Pro + Procreate.</p>
+            <p className="text-base text-muted-foreground">iPad (10th gen, $349) + Logitech Crayon ($70) + GoodNotes ($30 once) = $450 art studio + notebook. For serious artists, iPad Pro + Apple Pencil Pro + Procreate.</p>
           </CardContent>
         </Card>
       </main>

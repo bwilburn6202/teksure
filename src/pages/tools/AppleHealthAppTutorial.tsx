@@ -19,7 +19,7 @@ export default function AppleHealthAppTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Apple Health?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pre-installed on every iPhone — free.</li>
               <li>Red heart icon on your home screen.</li>
               <li>Tracks steps, heart rate, sleep, and more.</li>
@@ -33,7 +33,7 @@ export default function AppleHealthAppTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it tracks automatically</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Steps — just carrying your phone counts them.</li>
               <li>Distance walked.</li>
               <li>Flights of stairs climbed.</li>
@@ -47,7 +47,7 @@ export default function AppleHealthAppTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up your profile</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Health app (red heart icon).</li>
               <li>Tap your photo or initial top right.</li>
               <li>Enter name, date of birth, height, weight, blood type.</li>
@@ -61,7 +61,7 @@ export default function AppleHealthAppTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medical ID — very important</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap &quot;Medical ID&quot; and set it up now.</li>
               <li>List conditions (diabetes, heart disease, etc.).</li>
               <li>List medications with doses.</li>
@@ -75,7 +75,7 @@ export default function AppleHealthAppTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Connecting devices</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Watch — pairs automatically.</li>
               <li>Omron BP cuff — Omron Connect app feeds to Health.</li>
               <li>Withings scale — syncs weight + body fat.</li>
@@ -89,7 +89,7 @@ export default function AppleHealthAppTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Share with doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap &quot;Sharing&quot; tab at bottom.</li>
               <li>Share with Health Records from your provider.</li>
               <li>Some hospitals — see lab results, appointments.</li>
@@ -103,7 +103,7 @@ export default function AppleHealthAppTutorial() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Set up Medical ID today</h3>
-            <p className="text-sm text-muted-foreground">The single most important thing seniors should do in Apple Health is set up Medical ID. If you&apos;re ever in an accident or medical emergency, first responders can access your blood type, medical conditions, medications, and emergency contacts without needing your passcode. Open Health, tap your profile, tap Medical ID, fill it in, and turn on &quot;Show When Locked.&quot;</p>
+            <p className="text-base text-muted-foreground">The single most important thing seniors should do in Apple Health is set up Medical ID. If you&apos;re ever in an accident or medical emergency, first responders can access your blood type, medical conditions, medications, and emergency contacts without needing your passcode. Open Health, tap your profile, tap Medical ID, fill it in, and turn on &quot;Show When Locked.&quot;</p>
           </CardContent>
         </Card>
       </main>

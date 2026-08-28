@@ -19,7 +19,7 @@ export default function AAAMobileForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Membership tiers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Classic — $65/year, basic roadside.</li>
               <li>Plus — $115/year, extended towing.</li>
               <li>Premier — $145/year, RV coverage, lockout pay.</li>
@@ -33,7 +33,7 @@ export default function AAAMobileForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Request roadside via app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap &quot;Request Roadside.&quot;</li>
               <li>App detects your location.</li>
               <li>Pick service: tow, fuel, jump, lockout.</li>
@@ -47,7 +47,7 @@ export default function AAAMobileForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Discounts in app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hotel discounts — 10–20% off many chains.</li>
               <li>Restaurant discounts.</li>
               <li>Movie theaters.</li>
@@ -61,7 +61,7 @@ export default function AAAMobileForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Travel planning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free trip planning still available.</li>
               <li>Print TripTik routes.</li>
               <li>AAA Travel agent — no booking fees.</li>
@@ -75,7 +75,7 @@ export default function AAAMobileForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DMV services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Some states — DMV transactions at AAA.</li>
               <li>Avoid DMV lines.</li>
               <li>License renewals.</li>
@@ -89,7 +89,7 @@ export default function AAAMobileForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance + financial</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Auto insurance through AAA.</li>
               <li>Often competitive rates.</li>
               <li>Compare with USAA + others.</li>
@@ -103,7 +103,7 @@ export default function AAAMobileForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth it for older cars</h3>
-            <p className="text-sm text-muted-foreground">If you drive a car 10+ years old, AAA membership at $65/year is essential. One tow without coverage can be $200+. Plus the hotel discounts alone often pay for membership for senior travelers. New cars usually have manufacturer roadside, so AAA may be redundant. Compare with USAA if you&apos;re eligible — sometimes USAA is included free.</p>
+            <p className="text-base text-muted-foreground">If you drive a car 10+ years old, AAA membership at $65/year is essential. One tow without coverage can be $200+. Plus the hotel discounts alone often pay for membership for senior travelers. New cars usually have manufacturer roadside, so AAA may be redundant. Compare with USAA if you&apos;re eligible — sometimes USAA is included free.</p>
           </CardContent>
         </Card>
       </main>

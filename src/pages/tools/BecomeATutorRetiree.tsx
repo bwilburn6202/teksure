@@ -19,7 +19,7 @@ export default function BecomeATutorRetiree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online tutoring platforms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Wyzant</strong> — set own rates. Take 25%. Flexible.</li>
               <li><strong>Varsity Tutors</strong> — $20-70/hr. They find clients.</li>
               <li><strong>Tutor.com</strong> — homework help. $10-15/hr typically.</li>
@@ -33,7 +33,7 @@ export default function BecomeATutorRetiree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">In-demand subjects</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Math</strong> — algebra, geometry, calculus.</li>
               <li><strong>SAT/ACT prep</strong> — high pay $50-100/hr.</li>
               <li><strong>Reading + writing</strong> — elementary tutoring.</li>
@@ -49,7 +49,7 @@ export default function BecomeATutorRetiree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local tutoring</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Schools — sub teach, paid mentor programs.</li>
               <li>YMCA after-school tutoring.</li>
               <li>Library volunteer (free, but meaningful).</li>
@@ -63,7 +63,7 @@ export default function BecomeATutorRetiree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Adult literacy + ESL</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Volunteer or paid.</li>
               <li>ProLiteracy — find local affiliate.</li>
               <li>Refugee resettlement orgs need ESL tutors.</li>
@@ -77,7 +77,7 @@ export default function BecomeATutorRetiree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Background check often required ($25-75).</li>
               <li>Liability insurance for in-home (HiscoxPro $30/mo).</li>
               <li>Quiet space with good lighting.</li>
@@ -91,7 +91,7 @@ export default function BecomeATutorRetiree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior advantages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Patience.</li>
               <li>Real-world experience.</li>
               <li>Career credibility (CPAs teach business, etc.).</li>
@@ -105,7 +105,7 @@ export default function BecomeATutorRetiree() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Volunteer alternative</h3>
-            <p className="text-sm text-muted-foreground">If money not needed — volunteer tutoring. <strong>Foster Grandparents Program</strong> — small stipend, work with kids. <strong>SCORE</strong> — mentor business owners. <strong>School volunteer</strong> programs. <strong>Library</strong> reading buddies. All meaningful, no income, often more flexible.</p>
+            <p className="text-base text-muted-foreground">If money not needed — volunteer tutoring. <strong>Foster Grandparents Program</strong> — small stipend, work with kids. <strong>SCORE</strong> — mentor business owners. <strong>School volunteer</strong> programs. <strong>Library</strong> reading buddies. All meaningful, no income, often more flexible.</p>
           </CardContent>
         </Card>
       </main>

@@ -27,7 +27,7 @@ export default function EldercareLocator() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What your local Area Agency on Aging helps with</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SNAP food benefits</strong> — help applying.</li>
               <li><strong>Meals on Wheels</strong> — home-delivered meals.</li>
               <li><strong>Senior center meals</strong> — congregate meals at low cost.</li>
@@ -83,7 +83,7 @@ export default function EldercareLocator() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Most underused resource in America</h3>
-            <p className="text-sm text-muted-foreground">Most seniors and family caregivers don\'t know the Area Agency on Aging exists. It\'s funded by federal Older Americans Act money. Free, no income test for many services. Call them ONCE and ask "what programs am I eligible for in my zip code?". You\'ll often discover thousands in benefits you didn\'t know existed.</p>
+            <p className="text-base text-muted-foreground">Most seniors and family caregivers don\'t know the Area Agency on Aging exists. It\'s funded by federal Older Americans Act money. Free, no income test for many services. Call them ONCE and ask "what programs am I eligible for in my zip code?". You\'ll often discover thousands in benefits you didn\'t know existed.</p>
           </CardContent>
         </Card>
       </main>

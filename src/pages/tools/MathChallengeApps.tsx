@@ -33,7 +33,7 @@ export default function MathChallengeApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function MathChallengeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mental math daily</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Calculate restaurant tip in head before reaching for phone.</li>
               <li>Calculate grocery total as you shop.</li>
               <li>Estimate gas mileage in head.</li>
@@ -55,7 +55,7 @@ export default function MathChallengeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Khan Academy refresh</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free + comprehensive.</li>
               <li>Brush up basic algebra, geometry.</li>
               <li>Statistics — useful for understanding news.</li>
@@ -68,7 +68,7 @@ export default function MathChallengeApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Use it or lose it</h3>
-            <p className="text-sm text-muted-foreground">Mental math fades fast without practice. 5 min/day mental math = stays sharp. Help grandkids with school = bonus quality time + math practice.</p>
+            <p className="text-base text-muted-foreground">Mental math fades fast without practice. 5 min/day mental math = stays sharp. Help grandkids with school = bonus quality time + math practice.</p>
           </CardContent>
         </Card>
       </main>

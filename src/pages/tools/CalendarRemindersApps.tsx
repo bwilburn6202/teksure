@@ -19,7 +19,7 @@ export default function CalendarRemindersApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best calendars</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Calendar</strong> — built-in iPhone. Syncs with Siri.</li>
               <li><strong>Google Calendar</strong> — works iPhone + Android. Family sharing easy.</li>
               <li><strong>Outlook Calendar</strong> — tied to Microsoft 365.</li>
@@ -32,7 +32,7 @@ export default function CalendarRemindersApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior must-add events</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Doctor appointments + 2-day reminder.</li>
               <li>Medication times (or use medication app).</li>
               <li>Family birthdays + anniversaries (with year as title).</li>
@@ -47,7 +47,7 @@ export default function CalendarRemindersApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reminder tricks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set 2 reminders for important: 1 day before + 2 hours before.</li>
               <li>Voice: "Hey Siri, schedule dentist at 10 AM Tuesday."</li>
               <li>Echo: "Alexa, remind me Friday to pick up Mom from airport."</li>
@@ -60,7 +60,7 @@ export default function CalendarRemindersApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Print monthly calendar</h3>
-            <p className="text-sm text-muted-foreground">Print month view from Apple/Google Calendar. Tape on fridge. Many seniors prefer paper visibility. Use phone for reminders + paper for at-a-glance.</p>
+            <p className="text-base text-muted-foreground">Print month view from Apple/Google Calendar. Tape on fridge. Many seniors prefer paper visibility. Use phone for reminders + paper for at-a-glance.</p>
           </CardContent>
         </Card>
       </main>

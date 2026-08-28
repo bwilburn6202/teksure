@@ -19,7 +19,7 @@ export default function AmazonMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">3 tiers explained</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Free</strong> — ad-supported, basic.</li>
               <li><strong>Prime Music</strong> — included with Prime ($139/yr).</li>
               <li><strong>Music Unlimited</strong> — $11/mo, 100M songs.</li>
@@ -33,7 +33,7 @@ export default function AmazonMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Built-in for Echo</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Echo Dot, Show — Amazon Music default.</li>
               <li>&quot;Alexa, play Beatles&quot;.</li>
               <li>&quot;Alexa, play 60s music&quot;.</li>
@@ -47,7 +47,7 @@ export default function AmazonMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pricing tip</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Single Echo + Music Unlimited — $5/mo.</li>
               <li>Cheapest streaming for one device.</li>
               <li>Prime Music included free with Prime.</li>
@@ -61,7 +61,7 @@ export default function AmazonMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Already have Amazon account.</li>
               <li>Download Amazon Music app.</li>
               <li>Sign in with Amazon login.</li>
@@ -75,7 +75,7 @@ export default function AmazonMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Audiobooks too</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Music Unlimited includes podcasts free.</li>
               <li>Audible separate ($15/mo).</li>
               <li>Audible Plus tier with Prime.</li>
@@ -89,7 +89,7 @@ export default function AmazonMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">vs others</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Amazon — best if Prime member.</li>
               <li>Apple — best for Apple users.</li>
               <li>Spotify — best for sharing.</li>
@@ -103,7 +103,7 @@ export default function AmazonMusicForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Already paying for Prime?</h3>
-            <p className="text-sm text-muted-foreground">Prime Music free with Prime ($139/yr). Most seniors don&apos;t realize. Includes 2M songs (vs 100M Unlimited). For most listening — Prime version sufficient. No additional cost. Free shipping + Prime Video + Prime Music = great value. Cancel Apple/Spotify if you have Prime — overlap.</p>
+            <p className="text-base text-muted-foreground">Prime Music free with Prime ($139/yr). Most seniors don&apos;t realize. Includes 2M songs (vs 100M Unlimited). For most listening — Prime version sufficient. No additional cost. Free shipping + Prime Video + Prime Music = great value. Cancel Apple/Spotify if you have Prime — overlap.</p>
           </CardContent>
         </Card>
       </main>

@@ -272,7 +272,7 @@ export default function CreditReportReader() {
             <p className="text-sm mb-4 text-muted-foreground leading-relaxed">
               You are legally entitled to a free copy of your report from each of the three bureaus. Since 2020 you can get them <strong>weekly</strong> — for free, forever. Use this instead of any paid service.
             </p>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-base">
               <li className="flex gap-2">
                 <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <span>
@@ -315,7 +315,7 @@ export default function CreditReportReader() {
                     >
                       <div className="flex-1 min-w-0">
                         <h3 className="font-semibold text-base mb-1">{s.label}</h3>
-                        <p className="text-sm text-muted-foreground">{s.summary}</p>
+                        <p className="text-base text-muted-foreground">{s.summary}</p>
                       </div>
                       {isOpen
                         ? <ChevronUp className="h-4 w-4 text-muted-foreground flex-shrink-0 mt-1" aria-hidden="true" />
@@ -347,7 +347,7 @@ export default function CreditReportReader() {
             <p className="text-sm text-red-800 dark:text-red-300 mb-3 leading-relaxed">
               Watch for any of these. Even one means you should freeze your credit today.
             </p>
-            <ul className="space-y-2 text-sm text-red-800 dark:text-red-300">
+            <ul className="space-y-2 text-base text-red-800 dark:text-red-300">
               <li className="flex gap-2"><span>•</span> Accounts, credit cards, or loans you don't recognize.</li>
               <li className="flex gap-2"><span>•</span> An address where you've never lived.</li>
               <li className="flex gap-2"><span>•</span> Collections or charge-offs for debts that aren't yours.</li>
@@ -365,7 +365,7 @@ export default function CreditReportReader() {
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
               A credit freeze blocks anyone — including scammers — from opening new accounts in your name. It takes about 5 minutes at each bureau. It does not hurt your score, and you can unfreeze any time when you need to apply for credit.
             </p>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-base">
               <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" /><span>Equifax — equifax.com/personal/credit-report-services</span></li>
               <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" /><span>Experian — experian.com/freeze</span></li>
               <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" /><span>TransUnion — transunion.com/credit-freeze</span></li>
@@ -390,7 +390,7 @@ export default function CreditReportReader() {
                     <h3 className="font-semibold text-sm">{f.label}</h3>
                     <span className="text-sm font-mono font-semibold text-primary">{f.weight}</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">{f.note}</p>
+                  <p className="text-base text-muted-foreground">{f.note}</p>
                 </div>
               ))}
             </div>

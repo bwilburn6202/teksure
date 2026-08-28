@@ -136,7 +136,7 @@ export default function FamilyRecipeApp() {
               <Heart className="h-5 w-5 text-rose-600 shrink-0 mt-0.5" />
               <div>
                 <p className="font-semibold text-sm mb-1">Why scan them now</p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   A recipe card is a handwritten letter from a parent or grandparent. Once it is in your phone, it survives
                   spills, moves, and the years. Spend one afternoon scanning the tin — then share the file with every cousin.
                 </p>

@@ -19,7 +19,7 @@ export default function GroceryAppDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Kroger Plus</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Earn fuel points — $0.10/gal off per 100 points.</li>
               <li>Digital coupons — load with one tap.</li>
               <li>Senior Wednesday — 5% off in some stores.</li>
@@ -33,7 +33,7 @@ export default function GroceryAppDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Publix</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior Wednesday — discounts in Florida + Carolinas.</li>
               <li>BOGO deals plus Publix.</li>
               <li>Digital coupons + paper coupons stack.</li>
@@ -47,7 +47,7 @@ export default function GroceryAppDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Albertsons family</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Albertsons + Safeway + Vons + Tom Thumb.</li>
               <li>Just for U digital deals.</li>
               <li>Earn rewards toward groceries + fuel.</li>
@@ -61,7 +61,7 @@ export default function GroceryAppDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wegmans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Shoppers Club rewards.</li>
               <li>Meal kit recipes with shopping list.</li>
               <li>Mobile checkout — scan + pay.</li>
@@ -75,7 +75,7 @@ export default function GroceryAppDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Costco app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Membership card on phone.</li>
               <li>Show app at entrance.</li>
               <li>See receipts + warranty info.</li>
@@ -89,7 +89,7 @@ export default function GroceryAppDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for savings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open app BEFORE shopping.</li>
               <li>Load digital coupons.</li>
               <li>Check weekly ad.</li>
@@ -103,7 +103,7 @@ export default function GroceryAppDeepDive() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Kroger fuel points add up</h3>
-            <p className="text-sm text-muted-foreground">If you shop at Kroger family stores, the fuel points alone save serious money. Spend $100 weekly = 100 points = $0.10/gallon off. Can stack to $1.00/gallon off. On 15 gallons that&apos;s $15 saved per fill-up. Combined with digital coupons + senior Wednesday discount, it adds up to hundreds yearly. The app is worth installing if you have any Kroger family store nearby.</p>
+            <p className="text-base text-muted-foreground">If you shop at Kroger family stores, the fuel points alone save serious money. Spend $100 weekly = 100 points = $0.10/gallon off. Can stack to $1.00/gallon off. On 15 gallons that&apos;s $15 saved per fill-up. Combined with digital coupons + senior Wednesday discount, it adds up to hundreds yearly. The app is worth installing if you have any Kroger family store nearby.</p>
           </CardContent>
         </Card>
       </main>

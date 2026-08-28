@@ -19,7 +19,7 @@ export default function ButterflyGarden() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Two types of plants needed</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Nectar plants</strong> — adult butterflies feed.</li>
               <li><strong>Host plants</strong> — caterpillars eat (becomes butterflies).</li>
               <li>BOTH needed — without host plants, no new butterflies.</li>
@@ -30,7 +30,7 @@ export default function ButterflyGarden() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best nectar plants</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Coneflower (Echinacea)</strong> — hardy, native, perennial.</li>
               <li><strong>Black-eyed Susan</strong> — yellow daisies.</li>
               <li><strong>Bee balm (Monarda)</strong> — also attracts hummingbirds.</li>
@@ -45,7 +45,7 @@ export default function ButterflyGarden() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best host plants</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Milkweed</strong> — MUST for monarch butterflies.</li>
               <li><strong>Parsley + dill + fennel</strong> — for swallowtails.</li>
               <li><strong>Pawpaw tree</strong> — for zebra swallowtail.</li>
@@ -58,7 +58,7 @@ export default function ButterflyGarden() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plant native species — local butterflies prefer them.</li>
               <li>Pick perennials — comes back yearly.</li>
               <li>NO pesticides — kills caterpillars.</li>
@@ -72,7 +72,7 @@ export default function ButterflyGarden() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save the monarchs</h3>
-            <p className="text-sm text-muted-foreground">Monarch population dropped 80% since 1990s. Plant milkweed = direct help. Free seeds from Save Our Monarchs (saveourmonarchs.org). Best senior gardening contribution to wildlife.</p>
+            <p className="text-base text-muted-foreground">Monarch population dropped 80% since 1990s. Plant milkweed = direct help. Free seeds from Save Our Monarchs (saveourmonarchs.org). Best senior gardening contribution to wildlife.</p>
           </CardContent>
         </Card>
       </main>

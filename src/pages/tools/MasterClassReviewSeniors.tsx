@@ -19,7 +19,7 @@ export default function MasterClassReviewSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is MasterClass?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Online video classes by famous experts.</li>
               <li>Gordon Ramsay (cooking), Steve Martin (comedy), etc.</li>
               <li>Annual subscription — $120–$240/year.</li>
@@ -33,7 +33,7 @@ export default function MasterClassReviewSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best classes for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Gordon Ramsay — cooking techniques.</li>
               <li>Bob Ross — happy little trees painting.</li>
               <li>James Patterson — writing.</li>
@@ -47,7 +47,7 @@ export default function MasterClassReviewSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Worth it? Pros + cons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pro: top-tier teachers, beautiful production.</li>
               <li>Pro: learn at your pace, rewatch anytime.</li>
               <li>Pro: workbook included with each class.</li>
@@ -61,7 +61,7 @@ export default function MasterClassReviewSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheaper alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>YouTube — most topics free.</li>
               <li>Skillshare — $14/month, hands-on classes.</li>
               <li>Coursera — university courses, often free to audit.</li>
@@ -75,7 +75,7 @@ export default function MasterClassReviewSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free trial first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Often 7-day free trial offered.</li>
               <li>Try one class before committing yearly.</li>
               <li>Set calendar reminder to cancel if not loving it.</li>
@@ -89,7 +89,7 @@ export default function MasterClassReviewSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other learning platforms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>The Great Courses Plus — $20/month, professor lectures.</li>
               <li>Wondrium — same content, similar price.</li>
               <li>Audible audiobooks for educational content.</li>
@@ -103,7 +103,7 @@ export default function MasterClassReviewSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try Khan Academy free first</h3>
-            <p className="text-sm text-muted-foreground">Before paying $120 for MasterClass, try Khan Academy (free) and Coursera (free auditing). For most seniors interested in learning, the free options provide thousands of hours of quality instruction. MasterClass is worth it if you specifically want celebrity instructors and don&apos;t mind the price. Look up your local OLLI program for in-person learning + social benefits.</p>
+            <p className="text-base text-muted-foreground">Before paying $120 for MasterClass, try Khan Academy (free) and Coursera (free auditing). For most seniors interested in learning, the free options provide thousands of hours of quality instruction. MasterClass is worth it if you specifically want celebrity instructors and don&apos;t mind the price. Look up your local OLLI program for in-person learning + social benefits.</p>
           </CardContent>
         </Card>
       </main>

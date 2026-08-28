@@ -26,7 +26,7 @@ export default function AlexaRoutinesPrimer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5 routines worth setting up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Good morning"</strong> — turns on lights, reads weather, news brief, today&apos;s calendar.</li>
               <li><strong>"Goodnight"</strong> — turns off all lights, locks doors, sets thermostat to 68°.</li>
               <li><strong>"I&apos;m leaving"</strong> — turns off lights, sets thermostat to away, arms cameras.</li>
@@ -39,7 +39,7 @@ export default function AlexaRoutinesPrimer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to set up</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Alexa app on phone.</li>
               <li>Tap "More" (bottom-right) → "Routines".</li>
               <li>Tap "+" to create new routine.</li>
@@ -55,7 +55,7 @@ export default function AlexaRoutinesPrimer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly routines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Daily check-in</strong> — Alexa says "Good morning, how are you?" each morning. If you don&apos;t respond by 11 AM, sends family a text.</li>
               <li><strong>Medication routine</strong> — 8 AM: "Time for morning meds. Say done when finished." If no "done" in 15 min, repeats.</li>
               <li><strong>Lost phone</strong> — say "Find my phone" and Alexa rings it.</li>
@@ -75,7 +75,7 @@ export default function AlexaRoutinesPrimer() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best Echo for seniors</h3>
-            <p className="text-sm text-muted-foreground"><strong>Echo Show 8</strong> ($150) — screen, video calls, photo frame, recipes. <strong>Echo Show 10</strong> ($250) — same with auto-rotating screen. Audio-only Echo Dot ($50) is cheaper but no video calling.</p>
+            <p className="text-base text-muted-foreground"><strong>Echo Show 8</strong> ($150) — screen, video calls, photo frame, recipes. <strong>Echo Show 10</strong> ($250) — same with auto-rotating screen. Audio-only Echo Dot ($50) is cheaper but no video calling.</p>
           </CardContent>
         </Card>
       </main>

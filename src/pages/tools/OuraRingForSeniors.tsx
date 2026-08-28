@@ -19,7 +19,7 @@ export default function OuraRingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart ring options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Oura Ring 4</strong> — $349 + $6/mo membership. Best.</li>
               <li><strong>Samsung Galaxy Ring</strong> — $400, no subscription.</li>
               <li><strong>Ultrahuman Ring Air</strong> — $349, no subscription.</li>
@@ -32,7 +32,7 @@ export default function OuraRingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why ring vs watch</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lighter — no wrist fatigue.</li>
               <li>Battery 4-7 days (watches 1-2).</li>
               <li>Sleep tracking better (worn comfortably to bed).</li>
@@ -46,7 +46,7 @@ export default function OuraRingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it tells you</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sleep score</strong> — quality + duration.</li>
               <li><strong>Readiness</strong> — how recovered today.</li>
               <li><strong>Heart rate variability</strong> — stress + recovery.</li>
@@ -61,7 +61,7 @@ export default function OuraRingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Detects illness before symptoms (temp + HR rises).</li>
               <li>Tracks sleep apnea patterns.</li>
               <li>Gentle movement reminders.</li>
@@ -75,7 +75,7 @@ export default function OuraRingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sizing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Order free sizing kit FIRST.</li>
               <li>Wear cardboard ring 24 hrs.</li>
               <li>Then order real ring.</li>
@@ -89,7 +89,7 @@ export default function OuraRingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheaper alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Watch SE</strong> — $250. Best mix of features + cost.</li>
               <li><strong>Fitbit Inspire 3</strong> — $100. Basic but great.</li>
               <li><strong>Garmin Vivosmart 5</strong> — $150. Long battery.</li>
@@ -102,7 +102,7 @@ export default function OuraRingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Caution + privacy</h3>
-            <p className="text-sm text-muted-foreground">Health data extremely sensitive. Read privacy policy. Oura had data breach 2024 — consider risks. Don&apos;t share with insurance companies (some incentivize, but data could affect premiums later). Use device for YOUR awareness, not sharing.</p>
+            <p className="text-base text-muted-foreground">Health data extremely sensitive. Read privacy policy. Oura had data breach 2024 — consider risks. Don&apos;t share with insurance companies (some incentivize, but data could affect premiums later). Use device for YOUR awareness, not sharing.</p>
           </CardContent>
         </Card>
       </main>

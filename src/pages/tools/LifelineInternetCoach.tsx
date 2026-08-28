@@ -40,7 +40,7 @@ export default function LifelineInternetCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to apply</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>lifelinesupport.org</strong>.</li>
               <li>Click "Get Started" and verify eligibility.</li>
               <li>Pick a participating provider:
@@ -70,7 +70,7 @@ export default function LifelineInternetCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other internet help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Comcast Internet Essentials</strong> — $10/month. Available in most US areas. Includes Wi-Fi modem.</li>
               <li><strong>Spectrum Internet Assist</strong> — $20/month. 50 Mbps.</li>
               <li><strong>AT&T Access from AT&T</strong> — $5-30/month based on speed.</li>
@@ -83,7 +83,7 @@ export default function LifelineInternetCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help applying</h3>
-            <p className="text-sm text-muted-foreground">Your local <strong>Area Agency on Aging</strong> (call Eldercare Locator, 1-800-677-1116) or <strong>211</strong> can help apply for Lifeline. They know the participating providers in your area and walk you through forms.</p>
+            <p className="text-base text-muted-foreground">Your local <strong>Area Agency on Aging</strong> (call Eldercare Locator, 1-800-677-1116) or <strong>211</strong> can help apply for Lifeline. They know the participating providers in your area and walk you through forms.</p>
           </CardContent>
         </Card>
       </main>

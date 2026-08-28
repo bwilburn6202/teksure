@@ -54,7 +54,7 @@ export default function SkypeReplacement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Moving from Skype to a replacement</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick ONE app to replace Skype. Don\'t try to install three at once.</li>
               <li>Tell your contacts. Send a message: "Skype is closing — let\'s use WhatsApp instead, my number\'s the same."</li>
               <li>Most contacts already have one of the alternatives — they\'ll join you.</li>
@@ -66,7 +66,7 @@ export default function SkypeReplacement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For paid Skype features (calling phones)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Google Voice</strong> — free US-to-US calls. Pay-as-you-go international rates.</li>
               <li><strong>WhatsApp</strong> — only calls other WhatsApp users (free). Doesn\'t call regular phone numbers.</li>
               <li><strong>Microsoft Teams (free)</strong> — has international calling minutes you can buy.</li>
@@ -78,7 +78,7 @@ export default function SkypeReplacement() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Talking to family abroad: the cheap path</h3>
-            <p className="text-sm text-muted-foreground">For most seniors, the answer is WhatsApp. It\'s free for any-to-any video and voice calls over Wi-Fi or cellular data, anywhere in the world. Tell whoever is overseas to install WhatsApp on their phone — and you do the same. Then you call each other free, forever.</p>
+            <p className="text-base text-muted-foreground">For most seniors, the answer is WhatsApp. It\'s free for any-to-any video and voice calls over Wi-Fi or cellular data, anywhere in the world. Tell whoever is overseas to install WhatsApp on their phone — and you do the same. Then you call each other free, forever.</p>
           </CardContent>
         </Card>
       </main>

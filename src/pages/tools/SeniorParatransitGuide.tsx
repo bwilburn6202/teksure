@@ -19,7 +19,7 @@ export default function SeniorParatransitGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Paratransit (ADA service)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Federally required by Americans with Disabilities Act.</li>
               <li>Door-to-door rides for those who can&apos;t use buses.</li>
               <li>Wheelchair accessible.</li>
@@ -33,7 +33,7 @@ export default function SeniorParatransitGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">ITNAmerica</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Independent Transportation Network.</li>
               <li>Volunteer drivers for seniors.</li>
               <li>Operating in many cities nationwide.</li>
@@ -47,7 +47,7 @@ export default function SeniorParatransitGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior center transportation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most senior centers offer free rides.</li>
               <li>To medical appointments, grocery stores.</li>
               <li>Door-to-door usually.</li>
@@ -61,7 +61,7 @@ export default function SeniorParatransitGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Religious + nonprofit programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many churches offer transportation ministry.</li>
               <li>Free rides to medical appointments.</li>
               <li>Synagogues, mosques, all faiths.</li>
@@ -75,7 +75,7 @@ export default function SeniorParatransitGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medicaid medical transportation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NEMT — Non-Emergency Medical Transportation.</li>
               <li>Free for Medicaid recipients.</li>
               <li>Rides to doctor appointments.</li>
@@ -89,7 +89,7 @@ export default function SeniorParatransitGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eldercare Locator</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Federal hotline: 1-800-677-1116.</li>
               <li>Free service.</li>
               <li>Connects to local transportation options.</li>
@@ -103,7 +103,7 @@ export default function SeniorParatransitGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Call Eldercare Locator today</h3>
-            <p className="text-sm text-muted-foreground">If you or a loved one struggles with transportation, call the free Eldercare Locator at 1-800-677-1116. They&apos;ll connect you with all transportation programs available in your specific zip code — paratransit, volunteer drivers, senior centers, religious programs, medical transport. One free call can open up multiple options most seniors didn&apos;t know existed.</p>
+            <p className="text-base text-muted-foreground">If you or a loved one struggles with transportation, call the free Eldercare Locator at 1-800-677-1116. They&apos;ll connect you with all transportation programs available in your specific zip code — paratransit, volunteer drivers, senior centers, religious programs, medical transport. One free call can open up multiple options most seniors didn&apos;t know existed.</p>
           </CardContent>
         </Card>
       </main>

@@ -34,7 +34,7 @@ export default function PhotoBookServices() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function PhotoBookServices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wait for the sale</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Shutterfly runs 50% off photo books constantly. Don&apos;t pay full price.</li>
               <li>Mixbook hits 40-55% off in any major holiday week.</li>
               <li>Black Friday/Cyber Monday — biggest discounts of year.</li>
@@ -56,7 +56,7 @@ export default function PhotoBookServices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for a great book</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>20-40 pages is the sweet spot — readable, not overwhelming.</li>
               <li>Pick 3-5 photos per page max. White space matters.</li>
               <li>Caption photos with year + location + names. Future-you will thank present-you.</li>
@@ -70,7 +70,7 @@ export default function PhotoBookServices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best book ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Annual "year in review" — every December.</li>
               <li>Wedding anniversary year by year.</li>
               <li>Grandkids&apos; first year — 12 monthly photos.</li>
@@ -84,7 +84,7 @@ export default function PhotoBookServices() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Apple Photos auto-book</h3>
-            <p className="text-sm text-muted-foreground">If you have iPhone — open Photos → Memories → tap any auto-generated memory → "Create a Project" → Book. iOS picks best photos, lays them out, and you can edit. Way faster than starting blank. Apple Print works smoothly.</p>
+            <p className="text-base text-muted-foreground">If you have iPhone — open Photos → Memories → tap any auto-generated memory → "Create a Project" → Book. iOS picks best photos, lays them out, and you can edit. Way faster than starting blank. Apple Print works smoothly.</p>
           </CardContent>
         </Card>
       </main>

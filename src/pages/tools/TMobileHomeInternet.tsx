@@ -19,7 +19,7 @@ export default function TMobileHomeInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior switchers love it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$50/mo flat — taxes + fees included.</li>
               <li>$30/mo if T-Mobile cell customer.</li>
               <li>NO contract. Cancel anytime.</li>
@@ -34,7 +34,7 @@ export default function TMobileHomeInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Speeds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Average: 100-200 Mbps download.</li>
               <li>Plenty for streaming + video calls.</li>
               <li>Can vary by location/time.</li>
@@ -48,7 +48,7 @@ export default function TMobileHomeInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (15 min)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Order online or in-store.</li>
               <li>Gateway device arrives in 1-3 days.</li>
               <li>Plug into power outlet.</li>
@@ -62,7 +62,7 @@ export default function TMobileHomeInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to switch</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Comcast/Spectrum bill over $80/mo.</li>
               <li>You don&apos;t need fiber-fast speeds.</li>
               <li>Tired of cable company hassles.</li>
@@ -76,7 +76,7 @@ export default function TMobileHomeInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Verizon 5G alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Verizon 5G Home Internet — $35-60/mo.</li>
               <li>Cheaper if Verizon cell customer.</li>
               <li>Better coverage some areas.</li>
@@ -89,7 +89,7 @@ export default function TMobileHomeInternet() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Test before commit</h3>
-            <p className="text-sm text-muted-foreground">Free 15-day trial. Don&apos;t cancel cable yet. Try T-Mobile in parallel. Test speed (fast.com), test streaming, video calls. If works fine — switch + cancel cable. If not — return T-Mobile, no charge. Risk-free trial.</p>
+            <p className="text-base text-muted-foreground">Free 15-day trial. Don&apos;t cancel cable yet. Try T-Mobile in parallel. Test speed (fast.com), test streaming, video calls. If works fine — switch + cancel cable. If not — return T-Mobile, no charge. Risk-free trial.</p>
           </CardContent>
         </Card>
       </main>

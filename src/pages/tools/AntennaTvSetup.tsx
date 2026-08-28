@@ -44,7 +44,7 @@ export default function AntennaTvSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 2 — Pick the right antenna</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Live within 25 miles of TV towers (most cities)?</strong> A flat indoor antenna is fine. About $25-$40. Brands: Mohu, ClearStream, RCA, 1byone.</li>
               <li><strong>Live 25-50 miles out?</strong> Get an "amplified" indoor antenna or a small attic antenna.</li>
               <li><strong>Live 50+ miles out (rural)?</strong> An outdoor or attic antenna. Higher cost, $80-$150, but pulls in distant signals.</li>
@@ -56,7 +56,7 @@ export default function AntennaTvSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 3 — Plug it in</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Connect the antenna's coaxial cable to the back of your TV — the round threaded connector labeled "Antenna" or "RF In".</li>
               <li>Plug the antenna's power adapter into a wall outlet (if it's amplified).</li>
               <li>Place the antenna near a window or as high up as possible. Higher and farther from metal = better.</li>
@@ -68,7 +68,7 @@ export default function AntennaTvSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 4 — Scan for channels</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>On your TV remote, press <strong>Input</strong> or <strong>Source</strong>.</li>
               <li>Pick "Antenna" or "TV" or "Air".</li>
               <li>Press <strong>Menu</strong> → look for "Channel Setup" or "Auto Tune" or "Channel Scan".</li>
@@ -94,7 +94,7 @@ export default function AntennaTvSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pair it with free streaming</h3>
-            <p className="text-sm text-muted-foreground">An antenna gives you live local TV. Free streaming apps (Pluto, Tubi, Roku Channel) give you on-demand. Together — total cable replacement, $0/month.</p>
+            <p className="text-base text-muted-foreground">An antenna gives you live local TV. Free streaming apps (Pluto, Tubi, Roku Channel) give you on-demand. Together — total cable replacement, $0/month.</p>
           </CardContent>
         </Card>
       </main>

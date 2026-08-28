@@ -345,7 +345,7 @@ export default function TechComfortQuiz() {
                             </span>
                           )}
                         </div>
-                        <p className="text-sm text-muted-foreground">{guide.description}</p>
+                        <p className="text-base text-muted-foreground">{guide.description}</p>
                       </div>
                       <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
                     </CardContent>

@@ -19,7 +19,7 @@ export default function HighFiberRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior fiber needs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Women: 21g/day.</li>
               <li>Men: 30g/day.</li>
               <li>Most seniors get only 15g.</li>
@@ -34,7 +34,7 @@ export default function HighFiberRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best fiber sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Beans</strong> — black, kidney, garbanzo (15g/cup).</li>
               <li><strong>Berries</strong> — raspberries (8g/cup).</li>
               <li><strong>Avocado</strong> — 10g per fruit.</li>
@@ -49,7 +49,7 @@ export default function HighFiberRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy senior recipes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Oatmeal</strong> + berries + nuts (10g).</li>
               <li><strong>Bean chili</strong> with vegetables (15g).</li>
               <li><strong>Avocado toast</strong> + tomato (12g).</li>
@@ -63,7 +63,7 @@ export default function HighFiberRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Increase slowly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Add 5g per week.</li>
               <li>Increase water with fiber.</li>
               <li>Bloating + gas = too fast.</li>
@@ -77,7 +77,7 @@ export default function HighFiberRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drinks with fiber</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Smoothies</strong> — chia + spinach + berries.</li>
               <li><strong>Prune juice</strong> — classic constipation help.</li>
               <li><strong>Metamucil</strong> — psyllium fiber.</li>
@@ -91,7 +91,7 @@ export default function HighFiberRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Constipation relief</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Water 6-8 glasses daily.</li>
               <li>Move daily — even short walks.</li>
               <li>Coffee in morning.</li>
@@ -106,7 +106,7 @@ export default function HighFiberRecipes() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Convenient + cheap</h3>
-            <p className="text-sm text-muted-foreground">Frozen mixed berries — fiber + antioxidants. Canned beans — quick, no cooking. Apples — keep at counter for snacks. Oatmeal — bulk = $0.30/serving. Bean burritos — frozen, microwave. Don&apos;t need expensive supplements. Whole foods cheaper + better.</p>
+            <p className="text-base text-muted-foreground">Frozen mixed berries — fiber + antioxidants. Canned beans — quick, no cooking. Apples — keep at counter for snacks. Oatmeal — bulk = $0.30/serving. Bean burritos — frozen, microwave. Don&apos;t need expensive supplements. Whole foods cheaper + better.</p>
           </CardContent>
         </Card>
       </main>

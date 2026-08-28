@@ -34,7 +34,7 @@ export default function DrugInteractionCheckers() {
                   <span className="text-sm font-semibold text-primary">{t.cost}</span>
                 </div>
                 <p className="text-sm">{t.best}</p>
-                <p className="text-sm text-muted-foreground">{t.good}</p>
+                <p className="text-base text-muted-foreground">{t.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function DrugInteractionCheckers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common dangerous interactions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Blood thinner (Warfarin/Eliquis) + ibuprofen/aspirin</strong> — bleeding risk.</li>
               <li><strong>Statin + grapefruit</strong> — affects metabolism, can be toxic.</li>
               <li><strong>Antidepressant + St. John&apos;s Wort</strong> — serotonin syndrome.</li>
@@ -58,7 +58,7 @@ export default function DrugInteractionCheckers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t forget OTC + supplements</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Aspirin + blood thinners.</li>
               <li>Tylenol — too much can damage liver, especially with alcohol.</li>
               <li>Decongestants (Sudafed) — raise blood pressure.</li>
@@ -73,7 +73,7 @@ export default function DrugInteractionCheckers() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pharmacist is free + best</h3>
-            <p className="text-sm text-muted-foreground">Walk into Walgreens / CVS / Costco. Hand pharmacist your medication list. Ask "any concerning interactions?" Free service. Better than any app. Pharmacists are medication experts AND they have access to your prescription history.</p>
+            <p className="text-base text-muted-foreground">Walk into Walgreens / CVS / Costco. Hand pharmacist your medication list. Ask "any concerning interactions?" Free service. Better than any app. Pharmacists are medication experts AND they have access to your prescription history.</p>
           </CardContent>
         </Card>
       </main>

@@ -76,7 +76,7 @@ export default function GrandkidInternetSafety() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For parental controls when watching grandkids</h3>
-            <p className="text-sm text-muted-foreground">See our "Childproof for Visits" tool. Set up Guided Access (iPhone) or Kids Mode (Android) on your devices BEFORE the visit. Saves headaches.</p>
+            <p className="text-base text-muted-foreground">See our "Childproof for Visits" tool. Set up Guided Access (iPhone) or Kids Mode (Android) on your devices BEFORE the visit. Saves headaches.</p>
           </CardContent>
         </Card>
       </main>

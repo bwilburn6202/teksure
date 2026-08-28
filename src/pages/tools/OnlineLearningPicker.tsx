@@ -43,7 +43,7 @@ export default function OnlineLearningPicker() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -78,7 +78,7 @@ export default function OnlineLearningPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior-specific: OLLI</h3>
-            <p className="text-sm text-muted-foreground">If you want to learn AND meet people, the Osher Lifelong Learning Institute (OLLI) has chapters at 125+ universities for adults 50+. Affordable, in-person, no grades. Search "OLLI [your city]". Many people\'s favorite retirement discovery.</p>
+            <p className="text-base text-muted-foreground">If you want to learn AND meet people, the Osher Lifelong Learning Institute (OLLI) has chapters at 125+ universities for adults 50+. Affordable, in-person, no grades. Search "OLLI [your city]". Many people\'s favorite retirement discovery.</p>
           </CardContent>
         </Card>
       </main>

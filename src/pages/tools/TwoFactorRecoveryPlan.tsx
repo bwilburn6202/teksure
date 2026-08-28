@@ -359,7 +359,7 @@ export default function TwoFactorRecoveryPlan() {
                               <p className="text-sm text-muted-foreground mt-1">{acc.why}</p>
                             </div>
                           </div>
-                          <ul className="ml-12 space-y-2 text-sm">
+                          <ul className="ml-12 space-y-2 text-base">
                             {acc.recoverySteps.map((step, j) => (
                               <li key={j} className="flex gap-2">
                                 <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" aria-hidden="true" />

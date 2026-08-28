@@ -19,7 +19,7 @@ export default function MyHeritageDNAComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AncestryDNA — most users</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Largest database — 23+ million users.</li>
               <li>Best for finding living relatives.</li>
               <li>$99 (often $59 on sale).</li>
@@ -33,7 +33,7 @@ export default function MyHeritageDNAComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">23andMe — health focus</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adds health risk factors to ethnicity.</li>
               <li>$119 (Ancestry-only) or $229 (with Health).</li>
               <li>FDA-approved for some health markers.</li>
@@ -47,7 +47,7 @@ export default function MyHeritageDNAComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">MyHeritage DNA</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Strong in European family research.</li>
               <li>$89 standard price.</li>
               <li>Color photo restoration features.</li>
@@ -61,7 +61,7 @@ export default function MyHeritageDNAComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">FamilyTreeDNA</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Y-DNA + mtDNA tests for direct lines.</li>
               <li>$79–$249 depending on test.</li>
               <li>Best for serious genealogists.</li>
@@ -75,7 +75,7 @@ export default function MyHeritageDNAComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read each company&apos;s privacy policy.</li>
               <li>Some share with law enforcement.</li>
               <li>Some sell anonymized data to research.</li>
@@ -89,7 +89,7 @@ export default function MyHeritageDNAComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How DNA tests work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Order kit online — arrives in mail.</li>
               <li>Spit in tube or cheek swab.</li>
               <li>Mail back in prepaid envelope.</li>
@@ -103,7 +103,7 @@ export default function MyHeritageDNAComparison() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">AncestryDNA for most seniors</h3>
-            <p className="text-sm text-muted-foreground">For most seniors interested in family history, AncestryDNA at $99 (or $59 on sale) is the best starting point. The huge database means you&apos;ll find lots of cousin matches that can break through brick walls in your family tree. Wait for Black Friday or Mother&apos;s Day sales. If genetic health concerns matter to you too, 23andMe Plus Health is the alternative pick.</p>
+            <p className="text-base text-muted-foreground">For most seniors interested in family history, AncestryDNA at $99 (or $59 on sale) is the best starting point. The huge database means you&apos;ll find lots of cousin matches that can break through brick walls in your family tree. Wait for Black Friday or Mother&apos;s Day sales. If genetic health concerns matter to you too, 23andMe Plus Health is the alternative pick.</p>
           </CardContent>
         </Card>
       </main>

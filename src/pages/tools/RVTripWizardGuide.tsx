@@ -19,7 +19,7 @@ export default function RVTripWizardGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Routes around low bridges (RV height aware).</li>
               <li>Avoids steep grades.</li>
               <li>Identifies tight turns.</li>
@@ -33,7 +33,7 @@ export default function RVTripWizardGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$59/year subscription.</li>
               <li>Includes RV LIFE Pro features.</li>
               <li>RV LIFE GPS app for turn-by-turn.</li>
@@ -47,7 +47,7 @@ export default function RVTripWizardGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why not Google Maps?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Google Maps doesn&apos;t know RV restrictions.</li>
               <li>Routes through low bridges.</li>
               <li>Doesn&apos;t avoid weight-restricted roads.</li>
@@ -61,7 +61,7 @@ export default function RVTripWizardGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting RV dimensions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Enter height — most important.</li>
               <li>Enter length.</li>
               <li>Enter weight.</li>
@@ -75,7 +75,7 @@ export default function RVTripWizardGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alternative: Garmin RV GPS</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Garmin RV 1095 — $700 dedicated device.</li>
               <li>Or Garmin RV 795 — $500.</li>
               <li>One-time cost, no subscription.</li>
@@ -89,7 +89,7 @@ export default function RVTripWizardGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For senior RVers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t trust Google Maps with RV.</li>
               <li>Plan routes day before — review carefully.</li>
               <li>Build in slower travel days.</li>
@@ -103,7 +103,7 @@ export default function RVTripWizardGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth $59/year</h3>
-            <p className="text-sm text-muted-foreground">If you own an RV bigger than a small camper, RV Trip Wizard at $59/year is essential. One avoided bridge strike pays for it for decades. Combined with Garmin RV GPS as backup, you have RV-aware routing that won&apos;t send you to disaster. Many senior RVers say this is the most important $59 they spend annually.</p>
+            <p className="text-base text-muted-foreground">If you own an RV bigger than a small camper, RV Trip Wizard at $59/year is essential. One avoided bridge strike pays for it for decades. Combined with Garmin RV GPS as backup, you have RV-aware routing that won&apos;t send you to disaster. Many senior RVers say this is the most important $59 they spend annually.</p>
           </CardContent>
         </Card>
       </main>

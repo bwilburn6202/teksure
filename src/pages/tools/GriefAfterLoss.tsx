@@ -19,7 +19,7 @@ export default function GriefAfterLoss() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Grief is unique to you</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No timeline.</li>
               <li>Stages aren&apos;t linear.</li>
               <li>Anniversary reactions normal.</li>
@@ -34,7 +34,7 @@ export default function GriefAfterLoss() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free senior grief support</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hospice</strong> bereavement programs — free 13 months after loss.</li>
               <li><strong>GriefShare</strong> — Christian-based. 13-week free groups.</li>
               <li><strong>Hope Edelman&apos;s motherless daughters</strong> — for those losing mom.</li>
@@ -49,7 +49,7 @@ export default function GriefAfterLoss() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Self-care during grief</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Eat regularly (even small).</li>
               <li>Hydrate.</li>
               <li>Walk daily.</li>
@@ -65,7 +65,7 @@ export default function GriefAfterLoss() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to seek help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Inability to function 2-3 months in.</li>
               <li>Suicidal thoughts.</li>
               <li>Substance use.</li>
@@ -80,7 +80,7 @@ export default function GriefAfterLoss() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Books that help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>It&apos;s OK That You&apos;re Not OK</strong> — Megan Devine.</li>
               <li><strong>Bearing the Unbearable</strong> — Joanne Cacciatore.</li>
               <li><strong>The Year of Magical Thinking</strong> — Joan Didion.</li>
@@ -94,7 +94,7 @@ export default function GriefAfterLoss() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Crisis line</h3>
-            <p className="text-sm text-muted-foreground">If suicidal — <strong>988 Suicide &amp; Crisis Lifeline</strong> (call/text 988). FREE 24/7. <strong>Friendship Line for Seniors</strong> 1-800-971-0016. Sometimes need someone to listen. Help available. Worth reaching out.</p>
+            <p className="text-base text-muted-foreground">If suicidal — <strong>988 Suicide &amp; Crisis Lifeline</strong> (call/text 988). FREE 24/7. <strong>Friendship Line for Seniors</strong> 1-800-971-0016. Sometimes need someone to listen. Help available. Worth reaching out.</p>
           </CardContent>
         </Card>
       </main>

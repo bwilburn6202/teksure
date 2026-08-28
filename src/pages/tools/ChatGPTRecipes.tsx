@@ -19,7 +19,7 @@ export default function ChatGPTRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best recipe prompts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"What can I cook with chicken thighs, rice, and frozen broccoli?"</li>
               <li>"Diabetic-friendly dinner under 500 calories using salmon."</li>
               <li>"Heart-healthy 30-min meal for 2 with low sodium."</li>
@@ -35,7 +35,7 @@ export default function ChatGPTRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Special diets</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Diabetic</strong> — "Glycemic index under 50 / carbs under 30g per serving."</li>
               <li><strong>Heart-healthy</strong> — "Low sodium, low saturated fat, high fiber."</li>
               <li><strong>Kidney</strong> — "Low potassium, low phosphorus."</li>
@@ -49,7 +49,7 @@ export default function ChatGPTRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plan + shop with AI</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Make me a 7-day meal plan for diabetes, $100 grocery budget, 1 person."</li>
               <li>"Generate grocery list."</li>
               <li>"Convert grocery list to Costco bulk buying."</li>
@@ -62,7 +62,7 @@ export default function ChatGPTRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice mode</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ChatGPT app voice mode = hands-free cooking.</li>
               <li>"How long do I bake this potato?"</li>
               <li>"How much is 2 oz cheese?"</li>
@@ -76,7 +76,7 @@ export default function ChatGPTRecipes() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Verify safety-critical info</h3>
-            <p className="text-sm text-muted-foreground">AI sometimes invents temperatures or cook times. For meat doneness, food storage times — verify with USDA / trusted source. AI is a starting point + recipe inspiration, not the final word on food safety.</p>
+            <p className="text-base text-muted-foreground">AI sometimes invents temperatures or cook times. For meat doneness, food storage times — verify with USDA / trusted source. AI is a starting point + recipe inspiration, not the final word on food safety.</p>
           </CardContent>
         </Card>
       </main>

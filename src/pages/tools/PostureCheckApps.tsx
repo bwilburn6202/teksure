@@ -32,7 +32,7 @@ export default function PostureCheckApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -41,7 +41,7 @@ export default function PostureCheckApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why posture matters at 65+</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Slouching = back + neck pain.</li>
               <li>Bad posture = poor breathing = less energy.</li>
               <li>&quot;Dowager&apos;s hump&quot; can be partly reversed.</li>
@@ -54,7 +54,7 @@ export default function PostureCheckApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily posture habits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stand against wall — heels, butt, shoulders, head touching.</li>
               <li>Set hourly phone reminder to check posture.</li>
               <li>Chin tucks — 10 reps every hour at desk.</li>
@@ -67,7 +67,7 @@ export default function PostureCheckApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free YouTube channels</h3>
-            <p className="text-sm text-muted-foreground"><strong>Bob &amp; Brad</strong> — &quot;most famous physical therapists.&quot; Senior-specific. <strong>Posture Doctor</strong> — quick fixes. <strong>SilverSneakers</strong> — free posture videos.</p>
+            <p className="text-base text-muted-foreground"><strong>Bob &amp; Brad</strong> — &quot;most famous physical therapists.&quot; Senior-specific. <strong>Posture Doctor</strong> — quick fixes. <strong>SilverSneakers</strong> — free posture videos.</p>
           </CardContent>
         </Card>
       </main>

@@ -33,7 +33,7 @@ export default function NewYearGoalsApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function NewYearGoalsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-realistic goals</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walk 30 min/day.</li>
               <li>Read 1 book/month.</li>
               <li>Call 1 friend/week.</li>
@@ -57,7 +57,7 @@ export default function NewYearGoalsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why apps work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Visual progress motivates.</li>
               <li>Reminders so you don&apos;t forget.</li>
               <li>Tracks streaks — pride builds.</li>
@@ -71,7 +71,7 @@ export default function NewYearGoalsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SMART goals</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>S</strong>pecific — &quot;walk after breakfast&quot;.</li>
               <li><strong>M</strong>easurable — 30 minutes.</li>
               <li><strong>A</strong>chievable — start with 10 min.</li>
@@ -85,7 +85,7 @@ export default function NewYearGoalsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Build habit gradually</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Start tiny — 5 minutes.</li>
               <li>Same time + place daily.</li>
               <li>Stack with existing routine.</li>
@@ -99,7 +99,7 @@ export default function NewYearGoalsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tech goals</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Learn one tech skill/month.</li>
               <li>Try one new app weekly.</li>
               <li>Master Zoom / FaceTime.</li>
@@ -114,7 +114,7 @@ export default function NewYearGoalsApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Family accountability</h3>
-            <p className="text-sm text-muted-foreground">Share progress with family — group text. They cheer you on. Apple Watch can share fitness with family. Family member checks in weekly. 80% of resolutions fail by February — not yours. Tiny steps. Tracking. Family love. = success.</p>
+            <p className="text-base text-muted-foreground">Share progress with family — group text. They cheer you on. Apple Watch can share fitness with family. Family member checks in weekly. 80% of resolutions fail by February — not yours. Tiny steps. Tracking. Family love. = success.</p>
           </CardContent>
         </Card>
       </main>

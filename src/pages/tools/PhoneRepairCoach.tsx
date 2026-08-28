@@ -26,7 +26,7 @@ export default function PhoneRepairCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common repairs and rough costs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cracked screen, iPhone:</strong> $150-$400 at Apple. $80-$200 at local repair shops.</li>
               <li><strong>Battery replacement, iPhone:</strong> $69-$119 at Apple. $50-$80 at local shops.</li>
               <li><strong>Battery, Android:</strong> $50-$120.</li>
@@ -40,7 +40,7 @@ export default function PhoneRepairCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to get repairs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Store / Apple Authorized Service</strong> — Genuine parts, 1-year warranty on repair. More expensive.</li>
               <li><strong>Best Buy Geek Squad</strong> — Authorized Apple repair. Often same-day. Reliable.</li>
               <li><strong>uBreakiFix (Samsung partner)</strong> — Authorized Samsung. Good for Android.</li>
@@ -53,7 +53,7 @@ export default function PhoneRepairCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Decision tree: repair vs replace</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Phone is 1-3 years old + repair is under $150:</strong> Repair.</li>
               <li><strong>Phone is 4+ years old + repair is over $150:</strong> Probably replace. Apple stops supporting iPhones after about 6 years.</li>
               <li><strong>Multiple things broken:</strong> Replace.</li>
@@ -83,7 +83,7 @@ export default function PhoneRepairCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save money on a replacement</h3>
-            <p className="text-sm text-muted-foreground"><strong>Apple Certified Refurbished</strong> — same warranty as new, $50-$200 cheaper. <strong>Amazon Renewed</strong> — slightly cheaper. <strong>Verizon, AT&T, T-Mobile trade-in</strong> — gives credit toward a new phone but read the fine print on monthly payments. <strong>Don\'t pre-pay for an "iPhone 17" rumor</strong> — buy current models that are proven.</p>
+            <p className="text-base text-muted-foreground"><strong>Apple Certified Refurbished</strong> — same warranty as new, $50-$200 cheaper. <strong>Amazon Renewed</strong> — slightly cheaper. <strong>Verizon, AT&T, T-Mobile trade-in</strong> — gives credit toward a new phone but read the fine print on monthly payments. <strong>Don\'t pre-pay for an "iPhone 17" rumor</strong> — buy current models that are proven.</p>
           </CardContent>
         </Card>
       </main>

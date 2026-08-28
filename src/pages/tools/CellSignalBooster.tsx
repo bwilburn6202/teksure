@@ -45,7 +45,7 @@ export default function CellSignalBooster() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -77,7 +77,7 @@ export default function CellSignalBooster() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best path</h3>
-            <p className="text-sm text-muted-foreground">Try Wi-Fi calling first (free). If you have NO cellular at all but good Wi-Fi — done. If Wi-Fi calling drops or you need cellular outdoors on the property — get a weBoost. Cheapest fix that actually fixes.</p>
+            <p className="text-base text-muted-foreground">Try Wi-Fi calling first (free). If you have NO cellular at all but good Wi-Fi — done. If Wi-Fi calling drops or you need cellular outdoors on the property — get a weBoost. Cheapest fix that actually fixes.</p>
           </CardContent>
         </Card>
       </main>

@@ -34,7 +34,7 @@ export default function HotelLoyaltyPrograms() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function HotelLoyaltyPrograms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why bother</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free to join. Sign up in 2 minutes online.</li>
               <li>Best room rate ("member rate") — usually 5-15% off public rate.</li>
               <li>Free wifi (most chains).</li>
@@ -57,7 +57,7 @@ export default function HotelLoyaltyPrograms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Which to pick</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cruise + airport stays</strong> — Marriott Bonvoy (most port-city hotels).</li>
               <li><strong>Highway road trips</strong> — Choice Privileges or IHG.</li>
               <li><strong>Visit family abroad</strong> — Marriott or Hilton (biggest international).</li>
@@ -71,7 +71,7 @@ export default function HotelLoyaltyPrograms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Marriott</strong> — 15% off "Senior Discount" rate (must be 62+, can&apos;t combine with member rate).</li>
               <li><strong>Hilton</strong> — 10% off "Hilton Senior Discount" (62+).</li>
               <li><strong>Choice Hotels</strong> — 5-10% senior discount.</li>
@@ -85,7 +85,7 @@ export default function HotelLoyaltyPrograms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Status hacks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Co-branded credit cards</strong> give automatic mid-tier status — Hilton Aspire ($550/yr) gives top-tier Diamond status.</li>
               <li><strong>Match status</strong> — moved away from a brand? Email new brand asking to "match" your old status. Often granted.</li>
               <li><strong>Book direct on hotel website</strong> — never via Booking.com or Expedia for stays you want to count toward status.</li>
@@ -97,7 +97,7 @@ export default function HotelLoyaltyPrograms() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free fifth night</h3>
-            <p className="text-sm text-muted-foreground">Marriott Bonvoy, Hilton Honors, and IHG all give "5th night free" when you pay for 4 nights with points. If a long trip — book in 5-night chunks. 20% savings effectively.</p>
+            <p className="text-base text-muted-foreground">Marriott Bonvoy, Hilton Honors, and IHG all give "5th night free" when you pay for 4 nights with points. If a long trip — book in 5-night chunks. 20% savings effectively.</p>
           </CardContent>
         </Card>
       </main>

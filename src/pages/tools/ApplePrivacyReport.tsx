@@ -19,7 +19,7 @@ export default function ApplePrivacyReport() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Turn ON App Privacy Report</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Privacy &amp; Security → App Privacy Report.</li>
               <li>Tap "Turn On App Privacy Report".</li>
               <li>Wait 1 week.</li>
@@ -32,7 +32,7 @@ export default function ApplePrivacyReport() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">App Tracking Transparency</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Privacy &amp; Security → Tracking.</li>
               <li>"Allow Apps to Request to Track" — turn OFF.</li>
               <li>Apps can&apos;t track you across other apps + websites.</li>
@@ -45,7 +45,7 @@ export default function ApplePrivacyReport() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mail Privacy Protection</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Mail → Privacy Protection.</li>
               <li>"Protect Mail Activity" — turn ON.</li>
               <li>Hides your IP from email senders.</li>
@@ -58,7 +58,7 @@ export default function ApplePrivacyReport() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hide My Email</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iCloud+ feature ($1/mo for 50GB iCloud).</li>
               <li>Generates random @icloud.com address per signup.</li>
               <li>Forwards to your real email.</li>
@@ -71,7 +71,7 @@ export default function ApplePrivacyReport() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Per-app permissions</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Privacy &amp; Security.</li>
               <li>Tap each: Location Services, Camera, Microphone, Photos, etc.</li>
               <li>Review every app.</li>
@@ -85,7 +85,7 @@ export default function ApplePrivacyReport() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Apple cares more than Google</h3>
-            <p className="text-sm text-muted-foreground">Apple makes money from hardware, NOT ads. Their privacy features are aggressive — by design. iPhone is privacy-strongest mainstream phone. Combine with the steps above = senior-friendly + private.</p>
+            <p className="text-base text-muted-foreground">Apple makes money from hardware, NOT ads. Their privacy features are aggressive — by design. iPhone is privacy-strongest mainstream phone. Combine with the steps above = senior-friendly + private.</p>
           </CardContent>
         </Card>
       </main>

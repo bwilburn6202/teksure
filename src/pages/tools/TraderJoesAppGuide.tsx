@@ -19,7 +19,7 @@ export default function TraderJoesAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Official Trader Joe&apos;s app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free.</li>
               <li>Searchable product list — find before you go.</li>
               <li>Recipes using TJ&apos;s products.</li>
@@ -33,7 +33,7 @@ export default function TraderJoesAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why TJ&apos;s for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smaller stores = less walking.</li>
               <li>Friendly staff who answer questions.</li>
               <li>Many ready-made meals — perfect for 1-2 person households.</li>
@@ -48,7 +48,7 @@ export default function TraderJoesAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorite TJ&apos;s products</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mandarin Orange Chicken</strong> — frozen. Restaurant-quality.</li>
               <li><strong>Vegetable Bird&apos;s Nest tempura</strong>.</li>
               <li><strong>Single-serve frozen meals</strong> — many senior-portion.</li>
@@ -64,7 +64,7 @@ export default function TraderJoesAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free perks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free coffee samples — daily.</li>
               <li>Free product samples — daily.</li>
               <li>Free + flowers near checkout.</li>
@@ -78,7 +78,7 @@ export default function TraderJoesAppGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Avoid app-only fads</h3>
-            <p className="text-sm text-muted-foreground">3rd-party "TJ&apos;s tracker" apps come and go. Stick with official + r/TraderJoes on Reddit. Reddit community shows new products + reviews fastest. Free + senior-friendly.</p>
+            <p className="text-base text-muted-foreground">3rd-party "TJ&apos;s tracker" apps come and go. Stick with official + r/TraderJoes on Reddit. Reddit community shows new products + reviews fastest. Free + senior-friendly.</p>
           </CardContent>
         </Card>
       </main>

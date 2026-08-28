@@ -19,7 +19,7 @@ export default function FurnaceFilterSwap() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How often</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1&quot; standard filters: every 1-3 months.</li>
               <li>4-5&quot; pleated filters: every 6-12 months.</li>
               <li>Pets/dust = more often.</li>
@@ -33,7 +33,7 @@ export default function FurnaceFilterSwap() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Steps (2 min)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Turn off HVAC.</li>
               <li>Find filter slot (next to HVAC unit).</li>
               <li>Note arrow direction on old filter.</li>
@@ -48,7 +48,7 @@ export default function FurnaceFilterSwap() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find size</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Written on side of OLD filter.</li>
               <li>Common: 16x25, 20x25, 16x20.</li>
               <li>Subscribe + Save Amazon — auto-deliver.</li>
@@ -61,7 +61,7 @@ export default function FurnaceFilterSwap() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">MERV rating</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>MERV 8 = standard, fine for most.</li>
               <li>MERV 11 = better for allergies.</li>
               <li>MERV 13 = highest catches viruses.</li>
@@ -75,7 +75,7 @@ export default function FurnaceFilterSwap() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Big savings</h3>
-            <p className="text-sm text-muted-foreground">Skipping filter changes destroys HVAC = $5K-15K replace. New filter = $8-30. HVAC contractor charges $30-50 to swap. Total no-brainer DIY. 5 min monthly. Family member can do if you can&apos;t.</p>
+            <p className="text-base text-muted-foreground">Skipping filter changes destroys HVAC = $5K-15K replace. New filter = $8-30. HVAC contractor charges $30-50 to swap. Total no-brainer DIY. 5 min monthly. Family member can do if you can&apos;t.</p>
           </CardContent>
         </Card>
       </main>

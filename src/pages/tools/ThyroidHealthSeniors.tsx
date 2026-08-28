@@ -19,7 +19,7 @@ export default function ThyroidHealthSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hypothyroid (slow) symptoms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fatigue / low energy.</li>
               <li>Weight gain.</li>
               <li>Cold intolerance.</li>
@@ -35,7 +35,7 @@ export default function ThyroidHealthSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hyperthyroid (fast) symptoms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Anxiety + restlessness.</li>
               <li>Weight loss despite eating.</li>
               <li>Heat intolerance.</li>
@@ -51,7 +51,7 @@ export default function ThyroidHealthSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get tested</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Simple blood test — TSH.</li>
               <li>Add: Free T4, Free T3 if needed.</li>
               <li>Medicare covers fully.</li>
@@ -66,7 +66,7 @@ export default function ThyroidHealthSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Treatments</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hypo</strong> — levothyroxine (Synthroid). Daily pill.</li>
               <li>Take same time, empty stomach.</li>
               <li>Re-check 6-8 weeks after start.</li>
@@ -81,7 +81,7 @@ export default function ThyroidHealthSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Levothyroxine tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Take 30-60 min before food.</li>
               <li>Brand-name vs generic — stick with one.</li>
               <li>Avoid taking with coffee, calcium, iron.</li>
@@ -95,7 +95,7 @@ export default function ThyroidHealthSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Why often missed in seniors</h3>
-            <p className="text-sm text-muted-foreground">Symptoms attributed to &quot;just aging&quot; — fatigue, slowness, weight gain. Annual TSH catches it. If feeling exhausted + slow — ASK for thyroid test. Can dramatically improve quality of life.</p>
+            <p className="text-base text-muted-foreground">Symptoms attributed to &quot;just aging&quot; — fatigue, slowness, weight gain. Annual TSH catches it. If feeling exhausted + slow — ASK for thyroid test. Can dramatically improve quality of life.</p>
           </CardContent>
         </Card>
       </main>

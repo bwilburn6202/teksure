@@ -19,7 +19,7 @@ export default function PackingChecklistSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medications (carry-on always)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>All meds in original bottles with labels.</li>
               <li>Pack 7-day extra in case of delays.</li>
               <li>Medication list with doses + doctor.</li>
@@ -34,7 +34,7 @@ export default function PackingChecklistSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medical devices (carry-on)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>CPAP machine — FREE extra carry-on (federal law).</li>
               <li>Glucose monitor + supplies.</li>
               <li>Hearing aids + spare batteries.</li>
@@ -48,7 +48,7 @@ export default function PackingChecklistSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Documents (carry-on)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Passport (not expiring within 6 months for international).</li>
               <li>Driver&apos;s license / Real ID.</li>
               <li>Travel insurance + policy.</li>
@@ -63,7 +63,7 @@ export default function PackingChecklistSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Comfort essentials</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Compression socks for plane.</li>
               <li>Travel pillow — inflatable or neck.</li>
               <li>Eye mask + earplugs.</li>
@@ -78,7 +78,7 @@ export default function PackingChecklistSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tech</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone + charger.</li>
               <li>Power bank (Anker 10K mAh) — for delays.</li>
               <li>Universal power adapter (international).</li>
@@ -92,7 +92,7 @@ export default function PackingChecklistSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First aid / personal</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pain reliever, antacid, anti-diarrhea.</li>
               <li>Bandaids, antibiotic ointment.</li>
               <li>Sunscreen + lip balm w/ SPF.</li>
@@ -107,7 +107,7 @@ export default function PackingChecklistSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pack light rule</h3>
-            <p className="text-sm text-muted-foreground">If suitcase too heavy to lift = too heavy. Hard to manage curbs, cobblestones, hotel stairs. Limit to 22-30 lbs. Can always buy extras (toothbrush, etc) at destination. Most seniors over-pack 30%.</p>
+            <p className="text-base text-muted-foreground">If suitcase too heavy to lift = too heavy. Hard to manage curbs, cobblestones, hotel stairs. Limit to 22-30 lbs. Can always buy extras (toothbrush, etc) at destination. Most seniors over-pack 30%.</p>
           </CardContent>
         </Card>
       </main>

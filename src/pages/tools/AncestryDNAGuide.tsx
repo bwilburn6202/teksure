@@ -33,7 +33,7 @@ export default function AncestryDNAGuide() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function AncestryDNAGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior generation matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You&apos;re closest to ancestors — most useful generation.</li>
               <li>Test parents/aunts/uncles BEFORE they pass.</li>
               <li>Older generation reveals branches descendants can&apos;t.</li>
@@ -55,7 +55,7 @@ export default function AncestryDNAGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy concerns 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>23andMe was hacked 2023 — millions exposed.</li>
               <li>Most companies share with research (opt out).</li>
               <li>Police use these databases — Golden State Killer caught.</li>
@@ -69,7 +69,7 @@ export default function AncestryDNAGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you learn</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ethnicity estimate (% by region).</li>
               <li>DNA matches — relatives also tested.</li>
               <li>Health risks (23andMe — limited).</li>
@@ -83,7 +83,7 @@ export default function AncestryDNAGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Maximize results</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Best to test on AncestryDNA (largest database).</li>
               <li>Upload raw DNA to MyHeritage + GEDmatch (free).</li>
               <li>Build family tree on Ancestry.com (free trial).</li>
@@ -96,7 +96,7 @@ export default function AncestryDNAGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Difficult discoveries</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Paternity surprises common.</li>
               <li>Half-siblings from sperm donors.</li>
               <li>Hidden adoptions.</li>
@@ -111,7 +111,7 @@ export default function AncestryDNAGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free genealogy sources</h3>
-            <p className="text-sm text-muted-foreground"><strong>FamilySearch.org</strong> — free, run by LDS Church. Best free resource. <strong>USGenWeb</strong> — free state-level records. <strong>Ellis Island records</strong> — free immigration. Library cards often include ancestry.com access at libraries. Free at libraries makes paid Ancestry membership unnecessary for many.</p>
+            <p className="text-base text-muted-foreground"><strong>FamilySearch.org</strong> — free, run by LDS Church. Best free resource. <strong>USGenWeb</strong> — free state-level records. <strong>Ellis Island records</strong> — free immigration. Library cards often include ancestry.com access at libraries. Free at libraries makes paid Ancestry membership unnecessary for many.</p>
           </CardContent>
         </Card>
       </main>

@@ -28,7 +28,7 @@ export default function WifiPasswordSharing() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone-to-iPhone (instant)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>YOUR phone is connected to Wi-Fi. THEIR phone is unlocked nearby.</li>
                 <li>They tap the network name on their phone.</li>
                 <li>YOUR phone shows a popup: "Share Your Wi-Fi". Tap "Share Password".</li>
@@ -49,7 +49,7 @@ export default function WifiPasswordSharing() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android — QR code share</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → Network → Wi-Fi → tap your connected network.</li>
                 <li>Tap "Share" or "QR code".</li>
                 <li>QR code appears.</li>
@@ -76,7 +76,7 @@ export default function WifiPasswordSharing() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick tip — secure your password</h3>
-            <p className="text-sm text-muted-foreground">When grandkids ask for Wi-Fi, give them GUEST network — not main. Your computers, smart bulbs, and printer stay invisible to them. (See our Childproof for Visits tool.)</p>
+            <p className="text-base text-muted-foreground">When grandkids ask for Wi-Fi, give them GUEST network — not main. Your computers, smart bulbs, and printer stay invisible to them. (See our Childproof for Visits tool.)</p>
           </CardContent>
         </Card>
       </main>

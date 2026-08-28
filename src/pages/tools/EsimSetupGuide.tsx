@@ -42,7 +42,7 @@ export default function EsimSetupGuide() {
             <h2 className="font-bold text-xl mb-3"> Setting up eSIM on iPhone</h2>
             <p className="text-sm mb-3"><strong>If your phone is brand new from the carrier:</strong> It comes pre-activated. Just turn it on and follow the prompts.</p>
             <p className="text-sm mb-2"><strong>Switching from a different phone:</strong></p>
-            <ol className="list-decimal pl-5 space-y-2 text-sm mb-4">
+            <ol className="list-decimal pl-5 space-y-2 text-base mb-4">
               <li>Settings → Cellular → Add eSIM.</li>
               <li>Tap "Transfer From Nearby iPhone" — both phones need iOS 16 or newer and to be near each other.</li>
               <li>Confirm on the old phone. Wait 1-5 minutes.</li>
@@ -55,7 +55,7 @@ export default function EsimSetupGuide() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Setting up eSIM on Android</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Network & internet → SIMs (or "Mobile network" on some Samsungs).</li>
               <li>Tap "+" or "Add SIM".</li>
               <li>Choose "Download a SIM instead?" or "Add eSIM".</li>
@@ -89,7 +89,7 @@ export default function EsimSetupGuide() {
               <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">If you get stuck</h3>
-                <p className="text-sm text-muted-foreground">Call your carrier and say "I need help activating eSIM on my new phone." They do this hundreds of times a day. It usually takes 5-10 minutes.</p>
+                <p className="text-base text-muted-foreground">Call your carrier and say "I need help activating eSIM on my new phone." They do this hundreds of times a day. It usually takes 5-10 minutes.</p>
               </div>
             </div>
           </CardContent>

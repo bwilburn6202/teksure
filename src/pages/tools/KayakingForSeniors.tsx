@@ -19,7 +19,7 @@ export default function KayakingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior advantages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Low impact on joints.</li>
               <li>Easy to learn.</li>
               <li>Cardio + arms exercise.</li>
@@ -34,7 +34,7 @@ export default function KayakingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best senior kayaks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sit-on-top</strong> — easier in/out than sit-in.</li>
               <li><strong>Wider hull</strong> — more stable.</li>
               <li><strong>Lighter weight</strong> — easier to carry.</li>
@@ -48,7 +48,7 @@ export default function KayakingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Try first — rent</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most lakes have rentals $25-50/hr.</li>
               <li>Try sit-on-top first.</li>
               <li>Outfitter teaches basics.</li>
@@ -62,7 +62,7 @@ export default function KayakingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ALWAYS wear life jacket.</li>
               <li>Don&apos;t go alone (especially first times).</li>
               <li>Stay close to shore.</li>
@@ -78,7 +78,7 @@ export default function KayakingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pedal kayak vs paddle</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Paddle</strong> — traditional, arm exercise.</li>
               <li><strong>Pedal</strong> (Hobie) — leg power, hands free.</li>
               <li>Pedal best if shoulder issues.</li>
@@ -92,7 +92,7 @@ export default function KayakingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior kayak clubs</h3>
-            <p className="text-sm text-muted-foreground">Many states have senior kayaking groups via Meetup.com. Lake associations. American Canoe Association. Outdoor recreation centers. Group paddles + safety + social. Many seniors continue kayaking into 80s.</p>
+            <p className="text-base text-muted-foreground">Many states have senior kayaking groups via Meetup.com. Lake associations. American Canoe Association. Outdoor recreation centers. Group paddles + safety + social. Many seniors continue kayaking into 80s.</p>
           </CardContent>
         </Card>
       </main>

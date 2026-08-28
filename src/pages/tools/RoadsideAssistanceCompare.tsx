@@ -34,7 +34,7 @@ export default function RoadsideAssistanceCompare() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function RoadsideAssistanceCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What roadside covers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Towing to repair shop.</li>
               <li>Flat tire — change to spare.</li>
               <li>Battery jump or replacement.</li>
@@ -58,7 +58,7 @@ export default function RoadsideAssistanceCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AAA bonus benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hotel/restaurant discounts.</li>
               <li>Travel agency + cruises.</li>
               <li>Free maps + trip planning.</li>
@@ -74,7 +74,7 @@ export default function RoadsideAssistanceCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Already covered? Check first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Car warranty</strong> — new cars often include 3-5 yrs.</li>
               <li><strong>Auto insurance</strong> — many include $10-30 add-on.</li>
               <li><strong>Credit cards</strong> — Capital One Venture, Chase Sapphire.</li>
@@ -87,7 +87,7 @@ export default function RoadsideAssistanceCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior decision tree</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drive often + long distances → AAA Plus.</li>
               <li>Local driving only → AAA Classic.</li>
               <li>Snowbird → AAA Plus + RV plan if RV.</li>
@@ -101,7 +101,7 @@ export default function RoadsideAssistanceCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Family plan saves $$</h3>
-            <p className="text-sm text-muted-foreground">AAA primary member + family adds for $30-40 each (vs $70-90 each individually). Spouse + adult kids covered. Even if kids don&apos;t drive — covered when they ride. Worth checking. AAA secondary households get the same benefits.</p>
+            <p className="text-base text-muted-foreground">AAA primary member + family adds for $30-40 each (vs $70-90 each individually). Spouse + adult kids covered. Even if kids don&apos;t drive — covered when they ride. Worth checking. AAA secondary households get the same benefits.</p>
           </CardContent>
         </Card>
       </main>

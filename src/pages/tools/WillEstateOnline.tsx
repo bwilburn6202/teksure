@@ -48,7 +48,7 @@ export default function WillEstateOnline() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -57,7 +57,7 @@ export default function WillEstateOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use a REAL attorney</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Estate over $1 million</strong> (or close to your state\'s estate tax limit).</li>
               <li><strong>Real estate in multiple states</strong>.</li>
               <li><strong>Complex family</strong> (blended, second marriages, special-needs children).</li>
@@ -71,7 +71,7 @@ export default function WillEstateOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After you make it</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>SIGN it in front of witnesses (rules vary by state).</li>
               <li>NOTARIZE if your state requires it.</li>
               <li>Tell your family WHERE the original is.</li>
@@ -86,7 +86,7 @@ export default function WillEstateOnline() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">"I don\'t need one" — yes you do</h3>
-            <p className="text-sm text-muted-foreground">Without a will, the state decides who gets your stuff. The court process (probate) costs your family thousands and takes 6-18 months. Even simple estates benefit from a will. $200 saves your family thousands and months of stress.</p>
+            <p className="text-base text-muted-foreground">Without a will, the state decides who gets your stuff. The court process (probate) costs your family thousands and takes 6-18 months. Even simple estates benefit from a will. $200 saves your family thousands and months of stress.</p>
           </CardContent>
         </Card>
       </main>

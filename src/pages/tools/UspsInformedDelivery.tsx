@@ -74,7 +74,7 @@ export default function UspsInformedDelivery() {
               <ShieldCheck className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Bonus: identity-theft protection</h3>
-                <p className="text-sm text-muted-foreground">Sign up <strong>even if you don\'t plan to look at the photos</strong>. The reason: scammers sometimes sign up for Informed Delivery using your address, then watch your mail to commit fraud. Once YOU\'ve claimed your address, they can\'t.</p>
+                <p className="text-base text-muted-foreground">Sign up <strong>even if you don\'t plan to look at the photos</strong>. The reason: scammers sometimes sign up for Informed Delivery using your address, then watch your mail to commit fraud. Once YOU\'ve claimed your address, they can\'t.</p>
               </div>
             </div>
           </CardContent>

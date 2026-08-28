@@ -64,7 +64,7 @@ export default function WhenToTakeSocialSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spousal & survivor benefits — important</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lower-earning spouse</strong> can claim up to 50% of higher-earner\'s FRA benefit.</li>
               <li><strong>If higher earner dies</strong>, the survivor gets to keep the larger of the two benefits. So delaying the higher earner\'s claim BOOSTS the survivor benefit too.</li>
               <li><strong>Divorced</strong> — if married 10+ years, can claim on ex-spouse\'s record (without affecting them).</li>
@@ -89,7 +89,7 @@ export default function WhenToTakeSocialSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to apply</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Apply 3 months before you want benefits to start.</li>
               <li>Online: <strong>ssa.gov/applyforbenefits</strong>. 30 minutes.</li>
               <li>Or call 1-800-772-1213 for a phone appointment.</li>
@@ -101,7 +101,7 @@ export default function WhenToTakeSocialSecurity() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For most healthy couples</h3>
-            <p className="text-sm text-muted-foreground">Higher earner delays to 70. Lower earner can take at 67. This usually maximizes both lifetime income and survivor benefits. But it depends on your specific numbers — run them through OpenSocialSecurity.com or a fee-only fiduciary advisor before deciding.</p>
+            <p className="text-base text-muted-foreground">Higher earner delays to 70. Lower earner can take at 67. This usually maximizes both lifetime income and survivor benefits. But it depends on your specific numbers — run them through OpenSocialSecurity.com or a fee-only fiduciary advisor before deciding.</p>
           </CardContent>
         </Card>
       </main>

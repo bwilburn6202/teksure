@@ -35,7 +35,7 @@ export default function IslamicPrayerApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,7 +56,7 @@ export default function IslamicPrayerApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For Ramadan specifically</h3>
-            <p className="text-sm text-muted-foreground">During Ramadan, most apps have iftar + suhoor reminder, Quran-in-30-days reading plan, and tarawih schedule. Set notifications for last 10 nights when many seek Laylat al-Qadr.</p>
+            <p className="text-base text-muted-foreground">During Ramadan, most apps have iftar + suhoor reminder, Quran-in-30-days reading plan, and tarawih schedule. Set notifications for last 10 nights when many seek Laylat al-Qadr.</p>
           </CardContent>
         </Card>
       </main>

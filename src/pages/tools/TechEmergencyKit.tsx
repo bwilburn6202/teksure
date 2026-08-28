@@ -91,7 +91,7 @@ export default function TechEmergencyKit() {
               <CardContent className="py-8 text-center">
                 <Sparkles className="h-10 w-10 text-green-500 mx-auto mb-3" />
                 <h2 className="text-xl font-bold mb-1">Your emergency kit is complete!</h2>
-                <p className="text-sm text-muted-foreground">You are prepared. Revisit this checklist every 6 months to make sure everything is still up to date.</p>
+                <p className="text-base text-muted-foreground">You are prepared. Revisit this checklist every 6 months to make sure everything is still up to date.</p>
               </CardContent>
             </Card>
           )}

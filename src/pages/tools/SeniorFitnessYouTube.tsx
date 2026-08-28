@@ -34,7 +34,7 @@ export default function SeniorFitnessYouTube() {
                   <span className="text-sm font-semibold text-primary">{c.cost}</span>
                 </div>
                 <p className="text-sm">{c.best}</p>
-                <p className="text-sm text-muted-foreground">{c.good}</p>
+                <p className="text-base text-muted-foreground">{c.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function SeniorFitnessYouTube() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cast to TV</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Smart TV — open YouTube app on TV, search channel.</li>
               <li>Roku/FireTV — same. YouTube app.</li>
               <li>iPhone — open YouTube app, tap cast icon (top right). Picks Apple TV/Chromecast.</li>
@@ -56,7 +56,7 @@ export default function SeniorFitnessYouTube() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick the right level</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Brand new</strong> — start with chair workouts only.</li>
               <li><strong>Already active</strong> — standing balance + light strength.</li>
               <li><strong>Athletic 60+</strong> — full-body strength, longer cardio.</li>
@@ -69,7 +69,7 @@ export default function SeniorFitnessYouTube() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Build the habit</h3>
-            <p className="text-sm text-muted-foreground">Same time + place every day. Say "After morning coffee, I do my 15-minute video." Within 2 weeks, the habit sticks. Skip a day, no big deal — just don&apos;t skip two in a row.</p>
+            <p className="text-base text-muted-foreground">Same time + place every day. Say "After morning coffee, I do my 15-minute video." Within 2 weeks, the habit sticks. Skip a day, no big deal — just don&apos;t skip two in a row.</p>
           </CardContent>
         </Card>
       </main>

@@ -26,7 +26,7 @@ export default function PasskeyExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why they&apos;re safer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No password to type — no keylogger or phisher to steal.</li>
               <li>Each site gets a unique key. One breach can&apos;t affect others.</li>
               <li>Bound to YOUR device. Hacker on the other side of the world can&apos;t use it.</li>
@@ -38,7 +38,7 @@ export default function PasskeyExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How sign-in feels</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Visit website. Type your username (or it&apos;s remembered).</li>
               <li>Phone or computer asks "Use Face ID to sign in?"</li>
               <li>Look at phone or touch fingerprint. Done.</li>
@@ -50,7 +50,7 @@ export default function PasskeyExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sites supporting passkeys (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Google, Apple, Microsoft.</li>
               <li>Amazon, eBay, PayPal, Best Buy, Target.</li>
               <li>Facebook, Instagram, X (Twitter).</li>
@@ -64,7 +64,7 @@ export default function PasskeyExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up your first passkey</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Log into Google or Apple or Microsoft account on a phone.</li>
               <li>Account → Security → Passkeys.</li>
               <li>Tap "Create a Passkey".</li>
@@ -77,7 +77,7 @@ export default function PasskeyExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where passkeys are stored</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone</strong> — iCloud Keychain. Syncs to iPad and Mac.</li>
               <li><strong>Android</strong> — Google Password Manager. Syncs to all your Google devices.</li>
               <li><strong>1Password / Bitwarden</strong> — store passkeys. Syncs across devices regardless of platform.</li>
@@ -89,7 +89,7 @@ export default function PasskeyExplainer() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t panic</h3>
-            <p className="text-sm text-muted-foreground">Passwords aren&apos;t going away tomorrow. Passkeys add an option — they don&apos;t force change. Try them on Google or Amazon first. If you like it, expand. Most sites still have password as a backup option.</p>
+            <p className="text-base text-muted-foreground">Passwords aren&apos;t going away tomorrow. Passkeys add an option — they don&apos;t force change. Try them on Google or Amazon first. If you like it, expand. Most sites still have password as a backup option.</p>
           </CardContent>
         </Card>
       </main>

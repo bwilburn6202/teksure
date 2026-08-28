@@ -41,7 +41,7 @@ export default function OldDeviceDisposal() {
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{p.name}</h3>
                 <p className="text-sm mb-1">{p.what}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -79,7 +79,7 @@ export default function OldDeviceDisposal() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">DON\'T put in regular trash</h3>
-            <p className="text-sm text-muted-foreground">Electronics contain lead, mercury, lithium that pollute landfills. Many states ban e-waste in trash. Also — your old data could be recovered. Always recycle properly.</p>
+            <p className="text-base text-muted-foreground">Electronics contain lead, mercury, lithium that pollute landfills. Many states ban e-waste in trash. Also — your old data could be recovered. Always recycle properly.</p>
           </CardContent>
         </Card>
       </main>

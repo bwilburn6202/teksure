@@ -19,7 +19,7 @@ export default function BookClubsHowToFind() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Library</strong> — most have multiple clubs.</li>
               <li><strong>Senior centers</strong>.</li>
               <li><strong>Bookstore-hosted</strong> (Barnes &amp; Noble).</li>
@@ -34,7 +34,7 @@ export default function BookClubsHowToFind() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Reese Witherspoon&apos;s Book Club</strong> — large following.</li>
               <li><strong>Oprah&apos;s Book Club</strong>.</li>
               <li><strong>Goodreads groups</strong> — thousands.</li>
@@ -49,7 +49,7 @@ export default function BookClubsHowToFind() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-themed clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many libraries have 50+ specific clubs.</li>
               <li>Slower pace — meets monthly.</li>
               <li>Mix of fiction + nonfiction.</li>
@@ -63,7 +63,7 @@ export default function BookClubsHowToFind() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start your own</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Invite 4-8 friends.</li>
               <li>Meet monthly.</li>
               <li>Rotate hosts.</li>
@@ -78,7 +78,7 @@ export default function BookClubsHowToFind() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Discussion guides FREE</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most major books have publisher discussion guides.</li>
               <li>LitLovers.com.</li>
               <li>Book clubs in libraries provide.</li>
@@ -91,7 +91,7 @@ export default function BookClubsHowToFind() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Brain + social benefits</h3>
-            <p className="text-sm text-muted-foreground">Book clubs = reading exercise + social connection + cognitive challenge. Studies link to brain health. Plus deep friendships form. Many seniors&apos; favorite social activity. Discussion expands thinking. Try one.</p>
+            <p className="text-base text-muted-foreground">Book clubs = reading exercise + social connection + cognitive challenge. Studies link to brain health. Plus deep friendships form. Many seniors&apos; favorite social activity. Discussion expands thinking. Try one.</p>
           </CardContent>
         </Card>
       </main>

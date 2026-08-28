@@ -19,7 +19,7 @@ export default function ColdSnapSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hypothermia in seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Can happen INDOORS too (under 65°F).</li>
               <li>Signs: shivering, cold, confusion, drowsiness.</li>
               <li>Move to warm space + warm gradually.</li>
@@ -33,7 +33,7 @@ export default function ColdSnapSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stay warm at home</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set 68°F minimum (warmer if feeling cold).</li>
               <li>Wear layers indoors.</li>
               <li>Use space heater (UL listed only) carefully.</li>
@@ -48,7 +48,7 @@ export default function ColdSnapSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Frozen pipes prevention</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drip faucets when below 20°F.</li>
               <li>Open cabinets under sinks.</li>
               <li>Insulate exposed pipes.</li>
@@ -63,7 +63,7 @@ export default function ColdSnapSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Outside safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Layer clothing.</li>
               <li>Hat (lose 10% body heat through head).</li>
               <li>Cover ears, nose, fingers.</li>
@@ -78,7 +78,7 @@ export default function ColdSnapSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Power outages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Have flashlights + batteries ready.</li>
               <li>Charge phone + power banks.</li>
               <li>Move to one room — close doors.</li>
@@ -93,7 +93,7 @@ export default function ColdSnapSafety() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior energy help</h3>
-            <p className="text-sm text-muted-foreground">LIHEAP pays heat bills. Don&apos;t turn off heat to save money — die from cold. Apply early winter. Salvation Army assistance. State programs. Don&apos;t suffer — help available.</p>
+            <p className="text-base text-muted-foreground">LIHEAP pays heat bills. Don&apos;t turn off heat to save money — die from cold. Apply early winter. Salvation Army assistance. State programs. Don&apos;t suffer — help available.</p>
           </CardContent>
         </Card>
       </main>

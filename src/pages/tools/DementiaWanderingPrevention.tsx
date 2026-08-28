@@ -19,7 +19,7 @@ export default function DementiaWanderingPrevention() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">GPS tracking devices</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AngelSense GPS</strong> — wearable. Senior-specific. $30/mo.</li>
               <li><strong>Apple Watch</strong> — fall detection + family sharing. $200+.</li>
               <li><strong>Tile / Apple AirTag</strong> — attach to clothes/keys. $25-30 one-time.</li>
@@ -33,7 +33,7 @@ export default function DementiaWanderingPrevention() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Door alarms + locks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Door alarms</strong> — magnetic, $20. Beep when door opens.</li>
               <li><strong>Smart locks</strong> — log when door opens. App alerts.</li>
               <li><strong>Door knob covers</strong> — confuse but allow caregiver.</li>
@@ -48,7 +48,7 @@ export default function DementiaWanderingPrevention() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medical ID</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>MedicAlert + Alzheimer&apos;s Association Wandering Support</strong> — $35 + $40/yr.</li>
               <li>Bracelet engraved &quot;Alzheimer&apos;s/Dementia&quot; + emergency contact.</li>
               <li>ID card in wallet always.</li>
@@ -62,7 +62,7 @@ export default function DementiaWanderingPrevention() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reduce wandering triggers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily routine — same wake/eat/bed times.</li>
               <li>Address &quot;lost&quot; feelings calmly.</li>
               <li>Daily exercise — reduces restlessness.</li>
@@ -77,7 +77,7 @@ export default function DementiaWanderingPrevention() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If they wander</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Call 911 immediately. Don&apos;t wait.</li>
               <li>Tell dispatcher: &quot;dementia, vulnerable adult.&quot;</li>
               <li>Provide recent photo.</li>
@@ -92,7 +92,7 @@ export default function DementiaWanderingPrevention() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free Project Lifesaver</h3>
-            <p className="text-sm text-muted-foreground">Many counties offer FREE GPS bracelet for residents with dementia/autism/wandering. Police search uses radio tracker — finds in 30 min average. Call sheriff&apos;s office. Search &quot;[your county] Project Lifesaver&quot;. Lifesaver.org has list.</p>
+            <p className="text-base text-muted-foreground">Many counties offer FREE GPS bracelet for residents with dementia/autism/wandering. Police search uses radio tracker — finds in 30 min average. Call sheriff&apos;s office. Search &quot;[your county] Project Lifesaver&quot;. Lifesaver.org has list.</p>
           </CardContent>
         </Card>
       </main>

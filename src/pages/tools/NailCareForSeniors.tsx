@@ -19,7 +19,7 @@ export default function NailCareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mature nail changes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Slower growth.</li>
               <li>Brittleness common.</li>
               <li>Yellowing.</li>
@@ -33,7 +33,7 @@ export default function NailCareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cuticle oil daily.</li>
               <li>Hand cream after washing.</li>
               <li>Wear gloves for dishes.</li>
@@ -47,7 +47,7 @@ export default function NailCareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Foot care critical</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Trim straight to prevent ingrown.</li>
               <li>File, don&apos;t cut, calluses.</li>
               <li>Diabetic = podiatrist only.</li>
@@ -61,7 +61,7 @@ export default function NailCareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fungus prevention</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Dry feet thoroughly.</li>
               <li>Antifungal powder in shoes.</li>
               <li>Don&apos;t share clippers.</li>
@@ -75,7 +75,7 @@ export default function NailCareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Easy-grip clippers</strong> ($15).</li>
               <li><strong>Magnifying mirror</strong>.</li>
               <li><strong>Long-handle file</strong> for feet.</li>
@@ -89,7 +89,7 @@ export default function NailCareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Salon visits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Manicure $20-30.</li>
               <li>Pedicure $35-50.</li>
               <li>Bring own tools (hygiene).</li>
@@ -103,7 +103,7 @@ export default function NailCareForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When to see podiatrist</h3>
-            <p className="text-sm text-muted-foreground">Diabetic — yearly podiatrist. Bunions painful — surgery option. Ingrown nail recurrent. Yellow / thick fungus. Hammer toes painful. Diabetic shoes Medicare-covered. Podiatrist at-home visits available some areas. Foot health = mobility = independence. Senior priority.</p>
+            <p className="text-base text-muted-foreground">Diabetic — yearly podiatrist. Bunions painful — surgery option. Ingrown nail recurrent. Yellow / thick fungus. Hammer toes painful. Diabetic shoes Medicare-covered. Podiatrist at-home visits available some areas. Foot health = mobility = independence. Senior priority.</p>
           </CardContent>
         </Card>
       </main>

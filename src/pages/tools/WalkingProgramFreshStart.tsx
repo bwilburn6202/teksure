@@ -19,7 +19,7 @@ export default function WalkingProgramFreshStart() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why walking is best for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FREE — no gym membership.</li>
               <li>Joint-friendly (vs running).</li>
               <li>Anywhere — neighborhood, mall, treadmill.</li>
@@ -34,7 +34,7 @@ export default function WalkingProgramFreshStart() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">12-week beginner program</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Week 1-2</strong> — 10 min/day, 3 days/week.</li>
               <li><strong>Week 3-4</strong> — 15 min/day, 4 days/week.</li>
               <li><strong>Week 5-6</strong> — 20 min/day, 5 days/week.</li>
@@ -50,7 +50,7 @@ export default function WalkingProgramFreshStart() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free walking apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Health / Google Fit</strong> — auto-tracks. Free.</li>
               <li><strong>MapMyWalk</strong> — routes + tracking. Free.</li>
               <li><strong>Pacer</strong> — step + calorie tracker. Free.</li>
@@ -64,7 +64,7 @@ export default function WalkingProgramFreshStart() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best places to walk</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mall walking</strong> — climate controlled, safe, social. Many open early for walkers.</li>
               <li><strong>Neighborhood</strong> — convenience.</li>
               <li><strong>Park trails</strong> — beautiful + flat.</li>
@@ -78,7 +78,7 @@ export default function WalkingProgramFreshStart() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Walking shoes matter</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Replace every 300-500 miles or 6-12 months.</li>
               <li>Brooks Ghost / Hoka Bondi / New Balance 880 — senior favorites.</li>
               <li>Get fitted at running store (free).</li>
@@ -92,7 +92,7 @@ export default function WalkingProgramFreshStart() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Add intensity</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hills / inclines.</li>
               <li>Walking poles (Nordic walking) — works upper body.</li>
               <li>Weighted vest (5-10 lbs).</li>
@@ -106,7 +106,7 @@ export default function WalkingProgramFreshStart() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free walking groups</h3>
-            <p className="text-sm text-muted-foreground"><strong>AARP Walk Group</strong> — local groups. <strong>Mall walkers clubs</strong> — most malls have. <strong>Walk With Ease</strong> (Arthritis Foundation) — free 6-week program. <strong>Senior centers</strong> often have walking groups. Social + accountability + fun. Don&apos;t walk alone if possible.</p>
+            <p className="text-base text-muted-foreground"><strong>AARP Walk Group</strong> — local groups. <strong>Mall walkers clubs</strong> — most malls have. <strong>Walk With Ease</strong> (Arthritis Foundation) — free 6-week program. <strong>Senior centers</strong> often have walking groups. Social + accountability + fun. Don&apos;t walk alone if possible.</p>
           </CardContent>
         </Card>
       </main>

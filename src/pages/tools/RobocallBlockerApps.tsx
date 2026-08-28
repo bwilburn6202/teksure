@@ -19,7 +19,7 @@ export default function RobocallBlockerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Carrier blocking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AT&amp;T ActiveArmor — free.</li>
               <li>Verizon Call Filter — free.</li>
               <li>T-Mobile Scam Shield — free.</li>
@@ -33,7 +33,7 @@ export default function RobocallBlockerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RoboKiller</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$3.99/month or $40/year.</li>
               <li>Aggressive blocking.</li>
               <li>Plays funny &quot;answer bots&quot; for scammers.</li>
@@ -47,7 +47,7 @@ export default function RobocallBlockerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hiya / Truecaller</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free with optional Premium.</li>
               <li>Caller ID enhancement.</li>
               <li>Spam warnings on incoming.</li>
@@ -61,7 +61,7 @@ export default function RobocallBlockerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone built-in</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Phone → Silence Unknown Callers.</li>
               <li>Unknown numbers go to voicemail.</li>
               <li>Free, built-in.</li>
@@ -75,7 +75,7 @@ export default function RobocallBlockerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Do Not Call list</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>DoNotCall.gov — register free.</li>
               <li>Reduces telemarketing (legal).</li>
               <li>Scammers ignore — but legal.</li>
@@ -89,7 +89,7 @@ export default function RobocallBlockerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t answer unknown numbers.</li>
               <li>Real callers leave voicemail.</li>
               <li>Hang up on robocalls immediately.</li>
@@ -103,7 +103,7 @@ export default function RobocallBlockerApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">iPhone Silence Unknown is magic</h3>
-            <p className="text-sm text-muted-foreground">For seniors getting too many scam calls, the most effective single setting is iPhone&apos;s &quot;Silence Unknown Callers.&quot; Enables this, unknown numbers go straight to voicemail. Real callers leave message. Scammers don&apos;t. Free, built-in, transformative. Combined with carrier&apos;s free spam filter, blocks 95% of scam calls.</p>
+            <p className="text-base text-muted-foreground">For seniors getting too many scam calls, the most effective single setting is iPhone&apos;s &quot;Silence Unknown Callers.&quot; Enables this, unknown numbers go straight to voicemail. Real callers leave message. Scammers don&apos;t. Free, built-in, transformative. Combined with carrier&apos;s free spam filter, blocks 95% of scam calls.</p>
           </CardContent>
         </Card>
       </main>

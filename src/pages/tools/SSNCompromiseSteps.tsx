@@ -19,7 +19,7 @@ export default function SSNCompromiseSteps() {
         <Card className="mb-4 border-red-300">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3 text-red-700">First 24 hours</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Contact 1 of 3 credit bureaus.</li>
               <li>Equifax / Experian / TransUnion.</li>
               <li>Place 1-year fraud alert (free).</li>
@@ -33,7 +33,7 @@ export default function SSNCompromiseSteps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 2: Credit freeze</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free at all 3 bureaus.</li>
               <li>Stops new accounts opened.</li>
               <li>Equifax: equifax.com/personal/credit-freeze.</li>
@@ -47,7 +47,7 @@ export default function SSNCompromiseSteps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 3: SSA + IRS</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Report to SSA — 1-800-772-1213.</li>
               <li>Or visit local SSA office.</li>
               <li>Get IRS Identity Protection PIN.</li>
@@ -61,7 +61,7 @@ export default function SSNCompromiseSteps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 4: FTC report</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>identitytheft.gov.</li>
               <li>Step-by-step recovery plan.</li>
               <li>Generates affidavit.</li>
@@ -75,7 +75,7 @@ export default function SSNCompromiseSteps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch for fraud</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Check credit reports monthly.</li>
               <li>Annual free at annualcreditreport.com.</li>
               <li>Bank app daily.</li>
@@ -89,7 +89,7 @@ export default function SSNCompromiseSteps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recovery time</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Months to years.</li>
               <li>Disputes individual accounts.</li>
               <li>FTC report = legal weight.</li>
@@ -103,7 +103,7 @@ export default function SSNCompromiseSteps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Future protection</h3>
-            <p className="text-sm text-muted-foreground">Keep credit freeze active permanently. Lift only when applying for new credit (free, online). Strong passwords + 2FA on all accounts. Don&apos;t share SSN unless required by law. Memorize SSN — never carry card. Identity theft monitoring services ($30/mo) optional. Free credit alerts work too.</p>
+            <p className="text-base text-muted-foreground">Keep credit freeze active permanently. Lift only when applying for new credit (free, online). Strong passwords + 2FA on all accounts. Don&apos;t share SSN unless required by law. Memorize SSN — never carry card. Identity theft monitoring services ($30/mo) optional. Free credit alerts work too.</p>
           </CardContent>
         </Card>
       </main>

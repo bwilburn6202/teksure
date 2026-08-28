@@ -74,7 +74,7 @@ export default function OnlineHearingTest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hearing aid options at every price point</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>$0:</strong> AirPods Pro 2 in hearing aid mode (iOS 18+) — for mild loss.</li>
               <li><strong>$200-$500:</strong> OTC hearing aids — Jabra Enhance, Lexie, Sony, Audien. Available at Best Buy, CVS, Costco. No prescription.</li>
               <li><strong>$1,500-$5,000/pair:</strong> Prescription hearing aids — fitted by an audiologist. Best for moderate to severe loss.</li>
@@ -87,7 +87,7 @@ export default function OnlineHearingTest() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Costco is the best deal</h3>
-            <p className="text-sm text-muted-foreground">Costco Hearing Aid Center sells prescription hearing aids at $1,500-$2,000/pair — half what most audiologists charge. Free testing, free fitting, free follow-ups for life. Membership pays for itself with one purchase.</p>
+            <p className="text-base text-muted-foreground">Costco Hearing Aid Center sells prescription hearing aids at $1,500-$2,000/pair — half what most audiologists charge. Free testing, free fitting, free follow-ups for life. Membership pays for itself with one purchase.</p>
           </CardContent>
         </Card>
       </main>

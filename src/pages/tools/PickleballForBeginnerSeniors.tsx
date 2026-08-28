@@ -19,7 +19,7 @@ export default function PickleballForBeginnerSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why pickleball</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Easier than tennis on body.</li>
               <li>Smaller court = less running.</li>
               <li>Lower-impact paddle sport.</li>
@@ -33,7 +33,7 @@ export default function PickleballForBeginnerSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find courts + groups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Places to Play app — find courts.</li>
               <li>Pickleball.com directory.</li>
               <li>Senior center courts often.</li>
@@ -47,7 +47,7 @@ export default function PickleballForBeginnerSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Starter equipment</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Beginner paddle $30-$50.</li>
               <li>Pickleball balls $10/pack.</li>
               <li>Court shoes — non-marking.</li>
@@ -61,7 +61,7 @@ export default function PickleballForBeginnerSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Beginner lessons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most parks offer free clinics.</li>
               <li>YMCA group lessons.</li>
               <li>Senior center beginner classes.</li>
@@ -75,7 +75,7 @@ export default function PickleballForBeginnerSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps to track</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>DUPR — pickleball ratings system.</li>
               <li>Track your skill level (2.0-5.0).</li>
               <li>Find similar-skill players.</li>
@@ -89,7 +89,7 @@ export default function PickleballForBeginnerSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Injury prevention</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stretch before playing.</li>
               <li>Proper court shoes.</li>
               <li>Stay hydrated.</li>
@@ -103,7 +103,7 @@ export default function PickleballForBeginnerSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hottest senior social activity</h3>
-            <p className="text-sm text-muted-foreground">Pickleball isn&apos;t just exercise — it&apos;s become a major senior social activity. Many seniors play 3-5 times weekly + make life-long friends. Free or low-cost in most areas. $50 paddle is cheapest senior activity that genuinely transforms lives. Try one drop-in session at local rec center.</p>
+            <p className="text-base text-muted-foreground">Pickleball isn&apos;t just exercise — it&apos;s become a major senior social activity. Many seniors play 3-5 times weekly + make life-long friends. Free or low-cost in most areas. $50 paddle is cheapest senior activity that genuinely transforms lives. Try one drop-in session at local rec center.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function EmergencyContactPlan() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why a written plan matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone may die or be lost.</li>
               <li>Stress makes you forget numbers.</li>
               <li>Family can find each other after disaster.</li>
@@ -33,7 +33,7 @@ export default function EmergencyContactPlan() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">ICE contacts on phone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ICE = In Case of Emergency.</li>
               <li>Add &quot;ICE — [Name]&quot; in your phone contacts.</li>
               <li>First responders look for ICE entries.</li>
@@ -47,7 +47,7 @@ export default function EmergencyContactPlan() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Medical ID</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Health app — tap profile icon.</li>
               <li>Tap &quot;Medical ID.&quot;</li>
               <li>Add medical conditions, medications, allergies.</li>
@@ -61,7 +61,7 @@ export default function EmergencyContactPlan() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android Emergency Info</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Emergency information.</li>
               <li>Add medical info + emergency contacts.</li>
               <li>Accessible from lock screen.</li>
@@ -75,7 +75,7 @@ export default function EmergencyContactPlan() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Out-of-state contact</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Designate one out-of-state relative or friend.</li>
               <li>During regional disaster, local lines jam.</li>
               <li>Out-of-state calls often work better.</li>
@@ -89,7 +89,7 @@ export default function EmergencyContactPlan() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wallet contact card</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Print emergency contact info on card.</li>
               <li>Keep in wallet behind ID.</li>
               <li>List: ICE contacts, doctor, blood type.</li>
@@ -103,7 +103,7 @@ export default function EmergencyContactPlan() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Set up Medical ID today</h3>
-            <p className="text-sm text-muted-foreground">If you do nothing else, open the Health app on your iPhone (or Settings on Android) and set up Medical ID with at least one emergency contact and your medical conditions. Toggle &quot;Show When Locked&quot; ON. If you&apos;re ever in an accident and unconscious, paramedics can immediately see who to call and what conditions to be aware of. This is the single most important emergency prep step every senior should take this week.</p>
+            <p className="text-base text-muted-foreground">If you do nothing else, open the Health app on your iPhone (or Settings on Android) and set up Medical ID with at least one emergency contact and your medical conditions. Toggle &quot;Show When Locked&quot; ON. If you&apos;re ever in an accident and unconscious, paramedics can immediately see who to call and what conditions to be aware of. This is the single most important emergency prep step every senior should take this week.</p>
           </CardContent>
         </Card>
       </main>

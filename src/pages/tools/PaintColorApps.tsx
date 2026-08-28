@@ -33,7 +33,7 @@ export default function PaintColorApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function PaintColorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Match a color you love</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Sherwin-Williams ColorSnap.</li>
               <li>Tap "Match a Photo" or take new photo.</li>
               <li>Tap any spot on the photo.</li>
@@ -55,7 +55,7 @@ export default function PaintColorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly painting tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Always order $5 paint samples before buying gallon. Paint a 2&apos;×2&apos; patch, look at it morning/noon/night.</li>
               <li>"Forever neutrals" — Sherwin-Williams Repose Gray, Agreeable Gray, BM Pale Oak, Classic Gray.</li>
               <li>Eggshell finish hides imperfections better than flat.</li>
@@ -68,7 +68,7 @@ export default function PaintColorApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save the color codes</h3>
-            <p className="text-sm text-muted-foreground">Each room you paint, write color name + brand + sheen on a Post-it inside a closet. When time to touch up — easy. Or save in Apple Notes "Paint Colors" page.</p>
+            <p className="text-base text-muted-foreground">Each room you paint, write color name + brand + sheen on a Post-it inside a closet. When time to touch up — easy. Or save in Apple Notes "Paint Colors" page.</p>
           </CardContent>
         </Card>
       </main>

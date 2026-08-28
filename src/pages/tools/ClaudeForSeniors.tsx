@@ -19,7 +19,7 @@ export default function ClaudeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Claude vs ChatGPT</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Claude</strong> — better at writing, more careful, more honest.</li>
               <li><strong>ChatGPT</strong> — more popular, more features, image generation.</li>
               <li>Both have free versions.</li>
@@ -33,7 +33,7 @@ export default function ClaudeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get started</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to <strong>claude.ai</strong>.</li>
               <li>Sign up with email (free).</li>
               <li>Type question in chat box.</li>
@@ -47,7 +47,7 @@ export default function ClaudeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What Claude does well</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Writing letters, emails, complaints.</li>
               <li>Explaining medical / legal documents.</li>
               <li>Editing your writing — keeps your voice.</li>
@@ -62,7 +62,7 @@ export default function ClaudeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-useful tasks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Edit your memoir chapter.</li>
               <li>Explain insurance policy.</li>
               <li>Translate medical jargon.</li>
@@ -79,7 +79,7 @@ export default function ClaudeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free vs paid</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Free</strong> — limited daily messages. Plenty for most.</li>
               <li><strong>Pro $20/mo</strong> — 5x more messages, better model, file uploads.</li>
               <li>Most seniors don&apos;t need paid.</li>
@@ -92,7 +92,7 @@ export default function ClaudeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy + safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t share: SSN, Medicare#, passwords.</li>
               <li>Don&apos;t enter banking / credit info.</li>
               <li>Use generic descriptions when describing situations.</li>
@@ -105,7 +105,7 @@ export default function ClaudeForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Voice mode + apps</h3>
-            <p className="text-sm text-muted-foreground">Claude has phone app — speak instead of type. ChatGPT same. Easier for seniors with arthritis. Like having conversation with smart friend. Apple, Google, Samsung all building AI into phones. AI = future of senior tech support. Gets easier every year.</p>
+            <p className="text-base text-muted-foreground">Claude has phone app — speak instead of type. ChatGPT same. Easier for seniors with arthritis. Like having conversation with smart friend. Apple, Google, Samsung all building AI into phones. AI = future of senior tech support. Gets easier every year.</p>
           </CardContent>
         </Card>
       </main>

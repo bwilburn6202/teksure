@@ -19,7 +19,7 @@ export default function ScanOldPhotos() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free phone apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Google PhotoScan</strong> (free) — 4 corner shots auto-merged. Removes glare. Best free option.</li>
               <li><strong>Apple Notes</strong> — built into iPhone. Tap camera icon → "Scan Documents". Works on photos too.</li>
               <li><strong>Microsoft Lens</strong> (free) — auto-crops, fixes angles. Saves to OneDrive.</li>
@@ -31,7 +31,7 @@ export default function ScanOldPhotos() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mail-in services (best for big collections)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Legacybox</strong> — $400 for ~250 photos (all formats). Famous brand. Slow but reliable.</li>
               <li><strong>ScanCafe</strong> — $0.30/photo. Send physical photos in. Get a thumb drive back.</li>
               <li><strong>ScanMyPhotos</strong> — $200 prepaid box, holds 1,800 photos. Best per-photo price.</li>
@@ -44,7 +44,7 @@ export default function ScanOldPhotos() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Home scanner (best for archives)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Epson FastFoto FF-680W</strong> ($600) — scans 1 photo per second. Fastest at home. Best for thousands.</li>
               <li><strong>Epson V39</strong> ($100) — basic flatbed scanner. Slow but affordable.</li>
               <li><strong>Brother ADS-2700W</strong> ($350) — also handles documents.</li>
@@ -56,7 +56,7 @@ export default function ScanOldPhotos() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for great scans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wipe each photo with soft cloth first.</li>
               <li>Scan at 600 DPI minimum (1200 for old slides).</li>
               <li>Keep originals — never throw away.</li>
@@ -70,7 +70,7 @@ export default function ScanOldPhotos() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">VHS, slides, film reels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Costco Digital Conversion</strong> — VHS to digital ~$25/tape.</li>
               <li><strong>Walgreens, CVS</strong> — limited services, decent prices.</li>
               <li><strong>Legacybox</strong> — handles all formats.</li>
@@ -82,7 +82,7 @@ export default function ScanOldPhotos() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best ROI</h3>
-            <p className="text-sm text-muted-foreground">Pick the 100 most important photos first. Scan those carefully, save in 3 places, share with family. The other 5,000? Mail-in service handles bulk. Don&apos;t spend years scanning every photo from 1965 — get the best ones digitized while you&apos;re here to identify who&apos;s in them.</p>
+            <p className="text-base text-muted-foreground">Pick the 100 most important photos first. Scan those carefully, save in 3 places, share with family. The other 5,000? Mail-in service handles bulk. Don&apos;t spend years scanning every photo from 1965 — get the best ones digitized while you&apos;re here to identify who&apos;s in them.</p>
           </CardContent>
         </Card>
       </main>

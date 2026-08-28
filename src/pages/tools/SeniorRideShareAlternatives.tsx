@@ -19,7 +19,7 @@ export default function SeniorRideShareAlternatives() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free + low-cost senior rides</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Medicare Advantage NEMT</strong> — many plans cover 12-30 free medical rides/year.</li>
               <li><strong>Medicaid NEMT</strong> — non-emergency medical transportation, free for eligible.</li>
               <li><strong>Local senior center shuttle</strong> — many run free to grocery, doctor, mall.</li>
@@ -34,7 +34,7 @@ export default function SeniorRideShareAlternatives() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific rideshare</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>GoGoGrandparent</strong> — call 1-800 number, they book Uber. No smartphone needed.</li>
               <li><strong>SilverRide</strong> — driver helps with walker, groceries.</li>
               <li><strong>Envoy America</strong> — premium senior driver service.</li>
@@ -47,7 +47,7 @@ export default function SeniorRideShareAlternatives() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Public transit perks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most US transit gives 50% off for seniors.</li>
               <li>Some cities — completely free for 65+ (NYC, Boston).</li>
               <li>Transit apps make it manageable: Apple Maps, Google Maps, Transit app, Moovit.</li>
@@ -59,7 +59,7 @@ export default function SeniorRideShareAlternatives() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Schedule-ahead rides</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Uber + Lyft both let you schedule 30 days ahead.</li>
               <li>Reduces last-minute stress.</li>
               <li>Doctor appointments — schedule both directions a week ahead.</li>
@@ -72,7 +72,7 @@ export default function SeniorRideShareAlternatives() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Mix + match</h3>
-            <p className="text-sm text-muted-foreground">Best senior-mobility plan: Medicare ride for medical + paratransit for big errands + Uber/Lyft for spontaneous + family for emergencies + senior center shuttle for routine. No single solution covers everything. Build a 3-4 option toolkit.</p>
+            <p className="text-base text-muted-foreground">Best senior-mobility plan: Medicare ride for medical + paratransit for big errands + Uber/Lyft for spontaneous + family for emergencies + senior center shuttle for routine. No single solution covers everything. Build a 3-4 option toolkit.</p>
           </CardContent>
         </Card>
       </main>

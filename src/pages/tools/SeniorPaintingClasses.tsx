@@ -19,7 +19,7 @@ export default function SeniorPaintingClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bob Ross style — free</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bob Ross Joy of Painting on YouTube.</li>
               <li>Full episodes free + iconic.</li>
               <li>Wet-on-wet oil technique.</li>
@@ -33,7 +33,7 @@ export default function SeniorPaintingClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skillshare painting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$14/month for thousands of classes.</li>
               <li>Watercolor, acrylic, oil, drawing.</li>
               <li>1-month free trial.</li>
@@ -47,7 +47,7 @@ export default function SeniorPaintingClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouTube channels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lindsay Weirich (The Frugal Crafter).</li>
               <li>Watercolor Misfit.</li>
               <li>Sarah Cray (Let&apos;s Make Art).</li>
@@ -61,7 +61,7 @@ export default function SeniorPaintingClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior centers often offer classes.</li>
               <li>Library art programs.</li>
               <li>Community college continuing ed.</li>
@@ -75,7 +75,7 @@ export default function SeniorPaintingClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheap art supplies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reeves watercolors — beginner $20.</li>
               <li>Liquitex Basics acrylics — $20 starter.</li>
               <li>Canson watercolor pad — $10.</li>
@@ -89,7 +89,7 @@ export default function SeniorPaintingClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Digital painting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPad + Apple Pencil + Procreate ($13).</li>
               <li>No supplies, no mess.</li>
               <li>Unlimited &quot;canvas.&quot;</li>
@@ -103,7 +103,7 @@ export default function SeniorPaintingClasses() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Bob Ross + dollar-store paints</h3>
-            <p className="text-sm text-muted-foreground">Easiest start: watch Bob Ross on YouTube + buy basic acrylic paints from Hobby Lobby. Spend $20 on paints + cheap canvas. Try following along with one episode. Free + low-risk way to discover if painting brings you joy. Many seniors discover lifelong artistic passion this way. The journey from there is endless.</p>
+            <p className="text-base text-muted-foreground">Easiest start: watch Bob Ross on YouTube + buy basic acrylic paints from Hobby Lobby. Spend $20 on paints + cheap canvas. Try following along with one episode. Free + low-risk way to discover if painting brings you joy. Many seniors discover lifelong artistic passion this way. The journey from there is endless.</p>
           </CardContent>
         </Card>
       </main>

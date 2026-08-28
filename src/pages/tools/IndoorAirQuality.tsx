@@ -34,7 +34,7 @@ export default function IndoorAirQuality() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function IndoorAirQuality() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to monitor and why</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>PM2.5</strong> — fine particles from smoke, cooking, wildfires. Major cause of asthma, heart disease.</li>
               <li><strong>Radon</strong> — odorless gas from soil. Causes 21,000 lung cancer deaths/year in US. Test EVERY home.</li>
               <li><strong>CO2</strong> — high indoor CO2 causes drowsiness, headaches, poor concentration. Open windows.</li>
@@ -57,7 +57,7 @@ export default function IndoorAirQuality() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Air purifiers worth knowing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Coway AirMega 200M</strong> — best value. Around $150.</li>
               <li><strong>Levoit Core 400S</strong> — solid mid-range, smart features.</li>
               <li><strong>BlueAir 211+</strong> — premium quiet operation.</li>
@@ -70,7 +70,7 @@ export default function IndoorAirQuality() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you live in wildfire country</h3>
-            <p className="text-sm text-muted-foreground">A PurpleAir monitor + a $150 HEPA purifier in the bedroom = breathable air during smoke events. Worth far more than "wait it out."</p>
+            <p className="text-base text-muted-foreground">A PurpleAir monitor + a $150 HEPA purifier in the bedroom = breathable air during smoke events. Worth far more than "wait it out."</p>
           </CardContent>
         </Card>
       </main>

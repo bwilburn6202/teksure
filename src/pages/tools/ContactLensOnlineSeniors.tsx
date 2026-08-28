@@ -19,7 +19,7 @@ export default function ContactLensOnlineSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why buy online?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Federal law requires doctors give you prescription.</li>
               <li>You can shop anywhere with that prescription.</li>
               <li>Online prices 30–50% cheaper than office.</li>
@@ -33,7 +33,7 @@ export default function ContactLensOnlineSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">1-800 Contacts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Largest contact lens retailer.</li>
               <li>Price-match guarantee.</li>
               <li>Free shipping on all orders.</li>
@@ -47,7 +47,7 @@ export default function ContactLensOnlineSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheaper alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ContactsDirect — usually cheapest, owned by Luxottica.</li>
               <li>Lens.com — bargain prices, slower shipping.</li>
               <li>DiscountContactLenses.com — competitive pricing.</li>
@@ -61,7 +61,7 @@ export default function ContactLensOnlineSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance + savings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VSP, EyeMed often work with online retailers.</li>
               <li>FSA + HSA dollars eligible.</li>
               <li>Bulk year supply often cheapest per box.</li>
@@ -75,7 +75,7 @@ export default function ContactLensOnlineSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Multifocal contacts (presbyopia)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many seniors switch to multifocal contacts.</li>
               <li>See close + far without reading glasses.</li>
               <li>Acuvue Oasys Multifocal popular.</li>
@@ -89,7 +89,7 @@ export default function ContactLensOnlineSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior care tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily disposables — easier than monthly cleaning.</li>
               <li>Wash hands before handling.</li>
               <li>Don&apos;t sleep in unless approved by doctor.</li>
@@ -103,7 +103,7 @@ export default function ContactLensOnlineSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Annual order saves the most</h3>
-            <p className="text-sm text-muted-foreground">Buy a full year supply at once from 1-800 Contacts or ContactsDirect. After insurance and rebate, you&apos;ll often pay 30–40% less than buying through your eye doctor. Free shipping. The boxes don&apos;t expire fast — most contacts good for 4+ years unopened. Set a calendar reminder for annual eye exam to renew prescription.</p>
+            <p className="text-base text-muted-foreground">Buy a full year supply at once from 1-800 Contacts or ContactsDirect. After insurance and rebate, you&apos;ll often pay 30–40% less than buying through your eye doctor. Free shipping. The boxes don&apos;t expire fast — most contacts good for 4+ years unopened. Set a calendar reminder for annual eye exam to renew prescription.</p>
           </CardContent>
         </Card>
       </main>

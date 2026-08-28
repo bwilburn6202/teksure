@@ -19,7 +19,7 @@ export default function FireAlarmTest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Test routine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Press TEST button monthly.</li>
               <li>All alarms should beep.</li>
               <li>If silent or weak — replace.</li>
@@ -33,7 +33,7 @@ export default function FireAlarmTest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>10-year sealed lithium</strong> — no battery changes.</li>
               <li><strong>Smart smoke alarms</strong> (Nest Protect) — phone alerts + voice warnings.</li>
               <li><strong>Combination smoke + CO</strong> — covers both.</li>
@@ -47,7 +47,7 @@ export default function FireAlarmTest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to install</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Every bedroom.</li>
               <li>Outside each sleeping area.</li>
               <li>Each level of home.</li>
@@ -62,7 +62,7 @@ export default function FireAlarmTest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">CO detectors essential</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Carbon monoxide silent killer.</li>
               <li>From: gas appliances, generators, fireplace, car running.</li>
               <li>Symptoms: headache, confusion, nausea (flu-like).</li>
@@ -76,7 +76,7 @@ export default function FireAlarmTest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free fire dept services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many fire depts install smoke alarms FREE.</li>
               <li>Test existing alarms.</li>
               <li>Senior priority.</li>
@@ -90,7 +90,7 @@ export default function FireAlarmTest() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior fire prep</h3>
-            <p className="text-sm text-muted-foreground">Plan 2 escape routes per room. Practice with family. Phone in bedroom. Number to fire dept programmed. Avoid clutter blocking exits. Keep flashlights bedside. Speed of escape critical for seniors.</p>
+            <p className="text-base text-muted-foreground">Plan 2 escape routes per room. Practice with family. Phone in bedroom. Number to fire dept programmed. Avoid clutter blocking exits. Keep flashlights bedside. Speed of escape critical for seniors.</p>
           </CardContent>
         </Card>
       </main>

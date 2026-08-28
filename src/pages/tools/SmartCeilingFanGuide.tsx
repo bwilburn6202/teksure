@@ -33,7 +33,7 @@ export default function SmartCeilingFanGuide() {
                   <span className="text-sm font-semibold text-primary">{f.cost}</span>
                 </div>
                 <p className="text-sm">{f.best}</p>
-                <p className="text-sm text-muted-foreground">{f.good}</p>
+                <p className="text-base text-muted-foreground">{f.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SmartCeilingFanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Retrofit (don&apos;t replace fan)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bond Bridge</strong> ($90) — works with most existing remote-control fans.</li>
               <li><strong>Lutron Caseta fan switch</strong> — replace wall switch only.</li>
               <li><strong>Treatlife smart fan switch</strong> — $25-50, in-wall replacement.</li>
@@ -55,7 +55,7 @@ export default function SmartCeilingFanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No more reaching for chain or wall switch.</li>
               <li>Voice control: &quot;Alexa, turn on bedroom fan.&quot;</li>
               <li>Schedule: auto-on/off morning/night.</li>
@@ -69,7 +69,7 @@ export default function SmartCeilingFanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hire electrician — $150-300 for new fan + smart switch.</li>
               <li>Don&apos;t DIY ceiling fan unless experienced — falls + electric risk.</li>
               <li>Ask electrician about fan-rated junction box (heavier).</li>
@@ -82,7 +82,7 @@ export default function SmartCeilingFanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice commands</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Alexa, turn on the bedroom fan.&quot;</li>
               <li>&quot;Hey Google, set the fan to medium.&quot;</li>
               <li>&quot;Alexa, turn off all fans.&quot;</li>
@@ -95,7 +95,7 @@ export default function SmartCeilingFanGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Energy savings</h3>
-            <p className="text-sm text-muted-foreground">Ceiling fan + AC at 78°F = same comfort as 72°F AC alone. Saves $100-300/yr cooling. Reverse direction in winter (clockwise) — pushes warm air down, saves heat. Most smart fans have winter mode.</p>
+            <p className="text-base text-muted-foreground">Ceiling fan + AC at 78°F = same comfort as 72°F AC alone. Saves $100-300/yr cooling. Reverse direction in winter (clockwise) — pushes warm air down, saves heat. Most smart fans have winter mode.</p>
           </CardContent>
         </Card>
       </main>

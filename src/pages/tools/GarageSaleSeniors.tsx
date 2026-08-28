@@ -19,7 +19,7 @@ export default function GarageSaleSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">2 weeks before</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sort items: SELL, DONATE, KEEP, TRASH.</li>
               <li>Test electronics — buyers want working items.</li>
               <li>Wash clothes/linens.</li>
@@ -33,7 +33,7 @@ export default function GarageSaleSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pricing tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Clothes: $1-3.</li>
               <li>Books: $0.50-2.</li>
               <li>Small kitchen items: $1-5.</li>
@@ -49,7 +49,7 @@ export default function GarageSaleSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Advertise</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Facebook Marketplace</strong> — free + reaches your area.</li>
               <li><strong>Craigslist</strong> — &quot;garage sales&quot; section.</li>
               <li><strong>Nextdoor</strong> — neighbors first.</li>
@@ -63,7 +63,7 @@ export default function GarageSaleSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sale day setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$50 in small bills + change for till.</li>
               <li>Folding tables — borrow from friends.</li>
               <li>Lock house door + keep money close.</li>
@@ -78,7 +78,7 @@ export default function GarageSaleSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alternatives to garage sale</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Facebook Marketplace</strong> — sell items individually.</li>
               <li><strong>Craigslist</strong> — bigger items.</li>
               <li><strong>OfferUp</strong> — local quick sales.</li>
@@ -92,7 +92,7 @@ export default function GarageSaleSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">After the sale</h3>
-            <p className="text-sm text-muted-foreground">Donate leftovers same day or next — don&apos;t bring stuff back inside. Goodwill, Salvation Army, Habitat ReStore (furniture), Vietnam Vets pick up free. Get receipt for tax deduction. Sale day = NEW START.</p>
+            <p className="text-base text-muted-foreground">Donate leftovers same day or next — don&apos;t bring stuff back inside. Goodwill, Salvation Army, Habitat ReStore (furniture), Vietnam Vets pick up free. Get receipt for tax deduction. Sale day = NEW START.</p>
           </CardContent>
         </Card>
       </main>

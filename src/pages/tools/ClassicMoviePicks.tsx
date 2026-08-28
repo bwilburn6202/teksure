@@ -19,7 +19,7 @@ export default function ClassicMoviePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to stream classics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>TCM (Turner Classic Movies)</strong> — premium classics.</li>
               <li><strong>Criterion Channel</strong> — $11/mo art films.</li>
               <li><strong>Tubi</strong> — FREE, classics aplenty.</li>
@@ -33,7 +33,7 @@ export default function ClassicMoviePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Must-see classics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Casablanca (1942).</li>
               <li>Gone with the Wind (1939).</li>
               <li>Singin&apos; in the Rain (1952).</li>
@@ -48,7 +48,7 @@ export default function ClassicMoviePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorite stars</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cary Grant — North by Northwest, Charade.</li>
               <li>Audrey Hepburn — Roman Holiday, Sabrina.</li>
               <li>Jimmy Stewart — Mr. Smith Goes to Washington.</li>
@@ -62,7 +62,7 @@ export default function ClassicMoviePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Genre by mood</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Comfort food</strong> — musicals, romcoms.</li>
               <li><strong>Suspense</strong> — Hitchcock collection.</li>
               <li><strong>Western</strong> — John Ford films.</li>
@@ -76,7 +76,7 @@ export default function ClassicMoviePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly viewing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Closed captions — turn on always.</li>
               <li>Subtitles for foreign films.</li>
               <li>TV speakers + soundbar.</li>
@@ -90,7 +90,7 @@ export default function ClassicMoviePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for finding</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>JustWatch.com — finds where to stream.</li>
               <li>JustWatch app — Android/iPhone.</li>
               <li>Library DVDs — free + endless.</li>
@@ -104,7 +104,7 @@ export default function ClassicMoviePicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Movie + memory</h3>
-            <p className="text-sm text-muted-foreground">Classic films watched with parents return memories. Great for dementia patients — familiar from youth. Family movie night = bonding. Talk with friends about films you&apos;ve seen. Library + Tubi + Pluto = thousands free. Re-discover Hollywood&apos;s golden age.</p>
+            <p className="text-base text-muted-foreground">Classic films watched with parents return memories. Great for dementia patients — familiar from youth. Family movie night = bonding. Talk with friends about films you&apos;ve seen. Library + Tubi + Pluto = thousands free. Re-discover Hollywood&apos;s golden age.</p>
           </CardContent>
         </Card>
       </main>

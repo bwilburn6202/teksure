@@ -41,7 +41,7 @@ export default function AiComparisonCoach() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function AiComparisonCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Match AI to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Translate this email"</strong> → any of them.</li>
               <li><strong>"Help me write a difficult letter"</strong> → Claude is excellent.</li>
               <li><strong>"What\'s the latest news on X?"</strong> → Gemini or Perplexity (real-time web).</li>
@@ -77,7 +77,7 @@ export default function AiComparisonCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try them all</h3>
-            <p className="text-sm text-muted-foreground">All have free versions. Try the same question on 2-3 AIs and see which answers you like better. Many people stick with whatever they tried first — but real differences exist.</p>
+            <p className="text-base text-muted-foreground">All have free versions. Try the same question on 2-3 AIs and see which answers you like better. Many people stick with whatever they tried first — but real differences exist.</p>
           </CardContent>
         </Card>
       </main>

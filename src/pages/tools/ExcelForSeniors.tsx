@@ -19,7 +19,7 @@ export default function ExcelForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Track monthly budget.</li>
               <li>Christmas card mailing list.</li>
               <li>Medication tracker (with dates).</li>
@@ -34,7 +34,7 @@ export default function ExcelForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5 essential skills</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Type in cells (click cell, type).</li>
               <li>Sum a column: =SUM(A1:A10).</li>
               <li>Average: =AVERAGE(B1:B10).</li>
@@ -48,7 +48,7 @@ export default function ExcelForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Beginner template</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>File → New — search &quot;budget.&quot;</li>
               <li>Free monthly budget template.</li>
               <li>Type in your numbers.</li>
@@ -62,7 +62,7 @@ export default function ExcelForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Larger zoom (View → Zoom → 150%).</li>
               <li>Bigger column widths (drag column line).</li>
               <li>Bold headers — easier to read.</li>
@@ -76,7 +76,7 @@ export default function ExcelForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Google Sheets</strong> — same idea, FREE.</li>
               <li>Browser-based.</li>
               <li>Works on any device.</li>
@@ -90,7 +90,7 @@ export default function ExcelForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t over-learn</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t need to know macros, pivot tables, VLOOKUP. Most seniors live happily with: type data, =SUM, sort, filter, print. Add features as needed. Free YouTube tutorials abundant. Library classes too.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t need to know macros, pivot tables, VLOOKUP. Most seniors live happily with: type data, =SUM, sort, filter, print. Add features as needed. Free YouTube tutorials abundant. Library classes too.</p>
           </CardContent>
         </Card>
       </main>

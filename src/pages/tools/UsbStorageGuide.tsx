@@ -240,7 +240,7 @@ export default function UsbStorageGuide() {
                         </div>
                         <ChevronRight className={`h-5 w-5 text-muted-foreground shrink-0 transition-transform ${isOpen ? 'rotate-90' : ''}`} />
                       </div>
-                      <p className="text-sm text-muted-foreground">{type.ease}</p>
+                      <p className="text-base text-muted-foreground">{type.ease}</p>
                     </button>
 
                     {isOpen && (
@@ -284,7 +284,7 @@ export default function UsbStorageGuide() {
                 <CardContent className="p-5">
                   <p className="font-semibold text-sm mb-1">{s.question}</p>
                   <Badge variant="outline" className="mb-2">{s.pick}</Badge>
-                  <p className="text-sm text-muted-foreground">{s.why}</p>
+                  <p className="text-base text-muted-foreground">{s.why}</p>
                 </CardContent>
               </Card>
             ))}

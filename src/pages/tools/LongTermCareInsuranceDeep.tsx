@@ -19,7 +19,7 @@ export default function LongTermCareInsuranceDeep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What LTCI covers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Nursing home care.</li>
               <li>Assisted living.</li>
               <li>In-home care.</li>
@@ -33,7 +33,7 @@ export default function LongTermCareInsuranceDeep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Best to buy in 50s-60s.</li>
               <li>$2,500-$5,000/year typical at 60.</li>
               <li>Premiums increase with age.</li>
@@ -47,7 +47,7 @@ export default function LongTermCareInsuranceDeep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hybrid life-LTC policies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pays death benefit OR LTC.</li>
               <li>Can&apos;t lose money if don&apos;t use.</li>
               <li>Single premium ($75K+) typical.</li>
@@ -61,7 +61,7 @@ export default function LongTermCareInsuranceDeep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Self-insure option</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Save what you&apos;d pay in premiums.</li>
               <li>$3,000/year × 30 years = significant.</li>
               <li>Healthy seniors may never use LTCI.</li>
@@ -75,7 +75,7 @@ export default function LongTermCareInsuranceDeep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medicaid as backup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If savings depleted — Medicaid covers nursing home.</li>
               <li>Must spend down assets first.</li>
               <li>5-year lookback on transfers.</li>
@@ -89,7 +89,7 @@ export default function LongTermCareInsuranceDeep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When LTCI worth it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Net worth $300K-$1M (sweet spot).</li>
               <li>Family history of dementia.</li>
               <li>Want to leave inheritance.</li>
@@ -103,7 +103,7 @@ export default function LongTermCareInsuranceDeep() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Talk to fee-only advisor</h3>
-            <p className="text-sm text-muted-foreground">LTCI is complex — premiums vary widely + insurers go out of business. Talk to a fee-only fiduciary advisor (not commission-based). They&apos;ll review your situation and recommend whether to buy traditional LTCI, hybrid policy, self-insure, or rely on Medicaid eventually. Often the right answer differs by individual situation.</p>
+            <p className="text-base text-muted-foreground">LTCI is complex — premiums vary widely + insurers go out of business. Talk to a fee-only fiduciary advisor (not commission-based). They&apos;ll review your situation and recommend whether to buy traditional LTCI, hybrid policy, self-insure, or rely on Medicaid eventually. Often the right answer differs by individual situation.</p>
           </CardContent>
         </Card>
       </main>

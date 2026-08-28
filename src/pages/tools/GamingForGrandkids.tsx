@@ -19,7 +19,7 @@ export default function GamingForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best games for grandparents</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Minecraft</strong> — build worlds together. Calm, creative, no shooting. $30 once.</li>
               <li><strong>Animal Crossing: New Horizons</strong> (Switch) — visit each other&apos;s islands. Sweet, no stress.</li>
               <li><strong>Mario Kart 8</strong> (Switch) — racing. Easy controls. 2-4 players.</li>
@@ -34,7 +34,7 @@ export default function GamingForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Games to AVOID first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fortnite</strong> — shooting + battle. Toxic chat. Save for older grandkids if at all.</li>
               <li><strong>Call of Duty</strong> — violent + adult-heavy.</li>
               <li><strong>Roblox</strong> — kid magnet, but predator concerns. Co-play if at all.</li>
@@ -46,7 +46,7 @@ export default function GamingForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best system for new gamers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Nintendo Switch</strong> — $300. Most senior-friendly. Easy controls. Best family-game library. Battery life issues solved with Switch 2.</li>
               <li><strong>iPad</strong> — already have it? Apple Arcade ($7/mo) gives 200+ family games, no ads.</li>
               <li><strong>PlayStation 5 / Xbox</strong> — more powerful, more complex. Avoid unless grandkid is 12+.</li>
@@ -57,7 +57,7 @@ export default function GamingForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online play together (over distance)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Buy same game.</li>
               <li>Both add each other as "friend" in the system.</li>
               <li>Use Discord or Switch chat — voice talk while playing.</li>
@@ -70,7 +70,7 @@ export default function GamingForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you visit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Let them teach you. Kids love being the expert.</li>
               <li>Lose graciously. Or win — many kids respect it.</li>
               <li>Co-op games beat competitive games for bonding.</li>
@@ -83,7 +83,7 @@ export default function GamingForGrandkids() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Gentle ON the eyes</h3>
-            <p className="text-sm text-muted-foreground">If reading text in games is hard — most modern games have "high contrast" or "large font" accessibility settings. Switch and PS5 both have them. Don&apos;t suffer through tiny text. Look in Settings → Accessibility before playing.</p>
+            <p className="text-base text-muted-foreground">If reading text in games is hard — most modern games have "high contrast" or "large font" accessibility settings. Switch and PS5 both have them. Don&apos;t suffer through tiny text. Look in Settings → Accessibility before playing.</p>
           </CardContent>
         </Card>
       </main>

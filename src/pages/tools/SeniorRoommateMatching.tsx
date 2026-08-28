@@ -19,7 +19,7 @@ export default function SeniorRoommateMatching() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why home-share</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cuts housing cost in half.</li>
               <li>Built-in companionship.</li>
               <li>Safety — someone notices if you fall.</li>
@@ -33,7 +33,7 @@ export default function SeniorRoommateMatching() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-focused services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Silvernest</strong> — senior home-sharing. silvernest.com. ~$30/mo.</li>
               <li><strong>HomeShare USA</strong> — multiple cities. Free assessments.</li>
               <li><strong>SeniorAdvisor.com</strong> — listings + reviews.</li>
@@ -47,7 +47,7 @@ export default function SeniorRoommateMatching() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vetting potential roommates</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Background check (Silvernest includes).</li>
               <li>Credit check + references.</li>
               <li>Multiple coffee meetings before deciding.</li>
@@ -61,7 +61,7 @@ export default function SeniorRoommateMatching() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Money + legal</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Written room rental agreement (basic, 1-page).</li>
               <li>Splits utilities clearly — by % or by usage.</li>
               <li>Talk to insurance — extra resident may affect homeowner&apos;s.</li>
@@ -75,7 +75,7 @@ export default function SeniorRoommateMatching() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cohousing alternative</h3>
-            <p className="text-sm text-muted-foreground">Senior cohousing communities = own unit + shared common space. Cohousing.org has list. New ones forming yearly. Mutual support without total privacy loss. $100K-500K to buy in. Low monthly fees vs assisted living.</p>
+            <p className="text-base text-muted-foreground">Senior cohousing communities = own unit + shared common space. Cohousing.org has list. New ones forming yearly. Mutual support without total privacy loss. $100K-500K to buy in. Low monthly fees vs assisted living.</p>
           </CardContent>
         </Card>
       </main>

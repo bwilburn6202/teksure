@@ -34,7 +34,7 @@ export default function GenealogyApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function GenealogyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to start</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign up at <strong>familysearch.org</strong> (free).</li>
               <li>Add yourself, your parents, your grandparents — what you know.</li>
               <li>The site automatically searches its records. "Hints" appear suggesting matches.</li>
@@ -57,7 +57,7 @@ export default function GenealogyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DNA testing — what to know</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AncestryDNA</strong> ($60-100) — best for finding US relatives.</li>
               <li><strong>23andMe</strong> ($100-200) — strong on health/medical info plus relatives.</li>
               <li><strong>MyHeritage DNA</strong> ($60-100) — best for European matches.</li>
@@ -84,7 +84,7 @@ export default function GenealogyApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best gift for grandkids</h3>
-            <p className="text-sm text-muted-foreground">A printed family tree, going back 4-5 generations, with photos and stories — printed as a hardcover book on Mixbook or Shutterfly. Most kids never know their great-great-grandparents\' names. You can change that in a weekend.</p>
+            <p className="text-base text-muted-foreground">A printed family tree, going back 4-5 generations, with photos and stories — printed as a hardcover book on Mixbook or Shutterfly. Most kids never know their great-great-grandparents\' names. You can change that in a weekend.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function RaisedBedGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best heights for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>24"-30" tall</strong> — comfortable kneeling/sitting on stool.</li>
               <li><strong>30"-36" tall</strong> — work standing, bend slightly.</li>
               <li><strong>36"-42" tall</strong> — fully standing, no bending. Best for arthritis.</li>
@@ -31,7 +31,7 @@ export default function RaisedBedGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best kits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Greenes Fence elevated</strong> ($120-200) — 30" cedar bed. Easy assembly.</li>
               <li><strong>Vita Vitabox</strong> ($150-300) — vinyl, doesn&apos;t rot, 32" tall.</li>
               <li><strong>Yaheetech 32" elevated</strong> ($60) — cheaper plastic.</li>
@@ -44,7 +44,7 @@ export default function RaisedBedGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best plants for raised beds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tomatoes</strong> — top performer.</li>
               <li><strong>Lettuce + greens</strong> — quick + easy.</li>
               <li><strong>Peppers</strong> — both sweet + hot.</li>
@@ -60,7 +60,7 @@ export default function RaisedBedGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheap soil filler</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bottom 50%: branches, sticks, logs, leaves (Hugelkultur).</li>
               <li>Middle 30%: compost or yard waste.</li>
               <li>Top 20%: quality garden soil + organic mix.</li>
@@ -73,7 +73,7 @@ export default function RaisedBedGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Drip irrigation = magic</h3>
-            <p className="text-sm text-muted-foreground">$30 drip irrigation kit + smart timer = automatic watering. No more dragging hose. Saves 50% water vs sprinkler. Plants happier. Best $30 senior gardener can spend.</p>
+            <p className="text-base text-muted-foreground">$30 drip irrigation kit + smart timer = automatic watering. No more dragging hose. Saves 50% water vs sprinkler. Plants happier. Best $30 senior gardener can spend.</p>
           </CardContent>
         </Card>
       </main>

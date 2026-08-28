@@ -19,7 +19,7 @@ export default function VoiceTypingPhoneTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why voice typing?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Faster than tapping tiny keys.</li>
               <li>Easier with arthritis or shaky hands.</li>
               <li>No squinting at screen for letters.</li>
@@ -33,7 +33,7 @@ export default function VoiceTypingPhoneTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone voice typing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open any text field — Messages, Notes, etc.</li>
               <li>Tap microphone icon on keyboard.</li>
               <li>Speak naturally.</li>
@@ -47,7 +47,7 @@ export default function VoiceTypingPhoneTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android voice typing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open any text field.</li>
               <li>Tap microphone on Gboard keyboard.</li>
               <li>Or tap mic in voice search bar.</li>
@@ -61,7 +61,7 @@ export default function VoiceTypingPhoneTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Punctuation commands</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Period&quot; → .</li>
               <li>&quot;Comma&quot; → ,</li>
               <li>&quot;Question mark&quot; → ?</li>
@@ -75,7 +75,7 @@ export default function VoiceTypingPhoneTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for best results</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Speak clearly, normal pace.</li>
               <li>Quiet room helps accuracy.</li>
               <li>Hold phone close to mouth.</li>
@@ -89,7 +89,7 @@ export default function VoiceTypingPhoneTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Computer voice typing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Google Docs — Tools menu, Voice Typing.</li>
               <li>Microsoft Word — Dictate button (mic icon).</li>
               <li>Apple Mac — System Settings → Dictation.</li>
@@ -103,7 +103,7 @@ export default function VoiceTypingPhoneTutorial() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try it for emails</h3>
-            <p className="text-sm text-muted-foreground">Tomorrow morning, instead of typing your first email, tap the microphone and dictate it. Don&apos;t type a single key. You&apos;ll be amazed how natural it feels and how accurate modern voice typing is. Many seniors with stiff fingers or vision issues find voice typing eliminates 80% of phone typing frustration. It&apos;s already built in — just start using it.</p>
+            <p className="text-base text-muted-foreground">Tomorrow morning, instead of typing your first email, tap the microphone and dictate it. Don&apos;t type a single key. You&apos;ll be amazed how natural it feels and how accurate modern voice typing is. Many seniors with stiff fingers or vision issues find voice typing eliminates 80% of phone typing frustration. It&apos;s already built in — just start using it.</p>
           </CardContent>
         </Card>
       </main>

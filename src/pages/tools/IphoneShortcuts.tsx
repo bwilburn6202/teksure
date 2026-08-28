@@ -282,7 +282,7 @@ export default function IphoneShortcuts() {
                     <div className="ml-12 space-y-3">
                       <div>
                         <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">What it does</p>
-                        <p className="text-sm text-muted-foreground">{t.whatItDoes}</p>
+                        <p className="text-base text-muted-foreground">{t.whatItDoes}</p>
                       </div>
                       <div>
                         <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">How</p>

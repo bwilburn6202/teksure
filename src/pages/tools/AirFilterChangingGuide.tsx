@@ -19,7 +19,7 @@ export default function AirFilterChangingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why change?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cleaner indoor air.</li>
               <li>Reduces allergies.</li>
               <li>Lower energy bills.</li>
@@ -33,7 +33,7 @@ export default function AirFilterChangingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find your filter</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Furnace area — slot on side.</li>
               <li>Or in return air vent (large grille on wall).</li>
               <li>Look for arrow showing airflow direction.</li>
@@ -47,7 +47,7 @@ export default function AirFilterChangingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How often?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Standard 1&quot; filter: every 1-3 months.</li>
               <li>Check monthly.</li>
               <li>Replace when dirty (flashlight test).</li>
@@ -61,7 +61,7 @@ export default function AirFilterChangingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">MERV rating</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>MERV 8 — basic dust + pollen.</li>
               <li>MERV 11 — pet dander + smoke.</li>
               <li>MERV 13 — bacteria, viruses.</li>
@@ -75,7 +75,7 @@ export default function AirFilterChangingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to buy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Home Depot / Lowes — $5-25 each.</li>
               <li>Amazon — subscription option.</li>
               <li>FilterBuy.com — discount packs.</li>
@@ -89,7 +89,7 @@ export default function AirFilterChangingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to change</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Turn off thermostat.</li>
               <li>Slide old filter out.</li>
               <li>Note arrow direction.</li>
@@ -103,7 +103,7 @@ export default function AirFilterChangingGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Subscription convenience</h3>
-            <p className="text-sm text-muted-foreground">FilterBuy, Amazon Subscribe &amp; Save — auto-deliver every 1-3 months. Forget to remember. Door delivery. 5-10% discount. No more guessing dates. Senior-friendly. Set + forget. $50-100/yr depending on size + frequency. Pays itself in HVAC longevity.</p>
+            <p className="text-base text-muted-foreground">FilterBuy, Amazon Subscribe &amp; Save — auto-deliver every 1-3 months. Forget to remember. Door delivery. 5-10% discount. No more guessing dates. Senior-friendly. Set + forget. $50-100/yr depending on size + frequency. Pays itself in HVAC longevity.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function FosterPetsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why foster?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Companionship without 15-year commitment.</li>
               <li>Try before adopting (foster-to-adopt).</li>
               <li>Save lives — fosters free shelter space.</li>
@@ -34,7 +34,7 @@ export default function FosterPetsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Types of foster</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Senior pets</strong> — calmer, perfect for seniors. Less time.</li>
               <li><strong>Mom + puppies/kittens</strong> — needy short-term.</li>
               <li><strong>Medical recovery</strong> — short-term post-surgery.</li>
@@ -48,7 +48,7 @@ export default function FosterPetsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you provide</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Safe home environment.</li>
               <li>Food + water.</li>
               <li>Basic care (walks, petting, attention).</li>
@@ -63,7 +63,7 @@ export default function FosterPetsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What rescue provides</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vet care + medications usually 100% covered.</li>
               <li>Often food + supplies free.</li>
               <li>Beds, crates, toys loaned.</li>
@@ -77,7 +77,7 @@ export default function FosterPetsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to start</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local shelter — search &quot;[your city] pet foster.&quot;</li>
               <li>Petfinder.com — find rescues near you.</li>
               <li>Best Friends Animal Society.</li>
@@ -92,7 +92,7 @@ export default function FosterPetsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">&quot;Foster fail&quot; warning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adopting your foster pet — common!</li>
               <li>Many seniors fall in love + keep first foster.</li>
               <li>Plan finances + lifestyle for full ownership.</li>
@@ -105,7 +105,7 @@ export default function FosterPetsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hospice fostering: most meaningful</h3>
-            <p className="text-sm text-muted-foreground">Senior pets in shelters often die alone. <strong>Hospice fostering</strong> = give them love + a home for final weeks/months. Rescue covers all costs. Bittersweet but profound. Many seniors do it repeatedly. Best Friends has program. Search &quot;senior pet hospice foster.&quot;</p>
+            <p className="text-base text-muted-foreground">Senior pets in shelters often die alone. <strong>Hospice fostering</strong> = give them love + a home for final weeks/months. Rescue covers all costs. Bittersweet but profound. Many seniors do it repeatedly. Best Friends has program. Search &quot;senior pet hospice foster.&quot;</p>
           </CardContent>
         </Card>
       </main>

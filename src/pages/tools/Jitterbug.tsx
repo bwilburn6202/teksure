@@ -19,7 +19,7 @@ export default function Jitterbug() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pros</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Designed for seniors. Big icons. Clear UI.</li>
               <li>Urgent Response button (24/7) connects to professional operators.</li>
               <li>Simple flip phone option = no internet temptation.</li>
@@ -33,7 +33,7 @@ export default function Jitterbug() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Network: Verizon-only, T-Mobile-only depending on model.</li>
               <li>Plans $20-50/mo — more than budget MVNO ($15).</li>
               <li>Hardware basic — feels cheaper than mainstream.</li>
@@ -47,7 +47,7 @@ export default function Jitterbug() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When Jitterbug is right</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior who really wants ONLY calls/texts (Flip 2 perfect).</li>
               <li>Lives alone, no nearby family — Urgent Response valuable.</li>
               <li>Limited budget for tech support — Lively support is patient + senior-trained.</li>
@@ -60,7 +60,7 @@ export default function Jitterbug() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When something else is better</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family already on iPhone — match with iPhone SE for FaceTime ease.</li>
               <li>Want lowest-cost plan — switch to Mint Mobile ($15/mo) with simple Android.</li>
               <li>Tech-curious senior who&apos;d use apps — full iPhone or Pixel.</li>
@@ -73,7 +73,7 @@ export default function Jitterbug() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">AARP discount</h3>
-            <p className="text-sm text-muted-foreground">Lively (parent of Jitterbug) gives AARP members 5% discount + free activation. Not huge but worth claiming.</p>
+            <p className="text-base text-muted-foreground">Lively (parent of Jitterbug) gives AARP members 5% discount + free activation. Not huge but worth claiming.</p>
           </CardContent>
         </Card>
       </main>

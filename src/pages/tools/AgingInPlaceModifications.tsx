@@ -19,7 +19,7 @@ export default function AgingInPlaceModifications() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bathroom — most important</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Grab bars</strong> next to toilet + in shower ($30-100 each + install).</li>
               <li><strong>Walk-in shower</strong> — replaces tub. $5K-15K.</li>
               <li><strong>Walk-in tub</strong> — for those who really love a bath. $5K-20K.</li>
@@ -35,7 +35,7 @@ export default function AgingInPlaceModifications() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Throughout the home</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Brighter lighting</strong> — dimmer eyes need 2x light.</li>
               <li><strong>Motion-sensor night lights</strong> in halls + bathroom.</li>
               <li><strong>Lever-style door handles</strong> — easier than knobs (arthritis).</li>
@@ -50,7 +50,7 @@ export default function AgingInPlaceModifications() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Kitchen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pull-out pantry shelves.</li>
               <li>Lever-style faucets.</li>
               <li>Lower microwave (counter level, not over stove).</li>
@@ -63,7 +63,7 @@ export default function AgingInPlaceModifications() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free + low-cost help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Habitat for Humanity Aging-in-Place</strong> — free repairs for low-income.</li>
               <li><strong>Rebuilding Together</strong> — free annual repair days.</li>
               <li><strong>Veterans</strong> — VA HISA grant up to $6,800 for home modifications.</li>
@@ -85,7 +85,7 @@ export default function AgingInPlaceModifications() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free home assessment</h3>
-            <p className="text-sm text-muted-foreground">Many Area Agencies on Aging do FREE in-home safety assessments. Catch hazards you don&apos;t notice. <strong>aarp.org/homefit</strong> also has free guide. <strong>1-800-677-1116</strong> Eldercare Locator finds your local AAA.</p>
+            <p className="text-base text-muted-foreground">Many Area Agencies on Aging do FREE in-home safety assessments. Catch hazards you don&apos;t notice. <strong>aarp.org/homefit</strong> also has free guide. <strong>1-800-677-1116</strong> Eldercare Locator finds your local AAA.</p>
           </CardContent>
         </Card>
       </main>

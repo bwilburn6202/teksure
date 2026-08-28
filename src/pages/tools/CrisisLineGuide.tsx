@@ -19,7 +19,7 @@ export default function CrisisLineGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">988 Suicide + Crisis Lifeline</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Call OR text <strong>988</strong>.</li>
               <li>FREE.</li>
               <li>24/7.</li>
@@ -35,7 +35,7 @@ export default function CrisisLineGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific lines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Friendship Line for Seniors</strong> — 1-800-971-0016. Lonely? Just need to talk?</li>
               <li><strong>Eldercare Locator</strong> — 1-800-677-1116.</li>
               <li><strong>AARP Fraud Watch</strong> — 1-877-908-3360.</li>
@@ -49,7 +49,7 @@ export default function CrisisLineGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to call</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Suicidal thoughts.</li>
               <li>Anxiety attack.</li>
               <li>Just need someone to listen.</li>
@@ -65,7 +65,7 @@ export default function CrisisLineGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to expect</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Counselor listens.</li>
               <li>No judgment.</li>
               <li>Not required to give name.</li>
@@ -80,7 +80,7 @@ export default function CrisisLineGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For the person you&apos;re worried about</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ask directly: &quot;Are you having thoughts of suicide?&quot;</li>
               <li>Doesn&apos;t plant idea — opens conversation.</li>
               <li>Listen without judgment.</li>
@@ -95,7 +95,7 @@ export default function CrisisLineGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save these numbers</h3>
-            <p className="text-sm text-muted-foreground">Save 988 + Friendship Line in phone now. Hopefully won&apos;t need. But ready if do. Tell trusted family member you have these. Senior suicide rate highest of any age. Help available. Use it.</p>
+            <p className="text-base text-muted-foreground">Save 988 + Friendship Line in phone now. Hopefully won&apos;t need. But ready if do. Tell trusted family member you have these. Senior suicide rate highest of any age. Help available. Use it.</p>
           </CardContent>
         </Card>
       </main>

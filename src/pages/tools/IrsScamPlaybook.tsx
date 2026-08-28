@@ -19,7 +19,7 @@ export default function IrsScamPlaybook() {
         <Card className="mb-4 bg-green-50 border-green-300 dark:bg-green-950/20 dark:border-green-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The IRS NEVER does these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Calls demanding immediate payment.</li>
               <li>Threatens arrest, deportation, or license revocation.</li>
               <li>Demands payment in gift cards, wire transfer, crypto, or cash courier.</li>
@@ -33,7 +33,7 @@ export default function IrsScamPlaybook() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How the REAL IRS contacts you</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Mail first, always.</strong> Letter on official IRS letterhead.</li>
               <li>Multiple letters before any phone call.</li>
               <li>Phone calls only AFTER mail attempts have failed.</li>
@@ -46,7 +46,7 @@ export default function IrsScamPlaybook() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common scam variants</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Robocall — press 1 to speak to IRS agent"</strong> — hang up.</li>
               <li><strong>"You owe $4,800 — pay in Apple gift cards"</strong> — hang up.</li>
               <li><strong>Fake email "irs.gov-tax-refund.com"</strong> — delete, don&apos;t click.</li>
@@ -60,7 +60,7 @@ export default function IrsScamPlaybook() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you actually owe taxes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You&apos;ll get LETTERS, not phone calls.</li>
               <li>Call IRS yourself at <strong>1-800-829-1040</strong> to confirm.</li>
               <li>Pay only at <strong>IRS.gov/payments</strong>.</li>
@@ -81,7 +81,7 @@ export default function IrsScamPlaybook() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Report the scam</h3>
-            <p className="text-sm text-muted-foreground">Forward scam emails to <strong>phishing@irs.gov</strong>. Forward scam texts to <strong>7726 (SPAM)</strong>. Report scam calls at <strong>tigta.gov</strong> (Treasury Inspector General). FTC at <strong>reportfraud.ftc.gov</strong>. Takes 5 minutes. Helps catch scammers.</p>
+            <p className="text-base text-muted-foreground">Forward scam emails to <strong>phishing@irs.gov</strong>. Forward scam texts to <strong>7726 (SPAM)</strong>. Report scam calls at <strong>tigta.gov</strong> (Treasury Inspector General). FTC at <strong>reportfraud.ftc.gov</strong>. Takes 5 minutes. Helps catch scammers.</p>
           </CardContent>
         </Card>
       </main>

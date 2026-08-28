@@ -34,7 +34,7 @@ export default function BudgetingApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function BudgetingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior priorities</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Track spending</strong> — discover the $300/mo "leaks" (subscriptions, dining out).</li>
               <li><strong>Net worth</strong> — across all accounts.</li>
               <li><strong>Retirement runway</strong> — am I on track?</li>
@@ -64,7 +64,7 @@ export default function BudgetingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Connection security</h3>
-            <p className="text-sm text-muted-foreground">All these apps use Plaid (or similar) to read-only connect to banks. They CAN&apos;T move money. Legitimate. But pick well-reviewed apps. Avoid sketchy ones — banking credentials are sensitive.</p>
+            <p className="text-base text-muted-foreground">All these apps use Plaid (or similar) to read-only connect to banks. They CAN&apos;T move money. Legitimate. But pick well-reviewed apps. Avoid sketchy ones — banking credentials are sensitive.</p>
           </CardContent>
         </Card>
       </main>

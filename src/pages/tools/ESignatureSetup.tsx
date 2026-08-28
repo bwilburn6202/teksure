@@ -159,7 +159,7 @@ export default function ESignatureSetup() {
           <Card className="border-emerald-300 bg-emerald-50 dark:bg-emerald-950/20 mb-6">
             <CardContent className="p-5">
               <p className="font-semibold mb-1 text-sm">Is this legally valid?</p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Yes. Under the federal ESIGN Act of 2000, an electronic signature carries the same legal weight as a pen-and-paper signature for most documents — leases, real estate offers, work contracts, healthcare forms, and tax paperwork. A small number of items still need a wet signature (wills, some court filings, certain notarized documents). When in doubt, ask the person who sent the request.
               </p>
               <p className="text-sm text-muted-foreground mt-2">

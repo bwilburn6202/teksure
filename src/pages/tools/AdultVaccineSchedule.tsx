@@ -41,7 +41,7 @@ export default function AdultVaccineSchedule() {
                 <h3 className="font-bold text-lg">{v.name}</h3>
                 <p className="text-sm mb-1"><strong>When:</strong> {v.when}</p>
                 <p className="text-sm mb-1"><strong>Who:</strong> {v.who}</p>
-                <p className="text-sm text-muted-foreground"><strong>Why:</strong> {v.why}</p>
+                <p className="text-base text-muted-foreground"><strong>Why:</strong> {v.why}</p>
               </CardContent>
             </Card>
           ))}
@@ -62,7 +62,7 @@ export default function AdultVaccineSchedule() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best time to get them</h3>
-            <p className="text-sm text-muted-foreground">Annual flu shot in early October is the gold standard. Pair with COVID booster. Get the Shingrix series the year you turn 50. Get RSV after 60. Pneumonia at 65. Most pharmacies will check your record and recommend what\'s due.</p>
+            <p className="text-base text-muted-foreground">Annual flu shot in early October is the gold standard. Pair with COVID booster. Get the Shingrix series the year you turn 50. Get RSV after 60. Pneumonia at 65. Most pharmacies will check your record and recommend what\'s due.</p>
           </CardContent>
         </Card>
       </main>

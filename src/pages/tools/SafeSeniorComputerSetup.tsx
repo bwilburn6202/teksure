@@ -106,7 +106,7 @@ export default function SafeSeniorComputerSetup() {
           </Card>
 
           <div className="flex items-center justify-between mb-3">
-            <p className="text-sm text-muted-foreground">{done.size} of {ITEMS.length} done</p>
+            <p className="text-base text-muted-foreground">{done.size} of {ITEMS.length} done</p>
             {done.size > 0 && (
               <Button variant="ghost" size="sm" onClick={reset} className="text-xs h-7">Reset</Button>
             )}

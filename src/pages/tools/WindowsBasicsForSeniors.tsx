@@ -19,7 +19,7 @@ export default function WindowsBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Windows 10 ending Oct 2025</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Windows 10 = no security updates after Oct 14, 2025.</li>
               <li>Upgrade to Windows 11 if hardware compatible (free).</li>
               <li>If incompatible — buy new PC OR switch to Linux Mint.</li>
@@ -33,7 +33,7 @@ export default function WindowsBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best Windows laptops for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Dell Inspiron 16</strong> — $700. Big screen.</li>
               <li><strong>Lenovo ThinkPad E16</strong> — $900. Great keyboard.</li>
               <li><strong>HP Pavilion 15</strong> — $700. Mid-range.</li>
@@ -47,7 +47,7 @@ export default function WindowsBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior settings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → System → Display → Scale 125-150% (bigger text).</li>
               <li>Settings → Accessibility → Mouse pointer (larger).</li>
               <li>Settings → Accessibility → Text size.</li>
@@ -61,7 +61,7 @@ export default function WindowsBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t click pop-ups warning of viruses.</li>
               <li>Microsoft NEVER calls about viruses.</li>
               <li>Use built-in Windows Defender (free, good).</li>
@@ -75,7 +75,7 @@ export default function WindowsBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free useful tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Microsoft 365</strong> Personal $70/yr — Word, Excel, OneDrive, Outlook.</li>
               <li><strong>LibreOffice</strong> — free Office alternative.</li>
               <li><strong>Microsoft Edge</strong> browser (built-in).</li>
@@ -89,7 +89,7 @@ export default function WindowsBasicsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free senior classes</h3>
-            <p className="text-sm text-muted-foreground"><strong>Senior Planet</strong> — free Windows classes online + in-person. <strong>Public libraries</strong> — many offer free 1-on-1 PC help. <strong>OATS</strong> — free training. <strong>YouTube</strong> — &quot;Windows 11 for seniors.&quot; Tons of free help. Don&apos;t struggle alone.</p>
+            <p className="text-base text-muted-foreground"><strong>Senior Planet</strong> — free Windows classes online + in-person. <strong>Public libraries</strong> — many offer free 1-on-1 PC help. <strong>OATS</strong> — free training. <strong>YouTube</strong> — &quot;Windows 11 for seniors.&quot; Tons of free help. Don&apos;t struggle alone.</p>
           </CardContent>
         </Card>
       </main>

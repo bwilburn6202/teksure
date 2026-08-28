@@ -33,7 +33,7 @@ export default function WhiteNoiseGuide() {
                   <span className="text-sm font-semibold text-primary">{m.cost}</span>
                 </div>
                 <p className="text-sm">{m.best}</p>
-                <p className="text-sm text-muted-foreground">{m.good}</p>
+                <p className="text-base text-muted-foreground">{m.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function WhiteNoiseGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Snoring spouse.</li>
               <li>Tinnitus (ringing in ears) — masks the ringing.</li>
               <li>Apartment / shared walls.</li>
@@ -56,7 +56,7 @@ export default function WhiteNoiseGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>YouTube — &quot;10 hours white noise&quot; — free.</li>
               <li>Apple iPhone — Settings → Accessibility → Audio → Background Sounds. FREE.</li>
               <li>Spotify / Apple Music — many free white noise tracks.</li>
@@ -69,7 +69,7 @@ export default function WhiteNoiseGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sound types</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>White noise</strong> — all frequencies. Most popular.</li>
               <li><strong>Pink noise</strong> — softer. Better for some.</li>
               <li><strong>Brown noise</strong> — deepest. Trending for ADHD/seniors.</li>
@@ -83,7 +83,7 @@ export default function WhiteNoiseGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tinnitus relief</h3>
-            <p className="text-sm text-muted-foreground">For tinnitus, look up &quot;tinnitus masker&quot; sound — specific frequencies designed to mask ringing. American Tinnitus Association (ata.org) has free guides. Hearing aids with masking feature also help. Talk to audiologist.</p>
+            <p className="text-base text-muted-foreground">For tinnitus, look up &quot;tinnitus masker&quot; sound — specific frequencies designed to mask ringing. American Tinnitus Association (ata.org) has free guides. Hearing aids with masking feature also help. Talk to audiologist.</p>
           </CardContent>
         </Card>
       </main>

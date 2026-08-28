@@ -34,7 +34,7 @@ export default function OverTheCounterHearingAids() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function OverTheCounterHearingAids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple AirPods as hearing aid</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iOS 18+ — AirPods Pro 2 are FDA-cleared as OTC hearing aids.</li>
               <li>Take iPhone hearing test (10 min) → AirPods adjust to your hearing.</li>
               <li>Look like normal earbuds — no stigma.</li>
@@ -57,7 +57,7 @@ export default function OverTheCounterHearingAids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to see audiologist instead</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Severe hearing loss (test before).</li>
               <li>One ear much worse than other.</li>
               <li>Sudden hearing loss — go to ER same-day (treatable).</li>
@@ -72,7 +72,7 @@ export default function OverTheCounterHearingAids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free hearing tests</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Costco Hearing Center</strong> — FREE for members. Best deal.</li>
               <li><strong>Sam&apos;s Club Hearing Center</strong> — FREE for members.</li>
               <li><strong>VA</strong> — free for veterans.</li>
@@ -85,7 +85,7 @@ export default function OverTheCounterHearingAids() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try OTC first</h3>
-            <p className="text-sm text-muted-foreground">$249 AirPods or $999 OTC ≪ $4,000 prescription. Try OTC for mild loss first. If not enough — escalate. Most people don&apos;t need expensive prescription aids. Most insurance + Medicare covers little to no hearing aids — OTC saves real money.</p>
+            <p className="text-base text-muted-foreground">$249 AirPods or $999 OTC ≪ $4,000 prescription. Try OTC for mild loss first. If not enough — escalate. Most people don&apos;t need expensive prescription aids. Most insurance + Medicare covers little to no hearing aids — OTC saves real money.</p>
           </CardContent>
         </Card>
       </main>

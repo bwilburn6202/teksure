@@ -19,7 +19,7 @@ export default function CanvaForSeniorsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Canva?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free design tool — works in browser or app.</li>
               <li>Drag-and-drop — no technical skills needed.</li>
               <li>Thousands of pre-designed templates.</li>
@@ -33,7 +33,7 @@ export default function CanvaForSeniorsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can make</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Birthday cards — print or send digitally.</li>
               <li>Holiday cards — Christmas, Hanukkah, Easter.</li>
               <li>Photo collages of family + grandkids.</li>
@@ -47,7 +47,7 @@ export default function CanvaForSeniorsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free vs Pro</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free version — plenty for most seniors.</li>
               <li>Hundreds of free templates + photos.</li>
               <li>Canva Pro — $14.99/month or $119.99/year.</li>
@@ -61,7 +61,7 @@ export default function CanvaForSeniorsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to start</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to Canva.com or download app.</li>
               <li>Sign up free with email or Google.</li>
               <li>Search a template type (e.g., &quot;birthday card&quot;).</li>
@@ -75,7 +75,7 @@ export default function CanvaForSeniorsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Make a photo book</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search &quot;Photo book&quot; in templates.</li>
               <li>Pick layout — grid, magazine style, etc.</li>
               <li>Upload photos from phone or computer.</li>
@@ -89,7 +89,7 @@ export default function CanvaForSeniorsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use templates — don&apos;t start from blank.</li>
               <li>Save designs — re-edit later anytime.</li>
               <li>Share editable link with family — they help.</li>
@@ -103,7 +103,7 @@ export default function CanvaForSeniorsGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Make this year&apos;s holiday card</h3>
-            <p className="text-sm text-muted-foreground">Skip the $40 box of holiday cards from the store. Spend 20 minutes in Canva making a personalized holiday card with photos of grandkids. Print 30 at home for under $10 in cardstock and ink, or send to Shutterfly for printing. People treasure personalized cards more than store-bought ones. Canva makes it as easy as filling out a form.</p>
+            <p className="text-base text-muted-foreground">Skip the $40 box of holiday cards from the store. Spend 20 minutes in Canva making a personalized holiday card with photos of grandkids. Print 30 at home for under $10 in cardstock and ink, or send to Shutterfly for printing. People treasure personalized cards more than store-bought ones. Canva makes it as easy as filling out a form.</p>
           </CardContent>
         </Card>
       </main>

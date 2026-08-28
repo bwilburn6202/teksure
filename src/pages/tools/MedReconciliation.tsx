@@ -44,7 +44,7 @@ export default function MedReconciliation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to keep it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Health Medications</strong> (iOS 16+) — auto-tracks interactions. Free.</li>
               <li><strong>Medisafe app</strong> — free, family-shareable.</li>
               <li><strong>MyChart</strong> — patient portal often has medication list. Update yourself.</li>
@@ -58,7 +58,7 @@ export default function MedReconciliation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bring to every visit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Primary care visits.</li>
               <li>Specialist visits — they often don&apos;t see your full record.</li>
               <li>ER trips — first thing they ask.</li>
@@ -73,7 +73,7 @@ export default function MedReconciliation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annual brown-bag review</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Once a year, dump every pill bottle into a paper bag.</li>
               <li>Bring to PCP visit.</li>
               <li>Doctor reviews each one.</li>
@@ -87,7 +87,7 @@ export default function MedReconciliation() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">One pharmacy</h3>
-            <p className="text-sm text-muted-foreground">Use ONE pharmacy for everything if possible. Pharmacist auto-checks for interactions. Multiple pharmacies = no one has full picture. Even Pillpack (mail) handles all your meds in one place — same benefit.</p>
+            <p className="text-base text-muted-foreground">Use ONE pharmacy for everything if possible. Pharmacist auto-checks for interactions. Multiple pharmacies = no one has full picture. Even Pillpack (mail) handles all your meds in one place — same benefit.</p>
           </CardContent>
         </Card>
       </main>

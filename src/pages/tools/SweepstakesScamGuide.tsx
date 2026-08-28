@@ -19,7 +19,7 @@ export default function SweepstakesScamGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The golden rule</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Real lotteries / sweepstakes never ask for money to claim a prize.</strong></li>
               <li>Real ones don&apos;t require fees, taxes upfront, or shipping.</li>
               <li>Taxes on real wins are filed with IRS, not sent to lottery.</li>
@@ -31,7 +31,7 @@ export default function SweepstakesScamGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common sweepstakes scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Publishers Clearing House</strong> — REAL company, fake calls in their name.</li>
               <li><strong>&quot;Foreign lottery&quot;</strong> — Spanish, Canadian, UK lottery wins.</li>
               <li><strong>&quot;Tax + shipping&quot;</strong> — pay $500 to claim $50K.</li>
@@ -45,7 +45,7 @@ export default function SweepstakesScamGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone call or letter you weren&apos;t expecting.</li>
               <li>You don&apos;t remember entering.</li>
               <li>Pressure to act &quot;today.&quot;</li>
@@ -60,7 +60,7 @@ export default function SweepstakesScamGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you suspect scam</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stop ALL communication. Don&apos;t argue.</li>
               <li>Don&apos;t deposit any check they sent.</li>
               <li>Don&apos;t send money for any reason.</li>
@@ -75,7 +75,7 @@ export default function SweepstakesScamGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stop the calls</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Register at <strong>donotcall.gov</strong> — FREE.</li>
               <li>Phone carrier scam blocking — Verizon Call Filter, AT&amp;T ActiveArmor (free).</li>
               <li>iPhone — Settings → Phone → Silence Unknown Callers.</li>
@@ -88,7 +88,7 @@ export default function SweepstakesScamGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you fell for one</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t be embarrassed. Scammers target SMART seniors. Tell family + bank immediately. Call <strong>1-877-908-3360 (AARP Fraud Watch helpline)</strong> — counselors help, no judgment. Police usually can&apos;t recover but report still helps. Counseling helps process the loss.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t be embarrassed. Scammers target SMART seniors. Tell family + bank immediately. Call <strong>1-877-908-3360 (AARP Fraud Watch helpline)</strong> — counselors help, no judgment. Police usually can&apos;t recover but report still helps. Counseling helps process the loss.</p>
           </CardContent>
         </Card>
       </main>

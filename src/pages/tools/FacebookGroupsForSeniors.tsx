@@ -19,7 +19,7 @@ export default function FacebookGroupsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Facebook Groups?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Connect with like-minded.</li>
               <li>Less drama than main feed.</li>
               <li>Niche topics + hobbies.</li>
@@ -33,7 +33,7 @@ export default function FacebookGroupsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorite groups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hometown alumni groups.</li>
               <li>Hobby groups (knitting, woodworking).</li>
               <li>Health condition support.</li>
@@ -48,7 +48,7 @@ export default function FacebookGroupsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find groups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search bar top — type interest.</li>
               <li>&quot;Groups&quot; tab on profile.</li>
               <li>&quot;Discover&quot; tab.</li>
@@ -62,7 +62,7 @@ export default function FacebookGroupsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Group safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read group rules before posting.</li>
               <li>Lurk first — see culture.</li>
               <li>Don&apos;t share personal info publicly.</li>
@@ -76,7 +76,7 @@ export default function FacebookGroupsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Specific senior groups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Senior Travel Buddies&quot;.</li>
               <li>&quot;Aging in Place&quot;.</li>
               <li>&quot;Solo Senior Adventures&quot;.</li>
@@ -91,7 +91,7 @@ export default function FacebookGroupsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Engage well</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Introduce yourself first.</li>
               <li>Ask questions.</li>
               <li>Share helpful info.</li>
@@ -105,7 +105,7 @@ export default function FacebookGroupsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Marketplace caution</h3>
-            <p className="text-sm text-muted-foreground">Local Facebook Marketplace + Buy/Sell groups — meet in public, daylight. Bring family. Cash only. Inspect before paying. Many scams. But also great deals. Stick to local trades. International &quot;buyer&quot; = scammer. Free pickup of working items. Senior money saver if cautious.</p>
+            <p className="text-base text-muted-foreground">Local Facebook Marketplace + Buy/Sell groups — meet in public, daylight. Bring family. Cash only. Inspect before paying. Many scams. But also great deals. Stick to local trades. International &quot;buyer&quot; = scammer. Free pickup of working items. Senior money saver if cautious.</p>
           </CardContent>
         </Card>
       </main>

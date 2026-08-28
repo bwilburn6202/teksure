@@ -76,7 +76,7 @@ export default function PhotoOrganizationCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cleanup tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don\'t try to clean ALL photos. Pick one folder or one year per session.</li>
               <li>Use the "duplicates" feature first — easy wins, frees lots of space.</li>
               <li>Be ruthless on screenshots. If the website is gone, you don\'t need the screenshot.</li>
@@ -89,7 +89,7 @@ export default function PhotoOrganizationCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best time investment</h3>
-            <p className="text-sm text-muted-foreground">Spend 30 minutes naming faces in iPhone Photos or Google Photos People. From then on, every photo is searchable by name. "Show me photos of Dad and Sarah from 2020" — done in 2 seconds, forever.</p>
+            <p className="text-base text-muted-foreground">Spend 30 minutes naming faces in iPhone Photos or Google Photos People. From then on, every photo is searchable by name. "Show me photos of Dad and Sarah from 2020" — done in 2 seconds, forever.</p>
           </CardContent>
         </Card>
       </main>

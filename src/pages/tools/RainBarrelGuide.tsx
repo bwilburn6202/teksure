@@ -19,7 +19,7 @@ export default function RainBarrelGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why rain barrels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plants love rainwater — no chlorine.</li>
               <li>Reduces water bill.</li>
               <li>Reduces stormwater runoff (eco-friendly).</li>
@@ -33,7 +33,7 @@ export default function RainBarrelGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best rain barrels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Algreen 50-gal</strong> — $80-110. Decorative styles.</li>
               <li><strong>RTS Home Accents 50-gal</strong> — $75. Looks like wood.</li>
               <li><strong>RainPerfect Solar Pump</strong> — adds powered drip irrigation.</li>
@@ -46,7 +46,7 @@ export default function RainBarrelGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install (1-2 hours)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Place at downspout (gutter).</li>
               <li>Cut downspout to barrel height.</li>
               <li>Add downspout adapter / diverter.</li>
@@ -60,7 +60,7 @@ export default function RainBarrelGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">City rebates</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many cities offer $50-100 rebate.</li>
               <li>Search &quot;[your city] rain barrel rebate.&quot;</li>
               <li>Some give barrels FREE.</li>
@@ -74,7 +74,7 @@ export default function RainBarrelGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Maintenance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mosquito control — keep tightly screened OR add mosquito dunks ($5).</li>
               <li>Clean every spring — debris settles bottom.</li>
               <li>Drain before winter (prevents cracking).</li>
@@ -87,7 +87,7 @@ export default function RainBarrelGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use rain water</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Garden watering (best use).</li>
               <li>Flowers + houseplants.</li>
               <li>Wash car / patio.</li>
@@ -101,7 +101,7 @@ export default function RainBarrelGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Combine with drip irrigation</h3>
-            <p className="text-sm text-muted-foreground">Solar pump + drip irrigation from rain barrel = fully automatic garden watering. Save 20-50% on water bill in summer. Senior favorite combo. $200 setup pays back first year. Free water + free electricity (solar) = free watering forever.</p>
+            <p className="text-base text-muted-foreground">Solar pump + drip irrigation from rain barrel = fully automatic garden watering. Save 20-50% on water bill in summer. Senior favorite combo. $200 setup pays back first year. Free water + free electricity (solar) = free watering forever.</p>
           </CardContent>
         </Card>
       </main>

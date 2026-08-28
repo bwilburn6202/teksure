@@ -45,7 +45,7 @@ export default function GroceryDeliveryCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time setup (any app)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install the app from the App Store / Play Store.</li>
               <li>Make an account — email and password.</li>
               <li>Type your home address and your card.</li>
@@ -60,7 +60,7 @@ export default function GroceryDeliveryCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pickup over delivery</strong> when you can — saves $10-20 per order.</li>
               <li><strong>Watch for fees:</strong> Some apps charge "service fees" of 5-10% on top. Read the order summary before paying.</li>
               <li><strong>Check substitutions:</strong> If something's out of stock, the shopper picks a swap. You can choose "approve substitutions" (less surprises) or "no substitutions" (you might miss items).</li>
@@ -80,7 +80,7 @@ export default function GroceryDeliveryCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — schedule a "regular order"</h3>
-            <p className="text-sm text-muted-foreground">Most apps let you reorder in one tap. Build a "weekly basics" list once — milk, bread, eggs, fruit, coffee — and re-order in 60 seconds every Saturday morning.</p>
+            <p className="text-base text-muted-foreground">Most apps let you reorder in one tap. Build a "weekly basics" list once — milk, bread, eggs, fruit, coffee — and re-order in 60 seconds every Saturday morning.</p>
           </CardContent>
         </Card>
       </main>

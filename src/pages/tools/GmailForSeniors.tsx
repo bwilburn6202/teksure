@@ -19,7 +19,7 @@ export default function GmailForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5 essential skills</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Compose + send email.</li>
               <li>Reply + forward.</li>
               <li>Add attachment (paperclip icon).</li>
@@ -33,7 +33,7 @@ export default function GmailForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly settings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Display Density → Comfortable.</li>
               <li>Settings → Theme → larger fonts.</li>
               <li>Reading pane on (split screen).</li>
@@ -47,7 +47,7 @@ export default function GmailForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spam filter</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Gmail spam filter excellent.</li>
               <li>Most scams auto-filtered.</li>
               <li>Suspicious — Report Spam button.</li>
@@ -61,7 +61,7 @@ export default function GmailForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Organize</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stars — important emails.</li>
               <li>Labels — categorize (color codes).</li>
               <li>Filters — auto-sort emails.</li>
@@ -75,7 +75,7 @@ export default function GmailForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior security</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Strong unique password (12+ chars).</li>
               <li>2-Step Verification ON (Settings).</li>
               <li>Recovery phone + email set.</li>
@@ -89,7 +89,7 @@ export default function GmailForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Other email options</h3>
-            <p className="text-sm text-muted-foreground"><strong>Outlook</strong> — Microsoft. Use for Microsoft 365. <strong>Yahoo Mail</strong> — old but works. <strong>iCloud Mail</strong> — Apple users. <strong>ProtonMail</strong> — privacy. Gmail most popular but choose what you&apos;re comfortable with.</p>
+            <p className="text-base text-muted-foreground"><strong>Outlook</strong> — Microsoft. Use for Microsoft 365. <strong>Yahoo Mail</strong> — old but works. <strong>iCloud Mail</strong> — Apple users. <strong>ProtonMail</strong> — privacy. Gmail most popular but choose what you&apos;re comfortable with.</p>
           </CardContent>
         </Card>
       </main>

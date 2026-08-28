@@ -35,7 +35,7 @@ export default function DeepCouponApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function DeepCouponApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stack the savings</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Start your shopping trip at Rakuten or Capital One Shopping — click through to the store.</li>
               <li>At checkout, let Honey try every coupon code automatically.</li>
               <li>For groceries — clip Ibotta offers BEFORE you shop, then snap the receipt after.</li>
@@ -63,7 +63,7 @@ export default function DeepCouponApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Realistic earnings</h3>
-            <p className="text-sm text-muted-foreground">Most folks earn $100-400/year combined across these apps without changing buying habits. Power users with big grocery bills clear $1,000+. Worth 30 seconds at checkout.</p>
+            <p className="text-base text-muted-foreground">Most folks earn $100-400/year combined across these apps without changing buying habits. Power users with big grocery bills clear $1,000+. Worth 30 seconds at checkout.</p>
           </CardContent>
         </Card>
       </main>

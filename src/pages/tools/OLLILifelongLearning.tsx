@@ -19,7 +19,7 @@ export default function OLLILifelongLearning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is OLLI?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Osher Lifelong Learning Institutes.</li>
               <li>Funded by Bernard Osher Foundation.</li>
               <li>120+ programs at universities across US.</li>
@@ -33,7 +33,7 @@ export default function OLLILifelongLearning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Annual membership: $50–$200.</li>
               <li>Then unlimited or low-cost classes.</li>
               <li>Some programs free with membership.</li>
@@ -47,7 +47,7 @@ export default function OLLILifelongLearning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Class topics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>History — local, world, military, social.</li>
               <li>Literature + book discussions.</li>
               <li>Music appreciation + jazz history.</li>
@@ -61,7 +61,7 @@ export default function OLLILifelongLearning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Format</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most classes 4–8 weekly sessions.</li>
               <li>1–2 hours each meeting.</li>
               <li>In-person, online, or hybrid.</li>
@@ -75,7 +75,7 @@ export default function OLLILifelongLearning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find OLLI near you</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to OsherFoundation.org.</li>
               <li>Search by your state.</li>
               <li>120+ programs across US.</li>
@@ -89,7 +89,7 @@ export default function OLLILifelongLearning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Social benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Meet other curious retirees.</li>
               <li>Form lifelong friendships.</li>
               <li>Reduces loneliness — proven research.</li>
@@ -103,7 +103,7 @@ export default function OLLILifelongLearning() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best-kept secret in retirement</h3>
-            <p className="text-sm text-muted-foreground">OLLI is one of the best-kept secrets for active retirees. For about $100/year you can take dozens of college-level courses with peers your age. The instructors are often retired professors who teach for the love of it. Visit OsherFoundation.org and find your nearest program. Many people say OLLI made retirement vastly more fulfilling than they expected.</p>
+            <p className="text-base text-muted-foreground">OLLI is one of the best-kept secrets for active retirees. For about $100/year you can take dozens of college-level courses with peers your age. The instructors are often retired professors who teach for the love of it. Visit OsherFoundation.org and find your nearest program. Many people say OLLI made retirement vastly more fulfilling than they expected.</p>
           </CardContent>
         </Card>
       </main>

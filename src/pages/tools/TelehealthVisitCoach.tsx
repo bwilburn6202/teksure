@@ -49,7 +49,7 @@ export default function TelehealthVisitCoach() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -58,7 +58,7 @@ export default function TelehealthVisitCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before the visit</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Find a quiet, well-lit room.</li>
               <li>Have your phone or laptop charged or plugged in.</li>
               <li>List your symptoms in order of severity.</li>
@@ -85,7 +85,7 @@ export default function TelehealthVisitCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Medicare Advantage often includes free telehealth</h3>
-            <p className="text-sm text-muted-foreground">Many Medicare Advantage plans include unlimited telehealth visits with $0 copay. Check your plan benefits — call the number on your card. Original Medicare also covers telehealth as of 2024 in most cases.</p>
+            <p className="text-base text-muted-foreground">Many Medicare Advantage plans include unlimited telehealth visits with $0 copay. Check your plan benefits — call the number on your card. Original Medicare also covers telehealth as of 2024 in most cases.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function SnowbirdTechSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mail handling</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>USPS Hold Mail or Forward to Florida address.</li>
               <li>Or use iPostal1 — scan + forward as needed.</li>
               <li>Switch all bills to autopay + e-statements.</li>
@@ -33,7 +33,7 @@ export default function SnowbirdTechSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Banking + bills</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>All bills on autopay.</li>
               <li>Mobile banking apps installed + tested.</li>
               <li>Mobile deposit for any paper checks.</li>
@@ -47,7 +47,7 @@ export default function SnowbirdTechSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Healthcare access</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Confirm Medicare works in destination state.</li>
               <li>Get list of doctors at destination.</li>
               <li>Arrange 90-day prescriptions before leaving.</li>
@@ -61,7 +61,7 @@ export default function SnowbirdTechSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Home security</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smart cameras at primary home.</li>
               <li>Smart thermostat — keep house from freezing.</li>
               <li>Smart light timers.</li>
@@ -75,7 +75,7 @@ export default function SnowbirdTechSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Family connection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Echo Show in primary home.</li>
               <li>Drop In to check in remotely.</li>
               <li>Weekly video call schedule.</li>
@@ -89,7 +89,7 @@ export default function SnowbirdTechSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Internet at destination</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Home WiFi at Florida property essential.</li>
               <li>Or T-Mobile Home Internet — easy setup.</li>
               <li>Streaming services follow you (Netflix, Hulu).</li>
@@ -103,7 +103,7 @@ export default function SnowbirdTechSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Set up systems before you leave</h3>
-            <p className="text-sm text-muted-foreground">Two weeks before leaving for the south: switch everything to digital, set up autopay, get 90-day prescriptions, install smart thermostat, brief your neighbor. Many snowbirds say their first season was stressful — once they had the tech systems set up, subsequent winters became easy. Spend the time once, enjoy years of stress-free travel.</p>
+            <p className="text-base text-muted-foreground">Two weeks before leaving for the south: switch everything to digital, set up autopay, get 90-day prescriptions, install smart thermostat, brief your neighbor. Many snowbirds say their first season was stressful — once they had the tech systems set up, subsequent winters became easy. Spend the time once, enjoy years of stress-free travel.</p>
           </CardContent>
         </Card>
       </main>

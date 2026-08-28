@@ -34,7 +34,7 @@ export default function HandymanServiceApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function HandymanServiceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>For a small job</strong> (under 2 hours) — TaskRabbit is fastest.</li>
               <li><strong>For multiple quotes</strong> — Thumbtack or Angi.</li>
               <li><strong>Use the in-app chat</strong> instead of phone — keeps a record of what was promised.</li>
@@ -73,7 +73,7 @@ export default function HandymanServiceApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior-friendly options</h3>
-            <p className="text-sm text-muted-foreground"><strong>Papa</strong> (joinpapa.com) — pairs older adults with younger "Pals" who help with errands, rides, tech, light housework. Often covered by Medicare Advantage. <strong>SilverRide</strong> in some cities — door-through-door rides for seniors.</p>
+            <p className="text-base text-muted-foreground"><strong>Papa</strong> (joinpapa.com) — pairs older adults with younger "Pals" who help with errands, rides, tech, light housework. Often covered by Medicare Advantage. <strong>SilverRide</strong> in some cities — door-through-door rides for seniors.</p>
           </CardContent>
         </Card>
       </main>

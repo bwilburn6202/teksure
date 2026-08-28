@@ -19,7 +19,7 @@ export default function OpenTableForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What OpenTable does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Book restaurant reservations 24/7.</li>
               <li>50,000+ restaurants worldwide.</li>
               <li>Free to use.</li>
@@ -33,7 +33,7 @@ export default function OpenTableForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to book</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open OpenTable app.</li>
               <li>Search restaurant or cuisine.</li>
               <li>Pick date + time + party size.</li>
@@ -47,7 +47,7 @@ export default function OpenTableForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Add notes — &quot;quiet table preferred.&quot;</li>
               <li>Special requests — birthday, anniversary.</li>
               <li>Save favorite restaurants.</li>
@@ -61,7 +61,7 @@ export default function OpenTableForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Resy alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hotter restaurants often Resy not OpenTable.</li>
               <li>Especially big cities + upscale.</li>
               <li>Free to use.</li>
@@ -75,7 +75,7 @@ export default function OpenTableForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Yelp for reviews</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free reviews + photos.</li>
               <li>Check Yelp before booking.</li>
               <li>Save favorites.</li>
@@ -89,7 +89,7 @@ export default function OpenTableForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Special tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Note your birthday — restaurant often gives free dessert.</li>
               <li>Anniversary gets special treatment.</li>
               <li>Mention dietary restrictions ahead.</li>
@@ -103,7 +103,7 @@ export default function OpenTableForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No more phone calls</h3>
-            <p className="text-sm text-muted-foreground">For senior diners, OpenTable eliminates the phone tag of restaurant reservations. Browse + book at any time of day. See photos + reviews before committing. Special requests in notes. Earn $10 credits over time. Free, install once, use forever. Lots more dining options visible than just calling around.</p>
+            <p className="text-base text-muted-foreground">For senior diners, OpenTable eliminates the phone tag of restaurant reservations. Browse + book at any time of day. See photos + reviews before committing. Special requests in notes. Earn $10 credits over time. Free, install once, use forever. Lots more dining options visible than just calling around.</p>
           </CardContent>
         </Card>
       </main>

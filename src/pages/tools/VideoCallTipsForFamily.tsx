@@ -19,7 +19,7 @@ export default function VideoCallTipsForFamily() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Which app to use?</h2>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-base">
               <li><strong>Everyone has iPhones?</strong> Use <strong>FaceTime</strong>. Already installed, works perfectly.</li>
               <li><strong>Mix of iPhone and Android?</strong> Use <strong>WhatsApp</strong>. Free, easy, works on every phone.</li>
               <li><strong>Big group call (4+)?</strong> Use <strong>Zoom</strong> or <strong>Google Meet</strong>. Free up to 40 minutes.</li>
@@ -56,7 +56,7 @@ export default function VideoCallTipsForFamily() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Look and sound great</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Light from in front, not behind.</strong> A window in front of you = lit-up face. A window behind = silhouette.</li>
               <li><strong>Camera at eye level.</strong> Stack a few books to prop up the phone or laptop. Looking down at the camera = double chin.</li>
               <li><strong>Headphones</strong> (any kind, even cheap ones) eliminate echo and boost sound quality dramatically.</li>
@@ -70,7 +70,7 @@ export default function VideoCallTipsForFamily() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If something goes wrong</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Can't hear them:</strong> Check the volume buttons. Tap the speaker icon — make sure it's not muted.</li>
               <li><strong>They can't hear you:</strong> You're muted. Look for a microphone icon with a line through it — tap it.</li>
               <li><strong>Camera shows nothing:</strong> The "Stop Video" icon is on, OR another app has the camera. Close other apps.</li>
@@ -84,7 +84,7 @@ export default function VideoCallTipsForFamily() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for grandkid video calls</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Keep them short — 10-15 minutes for younger kids. Their attention is short.</li>
               <li>Have a prop ready — a toy, a book, the family pet. Static face-to-face gets old fast.</li>
               <li>Read a story together (Caribu does this beautifully — picture book on shared screen).</li>
@@ -97,7 +97,7 @@ export default function VideoCallTipsForFamily() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Schedule it</h3>
-            <p className="text-sm text-muted-foreground">A scheduled weekly call (Sunday at 5 PM with the kids) is the single biggest predictor of staying close with grandkids who live far away. Put it on the calendar like a doctor's appointment — it sticks.</p>
+            <p className="text-base text-muted-foreground">A scheduled weekly call (Sunday at 5 PM with the kids) is the single biggest predictor of staying close with grandkids who live far away. Put it on the calendar like a doctor's appointment — it sticks.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function TeslaPowerwallReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tesla Powerwall 3</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$10,000-15,000 + install.</li>
               <li>13.5 kWh capacity.</li>
               <li>Power 8-12 hours typical home.</li>
@@ -34,7 +34,7 @@ export default function TeslaPowerwallReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Enphase IQ Battery</strong> — $4-15K. Modular.</li>
               <li><strong>LG Chem RESU</strong> — competitor.</li>
               <li><strong>SunPower SunVault</strong> — solar-paired.</li>
@@ -48,7 +48,7 @@ export default function TeslaPowerwallReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tax credits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30% federal tax credit (Solar + Battery).</li>
               <li>Most state credits + utility rebates.</li>
               <li>Net cost often half advertised.</li>
@@ -61,7 +61,7 @@ export default function TeslaPowerwallReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior priorities</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>CPAP machine.</li>
               <li>Oxygen concentrator.</li>
               <li>Refrigerated medications.</li>
@@ -76,7 +76,7 @@ export default function TeslaPowerwallReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheaper portable option</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>EcoFlow Delta 2</strong> — $1K. Powers fridge 6+ hours.</li>
               <li><strong>Jackery Explorer 2000 Pro</strong> — $1,800.</li>
               <li><strong>Bluetti AC200P</strong> — $1,500.</li>
@@ -90,7 +90,7 @@ export default function TeslaPowerwallReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth it?</h3>
-            <p className="text-sm text-muted-foreground">If: frequent outages, medical equipment users, has solar, longer-term homeowner. Else: portable battery $1K cheaper option. Generators alternative — see /tools/generator-test-routine. Pick based on risk + budget.</p>
+            <p className="text-base text-muted-foreground">If: frequent outages, medical equipment users, has solar, longer-term homeowner. Else: portable battery $1K cheaper option. Generators alternative — see /tools/generator-test-routine. Pick based on risk + budget.</p>
           </CardContent>
         </Card>
       </main>

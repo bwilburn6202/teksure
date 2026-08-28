@@ -35,7 +35,7 @@ export default function EvChargingApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function EvChargingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save on home charging</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Time-of-use rates</strong> — many utilities charge HALF as much overnight. Set the car to charge between 11 PM and 6 AM.</li>
               <li><strong>EV-specific plans</strong> — many utilities offer special "EV plans" with cheaper off-peak rates.</li>
               <li><strong>Federal tax credit</strong> — up to $7,500 on new EVs, $4,000 on used. Check eligibility at fueleconomy.gov.</li>
@@ -57,7 +57,7 @@ export default function EvChargingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Road trip tip</h3>
-            <p className="text-sm text-muted-foreground">Use ABRP (A Better Routeplanner) BEFORE every road trip. It plans charging stops based on your actual car&apos;s range, the weather, and the elevation. Beats just trusting the car&apos;s built-in nav.</p>
+            <p className="text-base text-muted-foreground">Use ABRP (A Better Routeplanner) BEFORE every road trip. It plans charging stops based on your actual car&apos;s range, the weather, and the elevation. Beats just trusting the car&apos;s built-in nav.</p>
           </CardContent>
         </Card>
       </main>

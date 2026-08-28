@@ -19,7 +19,7 @@ export default function OutdoorPhotographyTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Phone is enough</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone 13+ takes pro photos.</li>
               <li>Pixel 6+ same.</li>
               <li>Don&apos;t need DSLR.</li>
@@ -34,7 +34,7 @@ export default function OutdoorPhotographyTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Better photos rules</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Rule of thirds — subject 1/3 from edge.</li>
               <li>Golden hour — sunrise + sunset.</li>
               <li>Avoid noon harsh shadows.</li>
@@ -49,7 +49,7 @@ export default function OutdoorPhotographyTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior gear upgrades</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mini tripod</strong> ($30) — hold steady.</li>
               <li><strong>Bluetooth shutter</strong> ($15) — selfies.</li>
               <li><strong>Phone clip-on lenses</strong> ($30) — wide-angle, telephoto.</li>
@@ -63,7 +63,7 @@ export default function OutdoorPhotographyTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Editing made easy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Photos</strong> — built-in iPhone.</li>
               <li><strong>Snapseed</strong> — free, Google.</li>
               <li><strong>Adobe Lightroom Mobile</strong> — free tier.</li>
@@ -78,7 +78,7 @@ export default function OutdoorPhotographyTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sharing + organizing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Photos / Google Photos auto-organize.</li>
               <li>Shared albums for family events.</li>
               <li>Print best — Shutterfly, Costco.</li>
@@ -93,7 +93,7 @@ export default function OutdoorPhotographyTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free senior classes</h3>
-            <p className="text-sm text-muted-foreground">Apple Stores — free Today at Apple photo classes. Senior centers + community colleges. YouTube — endless tutorials. Library photography clubs. Many seniors take photography as creative outlet.</p>
+            <p className="text-base text-muted-foreground">Apple Stores — free Today at Apple photo classes. Senior centers + community colleges. YouTube — endless tutorials. Library photography clubs. Many seniors take photography as creative outlet.</p>
           </CardContent>
         </Card>
       </main>

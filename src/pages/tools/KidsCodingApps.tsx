@@ -34,7 +34,7 @@ export default function KidsCodingApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function KidsCodingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why coding for kids</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Logic + problem-solving skills.</li>
               <li>Persistence — debug = patience.</li>
               <li>Builds confidence.</li>
@@ -57,7 +57,7 @@ export default function KidsCodingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to start (free)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Code.org Hour of Code — 1-hr intros.</li>
               <li>ScratchJr if 5-7. Scratch if 8+.</li>
               <li>Khan Academy Computer Programming for 12+.</li>
@@ -70,7 +70,7 @@ export default function KidsCodingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best Christmas gift idea</h3>
-            <p className="text-sm text-muted-foreground">Sphero Mini robot ($50) — kids program it via app. Hours of fun. Makes coding tangible. Great for ages 8-13. Beats another video game.</p>
+            <p className="text-base text-muted-foreground">Sphero Mini robot ($50) — kids program it via app. Hours of fun. Makes coding tangible. Great for ages 8-13. Beats another video game.</p>
           </CardContent>
         </Card>
       </main>

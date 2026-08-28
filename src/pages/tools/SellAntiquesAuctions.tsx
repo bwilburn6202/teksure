@@ -35,7 +35,7 @@ export default function SellAntiquesAuctions() {
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{v.name}</h3>
                 <p className="text-sm">{v.what}</p>
-                <p className="text-sm text-muted-foreground">{v.good}</p>
+                <p className="text-base text-muted-foreground">{v.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -74,7 +74,7 @@ export default function SellAntiquesAuctions() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Key advice</h3>
-            <p className="text-sm text-muted-foreground">For high-value items — get certified appraisal FIRST. Then approach 2-3 auction houses for free estimate. Compare. Pick the one that specializes in your item type. They\'ll get you the best price.</p>
+            <p className="text-base text-muted-foreground">For high-value items — get certified appraisal FIRST. Then approach 2-3 auction houses for free estimate. Compare. Pick the one that specializes in your item type. They\'ll get you the best price.</p>
           </CardContent>
         </Card>
       </main>

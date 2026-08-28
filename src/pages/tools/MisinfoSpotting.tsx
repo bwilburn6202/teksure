@@ -19,7 +19,7 @@ export default function MisinfoSpotting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AI photo signs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hands — too many fingers, mangled, weird joints.</li>
               <li>Teeth — irregular, blurry, too many.</li>
               <li>Hair — strange flow, blends weird with skin.</li>
@@ -34,7 +34,7 @@ export default function MisinfoSpotting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Deepfake video signs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Eye blinks unnatural / never blink.</li>
               <li>Mouth doesn&apos;t match audio perfectly.</li>
               <li>Skin has weird smoothness or sharpness.</li>
@@ -48,7 +48,7 @@ export default function MisinfoSpotting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common viral lies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Famous person died" — sometimes a hoax. Verify on AP.</li>
               <li>"Government announces" — check actual government site.</li>
               <li>"Doctor says X causes Y" — search original study.</li>
@@ -62,7 +62,7 @@ export default function MisinfoSpotting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">"This makes me angry" check</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Strong emotion = likely manipulated content.</li>
               <li>Algorithms feed you outrage to keep you scrolling.</li>
               <li>Pause. Verify before sharing.</li>
@@ -75,7 +75,7 @@ export default function MisinfoSpotting() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tools that help</h3>
-            <p className="text-sm text-muted-foreground"><strong>Google reverse image search</strong> — verify photos. <strong>NewsGuard browser extension</strong> — rates news sites. <strong>Snopes</strong> — searches viral claims. Use 30 sec to verify before sharing. Saves embarrassment + slows misinformation.</p>
+            <p className="text-base text-muted-foreground"><strong>Google reverse image search</strong> — verify photos. <strong>NewsGuard browser extension</strong> — rates news sites. <strong>Snopes</strong> — searches viral claims. Use 30 sec to verify before sharing. Saves embarrassment + slows misinformation.</p>
           </CardContent>
         </Card>
       </main>

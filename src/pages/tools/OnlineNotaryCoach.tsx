@@ -41,7 +41,7 @@ export default function OnlineNotaryCoach() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function OnlineNotaryCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How online notarization works</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign up. Upload your document (PDF or photo).</li>
               <li>Verify ID — selfie + driver\'s license photo.</li>
               <li>Answer 5 random "knowledge-based authentication" questions (your old addresses, etc.).</li>
@@ -91,7 +91,7 @@ export default function OnlineNotaryCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cheapest option</h3>
-            <p className="text-sm text-muted-foreground">If you have ANY checking account at a bank or credit union — they\'ll notarize FREE for customers. Walk in, ask the teller. 5 minutes. Worth the trip if you have time.</p>
+            <p className="text-base text-muted-foreground">If you have ANY checking account at a bank or credit union — they\'ll notarize FREE for customers. Walk in, ask the teller. 5 minutes. Worth the trip if you have time.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function GrandparentTextingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best texting apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iMessage</strong> (iPhone) — already there. Tap microphone for voice messages.</li>
               <li><strong>WhatsApp</strong> — 2.5B users. Voice + video calls + photos. Free worldwide.</li>
               <li><strong>Facebook Messenger</strong> — if grandkids on Facebook.</li>
@@ -33,7 +33,7 @@ export default function GrandparentTextingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Keep messages light + frequent</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photo of the cat / your garden / today&apos;s sunset.</li>
               <li>Question: "What show are you watching now?"</li>
               <li>"Thinking of you. No need to reply."</li>
@@ -47,7 +47,7 @@ export default function GrandparentTextingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Texting tricks to learn</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>GIFs</strong> — Tap GIF button on keyboard. Search "happy birthday" — animated cards instant.</li>
               <li><strong>Emoji</strong> — Press  globe icon → tap emoji.</li>
               <li><strong>Voice message</strong> — Hold microphone icon. Speak. Release sends.</li>
@@ -61,7 +61,7 @@ export default function GrandparentTextingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t feel pressure</h3>
-            <p className="text-sm text-muted-foreground">Teens text differently — short, ALL CAPS or all lowercase, abbreviations. Don&apos;t force their style. Be yourself. Grandkids treasure messages from grandma even if they don&apos;t reply right away.</p>
+            <p className="text-base text-muted-foreground">Teens text differently — short, ALL CAPS or all lowercase, abbreviations. Don&apos;t force their style. Be yourself. Grandkids treasure messages from grandma even if they don&apos;t reply right away.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function FootCareSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily check</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Look at top + bottom of feet daily (use mirror or ask spouse).</li>
               <li>Cuts, sores, redness, swelling, blisters.</li>
               <li>Cracks between toes (fungus).</li>
@@ -33,7 +33,7 @@ export default function FootCareSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Diabetic feet ESSENTIAL</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Diabetes = nerve damage = can&apos;t feel injuries.</li>
               <li>Small cut → infection → amputation if missed.</li>
               <li>NEVER walk barefoot — even at home.</li>
@@ -47,7 +47,7 @@ export default function FootCareSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior shoe rules</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Closed-toe always.</li>
               <li>Velcro or BOA closures if fingers hurt with laces.</li>
               <li>Wide toe box — feet spread with age.</li>
@@ -62,7 +62,7 @@ export default function FootCareSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common problems</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bunions</strong> — wide-toe shoes, bunion pads, surgery if severe.</li>
               <li><strong>Hammer toes</strong> — gel toe caps, surgery option.</li>
               <li><strong>Plantar fasciitis</strong> — arch support, stretches, ice.</li>
@@ -76,7 +76,7 @@ export default function FootCareSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Podiatrist coverage</h3>
-            <p className="text-sm text-muted-foreground">Medicare covers podiatrist for diabetes-related foot care + medical conditions. Routine nail trimming usually NOT covered unless &quot;at-risk&quot; status. Many podiatrists charge $30-50 for nail care if not covered. Worth it if vision/flexibility issues.</p>
+            <p className="text-base text-muted-foreground">Medicare covers podiatrist for diabetes-related foot care + medical conditions. Routine nail trimming usually NOT covered unless &quot;at-risk&quot; status. Many podiatrists charge $30-50 for nail care if not covered. Worth it if vision/flexibility issues.</p>
           </CardContent>
         </Card>
       </main>

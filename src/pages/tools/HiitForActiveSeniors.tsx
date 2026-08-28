@@ -19,7 +19,7 @@ export default function HiitForActiveSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why HIIT works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Short, intense intervals.</li>
               <li>Better cardio gains than steady-state.</li>
               <li>Improves blood pressure.</li>
@@ -33,7 +33,7 @@ export default function HiitForActiveSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-adapted HIIT</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walking + jogging intervals — Norwegian 4x4.</li>
               <li>30 seconds fast, 30 seconds easy.</li>
               <li>Or 4 minutes hard, 3 minutes easy x 4.</li>
@@ -47,7 +47,7 @@ export default function HiitForActiveSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps for HIIT</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Seven — 7 minute workouts.</li>
               <li>HIIT Workouts by FunctionApp.</li>
               <li>Apple Fitness+ — HIIT classes.</li>
@@ -61,7 +61,7 @@ export default function HiitForActiveSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Doctor approval first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Talk to doctor before HIIT.</li>
               <li>Heart conditions excluded.</li>
               <li>Recent surgery — wait.</li>
@@ -75,7 +75,7 @@ export default function HiitForActiveSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Heart rate matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Watch tracks heart rate.</li>
               <li>Hit 70-85% max heart rate.</li>
               <li>Max = 220 - age.</li>
@@ -89,7 +89,7 @@ export default function HiitForActiveSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recovery + frequency</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>2-3 HIIT sessions per week max.</li>
               <li>Rest day between.</li>
               <li>Easy days for recovery.</li>
@@ -103,7 +103,7 @@ export default function HiitForActiveSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Walk-jog intervals safest</h3>
-            <p className="text-sm text-muted-foreground">For most seniors interested in HIIT, the safest version is walk-jog intervals. Walk 2 minutes, jog 30 seconds, repeat 6-8 times. Total 20 minutes including warmup/cooldown. Builds cardio without joint impact. Use Apple Watch to monitor heart rate. Skip HIIT if you have heart conditions — talk to doctor first.</p>
+            <p className="text-base text-muted-foreground">For most seniors interested in HIIT, the safest version is walk-jog intervals. Walk 2 minutes, jog 30 seconds, repeat 6-8 times. Total 20 minutes including warmup/cooldown. Builds cardio without joint impact. Use Apple Watch to monitor heart rate. Skip HIIT if you have heart conditions — talk to doctor first.</p>
           </CardContent>
         </Card>
       </main>

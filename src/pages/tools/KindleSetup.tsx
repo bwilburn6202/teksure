@@ -154,7 +154,7 @@ export default function KindleSetup() {
               <Card className="border-border mb-6">
                 <CardContent className="p-5">
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">How to buy a book</p>
-                  <ol className="space-y-2 text-sm">
+                  <ol className="space-y-2 text-base">
                     <li className="flex gap-2"><span className="text-primary font-semibold">1.</span><span>From the Kindle home screen, tap the bag icon (top-right) → Kindle Store.</span></li>
                     <li className="flex gap-2"><span className="text-primary font-semibold">2.</span><span>Search for a book or browse bestsellers.</span></li>
                     <li className="flex gap-2"><span className="text-primary font-semibold">3.</span><span>Tap "Buy Now" → confirm with your Amazon password if asked.</span></li>
@@ -187,7 +187,7 @@ export default function KindleSetup() {
                   <p className="text-xs text-muted-foreground mb-3">
                     The single best kept secret. Most US libraries lend Kindle e-books and audiobooks free through the Libby app. Almost the same selection you would buy on Amazon.
                   </p>
-                  <ol className="space-y-2 text-sm">
+                  <ol className="space-y-2 text-base">
                     <li className="flex gap-2"><span className="text-primary font-semibold">1.</span><span>Install "Libby" on your phone or tablet (not on the Kindle directly).</span></li>
                     <li className="flex gap-2"><span className="text-primary font-semibold">2.</span><span>Sign in with your library card number and PIN.</span></li>
                     <li className="flex gap-2"><span className="text-primary font-semibold">3.</span><span>Search any book → tap "Borrow" → choose "Read with Kindle".</span></li>

@@ -27,7 +27,7 @@ export default function MyChartHelper() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time signup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>At your next doctor's visit, ask the front desk for an "activation code" or "MyChart sign-up letter". They print it for you.</li>
               <li>Or go to <strong>mychart.com</strong> → click "Sign Up Now" → search for your doctor's clinic.</li>
               <li>Enter the activation code, your date of birth, and your last 4 of Social Security to verify it's really you.</li>
@@ -42,7 +42,7 @@ export default function MyChartHelper() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can do once signed in</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Test results</strong> — usually appear within hours of the lab finishing. (Tip: if a number worries you, message your doctor before Googling. Lots of "abnormal" labs are actually normal for your age.)</li>
               <li><strong>Message your doctor</strong> — replies in 1-3 business days. Faster than phone tag.</li>
               <li><strong>Refill prescriptions</strong> — tap the medication, "Refill", pick your pharmacy.</li>
@@ -60,7 +60,7 @@ export default function MyChartHelper() {
               <AlertTriangle className="w-6 h-6 text-yellow-700 dark:text-yellow-400 shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">When NOT to use the message feature</h3>
-                <p className="text-sm text-muted-foreground">For chest pain, sudden weakness, fall with a head bump, severe shortness of breath, or any emergency — call <strong>911</strong>. Messages may take a day to be read. Don't wait.</p>
+                <p className="text-base text-muted-foreground">For chest pain, sudden weakness, fall with a head bump, severe shortness of breath, or any emergency — call <strong>911</strong>. Messages may take a day to be read. Don't wait.</p>
               </div>
             </div>
           </CardContent>
@@ -85,7 +85,7 @@ export default function MyChartHelper() {
               <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Quick Tip — set up family access</h3>
-                <p className="text-sm text-muted-foreground">If your spouse or adult child helps with appointments and meds, ask the front desk about "Proxy Access". You sign one form and they can see your portal too. Saves headaches and keeps everyone informed.</p>
+                <p className="text-base text-muted-foreground">If your spouse or adult child helps with appointments and meds, ask the front desk about "Proxy Access". You sign one form and they can see your portal too. Saves headaches and keeps everyone informed.</p>
               </div>
             </div>
           </CardContent>

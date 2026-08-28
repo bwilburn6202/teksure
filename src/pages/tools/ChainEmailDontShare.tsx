@@ -19,7 +19,7 @@ export default function ChainEmailDontShare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spot a chain email</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Forward this to 10 friends or bad luck.&quot;</li>
               <li>&quot;Microsoft will pay you $1 for each forward.&quot; (FAKE.)</li>
               <li>&quot;Bill Gates is sharing his fortune.&quot; (FAKE.)</li>
@@ -33,7 +33,7 @@ export default function ChainEmailDontShare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why they&apos;re harmful</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Spreads misinformation — friends think you vetted it.</li>
               <li>Exposes friends&apos; emails to scammers (TO field harvesting).</li>
               <li>Some carry virus links / phishing.</li>
@@ -46,7 +46,7 @@ export default function ChainEmailDontShare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Verify before sharing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Snopes.com</strong> — search the headline. Free.</li>
               <li><strong>FactCheck.org</strong> — political + health hoaxes.</li>
               <li><strong>Reuters Fact Check</strong> — viral claims.</li>
@@ -59,7 +59,7 @@ export default function ChainEmailDontShare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you must forward something real</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use BCC — protect friends&apos; emails from harvesting.</li>
               <li>Delete the long forward chain at the bottom first.</li>
               <li>Add 1 sentence why it matters to YOU.</li>
@@ -72,7 +72,7 @@ export default function ChainEmailDontShare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Polite reply to chain-email senders</h3>
-            <p className="text-sm text-muted-foreground">&quot;Thanks for thinking of me — I checked Snopes and this one&apos;s a hoax. Wanted to let you know so you don&apos;t pass it on.&quot; Most senders appreciate it.</p>
+            <p className="text-base text-muted-foreground">&quot;Thanks for thinking of me — I checked Snopes and this one&apos;s a hoax. Wanted to let you know so you don&apos;t pass it on.&quot; Most senders appreciate it.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function HuntingAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">OnX Hunt — most popular</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Maps showing public + private land lines.</li>
               <li>Know exactly whose property you&apos;re on.</li>
               <li>Owner names + acreage shown.</li>
@@ -33,7 +33,7 @@ export default function HuntingAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">HuntStand — free option</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free version with property lines.</li>
               <li>Pro: $30/year — premium maps.</li>
               <li>Wind direction tracking.</li>
@@ -47,7 +47,7 @@ export default function HuntingAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Weather + wind apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Windy — best wind direction tracking.</li>
               <li>HuntCast — hunting-specific weather.</li>
               <li>Solunar Forecast — best activity times.</li>
@@ -61,7 +61,7 @@ export default function HuntingAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety apps + devices</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Garmin inReach — satellite SOS messenger.</li>
               <li>Works where cell phones don&apos;t.</li>
               <li>$300+ device, $15/month subscription.</li>
@@ -75,7 +75,7 @@ export default function HuntingAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">License + regulations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most states sell licenses through state app.</li>
               <li>Senior discounts often available 65+.</li>
               <li>Some states offer lifetime senior licenses.</li>
@@ -89,7 +89,7 @@ export default function HuntingAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Helpful gear tech</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Trail cameras — Reconyx, Browning, Stealth Cam.</li>
               <li>Cellular trail cams send photos to phone.</li>
               <li>Heated socks + jacket — battery powered.</li>
@@ -103,7 +103,7 @@ export default function HuntingAppsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Garmin inReach for solo hunters</h3>
-            <p className="text-sm text-muted-foreground">If you hunt alone in areas without cell service, a Garmin inReach Mini ($300 + $15/month) is the best safety investment. It can send your GPS location to family every 10 minutes and trigger an SOS that satellite-dispatches search and rescue. Many older hunters say this device gave their spouse the peace of mind to keep supporting their hunting trips.</p>
+            <p className="text-base text-muted-foreground">If you hunt alone in areas without cell service, a Garmin inReach Mini ($300 + $15/month) is the best safety investment. It can send your GPS location to family every 10 minutes and trigger an SOS that satellite-dispatches search and rescue. Many older hunters say this device gave their spouse the peace of mind to keep supporting their hunting trips.</p>
           </CardContent>
         </Card>
       </main>

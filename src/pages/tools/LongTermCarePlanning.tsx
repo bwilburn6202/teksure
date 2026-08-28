@@ -88,7 +88,7 @@ export default function LongTermCarePlanning() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">First step</h3>
-            <p className="text-sm text-muted-foreground">Talk to a fee-only fiduciary financial advisor (NAPFA.org) AND an elder-law attorney. Many offer free initial consults. Plan in your 50s-60s — much harder once you\'re 75+.</p>
+            <p className="text-base text-muted-foreground">Talk to a fee-only fiduciary financial advisor (NAPFA.org) AND an elder-law attorney. Many offer free initial consults. Plan in your 50s-60s — much harder once you\'re 75+.</p>
           </CardContent>
         </Card>
       </main>

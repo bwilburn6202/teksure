@@ -35,7 +35,7 @@ export default function OnlineThriftStores() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function OnlineThriftStores() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Buying tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Check seller rating</strong> — 98%+ positive feedback. Recent reviews matter most.</li>
               <li><strong>Read return policy BEFORE buying.</strong></li>
               <li><strong>Pay with credit card or PayPal Goods &amp; Services</strong> — buyer protection.</li>
@@ -58,7 +58,7 @@ export default function OnlineThriftStores() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Selling — clean out your house</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>eBay</strong> — best for collectibles, electronics, anything mainstream.</li>
               <li><strong>Poshmark / ThredUP</strong> — clothes.</li>
               <li><strong>Facebook Marketplace</strong> — furniture, big items locally (no shipping).</li>
@@ -71,7 +71,7 @@ export default function OnlineThriftStores() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety for local pickups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Meet in PUBLIC place during DAY — bank parking lot, police station "exchange zone".</li>
               <li>Bring a friend.</li>
               <li>Cash only. No checks. No "I&apos;ll Venmo you later."</li>
@@ -84,7 +84,7 @@ export default function OnlineThriftStores() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Donate the rest</h3>
-            <p className="text-sm text-muted-foreground">Anything that wouldn&apos;t sell for $20+ is usually not worth your time. Goodwill, Salvation Army, Habitat ReStore take most things. Get a tax-deductible receipt. Saves time and helps charity. Worth less aggravation than haggling over a $5 item.</p>
+            <p className="text-base text-muted-foreground">Anything that wouldn&apos;t sell for $20+ is usually not worth your time. Goodwill, Salvation Army, Habitat ReStore take most things. Get a tax-deductible receipt. Saves time and helps charity. Worth less aggravation than haggling over a $5 item.</p>
           </CardContent>
         </Card>
       </main>

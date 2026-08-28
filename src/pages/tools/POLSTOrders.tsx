@@ -19,7 +19,7 @@ export default function POLSTOrders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What POLST is</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Physician Orders for Life-Sustaining Treatment.</li>
               <li>Or MOLST (Medical Orders) — same thing different state.</li>
               <li>NOT same as advance directive (which is wishes).</li>
@@ -33,7 +33,7 @@ export default function POLSTOrders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to do POLST</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Diagnosed with serious illness.</li>
               <li>Frail elderly.</li>
               <li>Wouldn&apos;t be surprised if died in next year.</li>
@@ -47,7 +47,7 @@ export default function POLSTOrders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What POLST covers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>CPR</strong> — yes/no if heart stops.</li>
               <li><strong>Hospital transfer</strong> — yes/no.</li>
               <li><strong>Antibiotics</strong> — full treatment, comfort only.</li>
@@ -61,7 +61,7 @@ export default function POLSTOrders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sign with doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Conversation with primary doctor.</li>
               <li>Discuss prognosis, options.</li>
               <li>Family member present often.</li>
@@ -75,7 +75,7 @@ export default function POLSTOrders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After signing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Original goes WITH PATIENT.</li>
               <li>On fridge for EMTs.</li>
               <li>Copy to family.</li>
@@ -90,7 +90,7 @@ export default function POLSTOrders() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Why important</h3>
-            <p className="text-sm text-muted-foreground">Without POLST — EMTs do everything (CPR, ventilator). Often unwanted at end of life. POLST = your wishes followed even if can&apos;t speak. Free at primary care. Major peace of mind for serious illness. polst.org for state forms.</p>
+            <p className="text-base text-muted-foreground">Without POLST — EMTs do everything (CPR, ventilator). Often unwanted at end of life. POLST = your wishes followed even if can&apos;t speak. Free at primary care. Major peace of mind for serious illness. polst.org for state forms.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function SocialMediaPrivacyDeep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Facebook lockdown</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Privacy.</li>
               <li>Future posts: Friends only.</li>
               <li>Past posts: Limit to Friends.</li>
@@ -33,7 +33,7 @@ export default function SocialMediaPrivacyDeep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Instagram private</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Privacy → Private Account.</li>
               <li>Only approved followers see posts.</li>
               <li>Hide location data.</li>
@@ -47,7 +47,7 @@ export default function SocialMediaPrivacyDeep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t post these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Travel plans before/during trip.</li>
               <li>House photos with address.</li>
               <li>Children&apos;s school name.</li>
@@ -61,7 +61,7 @@ export default function SocialMediaPrivacyDeep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">TikTok privacy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Privacy → Private Account.</li>
               <li>Filter Restricted Mode ON.</li>
               <li>Disable comments from strangers.</li>
@@ -75,7 +75,7 @@ export default function SocialMediaPrivacyDeep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After lockdown</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Review monthly.</li>
               <li>Privacy settings change with platform updates.</li>
               <li>Re-lockdown after iPhone updates.</li>
@@ -89,7 +89,7 @@ export default function SocialMediaPrivacyDeep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For grandchildren too</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t post grandkid photos publicly.</li>
               <li>Friends-only posts.</li>
               <li>Predators scan public profiles.</li>
@@ -103,7 +103,7 @@ export default function SocialMediaPrivacyDeep() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">15-minute privacy review</h3>
-            <p className="text-sm text-muted-foreground">Spend 15 minutes locking down social media this weekend. Facebook, Instagram, TikTok — set to private. Hide birth year, phone, address. Review past posts. Restrict who messages you. This single audit reduces senior scam targeting by 80%. Many grandparents post too publicly without realizing risk.</p>
+            <p className="text-base text-muted-foreground">Spend 15 minutes locking down social media this weekend. Facebook, Instagram, TikTok — set to private. Hide birth year, phone, address. Review past posts. Restrict who messages you. This single audit reduces senior scam targeting by 80%. Many grandparents post too publicly without realizing risk.</p>
           </CardContent>
         </Card>
       </main>

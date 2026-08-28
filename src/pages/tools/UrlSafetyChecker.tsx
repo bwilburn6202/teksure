@@ -281,7 +281,7 @@ export default function UrlSafetyChecker() {
                       </div>
                       <div>
                         <p className="font-medium text-sm">{r.label}</p>
-                        <p className="text-sm text-muted-foreground">{r.detail}</p>
+                        <p className="text-base text-muted-foreground">{r.detail}</p>
                       </div>
                     </div>
                   ))}
@@ -297,7 +297,7 @@ export default function UrlSafetyChecker() {
                 <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <p className="font-semibold text-sm mb-1">This is automated analysis only</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     It cannot detect every threat. When in doubt, do not click. Verify by typing the company's official URL directly into your browser.
                   </p>
                 </div>
@@ -310,7 +310,7 @@ export default function UrlSafetyChecker() {
             <Card>
               <CardHeader><CardTitle className="text-base">What this tool checks</CardTitle></CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground">
                   <li className="flex gap-2"><Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" /> HTTPS encryption</li>
                   <li className="flex gap-2"><Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" /> Suspicious top-level domains</li>
                   <li className="flex gap-2"><Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" /> Known URL shorteners</li>
@@ -325,7 +325,7 @@ export default function UrlSafetyChecker() {
             <Card>
               <CardHeader><CardTitle className="text-base">What it cannot detect</CardTitle></CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground">
                   <li className="flex gap-2"><X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" /> Phishing that uses real, hijacked domains</li>
                   <li className="flex gap-2"><X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" /> Malware downloads</li>
                   <li className="flex gap-2"><X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" /> Browser exploits or drive-by installs</li>

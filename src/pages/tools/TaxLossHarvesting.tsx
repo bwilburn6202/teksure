@@ -26,7 +26,7 @@ export default function TaxLossHarvesting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Example</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You sold a stock 2024 for $20K profit (gain).</li>
               <li>Another stock down 20% — $5K loss on paper.</li>
               <li>Sell losing stock → realize $5K loss.</li>
@@ -40,7 +40,7 @@ export default function TaxLossHarvesting() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wash sale rule</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Can&apos;t buy SAME stock within 30 days BEFORE or AFTER sale (60-day window total).</li>
               <li>Disallowed sale loss.</li>
               <li>Solutions:</li>
@@ -54,7 +54,7 @@ export default function TaxLossHarvesting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When it works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You have TAXABLE brokerage (NOT IRA / 401k).</li>
               <li>Some investments have unrealized losses.</li>
               <li>You have either: capital gains to offset, OR working income.</li>
@@ -67,7 +67,7 @@ export default function TaxLossHarvesting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Auto-harvest services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Wealthfront / Betterment</strong> — robo-advisors auto-harvest. 0.25% fee.</li>
               <li><strong>Fidelity / Schwab tax-loss harvesting</strong> — included in some advisor services.</li>
               <li><strong>DIY</strong> — once a year, December review.</li>
@@ -79,7 +79,7 @@ export default function TaxLossHarvesting() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t let tail wag dog</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t sell winners just to "harvest" — pays bigger taxes. Don&apos;t buy crappy investments just because they fit harvesting plan. Tax savings should follow good investing — not drive it.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t sell winners just to "harvest" — pays bigger taxes. Don&apos;t buy crappy investments just because they fit harvesting plan. Tax savings should follow good investing — not drive it.</p>
           </CardContent>
         </Card>
       </main>

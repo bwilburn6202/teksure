@@ -19,7 +19,7 @@ export default function HomeHealthAideFind() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Levels of care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Companion / homemaker</strong> — laundry, light cleaning, errands. $20-30/hr.</li>
               <li><strong>Personal care aide</strong> — bathing, dressing, mobility help. $25-35/hr.</li>
               <li><strong>Home health aide (HHA)</strong> — same + simple medical tasks (vitals, meds). $25-40/hr.</li>
@@ -32,7 +32,7 @@ export default function HomeHealthAideFind() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Agency vs private hire</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Agency (Visiting Angels, Home Instead, BrightStar)</strong> — $30-45/hr. Background-checked. Backup if no-shows. Insured.</li>
               <li><strong>Private (Care.com, word of mouth)</strong> — $20-30/hr. You background-check + manage. Cheaper but more work.</li>
               <li><strong>Recommendation</strong> — agency for shorter-term post-surgery. Private for ongoing trusted relationship.</li>
@@ -43,7 +43,7 @@ export default function HomeHealthAideFind() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance coverage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Medicare</strong> — covers home health aide ONLY if homebound + need skilled nursing/PT too. Up to 60 days per spell.</li>
               <li><strong>Medicare Advantage</strong> — sometimes covers companion care.</li>
               <li><strong>Medicaid</strong> — covers more. State-by-state varies.</li>
@@ -57,7 +57,7 @@ export default function HomeHealthAideFind() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vet your aide</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>References — call 3.</li>
               <li>Background check (agency does, you must for private).</li>
               <li>Trial period — 1-2 weeks.</li>
@@ -72,7 +72,7 @@ export default function HomeHealthAideFind() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free / cheap respite + companion</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Faith in Action / Stephen Ministry</strong> — volunteer companions through churches.</li>
               <li><strong>Senior Companion (AmeriCorps)</strong> — federal volunteer program.</li>
               <li><strong>Friendly Visitor</strong> programs through AAA.</li>
@@ -85,7 +85,7 @@ export default function HomeHealthAideFind() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pay aide fairly</h3>
-            <p className="text-sm text-muted-foreground">Best home health aides last years if treated well. $25/hr + flexibility + holiday bonus + dignity = retention. Agencies often pay aides $15/hr + charge $35/hr — privately you save AND aide earns more.</p>
+            <p className="text-base text-muted-foreground">Best home health aides last years if treated well. $25/hr + flexibility + holiday bonus + dignity = retention. Agencies often pay aides $15/hr + charge $35/hr — privately you save AND aide earns more.</p>
           </CardContent>
         </Card>
       </main>

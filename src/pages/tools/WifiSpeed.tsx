@@ -71,7 +71,7 @@ const WifiSpeed = () => {
                 <CardContent className="pt-5">
                   <span className="text-2xl mb-2 block">{tip.emoji}</span>
                   <h3 className="font-semibold text-sm mb-1">{tip.title}</h3>
-                  <p className="text-sm text-muted-foreground">{tip.desc}</p>
+                  <p className="text-base text-muted-foreground">{tip.desc}</p>
                 </CardContent>
               </Card>
             </div>

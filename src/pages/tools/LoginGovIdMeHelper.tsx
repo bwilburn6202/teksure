@@ -28,7 +28,7 @@ export default function LoginGovIdMeHelper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Which one do you need?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Social Security (SSA):</strong> Both work. Login.gov is simpler. Set up at <strong>ssa.gov/myaccount</strong>.</li>
               <li><strong>IRS (your tax records):</strong> ID.me only. <strong>irs.gov</strong>.</li>
               <li><strong>Medicare:</strong> Login.gov works. <strong>medicare.gov</strong>.</li>
@@ -43,7 +43,7 @@ export default function LoginGovIdMeHelper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up Login.gov</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>login.gov</strong>.</li>
               <li>Click "Create an account".</li>
               <li>Type your email — use one you check daily.</li>
@@ -58,7 +58,7 @@ export default function LoginGovIdMeHelper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up ID.me (more steps — needed for IRS)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>id.me</strong>.</li>
               <li>Click "Create an ID.me account".</li>
               <li>Email + password + confirm.</li>
@@ -95,7 +95,7 @@ export default function LoginGovIdMeHelper() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you get stuck</h3>
-            <p className="text-sm text-muted-foreground">Both services have free phone support. Login.gov: 1-844-875-6446. ID.me: open a chat at help.id.me. They're patient with first-time users.</p>
+            <p className="text-base text-muted-foreground">Both services have free phone support. Login.gov: 1-844-875-6446. ID.me: open a chat at help.id.me. They're patient with first-time users.</p>
           </CardContent>
         </Card>
       </main>

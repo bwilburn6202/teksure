@@ -276,7 +276,7 @@ export default function IdTheftRecovery() {
                         <Card key={i} className="border-border">
                           <CardContent className="p-4">
                             <p className="font-semibold text-sm mb-1">{i + 1}. {step.title}</p>
-                            <p className="text-sm text-muted-foreground">{step.detail}</p>
+                            <p className="text-base text-muted-foreground">{step.detail}</p>
                             {step.callOut && (
                               <p className="text-xs mt-2 p-2 rounded bg-muted/40 border border-border">
                                 <strong>Tip:</strong> {step.callOut}

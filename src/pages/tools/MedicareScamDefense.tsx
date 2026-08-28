@@ -19,7 +19,7 @@ export default function MedicareScamDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RULE: Medicare NEVER calls you</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medicare doesn&apos;t cold-call.</li>
               <li>Medicare doesn&apos;t door-knock.</li>
               <li>Medicare doesn&apos;t ask for SSN over phone.</li>
@@ -32,7 +32,7 @@ export default function MedicareScamDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>&quot;New Medicare card&quot;</strong> — asks for SSN. Fake.</li>
               <li><strong>Free knee braces / back braces</strong> — bills Medicare $1,000+ for nothing.</li>
               <li><strong>DNA test kits</strong> — &quot;free cancer screening,&quot; bills Medicare.</li>
@@ -47,7 +47,7 @@ export default function MedicareScamDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Protect your Medicare number</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Treat like credit card number.</li>
               <li>Only doctor + Medicare-approved providers need it.</li>
               <li>Never give to phone callers, door knockers, &quot;free testing.&quot;</li>
@@ -61,7 +61,7 @@ export default function MedicareScamDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If contacted</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hang up. No conversation needed.</li>
               <li>Don&apos;t say &quot;yes&quot; (some record + use voice).</li>
               <li>Don&apos;t press numbers.</li>
@@ -74,7 +74,7 @@ export default function MedicareScamDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Report fraud</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>1-800-MEDICARE</strong> (1-800-633-4227) — official line.</li>
               <li><strong>SMP (Senior Medicare Patrol)</strong> — smpresource.org. Free.</li>
               <li><strong>HHS Office of Inspector General</strong> — oig.hhs.gov/fraud.</li>
@@ -87,7 +87,7 @@ export default function MedicareScamDefense() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help: SHIP</h3>
-            <p className="text-sm text-muted-foreground"><strong>SHIP (State Health Insurance Assistance Program)</strong> — FREE counselors in every state. shiphelp.org. Help compare plans, fight bills, report scams. Better than ANY salesperson because they don&apos;t earn commission.</p>
+            <p className="text-base text-muted-foreground"><strong>SHIP (State Health Insurance Assistance Program)</strong> — FREE counselors in every state. shiphelp.org. Help compare plans, fight bills, report scams. Better than ANY salesperson because they don&apos;t earn commission.</p>
           </CardContent>
         </Card>
       </main>

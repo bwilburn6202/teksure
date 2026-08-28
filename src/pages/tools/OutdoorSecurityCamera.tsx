@@ -34,7 +34,7 @@ export default function OutdoorSecurityCamera() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function OutdoorSecurityCamera() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Battery vs wired</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Battery</strong> — easy install, can place anywhere. Charge every 3-12 months.</li>
               <li><strong>Solar</strong> — battery + small solar panel. Never charge.</li>
               <li><strong>Plug-in</strong> — needs outlet nearby. 24/7 recording possible.</li>
@@ -80,7 +80,7 @@ export default function OutdoorSecurityCamera() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — visible cameras are the best deterrent</h3>
-            <p className="text-sm text-muted-foreground">Studies show even FAKE security cameras reduce break-ins. Real ones with visible recording lights are best. Mount where they\'re obvious — under eaves at 8-10 feet up.</p>
+            <p className="text-base text-muted-foreground">Studies show even FAKE security cameras reduce break-ins. Real ones with visible recording lights are best. Mount where they\'re obvious — under eaves at 8-10 feet up.</p>
           </CardContent>
         </Card>
       </main>

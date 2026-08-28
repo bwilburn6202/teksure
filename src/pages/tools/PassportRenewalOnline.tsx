@@ -33,7 +33,7 @@ export default function PassportRenewalOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Standard mail-in (most common)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Download <strong>DS-82 form</strong> at travel.state.gov. Fill it out.</li>
               <li>Get a 2x2" passport photo (apps below or pharmacy).</li>
               <li>Mail in: form + old passport + photo + check ($130 in 2025).</li>
@@ -46,7 +46,7 @@ export default function PassportRenewalOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Passport photo apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Passport Photo Online</strong> — $7-9. Take selfie at home, app crops to spec, mails or emails.</li>
               <li><strong>Persofoto</strong> — similar, ~$10.</li>
               <li><strong>iVisa Photos</strong> — $8.</li>
@@ -89,7 +89,7 @@ export default function PassportRenewalOnline() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When to renew</h3>
-            <p className="text-sm text-muted-foreground">Many countries require 6 months validity AT the time of travel. So if your passport expires in October and you\'re flying to Europe in May, you\'re cutting it close. Renew when 9-12 months remain.</p>
+            <p className="text-base text-muted-foreground">Many countries require 6 months validity AT the time of travel. So if your passport expires in October and you\'re flying to Europe in May, you\'re cutting it close. Renew when 9-12 months remain.</p>
           </CardContent>
         </Card>
       </main>

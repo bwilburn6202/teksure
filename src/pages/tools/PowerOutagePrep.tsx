@@ -19,7 +19,7 @@ export default function PowerOutagePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Register with utility company</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Call utility — ask about Medical Priority list.</li>
               <li>Free service for medical equipment users.</li>
               <li>Oxygen concentrators, CPAP, dialysis, etc.</li>
@@ -33,7 +33,7 @@ export default function PowerOutagePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Backup power options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Portable power station — Jackery, EcoFlow ($300+).</li>
               <li>Charges phones, runs CPAP, lights.</li>
               <li>Solar panels can recharge them.</li>
@@ -47,7 +47,7 @@ export default function PowerOutagePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Phone + communication</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Keep phone fully charged when storms approach.</li>
               <li>2+ portable chargers (power banks).</li>
               <li>Hand-crank emergency radio with phone charger.</li>
@@ -61,7 +61,7 @@ export default function PowerOutagePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Heat + cold safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cold: layer clothing, blankets, hats indoors.</li>
               <li>Never use grill or generator indoors — CO poisoning.</li>
               <li>Heat: open windows nighttime, close + shade by day.</li>
@@ -75,7 +75,7 @@ export default function PowerOutagePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Food safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Keep refrigerator + freezer closed as long as possible.</li>
               <li>Refrigerator stays cold ~4 hours unopened.</li>
               <li>Freezer stays cold ~48 hours full, ~24 hours half.</li>
@@ -89,7 +89,7 @@ export default function PowerOutagePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to leave home</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Outage extending beyond 24 hours.</li>
               <li>Home temperature unsafe (too hot/cold).</li>
               <li>Medical equipment can&apos;t function.</li>
@@ -103,7 +103,7 @@ export default function PowerOutagePrep() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get on the medical priority list</h3>
-            <p className="text-sm text-muted-foreground">If you use any medical equipment that requires electricity — CPAP, oxygen concentrator, nebulizer, dialysis machine, electric wheelchair — call your electric utility today and ask about their medical priority program. It&apos;s free, takes 10 minutes to sign up, and ensures you&apos;re among the first restored after outages. Your doctor signs a form. This is one of the most important calls a senior with medical needs can make.</p>
+            <p className="text-base text-muted-foreground">If you use any medical equipment that requires electricity — CPAP, oxygen concentrator, nebulizer, dialysis machine, electric wheelchair — call your electric utility today and ask about their medical priority program. It&apos;s free, takes 10 minutes to sign up, and ensures you&apos;re among the first restored after outages. Your doctor signs a form. This is one of the most important calls a senior with medical needs can make.</p>
           </CardContent>
         </Card>
       </main>

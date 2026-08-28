@@ -19,7 +19,7 @@ export default function SugarReductionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How much added sugar</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heart Assn limit: 25g/day (women), 36g/day (men).</li>
               <li>Average American: 75g/day.</li>
               <li>1 can of regular soda = 39g (already over).</li>
@@ -32,7 +32,7 @@ export default function SugarReductionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hidden sugar sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Flavored yogurt</strong> — 20-30g per cup. Choose plain.</li>
               <li><strong>Granola bars</strong> — 12-20g.</li>
               <li><strong>Pasta sauce</strong> — 10g per ½ cup.</li>
@@ -47,7 +47,7 @@ export default function SugarReductionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">55+ sugar names on labels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cane sugar, brown sugar, raw sugar.</li>
               <li>High fructose corn syrup, corn syrup.</li>
               <li>Dextrose, fructose, glucose, sucrose, maltose.</li>
@@ -61,7 +61,7 @@ export default function SugarReductionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy swaps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plain Greek yogurt + berries instead of fruit-on-the-bottom.</li>
               <li>Sparkling water instead of soda.</li>
               <li>Whole fruit instead of fruit juice.</li>
@@ -75,7 +75,7 @@ export default function SugarReductionGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Diabetes risk</h3>
-            <p className="text-sm text-muted-foreground">25%+ of seniors 65+ have diabetes. Another 50% have prediabetes. Cutting added sugar is the #1 preventive step. Free A1C blood test through Medicare annual wellness visit. Catch it early.</p>
+            <p className="text-base text-muted-foreground">25%+ of seniors 65+ have diabetes. Another 50% have prediabetes. Cutting added sugar is the #1 preventive step. Free A1C blood test through Medicare annual wellness visit. Catch it early.</p>
           </CardContent>
         </Card>
       </main>

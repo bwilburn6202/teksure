@@ -19,7 +19,7 @@ export default function VPNForSeniorsExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What VPN does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Encrypts your internet traffic.</li>
               <li>Hides your IP address (location).</li>
               <li>Protects on public WiFi.</li>
@@ -33,7 +33,7 @@ export default function VPNForSeniorsExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When seniors need one</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Using public WiFi (hotels, cafes, airports).</li>
               <li>Doing banking on hotel WiFi.</li>
               <li>Traveling abroad — access US streaming.</li>
@@ -47,7 +47,7 @@ export default function VPNForSeniorsExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best VPN services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NordVPN — $5/month, most popular.</li>
               <li>ExpressVPN — $8/month, premium.</li>
               <li>Surfshark — $2.50/month, budget.</li>
@@ -61,7 +61,7 @@ export default function VPNForSeniorsExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup is easy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Subscribe to one — get email + password.</li>
               <li>Download app on phone, computer, tablet.</li>
               <li>Sign in.</li>
@@ -75,7 +75,7 @@ export default function VPNForSeniorsExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Travel use case</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VPN at hotel — protects banking + email.</li>
               <li>VPN abroad — watch Netflix US library.</li>
               <li>VPN — access AmazonPrime + Hulu while traveling.</li>
@@ -89,7 +89,7 @@ export default function VPNForSeniorsExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common myths</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VPN doesn&apos;t protect from viruses (need antivirus).</li>
               <li>VPN doesn&apos;t make you completely anonymous.</li>
               <li>VPN doesn&apos;t prevent phishing scams.</li>
@@ -103,7 +103,7 @@ export default function VPNForSeniorsExplained() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">NordVPN for senior travelers</h3>
-            <p className="text-sm text-muted-foreground">For most seniors, NordVPN at $5/month is a good choice. Easy app, large server network, reliable. Use it on hotel WiFi, when traveling abroad, or to access streaming. Skip if you only browse from home — your home network is usually fine without VPN. Don&apos;t pay for VPN if you don&apos;t actually need its specific features.</p>
+            <p className="text-base text-muted-foreground">For most seniors, NordVPN at $5/month is a good choice. Easy app, large server network, reliable. Use it on hotel WiFi, when traveling abroad, or to access streaming. Skip if you only browse from home — your home network is usually fine without VPN. Don&apos;t pay for VPN if you don&apos;t actually need its specific features.</p>
           </CardContent>
         </Card>
       </main>

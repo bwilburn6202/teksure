@@ -33,7 +33,7 @@ export default function CatCareApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function CatCareApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart cat tech</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Litter Robot</strong> — auto-cleans ($600).</li>
               <li><strong>Petlibro feeders</strong> — automatic.</li>
               <li><strong>Petcube cam</strong> — watch from phone.</li>
@@ -56,7 +56,7 @@ export default function CatCareApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior cat health</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Watch weight loss — first sign illness.</li>
               <li>Note water drinking changes.</li>
               <li>Check litter box habits.</li>
@@ -70,7 +70,7 @@ export default function CatCareApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cat behavior signs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hiding more = ill / anxious.</li>
               <li>Aggression = pain.</li>
               <li>Excessive grooming = stress.</li>
@@ -84,7 +84,7 @@ export default function CatCareApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Money-savers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Chewy auto-ship — 5% off + free over $49.</li>
               <li>Costco Kirkland Cat Food — quality + cheap.</li>
               <li>Pet insurance starts $15/mo.</li>
@@ -98,7 +98,7 @@ export default function CatCareApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online vet help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Vetster</strong> — video vet $40-60.</li>
               <li><strong>Pawp</strong> — $24/mo unlimited.</li>
               <li><strong>FirstVet</strong> — text-based.</li>
@@ -112,7 +112,7 @@ export default function CatCareApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Fostering for seniors</h3>
-            <p className="text-sm text-muted-foreground">Senior cats need senior owners — perfect fit. Local shelter foster programs free food + medical care. Senior cats calm + cuddly. Companion benefits seniors mentally + physically. Adopt-a-Cat month — June. Save a life + gain a friend.</p>
+            <p className="text-base text-muted-foreground">Senior cats need senior owners — perfect fit. Local shelter foster programs free food + medical care. Senior cats calm + cuddly. Companion benefits seniors mentally + physically. Adopt-a-Cat month — June. Save a life + gain a friend.</p>
           </CardContent>
         </Card>
       </main>

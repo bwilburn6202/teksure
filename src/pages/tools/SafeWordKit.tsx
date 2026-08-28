@@ -33,7 +33,7 @@ export default function SafeWordKit() {
               <Volume2 className="w-6 h-6 text-yellow-700 shrink-0 dark:text-yellow-400" />
               <div>
                 <h2 className="font-bold mb-1">Why you need this</h2>
-                <p className="text-sm text-muted-foreground">Scammers now use AI to copy a grandchild's or family member's voice from social media videos. They call crying, claiming a car accident or arrest, asking for money. A safe-word — a private word only your family knows — proves who's really on the line.</p>
+                <p className="text-base text-muted-foreground">Scammers now use AI to copy a grandchild's or family member's voice from social media videos. They call crying, claiming a car accident or arrest, asking for money. A safe-word — a private word only your family knows — proves who's really on the line.</p>
               </div>
             </div>
           </CardContent>
@@ -68,7 +68,7 @@ export default function SafeWordKit() {
               <p className="text-5xl font-bold text-primary print:text-black mb-3">{word}</p>
               {family && <p className="text-sm text-muted-foreground print:text-black">Known by: {family}</p>}
             </div>
-            <div className="border-t pt-4 mt-4 space-y-2 text-sm">
+            <div className="border-t pt-4 mt-4 space-y-2 text-base">
               <p className="font-bold flex items-center gap-2"><Phone className="w-4 h-4" />If someone calls in a panic asking for money:</p>
               <ol className="list-decimal pl-5 space-y-1 text-muted-foreground print:text-black">
                 <li>Stay calm. Real emergencies survive a 2-minute pause.</li>

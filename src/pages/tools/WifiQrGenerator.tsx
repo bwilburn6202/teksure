@@ -331,7 +331,7 @@ export default function WifiQrGenerator() {
                   <Label htmlFor="hidden" className="text-base font-semibold cursor-pointer">
                     This is a hidden network
                   </Label>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Only check this if your WiFi doesn't show up in the normal list — most
                     home networks aren't hidden.
                   </p>

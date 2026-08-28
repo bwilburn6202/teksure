@@ -19,7 +19,7 @@ export default function TeleDentistry() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When teledentistry helps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Toothache started — is it an emergency?</li>
               <li>Second opinion on a $3,000 treatment plan.</li>
               <li>Antibiotic / pain prescription for sudden infection.</li>
@@ -33,7 +33,7 @@ export default function TeleDentistry() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Services to try</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>The TeleDentists</strong> — $45/visit, available 24/7. Real licensed dentists.</li>
               <li><strong>Toothpic</strong> — $40-90 second-opinion service. Send photos, dentist reviews.</li>
               <li><strong>Denteractive</strong> — $50-100 per visit.</li>
@@ -46,7 +46,7 @@ export default function TeleDentistry() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free / cheap dental care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Dental schools</strong> — students treat at 30-50% off. Search "[your state] dental school clinic".</li>
               <li><strong>Federally Qualified Health Centers (FQHC)</strong> — sliding-scale fees, hrsa.gov.</li>
               <li><strong>Mission of Mercy events</strong> — free dental clinics annually in many cities.</li>
@@ -59,7 +59,7 @@ export default function TeleDentistry() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When you MUST go in person</h3>
-            <p className="text-sm text-muted-foreground">Severe pain that doesn&apos;t respond to ibuprofen, swelling spreading to face/jaw, knocked-out tooth, broken tooth showing nerve, dental abscess (lump on gum). Don&apos;t teledentistry these — go to ER or emergency dentist same day.</p>
+            <p className="text-base text-muted-foreground">Severe pain that doesn&apos;t respond to ibuprofen, swelling spreading to face/jaw, knocked-out tooth, broken tooth showing nerve, dental abscess (lump on gum). Don&apos;t teledentistry these — go to ER or emergency dentist same day.</p>
           </CardContent>
         </Card>
       </main>

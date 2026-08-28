@@ -19,7 +19,7 @@ export default function AIScamProtection() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice cloning scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Scammers can clone voice from 3 seconds of audio.</li>
               <li>&quot;Grandma, I&apos;m in jail, send bail money!&quot; — sounds EXACTLY like grandkid.</li>
               <li>From social media voice posts, voicemails.</li>
@@ -33,7 +33,7 @@ export default function AIScamProtection() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Deepfake video scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fake CEO videos pushing investment scams.</li>
               <li>Celebrity endorsements — Taylor Swift, Tom Hanks faked.</li>
               <li>Romance scams using AI faces — fake love interests.</li>
@@ -47,7 +47,7 @@ export default function AIScamProtection() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AI-generated phishing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Perfect grammar (no more typos).</li>
               <li>Highly personalized (mention real details).</li>
               <li>Creates urgency / emotional pressure.</li>
@@ -61,7 +61,7 @@ export default function AIScamProtection() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fake AI services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;ChatGPT Premium&quot; apps — most fake.</li>
               <li>Real ChatGPT: chat.openai.com.</li>
               <li>Real Claude: claude.ai.</li>
@@ -76,7 +76,7 @@ export default function AIScamProtection() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Family password (do this NOW)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick a word ALL family knows.</li>
               <li>Something inside-joke, never on social media.</li>
               <li>Use ONLY in emergency to verify identity.</li>
@@ -90,7 +90,7 @@ export default function AIScamProtection() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When in doubt</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hang up. Call back on official number.</li>
               <li>Tell a friend before sending money.</li>
               <li>24-hour rule — sleep on big decisions.</li>
@@ -104,7 +104,7 @@ export default function AIScamProtection() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground"><strong>AARP Fraud Watch helpline</strong> — 1-877-908-3360. Free counselors. Talk through suspicious calls. <strong>FTC report</strong> — reportfraud.ftc.gov. <strong>FBI IC3</strong> — ic3.gov for online crime. Your bank can also reverse some scam payments if reported within 24-48 hours.</p>
+            <p className="text-base text-muted-foreground"><strong>AARP Fraud Watch helpline</strong> — 1-877-908-3360. Free counselors. Talk through suspicious calls. <strong>FTC report</strong> — reportfraud.ftc.gov. <strong>FBI IC3</strong> — ic3.gov for online crime. Your bank can also reverse some scam payments if reported within 24-48 hours.</p>
           </CardContent>
         </Card>
       </main>

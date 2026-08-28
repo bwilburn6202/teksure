@@ -984,7 +984,7 @@ export default function DigitalWillTemplate() {
               <BookOpen className="h-6 w-6 text-indigo-600 shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg">Digital Estate Planning Guide</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   The full plain-English explainer this template comes from.
                 </p>
               </div>
@@ -996,7 +996,7 @@ export default function DigitalWillTemplate() {
               <FileText className="h-6 w-6 text-indigo-600 shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg">Password Manager Picker</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   The safe place to keep the passwords that don't belong here.
                 </p>
               </div>
@@ -1008,7 +1008,7 @@ export default function DigitalWillTemplate() {
               <FileSignature className="h-6 w-6 text-indigo-600 shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg">Printable Checklists</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   "My Loved One Passed Away" and "Family Digital Legacy Plan."
                 </p>
               </div>

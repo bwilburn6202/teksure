@@ -33,7 +33,7 @@ export default function ShavingForSeniors() {
                   <span className="text-sm font-semibold text-primary">{r.cost}</span>
                 </div>
                 <p className="text-sm">{r.best}</p>
-                <p className="text-sm text-muted-foreground">{r.good}</p>
+                <p className="text-base text-muted-foreground">{r.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function ShavingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: Braun Series 9</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most gentle on aging skin.</li>
               <li>Self-cleaning station.</li>
               <li>Wet + dry use.</li>
@@ -56,7 +56,7 @@ export default function ShavingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pre-shave</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wash face — opens pores.</li>
               <li>Pre-shave oil for sensitive skin.</li>
               <li>Warm towel 1 minute.</li>
@@ -70,7 +70,7 @@ export default function ShavingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">During shave</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Shave with grain (not against).</li>
               <li>Light pressure — let blade work.</li>
               <li>Stretch skin gently.</li>
@@ -84,7 +84,7 @@ export default function ShavingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After shave</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cool water rinse.</li>
               <li>Aftershave balm (alcohol-free).</li>
               <li>Moisturize daily.</li>
@@ -98,7 +98,7 @@ export default function ShavingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior beard option</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Beards saving time / sensitive skin.</li>
               <li>Trim weekly (not full shave).</li>
               <li>Beard oil for softness.</li>
@@ -112,7 +112,7 @@ export default function ShavingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Skin cancer awareness</h3>
-            <p className="text-sm text-muted-foreground">Shaving daily = up-close skin examination. Notice new spots, asymmetric moles, color changes. See dermatologist annually 50+. SPF on face + ears critical. Skin cancer common after years of sun. Shaving routine = early detection opportunity. Self-exams save lives.</p>
+            <p className="text-base text-muted-foreground">Shaving daily = up-close skin examination. Notice new spots, asymmetric moles, color changes. See dermatologist annually 50+. SPF on face + ears critical. Skin cancer common after years of sun. Shaving routine = early detection opportunity. Self-exams save lives.</p>
           </CardContent>
         </Card>
       </main>

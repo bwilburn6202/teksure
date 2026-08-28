@@ -19,7 +19,7 @@ export default function TurboTaxForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pricing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free Edition — simple returns only.</li>
               <li>Deluxe — $69, more deductions.</li>
               <li>Premier — $99, investments + rental.</li>
@@ -33,7 +33,7 @@ export default function TurboTaxForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why so popular?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>User-friendly interview style.</li>
               <li>Imports prior year automatically.</li>
               <li>Imports W-2 forms from many employers.</li>
@@ -47,7 +47,7 @@ export default function TurboTaxForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free options most seniors miss</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AARP Tax-Aide — completely FREE.</li>
               <li>VITA — free for income under ~$67K.</li>
               <li>IRS Free File — free if income under $84K.</li>
@@ -61,7 +61,7 @@ export default function TurboTaxForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When TurboTax worth it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Self-employed.</li>
               <li>Multiple rental properties.</li>
               <li>Complex investments.</li>
@@ -75,7 +75,7 @@ export default function TurboTaxForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheaper alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FreeTaxUSA — free federal, $15 state.</li>
               <li>Cash App Taxes — completely free.</li>
               <li>TaxAct — cheaper than TurboTax.</li>
@@ -89,7 +89,7 @@ export default function TurboTaxForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific deductions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Higher standard deduction at 65+.</li>
               <li>Medical expense threshold lower.</li>
               <li>Credit for Elderly + Disabled.</li>
@@ -103,7 +103,7 @@ export default function TurboTaxForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">AARP Tax-Aide first</h3>
-            <p className="text-sm text-muted-foreground">Before paying TurboTax $70+, check AARP Tax-Aide near you (AARP.org/taxaide). Free volunteer tax preparation specifically for seniors. They handle most senior tax situations including Social Security, pensions, IRAs. Many seniors who used TurboTax for years switch to free Tax-Aide and save hundreds yearly.</p>
+            <p className="text-base text-muted-foreground">Before paying TurboTax $70+, check AARP Tax-Aide near you (AARP.org/taxaide). Free volunteer tax preparation specifically for seniors. They handle most senior tax situations including Social Security, pensions, IRAs. Many seniors who used TurboTax for years switch to free Tax-Aide and save hundreds yearly.</p>
           </CardContent>
         </Card>
       </main>

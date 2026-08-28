@@ -19,7 +19,7 @@ export default function AloeCareCaregivingApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What makes it different</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medical alert + caregiver coordination.</li>
               <li>Family app shows senior&apos;s activity.</li>
               <li>Voice-activated — no button to press.</li>
@@ -33,7 +33,7 @@ export default function AloeCareCaregivingApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mobile Companion — $40/month.</li>
               <li>Smart Hub Total Care — $50/month.</li>
               <li>Equipment $99–$300 one-time.</li>
@@ -47,7 +47,7 @@ export default function AloeCareCaregivingApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Family caregiver app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>See parent&apos;s motion (activity).</li>
               <li>Get alerts for unusual patterns.</li>
               <li>Multiple family members access same dashboard.</li>
@@ -61,7 +61,7 @@ export default function AloeCareCaregivingApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice activation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Say &quot;help, help&quot; — connects to monitoring.</li>
               <li>No need to press button.</li>
               <li>Works if you can&apos;t reach a button.</li>
@@ -75,7 +75,7 @@ export default function AloeCareCaregivingApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other caregiver-focused options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lively (formerly GreatCall).</li>
               <li>CarePredict — wearable activity tracker.</li>
               <li>SilverShield — affordable family monitoring.</li>
@@ -89,7 +89,7 @@ export default function AloeCareCaregivingApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for these situations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Multiple adult children sharing care.</li>
               <li>Long-distance caregiving.</li>
               <li>Senior who refuses to wear pendant.</li>
@@ -103,7 +103,7 @@ export default function AloeCareCaregivingApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If your parent refuses pendant</h3>
-            <p className="text-sm text-muted-foreground">Many seniors refuse to wear medical alert pendants. Aloe Care&apos;s voice-activated &quot;help, help&quot; option works without any wearable. Just say it, monitor responds. Especially helpful for proud seniors who view pendants as making them look frail. The caregiver coordination features also help adult children worried from afar without daily check-in calls.</p>
+            <p className="text-base text-muted-foreground">Many seniors refuse to wear medical alert pendants. Aloe Care&apos;s voice-activated &quot;help, help&quot; option works without any wearable. Just say it, monitor responds. Especially helpful for proud seniors who view pendants as making them look frail. The caregiver coordination features also help adult children worried from afar without daily check-in calls.</p>
           </CardContent>
         </Card>
       </main>

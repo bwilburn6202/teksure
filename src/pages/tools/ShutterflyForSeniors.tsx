@@ -19,7 +19,7 @@ export default function ShutterflyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can make</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photo prints — 4x6, 5x7, 8x10.</li>
               <li>Photo books — hardcover + softcover.</li>
               <li>Holiday cards — Christmas, Hanukkah, Easter.</li>
@@ -33,7 +33,7 @@ export default function ShutterflyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pricing strategy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Always wait for a sale — they happen weekly.</li>
               <li>50% off coupons common.</li>
               <li>Often free 4x6 prints offers.</li>
@@ -47,7 +47,7 @@ export default function ShutterflyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Holiday card workflow</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick design (hundreds of templates).</li>
               <li>Upload family photo.</li>
               <li>Add text — names, year.</li>
@@ -61,7 +61,7 @@ export default function ShutterflyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photo book annual tradition</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Make book of each year&apos;s photos.</li>
               <li>50–80 best photos per year.</li>
               <li>Include captions + dates.</li>
@@ -75,7 +75,7 @@ export default function ShutterflyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free Shutterfly photo storage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free unlimited photo storage.</li>
               <li>Backup phone photos automatically.</li>
               <li>Then easy to make products.</li>
@@ -89,7 +89,7 @@ export default function ShutterflyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other photo printers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mixbook — higher-end photo books.</li>
               <li>Snapfish — cheaper than Shutterfly.</li>
               <li>Walgreens — same-day prints.</li>
@@ -103,7 +103,7 @@ export default function ShutterflyForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Annual photo book = best legacy</h3>
-            <p className="text-sm text-muted-foreground">Every January, make a Shutterfly photo book of the previous year. Include the best 50 photos from family events, vacations, holidays, everyday moments. Wait for 50% off promo. After 10 years you have a complete photo library on shelves. Future generations will treasure these books — far more than thousands of unsorted phone photos.</p>
+            <p className="text-base text-muted-foreground">Every January, make a Shutterfly photo book of the previous year. Include the best 50 photos from family events, vacations, holidays, everyday moments. Wait for 50% off promo. After 10 years you have a complete photo library on shelves. Future generations will treasure these books — far more than thousands of unsorted phone photos.</p>
           </CardContent>
         </Card>
       </main>

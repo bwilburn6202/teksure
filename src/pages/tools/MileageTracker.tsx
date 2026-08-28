@@ -46,7 +46,7 @@ export default function MileageTracker() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -55,7 +55,7 @@ export default function MileageTracker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to track for taxes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Date</strong> of trip.</li>
               <li><strong>Starting and ending location</strong>.</li>
               <li><strong>Miles driven</strong>.</li>
@@ -76,7 +76,7 @@ export default function MileageTracker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best free path</h3>
-            <p className="text-sm text-muted-foreground"><strong>Stride</strong> for gig drivers. <strong>Notebook + monthly Google Maps history printout</strong> for occasional. <strong>MileIQ free</strong> if 40 trips/month is enough.</p>
+            <p className="text-base text-muted-foreground"><strong>Stride</strong> for gig drivers. <strong>Notebook + monthly Google Maps history printout</strong> for occasional. <strong>MileIQ free</strong> if 40 trips/month is enough.</p>
           </CardContent>
         </Card>
       </main>

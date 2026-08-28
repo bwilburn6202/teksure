@@ -69,7 +69,7 @@ export default function FreeStreamingServices() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — start with The Roku Channel</h3>
-            <p className="text-sm text-muted-foreground">If you have a Roku, The Roku Channel is already on your home screen. Click it — there are 500+ free live channels and thousands of free movies. Many people don't realize it's there.</p>
+            <p className="text-base text-muted-foreground">If you have a Roku, The Roku Channel is already on your home screen. Click it — there are 500+ free live channels and thousands of free movies. Many people don't realize it's there.</p>
           </CardContent>
         </Card>
       </main>

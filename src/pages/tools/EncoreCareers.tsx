@@ -26,7 +26,7 @@ export default function EncoreCareers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Popular encore paths</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Teaching</strong> — substitute → full-time teacher. Many states fast-track 2nd-career.</li>
               <li><strong>Healthcare</strong> — Certified Nursing Assistant, Phlebotomist, Medical Assistant. 6-12 month training.</li>
               <li><strong>Nonprofit</strong> — your career skills + new mission.</li>
@@ -42,7 +42,7 @@ export default function EncoreCareers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free / cheap retraining</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Senior Community Service Employment Program (SCSEP)</strong> — federal. Free training + paid position 55+.</li>
               <li><strong>Coursera / edX</strong> — university certificates $40-200.</li>
               <li><strong>Community college</strong> — many free for seniors. CNA programs commonly $500-2,000.</li>
@@ -55,7 +55,7 @@ export default function EncoreCareers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Encore.org</strong> — research + community.</li>
               <li><strong>Coming of Age</strong> — local programs.</li>
               <li><strong>AARP Encore</strong> — articles + job board.</li>
@@ -68,7 +68,7 @@ export default function EncoreCareers() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">It works</h3>
-            <p className="text-sm text-muted-foreground">9+ million Americans are in encore careers right now. Average length: 8-11 years. Reported life satisfaction higher than pre-retirement. Most don&apos;t need full income — supplements pension/SS.</p>
+            <p className="text-base text-muted-foreground">9+ million Americans are in encore careers right now. Average length: 8-11 years. Reported life satisfaction higher than pre-retirement. Most don&apos;t need full income — supplements pension/SS.</p>
           </CardContent>
         </Card>
       </main>

@@ -33,7 +33,7 @@ export default function SudokuApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SudokuApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Brain benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Logic + pattern recognition.</li>
               <li>Working memory training.</li>
               <li>Patience + focus.</li>
@@ -56,7 +56,7 @@ export default function SudokuApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other puzzle apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Word Search</strong> — relaxing, pattern recognition.</li>
               <li><strong>Crosswords</strong> — see /tools/crossword-apps.</li>
               <li><strong>Mahjong</strong> — visual tile matching.</li>
@@ -70,7 +70,7 @@ export default function SudokuApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best ROI puzzle</h3>
-            <p className="text-sm text-muted-foreground">NYT Games subscription ($5/mo) gets Sudoku + Wordle + Spelling Bee + Mini Crossword + Connections + full crossword. 5+ daily puzzles. Best $5 senior brain investment.</p>
+            <p className="text-base text-muted-foreground">NYT Games subscription ($5/mo) gets Sudoku + Wordle + Spelling Bee + Mini Crossword + Connections + full crossword. 5+ daily puzzles. Best $5 senior brain investment.</p>
           </CardContent>
         </Card>
       </main>

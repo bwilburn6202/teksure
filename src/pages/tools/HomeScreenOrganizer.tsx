@@ -117,7 +117,7 @@ export default function HomeScreenOrganizer() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Photos of your family on the lock screen</h3>
-            <p className="text-sm text-muted-foreground">Both iPhone and Android let you set the background to a rotating album of family photos. Hugely cheerful — every glance shows a grandkid. iPhone: Settings → Wallpaper → "Photo Shuffle". Android: Wallpapers → "Featured photos".</p>
+            <p className="text-base text-muted-foreground">Both iPhone and Android let you set the background to a rotating album of family photos. Hugely cheerful — every glance shows a grandkid. iPhone: Settings → Wallpaper → "Photo Shuffle". Android: Wallpapers → "Featured photos".</p>
           </CardContent>
         </Card>
       </main>

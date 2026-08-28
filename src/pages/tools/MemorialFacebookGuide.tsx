@@ -19,7 +19,7 @@ export default function MemorialFacebookGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Two options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Memorialize</strong> — account stays, "Remembering" appears next to name. Friends/family can post tributes. Doesn&apos;t appear in birthday reminders or "people you may know".</li>
               <li><strong>Delete</strong> — account permanently removed. Posts, photos, profile gone. Cannot undo.</li>
             </ul>
@@ -30,7 +30,7 @@ export default function MemorialFacebookGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to request memorialization</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>facebook.com/help/contact/234739086860192</strong></li>
               <li>Or search Facebook Help Center for "memorialization request".</li>
               <li>Fill in the deceased&apos;s full name and Facebook profile URL.</li>
@@ -43,7 +43,7 @@ export default function MemorialFacebookGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you&apos;re the legacy contact</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You get notified after Facebook memorializes the account.</li>
               <li>You can pin a tribute post at the top.</li>
               <li>Update profile photo and cover.</li>
@@ -56,7 +56,7 @@ export default function MemorialFacebookGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to request deletion</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Only an immediate family member or executor can request.</li>
               <li>Go to <strong>facebook.com/help/contact/228813257197480</strong></li>
               <li>Provide full name, profile URL, your relationship.</li>
@@ -69,7 +69,7 @@ export default function MemorialFacebookGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save photos before deletion</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>If you&apos;re the legacy contact, you can request a download of their photos and posts.</li>
               <li>Click "Manage Account" on the memorialized profile → "Request a copy".</li>
               <li>Facebook emails a download link in a few days.</li>
@@ -81,7 +81,7 @@ export default function MemorialFacebookGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other accounts to handle</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Instagram</strong> — same memorialize/delete process. Same Facebook help links.</li>
               <li><strong>Apple iCloud</strong> — Legacy Contact (if set up) or court order.</li>
               <li><strong>Google/Gmail</strong> — Inactive Account Manager OR family request to access.</li>
@@ -95,7 +95,7 @@ export default function MemorialFacebookGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Take your time</h3>
-            <p className="text-sm text-muted-foreground">There&apos;s no rush. Many families wait 6-12 months before memorializing or deleting. Old posts and photos can be a comfort. Do what feels right for your family.</p>
+            <p className="text-base text-muted-foreground">There&apos;s no rush. Many families wait 6-12 months before memorializing or deleting. Old posts and photos can be a comfort. Do what feels right for your family.</p>
           </CardContent>
         </Card>
       </main>

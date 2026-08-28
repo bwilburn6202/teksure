@@ -1089,7 +1089,7 @@ export default function PhonePlanComparison() {
                       />
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Skip this and we&apos;ll still show you our top 3 matches.
                   </p>
                 </CardContent>

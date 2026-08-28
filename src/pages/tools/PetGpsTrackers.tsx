@@ -33,7 +33,7 @@ export default function PetGpsTrackers() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function PetGpsTrackers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bluetooth vs Cellular</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bluetooth (AirTag, Tile)</strong> — $30 one-time. Works only when another phone is within ~30 ft. Great in cities, useless in woods.</li>
               <li><strong>Cellular GPS (Tractive, Fi)</strong> — $100-150 + monthly fee. Works ANYWHERE with cell coverage. Live location.</li>
               <li>For escape-prone dogs — cellular is worth the $8/mo.</li>
@@ -54,7 +54,7 @@ export default function PetGpsTrackers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Microchip — non-negotiable</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Permanent ID — vet/shelter scans, finds your phone.</li>
               <li>$25-50 one-time. Many shelters microchip free at adoption.</li>
               <li>UPDATE the registry when you move or change phone.</li>
@@ -67,7 +67,7 @@ export default function PetGpsTrackers() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Stack it</h3>
-            <p className="text-sm text-muted-foreground">Best setup: microchip (permanent ID) + collar tag with phone number (so anyone can call you immediately) + GPS tracker (real-time). All 3 = nearly impossible to permanently lose a pet. $30-200 total. Cheaper than one missed reunion.</p>
+            <p className="text-base text-muted-foreground">Best setup: microchip (permanent ID) + collar tag with phone number (so anyone can call you immediately) + GPS tracker (real-time). All 3 = nearly impossible to permanently lose a pet. $30-200 total. Cheaper than one missed reunion.</p>
           </CardContent>
         </Card>
       </main>

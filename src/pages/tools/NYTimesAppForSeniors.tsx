@@ -19,7 +19,7 @@ export default function NYTimesAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Subscription tiers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>News only — $4/month often.</li>
               <li>All Access — $25/month for everything.</li>
               <li>Includes Games, Cooking, Wirecutter, Audio.</li>
@@ -33,7 +33,7 @@ export default function NYTimesAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">News reading</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adjustable text size in app.</li>
               <li>Listen to articles aloud (audio mode).</li>
               <li>Offline reading — download for trips.</li>
@@ -47,7 +47,7 @@ export default function NYTimesAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Games — popular with seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Crossword (full + Mini daily).</li>
               <li>Wordle.</li>
               <li>Connections.</li>
@@ -61,7 +61,7 @@ export default function NYTimesAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cooking app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>20,000+ tested recipes.</li>
               <li>Save favorites.</li>
               <li>Generate grocery lists.</li>
@@ -75,7 +75,7 @@ export default function NYTimesAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Audio + podcasts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>The Daily — top podcast in America.</li>
               <li>Listen to articles read by narrators.</li>
               <li>Hands-free news.</li>
@@ -89,7 +89,7 @@ export default function NYTimesAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wirecutter — product reviews</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Product recommendations.</li>
               <li>Best mattress, best vacuum, etc.</li>
               <li>Tested + verified by experts.</li>
@@ -103,7 +103,7 @@ export default function NYTimesAppForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">All Access for $25 = great value</h3>
-            <p className="text-sm text-muted-foreground">If you read news, do crosswords, cook, AND want product reviews, the NYT All Access subscription at $25/month is one of the best media values available. Compared to subscribing separately for newspaper, recipe app, crossword, and audio narration — much cheaper bundled. Also makes a great gift from adult children to retired parents.</p>
+            <p className="text-base text-muted-foreground">If you read news, do crosswords, cook, AND want product reviews, the NYT All Access subscription at $25/month is one of the best media values available. Compared to subscribing separately for newspaper, recipe app, crossword, and audio narration — much cheaper bundled. Also makes a great gift from adult children to retired parents.</p>
           </CardContent>
         </Card>
       </main>

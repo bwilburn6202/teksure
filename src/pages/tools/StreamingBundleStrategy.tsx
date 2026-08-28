@@ -50,7 +50,7 @@ export default function StreamingBundleStrategy() {
                   <span className="text-sm font-semibold text-primary">{b.price}</span>
                 </div>
                 <p className="text-sm">{b.best}</p>
-                <p className="text-sm text-muted-foreground">{b.good}</p>
+                <p className="text-base text-muted-foreground">{b.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -71,7 +71,7 @@ export default function StreamingBundleStrategy() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For 60+ households</h3>
-            <p className="text-sm text-muted-foreground">If you watch a few specific shows — pause subscriptions when not actively watching. Apple TV+ and Hulu both make this easy. Most retirees watching 2-3 hours a day pay $40-60 in bundles instead of $80-120 stacked separately.</p>
+            <p className="text-base text-muted-foreground">If you watch a few specific shows — pause subscriptions when not actively watching. Apple TV+ and Hulu both make this easy. Most retirees watching 2-3 hours a day pay $40-60 in bundles instead of $80-120 stacked separately.</p>
           </CardContent>
         </Card>
       </main>

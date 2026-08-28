@@ -19,7 +19,7 @@ export default function PianoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior piano</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Brain exercise (delays dementia).</li>
               <li>Fine motor skills.</li>
               <li>Bilateral coordination.</li>
@@ -34,7 +34,7 @@ export default function PianoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best digital pianos</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Yamaha P-45</strong> — $500. Best beginner.</li>
               <li><strong>Casio Privia PX-S1100</strong> — $700. Slim.</li>
               <li><strong>Yamaha Arius YDP-145</strong> — $1,200. Console style.</li>
@@ -48,7 +48,7 @@ export default function PianoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Learning options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Local teacher</strong> — best, $40-80/hr.</li>
               <li><strong>Pianote</strong> — online, $200/yr.</li>
               <li><strong>Flowkey</strong> — app-based, $150/yr.</li>
@@ -62,7 +62,7 @@ export default function PianoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adjustable bench — back support.</li>
               <li>Good lighting.</li>
               <li>Pick songs YOU love.</li>
@@ -77,7 +77,7 @@ export default function PianoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First songs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Twinkle Twinkle Little Star.</li>
               <li>Heart and Soul.</li>
               <li>Happy Birthday.</li>
@@ -92,7 +92,7 @@ export default function PianoForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best brain exercise</h3>
-            <p className="text-sm text-muted-foreground">Studies show learning new instruments at 60+ slows cognitive decline more than puzzles. Use both hands + read music + interpret = full brain workout. Plus joy. Lifelong hobby.</p>
+            <p className="text-base text-muted-foreground">Studies show learning new instruments at 60+ slows cognitive decline more than puzzles. Use both hands + read music + interpret = full brain workout. Plus joy. Lifelong hobby.</p>
           </CardContent>
         </Card>
       </main>

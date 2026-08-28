@@ -139,7 +139,7 @@ export default function CookieConsentDecoder() {
               <Card key={f.q} className="border-border">
                 <CardContent className="p-5">
                   <p className="font-semibold text-sm mb-1">{f.q}</p>
-                  <p className="text-sm text-muted-foreground">{f.a}</p>
+                  <p className="text-base text-muted-foreground">{f.a}</p>
                 </CardContent>
               </Card>
             ))}

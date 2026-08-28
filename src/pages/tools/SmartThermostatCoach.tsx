@@ -47,7 +47,7 @@ export default function SmartThermostatCoach() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,7 +56,7 @@ export default function SmartThermostatCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install (DIY)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Turn OFF power to HVAC at breaker.</li>
               <li>Photograph current thermostat\'s wiring (so you can replicate).</li>
               <li>Remove old thermostat (2 screws).</li>
@@ -72,7 +72,7 @@ export default function SmartThermostatCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Recommendation</h3>
-            <p className="text-sm text-muted-foreground"><strong>Ecobee Smart Enhanced</strong> for most homes. Best balance of features and price. Pair with utility rebate to bring net cost to $50-100.</p>
+            <p className="text-base text-muted-foreground"><strong>Ecobee Smart Enhanced</strong> for most homes. Best balance of features and price. Pair with utility rebate to bring net cost to $50-100.</p>
           </CardContent>
         </Card>
       </main>

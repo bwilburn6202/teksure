@@ -35,7 +35,7 @@ export default function LiveCaptionsSetup() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone — Live Captions</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open <strong>Settings</strong>.</li>
                 <li>Tap <strong>Accessibility</strong>.</li>
                 <li>Tap <strong>Live Captions</strong> (under "Hearing").</li>
@@ -52,7 +52,7 @@ export default function LiveCaptionsSetup() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android — Live Caption</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open <strong>Settings</strong>.</li>
                 <li>Tap <strong>Accessibility</strong> → <strong>Live Caption</strong>. (On Samsung: Accessibility → Hearing enhancements → Live Caption.)</li>
                 <li>Turn it on.</li>
@@ -87,7 +87,7 @@ export default function LiveCaptionsSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Captions aren't perfect</h3>
-            <p className="text-sm text-muted-foreground">Live captions guess the words from sound, so they sometimes get names or unusual words wrong — especially in noisy places. They're best for general meaning, not legal or medical detail.</p>
+            <p className="text-base text-muted-foreground">Live captions guess the words from sound, so they sometimes get names or unusual words wrong — especially in noisy places. They're best for general meaning, not legal or medical detail.</p>
           </CardContent>
         </Card>
       </main>

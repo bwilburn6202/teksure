@@ -19,7 +19,7 @@ export default function HearingTestApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free apps that work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mimi Hearing Test</strong> — free, iPhone &amp; Android. 6-minute test. Saves results over time.</li>
               <li><strong>SonicCloud</strong> — free hearing profile test. Used by some hearing aids.</li>
               <li><strong>Apple AirPods Pro 2</strong> (iPhone) — built-in hearing test in iOS 18+. FDA-cleared.</li>
@@ -32,7 +32,7 @@ export default function HearingTestApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to take the test</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Use real headphones (not phone speakers). Wired or AirPods/AirPods Pro best.</li>
               <li>Quiet room. No TV, fan, or AC running.</li>
               <li>Turn phone volume to 50%.</li>
@@ -46,7 +46,7 @@ export default function HearingTestApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to see a real audiologist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>App shows moderate or severe hearing loss.</li>
               <li>One ear is much worse than the other.</li>
               <li>You hear ringing (tinnitus).</li>
@@ -59,7 +59,7 @@ export default function HearingTestApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free in-person tests</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Costco Hearing Center</strong> — free for members. Best deal in the country.</li>
               <li><strong>Sam&apos;s Club Hearing Center</strong> — free for members.</li>
               <li><strong>Miracle-Ear, Beltone</strong> — free tests (sales-driven, but tests are real).</li>
@@ -72,7 +72,7 @@ export default function HearingTestApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hearing aids over the counter</h3>
-            <p className="text-sm text-muted-foreground">Since 2022, you can buy hearing aids without a prescription. Jabra Enhance, Lexie, Eargo, Sony — $700-2,000/pair. AirPods Pro 2 ($249) also work as basic hearing aids on iPhone. Big change from $4,000 prescription pairs.</p>
+            <p className="text-base text-muted-foreground">Since 2022, you can buy hearing aids without a prescription. Jabra Enhance, Lexie, Eargo, Sony — $700-2,000/pair. AirPods Pro 2 ($249) also work as basic hearing aids on iPhone. Big change from $4,000 prescription pairs.</p>
           </CardContent>
         </Card>
       </main>

@@ -33,7 +33,7 @@ export default function RideshareForSeniors() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function RideshareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First Uber/Lyft ride — step by step</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Download Uber AND Lyft from app store. (Compare prices.)</li>
               <li>Sign up — name, phone, credit card.</li>
               <li>Open app at home. App detects your location.</li>
@@ -58,7 +58,7 @@ export default function RideshareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Confirm driver name &amp; license plate BEFORE getting in.</li>
               <li>Sit in back seat (recommended for both you + driver).</li>
               <li>Share trip with family — Uber and Lyft both have "Share Trip" button.</li>
@@ -72,7 +72,7 @@ export default function RideshareForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use each</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Doctor&apos;s appointments</strong> — schedule both directions in advance.</li>
               <li><strong>Grocery store</strong> — driver helps load bags into trunk.</li>
               <li><strong>Airport</strong> — UberX cheaper, UberXL for big bags.</li>
@@ -85,7 +85,7 @@ export default function RideshareForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Insurance/Medicare may cover medical rides</h3>
-            <p className="text-sm text-muted-foreground">Many Medicare Advantage plans cover free or low-cost rides to doctor appointments. Some Medicaid programs do too. Call your plan and ask about "non-emergency medical transportation". Often through Modivcare, Roundtrip, or LogistiCare.</p>
+            <p className="text-base text-muted-foreground">Many Medicare Advantage plans cover free or low-cost rides to doctor appointments. Some Medicaid programs do too. Call your plan and ask about "non-emergency medical transportation". Often through Modivcare, Roundtrip, or LogistiCare.</p>
           </CardContent>
         </Card>
       </main>

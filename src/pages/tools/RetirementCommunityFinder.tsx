@@ -33,7 +33,7 @@ export default function RetirementCommunityFinder() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function RetirementCommunityFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Levels of senior living</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Active adult / 55+ community</strong> — own home, age-restricted. $200K-$2M to buy.</li>
               <li><strong>Independent living</strong> — apartment + meals + activities. $2K-$5K/mo.</li>
               <li><strong>Assisted living</strong> — apartment + meals + medication management + bathing help. $4K-$8K/mo.</li>
@@ -56,7 +56,7 @@ export default function RetirementCommunityFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Important questions to ask</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pricing: ALL fees. (Many hide "level of care" surcharges.)</li>
               <li>Staffing ratio.</li>
               <li>Recent state inspection report. (Ask for it.)</li>
@@ -79,7 +79,7 @@ export default function RetirementCommunityFinder() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get state inspection reports</h3>
-            <p className="text-sm text-muted-foreground">Every state inspects assisted living + nursing homes. Reports public. Search "[your state] assisted living inspection". OR <strong>Medicare.gov/care-compare</strong> for nursing homes specifically. Star ratings + violations.</p>
+            <p className="text-base text-muted-foreground">Every state inspects assisted living + nursing homes. Reports public. Search "[your state] assisted living inspection". OR <strong>Medicare.gov/care-compare</strong> for nursing homes specifically. Star ratings + violations.</p>
           </CardContent>
         </Card>
       </main>

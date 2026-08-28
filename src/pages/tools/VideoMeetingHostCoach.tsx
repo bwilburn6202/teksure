@@ -32,7 +32,7 @@ export default function VideoMeetingHostCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Schedule a Zoom meeting</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign in at zoom.us. Click "Schedule a Meeting".</li>
               <li>Topic ("Sunday Family Call"), date, time.</li>
               <li>Optional: Recurring meeting — "Every Sunday at 5 PM".</li>
@@ -60,7 +60,7 @@ export default function VideoMeetingHostCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Managing chaos</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Mute on entry"</strong> — Zoom setting that mutes everyone joining. Saves echo chaos.</li>
               <li><strong>Waiting room</strong> — you approve people one by one. Stops Zoom-bombing.</li>
               <li><strong>Co-host</strong> — promote one tech-savvy family member to help mute and manage.</li>
@@ -86,7 +86,7 @@ export default function VideoMeetingHostCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best practice for family rituals</h3>
-            <p className="text-sm text-muted-foreground">Set a recurring weekly call — Sunday 5 PM family check-in. Use the same Zoom link every week. Family knows when to be there. Even 20-30 minutes a week keeps everyone connected.</p>
+            <p className="text-base text-muted-foreground">Set a recurring weekly call — Sunday 5 PM family check-in. Use the same Zoom link every week. Family knows when to be there. Even 20-30 minutes a week keeps everyone connected.</p>
           </CardContent>
         </Card>
       </main>

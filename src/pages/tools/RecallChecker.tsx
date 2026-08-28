@@ -43,7 +43,7 @@ export default function RecallChecker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Check your car NOW</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Find your VIN — printed on driver-side dashboard, registration, insurance card.</li>
               <li>Go to <strong>nhtsa.gov/recalls</strong>.</li>
               <li>Type VIN. Hit Check.</li>
@@ -83,7 +83,7 @@ export default function RecallChecker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Annual habit</h3>
-            <p className="text-sm text-muted-foreground">Once a year (your birthday or January 1) — run your VIN through NHTSA. Search "[brand] recall" for major appliances and recliners. 10 minutes total. Sometimes finds free repairs worth hundreds of dollars.</p>
+            <p className="text-base text-muted-foreground">Once a year (your birthday or January 1) — run your VIN through NHTSA. Search "[brand] recall" for major appliances and recliners. 10 minutes total. Sometimes finds free repairs worth hundreds of dollars.</p>
           </CardContent>
         </Card>
       </main>

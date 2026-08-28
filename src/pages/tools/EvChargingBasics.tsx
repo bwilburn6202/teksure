@@ -19,7 +19,7 @@ export default function EvChargingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">3 levels of charging</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Level 1 — wall outlet</strong> (120V). Plug into a regular outlet at home. Adds 3-5 miles per hour. Slow. Fine if you drive less than 40 miles/day.</li>
               <li><strong>Level 2 — home charger</strong> (240V). Adds 25-35 miles/hour. Full charge overnight. $500-1,500 for charger + install. The standard home option.</li>
               <li><strong>DC Fast Charging</strong> — public stations only. Adds 100-200 miles in 20-30 minutes. Used for road trips. Can&apos;t install at home.</li>
@@ -30,7 +30,7 @@ export default function EvChargingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best home setup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Hire an electrician — they install a 240V outlet near where you park (~$500-2,000).</li>
               <li>Buy Level 2 charger — Tesla Wall Connector, ChargePoint Home Flex, or your car&apos;s OEM charger ($400-700).</li>
               <li>Plug car in at night. Full by morning.</li>
@@ -43,7 +43,7 @@ export default function EvChargingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps to find public chargers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>PlugShare</strong> — best community-driven map. Shows working/broken status from real drivers.</li>
               <li><strong>A Better Route Planner (ABRP)</strong> — plans road trips with charging stops.</li>
               <li><strong>Tesla app</strong> — for Tesla owners, finds Superchargers automatically.</li>
@@ -56,7 +56,7 @@ export default function EvChargingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Home charging</strong> — $0.10-0.20/kWh. Roughly $10-15 for a "tank" (250 miles).</li>
               <li><strong>DC fast charging</strong> — $0.40-0.55/kWh. Roughly $25-40 for 200 miles.</li>
               <li>Compare: $40 of gas = ~250 miles in efficient car; $40 of home electricity = 700+ miles in EV.</li>
@@ -68,7 +68,7 @@ export default function EvChargingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common worries</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Will it charge in rain?"</strong> Yes. Chargers and ports are waterproof.</li>
               <li><strong>"Cold weather?"</strong> Range drops 15-30% in winter. Pre-heat car while plugged in.</li>
               <li><strong>"Battery replacement?"</strong> Most batteries last 200,000+ miles. Warranty 8 years/100,000 miles federal minimum.</li>
@@ -80,7 +80,7 @@ export default function EvChargingBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">First road trip</h3>
-            <p className="text-sm text-muted-foreground">For the first long trip, use A Better Route Planner. It picks chargers, predicts arrival battery, and accounts for elevation/weather. Way smarter than guessing. After 2-3 trips you won&apos;t need it.</p>
+            <p className="text-base text-muted-foreground">For the first long trip, use A Better Route Planner. It picks chargers, predicts arrival battery, and accounts for elevation/weather. Way smarter than guessing. After 2-3 trips you won&apos;t need it.</p>
           </CardContent>
         </Card>
       </main>

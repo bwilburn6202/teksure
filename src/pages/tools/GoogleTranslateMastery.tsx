@@ -19,7 +19,7 @@ export default function GoogleTranslateMastery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Camera mode (game-changer)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open app → tap camera icon.</li>
               <li>Point at menu, sign, label — translates LIVE.</li>
               <li>Works in photos too — point at photo, see translation overlay.</li>
@@ -34,7 +34,7 @@ export default function GoogleTranslateMastery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Conversation mode</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap microphone icons.</li>
               <li>Speak — phone translates aloud.</li>
               <li>Person responds — phone translates back.</li>
@@ -48,7 +48,7 @@ export default function GoogleTranslateMastery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Offline downloads</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download languages BEFORE travel.</li>
               <li>Settings → Tap downloaded languages.</li>
               <li>Spanish offline = 100MB.</li>
@@ -62,7 +62,7 @@ export default function GoogleTranslateMastery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Handwriting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap pen icon.</li>
               <li>Write character — translates.</li>
               <li>Useful for Chinese, Japanese, Korean.</li>
@@ -75,7 +75,7 @@ export default function GoogleTranslateMastery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior travel tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photograph hotel name in local language to show taxi.</li>
               <li>Save useful phrases (saved tab).</li>
               <li>Show translated text instead of awkward speaking.</li>
@@ -89,7 +89,7 @@ export default function GoogleTranslateMastery() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pixel Buds = real-time translation</h3>
-            <p className="text-sm text-muted-foreground">Google Pixel Buds Pro ($200) — translate conversations in your ear in real-time. Hear Italian, hear English in earbud. Mind-blowing for serious travelers. Apple AirPods getting similar feature 2026. Future of senior international travel.</p>
+            <p className="text-base text-muted-foreground">Google Pixel Buds Pro ($200) — translate conversations in your ear in real-time. Hear Italian, hear English in earbud. Mind-blowing for serious travelers. Apple AirPods getting similar feature 2026. Future of senior international travel.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function BackyardSafetyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trip hazards (most falls)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Uneven walkway pavers — re-level or replace.</li>
               <li>Garden hoses across paths — coiled or dropped in beds.</li>
               <li>Tree roots lifting concrete — grind or replace.</li>
@@ -34,7 +34,7 @@ export default function BackyardSafetyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lighting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Motion-activated lights at all entries (front door, back, side, garage).</li>
               <li>Solar path lights along walkways ($30/4-pack at Costco).</li>
               <li>Photo-cell light on garage / porch — automatic at sunset.</li>
@@ -47,7 +47,7 @@ export default function BackyardSafetyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stairs + railings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Handrail on BOTH sides if 3+ steps. Code minimum.</li>
               <li>Test by leaning on it — should not wiggle.</li>
               <li>Outdoor non-slip strips on each step (especially wood, $15).</li>
@@ -59,7 +59,7 @@ export default function BackyardSafetyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pool / hot tub safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Self-closing, self-latching gate (code in 47 states).</li>
               <li>Alarm if surface broken when no one&apos;s home.</li>
               <li>"Reach Pole" + life ring near pool.</li>
@@ -73,7 +73,7 @@ export default function BackyardSafetyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Electrical hazards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Outdoor outlets must be GFCI (test button works).</li>
               <li>Extension cords are TEMPORARY — running across yard for years = fire risk.</li>
               <li>Light fixtures: weatherproofed and not cracked.</li>
@@ -86,7 +86,7 @@ export default function BackyardSafetyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tree + branch hazards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Dead branches over walkways/roof — call arborist.</li>
               <li>Loose limbs after windstorm — clean up before walking under.</li>
               <li>Annual arborist inspection ($75-200) catches problems early.</li>
@@ -98,7 +98,7 @@ export default function BackyardSafetyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tool storage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sharp tools (saws, shears) hung up + out of weather.</li>
               <li>Gas cans in shed, away from sparks.</li>
               <li>Lawn chemicals locked away (especially with grandkids).</li>
@@ -110,7 +110,7 @@ export default function BackyardSafetyAudit() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free annual checklist</h3>
-            <p className="text-sm text-muted-foreground">Do this audit each spring. Take photos as evidence for insurance + your records. Many homeowner&apos;s policies discount for documented safety improvements.</p>
+            <p className="text-base text-muted-foreground">Do this audit each spring. Take photos as evidence for insurance + your records. Many homeowner&apos;s policies discount for documented safety improvements.</p>
           </CardContent>
         </Card>
       </main>

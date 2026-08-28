@@ -19,7 +19,7 @@ export default function IRSOnlineAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can do</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>View tax balance + recent payments.</li>
               <li>See 5 years of tax records.</li>
               <li>Make + schedule payments.</li>
@@ -35,7 +35,7 @@ export default function IRSOnlineAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to irs.gov/account.</li>
               <li>Click &quot;Sign in&quot; or &quot;Create account.&quot;</li>
               <li>Use ID.me OR Login.gov.</li>
@@ -49,7 +49,7 @@ export default function IRSOnlineAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip phone hold</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>IRS phone wait often 1-3 hours.</li>
               <li>Online account answers most questions.</li>
               <li>Refund status — Where&apos;s My Refund tool.</li>
@@ -62,7 +62,7 @@ export default function IRSOnlineAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free file taxes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>IRS Free File</strong> — under $79K AGI. Free.</li>
               <li><strong>AARP Tax-Aide</strong> — free Feb-April for 50+.</li>
               <li><strong>VITA</strong> — IRS free help under $64K.</li>
@@ -76,7 +76,7 @@ export default function IRSOnlineAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">IRS scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>IRS NEVER calls demanding immediate payment.</li>
               <li>IRS NEVER asks for credit card / wire / gift cards.</li>
               <li>IRS NEVER threatens arrest.</li>
@@ -90,7 +90,7 @@ export default function IRSOnlineAccount() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Stop identity theft</h3>
-            <p className="text-sm text-muted-foreground">Set up IRS.gov account NOW even if don&apos;t need yet. Same as Social Security — scammer can&apos;t create fake account in your name. Get IRS PIN ($5 fee) — adds extra security to tax filings. Identity theft refund fraud was $2B+ last year.</p>
+            <p className="text-base text-muted-foreground">Set up IRS.gov account NOW even if don&apos;t need yet. Same as Social Security — scammer can&apos;t create fake account in your name. Get IRS PIN ($5 fee) — adds extra security to tax filings. Identity theft refund fraud was $2B+ last year.</p>
           </CardContent>
         </Card>
       </main>

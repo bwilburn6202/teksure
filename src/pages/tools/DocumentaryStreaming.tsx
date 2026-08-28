@@ -35,7 +35,7 @@ export default function DocumentaryStreaming() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -60,7 +60,7 @@ export default function DocumentaryStreaming() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best free path</h3>
-            <p className="text-sm text-muted-foreground">PBS app (free) + the free Hoopla / Kanopy from your library = years of content. Then add Curiosity Stream lifetime deal next time it goes on sale (often Black Friday) for $100 forever.</p>
+            <p className="text-base text-muted-foreground">PBS app (free) + the free Hoopla / Kanopy from your library = years of content. Then add Curiosity Stream lifetime deal next time it goes on sale (often Black Friday) for $100 forever.</p>
           </CardContent>
         </Card>
       </main>

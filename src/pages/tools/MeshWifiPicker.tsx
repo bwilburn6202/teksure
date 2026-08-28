@@ -38,15 +38,15 @@ export default function MeshWifiPicker() {
               <h2 className="font-bold text-lg mb-2">How big is your home?</h2>
               <button onClick={() => setSize('small')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary">
                 <p className="font-bold">Small — apartment or 1-floor home up to 1,500 sq ft</p>
-                <p className="text-sm text-muted-foreground">2 bedrooms, no basement issues</p>
+                <p className="text-base text-muted-foreground">2 bedrooms, no basement issues</p>
               </button>
               <button onClick={() => setSize('medium')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary">
                 <p className="font-bold">Medium — 2-floor home, 1,500-3,000 sq ft</p>
-                <p className="text-sm text-muted-foreground">3-4 bedrooms, maybe a finished basement</p>
+                <p className="text-base text-muted-foreground">3-4 bedrooms, maybe a finished basement</p>
               </button>
               <button onClick={() => setSize('large')} className="w-full p-4 border-2 rounded-lg text-left hover:border-primary">
                 <p className="font-bold">Large — 3,000+ sq ft, multiple floors</p>
-                <p className="text-sm text-muted-foreground">Big house, brick walls, basement plus upstairs</p>
+                <p className="text-base text-muted-foreground">Big house, brick walls, basement plus upstairs</p>
               </button>
             </CardContent>
           </Card>
@@ -65,7 +65,7 @@ export default function MeshWifiPicker() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h2 className="font-bold text-xl mb-3">Setup steps (works for all systems)</h2>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>Install the system's app on your phone (eero, Google Home, TP-Link Deco — whichever).</li>
                   <li>Plug the FIRST unit into your modem (the box from your internet company) using the included Ethernet cable.</li>
                   <li>Plug it into the wall for power. Wait until its light is steady.</li>
@@ -94,7 +94,7 @@ export default function MeshWifiPicker() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don't pay your internet company $15/month</h3>
-            <p className="text-sm text-muted-foreground">Most cable companies (Xfinity, Spectrum) charge $14-$15 per month to RENT a router. Buying your own pays for itself in 6-12 months — and modern mesh systems are far better than the rented box.</p>
+            <p className="text-base text-muted-foreground">Most cable companies (Xfinity, Spectrum) charge $14-$15 per month to RENT a router. Buying your own pays for itself in 6-12 months — and modern mesh systems are far better than the rented box.</p>
           </CardContent>
         </Card>
       </main>

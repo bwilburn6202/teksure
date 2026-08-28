@@ -19,7 +19,7 @@ export default function SeniorDiscountFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Restaurants</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Denny&apos;s — AARP members save 15%.</li>
               <li>McDonald&apos;s — free coffee at some locations.</li>
               <li>Burger King — 10% off for 60+.</li>
@@ -33,7 +33,7 @@ export default function SeniorDiscountFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Travel discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>America the Beautiful Pass — $20/year, all national parks.</li>
               <li>Amtrak — 15% off for 65+.</li>
               <li>Greyhound — 10% off for 62+.</li>
@@ -47,7 +47,7 @@ export default function SeniorDiscountFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Entertainment</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Movie theaters — most offer senior pricing.</li>
               <li>AMC, Regal, Cinemark — 60+ discounts select days.</li>
               <li>Museums — most offer free or reduced admission.</li>
@@ -61,7 +61,7 @@ export default function SeniorDiscountFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Retail and services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Kohl&apos;s — senior discount day (Wednesday, 15% off).</li>
               <li>Goodwill — many stores 20-25% off certain days.</li>
               <li>Walgreens, CVS — AARP discounts available.</li>
@@ -75,7 +75,7 @@ export default function SeniorDiscountFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tech and internet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>T-Mobile Essentials 55+ Plan — $27.50/line.</li>
               <li>AT&amp;T Senior Nation Plan — call for pricing.</li>
               <li>Comcast Internet Essentials — low-income internet.</li>
@@ -89,7 +89,7 @@ export default function SeniorDiscountFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to find discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AARP.org/benefits — member discount database.</li>
               <li>SeniorDiscounts.com — searchable by city + category.</li>
               <li>Always ask at checkout: &quot;Do you offer a senior discount?&quot;</li>
@@ -103,7 +103,7 @@ export default function SeniorDiscountFinder() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Always ask — no shame</h3>
-            <p className="text-sm text-muted-foreground">Many seniors feel embarrassed to ask for a discount. Don&apos;t be — these programs exist because companies value senior customers. The worst they can say is no. The America the Beautiful Senior Pass ($20 lifetime, age 62+) alone saves hundreds if you visit national parks. If you haven&apos;t bought one, get it at any national park entrance today.</p>
+            <p className="text-base text-muted-foreground">Many seniors feel embarrassed to ask for a discount. Don&apos;t be — these programs exist because companies value senior customers. The worst they can say is no. The America the Beautiful Senior Pass ($20 lifetime, age 62+) alone saves hundreds if you visit national parks. If you haven&apos;t bought one, get it at any national park entrance today.</p>
           </CardContent>
         </Card>
       </main>

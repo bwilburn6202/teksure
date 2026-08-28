@@ -19,7 +19,7 @@ export default function GrandkidSummerVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Length of visits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Long weekend (3-4 days) ideal first visits.</li>
               <li>Whole week okay if you have energy.</li>
               <li>2 weeks demanding for most seniors.</li>
@@ -32,7 +32,7 @@ export default function GrandkidSummerVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily structure</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Morning activity (energetic).</li>
               <li>Lunch + quiet time (TV/reading).</li>
               <li>Afternoon outing.</li>
@@ -47,7 +47,7 @@ export default function GrandkidSummerVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-pace activities</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Park outings.</li>
               <li>Swimming (you watch from chair).</li>
               <li>Library story time.</li>
@@ -64,7 +64,7 @@ export default function GrandkidSummerVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Theme parks (exhausting).</li>
               <li>All-day excursions.</li>
               <li>Tourist hot spots crowded.</li>
@@ -78,7 +78,7 @@ export default function GrandkidSummerVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cousin time</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Multiple grandkids = exponentially harder.</li>
               <li>1 at a time = quality.</li>
               <li>2 cousins together = fun, watch each other.</li>
@@ -92,7 +92,7 @@ export default function GrandkidSummerVisits() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">After they leave</h3>
-            <p className="text-sm text-muted-foreground">Rest 2-3 days. Recovery time normal. Send photo collage to grandkids. Letter or call to share favorite moment. Plan next visit. These memories last decades. Worth the exhaustion. Nap is well-earned.</p>
+            <p className="text-base text-muted-foreground">Rest 2-3 days. Recovery time normal. Send photo collage to grandkids. Letter or call to share favorite moment. Plan next visit. These memories last decades. Worth the exhaustion. Nap is well-earned.</p>
           </CardContent>
         </Card>
       </main>

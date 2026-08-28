@@ -19,7 +19,7 @@ export default function KhanAcademyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Khan Academy?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>100% free, nonprofit education site.</li>
               <li>Started by Salman Khan in 2008.</li>
               <li>Funded by Bill Gates Foundation + others.</li>
@@ -33,7 +33,7 @@ export default function KhanAcademyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Subjects covered</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Math — basic to college calculus.</li>
               <li>Science — physics, chemistry, biology.</li>
               <li>History — world + American.</li>
@@ -47,7 +47,7 @@ export default function KhanAcademyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Refresh subjects you forgot.</li>
               <li>Help grandkids with homework.</li>
               <li>Learn finance + investing concepts.</li>
@@ -61,7 +61,7 @@ export default function KhanAcademyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Khanmigo (AI tutor)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$4/month for unlimited AI tutoring.</li>
               <li>Ask questions anytime.</li>
               <li>Personalized help when stuck.</li>
@@ -75,7 +75,7 @@ export default function KhanAcademyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to get started</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to KhanAcademy.org.</li>
               <li>Sign up free with email.</li>
               <li>Browse subjects — pick what interests you.</li>
@@ -89,7 +89,7 @@ export default function KhanAcademyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other free education</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Coursera — audit university courses free.</li>
               <li>edX — Harvard, MIT free courses.</li>
               <li>YouTube — Crash Course, TED-Ed.</li>
@@ -103,7 +103,7 @@ export default function KhanAcademyForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Help your grandkids too</h3>
-            <p className="text-sm text-muted-foreground">Many seniors discover Khan Academy when grandkids ask for help with homework. The site has a parent dashboard so you can track grandkids&apos; progress too. Spending an hour helping them with math (using Khan to refresh your skills first) creates wonderful intergenerational bonding. The grandkids love that grandma still wants to learn alongside them.</p>
+            <p className="text-base text-muted-foreground">Many seniors discover Khan Academy when grandkids ask for help with homework. The site has a parent dashboard so you can track grandkids&apos; progress too. Spending an hour helping them with math (using Khan to refresh your skills first) creates wonderful intergenerational bonding. The grandkids love that grandma still wants to learn alongside them.</p>
           </CardContent>
         </Card>
       </main>

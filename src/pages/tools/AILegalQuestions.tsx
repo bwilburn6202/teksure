@@ -19,7 +19,7 @@ export default function AILegalQuestions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Good AI uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Understanding legal terms.</li>
               <li>Reading contracts before signing.</li>
               <li>Knowing your tenant rights.</li>
@@ -33,7 +33,7 @@ export default function AILegalQuestions() {
         <Card className="mb-4 border-yellow-300">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3 text-yellow-700">Don&apos;t do without lawyer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sign legal documents.</li>
               <li>File court papers.</li>
               <li>Sign settlement agreements.</li>
@@ -47,7 +47,7 @@ export default function AILegalQuestions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sample questions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;What is a living trust?&quot;</li>
               <li>&quot;Explain power of attorney types.&quot;</li>
               <li>&quot;What does this contract clause mean?&quot;</li>
@@ -61,7 +61,7 @@ export default function AILegalQuestions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free senior legal aid</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Eldercare Locator — 1-800-677-1116.</li>
               <li>Legal Aid — eligible by income.</li>
               <li>State Bar Lawyer Referral — free 30 min.</li>
@@ -75,7 +75,7 @@ export default function AILegalQuestions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online legal AI</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>LegalZoom</strong> — wills + estates.</li>
               <li><strong>Rocket Lawyer</strong> — documents.</li>
               <li><strong>Trust &amp; Will</strong> — estate plans.</li>
@@ -89,7 +89,7 @@ export default function AILegalQuestions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you need real lawyer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Disputes — landlord, neighbor, contractor.</li>
               <li>Sued — defending case.</li>
               <li>Suing — pursuing case.</li>
@@ -104,7 +104,7 @@ export default function AILegalQuestions() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Verify all AI legal advice</h3>
-            <p className="text-sm text-muted-foreground">Lawyer scolds AI hallucinations. AI sometimes invents fake cases. Always cross-check. Use AI as starting point — never as legal authority. State law varies. Federal vs state matters. Consultation often free first 30 minutes. Power of attorney + will = invest in actual lawyer. Save thousands prevent mistakes.</p>
+            <p className="text-base text-muted-foreground">Lawyer scolds AI hallucinations. AI sometimes invents fake cases. Always cross-check. Use AI as starting point — never as legal authority. State law varies. Federal vs state matters. Consultation often free first 30 minutes. Power of attorney + will = invest in actual lawyer. Save thousands prevent mistakes.</p>
           </CardContent>
         </Card>
       </main>

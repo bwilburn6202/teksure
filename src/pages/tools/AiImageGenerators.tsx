@@ -47,7 +47,7 @@ export default function AiImageGenerators() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -70,7 +70,7 @@ export default function AiImageGenerators() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Important warnings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Don\'t generate images of real people without permission</strong> — especially celebrities or public figures.</li>
               <li><strong>AI images can\'t be copyrighted</strong> in the US — anyone can use yours; you can\'t legally use someone else\'s commercially.</li>
               <li><strong>Recognize AI images</strong> — strange hands/teeth, weird text, "smooth" backgrounds. Many photos shared online today are AI-made.</li>
@@ -82,7 +82,7 @@ export default function AiImageGenerators() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">Open Microsoft Copilot at copilot.microsoft.com (free, no signup needed for some). Type "Make me an image of a cat reading a newspaper". 30 seconds. Magic moment.</p>
+            <p className="text-base text-muted-foreground">Open Microsoft Copilot at copilot.microsoft.com (free, no signup needed for some). Type "Make me an image of a cat reading a newspaper". 30 seconds. Magic moment.</p>
           </CardContent>
         </Card>
       </main>

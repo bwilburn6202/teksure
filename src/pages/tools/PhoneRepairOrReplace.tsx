@@ -128,7 +128,7 @@ export default function PhoneRepairOrReplace() {
               <Card className="border-border mb-6">
                 <CardContent className="p-5">
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Where to get repairs done — for {problemLabel[problem!]}</p>
-                  <ul className="space-y-2 text-sm">
+                  <ul className="space-y-2 text-base">
                     <li><strong>Apple Store</strong> — same-day screen and battery service for iPhones. Walk in or book at apple.com/retail. Genuine parts.</li>
                     <li><strong>uBreakiFix (by Asurion)</strong> — Apple, Samsung, and Google authorized. Most repairs done in 2 hours. Locations in most US cities.</li>
                     <li><strong>Best Buy / Geek Squad</strong> — authorized Samsung repairs. Good if you have a store nearby.</li>

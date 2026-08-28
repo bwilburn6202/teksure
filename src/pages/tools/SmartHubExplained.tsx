@@ -32,7 +32,7 @@ export default function SmartHubExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Most seniors don&apos;t need a separate hub</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Echo Dot ($35) handles 95% of senior smart home needs.</li>
               <li>Nest Hub Max ($229) does same + has screen for video calls.</li>
               <li>Most smart bulbs/plugs/cameras connect direct to wifi (no hub needed).</li>
@@ -44,7 +44,7 @@ export default function SmartHubExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you NEED a real hub</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You want Z-Wave or Zigbee devices (older protocols, more options).</li>
               <li>30+ smart devices.</li>
               <li>Apple HomeKit secure videos (HomePod or Apple TV does it).</li>
@@ -57,7 +57,7 @@ export default function SmartHubExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best dedicated hubs (if you want one)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SmartThings Station</strong> — $60. Now Matter-compatible.</li>
               <li><strong>Hubitat C-8 Pro</strong> — $200. For serious tinkerers.</li>
               <li><strong>Apple TV 4K</strong> — $130. Doubles as HomeKit hub.</li>
@@ -77,7 +77,7 @@ export default function SmartHubExplained() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Keep it simple</h3>
-            <p className="text-sm text-muted-foreground">Most seniors do best with: Echo Dot + 2-4 smart bulbs/plugs + smart doorbell. That&apos;s it. Don&apos;t over-engineer. Tech that works beats fancy tech that confuses. Add things ONE at a time. Master each.</p>
+            <p className="text-base text-muted-foreground">Most seniors do best with: Echo Dot + 2-4 smart bulbs/plugs + smart doorbell. That&apos;s it. Don&apos;t over-engineer. Tech that works beats fancy tech that confuses. Add things ONE at a time. Master each.</p>
           </CardContent>
         </Card>
       </main>

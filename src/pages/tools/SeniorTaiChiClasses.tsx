@@ -19,7 +19,7 @@ export default function SeniorTaiChiClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why tai chi</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Strongest research for fall prevention.</li>
               <li>Improves balance dramatically.</li>
               <li>Gentle on joints.</li>
@@ -33,7 +33,7 @@ export default function SeniorTaiChiClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find local classes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior centers offer free.</li>
               <li>Local YMCA classes.</li>
               <li>Park departments — outdoor.</li>
@@ -47,7 +47,7 @@ export default function SeniorTaiChiClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouTube tai chi</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tai Chi Made Easy — beginners.</li>
               <li>Yang Style 24 forms — most popular.</li>
               <li>Senior tai chi specifically.</li>
@@ -61,7 +61,7 @@ export default function SeniorTaiChiClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tai Chi Apps — basic free options.</li>
               <li>Gaia (yoga app) has tai chi sections.</li>
               <li>Glo — paid yoga + tai chi.</li>
@@ -75,7 +75,7 @@ export default function SeniorTaiChiClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior research</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NIH studies — significant fall reduction.</li>
               <li>Improved balance after 8 weeks.</li>
               <li>Better sleep.</li>
@@ -89,7 +89,7 @@ export default function SeniorTaiChiClasses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Getting started</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One in-person class to learn form.</li>
               <li>Then practice at home daily.</li>
               <li>10-20 minutes typical.</li>
@@ -103,7 +103,7 @@ export default function SeniorTaiChiClasses() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best fall prevention</h3>
-            <p className="text-sm text-muted-foreground">If fall risk concerns you (and it should after 65), tai chi is the most-evidenced prevention. NIH studies show 8 weeks of practice reduces fall risk significantly. Find local class through senior center or YMCA. Free or low cost. Pair with strength training. Many seniors discover tai chi changes their entire health trajectory.</p>
+            <p className="text-base text-muted-foreground">If fall risk concerns you (and it should after 65), tai chi is the most-evidenced prevention. NIH studies show 8 weeks of practice reduces fall risk significantly. Find local class through senior center or YMCA. Free or low cost. Pair with strength training. Many seniors discover tai chi changes their entire health trajectory.</p>
           </CardContent>
         </Card>
       </main>

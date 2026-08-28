@@ -19,7 +19,7 @@ export default function SkinCareAfter65() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior skin changes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Thinner — bruises easier.</li>
               <li>Drier — produces less oil.</li>
               <li>Slower healing — small cuts last longer.</li>
@@ -33,7 +33,7 @@ export default function SkinCareAfter65() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily routine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lukewarm showers — hot water dries skin.</li>
               <li>5-10 min showers max.</li>
               <li>Mild soap (Dove, Cerave) — not antibacterial.</li>
@@ -47,7 +47,7 @@ export default function SkinCareAfter65() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sun protection still matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SPF 30+ daily — face, neck, hands.</li>
               <li>EltaMD, La Roche-Posay = dermatologist favorites.</li>
               <li>Wide-brimmed hat outdoors.</li>
@@ -61,7 +61,7 @@ export default function SkinCareAfter65() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch for skin cancer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>A</strong>symmetry — one side different.</li>
               <li><strong>B</strong>orders — irregular, ragged.</li>
               <li><strong>C</strong>olor — multiple colors in one spot.</li>
@@ -76,7 +76,7 @@ export default function SkinCareAfter65() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free skin checks</h3>
-            <p className="text-sm text-muted-foreground">American Academy of Dermatology runs SPOT Skin Cancer free screening events. AAD.org/spot to find one. Your spouse can do monthly mole map photos with phone — same spot, same lighting. Apple/Google Photos auto-organize by date.</p>
+            <p className="text-base text-muted-foreground">American Academy of Dermatology runs SPOT Skin Cancer free screening events. AAD.org/spot to find one. Your spouse can do monthly mole map photos with phone — same spot, same lighting. Apple/Google Photos auto-organize by date.</p>
           </CardContent>
         </Card>
       </main>

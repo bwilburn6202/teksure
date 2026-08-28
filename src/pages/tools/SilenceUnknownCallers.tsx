@@ -35,7 +35,7 @@ export default function SilenceUnknownCallers() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings.</li>
                 <li>Apps → Phone (or just "Phone" on older iOS).</li>
                 <li>Scroll down to "Silence Unknown Callers".</li>
@@ -51,7 +51,7 @@ export default function SilenceUnknownCallers() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android (Pixel/Samsung Phone app)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open Phone app.</li>
                 <li>Tap three-dot menu (top right).</li>
                 <li>Settings → "Caller ID &amp; spam".</li>
@@ -93,7 +93,7 @@ export default function SilenceUnknownCallers() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Phone bliss</h3>
-            <p className="text-sm text-muted-foreground">Most people who turn this on say it&apos;s the best phone setting they ever changed. Phone goes from ringing 10 times a day to 2-3. Stress level drops. You only hear the people you actually want to hear from.</p>
+            <p className="text-base text-muted-foreground">Most people who turn this on say it&apos;s the best phone setting they ever changed. Phone goes from ringing 10 times a day to 2-3. Stress level drops. You only hear the people you actually want to hear from.</p>
           </CardContent>
         </Card>
       </main>

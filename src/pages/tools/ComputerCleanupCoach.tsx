@@ -116,14 +116,14 @@ export default function ComputerCleanupCoach() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">DON'T install "PC Speed Booster" software</h3>
-            <p className="text-sm text-muted-foreground">Apps with names like "PC Cleaner Pro", "MacKeeper", "Driver Updater" are mostly bloatware — they slow your machine MORE than they help, and many are scammy. Stick to built-in tools and Malwarebytes.</p>
+            <p className="text-base text-muted-foreground">Apps with names like "PC Cleaner Pro", "MacKeeper", "Driver Updater" are mostly bloatware — they slow your machine MORE than they help, and many are scammy. Stick to built-in tools and Malwarebytes.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Still slow after all that?</h3>
-            <p className="text-sm text-muted-foreground">If your computer is more than 6-8 years old, the hardware is just slow. Two affordable upgrades: more RAM (memory) and an SSD (faster hard drive). Many local repair shops do this for $100-$200 — often turns a 7-year-old computer into a "feels new" machine for a fraction of replacing it.</p>
+            <p className="text-base text-muted-foreground">If your computer is more than 6-8 years old, the hardware is just slow. Two affordable upgrades: more RAM (memory) and an SSD (faster hard drive). Many local repair shops do this for $100-$200 — often turns a 7-year-old computer into a "feels new" machine for a fraction of replacing it.</p>
           </CardContent>
         </Card>
       </main>

@@ -33,7 +33,7 @@ export default function JigsawPuzzleApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function JigsawPuzzleApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why digital jigsaw</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No card table set up for weeks.</li>
               <li>Cat can&apos;t knock pieces off.</li>
               <li>No missing piece in box.</li>
@@ -56,7 +56,7 @@ export default function JigsawPuzzleApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for low vision</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick "large piece" mode (50-150 pieces).</li>
               <li>iPad bigger than phone — easier on eyes.</li>
               <li>Settings → Display → bump iPad text size, brightness up.</li>
@@ -68,7 +68,7 @@ export default function JigsawPuzzleApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Other "calm" puzzle apps to try</h3>
-            <p className="text-sm text-muted-foreground"><strong>Two Dots</strong> — connect colored dots. Relaxing. <strong>Wordscapes</strong> — word search/crossword hybrid. <strong>NYT Games</strong> — Wordle, Spelling Bee, Connections, Crossword ($5/mo). <strong>I Love Hue</strong> — sort colors. Beautiful, calming, no time pressure.</p>
+            <p className="text-base text-muted-foreground"><strong>Two Dots</strong> — connect colored dots. Relaxing. <strong>Wordscapes</strong> — word search/crossword hybrid. <strong>NYT Games</strong> — Wordle, Spelling Bee, Connections, Crossword ($5/mo). <strong>I Love Hue</strong> — sort colors. Beautiful, calming, no time pressure.</p>
           </CardContent>
         </Card>
       </main>

@@ -34,7 +34,7 @@ export default function WoodworkingPlans() {
                   <span className="text-sm font-semibold text-primary">{r.cost}</span>
                 </div>
                 <p className="text-sm">{r.best}</p>
-                <p className="text-sm text-muted-foreground">{r.good}</p>
+                <p className="text-base text-muted-foreground">{r.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function WoodworkingPlans() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First projects (no fancy tools)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cutting board (just need a saw + sandpaper).</li>
               <li>Bird house.</li>
               <li>Simple bookcase.</li>
@@ -57,7 +57,7 @@ export default function WoodworkingPlans() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tool starter kit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Drill</strong> ($60) — DeWalt 20V or Ryobi 18V cordless.</li>
               <li><strong>Circular saw</strong> ($80) — DeWalt or Skilsaw.</li>
               <li><strong>Tape measure, square, pencil</strong>.</li>
@@ -79,7 +79,7 @@ export default function WoodworkingPlans() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Local makerspace</h3>
-            <p className="text-sm text-muted-foreground">Most cities have a makerspace — shared workshop with table saws, lathes, even CNC machines. $30-100/month membership. Learn from neighbors. Way cheaper than buying a full shop yourself. Search "[city] makerspace".</p>
+            <p className="text-base text-muted-foreground">Most cities have a makerspace — shared workshop with table saws, lathes, even CNC machines. $30-100/month membership. Learn from neighbors. Way cheaper than buying a full shop yourself. Search "[city] makerspace".</p>
           </CardContent>
         </Card>
       </main>

@@ -73,7 +73,7 @@ export default function BillsPaperlessOrganizer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps that organize bills for you</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Rocket Money / Truebill (free)</strong> — finds every subscription, alerts on price changes.</li>
               <li><strong>Prism Bills</strong> — pulls bills from 11,000+ companies into one inbox.</li>
               <li><strong>Mint replacement (Monarch, Copilot)</strong> — sees all your accounts.</li>
@@ -85,7 +85,7 @@ export default function BillsPaperlessOrganizer() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Shred everything paper</h3>
-            <p className="text-sm text-muted-foreground">Once you have the digital version, shred the paper bill (account number on it = ID-theft risk). $40 cross-cut shredder lasts years. Most senior centers also have free shred days a few times a year.</p>
+            <p className="text-base text-muted-foreground">Once you have the digital version, shred the paper bill (account number on it = ID-theft risk). $40 cross-cut shredder lasts years. Most senior centers also have free shred days a few times a year.</p>
           </CardContent>
         </Card>
       </main>

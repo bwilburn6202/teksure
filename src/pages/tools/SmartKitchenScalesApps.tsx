@@ -19,7 +19,7 @@ export default function SmartKitchenScalesApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why a kitchen scale matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Baking by weight is more accurate than cups.</li>
               <li>Better, more consistent results.</li>
               <li>Portion control for diabetics + heart patients.</li>
@@ -33,7 +33,7 @@ export default function SmartKitchenScalesApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best basic scales</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>OXO Good Grips — $50, large display, easy to read.</li>
               <li>Escali Primo — $25, popular budget option.</li>
               <li>Etekcity — $20, basic but reliable.</li>
@@ -47,7 +47,7 @@ export default function SmartKitchenScalesApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart scales with apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drop Scale — connects to recipe app, scales recipes.</li>
               <li>Perfect Bake — guided baking with app.</li>
               <li>Kitchen Companion — nutrition tracking integration.</li>
@@ -61,7 +61,7 @@ export default function SmartKitchenScalesApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For diabetic portion control</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Greater Goods Nourish Scale — $45.</li>
               <li>Calculates carbs, protein, fat for foods.</li>
               <li>Built-in food database.</li>
@@ -75,7 +75,7 @@ export default function SmartKitchenScalesApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps that work with scales</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>MyFitnessPal — track food + nutrition.</li>
               <li>Lose It — calorie + portion tracking.</li>
               <li>CarbManager — diabetic-friendly.</li>
@@ -89,7 +89,7 @@ export default function SmartKitchenScalesApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Scaling a recipe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Recipe says 1 lb (450g) flour.</li>
               <li>Place bowl on scale, press tare to zero.</li>
               <li>Add flour until display reads 450g.</li>
@@ -103,7 +103,7 @@ export default function SmartKitchenScalesApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with $25 OXO scale</h3>
-            <p className="text-sm text-muted-foreground">For most senior cooks, a $25 basic scale (OXO Good Grips or Escali Primo) is plenty. Large readout, easy buttons, switches between ounces and grams. If you bake regularly, you&apos;ll wonder how you ever cooked without it. The smart app-connected scales are nice but rarely worth 3x the price for casual cooks. Stick with simple unless you&apos;re tracking nutrition closely.</p>
+            <p className="text-base text-muted-foreground">For most senior cooks, a $25 basic scale (OXO Good Grips or Escali Primo) is plenty. Large readout, easy buttons, switches between ounces and grams. If you bake regularly, you&apos;ll wonder how you ever cooked without it. The smart app-connected scales are nice but rarely worth 3x the price for casual cooks. Stick with simple unless you&apos;re tracking nutrition closely.</p>
           </CardContent>
         </Card>
       </main>

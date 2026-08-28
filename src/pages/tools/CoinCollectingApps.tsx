@@ -34,7 +34,7 @@ export default function CoinCollectingApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function CoinCollectingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Honest truth about old coin collections</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most pre-1965 silver dimes/quarters are worth 10-15x face value (silver content alone).</li>
               <li>Wheat pennies (pre-1959) — most worth 3-10 cents each.</li>
               <li>Buffalo nickels — most worth $1-5 unless rare date.</li>
@@ -57,7 +57,7 @@ export default function CoinCollectingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to sell</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Local coin show</strong> — multiple dealers compete. Often best price.</li>
               <li><strong>Reputable local coin shop</strong> — vetted via NGC.com Authorized Dealer search.</li>
               <li><strong>GreatCollections, Heritage Auctions</strong> — for valuable certified coins.</li>
@@ -71,7 +71,7 @@ export default function CoinCollectingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For inherited collections</h3>
-            <p className="text-sm text-muted-foreground">Don\'t panic-sell to first buyer. Get a free quote from 3 dealers. Strongly consider taking valuable pieces to a coin show. Keep collection records — older PCGS slabs sell for premium.</p>
+            <p className="text-base text-muted-foreground">Don\'t panic-sell to first buyer. Get a free quote from 3 dealers. Strongly consider taking valuable pieces to a coin show. Keep collection records — older PCGS slabs sell for premium.</p>
           </CardContent>
         </Card>
       </main>

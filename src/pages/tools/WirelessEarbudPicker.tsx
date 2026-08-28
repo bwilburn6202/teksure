@@ -35,7 +35,7 @@ export default function WirelessEarbudPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1"><strong>Best for:</strong> {p.best}</p>
-                <p className="text-sm text-muted-foreground"><strong>Watch out:</strong> {p.cons}</p>
+                <p className="text-base text-muted-foreground"><strong>Watch out:</strong> {p.cons}</p>
               </CardContent>
             </Card>
           ))}
@@ -71,7 +71,7 @@ export default function WirelessEarbudPicker() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Earbud or over-ear?</h3>
-            <p className="text-sm text-muted-foreground">Over-ear headphones (Sony WH-1000XM5, Bose QuietComfort, Apple AirPods Max) sound better and last longer per charge but are bulkier. Worth it for long flights and home listening; earbuds win for everyday use, walks, and travel.</p>
+            <p className="text-base text-muted-foreground">Over-ear headphones (Sony WH-1000XM5, Bose QuietComfort, Apple AirPods Max) sound better and last longer per charge but are bulkier. Worth it for long flights and home listening; earbuds win for everyday use, walks, and travel.</p>
           </CardContent>
         </Card>
       </main>

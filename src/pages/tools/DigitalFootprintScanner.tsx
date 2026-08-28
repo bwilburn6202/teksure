@@ -343,7 +343,7 @@ export default function DigitalFootprintScanner() {
                 </span>
               </div>
               <Progress value={progressPct} className="h-4 mb-2" />
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 {progressPct === 100
                   ? 'All done! Scroll down for your personalized recommendations.'
                   : progressPct > 50

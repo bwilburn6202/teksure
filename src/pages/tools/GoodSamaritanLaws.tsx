@@ -19,7 +19,7 @@ export default function GoodSamaritanLaws() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What they cover</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>All 50 states have Good Samaritan laws.</li>
               <li>Protect those who help in emergencies from being sued.</li>
               <li>Cover: CPR, first aid, helping accident victims, calling 911.</li>
@@ -32,7 +32,7 @@ export default function GoodSamaritanLaws() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to step in</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Someone unconscious or not breathing.</li>
               <li>Choking — Heimlich.</li>
               <li>Severe bleeding — apply pressure.</li>
@@ -47,7 +47,7 @@ export default function GoodSamaritanLaws() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Red Cross First Aid app</strong> — free. Step-by-step emergency.</li>
               <li><strong>What3Words app</strong> — pinpoint exact location for 911 (down to 3m).</li>
               <li><strong>iPhone Emergency SOS</strong> — hold side button + volume.</li>
@@ -60,7 +60,7 @@ export default function GoodSamaritanLaws() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Limits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t do procedures you&apos;re not trained for.</li>
               <li>Don&apos;t accept money — voids protection in some states.</li>
               <li>Stop if professional help arrives.</li>
@@ -74,7 +74,7 @@ export default function GoodSamaritanLaws() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">CPR + Heimlich for life</h3>
-            <p className="text-sm text-muted-foreground">Most adults forget CPR within 2 years of training. Refresher every 1-2 years. Red Cross + American Heart Association both offer. Worth $50-100 every 2 years for muscle memory + confidence.</p>
+            <p className="text-base text-muted-foreground">Most adults forget CPR within 2 years of training. Refresher every 1-2 years. Red Cross + American Heart Association both offer. Worth $50-100 every 2 years for muscle memory + confidence.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function JuryDutyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior exemptions (varies)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Some states</strong> auto-exempt over 65 OR 70.</li>
               <li><strong>Some states</strong> require request — often easy.</li>
               <li><strong>Medical exemption</strong> — doctor&apos;s note.</li>
@@ -32,7 +32,7 @@ export default function JuryDutyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most courts now have online check-in (eJuror).</li>
               <li>Some let you reschedule online.</li>
               <li>Court websites have "Am I needed?" status update night before.</li>
@@ -44,7 +44,7 @@ export default function JuryDutyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to bring</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Jury summons.</li>
               <li>Photo ID.</li>
               <li>Book or tablet (lots of waiting).</li>
@@ -67,7 +67,7 @@ export default function JuryDutyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you serve</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily pay: $5-50 + mileage (varies wildly by state).</li>
               <li>Federal jury: $50/day.</li>
               <li>Most cases settle / dismiss before jury panel called.</li>
@@ -81,7 +81,7 @@ export default function JuryDutyApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Volunteer-only juries (rare)</h3>
-            <p className="text-sm text-muted-foreground">A few federal districts experiment with volunteer juries. If you want to serve as a senior — call court clerk, ask about volunteer programs. Some appreciate retired professionals.</p>
+            <p className="text-base text-muted-foreground">A few federal districts experiment with volunteer juries. If you want to serve as a senior — call court clerk, ask about volunteer programs. Some appreciate retired professionals.</p>
           </CardContent>
         </Card>
       </main>

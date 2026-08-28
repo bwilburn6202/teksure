@@ -33,7 +33,7 @@ export default function ToDoListSeniors() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function ToDoListSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Reminders voice tricks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Hey Siri, remind me at 9 AM tomorrow to take pills."</li>
               <li>"Hey Siri, remind me at the grocery store to buy bread." (location-based)</li>
               <li>"Hey Siri, remind me when I leave the house to lock the back door."</li>
@@ -54,7 +54,7 @@ export default function ToDoListSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Keep ONE list, not 10 systems.</li>
               <li>Phone reminder for time-sensitive things.</li>
               <li>Paper for daily routines (visible kitchen list).</li>
@@ -67,7 +67,7 @@ export default function ToDoListSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Memory hack</h3>
-            <p className="text-sm text-muted-foreground">Forget less by writing it down IMMEDIATELY. "Hey Siri, remind me to..." takes 5 sec. By time you "go do it later" — it&apos;s gone. Externalize memory to phone. Frees mental space for important things.</p>
+            <p className="text-base text-muted-foreground">Forget less by writing it down IMMEDIATELY. "Hey Siri, remind me to..." takes 5 sec. By time you "go do it later" — it&apos;s gone. Externalize memory to phone. Frees mental space for important things.</p>
           </CardContent>
         </Card>
       </main>

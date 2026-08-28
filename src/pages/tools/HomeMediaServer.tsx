@@ -26,7 +26,7 @@ export default function HomeMediaServer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you need</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NAS device</strong> — Synology DS224+ ($300) or DS923+ ($600). 2-4 hard drives slot in.</li>
               <li><strong>Hard drives</strong> — 2x 8TB ($300-400). Use TWO so if one fails, your data survives.</li>
               <li><strong>Plex (free) or Jellyfin (free)</strong> — software that streams.</li>
@@ -39,7 +39,7 @@ export default function HomeMediaServer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plex vs Jellyfin</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Plex (free; $5/mo Pass)</strong> — most popular. Beautiful interface. Works on Roku, Apple TV, every smart TV, every phone.</li>
               <li><strong>Jellyfin (free, open source)</strong> — privacy-focused alternative. No subscription ever. Slightly less polished.</li>
             </ul>
@@ -49,7 +49,7 @@ export default function HomeMediaServer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use cases</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Rip your DVDs</strong> — convert collection to digital. Use HandBrake (free).</li>
               <li><strong>Home movies / VHS tapes</strong> — store digitized family videos in one library.</li>
               <li><strong>Photo library</strong> — every family photo, organized by year/event.</li>
@@ -70,7 +70,7 @@ export default function HomeMediaServer() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For most seniors</h3>
-            <p className="text-sm text-muted-foreground">Skip this unless you have a specific reason — a 1,000-DVD collection, decades of home videos to digitize, or want full control of family media. Otherwise iCloud Photos / Google Photos cover the photos, streaming services cover movies.</p>
+            <p className="text-base text-muted-foreground">Skip this unless you have a specific reason — a 1,000-DVD collection, decades of home videos to digitize, or want full control of family media. Otherwise iCloud Photos / Google Photos cover the photos, streaming services cover movies.</p>
           </CardContent>
         </Card>
       </main>

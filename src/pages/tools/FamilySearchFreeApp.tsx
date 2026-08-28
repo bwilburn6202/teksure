@@ -19,7 +19,7 @@ export default function FamilySearchFreeApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why this is amazing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Completely free — no subscription, ever.</li>
               <li>Run by The Church of Jesus Christ of Latter-day Saints.</li>
               <li>Don&apos;t have to be Mormon to use it.</li>
@@ -33,7 +33,7 @@ export default function FamilySearchFreeApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to start</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to FamilySearch.org or download app.</li>
               <li>Create free account — email + password.</li>
               <li>Start with yourself, add parents.</li>
@@ -47,7 +47,7 @@ export default function FamilySearchFreeApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Records available</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>US Census records 1790–1950.</li>
               <li>Birth, marriage, death certificates.</li>
               <li>Military records.</li>
@@ -61,7 +61,7 @@ export default function FamilySearchFreeApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">FamilySearch + Ancestry</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FamilySearch users get free Ancestry.com discounted.</li>
               <li>Free FamilySearch Center access at LDS churches.</li>
               <li>Free access to paid sites at FamilySearch Centers.</li>
@@ -75,7 +75,7 @@ export default function FamilySearchFreeApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Memories feature</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Upload old family photos.</li>
               <li>Scan documents and store free.</li>
               <li>Record audio stories from elderly relatives.</li>
@@ -89,7 +89,7 @@ export default function FamilySearchFreeApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For tech-novice seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many local libraries offer free FamilySearch help.</li>
               <li>FamilySearch Centers — free in-person help.</li>
               <li>Volunteer experts answer questions.</li>
@@ -103,7 +103,7 @@ export default function FamilySearchFreeApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Skip Ancestry — start here</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re considering Ancestry.com&apos;s $30+/month subscription, try FamilySearch first. The basic family tree functionality is identical, the records are similar, and it costs nothing. Many genealogists use both — FamilySearch for the free database, Ancestry for DNA matching. Save your money for an AncestryDNA test ($99) instead of monthly fees.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re considering Ancestry.com&apos;s $30+/month subscription, try FamilySearch first. The basic family tree functionality is identical, the records are similar, and it costs nothing. Many genealogists use both — FamilySearch for the free database, Ancestry for DNA matching. Save your money for an AncestryDNA test ($99) instead of monthly fees.</p>
           </CardContent>
         </Card>
       </main>

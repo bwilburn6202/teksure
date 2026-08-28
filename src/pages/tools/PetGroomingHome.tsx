@@ -19,7 +19,7 @@ export default function PetGroomingHome() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tools needed ($75)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pet hair clippers</strong> ($30) — Wahl, Andis.</li>
               <li><strong>Slicker brush</strong> ($10).</li>
               <li><strong>Nail clippers / grinder</strong> ($15).</li>
@@ -33,7 +33,7 @@ export default function PetGroomingHome() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Brushing routine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Short hair — 2x/week.</li>
               <li>Long hair — daily.</li>
               <li>Reduces shedding 50%.</li>
@@ -47,7 +47,7 @@ export default function PetGroomingHome() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bath time</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Every 4-6 weeks for dogs.</li>
               <li>Cats — rarely (self-clean).</li>
               <li>Lukewarm water only.</li>
@@ -62,7 +62,7 @@ export default function PetGroomingHome() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Nail trimming</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Once monthly minimum.</li>
               <li>Cut tip only — avoid quick.</li>
               <li>Have styptic powder ready.</li>
@@ -76,7 +76,7 @@ export default function PetGroomingHome() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch first on YouTube</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search &quot;groom golden retriever home&quot;.</li>
               <li>Search breed-specific videos.</li>
               <li>Watch 3-4 before starting.</li>
@@ -90,7 +90,7 @@ export default function PetGroomingHome() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use pro</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Difficult breeds — Poodle, Standard.</li>
               <li>Aggressive / scared pet.</li>
               <li>Show cuts.</li>
@@ -104,7 +104,7 @@ export default function PetGroomingHome() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Mobile groomers</h3>
-            <p className="text-sm text-muted-foreground">Mobile pet groomer comes to home — $80-150 per visit. Less stress on pet + you. Search Yelp, Nextdoor. Booksy app — schedule online. Especially senior pets. Your dog visits you in your driveway — no transport. Worth premium for elderly pets / mobility-limited owners.</p>
+            <p className="text-base text-muted-foreground">Mobile pet groomer comes to home — $80-150 per visit. Less stress on pet + you. Search Yelp, Nextdoor. Booksy app — schedule online. Especially senior pets. Your dog visits you in your driveway — no transport. Worth premium for elderly pets / mobility-limited owners.</p>
           </CardContent>
         </Card>
       </main>

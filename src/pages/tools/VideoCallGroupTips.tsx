@@ -19,7 +19,7 @@ export default function VideoCallGroupTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick the right app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>FaceTime</strong> — best if everyone has iPhone/iPad. Up to 32 people. Free.</li>
               <li><strong>Zoom</strong> — best mixed-device. Free 40-minute calls, unlimited 1-on-1. Best for big groups.</li>
               <li><strong>Google Meet</strong> — free, works in browser. Up to 100 people for 1 hour free.</li>
@@ -32,7 +32,7 @@ export default function VideoCallGroupTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lighting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sit FACING a window. Light on your face = clear video.</li>
               <li>Don&apos;t sit with window BEHIND you — backlit silhouette.</li>
               <li>If no window — table lamp pointed at face, not at ceiling.</li>
@@ -44,7 +44,7 @@ export default function VideoCallGroupTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hearing better</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wired headphones or AirPods improve audio dramatically.</li>
               <li>Cut down background noise — TV off, fan off, AC off.</li>
               <li>iPhone Live Captions (Settings → Accessibility) — auto subtitles for every call.</li>
@@ -56,7 +56,7 @@ export default function VideoCallGroupTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Camera angle</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone propped UP at eye level. Not in your lap.</li>
               <li>Pile of books or a phone stand ($10) works fine.</li>
               <li>Looking down into phone shows ceiling and chin. Not flattering.</li>
@@ -68,7 +68,7 @@ export default function VideoCallGroupTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Group call etiquette</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mute when not speaking</strong> — kills background noise. Tap mic icon.</li>
               <li>Have a "host" who picks who speaks (avoids talking over each other).</li>
               <li>"Speaker view" shows whoever is talking large. Easier to follow.</li>
@@ -88,7 +88,7 @@ export default function VideoCallGroupTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">The grandkid trick</h3>
-            <p className="text-sm text-muted-foreground">Read a book aloud to grandkids over video. They&apos;ll watch you for 20 minutes happily. Beats trying to ask them about school for 5 awkward minutes. Pre-pick a book, hold it up, read with voices.</p>
+            <p className="text-base text-muted-foreground">Read a book aloud to grandkids over video. They&apos;ll watch you for 20 minutes happily. Beats trying to ask them about school for 5 awkward minutes. Pre-pick a book, hold it up, read with voices.</p>
           </CardContent>
         </Card>
       </main>

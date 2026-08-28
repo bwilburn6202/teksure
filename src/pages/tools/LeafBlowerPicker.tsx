@@ -33,7 +33,7 @@ export default function LeafBlowerPicker() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function LeafBlowerPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cordless = best for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No cord to trip over.</li>
               <li>Lighter than gas.</li>
               <li>Quieter than gas (less hearing damage).</li>
@@ -57,7 +57,7 @@ export default function LeafBlowerPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Under 8 lbs — easy on shoulders.</li>
               <li>Variable speed trigger (low for delicate plants).</li>
               <li>Cruise control button — no constant trigger pulling.</li>
@@ -71,7 +71,7 @@ export default function LeafBlowerPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip the leaf blower?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hire help</strong> — TaskRabbit, neighborhood teen $25-50/visit.</li>
               <li><strong>Fall cleanup service</strong> — $100-300 for whole yard.</li>
               <li><strong>Mulching mower</strong> — leaves break down into lawn.</li>
@@ -84,7 +84,7 @@ export default function LeafBlowerPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hearing protection (cheap foam plugs $5).</li>
               <li>Safety glasses — debris flies.</li>
               <li>Closed-toe shoes.</li>
@@ -99,7 +99,7 @@ export default function LeafBlowerPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Battery platform tip</h3>
-            <p className="text-sm text-muted-foreground">Pick ONE battery platform: EGO 56V, Ryobi 40V, DeWalt 20V Max. Then leaf blower + string trimmer + hedge trimmer + chainsaw + mower share batteries. Cheaper long-term + simpler. EGO + Ryobi = best senior platforms.</p>
+            <p className="text-base text-muted-foreground">Pick ONE battery platform: EGO 56V, Ryobi 40V, DeWalt 20V Max. Then leaf blower + string trimmer + hedge trimmer + chainsaw + mower share batteries. Cheaper long-term + simpler. EGO + Ryobi = best senior platforms.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function IdentityTheftRecovery() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First 24 hours</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>identitytheft.gov</strong> (FTC). Fills out everything for you.</li>
               <li>Place fraud alert with credit bureaus (free, online, 1 call).</li>
               <li>Call your bank/credit card companies. Cancel cards. Get new ones.</li>
@@ -33,7 +33,7 @@ export default function IdentityTheftRecovery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First week</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pull all 3 credit reports (annualcreditreport.com — free).</li>
               <li>Note unfamiliar accounts. Dispute each.</li>
               <li>Place CREDIT FREEZE at all 3 bureaus (free, separate from fraud alert).</li>
@@ -48,7 +48,7 @@ export default function IdentityTheftRecovery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First month</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Follow up on EVERY dispute in writing (certified mail).</li>
               <li>Re-check credit reports for new fraud.</li>
               <li>Watch utility, medical, mortgage statements.</li>
@@ -62,7 +62,7 @@ export default function IdentityTheftRecovery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>identitytheft.gov</strong> — FTC&apos;s recovery plan, customized to your situation.</li>
               <li><strong>Identity Theft Resource Center</strong> — 1-888-400-5530 free help.</li>
               <li><strong>AARP Fraud Watch Helpline</strong> — 1-877-908-3360 free for 50+.</li>
@@ -75,7 +75,7 @@ export default function IdentityTheftRecovery() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t pay LifeLock or similar</h3>
-            <p className="text-sm text-muted-foreground">$10-30/mo "identity theft protection" services do mostly what you can do for FREE — credit freeze + monitoring. Skip them. Spend money on credit freeze (free) + IP PIN (free) + identitytheft.gov (free).</p>
+            <p className="text-base text-muted-foreground">$10-30/mo "identity theft protection" services do mostly what you can do for FREE — credit freeze + monitoring. Skip them. Spend money on credit freeze (free) + IP PIN (free) + identitytheft.gov (free).</p>
           </CardContent>
         </Card>
       </main>

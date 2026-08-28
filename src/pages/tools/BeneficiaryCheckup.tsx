@@ -26,7 +26,7 @@ export default function BeneficiaryCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Accounts with beneficiary forms — UPDATE ALL</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Traditional IRA + Roth IRA</strong> — at brokerage (Vanguard, Fidelity, etc.).</li>
               <li><strong>401(k) / 403(b) / 457</strong> — at employer&apos;s plan provider.</li>
               <li><strong>Pension</strong> — survivor benefit option.</li>
@@ -44,7 +44,7 @@ export default function BeneficiaryCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annual review checklist</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick a date you&apos;ll remember (your birthday, January 1, etc.).</li>
               <li>Log into each account.</li>
               <li>Find "Beneficiaries" section (usually under Settings or Profile).</li>
@@ -66,7 +66,7 @@ export default function BeneficiaryCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Special situations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Recently divorced</strong> — most states auto-revoke ex-spouse from beneficiary, but federal accounts (401k, ERISA) may NOT. Update everything.</li>
               <li><strong>Recently widowed</strong> — your spouse may have been beneficiary on YOUR accounts. Update.</li>
               <li><strong>Minor children</strong> — name a TRUST for them, not the kids directly. Otherwise courts hold money until 18.</li>
@@ -79,7 +79,7 @@ export default function BeneficiaryCheckup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free unclaimed money check</h3>
-            <p className="text-sm text-muted-foreground">$70 BILLION sits unclaimed across the US — old life insurance, 401k from past jobs, dormant bank accounts. Search your name (and deceased relatives&apos;) at <strong>missingmoney.com</strong> and <strong>unclaimed.org</strong>. Free, official. Most people find $20-200; some find thousands.</p>
+            <p className="text-base text-muted-foreground">$70 BILLION sits unclaimed across the US — old life insurance, 401k from past jobs, dormant bank accounts. Search your name (and deceased relatives&apos;) at <strong>missingmoney.com</strong> and <strong>unclaimed.org</strong>. Free, official. Most people find $20-200; some find thousands.</p>
           </CardContent>
         </Card>
       </main>

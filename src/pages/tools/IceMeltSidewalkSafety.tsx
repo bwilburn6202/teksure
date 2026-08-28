@@ -19,7 +19,7 @@ export default function IceMeltSidewalkSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best ice melts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Calcium chloride</strong> — works to -25°F. Fast. Pet-friendly options.</li>
               <li><strong>Calcium magnesium acetate (CMA)</strong> — safest for plants + concrete.</li>
               <li><strong>Sand</strong> — adds traction (doesn&apos;t melt).</li>
@@ -33,7 +33,7 @@ export default function IceMeltSidewalkSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior winter shoes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Yaktrax / Stabilicers</strong> — slip-on cleats. $25-40.</li>
               <li><strong>ICEtrekkers</strong> — better grip on ice.</li>
               <li><strong>Sorel Caribou</strong> — warm + grippy boots.</li>
@@ -47,7 +47,7 @@ export default function IceMeltSidewalkSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Walking safely on ice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Penguin walk — short steps, weight forward.</li>
               <li>Hands OUT of pockets for balance.</li>
               <li>Walking stick / cane with rubber tip + ice tip.</li>
@@ -63,7 +63,7 @@ export default function IceMeltSidewalkSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hire snow help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local landscapers offer winter contracts.</li>
               <li><strong>Plowz &amp; Mowz</strong> app — Uber for snow plowing.</li>
               <li>Neighbor teens — $20-40/storm.</li>
@@ -77,7 +77,7 @@ export default function IceMeltSidewalkSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you must shovel</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Push, don&apos;t lift, when possible.</li>
               <li>Lift with legs. Take small loads.</li>
               <li>Stretch first.</li>
@@ -92,7 +92,7 @@ export default function IceMeltSidewalkSafety() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Driveway de-icing tools</h3>
-            <p className="text-sm text-muted-foreground"><strong>Hot Tubz Snow Joe heated mat</strong> — under welcome mat, melts before stepping. <strong>HeatTrak portable mats</strong> — for steps + walkways. <strong>Snowblower</strong> with electric start — see /tools/snowblower-pick. Driveway heating system $5-10K but install once + lasts decades.</p>
+            <p className="text-base text-muted-foreground"><strong>Hot Tubz Snow Joe heated mat</strong> — under welcome mat, melts before stepping. <strong>HeatTrak portable mats</strong> — for steps + walkways. <strong>Snowblower</strong> with electric start — see /tools/snowblower-pick. Driveway heating system $5-10K but install once + lasts decades.</p>
           </CardContent>
         </Card>
       </main>

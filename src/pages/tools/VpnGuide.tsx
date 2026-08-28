@@ -155,7 +155,7 @@ export default function VpnGuide() {
                             <Icon className="h-4 w-4 text-primary" />
                             <span className="font-semibold text-sm">{step.title}</span>
                           </div>
-                          <p className="text-sm text-muted-foreground">{step.body}</p>
+                          <p className="text-base text-muted-foreground">{step.body}</p>
                         </div>
                       </div>
                     );

@@ -26,7 +26,7 @@ export default function MedicarePartDPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use the official Medicare Plan Finder (free)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <a href="https://www.medicare.gov/plan-compare" target="_blank" rel="noopener noreferrer" className="text-primary underline">medicare.gov/plan-compare</a>.</li>
               <li>Click "Find Drug & Health Plans" or "Compare 2026 plans".</li>
               <li>Type your zip code.</li>
@@ -82,7 +82,7 @@ export default function MedicarePartDPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground">SHIP — your State Health Insurance Assistance Program — offers free, unbiased Medicare counseling. They\'ll sit with you and run the Plan Finder. Find yours at <strong>shiphelp.org</strong> or call 1-877-839-2675.</p>
+            <p className="text-base text-muted-foreground">SHIP — your State Health Insurance Assistance Program — offers free, unbiased Medicare counseling. They\'ll sit with you and run the Plan Finder. Find yours at <strong>shiphelp.org</strong> or call 1-877-839-2675.</p>
           </CardContent>
         </Card>
       </main>

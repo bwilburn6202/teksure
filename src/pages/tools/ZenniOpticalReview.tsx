@@ -19,7 +19,7 @@ export default function ZenniOpticalReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheapest legit online glasses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Frames + prescription lenses from $9.</li>
               <li>Average pair: $30–$50.</li>
               <li>Compare to $300+ traditional optical.</li>
@@ -33,7 +33,7 @@ export default function ZenniOpticalReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can get cheap</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Single-vision distance or reading glasses.</li>
               <li>Bifocals — $20+.</li>
               <li>Progressive lenses — $30+ (vs $200+ elsewhere).</li>
@@ -47,7 +47,7 @@ export default function ZenniOpticalReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for ordering</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Need prescription + PD measurement.</li>
               <li>PD = pupillary distance, in millimeters.</li>
               <li>Ask doctor or measure at home.</li>
@@ -61,7 +61,7 @@ export default function ZenniOpticalReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for senior use cases</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Backup glasses — keep extra in car or purse.</li>
               <li>Reading-only glasses for nightstand.</li>
               <li>Computer glasses for home office.</li>
@@ -75,7 +75,7 @@ export default function ZenniOpticalReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drawbacks to know</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adjustments — your local optician may charge.</li>
               <li>Returns — limited window (30 days).</li>
               <li>Some shipping issues.</li>
@@ -89,7 +89,7 @@ export default function ZenniOpticalReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Adjustments</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most local opticians adjust new glasses.</li>
               <li>Free at place that sold them, $5–$15 elsewhere.</li>
               <li>Costco optical sometimes adjusts free.</li>
@@ -103,7 +103,7 @@ export default function ZenniOpticalReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Order one pair to test</h3>
-            <p className="text-sm text-muted-foreground">Spend $20 on one pair from Zenni to test quality before going all-in. Many seniors order their main pair from Warby Parker (better quality, returns) and a backup pair from Zenni (cheap insurance against losing or breaking the good pair). For purely reading glasses or sunglasses, Zenni&apos;s $9–$30 prices are unbeatable.</p>
+            <p className="text-base text-muted-foreground">Spend $20 on one pair from Zenni to test quality before going all-in. Many seniors order their main pair from Warby Parker (better quality, returns) and a backup pair from Zenni (cheap insurance against losing or breaking the good pair). For purely reading glasses or sunglasses, Zenni&apos;s $9–$30 prices are unbeatable.</p>
           </CardContent>
         </Card>
       </main>

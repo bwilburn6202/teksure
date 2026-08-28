@@ -19,7 +19,7 @@ export default function PhoneSecurityCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Update everything</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iOS: Settings → General → Software Update.</li>
               <li>Android: Settings → System → Software Update.</li>
               <li>Update apps: App Store + Play Store.</li>
@@ -33,7 +33,7 @@ export default function PhoneSecurityCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Strong screen lock</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>6-digit passcode minimum (better than 4).</li>
               <li>Face ID / Touch ID enabled.</li>
               <li>Screen locks 1 minute or less.</li>
@@ -47,7 +47,7 @@ export default function PhoneSecurityCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">App permissions audit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Privacy + Security.</li>
               <li>Check Location Services.</li>
               <li>Camera + Microphone access.</li>
@@ -61,7 +61,7 @@ export default function PhoneSecurityCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find My / Find My Device</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone: Settings → Apple ID → Find My.</li>
               <li>Android: Settings → Google → Find My Device.</li>
               <li>Enable both location + send last location.</li>
@@ -75,7 +75,7 @@ export default function PhoneSecurityCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Auto-fill + saved passwords</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iCloud Keychain (Apple) — secure.</li>
               <li>Google Password Manager — secure.</li>
               <li>Or use Bitwarden / 1Password.</li>
@@ -89,7 +89,7 @@ export default function PhoneSecurityCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Block unknown senders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone: Settings → Messages → Filter Unknown.</li>
               <li>Reduces text spam.</li>
               <li>Settings → Phone → Silence Unknown Callers.</li>
@@ -103,7 +103,7 @@ export default function PhoneSecurityCheckup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Once a year takes 10 minutes</h3>
-            <p className="text-sm text-muted-foreground">Pick a day each year — your birthday works — to do this 10-minute phone security checkup. Update operating system, review app permissions, ensure screen lock is strong, verify Find My is enabled. Combined with strong passwords + 2FA on email, your phone is significantly safer than 90% of others. Maintenance prevents disaster.</p>
+            <p className="text-base text-muted-foreground">Pick a day each year — your birthday works — to do this 10-minute phone security checkup. Update operating system, review app permissions, ensure screen lock is strong, verify Find My is enabled. Combined with strong passwords + 2FA on email, your phone is significantly safer than 90% of others. Maintenance prevents disaster.</p>
           </CardContent>
         </Card>
       </main>

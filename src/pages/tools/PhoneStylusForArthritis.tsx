@@ -19,7 +19,7 @@ export default function PhoneStylusForArthritis() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why use a stylus?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Easier than fingers for arthritis sufferers.</li>
               <li>More accurate — no &quot;fat finger&quot; mistakes.</li>
               <li>Works with shaky hands too.</li>
@@ -33,7 +33,7 @@ export default function PhoneStylusForArthritis() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Basic capacitive stylus</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Works on any touchscreen.</li>
               <li>Rubber or fabric tip.</li>
               <li>$5–$15 each — buy 2-3 for around house.</li>
@@ -47,7 +47,7 @@ export default function PhoneStylusForArthritis() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Active styluses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>More precise — fine point.</li>
               <li>Battery powered.</li>
               <li>Better for drawing or note-taking.</li>
@@ -61,7 +61,7 @@ export default function PhoneStylusForArthritis() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Pencil + S-Pen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Pencil works with iPad.</li>
               <li>USB-C model: $79.</li>
               <li>Pencil Pro: $129.</li>
@@ -75,7 +75,7 @@ export default function PhoneStylusForArthritis() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Choosing right stylus</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Thicker = easier to grip with arthritis.</li>
               <li>Look for triangular or fat barrel shapes.</li>
               <li>Soft-grip rubberized handles best.</li>
@@ -89,7 +89,7 @@ export default function PhoneStylusForArthritis() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other accessibility add-ons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone grip rings on back of phone.</li>
               <li>PopSockets — easier to hold.</li>
               <li>Phone stands — desk or kitchen counter.</li>
@@ -103,7 +103,7 @@ export default function PhoneStylusForArthritis() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">$15 stylus = huge upgrade</h3>
-            <p className="text-sm text-muted-foreground">If you have arthritis or struggle with phone touchscreens, a basic $15 capacitive stylus pen can transform your phone experience. The thicker barrel is easier to grip than tapping with fingers. The fine tip is more accurate than fingertips. Buy 3 — keep one in your purse, one on your nightstand, one in the kitchen. Many seniors say it&apos;s the best $15 they&apos;ve spent on phone accessories.</p>
+            <p className="text-base text-muted-foreground">If you have arthritis or struggle with phone touchscreens, a basic $15 capacitive stylus pen can transform your phone experience. The thicker barrel is easier to grip than tapping with fingers. The fine tip is more accurate than fingertips. Buy 3 — keep one in your purse, one on your nightstand, one in the kitchen. Many seniors say it&apos;s the best $15 they&apos;ve spent on phone accessories.</p>
           </CardContent>
         </Card>
       </main>

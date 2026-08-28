@@ -69,7 +69,7 @@ export default function PensionLumpSumDecision() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Check pension safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Federal pensions (military, federal employee) — extremely safe.</li>
               <li>State/municipal pensions — varies. Some states (IL, NJ, KY) are underfunded.</li>
               <li>Private corporate pensions — protected up to ~$72,000/year by PBGC (federal insurance).</li>
@@ -82,7 +82,7 @@ export default function PensionLumpSumDecision() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get help — this is too big to DIY</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fee-only fiduciary advisor</strong> (NAPFA.org, $300-1500 one-time) — runs the math for YOUR specific case.</li>
               <li><strong>Vanguard Personal Advisor</strong> — at 0.30%/year for retirement accounts.</li>
               <li><strong>Don\'t use the broker who calls offering to "roll over your pension"</strong> — they often push expensive annuities or front-loaded mutual funds.</li>
@@ -93,7 +93,7 @@ export default function PensionLumpSumDecision() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When in doubt, take the monthly check</h3>
-            <p className="text-sm text-muted-foreground">For most retirees, the monthly pension is the right answer. It\'s essentially a free annuity — you don\'t pay sales commission. It hedges against living too long. The lump sum sounds appealing but loses to monthly more often than not.</p>
+            <p className="text-base text-muted-foreground">For most retirees, the monthly pension is the right answer. It\'s essentially a free annuity — you don\'t pay sales commission. It hedges against living too long. The lump sum sounds appealing but loses to monthly more often than not.</p>
           </CardContent>
         </Card>
       </main>

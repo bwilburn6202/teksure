@@ -19,7 +19,7 @@ export default function FoamRollerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best rollers for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AmazonBasics smooth foam</strong> ($15-25) — softer, beginner. 36" length.</li>
               <li><strong>OPTP PRO Roller (white, smooth)</strong> ($30) — PT favorite. Firm but not knobby.</li>
               <li>SKIP textured/knobby rollers (TriggerPoint Grid) for seniors at first — too aggressive.</li>
@@ -31,7 +31,7 @@ export default function FoamRollerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Gentle senior moves</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Upper back stretch</strong> — roller across upper back, hands behind head, slowly arch.</li>
               <li><strong>Side body stretch</strong> — roller under hip, side-lying.</li>
               <li><strong>Calf release</strong> — sit, calf on roller, gently roll.</li>
@@ -46,7 +46,7 @@ export default function FoamRollerGuide() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NEVER on lower back directly — protects spine.</li>
               <li>NEVER on bones (knees, elbows, spine).</li>
               <li>Don&apos;t roll over varicose veins.</li>
@@ -60,7 +60,7 @@ export default function FoamRollerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free YouTube guides</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bob and Brad PT</strong> — "foam roller exercises for seniors". Most senior-friendly.</li>
               <li><strong>SilverSneakers</strong> — gentle modifications.</li>
               <li><strong>More Life Health Seniors</strong> — Mike Hines.</li>
@@ -72,7 +72,7 @@ export default function FoamRollerGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best at bedtime</h3>
-            <p className="text-sm text-muted-foreground">5 min foam rolling before bed eases stiffness, helps sleep. Don&apos;t do it first thing in morning when joints are coldest. Warm up first.</p>
+            <p className="text-base text-muted-foreground">5 min foam rolling before bed eases stiffness, helps sleep. Don&apos;t do it first thing in morning when joints are coldest. Warm up first.</p>
           </CardContent>
         </Card>
       </main>

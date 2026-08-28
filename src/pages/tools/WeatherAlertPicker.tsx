@@ -76,7 +76,7 @@ export default function WeatherAlertPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For grandparents who live elsewhere</h3>
-            <p className="text-sm text-muted-foreground">Add their city to your iPhone or Android weather app. When a storm is heading their way, you'll see it. Many seniors can use a friendly text — "Heads up, big storm coming through your area Tuesday night, charge your phone."</p>
+            <p className="text-base text-muted-foreground">Add their city to your iPhone or Android weather app. When a storm is heading their way, you'll see it. Many seniors can use a friendly text — "Heads up, big storm coming through your area Tuesday night, charge your phone."</p>
           </CardContent>
         </Card>
       </main>

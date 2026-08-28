@@ -45,7 +45,7 @@ export default function GeneratorPick() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -54,7 +54,7 @@ export default function GeneratorPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Whole-house — what to know</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Auto-start</strong> within 10-30 seconds of outage.</li>
               <li><strong>Natural gas (preferred)</strong> — never run out.</li>
               <li><strong>Propane</strong> — bigger tank fills longer outages.</li>
@@ -81,7 +81,7 @@ export default function GeneratorPick() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Critical for medical needs</h3>
-            <p className="text-sm text-muted-foreground">If you use CPAP, oxygen concentrator, dialysis, or insulin (refrigerated): a whole-house generator OR battery system is genuinely life-protecting. Some Medicare Advantage and disability programs partially fund medically-necessary backup power.</p>
+            <p className="text-base text-muted-foreground">If you use CPAP, oxygen concentrator, dialysis, or insulin (refrigerated): a whole-house generator OR battery system is genuinely life-protecting. Some Medicare Advantage and disability programs partially fund medically-necessary backup power.</p>
           </CardContent>
         </Card>
       </main>

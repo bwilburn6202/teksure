@@ -35,7 +35,7 @@ export default function LawnCareApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function LawnCareApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly lawn options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Robotic mower</strong> — set and forget. (See our Robotic Lawn Mower Pick.)</li>
               <li><strong>GreenPal local mower</strong> — $25-50 per mow.</li>
               <li><strong>Drought-tolerant grass</strong> — buffalograss, fescue. Mow 2x/month vs 4x.</li>
@@ -57,7 +57,7 @@ export default function LawnCareApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When DIY is great</h3>
-            <p className="text-sm text-muted-foreground">If yard work is your enjoyable hobby — keep it. <strong>Sunday Lawn Care</strong> ($120-300/yr) sends you the right fertilizer for YOUR soil at the right time. Cheaper and healthier than mass-market brands. Best DIY-friendly modern lawn service.</p>
+            <p className="text-base text-muted-foreground">If yard work is your enjoyable hobby — keep it. <strong>Sunday Lawn Care</strong> ($120-300/yr) sends you the right fertilizer for YOUR soil at the right time. Cheaper and healthier than mass-market brands. Best DIY-friendly modern lawn service.</p>
           </CardContent>
         </Card>
       </main>

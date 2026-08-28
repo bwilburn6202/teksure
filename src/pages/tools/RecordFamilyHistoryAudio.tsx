@@ -19,7 +19,7 @@ export default function RecordFamilyHistoryAudio() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why audio matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Voice carries emotion text never can.</li>
               <li>Hear laughter, accents, hesitations.</li>
               <li>Easier than writing — just talk.</li>
@@ -33,7 +33,7 @@ export default function RecordFamilyHistoryAudio() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">StoryCorps app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free app from National Public Radio.</li>
               <li>Records 40-minute interviews.</li>
               <li>Built-in question prompts.</li>
@@ -47,7 +47,7 @@ export default function RecordFamilyHistoryAudio() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice Memos (iPhone)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pre-installed on every iPhone.</li>
               <li>Tap red button — start recording.</li>
               <li>Automatic transcription in newer iPhones.</li>
@@ -61,7 +61,7 @@ export default function RecordFamilyHistoryAudio() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Conducting good interviews</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Quiet room — no TV, no fan.</li>
               <li>Ask open-ended questions: &quot;Tell me about...&quot;</li>
               <li>Let silences happen — don&apos;t fill them.</li>
@@ -75,7 +75,7 @@ export default function RecordFamilyHistoryAudio() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Great questions to ask elders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>What&apos;s your earliest memory?</li>
               <li>Tell me about your parents.</li>
               <li>What was school like for you?</li>
@@ -89,7 +89,7 @@ export default function RecordFamilyHistoryAudio() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to save recordings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iCloud, Google Drive, Dropbox — back up always.</li>
               <li>Email to several family members.</li>
               <li>FamilySearch Memories — free permanent archive.</li>
@@ -103,7 +103,7 @@ export default function RecordFamilyHistoryAudio() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t wait — start this week</h3>
-            <p className="text-sm text-muted-foreground">If you have an elderly parent, aunt, uncle, or older relative — record them this Sunday. Not next month, not when you have time. Pull out your phone, open Voice Memos or StoryCorps, ask three questions. Adult children most regret not having recorded their parents&apos; voices when they had the chance. Take 20 minutes today. The recording will become priceless.</p>
+            <p className="text-base text-muted-foreground">If you have an elderly parent, aunt, uncle, or older relative — record them this Sunday. Not next month, not when you have time. Pull out your phone, open Voice Memos or StoryCorps, ask three questions. Adult children most regret not having recorded their parents&apos; voices when they had the chance. Take 20 minutes today. The recording will become priceless.</p>
           </CardContent>
         </Card>
       </main>

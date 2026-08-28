@@ -26,7 +26,7 @@ export default function RespiteCareFinders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free or low-cost respite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Area Agency on Aging</strong> (AAA) — every county has one. Some pay for in-home help.</li>
               <li><strong>Veterans</strong> — VA Respite Program, 30 days/year free for vets&apos; family caregivers.</li>
               <li><strong>Medicaid waivers</strong> — most states cover respite. Check your state Medicaid office.</li>
@@ -41,7 +41,7 @@ export default function RespiteCareFinders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Finder tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Eldercare Locator</strong> — 1-800-677-1116 OR eldercare.acl.gov. Free hotline.</li>
               <li><strong>ARCH National Respite Network</strong> — archrespite.org. State-by-state directory.</li>
               <li><strong>Care.com</strong> — paid: $10-30/hour for in-home help. Background checks available.</li>
@@ -54,7 +54,7 @@ export default function RespiteCareFinders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Types of respite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>In-home companion</strong> — paid helper sits with patient, $20-30/hr.</li>
               <li><strong>Adult day program</strong> — patient goes to facility for 4-8 hours. Activities, meals.</li>
               <li><strong>Overnight respite</strong> — patient stays at care facility 1-7 days.</li>
@@ -68,7 +68,7 @@ export default function RespiteCareFinders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time respite checklist</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Write down medication schedule + allergies.</li>
               <li>Emergency contacts list.</li>
               <li>Doctor names + phone numbers.</li>
@@ -83,7 +83,7 @@ export default function RespiteCareFinders() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Self-care isn&apos;t selfish</h3>
-            <p className="text-sm text-muted-foreground">"I&apos;m fine, I don&apos;t need a break" — said by every burned-out caregiver. Respite once a week is preventive medicine for YOUR health. Use it. Your loved one needs you healthy more than constantly present.</p>
+            <p className="text-base text-muted-foreground">"I&apos;m fine, I don&apos;t need a break" — said by every burned-out caregiver. Respite once a week is preventive medicine for YOUR health. Use it. Your loved one needs you healthy more than constantly present.</p>
           </CardContent>
         </Card>
       </main>

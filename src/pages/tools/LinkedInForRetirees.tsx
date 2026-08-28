@@ -19,7 +19,7 @@ export default function LinkedInForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why retiree LinkedIn</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find consulting clients.</li>
               <li>Mentor younger professionals.</li>
               <li>Stay connected to industry.</li>
@@ -34,7 +34,7 @@ export default function LinkedInForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Profile essentials</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Professional headshot (no selfies).</li>
               <li>Headline: &quot;Retired CEO seeking consulting&quot; etc.</li>
               <li>About section: 2-3 paragraphs of value you offer.</li>
@@ -49,7 +49,7 @@ export default function LinkedInForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior advantages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Decades of experience.</li>
               <li>Wide network = doors open.</li>
               <li>Industry credibility.</li>
@@ -63,7 +63,7 @@ export default function LinkedInForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free vs Premium</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Free</strong> — most people fine.</li>
               <li><strong>Career ($30/mo)</strong> — for active job hunting.</li>
               <li><strong>Business ($60/mo)</strong> — sales/recruiting.</li>
@@ -76,7 +76,7 @@ export default function LinkedInForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cryptocurrency &quot;opportunities&quot; = scams.</li>
               <li>Romance scammers reach out.</li>
               <li>Recruiters asking for SSN before job offer = scam.</li>
@@ -90,7 +90,7 @@ export default function LinkedInForRetirees() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Build your reputation</h3>
-            <p className="text-sm text-muted-foreground">Post 2-4x/month: industry insights, articles you read, life advice. Comment thoughtfully. Engage. Build slowly. 6 months = following grows. 1 year = clients/opportunities come to you. Many retirees find consulting clients via LinkedIn.</p>
+            <p className="text-base text-muted-foreground">Post 2-4x/month: industry insights, articles you read, life advice. Comment thoughtfully. Engage. Build slowly. 6 months = following grows. 1 year = clients/opportunities come to you. Many retirees find consulting clients via LinkedIn.</p>
           </CardContent>
         </Card>
       </main>

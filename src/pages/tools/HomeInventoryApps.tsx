@@ -33,7 +33,7 @@ export default function HomeInventoryApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -49,7 +49,7 @@ export default function HomeInventoryApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">2-hour quick inventory</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Walk through each room with phone.</li>
               <li>Open each closet, drawer, cabinet.</li>
               <li>Take VIDEO of each room (faster than photos).</li>
@@ -64,7 +64,7 @@ export default function HomeInventoryApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">High-priority items to document</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>TVs, computers, tablets, phones (with serial numbers).</li>
               <li>Jewelry (with appraisals if any).</li>
               <li>Watches, art, collectibles.</li>
@@ -80,7 +80,7 @@ export default function HomeInventoryApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save receipts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Snap photo of receipt right after purchase. Save to Photos, Receipts album.</li>
               <li>Or scan to Apple Notes / Google Drive.</li>
               <li>Email receipts — keep a "Receipts" email folder forever.</li>
@@ -92,7 +92,7 @@ export default function HomeInventoryApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to keep the inventory</h3>
-            <p className="text-sm text-muted-foreground">Cloud (iCloud, Google Drive). Separate USB drive at a relative&apos;s house. NOT just on your phone — that burns in the same fire as the house. Email a copy to your home insurance agent so they have it on file.</p>
+            <p className="text-base text-muted-foreground">Cloud (iCloud, Google Drive). Separate USB drive at a relative&apos;s house. NOT just on your phone — that burns in the same fire as the house. Email a copy to your home insurance agent so they have it on file.</p>
           </CardContent>
         </Card>
       </main>

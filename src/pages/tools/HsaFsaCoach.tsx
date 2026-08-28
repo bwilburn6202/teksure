@@ -19,7 +19,7 @@ export default function HsaFsaCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick difference</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>HSA (Health Savings Account)</strong> — only available with high-deductible health plans. Money rolls over forever. Triple tax advantage. AFTER 65, you can use it for non-medical expenses too (like an IRA).</li>
               <li><strong>FSA (Flexible Spending Account)</strong> — through your employer. Use it or LOSE IT each year (with small carryover or grace period).</li>
               <li><strong>Limited-Purpose FSA</strong> — for dental and vision only. Pairs with HSA.</li>
@@ -91,7 +91,7 @@ export default function HsaFsaCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save receipts (HSA)</h3>
-            <p className="text-sm text-muted-foreground">For HSAs, you don\'t have to USE the money the year you spend it. Save medical receipts forever. Years later, you can REIMBURSE yourself tax-free for them — letting your HSA grow as an investment.</p>
+            <p className="text-base text-muted-foreground">For HSAs, you don\'t have to USE the money the year you spend it. Save medical receipts forever. Years later, you can REIMBURSE yourself tax-free for them — letting your HSA grow as an investment.</p>
           </CardContent>
         </Card>
       </main>

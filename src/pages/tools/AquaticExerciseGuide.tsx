@@ -19,7 +19,7 @@ export default function AquaticExerciseGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Benefits for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Buoyancy = no joint impact.</li>
               <li>Water resistance = strength training.</li>
               <li>Lower BP + heart rate.</li>
@@ -34,7 +34,7 @@ export default function AquaticExerciseGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to swim</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YMCA</strong> — most have pools, senior memberships $30-50.</li>
               <li><strong>Senior centers</strong> — many have pools, often free/cheap.</li>
               <li><strong>Community recreation centers</strong>.</li>
@@ -48,7 +48,7 @@ export default function AquaticExerciseGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Water aerobics class</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most popular senior class.</li>
               <li>30-45 min sessions.</li>
               <li>Standing in chest-deep water.</li>
@@ -63,7 +63,7 @@ export default function AquaticExerciseGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lap swimming</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Best cardio for seniors.</li>
               <li>Start with 5-10 laps.</li>
               <li>Build up over weeks.</li>
@@ -78,7 +78,7 @@ export default function AquaticExerciseGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior swim gear</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Modest swimsuit (TYR, Speedo).</li>
               <li>Goggles — better visibility, eye protection.</li>
               <li>Swim cap — keeps hair clean.</li>
@@ -93,7 +93,7 @@ export default function AquaticExerciseGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NEVER swim alone (heart attack in water).</li>
               <li>Lifeguard required for senior swims.</li>
               <li>Stay hydrated (yes, in water).</li>
@@ -108,7 +108,7 @@ export default function AquaticExerciseGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free with Medicare Advantage</h3>
-            <p className="text-sm text-muted-foreground"><strong>SilverSneakers</strong> includes most YMCAs free. <strong>Renew Active</strong> (UnitedHealthcare) similar. Most Medicare Advantage plans include free fitness benefit. Check yours. Pool access often $30-50/mo elsewhere — free for many seniors.</p>
+            <p className="text-base text-muted-foreground"><strong>SilverSneakers</strong> includes most YMCAs free. <strong>Renew Active</strong> (UnitedHealthcare) similar. Most Medicare Advantage plans include free fitness benefit. Check yours. Pool access often $30-50/mo elsewhere — free for many seniors.</p>
           </CardContent>
         </Card>
       </main>

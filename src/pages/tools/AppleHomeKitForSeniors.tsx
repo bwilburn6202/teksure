@@ -19,7 +19,7 @@ export default function AppleHomeKitForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is HomeKit?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple&apos;s smart home platform.</li>
               <li>Built into Home app on iPhone.</li>
               <li>Works with HomeKit-compatible devices.</li>
@@ -33,7 +33,7 @@ export default function AppleHomeKitForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly devices</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lutron Caseta — easiest smart light switches.</li>
               <li>Philips Hue — color smart bulbs.</li>
               <li>Ecobee thermostat — auto temperature control.</li>
@@ -47,7 +47,7 @@ export default function AppleHomeKitForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice control with Siri</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Hey Siri, turn on living room lights.&quot;</li>
               <li>&quot;Set thermostat to 70.&quot;</li>
               <li>&quot;Lock front door.&quot;</li>
@@ -61,7 +61,7 @@ export default function AppleHomeKitForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hub options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple TV — best HomeKit hub.</li>
               <li>HomePod or HomePod mini — also acts as hub.</li>
               <li>iPad set up as Home Hub.</li>
@@ -75,7 +75,7 @@ export default function AppleHomeKitForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Automations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;When I arrive home, turn on lights.&quot;</li>
               <li>&quot;At sunset, turn on porch light.&quot;</li>
               <li>&quot;When I leave, lock door + turn off thermostat.&quot;</li>
@@ -89,7 +89,7 @@ export default function AppleHomeKitForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sharing with family</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Invite family members to home in Home app.</li>
               <li>They control devices remotely.</li>
               <li>Adult children can check in on parents.</li>
@@ -103,7 +103,7 @@ export default function AppleHomeKitForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with one bulb + HomePod mini</h3>
-            <p className="text-sm text-muted-foreground">A great starter HomeKit setup for $130: HomePod mini ($99) + Lutron Caseta starter kit ($30 for one switch). Plug in HomePod mini, install switch (or have electrician do it), and say &quot;Hey Siri, turn on lights.&quot; That simple. Once comfortable, add more bulbs, thermostats, locks. Most seniors find HomeKit much simpler than Alexa for Apple users.</p>
+            <p className="text-base text-muted-foreground">A great starter HomeKit setup for $130: HomePod mini ($99) + Lutron Caseta starter kit ($30 for one switch). Plug in HomePod mini, install switch (or have electrician do it), and say &quot;Hey Siri, turn on lights.&quot; That simple. Once comfortable, add more bulbs, thermostats, locks. Most seniors find HomeKit much simpler than Alexa for Apple users.</p>
           </CardContent>
         </Card>
       </main>

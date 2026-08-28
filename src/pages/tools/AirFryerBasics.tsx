@@ -26,7 +26,7 @@ export default function AirFryerBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Time + temperature cheat sheet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Frozen french fries</strong> — 400°F for 12-15 min, shake halfway.</li>
               <li><strong>Frozen chicken nuggets/tenders</strong> — 400°F for 8-10 min.</li>
               <li><strong>Bacon</strong> — 350°F for 8-10 min. Crispy, less mess than pan.</li>
@@ -44,7 +44,7 @@ export default function AirFryerBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What NOT to put in</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wet batter (tempura, beer batter) — drips off, burns on heating element.</li>
               <li>Cheese on top — flies around, melts onto fan. Add cheese in last 1-2 minutes only.</li>
               <li>Leafy greens — burn instantly. Spinach, lettuce, kale chips need very low heat.</li>
@@ -58,7 +58,7 @@ export default function AirFryerBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cleaning tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Let cool 5 minutes after use.</li>
               <li>Basket goes in dishwasher OR scrub with soapy hot water.</li>
               <li>Stuck-on food — soak basket in hot water 10 min first.</li>
@@ -72,7 +72,7 @@ export default function AirFryerBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for low-effort meals</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pre-seasoned salmon fillet + frozen veg = 10-min dinner.</li>
               <li>Frozen chicken tenders + carrots = quick comfort food.</li>
               <li>Reheating leftovers — way better than microwave.</li>
@@ -85,7 +85,7 @@ export default function AirFryerBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best buys</h3>
-            <p className="text-sm text-muted-foreground">For 1-2 people: <strong>Cosori 5.8qt</strong> ($85) or <strong>Ninja AF101</strong> ($90). For families: <strong>Ninja Foodi DualZone</strong> ($170, 2 baskets at once). Skip the extra fancy "smart" ones — they all do the same thing.</p>
+            <p className="text-base text-muted-foreground">For 1-2 people: <strong>Cosori 5.8qt</strong> ($85) or <strong>Ninja AF101</strong> ($90). For families: <strong>Ninja Foodi DualZone</strong> ($170, 2 baskets at once). Skip the extra fancy "smart" ones — they all do the same thing.</p>
           </CardContent>
         </Card>
       </main>

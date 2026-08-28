@@ -19,7 +19,7 @@ export default function UtilityBillReduction() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Electric — biggest impact</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Time-of-Use plan</strong> — many utilities now charge less for off-peak power. Run dishwasher, laundry, and EV charger overnight. Saves 20-40%.</li>
               <li><strong>Smart thermostat (Nest, Ecobee)</strong> — $130 once, saves $100-180/year average. Pays for itself in a year.</li>
               <li><strong>LED bulbs</strong> — replace any remaining incandescent or CFL. Pays back in 6 months.</li>
@@ -33,7 +33,7 @@ export default function UtilityBillReduction() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Gas / heating</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Drop the thermostat 2°</strong> at night — about 10% off heating bill.</li>
               <li><strong>Seal drafts</strong> — $20 in weather stripping pays back in one season.</li>
               <li><strong>Wash clothes in cold</strong> — the heat for hot wash is most of the cost.</li>
@@ -46,7 +46,7 @@ export default function UtilityBillReduction() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Water</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Find leaks</strong> — toilets are sneaky. Drop food coloring in the tank. If it shows up in the bowl in 15 min without flushing, you have a leak. New flapper = $5.</li>
               <li><strong>Low-flow shower head</strong> — $25, saves up to 40% of shower water.</li>
               <li><strong>Smart sprinkler controller</strong> (Rachio, Rainbird) — $150, saves 20-30% on watering.</li>
@@ -58,7 +58,7 @@ export default function UtilityBillReduction() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Internet & cable</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Buy your own router/modem</strong> — saves $14-15/month rental fee. Pays for itself in 6-12 months.</li>
               <li><strong>Call once a year</strong>: "I\'m getting a flyer from [competitor] for $X. Can you match?" — usually they will.</li>
               <li><strong>Drop cable for streaming</strong> — Pluto / Tubi / Roku Channel are free. (See Free Streaming Services.)</li>
@@ -71,7 +71,7 @@ export default function UtilityBillReduction() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Apps that track and find savings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Your utility\'s own app</strong> — usually has usage charts and bill alerts. Free.</li>
               <li><strong>Sense Energy Monitor</strong> ($300, one-time) — clamps onto your home electric panel, shows what\'s using power. Worth it for the curious.</li>
               <li><strong>Rocket Money</strong> — finds and renegotiates bills. Free version often suggests cheaper rates.</li>
@@ -94,7 +94,7 @@ export default function UtilityBillReduction() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick win this month</h3>
-            <p className="text-sm text-muted-foreground">Call your internet/cable company. Ask for a "loyal customer discount" or "promotional rate". Half the time, you save $10-30/month with one 10-minute call. Same with your home insurance.</p>
+            <p className="text-base text-muted-foreground">Call your internet/cable company. Ask for a "loyal customer discount" or "promotional rate". Half the time, you save $10-30/month with one 10-minute call. Same with your home insurance.</p>
           </CardContent>
         </Card>
       </main>

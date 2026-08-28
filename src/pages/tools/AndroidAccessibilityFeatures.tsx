@@ -19,7 +19,7 @@ export default function AndroidAccessibilityFeatures() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Magnification (zoom)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Accessibility → Magnification.</li>
               <li>Triple-tap any screen to zoom.</li>
               <li>Or use accessibility button.</li>
@@ -33,7 +33,7 @@ export default function AndroidAccessibilityFeatures() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Large display + text</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Display → Display size + Font size.</li>
               <li>Two sliders — make text bigger AND interface bigger.</li>
               <li>Bold text option for clarity.</li>
@@ -47,7 +47,7 @@ export default function AndroidAccessibilityFeatures() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sound Amplifier</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free Google app for hearing assistance.</li>
               <li>Use phone + earbuds as hearing aid.</li>
               <li>Filter background noise.</li>
@@ -61,7 +61,7 @@ export default function AndroidAccessibilityFeatures() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Live Transcribe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free Google app — real-time captions.</li>
               <li>Captions any conversation around you.</li>
               <li>Multiple language support.</li>
@@ -75,7 +75,7 @@ export default function AndroidAccessibilityFeatures() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice Access</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Control entire phone by voice.</li>
               <li>Free Google accessibility app.</li>
               <li>Say &quot;Open Email&quot; or &quot;Tap John.&quot;</li>
@@ -89,7 +89,7 @@ export default function AndroidAccessibilityFeatures() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">TalkBack screen reader</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>For severe vision impairment.</li>
               <li>Reads everything on screen.</li>
               <li>Different gestures to control phone.</li>
@@ -103,7 +103,7 @@ export default function AndroidAccessibilityFeatures() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try Sound Amplifier first</h3>
-            <p className="text-sm text-muted-foreground">If you have any hearing loss but aren&apos;t ready for hearing aids, try Google Sound Amplifier free. Plug in earbuds, open the app, and your phone becomes a real-time hearing aid. Customize for your ear&apos;s specific needs. Many seniors with mild loss use this for restaurants and family gatherings — free and surprisingly effective.</p>
+            <p className="text-base text-muted-foreground">If you have any hearing loss but aren&apos;t ready for hearing aids, try Google Sound Amplifier free. Plug in earbuds, open the app, and your phone becomes a real-time hearing aid. Customize for your ear&apos;s specific needs. Many seniors with mild loss use this for restaurants and family gatherings — free and surprisingly effective.</p>
           </CardContent>
         </Card>
       </main>

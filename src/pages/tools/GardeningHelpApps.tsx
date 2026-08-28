@@ -33,7 +33,7 @@ export default function GardeningHelpApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function GardeningHelpApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly gardening</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Raised beds (24-36" tall)</strong> — no kneeling. $200-500 for kit.</li>
               <li><strong>Container gardening</strong> — patio, deck, balcony.</li>
               <li><strong>Drip irrigation kit</strong> ($30-100) — auto-water plants.</li>
@@ -56,7 +56,7 @@ export default function GardeningHelpApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free expert advice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Master Gardeners</strong> — free hotline by state Cooperative Extension.</li>
               <li><strong>Local nursery</strong> — staff often answer questions.</li>
               <li><strong>USDA Plant Hardiness Zone Map</strong> — find your zone.</li>
@@ -69,7 +69,7 @@ export default function GardeningHelpApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior community gardening</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many cities have community gardens.</li>
               <li>Senior centers often have garden plots.</li>
               <li>Health benefits: 30 min gardening = strength + cardio + sun + community.</li>
@@ -82,7 +82,7 @@ export default function GardeningHelpApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cycle 120 milestone</h3>
-            <p className="text-sm text-muted-foreground">600+ tools shipped. From smart speakers to smart gardens. Tech for every stage of senior life — that&apos;s TekSure&apos;s mission.</p>
+            <p className="text-base text-muted-foreground">600+ tools shipped. From smart speakers to smart gardens. Tech for every stage of senior life — that&apos;s TekSure&apos;s mission.</p>
           </CardContent>
         </Card>
       </main>

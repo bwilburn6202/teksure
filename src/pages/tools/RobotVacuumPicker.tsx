@@ -227,7 +227,7 @@ export default function RobotVacuumPicker() {
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
               <p className="text-sm font-semibold mb-2">Quick guide: which feature do you actually need?</p>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-base">
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span><strong>Self-empty base:</strong> worth it if you have pets, allergies, or you do not want to bend down to a small bin every other day. Adds about $100 to $150 to the price.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span><strong>Vacuum plus mop:</strong> only worth it if at least 60% of your floors are hard surface (tile, sealed wood, vinyl). On mostly carpet, the mop sits unused.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span><strong>Lidar mapping:</strong> needed if you want to tell the robot "skip the bedroom" or "clean the kitchen now." Bump-and-go robots without a map will run forever and miss spots.</span></li>
@@ -247,11 +247,11 @@ export default function RobotVacuumPicker() {
               </button>
               {showSkip && (
                 <div className="mt-4 space-y-3">
-                  <p className="text-sm text-muted-foreground">A robot vacuum is not the right answer for every home. Here are the cases where a regular vacuum (or a hired cleaner) gives you more for your money.</p>
+                  <p className="text-base text-muted-foreground">A robot vacuum is not the right answer for every home. Here are the cases where a regular vacuum (or a hired cleaner) gives you more for your money.</p>
                   {SKIP_REASONS.map((r, i) => (
                     <div key={i} className="p-3 rounded-lg border border-border bg-muted/20">
                       <p className="font-medium text-sm mb-1">{r.title}</p>
-                      <p className="text-sm text-muted-foreground">{r.detail}</p>
+                      <p className="text-base text-muted-foreground">{r.detail}</p>
                     </div>
                   ))}
                 </div>

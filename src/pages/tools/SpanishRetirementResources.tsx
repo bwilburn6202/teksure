@@ -19,7 +19,7 @@ export default function SpanishRetirementResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Social Security en español</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ssa.gov/espanol</strong> — official Spanish site.</li>
               <li><strong>1-800-772-1213</strong> — pick option 2 for Spanish.</li>
               <li>"Mi Cuenta de Seguro Social" — manage benefits in Spanish.</li>
@@ -32,7 +32,7 @@ export default function SpanishRetirementResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medicare en español</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>medicare.gov/es</strong> — official Spanish.</li>
               <li><strong>1-800-MEDICARE</strong> — Spanish option.</li>
               <li><strong>SHIP en Español</strong> — free Spanish counselors via shiphelp.org.</li>
@@ -44,7 +44,7 @@ export default function SpanishRetirementResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other Spanish resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AARP en Español</strong> — aarp.org/espanol. Massive resource library.</li>
               <li><strong>Eldercare Locator</strong> — Spanish operators 1-800-677-1116.</li>
               <li><strong>UnidosUS</strong> — Spanish senior advocacy.</li>
@@ -57,7 +57,7 @@ export default function SpanishRetirementResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior taxes in Spanish</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>IRS español</strong> — irs.gov/spanish. Forms in Spanish.</li>
               <li><strong>AARP Tax-Aide</strong> — many sites have bilingual volunteers. Free for any age.</li>
               <li><strong>VITA</strong> — IRS volunteer tax program. Bilingual at many locations.</li>
@@ -69,7 +69,7 @@ export default function SpanishRetirementResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spanish financial advice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NerdWallet español</strong> — articles on credit, mortgages, more.</li>
               <li><strong>Finanzas Personales (Univision)</strong> — Spanish-language money advice.</li>
               <li><strong>Bilingual fee-only advisors</strong> — search NAPFA.org filter language.</li>
@@ -81,7 +81,7 @@ export default function SpanishRetirementResources() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No sea barrera</h3>
-            <p className="text-sm text-muted-foreground">Hispanic seniors face higher poverty rates partly due to language barriers in claiming benefits. Don&apos;t skip Social Security, Medicare, or retirement help due to English-only fear. ALL these are FREE in Spanish.</p>
+            <p className="text-base text-muted-foreground">Hispanic seniors face higher poverty rates partly due to language barriers in claiming benefits. Don&apos;t skip Social Security, Medicare, or retirement help due to English-only fear. ALL these are FREE in Spanish.</p>
           </CardContent>
         </Card>
       </main>

@@ -41,7 +41,7 @@ export default function CloudStoragePicker() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -69,7 +69,7 @@ export default function CloudStoragePicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Already paying for something?</h3>
-            <p className="text-sm text-muted-foreground"><strong>Microsoft 365 Family</strong> is the best value if you have multiple devices: $100/year for 6 people, includes 1TB OneDrive each, plus Word/Excel/PowerPoint. <strong>Amazon Prime</strong> already includes unlimited Photos. <strong>Apple One</strong> bundles iCloud+ with Music, TV, Arcade.</p>
+            <p className="text-base text-muted-foreground"><strong>Microsoft 365 Family</strong> is the best value if you have multiple devices: $100/year for 6 people, includes 1TB OneDrive each, plus Word/Excel/PowerPoint. <strong>Amazon Prime</strong> already includes unlimited Photos. <strong>Apple One</strong> bundles iCloud+ with Music, TV, Arcade.</p>
           </CardContent>
         </Card>
       </main>

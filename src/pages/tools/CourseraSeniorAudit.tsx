@@ -19,7 +19,7 @@ export default function CourseraSeniorAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How free audit works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Watch all videos free.</li>
               <li>Read all materials free.</li>
               <li>Take quizzes (no grading).</li>
@@ -34,7 +34,7 @@ export default function CourseraSeniorAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best Coursera courses for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Learning How to Learn</strong> — UCSD. 1M+ enrolled. Life-changing.</li>
               <li><strong>Science of Well-Being</strong> — Yale. Most popular Yale course ever.</li>
               <li><strong>Modern American Poetry</strong> — UPenn.</li>
@@ -49,7 +49,7 @@ export default function CourseraSeniorAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best edX free courses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Justice (Harvard)</strong> — Michael Sandel&apos;s famous course.</li>
               <li><strong>The Civil War + Reconstruction</strong> — Columbia.</li>
               <li><strong>Hamlet&apos;s Ghost</strong> — Harvard.</li>
@@ -64,7 +64,7 @@ export default function CourseraSeniorAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior learning tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1.5x or 1.25x video speed (older lectures slow).</li>
               <li>Take handwritten notes — better retention.</li>
               <li>One course at a time.</li>
@@ -79,7 +79,7 @@ export default function CourseraSeniorAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other free platforms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>MIT OpenCourseWare</strong> — ocw.mit.edu. Full courses, no signup.</li>
               <li><strong>Yale Open Courses</strong> — oyc.yale.edu.</li>
               <li><strong>Stanford Online</strong> — many free.</li>
@@ -93,7 +93,7 @@ export default function CourseraSeniorAudit() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth paying for certificate?</h3>
-            <p className="text-sm text-muted-foreground">If retirement learning — NO, save money. If career change or job application — sometimes yes ($50-100). For seniors learning for joy — audit free. Coursera Plus ($59/mo or $399/yr) — unlimited certificates if doing many. But audit free is enough for most learners.</p>
+            <p className="text-base text-muted-foreground">If retirement learning — NO, save money. If career change or job application — sometimes yes ($50-100). For seniors learning for joy — audit free. Coursera Plus ($59/mo or $399/yr) — unlimited certificates if doing many. But audit free is enough for most learners.</p>
           </CardContent>
         </Card>
       </main>

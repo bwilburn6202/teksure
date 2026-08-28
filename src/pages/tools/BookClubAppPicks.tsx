@@ -33,7 +33,7 @@ export default function BookClubAppPicks() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BookClubAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find a book club</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local library — most have multiple. Free.</li>
               <li>Senior centers — popular activity.</li>
               <li>Faith community book group.</li>
@@ -57,7 +57,7 @@ export default function BookClubAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online book clubs (no commute)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Zoom meetings — most book clubs offer.</li>
               <li>Goodreads global groups — by genre / decade.</li>
               <li>Bookclubs.com — host online.</li>
@@ -70,7 +70,7 @@ export default function BookClubAppPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior reading benefits</h3>
-            <p className="text-sm text-muted-foreground">Reading 30 min/day = lower stress, better sleep, slower cognitive decline (research shows). Audiobooks count. Library = FREE forever. No reason not to read.</p>
+            <p className="text-base text-muted-foreground">Reading 30 min/day = lower stress, better sleep, slower cognitive decline (research shows). Audiobooks count. Library = FREE forever. No reason not to read.</p>
           </CardContent>
         </Card>
       </main>

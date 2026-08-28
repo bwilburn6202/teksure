@@ -19,7 +19,7 @@ export default function ComicBookCollecting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Check old boxes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1960s+ Marvel + DC = potentially valuable.</li>
               <li>First appearances of major heroes = $$$$.</li>
               <li>Action Comics #1 = $5M+.</li>
@@ -33,7 +33,7 @@ export default function ComicBookCollecting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Comic value tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Overstreet Price Guide</strong> — annual book, library copy.</li>
               <li><strong>GoCollect</strong> — gocollect.com. Real sale prices.</li>
               <li><strong>ComicsPriceGuide</strong> — comicspriceguide.com.</li>
@@ -47,7 +47,7 @@ export default function ComicBookCollecting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Condition guide</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mint (10)</strong> — perfect, never read.</li>
               <li><strong>Very Fine (8.0)</strong> — minor wear.</li>
               <li><strong>Fine (6.0)</strong> — moderate wear.</li>
@@ -62,7 +62,7 @@ export default function ComicBookCollecting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Storing properly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Acid-free bags + boards.</li>
               <li>Acid-free comic boxes.</li>
               <li>Cool, dry, dark storage.</li>
@@ -76,7 +76,7 @@ export default function ComicBookCollecting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Selling</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Heritage Auctions</strong> — for $500+ items.</li>
               <li><strong>ComicConnect</strong> — premium auctions.</li>
               <li><strong>eBay</strong> — middle-market.</li>
@@ -90,7 +90,7 @@ export default function ComicBookCollecting() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Condition determines all</h3>
-            <p className="text-sm text-muted-foreground">A 1962 Spider-Man #1 in poor condition = $200. Same comic in mint = $1M+. Don&apos;t clean comics — leave grading to pros. CGC slabbing ($30-50 per comic) PROVES condition + raises value 50%+. Worth doing for valuable books.</p>
+            <p className="text-base text-muted-foreground">A 1962 Spider-Man #1 in poor condition = $200. Same comic in mint = $1M+. Don&apos;t clean comics — leave grading to pros. CGC slabbing ($30-50 per comic) PROVES condition + raises value 50%+. Worth doing for valuable books.</p>
           </CardContent>
         </Card>
       </main>

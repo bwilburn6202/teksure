@@ -19,7 +19,7 @@ export default function CochlearImplantBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When considered</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Severe-to-profound hearing loss.</li>
               <li>Hearing aids no longer help enough.</li>
               <li>Speech understanding under 50% with aids.</li>
@@ -33,7 +33,7 @@ export default function CochlearImplantBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Surgery — inner ear implant.</li>
               <li>External processor on ear (like hearing aid).</li>
               <li>Bypasses damaged cochlea.</li>
@@ -48,7 +48,7 @@ export default function CochlearImplantBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Top brands</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cochlear Americas</strong> — most popular US.</li>
               <li><strong>MED-EL</strong> — Austrian, high-quality.</li>
               <li><strong>Advanced Bionics</strong> — Sonova-owned.</li>
@@ -62,7 +62,7 @@ export default function CochlearImplantBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost + insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Total cost: $30,000-100,000.</li>
               <li>Medicare covers if criteria met.</li>
               <li>Out-of-pocket: $1,000-5,000 typical.</li>
@@ -76,7 +76,7 @@ export default function CochlearImplantBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Risks + considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Surgery — 2-4 hour outpatient.</li>
               <li>Risk of infection, dizziness, taste changes.</li>
               <li>Loss of any natural hearing remaining.</li>
@@ -91,7 +91,7 @@ export default function CochlearImplantBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Find specialists</h3>
-            <p className="text-sm text-muted-foreground">Major hospitals have cochlear implant teams. <strong>House Ear Institute</strong>, <strong>Mass Eye + Ear</strong>, <strong>Vanderbilt</strong> are top centers. Ask audiologist for referral. Many seniors say best decision they made — &quot;heard my granddaughter&apos;s voice for first time in 15 years.&quot;</p>
+            <p className="text-base text-muted-foreground">Major hospitals have cochlear implant teams. <strong>House Ear Institute</strong>, <strong>Mass Eye + Ear</strong>, <strong>Vanderbilt</strong> are top centers. Ask audiologist for referral. Many seniors say best decision they made — &quot;heard my granddaughter&apos;s voice for first time in 15 years.&quot;</p>
           </CardContent>
         </Card>
       </main>

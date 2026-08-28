@@ -788,7 +788,7 @@ export default function EobDecoder() {
               <HelpCircle className="h-5 w-5 text-primary" aria-hidden="true" />
               Before you hang up with insurance, always ask:
             </h3>
-            <ul className="space-y-2 text-sm md:text-base text-muted-foreground">
+            <ul className="space-y-2 text-base md:text-base text-muted-foreground">
               <li className="flex gap-2"><span>•</span> "Can you give me the call reference number?"</li>
               <li className="flex gap-2"><span>•</span> "What is the appeal deadline for this claim?"</li>
               <li className="flex gap-2"><span>•</span> "What's the exact reason code on this line?"</li>

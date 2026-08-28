@@ -19,7 +19,7 @@ export default function EarthquakePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">During earthquake</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>DROP</strong> to hands + knees BEFORE shaking knocks you down.</li>
               <li><strong>COVER</strong> head + neck. Crawl under sturdy table.</li>
               <li><strong>HOLD ON</strong> — protect your head + neck.</li>
@@ -34,7 +34,7 @@ export default function EarthquakePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Home prep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bolt water heater to wall (cheap, big effect).</li>
               <li>Strap tall bookcases + furniture to studs.</li>
               <li>Move heavy items to LOWER shelves.</li>
@@ -49,7 +49,7 @@ export default function EarthquakePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Aftershocks happen for hours-weeks. Stay alert.</li>
               <li>Check for injuries.</li>
               <li>Smell gas? Shut off + leave.</li>
@@ -64,7 +64,7 @@ export default function EarthquakePrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Earthquake insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NOT covered by standard homeowners.</li>
               <li>California: California Earthquake Authority (CEA).</li>
               <li>Other states: rider on existing insurance.</li>
@@ -78,7 +78,7 @@ export default function EarthquakePrep() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">ShakeAlert</h3>
-            <p className="text-sm text-muted-foreground">USGS ShakeAlert app — gives 5-30 second warning before shaking arrives. Free. iOS + Android. Available California, Oregon, Washington. Earthquake Early Warning. Best free app for West Coast seniors.</p>
+            <p className="text-base text-muted-foreground">USGS ShakeAlert app — gives 5-30 second warning before shaking arrives. Free. iOS + Android. Available California, Oregon, Washington. Earthquake Early Warning. Best free app for West Coast seniors.</p>
           </CardContent>
         </Card>
       </main>

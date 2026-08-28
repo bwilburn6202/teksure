@@ -19,7 +19,7 @@ export default function AppleWatchFallDetection() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Watch detects hard fall.</li>
               <li>Watch buzzes + asks &quot;Are you okay?&quot;</li>
               <li>If you don&apos;t respond in 60 sec — auto-calls 911.</li>
@@ -33,7 +33,7 @@ export default function AppleWatchFallDetection() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (5 minutes)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Need Apple Watch SE 2 / Series 4+.</li>
               <li>Watch app on iPhone.</li>
               <li>Tap &quot;My Watch&quot; → &quot;Emergency SOS.&quot;</li>
@@ -47,7 +47,7 @@ export default function AppleWatchFallDetection() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up Medical ID</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone Health app → Profile (top right).</li>
               <li>Medical ID → Edit.</li>
               <li>Add: conditions, allergies, medications, blood type.</li>
@@ -62,7 +62,7 @@ export default function AppleWatchFallDetection() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Manual Emergency SOS</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hold side button on Apple Watch.</li>
               <li>Slide &quot;Emergency SOS.&quot;</li>
               <li>Or just hold longer — auto-calls.</li>
@@ -76,7 +76,7 @@ export default function AppleWatchFallDetection() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily wear matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wear watch in shower (most are waterproof).</li>
               <li>Sleep with on (or use 2nd as overnight).</li>
               <li>Charge while in shower OR while reading.</li>
@@ -90,7 +90,7 @@ export default function AppleWatchFallDetection() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cellular vs WiFi</h3>
-            <p className="text-sm text-muted-foreground">Cellular Apple Watch ($100 extra) = calls 911 even if iPhone not nearby. Critical for outdoor walks/falls. WiFi-only requires nearby iPhone. For seniors who walk alone — cellular worth $100. Add to AT&amp;T, Verizon, T-Mobile cellular plan ($10/mo).</p>
+            <p className="text-base text-muted-foreground">Cellular Apple Watch ($100 extra) = calls 911 even if iPhone not nearby. Critical for outdoor walks/falls. WiFi-only requires nearby iPhone. For seniors who walk alone — cellular worth $100. Add to AT&amp;T, Verizon, T-Mobile cellular plan ($10/mo).</p>
           </CardContent>
         </Card>
       </main>

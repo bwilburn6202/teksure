@@ -229,7 +229,7 @@ export default function ScamWitnessStatement() {
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
               <p className="text-sm font-semibold mb-2">Where to send it</p>
-              <div className="space-y-2 text-sm">
+              <div className="space-y-2 text-base">
                 <a href="https://reportfraud.ftc.gov" target="_blank" rel="noreferrer"
                   className="flex items-center gap-1 text-primary hover:underline">
                   reportfraud.ftc.gov — Federal Trade Commission <ExternalLink className="h-4 w-4" />

@@ -19,7 +19,7 @@ export default function JetLagSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors get worse jet lag</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Body clock less flexible with age.</li>
               <li>Less melatonin produced.</li>
               <li>Recovery can take 1 day per timezone.</li>
@@ -32,7 +32,7 @@ export default function JetLagSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before flight</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Shift bedtime 1 hour toward destination, 3 days before.</li>
               <li>Hydrate well 2 days before.</li>
               <li>Light meal day of flight.</li>
@@ -46,7 +46,7 @@ export default function JetLagSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">During flight</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drink 8 oz water/hour. Skip coffee + alcohol.</li>
               <li>Compression socks 15-20 mmHg (prevent clots).</li>
               <li>Walk every 1-2 hours.</li>
@@ -61,7 +61,7 @@ export default function JetLagSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After arrival</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Get sunlight ASAP — biggest reset signal.</li>
               <li>Eat meals at LOCAL time, not body time.</li>
               <li>Light walks day 1.</li>
@@ -75,7 +75,7 @@ export default function JetLagSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sleep aids</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Low-dose melatonin (0.5mg) 30 min before LOCAL bedtime, days 1-3.</li>
               <li>Avoid sleeping pills (fall risk in unfamiliar place).</li>
               <li>Avoid &quot;PM&quot; meds (Tylenol PM, Benadryl) — confusion.</li>
@@ -88,7 +88,7 @@ export default function JetLagSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Apps that help</h3>
-            <p className="text-sm text-muted-foreground"><strong>Timeshifter</strong> — personalized jet lag plan. $10/trip. <strong>Jet Lag Rooster</strong> — free web tool. <strong>Calm/Headspace</strong> — sleep meditation. Build extra rest day into trip — don&apos;t plan tours day 1.</p>
+            <p className="text-base text-muted-foreground"><strong>Timeshifter</strong> — personalized jet lag plan. $10/trip. <strong>Jet Lag Rooster</strong> — free web tool. <strong>Calm/Headspace</strong> — sleep meditation. Build extra rest day into trip — don&apos;t plan tours day 1.</p>
           </CardContent>
         </Card>
       </main>

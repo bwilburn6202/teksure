@@ -134,17 +134,17 @@ export default function UrlSafetyCheckerV2() {
                     What to do next
                   </p>
                   {result.verdict === 'safe' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       No obvious red flags found. Still, check the address bar after you click — scammers sometimes register look-alike sites.
                     </p>
                   )}
                   {result.verdict === 'caution' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       Be careful. If you received this link out of the blue, don't click it. If it claims to be from a company you use, go to their website directly by typing the address.
                     </p>
                   )}
                   {result.verdict === 'danger' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       Do not click this link. Delete the message that contained it. If you think you've already been scammed, contact your bank and report it at{' '}
                       <strong>1-877-382-4357</strong> or{' '}
                       <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener noreferrer" className="underline">
@@ -154,7 +154,7 @@ export default function UrlSafetyCheckerV2() {
                     </p>
                   )}
                   {result.verdict === 'unknown' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       We couldn't reach every source. If anything feels off — urgency, grammar mistakes, asking for money or passwords — treat the link as unsafe.
                     </p>
                   )}

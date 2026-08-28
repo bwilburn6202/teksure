@@ -19,7 +19,7 @@ export default function OnlineEyeExamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When online exams work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Renewing existing prescription only.</li>
               <li>Ages typically 18–55 (some up to 65).</li>
               <li>No major eye health changes.</li>
@@ -33,7 +33,7 @@ export default function OnlineEyeExamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">1-800 Contacts ExpressExam</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Online prescription renewal: $20.</li>
               <li>Contact lens prescription only.</li>
               <li>Takes about 15 minutes.</li>
@@ -47,7 +47,7 @@ export default function OnlineEyeExamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Visibly online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$35–$55 vision test.</li>
               <li>Glasses + contacts prescriptions.</li>
               <li>Available in most states.</li>
@@ -61,7 +61,7 @@ export default function OnlineEyeExamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors should still see eye doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Glaucoma + macular degeneration risk increases with age.</li>
               <li>Cataracts develop gradually.</li>
               <li>Diabetic retinopathy needs monitoring.</li>
@@ -75,7 +75,7 @@ export default function OnlineEyeExamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Affordable in-person options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Costco Optical — exam $90, no membership for exam.</li>
               <li>Walmart Vision Center — exam $75–$120.</li>
               <li>Target Optical — exam similar pricing.</li>
@@ -89,7 +89,7 @@ export default function OnlineEyeExamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Saving on eye care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Get 1 full eye exam yearly + use online for backup if needed.</li>
               <li>Buy glasses online — save $200+ per pair.</li>
               <li>Buy contacts online — save 30–50%.</li>
@@ -103,7 +103,7 @@ export default function OnlineEyeExamApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t skip the in-person exam</h3>
-            <p className="text-sm text-muted-foreground">For seniors over 60, skip online eye exams as your primary checkup. The risk of missing glaucoma or macular degeneration is too high. Get a full annual eye exam at Costco, Walmart, or your eye doctor. Use online services only for prescription renewal between exams. Save money by buying frames + lenses online (Warby Parker, Zenni) AFTER getting an in-person exam.</p>
+            <p className="text-base text-muted-foreground">For seniors over 60, skip online eye exams as your primary checkup. The risk of missing glaucoma or macular degeneration is too high. Get a full annual eye exam at Costco, Walmart, or your eye doctor. Use online services only for prescription renewal between exams. Save money by buying frames + lenses online (Warby Parker, Zenni) AFTER getting an in-person exam.</p>
           </CardContent>
         </Card>
       </main>

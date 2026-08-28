@@ -153,7 +153,7 @@ export default function TechSetupCostEstimator() {
                       </h2>
 
                       {selected.size === 0 ? (
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           Check items on the left to see your total.
                         </p>
                       ) : (

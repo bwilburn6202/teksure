@@ -66,7 +66,7 @@ export default function CaptionedPhoneService() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How signup works</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick a provider above. Call or visit their website.</li>
               <li>They'll mail you a one-page hearing-loss certification form. Bring it to your audiologist, ENT doctor, or even your primary care doctor — they sign it.</li>
               <li>Mail or upload the form back.</li>
@@ -92,7 +92,7 @@ export default function CaptionedPhoneService() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">Many people put off getting one of these because "it sounds like too much trouble". One phone call to a provider gets the ball rolling — they walk you through everything. The phone changes daily life for people who can't easily hear callers.</p>
+            <p className="text-base text-muted-foreground">Many people put off getting one of these because "it sounds like too much trouble". One phone call to a provider gets the ball rolling — they walk you through everything. The phone changes daily life for people who can't easily hear callers.</p>
           </CardContent>
         </Card>
       </main>

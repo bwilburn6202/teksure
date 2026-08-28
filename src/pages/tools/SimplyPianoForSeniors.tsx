@@ -19,7 +19,7 @@ export default function SimplyPianoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Simply Piano?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>App that teaches piano step by step.</li>
               <li>Listens through phone microphone — knows when you play correctly.</li>
               <li>Works with any acoustic or digital piano.</li>
@@ -33,7 +33,7 @@ export default function SimplyPianoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Place phone or tablet on piano.</li>
               <li>App shows notes to play.</li>
               <li>You play — app listens.</li>
@@ -47,7 +47,7 @@ export default function SimplyPianoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>7-day free trial — full access.</li>
               <li>Premium: $14.99/month or $149.99/year.</li>
               <li>Lifetime: around $300.</li>
@@ -61,7 +61,7 @@ export default function SimplyPianoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Perfect for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No teacher pressure — learn at your pace.</li>
               <li>Practice 10 minutes a day = real progress.</li>
               <li>Brain exercise — proven cognitive benefits.</li>
@@ -75,7 +75,7 @@ export default function SimplyPianoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t have a piano?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>61-key keyboard works fine — Casio CT-S1 ($120).</li>
               <li>Yamaha PSR-E373 — popular beginner option ($230).</li>
               <li>Used pianos free or cheap on Facebook Marketplace.</li>
@@ -89,7 +89,7 @@ export default function SimplyPianoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other piano learning apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Flowkey — similar, also $15/month.</li>
               <li>Skoove — gentler pace, good for absolute beginners.</li>
               <li>Piano Marvel — for advancing students.</li>
@@ -103,7 +103,7 @@ export default function SimplyPianoForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">It&apos;s never too late</h3>
-            <p className="text-sm text-muted-foreground">Many seniors discover piano in their 60s and 70s and find it brings deep joy. Simply Piano takes the awkwardness out of being a beginner — no teacher to feel embarrassed in front of. Practice 10 minutes a day after morning coffee and within 3 months you&apos;ll be playing real songs. The cognitive benefits are real and significant. Start the free trial this week.</p>
+            <p className="text-base text-muted-foreground">Many seniors discover piano in their 60s and 70s and find it brings deep joy. Simply Piano takes the awkwardness out of being a beginner — no teacher to feel embarrassed in front of. Practice 10 minutes a day after morning coffee and within 3 months you&apos;ll be playing real songs. The cognitive benefits are real and significant. Start the free trial this week.</p>
           </CardContent>
         </Card>
       </main>

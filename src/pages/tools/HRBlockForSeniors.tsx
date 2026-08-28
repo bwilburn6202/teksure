@@ -19,7 +19,7 @@ export default function HRBlockForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">In-person service</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>10,000+ retail offices.</li>
               <li>Sit with tax pro for hour.</li>
               <li>$200–$400 per return typical.</li>
@@ -33,7 +33,7 @@ export default function HRBlockForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online software</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free Edition — simple returns.</li>
               <li>Deluxe — $35.</li>
               <li>Premium — $55.</li>
@@ -47,7 +47,7 @@ export default function HRBlockForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tax Pro Review</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Online software + pro review.</li>
               <li>Pay extra $50–$100.</li>
               <li>Tax pro reviews your DIY return.</li>
@@ -61,7 +61,7 @@ export default function HRBlockForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When in-person worth it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>First time using software.</li>
               <li>Major life changes (death of spouse, retirement).</li>
               <li>Complex investments + estates.</li>
@@ -75,7 +75,7 @@ export default function HRBlockForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Year-round services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tax planning consultations.</li>
               <li>Audit support.</li>
               <li>Help with IRS letters.</li>
@@ -89,7 +89,7 @@ export default function HRBlockForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">vs accountants</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>CPA — $300–$1,000+ per return.</li>
               <li>H&amp;R Block — $200–$400.</li>
               <li>CPA expertise more comprehensive.</li>
@@ -103,7 +103,7 @@ export default function HRBlockForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">In-person if anxious about taxes</h3>
-            <p className="text-sm text-muted-foreground">For seniors who feel anxious about taxes or have had significant life changes (spouse death, retirement, big inheritance), the $250–$400 H&amp;R Block in-person service gives peace of mind. They handle the form-filling, you just provide documents. For straightforward retired seniors with just Social Security + pension, free Tax-Aide is sufficient.</p>
+            <p className="text-base text-muted-foreground">For seniors who feel anxious about taxes or have had significant life changes (spouse death, retirement, big inheritance), the $250–$400 H&amp;R Block in-person service gives peace of mind. They handle the form-filling, you just provide documents. For straightforward retired seniors with just Social Security + pension, free Tax-Aide is sufficient.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function AdultColoringBooks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reduces anxiety + stress.</li>
               <li>Better sleep when done before bed.</li>
               <li>Improves focus + concentration.</li>
@@ -34,7 +34,7 @@ export default function AdultColoringBooks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best book picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Johanna Basford</strong> — Secret Garden, Enchanted Forest. Iconic.</li>
               <li><strong>Color With Music</strong> — color while listening (audio CD).</li>
               <li><strong>Birds + Butterflies</strong> — peaceful.</li>
@@ -48,7 +48,7 @@ export default function AdultColoringBooks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>LARGE PRINT or simpler designs.</li>
               <li>Single-sided pages (won&apos;t bleed through).</li>
               <li>Spiral-bound (lay flat).</li>
@@ -62,7 +62,7 @@ export default function AdultColoringBooks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best supplies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Colored pencils</strong> — Prismacolor, Faber-Castell, Crayola.</li>
               <li><strong>Markers</strong> — Crayola SuperTips, Tombow ABT (alcohol).</li>
               <li><strong>Gel pens</strong> — Sakura, Pilot G2.</li>
@@ -76,7 +76,7 @@ export default function AdultColoringBooks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free printable</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pinterest — search &quot;adult coloring printable.&quot;</li>
               <li>Crayola.com free printables.</li>
               <li>Try free pages before buying books.</li>
@@ -89,7 +89,7 @@ export default function AdultColoringBooks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Coloring apps too</h3>
-            <p className="text-sm text-muted-foreground"><strong>Happy Color</strong> — number-based digital coloring. Free. Senior favorite. <strong>Pigment</strong> — premium iPad coloring. <strong>Colorfy</strong> — popular. No mess. Saves space. Color anywhere on iPad. Different appeal than paper. Try both.</p>
+            <p className="text-base text-muted-foreground"><strong>Happy Color</strong> — number-based digital coloring. Free. Senior favorite. <strong>Pigment</strong> — premium iPad coloring. <strong>Colorfy</strong> — popular. No mess. Saves space. Color anywhere on iPad. Different appeal than paper. Try both.</p>
           </CardContent>
         </Card>
       </main>

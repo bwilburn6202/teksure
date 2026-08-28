@@ -19,7 +19,7 @@ export default function SaltReductionTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sodium targets</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FDA limit: 2,300mg/day (1 tsp salt).</li>
               <li>Heart Association recommends: 1,500mg/day.</li>
               <li>Most Americans eat 3,400mg/day.</li>
@@ -32,7 +32,7 @@ export default function SaltReductionTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hidden salt sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bread</strong> — 200mg per slice. Surprising #1.</li>
               <li><strong>Lunch meats</strong> — 500-1,000mg per 2oz.</li>
               <li><strong>Canned soup</strong> — 700-1,000mg per cup.</li>
@@ -47,7 +47,7 @@ export default function SaltReductionTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Low-salt substitutes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mrs. Dash</strong> — salt-free seasoning blends.</li>
               <li><strong>Lemon juice</strong> — adds bright flavor.</li>
               <li><strong>Garlic + onion</strong> — fresh or powder.</li>
@@ -62,7 +62,7 @@ export default function SaltReductionTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy swaps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Low sodium&quot; canned soup (50% less).</li>
               <li>Rinse canned beans — removes 40% sodium.</li>
               <li>Fresh chicken instead of deli ham.</li>
@@ -76,7 +76,7 @@ export default function SaltReductionTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">DASH diet</h3>
-            <p className="text-sm text-muted-foreground"><strong>DASH (Dietary Approaches to Stop Hypertension)</strong> — proven to lower BP. Free guide at NHLBI.nih.gov. Mediterranean diet works similarly. Both senior-friendly + don&apos;t require extreme changes.</p>
+            <p className="text-base text-muted-foreground"><strong>DASH (Dietary Approaches to Stop Hypertension)</strong> — proven to lower BP. Free guide at NHLBI.nih.gov. Mediterranean diet works similarly. Both senior-friendly + don&apos;t require extreme changes.</p>
           </CardContent>
         </Card>
       </main>

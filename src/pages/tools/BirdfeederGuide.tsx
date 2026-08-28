@@ -19,7 +19,7 @@ export default function BirdfeederGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best feeders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tube feeder</strong> — for finches, chickadees. $20-40.</li>
               <li><strong>Hopper / house feeder</strong> — most birds. $30-70.</li>
               <li><strong>Suet cage</strong> — woodpeckers, nuthatches. $5-15.</li>
@@ -33,7 +33,7 @@ export default function BirdfeederGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best food</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Black oil sunflower seeds</strong> — universal. 80% of birds eat it. $15-25 / 20 lb at Costco.</li>
               <li><strong>Nyjer (thistle)</strong> — finches only.</li>
               <li><strong>Suet cake</strong> — winter only (melts summer).</li>
@@ -47,7 +47,7 @@ export default function BirdfeederGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Window feeder — birds 12 inches from your eye.</li>
               <li>Pole + baffle — keeps squirrels off.</li>
               <li>Easy-fill design — top-load is best.</li>
@@ -61,7 +61,7 @@ export default function BirdfeederGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bird-watching apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Merlin Bird ID</strong> — free. ID by photo OR song.</li>
               <li><strong>eBird</strong> — log sightings. Citizen science.</li>
               <li><strong>Audubon Bird Guide</strong> — free field guide.</li>
@@ -73,7 +73,7 @@ export default function BirdfeederGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Mental health win</h3>
-            <p className="text-sm text-muted-foreground">Studies show watching birds 5-10 min/day reduces stress + depression. Free natural therapy at home. Senior-favorite hobby for good reason. $50 setup = years of joy.</p>
+            <p className="text-base text-muted-foreground">Studies show watching birds 5-10 min/day reduces stress + depression. Free natural therapy at home. Senior-favorite hobby for good reason. $50 setup = years of joy.</p>
           </CardContent>
         </Card>
       </main>

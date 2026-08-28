@@ -33,7 +33,7 @@ export default function BilingualMedicalApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -54,7 +54,7 @@ export default function BilingualMedicalApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find Spanish-speaking doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Insurance directory</strong> — filter by Spanish-speaking.</li>
               <li><strong>Zocdoc</strong> — search "Spanish-speaking" + your zip.</li>
               <li><strong>Healthgrades</strong> — language filter.</li>
@@ -67,7 +67,7 @@ export default function BilingualMedicalApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t skip care due to language</h3>
-            <p className="text-sm text-muted-foreground">Idioma no debe ser barrera para atención médica. Pide intérprete — es tu derecho federal. La salud es lo primero.</p>
+            <p className="text-base text-muted-foreground">Idioma no debe ser barrera para atención médica. Pide intérprete — es tu derecho federal. La salud es lo primero.</p>
           </CardContent>
         </Card>
       </main>

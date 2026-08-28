@@ -19,7 +19,7 @@ export default function NetflixForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plan picks 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Standard with Ads</strong> — $8/mo. 1080p HD. Limited ads.</li>
               <li><strong>Standard</strong> — $18/mo. No ads. 1080p HD.</li>
               <li><strong>Premium</strong> — $25/mo. 4K + 4 screens.</li>
@@ -32,7 +32,7 @@ export default function NetflixForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorite shows</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Crown</strong> — British royals.</li>
               <li><strong>Grace and Frankie</strong> — senior friendship.</li>
               <li><strong>Old Lady Drama</strong> — many British shows.</li>
@@ -47,7 +47,7 @@ export default function NetflixForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly settings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Subtitles always on (helps hearing).</li>
               <li>Subtitle size large + high contrast.</li>
               <li>Audio description — narration of action.</li>
@@ -61,7 +61,7 @@ export default function NetflixForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find good content</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Reelgood.com</strong> — what&apos;s on what service.</li>
               <li><strong>JustWatch.com</strong> — search any movie/show.</li>
               <li><strong>NYT Watching</strong> — curated recommendations.</li>
@@ -75,7 +75,7 @@ export default function NetflixForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to cancel</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Going months without watching.</li>
               <li>Library has free streaming (Hoopla, Kanopy).</li>
               <li>Subscribe → binge favorite show → cancel → resubscribe months later.</li>
@@ -89,7 +89,7 @@ export default function NetflixForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Stream to TV</h3>
-            <p className="text-sm text-muted-foreground">Smart TV (2018+) has Netflix built-in. Or use Roku ($30), Apple TV ($150), Fire TV Stick ($50). Cast from phone via AirPlay or Chromecast. Big screen better than phone for seniors. See /tools/streaming-device-compare.</p>
+            <p className="text-base text-muted-foreground">Smart TV (2018+) has Netflix built-in. Or use Roku ($30), Apple TV ($150), Fire TV Stick ($50). Cast from phone via AirPlay or Chromecast. Big screen better than phone for seniors. See /tools/streaming-device-compare.</p>
           </CardContent>
         </Card>
       </main>

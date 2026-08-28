@@ -19,7 +19,7 @@ export default function MarketplaceSafety() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> The 7 rules</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Meet in public.</strong> Police station parking lots, busy coffee shops, the front of a bank during business hours. Many police stations have "Safe Exchange Zones" with cameras.</li>
               <li><strong>Bring someone with you.</strong> A friend or family member, or at least tell someone where you're going.</li>
               <li><strong>Daytime only.</strong> Don't meet strangers at night.</li>

@@ -33,7 +33,7 @@ export default function SmartLightingBasics() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SmartLightingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bulbs vs switches</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Smart bulbs</strong> — replace bulb, set in app. Cheap, easy. Works with lamps + ceiling.</li>
               <li><strong>Smart switches</strong> — replace WALL SWITCH (Lutron, Kasa, etc.). Better — works with all bulbs, family can use normally.</li>
               <li><strong>Smart plugs</strong> — alternative for lamps. $10. No bulb change.</li>
@@ -54,7 +54,7 @@ export default function SmartLightingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best uses for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Goodnight" turns off all lights from bed.</li>
               <li>Motion sensor → bathroom light at night.</li>
               <li>Sunset auto-on — never come home in dark.</li>
@@ -69,7 +69,7 @@ export default function SmartLightingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (5 min/bulb)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Screw in bulb.</li>
               <li>Turn switch ON.</li>
               <li>Open app (Kasa, Hue, etc.).</li>
@@ -85,7 +85,7 @@ export default function SmartLightingBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior-friendly tip</h3>
-            <p className="text-sm text-muted-foreground">Skip color-changing bulbs first time. Start with simple white smart bulbs. After you get used to voice control, upgrade. Don&apos;t waste money on what you won&apos;t use.</p>
+            <p className="text-base text-muted-foreground">Skip color-changing bulbs first time. Start with simple white smart bulbs. After you get used to voice control, upgrade. Don&apos;t waste money on what you won&apos;t use.</p>
           </CardContent>
         </Card>
       </main>

@@ -181,7 +181,7 @@ export default function AmazonReviewSpotter() {
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
               <p className="text-sm font-semibold mb-2">Two free tools that go deeper</p>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-base">
                 <li className="flex gap-2">
                   <Star className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                   <div>

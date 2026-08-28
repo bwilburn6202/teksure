@@ -193,7 +193,7 @@ export default function ScamPhoneDatabase() {
                 <Shield className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-semibold mb-1">Got a scam call? Report it.</h3>
-                  <p className="text-sm text-muted-foreground">Reporting helps protect others. Report to the official agencies, then optionally share with TekSure so we can add it here.</p>
+                  <p className="text-base text-muted-foreground">Reporting helps protect others. Report to the official agencies, then optionally share with TekSure so we can add it here.</p>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3">

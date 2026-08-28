@@ -41,7 +41,7 @@ export default function SeniorSnapAndFood() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to apply</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to your state\'s SNAP page. Search "[state] SNAP application".</li>
               <li>Or use the federal "Apply for SNAP" page at fns.usda.gov.</li>
               <li>Or call your local <strong>Area Agency on Aging</strong> — they help seniors apply for free.</li>
@@ -55,7 +55,7 @@ export default function SeniorSnapAndFood() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other food programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Commodity Supplemental Food Program (CSFP)</strong> — monthly free food box for low-income seniors 60+. $15,000-30,000 income limit. Search "[state] CSFP".</li>
               <li><strong>Meals on Wheels</strong> — home-delivered meals for housebound seniors. Free or low-cost.</li>
               <li><strong>Senior congregate meals</strong> — meals at senior centers, often free or $2-5 donation.</li>
@@ -82,7 +82,7 @@ export default function SeniorSnapAndFood() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help applying</h3>
-            <p className="text-sm text-muted-foreground"><strong>Eldercare Locator</strong> — 1-800-677-1116 or eldercare.acl.gov. Connects you to your local Area Agency on Aging, who help seniors apply for SNAP, CSFP, Meals on Wheels, and everything else for free.</p>
+            <p className="text-base text-muted-foreground"><strong>Eldercare Locator</strong> — 1-800-677-1116 or eldercare.acl.gov. Connects you to your local Area Agency on Aging, who help seniors apply for SNAP, CSFP, Meals on Wheels, and everything else for free.</p>
           </CardContent>
         </Card>
       </main>

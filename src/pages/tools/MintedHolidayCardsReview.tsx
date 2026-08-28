@@ -19,7 +19,7 @@ export default function MintedHolidayCardsReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Minted?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Designer-quality cards.</li>
               <li>Independent artists curated.</li>
               <li>Higher quality than Shutterfly.</li>
@@ -33,7 +33,7 @@ export default function MintedHolidayCardsReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Holiday cards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photo holiday cards.</li>
               <li>Foil-stamped designs.</li>
               <li>Letterpress options.</li>
@@ -47,7 +47,7 @@ export default function MintedHolidayCardsReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free address printing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Upload Excel of addresses.</li>
               <li>Or import from contacts.</li>
               <li>Minted prints addresses on envelopes.</li>
@@ -61,7 +61,7 @@ export default function MintedHolidayCardsReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other Minted products</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wedding invitations + paper goods.</li>
               <li>Wall art + photo prints.</li>
               <li>Calendars + journals.</li>
@@ -75,7 +75,7 @@ export default function MintedHolidayCardsReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost comparison</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Shutterfly cards — $1 each on sale.</li>
               <li>Minted cards — $2–$4 each.</li>
               <li>Worth premium if quality matters.</li>
@@ -89,7 +89,7 @@ export default function MintedHolidayCardsReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When Minted is worth it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>50th anniversary celebration.</li>
               <li>Big family announcement.</li>
               <li>Wedding paper goods.</li>
@@ -103,7 +103,7 @@ export default function MintedHolidayCardsReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Shutterfly for volume, Minted for quality</h3>
-            <p className="text-sm text-muted-foreground">For sending 50–100 holiday cards yearly, Shutterfly during 50% off sales saves significantly. For special occasions — golden anniversary, milestone birthdays, weddings — Minted&apos;s premium quality is worth the extra cost. Many seniors use both depending on occasion. Free address printing makes either much faster than handwriting.</p>
+            <p className="text-base text-muted-foreground">For sending 50–100 holiday cards yearly, Shutterfly during 50% off sales saves significantly. For special occasions — golden anniversary, milestone birthdays, weddings — Minted&apos;s premium quality is worth the extra cost. Many seniors use both depending on occasion. Free address printing makes either much faster than handwriting.</p>
           </CardContent>
         </Card>
       </main>

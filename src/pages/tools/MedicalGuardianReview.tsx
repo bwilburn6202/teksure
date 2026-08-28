@@ -19,7 +19,7 @@ export default function MedicalGuardianReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Medical Guardian?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Top-rated by Forbes, U.S. News.</li>
               <li>24/7 US-based monitoring.</li>
               <li>Multiple device options.</li>
@@ -33,7 +33,7 @@ export default function MedicalGuardianReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Classic Guardian — $30/mo, in-home only.</li>
               <li>Home 2.0 — $35/mo, larger range.</li>
               <li>Mobile 2.0 — $40/mo, GPS + 4G.</li>
@@ -47,7 +47,7 @@ export default function MedicalGuardianReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fall detection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$10/month add-on.</li>
               <li>Detects hard falls automatically.</li>
               <li>Alerts monitoring center.</li>
@@ -61,7 +61,7 @@ export default function MedicalGuardianReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Top alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Life Alert — most known but expensive.</li>
               <li>Bay Alarm Medical — competitive prices.</li>
               <li>Philips Lifeline — established + reliable.</li>
@@ -75,7 +75,7 @@ export default function MedicalGuardianReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Watch alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One-time cost $249–$799.</li>
               <li>Plus $10/month cellular.</li>
               <li>Fall detection built in.</li>
@@ -89,7 +89,7 @@ export default function MedicalGuardianReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Who needs medical alert?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Living alone.</li>
               <li>History of falls.</li>
               <li>Cognitive decline beginning.</li>
@@ -103,7 +103,7 @@ export default function MedicalGuardianReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Apple Watch may replace pendants</h3>
-            <p className="text-sm text-muted-foreground">For tech-friendly seniors, an Apple Watch SE with cellular ($309 + $10/month) provides fall detection + emergency SOS at the same level as professional medical alerts. Plus all the smartwatch features. For seniors who don&apos;t want technology, traditional pendant from Medical Guardian ($30–$40/month) works better. Both save lives.</p>
+            <p className="text-base text-muted-foreground">For tech-friendly seniors, an Apple Watch SE with cellular ($309 + $10/month) provides fall detection + emergency SOS at the same level as professional medical alerts. Plus all the smartwatch features. For seniors who don&apos;t want technology, traditional pendant from Medical Guardian ($30–$40/month) works better. Both save lives.</p>
           </CardContent>
         </Card>
       </main>

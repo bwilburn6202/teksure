@@ -19,7 +19,7 @@ export default function GooglePrivacyDashboard() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start here</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>myaccount.google.com</strong>.</li>
               <li>Sign in.</li>
               <li>Click <strong>Privacy &amp; Personalization</strong>.</li>
@@ -30,7 +30,7 @@ export default function GooglePrivacyDashboard() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Activity controls</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Web &amp; App Activity</strong> — auto-delete every 3 months.</li>
               <li><strong>Location History</strong> — turn OFF (it&apos;s OFF by default 2024+).</li>
               <li><strong>YouTube History</strong> — auto-delete every 3 months OR off.</li>
@@ -42,7 +42,7 @@ export default function GooglePrivacyDashboard() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Ad personalization</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Privacy &amp; Personalization → Ad personalization.</li>
               <li>Toggle "Personalized ads" OFF.</li>
               <li>Generic ads instead — same volume, less creepy.</li>
@@ -53,7 +53,7 @@ export default function GooglePrivacyDashboard() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy Checkup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Privacy Checkup</strong> button — Google walks you through everything.</li>
               <li>Reviews each setting + suggests changes.</li>
               <li>Best 5 minutes you can spend annually.</li>
@@ -65,7 +65,7 @@ export default function GooglePrivacyDashboard() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Third-party app access</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Security → "Third-party apps with account access".</li>
               <li>Review each. Remove ones you don&apos;t recognize.</li>
               <li>Some apps you signed in with Google still have access.</li>
@@ -77,7 +77,7 @@ export default function GooglePrivacyDashboard() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Inactive Account Manager</h3>
-            <p className="text-sm text-muted-foreground">While here — set up <strong>Inactive Account Manager</strong>. After 3-18 months of inactivity, Google notifies trusted contact + lets them download your data. Critical for digital legacy. See /tools/digital-legacy-planner.</p>
+            <p className="text-base text-muted-foreground">While here — set up <strong>Inactive Account Manager</strong>. After 3-18 months of inactivity, Google notifies trusted contact + lets them download your data. Critical for digital legacy. See /tools/digital-legacy-planner.</p>
           </CardContent>
         </Card>
       </main>

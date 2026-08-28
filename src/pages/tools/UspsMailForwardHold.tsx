@@ -19,7 +19,7 @@ export default function UspsMailForwardHold() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Hold Mail (vacation)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>USPS.com → Track & Manage → Hold Mail</strong>.</li>
               <li>Enter your address and verify identity (driver\'s license + SSN, or in-person at post office).</li>
               <li>Pick start and end dates (3-30 days).</li>
@@ -33,7 +33,7 @@ export default function UspsMailForwardHold() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Mail Forwarding (moving)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>moversguide.usps.com</strong>.</li>
               <li>Pay $1.10 verification fee (proves identity, prevents fraud).</li>
               <li>Old address + new address + start date.</li>
@@ -66,7 +66,7 @@ export default function UspsMailForwardHold() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Travel tip</h3>
-            <p className="text-sm text-muted-foreground">For travel longer than 30 days, do mail forwarding to a child\'s house OR a UPS Store. Hold-mail max is 30 days. After that, mail piles up and signals "no one home" to thieves.</p>
+            <p className="text-base text-muted-foreground">For travel longer than 30 days, do mail forwarding to a child\'s house OR a UPS Store. Hold-mail max is 30 days. After that, mail piles up and signals "no one home" to thieves.</p>
           </CardContent>
         </Card>
       </main>

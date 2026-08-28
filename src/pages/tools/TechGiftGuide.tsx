@@ -1299,7 +1299,7 @@ export default function TechGiftGuide() {
                         </button>
                       );
                     })}
-                    <p className="text-sm text-muted-foreground">Pick as many as apply — then tap Next.</p>
+                    <p className="text-base text-muted-foreground">Pick as many as apply — then tap Next.</p>
                   </div>
                 )}
 

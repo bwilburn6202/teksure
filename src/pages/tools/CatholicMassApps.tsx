@@ -35,7 +35,7 @@ export default function CatholicMassApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -57,7 +57,7 @@ export default function CatholicMassApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For housebound</h3>
-            <p className="text-sm text-muted-foreground">A Eucharistic Minister can bring Holy Communion to your home weekly. Call your parish office. Many parishes also visit homebound seniors monthly.</p>
+            <p className="text-base text-muted-foreground">A Eucharistic Minister can bring Holy Communion to your home weekly. Call your parish office. Many parishes also visit homebound seniors monthly.</p>
           </CardContent>
         </Card>
       </main>

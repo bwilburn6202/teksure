@@ -32,7 +32,7 @@ export default function PigButcheringDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it always starts</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>A "wrong number" text. <em>"Hi Karen, are we still on for dinner Saturday?"</em> You reply, "Wrong number." They apologize and chat — friendly, attractive, successful.</li>
               <li>Or — a stranger DMs you on Facebook, Instagram, LinkedIn, or a dating app.</li>
               <li>You start chatting daily. Weeks pass. They never ask for money. They send food photos, complain about work, ask about your day.</li>
@@ -48,7 +48,7 @@ export default function PigButcheringDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stranger you've never met in person teaches you about money or investing.</li>
               <li>"Investment app" you've never heard of — not Fidelity, Schwab, Vanguard, or a real bank.</li>
               <li>App requires depositing crypto (Bitcoin, Tether/USDT) instead of dollars.</li>
@@ -76,7 +76,7 @@ export default function PigButcheringDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you've already sent money</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Stop. Don\'t send the "tax payment" or "withdrawal fee". It's the same scammers — they've taken everything they\'re going to.</li>
               <li>Save all chats and screenshots from the fake app.</li>
               <li>Call the FBI's IC3 at <a href="https://www.ic3.gov" target="_blank" rel="noopener noreferrer" className="text-primary underline">ic3.gov</a>. Crypto scams are their specialty now.</li>
@@ -90,7 +90,7 @@ export default function PigButcheringDefense() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tell someone</h3>
-            <p className="text-sm text-muted-foreground">Most victims don't tell anyone for months because of shame. Don't. The scammers do this for a living, with practiced scripts and teams of operators. Telling family, your bank, and the FBI is the single most powerful thing you can do to slow them down — and to start healing.</p>
+            <p className="text-base text-muted-foreground">Most victims don't tell anyone for months because of shame. Don't. The scammers do this for a living, with practiced scripts and teams of operators. Telling family, your bank, and the FBI is the single most powerful thing you can do to slow them down — and to start healing.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function EdXCoursesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is edX?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Founded by Harvard + MIT.</li>
               <li>3,000+ university courses.</li>
               <li>Audit free for most courses.</li>
@@ -33,7 +33,7 @@ export default function EdXCoursesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Audit free</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Watch all video lectures.</li>
               <li>Read course materials.</li>
               <li>Some quizzes free.</li>
@@ -47,7 +47,7 @@ export default function EdXCoursesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-popular courses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>HarvardX: The Civil War.</li>
               <li>MITx: Introduction to Philosophy.</li>
               <li>HarvardX: Justice with Michael Sandel.</li>
@@ -61,7 +61,7 @@ export default function EdXCoursesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Coursera alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Coursera — similar model.</li>
               <li>Free audit on most courses.</li>
               <li>$49/month for unlimited.</li>
@@ -75,7 +75,7 @@ export default function EdXCoursesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior auditing tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Start with one course.</li>
               <li>Don&apos;t commit to certificate first.</li>
               <li>Watch at your pace.</li>
@@ -89,7 +89,7 @@ export default function EdXCoursesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find courses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Visit edX.org.</li>
               <li>Browse by subject.</li>
               <li>Filter by free.</li>
@@ -103,7 +103,7 @@ export default function EdXCoursesForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free Harvard courses</h3>
-            <p className="text-sm text-muted-foreground">Many seniors don&apos;t realize they can audit Harvard, MIT, Stanford courses for FREE on edX. The same lectures, same readings as on-campus students. Skip certificate, get full education. Many seniors report this is the most stimulating retirement activity. CS50 (intro to computer science) is most popular — even at 70+ many enjoy it.</p>
+            <p className="text-base text-muted-foreground">Many seniors don&apos;t realize they can audit Harvard, MIT, Stanford courses for FREE on edX. The same lectures, same readings as on-campus students. Skip certificate, get full education. Many seniors report this is the most stimulating retirement activity. CS50 (intro to computer science) is most popular — even at 70+ many enjoy it.</p>
           </CardContent>
         </Card>
       </main>

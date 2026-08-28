@@ -839,7 +839,7 @@ export default function AudioTutorialHub() {
                 <Headphones className="w-6 h-6 text-indigo-600" />
                 Audio library
               </h2>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Tap play on any one. The next guide in the same category plays after.
               </p>
             </div>

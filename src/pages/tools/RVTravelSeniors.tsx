@@ -19,7 +19,7 @@ export default function RVTravelSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RV types</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Class A</strong> — bus-style. Most space. $100K-1M.</li>
               <li><strong>Class B (camper van)</strong> — easy drive. $80K-200K. Senior favorite.</li>
               <li><strong>Class C</strong> — truck cab + cabin. $80K-300K.</li>
@@ -33,7 +33,7 @@ export default function RVTravelSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walk-around bed (no climbing over).</li>
               <li>Larger bathroom + shower.</li>
               <li>Backup camera (essential).</li>
@@ -48,7 +48,7 @@ export default function RVTravelSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Memberships + apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Good Sam Club</strong> — discounts at parks. $30/yr.</li>
               <li><strong>Passport America</strong> — 50% off 1,500+ parks. $44/yr.</li>
               <li><strong>Harvest Hosts</strong> — free overnight at wineries/farms. $99/yr.</li>
@@ -62,7 +62,7 @@ export default function RVTravelSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Roadside + insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Good Sam Roadside</strong> — RV-specific tow. Essential.</li>
               <li><strong>FMCA Roadside</strong> — competitor.</li>
               <li>RV insurance — separate from auto.</li>
@@ -76,7 +76,7 @@ export default function RVTravelSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Test before buying</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Rent first — Outdoorsy or RVshare.</li>
               <li>Try 1-2 week trip.</li>
               <li>Test drive several types.</li>
@@ -90,7 +90,7 @@ export default function RVTravelSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">RVing community</h3>
-            <p className="text-sm text-muted-foreground"><strong>Escapees RV Club</strong> — senior-heavy, mail forwarding, mentorship. <strong>RV LIFE Forums</strong> — answer-all-questions community. <strong>FMCA</strong> — full-time RVers. Free Facebook groups for every RV brand. The community is the best part.</p>
+            <p className="text-base text-muted-foreground"><strong>Escapees RV Club</strong> — senior-heavy, mail forwarding, mentorship. <strong>RV LIFE Forums</strong> — answer-all-questions community. <strong>FMCA</strong> — full-time RVers. Free Facebook groups for every RV brand. The community is the best part.</p>
           </CardContent>
         </Card>
       </main>

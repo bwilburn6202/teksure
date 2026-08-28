@@ -19,7 +19,7 @@ export default function SiriCommandsCheatSheet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wake Siri up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hold side button on iPhone X+.</li>
               <li>Hold home button on older iPhones.</li>
               <li>Or just say &quot;Hey Siri&quot; (or &quot;Siri&quot; on iOS 17+).</li>
@@ -33,7 +33,7 @@ export default function SiriCommandsCheatSheet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Calling + texting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Call John.&quot;</li>
               <li>&quot;FaceTime my daughter.&quot;</li>
               <li>&quot;Text Mary I&apos;m running late.&quot;</li>
@@ -47,7 +47,7 @@ export default function SiriCommandsCheatSheet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reminders + alarms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Remind me to take my pills at 8 AM.&quot;</li>
               <li>&quot;Set an alarm for 6:30 tomorrow.&quot;</li>
               <li>&quot;Set timer for 20 minutes.&quot;</li>
@@ -61,7 +61,7 @@ export default function SiriCommandsCheatSheet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Information + facts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;What&apos;s the weather today?&quot;</li>
               <li>&quot;Will it rain this weekend?&quot;</li>
               <li>&quot;What&apos;s the score of the [team] game?&quot;</li>
@@ -75,7 +75,7 @@ export default function SiriCommandsCheatSheet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Music + entertainment</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Play Frank Sinatra.&quot;</li>
               <li>&quot;Play oldies music.&quot;</li>
               <li>&quot;Pause music.&quot; / &quot;Skip song.&quot;</li>
@@ -89,7 +89,7 @@ export default function SiriCommandsCheatSheet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health + emergency</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Call 911.&quot; (works even when phone locked).</li>
               <li>&quot;Show my medical ID.&quot;</li>
               <li>&quot;What&apos;s my blood pressure today?&quot;</li>
@@ -103,7 +103,7 @@ export default function SiriCommandsCheatSheet() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Use Siri for hands-free everything</h3>
-            <p className="text-sm text-muted-foreground">If you have arthritis, vision issues, or just find phone screens frustrating, Siri can replace 80% of touch interactions. Setting alarms, sending texts, calling family, getting weather — all hands-free. Many seniors don&apos;t use Siri because they don&apos;t know what it can do. Try saying &quot;Hey Siri, what can you do?&quot; for a tour. Practice 5 commands today.</p>
+            <p className="text-base text-muted-foreground">If you have arthritis, vision issues, or just find phone screens frustrating, Siri can replace 80% of touch interactions. Setting alarms, sending texts, calling family, getting weather — all hands-free. Many seniors don&apos;t use Siri because they don&apos;t know what it can do. Try saying &quot;Hey Siri, what can you do?&quot; for a tour. Practice 5 commands today.</p>
           </CardContent>
         </Card>
       </main>

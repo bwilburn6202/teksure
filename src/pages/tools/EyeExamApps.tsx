@@ -19,7 +19,7 @@ export default function EyeExamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online eye exam services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Warby Parker Virtual Vision Test</strong> — $15. Renew prescription if you&apos;re 18-65 and recent exam.</li>
               <li><strong>1-800 Contacts ExpressExam</strong> — $20. Contact lens Rx renewal.</li>
               <li><strong>EyeQue</strong> — $30 device + free test. Measure your refractive error at home. Not Rx-valid.</li>
@@ -48,7 +48,7 @@ export default function EyeExamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free / cheap eye exams for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>EyeCare America (AAO)</strong> — FREE eye exam for 65+ seniors who haven&apos;t had one in 3+ years. eyecareamerica.org.</li>
               <li><strong>VSP / EyeMed</strong> — vision insurance covers $0-25 exams.</li>
               <li><strong>Costco / Sam&apos;s Club Optical</strong> — $60-80 exam (much cheaper than retail).</li>
@@ -62,7 +62,7 @@ export default function EyeExamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Buy glasses online cheaper</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Zenni</strong> — frames + lenses from $7. $25-50 typical pair.</li>
               <li><strong>EyeBuyDirect</strong> — $8 frames, $30 typical pair.</li>
               <li><strong>Warby Parker</strong> — $95+. Try-on at home program.</li>
@@ -76,7 +76,7 @@ export default function EyeExamApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior eye health basics</h3>
-            <p className="text-sm text-muted-foreground">Most seniors need NEW prescription every 2-3 years. Cataracts develop in most people 70+. Sudden vision change, sudden floaters, curtain in vision = ER. Annual visit catches problems while still treatable.</p>
+            <p className="text-base text-muted-foreground">Most seniors need NEW prescription every 2-3 years. Cataracts develop in most people 70+. Sudden vision change, sudden floaters, curtain in vision = ER. Annual visit catches problems while still treatable.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function WineTastingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior moderation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior limit: 1 drink/day women, 2 men.</li>
               <li>Some research shows less = better.</li>
               <li>Talk to doctor if on medications.</li>
@@ -33,7 +33,7 @@ export default function WineTastingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to taste</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local wineries — many states have.</li>
               <li>Wine bars — by-the-glass.</li>
               <li>Whole Foods / Trader Joe&apos;s tastings.</li>
@@ -47,7 +47,7 @@ export default function WineTastingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior favorites by type</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Red — easy</strong>: Pinot Noir, Merlot.</li>
               <li><strong>Red — bold</strong>: Cabernet, Malbec.</li>
               <li><strong>White — crisp</strong>: Sauvignon Blanc, Pinot Grigio.</li>
@@ -61,7 +61,7 @@ export default function WineTastingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheap good wine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Trader Joe&apos;s</strong> — &quot;Two Buck Chuck&quot; Charles Shaw.</li>
               <li><strong>Costco Kirkland</strong> — quality at price.</li>
               <li><strong>Total Wine</strong> — selection + sales.</li>
@@ -75,7 +75,7 @@ export default function WineTastingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wine club</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local winery wine clubs.</li>
               <li>Discover new bottles.</li>
               <li>Member events.</li>
@@ -89,7 +89,7 @@ export default function WineTastingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Travel + wine</h3>
-            <p className="text-sm text-muted-foreground">Napa, Sonoma, Willamette, Finger Lakes — premier US regions. Tuscany, Rioja, Burgundy international. Senior-paced wine tours via Tauck, VBT. Wine + travel = retirement bliss.</p>
+            <p className="text-base text-muted-foreground">Napa, Sonoma, Willamette, Finger Lakes — premier US regions. Tuscany, Rioja, Burgundy international. Senior-paced wine tours via Tauck, VBT. Wine + travel = retirement bliss.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function AARPGamesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to find</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AARP.org/games — direct in browser.</li>
               <li>No app needed.</li>
               <li>No AARP membership required.</li>
@@ -33,7 +33,7 @@ export default function AARPGamesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Categories</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Word games — crosswords, Wordle alternatives.</li>
               <li>Puzzle games — jigsaw, mahjong, sudoku.</li>
               <li>Card games — solitaire, hearts, spades.</li>
@@ -47,7 +47,7 @@ export default function AARPGamesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-popular favorites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily Crossword.</li>
               <li>Daily Sudoku.</li>
               <li>Mahjongg Solitaire.</li>
@@ -61,7 +61,7 @@ export default function AARPGamesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why AARP games?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Designed for senior reading + clicking.</li>
               <li>Larger fonts than typical games.</li>
               <li>No social features — privacy-focused.</li>
@@ -75,7 +75,7 @@ export default function AARPGamesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Brain training claims</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily puzzles + games support brain health.</li>
               <li>Mental engagement reduces dementia risk.</li>
               <li>Variety better than single game.</li>
@@ -89,7 +89,7 @@ export default function AARPGamesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other free game sites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pogo.com — free games.</li>
               <li>Big Fish Games — free demos.</li>
               <li>Yahoo Games (some free).</li>
@@ -103,7 +103,7 @@ export default function AARPGamesForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Bookmark AARP Games</h3>
-            <p className="text-sm text-muted-foreground">Add AARP.org/games to your computer bookmarks. Open it during morning coffee. 15 minutes of crossword + sudoku starts the day with brain exercise. No app to install, no microtransactions, no manipulative design. Just simple, free, senior-friendly games. Best free entertainment site for seniors many know about.</p>
+            <p className="text-base text-muted-foreground">Add AARP.org/games to your computer bookmarks. Open it during morning coffee. 15 minutes of crossword + sudoku starts the day with brain exercise. No app to install, no microtransactions, no manipulative design. Just simple, free, senior-friendly games. Best free entertainment site for seniors many know about.</p>
           </CardContent>
         </Card>
       </main>

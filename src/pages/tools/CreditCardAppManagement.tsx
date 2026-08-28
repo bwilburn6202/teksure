@@ -19,7 +19,7 @@ export default function CreditCardAppManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why use card apps?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Instant transaction alerts catch fraud immediately.</li>
               <li>Lock cards if lost — no waiting on hold.</li>
               <li>Set up autopay — never miss payment.</li>
@@ -33,7 +33,7 @@ export default function CreditCardAppManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Major card apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Chase Mobile — Sapphire, Freedom, Slate.</li>
               <li>Capital One Mobile.</li>
               <li>Citi Mobile.</li>
@@ -47,7 +47,7 @@ export default function CreditCardAppManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Critical alerts to set</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>EVERY transaction (catches fraud fast).</li>
               <li>Charges over $100.</li>
               <li>International transactions.</li>
@@ -61,7 +61,7 @@ export default function CreditCardAppManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Card lock feature</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Toggle lock if card lost or stolen.</li>
               <li>Stops all new charges instantly.</li>
               <li>Unlock when found.</li>
@@ -75,7 +75,7 @@ export default function CreditCardAppManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Autopay setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Autopay or Automatic Payments.</li>
               <li>Pay full balance automatically each month.</li>
               <li>Avoids interest charges.</li>
@@ -89,7 +89,7 @@ export default function CreditCardAppManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Disputing charges</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>See unfamiliar charge?</li>
               <li>Tap charge → &quot;Dispute&quot; or &quot;Report Issue.&quot;</li>
               <li>Process is digital, no phone call.</li>
@@ -103,7 +103,7 @@ export default function CreditCardAppManagement() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Set up alerts on every card today</h3>
-            <p className="text-sm text-muted-foreground">If you take one action this week: download every credit card app and turn on transaction alerts for ALL purchases. The text or push notification within minutes of any charge is the fastest fraud detection available. Many seniors who&apos;ve been hit with fraud caught it within minutes due to instant alerts — minimizing damage. Free, takes 2 minutes per card.</p>
+            <p className="text-base text-muted-foreground">If you take one action this week: download every credit card app and turn on transaction alerts for ALL purchases. The text or push notification within minutes of any charge is the fastest fraud detection available. Many seniors who&apos;ve been hit with fraud caught it within minutes due to instant alerts — minimizing damage. Free, takes 2 minutes per card.</p>
           </CardContent>
         </Card>
       </main>

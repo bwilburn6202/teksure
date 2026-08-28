@@ -85,7 +85,7 @@ export default function AdultScreenTimeCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other tricks that work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Move "time-suck" apps off your home screen</strong> — into a folder on page 3. Adds a friction step.</li>
               <li><strong>Turn off notifications</strong> for Facebook, news, games. Settings → Notifications → "Off" for each.</li>
               <li><strong>Replace bedtime scrolling</strong> with a Kindle book or audiobook. Both are still tech but more thoughtful.</li>
@@ -98,7 +98,7 @@ export default function AdultScreenTimeCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don\'t go cold turkey</h3>
-            <p className="text-sm text-muted-foreground">Set a small limit first — 1 hour Facebook a day. Stick to it for 2 weeks. Then tighten if you want. Going from "all day" to "1 hour" overnight rarely sticks.</p>
+            <p className="text-base text-muted-foreground">Set a small limit first — 1 hour Facebook a day. Stick to it for 2 weeks. Then tighten if you want. Going from "all day" to "1 hour" overnight rarely sticks.</p>
           </CardContent>
         </Card>
       </main>

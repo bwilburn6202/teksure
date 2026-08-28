@@ -19,7 +19,7 @@ export default function BlueLightFilters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone / iPad — Night Shift</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Display &amp; Brightness → Night Shift.</li>
               <li>Schedule → "Sunset to Sunrise".</li>
               <li>Color temperature slider — drag toward Warmer.</li>
@@ -31,7 +31,7 @@ export default function BlueLightFilters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mac — Night Shift</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>System Settings → Displays → Night Shift.</li>
               <li>Schedule → Sunset to Sunrise.</li>
               <li>Slider toward warmer.</li>
@@ -43,7 +43,7 @@ export default function BlueLightFilters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Windows — Night Light</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Display → Night light.</li>
               <li>Toggle ON.</li>
               <li>Schedule → Sunset to Sunrise.</li>
@@ -55,7 +55,7 @@ export default function BlueLightFilters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android — Night Light / Comfort View</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Display → Night Light.</li>
               <li>Schedule + intensity.</li>
               <li>Pixel calls it "Night Light". Samsung calls it "Comfort View" or "Eye Comfort Shield".</li>
@@ -66,7 +66,7 @@ export default function BlueLightFilters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Blue light glasses — research mixed</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>2024 Cochrane review found weak evidence for blue light glasses.</li>
               <li>BUT — many people SAY they help with eye strain.</li>
               <li>If you want to try, $20 from Amazon is fine. $80 brands no better.</li>
@@ -79,7 +79,7 @@ export default function BlueLightFilters() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Sleep impact</h3>
-            <p className="text-sm text-muted-foreground">Blue light suppresses melatonin. Dim screens 2 hrs before bed. Better — read paper book or use Kindle (e-ink) at bedtime. iPad/iPhone with Night Shift on is OK but not as good.</p>
+            <p className="text-base text-muted-foreground">Blue light suppresses melatonin. Dim screens 2 hrs before bed. Better — read paper book or use Kindle (e-ink) at bedtime. iPad/iPhone with Night Shift on is OK but not as good.</p>
           </CardContent>
         </Card>
       </main>

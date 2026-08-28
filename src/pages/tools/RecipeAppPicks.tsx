@@ -34,7 +34,7 @@ export default function RecipeAppPicks() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function RecipeAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick decision</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Want to save recipes from any website</strong> → Paprika ($5 once).</li>
               <li><strong>Best free option</strong> → Allrecipes.</li>
               <li><strong>Health-conscious cooking</strong> → Yummly.</li>
@@ -56,7 +56,7 @@ export default function RecipeAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPad in kitchen on stand — bigger text, splatter-proof case.</li>
               <li>Voice "Hey Siri, set timer for 15 min" while hands are floury.</li>
               <li>Print recipes you make weekly — laminate them for a permanent kitchen binder.</li>
@@ -76,7 +76,7 @@ export default function RecipeAppPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior-friendly recipe sources</h3>
-            <p className="text-sm text-muted-foreground">National Council on Aging, AARP, NIH all publish free senior recipe collections — heart-healthy, low-sodium, diabetic-friendly. Search "senior recipe" + condition. Beats sketchy weight-loss sites.</p>
+            <p className="text-base text-muted-foreground">National Council on Aging, AARP, NIH all publish free senior recipe collections — heart-healthy, low-sodium, diabetic-friendly. Search "senior recipe" + condition. Beats sketchy weight-loss sites.</p>
           </CardContent>
         </Card>
       </main>

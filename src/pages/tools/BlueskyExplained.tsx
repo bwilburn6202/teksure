@@ -19,7 +19,7 @@ export default function BlueskyExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Bluesky?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Created by Twitter founder Jack Dorsey.</li>
               <li>Decentralized — owned by users.</li>
               <li>No advertising.</li>
@@ -33,7 +33,7 @@ export default function BlueskyExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bluesky vs others</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bluesky — independent, ad-free.</li>
               <li>Threads — Meta-owned.</li>
               <li>Twitter (X) — Elon Musk-owned.</li>
@@ -47,7 +47,7 @@ export default function BlueskyExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sign up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to bsky.app.</li>
               <li>Or download Bluesky app.</li>
               <li>Email, username, password.</li>
@@ -61,7 +61,7 @@ export default function BlueskyExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First steps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick &quot;Starter Pack&quot; — pre-curated follows.</li>
               <li>Senior-friendly: news, hobbies.</li>
               <li>Follow journalists, scientists.</li>
@@ -75,7 +75,7 @@ export default function BlueskyExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to post</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap pencil icon.</li>
               <li>Type up to 300 characters.</li>
               <li>Add photo, video, link.</li>
@@ -89,7 +89,7 @@ export default function BlueskyExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Custom feeds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Discover&quot; — built-in algorithm.</li>
               <li>&quot;Following&quot; — chronological friends.</li>
               <li>Custom feeds by topic.</li>
@@ -103,7 +103,7 @@ export default function BlueskyExplained() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth trying?</h3>
-            <p className="text-sm text-muted-foreground">If you miss old Twitter — give Bluesky try. Quality conversations. Less hostility. Strong moderation. Senior writers, journalists active. Free + no ads. If you don&apos;t miss Twitter — skip it. Don&apos;t need to be on every platform. Pick one or two that bring joy.</p>
+            <p className="text-base text-muted-foreground">If you miss old Twitter — give Bluesky try. Quality conversations. Less hostility. Strong moderation. Senior writers, journalists active. Free + no ads. If you don&apos;t miss Twitter — skip it. Don&apos;t need to be on every platform. Pick one or two that bring joy.</p>
           </CardContent>
         </Card>
       </main>

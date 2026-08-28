@@ -19,7 +19,7 @@ export default function GooglePhotosForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Google Photos?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>15GB free, then $2/month for 100GB.</li>
               <li>Auto-backup of all phone photos.</li>
               <li>AI search — find by content (&quot;sunset,&quot; &quot;dog&quot;).</li>
@@ -33,7 +33,7 @@ export default function GooglePhotosForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Google Photos app.</li>
               <li>Sign in with Google account.</li>
               <li>Toggle Backup ON.</li>
@@ -47,7 +47,7 @@ export default function GooglePhotosForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AI search</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search bar at top.</li>
               <li>Type &quot;beach&quot; — finds beach photos.</li>
               <li>Type person&apos;s name — face recognition finds them.</li>
@@ -61,7 +61,7 @@ export default function GooglePhotosForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sharing albums</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Create album of grandkid trip.</li>
               <li>Share with family members.</li>
               <li>They can add their own photos to it.</li>
@@ -75,7 +75,7 @@ export default function GooglePhotosForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Memories feature</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>App shows photos from same date previous years.</li>
               <li>&quot;3 years ago today.&quot;</li>
               <li>Share to family — &quot;remember this?&quot;</li>
@@ -89,7 +89,7 @@ export default function GooglePhotosForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free up phone storage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>After backup, &quot;Free up space.&quot;</li>
               <li>Removes photos from phone, kept in cloud.</li>
               <li>Frees gigabytes of phone storage.</li>
@@ -103,7 +103,7 @@ export default function GooglePhotosForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Use Google Photos OR iCloud, not both</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t pay for both Google Photos AND iCloud. iPhone users: iCloud is more integrated. Android users: Google Photos is the only option. Some prefer Google Photos on iPhone for the AI search and free 15GB tier — that&apos;s fine. Just pick one and use it consistently. Your photos backed up matters more than which service.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t pay for both Google Photos AND iCloud. iPhone users: iCloud is more integrated. Android users: Google Photos is the only option. Some prefer Google Photos on iPhone for the AI search and free 15GB tier — that&apos;s fine. Just pick one and use it consistently. Your photos backed up matters more than which service.</p>
           </CardContent>
         </Card>
       </main>

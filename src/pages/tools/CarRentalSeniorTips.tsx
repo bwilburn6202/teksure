@@ -19,7 +19,7 @@ export default function CarRentalSeniorTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AARP</strong> — 5-30% off Hertz, Avis, Budget.</li>
               <li><strong>AAA</strong> — discount + insurance benefits.</li>
               <li><strong>Costco Travel</strong> — often best price + free additional driver.</li>
@@ -32,7 +32,7 @@ export default function CarRentalSeniorTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save more</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Book early — prices rise as date approaches.</li>
               <li>Check rate every few days — cancel + rebook if drops.</li>
               <li>Off-airport often 30% cheaper.</li>
@@ -47,7 +47,7 @@ export default function CarRentalSeniorTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip THESE add-ons (usually)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Liability insurance</strong> — your auto insurance + credit card cover.</li>
               <li><strong>CDW (collision damage waiver)</strong> — good credit cards include free.</li>
               <li><strong>Roadside</strong> — AAA covers most.</li>
@@ -62,7 +62,7 @@ export default function CarRentalSeniorTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Credit card insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Chase Sapphire Preferred</strong> — primary CDW. Excellent.</li>
               <li><strong>Capital One Venture X</strong> — primary CDW.</li>
               <li><strong>Most Visa Signature</strong> — secondary CDW.</li>
@@ -77,7 +77,7 @@ export default function CarRentalSeniorTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">At pickup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walk around car BEFORE driving — photo every angle.</li>
               <li>Note existing damage on contract.</li>
               <li>Check fuel gauge.</li>
@@ -92,7 +92,7 @@ export default function CarRentalSeniorTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior age limits</h3>
-            <p className="text-sm text-muted-foreground">Most US rental companies have NO upper age limit (some Canada/Europe do). Bring valid driver&apos;s license + same-name credit card. Most accept 18+. International rentals — bring International Driver&apos;s Permit ($20 from AAA).</p>
+            <p className="text-base text-muted-foreground">Most US rental companies have NO upper age limit (some Canada/Europe do). Bring valid driver&apos;s license + same-name credit card. Most accept 18+. International rentals — bring International Driver&apos;s Permit ($20 from AAA).</p>
           </CardContent>
         </Card>
       </main>

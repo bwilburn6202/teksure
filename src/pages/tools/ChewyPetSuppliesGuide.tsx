@@ -19,7 +19,7 @@ export default function ChewyPetSuppliesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Chewy?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No more hauling 30-lb bags from the store.</li>
               <li>Auto-ship — never run out of pet food.</li>
               <li>Free shipping on orders $49+.</li>
@@ -33,7 +33,7 @@ export default function ChewyPetSuppliesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Auto-ship savings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set up recurring delivery — every 2, 4, or 6 weeks.</li>
               <li>5% off most items first auto-ship order.</li>
               <li>5% off ongoing for many items.</li>
@@ -47,7 +47,7 @@ export default function ChewyPetSuppliesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Prescription pet meds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Chewy Pharmacy — fill pet prescriptions.</li>
               <li>Often cheaper than vet pharmacy.</li>
               <li>Vet faxes/emails prescription to Chewy.</li>
@@ -61,7 +61,7 @@ export default function ChewyPetSuppliesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Chewy Connect telehealth</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free for Chewy customers.</li>
               <li>Talk to a vet by video chat.</li>
               <li>Helpful for non-emergency questions.</li>
@@ -75,7 +75,7 @@ export default function ChewyPetSuppliesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to set up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to Chewy.com or download Chewy app.</li>
               <li>Create account — email + password.</li>
               <li>Add pet info — species, age, weight.</li>
@@ -89,7 +89,7 @@ export default function ChewyPetSuppliesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Famous Chewy customer service</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Send sympathy flowers when pet passes.</li>
               <li>Refunds + returns no questions asked.</li>
               <li>Hand-painted pet portraits sometimes.</li>
@@ -103,7 +103,7 @@ export default function ChewyPetSuppliesGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No more carrying heavy bags</h3>
-            <p className="text-sm text-muted-foreground">For seniors with mobility issues or back problems, Chewy auto-ship is a major quality-of-life upgrade. A 30-lb bag of dog food shows up on your porch every 4 weeks without you ever lifting it from a store cart. Often cheaper than the pet store. Skip or pause anytime if you&apos;re traveling. Set it up once, then never think about pet food again.</p>
+            <p className="text-base text-muted-foreground">For seniors with mobility issues or back problems, Chewy auto-ship is a major quality-of-life upgrade. A 30-lb bag of dog food shows up on your porch every 4 weeks without you ever lifting it from a store cart. Often cheaper than the pet store. Skip or pause anytime if you&apos;re traveling. Set it up once, then never think about pet food again.</p>
           </CardContent>
         </Card>
       </main>

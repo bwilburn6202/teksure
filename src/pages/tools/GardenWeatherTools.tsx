@@ -19,7 +19,7 @@ export default function GardenWeatherTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free zone + planting tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>USDA Plant Hardiness Zone Map</strong> — planthardiness.ars.usda.gov. Type zip — get zone.</li>
               <li><strong>Almanac.com Planting Calendar</strong> — when to plant for your zip code. Free.</li>
               <li><strong>Burpee planting calendar</strong> — also free, by zip.</li>
@@ -31,7 +31,7 @@ export default function GardenWeatherTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Weather apps — gardener features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Weather Underground</strong> — frost alerts, hyperlocal stations.</li>
               <li><strong>AccuWeather</strong> — "MinuteCast" rain prediction.</li>
               <li><strong>Apple Weather</strong> — pollen, UV, sunrise/sunset.</li>
@@ -42,7 +42,7 @@ export default function GardenWeatherTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plant ID apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iNaturalist</strong> — free, identifies plant + tells you if invasive/edible.</li>
               <li><strong>Seek by iNaturalist</strong> — kid-safe version, super fast.</li>
               <li><strong>PictureThis</strong> — $30/year. Premium accuracy + plant care.</li>
@@ -55,7 +55,7 @@ export default function GardenWeatherTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart garden tech</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Smart sprinkler</strong> — Rachio, Rain Bird Wi-Fi. Skips watering when rain forecast. Saves 30% water.</li>
               <li><strong>Smart soil sensor</strong> — XLUX (free, no app), or Vegetronix (with app).</li>
               <li><strong>Min-max thermometer</strong> — track overnight low ($15 at hardware store).</li>
@@ -68,7 +68,7 @@ export default function GardenWeatherTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Frost protection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cover with old sheets, frost cloth, or upturned buckets when overnight low &lt; 35°F.</li>
               <li>Container plants — move into garage or against house wall.</li>
               <li>Water plants thoroughly DAY BEFORE frost — wet soil holds heat.</li>
@@ -81,7 +81,7 @@ export default function GardenWeatherTools() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free local advice</h3>
-            <p className="text-sm text-muted-foreground">Every county has a Cooperative Extension office (USDA). FREE Master Gardener phone hotline. Identify pests, diagnose plant problems, get planting advice for YOUR exact area. Search "[your county] cooperative extension".</p>
+            <p className="text-base text-muted-foreground">Every county has a Cooperative Extension office (USDA). FREE Master Gardener phone hotline. Identify pests, diagnose plant problems, get planting advice for YOUR exact area. Search "[your county] cooperative extension".</p>
           </CardContent>
         </Card>
       </main>

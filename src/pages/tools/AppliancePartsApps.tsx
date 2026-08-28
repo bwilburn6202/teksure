@@ -33,7 +33,7 @@ export default function AppliancePartsApps() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function AppliancePartsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find your model number</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Refrigerator</strong> — sticker inside on left wall or ceiling.</li>
               <li><strong>Dishwasher</strong> — inside top edge (open + look up).</li>
               <li><strong>Washer / dryer</strong> — top opening rim or back panel.</li>
@@ -56,7 +56,7 @@ export default function AppliancePartsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy DIY appliance fixes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Refrigerator water filter — $30, swap in 5 min.</li>
               <li>Dishwasher spray arm clogged — pop off, rinse, reinstall.</li>
               <li>Washer hose replacement — $20, pinch + swap.</li>
@@ -70,7 +70,7 @@ export default function AppliancePartsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to call a pro</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Compressor / sealed system on fridge or AC.</li>
               <li>Anything gas-related (stove, dryer, furnace).</li>
               <li>Inside an electric panel / hardwired electric.</li>
@@ -82,7 +82,7 @@ export default function AppliancePartsApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save warranty info</h3>
-            <p className="text-sm text-muted-foreground">Snap photo of every appliance receipt + serial number. Save in a "Receipts" album in Photos. Many appliances have 1-10 year warranties. With proof, repair often free.</p>
+            <p className="text-base text-muted-foreground">Snap photo of every appliance receipt + serial number. Save in a "Receipts" album in Photos. Many appliances have 1-10 year warranties. With proof, repair often free.</p>
           </CardContent>
         </Card>
       </main>

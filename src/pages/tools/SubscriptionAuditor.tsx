@@ -320,7 +320,7 @@ export default function SubscriptionAuditor() {
               <Card className="border-2 shadow-lg">
                 <CardContent className="pt-6 flex flex-wrap items-center justify-between gap-4">
                   <div>
-                    <p className="text-sm text-muted-foreground">Checked so far</p>
+                    <p className="text-base text-muted-foreground">Checked so far</p>
                     <p className="text-xl font-bold">
                       {selectedCount} subscription{selectedCount === 1 ? '' : 's'} · ${monthlyTotal}/mo
                     </p>

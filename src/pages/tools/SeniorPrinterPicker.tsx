@@ -40,7 +40,7 @@ export default function SeniorPrinterPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -89,7 +89,7 @@ export default function SeniorPrinterPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Top recommendation</h3>
-            <p className="text-sm text-muted-foreground"><strong>Brother HL-L2350DW</strong> ($160) for B&W. <strong>Epson EcoTank ET-2850</strong> ($300) if you need color. Skip the $50 inkjet printers — guaranteed to disappoint.</p>
+            <p className="text-base text-muted-foreground"><strong>Brother HL-L2350DW</strong> ($160) for B&W. <strong>Epson EcoTank ET-2850</strong> ($300) if you need color. Skip the $50 inkjet printers — guaranteed to disappoint.</p>
           </CardContent>
         </Card>
       </main>

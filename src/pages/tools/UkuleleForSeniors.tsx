@@ -19,7 +19,7 @@ export default function UkuleleForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior favorite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>4 strings vs guitar 6.</li>
               <li>Easier on fingers (nylon strings).</li>
               <li>Gentle on arthritis.</li>
@@ -34,7 +34,7 @@ export default function UkuleleForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Picks ($50-150)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cordoba 15CM</strong> — $80. Best beginner.</li>
               <li><strong>Lanikai LU-21</strong> — $80. Reliable.</li>
               <li><strong>Kala MK-S</strong> — $50. Cheapest decent.</li>
@@ -48,7 +48,7 @@ export default function UkuleleForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First chords</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>C, G, F, Am — most songs.</li>
               <li>Hundreds of songs with these 4.</li>
               <li>Know in 1-2 weeks practice.</li>
@@ -62,7 +62,7 @@ export default function UkuleleForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior ukulele groups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local senior centers — many have.</li>
               <li>Library ukulele clubs.</li>
               <li>Meetup.com search ukulele groups.</li>
@@ -77,7 +77,7 @@ export default function UkuleleForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>Ukulele Underground</strong> — YouTube + courses. <strong>Ukulele Tricks</strong> — beginner site. <strong>Cynthia Lin</strong> — popular YouTube. Most free. Books + DVDs at library. Ukulele easiest senior musical hobby. Try one.</p>
+            <p className="text-base text-muted-foreground"><strong>Ukulele Underground</strong> — YouTube + courses. <strong>Ukulele Tricks</strong> — beginner site. <strong>Cynthia Lin</strong> — popular YouTube. Most free. Books + DVDs at library. Ukulele easiest senior musical hobby. Try one.</p>
           </CardContent>
         </Card>
       </main>

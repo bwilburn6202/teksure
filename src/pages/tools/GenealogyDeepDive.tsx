@@ -19,7 +19,7 @@ export default function GenealogyDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Newspaper archives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Newspapers.com</strong> — 800M+ pages. $20-40/month. Find obituaries, weddings, family events.</li>
               <li><strong>Chronicling America (Library of Congress)</strong> — FREE. US newspapers 1777-1963. chroniclingamerica.loc.gov.</li>
               <li><strong>Newspaper Archive</strong> — 14,000+ papers. $20/month.</li>
@@ -32,7 +32,7 @@ export default function GenealogyDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Military records</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fold3</strong> — military records 1700s-1990s. $90/year. Civil War extensive. WWI/WWII pension files.</li>
               <li><strong>National Archives (NARA)</strong> — request records FREE if 62+ years old at archives.gov.</li>
               <li><strong>Find A Grave</strong> — free cemetery records. Many veterans have headstone photos.</li>
@@ -45,7 +45,7 @@ export default function GenealogyDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Census + immigration</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>FamilySearch (FREE)</strong> — all US censuses 1790-1950. Ship manifests, naturalization.</li>
               <li><strong>1950 Census</strong> — newly released, fully searchable. Find your parents/grandparents.</li>
               <li><strong>Ellis Island Foundation</strong> (libertyellisfoundation.org) — FREE. 25M passenger arrivals 1820-1957.</li>
@@ -58,7 +58,7 @@ export default function GenealogyDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> DNA + family connections</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AncestryDNA</strong> — biggest database, best US matches.</li>
               <li><strong>23andMe</strong> — strong on health + ethnicity.</li>
               <li><strong>MyHeritage DNA</strong> — best for European matches.</li>
@@ -85,7 +85,7 @@ export default function GenealogyDeepDive() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best research strategy</h3>
-            <p className="text-sm text-muted-foreground">Start with FamilySearch (free) and FamilyTreeDNA (test). Add Newspapers.com via library subscription. For specific brick walls, post on the FamilySearch community or r/Genealogy on Reddit. Real volunteer experts answer.</p>
+            <p className="text-base text-muted-foreground">Start with FamilySearch (free) and FamilyTreeDNA (test). Add Newspapers.com via library subscription. For specific brick walls, post on the FamilySearch community or r/Genealogy on Reddit. Real volunteer experts answer.</p>
           </CardContent>
         </Card>
       </main>

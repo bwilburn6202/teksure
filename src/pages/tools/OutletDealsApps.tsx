@@ -34,7 +34,7 @@ export default function OutletDealsApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function OutletDealsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best workflow</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign up for Slickdeals + Brad&apos;s Deals daily emails.</li>
               <li>Add Honey browser extension on your computer.</li>
               <li>Add Rakuten as starting point for online shopping.</li>
@@ -56,7 +56,7 @@ export default function OutletDealsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Outlet stores online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Nordstrom Rack</strong> — designer brands at 30-70% off. Free shipping over $89.</li>
               <li><strong>Sierra (Sierra Trading Post)</strong> — outdoor + boots clearance, owned by TJ Maxx.</li>
               <li><strong>Saks Off 5th</strong> — Saks Fifth Avenue overstock.</li>
@@ -70,7 +70,7 @@ export default function OutletDealsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best times to buy each thing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>TVs</strong> — Black Friday + Super Bowl week (late January).</li>
               <li><strong>Mattresses</strong> — Memorial Day, Labor Day, President&apos;s Day.</li>
               <li><strong>Cars</strong> — September-October when new models arrive; end-of-month for sales quotas.</li>
@@ -85,7 +85,7 @@ export default function OutletDealsApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t fall for "limited time"</h3>
-            <p className="text-sm text-muted-foreground">90% of "today only" sales are fake urgency — it&apos;ll be back next week. Use Camelcamelcamel or Keepa to see Amazon price history. If a "sale" is the regular price for the past 6 months, walk away.</p>
+            <p className="text-base text-muted-foreground">90% of "today only" sales are fake urgency — it&apos;ll be back next week. Use Camelcamelcamel or Keepa to see Amazon price history. If a "sale" is the regular price for the past 6 months, walk away.</p>
           </CardContent>
         </Card>
       </main>

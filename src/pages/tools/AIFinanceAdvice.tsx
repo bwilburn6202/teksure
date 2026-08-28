@@ -19,7 +19,7 @@ export default function AIFinanceAdvice() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Good AI use cases</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Understand investment terms.</li>
               <li>Tax form questions.</li>
               <li>Compare CDs, savings rates.</li>
@@ -33,7 +33,7 @@ export default function AIFinanceAdvice() {
         <Card className="mb-4 border-yellow-300">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3 text-yellow-700">Don&apos;t use AI for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Specific investment recommendations.</li>
               <li>Tax filing without verification.</li>
               <li>Insurance product picks.</li>
@@ -47,7 +47,7 @@ export default function AIFinanceAdvice() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sample questions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Explain Roth vs Traditional IRA.&quot;</li>
               <li>&quot;What does RMD mean?&quot;</li>
               <li>&quot;Compare bonds vs CDs.&quot;</li>
@@ -61,7 +61,7 @@ export default function AIFinanceAdvice() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best AI for finance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ChatGPT</strong> — general explanations.</li>
               <li><strong>Claude</strong> — comprehensive answers.</li>
               <li><strong>Perplexity</strong> — cites sources.</li>
@@ -75,7 +75,7 @@ export default function AIFinanceAdvice() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real advisor still essential</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>CFP for specific advice.</li>
               <li>Fee-only fiduciary best.</li>
               <li>$200-300/hr.</li>
@@ -89,7 +89,7 @@ export default function AIFinanceAdvice() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free senior resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AARP Foundation Finances.</li>
               <li>Financial Planning Association free clinics.</li>
               <li>VITA tax help (Volunteer Income Tax Assistance).</li>
@@ -103,7 +103,7 @@ export default function AIFinanceAdvice() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">AI scam watch</h3>
-            <p className="text-sm text-muted-foreground">Some &quot;AI financial apps&quot; — actually scams. AI in real apps (Mint, Personal Capital) — legit. Standalone &quot;Get rich with AI&quot; — scam. Crypto AI bots = scam. Stock-picking AI = scam. Free legitimate AI: ChatGPT, Claude, Gemini. Anything promising guaranteed returns = lying. Skepticism is the senior&apos;s best friend.</p>
+            <p className="text-base text-muted-foreground">Some &quot;AI financial apps&quot; — actually scams. AI in real apps (Mint, Personal Capital) — legit. Standalone &quot;Get rich with AI&quot; — scam. Crypto AI bots = scam. Stock-picking AI = scam. Free legitimate AI: ChatGPT, Claude, Gemini. Anything promising guaranteed returns = lying. Skepticism is the senior&apos;s best friend.</p>
           </CardContent>
         </Card>
       </main>

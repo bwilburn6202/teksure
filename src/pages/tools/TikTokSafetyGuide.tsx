@@ -19,7 +19,7 @@ export default function TikTokSafetyGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What TikTok is</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Short videos (15 sec to 10 min).</li>
               <li>Algorithm shows what addicts you.</li>
               <li>Free + ad-supported.</li>
@@ -33,7 +33,7 @@ export default function TikTokSafetyGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior caution</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VERY addictive — limit time.</li>
               <li>Misinformation spreads (medical, financial).</li>
               <li>Scammers target via comments.</li>
@@ -47,7 +47,7 @@ export default function TikTokSafetyGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safer use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set 30-min daily limit (Settings).</li>
               <li>Follow specific accounts only (skip For You feed).</li>
               <li>Don&apos;t engage with strangers in comments.</li>
@@ -62,7 +62,7 @@ export default function TikTokSafetyGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-good content</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cooking accounts (#tiktokcooking).</li>
               <li>Gardening (#gardentok).</li>
               <li>History (#historytok).</li>
@@ -77,7 +77,7 @@ export default function TikTokSafetyGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For concerned grandparents</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Talk to grandkids about TikTok use.</li>
               <li>Family Pairing — set time limits.</li>
               <li>Restricted Mode for younger kids.</li>
@@ -91,7 +91,7 @@ export default function TikTokSafetyGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Should YOU use it?</h3>
-            <p className="text-sm text-muted-foreground">For curious connection with grandkids — yes, but limit. For news/medical info — NO. For entertainment — sometimes okay. For mental health — debatable. Many seniors find Instagram safer alternative for similar entertainment.</p>
+            <p className="text-base text-muted-foreground">For curious connection with grandkids — yes, but limit. For news/medical info — NO. For entertainment — sometimes okay. For mental health — debatable. Many seniors find Instagram safer alternative for similar entertainment.</p>
           </CardContent>
         </Card>
       </main>

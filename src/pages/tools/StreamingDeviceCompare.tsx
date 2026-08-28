@@ -33,7 +33,7 @@ export default function StreamingDeviceCompare() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function StreamingDeviceCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Roku = senior favorite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Big simple buttons on remote.</li>
               <li>Each app on home screen as tile.</li>
               <li>No fancy menus.</li>
@@ -57,7 +57,7 @@ export default function StreamingDeviceCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (10 min)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plug device into TV HDMI port.</li>
               <li>Plug power into wall outlet (or USB on TV).</li>
               <li>Switch TV to that HDMI input.</li>
@@ -71,7 +71,7 @@ export default function StreamingDeviceCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart TV avoids extra device</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most TVs 2018+ have built-in apps.</li>
               <li>Samsung, LG, Sony, TCL, Vizio.</li>
               <li>Same Netflix + others built-in.</li>
@@ -85,7 +85,7 @@ export default function StreamingDeviceCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free streaming services (no fees)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tubi</strong> — free movies + TV with ads.</li>
               <li><strong>Pluto TV</strong> — live + on-demand free.</li>
               <li><strong>Roku Channel</strong> — free movies.</li>
@@ -99,7 +99,7 @@ export default function StreamingDeviceCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Help available</h3>
-            <p className="text-sm text-muted-foreground">Free Roku/Apple TV setup at: Best Buy, Apple Store, family member, Comcast/Spectrum tech (often free if subscriber). Don&apos;t struggle alone. 30 min setup = years of streaming. Worth it.</p>
+            <p className="text-base text-muted-foreground">Free Roku/Apple TV setup at: Best Buy, Apple Store, family member, Comcast/Spectrum tech (often free if subscriber). Don&apos;t struggle alone. 30 min setup = years of streaming. Worth it.</p>
           </CardContent>
         </Card>
       </main>

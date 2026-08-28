@@ -19,7 +19,7 @@ export default function SeniorBookkeepingFreelance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why bookkeeping</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Always-needed skill.</li>
               <li>Work from home.</li>
               <li>Choose your hours.</li>
@@ -33,7 +33,7 @@ export default function SeniorBookkeepingFreelance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">QuickBooks ProAdvisor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free certification through QuickBooks.</li>
               <li>Listed in QuickBooks ProAdvisor directory.</li>
               <li>Clients find you free.</li>
@@ -47,7 +47,7 @@ export default function SeniorBookkeepingFreelance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Software to learn</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>QuickBooks Online — most popular.</li>
               <li>Xero — alternative.</li>
               <li>Wave — free for clients.</li>
@@ -61,7 +61,7 @@ export default function SeniorBookkeepingFreelance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find clients</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local Chamber of Commerce.</li>
               <li>Upwork freelance platform.</li>
               <li>Facebook small business groups.</li>
@@ -75,7 +75,7 @@ export default function SeniorBookkeepingFreelance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Income ranges</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$25-$50/hour — basic data entry.</li>
               <li>$50-$80/hour — full bookkeeping.</li>
               <li>$80-$150/hour — controller-level.</li>
@@ -89,7 +89,7 @@ export default function SeniorBookkeepingFreelance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior advantages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lifetime financial experience.</li>
               <li>Reliability + trust.</li>
               <li>Detail-oriented.</li>
@@ -103,7 +103,7 @@ export default function SeniorBookkeepingFreelance() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior accountants in demand</h3>
-            <p className="text-sm text-muted-foreground">If you have any accounting/finance background, freelance bookkeeping is excellent senior income. Get QuickBooks ProAdvisor cert (free), build small client base, work from home. Many seniors earn $30K-$80K+/year part-time. Seniors trust other seniors with money — your demographic is your client. Start with one client this month.</p>
+            <p className="text-base text-muted-foreground">If you have any accounting/finance background, freelance bookkeeping is excellent senior income. Get QuickBooks ProAdvisor cert (free), build small client base, work from home. Many seniors earn $30K-$80K+/year part-time. Seniors trust other seniors with money — your demographic is your client. Start with one client this month.</p>
           </CardContent>
         </Card>
       </main>

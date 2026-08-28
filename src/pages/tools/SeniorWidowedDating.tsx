@@ -19,7 +19,7 @@ export default function SeniorWidowedDating() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you&apos;re ready</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No timeline — every person different.</li>
               <li>Some 6 months, some 5 years.</li>
               <li>Companionship is human need.</li>
@@ -33,7 +33,7 @@ export default function SeniorWidowedDating() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">In-person opportunities</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior centers — singles events.</li>
               <li>Religious communities.</li>
               <li>Continuing education classes.</li>
@@ -47,7 +47,7 @@ export default function SeniorWidowedDating() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>OurTime — most popular 50+.</li>
               <li>SilverSingles — premium matchmaking.</li>
               <li>Match.com — broader age range.</li>
@@ -61,7 +61,7 @@ export default function SeniorWidowedDating() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Talk about your loss</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Honest profile mention.</li>
               <li>Don&apos;t hide widow/widower status.</li>
               <li>Other widowed people understand.</li>
@@ -75,7 +75,7 @@ export default function SeniorWidowedDating() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Special considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adult children may struggle with parent dating.</li>
               <li>Estate + inheritance discussions important.</li>
               <li>Health considerations.</li>
@@ -89,7 +89,7 @@ export default function SeniorWidowedDating() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-meeting safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Public place during day.</li>
               <li>Tell adult child + friend.</li>
               <li>Drive yourself or use Lyft.</li>
@@ -103,7 +103,7 @@ export default function SeniorWidowedDating() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No shame in seeking love again</h3>
-            <p className="text-sm text-muted-foreground">After spouse loss, many seniors feel guilty about wanting companionship. Your spouse would want you to be happy. Loving again doesn&apos;t diminish what you had. Whether it&apos;s a casual companion for movies + dinner, or a serious romantic partner, you deserve happiness. Take your time, be safe, and trust the process.</p>
+            <p className="text-base text-muted-foreground">After spouse loss, many seniors feel guilty about wanting companionship. Your spouse would want you to be happy. Loving again doesn&apos;t diminish what you had. Whether it&apos;s a casual companion for movies + dinner, or a serious romantic partner, you deserve happiness. Take your time, be safe, and trust the process.</p>
           </CardContent>
         </Card>
       </main>

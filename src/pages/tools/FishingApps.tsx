@@ -33,7 +33,7 @@ export default function FishingApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function FishingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free state resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most states have an OFFICIAL app — search "[state] fishing app". Free.</li>
               <li>Buy your fishing license through state app — saves a trip to the bait shop.</li>
               <li>Real-time stocking reports.</li>
@@ -55,7 +55,7 @@ export default function FishingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other handy apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tides Near Me</strong> (free) — saltwater tide times.</li>
               <li><strong>Solunar</strong> — best fishing times based on sun/moon.</li>
               <li><strong>Windy</strong> — wind + weather forecasts.</li>
@@ -68,7 +68,7 @@ export default function FishingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior fishing license</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>FREE for 65+</strong> in: Alabama, Florida (residents), Maine (70+), Nebraska, Oklahoma, South Dakota, Tennessee, Texas (65+ residents), more.</li>
               <li><strong>Reduced</strong> in many other states ($5-15 lifetime).</li>
               <li>Veterans/disability discounts in most states.</li>
@@ -80,7 +80,7 @@ export default function FishingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Safety reminders</h3>
-            <p className="text-sm text-muted-foreground">Tell someone where you&apos;re going + when you&apos;ll be back. Wear a life vest in a boat (Coast Guard required for 13+). Carry a charged phone in a waterproof bag. Watch the weather — many storms come up faster than you expect on open water.</p>
+            <p className="text-base text-muted-foreground">Tell someone where you&apos;re going + when you&apos;ll be back. Wear a life vest in a boat (Coast Guard required for 13+). Carry a charged phone in a waterproof bag. Watch the weather — many storms come up faster than you expect on open water.</p>
           </CardContent>
         </Card>
       </main>

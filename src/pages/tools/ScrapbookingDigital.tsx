@@ -33,7 +33,7 @@ export default function ScrapbookingDigital() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function ScrapbookingDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why digital scrapbooking?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No glue, scissors, paper everywhere.</li>
               <li>Store thousands of photos easily.</li>
               <li>Print only what you want.</li>
@@ -56,7 +56,7 @@ export default function ScrapbookingDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: Shutterfly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$30-50/book.</li>
               <li>Easy upload from phone.</li>
               <li>Auto-suggest layouts.</li>
@@ -71,7 +71,7 @@ export default function ScrapbookingDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Project ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Yearly &quot;family year&quot; book.</li>
               <li>Trip / vacation books.</li>
               <li>Grandkid milestone book.</li>
@@ -86,7 +86,7 @@ export default function ScrapbookingDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photo organization first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Get photos off phone — backup first.</li>
               <li>Apple / Google Photos auto-album.</li>
               <li>Pick favorites — 30-50 per book.</li>
@@ -100,7 +100,7 @@ export default function ScrapbookingDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Traditional scrapbooking too</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hobby Lobby / Joann supplies.</li>
               <li>Acid-free paper + adhesive.</li>
               <li>Print photos at Costco / Walgreens.</li>
@@ -114,7 +114,7 @@ export default function ScrapbookingDigital() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t lose photos</h3>
-            <p className="text-sm text-muted-foreground">Scan old paper photos before they fade — Costco, FedEx, ScanCafe. Backup digital photos to cloud — Google Photos free 15GB. Make at least 1 photo book per year. Best gift for kids + grandkids: family memories printed permanently.</p>
+            <p className="text-base text-muted-foreground">Scan old paper photos before they fade — Costco, FedEx, ScanCafe. Backup digital photos to cloud — Google Photos free 15GB. Make at least 1 photo book per year. Best gift for kids + grandkids: family memories printed permanently.</p>
           </CardContent>
         </Card>
       </main>

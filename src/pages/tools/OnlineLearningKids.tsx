@@ -35,7 +35,7 @@ export default function OnlineLearningKids() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function OnlineLearningKids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">By age</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>2-5</strong> — Khan Academy Kids, ABCmouse, PBS Kids.</li>
               <li><strong>5-8</strong> — Epic! reading, Khan Kids, ScratchJr coding, Prodigy Math.</li>
               <li><strong>8-12</strong> — Khan Academy, Duolingo, Scratch coding, BrainPOP, Outschool live classes.</li>
@@ -56,7 +56,7 @@ export default function OnlineLearningKids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free tutoring</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Learn To Be</strong> — free 1-on-1 online tutoring for under-served kids.</li>
               <li><strong>UPchieve</strong> — free homework help, college counseling for low-income.</li>
               <li><strong>Library tutoring</strong> — many libraries offer free Brainfuse tutoring with library card.</li>
@@ -75,7 +75,7 @@ export default function OnlineLearningKids() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Library card opens worlds</h3>
-            <p className="text-sm text-muted-foreground">Make sure grandkids have library cards. Free access to Hoopla, Libby (audiobooks), Kanopy Kids (movies), often Brainfuse tutoring, often Lynda/LinkedIn Learning. Worth more than any paid app.</p>
+            <p className="text-base text-muted-foreground">Make sure grandkids have library cards. Free access to Hoopla, Libby (audiobooks), Kanopy Kids (movies), often Brainfuse tutoring, often Lynda/LinkedIn Learning. Worth more than any paid app.</p>
           </CardContent>
         </Card>
       </main>

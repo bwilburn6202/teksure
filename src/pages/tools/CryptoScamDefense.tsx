@@ -104,7 +104,7 @@ export default function CryptoScamDefense() {
               <p className="text-sm text-muted-foreground mb-2">
                 This is a defensive guide. It will help you recognize crypto scams aimed at people 60+. It is not a guide to investing, trading, or buying cryptocurrency.
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Crypto is a high-risk asset. If you are reading this because someone is pressuring you to buy some, that pressure is the warning sign. Read on.
               </p>
             </CardContent>

@@ -44,7 +44,7 @@ export default function SeniorTabletPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-2"><strong>Best for:</strong> {p.best}</p>
-                <p className="text-sm text-muted-foreground"><strong>Watch out:</strong> {p.cons}</p>
+                <p className="text-base text-muted-foreground"><strong>Watch out:</strong> {p.cons}</p>
               </CardContent>
             </Card>
           ))}
@@ -76,7 +76,7 @@ export default function SeniorTabletPicker() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don't pay full price</h3>
-            <p className="text-sm text-muted-foreground">Apple sells "Certified Refurbished" iPads at apple.com — same warranty, $50-$150 cheaper. Amazon Renewed offers iPads and Fire tablets cheap. Black Friday is the best time of year for tablets.</p>
+            <p className="text-base text-muted-foreground">Apple sells "Certified Refurbished" iPads at apple.com — same warranty, $50-$150 cheaper. Amazon Renewed offers iPads and Fire tablets cheap. Black Friday is the best time of year for tablets.</p>
           </CardContent>
         </Card>
       </main>

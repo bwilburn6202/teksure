@@ -34,7 +34,7 @@ export default function FamilyVideoGames() {
                   <span className="text-sm font-semibold text-primary">{g.cost}</span>
                 </div>
                 <p className="text-sm">{g.best}</p>
-                <p className="text-sm text-muted-foreground">{g.good}</p>
+                <p className="text-base text-muted-foreground">{g.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function FamilyVideoGames() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Switch is the senior pick</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plug-and-play — no big setup.</li>
               <li>Family games (no shooting, no toxic chat).</li>
               <li>Local + online play.</li>
@@ -58,7 +58,7 @@ export default function FamilyVideoGames() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online play with distant grandkids</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Same console family (both Switch, both Xbox, etc.).</li>
               <li>Same game.</li>
               <li>Add each other as Friend in console settings.</li>
@@ -72,7 +72,7 @@ export default function FamilyVideoGames() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Let them teach you</h3>
-            <p className="text-sm text-muted-foreground">Best part — kids LOVE being the expert. Ask "show me how this works" → instant 30-min real conversation. Worth more than the game itself. Listen + ask questions. Be amazed by their world.</p>
+            <p className="text-base text-muted-foreground">Best part — kids LOVE being the expert. Ask "show me how this works" → instant 30-min real conversation. Worth more than the game itself. Listen + ask questions. Be amazed by their world.</p>
           </CardContent>
         </Card>
       </main>

@@ -26,7 +26,7 @@ export default function ESignCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Path 1 — Someone sent you a DocuSign or Adobe Sign email</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open the email. Look for a "Review Document" or "Sign Here" button.</li>
               <li>Tap it. The document opens in your browser — no app needed.</li>
               <li>It walks you through page by page. Yellow tabs show where to sign or initial.</li>

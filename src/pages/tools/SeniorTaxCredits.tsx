@@ -61,7 +61,7 @@ export default function SeniorTaxCredits() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">State: Property tax breaks for seniors</h2>
             <p className="text-sm mb-2">Almost every state offers SOMETHING for seniors:</p>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Homestead exemption</strong> — extra reduction in property value used for tax. (FL, TX, MI, OH have generous ones.)</li>
               <li><strong>Senior property tax freeze</strong> — your property tax stops increasing once you reach 65 or 70. (IL, NY, NJ, MO, etc.)</li>
               <li><strong>School tax relief / STAR (NY)</strong> — exemption on school taxes for seniors.</li>
@@ -87,7 +87,7 @@ export default function SeniorTaxCredits() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get free help</h3>
-            <p className="text-sm text-muted-foreground"><strong>AARP Tax-Aide</strong> volunteers are trained on senior tax breaks. Free Feb-April at libraries and senior centers nationwide. They\'ll catch credits and deductions you might miss. (See our Free Tax Filing Coach.)</p>
+            <p className="text-base text-muted-foreground"><strong>AARP Tax-Aide</strong> volunteers are trained on senior tax breaks. Free Feb-April at libraries and senior centers nationwide. They\'ll catch credits and deductions you might miss. (See our Free Tax Filing Coach.)</p>
           </CardContent>
         </Card>
       </main>

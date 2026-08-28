@@ -35,7 +35,7 @@ export default function SportsCardsComics() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function SportsCardsComics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Honest truth — sports cards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Junk wax era (1986-1992)</strong> — produced in huge numbers. Most worth 10 cents each.</li>
               <li><strong>Pre-1980 cards</strong> — much rarer, worth checking carefully.</li>
               <li><strong>Rookie cards of HOF players in mint condition</strong> — can be valuable.</li>
@@ -57,7 +57,7 @@ export default function SportsCardsComics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Honest truth — comics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pre-1965 (Golden + Silver Age)</strong> — most valuable.</li>
               <li><strong>Bronze/Copper Age (1970s-1985)</strong> — variable value. Key issues + first appearances valuable.</li>
               <li><strong>Modern (1986+)</strong> — overprinted. Most worth cover price.</li>
@@ -83,7 +83,7 @@ export default function SportsCardsComics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to sell</h3>
-            <p className="text-sm text-muted-foreground"><strong>High-value certified</strong>: Heritage Auctions, PWCC. <strong>Mid-range</strong>: eBay. <strong>Bulk lots</strong>: card shops will buy at 30-40% of retail. <strong>Unsure</strong>: post photos in Reddit r/baseballcards or r/comicbookcollecting — kind communities help identify value.</p>
+            <p className="text-base text-muted-foreground"><strong>High-value certified</strong>: Heritage Auctions, PWCC. <strong>Mid-range</strong>: eBay. <strong>Bulk lots</strong>: card shops will buy at 30-40% of retail. <strong>Unsure</strong>: post photos in Reddit r/baseballcards or r/comicbookcollecting — kind communities help identify value.</p>
           </CardContent>
         </Card>
       </main>

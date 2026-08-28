@@ -19,7 +19,7 @@ export default function CarRentalAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best comparison apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AutoSlash — auto-rebook if rates drop.</li>
               <li>Costco Travel — member-only rates.</li>
               <li>AAA Travel — discounts for members.</li>
@@ -33,7 +33,7 @@ export default function CarRentalAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hertz: 50+ Senior Rates.</li>
               <li>Avis/Budget: AARP discount 5–25%.</li>
               <li>Enterprise: AARP rates.</li>
@@ -47,7 +47,7 @@ export default function CarRentalAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid hidden fees</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Decline counter insurance — credit card often covers.</li>
               <li>Pre-pay fuel = bad deal usually.</li>
               <li>Return with full tank.</li>
@@ -61,7 +61,7 @@ export default function CarRentalAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Your auto policy may extend to rentals — check.</li>
               <li>Many credit cards include rental coverage.</li>
               <li>Decline the rental company&apos;s expensive option.</li>
@@ -75,7 +75,7 @@ export default function CarRentalAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly car features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Backup camera — every modern rental.</li>
               <li>Adaptive cruise control — easier highway driving.</li>
               <li>Automatic transmission — request specifically.</li>
@@ -89,7 +89,7 @@ export default function CarRentalAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Loyalty programs worth joining</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>All free to join.</li>
               <li>Hertz Gold Plus Rewards.</li>
               <li>National Emerald Club — pick own car.</li>
@@ -103,7 +103,7 @@ export default function CarRentalAppsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">AutoSlash for ongoing savings</h3>
-            <p className="text-sm text-muted-foreground">Book any car rental, then enter the reservation in AutoSlash (free). The app monitors prices daily and auto-rebooks if a better rate appears for the same dates. Many seniors save $50–$200 per rental this way without lifting a finger after the initial booking. Combine with AARP discount and Costco rates for best deals.</p>
+            <p className="text-base text-muted-foreground">Book any car rental, then enter the reservation in AutoSlash (free). The app monitors prices daily and auto-rebooks if a better rate appears for the same dates. Many seniors save $50–$200 per rental this way without lifting a finger after the initial booking. Combine with AARP discount and Costco rates for best deals.</p>
           </CardContent>
         </Card>
       </main>

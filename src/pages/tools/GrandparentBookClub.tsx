@@ -19,7 +19,7 @@ export default function GrandparentBookClub() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (5 min)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick a book together. Library + Libby app for free.</li>
               <li>Set monthly call — 3rd Sunday at 4 PM, etc.</li>
               <li>30 min — discuss favorite parts, predictions, what they remind you of.</li>
@@ -32,7 +32,7 @@ export default function GrandparentBookClub() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Book picks by age</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>5-7</strong> — picture books: Frog and Toad, Mercy Watson series, Elephant &amp; Piggie.</li>
               <li><strong>8-10</strong> — Charlotte&apos;s Web, Mr. Popper&apos;s Penguins, Wayside School.</li>
               <li><strong>11-13</strong> — Percy Jackson, Wonder, A Wrinkle in Time, Wings of Fire.</li>
@@ -45,7 +45,7 @@ export default function GrandparentBookClub() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Discussion ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Favorite character + why.</li>
               <li>What surprised you?</li>
               <li>Did you predict the ending?</li>
@@ -61,7 +61,7 @@ export default function GrandparentBookClub() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tools to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Libby</strong> — free library audiobooks + ebooks.</li>
               <li><strong>Hoopla</strong> — second free library option.</li>
               <li><strong>Audiobook</strong> — listen during commute / chores.</li>
@@ -75,7 +75,7 @@ export default function GrandparentBookClub() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">A grandkid memory</h3>
-            <p className="text-sm text-muted-foreground">Adult grandkids overwhelmingly cite "reading with grandma" as a top childhood memory. Even one book club becomes a story they tell their own kids. Best gift — your time + attention + the book.</p>
+            <p className="text-base text-muted-foreground">Adult grandkids overwhelmingly cite "reading with grandma" as a top childhood memory. Even one book club becomes a story they tell their own kids. Best gift — your time + attention + the book.</p>
           </CardContent>
         </Card>
       </main>

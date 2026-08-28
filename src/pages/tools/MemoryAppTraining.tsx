@@ -33,7 +33,7 @@ export default function MemoryAppTraining() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function MemoryAppTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>BrainHQ</strong> — research shows reduces fall risk + improves driving in seniors.</li>
               <li>Lumosity / Elevate — entertaining but limited evidence of real-world transfer.</li>
               <li>Better than apps: NEW skills (instrument, language, dance).</li>
@@ -55,7 +55,7 @@ export default function MemoryAppTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bigger brain helpers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30 min cardio 3x/week.</li>
               <li>Sleep 7+ hours.</li>
               <li>Mediterranean diet.</li>
@@ -69,7 +69,7 @@ export default function MemoryAppTraining() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When to see neurologist</h3>
-            <p className="text-sm text-muted-foreground">Memory training apps don&apos;t replace medical care. If memory issues affect daily life — see neurologist OR ask doctor for MoCA cognitive test. Many treatable causes (B12 deficiency, sleep apnea, depression).</p>
+            <p className="text-base text-muted-foreground">Memory training apps don&apos;t replace medical care. If memory issues affect daily life — see neurologist OR ask doctor for MoCA cognitive test. Many treatable causes (B12 deficiency, sleep apnea, depression).</p>
           </CardContent>
         </Card>
       </main>

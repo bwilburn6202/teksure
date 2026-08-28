@@ -236,7 +236,7 @@ export default function EmailSignatureBuilder() {
               <p className="text-sm text-muted-foreground mb-4">
                 Use these steps on a computer. Once it is set, every new Gmail message will include the signature.
               </p>
-              <ol className="space-y-2 text-sm list-decimal pl-5">
+              <ol className="space-y-2 text-base list-decimal pl-5">
                 <li>Copy your signature using the button above.</li>
                 <li>Open Gmail at <span className="font-mono">mail.google.com</span> and sign in.</li>
                 <li>Click the gear icon in the top right, then click <span className="font-semibold">See all settings</span>.</li>
@@ -257,7 +257,7 @@ export default function EmailSignatureBuilder() {
               </p>
 
               <h3 className="font-semibold mt-2 mb-2">On iPhone or iPad</h3>
-              <ol className="space-y-2 text-sm list-decimal pl-5">
+              <ol className="space-y-2 text-base list-decimal pl-5">
                 <li>Copy your signature using the button above.</li>
                 <li>Open the <span className="font-semibold">Settings</span> app.</li>
                 <li>Scroll down and tap <span className="font-semibold">Apps</span>, then tap <span className="font-semibold">Mail</span>. (On older versions of iOS, scroll until you see Mail in the main list.)</li>
@@ -268,7 +268,7 @@ export default function EmailSignatureBuilder() {
               </ol>
 
               <h3 className="font-semibold mt-5 mb-2">On a Mac</h3>
-              <ol className="space-y-2 text-sm list-decimal pl-5">
+              <ol className="space-y-2 text-base list-decimal pl-5">
                 <li>Copy your signature using the button above.</li>
                 <li>Open the <span className="font-semibold">Mail</span> app.</li>
                 <li>From the top menu, click <span className="font-semibold">Mail</span>, then <span className="font-semibold">Settings</span> (older Macs say Preferences).</li>
@@ -289,7 +289,7 @@ export default function EmailSignatureBuilder() {
               </p>
 
               <h3 className="font-semibold mt-2 mb-2">Outlook on the web (outlook.com or office.com)</h3>
-              <ol className="space-y-2 text-sm list-decimal pl-5">
+              <ol className="space-y-2 text-base list-decimal pl-5">
                 <li>Copy your signature using the button above.</li>
                 <li>Sign in at <span className="font-mono">outlook.com</span>.</li>
                 <li>Click the <span className="font-semibold">gear icon</span> in the top right.</li>
@@ -300,7 +300,7 @@ export default function EmailSignatureBuilder() {
               </ol>
 
               <h3 className="font-semibold mt-5 mb-2">Outlook desktop app on Windows</h3>
-              <ol className="space-y-2 text-sm list-decimal pl-5">
+              <ol className="space-y-2 text-base list-decimal pl-5">
                 <li>Copy your signature using the button above.</li>
                 <li>Open <span className="font-semibold">Outlook</span>.</li>
                 <li>Click <span className="font-semibold">File</span> in the top left, then <span className="font-semibold">Options</span>.</li>

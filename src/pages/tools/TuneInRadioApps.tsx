@@ -33,7 +33,7 @@ export default function TuneInRadioApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function TuneInRadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: TuneIn</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free + 100K stations.</li>
               <li>Stations from your hometown.</li>
               <li>National + international.</li>
@@ -56,7 +56,7 @@ export default function TuneInRadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Listen to old hometown</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search by city.</li>
               <li>Listen to home news.</li>
               <li>Stay connected with roots.</li>
@@ -70,7 +70,7 @@ export default function TuneInRadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SiriusXM premium</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$12/mo with promo (often).</li>
               <li>Curated premium channels.</li>
               <li>50s on 5, 60s on 6, etc.</li>
@@ -84,7 +84,7 @@ export default function TuneInRadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior favorite content</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Talk radio — political, sports.</li>
               <li>Old time radio shows.</li>
               <li>Religious programming.</li>
@@ -98,7 +98,7 @@ export default function TuneInRadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart speaker built-in</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Alexa, play KOA Denver&quot;.</li>
               <li>&quot;Hey Google, play NPR&quot;.</li>
               <li>Echo + Google Home native.</li>
@@ -112,7 +112,7 @@ export default function TuneInRadioApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">FREE always</h3>
-            <p className="text-sm text-muted-foreground">Many senior-favorite stations free always — NPR, public radio. TuneIn free version great. No need to pay unless you want premium content. Old AM / FM portable radio still works ($30 Sangean). Don&apos;t lose touch with radio just because it&apos;s digital. Free voice + music + community always available.</p>
+            <p className="text-base text-muted-foreground">Many senior-favorite stations free always — NPR, public radio. TuneIn free version great. No need to pay unless you want premium content. Old AM / FM portable radio still works ($30 Sangean). Don&apos;t lose touch with radio just because it&apos;s digital. Free voice + music + community always available.</p>
           </CardContent>
         </Card>
       </main>

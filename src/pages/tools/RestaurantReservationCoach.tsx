@@ -32,7 +32,7 @@ export default function RestaurantReservationCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time setup (any app)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install the app from the App Store / Play Store.</li>
               <li>Make an account — name, email, phone.</li>
               <li>Add a credit card (some places hold a card for no-shows).</li>
@@ -60,7 +60,7 @@ export default function RestaurantReservationCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pro moves</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Special occasion?</strong> Mention it in the "Notes" field when booking — anniversary, birthday. Many places do something nice (free dessert, card from the chef).</li>
               <li><strong>Dietary restrictions?</strong> Same — list "gluten free" or "vegetarian" so the kitchen plans.</li>
               <li><strong>Big group (8+)?</strong> Call the restaurant directly — apps often only book up to 6.</li>
@@ -73,7 +73,7 @@ export default function RestaurantReservationCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — calling still works</h3>
-            <p className="text-sm text-muted-foreground">If an app shows "no tables available", calling the restaurant directly often finds one. They sometimes hold tables off the apps for walk-ins or regulars.</p>
+            <p className="text-base text-muted-foreground">If an app shows "no tables available", calling the restaurant directly often finds one. They sometimes hold tables off the apps for walk-ins or regulars.</p>
           </CardContent>
         </Card>
       </main>

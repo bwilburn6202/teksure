@@ -19,7 +19,7 @@ export default function MicrosoftO365vsGoogle() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Microsoft 365 Personal ($70/yr)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Full Word, Excel, PowerPoint, Outlook.</li>
               <li>1TB OneDrive cloud storage.</li>
               <li>Works offline (download apps).</li>
@@ -33,7 +33,7 @@ export default function MicrosoftO365vsGoogle() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Google Workspace (FREE personal)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Gmail + Google Docs + Sheets + Slides + Drive.</li>
               <li>15GB free, $2/mo for 100GB, $3/mo for 200GB.</li>
               <li>Works in any browser.</li>
@@ -47,7 +47,7 @@ export default function MicrosoftO365vsGoogle() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick MS 365 if</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Used Word/Excel for 30+ years.</li>
               <li>Heavy spreadsheet work.</li>
               <li>PowerPoint presentations.</li>
@@ -61,7 +61,7 @@ export default function MicrosoftO365vsGoogle() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick Google if</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Want everything free.</li>
               <li>Use Gmail already.</li>
               <li>Simple documents only.</li>
@@ -75,7 +75,7 @@ export default function MicrosoftO365vsGoogle() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>LibreOffice</strong> — free, Microsoft Office compatible.</li>
               <li><strong>Microsoft Office Online</strong> — free web version.</li>
               <li><strong>iWork (Pages, Numbers, Keynote)</strong> — free on Apple devices.</li>
@@ -88,7 +88,7 @@ export default function MicrosoftO365vsGoogle() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Both share files easily</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Word .docx opens in Google Docs (and vice versa).</li>
               <li>Excel .xlsx opens in Google Sheets.</li>
               <li>Don&apos;t worry about &quot;wrong format.&quot;</li>
@@ -101,7 +101,7 @@ export default function MicrosoftO365vsGoogle() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior pick</h3>
-            <p className="text-sm text-muted-foreground">For most seniors: Google free if simple needs. M365 Personal $70/yr if Word/Excel native. M365 Family $100 = best deal — share 5 ways. Whichever you used at work feels easier. AARP sometimes offers M365 discount.</p>
+            <p className="text-base text-muted-foreground">For most seniors: Google free if simple needs. M365 Personal $70/yr if Word/Excel native. M365 Family $100 = best deal — share 5 ways. Whichever you used at work feels easier. AARP sometimes offers M365 discount.</p>
           </CardContent>
         </Card>
       </main>

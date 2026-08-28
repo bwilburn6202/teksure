@@ -244,7 +244,7 @@ export default function WifiCoveragePlanner() {
                   onClick={() => setLayout({ ...layout, size: s.id })}
                   className={`text-left border rounded-lg p-4 transition ${layout.size === s.id ? 'border-sky-500 bg-sky-50 dark:bg-sky-950/30' : 'hover:border-sky-300'}`}>
                   <p className="font-semibold">{s.label}</p>
-                  <p className="text-sm text-muted-foreground">{s.desc}</p>
+                  <p className="text-base text-muted-foreground">{s.desc}</p>
                 </button>
               ))}
             </div>
@@ -348,7 +348,7 @@ export default function WifiCoveragePlanner() {
                         <span className="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">{i + 1}</span>
                         {f.title}
                       </p>
-                      <p className="text-sm text-muted-foreground">{f.detail}</p>
+                      <p className="text-base text-muted-foreground">{f.detail}</p>
                     </div>
                   ))}
                 </div>
@@ -430,7 +430,7 @@ export default function WifiCoveragePlanner() {
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-3">How to set up a signal booster the right way</h3>
-                <ol className="space-y-2 text-sm list-decimal list-inside text-muted-foreground">
+                <ol className="space-y-2 text-base list-decimal list-inside text-muted-foreground">
                   <li>Plug it into a wall outlet <strong className="text-foreground">halfway</strong> between the router and the dead zone — not inside the dead zone.</li>
                   <li>Let it find your network — most modern extenders have a WPS button.</li>
                   <li>Put close devices on the 5 GHz network and far devices on the 2.4 GHz network.</li>
@@ -445,7 +445,7 @@ export default function WifiCoveragePlanner() {
                     className="border rounded-lg p-5 bg-background hover:shadow-md transition group flex items-center justify-between">
                 <div>
                   <h3 className="font-semibold">Set up a mesh WiFi system</h3>
-                  <p className="text-sm text-muted-foreground">Step-by-step guide for eero, Deco, and Orbi.</p>
+                  <p className="text-base text-muted-foreground">Step-by-step guide for eero, Deco, and Orbi.</p>
                 </div>
                 <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-1 transition" />
               </Link>
@@ -453,7 +453,7 @@ export default function WifiCoveragePlanner() {
                     className="border rounded-lg p-5 bg-background hover:shadow-md transition group flex items-center justify-between">
                 <div>
                   <h3 className="font-semibold">WiFi speed checker</h3>
-                  <p className="text-sm text-muted-foreground">See what speed you are actually getting.</p>
+                  <p className="text-base text-muted-foreground">See what speed you are actually getting.</p>
                 </div>
                 <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-1 transition" />
               </Link>

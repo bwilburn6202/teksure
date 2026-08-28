@@ -27,7 +27,7 @@ export default function AIBillNegotiate() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bills you can usually negotiate</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cable / internet</strong> — annually. Save $20-100/mo.</li>
               <li><strong>Cell phone</strong> — annually.</li>
               <li><strong>Insurance</strong> — auto, home, every 1-2 years.</li>
@@ -42,7 +42,7 @@ export default function AIBillNegotiate() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Magic phrases to try</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"I&apos;ve been a customer X years. I&apos;ve seen your new-customer rates. Can you match those?"</li>
               <li>"I&apos;m looking at switching to [competitor]. What can you do to keep me?"</li>
               <li>"That&apos;s outside my budget. What can you do?"</li>
@@ -56,7 +56,7 @@ export default function AIBillNegotiate() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medical bill negotiation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ask for itemized bill — review for errors.</li>
               <li>Ask for "self-pay rate" — often 30-50% off.</li>
               <li>Apply for "financial assistance" — most hospitals required by IRS.</li>
@@ -70,7 +70,7 @@ export default function AIBillNegotiate() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Service that does it for you</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Rocket Money</strong> — $4-12/mo. Negotiates bills + cancels subscriptions.</li>
               <li><strong>Trim</strong> — similar service.</li>
               <li>Often save 5-15% — they keep 30-40% of savings.</li>
@@ -82,7 +82,7 @@ export default function AIBillNegotiate() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Once a year</h3>
-            <p className="text-sm text-muted-foreground">Set 1 day a year (your birthday?) — call all major bills. AI script + 30 minutes per call. Save $500-1,500/year. Best ROI of any annual chore.</p>
+            <p className="text-base text-muted-foreground">Set 1 day a year (your birthday?) — call all major bills. AI script + 30 minutes per call. Save $500-1,500/year. Best ROI of any annual chore.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function HallowPrayerApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Hallow?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Catholic prayer + meditation app.</li>
               <li>Rosary, daily readings, examen.</li>
               <li>Sleep meditations + bedtime prayer.</li>
@@ -33,7 +33,7 @@ export default function HallowPrayerApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Features for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Audio rosary — pray along with daily prayer.</li>
               <li>Scripture reading aloud.</li>
               <li>Stations of the Cross.</li>
@@ -47,7 +47,7 @@ export default function HallowPrayerApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free version</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily rosary always free.</li>
               <li>Lent + Advent challenges free annually.</li>
               <li>Daily Gospel reading.</li>
@@ -61,7 +61,7 @@ export default function HallowPrayerApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other Catholic apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Laudate — completely free, Catholic Mass + readings.</li>
               <li>iBreviary — Liturgy of the Hours.</li>
               <li>Magnificat (subscription) — daily prayer + Mass.</li>
@@ -75,7 +75,7 @@ export default function HallowPrayerApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For other faiths</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Abide — Christian meditation.</li>
               <li>Echo Prayer — non-denominational Christian.</li>
               <li>Soulscape — Christian meditation.</li>
@@ -89,7 +89,7 @@ export default function HallowPrayerApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use Hallow</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download from app store.</li>
               <li>7-day free trial of Premium.</li>
               <li>Or use free content forever.</li>
@@ -103,7 +103,7 @@ export default function HallowPrayerApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try the free rosary daily</h3>
-            <p className="text-sm text-muted-foreground">Hallow&apos;s daily rosary is completely free and available without a paid subscription. Many Catholic seniors love using it during morning coffee — about 20 minutes of guided prayer with beautiful background music. If you want fuller features after that, the $70/year is reasonable. The free content alone is one of the best Catholic prayer resources available.</p>
+            <p className="text-base text-muted-foreground">Hallow&apos;s daily rosary is completely free and available without a paid subscription. Many Catholic seniors love using it during morning coffee — about 20 minutes of guided prayer with beautiful background music. If you want fuller features after that, the $70/year is reasonable. The free content alone is one of the best Catholic prayer resources available.</p>
           </CardContent>
         </Card>
       </main>

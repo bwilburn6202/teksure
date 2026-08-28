@@ -34,7 +34,7 @@ export default function ChairYogaApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function ChairYogaApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why chair yoga</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Gentle on knees and lower back.</li>
               <li>Improves flexibility, balance, posture, mood.</li>
               <li>No floor mat required.</li>
@@ -57,7 +57,7 @@ export default function ChairYogaApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free locally</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SilverSneakers</strong> — included free with most Medicare Advantage. Chair yoga at gyms + free online. Eligibility check: silversneakers.com.</li>
               <li><strong>Renew Active (UnitedHealthcare)</strong> — same idea.</li>
               <li><strong>Local senior centers</strong> — free or low-cost classes.</li>
@@ -70,7 +70,7 @@ export default function ChairYogaApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with 10 minutes</h3>
-            <p className="text-sm text-muted-foreground">First time — pick a 10-minute beginner chair yoga video on YouTube. Try it. Don&apos;t buy anything until you&apos;ve done 5 sessions. Most apps offer 7-day free trials. Use them, then commit to one.</p>
+            <p className="text-base text-muted-foreground">First time — pick a 10-minute beginner chair yoga video on YouTube. Try it. Don&apos;t buy anything until you&apos;ve done 5 sessions. Most apps offer 7-day free trials. Use them, then commit to one.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function AmexPlatinumWorthIt() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">$695/yr but lots of credits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$200 airline fee credit.</li>
               <li>$200 hotel credit (FHR/THC).</li>
               <li>$240 streaming/digital credit.</li>
@@ -36,7 +36,7 @@ export default function AmexPlatinumWorthIt() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Premium benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Centurion Lounges (best airport lounges).</li>
               <li>Priority Pass.</li>
               <li>Marriott Gold + Hilton Gold.</li>
@@ -51,7 +51,7 @@ export default function AmexPlatinumWorthIt() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Worth it for seniors who...</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Travel 3+ times/year by air.</li>
               <li>Use airline lounges (international travel especially).</li>
               <li>Use Uber regularly.</li>
@@ -66,7 +66,7 @@ export default function AmexPlatinumWorthIt() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip if</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1-2 trips/year.</li>
               <li>Don&apos;t fly internationally.</li>
               <li>Won&apos;t use most credits.</li>
@@ -80,7 +80,7 @@ export default function AmexPlatinumWorthIt() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Better senior cards</h3>
-            <p className="text-sm text-muted-foreground">For most seniors: <strong>Chase Sapphire Preferred ($95)</strong> = better value. Or FREE <strong>Costco Citi Visa</strong> + <strong>Chase Freedom Unlimited</strong>. Amex Platinum = lifestyle card for frequent international travelers. Most seniors fine without.</p>
+            <p className="text-base text-muted-foreground">For most seniors: <strong>Chase Sapphire Preferred ($95)</strong> = better value. Or FREE <strong>Costco Citi Visa</strong> + <strong>Chase Freedom Unlimited</strong>. Amex Platinum = lifestyle card for frequent international travelers. Most seniors fine without.</p>
           </CardContent>
         </Card>
       </main>

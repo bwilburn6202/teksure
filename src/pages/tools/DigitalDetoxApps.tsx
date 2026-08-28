@@ -34,7 +34,7 @@ export default function DigitalDetoxApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function DigitalDetoxApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free first — iPhone Screen Time</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Screen Time.</li>
               <li>See how many hours/day on each app.</li>
               <li>Tap "App Limits" → set max for "Social Media" → 1 hour.</li>
@@ -57,7 +57,7 @@ export default function DigitalDetoxApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mini detox week</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Day 1 — turn OFF all non-essential notifications.</li>
               <li>Day 2 — delete most-used distracting apps for 7 days.</li>
               <li>Day 3 — phone OFF after 8 PM.</li>
@@ -72,7 +72,7 @@ export default function DigitalDetoxApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior reality check</h3>
-            <p className="text-sm text-muted-foreground">Most seniors use phones less than younger people — but more than they realize. Average 60+ user is 3-4 hrs/day. Reduce to 2 hrs and you reclaim 700+ hrs/year. That&apos;s a part-time hobby reborn.</p>
+            <p className="text-base text-muted-foreground">Most seniors use phones less than younger people — but more than they realize. Average 60+ user is 3-4 hrs/day. Reduce to 2 hrs and you reclaim 700+ hrs/year. That&apos;s a part-time hobby reborn.</p>
           </CardContent>
         </Card>
       </main>

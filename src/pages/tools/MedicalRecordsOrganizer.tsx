@@ -26,7 +26,7 @@ export default function MedicalRecordsOrganizer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to include</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Doctors\' list</strong> — name, specialty, phone, address. Primary care first.</li>
               <li><strong>Insurance</strong> — Medicare card numbers, supplement plan, prescription plan, medical insurance card front/back photos.</li>
               <li><strong>Pharmacy</strong> — name, phone, address.</li>
@@ -46,7 +46,7 @@ export default function MedicalRecordsOrganizer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to keep it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Health Medical ID</strong> — on your iPhone lock screen. Paramedics check this first. (See our Medical ID Setup tool.)</li>
               <li><strong>Free app: My Medical Info</strong>, MedHelper, or CareZone — store more detail than Medical ID allows.</li>
               <li><strong>Printed copy</strong> — kept on the fridge, in your wallet, in your spouse\'s wallet, with your healthcare proxy.</li>
@@ -88,7 +88,7 @@ export default function MedicalRecordsOrganizer() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tell people where it is</h3>
-            <p className="text-sm text-muted-foreground">No use organizing all this if no one knows where to find it. Tell your spouse, your adult children, and your healthcare proxy. Show them. Repeat at the next family dinner.</p>
+            <p className="text-base text-muted-foreground">No use organizing all this if no one knows where to find it. Tell your spouse, your adult children, and your healthcare proxy. Show them. Repeat at the next family dinner.</p>
           </CardContent>
         </Card>
       </main>

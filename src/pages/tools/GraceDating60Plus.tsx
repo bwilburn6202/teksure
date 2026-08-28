@@ -19,7 +19,7 @@ export default function GraceDating60Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First date tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Coffee shop or restaurant during day = safer + less pressure.</li>
               <li>Drive yourself. Don&apos;t accept rides on first date.</li>
               <li>Tell a friend / family member — share location via phone.</li>
@@ -33,7 +33,7 @@ export default function GraceDating60Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Intimacy in 60+</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>STDs are rising in 60+. Use protection until both tested.</li>
               <li>Many medications affect sexual function. Doctor can help.</li>
               <li>Lubrication products are normal + helpful after menopause.</li>
@@ -47,7 +47,7 @@ export default function GraceDating60Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to look for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Kindness</strong> — to waiters, strangers. Treats those they don&apos;t need to impress well.</li>
               <li><strong>Honesty</strong> — about health, finances, family, past.</li>
               <li><strong>Curiosity</strong> — about you, the world, ideas.</li>
@@ -61,7 +61,7 @@ export default function GraceDating60Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to avoid</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pushy about moving in / marrying fast.</li>
               <li>Money troubles within first month — early sign of asking later.</li>
               <li>Talking only about ex-spouse (positive OR negative).</li>
@@ -76,7 +76,7 @@ export default function GraceDating60Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Companionship vs marriage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many 60+ couples now choose long-term companionship without marrying.</li>
               <li>Preserves estate for kids on both sides.</li>
               <li>Keeps Social Security widow benefits intact.</li>
@@ -89,7 +89,7 @@ export default function GraceDating60Plus() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">It&apos;s never too late</h3>
-            <p className="text-sm text-muted-foreground">People find love at 65, 75, 85. The right partner adds joy without demanding everything change. Take time. Trust your gut. The wrong company is worse than no company.</p>
+            <p className="text-base text-muted-foreground">People find love at 65, 75, 85. The right partner adds joy without demanding everything change. Take time. Trust your gut. The wrong company is worse than no company.</p>
           </CardContent>
         </Card>
       </main>

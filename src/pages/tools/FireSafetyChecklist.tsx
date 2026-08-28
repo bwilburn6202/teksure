@@ -19,7 +19,7 @@ export default function FireSafetyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smoke alarms (do this today)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One in EVERY bedroom + one outside each sleeping area + one per floor.</li>
               <li>Test monthly (push button).</li>
               <li>Replace batteries yearly (or use 10-year sealed alarms).</li>
@@ -34,7 +34,7 @@ export default function FireSafetyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Carbon monoxide (just as critical)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One CO alarm per floor.</li>
               <li>One outside each bedroom area.</li>
               <li>Combination smoke + CO alarms simplify things.</li>
@@ -46,7 +46,7 @@ export default function FireSafetyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Escape plan</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>2 ways out of every room (door + window).</li>
               <li>Practice once a year. Especially with kids/grandkids visiting.</li>
               <li>Outside meeting spot — mailbox, neighbor&apos;s tree.</li>
@@ -61,7 +61,7 @@ export default function FireSafetyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Kitchen — #1 fire risk</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NEVER leave stove unattended.</li>
               <li>Keep towels, oven mitts, paper away from burners.</li>
               <li>Grease fire — cover with lid + turn off burner. NEVER water on grease fire.</li>
@@ -75,7 +75,7 @@ export default function FireSafetyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other fire risks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Dryer</strong> — clean lint trap EVERY load. Clean exterior vent yearly. Lint = fuel.</li>
               <li><strong>Space heaters</strong> — 3 feet from anything flammable. Turn off when leaving room or sleeping. Plug into wall, NOT power strip.</li>
               <li><strong>Candles</strong> — never unattended. Battery LED candles look real.</li>
@@ -90,7 +90,7 @@ export default function FireSafetyChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Fire department free programs</h3>
-            <p className="text-sm text-muted-foreground">Most departments do FREE home safety inspections — they walk through and identify risks. Often install free smoke alarms. Call non-emergency number. Especially good for seniors. Many also do "blanket the bed" program for mobility-impaired residents.</p>
+            <p className="text-base text-muted-foreground">Most departments do FREE home safety inspections — they walk through and identify risks. Often install free smoke alarms. Call non-emergency number. Especially good for seniors. Many also do "blanket the bed" program for mobility-impaired residents.</p>
           </CardContent>
         </Card>
       </main>

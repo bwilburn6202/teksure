@@ -34,7 +34,7 @@ export default function RxCouponApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function RxCouponApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to save</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Search drug + dose in GoodRx, SingleCare, Cost Plus Drugs, RxSaver.</li>
               <li>Compare prices across pharmacies in your area.</li>
               <li>Cheapest = winner.</li>
@@ -57,7 +57,7 @@ export default function RxCouponApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use coupons vs insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Coupon is CHEAPER than your copay → use coupon.</li>
               <li>Coupon doesn&apos;t count toward deductible — keep that in mind.</li>
               <li>For Medicare Part D — coupons may not count toward "donut hole" — discuss with pharmacist.</li>
@@ -69,7 +69,7 @@ export default function RxCouponApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost Plus Drugs (Mark Cuban)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many generics 50-90% cheaper than retail.</li>
               <li>Example: 30 metformin = $4 (vs $20+ retail).</li>
               <li>Mail-order. Need real prescription from your doctor.</li>
@@ -82,7 +82,7 @@ export default function RxCouponApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Manufacturer assistance</h3>
-            <p className="text-sm text-muted-foreground">For brand-name drugs, search "[drug name] patient assistance program". Most major drug companies offer income-based free or discounted medication. Apply once, valid 12 months. Pharmacist + NeedyMeds can help apply.</p>
+            <p className="text-base text-muted-foreground">For brand-name drugs, search "[drug name] patient assistance program". Most major drug companies offer income-based free or discounted medication. Apply once, valid 12 months. Pharmacist + NeedyMeds can help apply.</p>
           </CardContent>
         </Card>
       </main>

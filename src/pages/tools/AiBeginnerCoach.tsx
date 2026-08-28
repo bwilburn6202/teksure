@@ -27,7 +27,7 @@ export default function AiBeginnerCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick one. They're all similar.</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ChatGPT</strong> — most popular. Free at chatgpt.com or in the app store.</li>
               <li><strong>Claude</strong> — known for clear writing and longer documents. Free at claude.ai.</li>
               <li><strong>Google Gemini</strong> — built into Google. Free at gemini.google.com.</li>
@@ -40,7 +40,7 @@ export default function AiBeginnerCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">10 things AI is genuinely great for</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Explain something simply.</strong> "Explain Medicare Part D in plain English to someone over 70."</li>
               <li><strong>Write a tough email.</strong> "Help me write a polite email to my landlord about a broken stove."</li>
               <li><strong>Summarize a long article.</strong> Paste in the article. "Summarize this in 5 bullet points."</li>
@@ -103,7 +103,7 @@ export default function AiBeginnerCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">The best way to learn</h3>
-            <p className="text-sm text-muted-foreground">Just play with it for 10 minutes. Ask it the question you've always wondered. Try writing one email together. The first time it surprises you, you'll get it.</p>
+            <p className="text-base text-muted-foreground">Just play with it for 10 minutes. Ask it the question you've always wondered. Try writing one email together. The first time it surprises you, you'll get it.</p>
           </CardContent>
         </Card>
       </main>

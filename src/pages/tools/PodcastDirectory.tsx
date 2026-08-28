@@ -611,7 +611,7 @@ export default function PodcastDirectory() {
                     <Card className="border-2">
                       <CardContent className="p-5 space-y-2">
                         <h4 className="font-bold text-lg">YouTube Music</h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           Comes on many Androids. Podcasts live under the{' '}
                           <em>Explore</em> tab → <em>Podcasts</em>.
                         </p>
@@ -620,7 +620,7 @@ export default function PodcastDirectory() {
                     <Card className="border-2">
                       <CardContent className="p-5 space-y-2">
                         <h4 className="font-bold text-lg">Spotify</h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           Free tier plays podcasts with no ads on most shows.
                           Install from Play Store.
                         </p>
@@ -629,7 +629,7 @@ export default function PodcastDirectory() {
                     <Card className="border-2">
                       <CardContent className="p-5 space-y-2">
                         <h4 className="font-bold text-lg">Pocket Casts</h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           A fan favorite — big play buttons, easy to learn,
                           no sign-in required to start.
                         </p>
@@ -638,7 +638,7 @@ export default function PodcastDirectory() {
                     <Card className="border-2">
                       <CardContent className="p-5 space-y-2">
                         <h4 className="font-bold text-lg">Amazon Music</h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           Free for Prime members. Podcasts show under the{' '}
                           <em>Podcasts</em> tab.
                         </p>
@@ -1043,7 +1043,7 @@ export default function PodcastDirectory() {
                 <CardContent className="p-5">
                   <div className="text-4xl mb-2" aria-hidden="true">{item.icon}</div>
                   <h3 className="font-bold text-lg mb-1">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.body}</p>
+                  <p className="text-base text-muted-foreground">{item.body}</p>
                 </CardContent>
               </Card>
             ))}

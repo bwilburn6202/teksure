@@ -19,7 +19,7 @@ export default function PasskeyExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is a passkey?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Replaces password.</li>
               <li>Sign in with Face ID / fingerprint.</li>
               <li>NO password to remember or type.</li>
@@ -34,7 +34,7 @@ export default function PasskeyExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why better than password</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Can&apos;t be guessed.</li>
               <li>Can&apos;t be phished.</li>
               <li>Can&apos;t be stolen in data breach.</li>
@@ -48,7 +48,7 @@ export default function PasskeyExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sites supporting passkeys</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple ID, Google, Microsoft, Amazon.</li>
               <li>PayPal, eBay.</li>
               <li>Best Buy, Target, Costco.</li>
@@ -63,7 +63,7 @@ export default function PasskeyExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (per site)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sign into account.</li>
               <li>Account Settings → Security.</li>
               <li>Look for &quot;Passkeys&quot; or &quot;Passwordless sign-in.&quot;</li>
@@ -78,7 +78,7 @@ export default function PasskeyExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where passkeys stored</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple — iCloud Keychain.</li>
               <li>Google — Google Password Manager.</li>
               <li>Microsoft — Microsoft Authenticator.</li>
@@ -92,7 +92,7 @@ export default function PasskeyExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Are they safe?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>YES — most secure login method invented.</li>
               <li>Stays on YOUR device.</li>
               <li>Companies never see private key.</li>
@@ -106,7 +106,7 @@ export default function PasskeyExplained() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Future of login</h3>
-            <p className="text-sm text-muted-foreground">Passwords going away over next 5-10 years. Passkeys replacing them. Worth learning. Easier than passwords once set up. Less to remember. More secure. Set up on critical accounts (Apple, Google, banks) when offered.</p>
+            <p className="text-base text-muted-foreground">Passwords going away over next 5-10 years. Passkeys replacing them. Worth learning. Easier than passwords once set up. Less to remember. More secure. Set up on critical accounts (Apple, Google, banks) when offered.</p>
           </CardContent>
         </Card>
       </main>

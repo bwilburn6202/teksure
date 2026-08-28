@@ -41,7 +41,7 @@ export default function HighYieldSavingsPicks() {
                   <span className="text-sm font-semibold text-primary">{b.cost}</span>
                 </div>
                 <p className="text-sm">{b.best}</p>
-                <p className="text-sm text-muted-foreground">{b.good}</p>
+                <p className="text-base text-muted-foreground">{b.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function HighYieldSavingsPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Are these safe?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YES — all FDIC insured up to $250,000</strong> per person per bank.</li>
               <li>Same protection as Bank of America, Chase, Wells Fargo.</li>
               <li>Online-only banks save money on branches → pass savings to you in higher rates.</li>
@@ -63,7 +63,7 @@ export default function HighYieldSavingsPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to open one</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick a bank (Ally is most senior-friendly).</li>
               <li>Go to bank&apos;s website. Click "Open an Account".</li>
               <li>Fill in name, address, SSN, email, phone.</li>
@@ -85,7 +85,7 @@ export default function HighYieldSavingsPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Watch the rate</h3>
-            <p className="text-sm text-muted-foreground">High-yield rates change with Fed rates. 4.5% today, could be 3% next year, 5% the year after. Check rates every 6 months. Switching banks is annoying but possible. Or just open a CD if rates start dropping (locks rate for 6-24 months).</p>
+            <p className="text-base text-muted-foreground">High-yield rates change with Fed rates. 4.5% today, could be 3% next year, 5% the year after. Check rates every 6 months. Switching banks is annoying but possible. Or just open a CD if rates start dropping (locks rate for 6-24 months).</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function UsaaForVeteranSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Who can join USAA</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Active military + veterans.</li>
               <li>Spouses of military members.</li>
               <li>Children of USAA members can join.</li>
@@ -33,7 +33,7 @@ export default function UsaaForVeteranSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">USAA Bank</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free checking account (no monthly fees).</li>
               <li>Reimburses up to $15/month in ATM fees.</li>
               <li>High-yield savings options.</li>
@@ -47,7 +47,7 @@ export default function UsaaForVeteranSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Auto + home insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Highly rated — typically cheaper than competitors.</li>
               <li>Auto insurance often 10-30% less.</li>
               <li>Discounts for low-mileage seniors.</li>
@@ -61,7 +61,7 @@ export default function UsaaForVeteranSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other USAA services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Life insurance — competitive rates.</li>
               <li>Retirement accounts (IRA, brokerage).</li>
               <li>Health insurance options for retired military.</li>
@@ -75,7 +75,7 @@ export default function UsaaForVeteranSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific perks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mature drivers discount on auto insurance.</li>
               <li>Discounts for accident-free history.</li>
               <li>Survivor benefit guidance.</li>
@@ -89,7 +89,7 @@ export default function UsaaForVeteranSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">USAA app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bank, insurance, investments all in one app.</li>
               <li>Mobile deposit.</li>
               <li>File insurance claims through app.</li>
@@ -103,7 +103,7 @@ export default function UsaaForVeteranSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If eligible, switch insurance</h3>
-            <p className="text-sm text-muted-foreground">If you or your spouse served in the military, USAA membership is one of the most valuable financial relationships available. The auto insurance alone often saves $500–$1,000/year versus other insurers. Combined with their veteran-focused customer service and senior discounts, it&apos;s worth checking eligibility. Even children + grandchildren of members can sometimes join.</p>
+            <p className="text-base text-muted-foreground">If you or your spouse served in the military, USAA membership is one of the most valuable financial relationships available. The auto insurance alone often saves $500–$1,000/year versus other insurers. Combined with their veteran-focused customer service and senior discounts, it&apos;s worth checking eligibility. Even children + grandchildren of members can sometimes join.</p>
           </CardContent>
         </Card>
       </main>

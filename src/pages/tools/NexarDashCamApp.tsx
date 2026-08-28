@@ -19,7 +19,7 @@ export default function NexarDashCamApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Nexar?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free dash cam app.</li>
               <li>Records video while driving.</li>
               <li>Auto-saves accidents (impact detection).</li>
@@ -33,7 +33,7 @@ export default function NexarDashCamApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors should use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Evidence in accidents — protect your story.</li>
               <li>Insurance disputes resolved fast.</li>
               <li>Hit-and-run protection.</li>
@@ -47,7 +47,7 @@ export default function NexarDashCamApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mount phone on dashboard.</li>
               <li>Open Nexar app.</li>
               <li>Tap record before driving.</li>
@@ -61,7 +61,7 @@ export default function NexarDashCamApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hardware dash cams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VIOFO A129 — $200, popular.</li>
               <li>Garmin Dash Cam Mini 2 — $130.</li>
               <li>BlackVue DR770 — $300, premium.</li>
@@ -75,7 +75,7 @@ export default function NexarDashCamApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Some insurers offer discount with dashcam.</li>
               <li>Faster claim resolution.</li>
               <li>Protects from false claims.</li>
@@ -89,7 +89,7 @@ export default function NexarDashCamApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mount where it doesn&apos;t obstruct view.</li>
               <li>Below the rearview mirror typical.</li>
               <li>USB power from outlet or 12V.</li>
@@ -103,7 +103,7 @@ export default function NexarDashCamApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free Nexar to try</h3>
-            <p className="text-sm text-muted-foreground">Before buying a $200 dedicated dashcam, try the free Nexar app for a week. Mount your phone, record commutes, see if you like it. Many seniors find this is enough. If you drive often, then upgrade to dedicated dashcam. The 2-3 minute video clip from a fender-bender can save thousands in disputed insurance claims.</p>
+            <p className="text-base text-muted-foreground">Before buying a $200 dedicated dashcam, try the free Nexar app for a week. Mount your phone, record commutes, see if you like it. Many seniors find this is enough. If you drive often, then upgrade to dedicated dashcam. The 2-3 minute video clip from a fender-bender can save thousands in disputed insurance claims.</p>
           </CardContent>
         </Card>
       </main>

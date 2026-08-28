@@ -19,7 +19,7 @@ export default function BladderHealthSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common senior issues</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Incontinence (leakage).</li>
               <li>Urgency (sudden need).</li>
               <li>Frequent urination.</li>
@@ -34,7 +34,7 @@ export default function BladderHealthSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Kegel exercises</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Squeeze pelvic floor muscles.</li>
               <li>Hold 5 sec, release 5 sec.</li>
               <li>10 reps, 3x/day.</li>
@@ -50,7 +50,7 @@ export default function BladderHealthSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">UTI prevention</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hydrate well — water, not soda.</li>
               <li>Cranberry supplement (not juice — sugar).</li>
               <li>D-mannose supplement (proven).</li>
@@ -65,7 +65,7 @@ export default function BladderHealthSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">UTI in seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>UTIs in seniors often present as CONFUSION.</li>
               <li>NOT just burning urination.</li>
               <li>Sudden behavior change = test for UTI.</li>
@@ -79,7 +79,7 @@ export default function BladderHealthSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t avoid water</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Common mistake: drink less to avoid trips.</li>
               <li>Causes concentrated urine + irritation.</li>
               <li>Causes UTIs.</li>
@@ -93,7 +93,7 @@ export default function BladderHealthSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Treatments</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Behavioral</strong> — Kegels, bladder training.</li>
               <li><strong>Pads</strong> — Tena, Always Discreet.</li>
               <li><strong>Medications</strong> — Detrol, Toviaz.</li>
@@ -107,7 +107,7 @@ export default function BladderHealthSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No shame</h3>
-            <p className="text-sm text-muted-foreground">50%+ of senior women have some incontinence. Highly treatable. Don&apos;t suffer alone. Tell your doctor. Pelvic floor PT covered by Medicare. Modern pads invisible. Live fully.</p>
+            <p className="text-base text-muted-foreground">50%+ of senior women have some incontinence. Highly treatable. Don&apos;t suffer alone. Tell your doctor. Pelvic floor PT covered by Medicare. Modern pads invisible. Live fully.</p>
           </CardContent>
         </Card>
       </main>

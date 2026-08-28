@@ -19,7 +19,7 @@ export default function CaulkingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to caulk</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Old caulk cracking / pulling away.</li>
               <li>Mold/mildew on caulk.</li>
               <li>Water seeping behind tub.</li>
@@ -33,7 +33,7 @@ export default function CaulkingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Right caulk for job</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bathroom/kitchen</strong> — silicone (waterproof).</li>
               <li><strong>Windows/doors</strong> — paintable acrylic latex.</li>
               <li><strong>Outdoor</strong> — exterior silicone.</li>
@@ -47,7 +47,7 @@ export default function CaulkingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tools needed</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Caulk gun ($10).</li>
               <li>Utility knife (cut tube tip).</li>
               <li>Painter&apos;s tape.</li>
@@ -61,7 +61,7 @@ export default function CaulkingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Steps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Remove old caulk completely.</li>
               <li>Clean + dry surface.</li>
               <li>Apply painter&apos;s tape both sides.</li>
@@ -77,7 +77,7 @@ export default function CaulkingBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common mistakes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Skipping old caulk removal.</li>
               <li>Wrong type (acrylic in shower fails).</li>
               <li>Surface not dry.</li>
@@ -91,7 +91,7 @@ export default function CaulkingBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save serious money</h3>
-            <p className="text-sm text-muted-foreground">Handyman caulking visit = $200-400 minimum. DIY = $20 supplies + 2 hours. Senior YouTube tutorials excellent. One of easiest DIY senior tasks. Watch + practice somewhere unimportant first.</p>
+            <p className="text-base text-muted-foreground">Handyman caulking visit = $200-400 minimum. DIY = $20 supplies + 2 hours. Senior YouTube tutorials excellent. One of easiest DIY senior tasks. Watch + practice somewhere unimportant first.</p>
           </CardContent>
         </Card>
       </main>

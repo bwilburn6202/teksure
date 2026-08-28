@@ -19,7 +19,7 @@ export default function VAHomeLoanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior VA loan benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$0 down payment required.</li>
               <li>NO private mortgage insurance (PMI).</li>
               <li>Lower rates than conventional.</li>
@@ -35,7 +35,7 @@ export default function VAHomeLoanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eligibility</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>90+ days active duty wartime, or 181 days peacetime.</li>
               <li>6+ years National Guard / Reserves.</li>
               <li>Surviving spouses (un-remarried).</li>
@@ -49,7 +49,7 @@ export default function VAHomeLoanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">IRRRL — refinance simply</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Interest Rate Reduction Refinance Loan.</li>
               <li>Refi existing VA loan to lower rate.</li>
               <li>NO appraisal usually.</li>
@@ -64,7 +64,7 @@ export default function VAHomeLoanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cash-out refi</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Up to 100% of home value (vs 80% conventional).</li>
               <li>Pay off credit cards, do home repairs.</li>
               <li>Lower rates than home equity loan.</li>
@@ -77,7 +77,7 @@ export default function VAHomeLoanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Funding fee</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One-time fee 1.25-3.3% of loan.</li>
               <li>Can be rolled into loan.</li>
               <li><strong>WAIVED if disability rating 10%+</strong>.</li>
@@ -90,7 +90,7 @@ export default function VAHomeLoanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Disability + property tax exemption</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many states give 100% disabled vets full property tax exemption.</li>
               <li>Florida, Texas, others — major savings.</li>
               <li>Check your state&apos;s rules.</li>
@@ -104,7 +104,7 @@ export default function VAHomeLoanGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Find a VA loan specialist</h3>
-            <p className="text-sm text-muted-foreground"><strong>Veterans United</strong> — top VA lender. <strong>Navy Federal Credit Union</strong> — vets only. <strong>USAA</strong> — military families. Get 3 quotes — rates vary 0.5%+. Watch for &quot;teaser&quot; rates that adjust. Senior tip: prefer fixed-rate over adjustable. Compare on bankrate.com.</p>
+            <p className="text-base text-muted-foreground"><strong>Veterans United</strong> — top VA lender. <strong>Navy Federal Credit Union</strong> — vets only. <strong>USAA</strong> — military families. Get 3 quotes — rates vary 0.5%+. Watch for &quot;teaser&quot; rates that adjust. Senior tip: prefer fixed-rate over adjustable. Compare on bankrate.com.</p>
           </CardContent>
         </Card>
       </main>

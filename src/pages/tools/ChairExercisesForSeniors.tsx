@@ -19,7 +19,7 @@ export default function ChairExercisesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why chair exercises?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No standing balance required.</li>
               <li>Safe for arthritis, joint pain, dizziness.</li>
               <li>Can do in living room — no gym needed.</li>
@@ -33,7 +33,7 @@ export default function ChairExercisesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free YouTube channels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>HASfit — senior chair workouts, completely free.</li>
               <li>Seniors Fitness with Meredith — gentle chair exercises.</li>
               <li>SilverSneakers YouTube — official program videos.</li>
@@ -47,7 +47,7 @@ export default function ChairExercisesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Basic chair exercises to start</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Seated marching — lift knees alternately.</li>
               <li>Arm circles — forward and backward.</li>
               <li>Ankle rotations — both directions.</li>
@@ -61,7 +61,7 @@ export default function ChairExercisesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Strength exercises seated</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Seated leg extensions — straighten and hold.</li>
               <li>Arm raises with light weights (soup cans work).</li>
               <li>Resistance band rows — pull band to chest.</li>
@@ -75,7 +75,7 @@ export default function ChairExercisesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps for guided chair fitness</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SilverSneakers GO — free with many Medicare plans.</li>
               <li>Eldergym — specifically for seniors.</li>
               <li>Fitplan — has gentle senior programs.</li>
@@ -89,7 +89,7 @@ export default function ChairExercisesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety reminders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use a sturdy chair without wheels.</li>
               <li>Keep feet flat on floor.</li>
               <li>Stop if you feel pain — not &quot;push through it.&quot;</li>
@@ -103,7 +103,7 @@ export default function ChairExercisesForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">10 minutes counts</h3>
-            <p className="text-sm text-muted-foreground">Research is clear: even 10 minutes of gentle movement per day reduces fall risk, improves balance, and boosts mood. You don&apos;t need a gym, equipment, or perfect mobility to start. Search YouTube for &quot;SilverSneakers chair workout&quot; and follow along. Your chair is the only equipment you need. Start today — any movement is better than none.</p>
+            <p className="text-base text-muted-foreground">Research is clear: even 10 minutes of gentle movement per day reduces fall risk, improves balance, and boosts mood. You don&apos;t need a gym, equipment, or perfect mobility to start. Search YouTube for &quot;SilverSneakers chair workout&quot; and follow along. Your chair is the only equipment you need. Start today — any movement is better than none.</p>
           </CardContent>
         </Card>
       </main>

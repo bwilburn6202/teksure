@@ -97,7 +97,7 @@ export default function AppleWatchHealthCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don\'t skip the setup</h3>
-            <p className="text-sm text-muted-foreground">Most Apple Watch owners only use 20% of the health features because the prompts are easy to dismiss during initial setup. Walk through these one by one — even if it takes 30 minutes. If you ever need them, you\'ll be glad they\'re configured.</p>
+            <p className="text-base text-muted-foreground">Most Apple Watch owners only use 20% of the health features because the prompts are easy to dismiss during initial setup. Walk through these one by one — even if it takes 30 minutes. If you ever need them, you\'ll be glad they\'re configured.</p>
           </CardContent>
         </Card>
       </main>

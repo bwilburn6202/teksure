@@ -19,7 +19,7 @@ export default function TipCalculatorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Built into iPhone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone Calculator app — free, built in.</li>
               <li>Type bill amount.</li>
               <li>× 0.18 = 18% tip.</li>
@@ -33,7 +33,7 @@ export default function TipCalculatorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tip Calculator apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tip n Split — most popular free app.</li>
               <li>Includes split-bill feature.</li>
               <li>Round-up + adjustment.</li>
@@ -47,7 +47,7 @@ export default function TipCalculatorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Standard tipping</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Restaurants — 18-20% standard.</li>
               <li>Bars — $1-2 per drink.</li>
               <li>Hairdresser — 15-20%.</li>
@@ -61,7 +61,7 @@ export default function TipCalculatorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Splitting bills</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Splitwise app — free.</li>
               <li>Track who owes whom.</li>
               <li>Settle up via Venmo.</li>
@@ -75,7 +75,7 @@ export default function TipCalculatorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior dining tip</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many credit cards have built-in tip suggestions.</li>
               <li>Or look at bottom of receipt.</li>
               <li>Servers often pre-fill 18-22-25%.</li>
@@ -89,7 +89,7 @@ export default function TipCalculatorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pre-tax vs post-tax</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tip on pre-tax amount technically correct.</li>
               <li>Many tip on total — easier math.</li>
               <li>Server doesn&apos;t care which.</li>
@@ -103,7 +103,7 @@ export default function TipCalculatorApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Just ask Siri</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t install a tip calculator app. Just ask Siri: &quot;Hey Siri, what&apos;s 20% of $47?&quot; She tells you instantly. Free, built in, no math required. Combined with restaurant&apos;s built-in tip suggestions on credit card readers, calculating tips becomes effortless. Modern dining made easy for seniors.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t install a tip calculator app. Just ask Siri: &quot;Hey Siri, what&apos;s 20% of $47?&quot; She tells you instantly. Free, built in, no math required. Combined with restaurant&apos;s built-in tip suggestions on credit card readers, calculating tips becomes effortless. Modern dining made easy for seniors.</p>
           </CardContent>
         </Card>
       </main>

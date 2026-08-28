@@ -19,7 +19,7 @@ export default function GarageDoorOpenerSmart() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why bother</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Check if garage is open from anywhere — at restaurant, on vacation.</li>
               <li>Close it from phone. No driving home.</li>
               <li>Get alert if left open for 15+ minutes.</li>
@@ -32,7 +32,7 @@ export default function GarageDoorOpenerSmart() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best picks (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Chamberlain MyQ</strong> ($30-50) — fits most garage door brands. Reliable. Free open/close in app. Schedules cost $1/mo.</li>
               <li><strong>Tailwind iQ3</strong> ($100) — works with any opener. HomeKit + Google + Alexa. No subscription.</li>
               <li><strong>Meross Smart Garage Door Opener</strong> ($45) — cheapest with Apple HomeKit support. No subscription.</li>
@@ -44,7 +44,7 @@ export default function GarageDoorOpenerSmart() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup — DIY in 30 minutes</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Buy a kit. Each kit comes with: hub + door sensor.</li>
               <li>Mount hub on garage ceiling near opener.</li>
               <li>Wire 2 wires to opener terminals (manual shows where).</li>
@@ -67,7 +67,7 @@ export default function GarageDoorOpenerSmart() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best automations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Auto-close at 10 PM nightly.</li>
               <li>Notify if open more than 15 minutes.</li>
               <li>Auto-close when phone leaves the neighborhood.</li>
@@ -80,7 +80,7 @@ export default function GarageDoorOpenerSmart() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Amazon Key</h3>
-            <p className="text-sm text-muted-foreground">If you have myQ, Amazon delivery drivers can put packages INSIDE your garage instead of leaving on porch. Free service. Reduces porch piracy. Driver only opens during delivery, garage closes after. Opt in at amazon.com/key.</p>
+            <p className="text-base text-muted-foreground">If you have myQ, Amazon delivery drivers can put packages INSIDE your garage instead of leaving on porch. Free service. Reduces porch piracy. Driver only opens during delivery, garage closes after. Opt in at amazon.com/key.</p>
           </CardContent>
         </Card>
       </main>

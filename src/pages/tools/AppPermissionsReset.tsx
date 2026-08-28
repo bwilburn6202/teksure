@@ -52,7 +52,7 @@ export default function AppPermissionsReset() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-1">Why this matters</h2>
-            <p className="text-sm text-muted-foreground">When you install an app, it asks for permission once and you usually tap "Allow". Years later, dozens of apps have access to your location, mic, contacts, and photos — many you don't even use anymore. This page walks through each kind of permission so you can clean it up.</p>
+            <p className="text-base text-muted-foreground">When you install an app, it asks for permission once and you usually tap "Allow". Years later, dozens of apps have access to your location, mic, contacts, and photos — many you don't even use anymore. This page walks through each kind of permission so you can clean it up.</p>
           </CardContent>
         </Card>
 
@@ -71,7 +71,7 @@ export default function AppPermissionsReset() {
                     <Icon className="w-6 h-6 text-primary shrink-0" />
                     <div>
                       <h3 className="font-bold text-lg">{p.name}</h3>
-                      <p className="text-sm text-muted-foreground">{p.what}</p>
+                      <p className="text-base text-muted-foreground">{p.what}</p>
                     </div>
                   </div>
                   <p className="text-sm mb-3"><strong>Who actually needs it:</strong> {p.who}</p>
@@ -88,7 +88,7 @@ export default function AppPermissionsReset() {
         <Card className="mt-6 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">If you turn something off and an app stops working, you can always turn it back on. Nothing breaks permanently.</p>
+            <p className="text-base text-muted-foreground">If you turn something off and an app stops working, you can always turn it back on. Nothing breaks permanently.</p>
           </CardContent>
         </Card>
       </main>

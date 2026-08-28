@@ -104,7 +104,7 @@ export default function RetirementAccountTypes() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Common retiree question: "Is it traditional or Roth?"</h3>
-            <p className="text-sm text-muted-foreground">Look at your account statement. "Pre-tax" or "Traditional" or "Tax-deferred" = pay tax when you withdraw. "After-tax" or "Roth" = tax-free withdrawals. Most workers have both pre-tax 401(k) AND a separate Roth IRA.</p>
+            <p className="text-base text-muted-foreground">Look at your account statement. "Pre-tax" or "Traditional" or "Tax-deferred" = pay tax when you withdraw. "After-tax" or "Roth" = tax-free withdrawals. Most workers have both pre-tax 401(k) AND a separate Roth IRA.</p>
           </CardContent>
         </Card>
       </main>

@@ -42,7 +42,7 @@ export default function GameConsoleGiftGuide() {
                   <span className="text-sm font-semibold text-primary">{c.price}</span>
                 </div>
                 <p className="text-sm mb-1">{c.best}</p>
-                <p className="text-sm text-muted-foreground">{c.good}</p>
+                <p className="text-base text-muted-foreground">{c.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -76,7 +76,7 @@ export default function GameConsoleGiftGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Easiest gift</h3>
-            <p className="text-sm text-muted-foreground">A <strong>$50 game gift card</strong> for the console they already have. Lets them pick what they actually want. Way better than guessing a specific game and being wrong.</p>
+            <p className="text-base text-muted-foreground">A <strong>$50 game gift card</strong> for the console they already have. Lets them pick what they actually want. Way better than guessing a specific game and being wrong.</p>
           </CardContent>
         </Card>
       </main>

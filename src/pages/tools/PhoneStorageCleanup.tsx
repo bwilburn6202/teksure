@@ -29,7 +29,7 @@ export default function PhoneStorageCleanup() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">iPhone — see what&apos;s using space</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>Settings → General → iPhone Storage.</li>
                   <li>Wait 10-30 seconds for the bar to fill in.</li>
                   <li>Apps listed by size. Biggest at top.</li>
@@ -40,7 +40,7 @@ export default function PhoneStorageCleanup() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Quick wins</h3>
-                <ul className="list-disc pl-5 space-y-2 text-sm">
+                <ul className="list-disc pl-5 space-y-2 text-base">
                   <li><strong>Delete &quot;Recently Deleted&quot; in Photos</strong> — Photos → Albums → Recently Deleted → Delete All. Often frees 1-3 GB.</li>
                   <li><strong>Old podcasts</strong> — Podcasts app stores old episodes. Settings → Apps → Podcasts → "Limit Episodes" to 5.</li>
                   <li><strong>Old WhatsApp/text photos</strong> — Settings → Messages → "Keep Messages" → 1 year.</li>
@@ -57,7 +57,7 @@ export default function PhoneStorageCleanup() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Android — see what&apos;s using space</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>Settings → Storage (or "Battery and device care" → Storage on Samsung).</li>
                   <li>See breakdown — apps, photos, audio, downloads.</li>
                   <li>Tap each category to see what&apos;s biggest.</li>
@@ -67,7 +67,7 @@ export default function PhoneStorageCleanup() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Quick wins</h3>
-                <ul className="list-disc pl-5 space-y-2 text-sm">
+                <ul className="list-disc pl-5 space-y-2 text-base">
                   <li><strong>Open the Files app</strong> (or Files by Google). Run "Clean" — removes junk, old downloads, duplicate photos.</li>
                   <li><strong>Empty Downloads folder</strong> — usually 1-2 GB of forgotten PDFs and images.</li>
                   <li><strong>Photos backed up to Google Photos?</strong> Open Google Photos → Settings → "Free up space". Removes phone copies, keeps cloud copies.</li>
@@ -82,7 +82,7 @@ export default function PhoneStorageCleanup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photos — the #1 space hog</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most phones: photos and videos = 60-80% of used storage.</li>
               <li>Backup to <strong>iCloud</strong> ($1/mo for 50GB), <strong>Google Photos</strong> (15GB free, $2/mo for 100GB), or <strong>Amazon Photos</strong> (free, unlimited photos for Prime members).</li>
               <li>After backup, "Optimize Storage" or "Free up space" deletes phone copies.</li>
@@ -94,7 +94,7 @@ export default function PhoneStorageCleanup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Restart after cleanup</h3>
-            <p className="text-sm text-muted-foreground">After deleting apps and clearing space, restart the phone. Settings reset. You may see another 1-2 GB free up.</p>
+            <p className="text-base text-muted-foreground">After deleting apps and clearing space, restart the phone. Settings reset. You may see another 1-2 GB free up.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function DayOneJournalApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily journal — type, photo, voice memo.</li>
               <li>Auto-tags location + weather.</li>
               <li>Free with optional Premium ($35/year).</li>
@@ -33,7 +33,7 @@ export default function DayOneJournalApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily gratitude practice.</li>
               <li>Travel diary — auto-tagged with locations.</li>
               <li>Health journal — track symptoms.</li>
@@ -47,7 +47,7 @@ export default function DayOneJournalApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Memories feature</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Shows entries from same date previous years.</li>
               <li>&quot;On this day 5 years ago...&quot;</li>
               <li>Brings up forgotten moments.</li>
@@ -61,7 +61,7 @@ export default function DayOneJournalApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Premium features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Unlimited journals.</li>
               <li>Multiple devices sync.</li>
               <li>PDF + photo book exports.</li>
@@ -75,7 +75,7 @@ export default function DayOneJournalApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>End-to-end encrypted on Premium.</li>
               <li>Even Day One can&apos;t read your journal.</li>
               <li>Private password lock.</li>
@@ -89,7 +89,7 @@ export default function DayOneJournalApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Notes — basic but works.</li>
               <li>Google Keep — quick notes.</li>
               <li>Journey — Android-friendly.</li>
@@ -103,7 +103,7 @@ export default function DayOneJournalApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with 3 sentences daily</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t commit to long entries. Start with 3 sentences each evening: 1) Best moment today. 2) Something you learned. 3) Something you&apos;re grateful for. Day One Free is plenty for this. After a year you&apos;ll have 1,000+ sentences chronicling your life — priceless. Combine with morning coffee photo for visual memories.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t commit to long entries. Start with 3 sentences each evening: 1) Best moment today. 2) Something you learned. 3) Something you&apos;re grateful for. Day One Free is plenty for this. After a year you&apos;ll have 1,000+ sentences chronicling your life — priceless. Combine with morning coffee photo for visual memories.</p>
           </CardContent>
         </Card>
       </main>

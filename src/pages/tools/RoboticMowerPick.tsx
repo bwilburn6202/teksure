@@ -47,7 +47,7 @@ export default function RoboticMowerPick() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,7 +56,7 @@ export default function RoboticMowerPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wired vs wireless</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Wired (Husqvarna, Worx)</strong> — buried boundary wire defines mowing area. Tedious DIY install (4-8 hours) or $300-500 pro install.</li>
               <li><strong>Wireless RTK GPS (Mammotion, Segway)</strong> — no wire. Just place a GPS antenna on a roof or pole. Newer, more expensive, but install is 1-2 hours.</li>
             </ul>
@@ -80,7 +80,7 @@ export default function RoboticMowerPick() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For most senior yards</h3>
-            <p className="text-sm text-muted-foreground">If your lawn is under 0.25 acre and mostly flat — Worx Landroid. If bigger or hillier — Husqvarna Automower 320. Both rated for senior-friendly install if you can DIY the boundary wire.</p>
+            <p className="text-base text-muted-foreground">If your lawn is under 0.25 acre and mostly flat — Worx Landroid. If bigger or hillier — Husqvarna Automower 320. Both rated for senior-friendly install if you can DIY the boundary wire.</p>
           </CardContent>
         </Card>
       </main>

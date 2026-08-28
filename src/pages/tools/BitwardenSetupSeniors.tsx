@@ -19,7 +19,7 @@ export default function BitwardenSetupSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Bitwarden?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>100% free for unlimited passwords.</li>
               <li>Open source — code publicly inspected.</li>
               <li>Works on every device.</li>
@@ -33,7 +33,7 @@ export default function BitwardenSetupSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 1: Sign up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to Bitwarden.com.</li>
               <li>Tap &quot;Get Started&quot; — Create Account.</li>
               <li>Enter email + master password.</li>
@@ -47,7 +47,7 @@ export default function BitwardenSetupSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 2: Install everywhere</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Browser extension — Chrome, Safari, Firefox, Edge.</li>
               <li>Phone app — iPhone + Android.</li>
               <li>Sign in on each with master password.</li>
@@ -61,7 +61,7 @@ export default function BitwardenSetupSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 3: Add your passwords</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Visit a website you use, log in normally.</li>
               <li>Bitwarden asks &quot;Save this login?&quot;</li>
               <li>Tap &quot;Save&quot; — done.</li>
@@ -75,7 +75,7 @@ export default function BitwardenSetupSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 4: Use Bitwarden daily</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Visit website — Bitwarden offers to fill login.</li>
               <li>Tap fill — auto-types your saved info.</li>
               <li>Generate strong unique passwords for new accounts.</li>
@@ -89,7 +89,7 @@ export default function BitwardenSetupSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For families</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bitwarden Families: $40/year for 6 users.</li>
               <li>Shared family password collections.</li>
               <li>Streaming service logins, etc.</li>
@@ -103,7 +103,7 @@ export default function BitwardenSetupSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">One master password to remember</h3>
-            <p className="text-sm text-muted-foreground">The one tradeoff: you must remember your master password. Pick something memorable but strong — &quot;sunflower elephant guitar Tuesday&quot; is much stronger than &quot;Password1!&quot; and easier to remember. Write it on paper, lock it in a fireproof safe with your important documents. After that, Bitwarden remembers all your other passwords. Free forever.</p>
+            <p className="text-base text-muted-foreground">The one tradeoff: you must remember your master password. Pick something memorable but strong — &quot;sunflower elephant guitar Tuesday&quot; is much stronger than &quot;Password1!&quot; and easier to remember. Write it on paper, lock it in a fireproof safe with your important documents. After that, Bitwarden remembers all your other passwords. Free forever.</p>
           </CardContent>
         </Card>
       </main>

@@ -39,7 +39,7 @@ export default function FrozenPipesPrevention() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before a cold snap (overnight prep)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Drip faucets</strong> — leave one or two faucets running pencil-lead-thin all night. Especially exterior-wall faucets.</li>
               <li><strong>Open cabinet doors</strong> — let warm room air reach pipes under sinks.</li>
               <li><strong>Set thermostat</strong> to at least 55°F, even if away.</li>
@@ -52,7 +52,7 @@ export default function FrozenPipesPrevention() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you suspect a frozen pipe</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Turn on the faucet</strong> the pipe leads to — let melting water drain.</li>
               <li><strong>Apply heat</strong> — hair dryer, heating pad, or warm towels. Start nearest the faucet.</li>
               <li><strong>Never use open flame</strong> (torch, propane heater).</li>
@@ -80,7 +80,7 @@ export default function FrozenPipesPrevention() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Going on winter vacation?</h3>
-            <p className="text-sm text-muted-foreground">Set thermostat to 55°F. Have a neighbor check the house every 2-3 days. Or better — turn off main water and drain pipes (open all faucets to drain). For Florida-bound retirees with northern homes — winterize with a plumber\'s help. $200 service prevents $20,000 of damage.</p>
+            <p className="text-base text-muted-foreground">Set thermostat to 55°F. Have a neighbor check the house every 2-3 days. Or better — turn off main water and drain pipes (open all faucets to drain). For Florida-bound retirees with northern homes — winterize with a plumber\'s help. $200 service prevents $20,000 of damage.</p>
           </CardContent>
         </Card>
       </main>

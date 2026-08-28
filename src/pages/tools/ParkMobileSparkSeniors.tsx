@@ -19,7 +19,7 @@ export default function ParkMobileSparkSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">ParkMobile</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pay parking meters via phone.</li>
               <li>No more digging for coins.</li>
               <li>Add time remotely from restaurant.</li>
@@ -33,7 +33,7 @@ export default function ParkMobileSparkSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SpotHero — find + reserve</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reserve parking before arriving.</li>
               <li>Often cheaper than walk-up.</li>
               <li>Garage + lot reservations.</li>
@@ -47,7 +47,7 @@ export default function ParkMobileSparkSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Park Whiz</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Compare parking prices.</li>
               <li>Reserve cheaper spots.</li>
               <li>Especially good for sports + concerts.</li>
@@ -61,7 +61,7 @@ export default function ParkMobileSparkSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior driver perks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No coin fumbling.</li>
               <li>Add time from anywhere.</li>
               <li>Don&apos;t miss meal because parking expires.</li>
@@ -75,7 +75,7 @@ export default function ParkMobileSparkSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple/Google Maps integration</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap parking icon in Maps.</li>
               <li>Opens parking app automatically.</li>
               <li>Some integrate with car&apos;s display.</li>
@@ -89,7 +89,7 @@ export default function ParkMobileSparkSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safe driving habits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use parking apps only when parked.</li>
               <li>Set up before turning car on.</li>
               <li>Voice control via Siri/Google.</li>
@@ -103,7 +103,7 @@ export default function ParkMobileSparkSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">ParkMobile downtown</h3>
-            <p className="text-sm text-muted-foreground">If you visit downtown areas regularly, ParkMobile saves frustration. Most cities have switched from coin meters to ParkMobile zones. Sign up before next visit. Add time from your restaurant table without running back to feed meter. The $0.40 fee is worth never getting parking tickets again.</p>
+            <p className="text-base text-muted-foreground">If you visit downtown areas regularly, ParkMobile saves frustration. Most cities have switched from coin meters to ParkMobile zones. Sign up before next visit. Add time from your restaurant table without running back to feed meter. The $0.40 fee is worth never getting parking tickets again.</p>
           </CardContent>
         </Card>
       </main>

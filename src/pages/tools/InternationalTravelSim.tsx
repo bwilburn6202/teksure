@@ -51,7 +51,7 @@ export default function InternationalTravelSim() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (Airalo as example)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install <strong>Airalo</strong> from App Store / Play Store BEFORE leaving home.</li>
               <li>Browse → pick your destination → pick a data plan.</li>
               <li>Pay with credit card or Apple Pay.</li>
@@ -65,7 +65,7 @@ export default function InternationalTravelSim() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Compare to your US carrier\'s plan</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>T-Mobile Magenta/Go5G</strong> — free 5G data in 215+ countries (slow). Worth not paying anything extra. Top tiers include faster speeds.</li>
               <li><strong>AT&T International Day Pass</strong> — $12/day for your usual plan. Quick trips: convenient. Long trips: very expensive.</li>
               <li><strong>Verizon TravelPass</strong> — $10/day. Same idea.</li>
@@ -78,7 +78,7 @@ export default function InternationalTravelSim() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stay phone-bill-safe</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Before flying — Settings → Cellular → "Cellular Data" OFF for your US line.</li>
               <li>Settings → Cellular → Data Roaming OFF on US line.</li>
               <li>iMessage and FaceTime work over Wi-Fi anywhere — free.</li>
@@ -91,7 +91,7 @@ export default function InternationalTravelSim() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Old-fashioned alternative</h3>
-            <p className="text-sm text-muted-foreground">Buy a local prepaid SIM at the airport in your destination. About $10-30, often unlimited. Works on phones older than 2020 that don\'t support eSIM. Major airports always have a stand selling them.</p>
+            <p className="text-base text-muted-foreground">Buy a local prepaid SIM at the airport in your destination. About $10-30, often unlimited. Works on phones older than 2020 that don\'t support eSIM. Major airports always have a stand selling them.</p>
           </CardContent>
         </Card>
       </main>

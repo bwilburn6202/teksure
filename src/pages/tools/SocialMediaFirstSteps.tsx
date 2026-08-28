@@ -65,9 +65,9 @@ const Block = ({ title, items, ordered, tone = 'none' }: { title: string; items:
       {title}
     </p>
     {ordered ? (
-      <ol className="space-y-2 text-sm text-muted-foreground list-decimal list-inside">{items.map((s, i) => <li key={i}>{s}</li>)}</ol>
+      <ol className="space-y-2 text-base text-muted-foreground list-decimal list-inside">{items.map((s, i) => <li key={i}>{s}</li>)}</ol>
     ) : (
-      <ul className="space-y-2 text-sm text-muted-foreground list-disc list-inside">{items.map((s, i) => <li key={i}>{s}</li>)}</ul>
+      <ul className="space-y-2 text-base text-muted-foreground list-disc list-inside">{items.map((s, i) => <li key={i}>{s}</li>)}</ul>
     )}
   </CardContent></Card>
 );
@@ -112,7 +112,7 @@ export default function SocialMediaFirstSteps() {
             </TabsList>
             {GUIDES.map(g => (
               <TabsContent key={g.id} value={g.id} className="space-y-4 mt-4">
-                <Card className="border-border"><CardContent className="p-5"><p className="text-sm text-muted-foreground">{g.intro}</p></CardContent></Card>
+                <Card className="border-border"><CardContent className="p-5"><p className="text-base text-muted-foreground">{g.intro}</p></CardContent></Card>
                 <Block title="1. Sign up" items={g.signup} ordered />
                 <Block title="2. Privacy first — do this before posting" items={g.privacy} ordered tone="amber" />
                 <Block title="3. Find family and friends" items={g.findFamily} ordered />

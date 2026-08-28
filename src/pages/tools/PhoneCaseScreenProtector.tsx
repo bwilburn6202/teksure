@@ -19,7 +19,7 @@ export default function PhoneCaseScreenProtector() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why protect?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone screen replacement: $200-400.</li>
               <li>Phone falls inevitable.</li>
               <li>Senior hands sometimes shaky.</li>
@@ -33,7 +33,7 @@ export default function PhoneCaseScreenProtector() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best cases for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>OtterBox Defender</strong> — toughest ($60).</li>
               <li><strong>OtterBox Symmetry</strong> — slim + protective ($40).</li>
               <li><strong>Lifeproof FRE</strong> — waterproof ($90).</li>
@@ -47,7 +47,7 @@ export default function PhoneCaseScreenProtector() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ridges easier grip.</li>
               <li>Raised lip protects screen.</li>
               <li>Pop socket — anti-drop.</li>
@@ -61,7 +61,7 @@ export default function PhoneCaseScreenProtector() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Screen protectors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tempered glass best — $10-15.</li>
               <li>Easier to apply than plastic.</li>
               <li>Anti-scratch + anti-shatter.</li>
@@ -75,7 +75,7 @@ export default function PhoneCaseScreenProtector() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apply screen protector</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Clean phone screen w/ alcohol wipe.</li>
               <li>Dust-free environment (bathroom after shower).</li>
               <li>Align with charging port + speaker.</li>
@@ -89,7 +89,7 @@ export default function PhoneCaseScreenProtector() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Phone insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AppleCare+ — $5-10/mo.</li>
               <li>Verizon / ATT phone insurance — $11-15.</li>
               <li>Cracked screen $29 deductible.</li>
@@ -103,7 +103,7 @@ export default function PhoneCaseScreenProtector() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cracked screen still works</h3>
-            <p className="text-sm text-muted-foreground">If screen cracks, screen protector often took the hit — not real screen. Replace screen protector, no repair needed. If real screen cracked: AppleCare $29 fix. Without insurance — $200-400. Save photos to cloud now in case. Consider phone repair shop ($150 third party).</p>
+            <p className="text-base text-muted-foreground">If screen cracks, screen protector often took the hit — not real screen. Replace screen protector, no repair needed. If real screen cracked: AppleCare $29 fix. Without insurance — $200-400. Save photos to cloud now in case. Consider phone repair shop ($150 third party).</p>
           </CardContent>
         </Card>
       </main>

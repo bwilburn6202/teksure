@@ -19,7 +19,7 @@ export default function SchwabIntelligentPortfolios() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is a robo-advisor?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Computer manages your investments automatically.</li>
               <li>Picks portfolio based on your goals.</li>
               <li>Rebalances over time.</li>
@@ -33,7 +33,7 @@ export default function SchwabIntelligentPortfolios() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Schwab Intelligent — free</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Zero advisory fee.</li>
               <li>$5,000 minimum investment.</li>
               <li>Diversified ETF portfolio.</li>
@@ -47,7 +47,7 @@ export default function SchwabIntelligentPortfolios() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Schwab Intelligent Premium</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$25K minimum.</li>
               <li>$300 one-time setup fee.</li>
               <li>$30/month subscription.</li>
@@ -61,7 +61,7 @@ export default function SchwabIntelligentPortfolios() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Answer 10–15 questions about goals + age.</li>
               <li>App suggests portfolio mix.</li>
               <li>Deposit money — auto-invested.</li>
@@ -75,7 +75,7 @@ export default function SchwabIntelligentPortfolios() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other robo-advisors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vanguard Digital Advisor — 0.20% fee.</li>
               <li>Betterment — 0.25% fee.</li>
               <li>Wealthfront — 0.25% fee.</li>
@@ -89,7 +89,7 @@ export default function SchwabIntelligentPortfolios() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for these seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t want to manage investments yourself.</li>
               <li>Don&apos;t want to pay 1%+ to a human advisor.</li>
               <li>$5K–$200K to invest.</li>
@@ -103,7 +103,7 @@ export default function SchwabIntelligentPortfolios() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free is rare in finance</h3>
-            <p className="text-sm text-muted-foreground">Most financial advisors charge 1% per year — that&apos;s $5,000 per year on a $500K portfolio. Schwab Intelligent Portfolios charges zero advisory fee for the same automated management. The catch: they hold some cash in your account (which earns less interest). For most senior investors, the savings far outweigh that drawback. Worth considering as DIY-light option.</p>
+            <p className="text-base text-muted-foreground">Most financial advisors charge 1% per year — that&apos;s $5,000 per year on a $500K portfolio. Schwab Intelligent Portfolios charges zero advisory fee for the same automated management. The catch: they hold some cash in your account (which earns less interest). For most senior investors, the savings far outweigh that drawback. Worth considering as DIY-light option.</p>
           </CardContent>
         </Card>
       </main>

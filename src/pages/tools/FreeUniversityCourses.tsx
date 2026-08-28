@@ -35,7 +35,7 @@ export default function FreeUniversityCourses() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function FreeUniversityCourses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free in-person at YOUR state university</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most public universities let seniors AUDIT classes free.</li>
               <li>"Audit" = sit in, do reading, no grades, no credit.</li>
               <li>Texas — 65+ FREE 6 credit hours per semester.</li>
@@ -58,7 +58,7 @@ export default function FreeUniversityCourses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">OLLI programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Osher Lifelong Learning Institute. 124 university campuses.</li>
               <li>$50-300/year. Take many classes per term.</li>
               <li>Peer-taught. Topics: history, lit, art, science, current events.</li>
@@ -72,7 +72,7 @@ export default function FreeUniversityCourses() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best courses to start</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Coursera — "Yale Science of Well-Being"</strong>. Free. Most popular online course ever.</li>
               <li><strong>edX — "Justice"</strong> (Michael Sandel, Harvard). Free, classic.</li>
               <li><strong>Khan Academy — World History</strong>. Free, well-paced.</li>
@@ -85,7 +85,7 @@ export default function FreeUniversityCourses() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cognitive benefit</h3>
-            <p className="text-sm text-muted-foreground">Engaging in challenging learning is the strongest evidence-based protection against dementia. 1-2 hours/week of real learning across 5+ years measurably reduces risk. Pick a subject you love. Start.</p>
+            <p className="text-base text-muted-foreground">Engaging in challenging learning is the strongest evidence-based protection against dementia. 1-2 hours/week of real learning across 5+ years measurably reduces risk. Pick a subject you love. Start.</p>
           </CardContent>
         </Card>
       </main>

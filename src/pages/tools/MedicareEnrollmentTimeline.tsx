@@ -19,7 +19,7 @@ export default function MedicareEnrollmentTimeline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Initial Enrollment Period (IEP)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>3 months BEFORE your 65th birthday month.</li>
               <li>The month you turn 65.</li>
               <li>3 months AFTER 65th birthday month.</li>
@@ -33,7 +33,7 @@ export default function MedicareEnrollmentTimeline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If still working at 65</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If employer covers you (20+ employees) — can delay Part B.</li>
               <li>Special Enrollment Period 8 months after job ends.</li>
               <li>Smaller employer (under 20) — Medicare is primary, sign up.</li>
@@ -46,7 +46,7 @@ export default function MedicareEnrollmentTimeline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Part D (drugs) timing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Same IEP window.</li>
               <li>Late = 1% lifetime penalty per month late on Part D.</li>
               <li>Even if no current prescriptions — STILL enroll cheap basic plan to avoid future penalty.</li>
@@ -58,7 +58,7 @@ export default function MedicareEnrollmentTimeline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annual Enrollment Period (AEP)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>October 15 - December 7</strong> every year.</li>
               <li>Switch Medicare Advantage plans.</li>
               <li>Switch Part D plans.</li>
@@ -72,7 +72,7 @@ export default function MedicareEnrollmentTimeline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SHIP</strong> — State Health Insurance Assistance Program. Free unbiased Medicare counselors. shiphelp.org.</li>
               <li><strong>1-800-MEDICARE</strong> — free official line.</li>
               <li><strong>Medicare.gov Plan Finder</strong> — compare drugs + plans for your area.</li>
@@ -85,7 +85,7 @@ export default function MedicareEnrollmentTimeline() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Most-missed: Medigap window</h3>
-            <p className="text-sm text-muted-foreground">Medigap (Medicare Supplement) — best 6-month window starts when you sign up for Part B. After that, insurers can charge more / deny based on health. Don&apos;t miss this window.</p>
+            <p className="text-base text-muted-foreground">Medigap (Medicare Supplement) — best 6-month window starts when you sign up for Part B. After that, insurers can charge more / deny based on health. Don&apos;t miss this window.</p>
           </CardContent>
         </Card>
       </main>

@@ -58,7 +58,7 @@ export default function GiftCardScamDefense() {
               {WHO_FAKE.map(([who, real], i) => (
                 <div key={i} className="border-l-4 border-destructive pl-3">
                   <p className="font-semibold text-sm">{who}</p>
-                  <p className="text-sm text-muted-foreground">{real}</p>
+                  <p className="text-base text-muted-foreground">{real}</p>
                 </div>
               ))}
             </div>
@@ -68,7 +68,7 @@ export default function GiftCardScamDefense() {
         <Card className="mb-6 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you already bought the cards</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Don't give them the numbers</strong> if you haven't yet. Stop right there.</li>
               <li>If you already shared the card numbers, <strong>call the gift card company immediately</strong> — sometimes they can freeze the funds before they're spent.</li>
               <li>Save the receipt and the cards.</li>

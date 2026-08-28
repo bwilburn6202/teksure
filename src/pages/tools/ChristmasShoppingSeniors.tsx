@@ -19,7 +19,7 @@ export default function ChristmasShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trusted shopping sites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Amazon</strong> — biggest, fast shipping.</li>
               <li><strong>Target.com</strong> — store pickup option.</li>
               <li><strong>Walmart.com</strong> — free shipping $35+.</li>
@@ -34,7 +34,7 @@ export default function ChristmasShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Holiday scam warnings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Order delayed&quot; texts — fake.</li>
               <li>Fake delivery emails (USPS, UPS, FedEx).</li>
               <li>Too-good-to-be-true social media ads.</li>
@@ -48,7 +48,7 @@ export default function ChristmasShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Shipping deadlines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Order by Dec 15 standard shipping.</li>
               <li>Dec 18 expedited.</li>
               <li>Dec 22 overnight.</li>
@@ -62,7 +62,7 @@ export default function ChristmasShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Black Friday + Cyber Monday — best sales.</li>
               <li>Amazon Lightning Deals.</li>
               <li>Honey / Rakuten browser extensions.</li>
@@ -77,7 +77,7 @@ export default function ChristmasShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy gift ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Amazon gift cards — never wrong.</li>
               <li>Costco + Sam&apos;s Club memberships.</li>
               <li>Streaming subscriptions — Netflix, Disney+.</li>
@@ -92,7 +92,7 @@ export default function ChristmasShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safe checkout</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use credit card (better fraud protection).</li>
               <li>Never debit card online.</li>
               <li>Apple Pay / Google Pay safer.</li>
@@ -107,7 +107,7 @@ export default function ChristmasShoppingSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Wishlists save stress</h3>
-            <p className="text-sm text-muted-foreground">Send family your wishlist via Amazon — they buy from your list. Set up wishlist for grandkids — buy from theirs. Skip stress + crowds. Wrap to be delivered. Save money on gas + parking. December = peak phishing season — verify everything twice.</p>
+            <p className="text-base text-muted-foreground">Send family your wishlist via Amazon — they buy from your list. Set up wishlist for grandkids — buy from theirs. Skip stress + crowds. Wrap to be delivered. Save money on gas + parking. December = peak phishing season — verify everything twice.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function ElectricBillCutters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The big watt hogs (in most homes)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Heating &amp; cooling</strong> — 40-50% of bill. Set 2 degrees higher in summer, 2 lower in winter.</li>
               <li><strong>Water heater</strong> — 14%. Drop tank temp from 140 to 120°F. Saves $40/year.</li>
               <li><strong>Old fridge</strong> — pre-2001 fridges cost $150+/year more than new ones.</li>
@@ -32,7 +32,7 @@ export default function ElectricBillCutters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free / cheap fixes (this week)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Swap remaining bulbs to LED — $2-4/bulb. Pays back in 6 months.</li>
               <li>Wash clothes in cold water. Saves $60/year, no quality loss.</li>
               <li>Unplug the second fridge in the garage. Or replace with chest freezer (1/3 the energy).</li>
@@ -66,7 +66,7 @@ export default function ElectricBillCutters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Income-based help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>LIHEAP</strong> — federal Low Income Home Energy Assistance. Pays $300-1,000+/year.</li>
               <li><strong>Weatherization Assistance Program</strong> — free insulation and air sealing.</li>
               <li><strong>Senior discounts</strong> — many utilities offer 10-30% off for seniors. Ask.</li>
@@ -78,7 +78,7 @@ export default function ElectricBillCutters() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">The $5 audit</h3>
-            <p className="text-sm text-muted-foreground">Buy a Kill A Watt meter ($25 on Amazon — or borrow from your local library). Plug appliances into it. See exactly what each one costs per month. Most people are shocked at the cable box and old fridge.</p>
+            <p className="text-base text-muted-foreground">Buy a Kill A Watt meter ($25 on Amazon — or borrow from your local library). Plug appliances into it. See exactly what each one costs per month. Most people are shocked at the cable box and old fridge.</p>
           </CardContent>
         </Card>
       </main>

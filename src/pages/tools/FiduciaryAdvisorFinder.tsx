@@ -27,7 +27,7 @@ export default function FiduciaryAdvisorFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to find one</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NAPFA.org</strong> — National Association of Personal Financial Advisors. ALL members are fee-only fiduciaries. Search by zip code.</li>
               <li><strong>XYPlanningNetwork.com</strong> — fee-only advisors who serve next-gen clients. Many work virtually.</li>
               <li><strong>Garrett Planning Network</strong> — fee-only advisors offering hourly rates. Best for one-time consultations.</li>
@@ -40,7 +40,7 @@ export default function FiduciaryAdvisorFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pricing models</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hourly</strong> — $200-400/hour. Best for one-time questions.</li>
               <li><strong>Flat fee for plan</strong> — $1,500-5,000 for a comprehensive plan. Best for "I need a 30-year retirement plan."</li>
               <li><strong>Percentage of assets (AUM)</strong> — typically 0.5-1.0%/year. Best if you want them to manage investments.</li>
@@ -52,7 +52,7 @@ export default function FiduciaryAdvisorFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheap or free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Vanguard Personal Advisor Services</strong> — 0.30%/year. Real CFPs at very low cost. Best for $50k+ portfolios.</li>
               <li><strong>Schwab Intelligent Advisor</strong> — similar to Vanguard.</li>
               <li><strong>Fidelity Wealth Services</strong> — slightly higher fee, more service.</li>
@@ -79,7 +79,7 @@ export default function FiduciaryAdvisorFinder() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Walk away from</h3>
-            <p className="text-sm text-muted-foreground">Anyone who pushes you to sell your existing investments and "roll into" their products. Anyone who promises specific market returns. Anyone in your church or social circle who "just got their license". Anyone whose pitch focuses on "tax-free retirement income" via specific products.</p>
+            <p className="text-base text-muted-foreground">Anyone who pushes you to sell your existing investments and "roll into" their products. Anyone who promises specific market returns. Anyone in your church or social circle who "just got their license". Anyone whose pitch focuses on "tax-free retirement income" via specific products.</p>
           </CardContent>
         </Card>
       </main>

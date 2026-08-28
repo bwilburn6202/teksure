@@ -19,7 +19,7 @@ export default function ResistanceBandsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best bands</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Whatafit / Te-Rich set</strong> ($30) — 5 tube bands with handles + door anchor + ankle straps. Most complete.</li>
               <li><strong>Theraband (loop)</strong> ($10) — flat loops, classic PT brand. Most senior PTs use these.</li>
               <li><strong>Resistance loop bands</strong> — small mini-loops for hips/glutes.</li>
@@ -31,7 +31,7 @@ export default function ResistanceBandsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Top 10 senior-friendly exercises</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Bicep curl</strong> — stand on band, pull up.</li>
               <li><strong>Overhead press</strong> — band under feet, press up.</li>
               <li><strong>Standing row</strong> — anchor in door, pull toward chest.</li>
@@ -50,7 +50,7 @@ export default function ResistanceBandsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why bands beat dumbbells for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Resistance throughout entire motion (not just lifting).</li>
               <li>Multiple resistance levels in one set.</li>
               <li>Light enough to start. Heavy enough to grow.</li>
@@ -65,7 +65,7 @@ export default function ResistanceBandsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free YouTube workouts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SilverSneakers band workouts</strong> — free.</li>
               <li><strong>More Life Health Seniors</strong> — Mike Hines, free, professional PT.</li>
               <li><strong>Eldergym</strong> — Doug Schrift PT, senior-specific.</li>
@@ -77,7 +77,7 @@ export default function ResistanceBandsGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Check bands monthly</h3>
-            <p className="text-sm text-muted-foreground">Bands wear out — small cuts, dry-out. Replace every 12-18 months for safety. A snap during use can hurt. $30/year is cheap insurance.</p>
+            <p className="text-base text-muted-foreground">Bands wear out — small cuts, dry-out. Replace every 12-18 months for safety. A snap during use can hurt. $30/year is cheap insurance.</p>
           </CardContent>
         </Card>
       </main>

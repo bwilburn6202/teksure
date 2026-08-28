@@ -19,7 +19,7 @@ export default function CodingHobbyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why learn coding</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Excellent brain exercise.</li>
               <li>Make websites, apps, games.</li>
               <li>Automate boring tasks.</li>
@@ -34,7 +34,7 @@ export default function CodingHobbyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best language for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Python</strong> — easiest. Most useful. Start here.</li>
               <li><strong>JavaScript</strong> — for websites.</li>
               <li><strong>HTML/CSS</strong> — make webpages, easy.</li>
@@ -48,7 +48,7 @@ export default function CodingHobbyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free learning resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Codecademy</strong> — free courses, hands-on.</li>
               <li><strong>freeCodeCamp.org</strong> — full curriculum free.</li>
               <li><strong>Khan Academy</strong> — basics free.</li>
@@ -63,7 +63,7 @@ export default function CodingHobbyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start projects</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Personal website (HTML/CSS).</li>
               <li>Simple calculator (Python).</li>
               <li>Family newsletter generator.</li>
@@ -78,7 +78,7 @@ export default function CodingHobbyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior advantages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Patience.</li>
               <li>Time to deeply learn (no rush).</li>
               <li>Decades of problem-solving experience.</li>
@@ -92,7 +92,7 @@ export default function CodingHobbyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AI helps learning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ChatGPT/Claude explain code line-by-line.</li>
               <li>Ask: &quot;What does this do?&quot;</li>
               <li>&quot;Write me a [project] in Python.&quot;</li>
@@ -106,7 +106,7 @@ export default function CodingHobbyForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior coding bootcamps</h3>
-            <p className="text-sm text-muted-foreground">Real bootcamps welcome seniors. Some examples: <strong>Lambda School</strong>, <strong>Bloom Tech</strong>, <strong>App Academy</strong>. Many remote. 6-12 months full-time. Expensive ($10K-20K) but income share possible. Cheaper: <strong>Free Code Camp</strong> + <strong>The Odin Project</strong> = self-taught path. Many seniors career-changed to coding.</p>
+            <p className="text-base text-muted-foreground">Real bootcamps welcome seniors. Some examples: <strong>Lambda School</strong>, <strong>Bloom Tech</strong>, <strong>App Academy</strong>. Many remote. 6-12 months full-time. Expensive ($10K-20K) but income share possible. Cheaper: <strong>Free Code Camp</strong> + <strong>The Odin Project</strong> = self-taught path. Many seniors career-changed to coding.</p>
           </CardContent>
         </Card>
       </main>

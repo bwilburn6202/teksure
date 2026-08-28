@@ -35,7 +35,7 @@ export default function ReadingAppPicker() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function ReadingAppPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why an e-reader (Kindle Paperwhite) over phone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Easier on the eyes</strong> — e-ink screen mimics paper, no glare, no blue light.</li>
               <li><strong>Battery</strong> — 6-8 weeks per charge.</li>
               <li><strong>No notifications</strong> — single-purpose device. Less distraction.</li>
@@ -72,7 +72,7 @@ export default function ReadingAppPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">If you already use Kindle, install <strong>Libby</strong> next. When you borrow from Libby, choose "Send to Kindle" — the library book lands on your Kindle automatically. The two apps work beautifully together.</p>
+            <p className="text-base text-muted-foreground">If you already use Kindle, install <strong>Libby</strong> next. When you borrow from Libby, choose "Send to Kindle" — the library book lands on your Kindle automatically. The two apps work beautifully together.</p>
           </CardContent>
         </Card>
       </main>

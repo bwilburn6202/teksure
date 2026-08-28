@@ -169,7 +169,7 @@ export default function AiChatbotGuide() {
                 <CardContent className="p-5 space-y-4">
                   <div>
                     <p className="font-semibold mb-1">What is an AI chatbot, in one paragraph?</p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       You type a question; a computer program writes back in conversational English. Underneath, it has read large amounts of text and learned to predict good answers. It is not a person, not a search engine, and not always right — but it is fast, patient, and never tired of explaining the same thing twice.
                     </p>
                   </div>

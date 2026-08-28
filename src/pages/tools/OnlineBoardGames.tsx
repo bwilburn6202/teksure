@@ -36,7 +36,7 @@ export default function OnlineBoardGames() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -59,7 +59,7 @@ export default function OnlineBoardGames() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best Sunday ritual</h3>
-            <p className="text-sm text-muted-foreground">Schedule a weekly Words With Friends or Chess game with one friend or grandchild. Once-a-week move-and-respond stays connected without long phone calls. After a year, you\'ve stayed close in a way that holiday cards never managed.</p>
+            <p className="text-base text-muted-foreground">Schedule a weekly Words With Friends or Chess game with one friend or grandchild. Once-a-week move-and-respond stays connected without long phone calls. After a year, you\'ve stayed close in a way that holiday cards never managed.</p>
           </CardContent>
         </Card>
       </main>

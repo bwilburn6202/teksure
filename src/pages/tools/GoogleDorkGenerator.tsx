@@ -144,7 +144,7 @@ export default function GoogleDorkGenerator() {
                     <div className="flex items-center justify-between mb-4">
                       <div>
                         <h3 className="font-semibold">{selectedTemplate.name}</h3>
-                        <p className="text-sm text-muted-foreground">{selectedTemplate.description}</p>
+                        <p className="text-base text-muted-foreground">{selectedTemplate.description}</p>
                       </div>
                       <Button size="sm" variant="ghost" onClick={() => { setSelectedTemplate(null); setInput(''); }}>Change</Button>
                     </div>

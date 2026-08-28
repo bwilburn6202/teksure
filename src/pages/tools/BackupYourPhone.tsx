@@ -26,7 +26,7 @@ export default function BackupYourPhone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone — iCloud backup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → tap your name → iCloud.</li>
               <li>iCloud Backup → ON.</li>
               <li>Connect to wifi + plug in nightly.</li>
@@ -39,7 +39,7 @@ export default function BackupYourPhone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android — Google backup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Google → Backup.</li>
               <li>Toggle ON.</li>
               <li>Photos → Google Photos backup ON.</li>
@@ -52,7 +52,7 @@ export default function BackupYourPhone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Verify backup works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone — Settings → iCloud → Backup. See last backup date.</li>
               <li>Android — Settings → Google → Backup. See last backup.</li>
               <li>Should be within last 24 hours.</li>
@@ -65,7 +65,7 @@ export default function BackupYourPhone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Backup new phone setup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Buy new phone.</li>
               <li>Choose "Restore from iCloud" or "Restore from Google".</li>
               <li>Sign in with same Apple ID / Google.</li>
@@ -79,7 +79,7 @@ export default function BackupYourPhone() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free 5GB / 15GB enough?</h3>
-            <p className="text-sm text-muted-foreground">Most seniors&apos; photos = 50-100GB. Free tier insufficient. iCloud 50GB = $1/mo, 200GB = $3/mo. Worth $12-36/yr to never lose 30 years of photos.</p>
+            <p className="text-base text-muted-foreground">Most seniors&apos; photos = 50-100GB. Free tier insufficient. iCloud 50GB = $1/mo, 200GB = $3/mo. Worth $12-36/yr to never lose 30 years of photos.</p>
           </CardContent>
         </Card>
       </main>

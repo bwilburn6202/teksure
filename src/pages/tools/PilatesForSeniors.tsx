@@ -19,7 +19,7 @@ export default function PilatesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why pilates?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Builds core = better balance.</li>
               <li>Low-impact — no joint pounding.</li>
               <li>Improves posture.</li>
@@ -33,7 +33,7 @@ export default function PilatesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mat vs reformer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mat</strong> — floor-based, equipment-free, home-friendly.</li>
               <li><strong>Reformer</strong> — machine, gym/studio.</li>
               <li>Reformer easier on body.</li>
@@ -47,7 +47,7 @@ export default function PilatesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Equipment basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Yoga mat ($20).</li>
               <li>Resistance bands ($15).</li>
               <li>Small ball ($15).</li>
@@ -61,7 +61,7 @@ export default function PilatesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Learn online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pilates Anytime</strong> — $20/mo, all levels.</li>
               <li><strong>YouTube</strong> — Move with Nicole, Lottie Murphy.</li>
               <li><strong>Glo</strong> — yoga + pilates app.</li>
@@ -75,7 +75,7 @@ export default function PilatesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior modifications</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Chair pilates — no floor.</li>
               <li>Standing version available.</li>
               <li>Pillow support.</li>
@@ -89,7 +89,7 @@ export default function PilatesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Studios + classes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local pilates studios — search Yelp.</li>
               <li>$20-30/class typical.</li>
               <li>Senior discount common.</li>
@@ -103,7 +103,7 @@ export default function PilatesForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Real benefits</h3>
-            <p className="text-sm text-muted-foreground">Studies — pilates reduces falls 50% in elderly. Better posture = less back pain. Core strength = independent living. Joseph Pilates designed for rehab. Fits senior bodies. Most love it after 4 weeks. Even 3x/week makes difference. Free YouTube alternative if cost concern.</p>
+            <p className="text-base text-muted-foreground">Studies — pilates reduces falls 50% in elderly. Better posture = less back pain. Core strength = independent living. Joseph Pilates designed for rehab. Fits senior bodies. Most love it after 4 weeks. Even 3x/week makes difference. Free YouTube alternative if cost concern.</p>
           </CardContent>
         </Card>
       </main>

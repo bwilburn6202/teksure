@@ -192,7 +192,7 @@ export default function NotebookAlternatives() {
                     <Icon className="h-4 w-4 text-orange-600" />
                     <p className="font-semibold text-sm">{lane.label}</p>
                   </div>
-                  <p className="text-sm text-muted-foreground">{lane.blurb}</p>
+                  <p className="text-base text-muted-foreground">{lane.blurb}</p>
                 </div>
               );
             })}

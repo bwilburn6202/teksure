@@ -35,7 +35,7 @@ export default function SellOnlineCoach() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -57,7 +57,7 @@ export default function SellOnlineCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid scams when selling</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cash for in-person pickup</strong> — best. Meet in public; bring a friend. (See our Marketplace Safety guide.)</li>
               <li><strong>Don\'t accept checks or money orders</strong> — almost always fake.</li>
               <li><strong>Use the platform\'s payment system</strong> — eBay, Poshmark, Mercari handle the money. Don\'t agree to "PayPal Friends and Family" with strangers.</li>
@@ -77,7 +77,7 @@ export default function SellOnlineCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground"><strong>Big items / furniture</strong> → Facebook Marketplace.<br /><strong>Old phones, DVDs, books</strong> → Decluttr.<br /><strong>Anything else worth $50+</strong> → eBay.<br /><strong>Clothes</strong> → Poshmark.<br /><strong>Free or low-value</strong> → Nextdoor "free" pile.</p>
+            <p className="text-base text-muted-foreground"><strong>Big items / furniture</strong> → Facebook Marketplace.<br /><strong>Old phones, DVDs, books</strong> → Decluttr.<br /><strong>Anything else worth $50+</strong> → eBay.<br /><strong>Clothes</strong> → Poshmark.<br /><strong>Free or low-value</strong> → Nextdoor "free" pile.</p>
           </CardContent>
         </Card>
       </main>

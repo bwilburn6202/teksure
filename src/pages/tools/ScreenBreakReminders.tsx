@@ -33,7 +33,7 @@ export default function ScreenBreakReminders() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function ScreenBreakReminders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to do during breaks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>20-20-20</strong> — look 20 feet away for 20 seconds.</li>
               <li><strong>Stand up</strong> — walk to kitchen, get water.</li>
               <li><strong>Stretch neck + shoulders</strong> — slow circles.</li>
@@ -71,7 +71,7 @@ export default function ScreenBreakReminders() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Movement = brain health</h3>
-            <p className="text-sm text-muted-foreground">Studies show seniors who break sedentary screen time every 30 min have lower dementia risk + better mood. The break isn&apos;t just about eyes — it&apos;s about getting blood flowing to brain. Set ANY reminder. Break the pattern.</p>
+            <p className="text-base text-muted-foreground">Studies show seniors who break sedentary screen time every 30 min have lower dementia risk + better mood. The break isn&apos;t just about eyes — it&apos;s about getting blood flowing to brain. Set ANY reminder. Break the pattern.</p>
           </CardContent>
         </Card>
       </main>

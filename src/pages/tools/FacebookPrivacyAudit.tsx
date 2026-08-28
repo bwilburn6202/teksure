@@ -19,7 +19,7 @@ export default function FacebookPrivacyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy Checkup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Privacy → Privacy Checkup.</li>
               <li>Step 1: Who can see your posts? → "Friends".</li>
               <li>Step 2: Who can find you (search, friend requests)? → Restrict.</li>
@@ -33,7 +33,7 @@ export default function FacebookPrivacyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Profile lock-down</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Profile photo + cover photo: Public OK.</li>
               <li>Birthday — show only month/day, NOT year.</li>
               <li>Location, hometown, work — Friends only OR remove.</li>
@@ -47,7 +47,7 @@ export default function FacebookPrivacyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Off-Facebook Activity</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Privacy → "Off-Facebook Activity".</li>
               <li>"Disconnect Future Activity" — turn ON.</li>
               <li>"Clear History" — wipes existing tracking data.</li>
@@ -60,7 +60,7 @@ export default function FacebookPrivacyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Past posts cleanup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Privacy → "Limit Past Posts".</li>
               <li>Changes ALL old public posts to Friends-only.</li>
               <li>One-click. Done.</li>
@@ -72,7 +72,7 @@ export default function FacebookPrivacyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tagging + photos</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Profile + Tagging → "Review tags before they appear" — ON.</li>
               <li>Family/friends can&apos;t tag you in embarrassing photos without permission.</li>
               <li>Face recognition — turn OFF if uncomfortable.</li>
@@ -83,7 +83,7 @@ export default function FacebookPrivacyAudit() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Memorialize / Legacy contact</h3>
-            <p className="text-sm text-muted-foreground">While in privacy settings — set your <strong>Legacy Contact</strong> (Account Ownership and Control). Lets a trusted family member memorialize / manage your account after death. See /tools/digital-legacy-planner.</p>
+            <p className="text-base text-muted-foreground">While in privacy settings — set your <strong>Legacy Contact</strong> (Account Ownership and Control). Lets a trusted family member memorialize / manage your account after death. See /tools/digital-legacy-planner.</p>
           </CardContent>
         </Card>
       </main>

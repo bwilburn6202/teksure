@@ -19,7 +19,7 @@ export default function TwoFactorAuthSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is 2FA?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>After typing password, also enter a 6-digit code.</li>
               <li>Code comes via text or app — only you have it.</li>
               <li>Prevents hackers from accessing even with password.</li>
@@ -33,7 +33,7 @@ export default function TwoFactorAuthSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to enable first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Email accounts (Gmail, Yahoo, Outlook).</li>
               <li>Banking + financial accounts.</li>
               <li>Social Security myAccount.</li>
@@ -47,7 +47,7 @@ export default function TwoFactorAuthSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SMS (text) 2FA</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Easiest — code sent by text message.</li>
               <li>Login prompts: &quot;Enter the code we texted you.&quot;</li>
               <li>Works without any new app.</li>
@@ -61,7 +61,7 @@ export default function TwoFactorAuthSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">App-based 2FA (more secure)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Google Authenticator — free, simple.</li>
               <li>Authy — free, syncs across devices.</li>
               <li>Microsoft Authenticator — free.</li>
@@ -75,7 +75,7 @@ export default function TwoFactorAuthSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup process (most accounts)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Login to account.</li>
               <li>Find Settings → Security or 2-Factor Auth.</li>
               <li>Choose: text message or authenticator app.</li>
@@ -89,7 +89,7 @@ export default function TwoFactorAuthSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Backup codes — critical</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Always save backup codes when offered.</li>
               <li>10 one-time use codes typically.</li>
               <li>Use if phone lost or new phone.</li>
@@ -103,7 +103,7 @@ export default function TwoFactorAuthSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Email + bank first, today</h3>
-            <p className="text-sm text-muted-foreground">If you do nothing else, enable 2FA on your primary email and your bank accounts today. Email is the master key — if hackers control your email, they can reset all other passwords. Banking is obvious. Both take 5 minutes to set up. Combined with a strong unique password from Bitwarden, you become 99% safer than the average person online.</p>
+            <p className="text-base text-muted-foreground">If you do nothing else, enable 2FA on your primary email and your bank accounts today. Email is the master key — if hackers control your email, they can reset all other passwords. Banking is obvious. Both take 5 minutes to set up. Combined with a strong unique password from Bitwarden, you become 99% safer than the average person online.</p>
           </CardContent>
         </Card>
       </main>

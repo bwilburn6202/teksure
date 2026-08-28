@@ -19,7 +19,7 @@ export default function IphoneCameraTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tap to focus</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap subject in viewfinder.</li>
               <li>Yellow square — focus + exposure locked.</li>
               <li>Hold to lock — won&apos;t change as you move.</li>
@@ -33,7 +33,7 @@ export default function IphoneCameraTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Portrait mode</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Blurry background — like fancy camera.</li>
               <li>Swipe to Portrait mode in Camera app.</li>
               <li>Take portrait of person or pet.</li>
@@ -47,7 +47,7 @@ export default function IphoneCameraTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Burst mode</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hold shutter button down.</li>
               <li>Camera takes rapid photos.</li>
               <li>Pick best one later.</li>
@@ -61,7 +61,7 @@ export default function IphoneCameraTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Live Photos</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Camera records 1.5 sec before + after photo.</li>
               <li>Tap + hold photo to play.</li>
               <li>Pick best frame as still photo.</li>
@@ -75,7 +75,7 @@ export default function IphoneCameraTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Grid lines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Camera → Grid ON.</li>
               <li>9 squares appear in viewfinder.</li>
               <li>Use rule of thirds — eyes on top line.</li>
@@ -89,7 +89,7 @@ export default function IphoneCameraTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly camera tricks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Volume button — also takes photo (no shaking).</li>
               <li>Use AirPods button as remote shutter.</li>
               <li>&quot;Hey Siri, take a photo&quot; — voice triggered.</li>
@@ -103,7 +103,7 @@ export default function IphoneCameraTipsSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tap to focus changes everything</h3>
-            <p className="text-sm text-muted-foreground">If you do nothing else, learn to tap on your subject before taking photos. The yellow box ensures the camera focuses on what matters and exposes correctly. Adjust brightness with the sun icon. This single 5-second habit dramatically improves photos. Your grandkids&apos; pictures, vacation photos, family gatherings — all noticeably better.</p>
+            <p className="text-base text-muted-foreground">If you do nothing else, learn to tap on your subject before taking photos. The yellow box ensures the camera focuses on what matters and exposes correctly. Adjust brightness with the sun icon. This single 5-second habit dramatically improves photos. Your grandkids&apos; pictures, vacation photos, family gatherings — all noticeably better.</p>
           </CardContent>
         </Card>
       </main>

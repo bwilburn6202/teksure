@@ -28,13 +28,13 @@ export default function EmailFoldersRules() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Gmail Labels (folders)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>In Gmail, click the gear icon → "See all settings" → "Labels".</li>
                 <li>Click "Create new label". Name it ("Bills", "Family", "Volunteer").</li>
                 <li>Save.</li>
               </ol>
               <h3 className="font-bold text-lg mt-4 mb-3">Auto-file with filters</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open an email from your electric company.</li>
                 <li>Click the three dots → "Filter messages like this".</li>
                 <li>Click "Create filter".</li>
@@ -51,12 +51,12 @@ export default function EmailFoldersRules() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Outlook Folders</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Right-click "Inbox" or your email → "New Folder".</li>
                 <li>Name it ("Bills", "Family").</li>
               </ol>
               <h3 className="font-bold text-lg mt-4 mb-3">Auto-file with rules</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open an email.</li>
                 <li>Right-click → "Rules" → "Create Rule".</li>
                 <li>Check "From [sender]" → Move to folder → pick "Bills".</li>
@@ -96,7 +96,7 @@ export default function EmailFoldersRules() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">"Inbox Zero" challenge</h3>
-            <p className="text-sm text-muted-foreground">For one week, try ending each day with an EMPTY inbox. Either reply, archive, delete, or label-and-archive every email. Combined with rules, takes about 15 min/day. Liberating.</p>
+            <p className="text-base text-muted-foreground">For one week, try ending each day with an EMPTY inbox. Either reply, archive, delete, or label-and-archive every email. Combined with rules, takes about 15 min/day. Liberating.</p>
           </CardContent>
         </Card>
       </main>

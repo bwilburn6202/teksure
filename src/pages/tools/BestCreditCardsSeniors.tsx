@@ -33,7 +33,7 @@ export default function BestCreditCardsSeniors() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BestCreditCardsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why credit beats debit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fraud protection — credit company fights bad charges.</li>
               <li>NOT your money at risk during fraud (debit IS your money).</li>
               <li>Earn 2-5% cashback.</li>
@@ -56,7 +56,7 @@ export default function BestCreditCardsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior strategy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1-2 cards is enough.</li>
               <li>One cashback (Costco/Discover).</li>
               <li>One travel card if traveling.</li>
@@ -70,7 +70,7 @@ export default function BestCreditCardsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Store cards (high interest, limited use).</li>
               <li>Annual fee not justified by use.</li>
               <li>Subprime cards if good credit.</li>
@@ -83,7 +83,7 @@ export default function BestCreditCardsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior protection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Authorized user — let trusted family help (not joint).</li>
               <li>Credit alert system (free).</li>
               <li>Spending limits via bank app.</li>
@@ -96,7 +96,7 @@ export default function BestCreditCardsSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior-favorite combo</h3>
-            <p className="text-sm text-muted-foreground">If Costco member: <strong>Costco Citi Visa (free)</strong> + <strong>Discover It (free)</strong>. Both free. 4% gas, 3% restaurants, 2% Costco, 5% rotating categories. Most seniors covered. Annual cashback $200-1,000.</p>
+            <p className="text-base text-muted-foreground">If Costco member: <strong>Costco Citi Visa (free)</strong> + <strong>Discover It (free)</strong>. Both free. 4% gas, 3% restaurants, 2% Costco, 5% rotating categories. Most seniors covered. Annual cashback $200-1,000.</p>
           </CardContent>
         </Card>
       </main>

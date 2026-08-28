@@ -19,7 +19,7 @@ export default function SeniorTutoringIncomeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wyzant</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Largest tutoring platform.</li>
               <li>Set your own rate.</li>
               <li>$25-$100+/hour typical.</li>
@@ -33,7 +33,7 @@ export default function SeniorTutoringIncomeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tutor.com</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>School + library partnerships.</li>
               <li>Hourly pay, scheduled.</li>
               <li>$20-$30/hour.</li>
@@ -47,7 +47,7 @@ export default function SeniorTutoringIncomeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">VIPKid alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Teach English to Chinese kids.</li>
               <li>Late-night/early-morning hours.</li>
               <li>$15-$25/hour.</li>
@@ -61,7 +61,7 @@ export default function SeniorTutoringIncomeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for retired teachers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use existing teaching skills.</li>
               <li>Subject expertise leverages.</li>
               <li>Flexibility of retirement.</li>
@@ -75,7 +75,7 @@ export default function SeniorTutoringIncomeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior expertise areas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Long-known subjects (math, history).</li>
               <li>Foreign language native speakers.</li>
               <li>Specialized fields — science, business.</li>
@@ -89,7 +89,7 @@ export default function SeniorTutoringIncomeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apply to Wyzant — verify subjects.</li>
               <li>Get profile photographed.</li>
               <li>Build profile + background.</li>
@@ -103,7 +103,7 @@ export default function SeniorTutoringIncomeApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Helping students = meaningful work</h3>
-            <p className="text-sm text-muted-foreground">Many retired teachers + professionals miss working. Online tutoring on Wyzant lets you keep teaching from home. Set your own hours + rate. Many seniors earn $20K-$60K+/year part-time. Combined with the joy of helping students succeed — this is high-meaning retirement work.</p>
+            <p className="text-base text-muted-foreground">Many retired teachers + professionals miss working. Online tutoring on Wyzant lets you keep teaching from home. Set your own hours + rate. Many seniors earn $20K-$60K+/year part-time. Combined with the joy of helping students succeed — this is high-meaning retirement work.</p>
           </CardContent>
         </Card>
       </main>

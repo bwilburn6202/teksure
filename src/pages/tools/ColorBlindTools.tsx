@@ -19,7 +19,7 @@ export default function ColorBlindTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone color filters (built-in)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Accessibility → Display &amp; Text Size.</li>
               <li>Tap "Color Filters" → toggle ON.</li>
               <li>Pick your type: Protanopia (red-blind), Deuteranopia (green-blind), Tritanopia (blue-blind).</li>
@@ -32,7 +32,7 @@ export default function ColorBlindTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android color correction</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Accessibility → Visibility enhancements.</li>
               <li>Tap "Color correction" → ON.</li>
               <li>Choose color blindness type.</li>
@@ -44,7 +44,7 @@ export default function ColorBlindTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Color Blind Pal</strong> (FREE) — names colors when you point camera. iOS + Android.</li>
               <li><strong>Chromatic Vision Simulator</strong> (FREE) — see what others see.</li>
               <li><strong>Spectrum (FREE)</strong> — color picker + names.</li>
@@ -57,7 +57,7 @@ export default function ColorBlindTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">EnChroma glasses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Special-tinted lenses — let many colorblind people see colors better.</li>
               <li>$200-450 indoor / outdoor pair.</li>
               <li>Helps roughly 80% of red-green colorblind people.</li>
@@ -70,7 +70,7 @@ export default function ColorBlindTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common challenges + workarounds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Traffic lights</strong> — position matters more than color (top = red, bottom = green).</li>
               <li><strong>LED indicator lights</strong> — confusing red/green. Check device manual for blink patterns.</li>
               <li><strong>Charts/graphs</strong> — ask for patterns or labels, not just colors.</li>
@@ -84,7 +84,7 @@ export default function ColorBlindTools() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Test your color vision</h3>
-            <p className="text-sm text-muted-foreground">EnChroma offers a free online color blindness test at <strong>enchroma.com/test</strong>. Takes 2 minutes. Tells you the type and severity. Helpful even if you&apos;re not buying EnChroma.</p>
+            <p className="text-base text-muted-foreground">EnChroma offers a free online color blindness test at <strong>enchroma.com/test</strong>. Takes 2 minutes. Tells you the type and severity. Helpful even if you&apos;re not buying EnChroma.</p>
           </CardContent>
         </Card>
       </main>

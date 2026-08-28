@@ -19,7 +19,7 @@ export default function CouponStackingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The stack (in order)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Store sale</strong> — wait for "buy one get one" or 50% off.</li>
               <li><strong>Store coupon</strong> — clip in app (CVS, Walgreens, Kroger).</li>
               <li><strong>Manufacturer coupon</strong> — paper or digital. Stacks WITH store coupon at most stores.</li>
@@ -34,7 +34,7 @@ export default function CouponStackingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stores allowing coupon stacking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>CVS</strong> — store + manufacturer + ExtraBucks rewards. King of stacking.</li>
               <li><strong>Walgreens</strong> — store + manufacturer + Balance Rewards.</li>
               <li><strong>Target</strong> — store + manufacturer + 5% RedCard discount.</li>
@@ -48,7 +48,7 @@ export default function CouponStackingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps that stack</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ibotta</strong> — cash back on grocery items.</li>
               <li><strong>Fetch Rewards</strong> — points for any receipt.</li>
               <li><strong>Coupons.com</strong> — printable coupons.</li>
@@ -63,7 +63,7 @@ export default function CouponStackingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior discount days</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tuesday</strong> — Kohl&apos;s, Salvation Army (most stores 5-15% off).</li>
               <li><strong>Wednesday</strong> — Bealls, Stein Mart (15% off).</li>
               <li><strong>Thursday</strong> — Goodwill, Marshalls senior discount.</li>
@@ -76,7 +76,7 @@ export default function CouponStackingTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t buy what you don&apos;t need</h3>
-            <p className="text-sm text-muted-foreground">Best coupon strategy: don&apos;t shop for things you don&apos;t need. A "free" item is still cluttering your home + maybe wasted. Buy bargains ONLY on items already on your list. Coupon-clipping isn&apos;t a job.</p>
+            <p className="text-base text-muted-foreground">Best coupon strategy: don&apos;t shop for things you don&apos;t need. A "free" item is still cluttering your home + maybe wasted. Buy bargains ONLY on items already on your list. Coupon-clipping isn&apos;t a job.</p>
           </CardContent>
         </Card>
       </main>

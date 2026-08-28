@@ -19,7 +19,7 @@ export default function JoinASeniorClub() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local senior centers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Almost every town has one.</li>
               <li>Free or under $5 lunch most days.</li>
               <li>Classes: tech, art, fitness, dance, languages.</li>
@@ -33,7 +33,7 @@ export default function JoinASeniorClub() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lifelong learning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>OLLI (Osher Lifelong Learning)</strong> — university classes for 50+. $50-300/year unlimited.</li>
               <li><strong>Road Scholar</strong> — educational travel.</li>
               <li><strong>Coursera/edX</strong> — free college classes online.</li>
@@ -47,7 +47,7 @@ export default function JoinASeniorClub() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Social clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Rotary, Lions, Kiwanis</strong> — service clubs, mixed ages.</li>
               <li><strong>VFW, American Legion</strong> — veterans + family.</li>
               <li><strong>Garden clubs</strong> — local, often free.</li>
@@ -62,7 +62,7 @@ export default function JoinASeniorClub() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online community</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AARP Online Community</strong> — forums by topic.</li>
               <li><strong>Reddit r/AskOldPeople, r/Retirement</strong> — friendly.</li>
               <li><strong>Facebook groups</strong> — search &quot;[your town] seniors&quot;.</li>
@@ -76,7 +76,7 @@ export default function JoinASeniorClub() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try 3 before judging</h3>
-            <p className="text-sm text-muted-foreground">First visit feels awkward — that&apos;s normal. Try 3 different visits before deciding it&apos;s &quot;not for me.&quot; Most clubs welcome new members + assign a buddy. Show up with a smile and a question.</p>
+            <p className="text-base text-muted-foreground">First visit feels awkward — that&apos;s normal. Try 3 different visits before deciding it&apos;s &quot;not for me.&quot; Most clubs welcome new members + assign a buddy. Show up with a smile and a question.</p>
           </CardContent>
         </Card>
       </main>

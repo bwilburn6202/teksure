@@ -19,7 +19,7 @@ export default function LocalNewsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best local news sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Your local newspaper website</strong> — search "[town name] news". Many have $5/mo digital subs (cheap).</li>
               <li><strong>Local public radio</strong> — NPR member station has best free local coverage. Apps free.</li>
               <li><strong>Patch.com</strong> — covers thousands of towns. Free.</li>
@@ -33,7 +33,7 @@ export default function LocalNewsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free local news apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple News</strong> (built-in) — pulls local stories if you set your zip.</li>
               <li><strong>Google News</strong> — same idea. Set "headlines for me" with location.</li>
               <li><strong>NPR One</strong> — local public radio app. Free.</li>
@@ -46,7 +46,7 @@ export default function LocalNewsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sign up for ALERTS</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>County emergency alerts</strong> — search "[county] emergency text alerts". Free. Tornado, severe weather, AMBER.</li>
               <li><strong>Town newsletter</strong> — most towns have one. Free.</li>
               <li><strong>School district email</strong> — for grandparents who help with grandkids.</li>
@@ -59,7 +59,7 @@ export default function LocalNewsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reliable local journalism (paid is worth it)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local newspaper digital subscription — $5-15/mo. Often the ONLY source for school board, city council, local courts.</li>
               <li>Senior discounts often available — call and ask.</li>
               <li>Community-funded papers are growing — many are donation-supported.</li>
@@ -71,7 +71,7 @@ export default function LocalNewsApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Limit national news</h3>
-            <p className="text-sm text-muted-foreground">Studies show heavy national news consumption is bad for older adults — raises blood pressure, increases anxiety. Local news + 30-min daily national check-in is healthier. Quality local news directly affects your daily life. National news mostly doesn&apos;t.</p>
+            <p className="text-base text-muted-foreground">Studies show heavy national news consumption is bad for older adults — raises blood pressure, increases anxiety. Local news + 30-min daily national check-in is healthier. Quality local news directly affects your daily life. National news mostly doesn&apos;t.</p>
           </CardContent>
         </Card>
       </main>

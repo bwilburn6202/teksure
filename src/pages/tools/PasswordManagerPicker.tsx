@@ -42,7 +42,7 @@ export default function PasswordManagerPicker() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -51,7 +51,7 @@ export default function PasswordManagerPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (any manager)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install the app on every device — phone, tablet, computer.</li>
               <li>Make a master password. <strong>This is the only one you ever memorize.</strong> Use 4 random words: "purple-sandwich-mountain-shoes". Long is more important than complicated.</li>
               <li>Write the master password on paper. Put it somewhere safe (with your will, in a safe deposit box).</li>
@@ -84,7 +84,7 @@ export default function PasswordManagerPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground"><strong>Bitwarden free</strong> if you\'re curious and don\'t want to pay. <strong>Apple Passwords</strong> if you only use Apple devices. <strong>1Password Families</strong> if you and a spouse share lots of accounts and want emergency access set up properly.</p>
+            <p className="text-base text-muted-foreground"><strong>Bitwarden free</strong> if you\'re curious and don\'t want to pay. <strong>Apple Passwords</strong> if you only use Apple devices. <strong>1Password Families</strong> if you and a spouse share lots of accounts and want emergency access set up properly.</p>
           </CardContent>
         </Card>
       </main>

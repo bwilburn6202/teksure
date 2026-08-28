@@ -36,7 +36,7 @@ export default function DiskEncryptionCoach() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Turn on FileVault (Mac)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>System Settings → Privacy & Security → FileVault.</li>
                 <li>Click "Turn On".</li>
                 <li>Choose: "Allow my iCloud account to unlock my disk" (easiest) OR "Create a recovery key" (write it down).</li>
@@ -52,7 +52,7 @@ export default function DiskEncryptionCoach() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Turn on BitLocker (Windows 10/11 Pro)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → Privacy & security → Device encryption (Win 11 Home) OR Control Panel → BitLocker (Pro).</li>
                 <li>Click "Turn on".</li>
                 <li>Save the recovery key — Microsoft account is easiest. (Write it down too. If you lose access, you NEED this.)</li>
@@ -67,7 +67,7 @@ export default function DiskEncryptionCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For external drives & USB sticks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mac</strong> — Right-click any drive → "Encrypt".</li>
               <li><strong>Windows</strong> — Right-click → "Turn on BitLocker".</li>
               <li><strong>Cross-platform</strong>: VeraCrypt (free) makes encrypted vaults that work on Mac and Windows.</li>
@@ -86,7 +86,7 @@ export default function DiskEncryptionCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Why this matters for seniors</h3>
-            <p className="text-sm text-muted-foreground">Laptop theft happens. Modern computers contain tax returns, banking, medical records, family photos. Encryption is free and one-time setup. With it, a stolen laptop is just a hardware loss — not an identity-theft disaster.</p>
+            <p className="text-base text-muted-foreground">Laptop theft happens. Modern computers contain tax returns, banking, medical records, family photos. Encryption is free and one-time setup. With it, a stolen laptop is just a hardware loss — not an identity-theft disaster.</p>
           </CardContent>
         </Card>
       </main>

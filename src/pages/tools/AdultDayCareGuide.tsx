@@ -19,7 +19,7 @@ export default function AdultDayCareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is adult day care?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drop-off care 4-10 hrs/day, weekdays.</li>
               <li>Activities, meals, social time.</li>
               <li>Senior comes home at night.</li>
@@ -33,7 +33,7 @@ export default function AdultDayCareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">3 main types</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Social model</strong> — for active seniors. Activities, meals, friends.</li>
               <li><strong>Medical model (ADHC)</strong> — for those needing nursing help. Medication management, PT.</li>
               <li><strong>Specialized dementia care</strong> — secure, dementia-trained staff.</li>
@@ -45,7 +45,7 @@ export default function AdultDayCareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Average: $80-100/day. $20K-25K/year.</li>
               <li>1/3 cost of in-home aide.</li>
               <li>1/4 cost of assisted living.</li>
@@ -60,7 +60,7 @@ export default function AdultDayCareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find one</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Eldercare Locator</strong> — eldercare.acl.gov / 1-800-677-1116. FREE.</li>
               <li><strong>Area Agency on Aging</strong> — local list.</li>
               <li><strong>NADSA</strong> — nadsa.org. National directory.</li>
@@ -74,7 +74,7 @@ export default function AdultDayCareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tour checklist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Staff-to-client ratio (1:6 minimum, 1:4 for dementia).</li>
               <li>Staff training in dementia + first aid.</li>
               <li>Activities calendar — varied, engaging.</li>
@@ -91,7 +91,7 @@ export default function AdultDayCareGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">PACE: best-kept secret</h3>
-            <p className="text-sm text-muted-foreground"><strong>PACE (Program of All-Inclusive Care for the Elderly)</strong> — Medicare/Medicaid program. Covers ALL care: doctor, day care, meals, transport, in-home help. For seniors who&apos;d otherwise need nursing home but stay home. 270+ programs in 32 states. npaonline.org to find. Often FREE if Medicaid-eligible.</p>
+            <p className="text-base text-muted-foreground"><strong>PACE (Program of All-Inclusive Care for the Elderly)</strong> — Medicare/Medicaid program. Covers ALL care: doctor, day care, meals, transport, in-home help. For seniors who&apos;d otherwise need nursing home but stay home. 270+ programs in 32 states. npaonline.org to find. Often FREE if Medicaid-eligible.</p>
           </CardContent>
         </Card>
       </main>

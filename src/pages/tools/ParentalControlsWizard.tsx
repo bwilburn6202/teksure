@@ -285,7 +285,7 @@ export default function ParentalControlsWizard() {
                 <CardContent className="p-5 flex items-center justify-between gap-4 flex-wrap">
                   <div>
                     <h4 className="font-semibold mb-1">Official setup guide</h4>
-                    <p className="text-sm text-muted-foreground">For screenshots and the latest version, check the official documentation.</p>
+                    <p className="text-base text-muted-foreground">For screenshots and the latest version, check the official documentation.</p>
                   </div>
                   <Button asChild>
                     <a href={selectedPlatform.officialLink.url} target="_blank" rel="noopener noreferrer">

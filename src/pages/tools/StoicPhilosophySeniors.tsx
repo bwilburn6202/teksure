@@ -19,7 +19,7 @@ export default function StoicPhilosophySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Core principles</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Control what you can</strong> — your reactions. Accept what you can&apos;t.</li>
               <li><strong>Memento mori</strong> — &quot;Remember you must die.&quot; Live well now.</li>
               <li><strong>Negative visualization</strong> — picture losing what you have. Appreciate more.</li>
@@ -33,7 +33,7 @@ export default function StoicPhilosophySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior-friendly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Acceptance of aging + mortality = peace.</li>
               <li>Letting go of what you can&apos;t control.</li>
               <li>Wisdom over busyness.</li>
@@ -48,7 +48,7 @@ export default function StoicPhilosophySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best books to start</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Meditations</strong> — Marcus Aurelius. Roman emperor&apos;s journal.</li>
               <li><strong>Letters from a Stoic</strong> — Seneca.</li>
               <li><strong>Discourses</strong> — Epictetus.</li>
@@ -62,7 +62,7 @@ export default function StoicPhilosophySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily practices</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Morning</strong> — preview day. What might go wrong? How will you respond?</li>
               <li><strong>Evening</strong> — review day. What did I do well? What can I improve?</li>
               <li><strong>When upset</strong> — &quot;Is this in my control?&quot; If no, accept.</li>
@@ -76,7 +76,7 @@ export default function StoicPhilosophySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free podcasts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>The Daily Stoic Podcast</strong> — Ryan Holiday.</li>
               <li><strong>Practical Stoicism</strong> — Tanner Campbell.</li>
               <li><strong>Stoic Meditations</strong> — Massimo Pigliucci.</li>
@@ -90,7 +90,7 @@ export default function StoicPhilosophySeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Compatible with faith</h3>
-            <p className="text-sm text-muted-foreground">Stoicism = practical, not religious. Many Christians, Jews, Muslims, Buddhists, atheists practice. Marcus Aurelius&apos; <em>Meditations</em> — most quoted philosophy book by spiritual leaders. Complements any faith. Adds practical resilience tools.</p>
+            <p className="text-base text-muted-foreground">Stoicism = practical, not religious. Many Christians, Jews, Muslims, Buddhists, atheists practice. Marcus Aurelius&apos; <em>Meditations</em> — most quoted philosophy book by spiritual leaders. Complements any faith. Adds practical resilience tools.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function CaptioningCallSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is captioned phone service?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone shows real-time captions of caller&apos;s speech.</li>
               <li>Read what they say while listening.</li>
               <li>Federally subsidized — FREE for hearing-impaired.</li>
@@ -33,7 +33,7 @@ export default function CaptioningCallSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">CapTel</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most popular service.</li>
               <li>Captioned phone — free with hearing loss.</li>
               <li>Big screen for reading captions.</li>
@@ -47,7 +47,7 @@ export default function CaptioningCallSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">ClearCaptions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Similar to CapTel — free phone.</li>
               <li>App version for smartphones.</li>
               <li>Same FCC eligibility rules.</li>
@@ -61,7 +61,7 @@ export default function CaptioningCallSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hamilton CapTel</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Available on phone, mobile app, computer.</li>
               <li>Free service for those who qualify.</li>
               <li>Same FCC subsidy.</li>
@@ -75,7 +75,7 @@ export default function CaptioningCallSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How qualifying works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Need verified hearing loss.</li>
               <li>Medical professional signs form.</li>
               <li>Audiologist, doctor, hearing specialist all qualify.</li>
@@ -89,7 +89,7 @@ export default function CaptioningCallSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free smartphone captioning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone Live Listen — pairs with AirPods.</li>
               <li>iOS 16+: Live Captions for any audio.</li>
               <li>Android Live Caption — free, built-in.</li>
@@ -103,7 +103,7 @@ export default function CaptioningCallSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free service most don&apos;t know about</h3>
-            <p className="text-sm text-muted-foreground">If you have hearing loss, captioned phone service is FREE thanks to FCC subsidies — yet most people don&apos;t know it exists. You get a free captioned phone (or use the app on your existing smartphone). Captions appear in real-time as the caller speaks. Apply through CapTel, ClearCaptions, or Hamilton CapTel. Your doctor signs a quick form. Within 2 weeks you have a phone that works for hearing loss.</p>
+            <p className="text-base text-muted-foreground">If you have hearing loss, captioned phone service is FREE thanks to FCC subsidies — yet most people don&apos;t know it exists. You get a free captioned phone (or use the app on your existing smartphone). Captions appear in real-time as the caller speaks. Apply through CapTel, ClearCaptions, or Hamilton CapTel. Your doctor signs a quick form. Within 2 weeks you have a phone that works for hearing loss.</p>
           </CardContent>
         </Card>
       </main>

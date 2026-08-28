@@ -19,7 +19,7 @@ export default function EthernetVsWifi() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use Ethernet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Smart TV</strong> — streaming 4K is much smoother on cable.</li>
               <li><strong>Desktop computer</strong> — wired is faster + steadier.</li>
               <li><strong>Game console</strong> — kids&apos; gaming benefits.</li>
@@ -33,7 +33,7 @@ export default function EthernetVsWifi() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use WiFi</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phones, iPads, laptops (mobility).</li>
               <li>Smart home devices (Echo, smart bulbs).</li>
               <li>Anything you carry around.</li>
@@ -45,7 +45,7 @@ export default function EthernetVsWifi() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">No nearby ethernet outlet?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Long ethernet cable</strong> — $10-30 for 50ft. Run along baseboards.</li>
               <li><strong>Powerline adapters</strong> — TP-Link AV2000 ($60). Use HOUSE WIRING as ethernet.</li>
               <li><strong>MoCA adapter</strong> — uses COAX (TV cable wires) as ethernet. Best for older homes.</li>
@@ -57,7 +57,7 @@ export default function EthernetVsWifi() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cable choice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cat6</strong> — supports gigabit. Most homes. $1/ft.</li>
               <li><strong>Cat6a / Cat7</strong> — for 10+ Gigabit. Overkill for most homes.</li>
               <li><strong>Cat5e</strong> — older, still works for most home use.</li>
@@ -70,7 +70,7 @@ export default function EthernetVsWifi() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best ROI: TV ethernet</h3>
-            <p className="text-sm text-muted-foreground">Smart TV on ethernet = stable streaming. No buffering. No "sorry, video paused" interruptions during the game. $20 cable + 5 min run = best WiFi upgrade for many seniors.</p>
+            <p className="text-base text-muted-foreground">Smart TV on ethernet = stable streaming. No buffering. No "sorry, video paused" interruptions during the game. $20 cable + 5 min run = best WiFi upgrade for many seniors.</p>
           </CardContent>
         </Card>
       </main>

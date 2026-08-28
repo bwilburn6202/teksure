@@ -41,7 +41,7 @@ export default function OnlineFaxCoach() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function OnlineFaxCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How online fax works</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign up for a service. Get an online fax number.</li>
               <li>To SEND: take a photo or PDF of the document. Email it (with the recipient\'s fax number in the to: field) OR upload through their app.</li>
               <li>Service converts to fax format and dials the recipient\'s machine.</li>
@@ -76,7 +76,7 @@ export default function OnlineFaxCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — sometimes a portal works instead</h3>
-            <p className="text-sm text-muted-foreground">Before paying for a fax service, ask the doctor\'s office: "Can I upload through your patient portal instead?" Most offices accept secure messages through MyChart or similar — no fax needed.</p>
+            <p className="text-base text-muted-foreground">Before paying for a fax service, ask the doctor\'s office: "Can I upload through your patient portal instead?" Most offices accept secure messages through MyChart or similar — no fax needed.</p>
           </CardContent>
         </Card>
       </main>

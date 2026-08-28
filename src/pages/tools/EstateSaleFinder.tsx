@@ -32,7 +32,7 @@ export default function EstateSaleFinder() {
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{s.name}</h3>
                 <p className="text-sm">{s.what}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,7 +56,7 @@ export default function EstateSaleFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When YOU need to sell an estate</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NASMM Senior Move Manager</strong> — coordinates entire process. (See our Senior Downsizing tool.)</li>
               <li><strong>Estate sale company</strong> — runs sale for 25-40% commission. Find one rated highly on EstateSales.net.</li>
               <li><strong>Maxsold / Everything But the House</strong> — online auction, no in-person foot traffic.</li>
@@ -69,7 +69,7 @@ export default function EstateSaleFinder() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tip for buyers</h3>
-            <p className="text-sm text-muted-foreground">Last day of an estate sale is usually 50% off. Walk away from anything overpriced — and come back the last day. Items still there often go cheap.</p>
+            <p className="text-base text-muted-foreground">Last day of an estate sale is usually 50% off. Walk away from anything overpriced — and come back the last day. Items still there often go cheap.</p>
           </CardContent>
         </Card>
       </main>

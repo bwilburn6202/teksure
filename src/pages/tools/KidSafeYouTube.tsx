@@ -19,7 +19,7 @@ export default function KidSafeYouTube() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouTube Kids vs YouTube</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YouTube Kids</strong> — separate app. Filtered library. 4 age levels. Free.</li>
               <li><strong>Regular YouTube</strong> — even with "restricted mode", lots slips through.</li>
               <li>Recommendation: Kids app for under-10. Real YouTube only with adult co-watching.</li>
@@ -30,7 +30,7 @@ export default function KidSafeYouTube() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup YouTube Kids</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Download "YouTube Kids" app.</li>
               <li>Set up parent profile with your Google login + PIN.</li>
               <li>Add child profile — name, age range.</li>
@@ -45,7 +45,7 @@ export default function KidSafeYouTube() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Approved channels for grandparents</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sesame Street</strong> (preschool, classic).</li>
               <li><strong>Bluey</strong> (preschool, gentle Australian dog family).</li>
               <li><strong>SciShow Kids</strong> (5-12, science).</li>
@@ -62,7 +62,7 @@ export default function KidSafeYouTube() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Channels to AVOID</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Unboxing" videos — pure consumerism, kids beg for stuff.</li>
               <li>YouTube "Shorts" — addictive scroll like TikTok.</li>
               <li>Random "kids&apos; songs" channels — many are AI-generated, weird, sometimes inappropriate.</li>
@@ -76,7 +76,7 @@ export default function KidSafeYouTube() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Better than YouTube</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>PBS Kids app</strong> — free, ad-free, all educational.</li>
               <li><strong>Common Sense Media list of best apps</strong>.</li>
               <li><strong>Disney+ / Apple TV+</strong> — paid but quality controls.</li>
@@ -89,7 +89,7 @@ export default function KidSafeYouTube() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Talk to parents</h3>
-            <p className="text-sm text-muted-foreground">Different families have different rules. Before letting grandkids watch — ask "what does your mom/dad let you watch?" Then add to the approved list yourself. Avoids "Mom never lets me watch this!" complaints.</p>
+            <p className="text-base text-muted-foreground">Different families have different rules. Before letting grandkids watch — ask "what does your mom/dad let you watch?" Then add to the approved list yourself. Avoids "Mom never lets me watch this!" complaints.</p>
           </CardContent>
         </Card>
       </main>

@@ -58,7 +58,7 @@ export default function ChargerCableIdentifier() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-1">Quick way to tell</h2>
-            <p className="text-sm text-muted-foreground">Most charging cables have <strong>two different ends</strong>. The big rectangle end (USB-A) plugs into the wall block. The OTHER end is the one that matches your device — that's the one we're naming below.</p>
+            <p className="text-base text-muted-foreground">Most charging cables have <strong>two different ends</strong>. The big rectangle end (USB-A) plugs into the wall block. The OTHER end is the one that matches your device — that's the one we're naming below.</p>
           </CardContent>
         </Card>
 
@@ -70,7 +70,7 @@ export default function ChargerCableIdentifier() {
                   <div className="flex justify-between items-start gap-3">
                     <div>
                       <h3 className="font-bold text-lg mb-1">{c.name}</h3>
-                      <p className="text-sm text-muted-foreground">{c.shape}</p>
+                      <p className="text-base text-muted-foreground">{c.shape}</p>
                     </div>
                     <span className="text-sm text-primary font-medium shrink-0">{open === c.id ? 'Hide' : 'Details'}</span>
                   </div>
@@ -95,7 +95,7 @@ export default function ChargerCableIdentifier() {
         <Card className="mt-6 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Buying a replacement?</h3>
-            <p className="text-sm text-muted-foreground">Bring the OLD cable to the store, or take a clear photo of the end that plugs into your device. Staff at any phone store can match it.</p>
+            <p className="text-base text-muted-foreground">Bring the OLD cable to the store, or take a clear photo of the end that plugs into your device. Staff at any phone store can match it.</p>
           </CardContent>
         </Card>
       </main>

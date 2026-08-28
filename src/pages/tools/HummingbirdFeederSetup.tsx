@@ -19,7 +19,7 @@ export default function HummingbirdFeederSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Right feeder picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Aspects HummZinger</strong> — $20. Easy to clean, ant moat built-in.</li>
               <li><strong>Perky-Pet Glass</strong> — $15. Classic, holds more.</li>
               <li><strong>First Nature 8oz</strong> — $10. Cheap + works great.</li>
@@ -33,7 +33,7 @@ export default function HummingbirdFeederSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY nectar (4:1 ratio)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 part REGULAR white sugar.</li>
               <li>4 parts water.</li>
               <li>Boil 1-2 minutes — kills mold.</li>
@@ -49,7 +49,7 @@ export default function HummingbirdFeederSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cleaning routine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Replace nectar every 4-5 days (more often if hot).</li>
               <li>Mold = sick birds = won&apos;t come back.</li>
               <li>Wash with hot water + mild soap weekly.</li>
@@ -63,7 +63,7 @@ export default function HummingbirdFeederSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to hang</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Window-view location — enjoy from inside.</li>
               <li>4-5 feet off ground.</li>
               <li>Near (not in) bushes for hiding spots.</li>
@@ -77,7 +77,7 @@ export default function HummingbirdFeederSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Native plants attract more</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bee balm</strong> — perennial favorite.</li>
               <li><strong>Salvia</strong> — many varieties.</li>
               <li><strong>Trumpet vine</strong> — climbing favorite.</li>
@@ -92,7 +92,7 @@ export default function HummingbirdFeederSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Migration timing</h3>
-            <p className="text-sm text-muted-foreground">Hummingbirds migrate. Put feeders out 1-2 weeks before they typically arrive. Track migration at Hummingbird Central. East coast: Ruby-throated. West coast: Anna&apos;s, Allen&apos;s, Rufous. Take down 2 weeks after last sighting in fall (myth they need feeders to migrate — they don&apos;t).</p>
+            <p className="text-base text-muted-foreground">Hummingbirds migrate. Put feeders out 1-2 weeks before they typically arrive. Track migration at Hummingbird Central. East coast: Ruby-throated. West coast: Anna&apos;s, Allen&apos;s, Rufous. Take down 2 weeks after last sighting in fall (myth they need feeders to migrate — they don&apos;t).</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function SheetMusicAppsDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why digital sheet music?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No more searching for lost paper music.</li>
               <li>Adjust text size — easier on eyes.</li>
               <li>Auto-page-turn with foot pedal.</li>
@@ -33,7 +33,7 @@ export default function SheetMusicAppsDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Musicnotes — buy individual</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 million+ songs available.</li>
               <li>$5–$10 per song typically.</li>
               <li>Choose key + difficulty version.</li>
@@ -47,7 +47,7 @@ export default function SheetMusicAppsDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sheet Music Plus</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Largest sheet music store.</li>
               <li>Both physical + digital.</li>
               <li>Classical to current pop.</li>
@@ -61,7 +61,7 @@ export default function SheetMusicAppsDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">forScore — best reader app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$19.99 one-time on iPad.</li>
               <li>Best digital sheet music reader.</li>
               <li>Annotate with stylus or finger.</li>
@@ -75,7 +75,7 @@ export default function SheetMusicAppsDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free sheet music sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>IMSLP — public domain classical, completely free.</li>
               <li>MuseScore — community-contributed, mostly free.</li>
               <li>Public library — many lend physical sheet music.</li>
@@ -89,7 +89,7 @@ export default function SheetMusicAppsDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tablet setup for sheet music</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPad — best for sheet music apps.</li>
               <li>10-inch+ screen better for reading.</li>
               <li>Music stand tablet holder — under $20.</li>
@@ -103,7 +103,7 @@ export default function SheetMusicAppsDigital() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with IMSLP free</h3>
-            <p className="text-sm text-muted-foreground">If you play classical or hymns, IMSLP.org is incredible — every public-domain piece ever published, available free as PDF. Bach, Beethoven, Chopin, all the hymns. Download to your tablet, view in any PDF reader. No app or subscription needed. For modern songs, Musicnotes is the standard. Eventually consider forScore if you become a serious tablet musician.</p>
+            <p className="text-base text-muted-foreground">If you play classical or hymns, IMSLP.org is incredible — every public-domain piece ever published, available free as PDF. Bach, Beethoven, Chopin, all the hymns. Download to your tablet, view in any PDF reader. No app or subscription needed. For modern songs, Musicnotes is the standard. Eventually consider forScore if you become a serious tablet musician.</p>
           </CardContent>
         </Card>
       </main>

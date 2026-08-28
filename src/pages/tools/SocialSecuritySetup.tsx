@@ -161,7 +161,7 @@ export default function SocialSecuritySetup() {
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <p className="text-sm font-semibold mb-3">Useful direct links</p>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-base">
                 <li><a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">ssa.gov/myaccount <ExternalLink className="h-3 w-3" /></a> — main login</li>
                 <li><a href="https://secure.ssa.gov/RIL/SiView.do" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">Estimate Benefits <ExternalLink className="h-3 w-3" /></a> — public calculator (no account needed)</li>
                 <li><a href="https://faq.ssa.gov" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">faq.ssa.gov <ExternalLink className="h-3 w-3" /></a> — official FAQs</li>

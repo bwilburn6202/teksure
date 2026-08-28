@@ -19,7 +19,7 @@ export default function HappyHourFinderApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tap.so</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find happy hour deals near you.</li>
               <li>Free app.</li>
               <li>Filter by drink, food, time.</li>
@@ -33,7 +33,7 @@ export default function HappyHourFinderApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Yelp happy hour filter</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search &quot;happy hour&quot; in Yelp.</li>
               <li>Filter by current time.</li>
               <li>See deals at restaurants.</li>
@@ -47,7 +47,7 @@ export default function HappyHourFinderApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior early-bird deals</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many restaurants have early-bird specials.</li>
               <li>Often 4-6pm.</li>
               <li>Fixed-price 2-3 course meals.</li>
@@ -61,7 +61,7 @@ export default function HappyHourFinderApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Restaurant-specific deals</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Olive Garden — early dinner $9.99.</li>
               <li>Applebee&apos;s — late afternoon specials.</li>
               <li>IHOP — 55+ menu daily.</li>
@@ -75,7 +75,7 @@ export default function HappyHourFinderApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Always ask</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many discounts not advertised.</li>
               <li>Ask: &quot;Senior discount?&quot;</li>
               <li>Ask: &quot;Any specials today?&quot;</li>
@@ -89,7 +89,7 @@ export default function HappyHourFinderApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Restaurant.com</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pre-buy restaurant gift certificates.</li>
               <li>$25 cert for $10 typical.</li>
               <li>Hundreds of restaurants.</li>
@@ -103,7 +103,7 @@ export default function HappyHourFinderApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Always ask first</h3>
-            <p className="text-sm text-muted-foreground">Best money-saving habit at restaurants: always ask for senior discount. Many places have unadvertised senior pricing — 10-20% off. Combined with happy hour timing (4-6pm) and AARP discounts at chains, dinner out can cost 30-50% less than peak times. Apps help find deals; asking confirms them.</p>
+            <p className="text-base text-muted-foreground">Best money-saving habit at restaurants: always ask for senior discount. Many places have unadvertised senior pricing — 10-20% off. Combined with happy hour timing (4-6pm) and AARP discounts at chains, dinner out can cost 30-50% less than peak times. Apps help find deals; asking confirms them.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function WriteYourMemoir() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy services that do it for you</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>StoryWorth</strong> — $99/yr. Weekly question, year-end book.</li>
               <li><strong>Remento</strong> — record voice answers, AI transcribes.</li>
               <li><strong>Storypath</strong> — guided life story prompts.</li>
@@ -33,7 +33,7 @@ export default function WriteYourMemoir() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY memoir approach</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30 minutes/day — much easier than &quot;writing a book.&quot;</li>
               <li>Voice memo while walking or driving.</li>
               <li>One memory at a time — no chronological order needed.</li>
@@ -47,7 +47,7 @@ export default function WriteYourMemoir() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Memory prompts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Earliest childhood memory.</li>
               <li>Your parents — what made them special.</li>
               <li>School memories.</li>
@@ -65,7 +65,7 @@ export default function WriteYourMemoir() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice-to-text tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone Voice Memos</strong> — record + transcribe (free).</li>
               <li><strong>Otter.ai</strong> — free + AI transcription.</li>
               <li><strong>Google Docs Voice Typing</strong> — free.</li>
@@ -79,7 +79,7 @@ export default function WriteYourMemoir() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Self-publish</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Amazon KDP</strong> — print on demand, FREE to publish.</li>
               <li><strong>Lulu</strong> — quality printing, family copies.</li>
               <li><strong>Blurb</strong> — photo books, premium.</li>
@@ -94,7 +94,7 @@ export default function WriteYourMemoir() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t wait until perfect</h3>
-            <p className="text-sm text-muted-foreground">Most family memoirs never finish. Imperfect + complete &gt; perfect + never. Quick story bullet points beat polished prose. Start TODAY with one memory. Family will treasure rough draft over no draft. Many seniors regret not asking parents — be the answer for your kids.</p>
+            <p className="text-base text-muted-foreground">Most family memoirs never finish. Imperfect + complete &gt; perfect + never. Quick story bullet points beat polished prose. Start TODAY with one memory. Family will treasure rough draft over no draft. Many seniors regret not asking parents — be the answer for your kids.</p>
           </CardContent>
         </Card>
       </main>

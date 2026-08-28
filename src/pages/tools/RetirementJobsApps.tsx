@@ -48,7 +48,7 @@ export default function RetirementJobsApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -88,7 +88,7 @@ export default function RetirementJobsApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Watch out for job scams</h3>
-            <p className="text-sm text-muted-foreground">"Work from home, $4000 a week, just deposit our check and send back the difference" — always a scam. Real employers never pay you upfront, never ask you to buy gift cards, never need you to wire money. Stick to known sites and verify the company on BBB.</p>
+            <p className="text-base text-muted-foreground">"Work from home, $4000 a week, just deposit our check and send back the difference" — always a scam. Real employers never pay you upfront, never ask you to buy gift cards, never need you to wire money. Stick to known sites and verify the company on BBB.</p>
           </CardContent>
         </Card>
       </main>

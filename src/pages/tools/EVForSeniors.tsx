@@ -33,7 +33,7 @@ export default function EVForSeniors() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function EVForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors love EVs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>QUIET — easier on hearing.</li>
               <li>One pedal driving — easy on arthritic feet.</li>
               <li>No gas station stops.</li>
@@ -57,7 +57,7 @@ export default function EVForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Charging at home</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plug into regular 120V outlet — slow but works.</li>
               <li>Level 2 charger ($500-1K + $1K install) — full charge overnight.</li>
               <li>Like charging your phone — every night.</li>
@@ -71,7 +71,7 @@ export default function EVForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">EV tax credits 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$7,500 federal tax credit on new EVs (income limits).</li>
               <li>$4,000 used EV credit.</li>
               <li>Many states add $1K-5K extra.</li>
@@ -84,7 +84,7 @@ export default function EVForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Range anxiety reality</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most EVs go 250-300 miles per charge.</li>
               <li>Average senior drives 20-30 miles/day.</li>
               <li>Snowbirds: PlugShare app shows charging stations.</li>
@@ -98,7 +98,7 @@ export default function EVForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try one</h3>
-            <p className="text-sm text-muted-foreground">Test drive 2-3 EVs. Tesla service different (no traditional dealer). Used EV often half new price + same tech. Hertz/Enterprise rents EVs — try on a road trip first. Don&apos;t buy early model — battery tech improving fast.</p>
+            <p className="text-base text-muted-foreground">Test drive 2-3 EVs. Tesla service different (no traditional dealer). Used EV often half new price + same tech. Hertz/Enterprise rents EVs — try on a road trip first. Don&apos;t buy early model — battery tech improving fast.</p>
           </CardContent>
         </Card>
       </main>

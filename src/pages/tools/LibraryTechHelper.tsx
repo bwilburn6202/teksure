@@ -1467,7 +1467,7 @@ export default function LibraryTechHelper() {
                         </div>
                       </div>
 
-                      <div className="space-y-2 text-sm">
+                      <div className="space-y-2 text-base">
                         <div className="flex gap-2">
                           <Badge variant="outline" className="shrink-0">Content</Badge>
                           <span className="text-base leading-relaxed">{app.content}</span>

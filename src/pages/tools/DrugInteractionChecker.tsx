@@ -26,7 +26,7 @@ export default function DrugInteractionChecker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free online checkers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Drugs.com Interaction Checker</strong> — biggest, most-trusted. Type in EVERY medication, vitamin, supplement, and OTC. Shows interactions, severity, food/alcohol notes.</li>
               <li><strong>MedlinePlus (medlineplus.gov)</strong> — official US government drug info. Plain-English drug summaries.</li>
               <li><strong>WebMD Interaction Checker</strong> — similar to Drugs.com.</li>
@@ -46,7 +46,7 @@ export default function DrugInteractionChecker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common dangerous interactions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Warfarin (blood thinner)</strong> + many things — vitamin K, NSAIDs, certain antibiotics. Big bleeding risk.</li>
               <li><strong>Statins (cholesterol)</strong> + grapefruit — drives statin levels too high.</li>
               <li><strong>SSRIs (antidepressants)</strong> + tramadol or migraine triptans — risk of serotonin syndrome.</li>
@@ -69,7 +69,7 @@ export default function DrugInteractionChecker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">Keep an UP-TO-DATE list in your wallet AND on your iPhone\'s Medical ID. Every medication, every supplement, every dose. Share with every doctor every visit. Most medication mistakes happen because one doctor doesn\'t know what another prescribed.</p>
+            <p className="text-base text-muted-foreground">Keep an UP-TO-DATE list in your wallet AND on your iPhone\'s Medical ID. Every medication, every supplement, every dose. Share with every doctor every visit. Most medication mistakes happen because one doctor doesn\'t know what another prescribed.</p>
           </CardContent>
         </Card>
       </main>

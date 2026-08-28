@@ -33,7 +33,7 @@ export default function CoffeeMakerForSeniors() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function CoffeeMakerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One button operation.</li>
               <li>Auto-off after 2 hours.</li>
               <li>Removable water reservoir (easier fill).</li>
@@ -57,7 +57,7 @@ export default function CoffeeMakerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pod machines pros + cons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pros</strong> — easiest, no measuring, single cup, no cleanup.</li>
               <li><strong>Cons</strong> — pods $0.50-1 each (vs $0.10/drip), waste, fewer flavor options.</li>
               <li>Reusable pod ($10) lets you use ground coffee — saves money.</li>
@@ -70,7 +70,7 @@ export default function CoffeeMakerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Maintenance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Descale every 3 months — vinegar + water cycles.</li>
               <li>Clean carafe + filter basket weekly.</li>
               <li>Replace water filter (if has one) every 3 months.</li>
@@ -83,7 +83,7 @@ export default function CoffeeMakerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Coffee tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Costco Kirkland Signature coffee — high quality, great price.</li>
               <li>Trader Joe&apos;s coffee — quality + cheap.</li>
               <li>Buy beans, grind fresh = better — but more work.</li>
@@ -97,7 +97,7 @@ export default function CoffeeMakerForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Coffee + health</h3>
-            <p className="text-sm text-muted-foreground">2-3 cups/day = healthy for most seniors. Reduces dementia + Type 2 diabetes risk. Skip if BP issues, sleep problems, or your doctor says. Avoid sugary creamers — adds 100+ calories/cup. Black coffee or splash of milk best.</p>
+            <p className="text-base text-muted-foreground">2-3 cups/day = healthy for most seniors. Reduces dementia + Type 2 diabetes risk. Skip if BP issues, sleep problems, or your doctor says. Avoid sugary creamers — adds 100+ calories/cup. Black coffee or splash of milk best.</p>
           </CardContent>
         </Card>
       </main>

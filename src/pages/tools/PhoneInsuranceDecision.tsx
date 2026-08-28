@@ -198,7 +198,7 @@ export default function PhoneInsuranceDecision() {
                     {result.recommendation === 'skip' && `Skip ${result.label.split(' (')[0]}`}
                     {result.recommendation === 'consider' && `It is close — ${result.label} could go either way`}
                   </h2>
-                  <p className="text-sm text-muted-foreground">{result.reason}</p>
+                  <p className="text-base text-muted-foreground">{result.reason}</p>
                 </CardContent>
               </Card>
 

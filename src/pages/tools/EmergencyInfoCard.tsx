@@ -1341,7 +1341,7 @@ export default function EmergencyInfoCard() {
               <FileText className="h-6 w-6 text-rose-600 shrink-0 mt-0.5" aria-hidden />
               <div>
                 <h3 className="font-semibold text-lg">Digital Will Template</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   The accounts your family will need — in one printable document.
                 </p>
               </div>
@@ -1353,7 +1353,7 @@ export default function EmergencyInfoCard() {
               <Pill className="h-6 w-6 text-rose-600 shrink-0 mt-0.5" aria-hidden />
               <div>
                 <h3 className="font-semibold text-lg">Medication Reminder Setup</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Set phone reminders for every prescription so you never miss a dose.
                 </p>
               </div>
@@ -1365,7 +1365,7 @@ export default function EmergencyInfoCard() {
               <BookOpen className="h-6 w-6 text-rose-600 shrink-0 mt-0.5" aria-hidden />
               <div>
                 <h3 className="font-semibold text-lg">All Safety Guides</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Plain-English guides on staying safe at home, online, and on the road.
                 </p>
               </div>

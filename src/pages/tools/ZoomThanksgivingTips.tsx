@@ -19,7 +19,7 @@ export default function ZoomThanksgivingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick the right tool</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Zoom</strong> — works on everything. Free 40-min for groups (or pay $15/mo unlimited).</li>
               <li><strong>FaceTime Group</strong> — if everyone iPhone. Up to 32 people. Free.</li>
               <li><strong>Google Meet</strong> — free, works in browser. Up to 100 people.</li>
@@ -32,7 +32,7 @@ export default function ZoomThanksgivingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup BEFORE the day</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Schedule meeting + send link a week ahead.</li>
               <li>Test call WITH grandparents 2 days before.</li>
               <li>Prop iPad/laptop on counter facing dining room.</li>
@@ -46,7 +46,7 @@ export default function ZoomThanksgivingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Make it joyful</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set a START + END time. 1-2 hours max.</li>
               <li>Have a HOST who picks who speaks.</li>
               <li>Include the meal — turn camera around for "show your plate".</li>
@@ -60,7 +60,7 @@ export default function ZoomThanksgivingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid these problems</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Mute when not speaking" rule — kills feedback noise.</li>
               <li>Backlit grandparents — face dark. Light should be ON face.</li>
               <li>Bad audio — wired earbuds work better than computer speakers.</li>
@@ -73,7 +73,7 @@ export default function ZoomThanksgivingTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">It&apos;s OK to keep it short</h3>
-            <p className="text-sm text-muted-foreground">15-30 min calls beat awkward 2-hour ones. Match in-person family rhythm. Older folks tire on long calls. Quality beats quantity. Better to have great 20 min than mediocre 90 min.</p>
+            <p className="text-base text-muted-foreground">15-30 min calls beat awkward 2-hour ones. Match in-person family rhythm. Older folks tire on long calls. Quality beats quantity. Better to have great 20 min than mediocre 90 min.</p>
           </CardContent>
         </Card>
       </main>

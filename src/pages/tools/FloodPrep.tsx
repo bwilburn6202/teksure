@@ -19,7 +19,7 @@ export default function FloodPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Flood insurance is SEPARATE</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Standard homeowners does NOT cover flood.</li>
               <li>Federal NFIP via FEMA — most common.</li>
               <li>Cost: $400-2,500/year depending on zone.</li>
@@ -33,7 +33,7 @@ export default function FloodPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before flood</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Check FEMA flood zone — fema.gov/flood-maps.</li>
               <li>Move valuables to upper floors.</li>
               <li>Sandbags from town if available.</li>
@@ -49,7 +49,7 @@ export default function FloodPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">During</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Don&apos;t drive through water</strong> — 6 inches sweeps cars away.</li>
               <li>"Turn around — Don&apos;t drown" — National Weather Service motto.</li>
               <li>If water rising — go UP not out.</li>
@@ -63,7 +63,7 @@ export default function FloodPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After flood</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t enter home until cleared safe.</li>
               <li>Photograph EVERYTHING for insurance + FEMA.</li>
               <li>File claim within 60 days for NFIP.</li>
@@ -77,7 +77,7 @@ export default function FloodPrep() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">FEMA disaster assistance</h3>
-            <p className="text-sm text-muted-foreground">After major flood, FEMA aid available even without flood insurance. Up to $40K+ for severe damage. Apply at <strong>disasterassistance.gov</strong> or 1-800-621-3362. Many seniors miss this — apply quickly.</p>
+            <p className="text-base text-muted-foreground">After major flood, FEMA aid available even without flood insurance. Up to $40K+ for severe damage. Apply at <strong>disasterassistance.gov</strong> or 1-800-621-3362. Many seniors miss this — apply quickly.</p>
           </CardContent>
         </Card>
       </main>

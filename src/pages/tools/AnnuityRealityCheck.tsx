@@ -26,7 +26,7 @@ export default function AnnuityRealityCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annuity types</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SPIA (Single Premium Immediate Annuity)</strong> — give insurance company $X, get $Y/month for life. Simple. Sometimes useful.</li>
               <li><strong>Deferred Income Annuity (DIA)</strong> — buy now, payments start later. Inflation hedge.</li>
               <li><strong>Fixed annuity</strong> — like CD with insurance company. OK if rates are good.</li>
@@ -39,7 +39,7 @@ export default function AnnuityRealityCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When SPIA makes sense</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You worry about outliving money.</li>
               <li>You don&apos;t have pension.</li>
               <li>You want guaranteed income beyond Social Security.</li>
@@ -54,7 +54,7 @@ export default function AnnuityRealityCheck() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annuity sales red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Free dinner seminar" — high-pressure sales.</li>
               <li>"Guaranteed 7%" — usually has caveats.</li>
               <li>"You can&apos;t lose money" — true but inflation eats real return.</li>
@@ -69,7 +69,7 @@ export default function AnnuityRealityCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you already bought an annuity</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read the contract — know surrender period + charges.</li>
               <li>Some have 30-day "free look" period — cancel, get money back.</li>
               <li>Get fee-only advisor opinion before doing anything else.</li>
@@ -82,7 +82,7 @@ export default function AnnuityRealityCheck() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When to walk away</h3>
-            <p className="text-sm text-muted-foreground">If annuity has 7+ year surrender period, 5%+ commission, or M&amp;E (mortality expense) over 1.5% — walk away. Talk to fee-only fiduciary (NAPFA.org). They sell ZERO annuities + give honest advice. Pay $200-500 for unbiased opinion.</p>
+            <p className="text-base text-muted-foreground">If annuity has 7+ year surrender period, 5%+ commission, or M&amp;E (mortality expense) over 1.5% — walk away. Talk to fee-only fiduciary (NAPFA.org). They sell ZERO annuities + give honest advice. Pay $200-500 for unbiased opinion.</p>
           </CardContent>
         </Card>
       </main>

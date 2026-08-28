@@ -35,7 +35,7 @@ export default function HomeFitnessSubscriptions() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -70,7 +70,7 @@ export default function HomeFitnessSubscriptions() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">Try Apple Fitness+ free trial OR a week of YouTube\'s "yoga for seniors". 7 days will tell you if you like the format. Then pick the cheapest one that fits.</p>
+            <p className="text-base text-muted-foreground">Try Apple Fitness+ free trial OR a week of YouTube\'s "yoga for seniors". 7 days will tell you if you like the format. Then pick the cheapest one that fits.</p>
           </CardContent>
         </Card>
       </main>

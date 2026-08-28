@@ -19,7 +19,7 @@ export default function WarbyParkerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Warby Parker?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Glasses start at $95 with prescription lenses included.</li>
               <li>5-day free home try-on — 5 frames sent to you.</li>
               <li>Or visit retail stores (250+ nationwide).</li>
@@ -33,7 +33,7 @@ export default function WarbyParkerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Home try-on process</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Browse frames at WarbyParker.com.</li>
               <li>Select 5 frames you like.</li>
               <li>Receive in 1–2 days, free shipping both ways.</li>
@@ -47,7 +47,7 @@ export default function WarbyParkerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pricing breakdown</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Single-vision glasses: $95.</li>
               <li>Progressive lenses: +$200 (~$295 total).</li>
               <li>Blue-light filtering: +$50.</li>
@@ -61,7 +61,7 @@ export default function WarbyParkerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance + Medicare</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Accepts most vision insurance plans.</li>
               <li>Submits claims for you.</li>
               <li>Medicare doesn&apos;t typically cover glasses.</li>
@@ -75,7 +75,7 @@ export default function WarbyParkerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheaper alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Zenni Optical — $9 frames + lenses (cheapest).</li>
               <li>EyeBuyDirect — $40 starting price.</li>
               <li>GlassesUSA — frequent 50% off promos.</li>
@@ -89,7 +89,7 @@ export default function WarbyParkerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Need a prescription?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Get eye exam at Costco, Walmart, or Warby Parker store.</li>
               <li>Prescription valid 1–2 years usually.</li>
               <li>Ask doctor for prescription with PD (pupillary distance).</li>
@@ -103,7 +103,7 @@ export default function WarbyParkerForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try home try-on first</h3>
-            <p className="text-sm text-muted-foreground">For most seniors buying online glasses for the first time, Warby Parker&apos;s 5-day free home try-on removes the biggest risk — buying without trying. Pick 5 frames online, try them on at home with family for opinions, send back what doesn&apos;t work, order what does. Many seniors have saved hundreds versus traditional optical shops.</p>
+            <p className="text-base text-muted-foreground">For most seniors buying online glasses for the first time, Warby Parker&apos;s 5-day free home try-on removes the biggest risk — buying without trying. Pick 5 frames online, try them on at home with family for opinions, send back what doesn&apos;t work, order what does. Many seniors have saved hundreds versus traditional optical shops.</p>
           </CardContent>
         </Card>
       </main>

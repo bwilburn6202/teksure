@@ -45,7 +45,7 @@ export default function BatteryHealthChecker() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h2 className="font-bold text-lg mb-3">How to find your iPhone battery health</h2>
-              <ol className="list-decimal pl-5 space-y-2 text-sm mb-4">
+              <ol className="list-decimal pl-5 space-y-2 text-base mb-4">
                 <li>Open <strong>Settings</strong>.</li>
                 <li>Scroll down and tap <strong>Battery</strong>.</li>
                 <li>Tap <strong>Battery Health & Charging</strong>.</li>
@@ -62,7 +62,7 @@ export default function BatteryHealthChecker() {
             <CardContent className="pt-6">
               <h2 className="font-bold text-lg mb-3">How to check Android battery health</h2>
               <p className="text-sm mb-3">Android doesn't show a single number like iPhone, but here's how to estimate:</p>
-              <ul className="list-disc pl-5 space-y-2 text-sm mb-4">
+              <ul className="list-disc pl-5 space-y-2 text-base mb-4">
                 <li><strong>Samsung:</strong> Settings → Battery and device care → Battery → tap the menu (three dots) → Battery Settings. Some Samsungs show a "Battery health" status (Good / Normal / Replace).</li>
                 <li><strong>Google Pixel:</strong> Settings → Battery → Battery Information.</li>
                 <li><strong>All Android:</strong> Install the free app "AccuBattery" from the Play Store. After 1-2 days of use, it shows estimated battery health as a percentage.</li>

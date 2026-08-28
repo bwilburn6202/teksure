@@ -34,7 +34,7 @@ export default function TaxFilingPicks() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function TaxFilingPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AARP Tax-Aide — best for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free, in-person tax prep at 5,000+ US locations.</li>
               <li>IRS-certified volunteers (most are retired CPAs/accountants).</li>
               <li>NO age, income, or AARP membership requirement.</li>
@@ -57,7 +57,7 @@ export default function TaxFilingPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tax breaks (often missed)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Higher standard deduction at 65+</strong> — extra $1,950 (single) / $1,550 (married per spouse) in 2025.</li>
               <li><strong>Tax credit for elderly</strong> (Schedule R) — for low-income 65+.</li>
               <li><strong>Medical deduction</strong> — anything over 7.5% of income, including Medicare premiums and long-term care.</li>
@@ -71,7 +71,7 @@ export default function TaxFilingPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Documents to gather</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SSA-1099 (Social Security).</li>
               <li>1099-R (pensions, IRA withdrawals).</li>
               <li>1099-INT, 1099-DIV (interest, dividends).</li>
@@ -88,7 +88,7 @@ export default function TaxFilingPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Required IRA distributions</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re 73+ and have a traditional IRA — you MUST take a Required Minimum Distribution (RMD) each year. Penalty for missing is 25% of what you should have withdrawn. Brokerage usually calculates for you. Don&apos;t skip.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re 73+ and have a traditional IRA — you MUST take a Required Minimum Distribution (RMD) each year. Penalty for missing is 25% of what you should have withdrawn. Brokerage usually calculates for you. Don&apos;t skip.</p>
           </CardContent>
         </Card>
       </main>

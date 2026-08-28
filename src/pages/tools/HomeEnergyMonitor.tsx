@@ -40,7 +40,7 @@ export default function HomeEnergyMonitor() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -63,7 +63,7 @@ export default function HomeEnergyMonitor() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sense / Emporia</strong> — must be installed in your electrical panel. DIY if comfortable, OR pay an electrician $100-200.</li>
               <li><strong>Smart plugs</strong> — just plug in. No electrician needed.</li>
               <li><strong>Utility app</strong> — already there. Just sign in.</li>
@@ -74,7 +74,7 @@ export default function HomeEnergyMonitor() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start free</h3>
-            <p className="text-sm text-muted-foreground">Sign in to your utility\'s app. Most show hour-by-hour usage now. Look for spikes. Cross-reference what you were doing — "8pm Sunday spike = oven for dinner". Builds intuition before spending on hardware.</p>
+            <p className="text-base text-muted-foreground">Sign in to your utility\'s app. Most show hour-by-hour usage now. Look for spikes. Cross-reference what you were doing — "8pm Sunday spike = oven for dinner". Builds intuition before spending on hardware.</p>
           </CardContent>
         </Card>
       </main>

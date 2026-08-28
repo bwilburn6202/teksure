@@ -33,7 +33,7 @@ export default function WellnessRingPicks() {
                   <span className="text-sm font-semibold text-primary">{r.cost}</span>
                 </div>
                 <p className="text-sm">{r.best}</p>
-                <p className="text-sm text-muted-foreground">{r.good}</p>
+                <p className="text-base text-muted-foreground">{r.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function WellnessRingPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Ring vs watch</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ring</strong> — wear 24/7 (including showers, sleep). No screen distractions. 4-7 day battery.</li>
               <li><strong>Watch (Apple Watch, Garmin)</strong> — has screen, calls, texts, fall detection. Daily charge.</li>
               <li>Many people wear both — watch by day, ring by night.</li>
@@ -53,7 +53,7 @@ export default function WellnessRingPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What rings actually track</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sleep</strong> — quality, stages, total hours. Most accurate at this.</li>
               <li><strong>Heart rate</strong> — resting and trends. Heart rate variability (HRV).</li>
               <li><strong>Skin temperature</strong> — useful early sickness/menstrual cycle indicator.</li>
@@ -73,7 +73,7 @@ export default function WellnessRingPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get the sizing kit first</h3>
-            <p className="text-sm text-muted-foreground">Order the FREE sizing kit from any ring brand before buying. Wear the sample for 24 hours. Fingers swell at night and during exercise — pick the size that fits when warm. Wrong size = the ring sits on your nightstand.</p>
+            <p className="text-base text-muted-foreground">Order the FREE sizing kit from any ring brand before buying. Wear the sample for 24 hours. Fingers swell at night and during exercise — pick the size that fits when warm. Wrong size = the ring sits on your nightstand.</p>
           </CardContent>
         </Card>
       </main>

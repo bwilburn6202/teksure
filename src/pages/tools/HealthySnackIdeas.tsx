@@ -19,7 +19,7 @@ export default function HealthySnackIdeas() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Protein-rich snacks (under 200 cal)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hard-boiled egg + sliced apple.</li>
               <li>Greek yogurt + berries + nuts.</li>
               <li>Cottage cheese + peaches.</li>
@@ -36,7 +36,7 @@ export default function HealthySnackIdeas() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Diabetic-friendly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Low glycemic index foods</strong>:</li>
               <li>Walnuts + 1 small apple.</li>
               <li>Greek yogurt + cinnamon.</li>
@@ -52,7 +52,7 @@ export default function HealthySnackIdeas() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Heart-healthy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walnuts (omega-3).</li>
               <li>Avocado (good fats).</li>
               <li>Berries (antioxidants).</li>
@@ -67,7 +67,7 @@ export default function HealthySnackIdeas() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior eating tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smaller, more frequent snacks beat 3 big meals.</li>
               <li>Protein at every snack — preserves muscle.</li>
               <li>Hydrate WITH snack — many seniors dehydrate.</li>
@@ -81,7 +81,7 @@ export default function HealthySnackIdeas() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Skip these</h3>
-            <p className="text-sm text-muted-foreground">"Healthy" granola bars often have 15-25g sugar. "Reduced fat" peanut butter has more sugar. "100 calorie packs" — high in salt, low in protein. Read labels. Real foods (apple, eggs, nuts) usually beat packaged.</p>
+            <p className="text-base text-muted-foreground">"Healthy" granola bars often have 15-25g sugar. "Reduced fat" peanut butter has more sugar. "100 calorie packs" — high in salt, low in protein. Read labels. Real foods (apple, eggs, nuts) usually beat packaged.</p>
           </CardContent>
         </Card>
       </main>

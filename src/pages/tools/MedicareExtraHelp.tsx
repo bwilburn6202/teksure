@@ -19,7 +19,7 @@ export default function MedicareExtraHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What Extra Help is</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Federal program for prescription drug costs.</li>
               <li>Also called Low Income Subsidy (LIS).</li>
               <li>Pays Part D premiums + deductibles.</li>
@@ -33,7 +33,7 @@ export default function MedicareExtraHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">2026 income limits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Individual: under $23,475/year ($1,956/mo).</li>
               <li>Couple: under $31,725/year ($2,644/mo).</li>
               <li>Asset limit: $17,820 individual, $35,640 couple.</li>
@@ -47,7 +47,7 @@ export default function MedicareExtraHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Auto-enrolled if</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You have Medicaid + Medicare.</li>
               <li>You have Medicare Savings Program (QMB/SLMB).</li>
               <li>You receive SSI.</li>
@@ -59,7 +59,7 @@ export default function MedicareExtraHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apply</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apply at SSA.gov/extrahelp.</li>
               <li>Or call 1-800-772-1213.</li>
               <li>Also state Medicaid office.</li>
@@ -73,7 +73,7 @@ export default function MedicareExtraHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">2025-26 Inflation Reduction Act benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$2,000 yearly cap on out-of-pocket Part D costs (2025+).</li>
               <li>Insulin capped $35/month for ALL seniors.</li>
               <li>Free vaccines on Part D.</li>
@@ -86,7 +86,7 @@ export default function MedicareExtraHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drug cost alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>GoodRx</strong> — discount card. Sometimes beats insurance copays.</li>
               <li><strong>Patient assistance programs</strong> — manufacturers free for low-income.</li>
               <li><strong>$4 generic lists</strong> — Walmart, Walgreens.</li>
@@ -100,7 +100,7 @@ export default function MedicareExtraHelp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t skip meds</h3>
-            <p className="text-sm text-muted-foreground">Skipping prescriptions costs MORE — hospitalization, complications. Help is available. <strong>NeedyMeds</strong> — needymeds.org. Free patient assistance directory. <strong>RxAssist</strong> — rxassist.org. Pharmaceutical assistance programs. Apply for ALL — some manufacturers cover 100%.</p>
+            <p className="text-base text-muted-foreground">Skipping prescriptions costs MORE — hospitalization, complications. Help is available. <strong>NeedyMeds</strong> — needymeds.org. Free patient assistance directory. <strong>RxAssist</strong> — rxassist.org. Pharmaceutical assistance programs. Apply for ALL — some manufacturers cover 100%.</p>
           </CardContent>
         </Card>
       </main>

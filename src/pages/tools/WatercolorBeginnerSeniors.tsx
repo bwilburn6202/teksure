@@ -19,7 +19,7 @@ export default function WatercolorBeginnerSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why watercolor for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cheap to start.</li>
               <li>Quick cleanup (water-based).</li>
               <li>Mistakes part of charm.</li>
@@ -34,7 +34,7 @@ export default function WatercolorBeginnerSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Starter kit ($30)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Beginner watercolor set ($15) — Prima Marketing or similar.</li>
               <li>Round brushes — sizes 4, 8, 12 ($10 set).</li>
               <li>140lb watercolor paper pad ($8).</li>
@@ -48,7 +48,7 @@ export default function WatercolorBeginnerSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First lessons (FREE)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YouTube</strong> — &quot;Watercolor for absolute beginners.&quot;</li>
               <li><strong>Sarah Cray (Let&apos;s Make Art)</strong> — most senior-popular YouTube.</li>
               <li><strong>The Mind of Watercolor</strong> — Steve Mitchell.</li>
@@ -62,7 +62,7 @@ export default function WatercolorBeginnerSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy first projects</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Color swatches (test colors).</li>
               <li>Simple flowers — daisies, tulips.</li>
               <li>Abstract sky / sunset washes.</li>
@@ -77,7 +77,7 @@ export default function WatercolorBeginnerSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Easel reduces back/neck strain.</li>
               <li>Bigger brushes easier than tiny ones.</li>
               <li>Big paper less precise = less stressful.</li>
@@ -91,7 +91,7 @@ export default function WatercolorBeginnerSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior art classes</h3>
-            <p className="text-sm text-muted-foreground">Local: senior centers, community colleges, libraries often offer FREE / low-cost art classes. Senior + watercolor especially popular pairing. Social + creative. Many art schools have senior weeks. Find on Eldercare Locator.</p>
+            <p className="text-base text-muted-foreground">Local: senior centers, community colleges, libraries often offer FREE / low-cost art classes. Senior + watercolor especially popular pairing. Social + creative. Many art schools have senior weeks. Find on Eldercare Locator.</p>
           </CardContent>
         </Card>
       </main>

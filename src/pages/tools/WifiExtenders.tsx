@@ -32,7 +32,7 @@ export default function WifiExtenders() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -41,7 +41,7 @@ export default function WifiExtenders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (15 min)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Plug extender into outlet HALFWAY between router + dead zone.</li>
               <li>Press WPS button on router AND extender.</li>
               <li>Lights solid = connected.</li>
@@ -54,7 +54,7 @@ export default function WifiExtenders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Extender vs new mesh</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Extender</strong> — $30-100. Patches one weak area. Often slow + flaky.</li>
               <li><strong>New mesh router system</strong> — $200-400. Replaces old one. Whole house = strong.</li>
               <li>For 1 small dead zone: extender fine.</li>
@@ -66,7 +66,7 @@ export default function WifiExtenders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common dead-zone fixes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Move router to center of home (not closet, not attic, not behind TV).</li>
               <li>Update router firmware via app.</li>
               <li>Reduce wifi crowding — change channel in router settings.</li>
@@ -80,7 +80,7 @@ export default function WifiExtenders() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Test signal first</h3>
-            <p className="text-sm text-muted-foreground">Before buying anything — test speeds. Install <strong>fast.com</strong> in browser at router + dead zone. If both are slow — upgrade router. If router is fast but dead zone is slow — extender works.</p>
+            <p className="text-base text-muted-foreground">Before buying anything — test speeds. Install <strong>fast.com</strong> in browser at router + dead zone. If both are slow — upgrade router. If router is fast but dead zone is slow — extender works.</p>
           </CardContent>
         </Card>
       </main>

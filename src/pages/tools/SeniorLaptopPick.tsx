@@ -34,7 +34,7 @@ export default function SeniorLaptopPick() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function SeniorLaptopPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Match laptop to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Email + web only</strong> → Chromebook ($300) or iPad with keyboard.</li>
               <li><strong>Photos / videos / family memories</strong> → MacBook Air. Photos app is excellent.</li>
               <li><strong>Office documents (Word, Excel)</strong> → Windows or Mac (both run Office).</li>
@@ -84,7 +84,7 @@ export default function SeniorLaptopPick() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Our top pick</h3>
-            <p className="text-sm text-muted-foreground">For most seniors: <strong>refurbished MacBook Air with 16 GB RAM</strong> from apple.com. $999 vs $1,200 new, same warranty. Lasts 7-10 years easily, gets free updates, integrates with iPhone, virtually no viruses, best resale value.</p>
+            <p className="text-base text-muted-foreground">For most seniors: <strong>refurbished MacBook Air with 16 GB RAM</strong> from apple.com. $999 vs $1,200 new, same warranty. Lasts 7-10 years easily, gets free updates, integrates with iPhone, virtually no viruses, best resale value.</p>
           </CardContent>
         </Card>
       </main>

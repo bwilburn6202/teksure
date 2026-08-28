@@ -19,7 +19,7 @@ export default function FiberVsCableInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Side-by-side</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fiber</strong> — fastest, most reliable. AT&amp;T Fiber, Verizon Fios, Google Fiber.</li>
               <li><strong>Cable</strong> — common everywhere. Comcast, Spectrum, Cox.</li>
               <li><strong>DSL</strong> — slower, dying. Avoid if possible.</li>
@@ -32,7 +32,7 @@ export default function FiberVsCableInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Speeds you actually need</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>1 person, basic use</strong> — 50 Mbps fine.</li>
               <li><strong>Couple, streaming</strong> — 100 Mbps.</li>
               <li><strong>Family, multiple TVs</strong> — 300-500 Mbps.</li>
@@ -46,7 +46,7 @@ export default function FiberVsCableInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5G Home Internet (game-changer)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>T-Mobile Home Internet</strong> — $50-60/mo. Often half cable cost.</li>
               <li><strong>Verizon 5G Home</strong> — competitive.</li>
               <li>Wireless — no cables to home.</li>
@@ -61,7 +61,7 @@ export default function FiberVsCableInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bundle vs separate</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bundles (TV + internet) often less savings than advertised.</li>
               <li>Cut cable TV — use streaming. Save $80+/mo.</li>
               <li>Internet-only often cheaper.</li>
@@ -74,7 +74,7 @@ export default function FiberVsCableInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hidden costs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Modem rental $10-15/mo — buy own ($80, pays back 6 mo).</li>
               <li>WiFi router rental — buy ($100, pays back 1 yr).</li>
               <li>Broadcast TV fees, regional sports fees.</li>
@@ -88,7 +88,7 @@ export default function FiberVsCableInternet() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior pick 2026</h3>
-            <p className="text-sm text-muted-foreground">If fiber available — get fiber (Verizon Fios, AT&amp;T Fiber, Google Fiber). Reliable + fast. If cable only — negotiate annually. If T-Mobile 5G covers your home — try it ($50-60 with no contract). Cheap option for many seniors. Own modem + router = save more.</p>
+            <p className="text-base text-muted-foreground">If fiber available — get fiber (Verizon Fios, AT&amp;T Fiber, Google Fiber). Reliable + fast. If cable only — negotiate annually. If T-Mobile 5G covers your home — try it ($50-60 with no contract). Cheap option for many seniors. Own modem + router = save more.</p>
           </CardContent>
         </Card>
       </main>

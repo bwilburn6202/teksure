@@ -19,7 +19,7 @@ export default function YouTubeMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why YouTube Music?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Music videos included.</li>
               <li>Live concert recordings.</li>
               <li>Old TV performances.</li>
@@ -33,7 +33,7 @@ export default function YouTubeMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free vs Premium</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Free</strong> — ads + screen-on required.</li>
               <li><strong>Premium</strong> — $11/mo, no ads.</li>
               <li>Premium = background play.</li>
@@ -47,7 +47,7 @@ export default function YouTubeMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>See artists actual videos.</li>
               <li>Watch Beatles on Ed Sullivan.</li>
               <li>Frank Sinatra concert recordings.</li>
@@ -61,7 +61,7 @@ export default function YouTubeMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download YouTube Music app.</li>
               <li>Sign in with Google account.</li>
               <li>1-month free trial Premium.</li>
@@ -75,7 +75,7 @@ export default function YouTubeMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Old + rare</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>YouTube has fan uploads.</li>
               <li>Songs not on Spotify / Apple.</li>
               <li>1950s TV performances.</li>
@@ -89,7 +89,7 @@ export default function YouTubeMusicForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cast to TV</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smart TVs have YouTube Music.</li>
               <li>Or use Chromecast / Apple TV.</li>
               <li>Bigger screen for music videos.</li>
@@ -103,7 +103,7 @@ export default function YouTubeMusicForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior pick: free</h3>
-            <p className="text-sm text-muted-foreground">If don&apos;t mind ads — free version great for seniors. Watch music videos endlessly. Some songs only here. If listening on phone screen-off needed — pay $11. Many seniors stick with regular YouTube — same content, free, video by default. No app needed. Just type song.</p>
+            <p className="text-base text-muted-foreground">If don&apos;t mind ads — free version great for seniors. Watch music videos endlessly. Some songs only here. If listening on phone screen-off needed — pay $11. Many seniors stick with regular YouTube — same content, free, video by default. No app needed. Just type song.</p>
           </CardContent>
         </Card>
       </main>

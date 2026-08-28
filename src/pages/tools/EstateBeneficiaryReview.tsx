@@ -19,7 +19,7 @@ export default function EstateBeneficiaryReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why this matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Beneficiary designations OVERRIDE your will.</li>
               <li>If ex-spouse listed, they inherit — not current spouse.</li>
               <li>If deceased child still listed, complicated probate.</li>
@@ -33,7 +33,7 @@ export default function EstateBeneficiaryReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Accounts to check</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>401(k) — old + current employers.</li>
               <li>IRA accounts — Traditional + Roth.</li>
               <li>Life insurance policies.</li>
@@ -47,7 +47,7 @@ export default function EstateBeneficiaryReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to update</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>After marriage or divorce.</li>
               <li>Birth of grandchildren.</li>
               <li>Death of named beneficiary.</li>
@@ -61,7 +61,7 @@ export default function EstateBeneficiaryReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Primary + contingent</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Primary — first in line.</li>
               <li>Contingent — backup if primary dies.</li>
               <li>Always name BOTH.</li>
@@ -75,7 +75,7 @@ export default function EstateBeneficiaryReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to update</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most retirement accounts — update in app/online.</li>
               <li>Life insurance — call insurer for form.</li>
               <li>Bank — visit branch with ID.</li>
@@ -89,7 +89,7 @@ export default function EstateBeneficiaryReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trust as beneficiary</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If you have a trust, name it as beneficiary.</li>
               <li>Trustees inherit + distribute per trust terms.</li>
               <li>More control over how money is used.</li>
@@ -103,7 +103,7 @@ export default function EstateBeneficiaryReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Schedule annual review</h3>
-            <p className="text-sm text-muted-foreground">Pick a memorable date — birthday, anniversary, January 1. Once a year, log into each retirement account, life insurance, and bank account. Verify beneficiaries are still correct. 30 minutes saves your family weeks of legal hassle and possibly tens of thousands in probate fees. Many seniors discover ex-spouses or deceased people still listed. Easy fix, huge consequences.</p>
+            <p className="text-base text-muted-foreground">Pick a memorable date — birthday, anniversary, January 1. Once a year, log into each retirement account, life insurance, and bank account. Verify beneficiaries are still correct. 30 minutes saves your family weeks of legal hassle and possibly tens of thousands in probate fees. Many seniors discover ex-spouses or deceased people still listed. Easy fix, huge consequences.</p>
           </CardContent>
         </Card>
       </main>

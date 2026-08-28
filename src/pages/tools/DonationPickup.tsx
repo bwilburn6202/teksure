@@ -33,7 +33,7 @@ export default function DonationPickup() {
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{s.name}</h3>
                 <p className="text-sm">{s.what}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function DonationPickup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How pickup works</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Schedule online or by phone — give a list of items.</li>
               <li>Pickup window is usually 4 hours wide.</li>
               <li>Items go on the porch, driveway, or in the garage. Truck driver doesn\'t enter the home.</li>
@@ -83,7 +83,7 @@ export default function DonationPickup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pair with downsizing</h3>
-            <p className="text-sm text-muted-foreground">If moving or decluttering, schedule pickups in waves. Use NASMM (Senior Move Manager) to coordinate the whole process — they\'ll handle pickup scheduling, sales of valuable items, and donation receipts.</p>
+            <p className="text-base text-muted-foreground">If moving or decluttering, schedule pickups in waves. Use NASMM (Senior Move Manager) to coordinate the whole process — they\'ll handle pickup scheduling, sales of valuable items, and donation receipts.</p>
           </CardContent>
         </Card>
       </main>

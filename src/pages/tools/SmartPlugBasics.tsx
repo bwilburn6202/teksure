@@ -33,7 +33,7 @@ export default function SmartPlugBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best buys (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Kasa Smart Plug Mini (TP-Link)</strong> — $10 each. The standard. Works with Alexa, Google.</li>
               <li><strong>Amazon Smart Plug</strong> — $13. Works with Alexa only. Easiest setup if you have an Echo.</li>
               <li><strong>Wemo</strong> — $20. Works with Apple HomeKit (good if you only use iPhone/iPad).</li>
@@ -45,7 +45,7 @@ export default function SmartPlugBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup in 5 minutes</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Plug into wall.</li>
               <li>Download the app (Kasa app, Amazon Alexa, etc.).</li>
               <li>App finds the plug. Connects to your wifi.</li>
@@ -58,7 +58,7 @@ export default function SmartPlugBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What NOT to plug in</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Refrigerator — needs constant power.</li>
               <li>Medical equipment (CPAP, oxygen).</li>
               <li>Anything over 1,800 watts (most space heaters are 1,500W and OK).</li>
@@ -70,7 +70,7 @@ export default function SmartPlugBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best first use</h3>
-            <p className="text-sm text-muted-foreground">Put one on your living room lamp. Set it to come on at sunset. After two weeks, you&apos;ll wonder how you lived without it. Then add 3-4 more for the rest of the house.</p>
+            <p className="text-base text-muted-foreground">Put one on your living room lamp. Set it to come on at sunset. After two weeks, you&apos;ll wonder how you lived without it. Then add 3-4 more for the rest of the house.</p>
           </CardContent>
         </Card>
       </main>

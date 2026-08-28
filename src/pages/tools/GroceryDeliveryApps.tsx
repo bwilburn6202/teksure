@@ -33,7 +33,7 @@ export default function GroceryDeliveryApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function GroceryDeliveryApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>$60 grocery order via Instacart</strong> = $60 + $4-7 delivery + $4-6 service + 15% tip ≈ $80.</li>
               <li><strong>Same order via store pickup</strong> = $60 + $0-2 = $60.</li>
               <li>Pickup saves $15-20/order.</li>
@@ -54,7 +54,7 @@ export default function GroceryDeliveryApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Curbside pickup tips</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Order via store app (free, no Instacart fees).</li>
               <li>Pick a 1-hour window.</li>
               <li>Arrive at pickup spot. Park in marked spaces.</li>
@@ -69,7 +69,7 @@ export default function GroceryDeliveryApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SNAP / EBT online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walmart, Amazon, Aldi, Kroger, Publix all accept EBT online.</li>
               <li>Add EBT card in app. Pay with EBT for SNAP-eligible items.</li>
               <li>Pay separately for tip + delivery (cannot use EBT for those).</li>
@@ -81,7 +81,7 @@ export default function GroceryDeliveryApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tip your shopper</h3>
-            <p className="text-sm text-muted-foreground">Instacart + Shipt shoppers depend on tips. $5 minimum, $8-10 in bad weather or large orders. Pre-tip in app — orders with good tips get picked up faster + handled more carefully.</p>
+            <p className="text-base text-muted-foreground">Instacart + Shipt shoppers depend on tips. $5 minimum, $8-10 in bad weather or large orders. Pre-tip in app — orders with good tips get picked up faster + handled more carefully.</p>
           </CardContent>
         </Card>
       </main>

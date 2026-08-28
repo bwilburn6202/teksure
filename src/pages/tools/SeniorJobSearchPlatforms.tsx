@@ -19,7 +19,7 @@ export default function SeniorJobSearchPlatforms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why work in retirement?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Extra income for fixed budget.</li>
               <li>Stay mentally active.</li>
               <li>Social connection.</li>
@@ -33,7 +33,7 @@ export default function SeniorJobSearchPlatforms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-focused job sites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>RetirementJobs.com — vetted senior-friendly employers.</li>
               <li>RetiredBrains.com — part-time + flexible jobs.</li>
               <li>AARP Job Board — searchable senior listings.</li>
@@ -47,7 +47,7 @@ export default function SeniorJobSearchPlatforms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mainstream sites that work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Indeed — largest job search.</li>
               <li>LinkedIn — professional network + jobs.</li>
               <li>Glassdoor — salary research + reviews.</li>
@@ -61,7 +61,7 @@ export default function SeniorJobSearchPlatforms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly employers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Home Depot, Lowe&apos;s — value experience.</li>
               <li>National parks — visitor centers, seasonal.</li>
               <li>H+R Block — seasonal tax preparation.</li>
@@ -75,7 +75,7 @@ export default function SeniorJobSearchPlatforms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Remote work options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Customer service phone reps — many remote.</li>
               <li>Tutoring online — Wyzant, VIPKid.</li>
               <li>Bookkeeping for small businesses.</li>
@@ -89,7 +89,7 @@ export default function SeniorJobSearchPlatforms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Resume tips for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Limit work history to last 15 years.</li>
               <li>Don&apos;t list graduation year.</li>
               <li>Show technology skills (email, video calls, basic apps).</li>
@@ -103,7 +103,7 @@ export default function SeniorJobSearchPlatforms() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with AARP Job Board</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re considering returning to work, start at AARP&apos;s Job Board (jobs.aarp.org). Listings are pre-vetted as senior-friendly — companies that have committed to age-inclusive hiring. RetirementJobs.com is the next best stop. Both are free. Browse without committing — see what&apos;s out there. Many retirees find part-time work that suits their lifestyle perfectly.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re considering returning to work, start at AARP&apos;s Job Board (jobs.aarp.org). Listings are pre-vetted as senior-friendly — companies that have committed to age-inclusive hiring. RetirementJobs.com is the next best stop. Both are free. Browse without committing — see what&apos;s out there. Many retirees find part-time work that suits their lifestyle perfectly.</p>
           </CardContent>
         </Card>
       </main>

@@ -34,7 +34,7 @@ export default function FlightSearchApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function FlightSearchApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips that save real money</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Be flexible on dates</strong> — a Tuesday or Wednesday flight can be $100-300 cheaper than weekends.</li>
               <li><strong>Try a nearby airport</strong> — flying out of a smaller airport sometimes saves a lot. Or try alternates within driving distance.</li>
               <li><strong>Book 4-12 weeks ahead</strong> — domestic. International: 2-6 months out.</li>
@@ -69,7 +69,7 @@ export default function FlightSearchApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — search incognito</h3>
-            <p className="text-sm text-muted-foreground">Some travel sites raise the price the more times you search the same flight. Open the website in an "Incognito" or "Private" browser tab — fresh prices each time. Cookies don\'t track you.</p>
+            <p className="text-base text-muted-foreground">Some travel sites raise the price the more times you search the same flight. Open the website in an "Incognito" or "Private" browser tab — fresh prices each time. Cookies don\'t track you.</p>
           </CardContent>
         </Card>
       </main>

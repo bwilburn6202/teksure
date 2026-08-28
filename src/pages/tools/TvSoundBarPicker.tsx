@@ -41,7 +41,7 @@ export default function TvSoundBarPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1"><strong>Best:</strong> {p.best}</p>
-                <p className="text-sm text-muted-foreground"><strong>Cons:</strong> {p.cons}</p>
+                <p className="text-base text-muted-foreground"><strong>Cons:</strong> {p.cons}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function TvSoundBarPicker() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy install</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Place sound bar in front of the TV (or wall-mount below). Tabletop placement is fine.</li>
               <li>Connect to the TV with the included HDMI cable. (Or with optical/Toslink if HDMI doesn\'t work.)</li>
               <li>Plug sound bar into a wall outlet.</li>
@@ -63,7 +63,7 @@ export default function TvSoundBarPicker() {
         <Card className="mt-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Helpful features for hearing loss</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Dialogue/Voice mode</strong> — boosts the frequency range where speech lives.</li>
               <li><strong>Night mode</strong> — softens loud sounds (gunfire, music) so dialogue stays clear without the volume jumping.</li>
               <li><strong>Bluetooth headphone pairing</strong> — pair AirPods or hearing aids directly to the sound bar. You hear it; spouse doesn\'t need to.</li>
@@ -75,7 +75,7 @@ export default function TvSoundBarPicker() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">If hearing dialogue is the main issue, get the <strong>ZVOX AccuVoice AV157</strong>. Made for this exact problem. $200 well spent.</p>
+            <p className="text-base text-muted-foreground">If hearing dialogue is the main issue, get the <strong>ZVOX AccuVoice AV157</strong>. Made for this exact problem. $200 well spent.</p>
           </CardContent>
         </Card>
       </main>

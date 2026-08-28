@@ -33,7 +33,7 @@ export default function KidsPenPalApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function KidsPenPalApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real letter ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Birthday letters with photo from THAT year.</li>
               <li>Stories about parent at same age.</li>
               <li>Drawing prompts ("send me a picture of...").</li>
@@ -57,7 +57,7 @@ export default function KidsPenPalApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Caribu (read together)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Free for grandparents + grandkids.</li>
               <li>1,000+ kids&apos; books in app.</li>
               <li>Both see the same page on screen.</li>
@@ -71,7 +71,7 @@ export default function KidsPenPalApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Mail beats text</h3>
-            <p className="text-sm text-muted-foreground">A handwritten letter from grandma is found in adult kids&apos; boxes 30+ years later. Texts vanish. Real mail in this digital age = treasure. Send 1-2 a month per grandkid. Imperfect handwriting, real ink, real you. Worth far more than perfect typed words.</p>
+            <p className="text-base text-muted-foreground">A handwritten letter from grandma is found in adult kids&apos; boxes 30+ years later. Texts vanish. Real mail in this digital age = treasure. Send 1-2 a month per grandkid. Imperfect handwriting, real ink, real you. Worth far more than perfect typed words.</p>
           </CardContent>
         </Card>
       </main>

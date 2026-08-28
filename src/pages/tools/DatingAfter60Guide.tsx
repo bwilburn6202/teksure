@@ -33,7 +33,7 @@ export default function DatingAfter60Guide() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function DatingAfter60Guide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Profile tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Recent photos only — no &quot;30 years ago&quot;.</li>
               <li>5-6 photos: face, full body, hobby, with friends.</li>
               <li>NO sunglasses in main photo.</li>
@@ -57,7 +57,7 @@ export default function DatingAfter60Guide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Romance scam red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Moves to texting/email FAST (off platform).</li>
               <li>&quot;Working overseas&quot; — military, oil rig, doctor abroad.</li>
               <li>&quot;Can&apos;t video call&quot; — always excuses.</li>
@@ -72,7 +72,7 @@ export default function DatingAfter60Guide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First date safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Public place — coffee shop, restaurant.</li>
               <li>Tell friend/family details + check-in time.</li>
               <li>Drive yourself.</li>
@@ -86,7 +86,7 @@ export default function DatingAfter60Guide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Beyond apps</h3>
-            <p className="text-sm text-muted-foreground">Many seniors meet through hobby groups (hiking, dancing, religious community, volunteering, classes) — no apps needed. AARP Magazine has monthly dating column. Senior centers often host singles events. In-person = healthier than apps.</p>
+            <p className="text-base text-muted-foreground">Many seniors meet through hobby groups (hiking, dancing, religious community, volunteering, classes) — no apps needed. AARP Magazine has monthly dating column. Senior centers often host singles events. In-person = healthier than apps.</p>
           </CardContent>
         </Card>
       </main>

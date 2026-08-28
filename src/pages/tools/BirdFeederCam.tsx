@@ -33,7 +33,7 @@ export default function BirdFeederCam() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -62,7 +62,7 @@ export default function BirdFeederCam() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best gift for grandparents</h3>
-            <p className="text-sm text-muted-foreground">If you\'re looking for a gift — a Bird Buddy + a year of bird seed delivery from Walmart Subscribe & Save = pure joy. Many seniors call it the best gift they\'ve gotten.</p>
+            <p className="text-base text-muted-foreground">If you\'re looking for a gift — a Bird Buddy + a year of bird seed delivery from Walmart Subscribe & Save = pure joy. Many seniors call it the best gift they\'ve gotten.</p>
           </CardContent>
         </Card>
       </main>

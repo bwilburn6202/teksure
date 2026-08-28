@@ -19,7 +19,7 @@ export default function USAJobsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior-friendly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NO age discrimination (illegal).</li>
               <li>Many roles done remote.</li>
               <li>Pension benefits add to retirement.</li>
@@ -34,7 +34,7 @@ export default function USAJobsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorite federal jobs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Census taker</strong> — every 10 years (next 2030).</li>
               <li><strong>National Park ranger / interpreter</strong> — seasonal.</li>
               <li><strong>VA hospital roles</strong>.</li>
@@ -50,7 +50,7 @@ export default function USAJobsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sign up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>USAJobs.gov — free.</li>
               <li>Login.gov account.</li>
               <li>Create resume on site (different format).</li>
@@ -64,7 +64,7 @@ export default function USAJobsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Federal hiring tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read job description CAREFULLY — match keywords.</li>
               <li>Federal resumes longer + more detail than corporate.</li>
               <li>Veteran preference — list military service.</li>
@@ -78,7 +78,7 @@ export default function USAJobsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other senior job sites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>RetiredBrains</strong> — senior-specific.</li>
               <li><strong>FlexJobs</strong> ($14/mo) — vetted remote.</li>
               <li><strong>Workforce50</strong> — 50+ focused.</li>
@@ -92,7 +92,7 @@ export default function USAJobsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">SCSEP program</h3>
-            <p className="text-sm text-muted-foreground"><strong>Senior Community Service Employment Program (SCSEP)</strong> — federal program for low-income 55+. Paid training jobs. Often $7-15/hr part-time. Supports while job hunting. Apply at local Employer Solutions Center or 1-855-241-7227.</p>
+            <p className="text-base text-muted-foreground"><strong>Senior Community Service Employment Program (SCSEP)</strong> — federal program for low-income 55+. Paid training jobs. Often $7-15/hr part-time. Supports while job hunting. Apply at local Employer Solutions Center or 1-855-241-7227.</p>
           </CardContent>
         </Card>
       </main>

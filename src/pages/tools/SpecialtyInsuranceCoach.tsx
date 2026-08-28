@@ -85,7 +85,7 @@ export default function SpecialtyInsuranceCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground">An independent insurance broker (NOT a captive agent for one company) can shop multiple insurers. Often free to you. Search "[your area] independent insurance agent".</p>
+            <p className="text-base text-muted-foreground">An independent insurance broker (NOT a captive agent for one company) can shop multiple insurers. Often free to you. Search "[your area] independent insurance agent".</p>
           </CardContent>
         </Card>
       </main>

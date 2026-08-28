@@ -34,7 +34,7 @@ export default function SleepTrackingApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function SleepTrackingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What sleep tracking can tell you</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sleep duration</strong> — most adults need 7-8 hours. Less is linked to a long list of health problems.</li>
               <li><strong>Sleep stages</strong> — light, deep, REM. Deep sleep matters most for body recovery.</li>
               <li><strong>Resting heart rate</strong> — rises with stress, illness, alcohol.</li>
@@ -56,7 +56,7 @@ export default function SleepTrackingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps for actually FALLING asleep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Calm</strong> — sleep stories, music, breathing exercises.</li>
               <li><strong>Headspace</strong> — same idea.</li>
               <li><strong>Insight Timer (free)</strong> — biggest free library of guided sleep meditations.</li>
@@ -85,7 +85,7 @@ export default function SleepTrackingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don\'t become orthosomniac</h3>
-            <p className="text-sm text-muted-foreground">Yes, that\'s a real word — anxiety about sleep tracking data hurting your sleep. If checking your sleep score makes you anxious, just stop checking it for a few weeks. Trackers are tools, not judgment.</p>
+            <p className="text-base text-muted-foreground">Yes, that\'s a real word — anxiety about sleep tracking data hurting your sleep. If checking your sleep score makes you anxious, just stop checking it for a few weeks. Trackers are tools, not judgment.</p>
           </CardContent>
         </Card>
       </main>

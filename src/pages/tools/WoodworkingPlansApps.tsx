@@ -19,7 +19,7 @@ export default function WoodworkingPlansApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free YouTube channels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Steve Ramsey — Woodworking for Mere Mortals.</li>
               <li>Stumpy Nubs — beginner to advanced.</li>
               <li>Jonathan Katz-Moses — clear instruction style.</li>
@@ -33,7 +33,7 @@ export default function WoodworkingPlansApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free plan websites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ana White — hundreds of free woodworking plans.</li>
               <li>Wood Magazine — free plans monthly.</li>
               <li>Popular Mechanics — classic project plans.</li>
@@ -47,7 +47,7 @@ export default function WoodworkingPlansApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Paid plan resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>TedsWoodworking — 16,000 plans for $67 lifetime.</li>
               <li>Fine Woodworking magazine — $35/year subscription.</li>
               <li>Wood Magazine subscription — $30/year.</li>
@@ -61,7 +61,7 @@ export default function WoodworkingPlansApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Useful apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iHandy Carpenter — level + ruler + protractor.</li>
               <li>Bob Vila&apos;s Hand Tool — tool reference guide.</li>
               <li>Wood Magazine app — read on phone or tablet.</li>
@@ -75,7 +75,7 @@ export default function WoodworkingPlansApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior shop safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hearing protection — over-ear muffs, not foam plugs.</li>
               <li>Safety glasses always — not just goggles you forget.</li>
               <li>Dust mask or respirator for sanding.</li>
@@ -89,7 +89,7 @@ export default function WoodworkingPlansApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tool tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Battery tools = no cord trips.</li>
               <li>Lighter cordless drills + impact drivers.</li>
               <li>Easy-grip handles — soft padded.</li>
@@ -103,7 +103,7 @@ export default function WoodworkingPlansApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with YouTube + Ana White</h3>
-            <p className="text-sm text-muted-foreground">Before paying for plan packages or magazine subscriptions, check Ana White&apos;s free plans (AnaWhite.com) and watch a few Steve Ramsey YouTube videos. Both are free and absolutely beginner-friendly. Pick a small project — a simple birdhouse or stool — to get started. Many seniors return to woodworking in retirement and rediscover a lifelong hobby they put on hold.</p>
+            <p className="text-base text-muted-foreground">Before paying for plan packages or magazine subscriptions, check Ana White&apos;s free plans (AnaWhite.com) and watch a few Steve Ramsey YouTube videos. Both are free and absolutely beginner-friendly. Pick a small project — a simple birdhouse or stool — to get started. Many seniors return to woodworking in retirement and rediscover a lifelong hobby they put on hold.</p>
           </CardContent>
         </Card>
       </main>

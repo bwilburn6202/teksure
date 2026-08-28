@@ -19,7 +19,7 @@ export default function YouVersionBibleApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why YouVersion?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most-used Bible app — over 600 million downloads.</li>
               <li>100% free — no subscription.</li>
               <li>2,000+ Bible translations.</li>
@@ -33,7 +33,7 @@ export default function YouVersionBibleApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Large text option — up to extra large.</li>
               <li>Audio Bible — listen while doing chores.</li>
               <li>Verse of the Day on home screen.</li>
@@ -47,7 +47,7 @@ export default function YouVersionBibleApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reading plans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bible in a year — most popular.</li>
               <li>Bible in 90 days for fast reading.</li>
               <li>Topic-specific plans (grief, marriage, anxiety).</li>
@@ -61,7 +61,7 @@ export default function YouVersionBibleApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouVersion Kids</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Separate app for grandkids.</li>
               <li>Animated Bible stories.</li>
               <li>Activities + games.</li>
@@ -75,7 +75,7 @@ export default function YouVersionBibleApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other Bible apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Olive Tree Bible — academic study features.</li>
               <li>Logos Bible — pastors + serious students.</li>
               <li>BibleGateway — large parallel Bible.</li>
@@ -89,7 +89,7 @@ export default function YouVersionBibleApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to start</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download YouVersion Bible from app store.</li>
               <li>Tap Settings → Text Size → make larger.</li>
               <li>Pick translation you prefer (NIV, ESV, KJV, etc.).</li>
@@ -103,7 +103,7 @@ export default function YouVersionBibleApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Listen during chores</h3>
-            <p className="text-sm text-muted-foreground">For seniors with vision issues or who enjoy listening, YouVersion&apos;s audio Bible turns any task into Bible study time. Listen while cooking, gardening, or driving. James Earl Jones narrated KJV is particularly beautiful. Free, on every device, available offline once downloaded. The most-used Bible app in the world for good reason.</p>
+            <p className="text-base text-muted-foreground">For seniors with vision issues or who enjoy listening, YouVersion&apos;s audio Bible turns any task into Bible study time. Listen while cooking, gardening, or driving. James Earl Jones narrated KJV is particularly beautiful. Free, on every device, available offline once downloaded. The most-used Bible app in the world for good reason.</p>
           </CardContent>
         </Card>
       </main>

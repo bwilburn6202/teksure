@@ -19,7 +19,7 @@ export default function VRBOAirbnbCompareSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What are vacation rentals?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Rent someone&apos;s home, condo, or cottage.</li>
               <li>More space than a hotel room.</li>
               <li>Kitchen included — cook your own meals.</li>
@@ -33,7 +33,7 @@ export default function VRBOAirbnbCompareSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">VRBO — better for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Whole-home rentals only — no shared spaces.</li>
               <li>No strangers sharing your rental.</li>
               <li>More traditional family vacation homes.</li>
@@ -47,7 +47,7 @@ export default function VRBOAirbnbCompareSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Airbnb — larger selection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>More listings — more cities and options.</li>
               <li>Includes shared rooms and private rooms.</li>
               <li>Read carefully — whole home vs. shared.</li>
@@ -61,7 +61,7 @@ export default function VRBOAirbnbCompareSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read all reviews carefully — especially negative.</li>
               <li>Look for &quot;Superhost&quot; or &quot;Premier Host&quot; badge.</li>
               <li>Communicate only through the platform.</li>
@@ -75,7 +75,7 @@ export default function VRBOAirbnbCompareSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Accessibility filters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Airbnb — filter for &quot;no stairs&quot; or &quot;wide doorways.&quot;</li>
               <li>VRBO — search for single-story homes.</li>
               <li>Check description for step count.</li>
@@ -89,7 +89,7 @@ export default function VRBOAirbnbCompareSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fees to watch for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cleaning fee — often $50–$200 added at checkout.</li>
               <li>Service fee — platform takes a cut.</li>
               <li>Total price often much higher than nightly rate.</li>
@@ -103,7 +103,7 @@ export default function VRBOAirbnbCompareSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">VRBO for senior trips</h3>
-            <p className="text-sm text-muted-foreground">For most seniors — especially family reunion trips or grandparent visits — VRBO is the better choice. You always get the whole house, never a shared space. Renting a 3-bedroom beach house for a week often costs less per person than a hotel, and everyone has a kitchen and living room together. Filter by pet-friendly or single-story for accessibility.</p>
+            <p className="text-base text-muted-foreground">For most seniors — especially family reunion trips or grandparent visits — VRBO is the better choice. You always get the whole house, never a shared space. Renting a 3-bedroom beach house for a week often costs less per person than a hotel, and everyone has a kitchen and living room together. Filter by pet-friendly or single-story for accessibility.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function SmokeAlarmTesting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Test monthly</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Press TEST button. Hold 5 seconds.</li>
               <li>Should beep loudly + lights flash.</li>
               <li>If silent or weak — battery may be dead, OR alarm is past its life.</li>
@@ -33,7 +33,7 @@ export default function SmokeAlarmTesting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Replace every 10 years</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sensor degrades — even with fresh battery, it can&apos;t detect smoke.</li>
               <li>Manufacture date on back of unit.</li>
               <li>Replace ENTIRE alarm, not just battery.</li>
@@ -54,7 +54,7 @@ export default function SmokeAlarmTesting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free smoke alarms for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many fire departments give FREE smoke alarms to seniors (call non-emergency line).</li>
               <li>American Red Cross "Sound the Alarm" — free install events.</li>
               <li>Some states (CA, FL) have programs specific to 65+.</li>
@@ -66,7 +66,7 @@ export default function SmokeAlarmTesting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart smoke alarms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Nest Protect</strong> — $120. Voice tells you which room. Phone alert if away. Self-tests.</li>
               <li><strong>Kidde Smart</strong> — $50. Cheaper smart option.</li>
               <li><strong>First Alert OneLink</strong> — $80-130. Apple HomeKit.</li>
@@ -78,7 +78,7 @@ export default function SmokeAlarmTesting() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Set a calendar reminder</h3>
-            <p className="text-sm text-muted-foreground">First Sunday of each month — test alarms. Daylight saving time changes — change batteries. November + March. Most fire deaths happen in homes with non-working smoke alarms. 60 seconds saves lives.</p>
+            <p className="text-base text-muted-foreground">First Sunday of each month — test alarms. Daylight saving time changes — change batteries. November + March. Most fire deaths happen in homes with non-working smoke alarms. 60 seconds saves lives.</p>
           </CardContent>
         </Card>
       </main>

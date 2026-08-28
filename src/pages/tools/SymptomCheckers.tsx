@@ -33,7 +33,7 @@ export default function SymptomCheckers() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SymptomCheckers() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reality check</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Symptom checkers are RIGHT 30-50% of the time.</li>
               <li>They tend to over-warn (cancer pops up for paper cuts).</li>
               <li>Use to TRIAGE — am I OK to wait? Need urgent care? ER?</li>
@@ -55,7 +55,7 @@ export default function SymptomCheckers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to skip checker + go to ER</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Chest pain, especially with arm/jaw pain.</li>
               <li>Sudden severe headache "worst of life".</li>
               <li>One-sided weakness or face drooping (stroke).</li>
@@ -72,7 +72,7 @@ export default function SymptomCheckers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Better than apps — call</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Doctor&apos;s nurse line</strong> — most practices have one. Free.</li>
               <li><strong>Insurance nurse hotline</strong> — Anthem, BCBS, Aetna offer free nurse calls 24/7.</li>
               <li><strong>988</strong> — mental health crisis.</li>
@@ -85,7 +85,7 @@ export default function SymptomCheckers() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Trust your gut</h3>
-            <p className="text-sm text-muted-foreground">Studies show patients who say "something feels wrong" + go to ER are usually right. Symptom checkers are tools — not replacements for instinct + doctor advice. If something feels seriously off, get checked.</p>
+            <p className="text-base text-muted-foreground">Studies show patients who say "something feels wrong" + go to ER are usually right. Symptom checkers are tools — not replacements for instinct + doctor advice. If something feels seriously off, get checked.</p>
           </CardContent>
         </Card>
       </main>

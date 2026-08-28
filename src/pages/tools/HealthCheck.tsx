@@ -176,7 +176,7 @@ export default function HealthCheck() {
                       <div>
                         <p className="font-medium text-sm mb-1">{q.question}</p>
                         <p className={`text-xs font-semibold mb-1 ${cfg.text}`}>Your answer: {result.label} — {cfg.label}</p>
-                        <p className="text-sm text-muted-foreground">{result.tip}</p>
+                        <p className="text-base text-muted-foreground">{result.tip}</p>
                       </div>
                     </div>
                   </CardContent>

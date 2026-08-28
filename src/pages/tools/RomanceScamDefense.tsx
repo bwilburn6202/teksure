@@ -43,7 +43,7 @@ export default function RomanceScamDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Red flags — every romance scam has them</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               {FLAGS.map((f, i) => <li key={i}>{f}</li>)}
             </ol>
           </CardContent>
@@ -61,7 +61,7 @@ export default function RomanceScamDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to test if someone is real</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Reverse-image search their photos.</strong> On a computer, right-click their photo → "Search Google for image". If it shows up on stock photo sites, modeling agencies, or someone else's social media — you've got a scammer.</li>
               <li><strong>Insist on a live video call.</strong> Not a recorded video. Not a photo. A live call where you can ask them to wave, or hold up today's newspaper. Scammers refuse — every time.</li>
               <li><strong>Look up their name + city.</strong> Real people have a footprint — LinkedIn, news, an old yearbook. Scammers using stolen identities have nothing.</li>
@@ -73,7 +73,7 @@ export default function RomanceScamDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you\'ve already sent money</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Stop. Send no more — even if they "promise the rest will fix everything".</li>
               <li>Save every message and every receipt. You'll need them.</li>
               <li>Call your bank — they may be able to reverse a wire if it just left.</li>
@@ -101,7 +101,7 @@ export default function RomanceScamDefense() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to find real connection</h3>
-            <p className="text-sm text-muted-foreground">Local senior centers, libraries, hiking clubs, church groups, volunteer organizations. AARP Connect2Affect helps with loneliness directly. Real connections take time — but no real one ever asks you for money.</p>
+            <p className="text-base text-muted-foreground">Local senior centers, libraries, hiking clubs, church groups, volunteer organizations. AARP Connect2Affect helps with loneliness directly. Real connections take time — but no real one ever asks you for money.</p>
           </CardContent>
         </Card>
       </main>

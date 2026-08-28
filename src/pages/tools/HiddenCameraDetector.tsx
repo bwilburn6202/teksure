@@ -93,7 +93,7 @@ export default function HiddenCameraDetector() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">What\'s legal</h3>
-            <p className="text-sm text-muted-foreground">Airbnb and VRBO require hosts to DISCLOSE any cameras in the listing. Hidden cameras = ban. Cameras inside the home (even if disclosed) are not allowed in private spaces (bedrooms, bathrooms). Outdoor cameras must be disclosed.</p>
+            <p className="text-base text-muted-foreground">Airbnb and VRBO require hosts to DISCLOSE any cameras in the listing. Hidden cameras = ban. Cameras inside the home (even if disclosed) are not allowed in private spaces (bedrooms, bathrooms). Outdoor cameras must be disclosed.</p>
           </CardContent>
         </Card>
       </main>

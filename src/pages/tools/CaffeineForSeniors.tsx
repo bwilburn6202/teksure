@@ -19,7 +19,7 @@ export default function CaffeineForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior limits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most adults: up to 400mg/day = 2-4 cups coffee.</li>
               <li>Seniors metabolize slower — can affect 8+ hours.</li>
               <li>Cut off by noon for sleep.</li>
@@ -32,7 +32,7 @@ export default function CaffeineForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to cut back</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>High BP — caffeine raises BP.</li>
               <li>Atrial fibrillation — can trigger.</li>
               <li>Acid reflux — worsens.</li>
@@ -47,7 +47,7 @@ export default function CaffeineForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Surprising sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Decaf still has 5-15mg per cup.</li>
               <li>Tea — green, black caffeinated.</li>
               <li>Chocolate (especially dark).</li>
@@ -62,7 +62,7 @@ export default function CaffeineForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reduces dementia risk (some studies).</li>
               <li>Reduces Type 2 diabetes risk.</li>
               <li>Antioxidants in coffee.</li>
@@ -76,7 +76,7 @@ export default function CaffeineForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cutting caffeine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t quit cold-turkey — headaches.</li>
               <li>Replace 1 cup at a time with decaf.</li>
               <li>Taper over 2 weeks.</li>
@@ -90,7 +90,7 @@ export default function CaffeineForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Talk to doctor</h3>
-            <p className="text-sm text-muted-foreground">Many BP or heart medications interact with caffeine. Heart medications especially. Some seniors should reduce or stop. Most fine with moderate. Doctor can advise based on your conditions.</p>
+            <p className="text-base text-muted-foreground">Many BP or heart medications interact with caffeine. Heart medications especially. Some seniors should reduce or stop. Most fine with moderate. Doctor can advise based on your conditions.</p>
           </CardContent>
         </Card>
       </main>

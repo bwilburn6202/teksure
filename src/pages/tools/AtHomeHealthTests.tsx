@@ -47,7 +47,7 @@ export default function AtHomeHealthTests() {
                   <span className="text-sm font-semibold text-primary">{t.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{t.best}</p>
-                <p className="text-sm text-muted-foreground">{t.good}</p>
+                <p className="text-base text-muted-foreground">{t.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -77,7 +77,7 @@ export default function AtHomeHealthTests() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best practical use</h3>
-            <p className="text-sm text-muted-foreground">If you take cholesterol or blood-sugar meds, a $50 LetsGetChecked or Quest Direct test mid-year can confirm your meds are working — without paying $200 for an office visit. Share the results in your patient portal.</p>
+            <p className="text-base text-muted-foreground">If you take cholesterol or blood-sugar meds, a $50 LetsGetChecked or Quest Direct test mid-year can confirm your meds are working — without paying $200 for an office visit. Share the results in your patient portal.</p>
           </CardContent>
         </Card>
       </main>

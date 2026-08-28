@@ -41,7 +41,7 @@ export default function PhoneSwitchHelper() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Use Apple's "Move to iOS" app — free</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>On your Android, install <strong>Move to iOS</strong> from the Play Store.</li>
                   <li>Turn on the new iPhone. Follow setup until you reach <strong>"Apps & Data"</strong>.</li>
                   <li>Tap <strong>"Move Data from Android"</strong>.</li>
@@ -84,7 +84,7 @@ export default function PhoneSwitchHelper() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Best path — use a USB cable</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>Turn on the new Android. When it asks "Copy data?" — say YES.</li>
                   <li>Choose "From an iPhone" or "iCloud" or "From a Cable".</li>
                   <li>Connect the two phones with the cable that came in the box (or use a Lightning-to-USB-C adapter).</li>
@@ -98,7 +98,7 @@ export default function PhoneSwitchHelper() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Easier paths if cables don't work</h3>
-                <ul className="list-disc pl-5 space-y-2 text-sm">
+                <ul className="list-disc pl-5 space-y-2 text-base">
                   <li><strong>Photos:</strong> Install Google Photos on the iPhone. Sign in. Let it back up everything. On Android, sign in to the same Google account — photos appear.</li>
                   <li><strong>Contacts:</strong> On iPhone: Settings → Contacts → Accounts → Add Google account → turn on Contacts. iPhone uploads them. New Android with same Google account already has them.</li>
                   <li><strong>Calendar:</strong> Same as contacts — sync with Google Calendar.</li>
@@ -112,7 +112,7 @@ export default function PhoneSwitchHelper() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If something doesn't transfer</h3>
-            <p className="text-sm text-muted-foreground">Don't panic. Both Apple and Google have free phone support. Apple: 1-800-MY-APPLE. Google Pixel: 1-855-836-3987. They walk you through it patiently.</p>
+            <p className="text-base text-muted-foreground">Don't panic. Both Apple and Google have free phone support. Apple: 1-800-MY-APPLE. Google Pixel: 1-855-836-3987. They walk you through it patiently.</p>
           </CardContent>
         </Card>
       </main>

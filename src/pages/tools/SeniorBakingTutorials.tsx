@@ -19,7 +19,7 @@ export default function SeniorBakingTutorials() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best YouTube channels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Joshua Weissman — bread mastery.</li>
               <li>Preppy Kitchen — gorgeous baking.</li>
               <li>Sally&apos;s Baking Recipes — beginner-friendly.</li>
@@ -33,7 +33,7 @@ export default function SeniorBakingTutorials() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">King Arthur app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free recipes from King Arthur Baking.</li>
               <li>Step-by-step instructions.</li>
               <li>Beginner to advanced.</li>
@@ -47,7 +47,7 @@ export default function SeniorBakingTutorials() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly bakes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No-knead bread — minimal effort.</li>
               <li>Cookies — easy + crowd-pleasing.</li>
               <li>Bundt cakes — one pan.</li>
@@ -61,7 +61,7 @@ export default function SeniorBakingTutorials() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tools that help seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stand mixer (KitchenAid) — saves wrists.</li>
               <li>Silicone baking mats — non-stick.</li>
               <li>Cookie scoop — even portions.</li>
@@ -75,7 +75,7 @@ export default function SeniorBakingTutorials() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Great British Bake Off</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Beloved show — wholesome competition.</li>
               <li>Streaming on Netflix.</li>
               <li>Free + paid versions.</li>
@@ -89,7 +89,7 @@ export default function SeniorBakingTutorials() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sourdough revival</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many seniors discovered baking in 2020.</li>
               <li>Bread-making rewarding hobby.</li>
               <li>Breadtopia — sourdough specifics.</li>
@@ -103,7 +103,7 @@ export default function SeniorBakingTutorials() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with no-knead bread</h3>
-            <p className="text-sm text-muted-foreground">Search YouTube for &quot;no-knead bread Jim Lahey.&quot; Watch the simple 4-ingredient recipe. Mix in evening, bake next afternoon. Perfect bread, no effort. Many seniors discover bread-making this way and never go back to store-bought. Pair with King Arthur free recipes for endless variety. Beautiful retirement hobby.</p>
+            <p className="text-base text-muted-foreground">Search YouTube for &quot;no-knead bread Jim Lahey.&quot; Watch the simple 4-ingredient recipe. Mix in evening, bake next afternoon. Perfect bread, no effort. Many seniors discover bread-making this way and never go back to store-bought. Pair with King Arthur free recipes for endless variety. Beautiful retirement hobby.</p>
           </CardContent>
         </Card>
       </main>

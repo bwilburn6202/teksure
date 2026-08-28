@@ -19,7 +19,7 @@ export default function SeniorDrivingAssist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Most useful features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Backup camera — REQUIRED on 2018+ cars.</li>
               <li>Blind spot monitoring.</li>
               <li>Lane departure warning.</li>
@@ -33,7 +33,7 @@ export default function SeniorDrivingAssist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Backup camera retrofit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Add to older car — $100–$300.</li>
               <li>Wireless versions easier install.</li>
               <li>Auto Trucks at most installers.</li>
@@ -47,7 +47,7 @@ export default function SeniorDrivingAssist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Blind spot mirrors (cheap fix)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$10 stick-on mirrors.</li>
               <li>No tech, no install.</li>
               <li>See vehicles in blind spots.</li>
@@ -61,7 +61,7 @@ export default function SeniorDrivingAssist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">CarPlay + Android Auto</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Connect phone to car display.</li>
               <li>Larger map view.</li>
               <li>Voice commands.</li>
@@ -75,7 +75,7 @@ export default function SeniorDrivingAssist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to consider new car</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Current car 15+ years old.</li>
               <li>No backup camera.</li>
               <li>Frequent fender-benders.</li>
@@ -89,7 +89,7 @@ export default function SeniorDrivingAssist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly cars</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Subaru Forester — high seating, great visibility.</li>
               <li>Toyota Camry — reliable + standard safety.</li>
               <li>Hyundai Sonata — easy controls.</li>
@@ -103,7 +103,7 @@ export default function SeniorDrivingAssist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Backup camera most important</h3>
-            <p className="text-sm text-muted-foreground">If your car is from 2017 or earlier and lacks a backup camera, retrofitting one ($150–$300 with installation) is the most important senior driver upgrade. Stops backup accidents that often involve children. Most other safety features are nice-to-have but backup camera is essential. Many states now require for new cars and inspection.</p>
+            <p className="text-base text-muted-foreground">If your car is from 2017 or earlier and lacks a backup camera, retrofitting one ($150–$300 with installation) is the most important senior driver upgrade. Stops backup accidents that often involve children. Most other safety features are nice-to-have but backup camera is essential. Many states now require for new cars and inspection.</p>
           </CardContent>
         </Card>
       </main>

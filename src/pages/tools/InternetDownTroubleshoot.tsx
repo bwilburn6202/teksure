@@ -31,7 +31,7 @@ export default function InternetDownTroubleshoot() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 2 — Power cycle (the magic fix)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Unplug the MODEM (not router) from power.</li>
               <li>Unplug the ROUTER from power.</li>
               <li>Wait 30 seconds.</li>
@@ -98,7 +98,7 @@ export default function InternetDownTroubleshoot() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tip — backup internet</h3>
-            <p className="text-sm text-muted-foreground">If internet is critical (medical alert, work-from-home), set up "phone hotspot" backup OR pay $5-10/month for a 5G mobile hotspot device. Saves you when ISP has 12-hour outage.</p>
+            <p className="text-base text-muted-foreground">If internet is critical (medical alert, work-from-home), set up "phone hotspot" backup OR pay $5-10/month for a 5G mobile hotspot device. Saves you when ISP has 12-hour outage.</p>
           </CardContent>
         </Card>
       </main>

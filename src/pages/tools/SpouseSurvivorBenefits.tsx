@@ -319,7 +319,7 @@ export default function SpouseSurvivorBenefits() {
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <p className="text-sm font-semibold mb-3">Useful direct links</p>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-base">
                 <li><a href="https://www.ssa.gov/benefits/retirement/planner/applying7.html" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">Apply for spousal benefits <ExternalLink className="h-3 w-3" /></a> — official ssa.gov page</li>
                 <li><a href="https://www.ssa.gov/benefits/survivors/" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">Survivor benefits overview <ExternalLink className="h-3 w-3" /></a> — qualifications and amounts</li>
                 <li><a href="https://www.ssa.gov/benefits/survivors/ifyou.html" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">If a family member dies <ExternalLink className="h-3 w-3" /></a> — what to do, who to call</li>

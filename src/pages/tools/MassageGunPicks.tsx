@@ -33,7 +33,7 @@ export default function MassageGunPicks() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function MassageGunPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Start on LOWEST setting. Senior skin / muscles are gentler than 25-year-old&apos;s.</li>
               <li>1-2 minutes per area. NOT longer.</li>
               <li>Never on bones — knees, elbows, spine.</li>
@@ -56,7 +56,7 @@ export default function MassageGunPicks() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When NOT to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pacemaker — avoid chest/upper back.</li>
               <li>Recent surgery, fracture, sprain.</li>
               <li>Blood clots / DVT history.</li>
@@ -71,7 +71,7 @@ export default function MassageGunPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stiff shoulders — 1 min each.</li>
               <li>Calf cramps — 1 min each.</li>
               <li>Lower back tension — light pressure, 2 min.</li>
@@ -86,7 +86,7 @@ export default function MassageGunPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Alternatives to consider</h3>
-            <p className="text-sm text-muted-foreground">Foam roller ($25) does similar for some areas. Heating pad ($25) for chronic tightness. Tens unit ($30) for nerve pain. Real massage therapist ($60-100/hr) better for serious issues. Massage gun is for daily 5-min self-care.</p>
+            <p className="text-base text-muted-foreground">Foam roller ($25) does similar for some areas. Heating pad ($25) for chronic tightness. Tens unit ($30) for nerve pain. Real massage therapist ($60-100/hr) better for serious issues. Massage gun is for daily 5-min self-care.</p>
           </CardContent>
         </Card>
       </main>

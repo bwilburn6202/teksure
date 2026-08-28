@@ -19,7 +19,7 @@ export default function MedisafePillReminder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Medisafe?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free app — medication reminder for phone.</li>
               <li>Enter your medications + times.</li>
               <li>Phone alerts when it&apos;s time to take them.</li>
@@ -33,7 +33,7 @@ export default function MedisafePillReminder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up your medications</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Medisafe free from app store.</li>
               <li>Tap &quot;Add Medication.&quot;</li>
               <li>Type medication name — it recognizes most.</li>
@@ -47,7 +47,7 @@ export default function MedisafePillReminder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>App alerts you when time to take medication.</li>
               <li>Tap &quot;Take&quot; to confirm you took it.</li>
               <li>Or tap &quot;Skip&quot; — it records that too.</li>
@@ -61,7 +61,7 @@ export default function MedisafePillReminder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medsafe + family</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Medfriend&quot; — add family member to your account.</li>
               <li>They get alert if you miss a dose.</li>
               <li>Great for adult children monitoring parents.</li>
@@ -75,7 +75,7 @@ export default function MedisafePillReminder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drug interaction check</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Enter all medications — app flags interactions.</li>
               <li>Shows warnings from drug database.</li>
               <li>Useful second opinion — always confirm with doctor.</li>
@@ -89,7 +89,7 @@ export default function MedisafePillReminder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other pill reminder options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Health — basic med reminders.</li>
               <li>MyTherapy — similar to Medisafe, also free.</li>
               <li>Pillboxie — simple visual pill organizer app.</li>
@@ -103,7 +103,7 @@ export default function MedisafePillReminder() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Missing doses is costly</h3>
-            <p className="text-sm text-muted-foreground">Studies show seniors miss up to 50% of prescribed doses. Missing blood pressure or diabetes medication regularly leads to hospitalizations that cost far more than any app. Medisafe is free and takes 10 minutes to set up. If you take more than two medications, this app pays for itself many times over in health benefits alone.</p>
+            <p className="text-base text-muted-foreground">Studies show seniors miss up to 50% of prescribed doses. Missing blood pressure or diabetes medication regularly leads to hospitalizations that cost far more than any app. Medisafe is free and takes 10 minutes to set up. If you take more than two medications, this app pays for itself many times over in health benefits alone.</p>
           </CardContent>
         </Card>
       </main>

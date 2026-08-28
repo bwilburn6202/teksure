@@ -500,7 +500,7 @@ export default function InternetSpeedDoctor() {
                             <Badge className={`text-xs ${priorityClass}`}>{priorityLabel}</Badge>
                           </div>
                           <h3 className="text-lg font-bold leading-tight mb-1">{fix.title}</h3>
-                          <p className="text-sm text-muted-foreground">{fix.summary}</p>
+                          <p className="text-base text-muted-foreground">{fix.summary}</p>
                         </div>
                       </div>
 

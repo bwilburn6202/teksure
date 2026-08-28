@@ -19,7 +19,7 @@ export default function BasicToolsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Essential 10 tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hammer (16oz claw).</li>
               <li>Phillips + flathead screwdriver.</li>
               <li>Adjustable wrench.</li>
@@ -37,7 +37,7 @@ export default function BasicToolsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly drill</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Black+Decker 12V</strong> — light. $50.</li>
               <li><strong>Bosch 12V</strong> — better quality. $100.</li>
               <li><strong>Avoid 18V/20V</strong> — too heavy.</li>
@@ -51,7 +51,7 @@ export default function BasicToolsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart upgrades</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Magnetic tip screwdriver</strong> — easier with shaky hands.</li>
               <li><strong>Talking tape measure</strong> — speaks dimensions.</li>
               <li><strong>Telescoping pickup tool</strong> — drop screws? Easy retrieval.</li>
@@ -64,7 +64,7 @@ export default function BasicToolsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to buy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Costco</strong> — DeWalt sets reasonable.</li>
               <li><strong>Home Depot, Lowes</strong> — wide selection.</li>
               <li><strong>Harbor Freight</strong> — cheap (good for occasional use).</li>
@@ -77,7 +77,7 @@ export default function BasicToolsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to call handyman</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Anything above 6 feet.</li>
               <li>Electrical work.</li>
               <li>Plumbing major.</li>
@@ -92,7 +92,7 @@ export default function BasicToolsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior workshops</h3>
-            <p className="text-sm text-muted-foreground">Many community colleges + Home Depots offer free DIY classes for beginners. Senior centers too. Don&apos;t learn alone — get hands-on instruction. Confidence comes with practice.</p>
+            <p className="text-base text-muted-foreground">Many community colleges + Home Depots offer free DIY classes for beginners. Senior centers too. Don&apos;t learn alone — get hands-on instruction. Confidence comes with practice.</p>
           </CardContent>
         </Card>
       </main>

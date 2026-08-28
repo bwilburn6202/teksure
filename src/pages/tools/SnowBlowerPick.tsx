@@ -45,7 +45,7 @@ export default function SnowBlowerPick() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -75,7 +75,7 @@ export default function SnowBlowerPick() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Heart attack warning</h3>
-            <p className="text-sm text-muted-foreground">Heart attacks spike after heavy snow. Cold + exertion is a real risk. If you have heart issues, please HIRE someone — even snow blower work is heavy. Self-propelled models help a lot.</p>
+            <p className="text-base text-muted-foreground">Heart attacks spike after heavy snow. Cold + exertion is a real risk. If you have heart issues, please HIRE someone — even snow blower work is heavy. Self-propelled models help a lot.</p>
           </CardContent>
         </Card>
       </main>

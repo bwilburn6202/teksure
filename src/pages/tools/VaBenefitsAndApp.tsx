@@ -19,7 +19,7 @@ export default function VaBenefitsAndApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">VA Health Care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Eligible</strong>: most who served on active duty. Even decades later.</li>
               <li><strong>Cost</strong>: free for service-connected conditions. Low or no cost for many other conditions.</li>
               <li><strong>Includes</strong>: primary care, specialists, mental health, prescription drugs ($0-11/month copay), hearing aids (FREE), vision, dental (varies).</li>
@@ -101,7 +101,7 @@ export default function VaBenefitsAndApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">PACT Act expanded benefits in 2022</h3>
-            <p className="text-sm text-muted-foreground">If you served in Vietnam, the Gulf War, Iraq, Afghanistan, or near burn pits — you may now qualify for compensation for cancers and respiratory conditions previously denied. Apply or re-apply: many denied claims are getting reconsidered.</p>
+            <p className="text-base text-muted-foreground">If you served in Vietnam, the Gulf War, Iraq, Afghanistan, or near burn pits — you may now qualify for compensation for cancers and respiratory conditions previously denied. Apply or re-apply: many denied claims are getting reconsidered.</p>
           </CardContent>
         </Card>
       </main>

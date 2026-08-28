@@ -367,7 +367,7 @@ export default function BackupWizard() {
                       <item.icon className="h-6 w-6 text-primary shrink-0" />
                       <div className="flex-1 min-w-0">
                         <p className="font-medium">{item.label}</p>
-                        <p className="text-sm text-muted-foreground">{item.desc}</p>
+                        <p className="text-base text-muted-foreground">{item.desc}</p>
                       </div>
                       {selected && <CheckCircle2 className="h-5 w-5 text-primary shrink-0" />}
                     </button>
@@ -416,7 +416,7 @@ export default function BackupWizard() {
                           {dest.label}
                           {dest.id === 'both' && <Badge variant="secondary" className="text-xs">Best choice</Badge>}
                         </p>
-                        <p className="text-sm text-muted-foreground">{dest.desc}</p>
+                        <p className="text-base text-muted-foreground">{dest.desc}</p>
                         <p className="text-xs text-primary mt-1">{dest.pros}</p>
                       </div>
                       {selected && <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-1" />}

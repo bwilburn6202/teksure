@@ -19,7 +19,7 @@ export default function StayingPutChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Home modifications</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Grab bars in bathroom.</li>
               <li>Walk-in shower.</li>
               <li>Stair lift if 2-story.</li>
@@ -35,7 +35,7 @@ export default function StayingPutChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Care plan</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plan for as needs increase.</li>
               <li>In-home care via agency.</li>
               <li>Family caregivers.</li>
@@ -50,7 +50,7 @@ export default function StayingPutChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior support tech</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Watch with fall detection.</li>
               <li>Medical alert pendant.</li>
               <li>Ring/Nest doorbell + cameras.</li>
@@ -65,7 +65,7 @@ export default function StayingPutChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Connection essential</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family check-ins regular.</li>
               <li>Friends + neighbors visits.</li>
               <li>Faith community.</li>
@@ -80,7 +80,7 @@ export default function StayingPutChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to leave home</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Multiple falls.</li>
               <li>Unable to manage meds safely.</li>
               <li>Wandering / dementia advancing.</li>
@@ -95,7 +95,7 @@ export default function StayingPutChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free home assessment</h3>
-            <p className="text-sm text-muted-foreground">Many Area Agencies on Aging do free home safety assessments. Call <strong>Eldercare Locator: 1-800-677-1116</strong>. Occupational therapist evaluation Medicare-covered with referral. Catches risks early. Stay home safer longer.</p>
+            <p className="text-base text-muted-foreground">Many Area Agencies on Aging do free home safety assessments. Call <strong>Eldercare Locator: 1-800-677-1116</strong>. Occupational therapist evaluation Medicare-covered with referral. Catches risks early. Stay home safer longer.</p>
           </CardContent>
         </Card>
       </main>

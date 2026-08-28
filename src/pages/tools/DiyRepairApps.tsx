@@ -34,7 +34,7 @@ export default function DiyRepairApps() {
                   <span className="text-sm font-semibold text-primary">{r.cost}</span>
                 </div>
                 <p className="text-sm">{r.best}</p>
-                <p className="text-sm text-muted-foreground">{r.good}</p>
+                <p className="text-base text-muted-foreground">{r.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -77,7 +77,7 @@ export default function DiyRepairApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When you\'re unsure</h3>
-            <p className="text-sm text-muted-foreground">Try DIY for 30 minutes. If you\'re not making progress — STOP, call a pro. The hours you save sometimes cost more than the pro would have. Knowing your limits is wisdom.</p>
+            <p className="text-base text-muted-foreground">Try DIY for 30 minutes. If you\'re not making progress — STOP, call a pro. The hours you save sometimes cost more than the pro would have. Knowing your limits is wisdom.</p>
           </CardContent>
         </Card>
       </main>

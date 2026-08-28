@@ -19,7 +19,7 @@ export default function LiveCaptionsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Real-time captions for any audio.</li>
               <li>Phone calls + FaceTime calls.</li>
               <li>Videos on YouTube + websites.</li>
@@ -33,7 +33,7 @@ export default function LiveCaptionsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Live Captions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iOS 16+ required.</li>
               <li>Settings → Accessibility → Live Captions.</li>
               <li>Toggle on.</li>
@@ -47,7 +47,7 @@ export default function LiveCaptionsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android Live Captions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pixel + most modern Android phones.</li>
               <li>Settings → Accessibility → Live Caption.</li>
               <li>Or press volume button + tap caption icon.</li>
@@ -61,7 +61,7 @@ export default function LiveCaptionsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Phone call captions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read what caller says as they speak.</li>
               <li>Helpful when hearing aids fail.</li>
               <li>Faster than asking &quot;what?&quot; repeatedly.</li>
@@ -75,7 +75,7 @@ export default function LiveCaptionsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">In-person conversations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Place phone on table during conversations.</li>
               <li>Captions appear as person speaks.</li>
               <li>Helpful in restaurants with background noise.</li>
@@ -89,7 +89,7 @@ export default function LiveCaptionsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps for hearing loss</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Otter.ai — meetings + transcription.</li>
               <li>Live Transcribe (Android) — by Google.</li>
               <li>Innocaption — free for Americans with hearing loss.</li>
@@ -103,7 +103,7 @@ export default function LiveCaptionsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try it tonight on TV</h3>
-            <p className="text-sm text-muted-foreground">Tonight, watch your favorite TV show. Hold your phone with Live Captions enabled. Read along. Many seniors with mild hearing loss find this transformative — they catch dialogue they were missing without even realizing it. Combined with hearing aids, it&apos;s like having superpowers. Free, built into your phone, takes 30 seconds to enable.</p>
+            <p className="text-base text-muted-foreground">Tonight, watch your favorite TV show. Hold your phone with Live Captions enabled. Read along. Many seniors with mild hearing loss find this transformative — they catch dialogue they were missing without even realizing it. Combined with hearing aids, it&apos;s like having superpowers. Free, built into your phone, takes 30 seconds to enable.</p>
           </CardContent>
         </Card>
       </main>

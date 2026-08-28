@@ -19,7 +19,7 @@ export default function RobinhoodWebullSeniorWarning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What they are</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free trading apps — popular with younger investors.</li>
               <li>Designed for active trading.</li>
               <li>Gamified interface — like a game.</li>
@@ -33,7 +33,7 @@ export default function RobinhoodWebullSeniorWarning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why risky for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Encourages frequent trading (bad for returns).</li>
               <li>Promotes options + crypto (high risk).</li>
               <li>Limited retirement-focused tools.</li>
@@ -47,7 +47,7 @@ export default function RobinhoodWebullSeniorWarning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Better senior alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fidelity — same $0 commissions, better service.</li>
               <li>Schwab — phone advisors, branches available.</li>
               <li>Vanguard — lowest fund fees.</li>
@@ -61,7 +61,7 @@ export default function RobinhoodWebullSeniorWarning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common senior mistakes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Day trading retirement money.</li>
               <li>Buying meme stocks (GameStop, AMC).</li>
               <li>Cryptocurrency speculation.</li>
@@ -75,7 +75,7 @@ export default function RobinhoodWebullSeniorWarning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If grandkids use Robinhood</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Have honest conversation about risks.</li>
               <li>Don&apos;t lend them money for trading.</li>
               <li>Recommend index fund investing instead.</li>
@@ -89,7 +89,7 @@ export default function RobinhoodWebullSeniorWarning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you have money there already</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Consider transferring to Fidelity/Schwab/Vanguard.</li>
               <li>ACAT transfer — free + automatic.</li>
               <li>Takes 5–10 days to complete.</li>
@@ -103,7 +103,7 @@ export default function RobinhoodWebullSeniorWarning() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Boring is good in retirement</h3>
-            <p className="text-sm text-muted-foreground">Investing in retirement should be boring — that&apos;s the point. Robinhood and Webull are designed to make trading feel exciting like a game. That feeling is exactly what destroys retirement portfolios. Fidelity, Schwab, or Vanguard have the same $0 commissions but emphasize long-term thinking. Use those instead. Your future self will thank you.</p>
+            <p className="text-base text-muted-foreground">Investing in retirement should be boring — that&apos;s the point. Robinhood and Webull are designed to make trading feel exciting like a game. That feeling is exactly what destroys retirement portfolios. Fidelity, Schwab, or Vanguard have the same $0 commissions but emphasize long-term thinking. Use those instead. Your future self will thank you.</p>
           </CardContent>
         </Card>
       </main>

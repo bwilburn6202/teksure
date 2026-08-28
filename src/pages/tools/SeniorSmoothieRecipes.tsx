@@ -19,7 +19,7 @@ export default function SeniorSmoothieRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why smoothies for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Easy chewing/swallowing.</li>
               <li>Pack 30g protein in 1 glass.</li>
               <li>Fit in fruits + veggies easily.</li>
@@ -32,7 +32,7 @@ export default function SeniorSmoothieRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">1. Power Breakfast (30g protein)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 cup Greek yogurt</li>
               <li>1 scoop vanilla protein powder</li>
               <li>1 banana</li>
@@ -46,7 +46,7 @@ export default function SeniorSmoothieRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">2. Berry Brain Booster</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 cup mixed frozen berries</li>
               <li>1 cup spinach (you won&apos;t taste it)</li>
               <li>1 scoop protein powder</li>
@@ -59,7 +59,7 @@ export default function SeniorSmoothieRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">3. Green Goddess</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 cup spinach or kale</li>
               <li>½ avocado</li>
               <li>1 banana</li>
@@ -73,7 +73,7 @@ export default function SeniorSmoothieRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">4. Tropical Recovery</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>½ cup frozen mango</li>
               <li>½ cup frozen pineapple</li>
               <li>1 scoop vanilla protein</li>
@@ -86,7 +86,7 @@ export default function SeniorSmoothieRecipes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5. Chocolate Strength</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 scoop chocolate protein</li>
               <li>1 banana</li>
               <li>1 Tbsp almond butter</li>
@@ -100,7 +100,7 @@ export default function SeniorSmoothieRecipes() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best blender for seniors</h3>
-            <p className="text-sm text-muted-foreground"><strong>NutriBullet Pro</strong> — $90, simple, no buttons. <strong>Magic Bullet</strong> — $40 budget pick. Avoid heavy Vitamix unless gift from family. One-button operation = senior friendly.</p>
+            <p className="text-base text-muted-foreground"><strong>NutriBullet Pro</strong> — $90, simple, no buttons. <strong>Magic Bullet</strong> — $40 budget pick. Avoid heavy Vitamix unless gift from family. One-button operation = senior friendly.</p>
           </CardContent>
         </Card>
       </main>

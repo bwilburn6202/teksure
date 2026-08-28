@@ -361,7 +361,7 @@ export default function PhoneDiagnosticChecklist() {
                         <CheckCircle2 className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
                         <div>
                           <p className="font-semibold mb-1">Your phone is healthy.</p>
-                          <p className="text-sm text-muted-foreground">
+                          <p className="text-base text-muted-foreground">
                             All 11 tests passed. If you came here because of a specific issue, the
                             cause may be a single app or a recent setting change. Try restarting
                             the phone and checking for software updates.
@@ -440,7 +440,7 @@ export default function PhoneDiagnosticChecklist() {
                         </div>
                       </div>
                     ) : (
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         With {summary.failed} failure{summary.failed === 1 ? '' : 's'}, targeted
                         repair is likely worthwhile. Try the free fixes for "could be either" items
                         first; they cost nothing. Then get a quote for any remaining hardware

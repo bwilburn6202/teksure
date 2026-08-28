@@ -19,7 +19,7 @@ export default function IntermittentFastingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it is</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Eat all meals in time window.</li>
               <li>Common: 16:8 — fast 16 hrs, eat in 8 hrs.</li>
               <li>Easier: 14:10 — fast 14 hrs.</li>
@@ -33,7 +33,7 @@ export default function IntermittentFastingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Modest weight loss.</li>
               <li>Better blood sugar control.</li>
               <li>Lower inflammation.</li>
@@ -48,7 +48,7 @@ export default function IntermittentFastingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior cautions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Talk to doctor FIRST — especially diabetic, kidney, heart.</li>
               <li>Some meds need food.</li>
               <li>Risk of dizziness / fainting (fall risk).</li>
@@ -63,7 +63,7 @@ export default function IntermittentFastingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start gentle</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Week 1: 12-hr fast (8pm-8am). Most already do.</li>
               <li>Week 2: 14:10 — last meal 7pm, breakfast 9am.</li>
               <li>Week 3: 16:8 — last meal 7pm, lunch noon.</li>
@@ -77,7 +77,7 @@ export default function IntermittentFastingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eating window tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Eat enough — don&apos;t under-eat.</li>
               <li>Protein priority — preserves muscle.</li>
               <li>Vegetables for fiber.</li>
@@ -91,7 +91,7 @@ export default function IntermittentFastingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tracking apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Zero</strong> — most popular fasting app. Free.</li>
               <li><strong>Fastic</strong> — community + tracking.</li>
               <li><strong>Simple</strong> — free, color-coded.</li>
@@ -104,7 +104,7 @@ export default function IntermittentFastingSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Doctor first</h3>
-            <p className="text-sm text-muted-foreground">Senior bodies different. Please discuss with primary doctor before starting. Diabetic seniors need special considerations — insulin timing changes. Some studies show fasting may not be ideal for older adults due to muscle loss risk. May not be right for everyone.</p>
+            <p className="text-base text-muted-foreground">Senior bodies different. Please discuss with primary doctor before starting. Diabetic seniors need special considerations — insulin timing changes. Some studies show fasting may not be ideal for older adults due to muscle loss risk. May not be right for everyone.</p>
           </CardContent>
         </Card>
       </main>

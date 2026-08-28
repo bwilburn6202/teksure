@@ -34,7 +34,7 @@ export default function JewishCalendarApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -67,7 +67,7 @@ export default function JewishCalendarApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For grandkids</h3>
-            <p className="text-sm text-muted-foreground">PJ Library (free) sends Jewish children\'s books for ages 0-8. Sign up grandkids at pjlibrary.org. Free monthly mailing for the first year.</p>
+            <p className="text-base text-muted-foreground">PJ Library (free) sends Jewish children\'s books for ages 0-8. Sign up grandkids at pjlibrary.org. Free monthly mailing for the first year.</p>
           </CardContent>
         </Card>
       </main>

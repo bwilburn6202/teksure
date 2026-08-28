@@ -19,7 +19,7 @@ export default function SeniorMakeupTipsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mature skin basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hydrate first — primer + moisturizer.</li>
               <li>Less foundation = less settling in lines.</li>
               <li>Cream products beat powder.</li>
@@ -33,7 +33,7 @@ export default function SeniorMakeupTipsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5-step morning routine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1. Moisturize with SPF.</li>
               <li>2. Tinted moisturizer or BB cream (not foundation).</li>
               <li>3. Cream blush — apple of cheek.</li>
@@ -47,7 +47,7 @@ export default function SeniorMakeupTipsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorite brands</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Laura Mercier</strong> — tinted moisturizer.</li>
               <li><strong>Bobbi Brown</strong> — natural look.</li>
               <li><strong>NARS</strong> — sheer foundation.</li>
@@ -61,7 +61,7 @@ export default function SeniorMakeupTipsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eye makeup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lighter shadow than younger.</li>
               <li>Avoid frosted shadow.</li>
               <li>Pencil liner over liquid (smudges).</li>
@@ -75,7 +75,7 @@ export default function SeniorMakeupTipsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lip color</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lipliner first — stops bleeding.</li>
               <li>Cream lipstick over matte (drying).</li>
               <li>Pink/coral more flattering than dark red.</li>
@@ -89,7 +89,7 @@ export default function SeniorMakeupTipsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps + tutorials</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YouTube</strong> — Trinny London, Hot &amp; Flashy.</li>
               <li><strong>YouCam Makeup</strong> — try styles virtually.</li>
               <li><strong>L&apos;Oreal Style My Hair</strong>.</li>
@@ -103,7 +103,7 @@ export default function SeniorMakeupTipsApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Skip these aging mistakes</h3>
-            <p className="text-sm text-muted-foreground">Heavy foundation — settles in lines. Black eyeliner all around — hardens face. Dark lipstick — ages. Frosted shadow — magnifies wrinkles. Caked-on powder. Skipping moisturizer. Same makeup as 20s. Adapt to current face. Less is genuinely more after 50. Confidence matters most.</p>
+            <p className="text-base text-muted-foreground">Heavy foundation — settles in lines. Black eyeliner all around — hardens face. Dark lipstick — ages. Frosted shadow — magnifies wrinkles. Caked-on powder. Skipping moisturizer. Same makeup as 20s. Adapt to current face. Less is genuinely more after 50. Confidence matters most.</p>
           </CardContent>
         </Card>
       </main>

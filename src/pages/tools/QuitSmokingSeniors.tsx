@@ -19,7 +19,7 @@ export default function QuitSmokingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Worth it at any age</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Quit at 65 = add 1.4 years to life.</li>
               <li>BP, heart rate normalize within hour.</li>
               <li>Lung capacity improves 30% in 9 months.</li>
@@ -34,7 +34,7 @@ export default function QuitSmokingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best quit methods</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Chantix (varenicline)</strong> — pill, 12 weeks. Most effective.</li>
               <li><strong>Nicotine replacement</strong> — patches, gum, lozenges.</li>
               <li><strong>Bupropion (Wellbutrin/Zyban)</strong> — pill.</li>
@@ -48,7 +48,7 @@ export default function QuitSmokingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free quit help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>1-800-QUIT-NOW</strong> — federal hotline. Free counseling.</li>
               <li><strong>Smokefree.gov</strong> — free quit plan.</li>
               <li><strong>QuitGuide app</strong> — free.</li>
@@ -62,7 +62,7 @@ export default function QuitSmokingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vaping is NOT safer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>EVALI — vaping lung disease, sometimes fatal.</li>
               <li>Still nicotine = addiction.</li>
               <li>Long-term effects unknown.</li>
@@ -76,7 +76,7 @@ export default function QuitSmokingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to try harder</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most quitters need 5-7 attempts.</li>
               <li>Each attempt is progress.</li>
               <li>Slip ≠ failure.</li>
@@ -90,7 +90,7 @@ export default function QuitSmokingSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For loved ones</h3>
-            <p className="text-sm text-muted-foreground">If you smoke, your spouse/grandchild&apos;s exposure to secondhand smoke = real harm. Many quit FOR family. Set quit date. Get support. Quitting hardest at first 30 days. Worth it.</p>
+            <p className="text-base text-muted-foreground">If you smoke, your spouse/grandchild&apos;s exposure to secondhand smoke = real harm. Many quit FOR family. Set quit date. Get support. Quitting hardest at first 30 days. Worth it.</p>
           </CardContent>
         </Card>
       </main>

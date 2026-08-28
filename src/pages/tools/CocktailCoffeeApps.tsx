@@ -36,7 +36,7 @@ export default function CocktailCoffeeApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -73,7 +73,7 @@ export default function CocktailCoffeeApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Sourdough hobbyist?</h3>
-            <p className="text-sm text-muted-foreground">"The Perfect Loaf" website has the best free sourdough guide. Pair with King Arthur Flour\'s recipe library. Get a kitchen scale ($25), a Dutch oven ($40), and a sourdough starter (or buy one online for $10). Bread for life.</p>
+            <p className="text-base text-muted-foreground">"The Perfect Loaf" website has the best free sourdough guide. Pair with King Arthur Flour\'s recipe library. Get a kitchen scale ($25), a Dutch oven ($40), and a sourdough starter (or buy one online for $10). Bread for life.</p>
           </CardContent>
         </Card>
       </main>

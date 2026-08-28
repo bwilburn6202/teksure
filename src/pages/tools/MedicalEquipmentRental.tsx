@@ -36,7 +36,7 @@ export default function MedicalEquipmentRental() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">FREE equipment programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Loan closets</strong> — many counties have free durable medical equipment loan closets. Search "[county] medical equipment loan".</li>
               <li><strong>Lions Club</strong> — free wheelchair, hearing equipment loans.</li>
               <li><strong>VFW / American Legion</strong> — for veterans.</li>
@@ -51,7 +51,7 @@ export default function MedicalEquipmentRental() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Rent for short-term needs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Drive Medical / Hugo Mobility</strong> — rentals 1-week to 6-month.</li>
               <li><strong>National Seating &amp; Mobility</strong> — chains nationwide.</li>
               <li><strong>Medequip USA</strong> — short-term rentals.</li>
@@ -65,7 +65,7 @@ export default function MedicalEquipmentRental() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Buying second-hand</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Facebook Marketplace</strong> — wheelchair, walker often $20-100.</li>
               <li><strong>Estate sales</strong> — frequently good deals.</li>
               <li><strong>Goodwill / Salvation Army</strong> — basic medical equipment.</li>
@@ -77,7 +77,7 @@ export default function MedicalEquipmentRental() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Skip mobility scooter dealers</h3>
-            <p className="text-sm text-muted-foreground">Aggressive scooter ads on TV target seniors. Same scooter often $1,500-3,000 cheaper used / from Costco / Amazon. Medicare may NOT cover the deluxe model they show. Get scooter through proper Medicare DME supplier instead.</p>
+            <p className="text-base text-muted-foreground">Aggressive scooter ads on TV target seniors. Same scooter often $1,500-3,000 cheaper used / from Costco / Amazon. Medicare may NOT cover the deluxe model they show. Get scooter through proper Medicare DME supplier instead.</p>
           </CardContent>
         </Card>
       </main>

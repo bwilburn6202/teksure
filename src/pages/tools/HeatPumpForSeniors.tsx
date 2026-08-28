@@ -19,7 +19,7 @@ export default function HeatPumpForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What heat pump is</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heating + cooling in ONE system.</li>
               <li>Replaces furnace + AC.</li>
               <li>Electric only — no fossil fuel.</li>
@@ -33,7 +33,7 @@ export default function HeatPumpForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Federal tax credits 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$2,000 federal tax credit.</li>
               <li>Up to $8,000 rebates (state/income-based).</li>
               <li>Plus utility rebates often $500-3,000.</li>
@@ -47,7 +47,7 @@ export default function HeatPumpForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$8,000-25,000 typical install.</li>
               <li>After rebates: $4,000-15,000.</li>
               <li>Lasts 15-20 years.</li>
@@ -61,7 +61,7 @@ export default function HeatPumpForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mini-split option</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ductless mini-split.</li>
               <li>Just one room or whole house.</li>
               <li>$3K-15K install.</li>
@@ -75,7 +75,7 @@ export default function HeatPumpForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When best</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Replacing both AC + furnace.</li>
               <li>Mild climates (Zone 1-3 best).</li>
               <li>High electric efficiency.</li>
@@ -89,7 +89,7 @@ export default function HeatPumpForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Find installer</h3>
-            <p className="text-sm text-muted-foreground"><strong>Energy Star Quality Installation</strong> certified. Get 3+ quotes — $5K+ variation common. Avoid pushy salespeople. Many state energy offices have approved installer lists. <strong>Rewiring America</strong> — rewiringamerica.org. Free guides + local programs.</p>
+            <p className="text-base text-muted-foreground"><strong>Energy Star Quality Installation</strong> certified. Get 3+ quotes — $5K+ variation common. Avoid pushy salespeople. Many state energy offices have approved installer lists. <strong>Rewiring America</strong> — rewiringamerica.org. Free guides + local programs.</p>
           </CardContent>
         </Card>
       </main>

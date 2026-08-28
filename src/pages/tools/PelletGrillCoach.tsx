@@ -47,7 +47,7 @@ export default function PelletGrillCoach() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -81,7 +81,7 @@ export default function PelletGrillCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best YouTube</h3>
-            <p className="text-sm text-muted-foreground">"Mad Scientist BBQ" and "Meat Church BBQ" — top channels. Free. World-class techniques. Watch one episode and you\'ll be a smoker overnight.</p>
+            <p className="text-base text-muted-foreground">"Mad Scientist BBQ" and "Meat Church BBQ" — top channels. Free. World-class techniques. Watch one episode and you\'ll be a smoker overnight.</p>
           </CardContent>
         </Card>
       </main>

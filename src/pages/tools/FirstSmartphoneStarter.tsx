@@ -19,7 +19,7 @@ export default function FirstSmartphoneStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick the right phone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone SE</strong> ($429) — small, simple, latest software.</li>
               <li><strong>iPhone 15</strong> ($800) — best long-term.</li>
               <li><strong>Samsung Galaxy A35</strong> ($380) — Android equivalent.</li>
@@ -33,7 +33,7 @@ export default function FirstSmartphoneStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Day 1 setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Have family member or store help.</li>
               <li>Set up Apple ID / Google account — write password down.</li>
               <li>Connect to home WiFi.</li>
@@ -49,7 +49,7 @@ export default function FirstSmartphoneStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Week 1: 5 basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Make + receive calls.</li>
               <li>Text messages.</li>
               <li>Take photos.</li>
@@ -63,7 +63,7 @@ export default function FirstSmartphoneStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Week 2: Voice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Hey Siri&quot; (iPhone) / &quot;Hey Google&quot; (Android).</li>
               <li>Voice typing instead of typing.</li>
               <li>Voice memos.</li>
@@ -77,7 +77,7 @@ export default function FirstSmartphoneStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Week 3: Communication</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Email check.</li>
               <li>FaceTime / video calls with family.</li>
               <li>Photos shared via text.</li>
@@ -90,7 +90,7 @@ export default function FirstSmartphoneStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Week 4: Practical apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Maps for directions.</li>
               <li>Weather.</li>
               <li>Bank app.</li>
@@ -104,7 +104,7 @@ export default function FirstSmartphoneStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common worries</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;I&apos;ll break it&quot; — get hard case + screen protector.</li>
               <li>&quot;I&apos;ll forget password&quot; — set fingerprint / Face ID.</li>
               <li>&quot;I&apos;ll click wrong thing&quot; — Apple/Google undo most actions.</li>
@@ -117,7 +117,7 @@ export default function FirstSmartphoneStarter() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground"><strong>Senior Planet</strong> — free senior tech classes. <strong>OATS / Older Adults Technology Services</strong> — free training. <strong>Library</strong> — many offer 1-on-1 phone help. <strong>AARP TEK</strong> — courses + workshops. <strong>Apple stores</strong> — free Today at Apple sessions. Senior tech help is everywhere — use it.</p>
+            <p className="text-base text-muted-foreground"><strong>Senior Planet</strong> — free senior tech classes. <strong>OATS / Older Adults Technology Services</strong> — free training. <strong>Library</strong> — many offer 1-on-1 phone help. <strong>AARP TEK</strong> — courses + workshops. <strong>Apple stores</strong> — free Today at Apple sessions. Senior tech help is everywhere — use it.</p>
           </CardContent>
         </Card>
       </main>

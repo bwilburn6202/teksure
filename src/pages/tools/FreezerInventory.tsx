@@ -19,7 +19,7 @@ export default function FreezerInventory() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pantry Check</strong> — free iPhone/Android. Scan barcode → adds to list. Tracks expiration.</li>
               <li><strong>NoWaste</strong> — free. Tracks freezer, fridge, pantry. Reminds you when items are old.</li>
               <li><strong>Apple Notes / Google Keep</strong> — simplest option. Just type a list.</li>
@@ -31,7 +31,7 @@ export default function FreezerInventory() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The no-app system</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Tape a piece of paper to the freezer door.</li>
               <li>When you put something in — write it down + date.</li>
               <li>When you take it out — cross it off.</li>
@@ -44,7 +44,7 @@ export default function FreezerInventory() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How long things actually last frozen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Beef, pork, lamb (raw)</strong> — 6-12 months.</li>
               <li><strong>Chicken (raw)</strong> — 9 months. Pieces 4-6 months.</li>
               <li><strong>Cooked meat / leftovers</strong> — 2-3 months.</li>
@@ -61,7 +61,7 @@ export default function FreezerInventory() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Label everything</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Painter&apos;s tape + Sharpie. $5 setup.</li>
               <li>Write WHAT and DATE FROZEN.</li>
               <li>"2 lbs chicken thighs — 2/15/26"</li>
@@ -73,7 +73,7 @@ export default function FreezerInventory() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">"Eat from the freezer" week</h3>
-            <p className="text-sm text-muted-foreground">Every 3 months, do an "eat from the freezer" week. Skip the grocery store. Cook only what&apos;s already frozen. Forces rotation, rediscovers forgotten meals, saves $100-200 in groceries that week.</p>
+            <p className="text-base text-muted-foreground">Every 3 months, do an "eat from the freezer" week. Skip the grocery store. Cook only what&apos;s already frozen. Forces rotation, rediscovers forgotten meals, saves $100-200 in groceries that week.</p>
           </CardContent>
         </Card>
       </main>

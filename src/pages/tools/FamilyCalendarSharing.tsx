@@ -19,7 +19,7 @@ export default function FamilyCalendarSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Apple Calendar — share with another iPhone user</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open the <strong>Calendar</strong> app.</li>
               <li>Tap <strong>Calendars</strong> at the bottom.</li>
               <li>Tap the small <strong>"i"</strong> next to "Family" (or any calendar).</li>
@@ -34,7 +34,7 @@ export default function FamilyCalendarSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Google Calendar — share with anyone</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open <a href="https://calendar.google.com" target="_blank" rel="noopener noreferrer" className="text-primary underline">calendar.google.com</a> on a computer (easier to set up than the app).</li>
               <li>Find your calendar in the left sidebar. Hover over it → click the three dots.</li>
               <li>Click "Settings and sharing".</li>
@@ -50,7 +50,7 @@ export default function FamilyCalendarSharing() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Mixed family — iPhone people + Android people</h2>
             <p className="text-sm mb-3">Apple Calendar and Google Calendar can talk to each other:</p>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>The Apple person: Settings → Calendar → Accounts → Add Account → Google.</li>
               <li>Sign in with their Google account.</li>
               <li>Now their Google calendar appears inside iPhone's Calendar app.</li>
@@ -76,7 +76,7 @@ export default function FamilyCalendarSharing() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — print a paper copy for the fridge</h3>
-            <p className="text-sm text-muted-foreground">Both Apple and Google calendars can print a monthly view. Some seniors like seeing the month at a glance on paper, even with the digital version. On Google: print icon → choose "Month view" → print.</p>
+            <p className="text-base text-muted-foreground">Both Apple and Google calendars can print a monthly view. Some seniors like seeing the month at a glance on paper, even with the digital version. On Google: print icon → choose "Month view" → print.</p>
           </CardContent>
         </Card>
       </main>

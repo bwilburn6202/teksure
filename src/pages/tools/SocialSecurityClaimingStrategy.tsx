@@ -19,7 +19,7 @@ export default function SocialSecurityClaimingStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Your three claiming ages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Early: age 62 — reduced benefit (up to 30% less).</li>
               <li>Full Retirement Age: 66–67 — depends on birth year.</li>
               <li>Delayed: up to age 70 — 8% more per year delayed.</li>
@@ -33,7 +33,7 @@ export default function SocialSecurityClaimingStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Claim early — when it makes sense</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Health problems — shorter life expectancy.</li>
               <li>Need income now and have no savings.</li>
               <li>Spouse has larger benefit and will claim later.</li>
@@ -47,7 +47,7 @@ export default function SocialSecurityClaimingStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Delay claiming — when it makes sense</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Good health — long life expectancy in family.</li>
               <li>Working until 67–70 and don&apos;t need it yet.</li>
               <li>Want to maximize lifetime income.</li>
@@ -61,7 +61,7 @@ export default function SocialSecurityClaimingStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spousal benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Can claim up to 50% of spouse&apos;s benefit.</li>
               <li>If your own benefit is lower — spousal may be better.</li>
               <li>Lower-earning spouse often claims early.</li>
@@ -75,7 +75,7 @@ export default function SocialSecurityClaimingStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free tools to help decide</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SSA.gov retirement estimator — official tool.</li>
               <li>Create My Social Security account — see your estimate.</li>
               <li>AARP Social Security Benefits Calculator — free.</li>
@@ -89,7 +89,7 @@ export default function SocialSecurityClaimingStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Working while claiming</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Before full retirement age: earnings limit applies.</li>
               <li>2024 limit: $22,320 — $1 withheld per $2 over.</li>
               <li>At full retirement age: no earnings limit.</li>
@@ -103,7 +103,7 @@ export default function SocialSecurityClaimingStrategy() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">One size does not fit all</h3>
-            <p className="text-sm text-muted-foreground">The right Social Security claiming age is different for everyone. For married couples, the strategy often involves the lower earner claiming early while the higher earner delays to 70 — maximizing the lifetime survivor benefit. For single people in good health, delaying pays off after about age 82. Use the free Open Social Security calculator at OpenSocialSecurity.com to model your specific situation.</p>
+            <p className="text-base text-muted-foreground">The right Social Security claiming age is different for everyone. For married couples, the strategy often involves the lower earner claiming early while the higher earner delays to 70 — maximizing the lifetime survivor benefit. For single people in good health, delaying pays off after about age 82. Use the free Open Social Security calculator at OpenSocialSecurity.com to model your specific situation.</p>
           </CardContent>
         </Card>
       </main>

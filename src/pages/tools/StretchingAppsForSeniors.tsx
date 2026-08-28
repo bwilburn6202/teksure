@@ -19,7 +19,7 @@ export default function StretchingAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why daily stretching</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Maintains range of motion.</li>
               <li>Reduces injury risk.</li>
               <li>Eases arthritis pain.</li>
@@ -33,7 +33,7 @@ export default function StretchingAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stretchly — free, popular.</li>
               <li>Flex — variety of routines.</li>
               <li>Bend — daily stretch reminders.</li>
@@ -47,7 +47,7 @@ export default function StretchingAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouTube channels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Yoga With Adriene — gentle stretches.</li>
               <li>Senior Shape Fitness.</li>
               <li>HASfit senior stretching.</li>
@@ -61,7 +61,7 @@ export default function StretchingAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common senior areas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hamstrings — sitting tight.</li>
               <li>Hip flexors — sitting tight.</li>
               <li>Lower back — daily attention.</li>
@@ -75,7 +75,7 @@ export default function StretchingAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stretching safely</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Never bounce.</li>
               <li>Hold 15-30 seconds.</li>
               <li>Slight tension, never pain.</li>
@@ -89,7 +89,7 @@ export default function StretchingAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Make it routine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Same time daily.</li>
               <li>Habit-stack with morning coffee.</li>
               <li>Or right before bed.</li>
@@ -103,7 +103,7 @@ export default function StretchingAppsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Yoga With Adriene morning</h3>
-            <p className="text-sm text-muted-foreground">Most senior-friendly stretching: search YouTube for &quot;Yoga With Adriene morning stretch.&quot; 10-minute gentle routine. Cast to TV. Do daily for one month — feel difference. Free, easy, transformative for senior flexibility. No app needed. Adriene is loved by millions for gentle, encouraging style.</p>
+            <p className="text-base text-muted-foreground">Most senior-friendly stretching: search YouTube for &quot;Yoga With Adriene morning stretch.&quot; 10-minute gentle routine. Cast to TV. Do daily for one month — feel difference. Free, easy, transformative for senior flexibility. No app needed. Adriene is loved by millions for gentle, encouraging style.</p>
           </CardContent>
         </Card>
       </main>

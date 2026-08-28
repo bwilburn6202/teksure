@@ -19,7 +19,7 @@ export default function EmailScamSpotterTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Urgent language — &quot;account suspended.&quot;</li>
               <li>Threats — &quot;lose access.&quot;</li>
               <li>Generic greeting — &quot;Dear Customer.&quot;</li>
@@ -33,7 +33,7 @@ export default function EmailScamSpotterTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common senior scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Your Amazon order is delayed&quot; — fake.</li>
               <li>&quot;PayPal account suspended&quot; — fake.</li>
               <li>&quot;Your computer has virus&quot; — fake.</li>
@@ -47,7 +47,7 @@ export default function EmailScamSpotterTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Verify before clicking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hover over link — see actual URL.</li>
               <li>Real Amazon = amazon.com.</li>
               <li>Fake = amazon-secure-login.xyz.</li>
@@ -61,7 +61,7 @@ export default function EmailScamSpotterTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safe responses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t reply.</li>
               <li>Don&apos;t click links.</li>
               <li>Don&apos;t call number in email.</li>
@@ -75,7 +75,7 @@ export default function EmailScamSpotterTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you clicked already</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t panic.</li>
               <li>Change password if entered.</li>
               <li>Run antivirus scan.</li>
@@ -89,7 +89,7 @@ export default function EmailScamSpotterTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Email security setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Strong password + 2FA.</li>
               <li>Spam filter enabled.</li>
               <li>Don&apos;t share email widely.</li>
@@ -103,7 +103,7 @@ export default function EmailScamSpotterTutorial() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When in doubt — verify directly</h3>
-            <p className="text-sm text-muted-foreground">Got an &quot;urgent&quot; email from Amazon, your bank, or anyone? Don&apos;t click. Don&apos;t reply. Don&apos;t call. Open a new browser tab, type the company&apos;s URL directly. Login + check. If real issue, you&apos;ll see it. If not — it&apos;s scam. This single habit prevents 95% of phishing scams.</p>
+            <p className="text-base text-muted-foreground">Got an &quot;urgent&quot; email from Amazon, your bank, or anyone? Don&apos;t click. Don&apos;t reply. Don&apos;t call. Open a new browser tab, type the company&apos;s URL directly. Login + check. If real issue, you&apos;ll see it. If not — it&apos;s scam. This single habit prevents 95% of phishing scams.</p>
           </CardContent>
         </Card>
       </main>

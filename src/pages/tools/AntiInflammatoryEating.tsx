@@ -19,7 +19,7 @@ export default function AntiInflammatoryEating() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why inflammation matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Chronic inflammation = arthritis, heart disease, dementia.</li>
               <li>&quot;Inflammaging&quot; — increased inflammation with age.</li>
               <li>Diet is biggest lever you control.</li>
@@ -32,7 +32,7 @@ export default function AntiInflammatoryEating() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eat MORE of these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fatty fish</strong> — salmon, sardines, mackerel. 2x/week.</li>
               <li><strong>Berries</strong> — blueberries, strawberries. Daily handful.</li>
               <li><strong>Leafy greens</strong> — spinach, kale, arugula.</li>
@@ -48,7 +48,7 @@ export default function AntiInflammatoryEating() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eat LESS of these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Processed meats</strong> — bacon, sausage, deli meat.</li>
               <li><strong>Sugary drinks</strong> — soda, sweet tea.</li>
               <li><strong>White flour</strong> — white bread, pastries.</li>
@@ -63,7 +63,7 @@ export default function AntiInflammatoryEating() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sample day</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Breakfast</strong> — Greek yogurt, blueberries, walnuts, honey.</li>
               <li><strong>Lunch</strong> — salad with chickpeas, olive oil, tuna.</li>
               <li><strong>Snack</strong> — apple + almond butter.</li>
@@ -76,7 +76,7 @@ export default function AntiInflammatoryEating() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>Oldways.org</strong> — free Mediterranean diet guides. <strong>Arthritis.org</strong> — free anti-inflammatory recipes. <strong>NIH MedlinePlus</strong> — Mediterranean diet for seniors. No supplements needed — food works.</p>
+            <p className="text-base text-muted-foreground"><strong>Oldways.org</strong> — free Mediterranean diet guides. <strong>Arthritis.org</strong> — free anti-inflammatory recipes. <strong>NIH MedlinePlus</strong> — Mediterranean diet for seniors. No supplements needed — food works.</p>
           </CardContent>
         </Card>
       </main>

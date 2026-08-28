@@ -33,7 +33,7 @@ export default function CreditRepairScamWarning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What works (FREE)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Pay bills on time, every time</strong>. Single biggest factor (35% of score).</li>
               <li><strong>Pay down credit card balances</strong>. Get utilization under 30% — ideally under 10%.</li>
               <li><strong>Dispute errors yourself</strong>. annualcreditreport.com → see your reports → file disputes online with each bureau (Equifax, Experian, TransUnion).</li>
@@ -49,7 +49,7 @@ export default function CreditRepairScamWarning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you DO need help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NFCC.org — National Foundation for Credit Counseling</strong>. Non-profit. Free or low-cost. Real help.</li>
               <li><strong>HUD-approved housing counselors</strong> (hud.gov) — free for housing-related credit issues.</li>
               <li><strong>Legal Aid</strong> — for FCRA disputes / debt harassment. Free for low-income.</li>
@@ -75,7 +75,7 @@ export default function CreditRepairScamWarning() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Bottom line</h3>
-            <p className="text-sm text-muted-foreground">If your credit is bad, the only real fix is TIME + on-time payments + reduced utilization. No company can magically erase legitimate negative items. Do the work yourself for free, or get help from NFCC. Skip everyone in a TV ad promising "credit repair".</p>
+            <p className="text-base text-muted-foreground">If your credit is bad, the only real fix is TIME + on-time payments + reduced utilization. No company can magically erase legitimate negative items. Do the work yourself for free, or get help from NFCC. Skip everyone in a TV ad promising "credit repair".</p>
           </CardContent>
         </Card>
       </main>

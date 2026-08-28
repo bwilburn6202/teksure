@@ -19,7 +19,7 @@ export default function OneDriveBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is OneDrive?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Microsoft cloud storage.</li>
               <li>5GB free.</li>
               <li>Files accessible anywhere.</li>
@@ -33,7 +33,7 @@ export default function OneDriveBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup on Windows</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>OneDrive icon in taskbar (cloud).</li>
               <li>Sign in with Microsoft account.</li>
               <li>Choose folders to backup.</li>
@@ -47,7 +47,7 @@ export default function OneDriveBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Storage tiers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>5GB free.</li>
               <li>100GB — $20/yr.</li>
               <li>1TB with Microsoft 365 — $70/yr.</li>
@@ -61,7 +61,7 @@ export default function OneDriveBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Access from phone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>OneDrive app — App Store / Play.</li>
               <li>Sign in with Microsoft.</li>
               <li>All your files visible.</li>
@@ -75,7 +75,7 @@ export default function OneDriveBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Share files</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Right-click file.</li>
               <li>&quot;Share&quot;.</li>
               <li>Type email address.</li>
@@ -89,7 +89,7 @@ export default function OneDriveBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior best uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photo backup automatic.</li>
               <li>Important documents.</li>
               <li>Tax records.</li>
@@ -104,7 +104,7 @@ export default function OneDriveBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Family backup access</h3>
-            <p className="text-sm text-muted-foreground">Critical for seniors: trusted family member should have access if you can&apos;t. Add as &quot;Trusted Contact&quot;. Or share password manager with locked OneDrive password. They access in emergency. Photos preserved generations. Documents accessible. Without this — family loses everything if cloud account locked. Plan ahead.</p>
+            <p className="text-base text-muted-foreground">Critical for seniors: trusted family member should have access if you can&apos;t. Add as &quot;Trusted Contact&quot;. Or share password manager with locked OneDrive password. They access in emergency. Photos preserved generations. Documents accessible. Without this — family loses everything if cloud account locked. Plan ahead.</p>
           </CardContent>
         </Card>
       </main>

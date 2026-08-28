@@ -45,7 +45,7 @@ export default function DefensiveDrivingCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How online courses work</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pay online. Sign in.</li>
               <li>Watch videos and read short modules. Pause and resume anytime.</li>
               <li>Quiz at end of each section — usually 80% to pass, can retake.</li>
@@ -73,7 +73,7 @@ export default function DefensiveDrivingCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Who should take it</h3>
-            <p className="text-sm text-muted-foreground">If you\'re 50+ and drive — yes, every 3 years. The discount alone usually pays for the course 2-5 times over. Even better: research shows seniors who take these courses have measurably fewer accidents.</p>
+            <p className="text-base text-muted-foreground">If you\'re 50+ and drive — yes, every 3 years. The discount alone usually pays for the course 2-5 times over. Even better: research shows seniors who take these courses have measurably fewer accidents.</p>
           </CardContent>
         </Card>
       </main>

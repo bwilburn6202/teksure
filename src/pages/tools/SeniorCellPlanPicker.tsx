@@ -42,7 +42,7 @@ export default function SeniorCellPlanPicker() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -51,7 +51,7 @@ export default function SeniorCellPlanPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to switch (any carrier)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign up with the new carrier. Pick a plan. They send a SIM card or set up eSIM.</li>
               <li>BEFORE removing the old SIM: ask the old carrier for your "account number" and "transfer PIN".</li>
               <li>Tell the new carrier you want to "port your number" — give them the account number and PIN.</li>
@@ -65,7 +65,7 @@ export default function SeniorCellPlanPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid these traps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Free phone" deals</strong> — usually require staying with a $90+/month plan for 36 months. Math worse than buying a phone outright on a cheap plan.</li>
               <li><strong>Activation fees</strong> — most cheap carriers have none. Big carriers charge $35.</li>
               <li><strong>Equipment leases</strong> — Verizon and AT&T sometimes lease phones; you pay monthly forever. Buy outright instead.</li>
@@ -77,7 +77,7 @@ export default function SeniorCellPlanPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Lifeline — completely free</h3>
-            <p className="text-sm text-muted-foreground">If you receive Medicaid, SNAP, SSI, Veterans Pension, or live below 135% of poverty — you may qualify for FREE phone + service through the Lifeline program. SafeLink, Q Link, and Assurance Wireless all participate. Apply at <strong>lifelinesupport.org</strong>.</p>
+            <p className="text-base text-muted-foreground">If you receive Medicaid, SNAP, SSI, Veterans Pension, or live below 135% of poverty — you may qualify for FREE phone + service through the Lifeline program. SafeLink, Q Link, and Assurance Wireless all participate. Apply at <strong>lifelinesupport.org</strong>.</p>
           </CardContent>
         </Card>
       </main>

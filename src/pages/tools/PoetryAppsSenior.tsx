@@ -19,7 +19,7 @@ export default function PoetryAppsSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Read poetry apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Poetry Foundation</strong> — FREE, classic + modern.</li>
               <li><strong>Poems</strong> — daily poem.</li>
               <li><strong>The Poetry Daily</strong>.</li>
@@ -33,7 +33,7 @@ export default function PoetryAppsSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorite poets</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mary Oliver — nature + simple.</li>
               <li>Wendell Berry — farming, age.</li>
               <li>Billy Collins — accessible.</li>
@@ -47,7 +47,7 @@ export default function PoetryAppsSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Write your own</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t need rhyme.</li>
               <li>Free verse welcomed.</li>
               <li>Short — 4-12 lines fine.</li>
@@ -62,7 +62,7 @@ export default function PoetryAppsSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Poetry forms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Haiku</strong> — 3 lines, 5/7/5 syllables.</li>
               <li><strong>Cinquain</strong> — 5 lines, varying syllables.</li>
               <li><strong>Free verse</strong> — no rules.</li>
@@ -76,7 +76,7 @@ export default function PoetryAppsSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily prompts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Notes — quick capture.</li>
               <li><strong>Word a Day</strong> apps.</li>
               <li><strong>Daily Prompts</strong> from Writers Digest.</li>
@@ -91,7 +91,7 @@ export default function PoetryAppsSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Share + community</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Email poems to family.</li>
               <li>Local poetry clubs — library.</li>
               <li>Senior centers — poetry circles.</li>
@@ -105,7 +105,7 @@ export default function PoetryAppsSenior() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Poetry + dementia</h3>
-            <p className="text-sm text-muted-foreground">Reading rhyme + rhythm soothes dementia patients. Familiar poems from youth bring memories. Write simple verses for a loved one. Print + frame. Many care facilities use poetry therapy. Just 3 minutes/day = mood lift. Costs nothing. Available everywhere.</p>
+            <p className="text-base text-muted-foreground">Reading rhyme + rhythm soothes dementia patients. Familiar poems from youth bring memories. Write simple verses for a loved one. Print + frame. Many care facilities use poetry therapy. Just 3 minutes/day = mood lift. Costs nothing. Available everywhere.</p>
           </CardContent>
         </Card>
       </main>

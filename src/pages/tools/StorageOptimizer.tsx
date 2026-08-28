@@ -715,7 +715,7 @@ export default function StorageOptimizer() {
                   <Cloud className="h-5 w-5 text-sky-600" />
                   <h3 className="font-bold">Pay for more cloud storage (cheap)</h3>
                 </div>
-                <ul className="space-y-2 text-sm">
+                <ul className="space-y-2 text-base">
                   <li className="flex justify-between"><span>iCloud+ 50 GB</span><strong>$0.99 / month</strong></li>
                   <li className="flex justify-between"><span>iCloud+ 200 GB</span><strong>$2.99 / month</strong></li>
                   <li className="flex justify-between"><span>Google One 100 GB</span><strong>$1.99 / month</strong></li>
@@ -732,7 +732,7 @@ export default function StorageOptimizer() {
                   <Sparkles className="h-5 w-5 text-amber-500" />
                   <h3 className="font-bold">When do you really need a new device?</h3>
                 </div>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground">
                   <li>• The device is more than 5 years old</li>
                   <li>• You cannot install the latest operating system update</li>
                   <li>• Even after cleanup, you have less than 5 GB free</li>
@@ -751,7 +751,7 @@ export default function StorageOptimizer() {
                   className="border rounded-lg p-5 bg-background hover:shadow-md transition group flex items-center justify-between">
               <div>
                 <h3 className="font-semibold">Tech budget planner</h3>
-                <p className="text-sm text-muted-foreground">See what your subscriptions are costing you.</p>
+                <p className="text-base text-muted-foreground">See what your subscriptions are costing you.</p>
               </div>
               <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-1 transition" />
             </Link>
@@ -759,7 +759,7 @@ export default function StorageOptimizer() {
                   className="border rounded-lg p-5 bg-background hover:shadow-md transition group flex items-center justify-between">
               <div>
                 <h3 className="font-semibold">Backup wizard</h3>
-                <p className="text-sm text-muted-foreground">Back up everything before a big cleanup.</p>
+                <p className="text-base text-muted-foreground">Back up everything before a big cleanup.</p>
               </div>
               <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-1 transition" />
             </Link>

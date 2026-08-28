@@ -19,7 +19,7 @@ export default function CohousingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is cohousing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Own private home.</li>
               <li>Shared common spaces.</li>
               <li>Group meals 1-3x/week.</li>
@@ -33,7 +33,7 @@ export default function CohousingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific cohousing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Age-restricted communities (55+ or 60+).</li>
               <li>20-40 households typical.</li>
               <li>Built around aging-in-place.</li>
@@ -47,7 +47,7 @@ export default function CohousingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$200K-700K to buy.</li>
               <li>Monthly fees: $300-800 for shared services.</li>
               <li>Equity ownership.</li>
@@ -61,7 +61,7 @@ export default function CohousingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Famous senior cohousing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Silver Sage Village (CO)</strong> — pioneer.</li>
               <li><strong>Glacier Circle (CA)</strong> — first US senior cohousing.</li>
               <li><strong>Burlington Cohousing East Village (VT)</strong>.</li>
@@ -75,7 +75,7 @@ export default function CohousingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">vs other options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>vs 55+ community</strong> — smaller, more involvement.</li>
               <li><strong>vs assisted living</strong> — cheaper, residents independent.</li>
               <li><strong>vs CCRC</strong> — community without medical contracts.</li>
@@ -88,7 +88,7 @@ export default function CohousingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try first</h3>
-            <p className="text-sm text-muted-foreground">Visit communities. Stay overnight if possible. Attend community meeting. See if community feels right. Cohousing requires commitment to consensus + meetings. Not for everyone. For those it fits — best aging experience.</p>
+            <p className="text-base text-muted-foreground">Visit communities. Stay overnight if possible. Attend community meeting. See if community feels right. Cohousing requires commitment to consensus + meetings. Not for everyone. For those it fits — best aging experience.</p>
           </CardContent>
         </Card>
       </main>

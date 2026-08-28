@@ -19,7 +19,7 @@ export default function WhatsAppScamSpotting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">&quot;Mom, this is my new number&quot;</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most common WhatsApp scam.</li>
               <li>Pretends to be your child.</li>
               <li>&quot;Lost my phone, new number.&quot;</li>
@@ -33,7 +33,7 @@ export default function WhatsAppScamSpotting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Verification scam</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Send me the 6-digit code I just texted.&quot;</li>
               <li>NEVER share verification codes.</li>
               <li>That code = WhatsApp registration.</li>
@@ -47,7 +47,7 @@ export default function WhatsAppScamSpotting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Investment / crypto scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Insider tip — buy this stock&quot;.</li>
               <li>Group chats with fake testimonials.</li>
               <li>&quot;You can earn $5,000 in 30 days.&quot;</li>
@@ -61,7 +61,7 @@ export default function WhatsAppScamSpotting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fake delivery</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Package delivery — click for details.&quot;</li>
               <li>Link goes to phishing site.</li>
               <li>Steals login or credit card.</li>
@@ -75,7 +75,7 @@ export default function WhatsAppScamSpotting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Job offer scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Earn $500/day from home.&quot;</li>
               <li>Always too good to be true.</li>
               <li>&quot;Just need credit card for setup.&quot;</li>
@@ -89,7 +89,7 @@ export default function WhatsAppScamSpotting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Block + report</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open chat with sender.</li>
               <li>Tap their name at top.</li>
               <li>Scroll down, &quot;Block&quot;.</li>
@@ -103,7 +103,7 @@ export default function WhatsAppScamSpotting() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior protection</h3>
-            <p className="text-sm text-muted-foreground">Set 2FA on WhatsApp: Settings → Account → Two-step verification → Enable. Choose 6-digit PIN. Add email recovery. Stops account takeover. Don&apos;t answer calls / messages from unknown numbers. Family code word for emergencies. WhatsApp scams target seniors most. Vigilance = protection.</p>
+            <p className="text-base text-muted-foreground">Set 2FA on WhatsApp: Settings → Account → Two-step verification → Enable. Choose 6-digit PIN. Add email recovery. Stops account takeover. Don&apos;t answer calls / messages from unknown numbers. Family code word for emergencies. WhatsApp scams target seniors most. Vigilance = protection.</p>
           </CardContent>
         </Card>
       </main>

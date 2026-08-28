@@ -19,7 +19,7 @@ export default function EstateExecutorTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First 30 days</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Get 10-20 certified copies of death certificate (funeral home orders).</li>
               <li>Locate the will and any trust documents.</li>
               <li>Notify Social Security (1-800-772-1213). Stop benefits.</li>
@@ -34,7 +34,7 @@ export default function EstateExecutorTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Helpful tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Everplans</strong> — $89/yr digital filing cabinet for end-of-life docs. Saves hours.</li>
               <li><strong>EstateExec</strong> — $169/yr software walks you through executor duties. State-specific.</li>
               <li><strong>Trustworthy</strong> — $200/yr family info hub.</li>
@@ -48,7 +48,7 @@ export default function EstateExecutorTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Probate — file in 60-90 days</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>File the will with local probate court (county courthouse).</li>
               <li>Court issues "Letters Testamentary" — proves you&apos;re executor.</li>
               <li>Inventory all assets.</li>
@@ -65,7 +65,7 @@ export default function EstateExecutorTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t skip these contacts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>IRS — request final return / Form 706 if estate &gt; $13.6M (2025).</li>
               <li>Veterans Affairs — burial benefits ($300-2,000 for vets).</li>
               <li>Equifax + Experian + TransUnion — flag deceased.</li>
@@ -81,7 +81,7 @@ export default function EstateExecutorTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common executor mistakes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Distributing assets BEFORE paying creditors → you become personally liable.</li>
               <li>Co-mingling estate funds with own — open a SEPARATE estate checking account.</li>
               <li>Missing tax deadlines.</li>
@@ -95,7 +95,7 @@ export default function EstateExecutorTools() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Take care of yourself</h3>
-            <p className="text-sm text-muted-foreground">Being an executor while grieving is exhausting. Set boundaries. Tell other family members what&apos;s happening. Don&apos;t rush. The IRS gives 9-15 months for estate tax filing. Most things can wait 30 days.</p>
+            <p className="text-base text-muted-foreground">Being an executor while grieving is exhausting. Set boundaries. Tell other family members what&apos;s happening. Don&apos;t rush. The IRS gives 9-15 months for estate tax filing. Most things can wait 30 days.</p>
           </CardContent>
         </Card>
       </main>

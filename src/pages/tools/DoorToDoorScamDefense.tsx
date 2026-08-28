@@ -91,7 +91,7 @@ export default function DoorToDoorScamDefense() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Right after a storm, beware "storm chasers"</h3>
-            <p className="text-sm text-muted-foreground">After hurricanes, hail, or tornadoes, out-of-town crews flood neighborhoods. Many do shoddy or no work, demand a deposit, then disappear. ALWAYS use local contractors with a long track record.</p>
+            <p className="text-base text-muted-foreground">After hurricanes, hail, or tornadoes, out-of-town crews flood neighborhoods. Many do shoddy or no work, demand a deposit, then disappear. ALWAYS use local contractors with a long track record.</p>
           </CardContent>
         </Card>
       </main>

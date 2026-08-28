@@ -19,7 +19,7 @@ export default function TrainAroundTheWorld() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Iconic luxury trains</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Venice Simplon-Orient-Express</strong> — Paris-Venice. $5K+/night.</li>
               <li><strong>Rocky Mountaineer</strong> — Vancouver-Banff. $1,500-5,000.</li>
               <li><strong>Glacier Express</strong> (Switzerland) — affordable, beautiful.</li>
@@ -33,7 +33,7 @@ export default function TrainAroundTheWorld() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eurail Pass</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One pass — train across 33 European countries.</li>
               <li>From $300 (3 days, 1 country) to $1,500 (3 months unlimited).</li>
               <li>Senior discount — 60+, save 12%.</li>
@@ -47,7 +47,7 @@ export default function TrainAroundTheWorld() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Asia + global</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>JR Pass (Japan)</strong> — bullet train all you want. ~$300/wk.</li>
               <li><strong>Eastern + Oriental Express</strong> — Singapore-Bangkok.</li>
               <li><strong>Indian Pacific (Australia)</strong> — Perth-Sydney 4 days.</li>
@@ -61,7 +61,7 @@ export default function TrainAroundTheWorld() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Book sleeper cabin for overnight.</li>
               <li>Bedroom (vs roomette) = full bathroom.</li>
               <li>Bring snacks + water.</li>
@@ -76,7 +76,7 @@ export default function TrainAroundTheWorld() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tour packages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Vacations By Rail</strong> — vacationsbyrail.com.</li>
               <li><strong>Rail Europe</strong> — book tickets + tours.</li>
               <li><strong>Tauck</strong> — luxury train tours.</li>
@@ -90,7 +90,7 @@ export default function TrainAroundTheWorld() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Why train wins for seniors</h3>
-            <p className="text-sm text-muted-foreground">No security lines. Walk around. See countryside. Better sleep than airplane. Meet people. Photo opportunities. Ground-level views. Many Bucket-list senior favorites. Take the slow road.</p>
+            <p className="text-base text-muted-foreground">No security lines. Walk around. See countryside. Better sleep than airplane. Meet people. Photo opportunities. Ground-level views. Many Bucket-list senior favorites. Take the slow road.</p>
           </CardContent>
         </Card>
       </main>

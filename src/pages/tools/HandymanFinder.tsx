@@ -34,7 +34,7 @@ export default function HandymanFinder() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function HandymanFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vet before hiring</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Read reviews — sort by recent, look for photos.</li>
               <li>Read 3-star reviews (most honest).</li>
               <li>Get 3 quotes for any job over $300.</li>
@@ -58,7 +58,7 @@ export default function HandymanFinder() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior contractor scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Door-to-door &quot;I noticed your roof&quot; — almost always a scam.</li>
               <li>Demands cash only.</li>
               <li>Pressures decision today.</li>
@@ -72,7 +72,7 @@ export default function HandymanFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common projects + costs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hang shelves / pictures — $50-100.</li>
               <li>Mount TV — $100-200.</li>
               <li>Install grab bars — $100-200.</li>
@@ -88,7 +88,7 @@ export default function HandymanFinder() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free senior help</h3>
-            <p className="text-sm text-muted-foreground"><strong>Habitat for Humanity Aging in Place</strong> — free home repairs for low-income seniors. <strong>Rebuilding Together</strong> — free annual repair days. <strong>Veterans</strong> — VA grants for home modifications. <strong>Local Area Agency on Aging</strong> — knows free programs in your area.</p>
+            <p className="text-base text-muted-foreground"><strong>Habitat for Humanity Aging in Place</strong> — free home repairs for low-income seniors. <strong>Rebuilding Together</strong> — free annual repair days. <strong>Veterans</strong> — VA grants for home modifications. <strong>Local Area Agency on Aging</strong> — knows free programs in your area.</p>
           </CardContent>
         </Card>
       </main>

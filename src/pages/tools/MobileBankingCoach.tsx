@@ -26,7 +26,7 @@ export default function MobileBankingCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time setup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install YOUR bank\'s app from the App Store or Play Store. CRITICAL — type your bank\'s name in the search bar; don\'t click ads.</li>
               <li>Verify it\'s the real one — check the developer name matches your bank, and the app has millions of downloads.</li>
               <li>Sign in with your usual online banking username and password.</li>
@@ -87,7 +87,7 @@ export default function MobileBankingCoach() {
         <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Stay safe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Never click on "your bank" texts</strong> — log in by opening the app yourself.</li>
               <li><strong>Real banks NEVER ask for your full PIN or password by text or phone.</strong></li>
               <li><strong>Don\'t download "bank tools" or "bank speedup" apps</strong> — fakes.</li>
@@ -100,7 +100,7 @@ export default function MobileBankingCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">If your bank app is too small or hard to read — most have a "Big text" setting in the app\'s preferences. Or use your phone\'s system-wide big text (Settings → Display → Text Size).</p>
+            <p className="text-base text-muted-foreground">If your bank app is too small or hard to read — most have a "Big text" setting in the app\'s preferences. Or use your phone\'s system-wide big text (Settings → Display → Text Size).</p>
           </CardContent>
         </Card>
       </main>

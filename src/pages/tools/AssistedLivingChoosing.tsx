@@ -19,7 +19,7 @@ export default function AssistedLivingChoosing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Levels of senior living</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Independent living</strong> — apartment + meals + activities.</li>
               <li><strong>Assisted living</strong> — adds help with daily activities.</li>
               <li><strong>Memory care</strong> — dementia-specific.</li>
@@ -33,7 +33,7 @@ export default function AssistedLivingChoosing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost realities</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Independent: $2,500-5,000/mo.</li>
               <li>Assisted living: $4,500-7,500/mo.</li>
               <li>Memory care: $6,000-10,000/mo.</li>
@@ -48,7 +48,7 @@ export default function AssistedLivingChoosing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tour checklist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Visit 3+ facilities.</li>
               <li>Eat lunch there.</li>
               <li>Visit unannounced second time.</li>
@@ -65,7 +65,7 @@ export default function AssistedLivingChoosing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Questions to ask</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Staff to resident ratio?</li>
               <li>Costs for additional services?</li>
               <li>What if needs increase?</li>
@@ -81,7 +81,7 @@ export default function AssistedLivingChoosing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pressure tactics &quot;sign today.&quot;</li>
               <li>Hidden fees not in contract.</li>
               <li>High staff turnover.</li>
@@ -97,7 +97,7 @@ export default function AssistedLivingChoosing() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground"><strong>A Place for Mom</strong> — free placement. <strong>SeniorAdvisor.com</strong> — reviews. <strong>Long-term Care Ombudsman</strong> — your free advocate. Call before AND during stay. <strong>Caring.com</strong> reviews. Compare extensively.</p>
+            <p className="text-base text-muted-foreground"><strong>A Place for Mom</strong> — free placement. <strong>SeniorAdvisor.com</strong> — reviews. <strong>Long-term Care Ombudsman</strong> — your free advocate. Call before AND during stay. <strong>Caring.com</strong> reviews. Compare extensively.</p>
           </CardContent>
         </Card>
       </main>

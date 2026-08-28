@@ -19,7 +19,7 @@ export default function AppleICloudSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why iCloud security matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple ID = access to ALL Apple data.</li>
               <li>Photos, contacts, messages, banking apps.</li>
               <li>Hackers steal Apple ID to access everything.</li>
@@ -33,7 +33,7 @@ export default function AppleICloudSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Essential settings (15 min)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Strong Apple ID password</strong> — 12+ chars, unique.</li>
               <li><strong>2FA on</strong> — required by Apple now.</li>
               <li><strong>Trusted phone numbers</strong> — your phone + spouse.</li>
@@ -48,7 +48,7 @@ export default function AppleICloudSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stolen Device Protection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Critical iOS 17.3+ feature.</li>
               <li>Settings → Face ID → Stolen Device Protection.</li>
               <li>Even if thief has passcode + phone — can&apos;t change Apple ID.</li>
@@ -62,7 +62,7 @@ export default function AppleICloudSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Advanced Data Protection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>End-to-end encrypts more iCloud data.</li>
               <li>Settings → Apple ID → iCloud → Advanced Data Protection.</li>
               <li>Even Apple can&apos;t see your data.</li>
@@ -76,7 +76,7 @@ export default function AppleICloudSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Phishing scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Your Apple ID has been compromised&quot; texts/emails = scam.</li>
               <li>Apple doesn&apos;t send you texts about ID issues.</li>
               <li>NEVER click links.</li>
@@ -90,7 +90,7 @@ export default function AppleICloudSecurity() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Recovery prep</h3>
-            <p className="text-sm text-muted-foreground">If forget password / locked out — write recovery key down NOW. Set trusted contact (spouse, kid) who can verify identity. Without these — locked out of Apple ID forever. Apple can&apos;t override. Print recovery key, store in safe deposit. Critical.</p>
+            <p className="text-base text-muted-foreground">If forget password / locked out — write recovery key down NOW. Set trusted contact (spouse, kid) who can verify identity. Without these — locked out of Apple ID forever. Apple can&apos;t override. Print recovery key, store in safe deposit. Critical.</p>
           </CardContent>
         </Card>
       </main>

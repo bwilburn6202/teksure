@@ -119,16 +119,16 @@ export default function DigitalFootprintScan() {
                     What to do next
                   </p>
                   {result.verdict === 'safe' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       No known breaches have exposed this address. Keep using a strong, unique password for every site — and turn on two-step verification where you can.
                     </p>
                   )}
                   {(result.verdict === 'caution' || result.verdict === 'danger') && (
                     <div className="space-y-3">
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         Your email has appeared in one or more data breaches. Here's the plain-English checklist:
                       </p>
-                      <ol className="space-y-2 text-sm text-muted-foreground list-decimal pl-5">
+                      <ol className="space-y-2 text-base text-muted-foreground list-decimal pl-5">
                         <li>
                           <strong>Change your password</strong> on every account that uses this email — starting with your bank, main email, and anything with payment cards saved.
                         </li>
@@ -145,7 +145,7 @@ export default function DigitalFootprintScan() {
                     </div>
                   )}
                   {result.verdict === 'unknown' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       We couldn't reach the breach database right now. Try again in a few minutes, or strengthen your account anyway — strong unique passwords and two-step verification are always a win.
                     </p>
                   )}

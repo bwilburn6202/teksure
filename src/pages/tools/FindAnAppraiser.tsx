@@ -32,7 +32,7 @@ export default function FindAnAppraiser() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find a certified appraiser</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>American Society of Appraisers (appraisers.org)</strong> — biggest. Search by specialty (jewelry, fine art, antiques, machinery).</li>
               <li><strong>Appraisers Association of America (appraisersassociation.org)</strong> — for fine art + decorative.</li>
               <li><strong>International Society of Appraisers (isa-appraisers.org)</strong> — broad specialties.</li>
@@ -57,7 +57,7 @@ export default function FindAnAppraiser() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Two values they\'ll quote</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Replacement value (insurance)</strong> — what it would cost to replace.</li>
               <li><strong>Fair market value (selling)</strong> — what it would actually sell for.</li>
               <li>These differ by 30-70%! Insurance is much higher.</li>
@@ -83,7 +83,7 @@ export default function FindAnAppraiser() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Avoid these</h3>
-            <p className="text-sm text-muted-foreground">"Buy your gold" mailers and TV ads — pay 30-50% of value. Estate buyout services that come to your home — same. Get certified appraisal first, THEN sell to top venue (Sotheby\'s, Christie\'s, eBay, Etsy, or local auction).</p>
+            <p className="text-base text-muted-foreground">"Buy your gold" mailers and TV ads — pay 30-50% of value. Estate buyout services that come to your home — same. Get certified appraisal first, THEN sell to top venue (Sotheby\'s, Christie\'s, eBay, Etsy, or local auction).</p>
           </CardContent>
         </Card>
       </main>

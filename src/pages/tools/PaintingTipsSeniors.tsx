@@ -19,7 +19,7 @@ export default function PaintingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to hire</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Whole house = hire ($2K-5K).</li>
               <li>Cathedral ceilings = hire (ladder safety).</li>
               <li>Exterior = always hire.</li>
@@ -33,7 +33,7 @@ export default function PaintingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior DIY easier</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Extension pole</strong> — paint from floor.</li>
               <li><strong>Light roller</strong> — less arm fatigue.</li>
               <li><strong>Edger tools</strong> — paint without trim brush.</li>
@@ -47,7 +47,7 @@ export default function PaintingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best paint</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sherwin-Williams (premium).</li>
               <li>Behr Marquee (Home Depot).</li>
               <li>Benjamin Moore (premium).</li>
@@ -61,7 +61,7 @@ export default function PaintingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Paint when alone — no rush.</li>
               <li>2-3 days per room realistic.</li>
               <li>Take breaks every 30 min.</li>
@@ -77,7 +77,7 @@ export default function PaintingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cleanup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Latex paint cleans with water.</li>
               <li>Brushes — soak in water, work out paint.</li>
               <li>Don&apos;t pour paint down drain.</li>
@@ -91,7 +91,7 @@ export default function PaintingTipsSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hiring help</h3>
-            <p className="text-sm text-muted-foreground"><strong>Angi.com</strong>, <strong>Thumbtack</strong> — find painters. <strong>HomeAdvisor</strong>. <strong>TaskRabbit</strong> — for small jobs. Get 3 quotes. Senior discount sometimes. Insured + bonded essential. $40-60/hour typical. Worth it for big projects.</p>
+            <p className="text-base text-muted-foreground"><strong>Angi.com</strong>, <strong>Thumbtack</strong> — find painters. <strong>HomeAdvisor</strong>. <strong>TaskRabbit</strong> — for small jobs. Get 3 quotes. Senior discount sometimes. Insured + bonded essential. $40-60/hour typical. Worth it for big projects.</p>
           </CardContent>
         </Card>
       </main>

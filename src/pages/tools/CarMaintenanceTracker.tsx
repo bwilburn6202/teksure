@@ -46,7 +46,7 @@ export default function CarMaintenanceTracker() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -80,7 +80,7 @@ export default function CarMaintenanceTracker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Recall checking</h3>
-            <p className="text-sm text-muted-foreground">Every 6 months, check <strong>nhtsa.gov/recalls</strong> with your VIN. Open recalls are FREE to fix at any dealer (regardless of who did the work).</p>
+            <p className="text-base text-muted-foreground">Every 6 months, check <strong>nhtsa.gov/recalls</strong> with your VIN. Open recalls are FREE to fix at any dealer (regardless of who did the work).</p>
           </CardContent>
         </Card>
       </main>

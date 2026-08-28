@@ -19,7 +19,7 @@ export default function AppleOneBundleCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Three tiers (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Individual: $20/mo</strong> — Music + TV+ + Arcade + 50GB iCloud+.</li>
               <li><strong>Family: $26/mo</strong> — Same as Individual but shared with 6 people. 200GB iCloud+.</li>
               <li><strong>Premier: $38/mo</strong> — Adds News+ + Fitness+. 6 people. 2TB iCloud+.</li>
@@ -47,7 +47,7 @@ export default function AppleOneBundleCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When Apple One is worth it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You\'re already paying for 3+ Apple services.</li>
               <li>You have multiple Apple devices (iPhone + iPad + Mac).</li>
               <li>Family of 4-6 — Family Sharing splits cost.</li>
@@ -80,7 +80,7 @@ export default function AppleOneBundleCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick test</h3>
-            <p className="text-sm text-muted-foreground">List Apple subs you currently pay for. If total &gt; $20/mo for individual, $26/mo for family, or $38/mo for premier — bundle saves money. Check your Apple ID Subscriptions page (Settings → tap your name → Subscriptions).</p>
+            <p className="text-base text-muted-foreground">List Apple subs you currently pay for. If total &gt; $20/mo for individual, $26/mo for family, or $38/mo for premier — bundle saves money. Check your Apple ID Subscriptions page (Settings → tap your name → Subscriptions).</p>
           </CardContent>
         </Card>
       </main>

@@ -124,7 +124,7 @@ export default function PhishingLinkInspector() {
                     {f.level === 'danger' && <AlertTriangle className="w-5 h-5 text-destructive shrink-0 mt-0.5" />}
                     {f.level === 'warn' && <AlertTriangle className="w-5 h-5 text-yellow-600 shrink-0 mt-0.5" />}
                     {f.level === 'ok' && <ShieldCheck className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />}
-                    <div><p className="font-semibold">{f.title}</p><p className="text-sm text-muted-foreground">{f.detail}</p></div>
+                    <div><p className="font-semibold">{f.title}</p><p className="text-base text-muted-foreground">{f.detail}</p></div>
                   </CardContent>
                 </Card>
               ))}

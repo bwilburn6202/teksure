@@ -19,7 +19,7 @@ export default function SeniorTutorialResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior Planet (free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free senior-focused tech classes.</li>
               <li>Online + in-person.</li>
               <li>By + for seniors 60+.</li>
@@ -33,7 +33,7 @@ export default function SeniorTutorialResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">GetSetUp</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Live Zoom classes for seniors.</li>
               <li>Free + paid options.</li>
               <li>Many topics — tech, fitness, hobbies.</li>
@@ -47,7 +47,7 @@ export default function SeniorTutorialResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Library tech help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most libraries offer free tech tutoring.</li>
               <li>One-on-one appointments.</li>
               <li>Bring your phone, laptop.</li>
@@ -61,7 +61,7 @@ export default function SeniorTutorialResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouTube tutorials</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search any tech question + &quot;senior&quot; or &quot;beginner.&quot;</li>
               <li>Visual learning — see exact taps.</li>
               <li>Pause + replay.</li>
@@ -75,7 +75,7 @@ export default function SeniorTutorialResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple + Google support</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple — free Today at Apple sessions in stores.</li>
               <li>Apple Support app — chat with experts free.</li>
               <li>Google Help Center extensive.</li>
@@ -89,7 +89,7 @@ export default function SeniorTutorialResources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tech tutors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hire local tech-savvy person.</li>
               <li>Often $25-$50/hour.</li>
               <li>One-on-one focused help.</li>
@@ -103,7 +103,7 @@ export default function SeniorTutorialResources() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior Planet first</h3>
-            <p className="text-sm text-muted-foreground">For comprehensive senior tech learning, Senior Planet (free, AARP-funded) is the best resource. Online + in-person classes covering everything from email basics to advanced apps. Combined with library tutoring and YouTube videos, you have unlimited free learning. No need to pay for tech support — quality help is free for those who seek it.</p>
+            <p className="text-base text-muted-foreground">For comprehensive senior tech learning, Senior Planet (free, AARP-funded) is the best resource. Online + in-person classes covering everything from email basics to advanced apps. Combined with library tutoring and YouTube videos, you have unlimited free learning. No need to pay for tech support — quality help is free for those who seek it.</p>
           </CardContent>
         </Card>
       </main>

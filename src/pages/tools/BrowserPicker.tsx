@@ -34,7 +34,7 @@ export default function BrowserPicker() {
                   <span className="text-sm font-semibold text-primary">{b.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{b.best}</p>
-                <p className="text-sm text-muted-foreground">{b.good}</p>
+                <p className="text-base text-muted-foreground">{b.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function BrowserPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free extensions worth installing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>uBlock Origin</strong> — best free ad blocker. Cleaner pages, fewer pop-ups, faster sites.</li>
               <li><strong>Bitwarden / 1Password</strong> — auto-fills your saved passwords.</li>
               <li><strong>Honey or Capital One Shopping</strong> — auto-applies coupon codes when you check out.</li>
@@ -56,7 +56,7 @@ export default function BrowserPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Settings to change once</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Make text bigger:</strong> Hold <kbd className="bg-muted px-1.5 py-0.5 rounded">Ctrl</kbd> (or <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> on Mac) and tap <kbd className="bg-muted px-1.5 py-0.5 rounded">+</kbd> several times. <kbd className="bg-muted px-1.5 py-0.5 rounded">-</kbd> to shrink. <kbd className="bg-muted px-1.5 py-0.5 rounded">0</kbd> to reset.</li>
               <li><strong>Permanent zoom:</strong> Settings → Appearance → "Page zoom" → 125% or 150%.</li>
               <li><strong>Default to Reader Mode</strong> on long articles (Safari and Edge both have a "reader" icon in the address bar).</li>
@@ -69,7 +69,7 @@ export default function BrowserPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don\'t over-think it</h3>
-            <p className="text-sm text-muted-foreground">Whatever browser you\'re comfortable with is the right one. Switching browsers is a real hassle (passwords, bookmarks, history). The single biggest win — install <strong>uBlock Origin</strong> as an extension. Whatever browser you use becomes 30% faster and far less annoying.</p>
+            <p className="text-base text-muted-foreground">Whatever browser you\'re comfortable with is the right one. Switching browsers is a real hassle (passwords, bookmarks, history). The single biggest win — install <strong>uBlock Origin</strong> as an extension. Whatever browser you use becomes 30% faster and far less annoying.</p>
           </CardContent>
         </Card>
       </main>

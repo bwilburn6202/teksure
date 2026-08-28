@@ -96,7 +96,7 @@ export default function ScreenshotCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — sending a screenshot</h3>
-            <p className="text-sm text-muted-foreground">After you take it, tap "Share" (or use Mail / Messages). Screenshots are how tech support helps you fastest — when something's wrong on your screen, send a picture instead of describing it.</p>
+            <p className="text-base text-muted-foreground">After you take it, tap "Share" (or use Mail / Messages). Screenshots are how tech support helps you fastest — when something's wrong on your screen, send a picture instead of describing it.</p>
           </CardContent>
         </Card>
       </main>

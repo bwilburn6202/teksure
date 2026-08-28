@@ -19,7 +19,7 @@ export default function AmazonFreshWalmartPlus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Amazon Fresh</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Included with Amazon Prime ($14.99/mo or $139/yr).</li>
               <li>Free delivery on orders $100+.</li>
               <li>$10 fee for orders under $50.</li>
@@ -33,7 +33,7 @@ export default function AmazonFreshWalmartPlus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Walmart+</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$98/year or $12.95/month.</li>
               <li>Free delivery from local Walmart, no minimum.</li>
               <li>Same-day delivery available.</li>
@@ -47,7 +47,7 @@ export default function AmazonFreshWalmartPlus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Which to choose?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Amazon Fresh — if already paying for Prime.</li>
               <li>Walmart+ — if you shop Walmart anyway.</li>
               <li>Walmart+ — better for weekly small orders ($35).</li>
@@ -61,7 +61,7 @@ export default function AmazonFreshWalmartPlus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Walmart+ extras</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Paramount+ Essential included — saves $7.99/month.</li>
               <li>Mobile scan + go in stores — skip checkout line.</li>
               <li>RX prescription discounts — like GoodRx.</li>
@@ -75,7 +75,7 @@ export default function AmazonFreshWalmartPlus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Amazon Prime extras</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free 2-day shipping on millions of items.</li>
               <li>Prime Video — large streaming library.</li>
               <li>Prime Reading + Music free.</li>
@@ -89,7 +89,7 @@ export default function AmazonFreshWalmartPlus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">EBT/SNAP support</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Both accept EBT for grocery items.</li>
               <li>Walmart — has discounted Walmart+ for EBT users ($49/year).</li>
               <li>Amazon — has Prime Access at $6.99/month for EBT/Medicaid.</li>
@@ -103,7 +103,7 @@ export default function AmazonFreshWalmartPlus() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with whichever store you use</h3>
-            <p className="text-sm text-muted-foreground">If you already shop Walmart weekly, Walmart+ is the obvious pick — $98/year for free delivery on every order, plus Paramount+ included. If you&apos;re a long-time Amazon Prime member, just turn on Amazon Fresh — already included. Don&apos;t pay for both unless you genuinely use both. Try the free trial first, set a calendar reminder to cancel if not using it.</p>
+            <p className="text-base text-muted-foreground">If you already shop Walmart weekly, Walmart+ is the obvious pick — $98/year for free delivery on every order, plus Paramount+ included. If you&apos;re a long-time Amazon Prime member, just turn on Amazon Fresh — already included. Don&apos;t pay for both unless you genuinely use both. Try the free trial first, set a calendar reminder to cancel if not using it.</p>
           </CardContent>
         </Card>
       </main>

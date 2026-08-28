@@ -19,7 +19,7 @@ export default function YelpForSeniorReviewers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What Yelp does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free app + website.</li>
               <li>Reviews of restaurants, services, businesses.</li>
               <li>Photos by patrons.</li>
@@ -33,7 +33,7 @@ export default function YelpForSeniorReviewers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Filter for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search &quot;senior friendly&quot; in reviews.</li>
               <li>Filter by 4+ stars.</li>
               <li>Check noise level reviews.</li>
@@ -47,7 +47,7 @@ export default function YelpForSeniorReviewers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Write reviews</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap restaurant — Write Review.</li>
               <li>Honest experience helps others.</li>
               <li>Note senior-friendly aspects.</li>
@@ -61,7 +61,7 @@ export default function YelpForSeniorReviewers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Beyond restaurants</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plumbers, electricians, contractors.</li>
               <li>Doctors + dentists.</li>
               <li>Auto repair shops.</li>
@@ -75,7 +75,7 @@ export default function YelpForSeniorReviewers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read multiple reviews — extreme can mislead.</li>
               <li>Sort by &quot;newest&quot; — recent matters.</li>
               <li>3-4 stars often most accurate.</li>
@@ -89,7 +89,7 @@ export default function YelpForSeniorReviewers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Yelp + Google Maps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Compare across both for fuller picture.</li>
               <li>Google often has more reviews.</li>
               <li>Yelp has more photos.</li>
@@ -103,7 +103,7 @@ export default function YelpForSeniorReviewers() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Read 3-star reviews most</h3>
-            <p className="text-sm text-muted-foreground">When researching, focus on 3-star reviews — they&apos;re often most balanced. 5-star reviews can be friends/family. 1-star reviews can be one bad day. 3-star reviews honestly describe pros + cons. Combine with photo browsing for accurate picture. Check hours just before going. Yelp transforms restaurant + service decisions.</p>
+            <p className="text-base text-muted-foreground">When researching, focus on 3-star reviews — they&apos;re often most balanced. 5-star reviews can be friends/family. 1-star reviews can be one bad day. 3-star reviews honestly describe pros + cons. Combine with photo browsing for accurate picture. Check hours just before going. Yelp transforms restaurant + service decisions.</p>
           </CardContent>
         </Card>
       </main>

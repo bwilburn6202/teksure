@@ -46,7 +46,7 @@ export default function SmartDoorbellPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1"><strong>Best:</strong> {p.best}</p>
-                <p className="text-sm text-muted-foreground"><strong>Watch out:</strong> {p.cons}</p>
+                <p className="text-base text-muted-foreground"><strong>Watch out:</strong> {p.cons}</p>
               </CardContent>
             </Card>
           ))}
@@ -81,7 +81,7 @@ export default function SmartDoorbellPicker() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Privacy considerations</h3>
-            <p className="text-sm text-muted-foreground">Ring partners with police departments — some videos can be requested by police. If that bothers you, choose Eufy or another local-storage option. Consider warning visitors with a small "Recording" sign — required by law in some states.</p>
+            <p className="text-base text-muted-foreground">Ring partners with police departments — some videos can be requested by police. If that bothers you, choose Eufy or another local-storage option. Consider warning visitors with a small "Recording" sign — required by law in some states.</p>
           </CardContent>
         </Card>
       </main>

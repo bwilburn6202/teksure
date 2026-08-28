@@ -211,7 +211,7 @@ export default function ComputerCleanupWizard() {
                 <Card className="bg-green-50 dark:bg-green-950/30 border-green-600/40 mb-6">
                   <CardContent className="p-5">
                     <h4 className="font-semibold mb-1 text-green-700 dark:text-green-400">All done!</h4>
-                    <p className="text-sm text-muted-foreground">Your computer should feel noticeably faster. Restart it one more time to finalize everything.</p>
+                    <p className="text-base text-muted-foreground">Your computer should feel noticeably faster. Restart it one more time to finalize everything.</p>
                   </CardContent>
                 </Card>
               )}
@@ -220,7 +220,7 @@ export default function ComputerCleanupWizard() {
                 <CardContent className="p-5 flex items-center justify-between gap-4 flex-wrap">
                   <div>
                     <h4 className="font-semibold mb-1">Official help</h4>
-                    <p className="text-sm text-muted-foreground">For specific error codes and advanced issues.</p>
+                    <p className="text-base text-muted-foreground">For specific error codes and advanced issues.</p>
                   </div>
                   <Button asChild>
                     <a href={selectedOS.support.url} target="_blank" rel="noopener noreferrer">

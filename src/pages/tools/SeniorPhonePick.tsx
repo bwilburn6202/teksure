@@ -47,7 +47,7 @@ export default function SeniorPhonePick() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -83,7 +83,7 @@ export default function SeniorPhonePick() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Our pick for most seniors</h3>
-            <p className="text-sm text-muted-foreground"><strong>iPhone SE refurbished from Apple ($350-450)</strong> if budget is tight. <strong>iPhone 15 from Verizon/AT&T/T-Mobile</strong> on a senior plan if more comfortable. Refurbished/used Galaxy A55 ($250-400) for Android families. Avoid the absolute cheapest no-name Android phones — slow within a year.</p>
+            <p className="text-base text-muted-foreground"><strong>iPhone SE refurbished from Apple ($350-450)</strong> if budget is tight. <strong>iPhone 15 from Verizon/AT&T/T-Mobile</strong> on a senior plan if more comfortable. Refurbished/used Galaxy A55 ($250-400) for Android families. Avoid the absolute cheapest no-name Android phones — slow within a year.</p>
           </CardContent>
         </Card>
       </main>

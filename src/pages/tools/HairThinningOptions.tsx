@@ -19,7 +19,7 @@ export default function HairThinningOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why hair thins after 65</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Genetics — male/female pattern baldness.</li>
               <li>Hormonal changes (post-menopause).</li>
               <li>Thyroid issues — get blood test.</li>
@@ -34,7 +34,7 @@ export default function HairThinningOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medical treatments</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Minoxidil (Rogaine)</strong> — OTC, $30/mo. Both men + women.</li>
               <li><strong>Finasteride</strong> — Rx pill, men only. Side effects.</li>
               <li><strong>Spironolactone</strong> — Rx, women only.</li>
@@ -48,7 +48,7 @@ export default function HairThinningOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cosmetic options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Volumizing shampoo</strong> — Nioxin, OGX Thick &amp; Full.</li>
               <li><strong>Toppik</strong> — keratin fiber sprinkle, $25.</li>
               <li><strong>Hair toppers</strong> — partial pieces, $200-1,000.</li>
@@ -62,7 +62,7 @@ export default function HairThinningOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wash 2-3x/week — not daily (strips oils).</li>
               <li>Cool/lukewarm water rinse.</li>
               <li>Wide-tooth comb when wet (hair fragile).</li>
@@ -77,7 +77,7 @@ export default function HairThinningOptions() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cancer + hair loss</h3>
-            <p className="text-sm text-muted-foreground">Chemo causes hair loss. Wigs covered by Medicare with prescription &quot;cranial prosthesis.&quot; American Cancer Society&apos;s &quot;wig bank&quot; provides free wigs. Look Good Feel Better — free workshops on wigs/makeup during cancer treatment.</p>
+            <p className="text-base text-muted-foreground">Chemo causes hair loss. Wigs covered by Medicare with prescription &quot;cranial prosthesis.&quot; American Cancer Society&apos;s &quot;wig bank&quot; provides free wigs. Look Good Feel Better — free workshops on wigs/makeup during cancer treatment.</p>
           </CardContent>
         </Card>
       </main>

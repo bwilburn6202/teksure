@@ -19,7 +19,7 @@ export default function ParamountPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tier picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Essential w/ Ads</strong> — $8/mo. CBS + originals.</li>
               <li><strong>Premium</strong> — $13/mo. No ads + local CBS live.</li>
               <li>FREE 7-day trial.</li>
@@ -32,7 +32,7 @@ export default function ParamountPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly content</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NCIS franchise</strong> — full library.</li>
               <li><strong>Yellowstone</strong> — cowboys, Kevin Costner.</li>
               <li><strong>1883, 1923</strong> — Yellowstone prequels.</li>
@@ -48,7 +48,7 @@ export default function ParamountPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Movies + classics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Paramount Pictures library.</li>
               <li><strong>Top Gun</strong>, <strong>Indiana Jones</strong>, <strong>Forrest Gump</strong>.</li>
               <li><strong>Mission: Impossible</strong> series.</li>
@@ -62,7 +62,7 @@ export default function ParamountPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Walmart+ free perk</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walmart+ ($98/yr) includes Paramount+ Essential FREE.</li>
               <li>Saves $96/yr.</li>
               <li>Plus grocery delivery, gas discount.</li>
@@ -76,7 +76,7 @@ export default function ParamountPlusReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior CBS faves</h3>
-            <p className="text-sm text-muted-foreground">Many seniors keep Paramount+ for CBS shows: <strong>NCIS</strong> (still going), <strong>Blue Bloods</strong>, <strong>Young Sheldon</strong>, <strong>Sunday Morning</strong>, <strong>60 Minutes</strong>. If CBS is your favorite network, Paramount+ essential. If never watched CBS = skip.</p>
+            <p className="text-base text-muted-foreground">Many seniors keep Paramount+ for CBS shows: <strong>NCIS</strong> (still going), <strong>Blue Bloods</strong>, <strong>Young Sheldon</strong>, <strong>Sunday Morning</strong>, <strong>60 Minutes</strong>. If CBS is your favorite network, Paramount+ essential. If never watched CBS = skip.</p>
           </CardContent>
         </Card>
       </main>

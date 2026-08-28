@@ -19,7 +19,7 @@ export default function ATMSafetyGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to use ATMs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bank lobby</strong> — safest. Cameras + staff.</li>
               <li><strong>Bank drive-through</strong> — stay in car, doors locked.</li>
               <li><strong>Major chains in busy stores</strong> — okay.</li>
@@ -33,7 +33,7 @@ export default function ATMSafetyGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spot skimmers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>WIGGLE card slot — loose = skimmer.</li>
               <li>Look for loose / wobbly card reader.</li>
               <li>Keypad uneven or thick = overlay.</li>
@@ -47,7 +47,7 @@ export default function ATMSafetyGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">PIN protection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cover PIN with hand when typing.</li>
               <li>Use random PIN (no birthdays).</li>
               <li>Don&apos;t share PIN even with family.</li>
@@ -61,7 +61,7 @@ export default function ATMSafetyGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Robbery prevention</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use ATMs in daylight.</li>
               <li>Be aware of surroundings (no headphones).</li>
               <li>Have card ready.</li>
@@ -76,7 +76,7 @@ export default function ATMSafetyGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use bank app instead</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most things — no ATM needed.</li>
               <li>Mobile deposit (snap photo of check).</li>
               <li>Transfer money via app.</li>
@@ -90,7 +90,7 @@ export default function ATMSafetyGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If skimmed</h3>
-            <p className="text-sm text-muted-foreground">Report to bank IMMEDIATELY. Federal law protects — $50 max liability. Bank reverses fraudulent charges. Cancel + reissue card. Place fraud alert. Many seniors skimmed don&apos;t notice for weeks — quick action limits damage.</p>
+            <p className="text-base text-muted-foreground">Report to bank IMMEDIATELY. Federal law protects — $50 max liability. Bank reverses fraudulent charges. Cancel + reissue card. Place fraud alert. Many seniors skimmed don&apos;t notice for weeks — quick action limits damage.</p>
           </CardContent>
         </Card>
       </main>

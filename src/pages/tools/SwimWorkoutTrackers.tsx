@@ -33,7 +33,7 @@ export default function SwimWorkoutTrackers() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SwimWorkoutTrackers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why swim for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Zero impact on joints — best for arthritis.</li>
               <li>Full-body cardio + strength.</li>
               <li>Cool, comfortable in summer.</li>
@@ -56,7 +56,7 @@ export default function SwimWorkoutTrackers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to swim cheap</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YMCA</strong> — senior membership $30-50/mo. Many free for SilverSneakers.</li>
               <li><strong>SilverSneakers / Renew Active</strong> — included with many Medicare Advantage. FREE Y/gym access.</li>
               <li><strong>Community pools</strong> — usually $3-5 per swim, $50-100/season pass.</li>
@@ -69,7 +69,7 @@ export default function SwimWorkoutTrackers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly classes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Aqua aerobics</strong> — guided water exercise. Most YMCAs have.</li>
               <li><strong>Aqua zumba</strong> — fun + good cardio.</li>
               <li><strong>Arthritis Foundation Aquatics</strong> — gentlest, designed for arthritis.</li>
@@ -81,7 +81,7 @@ export default function SwimWorkoutTrackers() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best gear</h3>
-            <p className="text-sm text-muted-foreground">Speedo or TYR goggles ($15-25). Speedo Endurance suit ($30-50). Cheap kickboard ($15) +pull buoy ($10) — let you focus on legs OR arms. Total: $80 to outfit. Use 5 years easily.</p>
+            <p className="text-base text-muted-foreground">Speedo or TYR goggles ($15-25). Speedo Endurance suit ($30-50). Cheap kickboard ($15) +pull buoy ($10) — let you focus on legs OR arms. Total: $80 to outfit. Use 5 years easily.</p>
           </CardContent>
         </Card>
       </main>

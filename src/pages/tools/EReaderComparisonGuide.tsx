@@ -19,7 +19,7 @@ export default function EReaderComparisonGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why an e-reader?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adjustable text size — best for tired eyes.</li>
               <li>Built-in light — read anywhere, no lamp.</li>
               <li>Holds 1,000+ books in pocket-size device.</li>
@@ -33,7 +33,7 @@ export default function EReaderComparisonGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Amazon Kindle Paperwhite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$140 — most popular e-reader in the world.</li>
               <li>Waterproof — read in tub or pool.</li>
               <li>Adjustable warm light for nighttime.</li>
@@ -47,7 +47,7 @@ export default function EReaderComparisonGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Kindle Scribe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$340 — larger 10.2-inch screen.</li>
               <li>Includes stylus pen for note-taking.</li>
               <li>Mark up books with notes.</li>
@@ -61,7 +61,7 @@ export default function EReaderComparisonGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Kobo Clara/Libra</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$130 (Clara) or $200 (Libra).</li>
               <li>Reads more file formats than Kindle.</li>
               <li>Better integration with library apps.</li>
@@ -75,7 +75,7 @@ export default function EReaderComparisonGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Barnes + Noble Nook</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$130 GlowLight 4.</li>
               <li>Connect to Barnes + Noble store.</li>
               <li>In-store help available.</li>
@@ -89,7 +89,7 @@ export default function EReaderComparisonGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior accessibility features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>All allow large text size.</li>
               <li>Built-in dictionaries for unknown words.</li>
               <li>Translation to/from many languages.</li>
@@ -103,7 +103,7 @@ export default function EReaderComparisonGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Kindle Paperwhite for most</h3>
-            <p className="text-sm text-muted-foreground">For most senior readers, the Kindle Paperwhite at $140 is the right choice. Largest book selection, integrates with Libby for free library books, easy on eyes with adjustable warm light. If you want bigger text and note-taking, upgrade to Kindle Scribe ($340). Avoid the basic Kindle without backlight — the Paperwhite&apos;s lighting is worth the extra $40.</p>
+            <p className="text-base text-muted-foreground">For most senior readers, the Kindle Paperwhite at $140 is the right choice. Largest book selection, integrates with Libby for free library books, easy on eyes with adjustable warm light. If you want bigger text and note-taking, upgrade to Kindle Scribe ($340). Avoid the basic Kindle without backlight — the Paperwhite&apos;s lighting is worth the extra $40.</p>
           </CardContent>
         </Card>
       </main>

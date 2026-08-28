@@ -19,7 +19,7 @@ export default function MealPrepForOne() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cook once, eat 3x</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cook on Sunday.</li>
               <li>Eat through Wednesday.</li>
               <li>Cook again Thursday.</li>
@@ -33,7 +33,7 @@ export default function MealPrepForOne() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Single-serving cookware</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Small skillet</strong> ($30) — 8-inch.</li>
               <li><strong>Personal slow cooker</strong> ($25).</li>
               <li><strong>Toaster oven</strong> — single chicken breast.</li>
@@ -47,7 +47,7 @@ export default function MealPrepForOne() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy single meals</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sheet pan chicken + veggies.</li>
               <li>Baked sweet potato + broccoli.</li>
               <li>Egg scramble + toast.</li>
@@ -61,7 +61,7 @@ export default function MealPrepForOne() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Build-a-meal pantry</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Eggs (12-pack lasts).</li>
               <li>Frozen veggies (no waste).</li>
               <li>Frozen fish portions.</li>
@@ -76,7 +76,7 @@ export default function MealPrepForOne() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Freeze + portion</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cook 6 chicken breasts at once.</li>
               <li>Freeze in single-portion bags.</li>
               <li>Defrost morning of.</li>
@@ -90,7 +90,7 @@ export default function MealPrepForOne() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior nutrition focus</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Protein at every meal.</li>
               <li>2-3 cups vegetables daily.</li>
               <li>Fiber (whole grains, beans).</li>
@@ -104,7 +104,7 @@ export default function MealPrepForOne() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When you don&apos;t want to cook</h3>
-            <p className="text-sm text-muted-foreground">Meals on Wheels — local, FREE for seniors qualifying. Silver Cuisine — heart-healthy delivered. Mom&apos;s Meals — Medicare-covered for some. Trader Joe&apos;s + Wegmans — single-serve heat-and-eat. Don&apos;t skip meals — leads to malnutrition. One nutritious meal beats none. Take care.</p>
+            <p className="text-base text-muted-foreground">Meals on Wheels — local, FREE for seniors qualifying. Silver Cuisine — heart-healthy delivered. Mom&apos;s Meals — Medicare-covered for some. Trader Joe&apos;s + Wegmans — single-serve heat-and-eat. Don&apos;t skip meals — leads to malnutrition. One nutritious meal beats none. Take care.</p>
           </CardContent>
         </Card>
       </main>

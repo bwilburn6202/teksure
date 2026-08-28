@@ -19,7 +19,7 @@ export default function CostcoPhotoCenter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Costco Photo?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Member-only pricing — significantly cheaper.</li>
               <li>Quality matches Shutterfly + Mixbook.</li>
               <li>$1.50 wallet sized prints.</li>
@@ -33,7 +33,7 @@ export default function CostcoPhotoCenter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Products</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photo prints — 4x6 to poster size.</li>
               <li>Photo books — soft + hardcover.</li>
               <li>Holiday cards — economical.</li>
@@ -47,7 +47,7 @@ export default function CostcoPhotoCenter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to CostcoPhotoCenter.com.</li>
               <li>Sign in with Costco membership.</li>
               <li>Upload photos from phone or computer.</li>
@@ -61,7 +61,7 @@ export default function CostcoPhotoCenter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">vs Shutterfly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Costco — better everyday pricing.</li>
               <li>Shutterfly — better with 50% off promos.</li>
               <li>Costco quality matches Shutterfly.</li>
@@ -75,7 +75,7 @@ export default function CostcoPhotoCenter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Costco Connect app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Costco app for photo orders.</li>
               <li>Order from phone.</li>
               <li>Upload phone photos directly.</li>
@@ -89,7 +89,7 @@ export default function CostcoPhotoCenter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Savings example</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>20-page hardcover photo book.</li>
               <li>Costco — $20.</li>
               <li>Shutterfly regular — $40.</li>
@@ -103,7 +103,7 @@ export default function CostcoPhotoCenter() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Member benefit worth using</h3>
-            <p className="text-sm text-muted-foreground">If you have Costco membership but haven&apos;t used Costco Photo Center, you&apos;re missing out. The member pricing on photo prints and books is consistently among the lowest available. Quality is excellent. The $60 membership pays for itself just on photo orders for many seniors. Try one photo book and compare to your usual provider.</p>
+            <p className="text-base text-muted-foreground">If you have Costco membership but haven&apos;t used Costco Photo Center, you&apos;re missing out. The member pricing on photo prints and books is consistently among the lowest available. Quality is excellent. The $60 membership pays for itself just on photo orders for many seniors. Try one photo book and compare to your usual provider.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function TirePickGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to replace</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Penny test — Lincoln&apos;s head visible = replace.</li>
               <li>Cracks in sidewall.</li>
               <li>Bulges or bubbles.</li>
@@ -34,7 +34,7 @@ export default function TirePickGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best places to buy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Costco</strong> — best prices for members. Free rotations + flat repair.</li>
               <li><strong>Discount Tire</strong> — best service. Free rotation forever.</li>
               <li><strong>Sam&apos;s Club</strong> — competitive.</li>
@@ -48,7 +48,7 @@ export default function TirePickGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-safe tire features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wet weather rating (UTQG).</li>
               <li>All-season vs snow tires for climate.</li>
               <li>Run-flat option (no flat tire change).</li>
@@ -62,7 +62,7 @@ export default function TirePickGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Top brands 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Michelin</strong> — premium quality, long-lasting.</li>
               <li><strong>Continental</strong> — quiet, balanced.</li>
               <li><strong>Goodyear</strong> — solid mid-range.</li>
@@ -76,7 +76,7 @@ export default function TirePickGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Maintenance saves</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Rotate every 5,000-7,500 miles.</li>
               <li>Check pressure monthly.</li>
               <li>Inflate to door sticker (NOT max on tire).</li>
@@ -90,7 +90,7 @@ export default function TirePickGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t change yourself</h3>
-            <p className="text-sm text-muted-foreground">Senior tip: AAA membership ($70/yr) covers free flat tire changes. Worth it. Don&apos;t risk back / fall changing tire on roadside. Other roadside services too — Allstate, insurance often.</p>
+            <p className="text-base text-muted-foreground">Senior tip: AAA membership ($70/yr) covers free flat tire changes. Worth it. Don&apos;t risk back / fall changing tire on roadside. Other roadside services too — Allstate, insurance often.</p>
           </CardContent>
         </Card>
       </main>

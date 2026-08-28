@@ -34,7 +34,7 @@ export default function MealKitDelivery() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function MealKitDelivery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free for many seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Medicare Advantage</strong> — many plans cover Mom&apos;s Meals or similar 14-30 days post-hospital, free.</li>
               <li><strong>SNAP</strong> — covers HelloFresh, Hungryroot, Imperfect Foods.</li>
               <li><strong>Meals on Wheels</strong> — free or low-cost daily delivery for homebound. mealsonwheelsamerica.org.</li>
@@ -55,7 +55,7 @@ export default function MealKitDelivery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick decision</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Like to cook</strong> — HelloFresh or Blue Apron.</li>
               <li><strong>Don&apos;t want to chop</strong> — Home Chef "oven-ready" line.</li>
               <li><strong>No cooking, just heat</strong> — Factor 75, Mom&apos;s Meals, Magic Kitchen.</li>
@@ -68,7 +68,7 @@ export default function MealKitDelivery() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">First-week deals</h3>
-            <p className="text-sm text-muted-foreground">All meal kits run heavy promos for first-time customers — sometimes 50-70% off first 4 weeks. Try one for a month, decide. Cancel anytime online (avoid the phone-only cancellations).</p>
+            <p className="text-base text-muted-foreground">All meal kits run heavy promos for first-time customers — sometimes 50-70% off first 4 weeks. Try one for a month, decide. Cancel anytime online (avoid the phone-only cancellations).</p>
           </CardContent>
         </Card>
       </main>

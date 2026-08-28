@@ -41,7 +41,7 @@ export default function WaterLeakDetector() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -67,7 +67,7 @@ export default function WaterLeakDetector() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For full protection (Moen Flo / Phyn)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Installed at MAIN water line entering home.</li>
               <li>Monitors flow patterns.</li>
               <li>Detects unusual flow (a leak somewhere).</li>
@@ -82,7 +82,7 @@ export default function WaterLeakDetector() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Insurance discount</h3>
-            <p className="text-sm text-muted-foreground">Call homeowners insurance and ask "What discount do you give for smart water leak detection?". Many offer 5-15% off, often $50-200/year. Often pays for the device in 2-3 years.</p>
+            <p className="text-base text-muted-foreground">Call homeowners insurance and ask "What discount do you give for smart water leak detection?". Many offer 5-15% off, often $50-200/year. Often pays for the device in 2-3 years.</p>
           </CardContent>
         </Card>
       </main>

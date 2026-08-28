@@ -301,7 +301,7 @@ export default function SafeCall() {
                 <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Question {step} of {questions.length}</p>
                 <h2 className="text-xl font-bold mb-1">{currentQuestion.text}</h2>
                 {currentQuestion.hint && (
-                  <p className="text-sm text-muted-foreground">{currentQuestion.hint}</p>
+                  <p className="text-base text-muted-foreground">{currentQuestion.hint}</p>
                 )}
               </div>
               <div className="space-y-3">
@@ -382,7 +382,7 @@ export default function SafeCall() {
               {/* Common scam tactics */}
               <div className="p-5 rounded-2xl bg-muted/50 border border-border">
                 <h3 className="font-semibold text-sm mb-3">Quick Tip: Signs of a scam call</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground">
                   {[
                     'Asks for gift cards as payment — any card brand',
                     'Claims you owe money to the IRS or government',

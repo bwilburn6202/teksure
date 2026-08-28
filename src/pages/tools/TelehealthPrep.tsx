@@ -146,7 +146,7 @@ export default function TelehealthPrep() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5 flex items-center justify-between flex-wrap gap-3">
-              <p className="text-sm text-muted-foreground">{done.size} of {total} done</p>
+              <p className="text-base text-muted-foreground">{done.size} of {total} done</p>
               <Button onClick={printIt} variant="outline" size="sm" className="gap-2">
                 <Printer className="h-4 w-4" /> Print this checklist
               </Button>

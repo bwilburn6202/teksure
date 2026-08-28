@@ -33,7 +33,7 @@ export default function AutoInsuranceSeniors() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function AutoInsuranceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save 10-25% with these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Senior discount (50+)</strong> — most insurers.</li>
               <li><strong>Defensive driver / refresher course</strong> — 5-15%, 3-year discount.</li>
               <li><strong>Multi-policy bundle</strong> (home + auto) — 15-25%.</li>
@@ -58,7 +58,7 @@ export default function AutoInsuranceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Shop every 1-2 years</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Get 3 quotes online — Geico, Progressive, State Farm.</li>
               <li>Compare same coverage limits.</li>
               <li>Mention your current insurer&apos;s rate — they often beat it.</li>
@@ -72,7 +72,7 @@ export default function AutoInsuranceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific concerns</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cancellation after age</strong> — illegal age-based denial. Some insurers raise rates instead.</li>
               <li><strong>Cognitive decline disclosure</strong> — required for some states. Talk to insurance agent.</li>
               <li><strong>Hartford has lifetime renewal guarantee</strong> via AARP — won&apos;t drop you for age alone.</li>
@@ -84,7 +84,7 @@ export default function AutoInsuranceSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Drop comprehensive on old cars</h3>
-            <p className="text-sm text-muted-foreground">If your car is 10+ years old + worth under $5,000 — drop comprehensive + collision coverage. Premium savings exceed value of car. Keep liability + UM. Check current value at kbb.com.</p>
+            <p className="text-base text-muted-foreground">If your car is 10+ years old + worth under $5,000 — drop comprehensive + collision coverage. Premium savings exceed value of car. Keep liability + UM. Check current value at kbb.com.</p>
           </CardContent>
         </Card>
       </main>

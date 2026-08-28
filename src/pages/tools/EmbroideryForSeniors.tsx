@@ -19,7 +19,7 @@ export default function EmbroideryForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why embroidery?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Slow + meditative.</li>
               <li>Portable — anywhere.</li>
               <li>Cheap to start ($20).</li>
@@ -33,7 +33,7 @@ export default function EmbroideryForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Starter kit ($20)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Embroidery hoop</strong> — 6 inch wood.</li>
               <li><strong>Cotton fabric</strong> — light color, plain weave.</li>
               <li><strong>Embroidery floss</strong> — DMC brand, multiple colors.</li>
@@ -47,7 +47,7 @@ export default function EmbroideryForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5 starter stitches</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Backstitch</strong> — outlines, lettering.</li>
               <li><strong>Running stitch</strong> — simple, dashed line.</li>
               <li><strong>Satin stitch</strong> — fill shapes.</li>
@@ -61,7 +61,7 @@ export default function EmbroideryForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly projects</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hand towels with initials.</li>
               <li>Pillow cases.</li>
               <li>Tea towels.</li>
@@ -75,7 +75,7 @@ export default function EmbroideryForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vision-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Magnifying lamp</strong> ($40).</li>
               <li><strong>Lighter fabric</strong> — more contrast.</li>
               <li><strong>Larger needle, thicker floss</strong>.</li>
@@ -89,7 +89,7 @@ export default function EmbroideryForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Learn online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YouTube</strong> — Cutesy Crafts, Sarah Homfray.</li>
               <li><strong>DMC.com</strong> — free patterns + tutorials.</li>
               <li><strong>SewMagazine.com</strong> — beginner.</li>
@@ -103,7 +103,7 @@ export default function EmbroideryForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Memory pieces</h3>
-            <p className="text-sm text-muted-foreground">Embroider grandkids&apos; names + birthdates on hoops — wall art. Stitch family names + dates onto pillow case. Recreate vintage handkerchief embroidery. One stitch at a time = lifetime keepsake. Take to medical appointments — calming wait.</p>
+            <p className="text-base text-muted-foreground">Embroider grandkids&apos; names + birthdates on hoops — wall art. Stitch family names + dates onto pillow case. Recreate vintage handkerchief embroidery. One stitch at a time = lifetime keepsake. Take to medical appointments — calming wait.</p>
           </CardContent>
         </Card>
       </main>

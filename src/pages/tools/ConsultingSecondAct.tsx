@@ -19,7 +19,7 @@ export default function ConsultingSecondAct() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best second-act fields</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Healthcare</strong> — retired nurses, doctors, admins highly valued.</li>
               <li><strong>Finance</strong> — fractional CFO, bookkeeping for small biz.</li>
               <li><strong>HR</strong> — small businesses can&apos;t afford full-time.</li>
@@ -35,7 +35,7 @@ export default function ConsultingSecondAct() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup business</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>LLC</strong> — protect personal assets ($100-300 setup).</li>
               <li>EIN from IRS — free.</li>
               <li>Business bank account.</li>
@@ -50,7 +50,7 @@ export default function ConsultingSecondAct() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find clients</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tell EVERYONE in your network.</li>
               <li>Former employer often first client.</li>
               <li>LinkedIn — repost articles, comment thoughtfully.</li>
@@ -66,7 +66,7 @@ export default function ConsultingSecondAct() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pricing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hourly = $50-300+ (your value).</li>
               <li>Flat fees often better — value-based.</li>
               <li>Monthly retainer = predictable income.</li>
@@ -81,7 +81,7 @@ export default function ConsultingSecondAct() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior advantages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Decades of experience.</li>
               <li>Wide network.</li>
               <li>Pattern recognition (seen it all).</li>
@@ -96,7 +96,7 @@ export default function ConsultingSecondAct() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tax considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Self-employment tax 15.3%.</li>
               <li>Quarterly estimated taxes.</li>
               <li>Solo 401(k) — contribute up to $77K/yr (2026).</li>
@@ -111,7 +111,7 @@ export default function ConsultingSecondAct() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Encore career resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>Encore.org</strong> — second-act careers focused on social impact. <strong>Senior PhDs</strong> — academic consulting. <strong>SCORE</strong> — small business mentoring (paid + volunteer). Best part: choose only projects that interest you. Skip the BS. Pure work.</p>
+            <p className="text-base text-muted-foreground"><strong>Encore.org</strong> — second-act careers focused on social impact. <strong>Senior PhDs</strong> — academic consulting. <strong>SCORE</strong> — small business mentoring (paid + volunteer). Best part: choose only projects that interest you. Skip the BS. Pure work.</p>
           </CardContent>
         </Card>
       </main>

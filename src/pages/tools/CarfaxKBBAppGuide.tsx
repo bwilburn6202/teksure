@@ -19,7 +19,7 @@ export default function CarfaxKBBAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Carfax</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vehicle history reports.</li>
               <li>Accident history.</li>
               <li>Service records.</li>
@@ -33,7 +33,7 @@ export default function CarfaxKBBAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Kelley Blue Book (KBB)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free pricing reference.</li>
               <li>Trade-in value.</li>
               <li>Private party sale value.</li>
@@ -47,7 +47,7 @@ export default function CarfaxKBBAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Edmunds True Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Total cost of ownership 5 years.</li>
               <li>Fuel + insurance + repairs.</li>
               <li>Compare across vehicles.</li>
@@ -61,7 +61,7 @@ export default function CarfaxKBBAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">TrueCar</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local price ranges.</li>
               <li>What others paid.</li>
               <li>Connect to local dealers.</li>
@@ -75,7 +75,7 @@ export default function CarfaxKBBAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior buyer tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Always test drive.</li>
               <li>Get pre-purchase inspection ($150).</li>
               <li>Carfax before serious offer.</li>
@@ -89,7 +89,7 @@ export default function CarfaxKBBAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Selling old car</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>KBB private party value baseline.</li>
               <li>List on Facebook Marketplace.</li>
               <li>CarMax instant offer (free).</li>
@@ -103,7 +103,7 @@ export default function CarfaxKBBAppGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">$60 Carfax saves thousands</h3>
-            <p className="text-sm text-muted-foreground">When buying used car, $60 for Carfax report is essential. Reveals accident history, title issues, service gaps. Combined with KBB pricing + pre-purchase inspection, you avoid $5,000+ surprises. Senior buyers especially benefit from this homework. Don&apos;t skip the research.</p>
+            <p className="text-base text-muted-foreground">When buying used car, $60 for Carfax report is essential. Reveals accident history, title issues, service gaps. Combined with KBB pricing + pre-purchase inspection, you avoid $5,000+ surprises. Senior buyers especially benefit from this homework. Don&apos;t skip the research.</p>
           </CardContent>
         </Card>
       </main>

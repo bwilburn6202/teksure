@@ -32,7 +32,7 @@ export default function Plan401kRolloverCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Your options for an old 401(k)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Leave it</strong> — fine if it has good low-cost funds (under 0.20% expense ratio).</li>
               <li><strong>Roll to NEW employer\'s 401(k)</strong> — keeps things simple, but only if new plan is good.</li>
               <li><strong>Roll to IRA</strong> — most flexibility. Open at Vanguard, Fidelity, or Schwab.</li>
@@ -44,7 +44,7 @@ export default function Plan401kRolloverCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step-by-step rollover to IRA</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open an IRA at Vanguard, Fidelity, or Schwab. Free, 10 minutes.</li>
               <li>Match the type — Traditional 401(k) → Traditional IRA. Roth 401(k) → Roth IRA.</li>
               <li>Call the new IRA company\'s rollover desk. Tell them you want a "direct rollover" from your old 401(k).</li>
@@ -91,7 +91,7 @@ export default function Plan401kRolloverCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best simple choice</h3>
-            <p className="text-sm text-muted-foreground">Open an IRA at <strong>Fidelity, Vanguard, or Schwab</strong>. Roll over old 401(k)s into it via direct rollover. Pick a target-date fund matching your retirement year. Done. Cheap. Simple. Wealth-building.</p>
+            <p className="text-base text-muted-foreground">Open an IRA at <strong>Fidelity, Vanguard, or Schwab</strong>. Roll over old 401(k)s into it via direct rollover. Pick a target-date fund matching your retirement year. Done. Cheap. Simple. Wealth-building.</p>
           </CardContent>
         </Card>
       </main>

@@ -33,7 +33,7 @@ export default function CheckbookBalancingApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function CheckbookBalancingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why balance still matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Catch fraud quickly.</li>
               <li>Spot bank errors.</li>
               <li>Know real balance — avoid bounce.</li>
@@ -56,7 +56,7 @@ export default function CheckbookBalancingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: bank app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Already have account.</li>
               <li>Real-time updates.</li>
               <li>Sees pending charges.</li>
@@ -70,7 +70,7 @@ export default function CheckbookBalancingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Modern balancing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open bank app weekly.</li>
               <li>Review every transaction.</li>
               <li>Look for unfamiliar charges.</li>
@@ -84,7 +84,7 @@ export default function CheckbookBalancingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Old paper register OK</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Paper still works.</li>
               <li>Combine with bank app.</li>
               <li>Best for some seniors.</li>
@@ -98,7 +98,7 @@ export default function CheckbookBalancingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Catch fraud fast</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set up text alerts on charges.</li>
               <li>Above $50 — alert.</li>
               <li>Foreign transactions — alert.</li>
@@ -112,7 +112,7 @@ export default function CheckbookBalancingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Family transparency</h3>
-            <p className="text-sm text-muted-foreground">Some seniors give &quot;view-only&quot; bank app access to adult child. Watches for unusual activity. Catches fraud faster. Doesn&apos;t allow them to spend. AARP recommends. Mint can be shared with family. Trusted family member as backup. Empowering, not intrusive.</p>
+            <p className="text-base text-muted-foreground">Some seniors give &quot;view-only&quot; bank app access to adult child. Watches for unusual activity. Catches fraud faster. Doesn&apos;t allow them to spend. AARP recommends. Mint can be shared with family. Trusted family member as backup. Empowering, not intrusive.</p>
           </CardContent>
         </Card>
       </main>

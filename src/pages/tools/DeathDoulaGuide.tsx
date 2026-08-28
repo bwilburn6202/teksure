@@ -19,7 +19,7 @@ export default function DeathDoulaGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What death doulas do</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Emotional support to dying + family.</li>
               <li>Help plan end-of-life wishes.</li>
               <li>Hold space at bedside.</li>
@@ -34,7 +34,7 @@ export default function DeathDoulaGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">vs hospice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hospice</strong> — medical care, Medicare-covered.</li>
               <li><strong>Doula</strong> — emotional + practical support.</li>
               <li>Both work together.</li>
@@ -48,7 +48,7 @@ export default function DeathDoulaGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$50-100/hour typical.</li>
               <li>$200-2,000 packages.</li>
               <li>NOT covered by Medicare.</li>
@@ -62,7 +62,7 @@ export default function DeathDoulaGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find a doula</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NEDA (National End-of-Life Doula Alliance)</strong> — find directory.</li>
               <li><strong>INELDA (International End of Life Doula Association)</strong>.</li>
               <li>Hospice referrals.</li>
@@ -76,7 +76,7 @@ export default function DeathDoulaGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When useful</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Limited family support.</li>
               <li>Family geographically far.</li>
               <li>Complex emotional issues.</li>
@@ -90,7 +90,7 @@ export default function DeathDoulaGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Plan ahead</h3>
-            <p className="text-sm text-muted-foreground">Some seniors hire doula years before for advance planning + relationship building. Most beneficial during last weeks/months. Death doulas growing field. Better when arranged before crisis. Provides peace + dignity.</p>
+            <p className="text-base text-muted-foreground">Some seniors hire doula years before for advance planning + relationship building. Most beneficial during last weeks/months. Death doulas growing field. Better when arranged before crisis. Provides peace + dignity.</p>
           </CardContent>
         </Card>
       </main>

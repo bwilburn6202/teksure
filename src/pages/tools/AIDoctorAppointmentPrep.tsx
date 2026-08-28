@@ -19,7 +19,7 @@ export default function AIDoctorAppointmentPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before appointment</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tell AI your symptoms + new diagnosis.</li>
               <li>Ask: &quot;What questions should I ask doctor about [condition]?&quot;</li>
               <li>Ask: &quot;What symptoms should worry me?&quot;</li>
@@ -34,7 +34,7 @@ export default function AIDoctorAppointmentPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After appointment</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Doctor said something confusing? Ask AI to explain.</li>
               <li>&quot;What does [medical term] mean in plain English?&quot;</li>
               <li>&quot;What are side effects of [medication]?&quot;</li>
@@ -48,7 +48,7 @@ export default function AIDoctorAppointmentPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Decode lab results</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Type results from patient portal.</li>
               <li>Ask: &quot;What does this mean? What&apos;s normal range?&quot;</li>
               <li>Catches things doctor may not call about.</li>
@@ -62,7 +62,7 @@ export default function AIDoctorAppointmentPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drug interaction checks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>List ALL meds + supplements + new prescription.</li>
               <li>Ask: &quot;Are there any interactions?&quot;</li>
               <li>Ask: &quot;What time of day should I take each?&quot;</li>
@@ -76,7 +76,7 @@ export default function AIDoctorAppointmentPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance + Medicare</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Is [procedure] covered by Medicare?&quot;</li>
               <li>&quot;Help me write appeal letter for denied claim.&quot;</li>
               <li>&quot;Explain this insurance EOB.&quot;</li>
@@ -89,7 +89,7 @@ export default function AIDoctorAppointmentPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Critical caveats</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AI is NOT your doctor.</li>
               <li>Use to PREPARE + UNDERSTAND, not diagnose.</li>
               <li>Never replace doctor advice.</li>
@@ -103,7 +103,7 @@ export default function AIDoctorAppointmentPrep() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Big game-changer</h3>
-            <p className="text-sm text-muted-foreground">Most patients leave appointment confused, forget questions. AI prep = 5x better appointments. Doctor sees fewer follow-up calls when patients prepared. Brain stays sharper learning. Free + easy. Use it for every important visit.</p>
+            <p className="text-base text-muted-foreground">Most patients leave appointment confused, forget questions. AI prep = 5x better appointments. Doctor sees fewer follow-up calls when patients prepared. Brain stays sharper learning. Free + easy. Use it for every important visit.</p>
           </CardContent>
         </Card>
       </main>

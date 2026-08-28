@@ -19,7 +19,7 @@ export default function HomeSecurityChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free steps — do today</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lock doors when home — not just when leaving.</li>
               <li>Don&apos;t advertise vacations on social media.</li>
               <li>Get to know neighbors — look out for each other.</li>
@@ -33,7 +33,7 @@ export default function HomeSecurityChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Under $100 upgrades</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Door reinforcement kit — kick-proof the door.</li>
               <li>Sliding door bar — prevents patio door opening.</li>
               <li>Window locks — add to older windows.</li>
@@ -47,7 +47,7 @@ export default function HomeSecurityChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Doors + locks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Deadbolt on every exterior door.</li>
               <li>No spare key under mat or flower pot.</li>
               <li>Smart lock or code lock — no keys to lose.</li>
@@ -61,7 +61,7 @@ export default function HomeSecurityChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Windows</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lock all windows when not home.</li>
               <li>Window sensors alert if opened.</li>
               <li>Security film makes glass harder to break.</li>
@@ -75,7 +75,7 @@ export default function HomeSecurityChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lights + appearance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Timers on indoor lights when away.</li>
               <li>Outdoor motion lights — all entry points.</li>
               <li>Collect mail daily or pause delivery.</li>
@@ -89,7 +89,7 @@ export default function HomeSecurityChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alarm + cameras</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Visible alarm signs deter burglars.</li>
               <li>Even fake cameras have deterrent effect.</li>
               <li>SimpliSafe or Ring Alarm — no contract options.</li>
@@ -103,7 +103,7 @@ export default function HomeSecurityChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Talk to police too</h3>
-            <p className="text-sm text-muted-foreground">Many local police departments offer free home security assessments for seniors. An officer will walk through your home and identify vulnerabilities at no cost. Call your non-emergency police line and ask about the program. Also register with your local utility company&apos;s medical alert priority list — if power goes out, they restore yours first.</p>
+            <p className="text-base text-muted-foreground">Many local police departments offer free home security assessments for seniors. An officer will walk through your home and identify vulnerabilities at no cost. Call your non-emergency police line and ask about the program. Also register with your local utility company&apos;s medical alert priority list — if power goes out, they restore yours first.</p>
           </CardContent>
         </Card>
       </main>

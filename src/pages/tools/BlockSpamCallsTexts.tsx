@@ -39,7 +39,7 @@ export default function BlockSpamCallsTexts() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Layer 2 — Use your carrier's free spam filter</h2>
             <p className="text-sm mb-3">All three big carriers have free apps that block known robocallers BEFORE the phone rings.</p>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Verizon — Call Filter</strong> (free version): pre-installed on most Verizon phones. Open it, turn on Spam Detection.</li>
               <li><strong>AT&T — ActiveArmor</strong>: free app from the App Store / Play Store. Sign in with your AT&T phone number.</li>
               <li><strong>T-Mobile — Scam Shield</strong>: free app. Inside the app, dial #662# from your phone to enable Scam Block.</li>
@@ -59,7 +59,7 @@ export default function BlockSpamCallsTexts() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reporting spam texts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Forward the text to <strong>7726</strong> (spells SPAM). Free, all carriers. Your carrier blocks the sender across their network.</li>
               <li>Then delete the text and block the number.</li>
               <li>Don't reply with "STOP" to numbers you don't recognize — it confirms your number is real.</li>
@@ -70,7 +70,7 @@ export default function BlockSpamCallsTexts() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">The trick scammers don't want you to know</h3>
-            <p className="text-sm text-muted-foreground">If you don't recognize the number, <strong>don't answer at all</strong>. Real callers leave voicemail. Picking up confirms your number is real and active — that gets you on more lists. Let unknown calls go to voicemail every time.</p>
+            <p className="text-base text-muted-foreground">If you don't recognize the number, <strong>don't answer at all</strong>. Real callers leave voicemail. Picking up confirms your number is real and active — that gets you on more lists. Let unknown calls go to voicemail every time.</p>
           </CardContent>
         </Card>
       </main>

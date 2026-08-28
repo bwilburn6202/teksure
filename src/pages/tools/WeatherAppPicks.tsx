@@ -35,7 +35,7 @@ export default function WeatherAppPicks() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function WeatherAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sign up for emergency alerts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone — Settings → Notifications → scroll to Government Alerts → ON.</li>
               <li>Android — Settings → Notifications → Wireless emergency alerts → ON.</li>
               <li>NOAA Weather Radio app sends free severe-weather alerts.</li>
@@ -56,7 +56,7 @@ export default function WeatherAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid sketchy weather apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many free weather apps sell your location data.</li>
               <li>Stick with Apple Weather, Google Weather, or NOAA-powered apps.</li>
               <li>Check app reviews for hidden subscriptions.</li>
@@ -69,7 +69,7 @@ export default function WeatherAppPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Air quality</h3>
-            <p className="text-sm text-muted-foreground">During wildfire season — install <strong>AirVisual</strong> or use your weather app&apos;s AQI feature. Check before going outside. Above 150 AQI — N95 mask + stay inside. Especially important for seniors with heart/lung conditions.</p>
+            <p className="text-base text-muted-foreground">During wildfire season — install <strong>AirVisual</strong> or use your weather app&apos;s AQI feature. Check before going outside. Above 150 AQI — N95 mask + stay inside. Especially important for seniors with heart/lung conditions.</p>
           </CardContent>
         </Card>
       </main>

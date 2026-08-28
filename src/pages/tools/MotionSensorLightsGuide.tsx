@@ -19,7 +19,7 @@ export default function MotionSensorLightsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why they matter for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Prevent nighttime falls — lights come on automatically.</li>
               <li>No fumbling for switches in the dark.</li>
               <li>Deter intruders — they dislike sudden light.</li>
@@ -33,7 +33,7 @@ export default function MotionSensorLightsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Indoor motion lights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plug-in night lights with motion — under $15.</li>
               <li>Battery-powered — no wiring needed.</li>
               <li>Stick anywhere — closet, hallway, bathroom.</li>
@@ -47,7 +47,7 @@ export default function MotionSensorLightsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Outdoor motion lights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Driveway lights — see who&apos;s arriving.</li>
               <li>Front porch lights — safe entry at night.</li>
               <li>Back yard lights — deter intruders.</li>
@@ -61,7 +61,7 @@ export default function MotionSensorLightsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart bulb option</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smart bulbs (Philips Hue, LIFX) have motion rules.</li>
               <li>Set to turn on when entering a room.</li>
               <li>Works with Alexa: &quot;motion detected in hallway.&quot;</li>
@@ -75,7 +75,7 @@ export default function MotionSensorLightsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Simple setup steps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plug-in type: plug into outlet, aim sensor.</li>
               <li>Battery type: peel backing, stick to wall.</li>
               <li>Outdoor wired: have electrician install.</li>
@@ -89,7 +89,7 @@ export default function MotionSensorLightsGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best budget picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>GE plug-in night light — around $8.</li>
               <li>Mr. Beams battery LED — around $20 for 2-pack.</li>
               <li>BAXIA solar outdoor — around $25 for 2-pack.</li>
@@ -103,7 +103,7 @@ export default function MotionSensorLightsGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with the bathroom</h3>
-            <p className="text-sm text-muted-foreground">Falls at night are a leading cause of injury for seniors, and most happen on the way to the bathroom. A simple $8 plug-in motion night light in the hallway and bathroom makes a huge difference. You never have to find a light switch in the dark. It&apos;s one of the simplest and most impactful safety upgrades a senior can make.</p>
+            <p className="text-base text-muted-foreground">Falls at night are a leading cause of injury for seniors, and most happen on the way to the bathroom. A simple $8 plug-in motion night light in the hallway and bathroom makes a huge difference. You never have to find a light switch in the dark. It&apos;s one of the simplest and most impactful safety upgrades a senior can make.</p>
           </CardContent>
         </Card>
       </main>

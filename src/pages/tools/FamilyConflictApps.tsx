@@ -19,7 +19,7 @@ export default function FamilyConflictApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best ROI: family mediation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Neutral, trained 3rd party.</li>
               <li>Less than 1/10th the cost of litigation.</li>
               <li>Family preserved — court usually destroys.</li>
@@ -33,7 +33,7 @@ export default function FamilyConflictApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Family therapy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most insurance covers (Medicare too).</li>
               <li>Find at <strong>psychologytoday.com</strong> — filter "family".</li>
               <li>2-6 sessions can shift entrenched patterns.</li>
@@ -46,7 +46,7 @@ export default function FamilyConflictApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tools that help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>OurFamilyWizard / TalkingParents</strong> — co-parenting + family communication apps with timestamped logs.</li>
               <li><strong>Trustworthy</strong> — shared family info hub. Reduces "who has what" fights.</li>
               <li><strong>Caregiver coordination apps</strong> (Caring Bridge, Lotsa Helping Hands) — distribute responsibilities fairly.</li>
@@ -59,7 +59,7 @@ export default function FamilyConflictApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common senior family conflicts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Who&apos;s caregiving Mom?"</strong> — split tasks formally + fair compensation.</li>
               <li><strong>"You&apos;re favoring [sibling]"</strong> — financial transparency + family meeting.</li>
               <li><strong>"Dad shouldn&apos;t still be driving"</strong> — doctor + DMV evaluation.</li>
@@ -72,7 +72,7 @@ export default function FamilyConflictApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free resource</h3>
-            <p className="text-sm text-muted-foreground"><strong>National Care Planning Council</strong> — free family caregiver mediation referrals. <strong>AARP Family Caregiving</strong> — free conflict resolution resources. <strong>Local Area Agency on Aging</strong> — many offer free family meeting facilitation. Use them before paying.</p>
+            <p className="text-base text-muted-foreground"><strong>National Care Planning Council</strong> — free family caregiver mediation referrals. <strong>AARP Family Caregiving</strong> — free conflict resolution resources. <strong>Local Area Agency on Aging</strong> — many offer free family meeting facilitation. Use them before paying.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function SeniorRentalCarDeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior + AAA + AARP discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hertz</strong> — 50+: 10-20% AAA, AARP.</li>
               <li><strong>Avis</strong> — 50+: 30% via AARP.</li>
               <li><strong>Budget</strong> — 50+: 25% via AARP.</li>
@@ -33,7 +33,7 @@ export default function SeniorRentalCarDeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save more</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Off-airport pickup 30% cheaper.</li>
               <li>Auto-Slash.com — auto-monitor + rebook lower.</li>
               <li>1-week rate often less than 5-day.</li>
@@ -46,7 +46,7 @@ export default function SeniorRentalCarDeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip these add-ons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Liability — your insurance covers usually.</li>
               <li>CDW — premium credit cards include FREE.</li>
               <li>Pre-paid gas — overpriced.</li>
@@ -60,7 +60,7 @@ export default function SeniorRentalCarDeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Credit card protection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Chase Sapphire Preferred</strong> — primary CDW.</li>
               <li><strong>Capital One Venture X</strong> — primary CDW.</li>
               <li><strong>Most Visa Signature</strong> — secondary.</li>
@@ -74,7 +74,7 @@ export default function SeniorRentalCarDeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly cars</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mid-size easier than compact.</li>
               <li>Backup camera (most modern have).</li>
               <li>Higher seats — easier in/out.</li>
@@ -88,7 +88,7 @@ export default function SeniorRentalCarDeals() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior age limits</h3>
-            <p className="text-sm text-muted-foreground">Most US rental companies have NO upper age limit. Some Canada/Europe do. Bring valid driver&apos;s license + same-name credit card. International — bring International Driving Permit ($20 from AAA).</p>
+            <p className="text-base text-muted-foreground">Most US rental companies have NO upper age limit. Some Canada/Europe do. Bring valid driver&apos;s license + same-name credit card. International — bring International Driving Permit ($20 from AAA).</p>
           </CardContent>
         </Card>
       </main>

@@ -31,7 +31,7 @@ export default function AdvanceDirectiveCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best free options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Five Wishes (fivewishes.org)</strong> — most loved by patients and families. $5 for the booklet. State-recognized in most US states. Covers physical, emotional, spiritual.</li>
               <li><strong>Your state health department</strong> — every state has a free standard advance directive form. Search "[your state] advance directive form".</li>
               <li><strong>AARP\'s free template</strong> — aarp.org/caregiving/financial-legal/. State-specific.</li>
@@ -43,7 +43,7 @@ export default function AdvanceDirectiveCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Decisions to think through</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>CPR</strong> — if your heart stops, do you want resuscitation?</li>
               <li><strong>Mechanical ventilation</strong> — breathing machine?</li>
               <li><strong>Tube feeding</strong> — if you can\'t swallow?</li>
@@ -88,7 +88,7 @@ export default function AdvanceDirectiveCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Have "the conversation"</h3>
-            <p className="text-sm text-muted-foreground">The free <strong>Conversation Project (theconversationproject.org)</strong> has gentle starter conversations for families. National Healthcare Decisions Day (April 16) is a good prompt to do this together.</p>
+            <p className="text-base text-muted-foreground">The free <strong>Conversation Project (theconversationproject.org)</strong> has gentle starter conversations for families. National Healthcare Decisions Day (April 16) is a good prompt to do this together.</p>
           </CardContent>
         </Card>
       </main>

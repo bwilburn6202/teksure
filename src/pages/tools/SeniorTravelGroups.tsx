@@ -34,7 +34,7 @@ export default function SeniorTravelGroups() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function SeniorTravelGroups() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why group tours</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pre-planned — no logistics.</li>
               <li>Built-in friends — meet other seniors.</li>
               <li>Local expert guides.</li>
@@ -58,7 +58,7 @@ export default function SeniorTravelGroups() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheaper alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Costco Travel</strong> — package deals + cash card.</li>
               <li><strong>AAA Travel</strong> — discounts for members.</li>
               <li><strong>YMCA Senior Adventures</strong> — local low-cost trips.</li>
@@ -72,7 +72,7 @@ export default function SeniorTravelGroups() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Solo senior travel</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Road Scholar + OAT have many solo travelers — won&apos;t feel out of place.</li>
               <li>Cruise lines have solo-traveler events.</li>
               <li>Roommate matching — saves the single supplement.</li>
@@ -85,7 +85,7 @@ export default function SeniorTravelGroups() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Travel insurance ESSENTIAL</h3>
-            <p className="text-sm text-muted-foreground">For 65+ international trip — travel insurance with medical coverage + medical evacuation is essential. Original Medicare does NOT cover overseas. $200-400 per trip = peace of mind. See /tools/travel-insurance-reality.</p>
+            <p className="text-base text-muted-foreground">For 65+ international trip — travel insurance with medical coverage + medical evacuation is essential. Original Medicare does NOT cover overseas. $200-400 per trip = peace of mind. See /tools/travel-insurance-reality.</p>
           </CardContent>
         </Card>
       </main>

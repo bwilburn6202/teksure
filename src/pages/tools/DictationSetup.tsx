@@ -207,7 +207,7 @@ export default function DictationSetup() {
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Tricks worth knowing</p>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-base">
                 {setup.pro.map((p, i) => (
                   <li key={i} className="flex gap-2"><span className="text-primary shrink-0">•</span><span>{p}</span></li>
                 ))}

@@ -29,7 +29,7 @@ export default function AppleIdGoogleAccountSetup() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Create Apple ID</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>On a new iPhone — pick "Create an Apple ID" during setup. Or go to <strong>appleid.apple.com</strong> on a computer.</li>
                   <li>Use an email you own (or get a free iCloud email).</li>
                   <li>Pick a strong password — 12+ characters, mix of letters/numbers. NOT your dog\'s name.</li>
@@ -42,7 +42,7 @@ export default function AppleIdGoogleAccountSetup() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Critical safety settings</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>Settings → tap your name → Sign-In & Security → "Two-Factor Authentication" → ON.</li>
                   <li>Same menu → "Account Recovery" → add a Recovery Contact (a trusted family member with their own Apple ID).</li>
                   <li>Same menu → "Recovery Key" → Generate. Print and save with your will.</li>
@@ -59,7 +59,7 @@ export default function AppleIdGoogleAccountSetup() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Create Google Account</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>Go to <strong>accounts.google.com/signup</strong> on any computer or phone.</li>
                   <li>Pick a Gmail address (you can also use an existing email).</li>
                   <li>Pick a strong password — 12+ characters.</li>
@@ -72,7 +72,7 @@ export default function AppleIdGoogleAccountSetup() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Critical safety settings</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>Go to <strong>myaccount.google.com</strong>.</li>
                   <li>Security → 2-Step Verification → ON. Use phone OR Google Authenticator.</li>
                   <li>Security → Recovery phone + Recovery email. Both essential.</li>
@@ -102,7 +102,7 @@ export default function AppleIdGoogleAccountSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">Use the same Apple ID / Google account on every device you own. That way photos, calendars, contacts, and notes all sync. Don\'t create a new account every time — that creates the world\'s most confusing mess.</p>
+            <p className="text-base text-muted-foreground">Use the same Apple ID / Google account on every device you own. That way photos, calendars, contacts, and notes all sync. Don\'t create a new account every time — that creates the world\'s most confusing mess.</p>
           </CardContent>
         </Card>
       </main>

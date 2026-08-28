@@ -19,7 +19,7 @@ export default function LifeLockForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What LifeLock does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Monitors your identity online.</li>
               <li>Alerts to suspicious activity.</li>
               <li>$1M insurance coverage.</li>
@@ -33,7 +33,7 @@ export default function LifeLockForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives — better</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free credit freeze at 3 bureaus.</li>
               <li>Free Credit Karma alerts.</li>
               <li>Bank fraud alerts free.</li>
@@ -47,7 +47,7 @@ export default function LifeLockForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Credit freeze — best move</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free at all 3 credit bureaus.</li>
               <li>Equifax, Experian, TransUnion.</li>
               <li>Prevents new credit opening.</li>
@@ -61,7 +61,7 @@ export default function LifeLockForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Aura alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$120/year — similar to LifeLock.</li>
               <li>Identity + credit + device.</li>
               <li>Better customer service reviews.</li>
@@ -75,7 +75,7 @@ export default function LifeLockForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When LifeLock-type services help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Already victim of identity theft.</li>
               <li>Restoration support useful.</li>
               <li>Don&apos;t want to monitor own credit.</li>
@@ -89,7 +89,7 @@ export default function LifeLockForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY identity protection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Freeze credit at 3 bureaus (free).</li>
               <li>Sign up Credit Karma (free).</li>
               <li>Enable bank/card alerts (free).</li>
@@ -103,7 +103,7 @@ export default function LifeLockForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free credit freeze first</h3>
-            <p className="text-sm text-muted-foreground">Before paying $120-$330/year for LifeLock, freeze your credit at all 3 bureaus FREE. This single step prevents most identity theft. Combined with bank alerts + Credit Karma monitoring, you have most LifeLock features free. LifeLock&apos;s value is the restoration insurance + service if you do get hit. Tech-comfortable seniors save money DIY.</p>
+            <p className="text-base text-muted-foreground">Before paying $120-$330/year for LifeLock, freeze your credit at all 3 bureaus FREE. This single step prevents most identity theft. Combined with bank alerts + Credit Karma monitoring, you have most LifeLock features free. LifeLock&apos;s value is the restoration insurance + service if you do get hit. Tech-comfortable seniors save money DIY.</p>
           </CardContent>
         </Card>
       </main>

@@ -33,7 +33,7 @@ export default function PetTelevetVisits() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function PetTelevetVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When tele-vet works well</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Is this rash an emergency?"</li>
               <li>"Why is the cat throwing up after eating?"</li>
               <li>"Should I be worried about this lump?"</li>
@@ -57,7 +57,7 @@ export default function PetTelevetVisits() {
         <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you NEED in-person vet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bleeding that won&apos;t stop.</li>
               <li>Trouble breathing.</li>
               <li>Suspected broken bone.</li>
@@ -73,7 +73,7 @@ export default function PetTelevetVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pet poison emergency</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ASPCA Poison Hotline</strong> — 1-888-426-4435. $95 fee but life-saving.</li>
               <li><strong>Pet Poison Helpline</strong> — 1-855-764-7661. $85 fee.</li>
               <li>Have ready: pet&apos;s weight, what they ate, how much, when.</li>
@@ -85,7 +85,7 @@ export default function PetTelevetVisits() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Online pharmacy savings</h3>
-            <p className="text-sm text-muted-foreground">For prescription refills — Chewy Pharmacy and 1800PetMeds save 30-50% vs vet office. Vet writes script, online pharmacy fills. Auto-ship for monthly meds. See /tools/online-pet-pharmacies.</p>
+            <p className="text-base text-muted-foreground">For prescription refills — Chewy Pharmacy and 1800PetMeds save 30-50% vs vet office. Vet writes script, online pharmacy fills. Auto-ship for monthly meds. See /tools/online-pet-pharmacies.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function PrepaidVsContractPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Prepaid: pros</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pay-as-you-go simple.</li>
               <li>No contract — cancel anytime.</li>
               <li>No credit check.</li>
@@ -33,7 +33,7 @@ export default function PrepaidVsContractPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Prepaid: cons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Buy phone outright ($300-1500).</li>
               <li>Limited international roaming.</li>
               <li>Sometimes data deprioritized.</li>
@@ -47,7 +47,7 @@ export default function PrepaidVsContractPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Contract: pros</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone bundled (paid over time).</li>
               <li>Latest devices always.</li>
               <li>Insurance available.</li>
@@ -61,7 +61,7 @@ export default function PrepaidVsContractPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Contract: cons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$80-150/mo typical.</li>
               <li>2-year commitment.</li>
               <li>Termination fee if cancel.</li>
@@ -75,7 +75,7 @@ export default function PrepaidVsContractPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best prepaid for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mint Mobile</strong> — $15/mo 5GB.</li>
               <li><strong>Tracfone</strong> — basic phones, simple.</li>
               <li><strong>Cricket Wireless</strong> — ATT network.</li>
@@ -89,7 +89,7 @@ export default function PrepaidVsContractPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior recommendation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most seniors = prepaid wins.</li>
               <li>Especially if phone is paid off.</li>
               <li>Saves $50+/mo.</li>
@@ -103,7 +103,7 @@ export default function PrepaidVsContractPhones() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Lifeline Discount</h3>
-            <p className="text-sm text-muted-foreground">Federal program — Lifeline. Free or discounted phone service for low-income seniors. Up to $9.25/mo discount. SNAP / Medicaid recipients qualify automatically. Apply at lifelinesupport.org. Many seniors don&apos;t know about this. Free phones available too. Truly free phone service possible.</p>
+            <p className="text-base text-muted-foreground">Federal program — Lifeline. Free or discounted phone service for low-income seniors. Up to $9.25/mo discount. SNAP / Medicaid recipients qualify automatically. Apply at lifelinesupport.org. Many seniors don&apos;t know about this. Free phones available too. Truly free phone service possible.</p>
           </CardContent>
         </Card>
       </main>

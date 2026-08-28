@@ -30,19 +30,19 @@ export default function DigitizeOldMedia() {
             <div className="space-y-3">
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">Legacybox</p>
-                <p className="text-sm text-muted-foreground">Best-known. They send you a box, you load it up, ship back. Roughly $80 for 5 items, $300 for 25 items. Sales bring it down 40-60%.</p>
+                <p className="text-base text-muted-foreground">Best-known. They send you a box, you load it up, ship back. Roughly $80 for 5 items, $300 for 25 items. Sales bring it down 40-60%.</p>
               </div>
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">ScanCafe</p>
-                <p className="text-sm text-muted-foreground">Often cheaper. Slides, prints, negatives. About $0.30 per photo, $20 per VHS tape.</p>
+                <p className="text-base text-muted-foreground">Often cheaper. Slides, prints, negatives. About $0.30 per photo, $20 per VHS tape.</p>
               </div>
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">Costco Photo</p>
-                <p className="text-sm text-muted-foreground">If you have a Costco membership — they handle photos, slides, video tapes, 8mm/16mm film. Reliable and reasonably priced.</p>
+                <p className="text-base text-muted-foreground">If you have a Costco membership — they handle photos, slides, video tapes, 8mm/16mm film. Reliable and reasonably priced.</p>
               </div>
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">iMemories</p>
-                <p className="text-sm text-muted-foreground">Cloud-first — they upload everything to a private cloud you can share with family.</p>
+                <p className="text-base text-muted-foreground">Cloud-first — they upload everything to a private cloud you can share with family.</p>
               </div>
             </div>
             <p className="text-sm mt-3 bg-muted/50 p-3 rounded"><strong>Tip:</strong> Mail with tracking and insurance. Schedule shipments for Q1 — companies are slammed near holidays.</p>
@@ -52,7 +52,7 @@ export default function DigitizeOldMedia() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY — for photos and slides</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"PhotoScan by Google Photos"</strong> (free app) — lay the photo flat, hold the phone over it, follow 4 dots on screen. Removes glare. Saves to Google Photos automatically.</li>
               <li><strong>"Photomyne"</strong> — scans 4 photos at once from an album page. Auto-crops each one.</li>
               <li><strong>Flatbed scanner</strong> (Epson V600 or similar, $250) — for slides and negatives. Best quality but slower.</li>
@@ -64,7 +64,7 @@ export default function DigitizeOldMedia() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY — for VHS and Hi8 tapes</h2>
             <p className="text-sm mb-2">Trickier than photos because you need a working VCR.</p>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If you have a VCR, buy a $30 USB capture device (Diamond VC500 or similar).</li>
               <li>Plug VCR's red/white/yellow cables into the capture device, capture device into computer USB.</li>
               <li>Free software: Windows uses "OBS Studio" or the included app. Mac: same.</li>
@@ -88,7 +88,7 @@ export default function DigitizeOldMedia() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">Pick the one box you'd most regret losing. Tackle that first. You don't have to do it all in one weekend — even doing one shoebox a month means you'll be done by next year, with all the memories saved.</p>
+            <p className="text-base text-muted-foreground">Pick the one box you'd most regret losing. Tackle that first. You don't have to do it all in one weekend — even doing one shoebox a month means you'll be done by next year, with all the memories saved.</p>
           </CardContent>
         </Card>
       </main>

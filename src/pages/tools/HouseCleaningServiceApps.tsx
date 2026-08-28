@@ -19,7 +19,7 @@ export default function HouseCleaningServiceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Major chains</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Molly Maid — established + bonded.</li>
               <li>Merry Maids — long-time chain.</li>
               <li>The Cleaning Authority.</li>
@@ -33,7 +33,7 @@ export default function HouseCleaningServiceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">App-based services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Handy — book cleaning + handyman.</li>
               <li>Tidy — recurring + one-time.</li>
               <li>Bookable in app.</li>
@@ -47,7 +47,7 @@ export default function HouseCleaningServiceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Frequency</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Weekly — best for working seniors or large homes.</li>
               <li>Bi-weekly — most popular.</li>
               <li>Monthly — light maintenance.</li>
@@ -61,7 +61,7 @@ export default function HouseCleaningServiceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Same cleaner each visit ideal.</li>
               <li>Builds trust + familiarity.</li>
               <li>Walk through preferences first time.</li>
@@ -75,7 +75,7 @@ export default function HouseCleaningServiceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost-saving alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local Facebook groups — moms cleaning.</li>
               <li>Community college students.</li>
               <li>Friends of friends — referrals.</li>
@@ -89,7 +89,7 @@ export default function HouseCleaningServiceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance + tax</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Verify cleaner has insurance.</li>
               <li>Personal injury liability covered.</li>
               <li>If hire individual — they&apos;re your employee.</li>
@@ -103,7 +103,7 @@ export default function HouseCleaningServiceApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Bi-weekly service is sweet spot</h3>
-            <p className="text-sm text-muted-foreground">For most senior homes, bi-weekly cleaning at $120-$180 strikes a good balance. House stays clean without breaking bank. Same cleaner each visit best — develops trust and routine. Many seniors say hiring help with cleaning is one of best quality-of-life upgrades. Reduces physical strain, gives you cleaner home.</p>
+            <p className="text-base text-muted-foreground">For most senior homes, bi-weekly cleaning at $120-$180 strikes a good balance. House stays clean without breaking bank. Same cleaner each visit best — develops trust and routine. Many seniors say hiring help with cleaning is one of best quality-of-life upgrades. Reduces physical strain, gives you cleaner home.</p>
           </CardContent>
         </Card>
       </main>

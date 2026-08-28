@@ -19,7 +19,7 @@ export default function INaturalistAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photograph anything natural.</li>
               <li>App identifies in seconds.</li>
               <li>Plants, insects, mushrooms, animals.</li>
@@ -33,7 +33,7 @@ export default function INaturalistAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Citizen science</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Your photos help research.</li>
               <li>Used by scientists worldwide.</li>
               <li>Track species ranges + populations.</li>
@@ -47,7 +47,7 @@ export default function INaturalistAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Seek by iNaturalist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Simpler version for kids + casual users.</li>
               <li>No account needed.</li>
               <li>No location data uploaded.</li>
@@ -61,7 +61,7 @@ export default function INaturalistAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open iNaturalist app.</li>
               <li>Tap camera button.</li>
               <li>Photograph close-up.</li>
@@ -75,7 +75,7 @@ export default function INaturalistAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best uses for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Identify mystery plants in yard.</li>
               <li>Show grandkids amazing nature.</li>
               <li>Document insects on flowers.</li>
@@ -89,7 +89,7 @@ export default function INaturalistAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Combined with other apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Merlin — birds specifically.</li>
               <li>PictureThis — plants only.</li>
               <li>iNaturalist — everything else.</li>
@@ -103,7 +103,7 @@ export default function INaturalistAppForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Backyard discovery</h3>
-            <p className="text-sm text-muted-foreground">Spend 30 minutes in your backyard with iNaturalist. Photograph 10 different things — flowers, weeds, insects, mushrooms. App identifies them all. Many seniors discover dozens of fascinating species in their own yard. Great mental engagement + outdoor activity. Free and educational. Wonderful with visiting grandchildren.</p>
+            <p className="text-base text-muted-foreground">Spend 30 minutes in your backyard with iNaturalist. Photograph 10 different things — flowers, weeds, insects, mushrooms. App identifies them all. Many seniors discover dozens of fascinating species in their own yard. Great mental engagement + outdoor activity. Free and educational. Wonderful with visiting grandchildren.</p>
           </CardContent>
         </Card>
       </main>

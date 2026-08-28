@@ -33,7 +33,7 @@ export default function GarminForSeniors() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function GarminForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Garmin over Apple Watch</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Battery</strong> — 5-14 days vs 1 day Apple Watch.</li>
               <li>Less charging hassle.</li>
               <li>Good even if not iPhone user.</li>
@@ -57,7 +57,7 @@ export default function GarminForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heart rate 24/7.</li>
               <li>Pulse oximeter (oxygen level).</li>
               <li>Sleep tracking.</li>
@@ -73,7 +73,7 @@ export default function GarminForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorite features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Incident Detection</strong> — auto-alerts emergency contacts on fall (newer models).</li>
               <li><strong>LiveTrack</strong> — family sees your location during walks/hikes.</li>
               <li><strong>Music</strong> — store on watch.</li>
@@ -87,7 +87,7 @@ export default function GarminForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When Garmin best</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hate charging daily.</li>
               <li>Active outdoors (hiking, golfing).</li>
               <li>Don&apos;t use iPhone.</li>
@@ -101,7 +101,7 @@ export default function GarminForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Apple Watch when</h3>
-            <p className="text-sm text-muted-foreground">Apple Watch better if: iPhone user, daily city use, want ECG/AFib detection, tight family iCloud integration. Garmin better if: long battery matters, outdoor adventures, Android phone, value over premium. Both excellent for senior health tracking.</p>
+            <p className="text-base text-muted-foreground">Apple Watch better if: iPhone user, daily city use, want ECG/AFib detection, tight family iCloud integration. Garmin better if: long battery matters, outdoor adventures, Android phone, value over premium. Both excellent for senior health tracking.</p>
           </CardContent>
         </Card>
       </main>

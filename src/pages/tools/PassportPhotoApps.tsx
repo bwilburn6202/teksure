@@ -34,7 +34,7 @@ export default function PassportPhotoApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function PassportPhotoApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">US passport photo rules</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>2" × 2" square print (sized at print).</li>
               <li>Plain WHITE or off-white background. No clutter.</li>
               <li>Color photo, taken in last 6 months.</li>
@@ -59,7 +59,7 @@ export default function PassportPhotoApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY at home — 2 minutes</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Stand against a plain white wall. Good even lighting (avoid shadows).</li>
               <li>Phone on tripod or have someone hold it 4 feet away.</li>
               <li>Take 2-3 photos.</li>
@@ -73,7 +73,7 @@ export default function PassportPhotoApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common rejection reasons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Background not white enough (gray walls).</li>
               <li>Shadow on face or behind head.</li>
               <li>Eyes not visible (hair, blinking).</li>
@@ -87,7 +87,7 @@ export default function PassportPhotoApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Need passport fast?</h3>
-            <p className="text-sm text-muted-foreground">Standard processing is 6-8 weeks. Expedited (extra $60) is 2-3 weeks. Travel within 14 days? Make appointment at a Passport Agency (call 1-877-487-2778). Same-day passports possible in emergencies. Don&apos;t book international travel without checking your passport expiration date — many countries require 6 months remaining.</p>
+            <p className="text-base text-muted-foreground">Standard processing is 6-8 weeks. Expedited (extra $60) is 2-3 weeks. Travel within 14 days? Make appointment at a Passport Agency (call 1-877-487-2778). Same-day passports possible in emergencies. Don&apos;t book international travel without checking your passport expiration date — many countries require 6 months remaining.</p>
           </CardContent>
         </Card>
       </main>

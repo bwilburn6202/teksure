@@ -35,7 +35,7 @@ export default function CitizenEmergencyApp() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -69,7 +69,7 @@ export default function CitizenEmergencyApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don\'t over-do it</h3>
-            <p className="text-sm text-muted-foreground">Constant emergency alerts can spike anxiety. Pick 2-3 apps that REALLY matter for your area (Watch Duty if wildfires, NOAA Weather if tornadoes, FEMA for federal). Skip the rest. Awareness should reduce stress, not add to it.</p>
+            <p className="text-base text-muted-foreground">Constant emergency alerts can spike anxiety. Pick 2-3 apps that REALLY matter for your area (Watch Duty if wildfires, NOAA Weather if tornadoes, FEMA for federal). Skip the rest. Awareness should reduce stress, not add to it.</p>
           </CardContent>
         </Card>
       </main>

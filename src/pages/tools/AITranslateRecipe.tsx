@@ -19,7 +19,7 @@ export default function AITranslateRecipe() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Adapt recipes for diet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Make this recipe diabetic-friendly.&quot;</li>
               <li>&quot;Reduce sodium in this recipe.&quot;</li>
               <li>&quot;Make this gluten-free.&quot;</li>
@@ -33,7 +33,7 @@ export default function AITranslateRecipe() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cooking for one</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Type recipe — say &quot;halve this&quot; or &quot;make for 1 person.&quot;</li>
               <li>AI adjusts measurements perfectly.</li>
               <li>&quot;What can I make with [list ingredients in fridge]?&quot;</li>
@@ -47,7 +47,7 @@ export default function AITranslateRecipe() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Substitutions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Out of buttermilk — what can I substitute?&quot;</li>
               <li>&quot;Healthier alternative to butter in baking?&quot;</li>
               <li>&quot;Lower-sodium soy sauce alternative?&quot;</li>
@@ -61,7 +61,7 @@ export default function AITranslateRecipe() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Translate old recipes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Grandma&apos;s recipe in Italian/Greek/etc.?</li>
               <li>Type or photo (with phone OCR).</li>
               <li>AI translates AND adapts to American measurements.</li>
@@ -75,7 +75,7 @@ export default function AITranslateRecipe() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Meal planning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Plan healthy meals for week, low-sodium, $50 budget.&quot;</li>
               <li>&quot;Mediterranean diet meal plan for 1 week.&quot;</li>
               <li>&quot;Simple meals using slow cooker for arthritic hands.&quot;</li>
@@ -89,7 +89,7 @@ export default function AITranslateRecipe() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Voice cooking</h3>
-            <p className="text-sm text-muted-foreground">Cooking with messy hands? Ask Alexa/Google: &quot;Set timer 5 minutes,&quot; &quot;What temperature for chicken?&quot;, &quot;Convert tablespoons to teaspoons.&quot; Or use phone&apos;s &quot;Hey Siri, read me the recipe.&quot; ChatGPT app has voice mode — talk while cooking. Hands-free help.</p>
+            <p className="text-base text-muted-foreground">Cooking with messy hands? Ask Alexa/Google: &quot;Set timer 5 minutes,&quot; &quot;What temperature for chicken?&quot;, &quot;Convert tablespoons to teaspoons.&quot; Or use phone&apos;s &quot;Hey Siri, read me the recipe.&quot; ChatGPT app has voice mode — talk while cooking. Hands-free help.</p>
           </CardContent>
         </Card>
       </main>

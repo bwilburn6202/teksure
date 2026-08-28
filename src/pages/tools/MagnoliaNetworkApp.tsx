@@ -19,7 +19,7 @@ export default function MagnoliaNetworkApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Magnolia?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Chip + Joanna Gaines&apos; lifestyle network.</li>
               <li>Home design, cooking, gardening shows.</li>
               <li>Calmer, gentler than HGTV.</li>
@@ -33,7 +33,7 @@ export default function MagnoliaNetworkApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to watch</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Max ($10/month with ads).</li>
               <li>Discovery+ ($5/month with ads).</li>
               <li>Both stream Magnolia content.</li>
@@ -47,7 +47,7 @@ export default function MagnoliaNetworkApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior favorite shows</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fixer Upper — original Chip + Joanna show.</li>
               <li>Magnolia Table — cooking with Joanna.</li>
               <li>Restoration Road — saving old buildings.</li>
@@ -61,7 +61,7 @@ export default function MagnoliaNetworkApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Better choice between</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Max ($10/mo) — more shows + HBO content.</li>
               <li>Discovery+ ($5/mo) — focuses on lifestyle/HGTV.</li>
               <li>If you also want HBO dramas — Max.</li>
@@ -75,7 +75,7 @@ export default function MagnoliaNetworkApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">HGTV alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>HGTV channel on cable.</li>
               <li>HGTV streaming on Discovery+.</li>
               <li>Magnolia gentler than HGTV reality drama.</li>
@@ -89,7 +89,7 @@ export default function MagnoliaNetworkApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free content</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Magnolia Journal magazine — print + digital.</li>
               <li>Joanna&apos;s YouTube channel — recipes + DIY.</li>
               <li>Fixer Upper episodes occasionally on YouTube.</li>
@@ -103,7 +103,7 @@ export default function MagnoliaNetworkApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Discovery+ for HGTV-loving seniors</h3>
-            <p className="text-sm text-muted-foreground">If you love HGTV shows, Discovery+ at $5/month is a great deal. All HGTV content + Magnolia Network + Food Network. Cheaper than maintaining cable subscription. Many senior cord-cutters use just Discovery+ + library streaming. Try free trial first.</p>
+            <p className="text-base text-muted-foreground">If you love HGTV shows, Discovery+ at $5/month is a great deal. All HGTV content + Magnolia Network + Food Network. Cheaper than maintaining cable subscription. Many senior cord-cutters use just Discovery+ + library streaming. Try free trial first.</p>
           </CardContent>
         </Card>
       </main>

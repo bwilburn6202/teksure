@@ -40,7 +40,7 @@ export default function DigitalPhotoFramePicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1"><strong>Best:</strong> {p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -49,7 +49,7 @@ export default function DigitalPhotoFramePicker() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to look for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>10-12" screen</strong> is the sweet spot. Bigger gets unwieldy.</li>
               <li><strong>Anti-glare matte screen</strong> — better viewing in bright rooms.</li>
               <li><strong>Auto-orient</strong> — phone photos shot vertically vs horizontal both look good.</li>
@@ -63,7 +63,7 @@ export default function DigitalPhotoFramePicker() {
         <Card className="mt-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup tips for gift-givers</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>BEFORE wrapping it as a gift, set it up at YOUR home with the recipient\'s home Wi-Fi name and password. Pre-load 20-30 photos.</li>
               <li>Get the rest of the family to install the app and add their email/phone before you give it.</li>
               <li>Wrap it. When grandma plugs it in, the slideshow starts immediately — no setup hassle.</li>
@@ -75,7 +75,7 @@ export default function DigitalPhotoFramePicker() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cheaper alternative — a tablet</h3>
-            <p className="text-sm text-muted-foreground">A $90 Amazon Fire 8 tablet running the free Amazon Photos app does the same thing — picks up new photos from family\'s phones automatically. Less polished but a third the price.</p>
+            <p className="text-base text-muted-foreground">A $90 Amazon Fire 8 tablet running the free Amazon Photos app does the same thing — picks up new photos from family\'s phones automatically. Less polished but a third the price.</p>
           </CardContent>
         </Card>
       </main>

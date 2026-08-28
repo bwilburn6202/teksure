@@ -19,7 +19,7 @@ export default function SmartHomeStarterKit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick ONE ecosystem</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Amazon Alexa</strong> — most affordable, biggest selection.</li>
               <li><strong>Google Home</strong> — best AI, integrates with Pixel/Android.</li>
               <li><strong>Apple HomeKit</strong> — privacy-first, locked to Apple.</li>
@@ -31,7 +31,7 @@ export default function SmartHomeStarterKit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Week 1 — voice assistant</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Buy <strong>Echo Dot ($35)</strong> or <strong>Nest Mini ($35)</strong>.</li>
               <li>Plug in. Open the app on phone.</li>
               <li>Connect to wifi.</li>
@@ -44,7 +44,7 @@ export default function SmartHomeStarterKit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Week 2 — smart lights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Buy 1-2 smart bulbs ($10-15 each — Kasa, Wyze).</li>
               <li>Or 2 smart plugs ($10) for existing lamps.</li>
               <li>Set up: "Alexa, turn on lamp."</li>
@@ -57,7 +57,7 @@ export default function SmartHomeStarterKit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Week 3 — security</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smart doorbell — Ring or Nest ($100-180).</li>
               <li>Or smart lock — Schlage Encode ($200) or August.</li>
               <li>See who&apos;s at door. Talk to delivery.</li>
@@ -69,7 +69,7 @@ export default function SmartHomeStarterKit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Week 4 — comfort</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smart thermostat — Nest or Ecobee ($130-250).</li>
               <li>"Alexa, set thermostat to 72."</li>
               <li>Auto-adjust when away/home.</li>
@@ -81,7 +81,7 @@ export default function SmartHomeStarterKit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best routines for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Good morning" → lights, weather, news.</li>
               <li>"Goodnight" → all off, lock doors, thermostat down.</li>
               <li>"I&apos;m leaving" → away mode, security on.</li>
@@ -95,7 +95,7 @@ export default function SmartHomeStarterKit() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Total spent: $50-500</h3>
-            <p className="text-sm text-muted-foreground">For under $500, you can have voice assistant + smart lights + doorbell + thermostat = full smart home. Stretch over 4-8 weeks. Start small. Add what you need.</p>
+            <p className="text-base text-muted-foreground">For under $500, you can have voice assistant + smart lights + doorbell + thermostat = full smart home. Stretch over 4-8 weeks. Start small. Add what you need.</p>
           </CardContent>
         </Card>
       </main>

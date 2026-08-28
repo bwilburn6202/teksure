@@ -41,7 +41,7 @@ export default function BudgetAppPicker() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-2"><strong>Best for:</strong> {a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -69,7 +69,7 @@ export default function BudgetAppPicker() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">If you don't know where your money goes — start with Rocket Money's free version. It surfaces every subscription you're paying for. Most users find $20-50/month to cancel right away.</p>
+            <p className="text-base text-muted-foreground">If you don't know where your money goes — start with Rocket Money's free version. It surfaces every subscription you're paying for. Most users find $20-50/month to cancel right away.</p>
           </CardContent>
         </Card>
       </main>

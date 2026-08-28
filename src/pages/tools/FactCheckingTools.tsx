@@ -19,7 +19,7 @@ export default function FactCheckingTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trusted fact-check sites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Snopes.com</strong> — oldest + biggest. Searchable.</li>
               <li><strong>FactCheck.org</strong> — Annenberg Public Policy Center. Nonpartisan.</li>
               <li><strong>AP Fact Check</strong> — Associated Press. Just facts.</li>
@@ -34,7 +34,7 @@ export default function FactCheckingTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reverse image search</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Save photo. Go to <strong>images.google.com</strong>. Click camera icon. Upload.</li>
               <li>See if image is OLD, fake, or AI-generated.</li>
               <li>Many viral photos = decade-old + repurposed.</li>
@@ -46,7 +46,7 @@ export default function FactCheckingTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spot fake news</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ALL CAPS HEADLINES — usually fake.</li>
               <li>"They don&apos;t want you to know" — clickbait.</li>
               <li>Source you&apos;ve never heard of — verify on Wikipedia.</li>
@@ -61,7 +61,7 @@ export default function FactCheckingTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before sharing — verify</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Search Snopes + 1-2 others.</li>
               <li>Check date — many "new" stories are years old.</li>
               <li>Check if AP / Reuters has it.</li>
@@ -75,7 +75,7 @@ export default function FactCheckingTools() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior responsibility</h3>
-            <p className="text-sm text-muted-foreground">Studies show seniors share 7x more misinformation than young people. NOT because seniors are gullible — because they&apos;re online + trust their friends. Slow down. Verify. Set example for grandkids.</p>
+            <p className="text-base text-muted-foreground">Studies show seniors share 7x more misinformation than young people. NOT because seniors are gullible — because they&apos;re online + trust their friends. Slow down. Verify. Set example for grandkids.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function AlzheimersEarlyStage() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First 30 days</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Get second opinion (memory clinic preferred).</li>
               <li>Get blood tests for treatable causes (B12, thyroid, infection).</li>
               <li>Update legal docs while still able — POA, will, advance directive.</li>
@@ -33,7 +33,7 @@ export default function AlzheimersEarlyStage() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Treatment options 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Donanemab (Kisunla)</strong> — IV monthly. Slows progression in early stages.</li>
               <li><strong>Lecanemab (Leqembi)</strong> — IV every 2 weeks.</li>
               <li><strong>Donepezil (Aricept)</strong> — pill. Modest benefit.</li>
@@ -47,7 +47,7 @@ export default function AlzheimersEarlyStage() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Slow it with lifestyle</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mediterranean / MIND diet (proven 35% slower decline).</li>
               <li>Daily exercise — 30 min walking minimum.</li>
               <li>Social engagement — best brain protection.</li>
@@ -62,7 +62,7 @@ export default function AlzheimersEarlyStage() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plan ahead while you can</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Driving — when to stop driving discussion.</li>
               <li>Long-term care preferences.</li>
               <li>Medical wishes — write them down.</li>
@@ -77,7 +77,7 @@ export default function AlzheimersEarlyStage() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Support resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Alzheimer&apos;s Association</strong> — alz.org. 24/7 hotline 800-272-3900.</li>
               <li><strong>Local Alzheimer&apos;s Association chapter</strong> — support groups, classes.</li>
               <li><strong>Dementia Friends USA</strong> — free training.</li>
@@ -91,7 +91,7 @@ export default function AlzheimersEarlyStage() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Live well now</h3>
-            <p className="text-sm text-muted-foreground">Many live 10-20 years with Alzheimer&apos;s. Early stage = years of meaningful life ahead. Write your bucket list. Travel while able. Reconnect with old friends. Diagnosis is hard but life isn&apos;t over. Resources at alz.org/help-support.</p>
+            <p className="text-base text-muted-foreground">Many live 10-20 years with Alzheimer&apos;s. Early stage = years of meaningful life ahead. Write your bucket list. Travel while able. Reconnect with old friends. Diagnosis is hard but life isn&apos;t over. Resources at alz.org/help-support.</p>
           </CardContent>
         </Card>
       </main>

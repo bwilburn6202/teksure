@@ -200,7 +200,7 @@ export default function FileOrganizerGuide() {
               <Card className="mt-8 bg-muted/30">
                 <CardContent className="p-5">
                   <h3 className="font-semibold mb-3">Golden rules of file organization</h3>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
+                  <ul className="space-y-2 text-base text-muted-foreground">
                     <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-green-600 shrink-0 mt-0.5" /><span><strong>Don\'t go too deep.</strong> 3 levels max. If you have to dig 5 folders deep, you\'ll never find it.</span></li>
                     <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-green-600 shrink-0 mt-0.5" /><span><strong>Use dates in filenames for anything time-based.</strong> Format: "2026-04-15 Doctor Visit.pdf". Sorts automatically.</span></li>
                     <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-green-600 shrink-0 mt-0.5" /><span><strong>One inbox folder.</strong> Everything goes into "Downloads" or "Inbox" first, then gets sorted once a week.</span></li>
@@ -238,7 +238,7 @@ export default function FileOrganizerGuide() {
                 <Card>
                   <CardContent className="p-5">
                     <h3 className="font-semibold mb-3">Tips for this setup</h3>
-                    <ul className="space-y-2 text-sm">
+                    <ul className="space-y-2 text-base">
                       {selectedPersona.tips.map((tip, i) => (
                         <li key={i} className="flex gap-2 text-muted-foreground">
                           <span className="text-primary mt-0.5">•</span>

@@ -19,7 +19,7 @@ export default function WifiPasswordReset() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find current password</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Look on router itself — sticker on bottom or back. Default password printed.</li>
               <li>Or: ask any device already connected.</li>
               <li>iPhone: Settings → Wi-Fi → tap (i) next to network name → Password. Tap to copy.</li>
@@ -32,7 +32,7 @@ export default function WifiPasswordReset() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Change password (more secure)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Look at router — note the IP address (often 192.168.1.1 or 10.0.0.1).</li>
               <li>Open browser → type IP address.</li>
               <li>Login with admin password (often on same sticker).</li>
@@ -47,7 +47,7 @@ export default function WifiPasswordReset() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use carrier/ISP app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Comcast Xfinity app</strong> — change password from phone.</li>
               <li><strong>Verizon FiOS app</strong>.</li>
               <li><strong>AT&amp;T Smart Home Manager</strong>.</li>
@@ -60,7 +60,7 @@ export default function WifiPasswordReset() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Factory reset (last resort)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Find tiny "Reset" hole on back of router.</li>
               <li>Push paperclip in for 30 seconds.</li>
               <li>Router restarts.</li>
@@ -73,7 +73,7 @@ export default function WifiPasswordReset() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save it</h3>
-            <p className="text-sm text-muted-foreground">After reset — write password on a card, tape inside kitchen cabinet OR save in password manager. Family + visitors will ask. Print + post in guest area.</p>
+            <p className="text-base text-muted-foreground">After reset — write password on a card, tape inside kitchen cabinet OR save in password manager. Family + visitors will ask. Print + post in guest area.</p>
           </CardContent>
         </Card>
       </main>

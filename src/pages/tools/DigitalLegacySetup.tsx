@@ -32,7 +32,7 @@ export default function DigitalLegacySetup() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Apple Legacy Contact</h2>
             <p className="text-sm mb-3">Lets a family member access your iCloud photos, notes, contacts, and messages after you pass.</p>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>On iPhone: Settings → tap your name at top → <strong>Sign-In & Security</strong>.</li>
               <li>Tap <strong>Legacy Contact</strong>.</li>
               <li>Tap <strong>Add Legacy Contact</strong> → pick a person from your contacts (must have an Apple ID).</li>
@@ -48,7 +48,7 @@ export default function DigitalLegacySetup() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Google Inactive Account Manager</h2>
             <p className="text-sm mb-3">Tells Google what to do if you don't sign in for a chosen length of time (3, 6, 12, or 18 months).</p>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <a href="https://myaccount.google.com/inactive" target="_blank" rel="noopener noreferrer" className="text-primary underline">myaccount.google.com/inactive</a>.</li>
               <li>Sign in. Click "Start".</li>
               <li>Choose how long Google should wait before considering you inactive (most people pick 12 months).</li>
@@ -65,7 +65,7 @@ export default function DigitalLegacySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Facebook Legacy Contact</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Facebook → tap your photo → <strong>Settings & privacy</strong> → <strong>Settings</strong>.</li>
               <li>Search for "Legacy Contact" or find it under Personal and account information.</li>
               <li>Pick one Facebook friend to manage your memorialized account.</li>
@@ -91,7 +91,7 @@ export default function DigitalLegacySetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don't forget the paper</h3>
-            <p className="text-sm text-muted-foreground">Write down your phone passcode, computer password, and the names of the people you've set up as legacy contacts. Put it in a sealed envelope with your will, or somewhere your spouse and adult children know to look. Update once a year.</p>
+            <p className="text-base text-muted-foreground">Write down your phone passcode, computer password, and the names of the people you've set up as legacy contacts. Put it in a sealed envelope with your will, or somewhere your spouse and adult children know to look. Update once a year.</p>
           </CardContent>
         </Card>
       </main>

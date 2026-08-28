@@ -136,18 +136,18 @@ export default function PhoneSafetyScanner() {
                     What to do next
                   </p>
                   {result.verdict === 'safe' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       No known scam reports for this number. If you still weren't expecting a call, let it go to voicemail — legitimate callers will leave a message.
                     </p>
                   )}
                   {result.verdict === 'caution' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       This number has some warning signs. Don't call back. If it's someone you actually know, they'll leave a voicemail or text you.
                     </p>
                   )}
                   {result.verdict === 'danger' && (
                     <div className="space-y-2">
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         Block this number. If you already picked up:
                       </p>
                       <ul className="space-y-1 text-sm text-muted-foreground list-disc pl-5">
@@ -164,7 +164,7 @@ export default function PhoneSafetyScanner() {
                     </div>
                   )}
                   {result.verdict === 'unknown' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       Not enough data on this one. When in doubt: don't answer, let it go to voicemail, and never give personal info to someone who called you.
                     </p>
                   )}

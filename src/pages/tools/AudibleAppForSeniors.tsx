@@ -19,7 +19,7 @@ export default function AudibleAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plus ($7.95/mo) — Plus library only.</li>
               <li>Premium Plus ($14.95/mo) — 1 credit/month + Plus library.</li>
               <li>Annual Premium Plus saves money.</li>
@@ -33,7 +33,7 @@ export default function AudibleAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How credits work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 credit = 1 audiobook (any price).</li>
               <li>You own purchased books forever.</li>
               <li>Credits roll over up to 6.</li>
@@ -47,7 +47,7 @@ export default function AudibleAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior listening tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Speed up to 1.25x or 1.5x.</li>
               <li>Sleep timer for bedtime.</li>
               <li>Bookmarks for important parts.</li>
@@ -61,7 +61,7 @@ export default function AudibleAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-loved narrators</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Jim Dale — Harry Potter narration.</li>
               <li>Scott Brick — thrillers + literary.</li>
               <li>Edoardo Ballerini — literary fiction.</li>
@@ -75,7 +75,7 @@ export default function AudibleAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Library Libby — free with library card.</li>
               <li>Hoopla — free, sometimes Audible-quality.</li>
               <li>LibriVox — public domain audiobooks free.</li>
@@ -89,7 +89,7 @@ export default function AudibleAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for these listeners</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1+ audiobook per month.</li>
               <li>Want newest releases.</li>
               <li>Drive frequently.</li>
@@ -103,7 +103,7 @@ export default function AudibleAppForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free trial first</h3>
-            <p className="text-sm text-muted-foreground">Audible offers 30-day free trial = 2 free audiobooks. Try it — see if you actually finish them. Many people overpay for Audible they don&apos;t use enough. If you finish 1+ books monthly, $14.95 Premium Plus is good value. If less, use library Libby for free instead. Audiobooks make commutes + chores feel productive.</p>
+            <p className="text-base text-muted-foreground">Audible offers 30-day free trial = 2 free audiobooks. Try it — see if you actually finish them. Many people overpay for Audible they don&apos;t use enough. If you finish 1+ books monthly, $14.95 Premium Plus is good value. If less, use library Libby for free instead. Audiobooks make commutes + chores feel productive.</p>
           </CardContent>
         </Card>
       </main>

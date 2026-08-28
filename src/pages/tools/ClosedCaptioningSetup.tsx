@@ -29,7 +29,7 @@ export default function ClosedCaptioningSetup() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">TV captions (cable / antenna)</h3>
-              <ul className="list-disc pl-5 space-y-2 text-sm">
+              <ul className="list-disc pl-5 space-y-2 text-base">
                 <li>Look for "CC" button on remote, or Menu → Captions.</li>
                 <li>Many remotes have "Subtitles" or "Audio" button.</li>
                 <li>Make text BIGGER — Settings → Accessibility → Caption Size.</li>
@@ -44,14 +44,14 @@ export default function ClosedCaptioningSetup() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone Live Captions</h3>
-              <ul className="list-disc pl-5 space-y-2 text-sm">
+              <ul className="list-disc pl-5 space-y-2 text-base">
                 <li>Settings → Accessibility → Live Captions → ON.</li>
                 <li>Auto-captions ANY audio — phone calls, FaceTime, YouTube, in-person conversations.</li>
                 <li>Free. Built into iOS 16+.</li>
                 <li>Floating overlay, drag where you want it.</li>
               </ul>
               <h3 className="font-bold text-lg mb-3 mt-4">Android Live Caption</h3>
-              <ul className="list-disc pl-5 space-y-2 text-sm">
+              <ul className="list-disc pl-5 space-y-2 text-base">
                 <li>Press volume button → tap CC icon.</li>
                 <li>Auto-captions any audio. Pixel + Samsung built-in.</li>
               </ul>
@@ -63,7 +63,7 @@ export default function ClosedCaptioningSetup() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Streaming services</h3>
-              <ul className="list-disc pl-5 space-y-2 text-sm">
+              <ul className="list-disc pl-5 space-y-2 text-base">
                 <li><strong>Netflix</strong> — during show, tap screen → "Audio &amp; Subtitles" → English.</li>
                 <li><strong>Hulu</strong> — same. Tap screen → CC icon.</li>
                 <li><strong>YouTube</strong> — tap CC icon at bottom right.</li>
@@ -78,7 +78,7 @@ export default function ClosedCaptioningSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best caption settings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Font size — at least Large.</li>
               <li>White text on solid black background = easiest read.</li>
               <li>Stand-out edge / shadow makes text pop.</li>
@@ -90,7 +90,7 @@ export default function ClosedCaptioningSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Phone calls with captions</h3>
-            <p className="text-sm text-muted-foreground">Hard of hearing? <strong>CapTel</strong> + <strong>InnoCaption</strong> + <strong>Hamilton CapTel</strong> — FREE phone services that caption every call. Federal program (FCC). Verify hearing loss with audiologist letter. Phones provided free.</p>
+            <p className="text-base text-muted-foreground">Hard of hearing? <strong>CapTel</strong> + <strong>InnoCaption</strong> + <strong>Hamilton CapTel</strong> — FREE phone services that caption every call. Federal program (FCC). Verify hearing loss with audiologist letter. Phones provided free.</p>
           </CardContent>
         </Card>
       </main>

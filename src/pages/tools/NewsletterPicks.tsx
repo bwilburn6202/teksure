@@ -19,7 +19,7 @@ export default function NewsletterPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">News (free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>1440 Daily Digest</strong> — 5-min unbiased news brief.</li>
               <li><strong>Morning Brew</strong> — business + general news, fun.</li>
               <li><strong>The Skimm</strong> — politics + culture, casual.</li>
@@ -33,7 +33,7 @@ export default function NewsletterPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AARP Bulletin</strong> — free for members.</li>
               <li><strong>Reader&apos;s Digest</strong> — short stories + jokes + tips.</li>
               <li><strong>Old Farmer&apos;s Almanac</strong> — gardening + weather + folklore.</li>
@@ -46,7 +46,7 @@ export default function NewsletterPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hobby + interest newsletters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lifehacker</strong> — daily tips.</li>
               <li><strong>Wirecutter (NYT)</strong> — best products.</li>
               <li><strong>Atlas Obscura</strong> — interesting places.</li>
@@ -59,7 +59,7 @@ export default function NewsletterPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid newsletter overload</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick 3-5 maximum.</li>
               <li>Use separate email for newsletters.</li>
               <li>Unsubscribe ruthlessly.</li>
@@ -72,7 +72,7 @@ export default function NewsletterPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Slow newsletter movement</h3>
-            <p className="text-sm text-muted-foreground">Old-school feel. No notifications. No ads in face. Read at YOUR pace. Many seniors prefer this to scrolling apps. Inbox controlled. Read what YOU want. Like a paper.</p>
+            <p className="text-base text-muted-foreground">Old-school feel. No notifications. No ads in face. Read at YOUR pace. Many seniors prefer this to scrolling apps. Inbox controlled. Read what YOU want. Like a paper.</p>
           </CardContent>
         </Card>
       </main>

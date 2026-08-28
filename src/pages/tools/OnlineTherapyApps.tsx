@@ -50,7 +50,7 @@ export default function OnlineTherapyApps() {
                   <span className="text-sm font-semibold text-primary">{a.cost}</span>
                 </div>
                 <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -80,7 +80,7 @@ export default function OnlineTherapyApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">Sign up for BetterHelp\'s 7-day trial OR ask your primary care doctor for a referral. The first therapist is rarely the right fit — give it 2-3 sessions before deciding. Don\'t hesitate to switch.</p>
+            <p className="text-base text-muted-foreground">Sign up for BetterHelp\'s 7-day trial OR ask your primary care doctor for a referral. The first therapist is rarely the right fit — give it 2-3 sessions before deciding. Don\'t hesitate to switch.</p>
           </CardContent>
         </Card>
       </main>

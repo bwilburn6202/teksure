@@ -32,7 +32,7 @@ export default function BackupStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Mac — Time Machine (free, built in)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Buy an external hard drive ($60-$100 for 2TB).</li>
               <li>Plug it into Mac.</li>
               <li>Pop-up asks "Use this for Time Machine?" → Yes.</li>
@@ -45,7 +45,7 @@ export default function BackupStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Windows — File History (free, built in)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Plug in an external drive.</li>
               <li>Settings → Update & Security → Backup → Add a drive → pick yours.</li>
               <li>Turn on "Automatically back up my files".</li>
@@ -58,7 +58,7 @@ export default function BackupStrategy() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Off-site backup (the 1 in 3-2-1)</h2>
             <p className="text-sm mb-2">If your house has a fire or flood, the local backup drive is destroyed too. You need a copy somewhere else. Three approaches:</p>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cloud sync (free path)</strong> — turn on iCloud Photos, Google Photos, or OneDrive. Photos auto-upload. Use this even if you don\'t pay for storage — the free tier protects recent stuff.</li>
               <li><strong>Backblaze ($9/month)</strong> — backs up your ENTIRE computer to the cloud. Set and forget. Best disaster-prevention.</li>
               <li><strong>Two external drives</strong> — back up to one weekly, swap with a second drive at a friend or family member\'s house. Cheap, no subscription.</li>
@@ -90,7 +90,7 @@ export default function BackupStrategy() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For most seniors — the simple path</h3>
-            <p className="text-sm text-muted-foreground"><strong>Step 1</strong>: Turn on iCloud Photos (or Google Photos) on your phone — photos back up to the cloud automatically. <strong>Step 2</strong>: Buy a $70 external drive, plug it in, set up Time Machine (Mac) or File History (Windows). That\'s 90% of the protection. Done.</p>
+            <p className="text-base text-muted-foreground"><strong>Step 1</strong>: Turn on iCloud Photos (or Google Photos) on your phone — photos back up to the cloud automatically. <strong>Step 2</strong>: Buy a $70 external drive, plug it in, set up Time Machine (Mac) or File History (Windows). That\'s 90% of the protection. Done.</p>
           </CardContent>
         </Card>
       </main>

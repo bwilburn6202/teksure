@@ -1418,7 +1418,7 @@ export default function StateAgScamLookup() {
                   </p>
                   <p className="text-lg font-bold">{state.hotline}</p>
                   {state.hotlineNote && (
-                    <p className="text-sm text-muted-foreground">{state.hotlineNote}</p>
+                    <p className="text-base text-muted-foreground">{state.hotlineNote}</p>
                   )}
                 </div>
               </a>
@@ -1844,7 +1844,7 @@ export default function StateAgScamLookup() {
                   <ShieldAlert className="h-5 w-5 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
                   Scam Alerts
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   The latest scams circulating, with plain-language warnings.
                 </p>
               </Link>
@@ -1856,7 +1856,7 @@ export default function StateAgScamLookup() {
                   <FileSearch className="h-5 w-5 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
                   Is This Real?
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Verify a news story, email, deal, or photo before you share or act.
                 </p>
               </Link>
@@ -1868,7 +1868,7 @@ export default function StateAgScamLookup() {
                   <CreditCard className="h-5 w-5 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
                   Refund &amp; Return Helper
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Step-by-step walkthroughs for getting charges reversed or money back.
                 </p>
               </Link>
@@ -1880,7 +1880,7 @@ export default function StateAgScamLookup() {
                   <Landmark className="h-5 w-5 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
                   Government Benefits Portal
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Official benefits, forms, and agency phone numbers — no middlemen.
                 </p>
               </Link>

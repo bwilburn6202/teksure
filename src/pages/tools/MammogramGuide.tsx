@@ -19,7 +19,7 @@ export default function MammogramGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to screen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Age 40 — start (annual).</li>
               <li>Age 55 — every 1-2 years.</li>
               <li>Continue until 75 minimum.</li>
@@ -33,7 +33,7 @@ export default function MammogramGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">3D vs 2D</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>3D (tomosynthesis)</strong> — newer, better for dense breasts.</li>
               <li><strong>2D</strong> — standard, still useful.</li>
               <li>3D detects 30% more cancers.</li>
@@ -47,7 +47,7 @@ export default function MammogramGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to expect</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30-min appointment.</li>
               <li>Wear two-piece (top removed).</li>
               <li>NO deodorant / lotion day-of.</li>
@@ -62,7 +62,7 @@ export default function MammogramGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medicare covers fully (no copay).</li>
               <li>Most insurance covers fully.</li>
               <li>Mobile mammography vans (free in some areas).</li>
@@ -76,7 +76,7 @@ export default function MammogramGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If callback</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most callbacks = NOT cancer.</li>
               <li>Additional imaging or ultrasound.</li>
               <li>Don&apos;t panic.</li>
@@ -90,7 +90,7 @@ export default function MammogramGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Self-exams + family history</h3>
-            <p className="text-sm text-muted-foreground">Monthly self-exam still useful. Know your normal. Mention family history (mother, sister, daughter with breast cancer) to doctor — different screening schedule. BRCA testing if strong family history. Catch early = best outcomes. Mammogram = critical senior preventive care.</p>
+            <p className="text-base text-muted-foreground">Monthly self-exam still useful. Know your normal. Mention family history (mother, sister, daughter with breast cancer) to doctor — different screening schedule. BRCA testing if strong family history. Catch early = best outcomes. Mammogram = critical senior preventive care.</p>
           </CardContent>
         </Card>
       </main>

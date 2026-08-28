@@ -19,7 +19,7 @@ export default function EmailHackedRecovery() {
         <Card className="mb-4 border-red-300">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3 text-red-700">Signs hacked</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Friends say &quot;you sent me weird email&quot;.</li>
               <li>Sent folder has emails you didn&apos;t send.</li>
               <li>Can&apos;t login.</li>
@@ -33,7 +33,7 @@ export default function EmailHackedRecovery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 1: Try login</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Try old password first.</li>
               <li>If it works = change immediately.</li>
               <li>If locked out — &quot;Forgot password&quot;.</li>
@@ -47,7 +47,7 @@ export default function EmailHackedRecovery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 2: Strong password</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use passphrase: 4 random words.</li>
               <li>Example: &quot;Purple-Tractor-Sandwich-9!&quot;.</li>
               <li>20+ characters minimum.</li>
@@ -61,7 +61,7 @@ export default function EmailHackedRecovery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 3: Enable 2FA</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Two-factor authentication.</li>
               <li>Code sent to phone.</li>
               <li>Or authenticator app.</li>
@@ -75,7 +75,7 @@ export default function EmailHackedRecovery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 4: Check filters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hacker may have added forwarding.</li>
               <li>Settings → Filters and Forwarding.</li>
               <li>Delete suspicious filters.</li>
@@ -89,7 +89,7 @@ export default function EmailHackedRecovery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 5: Notify contacts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Email all contacts: &quot;I was hacked&quot;.</li>
               <li>&quot;Don&apos;t click links from me yesterday.&quot;</li>
               <li>&quot;Account secure now.&quot;</li>
@@ -103,7 +103,7 @@ export default function EmailHackedRecovery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other accounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Email = master key to other accounts.</li>
               <li>Hacker may have reset others.</li>
               <li>Change passwords on:</li>
@@ -117,7 +117,7 @@ export default function EmailHackedRecovery() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Future-proof</h3>
-            <p className="text-sm text-muted-foreground">Use unique password per site. Password manager (Bitwarden FREE, 1Password $36/yr). 2FA everywhere. Don&apos;t reuse passwords. Senior tip: write critical passwords in physical book in safe place. Tell trusted family member where book is. Hacked = stressful but recoverable.</p>
+            <p className="text-base text-muted-foreground">Use unique password per site. Password manager (Bitwarden FREE, 1Password $36/yr). 2FA everywhere. Don&apos;t reuse passwords. Senior tip: write critical passwords in physical book in safe place. Tell trusted family member where book is. Hacked = stressful but recoverable.</p>
           </CardContent>
         </Card>
       </main>

@@ -34,7 +34,7 @@ export default function SmartBulbPicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function SmartBulbPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (any brand)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Screw in the bulb.</li>
               <li>Install the brand\'s app.</li>
               <li>App auto-finds the new bulb (or you scan a QR code).</li>
@@ -58,7 +58,7 @@ export default function SmartBulbPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly use cases</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Auto-on at sunset</strong> — lights turn on before you come home or before it gets too dark.</li>
               <li><strong>Voice from bed</strong> — "Alexa, turn off all lights" without fumbling for switches.</li>
               <li><strong>Auto-off at bedtime</strong> — set a schedule. No more "did I leave the kitchen light on?".</li>
@@ -73,7 +73,7 @@ export default function SmartBulbPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Alternative — smart plugs</h3>
-            <p className="text-sm text-muted-foreground">Don\'t want to replace bulbs? Buy a $10 smart plug. Plug your existing lamp into it. Same control. Sometimes simpler. Brands: Kasa, Wyze, Amazon.</p>
+            <p className="text-base text-muted-foreground">Don\'t want to replace bulbs? Buy a $10 smart plug. Plug your existing lamp into it. Same control. Sometimes simpler. Brands: Kasa, Wyze, Amazon.</p>
           </CardContent>
         </Card>
       </main>

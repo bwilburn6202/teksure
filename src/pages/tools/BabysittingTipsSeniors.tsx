@@ -19,7 +19,7 @@ export default function BabysittingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Discuss boundaries</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>How often will you babysit?</li>
               <li>Pay or volunteer?</li>
               <li>What snacks/foods okay?</li>
@@ -34,7 +34,7 @@ export default function BabysittingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior advantages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Patient (less rushed than parents).</li>
               <li>Time to teach things.</li>
               <li>Family stories rich content.</li>
@@ -48,7 +48,7 @@ export default function BabysittingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Realistic limits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>2-4 hours typical max for many.</li>
               <li>Daycare regular = burnout risk.</li>
               <li>1 day/week sustainable for most.</li>
@@ -62,7 +62,7 @@ export default function BabysittingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Emergency prep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Parents&apos; phone numbers.</li>
               <li>Emergency contact list.</li>
               <li>Pediatrician phone.</li>
@@ -77,7 +77,7 @@ export default function BabysittingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If something goes wrong</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Call 911 if life-threatening.</li>
               <li>Call parents.</li>
               <li>Call pediatrician for non-urgent.</li>
@@ -92,7 +92,7 @@ export default function BabysittingTipsSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Joy not obligation</h3>
-            <p className="text-sm text-muted-foreground">Babysit because you WANT to + can. Not from guilt or pressure. Saying NO sometimes preserves joy of saying YES other times. Your relationship with grandkids matters more than total hours.</p>
+            <p className="text-base text-muted-foreground">Babysit because you WANT to + can. Not from guilt or pressure. Saying NO sometimes preserves joy of saying YES other times. Your relationship with grandkids matters more than total hours.</p>
           </CardContent>
         </Card>
       </main>

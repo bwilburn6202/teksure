@@ -33,7 +33,7 @@ export default function WillSoftwareCompare() {
                   <span className="text-sm font-semibold text-primary">{s.cost}</span>
                 </div>
                 <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function WillSoftwareCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY OK if...</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Estate under $500,000.</li>
               <li>Married, simple — leave everything to spouse, then kids.</li>
               <li>No business ownership.</li>
@@ -56,7 +56,7 @@ export default function WillSoftwareCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hire an attorney if...</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$1M+ estate, or $500K + complex situation.</li>
               <li>Want a trust (more complex than will).</li>
               <li>Multiple marriages / step-children.</li>
@@ -72,7 +72,7 @@ export default function WillSoftwareCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What ALL wills must include</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Full legal name of testator (you).</li>
               <li>Statement that this is your "last will and testament".</li>
               <li>Executor name (who handles your affairs).</li>
@@ -88,7 +88,7 @@ export default function WillSoftwareCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Beyond the will — full estate kit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Durable Power of Attorney</strong> — someone can manage your money if you can&apos;t.</li>
               <li><strong>Healthcare Power of Attorney</strong> — someone can make medical decisions.</li>
               <li><strong>Living Will / Advance Directive</strong> — your wishes if incapacitated.</li>
@@ -102,7 +102,7 @@ export default function WillSoftwareCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t put off</h3>
-            <p className="text-sm text-muted-foreground">If you die without a will, your state writes one for you — and it&apos;s rarely what you wanted. Probate without a will costs more, takes longer, and may give your assets to people you wouldn&apos;t choose. A simple FreeWill.com document beats nothing.</p>
+            <p className="text-base text-muted-foreground">If you die without a will, your state writes one for you — and it&apos;s rarely what you wanted. Probate without a will costs more, takes longer, and may give your assets to people you wouldn&apos;t choose. A simple FreeWill.com document beats nothing.</p>
           </CardContent>
         </Card>
       </main>

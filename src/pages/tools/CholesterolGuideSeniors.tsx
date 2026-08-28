@@ -19,7 +19,7 @@ export default function CholesterolGuideSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Understand your numbers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Total</strong> — under 200.</li>
               <li><strong>LDL (bad)</strong> — under 100. Under 70 if heart disease.</li>
               <li><strong>HDL (good)</strong> — over 60.</li>
@@ -33,7 +33,7 @@ export default function CholesterolGuideSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Statins explained</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most prescribed med after 65 (Lipitor, Crestor, simvastatin).</li>
               <li>Lower LDL 30-50%.</li>
               <li>Reduce heart attack + stroke risk.</li>
@@ -48,7 +48,7 @@ export default function CholesterolGuideSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Newer alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ezetimibe (Zetia)</strong> — pill, often added to statin.</li>
               <li><strong>PCSK9 inhibitors</strong> — Repatha, Praluent. Injection. Expensive.</li>
               <li><strong>Bempedoic acid (Nexletol)</strong> — pill alternative for statin-intolerant.</li>
@@ -61,7 +61,7 @@ export default function CholesterolGuideSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Food approach</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Soluble fiber</strong> — oats, beans, apples. Lowers LDL.</li>
               <li><strong>Omega-3</strong> — salmon, sardines 2x/week.</li>
               <li><strong>Nuts</strong> — walnuts, almonds. Daily handful.</li>
@@ -76,7 +76,7 @@ export default function CholesterolGuideSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>After 75 — debate over statins for primary prevention.</li>
               <li>If history of heart attack/stroke — keep taking statin.</li>
               <li>Cognitive decline + statins NOT linked (despite myths).</li>
@@ -89,7 +89,7 @@ export default function CholesterolGuideSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Heart age calculator</h3>
-            <p className="text-sm text-muted-foreground">CDC has free &quot;Heart Age&quot; calculator — cdc.gov. American College of Cardiology has ASCVD Risk Calculator — predicts 10-year heart attack/stroke risk. Both free + senior-friendly. Discuss with doctor at next visit.</p>
+            <p className="text-base text-muted-foreground">CDC has free &quot;Heart Age&quot; calculator — cdc.gov. American College of Cardiology has ASCVD Risk Calculator — predicts 10-year heart attack/stroke risk. Both free + senior-friendly. Discuss with doctor at next visit.</p>
           </CardContent>
         </Card>
       </main>

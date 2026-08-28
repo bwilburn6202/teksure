@@ -19,7 +19,7 @@ export default function LonelinessReliefGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why it matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30% of 65+ live alone.</li>
               <li>Loneliness raises dementia risk 50%.</li>
               <li>Increases heart disease, stroke, depression.</li>
@@ -32,7 +32,7 @@ export default function LonelinessReliefGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily habits that help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Talk to ONE person every day (call, text, in person).</li>
               <li>Walk in public space — coffee shop, library.</li>
               <li>Greet checkout cashier with full sentence.</li>
@@ -46,7 +46,7 @@ export default function LonelinessReliefGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Make new friends after 65</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior center — free / low-cost classes + lunch.</li>
               <li>YMCA Silver Sneakers (free with most Medicare Advantage).</li>
               <li>OLLI (Osher Lifelong Learning) — university classes.</li>
@@ -62,7 +62,7 @@ export default function LonelinessReliefGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Phone friend services (free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Friendly Voice (AARP)</strong> — weekly check-in calls. FREE.</li>
               <li><strong>Senior Center Without Walls</strong> — phone + Zoom groups.</li>
               <li><strong>Institute on Aging Friendship Line</strong> — 1-800-971-0016. FREE.</li>
@@ -75,7 +75,7 @@ export default function LonelinessReliefGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Crisis line</h3>
-            <p className="text-sm text-muted-foreground"><strong>988 Suicide &amp; Crisis Lifeline</strong> — call or text 988. Free, 24/7. <strong>Friendship Line for Seniors</strong> — 1-800-971-0016. They listen if you just need to talk. No crisis required.</p>
+            <p className="text-base text-muted-foreground"><strong>988 Suicide &amp; Crisis Lifeline</strong> — call or text 988. Free, 24/7. <strong>Friendship Line for Seniors</strong> — 1-800-971-0016. They listen if you just need to talk. No crisis required.</p>
           </CardContent>
         </Card>
       </main>

@@ -41,7 +41,7 @@ export default function UniversalRemotePicker() {
                   <span className="text-sm font-semibold text-primary">{p.price}</span>
                 </div>
                 <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -62,7 +62,7 @@ export default function UniversalRemotePicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Big-button senior remotes (TV only)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Flipper Big Button Universal</strong> — only 6 buttons. Made for memory loss.</li>
               <li><strong>Tek Pal TV Remote</strong> — extra-large buttons.</li>
               <li><strong>GE Big Button</strong> — Walmart, ~$10. Simple.</li>
@@ -74,7 +74,7 @@ export default function UniversalRemotePicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — labels</h3>
-            <p className="text-sm text-muted-foreground">Use clear nail polish or white-out to mark the "On", "Volume", and "Channel" buttons on any remote. Or stick large dots from the office store. Costs $1, makes any remote senior-friendly.</p>
+            <p className="text-base text-muted-foreground">Use clear nail polish or white-out to mark the "On", "Volume", and "Channel" buttons on any remote. Or stick large dots from the office store. Costs $1, makes any remote senior-friendly.</p>
           </CardContent>
         </Card>
       </main>

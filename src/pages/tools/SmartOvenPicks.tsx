@@ -34,7 +34,7 @@ export default function SmartOvenPicks() {
                   <span className="text-sm font-semibold text-primary">{p.cost}</span>
                 </div>
                 <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function SmartOvenPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why countertop ovens beat the big oven</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Faster preheat (3-5 min vs 15+).</li>
               <li>1/3 the energy.</li>
               <li>Don&apos;t heat up the whole kitchen in summer.</li>
@@ -57,7 +57,7 @@ export default function SmartOvenPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For seniors specifically</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Big readable buttons + display (Breville is best).</li>
               <li>Auto-shutoff (peace of mind).</li>
               <li>Counter height — no bending to use big oven.</li>
@@ -70,7 +70,7 @@ export default function SmartOvenPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for downsizing kitchens</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>RV / motorhome cooking.</li>
               <li>Small apartment, no full oven.</li>
               <li>One cooking appliance does 80% of meals.</li>
@@ -82,7 +82,7 @@ export default function SmartOvenPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Buy in spring</h3>
-            <p className="text-sm text-muted-foreground">Costco, Wayfair, Amazon all run 25-40% off countertop ovens around Memorial Day, July 4, Black Friday. $400 Breville drops to $250-280. Worth waiting if you can.</p>
+            <p className="text-base text-muted-foreground">Costco, Wayfair, Amazon all run 25-40% off countertop ovens around Memorial Day, July 4, Black Friday. $400 Breville drops to $250-280. Worth waiting if you can.</p>
           </CardContent>
         </Card>
       </main>

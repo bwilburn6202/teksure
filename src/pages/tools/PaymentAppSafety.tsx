@@ -62,9 +62,9 @@ export default function PaymentAppSafety() {
                 <h2 className="text-2xl font-bold flex items-center gap-2 mb-1">{a.emoji} {a.name}</h2>
                 <p className="text-sm text-muted-foreground mb-4">{a.owner}</p>
                 <h3 className="font-bold mb-2 flex items-center gap-2"><ShieldCheck className="w-5 h-5 text-green-600" />Safety steps</h3>
-                <ul className="list-disc pl-5 space-y-2 text-sm mb-4">{a.safety.map((s, i) => <li key={i}>{s}</li>)}</ul>
+                <ul className="list-disc pl-5 space-y-2 text-base mb-4">{a.safety.map((s, i) => <li key={i}>{s}</li>)}</ul>
                 <h3 className="font-bold mb-2 flex items-center gap-2"><AlertTriangle className="w-5 h-5 text-destructive" />Common scams</h3>
-                <ul className="list-disc pl-5 space-y-2 text-sm">{a.scams.map((s, i) => <li key={i}>{s}</li>)}</ul>
+                <ul className="list-disc pl-5 space-y-2 text-base">{a.scams.map((s, i) => <li key={i}>{s}</li>)}</ul>
               </CardContent>
             </Card>
           </div>

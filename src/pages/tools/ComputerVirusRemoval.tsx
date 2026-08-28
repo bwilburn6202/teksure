@@ -19,7 +19,7 @@ export default function ComputerVirusRemoval() {
         <Card className="mb-4 border-red-300">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3 text-red-700">DON&apos;T do this</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Call number on the popup.</li>
               <li>Pay the &quot;ransom&quot;.</li>
               <li>Buy software from popup.</li>
@@ -33,7 +33,7 @@ export default function ComputerVirusRemoval() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Symptoms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Computer slow.</li>
               <li>Pop-up ads everywhere.</li>
               <li>Strange browser homepage.</li>
@@ -47,7 +47,7 @@ export default function ComputerVirusRemoval() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First steps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Disconnect from internet (turn off WiFi).</li>
               <li>Don&apos;t turn off computer.</li>
               <li>Take photo of any popup.</li>
@@ -61,7 +61,7 @@ export default function ComputerVirusRemoval() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free virus scanner</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Microsoft Defender</strong> — built-in Windows.</li>
               <li><strong>Apple Built-in</strong> — automatic Mac protection.</li>
               <li><strong>Malwarebytes</strong> — free deep scan.</li>
@@ -75,7 +75,7 @@ export default function ComputerVirusRemoval() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Clean Windows</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings, then &quot;Windows Security&quot;.</li>
               <li>&quot;Virus &amp; threat protection&quot;.</li>
               <li>&quot;Quick scan&quot; first.</li>
@@ -89,7 +89,7 @@ export default function ComputerVirusRemoval() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get pro help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Geek Squad</strong> ($150-300).</li>
               <li><strong>Apple Genius Bar</strong> (free if Apple).</li>
               <li><strong>Local computer shop</strong>.</li>
@@ -103,7 +103,7 @@ export default function ComputerVirusRemoval() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After cleanup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Change all passwords.</li>
               <li>Use new device for the changes.</li>
               <li>Enable 2FA on all accounts.</li>
@@ -117,7 +117,7 @@ export default function ComputerVirusRemoval() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Prevention</h3>
-            <p className="text-sm text-muted-foreground">Keep Windows + Mac updated automatically. Use only Microsoft Defender or built-in Mac protection — paid antivirus often unnecessary. Don&apos;t click email attachments from strangers. Don&apos;t install &quot;free&quot; PC cleaners. Browser extensions — only well-reviewed. Best defense = caution. Backup files weekly.</p>
+            <p className="text-base text-muted-foreground">Keep Windows + Mac updated automatically. Use only Microsoft Defender or built-in Mac protection — paid antivirus often unnecessary. Don&apos;t click email attachments from strangers. Don&apos;t install &quot;free&quot; PC cleaners. Browser extensions — only well-reviewed. Best defense = caution. Backup files weekly.</p>
           </CardContent>
         </Card>
       </main>
