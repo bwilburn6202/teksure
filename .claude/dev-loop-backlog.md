@@ -8,6 +8,65 @@ Newest cycles appear at the top.
 
 ---
 
+## Cycle 151 — 2026-08-28T11:16:49.308Z
+
+### [ok] Site metrics snapshot
+4049 guides, 3156 routes, 285 tools.
+
+### [ok] Duplicate guide slugs
+No duplicate slugs.
+
+### [ok] Internal link audit
+0 broken targets, 0 orphaned routes (of 3119 routes).
+
+### [ok] TypeScript compile
+No TypeScript errors.
+
+### [ok] Stale OS version mentions
+No stale OS version mentions found.
+
+### [ok] Aged guides
+0 of 4049 guides published before 2025-02-28.
+
+### [ok] Duplicate guide titles
+No duplicate guide titles.
+
+### [warn] Readability & senior UX
+avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+```
+- grade 10.2: use-silvur-retirement-planning
+- grade 10: how-to-back-up-iphone-to-icloud
+- grade 10.1: set-up-bank-text-alerts
+- grade 10.1: close-old-bank-account-safely
+- grade 10.3: youtube-videos-buffering-fix
+- grade 10.5: set-up-amazon-prime-delivery-prescriptions
+- grade 10: how-to-use-siri-iphone
+- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
+- grade 10.2: how-to-screenshot-windows-11
+- grade 10.7: how-to-use-notes-app-iphone
+```
+
+### [ok] External source link health
+75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
+
+### [ok] Hardcoded prices outside pricing.ts
+All service prices come from src/data/pricing.ts.
+
+### [ok] Undisclosed invented testimonials
+No hardcoded reviews without a disclosure.
+
+### [ok] Overlong guide excerpts
+All guide excerpts are within 160 characters.
+
+### [ok] Reused placeholder videos
+No video is reused across more than 5 guides.
+
+### Suggested next actions
+- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
+
+---
+
 ## Cycle 149 — 2026-08-27T09:34:03.680Z
 
 _No change through cycle 150 (2026-08-27T22:12:45.596Z) — 2 consecutive identical cycles._
@@ -1188,140 +1247,4 @@ No video is reused across more than 5 guides.
 
 ---
 
-## Cycle 126 — 2026-08-20 (Cowork run)
-
-_No change through cycle 128 (2026-08-21T18:51:46.275Z) — 4 consecutive identical cycles._
-
-### [fixed] Every prerendered page shipped its title, canonical and og tags *outside* the head
-
-The whole point of the prerender step is that each of the 7,128 routes serves its own title and
-social metadata. It has been injecting all of it into the **body** instead.
-
-`index.html` carried the `<!--ssr-head-->` placeholder on the line after `<div id="root">`, i.e.
-inside `<body>`. `buildHtml()` in `scripts/prerender.mjs` substitutes the rendered head fragment at
-that placeholder, so on the live site `/guides/how-to-back-up-iphone-to-icloud` closed its head at
-line 152 and then emitted its real `<title>`, description, canonical, og:* and twitter:* tags at
-line 186 — 34 lines into the body. Confirmed against production, not inferred:
-
-```
-$ curl -s https://www.teksure.com/guides/how-to-back-up-iphone-to-icloud | grep -n 'title\|</head>'
-34:  <meta name="apple-mobile-web-app-title" ...>
-152: </head>
-186: <title data-rh="true">How to Back Up Your iPhone to iCloud ... | TekSure</title>
-```
-
-Browsers recover from this, so the site *looked* fine. Crawlers are under no obligation to: a
-`<meta property="og:...">` in the body is out of spec, and the strict head-only parsers are exactly
-the audience prerendering exists to serve — Bing, the social preview crawlers, and the AI answer
-engines robots.txt deliberately invites in. The shell's generic homepage title was stripped and the
-real one was placed where it may not be read, which is worse than either alone.
-
-**Why nothing caught it for the entire life of the feature:** the degraded-page check does
-`if (!head.includes('<title'))` against the *rendered head fragment*, before injection. The title
-was always present — it was being put in the wrong half of the document afterwards. So
-`prerender-report.json` has been reporting `renderedWithoutTitle: 0` truthfully and uselessly. The
-comment above the placeholder in prerender.mjs even described the body position as the intended
-design ("the SSR placeholders this pipeline was designed around: `<!--ssr-outlet-->` inside #root
-and `<!--ssr-head-->` after it"), which is presumably how it survived review.
-
-Two changes:
-
-1. `index.html` — moved `<!--ssr-head-->` inside `<head>`, just before the close, with a comment
-   saying why it must stay there. The comment deliberately contains **no literal tag markup**:
-   `buildHtml` strips the shell's existing title/meta by regex across the whole file, so a
-   tag-shaped string inside a comment is indistinguishable from a real tag and would be matched
-   first. (Hit this while writing it — the first draft quoted `<title>` and broke the strip.)
-
-2. `scripts/prerender.mjs` — `buildHtml` now asserts on **position**, not presence: it throws if the
-   injected `<title>` does not appear before `</head>`. A build with the placeholder back in the
-   body now fails loudly instead of shipping 7,128 silently-degraded pages.
-
-Verified by driving the real `buildHtml` against the real `index.html`:
-- exactly one `<title>`, one canonical, one `og:title`, one description — all before `</head>`
-- app HTML still lands in `#root`
-- negative test: placeholder moved back to the body → guard throws
-
-**This does not reach production until a full `npm run build` runs.** See below.
-
-### `npm run build` still cannot complete in this sandbox — the fix is committed but UNVERIFIED end to end
-3.9GB available, ~2.7GB free. `npx tsc` OOMs at the default heap and needs
-`NODE_OPTIONS=--max-old-space-size=3400`; even `vite build` alone (`build:spa`) was **Killed** at
-"rendering chunks" after transforming 6,440 modules. So the prerender step never ran here and no
-real prerendered page was inspected — only `buildHtml`'s output against the real template.
-
-The next Vercel deploy will exercise it. Two things to check once it lands, in order:
-1. `curl -s https://www.teksure.com/prerender-report.json` — `status: complete`, `written` equals
-   `routesAttempted` (7128), `failed: 0`. **If the new guard has a false positive it will fail every
-   page**, and that is what this report will show.
-2. `curl -s https://www.teksure.com/guides/how-to-back-up-iphone-to-icloud | grep -n 'title\|</head>'`
-   — the title's line number must now be *below* the `</head>` line.
-
-### [fixed] ~285 tool pages were canonicalising themselves to the homepage
-
-Found by checking the head fix on production, which is the only reason it turned up. Every page
-under `/tools/:slug` was serving:
-
-```
-<link rel="canonical" href="https://www.teksure.com/"/>
-```
-
-That tells Google each tool page is a duplicate of the homepage and should not be indexed on its own.
-`/guides/*` and the static pages (`/tools`, `/glossary`, `/scam-defense`, `/how-it-works`) were all
-correct — the tool detail pages were not.
-
-Cause: `SEOHead` declared `path?: string` with a default of `'/'`. Pages that pass `path` were fine;
-pages that forgot it silently claimed the homepage. A scan of `src/pages` finds 2,692 `SEOHead`
-usages with neither `path` nor `canonical` against 441 with one — almost all of the former in
-`src/pages/tools/`.
-
-**This interacts badly with the head fix above, which is why it was worth doing in the same run.**
-While canonicals were being emitted in the body, crawlers ignored them and the wrong value was inert.
-Putting them back in the head makes them authoritative. Shipping the head fix on its own would have
-taken 285 previously-ignored bad canonicals and made them count — actively worse than the bug it
-fixed. The two changes belong together.
-
-Fixed centrally in `src/components/SEOHead.tsx` rather than by editing hundreds of call sites:
-`path` now defaults to the current route via `useLocation()` instead of to `'/'`. SEOHead always
-renders inside a Router — `StaticRouter` during prerender, `BrowserRouter` in the app, `MemoryRouter`
-in tests — so the hook is safe in all three. Trailing slashes are normalised off (root excepted) to
-match `trailingSlash: false` in vercel.json. Explicitly-passed `path` and `canonical` still win, so
-no existing correct page changes.
-
-tsc clean, 104/104 tests still pass. Same caveat as above: `npm run build` could not run here, so
-this is verified by construction and by the test suite, not by inspecting a built page. Check after
-deploy:
-
-```
-curl -s https://www.teksure.com/tools/siri-commands-cheat-sheet | grep -o 'rel="canonical" href="[^"]*"'
-```
-should now be the tool's own URL, and `/` should still canonicalise to `https://www.teksure.com/`.
-
-### Readability — not touched, and deliberately so
-Still avg grade 8.3, 58.5% above grade 8, unchanged for many cycles. Per the run brief this does not
-get another 5-guide hand pass: that moves ~0.1pp and is the appearance of progress. The two scripted
-levers both have known problems — the splitters improve the metric while degrading prose, and
-`simplify-vocabulary` has prior corruption findings in this file. A real bulk pass needs sampled
-human review of the output, which is not something to do unattended on 4,049 files at 11pm.
-**This is a decision for Bailey, not a task**: either fund the scripted pass with review, or write
-grade 8.3 down as accepted and stop reporting it as a warning every cycle.
-
-### Cadence pages — both current, no action
-- `/tech-problem-of-week` → `dateISO: '2026-08-17'`, `weekRange: 'August 17–23, 2026'`. Covers today.
-- `/whats-new` → newest entry `aug-2026`. Current month, and this is not the first run of the month.
-
-Neither refreshed. No real FTC/CISA alert or shipped release to point at, and dates never move
-without one.
-
-### [ok] Everything else measured clean
-Production 200s, `build-info.json` matches `origin/main` (`3a471dc`), prerender report complete at
-7128/7128 with 0 failures. 4,049 guides / 285 tools / 4,049 unique slugs. tsc clean. 104/104 tests.
-robots.txt groups are correct — the private-route Disallows are repeated inside each named bot's
-group, which is what makes them apply.
-
-### Note: the local mount is stale again — 38 commits behind
-`~/Documents/Claude/Projects/TekSure` was at `0d3d7b4`; `origin/main` is at `3a471dc`. Same as cycle
-122, same cause: `git reset --hard` cannot unlink tracked files on this mount. Worked in a fresh
-clone per the CLAUDE.md fallback. **The mount still cannot self-repair** — it wants a `git pull` from
-a normal shell, or every session re-discovers this and burns the same ten minutes.
-
----
+_(older cycles trimmed)_
