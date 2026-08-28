@@ -69,6 +69,67 @@ No video is reused across more than 5 guides.
 
 ---
 
+## Cycle 151 — 2026-08-28 (Cowork run, hand-written)
+
+### [ALARM] The mounted working copy at `~/Documents/Claude/Projects/TekSure` is a stale fork, not a checkout of main
+`git rev-list --left-right --count origin/main...HEAD` on the mount returns **71  3**: local `main`
+sits 71 commits behind the remote and carries 3 commits that were never pushed, with **2,842 files
+dirty** in the working tree. Live is `10488e2`; the mount's HEAD is `0d3d7b4`, which is not an
+ancestor of it. This is the accumulated residue of the "fresh clone in /tmp, copy files back" push
+fallback — the files came back, the git HEAD never advanced.
+
+**Consequence: committing the mount's working tree wholesale would revert 71 commits of published
+work.** Sampling the diff confirms it — the mount is missing, among other things, the `SEOHead`
+canonical-path fix. Do not `git add -A && commit` on that mount. Every future run should push from a
+fresh clone, as this one did.
+
+Needs Bailey: reset the mount to a clean checkout (`git fetch && git reset --hard origin/main` after
+confirming nothing unpublished is wanted), or delete and re-clone it.
+
+### [fixed] Tool-page body copy was 15px; raised to 17px across 1,843 pages
+The mount's dirty tree contained an unpushed, unfinished `text-sm` → `text-base` pass over the tool
+pages. Verified it was worth having rather than assuming: `tailwind.config.ts` maps `sm` to
+0.9375rem (15px) and `base` to 1.0625rem (17px) with roomier leading. For a 60+ primary audience,
+card body copy at 15px is the wrong default.
+
+Rather than salvage the stale tree, applied the substitution cleanly to a fresh clone of live,
+scoped to two body-copy patterns only (`space-y-2 text-sm` list bodies, `<p className="text-sm
+text-muted-foreground">` summaries) under `src/pages/tools/`. Headings, badges and metadata labels
+untouched.
+
+**Before/after: 1,843 files, 9,997 occurrences at 15px → 17px.** Commit `4e1fd1d`, pushed to main.
+
+### [ok] No hard failures; cadence pages current
+dev-loop cycle 122 dry run: 12 of 13 checks ok — 4,049 guides, 285 tools, 0 duplicate slugs, 0 broken
+internal targets, 0 stale OS mentions, 0 aged guides, 0 overlong excerpts, tsc clean. The one warn is
+readability (below). Prerender report on live is `status: complete`, 7,128/7,128 written, 0 failed.
+`TechProblemOfWeek` is `dateISO: '2026-08-24'` — the Aug 24–30 window still covers today (Aug 28), so
+it was deliberately not rolled forward early. `WhatsNew` newest is `aug-2026`; not a new month.
+
+### [skipped, deliberately] Readability — still 8.3 / 58.5% above grade 8
+Unchanged. Per CLAUDE.md, no daily hand-pass: it moves the number ~0.1pp and is the appearance of
+progress. Still awaiting Bailey's decision between a scripted bulk pass and formally accepting 8.3.
+
+### [skipped] 13 remaining sub-14px instances across 7 files
+All badge numerals and print labels (`PracticeMode` 5x, `CaregiverPlannerPack` 2x print-only,
+`MessageItem` 2x, plus four single instances). Counters inside 20px circles — raising them breaks the
+containers. Not body copy, so not a legibility risk for the same reason the tool-page fix was one.
+
+### Verification
+`npx tsc --noEmit -p tsconfig.app.json` clean · `npx vitest run` 104/104 passing ·
+`node scripts/validate-slugs.mjs` 4,049 slugs, 0 duplicates.
+**`npm run build` was NOT verified — it OOMs in this sandbox.** `vite build` transformed 6,440
+modules and was killed by the OOM reaper at "rendering chunks" with 3.9GB available. This is the
+documented blocker, not a regression from this change. Vercel's runner has the headroom; the deploy
+is expected to succeed, but nobody has verified a full local build.
+
+### Blockers unchanged
+Apex `teksure.com` still 307s to `www` (Vercel dashboard → Domains, one toggle) · monetization
+credentials · analytics wiring unverified · Hetzner CX22 for hosted Ollama · one build on a ≥8GB
+machine.
+
+---
+
 ## Cycle 150 — 2026-08-27 (Cowork run, hand-written)
 
 ### [fixed] The wrong Supabase project ref was sitting in 22 places across `docs/` — including deploy commands
@@ -1264,128 +1325,3 @@ clone per the CLAUDE.md fallback. **The mount still cannot self-repair** — it 
 a normal shell, or every session re-discovers this and burns the same ten minutes.
 
 ---
-
-## Cycle 125 — 2026-08-21T01:53:32.205Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-21.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [ok] External source link health
-75 source URLs checked, 0 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
----
-
-## Cycle 124 — 2026-08-20T18:55:12.351Z
-
-### [ok] Site metrics snapshot
-4049 guides, 3156 routes, 285 tools.
-
-### [ok] Duplicate guide slugs
-No duplicate slugs.
-
-### [ok] Internal link audit
-0 broken targets, 0 orphaned routes (of 3119 routes).
-
-### [ok] TypeScript compile
-No TypeScript errors.
-
-### [ok] Stale OS version mentions
-No stale OS version mentions found.
-
-### [ok] Aged guides
-0 of 4049 guides published before 2025-02-20.
-
-### [ok] Duplicate guide titles
-No duplicate guide titles.
-
-### [warn] Readability & senior UX
-avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-
-```
-- grade 10.2: use-silvur-retirement-planning
-- grade 10: how-to-back-up-iphone-to-icloud
-- grade 10.1: set-up-bank-text-alerts
-- grade 10.1: close-old-bank-account-safely
-- grade 10.3: youtube-videos-buffering-fix
-- grade 10.5: set-up-amazon-prime-delivery-prescriptions
-- grade 10: how-to-use-siri-iphone
-- grade 10.2: walgreens-app-prescription-refill-step-by-step-2026
-- grade 10.2: how-to-screenshot-windows-11
-- grade 10.7: how-to-use-notes-app-iphone
-```
-
-### [warn] External source link health
-75 source URLs checked, 1 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
-```
-- 404 https://support.microsoft.com/en-us/windows/retrace-your-steps-with-recall-aa03f8a0-a78b-4b3e-b0a1-2eb8ac48701c — used by turn-off-windows-recall-privacy-feature
-```
-
-### [ok] Hardcoded prices outside pricing.ts
-All service prices come from src/data/pricing.ts.
-
-### [ok] Undisclosed invented testimonials
-No hardcoded reviews without a disclosure.
-
-### [ok] Overlong guide excerpts
-All guide excerpts are within 160 characters.
-
-### [ok] Reused placeholder videos
-No video is reused across more than 5 guides.
-
-### Suggested next actions
-- **Readability & senior UX** — avg reading grade 8.3 (target <= 8), 58.5% of guides above grade 8, 0 images missing alt.
-- **External source link health** — 75 source URLs checked, 1 confirmed broken (404/410), 1 unreachable (often bot-blocking).
-
----
-
-_(older cycles trimmed)_
