@@ -22,7 +22,7 @@ export default function SeniorPowerOutage() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Whole-house generator</h2><p>$5,000-$15,000. Auto-starts when power fails. Generac most common.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medical priority</h2><p>If on oxygen, medical devices: tell utility company. Priority for power restoration.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cheap option</h2><p>Power banks + flashlights ($50 total). Plenty for 4-hour outages.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Ice in freezer 24-48 hours. Move to fridge during outage.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Ice in freezer 24-48 hours. Move to fridge during outage.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

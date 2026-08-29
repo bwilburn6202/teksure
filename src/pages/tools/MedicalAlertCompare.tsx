@@ -31,10 +31,10 @@ export default function MedicalAlertCompare() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function MedicalAlertCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to look for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fall detection</strong> — auto-calls if you fall and don&apos;t move. $5-15 extra/month. Worth it.</li>
               <li><strong>Cellular vs landline</strong> — cellular works anywhere. Landline only at home.</li>
               <li><strong>GPS</strong> — for active people who leave the house.</li>
@@ -57,7 +57,7 @@ export default function MedicalAlertCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Watch as medical alert</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Watch SE ($249 one-time) has fall detection built in.</li>
               <li>If you fall hard and don&apos;t move 60 seconds → auto-calls 911 + texts emergency contacts.</li>
               <li>"Hold side button" → emergency call.</li>
@@ -71,7 +71,7 @@ export default function MedicalAlertCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Will Medicare pay?</h3>
-            <p className="text-sm text-muted-foreground">Original Medicare does NOT cover medical alerts. Some Medicare Advantage plans DO — check yours. AARP/UnitedHealthcare often offers discounts. Long-term care insurance may cover. Veterans Affairs may cover for vets.</p>
+            <p className="text-base text-muted-foreground">Original Medicare does NOT cover medical alerts. Some Medicare Advantage plans DO — check yours. AARP/UnitedHealthcare often offers discounts. Long-term care insurance may cover. Veterans Affairs may cover for vets.</p>
           </CardContent>
         </Card>
       </main>

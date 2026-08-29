@@ -19,7 +19,7 @@ export default function LumosityBrainHQCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Do brain games really work?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Honest answer: research is mixed.</li>
               <li>You get better at the specific games you play.</li>
               <li>Whether that transfers to daily life — debated.</li>
@@ -33,7 +33,7 @@ export default function LumosityBrainHQCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lumosity</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most popular brain training app.</li>
               <li>Free trial — limited games.</li>
               <li>Premium: $11.99/month or $59.99/year.</li>
@@ -47,7 +47,7 @@ export default function LumosityBrainHQCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">BrainHQ</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Made by Posit Science — backed by research.</li>
               <li>More science-based than Lumosity.</li>
               <li>$14/month or $96/year.</li>
@@ -61,7 +61,7 @@ export default function LumosityBrainHQCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NYT Crossword — first mini puzzle free daily.</li>
               <li>Wordle — one word puzzle per day (free).</li>
               <li>Sudoku apps — many free versions.</li>
@@ -75,7 +75,7 @@ export default function LumosityBrainHQCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Elevate app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Focuses on language and math skills.</li>
               <li>Free version available — 3 games/day.</li>
               <li>Premium: $4.99/month.</li>
@@ -89,7 +89,7 @@ export default function LumosityBrainHQCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best overall approach</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mix of activities beats any single app.</li>
               <li>Social activity (talking, games with others) — very powerful.</li>
               <li>Physical exercise + brain health linked strongly.</li>
@@ -103,7 +103,7 @@ export default function LumosityBrainHQCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try free first</h3>
-            <p className="text-sm text-muted-foreground">Before paying for Lumosity or BrainHQ, try Wordle, a crossword, and Duolingo for a week. If you want more structured brain training after that, BrainHQ has the strongest research behind it. If you just want fun games that keep you sharp, Lumosity&apos;s free tier covers the basics. The daily habit matters more than which app you choose.</p>
+            <p className="text-base text-muted-foreground">Before paying for Lumosity or BrainHQ, try Wordle, a crossword, and Duolingo for a week. If you want more structured brain training after that, BrainHQ has the strongest research behind it. If you just want fun games that keep you sharp, Lumosity&apos;s free tier covers the basics. The daily habit matters more than which app you choose.</p>
           </CardContent>
         </Card>
       </main>

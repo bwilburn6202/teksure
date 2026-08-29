@@ -28,7 +28,7 @@ export default function AntivirusPicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">The honest truth</h2>
-            <p className="text-sm">For most people, the FREE built-in antivirus on your Windows PC or Mac is enough. Paid antivirus often slows your computer more than it helps. Better protection comes from: NOT clicking unknown links, NOT installing random software, and using a password manager.</p>
+            <p className="text-base">For most people, the FREE built-in antivirus on your Windows PC or Mac is enough. Paid antivirus often slows your computer more than it helps. Better protection comes from: NOT clicking unknown links, NOT installing random software, and using a password manager.</p>
           </CardContent>
         </Card>
 
@@ -38,10 +38,10 @@ export default function AntivirusPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base mb-1">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,15 +50,15 @@ export default function AntivirusPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recommended setup</h2>
-            <p className="font-semibold text-sm">Windows:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mb-3">
+            <p className="font-semibold text-base">Windows:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mb-3">
               <li>Keep <strong>Windows Defender</strong> (already on).</li>
               <li>Install <strong>Malwarebytes Free</strong> for occasional deep scans.</li>
               <li>Keep Windows updated automatically.</li>
               <li>Don\'t install third-party paid antivirus unless you have a specific reason.</li>
             </ul>
-            <p className="font-semibold text-sm">Mac:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="font-semibold text-base">Mac:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Keep macOS updated.</li>
               <li>Install <strong>Malwarebytes for Mac (free)</strong> for monthly scans.</li>
               <li>That\'s it.</li>
@@ -69,8 +69,8 @@ export default function AntivirusPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If your computer came with paid antivirus</h2>
-            <p className="text-sm mb-2">Most new PCs come with Norton or McAfee free for a year. They auto-renew at $50-100/year unless you cancel.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Most new PCs come with Norton or McAfee free for a year. They auto-renew at $50-100/year unless you cancel.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Find the auto-renew in your account → cancel.</li>
               <li>Or uninstall it: Settings → Apps → find Norton/McAfee → Uninstall.</li>
               <li>Windows Defender automatically takes over.</li>
@@ -78,10 +78,10 @@ export default function AntivirusPicker() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Antivirus scams</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>"Your computer is infected!" pop-ups</strong> — never real. (See our Tech Support Pop-up Defense.)</li>
               <li><strong>Free antivirus from random websites</strong> — often malware itself.</li>
               <li><strong>"Antivirus scan reveals 47 threats"</strong> emails — phishing.</li>
@@ -93,7 +93,7 @@ export default function AntivirusPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best protection isn\'t software</h3>
-            <p className="text-sm text-muted-foreground">Strong unique passwords (use a password manager). Two-factor on important accounts. Don\'t click random links. Keep your operating system updated. These prevent more attacks than any antivirus catches.</p>
+            <p className="text-base text-muted-foreground">Strong unique passwords (use a password manager). Two-factor on important accounts. Don\'t click random links. Keep your operating system updated. These prevent more attacks than any antivirus catches.</p>
           </CardContent>
         </Card>
       </main>

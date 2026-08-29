@@ -129,7 +129,7 @@ export default function RealEstateWireScam() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-red-500/10 rounded-full">
-                <Home className="h-8 w-8 text-red-600" />
+                <Home className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Real Estate Wire Fraud Defense</h1>
@@ -143,15 +143,15 @@ export default function RealEstateWireScam() {
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Real Estate Wire Scam' }]} />
 
           {/* Big alert: FBI IC3 stat */}
-          <Card className="border-red-300 dark:border-red-800 bg-red-50 dark:bg-red-950/30 mb-6">
+          <Card className="border-danger-foreground/25 bg-danger mb-6">
             <CardContent className="p-5">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-8 w-8 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-8 w-8 text-danger-foreground flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-bold text-base text-red-900 dark:text-red-100 mb-1">
+                  <p className="font-bold text-base text-danger-foreground mb-1">
                     Real estate wire fraud cost US victims more than 446 million dollars in 2023.
                   </p>
-                  <p className="text-sm text-red-900/90 dark:text-red-100/90">
+                  <p className="text-base text-red-900/90 dark:text-red-100/90">
                     Source: FBI Internet Crime Complaint Center (IC3) Annual Report. The average single loss tops 90,000 dollars. Most victims are first-time home buyers and seniors moving for retirement.
                   </p>
                 </div>
@@ -161,7 +161,7 @@ export default function RealEstateWireScam() {
 
           {/* How it works */}
           <h2 className="text-2xl font-bold mb-3">How the scam plays out</h2>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             A real estate transaction is the perfect target: large dollar amount, tight deadline, dozens of emails between strangers. Hackers know this and they have three main entry points.
           </p>
 
@@ -175,16 +175,16 @@ export default function RealEstateWireScam() {
                   </div>
 
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-3 mb-1">Hook</p>
-                  <p className="text-sm italic p-2 rounded bg-muted/40 border border-border">{p.hook}</p>
+                  <p className="text-base italic p-2 rounded bg-muted/40 border border-border">{p.hook}</p>
 
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-3 mb-1">How it works</p>
-                  <p className="text-sm">{p.pattern}</p>
+                  <p className="text-base">{p.pattern}</p>
 
-                  <p className="text-xs font-semibold text-red-700 dark:text-red-300 uppercase tracking-wider mt-3 mb-1">Red flag</p>
-                  <p className="text-sm p-2 rounded bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800">{p.redFlag}</p>
+                  <p className="text-xs font-semibold text-danger-foreground uppercase tracking-wider mt-3 mb-1">Red flag</p>
+                  <p className="text-base p-2 rounded bg-danger border border-danger-foreground/25 ">{p.redFlag}</p>
 
-                  <p className="text-xs font-semibold text-green-700 dark:text-green-300 uppercase tracking-wider mt-3 mb-1">What to do</p>
-                  <p className="text-sm p-2 rounded bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800">{p.whatToDo}</p>
+                  <p className="text-xs font-semibold text-success-foreground uppercase tracking-wider mt-3 mb-1">What to do</p>
+                  <p className="text-base p-2 rounded bg-success border border-success-foreground/25 ">{p.whatToDo}</p>
                 </CardContent>
               </Card>
             ))}
@@ -192,7 +192,7 @@ export default function RealEstateWireScam() {
 
           {/* Section 1: Buyer protection */}
           <h2 className="text-2xl font-bold mb-3">Buyer protection</h2>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             Five rules that stop wire fraud before it happens. Print this list and keep it next to the closing paperwork.
           </p>
 
@@ -208,7 +208,7 @@ export default function RealEstateWireScam() {
                       </div>
                       <div>
                         <p className="font-semibold text-base mb-1">{rule.title}</p>
-                        <p className="text-sm text-muted-foreground">{rule.body}</p>
+                        <p className="text-base text-muted-foreground">{rule.body}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -218,15 +218,15 @@ export default function RealEstateWireScam() {
           </div>
 
           {/* Section 2: Recovery */}
-          <Card className="border-orange-300 dark:border-orange-800 bg-orange-50 dark:bg-orange-950/30 mb-4">
+          <Card className="border-warn-foreground/25 bg-warn mb-4">
             <CardContent className="p-5">
               <div className="flex items-start gap-3">
-                <Clock className="h-7 w-7 text-orange-600 dark:text-orange-400 flex-shrink-0 mt-0.5" />
+                <Clock className="h-7 w-7 text-warn-foreground flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-bold text-base text-orange-900 dark:text-orange-100 mb-1">
+                  <p className="font-bold text-base text-warn-foreground mb-1">
                     What to do if you have been hit (act in the next 24 hours)
                   </p>
-                  <p className="text-sm text-orange-900/90 dark:text-orange-100/90">
+                  <p className="text-base text-orange-900/90 dark:text-orange-100/90">
                     Recovery is possible — but the window is short. The FBI Financial Fraud Kill Chain has the best chance in the first 24-48 hours after the wire leaves your account. Do these five things in order, today.
                   </p>
                 </div>
@@ -243,13 +243,13 @@ export default function RealEstateWireScam() {
                     <div className="flex items-start gap-3">
                       <div className="flex-shrink-0 flex flex-col items-center">
                         <div className="p-2 bg-orange-500/10 rounded-lg">
-                          <Icon className="h-5 w-5 text-orange-600 dark:text-orange-400" />
+                          <Icon className="h-5 w-5 text-warn-foreground " />
                         </div>
-                        <span className="mt-2 text-xs font-bold text-muted-foreground">Step {i + 1}</span>
+                        <span className="mt-2 text-sm font-bold text-muted-foreground">Step {i + 1}</span>
                       </div>
                       <div>
                         <p className="font-semibold text-base mb-1">{step.title}</p>
-                        <p className="text-sm text-muted-foreground">{step.body}</p>
+                        <p className="text-base text-muted-foreground">{step.body}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -261,8 +261,8 @@ export default function RealEstateWireScam() {
           {/* Reporting + resources */}
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Where to report wire fraud</p>
-              <ul className="space-y-1.5 text-sm">
+              <p className="text-base font-semibold mb-2">Where to report wire fraud</p>
+              <ul className="space-y-1.5 text-base">
                 <li>
                   <a
                     href="https://www.ic3.gov"
@@ -300,27 +300,27 @@ export default function RealEstateWireScam() {
                 to="/tools/scam-message-decoder"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Paste the suspicious email and check it.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Paste the suspicious email and check it.</p>
               </Link>
               <Link
                 to="/tools/scam-witness-statement"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
-                <p className="font-medium text-sm">Witness Statement Builder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Build a clean report for the FBI and police.</p>
+                <p className="font-medium text-base">Witness Statement Builder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Build a clean report for the FBI and police.</p>
               </Link>
               <Link
                 to="/tools/online-banking-safety"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
-                <p className="font-medium text-sm">Online Banking Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Lock down the account before the next wire.</p>
+                <p className="font-medium text-base">Online Banking Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Lock down the account before the next wire.</p>
               </Link>
             </div>
           </div>
 
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: the day you sign a purchase agreement, write the title company&apos;s real phone number on a paper card and tape it to your monitor. That number is the only one you trust during closing week.
           </p>
         </div>

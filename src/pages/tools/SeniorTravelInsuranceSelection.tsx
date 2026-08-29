@@ -22,7 +22,7 @@ export default function SeniorTravelInsuranceSelection() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pre-existing waiver</h2><p>Buy within 14 days of trip deposit. Critical for chronic conditions.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cancel for any reason</h2><p>+$200-$500. Refund 50-75% if cancelled. Worth it for some.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cost</h2><p>5-10% of trip cost typical. $5,000 trip = $250-$500 insurance.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Buy insurance day of first trip deposit. Locks in pre-existing protection.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Buy insurance day of first trip deposit. Locks in pre-existing protection.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

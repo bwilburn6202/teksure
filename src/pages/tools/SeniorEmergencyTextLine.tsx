@@ -22,7 +22,7 @@ export default function SeniorEmergencyTextLine() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">For domestic violence</h2><p>Silent emergency. Don&apos;t alert attacker by talking.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">For deaf/hard of hearing</h2><p>Most reliable for those who can&apos;t hear dispatcher.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Phones support it</h2><p>iPhone, Android. Built in.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Practice texting 911 fake number once. Know how to do it before emergency.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Practice texting 911 fake number once. Know how to do it before emergency.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

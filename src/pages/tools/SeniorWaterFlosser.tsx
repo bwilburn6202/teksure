@@ -22,7 +22,7 @@ export default function SeniorWaterFlosser() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Dental implants/bridges</h2><p>Best for seniors with implants. Reaches where string can&apos;t.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Dentist approved</h2><p>American Dental Association seal. Real benefits proven.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tips for use</h2><p>Lean over sink. Mouth slightly open. Start at gum line. Move slowly.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Add mouthwash to water reservoir for extra benefit.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Add mouthwash to water reservoir for extra benefit.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

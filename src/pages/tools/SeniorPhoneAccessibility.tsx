@@ -22,7 +22,7 @@ export default function SeniorPhoneAccessibility() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Live Captions</h2><p>FREE iPhone iOS 16+. Auto-captions any call. Read what&apos;s said.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Big-button phones</h2><p>$30. Senior-friendly home phones. Speed dial.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Volume amplifier</h2><p>$60 phone amplifier. Doubles call volume.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: CapTel free phones. Federal program. Apply online.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: CapTel free phones. Federal program. Apply online.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

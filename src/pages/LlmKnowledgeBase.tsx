@@ -86,20 +86,20 @@ export default function LlmKnowledgeBase() {
             </CardHeader>
             <CardContent className="space-y-5">
               <div className="space-y-2">
-                <label className="text-sm font-medium">Project name</label>
+                <label className="text-base font-medium">Project name</label>
                 <Input value={projectName} onChange={(e) => setProjectName(e.target.value)} />
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-medium">Domain scope</label>
+                <label className="text-base font-medium">Domain scope</label>
                 <Input value={domain} onChange={(e) => setDomain(e.target.value)} />
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-medium">Primary users</label>
+                <label className="text-base font-medium">Primary users</label>
                 <Input value={targetUsers} onChange={(e) => setTargetUsers(e.target.value)} />
               </div>
 
               <div>
-                <p className="text-sm font-medium mb-2">Enabled source channels</p>
+                <p className="text-base font-medium mb-2">Enabled source channels</p>
                 <div className="grid sm:grid-cols-2 gap-2">
                   {sourceOptions.map((option) => (
                     <button
@@ -116,7 +116,7 @@ export default function LlmKnowledgeBase() {
               </div>
 
               <div>
-                <p className="text-sm font-medium mb-2">Preferred output formats</p>
+                <p className="text-base font-medium mb-2">Preferred output formats</p>
                 <div className="grid sm:grid-cols-2 gap-2">
                   {outputOptions.map((option) => (
                     <button
@@ -154,7 +154,7 @@ export default function LlmKnowledgeBase() {
               <CardTitle className="flex items-center gap-2 text-primary"><CheckCircle2 className="h-5 w-5" /> Health-check preview</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm text-muted-foreground">
+              <ul className="space-y-2 text-base text-muted-foreground">
                 {healthChecks.map((item) => (
                   <li key={item} className="flex items-start gap-2">
                     <CheckCircle2 className="h-4 w-4 mt-0.5 text-primary" />

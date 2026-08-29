@@ -19,7 +19,7 @@ export default function BallroomDancingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior favorite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reduces dementia 76% in studies.</li>
               <li>Best aerobic + balance combo.</li>
               <li>Brain learning patterns.</li>
@@ -34,7 +34,7 @@ export default function BallroomDancingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly dance types</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Line dancing</strong> — no partner needed.</li>
               <li><strong>Square dancing</strong> — group, fun, calls.</li>
               <li><strong>Country two-step</strong> — easy, fun.</li>
@@ -49,7 +49,7 @@ export default function BallroomDancingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to dance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Senior centers</strong> — most have classes.</li>
               <li><strong>Community colleges</strong>.</li>
               <li><strong>Arthur Murray studios</strong> — paid lessons.</li>
@@ -64,7 +64,7 @@ export default function BallroomDancingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Comfortable shoes (dance shoes optional).</li>
               <li>Stay hydrated.</li>
               <li>Don&apos;t over-do — pace yourself.</li>
@@ -79,7 +79,7 @@ export default function BallroomDancingSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Studies are clear</h3>
-            <p className="text-sm text-muted-foreground">Bronx Aging Study: dancing reduces dementia risk 76% (more than chess, crosswords). Combination of physical + mental + social = best brain health activity. Plus joy. Try it weekly.</p>
+            <p className="text-base text-muted-foreground">Bronx Aging Study: dancing reduces dementia risk 76% (more than chess, crosswords). Combination of physical + mental + social = best brain health activity. Plus joy. Try it weekly.</p>
           </CardContent>
         </Card>
       </main>

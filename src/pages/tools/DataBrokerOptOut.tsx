@@ -19,7 +19,7 @@ export default function DataBrokerOptOut() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why bother</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Data brokers sell your address, phone, relatives, court records.</li>
               <li>Scammers use these to target seniors specifically.</li>
               <li>Stalkers + estranged relatives use them to find you.</li>
@@ -32,7 +32,7 @@ export default function DataBrokerOptOut() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Top data brokers to opt out</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Spokeo</strong> — spokeo.com/optout.</li>
               <li><strong>BeenVerified</strong> — beenverified.com/app/optout.</li>
               <li><strong>WhitePages</strong> — whitepages.com/suppression-requests.</li>
@@ -48,7 +48,7 @@ export default function DataBrokerOptOut() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hire help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>DeleteMe</strong> — $129/yr. Removes from 35+ data brokers + monitors quarterly.</li>
               <li><strong>Privacy Bee</strong> — $197/yr. Premium service.</li>
               <li><strong>Optery</strong> — $99/yr. Cheapest legit option.</li>
@@ -61,7 +61,7 @@ export default function DataBrokerOptOut() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY process (per site)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Search "[your name] opt out [site name]".</li>
               <li>Find your listing — verify it&apos;s YOU.</li>
               <li>Click "Remove this listing" or similar.</li>
@@ -77,7 +77,7 @@ export default function DataBrokerOptOut() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">California / Vermont have laws</h3>
-            <p className="text-sm text-muted-foreground">CCPA (California) + Vermont law require data brokers to delete on request. CA residents have stronger rights. New laws coming. Federal law catching up. Your privacy rights ARE growing.</p>
+            <p className="text-base text-muted-foreground">CCPA (California) + Vermont law require data brokers to delete on request. CA residents have stronger rights. New laws coming. Federal law catching up. Your privacy rights ARE growing.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function BusTravelForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Greyhound</strong> — 5% off 62+.</li>
               <li><strong>Megabus</strong> — variable, sometimes free.</li>
               <li><strong>FlixBus</strong> — 50+ discounts available.</li>
@@ -33,7 +33,7 @@ export default function BusTravelForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bus tour companies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tauck</strong> — premium senior tours.</li>
               <li><strong>Trafalgar</strong> — mid-range.</li>
               <li><strong>Globus</strong> — affordable.</li>
@@ -48,7 +48,7 @@ export default function BusTravelForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local senior transit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>City buses — senior fares 50% off.</li>
               <li>SilverRide / Senior shuttles — Area Agency on Aging.</li>
               <li>ADA Paratransit — for those qualifying.</li>
@@ -63,7 +63,7 @@ export default function BusTravelForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Aisle seat for bathroom access.</li>
               <li>Front of bus = smoother ride.</li>
               <li>Bring snacks + water.</li>
@@ -78,7 +78,7 @@ export default function BusTravelForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When bus best</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Short distances (4-8 hours).</li>
               <li>Visiting family in another city.</li>
               <li>Don&apos;t want to drive.</li>
@@ -92,7 +92,7 @@ export default function BusTravelForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free senior transportation</h3>
-            <p className="text-sm text-muted-foreground"><strong>Eldercare Locator</strong> — 1-800-677-1116. Connects to local senior transport. <strong>Area Agency on Aging</strong> — knows all options. <strong>Faith In Action</strong> — volunteer drivers many areas. <strong>ITN America</strong> — paid senior ride sharing. Don&apos;t pay if don&apos;t have to.</p>
+            <p className="text-base text-muted-foreground"><strong>Eldercare Locator</strong> — 1-800-677-1116. Connects to local senior transport. <strong>Area Agency on Aging</strong> — knows all options. <strong>Faith In Action</strong> — volunteer drivers many areas. <strong>ITN America</strong> — paid senior ride sharing. Don&apos;t pay if don&apos;t have to.</p>
           </CardContent>
         </Card>
       </main>

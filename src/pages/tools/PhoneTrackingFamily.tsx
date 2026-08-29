@@ -19,7 +19,7 @@ export default function PhoneTrackingFamily() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why share location?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family knows where you are.</li>
               <li>Help if emergency.</li>
               <li>Find if dementia patient wanders.</li>
@@ -33,7 +33,7 @@ export default function PhoneTrackingFamily() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Family Sharing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find My iPhone.</li>
               <li>Settings → [Your Name] → Family Sharing.</li>
               <li>Add family members.</li>
@@ -47,7 +47,7 @@ export default function PhoneTrackingFamily() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Google Maps Family</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Google Maps app.</li>
               <li>Profile picture, then &quot;Location sharing&quot;.</li>
               <li>Choose &quot;Until you turn it off&quot; or time-limited.</li>
@@ -61,7 +61,7 @@ export default function PhoneTrackingFamily() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Life360 (most popular)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FREE basic / $8-15/mo premium.</li>
               <li>Family members see each other live.</li>
               <li>Driving alerts (speeding, hard braking).</li>
@@ -75,7 +75,7 @@ export default function PhoneTrackingFamily() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For dementia patients</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple AirTag</strong> — keychain, $30.</li>
               <li><strong>Tile</strong> — alternative tracker.</li>
               <li><strong>Samsung SmartTag</strong> — Android.</li>
@@ -89,7 +89,7 @@ export default function PhoneTrackingFamily() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Only consent — don&apos;t install secretly.</li>
               <li>Discuss what to share.</li>
               <li>Pause when needed (medical visits).</li>
@@ -103,7 +103,7 @@ export default function PhoneTrackingFamily() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When to enable</h3>
-            <p className="text-sm text-muted-foreground">Long road trips. Solo travel. Hospital visits. Mall outings (large parking). Grandkid pickups. Outdoor activities. Whenever family feels concerned. Senior agrees first. Empowering, not surveilling. Many seniors love seeing where kids + grandkids are throughout day. Bonding effect.</p>
+            <p className="text-base text-muted-foreground">Long road trips. Solo travel. Hospital visits. Mall outings (large parking). Grandkid pickups. Outdoor activities. Whenever family feels concerned. Senior agrees first. Empowering, not surveilling. Many seniors love seeing where kids + grandkids are throughout day. Bonding effect.</p>
           </CardContent>
         </Card>
       </main>

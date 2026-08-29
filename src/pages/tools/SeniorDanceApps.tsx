@@ -22,7 +22,7 @@ export default function SeniorDanceApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Studies show</h2><p>Dancing reduces dementia risk 76%. Highest of any activity studied.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Just Dance</h2><p>$60 game. TV + Wii/Switch. Family fun. Real cardio.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Seniors-only nights</h2><p>Many ballrooms have senior nights. Lower fees. Older crowd.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Dance is best dementia prevention exercise. Brain + body together.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Dance is best dementia prevention exercise. Brain + body together.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function AmericasTestKitchenApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you get</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>10,000+ tested recipes.</li>
               <li>Cook&apos;s Illustrated archive.</li>
               <li>Equipment + ingredient reviews.</li>
@@ -33,7 +33,7 @@ export default function AmericasTestKitchenApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior cooks love it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Every recipe rigorously tested.</li>
               <li>Explains WHY techniques work.</li>
               <li>Equipment ratings before buying.</li>
@@ -47,7 +47,7 @@ export default function AmericasTestKitchenApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">App features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Step-by-step cooking mode.</li>
               <li>Adjustable text size.</li>
               <li>Ingredient list to grocery.</li>
@@ -61,7 +61,7 @@ export default function AmericasTestKitchenApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">All Access subscription</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$59.99/year for full access.</li>
               <li>Includes Cook&apos;s Illustrated, Cook&apos;s Country.</li>
               <li>TV show videos.</li>
@@ -75,7 +75,7 @@ export default function AmericasTestKitchenApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">PBS America&apos;s Test Kitchen show</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free on PBS — local station.</li>
               <li>PBS Passport — full archive.</li>
               <li>$60/year for PBS Passport (donation).</li>
@@ -89,7 +89,7 @@ export default function AmericasTestKitchenApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">vs NYT Cooking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NYT — more current trends, beautiful photos.</li>
               <li>ATK — more rigorous testing.</li>
               <li>Both excellent.</li>
@@ -103,7 +103,7 @@ export default function AmericasTestKitchenApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Watch on PBS first — free</h3>
-            <p className="text-sm text-muted-foreground">Before paying $60/year, watch ATK on PBS — local station has show free. If you love their style, subscribe through PBS Passport ($60/year donation) to get ATK plus all PBS content. Better value than ATK direct subscription. Many senior cooks call ATK the best food brand on television.</p>
+            <p className="text-base text-muted-foreground">Before paying $60/year, watch ATK on PBS — local station has show free. If you love their style, subscribe through PBS Passport ($60/year donation) to get ATK plus all PBS content. Better value than ATK direct subscription. Many senior cooks call ATK the best food brand on television.</p>
           </CardContent>
         </Card>
       </main>

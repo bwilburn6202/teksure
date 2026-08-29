@@ -22,7 +22,7 @@ export default function SeniorWifiExtenders() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Where to place</h2><p>Halfway between router and weak spot. Same Wi-Fi name.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Setup</h2><p>Plug in. Press WPS button. Press WPS on router. Connected.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Better solution</h2><p>Mesh router system ($150-$300) replaces extender for big homes.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Test signal in dead zone before buying. Make sure extender helps.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Test signal in dead zone before buying. Make sure extender helps.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

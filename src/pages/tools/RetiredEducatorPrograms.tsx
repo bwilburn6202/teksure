@@ -19,7 +19,7 @@ export default function RetiredEducatorPrograms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Volunteer programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Foster Grandparent (AmeriCorps)</strong> — read to kids 15-40 hrs/week. Stipend.</li>
               <li><strong>Reading Partners</strong> — tutor 4-6 kids weekly. Local schools.</li>
               <li><strong>Boys + Girls Clubs</strong> — after-school tutoring.</li>
@@ -34,7 +34,7 @@ export default function RetiredEducatorPrograms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Paid tutoring (online)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Outschool</strong> — teach kids classes. $20-40/hr.</li>
               <li><strong>Wyzant</strong> — set rates ($30-100/hr).</li>
               <li><strong>VIPKid</strong> — teach English to Chinese kids ($15-22/hr).</li>
@@ -48,7 +48,7 @@ export default function RetiredEducatorPrograms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Travel + teach programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Peace Corps Response</strong> — short-term educator missions overseas. Paid stipend + housing.</li>
               <li><strong>Fulbright Specialist</strong> — 2-6 weeks educator missions abroad.</li>
               <li><strong>Habitat International educator missions</strong>.</li>
@@ -61,7 +61,7 @@ export default function RetiredEducatorPrograms() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Self-directed</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tutor neighborhood kids</strong> — word of mouth.</li>
               <li><strong>Adult literacy volunteer</strong> — teach reading to adults.</li>
               <li><strong>ESL teacher</strong> — for new immigrants in your community.</li>
@@ -75,7 +75,7 @@ export default function RetiredEducatorPrograms() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Why it works</h3>
-            <p className="text-sm text-muted-foreground">Retired teachers report HIGHEST life satisfaction in retirement when they keep teaching in some form. Skills don&apos;t fade. Kids + adults need you. Volunteer + paid both fulfilling.</p>
+            <p className="text-base text-muted-foreground">Retired teachers report HIGHEST life satisfaction in retirement when they keep teaching in some form. Skills don&apos;t fade. Kids + adults need you. Volunteer + paid both fulfilling.</p>
           </CardContent>
         </Card>
       </main>

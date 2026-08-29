@@ -19,7 +19,7 @@ export default function CocktailMixingSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior favorites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Classic Martini</strong> — gin, vermouth, olive.</li>
               <li><strong>Old Fashioned</strong> — bourbon, sugar, bitters.</li>
               <li><strong>Manhattan</strong> — bourbon/rye, sweet vermouth.</li>
@@ -33,7 +33,7 @@ export default function CocktailMixingSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Home bar essentials</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bourbon (Bulleit, Buffalo Trace).</li>
               <li>Vodka (Tito&apos;s).</li>
               <li>Gin (Hendrick&apos;s, Tanqueray).</li>
@@ -50,7 +50,7 @@ export default function CocktailMixingSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bar tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cocktail shaker (Boston preferred).</li>
               <li>Jigger for measuring.</li>
               <li>Bar spoon.</li>
@@ -65,7 +65,7 @@ export default function CocktailMixingSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Good resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Death &amp; Co cocktail book</strong>.</li>
               <li><strong>Liquor.com</strong> — free recipes.</li>
               <li><strong>Mr. Boston Bartender&apos;s Guide</strong>.</li>
@@ -79,7 +79,7 @@ export default function CocktailMixingSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mocktails growing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sober curious movement.</li>
               <li>Non-alcoholic spirits (Lyre&apos;s, Seedlip).</li>
               <li>Seedlip + tonic = sophisticated.</li>
@@ -93,7 +93,7 @@ export default function CocktailMixingSenior() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior moderation</h3>
-            <p className="text-sm text-muted-foreground">Senior bodies process alcohol slower. Cocktails often have 2-3 drink&apos;s worth alcohol. ONE cocktail = limit. Hydrate. See /tools/alcohol-for-seniors. Enjoy responsibly.</p>
+            <p className="text-base text-muted-foreground">Senior bodies process alcohol slower. Cocktails often have 2-3 drink&apos;s worth alcohol. ONE cocktail = limit. Hydrate. See /tools/alcohol-for-seniors. Enjoy responsibly.</p>
           </CardContent>
         </Card>
       </main>

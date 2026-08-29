@@ -19,7 +19,7 @@ export default function TwoFactorAuthGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is 2FA?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Password + second verification = login.</li>
               <li>Code sent to phone, OR app code, OR fingerprint.</li>
               <li>Stops 99% of hacking attempts.</li>
@@ -33,7 +33,7 @@ export default function TwoFactorAuthGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Methods, best to worst</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Authenticator app</strong> (Google, Microsoft, Authy) — BEST.</li>
               <li><strong>Passkey / Face ID</strong> — easiest, also best.</li>
               <li><strong>Hardware key (YubiKey)</strong> — most secure.</li>
@@ -47,7 +47,7 @@ export default function TwoFactorAuthGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Critical accounts to protect</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Email</strong> — protect FIRST. Gateway to everything.</li>
               <li><strong>Banking + investment</strong>.</li>
               <li><strong>Apple ID / Google account</strong>.</li>
@@ -62,7 +62,7 @@ export default function TwoFactorAuthGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup steps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sign into account.</li>
               <li>Settings → Security → Two-Factor or 2-Step Verification.</li>
               <li>Choose method (recommended: app + backup phone).</li>
@@ -77,7 +77,7 @@ export default function TwoFactorAuthGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best authenticator apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Google Authenticator</strong> — simplest. FREE.</li>
               <li><strong>Microsoft Authenticator</strong> — Microsoft accounts.</li>
               <li><strong>Authy</strong> — backs up codes (helpful if lose phone).</li>
@@ -90,7 +90,7 @@ export default function TwoFactorAuthGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you lose phone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Backup codes save you (printed somewhere safe).</li>
               <li>Authy syncs to new phone (Google Auth doesn&apos;t).</li>
               <li>Trust contact (Apple, Google) recovery.</li>
@@ -103,7 +103,7 @@ export default function TwoFactorAuthGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Family member helps</h3>
-            <p className="text-sm text-muted-foreground">2FA setup intimidating but worthwhile. Have tech-savvy family member set up critical accounts. Email + bank + Apple ID = top 3. After done — stays set up. Phone-text 2FA ok for non-critical (Facebook, etc.). App-based for critical.</p>
+            <p className="text-base text-muted-foreground">2FA setup intimidating but worthwhile. Have tech-savvy family member set up critical accounts. Email + bank + Apple ID = top 3. After done — stays set up. Phone-text 2FA ok for non-critical (Facebook, etc.). App-based for critical.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorReceiptApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smart Receipts</h2><p>FREE. For tax/business records. PDF export.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Notes</h2><p>FREE. Scan receipts → Notes folder &ldquo;Tax 2026.&rdquo; Searchable.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Expensify</h2><p>FREE personal. Best for self-employed seniors with deductions.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Snap receipt before leaving the store. Easy to forget at home.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Snap receipt before leaving the store. Easy to forget at home.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

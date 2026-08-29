@@ -18,11 +18,11 @@ export default function SeniorPapaCompanions() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Papa</h2><p>Often FREE through Medicare Advantage. Companion + transportation.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mon Ami</h2><p>$30/visit. College students visit. Conversation + activities.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What Papa pals do</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Drive to doctor</li><li>Help with errands</li><li>Tech help</li><li>Just visit</li><li>Light housework</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What Papa pals do</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Drive to doctor</li><li>Help with errands</li><li>Tech help</li><li>Just visit</li><li>Light housework</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">No medical care</h2><p>Companion = social. Not a nurse. Different from home health.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior Companions</h2><p>FREE through AmeriCorps Seniors. Volunteer-based.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Loneliness epidemic</h2><p>Surgeon General declared loneliness crisis. Companion programs help.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Papa pals often free with Medicare Advantage. Ask your plan.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Papa pals often free with Medicare Advantage. Ask your plan.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

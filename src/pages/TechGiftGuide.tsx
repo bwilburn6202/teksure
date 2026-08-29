@@ -72,13 +72,13 @@ export default function TechGiftGuide() {
           {/* Filters */}
           <div className="flex flex-wrap gap-4 mb-8 justify-center">
             <div className="flex gap-2 flex-wrap justify-center">
-              <span className="text-sm font-medium self-center text-muted-foreground">For:</span>
+              <span className="text-base font-medium self-center text-muted-foreground">For:</span>
               {filters.map(f => (
                 <Button key={f.value} variant={recipient === f.value ? 'default' : 'outline'} size="sm" className={`rounded-xl ${recipient === f.value ? 'bg-primary text-primary-foreground' : ''}`} onClick={() => setRecipient(f.value as Recipient)}>{f.label}</Button>
               ))}
             </div>
             <div className="flex gap-2 flex-wrap justify-center">
-              <span className="text-sm font-medium self-center text-muted-foreground">Budget:</span>
+              <span className="text-base font-medium self-center text-muted-foreground">Budget:</span>
               <Button variant={budget === 'all' ? 'default' : 'outline'} size="sm" className={`rounded-xl ${budget === 'all' ? 'bg-primary text-primary-foreground' : ''}`} onClick={() => setBudget('all')}>Any</Button>
               {budgets.map(b => (
                 <Button key={b.value} variant={budget === b.value ? 'default' : 'outline'} size="sm" className={`rounded-xl ${budget === b.value ? 'bg-primary text-primary-foreground' : ''}`} onClick={() => setBudget(b.value)}>{b.label}</Button>
@@ -86,7 +86,7 @@ export default function TechGiftGuide() {
             </div>
           </div>
 
-          <p className="text-sm text-muted-foreground text-center mb-8">{filtered.length} gift{filtered.length !== 1 ? 's' : ''} found</p>
+          <p className="text-base text-muted-foreground text-center mb-8">{filtered.length} gift{filtered.length !== 1 ? 's' : ''} found</p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {filtered.map((gift, i) => (
@@ -98,8 +98,8 @@ export default function TechGiftGuide() {
                       {gift.tag && <Badge variant="secondary" className="text-xs flex items-center gap-1"><Star className="h-3 w-3" />{gift.tag}</Badge>}
                     </div>
                     <h3 className="font-bold text-base mb-1">{gift.name}</h3>
-                    <p className="text-primary font-semibold text-sm mb-2">{gift.price}</p>
-                    <p className="text-muted-foreground text-sm leading-relaxed flex-1">{gift.why}</p>
+                    <p className="text-primary font-semibold text-base mb-2">{gift.price}</p>
+                    <p className="text-muted-foreground text-base leading-relaxed flex-1">{gift.why}</p>
                     <div className="mt-4">
                       <Button variant="outline" size="sm" className="w-full gap-1.5 rounded-lg" asChild>
                         <a href={`https://www.amazon.co.uk/s?k=${encodeURIComponent(gift.searchQuery)}`} target="_blank" rel="noopener noreferrer">

@@ -19,7 +19,7 @@ export default function RokuSetupForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is a Roku?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Small device — turns any TV into smart TV.</li>
               <li>Plays Netflix, Hulu, YouTube, all major apps.</li>
               <li>Plug into HDMI port on back of TV.</li>
@@ -33,7 +33,7 @@ export default function RokuSetupForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best Roku models</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Roku Express — $30, basic HD.</li>
               <li>Roku Streaming Stick 4K — $50, popular pick.</li>
               <li>Roku Ultra — $100, fastest + voice remote.</li>
@@ -47,7 +47,7 @@ export default function RokuSetupForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup step by step</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find HDMI port on back of TV.</li>
               <li>Plug Roku stick into HDMI.</li>
               <li>Plug power cable into wall outlet.</li>
@@ -61,7 +61,7 @@ export default function RokuSetupForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Connecting to WiFi</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Roku finds nearby WiFi networks.</li>
               <li>Pick yours from list.</li>
               <li>Type WiFi password using on-screen keyboard.</li>
@@ -75,7 +75,7 @@ export default function RokuSetupForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Adding apps (channels)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Roku &quot;channels&quot; = streaming apps.</li>
               <li>Search for Netflix, Hulu, etc. in Channel Store.</li>
               <li>Add free.</li>
@@ -89,7 +89,7 @@ export default function RokuSetupForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Voice remote — say &quot;Find Frank Sinatra&quot; instead of typing.</li>
               <li>Roku app on phone — better keyboard, find lost remote.</li>
               <li>Headphone jack on remote — private listening.</li>
@@ -103,7 +103,7 @@ export default function RokuSetupForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Roku Ultra worth the upgrade</h3>
-            <p className="text-sm text-muted-foreground">For seniors, the Roku Ultra ($100) is worth the extra over the basic stick. Faster, voice remote with headphone jack (private listening when spouse sleeps), and the &quot;find my remote&quot; button when it slides between couch cushions. The Roku app on your phone is also a backup remote with better keyboard. Many seniors say it&apos;s the easiest streaming device they&apos;ve used.</p>
+            <p className="text-base text-muted-foreground">For seniors, the Roku Ultra ($100) is worth the extra over the basic stick. Faster, voice remote with headphone jack (private listening when spouse sleeps), and the &quot;find my remote&quot; button when it slides between couch cushions. The Roku app on your phone is also a backup remote with better keyboard. Many seniors say it&apos;s the easiest streaming device they&apos;ve used.</p>
           </CardContent>
         </Card>
       </main>

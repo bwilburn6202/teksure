@@ -19,7 +19,7 @@ export default function PaprikaRecipeManager() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Paprika?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Recipe organizer app for phone, tablet, computer.</li>
               <li>Save recipes from any website automatically.</li>
               <li>Build grocery lists from recipes.</li>
@@ -33,7 +33,7 @@ export default function PaprikaRecipeManager() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$4.99 per device, one-time.</li>
               <li>iPhone, iPad, Mac, Windows, Android — separate.</li>
               <li>No subscription — pay once, own forever.</li>
@@ -47,7 +47,7 @@ export default function PaprikaRecipeManager() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Saving recipes online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Browse recipes on any website.</li>
               <li>Tap &quot;Share&quot; — pick &quot;Paprika.&quot;</li>
               <li>App auto-extracts ingredients + instructions.</li>
@@ -61,7 +61,7 @@ export default function PaprikaRecipeManager() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Grocery list magic</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick recipes for the week.</li>
               <li>Add ingredients — auto-combines duplicates.</li>
               <li>Organized by store section (produce, dairy, etc.).</li>
@@ -75,7 +75,7 @@ export default function PaprikaRecipeManager() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adjustable text size for cooking with reading glasses.</li>
               <li>Step-by-step cooking mode.</li>
               <li>Built-in timer for each step.</li>
@@ -89,7 +89,7 @@ export default function PaprikaRecipeManager() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Paprika alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AnyList — free, similar features.</li>
               <li>Plan to Eat — meal planning focus.</li>
               <li>Yummly — discover new recipes.</li>
@@ -103,7 +103,7 @@ export default function PaprikaRecipeManager() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Replace your recipe binders</h3>
-            <p className="text-sm text-muted-foreground">If you have a binder full of recipe printouts and clippings, Paprika can preserve them digitally. Type each recipe in once (or photograph and OCR), and you have your entire family cookbook in your pocket forever. The grocery-list-from-recipes feature alone justifies the $5. Many seniors say switching to a recipe app cut cooking stress by half.</p>
+            <p className="text-base text-muted-foreground">If you have a binder full of recipe printouts and clippings, Paprika can preserve them digitally. Type each recipe in once (or photograph and OCR), and you have your entire family cookbook in your pocket forever. The grocery-list-from-recipes feature alone justifies the $5. Many seniors say switching to a recipe app cut cooking stress by half.</p>
           </CardContent>
         </Card>
       </main>

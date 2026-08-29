@@ -104,7 +104,7 @@ export default function VideoCallEtiquette() {
         <section className="bg-gradient-to-br from-sky-50 via-background to-blue-50 dark:from-sky-950/20 dark:to-blue-950/20 border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
-              <div className="p-3 bg-sky-500/10 rounded-full"><Video className="h-8 w-8 text-sky-700 dark:text-sky-300" /></div>
+              <div className="p-3 bg-sky-500/10 rounded-full"><Video className="h-8 w-8 text-info-foreground " /></div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Video Call Etiquette</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
@@ -118,12 +118,12 @@ export default function VideoCallEtiquette() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">What do you want to fix?</p>
+              <p className="text-base font-semibold mb-3">What do you want to fix?</p>
               <div className="grid sm:grid-cols-4 gap-2">
                 {TABS.map(o => (
                   <button key={o.id} onClick={() => setSection(o.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${section === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'}`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -133,11 +133,11 @@ export default function VideoCallEtiquette() {
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
               <Badge variant="outline" className="mb-2">{topic.name}</Badge>
-              <p className="text-sm text-muted-foreground mb-3"><strong>For:</strong> {topic.whoFor}</p>
+              <p className="text-base text-muted-foreground mb-3"><strong>For:</strong> {topic.whoFor}</p>
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">How to set it up</p>
               <ol className="space-y-2 mb-5">
                 {topic.steps.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{s}</span>
                   </li>
@@ -146,7 +146,7 @@ export default function VideoCallEtiquette() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Helpful to know</p>
               <ul className="space-y-1.5">
                 {topic.features.map((f, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-primary shrink-0">&bull;</span><span>{f}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-primary shrink-0">&bull;</span><span>{f}</span></li>
                 ))}
               </ul>
             </CardContent>
@@ -157,16 +157,16 @@ export default function VideoCallEtiquette() {
             {QUICK_FIXES.map(t => (
               <Card key={t.title} className="border-border">
                 <CardContent className="p-4">
-                  <p className="font-medium text-sm">{t.title}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{t.detail}</p>
+                  <p className="font-medium text-base">{t.title}</p>
+                  <p className="text-sm text-muted-foreground mt-1">{t.detail}</p>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">A note on first-time nerves</p>
                 <p className="text-muted-foreground">Nobody looks their best on the first call. Do a five-minute test call with a patient family member before the doctor visit or family reunion.</p>
@@ -178,16 +178,16 @@ export default function VideoCallEtiquette() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/telehealth-prep" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Telehealth Prep</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Get ready for the doctor video call.</p>
+                <p className="font-medium text-base">Telehealth Prep</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Get ready for the doctor video call.</p>
               </Link>
               <Link to="/tools/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Grandparent Device Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">A tablet built for video calls.</p>
+                <p className="font-medium text-base">Grandparent Device Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">A tablet built for video calls.</p>
               </Link>
               <Link to="/tools/dictation-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Dictation Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Speak instead of type.</p>
+                <p className="font-medium text-base">Dictation Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Speak instead of type.</p>
               </Link>
             </div>
           </div>

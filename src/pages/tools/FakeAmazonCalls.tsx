@@ -16,17 +16,17 @@ export default function FakeAmazonCalls() {
           <p className="text-lg text-muted-foreground">The #1 phone scam targeting seniors right now.</p>
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The script</h2>
-            <p className="text-sm">"This is Amazon. We noticed a $1,200 charge for an iPhone shipped to Texas. Press 1 to dispute." OR a robocall version. OR a "security alert" from Apple/Microsoft/PayPal. <strong>It&apos;s always a scam.</strong> Amazon does not call. Neither does Apple. Neither does Microsoft.</p>
+            <p className="text-base">"This is Amazon. We noticed a $1,200 charge for an iPhone shipped to Texas. Press 1 to dispute." OR a robocall version. OR a "security alert" from Apple/Microsoft/PayPal. <strong>It&apos;s always a scam.</strong> Amazon does not call. Neither does Apple. Neither does Microsoft.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What happens if you press 1</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>"Customer service rep" answers, sounding professional.</li>
               <li>They tell you the charge was made by a hacker.</li>
               <li>"To dispute, we need to refund you." They ask you to install software (AnyDesk, TeamViewer).</li>
@@ -41,7 +41,7 @@ export default function FakeAmazonCalls() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Unsolicited call about an order or charge.</li>
               <li>Robocall with "press 1" option.</li>
               <li>Asks you to install software.</li>
@@ -56,14 +56,14 @@ export default function FakeAmazonCalls() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Defense — hang up</h2>
-            <p className="text-sm">There is no situation where Amazon/Apple/Microsoft will call you about an order or "security issue". Hang up. If you&apos;re worried about a real Amazon order, open the Amazon app yourself and check Your Orders.</p>
+            <p className="text-base">There is no situation where Amazon/Apple/Microsoft will call you about an order or "security issue". Hang up. If you&apos;re worried about a real Amazon order, open the Amazon app yourself and check Your Orders.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you already let them in</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Disconnect computer from internet — pull the plug or turn off wifi.</li>
               <li>Power off the computer.</li>
               <li>Call your bank. Freeze accounts. Change passwords from a different device.</li>
@@ -78,7 +78,7 @@ export default function FakeAmazonCalls() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Train your reflex</h3>
-            <p className="text-sm text-muted-foreground">Practice saying out loud: "I don&apos;t take unsolicited calls about my accounts. Goodbye." Click. No discussion. The longer you stay on the call, the more pressure scammers apply. Hanging up is always safe.</p>
+            <p className="text-base text-muted-foreground">Practice saying out loud: "I don&apos;t take unsolicited calls about my accounts. Goodbye." Click. No discussion. The longer you stay on the call, the more pressure scammers apply. Hanging up is always safe.</p>
           </CardContent>
         </Card>
       </main>

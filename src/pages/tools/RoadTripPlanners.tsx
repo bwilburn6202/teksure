@@ -31,10 +31,10 @@ export default function RoadTripPlanners() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function RoadTripPlanners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly trip rules</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>4-6 hours/day max driving. Less is more.</li>
               <li>Pre-book hotels — small towns get full.</li>
               <li>Stop every 2 hours. Stretch. Use bathroom.</li>
@@ -58,7 +58,7 @@ export default function RoadTripPlanners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pre-trip vehicle check</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tire pressure (cold).</li>
               <li>Oil level + age (every 5K-7K miles).</li>
               <li>Wiper blades + fluid.</li>
@@ -74,7 +74,7 @@ export default function RoadTripPlanners() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pre-trip diagnostic</h3>
-            <p className="text-sm text-muted-foreground">Ask local mechanic for a "trip inspection" — usually $20-50. Catches issues before you&apos;re stranded 1,000 miles from home. Best $50 you can spend pre-trip.</p>
+            <p className="text-base text-muted-foreground">Ask local mechanic for a "trip inspection" — usually $20-50. Catches issues before you&apos;re stranded 1,000 miles from home. Best $50 you can spend pre-trip.</p>
           </CardContent>
         </Card>
       </main>

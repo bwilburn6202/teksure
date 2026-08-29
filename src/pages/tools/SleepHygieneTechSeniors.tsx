@@ -19,7 +19,7 @@ export default function SleepHygieneTechSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart bulbs for sleep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Philips Hue or Wyze bulbs.</li>
               <li>Auto-dim to red at night.</li>
               <li>Wake-up sunrise simulation.</li>
@@ -33,7 +33,7 @@ export default function SleepHygieneTechSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">White noise machines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hatch Restore — popular senior choice.</li>
               <li>$130 — light + sound + alarm.</li>
               <li>LectroFan — $40 cheap option.</li>
@@ -47,7 +47,7 @@ export default function SleepHygieneTechSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Blue light filters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone Night Shift — automatic.</li>
               <li>Android equivalent.</li>
               <li>Reduces evening blue light.</li>
@@ -61,7 +61,7 @@ export default function SleepHygieneTechSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart thermostat for sleep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bedroom 65-68°F ideal for sleep.</li>
               <li>Nest, Ecobee schedule it automatically.</li>
               <li>Cool bedroom = deeper sleep.</li>
@@ -75,7 +75,7 @@ export default function SleepHygieneTechSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Black out curtains</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Not tech but effective.</li>
               <li>Block streetlights, early sun.</li>
               <li>$30-$80 per window.</li>
@@ -89,7 +89,7 @@ export default function SleepHygieneTechSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone in bedroom — temptation.</li>
               <li>TV right before bed.</li>
               <li>Alcohol disrupts sleep.</li>
@@ -103,7 +103,7 @@ export default function SleepHygieneTechSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cool dark quiet</h3>
-            <p className="text-sm text-muted-foreground">Three principles: cool (65-68°F), dark (blackout curtains), quiet (white noise). Senior sleep declines naturally — these tech aids help maintain it. Smart thermostat + smart bulbs + Hatch Restore = $250 total. Compared to ongoing sleeping pill costs, much cheaper + safer. Better sleep = better aging.</p>
+            <p className="text-base text-muted-foreground">Three principles: cool (65-68°F), dark (blackout curtains), quiet (white noise). Senior sleep declines naturally — these tech aids help maintain it. Smart thermostat + smart bulbs + Hatch Restore = $250 total. Compared to ongoing sleeping pill costs, much cheaper + safer. Better sleep = better aging.</p>
           </CardContent>
         </Card>
       </main>

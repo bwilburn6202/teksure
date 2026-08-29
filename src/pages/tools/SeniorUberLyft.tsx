@@ -21,8 +21,8 @@ export default function SeniorUberLyft() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Request a ride</h2><p>Type destination. Pick &ldquo;UberX&rdquo; (cheapest). See price up front. Tap &ldquo;Confirm.&rdquo;</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Verify driver</h2><p>App shows car make, color, license plate. Always check before getting in.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share your trip</h2><p>Tap &ldquo;Share trip&rdquo; to text a family member your live route.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior options</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>GoGoGrandparent — call to book a ride, no app needed</li><li>Lyft Senior phone-based booking</li></ul></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Tipping is in the app — no cash needed. 15-20% standard.</p></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior options</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>GoGoGrandparent — call to book a ride, no app needed</li><li>Lyft Senior phone-based booking</li></ul></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Tipping is in the app — no cash needed. 15-20% standard.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

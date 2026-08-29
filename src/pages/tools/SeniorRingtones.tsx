@@ -22,7 +22,7 @@ export default function SeniorRingtones() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Custom for family</h2><p>Different ringtone per family member. Hear who&apos;s calling without looking.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best ringtones for seniors</h2><p>Old-school telephone bell. Classic chime. Avoid fancy musical tones.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hearing aids</h2><p>Pair phone to hearing aids. Calls stream through both ears.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Add LED flash AND loud ringtone. Catches attention even with hearing loss.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Add LED flash AND loud ringtone. Catches attention even with hearing loss.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

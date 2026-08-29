@@ -417,7 +417,7 @@ export default function News() {
                 <span className="text-xl"></span>
                 <div>
                   <h2 className="font-bold text-lg">Top Tech Stories Right Now</h2>
-                  <p className="text-xs text-muted-foreground">Live from Hacker News · Updates when you refresh</p>
+                  <p className="text-sm text-muted-foreground">Live from Hacker News · Updates when you refresh</p>
                 </div>
               </div>
               <a
@@ -460,14 +460,14 @@ export default function News() {
                         {story.title}
                       </p>
                       <div className="flex items-center gap-3 mt-1">
-                        <span className="text-xs text-muted-foreground">▲ {story.score}</span>
+                        <span className="text-sm text-muted-foreground">▲ {story.score}</span>
                         {story.url && (
                           <span className="text-xs text-muted-foreground truncate">
                             {new URL(story.url).hostname.replace('www.', '')}
                           </span>
                         )}
                         {story.descendants !== undefined && (
-                          <span className="text-xs text-muted-foreground">{story.descendants} comments</span>
+                          <span className="text-sm text-muted-foreground">{story.descendants} comments</span>
                         )}
                       </div>
                     </div>
@@ -477,7 +477,7 @@ export default function News() {
               </div>
             )}
 
-            <p className="text-xs text-muted-foreground mt-4 text-center">
+            <p className="text-sm text-muted-foreground mt-4 text-center">
               Powered by the <a href="https://github.com/HackerNews/API" target="_blank" rel="noopener noreferrer" className="hover:underline text-primary">HackerNews API</a> · Stories update on page refresh
             </p>
           </div>
@@ -519,19 +519,19 @@ export default function News() {
                       <item.icon className="h-9 w-9 text-primary shrink-0" />
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap mb-3">
-                          <span className={`text-xs font-medium px-2.5 py-1 rounded-lg inline-flex items-center gap-1 ${CATEGORY_COLORS[item.category]}`}>
+                          <span className={`text-sm font-medium px-2.5 py-1 rounded-lg inline-flex items-center gap-1 ${CATEGORY_COLORS[item.category]}`}>
                             {(() => { const CatIcon = CATEGORY_ICONS[item.category]; return <CatIcon className="h-3 w-3" />; })()}
                             {CATEGORY_LABELS[item.category]}
                           </span>
-                          <span className="text-xs text-muted-foreground flex items-center gap-1">
+                          <span className="text-sm text-muted-foreground flex items-center gap-1">
                             <Clock className="h-3 w-3" /> {item.readTime}
                           </span>
-                          <span className="text-xs text-muted-foreground ml-auto">
+                          <span className="text-sm text-muted-foreground ml-auto">
                             {new Date(item.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short' })}
                           </span>
                         </div>
                         <h2 className="font-semibold text-base leading-snug mb-2">{item.title}</h2>
-                        <p className="text-sm text-muted-foreground leading-relaxed mb-3">{item.summary}</p>
+                        <p className="text-base text-muted-foreground leading-relaxed mb-3">{item.summary}</p>
                         {item.source && item.sourceUrl && (
                           <a
                             href={item.sourceUrl}

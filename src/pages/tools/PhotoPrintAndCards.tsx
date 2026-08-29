@@ -33,10 +33,10 @@ export default function PhotoPrintAndCards() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -45,7 +45,7 @@ export default function PhotoPrintAndCards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best gift ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Photo book of the year</strong> — Shutterfly hardcover $30-50. Family treasure.</li>
               <li><strong>Photo calendar</strong> — $20. 12 family photos, one per month.</li>
               <li><strong>Custom mug with grandkids\' faces</strong> — $15.</li>
@@ -59,7 +59,7 @@ export default function PhotoPrintAndCards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Holiday card tips</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick a photo by mid-October.</li>
               <li>Order in early November for early-bird discount + comfortable mailing time.</li>
               <li>Look for "free shipping" + "50% off" combo (Shutterfly does this).</li>
@@ -72,7 +72,7 @@ export default function PhotoPrintAndCards() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">Sign up for Shutterfly emails. Wait 1-2 weeks. They send 50% off coupons consistently. NEVER pay full price.</p>
+            <p className="text-base text-muted-foreground">Sign up for Shutterfly emails. Wait 1-2 weeks. They send 50% off coupons consistently. NEVER pay full price.</p>
           </CardContent>
         </Card>
       </main>

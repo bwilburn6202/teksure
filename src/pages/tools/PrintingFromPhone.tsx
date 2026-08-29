@@ -19,7 +19,7 @@ export default function PrintingFromPhone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone — AirPrint</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Make sure printer is AirPrint compatible (most modern printers are).</li>
               <li>Phone + printer on SAME WiFi.</li>
               <li>Open photo, document, email, web page.</li>
@@ -34,7 +34,7 @@ export default function PrintingFromPhone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android — Cloud Print + apps</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Most printers have own app: HP Smart, Canon Print, Epson iPrint, Brother iPrint.</li>
               <li>Download printer app.</li>
               <li>Connect phone + printer to same WiFi.</li>
@@ -47,7 +47,7 @@ export default function PrintingFromPhone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">No printer? Use these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Staples / Office Depot / FedEx</strong> — submit online + pick up.</li>
               <li><strong>Local library</strong> — many print free or 10-25 cents/page.</li>
               <li><strong>Costco Photo Center</strong> — best for large quantity.</li>
@@ -60,7 +60,7 @@ export default function PrintingFromPhone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior printer recommendations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>HP DeskJet 4255e</strong> ($100) — cheap, includes 6 months HP+ ink.</li>
               <li><strong>Brother HL-L2350DW</strong> ($150) — laser. Cheap toner. Best for documents only.</li>
               <li><strong>HP Tango</strong> — small, all-wireless.</li>
@@ -73,7 +73,7 @@ export default function PrintingFromPhone() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Ink subscription</h3>
-            <p className="text-sm text-muted-foreground">HP Instant Ink + Brother Refresh — printer auto-orders ink before you run out. $1-12/mo. Saves dashing to store. Best for seniors who print regularly. Cancel anytime.</p>
+            <p className="text-base text-muted-foreground">HP Instant Ink + Brother Refresh — printer auto-orders ink before you run out. $1-12/mo. Saves dashing to store. Best for seniors who print regularly. Cancel anytime.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,10 +19,10 @@ export default function SeniorEstateApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">FreeWill.com</h2><p>FREE. Make a legal will. Often donates to charity.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Trust &amp; Will</h2><p>$159 will. $599 trust. State-specific. Lawyer-reviewed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Nolo Quicken WillMaker</h2><p>$99/year. Software. Wills + healthcare + financial powers.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to see a lawyer</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Estate over $1 million</li><li>Blended families</li><li>Special needs heirs</li><li>Property in multiple states</li><li>Business ownership</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to see a lawyer</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Estate over $1 million</li><li>Blended families</li><li>Special needs heirs</li><li>Property in multiple states</li><li>Business ownership</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Healthcare directive</h2><p>Free at AARP.org. Or Five Wishes ($5). Tells doctors your wishes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Update every 5 years</h2><p>Or after major life events. Marriage, death, new grandchild.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Tell family where will is stored. Lost wills are useless.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Tell family where will is stored. Lost wills are useless.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

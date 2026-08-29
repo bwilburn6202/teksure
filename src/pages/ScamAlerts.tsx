@@ -437,20 +437,20 @@ export default function ScamAlerts() {
                 <Card className="overflow-hidden rounded-2xl border border-border bg-card hover:border-border/60 transition-all h-full">
                   <CardHeader className="pb-4 border-b border-border/50">
                     <div className="flex items-center gap-3">
-                      <AlertTriangle className="h-5 w-5 text-orange-500 shrink-0" />
+                      <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0" />
                       <CardTitle className="text-lg">{scam.title}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent className="pt-5 space-y-5">
                     <div>
                       <h3 className="font-semibold text-sm flex items-center gap-2 mb-3">
-                        <AlertTriangle className="h-4 w-4 text-orange-500" />
+                        <AlertTriangle className="h-4 w-4 text-warn-foreground" />
                         Red Flags
                       </h3>
                       <ul className="space-y-2">
                         {scam.redFlags.map((flag, i) => (
-                          <li key={i} className="text-sm text-muted-foreground flex gap-2">
-                            <span className="text-orange-500 shrink-0 font-semibold">•</span>
+                          <li key={i} className="text-base text-muted-foreground flex gap-2">
+                            <span className="text-warn-foreground shrink-0 font-semibold">•</span>
                             {flag}
                           </li>
                         ))}
@@ -458,13 +458,13 @@ export default function ScamAlerts() {
                     </div>
                     <div className="pt-2">
                       <h3 className="font-semibold text-sm flex items-center gap-2 mb-3">
-                        <CheckCircle2 className="h-4 w-4 text-green-600" />
+                        <CheckCircle2 className="h-4 w-4 text-success-foreground" />
                         What To Do
                       </h3>
                       <ul className="space-y-2">
                         {scam.whatToDo.map((step, i) => (
-                          <li key={i} className="text-sm text-muted-foreground flex gap-2">
-                            <span className="text-green-600 shrink-0 font-semibold"></span>
+                          <li key={i} className="text-base text-muted-foreground flex gap-2">
+                            <span className="text-success-foreground shrink-0 font-semibold"></span>
                             {step}
                           </li>
                         ))}
@@ -483,7 +483,7 @@ export default function ScamAlerts() {
               <CardContent className="py-6 flex items-start gap-4">
                 <Baby className="h-6 w-6 text-primary shrink-0 mt-1" />
                 <div>
-                  <p className="text-sm font-semibold mb-1">Keeping kids safe online?</p>
+                  <p className="text-base font-semibold mb-1">Keeping kids safe online?</p>
                   <Link to="/safety/parental-controls" className="text-sm text-primary hover:text-primary/80 font-medium transition-colors">
                     Read our Parental Controls Guide →
                   </Link>

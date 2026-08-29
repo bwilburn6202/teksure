@@ -22,7 +22,7 @@ export default function SeniorEmergencySOS() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medical ID on lock screen</h2><p>Anyone can see your medications, allergies, and contacts without unlocking your phone.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Crash detection</h2><p>iPhone 14+ and Pixel 6+ auto-call 911 after a serious crash.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Satellite SOS</h2><p>iPhone 14+ can text 911 even with no cell service. Free for 2+ years.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Practice SOS once. Knowing how to use it removes panic in a real emergency.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Practice SOS once. Knowing how to use it removes panic in a real emergency.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

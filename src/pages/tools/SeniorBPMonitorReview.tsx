@@ -20,9 +20,9 @@ export default function SeniorBPMonitorReview() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Withings BPM Connect</h2><p>$130. Sleek. Beautiful app. Auto-syncs with iPhone Health.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Greater Goods 0604</h2><p>$25. Cheapest reliable choice. Works without app.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">QardioArm</h2><p>$100. Travel-size. Works with Apple Watch.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">How to use</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Sit still 5 minutes first</li><li>Cuff on bare arm</li><li>Arm at heart level</li><li>Take 2 readings, 1 minute apart</li><li>Same time each day</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">How to use</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Sit still 5 minutes first</li><li>Cuff on bare arm</li><li>Arm at heart level</li><li>Take 2 readings, 1 minute apart</li><li>Same time each day</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Insurance coverage</h2><p>Many Medicare Part B plans cover BP monitors with a doctor&apos;s prescription.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Take 2 weeks of readings before doctor visits. Real data beats &ldquo;I felt dizzy.&rdquo;</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Take 2 weeks of readings before doctor visits. Real data beats &ldquo;I felt dizzy.&rdquo;</p></CardContent></Card>
         </div>
       </main>
       <Footer />

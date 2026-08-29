@@ -30,10 +30,10 @@ export default function SecondOpinionApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SecondOpinionApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to get one</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cancer diagnosis.</li>
               <li>Major surgery recommended (heart, joint replacement, spine).</li>
               <li>Rare disease + complex treatment plan.</li>
@@ -58,7 +58,7 @@ export default function SecondOpinionApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance coverage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most major insurance covers 2nd opinion (Medicare, BCBS, Aetna, etc.).</li>
               <li>Some HMOs require referral first — check.</li>
               <li>Cleveland Clinic has insurance partnerships — fully covered for many.</li>
@@ -71,14 +71,14 @@ export default function SecondOpinionApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to ask first doctor</h2>
-            <p className="text-sm">"I want to get a second opinion before this big decision — can you help me transfer my records?" Most doctors RESPECT this — they prefer patients who are confident in the plan. Doctors who get defensive = red flag.</p>
+            <p className="text-base">"I want to get a second opinion before this big decision — can you help me transfer my records?" Most doctors RESPECT this — they prefer patients who are confident in the plan. Doctors who get defensive = red flag.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help finding specialist</h3>
-            <p className="text-sm text-muted-foreground">For rare diseases — NIH Rare Diseases Network is free. ALS Association, American Cancer Society, etc. have nurse hotlines that help find best specialists. State medical society referral lines also free.</p>
+            <p className="text-base text-muted-foreground">For rare diseases — NIH Rare Diseases Network is free. ALS Association, American Cancer Society, etc. have nurse hotlines that help find best specialists. State medical society referral lines also free.</p>
           </CardContent>
         </Card>
       </main>

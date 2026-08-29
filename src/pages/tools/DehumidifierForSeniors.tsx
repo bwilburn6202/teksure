@@ -30,10 +30,10 @@ export default function DehumidifierForSeniors() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function DehumidifierForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Less mold = better breathing.</li>
               <li>Reduces dust mite allergies.</li>
               <li>Eases arthritis pain (humidity worsens).</li>
@@ -56,7 +56,7 @@ export default function DehumidifierForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Basement</strong> — almost always needed.</li>
               <li><strong>Crawl space</strong> — prevents joint rot.</li>
               <li><strong>Bathroom</strong> — after showers.</li>
@@ -70,7 +70,7 @@ export default function DehumidifierForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drainage options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bucket</strong> — empty 1-3x daily. Heavy when full!</li>
               <li><strong>Hose drain</strong> — gravity drain to floor drain.</li>
               <li><strong>Pump drain</strong> — push water uphill.</li>
@@ -83,7 +83,7 @@ export default function DehumidifierForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save energy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Energy Star certified saves 20-30%.</li>
               <li>Run when needed (humidistat).</li>
               <li>Don&apos;t run if AC dehumidifies enough.</li>
@@ -96,7 +96,7 @@ export default function DehumidifierForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When NOT needed</h3>
-            <p className="text-sm text-muted-foreground">Dry climate (Phoenix, Denver) — humidifier needed instead. Test with cheap hygrometer ($10) first. If room consistently 30-50% humidity = no dehumidifier needed. Damp basements + humid summers = essential. Most homes need.</p>
+            <p className="text-base text-muted-foreground">Dry climate (Phoenix, Denver) — humidifier needed instead. Test with cheap hygrometer ($10) first. If room consistently 30-50% humidity = no dehumidifier needed. Damp basements + humid summers = essential. Most homes need.</p>
           </CardContent>
         </Card>
       </main>

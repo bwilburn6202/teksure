@@ -123,18 +123,18 @@ export default function TechBuddySetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Which phones do you each have?</p>
+              <p className="text-base font-semibold mb-3">Which phones do you each have?</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {PAIRS.map(p => (
                   <button key={p.id} onClick={() => setPair(p.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       pair === p.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{p.label}</p>
+                    <p className="font-medium text-base">{p.label}</p>
                   </button>
                 ))}
               </div>
-              <p className="text-xs text-muted-foreground mt-3">
+              <p className="text-sm text-muted-foreground mt-3">
                 Most steps work for any pair. We will note the differences.
               </p>
             </CardContent>
@@ -150,14 +150,14 @@ export default function TechBuddySetup() {
                   </div>
                   <div>
                     <h2 className="text-xl font-bold">{b.title}</h2>
-                    <p className="text-xs text-muted-foreground italic">Who does this: {b.who}</p>
+                    <p className="text-sm text-muted-foreground italic">Who does this: {b.who}</p>
                   </div>
                 </div>
                 <Card className="border-border">
                   <CardContent className="p-5">
                     <ol className="space-y-3">
                       {b.steps.map((s, i) => (
-                        <li key={i} className="flex gap-3 text-sm">
+                        <li key={i} className="flex gap-3 text-base">
                           <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                           <div>
                             <p className="font-semibold">{s.title}</p>
@@ -174,8 +174,8 @@ export default function TechBuddySetup() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A weekly call works better than ad-hoc</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A weekly call works better than ad-hoc</p>
+              <p className="text-sm text-muted-foreground">
                 Pick a day. "Sunday 5pm tech check-in" for 15 minutes. The senior writes down questions during the week; the buddy answers them in one short call. Both feel less burdened than scattered texts.
               </p>
             </CardContent>
@@ -187,20 +187,20 @@ export default function TechBuddySetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/family-tech-roundtable" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Family Tech Roundtable</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Plan tech help with the whole family.</p>
+                <p className="font-medium text-base">Family Tech Roundtable</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Plan tech help with the whole family.</p>
               </Link>
               <Link to="/tools/fall-detection-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Fall Detection Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Watch / pendant for emergencies.</p>
+                <p className="font-medium text-base">Fall Detection Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Watch / pendant for emergencies.</p>
               </Link>
               <Link to="/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Grandparent Device Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Set up the senior\'s tablet right.</p>
+                <p className="font-medium text-base">Grandparent Device Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Set up the senior\'s tablet right.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: a single buddy beats a "tech committee". Knowing who to call first removes 80% of the stress.
           </p>
         </div>

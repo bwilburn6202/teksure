@@ -18,11 +18,11 @@ export default function SeniorLowCarbCooking() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Diet Doctor app</h2><p>$10/month. Best low-carb recipe app. Tested for blood sugar.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Carb Manager</h2><p>FREE. Logs every meal. Auto-tracks carbs.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best swaps</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Cauliflower rice instead of white rice</li><li>Zucchini noodles instead of pasta</li><li>Greek yogurt instead of sour cream</li><li>Almond flour instead of wheat flour</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best swaps</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Cauliflower rice instead of white rice</li><li>Zucchini noodles instead of pasta</li><li>Greek yogurt instead of sour cream</li><li>Almond flour instead of wheat flour</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Read labels</h2><p>Total carbs &minus; fiber = net carbs. Track net carbs.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Plate method</h2><p>1/2 plate vegetables. 1/4 protein. 1/4 carbs. Easy guide.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefit</h2><p>Studies show 20-30% A1C reduction with consistent low-carb.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Eggs and avocado are senior diabetic favorites. Filling, no spike.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Eggs and avocado are senior diabetic favorites. Filling, no spike.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

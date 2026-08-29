@@ -19,7 +19,7 @@ export default function AmtrakForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior 10% off</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>10% off all Amtrak fares for 65+.</li>
               <li>Apply online when booking.</li>
               <li>Show ID at boarding.</li>
@@ -32,7 +32,7 @@ export default function AmtrakForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior love Amtrak</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NO TSA hassle — show up 30 min before.</li>
               <li>Generous luggage allowance.</li>
               <li>Walk around train (vs locked airplane seat).</li>
@@ -48,7 +48,7 @@ export default function AmtrakForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best senior routes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>California Zephyr</strong> — Chicago to SF. Most beautiful US route.</li>
               <li><strong>Empire Builder</strong> — Chicago to Seattle.</li>
               <li><strong>Coast Starlight</strong> — Seattle to LA.</li>
@@ -62,7 +62,7 @@ export default function AmtrakForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sleeper rooms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Roomette</strong> — 1-2 people, $200-500.</li>
               <li><strong>Bedroom</strong> — full bathroom, $400-1,200.</li>
               <li>Includes ALL meals + service.</li>
@@ -76,7 +76,7 @@ export default function AmtrakForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reserve 6+ months ahead for popular trains.</li>
               <li>Choose lower berth in sleeper (no climbing).</li>
               <li>Bring power strip for plugs.</li>
@@ -90,7 +90,7 @@ export default function AmtrakForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Train alternatives</h3>
-            <p className="text-sm text-muted-foreground"><strong>Rocky Mountaineer</strong> (Canada) — luxury train, expensive. <strong>Eurail Pass</strong> — train across Europe. <strong>JR Pass</strong> — Japan. <strong>Indian Pacific</strong> — Australia. Train travel = senior favorite. Slower but soulful.</p>
+            <p className="text-base text-muted-foreground"><strong>Rocky Mountaineer</strong> (Canada) — luxury train, expensive. <strong>Eurail Pass</strong> — train across Europe. <strong>JR Pass</strong> — Japan. <strong>Indian Pacific</strong> — Australia. Train travel = senior favorite. Slower but soulful.</p>
           </CardContent>
         </Card>
       </main>

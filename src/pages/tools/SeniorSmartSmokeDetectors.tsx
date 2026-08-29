@@ -22,7 +22,7 @@ export default function SeniorSmartSmokeDetectors() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why &ldquo;smart&rdquo;</h2><p>Old detectors only beep. Smart ones text family if smoke detected and you don&apos;t respond.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">CO is critical for seniors</h2><p>Carbon monoxide kills silently. Required by law in most states.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free options</h2><p>Many fire departments give free detectors to seniors. Call yours.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Test monthly. Replace every 10 years even if it still beeps.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Test monthly. Replace every 10 years even if it still beeps.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -367,7 +367,7 @@ export default function SubscriptionCostAggregator() {
             <div className="flex items-start justify-between gap-4 mb-4">
               <div className="flex items-center gap-3">
                 <div className="h-14 w-14 rounded-2xl bg-amber-500/20 dark:bg-amber-500/30 flex items-center justify-center flex-shrink-0 ring-2 ring-amber-500/30">
-                  <DollarSign className="h-7 w-7 text-amber-700 dark:text-amber-300" aria-hidden="true" />
+                  <DollarSign className="h-7 w-7 text-warn-foreground " aria-hidden="true" />
                 </div>
                 <Badge variant="secondary" className="bg-white/80 dark:bg-black/30">Free Calculator</Badge>
               </div>
@@ -409,7 +409,7 @@ export default function SubscriptionCostAggregator() {
                   <div className="space-y-4 py-2">
                     {/* Name w/ autocomplete */}
                     <div className="relative">
-                      <label htmlFor="sub-name" className="text-sm font-medium mb-1.5 block">
+                      <label htmlFor="sub-name" className="text-base font-medium mb-1.5 block">
                         Subscription name
                       </label>
                       <Input
@@ -434,7 +434,7 @@ export default function SubscriptionCostAggregator() {
                               className="w-full text-left px-3 py-2.5 hover:bg-muted flex items-center justify-between gap-3 border-b last:border-b-0"
                             >
                               <span className="text-base font-medium">{k.name}</span>
-                              <span className="text-sm text-muted-foreground">
+                              <span className="text-base text-muted-foreground">
                                 {formatMoney(k.cost)}/mo
                               </span>
                             </button>
@@ -445,7 +445,7 @@ export default function SubscriptionCostAggregator() {
 
                     {/* Cost */}
                     <div>
-                      <label htmlFor="sub-cost" className="text-sm font-medium mb-1.5 block">
+                      <label htmlFor="sub-cost" className="text-base font-medium mb-1.5 block">
                         Monthly cost (USD)
                       </label>
                       <Input
@@ -459,14 +459,14 @@ export default function SubscriptionCostAggregator() {
                         value={formCost}
                         onChange={(e) => setFormCost(e.target.value)}
                       />
-                      <p className="text-xs text-muted-foreground mt-1">
+                      <p className="text-sm text-muted-foreground mt-1">
                         If it's billed annually, divide by 12 (e.g. $60/yr → 5).
                       </p>
                     </div>
 
                     {/* Category */}
                     <div>
-                      <label className="text-sm font-medium mb-1.5 block">Category</label>
+                      <label className="text-base font-medium mb-1.5 block">Category</label>
                       <Select value={formCategory} onValueChange={(v) => setFormCategory(v as Category)}>
                         <SelectTrigger className="min-h-14 text-base">
                           <SelectValue />
@@ -483,7 +483,7 @@ export default function SubscriptionCostAggregator() {
 
                     {/* Last used */}
                     <div>
-                      <label className="text-sm font-medium mb-1.5 block">
+                      <label className="text-base font-medium mb-1.5 block">
                         When did you last use it?
                       </label>
                       <Select value={formFrequency} onValueChange={(v) => setFormFrequency(v as Frequency)}>
@@ -500,7 +500,7 @@ export default function SubscriptionCostAggregator() {
                     </div>
 
                     {formError && (
-                      <p className="text-sm text-destructive" role="alert">{formError}</p>
+                      <p className="text-base text-destructive" role="alert">{formError}</p>
                     )}
                   </div>
 
@@ -541,10 +541,10 @@ export default function SubscriptionCostAggregator() {
 
           {/* Empty state */}
           {subs.length === 0 && (
-            <Card className="border-2 border-dashed border-amber-300 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-950/10">
+            <Card className="border-2 border-dashed border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/10">
               <CardContent className="py-12 text-center">
-                <div className="mx-auto h-16 w-16 rounded-2xl bg-amber-100 dark:bg-amber-900/40 flex items-center justify-center mb-4">
-                  <PiggyBank className="h-8 w-8 text-amber-700 dark:text-amber-300" aria-hidden="true" />
+                <div className="mx-auto h-16 w-16 rounded-2xl bg-warn flex items-center justify-center mb-4">
+                  <PiggyBank className="h-8 w-8 text-warn-foreground " aria-hidden="true" />
                 </div>
                 <h2 className="text-xl font-semibold mb-2">No subscriptions yet</h2>
                 <p className="text-base text-muted-foreground max-w-md mx-auto mb-6">
@@ -590,13 +590,13 @@ export default function SubscriptionCostAggregator() {
                                   <Badge variant="destructive" className="text-xs">Not using</Badge>
                                 )}
                               </div>
-                              <p className="text-sm text-muted-foreground">
+                              <p className="text-base text-muted-foreground">
                                 {meta.label} · {FREQUENCY_LABEL[s.lastUsed]}
                               </p>
                             </div>
                             <div className="text-right">
                               <p className="font-semibold text-base">{formatMoney(s.cost)}/mo</p>
-                              <p className="text-xs text-muted-foreground">{formatMoney(s.cost * 12)}/yr</p>
+                              <p className="text-sm text-muted-foreground">{formatMoney(s.cost * 12)}/yr</p>
                             </div>
                             <Button
                               variant="ghost"
@@ -625,8 +625,8 @@ export default function SubscriptionCostAggregator() {
                         return (
                           <div key={cat}>
                             <div className="flex justify-between items-center mb-1.5">
-                              <span className="text-sm font-medium">{meta.label}</span>
-                              <span className="text-sm font-semibold">
+                              <span className="text-base font-medium">{meta.label}</span>
+                              <span className="text-base font-semibold">
                                 {formatMoney(total)}/mo · {formatMoney(total * 12)}/yr
                               </span>
                             </div>
@@ -645,15 +645,15 @@ export default function SubscriptionCostAggregator() {
 
                 {/* Red flags */}
                 {redFlags.length > 0 && (
-                  <Card className="border-2 border-red-300 dark:border-red-900/60 bg-red-50/50 dark:bg-red-950/20">
+                  <Card className="border-2 border-danger-foreground/25 bg-red-50/50 dark:bg-red-950/20">
                     <CardContent className="p-5">
                       <div className="flex items-start gap-3 mb-4">
-                        <Flag className="h-5 w-5 text-red-600 dark:text-red-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                        <Flag className="h-5 w-5 text-danger-foreground mt-0.5 flex-shrink-0" aria-hidden="true" />
                         <div>
-                          <h3 className="text-lg font-semibold text-red-900 dark:text-red-200">
+                          <h3 className="text-lg font-semibold text-danger-foreground ">
                             Red flags — consider cancelling
                           </h3>
-                          <p className="text-sm text-red-900/80 dark:text-red-200/80">
+                          <p className="text-base text-red-900/80 dark:text-red-200/80">
                             You haven't used these in 3+ months. That's {formatMoney(redFlags.reduce((a, b) => a + b.cost, 0))}/mo
                             going out the door for nothing.
                           </p>
@@ -663,10 +663,10 @@ export default function SubscriptionCostAggregator() {
                         {redFlags.map((s) => {
                           const known = findKnown(s.name);
                           return (
-                            <li key={s.id} className="flex items-center justify-between gap-3 bg-white dark:bg-red-950/30 rounded-lg p-3 border border-red-200 dark:border-red-900/50">
+                            <li key={s.id} className="flex items-center justify-between gap-3 bg-card rounded-lg p-3 border border-danger-foreground/25 ">
                               <div className="min-w-0">
                                 <p className="font-medium">{s.name}</p>
-                                <p className="text-sm text-muted-foreground">
+                                <p className="text-base text-muted-foreground">
                                   {formatMoney(s.cost * 12)}/year wasted
                                 </p>
                               </div>
@@ -675,13 +675,13 @@ export default function SubscriptionCostAggregator() {
                                   href={known.cancelUrl}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="inline-flex items-center gap-1.5 text-sm font-medium text-red-700 dark:text-red-300 hover:underline min-h-11 px-2"
+                                  className="inline-flex items-center gap-1.5 text-sm font-medium text-danger-foreground hover:underline min-h-11 px-2"
                                 >
                                   Cancel now
                                   <ExternalLink className="h-4 w-4" aria-hidden="true" />
                                 </a>
                               ) : (
-                                <span className="text-xs text-muted-foreground max-w-[180px] text-right">
+                                <span className="text-sm text-muted-foreground max-w-[180px] text-right">
                                   {known?.cancelNote ?? 'Check their website to cancel.'}
                                 </span>
                               )}
@@ -695,15 +695,15 @@ export default function SubscriptionCostAggregator() {
 
                 {/* Streaming overlap */}
                 {streamingOverlap.length >= 3 && (
-                  <Card className="border-amber-200 dark:border-amber-900/50 bg-amber-50 dark:bg-amber-950/20">
+                  <Card className="border-warn-foreground/25 bg-warn ">
                     <CardContent className="p-5">
                       <div className="flex items-start gap-3">
-                        <AlertTriangle className="h-5 w-5 text-amber-600 dark:text-amber-400 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                        <AlertTriangle className="h-5 w-5 text-warn-foreground mt-0.5 flex-shrink-0" aria-hidden="true" />
                         <div>
-                          <h3 className="text-lg font-semibold text-amber-900 dark:text-amber-200 mb-1">
+                          <h3 className="text-lg font-semibold text-warn-foreground mb-1">
                             Streaming overlap alert
                           </h3>
-                          <p className="text-sm text-amber-900/90 dark:text-amber-100/90">
+                          <p className="text-base text-amber-900/90 dark:text-amber-100/90">
                             You have {streamingOverlap.length} video streaming services: {streamingOverlap.join(', ')}.
                             Consider <strong>rotating</strong> — keep one for a month, cancel, then switch to another. You'd still see everything, at a fraction of the cost.
                           </p>
@@ -717,13 +717,13 @@ export default function SubscriptionCostAggregator() {
                 <Card>
                   <CardContent className="p-5">
                     <div className="flex items-start gap-3">
-                      <Repeat className="h-5 w-5 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                      <Repeat className="h-5 w-5 text-warn-foreground mt-0.5 flex-shrink-0" aria-hidden="true" />
                       <div>
                         <h3 className="text-lg font-semibold mb-2">The rotation strategy</h3>
                         <p className="text-base text-muted-foreground mb-3">
                           Instead of paying for 5 streaming services at once, binge one for a month, cancel it, then sign up for another. Most services let you resume your watchlist later.
                         </p>
-                        <ol className="text-sm text-muted-foreground space-y-1.5 list-decimal list-inside">
+                        <ol className="text-base text-muted-foreground space-y-1.5 list-decimal list-inside">
                           <li>Pick one service and watch everything you wanted to see.</li>
                           <li>Cancel before the next billing cycle.</li>
                           <li>Sign up for a different one next month.</li>
@@ -738,30 +738,30 @@ export default function SubscriptionCostAggregator() {
                 <Card>
                   <CardContent className="p-5">
                     <div className="flex items-start gap-3 mb-3">
-                      <Library className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                      <Library className="h-5 w-5 text-success-foreground mt-0.5 flex-shrink-0" aria-hidden="true" />
                       <div>
                         <h3 className="text-lg font-semibold">Free alternatives worth knowing</h3>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           Many paid services have strong free equivalents.
                         </p>
                       </div>
                     </div>
                     <div className="grid sm:grid-cols-2 gap-3 mt-4">
                       <div className="rounded-lg border p-3">
-                        <p className="text-sm font-medium">Kindle Unlimited</p>
-                        <p className="text-sm text-muted-foreground">→ Libby (from your public library). Totally free.</p>
+                        <p className="text-base font-medium">Kindle Unlimited</p>
+                        <p className="text-base text-muted-foreground">→ Libby (from your public library). Totally free.</p>
                       </div>
                       <div className="rounded-lg border p-3">
-                        <p className="text-sm font-medium">Netflix / Hulu</p>
-                        <p className="text-sm text-muted-foreground">→ Pluto TV + Tubi + Freevee. Ad-supported but free.</p>
+                        <p className="text-base font-medium">Netflix / Hulu</p>
+                        <p className="text-base text-muted-foreground">→ Pluto TV + Tubi + Freevee. Ad-supported but free.</p>
                       </div>
                       <div className="rounded-lg border p-3">
-                        <p className="text-sm font-medium">New York Times</p>
-                        <p className="text-sm text-muted-foreground">→ Your public library (NYT digital often free with a card).</p>
+                        <p className="text-base font-medium">New York Times</p>
+                        <p className="text-base text-muted-foreground">→ Your public library (NYT digital often free with a card).</p>
                       </div>
                       <div className="rounded-lg border p-3">
-                        <p className="text-sm font-medium">Audible</p>
-                        <p className="text-sm text-muted-foreground">→ Libby audiobooks, LibriVox, Hoopla.</p>
+                        <p className="text-base font-medium">Audible</p>
+                        <p className="text-base text-muted-foreground">→ Libby audiobooks, LibriVox, Hoopla.</p>
                       </div>
                     </div>
                     <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t">
@@ -788,10 +788,10 @@ export default function SubscriptionCostAggregator() {
                 <Card>
                   <CardContent className="p-5">
                     <div className="flex items-start gap-3 mb-4">
-                      <ExternalLink className="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                      <ExternalLink className="h-5 w-5 text-info-foreground mt-0.5 flex-shrink-0" aria-hidden="true" />
                       <div>
                         <h3 className="text-lg font-semibold">Cancel it now</h3>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           Direct links to cancellation pages for the services on your list.
                         </p>
                       </div>
@@ -802,7 +802,7 @@ export default function SubscriptionCostAggregator() {
                           <div className="min-w-0">
                             <p className="font-medium">{sub.name}</p>
                             {cancelNote && (
-                              <p className="text-sm text-muted-foreground">{cancelNote}</p>
+                              <p className="text-base text-muted-foreground">{cancelNote}</p>
                             )}
                           </div>
                           {cancelUrl ? (
@@ -810,13 +810,13 @@ export default function SubscriptionCostAggregator() {
                               href={cancelUrl}
                               target="_blank"
                               rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1.5 text-sm font-medium text-blue-600 hover:underline min-h-11 px-2 flex-shrink-0"
+                              className="inline-flex items-center gap-1.5 text-sm font-medium text-info-foreground hover:underline min-h-11 px-2 flex-shrink-0"
                             >
                               Cancel page
                               <ExternalLink className="h-4 w-4" aria-hidden="true" />
                             </a>
                           ) : !cancelNote ? (
-                            <span className="text-xs text-muted-foreground flex-shrink-0">
+                            <span className="text-sm text-muted-foreground flex-shrink-0">
                               Check their website
                             </span>
                           ) : null}
@@ -826,22 +826,22 @@ export default function SubscriptionCostAggregator() {
                     <div className="mt-4 pt-4 border-t text-sm text-muted-foreground space-y-1">
                       <p className="font-medium text-foreground mb-1">Catch-all cancellation spots:</p>
                       <p>Apple (iPhone): Settings → Apple ID → Subscriptions</p>
-                      <p>Google Play: <a className="text-blue-600 hover:underline" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener noreferrer">play.google.com/store/account/subscriptions</a></p>
-                      <p>Amazon: <a className="text-blue-600 hover:underline" href="https://www.amazon.com/yourmemberships" target="_blank" rel="noopener noreferrer">amazon.com/yourmemberships</a></p>
+                      <p>Google Play: <a className="text-info-foreground hover:underline" href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener noreferrer">play.google.com/store/account/subscriptions</a></p>
+                      <p>Amazon: <a className="text-info-foreground hover:underline" href="https://www.amazon.com/yourmemberships" target="_blank" rel="noopener noreferrer">amazon.com/yourmemberships</a></p>
                     </div>
                   </CardContent>
                 </Card>
 
                 {/* Recurring charge scam warnings */}
-                <Card className="border-amber-200 dark:border-amber-900/50">
+                <Card className="border-warn-foreground/25 ">
                   <CardContent className="p-5">
                     <div className="flex items-start gap-3 mb-3">
-                      <ShieldAlert className="h-5 w-5 text-amber-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                      <ShieldAlert className="h-5 w-5 text-warn-foreground mt-0.5 flex-shrink-0" aria-hidden="true" />
                       <div>
                         <h3 className="text-lg font-semibold">Watch for recurring-charge scams</h3>
                       </div>
                     </div>
-                    <ul className="space-y-3 text-sm">
+                    <ul className="space-y-3 text-base">
                       <li>
                         <p className="font-medium">The "dormant subscription" trick</p>
                         <p className="text-muted-foreground">
@@ -873,15 +873,15 @@ export default function SubscriptionCostAggregator() {
                 <Card>
                   <CardContent className="p-5">
                     <div className="flex items-start gap-3 mb-3">
-                      <Users className="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" aria-hidden="true" />
+                      <Users className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" aria-hidden="true" />
                       <div>
                         <h3 className="text-lg font-semibold">Family account & sharing</h3>
                       </div>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-3">
+                    <p className="text-base text-muted-foreground mb-3">
                       Sharing one account across a household can save hundreds a year — but the rules matter.
                     </p>
-                    <ul className="text-sm text-muted-foreground space-y-2">
+                    <ul className="text-base text-muted-foreground space-y-2">
                       <li>
                         <strong className="text-foreground">Family plans are fair game.</strong> Apple One Family, Spotify Duo/Family, YouTube Premium Family, Amazon Household — these exist for this exact purpose.
                       </li>
@@ -902,25 +902,25 @@ export default function SubscriptionCostAggregator() {
                     <div className="space-y-5">
                       <div>
                         <p className="font-medium mb-1">How do I find all my subscriptions?</p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           The most reliable method: pull the last 3 months of your bank and credit card statements. Search for "monthly," "auto pay," "renewal," and ".com". Write down anything that repeats.
                         </p>
                       </div>
                       <div>
                         <p className="font-medium mb-1">Am I missing some?</p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           Probably yes. Commonly forgotten: church tithing auto-debit, charity monthly gifts, gym annual fees (billed once a year), cell-phone insurance, in-app subscriptions on the App Store, warranty renewals, cloud backup for an old phone.
                         </p>
                       </div>
                       <div>
                         <p className="font-medium mb-1">What's a good target?</p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           There's no one right answer, but most financial advisors suggest keeping non-essential subscriptions under 2–3% of take-home pay. If your total is a big surprise, that's the signal to prune.
                         </p>
                       </div>
                       <div>
                         <p className="font-medium mb-1">Auto-renew keeps catching me off guard — what do I do?</p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           Put each renewal date in your phone calendar with a 3-day warning. For free trials, cancel the moment you sign up — you keep access through the end of the trial, but the auto-renew is disabled.
                         </p>
                       </div>
@@ -932,25 +932,25 @@ export default function SubscriptionCostAggregator() {
               {/* Right column — sticky summary */}
               <aside className="lg:sticky lg:top-6 space-y-4">
                 {/* Big totals */}
-                <Card className="border-2 border-amber-300 dark:border-amber-800 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/40 dark:to-orange-950/30">
+                <Card className="border-2 border-warn-foreground/25 bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-950/40 dark:to-orange-950/30">
                   <CardContent className="p-6">
                     <p className="text-sm font-medium text-amber-900/70 dark:text-amber-200/70 uppercase tracking-wide">
                       Total per month
                     </p>
-                    <p className="text-5xl font-bold tracking-tight text-amber-900 dark:text-amber-100 my-1">
+                    <p className="text-5xl font-bold tracking-tight text-warn-foreground my-1">
                       {formatMoney(monthlyTotal)}
                     </p>
                     <div className="border-t border-amber-300/50 dark:border-amber-800/50 my-4" />
                     <p className="text-sm font-medium text-amber-900/70 dark:text-amber-200/70 uppercase tracking-wide">
                       Total per year
                     </p>
-                    <p className="text-4xl font-bold tracking-tight text-amber-900 dark:text-amber-100 my-1">
+                    <p className="text-4xl font-bold tracking-tight text-warn-foreground my-1">
                       {formatMoney(annualTotal)}
                     </p>
                     <div className="border-t border-amber-300/50 dark:border-amber-800/50 my-4" />
                     <div className="flex items-start gap-2">
-                      <Plane className="h-4 w-4 mt-1 flex-shrink-0 text-amber-700 dark:text-amber-300" aria-hidden="true" />
-                      <p className="text-sm text-amber-900/90 dark:text-amber-100/90">
+                      <Plane className="h-4 w-4 mt-1 flex-shrink-0 text-warn-foreground " aria-hidden="true" />
+                      <p className="text-base text-amber-900/90 dark:text-amber-100/90">
                         <strong>Hidden cost:</strong> {formatMoney(annualTotal)}/yr could fund{' '}
                         {annualTotal >= 1500
                           ? 'a week-long vacation'
@@ -969,10 +969,10 @@ export default function SubscriptionCostAggregator() {
                   <Card>
                     <CardContent className="p-5">
                       <div className="flex items-start gap-2 mb-2">
-                        <Coffee className="h-4 w-4 mt-0.5 text-amber-600" aria-hidden="true" />
+                        <Coffee className="h-4 w-4 mt-0.5 text-warn-foreground" aria-hidden="true" />
                         <h4 className="font-semibold text-sm">Cost perspective</h4>
                       </div>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         At <strong className="text-foreground">{formatMoney(annualTotal)}</strong>/year,
                         that's about <strong className="text-foreground">{Math.round(annualTotal / 5)}</strong> cups
                         of coffee or <strong className="text-foreground">{Math.round(annualTotal / 15)}</strong> lunches.
@@ -981,13 +981,13 @@ export default function SubscriptionCostAggregator() {
                   </Card>
                 )}
 
-                <Card className="border-amber-200 dark:border-amber-900/50 bg-amber-50/50 dark:bg-amber-950/10">
+                <Card className="border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/10">
                   <CardContent className="p-5">
                     <div className="flex items-start gap-2">
-                      <TrendingDown className="h-4 w-4 mt-0.5 text-emerald-600" aria-hidden="true" />
+                      <TrendingDown className="h-4 w-4 mt-0.5 text-success-foreground" aria-hidden="true" />
                       <div>
-                        <p className="text-sm font-semibold mb-1">Quick Tip</p>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base font-semibold mb-1">Quick Tip</p>
+                        <p className="text-base text-muted-foreground">
                           If you cancel {redFlags.length > 0 ? 'the red-flagged subscriptions' : 'one $15/mo service'},
                           you'd save {redFlags.length > 0
                             ? formatMoney(redFlags.reduce((a, b) => a + b.cost, 0) * 12)

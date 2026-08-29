@@ -22,7 +22,7 @@ export default function SeniorAppleSupport() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Aging in Place</h2><p>FREE 1-on-1 sessions. Apple specialists help seniors with iPhone setup.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AppleCare+</h2><p>$10/month for iPhone. Worth it for accidents (drops, water).</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Phone</h2><p>1-800-APL-CARE. US-based support. Patient with seniors.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Book Genius Bar 1 week ahead. Slots fill fast.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Book Genius Bar 1 week ahead. Slots fill fast.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

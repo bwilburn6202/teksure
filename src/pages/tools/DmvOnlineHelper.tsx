@@ -712,12 +712,12 @@ function YesNoRow({ label, value }: { label: string; value: boolean }) {
     <div className="flex items-start justify-between gap-3 py-2.5 border-b border-border/60 last:border-b-0">
       <span className="text-base leading-relaxed">{label}</span>
       {value ? (
-        <Badge className="bg-green-50 text-green-700 border-green-200 hover:bg-green-50 shrink-0">
+        <Badge className="bg-success text-success-foreground border-success-foreground/25 hover:bg-success shrink-0">
           <CheckCircle2 className="w-4 h-4 mr-1" aria-hidden="true" />
           Online
         </Badge>
       ) : (
-        <Badge variant="outline" className="bg-rose-50 text-rose-700 border-rose-200 shrink-0">
+        <Badge variant="outline" className="bg-danger text-danger-foreground border-danger-foreground/25 shrink-0">
           <XCircle className="w-4 h-4 mr-1" aria-hidden="true" />
           In person
         </Badge>
@@ -769,7 +769,7 @@ export default function DmvOnlineHelper() {
               />
             </div>
             <div className="flex items-center gap-2 mb-4">
-              <Car className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+              <Car className="w-5 h-5 text-info-foreground " />
               <Badge variant="outline" className="text-xs">
                 Everyday Tech · Government
               </Badge>
@@ -793,7 +793,7 @@ export default function DmvOnlineHelper() {
         <section className="container py-10 md:py-14">
           <div className="max-w-3xl mx-auto">
             <div className="flex items-center gap-2 mb-3">
-              <MapPin className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+              <MapPin className="w-5 h-5 text-info-foreground " />
               <h2 className="text-2xl md:text-3xl font-semibold">Pick your state</h2>
             </div>
             <p className="text-base md:text-lg text-muted-foreground mb-5 leading-relaxed">
@@ -815,8 +815,8 @@ export default function DmvOnlineHelper() {
             </Select>
 
             {!selectedState && (
-              <Alert className="mt-6 border-sky-200 bg-sky-50/60 dark:bg-sky-950/30">
-                <Info className="h-5 w-5 text-sky-700 dark:text-sky-300" />
+              <Alert className="mt-6 border-info-foreground/25 bg-sky-50/60 dark:bg-sky-950/30">
+                <Info className="h-5 w-5 text-info-foreground " />
                 <AlertTitle className="text-base">Tip</AlertTitle>
                 <AlertDescription className="text-base leading-relaxed">
                   Only the state that issued your license can renew it. If you've moved, you must
@@ -877,8 +877,8 @@ export default function DmvOnlineHelper() {
                       {selectedState.extraNotes && (
                         <div className="mt-5 space-y-2">
                           {selectedState.extraNotes.map((n, i) => (
-                            <Alert key={i} className="border-sky-200 bg-sky-50/60 dark:bg-sky-950/30">
-                              <Info className="h-5 w-5 text-sky-700 dark:text-sky-300" />
+                            <Alert key={i} className="border-info-foreground/25 bg-sky-50/60 dark:bg-sky-950/30">
+                              <Info className="h-5 w-5 text-info-foreground " />
                               <AlertDescription className="text-base leading-relaxed">{n}</AlertDescription>
                             </Alert>
                           ))}
@@ -891,7 +891,7 @@ export default function DmvOnlineHelper() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <Card>
                           <CardContent className="p-5">
-                            <div className="flex items-center gap-2 mb-2 text-sky-700 dark:text-sky-300">
+                            <div className="flex items-center gap-2 mb-2 text-info-foreground ">
                               <Users className="w-5 h-5" />
                               <div className="font-semibold">In-person required at age</div>
                             </div>
@@ -902,7 +902,7 @@ export default function DmvOnlineHelper() {
                         </Card>
                         <Card>
                           <CardContent className="p-5">
-                            <div className="flex items-center gap-2 mb-2 text-sky-700 dark:text-sky-300">
+                            <div className="flex items-center gap-2 mb-2 text-info-foreground ">
                               <Eye className="w-5 h-5" />
                               <div className="font-semibold">Vision test starting at</div>
                             </div>
@@ -914,7 +914,7 @@ export default function DmvOnlineHelper() {
                       </div>
                       <div>
                         <div className="font-semibold mb-1 flex items-center gap-2">
-                          <CalendarClock className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+                          <CalendarClock className="w-5 h-5 text-info-foreground " />
                           Renewal cycle at older ages
                         </div>
                         <p className="text-base leading-relaxed text-muted-foreground">
@@ -923,7 +923,7 @@ export default function DmvOnlineHelper() {
                       </div>
                       <div>
                         <div className="font-semibold mb-1 flex items-center gap-2">
-                          <HeartPulse className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+                          <HeartPulse className="w-5 h-5 text-info-foreground " />
                           Medical reporting
                         </div>
                         <p className="text-base leading-relaxed text-muted-foreground">
@@ -931,8 +931,8 @@ export default function DmvOnlineHelper() {
                         </p>
                       </div>
                       {selectedState.senior.notes && (
-                        <Alert className="border-amber-200 bg-amber-50/60 dark:bg-amber-950/30">
-                          <Info className="h-5 w-5 text-amber-700 dark:text-amber-300" />
+                        <Alert className="border-warn-foreground/25 bg-amber-50/60 dark:bg-amber-950/30">
+                          <Info className="h-5 w-5 text-warn-foreground " />
                           <AlertDescription className="text-base leading-relaxed">
                             {selectedState.senior.notes}
                           </AlertDescription>
@@ -948,13 +948,13 @@ export default function DmvOnlineHelper() {
                       <ul className="space-y-2">
                         {(selectedState.realIdDocs ?? REAL_ID_GENERIC_DOCS).map((doc, i) => (
                           <li key={i} className="flex gap-3 text-base leading-relaxed">
-                            <FileText className="w-5 h-5 text-sky-700 dark:text-sky-300 mt-0.5 shrink-0" />
+                            <FileText className="w-5 h-5 text-info-foreground mt-0.5 shrink-0" />
                             <span>{doc}</span>
                           </li>
                         ))}
                       </ul>
-                      <Alert className="border-sky-200 bg-sky-50/60 dark:bg-sky-950/30">
-                        <Info className="h-5 w-5 text-sky-700 dark:text-sky-300" />
+                      <Alert className="border-info-foreground/25 bg-sky-50/60 dark:bg-sky-950/30">
+                        <Info className="h-5 w-5 text-info-foreground " />
                         <AlertDescription className="text-base leading-relaxed">
                           If you have a valid U.S. passport, you don't strictly need a REAL ID to fly domestically — you can use the passport at TSA instead.
                         </AlertDescription>
@@ -964,7 +964,7 @@ export default function DmvOnlineHelper() {
                     <TabsContent value="logistics" className="mt-5 space-y-4">
                       <div>
                         <div className="font-semibold mb-2 flex items-center gap-2">
-                          <CreditCard className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+                          <CreditCard className="w-5 h-5 text-info-foreground " />
                           Payment methods accepted online
                         </div>
                         <div className="flex flex-wrap gap-2">
@@ -977,7 +977,7 @@ export default function DmvOnlineHelper() {
                       </div>
                       <div>
                         <div className="font-semibold mb-1 flex items-center gap-2">
-                          <Clock className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+                          <Clock className="w-5 h-5 text-info-foreground " />
                           Typical processing time
                         </div>
                         <p className="text-base leading-relaxed text-muted-foreground">
@@ -987,7 +987,7 @@ export default function DmvOnlineHelper() {
                       {selectedState.paperFormsNote && (
                         <div>
                           <div className="font-semibold mb-1 flex items-center gap-2">
-                            <FileText className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+                            <FileText className="w-5 h-5 text-info-foreground " />
                             Paper forms
                           </div>
                           <p className="text-base leading-relaxed text-muted-foreground">
@@ -1007,7 +1007,7 @@ export default function DmvOnlineHelper() {
         <section className="border-y border-border bg-muted/30">
           <div className="container py-10 md:py-14 max-w-4xl">
             <div className="flex items-center gap-2 mb-3">
-              <ShieldCheck className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+              <ShieldCheck className="w-5 h-5 text-info-foreground " />
               <h2 className="text-2xl md:text-3xl font-semibold">REAL ID: what it is, and what you need</h2>
             </div>
             <p className="text-base md:text-lg text-muted-foreground mb-5 leading-relaxed">
@@ -1021,7 +1021,7 @@ export default function DmvOnlineHelper() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-green-600" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground" />
                     What to bring (originals only)
                   </h3>
                   <ul className="space-y-2 text-base leading-relaxed">
@@ -1035,7 +1035,7 @@ export default function DmvOnlineHelper() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                    <XCircle className="w-5 h-5 text-rose-600" />
+                    <XCircle className="w-5 h-5 text-danger-foreground" />
                     What does NOT count
                   </h3>
                   <ul className="space-y-2 text-base leading-relaxed">
@@ -1049,8 +1049,8 @@ export default function DmvOnlineHelper() {
               </Card>
             </div>
 
-            <Alert className="mt-5 border-sky-200 bg-sky-50/60 dark:bg-sky-950/30">
-              <Info className="h-5 w-5 text-sky-700 dark:text-sky-300" />
+            <Alert className="mt-5 border-info-foreground/25 bg-sky-50/60 dark:bg-sky-950/30">
+              <Info className="h-5 w-5 text-info-foreground " />
               <AlertTitle className="text-base">You don't HAVE to get a REAL ID</AlertTitle>
               <AlertDescription className="text-base leading-relaxed">
                 A valid U.S. passport, passport card, enhanced driver license (EDL in MI, MN, NY, VT, WA),
@@ -1064,7 +1064,7 @@ export default function DmvOnlineHelper() {
         {/* Decision tree */}
         <section className="container py-10 md:py-14 max-w-4xl">
           <div className="flex items-center gap-2 mb-3">
-            <HelpCircle className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+            <HelpCircle className="w-5 h-5 text-info-foreground " />
             <h2 className="text-2xl md:text-3xl font-semibold">"Shouldn't I just go in person?"</h2>
           </div>
           <p className="text-base md:text-lg text-muted-foreground mb-5 leading-relaxed">
@@ -1075,37 +1075,37 @@ export default function DmvOnlineHelper() {
             <CardContent className="p-6 md:p-8">
               <ol className="space-y-4 text-base leading-relaxed">
                 <li className="flex gap-3">
-                  <span className="shrink-0 w-7 h-7 rounded-full bg-rose-100 dark:bg-rose-900/50 text-rose-700 dark:text-rose-200 text-sm font-bold flex items-center justify-center">1</span>
+                  <span className="shrink-0 w-7 h-7 rounded-full bg-danger text-danger-foreground text-sm font-bold flex items-center justify-center">1</span>
                   <div>
                     <strong>Need a REAL ID (first time)?</strong> Go in person. Documents must be verified face-to-face.
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <span className="shrink-0 w-7 h-7 rounded-full bg-rose-100 dark:bg-rose-900/50 text-rose-700 dark:text-rose-200 text-sm font-bold flex items-center justify-center">2</span>
+                  <span className="shrink-0 w-7 h-7 rounded-full bg-danger text-danger-foreground text-sm font-bold flex items-center justify-center">2</span>
                   <div>
                     <strong>Age 80+ and a new photo is required?</strong> Go in person. Most states also want a fresh vision test.
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <span className="shrink-0 w-7 h-7 rounded-full bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-200 text-sm font-bold flex items-center justify-center">3</span>
+                  <span className="shrink-0 w-7 h-7 rounded-full bg-success text-success-foreground text-sm font-bold flex items-center justify-center">3</span>
                   <div>
                     <strong>Address change only?</strong> Usually online. Every state above supports online address change.
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <span className="shrink-0 w-7 h-7 rounded-full bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-200 text-sm font-bold flex items-center justify-center">4</span>
+                  <span className="shrink-0 w-7 h-7 rounded-full bg-success text-success-foreground text-sm font-bold flex items-center justify-center">4</span>
                   <div>
                     <strong>Standard renewal, same address, same photo works?</strong> Online if your state allows — your new card arrives by mail.
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <span className="shrink-0 w-7 h-7 rounded-full bg-rose-100 dark:bg-rose-900/50 text-rose-700 dark:text-rose-200 text-sm font-bold flex items-center justify-center">5</span>
+                  <span className="shrink-0 w-7 h-7 rounded-full bg-danger text-danger-foreground text-sm font-bold flex items-center justify-center">5</span>
                   <div>
                     <strong>Vision or medical concern?</strong> Go in person. Staff can screen and point you to the right forms.
                   </div>
                 </li>
                 <li className="flex gap-3">
-                  <span className="shrink-0 w-7 h-7 rounded-full bg-rose-100 dark:bg-rose-900/50 text-rose-700 dark:text-rose-200 text-sm font-bold flex items-center justify-center">6</span>
+                  <span className="shrink-0 w-7 h-7 rounded-full bg-danger text-danger-foreground text-sm font-bold flex items-center justify-center">6</span>
                   <div>
                     <strong>License suspended, expired over a year, or flagged with issues?</strong> In person. Online will block you.
                   </div>
@@ -1119,7 +1119,7 @@ export default function DmvOnlineHelper() {
         <section className="border-y border-border bg-muted/30">
           <div className="container py-10 md:py-14 max-w-4xl">
             <div className="flex items-center gap-2 mb-3">
-              <HeartPulse className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+              <HeartPulse className="w-5 h-5 text-info-foreground " />
               <h2 className="text-2xl md:text-3xl font-semibold">Thinking about when to stop driving</h2>
             </div>
             <p className="text-base md:text-lg text-muted-foreground mb-5 leading-relaxed">
@@ -1146,7 +1146,7 @@ export default function DmvOnlineHelper() {
                   <h3 className="font-semibold text-lg mb-2">Alternatives that keep you moving</h3>
                   <ul className="space-y-2 text-base leading-relaxed">
                     <li>
-                      <Link to="/tools/rideshare-setup" className="text-sky-700 dark:text-sky-300 underline underline-offset-2">
+                      <Link to="/tools/rideshare-setup" className="text-info-foreground underline underline-offset-2">
                         Rideshare setup (Uber, Lyft, GoGoGrandparent)
                       </Link>
                     </li>
@@ -1159,8 +1159,8 @@ export default function DmvOnlineHelper() {
               </Card>
             </div>
 
-            <Alert className="mt-5 border-sky-200 bg-sky-50/60 dark:bg-sky-950/30">
-              <Info className="h-5 w-5 text-sky-700 dark:text-sky-300" />
+            <Alert className="mt-5 border-info-foreground/25 bg-sky-50/60 dark:bg-sky-950/30">
+              <Info className="h-5 w-5 text-info-foreground " />
               <AlertTitle className="text-base">Tools that help you self-assess</AlertTitle>
               <AlertDescription className="text-base leading-relaxed">
                 AAA and AARP offer a free driving self-assessment called Roadwise Review. Most states
@@ -1174,7 +1174,7 @@ export default function DmvOnlineHelper() {
         {/* Motor vehicle scam warnings */}
         <section className="container py-10 md:py-14 max-w-4xl">
           <div className="flex items-center gap-2 mb-3">
-            <ShieldAlert className="w-5 h-5 text-rose-600" />
+            <ShieldAlert className="w-5 h-5 text-danger-foreground" />
             <h2 className="text-2xl md:text-3xl font-semibold">Common motor vehicle scams</h2>
           </div>
           <p className="text-base md:text-lg text-muted-foreground mb-5 leading-relaxed">
@@ -1218,7 +1218,7 @@ export default function DmvOnlineHelper() {
               return (
                 <Card key={i}>
                   <CardContent className="p-5">
-                    <div className="flex items-center gap-2 mb-2 text-rose-600">
+                    <div className="flex items-center gap-2 mb-2 text-danger-foreground">
                       <Icon className="w-5 h-5" />
                       <h3 className="font-semibold text-base">{s.title}</h3>
                     </div>
@@ -1243,34 +1243,34 @@ export default function DmvOnlineHelper() {
         <section className="border-y border-border bg-muted/30">
           <div className="container py-10 md:py-14 max-w-4xl">
             <div className="flex items-center gap-2 mb-3">
-              <AlertTriangle className="w-5 h-5 text-amber-600" />
+              <AlertTriangle className="w-5 h-5 text-warn-foreground" />
               <h2 className="text-2xl md:text-3xl font-semibold">Online renewal pitfalls</h2>
             </div>
             <Card>
               <CardContent className="p-6 md:p-8">
                 <ul className="space-y-3 text-base leading-relaxed">
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground mt-0.5 shrink-0" />
                     Print or save the confirmation page the moment you pay. That's your proof of renewal.
                   </li>
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground mt-0.5 shrink-0" />
                     Note the mail-by or pickup-by date. New licenses usually arrive by mail in 2–4 weeks.
                   </li>
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground mt-0.5 shrink-0" />
                     If you're moving out of state, order certified copies of your birth and marriage certificates ahead. Those are the hardest to replace.
                   </li>
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground mt-0.5 shrink-0" />
                     Check your photo's age — some states require a fresh photo every cycle, which forces an in-person visit.
                   </li>
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground mt-0.5 shrink-0" />
                     Carry a backup photo ID between renewal and arrival. An expired license plus a valid passport is accepted in most settings.
                   </li>
                   <li className="flex gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground mt-0.5 shrink-0" />
                     Your old license works until the new one arrives, unless your state says otherwise.
                   </li>
                 </ul>
@@ -1282,7 +1282,7 @@ export default function DmvOnlineHelper() {
         {/* Appointment prep */}
         <section className="container py-10 md:py-14 max-w-4xl">
           <div className="flex items-center gap-2 mb-3">
-            <CalendarClock className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+            <CalendarClock className="w-5 h-5 text-info-foreground " />
             <h2 className="text-2xl md:text-3xl font-semibold">How to prepare for an in-person appointment</h2>
           </div>
           <p className="text-base md:text-lg text-muted-foreground mb-5 leading-relaxed">
@@ -1307,7 +1307,7 @@ export default function DmvOnlineHelper() {
         <section className="border-y border-border bg-muted/30">
           <div className="container py-10 md:py-14 max-w-4xl">
             <div className="flex items-center gap-2 mb-3">
-              <Stethoscope className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+              <Stethoscope className="w-5 h-5 text-info-foreground " />
               <h2 className="text-2xl md:text-3xl font-semibold">Medical certificate requirements</h2>
             </div>
             <p className="text-base md:text-lg text-muted-foreground mb-5 leading-relaxed">
@@ -1331,7 +1331,7 @@ export default function DmvOnlineHelper() {
         {/* Title transfer */}
         <section className="container py-10 md:py-14 max-w-4xl">
           <div className="flex items-center gap-2 mb-3">
-            <FileText className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+            <FileText className="w-5 h-5 text-info-foreground " />
             <h2 className="text-2xl md:text-3xl font-semibold">Title transfer — selling or gifting a car to family</h2>
           </div>
           <Card>
@@ -1347,8 +1347,8 @@ export default function DmvOnlineHelper() {
                 <li>The buyer pays transfer fees and — in most states — sales tax. Gifts between immediate family members are often exempt from sales tax; check your state's rules.</li>
                 <li>The buyer registers the car under their name and receives a new title in the mail.</li>
               </ol>
-              <Alert className="border-amber-200 bg-amber-50/60 dark:bg-amber-950/30">
-                <AlertTriangle className="h-5 w-5 text-amber-700 dark:text-amber-300" />
+              <Alert className="border-warn-foreground/25 bg-amber-50/60 dark:bg-amber-950/30">
+                <AlertTriangle className="h-5 w-5 text-warn-foreground " />
                 <AlertTitle className="text-base">Keep the insurance running</AlertTitle>
                 <AlertDescription className="text-base leading-relaxed">
                   Do not cancel insurance on the seller's side until the buyer has their own policy in place and the transfer is filed. A gap creates a liability risk for both people.
@@ -1362,7 +1362,7 @@ export default function DmvOnlineHelper() {
         <section className="border-y border-border bg-muted/30">
           <div className="container py-10 md:py-14 max-w-4xl">
             <div className="flex items-center gap-2 mb-3">
-              <HelpCircle className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+              <HelpCircle className="w-5 h-5 text-info-foreground " />
               <h2 className="text-2xl md:text-3xl font-semibold">Frequently asked questions</h2>
             </div>
             <Accordion type="single" collapsible className="w-full">
@@ -1411,7 +1411,7 @@ export default function DmvOnlineHelper() {
                   I can't use a computer — what are my options?
                 </AccordionTrigger>
                 <AccordionContent className="text-base leading-relaxed">
-                  Every state still accepts paper renewal forms by mail, and every state has in-person offices. Your local library, Area Agency on Aging, or a family member can also walk you through the online version on their device. Our <Link to="/tools/rideshare-setup" className="text-sky-700 dark:text-sky-300 underline underline-offset-2">rideshare setup</Link> guide covers how to get to the office without driving.
+                  Every state still accepts paper renewal forms by mail, and every state has in-person offices. Your local library, Area Agency on Aging, or a family member can also walk you through the online version on their device. Our <Link to="/tools/rideshare-setup" className="text-info-foreground underline underline-offset-2">rideshare setup</Link> guide covers how to get to the office without driving.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="q7">
@@ -1443,8 +1443,8 @@ export default function DmvOnlineHelper() {
               >
                 <Card className="h-full hover:shadow-md transition-all">
                   <CardContent className="p-5 flex items-start gap-3">
-                    <div className="h-12 w-12 rounded-xl bg-sky-50 dark:bg-sky-950/40 flex items-center justify-center shrink-0">
-                      <Icon className="h-6 w-6 text-sky-700 dark:text-sky-300" />
+                    <div className="h-12 w-12 rounded-xl bg-info flex items-center justify-center shrink-0">
+                      <Icon className="h-6 w-6 text-info-foreground " />
                     </div>
                     <div>
                       <div className="font-semibold text-base">{title}</div>

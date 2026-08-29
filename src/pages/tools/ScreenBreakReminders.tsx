@@ -30,10 +30,10 @@ export default function ScreenBreakReminders() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function ScreenBreakReminders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to do during breaks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>20-20-20</strong> — look 20 feet away for 20 seconds.</li>
               <li><strong>Stand up</strong> — walk to kitchen, get water.</li>
               <li><strong>Stretch neck + shoulders</strong> — slow circles.</li>
@@ -57,8 +57,8 @@ export default function ScreenBreakReminders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pomodoro for seniors</h2>
-            <p className="text-sm">25 minutes work + 5 min break repeatedly. After 4 cycles, take 30 min long break. Benefits:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">25 minutes work + 5 min break repeatedly. After 4 cycles, take 30 min long break. Benefits:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Save eyes — eyes love every-25-min breaks.</li>
               <li>Save back — gets you up.</li>
               <li>Focus — short blocks beat marathon sessions.</li>
@@ -71,7 +71,7 @@ export default function ScreenBreakReminders() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Movement = brain health</h3>
-            <p className="text-sm text-muted-foreground">Studies show seniors who break sedentary screen time every 30 min have lower dementia risk + better mood. The break isn&apos;t just about eyes — it&apos;s about getting blood flowing to brain. Set ANY reminder. Break the pattern.</p>
+            <p className="text-base text-muted-foreground">Studies show seniors who break sedentary screen time every 30 min have lower dementia risk + better mood. The break isn&apos;t just about eyes — it&apos;s about getting blood flowing to brain. Set ANY reminder. Break the pattern.</p>
           </CardContent>
         </Card>
       </main>

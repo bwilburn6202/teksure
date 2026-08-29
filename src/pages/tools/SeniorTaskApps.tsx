@@ -22,7 +22,7 @@ export default function SeniorTaskApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Microsoft To Do</h2><p>FREE. Best for Outlook users. Daily Suggestions feature.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Location reminders</h2><p>iPhone: &ldquo;Remind me to buy milk when I get to Walmart.&rdquo; Magic.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share lists</h2><p>Share with spouse. Both edit. Saves grocery list arguments.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Add &ldquo;Reminders&rdquo; widget to home screen. See today&apos;s tasks at a glance.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Add &ldquo;Reminders&rdquo; widget to home screen. See today&apos;s tasks at a glance.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function EarwaxRemovalGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors get more earwax</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Glands produce drier wax with age.</li>
               <li>Hair in ear canal traps it.</li>
               <li>Hearing aids push wax deeper.</li>
@@ -32,7 +32,7 @@ export default function EarwaxRemovalGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">NEVER use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cotton swabs (Q-tips) — push wax deeper.</li>
               <li>Ear candles — proven dangerous + ineffective.</li>
               <li>Bobby pins, pencils, fingers.</li>
@@ -44,7 +44,7 @@ export default function EarwaxRemovalGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safe at-home methods</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Debrox drops</strong> — $8. Hydrogen peroxide-based. 5 drops, wait 5 min, drain.</li>
               <li><strong>Mineral oil</strong> — 2-3 drops, soften wax over 2 days.</li>
               <li><strong>Bulb syringe</strong> — warm water rinse after softening.</li>
@@ -57,7 +57,7 @@ export default function EarwaxRemovalGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">See doctor if</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sudden hearing loss.</li>
               <li>Pain, drainage, blood.</li>
               <li>Dizziness or vertigo.</li>
@@ -71,7 +71,7 @@ export default function EarwaxRemovalGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Medicare covers</h3>
-            <p className="text-sm text-muted-foreground">Doctor earwax removal covered by Medicare Part B. ENT specialist visit if blockage severe. Hearing aid users — get cleaned every 6 months. Free at most ENT offices for established patients.</p>
+            <p className="text-base text-muted-foreground">Doctor earwax removal covered by Medicare Part B. ENT specialist visit if blockage severe. Hearing aid users — get cleaned every 6 months. Free at most ENT offices for established patients.</p>
           </CardContent>
         </Card>
       </main>

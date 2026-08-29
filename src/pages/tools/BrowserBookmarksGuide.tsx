@@ -19,7 +19,7 @@ export default function BrowserBookmarksGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why bookmark</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t Google your bank/email each time.</li>
               <li>Bookmarks bypass scammer fake sites.</li>
               <li>Faster access.</li>
@@ -33,7 +33,7 @@ export default function BrowserBookmarksGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to bookmark</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Visit website (your bank, email).</li>
               <li>Click STAR icon in address bar.</li>
               <li>Or Ctrl+D (Windows) / Cmd+D (Mac).</li>
@@ -47,7 +47,7 @@ export default function BrowserBookmarksGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bookmark these always</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Your bank.</li>
               <li>Investment account.</li>
               <li>Email login (gmail.com or outlook.com).</li>
@@ -63,7 +63,7 @@ export default function BrowserBookmarksGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Show bookmarks bar</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bookmarks visible at top of browser.</li>
               <li>Chrome: Ctrl+Shift+B (Windows) / Cmd+Shift+B (Mac).</li>
               <li>Safari: View → Show Favorites Bar.</li>
@@ -77,7 +77,7 @@ export default function BrowserBookmarksGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Organize bookmarks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Right-click bookmarks → New Folder.</li>
               <li>Group: Banking, Email, News, Shopping.</li>
               <li>Drag bookmarks into folders.</li>
@@ -91,7 +91,7 @@ export default function BrowserBookmarksGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Better than Google</h3>
-            <p className="text-sm text-muted-foreground">Bookmarking your bank = SAFEST way to log in. Scammers create fake sites that show in Google. Real bookmark always goes to real bank. Never click email link to bank. ALWAYS use bookmark. Critical senior security habit.</p>
+            <p className="text-base text-muted-foreground">Bookmarking your bank = SAFEST way to log in. Scammers create fake sites that show in Google. Real bookmark always goes to real bank. Never click email link to bank. ALWAYS use bookmark. Critical senior security habit.</p>
           </CardContent>
         </Card>
       </main>

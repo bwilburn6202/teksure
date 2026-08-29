@@ -22,7 +22,7 @@ export default function SeniorWordleSpellingBee() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Spelling Bee</h2><p>Free version available. $5/month for full version.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Daily streak</h2><p>Many seniors keep 1,000+ day streaks. Daily habit boosts memory.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share scores</h2><p>Text scores with family. Friendly competition keeps everyone engaged.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Make it morning ritual with coffee. Brain warm-up sets up the day.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Make it morning ritual with coffee. Brain warm-up sets up the day.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function DarkModeGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why dark mode?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Less eye strain at night.</li>
               <li>Better sleep — less blue light.</li>
               <li>Reduces glare in dim rooms.</li>
@@ -33,7 +33,7 @@ export default function DarkModeGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone / iPad</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings, then &quot;Display &amp; Brightness&quot;.</li>
               <li>Choose &quot;Dark&quot;.</li>
               <li>Or &quot;Automatic&quot; — switches at sunset.</li>
@@ -47,7 +47,7 @@ export default function DarkModeGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings, then &quot;Display&quot;.</li>
               <li>&quot;Dark theme&quot; or &quot;Dark mode&quot;.</li>
               <li>Schedule sunrise to sunset.</li>
@@ -61,7 +61,7 @@ export default function DarkModeGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Windows 11</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings, then &quot;Personalization&quot;.</li>
               <li>Click &quot;Colors&quot;.</li>
               <li>&quot;Choose your mode&quot; → Dark.</li>
@@ -75,7 +75,7 @@ export default function DarkModeGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mac</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>System Settings, then &quot;Appearance&quot;.</li>
               <li>Choose &quot;Dark&quot;.</li>
               <li>Or &quot;Auto&quot; — switches by time.</li>
@@ -89,7 +89,7 @@ export default function DarkModeGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Browser dark mode</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Chrome — chrome://flags &gt; &quot;Force Dark Mode&quot;.</li>
               <li>Safari — Reader View dark.</li>
               <li>Firefox — themes section.</li>
@@ -103,7 +103,7 @@ export default function DarkModeGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When NOT to use</h3>
-            <p className="text-sm text-muted-foreground">Reading lots of black text on white pages = harder in dark mode (text becomes white on black). Some find harder to read. Vision-impaired may prefer high contrast (white-on-black). Glaucoma + macular degeneration = test both. Try 1 week each. No rule — comfort wins.</p>
+            <p className="text-base text-muted-foreground">Reading lots of black text on white pages = harder in dark mode (text becomes white on black). Some find harder to read. Vision-impaired may prefer high contrast (white-on-black). Glaucoma + macular degeneration = test both. Try 1 week each. No rule — comfort wins.</p>
           </CardContent>
         </Card>
       </main>

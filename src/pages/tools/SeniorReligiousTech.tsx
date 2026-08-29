@@ -22,7 +22,7 @@ export default function SeniorReligiousTech() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Quran.com</h2><p>FREE. Read or listen to the Quran. Multiple translations.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Daily Stoic</h2><p>FREE. Daily wisdom from ancient Stoic philosophers.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Live streaming services</h2><p>Most churches stream Sunday services. Stay connected when you can&apos;t attend.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Audio Bible during walks combines exercise + faith. Many seniors love this.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Audio Bible during walks combines exercise + faith. Many seniors love this.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

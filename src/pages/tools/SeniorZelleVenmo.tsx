@@ -22,7 +22,7 @@ export default function SeniorZelleVenmo() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">PayPal</h2><p>Free for friends/family. Buyer protection for purchases.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SAFETY RULE</h2><p>Only send money to people you know. Zelle and Venmo do NOT refund scams.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Verify recipient</h2><p>Always confirm the phone number or username with a phone call before sending.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: A small $1 test transfer is smart for first-time sends. Then send the full amount.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: A small $1 test transfer is smart for first-time sends. Then send the full amount.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

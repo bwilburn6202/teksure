@@ -1170,7 +1170,7 @@ export default function SuspiciousCallSim() {
         <PageBreadcrumb items={[{ label: 'Practice' }, { label: 'Suspicious Call Simulator' }]} />
 
         {/* Hero */}
-        <div className="relative overflow-hidden rounded-3xl border border-red-200 dark:border-red-900 bg-gradient-to-br from-red-600 via-red-500 to-orange-500 text-white p-8 md:p-12 mb-10 shadow-lg">
+        <div className="relative overflow-hidden rounded-3xl border border-danger-foreground/25 bg-gradient-to-br from-red-600 via-red-500 to-orange-500 text-white p-8 md:p-12 mb-10 shadow-lg">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
             <div className="max-w-3xl">
               <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur rounded-full px-4 py-2 text-sm font-semibold mb-5">
@@ -1184,7 +1184,7 @@ export default function SuspiciousCallSim() {
                 Practice hanging up. Practice saying the right things. No real scammer on the line.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
-                <Badge className="bg-white text-red-700 hover:bg-white/90 text-sm px-3 py-1.5">
+                <Badge className="bg-card text-danger-foreground hover:bg-white/90 text-sm px-3 py-1.5">
                   8 real scenarios
                 </Badge>
                 <Badge className="bg-white/20 text-white hover:bg-white/30 text-sm px-3 py-1.5 border border-white/30">
@@ -1217,18 +1217,18 @@ export default function SuspiciousCallSim() {
 
         {/* Voice toggle + freeze-and-verify always-visible strip */}
         <div className="grid md:grid-cols-5 gap-4 mb-10">
-          <Card className="md:col-span-2 border-slate-200 dark:border-slate-800">
+          <Card className="md:col-span-2 border-border ">
             <CardContent className="p-5 flex items-start gap-4">
-              <div className="shrink-0 h-12 w-12 rounded-xl bg-sky-100 dark:bg-sky-950 flex items-center justify-center">
+              <div className="shrink-0 h-12 w-12 rounded-xl bg-info flex items-center justify-center">
                 {voiceOn ? (
-                  <Volume2 className="h-6 w-6 text-sky-700 dark:text-sky-300" aria-hidden="true" />
+                  <Volume2 className="h-6 w-6 text-info-foreground " aria-hidden="true" />
                 ) : (
-                  <VolumeX className="h-6 w-6 text-sky-700 dark:text-sky-300" aria-hidden="true" />
+                  <VolumeX className="h-6 w-6 text-info-foreground " aria-hidden="true" />
                 )}
               </div>
               <div className="flex-1">
                 <p className="text-base font-semibold mb-1">Try it with audio</p>
-                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-3">
+                <p className="text-base text-muted-foreground leading-relaxed mb-3">
                   Lets your browser read the caller’s lines out loud so you can hear the pressure in a scam call. You can turn it off any time.
                 </p>
                 <Button
@@ -1247,14 +1247,14 @@ export default function SuspiciousCallSim() {
             </CardContent>
           </Card>
 
-          <Card className="md:col-span-3 border-blue-200 dark:border-blue-900 bg-blue-50/60 dark:bg-blue-950/40">
+          <Card className="md:col-span-3 border-info-foreground/25 bg-blue-50/60 dark:bg-blue-950/40">
             <CardContent className="p-5 flex items-start gap-4">
-              <div className="shrink-0 h-12 w-12 rounded-xl bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
-                <Shield className="h-6 w-6 text-blue-700 dark:text-blue-300" aria-hidden="true" />
+              <div className="shrink-0 h-12 w-12 rounded-xl bg-info flex items-center justify-center">
+                <Shield className="h-6 w-6 text-info-foreground " aria-hidden="true" />
               </div>
               <div className="flex-1">
-                <p className="text-base font-bold text-blue-900 dark:text-blue-100 mb-2">Freeze and verify — the 4-step rule</p>
-                <ol className="space-y-1.5 text-base text-blue-900 dark:text-blue-100 leading-relaxed">
+                <p className="text-base font-bold text-info-foreground mb-2">Freeze and verify — the 4-step rule</p>
+                <ol className="space-y-1.5 text-base text-info-foreground leading-relaxed">
                   <li><span className="font-semibold">1.</span> Say you’ll call back.</li>
                   <li><span className="font-semibold">2.</span> Hang up.</li>
                   <li><span className="font-semibold">3.</span> Look up the real number yourself.</li>
@@ -1271,18 +1271,18 @@ export default function SuspiciousCallSim() {
             <h2 id="pick-scenario-heading" className="text-2xl md:text-3xl font-bold mb-2">
               Pick a scenario to practice
             </h2>
-            <p className="text-base text-slate-600 dark:text-slate-400 mb-6 max-w-3xl">
+            <p className="text-base text-muted-foreground mb-6 max-w-3xl">
               Each scenario is based on a real scam script. Nothing here costs money or reveals your information — you’re rehearsing for the day an actual call lands.
             </p>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {scenarios.map((s, idx) => (
                 <Card
                   key={s.id}
-                  className="border-slate-200 dark:border-slate-800 hover:border-red-300 dark:hover:border-red-700 hover:shadow-md transition-all"
+                  className="border-border hover:border-danger-foreground/25 hover:shadow-md transition-all"
                 >
                   <CardContent className="p-5 flex flex-col h-full">
                     <div className="flex items-start justify-between mb-3">
-                      <span className="inline-flex h-10 w-10 rounded-xl bg-red-100 dark:bg-red-950 items-center justify-center text-red-700 dark:text-red-300 font-bold">
+                      <span className="inline-flex h-10 w-10 rounded-xl bg-danger items-center justify-center text-danger-foreground font-bold">
                         {idx + 1}
                       </span>
                       <Badge variant="outline" className="text-xs">
@@ -1290,7 +1290,7 @@ export default function SuspiciousCallSim() {
                       </Badge>
                     </div>
                     <h3 className="text-lg font-bold leading-snug mb-2">{s.title}</h3>
-                    <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4 flex-1">
+                    <p className="text-base text-muted-foreground leading-relaxed mb-4 flex-1">
                       {s.description}
                     </p>
                     <Button
@@ -1312,7 +1312,7 @@ export default function SuspiciousCallSim() {
                 {activeScenario.title}
               </h2>
               <div className="flex items-center gap-2">
-                <Badge className="bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-200 text-sm">
+                <Badge className="bg-muted text-foreground text-sm">
                   Score: {score >= 0 ? `+${score}` : score}
                 </Badge>
                 <Button variant="outline" onClick={resetAll} className="min-h-12 text-base">
@@ -1324,7 +1324,7 @@ export default function SuspiciousCallSim() {
 
             {/* Caller card */}
             {activeNode && !outcome && (
-              <Card className="border-red-300 dark:border-red-800 bg-white dark:bg-slate-900 shadow-lg mb-6">
+              <Card className="border-danger-foreground/25 bg-card shadow-lg mb-6">
                 <CardContent className="p-0">
                   <div className="bg-gradient-to-r from-red-600 to-orange-500 text-white px-6 py-4 flex items-center gap-4 rounded-t-xl">
                     <div className="h-14 w-14 rounded-full bg-white/20 flex items-center justify-center text-2xl font-bold">
@@ -1334,7 +1334,7 @@ export default function SuspiciousCallSim() {
                       <p className="text-xs uppercase tracking-wide text-white/80">Incoming call</p>
                       <p className="text-lg font-semibold truncate">{activeScenario.callerLabel}</p>
                       {activeNode.caller.tone && (
-                        <p className="text-sm text-white/80 italic">{activeNode.caller.tone}</p>
+                        <p className="text-base text-white/80 italic">{activeNode.caller.tone}</p>
                       )}
                     </div>
                     <div className="h-10 w-10 rounded-full bg-white/20 flex items-center justify-center animate-pulse">
@@ -1343,10 +1343,10 @@ export default function SuspiciousCallSim() {
                   </div>
 
                   <div className="p-6">
-                    <p className="text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400 font-semibold mb-2">
+                    <p className="text-xs uppercase tracking-wide text-muted-foreground font-semibold mb-2">
                       Caller says:
                     </p>
-                    <p className="text-lg md:text-xl leading-relaxed text-slate-900 dark:text-slate-100">
+                    <p className="text-lg md:text-xl leading-relaxed text-foreground ">
                       “{activeNode.caller.line}”
                     </p>
                   </div>
@@ -1357,7 +1357,7 @@ export default function SuspiciousCallSim() {
             {/* Response options OR coaching after selection */}
             {activeNode && !outcome && !selectedOption && (
               <div className="space-y-3 mb-6">
-                <p className="text-base font-semibold text-slate-700 dark:text-slate-300 mb-2">
+                <p className="text-base font-semibold text-foreground mb-2">
                   How would you respond?
                 </p>
                 {activeNode.options.map((opt, i) => (
@@ -1365,9 +1365,9 @@ export default function SuspiciousCallSim() {
                     key={i}
                     onClick={() => pickOption(opt)}
                     variant="outline"
-                    className="w-full justify-start text-left min-h-14 text-base px-5 py-4 whitespace-normal h-auto hover:bg-red-50 dark:hover:bg-red-950/30 hover:border-red-300 dark:hover:border-red-800"
+                    className="w-full justify-start text-left min-h-14 text-base px-5 py-4 whitespace-normal h-auto hover:bg-danger hover:border-danger-foreground/25 "
                   >
-                    <span className="font-semibold text-red-700 dark:text-red-400 mr-3 shrink-0">
+                    <span className="font-semibold text-danger-foreground mr-3 shrink-0">
                       {String.fromCharCode(65 + i)}.
                     </span>
                     <span className="flex-1">{opt.label}</span>
@@ -1390,11 +1390,11 @@ export default function SuspiciousCallSim() {
                 <CardContent className="p-5">
                   <div className="flex items-start gap-4">
                     {selectedOption.score > 0 ? (
-                      <CheckCircle2 className="h-6 w-6 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" aria-hidden="true" />
+                      <CheckCircle2 className="h-6 w-6 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
                     ) : selectedOption.score < 0 ? (
-                      <AlertTriangle className="h-6 w-6 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
+                      <AlertTriangle className="h-6 w-6 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
                     ) : (
-                      <Info className="h-6 w-6 text-slate-600 dark:text-slate-400 shrink-0 mt-0.5" aria-hidden="true" />
+                      <Info className="h-6 w-6 text-muted-foreground shrink-0 mt-0.5" aria-hidden="true" />
                     )}
                     <div className="flex-1">
                       <p className="text-base font-semibold mb-1">
@@ -1434,44 +1434,44 @@ export default function SuspiciousCallSim() {
 
         {/* ─── Reference cards (always visible below) ─── */}
         <section className="grid md:grid-cols-2 gap-6 mt-12">
-          <Card className="border-red-200 dark:border-red-900">
+          <Card className="border-danger-foreground/25 ">
             <CardContent className="p-6">
               <div className="flex items-center gap-3 mb-4">
-                <div className="h-11 w-11 rounded-xl bg-red-100 dark:bg-red-950 flex items-center justify-center">
-                  <AlertTriangle className="h-5 w-5 text-red-700 dark:text-red-400" aria-hidden="true" />
+                <div className="h-11 w-11 rounded-xl bg-danger flex items-center justify-center">
+                  <AlertTriangle className="h-5 w-5 text-danger-foreground " aria-hidden="true" />
                 </div>
                 <h2 className="text-xl font-bold">Red-phrase cheat sheet</h2>
               </div>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 If a caller says any of these, hang up — even if everything else sounded normal.
               </p>
               <ul className="space-y-2">
                 {redPhrases.map((phrase) => (
                   <li key={phrase} className="flex items-start gap-2 text-base">
-                    <span className="text-red-600 dark:text-red-400 font-bold shrink-0">•</span>
-                    <span className="text-slate-800 dark:text-slate-200 leading-relaxed">“{phrase}”</span>
+                    <span className="text-danger-foreground font-bold shrink-0">•</span>
+                    <span className="text-foreground leading-relaxed">“{phrase}”</span>
                   </li>
                 ))}
               </ul>
             </CardContent>
           </Card>
 
-          <Card className="border-emerald-200 dark:border-emerald-900">
+          <Card className="border-success-foreground/25 ">
             <CardContent className="p-6">
               <div className="flex items-center gap-3 mb-4">
-                <div className="h-11 w-11 rounded-xl bg-emerald-100 dark:bg-emerald-950 flex items-center justify-center">
-                  <CheckCircle2 className="h-5 w-5 text-emerald-700 dark:text-emerald-400" aria-hidden="true" />
+                <div className="h-11 w-11 rounded-xl bg-success flex items-center justify-center">
+                  <CheckCircle2 className="h-5 w-5 text-success-foreground " aria-hidden="true" />
                 </div>
                 <h2 className="text-xl font-bold">Legit vs. scam — quick call ID</h2>
               </div>
-              <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 Real organizations behave very differently from scammers. These rules catch most calls.
               </p>
               <ul className="space-y-2">
                 {legitVsScam.map((tip) => (
                   <li key={tip} className="flex items-start gap-2 text-base">
-                    <CheckCircle2 className="h-4 w-4 text-emerald-600 dark:text-emerald-400 shrink-0 mt-1" aria-hidden="true" />
-                    <span className="text-slate-800 dark:text-slate-200 leading-relaxed">{tip}</span>
+                    <CheckCircle2 className="h-4 w-4 text-success-foreground shrink-0 mt-1" aria-hidden="true" />
+                    <span className="text-foreground leading-relaxed">{tip}</span>
                   </li>
                 ))}
               </ul>
@@ -1480,9 +1480,9 @@ export default function SuspiciousCallSim() {
         </section>
 
         {/* Voice cloning warning */}
-        <Alert className="my-8 border-amber-300 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/40">
-          <AlertTriangle className="h-5 w-5 text-amber-700 dark:text-amber-400" />
-          <AlertTitle className="text-base font-bold text-amber-900 dark:text-amber-100">
+        <Alert className="my-8 border-warn-foreground/25 bg-warn ">
+          <AlertTriangle className="h-5 w-5 text-warn-foreground " />
+          <AlertTitle className="text-base font-bold text-warn-foreground ">
             AI voice cloning is real
           </AlertTitle>
           <AlertDescription className="text-base text-amber-900/90 dark:text-amber-100/90 leading-relaxed">
@@ -1493,13 +1493,13 @@ export default function SuspiciousCallSim() {
         </Alert>
 
         {/* Family code word tip */}
-        <Card className="mb-8 border-violet-200 dark:border-violet-900 bg-violet-50/60 dark:bg-violet-950/40">
+        <Card className="mb-8 border-primary/25 bg-violet-50/60 dark:bg-violet-950/40">
           <CardContent className="p-6 md:flex md:items-start md:gap-5">
-            <div className="h-12 w-12 rounded-xl bg-violet-100 dark:bg-violet-900 flex items-center justify-center shrink-0 mb-4 md:mb-0">
-              <Users className="h-6 w-6 text-violet-700 dark:text-violet-300" aria-hidden="true" />
+            <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 mb-4 md:mb-0">
+              <Users className="h-6 w-6 text-primary " aria-hidden="true" />
             </div>
             <div>
-              <h2 className="text-xl font-bold mb-2 text-violet-900 dark:text-violet-100">Pick a family code word</h2>
+              <h2 className="text-xl font-bold mb-2 text-primary ">Pick a family code word</h2>
               <p className="text-base text-violet-900/90 dark:text-violet-100/90 leading-relaxed">
                 Agree on a private word with your family — something silly is fine, nothing obvious. If someone
                 calls claiming to be your grandchild in trouble, ask for the code word. No scammer will know it.
@@ -1510,22 +1510,22 @@ export default function SuspiciousCallSim() {
         </Card>
 
         {/* After-call actions */}
-        <Card className="mb-8 border-slate-200 dark:border-slate-800">
+        <Card className="mb-8 border-border ">
           <CardContent className="p-6">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-11 w-11 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center">
-                <Ban className="h-5 w-5 text-slate-700 dark:text-slate-300" aria-hidden="true" />
+              <div className="h-11 w-11 rounded-xl bg-muted flex items-center justify-center">
+                <Ban className="h-5 w-5 text-foreground " aria-hidden="true" />
               </div>
               <h2 className="text-xl font-bold">After the call — block and report</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
               {afterCallActions.map((a) => (
-                <div key={a.title} className="rounded-xl border border-slate-200 dark:border-slate-800 p-4">
+                <div key={a.title} className="rounded-xl border border-border p-4">
                   <p className="text-base font-semibold mb-1 flex items-center gap-2">
-                    <Flag className="h-4 w-4 text-slate-500" aria-hidden="true" />
+                    <Flag className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
                     {a.title}
                   </p>
-                  <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">{a.detail}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{a.detail}</p>
                 </div>
               ))}
             </div>
@@ -1535,41 +1535,41 @@ export default function SuspiciousCallSim() {
         {/* FAQ */}
         <section aria-labelledby="faq-heading" className="mb-12">
           <div className="flex items-center gap-3 mb-4">
-            <div className="h-11 w-11 rounded-xl bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
-              <BookOpen className="h-5 w-5 text-blue-700 dark:text-blue-300" aria-hidden="true" />
+            <div className="h-11 w-11 rounded-xl bg-info flex items-center justify-center">
+              <BookOpen className="h-5 w-5 text-info-foreground " aria-hidden="true" />
             </div>
             <h2 id="faq-heading" className="text-2xl md:text-3xl font-bold">Questions people ask</h2>
           </div>
           <Accordion type="single" collapsible className="space-y-3">
-            <AccordionItem value="q1" className="border rounded-lg px-4 border-slate-200 dark:border-slate-800">
+            <AccordionItem value="q1" className="border rounded-lg px-4 border-border ">
               <AccordionTrigger className="text-base md:text-lg font-semibold text-left hover:no-underline min-h-14">
                 What if I already fell for one of these?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+              <AccordionContent className="text-base text-foreground leading-relaxed">
                 You are not alone — these scams work because they target good, trusting people. If you sent
                 money, call your bank right away and ask to reverse the transfer. If you shared a code or
                 password, change it immediately. Report the call at reportfraud.ftc.gov. Our{' '}
-                <Link to="/tools/refund-and-return-helper" className="text-blue-600 dark:text-blue-400 underline font-semibold">
+                <Link to="/tools/refund-and-return-helper" className="text-info-foreground underline font-semibold">
                   Refund and Return Helper
                 </Link>{' '}
                 walks through which companies allow reversals and how to file the claim.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="q2" className="border rounded-lg px-4 border-slate-200 dark:border-slate-800">
+            <AccordionItem value="q2" className="border rounded-lg px-4 border-border ">
               <AccordionTrigger className="text-base md:text-lg font-semibold text-left hover:no-underline min-h-14">
                 Are these real scripts?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+              <AccordionContent className="text-base text-foreground leading-relaxed">
                 Yes — every scenario is paraphrased from real scam calls reported to the FTC, AARP, and law
                 enforcement. Names and specific dollar amounts have been changed. The pressure tactics, the
                 payment requests, and the emotional hooks are word-for-word what people heard on the line.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="q3" className="border rounded-lg px-4 border-slate-200 dark:border-slate-800">
+            <AccordionItem value="q3" className="border rounded-lg px-4 border-border ">
               <AccordionTrigger className="text-base md:text-lg font-semibold text-left hover:no-underline min-h-14">
                 How do I block numbers on my specific phone?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+              <AccordionContent className="text-base text-foreground leading-relaxed">
                 <span className="font-semibold">iPhone:</span> Open the Phone app → Recents → tap the small (i)
                 next to the number → scroll down → Block this Caller.{' '}
                 <span className="font-semibold">Android (Samsung/Pixel):</span> Open the Phone app → Recents → long-press
@@ -1577,11 +1577,11 @@ export default function SuspiciousCallSim() {
                 Screen (Pixel) so most scam calls never ring through.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="q4" className="border rounded-lg px-4 border-slate-200 dark:border-slate-800">
+            <AccordionItem value="q4" className="border rounded-lg px-4 border-border ">
               <AccordionTrigger className="text-base md:text-lg font-semibold text-left hover:no-underline min-h-14">
                 Is it rude to hang up on someone?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+              <AccordionContent className="text-base text-foreground leading-relaxed">
                 No. If a caller pressures you, threatens you, or asks for money or codes, hanging up is the
                 right answer. A real caller will not be offended if you ask to call them back at a number you
                 verify. That single habit protects you from nearly every phone scam.
@@ -1594,21 +1594,21 @@ export default function SuspiciousCallSim() {
         <div className="flex flex-wrap gap-3 justify-center mb-8">
           <Link
             to="/tools/scam-simulator"
-            className="inline-flex items-center gap-2 rounded-xl bg-slate-100 dark:bg-slate-800 px-5 py-3 text-base font-semibold text-slate-800 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-700"
+            className="inline-flex items-center gap-2 rounded-xl bg-muted px-5 py-3 text-base font-semibold text-foreground hover:bg-slate-200 "
           >
             <Shield className="h-4 w-4" aria-hidden="true" />
             Try the Scam Practice Simulator (email & text)
           </Link>
           <Link
             to="/tools/scam-iq-test"
-            className="inline-flex items-center gap-2 rounded-xl bg-slate-100 dark:bg-slate-800 px-5 py-3 text-base font-semibold text-slate-800 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-700"
+            className="inline-flex items-center gap-2 rounded-xl bg-muted px-5 py-3 text-base font-semibold text-foreground hover:bg-slate-200 "
           >
             <Trophy className="h-4 w-4" aria-hidden="true" />
             Take the Scam IQ Test
           </Link>
           <Link
             to="/scam-defense"
-            className="inline-flex items-center gap-2 rounded-xl bg-slate-100 dark:bg-slate-800 px-5 py-3 text-base font-semibold text-slate-800 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-700"
+            className="inline-flex items-center gap-2 rounded-xl bg-muted px-5 py-3 text-base font-semibold text-foreground hover:bg-slate-200 "
           >
             <Shield className="h-4 w-4" aria-hidden="true" />
             Visit the Scam Defense Center
@@ -1629,7 +1629,7 @@ export default function SuspiciousCallSim() {
             </DialogDescription>
           </DialogHeader>
           {history.length === 0 ? (
-            <p className="text-base text-slate-600 dark:text-slate-400 py-4">
+            <p className="text-base text-muted-foreground py-4">
               No attempts yet. Pick a scenario above to start.
             </p>
           ) : (
@@ -1638,7 +1638,7 @@ export default function SuspiciousCallSim() {
                 <li key={`${a.dateISO}-${i}`} className="py-3 flex items-start justify-between gap-3">
                   <div className="flex-1 min-w-0">
                     <p className="text-base font-semibold truncate">{a.scenarioTitle}</p>
-                    <p className="text-sm text-slate-500 dark:text-slate-400">
+                    <p className="text-base text-muted-foreground ">
                       {new Date(a.dateISO).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}
                       {' • '}
                       Score {a.score >= 0 ? `+${a.score}` : a.score}
@@ -1685,11 +1685,11 @@ function OutcomeCard({ outcome, scenario, score, selectedOption, onRestart, onHo
     <Card className={`border-2 ${copy.border} ${copy.bg} shadow-lg`}>
       <CardContent className="p-6 md:p-8">
         <div className="flex items-start gap-4 mb-5">
-          <div className="h-14 w-14 rounded-2xl bg-white dark:bg-slate-900 flex items-center justify-center shrink-0 shadow">
+          <div className="h-14 w-14 rounded-2xl bg-card flex items-center justify-center shrink-0 shadow">
             <Icon className={`h-7 w-7 ${copy.color}`} aria-hidden="true" />
           </div>
           <div className="flex-1">
-            <Badge className={`${copy.color} bg-white dark:bg-slate-900 mb-2 text-sm`}>
+            <Badge className={`${copy.color} bg-card mb-2 text-sm`}>
               {copy.badge}
             </Badge>
             <h3 className="text-2xl md:text-3xl font-bold leading-tight mb-2">{copy.title}</h3>
@@ -1697,28 +1697,28 @@ function OutcomeCard({ outcome, scenario, score, selectedOption, onRestart, onHo
           </div>
         </div>
 
-        <div className="rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 mb-5">
-          <p className="text-sm uppercase tracking-wide text-slate-500 dark:text-slate-400 font-semibold mb-2">
+        <div className="rounded-xl bg-card border border-border p-5 mb-5">
+          <p className="text-sm uppercase tracking-wide text-muted-foreground font-semibold mb-2">
             What happened
           </p>
           <p className="text-base leading-relaxed mb-4">{selectedOption.coaching}</p>
-          <p className="text-sm uppercase tracking-wide text-slate-500 dark:text-slate-400 font-semibold mb-2">
+          <p className="text-sm uppercase tracking-wide text-muted-foreground font-semibold mb-2">
             What the scammer wanted
           </p>
-          <p className="text-base leading-relaxed text-slate-700 dark:text-slate-300">{scenario.wantsFromYou}</p>
+          <p className="text-base leading-relaxed text-foreground ">{scenario.wantsFromYou}</p>
         </div>
 
         <div className="grid sm:grid-cols-3 gap-3 mb-5 text-center">
-          <div className="rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
-            <p className="text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400 font-semibold mb-1">Final score</p>
+          <div className="rounded-xl bg-card border border-border p-4">
+            <p className="text-xs uppercase tracking-wide text-muted-foreground font-semibold mb-1">Final score</p>
             <p className="text-3xl font-bold">{score >= 0 ? `+${score}` : score}</p>
           </div>
-          <div className="rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
-            <p className="text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400 font-semibold mb-1">Scenario</p>
+          <div className="rounded-xl bg-card border border-border p-4">
+            <p className="text-xs uppercase tracking-wide text-muted-foreground font-semibold mb-1">Scenario</p>
             <p className="text-base font-semibold leading-snug">{scenario.shortTitle}</p>
           </div>
-          <div className="rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-4">
-            <p className="text-xs uppercase tracking-wide text-slate-500 dark:text-slate-400 font-semibold mb-1">Result</p>
+          <div className="rounded-xl bg-card border border-border p-4">
+            <p className="text-xs uppercase tracking-wide text-muted-foreground font-semibold mb-1">Result</p>
             <p className="text-base font-semibold leading-snug capitalize">{outcome === 'mid' ? 'Mixed' : outcome}</p>
           </div>
         </div>

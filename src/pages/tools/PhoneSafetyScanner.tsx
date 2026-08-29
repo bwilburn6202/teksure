@@ -58,9 +58,9 @@ export default function PhoneSafetyScanner() {
 
         <div className="container max-w-2xl mx-auto px-4 py-8">
           {/* How it works */}
-          <div className="flex items-start gap-2 p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 mb-6">
-            <Info className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" aria-hidden="true" />
-            <p className="text-xs text-blue-700 dark:text-blue-300">
+          <div className="flex items-start gap-2 p-3 rounded-lg bg-info border border-info-foreground/25 mb-6">
+            <Info className="h-4 w-4 text-info-foreground shrink-0 mt-0.5" aria-hidden="true" />
+            <p className="text-sm text-info-foreground ">
               <strong>How it works:</strong> We check US phone numbers against known scam patterns (toll-number prefixes, common spoofing ranges, and our own scam-number database). When you're unsure, the safest move is: don't answer, don't call back, and don't press any buttons on a recording.
             </p>
           </div>
@@ -69,7 +69,7 @@ export default function PhoneSafetyScanner() {
           {!result && (
             <Card className="border-border shadow-sm mb-6">
               <CardContent className="p-6">
-                <label className="block text-sm font-medium mb-2" htmlFor="phone-input">
+                <label className="block text-base font-medium mb-2" htmlFor="phone-input">
                   Enter the phone number
                 </label>
                 <div className="flex gap-2">
@@ -107,7 +107,7 @@ export default function PhoneSafetyScanner() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-xs text-muted-foreground mb-2">Try an example:</p>
+                  <p className="text-sm text-muted-foreground mb-2">Try an example:</p>
                   <div className="flex flex-wrap gap-2">
                     {EXAMPLES.map(ex => (
                       <button
@@ -136,21 +136,21 @@ export default function PhoneSafetyScanner() {
                     What to do next
                   </p>
                   {result.verdict === 'safe' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       No known scam reports for this number. If you still weren't expecting a call, let it go to voicemail — legitimate callers will leave a message.
                     </p>
                   )}
                   {result.verdict === 'caution' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       This number has some warning signs. Don't call back. If it's someone you actually know, they'll leave a voicemail or text you.
                     </p>
                   )}
                   {result.verdict === 'danger' && (
                     <div className="space-y-2">
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         Block this number. If you already picked up:
                       </p>
-                      <ul className="space-y-1 text-sm text-muted-foreground list-disc pl-5">
+                      <ul className="space-y-1 text-base text-muted-foreground list-disc pl-5">
                         <li>Never share passwords, Social Security numbers, or bank details.</li>
                         <li>Don't press buttons on a recording — that marks your line as active.</li>
                         <li>
@@ -164,7 +164,7 @@ export default function PhoneSafetyScanner() {
                     </div>
                   )}
                   {result.verdict === 'unknown' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       Not enough data on this one. When in doubt: don't answer, let it go to voicemail, and never give personal info to someone who called you.
                     </p>
                   )}
@@ -190,7 +190,7 @@ export default function PhoneSafetyScanner() {
               <CardContent className="p-5">
                 <div className="flex items-center gap-2 mb-3">
                   <BookOpen className="h-4 w-4 text-primary" aria-hidden="true" />
-                  <p className="text-sm font-medium">Common phone-scam patterns</p>
+                  <p className="text-base font-medium">Common phone-scam patterns</p>
                 </div>
                 <ul className="space-y-2">
                   {[
@@ -200,7 +200,7 @@ export default function PhoneSafetyScanner() {
                     "Someone asking you to pay with gift cards or wire transfers — legitimate companies never do this.",
                     'A number that matches your own area code but you don\'t recognize — scammers "spoof" local numbers on purpose.',
                   ].map((tip, i) => (
-                    <li key={i} className="text-xs text-muted-foreground flex items-start gap-2">
+                    <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
                       <span aria-hidden="true">•</span>
                       <span>{tip}</span>
                     </li>

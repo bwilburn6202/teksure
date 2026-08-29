@@ -30,10 +30,10 @@ export default function RouterPicksForSeniors() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function RouterPicksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Buy vs rent from ISP</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Comcast / Spectrum</strong> charge $10-15/mo to RENT router. $120-180/yr forever.</li>
               <li>Buy your own ($100-300 once) — saves money in 12-18 months.</li>
               <li>Most ISPs accept compatible 3rd-party routers — search "[ISP] approved modems".</li>
@@ -54,7 +54,7 @@ export default function RouterPicksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mesh vs single router</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Single router</strong> — fine for under 1,500 sq ft, 1 floor.</li>
               <li><strong>2-pack mesh</strong> — for 2,000-3,000 sq ft.</li>
               <li><strong>3-pack mesh</strong> — large homes / multi-floor.</li>
@@ -67,7 +67,7 @@ export default function RouterPicksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup is easier than ever</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Plug router in. Connect to ISP modem with cable.</li>
               <li>Download brand app (Eero, Nest).</li>
               <li>App walks you through setup.</li>
@@ -80,7 +80,7 @@ export default function RouterPicksForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Restart router monthly</h3>
-            <p className="text-sm text-muted-foreground">Most "WiFi feels slow" complaints fixed by simple router restart. Unplug 30 sec, plug back in. Set monthly reminder. Many newer routers schedule auto-restart at 3 AM.</p>
+            <p className="text-base text-muted-foreground">Most "WiFi feels slow" complaints fixed by simple router restart. Unplug 30 sec, plug back in. Set monthly reminder. Many newer routers schedule auto-restart at 3 AM.</p>
           </CardContent>
         </Card>
       </main>

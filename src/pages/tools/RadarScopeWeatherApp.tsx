@@ -19,7 +19,7 @@ export default function RadarScopeWeatherApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is RadarScope?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Professional NEXRAD radar app.</li>
               <li>$10 one-time purchase (no subscription).</li>
               <li>Same radar weathermen use.</li>
@@ -33,7 +33,7 @@ export default function RadarScopeWeatherApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for these areas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tornado Alley (TX, OK, KS, NE).</li>
               <li>Florida hurricane areas.</li>
               <li>Anywhere with severe weather.</li>
@@ -47,7 +47,7 @@ export default function RadarScopeWeatherApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NWS app (National Weather Service) — free official.</li>
               <li>Weather Channel — free with ads.</li>
               <li>AccuWeather — free with ads.</li>
@@ -61,7 +61,7 @@ export default function RadarScopeWeatherApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tornado warnings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FEMA app — official government alerts.</li>
               <li>Wireless Emergency Alerts (built into phone).</li>
               <li>NWS app — official watches/warnings.</li>
@@ -75,7 +75,7 @@ export default function RadarScopeWeatherApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Storm Shield</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Voice alerts wake you up.</li>
               <li>Tornado warning audio alarm.</li>
               <li>$10/year subscription.</li>
@@ -89,7 +89,7 @@ export default function RadarScopeWeatherApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hurricane apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>National Hurricane Center app — official tracks.</li>
               <li>Hurricane Hub — comprehensive.</li>
               <li>Spaghetti models for path predictions.</li>
@@ -103,7 +103,7 @@ export default function RadarScopeWeatherApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">FEMA + NWS apps free</h3>
-            <p className="text-sm text-muted-foreground">For most seniors, the free FEMA app + free NWS app cover all weather alert needs. RadarScope is for weather enthusiasts who want professional-grade radar. Storm Shield&apos;s voice alerts are worth $10/year if you live in tornado-prone areas and want to be woken up by storms. Always have multiple alert sources.</p>
+            <p className="text-base text-muted-foreground">For most seniors, the free FEMA app + free NWS app cover all weather alert needs. RadarScope is for weather enthusiasts who want professional-grade radar. Storm Shield&apos;s voice alerts are worth $10/year if you live in tornado-prone areas and want to be woken up by storms. Always have multiple alert sources.</p>
           </CardContent>
         </Card>
       </main>

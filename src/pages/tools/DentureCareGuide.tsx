@@ -19,7 +19,7 @@ export default function DentureCareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily routine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Remove + rinse after every meal.</li>
               <li>Brush dentures (soft brush) before bed.</li>
               <li>Soak overnight in cleaner solution.</li>
@@ -33,7 +33,7 @@ export default function DentureCareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cleaning products</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Polident</strong> — most popular. Effervescent tablets.</li>
               <li><strong>Efferdent</strong> — similar, often cheaper.</li>
               <li><strong>Denture brush</strong> — different from toothbrush, $5.</li>
@@ -47,7 +47,7 @@ export default function DentureCareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Adhesives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fixodent</strong> — most popular cream.</li>
               <li><strong>Poligrip</strong> — strong hold variant.</li>
               <li><strong>Sea Bond</strong> — strips, less mess.</li>
@@ -60,7 +60,7 @@ export default function DentureCareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost-saving denture care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Annual reline ($300-400) — readjusts fit as gums shrink.</li>
               <li>Replace every 5-7 years.</li>
               <li>Dental schools — discounted dentures.</li>
@@ -74,7 +74,7 @@ export default function DentureCareGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Implants vs dentures</h3>
-            <p className="text-sm text-muted-foreground">Implant-supported dentures = $5K-30K but stable, no adhesive needed. Last 20+ years. Worth it if budget allows. Mexico/Costa Rica dental tourism = 50-70% savings (research clinic carefully).</p>
+            <p className="text-base text-muted-foreground">Implant-supported dentures = $5K-30K but stable, no adhesive needed. Last 20+ years. Worth it if budget allows. Mexico/Costa Rica dental tourism = 50-70% savings (research clinic carefully).</p>
           </CardContent>
         </Card>
       </main>

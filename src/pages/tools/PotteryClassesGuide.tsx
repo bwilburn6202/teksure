@@ -19,7 +19,7 @@ export default function PotteryClassesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why pottery for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tactile + grounding.</li>
               <li>Strengthens hands (arthritis benefit).</li>
               <li>Creates real, useful objects.</li>
@@ -34,7 +34,7 @@ export default function PotteryClassesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find pottery classes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Community college art departments</strong> — most affordable.</li>
               <li><strong>Local pottery studios</strong> — search Google maps.</li>
               <li><strong>Senior centers</strong> — often have classes.</li>
@@ -49,7 +49,7 @@ export default function PotteryClassesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hand-building vs wheel</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hand-building</strong> — easier start. Pinch, coil, slab.</li>
               <li><strong>Wheel</strong> — iconic but harder. Takes weeks to learn.</li>
               <li>Most studios teach both.</li>
@@ -63,7 +63,7 @@ export default function PotteryClassesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First projects</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pinch pots — squeeze ball into cup.</li>
               <li>Coil bowls.</li>
               <li>Slab plates.</li>
@@ -78,7 +78,7 @@ export default function PotteryClassesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Studio membership</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>After classes — many studios offer membership.</li>
               <li>$80-200/month for unlimited studio time.</li>
               <li>Includes clay, glazes, kiln firing.</li>
@@ -92,7 +92,7 @@ export default function PotteryClassesGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No studio? Air-dry clay</h3>
-            <p className="text-sm text-muted-foreground">Air-dry clay ($10) needs no kiln. Crayola, Das brands. Make small sculptures, ornaments, jewelry. Limited durability but fun starter. Polymer clay (Sculpey, $5-15) bakes in home oven. Many senior crafts use polymer clay successfully. Try before committing to studio.</p>
+            <p className="text-base text-muted-foreground">Air-dry clay ($10) needs no kiln. Crayola, Das brands. Make small sculptures, ornaments, jewelry. Limited durability but fun starter. Polymer clay (Sculpey, $5-15) bakes in home oven. Many senior crafts use polymer clay successfully. Try before committing to studio.</p>
           </CardContent>
         </Card>
       </main>

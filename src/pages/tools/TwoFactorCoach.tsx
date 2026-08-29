@@ -103,7 +103,7 @@ export default function TwoFactorCoach() {
               <Lock className="w-6 h-6 text-primary shrink-0" />
               <div>
                 <h2 className="font-bold mb-1">What is two-factor?</h2>
-                <p className="text-sm text-muted-foreground">A second lock on your account. Even if a scammer steals your password, they still can't get in without a code from your phone. It's the single biggest thing you can do to stop hackers.</p>
+                <p className="text-base text-muted-foreground">A second lock on your account. Even if a scammer steals your password, they still can't get in without a code from your phone. It's the single biggest thing you can do to stop hackers.</p>
               </div>
             </div>
           </CardContent>
@@ -118,16 +118,16 @@ export default function TwoFactorCoach() {
                     <span className="text-3xl">{s.emoji}</span>
                     <div>
                       <h3 className="font-bold text-lg">{s.name}</h3>
-                      <p className="text-sm text-muted-foreground">{s.why}</p>
+                      <p className="text-base text-muted-foreground">{s.why}</p>
                     </div>
                   </div>
-                  <span className="text-sm text-primary font-medium">{open === s.id ? 'Hide' : 'Show steps'}</span>
+                  <span className="text-base text-primary font-medium">{open === s.id ? 'Hide' : 'Show steps'}</span>
                 </button>
                 {open === s.id && (
                   <div className="mt-4 pt-4 border-t space-y-3">
-                    <p className="text-sm bg-muted/50 p-3 rounded"><strong>Best choice:</strong> {s.best}</p>
+                    <p className="text-base bg-muted/50 p-3 rounded"><strong>Best choice:</strong> {s.best}</p>
                     <ol className="space-y-2 list-decimal pl-5">
-                      {s.steps.map((step, i) => <li key={i} className="text-sm">{step}</li>)}
+                      {s.steps.map((step, i) => <li key={i} className="text-base">{step}</li>)}
                     </ol>
                     <Button asChild variant="outline" className="w-full"><a href={s.link.url} target="_blank" rel="noopener noreferrer">{s.link.label} <ExternalLink className="w-3 h-3 ml-2" /></a></Button>
                   </div>
@@ -140,7 +140,7 @@ export default function TwoFactorCoach() {
         <Card className="mt-6 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">Always save the "backup codes" each service offers. Print them and keep them with your important papers. They're your way back in if your phone is ever lost or broken.</p>
+            <p className="text-base text-muted-foreground">Always save the "backup codes" each service offers. Print them and keep them with your important papers. They're your way back in if your phone is ever lost or broken.</p>
           </CardContent>
         </Card>
       </main>

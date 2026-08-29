@@ -19,7 +19,7 @@ export default function RocketMoneySubscriptionTracker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Connects to your bank securely.</li>
               <li>Lists all recurring charges.</li>
               <li>Catches subscriptions you forgot.</li>
@@ -33,7 +33,7 @@ export default function RocketMoneySubscriptionTracker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free version — see all subscriptions.</li>
               <li>Premium: $4–$12/month (you set price).</li>
               <li>Premium adds bill negotiation.</li>
@@ -47,7 +47,7 @@ export default function RocketMoneySubscriptionTracker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup process</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Rocket Money app.</li>
               <li>Create account.</li>
               <li>Securely connect bank/credit card.</li>
@@ -61,7 +61,7 @@ export default function RocketMoneySubscriptionTracker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common forgotten subscriptions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Magazine subscriptions auto-renewing for years.</li>
               <li>Free trials that became paid.</li>
               <li>Old gym memberships.</li>
@@ -75,7 +75,7 @@ export default function RocketMoneySubscriptionTracker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bill negotiation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Premium feature.</li>
               <li>App negotiates with cable, internet, phone bills.</li>
               <li>Often saves $20–$100/month.</li>
@@ -89,7 +89,7 @@ export default function RocketMoneySubscriptionTracker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Owned by Rocket Companies (large public company).</li>
               <li>Bank-level encryption.</li>
               <li>Read-only access — can&apos;t move your money.</li>
@@ -103,7 +103,7 @@ export default function RocketMoneySubscriptionTracker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">DIY check first — free</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re uncomfortable connecting bank accounts to apps, manually review last 3 months of bank/credit card statements. Highlight every recurring charge. Cancel what you don&apos;t use. Same result, no app needed. Many seniors save $50–$200/month doing this manual review once a year. Or use Rocket Money for the convenience.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re uncomfortable connecting bank accounts to apps, manually review last 3 months of bank/credit card statements. Highlight every recurring charge. Cancel what you don&apos;t use. Same result, no app needed. Many seniors save $50–$200/month doing this manual review once a year. Or use Rocket Money for the convenience.</p>
           </CardContent>
         </Card>
       </main>

@@ -28,7 +28,7 @@ export default function WaterLeakDetector() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why this matters most for travel</h2>
-            <p className="text-sm">A burst hose on a washing machine releases 600 gallons/hour. While you\'re away for a week, a small leak can flood every floor of the house. Insurance covers it but the disruption is months. Detection devices alert you — auto-shutoff systems STOP it.</p>
+            <p className="text-base">A burst hose on a washing machine releases 600 gallons/hour. While you\'re away for a week, a small leak can flood every floor of the house. Insurance covers it but the disruption is months. Detection devices alert you — auto-shutoff systems STOP it.</p>
           </CardContent>
         </Card>
 
@@ -38,10 +38,10 @@ export default function WaterLeakDetector() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function WaterLeakDetector() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to put sensors</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Under EVERY sink (kitchen, all bathrooms).</li>
               <li>Behind toilets.</li>
               <li>Behind / under washing machine.</li>
@@ -67,7 +67,7 @@ export default function WaterLeakDetector() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For full protection (Moen Flo / Phyn)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Installed at MAIN water line entering home.</li>
               <li>Monitors flow patterns.</li>
               <li>Detects unusual flow (a leak somewhere).</li>
@@ -75,14 +75,14 @@ export default function WaterLeakDetector() {
               <li>App alerts you immediately.</li>
               <li>Many homeowners insurers offer 5-15% discount when installed.</li>
             </ul>
-            <p className="text-sm mt-2">Install: about $200-400 from a plumber, or DIY if comfortable.</p>
+            <p className="text-base mt-2">Install: about $200-400 from a plumber, or DIY if comfortable.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Insurance discount</h3>
-            <p className="text-sm text-muted-foreground">Call homeowners insurance and ask "What discount do you give for smart water leak detection?". Many offer 5-15% off, often $50-200/year. Often pays for the device in 2-3 years.</p>
+            <p className="text-base text-muted-foreground">Call homeowners insurance and ask "What discount do you give for smart water leak detection?". Many offer 5-15% off, often $50-200/year. Often pays for the device in 2-3 years.</p>
           </CardContent>
         </Card>
       </main>

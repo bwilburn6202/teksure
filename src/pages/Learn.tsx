@@ -213,7 +213,7 @@ export default function Learn() {
               <p className="font-semibold">
                 New: Interactive Courses with mini-quizzes and certificates
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Six flagship courses that mix guides, practice rooms, and three-question
                 quizzes. Finish every lesson to earn a named certificate.
               </p>
@@ -255,7 +255,7 @@ export default function Learn() {
                     <h3 className="text-lg font-bold text-foreground mb-2 leading-snug">
                       {course.title}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                    <p className="text-base text-muted-foreground leading-relaxed mb-4">
                       {course.description}
                     </p>
 
@@ -278,7 +278,7 @@ export default function Learn() {
                         {course.guides.slice(0, 4).map((g, i) => (
                           <li
                             key={g.slug}
-                            className="text-xs text-muted-foreground flex items-start gap-2"
+                            className="text-sm text-muted-foreground flex items-start gap-2"
                           >
                             <span className="w-4 h-4 rounded-full bg-background border border-border flex items-center justify-center text-[10px] font-semibold shrink-0 mt-0.5">
                               {i + 1}
@@ -287,7 +287,7 @@ export default function Learn() {
                           </li>
                         ))}
                         {course.guides.length > 4 && (
-                          <li className="text-xs text-muted-foreground/80 pl-6">
+                          <li className="text-sm text-muted-foreground/80 pl-6">
                             + {course.guides.length - 4} more lesson
                             {course.guides.length - 4 === 1 ? '' : 's'}
                           </li>
@@ -335,7 +335,7 @@ export default function Learn() {
                       <point.icon className="h-5 w-5 text-primary" />
                     </div>
                     <h3 className="font-semibold text-foreground mb-2">{point.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed">
                       {point.description}
                     </p>
                   </CardContent>

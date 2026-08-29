@@ -18,11 +18,11 @@ export default function SeniorBrainHQRev() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cost</h2><p>$96/year. Free trial. AARP discount available.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why different</h2><p>Backed by 100+ peer-reviewed studies. Designed by neuroscientists.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefits</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Faster reaction time</li><li>Better balance</li><li>Improved memory</li><li>Reduced fall risk</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefits</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Faster reaction time</li><li>Better balance</li><li>Improved memory</li><li>Reduced fall risk</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Daily use</h2><p>30 minutes, 3-5 days a week. Best results show after 8-10 weeks.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Vs Lumosity</h2><p>BrainHQ has more research. Lumosity is more game-like. Both work, BrainHQ slightly more proven.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Insurance</h2><p>Some Medicare Advantage plans cover. Worth asking your plan.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pair brain training with daily walking. Combination beats either alone.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pair brain training with daily walking. Combination beats either alone.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

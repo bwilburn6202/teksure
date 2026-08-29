@@ -85,8 +85,8 @@ export default function KeyboardShortcutsCheatsheet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Top 5 most useful</h2>
-            <p className="text-sm">If you only learn 5 shortcuts, learn these:</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">If you only learn 5 shortcuts, learn these:</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base mt-2">
               <li><strong>Copy/Paste</strong> — daily.</li>
               <li><strong>Undo</strong> — saves you from typos.</li>
               <li><strong>Find on page</strong> — Ctrl/+F. Instantly locate any word.</li>
@@ -99,7 +99,7 @@ export default function KeyboardShortcutsCheatsheet() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best way to learn</h3>
-            <p className="text-sm text-muted-foreground">Pick ONE shortcut a week. Use it every chance. Once it\'s automatic, learn the next. After 10 weeks, you\'ll be twice as fast at the computer.</p>
+            <p className="text-base text-muted-foreground">Pick ONE shortcut a week. Use it every chance. Once it\'s automatic, learn the next. After 10 weeks, you\'ll be twice as fast at the computer.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function EVHomeChargerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">3 levels of charging</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Level 1</strong> — regular outlet. 4-5 miles/hour. Slow.</li>
               <li><strong>Level 2</strong> — 240V outlet. 25-40 miles/hour. Best home.</li>
               <li><strong>Level 3 (DC fast)</strong> — public stations. 100+ miles in 30 min.</li>
@@ -32,7 +32,7 @@ export default function EVHomeChargerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best Level 2 chargers 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Wallbox Pulsar Plus</strong> — $700. Compact + smart.</li>
               <li><strong>ChargePoint Home Flex</strong> — $700. Reliable.</li>
               <li><strong>Tesla Wall Connector</strong> — $475. For Teslas + others.</li>
@@ -46,7 +46,7 @@ export default function EVHomeChargerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Federal tax credits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30% federal tax credit on EV charger install.</li>
               <li>Up to $1,000.</li>
               <li>Plus state/utility rebates.</li>
@@ -59,7 +59,7 @@ export default function EVHomeChargerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install steps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick charger model.</li>
               <li>Hire licensed electrician.</li>
               <li>240V circuit installed.</li>
@@ -75,7 +75,7 @@ export default function EVHomeChargerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost to charge</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$0.10-0.15/kWh average.</li>
               <li>~$8-12 to fill EV from empty.</li>
               <li>Equivalent gas: $1/gallon.</li>
@@ -89,7 +89,7 @@ export default function EVHomeChargerGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Apartment / no garage</h3>
-            <p className="text-sm text-muted-foreground">If no garage — Level 1 (regular outlet) might work for daily local use. Some apartment complexes adding chargers. Check workplace charging. Public DC fast chargers — Tesla Supercharger, Electrify America. EV ownership easier than ever.</p>
+            <p className="text-base text-muted-foreground">If no garage — Level 1 (regular outlet) might work for daily local use. Some apartment complexes adding chargers. Check workplace charging. Public DC fast chargers — Tesla Supercharger, Electrify America. EV ownership easier than ever.</p>
           </CardContent>
         </Card>
       </main>

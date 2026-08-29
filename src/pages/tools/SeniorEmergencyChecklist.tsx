@@ -23,7 +23,7 @@ export default function SeniorEmergencyChecklist() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">5. Find My Phone ON</h2><p>Settings → Find My → Find My iPhone. Family can locate you.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">6. Battery widget</h2><p>Add to home screen. Watch charge before going out.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">7. Backup phone weekly</h2><p>iCloud or Google Drive auto-backup. Phone loss isn&apos;t catastrophic.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Print this list. Check off as you do each step.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Print this list. Check off as you do each step.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

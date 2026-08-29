@@ -19,7 +19,7 @@ export default function PaperShreddingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Always SHRED</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Anything with Social Security number.</li>
               <li>Bank statements over 1 year old (digital copies fine).</li>
               <li>Credit card statements over 1 year old.</li>
@@ -38,7 +38,7 @@ export default function PaperShreddingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">KEEP forever (paper or scan)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Birth/death/marriage certificates.</li>
               <li>Social Security card.</li>
               <li>Passports (current + recent expired).</li>
@@ -56,7 +56,7 @@ export default function PaperShreddingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Keep TEMPORARILY</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tax returns</strong> — 7 years (IRS audit window).</li>
               <li><strong>Tax-supporting docs</strong> — receipts, donation logs — 7 years.</li>
               <li><strong>Home improvement receipts</strong> — until you sell + 3 years.</li>
@@ -70,7 +70,7 @@ export default function PaperShreddingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to shred</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Home shredder</strong> — $40-150 cross-cut. Brands: Fellowes, AmazonBasics. Skip strip-cut (less secure).</li>
               <li><strong>FREE community shred days</strong> — banks, credit unions, AARP host these spring/fall. Search "[your city] free shred day".</li>
               <li><strong>Staples / Office Depot / UPS Store</strong> — $1-2/lb shredding service.</li>
@@ -83,7 +83,7 @@ export default function PaperShreddingGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Go digital</h3>
-            <p className="text-sm text-muted-foreground">Scan and save important docs digitally. Most banks and brokerages let you opt out of paper statements — just download yearly tax PDFs. After 3 months, you&apos;ll generate 80% less paper. See /tools/scanner-app-picks for free scanning apps.</p>
+            <p className="text-base text-muted-foreground">Scan and save important docs digitally. Most banks and brokerages let you opt out of paper statements — just download yearly tax PDFs. After 3 months, you&apos;ll generate 80% less paper. See /tools/scanner-app-picks for free scanning apps.</p>
           </CardContent>
         </Card>
       </main>

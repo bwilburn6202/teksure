@@ -22,7 +22,7 @@ export default function SeniorIPadKindle() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Library Libby</h2><p>FREE library books. Read in Kindle app on iPad.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Audio books</h2><p>Buy Whispersync. Listen + read together. Senior-friendly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free books</h2><p>Project Gutenberg via Kindle. 70,000 free classics.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: iPad screen tires eyes. Use Kindle Paperwhite for long reading.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: iPad screen tires eyes. Use Kindle Paperwhite for long reading.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

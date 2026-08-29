@@ -22,7 +22,7 @@ export default function SeniorBalanceVibration() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Circulation</h2><p>Lymphatic drainage. Reduces swelling. Better for legs.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out</h2><p>Pacemakers, recent surgery, pregnancy avoid. Ask doctor first.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Easier than gym</h2><p>10 minutes daily. No skill needed. Accessible for all senior fitness levels.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: $200 plate may pay for itself in fall prevention. Real medicine.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: $200 plate may pay for itself in fall prevention. Real medicine.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -70,7 +70,7 @@ export default function PhoneRepairOrReplace() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-orange-500/10 rounded-full">
-                <Wrench className="h-8 w-8 text-orange-600" />
+                <Wrench className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Phone Repair or Replace?</h1>
@@ -111,24 +111,24 @@ export default function PhoneRepairOrReplace() {
           {result && (
             <>
               <Card className={`border-2 mb-6 ${
-                result.verdict === 'repair' ? 'border-green-300 bg-green-50 dark:bg-green-950/20' :
-                result.verdict === 'replace' ? 'border-blue-300 bg-blue-50 dark:bg-blue-950/20' :
-                'border-amber-300 bg-amber-50 dark:bg-amber-950/20'
+                result.verdict === 'repair' ? 'border-green-300 bg-success dark:bg-green-950/20' :
+                result.verdict === 'replace' ? 'border-blue-300 bg-info dark:bg-blue-950/20' :
+                'border-amber-300 bg-warn dark:bg-amber-950/20'
               }`}>
                 <CardContent className="p-6">
                   <Badge className="mb-2">
                     {result.verdict === 'repair' ? 'Repair' : result.verdict === 'replace' ? 'Replace' : 'Close call'}
                   </Badge>
                   <h2 className="text-2xl font-bold mb-2">{result.headline}</h2>
-                  <p className="text-sm text-muted-foreground mb-3">{result.reason}</p>
-                  <p className="text-sm bg-background/60 rounded-md p-3 border border-border"><strong>Typical cost — </strong>{result.cost}</p>
+                  <p className="text-base text-muted-foreground mb-3">{result.reason}</p>
+                  <p className="text-base bg-background/60 rounded-md p-3 border border-border"><strong>Typical cost — </strong>{result.cost}</p>
                 </CardContent>
               </Card>
 
               <Card className="border-border mb-6">
                 <CardContent className="p-5">
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Where to get repairs done — for {problemLabel[problem!]}</p>
-                  <ul className="space-y-2 text-sm">
+                  <ul className="space-y-2 text-base">
                     <li><strong>Apple Store</strong> — same-day screen and battery service for iPhones. Walk in or book at apple.com/retail. Genuine parts.</li>
                     <li><strong>uBreakiFix (by Asurion)</strong> — Apple, Samsung, and Google authorized. Most repairs done in 2 hours. Locations in most US cities.</li>
                     <li><strong>Best Buy / Geek Squad</strong> — authorized Samsung repairs. Good if you have a store nearby.</li>
@@ -137,9 +137,9 @@ export default function PhoneRepairOrReplace() {
                 </CardContent>
               </Card>
 
-              <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+              <Card className="border-warn-foreground/25 bg-warn mb-6">
                 <CardContent className="p-5 flex gap-3">
-                  <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                   <div className="text-sm">
                     <p className="font-semibold mb-1">Watch out for "phone repair" pop-up ads</p>
                     <p className="text-muted-foreground">
@@ -155,16 +155,16 @@ export default function PhoneRepairOrReplace() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/computer-repair-options" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Computer Repair Options</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Same question, but for your laptop or desktop.</p>
+                <p className="font-medium text-base">Computer Repair Options</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Same question, but for your laptop or desktop.</p>
               </Link>
               <Link to="/tools/device-retirement-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Device Retirement Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">When the old phone is finally done.</p>
+                <p className="font-medium text-base">Device Retirement Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">When the old phone is finally done.</p>
               </Link>
               <Link to="/tools/phone-insurance-decision" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Phone Insurance Decision</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Should you buy AppleCare or skip it?</p>
+                <p className="font-medium text-base">Phone Insurance Decision</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Should you buy AppleCare or skip it?</p>
               </Link>
             </div>
           </div>

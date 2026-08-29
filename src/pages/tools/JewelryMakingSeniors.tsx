@@ -19,7 +19,7 @@ export default function JewelryMakingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy starter techniques</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Beading</strong> — simple stringing. Starter kit $30.</li>
               <li><strong>Wire wrapping</strong> — copper/silver wire + beads. $30.</li>
               <li><strong>Knotting</strong> — pearl knotting style.</li>
@@ -33,7 +33,7 @@ export default function JewelryMakingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Starter supplies ($30-50)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mixed beads — Walmart $10 jar.</li>
               <li>Thin elastic OR beading wire.</li>
               <li>Crimp beads + closures.</li>
@@ -48,7 +48,7 @@ export default function JewelryMakingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Magnifying glass / desk magnifier.</li>
               <li>Bead board with measuring channels.</li>
               <li>Larger holes in beads (easier threading).</li>
@@ -62,7 +62,7 @@ export default function JewelryMakingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free learning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YouTube</strong> — endless tutorials.</li>
               <li><strong>Beadaholique YouTube</strong> — best beginner channel.</li>
               <li><strong>Pinterest</strong> — free patterns.</li>
@@ -76,7 +76,7 @@ export default function JewelryMakingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sell jewelry?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Etsy</strong> — biggest market. See /tools/etsy-selling-for-seniors.</li>
               <li><strong>Local craft fairs</strong> — try a few.</li>
               <li><strong>Facebook Marketplace</strong>.</li>
@@ -90,7 +90,7 @@ export default function JewelryMakingSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior arthritis-friendly</h3>
-            <p className="text-sm text-muted-foreground">If hand pain — try LARGER beads + macrame knot bracelets. Avoid tiny seed beads. Polymer clay easier than wire wrapping. Many senior crafters successfully adapt to limitations. Pottery, painting also alternatives if jewelry too fiddly.</p>
+            <p className="text-base text-muted-foreground">If hand pain — try LARGER beads + macrame knot bracelets. Avoid tiny seed beads. Polymer clay easier than wire wrapping. Many senior crafters successfully adapt to limitations. Pottery, painting also alternatives if jewelry too fiddly.</p>
           </CardContent>
         </Card>
       </main>

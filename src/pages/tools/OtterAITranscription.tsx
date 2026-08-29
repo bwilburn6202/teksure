@@ -19,7 +19,7 @@ export default function OtterAITranscription() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Otter?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>App that records voices + transcribes to text.</li>
               <li>Real-time live transcripts.</li>
               <li>Highlight key points later.</li>
@@ -33,7 +33,7 @@ export default function OtterAITranscription() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best uses for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Doctor appointments — never forget instructions.</li>
               <li>Family meetings about elder care.</li>
               <li>Church sermons — review later.</li>
@@ -47,7 +47,7 @@ export default function OtterAITranscription() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Doctor visit use case</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ask doctor permission first — most agree.</li>
               <li>Place phone on table, tap record.</li>
               <li>Listen normally — no need to take notes.</li>
@@ -61,7 +61,7 @@ export default function OtterAITranscription() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Otter free from app store.</li>
               <li>Create account — email + password.</li>
               <li>Tap red microphone to start.</li>
@@ -75,7 +75,7 @@ export default function OtterAITranscription() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Always inform people you&apos;re recording.</li>
               <li>Some states require both-party consent.</li>
               <li>Otter stores transcripts in cloud.</li>
@@ -89,7 +89,7 @@ export default function OtterAITranscription() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone Voice Memos — auto-transcription on newer iPhones.</li>
               <li>Google Recorder app (Pixel phones) — free.</li>
               <li>Microsoft Word — built-in dictation.</li>
@@ -103,7 +103,7 @@ export default function OtterAITranscription() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Game-changer for medical visits</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;ve ever left a doctor&apos;s appointment trying to remember everything they said, Otter changes that. Ask your doctor &quot;May I record this so I can review it later?&quot; Most will agree. After the visit, the full transcript is searchable. You can email key parts to your adult children. Many seniors say this single app dramatically improved their healthcare experience.</p>
+            <p className="text-base text-muted-foreground">If you&apos;ve ever left a doctor&apos;s appointment trying to remember everything they said, Otter changes that. Ask your doctor &quot;May I record this so I can review it later?&quot; Most will agree. After the visit, the full transcript is searchable. You can email key parts to your adult children. Many seniors say this single app dramatically improved their healthcare experience.</p>
           </CardContent>
         </Card>
       </main>

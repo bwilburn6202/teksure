@@ -19,15 +19,15 @@ export default function PauseStreamingRotation() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">The strategy</h2>
-            <p className="text-sm">Subscribe to ONE streaming service per month. Binge what you want. Cancel. Move to another. Repeat. You can re-subscribe in 30 seconds anytime.</p>
-            <p className="text-sm mt-2">Most services don\'t penalize cancellation. They WANT you back.</p>
+            <p className="text-base">Subscribe to ONE streaming service per month. Binge what you want. Cancel. Move to another. Repeat. You can re-subscribe in 30 seconds anytime.</p>
+            <p className="text-base mt-2">Most services don\'t penalize cancellation. They WANT you back.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to rotate</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>List shows you want to watch this year.</li>
               <li>Match each to its streaming service.</li>
               <li>Pick service for THIS month based on what you most want now.</li>
@@ -40,8 +40,8 @@ export default function PauseStreamingRotation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where each show is</h2>
-            <p className="text-sm mb-2">Use <strong>JustWatch.com</strong> — search any show, see which service has it.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base mb-2">Use <strong>JustWatch.com</strong> — search any show, see which service has it.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Marvel + Star Wars + Pixar → Disney+.</li>
               <li>Hulu Originals + Hulu Plus Live TV.</li>
               <li>HBO/Max series.</li>
@@ -57,7 +57,7 @@ export default function PauseStreamingRotation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy cancel + resub</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Most services: account → settings → cancel subscription.</li>
               <li>Apple App Store subscriptions: Settings → Apple ID → Subscriptions.</li>
               <li>Reactivate: same place. 30 seconds.</li>
@@ -69,7 +69,7 @@ export default function PauseStreamingRotation() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Math</h3>
-            <p className="text-sm text-muted-foreground">Stacked: Netflix + Hulu + Disney+ + Max + Apple TV+ = $100/month. Rotating one at a time: ~$15/month. Savings: $1,020/year.</p>
+            <p className="text-base text-muted-foreground">Stacked: Netflix + Hulu + Disney+ + Max + Apple TV+ = $100/month. Rotating one at a time: ~$15/month. Savings: $1,020/year.</p>
           </CardContent>
         </Card>
       </main>

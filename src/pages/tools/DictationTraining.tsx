@@ -19,7 +19,7 @@ export default function DictationTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why dictation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>3-5x faster than typing for most people.</li>
               <li>Saves arthritic fingers.</li>
               <li>Better emails (you sound more natural).</li>
@@ -32,7 +32,7 @@ export default function DictationTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone / iPad</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open any app with text (Messages, Mail, Notes, Safari).</li>
               <li>Tap microphone icon at bottom-right of keyboard.</li>
               <li>Speak. Words appear instantly.</li>
@@ -46,7 +46,7 @@ export default function DictationTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android (Gboard)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Tap microphone on keyboard.</li>
               <li>Or hold spacebar.</li>
               <li>Speak. Pixel/Samsung have AI for natural punctuation.</li>
@@ -58,7 +58,7 @@ export default function DictationTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mac</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>System Settings → Keyboard → Dictation ON.</li>
               <li>Press F5 (or whatever shortcut) to start dictating in any app.</li>
               <li>Or open Notes/Pages, click microphone icon.</li>
@@ -70,7 +70,7 @@ export default function DictationTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Windows</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>In any text field, press <kbd className="bg-muted px-1.5 py-0.5 rounded">Win</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">H</kbd>.</li>
               <li>Voice typing toolbar appears.</li>
               <li>Speak. Words appear.</li>
@@ -82,7 +82,7 @@ export default function DictationTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for accuracy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Speak clearly, normal speed. NOT slowly — that confuses AI.</li>
               <li>Use a quiet room first time.</li>
               <li>Get headphones with mic — much better quality than built-in.</li>
@@ -95,7 +95,7 @@ export default function DictationTraining() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Practice with low-stakes tasks</h3>
-            <p className="text-sm text-muted-foreground">First week — dictate your shopping lists, reminders, short text messages. By week 2, try short emails. By month 2, you&apos;ll dictate longer messages without thinking. Most people never go back to thumb typing for anything more than 3 sentences.</p>
+            <p className="text-base text-muted-foreground">First week — dictate your shopping lists, reminders, short text messages. By week 2, try short emails. By month 2, you&apos;ll dictate longer messages without thinking. Most people never go back to thumb typing for anything more than 3 sentences.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function QuiltDesignSoftware() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quilting apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>EQ8 — Electric Quilt 8 — gold standard, $239.</li>
               <li>BlockBuster — affordable design tool.</li>
               <li>Quilt Builder — iPhone/iPad free + paid.</li>
@@ -33,7 +33,7 @@ export default function QuiltDesignSoftware() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why use software?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>See finished quilt before cutting.</li>
               <li>Try color combos virtually.</li>
               <li>Calculate fabric requirements.</li>
@@ -47,7 +47,7 @@ export default function QuiltDesignSoftware() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free Robert Kaufman</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>RobertKaufman.com/quilt — free.</li>
               <li>Drag-and-drop quilt designer.</li>
               <li>Use Robert Kaufman fabric prints.</li>
@@ -61,7 +61,7 @@ export default function QuiltDesignSoftware() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quilting communities</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Modern Quilt Guild.</li>
               <li>Local quilt guilds.</li>
               <li>Facebook quilt groups.</li>
@@ -75,7 +75,7 @@ export default function QuiltDesignSoftware() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouTube quilters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Missouri Star Quilt Co — most popular.</li>
               <li>Eleanor Burns Quilt in a Day.</li>
               <li>Suzy Quilts.</li>
@@ -89,7 +89,7 @@ export default function QuiltDesignSoftware() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sell quilt patterns</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sell PDFs on Etsy — passive income.</li>
               <li>$5–$15 per pattern.</li>
               <li>Sell same pattern unlimited times.</li>
@@ -103,7 +103,7 @@ export default function QuiltDesignSoftware() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free tools first</h3>
-            <p className="text-sm text-muted-foreground">Before paying $239 for EQ8, try Robert Kaufman&apos;s free online designer. For most senior quilters this free tool plus YouTube tutorials covers all design needs. EQ8 is for serious or professional quilters who design for sale. Combined with Pinterest for inspiration + Missouri Star YouTube for techniques, you have a complete free quilt-design toolkit.</p>
+            <p className="text-base text-muted-foreground">Before paying $239 for EQ8, try Robert Kaufman&apos;s free online designer. For most senior quilters this free tool plus YouTube tutorials covers all design needs. EQ8 is for serious or professional quilters who design for sale. Combined with Pinterest for inspiration + Missouri Star YouTube for techniques, you have a complete free quilt-design toolkit.</p>
           </CardContent>
         </Card>
       </main>

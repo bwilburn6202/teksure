@@ -19,7 +19,7 @@ export default function SourdoughForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior love it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Therapeutic process.</li>
               <li>Smell of baking bread.</li>
               <li>Healthier than store bread.</li>
@@ -34,7 +34,7 @@ export default function SourdoughForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get started</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Buy starter (King Arthur, Etsy).</li>
               <li>Or make from scratch (5 days).</li>
               <li>Feed daily — small amount flour + water.</li>
@@ -47,7 +47,7 @@ export default function SourdoughForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Equipment ($100)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Dutch oven (Le Creuset / Lodge cast iron $50-300).</li>
               <li>Banneton — proofing basket $20.</li>
               <li>Bench scraper.</li>
@@ -61,7 +61,7 @@ export default function SourdoughForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tartine Bread</strong> — Chad Robertson book.</li>
               <li><strong>Joshua Weissman</strong> — YouTube.</li>
               <li><strong>King Arthur Baking</strong> — recipes free.</li>
@@ -75,7 +75,7 @@ export default function SourdoughForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No-knead recipes easier on hands.</li>
               <li>Stretch + folds vs kneading.</li>
               <li>Stand mixer with dough hook.</li>
@@ -89,7 +89,7 @@ export default function SourdoughForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth the effort</h3>
-            <p className="text-sm text-muted-foreground">First few loaves disappointing — normal. By loaf 10 — getting good. Loaf 50 — bakery quality. Many seniors lifetime hobby. Share starter with friends — passes generations. Free hobby once started.</p>
+            <p className="text-base text-muted-foreground">First few loaves disappointing — normal. By loaf 10 — getting good. Loaf 50 — bakery quality. Many seniors lifetime hobby. Share starter with friends — passes generations. Free hobby once started.</p>
           </CardContent>
         </Card>
       </main>

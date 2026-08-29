@@ -19,7 +19,7 @@ export default function HospiceMyths() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Myth: Hospice = giving up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>FALSE</strong>. Hospice = best comfort + quality of life.</li>
               <li>Aggressive symptom management.</li>
               <li>Family support.</li>
@@ -33,7 +33,7 @@ export default function HospiceMyths() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Myth: Hospice means death soon</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Eligible if life expectancy 6 months or less.</li>
               <li>If life prolongs — re-certify.</li>
               <li>Many on hospice 1+ years.</li>
@@ -47,7 +47,7 @@ export default function HospiceMyths() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Myth: Have to be home</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most hospice IS at home.</li>
               <li>Also in nursing homes, assisted living.</li>
               <li>Hospice inpatient unit if symptoms uncontrolled.</li>
@@ -60,7 +60,7 @@ export default function HospiceMyths() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Myth: No medications</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>FALSE</strong>. Hospice covers all comfort meds.</li>
               <li>Pain control aggressive.</li>
               <li>No withdrawal of essential meds usually.</li>
@@ -73,7 +73,7 @@ export default function HospiceMyths() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real hospice benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FREE with Medicare (full benefit).</li>
               <li>Nursing visits, doctor, social worker, chaplain.</li>
               <li>All medications + equipment covered.</li>
@@ -88,7 +88,7 @@ export default function HospiceMyths() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t wait too long</h3>
-            <p className="text-sm text-muted-foreground">Median hospice stay = 3 weeks. Should be 3-6 months. Late hospice = lost benefits. Ask doctor: &quot;Would you be surprised if I/parent died in next year?&quot; If no — discuss hospice. Earlier = better quality of life. Don&apos;t wait until last days.</p>
+            <p className="text-base text-muted-foreground">Median hospice stay = 3 weeks. Should be 3-6 months. Late hospice = lost benefits. Ask doctor: &quot;Would you be surprised if I/parent died in next year?&quot; If no — discuss hospice. Earlier = better quality of life. Don&apos;t wait until last days.</p>
           </CardContent>
         </Card>
       </main>

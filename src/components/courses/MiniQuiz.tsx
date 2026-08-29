@@ -107,10 +107,10 @@ export function MiniQuiz({ questions, onComplete }: Props) {
                       </span>
 
                       {showFeedback && isAnswer && (
-                        <CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0" aria-hidden="true" />
+                        <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0" aria-hidden="true" />
                       )}
                       {showFeedback && isPicked && !isCorrect && (
-                        <XCircle className="h-5 w-5 text-red-600 shrink-0" aria-hidden="true" />
+                        <XCircle className="h-5 w-5 text-danger-foreground shrink-0" aria-hidden="true" />
                       )}
                     </button>
                   );
@@ -126,7 +126,7 @@ export function MiniQuiz({ questions, onComplete }: Props) {
                   }`}
                 >
                   <div className="flex items-start gap-2">
-                    <Lightbulb className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
+                    <Lightbulb className="h-4 w-4 text-warn-foreground shrink-0 mt-0.5" />
                     <p className="text-foreground/90">
                       <strong>
                         {isCorrect ? 'Right. ' : 'Not quite. '}
@@ -143,7 +143,7 @@ export function MiniQuiz({ questions, onComplete }: Props) {
 
       {!submitted && (
         <div className="flex items-center justify-between gap-3">
-          <p className="text-xs text-muted-foreground">
+          <p className="text-sm text-muted-foreground">
             {allAnswered
               ? 'All three answered — submit when ready.'
               : `${answers.filter((a) => a !== null).length} of ${questions.length} answered`}

@@ -99,7 +99,7 @@ export default function SmartTvAccessibility() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-indigo-500/10 rounded-full">
-                <Tv className="h-8 w-8 text-indigo-700 dark:text-indigo-300" />
+                <Tv className="h-8 w-8 text-primary " />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Smart TV Accessibility</h1>
@@ -112,9 +112,9 @@ export default function SmartTvAccessibility() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Smart TV Accessibility' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Audio descriptions are a lifesaver — but they are OFF by default</p>
                 <p className="text-muted-foreground">
@@ -126,7 +126,7 @@ export default function SmartTvAccessibility() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Which TV system do you have?</p>
+              <p className="text-base font-semibold mb-3">Which TV system do you have?</p>
               <div className="grid sm:grid-cols-3 gap-2">
                 {([
                   { id: 'roku' as System,     label: 'Roku' },
@@ -137,7 +137,7 @@ export default function SmartTvAccessibility() {
                     className={`p-3 rounded-lg border text-left transition-all ${
                       system === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -147,12 +147,12 @@ export default function SmartTvAccessibility() {
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
               <Badge variant="outline" className="mb-2">{setup.name}</Badge>
-              <p className="text-sm text-muted-foreground mb-3"><strong>For:</strong> {setup.whoFor}</p>
+              <p className="text-base text-muted-foreground mb-3"><strong>For:</strong> {setup.whoFor}</p>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Setup steps</p>
               <ol className="space-y-2 mb-5">
                 {setup.steps.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{s}</span>
                   </li>
@@ -162,7 +162,7 @@ export default function SmartTvAccessibility() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">What this unlocks</p>
               <ul className="space-y-1.5">
                 {setup.features.map((f, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-primary shrink-0">•</span><span>{f}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-primary shrink-0">•</span><span>{f}</span></li>
                 ))}
               </ul>
             </CardContent>
@@ -172,16 +172,16 @@ export default function SmartTvAccessibility() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Low Vision Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Phone, tablet, and computer too.</p>
+                <p className="font-medium text-base">Low Vision Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Phone, tablet, and computer too.</p>
               </Link>
               <Link to="/tools/streaming-service-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Streaming Service Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Netflix, Prime, Disney+, more.</p>
+                <p className="font-medium text-base">Streaming Service Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Netflix, Prime, Disney+, more.</p>
               </Link>
               <Link to="/tools/cord-cutter-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Cord Cutter Wizard</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Replace cable, save money.</p>
+                <p className="font-medium text-base">Cord Cutter Wizard</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Replace cable, save money.</p>
               </Link>
             </div>
           </div>

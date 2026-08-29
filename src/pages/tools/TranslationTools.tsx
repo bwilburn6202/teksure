@@ -142,7 +142,7 @@ export default function TranslationTools() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <Languages className="h-8 w-8 text-emerald-600" />
+                <Languages className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Translation Tools Setup</h1>
@@ -157,14 +157,14 @@ export default function TranslationTools() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">What do you need to translate?</p>
+              <p className="text-base font-semibold mb-3">What do you need to translate?</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {USES.map(o => (
                   <button key={o.id} onClick={() => setUse(o.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       use === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -177,10 +177,10 @@ export default function TranslationTools() {
               <div className="space-y-3">
                 {guide.tools.map((t, i) => (
                   <div key={i} className="p-3 rounded-lg border border-border">
-                    <p className="font-medium text-sm mb-2">{t.name}</p>
+                    <p className="font-medium text-base mb-2">{t.name}</p>
                     <ol className="space-y-1.5">
                       {t.how.map((h, j) => (
-                        <li key={j} className="flex gap-2 text-xs">
+                        <li key={j} className="flex gap-2 text-sm">
                           <span className="text-primary font-semibold shrink-0">{j + 1}.</span>
                           <span className="text-muted-foreground">{h}</span>
                         </li>
@@ -194,8 +194,8 @@ export default function TranslationTools() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Translation accuracy in 2026</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Translation accuracy in 2026</p>
+              <p className="text-sm text-muted-foreground">
                 Modern translation apps (Google, Apple, DeepL) are very accurate for everyday phrases — much better than 5 years ago. They still struggle with idioms and humor. For anything important (legal, medical), use a translation service or a bilingual friend rather than relying on an app alone.
               </p>
             </CardContent>
@@ -205,20 +205,20 @@ export default function TranslationTools() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/travel-tech-checklist" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Travel Tech Checklist</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pre-trip phone setup.</p>
+                <p className="font-medium text-base">Travel Tech Checklist</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pre-trip phone setup.</p>
               </Link>
               <Link to="/tools/dictation-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Dictation Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Speak instead of type.</p>
+                <p className="font-medium text-base">Dictation Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Speak instead of type.</p>
               </Link>
               <Link to="/tools/document-scanner-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Document Scanner</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Scan + translate paper documents.</p>
+                <p className="font-medium text-base">Document Scanner</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Scan + translate paper documents.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: download languages BEFORE you travel. Cell data is expensive abroad and offline works perfectly once installed.
           </p>
         </div>

@@ -105,22 +105,22 @@ export default function CountdownToRetirement() {
       <main className="min-h-screen bg-background">
         <section className="bg-gradient-to-br from-amber-50 via-background to-orange-50 dark:from-amber-950/20 dark:to-orange-950/20 border-b border-border py-10 px-4 print:hidden">
           <div className="container max-w-3xl mx-auto text-center">
-            <div className="flex justify-center mb-3"><div className="p-3 bg-amber-500/10 rounded-full"><CalendarClock className="h-8 w-8 text-amber-600" /></div></div>
+            <div className="flex justify-center mb-3"><div className="p-3 bg-amber-500/10 rounded-full"><CalendarClock className="h-8 w-8 text-warn-foreground" /></div></div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Countdown to Retirement</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">A year-by-year tech checklist — five phases, from five years out to six months in. Do a few items each phase and the transition stays calm.</p>
-            <p className="text-sm text-muted-foreground mt-3">About 20 minutes per phase. Print the kit and tick boxes as you go.</p>
+            <p className="text-base text-muted-foreground mt-3">About 20 minutes per phase. Print the kit and tick boxes as you go.</p>
           </div>
         </section>
 
         <div className="container max-w-3xl mx-auto px-4 py-8 print:hidden">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Countdown to Retirement' }]} />
-          <Alert className="mb-6 border-amber-300 bg-amber-50 dark:bg-amber-950/30">
-            <AlertTriangle className="h-4 w-4 text-amber-700" />
-            <AlertTitle className="text-amber-900 dark:text-amber-200">Watch out for Medicare scam calls during enrollment</AlertTitle>
+          <Alert className="mb-6 border-warn-foreground/25 bg-warn ">
+            <AlertTriangle className="h-4 w-4 text-warn-foreground" />
+            <AlertTitle className="text-warn-foreground ">Watch out for Medicare scam calls during enrollment</AlertTitle>
             <AlertDescription className="text-amber-900/80 dark:text-amber-200/80 text-sm">Real Medicare will never call out of the blue asking for your Social Security number, bank info, or a new card fee. During the months around your 65th birthday, scammers ramp up. If a caller pressures you, hang up and call 1-800-MEDICARE yourself. Report scams at ftc.gov/complaint.</AlertDescription>
           </Alert>
           <Card className="border-border shadow-sm mb-6"><CardContent className="p-5 flex items-center justify-between flex-wrap gap-3">
-            <p className="text-sm text-muted-foreground">{done.size} of {total} done</p>
+            <p className="text-base text-muted-foreground">{done.size} of {total} done</p>
             <Button onClick={printIt} variant="outline" size="sm" className="gap-2"><Printer className="h-4 w-4" /> Print the checklist</Button>
           </CardContent></Card>
           <Card className="border-border bg-muted/30 mb-6"><CardContent className="p-5">
@@ -140,8 +140,8 @@ export default function CountdownToRetirement() {
                   <div className="p-2 bg-primary/10 rounded-lg"><Icon className="h-5 w-5 text-primary" /></div>
                   <div>
                     <h2 className="text-xl font-bold">{phase.title}</h2>
-                    <p className="text-xs text-muted-foreground italic">{phase.when}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{phase.whyNow}</p>
+                    <p className="text-sm text-muted-foreground italic">{phase.when}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{phase.whyNow}</p>
                   </div>
                 </div>
                 <Card className="border-border"><CardContent className="p-5"><div className="space-y-3">
@@ -149,8 +149,8 @@ export default function CountdownToRetirement() {
                     <label key={item.id} className={`flex items-start gap-3 p-3 rounded-lg border cursor-pointer transition-all ${done.has(item.id) ? 'border-green-300 bg-green-50/50 dark:bg-green-950/20' : 'border-border hover:bg-muted/40'}`}>
                       <Checkbox checked={done.has(item.id)} onCheckedChange={() => toggle(item.id)} className="mt-1" />
                       <div className="flex-1">
-                        <p className={`font-medium text-sm ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{item.detail}</p>
+                        <p className={`font-medium text-base ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{item.detail}</p>
                       </div>
                     </label>
                   ))}
@@ -164,30 +164,30 @@ export default function CountdownToRetirement() {
             <div className="grid sm:grid-cols-3 gap-3">
               {RELATED.map(r => (
                 <Link key={r.href} to={r.href} className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                  <p className="font-medium text-sm">{r.label}</p>
-                  <p className="text-xs text-muted-foreground mt-0.5">{r.sub}</p>
+                  <p className="font-medium text-base">{r.label}</p>
+                  <p className="text-sm text-muted-foreground mt-0.5">{r.sub}</p>
                 </Link>
               ))}
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1"><ChevronRight className="h-3 w-3" /> Quick Tip: stick the printed checklist on the fridge and cross off one item a week. Five years of small steps beats one frantic month.</p>
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1"><ChevronRight className="h-3 w-3" /> Quick Tip: stick the printed checklist on the fridge and cross off one item a week. Five years of small steps beats one frantic month.</p>
         </div>
 
         <div className="hidden print:block px-8 py-6 text-sm">
           <header className="border-b-2 border-black pb-3 mb-5">
             <h1 className="text-2xl font-bold">Countdown to Retirement Tech Checklist</h1>
-            <p className="text-xs text-gray-600 mt-1">Five phases, from five years out to six months in — TekSure.com</p>
+            <p className="text-sm text-muted-foreground mt-1">Five phases, from five years out to six months in — TekSure.com</p>
           </header>
           {PHASES.map(p => (
             <section key={p.id} className="mb-4 break-inside-avoid">
-              <h2 className="font-bold uppercase tracking-wider text-xs mb-1">{p.title} <span className="font-normal italic text-gray-600">({p.when})</span></h2>
-              <p className="text-xs text-gray-600 italic mb-2">{p.whyNow}</p>
+              <h2 className="font-bold uppercase tracking-wider text-xs mb-1">{p.title} <span className="font-normal italic text-muted-foreground">({p.when})</span></h2>
+              <p className="text-sm text-muted-foreground italic mb-2">{p.whyNow}</p>
               <ul className="space-y-1">
                 {p.items.map(item => (<li key={item.id} className="leading-snug"><span className="font-mono mr-1">&#9744;</span><strong>{item.title}.</strong> {item.detail}</li>))}
               </ul>
             </section>
           ))}
-          <footer className="mt-6 pt-3 border-t border-gray-300 text-xs text-gray-600">More free retirement tech tools at TekSure.com.</footer>
+          <footer className="mt-6 pt-3 border-t border-border text-xs text-muted-foreground">More free retirement tech tools at TekSure.com.</footer>
         </div>
       </main>
       <Footer />

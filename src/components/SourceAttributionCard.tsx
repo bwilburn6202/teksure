@@ -21,7 +21,7 @@ export function SourceAttributionCard({ source, article }: SourceAttributionCard
       aria-label="Content source attribution"
     >
       {/* Logo / icon */}
-      <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-white dark:bg-gray-800 border border-border shadow-sm overflow-hidden">
+      <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg bg-card border border-border shadow-sm overflow-hidden">
         <img
           src={source.logoUrl}
           alt={`${source.name} logo`}
@@ -43,17 +43,17 @@ export function SourceAttributionCard({ source, article }: SourceAttributionCard
         <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-0.5">
           Simplified from original source
         </p>
-        <p className={`font-semibold text-sm leading-snug ${source.textColor}`}>
+        <p className={`font-semibold text-base leading-snug ${source.textColor}`}>
           Originally published by {source.name}
         </p>
         <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-1.5">
           {article.authorName && (
-            <span className="flex items-center gap-1 text-xs text-muted-foreground">
+            <span className="flex items-center gap-1 text-sm text-muted-foreground">
               <User className="h-3 w-3" aria-hidden="true" />
               Written by {article.authorName}
             </span>
           )}
-          <span className="flex items-center gap-1 text-xs text-muted-foreground">
+          <span className="flex items-center gap-1 text-sm text-muted-foreground">
             <Calendar className="h-3 w-3" aria-hidden="true" />
             {formattedDate}
           </span>

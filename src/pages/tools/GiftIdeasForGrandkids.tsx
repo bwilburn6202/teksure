@@ -19,7 +19,7 @@ export default function GiftIdeasForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Ages 2-5</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Yoto Player</strong> ($100) — audio storyteller. Cards = stories. No screen.</li>
               <li><strong>Toniebox</strong> ($100) — same but with figurines.</li>
               <li><strong>Osmo Little Genius</strong> ($79) — physical pieces + iPad. Reading + counting games.</li>
@@ -32,7 +32,7 @@ export default function GiftIdeasForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Ages 6-9</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Nintendo Switch Lite</strong> ($200) — best kid console. Family games.</li>
               <li><strong>Amazon Echo Show 8 Kids</strong> ($150) — kid mode video calls + games.</li>
               <li><strong>Magnatiles or Lego City</strong> — physical (no screens).</li>
@@ -45,7 +45,7 @@ export default function GiftIdeasForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Ages 10-13</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple AirTag pack</strong> — track stuff. ($99 for 4-pack)</li>
               <li><strong>Bose / Sony kids headphones</strong> — $50-100. Volume-limited.</li>
               <li><strong>Switch Sports + Joy-Cons</strong> — physical games.</li>
@@ -59,7 +59,7 @@ export default function GiftIdeasForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Ages 14-17 (teens)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cash gift</strong> — let them pick. Honestly the best at this age.</li>
               <li><strong>Polaroid camera</strong> — $80. Instant prints feel special.</li>
               <li><strong>Wireless earbuds (AirPods or Galaxy Buds)</strong> — $80-200.</li>
@@ -73,7 +73,7 @@ export default function GiftIdeasForGrandkids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Better than tech</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Trip together</strong> — overnight, weekend, museum visit.</li>
               <li><strong>"Museum membership"</strong> — kids visit free with grandparent.</li>
               <li><strong>Magazine subscription</strong> — National Geographic Kids, Highlights.</li>
@@ -87,7 +87,7 @@ export default function GiftIdeasForGrandkids() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Ask parents first</h3>
-            <p className="text-sm text-muted-foreground">Always ask parents before tech gifts. Family rules vary widely. Some don&apos;t want screens. Some have allowed devices already. Coordinate to avoid duplicates + respect house rules.</p>
+            <p className="text-base text-muted-foreground">Always ask parents before tech gifts. Family rules vary widely. Some don&apos;t want screens. Some have allowed devices already. Coordinate to avoid duplicates + respect house rules.</p>
           </CardContent>
         </Card>
       </main>

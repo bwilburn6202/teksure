@@ -22,7 +22,7 @@ export default function SeniorHearingAidApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Live Listen (iPhone)</h2><p>Built into iPhone. Place phone on table — phone becomes a microphone, hearing aids hear better.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sound Amplifier (Android)</h2><p>Free Google app. Turns Android phone + earbuds into basic hearing assist.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Find lost ones</h2><p>Most apps show last known location on a map. Saves $1,000+ if you find them.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Save scenes for places you visit often: Church, Restaurant, Home.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Save scenes for places you visit often: Church, Restaurant, Home.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorFocusModes() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Allow only family</h2><p>Pick which contacts can ring through. Spouse + kids only.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Worship Focus</h2><p>Auto-silence at 10 AM Sunday. Church without buzzes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Driving Focus</h2><p>Auto-replies to texts: &ldquo;I&apos;m driving. Will text back when stopped.&rdquo;</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set Sleep Focus once. Better sleep starts that night.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set Sleep Focus once. Better sleep starts that night.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

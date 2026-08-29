@@ -49,7 +49,7 @@ export default function WeeklyMealPlanner() {
   const totalSlots = DAYS.length * MEALS.length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Weekly Meal Planner | TekSure"
         description="Plan a full week of meals in a simple grid. Tap suggestions, jot down a grocery list, and print the whole thing for the fridge."
@@ -58,10 +58,10 @@ export default function WeeklyMealPlanner() {
       <div className="max-w-3xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <ChefHat className="h-7 w-7 text-orange-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Weekly Meal Planner</h1>
+            <ChefHat className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Weekly Meal Planner</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Plan a full week of breakfast, lunch, and dinner. Tap the suggestion button to fill in ideas, then customize.
           </p>
         </div>
@@ -70,10 +70,10 @@ export default function WeeklyMealPlanner() {
         <Card className="mb-4 print:shadow-none">
           <CardContent className="py-3 px-4 flex flex-wrap gap-3 items-center justify-between">
             <div className="flex items-center gap-2">
-              <label htmlFor="week-start" className="text-sm font-medium text-gray-700">Week of:</label>
+              <label htmlFor="week-start" className="text-base font-medium text-foreground">Week of:</label>
               <Input id="week-start" type="date" value={weekStart} onChange={e => setWeekStart(e.target.value)} className="text-base w-44" />
             </div>
-            <span className="text-sm text-gray-500 print:hidden">
+            <span className="text-base text-muted-foreground print:hidden">
               {filledCount} of {totalSlots} meals planned
             </span>
           </CardContent>
@@ -84,20 +84,20 @@ export default function WeeklyMealPlanner() {
           {DAYS.map(day => (
             <Card key={day} className="print:break-inside-avoid">
               <CardHeader className="pb-2 pt-3">
-                <CardTitle className="text-lg text-gray-800">{day}</CardTitle>
+                <CardTitle className="text-lg text-foreground">{day}</CardTitle>
               </CardHeader>
               <CardContent className="pt-0 pb-3">
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                   {MEALS.map(m => {
                     const v = plan[key(day, m.id)] || "";
                     return (
-                      <div key={m.id} className="border border-gray-200 rounded-md p-2 bg-white">
+                      <div key={m.id} className="border border-border rounded-md p-2 bg-card">
                         <div className="flex items-center justify-between">
-                          <span className={`text-xs font-semibold ${m.color}`}>{m.emoji} {m.label}</span>
+                          <span className={`text-sm font-semibold ${m.color}`}>{m.emoji} {m.label}</span>
                           <button
                             type="button"
                             onClick={() => pickSuggestion(day, m.id)}
-                            className="text-xs text-blue-600 underline print:hidden"
+                            className="text-xs text-info-foreground underline print:hidden"
                             aria-label={`Suggest a ${m.label.toLowerCase()} idea`}
                           >
                             Suggest
@@ -121,7 +121,7 @@ export default function WeeklyMealPlanner() {
         {/* Grocery list */}
         <Card className="mb-4 print:break-inside-avoid">
           <CardHeader className="pb-2 pt-3">
-            <CardTitle className="text-lg flex items-center gap-2 text-emerald-700">
+            <CardTitle className="text-lg flex items-center gap-2 text-success-foreground">
               <Utensils className="h-5 w-5" />
               Grocery List for This Week
             </CardTitle>
@@ -131,7 +131,7 @@ export default function WeeklyMealPlanner() {
               placeholder="One item per line — eggs, milk, bread, chicken, lettuce..."
               value={grocery}
               onChange={e => setGrocery(e.target.value)}
-              className="w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white min-h-[140px] print:border-0 print:px-0"
+              className="w-full border border-border rounded-md px-3 py-2 text-base bg-card min-h-[140px] print:border-0 print:px-0"
             />
           </CardContent>
         </Card>
@@ -141,21 +141,21 @@ export default function WeeklyMealPlanner() {
             <Printer className="h-4 w-4" />
             Print Meal Plan
           </Button>
-          <Button variant="ghost" onClick={reset} className="gap-2 text-gray-500">
+          <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground">
             <RotateCcw className="h-4 w-4" />
             Start Over
           </Button>
         </div>
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Pick one or two days to cook bigger meals — those leftovers become tomorrow's lunch and stretch your time.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

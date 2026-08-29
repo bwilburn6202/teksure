@@ -19,14 +19,14 @@ export default function AppleIntelligenceGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it is</h2>
-            <p className="text-sm">Apple&apos;s AI features built into iPhone 15 Pro and newer, iPads with M1 chip+, and Macs with Apple Silicon. Free. Built in. Most processing happens ON your phone (private).</p>
+            <p className="text-base">Apple&apos;s AI features built into iPhone 15 Pro and newer, iPads with M1 chip+, and Macs with Apple Silicon. Free. Built in. Most processing happens ON your phone (private).</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What works on which device</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone 15 Pro / Pro Max</strong> </li>
               <li><strong>iPhone 16 / 16 Plus / 16 Pro / 16 Pro Max</strong> </li>
               <li><strong>iPhone 14 and older</strong>  (not enough chip power)</li>
@@ -40,7 +40,7 @@ export default function AppleIntelligenceGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cleaner</strong> — remove tourists from your photos. Tap → select → done.</li>
               <li><strong>Email summary</strong> — top of long emails get a 1-line summary.</li>
               <li><strong>Notification summary</strong> — bundles 10 messages into one short blurb.</li>
@@ -57,7 +57,7 @@ export default function AppleIntelligenceGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to turn it on</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Apple Intelligence &amp; Siri.</li>
               <li>Toggle "Apple Intelligence" ON.</li>
               <li>iPhone downloads ~5GB of AI models (over wifi).</li>
@@ -70,7 +70,7 @@ export default function AppleIntelligenceGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy notes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most processing on YOUR device — never uploaded.</li>
               <li>Bigger requests use Apple&apos;s "Private Cloud Compute" — encrypted, deleted after.</li>
               <li>ChatGPT integration is opt-in. Asks before each use.</li>
@@ -82,7 +82,7 @@ export default function AppleIntelligenceGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best one to try first</h3>
-            <p className="text-sm text-muted-foreground">"Clean Up" in Photos. Open any photo, tap Edit → Clean Up. Tap any unwanted person, sign, or trash can. AI removes it. Magic. Once you do it once, you&apos;ll go through old photos cleaning them up.</p>
+            <p className="text-base text-muted-foreground">"Clean Up" in Photos. Open any photo, tap Edit → Clean Up. Tap any unwanted person, sign, or trash can. AI removes it. Magic. Once you do it once, you&apos;ll go through old photos cleaning them up.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorGardeningApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Almanac</h2><p>Free. Old Farmer&apos;s Almanac. Best planting dates for your zip code.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">From Seed</h2><p>Plan a vegetable garden. Spacing, sun, harvest time auto-calculated.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">USDA Zone</h2><p>Type your zip into planthardiness.ars.usda.gov. Tells you what grows.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Take a photo of every plant when you buy it. Apps remember care for you.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Take a photo of every plant when you buy it. Apps remember care for you.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

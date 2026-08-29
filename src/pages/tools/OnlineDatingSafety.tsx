@@ -67,7 +67,7 @@ export default function OnlineDatingSafety() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-rose-500/10 rounded-full">
-                <Heart className="h-8 w-8 text-rose-600" />
+                <Heart className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Online Dating Safety for Older Adults</h1>
@@ -80,12 +80,12 @@ export default function OnlineDatingSafety() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Online Dating Safety' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div>
-                <p className="font-semibold text-sm text-amber-900 dark:text-amber-200">FTC warning — romance scams</p>
-                <p className="text-xs text-amber-900/80 dark:text-amber-200/80 mt-1">
+                <p className="font-semibold text-base text-warn-foreground ">FTC warning — romance scams</p>
+                <p className="text-sm text-amber-900/80 dark:text-amber-200/80 mt-1">
                   The Federal Trade Commission reports that romance scams cost US victims over $1.3 billion in 2024. Adults 60 and older lose more money per scam than any other age group. The rules below are what protect you.
                 </p>
               </div>
@@ -94,19 +94,19 @@ export default function OnlineDatingSafety() {
 
           <section className="mb-8">
             <div className="flex items-center gap-2 mb-3">
-              <Users className="h-5 w-5 text-rose-600" />
+              <Users className="h-5 w-5 text-danger-foreground" />
               <h2 className="text-xl font-bold">Five apps worth trying</h2>
             </div>
-            <p className="text-sm text-muted-foreground mb-3">All five are US-based, English-language, and used widely by people over 50. The first three are the most common picks.</p>
+            <p className="text-base text-muted-foreground mb-3">All five are US-based, English-language, and used widely by people over 50. The first three are the most common picks.</p>
             <div className="space-y-3">
               {APPS.map(a => (
                 <Card key={a.name} className="border-border">
                   <CardContent className="p-4">
                     <div className="flex items-baseline justify-between gap-2 flex-wrap">
-                      <p className="font-semibold text-sm">{a.name}</p>
-                      <p className="text-xs text-muted-foreground">{a.tagline}</p>
+                      <p className="font-semibold text-base">{a.name}</p>
+                      <p className="text-sm text-muted-foreground">{a.tagline}</p>
                     </div>
-                    <p className="text-xs text-muted-foreground mt-1">{a.note}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{a.note}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -115,16 +115,16 @@ export default function OnlineDatingSafety() {
 
           <section className="mb-8">
             <div className="flex items-center gap-2 mb-3">
-              <ShieldAlert className="h-5 w-5 text-rose-600" />
+              <ShieldAlert className="h-5 w-5 text-danger-foreground" />
               <h2 className="text-xl font-bold">Building a safe profile</h2>
             </div>
-            <p className="text-sm text-muted-foreground mb-3">Your profile is read by everyone — kind people and scammers alike. Less is safer.</p>
+            <p className="text-base text-muted-foreground mb-3">Your profile is read by everyone — kind people and scammers alike. Less is safer.</p>
             <div className="space-y-3">
               {PROFILE_RULES.map(r => (
                 <Card key={r.title} className="border-border">
                   <CardContent className="p-4">
-                    <p className="font-medium text-sm">{r.title}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{r.detail}</p>
+                    <p className="font-medium text-base">{r.title}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{r.detail}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -133,16 +133,16 @@ export default function OnlineDatingSafety() {
 
           <section className="mb-8">
             <div className="flex items-center gap-2 mb-3">
-              <AlertTriangle className="h-5 w-5 text-red-600" />
+              <AlertTriangle className="h-5 w-5 text-danger-foreground" />
               <h2 className="text-xl font-bold">Eight romance-scam red flags</h2>
             </div>
-            <p className="text-sm text-muted-foreground mb-3">If you see two or more of these, the person is almost certainly a scammer. If you see four or more, stop replying and report the profile.</p>
+            <p className="text-base text-muted-foreground mb-3">If you see two or more of these, the person is almost certainly a scammer. If you see four or more, stop replying and report the profile.</p>
             <div className="space-y-3">
               {RED_FLAGS.map(f => (
                 <Card key={f.title} className="border-border">
                   <CardContent className="p-4">
-                    <p className="font-medium text-sm">{f.title}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{f.detail}</p>
+                    <p className="font-medium text-base">{f.title}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{f.detail}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -151,16 +151,16 @@ export default function OnlineDatingSafety() {
 
           <section className="mb-8">
             <div className="flex items-center gap-2 mb-3">
-              <Heart className="h-5 w-5 text-rose-600" />
+              <Heart className="h-5 w-5 text-danger-foreground" />
               <h2 className="text-xl font-bold">The first in-person meet</h2>
             </div>
-            <p className="text-sm text-muted-foreground mb-3">Meeting in person is the goal. Plan it so that you stay in control of where you are and how you get home.</p>
+            <p className="text-base text-muted-foreground mb-3">Meeting in person is the goal. Plan it so that you stay in control of where you are and how you get home.</p>
             <div className="space-y-3">
               {FIRST_MEET.map(m => (
                 <Card key={m.title} className="border-border">
                   <CardContent className="p-4">
-                    <p className="font-medium text-sm">{m.title}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{m.detail}</p>
+                    <p className="font-medium text-base">{m.title}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{m.detail}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -169,16 +169,16 @@ export default function OnlineDatingSafety() {
 
           <section className="mb-8">
             <div className="flex items-center gap-2 mb-3">
-              <Flag className="h-5 w-5 text-rose-600" />
+              <Flag className="h-5 w-5 text-danger-foreground" />
               <h2 className="text-xl font-bold">How to report a scam profile</h2>
             </div>
-            <p className="text-sm text-muted-foreground mb-3">Reporting is free and anonymous. It removes the scammer from the app and helps the FBI track the rings behind these scams.</p>
+            <p className="text-base text-muted-foreground mb-3">Reporting is free and anonymous. It removes the scammer from the app and helps the FBI track the rings behind these scams.</p>
             <div className="space-y-3">
               {REPORT_STEPS.map(s => (
                 <Card key={s.title} className="border-border">
                   <CardContent className="p-4">
-                    <p className="font-medium text-sm">{s.title}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{s.detail}</p>
+                    <p className="font-medium text-base">{s.title}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{s.detail}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -187,8 +187,8 @@ export default function OnlineDatingSafety() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">One sentence to remember</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">One sentence to remember</p>
+              <p className="text-sm text-muted-foreground">
                 Anyone who says they love you but cannot video call, will not meet in person, and asks you for money is not real — no matter how kind their messages sound.
               </p>
             </CardContent>
@@ -198,20 +198,20 @@ export default function OnlineDatingSafety() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Paste a message and see the red flags.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Paste a message and see the red flags.</p>
               </Link>
               <Link to="/tools/scam-witness-statement" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Witness Statement</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Write a clear report for police or your bank.</p>
+                <p className="font-medium text-base">Scam Witness Statement</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Write a clear report for police or your bank.</p>
               </Link>
               <Link to="/tools/common-scams-library" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Common Scams Library</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Every scam pattern, plain-English.</p>
+                <p className="font-medium text-base">Common Scams Library</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Every scam pattern, plain-English.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: a kind person will wait while you take your time. Pressure to move fast — off the app, into love, into money — is the warning sign.
           </p>
         </div>

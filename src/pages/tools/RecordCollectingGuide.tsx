@@ -19,7 +19,7 @@ export default function RecordCollectingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vinyl is back</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vinyl outsold CDs since 2020.</li>
               <li>Original 1960s-70s records worth $$$.</li>
               <li>Beatles + Rolling Stones + Bowie LPs valuable.</li>
@@ -33,7 +33,7 @@ export default function RecordCollectingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Check old collection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Inspect album covers — wear?</li>
               <li>Mono vs stereo (mono often more valuable).</li>
               <li>First pressings (matrix codes) = most valuable.</li>
@@ -47,7 +47,7 @@ export default function RecordCollectingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find values</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Discogs.com</strong> — best tool. Real sale history.</li>
               <li><strong>eBay sold listings</strong>.</li>
               <li><strong>Popsike.com</strong> — auction archives.</li>
@@ -60,7 +60,7 @@ export default function RecordCollectingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Caring for records</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vertical storage (never stack flat).</li>
               <li>Cool, dry, dark.</li>
               <li>Anti-static inner sleeves ($30/100).</li>
@@ -75,7 +75,7 @@ export default function RecordCollectingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best turntables 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Audio-Technica AT-LP60X</strong> — $150. Best beginner.</li>
               <li><strong>Pro-Ject Debut Carbon EVO</strong> — $600. Senior-favorite.</li>
               <li><strong>Rega Planar 1</strong> — $475. Audiophile starter.</li>
@@ -89,7 +89,7 @@ export default function RecordCollectingGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Selling old records</h3>
-            <p className="text-sm text-muted-foreground"><strong>Discogs</strong> — best for individual sales. <strong>Local record stores</strong> — quick but 30-50% of value. <strong>Heritage Auctions</strong> for rare records. <strong>eBay</strong> for variety. Don&apos;t toss without checking — childhood Beatles albums could be worth $500-5,000+.</p>
+            <p className="text-base text-muted-foreground"><strong>Discogs</strong> — best for individual sales. <strong>Local record stores</strong> — quick but 30-50% of value. <strong>Heritage Auctions</strong> for rare records. <strong>eBay</strong> for variety. Don&apos;t toss without checking — childhood Beatles albums could be worth $500-5,000+.</p>
           </CardContent>
         </Card>
       </main>

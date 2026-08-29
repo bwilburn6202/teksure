@@ -19,7 +19,7 @@ export default function FirstDateTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Share location with friend</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone — Find My</strong>. Open Find My → People → Share My Location → pick friend, set 1-hour timer.</li>
               <li><strong>Android — Google Maps</strong>. Profile → Location sharing → pick friend + duration.</li>
               <li>Send "I&apos;m at [restaurant], on date with [name]" before going in.</li>
@@ -31,7 +31,7 @@ export default function FirstDateTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Emergency tools you already have</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone Emergency SOS</strong> — hold side + volume button → calls 911 + texts emergency contacts your location.</li>
               <li><strong>Apple Watch</strong> — same. Press + hold side button.</li>
               <li><strong>Android — Emergency button</strong> — power button 5 quick presses.</li>
@@ -43,7 +43,7 @@ export default function FirstDateTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Public meeting tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Coffee shop, restaurant during DAY first.</li>
               <li>Drive yourself. Park yourself.</li>
               <li>Don&apos;t share home address / workplace until trust built.</li>
@@ -57,7 +57,7 @@ export default function FirstDateTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you feel unsafe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tell server quietly. Many restaurants train staff for "ask for Angela" or similar code.</li>
               <li>Excuse yourself to bathroom. Call friend or Uber.</li>
               <li>Walk to a busy area. Restaurant manager. Hotel lobby.</li>
@@ -70,7 +70,7 @@ export default function FirstDateTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After the date</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Text your friend "Home safe."</li>
               <li>Don&apos;t share full address until 3rd-4th date.</li>
               <li>Cancel location sharing.</li>
@@ -83,7 +83,7 @@ export default function FirstDateTech() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">First-date phrases</h3>
-            <p className="text-sm text-muted-foreground">"I&apos;m so glad we met." "I had a nice time." "I&apos;ll be in touch." None of these commit you to a 2nd date. Take time to decide. Sleep on it. Most successful 60+ couples report SLOW starts.</p>
+            <p className="text-base text-muted-foreground">"I&apos;m so glad we met." "I had a nice time." "I&apos;ll be in touch." None of these commit you to a 2nd date. Take time to decide. Sleep on it. Most successful 60+ couples report SLOW starts.</p>
           </CardContent>
         </Card>
       </main>

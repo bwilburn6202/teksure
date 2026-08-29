@@ -173,7 +173,7 @@ export default function Favorites() {
                     <AlertDialogHeader>
                       <AlertDialogTitle className="flex items-center gap-2">
                         <AlertTriangle
-                          className="h-5 w-5 text-amber-600"
+                          className="h-5 w-5 text-warn-foreground"
                           aria-hidden="true"
                         />
                         Clear all saved items?
@@ -228,7 +228,7 @@ export default function Favorites() {
                       <Link to="/login">Sign In</Link>
                     </Button>
                   </div>
-                  <p className="text-sm text-muted-foreground mt-6">
+                  <p className="text-base text-muted-foreground mt-6">
                     Already saved guides on this browser?{' '}
                     <Link to="/guides" className="text-primary hover:underline font-medium">
                       Browse guides
@@ -300,7 +300,7 @@ export default function Favorites() {
                             {b.title}
                           </h2>
 
-                          <p className="text-xs text-muted-foreground">
+                          <p className="text-sm text-muted-foreground">
                             Saved {formatSavedDate(b.savedAt)}
                           </p>
 

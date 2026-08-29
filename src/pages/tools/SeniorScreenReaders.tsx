@@ -22,7 +22,7 @@ export default function SeniorScreenReaders() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">JAWS (Windows)</h2><p>$1,170. Most powerful. Available with grants for low-income seniors.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">NVDA (Windows)</h2><p>FREE. Open source. Strong free alternative to JAWS.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Learning curve</h2><p>Takes 1-2 weeks to use comfortably. Worth the effort for low vision.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Apple Free Aging in Place sessions teach VoiceOver to seniors. Free.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Apple Free Aging in Place sessions teach VoiceOver to seniors. Free.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

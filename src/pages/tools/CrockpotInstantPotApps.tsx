@@ -19,7 +19,7 @@ export default function CrockpotInstantPotApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best slow cooker apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Crockpot Recipes (free).</li>
               <li>SkinnyTaste — healthier recipes.</li>
               <li>Forks Over Knives — plant-based.</li>
@@ -33,7 +33,7 @@ export default function CrockpotInstantPotApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Instant Pot Connect</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Official Instant Pot app.</li>
               <li>Free with Instant Pot purchase.</li>
               <li>Smart pots connect via Bluetooth.</li>
@@ -47,7 +47,7 @@ export default function CrockpotInstantPotApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly recipes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Beef stew + chuck roast.</li>
               <li>Chicken + dumplings.</li>
               <li>Chili.</li>
@@ -61,7 +61,7 @@ export default function CrockpotInstantPotApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouTube channels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>365 Days of Slow Cooking.</li>
               <li>Pressure Luck Cooking.</li>
               <li>Six Sisters&apos; Stuff.</li>
@@ -75,7 +75,7 @@ export default function CrockpotInstantPotApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why slow cooker for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set in morning, dinner ready.</li>
               <li>Less work in evening when tired.</li>
               <li>Tough cuts of meat tender.</li>
@@ -89,7 +89,7 @@ export default function CrockpotInstantPotApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Instant Pot</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pressure cook — fast.</li>
               <li>Slow cook function too.</li>
               <li>Sauté + brown without separate pan.</li>
@@ -103,7 +103,7 @@ export default function CrockpotInstantPotApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free recipe apps + YouTube enough</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t pay for slow cooker apps. Free Crockpot Recipes app + YouTube cooking channels provide thousands of recipes. Build a list of 5–7 family favorites that you make on rotation. Slow cookers + Instant Pots are great for cooking-for-one or two — leftovers freeze well.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t pay for slow cooker apps. Free Crockpot Recipes app + YouTube cooking channels provide thousands of recipes. Build a list of 5–7 family favorites that you make on rotation. Slow cookers + Instant Pots are great for cooking-for-one or two — leftovers freeze well.</p>
           </CardContent>
         </Card>
       </main>

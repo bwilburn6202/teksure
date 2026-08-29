@@ -59,8 +59,8 @@ export default function TechBudgetPlanner() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-emerald-50 dark:bg-emerald-950/30 flex items-center justify-center flex-shrink-0">
-                <DollarSign className="h-6 w-6 text-emerald-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-success flex items-center justify-center flex-shrink-0">
+                <DollarSign className="h-6 w-6 text-success-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -94,7 +94,7 @@ export default function TechBudgetPlanner() {
                   />
                   <div className="flex justify-between text-xs text-muted-foreground">
                     <span>$0</span>
-                    <span className="text-emerald-600">Avg: ${cat.avg}</span>
+                    <span className="text-success-foreground">Avg: ${cat.avg}</span>
                     <span>${cat.max}</span>
                   </div>
                 </div>
@@ -106,14 +106,14 @@ export default function TechBudgetPlanner() {
           <div className="grid grid-cols-2 gap-4">
             <Card>
               <CardContent className="pt-6 text-center">
-                <p className="text-sm text-muted-foreground mb-1">Monthly Total</p>
-                <p className="text-3xl font-bold text-emerald-600">${monthlyTotal}</p>
+                <p className="text-base text-muted-foreground mb-1">Monthly Total</p>
+                <p className="text-3xl font-bold text-success-foreground">${monthlyTotal}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="pt-6 text-center">
-                <p className="text-sm text-muted-foreground mb-1">Annual Total</p>
-                <p className="text-3xl font-bold text-emerald-600">${annualTotal.toLocaleString()}</p>
+                <p className="text-base text-muted-foreground mb-1">Annual Total</p>
+                <p className="text-3xl font-bold text-success-foreground">${annualTotal.toLocaleString()}</p>
               </CardContent>
             </Card>
           </div>
@@ -124,16 +124,16 @@ export default function TechBudgetPlanner() {
             <CardContent className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-3 bg-muted/50 rounded-xl">
-                  <p className="text-xs text-muted-foreground">Your Monthly</p>
+                  <p className="text-sm text-muted-foreground">Your Monthly</p>
                   <p className="text-xl font-bold">${monthlyTotal}</p>
                 </div>
                 <div className="text-center p-3 bg-muted/50 rounded-xl">
-                  <p className="text-xs text-muted-foreground">Average Household</p>
+                  <p className="text-sm text-muted-foreground">Average Household</p>
                   <p className="text-xl font-bold">${industryAvg}</p>
                 </div>
               </div>
               <div className={`rounded-xl p-4 ${diff > 0 ? 'bg-amber-50 dark:bg-amber-950/20' : 'bg-emerald-50 dark:bg-emerald-950/20'}`}>
-                <p className="text-sm">
+                <p className="text-base">
                   {diff > 50 ? `You are spending $${diff}/month more than average. There may be some good savings opportunities below.` :
                    diff > 0 ? `You are spending $${diff}/month more than average, which is not far off.` :
                    diff === 0 ? 'You are right at the average. Nice work!' :
@@ -144,7 +144,7 @@ export default function TechBudgetPlanner() {
                 <div key={cat.key}>
                   <div className="flex justify-between text-sm mb-1">
                     <span>{cat.label}</span>
-                    <span className="text-xs text-muted-foreground">${amounts[cat.key]} vs avg ${cat.avg}</span>
+                    <span className="text-sm text-muted-foreground">${amounts[cat.key]} vs avg ${cat.avg}</span>
                   </div>
                   <div className="h-3 bg-muted rounded-full overflow-hidden">
                     <div className={`h-full rounded-full transition-all ${amounts[cat.key] > cat.avg ? 'bg-amber-500' : 'bg-emerald-500'}`} style={{ width: `${Math.min((amounts[cat.key] / cat.max) * 100, 100)}%` }} />
@@ -157,18 +157,18 @@ export default function TechBudgetPlanner() {
           {/* Recommendations */}
           {recommendations.length > 0 && (
             <Card>
-              <CardHeader><CardTitle className="text-lg flex items-center gap-2"><TrendingDown className="h-5 w-5 text-emerald-600" aria-hidden="true" /> Money-Saving Recommendations</CardTitle></CardHeader>
+              <CardHeader><CardTitle className="text-lg flex items-center gap-2"><TrendingDown className="h-5 w-5 text-success-foreground" aria-hidden="true" /> Money-Saving Recommendations</CardTitle></CardHeader>
               <CardContent className="space-y-4">
                 {recommendations.map(cat => (
                   <div key={cat.key} className="border rounded-xl p-4">
                     <div className="flex justify-between items-start mb-2">
-                      <p className="text-sm font-medium">{cat.label}</p>
-                      <Badge variant="outline" className="text-amber-600">Save ~${cat.over}/mo</Badge>
+                      <p className="text-base font-medium">{cat.label}</p>
+                      <Badge variant="outline" className="text-warn-foreground">Save ~${cat.over}/mo</Badge>
                     </div>
                     <ul className="space-y-1">
                       {cat.tips.map((tip, i) => (
-                        <li key={i} className="flex gap-2 text-sm text-muted-foreground">
-                          <span className="text-emerald-600">-</span> {tip}
+                        <li key={i} className="flex gap-2 text-base text-muted-foreground">
+                          <span className="text-success-foreground">-</span> {tip}
                         </li>
                       ))}
                     </ul>
@@ -181,8 +181,8 @@ export default function TechBudgetPlanner() {
           {/* General tips */}
           <div className="rounded-2xl border p-6">
             <button onClick={() => setShowSavings(!showSavings)} className="flex items-center gap-3 w-full text-left">
-              <Lightbulb className="h-5 w-5 text-amber-500 flex-shrink-0" aria-hidden="true" />
-              <span className="font-semibold text-sm flex-1">General Money-Saving Tips</span>
+              <Lightbulb className="h-5 w-5 text-warn-foreground flex-shrink-0" aria-hidden="true" />
+              <span className="font-semibold text-base flex-1">General Money-Saving Tips</span>
               {showSavings ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
             </button>
             {showSavings && (
@@ -193,8 +193,8 @@ export default function TechBudgetPlanner() {
                   'Before buying any new device, check if a free software update can fix your current one.',
                   'Look into government assistance programs like the Affordable Connectivity Program for internet discounts.'
                 ].map((tip, i) => (
-                  <li key={i} className="flex gap-3 text-sm text-muted-foreground">
-                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 dark:bg-amber-950/30 text-amber-700 text-xs flex items-center justify-center font-medium">{i + 1}</span>
+                  <li key={i} className="flex gap-3 text-base text-muted-foreground">
+                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-warn text-warn-foreground text-xs flex items-center justify-center font-medium">{i + 1}</span>
                     {tip}
                   </li>
                 ))}

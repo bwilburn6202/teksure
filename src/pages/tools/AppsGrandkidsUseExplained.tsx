@@ -34,7 +34,7 @@ export default function AppsGrandkidsUseExplained() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why this matters</h2>
-            <p className="text-sm">Knowing what these apps actually do — even briefly — earns grandkid respect. They\'re shocked that grandparents know what TikTok is. It opens conversations they\'d otherwise dismiss.</p>
+            <p className="text-base">Knowing what these apps actually do — even briefly — earns grandkid respect. They\'re shocked that grandparents know what TikTok is. It opens conversations they\'d otherwise dismiss.</p>
           </CardContent>
         </Card>
 
@@ -46,7 +46,7 @@ export default function AppsGrandkidsUseExplained() {
                   <span className="text-2xl shrink-0">{a.icon}</span>
                   <div>
                     <h3 className="font-bold text-lg">{a.name}</h3>
-                    <p className="text-sm text-muted-foreground">{a.what}</p>
+                    <p className="text-base text-muted-foreground">{a.what}</p>
                   </div>
                 </div>
               </CardContent>
@@ -57,7 +57,7 @@ export default function AppsGrandkidsUseExplained() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Words grandkids use that confuse</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>"Streak"</strong> — sending a Snapchat photo to someone every day in a row.</li>
               <li><strong>"DM"</strong> — direct message (private message in any app).</li>
               <li><strong>"Slid in DMs"</strong> — sent someone a private message, often flirting.</li>
@@ -79,7 +79,7 @@ export default function AppsGrandkidsUseExplained() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Conversation opener that always works</h3>
-            <p className="text-sm text-muted-foreground">"Show me a funny TikTok / video / meme you saw this week." They\'ll dive into their phone. You get a tour of their world for 5 minutes. Way more than asking "what apps do you use?".</p>
+            <p className="text-base text-muted-foreground">"Show me a funny TikTok / video / meme you saw this week." They\'ll dive into their phone. You get a tour of their world for 5 minutes. Way more than asking "what apps do you use?".</p>
           </CardContent>
         </Card>
       </main>

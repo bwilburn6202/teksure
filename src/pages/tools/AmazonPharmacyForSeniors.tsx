@@ -19,7 +19,7 @@ export default function AmazonPharmacyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it offers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free 2-day delivery (Prime members).</li>
               <li>Prices shown before ordering.</li>
               <li>Insurance + cash prices both visible.</li>
@@ -33,7 +33,7 @@ export default function AmazonPharmacyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RxPass details</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$9/month flat fee.</li>
               <li>Covers 50+ commonly-prescribed generics.</li>
               <li>Hypertension, cholesterol, diabetes, depression meds.</li>
@@ -47,7 +47,7 @@ export default function AmazonPharmacyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to set up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to Pharmacy.Amazon.com.</li>
               <li>Sign in with Amazon account.</li>
               <li>Enter insurance info (or pay cash).</li>
@@ -61,7 +61,7 @@ export default function AmazonPharmacyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medicare + insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Accepts most Medicare Part D plans.</li>
               <li>Accepts most major insurance plans.</li>
               <li>Submits claims for you.</li>
@@ -75,7 +75,7 @@ export default function AmazonPharmacyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Seniors without easy pharmacy access.</li>
               <li>Multiple maintenance medications.</li>
               <li>Those without good drug coverage.</li>
@@ -89,7 +89,7 @@ export default function AmazonPharmacyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to skip</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If you need med urgently — local pharmacy faster.</li>
               <li>Some controlled substances limited.</li>
               <li>If you like talking to pharmacist in person.</li>
@@ -103,7 +103,7 @@ export default function AmazonPharmacyForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try one prescription first</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t transfer everything at once. Pick one maintenance medication you take daily and try Amazon Pharmacy. See how it works — delivery time, packaging, customer service. If you like it, transfer more. If not, no big deal. Many seniors find Amazon Pharmacy 30% cheaper than their old pharmacy with much more convenience.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t transfer everything at once. Pick one maintenance medication you take daily and try Amazon Pharmacy. See how it works — delivery time, packaging, customer service. If you like it, transfer more. If not, no big deal. Many seniors find Amazon Pharmacy 30% cheaper than their old pharmacy with much more convenience.</p>
           </CardContent>
         </Card>
       </main>

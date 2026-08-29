@@ -22,7 +22,7 @@ export default function SeniorPestControl() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bt for caterpillars</h2><p>$10. Safe for everything except caterpillars. Bacterial.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Soap spray</h2><p>FREE. Mix dish soap + water. Sprays aphids dead.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Beneficial bugs</h2><p>Ladybugs eat aphids. Don&apos;t kill them.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Many garden &ldquo;pests&rdquo; are harmless. Identify before treating.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Many garden &ldquo;pests&rdquo; are harmless. Identify before treating.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function InsomniaSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors sleep less</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Melatonin production drops with age.</li>
               <li>Deep sleep stages shorten.</li>
               <li>Bladder wakes us up more.</li>
@@ -34,7 +34,7 @@ export default function InsomniaSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sleep hygiene fixes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Same bedtime + wake time daily (even weekends).</li>
               <li>Cool dark room — 65-68°F ideal.</li>
               <li>No screens 1 hr before bed.</li>
@@ -49,7 +49,7 @@ export default function InsomniaSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you can&apos;t sleep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>20 min rule — if not asleep in 20 min, get up.</li>
               <li>Read in dim light until sleepy.</li>
               <li>Don&apos;t look at clock — adds stress.</li>
@@ -62,7 +62,7 @@ export default function InsomniaSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Talk to doctor about</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sleep apnea — common + dangerous if untreated.</li>
               <li>Restless legs syndrome.</li>
               <li>Medication side effects (review with pharmacist).</li>
@@ -76,7 +76,7 @@ export default function InsomniaSeniorGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free CBT-I app</h3>
-            <p className="text-sm text-muted-foreground"><strong>CBT-i Coach</strong> — free, made by VA. Walks through the gold-standard insomnia therapy. Works as well as sleeping pills, no side effects. Apple/Android app stores.</p>
+            <p className="text-base text-muted-foreground"><strong>CBT-i Coach</strong> — free, made by VA. Walks through the gold-standard insomnia therapy. Works as well as sleeping pills, no side effects. Apple/Android app stores.</p>
           </CardContent>
         </Card>
       </main>

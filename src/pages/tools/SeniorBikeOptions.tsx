@@ -30,10 +30,10 @@ export default function SeniorBikeOptions() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SeniorBikeOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Step-thru frame</strong> — no leg-over swing, easier mounting.</li>
               <li><strong>Wide saddle</strong> — comfortable for longer rides.</li>
               <li><strong>Upright handlebars</strong> — easy on neck/back.</li>
@@ -57,7 +57,7 @@ export default function SeniorBikeOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">E-bike for hills + distance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pedal-assist motor helps you climb hills.</li>
               <li>Goes 15-28 mph. Most class 1+2 bikes don&apos;t need license.</li>
               <li>30-50 mile range per charge.</li>
@@ -71,7 +71,7 @@ export default function SeniorBikeOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety gear</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Helmet</strong> — non-negotiable. $25-100.</li>
               <li><strong>Reflective vest</strong> ($15) — cars MUST see you.</li>
               <li><strong>Front + rear lights</strong> — even in daylight.</li>
@@ -85,7 +85,7 @@ export default function SeniorBikeOptions() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best beginner moves</h3>
-            <p className="text-sm text-muted-foreground">Start in empty parking lots. Pick days/times with little traffic. Bike paths first, roads later. Local bike shops do free fittings — they adjust seat height + handlebars to your body. Way more comfortable than out-of-box.</p>
+            <p className="text-base text-muted-foreground">Start in empty parking lots. Pick days/times with little traffic. Bike paths first, roads later. Local bike shops do free fittings — they adjust seat height + handlebars to your body. Way more comfortable than out-of-box.</p>
           </CardContent>
         </Card>
       </main>

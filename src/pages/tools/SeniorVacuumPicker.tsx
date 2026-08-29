@@ -29,7 +29,7 @@ export default function SeniorVacuumPicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why cordless / stick</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>5-8 pounds vs 15-20 for upright. Easier on shoulders.</li>
               <li>No cord wrestling. No bending to plug in.</li>
               <li>Convertible to handheld for stairs and car.</li>
@@ -44,10 +44,10 @@ export default function SeniorVacuumPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,7 +56,7 @@ export default function SeniorVacuumPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to look for</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Under 10 pounds.</li>
               <li>Battery 40+ minutes.</li>
               <li>HEPA filter (allergies).</li>
@@ -70,7 +70,7 @@ export default function SeniorVacuumPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip these</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>$50 no-name brands — die in 6-12 months.</li>
               <li>Bagged uprights for solo seniors — too heavy, hard to maneuver.</li>
               <li>"Mop + vacuum 2-in-1" floor washers — usually worse at both.</li>
@@ -81,7 +81,7 @@ export default function SeniorVacuumPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best combo</h3>
-            <p className="text-sm text-muted-foreground">Cordless stick (Shark or Dyson) + a robot vacuum (Roomba). Stick for "I see crumbs, let me clean now". Robot for daily floor maintenance. Together about $500-1,000. Knees never hurt again.</p>
+            <p className="text-base text-muted-foreground">Cordless stick (Shark or Dyson) + a robot vacuum (Roomba). Stick for "I see crumbs, let me clean now". Robot for daily floor maintenance. Together about $500-1,000. Knees never hurt again.</p>
           </CardContent>
         </Card>
       </main>

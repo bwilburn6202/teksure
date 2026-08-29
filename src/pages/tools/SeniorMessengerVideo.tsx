@@ -22,7 +22,7 @@ export default function SeniorMessengerVideo() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">No phone numbers</h2><p>Just need Facebook friend connection. Easier than texts.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch together</h2><p>Watch Together feature. Watch Netflix or YouTube with family virtually.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Block scammers</h2><p>Long-press a chat → Block. Spam disappears.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pin family to top of Messenger. One-tap calls every time.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pin family to top of Messenger. One-tap calls every time.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

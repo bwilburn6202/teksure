@@ -19,7 +19,7 @@ export default function PowerBankSeniorPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why every senior needs one</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone dies = no calls, no maps, no emergency help.</li>
               <li>Charge phone anywhere — no outlet needed.</li>
               <li>Critical during power outages.</li>
@@ -33,7 +33,7 @@ export default function PowerBankSeniorPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best small (pocket-size)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Anker PowerCore Slim 10000 — $25.</li>
               <li>Charges most phones 2 full times.</li>
               <li>Fits in purse or pocket.</li>
@@ -47,7 +47,7 @@ export default function PowerBankSeniorPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best medium (travel)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Anker PowerCore 20000 — $50.</li>
               <li>Charges phone 4–5 times.</li>
               <li>Charges 2 devices at once.</li>
@@ -61,7 +61,7 @@ export default function PowerBankSeniorPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best large (emergency)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Jackery Explorer 240 — $200.</li>
               <li>Powers CPAP machine all night.</li>
               <li>Charges phones 20+ times.</li>
@@ -75,7 +75,7 @@ export default function PowerBankSeniorPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wireless charging banks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Anker MagGo (iPhone) — $50.</li>
               <li>Snaps magnetically to MagSafe iPhones.</li>
               <li>No cables to fumble with.</li>
@@ -89,7 +89,7 @@ export default function PowerBankSeniorPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Solar panel chargers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Anker Solix solar panel — $80.</li>
               <li>Recharge power banks from sun.</li>
               <li>Excellent for camping or extended outages.</li>
@@ -103,7 +103,7 @@ export default function PowerBankSeniorPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get the Anker 10000 + keep charged</h3>
-            <p className="text-sm text-muted-foreground">For most seniors, the $25 Anker PowerCore Slim 10000 is the right starting point. Keep it charged in a kitchen drawer or purse. When you travel or face a power outage, you have backup. If you have CPAP or other medical devices, also invest in a Jackery for emergency backup. Combined cost: $250 = invaluable peace of mind.</p>
+            <p className="text-base text-muted-foreground">For most seniors, the $25 Anker PowerCore Slim 10000 is the right starting point. Keep it charged in a kitchen drawer or purse. When you travel or face a power outage, you have backup. If you have CPAP or other medical devices, also invest in a Jackery for emergency backup. Combined cost: $250 = invaluable peace of mind.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorSmartThermostats() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Utility rebates</h2><p>Many electric companies pay $50-$100 rebate. Check before buying.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Save 10-15%</h2><p>Studies show smart thermostats save $150+ per year on average bills.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice control</h2><p>&ldquo;Hey Google, make it 72.&rdquo; &ldquo;Alexa, set the heat to 68.&rdquo;</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Have an electrician install for ~$100 if wiring is unclear. Worth the peace of mind.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Have an electrician install for ~$100 if wiring is unclear. Worth the peace of mind.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

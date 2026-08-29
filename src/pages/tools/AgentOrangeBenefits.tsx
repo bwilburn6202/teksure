@@ -19,7 +19,7 @@ export default function AgentOrangeBenefits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">PACT Act 2022 = expanded benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Major 2022 law expanded toxin exposure benefits.</li>
               <li>Added 20+ new conditions to presumptive list.</li>
               <li>Vietnam, Korea, Gulf War, post-9/11 vets all covered.</li>
@@ -33,7 +33,7 @@ export default function AgentOrangeBenefits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Agent Orange (Vietnam) presumptive</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Type 2 diabetes.</li>
               <li>Ischemic heart disease.</li>
               <li>Hypertension (added 2022).</li>
@@ -50,7 +50,7 @@ export default function AgentOrangeBenefits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Burn pit + post-9/11</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Iraq, Afghanistan, Gulf War vets.</li>
               <li>Asthma, COPD, sinusitis, rhinitis.</li>
               <li>Many cancers (presumptive).</li>
@@ -64,7 +64,7 @@ export default function AgentOrangeBenefits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apply</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VA.gov/disability — file online.</li>
               <li>VA Form 21-526EZ.</li>
               <li>Provide DD-214 + medical records.</li>
@@ -79,7 +79,7 @@ export default function AgentOrangeBenefits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Survivors benefits (DIC)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Surviving spouse may be eligible if vet died from condition.</li>
               <li>Even if vet died years ago.</li>
               <li>$1,663+/month tax-free (2026).</li>
@@ -93,7 +93,7 @@ export default function AgentOrangeBenefits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free toxic exposure screening</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VA offers free toxic exposure screening.</li>
               <li>For ANY vet, regardless of conditions.</li>
               <li>Documents exposure for future claims.</li>
@@ -107,7 +107,7 @@ export default function AgentOrangeBenefits() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t wait</h3>
-            <p className="text-sm text-muted-foreground">If you served + have any of these conditions = APPLY. Many vets denied initially — APPEAL. VFW/American Legion service officers handle 95% appeals successfully. Disability rating 10% gets free VA healthcare. Money owed — claim it.</p>
+            <p className="text-base text-muted-foreground">If you served + have any of these conditions = APPLY. Many vets denied initially — APPEAL. VFW/American Legion service officers handle 95% appeals successfully. Disability rating 10% gets free VA healthcare. Money owed — claim it.</p>
           </CardContent>
         </Card>
       </main>

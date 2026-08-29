@@ -22,7 +22,7 @@ export default function SeniorOldEmailCleanup() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Save important</h2><p>Star, flag, or archive emails to keep. Not in inbox.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Old emails</h2><p>Delete emails older than 5 years (unless tax/legal). Freedom feels great.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">2 emails</h2><p>One for important (banks, family). One for retail/newsletters. Clear separation.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Archive in batches of 1,000. Don&apos;t delete one-by-one.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Archive in batches of 1,000. Don&apos;t delete one-by-one.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

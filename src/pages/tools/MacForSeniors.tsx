@@ -30,10 +30,10 @@ export default function MacForSeniors() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function MacForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Mac for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reliable — last 7-10 years.</li>
               <li>Better resale value.</li>
               <li>Less malware than Windows.</li>
@@ -57,7 +57,7 @@ export default function MacForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior accessibility</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Accessibility = many features.</li>
               <li>Increase text size, cursor size.</li>
               <li>VoiceOver — reads aloud.</li>
@@ -71,7 +71,7 @@ export default function MacForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Switching from Windows</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Migration Assistant transfers files easily.</li>
               <li>Photos auto-organize.</li>
               <li>Microsoft Office runs on Mac.</li>
@@ -85,7 +85,7 @@ export default function MacForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost comparison</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mac $1,000 lasts 7-10 yrs = $100-140/yr.</li>
               <li>$500 PC lasts 3-5 yrs = $100-170/yr.</li>
               <li>Mac better value over time.</li>
@@ -98,7 +98,7 @@ export default function MacForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Today at Apple</strong> — free in-store classes.</li>
               <li><strong>Apple Support</strong> — phone call free for 1 year.</li>
               <li><strong>Genius Bar</strong> — free repair help.</li>
@@ -111,7 +111,7 @@ export default function MacForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Refurbished saves $</h3>
-            <p className="text-sm text-muted-foreground">apple.com/shop/refurbished — Apple-certified refurb. Same warranty as new. 15-20% off. New battery + casing. Indistinguishable from new. Best Mac value. Available throughout year.</p>
+            <p className="text-base text-muted-foreground">apple.com/shop/refurbished — Apple-certified refurb. Same warranty as new. 15-20% off. New battery + casing. Indistinguishable from new. Best Mac value. Available throughout year.</p>
           </CardContent>
         </Card>
       </main>

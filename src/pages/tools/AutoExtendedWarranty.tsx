@@ -19,7 +19,7 @@ export default function AutoExtendedWarranty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Robocall scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Your warranty is expiring&quot; calls.</li>
               <li>NEVER from your dealer.</li>
               <li>Always scams.</li>
@@ -33,7 +33,7 @@ export default function AutoExtendedWarranty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When extended warranty MIGHT help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>European luxury (BMW, Audi) — expensive repairs.</li>
               <li>Hybrid / EV — battery replacement risk.</li>
               <li>Used car post-warranty.</li>
@@ -47,7 +47,7 @@ export default function AutoExtendedWarranty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Manufacturer-backed only</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Buy from car maker (Ford, Toyota, Honda).</li>
               <li>Repairs at any dealer.</li>
               <li>Quality parts.</li>
@@ -61,7 +61,7 @@ export default function AutoExtendedWarranty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid third-party</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Endurance, CarShield — avoid.</li>
               <li>Heavy advertising = high cost.</li>
               <li>Complex claim denials.</li>
@@ -75,7 +75,7 @@ export default function AutoExtendedWarranty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Self-warranty alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Save warranty cost in dedicated account.</li>
               <li>$3,000 in repair fund.</li>
               <li>Earn interest until needed.</li>
@@ -89,7 +89,7 @@ export default function AutoExtendedWarranty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Read fine print</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wear-and-tear excluded usually.</li>
               <li>Brakes + tires excluded.</li>
               <li>Pre-existing conditions excluded.</li>
@@ -104,7 +104,7 @@ export default function AutoExtendedWarranty() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Skip them mostly</h3>
-            <p className="text-sm text-muted-foreground">Consumer Reports — most extended warranties not worth cost. AAA — same finding. The financial industry profits from selling them. Senior strategy: buy reliable car (Toyota, Honda), maintain it, save for repairs. Dealer pressure to buy = big margin to dealer. Just say no.</p>
+            <p className="text-base text-muted-foreground">Consumer Reports — most extended warranties not worth cost. AAA — same finding. The financial industry profits from selling them. Senior strategy: buy reliable car (Toyota, Honda), maintain it, save for repairs. Dealer pressure to buy = big margin to dealer. Just say no.</p>
           </CardContent>
         </Card>
       </main>

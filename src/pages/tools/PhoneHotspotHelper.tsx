@@ -22,7 +22,7 @@ export default function PhoneHotspotHelper() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">When you'd want this</h2>
-            <ul className="text-sm space-y-1 list-disc pl-5 text-muted-foreground">
+            <ul className="text-base space-y-1 list-disc pl-5 text-muted-foreground">
               <li>You're traveling and the hotel Wi-Fi is broken or unsafe.</li>
               <li>Your home internet is down and you need to send an important email.</li>
               <li>You want to use your laptop in the car or at a park.</li>
@@ -40,7 +40,7 @@ export default function PhoneHotspotHelper() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone Personal Hotspot</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open <strong>Settings</strong>.</li>
                 <li>Tap <strong>Personal Hotspot</strong> near the top.</li>
                 <li>Turn on <strong>"Allow Others to Join"</strong>.</li>
@@ -49,7 +49,7 @@ export default function PhoneHotspotHelper() {
                 <li>Pick the network with your iPhone's name (like "John's iPhone").</li>
                 <li>Type the password from step 4. You're online.</li>
               </ol>
-              <p className="text-sm mt-3 bg-muted/50 p-3 rounded"><strong>Don't see Personal Hotspot?</strong> Call your carrier. Most plans include it free, but a few prepaid plans don't.</p>
+              <p className="text-base mt-3 bg-muted/50 p-3 rounded"><strong>Don't see Personal Hotspot?</strong> Call your carrier. Most plans include it free, but a few prepaid plans don't.</p>
             </CardContent>
           </Card>
         )}
@@ -58,7 +58,7 @@ export default function PhoneHotspotHelper() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android Hotspot</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open <strong>Settings</strong>.</li>
                 <li>Tap <strong>Network & internet</strong> (or <strong>Connections</strong> on Samsung).</li>
                 <li>Tap <strong>Hotspot & tethering</strong> → <strong>Wi-Fi hotspot</strong>.</li>
@@ -66,18 +66,18 @@ export default function PhoneHotspotHelper() {
                 <li>Tap "Hotspot password" to see or change the password.</li>
                 <li>On your laptop, pick the new Wi-Fi network and enter the password.</li>
               </ol>
-              <p className="text-sm mt-3 bg-muted/50 p-3 rounded"><strong>Samsung shortcut:</strong> Swipe down from the top of the screen twice. Look for the "Mobile Hotspot" tile and tap it.</p>
+              <p className="text-base mt-3 bg-muted/50 p-3 rounded"><strong>Samsung shortcut:</strong> Swipe down from the top of the screen twice. Look for the "Mobile Hotspot" tile and tap it.</p>
             </CardContent>
           </Card>
         )}
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <AlertTriangle className="w-6 h-6 text-yellow-700 dark:text-yellow-400 shrink-0" />
+              <AlertTriangle className="w-6 h-6 text-warn-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Watch your data</h3>
-                <ul className="text-sm space-y-1 list-disc pl-5 text-muted-foreground">
+                <ul className="text-base space-y-1 list-disc pl-5 text-muted-foreground">
                   <li>Hotspot uses your phone's cellular data.</li>
                   <li>Streaming video burns data fast — a one-hour Netflix show can be 1-3 GB.</li>
                   <li>Most plans slow down after a "hotspot data limit" (often 15-30 GB/month).</li>
@@ -91,7 +91,7 @@ export default function PhoneHotspotHelper() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Battery tip</h3>
-            <p className="text-sm text-muted-foreground">Hotspot drains the phone fast. Plug your phone into a charger (or a battery pack) while using it. Turn the hotspot off when you're done.</p>
+            <p className="text-base text-muted-foreground">Hotspot drains the phone fast. Plug your phone into a charger (or a battery pack) while using it. Turn the hotspot off when you're done.</p>
           </CardContent>
         </Card>
       </main>

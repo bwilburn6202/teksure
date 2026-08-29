@@ -22,7 +22,7 @@ export default function SeniorZoomBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mute and video</h2><p>Bottom-left buttons. Microphone icon to mute. Camera icon to turn video off.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Closed captions</h2><p>Tap More → Captions → Show. Auto-captions are now free for all users.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Test before</h2><p>Visit zoom.us/test before an important meeting. Make sure camera and mic work.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Practice with a family member 10 minutes before a doctor&apos;s telehealth visit.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Practice with a family member 10 minutes before a doctor&apos;s telehealth visit.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function AnxietyToolsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior anxiety triggers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Health concerns + medical appointments.</li>
               <li>Financial worries.</li>
               <li>Loss of loved ones.</li>
@@ -35,7 +35,7 @@ export default function AnxietyToolsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick calm techniques</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Box breathing</strong> — 4 in, 4 hold, 4 out, 4 hold. Repeat.</li>
               <li><strong>5-4-3-2-1 grounding</strong> — name 5 things see, 4 hear, 3 touch, 2 smell, 1 taste.</li>
               <li><strong>Cold water</strong> — splash face, shocks system out of panic.</li>
@@ -49,7 +49,7 @@ export default function AnxietyToolsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Calm</strong> — meditation + sleep stories. $70/yr.</li>
               <li><strong>Headspace</strong> — guided meditation. $70/yr.</li>
               <li><strong>Insight Timer</strong> — FREE. Massive library.</li>
@@ -63,7 +63,7 @@ export default function AnxietyToolsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Long-term help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Therapy — CBT highly effective.</li>
               <li>Medicare covers.</li>
               <li>Medication if needed (SSRIs, low-dose).</li>
@@ -77,7 +77,7 @@ export default function AnxietyToolsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">News fasts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Limit news to 30 min/day.</li>
               <li>Skip social media doom-scroll.</li>
               <li>Mute political accounts.</li>
@@ -91,7 +91,7 @@ export default function AnxietyToolsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Help</h3>
-            <p className="text-sm text-muted-foreground">If anxiety constant — get professional help. <strong>Psychology Today</strong> — find therapist. <strong>BetterHelp</strong>, <strong>Talkspace</strong> online. <strong>988 hotline</strong> for crisis. Anxiety treatable. Don&apos;t suffer alone. Generation often dismissed mental health — different now. Reach out.</p>
+            <p className="text-base text-muted-foreground">If anxiety constant — get professional help. <strong>Psychology Today</strong> — find therapist. <strong>BetterHelp</strong>, <strong>Talkspace</strong> online. <strong>988 hotline</strong> for crisis. Anxiety treatable. Don&apos;t suffer alone. Generation often dismissed mental health — different now. Reach out.</p>
           </CardContent>
         </Card>
       </main>

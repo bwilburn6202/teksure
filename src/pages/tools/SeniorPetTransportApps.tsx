@@ -22,7 +22,7 @@ export default function SeniorPetTransportApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pet taxis</h2><p>$50-$80. Professional pet transport in many cities.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Rover dog walkers</h2><p>$20-$30 visit. Walks if you can&apos;t. Helps senior pets.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior pet help</h2><p>Local rescues. Pet Pals seniors program. Volunteer help.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Telehealth vet first for minor issues. Saves transportation and vet bills.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Telehealth vet first for minor issues. Saves transportation and vet bills.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

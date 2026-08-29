@@ -80,7 +80,7 @@ export default function HomeMaintenanceTracker() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Home Maintenance Tracker | TekSure"
         description="Track 12 home maintenance tasks with recommended frequencies. See what's overdue, due now, or coming up."
@@ -89,26 +89,26 @@ export default function HomeMaintenanceTracker() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Home className="h-7 w-7 text-emerald-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Home Maintenance Tracker</h1>
+            <Home className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Home Maintenance Tracker</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Stay on top of routine home tasks. Mark when you last did each one and see what's coming due.
           </p>
         </div>
 
         {/* Summary */}
         {(overdue > 0 || dueNow > 0) && (
-          <Card className="mb-4 bg-amber-50 border-amber-200 print:hidden">
+          <Card className="mb-4 bg-warn border-warn-foreground/25 print:hidden">
             <CardContent className="py-3 px-4 flex items-start gap-2">
-              <AlertTriangle className="h-5 w-5 text-amber-600 mt-0.5 shrink-0" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground mt-0.5 shrink-0" />
               <div>
-                <p className="font-semibold text-amber-800 text-sm">
+                <p className="font-semibold text-warn-foreground text-base">
                   {overdue > 0 && `${overdue} overdue`}
                   {overdue > 0 && dueNow > 0 && " · "}
                   {dueNow > 0 && `${dueNow} due now`}
                 </p>
-                <p className="text-sm text-amber-700">Plan to take care of these soon to avoid bigger problems later.</p>
+                <p className="text-base text-warn-foreground">Plan to take care of these soon to avoid bigger problems later.</p>
               </div>
             </CardContent>
           </Card>
@@ -126,16 +126,16 @@ export default function HomeMaintenanceTracker() {
                 <CardContent className="py-3 px-4">
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <div>
-                      <p className="font-semibold text-gray-900 text-base">{t.task}</p>
-                      <p className="text-sm text-gray-600 mt-0.5">{t.detail}</p>
-                      <p className="text-xs text-gray-400 mt-1">Recommended: every {t.monthsBetween} months</p>
+                      <p className="font-semibold text-foreground text-base">{t.task}</p>
+                      <p className="text-base text-muted-foreground mt-0.5">{t.detail}</p>
+                      <p className="text-sm text-muted-foreground mt-1">Recommended: every {t.monthsBetween} months</p>
                     </div>
                     <Badge variant="secondary" className={`text-xs whitespace-nowrap ${status.color}`}>
                       {status.label}
                     </Badge>
                   </div>
                   <div className="flex items-center gap-2 mt-2 print:hidden">
-                    <span className="text-sm text-gray-600 shrink-0">Last done:</span>
+                    <span className="text-base text-muted-foreground shrink-0">Last done:</span>
                     <Input
                       type="date"
                       value={t.lastDone}
@@ -147,7 +147,7 @@ export default function HomeMaintenanceTracker() {
                       Done today
                     </Button>
                   </div>
-                  <p className="text-xs text-gray-500 mt-1 hidden print:block">
+                  <p className="text-sm text-muted-foreground mt-1 hidden print:block">
                     Last done: {formatDate(t.lastDone)}
                   </p>
                 </CardContent>
@@ -161,21 +161,21 @@ export default function HomeMaintenanceTracker() {
             <Printer className="h-4 w-4" />
             Print Schedule
           </Button>
-          <Button variant="ghost" onClick={reset} className="gap-2 text-gray-500">
+          <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground">
             <RotateCcw className="h-4 w-4" />
             Reset All
           </Button>
         </div>
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               If you cannot or do not want to do a task yourself, your local AAA (Area Agency on Aging) often has lists of trusted handymen and home modification programs.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

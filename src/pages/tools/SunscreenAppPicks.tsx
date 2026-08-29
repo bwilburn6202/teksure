@@ -30,10 +30,10 @@ export default function SunscreenAppPicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SunscreenAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best sunscreens for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mineral / zinc-based</strong> — best for sensitive skin. EltaMD UV Clear, La Roche-Posay Mineral.</li>
               <li><strong>SPF 30+ daily</strong> — face. Even cloudy days.</li>
               <li><strong>SPF 50+ for full sun</strong> — pool, beach, golf.</li>
@@ -56,7 +56,7 @@ export default function SunscreenAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific cancer screening</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Annual skin check by dermatologist (Medicare covered for at-risk).</li>
               <li>Self-check monthly: ABCDE — Asymmetry, Border, Color, Diameter (over 6mm), Evolving.</li>
               <li>Photo any new spots — track changes.</li>
@@ -69,7 +69,7 @@ export default function SunscreenAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smarter than sunscreen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wide-brim hat (not baseball cap) — best protection.</li>
               <li>UPF clothing — Sun Smart wear.</li>
               <li>Avoid 10am-4pm sun.</li>
@@ -83,7 +83,7 @@ export default function SunscreenAppPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Vitamin D matters too</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t avoid sun completely — Vitamin D from sunlight is important. 10-15 min morning sunlight on face/arms 2-3x/week. Or Vitamin D supplement (1,000-2,000 IU/day common). Test annually with doctor.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t avoid sun completely — Vitamin D from sunlight is important. 10-15 min morning sunlight on face/arms 2-3x/week. Or Vitamin D supplement (1,000-2,000 IU/day common). Test annually with doctor.</p>
           </CardContent>
         </Card>
       </main>

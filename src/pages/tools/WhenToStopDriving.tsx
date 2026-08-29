@@ -19,7 +19,7 @@ export default function WhenToStopDriving() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Warning signs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Other drivers honk often.</li>
               <li>Multiple recent fender-benders.</li>
               <li>Get lost in familiar areas.</li>
@@ -37,7 +37,7 @@ export default function WhenToStopDriving() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Self-assessment tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AAA RoadWise Driver</strong> — free online assessment.</li>
               <li><strong>AARP Smart Driver Course</strong> — $25, may lower insurance.</li>
               <li><strong>Driver Rehabilitation Specialist</strong> — adriverdirectory.org. Professional eval.</li>
@@ -51,7 +51,7 @@ export default function WhenToStopDriving() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Adjustments before stopping</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drive only daytime.</li>
               <li>Avoid highways + rush hour.</li>
               <li>No driving in rain/snow.</li>
@@ -66,7 +66,7 @@ export default function WhenToStopDriving() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Family conversation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Be honest, not confrontational.</li>
               <li>Bring concerns to doctor — they can &quot;prescribe&quot; not driving.</li>
               <li>Doctor letter to DMV in some states forces retest.</li>
@@ -80,7 +80,7 @@ export default function WhenToStopDriving() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alternatives (essential)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Uber/Lyft</strong> — see /tools/rideshare-for-seniors.</li>
               <li><strong>GoGoGrandparent</strong> — call to book rideshare. No app.</li>
               <li><strong>Senior van services</strong> — Area Agency on Aging. Often FREE.</li>
@@ -95,7 +95,7 @@ export default function WhenToStopDriving() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save the savings</h3>
-            <p className="text-sm text-muted-foreground">Cost of car: $7K-15K/year (insurance, gas, maintenance, depreciation). Skipping car pays for plenty of Uber + groceries delivered. AAA cost-of-driving calculator helps decide. Many seniors find life MORE social without driving — friends drive them, less isolated.</p>
+            <p className="text-base text-muted-foreground">Cost of car: $7K-15K/year (insurance, gas, maintenance, depreciation). Skipping car pays for plenty of Uber + groceries delivered. AAA cost-of-driving calculator helps decide. Many seniors find life MORE social without driving — friends drive them, less isolated.</p>
           </CardContent>
         </Card>
       </main>

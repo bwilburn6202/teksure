@@ -22,7 +22,7 @@ export default function SeniorDigitalFrames() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Setup</h2><p>Plug in. Connect Wi-Fi. Family scans QR code with phone — they can send photos forever.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best gift</h2><p>Pre-load 100 family photos before gifting. Tears of joy on Christmas guaranteed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Privacy</h2><p>Aura and Skylight require approval before showing photos. Nothing surprise.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Place near coffee maker or favorite chair — wherever you sit daily.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Place near coffee maker or favorite chair — wherever you sit daily.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorMentorPrograms() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Encore.org</h2><p>FREE. Match with paid or volunteer mentor roles in education, nonprofits.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">VITA tax prep</h2><p>FREE. IRS-trained volunteers help low-income families with taxes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Foster Grandparent</h2><p>Stipend for low-income seniors mentoring kids. Up to 40 hours/week.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Mentoring linked to slower cognitive decline. Real benefit on top of helping others.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Mentoring linked to slower cognitive decline. Real benefit on top of helping others.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

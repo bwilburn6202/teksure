@@ -22,7 +22,7 @@ export default function SeniorDigitalDeclutter() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Unused apps</h2><p>iPhone: Settings → General → iPhone Storage → Offload Unused Apps.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Old subscriptions</h2><p>Settings → Apple ID → Subscriptions. Often $30/month in forgotten ones.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Browser bookmarks</h2><p>Delete bookmarks you haven&apos;t used in 6 months. Faster phone.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 30 minutes a month. Stop digital chaos before it builds up.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 30 minutes a month. Stop digital chaos before it builds up.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

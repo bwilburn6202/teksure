@@ -19,7 +19,7 @@ export default function ContainerGardening() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best containers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Self-watering planters</strong> — Earthbox ($35), Vegepod, GroBucket.</li>
               <li><strong>Fabric grow bags</strong> — $5-15, breathable. Roots don&apos;t circle.</li>
               <li><strong>Half whiskey barrel</strong> — beautiful + roomy. $30-60.</li>
@@ -33,7 +33,7 @@ export default function ContainerGardening() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best container plants</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tomatoes</strong> — Patio Princess, Better Bush. 5+ gallon.</li>
               <li><strong>Peppers</strong> — happy in containers.</li>
               <li><strong>Herbs</strong> — basil, mint, oregano, parsley.</li>
@@ -49,7 +49,7 @@ export default function ContainerGardening() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sun + water needs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vegetables need 6+ hrs direct sun.</li>
               <li>Herbs OK in 4-6 hrs.</li>
               <li>Containers DRY OUT FAST — water daily in summer.</li>
@@ -63,7 +63,7 @@ export default function ContainerGardening() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pots on rolling caster bases — easy to move.</li>
               <li>Lighter potting mix (peat + perlite) — easier to lift.</li>
               <li>Group containers — reduces watering trips.</li>
@@ -77,7 +77,7 @@ export default function ContainerGardening() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best for renters</h3>
-            <p className="text-sm text-muted-foreground">Container gardens come with you. Move? Bring your tomato plant. Apartment balcony, retirement community deck, condo patio — all work. Best gardening for downsizing seniors.</p>
+            <p className="text-base text-muted-foreground">Container gardens come with you. Move? Bring your tomato plant. Apartment balcony, retirement community deck, condo patio — all work. Best gardening for downsizing seniors.</p>
           </CardContent>
         </Card>
       </main>

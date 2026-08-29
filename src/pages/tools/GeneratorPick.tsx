@@ -28,7 +28,7 @@ export default function GeneratorPick() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Match to need</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li><strong>Few outages a year, no medical equipment</strong> → portable ($500-1,500).</li>
               <li><strong>Frequent outages, medical equipment, refrigerator critical</strong> → whole-house ($10-15k).</li>
               <li><strong>No gas, low maintenance</strong> → battery (EcoFlow / Bluetti).</li>
@@ -42,10 +42,10 @@ export default function GeneratorPick() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -54,7 +54,7 @@ export default function GeneratorPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Whole-house — what to know</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Auto-start</strong> within 10-30 seconds of outage.</li>
               <li><strong>Natural gas (preferred)</strong> — never run out.</li>
               <li><strong>Propane</strong> — bigger tank fills longer outages.</li>
@@ -65,10 +65,10 @@ export default function GeneratorPick() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Portable safety</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>NEVER run a portable generator in or near garage or porch</strong>. CO kills.</li>
               <li>20 feet from any window/door.</li>
               <li>Keep dry — covered shelter open on sides.</li>
@@ -81,7 +81,7 @@ export default function GeneratorPick() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Critical for medical needs</h3>
-            <p className="text-sm text-muted-foreground">If you use CPAP, oxygen concentrator, dialysis, or insulin (refrigerated): a whole-house generator OR battery system is genuinely life-protecting. Some Medicare Advantage and disability programs partially fund medically-necessary backup power.</p>
+            <p className="text-base text-muted-foreground">If you use CPAP, oxygen concentrator, dialysis, or insulin (refrigerated): a whole-house generator OR battery system is genuinely life-protecting. Some Medicare Advantage and disability programs partially fund medically-necessary backup power.</p>
           </CardContent>
         </Card>
       </main>

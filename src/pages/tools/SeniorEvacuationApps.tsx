@@ -22,7 +22,7 @@ export default function SeniorEvacuationApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">NHC Hurricane</h2><p>FREE. National Hurricane Center. Path forecasts.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior &ldquo;Go bag&rdquo;</h2><p>Pre-pack: 7 days meds, ID copies, change of clothes, snacks.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family plan</h2><p>Pre-arrange meeting places. Out-of-state relative as central contact.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Don&apos;t wait for evacuation order. If you feel unsafe, leave early.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Don&apos;t wait for evacuation order. If you feel unsafe, leave early.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -114,7 +114,7 @@ export default function RouterUpgradeHelper() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-cyan-500/10 rounded-full">
-                <Wifi className="h-8 w-8 text-cyan-600" />
+                <Wifi className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Wi-Fi Router Upgrade Helper</h1>
@@ -159,7 +159,7 @@ export default function RouterUpgradeHelper() {
                     <div className="flex items-center gap-3"><RadioGroupItem value="rented" id="r2" /><Label htmlFor="r2" className="cursor-pointer">I rent it from Comcast / Verizon / Spectrum / etc.</Label></div>
                     <div className="flex items-center gap-3"><RadioGroupItem value="not-sure" id="r3" /><Label htmlFor="r3" className="cursor-pointer">Not sure</Label></div>
                   </RadioGroup>
-                  <p className="text-xs text-muted-foreground mt-1">If your bill has a "modem rental fee" or "router rental", you are renting.</p>
+                  <p className="text-sm text-muted-foreground mt-1">If your bill has a "modem rental fee" or "router rental", you are renting.</p>
                 </div>
               )}
 
@@ -178,16 +178,16 @@ export default function RouterUpgradeHelper() {
           {result && (
             <>
               <Card className={`border-2 mb-6 ${
-                result.verdict === 'upgrade' ? 'border-green-300 bg-green-50 dark:bg-green-950/20' :
-                result.verdict === 'keep' ? 'border-blue-300 bg-blue-50 dark:bg-blue-950/20' :
-                'border-amber-300 bg-amber-50 dark:bg-amber-950/20'
+                result.verdict === 'upgrade' ? 'border-green-300 bg-success dark:bg-green-950/20' :
+                result.verdict === 'keep' ? 'border-blue-300 bg-info dark:bg-blue-950/20' :
+                'border-amber-300 bg-warn dark:bg-amber-950/20'
               }`}>
                 <CardContent className="p-6">
                   <Badge className="mb-2">{result.verdict === 'keep' ? 'Keep it' : result.verdict === 'upgrade' ? 'Upgrade' : 'Maybe'}</Badge>
                   <h2 className="text-2xl font-bold mb-2">{result.headline}</h2>
-                  <p className="text-sm text-muted-foreground mb-3">{result.summary}</p>
+                  <p className="text-base text-muted-foreground mb-3">{result.summary}</p>
                   {result.monthlySavings && (
-                    <p className="text-sm">Stops paying: <strong>{result.monthlySavings}</strong> in router rent.</p>
+                    <p className="text-base">Stops paying: <strong>{result.monthlySavings}</strong> in router rent.</p>
                   )}
                 </CardContent>
               </Card>
@@ -199,15 +199,15 @@ export default function RouterUpgradeHelper() {
                     <p className="font-semibold">{result.pick}</p>
                     <Badge variant="outline">{result.pickPrice}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground">{result.pickWhy}</p>
+                  <p className="text-base text-muted-foreground">{result.pickWhy}</p>
                 </CardContent>
               </Card>
 
               {(result.verdict === 'upgrade' || result.verdict === 'consider') && (
                 <Card className="border-border bg-muted/30 mb-6">
                   <CardContent className="p-5">
-                    <p className="text-sm font-semibold mb-2">After you swap routers</p>
-                    <ol className="space-y-1.5 text-xs text-muted-foreground">
+                    <p className="text-base font-semibold mb-2">After you swap routers</p>
+                    <ol className="space-y-1.5 text-sm text-muted-foreground">
                       <li className="flex gap-2"><span className="text-primary">1.</span><span>Use the new router\'s app to pick a Wi-Fi name and password — same as the old one if you want all your devices to reconnect automatically.</span></li>
                       <li className="flex gap-2"><span className="text-primary">2.</span><span>Set up the "guest network" — a separate name for visitors. Keeps your printer and smart devices isolated.</span></li>
                       <li className="flex gap-2"><span className="text-primary">3.</span><span>Return the rented router IN PERSON, get a receipt with the serial number. Photograph it. ISPs charge $200+ for "lost" equipment.</span></li>
@@ -219,9 +219,9 @@ export default function RouterUpgradeHelper() {
             </>
           )}
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20">
+          <Card className="border-warn-foreground/25 bg-warn ">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">A note on Wi-Fi 7 (the newest standard)</p>
                 <p className="text-muted-foreground">
@@ -235,16 +235,16 @@ export default function RouterUpgradeHelper() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/wifi-troubleshooter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Wi-Fi Troubleshooter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Try fixes before you buy.</p>
+                <p className="font-medium text-base">Wi-Fi Troubleshooter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Try fixes before you buy.</p>
               </Link>
               <Link to="/tools/wifi-speed" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Wi-Fi Speed Test</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Check what you are paying for.</p>
+                <p className="font-medium text-base">Wi-Fi Speed Test</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Check what you are paying for.</p>
               </Link>
               <Link to="/tools/bill-negotiator" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Bill Negotiator</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Reduce your internet bill.</p>
+                <p className="font-medium text-base">Bill Negotiator</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Reduce your internet bill.</p>
               </Link>
             </div>
           </div>

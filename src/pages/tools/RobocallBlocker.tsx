@@ -148,8 +148,8 @@ export default function RobocallBlocker() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-rose-50 dark:bg-rose-950/30 flex items-center justify-center flex-shrink-0">
-                <PhoneOff className="h-6 w-6 text-rose-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-danger flex items-center justify-center flex-shrink-0">
+                <PhoneOff className="h-6 w-6 text-danger-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -226,9 +226,9 @@ export default function RobocallBlocker() {
         {carrier && phoneType && selectedCarrier && (
           <section className="container pb-12 max-w-3xl space-y-4">
             {/* 1. Carrier service */}
-            <Card className="p-6 md:p-8 rounded-2xl border-rose-200 dark:border-rose-900">
+            <Card className="p-6 md:p-8 rounded-2xl border-danger-foreground/25 ">
               <div className="flex items-start gap-3 mb-3">
-                <ShieldCheck className="h-6 w-6 text-rose-600 flex-shrink-0 mt-0.5" />
+                <ShieldCheck className="h-6 w-6 text-danger-foreground flex-shrink-0 mt-0.5" />
                 <div>
                   <Badge variant="secondary" className="mb-1">
                     Step 1 — Free carrier service
@@ -236,17 +236,17 @@ export default function RobocallBlocker() {
                   <h3 className="font-bold text-lg">{selectedCarrier.freeService}</h3>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground mb-3">
+              <p className="text-base text-muted-foreground mb-3">
                 {selectedCarrier.freeServiceDetails}
               </p>
               <div className="rounded-xl bg-muted p-4 mb-3">
                 <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-1">
                   How to turn it on
                 </div>
-                <p className="text-sm">{selectedCarrier.activation}</p>
+                <p className="text-base">{selectedCarrier.activation}</p>
               </div>
               {selectedCarrier.premium && (
-                <p className="text-xs text-muted-foreground italic mb-3">
+                <p className="text-sm text-muted-foreground italic mb-3">
                   Optional upgrade: {selectedCarrier.premium}
                 </p>
               )}
@@ -262,7 +262,7 @@ export default function RobocallBlocker() {
             {/* 2. Native phone setting */}
             <Card className="p-6 md:p-8 rounded-2xl">
               <div className="flex items-start gap-3 mb-3">
-                <Smartphone className="h-6 w-6 text-sky-600 flex-shrink-0 mt-0.5" />
+                <Smartphone className="h-6 w-6 text-info-foreground flex-shrink-0 mt-0.5" />
                 <div>
                   <Badge variant="secondary" className="mb-1">
                     Step 2 — Your phone's built-in setting
@@ -274,37 +274,37 @@ export default function RobocallBlocker() {
               </div>
               {phoneType === 'iphone' ? (
                 <div className="space-y-3">
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     iOS has a built-in feature that sends any number not in your contacts straight to voicemail. It won't ring your phone, but legitimate calls still leave a voicemail so you don't miss anything important.
                   </p>
-                  <ol className="space-y-2 text-sm pl-1">
+                  <ol className="space-y-2 text-base pl-1">
                     <li className="flex gap-2">
-                      <span className="font-bold text-rose-600">1.</span>
+                      <span className="font-bold text-danger-foreground">1.</span>
                       <span>Open <strong>Settings</strong></span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="font-bold text-rose-600">2.</span>
+                      <span className="font-bold text-danger-foreground">2.</span>
                       <span>Tap <strong>Apps</strong> → <strong>Phone</strong> (on iOS 18+) or just <strong>Phone</strong> on older iOS</span>
                     </li>
                     <li className="flex gap-2">
-                      <span className="font-bold text-rose-600">3.</span>
+                      <span className="font-bold text-danger-foreground">3.</span>
                       <span>Scroll down and turn on <strong>Silence Unknown Callers</strong></span>
                     </li>
                   </ol>
-                  <p className="text-xs text-muted-foreground italic">
+                  <p className="text-sm text-muted-foreground italic">
                     Requires iOS 13 or later.
                   </p>
                 </div>
               ) : (
                 <div className="space-y-3">
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Android phones include call screening and spam filtering. The exact menu names depend on your manufacturer — here are the two most common.
                   </p>
                   <div className="rounded-xl bg-muted p-4">
                     <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
                       Google Pixel / stock Android
                     </div>
-                    <p className="text-sm">
+                    <p className="text-base">
                       Open the <strong>Phone app</strong> → tap the three-dot menu → <strong>Settings</strong> → <strong>Caller ID & spam</strong> → turn on "Filter spam calls." On Pixel, also enable <strong>Call Screen</strong> so Google Assistant answers unknown calls for you.
                     </p>
                   </div>
@@ -312,7 +312,7 @@ export default function RobocallBlocker() {
                     <div className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
                       Samsung Galaxy
                     </div>
-                    <p className="text-sm">
+                    <p className="text-base">
                       Open the <strong>Phone app</strong> → tap the three-dot menu → <strong>Settings</strong> → <strong>Block numbers</strong> → turn on "Block unknown/private numbers" and "Block spam and scam calls."
                     </p>
                   </div>
@@ -323,7 +323,7 @@ export default function RobocallBlocker() {
             {/* 3. Third party apps */}
             <Card className="p-6 md:p-8 rounded-2xl">
               <div className="flex items-start gap-3 mb-3">
-                <Phone className="h-6 w-6 text-purple-600 flex-shrink-0 mt-0.5" />
+                <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
                 <div>
                   <Badge variant="secondary" className="mb-1">
                     Step 3 — Third-party apps (optional)
@@ -331,7 +331,7 @@ export default function RobocallBlocker() {
                   <h3 className="font-bold text-lg">If you still get robocalls</h3>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 These apps add an extra layer of protection. Most have free tiers that are good enough for most people.
               </p>
               <div className="grid sm:grid-cols-2 gap-3">
@@ -341,13 +341,13 @@ export default function RobocallBlocker() {
                     className="rounded-xl border p-4 flex flex-col"
                   >
                     <h4 className="font-semibold">{app.name}</h4>
-                    <p className="text-xs text-muted-foreground mb-1">{app.pricing}</p>
-                    <p className="text-sm text-muted-foreground flex-1 mb-3">{app.notes}</p>
+                    <p className="text-sm text-muted-foreground mb-1">{app.pricing}</p>
+                    <p className="text-base text-muted-foreground flex-1 mb-3">{app.notes}</p>
                     <a
                       href={app.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-rose-600 hover:underline inline-flex items-center gap-1"
+                      className="text-sm text-danger-foreground hover:underline inline-flex items-center gap-1"
                     >
                       Visit website <ExternalLink className="h-3 w-3" />
                     </a>
@@ -357,9 +357,9 @@ export default function RobocallBlocker() {
             </Card>
 
             {/* 4. DNC */}
-            <Card className="p-6 md:p-8 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/10 border-emerald-200 dark:border-emerald-900">
+            <Card className="p-6 md:p-8 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/10 border-success-foreground/25 ">
               <div className="flex items-start gap-3 mb-3">
-                <CheckCircle2 className="h-6 w-6 text-emerald-600 flex-shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-6 w-6 text-success-foreground flex-shrink-0 mt-0.5" />
                 <div>
                   <Badge variant="secondary" className="mb-1">
                     Step 4 — Join the National Do Not Call Registry
@@ -367,7 +367,7 @@ export default function RobocallBlocker() {
                   <h3 className="font-bold text-lg">Free, federal, 31 days to take effect</h3>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 Registering your number tells legitimate telemarketers to stop calling. It won't stop actual scammers (they already break the law), but it cuts way down on legal telemarketing calls.
               </p>
               <Button asChild className="rounded-xl bg-emerald-600 hover:bg-emerald-700">
@@ -378,14 +378,14 @@ export default function RobocallBlocker() {
             </Card>
 
             {/* Reporting */}
-            <Card className="p-6 md:p-8 rounded-2xl bg-amber-50/50 dark:bg-amber-950/10 border-amber-200 dark:border-amber-900">
+            <Card className="p-6 md:p-8 rounded-2xl bg-amber-50/50 dark:bg-amber-950/10 border-warn-foreground/25 ">
               <div className="flex items-start gap-3 mb-3">
-                <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-6 w-6 text-warn-foreground flex-shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-bold text-lg">Report bad calls to the feds</h3>
                 </div>
               </div>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 Reporting helps the FTC and FCC track and prosecute illegal robocallers. Takes two minutes.
               </p>
               <div className="flex flex-wrap gap-2">

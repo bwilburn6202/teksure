@@ -19,10 +19,10 @@ export default function SeniorFacebookBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Friends only</h2><p>Settings → Privacy → &ldquo;Who can see future posts&rdquo; → Friends. Strangers can&apos;t see anything.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Add family</h2><p>Search their name. Tap Add Friend. They confirm. You see their posts.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out for fake friends</h2><p>If &ldquo;a friend&rdquo; sends weird messages, the account is hacked. Don&apos;t click links.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common scams</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>&ldquo;You won a prize&rdquo;</li><li>Cheap brand-name shopping ads</li><li>Romance scams in messages</li><li>Crypto investments</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common scams</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>&ldquo;You won a prize&rdquo;</li><li>Cheap brand-name shopping ads</li><li>Romance scams in messages</li><li>Crypto investments</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bigger text</h2><p>Settings → Accessibility. Or zoom in your phone display.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family groups</h2><p>Make a private group with all family. Photo and update sharing without strangers.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 30 minutes daily max. Beyond that, studies show mood drops.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 30 minutes daily max. Beyond that, studies show mood drops.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

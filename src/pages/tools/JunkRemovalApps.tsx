@@ -31,10 +31,10 @@ export default function JunkRemovalApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function JunkRemovalApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use each</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Few items, lightweight</strong> — Town bulk pickup or thrift donation.</li>
               <li><strong>Furniture in OK condition</strong> — Habitat ReStore (free pickup).</li>
               <li><strong>1-2 truckloads</strong> — Junk removal company.</li>
@@ -56,7 +56,7 @@ export default function JunkRemovalApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hazardous items</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Paint, batteries, electronics</strong> — local hazmat day OR Best Buy / Lowes recycling.</li>
               <li><strong>Mattresses</strong> — extra fee, some cities free.</li>
               <li><strong>Tires</strong> — drop at tire shop, $5-10 each.</li>
@@ -69,7 +69,7 @@ export default function JunkRemovalApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior estate cleanouts</h3>
-            <p className="text-sm text-muted-foreground">Many junk removal companies have "senior estate" specialty crews. Lifetime accumulation = bigger emotional weight than just stuff. Find compassionate removers — interview before hiring.</p>
+            <p className="text-base text-muted-foreground">Many junk removal companies have "senior estate" specialty crews. Lifetime accumulation = bigger emotional weight than just stuff. Find compassionate removers — interview before hiring.</p>
           </CardContent>
         </Card>
       </main>

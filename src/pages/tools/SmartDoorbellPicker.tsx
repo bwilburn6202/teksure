@@ -27,7 +27,7 @@ export default function SmartDoorbellPicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why install one</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>See packages arrive (and confirm they\'re still there).</li>
               <li>Talk to delivery drivers from your couch ("leave it by the door").</li>
               <li>Identify who knocked while you were out.</li>
@@ -43,10 +43,10 @@ export default function SmartDoorbellPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm mb-1"><strong>Best:</strong> {p.best}</p>
-                <p className="text-sm text-muted-foreground"><strong>Watch out:</strong> {p.cons}</p>
+                <p className="text-base mb-1"><strong>Best:</strong> {p.best}</p>
+                <p className="text-base text-muted-foreground"><strong>Watch out:</strong> {p.cons}</p>
               </CardContent>
             </Card>
           ))}
@@ -55,7 +55,7 @@ export default function SmartDoorbellPicker() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy install (battery doorbells)</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Charge the doorbell\'s battery (~6 hours).</li>
               <li>Install the brand\'s app on your phone. Sign up for an account.</li>
               <li>App walks you through pairing — usually a 5-second QR scan.</li>
@@ -69,8 +69,8 @@ export default function SmartDoorbellPicker() {
         <Card className="mt-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">About subscriptions</h2>
-            <p className="text-sm mb-2">Most doorbells\' juicy features (video history, AI alerts, sharing) need a $5-10/month subscription:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Most doorbells\' juicy features (video history, AI alerts, sharing) need a $5-10/month subscription:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Without subscription:</strong> Live view + real-time alerts work. No saved video.</li>
               <li><strong>With subscription:</strong> 30-day video history, package detection, face recognition.</li>
               <li><strong>Privacy-conscious option:</strong> Eufy or Reolink — local storage only, no fee.</li>
@@ -81,7 +81,7 @@ export default function SmartDoorbellPicker() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Privacy considerations</h3>
-            <p className="text-sm text-muted-foreground">Ring partners with police departments — some videos can be requested by police. If that bothers you, choose Eufy or another local-storage option. Consider warning visitors with a small "Recording" sign — required by law in some states.</p>
+            <p className="text-base text-muted-foreground">Ring partners with police departments — some videos can be requested by police. If that bothers you, choose Eufy or another local-storage option. Consider warning visitors with a small "Recording" sign — required by law in some states.</p>
           </CardContent>
         </Card>
       </main>

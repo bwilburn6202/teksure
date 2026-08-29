@@ -16,10 +16,10 @@ export default function GasLeakDetect() {
           <p className="text-lg text-muted-foreground">Don&apos;t flip switches. Get out. Then call.</p>
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you smell rotten eggs</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm font-medium">
+            <ol className="list-decimal pl-5 space-y-2 text-base font-medium">
               <li>Get OUT. Take family + pets.</li>
               <li>Don&apos;t flip light switches, garage door, anything electric (could spark).</li>
               <li>Don&apos;t use cell phone INSIDE the house.</li>
@@ -32,7 +32,7 @@ export default function GasLeakDetect() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Symptoms in your house</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Rotten egg smell</strong> — added to natural gas as warning. Methane itself is odorless.</li>
               <li>Hissing or whistling near pipes, appliances, meter.</li>
               <li>Dead/dying plants near pipes.</li>
@@ -47,7 +47,7 @@ export default function GasLeakDetect() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Detectors — install ahead of time</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Kidde Nighthawk Combo</strong> ($60) — natural gas + carbon monoxide alarm.</li>
               <li><strong>First Alert GCO1CN</strong> ($45) — same idea.</li>
               <li><strong>Smart Combo (Nest Protect)</strong> — alerts phone when away. ~$120 each.</li>
@@ -61,7 +61,7 @@ export default function GasLeakDetect() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Carbon monoxide is different</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>CO is INVISIBLE and ODORLESS. You won&apos;t smell it.</li>
               <li>Comes from incomplete combustion — broken furnace, blocked chimney, generator running indoors.</li>
               <li>Symptoms: flu-like headache, dizziness, weakness, that lifts when you go outside.</li>
@@ -74,7 +74,7 @@ export default function GasLeakDetect() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Prevention tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Annual furnace service ($100-200) catches problems before they become leaks.</li>
               <li>Have flexible gas connectors checked — old ones (pre-1990) prone to leaks.</li>
               <li>Don&apos;t store gasoline, paint, solvents near gas appliances.</li>
@@ -88,7 +88,7 @@ export default function GasLeakDetect() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free gas company inspection</h3>
-            <p className="text-sm text-muted-foreground">Your gas utility (PG&amp;E, ConEd, etc.) does FREE leak inspections at your home. Just call. They&apos;ll come check appliances, lines, meter. Especially valuable if you&apos;ve smelled gas occasionally and don&apos;t know why.</p>
+            <p className="text-base text-muted-foreground">Your gas utility (PG&amp;E, ConEd, etc.) does FREE leak inspections at your home. Just call. They&apos;ll come check appliances, lines, meter. Especially valuable if you&apos;ve smelled gas occasionally and don&apos;t know why.</p>
           </CardContent>
         </Card>
       </main>

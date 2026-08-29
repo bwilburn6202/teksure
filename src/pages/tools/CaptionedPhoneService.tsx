@@ -27,21 +27,21 @@ export default function CaptionedPhoneService() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What it is</h2>
-            <p className="text-sm mb-2">A captioned telephone has a screen above the keypad. While the other person talks, their words appear on the screen — like subtitles for the call. You read along while you listen.</p>
-            <p className="text-sm">It's federally funded by the FCC for adults with hearing loss. The phone is FREE. The service is FREE. There's no monthly cost, no contract.</p>
+            <p className="text-base mb-2">A captioned telephone has a screen above the keypad. While the other person talks, their words appear on the screen — like subtitles for the call. You read along while you listen.</p>
+            <p className="text-base">It's federally funded by the FCC for adults with hearing loss. The phone is FREE. The service is FREE. There's no monthly cost, no contract.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Do you qualify?</h2>
-            <p className="text-sm mb-2">Yes if:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Yes if:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>You have hearing loss that makes phone conversations hard.</li>
               <li>You have a regular phone line (most providers) or fast internet (some providers).</li>
               <li>An audiologist, ENT, or other hearing professional fills out a one-page form. Some providers accept self-certification too.</li>
             </ul>
-            <p className="text-sm mt-3">No income limits. No insurance needed.</p>
+            <p className="text-base mt-3">No income limits. No insurance needed.</p>
           </CardContent>
         </Card>
 
@@ -52,7 +52,7 @@ export default function CaptionedPhoneService() {
               {PROVIDERS.map(p => (
                 <div key={p.name} className="border-l-4 border-primary pl-3">
                   <p className="font-bold">{p.name}</p>
-                  <p className="text-sm text-muted-foreground mb-2">{p.who}</p>
+                  <p className="text-base text-muted-foreground mb-2">{p.who}</p>
                   <div className="flex gap-2 flex-wrap">
                     <Button asChild variant="outline" size="sm"><a href={p.site} target="_blank" rel="noopener noreferrer">Website <ExternalLink className="w-3 h-3 ml-1" /></a></Button>
                     <Button asChild variant="outline" size="sm"><a href={`tel:${p.phone.replace(/\D/g, '')}`}>{p.phone}</a></Button>
@@ -66,7 +66,7 @@ export default function CaptionedPhoneService() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How signup works</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick a provider above. Call or visit their website.</li>
               <li>They'll mail you a one-page hearing-loss certification form. Bring it to your audiologist, ENT doctor, or even your primary care doctor — they sign it.</li>
               <li>Mail or upload the form back.</li>
@@ -74,14 +74,14 @@ export default function CaptionedPhoneService() {
               <li>Plug it into your home phone jack (or for some providers, your home internet).</li>
               <li>Most providers offer free in-home installation help if you ask.</li>
             </ol>
-            <p className="text-sm mt-3">Total time: usually 2-3 weeks from call to phone working.</p>
+            <p className="text-base mt-3">Total time: usually 2-3 weeks from call to phone working.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don't have a landline?</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>iPhone:</strong> turn on Live Captions for phone calls — Settings → Accessibility → Live Captions. Free, built in.</li>
               <li><strong>Android:</strong> Live Caption works on phone calls on most Pixel and newer Samsung phones. Press volume → tap captions icon.</li>
               <li><strong>Hamilton CapTel app</strong> for iPhone and Android — captions any cell phone call. Free.</li>
@@ -92,7 +92,7 @@ export default function CaptionedPhoneService() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">Many people put off getting one of these because "it sounds like too much trouble". One phone call to a provider gets the ball rolling — they walk you through everything. The phone changes daily life for people who can't easily hear callers.</p>
+            <p className="text-base text-muted-foreground">Many people put off getting one of these because "it sounds like too much trouble". One phone call to a provider gets the ball rolling — they walk you through everything. The phone changes daily life for people who can't easily hear callers.</p>
           </CardContent>
         </Card>
       </main>

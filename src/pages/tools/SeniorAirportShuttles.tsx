@@ -22,7 +22,7 @@ export default function SeniorAirportShuttles() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Drive yourself</h2><p>$15-$30/day airport parking. Convenient. Pricey for long trips.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family ride</h2><p>Free + valuable goodbye. Ask kids if happy to drive.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">GoGoGrandparent</h2><p>Calls Uber for you. No app. Phone-based for seniors.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Family ride to airport = goodbye + cheap + traffic-free.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Family ride to airport = goodbye + cheap + traffic-free.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

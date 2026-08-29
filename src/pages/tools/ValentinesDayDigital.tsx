@@ -19,7 +19,7 @@ export default function ValentinesDayDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Digital cards + flowers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hallmark eCards</strong> — animated, personalized.</li>
               <li><strong>Jacquie Lawson</strong> — beautiful animations.</li>
               <li><strong>Punchbowl</strong> — free animated cards.</li>
@@ -33,7 +33,7 @@ export default function ValentinesDayDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Long-distance love</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FaceTime dinner together.</li>
               <li>Watch movie via Teleparty.</li>
               <li>Send playlist of meaningful songs.</li>
@@ -47,7 +47,7 @@ export default function ValentinesDayDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Romance scam warnings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FBI: $1.3 billion lost to romance scams 2023.</li>
               <li>Online &quot;love&quot; never asks for money.</li>
               <li>Won&apos;t video call = scammer.</li>
@@ -62,7 +62,7 @@ export default function ValentinesDayDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior dating apps (safer)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>OurTime</strong> — 50+.</li>
               <li><strong>SilverSingles</strong> — 50+.</li>
               <li><strong>Match.com</strong> — established.</li>
@@ -77,7 +77,7 @@ export default function ValentinesDayDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Couples activities tech</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cook together — recipe app.</li>
               <li>Make playlist of your songs.</li>
               <li>Watch wedding video on TV.</li>
@@ -91,7 +91,7 @@ export default function ValentinesDayDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Last-minute gifts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Amazon Prime same-day.</li>
               <li>Local florist + Instacart.</li>
               <li>Restaurant gift card via email.</li>
@@ -105,7 +105,7 @@ export default function ValentinesDayDigital() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Memory video</h3>
-            <p className="text-sm text-muted-foreground">Most romantic + free: open Photos app. Make slideshow of all your years together. Add favorite song. Show on TV with Apple TV or Chromecast. Beats roses for impact. Print photo book yearly — Shutterfly. Decades of Valentine&apos;s memorialized.</p>
+            <p className="text-base text-muted-foreground">Most romantic + free: open Photos app. Make slideshow of all your years together. Add favorite song. Show on TV with Apple TV or Chromecast. Beats roses for impact. Print photo book yearly — Shutterfly. Decades of Valentine&apos;s memorialized.</p>
           </CardContent>
         </Card>
       </main>

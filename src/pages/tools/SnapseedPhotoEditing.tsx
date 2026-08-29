@@ -19,7 +19,7 @@ export default function SnapseedPhotoEditing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Snapseed?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>100% free — no premium tier.</li>
               <li>By Google — high quality.</li>
               <li>Pro features for free.</li>
@@ -33,7 +33,7 @@ export default function SnapseedPhotoEditing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best simple edits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tune Image — basic brightness/contrast.</li>
               <li>Details — sharpen blurry photos.</li>
               <li>Crop — fix composition.</li>
@@ -47,7 +47,7 @@ export default function SnapseedPhotoEditing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Healing tool</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Remove unwanted objects from photos.</li>
               <li>Tap Healing — drag finger over object.</li>
               <li>Snapseed fills in background.</li>
@@ -61,7 +61,7 @@ export default function SnapseedPhotoEditing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Selective + brush</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adjust just one part of photo.</li>
               <li>Brighten a face without changing sky.</li>
               <li>Darken sky without affecting people.</li>
@@ -75,7 +75,7 @@ export default function SnapseedPhotoEditing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Filters + looks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pre-made styles — one tap to apply.</li>
               <li>Black + white, vintage, drama, etc.</li>
               <li>Adjust strength of each.</li>
@@ -89,7 +89,7 @@ export default function SnapseedPhotoEditing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other free editors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Photos — built-in editing on iPhone.</li>
               <li>Google Photos — basic edits + auto-enhance.</li>
               <li>Adobe Photoshop Express — free version.</li>
@@ -103,7 +103,7 @@ export default function SnapseedPhotoEditing() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Better than buying photo editing software</h3>
-            <p className="text-sm text-muted-foreground">In the past, photo editing software cost $100+. Snapseed gives you nearly all those professional features completely free, on your phone. Edit photos in 5 minutes, share via text or social media. The Healing tool alone (remove objects from photos) is mind-blowing. Many seniors say it&apos;s one of the most useful free apps they&apos;ve discovered.</p>
+            <p className="text-base text-muted-foreground">In the past, photo editing software cost $100+. Snapseed gives you nearly all those professional features completely free, on your phone. Edit photos in 5 minutes, share via text or social media. The Healing tool alone (remove objects from photos) is mind-blowing. Many seniors say it&apos;s one of the most useful free apps they&apos;ve discovered.</p>
           </CardContent>
         </Card>
       </main>

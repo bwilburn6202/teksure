@@ -22,7 +22,7 @@ export default function SeniorGlaucomaTracking() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Eye drop guide</h2><p>$15 device helps shaky hands aim drops correctly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Annual exam</h2><p>Medicare Part B covers. Catches progression.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Surgery options</h2><p>SLT laser, MIGS surgery. Often replaces drops. Talk to ophthalmologist.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Glaucoma is silent. By the time you notice vision loss, damage is permanent. Daily drops critical.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Glaucoma is silent. By the time you notice vision loss, damage is permanent. Daily drops critical.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -31,10 +31,10 @@ export default function CrosswordApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function CrosswordApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily 5 — NYT Games picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Wordle</strong> — 5-letter word in 6 guesses. 5 minutes.</li>
               <li><strong>Spelling Bee</strong> — make words from 7 letters. Half hour.</li>
               <li><strong>Connections</strong> — find 4 groups of 4. 5-15 min.</li>
@@ -56,7 +56,7 @@ export default function CrosswordApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other senior-favorite word games</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Words With Friends</strong> — Scrabble vs. real friends. Async, play over weeks.</li>
               <li><strong>Wordscapes</strong> — simple word search-style puzzles.</li>
               <li><strong>7 Little Words</strong> — 7 mini puzzles a day.</li>
@@ -70,7 +70,7 @@ export default function CrosswordApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pair with newspaper</h3>
-            <p className="text-sm text-muted-foreground">Many seniors keep paper newspapers for crosswords specifically. NYT Sunday Crossword in print + digital app for shortcuts works great. Pen + paper engages memory differently than tap. Use both.</p>
+            <p className="text-base text-muted-foreground">Many seniors keep paper newspapers for crosswords specifically. NYT Sunday Crossword in print + digital app for shortcuts works great. Pen + paper engages memory differently than tap. Use both.</p>
           </CardContent>
         </Card>
       </main>

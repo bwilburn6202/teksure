@@ -19,7 +19,7 @@ export default function AppleWatchSleepFor60() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup sleep tracking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Health app on iPhone.</li>
               <li>Tap &quot;Sleep&quot; → &quot;Get Started.&quot;</li>
               <li>Set sleep goal hours.</li>
@@ -33,7 +33,7 @@ export default function AppleWatchSleepFor60() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it tracks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sleep duration.</li>
               <li>Sleep stages (REM, Deep, Light).</li>
               <li>Heart rate during sleep.</li>
@@ -47,7 +47,7 @@ export default function AppleWatchSleepFor60() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wind Down mode</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set bedtime — phone goes Do Not Disturb.</li>
               <li>Sleep screen activates.</li>
               <li>Reduce blue light.</li>
@@ -61,7 +61,7 @@ export default function AppleWatchSleepFor60() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Battery management</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Watch needs daily charging.</li>
               <li>Charge during shower or breakfast.</li>
               <li>Or charge before bed nightly.</li>
@@ -75,7 +75,7 @@ export default function AppleWatchSleepFor60() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Share with doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Health app exports sleep data.</li>
               <li>PDF report for doctor.</li>
               <li>Identify sleep apnea symptoms.</li>
@@ -89,7 +89,7 @@ export default function AppleWatchSleepFor60() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apnea detection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Newer watches detect breathing disturbances.</li>
               <li>Early warning sign.</li>
               <li>Show doctor for evaluation.</li>
@@ -103,7 +103,7 @@ export default function AppleWatchSleepFor60() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you have Apple Watch — use it</h3>
-            <p className="text-sm text-muted-foreground">If you have an Apple Watch, sleep tracking is free + comprehensive. Track 2 weeks to identify patterns. Share with doctor at checkup. Especially valuable if you snore or feel un-rested. Newer watches catch breathing issues that suggest apnea — important for senior heart health.</p>
+            <p className="text-base text-muted-foreground">If you have an Apple Watch, sleep tracking is free + comprehensive. Track 2 weeks to identify patterns. Share with doctor at checkup. Especially valuable if you snore or feel un-rested. Newer watches catch breathing issues that suggest apnea — important for senior heart health.</p>
           </CardContent>
         </Card>
       </main>

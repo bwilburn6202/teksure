@@ -19,7 +19,7 @@ export default function ChromebookForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Chromebook</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>$200-500 vs $800-1,500 PC/Mac</strong>.</li>
               <li>Auto-updates — no maintenance.</li>
               <li>Virus-resistant — fewer scam pop-ups.</li>
@@ -34,7 +34,7 @@ export default function ChromebookForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best picks 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Acer Chromebook 314</strong> — $250. Senior favorite.</li>
               <li><strong>Lenovo IdeaPad Slim 3 Chromebook</strong> — $300.</li>
               <li><strong>HP Chromebook 14</strong> — $300. Larger screen.</li>
@@ -48,7 +48,7 @@ export default function ChromebookForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can do</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Email + web browsing.</li>
               <li>Microsoft Office online (free).</li>
               <li>Google Docs/Sheets free.</li>
@@ -64,7 +64,7 @@ export default function ChromebookForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you CAN&apos;T do</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heavy photo/video editing (Photoshop, Premiere).</li>
               <li>Most gaming (some via cloud).</li>
               <li>Some niche software (TurboTax desktop has alternatives).</li>
@@ -77,7 +77,7 @@ export default function ChromebookForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Simplify for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pin important sites (Gmail, news) to taskbar.</li>
               <li>Bigger text — Settings → Display → Display Size.</li>
               <li>Mouse cursor larger.</li>
@@ -91,7 +91,7 @@ export default function ChromebookForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When NOT a Chromebook</h3>
-            <p className="text-sm text-muted-foreground">If you do Photoshop, video editing, photography hobby with RAW files, gaming, or specialty software — get Mac or PC. If your needs are: email, web, video calls, photos, basic documents = Chromebook is perfect. Save $500+ vs other laptops.</p>
+            <p className="text-base text-muted-foreground">If you do Photoshop, video editing, photography hobby with RAW files, gaming, or specialty software — get Mac or PC. If your needs are: email, web, video calls, photos, basic documents = Chromebook is perfect. Save $500+ vs other laptops.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,29 +19,29 @@ export default function AirDropHelper() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What is AirDrop?</h2>
-            <p className="text-sm">A free Apple feature that sends photos, videos, contacts, or files from one Apple device to another nearby. No internet needed. Faster than texting and the photo stays full quality.</p>
-            <p className="text-sm mt-2"><strong>Works between:</strong> iPhone, iPad, Mac. NOT between iPhone and Android — for that, use text or email.</p>
+            <p className="text-base">A free Apple feature that sends photos, videos, contacts, or files from one Apple device to another nearby. No internet needed. Faster than texting and the photo stays full quality.</p>
+            <p className="text-base mt-2"><strong>Works between:</strong> iPhone, iPad, Mac. NOT between iPhone and Android — for that, use text or email.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h3 className="font-bold text-lg mb-3">Step 1 — Turn on AirDrop on both devices</h3>
-            <p className="text-sm mb-2">On both your iPhone and the receiver's iPhone:</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm mb-4">
+            <p className="text-base mb-2">On both your iPhone and the receiver's iPhone:</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base mb-4">
               <li>Open <strong>Control Center</strong> — swipe down from the top-right corner.</li>
               <li>Press and hold the box with Wi-Fi and Bluetooth icons.</li>
               <li>Tap <strong>AirDrop</strong>.</li>
               <li>Choose <strong>"Contacts Only"</strong> if you have each other in your contact lists. If not, tap <strong>"Everyone for 10 Minutes"</strong>.</li>
             </ol>
-            <p className="text-sm">Wi-Fi and Bluetooth both need to be on. AirDrop uses them together but doesn't need internet.</p>
+            <p className="text-base">Wi-Fi and Bluetooth both need to be on. AirDrop uses them together but doesn't need internet.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h3 className="font-bold text-lg mb-3">Step 2 — Send the photo</h3>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open the photo (or photos — you can pick several) in the Photos app.</li>
               <li>Tap the <strong>Share</strong> button (square with arrow up) in the bottom-left.</li>
               <li>Tap <strong>AirDrop</strong>.</li>
@@ -54,7 +54,7 @@ export default function AirDropHelper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h3 className="font-bold text-lg mb-3">Don't see the other person?</h3>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Both phones must be unlocked and awake.</li>
               <li>Both must have Wi-Fi and Bluetooth turned on.</li>
               <li>Devices need to be within 30 feet (10 meters).</li>
@@ -65,14 +65,14 @@ export default function AirDropHelper() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <AlertTriangle className="w-6 h-6 text-yellow-700 dark:text-yellow-400 shrink-0" />
+              <AlertTriangle className="w-6 h-6 text-warn-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Stay safe in public</h3>
-                <p className="text-sm text-muted-foreground mb-2">In rare cases, strangers in public places (subways, airports) AirDrop unwanted images to phones set to "Everyone".</p>
-                <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground mb-2">In rare cases, strangers in public places (subways, airports) AirDrop unwanted images to phones set to "Everyone".</p>
+                <ul className="list-disc pl-5 space-y-1 text-base text-muted-foreground">
                   <li>Keep AirDrop on "Contacts Only" or "Receiving Off" by default.</li>
                   <li>Only switch to "Everyone for 10 Minutes" when you actually need to receive from someone, then it turns off automatically.</li>
                   <li>If you do get an unwanted AirDrop request — tap <strong>Decline</strong>. Nothing was downloaded.</li>
@@ -85,7 +85,7 @@ export default function AirDropHelper() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Sharing with Android friends</h3>
-            <p className="text-sm text-muted-foreground">AirDrop only works between Apple devices. To send to Android, use Messages (compress to MMS), email, or a free app like <strong>Google Photos</strong> or <strong>WhatsApp</strong> — all work between iPhone and Android.</p>
+            <p className="text-base text-muted-foreground">AirDrop only works between Apple devices. To send to Android, use Messages (compress to MMS), email, or a free app like <strong>Google Photos</strong> or <strong>WhatsApp</strong> — all work between iPhone and Android.</p>
           </CardContent>
         </Card>
       </main>

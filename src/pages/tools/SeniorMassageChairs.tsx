@@ -17,12 +17,12 @@ export default function SeniorMassageChairs() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cost</h2><p>$1,500-$10,000. Costco has good deals on Kahuna brand.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefits</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Lower back pain relief</li><li>Better sleep</li><li>Reduced stress</li><li>Improved circulation</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefits</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Lower back pain relief</li><li>Better sleep</li><li>Reduced stress</li><li>Improved circulation</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">FSA/HSA</h2><p>If doctor prescribes for medical condition. Pre-tax savings.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Try first</h2><p>Many malls have demo chairs. Try 30 minutes before buying.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cheaper alternative</h2><p>Massage cushion $80. 80% benefit. Sits on regular chair.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Daily use</h2><p>15-30 min daily. Real chronic pain relief. Worth investment.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: $80 cushion vs $5,000 chair. Try cheap version first.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: $80 cushion vs $5,000 chair. Try cheap version first.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

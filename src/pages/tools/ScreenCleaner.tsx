@@ -19,7 +19,7 @@ export default function ScreenCleaner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DON&apos;T use these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Windex / glass cleaner</strong> — strips screen coating.</li>
               <li><strong>Paper towels</strong> — scratch screen.</li>
               <li><strong>Tissues</strong> — small fibers + scratching.</li>
@@ -33,7 +33,7 @@ export default function ScreenCleaner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DO use these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Microfiber cloth</strong> — primary tool. $5 for 6 pack.</li>
               <li><strong>Distilled water</strong> — for stubborn spots.</li>
               <li><strong>70% isopropyl alcohol wipes</strong> — Apple-approved for iPhone.</li>
@@ -46,7 +46,7 @@ export default function ScreenCleaner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily routine</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Power off device.</li>
               <li>Microfiber cloth — gentle circular motions.</li>
               <li>For grease — slightly damp cloth (NEVER drip on screen).</li>
@@ -59,7 +59,7 @@ export default function ScreenCleaner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Disinfecting (Covid era)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple OK&apos;d 70% isopropyl alcohol wipes.</li>
               <li>Clorox disinfecting wipes — gentle on Apple devices.</li>
               <li>Squeeze excess moisture before wiping.</li>
@@ -72,7 +72,7 @@ export default function ScreenCleaner() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior tip</h3>
-            <p className="text-sm text-muted-foreground">If glasses fog when you wear mask + clean phone — same microfiber works for both. Buy pack of 6 microfiber cloths. Keep one in car, kitchen, bedroom. Quick wipe = clear vision.</p>
+            <p className="text-base text-muted-foreground">If glasses fog when you wear mask + clean phone — same microfiber works for both. Buy pack of 6 microfiber cloths. Keep one in car, kitchen, bedroom. Quick wipe = clear vision.</p>
           </CardContent>
         </Card>
       </main>

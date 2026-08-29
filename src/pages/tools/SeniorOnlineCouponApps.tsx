@@ -22,7 +22,7 @@ export default function SeniorOnlineCouponApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Fetch Rewards</h2><p>Free. Snap any grocery or gas receipt. Earn points for gift cards.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Store apps</h2><p>Target Circle, Walgreens, CVS Extra Care — all have free coupons in their apps.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior discount days</h2><p>Many stores offer 10-20% off seniors on Tuesdays. Ask the cashier.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Stack store coupon + manufacturer coupon + cash back app for max savings.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Stack store coupon + manufacturer coupon + cash back app for max savings.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

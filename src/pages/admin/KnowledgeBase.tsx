@@ -489,7 +489,7 @@ export default function KnowledgeBase() {
                 <Brain className="h-5 w-5" />
                 Ollama Runtime
               </CardTitle>
-              <p className="text-sm text-muted-foreground mt-1">
+              <p className="text-base text-muted-foreground mt-1">
                 Production stays visible even when generation is unavailable.
               </p>
             </div>
@@ -504,14 +504,14 @@ export default function KnowledgeBase() {
                 <Badge variant={health?.available ? 'default' : 'secondary'}>
                   {health?.available ? 'Available' : 'Unavailable'}
                 </Badge>
-                <span className="text-sm text-muted-foreground">{health?.model ?? 'unknown model'}</span>
+                <span className="text-base text-muted-foreground">{health?.model ?? 'unknown model'}</span>
               </div>
-              <p className="text-sm text-muted-foreground">{health?.message ?? 'Checking local runtime...'}</p>
-              <p className="text-xs text-muted-foreground">Endpoint: {health?.baseUrl ?? 'unknown'}</p>
+              <p className="text-base text-muted-foreground">{health?.message ?? 'Checking local runtime...'}</p>
+              <p className="text-sm text-muted-foreground">Endpoint: {health?.baseUrl ?? 'unknown'}</p>
             </div>
             {!health?.available && (
               <div className="flex items-start gap-2 rounded-xl border border-amber-500/20 bg-amber-500/5 px-4 py-3 text-sm text-muted-foreground max-w-md">
-                <TriangleAlert className="h-4 w-4 text-amber-500 mt-0.5 shrink-0" />
+                <TriangleAlert className="h-4 w-4 text-warn-foreground mt-0.5 shrink-0" />
                 Generation is disabled until the configured Ollama model is reachable.
               </div>
             )}
@@ -525,7 +525,7 @@ export default function KnowledgeBase() {
                 <Database className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-2xl font-bold">{counts.documents}</p>
-                  <p className="text-sm text-muted-foreground">Compiled documents</p>
+                  <p className="text-base text-muted-foreground">Compiled documents</p>
                 </div>
               </div>
             </CardContent>
@@ -536,7 +536,7 @@ export default function KnowledgeBase() {
                 <Sparkles className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-2xl font-bold">{counts.concepts}</p>
-                  <p className="text-sm text-muted-foreground">Concept pages</p>
+                  <p className="text-base text-muted-foreground">Concept pages</p>
                 </div>
               </div>
             </CardContent>
@@ -547,7 +547,7 @@ export default function KnowledgeBase() {
                 <FileText className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-2xl font-bold">{counts.outputs}</p>
-                  <p className="text-sm text-muted-foreground">Generated outputs</p>
+                  <p className="text-base text-muted-foreground">Generated outputs</p>
                 </div>
               </div>
             </CardContent>
@@ -558,7 +558,7 @@ export default function KnowledgeBase() {
                 <FileText className="h-5 w-5 text-primary" />
                 <div>
                   <p className="text-2xl font-bold">{counts.manualSources}</p>
-                  <p className="text-sm text-muted-foreground">Manual sources</p>
+                  <p className="text-base text-muted-foreground">Manual sources</p>
                 </div>
               </div>
             </CardContent>
@@ -572,7 +572,7 @@ export default function KnowledgeBase() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <label className="text-sm font-medium">Import `.md`, `.txt`, `.pdf`, `.docx`, or image files</label>
+                <label className="text-base font-medium">Import `.md`, `.txt`, `.pdf`, `.docx`, or image files</label>
                 <Input
                   type="file"
                   accept=".md,.txt,.pdf,.docx,.png,.jpg,.jpeg,.webp,text/markdown,text/plain,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png,image/jpeg,image/webp"
@@ -582,15 +582,15 @@ export default function KnowledgeBase() {
               </div>
               <div className="grid gap-3">
                 <div>
-                  <label className="text-sm font-medium">Title</label>
+                  <label className="text-base font-medium">Title</label>
                   <Input value={manualTitle} onChange={(event) => setManualTitle(event.target.value)} className="mt-1" />
                 </div>
                 <div>
-                  <label className="text-sm font-medium">Source URL</label>
+                  <label className="text-base font-medium">Source URL</label>
                   <Input value={manualUrl} onChange={(event) => setManualUrl(event.target.value)} className="mt-1" placeholder="Optional" />
                 </div>
                 <div>
-                  <label className="text-sm font-medium">Content</label>
+                  <label className="text-base font-medium">Content</label>
                   <Textarea
                     value={manualContent}
                     onChange={(event) => setManualContent(event.target.value)}
@@ -619,12 +619,12 @@ export default function KnowledgeBase() {
               <CardTitle>Compile From Scraped Content</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Builds source summaries and concept pages from the latest accepted scraped articles and manual sources.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row sm:items-end">
                 <div className="w-full sm:max-w-[180px]">
-                  <label className="text-sm font-medium">Article batch size</label>
+                  <label className="text-base font-medium">Article batch size</label>
                   <Input
                     type="number"
                     min="1"
@@ -647,7 +647,7 @@ export default function KnowledgeBase() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="space-y-2">
-                <p className="text-sm font-medium">Prompt presets</p>
+                <p className="text-base font-medium">Prompt presets</p>
                 <div className="flex flex-wrap gap-2">
                   {PROMPT_PRESETS.map((preset) => (
                     <Button
@@ -658,7 +658,7 @@ export default function KnowledgeBase() {
                       onClick={() => applyPreset(preset)}
                     >
                       {preset.label}
-                      <span className="ml-1.5 text-xs opacity-75">({preset.outputType})</span>
+                      <span className="ml-1.5 text-sm opacity-75">({preset.outputType})</span>
                     </Button>
                   ))}
                 </div>
@@ -694,17 +694,17 @@ export default function KnowledgeBase() {
             </CardHeader>
             <CardContent className="space-y-4">
               {manualSources.length === 0 ? (
-                <p className="text-sm text-muted-foreground">No manual sources yet.</p>
+                <p className="text-base text-muted-foreground">No manual sources yet.</p>
               ) : manualSources.map((source) => (
                 <div key={source.id} className="rounded-xl border p-4">
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       <p className="font-medium">{source.title}</p>
-                      <p className="text-xs text-muted-foreground mt-1">
+                      <p className="text-sm text-muted-foreground mt-1">
                         {source.source_type === 'upload' ? 'Upload' : 'Manual'} · {new Date(source.created_at).toLocaleString()}
                       </p>
                       {source.original_filename && (
-                        <p className="text-xs text-muted-foreground mt-1">File: {source.original_filename}</p>
+                        <p className="text-sm text-muted-foreground mt-1">File: {source.original_filename}</p>
                       )}
                       {source.source_url && (
                         <a href={source.source_url} target="_blank" rel="noreferrer" className="text-xs text-primary hover:underline">
@@ -758,7 +758,7 @@ export default function KnowledgeBase() {
                   {latestAnswer}
                 </pre>
               ) : (
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   No answer generated in this session yet.
                 </p>
               )}
@@ -779,7 +779,7 @@ export default function KnowledgeBase() {
               />
               <div className="space-y-3 max-h-[460px] overflow-y-auto pr-1">
                 {filteredDocuments.length === 0 ? (
-                  <p className="text-sm text-muted-foreground">No compiled documents match the current filter.</p>
+                  <p className="text-base text-muted-foreground">No compiled documents match the current filter.</p>
                 ) : filteredDocuments.map((document) => (
                   <button
                     key={document.id}
@@ -789,7 +789,7 @@ export default function KnowledgeBase() {
                     }`}
                   >
                     <p className="font-medium">{document.title}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{new Date(document.updated_at).toLocaleString()}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{new Date(document.updated_at).toLocaleString()}</p>
                     <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{document.summary}</p>
                   </button>
                 ))}
@@ -820,7 +820,7 @@ export default function KnowledgeBase() {
                   </pre>
                 </div>
               ) : (
-                <p className="text-sm text-muted-foreground">Compile the knowledge base to view document previews.</p>
+                <p className="text-base text-muted-foreground">Compile the knowledge base to view document previews.</p>
               )}
             </CardContent>
           </Card>
@@ -833,7 +833,7 @@ export default function KnowledgeBase() {
             </CardHeader>
             <CardContent className="space-y-3 max-h-[460px] overflow-y-auto pr-1">
               {concepts.length === 0 ? (
-                <p className="text-sm text-muted-foreground">No concept pages yet.</p>
+                <p className="text-base text-muted-foreground">No concept pages yet.</p>
               ) : concepts.map((concept) => (
                 <button
                   key={concept.id}
@@ -843,7 +843,7 @@ export default function KnowledgeBase() {
                   }`}
                 >
                   <p className="font-medium">{concept.title}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{new Date(concept.updated_at).toLocaleString()}</p>
+                  <p className="text-sm text-muted-foreground mt-1">{new Date(concept.updated_at).toLocaleString()}</p>
                   <p className="text-sm text-muted-foreground mt-2 line-clamp-3">{concept.summary}</p>
                 </button>
               ))}
@@ -859,10 +859,10 @@ export default function KnowledgeBase() {
                 <div className="space-y-4">
                   <div>
                     <p className="font-medium text-lg">{selectedConcept.title}</p>
-                    <p className="text-sm text-muted-foreground mt-1">{selectedConcept.summary}</p>
+                    <p className="text-base text-muted-foreground mt-1">{selectedConcept.summary}</p>
                   </div>
                   <div className="space-y-2">
-                    <p className="text-sm font-medium">Linked source documents</p>
+                    <p className="text-base font-medium">Linked source documents</p>
                     {selectedConcept.source_document_ids?.length ? selectedConcept.source_document_ids.map((sourceId) => {
                       const document = sourceDocumentMap.get(sourceId);
                       return (
@@ -875,7 +875,7 @@ export default function KnowledgeBase() {
                         </button>
                       );
                     }) : (
-                      <p className="text-sm text-muted-foreground">No linked source documents.</p>
+                      <p className="text-base text-muted-foreground">No linked source documents.</p>
                     )}
                   </div>
                   <pre className="whitespace-pre-wrap text-sm leading-6 rounded-xl bg-muted/40 border p-4 overflow-x-auto max-h-[520px] overflow-y-auto">
@@ -883,7 +883,7 @@ export default function KnowledgeBase() {
                   </pre>
                 </div>
               ) : (
-                <p className="text-sm text-muted-foreground">No concept preview available yet.</p>
+                <p className="text-base text-muted-foreground">No concept preview available yet.</p>
               )}
             </CardContent>
           </Card>
@@ -914,7 +914,7 @@ export default function KnowledgeBase() {
                   {latestReport}
                 </pre>
               ) : (
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   No report generated in this session yet.
                 </p>
               )}
@@ -927,7 +927,7 @@ export default function KnowledgeBase() {
             </CardHeader>
             <CardContent className="space-y-4">
               {recentOutputs.length === 0 ? (
-                <p className="text-sm text-muted-foreground">No outputs yet.</p>
+                <p className="text-base text-muted-foreground">No outputs yet.</p>
               ) : recentOutputs.map((output) => (
                 <button
                   key={output.id}
@@ -940,7 +940,7 @@ export default function KnowledgeBase() {
                     <p className="font-medium">{output.title}</p>
                     <Badge variant="secondary">{output.output_type}</Badge>
                   </div>
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="text-sm text-muted-foreground mt-1">
                     {new Date(output.created_at).toLocaleString()}
                   </p>
                   <p className="text-sm text-muted-foreground mt-3 line-clamp-4">
@@ -977,7 +977,7 @@ export default function KnowledgeBase() {
                   {latestDeck}
                 </pre>
               ) : (
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   No deck generated in this session yet.
                 </p>
               )}
@@ -1010,12 +1010,12 @@ export default function KnowledgeBase() {
                   <div className="flex items-center justify-between gap-3">
                     <div>
                       <p className="font-medium text-lg">{selectedOutput.title}</p>
-                      <p className="text-sm text-muted-foreground mt-1">{new Date(selectedOutput.created_at).toLocaleString()}</p>
+                      <p className="text-base text-muted-foreground mt-1">{new Date(selectedOutput.created_at).toLocaleString()}</p>
                     </div>
                     <Badge variant="secondary">{selectedOutput.output_type}</Badge>
                   </div>
                   <div className="space-y-2">
-                    <p className="text-sm font-medium">Source documents used</p>
+                    <p className="text-base font-medium">Source documents used</p>
                     {selectedOutput.source_document_ids?.length ? selectedOutput.source_document_ids.map((sourceId) => {
                       const document = sourceDocumentMap.get(sourceId);
                       return (
@@ -1028,7 +1028,7 @@ export default function KnowledgeBase() {
                         </button>
                       );
                     }) : (
-                      <p className="text-sm text-muted-foreground">No source-document links were recorded.</p>
+                      <p className="text-base text-muted-foreground">No source-document links were recorded.</p>
                     )}
                   </div>
                   <pre className="whitespace-pre-wrap text-sm leading-6 rounded-xl bg-muted/40 border p-4 overflow-x-auto max-h-[560px] overflow-y-auto">
@@ -1036,7 +1036,7 @@ export default function KnowledgeBase() {
                   </pre>
                 </div>
               ) : (
-                <p className="text-sm text-muted-foreground">Generate or select an output to inspect it in full.</p>
+                <p className="text-base text-muted-foreground">Generate or select an output to inspect it in full.</p>
               )}
             </CardContent>
           </Card>

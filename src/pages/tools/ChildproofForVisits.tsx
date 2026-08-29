@@ -19,8 +19,8 @@ export default function ChildproofForVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> iPad / iPhone — Guided Access</h2>
-            <p className="text-sm mb-2">Locks the device into ONE app — they can\'t exit to your email or Facebook.</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Locks the device into ONE app — they can\'t exit to your email or Facebook.</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Settings → Accessibility → Guided Access → ON.</li>
               <li>Set a passcode (only you know it).</li>
               <li>Open the app you want them to use (PBS Kids, ABCmouse, a coloring app).</li>
@@ -33,7 +33,7 @@ export default function ChildproofForVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> iPad — Screen Time / Restrictions</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Settings → Screen Time → Content & Privacy Restrictions → ON.</li>
               <li>"App Store" → "Don\'t Allow" — no new app installs.</li>
               <li>"In-App Purchases" → Don\'t Allow — stops any purchase.</li>
@@ -47,7 +47,7 @@ export default function ChildproofForVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Android — Kids Mode / Restricted Profile</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Samsung Galaxy</strong> — Settings → Advanced features → Kids Mode (or "Kids Home"). Pre-built kid-friendly UI.</li>
               <li><strong>Other Android</strong> — Settings → Users → Add user → "Restricted profile". Lets you limit which apps appear.</li>
               <li><strong>Google Family Link</strong> — install on the kid\'s device + your phone — lets you see usage and set time limits remotely.</li>
@@ -58,7 +58,7 @@ export default function ChildproofForVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> TV — protect the streaming subscriptions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Netflix Kids profile</strong> — main account → Manage Profiles → "Kids" toggle. PIN-lock adult profiles.</li>
               <li><strong>Disney+, Hulu, Max</strong> — all have Kids profiles too. Use them.</li>
               <li><strong>Roku PIN</strong> — Settings → Manage Account on roku.com → set a 4-digit PIN required to install ANY app or buy anything.</li>
@@ -71,8 +71,8 @@ export default function ChildproofForVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Home Wi-Fi — guest network</h2>
-            <p className="text-sm mb-2">Don\'t let visitors\' phones connect to the SAME network as your computer and printer.</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Don\'t let visitors\' phones connect to the SAME network as your computer and printer.</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Open your router\'s app or web page (search "[brand] router login").</li>
               <li>Find "Guest network" → enable.</li>
               <li>Name it "GuestWiFi" with a different password.</li>
@@ -84,7 +84,7 @@ export default function ChildproofForVisits() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Best kids\' apps (free or cheap)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>PBS Kids</strong> — completely free. Hundreds of educational shows and games.</li>
               <li><strong>Khan Academy Kids</strong> — free. Math, reading, social skills.</li>
               <li><strong>ABCmouse</strong> — paid, but extensive. 30-day free trial.</li>
@@ -98,7 +98,7 @@ export default function ChildproofForVisits() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best gift for grandkids who visit often</h3>
-            <p className="text-sm text-muted-foreground">A used Amazon Fire HD 8 ($60-90) set up just for them. Pre-load PBS Kids, Khan Academy Kids, and a coloring app. Charge it before they arrive. They have their own device, you don\'t worry about your iPad.</p>
+            <p className="text-base text-muted-foreground">A used Amazon Fire HD 8 ($60-90) set up just for them. Pre-load PBS Kids, Khan Academy Kids, and a coloring app. Charge it before they arrive. They have their own device, you don\'t worry about your iPad.</p>
           </CardContent>
         </Card>
       </main>

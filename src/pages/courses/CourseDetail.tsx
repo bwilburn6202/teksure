@@ -205,12 +205,12 @@ export default function CourseDetail() {
           <Card className="border-border">
             <CardContent className="p-6 flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-4 min-w-0">
-                <div className="p-3 rounded-xl bg-amber-500/10 text-amber-700 dark:text-amber-400">
+                <div className="p-3 rounded-xl bg-amber-500/10 text-warn-foreground ">
                   <Sparkles className="h-6 w-6" aria-hidden="true" />
                 </div>
                 <div className="min-w-0">
                   <p className="font-semibold">{course.certificateTitle}</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     {complete
                       ? 'Ready to view — print it, share it, or save a PDF.'
                       : 'Pass every lesson to unlock a printable certificate with your name.'}
@@ -249,28 +249,28 @@ function LessonRow({
     switch (status) {
       case 'mastered':
         return (
-          <span className="inline-flex items-center gap-1 text-emerald-700 dark:text-emerald-400 text-xs font-medium">
+          <span className="inline-flex items-center gap-1 text-success-foreground text-sm font-medium">
             <Trophy className="h-3.5 w-3.5" />
             Mastered
           </span>
         );
       case 'passed':
         return (
-          <span className="inline-flex items-center gap-1 text-emerald-700 dark:text-emerald-400 text-xs font-medium">
+          <span className="inline-flex items-center gap-1 text-success-foreground text-sm font-medium">
             <CheckCircle2 className="h-3.5 w-3.5" />
             Passed
           </span>
         );
       case 'in-progress':
         return (
-          <span className="inline-flex items-center gap-1 text-amber-700 dark:text-amber-400 text-xs font-medium">
+          <span className="inline-flex items-center gap-1 text-warn-foreground text-sm font-medium">
             <Circle className="h-3.5 w-3.5 fill-current" />
             In progress
           </span>
         );
       default:
         return (
-          <span className="inline-flex items-center gap-1 text-muted-foreground text-xs">
+          <span className="inline-flex items-center gap-1 text-muted-foreground text-sm">
             <Circle className="h-3.5 w-3.5" />
             Not started
           </span>

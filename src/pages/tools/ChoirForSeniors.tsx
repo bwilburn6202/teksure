@@ -19,7 +19,7 @@ export default function ChoirForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Improves lung function (COPD especially).</li>
               <li>Lowers BP.</li>
               <li>Boosts mood (oxytocin release).</li>
@@ -35,7 +35,7 @@ export default function ChoirForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find local choirs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Church choirs</strong> — most welcoming.</li>
               <li><strong>Community choruses</strong> — non-religious.</li>
               <li><strong>Senior centers</strong> — daytime groups.</li>
@@ -50,7 +50,7 @@ export default function ChoirForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Memory care choirs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Choirs for dementia patients exist.</li>
               <li>Familiar songs trigger memories.</li>
               <li>Meaningful connection late in disease.</li>
@@ -64,7 +64,7 @@ export default function ChoirForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t worry about voice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most community choirs accept all voices.</li>
               <li>Older voices age — tone changes okay.</li>
               <li>Group sings — no solos required.</li>
@@ -79,7 +79,7 @@ export default function ChoirForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Karaoke alternative</h3>
-            <p className="text-sm text-muted-foreground">No choir nearby? Karaoke nights at restaurants. Smule app — sing with others online. Family sing-alongs at gatherings. Don&apos;t lose joy of singing. Even shower singing has health benefits.</p>
+            <p className="text-base text-muted-foreground">No choir nearby? Karaoke nights at restaurants. Smule app — sing with others online. Family sing-alongs at gatherings. Don&apos;t lose joy of singing. Even shower singing has health benefits.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function LocalTvCordCutting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recommended setup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Antenna ($30-100)</strong> — local NBC, CBS, ABC, FOX, PBS free. See /tools/antenna-picks.</li>
               <li><strong>Roku/FireTV/AppleTV ($30-150)</strong> — turns any TV into smart TV.</li>
               <li><strong>Pick 1-2 streamers</strong>:
@@ -33,14 +33,14 @@ export default function LocalTvCordCutting() {
               </li>
               <li><strong>FREE add-ons</strong> — Pluto, Tubi, Roku Channel, Library Hoopla.</li>
             </ol>
-            <p className="text-sm mt-3">Total: $25-50/mo. Save $1,500-2,000/year.</p>
+            <p className="text-base mt-3">Total: $25-50/mo. Save $1,500-2,000/year.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you NEED live cable channels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YouTube TV</strong> — $73/mo. Best alternative to cable. Same channels, better DVR.</li>
               <li><strong>Hulu + Live TV</strong> — $77/mo. Bundle with Disney/ESPN.</li>
               <li><strong>Sling TV</strong> — $40/mo. Smaller channel selection. Cheaper.</li>
@@ -52,7 +52,7 @@ export default function LocalTvCordCutting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cancellation tips</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Set up new system FIRST. Test for a week.</li>
               <li>Find your local cable office address.</li>
               <li>Call to cancel — they&apos;ll try retention deals. Listen — half off for 1 year may delay decision.</li>
@@ -66,7 +66,7 @@ export default function LocalTvCordCutting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Internet only</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ask your cable company for "internet-only" plan. Often $50-80/mo without TV.</li>
               <li>Negotiate every 12 months — say "I&apos;ll switch" for retention deal.</li>
               <li>Or switch to fiber (AT&amp;T, Verizon FiOS, Frontier) — often cheaper.</li>
@@ -78,7 +78,7 @@ export default function LocalTvCordCutting() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior moment to give grandkids</h3>
-            <p className="text-sm text-muted-foreground">Have a tech-savvy adult kid set up streaming for you. 2 hours saves you $1,500/year. Best ROI gift either of you ever made. After 3 weeks, the new system feels normal.</p>
+            <p className="text-base text-muted-foreground">Have a tech-savvy adult kid set up streaming for you. 2 hours saves you $1,500/year. Best ROI gift either of you ever made. After 3 weeks, the new system feels normal.</p>
           </CardContent>
         </Card>
       </main>

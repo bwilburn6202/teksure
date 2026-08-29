@@ -41,22 +41,22 @@ export default function FallPreventionAssessment() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Fall Risk Self-Assessment | TekSure" description="12 yes/no questions adapted from the CDC STEADI fall risk questionnaire. See your risk level and what to do next." />
       <div className="max-w-2xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <ShieldAlert className="h-7 w-7 text-amber-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Fall Risk Self-Assessment</h1>
+            <ShieldAlert className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Fall Risk Self-Assessment</h1>
           </div>
-          <p className="text-gray-600 text-lg">12 yes/no questions adapted from the CDC STEADI fall risk tool. Honest answers give the most useful result.</p>
+          <p className="text-muted-foreground text-lg">12 yes/no questions adapted from the CDC STEADI fall risk tool. Honest answers give the most useful result.</p>
         </div>
 
         <div className="space-y-2 mb-4">
           {QUESTIONS.map((q, idx) => (
             <Card key={q.id}>
               <CardContent className="py-3 px-4 flex items-center justify-between gap-2">
-                <p className="text-sm flex-1"><span className="text-gray-400 mr-2">{idx + 1}.</span>{q.text}</p>
+                <p className="text-base flex-1"><span className="text-muted-foreground mr-2">{idx + 1}.</span>{q.text}</p>
                 <div className="flex gap-1">
                   <Button size="sm" variant={answers[q.id] === "yes" ? "default" : "outline"} onClick={() => set(q.id, "yes")}>Yes</Button>
                   <Button size="sm" variant={answers[q.id] === "no" ? "default" : "outline"} onClick={() => set(q.id, "no")}>No</Button>
@@ -71,7 +71,7 @@ export default function FallPreventionAssessment() {
             <CardContent className="py-4 px-4 text-center">
               <AlertTriangle className="h-8 w-8 mx-auto mb-2" />
               <p className="text-lg font-bold">{level}</p>
-              <p className="text-sm mt-2">{risks} risk factor{risks !== 1 ? "s" : ""} identified out of 12</p>
+              <p className="text-base mt-2">{risks} risk factor{risks !== 1 ? "s" : ""} identified out of 12</p>
               {risks > 0 && (
                 <div className="mt-3 text-sm text-left bg-white/80 rounded p-3">
                   <p className="font-semibold mb-2">Next steps to consider:</p>
@@ -91,9 +91,9 @@ export default function FallPreventionAssessment() {
           </Card>
         )}
         {!complete && (
-          <p className="text-center text-sm text-gray-500">{answered} of {QUESTIONS.length} answered</p>
+          <p className="text-center text-base text-muted-foreground">{answered} of {QUESTIONS.length} answered</p>
         )}
       </div>
-    </div>
+    </main>
   );
 }

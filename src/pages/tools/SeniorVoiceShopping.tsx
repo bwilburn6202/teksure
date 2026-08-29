@@ -22,7 +22,7 @@ export default function SeniorVoiceShopping() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior friendly</h2><p>No reading small text. No struggling with mouse. Just talk.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family approval</h2><p>Send orders for family approval before charging. Safety net.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out</h2><p>Don&apos;t voice order luxury items. Slow down purchase decisions.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set spending limit. &ldquo;Don&apos;t allow orders over $30 without code.&rdquo;</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set spending limit. &ldquo;Don&apos;t allow orders over $30 without code.&rdquo;</p></CardContent></Card>
         </div>
       </main>
       <Footer />

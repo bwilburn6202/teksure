@@ -28,7 +28,7 @@ export default function PelletGrillCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why pellet grills are popular</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Set temperature like an oven. Pellets feed automatically.</li>
               <li>App-controlled — monitor temp from couch.</li>
               <li>Smoker AND grill in one.</li>
@@ -44,10 +44,10 @@ export default function PelletGrillCoach() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,7 +56,7 @@ export default function PelletGrillCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Companion gear</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>MEATER thermometer</strong> ($100) — wireless, alerts on phone.</li>
               <li><strong>Pellets storage bin</strong> — moisture ruins pellets.</li>
               <li><strong>Grill cover</strong> — extends life 5-10 years.</li>
@@ -68,7 +68,7 @@ export default function PelletGrillCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First cooks for pellet beginners</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Smoked chicken thighs — 250°F for 90 min. Forgiving.</li>
               <li>Pulled pork (bone-in shoulder) — 8-12 hours, low and slow.</li>
               <li>Steak reverse-sear — smoke at 225°F until 110°F internal, then crank for sear.</li>
@@ -81,7 +81,7 @@ export default function PelletGrillCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best YouTube</h3>
-            <p className="text-sm text-muted-foreground">"Mad Scientist BBQ" and "Meat Church BBQ" — top channels. Free. World-class techniques. Watch one episode and you\'ll be a smoker overnight.</p>
+            <p className="text-base text-muted-foreground">"Mad Scientist BBQ" and "Meat Church BBQ" — top channels. Free. World-class techniques. Watch one episode and you\'ll be a smoker overnight.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorMemoryGames() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Concentration</h2><p>Real card game. Easy. Senior favorite. Multi-generation friendly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior memory tricks</h2><p>Method of loci. Repeat names 3 times. Visualize for recall.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">15 minutes daily</h2><p>Real benefit. Pattern of brain games over months adds up.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Combine games + walking + diet for strongest memory protection.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Combine games + walking + diet for strongest memory protection.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

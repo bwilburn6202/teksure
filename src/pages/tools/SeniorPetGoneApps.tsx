@@ -22,7 +22,7 @@ export default function SeniorPetGoneApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pet cremation</h2><p>$100-$300. Most vets coordinate.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Custom keepsakes</h2><p>Etsy has portrait artists. $30-$200. Fur-clay paw prints.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Don&apos;t rush new pet</h2><p>Grief is real. Wait until ready. Sometimes weeks, sometimes year.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pet loss is real grief. Take time. Hotlines free. You&apos;re not alone.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pet loss is real grief. Take time. Hotlines free. You&apos;re not alone.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -27,7 +27,7 @@ export default function SmartGarageOpener() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why senior-friendly</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>"Did I close the garage?" answered from anywhere.</li>
               <li>Open for FedEx / Amazon delivery without unlocking front door.</li>
               <li>Open for handyman, cleaner, family without giving them remote.</li>
@@ -43,10 +43,10 @@ export default function SmartGarageOpener() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -55,21 +55,21 @@ export default function SmartGarageOpener() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easiest path</h2>
-            <p className="text-sm">If your existing opener was made after ~2010, get a <strong>myQ Smart Hub</strong> ($30-50). Mounts to ceiling. Connects to existing opener wires. App-controlled in 15 minutes. No need to replace the whole opener for $400.</p>
+            <p className="text-base">If your existing opener was made after ~2010, get a <strong>myQ Smart Hub</strong> ($30-50). Mounts to ceiling. Connects to existing opener wires. App-controlled in 15 minutes. No need to replace the whole opener for $400.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Note on Amazon Key (in-garage delivery)</h2>
-            <p className="text-sm">myQ partners with Amazon Key — Amazon driver opens your garage, places package inside, closes garage. Free for Prime members. Some find this magic, others find it creepy. Optional, easy to disable.</p>
+            <p className="text-base">myQ partners with Amazon Key — Amazon driver opens your garage, places package inside, closes garage. Free for Prime members. Some find this magic, others find it creepy. Optional, easy to disable.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For new install</h3>
-            <p className="text-sm text-muted-foreground">If buying a new opener, get the Chamberlain B6753T or similar belt-drive WITH built-in myQ. Quieter than chain drives, smart features included. Lasts 15+ years.</p>
+            <p className="text-base text-muted-foreground">If buying a new opener, get the Chamberlain B6753T or similar belt-drive WITH built-in myQ. Quieter than chain drives, smart features included. Lasts 15+ years.</p>
           </CardContent>
         </Card>
       </main>

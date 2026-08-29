@@ -22,7 +22,7 @@ export default function SeniorVolunteerOnline() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Be My Eyes</h2><p>FREE. Help blind users via video. 1-2 minutes per request.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Crisis Text Line</h2><p>Volunteer texting suicide-prevention support. 30+ hours of training.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior Corps</h2><p>Federal program. Foster Grandparent and Senior Companion programs. Stipend available.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 2 hours/week of online volunteering = 100 hours/year of impact.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 2 hours/week of online volunteering = 100 hours/year of impact.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

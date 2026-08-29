@@ -19,7 +19,7 @@ export default function RestaurantReservationCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Reservation apps</h2>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-base">
               <li><strong>OpenTable</strong> (free) — biggest. Earn "points" toward gift cards as you dine. Best chain restaurants and casual spots.</li>
               <li><strong>Resy</strong> (free) — owned by American Express. Trendy and fine-dining spots. Often has reservations OpenTable doesn't.</li>
               <li><strong>Yelp Reservations</strong> (free) — built into the Yelp app. Less common, but works at some local spots.</li>
@@ -32,7 +32,7 @@ export default function RestaurantReservationCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time setup (any app)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install the app from the App Store / Play Store.</li>
               <li>Make an account — name, email, phone.</li>
               <li>Add a credit card (some places hold a card for no-shows).</li>
@@ -47,20 +47,20 @@ export default function RestaurantReservationCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Finding a great restaurant nearby</h2>
-            <p className="font-semibold text-sm mt-2">Free apps to compare:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="font-semibold text-base mt-2">Free apps to compare:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Google Maps</strong> — search "restaurants" → filter by cuisine, price ($, $$, $$$$). Reviews from millions of people, plus Google's "Reservation" button if available.</li>
               <li><strong>Yelp</strong> — opinionated reviews. Strong for breakfast spots, ethnic food, hidden gems.</li>
               <li><strong>TripAdvisor</strong> — better for restaurants while traveling. Tourist-skewed reviews, but the photos are useful.</li>
             </ul>
-            <p className="text-sm mt-3 bg-muted/50 p-3 rounded"><strong>Trick:</strong> Sort by "Rating" but read the 3-star reviews — they\'re honest and balanced. 5-star reviews are often family. 1-star reviews are often disgruntled.</p>
+            <p className="text-base mt-3 bg-muted/50 p-3 rounded"><strong>Trick:</strong> Sort by "Rating" but read the 3-star reviews — they\'re honest and balanced. 5-star reviews are often family. 1-star reviews are often disgruntled.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pro moves</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Special occasion?</strong> Mention it in the "Notes" field when booking — anniversary, birthday. Many places do something nice (free dessert, card from the chef).</li>
               <li><strong>Dietary restrictions?</strong> Same — list "gluten free" or "vegetarian" so the kitchen plans.</li>
               <li><strong>Big group (8+)?</strong> Call the restaurant directly — apps often only book up to 6.</li>
@@ -73,7 +73,7 @@ export default function RestaurantReservationCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — calling still works</h3>
-            <p className="text-sm text-muted-foreground">If an app shows "no tables available", calling the restaurant directly often finds one. They sometimes hold tables off the apps for walk-ins or regulars.</p>
+            <p className="text-base text-muted-foreground">If an app shows "no tables available", calling the restaurant directly often finds one. They sometimes hold tables off the apps for walk-ins or regulars.</p>
           </CardContent>
         </Card>
       </main>

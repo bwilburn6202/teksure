@@ -22,7 +22,7 @@ export default function SeniorPetEmergencyApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Emergency vet finder</h2><p>VetFinder app. 24/7 emergency vets near you.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pet ICE card</h2><p>In wallet: pet name, vet, emergency contact for pet.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pet sitter info</h2><p>Tell neighbor about pet. If you go to hospital, pet has care.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: $85 ASPCA fee credited if you go to vet that day. Worth calling first.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: $85 ASPCA fee credited if you go to vet that day. Worth calling first.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

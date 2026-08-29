@@ -19,7 +19,7 @@ export default function PreSurgeryChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">3-4 weeks before</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medical clearance from primary doctor.</li>
               <li>Pre-op blood work + EKG if needed.</li>
               <li>Stop smoking — even short break helps healing.</li>
@@ -35,7 +35,7 @@ export default function PreSurgeryChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">1-2 weeks before</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Confirm meds list with surgeon (some stop, some continue).</li>
               <li>Stop blood thinners only if doctor says.</li>
               <li>Stop NSAIDs (Advil, Aleve) usually 1 week before.</li>
@@ -51,7 +51,7 @@ export default function PreSurgeryChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Day before</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Follow exact eating + drinking rules.</li>
               <li>Shower with surgical scrub if instructed.</li>
               <li>Pack hospital bag.</li>
@@ -66,7 +66,7 @@ export default function PreSurgeryChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recovery setup at home</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bedroom on first floor if possible.</li>
               <li>Reach phone, water, meds from bed.</li>
               <li>Walker / cane / wheelchair as needed.</li>
@@ -82,7 +82,7 @@ export default function PreSurgeryChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Post-op recovery</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walk early + often (prevents clots).</li>
               <li>Pain manage on schedule (don&apos;t wait until severe).</li>
               <li>Wean off opioids ASAP — addiction risk.</li>
@@ -98,7 +98,7 @@ export default function PreSurgeryChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior surgery risks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Delirium (temporary confusion) — common.</li>
               <li>Pneumonia — sit up, breathe deep, walk.</li>
               <li>Blood clots — wear compression, walk.</li>
@@ -112,7 +112,7 @@ export default function PreSurgeryChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Bring advocate</h3>
-            <p className="text-sm text-muted-foreground">Spouse or adult child should be present at admission + discharge. Advocate hears doctor, asks questions you forget. Discharge instructions OVERWHELMING — second person catches details. Have list of questions ready. Don&apos;t leave hospital confused — ask until clear.</p>
+            <p className="text-base text-muted-foreground">Spouse or adult child should be present at admission + discharge. Advocate hears doctor, asks questions you forget. Discharge instructions OVERWHELMING — second person catches details. Have list of questions ready. Don&apos;t leave hospital confused — ask until clear.</p>
           </CardContent>
         </Card>
       </main>

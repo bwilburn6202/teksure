@@ -19,7 +19,7 @@ export default function HomeInsuranceShop() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best companies (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>USAA</strong> — vets only, top-rated.</li>
               <li><strong>Amica</strong> — top customer satisfaction. Most states.</li>
               <li><strong>State Farm</strong> — local agents, reliable.</li>
@@ -34,7 +34,7 @@ export default function HomeInsuranceShop() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most insurers offer 10-25% off for retirees / 55+.</li>
               <li>Bundle (auto + home) — 15-25%.</li>
               <li>Newly built / re-roofed — 5-15%.</li>
@@ -50,7 +50,7 @@ export default function HomeInsuranceShop() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Coverage to verify</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Dwelling</strong> — REPLACEMENT cost (not market value). Check rebuild estimator.</li>
               <li><strong>Personal property</strong> — usually 50-70% of dwelling.</li>
               <li><strong>Liability</strong> — $300K minimum, $500K-1M better.</li>
@@ -66,7 +66,7 @@ export default function HomeInsuranceShop() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Shop every 2 years</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Get 3 quotes (Amica, State Farm, GEICO).</li>
               <li>Match coverage exactly.</li>
               <li>Note discounts.</li>
@@ -80,7 +80,7 @@ export default function HomeInsuranceShop() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t buy from junk mail</h3>
-            <p className="text-sm text-muted-foreground">"Final expense" + "senior life" insurance flyers in mail = often overpriced + heavy commission. Quote the same coverage from major insurers — usually 30-60% cheaper.</p>
+            <p className="text-base text-muted-foreground">"Final expense" + "senior life" insurance flyers in mail = often overpriced + heavy commission. Quote the same coverage from major insurers — usually 30-60% cheaper.</p>
           </CardContent>
         </Card>
       </main>

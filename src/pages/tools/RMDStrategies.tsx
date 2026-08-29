@@ -19,7 +19,7 @@ export default function RMDStrategies() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RMD basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Required at age 73 (SECURE Act 2.0 — was 72, now 73, soon 75).</li>
               <li>Applies to: traditional IRA, 401(k), 403(b), 457, SEP, SIMPLE.</li>
               <li>NOT required: Roth IRA (lifetime). Roth 401k starting 2024.</li>
@@ -33,8 +33,8 @@ export default function RMDStrategies() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Calculate RMD</h2>
-            <p className="text-sm">RMD = balance Dec 31 prior year ÷ life expectancy factor (IRS table).</p>
-            <ul className="list-disc pl-5 space-y-2 text-sm mt-2">
+            <p className="text-base">RMD = balance Dec 31 prior year ÷ life expectancy factor (IRS table).</p>
+            <ul className="list-disc pl-5 space-y-2 text-base mt-2">
               <li>Age 73 — divide by 26.5.</li>
               <li>Age 75 — divide by 24.6.</li>
               <li>Age 80 — divide by 20.2.</li>
@@ -48,7 +48,7 @@ export default function RMDStrategies() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tax-smart strategies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>QCD (Qualified Charitable Distribution)</strong> — give RMD directly to charity. Up to $108K (2025). Counts toward RMD. NO income tax.</li>
               <li><strong>Convert to Roth BEFORE 73</strong> — pay tax now at lower rate, no future RMD.</li>
               <li><strong>Spread big withdrawals</strong> — manage IRMAA + tax brackets.</li>
@@ -61,7 +61,7 @@ export default function RMDStrategies() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Multiple IRAs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Calculate RMD for EACH IRA.</li>
               <li>Can withdraw TOTAL from any one or multiple.</li>
               <li>401(k) RMDs separate — must take from each 401k.</li>
@@ -73,7 +73,7 @@ export default function RMDStrategies() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free calculators</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bankrate RMD calculator — free.</li>
               <li>Schwab, Fidelity, Vanguard sites have RMD calculators.</li>
               <li>IRS Publication 590-B — official rules.</li>
@@ -85,7 +85,7 @@ export default function RMDStrategies() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t miss</h3>
-            <p className="text-sm text-muted-foreground">25% penalty on missed RMD is brutal. Set up auto-withdrawal at brokerage by November each year. Never have to remember. Brokerage moves money to checking — done.</p>
+            <p className="text-base text-muted-foreground">25% penalty on missed RMD is brutal. Set up auto-withdrawal at brokerage by November each year. Never have to remember. Brokerage moves money to checking — done.</p>
           </CardContent>
         </Card>
       </main>

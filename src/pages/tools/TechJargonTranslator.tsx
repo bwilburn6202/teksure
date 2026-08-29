@@ -761,7 +761,7 @@ export default function TechJargonTranslator() {
           <div className="container py-12 sm:py-16 max-w-5xl">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div className="flex items-center gap-4">
-                <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-violet-200/70 text-violet-800 dark:bg-violet-900/60 dark:text-violet-200 shadow-sm">
+                <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-violet-200/70 text-primary dark:bg-violet-900/60 shadow-sm">
                   <Languages className="h-9 w-9" aria-hidden="true" />
                 </div>
                 <div>
@@ -855,7 +855,7 @@ export default function TechJargonTranslator() {
                   </div>
 
                   <div className="flex flex-wrap items-center gap-2">
-                    <span className="inline-flex items-center gap-1.5 text-sm text-muted-foreground">
+                    <span className="inline-flex items-center gap-1.5 text-base text-muted-foreground">
                       <Filter className="h-4 w-4" aria-hidden="true" /> Category:
                     </span>
                     <Button
@@ -879,7 +879,7 @@ export default function TechJargonTranslator() {
                     ))}
                   </div>
 
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Showing <strong>{filteredDict.length}</strong> of {DICTIONARY.length} terms.
                     Tap a card to see the full explanation.
                   </p>
@@ -900,7 +900,7 @@ export default function TechJargonTranslator() {
                 grouped.map(([letter, entries]) => (
                   <div key={letter}>
                     <h2 className="text-2xl font-bold tracking-tight mb-3 flex items-center gap-3">
-                      <span className="inline-flex items-center justify-center h-10 w-10 rounded-xl bg-violet-100 text-violet-700 dark:bg-violet-950/60 dark:text-violet-200 text-lg font-bold">
+                      <span className="inline-flex items-center justify-center h-10 w-10 rounded-xl bg-primary/10 text-primary text-lg font-bold">
                         {letter}
                       </span>
                       <span className="text-muted-foreground font-normal text-base">
@@ -923,7 +923,7 @@ export default function TechJargonTranslator() {
                           <p className="text-base text-muted-foreground line-clamp-2">
                             {entry.definition}
                           </p>
-                          <span className="mt-3 inline-flex items-center text-sm font-medium text-violet-700 dark:text-violet-300 group-hover:underline">
+                          <span className="mt-3 inline-flex items-center text-base font-medium text-primary group-hover:underline">
                             Read full entry <ChevronRight className="h-4 w-4 ml-0.5" aria-hidden="true" />
                           </span>
                         </button>
@@ -939,7 +939,7 @@ export default function TechJargonTranslator() {
               <Card>
                 <CardHeader className="pb-3">
                   <CardTitle className="flex items-center gap-2 text-xl">
-                    <MessageSquare className="h-6 w-6 text-violet-600 dark:text-violet-300" aria-hidden="true" />
+                    <MessageSquare className="h-6 w-6 text-primary " aria-hidden="true" />
                     Paste anything tech-heavy
                   </CardTitle>
                 </CardHeader>
@@ -980,7 +980,7 @@ export default function TechJargonTranslator() {
                   </div>
 
                   <div className="rounded-xl bg-muted/40 p-4">
-                    <p className="text-sm font-medium mb-2">Try an example:</p>
+                    <p className="text-base font-medium mb-2">Try an example:</p>
                     <div className="flex flex-wrap gap-2">
                       <Button
                         variant="outline"
@@ -1027,15 +1027,15 @@ export default function TechJargonTranslator() {
               {translatorOutput && (
                 <div className="space-y-4">
                   {translatorOutput.redFlags.length > 0 && (
-                    <Card className="border-2 border-red-400 bg-red-50 dark:bg-red-950/30 dark:border-red-800">
+                    <Card className="border-2 border-red-400 bg-danger dark:border-red-800">
                       <CardContent className="p-5 space-y-3">
                         <div className="flex items-center gap-2">
-                          <ShieldAlert className="h-6 w-6 text-red-700 dark:text-red-300" aria-hidden="true" />
-                          <h3 className="text-xl font-bold text-red-900 dark:text-red-100">
+                          <ShieldAlert className="h-6 w-6 text-danger-foreground " aria-hidden="true" />
+                          <h3 className="text-xl font-bold text-danger-foreground ">
                             This message has scam warning signs
                           </h3>
                         </div>
-                        <ul className="space-y-1.5 text-base text-red-900 dark:text-red-100">
+                        <ul className="space-y-1.5 text-base text-danger-foreground ">
                           {translatorOutput.redFlags.map(flag => (
                             <li key={flag} className="flex items-start gap-2">
                               <span className="shrink-0 mt-1.5 h-1.5 w-1.5 rounded-full bg-red-700 dark:bg-red-300" aria-hidden="true" />
@@ -1059,17 +1059,17 @@ export default function TechJargonTranslator() {
                   <Card>
                     <CardHeader className="pb-2">
                       <CardTitle className="flex items-center gap-2 text-xl">
-                        <Lightbulb className="h-6 w-6 text-violet-600 dark:text-violet-300" aria-hidden="true" />
+                        <Lightbulb className="h-6 w-6 text-primary " aria-hidden="true" />
                         This message says:
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-4">
-                      <div className="rounded-xl border-2 border-violet-200 dark:border-violet-800 bg-violet-50/50 dark:bg-violet-950/20 p-4">
+                      <div className="rounded-xl border-2 border-primary/25 bg-violet-50/50 dark:bg-violet-950/20 p-4">
                         <p className="text-lg leading-relaxed whitespace-pre-wrap">
                           {translatorOutput.plain}
                         </p>
                       </div>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         <strong>{translatorOutput.replacementCount}</strong> tech term
                         {translatorOutput.replacementCount === 1 ? '' : 's'} translated.
                       </p>
@@ -1080,7 +1080,7 @@ export default function TechJargonTranslator() {
                     <Card>
                       <CardHeader className="pb-2">
                         <CardTitle className="flex items-center gap-2 text-xl">
-                          <Tag className="h-6 w-6 text-violet-600 dark:text-violet-300" aria-hidden="true" />
+                          <Tag className="h-6 w-6 text-primary " aria-hidden="true" />
                           Terms we swapped
                         </CardTitle>
                       </CardHeader>
@@ -1093,11 +1093,11 @@ export default function TechJargonTranslator() {
                                   {h.from}
                                 </code>
                                 <ArrowRight className="h-4 w-4 text-muted-foreground mt-1.5" aria-hidden="true" />
-                                <span className="text-base font-semibold text-violet-800 dark:text-violet-200">
+                                <span className="text-base font-semibold text-primary ">
                                   {h.to}
                                 </span>
                               </div>
-                              <p className="mt-1 text-sm text-muted-foreground">{h.note}</p>
+                              <p className="mt-1 text-base text-muted-foreground">{h.note}</p>
                             </li>
                           ))}
                         </ul>
@@ -1133,7 +1133,7 @@ export default function TechJargonTranslator() {
                       </Button>
                     )}
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Showing <strong>{filteredErrors.length}</strong> common errors.
                     Can't find yours? Try pasting the first line of the error message.
                   </p>
@@ -1147,7 +1147,7 @@ export default function TechJargonTranslator() {
                       <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
                         <div>
                           <div className="flex flex-wrap items-center gap-2 mb-1">
-                            <code className="inline-flex items-center rounded-md bg-violet-100 text-violet-800 dark:bg-violet-950/60 dark:text-violet-200 px-2 py-1 text-sm font-mono font-bold">
+                            <code className="inline-flex items-center rounded-md bg-primary/10 text-primary px-2 py-1 text-sm font-mono font-bold">
                               {err.code}
                             </code>
                             <Badge variant="secondary" className="text-sm">
@@ -1213,10 +1213,10 @@ export default function TechJargonTranslator() {
 
         {/* ── Quick Guides ──────────────────────────────────────────────── */}
         <section className="container pb-10 max-w-5xl">
-          <Card className="border-2 border-violet-200 dark:border-violet-800 bg-violet-50/60 dark:bg-violet-950/20">
+          <Card className="border-2 border-primary/25 bg-violet-50/60 dark:bg-violet-950/20">
             <CardHeader className="pb-2">
               <CardTitle className="flex items-center gap-2 text-xl">
-                <Sparkles className="h-6 w-6 text-violet-600 dark:text-violet-300" aria-hidden="true" />
+                <Sparkles className="h-6 w-6 text-primary " aria-hidden="true" />
                 Quick Guides
               </CardTitle>
             </CardHeader>
@@ -1230,10 +1230,10 @@ export default function TechJargonTranslator() {
                   className="block rounded-xl border-2 border-border bg-card p-4 hover:border-violet-400 hover:bg-violet-50/40 dark:hover:border-violet-700 dark:hover:bg-violet-950/30 transition-colors min-h-24"
                 >
                   <div className="flex items-center gap-2 mb-1.5">
-                    <Eye className="h-5 w-5 text-violet-600 dark:text-violet-300" aria-hidden="true" />
+                    <Eye className="h-5 w-5 text-primary " aria-hidden="true" />
                     <span className="font-semibold text-base">Is it safe to click?</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Verify a news story, email, deal, or text before you act.
                   </p>
                 </Link>
@@ -1242,10 +1242,10 @@ export default function TechJargonTranslator() {
                   className="block rounded-xl border-2 border-border bg-card p-4 hover:border-violet-400 hover:bg-violet-50/40 dark:hover:border-violet-700 dark:hover:bg-violet-950/30 transition-colors min-h-24"
                 >
                   <div className="flex items-center gap-2 mb-1.5">
-                    <Mail className="h-5 w-5 text-violet-600 dark:text-violet-300" aria-hidden="true" />
+                    <Mail className="h-5 w-5 text-primary " aria-hidden="true" />
                     <span className="font-semibold text-base">Is this email real?</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Clean up spam and phishing with a senior-friendly walkthrough.
                   </p>
                 </Link>
@@ -1254,10 +1254,10 @@ export default function TechJargonTranslator() {
                   className="block rounded-xl border-2 border-border bg-card p-4 hover:border-violet-400 hover:bg-violet-50/40 dark:hover:border-violet-700 dark:hover:bg-violet-950/30 transition-colors min-h-24"
                 >
                   <div className="flex items-center gap-2 mb-1.5">
-                    <Lock className="h-5 w-5 text-violet-600 dark:text-violet-300" aria-hidden="true" />
+                    <Lock className="h-5 w-5 text-primary " aria-hidden="true" />
                     <span className="font-semibold text-base">Password strength?</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     See how long a hacker would take to crack your password.
                   </p>
                 </Link>
@@ -1271,7 +1271,7 @@ export default function TechJargonTranslator() {
           <Card>
             <CardHeader className="pb-2">
               <CardTitle className="flex items-center gap-2 text-xl">
-                <Plus className="h-6 w-6 text-violet-600 dark:text-violet-300" aria-hidden="true" />
+                <Plus className="h-6 w-6 text-primary " aria-hidden="true" />
                 Suggest a term
               </CardTitle>
             </CardHeader>
@@ -1281,8 +1281,8 @@ export default function TechJargonTranslator() {
               </p>
               <form onSubmit={handleSuggestSubmit} className="space-y-3">
                 <div>
-                  <label htmlFor="suggest-term" className="block text-sm font-medium mb-1">
-                    Term <span className="text-red-600">*</span>
+                  <label htmlFor="suggest-term" className="block text-base font-medium mb-1">
+                    Term <span className="text-danger-foreground">*</span>
                   </label>
                   <Input
                     id="suggest-term"
@@ -1294,7 +1294,7 @@ export default function TechJargonTranslator() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="suggest-note" className="block text-sm font-medium mb-1">
+                  <label htmlFor="suggest-note" className="block text-base font-medium mb-1">
                     Where did you see it? (optional)
                   </label>
                   <Input
@@ -1311,7 +1311,7 @@ export default function TechJargonTranslator() {
                     Send suggestion
                   </Button>
                   {suggestSent && (
-                    <span className="inline-flex items-center gap-1.5 text-sm text-green-700 dark:text-green-300">
+                    <span className="inline-flex items-center gap-1.5 text-base text-success-foreground ">
                       <Check className="h-4 w-4" aria-hidden="true" />
                       Thanks — we'll add it in the next update.
                     </span>
@@ -1321,7 +1321,7 @@ export default function TechJargonTranslator() {
 
               {suggestList.length > 0 && (
                 <div className="mt-6">
-                  <p className="text-sm font-medium text-muted-foreground mb-2">
+                  <p className="text-base font-medium text-muted-foreground mb-2">
                     Your recent suggestions (saved on this device):
                   </p>
                   <ul className="flex flex-wrap gap-2">
@@ -1340,7 +1340,7 @@ export default function TechJargonTranslator() {
         {/* ── FAQ ───────────────────────────────────────────────────────── */}
         <section className="container pb-16 max-w-5xl">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-            <HelpCircle className="h-6 w-6 text-violet-600 dark:text-violet-300" aria-hidden="true" />
+            <HelpCircle className="h-6 w-6 text-primary " aria-hidden="true" />
             Common questions
           </h2>
           <Accordion type="single" collapsible className="w-full">
@@ -1435,11 +1435,11 @@ export default function TechJargonTranslator() {
                   </p>
                   <p className="text-base leading-relaxed">{openTerm.definition}</p>
                 </div>
-                <div className="rounded-lg bg-violet-50 dark:bg-violet-950/30 p-3 border border-violet-200 dark:border-violet-800">
-                  <p className="text-sm font-semibold uppercase tracking-wide text-violet-700 dark:text-violet-300 mb-1">
+                <div className="rounded-lg bg-primary/10 p-3 border border-primary/25 ">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-primary mb-1">
                     In a sentence
                   </p>
-                  <p className="text-base leading-relaxed text-violet-900 dark:text-violet-100">
+                  <p className="text-base leading-relaxed text-primary ">
                     {openTerm.example}
                   </p>
                 </div>
@@ -1458,7 +1458,7 @@ export default function TechJargonTranslator() {
                             disabled={!match}
                             className={`inline-flex items-center rounded-full border px-3 py-1 text-sm min-h-[2rem] ${
                               match
-                                ? 'border-violet-300 dark:border-violet-700 text-violet-800 dark:text-violet-200 hover:bg-violet-50 dark:hover:bg-violet-950/40 cursor-pointer'
+                                ? 'border-violet-300 dark:border-violet-700 text-primary hover:bg-primary/10 cursor-pointer'
                                 : 'border-muted text-muted-foreground cursor-default'
                             }`}
                           >

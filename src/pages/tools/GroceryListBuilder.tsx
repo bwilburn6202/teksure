@@ -93,7 +93,7 @@ export default function GroceryListBuilder() {
   const bought = items.filter(i => i.bought).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Grocery List Builder | TekSure"
         description="Build a sorted grocery list by category. Quick-add common items, check them off as you shop, and print the list."
@@ -102,10 +102,10 @@ export default function GroceryListBuilder() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <ShoppingCart className="h-7 w-7 text-emerald-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Grocery List Builder</h1>
+            <ShoppingCart className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Grocery List Builder</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Build a tidy grocery list sorted by section. Use the quick-add buttons or type your own items.
           </p>
         </div>
@@ -117,7 +117,7 @@ export default function GroceryListBuilder() {
           </CardHeader>
           <CardContent className="space-y-3">
             <div className="grid grid-cols-1 sm:grid-cols-12 gap-2">
-              <select value={category} onChange={e => setCategory(e.target.value as Category)} className="sm:col-span-4 border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <select value={category} onChange={e => setCategory(e.target.value as Category)} className="sm:col-span-4 border border-border rounded-md px-3 py-2 text-base bg-card">
                 {CATEGORIES.map(c => <option key={c}>{c}</option>)}
               </select>
               <Input placeholder="Item name" value={name} onChange={e => setName(e.target.value)} onKeyDown={e => { if (e.key === "Enter") add(); }} className="sm:col-span-5 text-base" />
@@ -127,7 +127,7 @@ export default function GroceryListBuilder() {
             <button
               type="button"
               onClick={() => setShowCommonFor(showCommonFor === category ? null : category)}
-              className="text-xs text-blue-600 underline"
+              className="text-xs text-info-foreground underline"
             >
               {showCommonFor === category ? "Hide" : "Show"} common {category} items
             </button>
@@ -138,7 +138,7 @@ export default function GroceryListBuilder() {
                     key={c}
                     type="button"
                     onClick={() => add(c, category)}
-                    className="text-xs px-2 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 hover:bg-emerald-100"
+                    className="text-xs px-2 py-1 rounded-full bg-success border border-success-foreground/25 text-success-foreground hover:bg-success"
                   >
                     + {c}
                   </button>
@@ -151,8 +151,8 @@ export default function GroceryListBuilder() {
         {/* Status */}
         {total > 0 && (
           <div className="flex items-center justify-between mb-3 print:hidden">
-            <div className="text-sm text-gray-600">
-              <span className="font-semibold text-gray-800">{bought} of {total}</span> items checked off
+            <div className="text-sm text-muted-foreground">
+              <span className="font-semibold text-foreground">{bought} of {total}</span> items checked off
             </div>
             <div className="flex gap-2">
               <Button variant="outline" size="sm" onClick={() => window.print()} className="gap-1">
@@ -160,11 +160,11 @@ export default function GroceryListBuilder() {
                 Print
               </Button>
               {bought > 0 && (
-                <Button variant="ghost" size="sm" onClick={clearBought} className="gap-1 text-gray-500">
+                <Button variant="ghost" size="sm" onClick={clearBought} className="gap-1 text-muted-foreground">
                   Clear bought
                 </Button>
               )}
-              <Button variant="ghost" size="sm" onClick={clearAll} className="gap-1 text-red-500">
+              <Button variant="ghost" size="sm" onClick={clearAll} className="gap-1 text-danger-foreground">
                 <RotateCcw className="h-3 w-3" />
                 Clear all
               </Button>
@@ -175,10 +175,10 @@ export default function GroceryListBuilder() {
         {/* List */}
         {total === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <ShoppingCart className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <ShoppingCart className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">Your list is empty.</p>
-              <p className="text-sm mt-1">Add your first item above.</p>
+              <p className="text-base mt-1">Add your first item above.</p>
             </CardContent>
           </Card>
         ) : (
@@ -190,7 +190,7 @@ export default function GroceryListBuilder() {
                 <Card key={cat} className="print:break-inside-avoid">
                   <CardHeader className={`pb-2 pt-3 ${CATEGORY_COLOR[cat].split(" ")[1]}`}>
                     <CardTitle className={`text-base ${CATEGORY_COLOR[cat].split(" ")[0]}`}>
-                      {cat} <span className="text-sm font-normal text-gray-500">({list.length})</span>
+                      {cat} <span className="text-base font-normal text-muted-foreground">({list.length})</span>
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="pt-2 pb-3">
@@ -203,8 +203,8 @@ export default function GroceryListBuilder() {
                             aria-label={item.bought ? "Mark as not bought" : "Mark as bought"}
                           >
                             {item.bought
-                              ? <CheckCircle2 className="h-5 w-5 text-emerald-600" />
-                              : <Circle className="h-5 w-5 text-gray-400" />}
+                              ? <CheckCircle2 className="h-5 w-5 text-success-foreground" />
+                              : <Circle className="h-5 w-5 text-muted-foreground" />}
                           </button>
                           <div className="flex-1 flex items-center gap-2">
                             <span className={`text-base ${item.bought ? "line-through text-gray-400" : "text-gray-900"}`}>
@@ -215,7 +215,7 @@ export default function GroceryListBuilder() {
                           <Button
                             variant="ghost"
                             size="icon"
-                            className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden"
+                            className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden"
                             onClick={() => remove(item.id)}
                             aria-label="Remove item"
                           >
@@ -231,15 +231,15 @@ export default function GroceryListBuilder() {
           </div>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               The list groups items by store section automatically — produce together, dairy together, and so on. That makes shopping faster.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

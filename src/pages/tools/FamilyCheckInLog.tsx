@@ -92,7 +92,7 @@ export default function FamilyCheckInLog() {
   });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Family Check-In Log | TekSure"
         description="Stay in touch with everyone. Log a quick check-in each time you call, text, or visit family — see who you have not heard from in a while."
@@ -101,19 +101,19 @@ export default function FamilyCheckInLog() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Users className="h-7 w-7 text-purple-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Family Check-In Log</h1>
+            <Users className="h-7 w-7 text-primary" />
+            <h1 className="text-3xl font-bold text-foreground">Family Check-In Log</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Add the people you want to stay in touch with. Each time you talk, log it. The list shows who you have not heard from in a while.
           </p>
         </div>
 
         {/* Stale alert */}
         {stale.length > 0 && (
-          <Card className="mb-4 bg-amber-50 border-amber-200 print:hidden">
+          <Card className="mb-4 bg-warn border-warn-foreground/25 print:hidden">
             <CardContent className="py-3 px-4">
-              <p className="text-sm text-amber-800">
+              <p className="text-base text-warn-foreground">
                 <span className="font-semibold">Time to reach out:</span> {stale.map(s => s.name).join(", ")}
               </p>
             </CardContent>
@@ -124,7 +124,7 @@ export default function FamilyCheckInLog() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-purple-600" />
+              <PlusCircle className="h-5 w-5 text-primary" />
               Add Family / Friend
             </CardTitle>
           </CardHeader>
@@ -139,7 +139,7 @@ export default function FamilyCheckInLog() {
                 <Input id="m-rel" placeholder="e.g. son, sister, neighbor" value={memberForm.relationship} onChange={e => setMemberForm(f => ({ ...f, relationship: e.target.value }))} className="mt-1 text-base" />
               </div>
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={addMember} size="lg" className="w-full sm:w-auto text-base">Add Person</Button>
           </CardContent>
         </Card>
@@ -156,10 +156,10 @@ export default function FamilyCheckInLog() {
         {/* Members */}
         {members.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Users className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Users className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No people on the list yet.</p>
-              <p className="text-sm mt-1">Start with one family member.</p>
+              <p className="text-base mt-1">Start with one family member.</p>
             </CardContent>
           </Card>
         ) : (
@@ -171,18 +171,18 @@ export default function FamilyCheckInLog() {
               const tForm = touchForms[m.id] || { kind: "call" as ContactKind, notes: "" };
               return (
                 <Card key={m.id} className="print:break-inside-avoid">
-                  <CardHeader className="pb-2 pt-3 bg-purple-50">
-                    <CardTitle className="text-base text-purple-800 flex items-center justify-between flex-wrap gap-2">
+                  <CardHeader className="pb-2 pt-3 bg-primary/10">
+                    <CardTitle className="text-base text-primary flex items-center justify-between flex-wrap gap-2">
                       <span>
                         {m.name}
-                        {m.relationship && <span className="text-gray-500 font-normal"> · {m.relationship}</span>}
+                        {m.relationship && <span className="text-muted-foreground font-normal"> · {m.relationship}</span>}
                       </span>
                       {days !== null ? (
                         <Badge variant="secondary" className={`text-xs border ${staleColor(days)}`}>
                           {days === 0 ? "Today" : days === 1 ? "1 day ago" : `${days} days ago`}
                         </Badge>
                       ) : (
-                        <Badge variant="secondary" className="text-xs bg-gray-100 text-gray-600">No log yet</Badge>
+                        <Badge variant="secondary" className="text-xs bg-muted text-muted-foreground">No log yet</Badge>
                       )}
                     </CardTitle>
                   </CardHeader>
@@ -194,7 +194,7 @@ export default function FamilyCheckInLog() {
                           key={k}
                           type="button"
                           onClick={() => setTouchForms(prev => ({ ...prev, [m.id]: { ...tForm, kind: k } }))}
-                          className={`text-xs px-2 py-1 rounded-full border ${tForm.kind === k ? "bg-purple-50 border-purple-300 text-purple-800" : "bg-white border-gray-200 text-gray-700"}`}
+                          className={`text-xs px-2 py-1 rounded-full border ${tForm.kind === k ? "bg-purple-50 border-primary/25 text-purple-800" : "bg-white border-border text-gray-700"}`}
                         >
                           {KIND_META[k].emoji} {KIND_META[k].label}
                         </button>
@@ -213,14 +213,14 @@ export default function FamilyCheckInLog() {
                     {/* History */}
                     {memberTouches.length > 0 && (
                       <div className="border-t pt-2">
-                        <p className="text-xs text-gray-500 mb-1">Recent contacts:</p>
+                        <p className="text-sm text-muted-foreground mb-1">Recent contacts:</p>
                         <ul className="space-y-1">
                           {memberTouches.slice(0, 5).map(t => (
-                            <li key={t.id} className="flex items-center justify-between gap-2 text-xs">
-                              <span className="text-gray-700">
-                                {KIND_META[t.kind].emoji} {t.date} {t.notes && <span className="italic text-gray-500">— {t.notes}</span>}
+                            <li key={t.id} className="flex items-center justify-between gap-2 text-sm">
+                              <span className="text-foreground">
+                                {KIND_META[t.kind].emoji} {t.date} {t.notes && <span className="italic text-muted-foreground">— {t.notes}</span>}
                               </span>
-                              <Button variant="ghost" size="icon" onClick={() => removeTouch(t.id)} className="h-5 w-5 text-red-400 hover:text-red-600 print:hidden">
+                              <Button variant="ghost" size="icon" onClick={() => removeTouch(t.id)} className="h-5 w-5 text-danger-foreground hover:text-danger-foreground print:hidden">
                                 <Trash2 className="h-3 w-3" />
                               </Button>
                             </li>
@@ -229,7 +229,7 @@ export default function FamilyCheckInLog() {
                       </div>
                     )}
 
-                    <Button variant="ghost" size="sm" onClick={() => removeMember(m.id)} className="text-xs text-red-400 hover:text-red-600 print:hidden">
+                    <Button variant="ghost" size="sm" onClick={() => removeMember(m.id)} className="text-xs text-danger-foreground hover:text-danger-foreground print:hidden">
                       Remove from list
                     </Button>
                   </CardContent>
@@ -239,15 +239,15 @@ export default function FamilyCheckInLog() {
           </div>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               The goal is not to log everything perfectly — just to spot when someone hasn't been on your radar lately. Even a 30-second text counts.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

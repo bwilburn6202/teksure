@@ -22,7 +22,7 @@ export default function SeniorLifelineTracking() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Auto-arrive alerts</h2><p>Family gets notified you arrived home safely. Peace of mind both ways.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Privacy</h2><p>You can pause sharing anytime. Family sees &ldquo;Paused.&rdquo; Resume when ready.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">For caregivers</h2><p>If a senior has memory issues, location sharing helps locate them quickly if they wander.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Share with 1-2 trusted family. Not your whole address book.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Share with 1-2 trusted family. Not your whole address book.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

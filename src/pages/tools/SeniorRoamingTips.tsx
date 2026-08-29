@@ -22,7 +22,7 @@ export default function SeniorRoamingTips() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">eSIM travel</h2><p>$10-$30 for week. Airalo, Holafly. Cheap data abroad.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Wi-Fi calling</h2><p>Hotel Wi-Fi + Wi-Fi calling = free calls home.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip data abroad</h2><p>Use Wi-Fi only. Tell carrier &ldquo;international roaming off.&rdquo;</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: T-Mobile is best senior carrier for international travelers. Free roaming.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: T-Mobile is best senior carrier for international travelers. Free roaming.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorEyeDropReminders() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Eye drop guides</h2><p>Devices help shaky hands. AutoSqueeze, AutoDrop, $20-$30.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Nasolacrimal occlusion</h2><p>Press tear duct after drops. Drug stays in eye longer. Less side effects.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare Part D</h2><p>Many drops covered. Always check formulary.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Echo Show: &ldquo;Alexa, remind me eye drops at 8 AM and 8 PM daily.&rdquo;</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Echo Show: &ldquo;Alexa, remind me eye drops at 8 AM and 8 PM daily.&rdquo;</p></CardContent></Card>
         </div>
       </main>
       <Footer />

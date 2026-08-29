@@ -29,7 +29,7 @@ export default function RetirementJobsApps() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why part-time work in retirement</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Extra income without depleting savings or RMDs.</li>
               <li>Social connection — research shows part-time workers in retirement live longer.</li>
               <li>Sense of purpose.</li>
@@ -45,10 +45,10 @@ export default function RetirementJobsApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -57,7 +57,7 @@ export default function RetirementJobsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Roles that suit retirees well</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Tax preparer</strong> (H&R Block hires Jan-April).</li>
               <li><strong>School bus driver</strong> — flexible, good benefits, even part-time.</li>
               <li><strong>Library assistant.</strong></li>
@@ -72,23 +72,23 @@ export default function RetirementJobsApps() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Income limits if collecting Social Security</h2>
-            <p className="text-sm">If you take Social Security before your full retirement age (66-67), your earnings can reduce your benefit.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">If you take Social Security before your full retirement age (66-67), your earnings can reduce your benefit.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li><strong>Before full retirement age:</strong> $1 reduced for every $2 earned over $22,320/yr (2025).</li>
               <li><strong>Year you reach full retirement age:</strong> Less strict.</li>
               <li><strong>After full retirement age:</strong> No earnings limit.</li>
             </ul>
-            <p className="text-sm mt-2">Most senior part-time jobs stay safely under the limit. But run the math at <strong>ssa.gov/benefits/retirement/planner/</strong>.</p>
+            <p className="text-base mt-2">Most senior part-time jobs stay safely under the limit. But run the math at <strong>ssa.gov/benefits/retirement/planner/</strong>.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Watch out for job scams</h3>
-            <p className="text-sm text-muted-foreground">"Work from home, $4000 a week, just deposit our check and send back the difference" — always a scam. Real employers never pay you upfront, never ask you to buy gift cards, never need you to wire money. Stick to known sites and verify the company on BBB.</p>
+            <p className="text-base text-muted-foreground">"Work from home, $4000 a week, just deposit our check and send back the difference" — always a scam. Real employers never pay you upfront, never ask you to buy gift cards, never need you to wire money. Stick to known sites and verify the company on BBB.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,10 +19,10 @@ export default function SeniorInternetSpeedTest() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">fast.com</h2><p>FREE. Owned by Netflix. Just visit. Speed appears instantly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Speedtest by Ookla</h2><p>FREE. Most popular. App or website.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Google Speed Test</h2><p>Search &ldquo;internet speed test&rdquo; on Google. Built-in test.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What you need</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>50 Mbps for streaming HD</li><li>100+ Mbps for 4K + multiple devices</li><li>200+ Mbps for video calls + streaming + smart home</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What you need</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>50 Mbps for streaming HD</li><li>100+ Mbps for 4K + multiple devices</li><li>200+ Mbps for video calls + streaming + smart home</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Slow Wi-Fi fixes</h2><p>Restart router monthly. Move closer. Eliminate distance and walls.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Negotiate</h2><p>Test below paid speed? Call provider. Often $10-$30/month bill reduction.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Test Wi-Fi at different times. Slow at 7 PM = neighborhood capacity issue.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Test Wi-Fi at different times. Slow at 7 PM = neighborhood capacity issue.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function HeatwaveSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors at risk</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Body cooling less efficient with age.</li>
               <li>Many medications increase heat sensitivity.</li>
               <li>Diuretics lose more fluid.</li>
@@ -33,7 +33,7 @@ export default function HeatwaveSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cool home tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AC on, even if power bill higher.</li>
               <li>Set 78°F (cool enough, less expensive).</li>
               <li>Close blinds during day.</li>
@@ -48,7 +48,7 @@ export default function HeatwaveSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cooling centers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most cities have cooling centers.</li>
               <li>Senior centers often.</li>
               <li>Libraries.</li>
@@ -62,7 +62,7 @@ export default function HeatwaveSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Heat warning signs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heat exhaustion: heavy sweating, weakness, nausea.</li>
               <li>Heat stroke: confusion, no sweating, hot dry skin, fast pulse.</li>
               <li>HEAT STROKE = 911.</li>
@@ -76,7 +76,7 @@ export default function HeatwaveSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Energy assistance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>LIHEAP — pays AC bills (income-eligible).</li>
               <li>Free AC units some programs.</li>
               <li>Salvation Army summer programs.</li>
@@ -90,7 +90,7 @@ export default function HeatwaveSafety() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Family check-ins</h3>
-            <p className="text-sm text-muted-foreground">Heat waves — check on senior neighbors + family. Daily phone calls. Visit if alone. Many seniors die alone in heat. Apple Watch fall detection helps. NEVER leave senior in hot car. Most heat deaths PREVENTABLE.</p>
+            <p className="text-base text-muted-foreground">Heat waves — check on senior neighbors + family. Daily phone calls. Visit if alone. Many seniors die alone in heat. Apple Watch fall detection helps. NEVER leave senior in hot car. Most heat deaths PREVENTABLE.</p>
           </CardContent>
         </Card>
       </main>

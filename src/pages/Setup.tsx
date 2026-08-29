@@ -195,7 +195,7 @@ export default function Setup() {
         */}
         <main id="main-content" className="min-h-[calc(100dvh-160px)] bg-background flex flex-col items-center justify-center px-4 py-12">
           <div className="container max-w-xl mx-auto text-center gap-6 flex flex-col items-center">
-            <CheckCircle2 className="h-16 w-16 text-green-500" />
+            <CheckCircle2 className="h-16 w-16 text-success-foreground" />
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-primary">You're all set up!</h1>
             <p className="text-muted-foreground text-lg">
               You've already completed the setup quiz. Head to your profile to see your personalized learning path, or browse all guides.
@@ -304,7 +304,7 @@ export default function Setup() {
           {step === 2 && (
             <div key="goals" {...slide}>
               <h2 className="text-xl font-semibold mb-1 text-primary">What do you most want to learn?</h2>
-              <p className="text-muted-foreground mb-4 text-sm">Pick as many as you like.</p>
+              <p className="text-muted-foreground mb-4 text-base">Pick as many as you like.</p>
               <div className="grid gap-3">
                 {goals.map(g => {
                   const Icon = g.icon;
@@ -346,7 +346,7 @@ export default function Setup() {
           {step === 3 && (
             <div key="results" {...slide}>
               <div className="flex items-center gap-3 mb-2">
-                <CheckCircle2 className="h-8 w-8 text-green-500" />
+                <CheckCircle2 className="h-8 w-8 text-success-foreground" />
                 <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-primary">Your personalized starting point</h2>
               </div>
               <p className="text-muted-foreground mb-6">
@@ -365,8 +365,8 @@ export default function Setup() {
                           {(() => { const RIcon = rec.icon; return <RIcon className="h-5 w-5 text-primary" />; })()}
                           <span className="font-semibold text-primary">{rec.title}</span>
                         </div>
-                        <p className="text-sm text-muted-foreground mt-0.5">{rec.reason}</p>
-                        <span className="text-xs text-muted-foreground">{rec.category}</span>
+                        <p className="text-base text-muted-foreground mt-0.5">{rec.reason}</p>
+                        <span className="text-sm text-muted-foreground">{rec.category}</span>
                       </div>
                       <Button size="sm" variant="outline" asChild className="shrink-0 rounded-xl">
                         <a href={`/guides/${rec.guideSlug}`}>
@@ -380,7 +380,7 @@ export default function Setup() {
 
               <div className="rounded-xl bg-primary/10 border border-primary/20 p-5 mb-6">
                 <p className="font-semibold text-primary mb-1 flex items-center gap-2"><Target className="h-4 w-4" /> Quick tip</p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Don't try to do everything at once. Complete one guide, then take a break.
                   You'll find it all starts to make sense faster than you think.
                 </p>

@@ -19,7 +19,7 @@ export default function NationalCemeteryBurial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What&apos;s included FREE</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Gravesite at any national cemetery with space.</li>
               <li>Opening + closing of grave.</li>
               <li>Government headstone or marker.</li>
@@ -35,7 +35,7 @@ export default function NationalCemeteryBurial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eligibility</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Honorable / general discharge.</li>
               <li>Active duty 24+ months OR full term.</li>
               <li>Reservists with 20 years qualifying service.</li>
@@ -49,7 +49,7 @@ export default function NationalCemeteryBurial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apply for pre-determination</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VA Form 40-10007 — apply BEFORE death.</li>
               <li>Removes paperwork burden from family at time of grief.</li>
               <li>Confirms eligibility now.</li>
@@ -63,7 +63,7 @@ export default function NationalCemeteryBurial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">155 national cemeteries</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find nearest at cem.va.gov.</li>
               <li>Some full — check space available.</li>
               <li>Spouse can be buried with you (reserved spot).</li>
@@ -77,7 +77,7 @@ export default function NationalCemeteryBurial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Burial allowance for non-cemetery</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If buried in private cemetery — vet may get burial allowance ($300-2,000).</li>
               <li>Plot allowance $948 (2026) for service-connected death.</li>
               <li>$893 transportation allowance.</li>
@@ -90,7 +90,7 @@ export default function NationalCemeteryBurial() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Required documents</h3>
-            <p className="text-sm text-muted-foreground">DD-214 (military discharge) is essential — get certified copy NOW. Keep with important docs. Family will need at time of death. Lost? Request from National Personnel Records Center (archives.gov). Often takes weeks. Don&apos;t wait. Free help: VFW + American Legion.</p>
+            <p className="text-base text-muted-foreground">DD-214 (military discharge) is essential — get certified copy NOW. Keep with important docs. Family will need at time of death. Lost? Request from National Personnel Records Center (archives.gov). Often takes weeks. Don&apos;t wait. Free help: VFW + American Legion.</p>
           </CardContent>
         </Card>
       </main>

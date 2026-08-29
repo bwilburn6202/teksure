@@ -19,14 +19,14 @@ export default function AutoInsuranceComparison() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why now</h2>
-            <p className="text-sm">Insurers raise rates every year hoping you don\'t notice. Studies show people who switch save an average of $400-$700/year. Time spent: 30-60 minutes.</p>
+            <p className="text-base">Insurers raise rates every year hoping you don\'t notice. Studies show people who switch save an average of $400-$700/year. Time spent: 30-60 minutes.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 1 — Gather your info (5 minutes)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Driver\'s license number for each driver in the home.</li>
               <li>VIN of each car (from registration or the dashboard).</li>
               <li>Approximate annual miles driven.</li>
@@ -38,8 +38,8 @@ export default function AutoInsuranceComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 2 — Get quotes (free)</h2>
-            <p className="text-sm mb-2">Get quotes from 4-6 companies. Best mix:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Get quotes from 4-6 companies. Best mix:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>The Zebra (free)</strong> — gathers quotes from many insurers in one shot.</li>
               <li><strong>Insurify (free)</strong> — same idea.</li>
               <li><strong>Direct from companies</strong> — sometimes cheaper than aggregator: Geico.com, Progressive.com, State Farm, Allstate, Liberty Mutual, USAA (military).</li>
@@ -51,7 +51,7 @@ export default function AutoInsuranceComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific discounts to ask for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Defensive driving course discount</strong> — 5-15% off for completing a 4-8 hour course. AARP Smart Driver does it online for $25 — pays for itself in one year.</li>
               <li><strong>Low mileage</strong> — many seniors drive under 7,500 miles/year. Tell them.</li>
               <li><strong>Mature driver / 55+</strong> — automatic in some states.</li>
@@ -67,7 +67,7 @@ export default function AutoInsuranceComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What coverage to keep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Liability:</strong> Don\'t go with state minimums — those are scarily low. Aim for 100/300/100 minimum (means $100,000 per person, $300,000 per accident, $100,000 property damage).</li>
               <li><strong>Uninsured motorist:</strong> Same limits as liability. Cheap protection if a uninsured driver hits you.</li>
               <li><strong>Comprehensive + Collision:</strong> Worth keeping while your car is worth more than 10x the premium. Skip on cars worth less than $4,000.</li>
@@ -80,7 +80,7 @@ export default function AutoInsuranceComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch out for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Final offer" pressure</strong> — every insurer claims to be cheapest. Get apples-to-apples quotes with the SAME coverage limits.</li>
               <li><strong>Telematics apps</strong> (Drivewise, Snapshot, Drive Safe & Save) — track your driving. Discount if you drive well, but rates can also go UP if you brake hard or drive at night.</li>
               <li><strong>"Accident forgiveness"</strong> — sounds good but built into the rate. You\'re paying for it.</li>
@@ -91,7 +91,7 @@ export default function AutoInsuranceComparison() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Do this every 1-2 years</h3>
-            <p className="text-sm text-muted-foreground">Re-shopping every 1-2 years almost always finds savings. Set a calendar reminder for renewal time. Even sticking with your current insurer — calling and saying "I\'m getting quoted X by [competitor]" often gets a price match.</p>
+            <p className="text-base text-muted-foreground">Re-shopping every 1-2 years almost always finds savings. Set a calendar reminder for renewal time. Even sticking with your current insurer — calling and saying "I\'m getting quoted X by [competitor]" often gets a price match.</p>
           </CardContent>
         </Card>
       </main>

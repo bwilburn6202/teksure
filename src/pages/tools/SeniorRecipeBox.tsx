@@ -22,7 +22,7 @@ export default function SeniorRecipeBox() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Scan handwritten</h2><p>Apple Notes camera scans. OCR makes it searchable.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family share</h2><p>Paprika lets you sync to spouse, kids, grandkids. Family recipe legacy.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Print as a cookbook</h2><p>Many apps export to PDF. Print at Shutterfly as a personalized cookbook ($30-$50).</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Scan grandma&apos;s recipes NOW. Photos fade. Apps don&apos;t.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Scan grandma&apos;s recipes NOW. Photos fade. Apps don&apos;t.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function StrengthTrainingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why crucial after 50</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lose 1-2% muscle per year after 30.</li>
               <li>Accelerates after 60.</li>
               <li>Muscle = independence.</li>
@@ -33,7 +33,7 @@ export default function StrengthTrainingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Resistance band routines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bands cheap ($20).</li>
               <li>Joint-friendly.</li>
               <li>Adjustable tension.</li>
@@ -47,7 +47,7 @@ export default function StrengthTrainingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bodyweight exercises</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Squats — sit-to-stand from chair.</li>
               <li>Wall pushups.</li>
               <li>Step-ups (low height).</li>
@@ -61,7 +61,7 @@ export default function StrengthTrainingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Weight training</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Light dumbbells (5-15 lbs).</li>
               <li>Plus heavier as you progress.</li>
               <li>Routine: 8-12 reps × 2-3 sets.</li>
@@ -75,7 +75,7 @@ export default function StrengthTrainingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Caliber — guided strength training.</li>
               <li>StrongLifts 5x5 — progressive program.</li>
               <li>Daily Burn senior workouts.</li>
@@ -89,7 +89,7 @@ export default function StrengthTrainingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Personal trainer worth it?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1-2 sessions to learn form — yes.</li>
               <li>Senior-experienced trainer ideal.</li>
               <li>$50-$100/hour.</li>
@@ -103,7 +103,7 @@ export default function StrengthTrainingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Most important senior exercise</h3>
-            <p className="text-sm text-muted-foreground">If you do one type of exercise as a senior, make it strength training. Cardio is great but strength training prevents falls, maintains independence, and has stronger longevity correlation. Start with bodyweight, progress to bands, then weights. 2-3 times per week. 20-30 minutes. Transformative.</p>
+            <p className="text-base text-muted-foreground">If you do one type of exercise as a senior, make it strength training. Cardio is great but strength training prevents falls, maintains independence, and has stronger longevity correlation. Start with bodyweight, progress to bands, then weights. 2-3 times per week. 20-30 minutes. Transformative.</p>
           </CardContent>
         </Card>
       </main>

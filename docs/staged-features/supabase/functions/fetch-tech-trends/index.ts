@@ -15,7 +15,7 @@
  * Can also accept a ?topic=X query param for TekBot research mode —
  * searches HN Algolia for that specific topic and returns matching threads.
  *
- * Deploy: npx supabase functions deploy fetch-tech-trends --project-ref zrgtoefkqafndhxhbuag
+ * Deploy: npx supabase functions deploy fetch-tech-trends --project-ref vrhxitxzqtbphzsbdqih
  */
 
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts";

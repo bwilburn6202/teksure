@@ -19,7 +19,7 @@ export default function HASfitFreeYouTube() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">HASfit channel</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>3,000+ free workout videos on YouTube.</li>
               <li>Senior-specific section.</li>
               <li>Chair exercises.</li>
@@ -33,7 +33,7 @@ export default function HASfitFreeYouTube() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other senior-friendly channels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Yoga With Adriene — gentle yoga for everyone.</li>
               <li>SilverSneakers — official channel, free clips.</li>
               <li>Senior Fitness with Meredith — chair-based.</li>
@@ -47,7 +47,7 @@ export default function HASfitFreeYouTube() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cast YouTube to TV</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Roku, Fire Stick, Apple TV all have YouTube app.</li>
               <li>Search workout, play on big screen.</li>
               <li>Better than squinting at phone.</li>
@@ -61,7 +61,7 @@ export default function HASfitFreeYouTube() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Search tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Senior chair workout 15 minutes&quot;</li>
               <li>&quot;Senior balance exercises&quot;</li>
               <li>&quot;Gentle yoga for seniors beginner&quot;</li>
@@ -75,7 +75,7 @@ export default function HASfitFreeYouTube() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouTube Premium worth it?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$13.99/month removes ads.</li>
               <li>Background play (audio only).</li>
               <li>Download for offline.</li>
@@ -89,7 +89,7 @@ export default function HASfitFreeYouTube() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Build a routine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find 3–5 favorite videos.</li>
               <li>Save to a YouTube playlist.</li>
               <li>Pick 1 each day.</li>
@@ -103,7 +103,7 @@ export default function HASfitFreeYouTube() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No subscription needed</h3>
-            <p className="text-sm text-muted-foreground">Before paying for any fitness app, search YouTube for &quot;HASfit chair exercises seniors&quot; or &quot;SilverSneakers chair workout.&quot; Pick one, follow along on your phone or TV. Repeat tomorrow. After a week of this free routine, you&apos;ll know if you need anything more. Most seniors find YouTube&apos;s free options exceed their needs entirely.</p>
+            <p className="text-base text-muted-foreground">Before paying for any fitness app, search YouTube for &quot;HASfit chair exercises seniors&quot; or &quot;SilverSneakers chair workout.&quot; Pick one, follow along on your phone or TV. Repeat tomorrow. After a week of this free routine, you&apos;ll know if you need anything more. Most seniors find YouTube&apos;s free options exceed their needs entirely.</p>
           </CardContent>
         </Card>
       </main>

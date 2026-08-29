@@ -22,7 +22,7 @@ export default function SeniorAirlineSeniorDiscounts() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">United MileagePlus</h2><p>Free. Same idea.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tuesday/Wednesday flights</h2><p>20-30% cheaper than weekend. Book mid-week travel.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Google Flights</h2><p>FREE. Compare ALL airlines. Find best dates.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Always check senior fare directly with airline. Sometimes beats discount sites.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Always check senior fare directly with airline. Sometimes beats discount sites.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

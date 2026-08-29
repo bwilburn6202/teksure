@@ -30,10 +30,10 @@ export default function PhotoBackupCompare() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function PhotoBackupCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick decision</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>All-Apple family</strong> → iCloud Photos $3/mo 200GB.</li>
               <li><strong>Mixed devices, want best search</strong> → Google Photos.</li>
               <li><strong>Already have Amazon Prime</strong> → Amazon Photos (free unlimited photos).</li>
@@ -54,7 +54,7 @@ export default function PhotoBackupCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why backup matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone lost or stolen = photos gone forever (without backup).</li>
               <li>Phone in pool/toilet/dropped = same.</li>
               <li>Old computer hard drive failure = same.</li>
@@ -67,7 +67,7 @@ export default function PhotoBackupCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup — once and forget</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick a service. Sign up.</li>
               <li>Install app on phone.</li>
               <li>Toggle "Backup" ON.</li>
@@ -81,7 +81,7 @@ export default function PhotoBackupCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Storage strategy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Optimize storage"</strong> — keeps phone copies small, full versions in cloud. Get back 50GB on phone.</li>
               <li>Once a year, download FULL library to a cheap external drive ($60 for 2TB at Costco).</li>
               <li>Print top 50 photos every year — printed photos survive cloud company shutdowns.</li>
@@ -92,7 +92,7 @@ export default function PhotoBackupCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Family sharing</h3>
-            <p className="text-sm text-muted-foreground">Apple Family Sharing splits 200GB iCloud across 6 family members ($3/mo total). Google One Family does same. One subscription covers everyone&apos;s phones. Great deal.</p>
+            <p className="text-base text-muted-foreground">Apple Family Sharing splits 200GB iCloud across 6 family members ($3/mo total). Google One Family does same. One subscription covers everyone&apos;s phones. Great deal.</p>
           </CardContent>
         </Card>
       </main>

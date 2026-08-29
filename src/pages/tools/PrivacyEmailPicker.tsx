@@ -27,7 +27,7 @@ export default function PrivacyEmailPicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why it might matter</h2>
-            <p className="text-sm">Gmail and Yahoo scan email content to target ads. Many people don\'t care; some do. If you discuss medical, financial, or legal matters by email — privacy-focused services may be worth it.</p>
+            <p className="text-base">Gmail and Yahoo scan email content to target ads. Many people don\'t care; some do. If you discuss medical, financial, or legal matters by email — privacy-focused services may be worth it.</p>
           </CardContent>
         </Card>
 
@@ -37,10 +37,10 @@ export default function PrivacyEmailPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base mb-1">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -49,7 +49,7 @@ export default function PrivacyEmailPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple\'s Hide My Email — easiest privacy boost</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>If you have an Apple ID, you already have it.</li>
               <li>When signing up for any service, tap "Sign in with Apple".</li>
               <li>You can choose "Hide My Email" — Apple makes a fake email like xyz@privaterelay.appleid.com.</li>
@@ -62,7 +62,7 @@ export default function PrivacyEmailPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Email aliases (privacy without changing email)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SimpleLogin (free, ProtonMail-owned)</strong> — generates aliases. Different alias for each service. Disable any anytime.</li>
               <li><strong>AnonAddy / addy.io</strong> — same idea.</li>
               <li><strong>Bitwarden Email Forwarding</strong> — built into Bitwarden\'s premium tier.</li>
@@ -74,7 +74,7 @@ export default function PrivacyEmailPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Realistic recommendation</h3>
-            <p className="text-sm text-muted-foreground">For most people, switching from Gmail to ProtonMail is overkill. Keep Gmail, but USE Apple\'s Hide My Email or SimpleLogin for any service that asks for your email. That gives you 80% of the privacy benefit with no learning curve.</p>
+            <p className="text-base text-muted-foreground">For most people, switching from Gmail to ProtonMail is overkill. Keep Gmail, but USE Apple\'s Hide My Email or SimpleLogin for any service that asks for your email. That gives you 80% of the privacy benefit with no learning curve.</p>
           </CardContent>
         </Card>
       </main>

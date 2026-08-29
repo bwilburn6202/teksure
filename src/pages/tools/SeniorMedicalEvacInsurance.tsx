@@ -22,7 +22,7 @@ export default function SeniorMedicalEvacInsurance() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Multi-trip plan</h2><p>If traveling 2+ times/year, annual plan saves money vs per-trip.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Age limits</h2><p>Some have 75 or 80 max age. Check before subscribing.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hospital quality</h2><p>Medjet helps you transfer to better hospital, not just home.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: $300/year is cheap insurance. Med-evac alone saved seniors&apos; lives.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: $300/year is cheap insurance. Med-evac alone saved seniors&apos; lives.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

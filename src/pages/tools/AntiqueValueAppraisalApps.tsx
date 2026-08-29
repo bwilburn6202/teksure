@@ -30,10 +30,10 @@ export default function AntiqueValueAppraisalApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function AntiqueValueAppraisalApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to appraise</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Inherited family items.</li>
               <li>Downsizing — before you donate / sell.</li>
               <li>Insurance for high-value pieces.</li>
@@ -56,7 +56,7 @@ export default function AntiqueValueAppraisalApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY first research</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>eBay sold listings — type item + filter &quot;sold.&quot;</li>
               <li>Etsy similar items.</li>
               <li>Google Lens — photo identifies.</li>
@@ -70,7 +70,7 @@ export default function AntiqueValueAppraisalApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to hire pro</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Estimated $1,000+ value.</li>
               <li>Insurance documentation needed.</li>
               <li>Estate / divorce / IRS purposes.</li>
@@ -85,7 +85,7 @@ export default function AntiqueValueAppraisalApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Antiques Roadshow</strong> — free if your city is hosting.</li>
               <li><strong>Local antique stores</strong> — sometimes appraise free.</li>
               <li><strong>Auction houses</strong> — Sotheby&apos;s, Christie&apos;s for high-end.</li>
@@ -98,7 +98,7 @@ export default function AntiqueValueAppraisalApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SCAM warning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Roadshow ads = often scam.</li>
               <li>&quot;Buying gold/silver&quot; ads — usually pay 30% of value.</li>
               <li>Door-to-door &quot;antique buyers&quot; = avoid.</li>
@@ -111,7 +111,7 @@ export default function AntiqueValueAppraisalApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Online auctions</h3>
-            <p className="text-sm text-muted-foreground">For valuable items: <strong>Heritage Auctions</strong>, <strong>Sotheby&apos;s</strong>, <strong>Christie&apos;s</strong>, <strong>Bonhams</strong>. Free consignment. Items 6-12 months to sell. They take 25%+ commission. Reach broader buyers = higher prices. Free initial evaluations to estimate before consigning.</p>
+            <p className="text-base text-muted-foreground">For valuable items: <strong>Heritage Auctions</strong>, <strong>Sotheby&apos;s</strong>, <strong>Christie&apos;s</strong>, <strong>Bonhams</strong>. Free consignment. Items 6-12 months to sell. They take 25%+ commission. Reach broader buyers = higher prices. Free initial evaluations to estimate before consigning.</p>
           </CardContent>
         </Card>
       </main>

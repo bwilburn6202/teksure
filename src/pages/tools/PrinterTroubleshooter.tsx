@@ -953,7 +953,7 @@ export default function PrinterTroubleshooter() {
             <Button variant="ghost" size="sm" onClick={reset} className="gap-2">
               <Home className="h-4 w-4" aria-hidden="true" /> Start over
             </Button>
-            <span className="text-sm text-muted-foreground ml-auto">
+            <span className="text-base text-muted-foreground ml-auto">
               Step {crumbCount}
             </span>
           </div>
@@ -1005,11 +1005,11 @@ export default function PrinterTroubleshooter() {
           <div>
             {/* Urgent banner — for hot fuser, toner spills, anything safety-critical */}
             {current.urgent && (
-              <div className="mb-4 rounded-xl border-2 border-red-400 bg-red-50 dark:bg-red-950/40 dark:border-red-700 p-4">
+              <div className="mb-4 rounded-xl border-2 border-red-400 bg-danger dark:border-red-700 p-4">
                 <div className="flex gap-3 items-start">
-                  <AlertTriangle className="h-6 w-6 text-red-700 dark:text-red-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <AlertTriangle className="h-6 w-6 text-danger-foreground shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-bold text-red-900 dark:text-red-200 mb-1 uppercase tracking-wide">
+                    <p className="text-sm font-bold text-danger-foreground mb-1 uppercase tracking-wide">
                       Safety first
                     </p>
                     <p className="text-base text-red-900/95 dark:text-red-100/95 leading-relaxed">
@@ -1033,11 +1033,11 @@ export default function PrinterTroubleshooter() {
             </div>
 
             {/* Why this fix works — BLUE info callout */}
-            <Card className="mb-5 bg-blue-50 dark:bg-blue-950/30 border-blue-200 dark:border-blue-800">
+            <Card className="mb-5 bg-info border-info-foreground/25 ">
               <CardContent className="p-4 flex gap-3">
-                <Lightbulb className="h-5 w-5 text-blue-700 dark:text-blue-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <Lightbulb className="h-5 w-5 text-info-foreground shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
-                  <p className="text-sm font-semibold text-blue-900 dark:text-blue-300 mb-1">Why this works</p>
+                  <p className="text-base font-semibold text-info-foreground mb-1">Why this works</p>
                   <p className="text-base text-blue-900/95 dark:text-blue-100/95 leading-relaxed">{current.why}</p>
                 </div>
               </CardContent>
@@ -1065,11 +1065,11 @@ export default function PrinterTroubleshooter() {
 
             {/* If this didn't work — AMBER callout */}
             {current.ifFails && (
-              <Card className="mb-5 bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-800">
+              <Card className="mb-5 bg-warn border-warn-foreground/25 ">
                 <CardContent className="p-4 flex gap-3">
-                  <RotateCcw className="h-5 w-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <RotateCcw className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-semibold text-amber-900 dark:text-amber-300 mb-1">
+                    <p className="text-base font-semibold text-warn-foreground mb-1">
                       If this didn't work
                     </p>
                     <p className="text-base text-amber-900/95 dark:text-amber-100/95 leading-relaxed">
@@ -1082,11 +1082,11 @@ export default function PrinterTroubleshooter() {
 
             {/* Pro help — ORANGE callout */}
             {current.proHelp && (
-              <Card className="mb-5 bg-orange-50 dark:bg-orange-950/30 border-orange-200 dark:border-orange-800">
+              <Card className="mb-5 bg-warn border-warn-foreground/25 ">
                 <CardContent className="p-4 flex gap-3">
-                  <Wrench className="h-5 w-5 text-orange-700 dark:text-orange-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <Wrench className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-semibold text-orange-900 dark:text-orange-300 mb-1">
+                    <p className="text-base font-semibold text-warn-foreground mb-1">
                       When to call a professional
                     </p>
                     <p className="text-base text-orange-900/95 dark:text-orange-100/95 leading-relaxed">
@@ -1099,11 +1099,11 @@ export default function PrinterTroubleshooter() {
 
             {/* Replace vs repair — PURPLE callout */}
             {current.replaceOrRepair && (
-              <Card className="mb-5 bg-purple-50 dark:bg-purple-950/30 border-purple-200 dark:border-purple-800">
+              <Card className="mb-5 bg-primary/10 border-primary/25 ">
                 <CardContent className="p-4 flex gap-3">
-                  <AlertCircle className="h-5 w-5 text-purple-700 dark:text-purple-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <AlertCircle className="h-5 w-5 text-primary shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-semibold text-purple-900 dark:text-purple-300 mb-1">
+                    <p className="text-base font-semibold text-primary mb-1">
                       Repair or replace?
                     </p>
                     <p className="text-base text-purple-900/95 dark:text-purple-100/95 leading-relaxed">
@@ -1116,11 +1116,11 @@ export default function PrinterTroubleshooter() {
 
             {/* Buying guidance — SKY-BLUE callout */}
             {current.buying && (
-              <Card className="mb-5 bg-sky-50 dark:bg-sky-950/30 border-sky-200 dark:border-sky-800">
+              <Card className="mb-5 bg-info border-info-foreground/25 ">
                 <CardContent className="p-4 flex gap-3">
-                  <ShoppingCart className="h-5 w-5 text-sky-700 dark:text-sky-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <ShoppingCart className="h-5 w-5 text-info-foreground shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-semibold text-sky-900 dark:text-sky-300 mb-1">
+                    <p className="text-base font-semibold text-info-foreground mb-1">
                       Buying ink &amp; supplies
                     </p>
                     <p className="text-base text-sky-900/95 dark:text-sky-100/95 leading-relaxed">
@@ -1138,7 +1138,7 @@ export default function PrinterTroubleshooter() {
                   <Link to={current.guide.to}>
                     <BookOpen className="h-5 w-5 shrink-0" aria-hidden="true" />
                     <span className="flex-1">
-                      <span className="block text-xs text-muted-foreground">Related guide</span>
+                      <span className="block text-sm text-muted-foreground">Related guide</span>
                       <span className="block font-semibold">{current.guide.label}</span>
                     </span>
                     <ExternalLink className="h-4 w-4 shrink-0 opacity-60" aria-hidden="true" />
@@ -1149,7 +1149,7 @@ export default function PrinterTroubleshooter() {
                 <Link to="/tekbrain">
                   <MessageCircle className="h-5 w-5 shrink-0" aria-hidden="true" />
                   <span className="flex-1">
-                    <span className="block text-xs opacity-80">Still stuck?</span>
+                    <span className="block text-sm opacity-80">Still stuck?</span>
                     <span className="block font-semibold">Ask TekBrain</span>
                   </span>
                   <ChevronRight className="h-4 w-4 shrink-0" aria-hidden="true" />
@@ -1158,11 +1158,11 @@ export default function PrinterTroubleshooter() {
             </div>
 
             {/* Reassurance */}
-            <Card className="mb-4 bg-green-50 dark:bg-green-950/30 border-green-200 dark:border-green-800">
+            <Card className="mb-4 bg-success border-success-foreground/25 ">
               <CardContent className="p-4 flex gap-3">
-                <CheckCircle2 className="h-5 w-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
-                  <p className="text-sm font-semibold text-green-900 dark:text-green-300 mb-1">
+                  <p className="text-base font-semibold text-success-foreground mb-1">
                     You're doing great.
                   </p>
                   <p className="text-base text-green-900/95 dark:text-green-100/95 leading-relaxed">

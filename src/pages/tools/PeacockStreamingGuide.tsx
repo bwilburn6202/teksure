@@ -19,7 +19,7 @@ export default function PeacockStreamingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Peacock?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Streaming service from NBCUniversal.</li>
               <li>Has a free tier — unusual for streaming.</li>
               <li>NBC shows, movies, sports.</li>
@@ -33,7 +33,7 @@ export default function PeacockStreamingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plans + cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free — limited content, more ads.</li>
               <li>Premium — $5.99/month with ads.</li>
               <li>Premium Plus — $11.99/month, fewer ads.</li>
@@ -47,7 +47,7 @@ export default function PeacockStreamingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>The Office — all 9 seasons.</li>
               <li>Frasier — all 11 seasons.</li>
               <li>Law + Order — classic episodes.</li>
@@ -61,7 +61,7 @@ export default function PeacockStreamingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to PeacockTV.com or download app.</li>
               <li>Create free account — email required.</li>
               <li>Choose free or paid plan.</li>
@@ -75,7 +75,7 @@ export default function PeacockStreamingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Live TV on Peacock</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Live NBC broadcast (local channel).</li>
               <li>MSNBC live news all day.</li>
               <li>CNBC business news.</li>
@@ -89,7 +89,7 @@ export default function PeacockStreamingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Navigation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Home — personalized picks.</li>
               <li>Browse — all content by category.</li>
               <li>My Stuff — saved titles.</li>
@@ -103,7 +103,7 @@ export default function PeacockStreamingGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start free</h3>
-            <p className="text-sm text-muted-foreground">Peacock is one of the few streaming services with a genuinely useful free tier. If you love classic NBC shows — The Office, Frasier, Law and Order — start with the free plan. You&apos;ll see more ads but pay nothing. Upgrade to Premium only if you want fewer interruptions or the live NBC channel.</p>
+            <p className="text-base text-muted-foreground">Peacock is one of the few streaming services with a genuinely useful free tier. If you love classic NBC shows — The Office, Frasier, Law and Order — start with the free plan. You&apos;ll see more ads but pay nothing. Upgrade to Premium only if you want fewer interruptions or the live NBC channel.</p>
           </CardContent>
         </Card>
       </main>

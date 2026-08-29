@@ -19,7 +19,7 @@ export default function DiscogsForRecordCollectors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Discogs?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>World&apos;s largest music database.</li>
               <li>Identify any record.</li>
               <li>See current values.</li>
@@ -33,7 +33,7 @@ export default function DiscogsForRecordCollectors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Identify records</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photograph record cover.</li>
               <li>Or enter catalog number.</li>
               <li>App shows pressings + values.</li>
@@ -47,7 +47,7 @@ export default function DiscogsForRecordCollectors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Catalog your collection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Scan barcodes to add to collection.</li>
               <li>Build digital catalog.</li>
               <li>Track value over time.</li>
@@ -61,7 +61,7 @@ export default function DiscogsForRecordCollectors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sell records</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>List on Discogs marketplace.</li>
               <li>Set price based on database.</li>
               <li>Worldwide buyer pool.</li>
@@ -75,7 +75,7 @@ export default function DiscogsForRecordCollectors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Buy records</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find rare records globally.</li>
               <li>Read seller ratings.</li>
               <li>Specify condition you accept.</li>
@@ -89,7 +89,7 @@ export default function DiscogsForRecordCollectors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vinyl revival</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vinyl outsells CDs again.</li>
               <li>Younger generations love.</li>
               <li>Senior collections valuable.</li>
@@ -103,7 +103,7 @@ export default function DiscogsForRecordCollectors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Catalog before downsizing</h3>
-            <p className="text-sm text-muted-foreground">Before downsizing or estate cleanup, catalog your record collection with Discogs. The 30-minute scanning of 50 records may reveal $2,000+ in value. Don&apos;t throw out old vinyl without checking. Family members may not realize value either. Many estate sales sell rare records for $5 that should fetch $200.</p>
+            <p className="text-base text-muted-foreground">Before downsizing or estate cleanup, catalog your record collection with Discogs. The 30-minute scanning of 50 records may reveal $2,000+ in value. Don&apos;t throw out old vinyl without checking. Family members may not realize value either. Many estate sales sell rare records for $5 that should fetch $200.</p>
           </CardContent>
         </Card>
       </main>

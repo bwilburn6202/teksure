@@ -22,7 +22,7 @@ export default function SeniorElectricToothbrush() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">For arthritis</h2><p>Big handle. Sonicare has comfortable grip. Less wrist strain.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefits</h2><p>Studies show 21% less plaque vs manual. Important for seniors with gum issues.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Replace heads</h2><p>Every 3 months. Old bristles don&apos;t clean as well.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 2 minutes is recommended. Most people brush 45 seconds. Timer fixes that.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 2 minutes is recommended. Most people brush 45 seconds. Timer fixes that.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

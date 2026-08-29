@@ -31,10 +31,10 @@ export default function ContactLensApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,14 +43,14 @@ export default function ContactLensApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Federal law on prescriptions</h2>
-            <p className="text-sm">By federal law (Fairness to Contact Lens Consumers Act), eye doctors MUST give you a copy of your contact prescription after fitting. Some sneaky doctors "forget" — politely ASK and they must comply. You can buy contacts from any seller with that Rx.</p>
+            <p className="text-base">By federal law (Fairness to Contact Lens Consumers Act), eye doctors MUST give you a copy of your contact prescription after fitting. Some sneaky doctors "forget" — politely ASK and they must comply. You can buy contacts from any seller with that Rx.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Buy 6 or 12 boxes — bulk discount 10-20%.</li>
               <li>Sign up for rebates from manufacturer (Johnson, Bausch).</li>
               <li>Use FSA/HSA — pre-tax dollars.</li>
@@ -63,7 +63,7 @@ export default function ContactLensApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior contact tips</h3>
-            <p className="text-sm text-muted-foreground">Multifocal contacts have improved a lot — many seniors with bifocal needs use them successfully. Dry eye gets worse with age — daily disposables (CooperVision MyDay, Acuvue OASYS 1-Day) help. Skip "monthly" lenses if dryness is issue.</p>
+            <p className="text-base text-muted-foreground">Multifocal contacts have improved a lot — many seniors with bifocal needs use them successfully. Dry eye gets worse with age — daily disposables (CooperVision MyDay, Acuvue OASYS 1-Day) help. Skip "monthly" lenses if dryness is issue.</p>
           </CardContent>
         </Card>
       </main>

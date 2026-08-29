@@ -22,7 +22,7 @@ export default function SeniorNutritionTracking() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">DASH diet apps</h2><p>For high blood pressure. Filter recipes by sodium under 600 mg.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Kidney-friendly</h2><p>Track potassium, phosphorus. Davita Kidney Diet has free app.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Diabetes</h2><p>Track carbs by meal. Time-of-day tracking is critical.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Even 1 week of tracking shows big sodium/sugar surprises.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Even 1 week of tracking shows big sodium/sugar surprises.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

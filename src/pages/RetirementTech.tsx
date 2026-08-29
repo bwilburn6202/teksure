@@ -248,10 +248,10 @@ export default function RetirementTech() {
               <Card key={item.title} className="border-2">
                 <CardContent className="p-6">
                   <div className="mb-2 flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-purple-600" />
+                    <CheckCircle2 className="h-4 w-4 text-primary" />
                     <h3 className="font-semibold">{item.title}</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-base text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -276,14 +276,14 @@ export default function RetirementTech() {
                   <Card key={cat.title} className="border-2">
                     <CardContent className="p-6">
                       <div className="mb-4 flex items-center gap-2">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 text-primary ">
                           <Icon className="h-5 w-5" />
                         </div>
                         <h3 className="text-lg font-semibold">{cat.title}</h3>
                       </div>
                       <ul className="space-y-3">
                         {cat.items.map((item) => (
-                          <li key={item.name} className="text-sm">
+                          <li key={item.name} className="text-base">
                             <div className="font-medium">{item.name}</div>
                             <div className="text-muted-foreground">{item.note}</div>
                           </li>
@@ -316,7 +316,7 @@ export default function RetirementTech() {
               <Card key={item.title}>
                 <CardContent className="p-6">
                   <h3 className="mb-2 font-semibold">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-base text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -343,7 +343,7 @@ export default function RetirementTech() {
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -370,7 +370,7 @@ export default function RetirementTech() {
               <Card key={item.title} className="border-2">
                 <CardContent className="p-6">
                   <h3 className="mb-2 font-semibold">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.description}</p>
+                  <p className="text-base text-muted-foreground">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -398,7 +398,7 @@ export default function RetirementTech() {
                 <Card key={s.title}>
                   <CardContent className="p-5">
                     <h3 className="mb-2 font-semibold">{s.title}</h3>
-                    <p className="text-sm text-muted-foreground">{s.description}</p>
+                    <p className="text-base text-muted-foreground">{s.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -433,10 +433,10 @@ export default function RetirementTech() {
             <Card className="border-2">
               <CardContent className="p-6">
                 <div className="mb-2 flex items-center gap-2">
-                  <Award className="h-5 w-5 text-purple-700" />
+                  <Award className="h-5 w-5 text-primary" />
                   <h3 className="font-semibold">AARP membership benefits</h3>
                 </div>
-                <p className="mb-3 text-sm text-muted-foreground">
+                <p className="mb-3 text-base text-muted-foreground">
                   $16/year. Unlocks discounts on travel, prescriptions, restaurants, and rental
                   cars, plus free tech tutorials, scam alerts, and Movies for Grownups.
                 </p>
@@ -453,10 +453,10 @@ export default function RetirementTech() {
             <Card className="border-2">
               <CardContent className="p-6">
                 <div className="mb-2 flex items-center gap-2">
-                  <GraduationCap className="h-5 w-5 text-purple-700" />
+                  <GraduationCap className="h-5 w-5 text-primary" />
                   <h3 className="font-semibold">Senior Planet</h3>
                 </div>
-                <p className="mb-3 text-sm text-muted-foreground">
+                <p className="mb-3 text-base text-muted-foreground">
                   Free in-person and online tech classes for adults 60+ from Older Adults
                   Technology Services (OATS, an AARP affiliate). Phone, computer, social media,
                   scam awareness.
@@ -474,10 +474,10 @@ export default function RetirementTech() {
             <Card className="border-2">
               <CardContent className="p-6">
                 <div className="mb-2 flex items-center gap-2">
-                  <Library className="h-5 w-5 text-purple-700" />
+                  <Library className="h-5 w-5 text-primary" />
                   <h3 className="font-semibold">Library programs</h3>
                 </div>
-                <p className="mb-3 text-sm text-muted-foreground">
+                <p className="mb-3 text-base text-muted-foreground">
                   Most public libraries offer free 1-on-1 tech help by appointment, group classes,
                   and access to LinkedIn Learning, Mango Languages, and Libby (audiobooks +
                   ebooks). Ask the reference desk what is on offer.

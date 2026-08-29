@@ -22,7 +22,7 @@ export default function SeniorNextdoorBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Selling stuff</h2><p>Free section + classifieds. Sell directly to neighbors. No shipping.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch the drama</h2><p>Heated debates. Mute users who upset you. Feel free to leave.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior groups</h2><p>Many neighborhoods have senior subgroups. Join for tailored conversations.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Read first, post later. Get a feel for the community.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Read first, post later. Get a feel for the community.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

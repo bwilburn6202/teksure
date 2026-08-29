@@ -19,7 +19,7 @@ export default function PetSittingIncome() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best platforms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Rover</strong> — largest. They take 20%.</li>
               <li><strong>Wag</strong> — focuses on dog walking.</li>
               <li><strong>Care.com</strong> — broad, includes pet care.</li>
@@ -33,7 +33,7 @@ export default function PetSittingIncome() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Services to offer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Drop-in visits</strong> — $15-30/visit (30-min).</li>
               <li><strong>Dog walking</strong> — $15-30/walk.</li>
               <li><strong>Boarding</strong> — overnight in YOUR home, $25-75/night.</li>
@@ -48,7 +48,7 @@ export default function PetSittingIncome() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior advantages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Home all day = perfect for boarding/daycare.</li>
               <li>Patient with anxious pets.</li>
               <li>Reliable — fewer last-minute cancels.</li>
@@ -62,7 +62,7 @@ export default function PetSittingIncome() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup Rover</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free profile at rover.com.</li>
               <li>Background check $35.</li>
               <li>Free Rover online safety course.</li>
@@ -78,7 +78,7 @@ export default function PetSittingIncome() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stay safe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Always meet pet + owner BEFORE sitting.</li>
               <li>Get vet contact + medical info.</li>
               <li>Pet allergies (yours + pet).</li>
@@ -93,7 +93,7 @@ export default function PetSittingIncome() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Realistic income</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$200-500/mo for occasional walks.</li>
               <li>$500-1,500/mo for regular schedule.</li>
               <li>$1,500-3,000/mo if doing boarding regularly.</li>
@@ -107,7 +107,7 @@ export default function PetSittingIncome() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best fit for</h3>
-            <p className="text-sm text-muted-foreground">Active seniors who love walking + pets. Singles or couples without daily commitments. Snowbirds — sit in summer home, vacation in winter. Easier than dogwalking jobs of past — apps handle marketing + payments. You just enjoy pets + earn money. Many seniors&apos; favorite gig.</p>
+            <p className="text-base text-muted-foreground">Active seniors who love walking + pets. Singles or couples without daily commitments. Snowbirds — sit in summer home, vacation in winter. Easier than dogwalking jobs of past — apps handle marketing + payments. You just enjoy pets + earn money. Many seniors&apos; favorite gig.</p>
           </CardContent>
         </Card>
       </main>

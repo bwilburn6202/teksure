@@ -80,7 +80,7 @@ export default function BloodPressureLog() {
   const crisisLast7 = last7.filter(r => r.systolic >= 180 || r.diastolic >= 120).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Blood Pressure Log | TekSure"
         description="Log blood pressure readings with auto-classification (Normal, Elevated, Stage 1, Stage 2, Crisis). 7-day average. Print for doctor."
@@ -89,10 +89,10 @@ export default function BloodPressureLog() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <HeartPulse className="h-7 w-7 text-red-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Blood Pressure Log</h1>
+            <HeartPulse className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Blood Pressure Log</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Log each reading. The tool auto-classifies it and gives you a 7-day average to share with your doctor.
           </p>
         </div>
@@ -102,15 +102,15 @@ export default function BloodPressureLog() {
           <Card className="mb-4 print:break-inside-avoid">
             <CardContent className="py-3 px-4 grid grid-cols-3 gap-3 text-center">
               <div>
-                <p className="text-xs text-gray-500">7-day avg</p>
-                <p className="text-xl font-bold text-red-700">{avgS} / {avgD}</p>
+                <p className="text-sm text-muted-foreground">7-day avg</p>
+                <p className="text-xl font-bold text-danger-foreground">{avgS} / {avgD}</p>
               </div>
               <div>
-                <p className="text-xs text-gray-500">Readings</p>
-                <p className="text-xl font-bold text-gray-700">{last7.length}</p>
+                <p className="text-sm text-muted-foreground">Readings</p>
+                <p className="text-xl font-bold text-foreground">{last7.length}</p>
               </div>
               <div>
-                <p className="text-xs text-gray-500">Crisis (last 7)</p>
+                <p className="text-sm text-muted-foreground">Crisis (last 7)</p>
                 <p className={`text-xl font-bold ${crisisLast7 > 0 ? "text-red-700" : "text-gray-700"}`}>{crisisLast7}</p>
               </div>
             </CardContent>
@@ -118,10 +118,10 @@ export default function BloodPressureLog() {
         )}
 
         {crisisLast7 > 0 && (
-          <Card className="mb-4 bg-red-100 border-red-400 print:hidden">
+          <Card className="mb-4 bg-danger border-red-400 print:hidden">
             <CardContent className="py-3 px-4 flex items-start gap-2">
-              <AlertTriangle className="h-5 w-5 text-red-700 mt-0.5 shrink-0" />
-              <p className="text-sm text-red-800">
+              <AlertTriangle className="h-5 w-5 text-danger-foreground mt-0.5 shrink-0" />
+              <p className="text-base text-danger-foreground">
                 <span className="font-semibold">Crisis-level readings (180/120 or higher) in the last week.</span> Call your doctor today, or 911 if you have chest pain, shortness of breath, or numbness.
               </p>
             </CardContent>
@@ -132,7 +132,7 @@ export default function BloodPressureLog() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-red-600" />
+              <PlusCircle className="h-5 w-5 text-danger-foreground" />
               Log a Reading
             </CardTitle>
           </CardHeader>
@@ -163,7 +163,7 @@ export default function BloodPressureLog() {
             </div>
             <div>
               <Label className="text-base font-medium">When was it taken?</Label>
-              <select value={form.context} onChange={e => setForm(f => ({ ...f, context: e.target.value }))} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <select value={form.context} onChange={e => setForm(f => ({ ...f, context: e.target.value }))} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card">
                 {CONTEXTS.map(c => <option key={c}>{c}</option>)}
               </select>
             </div>
@@ -171,7 +171,7 @@ export default function BloodPressureLog() {
               <Label htmlFor="bp-notes" className="text-base font-medium">Notes (optional)</Label>
               <Input id="bp-notes" placeholder="e.g. After morning walk, felt anxious" value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base">Save Reading</Button>
           </CardContent>
         </Card>
@@ -187,10 +187,10 @@ export default function BloodPressureLog() {
 
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <HeartPulse className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <HeartPulse className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No readings yet.</p>
-              <p className="text-sm mt-1">Log your first reading above.</p>
+              <p className="text-base mt-1">Log your first reading above.</p>
             </CardContent>
           </Card>
         ) : (
@@ -206,16 +206,16 @@ export default function BloodPressureLog() {
                     <div key={r.id} className="py-2 flex items-start justify-between gap-2 print:break-inside-avoid">
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <span className="text-2xl font-bold text-gray-900">{r.systolic} / {r.diastolic}</span>
-                          {r.pulse > 0 && <span className="text-sm text-gray-500">· pulse {r.pulse}</span>}
+                          <span className="text-2xl font-bold text-foreground">{r.systolic} / {r.diastolic}</span>
+                          {r.pulse > 0 && <span className="text-base text-muted-foreground">· pulse {r.pulse}</span>}
                           <Badge variant="secondary" className={`text-xs border ${c.color}`}>{c.label}</Badge>
                         </div>
-                        <p className="text-xs text-gray-500 mt-1">
+                        <p className="text-sm text-muted-foreground mt-1">
                           {formatDate(r.date)} at {formatTime(r.time)} · <span className="italic">{r.context}</span>
                         </p>
-                        {r.notes && <p className="text-xs text-gray-500 italic mt-0.5">{r.notes}</p>}
+                        {r.notes && <p className="text-sm text-muted-foreground italic mt-0.5">{r.notes}</p>}
                       </div>
-                      <Button variant="ghost" size="icon" onClick={() => remove(r.id)} className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden">
+                      <Button variant="ghost" size="icon" onClick={() => remove(r.id)} className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden">
                         <Trash2 className="h-3 w-3" />
                       </Button>
                     </div>
@@ -226,14 +226,14 @@ export default function BloodPressureLog() {
           </Card>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Categories shown are American Heart Association guidelines.</span> Your doctor may use different targets — follow their advice first.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

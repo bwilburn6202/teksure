@@ -19,7 +19,7 @@ export default function FamilyHistoryInterview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tools (FREE)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Phone Voice Memos</strong> — record audio.</li>
               <li><strong>StoryCorps app</strong> — interviews + Library of Congress archive. FREE.</li>
               <li><strong>Otter.ai</strong> — record + auto-transcribe. FREE tier.</li>
@@ -33,7 +33,7 @@ export default function FamilyHistoryInterview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best questions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tell me about the home you grew up in.</li>
               <li>What did your family do on Sundays?</li>
               <li>What did you want to be when you grew up?</li>
@@ -50,7 +50,7 @@ export default function FamilyHistoryInterview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Quiet room.</li>
               <li>Mic close (phone mic 2-3 feet).</li>
               <li>Test recording first — 30 seconds.</li>
@@ -65,7 +65,7 @@ export default function FamilyHistoryInterview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Interview style</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open-ended questions: &quot;Tell me about...&quot; vs yes/no.</li>
               <li>Listen, don&apos;t interrupt.</li>
               <li>&quot;Why?&quot; or &quot;How did you feel?&quot; goes deeper.</li>
@@ -80,7 +80,7 @@ export default function FamilyHistoryInterview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After the interview</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Backup audio files immediately (cloud + drive).</li>
               <li>Transcribe with Otter / Rev.com.</li>
               <li>Send transcript to elder for additions.</li>
@@ -94,7 +94,7 @@ export default function FamilyHistoryInterview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t wait</h3>
-            <p className="text-sm text-muted-foreground">Single biggest regret in family genealogy: &quot;I should have asked Grandma when she was alive.&quot; Even a 30-min recording captures more than 100 photos. Start with oldest living relatives — even if they have early dementia, lucid moments are common. Schedule before holidays.</p>
+            <p className="text-base text-muted-foreground">Single biggest regret in family genealogy: &quot;I should have asked Grandma when she was alive.&quot; Even a 30-min recording captures more than 100 photos. Start with oldest living relatives — even if they have early dementia, lucid moments are common. Schedule before holidays.</p>
           </CardContent>
         </Card>
       </main>

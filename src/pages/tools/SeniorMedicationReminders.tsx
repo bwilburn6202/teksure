@@ -22,7 +22,7 @@ export default function SeniorMedicationReminders() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">CareZone</h2><p>Free. Snap a picture of your pill bottle — auto-fills name and dose.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Phone built-in</h2><p>iPhone Health app and Google Fit both have free medication tracking now.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Backup with smart speaker</h2><p>Tell Alexa: &ldquo;Set a reminder for blood pressure pill at 8 AM daily.&rdquo;</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pair a phone reminder with a weekly pill organizer. Two systems = no missed doses.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pair a phone reminder with a weekly pill organizer. Two systems = no missed doses.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

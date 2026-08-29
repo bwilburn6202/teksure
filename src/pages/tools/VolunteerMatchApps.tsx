@@ -31,10 +31,10 @@ export default function VolunteerMatchApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function VolunteerMatchApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-perfect roles</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Foster Grandparent</strong> — read to kids at school. $4/hr stipend (not taxed).</li>
               <li><strong>Senior Companion</strong> — visit homebound elders. $4/hr.</li>
               <li><strong>RSVP</strong> — flexible, your skills, your schedule.</li>
@@ -60,7 +60,7 @@ export default function VolunteerMatchApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">From-home volunteering</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Be My Eyes</strong> — answer video calls helping blind users (5 min each).</li>
               <li><strong>Crisis Text Line</strong> — train to text people in crisis.</li>
               <li><strong>Smithsonian Transcription</strong> — type old documents into searchable text.</li>
@@ -74,7 +74,7 @@ export default function VolunteerMatchApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Health benefits</h3>
-            <p className="text-sm text-muted-foreground">Studies show volunteers live 2-4 years longer, with lower depression and dementia rates. 2 hours/week is the sweet spot. Best is something that gets you out of the house and into community. Your local Area Agency on Aging knows what&apos;s near you.</p>
+            <p className="text-base text-muted-foreground">Studies show volunteers live 2-4 years longer, with lower depression and dementia rates. 2 hours/week is the sweet spot. Best is something that gets you out of the house and into community. Your local Area Agency on Aging knows what&apos;s near you.</p>
           </CardContent>
         </Card>
       </main>

@@ -30,10 +30,10 @@ export default function SonosSetupGuide() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SonosSetupGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Sonos for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One app controls all speakers.</li>
               <li>Stream from Spotify, Apple Music, Amazon, Pandora.</li>
               <li>Whole-home audio — same song everywhere.</li>
@@ -57,7 +57,7 @@ export default function SonosSetupGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start with one speaker</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t buy whole system at once.</li>
               <li>Era 100 in living room — most listening.</li>
               <li>Try for 2-3 months.</li>
@@ -72,7 +72,7 @@ export default function SonosSetupGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup steps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Sonos app.</li>
               <li>Plug speaker in.</li>
               <li>App finds it automatically.</li>
@@ -87,7 +87,7 @@ export default function SonosSetupGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">TV soundbar = game-changer for hearing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sonos Beam / Arc with Speech Enhancement.</li>
               <li>Boosts dialogue clearly.</li>
               <li>Night mode reduces loud explosions.</li>
@@ -101,7 +101,7 @@ export default function SonosSetupGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cheaper alternatives</h3>
-            <p className="text-sm text-muted-foreground"><strong>Echo Studio</strong> ($200) — Amazon&apos;s best speaker. <strong>Apple HomePod mini</strong> ($100) — small Apple speaker. <strong>JBL Charge 5</strong> ($180) — portable Bluetooth. Sonos worth premium for those who entertain or value sound — others fine with cheaper.</p>
+            <p className="text-base text-muted-foreground"><strong>Echo Studio</strong> ($200) — Amazon&apos;s best speaker. <strong>Apple HomePod mini</strong> ($100) — small Apple speaker. <strong>JBL Charge 5</strong> ($180) — portable Bluetooth. Sonos worth premium for those who entertain or value sound — others fine with cheaper.</p>
           </CardContent>
         </Card>
       </main>

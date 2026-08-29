@@ -20,9 +20,9 @@ export default function SeniorJitterbug() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Jitterbug Smart4</h2><p>$150. Big icon smartphone. Simplified menu. Built-in Urgent Response.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lively service</h2><p>Plans from $20/month. Urgent Response button calls 24/7 trained operators.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Health &amp; Safety</h2><p>$25/month adds nurse access and fall detection (Smart4 only).</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Alternatives</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>iPhone with Senior Mode</li><li>Samsung Easy Mode</li><li>Consumer Cellular Iris Connect</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Alternatives</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>iPhone with Senior Mode</li><li>Samsung Easy Mode</li><li>Consumer Cellular Iris Connect</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Honest review</h2><p>Good for seniors who don&apos;t want to learn smartphones. iPhone/Samsung often more value.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Try a regular smartphone with Easy Mode first. Often does the same job.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Try a regular smartphone with Easy Mode first. Often does the same job.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -755,9 +755,9 @@ export default function EmergencyInfoCard() {
 
         {/* ── Privacy callout ──────────────────────────────────── */}
         <section className="container max-w-6xl mx-auto px-4 -mt-6 print:hidden relative z-10">
-          <Alert className="border-2 border-emerald-300 bg-emerald-50 dark:bg-emerald-950/20 dark:border-emerald-900">
-            <Lock className="h-5 w-5 text-emerald-700 dark:text-emerald-300" />
-            <AlertTitle className="text-base md:text-lg font-bold text-emerald-900 dark:text-emerald-200">
+          <Alert className="border-2 border-success-foreground/25 bg-success ">
+            <Lock className="h-5 w-5 text-success-foreground " />
+            <AlertTitle className="text-base md:text-lg font-bold text-success-foreground ">
               Your data stays on your device — never sent anywhere
             </AlertTitle>
             <AlertDescription className="text-base text-emerald-900/90 dark:text-emerald-100/90 leading-relaxed">
@@ -771,7 +771,7 @@ export default function EmergencyInfoCard() {
         {/* ── Templates row ────────────────────────────────────── */}
         <section className="container max-w-6xl mx-auto px-4 mt-8 print:hidden">
           <div className="flex items-center gap-2 mb-3">
-            <Sparkles className="h-5 w-5 text-rose-600" aria-hidden />
+            <Sparkles className="h-5 w-5 text-danger-foreground" aria-hidden />
             <h2 className="text-lg md:text-xl font-bold">Start from a template</h2>
           </div>
           <p className="text-base text-muted-foreground mb-4">
@@ -785,9 +785,9 @@ export default function EmergencyInfoCard() {
                   key={t.id}
                   type="button"
                   onClick={() => applyTemplate(t.id)}
-                  className="text-left rounded-xl border-2 border-rose-200 bg-rose-50/60 dark:bg-rose-950/20 dark:border-rose-900 p-4 min-h-14 hover:border-rose-400 hover:bg-rose-100 dark:hover:bg-rose-950/40 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 focus-visible:ring-offset-2"
+                  className="text-left rounded-xl border-2 border-danger-foreground/25 bg-rose-50/60 p-4 min-h-14 hover:border-rose-400 hover:bg-danger transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 focus-visible:ring-offset-2"
                 >
-                  <Icon className="h-6 w-6 text-rose-600 mb-2" aria-hidden />
+                  <Icon className="h-6 w-6 text-danger-foreground mb-2" aria-hidden />
                   <div className="font-semibold text-base">{t.label}</div>
                   <div className="text-sm text-muted-foreground mt-1 leading-snug">{t.description}</div>
                 </button>
@@ -816,7 +816,7 @@ export default function EmergencyInfoCard() {
               <Card>
                 <CardContent className="p-5 md:p-6 space-y-4">
                   <div className="flex items-center gap-2">
-                    <User className="h-5 w-5 text-rose-600" aria-hidden />
+                    <User className="h-5 w-5 text-danger-foreground" aria-hidden />
                     <h3 className="text-lg font-bold">Personal</h3>
                   </div>
                   <div className="grid sm:grid-cols-2 gap-4">
@@ -872,10 +872,10 @@ export default function EmergencyInfoCard() {
               <Card>
                 <CardContent className="p-5 md:p-6 space-y-4">
                   <div className="flex items-center gap-2">
-                    <Phone className="h-5 w-5 text-rose-600" aria-hidden />
+                    <Phone className="h-5 w-5 text-danger-foreground" aria-hidden />
                     <h3 className="text-lg font-bold">Emergency contacts</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground -mt-1">
+                  <p className="text-base text-muted-foreground -mt-1">
                     Up to three people first responders should call.
                   </p>
                   {data.contacts.map((c, i) => (
@@ -922,7 +922,7 @@ export default function EmergencyInfoCard() {
               <Card>
                 <CardContent className="p-5 md:p-6 space-y-4">
                   <div className="flex items-center gap-2">
-                    <Stethoscope className="h-5 w-5 text-rose-600" aria-hidden />
+                    <Stethoscope className="h-5 w-5 text-danger-foreground" aria-hidden />
                     <h3 className="text-lg font-bold">Medical conditions</h3>
                   </div>
                   <div className="space-y-1.5">
@@ -945,10 +945,10 @@ export default function EmergencyInfoCard() {
               <Card>
                 <CardContent className="p-5 md:p-6 space-y-3">
                   <div className="flex items-center gap-2">
-                    <Pill className="h-5 w-5 text-rose-600" aria-hidden />
+                    <Pill className="h-5 w-5 text-danger-foreground" aria-hidden />
                     <h3 className="text-lg font-bold">Medications</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground -mt-1">
+                  <p className="text-base text-muted-foreground -mt-1">
                     Up to ten current prescriptions.
                   </p>
                   <div className="space-y-3">
@@ -994,7 +994,7 @@ export default function EmergencyInfoCard() {
               <Card>
                 <CardContent className="p-5 md:p-6 space-y-4">
                   <div className="flex items-center gap-2">
-                    <AlertTriangle className="h-5 w-5 text-rose-600" aria-hidden />
+                    <AlertTriangle className="h-5 w-5 text-danger-foreground" aria-hidden />
                     <h3 className="text-lg font-bold">Allergies</h3>
                   </div>
                   <div className="grid sm:grid-cols-3 gap-4">
@@ -1036,7 +1036,7 @@ export default function EmergencyInfoCard() {
               <Card>
                 <CardContent className="p-5 md:p-6 space-y-4">
                   <div className="flex items-center gap-2">
-                    <Stethoscope className="h-5 w-5 text-rose-600" aria-hidden />
+                    <Stethoscope className="h-5 w-5 text-danger-foreground" aria-hidden />
                     <h3 className="text-lg font-bold">Doctor & pharmacy</h3>
                   </div>
                   <div className="grid sm:grid-cols-2 gap-4">
@@ -1091,10 +1091,10 @@ export default function EmergencyInfoCard() {
                 <CardContent className="p-5 md:p-6 space-y-4">
                   <div className="flex items-center justify-between gap-2">
                     <div className="flex items-center gap-2">
-                      <CreditCard className="h-5 w-5 text-rose-600" aria-hidden />
+                      <CreditCard className="h-5 w-5 text-danger-foreground" aria-hidden />
                       <h3 className="text-lg font-bold">Insurance</h3>
                     </div>
-                    <label className="inline-flex items-center gap-2 text-sm font-medium cursor-pointer select-none">
+                    <label className="inline-flex items-center gap-2 text-base font-medium cursor-pointer select-none">
                       <Checkbox
                         id="show-insurance"
                         checked={data.showInsurance}
@@ -1106,7 +1106,7 @@ export default function EmergencyInfoCard() {
                       </span>
                     </label>
                   </div>
-                  <p className="text-sm text-muted-foreground -mt-1">
+                  <p className="text-base text-muted-foreground -mt-1">
                     Hidden by default. Only printed if you check the box above.
                   </p>
                   <div className="grid sm:grid-cols-2 gap-4">
@@ -1138,7 +1138,7 @@ export default function EmergencyInfoCard() {
               <Card>
                 <CardContent className="p-5 md:p-6 space-y-3">
                   <div className="flex items-center gap-2">
-                    <FileText className="h-5 w-5 text-rose-600" aria-hidden />
+                    <FileText className="h-5 w-5 text-danger-foreground" aria-hidden />
                     <h3 className="text-lg font-bold">DNR / Advance directive</h3>
                   </div>
                   <label className="flex items-start gap-3 cursor-pointer select-none">
@@ -1180,10 +1180,10 @@ export default function EmergencyInfoCard() {
               <Card>
                 <CardContent className="p-5 md:p-6 space-y-4">
                   <div className="flex items-center gap-2">
-                    <PawPrint className="h-5 w-5 text-rose-600" aria-hidden />
+                    <PawPrint className="h-5 w-5 text-danger-foreground" aria-hidden />
                     <h3 className="text-lg font-bold">Pets at home</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground -mt-1">
+                  <p className="text-base text-muted-foreground -mt-1">
                     So first responders know to look for them and arrange care.
                   </p>
                   <div className="space-y-1.5">
@@ -1228,12 +1228,12 @@ export default function EmergencyInfoCard() {
                 <Button
                   variant="outline"
                   onClick={handleClear}
-                  className="gap-2 min-h-14 text-base hover:text-rose-600 hover:border-rose-300"
+                  className="gap-2 min-h-14 text-base hover:text-danger-foreground hover:border-danger-foreground/25"
                 >
                   <Trash2 className="h-4 w-4" />
                   Clear everything
                 </Button>
-                <p className="text-sm text-muted-foreground self-center">
+                <p className="text-base text-muted-foreground self-center">
                   All clearing happens locally. Nothing is uploaded.
                 </p>
               </div>
@@ -1261,7 +1261,7 @@ export default function EmergencyInfoCard() {
                     <div className="rounded-xl border-2 border-dashed border-muted-foreground/30 bg-muted/30 p-4 flex items-center justify-center">
                       <WalletCard data={data} contacts={contacts} meds={meds} allergies={allergiesCombined} />
                     </div>
-                    <p className="text-sm text-muted-foreground mt-3 text-center">
+                    <p className="text-base text-muted-foreground mt-3 text-center">
                       Standard business-card size: 3.5" × 2"
                     </p>
                     <Button
@@ -1280,7 +1280,7 @@ export default function EmergencyInfoCard() {
                         <FridgeCard data={data} contacts={contacts} meds={meds} />
                       </div>
                     </div>
-                    <p className="text-sm text-muted-foreground mt-3 text-center">
+                    <p className="text-base text-muted-foreground mt-3 text-center">
                       Letter size: 8.5" × 11" — large print for visibility
                     </p>
                     <Button
@@ -1297,7 +1297,7 @@ export default function EmergencyInfoCard() {
                     <div className="rounded-xl border-2 border-dashed border-muted-foreground/30 bg-muted/30 p-4 flex items-center justify-center">
                       <LockscreenPreview data={data} contacts={contacts} meds={meds} allergies={allergiesCombined} />
                     </div>
-                    <p className="text-sm text-muted-foreground mt-3 text-center">
+                    <p className="text-base text-muted-foreground mt-3 text-center">
                       Phone wallpaper: 1170 × 2532 (iPhone preset)
                     </p>
                     <Button
@@ -1317,9 +1317,9 @@ export default function EmergencyInfoCard() {
 
         {/* ── Important alert ────────────────────────────────── */}
         <section className="container max-w-6xl mx-auto px-4 mb-10 print:hidden">
-          <Alert className="border-2 border-amber-300 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-900">
-            <AlertTriangle className="h-5 w-5 text-amber-700 dark:text-amber-300" />
-            <AlertTitle className="text-base md:text-lg font-bold text-amber-900 dark:text-amber-200">
+          <Alert className="border-2 border-warn-foreground/25 bg-warn ">
+            <AlertTriangle className="h-5 w-5 text-warn-foreground " />
+            <AlertTitle className="text-base md:text-lg font-bold text-warn-foreground ">
               Always update this after medical changes
             </AlertTitle>
             <AlertDescription className="text-base text-amber-900/90 dark:text-amber-100/90 leading-relaxed">
@@ -1336,36 +1336,36 @@ export default function EmergencyInfoCard() {
           <div className="grid md:grid-cols-3 gap-4">
             <Link
               to="/tools/digital-will-template"
-              className="border rounded-xl p-5 hover:shadow-md hover:border-rose-300 transition group flex items-start gap-3"
+              className="border rounded-xl p-5 hover:shadow-md hover:border-danger-foreground/25 transition group flex items-start gap-3"
             >
-              <FileText className="h-6 w-6 text-rose-600 shrink-0 mt-0.5" aria-hidden />
+              <FileText className="h-6 w-6 text-danger-foreground shrink-0 mt-0.5" aria-hidden />
               <div>
                 <h3 className="font-semibold text-lg">Digital Will Template</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   The accounts your family will need — in one printable document.
                 </p>
               </div>
             </Link>
             <Link
               to="/tools/medication-reminder-setup"
-              className="border rounded-xl p-5 hover:shadow-md hover:border-rose-300 transition group flex items-start gap-3"
+              className="border rounded-xl p-5 hover:shadow-md hover:border-danger-foreground/25 transition group flex items-start gap-3"
             >
-              <Pill className="h-6 w-6 text-rose-600 shrink-0 mt-0.5" aria-hidden />
+              <Pill className="h-6 w-6 text-danger-foreground shrink-0 mt-0.5" aria-hidden />
               <div>
                 <h3 className="font-semibold text-lg">Medication Reminder Setup</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Set phone reminders for every prescription so you never miss a dose.
                 </p>
               </div>
             </Link>
             <Link
               to="/guides?category=safety"
-              className="border rounded-xl p-5 hover:shadow-md hover:border-rose-300 transition group flex items-start gap-3"
+              className="border rounded-xl p-5 hover:shadow-md hover:border-danger-foreground/25 transition group flex items-start gap-3"
             >
-              <BookOpen className="h-6 w-6 text-rose-600 shrink-0 mt-0.5" aria-hidden />
+              <BookOpen className="h-6 w-6 text-danger-foreground shrink-0 mt-0.5" aria-hidden />
               <div>
                 <h3 className="font-semibold text-lg">All Safety Guides</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Plain-English guides on staying safe at home, online, and on the road.
                 </p>
               </div>
@@ -1438,7 +1438,7 @@ export default function EmergencyInfoCard() {
           </Accordion>
 
           <div className="mt-8 flex items-center gap-2 text-sm text-muted-foreground">
-            <ShieldCheck className="h-4 w-4 text-emerald-600" aria-hidden />
+            <ShieldCheck className="h-4 w-4 text-success-foreground" aria-hidden />
             <span>Free forever. No account. No tracking on this tool.</span>
           </div>
         </section>

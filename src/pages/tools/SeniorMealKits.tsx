@@ -19,10 +19,10 @@ export default function SeniorMealKits() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">HelloFresh</h2><p>$11/meal. 25-min recipes. Senior-friendly options.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Blue Apron</h2><p>$10/meal. More gourmet. Heart-healthy section.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Home Chef</h2><p>$10/meal. Easy-prep options. Most senior-friendly.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>No grocery shopping</li><li>Right portions</li><li>New recipes</li><li>Less food waste</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>No grocery shopping</li><li>Right portions</li><li>New recipes</li><li>Less food waste</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pause anytime</h2><p>Most allow weekly skip or pause. No commitment.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">First box deals</h2><p>$60-$100 off first orders. Watch for promo codes.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Try 2-meal week first. See if cooking style fits before committing.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Try 2-meal week first. See if cooking style fits before committing.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

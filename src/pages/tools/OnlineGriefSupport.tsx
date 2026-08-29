@@ -31,10 +31,10 @@ export default function OnlineGriefSupport() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function OnlineGriefSupport() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Local hospice</strong> — most offer free bereavement groups for 13+ months even if your loved one wasn&apos;t their patient.</li>
               <li><strong>Funeral home grief programs</strong> — many host monthly free groups.</li>
               <li><strong>Senior centers</strong> — peer support groups.</li>
@@ -56,7 +56,7 @@ export default function OnlineGriefSupport() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to seek therapy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Grief lasting more than 12-18 months without lifting.</li>
               <li>Can&apos;t function — eating, sleeping, household.</li>
               <li>Thoughts of self-harm.</li>
@@ -70,7 +70,7 @@ export default function OnlineGriefSupport() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Books that help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>It&apos;s OK That You&apos;re Not OK</strong> — Megan Devine.</li>
               <li><strong>A Grief Observed</strong> — C.S. Lewis (Christian).</li>
               <li><strong>The Year of Magical Thinking</strong> — Joan Didion.</li>
@@ -83,7 +83,7 @@ export default function OnlineGriefSupport() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Crisis right now?</h3>
-            <p className="text-sm text-muted-foreground"><strong>988 Suicide &amp; Crisis Lifeline</strong> — call or text 988. 24/7 free. <strong>Crisis Text Line</strong> — text HOME to 741741. <strong>SAMHSA</strong> — 1-800-662-4357. Real humans, all hours.</p>
+            <p className="text-base text-muted-foreground"><strong>988 Suicide &amp; Crisis Lifeline</strong> — call or text 988. 24/7 free. <strong>Crisis Text Line</strong> — text HOME to 741741. <strong>SAMHSA</strong> — 1-800-662-4357. Real humans, all hours.</p>
           </CardContent>
         </Card>
       </main>

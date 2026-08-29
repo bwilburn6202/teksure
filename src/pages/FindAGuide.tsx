@@ -175,7 +175,7 @@ const FindAGuide = () => {
           <Card>
             <CardContent className="p-6 md:p-8">
               <h2 className="text-xl font-semibold mb-2">What kind of device is this about?</h2>
-              <p className="text-sm text-muted-foreground mb-6">Pick the closest match. You can always change it later.</p>
+              <p className="text-base text-muted-foreground mb-6">Pick the closest match. You can always change it later.</p>
               <div className="grid gap-3 sm:grid-cols-2">
                 {DEVICE_OPTIONS.map((opt) => (
                   <button
@@ -196,7 +196,7 @@ const FindAGuide = () => {
           <Card>
             <CardContent className="p-6 md:p-8">
               <h2 className="text-xl font-semibold mb-2">What are you trying to figure out?</h2>
-              <p className="text-sm text-muted-foreground mb-6">Pick the closest topic.</p>
+              <p className="text-base text-muted-foreground mb-6">Pick the closest topic.</p>
               <div className="grid gap-3 sm:grid-cols-2">
                 {TOPIC_OPTIONS.map((opt) => (
                   <button
@@ -217,7 +217,7 @@ const FindAGuide = () => {
           <Card>
             <CardContent className="p-6 md:p-8">
               <h2 className="text-xl font-semibold mb-2">How comfortable are you with this already?</h2>
-              <p className="text-sm text-muted-foreground mb-6">We'll match guides to your level.</p>
+              <p className="text-base text-muted-foreground mb-6">We'll match guides to your level.</p>
               <div className="grid gap-3 sm:grid-cols-3">
                 {LEVEL_OPTIONS.map((opt) => (
                   <button
@@ -241,7 +241,7 @@ const FindAGuide = () => {
                 <div className="flex items-start justify-between gap-4 mb-6 flex-wrap">
                   <div>
                     <h2 className="text-xl font-semibold mb-1">Top matches for you</h2>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       Based on: {answers.device && DEVICE_OPTIONS.find((o) => o.value === answers.device)?.label} ·{' '}
                       {answers.topic && TOPIC_OPTIONS.find((o) => o.value === answers.topic)?.label} ·{' '}
                       {answers.level}
@@ -281,7 +281,7 @@ const FindAGuide = () => {
                               {g.difficulty && (
                                 <Badge variant="outline" className="text-xs">{g.difficulty}</Badge>
                               )}
-                              <span className="text-xs text-muted-foreground">{g.readTime}</span>
+                              <span className="text-sm text-muted-foreground">{g.readTime}</span>
                             </div>
                           </div>
                         </div>

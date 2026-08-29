@@ -27,7 +27,7 @@ export default function HomeEnergyMonitor() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why bother</h2>
-            <p className="text-sm">Most homeowners have NO idea what device drives their bill. An old fridge could cost $200/year extra. A failing AC could double its draw. Energy monitors find these hidden costs in weeks.</p>
+            <p className="text-base">Most homeowners have NO idea what device drives their bill. An old fridge could cost $200/year extra. A failing AC could double its draw. Energy monitors find these hidden costs in weeks.</p>
           </CardContent>
         </Card>
 
@@ -37,10 +37,10 @@ export default function HomeEnergyMonitor() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -49,7 +49,7 @@ export default function HomeEnergyMonitor() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Things you\'ll discover</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Your old basement fridge using $20/month for 6 cans of soda.</li>
               <li>The hot water heater fighting a leak you didn\'t know about.</li>
               <li>"Vampire" devices (TV, computer, microwave) drawing 5-15W each, 24/7.</li>
@@ -63,7 +63,7 @@ export default function HomeEnergyMonitor() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sense / Emporia</strong> — must be installed in your electrical panel. DIY if comfortable, OR pay an electrician $100-200.</li>
               <li><strong>Smart plugs</strong> — just plug in. No electrician needed.</li>
               <li><strong>Utility app</strong> — already there. Just sign in.</li>
@@ -74,7 +74,7 @@ export default function HomeEnergyMonitor() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start free</h3>
-            <p className="text-sm text-muted-foreground">Sign in to your utility\'s app. Most show hour-by-hour usage now. Look for spikes. Cross-reference what you were doing — "8pm Sunday spike = oven for dinner". Builds intuition before spending on hardware.</p>
+            <p className="text-base text-muted-foreground">Sign in to your utility\'s app. Most show hour-by-hour usage now. Look for spikes. Cross-reference what you were doing — "8pm Sunday spike = oven for dinner". Builds intuition before spending on hardware.</p>
           </CardContent>
         </Card>
       </main>

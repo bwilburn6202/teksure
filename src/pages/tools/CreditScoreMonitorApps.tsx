@@ -19,7 +19,7 @@ export default function CreditScoreMonitorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Credit Karma — most popular</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>100% free — no credit card required.</li>
               <li>Get TransUnion + Equifax scores.</li>
               <li>Updated weekly.</li>
@@ -33,7 +33,7 @@ export default function CreditScoreMonitorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Experian app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free FICO score from Experian.</li>
               <li>The score most lenders use.</li>
               <li>Boost feature — adds rent/utility to history.</li>
@@ -47,7 +47,7 @@ export default function CreditScoreMonitorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bank app credit scores</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many banks include free FICO score.</li>
               <li>Chase + BofA + Wells Fargo + Citi.</li>
               <li>Updated monthly.</li>
@@ -61,7 +61,7 @@ export default function CreditScoreMonitorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why monitor credit?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Catch identity theft fast.</li>
               <li>New account opened in your name = alert.</li>
               <li>Credit score drops if fraud occurred.</li>
@@ -75,7 +75,7 @@ export default function CreditScoreMonitorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free annual credit reports</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AnnualCreditReport.com — official site.</li>
               <li>Free reports from all 3 bureaus.</li>
               <li>Now weekly free reports until further notice.</li>
@@ -89,7 +89,7 @@ export default function CreditScoreMonitorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Higher identity theft risk after retirement.</li>
               <li>Freeze credit if not applying for new credit.</li>
               <li>Equifax + Experian + TransUnion freezes are free.</li>
@@ -103,7 +103,7 @@ export default function CreditScoreMonitorApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Credit Karma + freeze your credit</h3>
-            <p className="text-sm text-muted-foreground">Two actions this week: download Credit Karma free for monitoring, and freeze your credit at all 3 bureaus (free) if you&apos;re not opening new accounts. Frozen credit prevents identity thieves from opening accounts in your name. Unfreeze temporarily only when you&apos;re applying for credit. Most seniors should keep credit frozen as default state.</p>
+            <p className="text-base text-muted-foreground">Two actions this week: download Credit Karma free for monitoring, and freeze your credit at all 3 bureaus (free) if you&apos;re not opening new accounts. Frozen credit prevents identity thieves from opening accounts in your name. Unfreeze temporarily only when you&apos;re applying for credit. Most seniors should keep credit frozen as default state.</p>
           </CardContent>
         </Card>
       </main>

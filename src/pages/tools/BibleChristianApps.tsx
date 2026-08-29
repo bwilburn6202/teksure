@@ -32,10 +32,10 @@ export default function BibleChristianApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function BibleChristianApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch church services online</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Most churches stream Sunday services on Facebook, YouTube, or their website.</li>
               <li>Search "[your church] live" or check the church\'s social media.</li>
               <li>Right Now Media — Christian streaming service with thousands of teachings, often free through your church.</li>
@@ -57,7 +57,7 @@ export default function BibleChristianApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For housebound seniors</h3>
-            <p className="text-sm text-muted-foreground">If you can\'t make it to church, ask your pastor about home communion / visitation. Most churches arrange. Plus your church\'s livestream + Hallow or YouVersion daily reading keeps spiritual connection strong.</p>
+            <p className="text-base text-muted-foreground">If you can\'t make it to church, ask your pastor about home communion / visitation. Most churches arrange. Plus your church\'s livestream + Hallow or YouVersion daily reading keeps spiritual connection strong.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,10 +19,10 @@ export default function SeniorPasswordsForFamily() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">1Password Family</h2><p>$5/month. Share passwords with family. Best option.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Legacy Contact</h2><p>FREE. Family accesses iCloud after death.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sealed envelope</h2><p>Old-school. Write key passwords. Seal. Tell family location.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What to share</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Bank login</li><li>Email password</li><li>Phone unlock code</li><li>Apple ID/Google account</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What to share</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Bank login</li><li>Email password</li><li>Phone unlock code</li><li>Apple ID/Google account</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Trust matters</h2><p>Only one most-trusted family member. Spouse first.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Update yearly</h2><p>Passwords change. Tell trusted family of changes.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Without password access, family is locked out for months after death.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Without password access, family is locked out for months after death.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -378,8 +378,8 @@ export default function MedicarePlanChooser() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-14 w-14 rounded-2xl bg-sky-50 dark:bg-sky-950/30 flex items-center justify-center flex-shrink-0">
-                <Stethoscope className="h-7 w-7 text-sky-600" aria-hidden="true" />
+              <div className="h-14 w-14 rounded-2xl bg-info flex items-center justify-center flex-shrink-0">
+                <Stethoscope className="h-7 w-7 text-info-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary" className="text-sm">Free Educational Tool</Badge>
             </div>
@@ -390,16 +390,16 @@ export default function MedicarePlanChooser() {
               Medicare has Parts A, B, C, D, and Medigap — and it confuses almost everyone. This tool won&apos;t sell you anything. Answer 7 plain-English questions and we&apos;ll explain which type of Medicare plan usually fits your situation best, and which rabbit hole to dig into next.
             </p>
 
-            <Card className="mt-6 p-5 rounded-2xl bg-amber-50/60 dark:bg-amber-950/20 border-amber-200 dark:border-amber-900">
+            <Card className="mt-6 p-5 rounded-2xl bg-amber-50/60 dark:bg-amber-950/20 border-warn-foreground/25 ">
               <div className="flex gap-3">
-                <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <AlertTriangle className="h-6 w-6 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <p className="text-base leading-relaxed">
                   <span className="font-semibold">This is educational, not advice.</span> TekSure is not an insurance broker and doesn&apos;t sell plans. For personalized help, talk to a{' '}
                   <a
                     href="https://www.shiphelp.org/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline font-semibold text-amber-900 dark:text-amber-200"
+                    className="underline font-semibold text-warn-foreground "
                   >
                     free SHIP counselor
                   </a>
@@ -414,7 +414,7 @@ export default function MedicarePlanChooser() {
         <section className="container py-10 max-w-3xl">
           <Card className="p-6 md:p-8 rounded-2xl">
             <h2 className="text-2xl font-bold mb-6 flex items-center gap-2">
-              <Sparkles className="h-6 w-6 text-sky-600" aria-hidden="true" />
+              <Sparkles className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               Tell us about your situation
             </h2>
 
@@ -437,7 +437,7 @@ export default function MedicarePlanChooser() {
                   ))}
                 </div>
                 {ageEligible === 'no' && (
-                  <p className="mt-3 text-sm text-muted-foreground">
+                  <p className="mt-3 text-base text-muted-foreground">
                     Most people qualify for Medicare at 65. You can also qualify earlier with certain disabilities or ESRD. Keep going — this tool still works as a learning guide.
                   </p>
                 )}
@@ -613,15 +613,15 @@ export default function MedicarePlanChooser() {
 
             {/* Why this? */}
             {result.reasons.length > 0 && (
-              <Card className="p-5 rounded-2xl mb-6 bg-sky-50/50 dark:bg-sky-950/10 border-sky-200 dark:border-sky-900">
+              <Card className="p-5 rounded-2xl mb-6 bg-sky-50/50 dark:bg-sky-950/10 border-info-foreground/25 ">
                 <h3 className="font-bold text-lg mb-3 flex items-center gap-2">
-                  <Info className="h-5 w-5 text-sky-600" aria-hidden="true" />
+                  <Info className="h-5 w-5 text-info-foreground" aria-hidden="true" />
                   Why we suggested this
                 </h3>
                 <ul className="space-y-2">
                   {result.reasons.map((r, i) => (
                     <li key={i} className="flex gap-2 text-base">
-                      <CheckCircle2 className="h-5 w-5 text-sky-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                      <CheckCircle2 className="h-5 w-5 text-info-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                       <span>{r}</span>
                     </li>
                   ))}
@@ -646,10 +646,10 @@ export default function MedicarePlanChooser() {
             )}
 
             {/* SHIP callout (appears in every result) */}
-            <Card className="mt-8 p-6 rounded-2xl bg-violet-50/60 dark:bg-violet-950/20 border-violet-200 dark:border-violet-900">
+            <Card className="mt-8 p-6 rounded-2xl bg-violet-50/60 dark:bg-violet-950/20 border-primary/25 ">
               <div className="flex gap-4 items-start">
-                <div className="h-12 w-12 rounded-xl bg-violet-100 dark:bg-violet-900/30 flex items-center justify-center flex-shrink-0">
-                  <Phone className="h-6 w-6 text-violet-600" aria-hidden="true" />
+                <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <Phone className="h-6 w-6 text-primary" aria-hidden="true" />
                 </div>
                 <div>
                   <h3 className="font-bold text-lg mb-2">Before you enroll — talk to SHIP (free)</h3>
@@ -678,9 +678,9 @@ export default function MedicarePlanChooser() {
 
         {/* ── What Medicare DOESN T cover (always visible) ── */}
         <section className="container pb-12 max-w-3xl">
-          <Card className="p-6 md:p-8 rounded-2xl bg-rose-50/40 dark:bg-rose-950/10 border-rose-200 dark:border-rose-900">
+          <Card className="p-6 md:p-8 rounded-2xl bg-rose-50/40 dark:bg-rose-950/10 border-danger-foreground/25 ">
             <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
-              <XCircle className="h-6 w-6 text-rose-600" aria-hidden="true" />
+              <XCircle className="h-6 w-6 text-danger-foreground" aria-hidden="true" />
               What Medicare does NOT cover
             </h2>
             <p className="text-base text-muted-foreground mb-4">
@@ -688,44 +688,44 @@ export default function MedicarePlanChooser() {
             </p>
             <ul className="space-y-3 text-base">
               <li className="flex gap-3">
-                <XCircle className="h-5 w-5 text-rose-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <XCircle className="h-5 w-5 text-danger-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <span className="font-semibold">Long-term care (nursing homes, assisted living).</span>{' '}
                   Medicare only pays for short-term skilled nursing after a hospital stay — not ongoing custodial care. For long-term care, people use savings, long-term care insurance, or Medicaid.
                 </div>
               </li>
               <li className="flex gap-3">
-                <XCircle className="h-5 w-5 text-rose-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <XCircle className="h-5 w-5 text-danger-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <span className="font-semibold">Most dental care.</span> Cleanings, fillings, dentures, and most dental surgery. Some Medicare Advantage plans include limited dental, but caps are usually $1,000–$2,500/year.
                 </div>
               </li>
               <li className="flex gap-3">
-                <XCircle className="h-5 w-5 text-rose-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <XCircle className="h-5 w-5 text-danger-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <span className="font-semibold">Routine vision care.</span> Eye exams for glasses and the glasses themselves. Medicare covers cataract surgery and eye issues related to disease (like diabetes).
                 </div>
               </li>
               <li className="flex gap-3">
-                <XCircle className="h-5 w-5 text-rose-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <XCircle className="h-5 w-5 text-danger-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <span className="font-semibold">Hearing aids.</span> Medicare doesn&apos;t cover the devices themselves. Some Advantage plans offer an allowance. Over-the-counter hearing aids (since 2022) can be a good low-cost option.
                 </div>
               </li>
               <li className="flex gap-3">
-                <XCircle className="h-5 w-5 text-rose-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <XCircle className="h-5 w-5 text-danger-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <span className="font-semibold">Cosmetic surgery and most alternative medicine.</span> Acupuncture for chronic lower back pain is covered; most other alternative care is not.
                 </div>
               </li>
               <li className="flex gap-3">
-                <XCircle className="h-5 w-5 text-rose-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <XCircle className="h-5 w-5 text-danger-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <span className="font-semibold">Care outside the United States.</span> Original Medicare generally won&apos;t cover you abroad. Some Medigap plans add limited foreign travel emergency coverage.
                 </div>
               </li>
               <li className="flex gap-3">
-                <XCircle className="h-5 w-5 text-rose-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <XCircle className="h-5 w-5 text-danger-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <span className="font-semibold">Concierge / direct primary care fees.</span> The monthly membership fee some doctors charge is not reimbursed by Medicare.
                 </div>
@@ -738,7 +738,7 @@ export default function MedicarePlanChooser() {
         <section className="container pb-24 max-w-3xl">
           <Card className="p-6 md:p-8 rounded-2xl">
             <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
-              <HelpCircle className="h-6 w-6 text-sky-600" aria-hidden="true" />
+              <HelpCircle className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               Medicare alphabet, decoded
             </h2>
             <p className="text-base text-muted-foreground mb-4">
@@ -799,7 +799,7 @@ export default function MedicarePlanChooser() {
           </Card>
 
           <Card className="mt-6 p-6 rounded-2xl bg-muted/30">
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="text-base text-muted-foreground leading-relaxed">
               <span className="font-semibold text-foreground">Disclaimer:</span> This tool is for educational purposes only and reflects general Medicare rules as of 2026. It is not insurance advice, and TekSure is not a licensed insurance agent or broker. Specific costs, networks, and rules change every year and vary by location. Always confirm details on{' '}
               <a
                 href="https://www.medicare.gov/"
@@ -846,10 +846,10 @@ function PlanCard({ plan, isPrimary = false }: { plan: PlanRecommendation; isPri
       {/* Cost */}
       <div className="bg-muted/40 rounded-xl p-4 mb-5">
         <div className="flex items-center gap-2 mb-1">
-          <DollarSign className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+          <DollarSign className="h-5 w-5 text-success-foreground" aria-hidden="true" />
           <span className="font-bold text-lg">{plan.monthlyCostRange}</span>
         </div>
-        <p className="text-sm text-muted-foreground leading-relaxed">{plan.monthlyCostNote}</p>
+        <p className="text-base text-muted-foreground leading-relaxed">{plan.monthlyCostNote}</p>
       </div>
 
       {/* Covers */}
@@ -858,7 +858,7 @@ function PlanCard({ plan, isPrimary = false }: { plan: PlanRecommendation; isPri
         <ul className="space-y-2">
           {plan.covers.map((c, i) => (
             <li key={i} className="flex gap-2 text-base">
-              <CheckCircle2 className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+              <CheckCircle2 className="h-5 w-5 text-success-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
               <span>{c}</span>
             </li>
           ))}
@@ -869,43 +869,43 @@ function PlanCard({ plan, isPrimary = false }: { plan: PlanRecommendation; isPri
       <div className="grid md:grid-cols-2 gap-4 mb-5">
         <div className="p-4 rounded-xl border">
           <div className="flex items-center gap-2 mb-1">
-            <Pill className="h-5 w-5 text-sky-600" aria-hidden="true" />
+            <Pill className="h-5 w-5 text-info-foreground" aria-hidden="true" />
             <span className="font-semibold">Prescriptions</span>
           </div>
-          <p className="text-sm text-muted-foreground leading-relaxed">{plan.prescriptions}</p>
+          <p className="text-base text-muted-foreground leading-relaxed">{plan.prescriptions}</p>
         </div>
         <div className="p-4 rounded-xl border">
           <div className="flex items-center gap-2 mb-1">
-            <HeartPulse className="h-5 w-5 text-sky-600" aria-hidden="true" />
+            <HeartPulse className="h-5 w-5 text-info-foreground" aria-hidden="true" />
             <span className="font-semibold">Dental / Vision / Hearing</span>
           </div>
-          <p className="text-sm text-muted-foreground leading-relaxed">{plan.extras}</p>
+          <p className="text-base text-muted-foreground leading-relaxed">{plan.extras}</p>
         </div>
       </div>
 
       {/* Pros / Cons */}
       <div className="grid md:grid-cols-2 gap-4 mb-5">
         <div>
-          <h4 className="font-bold text-lg mb-2 flex items-center gap-2 text-emerald-700 dark:text-emerald-400">
+          <h4 className="font-bold text-lg mb-2 flex items-center gap-2 text-success-foreground ">
             <CheckCircle2 className="h-5 w-5" aria-hidden="true" /> Pros
           </h4>
           <ul className="space-y-2">
             {plan.pros.map((p, i) => (
               <li key={i} className="flex gap-2 text-base">
-                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-1" aria-hidden="true" />
+                <CheckCircle2 className="h-4 w-4 text-success-foreground flex-shrink-0 mt-1" aria-hidden="true" />
                 <span>{p}</span>
               </li>
             ))}
           </ul>
         </div>
         <div>
-          <h4 className="font-bold text-lg mb-2 flex items-center gap-2 text-rose-700 dark:text-rose-400">
+          <h4 className="font-bold text-lg mb-2 flex items-center gap-2 text-danger-foreground ">
             <XCircle className="h-5 w-5" aria-hidden="true" /> Cons
           </h4>
           <ul className="space-y-2">
             {plan.cons.map((c, i) => (
               <li key={i} className="flex gap-2 text-base">
-                <XCircle className="h-4 w-4 text-rose-600 flex-shrink-0 mt-1" aria-hidden="true" />
+                <XCircle className="h-4 w-4 text-danger-foreground flex-shrink-0 mt-1" aria-hidden="true" />
                 <span>{c}</span>
               </li>
             ))}
@@ -916,7 +916,7 @@ function PlanCard({ plan, isPrimary = false }: { plan: PlanRecommendation; isPri
       {/* Enrollment */}
       <div className="mb-5">
         <h4 className="font-bold text-lg mb-2 flex items-center gap-2">
-          <Calendar className="h-5 w-5 text-sky-600" aria-hidden="true" />
+          <Calendar className="h-5 w-5 text-info-foreground" aria-hidden="true" />
           When to enroll
         </h4>
         <div className="space-y-3">
@@ -931,7 +931,7 @@ function PlanCard({ plan, isPrimary = false }: { plan: PlanRecommendation; isPri
       </div>
 
       {/* Best for */}
-      <div className="mb-5 p-4 rounded-xl bg-sky-50/60 dark:bg-sky-950/20 border border-sky-200 dark:border-sky-900">
+      <div className="mb-5 p-4 rounded-xl bg-sky-50/60 dark:bg-sky-950/20 border border-info-foreground/25 ">
         <div className="font-semibold mb-1">Typically a good fit for:</div>
         <p className="text-base">{plan.bestFor}</p>
       </div>
@@ -953,7 +953,7 @@ function PlanCard({ plan, isPrimary = false }: { plan: PlanRecommendation; isPri
       </div>
 
       {/* Per-result disclaimer */}
-      <p className="mt-5 text-xs text-muted-foreground leading-relaxed border-t pt-3">
+      <p className="mt-5 text-sm text-muted-foreground leading-relaxed border-t pt-3">
         Educational content — not personalized insurance advice. Costs and coverage vary by location and change each year.
       </p>
     </Card>

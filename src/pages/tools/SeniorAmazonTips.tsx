@@ -20,9 +20,9 @@ export default function SeniorAmazonTips() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">EBT or Medicaid? Save half</h2><p>Prime Access is $6.99/month — same benefits.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Read reviews</h2><p>Filter to &ldquo;Verified Purchase&rdquo; only. Skim 1-star reviews for issues.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Returns</h2><p>30 days, free, no box needed. Drop at Whole Foods, Kohl&apos;s, or UPS.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common scams</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>&ldquo;Your account suspended&rdquo; emails</li><li>Fake order confirmations</li><li>Calls from &ldquo;Amazon Security&rdquo;</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common scams</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>&ldquo;Your account suspended&rdquo; emails</li><li>Fake order confirmations</li><li>Calls from &ldquo;Amazon Security&rdquo;</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Always check</h2><p>Open Amazon app yourself. Real notices appear in Account → Messages.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Subscribe &amp; Save knocks 5-15% off paper goods, batteries, vitamins.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Subscribe &amp; Save knocks 5-15% off paper goods, batteries, vitamins.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -20,9 +20,9 @@ export default function SeniorTextingTips() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Send a photo</h2><p>Tap camera icon in messages. Snap or pick from gallery. Send.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Group texts</h2><p>Add multiple recipients. Holiday wishes to whole family at once.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bigger text</h2><p>iPhone: Settings → Display → Text Size. Android: Settings → Display → Font size.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common scams to ignore</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>&ldquo;Wrong number&rdquo; chats that get friendly</li><li>USPS package fees</li><li>Bank fraud alerts with links</li><li>Grandchild needing bail money</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common scams to ignore</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>&ldquo;Wrong number&rdquo; chats that get friendly</li><li>USPS package fees</li><li>Bank fraud alerts with links</li><li>Grandchild needing bail money</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Block and report</h2><p>Long-press the conversation → Block. Or report as spam.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: A 1-letter reply (&ldquo;K&rdquo; for OK) is fine. Texting culture allows short responses.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: A 1-letter reply (&ldquo;K&rdquo; for OK) is fine. Texting culture allows short responses.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

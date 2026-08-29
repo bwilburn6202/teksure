@@ -17,12 +17,12 @@ export default function SeniorMeditationDementia() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Studies show</h2><p>12 minutes daily meditation linked to 50% reduction in cognitive decline.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apps for seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Calm ($70/year)</li><li>Headspace ($70/year)</li><li>Insight Timer (FREE)</li><li>Smiling Mind (FREE)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apps for seniors</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Calm ($70/year)</li><li>Headspace ($70/year)</li><li>Insight Timer (FREE)</li><li>Smiling Mind (FREE)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Kirtan Kriya</h2><p>FREE. 12-min specific meditation studied for dementia. YouTube tutorials.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Reduces stress</h2><p>Chronic stress accelerates dementia. Meditation protects.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Better sleep</h2><p>Sleep removes brain plaque. Meditation helps sleep.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Combine with exercise</h2><p>Walking + meditation + diet = strongest brain protection.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 12 minutes daily. Same time each day. Brain grows over months.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 12 minutes daily. Same time each day. Brain grows over months.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorSleepTracking() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SnoreLab</h2><p>Free. Records snoring overnight. Detects possible sleep apnea.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why track?</h2><p>Sleep apnea is undiagnosed in 80% of seniors. Tracking is the first step.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share with doctor</h2><p>Show 2 weeks of data. Loud snoring + tiredness = ask about a sleep study.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Same bedtime every night beats any app. Aim for 7-8 hours.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Same bedtime every night beats any app. Aim for 7-8 hours.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

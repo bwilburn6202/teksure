@@ -244,7 +244,7 @@ export default function EmergencyTech() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-foreground mb-1">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-2">
+                    <p className="text-base text-muted-foreground leading-relaxed mb-2">
                       {item.description}
                     </p>
                     {item.link && (
@@ -284,8 +284,8 @@ export default function EmergencyTech() {
                   <CardContent className="p-5">
                     <Badge variant="secondary" className="text-xs mb-2">{b.tier}</Badge>
                     <h3 className="font-semibold text-foreground mb-1">{b.product}</h3>
-                    <p className="text-sm font-medium text-primary mb-3">{b.price}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{b.notes}</p>
+                    <p className="text-base font-medium text-primary mb-3">{b.price}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{b.notes}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -298,7 +298,7 @@ export default function EmergencyTech() {
                     <Sun className="h-5 w-5 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-1">Solar chargers</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     Goal Zero Nomad 10 (~$80) or BigBlue 28W (~$70). Slow but works for days. Best as a top-up for a power station, not a primary phone charger.
                   </p>
                 </CardContent>
@@ -310,7 +310,7 @@ export default function EmergencyTech() {
                     <Car className="h-5 w-5 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-1">Car chargers</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     Keep one USB-C and one USB-A car charger in your glove box at all times. Your car becomes a power source as long as you can run the engine 15 min an hour.
                   </p>
                 </CardContent>
@@ -322,7 +322,7 @@ export default function EmergencyTech() {
                     <Radio className="h-5 w-5 text-primary" />
                   </div>
                   <h3 className="font-semibold text-foreground mb-1">Hand-crank radio + charger</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     Eton FRX3+ or Midland ER310 (~$50). NOAA weather alerts, AM/FM, USB phone charging, flashlight, and SOS siren. The single most useful disaster gadget.
                   </p>
                 </CardContent>
@@ -331,8 +331,8 @@ export default function EmergencyTech() {
 
             <Card className="rounded-2xl border border-amber-300/40 bg-amber-50/60 dark:bg-amber-950/20 dark:border-amber-900/50 mt-6">
               <CardContent className="p-5 flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-amber-700 dark:text-amber-300 shrink-0 mt-0.5" />
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <CheckCircle2 className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
+                <p className="text-base text-muted-foreground leading-relaxed">
                   <span className="font-semibold text-foreground">When storms are forecast: </span>
                   Charge every device to 80%+ the night before. Modern phones can ride out 3–4 days on Low Power Mode if you start full and don\'t stream video.
                 </p>
@@ -358,7 +358,7 @@ export default function EmergencyTech() {
               <Card key={a.name} className="rounded-2xl border border-border bg-card hover:border-primary/40 transition-colors">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{a.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">{a.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed mb-4">{a.description}</p>
                   <Button asChild variant="outline" size="sm" className="rounded-xl gap-2">
                     <a href={a.url} target="_blank" rel="noopener noreferrer">
                       Get the app
@@ -395,7 +395,7 @@ export default function EmergencyTech() {
                       <b.icon className="h-5 w-5 text-primary" />
                     </div>
                     <h3 className="font-semibold text-foreground mb-2">{b.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{b.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{b.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -423,7 +423,7 @@ export default function EmergencyTech() {
               <Card key={r.name} className="rounded-2xl border border-border bg-card hover:border-primary/40 transition-colors">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{r.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4">{r.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed mb-4">{r.description}</p>
                   <Button asChild variant="outline" size="sm" className="rounded-xl gap-2">
                     <a href={r.url} target="_blank" rel="noopener noreferrer">
                       Visit
@@ -456,7 +456,7 @@ export default function EmergencyTech() {
                     <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">{a.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{a.description}</p>
+                      <p className="text-base text-muted-foreground leading-relaxed">{a.description}</p>
                     </div>
                   </CardContent>
                 </Card>

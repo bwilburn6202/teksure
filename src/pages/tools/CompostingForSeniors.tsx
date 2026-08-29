@@ -19,7 +19,7 @@ export default function CompostingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bin picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tumbler bin</strong> ($100-200) — easy turn, no shoveling. Senior favorite.</li>
               <li><strong>Closed plastic bin</strong> ($50-100) — keeps animals out.</li>
               <li><strong>Open pile</strong> — free but slowest + animal access.</li>
@@ -33,7 +33,7 @@ export default function CompostingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to add (browns + greens)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>GREENS (nitrogen)</strong> — fruit/veggie scraps, coffee grounds, grass clippings, eggshells.</li>
               <li><strong>BROWNS (carbon)</strong> — dried leaves, cardboard, newspaper, pine needles.</li>
               <li>2-3 parts browns to 1 part greens.</li>
@@ -47,7 +47,7 @@ export default function CompostingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DON&apos;T add</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Meat, fish, dairy (rats, smell).</li>
               <li>Pet waste (parasites).</li>
               <li>Oils + greasy food.</li>
@@ -62,7 +62,7 @@ export default function CompostingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Troubleshooting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Smells bad</strong> — too wet or too many greens. Add browns.</li>
               <li><strong>Not breaking down</strong> — too dry or too cold. Add water + greens.</li>
               <li><strong>Pests/animals</strong> — closed bin or no meat/dairy.</li>
@@ -75,7 +75,7 @@ export default function CompostingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easier alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Curbside composting</strong> — many cities offer green bin pickup.</li>
               <li><strong>Community gardens</strong> — drop scraps off, take finished compost.</li>
               <li><strong>Mulch in place</strong> — bury veggie scraps directly in garden.</li>
@@ -88,7 +88,7 @@ export default function CompostingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free composting classes</h3>
-            <p className="text-sm text-muted-foreground">Most counties have FREE Master Gardener composting classes. Search &quot;[your county] master gardener compost.&quot; Free finished compost often given away spring/fall. Reduces trash 30%+. Garden grows better. Win-win-win.</p>
+            <p className="text-base text-muted-foreground">Most counties have FREE Master Gardener composting classes. Search &quot;[your county] master gardener compost.&quot; Free finished compost often given away spring/fall. Reduces trash 30%+. Garden grows better. Win-win-win.</p>
           </CardContent>
         </Card>
       </main>

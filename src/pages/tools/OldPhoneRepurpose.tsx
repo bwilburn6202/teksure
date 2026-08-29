@@ -19,7 +19,7 @@ export default function OldPhoneRepurpose() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Security camera</strong> — apps: AlfredCamera, Manything. Free, motion alerts.</li>
               <li><strong>Bedside alarm clock</strong> — keep on charger, full-screen clock app.</li>
               <li><strong>Music player</strong> — old phone connects to Bluetooth speaker, plays Spotify.</li>
@@ -36,7 +36,7 @@ export default function OldPhoneRepurpose() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before reusing</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Backup data first (iCloud / Google).</li>
               <li>Sign OUT of accounts.</li>
               <li>Factory reset to wipe data.</li>
@@ -49,7 +49,7 @@ export default function OldPhoneRepurpose() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trade-in vs sell vs reuse</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Trade-in (Apple, carrier)</strong> — convenient, fair value.</li>
               <li><strong>Sell on Swappa, Decluttr, Gazelle</strong> — usually 20-50% more than trade-in.</li>
               <li><strong>Donate</strong> — Cell Phones for Soldiers, women&apos;s shelters.</li>
@@ -62,7 +62,7 @@ export default function OldPhoneRepurpose() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth saving 1</h3>
-            <p className="text-sm text-muted-foreground">Always keep ONE old phone as backup. Phone dropped + dies + you NEED to make calls. SIM swap into old phone = back online in 5 min. Free insurance against tech disasters.</p>
+            <p className="text-base text-muted-foreground">Always keep ONE old phone as backup. Phone dropped + dies + you NEED to make calls. SIM swap into old phone = back online in 5 min. Free insurance against tech disasters.</p>
           </CardContent>
         </Card>
       </main>

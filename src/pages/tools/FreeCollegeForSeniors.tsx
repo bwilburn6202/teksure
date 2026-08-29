@@ -19,7 +19,7 @@ export default function FreeCollegeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">States with senior tuition waivers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>FREE for 60+</strong> — Florida, Kentucky, Texas (audit), more.</li>
               <li><strong>FREE for 65+</strong> — California, Georgia, Maryland, Tennessee, Virginia, more.</li>
               <li><strong>Reduced tuition</strong> — most other states.</li>
@@ -34,7 +34,7 @@ export default function FreeCollegeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to enroll</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Contact registrar at local public university.</li>
               <li>Ask about senior tuition waiver / Senior Citizen Free.</li>
               <li>Bring driver&apos;s license proof of age + state residency.</li>
@@ -49,7 +49,7 @@ export default function FreeCollegeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to take</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>History courses — fascinating with life experience.</li>
               <li>Literature you missed in HS.</li>
               <li>Art history.</li>
@@ -65,7 +65,7 @@ export default function FreeCollegeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">OLLI — Lifelong Learning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>125+ Osher Lifelong Learning Institutes.</li>
               <li>$50-300/year UNLIMITED classes.</li>
               <li>Designed for seniors — no homework.</li>
@@ -80,7 +80,7 @@ export default function FreeCollegeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online free college</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Coursera</strong> — audit ANY course free.</li>
               <li><strong>edX</strong> — Harvard/MIT/Yale free.</li>
               <li><strong>Khan Academy</strong> — completely free.</li>
@@ -95,7 +95,7 @@ export default function FreeCollegeForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Real college campus</h3>
-            <p className="text-sm text-muted-foreground">Going to actual campus = social + intellectual + reduces ageism. Sit in lectures with 20-year-olds. Many seniors say best part of retirement. Most professors welcome senior students. Don&apos;t need degree — just learning. Free is unbeatable. Find your state&apos;s tuition waiver TODAY.</p>
+            <p className="text-base text-muted-foreground">Going to actual campus = social + intellectual + reduces ageism. Sit in lectures with 20-year-olds. Many seniors say best part of retirement. Most professors welcome senior students. Don&apos;t need degree — just learning. Free is unbeatable. Find your state&apos;s tuition waiver TODAY.</p>
           </CardContent>
         </Card>
       </main>

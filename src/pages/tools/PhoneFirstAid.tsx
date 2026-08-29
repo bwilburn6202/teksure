@@ -1149,7 +1149,7 @@ export default function PhoneFirstAid() {
             <Button variant="ghost" size="sm" onClick={reset} className="gap-2">
               <Home className="h-4 w-4" aria-hidden="true" /> Start over
             </Button>
-            <span className="text-sm text-muted-foreground ml-auto">
+            <span className="text-base text-muted-foreground ml-auto">
               Step {crumbCount}
             </span>
           </div>
@@ -1201,11 +1201,11 @@ export default function PhoneFirstAid() {
           <div>
             {/* Urgent banner — for water, lost/stolen, anything time-critical */}
             {current.urgent && (
-              <div className="mb-4 rounded-xl border-2 border-red-400 bg-red-50 dark:bg-red-950/40 dark:border-red-700 p-4">
+              <div className="mb-4 rounded-xl border-2 border-red-400 bg-danger dark:border-red-700 p-4">
                 <div className="flex gap-3 items-start">
-                  <AlertTriangle className="h-6 w-6 text-red-700 dark:text-red-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <AlertTriangle className="h-6 w-6 text-danger-foreground shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-bold text-red-900 dark:text-red-200 mb-1 uppercase tracking-wide">
+                    <p className="text-sm font-bold text-danger-foreground mb-1 uppercase tracking-wide">
                       Act now
                     </p>
                     <p className="text-base text-red-900/95 dark:text-red-100/95 leading-relaxed">
@@ -1233,7 +1233,7 @@ export default function PhoneFirstAid() {
               <CardContent className="p-4 flex gap-3">
                 <Lightbulb className="h-5 w-5 text-primary shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
-                  <p className="text-sm font-semibold text-primary mb-1">Why this works</p>
+                  <p className="text-base font-semibold text-primary mb-1">Why this works</p>
                   <p className="text-base leading-relaxed">{current.why}</p>
                 </div>
               </CardContent>
@@ -1261,11 +1261,11 @@ export default function PhoneFirstAid() {
 
             {/* If this doesn't work */}
             {current.ifFails && (
-              <Card className="mb-5 bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-800">
+              <Card className="mb-5 bg-warn border-warn-foreground/25 ">
                 <CardContent className="p-4 flex gap-3">
-                  <RotateCcw className="h-5 w-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <RotateCcw className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-semibold text-amber-900 dark:text-amber-300 mb-1">
+                    <p className="text-base font-semibold text-warn-foreground mb-1">
                       If this didn't work
                     </p>
                     <p className="text-base text-amber-900/95 dark:text-amber-100/95 leading-relaxed">
@@ -1278,11 +1278,11 @@ export default function PhoneFirstAid() {
 
             {/* Pro help */}
             {current.proHelp && (
-              <Card className="mb-5 bg-orange-50 dark:bg-orange-950/30 border-orange-200 dark:border-orange-800">
+              <Card className="mb-5 bg-warn border-warn-foreground/25 ">
                 <CardContent className="p-4 flex gap-3">
-                  <Wrench className="h-5 w-5 text-orange-700 dark:text-orange-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <Wrench className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="text-sm font-semibold text-orange-900 dark:text-orange-300 mb-1">
+                    <p className="text-base font-semibold text-warn-foreground mb-1">
                       When to call a professional
                     </p>
                     <p className="text-base text-orange-900/95 dark:text-orange-100/95 leading-relaxed">
@@ -1300,7 +1300,7 @@ export default function PhoneFirstAid() {
                   <Link to={current.guide.to}>
                     <BookOpen className="h-5 w-5 shrink-0" aria-hidden="true" />
                     <span className="flex-1">
-                      <span className="block text-xs text-muted-foreground">Related guide</span>
+                      <span className="block text-sm text-muted-foreground">Related guide</span>
                       <span className="block font-semibold">{current.guide.label}</span>
                     </span>
                     <ExternalLink className="h-4 w-4 shrink-0 opacity-60" aria-hidden="true" />
@@ -1311,7 +1311,7 @@ export default function PhoneFirstAid() {
                 <Link to="/tekbrain">
                   <MessageCircle className="h-5 w-5 shrink-0" aria-hidden="true" />
                   <span className="flex-1">
-                    <span className="block text-xs opacity-80">Still stuck?</span>
+                    <span className="block text-sm opacity-80">Still stuck?</span>
                     <span className="block font-semibold">Ask TekBrain</span>
                   </span>
                   <ChevronRight className="h-4 w-4 shrink-0" aria-hidden="true" />
@@ -1320,11 +1320,11 @@ export default function PhoneFirstAid() {
             </div>
 
             {/* Reassurance & actions */}
-            <Card className="mb-4 bg-green-50 dark:bg-green-950/30 border-green-200 dark:border-green-800">
+            <Card className="mb-4 bg-success border-success-foreground/25 ">
               <CardContent className="p-4 flex gap-3">
-                <CheckCircle2 className="h-5 w-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
-                  <p className="text-sm font-semibold text-green-900 dark:text-green-300 mb-1">
+                  <p className="text-base font-semibold text-success-foreground mb-1">
                     You're doing great.
                   </p>
                   <p className="text-base text-green-900/95 dark:text-green-100/95 leading-relaxed">

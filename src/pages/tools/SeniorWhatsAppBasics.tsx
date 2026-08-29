@@ -22,7 +22,7 @@ export default function SeniorWhatsAppBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice and video calls</h2><p>Free worldwide. Tap phone or camera icon at top of any chat.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice messages</h2><p>Hold microphone icon. Speak. Release to send. Easier than typing.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family group chat</h2><p>Make one group with all family. Share photos in one place.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Block unknown numbers — tap their name → Block contact.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Block unknown numbers — tap their name → Block contact.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

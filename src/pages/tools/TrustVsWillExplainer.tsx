@@ -19,7 +19,7 @@ export default function TrustVsWillExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Will (simple, $200-500)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Says who gets your stuff when you die.</li>
               <li>Goes through PROBATE (public court process).</li>
               <li>Probate takes 6-18 months and costs 3-7% of estate.</li>
@@ -32,7 +32,7 @@ export default function TrustVsWillExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Revocable Living Trust ($1,500-5,000)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>You move your assets INTO the trust while alive.</li>
               <li>You\'re still in control as "trustee".</li>
               <li>Skips probate when you die — assets transfer privately to heirs in days, not months.</li>
@@ -45,7 +45,7 @@ export default function TrustVsWillExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you NEED a trust (not just want)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Real estate in multiple states (avoids multi-state probate).</li>
               <li>Estate over your state\'s estate tax limit.</li>
               <li>Special needs heir (special needs trust protects benefits).</li>
@@ -59,34 +59,34 @@ export default function TrustVsWillExplainer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When a will is enough</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Single state. Estate under your state\'s probate limit.</li>
               <li>Simple family — straightforward heirs.</li>
               <li>Most assets pass via beneficiary anyway (retirement accounts, life insurance, payable-on-death bank accounts).</li>
             </ul>
-            <p className="text-sm mt-2">Many states have "small estate" or "summary probate" for under $50-150k — fast, cheap, no lawyer.</p>
+            <p className="text-base mt-2">Many states have "small estate" or "summary probate" for under $50-150k — fast, cheap, no lawyer.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Beneficiaries beat wills</h2>
-            <p className="text-sm">For 401(k), IRA, life insurance, and bank accounts with "payable on death" — the BENEFICIARY designation overrides your will. Update beneficiaries directly with each company. Free.</p>
-            <p className="text-sm mt-2">Many seniors have outdated beneficiaries (ex-spouse, deceased relatives). Take 30 minutes to update. More important than re-doing the will.</p>
+            <p className="text-base">For 401(k), IRA, life insurance, and bank accounts with "payable on death" — the BENEFICIARY designation overrides your will. Update beneficiaries directly with each company. Free.</p>
+            <p className="text-base mt-2">Many seniors have outdated beneficiaries (ex-spouse, deceased relatives). Take 30 minutes to update. More important than re-doing the will.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hybrid — pour-over will + trust</h2>
-            <p className="text-sm">If you set up a trust, you also have a "pour-over will" that catches anything not formally moved into the trust. Common combo. Your attorney handles both.</p>
+            <p className="text-base">If you set up a trust, you also have a "pour-over will" that catches anything not formally moved into the trust. Common combo. Your attorney handles both.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get one or the other</h3>
-            <p className="text-sm text-muted-foreground">Without a will OR trust, the state decides who gets your stuff. Probate court fees + delays cost your family thousands. The cheapest will (LegalZoom $200) beats nothing. The right plan beats the cheapest. Talk to a fee-only attorney once. Done.</p>
+            <p className="text-base text-muted-foreground">Without a will OR trust, the state decides who gets your stuff. Probate court fees + delays cost your family thousands. The cheapest will (LegalZoom $200) beats nothing. The right plan beats the cheapest. Talk to a fee-only attorney once. Done.</p>
           </CardContent>
         </Card>
       </main>

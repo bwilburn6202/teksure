@@ -22,7 +22,7 @@ export default function SeniorSleepTrackerComparison() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Eight Sleep Pod</h2><p>$2,500+. Mattress topper. Cools/warms. Tracks everything.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Phone-only apps</h2><p>FREE. Sleep Cycle, AutoSleep. Less accurate but no extra device.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out for sleep apnea</h2><p>If snoring + tired all day: ask doctor about sleep study.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Withings Mat is best for seniors who don&apos;t want to wear devices.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Withings Mat is best for seniors who don&apos;t want to wear devices.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

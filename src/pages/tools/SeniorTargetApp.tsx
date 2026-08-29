@@ -22,7 +22,7 @@ export default function SeniorTargetApp() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Same-day delivery</h2><p>Shipt delivery for $9.99/order. Fresh groceries to door.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cartwheel coupons</h2><p>Built into app. Auto-applies at checkout.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Wallet pay</h2><p>Pay with phone via Wallet feature. RedCard built in.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Stack Circle offer + RedCard 5% + manufacturer coupon. Triple savings.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Stack Circle offer + RedCard 5% + manufacturer coupon. Triple savings.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

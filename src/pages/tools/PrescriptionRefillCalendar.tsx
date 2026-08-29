@@ -76,7 +76,7 @@ export default function PrescriptionRefillCalendar() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Prescription Refill Calendar | TekSure"
         description="Never run out of medication again. Track when each prescription was last filled and see exactly when each one is due for refill."
@@ -85,27 +85,27 @@ export default function PrescriptionRefillCalendar() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Pill className="h-7 w-7 text-emerald-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Prescription Refill Calendar</h1>
+            <Pill className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Prescription Refill Calendar</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Add each prescription with the date you last filled it. The tool will tell you exactly when to call for a refill.
           </p>
         </div>
 
         {/* Alerts */}
         {(overdue.length > 0 || dueSoon.length > 0) && (
-          <Card className="mb-4 bg-amber-50 border-amber-200 print:hidden">
+          <Card className="mb-4 bg-warn border-warn-foreground/25 print:hidden">
             <CardContent className="py-3 px-4 flex items-start gap-2">
-              <AlertTriangle className="h-5 w-5 text-amber-600 mt-0.5 shrink-0" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground mt-0.5 shrink-0" />
               <div>
                 {overdue.length > 0 && (
-                  <p className="font-semibold text-red-700 text-sm">
+                  <p className="font-semibold text-danger-foreground text-base">
                     {overdue.length} prescription{overdue.length !== 1 ? "s" : ""} overdue — call your pharmacy today
                   </p>
                 )}
                 {dueSoon.length > 0 && (
-                  <p className="font-semibold text-amber-800 text-sm">
+                  <p className="font-semibold text-warn-foreground text-base">
                     {dueSoon.length} due within 7 days
                   </p>
                 )}
@@ -118,7 +118,7 @@ export default function PrescriptionRefillCalendar() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-emerald-600" />
+              <PlusCircle className="h-5 w-5 text-success-foreground" />
               Add a Prescription
             </CardTitle>
           </CardHeader>
@@ -130,7 +130,7 @@ export default function PrescriptionRefillCalendar() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div>
                 <Label htmlFor="pharmacy" className="text-base font-medium">Pharmacy</Label>
-                <select id="pharmacy" value={form.pharmacy} onChange={e => setForm(f => ({ ...f, pharmacy: e.target.value }))} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+                <select id="pharmacy" value={form.pharmacy} onChange={e => setForm(f => ({ ...f, pharmacy: e.target.value }))} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card">
                   {PHARMACIES.map(p => <option key={p}>{p}</option>)}
                 </select>
               </div>
@@ -147,7 +147,7 @@ export default function PrescriptionRefillCalendar() {
               <Label htmlFor="rx-notes" className="text-base font-medium">Notes (optional)</Label>
               <Input id="rx-notes" placeholder="e.g. Take with food, blue pill" value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base">Add Prescription</Button>
           </CardContent>
         </Card>
@@ -155,8 +155,8 @@ export default function PrescriptionRefillCalendar() {
         {/* Print summary */}
         {prescriptions.length > 0 && (
           <div className="mb-3 flex flex-wrap items-center justify-between gap-3 print:hidden">
-            <p className="text-sm text-gray-500">
-              <span className="font-semibold text-gray-800">{prescriptions.length}</span> prescription{prescriptions.length !== 1 ? "s" : ""} tracked
+            <p className="text-base text-muted-foreground">
+              <span className="font-semibold text-foreground">{prescriptions.length}</span> prescription{prescriptions.length !== 1 ? "s" : ""} tracked
             </p>
             <Button variant="outline" onClick={() => window.print()} className="gap-2">
               <Printer className="h-4 w-4" />
@@ -168,10 +168,10 @@ export default function PrescriptionRefillCalendar() {
         {/* List */}
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Pill className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Pill className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No prescriptions tracked yet.</p>
-              <p className="text-sm mt-1">Add a medication above to start tracking refill dates.</p>
+              <p className="text-base mt-1">Add a medication above to start tracking refill dates.</p>
             </CardContent>
           </Card>
         ) : (
@@ -183,24 +183,24 @@ export default function PrescriptionRefillCalendar() {
                   <CardContent className="py-3 px-4">
                     <div className="flex items-start justify-between gap-2">
                       <div className="flex-1 min-w-0">
-                        <p className="font-semibold text-gray-900 text-base">{p.name}</p>
+                        <p className="font-semibold text-foreground text-base">{p.name}</p>
                         <div className="flex flex-wrap gap-2 mt-1 items-center">
                           <Badge variant="secondary" className={`text-xs border ${s.color}`}>
                             {s.label}
                           </Badge>
-                          <span className="text-xs text-gray-500">Refill by {formatDate(refillDate(p))}</span>
+                          <span className="text-sm text-muted-foreground">Refill by {formatDate(refillDate(p))}</span>
                         </div>
-                        <p className="text-xs text-gray-500 mt-1">
+                        <p className="text-sm text-muted-foreground mt-1">
                           {p.pharmacy} · {p.daysSupply}-day supply · last filled {formatDate(new Date(p.lastFilled))}
                         </p>
-                        {p.notes && <p className="text-xs text-gray-500 italic mt-0.5">{p.notes}</p>}
+                        {p.notes && <p className="text-sm text-muted-foreground italic mt-0.5">{p.notes}</p>}
                       </div>
                       <div className="flex flex-col gap-1 shrink-0 print:hidden">
                         <Button size="sm" variant="outline" onClick={() => markRefilled(p.id)} className="text-xs gap-1 h-7">
                           <CheckCircle2 className="h-3 w-3" />
                           Refilled
                         </Button>
-                        <Button size="icon" variant="ghost" onClick={() => remove(p.id)} className="h-7 w-7 text-red-400 hover:text-red-600">
+                        <Button size="icon" variant="ghost" onClick={() => remove(p.id)} className="h-7 w-7 text-danger-foreground hover:text-danger-foreground">
                           <Trash2 className="h-3 w-3" />
                         </Button>
                       </div>
@@ -212,15 +212,15 @@ export default function PrescriptionRefillCalendar() {
           </div>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Most pharmacies allow refills 5-7 days before the prescription runs out. Call sooner if you are heading on a trip or know the pharmacy may be busy.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

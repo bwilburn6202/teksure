@@ -22,7 +22,7 @@ export default function SeniorInsulinPumps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare covers</h2><p>Pumps + supplies covered with prescription. Most diabetics qualify.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lower A1C</h2><p>Studies show pumps lower A1C 0.5-1.0% vs shots. Big improvement.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Training included</h2><p>Mfr training. Doctor support. Many seniors love after 1 month.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Omnipod is most senior-friendly. No tubing to manage.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Omnipod is most senior-friendly. No tubing to manage.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

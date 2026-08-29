@@ -22,7 +22,7 @@ export default function SeniorVisible() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">App-only</h2><p>No stores. Sign up online. Senior tip: family helps with setup.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">eSIM</h2><p>iPhone XS+ supports eSIM. Switch in 10 minutes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free trial</h2><p>15 days. Test before keeping Verizon.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Visible saves $50/month vs Verizon. $600/year for same network.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Visible saves $50/month vs Verizon. $600/year for same network.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

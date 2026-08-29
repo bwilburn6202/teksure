@@ -60,20 +60,20 @@ export default function KitchenAdaptationGuide() {
   const [need, setNeed] = useState<Need>("Arthritis hands");
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Kitchen Adaptation Guide for Seniors | TekSure" description="Specific product recommendations for adapting your kitchen to arthritis, low vision, weakness, tremor, or one-handed use. Real brands with approximate prices." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <ChefHat className="h-7 w-7 text-orange-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Kitchen Adaptation Guide</h1>
+            <ChefHat className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Kitchen Adaptation Guide</h1>
           </div>
-          <p className="text-gray-600 text-lg">Specific tools and gadgets to keep cooking in your kitchen — even with arthritis, low vision, tremor, weakness, or after a stroke.</p>
+          <p className="text-muted-foreground text-lg">Specific tools and gadgets to keep cooking in your kitchen — even with arthritis, low vision, tremor, weakness, or after a stroke.</p>
         </div>
 
         <Card className="mb-4 print:hidden">
           <CardContent className="py-4 px-4">
-            <p className="text-sm font-semibold text-gray-700 mb-2">Pick your challenge</p>
+            <p className="text-base font-semibold text-foreground mb-2">Pick your challenge</p>
             <div className="flex flex-wrap gap-2">
               {(Object.keys(RECOMMENDATIONS) as Need[]).map(n => (
                 <Button key={n} size="sm" variant={need === n ? "default" : "outline"} onClick={() => setNeed(n)}>
@@ -86,28 +86,28 @@ export default function KitchenAdaptationGuide() {
 
         <Card className="mb-4">
           <CardContent className="py-4 px-4">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">{need}</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-3">{need}</h2>
             <div className="space-y-3">
               {RECOMMENDATIONS[need].map((r, i) => (
-                <div key={i} className="border border-gray-200 rounded-lg p-3 bg-white">
-                  <p className="font-semibold text-gray-900">{r.product}</p>
-                  <p className="text-sm text-gray-600 italic">{r.why}</p>
-                  <p className="text-sm text-gray-800 mt-1"><span className="font-semibold">Cost:</span> {r.approxCost} &nbsp; <span className="font-semibold">Where:</span> {r.whereToBuy}</p>
+                <div key={i} className="border border-border rounded-lg p-3 bg-card">
+                  <p className="font-semibold text-foreground">{r.product}</p>
+                  <p className="text-base text-muted-foreground italic">{r.why}</p>
+                  <p className="text-base text-foreground mt-1"><span className="font-semibold">Cost:</span> {r.approxCost} &nbsp; <span className="font-semibold">Where:</span> {r.whereToBuy}</p>
                 </div>
               ))}
             </div>
           </CardContent>
         </Card>
 
-        <Card className="bg-blue-50 border-blue-200 mb-4">
+        <Card className="bg-info border-info-foreground/25 mb-4">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Insurance and tax tips:</span> Adaptive equipment may be reimbursable through Medicare Advantage OTC allowance, a Health FSA, or an HSA. A doctor letter of medical necessity helps. Some county Area Agencies on Aging give grant funds for safety equipment.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Insurance and tax tips:</span> Adaptive equipment may be reimbursable through Medicare Advantage OTC allowance, a Health FSA, or an HSA. A doctor letter of medical necessity helps. Some county Area Agencies on Aging give grant funds for safety equipment.</p>
           </CardContent>
         </Card>
 
-        <Card className="bg-emerald-50 border-emerald-200 mb-4">
+        <Card className="bg-success border-success-foreground/25 mb-4">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-emerald-900"><span className="font-semibold">Free trial first:</span> Your local Independent Living Center (find one at ilru.org) often has a lending library where you can borrow adaptive equipment for two weeks before buying. Worth a call.</p>
+            <p className="text-base text-success-foreground"><span className="font-semibold">Free trial first:</span> Your local Independent Living Center (find one at ilru.org) often has a lending library where you can borrow adaptive equipment for two weeks before buying. Worth a call.</p>
           </CardContent>
         </Card>
 
@@ -117,6 +117,6 @@ export default function KitchenAdaptationGuide() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

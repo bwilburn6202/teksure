@@ -19,10 +19,10 @@ export default function SeniorSwimmingApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SilverSneakers Splash</h2><p>FREE with Medicare Advantage. Water aerobics class.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Find a pool</h2><p>SwimUSA app. YMCA membership $40-$80/month.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Watch swim</h2><p>Tracks laps and calories. Auto-detects swim strokes.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Zero joint impact</li><li>Strengthens heart</li><li>Supports body</li><li>Builds muscle</li><li>Low fall risk</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Zero joint impact</li><li>Strengthens heart</li><li>Supports body</li><li>Builds muscle</li><li>Low fall risk</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Aqua aerobics</h2><p>Easier than lap swimming. Most senior centers offer classes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">3x weekly</h2><p>30 minutes 3x weekly = strong heart, joint pain reduction, better mood.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Lap swim with kickboard if can&apos;t do full strokes. Cardio without arms.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Lap swim with kickboard if can&apos;t do full strokes. Cardio without arms.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

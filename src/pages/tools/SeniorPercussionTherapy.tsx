@@ -22,7 +22,7 @@ export default function SeniorPercussionTherapy() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Heated wand</h2><p>Some include heat. Combo benefit. $80-$120.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Foam roller alternative</h2><p>$15-$30 foam roller. Lay on it. Cheaper, often equally effective.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Don&apos;t overdo</h2><p>5-10 minutes max per area. Bruising possible if too long.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Use after walks. Prevents next-day soreness.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Use after walks. Prevents next-day soreness.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

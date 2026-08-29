@@ -19,7 +19,7 @@ export default function SpotifyForSeniorListeners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spotify Free</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free with ads.</li>
               <li>100 million songs.</li>
               <li>Most podcasts free.</li>
@@ -33,7 +33,7 @@ export default function SpotifyForSeniorListeners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spotify Premium</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$11.99/month — no ads, full control.</li>
               <li>Download for offline.</li>
               <li>Pick any song to play.</li>
@@ -47,7 +47,7 @@ export default function SpotifyForSeniorListeners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly playlists</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Decade playlists — 50s, 60s, 70s, 80s.</li>
               <li>&quot;All Out 60s&quot; etc.</li>
               <li>Genre playlists — classic rock, jazz, country.</li>
@@ -61,7 +61,7 @@ export default function SpotifyForSeniorListeners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Make playlists</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap &quot;Your Library&quot; → Create Playlist.</li>
               <li>Add songs you find via search.</li>
               <li>Wedding songs, anniversary mix, road trip.</li>
@@ -75,7 +75,7 @@ export default function SpotifyForSeniorListeners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Music vs Spotify</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Music — better integration if you have iPhone.</li>
               <li>Spotify — better playlists + discovery.</li>
               <li>Same price ($11/mo).</li>
@@ -89,7 +89,7 @@ export default function SpotifyForSeniorListeners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cast to TV/speaker</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cast to Bluetooth speaker.</li>
               <li>Sonos integration.</li>
               <li>Apple TV / Roku display.</li>
@@ -103,7 +103,7 @@ export default function SpotifyForSeniorListeners() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Decade playlists are the gateway</h3>
-            <p className="text-sm text-muted-foreground">If new to Spotify, search &quot;60s music&quot; (or your favorite decade). Tap &quot;All Out 60s&quot; playlist. 100 hits from your youth play. Many seniors discover music they forgot they loved. Try Free version first — see if you can tolerate ads. Premium worth $12/month if you listen daily.</p>
+            <p className="text-base text-muted-foreground">If new to Spotify, search &quot;60s music&quot; (or your favorite decade). Tap &quot;All Out 60s&quot; playlist. 100 hits from your youth play. Many seniors discover music they forgot they loved. Try Free version first — see if you can tolerate ads. Premium worth $12/month if you listen daily.</p>
           </CardContent>
         </Card>
       </main>

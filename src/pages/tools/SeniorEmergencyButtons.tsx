@@ -22,7 +22,7 @@ export default function SeniorEmergencyButtons() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Set up routine</h2><p>Press button → Alexa calls family + sounds alarm.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Place by bed</h2><p>Most fall happens at night. Easy reach from bed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Big buttons</h2><p>Bigger button + clear label. Senior arthritis friendly.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: $10 button + Echo = $30/month medical alert savings.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: $10 button + Echo = $30/month medical alert savings.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

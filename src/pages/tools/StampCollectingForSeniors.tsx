@@ -19,7 +19,7 @@ export default function StampCollectingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior-friendly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Quiet, indoor activity.</li>
               <li>Cheap to start.</li>
               <li>Connects to history.</li>
@@ -34,7 +34,7 @@ export default function StampCollectingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Starter kit ($40)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stamp album with hingless mounts ($25).</li>
               <li>Stamp tongs (don&apos;t use fingers — oils damage).</li>
               <li>Magnifying glass.</li>
@@ -48,7 +48,7 @@ export default function StampCollectingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to get stamps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Save from incoming mail.</li>
               <li>USPS Stamp Fulfillment Services — current designs.</li>
               <li><strong>Mystic Stamp</strong> — mystic.com. Senior-favorite supplier.</li>
@@ -63,7 +63,7 @@ export default function StampCollectingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Topical collecting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick a theme — narrows infinite hobby.</li>
               <li>Birds, presidents, sports, flowers, holidays.</li>
               <li>One country (US, Britain, Canada).</li>
@@ -76,7 +76,7 @@ export default function StampCollectingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stamp clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>American Philatelic Society</strong> — stamps.org. National.</li>
               <li>Local clubs in most cities.</li>
               <li>Monthly meetings — trade + learn.</li>
@@ -90,7 +90,7 @@ export default function StampCollectingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Inherited a collection?</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t toss. Don&apos;t damage. <strong>American Philatelic Society</strong> appraisal services — small fee. <strong>Heritage Auctions</strong>, <strong>Robert Siegel</strong> — major auctioneers if valuable. Most collections worth less than people think (millions of stamps printed) but historically/sentimentally valuable. Some really worth fortunes — get appraised.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t toss. Don&apos;t damage. <strong>American Philatelic Society</strong> appraisal services — small fee. <strong>Heritage Auctions</strong>, <strong>Robert Siegel</strong> — major auctioneers if valuable. Most collections worth less than people think (millions of stamps printed) but historically/sentimentally valuable. Some really worth fortunes — get appraised.</p>
           </CardContent>
         </Card>
       </main>

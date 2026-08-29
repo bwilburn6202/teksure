@@ -19,7 +19,7 @@ export default function EmailAttachmentBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Send an attachment (iPhone/Apple Mail)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Mail → New email.</li>
               <li>Tap inside body → tap arrow above keyboard.</li>
               <li>Tap paperclip icon.</li>
@@ -33,7 +33,7 @@ export default function EmailAttachmentBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Send an attachment (Gmail)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Gmail → Compose new email.</li>
               <li>Tap paperclip icon at top.</li>
               <li>Pick file from photos / drive / Files.</li>
@@ -46,7 +46,7 @@ export default function EmailAttachmentBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Big files (over 25MB)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iCloud Mail Drop</strong> — auto-handles up to 5GB.</li>
               <li><strong>Google Drive link</strong> — share via link.</li>
               <li><strong>WeTransfer.com</strong> — free, no account, up to 2GB.</li>
@@ -56,10 +56,10 @@ export default function EmailAttachmentBasics() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Receive carefully</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NEVER open attachments from strangers — virus risk.</li>
               <li>NEVER open .zip, .exe, .rar from unknown senders.</li>
               <li>If "from a friend" but unexpected — call them to confirm.</li>
@@ -72,7 +72,7 @@ export default function EmailAttachmentBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common file types</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>.pdf</strong> — documents, safe.</li>
               <li><strong>.jpg / .png / .heic</strong> — photos.</li>
               <li><strong>.docx</strong> — Word document. Open with Word, Google Docs.</li>
@@ -87,7 +87,7 @@ export default function EmailAttachmentBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Drag-and-drop on computer</h3>
-            <p className="text-sm text-muted-foreground">On computer, easier to drag a file directly into email window. Or use "Send to" right-click menu. Faster than navigating menus.</p>
+            <p className="text-base text-muted-foreground">On computer, easier to drag a file directly into email window. Or use "Send to" right-click menu. Faster than navigating menus.</p>
           </CardContent>
         </Card>
       </main>

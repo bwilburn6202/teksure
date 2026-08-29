@@ -648,7 +648,7 @@ export default function FreeLearningHub() {
               url="/tools/free-learning-hub"
             />
           </div>
-          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-violet-200 via-violet-100 to-fuchsia-100 text-violet-700 dark:from-violet-900/60 dark:via-violet-950/40 dark:to-fuchsia-950/40 dark:text-violet-300 mb-5 shadow-sm">
+          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-violet-200 via-violet-100 to-fuchsia-100 text-primary dark:from-violet-900/60 dark:via-violet-950/40 dark:to-fuchsia-950/40 mb-5 shadow-sm">
             <GraduationCap className="h-12 w-12" aria-hidden="true" />
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 bg-gradient-to-br from-violet-700 via-violet-600 to-fuchsia-600 bg-clip-text text-transparent dark:from-violet-300 dark:via-violet-400 dark:to-fuchsia-400">
@@ -666,7 +666,7 @@ export default function FreeLearningHub() {
         {!selected && (
           <div>
             <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-              <Sparkles className="h-6 w-6 text-violet-600 dark:text-violet-400" aria-hidden="true" />
+              <Sparkles className="h-6 w-6 text-primary " aria-hidden="true" />
               What do you want to learn?
             </h2>
             <div className="grid gap-3 sm:grid-cols-2">
@@ -684,10 +684,10 @@ export default function FreeLearningHub() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <h3 className="text-lg font-bold mb-1 flex items-center gap-2">
-                          <Icon className="h-5 w-5 text-violet-600 dark:text-violet-400 shrink-0" aria-hidden="true" />
+                          <Icon className="h-5 w-5 text-primary shrink-0" aria-hidden="true" />
                           {cat.title}
                         </h3>
-                        <p className="text-sm text-muted-foreground leading-snug">
+                        <p className="text-base text-muted-foreground leading-snug">
                           {cat.tagline}
                         </p>
                       </div>
@@ -698,19 +698,19 @@ export default function FreeLearningHub() {
             </div>
 
             {/* ── Senior learning tips ── */}
-            <Card className="mt-8 border-2 border-violet-300 bg-violet-50 dark:bg-violet-950/30 dark:border-violet-800">
+            <Card className="mt-8 border-2 border-primary/25 bg-primary/10 ">
               <CardContent className="p-5 sm:p-6">
-                <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-violet-900 dark:text-violet-200">
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-primary ">
                   <Lightbulb className="h-6 w-6" aria-hidden="true" />
                   Tips for learning well at any age
                 </h3>
-                <ul className="space-y-3 text-base text-violet-900 dark:text-violet-100">
+                <ul className="space-y-3 text-base text-primary ">
                   <li className="flex items-start gap-3">
-                    <Clock className="h-5 w-5 text-violet-700 dark:text-violet-300 shrink-0 mt-1" aria-hidden="true" />
+                    <Clock className="h-5 w-5 text-primary shrink-0 mt-1" aria-hidden="true" />
                     <span><strong>Take a break every 25 minutes.</strong> A quick walk or stretch helps your brain hold on to what you learned.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Sparkles className="h-5 w-5 text-violet-700 dark:text-violet-300 shrink-0 mt-1" aria-hidden="true" />
+                    <Sparkles className="h-5 w-5 text-primary shrink-0 mt-1" aria-hidden="true" />
                     <span>
                       <strong>Make the text bigger.</strong> If reading on a screen is a strain, our{' '}
                       <Link to="/tools/low-vision-tech-hub" className="font-semibold underline">Low Vision Tech Hub</Link>
@@ -718,19 +718,19 @@ export default function FreeLearningHub() {
                     </span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-violet-700 dark:text-violet-300 shrink-0 mt-1" aria-hidden="true" />
+                    <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-1" aria-hidden="true" />
                     <span><strong>Turn on captions for everything.</strong> Even if your hearing is fine, captions help you catch names and technical words.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Users className="h-5 w-5 text-violet-700 dark:text-violet-300 shrink-0 mt-1" aria-hidden="true" />
+                    <Users className="h-5 w-5 text-primary shrink-0 mt-1" aria-hidden="true" />
                     <span><strong>Learn with someone.</strong> A friend, a neighbor, or a grandchild. Shared learning sticks better — and it is more fun.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Award className="h-5 w-5 text-violet-700 dark:text-violet-300 shrink-0 mt-1" aria-hidden="true" />
+                    <Award className="h-5 w-5 text-primary shrink-0 mt-1" aria-hidden="true" />
                     <span><strong>Do not worry about certificates.</strong> Learning is the point. You do not need a piece of paper to prove you know something.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <Clock className="h-5 w-5 text-violet-700 dark:text-violet-300 shrink-0 mt-1" aria-hidden="true" />
+                    <Clock className="h-5 w-5 text-primary shrink-0 mt-1" aria-hidden="true" />
                     <span><strong>Set a realistic schedule.</strong> 15 minutes a day beats 2 hours once a week. Consistency wins every time.</span>
                   </li>
                 </ul>
@@ -754,14 +754,14 @@ export default function FreeLearningHub() {
             </Button>
 
             {/* Detail header */}
-            <Card className="mb-6 border-2 border-violet-300 bg-violet-50/70 dark:border-violet-800 dark:bg-violet-950/30">
+            <Card className="mb-6 border-2 border-primary/25 bg-violet-50/70 dark:bg-violet-950/30">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 text-5xl leading-none" aria-hidden="true">
                     {selected.emoji}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-violet-900 dark:text-violet-200">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-primary ">
                       {selected.title}
                     </h2>
                     <p className="text-base text-violet-900/90 dark:text-violet-100/90 mb-2 font-medium">
@@ -784,7 +784,7 @@ export default function FreeLearningHub() {
                       <h3 className="text-xl font-bold">{r.name}</h3>
                       <Badge
                         variant="secondary"
-                        className="bg-green-100 text-green-800 border-green-300 dark:bg-green-950/40 dark:text-green-300 dark:border-green-800 text-xs font-semibold"
+                        className="bg-success text-success-foreground border-success-foreground/25 text-xs font-semibold"
                       >
                         Free
                       </Badge>
@@ -792,22 +792,22 @@ export default function FreeLearningHub() {
                     <p className="text-base text-foreground leading-relaxed mb-3">
                       {r.description}
                     </p>
-                    <div className="rounded-xl bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 p-3 mb-3">
+                    <div className="rounded-xl bg-success border border-success-foreground/25 p-3 mb-3">
                       <div className="flex items-start gap-2">
-                        <CheckCircle2 className="h-5 w-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" aria-hidden="true" />
+                        <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
                         <div>
-                          <p className="text-sm font-semibold text-green-900 dark:text-green-200 mb-0.5">What is genuinely free</p>
-                          <p className="text-sm text-green-900/90 dark:text-green-100/90 leading-relaxed">{r.freeDetails}</p>
+                          <p className="text-base font-semibold text-success-foreground mb-0.5">What is genuinely free</p>
+                          <p className="text-base text-green-900/90 dark:text-green-100/90 leading-relaxed">{r.freeDetails}</p>
                         </div>
                       </div>
                     </div>
                     {r.upsells && (
-                      <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 p-3 mb-3">
+                      <div className="rounded-xl bg-warn border border-warn-foreground/25 p-3 mb-3">
                         <div className="flex items-start gap-2">
-                          <AlertTriangle className="h-5 w-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
+                          <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
                           <div>
-                            <p className="text-sm font-semibold text-amber-900 dark:text-amber-200 mb-0.5">What costs money (skip if you want)</p>
-                            <p className="text-sm text-amber-900/90 dark:text-amber-100/90 leading-relaxed">{r.upsells}</p>
+                            <p className="text-base font-semibold text-warn-foreground mb-0.5">What costs money (skip if you want)</p>
+                            <p className="text-base text-amber-900/90 dark:text-amber-100/90 leading-relaxed">{r.upsells}</p>
                           </div>
                         </div>
                       </div>
@@ -816,7 +816,7 @@ export default function FreeLearningHub() {
                       href={r.url}
                       target="_blank"
                       rel="noreferrer noopener"
-                      className="inline-flex items-center gap-1.5 text-base font-semibold text-violet-700 hover:text-violet-900 dark:text-violet-400 dark:hover:text-violet-300 hover:underline"
+                      className="inline-flex items-center gap-1.5 text-base font-semibold text-primary hover:text-primary hover:underline"
                     >
                       Visit {r.name}
                       <ExternalLink className="h-4 w-4" aria-hidden="true" />
@@ -840,19 +840,19 @@ export default function FreeLearningHub() {
         <Card className="mt-8 border-2">
           <CardContent className="p-5 sm:p-6">
             <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-              <Award className="h-6 w-6 text-violet-600 dark:text-violet-400" aria-hidden="true" />
+              <Award className="h-6 w-6 text-primary " aria-hidden="true" />
               Certificate vs. auditing — what you actually need
             </h3>
             <p className="text-base text-foreground mb-3 leading-relaxed">
               Many online courses charge for the certificate but give away the course itself. Here is the plain-English version:
             </p>
             <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-xl bg-green-50 dark:bg-green-950/30 border-2 border-green-200 dark:border-green-800 p-4">
-                <h4 className="font-bold text-green-900 dark:text-green-200 mb-2 flex items-center gap-2">
+              <div className="rounded-xl bg-success border-2 border-success-foreground/25 p-4">
+                <h4 className="font-bold text-success-foreground mb-2 flex items-center gap-2">
                   <CheckCircle2 className="h-5 w-5" aria-hidden="true" />
                   Auditing (free)
                 </h4>
-                <ul className="space-y-2 text-sm text-green-900/90 dark:text-green-100/90">
+                <ul className="space-y-2 text-base text-green-900/90 dark:text-green-100/90">
                   <li>Watch all the lectures</li>
                   <li>Read all the readings</li>
                   <li>Follow along at your own pace</li>
@@ -860,12 +860,12 @@ export default function FreeLearningHub() {
                   <li>This is what most people want</li>
                 </ul>
               </div>
-              <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-200 dark:border-amber-800 p-4">
-                <h4 className="font-bold text-amber-900 dark:text-amber-200 mb-2 flex items-center gap-2">
+              <div className="rounded-xl bg-warn border-2 border-warn-foreground/25 p-4">
+                <h4 className="font-bold text-warn-foreground mb-2 flex items-center gap-2">
                   <AlertTriangle className="h-5 w-5" aria-hidden="true" />
                   Paid certificate track
                 </h4>
-                <ul className="space-y-2 text-sm text-amber-900/90 dark:text-amber-100/90">
+                <ul className="space-y-2 text-base text-amber-900/90 dark:text-amber-100/90">
                   <li>Includes graded assignments and quizzes</li>
                   <li>A piece of paper with the school name</li>
                   <li>$50 to $300 per course on average</li>
@@ -878,9 +878,9 @@ export default function FreeLearningHub() {
         </Card>
 
         {/* ── Real free vs. freemium traps ── */}
-        <Card className="mt-6 border-2 border-amber-300 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-800">
+        <Card className="mt-6 border-2 border-warn-foreground/25 bg-warn ">
           <CardContent className="p-5 sm:p-6">
-            <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-amber-900 dark:text-amber-200">
+            <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-warn-foreground ">
               <ShieldAlert className="h-6 w-6" aria-hidden="true" />
               Real free vs. "freemium traps"
             </h3>
@@ -889,32 +889,32 @@ export default function FreeLearningHub() {
             </p>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" aria-hidden="true" />
-                <span className="text-base text-amber-900 dark:text-amber-100">
+                <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                <span className="text-base text-warn-foreground ">
                   <strong>Duolingo:</strong> free works. Ads can be ignored, and you never need to pay to finish a course.
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" aria-hidden="true" />
-                <span className="text-base text-amber-900 dark:text-amber-100">
+                <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                <span className="text-base text-warn-foreground ">
                   <strong>LinkedIn Learning:</strong> free through most public libraries. Check with yours before paying.
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <XCircle className="h-5 w-5 text-rose-700 dark:text-rose-400 shrink-0 mt-0.5" aria-hidden="true" />
-                <span className="text-base text-amber-900 dark:text-amber-100">
+                <XCircle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                <span className="text-base text-warn-foreground ">
                   <strong>MasterClass:</strong> not free. Do not fall for "90% off" ads — it is still $10/month for a year.
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <XCircle className="h-5 w-5 text-rose-700 dark:text-rose-400 shrink-0 mt-0.5" aria-hidden="true" />
-                <span className="text-base text-amber-900 dark:text-amber-100">
+                <XCircle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                <span className="text-base text-warn-foreground ">
                   <strong>Skillshare:</strong> 30-day "free trial" that auto-bills. Set a calendar reminder if you try it.
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <XCircle className="h-5 w-5 text-rose-700 dark:text-rose-400 shrink-0 mt-0.5" aria-hidden="true" />
-                <span className="text-base text-amber-900 dark:text-amber-100">
+                <XCircle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                <span className="text-base text-warn-foreground ">
                   <strong>Rosetta Stone:</strong> rarely worth buying anymore. Use Mango Languages free through your library instead.
                 </span>
               </li>
@@ -923,16 +923,16 @@ export default function FreeLearningHub() {
         </Card>
 
         {/* ── Grandparent + grandkid bonding ── */}
-        <Card className="mt-6 border-2 border-rose-300 bg-rose-50 dark:bg-rose-950/30 dark:border-rose-800">
+        <Card className="mt-6 border-2 border-danger-foreground/25 bg-danger ">
           <CardContent className="p-5 sm:p-6">
-            <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-rose-900 dark:text-rose-200">
+            <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-danger-foreground ">
               <Users className="h-6 w-6" aria-hidden="true" />
               Learn together — grandparent and grandkid pairs
             </h3>
             <p className="text-base text-rose-900/90 dark:text-rose-100/90 mb-3 leading-relaxed">
               One of the best gifts you can give a grandchild (and yourself) is learning something new together. A few ideas:
             </p>
-            <ul className="space-y-2 text-base text-rose-900 dark:text-rose-100">
+            <ul className="space-y-2 text-base text-danger-foreground ">
               <li><strong>Language streaks on Duolingo.</strong> Kids love the competition — and you will practice more than you would alone.</li>
               <li><strong>A watercolor or drawing class on YouTube.</strong> Set aside a Saturday morning a few times a month.</li>
               <li><strong>A science topic on Khan Academy.</strong> Homework help for them, curiosity for you.</li>
@@ -954,11 +954,11 @@ export default function FreeLearningHub() {
             </p>
             <ul className="space-y-2 text-base text-foreground mb-3">
               <li className="flex items-start gap-2">
-                <XCircle className="h-5 w-5 text-rose-600 dark:text-rose-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <XCircle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" aria-hidden="true" />
                 <span><strong>Fake "online university" sites</strong> that charge hundreds of dollars for a worthless diploma. Always check accreditation at CHEA.org or the U.S. Department of Education.</span>
               </li>
               <li className="flex items-start gap-2">
-                <XCircle className="h-5 w-5 text-rose-600 dark:text-rose-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <XCircle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" aria-hidden="true" />
                 <span><strong>"Free trial" traps</strong> that auto-bill after 7 or 30 days. Never give a credit card for a "free" class without a calendar reminder to cancel.</span>
               </li>
             </ul>
@@ -974,7 +974,7 @@ export default function FreeLearningHub() {
         <Card className="mt-6 border-2">
           <CardContent className="p-5 sm:p-6">
             <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-              <HelpCircle className="h-6 w-6 text-violet-600 dark:text-violet-400" aria-hidden="true" />
+              <HelpCircle className="h-6 w-6 text-primary " aria-hidden="true" />
               Common questions
             </h3>
             <div className="space-y-5">
@@ -1016,7 +1016,7 @@ export default function FreeLearningHub() {
         <Card className="mt-6 border-2">
           <CardContent className="p-5 sm:p-6">
             <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-              <BookOpen className="h-6 w-6 text-violet-600 dark:text-violet-400" aria-hidden="true" />
+              <BookOpen className="h-6 w-6 text-primary " aria-hidden="true" />
               Related on TekSure
             </h3>
             <ul className="space-y-3">
@@ -1024,36 +1024,36 @@ export default function FreeLearningHub() {
                 <Link to="/tools/free-resource-hub" className="text-base font-semibold text-primary hover:underline inline-flex items-center gap-1.5">
                   Free Resource Hub
                 </Link>
-                <p className="text-sm text-muted-foreground">Free tech programs, devices, and internet for seniors and low-income households.</p>
+                <p className="text-base text-muted-foreground">Free tech programs, devices, and internet for seniors and low-income households.</p>
               </li>
               <li>
                 <Link to="/tools/library-tech-helper" className="text-base font-semibold text-primary hover:underline inline-flex items-center gap-1.5">
                   Library Tech Helper
                 </Link>
-                <p className="text-sm text-muted-foreground">Everything a library card gets you — free streaming, audiobooks, classes, newspapers.</p>
+                <p className="text-base text-muted-foreground">Everything a library card gets you — free streaming, audiobooks, classes, newspapers.</p>
               </li>
               <li>
                 <Link to="/tools/low-vision-tech-hub" className="text-base font-semibold text-primary hover:underline inline-flex items-center gap-1.5">
                   Low Vision Tech Hub
                 </Link>
-                <p className="text-sm text-muted-foreground">Make any device easier on your eyes — bigger text, better contrast, screen readers.</p>
+                <p className="text-base text-muted-foreground">Make any device easier on your eyes — bigger text, better contrast, screen readers.</p>
               </li>
               <li>
                 <Link to="/guides?category=education" className="text-base font-semibold text-primary hover:underline inline-flex items-center gap-1.5">
                   Education guides
                 </Link>
-                <p className="text-sm text-muted-foreground">Step-by-step TekSure guides for learning online.</p>
+                <p className="text-base text-muted-foreground">Step-by-step TekSure guides for learning online.</p>
               </li>
             </ul>
           </CardContent>
         </Card>
 
         {/* ── Golden rule ── */}
-        <Card className="mt-6 border-2 border-violet-300 bg-violet-50 dark:bg-violet-950/30 dark:border-violet-800">
+        <Card className="mt-6 border-2 border-primary/25 bg-primary/10 ">
           <CardContent className="p-5 flex gap-3">
-            <Sparkles className="h-6 w-6 text-violet-700 dark:text-violet-400 shrink-0 mt-0.5" aria-hidden="true" />
+            <Sparkles className="h-6 w-6 text-primary shrink-0 mt-0.5" aria-hidden="true" />
             <div>
-              <p className="font-semibold text-violet-900 dark:text-violet-200 mb-1">Keep learning</p>
+              <p className="font-semibold text-primary mb-1">Keep learning</p>
               <p className="text-base text-violet-900/90 dark:text-violet-100/90 leading-relaxed">
                 Every one of the resources here is real, free, and written or recorded by people who want you to learn. Start with 15 minutes today. Come back tomorrow. The internet has more free knowledge than any human could finish in a lifetime — enjoy it.
               </p>

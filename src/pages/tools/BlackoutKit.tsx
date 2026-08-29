@@ -19,7 +19,7 @@ export default function BlackoutKit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Essentials</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Flashlights</strong> — 2-3 + spare batteries.</li>
               <li><strong>Headlamp</strong> — hands-free.</li>
               <li><strong>Power bank</strong> — Anker 20K mAh ($50). Charge it monthly.</li>
@@ -36,7 +36,7 @@ export default function BlackoutKit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior medical concerns</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Refrigerated medications (insulin)</strong> — cooler + ice.</li>
               <li><strong>CPAP backup battery</strong> — if you use one.</li>
               <li><strong>Oxygen concentrator backup</strong> — call utility for "medical baseline" priority restoration.</li>
@@ -49,7 +49,7 @@ export default function BlackoutKit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Generator considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Portable</strong> — $500-1,500. Need to manually start.</li>
               <li><strong>Solar generator (Jackery, EcoFlow)</strong> — silent, indoor-safe. $500-2,500.</li>
               <li><strong>Standby (whole house)</strong> — $5K-15K + install. Auto-starts.</li>
@@ -62,7 +62,7 @@ export default function BlackoutKit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Food during blackout</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Keep refrigerator + freezer doors CLOSED.</li>
               <li>Fridge stays cold ~4 hours, freezer ~48 hours.</li>
               <li>Stock canned soup, peanut butter, crackers.</li>
@@ -76,7 +76,7 @@ export default function BlackoutKit() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Sign up for utility alerts</h3>
-            <p className="text-sm text-muted-foreground">Most utilities send text alerts when outage starts + estimates restoration. Sign up via utility website. Better than calling repeatedly. Critical info during big storms.</p>
+            <p className="text-base text-muted-foreground">Most utilities send text alerts when outage starts + estimates restoration. Sign up via utility website. Better than calling repeatedly. Critical info during big storms.</p>
           </CardContent>
         </Card>
       </main>

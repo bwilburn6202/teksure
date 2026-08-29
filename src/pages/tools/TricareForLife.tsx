@@ -19,7 +19,7 @@ export default function TricareForLife() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is TFL?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>For military retirees + spouses age 65+.</li>
               <li>Pays SECONDARY to Medicare.</li>
               <li>Medicare pays 80%, TFL pays remaining 20%.</li>
@@ -34,7 +34,7 @@ export default function TricareForLife() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eligibility</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Military retiree (20+ years service or medical retirement).</li>
               <li>Surviving spouse of military retiree.</li>
               <li>Adult child with disability before age 21.</li>
@@ -48,7 +48,7 @@ export default function TricareForLife() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Coverage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>All Medicare-covered services.</li>
               <li>Plus things Medicare doesn&apos;t cover (TRICARE benefits).</li>
               <li>Prescriptions through TRICARE Pharmacy ($16-58 copay).</li>
@@ -62,7 +62,7 @@ export default function TricareForLife() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Costs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$0 premium for TFL.</li>
               <li>$185/mo Medicare Part B premium (2026).</li>
               <li>Generic Rx: $16 copay (90-day supply).</li>
@@ -76,7 +76,7 @@ export default function TricareForLife() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip Medicare Advantage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>TFL works ONLY with Original Medicare.</li>
               <li>If you join Medicare Advantage — TFL doesn&apos;t pay.</li>
               <li>Original Medicare + TFL = much better than Advantage for vets.</li>
@@ -88,7 +88,7 @@ export default function TricareForLife() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Enroll</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Auto-enrolled if you have TRICARE + Medicare A+B.</li>
               <li>Update DEERS — myaccess.dmdc.osd.mil.</li>
               <li>Sign up for Medicare 3 months before 65th birthday.</li>
@@ -101,7 +101,7 @@ export default function TricareForLife() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Beneficiary card</h3>
-            <p className="text-sm text-muted-foreground">Get military ID card showing TFL eligibility. Bring to medical appointments. Most providers know how to bill TFL secondary. If they don&apos;t — provide TFL claim form. Customer service helps with denials. Excellent benefit — use it fully.</p>
+            <p className="text-base text-muted-foreground">Get military ID card showing TFL eligibility. Bring to medical appointments. Most providers know how to bill TFL secondary. If they don&apos;t — provide TFL claim form. Customer service helps with denials. Excellent benefit — use it fully.</p>
           </CardContent>
         </Card>
       </main>

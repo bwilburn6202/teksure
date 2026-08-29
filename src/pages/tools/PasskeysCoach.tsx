@@ -19,15 +19,15 @@ export default function PasskeysCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What passkeys are</h2>
-            <p className="text-sm">A new way to sign in that replaces passwords. Instead of typing a password, your phone proves it\'s really you using Face ID or your fingerprint. The website never stores a password — there\'s nothing to leak in a hack.</p>
-            <p className="text-sm mt-2">Microsoft, Google, Apple, Amazon, PayPal, eBay, and most banks already support passkeys. More join every month.</p>
+            <p className="text-base">A new way to sign in that replaces passwords. Instead of typing a password, your phone proves it\'s really you using Face ID or your fingerprint. The website never stores a password — there\'s nothing to leak in a hack.</p>
+            <p className="text-base mt-2">Microsoft, Google, Apple, Amazon, PayPal, eBay, and most banks already support passkeys. More join every month.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why they\'re better</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Phishing-proof</strong> — even if a fake "Apple" email tricks you into clicking, the passkey only works on the real Apple site.</li>
               <li><strong>No password to forget.</strong></li>
               <li><strong>No password to steal in a database leak.</strong></li>
@@ -40,7 +40,7 @@ export default function PasskeysCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up a passkey (any service)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign in to your account (Apple, Google, Microsoft, etc.) the usual way.</li>
               <li>Look in Settings → Security → "Passkeys" or "Sign-in methods".</li>
               <li>Tap "Create a passkey" or "Add passkey".</li>
@@ -53,7 +53,7 @@ export default function PasskeysCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where passkeys are saved</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone</strong> — saved in iCloud Keychain. Sync to all your Apple devices.</li>
               <li><strong>Android</strong> — saved in Google Password Manager. Sync to other Google devices.</li>
               <li><strong>Password managers (1Password, Bitwarden)</strong> — also support passkeys. Better if you use both Apple AND Android devices.</li>
@@ -65,15 +65,15 @@ export default function PasskeysCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you lose your phone</h2>
-            <p className="text-sm">Passkeys are tied to your iCloud (Apple) or Google account, not the physical phone. Get a new phone, sign in, your passkeys come back. They\'re also recoverable through the secondary trusted device or your iCloud / Google account recovery.</p>
-            <p className="text-sm mt-2">For extra peace of mind: keep ONE password for your primary email account. If everything else fails, you can reset accounts via email.</p>
+            <p className="text-base">Passkeys are tied to your iCloud (Apple) or Google account, not the physical phone. Get a new phone, sign in, your passkeys come back. They\'re also recoverable through the secondary trusted device or your iCloud / Google account recovery.</p>
+            <p className="text-base mt-2">For extra peace of mind: keep ONE password for your primary email account. If everything else fails, you can reset accounts via email.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">Set up a passkey on ONE service first — your Google or Apple account. Use it for a week. Once you\'re comfortable, add passkeys for your bank, email, and password manager.</p>
+            <p className="text-base text-muted-foreground">Set up a passkey on ONE service first — your Google or Apple account. Use it for a week. Once you\'re comfortable, add passkeys for your bank, email, and password manager.</p>
           </CardContent>
         </Card>
       </main>

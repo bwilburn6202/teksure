@@ -22,7 +22,7 @@ export default function SeniorRokuGuide() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Add Netflix or Hulu</h2><p>Press Home → Streaming Channels → search by name → Add Channel.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice remote</h2><p>Hold microphone button. Say &ldquo;Find Yellowstone.&rdquo; Faster than typing.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Captions</h2><p>Press * (asterisk) on remote → Closed captioning → On.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Lost the remote? The Roku app on your phone works as a remote.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Lost the remote? The Roku app on your phone works as a remote.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

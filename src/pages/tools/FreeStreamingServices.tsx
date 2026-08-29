@@ -34,7 +34,7 @@ export default function FreeStreamingServices() {
               <Sparkles className="w-6 h-6 text-primary shrink-0" />
               <div>
                 <h2 className="font-bold mb-1">All of these are FREE</h2>
-                <p className="text-sm">No subscription. No credit card. Most don't even need a signup. They make money from ads (a few minutes per hour), not from you.</p>
+                <p className="text-base">No subscription. No credit card. Most don't even need a signup. They make money from ads (a few minutes per hour), not from you.</p>
               </div>
             </div>
           </CardContent>
@@ -45,9 +45,9 @@ export default function FreeStreamingServices() {
             <Card key={s.name}>
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{s.name}</h3>
-                <p className="text-sm text-muted-foreground mb-2">{s.who}</p>
-                <p className="text-sm"><strong>Why it's good:</strong> {s.best}</p>
-                <p className="text-xs text-muted-foreground mt-2">Find it at: {s.site}</p>
+                <p className="text-base text-muted-foreground mb-2">{s.who}</p>
+                <p className="text-base"><strong>Why it's good:</strong> {s.best}</p>
+                <p className="text-sm text-muted-foreground mt-2">Find it at: {s.site}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,8 +56,8 @@ export default function FreeStreamingServices() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">How to install them</h3>
-            <p className="text-sm mb-2">All these work on:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">All these work on:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Smart TVs</strong> — search the App Store on your TV remote (Samsung, LG, Vizio).</li>
               <li><strong>Roku, Fire TV, Apple TV, Chromecast</strong> — search and install.</li>
               <li><strong>Phones and tablets</strong> — App Store (iPhone) or Play Store (Android).</li>
@@ -69,7 +69,7 @@ export default function FreeStreamingServices() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — start with The Roku Channel</h3>
-            <p className="text-sm text-muted-foreground">If you have a Roku, The Roku Channel is already on your home screen. Click it — there are 500+ free live channels and thousands of free movies. Many people don't realize it's there.</p>
+            <p className="text-base text-muted-foreground">If you have a Roku, The Roku Channel is already on your home screen. Click it — there are 500+ free live channels and thousands of free movies. Many people don't realize it's there.</p>
           </CardContent>
         </Card>
       </main>

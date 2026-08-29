@@ -22,7 +22,7 @@ export default function SeniorDigitalLegacy() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Password manager</h2><p>1Password Family. Trusted family accesses if needed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Letter to family</h2><p>Where photos, accounts, papers are. Where to find passwords.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cancel subscriptions</h2><p>List all monthly subscriptions. Family cancels avoiding billing.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 1 hour setting up legacy contacts saves family weeks of frustration.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 1 hour setting up legacy contacts saves family weeks of frustration.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

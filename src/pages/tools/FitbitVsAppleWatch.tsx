@@ -19,7 +19,7 @@ export default function FitbitVsAppleWatch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Side-by-side</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Watch</strong> — premium, daily charge, iPhone only.</li>
               <li><strong>Fitbit</strong> — budget, 5-7 day battery, Android + iPhone.</li>
               <li>Both: heart rate, sleep, activity.</li>
@@ -33,7 +33,7 @@ export default function FitbitVsAppleWatch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Watch SE = senior favorite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$250 — affordable Apple Watch.</li>
               <li>Fall detection.</li>
               <li>Emergency SOS.</li>
@@ -49,7 +49,7 @@ export default function FitbitVsAppleWatch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fitbit picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fitbit Inspire 3</strong> — $100. Basic + great.</li>
               <li><strong>Fitbit Charge 6</strong> — $160. Better display + features.</li>
               <li><strong>Fitbit Versa 4</strong> — $200. Smartwatch + screen.</li>
@@ -61,7 +61,7 @@ export default function FitbitVsAppleWatch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Watch picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Watch SE 2</strong> — $250. Best for most seniors.</li>
               <li><strong>Apple Watch Series 10</strong> — $400. Latest features.</li>
               <li><strong>Apple Watch Ultra 2</strong> — $800. Hiker/adventurer.</li>
@@ -73,7 +73,7 @@ export default function FitbitVsAppleWatch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple-exclusive features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fall detection</strong> — auto-calls 911 + family.</li>
               <li><strong>Emergency SOS</strong> — hold side button.</li>
               <li><strong>Crash Detection</strong> — auto-detects car crash.</li>
@@ -88,7 +88,7 @@ export default function FitbitVsAppleWatch() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior pick</h3>
-            <p className="text-sm text-muted-foreground">If iPhone user + want safety = <strong>Apple Watch SE 2 ($250)</strong>. Best fall detection + Emergency SOS. Worth charging daily for safety. If Android = Fitbit Charge 6 or Garmin Vivosmart 5. If hate charging = Garmin. Match to your phone + priorities.</p>
+            <p className="text-base text-muted-foreground">If iPhone user + want safety = <strong>Apple Watch SE 2 ($250)</strong>. Best fall detection + Emergency SOS. Worth charging daily for safety. If Android = Fitbit Charge 6 or Garmin Vivosmart 5. If hate charging = Garmin. Match to your phone + priorities.</p>
           </CardContent>
         </Card>
       </main>

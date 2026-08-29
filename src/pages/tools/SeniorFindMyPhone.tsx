@@ -22,7 +22,7 @@ export default function SeniorFindMyPhone() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family sharing</h2><p>Add family. See each other&apos;s phone location. Helps if grandkids lose their phone.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AirTag for keys</h2><p>$29 each. Attach to keychain. Find with iPhone Find My app.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tile / Chipolo</h2><p>$25-$35. Same idea, works with Android too.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Mark phone as lost — anyone who finds it sees a custom message and your callback number.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Mark phone as lost — anyone who finds it sees a custom message and your callback number.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

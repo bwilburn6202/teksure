@@ -17,12 +17,12 @@ export default function SeniorElevateApp() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cost</h2><p>Free version (3 games/day). $40/year for full access.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Categories</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Reading comprehension</li><li>Vocabulary</li><li>Math &amp; tip calculation</li><li>Spelling</li><li>Focus exercises</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Categories</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Reading comprehension</li><li>Vocabulary</li><li>Math &amp; tip calculation</li><li>Spelling</li><li>Focus exercises</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">15 min daily</h2><p>5 games. App tracks improvement on each skill.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Vs Lumosity</h2><p>Elevate focuses on language and life skills. Lumosity on speed/memory. Both useful.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior-friendly</h2><p>Adjustable difficulty. Doesn&apos;t shame mistakes. Encouraging.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Try free first</h2><p>Free version is plenty for many seniors. Pay only if you love it.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Reading puzzles especially help with daily reading speed and comprehension.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Reading puzzles especially help with daily reading speed and comprehension.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

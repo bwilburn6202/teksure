@@ -30,10 +30,10 @@ export default function TabletForSeniorsBasics() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function TabletForSeniorsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why tablet over laptop</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Touchscreen — more intuitive.</li>
               <li>Lighter, portable.</li>
               <li>No keyboard / mouse confusion.</li>
@@ -57,7 +57,7 @@ export default function TabletForSeniorsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Top senior uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Video calls</strong> — FaceTime, Zoom, Skype.</li>
               <li><strong>News + weather</strong>.</li>
               <li><strong>Email</strong>.</li>
@@ -73,7 +73,7 @@ export default function TabletForSeniorsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly settings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Increase text size — Settings → Display.</li>
               <li>Bold text on.</li>
               <li>Dark mode if eyes hurt.</li>
@@ -88,7 +88,7 @@ export default function TabletForSeniorsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Accessories</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Stand</strong> — hands-free viewing.</li>
               <li><strong>Stylus</strong> — easier than fingertip for some.</li>
               <li><strong>Bluetooth keyboard</strong> — for typing emails.</li>
@@ -102,7 +102,7 @@ export default function TabletForSeniorsBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">iPad with Assistive Access (free)</h3>
-            <p className="text-sm text-muted-foreground">iOS 17+ has Assistive Access — simplifies iPad to 5 apps senior chooses. Big text, simple icons. Settings → Accessibility → Assistive Access. FREE simplification. Family member sets up once. Senior just sees 5 large icons. Works like GrandPad without monthly fee.</p>
+            <p className="text-base text-muted-foreground">iOS 17+ has Assistive Access — simplifies iPad to 5 apps senior chooses. Big text, simple icons. Settings → Accessibility → Assistive Access. FREE simplification. Family member sets up once. Senior just sees 5 large icons. Works like GrandPad without monthly fee.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function PoshmarkVintageSelling() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Poshmark?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Clothing-focused selling app.</li>
               <li>80 million users.</li>
               <li>Vintage + designer especially popular.</li>
@@ -33,7 +33,7 @@ export default function PoshmarkVintageSelling() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What sells well</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vintage clothing — 50s-90s.</li>
               <li>Designer handbags.</li>
               <li>Costume jewelry.</li>
@@ -47,7 +47,7 @@ export default function PoshmarkVintageSelling() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Listing process</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photograph item — multiple angles.</li>
               <li>Tap List An Item.</li>
               <li>Add brand, size, condition.</li>
@@ -61,7 +61,7 @@ export default function PoshmarkVintageSelling() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vintage especially valuable</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>50s + 60s pieces have collectors.</li>
               <li>Younger generations love vintage.</li>
               <li>Original tags add value.</li>
@@ -75,7 +75,7 @@ export default function PoshmarkVintageSelling() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Shipping</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Poshmark prepaid shipping label.</li>
               <li>Up to 5 lbs included.</li>
               <li>Buyer pays $7.97 flat shipping.</li>
@@ -89,7 +89,7 @@ export default function PoshmarkVintageSelling() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Start with 5 best vintage items.</li>
               <li>Photograph in natural light.</li>
               <li>Honest condition descriptions.</li>
@@ -103,7 +103,7 @@ export default function PoshmarkVintageSelling() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Closet from past 30 years = goldmine</h3>
-            <p className="text-sm text-muted-foreground">Many seniors have closets of vintage clothing from 70s, 80s, 90s. Younger generations love vintage. Pieces may sell for $50–$300+. Poshmark&apos;s flat-rate shipping makes selling easy. List 5 items this week. Watch what sells. Free spring closet cleaning that funds your next vacation.</p>
+            <p className="text-base text-muted-foreground">Many seniors have closets of vintage clothing from 70s, 80s, 90s. Younger generations love vintage. Pieces may sell for $50–$300+. Poshmark&apos;s flat-rate shipping makes selling easy. List 5 items this week. Watch what sells. Free spring closet cleaning that funds your next vacation.</p>
           </CardContent>
         </Card>
       </main>

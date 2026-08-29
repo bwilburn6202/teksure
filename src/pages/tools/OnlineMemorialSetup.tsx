@@ -117,7 +117,7 @@ export default function OnlineMemorialSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-purple-500/10 rounded-full">
-                <Heart className="h-8 w-8 text-purple-600" />
+                <Heart className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Online Memorial Setup</h1>
@@ -132,8 +132,8 @@ export default function OnlineMemorialSetup() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">First, take care of yourself</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">First, take care of yourself</p>
+              <p className="text-sm text-muted-foreground">
                 There is no rush. Online memorials can wait days or months. Pick one that feels right — you do not need all of these. Done in good time, they help. Done in panic, they often get re-done later.
               </p>
             </CardContent>
@@ -154,12 +154,12 @@ export default function OnlineMemorialSetup() {
                         <Badge variant="outline" className="mt-1">{s.cost}</Badge>
                       </div>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-3">{s.what}</p>
+                    <p className="text-base text-muted-foreground mb-3">{s.what}</p>
 
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">How to set up</p>
                     <ol className="space-y-1.5 mb-3">
                       {s.howToSetup.map((step, i) => (
-                        <li key={i} className="flex gap-2 text-sm">
+                        <li key={i} className="flex gap-2 text-base">
                           <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                           <span>{step}</span>
                         </li>
@@ -167,7 +167,7 @@ export default function OnlineMemorialSetup() {
                     </ol>
 
                     {s.notes && (
-                      <p className="text-xs text-muted-foreground italic mt-2">{s.notes}</p>
+                      <p className="text-sm text-muted-foreground italic mt-2">{s.notes}</p>
                     )}
 
                     <a href={s.link} target="_blank" rel="noreferrer"
@@ -182,8 +182,8 @@ export default function OnlineMemorialSetup() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A note about scammers and grief</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A note about scammers and grief</p>
+              <p className="text-sm text-muted-foreground">
                 Within days of an online obituary, families sometimes get scam calls and emails. Common ones: fake "your loved one had a debt with us" calls, fake life-insurance "verification", fake credit-collector "deceased account" inquiries. None of those are real until you have proven the caller. Real businesses write paper letters and accept callbacks.
               </p>
             </CardContent>
@@ -193,16 +193,16 @@ export default function OnlineMemorialSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Account After Loss</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Closing accounts after a death.</p>
+                <p className="font-medium text-base">Account After Loss</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Closing accounts after a death.</p>
               </Link>
               <Link to="/bereavement-tech" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Bereavement Tech Hub</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Wider grief-tech guide.</p>
+                <p className="font-medium text-base">Bereavement Tech Hub</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Wider grief-tech guide.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Check messages claiming to be from the deceased\'s creditors.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Check messages claiming to be from the deceased\'s creditors.</p>
               </Link>
             </div>
           </div>

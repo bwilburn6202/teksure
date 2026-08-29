@@ -22,7 +22,7 @@ export default function SeniorPolitics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">5 Calls</h2><p>FREE. Identifies your reps. Scripts to call about issues.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Local meetings</h2><p>School board, city council. Often retired seniors run.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AARP advocacy</h2><p>Free. Senior issues focus. Real impact in DC.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Local elections matter more for daily life. Always vote local.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Local elections matter more for daily life. Always vote local.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

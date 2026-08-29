@@ -19,14 +19,14 @@ export default function GrandparentRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Federal vs state</h2>
-            <p className="text-sm">No federal grandparent visitation rights. ALL 50 states have SOME laws — vary widely. Some require death of parent. Some allow if "best interest of child". Some require petition + hearing. Consult elder/family attorney for YOUR state.</p>
+            <p className="text-base">No federal grandparent visitation rights. ALL 50 states have SOME laws — vary widely. Some require death of parent. Some allow if "best interest of child". Some require petition + hearing. Consult elder/family attorney for YOUR state.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When courts intervene</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Parent died</strong> — most courts grant visitation to grandparents of deceased parent.</li>
               <li><strong>Parents divorced</strong> — varies. Some courts grant visitation.</li>
               <li><strong>Parents incarcerated / unfit</strong> — grandparents may petition for custody.</li>
@@ -39,7 +39,7 @@ export default function GrandparentRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Try non-legal first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Family mediation</strong> — neutral 3rd party. Often resolves what court can&apos;t.</li>
               <li><strong>Therapy together</strong> — addresses underlying issues.</li>
               <li><strong>Letter writing</strong> — heartfelt + apologetic.</li>
@@ -52,7 +52,7 @@ export default function GrandparentRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Custody (raising grandchild)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>2.7M US kids raised primarily by grandparents.</li>
               <li><strong>Kinship care</strong> — informal arrangement.</li>
               <li><strong>Legal guardianship</strong> — court order. Lasts until 18.</li>
@@ -67,7 +67,7 @@ export default function GrandparentRights() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free + low-cost legal help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Legal Aid</strong> — every state has free legal aid for low-income.</li>
               <li><strong>State Senior Legal Hotlines</strong>.</li>
               <li><strong>Bar association lawyer-referral</strong> — first 30-min consultation free or $25.</li>
@@ -80,7 +80,7 @@ export default function GrandparentRights() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">It hurts</h3>
-            <p className="text-sm text-muted-foreground">Grandparent estrangement is among the most painful family situations. AARP + StandAlone have support groups — knowing you&apos;re not alone helps. Therapy helps process grief. Sometimes patience + apology unlock locked doors years later.</p>
+            <p className="text-base text-muted-foreground">Grandparent estrangement is among the most painful family situations. AARP + StandAlone have support groups — knowing you&apos;re not alone helps. Therapy helps process grief. Sometimes patience + apology unlock locked doors years later.</p>
           </CardContent>
         </Card>
       </main>

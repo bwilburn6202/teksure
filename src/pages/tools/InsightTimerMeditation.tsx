@@ -19,7 +19,7 @@ export default function InsightTimerMeditation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Insight Timer?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free with optional Premium ($60/year).</li>
               <li>250,000+ guided meditations.</li>
               <li>Largest free meditation library.</li>
@@ -33,7 +33,7 @@ export default function InsightTimerMeditation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for senior wellness</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sleep meditations — fall asleep faster.</li>
               <li>Anxiety + stress relief.</li>
               <li>Pain management techniques.</li>
@@ -47,7 +47,7 @@ export default function InsightTimerMeditation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to start</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download free Insight Timer.</li>
               <li>Tap &quot;Browse&quot; — search by topic.</li>
               <li>Try &quot;Beginner Meditation&quot; first.</li>
@@ -61,7 +61,7 @@ export default function InsightTimerMeditation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Calm + Headspace alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Calm — $70/year, beautiful interface.</li>
               <li>Headspace — $70/year, animations + lessons.</li>
               <li>Both have free trials.</li>
@@ -75,7 +75,7 @@ export default function InsightTimerMeditation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Christian alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Abide — Christian meditation, $60/year.</li>
               <li>Soulscape — Christian meditation.</li>
               <li>Echo Prayer — prayer-focused.</li>
@@ -89,7 +89,7 @@ export default function InsightTimerMeditation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for senior beginners</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Start with 5-minute sessions.</li>
               <li>Don&apos;t worry about &quot;clearing your mind.&quot;</li>
               <li>Just listen + breathe.</li>
@@ -103,7 +103,7 @@ export default function InsightTimerMeditation() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try sleep meditation tonight</h3>
-            <p className="text-sm text-muted-foreground">If you have trouble falling asleep, download Insight Timer free and search &quot;sleep meditation.&quot; Pick a 20-minute one. Lie in bed with phone nearby (not in hand), let the voice guide you. Many seniors fall asleep within 10 minutes regularly using these. Free, easy, no risk. Better than another sleeping pill.</p>
+            <p className="text-base text-muted-foreground">If you have trouble falling asleep, download Insight Timer free and search &quot;sleep meditation.&quot; Pick a 20-minute one. Lie in bed with phone nearby (not in hand), let the voice guide you. Many seniors fall asleep within 10 minutes regularly using these. Free, easy, no risk. Better than another sleeping pill.</p>
           </CardContent>
         </Card>
       </main>

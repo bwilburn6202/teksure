@@ -105,7 +105,7 @@ export default function SharedFamilyCalendar() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-violet-500/10 rounded-full">
-                <CalendarDays className="h-8 w-8 text-violet-600" />
+                <CalendarDays className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Shared Family Calendar Setup</h1>
@@ -120,15 +120,15 @@ export default function SharedFamilyCalendar() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">What does your family use?</p>
+              <p className="text-base font-semibold mb-3">What does your family use?</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {SETUP_OPTIONS.map(o => (
                   <button key={o.id} onClick={() => setSetup(o.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       setup === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
-                    <p className="text-xs text-muted-foreground mt-0.5">{o.sub}</p>
+                    <p className="font-medium text-base">{o.label}</p>
+                    <p className="text-sm text-muted-foreground mt-0.5">{o.sub}</p>
                   </button>
                 ))}
               </div>
@@ -144,7 +144,7 @@ export default function SharedFamilyCalendar() {
                 <div>
                   <Badge className="mb-2">Recommended for you</Badge>
                   <p className="text-2xl font-bold">{plan.name}</p>
-                  <p className="text-sm text-muted-foreground mt-1">{plan.whoFor}</p>
+                  <p className="text-base text-muted-foreground mt-1">{plan.whoFor}</p>
                 </div>
               </div>
             </CardContent>
@@ -155,7 +155,7 @@ export default function SharedFamilyCalendar() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Setup steps</p>
               <ol className="space-y-3 mb-5">
                 {plan.steps.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <div>
                       <p className="font-semibold">{s.title}</p>
@@ -165,17 +165,17 @@ export default function SharedFamilyCalendar() {
                 ))}
               </ol>
 
-              <div className="p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
-                <p className="text-xs font-semibold uppercase tracking-wider text-blue-700 dark:text-blue-300 mb-1">Pro move</p>
-                <p className="text-xs text-blue-700 dark:text-blue-300">{plan.bonus}</p>
+              <div className="p-3 rounded-lg bg-info border border-info-foreground/25 ">
+                <p className="text-xs font-semibold uppercase tracking-wider text-info-foreground mb-1">Pro move</p>
+                <p className="text-sm text-info-foreground ">{plan.bonus}</p>
               </div>
             </CardContent>
           </Card>
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">What to put on the family calendar</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">What to put on the family calendar</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Doctor and dentist appointments (so a spouse can drive if needed).</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Birthdays of family members and close friends.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>School events, sports practices, parent-teacher conferences.</span></li>
@@ -189,20 +189,20 @@ export default function SharedFamilyCalendar() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/family-tech-roundtable" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Family Tech Roundtable</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Plan tech with the whole family.</p>
+                <p className="font-medium text-base">Family Tech Roundtable</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Plan tech with the whole family.</p>
               </Link>
               <Link to="/tools/medication-reminder-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Medication Reminders</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Health reminders that ring through.</p>
+                <p className="font-medium text-base">Medication Reminders</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Health reminders that ring through.</p>
               </Link>
               <Link to="/tools/tech-buddy-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Tech Buddy Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair one helper with one senior.</p>
+                <p className="font-medium text-base">Tech Buddy Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair one helper with one senior.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: get the family in the habit of looking at the calendar Sunday night. Saves three "did you remember" texts a week.
           </p>
         </div>

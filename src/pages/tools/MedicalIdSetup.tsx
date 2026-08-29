@@ -22,7 +22,7 @@ export default function MedicalIdSetup() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why this matters</h2>
-            <p className="text-sm">If you fall, faint, or are in an accident, paramedics know to check your phone. Both iPhones and Android phones can show your meds, allergies, blood type, and emergency contacts — even when locked, with no PIN needed.</p>
+            <p className="text-base">If you fall, faint, or are in an accident, paramedics know to check your phone. Both iPhones and Android phones can show your meds, allergies, blood type, and emergency contacts — even when locked, with no PIN needed.</p>
           </CardContent>
         </Card>
 
@@ -35,7 +35,7 @@ export default function MedicalIdSetup() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone — Medical ID</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open the <strong>Health</strong> app (white with a pink heart).</li>
                 <li>Tap your photo or initials in the top right corner.</li>
                 <li>Tap <strong>Medical ID</strong>.</li>
@@ -58,9 +58,9 @@ export default function MedicalIdSetup() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android — Emergency Information</h3>
-              <p className="text-sm mb-3">The exact menu names vary slightly by phone. The two most common paths:</p>
-              <p className="font-semibold text-sm mt-3">Most Android phones (Pixel, Motorola, OnePlus):</p>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <p className="text-base mb-3">The exact menu names vary slightly by phone. The two most common paths:</p>
+              <p className="font-semibold text-base mt-3">Most Android phones (Pixel, Motorola, OnePlus):</p>
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open <strong>Settings</strong>.</li>
                 <li>Tap <strong>Safety & emergency</strong>.</li>
                 <li>Tap <strong>Medical info</strong> (or "Emergency information").</li>
@@ -68,8 +68,8 @@ export default function MedicalIdSetup() {
                 <li>Go back, tap <strong>Emergency contacts</strong> — add your spouse and adult children.</li>
                 <li>Make sure <strong>"Show on lock screen"</strong> is turned on.</li>
               </ol>
-              <p className="font-semibold text-sm mt-4">Samsung Galaxy:</p>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <p className="font-semibold text-base mt-4">Samsung Galaxy:</p>
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → Safety and emergency → Medical info.</li>
                 <li>Same fields as above. Turn on "Show on Lock screen".</li>
                 <li>Also explore "Send SOS messages" — press the side button 5 times to text emergency contacts your location.</li>
@@ -78,13 +78,13 @@ export default function MedicalIdSetup() {
           </Card>
         )}
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <AlertTriangle className="w-6 h-6 text-yellow-700 dark:text-yellow-400 shrink-0" />
+              <AlertTriangle className="w-6 h-6 text-warn-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Update it once a year</h3>
-                <p className="text-sm text-muted-foreground">Medications change. Phone numbers change. Set a reminder for every January (or your birthday) to open Medical ID and double-check everything.</p>
+                <p className="text-base text-muted-foreground">Medications change. Phone numbers change. Set a reminder for every January (or your birthday) to open Medical ID and double-check everything.</p>
               </div>
             </div>
           </CardContent>
@@ -93,7 +93,7 @@ export default function MedicalIdSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For caregivers</h3>
-            <p className="text-sm text-muted-foreground">If you help an aging parent — set this up on their phone too. Use a recent photo, list every medication exactly, and add yourself as the emergency contact. ER nurses look for this first thing.</p>
+            <p className="text-base text-muted-foreground">If you help an aging parent — set this up on their phone too. Use a recent photo, list every medication exactly, and add yourself as the emergency contact. ER nurses look for this first thing.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,14 +19,14 @@ export default function GrandPadReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What GrandPad is</h2>
-            <p className="text-sm">8" tablet specifically built for non-tech seniors. Pre-loaded with photos from family. Built-in cellular (no wifi setup). Comes with stylus + stand. Subscription ~$80/month. Family manages from phone.</p>
+            <p className="text-base">8" tablet specifically built for non-tech seniors. Pre-loaded with photos from family. Built-in cellular (no wifi setup). Comes with stylus + stand. Subscription ~$80/month. Family manages from phone.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best parts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NO setup — arrives ready, family pre-loaded.</li>
               <li>Built-in 4G — no wifi to troubleshoot.</li>
               <li>BIG icons. NO drop-down menus. NO confusing settings.</li>
@@ -42,7 +42,7 @@ export default function GrandPadReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drawbacks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$80/month subscription = $960/year. Adds up.</li>
               <li>Walled garden — limited to what GrandPad allows.</li>
               <li>No Amazon, no app store, no real Internet.</li>
@@ -55,7 +55,7 @@ export default function GrandPadReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When GrandPad is right</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior with dementia / cognitive issues.</li>
               <li>NEVER used tech and never will master a regular tablet.</li>
               <li>Family doesn&apos;t want to provide tech support.</li>
@@ -68,7 +68,7 @@ export default function GrandPadReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPad + Apple Family Sharing</strong> — adult kids manage. ~$330 + cellular plan.</li>
               <li><strong>Echo Show 8</strong> — $150. Photo frame + video calls + Alexa.</li>
               <li><strong>Lively Jitterbug Smart 4</strong> — phone form factor.</li>
@@ -80,7 +80,7 @@ export default function GrandPadReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Honest take</h3>
-            <p className="text-sm text-muted-foreground">GrandPad is genuinely good for severely-non-tech seniors. But $960/year is steep. Echo Show 8 + photo frame ($200 total) replaces 70% of GrandPad use cases. Try those first if budget is concern.</p>
+            <p className="text-base text-muted-foreground">GrandPad is genuinely good for severely-non-tech seniors. But $960/year is steep. Echo Show 8 + photo frame ($200 total) replaces 70% of GrandPad use cases. Try those first if budget is concern.</p>
           </CardContent>
         </Card>
       </main>

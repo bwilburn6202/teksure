@@ -138,13 +138,13 @@ export default function ReceiptScannerDemo() {
                       ))}
                     </div>
                     <div className="border-t pt-4">
-                      <p className="text-sm text-muted-foreground mb-3">
+                      <p className="text-base text-muted-foreground mb-3">
                         Or upload your own receipt photo (nothing is stored — this is a demo):
                       </p>
                       <label className="flex flex-col items-center justify-center gap-3 border-2 border-dashed rounded-xl p-8 cursor-pointer hover:border-primary hover:bg-primary/5 transition-colors">
                         <Upload className="h-8 w-8 text-muted-foreground" />
-                        <span className="text-sm font-medium">Click to upload a receipt photo</span>
-                        <span className="text-xs text-muted-foreground">JPG, PNG, or PDF</span>
+                        <span className="text-base font-medium">Click to upload a receipt photo</span>
+                        <span className="text-sm text-muted-foreground">JPG, PNG, or PDF</span>
                         <input
                           ref={fileRef}
                           type="file"
@@ -163,11 +163,11 @@ export default function ReceiptScannerDemo() {
                       <Lightbulb className="h-5 w-5 text-primary" />
                       What can you do with receipt scanning?
                     </h2>
-                    <ul className="space-y-2 text-sm text-muted-foreground">
-                      <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /><span>Track spending by category without manually entering anything</span></li>
-                      <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /><span>Keep digital copies of receipts for returns or expense reports</span></li>
-                      <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /><span>Check if you were charged the right price at checkout</span></li>
-                      <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" /><span>Match receipts to credit card charges automatically</span></li>
+                    <ul className="space-y-2 text-base text-muted-foreground">
+                      <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" /><span>Track spending by category without manually entering anything</span></li>
+                      <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" /><span>Keep digital copies of receipts for returns or expense reports</span></li>
+                      <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" /><span>Check if you were charged the right price at checkout</span></li>
+                      <li className="flex items-start gap-2"><CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" /><span>Match receipts to credit card charges automatically</span></li>
                     </ul>
                     <div className="mt-4 pt-4 border-t text-sm">
                       <p className="font-medium mb-1">Free apps that scan receipts:</p>
@@ -187,7 +187,7 @@ export default function ReceiptScannerDemo() {
                   <h2 className="font-bold text-lg mb-2">
                     {mode === 'uploading' ? 'Reading your receipt…' : 'Identifying items and prices…'}
                   </h2>
-                  <p className="text-sm text-muted-foreground">{fileName}</p>
+                  <p className="text-base text-muted-foreground">{fileName}</p>
                   <div className="mt-4 flex justify-center">
                     <div className="flex gap-1">
                       {[0, 1, 2].map((i) => (
@@ -205,10 +205,10 @@ export default function ReceiptScannerDemo() {
 
             {mode === 'result' && (
               <>
-                <Card className="border-2 border-green-200 dark:border-green-800">
+                <Card className="border-2 border-success-foreground/25 ">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-4">
-                      <CheckCircle2 className="h-5 w-5 text-green-600" />
+                      <CheckCircle2 className="h-5 w-5 text-success-foreground" />
                       <h2 className="font-bold text-lg">Receipt scanned successfully</h2>
                     </div>
                     <div className="flex justify-between mb-4 text-sm">
@@ -246,7 +246,7 @@ export default function ReceiptScannerDemo() {
                 <Card>
                   <CardContent className="p-5">
                     <div className="flex items-start gap-3">
-                      <AlertCircle className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
+                      <AlertCircle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                       <div className="text-sm text-muted-foreground">
                         <strong className="text-foreground">This is a demo.</strong> The items shown
                         are sample data, not from your actual receipt. A real app like Expensify or

@@ -273,18 +273,18 @@ export default function AskTekSure() {
               <div className="p-3 rounded-2xl bg-teal-600 text-white shadow-md">
                 <MessageCircleQuestion className="h-7 w-7" aria-hidden="true" />
               </div>
-              <Badge className="bg-white/80 text-teal-900 hover:bg-white text-base px-3 py-1">
+              <Badge className="bg-white/80 text-success-foreground hover:bg-card text-base px-3 py-1">
                 <Sparkles className="h-3.5 w-3.5 mr-1.5" aria-hidden="true" />
                 Community Q&amp;A
               </Badge>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white mb-5 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground dark:text-white mb-5 leading-tight">
               Ask TekSure
-              <span className="block text-teal-700 dark:text-teal-300 mt-2">
+              <span className="block text-success-foreground mt-2">
                 Real answers, no jargon.
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 leading-relaxed">
+            <p className="text-lg md:text-xl text-foreground leading-relaxed">
               Got a tech question? A real person will answer, and everyone can
               learn from the thread.
             </p>
@@ -295,7 +295,7 @@ export default function AskTekSure() {
       <main className="container mx-auto px-4 py-10 md:py-14" id="main-content">
         {/* ─── Top bar ──────────────────────────────────────────────────── */}
         <section className="mb-10" aria-label="Search and filter questions">
-          <Card className="border-2 border-teal-200 dark:border-teal-900 bg-white dark:bg-slate-900 shadow-sm">
+          <Card className="border-2 border-success-foreground/25 bg-card shadow-sm">
             <CardContent className="p-5 md:p-6">
               <div className="flex flex-col md:flex-row gap-4 md:items-center">
                 <AskQuestionDialog
@@ -307,7 +307,7 @@ export default function AskTekSure() {
                   <label className="relative flex-1 min-w-0">
                     <span className="sr-only">Search questions</span>
                     <Search
-                      className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-slate-400 pointer-events-none"
+                      className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground pointer-events-none"
                       aria-hidden="true"
                     />
                     <Input
@@ -405,10 +405,10 @@ export default function AskTekSure() {
 
           {/* ─── Sidebar ─────────────────────────────────────────────── */}
           <aside className="space-y-6" aria-label="Community sidebar">
-            <Card className="border-teal-200 dark:border-teal-900">
+            <Card className="border-success-foreground/25 ">
               <CardContent className="p-5">
                 <div className="flex items-center gap-2 mb-3">
-                  <Sparkles className="h-5 w-5 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+                  <Sparkles className="h-5 w-5 text-success-foreground " aria-hidden="true" />
                   <h2 className="text-lg font-bold">Popular this week</h2>
                 </div>
                 {popularThisWeek.length === 0 ? (
@@ -421,14 +421,14 @@ export default function AskTekSure() {
                     {popularThisWeek.map((q) => (
                       <li key={q.id} className="flex items-start gap-3">
                         <ThumbsUp
-                          className="h-4 w-4 mt-1 text-teal-600 dark:text-teal-400 flex-shrink-0"
+                          className="h-4 w-4 mt-1 text-success-foreground flex-shrink-0"
                           aria-hidden="true"
                         />
                         <div className="min-w-0">
                           <p className="text-base font-medium leading-snug">
                             {truncateTitle(q.question, 85)}
                           </p>
-                          <p className="text-sm text-muted-foreground mt-0.5">
+                          <p className="text-base text-muted-foreground mt-0.5">
                             {q.helpful_count} found this helpful
                           </p>
                         </div>
@@ -439,23 +439,23 @@ export default function AskTekSure() {
               </CardContent>
             </Card>
 
-            <Card className="border-rose-200 dark:border-rose-900 bg-rose-50/60 dark:bg-rose-950/30">
+            <Card className="border-danger-foreground/25 bg-rose-50/60 dark:bg-rose-950/30">
               <CardContent className="p-5">
                 <div className="flex items-center gap-2 mb-3">
-                  <Users className="h-5 w-5 text-rose-600 dark:text-rose-400" aria-hidden="true" />
+                  <Users className="h-5 w-5 text-danger-foreground " aria-hidden="true" />
                   <h2 className="text-lg font-bold">Community guidelines</h2>
                 </div>
                 <ul className="space-y-2.5 text-base">
                   <li className="flex gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-teal-600 dark:text-teal-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <CheckCircle2 className="h-5 w-5 text-success-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <span>Be kind. Everyone starts somewhere.</span>
                   </li>
                   <li className="flex gap-2">
-                    <Lock className="h-5 w-5 text-rose-600 dark:text-rose-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <Lock className="h-5 w-5 text-danger-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <span>No account numbers, passwords, or other personal info.</span>
                   </li>
                   <li className="flex gap-2">
-                    <ShieldAlert className="h-5 w-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <ShieldAlert className="h-5 w-5 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <span>Keep it on-topic: real questions about tech.</span>
                   </li>
                 </ul>
@@ -475,16 +475,16 @@ export default function AskTekSure() {
 
           <div className="space-y-4">
             {FAQ_ITEMS.map((item) => (
-              <Card key={item.q} className="border-slate-200 dark:border-slate-700">
+              <Card key={item.q} className="border-border ">
                 <CardContent className="p-5 md:p-6">
                   <h3 className="text-lg md:text-xl font-bold mb-2 flex items-start gap-2">
                     <HelpCircle
-                      className="h-5 w-5 text-teal-600 dark:text-teal-400 flex-shrink-0 mt-1"
+                      className="h-5 w-5 text-success-foreground flex-shrink-0 mt-1"
                       aria-hidden="true"
                     />
                     {item.q}
                   </h3>
-                  <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 leading-relaxed pl-7">
+                  <p className="text-base md:text-lg text-foreground leading-relaxed pl-7">
                     {item.a}
                   </p>
                 </CardContent>
@@ -518,9 +518,9 @@ function LoadingState({ label }: { label: string }) {
 
 function ErrorState() {
   return (
-    <Card className="border-rose-300 bg-rose-50 dark:bg-rose-950/40 dark:border-rose-900">
+    <Card className="border-danger-foreground/25 bg-danger ">
       <CardContent className="p-6 text-center">
-        <ShieldAlert className="h-8 w-8 mx-auto mb-3 text-rose-600 dark:text-rose-400" />
+        <ShieldAlert className="h-8 w-8 mx-auto mb-3 text-danger-foreground " />
         <p className="text-lg font-semibold">We couldn't load questions right now.</p>
         <p className="text-base text-muted-foreground mt-1">
           Please refresh the page in a moment.
@@ -532,9 +532,9 @@ function ErrorState() {
 
 function EmptyState({ title, body }: { title: string; body: string }) {
   return (
-    <Card className="border-dashed border-2 border-slate-300 dark:border-slate-700 bg-slate-50/60 dark:bg-slate-900/40">
+    <Card className="border-dashed border-2 border-border bg-slate-50/60 dark:bg-slate-900/40">
       <CardContent className="p-8 text-center">
-        <MessageSquare className="h-10 w-10 mx-auto mb-3 text-slate-400" aria-hidden="true" />
+        <MessageSquare className="h-10 w-10 mx-auto mb-3 text-muted-foreground" aria-hidden="true" />
         <p className="text-lg font-semibold mb-1">{title}</p>
         <p className="text-base text-muted-foreground">{body}</p>
       </CardContent>
@@ -572,11 +572,11 @@ function AnsweredQuestionCard({
   const answeredBy = item.answered_by?.trim() || 'TekSure Team';
 
   return (
-    <Card className="border-slate-200 dark:border-slate-700 hover:border-teal-400 dark:hover:border-teal-700 transition-colors">
+    <Card className="border-border hover:border-teal-400 transition-colors">
       <CardContent className="p-5 md:p-6">
         <div className="flex items-start gap-3 mb-3">
           <CategoryBadge category={item.category} />
-          <span className="inline-flex items-center gap-1 text-sm text-muted-foreground ml-auto">
+          <span className="inline-flex items-center gap-1 text-base text-muted-foreground ml-auto">
             <Clock className="h-3.5 w-3.5" aria-hidden="true" />
             Asked {formatDate(item.created_at)}
           </span>
@@ -589,10 +589,10 @@ function AnsweredQuestionCard({
           aria-controls={`answer-${item.id}`}
           className="block w-full text-left min-h-14 py-1 group focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 rounded"
         >
-          <h3 className="text-lg md:text-xl font-bold text-slate-900 dark:text-white leading-snug group-hover:text-teal-700 dark:group-hover:text-teal-300">
+          <h3 className="text-lg md:text-xl font-bold text-foreground dark:text-white leading-snug group-hover:text-success-foreground ">
             {item.question}
           </h3>
-          <p className="text-sm text-muted-foreground mt-1">
+          <p className="text-base text-muted-foreground mt-1">
             Asked by {askedBy}
             {' · '}
             <span className="underline">{expanded ? 'Hide answer' : 'Show answer'}</span>
@@ -609,18 +609,18 @@ function AnsweredQuestionCard({
                 <p className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
                   What they tried
                 </p>
-                <p className="text-base text-slate-700 dark:text-slate-200 mt-1 whitespace-pre-wrap">
+                <p className="text-base text-foreground mt-1 whitespace-pre-wrap">
                   {item.context}
                 </p>
               </div>
             )}
-            <p className="text-sm font-semibold uppercase tracking-wide text-teal-700 dark:text-teal-300">
+            <p className="text-sm font-semibold uppercase tracking-wide text-success-foreground ">
               Answer
             </p>
-            <p className="text-base md:text-lg text-slate-800 dark:text-slate-100 mt-1 leading-relaxed whitespace-pre-wrap">
+            <p className="text-base md:text-lg text-foreground mt-1 leading-relaxed whitespace-pre-wrap">
               {item.answer}
             </p>
-            <p className="text-sm text-muted-foreground mt-3">
+            <p className="text-base text-muted-foreground mt-3">
               Answered by <span className="font-semibold">{answeredBy}</span>
               {item.answered_at ? ` · ${formatDate(item.answered_at)}` : ''}
             </p>
@@ -638,7 +638,7 @@ function AnsweredQuestionCard({
             className={`min-h-14 px-4 text-base ${
               hasVoted
                 ? 'bg-teal-600 hover:bg-teal-700 text-white'
-                : 'border-teal-400 text-teal-700 dark:text-teal-300 hover:bg-teal-50 dark:hover:bg-teal-950'
+                : 'border-teal-400 text-success-foreground hover:bg-success dark:hover:bg-teal-950'
             }`}
           >
             {voting ? (
@@ -649,7 +649,7 @@ function AnsweredQuestionCard({
             {hasVoted ? 'Thanks!' : 'This helped me'}
             <span className="ml-2 font-bold">({item.helpful_count})</span>
           </Button>
-          <span className="text-sm text-muted-foreground">
+          <span className="text-base text-muted-foreground">
             Comments coming soon
           </span>
         </div>
@@ -661,29 +661,29 @@ function AnsweredQuestionCard({
 function UnansweredQuestionCard({ item }: { item: CommunityQuestion }) {
   const askedBy = item.name?.trim() ? item.name : 'Anonymous';
   return (
-    <Card className="border-amber-200 dark:border-amber-900 bg-amber-50/40 dark:bg-amber-950/20">
+    <Card className="border-warn-foreground/25 bg-amber-50/40 dark:bg-amber-950/20">
       <CardContent className="p-5 md:p-6">
         <div className="flex items-start gap-3 mb-3 flex-wrap">
           <CategoryBadge category={item.category} />
-          <Badge className="bg-amber-200 text-amber-900 dark:bg-amber-900/60 dark:text-amber-100">
+          <Badge className="bg-amber-200 text-warn-foreground dark:bg-amber-900/60 ">
             <Clock className="h-3.5 w-3.5 mr-1" aria-hidden="true" />
             No answer yet
           </Badge>
-          <span className="inline-flex items-center gap-1 text-sm text-muted-foreground ml-auto">
+          <span className="inline-flex items-center gap-1 text-base text-muted-foreground ml-auto">
             Asked {formatDate(item.created_at)}
           </span>
         </div>
-        <h3 className="text-lg md:text-xl font-bold text-slate-900 dark:text-white leading-snug">
+        <h3 className="text-lg md:text-xl font-bold text-foreground dark:text-white leading-snug">
           {item.question}
         </h3>
-        <p className="text-sm text-muted-foreground mt-1">Asked by {askedBy}</p>
+        <p className="text-base text-muted-foreground mt-1">Asked by {askedBy}</p>
         {item.context && (
-          <p className="mt-3 text-base text-slate-700 dark:text-slate-200 whitespace-pre-wrap">
+          <p className="mt-3 text-base text-foreground whitespace-pre-wrap">
             <span className="font-semibold">What they tried: </span>
             {item.context}
           </p>
         )}
-        <p className="mt-4 text-sm text-muted-foreground italic">
+        <p className="mt-4 text-base text-muted-foreground italic">
           Community replies are coming soon. Know the answer? Email us and
           we'll credit you on the thread.
         </p>
@@ -819,7 +819,7 @@ function AskQuestionDialog({
 
           <div>
             <label htmlFor="q-category" className="text-base font-semibold block mb-1">
-              Category <span className="text-rose-600">*</span>
+              Category <span className="text-danger-foreground">*</span>
             </label>
             <Select value={category} onValueChange={setCategory}>
               <SelectTrigger id="q-category" className="h-12 min-h-14 text-base">
@@ -838,10 +838,10 @@ function AskQuestionDialog({
           <div>
             <div className="flex items-baseline justify-between mb-1">
               <label htmlFor="q-question" className="text-base font-semibold">
-                Your question <span className="text-rose-600">*</span>
+                Your question <span className="text-danger-foreground">*</span>
               </label>
               <span
-                className={`text-sm ${
+                className={`text-base ${
                   remaining < 0 ? 'text-rose-600 font-semibold' : 'text-muted-foreground'
                 }`}
                 aria-live="polite"
@@ -858,7 +858,7 @@ function AskQuestionDialog({
               required
               aria-describedby="q-question-help"
             />
-            <p id="q-question-help" className="text-sm text-muted-foreground mt-1">
+            <p id="q-question-help" className="text-base text-muted-foreground mt-1">
               Up to {QUESTION_MAX} characters. The more specific, the better.
             </p>
           </div>

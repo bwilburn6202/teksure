@@ -90,7 +90,7 @@ export default function PrintableCheckRegister() {
   const reconciledBalance = parseFloat((start + clearedTotal).toFixed(2));
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Printable Check Register | TekSure"
         description="Track checks, withdrawals, and deposits. Auto-calculates running balance and reconciled balance. Print a fresh register page anytime."
@@ -99,10 +99,10 @@ export default function PrintableCheckRegister() {
       <div className="max-w-3xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <FileText className="h-7 w-7 text-emerald-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Check Register</h1>
+            <FileText className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Check Register</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Track every check, withdrawal, and deposit. The tool keeps the running balance for you.
           </p>
         </div>
@@ -115,12 +115,12 @@ export default function PrintableCheckRegister() {
               <Input id="start-balance" type="number" step="0.01" placeholder="0.00" value={startingBalance} onChange={e => setStartingBalance(e.target.value)} className="mt-1 text-base" />
             </div>
             <div className="text-center">
-              <p className="text-xs text-gray-500">Current Balance</p>
+              <p className="text-sm text-muted-foreground">Current Balance</p>
               <p className={`text-2xl font-bold ${currentBalance >= 0 ? "text-emerald-700" : "text-red-700"}`}>{formatMoney(currentBalance)}</p>
             </div>
             <div className="text-center">
-              <p className="text-xs text-gray-500">Reconciled (cleared only)</p>
-              <p className="text-xl font-bold text-blue-700">{formatMoney(reconciledBalance)}</p>
+              <p className="text-sm text-muted-foreground">Reconciled (cleared only)</p>
+              <p className="text-xl font-bold text-info-foreground">{formatMoney(reconciledBalance)}</p>
             </div>
           </CardContent>
         </Card>
@@ -129,7 +129,7 @@ export default function PrintableCheckRegister() {
         <Card className="mb-4 print:hidden">
           <CardHeader className="pb-2">
             <CardTitle className="text-lg flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-emerald-600" />
+              <PlusCircle className="h-5 w-5 text-success-foreground" />
               Add Entry
             </CardTitle>
           </CardHeader>
@@ -138,14 +138,14 @@ export default function PrintableCheckRegister() {
               <button
                 type="button"
                 onClick={() => setForm(f => ({ ...f, type: "withdrawal" }))}
-                className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${form.type === "withdrawal" ? "bg-red-50 border-red-300 text-red-800" : "bg-white border-gray-200 text-gray-700"}`}
+                className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${form.type === "withdrawal" ? "bg-red-50 border-danger-foreground/25 text-red-800" : "bg-white border-border text-gray-700"}`}
               >
                 Money out (check / withdrawal)
               </button>
               <button
                 type="button"
                 onClick={() => setForm(f => ({ ...f, type: "deposit" }))}
-                className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${form.type === "deposit" ? "bg-green-50 border-green-300 text-green-800" : "bg-white border-gray-200 text-gray-700"}`}
+                className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${form.type === "deposit" ? "bg-green-50 border-success-foreground/25 text-green-800" : "bg-white border-border text-gray-700"}`}
               >
                 Money in (deposit)
               </button>
@@ -156,7 +156,7 @@ export default function PrintableCheckRegister() {
               <Input placeholder={form.type === "withdrawal" ? "Payee" : "From"} value={form.payee} onChange={e => setForm(f => ({ ...f, payee: e.target.value }))} className="text-base sm:col-span-1" />
               <Input type="number" step="0.01" min="0" placeholder="Amount" value={form.amount} onChange={e => setForm(f => ({ ...f, amount: e.target.value }))} className="text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} className="text-base">Add Entry</Button>
           </CardContent>
         </Card>
@@ -168,7 +168,7 @@ export default function PrintableCheckRegister() {
               <Printer className="h-4 w-4" />
               Print Register
             </Button>
-            <Button variant="ghost" onClick={reset} className="gap-2 text-gray-500">
+            <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground">
               <RotateCcw className="h-4 w-4" />
               Reset
             </Button>
@@ -177,10 +177,10 @@ export default function PrintableCheckRegister() {
 
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <FileText className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <FileText className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No entries yet.</p>
-              <p className="text-sm mt-1">Set your starting balance and add your first entry above.</p>
+              <p className="text-base mt-1">Set your starting balance and add your first entry above.</p>
             </CardContent>
           </Card>
         ) : (
@@ -188,7 +188,7 @@ export default function PrintableCheckRegister() {
             <CardContent className="px-2 py-2 overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
-                  <tr className="border-b text-xs text-gray-500 uppercase">
+                  <tr className="border-b text-xs text-muted-foreground uppercase">
                     <th className="text-left py-2 px-2">Date</th>
                     <th className="text-left py-2 px-2">#</th>
                     <th className="text-left py-2 px-2">Payee / Source</th>
@@ -202,17 +202,17 @@ export default function PrintableCheckRegister() {
                 <tbody>
                   {withRunning.entries.map(e => (
                     <tr key={e.id} className={`border-b ${e.cleared ? "bg-blue-50/30" : ""}`}>
-                      <td className="py-2 px-2 text-gray-700">{formatDate(e.date)}</td>
-                      <td className="py-2 px-2 text-gray-500">{e.checkNumber || "—"}</td>
-                      <td className="py-2 px-2 font-medium text-gray-900 truncate max-w-[180px]">{e.payee}</td>
-                      <td className="py-2 px-2 text-right text-red-700">{e.type === "withdrawal" ? formatMoney(e.amount) : ""}</td>
-                      <td className="py-2 px-2 text-right text-green-700">{e.type === "deposit" ? formatMoney(e.amount) : ""}</td>
+                      <td className="py-2 px-2 text-foreground">{formatDate(e.date)}</td>
+                      <td className="py-2 px-2 text-muted-foreground">{e.checkNumber || "—"}</td>
+                      <td className="py-2 px-2 font-medium text-foreground truncate max-w-[180px]">{e.payee}</td>
+                      <td className="py-2 px-2 text-right text-danger-foreground">{e.type === "withdrawal" ? formatMoney(e.amount) : ""}</td>
+                      <td className="py-2 px-2 text-right text-success-foreground">{e.type === "deposit" ? formatMoney(e.amount) : ""}</td>
                       <td className={`py-2 px-2 text-right font-semibold ${e.balance >= 0 ? "text-gray-900" : "text-red-700"}`}>{formatMoney(e.balance)}</td>
                       <td className="py-2 px-2 text-center print:hidden">
                         <input type="checkbox" checked={e.cleared} onChange={() => toggleCleared(e.id)} aria-label="Cleared" />
                       </td>
                       <td className="py-2 px-2 print:hidden">
-                        <Button variant="ghost" size="icon" onClick={() => remove(e.id)} className="h-6 w-6 text-red-400 hover:text-red-600">
+                        <Button variant="ghost" size="icon" onClick={() => remove(e.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground">
                           <Trash2 className="h-3 w-3" />
                         </Button>
                       </td>
@@ -224,15 +224,15 @@ export default function PrintableCheckRegister() {
           </Card>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Check off entries (✓) as they show up on your bank statement. The "reconciled" balance should match the bank's running balance.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

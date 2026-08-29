@@ -19,7 +19,7 @@ export default function MerlinBirdSongID() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Magic feature</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hold phone toward singing bird.</li>
               <li>App identifies in seconds.</li>
               <li>Highlights different birds singing simultaneously.</li>
@@ -33,7 +33,7 @@ export default function MerlinBirdSongID() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other Merlin features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photo ID — identify by photograph.</li>
               <li>Step-by-Step ID — answer questions.</li>
               <li>Free bird packs by region.</li>
@@ -47,7 +47,7 @@ export default function MerlinBirdSongID() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pair with eBird</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>eBird = sister app, also free.</li>
               <li>Log every bird you see.</li>
               <li>Build life list.</li>
@@ -61,7 +61,7 @@ export default function MerlinBirdSongID() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for senior birders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hearing loss — see what bird is singing.</li>
               <li>Vision issues — sound ID without seeing.</li>
               <li>Backyard birding from window.</li>
@@ -75,7 +75,7 @@ export default function MerlinBirdSongID() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Merlin Bird ID free.</li>
               <li>Download bird pack for your region.</li>
               <li>Tap Sound ID button.</li>
@@ -89,7 +89,7 @@ export default function MerlinBirdSongID() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Birding becomes addictive</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many seniors discover birding via Merlin.</li>
               <li>Listen for birds even on errands.</li>
               <li>Trip planning becomes bird-focused.</li>
@@ -103,7 +103,7 @@ export default function MerlinBirdSongID() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Test in your backyard today</h3>
-            <p className="text-sm text-muted-foreground">Download Merlin Bird ID free, install bird pack for your region, then step into your backyard. Open Sound ID, point phone toward any bird sound. Within seconds, you&apos;ll know what bird you&apos;re hearing — perhaps for the first time in years. Many seniors are amazed that 5–10 different bird species visit their backyard daily.</p>
+            <p className="text-base text-muted-foreground">Download Merlin Bird ID free, install bird pack for your region, then step into your backyard. Open Sound ID, point phone toward any bird sound. Within seconds, you&apos;ll know what bird you&apos;re hearing — perhaps for the first time in years. Many seniors are amazed that 5–10 different bird species visit their backyard daily.</p>
           </CardContent>
         </Card>
       </main>

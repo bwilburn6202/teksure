@@ -68,7 +68,7 @@ export default function WalletMedicalCard() {
   );
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Wallet Medical Card | TekSure"
         description="Build a printable wallet-sized medical ID card with emergency contacts, allergies, medications, and doctor info. Print, fold, carry."
@@ -77,10 +77,10 @@ export default function WalletMedicalCard() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-0 print:max-w-full">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <Siren className="h-7 w-7 text-red-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Wallet Medical Card</h1>
+            <Siren className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Wallet Medical Card</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Fill in your details, then print and tuck the card in your wallet. First responders will be glad you did.
           </p>
         </div>
@@ -136,7 +136,7 @@ export default function WalletMedicalCard() {
               </div>
             </div>
             <div className="border-t pt-3">
-              <p className="text-sm font-semibold text-gray-700 mb-2">Emergency Contact 1</p>
+              <p className="text-base font-semibold text-foreground mb-2">Emergency Contact 1</p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                 <Input placeholder="Name" value={data.contact1.name} onChange={e => updateContact("contact1", "name", e.target.value)} className="text-base" />
                 <Input placeholder="Relation (son, daughter, etc.)" value={data.contact1.relation} onChange={e => updateContact("contact1", "relation", e.target.value)} className="text-base" />
@@ -144,7 +144,7 @@ export default function WalletMedicalCard() {
               </div>
             </div>
             <div>
-              <p className="text-sm font-semibold text-gray-700 mb-2">Emergency Contact 2</p>
+              <p className="text-base font-semibold text-foreground mb-2">Emergency Contact 2</p>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2">
                 <Input placeholder="Name" value={data.contact2.name} onChange={e => updateContact("contact2", "name", e.target.value)} className="text-base" />
                 <Input placeholder="Relation" value={data.contact2.relation} onChange={e => updateContact("contact2", "relation", e.target.value)} className="text-base" />
@@ -161,15 +161,15 @@ export default function WalletMedicalCard() {
         {/* Card preview */}
         {filled && (
           <div className="mb-6">
-            <p className="text-sm font-semibold text-gray-600 mb-2 print:hidden">Preview (this is what will print):</p>
-            <div className="border-2 border-red-500 rounded-lg overflow-hidden bg-white print:border-2 print:rounded-none" style={{ width: "100%", maxWidth: "640px" }}>
+            <p className="text-base font-semibold text-muted-foreground mb-2 print:hidden">Preview (this is what will print):</p>
+            <div className="border-2 border-red-500 rounded-lg overflow-hidden bg-card print:border-2 print:rounded-none" style={{ width: "100%", maxWidth: "640px" }}>
               <div className="bg-red-600 text-white px-3 py-2 flex items-center gap-2">
                 <Siren className="h-5 w-5" />
                 <span className="font-bold text-lg tracking-wide">EMERGENCY MEDICAL INFO</span>
               </div>
               <div className="p-3 text-sm space-y-2">
                 {data.fullName && (
-                  <div className="flex justify-between border-b border-gray-200 pb-1">
+                  <div className="flex justify-between border-b border-border pb-1">
                     <span><span className="font-semibold">Name:</span> {data.fullName}</span>
                     {data.dob && <span><span className="font-semibold">DOB:</span> {data.dob}</span>}
                     {data.bloodType && <span><span className="font-semibold">Blood:</span> {data.bloodType}</span>}
@@ -177,8 +177,8 @@ export default function WalletMedicalCard() {
                 )}
                 {(data.conditions || data.allergies) && (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                    {data.conditions && <div><span className="font-semibold text-red-700">Conditions: </span>{data.conditions}</div>}
-                    {data.allergies && <div><span className="font-semibold text-red-700">Allergies: </span>{data.allergies}</div>}
+                    {data.conditions && <div><span className="font-semibold text-danger-foreground">Conditions: </span>{data.conditions}</div>}
+                    {data.allergies && <div><span className="font-semibold text-danger-foreground">Allergies: </span>{data.allergies}</div>}
                   </div>
                 )}
                 {data.medications && (
@@ -196,7 +196,7 @@ export default function WalletMedicalCard() {
                 )}
                 {(data.contact1.name || data.contact2.name) && (
                   <div className="border-t pt-1 mt-1">
-                    <p className="font-semibold text-red-700">In Emergency, Contact:</p>
+                    <p className="font-semibold text-danger-foreground">In Emergency, Contact:</p>
                     {data.contact1.name && (
                       <div>{data.contact1.name}{data.contact1.relation && ` (${data.contact1.relation})`} — {data.contact1.phone}</div>
                     )}
@@ -218,21 +218,21 @@ export default function WalletMedicalCard() {
             <Printer className="h-4 w-4" />
             Print Card
           </Button>
-          <Button variant="ghost" onClick={reset} className="gap-2 text-gray-500">
+          <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground">
             <RotateCcw className="h-4 w-4" />
             Clear All
           </Button>
         </div>
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Tip: </span>
               After printing, fold the card in half and place it in your wallet behind your ID. Tell a family member you carry it so they can mention it if you cannot.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

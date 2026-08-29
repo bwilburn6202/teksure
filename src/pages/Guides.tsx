@@ -103,9 +103,9 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
         )}
         {guide.difficulty && (
           <span className={`absolute top-2 left-2 text-sm font-semibold px-2 py-0.5 rounded-full ${
-            guide.difficulty === 'Beginner' ? 'bg-green-100 text-green-700 dark:bg-green-900/80 dark:text-green-300' :
-            guide.difficulty === 'Intermediate' ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/80 dark:text-amber-300' :
-            'bg-red-100 text-red-700 dark:bg-red-900/80 dark:text-red-300'
+            guide.difficulty === 'Beginner' ? 'bg-green-100 text-success-foreground dark:bg-green-900/80 dark:text-green-300' :
+            guide.difficulty === 'Intermediate' ? 'bg-amber-100 text-warn-foreground dark:bg-amber-900/80 dark:text-amber-300' :
+            'bg-red-100 text-danger-foreground dark:bg-red-900/80 dark:text-red-300'
           }`}>
             {guide.difficulty}
           </span>
@@ -117,11 +117,11 @@ const GuideCard = ({ guide, completed }: { guide: typeof guides[0]; completed?: 
             {categoryLabels[guide.category]}
           </Badge>
           {guide.verifiedHelpful && (
-            <Badge variant="outline" className="text-sm border-green-500/50 text-green-600 dark:text-green-400 gap-1">
+            <Badge variant="outline" className="text-sm border-green-500/50 text-success-foreground gap-1">
               <CheckCircle2 className="h-2.5 w-2.5" /> Verified Helpful
             </Badge>
           )}
-          <span className="flex items-center gap-1 text-sm text-muted-foreground">
+          <span className="flex items-center gap-1 text-base text-muted-foreground">
             <Clock className="h-2.5 w-2.5" /> {guide.readTime}
           </span>
         </div>
@@ -156,14 +156,14 @@ const GuideListItem = ({ guide, completed }: { guide: typeof guides[0]; complete
       <Badge variant="secondary" className="text-sm font-medium shrink-0 hidden sm:inline-flex">
         {categoryLabels[guide.category]}
       </Badge>
-      <span aria-label={guide.difficulty ? `Difficulty: ${guide.difficulty}` : undefined} className={`text-sm font-medium shrink-0 hidden md:inline ${
+      <span aria-label={guide.difficulty ? `Difficulty: ${guide.difficulty}` : undefined} className={`text-base font-medium shrink-0 hidden md:inline ${
         guide.difficulty === 'Beginner' ? 'text-green-600' :
         guide.difficulty === 'Intermediate' ? 'text-amber-600' : 'text-red-500'
       }`}>
         <span aria-hidden="true">{guide.difficulty === 'Beginner' ? '●' : guide.difficulty === 'Intermediate' ? '●●' : '●●●'}</span>
       </span>
       <span className="text-sm text-muted-foreground shrink-0 w-12 text-right">{guide.readTime}</span>
-      {completed && <CheckCircle2 className="h-3.5 w-3.5 text-green-500 shrink-0" />}
+      {completed && <CheckCircle2 className="h-3.5 w-3.5 text-success-foreground shrink-0" />}
     </div>
   </Link>
 );
@@ -189,7 +189,7 @@ function GuidesEmptyState({
         <h2 className="text-lg font-semibold mb-2">
           No guides found for "{search}" in {categoryLabels[activeTab as GuideCategory]}
         </h2>
-        <p className="text-sm text-muted-foreground mb-6">
+        <p className="text-base text-muted-foreground mb-6">
           Try searching in all categories, or use a different word.
         </p>
         <button
@@ -209,7 +209,7 @@ function GuidesEmptyState({
         <h2 className="text-lg font-semibold mb-2">
           No guides matched "{search}"
         </h2>
-        <p className="text-sm text-muted-foreground mb-6">
+        <p className="text-base text-muted-foreground mb-6">
           Try using a simpler word, or pick one of these popular topics:
         </p>
         <div className="flex flex-wrap justify-center gap-2 mb-6">
@@ -387,7 +387,7 @@ function CategoryCard({ cat, topGuides, count }: { cat: GuideCategory; topGuides
           <h3 className="font-bold text-xl leading-tight">
             {categoryLabels[cat]}
           </h3>
-          <p className={`text-sm font-semibold ${onAccent} opacity-80`}>
+          <p className={`text-base font-semibold ${onAccent} opacity-80`}>
             {count} {count === 1 ? 'guide' : 'guides'}
           </p>
         </div>
@@ -593,15 +593,15 @@ const Guides = () => {
       {/* Progress banner */}
       {progressStats.completed > 0 && (
         <div className="container mt-6">
-          <div className="flex items-center gap-4 p-4 rounded-2xl bg-green-50 dark:bg-green-950/20 border-2 border-green-200 dark:border-green-900">
-            <CheckCircle2 className="h-6 w-6 text-green-600 shrink-0" />
+          <div className="flex items-center gap-4 p-4 rounded-2xl bg-success border-2 border-success-foreground/25 ">
+            <CheckCircle2 className="h-6 w-6 text-success-foreground shrink-0" />
             <div className="flex-1 min-w-0">
-              <p className="text-base font-semibold text-green-800 dark:text-green-300">
+              <p className="text-base font-semibold text-success-foreground ">
                 You've completed {progressStats.completed} of {progressStats.total} guides — nicely done.
               </p>
               <Progress value={progressStats.pct} className="h-2 mt-2 bg-green-200 dark:bg-green-900" />
             </div>
-            <span className="text-lg font-bold text-green-700 dark:text-green-300">{progressStats.pct}%</span>
+            <span className="text-lg font-bold text-success-foreground ">{progressStats.pct}%</span>
           </div>
         </div>
       )}
@@ -688,7 +688,7 @@ const Guides = () => {
       <section className="bg-gradient-to-b from-background via-amber-50/40 to-background dark:via-amber-950/10 py-12 md:py-16 border-y-2 border-border">
         <div className="container">
           <div className="max-w-2xl mb-8 md:mb-10">
-            <p className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-amber-700 dark:text-amber-400 mb-2">
+            <p className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-warn-foreground mb-2">
               <Flame className="h-4 w-4" /> Featured
             </p>
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight mb-2">
@@ -732,7 +732,7 @@ const Guides = () => {
         <div className="container">
           <div className="flex items-end justify-between gap-4 mb-6">
             <div>
-              <p className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-rose-700 dark:text-rose-400 mb-2">
+              <p className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-danger-foreground mb-2">
                 <TrendingUp className="h-4 w-4" /> Trending this week
               </p>
               <h2 className="text-2xl md:text-3xl font-bold tracking-tight">
@@ -765,7 +765,7 @@ const Guides = () => {
           />
           <div className="relative">
             <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-background/80 backdrop-blur shadow-md mb-4">
-              <Brain className="h-8 w-8 text-amber-600" />
+              <Brain className="h-8 w-8 text-warn-foreground" />
             </div>
             <h2 className="text-2xl md:text-4xl font-bold tracking-tight mb-3">
               Can't find what you need?

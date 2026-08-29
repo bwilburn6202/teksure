@@ -22,7 +22,7 @@ export default function SeniorPhoneTransfer() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">iPhone to Android</h2><p>Google Drive backup. Or Smart Switch handles iCloud transfer.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Store help</h2><p>FREE. Buy iPhone there. Genius transfers everything for you.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best Buy Geek Squad</h2><p>$30-$100. They handle full transfer if buying from them.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Don&apos;t reset old phone for a week. Let any missed apps catch up.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Don&apos;t reset old phone for a week. Let any missed apps catch up.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

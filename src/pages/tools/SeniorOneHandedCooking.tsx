@@ -22,7 +22,7 @@ export default function SeniorOneHandedCooking() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Electric can opener</h2><p>$30. One-button operation.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Jar opener</h2><p>$15. Mounts under cabinet. Press jar against. One hand.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Heat-resistant gloves</h2><p>$20. Safer than mitts. Better grip with one hand.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Stroke recovery occupational therapists teach one-handed cooking.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Stroke recovery occupational therapists teach one-handed cooking.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorRaisedBeds() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best height</h2><p>30-32&quot; lets you sit on edge or stand. Most senior-friendly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Self-watering</h2><p>$150 self-watering raised beds. Less work. Steady moisture.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Vertical garden</h2><p>$80 wall-mount. Strawberries, herbs. No bending required.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Vego raised beds = senior gardening forever. Saves backs.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Vego raised beds = senior gardening forever. Saves backs.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorPhoneInsurance() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SquareTrade</h2><p>$8/month. 30-day return policy. Allstate-owned.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Credit card protection</h2><p>Premium cards (Chase Sapphire, Amex Platinum) include phone protection. FREE.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip insurance if</h2><p>Old phone or careful person. Insurance only worth it if you drop phones.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: AppleCare+ within 60 days of phone purchase only. Don&apos;t wait.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: AppleCare+ within 60 days of phone purchase only. Don&apos;t wait.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

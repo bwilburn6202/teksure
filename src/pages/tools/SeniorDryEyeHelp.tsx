@@ -22,7 +22,7 @@ export default function SeniorDryEyeHelp() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Warm compresses</h2><p>Free. 10 minutes daily. Unblocks oil glands. Real relief.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Humidifier</h2><p>$30. Bedroom humidifier reduces overnight dry eye.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Computer breaks</h2><p>20-20-20 rule. Every 20 min, look 20 feet away for 20 seconds.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Warm compresses + drops together. 1 month relief for most.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Warm compresses + drops together. 1 month relief for most.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

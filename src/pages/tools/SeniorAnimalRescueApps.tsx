@@ -22,7 +22,7 @@ export default function SeniorAnimalRescueApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pets for the Elderly</h2><p>Foundation that pays adoption fees for seniors 60+. Free pet.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Foster instead of adopt</h2><p>Try a senior pet first. No long commitment. Rescue covers food and vet.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior cats easier</h2><p>Less work than puppies. Trained, calm, grateful.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pets reduce loneliness, lower blood pressure, add years. Real medicine.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pets reduce loneliness, lower blood pressure, add years. Real medicine.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

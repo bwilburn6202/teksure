@@ -19,7 +19,7 @@ export default function JewishHolidayApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hebcal Calendar</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free Jewish calendar app.</li>
               <li>Holiday dates + candle-lighting times.</li>
               <li>Customized for your zip code.</li>
@@ -33,7 +33,7 @@ export default function JewishHolidayApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Siddur apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>RustyBrick Siddur — popular, Hebrew + English.</li>
               <li>Siddur ArtScroll — premium, traditional.</li>
               <li>Pocket Siddur — free, basic.</li>
@@ -47,7 +47,7 @@ export default function JewishHolidayApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sefaria — free Torah library</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free, completely open library.</li>
               <li>Torah, Talmud, Midrash, commentaries.</li>
               <li>English + Hebrew side-by-side.</li>
@@ -61,7 +61,7 @@ export default function JewishHolidayApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Holiday-specific</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Haggadah app for Passover seder.</li>
               <li>Megillat Esther for Purim.</li>
               <li>Selichot apps for High Holidays.</li>
@@ -75,7 +75,7 @@ export default function JewishHolidayApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Learning + community</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>MyJewishLearning — articles + courses.</li>
               <li>Aleph Beta — Torah video courses.</li>
               <li>Daf Yomi — daily Talmud page.</li>
@@ -89,7 +89,7 @@ export default function JewishHolidayApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Yahrzeit tracking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hebcal sets yahrzeit reminders.</li>
               <li>Light memorial candle.</li>
               <li>Recite Kaddish.</li>
@@ -103,7 +103,7 @@ export default function JewishHolidayApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hebcal + Sefaria — both free</h3>
-            <p className="text-sm text-muted-foreground">Two essential free apps for any Jewish senior: Hebcal for calendar, candle-lighting times, and yahrzeits — Sefaria for Torah, Talmud, and Jewish learning. Both free, both open-source, both run by nonprofits. Together they replace several books and reference materials. Add a Siddur app of your choice for daily prayer. All free.</p>
+            <p className="text-base text-muted-foreground">Two essential free apps for any Jewish senior: Hebcal for calendar, candle-lighting times, and yahrzeits — Sefaria for Torah, Talmud, and Jewish learning. Both free, both open-source, both run by nonprofits. Together they replace several books and reference materials. Add a Siddur app of your choice for daily prayer. All free.</p>
           </CardContent>
         </Card>
       </main>

@@ -618,7 +618,7 @@ export default function InternetPlanCalculator() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-xl flex items-center gap-2">
-                    <Users className="h-5 w-5 text-sky-600" aria-hidden="true" />
+                    <Users className="h-5 w-5 text-info-foreground" aria-hidden="true" />
                     Your Household
                   </CardTitle>
                 </CardHeader>
@@ -655,7 +655,7 @@ export default function InternetPlanCalculator() {
                     >
                       How many devices are connected most of the time?
                     </label>
-                    <p className="text-sm text-muted-foreground mb-2">
+                    <p className="text-base text-muted-foreground mb-2">
                       Count phones, tablets, laptops, smart TVs, thermostats,
                       speakers, and cameras.
                     </p>
@@ -683,7 +683,7 @@ export default function InternetPlanCalculator() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-xl flex items-center gap-2">
-                    <Monitor className="h-5 w-5 text-sky-600" aria-hidden="true" />
+                    <Monitor className="h-5 w-5 text-info-foreground" aria-hidden="true" />
                     Streaming and Video Calls
                   </CardTitle>
                 </CardHeader>
@@ -743,7 +743,7 @@ export default function InternetPlanCalculator() {
                     </div>
                   </div>
 
-                  <label className="flex items-start gap-3 cursor-pointer min-h-14 p-3 rounded-xl border-2 border-border hover:border-sky-300 transition-colors">
+                  <label className="flex items-start gap-3 cursor-pointer min-h-14 p-3 rounded-xl border-2 border-border hover:border-info-foreground/25 transition-colors">
                     <input
                       type="checkbox"
                       checked={uhd}
@@ -767,7 +767,7 @@ export default function InternetPlanCalculator() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-xl flex items-center gap-2">
-                    <Briefcase className="h-5 w-5 text-sky-600" aria-hidden="true" />
+                    <Briefcase className="h-5 w-5 text-info-foreground" aria-hidden="true" />
                     Work, Gaming, Uploads
                   </CardTitle>
                 </CardHeader>
@@ -822,7 +822,7 @@ export default function InternetPlanCalculator() {
                     </Select>
                   </div>
 
-                  <label className="flex items-start gap-3 cursor-pointer min-h-14 p-3 rounded-xl border-2 border-border hover:border-sky-300 transition-colors">
+                  <label className="flex items-start gap-3 cursor-pointer min-h-14 p-3 rounded-xl border-2 border-border hover:border-info-foreground/25 transition-colors">
                     <input
                       type="checkbox"
                       checked={largeUploads}
@@ -848,7 +848,7 @@ export default function InternetPlanCalculator() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-xl flex items-center gap-2">
-                    <Camera className="h-5 w-5 text-sky-600" aria-hidden="true" />
+                    <Camera className="h-5 w-5 text-info-foreground" aria-hidden="true" />
                     Smart Home Devices
                   </CardTitle>
                 </CardHeader>
@@ -860,7 +860,7 @@ export default function InternetPlanCalculator() {
                     >
                       How many security cameras or video doorbells?
                     </label>
-                    <p className="text-sm text-muted-foreground mb-2">
+                    <p className="text-base text-muted-foreground mb-2">
                       Ring, Nest Cam, Arlo, Wyze, Blink.
                     </p>
                     <div className="flex items-center gap-4">
@@ -887,7 +887,7 @@ export default function InternetPlanCalculator() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-xl flex items-center gap-2">
-                    <DollarSign className="h-5 w-5 text-sky-600" aria-hidden="true" />
+                    <DollarSign className="h-5 w-5 text-info-foreground" aria-hidden="true" />
                     What You're Paying Now (Optional)
                   </CardTitle>
                 </CardHeader>
@@ -941,19 +941,19 @@ export default function InternetPlanCalculator() {
 
             {/* ── Right column: result summary (sticky) ── */}
             <div className="lg:sticky lg:top-6 space-y-4">
-              <div className="rounded-2xl border-2 border-sky-300 dark:border-sky-700 bg-gradient-to-br from-sky-50 to-blue-50 dark:from-sky-950/40 dark:to-blue-950/40 p-6">
+              <div className="rounded-2xl border-2 border-info-foreground/25 bg-gradient-to-br from-sky-50 to-blue-50 dark:from-sky-950/40 dark:to-blue-950/40 p-6">
                 <div className="flex items-center gap-2 mb-2">
-                  <Gauge className="h-5 w-5 text-sky-700" aria-hidden="true" />
+                  <Gauge className="h-5 w-5 text-info-foreground" aria-hidden="true" />
                   <h2 className="font-bold text-lg">Your Recommended Speed</h2>
                 </div>
-                <div className="text-4xl font-bold text-sky-800 dark:text-sky-200 mb-1">
+                <div className="text-4xl font-bold text-info-foreground mb-1">
                   {calc.recommendedDownload} Mbps
                 </div>
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-base text-muted-foreground mb-4">
                   download · ~{calc.recommendedUpload} Mbps upload
                 </p>
 
-                <div className="rounded-xl bg-white dark:bg-slate-900/60 border p-4 mb-3">
+                <div className="rounded-xl bg-card border p-4 mb-3">
                   <div className="text-sm text-muted-foreground mb-1">
                     Cheapest tier that meets it:
                   </div>
@@ -964,13 +964,13 @@ export default function InternetPlanCalculator() {
                     {currency(calc.recommendedTier.low)}–
                     {currency(calc.recommendedTier.high)}/mo typical
                   </div>
-                  <p className="text-sm mt-2">{calc.recommendedTier.note}</p>
+                  <p className="text-base mt-2">{calc.recommendedTier.note}</p>
                 </div>
 
                 {calc.overpaying ? (
-                  <Alert className="border-emerald-300 bg-emerald-50 dark:bg-emerald-950/40">
-                    <TrendingDown className="h-4 w-4 text-emerald-700" />
-                    <AlertTitle className="text-emerald-900 dark:text-emerald-100">
+                  <Alert className="border-success-foreground/25 bg-success ">
+                    <TrendingDown className="h-4 w-4 text-success-foreground" />
+                    <AlertTitle className="text-success-foreground ">
                       You may be overpaying
                     </AlertTitle>
                     <AlertDescription className="text-emerald-900/90 dark:text-emerald-100/90">
@@ -989,9 +989,9 @@ export default function InternetPlanCalculator() {
                     </AlertDescription>
                   </Alert>
                 ) : (
-                  <Alert className="border-sky-300 bg-sky-50 dark:bg-sky-950/40">
-                    <CheckCircle2 className="h-4 w-4 text-sky-700" />
-                    <AlertTitle className="text-sky-900 dark:text-sky-100">
+                  <Alert className="border-info-foreground/25 bg-info ">
+                    <CheckCircle2 className="h-4 w-4 text-info-foreground" />
+                    <AlertTitle className="text-info-foreground ">
                       Your current plan is a good fit
                     </AlertTitle>
                     <AlertDescription className="text-sky-900/90 dark:text-sky-100/90">
@@ -1004,17 +1004,17 @@ export default function InternetPlanCalculator() {
 
               <div className="rounded-2xl border p-5 bg-card">
                 <div className="flex items-center gap-2 mb-2">
-                  <Signal className="h-4 w-4 text-sky-700" aria-hidden="true" />
+                  <Signal className="h-4 w-4 text-info-foreground" aria-hidden="true" />
                   <h3 className="font-semibold">Run a real speed test</h3>
                 </div>
-                <p className="text-sm text-muted-foreground mb-3">
+                <p className="text-base text-muted-foreground mb-3">
                   See what speed you actually get vs what the bill promises.
                   Open <strong>fast.com</strong> or <strong>speedtest.net</strong>
                   {' '}in a browser.
                 </p>
                 <Link
                   to="/tools/internet-speed-doctor"
-                  className="text-sm font-medium text-sky-700 hover:text-sky-900 underline underline-offset-2 inline-flex items-center gap-1"
+                  className="text-sm font-medium text-info-foreground hover:text-info-foreground underline underline-offset-2 inline-flex items-center gap-1"
                 >
                   Open Internet Speed Doctor{' '}
                   <ExternalLink className="h-3 w-3" aria-hidden="true" />
@@ -1072,7 +1072,7 @@ export default function InternetPlanCalculator() {
           {/* ── Region + providers ── */}
           <section className="mt-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-2 flex items-center gap-2">
-              <MapPin className="h-6 w-6 text-sky-600" aria-hidden="true" />
+              <MapPin className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               Providers by Region
             </h2>
             <p className="text-muted-foreground mb-4 text-base md:text-lg">
@@ -1124,7 +1124,7 @@ export default function InternetPlanCalculator() {
                     <div>
                       <span className="font-semibold">Install:</span> {p.install}
                     </div>
-                    <p className="text-sm text-muted-foreground pt-1 border-t">
+                    <p className="text-base text-muted-foreground pt-1 border-t">
                       {p.notes}
                     </p>
                   </CardContent>
@@ -1136,11 +1136,11 @@ export default function InternetPlanCalculator() {
           {/* ── Hidden costs ── */}
           <section className="mt-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-2">
-              <AlertTriangle className="h-6 w-6 text-amber-600" aria-hidden="true" />
+              <AlertTriangle className="h-6 w-6 text-warn-foreground" aria-hidden="true" />
               Hidden Cost Alerts
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
-              <Card className="border-amber-200 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-950/20">
+              <Card className="border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/20">
                 <CardHeader>
                   <CardTitle className="text-lg">Equipment rental fee</CardTitle>
                 </CardHeader>
@@ -1157,7 +1157,7 @@ export default function InternetPlanCalculator() {
                 </CardContent>
               </Card>
 
-              <Card className="border-amber-200 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-950/20">
+              <Card className="border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/20">
                 <CardHeader>
                   <CardTitle className="text-lg">Data caps</CardTitle>
                 </CardHeader>
@@ -1170,7 +1170,7 @@ export default function InternetPlanCalculator() {
                 </CardContent>
               </Card>
 
-              <Card className="border-amber-200 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-950/20">
+              <Card className="border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/20">
                 <CardHeader>
                   <CardTitle className="text-lg">
                     Introductory price reset
@@ -1189,7 +1189,7 @@ export default function InternetPlanCalculator() {
                 </CardContent>
               </Card>
 
-              <Card className="border-amber-200 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-950/20">
+              <Card className="border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/20">
                 <CardHeader>
                   <CardTitle className="text-lg">Auto-pay discount trap</CardTitle>
                 </CardHeader>
@@ -1202,7 +1202,7 @@ export default function InternetPlanCalculator() {
                 </CardContent>
               </Card>
 
-              <Card className="border-amber-200 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-950/20">
+              <Card className="border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/20">
                 <CardHeader>
                   <CardTitle className="text-lg">
                     "Broadcast TV" and sports surcharges
@@ -1217,7 +1217,7 @@ export default function InternetPlanCalculator() {
                 </CardContent>
               </Card>
 
-              <Card className="border-amber-200 dark:border-amber-800 bg-amber-50/50 dark:bg-amber-950/20">
+              <Card className="border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/20">
                 <CardHeader>
                   <CardTitle className="text-lg">Early termination fees</CardTitle>
                 </CardHeader>
@@ -1235,7 +1235,7 @@ export default function InternetPlanCalculator() {
           {/* ── Save money ── */}
           <section className="mt-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-2">
-              <ShoppingCart className="h-6 w-6 text-emerald-600" aria-hidden="true" />
+              <ShoppingCart className="h-6 w-6 text-success-foreground" aria-hidden="true" />
               Ways to Save
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
@@ -1254,7 +1254,7 @@ export default function InternetPlanCalculator() {
                     <li>TP-Link Archer AX55 (Wi-Fi 6 router, ~$100)</li>
                     <li>eero 6+ mesh (2-pack, ~$150)</li>
                   </ul>
-                  <p className="text-sm text-muted-foreground pt-2">
+                  <p className="text-base text-muted-foreground pt-2">
                     Fiber providers use their own ONT — you only replace the
                     router there.
                   </p>
@@ -1295,7 +1295,7 @@ export default function InternetPlanCalculator() {
                       href="https://www.lifelinesupport.org/"
                       target="_blank"
                       rel="noreferrer"
-                      className="text-sky-700 hover:text-sky-900 underline"
+                      className="text-info-foreground hover:text-info-foreground underline"
                     >
                       lifelinesupport.org
                     </a>
@@ -1368,7 +1368,7 @@ export default function InternetPlanCalculator() {
           {/* ── Rural options ── */}
           <section className="mt-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-2">
-              <Satellite className="h-6 w-6 text-sky-600" aria-hidden="true" />
+              <Satellite className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               Rural and Underserved Options
             </h2>
             <p className="text-base text-muted-foreground mb-4">
@@ -1431,7 +1431,7 @@ export default function InternetPlanCalculator() {
           {/* ── Router tips ── */}
           <section className="mt-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-2">
-              <Router className="h-6 w-6 text-sky-600" aria-hidden="true" />
+              <Router className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               Wi-Fi Router Tips
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
@@ -1491,7 +1491,7 @@ export default function InternetPlanCalculator() {
             <div className="mt-4">
               <Link
                 to="/tools/router-setup-wizard"
-                className="inline-flex items-center gap-1 text-base font-medium text-sky-700 hover:text-sky-900 underline underline-offset-2"
+                className="inline-flex items-center gap-1 text-base font-medium text-info-foreground hover:text-info-foreground underline underline-offset-2"
               >
                 Open the Router Setup Wizard{' '}
                 <ExternalLink className="h-4 w-4" aria-hidden="true" />
@@ -1502,7 +1502,7 @@ export default function InternetPlanCalculator() {
           {/* ── FAQ ── */}
           <section className="mt-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4 flex items-center gap-2">
-              <HelpCircle className="h-6 w-6 text-sky-600" aria-hidden="true" />
+              <HelpCircle className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               Frequently Asked
             </h2>
             <Accordion type="single" collapsible className="w-full">

@@ -22,7 +22,7 @@ export default function SeniorFlashlightApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Motion lights</h2><p>$30 for 4-pack. Stick on. Dark hallway lights up automatically.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bedside lamp with USB</h2><p>$30. Charges phone overnight. Night light with timer.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smart bulbs auto-on</h2><p>Set to turn on at sunset. Walk into lit house.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Flashlight in every room. By bed. Kitchen. Bathroom. Emergency-ready.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Flashlight in every room. By bed. Kitchen. Bathroom. Emergency-ready.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

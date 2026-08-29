@@ -19,7 +19,7 @@ export default function RingtoneCustomization() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why custom?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hear better with familiar tones.</li>
               <li>Loud + clear ringtones for hearing.</li>
               <li>Different tone per family member.</li>
@@ -33,7 +33,7 @@ export default function RingtoneCustomization() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone — change ringtone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings, then &quot;Sounds &amp; Haptics&quot;.</li>
               <li>&quot;Ringtone&quot;.</li>
               <li>Choose from list.</li>
@@ -47,7 +47,7 @@ export default function RingtoneCustomization() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android — change ringtone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings, then &quot;Sounds&quot;.</li>
               <li>&quot;Phone ringtone&quot;.</li>
               <li>Pick from list.</li>
@@ -61,7 +61,7 @@ export default function RingtoneCustomization() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Per-contact tones</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Contacts.</li>
               <li>Tap contact (e.g., daughter).</li>
               <li>Edit, then &quot;Ringtone&quot;.</li>
@@ -75,7 +75,7 @@ export default function RingtoneCustomization() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly choices</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Loud, clear tones — &quot;Old Phone&quot;.</li>
               <li>Familiar songs — your generation.</li>
               <li>Avoid: muffled or quiet tones.</li>
@@ -89,7 +89,7 @@ export default function RingtoneCustomization() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free ringtone sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Built-in phone (best).</li>
               <li><strong>Zedge</strong> — free app, thousands.</li>
               <li><strong>Free Ringtones for iPhone</strong>.</li>
@@ -103,7 +103,7 @@ export default function RingtoneCustomization() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hearing-impaired tips</h3>
-            <p className="text-sm text-muted-foreground">Vibrate-only doesn&apos;t work for many seniors. Set vibrate + tone. Bedside speaker amplifier (CapTel, Clarity). Smart watch buzzes wrist when phone rings — Apple Watch. Light flash setting (iPhone Settings → Accessibility → Audio/Visual). Multiple alerts ensure don&apos;t miss calls.</p>
+            <p className="text-base text-muted-foreground">Vibrate-only doesn&apos;t work for many seniors. Set vibrate + tone. Bedside speaker amplifier (CapTel, Clarity). Smart watch buzzes wrist when phone rings — Apple Watch. Light flash setting (iPhone Settings → Accessibility → Audio/Visual). Multiple alerts ensure don&apos;t miss calls.</p>
           </CardContent>
         </Card>
       </main>

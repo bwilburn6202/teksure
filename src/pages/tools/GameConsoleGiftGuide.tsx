@@ -29,7 +29,7 @@ export default function GameConsoleGiftGuide() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Always ask the parent first</h2>
-            <p className="text-sm">Major gaming console = big commitment in screen time, accessories, possible subscriptions, online interactions. Get parent\'s blessing first. Some prefer Switch (family-friendly); others have rules against shooters.</p>
+            <p className="text-base">Major gaming console = big commitment in screen time, accessories, possible subscriptions, online interactions. Get parent\'s blessing first. Some prefer Switch (family-friendly); others have rules against shooters.</p>
           </CardContent>
         </Card>
 
@@ -39,10 +39,10 @@ export default function GameConsoleGiftGuide() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{c.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{c.price}</span>
+                  <span className="text-base font-semibold text-primary">{c.price}</span>
                 </div>
-                <p className="text-sm mb-1">{c.best}</p>
-                <p className="text-sm text-muted-foreground">{c.good}</p>
+                <p className="text-base mb-1">{c.best}</p>
+                <p className="text-base text-muted-foreground">{c.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -51,7 +51,7 @@ export default function GameConsoleGiftGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don\'t forget the extras</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Extra controller</strong> — for siblings/friends to play.</li>
               <li><strong>Online subscription</strong> — Switch ($20-40/yr), PS Plus ($80/yr), Xbox Game Pass ($120/yr).</li>
               <li><strong>Game gift cards</strong> — let the kid pick their own game.</li>
@@ -63,20 +63,20 @@ export default function GameConsoleGiftGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Game age ratings (ESRB)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>E (Everyone)</strong> — fine for any age.</li>
               <li><strong>E10+</strong> — ages 10 and up.</li>
               <li><strong>T (Teen)</strong> — ages 13+. Mild violence/language.</li>
               <li><strong>M (Mature)</strong> — 17+. Significant violence, sometimes sexual content. Most "Call of Duty" and "Grand Theft Auto" titles.</li>
             </ul>
-            <p className="text-sm mt-2">Talk to the parent about whether M-rated games are okay before gifting.</p>
+            <p className="text-base mt-2">Talk to the parent about whether M-rated games are okay before gifting.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Easiest gift</h3>
-            <p className="text-sm text-muted-foreground">A <strong>$50 game gift card</strong> for the console they already have. Lets them pick what they actually want. Way better than guessing a specific game and being wrong.</p>
+            <p className="text-base text-muted-foreground">A <strong>$50 game gift card</strong> for the console they already have. Lets them pick what they actually want. Way better than guessing a specific game and being wrong.</p>
           </CardContent>
         </Card>
       </main>

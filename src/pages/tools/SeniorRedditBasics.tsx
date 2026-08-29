@@ -17,12 +17,12 @@ export default function SeniorRedditBasics() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free</h2><p>Browse without an account. Sign up free to comment or post.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior-friendly subreddits</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>r/seniors</li><li>r/AskOldPeople</li><li>r/retirement</li><li>r/Cooking</li><li>r/AskHistorians</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior-friendly subreddits</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>r/seniors</li><li>r/AskOldPeople</li><li>r/retirement</li><li>r/Cooking</li><li>r/AskHistorians</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">How to use</h2><p>Type a subreddit name in search. Read posts. Upvote if helpful. Comment if you want.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use a username</h2><p>Don&apos;t use your real name. Reddit anonymity is the norm.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Block trolls</h2><p>Long-press a username → Block. Done. They&apos;re gone.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mod help</h2><p>Stuck? Message a subreddit&apos;s moderators. Most are kind.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Use the official Reddit app — third-party apps may show ads or scams.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Use the official Reddit app — third-party apps may show ads or scams.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

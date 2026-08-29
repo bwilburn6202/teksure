@@ -118,14 +118,14 @@ export default function LibraryPowerPack() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <BookOpen className="h-8 w-8 text-amber-600" />
+                <BookOpen className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Public Library Power Pack</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
               Six free apps your library card already pays for. Most people never use them.
             </p>
-            <p className="text-sm text-muted-foreground mt-3">$0/month. All you need is a library card.</p>
+            <p className="text-base text-muted-foreground mt-3">$0/month. All you need is a library card.</p>
           </div>
         </section>
 
@@ -134,8 +134,8 @@ export default function LibraryPowerPack() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">First — get a library card</p>
-              <ol className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">First — get a library card</p>
+              <ol className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">1.</span><span>Search "[your city or county] public library card".</span></li>
                 <li className="flex gap-2"><span className="text-primary">2.</span><span>Most libraries let you sign up online with proof of address (a recent piece of mail). Some require an in-person visit the first time.</span></li>
                 <li className="flex gap-2"><span className="text-primary">3.</span><span>Card is free. PIN is usually the last 4 of your phone or your birth year — set it the first time you log in.</span></li>
@@ -158,13 +158,13 @@ export default function LibraryPowerPack() {
                         <Badge variant="outline" className="mt-1">{s.costNormally}</Badge>
                       </div>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-2">{s.what}</p>
-                    <p className="text-xs text-muted-foreground italic mb-3">{s.why}</p>
+                    <p className="text-base text-muted-foreground mb-2">{s.what}</p>
+                    <p className="text-sm text-muted-foreground italic mb-3">{s.why}</p>
 
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">How to start</p>
                     <ol className="space-y-1.5 mb-3">
                       {s.howToUse.map((step, i) => (
-                        <li key={i} className="flex gap-2 text-sm">
+                        <li key={i} className="flex gap-2 text-base">
                           <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                           <span>{step}</span>
                         </li>
@@ -183,8 +183,8 @@ export default function LibraryPowerPack() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A note on what your library has</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A note on what your library has</p>
+              <p className="text-sm text-muted-foreground">
                 Not every library has every app — Libby is nearly universal, the others vary. Visit your library website (or call the reference desk) and ask: "what online resources do I get with my card?" Most libraries also offer free 1-on-1 tech help sessions to set these up. Worth an hour at the library.
               </p>
             </CardContent>
@@ -194,20 +194,20 @@ export default function LibraryPowerPack() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/cord-cutter-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Cord Cutter Wizard</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair library streaming with paid streaming.</p>
+                <p className="font-medium text-base">Cord Cutter Wizard</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair library streaming with paid streaming.</p>
               </Link>
               <Link to="/tools/senior-friendly-apps" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Senior-Friendly Apps</p>
-                <p className="text-xs text-muted-foreground mt-0.5">More worth-installing apps.</p>
+                <p className="font-medium text-base">Senior-Friendly Apps</p>
+                <p className="text-sm text-muted-foreground mt-0.5">More worth-installing apps.</p>
               </Link>
               <Link to="/tools/subscription-tracker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Subscription Tracker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Cancel paid services these replace.</p>
+                <p className="font-medium text-base">Subscription Tracker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Cancel paid services these replace.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: most US libraries have free 1-on-1 tech help — schedule a session to install all six apps in one visit.
           </p>
         </div>

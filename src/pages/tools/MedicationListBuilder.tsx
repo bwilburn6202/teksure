@@ -62,30 +62,30 @@ export default function MedicationListBuilder() {
         title="Medication List Builder — TekSure"
         description="Create a printable medication list and wallet card with your drugs, doses, allergies, and emergency contacts — ready to hand to any doctor or emergency responder."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4 print:bg-white print:py-2 print:px-4">
+      <main className="min-h-screen bg-muted py-8 px-4 print:bg-card print:py-2 print:px-4">
         <div className="max-w-2xl mx-auto">
 
           {/* Header */}
           <div className="text-center mb-6 print:hidden">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-teal-100 dark:bg-teal-950/60 mb-4">
-              <Pill className="w-8 h-8 text-teal-600 dark:text-teal-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-success mb-4">
+              <Pill className="w-8 h-8 text-success-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Medication List Builder</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Medication List Builder</h1>
+            <p className="text-lg text-muted-foreground ">
               Build a complete medication list to share with doctors, carry in your wallet, and hand to emergency responders.
             </p>
           </div>
 
           {/* Print header */}
           <div className="hidden print:block mb-4 border-b-2 border-gray-800 pb-3">
-            <h1 className="text-2xl font-bold text-black">Medication List</h1>
-            <p className="text-sm text-gray-600">Printed {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+            <h1 className="text-2xl font-bold text-foreground">Medication List</h1>
+            <p className="text-base text-muted-foreground">Printed {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
           </div>
 
           {/* Personal info */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm p-5 mb-4 print:border-gray-300 print:shadow-none print:rounded-none print:p-0 print:mb-3">
-            <p className="font-bold text-gray-900 dark:text-gray-100 text-lg mb-3 flex items-center gap-2">
-              <User className="w-5 h-5 text-teal-500 print:hidden" /> Patient Information
+          <div className="bg-card rounded-2xl border border-border shadow-sm p-5 mb-4 print:border-border print:shadow-none print:rounded-none print:p-0 print:mb-3">
+            <p className="font-bold text-foreground text-lg mb-3 flex items-center gap-2">
+              <User className="w-5 h-5 text-success-foreground print:hidden" /> Patient Information
             </p>
             <div className="grid grid-cols-2 gap-3">
               <div className="col-span-2">
@@ -127,9 +127,9 @@ export default function MedicationListBuilder() {
           </div>
 
           {/* Emergency contact */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm p-5 mb-4 print:border-gray-300 print:shadow-none print:rounded-none print:p-0 print:mb-3">
-            <p className="font-bold text-gray-900 dark:text-gray-100 text-lg mb-3 flex items-center gap-2">
-              <Phone className="w-5 h-5 text-red-500 print:hidden" /> Emergency Contact
+          <div className="bg-card rounded-2xl border border-border shadow-sm p-5 mb-4 print:border-border print:shadow-none print:rounded-none print:p-0 print:mb-3">
+            <p className="font-bold text-foreground text-lg mb-3 flex items-center gap-2">
+              <Phone className="w-5 h-5 text-danger-foreground print:hidden" /> Emergency Contact
             </p>
             <div className="grid grid-cols-2 gap-3">
               <div>
@@ -144,8 +144,8 @@ export default function MedicationListBuilder() {
           </div>
 
           {/* Medical conditions */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm p-5 mb-4 print:border-gray-300 print:shadow-none print:rounded-none print:p-0 print:mb-3">
-            <p className="font-bold text-gray-900 dark:text-gray-100 text-lg mb-3">Medical Conditions</p>
+          <div className="bg-card rounded-2xl border border-border shadow-sm p-5 mb-4 print:border-border print:shadow-none print:rounded-none print:p-0 print:mb-3">
+            <p className="font-bold text-foreground text-lg mb-3">Medical Conditions</p>
             <textarea
               value={conditions}
               onChange={e => setConditions(e.target.value)}
@@ -156,12 +156,12 @@ export default function MedicationListBuilder() {
           </div>
 
           {/* Allergies */}
-          <div className="bg-red-50 dark:bg-red-950/20 rounded-2xl border border-red-200 dark:border-red-800 shadow-sm p-5 mb-4 print:border-red-400 print:shadow-none print:rounded-none print:p-0 print:mb-3">
-            <p className="font-bold text-red-800 dark:text-red-200 text-lg mb-3">⚠️ Allergies</p>
+          <div className="bg-danger rounded-2xl border border-danger-foreground/25 shadow-sm p-5 mb-4 print:border-red-400 print:shadow-none print:rounded-none print:p-0 print:mb-3">
+            <p className="font-bold text-danger-foreground text-lg mb-3">⚠️ Allergies</p>
             <div className="space-y-2">
               {allergies.map((a, idx) => (
                 <div key={a.id} className="flex gap-2 items-start">
-                  <span className="text-xs font-bold text-gray-400 w-5 text-center mt-2.5">{idx + 1}</span>
+                  <span className="text-xs font-bold text-muted-foreground w-5 text-center mt-2.5">{idx + 1}</span>
                   <input
                     type="text"
                     value={a.substance}
@@ -176,7 +176,7 @@ export default function MedicationListBuilder() {
                     placeholder="Reaction (e.g. hives, anaphylaxis)"
                     className={inputClass + ' flex-1'}
                   />
-                  <button onClick={() => removeAllergy(a.id)} className="text-gray-400 hover:text-red-500 p-2 flex-shrink-0 print:hidden mt-0.5">
+                  <button onClick={() => removeAllergy(a.id)} className="text-muted-foreground hover:text-danger-foreground p-2 flex-shrink-0 print:hidden mt-0.5">
                     <Trash2 className="w-4 h-4" />
                   </button>
                 </div>
@@ -184,26 +184,26 @@ export default function MedicationListBuilder() {
             </div>
             <button
               onClick={() => setAllergies(prev => [...prev, newAllergy()])}
-              className="mt-3 flex items-center gap-2 text-sm text-red-600 dark:text-red-400 hover:underline print:hidden"
+              className="mt-3 flex items-center gap-2 text-sm text-danger-foreground hover:underline print:hidden"
             >
               <Plus className="w-4 h-4" /> Add allergy
             </button>
             {filledAllergies.length === 0 && (
-              <p className="text-sm text-red-600 dark:text-red-400 mt-2 print:hidden">No known drug allergies — add any if they apply.</p>
+              <p className="text-base text-danger-foreground mt-2 print:hidden">No known drug allergies — add any if they apply.</p>
             )}
           </div>
 
           {/* Medications */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm p-5 mb-4 print:border-gray-300 print:shadow-none print:rounded-none print:p-0 print:mb-3">
-            <p className="font-bold text-gray-900 dark:text-gray-100 text-lg mb-3">
+          <div className="bg-card rounded-2xl border border-border shadow-sm p-5 mb-4 print:border-border print:shadow-none print:rounded-none print:p-0 print:mb-3">
+            <p className="font-bold text-foreground text-lg mb-3">
               Medications ({filledMeds.length})
             </p>
             <div className="space-y-4">
               {meds.map((med, idx) => (
-                <div key={med.id} className="border border-gray-200 dark:border-gray-700 rounded-xl p-3 print:border-gray-300">
+                <div key={med.id} className="border border-border rounded-xl p-3 print:border-border">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-bold text-teal-600 dark:text-teal-400">Medication {idx + 1}</span>
-                    <button onClick={() => removeMed(med.id)} className="text-gray-400 hover:text-red-500 p-1 print:hidden">
+                    <span className="text-sm font-bold text-success-foreground ">Medication {idx + 1}</span>
+                    <button onClick={() => removeMed(med.id)} className="text-muted-foreground hover:text-danger-foreground p-1 print:hidden">
                       <Trash2 className="w-4 h-4" />
                     </button>
                   </div>
@@ -265,7 +265,7 @@ export default function MedicationListBuilder() {
             </div>
             <button
               onClick={() => setMeds(prev => [...prev, newMed()])}
-              className="mt-4 w-full flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-dashed border-teal-300 dark:border-teal-700 text-teal-600 dark:text-teal-400 hover:bg-teal-50 dark:hover:bg-teal-950/20 transition-colors text-sm font-medium print:hidden"
+              className="mt-4 w-full flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-dashed border-success-foreground/25 text-success-foreground hover:bg-success transition-colors text-sm font-medium print:hidden"
             >
               <Plus className="w-4 h-4" /> Add medication
             </button>
@@ -280,9 +280,9 @@ export default function MedicationListBuilder() {
             Print Medication List
           </button>
 
-          <div className="mt-4 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-xl p-4 print:hidden">
-            <p className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">How to use this list</p>
-            <ul className="text-sm text-blue-700 dark:text-blue-300 space-y-1 list-disc list-inside">
+          <div className="mt-4 bg-info border border-info-foreground/25 rounded-xl p-4 print:hidden">
+            <p className="text-base font-semibold text-info-foreground mb-1">How to use this list</p>
+            <ul className="text-base text-info-foreground space-y-1 list-disc list-inside">
               <li>Print it and fold it to wallet size — keep one copy in your wallet and one on your fridge.</li>
               <li>Bring a copy to every doctor visit and any hospital stay.</li>
               <li>Give a copy to your emergency contact.</li>
@@ -291,7 +291,7 @@ export default function MedicationListBuilder() {
           </div>
 
         </div>
-      </div>
+      </main>
     </>
   );
 }

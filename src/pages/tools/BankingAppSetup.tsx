@@ -492,7 +492,7 @@ export default function BankingAppSetup() {
                     </div>
                     <div className="flex-1">
                       <h3 className="text-lg md:text-xl font-semibold leading-tight">{b.name}</h3>
-                      <p className="text-sm md:text-base text-muted-foreground leading-relaxed mt-1">
+                      <p className="text-base md:text-base text-muted-foreground leading-relaxed mt-1">
                         {b.tagline}
                       </p>
                     </div>
@@ -573,14 +573,14 @@ export default function BankingAppSetup() {
                 </CardContent>
               </Card>
 
-              <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+              <Card className="bg-warn border-amber-500/40">
                 <CardContent className="p-6 space-y-3">
                   <h3 className="text-lg md:text-xl font-semibold flex items-center gap-2">
-                    <Send className="w-5 h-5 text-amber-700 dark:text-amber-400" />
+                    <Send className="w-5 h-5 text-warn-foreground " />
                     6. Zelle — with scam warnings
                   </h3>
                   <p className="text-base md:text-lg leading-relaxed">{bank.zelle}</p>
-                  <p className="text-sm md:text-base leading-relaxed">
+                  <p className="text-base md:text-base leading-relaxed">
                     Learn more about messaging scams on our{' '}
                     <Link to="/tools/social-media-safety" className="text-primary underline font-medium">
                       Social Media — Safe &amp; Sane
@@ -681,7 +681,7 @@ export default function BankingAppSetup() {
               <ul className="space-y-3">
                 {PASSWORD_RULES.map((rule) => (
                   <li key={rule} className="flex gap-3 text-base md:text-lg leading-relaxed">
-                    <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" />
                     <span>{rule}</span>
                   </li>
                 ))}
@@ -694,7 +694,7 @@ export default function BankingAppSetup() {
             <Mail className="w-6 h-6 text-primary" />
             Real bank emails vs. phishing
           </h3>
-          <Card className="mb-4 bg-red-50 dark:bg-red-950/20 border-red-500/40">
+          <Card className="mb-4 bg-danger border-red-500/40">
             <CardContent className="p-6">
               <p className="text-base md:text-lg leading-relaxed font-medium mb-3">
                 Never click a link inside a &quot;bank&quot; email or text. Open the app yourself instead.
@@ -702,7 +702,7 @@ export default function BankingAppSetup() {
               <ul className="space-y-3">
                 {PHISHING_RULES.map((rule) => (
                   <li key={rule} className="flex gap-3 text-base md:text-lg leading-relaxed">
-                    <ShieldAlert className="w-5 h-5 text-red-700 dark:text-red-400 shrink-0 mt-0.5" />
+                    <ShieldAlert className="w-5 h-5 text-danger-foreground shrink-0 mt-0.5" />
                     <span>{rule}</span>
                   </li>
                 ))}
@@ -756,9 +756,9 @@ export default function BankingAppSetup() {
               ))}
             </div>
 
-            <Card className="mt-6 bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+            <Card className="mt-6 bg-warn border-amber-500/40">
               <CardContent className="p-5 flex items-start gap-3">
-                <Lightbulb className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
+                <Lightbulb className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-semibold text-base md:text-lg mb-1">Quick Tip</h3>
                   <p className="text-base md:text-lg leading-relaxed">
@@ -774,7 +774,7 @@ export default function BankingAppSetup() {
         {/* Real scam scripts */}
         <section className="container py-10 md:py-14">
           <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-            <ShieldAlert className="w-7 h-7 text-red-700 dark:text-red-400" />
+            <ShieldAlert className="w-7 h-7 text-danger-foreground " />
             Real bank scam scripts — know them, avoid them
           </h2>
           <p className="text-base md:text-lg text-muted-foreground mb-8 max-w-3xl leading-relaxed">
@@ -787,7 +787,7 @@ export default function BankingAppSetup() {
               <Card key={scam.title} className="bg-red-50/60 dark:bg-red-950/15 border-red-500/30">
                 <CardContent className="p-5 space-y-3">
                   <h3 className="text-lg md:text-xl font-semibold flex items-center gap-2">
-                    <AlertTriangle className="w-5 h-5 text-red-700 dark:text-red-400" />
+                    <AlertTriangle className="w-5 h-5 text-danger-foreground " />
                     {scam.title}
                   </h3>
                   <blockquote className="border-l-4 border-red-500/60 pl-4 italic text-base md:text-lg leading-relaxed">
@@ -795,7 +795,7 @@ export default function BankingAppSetup() {
                   </blockquote>
                   <div>
                     <h4 className="font-semibold text-base mb-1 flex items-center gap-2">
-                      <ShieldCheck className="w-4 h-4 text-green-700 dark:text-green-400" />
+                      <ShieldCheck className="w-4 h-4 text-success-foreground " />
                       How to spot it
                     </h4>
                     <p className="text-base md:text-lg leading-relaxed">{scam.howToSpot}</p>

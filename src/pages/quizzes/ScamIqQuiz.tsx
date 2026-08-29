@@ -622,7 +622,7 @@ export default function ScamIqQuiz() {
                   <Button
                     size="lg"
                     onClick={startQuiz}
-                    className="min-h-14 text-base bg-white text-blue-950 hover:bg-white/90"
+                    className="min-h-14 text-base bg-card text-blue-950 hover:bg-white/90"
                   >
                     Start the 20-question quiz
                     <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
@@ -637,7 +637,7 @@ export default function ScamIqQuiz() {
                 </div>
 
                 {priorBest !== null && (
-                  <p className="mt-5 text-sm text-white/85">
+                  <p className="mt-5 text-base text-white/85">
                     Your best so far: <strong>{priorBest}/{total}</strong> — can you beat it?
                   </p>
                 )}
@@ -647,14 +647,14 @@ export default function ScamIqQuiz() {
 
           {/* Why this matters */}
           <section className="container py-10 md:py-12">
-            <Alert className="max-w-4xl mx-auto border-red-200 bg-red-50/60 dark:border-red-900/40 dark:bg-red-950/20">
-              <ShieldAlert className="h-5 w-5 text-red-600" aria-hidden="true" />
+            <Alert className="max-w-4xl mx-auto border-danger-foreground/25 bg-red-50/60 dark:bg-red-950/20">
+              <ShieldAlert className="h-5 w-5 text-danger-foreground" aria-hidden="true" />
               <AlertTitle className="text-base font-semibold">Why this matters</AlertTitle>
               <AlertDescription className="text-base leading-relaxed mt-1">
                 The FTC reports seniors lose about <strong>$3.4 billion a year</strong> to scams. Studies show training
                 reduces the fall-for-it rate by up to <strong>43%</strong>. Twenty minutes of practice here can make a
                 real difference the next time a scammer tries you.{' '}
-                <Link to="/guides?category=safety" className="underline font-medium text-red-700 dark:text-red-300">
+                <Link to="/guides?category=safety" className="underline font-medium text-danger-foreground ">
                   Browse the safety guide library →
                 </Link>
               </AlertDescription>
@@ -680,14 +680,14 @@ export default function ScamIqQuiz() {
               <Card>
                 <CardContent className="p-6">
                   <h2 className="text-xl font-semibold mb-3 flex items-center gap-2">
-                    <Trophy className="h-5 w-5 text-amber-500" aria-hidden="true" />
+                    <Trophy className="h-5 w-5 text-warn-foreground" aria-hidden="true" />
                     Five badges to earn
                   </h2>
                   <ul className="space-y-2 text-base leading-relaxed">
                     {BADGES.map((b) => (
                       <li key={b.name} className="flex items-start gap-2">
                         <Badge variant="outline" className={`${b.color} border-current min-w-fit`}>{b.name}</Badge>
-                        <span className="text-muted-foreground text-sm">
+                        <span className="text-muted-foreground text-base">
                           {b.min}–{b.max} correct
                         </span>
                       </li>
@@ -726,13 +726,13 @@ export default function ScamIqQuiz() {
                   <ShieldCheck className="h-5 w-5" aria-hidden="true" />
                   <span className="font-semibold">Scam IQ Quiz</span>
                 </div>
-                <span className="text-sm text-white/85">
+                <span className="text-base text-white/85">
                   Question {currentIdx + 1} of {total}
                 </span>
               </div>
               <Progress
                 value={progressPct}
-                className="h-3 bg-white/20 [&>div]:bg-white"
+                className="h-3 bg-white/20 [&>div]:bg-card"
                 aria-label={`Progress: ${Math.round(progressPct)} percent`}
               />
             </div>
@@ -809,14 +809,14 @@ export default function ScamIqQuiz() {
                   <Alert
                     className={`mb-4 ${
                       wasCorrect
-                        ? 'border-emerald-300 bg-emerald-50 dark:border-emerald-900/40 dark:bg-emerald-950/30'
-                        : 'border-red-300 bg-red-50 dark:border-red-900/40 dark:bg-red-950/30'
+                        ? 'border-emerald-300 bg-success dark:border-emerald-900/40 dark:bg-emerald-950/30'
+                        : 'border-red-300 bg-danger dark:border-red-900/40 dark:bg-red-950/30'
                     }`}
                   >
                     {wasCorrect ? (
-                      <CheckCircle2 className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+                      <CheckCircle2 className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                     ) : (
-                      <XCircle className="h-5 w-5 text-red-600" aria-hidden="true" />
+                      <XCircle className="h-5 w-5 text-danger-foreground" aria-hidden="true" />
                     )}
                     <AlertTitle className="text-lg font-semibold">
                       {wasCorrect ? 'Correct — good eye.' : 'Not the safest choice.'}
@@ -832,21 +832,21 @@ export default function ScamIqQuiz() {
                   <Card className="mb-4 border-l-4 border-l-red-600">
                     <CardContent className="p-5">
                       <div className="flex items-center gap-2 mb-2">
-                        <Flag className="h-5 w-5 text-red-600" aria-hidden="true" />
+                        <Flag className="h-5 w-5 text-danger-foreground" aria-hidden="true" />
                         <h4 className="font-semibold text-base">
                           {currentQ.verdictKind === 'scam' ? "Why it's a scam" : "Why it's real"}
                         </h4>
                       </div>
                       <p className="text-base leading-relaxed mb-3">{currentQ.verdict}</p>
-                      <div className="rounded-lg bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900/40 p-3">
-                        <p className="text-sm font-semibold text-red-900 dark:text-red-200 mb-1">Red flag</p>
-                        <p className="text-sm text-red-900/90 dark:text-red-100/90">{currentQ.redFlag}</p>
+                      <div className="rounded-lg bg-danger border border-danger-foreground/25 p-3">
+                        <p className="text-base font-semibold text-danger-foreground mb-1">Red flag</p>
+                        <p className="text-base text-red-900/90 dark:text-red-100/90">{currentQ.redFlag}</p>
                       </div>
                     </CardContent>
                   </Card>
 
                   <div className="flex justify-between items-center gap-3">
-                    <span className="text-sm text-muted-foreground">
+                    <span className="text-base text-muted-foreground">
                       {currentIdx + 1} of {total} answered
                     </span>
                     <Button size="lg" onClick={goNext} className="min-h-14 text-base">
@@ -965,12 +965,12 @@ export default function ScamIqQuiz() {
                         <div className="flex items-center gap-2 mb-2">
                           <Icon className={`h-5 w-5 ${meta.color}`} aria-hidden="true" />
                           <h3 className="font-semibold text-base">{meta.label}</h3>
-                          <span className="ml-auto text-sm font-semibold">
+                          <span className="ml-auto text-base font-semibold">
                             {row.correct}/{row.total}
                           </span>
                         </div>
                         <Progress value={row.pct} className="h-2" aria-label={`${meta.label}: ${row.pct} percent`} />
-                        <p className="text-sm text-muted-foreground mt-2">{row.pct}% correct</p>
+                        <p className="text-base text-muted-foreground mt-2">{row.pct}% correct</p>
                       </CardContent>
                     </Card>
                   );
@@ -990,16 +990,16 @@ export default function ScamIqQuiz() {
                       <Card key={g.category} className="border-l-4 border-l-amber-500">
                         <CardContent className="p-5">
                           <div className="flex items-start gap-3">
-                            <div className="h-10 w-10 rounded-xl bg-amber-100 dark:bg-amber-950/40 flex items-center justify-center shrink-0">
-                              <Icon className="h-5 w-5 text-amber-700" aria-hidden="true" />
+                            <div className="h-10 w-10 rounded-xl bg-warn flex items-center justify-center shrink-0">
+                              <Icon className="h-5 w-5 text-warn-foreground" aria-hidden="true" />
                             </div>
                             <div className="flex-1">
                               <div className="flex items-center gap-2 mb-1 flex-wrap">
                                 <Badge variant="secondary">#{i + 1}</Badge>
                                 <h3 className="font-semibold">{meta.label}</h3>
-                                <span className="text-sm text-muted-foreground">{g.correct}/{g.total} correct</span>
+                                <span className="text-base text-muted-foreground">{g.correct}/{g.total} correct</span>
                               </div>
-                              <p className="text-sm text-muted-foreground">
+                              <p className="text-base text-muted-foreground">
                                 {g.missedQs.length === 0
                                   ? 'Clean sweep on this channel — strong work.'
                                   : `Review the ${g.missedQs.length} missed scenario${g.missedQs.length === 1 ? '' : 's'} below.`}
@@ -1028,18 +1028,18 @@ export default function ScamIqQuiz() {
                       <AccordionTrigger className="text-left">
                         <div className="flex items-center gap-3 flex-1 pr-4">
                           {correct ? (
-                            <CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0" aria-hidden="true" />
+                            <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0" aria-hidden="true" />
                           ) : (
-                            <XCircle className="h-5 w-5 text-red-600 shrink-0" aria-hidden="true" />
+                            <XCircle className="h-5 w-5 text-danger-foreground shrink-0" aria-hidden="true" />
                           )}
-                          <span className="text-sm text-muted-foreground">#{i + 1}</span>
+                          <span className="text-base text-muted-foreground">#{i + 1}</span>
                           <span className="font-medium">{q.title}</span>
                           <Badge variant="outline" className="ml-auto text-xs hidden sm:inline-flex">{catMeta.label}</Badge>
                         </div>
                       </AccordionTrigger>
                       <AccordionContent>
                         <div className="space-y-3 pb-2">
-                          <p className="text-sm text-muted-foreground leading-relaxed">{q.scenario}</p>
+                          <p className="text-base text-muted-foreground leading-relaxed">{q.scenario}</p>
                           <div className="text-sm space-y-1">
                             <p>
                               <span className="font-semibold">You picked:</span>{' '}
@@ -1056,8 +1056,8 @@ export default function ScamIqQuiz() {
                             </p>
                             <p>{q.verdict}</p>
                           </div>
-                          <div className="rounded-lg bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-900/40 p-3 text-sm">
-                            <p className="font-semibold text-red-900 dark:text-red-200 mb-1">Red flag</p>
+                          <div className="rounded-lg bg-danger border border-danger-foreground/25 p-3 text-sm">
+                            <p className="font-semibold text-danger-foreground mb-1">Red flag</p>
                             <p className="text-red-900/90 dark:text-red-100/90">{q.redFlag}</p>
                           </div>
                         </div>
@@ -1076,17 +1076,17 @@ export default function ScamIqQuiz() {
                   to="/tools/is-this-real"
                   className="rounded-xl border p-5 hover:border-primary hover:bg-muted/40 transition-colors"
                 >
-                  <BookOpen className="h-6 w-6 text-blue-600 mb-2" aria-hidden="true" />
+                  <BookOpen className="h-6 w-6 text-info-foreground mb-2" aria-hidden="true" />
                   <h3 className="font-semibold mb-1">Is This Real?</h3>
-                  <p className="text-sm text-muted-foreground">Paste a message and get an instant read on whether it is a scam.</p>
+                  <p className="text-base text-muted-foreground">Paste a message and get an instant read on whether it is a scam.</p>
                 </Link>
                 <Link
                   to="/tools/scam-simulator"
                   className="rounded-xl border p-5 hover:border-primary hover:bg-muted/40 transition-colors"
                 >
-                  <ShieldAlert className="h-6 w-6 text-red-600 mb-2" aria-hidden="true" />
+                  <ShieldAlert className="h-6 w-6 text-danger-foreground mb-2" aria-hidden="true" />
                   <h3 className="font-semibold mb-1">Scam Simulator</h3>
-                  <p className="text-sm text-muted-foreground">Practice with realistic scam messages in a safe sandbox.</p>
+                  <p className="text-base text-muted-foreground">Practice with realistic scam messages in a safe sandbox.</p>
                 </Link>
                 <Link
                   to="/tools/fake-news-checker"
@@ -1094,7 +1094,7 @@ export default function ScamIqQuiz() {
                 >
                   <Flag className="h-6 w-6 text-fuchsia-600 mb-2" aria-hidden="true" />
                   <h3 className="font-semibold mb-1">Fake News Checker</h3>
-                  <p className="text-sm text-muted-foreground">Sharpen your eye for viral misinformation and deepfakes.</p>
+                  <p className="text-base text-muted-foreground">Sharpen your eye for viral misinformation and deepfakes.</p>
                 </Link>
               </div>
             </div>
@@ -1107,7 +1107,7 @@ export default function ScamIqQuiz() {
                 </div>
                 <div className="flex-1 min-w-[12rem]">
                   <p className="font-semibold">Share this quiz with a friend</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     A 20-minute practice round can save a friend from a $3,000 mistake.
                   </p>
                 </div>
@@ -1126,7 +1126,7 @@ export default function ScamIqQuiz() {
                   <CardContent className="p-4">
                     <ul className="divide-y">
                       {attempts.slice().reverse().map((a, i) => (
-                        <li key={`${a.date}-${i}`} className="py-2 flex items-center gap-3 text-sm">
+                        <li key={`${a.date}-${i}`} className="py-2 flex items-center gap-3 text-base">
                           <span className="text-muted-foreground w-40 shrink-0">
                             {new Date(a.date).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' })}
                           </span>

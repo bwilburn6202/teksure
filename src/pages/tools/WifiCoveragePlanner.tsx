@@ -218,11 +218,12 @@ export default function WifiCoveragePlanner() {
         path="/tools/wifi-coverage-planner"
       />
       <Navbar />
+      <main className="flex-1">
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-sky-50 to-white dark:from-sky-950/30 dark:to-background py-16">
         <div className="container max-w-5xl mx-auto px-4 text-center">
-          <Badge className="mb-4 bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300">
+          <Badge className="mb-4 bg-info text-info-foreground ">
             <Wifi className="h-3 w-3 mr-1" /> WiFi Planner
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Map Your Home. Fix the Dead Zones.</h1>
@@ -242,9 +243,9 @@ export default function WifiCoveragePlanner() {
               {homeSizes.map((s) => (
                 <button key={s.id}
                   onClick={() => setLayout({ ...layout, size: s.id })}
-                  className={`text-left border rounded-lg p-4 transition ${layout.size === s.id ? 'border-sky-500 bg-sky-50 dark:bg-sky-950/30' : 'hover:border-sky-300'}`}>
+                  className={`text-left border rounded-lg p-4 transition ${layout.size === s.id ? 'border-sky-500 bg-info dark:bg-sky-950/30' : 'hover:border-sky-300'}`}>
                   <p className="font-semibold">{s.label}</p>
-                  <p className="text-sm text-muted-foreground">{s.desc}</p>
+                  <p className="text-base text-muted-foreground">{s.desc}</p>
                 </button>
               ))}
             </div>
@@ -255,7 +256,7 @@ export default function WifiCoveragePlanner() {
               {[1, 2, 3, 4].map((n) => (
                 <button key={n}
                   onClick={() => setLayout({ ...layout, floors: n })}
-                  className={`px-5 py-3 rounded-lg border font-medium ${layout.floors === n ? 'border-sky-500 bg-sky-50 dark:bg-sky-950/30' : 'hover:border-sky-300'}`}>
+                  className={`px-5 py-3 rounded-lg border font-medium ${layout.floors === n ? 'border-sky-500 bg-info dark:bg-sky-950/30' : 'hover:border-sky-300'}`}>
                   {n} {n === 1 ? 'floor' : 'floors'}
                 </button>
               ))}
@@ -267,9 +268,9 @@ export default function WifiCoveragePlanner() {
               {wallTypes.map((w) => (
                 <button key={w.id}
                   onClick={() => setLayout({ ...layout, walls: w.id })}
-                  className={`w-full text-left border rounded-lg p-3 flex justify-between items-center ${layout.walls === w.id ? 'border-sky-500 bg-sky-50 dark:bg-sky-950/30' : 'hover:border-sky-300'}`}>
+                  className={`w-full text-left border rounded-lg p-3 flex justify-between items-center ${layout.walls === w.id ? 'border-sky-500 bg-info dark:bg-sky-950/30' : 'hover:border-sky-300'}`}>
                   <span className="font-medium">{w.label}</span>
-                  <span className="text-xs text-muted-foreground">{w.blocks}</span>
+                  <span className="text-sm text-muted-foreground">{w.blocks}</span>
                 </button>
               ))}
             </div>
@@ -280,7 +281,7 @@ export default function WifiCoveragePlanner() {
               {placements.map((p) => (
                 <button key={p.id}
                   onClick={() => setLayout({ ...layout, placement: p.id })}
-                  className={`text-left border rounded-lg p-3 ${layout.placement === p.id ? 'border-sky-500 bg-sky-50 dark:bg-sky-950/30' : 'hover:border-sky-300'}`}>
+                  className={`text-left border rounded-lg p-3 ${layout.placement === p.id ? 'border-sky-500 bg-info dark:bg-sky-950/30' : 'hover:border-sky-300'}`}>
                   <p className="font-medium">{p.label}</p>
                 </button>
               ))}
@@ -292,7 +293,7 @@ export default function WifiCoveragePlanner() {
               {roomOptions.map((room) => (
                 <button key={room}
                   onClick={() => toggleRoom(room)}
-                  className={`px-4 py-2 rounded-full border text-sm transition ${layout.deadZones.includes(room) ? 'border-rose-500 bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300' : 'hover:border-slate-400'}`}>
+                  className={`px-4 py-2 rounded-full border text-sm transition ${layout.deadZones.includes(room) ? 'border-rose-500 bg-danger text-danger-foreground dark:text-rose-300' : 'hover:border-slate-400'}`}>
                   {layout.deadZones.includes(room) && <CheckCircle2 className="inline h-3 w-3 mr-1" />}
                   {room}
                 </button>
@@ -310,20 +311,20 @@ export default function WifiCoveragePlanner() {
 
       {/* Results */}
       {showResults && (
-        <section className="bg-slate-50 dark:bg-slate-950 py-12" id="results">
+        <section className="bg-muted py-12" id="results">
           <div className="container max-w-5xl mx-auto px-4 space-y-8">
 
             {/* Diagnosis */}
-            <Card className="border-sky-200 dark:border-sky-900">
+            <Card className="border-info-foreground/25 ">
               <CardContent className="p-6 md:p-8">
-                <Badge className="mb-3 bg-sky-100 text-sky-700">Your Diagnosis</Badge>
+                <Badge className="mb-3 bg-info text-info-foreground">Your Diagnosis</Badge>
                 <h2 className="text-2xl md:text-3xl font-bold mb-3">{recommendation.headline}</h2>
                 <p className="text-muted-foreground mb-6">{recommendation.explanation}</p>
                 <h3 className="font-semibold mb-3">Next steps</h3>
                 <ul className="space-y-2">
                   {recommendation.nextSteps.map((s, i) => (
                     <li key={i} className="flex gap-2 items-start">
-                      <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" />
                       <span>{s}</span>
                     </li>
                   ))}
@@ -332,10 +333,10 @@ export default function WifiCoveragePlanner() {
             </Card>
 
             {/* DIY fixes first */}
-            <Card className="border-amber-200 dark:border-amber-900 bg-amber-50/50 dark:bg-amber-950/20">
+            <Card className="border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/20">
               <CardContent className="p-6 md:p-8">
                 <div className="flex items-center gap-2 mb-4">
-                  <Lightbulb className="h-5 w-5 text-amber-600" />
+                  <Lightbulb className="h-5 w-5 text-warn-foreground" />
                   <h2 className="text-2xl font-bold">Try these 10 free fixes first</h2>
                 </div>
                 <p className="text-muted-foreground mb-5">
@@ -345,10 +346,10 @@ export default function WifiCoveragePlanner() {
                   {diyFixes.map((f, i) => (
                     <div key={i} className="bg-background rounded-lg border p-4">
                       <p className="font-semibold mb-1 flex items-center gap-2">
-                        <span className="text-xs px-2 py-0.5 rounded-full bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">{i + 1}</span>
+                        <span className="text-xs px-2 py-0.5 rounded-full bg-warn text-warn-foreground ">{i + 1}</span>
                         {f.title}
                       </p>
-                      <p className="text-sm text-muted-foreground">{f.detail}</p>
+                      <p className="text-base text-muted-foreground">{f.detail}</p>
                     </div>
                   ))}
                 </div>
@@ -358,7 +359,7 @@ export default function WifiCoveragePlanner() {
             {/* Products */}
             <div>
               <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
-                <DollarSign className="h-5 w-5 text-emerald-600" /> Product recommendations
+                <DollarSign className="h-5 w-5 text-success-foreground" /> Product recommendations
               </h2>
               <p className="text-muted-foreground mb-6">
                 Real options at three price points. Prices are 2026 estimates and change often — check current prices before buying.
@@ -371,14 +372,14 @@ export default function WifiCoveragePlanner() {
                       <Badge variant="outline" className="mb-2">{p.tier}</Badge>
                       <p className="text-2xl font-bold mb-1">{p.price}</p>
                       <p className="font-semibold">{p.name}</p>
-                      <p className="text-xs text-muted-foreground mb-4">Covers {p.covers}</p>
-                      <p className="text-sm mb-4">{p.detail}</p>
-                      <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-400 mb-1">Strengths</p>
-                      <ul className="text-xs text-muted-foreground space-y-1 mb-3">
+                      <p className="text-sm text-muted-foreground mb-4">Covers {p.covers}</p>
+                      <p className="text-base mb-4">{p.detail}</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Strengths</p>
+                      <ul className="text-sm text-muted-foreground space-y-1 mb-3">
                         {p.good.map((g, i) => <li key={i}>• {g}</li>)}
                       </ul>
-                      <p className="text-xs font-semibold text-amber-700 dark:text-amber-400 mb-1">Trade-offs</p>
-                      <ul className="text-xs text-muted-foreground space-y-1">
+                      <p className="text-sm font-semibold text-warn-foreground mb-1">Trade-offs</p>
+                      <ul className="text-sm text-muted-foreground space-y-1">
                         {p.okay.map((g, i) => <li key={i}>• {g}</li>)}
                       </ul>
                     </CardContent>
@@ -391,18 +392,18 @@ export default function WifiCoveragePlanner() {
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                  <Zap className="h-5 w-5 text-sky-600" /> Extender vs. mesh — which one?
+                  <Zap className="h-5 w-5 text-info-foreground" /> Extender vs. mesh — which one?
                 </h3>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="border rounded-lg p-4">
                     <p className="font-semibold">Range extender (~$50–$100)</p>
-                    <p className="text-sm text-muted-foreground mb-2">Cheaper, fine for a single dead zone.</p>
-                    <p className="text-xs"><strong>Downside:</strong> Creates a second network name. Cuts speeds roughly in half. Not great for 4K streaming or video calls.</p>
+                    <p className="text-base text-muted-foreground mb-2">Cheaper, fine for a single dead zone.</p>
+                    <p className="text-sm"><strong>Downside:</strong> Creates a second network name. Cuts speeds roughly in half. Not great for 4K streaming or video calls.</p>
                   </div>
-                  <div className="border rounded-lg p-4 border-sky-300 bg-sky-50 dark:bg-sky-950/30">
+                  <div className="border rounded-lg p-4 border-info-foreground/25 bg-info ">
                     <p className="font-semibold">Mesh system (~$180–$900)</p>
-                    <p className="text-sm text-muted-foreground mb-2">One network name, full speeds everywhere.</p>
-                    <p className="text-xs"><strong>Downside:</strong> Costs more. Overkill for small apartments with one weak room.</p>
+                    <p className="text-base text-muted-foreground mb-2">One network name, full speeds everywhere.</p>
+                    <p className="text-sm"><strong>Downside:</strong> Costs more. Overkill for small apartments with one weak room.</p>
                   </div>
                 </div>
               </CardContent>
@@ -414,14 +415,14 @@ export default function WifiCoveragePlanner() {
                 <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
                   <Settings className="h-5 w-5" /> Wired backhaul — the pro move
                 </h3>
-                <p className="text-sm text-muted-foreground mb-3">
+                <p className="text-base text-muted-foreground mb-3">
                   If your house has ethernet jacks in the walls, use them to connect mesh nodes to each other.
                   This is called "wired backhaul" and roughly doubles mesh performance.
                 </p>
-                <ul className="text-sm space-y-1.5">
-                  <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-500 mt-0.5 shrink-0" /> Use a Cat6 or Cat6a cable between nodes</li>
-                  <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-500 mt-0.5 shrink-0" /> Some mesh apps auto-detect wired backhaul; others need a setting turned on</li>
-                  <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-emerald-500 mt-0.5 shrink-0" /> MoCA adapters work over coax (cable TV) wiring if you have that instead</li>
+                <ul className="text-base space-y-1.5">
+                  <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" /> Use a Cat6 or Cat6a cable between nodes</li>
+                  <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" /> Some mesh apps auto-detect wired backhaul; others need a setting turned on</li>
+                  <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" /> MoCA adapters work over coax (cable TV) wiring if you have that instead</li>
                 </ul>
               </CardContent>
             </Card>
@@ -430,7 +431,7 @@ export default function WifiCoveragePlanner() {
             <Card>
               <CardContent className="p-6">
                 <h3 className="text-xl font-bold mb-3">How to set up a signal booster the right way</h3>
-                <ol className="space-y-2 text-sm list-decimal list-inside text-muted-foreground">
+                <ol className="space-y-2 text-base list-decimal list-inside text-muted-foreground">
                   <li>Plug it into a wall outlet <strong className="text-foreground">halfway</strong> between the router and the dead zone — not inside the dead zone.</li>
                   <li>Let it find your network — most modern extenders have a WPS button.</li>
                   <li>Put close devices on the 5 GHz network and far devices on the 2.4 GHz network.</li>
@@ -445,7 +446,7 @@ export default function WifiCoveragePlanner() {
                     className="border rounded-lg p-5 bg-background hover:shadow-md transition group flex items-center justify-between">
                 <div>
                   <h3 className="font-semibold">Set up a mesh WiFi system</h3>
-                  <p className="text-sm text-muted-foreground">Step-by-step guide for eero, Deco, and Orbi.</p>
+                  <p className="text-base text-muted-foreground">Step-by-step guide for eero, Deco, and Orbi.</p>
                 </div>
                 <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-1 transition" />
               </Link>
@@ -453,7 +454,7 @@ export default function WifiCoveragePlanner() {
                     className="border rounded-lg p-5 bg-background hover:shadow-md transition group flex items-center justify-between">
                 <div>
                   <h3 className="font-semibold">WiFi speed checker</h3>
-                  <p className="text-sm text-muted-foreground">See what speed you are actually getting.</p>
+                  <p className="text-base text-muted-foreground">See what speed you are actually getting.</p>
                 </div>
                 <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-1 transition" />
               </Link>
@@ -465,10 +466,10 @@ export default function WifiCoveragePlanner() {
       {!showResults && (
         <section className="py-10">
           <div className="container max-w-3xl mx-auto px-4">
-            <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-900">
+            <Card className="bg-warn border-warn-foreground/25 ">
               <CardContent className="p-5 flex gap-3 items-start">
-                <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
-                <p className="text-sm">
+                <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
+                <p className="text-base">
                   <strong>Quick Tip:</strong> Before you buy anything, finish the planner above and try the DIY fixes we show
                   in the results. Most people fix their dead zones with free changes to router placement.
                 </p>
@@ -478,6 +479,7 @@ export default function WifiCoveragePlanner() {
         </section>
       )}
 
+      </main>
       <Footer />
     </div>
   );
@@ -492,13 +494,13 @@ function StepCard({
     <Card>
       <CardContent className="p-6">
         <div className="flex items-start gap-3 mb-4">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300 shrink-0">
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-info text-info-foreground shrink-0">
             {icon}
           </div>
           <div>
-            <p className="text-xs font-semibold text-muted-foreground">STEP {step}</p>
+            <p className="text-sm font-semibold text-muted-foreground">STEP {step}</p>
             <h2 className="text-xl font-bold leading-tight">{title}</h2>
-            {subtitle && <p className="text-sm text-muted-foreground mt-1">{subtitle}</p>}
+            {subtitle && <p className="text-base text-muted-foreground mt-1">{subtitle}</p>}
           </div>
         </div>
         {children}

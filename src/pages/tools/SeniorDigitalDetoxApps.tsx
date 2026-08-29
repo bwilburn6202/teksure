@@ -22,7 +22,7 @@ export default function SeniorDigitalDetoxApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Phone-free hours</h2><p>Schedule no-phone times. Mealtimes, walks, mornings.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefits</h2><p>Better sleep, less anxiety, more present with grandkids.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Try a weekend</h2><p>Phone in drawer 24 hours. World keeps spinning. You&apos;ll feel refreshed.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Charge phone in kitchen at night, not bedside. Sleep dramatically better.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Charge phone in kitchen at night, not bedside. Sleep dramatically better.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

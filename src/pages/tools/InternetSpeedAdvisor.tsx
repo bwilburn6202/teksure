@@ -40,15 +40,15 @@ export default function InternetSpeedAdvisor() {
           <div className="grid gap-2">{ACTIVITIES.map(a => (
             <button key={a.id} onClick={() => toggle(a.id)} className={`flex items-center gap-3 p-3 rounded-lg border text-left transition-all ${selected.has(a.id) ? 'border-primary bg-primary/5' : 'border-border hover:bg-muted/50'}`}>
               {selected.has(a.id) ? <CheckCircle className="h-5 w-5 text-primary shrink-0" /> : <a.icon className="h-5 w-5 text-muted-foreground shrink-0" />}
-              <span className="text-sm font-medium">{a.label}</span>
+              <span className="text-base font-medium">{a.label}</span>
             </button>
           ))}</div>
         </CardContent></Card>
         <Card className="border-primary/40"><CardContent className="p-6 text-center">
-          <p className="text-sm text-muted-foreground mb-1">Recommended speed for your household</p>
+          <p className="text-base text-muted-foreground mb-1">Recommended speed for your household</p>
           <p className="text-4xl font-bold text-primary mb-1">{recommended} Mbps</p>
           <Badge variant="outline" className="mb-4">{tier} plan</Badge>
-          <p className="text-sm text-muted-foreground">This is the download speed you should look for when comparing internet plans. Most providers like AT&T, Xfinity, Spectrum, and Verizon offer plans in this range.</p>
+          <p className="text-base text-muted-foreground">This is the download speed you should look for when comparing internet plans. Most providers like AT&T, Xfinity, Spectrum, and Verizon offer plans in this range.</p>
         </CardContent></Card>
       </div></main>
       <Footer />

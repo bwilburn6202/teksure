@@ -30,10 +30,10 @@ export default function CarTradeInApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function CarTradeInApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trade vs sell</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Trade-in</strong> — easier, less money.</li>
               <li><strong>Private sale</strong> — most money, more work.</li>
               <li><strong>Online buyers</strong> — middle ground.</li>
@@ -56,7 +56,7 @@ export default function CarTradeInApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: Carvana</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Online quote in minutes.</li>
               <li>Pick up car at home.</li>
               <li>Cash transferred to bank.</li>
@@ -70,7 +70,7 @@ export default function CarTradeInApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Maximize value</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wash + clean inside.</li>
               <li>Detail kit — $30 vs hire $200.</li>
               <li>Recent oil change records.</li>
@@ -85,7 +85,7 @@ export default function CarTradeInApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Never accept personal check.</li>
               <li>Never deliver before payment confirmed.</li>
               <li>Beware &quot;buyer&apos;s agent&quot; abroad.</li>
@@ -99,7 +99,7 @@ export default function CarTradeInApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Title transfer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sign title to buyer in person.</li>
               <li>Bill of sale — both copies.</li>
               <li>Notify state DMV — release of liability.</li>
@@ -113,7 +113,7 @@ export default function CarTradeInApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Donate option</h3>
-            <p className="text-sm text-muted-foreground">If car worth less than $1,000 — consider donation. Charity tax deduction. Free pickup. Habitat for Humanity, Make-A-Wish, NPR. Less stress than selling. Rotary clubs accept too. Old cars without titles — recycling for parts. Don&apos;t let car sit deteriorating in driveway.</p>
+            <p className="text-base text-muted-foreground">If car worth less than $1,000 — consider donation. Charity tax deduction. Free pickup. Habitat for Humanity, Make-A-Wish, NPR. Less stress than selling. Rotary clubs accept too. Old cars without titles — recycling for parts. Don&apos;t let car sit deteriorating in driveway.</p>
           </CardContent>
         </Card>
       </main>

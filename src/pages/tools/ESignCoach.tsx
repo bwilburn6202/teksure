@@ -19,14 +19,14 @@ export default function ESignCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Are e-signatures legally binding?</h2>
-            <p className="text-sm">Yes. The federal "ESIGN Act" of 2000 made electronic signatures equal to ink-on-paper for most purposes. Banks, lawyers, real estate, doctors, and government forms all accept them. (A few exceptions: wills and certain court documents still need wet ink.)</p>
+            <p className="text-base">Yes. The federal "ESIGN Act" of 2000 made electronic signatures equal to ink-on-paper for most purposes. Banks, lawyers, real estate, doctors, and government forms all accept them. (A few exceptions: wills and certain court documents still need wet ink.)</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Path 1 — Someone sent you a DocuSign or Adobe Sign email</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open the email. Look for a "Review Document" or "Sign Here" button.</li>
               <li>Tap it. The document opens in your browser — no app needed.</li>
               <li>It walks you through page by page. Yellow tabs show where to sign or initial.</li>
@@ -41,31 +41,31 @@ export default function ESignCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Path 2 — They emailed a PDF asking you to sign</h2>
-            <p className="text-sm mb-3">Use your phone or computer's built-in signing tool — free.</p>
-            <p className="font-semibold mt-3 text-sm"> iPhone / iPad:</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="text-base mb-3">Use your phone or computer's built-in signing tool — free.</p>
+            <p className="font-semibold mt-3 text-base"> iPhone / iPad:</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Open the PDF in Mail or Files.</li>
               <li>Tap the markup icon (pen tip in a circle) at the top.</li>
               <li>Tap the + → "Signature" → draw with your finger. (Saved for next time.)</li>
               <li>Drag the signature to the right spot. Tap Done.</li>
               <li>Email it back as a reply.</li>
             </ol>
-            <p className="font-semibold mt-3 text-sm"> Android:</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="font-semibold mt-3 text-base"> Android:</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Open the PDF in Google Drive (free).</li>
               <li>Tap the pencil icon at the bottom.</li>
               <li>Pick "Drawing" → draw your signature with your finger.</li>
               <li>Save and share back.</li>
             </ol>
-            <p className="font-semibold mt-3 text-sm"> Mac:</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="font-semibold mt-3 text-base"> Mac:</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Open the PDF in Preview.</li>
               <li>Click the markup toolbar icon (pencil tip in a circle).</li>
               <li>Click the signature icon → "Create Signature" → use your trackpad or hold a hand-signed paper to your camera.</li>
               <li>Drag the signature onto the PDF.</li>
             </ol>
-            <p className="font-semibold mt-3 text-sm"> Windows:</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="font-semibold mt-3 text-base"> Windows:</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Open the PDF in Microsoft Edge (free).</li>
               <li>Click the "Draw" toolbar button (a pencil icon).</li>
               <li>Sign with your mouse, trackpad, or stylus.</li>
@@ -74,13 +74,13 @@ export default function ESignCoach() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-green-50 border-green-300 dark:bg-green-950/20 dark:border-green-800">
+        <Card className="mb-4 bg-success border-success-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <ShieldCheck className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
+              <ShieldCheck className="w-6 h-6 text-success-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-2">Stay safe</h3>
-                <ul className="list-disc pl-5 space-y-1 text-sm">
+                <ul className="list-disc pl-5 space-y-1 text-base">
                   <li>Never sign a document you didn't expect — pause and verify with the sender by phone.</li>
                   <li>DocuSign and Adobe Sign emails should ONLY come from docusign.net or adobesign.com. Hover over the sender to check.</li>
                   <li>Read the document fully before signing, just like a paper one.</li>
@@ -94,7 +94,7 @@ export default function ESignCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free tools (no signup)</h3>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>DocuSign Free</strong> — 3 free sends per month if YOU need others to sign.</li>
               <li><strong>Adobe Acrobat Reader (free)</strong> — let's you sign PDFs without a subscription.</li>
               <li><strong>HelloSign</strong> — 3 free signs/month from your end.</li>

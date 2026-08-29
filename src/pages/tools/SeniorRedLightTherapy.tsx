@@ -19,10 +19,10 @@ export default function SeniorRedLightTherapy() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What it is</h2><p>660-850 nm red/near-infrared light. Penetrates skin. May help cells.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mito Red Mini</h2><p>$200. Compact panel. 10-20 min daily sessions.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Dr. Pen handheld</h2><p>$60. Portable. Use on sore knees, shoulders, back.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Studies show</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Joint pain relief (some)</li><li>Faster wound healing</li><li>Skin improvement</li><li>Improved sleep</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Studies show</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Joint pain relief (some)</li><li>Faster wound healing</li><li>Skin improvement</li><li>Improved sleep</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Be skeptical</h2><p>Industry has overpromises. Real benefit modest. Doctor visits for pain still important.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Eye safety</h2><p>Don&apos;t look directly at LEDs. Wear included goggles.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Try cheap device first. If no improvement in 30 days, return it.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Try cheap device first. If no improvement in 30 days, return it.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

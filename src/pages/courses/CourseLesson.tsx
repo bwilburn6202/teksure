@@ -98,7 +98,7 @@ export default function CourseLesson() {
 
         {/* Header */}
         <section className="container max-w-3xl mx-auto px-4 py-8">
-          <p className="text-sm text-muted-foreground mb-2">
+          <p className="text-base text-muted-foreground mb-2">
             <span aria-hidden="true">{course.emoji}</span> {course.title}
           </p>
           <h1 className="text-3xl md:text-4xl font-bold leading-tight mb-2">{lesson.title}</h1>
@@ -107,17 +107,17 @@ export default function CourseLesson() {
             <div className="mt-4 inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-muted text-sm">
               {priorStatus === 'mastered' ? (
                 <>
-                  <Trophy className="h-4 w-4 text-emerald-600" />
+                  <Trophy className="h-4 w-4 text-success-foreground" />
                   <span>You've mastered this lesson — best: {priorRecord?.best}/3</span>
                 </>
               ) : priorStatus === 'passed' ? (
                 <>
-                  <CheckCircle2 className="h-4 w-4 text-emerald-600" />
+                  <CheckCircle2 className="h-4 w-4 text-success-foreground" />
                   <span>You've passed this lesson — best: {priorRecord?.best}/3</span>
                 </>
               ) : (
                 <>
-                  <Target className="h-4 w-4 text-amber-600" />
+                  <Target className="h-4 w-4 text-warn-foreground" />
                   <span>Best so far: {priorRecord?.best}/3 — keep going</span>
                 </>
               )}
@@ -159,9 +159,9 @@ export default function CourseLesson() {
                             {i + 1}
                           </span>
                           <div className="min-w-0">
-                            <p className="font-medium text-sm">{step.title}</p>
+                            <p className="font-medium text-base">{step.title}</p>
                             {step.content && (
-                              <p className="text-sm text-muted-foreground mt-0.5">
+                              <p className="text-base text-muted-foreground mt-0.5">
                                 {step.content}
                               </p>
                             )}
@@ -195,7 +195,7 @@ export default function CourseLesson() {
         <section className="container max-w-3xl mx-auto px-4 pb-8">
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-xl font-bold">Check your understanding</h2>
-            <span className="text-xs text-muted-foreground">
+            <span className="text-sm text-muted-foreground">
               Pass: {PASSING_SCORE} of 3 correct
             </span>
           </div>
@@ -219,15 +219,15 @@ export default function CourseLesson() {
               <CardContent className="p-6">
                 <div className="flex items-start gap-3 mb-4">
                   {passedThisAttempt ? (
-                    <CheckCircle2 className="h-6 w-6 text-emerald-600 shrink-0" />
+                    <CheckCircle2 className="h-6 w-6 text-success-foreground shrink-0" />
                   ) : (
-                    <Target className="h-6 w-6 text-amber-600 shrink-0" />
+                    <Target className="h-6 w-6 text-warn-foreground shrink-0" />
                   )}
                   <div>
                     <p className="font-semibold text-lg">
                       You got {submittedScore} of {lesson.quiz.length}.
                     </p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       {submittedScore === 3
                         ? 'Mastered — three for three.'
                         : passedThisAttempt
@@ -273,7 +273,7 @@ export default function CourseLesson() {
 
                 {courseJustCompleted && (
                   <div className="mt-5 pt-5 border-t border-emerald-500/20 flex items-center gap-3 text-sm">
-                    <Trophy className="h-5 w-5 text-amber-600" />
+                    <Trophy className="h-5 w-5 text-warn-foreground" />
                     <span>
                       <strong>Course complete!</strong> You've earned the{' '}
                       <Link

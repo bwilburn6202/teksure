@@ -142,7 +142,7 @@ export default function UpdateDecisionHelper() {
             <Card className="border-border shadow-sm">
               <CardContent className="p-6 space-y-6">
                 <div>
-                  <p className="text-sm font-semibold mb-2">1. What kind of update?</p>
+                  <p className="text-base font-semibold mb-2">1. What kind of update?</p>
                   <div className="grid sm:grid-cols-2 gap-2">
                     {([
                       { id: 'os' as const,       label: 'Phone or computer OS', sub: 'iOS, Android, Windows, macOS' },
@@ -154,8 +154,8 @@ export default function UpdateDecisionHelper() {
                         className={`p-3 rounded-lg border text-left transition-all ${
                           type === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                         }`}>
-                        <p className="font-medium text-sm">{o.label}</p>
-                        <p className="text-xs text-muted-foreground">{o.sub}</p>
+                        <p className="font-medium text-base">{o.label}</p>
+                        <p className="text-sm text-muted-foreground">{o.sub}</p>
                       </button>
                     ))}
                   </div>
@@ -163,7 +163,7 @@ export default function UpdateDecisionHelper() {
 
                 {type && (
                   <div>
-                    <p className="text-sm font-semibold mb-2">2. When was this update released?</p>
+                    <p className="text-base font-semibold mb-2">2. When was this update released?</p>
                     <div className="grid sm:grid-cols-2 gap-2">
                       {([
                         { id: 'just-released' as const, label: 'Just came out', sub: 'Within the last few days' },
@@ -175,8 +175,8 @@ export default function UpdateDecisionHelper() {
                           className={`p-3 rounded-lg border text-left transition-all ${
                             recency === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                           }`}>
-                          <p className="font-medium text-sm">{o.label}</p>
-                          <p className="text-xs text-muted-foreground">{o.sub}</p>
+                          <p className="font-medium text-base">{o.label}</p>
+                          <p className="text-sm text-muted-foreground">{o.sub}</p>
                         </button>
                       ))}
                     </div>
@@ -185,8 +185,8 @@ export default function UpdateDecisionHelper() {
 
                 {recency && (
                   <div>
-                    <p className="text-sm font-semibold mb-2">3. Does the update mention &quot;security&quot;?</p>
-                    <p className="text-xs text-muted-foreground mb-2">Look for words like security, vulnerability, fix, or patch.</p>
+                    <p className="text-base font-semibold mb-2">3. Does the update mention &quot;security&quot;?</p>
+                    <p className="text-sm text-muted-foreground mb-2">Look for words like security, vulnerability, fix, or patch.</p>
                     <div className="grid sm:grid-cols-2 gap-2">
                       {[
                         { id: true,  label: 'Yes, it mentions security' },
@@ -196,7 +196,7 @@ export default function UpdateDecisionHelper() {
                           className={`p-3 rounded-lg border text-left transition-all ${
                             isSecurity === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                           }`}>
-                          <p className="font-medium text-sm">{o.label}</p>
+                          <p className="font-medium text-base">{o.label}</p>
                         </button>
                       ))}
                     </div>
@@ -205,7 +205,7 @@ export default function UpdateDecisionHelper() {
 
                 {isSecurity !== null && (
                   <div>
-                    <p className="text-sm font-semibold mb-2">4. Have you backed up recently?</p>
+                    <p className="text-base font-semibold mb-2">4. Have you backed up recently?</p>
                     <div className="grid sm:grid-cols-2 gap-2">
                       {[
                         { id: true,  label: 'Yes, within the last week' },
@@ -215,7 +215,7 @@ export default function UpdateDecisionHelper() {
                           className={`p-3 rounded-lg border text-left transition-all ${
                             hasBackup === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                           }`}>
-                          <p className="font-medium text-sm">{o.label}</p>
+                          <p className="font-medium text-base">{o.label}</p>
                         </button>
                       ))}
                     </div>
@@ -226,17 +226,17 @@ export default function UpdateDecisionHelper() {
           ) : (
             <>
               <Card className={`mb-6 border-2 ${
-                verdict.level === 'install-asap' ? 'border-red-300 bg-red-50 dark:bg-red-950/20' :
-                verdict.level === 'wait-week' ? 'border-amber-300 bg-amber-50 dark:bg-amber-950/20' :
-                verdict.level === 'caution' ? 'border-amber-300 bg-amber-50 dark:bg-amber-950/20' :
-                'border-green-300 bg-green-50 dark:bg-green-950/20'
+                verdict.level === 'install-asap' ? 'border-red-300 bg-danger dark:bg-red-950/20' :
+                verdict.level === 'wait-week' ? 'border-amber-300 bg-warn dark:bg-amber-950/20' :
+                verdict.level === 'caution' ? 'border-amber-300 bg-warn dark:bg-amber-950/20' :
+                'border-green-300 bg-success dark:bg-green-950/20'
               }`}>
                 <CardContent className="p-6">
                   <Badge className={`mb-3 ${
-                    verdict.level === 'install-asap' ? 'bg-red-100 text-red-700 border-red-300' :
-                    verdict.level === 'wait-week' ? 'bg-amber-100 text-amber-700 border-amber-300' :
-                    verdict.level === 'caution' ? 'bg-amber-100 text-amber-700 border-amber-300' :
-                    'bg-green-100 text-green-700 border-green-300'
+                    verdict.level === 'install-asap' ? 'bg-red-100 text-danger-foreground border-red-300' :
+                    verdict.level === 'wait-week' ? 'bg-amber-100 text-warn-foreground border-amber-300' :
+                    verdict.level === 'caution' ? 'bg-amber-100 text-warn-foreground border-amber-300' :
+                    'bg-green-100 text-success-foreground border-green-300'
                   }`}>
                     {verdict.level === 'install-asap' && <AlertTriangle className="h-3 w-3 mr-1" />}
                     {verdict.level === 'wait-week' && <Clock className="h-3 w-3 mr-1" />}
@@ -244,14 +244,14 @@ export default function UpdateDecisionHelper() {
                     {verdict.badge}
                   </Badge>
                   <h2 className="text-2xl font-bold mb-2">{verdict.title}</h2>
-                  <p className="text-sm text-muted-foreground">{verdict.reason}</p>
+                  <p className="text-base text-muted-foreground">{verdict.reason}</p>
                 </CardContent>
               </Card>
 
               <Card className="mb-6 border-border">
                 <CardContent className="p-5">
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">What to do</p>
-                  <ol className="space-y-2 text-sm">
+                  <ol className="space-y-2 text-base">
                     {verdict.steps.map((s, i) => (
                       <li key={i} className="flex gap-2">
                         <span className="shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary text-xs font-semibold flex items-center justify-center mt-0.5">{i + 1}</span>
@@ -270,20 +270,20 @@ export default function UpdateDecisionHelper() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/backup-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Backup Wizard</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Make a backup before updating.</p>
+                <p className="font-medium text-base">Backup Wizard</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Make a backup before updating.</p>
               </Link>
               <Link to="/tools/device-age-checker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Device Age Checker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Is your device still getting updates?</p>
+                <p className="font-medium text-base">Device Age Checker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Is your device still getting updates?</p>
               </Link>
               <Link to="/tools/troubleshooter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Troubleshooter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Update went wrong? Start here.</p>
+                <p className="font-medium text-base">Troubleshooter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Update went wrong? Start here.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> When in doubt, security updates beat almost any other concern. They protect everything else.
           </p>
         </div>

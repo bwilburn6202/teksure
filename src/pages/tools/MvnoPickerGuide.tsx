@@ -19,14 +19,14 @@ export default function MvnoPickerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What an MVNO is</h2>
-            <p className="text-sm">"MVNO" = Mobile Virtual Network Operator. They lease network capacity from the big 3 (Verizon, AT&amp;T, T-Mobile) and resell it cheaper. Same towers. Same coverage. Less marketing overhead = less expensive plans.</p>
+            <p className="text-base">"MVNO" = Mobile Virtual Network Operator. They lease network capacity from the big 3 (Verizon, AT&amp;T, T-Mobile) and resell it cheaper. Same towers. Same coverage. Less marketing overhead = less expensive plans.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">By underlying network</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Verizon network</strong> — Visible, Total Wireless, Straight Talk (some), US Mobile (some).</li>
               <li><strong>T-Mobile network</strong> — Mint Mobile, Metro by T-Mobile, Tello, US Mobile (some).</li>
               <li><strong>AT&amp;T network</strong> — Cricket, H2O, Red Pocket (some), US Mobile (some).</li>
@@ -38,7 +38,7 @@ export default function MvnoPickerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick by your area</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Which carrier has best signal at YOUR home? (Ask neighbors, check coverage maps.)</li>
               <li>Pick MVNO using that network.</li>
               <li>Rural — Verizon usually wins. Cities — all 3 work.</li>
@@ -50,7 +50,7 @@ export default function MvnoPickerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trade-offs to know</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Postpaid customers may get priority during peak — MVNO speed sometimes slower then.</li>
               <li>International roaming usually costs more on MVNOs.</li>
               <li>Hotspot data sometimes capped on MVNOs.</li>
@@ -63,7 +63,7 @@ export default function MvnoPickerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best beginner MVNOs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mint Mobile</strong> — easy setup, $15/mo if you prepay 12 months.</li>
               <li><strong>Visible</strong> — Verizon network, $25 unlimited, super-simple.</li>
               <li><strong>Consumer Cellular</strong> — senior-focused, AARP discount, friendly support.</li>
@@ -75,7 +75,7 @@ export default function MvnoPickerGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">First-month risk-free</h3>
-            <p className="text-sm text-muted-foreground">Most MVNOs offer 7-30 day money-back guarantee. Test on your phone with eSIM. If signal is bad, switch back. Worst case = $30 wasted. Best case = $700/year saved.</p>
+            <p className="text-base text-muted-foreground">Most MVNOs offer 7-30 day money-back guarantee. Test on your phone with eSIM. If signal is bad, switch back. Worst case = $30 wasted. Best case = $700/year saved.</p>
           </CardContent>
         </Card>
       </main>

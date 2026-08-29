@@ -196,7 +196,7 @@ function InstructionList({ items }: { items: string[] }) {
   return (
     <ol className="space-y-2 mt-3">
       {items.map((item, i) => (
-        <li key={i} className="flex gap-3 text-sm">
+        <li key={i} className="flex gap-3 text-base">
           <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary text-xs font-semibold flex items-center justify-center mt-0.5">{i + 1}</span>
           <span className="text-muted-foreground leading-relaxed">{item}</span>
         </li>
@@ -330,9 +330,9 @@ export default function EmailDeclutter() {
               {/* ── STEP 2: Find bulk emails ── */}
               {step === 2 && service && (
                 <div className="space-y-4">
-                  <div className="flex items-start gap-2 p-3 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800">
-                    <Lightbulb className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
-                    <p className="text-sm text-amber-800 dark:text-amber-200">
+                  <div className="flex items-start gap-2 p-3 rounded-lg bg-warn border border-warn-foreground/25 ">
+                    <Lightbulb className="h-4 w-4 text-warn-foreground shrink-0 mt-0.5" />
+                    <p className="text-base text-warn-foreground ">
                       {service === 'gmail'
                         ? 'Copy any search query below and paste it into the Gmail search bar at the top of your inbox.'
                         : service === 'outlook'
@@ -345,10 +345,10 @@ export default function EmailDeclutter() {
                     {filteredQueries.map((q, i) => (
                       <div key={i} className="p-4 rounded-lg border border-border bg-muted/30">
                         <div className="flex items-center justify-between gap-2 flex-wrap">
-                          <span className="font-medium text-sm">{q.label}</span>
+                          <span className="font-medium text-base">{q.label}</span>
                           <Badge variant="outline" className="text-xs">{service}</Badge>
                         </div>
-                        <p className="text-xs text-muted-foreground mt-1 mb-2">{q.description}</p>
+                        <p className="text-sm text-muted-foreground mt-1 mb-2">{q.description}</p>
                         <div className="flex items-center gap-2">
                           <code className="flex-1 bg-background border border-border rounded px-3 py-1.5 text-xs font-mono break-all">
                             {q.query}
@@ -375,8 +375,8 @@ export default function EmailDeclutter() {
               {step === 3 && service && (
                 <div>
                   <InstructionList items={instructions.unsubscribe} />
-                  <div className="mt-4 p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
-                    <p className="text-sm text-blue-800 dark:text-blue-200">
+                  <div className="mt-4 p-3 rounded-lg bg-info border border-info-foreground/25 ">
+                    <p className="text-base text-info-foreground ">
                       <strong>Tip:</strong> Don't rush — unsubscribing from 5–10 newsletters now will save you hundreds of emails over the next year.
                     </p>
                   </div>
@@ -386,9 +386,9 @@ export default function EmailDeclutter() {
               {/* ── STEP 4: Archive ── */}
               {step === 4 && service && (
                 <div>
-                  <div className="flex items-start gap-2 p-3 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 mb-4">
-                    <Archive className="h-4 w-4 text-green-700 shrink-0 mt-0.5" />
-                    <p className="text-sm text-green-800 dark:text-green-200">
+                  <div className="flex items-start gap-2 p-3 rounded-lg bg-success border border-success-foreground/25 mb-4">
+                    <Archive className="h-4 w-4 text-success-foreground shrink-0 mt-0.5" />
+                    <p className="text-base text-success-foreground ">
                       <strong>Archiving is safe</strong> — it removes emails from your inbox but keeps them saved. You can always search for them later.
                     </p>
                   </div>
@@ -399,9 +399,9 @@ export default function EmailDeclutter() {
               {/* ── STEP 5: Empty trash ── */}
               {step === 5 && service && (
                 <div>
-                  <div className="flex items-start gap-2 p-3 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 mb-4">
-                    <Trash2 className="h-4 w-4 text-red-600 shrink-0 mt-0.5" />
-                    <p className="text-sm text-red-800 dark:text-red-200">
+                  <div className="flex items-start gap-2 p-3 rounded-lg bg-danger border border-danger-foreground/25 mb-4">
+                    <Trash2 className="h-4 w-4 text-danger-foreground shrink-0 mt-0.5" />
+                    <p className="text-base text-danger-foreground ">
                       <strong>Warning:</strong> Emptying trash is permanent. Make sure you don't need anything in there before proceeding.
                     </p>
                   </div>
@@ -413,8 +413,8 @@ export default function EmailDeclutter() {
               {step === 6 && service && (
                 <div>
                   <InstructionList items={instructions.organize} />
-                  <div className="mt-4 p-3 rounded-lg bg-purple-50 dark:bg-purple-900/20 border border-purple-200 dark:border-purple-800">
-                    <p className="text-sm text-purple-800 dark:text-purple-200">
+                  <div className="mt-4 p-3 rounded-lg bg-primary/10 border border-primary/25 ">
+                    <p className="text-base text-primary ">
                       <strong>Idea:</strong> Create just 3–4 folders to start with — something like "Bills", "Family", "Work", and "To Read".
                     </p>
                   </div>
@@ -425,8 +425,8 @@ export default function EmailDeclutter() {
               {step === 7 && (
                 <div className="space-y-4">
                   <div className="flex items-center justify-center py-4">
-                    <div className="w-20 h-20 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
-                      <CheckCircle2 className="h-10 w-10 text-green-600" />
+                    <div className="w-20 h-20 rounded-full bg-success flex items-center justify-center">
+                      <CheckCircle2 className="h-10 w-10 text-success-foreground" />
                     </div>
                   </div>
                   <p className="text-center text-muted-foreground">Great work! Here are some habits to keep your inbox tidy going forward:</p>
@@ -440,7 +440,7 @@ export default function EmailDeclutter() {
                     ].map(({ icon: Icon, tip, color }, i) => (
                       <div key={i} className="flex gap-3 p-3 rounded-lg border border-border bg-muted/30">
                         <Icon className={`h-5 w-5 ${color} shrink-0 mt-0.5`} />
-                        <p className="text-sm text-muted-foreground">{tip}</p>
+                        <p className="text-base text-muted-foreground">{tip}</p>
                       </div>
                     ))}
                   </div>

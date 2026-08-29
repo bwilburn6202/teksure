@@ -31,14 +31,14 @@ const sections: Section[] = [
     summary: 'Your name, addresses, Social Security number (last 4), date of birth, and employers on record.',
     sample: (
       <div className="font-mono text-xs leading-relaxed">
-        <p className="font-bold mb-2 text-sm">PERSONAL INFORMATION</p>
+        <p className="font-bold mb-2 text-base">PERSONAL INFORMATION</p>
         <p>Name on file: JANE Q DOE</p>
         <p>Also known as: JANE DOE, J Q DOE</p>
         <p>Date of birth: 01/15/1962</p>
         <p>Social Security: XXX-XX-1234</p>
         <p className="mt-2">Current address: 123 MAIN ST, SPRINGFIELD, IL 62701 (reported 2024)</p>
         <p>Previous address: 456 OAK AVE, CHICAGO, IL 60614 (reported 2019)</p>
-        <p className="text-red-600">Previous address: 999 UNKNOWN LN, MIAMI, FL 33101 (reported 2023)</p>
+        <p className="text-danger-foreground">Previous address: 999 UNKNOWN LN, MIAMI, FL 33101 (reported 2023)</p>
         <p className="mt-2">Current employer: ACME CORP</p>
       </div>
     ),
@@ -48,9 +48,9 @@ const sections: Section[] = [
           This section lists everything the bureau thinks it knows about you — names, addresses, and employers. It's the first place to check because <strong>errors here often point to identity theft.</strong>
         </p>
         <ul className="mt-3 space-y-1.5">
-          <li className="flex gap-2"><AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" aria-hidden="true" /><span>An address you don't recognize can mean someone opened accounts in your name and had the bills sent elsewhere.</span></li>
-          <li className="flex gap-2"><AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" aria-hidden="true" /><span>A Social Security number that doesn't match yours is a serious red flag.</span></li>
-          <li className="flex gap-2"><AlertTriangle className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" aria-hidden="true" /><span>Name variations are usually harmless (maiden name, nickname), but look for names you've never used.</span></li>
+          <li className="flex gap-2"><AlertTriangle className="h-4 w-4 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" /><span>An address you don't recognize can mean someone opened accounts in your name and had the bills sent elsewhere.</span></li>
+          <li className="flex gap-2"><AlertTriangle className="h-4 w-4 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" /><span>A Social Security number that doesn't match yours is a serious red flag.</span></li>
+          <li className="flex gap-2"><AlertTriangle className="h-4 w-4 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" /><span>Name variations are usually harmless (maiden name, nickname), but look for names you've never used.</span></li>
         </ul>
       </>
     ),
@@ -61,7 +61,7 @@ const sections: Section[] = [
     summary: 'Your credit score, account counts, balances, and a quick health snapshot.',
     sample: (
       <div className="font-mono text-xs leading-relaxed">
-        <p className="font-bold mb-2 text-sm">ACCOUNT SUMMARY</p>
+        <p className="font-bold mb-2 text-base">ACCOUNT SUMMARY</p>
         <p>Credit score (FICO 8): 724</p>
         <p>Total accounts: 12 (9 open, 3 closed)</p>
         <p>Total balances: $14,220</p>
@@ -93,7 +93,7 @@ const sections: Section[] = [
     sample: (
       <div className="font-mono text-xs leading-relaxed space-y-3">
         <div>
-          <p className="font-bold text-sm">CHASE SAPPHIRE PREFERRED</p>
+          <p className="font-bold text-base">CHASE SAPPHIRE PREFERRED</p>
           <p>Account #: XXXX-XXXX-XXXX-4821</p>
           <p>Status: OPEN / Current</p>
           <p>Account type: Credit Card (Revolving)</p>
@@ -106,8 +106,8 @@ const sections: Section[] = [
           <p>OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK OK</p>
         </div>
         <div>
-          <p className="font-bold text-sm">CAPITAL ONE QUICKSILVER</p>
-          <p>Status: <span className="text-red-600">CLOSED — Charged off</span></p>
+          <p className="font-bold text-base">CAPITAL ONE QUICKSILVER</p>
+          <p>Status: <span className="text-danger-foreground">CLOSED — Charged off</span></p>
           <p>Date opened: 06/2015 &nbsp; Closed: 11/2023</p>
           <p>Balance: $0 &nbsp; Charge-off amount: $2,148</p>
           <p>Payment history shows: OK OK OK 30 60 90 120 CO</p>
@@ -124,7 +124,7 @@ const sections: Section[] = [
           <li><strong>Payment history symbols:</strong> "OK" or "" means paid on time. "30" = 30 days late, "60" = 60 days late, etc. "CO" = charged off. Even one 30-day-late mark can drop your score 60–100 points.</li>
           <li><strong>High credit limit / high balance:</strong> Shows the highest balance you've ever carried. Lenders look at this to judge risk.</li>
         </ul>
-        <div className="mt-4 p-3 rounded-xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900 text-sm text-amber-800 dark:text-amber-300">
+        <div className="mt-4 p-3 rounded-xl bg-warn border border-warn-foreground/25 text-sm text-warn-foreground ">
           <strong>Red flags:</strong> an account you don't recognize, a balance that's wrong, a late payment you know you made on time, or an old account still showing "open" when you closed it.
         </div>
       </>
@@ -136,7 +136,7 @@ const sections: Section[] = [
     summary: 'Who has pulled your credit — and whether it affected your score.',
     sample: (
       <div className="font-mono text-xs leading-relaxed">
-        <p className="font-bold mb-2 text-sm">INQUIRIES (LAST 24 MONTHS)</p>
+        <p className="font-bold mb-2 text-base">INQUIRIES (LAST 24 MONTHS)</p>
         <p className="font-semibold">Hard inquiries:</p>
         <p>02/14/2026 — CHASE BANK — Credit card application</p>
         <p>09/03/2025 — TOYOTA FINANCIAL — Auto loan</p>
@@ -153,7 +153,7 @@ const sections: Section[] = [
           <li><strong>Soft inquiries</strong> happen when you check your own credit, a lender offers you a pre-approval, or a current creditor reviews your account. These do not affect your score.</li>
           <li><strong>Rate shopping exception:</strong> Multiple mortgage or auto loan inquiries within a 14–45 day window are usually counted as a single inquiry.</li>
         </ul>
-        <div className="mt-4 p-3 rounded-xl bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900 text-sm text-red-800 dark:text-red-300">
+        <div className="mt-4 p-3 rounded-xl bg-danger border border-danger-foreground/25 text-sm text-danger-foreground ">
           <strong>Hard inquiries you didn't make = potential identity theft.</strong> If you see an application for credit you never filled out, dispute it immediately and consider freezing your credit.
         </div>
       </>
@@ -165,7 +165,7 @@ const sections: Section[] = [
     summary: 'Bankruptcies, tax liens, and civil judgments that show up in court databases.',
     sample: (
       <div className="font-mono text-xs leading-relaxed">
-        <p className="font-bold mb-2 text-sm">PUBLIC RECORDS</p>
+        <p className="font-bold mb-2 text-base">PUBLIC RECORDS</p>
         <p>No bankruptcies on file.</p>
         <p>No tax liens on file.</p>
         <p>No civil judgments on file.</p>
@@ -188,7 +188,7 @@ const sections: Section[] = [
     summary: 'Your legal right to challenge anything wrong on your report — for free.',
     sample: (
       <div className="font-mono text-xs leading-relaxed">
-        <p className="font-bold mb-2 text-sm">YOUR RIGHTS UNDER THE FAIR CREDIT REPORTING ACT (FCRA)</p>
+        <p className="font-bold mb-2 text-base">YOUR RIGHTS UNDER THE FAIR CREDIT REPORTING ACT (FCRA)</p>
         <p>You have the right to:</p>
         <p>• Receive a free copy of your credit report annually</p>
         <p>• Dispute inaccurate or incomplete information</p>
@@ -249,8 +249,8 @@ export default function CreditReportReader() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-sky-50 dark:bg-sky-950/30 flex items-center justify-center flex-shrink-0">
-                <FileText className="h-6 w-6 text-sky-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-info flex items-center justify-center flex-shrink-0">
+                <FileText className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -269,38 +269,38 @@ export default function CreditReportReader() {
               <ShieldCheck className="h-5 w-5 text-primary" aria-hidden="true" />
               Where to get your free credit report
             </h2>
-            <p className="text-sm mb-4 text-muted-foreground leading-relaxed">
+            <p className="text-base mb-4 text-muted-foreground leading-relaxed">
               You are legally entitled to a free copy of your report from each of the three bureaus. Since 2020 you can get them <strong>weekly</strong> — for free, forever. Use this instead of any paid service.
             </p>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-base">
               <li className="flex gap-2">
-                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <span>
                   <a href="https://www.annualcreditreport.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">AnnualCreditReport.com</a>
                   {' '}— the only federally authorized source. Get reports from Equifax, Experian, and TransUnion here.
                 </span>
               </li>
               <li className="flex gap-2">
-                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <span><strong>Credit Karma</strong> — free Equifax and TransUnion reports + a score, no credit card required.</span>
               </li>
               <li className="flex gap-2">
-                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <span><strong>Experian app</strong> — free Experian report and FICO score.</span>
               </li>
               <li className="flex gap-2">
-                <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <span><strong>Capital One CreditWise</strong> — free TransUnion report and VantageScore, no card needed.</span>
               </li>
             </ul>
-            <p className="text-xs text-muted-foreground mt-4">
+            <p className="text-sm text-muted-foreground mt-4">
               Pull reports from all three bureaus — they don't always have the same information, and errors often appear on just one.
             </p>
           </div>
 
           <div>
             <h2 className="text-xl font-bold mb-2">Section-by-section walkthrough</h2>
-            <p className="text-sm text-muted-foreground mb-6">
+            <p className="text-base text-muted-foreground mb-6">
               Tap any section to see a sample and what to look for. The samples are fictional but match what real bureaus send.
             </p>
             <div className="space-y-3">
@@ -315,7 +315,7 @@ export default function CreditReportReader() {
                     >
                       <div className="flex-1 min-w-0">
                         <h3 className="font-semibold text-base mb-1">{s.label}</h3>
-                        <p className="text-sm text-muted-foreground">{s.summary}</p>
+                        <p className="text-base text-muted-foreground">{s.summary}</p>
                       </div>
                       {isOpen
                         ? <ChevronUp className="h-4 w-4 text-muted-foreground flex-shrink-0 mt-1" aria-hidden="true" />
@@ -339,15 +339,15 @@ export default function CreditReportReader() {
             </div>
           </div>
 
-          <div className="rounded-2xl border border-red-200 dark:border-red-900 bg-red-50 dark:bg-red-950/20 p-6">
-            <h2 className="text-lg font-bold mb-3 flex items-center gap-2 text-red-800 dark:text-red-300">
+          <div className="rounded-2xl border border-danger-foreground/25 bg-danger p-6">
+            <h2 className="text-lg font-bold mb-3 flex items-center gap-2 text-danger-foreground ">
               <Eye className="h-5 w-5" aria-hidden="true" />
               Identity theft red flags
             </h2>
-            <p className="text-sm text-red-800 dark:text-red-300 mb-3 leading-relaxed">
+            <p className="text-base text-danger-foreground mb-3 leading-relaxed">
               Watch for any of these. Even one means you should freeze your credit today.
             </p>
-            <ul className="space-y-2 text-sm text-red-800 dark:text-red-300">
+            <ul className="space-y-2 text-base text-danger-foreground ">
               <li className="flex gap-2"><span>•</span> Accounts, credit cards, or loans you don't recognize.</li>
               <li className="flex gap-2"><span>•</span> An address where you've never lived.</li>
               <li className="flex gap-2"><span>•</span> Collections or charge-offs for debts that aren't yours.</li>
@@ -362,13 +362,13 @@ export default function CreditReportReader() {
               <Lock className="h-5 w-5 text-primary" aria-hidden="true" />
               Freeze your credit (it's free and fast)
             </h2>
-            <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+            <p className="text-base text-muted-foreground mb-4 leading-relaxed">
               A credit freeze blocks anyone — including scammers — from opening new accounts in your name. It takes about 5 minutes at each bureau. It does not hurt your score, and you can unfreeze any time when you need to apply for credit.
             </p>
-            <ul className="space-y-2 text-sm">
-              <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" /><span>Equifax — equifax.com/personal/credit-report-services</span></li>
-              <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" /><span>Experian — experian.com/freeze</span></li>
-              <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-0.5" /><span>TransUnion — transunion.com/credit-freeze</span></li>
+            <ul className="space-y-2 text-base">
+              <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" /><span>Equifax — equifax.com/personal/credit-report-services</span></li>
+              <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" /><span>Experian — experian.com/freeze</span></li>
+              <li className="flex gap-2"><CheckCircle2 className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" /><span>TransUnion — transunion.com/credit-freeze</span></li>
             </ul>
             <a
               href="/guides/freeze-credit-identity-theft"
@@ -380,7 +380,7 @@ export default function CreditReportReader() {
 
           <div>
             <h2 className="text-xl font-bold mb-4">Credit score factors explained</h2>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-base text-muted-foreground mb-4">
               Your FICO score isn't a mystery — these five factors are the whole formula.
             </p>
             <div className="space-y-3">
@@ -388,9 +388,9 @@ export default function CreditReportReader() {
                 <div key={f.label} className="rounded-2xl border border-border bg-card p-4">
                   <div className="flex items-baseline justify-between mb-1">
                     <h3 className="font-semibold text-sm">{f.label}</h3>
-                    <span className="text-sm font-mono font-semibold text-primary">{f.weight}</span>
+                    <span className="text-base font-mono font-semibold text-primary">{f.weight}</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">{f.note}</p>
+                  <p className="text-base text-muted-foreground">{f.note}</p>
                 </div>
               ))}
             </div>

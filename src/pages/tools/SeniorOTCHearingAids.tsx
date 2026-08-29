@@ -22,7 +22,7 @@ export default function SeniorOTCHearingAids() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Jabra Enhance Plus</h2><p>$1,000/pair. Looks like earbuds. Great for tech-savvy seniors.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AirPods Pro 2</h2><p>$249. FDA-approved as hearing aid. Massive savings if mild loss.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real prescription</h2><p>For severe loss, see audiologist. Some Medicare Advantage covers.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Try AirPods Pro 2 first. Save $700+ if it works for your level of loss.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Try AirPods Pro 2 first. Save $700+ if it works for your level of loss.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

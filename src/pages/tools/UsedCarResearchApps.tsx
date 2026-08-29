@@ -32,10 +32,10 @@ export default function UsedCarResearchApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function UsedCarResearchApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pre-purchase checklist</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>VIN check</strong> — copy the VIN from the dashboard. Run on Carfax / NHTSA recalls.</li>
               <li><strong>KBB and NADA values</strong> — what should this car cost? Don\'t pay over Fair Market.</li>
               <li><strong>Edmunds ownership cost</strong> — gas, repairs, insurance, depreciation over 5 years.</li>
@@ -58,7 +58,7 @@ export default function UsedCarResearchApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Listed price way below market — "if it\'s too good to be true...".</li>
               <li>Seller refuses inspection.</li>
               <li>Pressure to buy fast.</li>
@@ -75,7 +75,7 @@ export default function UsedCarResearchApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best places to buy</h3>
-            <p className="text-sm text-muted-foreground"><strong>Certified Pre-Owned</strong> from a dealer of the same brand — most scrutinized, often comes with extended warranty. <strong>CarMax / Carvana</strong> — no haggling but might pay 5-10% more for the convenience. <strong>Private party</strong> — usually cheapest if you do all the homework above. Tax-wise: private sales avoid dealer fees but you owe tax through DMV.</p>
+            <p className="text-base text-muted-foreground"><strong>Certified Pre-Owned</strong> from a dealer of the same brand — most scrutinized, often comes with extended warranty. <strong>CarMax / Carvana</strong> — no haggling but might pay 5-10% more for the convenience. <strong>Private party</strong> — usually cheapest if you do all the homework above. Tax-wise: private sales avoid dealer fees but you owe tax through DMV.</p>
           </CardContent>
         </Card>
       </main>

@@ -31,10 +31,10 @@ export default function RoadsideAssistanceApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,8 +43,8 @@ export default function RoadsideAssistanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t pay twice</h2>
-            <p className="text-sm">Many people pay AAA $90/year while their credit card or car insurance ALREADY includes roadside. Check before paying:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Many people pay AAA $90/year while their credit card or car insurance ALREADY includes roadside. Check before paying:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Visa Signature, AmEx Platinum, Chase Sapphire — all include roadside.</li>
               <li>Geico, State Farm, Progressive — $1-2/month add-on with auto policy.</li>
               <li>New car warranty — most have 3-5 years of roadside included.</li>
@@ -56,7 +56,7 @@ export default function RoadsideAssistanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When AAA still wins</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You drive long distances (100-mile towing on AAA Plus).</li>
               <li>You travel in rural areas where local tow trucks are scarce.</li>
               <li>You want lockout/locksmith service.</li>
@@ -69,7 +69,7 @@ export default function RoadsideAssistanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you call</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Stay with your vehicle. Hazard lights ON.</li>
               <li>Pull over to safe spot. Off the road.</li>
               <li>Call the membership phone (in app or on card).</li>
@@ -84,7 +84,7 @@ export default function RoadsideAssistanceApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save the phone numbers</h3>
-            <p className="text-sm text-muted-foreground">Add roadside, your insurance, and AAA into your phone contacts NOW. The middle of a thunderstorm at the side of the highway is not the moment to be searching.</p>
+            <p className="text-base text-muted-foreground">Add roadside, your insurance, and AAA into your phone contacts NOW. The middle of a thunderstorm at the side of the highway is not the moment to be searching.</p>
           </CardContent>
         </Card>
       </main>

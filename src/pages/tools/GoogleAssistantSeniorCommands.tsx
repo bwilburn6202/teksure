@@ -19,7 +19,7 @@ export default function GoogleAssistantSeniorCommands() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to wake it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Say &quot;Hey Google&quot; or &quot;OK Google.&quot;</li>
               <li>Or hold the home button.</li>
               <li>Or swipe up from corner on newer phones.</li>
@@ -33,7 +33,7 @@ export default function GoogleAssistantSeniorCommands() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Calling + texting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Hey Google, call Sarah.&quot;</li>
               <li>&quot;Send a text to Mom.&quot;</li>
               <li>&quot;Read my text messages.&quot;</li>
@@ -47,7 +47,7 @@ export default function GoogleAssistantSeniorCommands() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reminders + alarms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Remind me to take my pills at 9 AM.&quot;</li>
               <li>&quot;Set timer for 15 minutes.&quot;</li>
               <li>&quot;Set alarm for 7 tomorrow.&quot;</li>
@@ -61,7 +61,7 @@ export default function GoogleAssistantSeniorCommands() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Information + facts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;What&apos;s the weather today?&quot;</li>
               <li>&quot;How many tablespoons in a cup?&quot;</li>
               <li>&quot;Define resilience.&quot;</li>
@@ -75,7 +75,7 @@ export default function GoogleAssistantSeniorCommands() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Music + entertainment</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Play Beatles music.&quot;</li>
               <li>&quot;Play [TV show name] on Netflix.&quot;</li>
               <li>&quot;Pause music.&quot;</li>
@@ -89,7 +89,7 @@ export default function GoogleAssistantSeniorCommands() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart home + emergency</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Turn on living room lights.&quot;</li>
               <li>&quot;Set thermostat to 72.&quot;</li>
               <li>&quot;Lock the front door.&quot;</li>
@@ -103,7 +103,7 @@ export default function GoogleAssistantSeniorCommands() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Built into your Android phone</h3>
-            <p className="text-sm text-muted-foreground">If you have an Android phone, you already have Google Assistant. Just say &quot;Hey Google&quot; followed by what you want. Many seniors with arthritis or vision issues find voice commands easier than tapping. Practice 3 commands today: setting an alarm, calling a family member, and asking the weather. Within a week it&apos;ll feel natural.</p>
+            <p className="text-base text-muted-foreground">If you have an Android phone, you already have Google Assistant. Just say &quot;Hey Google&quot; followed by what you want. Many seniors with arthritis or vision issues find voice commands easier than tapping. Practice 3 commands today: setting an alarm, calling a family member, and asking the weather. Within a week it&apos;ll feel natural.</p>
           </CardContent>
         </Card>
       </main>

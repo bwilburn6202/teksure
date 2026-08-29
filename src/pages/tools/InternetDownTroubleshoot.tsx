@@ -19,7 +19,7 @@ export default function InternetDownTroubleshoot() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 1 — Check the obvious</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Modem light: should be solid green/blue. If red/blinking — issue.</li>
               <li>Wi-Fi enabled on the device? Settings → Wi-Fi.</li>
               <li>Just ONE device or ALL devices? If just one → that device\'s problem. If all → modem/router or ISP.</li>
@@ -31,7 +31,7 @@ export default function InternetDownTroubleshoot() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 2 — Power cycle (the magic fix)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Unplug the MODEM (not router) from power.</li>
               <li>Unplug the ROUTER from power.</li>
               <li>Wait 30 seconds.</li>
@@ -39,14 +39,14 @@ export default function InternetDownTroubleshoot() {
               <li>Plug in ROUTER. Wait 60 seconds.</li>
               <li>Test internet on phone or computer.</li>
             </ol>
-            <p className="text-sm mt-3">Fixes 70-80% of internet issues.</p>
+            <p className="text-base mt-3">Fixes 70-80% of internet issues.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 3 — Check connections</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Coax cable to modem — finger-tight.</li>
               <li>Ethernet from modem to router — fully clicked in.</li>
               <li>Power cables — fully seated.</li>
@@ -58,7 +58,7 @@ export default function InternetDownTroubleshoot() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 4 — Restart the device</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Phone — toggle airplane mode on/off, or restart.</li>
               <li>Computer — full restart.</li>
               <li>Smart TV / Roku — unplug 30 sec, plug in.</li>
@@ -69,8 +69,8 @@ export default function InternetDownTroubleshoot() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 5 — Call ISP</h2>
-            <p className="text-sm">If above don\'t fix it:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">If above don\'t fix it:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Call ISP support number on bill.</li>
               <li>Tell them: "I\'ve power cycled the modem and router. Internet is still down."</li>
               <li>They run remote diagnostics. Often see issues like "modem not registered" or "outage in your area".</li>
@@ -83,7 +83,7 @@ export default function InternetDownTroubleshoot() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why is internet SLOW (vs out)?</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Run speed test at <strong>fast.com</strong> — see actual speed.</li>
               <li>Compare to your plan (paying for 100 Mbps but getting 20?).</li>
               <li>Wired vs Wi-Fi — wired should be near plan speed.</li>
@@ -98,7 +98,7 @@ export default function InternetDownTroubleshoot() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tip — backup internet</h3>
-            <p className="text-sm text-muted-foreground">If internet is critical (medical alert, work-from-home), set up "phone hotspot" backup OR pay $5-10/month for a 5G mobile hotspot device. Saves you when ISP has 12-hour outage.</p>
+            <p className="text-base text-muted-foreground">If internet is critical (medical alert, work-from-home), set up "phone hotspot" backup OR pay $5-10/month for a 5G mobile hotspot device. Saves you when ISP has 12-hour outage.</p>
           </CardContent>
         </Card>
       </main>

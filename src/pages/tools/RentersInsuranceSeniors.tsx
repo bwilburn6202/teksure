@@ -19,7 +19,7 @@ export default function RentersInsuranceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why renters need it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Building owner&apos;s insurance covers BUILDING, NOT your stuff.</li>
               <li>Burst pipe, fire, theft = your loss without coverage.</li>
               <li>Liability — visitor falls + sues = covered.</li>
@@ -33,7 +33,7 @@ export default function RentersInsuranceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best renters insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lemonade</strong> — app-based, instant. $5-15/mo. Best for under-70.</li>
               <li><strong>State Farm</strong> — bundle with auto for discount.</li>
               <li><strong>Allstate / Liberty Mutual</strong> — local agent help.</li>
@@ -47,7 +47,7 @@ export default function RentersInsuranceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Coverage to get</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Personal property</strong> — $30-50K replacement cost (NOT cash value).</li>
               <li><strong>Liability</strong> — $300K minimum.</li>
               <li><strong>Loss of use</strong> — for hotel costs.</li>
@@ -61,7 +61,7 @@ export default function RentersInsuranceSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific concerns</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heirloom items — schedule separately for full value.</li>
               <li>Medical equipment — confirm coverage.</li>
               <li>Mobility scooter — list as scheduled item.</li>
@@ -75,7 +75,7 @@ export default function RentersInsuranceSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t skip</h3>
-            <p className="text-sm text-muted-foreground">$15/mo = $180/year. Lifetime savings of one fire / theft / liability claim = $30,000+. Cheapest insurance per dollar of coverage. Many seniors skip it + regret massively.</p>
+            <p className="text-base text-muted-foreground">$15/mo = $180/year. Lifetime savings of one fire / theft / liability claim = $30,000+. Cheapest insurance per dollar of coverage. Many seniors skip it + regret massively.</p>
           </CardContent>
         </Card>
       </main>

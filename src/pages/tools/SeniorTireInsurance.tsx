@@ -22,7 +22,7 @@ export default function SeniorTireInsurance() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">State Farm Drive Safe</h2><p>FREE. Up to 30% discount for safe seniors who drive less.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">File claims by phone</h2><p>All major insurers have apps. Photos of damage. Faster settlement.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior discounts</h2><p>Most insurers offer 5-10% senior discount. Just ask.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Many seniors save $300+/year switching from full to safe-driver tracked plans.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Many seniors save $300+/year switching from full to safe-driver tracked plans.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

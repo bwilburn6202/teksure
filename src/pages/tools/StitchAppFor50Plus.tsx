@@ -19,7 +19,7 @@ export default function StitchAppFor50Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Stitch?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Made for 50+ — companionship app.</li>
               <li>Not just romantic — also friendship.</li>
               <li>Find activity partners for events.</li>
@@ -33,7 +33,7 @@ export default function StitchAppFor50Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Beyond dating</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find walking buddies.</li>
               <li>Travel companions.</li>
               <li>Movie + concert buddies.</li>
@@ -47,7 +47,7 @@ export default function StitchAppFor50Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Verification process</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stricter than typical apps.</li>
               <li>Fights scammers + fake profiles.</li>
               <li>Identity verification required.</li>
@@ -61,7 +61,7 @@ export default function StitchAppFor50Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free basic version.</li>
               <li>Premium $20/month.</li>
               <li>Premium unlocks unlimited messages.</li>
@@ -75,7 +75,7 @@ export default function StitchAppFor50Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for these users</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Just want friends + companions.</li>
               <li>Travel solo and want occasional companion.</li>
               <li>Recent move to new city.</li>
@@ -89,7 +89,7 @@ export default function StitchAppFor50Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other friendship apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bumble BFF — friendship mode.</li>
               <li>Meetup.com — group events.</li>
               <li>Nextdoor — neighbors.</li>
@@ -103,7 +103,7 @@ export default function StitchAppFor50Plus() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Loneliness is a health issue</h3>
-            <p className="text-sm text-muted-foreground">Studies show loneliness is as harmful as smoking 15 cigarettes daily. For widowed or divorced seniors, finding companionship — romantic or friendly — is genuinely health-positive. Stitch&apos;s verification system makes it safer than typical apps. Try the free version first. Whether seeking dates, friends, or activity partners, you deserve community.</p>
+            <p className="text-base text-muted-foreground">Studies show loneliness is as harmful as smoking 15 cigarettes daily. For widowed or divorced seniors, finding companionship — romantic or friendly — is genuinely health-positive. Stitch&apos;s verification system makes it safer than typical apps. Try the free version first. Whether seeking dates, friends, or activity partners, you deserve community.</p>
           </CardContent>
         </Card>
       </main>

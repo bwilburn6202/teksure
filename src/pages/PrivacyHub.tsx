@@ -454,7 +454,7 @@ export default function PrivacyHub() {
                       </h3>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed flex-1 mb-3">
+                  <p className="text-base text-muted-foreground leading-relaxed flex-1 mb-3">
                     {win.description}
                   </p>
                   {win.link && (
@@ -492,7 +492,7 @@ export default function PrivacyHub() {
                       <threat.icon className="h-5 w-5 text-primary" />
                     </div>
                     <h3 className="font-semibold text-foreground mb-2">{threat.name}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed">
                       {threat.description}
                     </p>
                   </CardContent>
@@ -536,7 +536,7 @@ export default function PrivacyHub() {
                           </div>
                           <div>
                             <h4 className="font-semibold text-foreground mb-1">{s.feature}</h4>
-                            <p className="text-sm text-muted-foreground leading-relaxed">{s.description}</p>
+                            <p className="text-base text-muted-foreground leading-relaxed">{s.description}</p>
                           </div>
                         </div>
                       ))}
@@ -576,11 +576,11 @@ export default function PrivacyHub() {
                     <div className="flex items-start justify-between mb-2">
                       <div>
                         <h3 className="font-semibold text-foreground">{tool.name}</h3>
-                        <p className="text-xs text-muted-foreground/80">{tool.category}</p>
+                        <p className="text-sm text-muted-foreground/80">{tool.category}</p>
                       </div>
                       {tool.free && <Badge variant="secondary" className="text-xs">Free</Badge>}
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                    <p className="text-base text-muted-foreground leading-relaxed mb-4">
                       {tool.description}
                     </p>
                     <Button asChild variant="outline" size="sm" className="rounded-xl gap-2">
@@ -613,7 +613,7 @@ export default function PrivacyHub() {
               <Card key={r.name} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{r.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-3">
                     {r.description}
                   </p>
                   <Button asChild variant="outline" size="sm" className="rounded-xl gap-2">

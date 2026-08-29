@@ -194,7 +194,7 @@ export default function BillRefundDispute() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <Receipt className="h-8 w-8 text-blue-600" />
+                <Receipt className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Bill or Refund Dispute Helper</h1>
@@ -210,8 +210,8 @@ export default function BillRefundDispute() {
           {!picked ? (
             <Card className="border-border shadow-sm mb-6">
               <CardContent className="p-6">
-                <p className="text-sm font-semibold mb-1">What kind of charge are you disputing?</p>
-                <p className="text-xs text-muted-foreground mb-4">Pick the closest match.</p>
+                <p className="text-base font-semibold mb-1">What kind of charge are you disputing?</p>
+                <p className="text-sm text-muted-foreground mb-4">Pick the closest match.</p>
                 <div className="space-y-2">
                   {TYPES.map(t => {
                     const Icon = t.icon;
@@ -223,8 +223,8 @@ export default function BillRefundDispute() {
                       >
                         <Icon className="h-5 w-5 text-muted-foreground shrink-0 mt-0.5" />
                         <div className="flex-1">
-                          <p className="font-medium text-sm">{t.label}</p>
-                          <p className="text-xs text-muted-foreground mt-0.5">{t.sub}</p>
+                          <p className="font-medium text-base">{t.label}</p>
+                          <p className="text-sm text-muted-foreground mt-0.5">{t.sub}</p>
                         </div>
                         <ChevronRight className="h-4 w-4 text-muted-foreground mt-1" />
                       </button>
@@ -235,12 +235,12 @@ export default function BillRefundDispute() {
             </Card>
           ) : (
             <>
-              <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+              <Card className="border-warn-foreground/25 bg-warn mb-6">
                 <CardContent className="p-5 flex gap-3">
-                  <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold text-sm">If a debt collector contacts you, demand a written validation letter.</p>
-                    <p className="text-xs text-muted-foreground mt-1">
+                    <p className="font-semibold text-base">If a debt collector contacts you, demand a written validation letter.</p>
+                    <p className="text-sm text-muted-foreground mt-1">
                       Real collectors must mail you a validation letter within 5 days of first contact, listing the amount, the original creditor, and your right to dispute. No letter? It is almost certainly a scam — do not pay.
                     </p>
                   </div>
@@ -250,7 +250,7 @@ export default function BillRefundDispute() {
               {pickedMeta && (
                 <div className="flex items-center gap-2 mb-3">
                   <Badge variant="outline" className="text-xs">{pickedMeta.label}</Badge>
-                  <p className="text-xs text-muted-foreground">Follow these in order — most disputes are won at step 1 or 2.</p>
+                  <p className="text-sm text-muted-foreground">Follow these in order — most disputes are won at step 1 or 2.</p>
                 </div>
               )}
 
@@ -258,10 +258,10 @@ export default function BillRefundDispute() {
                 {steps?.map((step, i) => (
                   <Card key={i} className="border-border">
                     <CardContent className="p-4">
-                      <p className="font-semibold text-sm mb-1">{i + 1}. {step.title}</p>
-                      <p className="text-sm text-muted-foreground">{step.detail}</p>
+                      <p className="font-semibold text-base mb-1">{i + 1}. {step.title}</p>
+                      <p className="text-base text-muted-foreground">{step.detail}</p>
                       {step.callOut && (
-                        <p className="text-xs mt-2 p-2 rounded bg-muted/40 border border-border">
+                        <p className="text-sm mt-2 p-2 rounded bg-muted/40 border border-border">
                           <strong>Tip:</strong> {step.callOut}
                         </p>
                       )}
@@ -296,16 +296,16 @@ export default function BillRefundDispute() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/online-banking-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Online Banking Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Keep your accounts locked down.</p>
+                <p className="font-medium text-base">Online Banking Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Keep your accounts locked down.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Spot fake "you owe money" texts.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Spot fake "you owe money" texts.</p>
               </Link>
               <Link to="/tools/refund-and-return-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Refund and Return Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Get your money back from any retailer.</p>
+                <p className="font-medium text-base">Refund and Return Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Get your money back from any retailer.</p>
               </Link>
             </div>
           </div>

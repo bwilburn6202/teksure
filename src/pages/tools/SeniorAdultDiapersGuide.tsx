@@ -16,13 +16,13 @@ export default function SeniorAdultDiapersGuide() {
           <p className="text-lg text-muted-foreground">No shame. Practical solutions.</p>
         </div>
         <div className="space-y-4">
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best brands</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Tena (most absorbent)</li><li>Depend (most popular)</li><li>Always Discreet (lighter)</li><li>Poise (pads)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best brands</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Tena (most absorbent)</li><li>Depend (most popular)</li><li>Always Discreet (lighter)</li><li>Poise (pads)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Subscribe &amp; Save</h2><p>Amazon. 10-15% off. Auto-delivery. No store trips.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare Advantage</h2><p>Some plans cover incontinence supplies. Check yours.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free samples</h2><p>Tena, Depend send free samples. Try before buying boxes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to see doctor</h2><p>Incontinence often treatable. Pelvic floor PT, meds, surgery.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Don&apos;t hide</h2><p>Affects 50%+ of senior women. Common. Help is available.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pelvic floor PT (Kegels with help) often resolves stress incontinence.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pelvic floor PT (Kegels with help) often resolves stress incontinence.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

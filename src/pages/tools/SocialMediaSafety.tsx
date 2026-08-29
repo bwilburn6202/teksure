@@ -1089,7 +1089,7 @@ export default function SocialMediaSafety() {
         className="container py-12 min-h-[80vh] max-w-4xl mx-auto"
       >
         {/* ── Hero ── */}
-        <section className="relative text-center mb-10 rounded-3xl p-8 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-blue-950/40 dark:via-indigo-950/30 dark:to-purple-950/40 border-2 border-indigo-200 dark:border-indigo-900">
+        <section className="relative text-center mb-10 rounded-3xl p-8 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-blue-950/40 dark:via-indigo-950/30 dark:to-purple-950/40 border-2 border-primary/25 ">
           <div className="absolute right-4 top-4">
             <BookmarkButton
               type="tool"
@@ -1098,7 +1098,7 @@ export default function SocialMediaSafety() {
               url="/tools/social-media-safety"
             />
           </div>
-          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-white text-indigo-700 dark:bg-indigo-900 dark:text-indigo-200 mb-5 shadow-sm">
+          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-card text-primary mb-5 shadow-sm">
             <Users className="h-12 w-12" aria-hidden="true" />
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 text-indigo-950 dark:text-indigo-50">
@@ -1116,14 +1116,14 @@ export default function SocialMediaSafety() {
             <Button
               size="lg"
               variant="outline"
-              className="min-h-14 text-base gap-2 bg-white"
+              className="min-h-14 text-base gap-2 bg-card"
               onClick={handlePrint}
             >
               <Printer className="h-5 w-5" aria-hidden="true" />
               Print the safety one-pager
             </Button>
             <a href="#what-to-share" className="no-underline">
-              <Button size="lg" variant="outline" className="min-h-14 text-base gap-2 bg-white">
+              <Button size="lg" variant="outline" className="min-h-14 text-base gap-2 bg-card">
                 <Eye className="h-5 w-5" aria-hidden="true" />
                 What to share vs. not share
               </Button>
@@ -1135,7 +1135,7 @@ export default function SocialMediaSafety() {
         {!selected && (
           <section className="mb-10">
             <h2 className="text-2xl sm:text-3xl font-bold mb-2 flex items-center gap-2">
-              <Shield className="h-7 w-7 text-indigo-600 dark:text-indigo-400" aria-hidden="true" />
+              <Shield className="h-7 w-7 text-primary " aria-hidden="true" />
               Pick your platform
             </h2>
             <p className="text-base text-muted-foreground mb-5">
@@ -1151,24 +1151,24 @@ export default function SocialMediaSafety() {
                     className={`group text-left w-full rounded-2xl border-2 ${p.border} ${p.bg} hover:shadow-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all p-5 min-h-[8rem]`}
                   >
                     <div className="flex items-start gap-4">
-                      <div className={`shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-xl bg-white dark:bg-black/20 ${p.color}`}>
+                      <div className={`shrink-0 inline-flex items-center justify-center h-14 w-14 rounded-xl bg-card dark:bg-black/20 ${p.color}`}>
                         <Icon className="h-8 w-8" aria-hidden="true" />
                       </div>
                       <div className="flex-1 min-w-0">
                         <h3 className="text-xl font-bold mb-1 flex items-center gap-2">
                           {p.name}
                           {p.id === 'nextdoor' && (
-                            <Badge variant="outline" className="text-xs bg-amber-100 text-amber-900 border-amber-400 dark:bg-amber-900/40 dark:text-amber-100">
+                            <Badge variant="outline" className="text-xs bg-warn text-warn-foreground border-amber-400 ">
                               Bonus — scam-prone
                             </Badge>
                           )}
                           {p.id === 'facebook' && (
-                            <Badge variant="outline" className="text-xs bg-blue-100 text-blue-900 border-blue-400 dark:bg-blue-900/40 dark:text-blue-100">
+                            <Badge variant="outline" className="text-xs bg-info text-info-foreground border-blue-400 ">
                               Most seniors
                             </Badge>
                           )}
                         </h3>
-                        <p className="text-sm text-muted-foreground leading-snug">
+                        <p className="text-base text-muted-foreground leading-snug">
                           {p.blurb}
                         </p>
                       </div>
@@ -1179,9 +1179,9 @@ export default function SocialMediaSafety() {
             </div>
 
             {/* Age-gate note */}
-            <Alert className="mt-6 border-2 border-sky-300 bg-sky-50 dark:bg-sky-950/30 dark:border-sky-800">
-              <AlertTriangle className="h-5 w-5 text-sky-700 dark:text-sky-300" aria-hidden="true" />
-              <AlertTitle className="text-sky-900 dark:text-sky-200 text-base">
+            <Alert className="mt-6 border-2 border-info-foreground/25 bg-info ">
+              <AlertTriangle className="h-5 w-5 text-info-foreground " aria-hidden="true" />
+              <AlertTitle className="text-info-foreground text-base">
                 A quick note on age
               </AlertTitle>
               <AlertDescription className="text-sky-900/90 dark:text-sky-100/90 text-base">
@@ -1211,14 +1211,14 @@ export default function SocialMediaSafety() {
             <Card className={`mb-6 border-2 ${selected.border} ${selected.bg}`}>
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
-                  <div className={`shrink-0 inline-flex items-center justify-center h-16 w-16 rounded-xl bg-white dark:bg-black/20 ${selected.color}`}>
+                  <div className={`shrink-0 inline-flex items-center justify-center h-16 w-16 rounded-xl bg-card dark:bg-black/20 ${selected.color}`}>
                     <selected.icon className="h-10 w-10" aria-hidden="true" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <h2 className="text-3xl font-bold mb-2">{selected.name}</h2>
                     <p className="text-base leading-relaxed">{selected.blurb}</p>
                     {selected.note && (
-                      <p className="text-sm mt-3 italic opacity-80">{selected.note}</p>
+                      <p className="text-base mt-3 italic opacity-80">{selected.note}</p>
                     )}
                   </div>
                 </div>
@@ -1248,10 +1248,10 @@ export default function SocialMediaSafety() {
                   <CardContent className="p-5 sm:p-6">
                     <div className="flex items-center justify-between gap-3 mb-4 flex-wrap">
                       <h3 className="text-2xl font-bold flex items-center gap-2">
-                        <Lock className="h-6 w-6 text-indigo-600 dark:text-indigo-400" aria-hidden="true" />
+                        <Lock className="h-6 w-6 text-primary " aria-hidden="true" />
                         Privacy checklist
                       </h3>
-                      <span className="text-sm font-medium text-muted-foreground">
+                      <span className="text-base font-medium text-muted-foreground">
                         {checkedCount} of {selected.privacy.length} done
                       </span>
                     </div>
@@ -1270,7 +1270,7 @@ export default function SocialMediaSafety() {
                               htmlFor={key}
                               className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-colors min-h-[4rem] ${
                                 isChecked
-                                  ? 'bg-green-50 border-green-300 dark:bg-green-950/30 dark:border-green-800'
+                                  ? 'bg-green-50 border-success-foreground/25 dark:bg-green-950/30 dark:border-green-800'
                                   : 'bg-background border-border hover:bg-muted/40'
                               }`}
                             >
@@ -1304,9 +1304,9 @@ export default function SocialMediaSafety() {
                       })}
                     </ul>
 
-                    <Alert className="mt-5 border-2 border-emerald-300 bg-emerald-50 dark:bg-emerald-950/30 dark:border-emerald-800">
-                      <KeyRound className="h-5 w-5 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
-                      <AlertTitle className="text-emerald-900 dark:text-emerald-200 text-base">
+                    <Alert className="mt-5 border-2 border-success-foreground/25 bg-success ">
+                      <KeyRound className="h-5 w-5 text-success-foreground " aria-hidden="true" />
+                      <AlertTitle className="text-success-foreground text-base">
                         Two-factor authentication is the single best move
                       </AlertTitle>
                       <AlertDescription className="text-emerald-900/90 dark:text-emerald-100/90 text-base">
@@ -1324,19 +1324,19 @@ export default function SocialMediaSafety() {
 
               {/* Scams */}
               <TabsContent value="scams" className="mt-4">
-                <Card className="border-2 border-red-300 bg-red-50/60 dark:bg-red-950/30 dark:border-red-800">
+                <Card className="border-2 border-danger-foreground/25 bg-red-50/60 dark:bg-red-950/30 ">
                   <CardContent className="p-5 sm:p-6">
-                    <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 text-red-900 dark:text-red-200">
+                    <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 text-danger-foreground ">
                       <ShieldAlert className="h-6 w-6" aria-hidden="true" />
                       Common {selected.name} scam patterns
                     </h3>
                     <ul className="space-y-4">
                       {selected.scams.map((s, i) => (
-                        <li key={i} className="rounded-xl bg-white dark:bg-red-950/40 p-4 border border-red-200 dark:border-red-900">
+                        <li key={i} className="rounded-xl bg-card p-4 border border-danger-foreground/25 ">
                           <div className="flex items-start gap-3">
-                            <XCircle className="h-5 w-5 text-red-600 dark:text-red-400 shrink-0 mt-1" aria-hidden="true" />
+                            <XCircle className="h-5 w-5 text-danger-foreground shrink-0 mt-1" aria-hidden="true" />
                             <div>
-                              <div className="text-base font-bold text-red-900 dark:text-red-100">
+                              <div className="text-base font-bold text-danger-foreground ">
                                 {s.name}
                               </div>
                               <p className="text-base leading-relaxed text-red-900/90 dark:text-red-100/90 mt-1">
@@ -1353,9 +1353,9 @@ export default function SocialMediaSafety() {
 
               {/* Block & report */}
               <TabsContent value="report" className="mt-4">
-                <Card className="border-2 border-orange-300 bg-orange-50/60 dark:bg-orange-950/30 dark:border-orange-800">
+                <Card className="border-2 border-warn-foreground/25 bg-orange-50/60 dark:bg-orange-950/30 ">
                   <CardContent className="p-5 sm:p-6">
-                    <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 text-orange-900 dark:text-orange-200">
+                    <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 text-warn-foreground ">
                       <Flag className="h-6 w-6" aria-hidden="true" />
                       How to block or report on {selected.name}
                     </h3>
@@ -1365,13 +1365,13 @@ export default function SocialMediaSafety() {
                           <span className="shrink-0 inline-flex items-center justify-center h-8 w-8 rounded-full bg-orange-600 text-white font-bold">
                             {i + 1}
                           </span>
-                          <span className="text-base leading-relaxed text-orange-900 dark:text-orange-100 pt-1">
+                          <span className="text-base leading-relaxed text-warn-foreground pt-1">
                             {step.label}
                           </span>
                         </li>
                       ))}
                     </ol>
-                    <div className="mt-4 rounded-xl bg-white dark:bg-orange-950/40 p-4 border border-orange-200 dark:border-orange-900 text-sm text-orange-900 dark:text-orange-100">
+                    <div className="mt-4 rounded-xl bg-card p-4 border border-warn-foreground/25 text-sm text-warn-foreground ">
                       <ImageIconNote />
                       Screenshots of the steps above are helpful. On iPhone: press Side + Volume Up. On Android: Power + Volume Down. On a Mac: Cmd-Shift-4. On Windows: Windows-Shift-S.
                     </div>
@@ -1381,9 +1381,9 @@ export default function SocialMediaSafety() {
 
               {/* Hacked */}
               <TabsContent value="hacked" className="mt-4">
-                <Card className="border-2 border-rose-300 bg-rose-50/60 dark:bg-rose-950/30 dark:border-rose-800">
+                <Card className="border-2 border-danger-foreground/25 bg-rose-50/60 dark:bg-rose-950/30 ">
                   <CardContent className="p-5 sm:p-6">
-                    <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 text-rose-900 dark:text-rose-200">
+                    <h3 className="text-2xl font-bold mb-4 flex items-center gap-2 text-danger-foreground ">
                       <ShieldX className="h-6 w-6" aria-hidden="true" />
                       I got hacked on {selected.name} — now what?
                     </h3>
@@ -1393,7 +1393,7 @@ export default function SocialMediaSafety() {
                           <span className="shrink-0 inline-flex items-center justify-center h-8 w-8 rounded-full bg-rose-600 text-white font-bold">
                             {i + 1}
                           </span>
-                          <span className="text-base leading-relaxed text-rose-900 dark:text-rose-100 pt-1">
+                          <span className="text-base leading-relaxed text-danger-foreground pt-1">
                             {step.label}
                           </span>
                         </li>
@@ -1408,7 +1408,7 @@ export default function SocialMediaSafety() {
                       Open {selected.hackedUrl.label}
                       <ExternalLink className="h-5 w-5" aria-hidden="true" />
                     </a>
-                    <p className="text-sm text-rose-900/90 dark:text-rose-100/90 mt-4">
+                    <p className="text-base text-rose-900/90 dark:text-rose-100/90 mt-4">
                       If the hacker asked for money from your contacts, see our{' '}
                       <Link to="/tools/refund-and-return-helper" className="underline font-semibold">
                         Refund &amp; Return Helper
@@ -1454,46 +1454,46 @@ export default function SocialMediaSafety() {
         {/* ── What to share vs not share ── */}
         <section id="what-to-share" className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 flex items-center gap-2">
-            <Eye className="h-7 w-7 text-indigo-600 dark:text-indigo-400" aria-hidden="true" />
+            <Eye className="h-7 w-7 text-primary " aria-hidden="true" />
             What to share vs. what to keep private
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
-            <Card className="border-2 border-green-300 bg-green-50 dark:bg-green-950/30 dark:border-green-800">
+            <Card className="border-2 border-success-foreground/25 bg-success ">
               <CardContent className="p-5">
-                <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-green-900 dark:text-green-200">
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-success-foreground ">
                   <CheckCircle2 className="h-6 w-6" aria-hidden="true" />
                   Safe to share
                 </h3>
                 <ul className="space-y-2">
                   {SHARE_SAFE.map((s, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="shrink-0 text-green-600 dark:text-green-400 mt-1"></span>
-                      <span className="text-base leading-relaxed text-green-900 dark:text-green-100">{s}</span>
+                      <span className="shrink-0 text-success-foreground mt-1"></span>
+                      <span className="text-base leading-relaxed text-success-foreground ">{s}</span>
                     </li>
                   ))}
                 </ul>
               </CardContent>
             </Card>
-            <Card className="border-2 border-red-300 bg-red-50 dark:bg-red-950/30 dark:border-red-800">
+            <Card className="border-2 border-danger-foreground/25 bg-danger ">
               <CardContent className="p-5">
-                <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-red-900 dark:text-red-200">
+                <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-danger-foreground ">
                   <XCircle className="h-6 w-6" aria-hidden="true" />
                   Keep to yourself
                 </h3>
                 <ul className="space-y-2">
                   {SHARE_UNSAFE.map((s, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="shrink-0 text-red-600 dark:text-red-400 mt-1"></span>
-                      <span className="text-base leading-relaxed text-red-900 dark:text-red-100">{s}</span>
+                      <span className="shrink-0 text-danger-foreground mt-1"></span>
+                      <span className="text-base leading-relaxed text-danger-foreground ">{s}</span>
                     </li>
                   ))}
                 </ul>
               </CardContent>
             </Card>
           </div>
-          <Alert className="mt-4 border-2 border-amber-300 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-800">
-            <Lightbulb className="h-5 w-5 text-amber-700 dark:text-amber-300" aria-hidden="true" />
-            <AlertTitle className="text-amber-900 dark:text-amber-200 text-base">
+          <Alert className="mt-4 border-2 border-warn-foreground/25 bg-warn ">
+            <Lightbulb className="h-5 w-5 text-warn-foreground " aria-hidden="true" />
+            <AlertTitle className="text-warn-foreground text-base">
               Quick Tip — the "security question" trap
             </AlertTitle>
             <AlertDescription className="text-amber-900/90 dark:text-amber-100/90 text-base">
@@ -1508,7 +1508,7 @@ export default function SocialMediaSafety() {
         {/* ── Recovery prep ── */}
         <section className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 flex items-center gap-2">
-            <KeyRound className="h-7 w-7 text-indigo-600 dark:text-indigo-400" aria-hidden="true" />
+            <KeyRound className="h-7 w-7 text-primary " aria-hidden="true" />
             Account recovery — set this up BEFORE you need it
           </h2>
           <p className="text-base text-muted-foreground mb-4">
@@ -1534,7 +1534,7 @@ export default function SocialMediaSafety() {
         {/* ── Grandkid safety ── */}
         <section className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 flex items-center gap-2">
-            <Baby className="h-7 w-7 text-indigo-600 dark:text-indigo-400" aria-hidden="true" />
+            <Baby className="h-7 w-7 text-primary " aria-hidden="true" />
             Grandkid safety — setting a good example
           </h2>
           <p className="text-base text-muted-foreground mb-4">
@@ -1547,7 +1547,7 @@ export default function SocialMediaSafety() {
               <Card key={i} className="border-2">
                 <CardContent className="p-5">
                   <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
-                    <UserCheck className="h-5 w-5 text-indigo-600 dark:text-indigo-400 shrink-0" aria-hidden="true" />
+                    <UserCheck className="h-5 w-5 text-primary shrink-0" aria-hidden="true" />
                     {tip.title}
                   </h3>
                   <p className="text-base leading-relaxed text-muted-foreground">
@@ -1561,9 +1561,9 @@ export default function SocialMediaSafety() {
 
         {/* ── Echo chamber awareness ── */}
         <section className="mb-10">
-          <Card className="border-2 border-purple-300 bg-purple-50 dark:bg-purple-950/30 dark:border-purple-800">
+          <Card className="border-2 border-primary/25 bg-primary/10 ">
             <CardContent className="p-5 sm:p-6">
-              <h2 className="text-2xl font-bold mb-3 flex items-center gap-2 text-purple-900 dark:text-purple-200">
+              <h2 className="text-2xl font-bold mb-3 flex items-center gap-2 text-primary ">
                 <Megaphone className="h-7 w-7" aria-hidden="true" />
                 Echo chamber awareness
               </h2>
@@ -1597,7 +1597,7 @@ export default function SocialMediaSafety() {
         {/* ── Impersonation defense ── */}
         <section className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 flex items-center gap-2">
-            <UserX className="h-7 w-7 text-indigo-600 dark:text-indigo-400" aria-hidden="true" />
+            <UserX className="h-7 w-7 text-primary " aria-hidden="true" />
             Impersonation defense
           </h2>
           <p className="text-base text-muted-foreground mb-4">
@@ -1630,7 +1630,7 @@ export default function SocialMediaSafety() {
         {/* ── Scam DM scripts ── */}
         <section className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 flex items-center gap-2">
-            <MessageSquare className="h-7 w-7 text-indigo-600 dark:text-indigo-400" aria-hidden="true" />
+            <MessageSquare className="h-7 w-7 text-primary " aria-hidden="true" />
             Scam DM scripts — know the opening line
           </h2>
           <p className="text-base text-muted-foreground mb-4">
@@ -1641,15 +1641,15 @@ export default function SocialMediaSafety() {
             {SCAM_DMS.map((dm, i) => (
               <Card key={i} className="border-2">
                 <CardContent className="p-5">
-                  <div className="text-base font-semibold mb-2 text-red-900 dark:text-red-300">
+                  <div className="text-base font-semibold mb-2 text-danger-foreground ">
                     {dm.opener}
                   </div>
                   <div className="text-sm text-muted-foreground mb-3 flex items-start gap-2">
-                    <AlertTriangle className="h-4 w-4 shrink-0 mt-1 text-amber-600" aria-hidden="true" />
+                    <AlertTriangle className="h-4 w-4 shrink-0 mt-1 text-warn-foreground" aria-hidden="true" />
                     <span>{dm.redFlag}</span>
                   </div>
                   <div className="text-base leading-relaxed flex items-start gap-2">
-                    <ShieldCheck className="h-5 w-5 shrink-0 mt-0.5 text-green-600 dark:text-green-400" aria-hidden="true" />
+                    <ShieldCheck className="h-5 w-5 shrink-0 mt-0.5 text-success-foreground " aria-hidden="true" />
                     <span>
                       <strong>How to respond:</strong> {dm.response}
                     </span>
@@ -1663,7 +1663,7 @@ export default function SocialMediaSafety() {
         {/* ── FAQ ── */}
         <section className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 flex items-center gap-2">
-            <HelpCircle className="h-7 w-7 text-indigo-600 dark:text-indigo-400" aria-hidden="true" />
+            <HelpCircle className="h-7 w-7 text-primary " aria-hidden="true" />
             Frequently asked questions
           </h2>
           <Accordion type="single" collapsible className="w-full">
@@ -1704,7 +1704,7 @@ export default function SocialMediaSafety() {
         {/* ── Related tools ── */}
         <section className="mb-10">
           <h2 className="text-2xl sm:text-3xl font-bold mb-4 flex items-center gap-2">
-            <BookOpen className="h-7 w-7 text-indigo-600 dark:text-indigo-400" aria-hidden="true" />
+            <BookOpen className="h-7 w-7 text-primary " aria-hidden="true" />
             Helpful next steps
           </h2>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -1715,7 +1715,7 @@ export default function SocialMediaSafety() {
                 className="block rounded-2xl border-2 border-border p-4 hover:border-indigo-400 hover:bg-indigo-50/50 dark:hover:bg-indigo-950/20 transition-colors min-h-[5rem]"
               >
                 <div className="flex items-start gap-3">
-                  <ShieldCheck className="h-5 w-5 text-indigo-600 dark:text-indigo-400 shrink-0 mt-1" aria-hidden="true" />
+                  <ShieldCheck className="h-5 w-5 text-primary shrink-0 mt-1" aria-hidden="true" />
                   <div>
                     <div className="text-base font-bold">{t.label}</div>
                     <div className="text-sm text-muted-foreground">{t.blurb}</div>
@@ -1727,11 +1727,11 @@ export default function SocialMediaSafety() {
         </section>
 
         {/* ── Golden rule — always visible ── */}
-        <Card className="border-2 border-amber-300 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-800">
+        <Card className="border-2 border-warn-foreground/25 bg-warn ">
           <CardContent className="p-5 flex gap-3">
-            <AlertTriangle className="h-6 w-6 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
+            <AlertTriangle className="h-6 w-6 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
             <div>
-              <p className="font-semibold text-amber-900 dark:text-amber-200 mb-1">
+              <p className="font-semibold text-warn-foreground mb-1">
                 The golden rule
               </p>
               <p className="text-base text-amber-900/90 dark:text-amber-100/90 leading-relaxed">
@@ -1753,7 +1753,7 @@ export default function SocialMediaSafety() {
 /* Small inline component for the screenshot hint icon */
 function ImageIconNote() {
   return (
-    <span className="inline-flex items-center justify-center h-5 w-5 rounded bg-orange-200 dark:bg-orange-900 text-orange-800 dark:text-orange-100 text-xs font-bold mr-2 align-text-bottom" aria-hidden="true">
+    <span className="inline-flex items-center justify-center h-5 w-5 rounded bg-orange-200 dark:bg-orange-900 text-warn-foreground text-xs font-bold mr-2 align-text-bottom" aria-hidden="true">
       i
     </span>
   );

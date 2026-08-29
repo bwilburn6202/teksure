@@ -19,7 +19,7 @@ export default function BestPetsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why pets help seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lower BP + cholesterol.</li>
               <li>Reduce loneliness + depression.</li>
               <li>Force daily walks (dogs).</li>
@@ -34,7 +34,7 @@ export default function BestPetsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best dog breeds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Senior shelter dog (5-10 yrs)</strong> — calm, trained. Less time commitment.</li>
               <li><strong>Cavalier King Charles Spaniel</strong> — gentle, lap dog.</li>
               <li><strong>Bichon Frise</strong> — friendly, low shedding.</li>
@@ -49,7 +49,7 @@ export default function BestPetsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best cats for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Senior cat (8+ yrs)</strong> — calm, litter-trained, less playful.</li>
               <li><strong>Ragdoll</strong> — gentle, lap cat, follows you.</li>
               <li><strong>British Shorthair</strong> — laid-back.</li>
@@ -63,7 +63,7 @@ export default function BestPetsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Low-maintenance alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fish</strong> — calming, no walking.</li>
               <li><strong>Birds</strong> — interactive, no walking. Cockatiels/parakeets.</li>
               <li><strong>Robotic pets</strong> — Joy For All companion pet (Hasbro). $130. For dementia patients.</li>
@@ -76,7 +76,7 @@ export default function BestPetsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before adopting — be honest</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mobility — can you walk a dog 2x/day?</li>
               <li>Budget — $1,000-3,000/yr for food, vet, supplies.</li>
               <li>Travel — who watches pet when away?</li>
@@ -91,7 +91,7 @@ export default function BestPetsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior-to-senior adoption programs</h3>
-            <p className="text-sm text-muted-foreground">Many shelters waive fees for seniors adopting senior pets. <strong>Pets for Seniors</strong> programs nationwide. <strong>Seniors for Seniors</strong> — search local shelters. Most include first vet visit + supplies. Older pets often perfectly trained, calm, ready to love.</p>
+            <p className="text-base text-muted-foreground">Many shelters waive fees for seniors adopting senior pets. <strong>Pets for Seniors</strong> programs nationwide. <strong>Seniors for Seniors</strong> — search local shelters. Most include first vet visit + supplies. Older pets often perfectly trained, calm, ready to love.</p>
           </CardContent>
         </Card>
       </main>

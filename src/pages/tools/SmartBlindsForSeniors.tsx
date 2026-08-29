@@ -30,10 +30,10 @@ export default function SmartBlindsForSeniors() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SmartBlindsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors love them</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No reaching for cords (shoulder/back issues).</li>
               <li>No tripping on cords.</li>
               <li>Schedule sunrise opening — natural wake.</li>
@@ -56,7 +56,7 @@ export default function SmartBlindsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup approach</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Start with 1-2 windows you struggle with.</li>
               <li>Bedroom + living room first — most use.</li>
               <li>Test smart curtain attaches BEFORE buying for whole house.</li>
@@ -70,7 +70,7 @@ export default function SmartBlindsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice commands</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Alexa, open bedroom blinds.&quot;</li>
               <li>&quot;Hey Google, close all the blinds.&quot;</li>
               <li>&quot;Alexa, set blinds to 50%.&quot; (some models)</li>
@@ -83,7 +83,7 @@ export default function SmartBlindsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">DIY vs professional install</h3>
-            <p className="text-sm text-muted-foreground"><strong>SwitchBot products</strong> — DIY in 10 min per window. <strong>Lutron Serena</strong>, <strong>Hunter Douglas</strong> — pro install $200-500/window. Worth pro install for whole-house solution. Otherwise DIY savings huge.</p>
+            <p className="text-base text-muted-foreground"><strong>SwitchBot products</strong> — DIY in 10 min per window. <strong>Lutron Serena</strong>, <strong>Hunter Douglas</strong> — pro install $200-500/window. Worth pro install for whole-house solution. Otherwise DIY savings huge.</p>
           </CardContent>
         </Card>
       </main>

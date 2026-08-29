@@ -17,12 +17,12 @@ export default function SeniorImportantDocs() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Fireproof safe</h2><p>$50. Sentry SureSafe. Holds 100 documents. Critical purchases.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Keep in safe</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Will + healthcare directive</li><li>Birth + marriage certificates</li><li>Property deeds</li><li>Insurance policies</li><li>Passports</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Keep in safe</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Will + healthcare directive</li><li>Birth + marriage certificates</li><li>Property deeds</li><li>Insurance policies</li><li>Passports</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tell family</h2><p>One trusted family member knows where safe is + combination.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Photo backups</h2><p>Take pics of all documents. Store in iCloud or Google Drive.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bank safe deposit</h2><p>$50/year. Originals safer. Family needs co-signer to access.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Five Wishes</h2><p>$5 form. Healthcare wishes documented.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 1 hour organizing documents now = months of family stress saved.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 1 hour organizing documents now = months of family stress saved.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

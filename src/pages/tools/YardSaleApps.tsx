@@ -30,10 +30,10 @@ export default function YardSaleApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function YardSaleApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Running a successful yard sale</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Saturday morning</strong> 7-12 is best. Friday afternoon if Friday.</li>
               <li><strong>Advertise</strong> on Nextdoor + Facebook + Craigslist + Yard Sale Treasure Map. Take photos.</li>
               <li><strong>Big signs</strong> at intersections + yard. Bright colored, simple, ARROWS.</li>
@@ -58,7 +58,7 @@ export default function YardSaleApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Realistic earnings</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Single household sale: $150-500.</li>
               <li>Multi-family / neighborhood sale: $300-1,500/family.</li>
               <li>For valuable items: list on Facebook Marketplace separately, get more.</li>
@@ -70,7 +70,7 @@ export default function YardSaleApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For shoppers</h3>
-            <p className="text-sm text-muted-foreground">Cash + small bills. Arrive at 7am for best stuff. Be polite. Negotiate gently — sellers respond to fair offers, not lowball bullying. Wear comfortable shoes; you\'ll walk a lot.</p>
+            <p className="text-base text-muted-foreground">Cash + small bills. Arrive at 7am for best stuff. Be polite. Negotiate gently — sellers respond to fair offers, not lowball bullying. Wear comfortable shoes; you\'ll walk a lot.</p>
           </CardContent>
         </Card>
       </main>

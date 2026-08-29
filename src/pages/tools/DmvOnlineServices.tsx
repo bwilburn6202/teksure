@@ -19,7 +19,7 @@ export default function DmvOnlineServices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What can you do online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Renew driver&apos;s license (most states).</li>
               <li>Renew vehicle registration.</li>
               <li>Order replacement / duplicate license.</li>
@@ -31,10 +31,10 @@ export default function DmvOnlineServices() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real ID required May 2025</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>After May 7, 2025 — Real ID required for domestic flights + federal buildings.</li>
               <li>Star or flag in corner = Real ID compliant.</li>
               <li>If yours doesn&apos;t have it — make appointment NOW.</li>
@@ -48,7 +48,7 @@ export default function DmvOnlineServices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior license renewal rules</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many states have shorter renewal periods for 65+ (4 yrs vs 8 yrs).</li>
               <li>Some require eye test for renewal at 65/70/75.</li>
               <li>Some require road test at 75/80.</li>
@@ -61,7 +61,7 @@ export default function DmvOnlineServices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find your state DMV</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search "[your state] DMV online".</li>
               <li>Always go to OFFICIAL .gov site.</li>
               <li>Avoid "DMV-help" sites that charge fees for free services.</li>
@@ -73,7 +73,7 @@ export default function DmvOnlineServices() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best appointment trick</h3>
-            <p className="text-sm text-muted-foreground">DMV appointments fill up. Try first thing in the morning OR last hour. Tuesday + Wednesday slowest days. AAA members can do many DMV transactions at AAA office.</p>
+            <p className="text-base text-muted-foreground">DMV appointments fill up. Try first thing in the morning OR last hour. Tuesday + Wednesday slowest days. AAA members can do many DMV transactions at AAA office.</p>
           </CardContent>
         </Card>
       </main>

@@ -172,10 +172,10 @@ export default function TabletOrLaptop() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3 gap-2">
               <div className="p-3 bg-violet-500/10 rounded-full">
-                <Tablet className="h-7 w-7 text-violet-600" />
+                <Tablet className="h-7 w-7 text-primary" />
               </div>
               <div className="p-3 bg-violet-500/10 rounded-full">
-                <Laptop className="h-7 w-7 text-violet-600" />
+                <Laptop className="h-7 w-7 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Tablet or Laptop?</h1>
@@ -191,11 +191,11 @@ export default function TabletOrLaptop() {
           {!rec ? (
             <Card className="border-border shadow-sm">
               <CardContent className="p-6">
-                <p className="text-sm text-muted-foreground mb-5">Pick one answer per question. {QUESTIONS.length - Object.keys(answers).length} to go.</p>
+                <p className="text-base text-muted-foreground mb-5">Pick one answer per question. {QUESTIONS.length - Object.keys(answers).length} to go.</p>
                 <div className="space-y-6">
                   {QUESTIONS.map((q, i) => (
                     <div key={q.id}>
-                      <p className="font-medium text-sm mb-3">{i + 1}. {q.question}</p>
+                      <p className="font-medium text-base mb-3">{i + 1}. {q.question}</p>
                       <RadioGroup
                         value={answers[q.id]?.value ?? ''}
                         onValueChange={(v) => {
@@ -214,7 +214,7 @@ export default function TabletOrLaptop() {
                   ))}
                 </div>
                 {!allAnswered && (
-                  <p className="text-xs text-muted-foreground mt-5">Your recommendation will appear once all 8 are answered.</p>
+                  <p className="text-sm text-muted-foreground mt-5">Your recommendation will appear once all 8 are answered.</p>
                 )}
               </CardContent>
             </Card>
@@ -232,7 +232,7 @@ export default function TabletOrLaptop() {
                       <Badge variant="outline" className="mt-1">{rec.modelPrice}</Badge>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground">{rec.modelWhy}</p>
+                  <p className="text-base text-muted-foreground">{rec.modelWhy}</p>
                 </CardContent>
               </Card>
 
@@ -240,15 +240,15 @@ export default function TabletOrLaptop() {
                 <Card className="border-border mb-6">
                   <CardContent className="p-5">
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">{rec.alt.label}</p>
-                    <p className="text-sm">{rec.alt.why}</p>
+                    <p className="text-base">{rec.alt.why}</p>
                   </CardContent>
                 </Card>
               )}
 
               <Card className="border-border bg-muted/30 mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-2">Before you buy</p>
-                  <ol className="space-y-1.5 text-xs text-muted-foreground">
+                  <p className="text-base font-semibold mb-2">Before you buy</p>
+                  <ol className="space-y-1.5 text-sm text-muted-foreground">
                     <li className="flex gap-2"><span className="text-primary">1.</span><span>If a friend or family member can lend you theirs for a weekend, that beats any review.</span></li>
                     <li className="flex gap-2"><span className="text-primary">2.</span><span>Check the return policy — Best Buy is 15 days, Amazon is 30 days, Apple is 14 days. Worth knowing before you commit.</span></li>
                     <li className="flex gap-2"><span className="text-primary">3.</span><span>Skip the extended warranty unless it is AppleCare+ (which actually does pay off for accidents).</span></li>
@@ -265,16 +265,16 @@ export default function TabletOrLaptop() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/device-chooser" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Device Chooser</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Wider device comparison.</p>
+                <p className="font-medium text-base">Device Chooser</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Wider device comparison.</p>
               </Link>
               <Link to="/tools/device-age-checker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Device Age Checker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Should you replace what you have first?</p>
+                <p className="font-medium text-base">Device Age Checker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Should you replace what you have first?</p>
               </Link>
               <Link to="/tools/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Grandparent Device Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Once you pick, set it up well.</p>
+                <p className="font-medium text-base">Grandparent Device Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Once you pick, set it up well.</p>
               </Link>
             </div>
           </div>

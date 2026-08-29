@@ -19,7 +19,7 @@ export default function TripItAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is TripIt?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free app that organizes your travel.</li>
               <li>Forward booking confirmation emails to TripIt.</li>
               <li>It creates a full itinerary automatically.</li>
@@ -33,7 +33,7 @@ export default function TripItAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download TripIt free from app store.</li>
               <li>Create account with email.</li>
               <li>Forward booking emails to plans@tripit.com.</li>
@@ -47,7 +47,7 @@ export default function TripItAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it organizes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Flight numbers, times, terminals, gates.</li>
               <li>Hotel address, check-in/check-out times.</li>
               <li>Car rental pickup location + confirmation.</li>
@@ -61,7 +61,7 @@ export default function TripItAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sharing with family</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap &quot;Share trip&quot; — email itinerary to family.</li>
               <li>They can see your whole schedule.</li>
               <li>Know which flight you&apos;re on.</li>
@@ -75,7 +75,7 @@ export default function TripItAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">TripIt Pro (paid)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$49/year — optional.</li>
               <li>Flight alerts — gate changes, delays.</li>
               <li>Seat tracker — know if better seat opens.</li>
@@ -89,7 +89,7 @@ export default function TripItAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Print itinerary before leaving — backup for no internet.</li>
               <li>Add emergency contacts to notes section.</li>
               <li>Include hotel phone numbers.</li>
@@ -103,7 +103,7 @@ export default function TripItAppGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No more paper folders</h3>
-            <p className="text-sm text-muted-foreground">Many seniors carry a paper folder with every booking confirmation. TripIt replaces that while keeping a printable backup option. Forward your airline, hotel, and car rental confirmation emails — TripIt assembles everything into one clean schedule. At the airport or hotel, just show your phone. Family can see your whole itinerary in real time.</p>
+            <p className="text-base text-muted-foreground">Many seniors carry a paper folder with every booking confirmation. TripIt replaces that while keeping a printable backup option. Forward your airline, hotel, and car rental confirmation emails — TripIt assembles everything into one clean schedule. At the airport or hotel, just show your phone. Family can see your whole itinerary in real time.</p>
           </CardContent>
         </Card>
       </main>

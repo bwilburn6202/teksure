@@ -102,7 +102,7 @@ export default function SpouseSurvivorBenefits() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-rose-500/10 rounded-full">
-                <HeartHandshake className="h-8 w-8 text-rose-600" />
+                <HeartHandshake className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Spousal & Survivor Benefits</h1>
@@ -117,7 +117,7 @@ export default function SpouseSurvivorBenefits() {
 
           <Card className="border-border mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Which one are you here for?</p>
+              <p className="text-base font-semibold mb-2">Which one are you here for?</p>
               <div className="flex flex-wrap gap-2">
                 <Button
                   variant={tab === 'spousal' ? 'default' : 'outline'}
@@ -141,11 +141,11 @@ export default function SpouseSurvivorBenefits() {
             <section id="spousal" className="mb-8 scroll-mt-24">
               <div className="flex items-start gap-3 mb-3">
                 <div className="p-2 bg-rose-500/10 rounded-lg">
-                  <HeartHandshake className="h-5 w-5 text-rose-600" />
+                  <HeartHandshake className="h-5 w-5 text-danger-foreground" />
                 </div>
                 <div>
                   <h2 className="text-xl font-bold">Spousal benefits — while you are both alive</h2>
-                  <p className="text-xs text-muted-foreground italic mt-0.5">A way for the lower-earning spouse to draw on the higher earner's record.</p>
+                  <p className="text-sm text-muted-foreground italic mt-0.5">A way for the lower-earning spouse to draw on the higher earner's record.</p>
                 </div>
               </div>
 
@@ -188,12 +188,12 @@ export default function SpouseSurvivorBenefits() {
                 <CardContent className="p-5 space-y-2">
                   {steps.map((step, idx) => (
                     <div key={step.id} className="flex items-start gap-3 p-3 rounded-lg border border-border">
-                      <div className="flex-shrink-0 w-7 h-7 rounded-full bg-rose-500/10 text-rose-700 dark:text-rose-300 flex items-center justify-center text-xs font-semibold">
+                      <div className="flex-shrink-0 w-7 h-7 rounded-full bg-rose-500/10 text-danger-foreground flex items-center justify-center text-xs font-semibold">
                         {idx + 1}
                       </div>
                       <div className="flex-1">
-                        <p className="font-medium text-sm">{step.title}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{step.detail}</p>
+                        <p className="font-medium text-base">{step.title}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{step.detail}</p>
                       </div>
                     </div>
                   ))}
@@ -204,11 +204,11 @@ export default function SpouseSurvivorBenefits() {
             <section id="survivor" className="mb-8 scroll-mt-24">
               <div className="flex items-start gap-3 mb-3">
                 <div className="p-2 bg-rose-500/10 rounded-lg">
-                  <HeartHandshake className="h-5 w-5 text-rose-600" />
+                  <HeartHandshake className="h-5 w-5 text-danger-foreground" />
                 </div>
                 <div>
                   <h2 className="text-xl font-bold">Survivor benefits — after a spouse dies</h2>
-                  <p className="text-xs text-muted-foreground italic mt-0.5">Replaces income when the working or retired spouse passes away.</p>
+                  <p className="text-sm text-muted-foreground italic mt-0.5">Replaces income when the working or retired spouse passes away.</p>
                 </div>
               </div>
 
@@ -258,12 +258,12 @@ export default function SpouseSurvivorBenefits() {
                 <CardContent className="p-5 space-y-2">
                   {steps.map((step, idx) => (
                     <div key={step.id} className="flex items-start gap-3 p-3 rounded-lg border border-border">
-                      <div className="flex-shrink-0 w-7 h-7 rounded-full bg-rose-500/10 text-rose-700 dark:text-rose-300 flex items-center justify-center text-xs font-semibold">
+                      <div className="flex-shrink-0 w-7 h-7 rounded-full bg-rose-500/10 text-danger-foreground flex items-center justify-center text-xs font-semibold">
                         {idx + 1}
                       </div>
                       <div className="flex-1">
-                        <p className="font-medium text-sm">{step.title}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{step.detail}</p>
+                        <p className="font-medium text-base">{step.title}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{step.detail}</p>
                       </div>
                     </div>
                   ))}
@@ -277,25 +277,25 @@ export default function SpouseSurvivorBenefits() {
               <h3 className="text-base font-semibold mb-3">When to claim — the age trade-off</h3>
               <div className="space-y-3 text-sm">
                 <div className="flex items-start gap-2">
-                  <ChevronRight className="h-4 w-4 text-rose-600 shrink-0 mt-0.5" />
+                  <ChevronRight className="h-4 w-4 text-danger-foreground shrink-0 mt-0.5" />
                   <p>
                     <span className="font-semibold">Age 62 (earliest for spousal):</span> Permanent reduction of about 25 to 30% versus claiming at full retirement age. Pick this only if the household needs the money now.
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <ChevronRight className="h-4 w-4 text-rose-600 shrink-0 mt-0.5" />
+                  <ChevronRight className="h-4 w-4 text-danger-foreground shrink-0 mt-0.5" />
                   <p>
                     <span className="font-semibold">Age 60 (earliest for survivor):</span> About 71.5% of the full benefit. The lower amount sticks for life.
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <ChevronRight className="h-4 w-4 text-rose-600 shrink-0 mt-0.5" />
+                  <ChevronRight className="h-4 w-4 text-danger-foreground shrink-0 mt-0.5" />
                   <p>
                     <span className="font-semibold">Full retirement age (66 to 67):</span> 100% of the spousal or survivor amount. The default best choice for most people in good health.
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <ChevronRight className="h-4 w-4 text-rose-600 shrink-0 mt-0.5" />
+                  <ChevronRight className="h-4 w-4 text-danger-foreground shrink-0 mt-0.5" />
                   <p>
                     <span className="font-semibold">Age 70:</span> Waiting past full retirement age does NOT grow spousal or survivor benefits — only your own retirement benefit grows after FRA. So once you hit FRA, file for the spousal or survivor amount and stop waiting.
                   </p>
@@ -304,9 +304,9 @@ export default function SpouseSurvivorBenefits() {
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch for fake "Social Security" calls</p>
                 <p className="text-muted-foreground">
@@ -318,8 +318,8 @@ export default function SpouseSurvivorBenefits() {
 
           <Card className="border-border mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Useful direct links</p>
-              <ul className="space-y-2 text-sm">
+              <p className="text-base font-semibold mb-3">Useful direct links</p>
+              <ul className="space-y-2 text-base">
                 <li><a href="https://www.ssa.gov/benefits/retirement/planner/applying7.html" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">Apply for spousal benefits <ExternalLink className="h-3 w-3" /></a> — official ssa.gov page</li>
                 <li><a href="https://www.ssa.gov/benefits/survivors/" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">Survivor benefits overview <ExternalLink className="h-3 w-3" /></a> — qualifications and amounts</li>
                 <li><a href="https://www.ssa.gov/benefits/survivors/ifyou.html" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">If a family member dies <ExternalLink className="h-3 w-3" /></a> — what to do, who to call</li>
@@ -332,16 +332,16 @@ export default function SpouseSurvivorBenefits() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/social-security-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">My Social Security Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Create the account first.</p>
+                <p className="font-medium text-base">My Social Security Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Create the account first.</p>
               </Link>
               <Link to="/tools/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Accounts After a Loss</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Closing and transferring accounts.</p>
+                <p className="font-medium text-base">Accounts After a Loss</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Closing and transferring accounts.</p>
               </Link>
               <Link to="/tools/medicare-plan-chooser" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Medicare Plan Chooser</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair with the right Medicare plan.</p>
+                <p className="font-medium text-base">Medicare Plan Chooser</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair with the right Medicare plan.</p>
               </Link>
             </div>
           </div>

@@ -28,8 +28,8 @@ export default function IndexFundCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">The Bogle revelation</h2>
-            <p className="text-sm">John Bogle (Vanguard founder) proved that buying ALL stocks in the market — and holding them forever — beats almost every active fund manager. Why? Because most managers can\'t beat the market AFTER fees.</p>
-            <p className="text-sm mt-2">A $10,000 investment in the S&P 500 in 1994 would be worth ~$200,000 today. Almost no one beat that.</p>
+            <p className="text-base">John Bogle (Vanguard founder) proved that buying ALL stocks in the market — and holding them forever — beats almost every active fund manager. Why? Because most managers can\'t beat the market AFTER fees.</p>
+            <p className="text-base mt-2">A $10,000 investment in the S&P 500 in 1994 would be worth ~$200,000 today. Almost no one beat that.</p>
           </CardContent>
         </Card>
 
@@ -51,14 +51,14 @@ export default function IndexFundCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Three-fund portfolio (Boglehead classic)</h2>
-            <p className="text-sm mb-2">Most retirement portfolios can be built with 3 funds:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Most retirement portfolios can be built with 3 funds:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>60% US Total Stock (VTSAX/VTI)</strong>.</li>
               <li><strong>20% International Stock (VTIAX/VXUS)</strong>.</li>
               <li><strong>20% Bonds (VBTLX/BND)</strong>.</li>
             </ul>
-            <p className="text-sm mt-2">Adjust ratios for your age:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mt-2">Adjust ratios for your age:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Younger / aggressive — more stocks, less bonds (80/20).</li>
               <li>Closer to retirement / conservative — more bonds (60/40 or 50/50).</li>
             </ul>
@@ -68,15 +68,15 @@ export default function IndexFundCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Even simpler — target-date fund</h2>
-            <p className="text-sm">Pick a fund that matches your retirement year (Vanguard 2030, 2035, etc.). It auto-balances stocks and bonds for you. ONE fund covers everything.</p>
-            <p className="text-sm mt-2">Examples: <strong>VFFVX (Vanguard 2025)</strong>, <strong>FXIFX (Fidelity 2025)</strong>, <strong>SWYJX (Schwab 2025)</strong>.</p>
+            <p className="text-base">Pick a fund that matches your retirement year (Vanguard 2030, 2035, etc.). It auto-balances stocks and bonds for you. ONE fund covers everything.</p>
+            <p className="text-base mt-2">Examples: <strong>VFFVX (Vanguard 2025)</strong>, <strong>FXIFX (Fidelity 2025)</strong>, <strong>SWYJX (Schwab 2025)</strong>.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid these</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Funds with expense ratios over 0.5%.</li>
               <li>Front-loaded mutual funds (5% sales charge upfront).</li>
               <li>"Hot" sector funds (tech, AI, gold).</li>
@@ -90,7 +90,7 @@ export default function IndexFundCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to learn more</h3>
-            <p className="text-sm text-muted-foreground"><strong>Bogleheads.org</strong> — friendly forum with thousands of retirees discussing this. <strong>"The Little Book of Common Sense Investing" by John Bogle</strong> — 200 pages, life-changing. <strong>Reddit r/Bogleheads</strong> for community Q&A.</p>
+            <p className="text-base text-muted-foreground"><strong>Bogleheads.org</strong> — friendly forum with thousands of retirees discussing this. <strong>"The Little Book of Common Sense Investing" by John Bogle</strong> — 200 pages, life-changing. <strong>Reddit r/Bogleheads</strong> for community Q&A.</p>
           </CardContent>
         </Card>
       </main>

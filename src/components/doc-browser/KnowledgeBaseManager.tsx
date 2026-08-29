@@ -80,7 +80,7 @@ export default function KnowledgeBaseManager({
 
       {/* Group selector */}
       <div className="mb-3">
-        <label htmlFor="doc-group-select" className="block text-sm font-medium text-muted-foreground mb-1">
+        <label htmlFor="doc-group-select" className="block text-base font-medium text-muted-foreground mb-1">
           Topic Group
         </label>
         <div className="relative">
@@ -122,9 +122,9 @@ export default function KnowledgeBaseManager({
         </Button>
       </div>
 
-      {error && <p className="text-xs text-destructive mb-2">{error}</p>}
+      {error && <p className="text-sm text-destructive mb-2">{error}</p>}
       {urls.length >= maxUrls && (
-        <p className="text-xs text-amber-600 dark:text-amber-400 mb-2">
+        <p className="text-sm text-warn-foreground mb-2">
           Maximum {maxUrls} links reached for this group.
         </p>
       )}
@@ -132,7 +132,7 @@ export default function KnowledgeBaseManager({
       {/* URL list */}
       <div className="flex-1 overflow-y-auto space-y-1.5 mt-1">
         {urls.length === 0 && (
-          <p className="text-sm text-muted-foreground text-center py-6">
+          <p className="text-base text-muted-foreground text-center py-6">
             Add documentation links to &ldquo;{activeGroupName}&rdquo; to start chatting.
           </p>
         )}

@@ -147,7 +147,7 @@ export default function PasswordStrengthChecker() {
         description="Check how strong your password is and get tips to make it stronger. Your password never leaves your device."
       />
       <Navbar />
-      <main className="min-h-screen bg-gray-50 dark:bg-gray-950 pb-16">
+      <main className="min-h-screen bg-muted pb-16">
         <div className="max-w-xl mx-auto px-4 pt-6">
           <PageBreadcrumb
             items={[
@@ -158,13 +158,13 @@ export default function PasswordStrengthChecker() {
 
           <div className="text-center mb-8 mt-4">
             <div className="text-5xl mb-3">🔐</div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+            <h1 className="text-3xl font-bold text-foreground dark:text-white mb-2">
               Password Strength Checker
             </h1>
-            <p className="text-gray-600 dark:text-gray-300 text-lg">
+            <p className="text-muted-foreground text-lg">
               Type a password below to see how strong it is and what could make it stronger.
             </p>
-            <div className="mt-3 inline-flex items-center gap-1.5 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 text-sm rounded-full px-4 py-1.5 border border-green-200 dark:border-green-800">
+            <div className="mt-3 inline-flex items-center gap-1.5 bg-success text-success-foreground text-sm rounded-full px-4 py-1.5 border border-success-foreground/25 ">
               <Lock size={14} />
               Your password never leaves your device
             </div>
@@ -185,7 +185,7 @@ export default function PasswordStrengthChecker() {
                 <button
                   type="button"
                   onClick={() => setShow((s) => !s)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-muted-foreground "
                   aria-label={show ? 'Hide password' : 'Show password'}
                 >
                   {show ? <EyeOff size={20} /> : <Eye size={20} />}
@@ -213,7 +213,7 @@ export default function PasswordStrengthChecker() {
                   </div>
 
                   {config.tip && (
-                    <p className="text-sm text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
+                    <p className="text-base text-muted-foreground bg-muted rounded-lg p-3">
                       {config.tip}
                     </p>
                   )}
@@ -223,15 +223,15 @@ export default function PasswordStrengthChecker() {
               {/* Criteria list */}
               <ul className="space-y-2">
                 {results.map((r) => (
-                  <li key={r.id} className="flex items-center gap-2 text-sm">
+                  <li key={r.id} className="flex items-center gap-2 text-base">
                     {password ? (
                       r.passed ? (
-                        <CheckCircle2 size={18} className="text-green-500 shrink-0" />
+                        <CheckCircle2 size={18} className="text-success-foreground shrink-0" />
                       ) : (
-                        <XCircle size={18} className="text-red-400 shrink-0" />
+                        <XCircle size={18} className="text-danger-foreground shrink-0" />
                       )
                     ) : (
-                      <div className="w-4.5 h-4.5 rounded-full border-2 border-gray-300 dark:border-gray-600 shrink-0" />
+                      <div className="w-4.5 h-4.5 rounded-full border-2 border-border shrink-0" />
                     )}
                     <span
                       className={
@@ -266,10 +266,10 @@ export default function PasswordStrengthChecker() {
               </div>
 
               {example && (
-                <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-3 text-sm text-blue-800 dark:text-blue-200">
+                <div className="bg-info rounded-lg p-3 text-sm text-info-foreground ">
                   <p className="font-medium mb-1">Example strong password:</p>
                   <p className="font-mono text-base">{example}</p>
-                  <p className="mt-1 text-xs opacity-80">
+                  <p className="mt-1 text-sm opacity-80">
                     Do not use this exact example — create your own using a similar pattern.
                   </p>
                 </div>
@@ -279,36 +279,36 @@ export default function PasswordStrengthChecker() {
 
           <Card>
             <CardContent className="p-5 space-y-4">
-              <h2 className="font-bold text-lg text-gray-900 dark:text-white">
+              <h2 className="font-bold text-lg text-foreground dark:text-white">
                 Tips for creating strong passwords
               </h2>
-              <div className="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+              <div className="space-y-3 text-sm text-foreground ">
                 <div className="flex gap-2">
-                  <span className="text-blue-500 font-bold shrink-0">1.</span>
+                  <span className="text-info-foreground font-bold shrink-0">1.</span>
                   <p>
                     <strong>Use a phrase, not a word.</strong> A random sentence like "My cat loves sunny Tuesdays!" is much stronger than a single word, even with substitutions.
                   </p>
                 </div>
                 <div className="flex gap-2">
-                  <span className="text-blue-500 font-bold shrink-0">2.</span>
+                  <span className="text-info-foreground font-bold shrink-0">2.</span>
                   <p>
                     <strong>Never reuse passwords.</strong> If one account is breached, a unique password keeps all your other accounts safe.
                   </p>
                 </div>
                 <div className="flex gap-2">
-                  <span className="text-blue-500 font-bold shrink-0">3.</span>
+                  <span className="text-info-foreground font-bold shrink-0">3.</span>
                   <p>
                     <strong>Use a password manager.</strong> Free options like <strong>Bitwarden</strong> (bitwarden.com) or Apple Keychain (built into iPhone) remember all your passwords so you only need to remember one main password.
                   </p>
                 </div>
                 <div className="flex gap-2">
-                  <span className="text-blue-500 font-bold shrink-0">4.</span>
+                  <span className="text-info-foreground font-bold shrink-0">4.</span>
                   <p>
                     <strong>Turn on two-factor authentication (2FA).</strong> Even if someone gets your password, 2FA sends a code to your phone that they also need. Most banks, email, and social media accounts offer this for free.
                   </p>
                 </div>
                 <div className="flex gap-2">
-                  <span className="text-blue-500 font-bold shrink-0">5.</span>
+                  <span className="text-info-foreground font-bold shrink-0">5.</span>
                   <p>
                     <strong>Change your most important passwords once a year.</strong> Especially your email and banking passwords. See our annual security checklist guide for a full yearly routine.
                   </p>

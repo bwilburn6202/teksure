@@ -131,7 +131,7 @@ export default function ForumIndex() {
                 Start a New Discussion
               </Button>
               {!user && (
-                <p className="text-sm text-muted-foreground mt-4">
+                <p className="text-base text-muted-foreground mt-4">
                   <Link to="/login" className="text-primary hover:underline">Sign in</Link> to post — reading is always free.
                 </p>
               )}
@@ -172,7 +172,7 @@ export default function ForumIndex() {
               <CardContent>
                 <p className="text-4xl mb-4 select-none"></p>
                 <p className="text-lg font-semibold mb-2">We couldn't load the discussions</p>
-                <p className="text-muted-foreground mb-6 max-w-xs mx-auto text-sm leading-relaxed">
+                <p className="text-muted-foreground mb-6 max-w-xs mx-auto text-base leading-relaxed">
                   There was a problem connecting to our servers. Check your internet
                   connection and try again — your posts are safe!
                 </p>
@@ -186,7 +186,7 @@ export default function ForumIndex() {
               <CardContent>
                 <p className="text-4xl mb-4 select-none"></p>
                 <p className="text-lg font-semibold mb-1">No discussions here yet</p>
-                <p className="text-muted-foreground mb-5 text-sm max-w-xs mx-auto">
+                <p className="text-muted-foreground mb-5 text-base max-w-xs mx-auto">
                   Be the first to ask a question or share a tip in this topic — no question is too simple!
                 </p>
                 <Button onClick={handleNewThread} variant="outline" className="rounded-xl">Start a Discussion</Button>
@@ -206,7 +206,7 @@ export default function ForumIndex() {
                         <div className="flex items-start justify-between gap-3">
                           <div className="flex-1 min-w-0">
                             <div className="flex items-center gap-2 mb-2 flex-wrap">
-                              <span className={`text-xs font-medium px-2.5 py-1 rounded-lg ${CATEGORY_COLORS[thread.category]}`}>
+                              <span className={`text-sm font-medium px-2.5 py-1 rounded-lg ${CATEGORY_COLORS[thread.category]}`}>
                                 {CATEGORIES.find(c => c.value === thread.category)?.emoji}{' '}
                                 {CATEGORIES.find(c => c.value === thread.category)?.label}
                               </span>
@@ -229,11 +229,11 @@ export default function ForumIndex() {
                           </div>
                           <div className="flex items-center gap-3 shrink-0">
                             <div className="flex flex-col items-center text-center">
-                              <span className="flex items-center gap-1 text-sm font-semibold">
+                              <span className="flex items-center gap-1 text-base font-semibold">
                                 <MessageSquare className="h-4 w-4 text-muted-foreground" />
                                 {thread.reply_count}
                               </span>
-                              <span className="text-xs text-muted-foreground">replies</span>
+                              <span className="text-sm text-muted-foreground">replies</span>
                             </div>
                             <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
                           </div>

@@ -17,12 +17,12 @@ export default function SeniorComputerBasics() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mac or PC?</h2><p>If you have an iPhone — Mac is easier. If you have Android — PC is fine. Both work.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>iPad ($350) — easiest</li><li>Chromebook ($300) — simple</li><li>MacBook Air ($999)</li><li>Windows laptop ($500-$800)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for seniors</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>iPad ($350) — easiest</li><li>Chromebook ($300) — simple</li><li>MacBook Air ($999)</li><li>Windows laptop ($500-$800)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Make text bigger</h2><p>Mac: System Settings → Display → Scale. Windows: Settings → Display → Scale.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use a mouse</h2><p>Trackpads frustrate many seniors. A $15 mouse is faster.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Keyboard shortcuts</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Cmd/Ctrl + C = copy</li><li>Cmd/Ctrl + V = paste</li><li>Cmd/Ctrl + Z = undo</li><li>Cmd/Ctrl + S = save</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Keyboard shortcuts</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Cmd/Ctrl + C = copy</li><li>Cmd/Ctrl + V = paste</li><li>Cmd/Ctrl + Z = undo</li><li>Cmd/Ctrl + S = save</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free help</h2><p>Senior Planet, library classes, AARP TEK Workshops, Cyber-Seniors.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Don&apos;t fear breaking it. Software damage is rare. Click around and explore.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Don&apos;t fear breaking it. Software damage is rare. Click around and explore.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

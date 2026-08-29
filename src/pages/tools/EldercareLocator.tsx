@@ -19,15 +19,15 @@ export default function EldercareLocator() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What it is</h2>
-            <p className="text-sm">A free federal service connecting older adults and caregivers to local services — meals, transportation, legal help, caregiver support, in-home help, exercise programs.</p>
-            <p className="text-sm mt-2"><strong>Eldercare Locator: 1-800-677-1116</strong> or <strong>eldercare.acl.gov</strong>. Type your zip code, get connected to YOUR local Area Agency on Aging.</p>
+            <p className="text-base">A free federal service connecting older adults and caregivers to local services — meals, transportation, legal help, caregiver support, in-home help, exercise programs.</p>
+            <p className="text-base mt-2"><strong>Eldercare Locator: 1-800-677-1116</strong> or <strong>eldercare.acl.gov</strong>. Type your zip code, get connected to YOUR local Area Agency on Aging.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What your local Area Agency on Aging helps with</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SNAP food benefits</strong> — help applying.</li>
               <li><strong>Meals on Wheels</strong> — home-delivered meals.</li>
               <li><strong>Senior center meals</strong> — congregate meals at low cost.</li>
@@ -50,7 +50,7 @@ export default function EldercareLocator() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to call</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>You\'re feeling overwhelmed by caregiving.</li>
               <li>A parent is becoming unsafe at home.</li>
               <li>You don\'t know what programs exist.</li>
@@ -66,7 +66,7 @@ export default function EldercareLocator() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other key federal hotlines</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Eldercare Locator:</strong> 1-800-677-1116</li>
               <li><strong>Adult Protective Services / Elder Abuse:</strong> 1-800-677-1116 (refers locally)</li>
               <li><strong>Medicare:</strong> 1-800-MEDICARE</li>
@@ -83,7 +83,7 @@ export default function EldercareLocator() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Most underused resource in America</h3>
-            <p className="text-sm text-muted-foreground">Most seniors and family caregivers don\'t know the Area Agency on Aging exists. It\'s funded by federal Older Americans Act money. Free, no income test for many services. Call them ONCE and ask "what programs am I eligible for in my zip code?". You\'ll often discover thousands in benefits you didn\'t know existed.</p>
+            <p className="text-base text-muted-foreground">Most seniors and family caregivers don\'t know the Area Agency on Aging exists. It\'s funded by federal Older Americans Act money. Free, no income test for many services. Call them ONCE and ask "what programs am I eligible for in my zip code?". You\'ll often discover thousands in benefits you didn\'t know existed.</p>
           </CardContent>
         </Card>
       </main>

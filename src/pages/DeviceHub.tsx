@@ -159,7 +159,7 @@ const DeviceHub = () => {
                         <device.icon className="h-7 w-7 text-primary-foreground" />
                       </div>
                       <h3 className="font-semibold text-sm mb-0.5">{device.name}</h3>
-                      <p className="text-xs text-muted-foreground">{device.guideCount}</p>
+                      <p className="text-sm text-muted-foreground">{device.guideCount}</p>
                     </CardContent>
                   </Card>
                 </button>
@@ -182,7 +182,7 @@ const DeviceHub = () => {
                 )}
                 <div>
                   <h2 className="text-2xl md:text-3xl font-bold tracking-tight">{selectedDeviceData?.name} Guides</h2>
-                  <p className="text-sm text-muted-foreground">{filteredGuides.length} guides found</p>
+                  <p className="text-base text-muted-foreground">{filteredGuides.length} guides found</p>
                 </div>
               </div>
               <Button asChild variant="ghost" size="sm">
@@ -195,7 +195,7 @@ const DeviceHub = () => {
                 <CardContent className="py-12 text-center">
                   <p className="text-4xl mb-4"></p>
                   <p className="font-medium mb-2">No guides yet for this device</p>
-                  <p className="text-sm text-muted-foreground">We're adding new guides regularly. Check back soon!</p>
+                  <p className="text-base text-muted-foreground">We're adding new guides regularly. Check back soon!</p>
                 </CardContent>
               </Card>
             ) : (
@@ -212,7 +212,7 @@ const DeviceHub = () => {
                             <Badge variant="outline" className="text-xs rounded-lg">
                               {categoryLabels[guide.category]}
                             </Badge>
-                            <span className="text-xs text-muted-foreground flex items-center gap-1">
+                            <span className="text-sm text-muted-foreground flex items-center gap-1">
                               <Clock className="h-3 w-3" />
                               {guide.readTime}
                             </span>

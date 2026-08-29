@@ -19,7 +19,7 @@ export default function SeniorMentorshipGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why mentor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sense of purpose — proven longevity boost.</li>
               <li>Mental sharpness — teaching = learning.</li>
               <li>Cross-generational friendships.</li>
@@ -33,7 +33,7 @@ export default function SeniorMentorshipGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Career mentoring</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SCORE</strong> — mentor small business owners. score.org. FREE.</li>
               <li><strong>MicroMentor</strong> — virtual entrepreneurship mentoring.</li>
               <li><strong>Encore.org</strong> — senior career-second-act roles.</li>
@@ -46,7 +46,7 @@ export default function SeniorMentorshipGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Youth mentoring</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Big Brothers Big Sisters</strong> — kids who need adult role model.</li>
               <li><strong>Foster Grandparents Program</strong> — Senior Corps. Stipend offered.</li>
               <li><strong>Eldera</strong> — virtual mentoring with kids worldwide.</li>
@@ -60,7 +60,7 @@ export default function SeniorMentorshipGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tech-based mentoring</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior Corps RSVP — flexible volunteer matches.</li>
               <li>Tech-savvy seniors teaching less-tech seniors at libraries.</li>
               <li>Skype-A-Scientist — share STEM career with classrooms.</li>
@@ -73,7 +73,7 @@ export default function SeniorMentorshipGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior Corps</h3>
-            <p className="text-sm text-muted-foreground">Federal program, AmeriCorpsSeniors.gov. Three tracks: <strong>Foster Grandparents</strong> (work with kids), <strong>Senior Companions</strong> (help other seniors), <strong>RSVP</strong> (flexible volunteer matching). All FREE training. Some pay small stipends. Your purpose, redefined.</p>
+            <p className="text-base text-muted-foreground">Federal program, AmeriCorpsSeniors.gov. Three tracks: <strong>Foster Grandparents</strong> (work with kids), <strong>Senior Companions</strong> (help other seniors), <strong>RSVP</strong> (flexible volunteer matching). All FREE training. Some pay small stipends. Your purpose, redefined.</p>
           </CardContent>
         </Card>
       </main>

@@ -20,9 +20,9 @@ export default function SeniorRespiteCareApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Honor</h2><p>Higher-quality service. App tracks visits in real time.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Visiting Angels</h2><p>Established agency. In all 50 states.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Papa</h2><p>Companion care + transportation. Often covered by Medicare Advantage.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free / low-cost</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Local Area Agency on Aging</li><li>VA Caregiver Support</li><li>Faith communities</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free / low-cost</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Local Area Agency on Aging</li><li>VA Caregiver Support</li><li>Faith communities</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cost</h2><p>$25-$35/hour typical. Some Medicaid waivers cover up to 240 hours/year free.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Even 4 hours/week of respite reduces caregiver burnout dramatically.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Even 4 hours/week of respite reduces caregiver burnout dramatically.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,20 +19,20 @@ export default function ContractorVetting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 1 — Get 3 quotes (always)</h2>
-            <p className="text-sm">For any job over $500, get THREE estimates in writing. Three quotes will be:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">For any job over $500, get THREE estimates in writing. Three quotes will be:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Low (sometimes the scammer)</li>
               <li>Reasonable (often the right pick)</li>
               <li>High (sometimes a real expert worth it)</li>
             </ul>
-            <p className="text-sm mt-2">Don\'t go with the cheapest reflexively. Don\'t go with the priciest. Go with the most-trusted.</p>
+            <p className="text-base mt-2">Don\'t go with the cheapest reflexively. Don\'t go with the priciest. Go with the most-trusted.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 2 — Find candidates</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Word of mouth</strong> — ask 3 neighbors who they\'ve used. Best signal.</li>
               <li><strong>Nextdoor (free app)</strong> — neighbors post recommendations. Filter by your neighborhood.</li>
               <li><strong>Yelp</strong> — real reviews. Look at photos and 3-star reviews (most balanced).</li>
@@ -47,7 +47,7 @@ export default function ContractorVetting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 3 — Check the contractor</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>License:</strong> Search "[your state] contractor license lookup". Confirm it\'s active and not expired.</li>
               <li><strong>Insurance:</strong> Ask for proof of general liability ($1M minimum) and workers comp. Real contractors will email a "Certificate of Insurance" (COI) without hesitation.</li>
               <li><strong>References:</strong> Ask for 3 recent customers. CALL them. Ask "Was the work done on time? On budget? Would you hire them again?"</li>
@@ -61,7 +61,7 @@ export default function ContractorVetting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags during the meeting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Demands cash only.</li>
               <li>Pushes you to sign today.</li>
               <li>Wants more than 30% upfront. Standard is 10-20% for materials.</li>
@@ -77,7 +77,7 @@ export default function ContractorVetting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Once you\'ve picked one</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Get a written contract. Read every line.</li>
               <li>Specify materials, brands, model numbers — not "high quality flooring".</li>
               <li>Specify start and end dates.</li>
@@ -91,7 +91,7 @@ export default function ContractorVetting() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If something goes wrong</h3>
-            <p className="text-sm text-muted-foreground">File with the BBB. File with your state\'s licensing board. For amounts under your small claims limit ($5k-15k), file in small claims court — often the contractor pays just to avoid showing up. Keep all records.</p>
+            <p className="text-base text-muted-foreground">File with the BBB. File with your state\'s licensing board. For amounts under your small claims limit ($5k-15k), file in small claims court — often the contractor pays just to avoid showing up. Keep all records.</p>
           </CardContent>
         </Card>
       </main>

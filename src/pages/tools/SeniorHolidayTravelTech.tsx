@@ -22,7 +22,7 @@ export default function SeniorHolidayTravelTech() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Send gifts ahead</h2><p>Order from Amazon, ship directly to family&apos;s house. No suitcase juggling.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">PackPoint</h2><p>FREE app. Tells you what to pack based on destination weather.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Power banks</h2><p>10,000 mAh battery $20. 2-3 phone charges. Lifesaver in airports.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Print itinerary on paper. Phones die. Paper backup saves the day.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Print itinerary on paper. Phones die. Paper backup saves the day.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

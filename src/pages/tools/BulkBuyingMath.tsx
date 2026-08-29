@@ -19,7 +19,7 @@ export default function BulkBuyingMath() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best bulk buys</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Paper goods</strong> — toilet paper, paper towels. Don&apos;t go bad.</li>
               <li><strong>Cleaning supplies</strong> — laundry detergent, dish soap.</li>
               <li><strong>Vitamins / supplements</strong> — Costco brands quality + cheap.</li>
@@ -31,10 +31,10 @@ export default function BulkBuyingMath() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bad bulk buys</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fresh produce</strong> — rots. Especially for 1-2 person households.</li>
               <li><strong>Bread</strong> — molds in days.</li>
               <li><strong>Mayo, condiments</strong> — too much for 1-person.</li>
@@ -48,7 +48,7 @@ export default function BulkBuyingMath() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The math test</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Calculate price per unit (oz, lb, sheet) — Costco price + grocery price.</li>
               <li>Costco usually 20-50% cheaper per unit.</li>
               <li>BUT — only counts if you USE the whole package.</li>
@@ -61,7 +61,7 @@ export default function BulkBuyingMath() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior bulk-buy strategies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Split with neighbor or family — buy big bulk, divide.</li>
               <li>Freeze in portions — meat, bread, butter.</li>
               <li>Buy NON-PERISHABLES bulk only.</li>
@@ -76,7 +76,7 @@ export default function BulkBuyingMath() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Costco vs Aldi vs Walmart</h3>
-            <p className="text-sm text-muted-foreground"><strong>Costco</strong> — best for bulk + meat + members-only specialties. <strong>Aldi</strong> — best for cheap regular groceries. <strong>Walmart</strong> — middle ground, biggest selection. Many senior households use ALL three. No need to be loyal.</p>
+            <p className="text-base text-muted-foreground"><strong>Costco</strong> — best for bulk + meat + members-only specialties. <strong>Aldi</strong> — best for cheap regular groceries. <strong>Walmart</strong> — middle ground, biggest selection. Many senior households use ALL three. No need to be loyal.</p>
           </CardContent>
         </Card>
       </main>

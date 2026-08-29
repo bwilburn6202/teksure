@@ -30,10 +30,10 @@ export default function BackupCameraRetrofit() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BackupCameraRetrofit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior reality</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cars from 2019+ have built-in backup cameras (federal law).</li>
               <li>Older cars don&apos;t — but you can ADD one.</li>
               <li>Backup cameras reduce backing accidents 70%.</li>
@@ -55,7 +55,7 @@ export default function BackupCameraRetrofit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wireless vs wired</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Wireless</strong> — easier install, may have 1-2 sec delay, occasional interference.</li>
               <li><strong>Wired</strong> — better quality, more reliable, harder install ($150-300 install).</li>
               <li>For most seniors: wireless. The 1-2 sec delay is fine.</li>
@@ -66,7 +66,7 @@ export default function BackupCameraRetrofit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY install (1-2 hours)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Mount camera on license plate (replaces frame).</li>
               <li>Wire to reverse light power (camera turns on with reverse).</li>
               <li>Mount monitor on dash OR replace rearview mirror.</li>
@@ -79,7 +79,7 @@ export default function BackupCameraRetrofit() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Skip "OEM-style" expensive retrofit</h3>
-            <p className="text-sm text-muted-foreground">Some shops sell $1,000+ "OEM-style" integrated retrofit. Not worth it. $150 wireless camera works just as well visually. Save the money.</p>
+            <p className="text-base text-muted-foreground">Some shops sell $1,000+ "OEM-style" integrated retrofit. Not worth it. $150 wireless camera works just as well visually. Save the money.</p>
           </CardContent>
         </Card>
       </main>

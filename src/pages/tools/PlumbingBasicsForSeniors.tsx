@@ -16,10 +16,10 @@ export default function PlumbingBasicsForSeniors() {
           <p className="text-lg text-muted-foreground">Save plumber visits. Know when to call.</p>
         </div>
 
-        <Card className="mb-4 border-red-300">
+        <Card className="mb-4 border-danger-foreground/25">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3 text-red-700">EMERGENCY: shut off water</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <h2 className="font-bold text-xl mb-3 text-danger-foreground">EMERGENCY: shut off water</h2>
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Main shutoff usually basement.</li>
               <li>Or near water meter.</li>
               <li>Practice now — don&apos;t wait.</li>
@@ -33,7 +33,7 @@ export default function PlumbingBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Clogged toilet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plunger first — flange type.</li>
               <li>Slow + steady, not hard.</li>
               <li>15-20 plunges.</li>
@@ -47,7 +47,7 @@ export default function PlumbingBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Slow drain</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Boil water, pour slowly.</li>
               <li>Or baking soda + vinegar.</li>
               <li>Wait 15 min, flush hot water.</li>
@@ -61,7 +61,7 @@ export default function PlumbingBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Running toilet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$10 fix usually.</li>
               <li>Replace flapper at hardware store.</li>
               <li>YouTube — step-by-step.</li>
@@ -75,7 +75,7 @@ export default function PlumbingBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Leaky faucet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Replace washers ($5).</li>
               <li>Or full cartridge replacement.</li>
               <li>Shut off water first.</li>
@@ -89,7 +89,7 @@ export default function PlumbingBasicsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to call plumber</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Burst pipe.</li>
               <li>Sewage backup.</li>
               <li>No hot water.</li>
@@ -104,7 +104,7 @@ export default function PlumbingBasicsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior tools kit ($50)</h3>
-            <p className="text-sm text-muted-foreground">Plunger, drain snake, adjustable wrench, plumber&apos;s tape, pipe wrench, spare flapper. YouTube has tutorials for everything. Avoid hiring for $500 what costs $20 to DIY. But never push past comfort. Family member helping = OK. Home Depot rents specialty tools.</p>
+            <p className="text-base text-muted-foreground">Plunger, drain snake, adjustable wrench, plumber&apos;s tape, pipe wrench, spare flapper. YouTube has tutorials for everything. Avoid hiring for $500 what costs $20 to DIY. But never push past comfort. Family member helping = OK. Home Depot rents specialty tools.</p>
           </CardContent>
         </Card>
       </main>

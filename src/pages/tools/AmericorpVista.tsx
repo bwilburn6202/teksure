@@ -19,7 +19,7 @@ export default function AmericorpVista() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Three programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Foster Grandparent</strong> — read to kids at school. 15-40 hrs/week. $4-5/hr stipend (tax-free).</li>
               <li><strong>Senior Companion</strong> — visit homebound elders 1-on-1. Same hours + stipend.</li>
               <li><strong>RSVP (Retired Senior Volunteer Program)</strong> — flexible volunteering, your skills, no stipend but mileage reimbursement.</li>
@@ -30,7 +30,7 @@ export default function AmericorpVista() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eligibility</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>55+ years old.</li>
               <li>Foster Grandparent + Senior Companion — income-limited (200% poverty line OR $30K single).</li>
               <li>RSVP — ANY senior, no income limit.</li>
@@ -43,7 +43,7 @@ export default function AmericorpVista() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tax-free stipend (doesn&apos;t affect Social Security or food stamps).</li>
               <li>Free meals during service.</li>
               <li>Mileage reimbursement.</li>
@@ -58,7 +58,7 @@ export default function AmericorpVista() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apply</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>americorps.gov/serve/americorps-seniors</strong>.</li>
               <li>Click "Find an opportunity" + your zip.</li>
               <li>Local sponsor (school district, senior center, church) lists openings.</li>
@@ -72,7 +72,7 @@ export default function AmericorpVista() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Other federal senior programs</h3>
-            <p className="text-sm text-muted-foreground"><strong>Senior Community Service Employment Program (SCSEP)</strong> — paid training + part-time job, 55+. <strong>VITA tax volunteers</strong> — train + help low-income tax filing. <strong>Peace Corps Response</strong> — short-term overseas, all ages. All free + meaningful.</p>
+            <p className="text-base text-muted-foreground"><strong>Senior Community Service Employment Program (SCSEP)</strong> — paid training + part-time job, 55+. <strong>VITA tax volunteers</strong> — train + help low-income tax filing. <strong>Peace Corps Response</strong> — short-term overseas, all ages. All free + meaningful.</p>
           </CardContent>
         </Card>
       </main>

@@ -31,10 +31,10 @@ export default function MedicationReminderApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function MedicationReminderApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up reminders right</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Add EVERY medication, including over-the-counter ones (vitamins, ibuprofen).</li>
               <li>Set the time you actually want to take each one.</li>
               <li>Add a description of what each pill looks like — handy if you mix them up.</li>
@@ -56,7 +56,7 @@ export default function MedicationReminderApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hardware that helps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Weekly pill organizer</strong> ($5) — fill once a week. Visual reminder.</li>
               <li><strong>Hero pill dispenser</strong> ($600 + $40/mo) — robotic dispenser. Beeps and dispenses the right pills at the right time. For people with many meds.</li>
               <li><strong>MedMinder pill dispenser</strong> ($65/mo) — similar; sends alerts to family.</li>
@@ -68,7 +68,7 @@ export default function MedicationReminderApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For complex medication regimens</h3>
-            <p className="text-sm text-muted-foreground">If you take 5+ daily meds, the simplest answer is <strong>PillPack from Amazon Pharmacy</strong>. They sort EVERY pill into dated packets. You tear off Monday morning, take everything in the packet, done. No reminders needed because each packet is labeled with the exact date and time. Same insurance copay you\'re paying now.</p>
+            <p className="text-base text-muted-foreground">If you take 5+ daily meds, the simplest answer is <strong>PillPack from Amazon Pharmacy</strong>. They sort EVERY pill into dated packets. You tear off Monday morning, take everything in the packet, done. No reminders needed because each packet is labeled with the exact date and time. Same insurance copay you\'re paying now.</p>
           </CardContent>
         </Card>
       </main>

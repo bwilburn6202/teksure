@@ -19,7 +19,7 @@ export default function PetSittingIncomeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Rover platform</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most popular pet sitting app.</li>
               <li>Sign up free as sitter.</li>
               <li>Background check required.</li>
@@ -33,7 +33,7 @@ export default function PetSittingIncomeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly perks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Flexible — pick your hours.</li>
               <li>Pet visits during day.</li>
               <li>Get paid to walk.</li>
@@ -47,7 +47,7 @@ export default function PetSittingIncomeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Income potential</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drop-in visits — $15-$25 each.</li>
               <li>Dog walks — $15-$25.</li>
               <li>Boarding — $40-$70/night per dog.</li>
@@ -61,7 +61,7 @@ export default function PetSittingIncomeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wag alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Similar app — slightly different rates.</li>
               <li>Dog-walking focused.</li>
               <li>Sign up both platforms.</li>
@@ -75,7 +75,7 @@ export default function PetSittingIncomeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY local</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Care.com — keep more of fee.</li>
               <li>Nextdoor neighborhood ads.</li>
               <li>Word of mouth in retirement community.</li>
@@ -89,7 +89,7 @@ export default function PetSittingIncomeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t take aggressive dogs.</li>
               <li>Verify dog meets you first.</li>
               <li>Check dog&apos;s vaccinations.</li>
@@ -103,7 +103,7 @@ export default function PetSittingIncomeForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pet lover gold</h3>
-            <p className="text-sm text-muted-foreground">If you love pets + need extra income, pet sitting on Rover is genuinely enjoyable work. Get paid to walk dogs + play with pets. Senior reliability sells. Many seniors earn $1,000-$2,000/month part-time. Combined with daily exercise, social interaction, animal love. Win-win retirement work.</p>
+            <p className="text-base text-muted-foreground">If you love pets + need extra income, pet sitting on Rover is genuinely enjoyable work. Get paid to walk dogs + play with pets. Senior reliability sells. Many seniors earn $1,000-$2,000/month part-time. Combined with daily exercise, social interaction, animal love. Win-win retirement work.</p>
           </CardContent>
         </Card>
       </main>

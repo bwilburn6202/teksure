@@ -19,15 +19,15 @@ export default function ReverseMortgageExplained() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What it is</h2>
-            <p className="text-sm">A loan against your home equity for homeowners 62+. The bank pays YOU (lump sum, monthly, or line of credit). You don\'t make payments. Loan + interest is repaid when you sell, move, or die.</p>
-            <p className="text-sm mt-2">Most are FHA-insured "Home Equity Conversion Mortgages" (HECM).</p>
+            <p className="text-base">A loan against your home equity for homeowners 62+. The bank pays YOU (lump sum, monthly, or line of credit). You don\'t make payments. Loan + interest is repaid when you sell, move, or die.</p>
+            <p className="text-base mt-2">Most are FHA-insured "Home Equity Conversion Mortgages" (HECM).</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real costs (not always advertised)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Origination fee</strong> — up to $6,000.</li>
               <li><strong>FHA mortgage insurance</strong> — 2% upfront + 0.5%/year of loan balance.</li>
               <li><strong>Interest rate</strong> — usually higher than regular mortgages.</li>
@@ -40,7 +40,7 @@ export default function ReverseMortgageExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When a reverse mortgage CAN make sense</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You\'re 70+, paid-off home, plan to stay there until death.</li>
               <li>Home equity is your biggest asset and you have low retirement income.</li>
               <li>You want to delay Social Security, using a HECM line of credit as a bridge.</li>
@@ -50,13 +50,13 @@ export default function ReverseMortgageExplained() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <AlertTriangle className="w-6 h-6 text-yellow-700 dark:text-yellow-400 shrink-0" />
+              <AlertTriangle className="w-6 h-6 text-warn-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-2">When it\'s a TRAP</h3>
-                <ul className="list-disc pl-5 space-y-2 text-sm">
+                <ul className="list-disc pl-5 space-y-2 text-base">
                   <li>You might move within 5 years (heavy upfront fees, bad ROI).</li>
                   <li>You can\'t afford property tax/insurance — you\'ll be foreclosed.</li>
                   <li>Spouse not on the loan — they may lose the house when you die.</li>
@@ -72,15 +72,15 @@ export default function ReverseMortgageExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Required counseling — get the most out of it</h2>
-            <p className="text-sm">Federal law requires you to attend a free HUD-approved counseling session before getting a reverse mortgage. Treat it seriously. Bring a family member. Ask hard questions about long-term costs.</p>
-            <p className="text-sm mt-2">Find a counselor at <strong>hud.gov</strong>.</p>
+            <p className="text-base">Federal law requires you to attend a free HUD-approved counseling session before getting a reverse mortgage. Treat it seriously. Bring a family member. Ask hard questions about long-term costs.</p>
+            <p className="text-base mt-2">Find a counselor at <strong>hud.gov</strong>.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alternatives to consider first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Downsize</strong> — sell, buy smaller, pocket the cash. Often nets more than reverse mortgage.</li>
               <li><strong>HELOC</strong> — home equity line of credit. Cheaper but requires monthly payments.</li>
               <li><strong>Sell to family + lease back</strong> — child buys your house at fair value; you rent it back. Keeps the asset in family.</li>
@@ -93,7 +93,7 @@ export default function ReverseMortgageExplained() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Final word</h3>
-            <p className="text-sm text-muted-foreground">Reverse mortgages aren\'t inherently bad — but they\'re very expensive and complicated. Talk to a fee-only fiduciary advisor BEFORE signing. Bring an adult child to every meeting. Don\'t sign in the first meeting.</p>
+            <p className="text-base text-muted-foreground">Reverse mortgages aren\'t inherently bad — but they\'re very expensive and complicated. Talk to a fee-only fiduciary advisor BEFORE signing. Bring an adult child to every meeting. Don\'t sign in the first meeting.</p>
           </CardContent>
         </Card>
       </main>

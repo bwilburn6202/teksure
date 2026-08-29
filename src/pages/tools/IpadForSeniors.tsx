@@ -717,8 +717,8 @@ export default function IpadForSeniors() {
             />
           </div>
           <div className="flex items-center gap-2 mb-4">
-            <Tablet className="w-5 h-5 text-orange-700 dark:text-orange-300" />
-            <Badge variant="outline" className="text-xs border-orange-300 text-orange-800 dark:text-orange-200">
+            <Tablet className="w-5 h-5 text-warn-foreground " />
+            <Badge variant="outline" className="text-xs border-warn-foreground/25 text-warn-foreground ">
               iPad for seniors · Guided walkthrough
             </Badge>
           </div>
@@ -748,7 +748,7 @@ export default function IpadForSeniors() {
         {/* ── "Which iPad?" identifier ───────────────────────── */}
         <section className="container py-10 md:py-14">
           <div className="flex items-center gap-2 mb-3">
-            <Info className="w-5 h-5 text-orange-700 dark:text-orange-300" />
+            <Info className="w-5 h-5 text-warn-foreground " />
             <h2 className="text-2xl md:text-3xl font-semibold">Which iPad do you have?</h2>
           </div>
           <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -761,7 +761,7 @@ export default function IpadForSeniors() {
               <Card key={m.name} className="border-orange-300/50 bg-orange-50/40 dark:bg-orange-950/10">
                 <CardContent className="p-6 space-y-3">
                   <div className="flex items-start gap-3">
-                    <div className="p-3 rounded-xl bg-orange-100 text-orange-700 dark:bg-orange-950/40 dark:text-orange-300 shrink-0">
+                    <div className="p-3 rounded-xl bg-warn text-warn-foreground shrink-0">
                       <Tablet className="w-7 h-7" />
                     </div>
                     <div>
@@ -787,8 +787,8 @@ export default function IpadForSeniors() {
             ))}
           </div>
 
-          <Alert className="mt-6 border-amber-400/60 bg-amber-50 dark:bg-amber-950/30">
-            <Lightbulb className="h-5 w-5 text-amber-700 dark:text-amber-300" />
+          <Alert className="mt-6 border-amber-400/60 bg-warn ">
+            <Lightbulb className="h-5 w-5 text-warn-foreground " />
             <AlertTitle className="text-base md:text-lg">USB-C vs Lightning at a glance</AlertTitle>
             <AlertDescription className="text-base leading-relaxed">
               USB-C is the newer, oval-shaped cable end that can be plugged in either way up. Lightning is
@@ -805,7 +805,7 @@ export default function IpadForSeniors() {
           <div className="container py-6 md:py-8">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
               <div className="flex items-center gap-3">
-                <StepIcon className="w-5 h-5 text-orange-700 dark:text-orange-300" />
+                <StepIcon className="w-5 h-5 text-warn-foreground " />
                 <span className="text-base md:text-lg font-medium">iPad setup walkthrough</span>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -831,15 +831,15 @@ export default function IpadForSeniors() {
             </div>
 
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-2">
-              <span className="text-sm md:text-base font-medium">
+              <span className="text-base md:text-base font-medium">
                 Step {stepIndex + 1} of {totalSteps}
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 {completed.size} completed
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 You&apos;re doing great — take your time.
               </span>
             </div>
@@ -860,7 +860,7 @@ export default function IpadForSeniors() {
                 </Badge>
               </div>
               <div className="flex items-start gap-3">
-                <div className="p-3 rounded-xl bg-orange-100 text-orange-700 dark:bg-orange-950/40 dark:text-orange-300 shrink-0">
+                <div className="p-3 rounded-xl bg-warn text-warn-foreground shrink-0">
                   <StepIcon className="w-8 h-8" />
                 </div>
                 <div>
@@ -896,7 +896,7 @@ export default function IpadForSeniors() {
                     <li key={i} className="flex gap-3 text-base md:text-lg leading-relaxed">
                       <span
                         aria-hidden="true"
-                        className="shrink-0 w-8 h-8 rounded-full bg-orange-100 text-orange-800 dark:bg-orange-950/40 dark:text-orange-200 font-bold flex items-center justify-center text-base"
+                        className="shrink-0 w-8 h-8 rounded-full bg-warn text-warn-foreground font-bold flex items-center justify-center text-base"
                       >
                         {i + 1}
                       </span>
@@ -908,8 +908,8 @@ export default function IpadForSeniors() {
             </Card>
 
             {/* Stumbling block */}
-            <Alert className="border-amber-400/60 bg-amber-50 dark:bg-amber-950/30">
-              <Lightbulb className="h-5 w-5 text-amber-700 dark:text-amber-300" />
+            <Alert className="border-amber-400/60 bg-warn ">
+              <Lightbulb className="h-5 w-5 text-warn-foreground " />
               <AlertTitle className="text-base md:text-lg">Common stumbling block</AlertTitle>
               <AlertDescription className="text-base leading-relaxed">
                 {current.stumble}
@@ -1038,7 +1038,7 @@ export default function IpadForSeniors() {
                   <Card key={tip.title}>
                     <CardContent className="p-6 space-y-3">
                       <div className="flex items-start gap-3">
-                        <div className="p-3 rounded-xl bg-orange-100 text-orange-700 dark:bg-orange-950/40 dark:text-orange-300 shrink-0">
+                        <div className="p-3 rounded-xl bg-warn text-warn-foreground shrink-0">
                           <Icon className="w-6 h-6" />
                         </div>
                         <div>
@@ -1053,7 +1053,7 @@ export default function IpadForSeniors() {
                           <li key={i} className="flex gap-3 text-base leading-relaxed">
                             <span
                               aria-hidden="true"
-                              className="shrink-0 w-6 h-6 rounded-full bg-orange-100 text-orange-800 dark:bg-orange-950/40 dark:text-orange-200 font-semibold flex items-center justify-center text-sm"
+                              className="shrink-0 w-6 h-6 rounded-full bg-warn text-warn-foreground font-semibold flex items-center justify-center text-sm"
                             >
                               {i + 1}
                             </span>
@@ -1072,7 +1072,7 @@ export default function IpadForSeniors() {
         {/* ── Things seniors want to do ───────────────────────── */}
         <section className="container py-10 md:py-14">
           <div className="flex items-center gap-2 mb-3">
-            <Sparkles className="w-5 h-5 text-orange-700 dark:text-orange-300" />
+            <Sparkles className="w-5 h-5 text-warn-foreground " />
             <h2 className="text-2xl md:text-3xl font-semibold">Things you probably got the iPad for</h2>
           </div>
           <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -1087,7 +1087,7 @@ export default function IpadForSeniors() {
                 <Card key={a.title}>
                   <CardContent className="p-6 space-y-3">
                     <div className="flex items-start gap-3">
-                      <div className="p-3 rounded-xl bg-rose-100 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 shrink-0">
+                      <div className="p-3 rounded-xl bg-danger text-danger-foreground shrink-0">
                         <Icon className="w-6 h-6" />
                       </div>
                       <div>
@@ -1106,7 +1106,7 @@ export default function IpadForSeniors() {
                           <li key={i} className="flex gap-3 text-base leading-relaxed">
                             <span
                               aria-hidden="true"
-                              className="shrink-0 w-6 h-6 rounded-full bg-rose-100 text-rose-800 dark:bg-rose-950/40 dark:text-rose-200 font-semibold flex items-center justify-center text-sm"
+                              className="shrink-0 w-6 h-6 rounded-full bg-danger text-danger-foreground font-semibold flex items-center justify-center text-sm"
                             >
                               {i + 1}
                             </span>
@@ -1266,7 +1266,7 @@ export default function IpadForSeniors() {
         {/* ── Troubleshooting accordion ───────────────────────── */}
         <section className="container py-10 md:py-14">
           <div className="flex items-center gap-2 mb-3">
-            <HelpCircle className="w-5 h-5 text-orange-700 dark:text-orange-300" />
+            <HelpCircle className="w-5 h-5 text-warn-foreground " />
             <h2 className="text-2xl md:text-3xl font-semibold">Little things going wrong?</h2>
           </div>
           <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -1290,7 +1290,7 @@ export default function IpadForSeniors() {
         <section className="border-t border-border bg-muted/30">
           <div className="container py-10 md:py-14">
             <div className="flex items-center gap-2 mb-3">
-              <Siren className="w-5 h-5 text-red-600 dark:text-red-400" />
+              <Siren className="w-5 h-5 text-danger-foreground " />
               <h2 className="text-2xl md:text-3xl font-semibold">Stay safe on your iPad</h2>
             </div>
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -1302,7 +1302,7 @@ export default function IpadForSeniors() {
               <CardContent className="p-6 space-y-4">
                 <ul className="space-y-3 text-base md:text-lg leading-relaxed">
                   <li className="flex gap-3">
-                    <AlertTriangle className="w-5 h-5 text-red-700 dark:text-red-300 shrink-0 mt-1" />
+                    <AlertTriangle className="w-5 h-5 text-danger-foreground shrink-0 mt-1" />
                     <span>
                       <strong>Safari scam popups</strong> that say &quot;Your iPad has a virus&quot; are
                       fake. Close the tab (two overlapping squares → swipe the tab away). Never tap the
@@ -1310,21 +1310,21 @@ export default function IpadForSeniors() {
                     </span>
                   </li>
                   <li className="flex gap-3">
-                    <AlertTriangle className="w-5 h-5 text-red-700 dark:text-red-300 shrink-0 mt-1" />
+                    <AlertTriangle className="w-5 h-5 text-danger-foreground shrink-0 mt-1" />
                     <span>
                       <strong>Never give your Apple ID password</strong> to a popup, an email, or a caller.
                       Apple will never ask for it that way.
                     </span>
                   </li>
                   <li className="flex gap-3">
-                    <AlertTriangle className="w-5 h-5 text-red-700 dark:text-red-300 shrink-0 mt-1" />
+                    <AlertTriangle className="w-5 h-5 text-danger-foreground shrink-0 mt-1" />
                     <span>
                       <strong>Apple doesn&apos;t call you.</strong> If someone calls claiming to be from
                       Apple Support, hang up. If you want real support, go to support.apple.com yourself.
                     </span>
                   </li>
                   <li className="flex gap-3">
-                    <AlertTriangle className="w-5 h-5 text-red-700 dark:text-red-300 shrink-0 mt-1" />
+                    <AlertTriangle className="w-5 h-5 text-danger-foreground shrink-0 mt-1" />
                     <span>
                       <strong>Fake virus popups</strong> often add fake clocks, sirens, or loud sounds.
                       None of that is from Apple. Close the page, clear Safari history (Settings → Safari →
@@ -1378,7 +1378,7 @@ export default function IpadForSeniors() {
         <section className="border-t border-border bg-muted/30">
           <div className="container py-10 md:py-14">
             <div className="flex items-center gap-2 mb-3">
-              <Sparkles className="w-5 h-5 text-orange-700 dark:text-orange-300" />
+              <Sparkles className="w-5 h-5 text-warn-foreground " />
               <h2 className="text-2xl md:text-3xl font-semibold">Keep learning</h2>
             </div>
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -1388,7 +1388,7 @@ export default function IpadForSeniors() {
               <Link to="/tools/my-first-smartphone">
                 <Card className="hover:border-orange-400 transition-colors h-full">
                   <CardContent className="p-5 space-y-2">
-                    <Tablet className="w-6 h-6 text-orange-700 dark:text-orange-300" />
+                    <Tablet className="w-6 h-6 text-warn-foreground " />
                     <h3 className="text-lg font-semibold">My First Smartphone</h3>
                     <p className="text-base text-muted-foreground leading-relaxed">
                       The sister walkthrough for iPhone and Android owners.
@@ -1399,7 +1399,7 @@ export default function IpadForSeniors() {
               <Link to="/tools/voice-assistant-setup">
                 <Card className="hover:border-orange-400 transition-colors h-full">
                   <CardContent className="p-5 space-y-2">
-                    <Mic className="w-6 h-6 text-orange-700 dark:text-orange-300" />
+                    <Mic className="w-6 h-6 text-warn-foreground " />
                     <h3 className="text-lg font-semibold">Voice Assistant Setup</h3>
                     <p className="text-base text-muted-foreground leading-relaxed">
                       Teach Siri or Google to help you hands-free.
@@ -1410,7 +1410,7 @@ export default function IpadForSeniors() {
               <Link to="/guides?category=basics">
                 <Card className="hover:border-orange-400 transition-colors h-full">
                   <CardContent className="p-5 space-y-2">
-                    <BookOpen className="w-6 h-6 text-orange-700 dark:text-orange-300" />
+                    <BookOpen className="w-6 h-6 text-warn-foreground " />
                     <h3 className="text-lg font-semibold">Basics guide library</h3>
                     <p className="text-base text-muted-foreground leading-relaxed">
                       Short how-tos on all the everyday things — printing, email, scanning.

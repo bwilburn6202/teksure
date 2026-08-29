@@ -78,7 +78,7 @@ export default function RealEstateAppPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <Home className="h-8 w-8 text-emerald-700 dark:text-emerald-300" />
+                <Home className="h-8 w-8 text-success-foreground " />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Real Estate App Picker</h1>
@@ -91,8 +91,8 @@ export default function RealEstateAppPicker() {
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Real Estate App Picker' }]} />
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A word on price estimates</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A word on price estimates</p>
+              <p className="text-sm text-muted-foreground">
                 Zillow's "Zestimate" is the most famous home-value number in America — and the most often wrong. It can be off by 30,000 dollars or more. Use it as a rough starting point, not a real price. For a true value, ask an agent for a free comparative market analysis (CMA), or look at actual sale prices on Redfin and Realtor.com.
               </p>
             </CardContent>
@@ -105,15 +105,15 @@ export default function RealEstateAppPicker() {
                     <p className="font-semibold text-base">{a.name}</p>
                     <Badge variant="outline">{a.price}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {a.whoFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {a.whoFor}</p>
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
-                      <ul className="space-y-0.5">{a.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}</ul>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
+                      <ul className="space-y-0.5">{a.pros.map((p, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>)}</ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
-                      <ul className="space-y-0.5">{a.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}</ul>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
+                      <ul className="space-y-0.5">{a.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}</ul>
                     </div>
                   </div>
                   <a href={a.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-primary hover:underline">Visit official site <ExternalLink className="h-3 w-3" /></a>
@@ -122,22 +122,22 @@ export default function RealEstateAppPicker() {
             ))}
             {!showAll && (<Button variant="outline" onClick={() => setShowAll(true)}>Show all 6 picks</Button>)}
           </div>
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Wire fraud is the biggest danger when buying a home</p>
-                <p className="text-xs text-muted-foreground mb-2">
+                <p className="text-sm text-muted-foreground mb-2">
                   Scammers hack into the email of your agent or title company, then send fake wiring instructions. People lose their entire down payment in minutes — and the bank cannot get it back. Before sending any money, call the title company on a number you looked up yourself (not from the email) and confirm the wire details by voice.
                 </p>
-                <Link to="/tools/real-estate-wire-scam" className="text-xs text-amber-800 dark:text-amber-200 font-semibold underline">Read the full Real Estate Wire Scam guide →</Link>
+                <Link to="/tools/real-estate-wire-scam" className="text-xs text-warn-foreground font-semibold underline">Read the full Real Estate Wire Scam guide →</Link>
               </div>
             </CardContent>
           </Card>
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">How to actually use these apps</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">How to actually use these apps</p>
+              <p className="text-sm text-muted-foreground">
                 Start with the AARP Livability Index to compare two or three towns. Then open Redfin and Realtor.com to see real listings — pick the one with more homes in the area you want. Save 5 to 10 favorites. Set a price-drop alert. Tour in person before you fall in love with photos. And work with a buyer's agent — their fee is paid by the seller, not by you.
               </p>
             </CardContent>
@@ -146,20 +146,20 @@ export default function RealEstateAppPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/real-estate-wire-scam" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Real Estate Wire Scam</p>
-                <p className="text-xs text-muted-foreground mt-0.5">The biggest financial risk in any home purchase.</p>
+                <p className="font-medium text-base">Real Estate Wire Scam</p>
+                <p className="text-sm text-muted-foreground mt-0.5">The biggest financial risk in any home purchase.</p>
               </Link>
               <Link to="/moving-tech" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Moving Tech</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Update accounts, address, and devices when you move.</p>
+                <p className="font-medium text-base">Moving Tech</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Update accounts, address, and devices when you move.</p>
               </Link>
               <Link to="/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Account After Loss</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Handle accounts after a spouse passes.</p>
+                <p className="font-medium text-base">Account After Loss</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Handle accounts after a spouse passes.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: visit any new town twice — once on a weekday, once on a weekend — before you sign anything. Photos and apps cannot tell you what the noise, traffic, and neighbors really feel like.
           </p>
         </div>

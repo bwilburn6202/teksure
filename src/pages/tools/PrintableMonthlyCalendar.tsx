@@ -45,27 +45,27 @@ export default function PrintableMonthlyCalendar() {
   while (cells.length % 7 !== 0) cells.push(null);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Printable Monthly Calendar | TekSure" description="Build a monthly calendar with your appointments and birthdays, then print on letter-size paper to hang on the wall." />
       <div className="max-w-4xl mx-auto px-4 py-8 print:p-0">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <Calendar className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Printable Calendar</h1>
+            <Calendar className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Printable Calendar</h1>
           </div>
-          <p className="text-gray-600 text-lg">Add birthdays, appointments, anything. Print it for the fridge or your office wall.</p>
+          <p className="text-muted-foreground text-lg">Add birthdays, appointments, anything. Print it for the fridge or your office wall.</p>
         </div>
 
         <Card className="mb-4 print:hidden">
           <CardContent className="py-3 px-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
             <div>
-              <label className="text-base font-medium text-gray-700">Month</label>
-              <select value={month} onChange={e => setMonth(parseInt(e.target.value))} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <label className="text-base font-medium text-foreground">Month</label>
+              <select value={month} onChange={e => setMonth(parseInt(e.target.value))} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card">
                 {MONTHS.map((m, i) => <option key={m} value={i}>{m}</option>)}
               </select>
             </div>
             <div>
-              <label className="text-base font-medium text-gray-700">Year</label>
+              <label className="text-base font-medium text-foreground">Year</label>
               <Input type="number" min="2000" max="2099" value={year} onChange={e => setYear(parseInt(e.target.value) || today.getFullYear())} className="mt-1 text-base" />
             </div>
           </CardContent>
@@ -80,7 +80,7 @@ export default function PrintableMonthlyCalendar() {
         </Card>
 
         <div className="mb-3 flex items-center justify-between print:hidden">
-          <p className="text-sm text-gray-500">{notes.length} note{notes.length !== 1 ? "s" : ""}</p>
+          <p className="text-base text-muted-foreground">{notes.length} note{notes.length !== 1 ? "s" : ""}</p>
           <Button variant="outline" onClick={() => window.print()} className="gap-2">
             <Printer className="h-4 w-4" />
             Print Calendar
@@ -89,20 +89,20 @@ export default function PrintableMonthlyCalendar() {
 
         <div>
           <h2 className="text-2xl font-bold text-center mb-3">{MONTHS[month]} {year}</h2>
-          <div className="grid grid-cols-7 gap-px bg-gray-200 border border-gray-200">
+          <div className="grid grid-cols-7 gap-px bg-gray-200 border border-border">
             {DAYS_OF_WEEK.map(d => (
-              <div key={d} className="bg-blue-100 p-2 text-center font-semibold text-sm">{d}</div>
+              <div key={d} className="bg-info p-2 text-center font-semibold text-sm">{d}</div>
             ))}
             {cells.map((d, i) => (
-              <div key={i} className="bg-white p-1 min-h-[80px] print:min-h-[80px] text-xs">
+              <div key={i} className="bg-card p-1 min-h-[80px] print:min-h-[80px] text-xs">
                 {d && (
                   <>
-                    <div className="font-bold text-gray-700">{d}</div>
+                    <div className="font-bold text-foreground">{d}</div>
                     <div className="space-y-0.5 mt-1">
                       {notesForDay(d).map(n => (
-                        <div key={n.id} className="bg-yellow-100 rounded px-1 py-0.5 text-xs flex items-start justify-between gap-1">
+                        <div key={n.id} className="bg-warn rounded px-1 py-0.5 text-xs flex items-start justify-between gap-1">
                           <span>{n.text}</span>
-                          <button onClick={() => remove(n.id)} className="text-red-400 hover:text-red-600 print:hidden">
+                          <button onClick={() => remove(n.id)} className="text-danger-foreground hover:text-danger-foreground print:hidden">
                             <Trash2 className="h-3 w-3" />
                           </button>
                         </div>
@@ -115,6 +115,6 @@ export default function PrintableMonthlyCalendar() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

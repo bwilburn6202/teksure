@@ -346,10 +346,10 @@ export default function Sources() {
                                 <ExternalLink className="h-3.5 w-3.5 shrink-0 text-muted-foreground" aria-hidden="true" />
                               </a>
                             </div>
-                            <p className="text-xs text-muted-foreground mt-0.5 mb-1 font-mono">
+                            <p className="text-sm text-muted-foreground mt-0.5 mb-1 font-mono">
                               {source.displayUrl}
                             </p>
-                            <p className="text-sm text-muted-foreground leading-relaxed">
+                            <p className="text-base text-muted-foreground leading-relaxed">
                               {source.description}
                             </p>
                           </div>
@@ -366,7 +366,7 @@ export default function Sources() {
           <div className="p-5 rounded-xl bg-muted/40 border border-border">
             <div className="flex items-start gap-3">
               <Scale className="h-4 w-4 text-muted-foreground shrink-0 mt-0.5" aria-hidden="true" />
-              <p className="text-sm text-muted-foreground leading-relaxed">
+              <p className="text-base text-muted-foreground leading-relaxed">
                 All external links and references are provided for informational purposes. TekSure
                 does not have commercial relationships with the organizations listed above unless
                 explicitly stated. Content derived from official sources has been rewritten in plain

@@ -27,7 +27,7 @@ export default function SnowBlowerPick() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Match to snowfall</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li><strong>Light snow (1-6")</strong> — single-stage electric or battery. $200-700.</li>
               <li><strong>Moderate (6-12")</strong> — two-stage battery (EGO, Greenworks). $700-1,200.</li>
               <li><strong>Heavy / wet snow / large drives</strong> — two-stage gas. $1,000-2,500.</li>
@@ -42,10 +42,10 @@ export default function SnowBlowerPick() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -54,15 +54,15 @@ export default function SnowBlowerPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Battery vs gas — for seniors</h2>
-            <p className="text-sm">Battery = lighter, easier to start, no oil/gas/spark plug, no fumes, no mess. The downside used to be power — but modern 80V/56V battery blowers match smaller gas units.</p>
-            <p className="text-sm mt-2">For most senior driveways under 50 feet, battery is the right answer. Get a SECOND battery as backup ($150).</p>
+            <p className="text-base">Battery = lighter, easier to start, no oil/gas/spark plug, no fumes, no mess. The downside used to be power — but modern 80V/56V battery blowers match smaller gas units.</p>
+            <p className="text-base mt-2">For most senior driveways under 50 feet, battery is the right answer. Get a SECOND battery as backup ($150).</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hire vs buy</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Local snow plow service: $30-60 per visit. 5-15 visits per winter.</li>
               <li>Total: $300-1,000/year for service.</li>
               <li>Snow blower lasts 10-20 years.</li>
@@ -75,7 +75,7 @@ export default function SnowBlowerPick() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Heart attack warning</h3>
-            <p className="text-sm text-muted-foreground">Heart attacks spike after heavy snow. Cold + exertion is a real risk. If you have heart issues, please HIRE someone — even snow blower work is heavy. Self-propelled models help a lot.</p>
+            <p className="text-base text-muted-foreground">Heart attacks spike after heavy snow. Cold + exertion is a real risk. If you have heart issues, please HIRE someone — even snow blower work is heavy. Self-propelled models help a lot.</p>
           </CardContent>
         </Card>
       </main>

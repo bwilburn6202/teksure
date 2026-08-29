@@ -30,10 +30,10 @@ export default function CashbackAppPicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function CashbackAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sign up free (no credit card required).</li>
               <li>Use app/extension when shopping.</li>
               <li>Earn percentage back as cash.</li>
@@ -56,7 +56,7 @@ export default function CashbackAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy senior setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Install Rakuten browser extension.</li>
               <li>Pop-up reminds you when stores have cashback.</li>
               <li>Click &quot;Activate&quot; — done.</li>
@@ -70,7 +70,7 @@ export default function CashbackAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best apps by category</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Online shopping</strong> — Rakuten + Honey.</li>
               <li><strong>Groceries</strong> — Ibotta + Fetch Rewards.</li>
               <li><strong>Drugstore</strong> — Ibotta CVS/Walgreens.</li>
@@ -84,7 +84,7 @@ export default function CashbackAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy + scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>These apps see what you buy — opt out of data sharing.</li>
               <li>Don&apos;t link bank account if not needed.</li>
               <li>Skip if asks for SSN or bank PIN — RED FLAG.</li>
@@ -98,7 +98,7 @@ export default function CashbackAppPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best credit cards for seniors</h3>
-            <p className="text-sm text-muted-foreground">Stack with credit cards: <strong>Costco Citi Visa</strong> — 4% gas, 3% restaurants/travel. <strong>Discover It</strong> — 5% rotating + 1% all. <strong>Bank of America Customized Cash</strong> — 3% choose category. Free + senior-friendly. Pay statement balance monthly to avoid interest.</p>
+            <p className="text-base text-muted-foreground">Stack with credit cards: <strong>Costco Citi Visa</strong> — 4% gas, 3% restaurants/travel. <strong>Discover It</strong> — 5% rotating + 1% all. <strong>Bank of America Customized Cash</strong> — 3% choose category. Free + senior-friendly. Pay statement balance monthly to avoid interest.</p>
           </CardContent>
         </Card>
       </main>

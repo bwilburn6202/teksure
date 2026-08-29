@@ -19,8 +19,8 @@ export default function CgmCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What a CGM is</h2>
-            <p className="text-sm">A small disposable sensor (size of a quarter) you wear on your upper arm or belly for 10-15 days. It measures glucose every minute and sends the reading to your phone via Bluetooth. No more finger sticks, no more guessing.</p>
-            <p className="text-sm mt-2">For people with Type 1, Type 2, or pre-diabetes — these are life-changing.</p>
+            <p className="text-base">A small disposable sensor (size of a quarter) you wear on your upper arm or belly for 10-15 days. It measures glucose every minute and sends the reading to your phone via Bluetooth. No more finger sticks, no more guessing.</p>
+            <p className="text-base mt-2">For people with Type 1, Type 2, or pre-diabetes — these are life-changing.</p>
           </CardContent>
         </Card>
 
@@ -51,7 +51,7 @@ export default function CgmCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost & coverage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>With insurance + on insulin:</strong> Most plans now cover Dexcom and FreeStyle Libre. Copays $0-$50/month.</li>
               <li><strong>With Medicare:</strong> Covered if you take insulin (Type 1 or insulin-using Type 2). Get prescription, then through DME suppliers.</li>
               <li><strong>Without insurance:</strong> $200-$300/month out of pocket. Many manufacturers offer savings programs.</li>
@@ -63,7 +63,7 @@ export default function CgmCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">App setup (any brand)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install the brand\'s app from the App Store or Play Store (Dexcom, FreeStyle Libre, Stelo, Lingo).</li>
               <li>Create an account.</li>
               <li>Apply the sensor — most have a one-button applicator. Slight pinch, doesn\'t hurt.</li>
@@ -77,7 +77,7 @@ export default function CgmCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you\'ll learn fast</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Which foods spike YOUR glucose (everyone\'s different — pasta does it for some, not others).</li>
               <li>How a 20-minute walk after dinner blunts the spike.</li>
               <li>How stress and bad sleep raise fasting glucose.</li>
@@ -89,7 +89,7 @@ export default function CgmCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">A real conversation with your doctor</h3>
-            <p className="text-sm text-muted-foreground">If you have Type 2 diabetes or pre-diabetes and have never tried a CGM, ask your doctor at your next visit. Show them this page. Many doctors don\'t bring it up unless asked, but most are happy to prescribe one if you\'re interested. The data you\'ll learn from 30 days of CGM beats anything an A1C test can show.</p>
+            <p className="text-base text-muted-foreground">If you have Type 2 diabetes or pre-diabetes and have never tried a CGM, ask your doctor at your next visit. Show them this page. Many doctors don\'t bring it up unless asked, but most are happy to prescribe one if you\'re interested. The data you\'ll learn from 30 days of CGM beats anything an A1C test can show.</p>
           </CardContent>
         </Card>
       </main>

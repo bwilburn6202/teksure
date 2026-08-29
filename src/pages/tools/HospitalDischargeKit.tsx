@@ -229,14 +229,14 @@ export default function HospitalDischargeKit() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-rose-500/10 rounded-full">
-                <HeartPulse className="h-8 w-8 text-rose-600" />
+                <HeartPulse className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Hospital Discharge Tech Kit</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
               The phone setup to do the day someone comes home — so the next 30 days go smoother and a second hospital trip becomes less likely.
             </p>
-            <p className="text-sm text-muted-foreground mt-3">About 30–45 minutes total. Best done with a family member alongside.</p>
+            <p className="text-base text-muted-foreground mt-3">About 30–45 minutes total. Best done with a family member alongside.</p>
           </div>
         </section>
 
@@ -245,7 +245,7 @@ export default function HospitalDischargeKit() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5 flex items-center justify-between flex-wrap gap-3">
-              <p className="text-sm text-muted-foreground">{done.size} of {total} done</p>
+              <p className="text-base text-muted-foreground">{done.size} of {total} done</p>
               <Button onClick={printIt} variant="outline" size="sm" className="gap-2">
                 <Printer className="h-4 w-4" /> Print the kit
               </Button>
@@ -277,7 +277,7 @@ export default function HospitalDischargeKit() {
                   </div>
                   <div>
                     <h2 className="text-xl font-bold">{section.title}</h2>
-                    <p className="text-xs text-muted-foreground mt-0.5">{section.whyNow}</p>
+                    <p className="text-sm text-muted-foreground mt-0.5">{section.whyNow}</p>
                   </div>
                 </div>
                 <Card className="border-border">
@@ -292,8 +292,8 @@ export default function HospitalDischargeKit() {
                         >
                           <Checkbox checked={done.has(item.id)} onCheckedChange={() => toggle(item.id)} className="mt-1" />
                           <div className="flex-1">
-                            <p className={`font-medium text-sm ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
-                            <p className="text-xs text-muted-foreground mt-1">{item.detail}</p>
+                            <p className={`font-medium text-base ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
+                            <p className="text-sm text-muted-foreground mt-1">{item.detail}</p>
                             {item.link && (
                               <Link to={item.link.href}
                                 className="inline-flex items-center gap-1 mt-2 text-xs text-primary hover:underline">
@@ -314,20 +314,20 @@ export default function HospitalDischargeKit() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/fall-detection-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Fall Detection Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Higher fall risk after a hospital stay.</p>
+                <p className="font-medium text-base">Fall Detection Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Higher fall risk after a hospital stay.</p>
               </Link>
               <Link to="/caregiver" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Caregiver Hub</p>
-                <p className="text-xs text-muted-foreground mt-0.5">More for the person helping recovery.</p>
+                <p className="font-medium text-base">Caregiver Hub</p>
+                <p className="text-sm text-muted-foreground mt-0.5">More for the person helping recovery.</p>
               </Link>
               <Link to="/tools/family-tech-roundtable" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Family Tech Roundtable</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Plan recovery support together.</p>
+                <p className="font-medium text-base">Family Tech Roundtable</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Plan recovery support together.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: do this kit alongside the patient — it doubles as the conversation about what they will need most.
           </p>
         </div>
@@ -336,12 +336,12 @@ export default function HospitalDischargeKit() {
         <div className="hidden print:block px-8 py-6 text-sm">
           <header className="border-b-2 border-black pb-3 mb-5">
             <h1 className="text-2xl font-bold">Hospital Discharge Tech Kit</h1>
-            <p className="text-xs text-gray-600 mt-1">A 30-minute setup for the first weeks home — TekSure.com</p>
+            <p className="text-sm text-muted-foreground mt-1">A 30-minute setup for the first weeks home — TekSure.com</p>
           </header>
           {SECTIONS.map(s => (
             <section key={s.id} className="mb-4 break-inside-avoid">
               <h2 className="font-bold uppercase tracking-wider text-xs mb-2">{s.title}</h2>
-              <p className="text-xs text-gray-600 italic mb-2">{s.whyNow}</p>
+              <p className="text-sm text-muted-foreground italic mb-2">{s.whyNow}</p>
               <ul className="space-y-1">
                 {s.items.map(item => (
                   <li key={item.id} className="leading-snug">
@@ -352,7 +352,7 @@ export default function HospitalDischargeKit() {
               </ul>
             </section>
           ))}
-          <footer className="mt-6 pt-3 border-t border-gray-300 text-xs text-gray-600">More free recovery tools at TekSure.com.</footer>
+          <footer className="mt-6 pt-3 border-t border-border text-xs text-muted-foreground">More free recovery tools at TekSure.com.</footer>
         </div>
       </main>
 

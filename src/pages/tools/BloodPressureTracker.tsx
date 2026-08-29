@@ -68,23 +68,23 @@ export default function BloodPressureTracker() {
   const avgClass = avgSys && avgDia ? classify(avgSys, avgDia) : null;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Blood Pressure Tracker | TekSure" description="Log home blood pressure readings, see your 14-day average, and print a clean report for your next doctor visit." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Heart className="h-7 w-7 text-red-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Blood Pressure Tracker</h1>
+            <Heart className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Blood Pressure Tracker</h1>
           </div>
-          <p className="text-gray-600 text-lg">Log each home reading. We will show your 14-day average and the category your doctor cares about.</p>
+          <p className="text-muted-foreground text-lg">Log each home reading. We will show your 14-day average and the category your doctor cares about.</p>
         </div>
 
         {recent.length > 0 && avgClass && (
           <Card className={`mb-4 border-2 ${avgClass.tone}`}>
             <CardContent className="py-4 px-4">
-              <p className="text-sm font-semibold mb-1">14-day average ({recent.length} readings)</p>
+              <p className="text-base font-semibold mb-1">14-day average ({recent.length} readings)</p>
               <p className="text-4xl font-bold">{avgSys} / {avgDia}</p>
-              {avgPulse > 0 && <p className="text-sm">Pulse avg: {avgPulse} bpm</p>}
+              {avgPulse > 0 && <p className="text-base">Pulse avg: {avgPulse} bpm</p>}
               <Badge className={`mt-2 ${avgClass.tone}`} variant="outline">{avgClass.label}</Badge>
             </CardContent>
           </Card>
@@ -93,7 +93,7 @@ export default function BloodPressureTracker() {
         <Card className="mb-4 print:hidden">
           <CardHeader className="pb-2 pt-3">
             <CardTitle className="text-lg flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-red-600" />Add a Reading
+              <PlusCircle className="h-5 w-5 text-danger-foreground" />Add a Reading
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
@@ -129,15 +129,15 @@ export default function BloodPressureTracker() {
                     <div key={r.id} className="py-2 flex items-center justify-between gap-2 text-sm">
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <span className="text-gray-500 text-xs">{r.date} {r.time}</span>
+                          <span className="text-muted-foreground text-sm">{r.date} {r.time}</span>
                           <Badge variant="outline" className={`text-xs ${c.tone}`}>{c.label}</Badge>
                         </div>
-                        {r.note && <p className="text-xs text-gray-500 italic mt-0.5">{r.note}</p>}
+                        {r.note && <p className="text-sm text-muted-foreground italic mt-0.5">{r.note}</p>}
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className="font-bold text-gray-900">{r.systolic}/{r.diastolic}</span>
-                        {r.pulse > 0 && <span className="text-xs text-gray-500">{r.pulse} bpm</span>}
-                        <Button variant="ghost" size="icon" onClick={() => remove(r.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                        <span className="font-bold text-foreground">{r.systolic}/{r.diastolic}</span>
+                        {r.pulse > 0 && <span className="text-sm text-muted-foreground">{r.pulse} bpm</span>}
+                        <Button variant="ghost" size="icon" onClick={() => remove(r.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                           <Trash2 className="h-3 w-3" />
                         </Button>
                       </div>
@@ -149,12 +149,12 @@ export default function BloodPressureTracker() {
           </Card>
         )}
 
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Categories per American Heart Association:</span> Normal (under 120/80), Elevated (120-129/under 80), Stage 1 (130-139/80-89), Stage 2 (140+/90+), Crisis (180+/120+ - call your doctor). This tool is for tracking, not diagnosis. Show your printed log to your doctor.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Categories per American Heart Association:</span> Normal (under 120/80), Elevated (120-129/under 80), Stage 1 (130-139/80-89), Stage 2 (140+/90+), Crisis (180+/120+ - call your doctor). This tool is for tracking, not diagnosis. Show your printed log to your doctor.</p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

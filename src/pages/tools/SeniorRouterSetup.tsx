@@ -22,7 +22,7 @@ export default function SeniorRouterSetup() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Single house? One router</h2><p>2-bedroom apartment? One eero/Nest is plenty.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Big house? Mesh</h2><p>3-pack covers most homes. Add nodes anywhere.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Avoid carrier router</h2><p>Comcast/Spectrum routers are weak. Buy your own — saves $15/month rental too.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Save $180/year buying your own router. Pays for itself in 1 year.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Save $180/year buying your own router. Pays for itself in 1 year.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

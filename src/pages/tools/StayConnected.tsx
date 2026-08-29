@@ -133,7 +133,7 @@ export default function StayConnected() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-rose-500/10 rounded-full">
-                <Heart className="h-8 w-8 text-rose-600" />
+                <Heart className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Stay Connected</h1>
@@ -175,8 +175,8 @@ export default function StayConnected() {
                         </div>
                       </div>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-2">{i.what}</p>
-                    <p className="text-xs text-muted-foreground mb-2"><strong>How to start:</strong> {i.howToStart}</p>
+                    <p className="text-base text-muted-foreground mb-2">{i.what}</p>
+                    <p className="text-sm text-muted-foreground mb-2"><strong>How to start:</strong> {i.howToStart}</p>
 
                     {i.link && (
                       <a href={i.link} target="_blank" rel="noreferrer"
@@ -192,8 +192,8 @@ export default function StayConnected() {
 
           <Card className="border-border bg-gradient-to-br from-rose-50 to-pink-50 dark:from-rose-950/20 dark:to-pink-950/20 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">If you are feeling overwhelmed</p>
-              <p className="text-xs text-muted-foreground mb-3">
+              <p className="text-base font-semibold mb-2">If you are feeling overwhelmed</p>
+              <p className="text-sm text-muted-foreground mb-3">
                 Loneliness can shade into depression, especially after a loss or move. Talking to a doctor or counselor is a good move — Medicare and most insurance covers it. The 988 Suicide & Crisis Lifeline (call or text 988) is also there 24/7 for any emotional crisis.
               </p>
               <a href="https://988lifeline.org" target="_blank" rel="noreferrer"
@@ -207,16 +207,16 @@ export default function StayConnected() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Grandparent Device Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Set up a tablet that bridges family.</p>
+                <p className="font-medium text-base">Grandparent Device Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Set up a tablet that bridges family.</p>
               </Link>
               <Link to="/tools/family-tech-roundtable" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Family Tech Roundtable</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Plan tech help with the family.</p>
+                <p className="font-medium text-base">Family Tech Roundtable</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Plan tech help with the family.</p>
               </Link>
               <Link to="/tools/library-power-pack" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Library Power Pack</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Library tech and book clubs.</p>
+                <p className="font-medium text-base">Library Power Pack</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Library tech and book clubs.</p>
               </Link>
             </div>
           </div>

@@ -130,7 +130,7 @@ export default function ComputerCleanupWizard() {
                         </div>
                         <div className="flex-1">
                           <h3 className="font-semibold mb-1 text-lg">{os.name}</h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{os.intro}</p>
+                          <p className="text-base text-muted-foreground leading-relaxed">{os.intro}</p>
                         </div>
                       </div>
                       <div className="mt-3 flex gap-2">
@@ -191,7 +191,7 @@ export default function ComputerCleanupWizard() {
                     <Card key={task.id} onClick={() => toggle(task.id)}
                       className={`cursor-pointer transition-colors ${done ? 'border-green-600/40 bg-green-50/40 dark:bg-green-950/20' : 'hover:border-primary/40'}`}>
                       <CardContent className="p-4 flex items-start gap-3">
-                        {done ? <CheckCircle className="w-5 h-5 text-green-600 shrink-0 mt-0.5" /> : <Circle className="w-5 h-5 text-muted-foreground shrink-0 mt-0.5" />}
+                        {done ? <CheckCircle className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" /> : <Circle className="w-5 h-5 text-muted-foreground shrink-0 mt-0.5" />}
                         <div className="flex-1">
                           <div className="flex items-center gap-2 flex-wrap mb-1">
                             <Icon className={`w-4 h-4 ${Meta.color}`} />
@@ -199,7 +199,7 @@ export default function ComputerCleanupWizard() {
                             <Badge variant="outline" className="text-xs">{task.timeMinutes} min</Badge>
                             <Badge variant="outline" className="text-xs capitalize">{task.difficulty}</Badge>
                           </div>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{task.detail}</p>
+                          <p className="text-base text-muted-foreground leading-relaxed">{task.detail}</p>
                         </div>
                       </CardContent>
                     </Card>
@@ -208,10 +208,10 @@ export default function ComputerCleanupWizard() {
               </div>
 
               {completed.size === selectedOS.tasks.length && (
-                <Card className="bg-green-50 dark:bg-green-950/30 border-green-600/40 mb-6">
+                <Card className="bg-success border-green-600/40 mb-6">
                   <CardContent className="p-5">
-                    <h4 className="font-semibold mb-1 text-green-700 dark:text-green-400">All done!</h4>
-                    <p className="text-sm text-muted-foreground">Your computer should feel noticeably faster. Restart it one more time to finalize everything.</p>
+                    <h4 className="font-semibold mb-1 text-success-foreground ">All done!</h4>
+                    <p className="text-base text-muted-foreground">Your computer should feel noticeably faster. Restart it one more time to finalize everything.</p>
                   </CardContent>
                 </Card>
               )}
@@ -220,7 +220,7 @@ export default function ComputerCleanupWizard() {
                 <CardContent className="p-5 flex items-center justify-between gap-4 flex-wrap">
                   <div>
                     <h4 className="font-semibold mb-1">Official help</h4>
-                    <p className="text-sm text-muted-foreground">For specific error codes and advanced issues.</p>
+                    <p className="text-base text-muted-foreground">For specific error codes and advanced issues.</p>
                   </div>
                   <Button asChild>
                     <a href={selectedOS.support.url} target="_blank" rel="noopener noreferrer">

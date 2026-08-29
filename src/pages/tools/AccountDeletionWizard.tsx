@@ -215,7 +215,7 @@ export default function AccountDeletionWizard() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-red-500/10 rounded-full">
-                <Trash2 className="h-8 w-8 text-red-600" />
+                <Trash2 className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Account Deletion Wizard</h1>
@@ -247,7 +247,7 @@ export default function AccountDeletionWizard() {
             </CardContent>
           </Card>
 
-          <p className="text-sm text-muted-foreground mb-3">{filtered.length} {filtered.length === 1 ? 'service' : 'services'}</p>
+          <p className="text-base text-muted-foreground mb-3">{filtered.length} {filtered.length === 1 ? 'service' : 'services'}</p>
 
           <div className="space-y-3">
             {filtered.map(a => (
@@ -257,12 +257,12 @@ export default function AccountDeletionWizard() {
                     <p className="font-semibold text-base">{a.service}</p>
                     <Badge variant="outline">{a.category}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>What happens:</strong> {a.whatHappens}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>What happens:</strong> {a.whatHappens}</p>
 
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Steps</p>
                   <ol className="space-y-1.5 mb-3">
                     {a.steps.map((s, i) => (
-                      <li key={i} className="flex gap-2 text-sm">
+                      <li key={i} className="flex gap-2 text-base">
                         <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                         <span>{s}</span>
                       </li>
@@ -270,9 +270,9 @@ export default function AccountDeletionWizard() {
                   </ol>
 
                   {a.tip && (
-                    <div className="p-2 rounded bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 text-xs">
-                      <strong className="text-amber-700 dark:text-amber-300">Back up first:</strong>{' '}
-                      <span className="text-amber-700 dark:text-amber-300">{a.tip}</span>
+                    <div className="p-2 rounded bg-warn border border-warn-foreground/25 text-xs">
+                      <strong className="text-warn-foreground ">Back up first:</strong>{' '}
+                      <span className="text-warn-foreground ">{a.tip}</span>
                     </div>
                   )}
 
@@ -295,20 +295,20 @@ export default function AccountDeletionWizard() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/data-broker-removal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Data Broker Removal</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Remove yourself from people-search sites.</p>
+                <p className="font-medium text-base">Data Broker Removal</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Remove yourself from people-search sites.</p>
               </Link>
               <Link to="/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Account After Loss</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Closing accounts after a death.</p>
+                <p className="font-medium text-base">Account After Loss</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Closing accounts after a death.</p>
               </Link>
               <Link to="/tools/email-migration" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Email Migration</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Move off old email before closing.</p>
+                <p className="font-medium text-base">Email Migration</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Move off old email before closing.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: download your data from each service before deleting. Most services have a "Download my data" option in account settings.
           </p>
         </div>

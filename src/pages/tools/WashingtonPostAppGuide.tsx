@@ -19,7 +19,7 @@ export default function WashingtonPostAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Subscription</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$10/month or $100/year.</li>
               <li>Often $50/year deal for first year.</li>
               <li>Government employees free (.gov email).</li>
@@ -33,7 +33,7 @@ export default function WashingtonPostAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">App features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Strong politics + investigative coverage.</li>
               <li>Audio versions of articles.</li>
               <li>Listen to news while walking.</li>
@@ -47,7 +47,7 @@ export default function WashingtonPostAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-loved sections</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Politics — most thorough coverage.</li>
               <li>Local DC area news.</li>
               <li>Carolyn Hax advice column.</li>
@@ -61,7 +61,7 @@ export default function WashingtonPostAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">vs NYT</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>WaPo cheaper ($10 vs $25 NYT).</li>
               <li>NYT has more games + cooking.</li>
               <li>WaPo stronger on DC politics.</li>
@@ -75,7 +75,7 @@ export default function WashingtonPostAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple News — limited free WaPo articles.</li>
               <li>Library access — many libraries provide.</li>
               <li>Local newspaper digital subscription.</li>
@@ -89,7 +89,7 @@ export default function WashingtonPostAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cancel without hassle</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Federal &quot;click to cancel&quot; rule helps.</li>
               <li>Cancel online at WashingtonPost.com.</li>
               <li>Or call: 1-800-477-4679.</li>
@@ -103,7 +103,7 @@ export default function WashingtonPostAppGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth it for politics fans</h3>
-            <p className="text-sm text-muted-foreground">If you follow politics closely, the Washington Post at $10/month delivers the strongest political coverage in America at half the NYT price. Audio articles let you listen while walking. Combine with a free local newspaper digital subscription for full coverage. Cancel and resume anytime — sometimes a year off saves money + reduces news fatigue.</p>
+            <p className="text-base text-muted-foreground">If you follow politics closely, the Washington Post at $10/month delivers the strongest political coverage in America at half the NYT price. Audio articles let you listen while walking. Combine with a free local newspaper digital subscription for full coverage. Cancel and resume anytime — sometimes a year off saves money + reduces news fatigue.</p>
           </CardContent>
         </Card>
       </main>

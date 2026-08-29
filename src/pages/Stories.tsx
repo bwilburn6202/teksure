@@ -274,7 +274,7 @@ export default function Stories() {
       <main id="main-content" className="container mx-auto px-4 py-12 md:py-16">
         {/* ── Hero ──────────────────────────────────────────────────────── */}
         <header className="max-w-4xl mx-auto text-center mb-12 md:mb-16">
-          <div className="inline-flex items-center gap-2 rounded-full bg-amber-100 dark:bg-amber-950/40 px-4 py-1.5 text-sm font-medium text-amber-900 dark:text-amber-200 mb-5">
+          <div className="inline-flex items-center gap-2 rounded-full bg-warn px-4 py-1.5 text-sm font-medium text-warn-foreground mb-5">
             <Heart className="h-4 w-4" aria-hidden="true" />
             From our community
           </div>
@@ -300,7 +300,7 @@ export default function Stories() {
         <div className="max-w-3xl mx-auto mb-10">
           <div className="rounded-2xl border border-border bg-muted/40 p-5 flex gap-3 items-start">
             <Info className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
-            <p className="text-sm text-muted-foreground leading-relaxed">
+            <p className="text-base text-muted-foreground leading-relaxed">
               These stories are illustrative examples based on common situations, not
               actual customer testimonials. The names and details are made up. We don't
               publish real customers' stories without their explicit permission.
@@ -355,7 +355,7 @@ export default function Stories() {
         {/* ── Submit your own ──────────────────────────────────────────── */}
         <section className="max-w-3xl mx-auto mt-20 md:mt-24 text-center">
           <div className="rounded-3xl bg-gradient-to-br from-amber-100/80 via-orange-100/60 to-rose-100/50 dark:from-amber-950/30 dark:via-orange-950/20 dark:to-rose-950/20 border border-amber-200/70 dark:border-amber-900/40 p-8 md:p-12">
-            <Mail className="h-10 w-10 text-amber-700 dark:text-amber-300 mx-auto mb-4" aria-hidden="true" />
+            <Mail className="h-10 w-10 text-warn-foreground mx-auto mb-4" aria-hidden="true" />
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
               Have your own story? We’d love to hear it.
             </h2>
@@ -372,7 +372,7 @@ export default function Stories() {
                 Send us your story
               </a>
             </Button>
-            <p className="text-sm text-foreground/60 mt-4">
+            <p className="text-base text-foreground/60 mt-4">
               stories@teksure.com — we read every one.
             </p>
           </div>
@@ -450,7 +450,7 @@ interface StoryCardProps {
 
 function StoryCard({ story, onOpen }: StoryCardProps) {
   return (
-    <Card className="group relative flex flex-col h-full bg-white/90 dark:bg-card/80 border-amber-100 dark:border-border hover:border-amber-300 dark:hover:border-amber-700 hover:shadow-xl transition-all rounded-2xl overflow-hidden">
+    <Card className="group relative flex flex-col h-full bg-white/90 dark:bg-card/80 border-amber-100 dark:border-border hover:border-warn-foreground/25 hover:shadow-xl transition-all rounded-2xl overflow-hidden">
       <CardContent className="p-6 md:p-7 flex flex-col h-full">
         {/* Avatar + name */}
         <div className="flex items-center gap-4 mb-5">
@@ -464,7 +464,7 @@ function StoryCard({ story, onOpen }: StoryCardProps) {
             <p className="text-lg font-semibold text-foreground leading-tight">
               {story.name}, {story.age}
             </p>
-            <p className="flex items-center gap-1 text-sm text-foreground/65 mt-0.5">
+            <p className="flex items-center gap-1 text-base text-foreground/65 mt-0.5">
               <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
               {story.state}
             </p>
@@ -488,7 +488,7 @@ function StoryCard({ story, onOpen }: StoryCardProps) {
             <Badge
               key={t}
               variant="secondary"
-              className="text-xs bg-amber-50 text-amber-900 hover:bg-amber-100 dark:bg-amber-950/40 dark:text-amber-200 border border-amber-200/60 dark:border-amber-900/40"
+              className="text-xs bg-warn text-warn-foreground hover:bg-warn border border-amber-200/60 dark:border-amber-900/40"
             >
               {t}
             </Badge>

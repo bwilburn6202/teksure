@@ -22,7 +22,7 @@ export default function SeniorMedicalBilling() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Request itemized bill</h2><p>Always ask for line-by-line bill. Vague &ldquo;ER charge $5,000&rdquo; is unacceptable.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Negotiate</h2><p>Hospitals often accept 50% if you offer to pay quickly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free help</h2><p>State Health Insurance Assistance Program (SHIP). Free counselor reviews bills.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Don&apos;t pay first bill. Wait for &ldquo;final&rdquo; after insurance processes.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Don&apos;t pay first bill. Wait for &ldquo;final&rdquo; after insurance processes.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

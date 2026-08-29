@@ -30,10 +30,10 @@ export default function RazMobilityPhones() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function RazMobilityPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RAZ Memory Phone unique</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Designed for dementia patients.</li>
               <li>ONE screen — only photos + names of contacts.</li>
               <li>NO menus, no apps, no settings.</li>
@@ -57,7 +57,7 @@ export default function RazMobilityPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Jitterbug + Lively</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Now owned by Best Buy.</li>
               <li>Big buttons, large text.</li>
               <li>Urgent Response button (5Star) — call response team 24/7.</li>
@@ -72,7 +72,7 @@ export default function RazMobilityPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Most seniors don&apos;t need special phone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone has Assistive Access — simplifies to 5 apps.</li>
               <li>Android — Big Easy Mode on Samsung phones.</li>
               <li>Adjust text size large in settings.</li>
@@ -87,7 +87,7 @@ export default function RazMobilityPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to choose specialized</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cognitive decline / dementia.</li>
               <li>Refuses to use smartphone after multiple tries.</li>
               <li>Repeatedly falls for scam calls.</li>
@@ -101,7 +101,7 @@ export default function RazMobilityPhones() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save on cellular</h3>
-            <p className="text-sm text-muted-foreground"><strong>Consumer Cellular</strong> — best senior-priced ($20-30/mo). <strong>T-Mobile 55+ plan</strong> — $40/mo unlimited 2 lines. <strong>Mint Mobile</strong> — $15/mo if buy yearly. <strong>US Mobile</strong> — $10-25/mo. Most seniors overpay $30-50/mo unnecessarily.</p>
+            <p className="text-base text-muted-foreground"><strong>Consumer Cellular</strong> — best senior-priced ($20-30/mo). <strong>T-Mobile 55+ plan</strong> — $40/mo unlimited 2 lines. <strong>Mint Mobile</strong> — $15/mo if buy yearly. <strong>US Mobile</strong> — $10-25/mo. Most seniors overpay $30-50/mo unnecessarily.</p>
           </CardContent>
         </Card>
       </main>

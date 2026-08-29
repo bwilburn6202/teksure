@@ -21,8 +21,8 @@ export default function SeniorYouTubeTV() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Unlimited DVR</h2><p>Record everything. Keep 9 months. Skip commercials.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">3 streams at once</h2><p>Different rooms. Different people. Different shows.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch anywhere</h2><p>Phone, tablet, computer, Roku, Apple TV. Even traveling.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Compare</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Hulu Live: $77/month, 95 channels</li><li>Sling: $40/month, fewer channels</li><li>Philo: $25/month, no sports</li></ul></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Free trial. Try 1 week. Cancel before bill if not for you.</p></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Compare</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Hulu Live: $77/month, 95 channels</li><li>Sling: $40/month, fewer channels</li><li>Philo: $25/month, no sports</li></ul></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Free trial. Try 1 week. Cancel before bill if not for you.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

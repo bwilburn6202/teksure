@@ -31,10 +31,10 @@ export default function BackyardChickenApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost ?? a.price}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost ?? a.price}</span>
                 </div>
-                <p className="text-sm">{a.best_text ?? a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best_text ?? a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function BackyardChickenApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior chicken-keeping tips</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>3-6 hens for a typical family.</li>
               <li>Auto-door = sleep without worrying.</li>
               <li>Rain-proof feeder + waterer.</li>
@@ -57,7 +57,7 @@ export default function BackyardChickenApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local rules</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Most US cities allow 3-6 hens; almost no roosters allowed.</li>
               <li>Check zoning + HOA rules first.</li>
               <li>Some cities require coop permits, distance from neighbors.</li>
@@ -69,7 +69,7 @@ export default function BackyardChickenApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Most underrated senior hobby</h3>
-            <p className="text-sm text-muted-foreground">Chickens give you fresh eggs, garden compost, and gentle daily routine. They\'re social. They\'re fun. They\'re lower-maintenance than dogs. Many seniors find their flock a true joy.</p>
+            <p className="text-base text-muted-foreground">Chickens give you fresh eggs, garden compost, and gentle daily routine. They\'re social. They\'re fun. They\'re lower-maintenance than dogs. Many seniors find their flock a true joy.</p>
           </CardContent>
         </Card>
       </main>

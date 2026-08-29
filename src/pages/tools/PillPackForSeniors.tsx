@@ -19,7 +19,7 @@ export default function PillPackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What PillPack does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sorts all your meds into single-dose packets.</li>
               <li>Each packet labeled with date + time.</li>
               <li>Just tear open + take.</li>
@@ -33,7 +33,7 @@ export default function PillPackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for these patients</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>5+ daily medications.</li>
               <li>Medications taken at multiple times daily.</li>
               <li>Memory difficulties with sorting.</li>
@@ -47,7 +47,7 @@ export default function PillPackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to set up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to PillPack.com or call 855-745-5725.</li>
               <li>List all medications.</li>
               <li>Provide insurance or cash payment.</li>
@@ -61,7 +61,7 @@ export default function PillPackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Same as any pharmacy — copays apply.</li>
               <li>Free delivery — no extra charge.</li>
               <li>Insurance accepted — Medicare Part D, most plans.</li>
@@ -75,7 +75,7 @@ export default function PillPackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What&apos;s included</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Prescription medications.</li>
               <li>Vitamins + supplements (optional).</li>
               <li>Some over-the-counter meds.</li>
@@ -89,7 +89,7 @@ export default function PillPackForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For caregivers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You can manage parent&apos;s account.</li>
               <li>Receive shipping notifications.</li>
               <li>Track medication adherence.</li>
@@ -103,7 +103,7 @@ export default function PillPackForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best for 5+ medications</h3>
-            <p className="text-sm text-muted-foreground">If you take 5 or more medications daily, PillPack is genuinely transformative. No more weekly pill sorting. No more forgetting if you took your morning dose. Each packet has the date and time printed. You just tear and take. Many adult children set up PillPack for their elderly parents — peace of mind that medications are being taken correctly.</p>
+            <p className="text-base text-muted-foreground">If you take 5 or more medications daily, PillPack is genuinely transformative. No more weekly pill sorting. No more forgetting if you took your morning dose. Each packet has the date and time printed. You just tear and take. Many adult children set up PillPack for their elderly parents — peace of mind that medications are being taken correctly.</p>
           </CardContent>
         </Card>
       </main>

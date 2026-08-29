@@ -19,7 +19,7 @@ export default function GoogleSlidesBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family photo slideshow.</li>
               <li>Vacation memories.</li>
               <li>Anniversary tribute.</li>
@@ -34,7 +34,7 @@ export default function GoogleSlidesBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get started</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to slides.google.com.</li>
               <li>Sign in with Google.</li>
               <li>Click &quot;Blank&quot; or pick template.</li>
@@ -48,7 +48,7 @@ export default function GoogleSlidesBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Add photos</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Insert menu, then &quot;Image&quot;.</li>
               <li>&quot;Upload from computer&quot; — your photos.</li>
               <li>Or &quot;Photos&quot; — Google Photos.</li>
@@ -62,7 +62,7 @@ export default function GoogleSlidesBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Add text + style</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Click text box.</li>
               <li>Type your text.</li>
               <li>Highlight to format.</li>
@@ -76,7 +76,7 @@ export default function GoogleSlidesBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Show slideshow</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Click &quot;Slideshow&quot; top-right.</li>
               <li>Full screen.</li>
               <li>Spacebar — next slide.</li>
@@ -90,7 +90,7 @@ export default function GoogleSlidesBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Templates available</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wedding — anniversary.</li>
               <li>Photo album.</li>
               <li>Yearbook.</li>
@@ -105,7 +105,7 @@ export default function GoogleSlidesBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Memorial slideshows</h3>
-            <p className="text-sm text-muted-foreground">Memorial slideshows — most touching senior use. Photos through life. Music background. Show at funeral / reception. Save as link family can view forever. Library has slideshow help. Funeral homes may help. Or grandkid creates from your photos. Powerful tribute. Lifetime memory.</p>
+            <p className="text-base text-muted-foreground">Memorial slideshows — most touching senior use. Photos through life. Music background. Show at funeral / reception. Save as link family can view forever. Library has slideshow help. Funeral homes may help. Or grandkid creates from your photos. Powerful tribute. Lifetime memory.</p>
           </CardContent>
         </Card>
       </main>

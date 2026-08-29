@@ -22,7 +22,7 @@ export default function SeniorWifiCallingGuide() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Travel use</h2><p>Use in foreign hotels with free Wi-Fi. Free calls home.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Same number</h2><p>Same as your regular phone number. People call you normally.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">All major carriers support it</h2><p>Verizon, AT&amp;T, T-Mobile, Consumer Cellular. Free service.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set address in carrier app for 911 routing — emergency services find you faster.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set address in carrier app for 911 routing — emergency services find you faster.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

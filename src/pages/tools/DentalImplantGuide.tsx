@@ -19,7 +19,7 @@ export default function DentalImplantGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real costs (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Single implant + crown</strong> — $4,000-6,000.</li>
               <li><strong>All-on-4 (full arch)</strong> — $20,000-35,000 per arch.</li>
               <li><strong>Implant-supported denture</strong> — $5,000-15,000.</li>
@@ -33,7 +33,7 @@ export default function DentalImplantGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheaper alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bridge</strong> — $1,000-3,500. Permanent. Anchors to teeth on either side.</li>
               <li><strong>Partial denture</strong> — $500-2,000. Removable.</li>
               <li><strong>Full denture</strong> — $1,500-3,500. Removable. Lasts 7-10 years.</li>
@@ -46,7 +46,7 @@ export default function DentalImplantGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Dental schools</strong> — students do work at 30-50% off, supervised.</li>
               <li><strong>Mexico / Costa Rica dental tourism</strong> — 50-70% savings, but research carefully.</li>
               <li><strong>Costco hearing/dental</strong> — some Costcos have implant pricing for members.</li>
@@ -61,7 +61,7 @@ export default function DentalImplantGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smoking + diabetes lower implant success.</li>
               <li>Bone density decreases with age — bone graft often needed.</li>
               <li>Healing slower at 70+.</li>
@@ -75,7 +75,7 @@ export default function DentalImplantGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get 3 quotes</h3>
-            <p className="text-sm text-muted-foreground">Implant prices vary 50%+ between dentists. Get 3 quotes for any work over $3,000. Beware "limited time" pricing pressure. Beware "free consultation" that pivots to expensive treatment plan. Honest dentists give clear written estimates.</p>
+            <p className="text-base text-muted-foreground">Implant prices vary 50%+ between dentists. Get 3 quotes for any work over $3,000. Beware "limited time" pricing pressure. Beware "free consultation" that pivots to expensive treatment plan. Honest dentists give clear written estimates.</p>
           </CardContent>
         </Card>
       </main>

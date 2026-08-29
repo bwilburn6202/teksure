@@ -541,7 +541,7 @@ const ScreenReaderStarter = () => {
 
       <main id="main-content" className="min-h-screen bg-background">
         {/* ── Hero ─────────────────────────────────────────────────────── */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-violet-100 via-fuchsia-50 to-amber-50 dark:from-violet-950/40 dark:via-fuchsia-950/30 dark:to-amber-950/20 border-b border-violet-200 dark:border-violet-900">
+        <section className="relative overflow-hidden bg-gradient-to-br from-violet-100 via-fuchsia-50 to-amber-50 dark:from-violet-950/40 dark:via-fuchsia-950/30 dark:to-amber-950/20 border-b border-primary/25 ">
           <div className="container py-12 md:py-16 max-w-5xl">
             <PageBreadcrumb items={[{ label: 'Tools', href: '/tools' }, { label: 'Screen Reader Starter' }]} />
             <div className="relative pt-6">
@@ -554,7 +554,7 @@ const ScreenReaderStarter = () => {
                 />
               </div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="p-3 rounded-2xl bg-violet-200 text-violet-800 dark:bg-violet-900/40 dark:text-violet-200">
+                <div className="p-3 rounded-2xl bg-violet-200 text-primary dark:bg-violet-900/40 ">
                   <Eye className="w-7 h-7" />
                 </div>
                 <Badge variant="outline" className="text-xs bg-white/70 dark:bg-slate-900/70">
@@ -562,10 +562,10 @@ const ScreenReaderStarter = () => {
                 </Badge>
                 <Badge className="text-xs bg-violet-600 hover:bg-violet-600 text-white">New</Badge>
               </div>
-              <h1 className="text-3xl md:text-5xl font-bold mb-3 pr-14 text-slate-900 dark:text-slate-50">
+              <h1 className="text-3xl md:text-5xl font-bold mb-3 pr-14 text-foreground ">
                 Screen Readers — Your Ears Can Do the Reading
               </h1>
-              <p className="text-lg md:text-2xl text-slate-700 dark:text-slate-200 max-w-3xl leading-relaxed">
+              <p className="text-lg md:text-2xl text-foreground max-w-3xl leading-relaxed">
                 Let your phone or computer read everything out loud. Works whether you have full vision,
                 low vision, or none.
               </p>
@@ -587,25 +587,25 @@ const ScreenReaderStarter = () => {
         <div className="container py-10 md:py-14 max-w-5xl space-y-14">
           {/* ── Will this help me? ───────────────────────────────────── */}
           <section aria-labelledby="help-me">
-            <Card className="border-violet-200 dark:border-violet-900 bg-violet-50/60 dark:bg-violet-950/20">
+            <Card className="border-primary/25 bg-violet-50/60 dark:bg-violet-950/20">
               <CardContent className="p-6 md:p-8">
                 <div className="flex items-start gap-3 mb-4">
-                  <div className="p-2 rounded-lg bg-violet-200 text-violet-800 dark:bg-violet-900/40 dark:text-violet-200">
+                  <div className="p-2 rounded-lg bg-violet-200 text-primary dark:bg-violet-900/40 ">
                     <HeartHandshake className="w-6 h-6" />
                   </div>
                   <div>
-                    <h2 id="help-me" className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-slate-50">
+                    <h2 id="help-me" className="text-2xl md:text-3xl font-bold text-foreground ">
                       Will this help me?
                     </h2>
-                    <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 mt-1">
+                    <p className="text-base md:text-lg text-foreground mt-1">
                       Screen readers are for way more people than you might think. They help with:
                     </p>
                   </div>
                 </div>
                 <ul className="grid md:grid-cols-2 gap-3 mt-4">
                   {HELP_LIST.map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-base md:text-lg text-slate-800 dark:text-slate-100 leading-relaxed">
-                      <CheckCircle2 className="w-5 h-5 text-violet-600 dark:text-violet-300 flex-shrink-0 mt-1" />
+                    <li key={i} className="flex items-start gap-3 text-base md:text-lg text-foreground leading-relaxed">
+                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
                       <span>{item}</span>
                     </li>
                   ))}
@@ -615,12 +615,12 @@ const ScreenReaderStarter = () => {
           </section>
 
           {/* ── Start gentle alert ───────────────────────────────────── */}
-          <Alert className="border-amber-200 dark:border-amber-900 bg-amber-50 dark:bg-amber-950/20">
-            <Lightbulb className="h-5 w-5 text-amber-700 dark:text-amber-300" />
-            <AlertTitle className="text-lg md:text-xl text-amber-900 dark:text-amber-100">
+          <Alert className="border-warn-foreground/25 bg-warn ">
+            <Lightbulb className="h-5 w-5 text-warn-foreground " />
+            <AlertTitle className="text-lg md:text-xl text-warn-foreground ">
               Start gentle — try "Speak Screen" before the full screen reader
             </AlertTitle>
-            <AlertDescription className="text-base text-amber-900 dark:text-amber-100 leading-relaxed space-y-2">
+            <AlertDescription className="text-base text-warn-foreground leading-relaxed space-y-2">
               <p>
                 iOS, Android, and Mac all include a lighter option that reads a page on demand without
                 changing any of your normal gestures. It is a kind way in.
@@ -643,15 +643,15 @@ const ScreenReaderStarter = () => {
 
           {/* ── Device picker tabs ───────────────────────────────────── */}
           <section aria-labelledby="device-picker">
-            <h2 id="device-picker" className="text-2xl md:text-3xl font-bold mb-3 text-slate-900 dark:text-slate-50">
+            <h2 id="device-picker" className="text-2xl md:text-3xl font-bold mb-3 text-foreground ">
               Pick your device
             </h2>
-            <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 mb-6 leading-relaxed">
+            <p className="text-base md:text-lg text-foreground mb-6 leading-relaxed">
               Every device has a screen reader built in. Tap your device below for a short, plain-English
               quickstart.
             </p>
             <Tabs value={activeDevice} onValueChange={(v) => setActiveDevice(v as DeviceId)}>
-              <TabsList className="flex flex-wrap h-auto gap-1.5 bg-slate-100 dark:bg-slate-900 p-2 mb-6">
+              <TabsList className="flex flex-wrap h-auto gap-1.5 bg-muted p-2 mb-6">
                 {DEVICES.map((d) => {
                   const Icon = d.icon;
                   return (
@@ -672,25 +672,25 @@ const ScreenReaderStarter = () => {
                 const c = DEVICE_CONTENT[d.id];
                 return (
                   <TabsContent key={d.id} value={d.id} className="mt-0">
-                    <Card className="border-violet-200 dark:border-violet-900">
+                    <Card className="border-primary/25 ">
                       <CardContent className="p-6 md:p-8 space-y-6">
                         <div>
-                          <h3 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-50">
+                          <h3 className="text-xl md:text-2xl font-bold text-foreground ">
                             {c.title}
                           </h3>
-                          <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 leading-relaxed mt-2">
+                          <p className="text-base md:text-lg text-foreground leading-relaxed mt-2">
                             {c.intro}
                           </p>
                         </div>
 
                         {c.sections.map((s, idx) => (
-                          <div key={idx} className="border-l-4 border-violet-300 dark:border-violet-700 pl-4 py-1">
-                            <h4 className="font-semibold text-lg md:text-xl text-slate-900 dark:text-slate-50 mb-2">
+                          <div key={idx} className="border-l-4 border-primary/25 pl-4 py-1">
+                            <h4 className="font-semibold text-lg md:text-xl text-foreground mb-2">
                               {s.heading}
                             </h4>
                             <ol className="list-decimal pl-6 space-y-2">
                               {s.bullets.map((b, j) => (
-                                <li key={j} className="text-base md:text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
+                                <li key={j} className="text-base md:text-lg text-foreground leading-relaxed">
                                   {b}
                                 </li>
                               ))}
@@ -699,44 +699,44 @@ const ScreenReaderStarter = () => {
                         ))}
 
                         {c.rescue && (
-                          <Alert className="border-rose-200 dark:border-rose-900 bg-rose-50 dark:bg-rose-950/20">
-                            <AlertTriangle className="h-5 w-5 text-rose-700 dark:text-rose-300" />
-                            <AlertTitle className="text-base md:text-lg text-rose-900 dark:text-rose-100">
+                          <Alert className="border-danger-foreground/25 bg-danger ">
+                            <AlertTriangle className="h-5 w-5 text-danger-foreground " />
+                            <AlertTitle className="text-base md:text-lg text-danger-foreground ">
                               Accidentally turned on?
                             </AlertTitle>
-                            <AlertDescription className="text-base text-rose-900 dark:text-rose-100 leading-relaxed">
+                            <AlertDescription className="text-base text-danger-foreground leading-relaxed">
                               {c.rescue}
                             </AlertDescription>
                           </Alert>
                         )}
 
                         {c.extra && (
-                          <div className="rounded-lg bg-slate-100 dark:bg-slate-900/40 p-4 flex gap-3">
-                            <Info className="h-5 w-5 text-slate-700 dark:text-slate-300 shrink-0 mt-0.5" />
-                            <p className="text-base text-slate-800 dark:text-slate-200 leading-relaxed">{c.extra}</p>
+                          <div className="rounded-lg bg-muted p-4 flex gap-3">
+                            <Info className="h-5 w-5 text-foreground shrink-0 mt-0.5" />
+                            <p className="text-base text-foreground leading-relaxed">{c.extra}</p>
                           </div>
                         )}
 
                         {/* NVDA card inside Windows tab */}
                         {d.id === 'windows' && (
-                          <Card className="border-emerald-200 dark:border-emerald-900 bg-emerald-50/40 dark:bg-emerald-950/20">
+                          <Card className="border-success-foreground/25 bg-emerald-50/40 dark:bg-emerald-950/20">
                             <CardContent className="p-5 md:p-6">
                               <div className="flex items-start gap-3">
-                                <div className="p-2 rounded-lg bg-emerald-200 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-200">
+                                <div className="p-2 rounded-lg bg-emerald-200 text-success-foreground dark:bg-emerald-900/40 ">
                                   <Sparkles className="w-5 h-5" />
                                 </div>
                                 <div className="flex-1">
-                                  <h4 className="font-semibold text-lg md:text-xl text-emerald-900 dark:text-emerald-100 mb-2">
+                                  <h4 className="font-semibold text-lg md:text-xl text-success-foreground mb-2">
                                     {NVDA_NOTE.heading}
                                   </h4>
                                   <ul className="list-disc pl-6 space-y-2">
                                     {NVDA_NOTE.bullets.map((b, j) => (
-                                      <li key={j} className="text-base md:text-lg text-emerald-900 dark:text-emerald-100 leading-relaxed">
+                                      <li key={j} className="text-base md:text-lg text-success-foreground leading-relaxed">
                                         {b}
                                       </li>
                                     ))}
                                   </ul>
-                                  <Button asChild variant="link" className="mt-3 px-0 text-emerald-800 dark:text-emerald-200">
+                                  <Button asChild variant="link" className="mt-3 px-0 text-success-foreground ">
                                     <a href="https://www.nvaccess.org/download/" target="_blank" rel="noopener noreferrer">
                                       <ExternalLink className="w-4 h-4 mr-1.5" /> Download NVDA from nvaccess.org
                                     </a>
@@ -756,24 +756,24 @@ const ScreenReaderStarter = () => {
 
           {/* ── Vocabulary ────────────────────────────────────────────── */}
           <section aria-labelledby="vocab">
-            <h2 id="vocab" className="text-2xl md:text-3xl font-bold mb-3 text-slate-900 dark:text-slate-50">
+            <h2 id="vocab" className="text-2xl md:text-3xl font-bold mb-3 text-foreground ">
               Common screen-reader words
             </h2>
-            <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 mb-6 leading-relaxed">
+            <p className="text-base md:text-lg text-foreground mb-6 leading-relaxed">
               A few terms you will hear as you get started. Knowing them makes every tutorial easier
               to follow.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               {VOCAB.map((v, i) => (
-                <Card key={i} className="border-slate-200 dark:border-slate-800">
+                <Card key={i} className="border-border ">
                   <CardContent className="p-5">
                     <div className="flex items-start gap-3">
-                      <div className="p-2 rounded-lg bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300">
+                      <div className="p-2 rounded-lg bg-primary/10 text-primary ">
                         <BookOpen className="w-5 h-5" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-50 mb-1">{v.term}</h3>
-                        <p className="text-base text-slate-700 dark:text-slate-200 leading-relaxed">{v.meaning}</p>
+                        <h3 className="font-semibold text-lg text-foreground mb-1">{v.term}</h3>
+                        <p className="text-base text-foreground leading-relaxed">{v.meaning}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -784,34 +784,34 @@ const ScreenReaderStarter = () => {
 
           {/* ── Voice customization ──────────────────────────────────── */}
           <section aria-labelledby="voice-custom">
-            <Card className="border-violet-200 dark:border-violet-900">
+            <Card className="border-primary/25 ">
               <CardContent className="p-6 md:p-8 space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="p-2 rounded-lg bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300">
+                  <div className="p-2 rounded-lg bg-primary/10 text-primary ">
                     <Volume2 className="w-6 h-6" />
                   </div>
-                  <h2 id="voice-custom" className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-slate-50">
+                  <h2 id="voice-custom" className="text-2xl md:text-3xl font-bold text-foreground ">
                     Pick a voice you enjoy
                   </h2>
                 </div>
-                <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
+                <p className="text-base md:text-lg text-foreground leading-relaxed">
                   The default voice is rarely the best one. Spending five minutes on this makes a big
                   difference over months of use.
                 </p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li className="text-base md:text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
+                  <li className="text-base md:text-lg text-foreground leading-relaxed">
                     <strong>Pick a voice you like.</strong> iOS has Samantha, Karen, Fred, Nicky, and Alex.
                     Windows and Mac include US, UK, Australian, Irish, Indian, and South African voices.
                   </li>
-                  <li className="text-base md:text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
+                  <li className="text-base md:text-lg text-foreground leading-relaxed">
                     <strong>Start slow — 0.5× speaking rate.</strong> Your ears will speed up on their own.
                     After a week, bump to 0.75×. Power users often end up at 1.5× to 2×.
                   </li>
-                  <li className="text-base md:text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
+                  <li className="text-base md:text-lg text-foreground leading-relaxed">
                     <strong>Punctuation level.</strong> Most people prefer "Some" — hears periods and commas,
                     skips the rest. "All" reads every symbol aloud ("exclamation mark," "dash," etc.).
                   </li>
-                  <li className="text-base md:text-lg text-slate-700 dark:text-slate-200 leading-relaxed">
+                  <li className="text-base md:text-lg text-foreground leading-relaxed">
                     <strong>Try a "premium" voice.</strong> iOS calls them Enhanced or Premium voices (free
                     download). Windows 11 has Natural voices that sound almost human.
                   </li>
@@ -822,23 +822,23 @@ const ScreenReaderStarter = () => {
 
           {/* ── Apps with built-in read-aloud ────────────────────────── */}
           <section aria-labelledby="apps-readaloud">
-            <h2 id="apps-readaloud" className="text-2xl md:text-3xl font-bold mb-3 text-slate-900 dark:text-slate-50">
+            <h2 id="apps-readaloud" className="text-2xl md:text-3xl font-bold mb-3 text-foreground ">
               Apps that read to you — no screen reader required
             </h2>
-            <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 mb-6 leading-relaxed">
+            <p className="text-base md:text-lg text-foreground mb-6 leading-relaxed">
               If the full screen reader feels like a lot, these apps have a read-aloud button of their
               own. Tap, sit back, and listen.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               {READ_ALOUD_APPS.map((a, i) => (
-                <Card key={i} className="border-slate-200 dark:border-slate-800">
+                <Card key={i} className="border-border ">
                   <CardContent className="p-5 flex gap-3">
-                    <div className="p-2 rounded-lg bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300 h-fit">
+                    <div className="p-2 rounded-lg bg-warn text-warn-foreground h-fit">
                       <Headphones className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-50 mb-1">{a.name}</h3>
-                      <p className="text-base text-slate-700 dark:text-slate-200 leading-relaxed">{a.how}</p>
+                      <h3 className="font-semibold text-lg text-foreground mb-1">{a.name}</h3>
+                      <p className="text-base text-foreground leading-relaxed">{a.how}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -848,23 +848,23 @@ const ScreenReaderStarter = () => {
 
           {/* ── Browser read aloud ───────────────────────────────────── */}
           <section aria-labelledby="browser-readaloud">
-            <h2 id="browser-readaloud" className="text-2xl md:text-3xl font-bold mb-3 text-slate-900 dark:text-slate-50">
+            <h2 id="browser-readaloud" className="text-2xl md:text-3xl font-bold mb-3 text-foreground ">
               Read any web page out loud
             </h2>
-            <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 mb-6 leading-relaxed">
+            <p className="text-base md:text-lg text-foreground mb-6 leading-relaxed">
               Every major browser can read the current page. Microsoft Edge has the best built-in voices
               of the bunch.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               {BROWSER_READ_ALOUD.map((b, i) => (
-                <Card key={i} className="border-slate-200 dark:border-slate-800">
+                <Card key={i} className="border-border ">
                   <CardContent className="p-5 flex gap-3">
-                    <div className="p-2 rounded-lg bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-300 h-fit">
+                    <div className="p-2 rounded-lg bg-info text-info-foreground h-fit">
                       <Globe className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-50 mb-1">{b.browser}</h3>
-                      <p className="text-base text-slate-700 dark:text-slate-200 leading-relaxed">{b.how}</p>
+                      <h3 className="font-semibold text-lg text-foreground mb-1">{b.browser}</h3>
+                      <p className="text-base text-foreground leading-relaxed">{b.how}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -873,12 +873,12 @@ const ScreenReaderStarter = () => {
           </section>
 
           {/* ── Privacy ──────────────────────────────────────────────── */}
-          <Alert className="border-emerald-200 dark:border-emerald-900 bg-emerald-50 dark:bg-emerald-950/20">
-            <ShieldCheck className="h-5 w-5 text-emerald-700 dark:text-emerald-300" />
-            <AlertTitle className="text-lg md:text-xl text-emerald-900 dark:text-emerald-100">
+          <Alert className="border-success-foreground/25 bg-success ">
+            <ShieldCheck className="h-5 w-5 text-success-foreground " />
+            <AlertTitle className="text-lg md:text-xl text-success-foreground ">
               About privacy — screen readers run on your device
             </AlertTitle>
-            <AlertDescription className="text-base text-emerald-900 dark:text-emerald-100 leading-relaxed">
+            <AlertDescription className="text-base text-success-foreground leading-relaxed">
               VoiceOver, TalkBack, Narrator, NVDA, and ChromeVox all speak out loud locally. Nothing you
               read, type, or listen to gets sent to a company server. The voice is synthesized on the
               device itself, even when you are offline.
@@ -887,30 +887,30 @@ const ScreenReaderStarter = () => {
 
           {/* ── Getting comfortable ──────────────────────────────────── */}
           <section aria-labelledby="comfort">
-            <Card className="border-violet-200 dark:border-violet-900 bg-gradient-to-br from-violet-50 to-fuchsia-50 dark:from-violet-950/30 dark:to-fuchsia-950/20">
+            <Card className="border-primary/25 bg-gradient-to-br from-violet-50 to-fuchsia-50 dark:from-violet-950/30 dark:to-fuchsia-950/20">
               <CardContent className="p-6 md:p-8 space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="p-2 rounded-lg bg-violet-200 text-violet-800 dark:bg-violet-900/40 dark:text-violet-200">
+                  <div className="p-2 rounded-lg bg-violet-200 text-primary dark:bg-violet-900/40 ">
                     <Keyboard className="w-6 h-6" />
                   </div>
-                  <h2 id="comfort" className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-slate-50">
+                  <h2 id="comfort" className="text-2xl md:text-3xl font-bold text-foreground ">
                     How to get comfortable
                   </h2>
                 </div>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li className="text-base md:text-lg text-slate-800 dark:text-slate-100 leading-relaxed">
+                  <li className="text-base md:text-lg text-foreground leading-relaxed">
                     Start with "Speak Selection" before the full screen reader.
                   </li>
-                  <li className="text-base md:text-lg text-slate-800 dark:text-slate-100 leading-relaxed">
+                  <li className="text-base md:text-lg text-foreground leading-relaxed">
                     Practice 15 minutes a day for a week — progress compounds fast.
                   </li>
-                  <li className="text-base md:text-lg text-slate-800 dark:text-slate-100 leading-relaxed">
+                  <li className="text-base md:text-lg text-foreground leading-relaxed">
                     YouTube has excellent beginner videos — search "VoiceOver for beginners" or "TalkBack tutorial."
                   </li>
-                  <li className="text-base md:text-lg text-slate-800 dark:text-slate-100 leading-relaxed">
+                  <li className="text-base md:text-lg text-foreground leading-relaxed">
                     Hadley (hadley.edu) offers free classes on screen readers — by phone, video, or self-paced online.
                   </li>
-                  <li className="text-base md:text-lg text-slate-800 dark:text-slate-100 leading-relaxed">
+                  <li className="text-base md:text-lg text-foreground leading-relaxed">
                     Use headphones in public — the voice is clearer and your reading stays private.
                   </li>
                 </ul>
@@ -920,16 +920,16 @@ const ScreenReaderStarter = () => {
 
           {/* ── Common frustrations ──────────────────────────────────── */}
           <section aria-labelledby="frustrations">
-            <h2 id="frustrations" className="text-2xl md:text-3xl font-bold mb-3 text-slate-900 dark:text-slate-50">
+            <h2 id="frustrations" className="text-2xl md:text-3xl font-bold mb-3 text-foreground ">
               Common frustrations — and quick fixes
             </h2>
             <Accordion type="single" collapsible className="space-y-2">
               {FRUSTRATIONS.map((f, i) => (
-                <AccordionItem key={i} value={`fix-${i}`} className="border border-slate-200 dark:border-slate-800 rounded-lg px-4">
-                  <AccordionTrigger className="text-base md:text-lg font-semibold text-slate-900 dark:text-slate-50 text-left min-h-14">
+                <AccordionItem key={i} value={`fix-${i}`} className="border border-border rounded-lg px-4">
+                  <AccordionTrigger className="text-base md:text-lg font-semibold text-foreground text-left min-h-14">
                     {f.issue}
                   </AccordionTrigger>
-                  <AccordionContent className="text-base md:text-lg text-slate-700 dark:text-slate-200 leading-relaxed pb-4">
+                  <AccordionContent className="text-base md:text-lg text-foreground leading-relaxed pb-4">
                     {f.fix}
                   </AccordionContent>
                 </AccordionItem>
@@ -939,17 +939,17 @@ const ScreenReaderStarter = () => {
 
           {/* ── Pairing with hearing aids ────────────────────────────── */}
           <section aria-labelledby="hearing-aids">
-            <Card className="border-amber-200 dark:border-amber-900">
+            <Card className="border-warn-foreground/25 ">
               <CardContent className="p-6 md:p-8">
                 <div className="flex items-start gap-3 mb-3">
-                  <div className="p-2 rounded-lg bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300">
+                  <div className="p-2 rounded-lg bg-warn text-warn-foreground ">
                     <Ear className="w-6 h-6" />
                   </div>
                   <div>
-                    <h2 id="hearing-aids" className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-slate-50">
+                    <h2 id="hearing-aids" className="text-2xl md:text-3xl font-bold text-foreground ">
                       Using a screen reader with hearing aids
                     </h2>
-                    <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 leading-relaxed mt-2">
+                    <p className="text-base md:text-lg text-foreground leading-relaxed mt-2">
                       Most modern hearing aids can stream phone audio directly into your ears — no
                       headphones needed. This is a great combination with screen readers: clear, private,
                       comfortable.
@@ -968,23 +968,23 @@ const ScreenReaderStarter = () => {
 
           {/* ── Beyond screen readers — low-vision tools ─────────────── */}
           <section aria-labelledby="low-vision">
-            <h2 id="low-vision" className="text-2xl md:text-3xl font-bold mb-3 text-slate-900 dark:text-slate-50">
+            <h2 id="low-vision" className="text-2xl md:text-3xl font-bold mb-3 text-foreground ">
               Beyond screen readers — other low-vision helpers
             </h2>
-            <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 mb-6 leading-relaxed">
+            <p className="text-base md:text-lg text-foreground mb-6 leading-relaxed">
               A screen reader is one tool in a bigger kit. These other built-in helpers often make the
               bigger difference for tired eyes and low vision.
             </p>
             <div className="grid md:grid-cols-2 gap-4 mb-6">
               {LOW_VISION_TOOLS.map((t, i) => (
-                <Card key={i} className="border-slate-200 dark:border-slate-800">
+                <Card key={i} className="border-border ">
                   <CardContent className="p-5 flex gap-3">
-                    <div className="p-2 rounded-lg bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300 h-fit">
+                    <div className="p-2 rounded-lg bg-primary/10 text-primary h-fit">
                       <Eye className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-50 mb-1">{t.name}</h3>
-                      <p className="text-base text-slate-700 dark:text-slate-200 leading-relaxed">{t.blurb}</p>
+                      <h3 className="font-semibold text-lg text-foreground mb-1">{t.name}</h3>
+                      <p className="text-base text-foreground leading-relaxed">{t.blurb}</p>
                     </div>
                   </CardContent>
                 </Card>
@@ -1000,24 +1000,24 @@ const ScreenReaderStarter = () => {
 
           {/* ── Community & free help ────────────────────────────────── */}
           <section aria-labelledby="community">
-            <h2 id="community" className="text-2xl md:text-3xl font-bold mb-3 text-slate-900 dark:text-slate-50">
+            <h2 id="community" className="text-2xl md:text-3xl font-bold mb-3 text-foreground ">
               Free classes and communities
             </h2>
-            <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 mb-6 leading-relaxed">
+            <p className="text-base md:text-lg text-foreground mb-6 leading-relaxed">
               You are not learning this alone. These groups have been supporting screen-reader users for
               decades — most are completely free.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               {COMMUNITY.map((c, i) => (
-                <Card key={i} className="border-slate-200 dark:border-slate-800 hover:border-violet-300 transition-colors">
+                <Card key={i} className="border-border hover:border-primary/25 transition-colors">
                   <CardContent className="p-5">
-                    <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-50 mb-1">{c.name}</h3>
-                    <p className="text-base text-slate-700 dark:text-slate-200 leading-relaxed mb-3">{c.blurb}</p>
+                    <h3 className="font-semibold text-lg text-foreground mb-1">{c.name}</h3>
+                    <p className="text-base text-foreground leading-relaxed mb-3">{c.blurb}</p>
                     <a
                       href={c.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-base font-semibold text-violet-700 dark:text-violet-300 hover:underline min-h-14"
+                      className="inline-flex items-center gap-1.5 text-base font-semibold text-primary hover:underline min-h-14"
                     >
                       <ExternalLink className="w-4 h-4" />
                       Visit {c.name}
@@ -1031,20 +1031,20 @@ const ScreenReaderStarter = () => {
           {/* ── FAQ ──────────────────────────────────────────────────── */}
           <section aria-labelledby="faq">
             <div className="flex items-center gap-3 mb-4">
-              <div className="p-2 rounded-lg bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300">
+              <div className="p-2 rounded-lg bg-primary/10 text-primary ">
                 <HelpCircle className="w-6 h-6" />
               </div>
-              <h2 id="faq" className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-slate-50">
+              <h2 id="faq" className="text-2xl md:text-3xl font-bold text-foreground ">
                 Frequently asked questions
               </h2>
             </div>
             <Accordion type="single" collapsible className="space-y-2">
               {FAQ.map((f, i) => (
-                <AccordionItem key={i} value={`faq-${i}`} className="border border-slate-200 dark:border-slate-800 rounded-lg px-4">
-                  <AccordionTrigger className="text-base md:text-lg font-semibold text-slate-900 dark:text-slate-50 text-left min-h-14">
+                <AccordionItem key={i} value={`faq-${i}`} className="border border-border rounded-lg px-4">
+                  <AccordionTrigger className="text-base md:text-lg font-semibold text-foreground text-left min-h-14">
                     {f.q}
                   </AccordionTrigger>
-                  <AccordionContent className="text-base md:text-lg text-slate-700 dark:text-slate-200 leading-relaxed pb-4">
+                  <AccordionContent className="text-base md:text-lg text-foreground leading-relaxed pb-4">
                     {f.a}
                   </AccordionContent>
                 </AccordionItem>
@@ -1054,21 +1054,21 @@ const ScreenReaderStarter = () => {
 
           {/* ── Related tools ────────────────────────────────────────── */}
           <section aria-labelledby="related">
-            <h2 id="related" className="text-2xl md:text-3xl font-bold mb-4 text-slate-900 dark:text-slate-50">
+            <h2 id="related" className="text-2xl md:text-3xl font-bold mb-4 text-foreground ">
               Related tools
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
               <Link to="/tools/low-vision-tech-hub" className="group">
-                <Card className="h-full border-slate-200 dark:border-slate-800 hover:border-violet-400 hover:shadow-md transition-all">
+                <Card className="h-full border-border hover:border-violet-400 hover:shadow-md transition-all">
                   <CardContent className="p-5 flex items-start gap-3">
-                    <div className="p-2 rounded-lg bg-violet-100 text-violet-700 dark:bg-violet-900/30 dark:text-violet-300">
+                    <div className="p-2 rounded-lg bg-primary/10 text-primary ">
                       <Eye className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-50 mb-1 group-hover:text-violet-700 dark:group-hover:text-violet-300">
+                      <h3 className="font-semibold text-lg text-foreground mb-1 group-hover:text-primary ">
                         Low Vision Tech Hub
                       </h3>
-                      <p className="text-base text-slate-700 dark:text-slate-200 leading-relaxed">
+                      <p className="text-base text-foreground leading-relaxed">
                         Every setting that makes screens easier to see on any device.
                       </p>
                     </div>
@@ -1076,16 +1076,16 @@ const ScreenReaderStarter = () => {
                 </Card>
               </Link>
               <Link to="/tools/hearing-aid-tech-helper" className="group">
-                <Card className="h-full border-slate-200 dark:border-slate-800 hover:border-violet-400 hover:shadow-md transition-all">
+                <Card className="h-full border-border hover:border-violet-400 hover:shadow-md transition-all">
                   <CardContent className="p-5 flex items-start gap-3">
-                    <div className="p-2 rounded-lg bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300">
+                    <div className="p-2 rounded-lg bg-warn text-warn-foreground ">
                       <Ear className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-50 mb-1 group-hover:text-violet-700 dark:group-hover:text-violet-300">
+                      <h3 className="font-semibold text-lg text-foreground mb-1 group-hover:text-primary ">
                         Hearing Aid Tech Helper
                       </h3>
-                      <p className="text-base text-slate-700 dark:text-slate-200 leading-relaxed">
+                      <p className="text-base text-foreground leading-relaxed">
                         Pair, stream, and fix common tech issues with modern hearing aids.
                       </p>
                     </div>
@@ -1093,16 +1093,16 @@ const ScreenReaderStarter = () => {
                 </Card>
               </Link>
               <Link to="/accessibility" className="group">
-                <Card className="h-full border-slate-200 dark:border-slate-800 hover:border-violet-400 hover:shadow-md transition-all">
+                <Card className="h-full border-border hover:border-violet-400 hover:shadow-md transition-all">
                   <CardContent className="p-5 flex items-start gap-3">
-                    <div className="p-2 rounded-lg bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300">
+                    <div className="p-2 rounded-lg bg-primary/10 text-primary ">
                       <Settings className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-50 mb-1 group-hover:text-violet-700 dark:group-hover:text-violet-300">
+                      <h3 className="font-semibold text-lg text-foreground mb-1 group-hover:text-primary ">
                         Accessibility Hub
                       </h3>
-                      <p className="text-base text-slate-700 dark:text-slate-200 leading-relaxed">
+                      <p className="text-base text-foreground leading-relaxed">
                         Every accessibility guide on TekSure in one friendly directory.
                       </p>
                     </div>
@@ -1110,16 +1110,16 @@ const ScreenReaderStarter = () => {
                 </Card>
               </Link>
               <Link to="/tools/my-first-smartphone" className="group">
-                <Card className="h-full border-slate-200 dark:border-slate-800 hover:border-violet-400 hover:shadow-md transition-all">
+                <Card className="h-full border-border hover:border-violet-400 hover:shadow-md transition-all">
                   <CardContent className="p-5 flex items-start gap-3">
-                    <div className="p-2 rounded-lg bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300">
+                    <div className="p-2 rounded-lg bg-success text-success-foreground ">
                       <Smartphone className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg text-slate-900 dark:text-slate-50 mb-1 group-hover:text-violet-700 dark:group-hover:text-violet-300">
+                      <h3 className="font-semibold text-lg text-foreground mb-1 group-hover:text-primary ">
                         My First Smartphone
                       </h3>
-                      <p className="text-base text-slate-700 dark:text-slate-200 leading-relaxed">
+                      <p className="text-base text-foreground leading-relaxed">
                         A calm, step-by-step walkthrough for your first phone or a new one.
                       </p>
                     </div>

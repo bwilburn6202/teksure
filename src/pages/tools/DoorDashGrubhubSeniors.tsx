@@ -19,7 +19,7 @@ export default function DoorDashGrubhubSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DoorDash</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most restaurants partnered.</li>
               <li>DashPass — $9.99/month, free deliveries $12+.</li>
               <li>Grocery delivery too.</li>
@@ -33,7 +33,7 @@ export default function DoorDashGrubhubSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Uber Eats</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Same Uber app — orders + rides.</li>
               <li>Uber One — $9.99/month free deliveries.</li>
               <li>Often best for late-night.</li>
@@ -47,7 +47,7 @@ export default function DoorDashGrubhubSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Grubhub</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sometimes lower delivery fees.</li>
               <li>Free Grubhub+ with Amazon Prime.</li>
               <li>Local restaurants emphasized.</li>
@@ -61,7 +61,7 @@ export default function DoorDashGrubhubSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for senior orderers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Order during off-peak — faster delivery.</li>
               <li>Special instructions clear (drinks separate).</li>
               <li>Note delivery preferences (porch).</li>
@@ -75,7 +75,7 @@ export default function DoorDashGrubhubSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch the costs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Delivery fees + service fees + tips.</li>
               <li>Often 30-50% more than restaurant pickup.</li>
               <li>Subscriptions ($9.99/mo) save if frequent.</li>
@@ -89,7 +89,7 @@ export default function DoorDashGrubhubSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For grandkids visiting</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Order pizza after a long visit.</li>
               <li>Multiple cuisines for picky eaters.</li>
               <li>Grandkids often happy to order via app.</li>
@@ -103,7 +103,7 @@ export default function DoorDashGrubhubSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">DashPass if eating delivery weekly</h3>
-            <p className="text-sm text-muted-foreground">If you order delivery 2+ times weekly, DoorDash DashPass at $9.99/month pays for itself in waived delivery fees. Otherwise, just pay per order. For seniors with mobility issues, food delivery is genuinely valuable. For others — driving + picking up is much cheaper.</p>
+            <p className="text-base text-muted-foreground">If you order delivery 2+ times weekly, DoorDash DashPass at $9.99/month pays for itself in waived delivery fees. Otherwise, just pay per order. For seniors with mobility issues, food delivery is genuinely valuable. For others — driving + picking up is much cheaper.</p>
           </CardContent>
         </Card>
       </main>

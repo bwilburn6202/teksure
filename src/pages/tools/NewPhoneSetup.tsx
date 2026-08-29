@@ -342,8 +342,8 @@ export default function NewPhoneSetup() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-indigo-50 dark:bg-indigo-950/30 flex items-center justify-center flex-shrink-0">
-                <Smartphone className="h-6 w-6 text-indigo-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Smartphone className="h-6 w-6 text-primary" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -358,7 +358,7 @@ export default function NewPhoneSetup() {
           {!phoneType ? (
             <div>
               <h2 className="font-semibold text-lg mb-2">What kind of phone do you have?</h2>
-              <p className="text-sm text-muted-foreground mb-6">This determines which setup instructions you will see.</p>
+              <p className="text-base text-muted-foreground mb-6">This determines which setup instructions you will see.</p>
               <div className="grid sm:grid-cols-2 gap-4">
                 <button
                   onClick={() => setPhoneType('iphone')}
@@ -367,7 +367,7 @@ export default function NewPhoneSetup() {
                 >
                   <span className="text-4xl block mb-3" role="img" aria-label="Apple">&#x1F34E;</span>
                   <span className="font-semibold text-lg block mb-1">iPhone</span>
-                  <span className="text-sm text-muted-foreground">Apple phone with the Apple logo</span>
+                  <span className="text-base text-muted-foreground">Apple phone with the Apple logo</span>
                 </button>
                 <button
                   onClick={() => setPhoneType('android')}
@@ -376,15 +376,15 @@ export default function NewPhoneSetup() {
                 >
                   <span className="text-4xl block mb-3" role="img" aria-label="Android robot">&#x1F916;</span>
                   <span className="font-semibold text-lg block mb-1">Android</span>
-                  <span className="text-sm text-muted-foreground">Samsung, Google Pixel, Motorola, or other</span>
+                  <span className="text-base text-muted-foreground">Samsung, Google Pixel, Motorola, or other</span>
                 </button>
               </div>
-              <p className="text-xs text-muted-foreground mt-4">Not sure? Look at the back of your phone. If you see an Apple logo, it is an iPhone. Everything else is Android.</p>
+              <p className="text-sm text-muted-foreground mt-4">Not sure? Look at the back of your phone. If you see an Apple logo, it is an iPhone. Everything else is Android.</p>
             </div>
           ) : finished ? (
             <div className="text-center py-12">
-              <div className="h-20 w-20 rounded-full bg-green-100 dark:bg-green-950/30 flex items-center justify-center mx-auto mb-6">
-                <PartyPopper className="h-10 w-10 text-green-600" aria-hidden="true" />
+              <div className="h-20 w-20 rounded-full bg-success flex items-center justify-center mx-auto mb-6">
+                <PartyPopper className="h-10 w-10 text-success-foreground" aria-hidden="true" />
               </div>
               <h2 className="text-2xl font-bold mb-2">Your phone is all set up!</h2>
               <p className="text-muted-foreground max-w-md mx-auto mb-8">
@@ -399,8 +399,8 @@ export default function NewPhoneSetup() {
                   'Set up your email account in the Mail or Gmail app',
                 ].map((tip, i) => (
                   <div key={i} className="flex gap-3 p-3 rounded-xl border border-border bg-card">
-                    <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                    <span className="text-sm">{tip}</span>
+                    <CheckCircle className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <span className="text-base">{tip}</span>
                   </div>
                 ))}
               </div>
@@ -432,7 +432,7 @@ export default function NewPhoneSetup() {
 
                   <ol className="space-y-3 mb-6">
                     {step.instructions.map((instruction, i) => (
-                      <li key={i} className="flex gap-3 text-sm leading-relaxed">
+                      <li key={i} className="flex gap-3 text-base leading-relaxed">
                         <span className="font-medium text-muted-foreground flex-shrink-0 w-5">{i + 1}.</span>
                         <span>{instruction}</span>
                       </li>
@@ -449,7 +449,7 @@ export default function NewPhoneSetup() {
                 <div className="border-t border-border">
                   <button
                     onClick={() => setShowStuck(!showStuck)}
-                    className="w-full p-4 flex items-center gap-2 text-sm font-medium text-amber-700 dark:text-amber-400 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 transition-colors min-h-[44px]"
+                    className="w-full p-4 flex items-center gap-2 text-sm font-medium text-warn-foreground hover:bg-amber-50/50 dark:hover:bg-amber-950/20 transition-colors min-h-[44px]"
                     aria-expanded={showStuck}
                   >
                     <HelpCircle className="h-4 w-4" aria-hidden="true" />
@@ -463,7 +463,7 @@ export default function NewPhoneSetup() {
                     <div className="px-5 pb-5 space-y-2">
                       {step.stuckTips.map((tip, i) => (
                         <div key={i} className="flex gap-2 text-sm text-muted-foreground">
-                          <ArrowRight className="h-4 w-4 text-amber-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                          <ArrowRight className="h-4 w-4 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                           <span>{tip}</span>
                         </div>
                       ))}

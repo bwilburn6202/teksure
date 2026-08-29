@@ -28,7 +28,7 @@ export default function SmartDeadboltPicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why for seniors specifically</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Never locked out — code or fingerprint always works.</li>
               <li>Give grandkids a temporary code (e.g., 2-week visit) — auto-expires.</li>
               <li>Aide / cleaner gets a permanent code that you can revoke instantly.</li>
@@ -45,10 +45,10 @@ export default function SmartDeadboltPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -57,7 +57,7 @@ export default function SmartDeadboltPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Most smart deadbolts replace your existing deadbolt — same hole.</li>
               <li>Remove old deadbolt (4 screws).</li>
               <li>Drop in new deadbolt + secure.</li>
@@ -71,7 +71,7 @@ export default function SmartDeadboltPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch out for</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Battery life</strong> — smart locks need 4 AA batteries every 6-12 months. Set reminder.</li>
               <li><strong>Wi-Fi connection</strong> — some need a hub; others connect direct to Wi-Fi.</li>
               <li><strong>Backup key</strong> — confirm there\'s a physical key option.</li>
@@ -83,7 +83,7 @@ export default function SmartDeadboltPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best pick</h3>
-            <p className="text-sm text-muted-foreground"><strong>Schlage Encode Plus</strong> — keypad, Wi-Fi, key backup, Apple Home Key support. Reliable, well-built. Worth $80 over Kwikset Halo for build quality.</p>
+            <p className="text-base text-muted-foreground"><strong>Schlage Encode Plus</strong> — keypad, Wi-Fi, key backup, Apple Home Key support. Reliable, well-built. Worth $80 over Kwikset Halo for build quality.</p>
           </CardContent>
         </Card>
       </main>

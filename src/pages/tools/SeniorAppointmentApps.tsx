@@ -22,7 +22,7 @@ export default function SeniorAppointmentApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Calendar tip</h2><p>Add appointments to phone calendar. Get reminders 24 hours and 1 hour before.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bring a list</h2><p>Type symptoms in Apple Notes or Google Keep. Check off as discussed with doctor.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family share</h2><p>Share calendar with family — they can drive you to appointments.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Book early morning appointments. Less waiting room time.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Book early morning appointments. Less waiting room time.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

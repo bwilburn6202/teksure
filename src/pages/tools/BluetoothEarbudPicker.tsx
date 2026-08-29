@@ -128,7 +128,7 @@ export default function BluetoothEarbudPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-cyan-500/10 rounded-full">
-                <Headphones className="h-8 w-8 text-cyan-600" />
+                <Headphones className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Bluetooth Earbud Picker</h1>
@@ -151,15 +151,15 @@ export default function BluetoothEarbudPicker() {
                     <div className="flex gap-2 mt-1 flex-wrap"><Badge variant="outline">{e.price}</Badge>{e.highlight && <Badge className="bg-cyan-600">{e.highlight}</Badge>}</div>
                   </div>
                 </div>
-                <p className="text-sm mb-3"><span className="font-semibold">Who it fits: </span>{e.whoFits}</p>
+                <p className="text-base mb-3"><span className="font-semibold">Who it fits: </span>{e.whoFits}</p>
                 <div className="grid sm:grid-cols-2 gap-3 mb-3">
                   <div>
-                    <p className="text-xs font-semibold text-green-700 dark:text-green-400 mb-1.5 flex items-center gap-1"><Check className="h-3 w-3" />Pros</p>
-                    <ul className="space-y-1">{e.pros.map((p, k) => (<li key={k} className="flex gap-2 text-xs"><span className="text-green-600 shrink-0">+</span><span>{p}</span></li>))}</ul>
+                    <p className="text-sm font-semibold text-success-foreground mb-1.5 flex items-center gap-1"><Check className="h-3 w-3" />Pros</p>
+                    <ul className="space-y-1">{e.pros.map((p, k) => (<li key={k} className="flex gap-2 text-sm"><span className="text-success-foreground shrink-0">+</span><span>{p}</span></li>))}</ul>
                   </div>
                   <div>
-                    <p className="text-xs font-semibold text-amber-700 dark:text-amber-400 mb-1.5 flex items-center gap-1"><X className="h-3 w-3" />Cons</p>
-                    <ul className="space-y-1">{e.cons.map((c, k) => (<li key={k} className="flex gap-2 text-xs"><span className="text-amber-600 shrink-0">-</span><span>{c}</span></li>))}</ul>
+                    <p className="text-sm font-semibold text-warn-foreground mb-1.5 flex items-center gap-1"><X className="h-3 w-3" />Cons</p>
+                    <ul className="space-y-1">{e.cons.map((c, k) => (<li key={k} className="flex gap-2 text-sm"><span className="text-warn-foreground shrink-0">-</span><span>{c}</span></li>))}</ul>
                   </div>
                 </div>
                 <a href={e.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-primary hover:underline">View on official site <ExternalLink className="h-3 w-3" /></a>
@@ -168,8 +168,8 @@ export default function BluetoothEarbudPicker() {
           </div>
 
           <Card className="border-border bg-muted/30 mb-6"><CardContent className="p-5">
-            <p className="text-sm font-semibold mb-2 flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-primary" />Quick tips before you buy</p>
-            <ul className="space-y-1.5 text-xs text-muted-foreground">
+            <p className="text-base font-semibold mb-2 flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-primary" />Quick tips before you buy</p>
+            <ul className="space-y-1.5 text-sm text-muted-foreground">
               {['Match the brand to your phone — AirPods with iPhone, anything else works fine on Android.', 'Try at least two ear-tip sizes. The right tip gives good bass and noise blocking, not the price.', 'If hearing loss is a real concern, AirPods Pro 2 hearing-aid mode is the best starting point at this price.', 'Check the return window — a 30-day "try it" return policy is normal at Apple, Bose, and Best Buy.'].map((t, i) => (<li key={i} className="flex gap-2"><span className="text-primary">•</span><span>{t}</span></li>))}
             </ul>
           </CardContent></Card>
@@ -183,13 +183,13 @@ export default function BluetoothEarbudPicker() {
                 { to: '/tools/music-streaming-picker', t: 'Music Streaming Picker', d: 'Pick the right music app to pair with them.' },
               ].map(r => (
                 <Link key={r.to} to={r.to} className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                  <p className="font-medium text-sm">{r.t}</p>
-                  <p className="text-xs text-muted-foreground mt-0.5">{r.d}</p>
+                  <p className="font-medium text-base">{r.t}</p>
+                  <p className="text-sm text-muted-foreground mt-0.5">{r.d}</p>
                 </Link>
               ))}
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1"><Ear className="h-3 w-3" /> Quick Tip: silicone tips block more sound than open-fit AirPods 4 — better for noisy rooms, worse if you want to hear the doorbell.</p>
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1"><Ear className="h-3 w-3" /> Quick Tip: silicone tips block more sound than open-fit AirPods 4 — better for noisy rooms, worse if you want to hear the doorbell.</p>
         </div>
       </main>
 

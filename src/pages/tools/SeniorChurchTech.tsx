@@ -22,7 +22,7 @@ export default function SeniorChurchTech() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">YouTube sermons</h2><p>FREE. Many famous pastors archived. Robert Schuller, Joel Osteen, etc.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Daily devotionals</h2><p>YouVersion Bible app. FREE. Reading plans.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When can&apos;t go</h2><p>Still part of community via tech. Don&apos;t feel isolated.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Cast church livestream to TV. Big screen. Family worship from home.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Cast church livestream to TV. Big screen. Family worship from home.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

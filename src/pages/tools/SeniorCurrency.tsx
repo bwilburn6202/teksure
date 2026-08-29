@@ -22,7 +22,7 @@ export default function SeniorCurrency() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">ATM withdraw</h2><p>Best exchange rates. Avoid airport currency exchanges.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tell bank</h2><p>Travel notice. Prevents fraud lock on card abroad.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Wise card</h2><p>Like a debit card. Best rates. No hidden fees.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: One $100 transaction can save $3-$15 with right card. Pays trip.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: One $100 transaction can save $3-$15 with right card. Pays trip.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

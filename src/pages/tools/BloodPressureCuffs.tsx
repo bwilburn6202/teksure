@@ -30,10 +30,10 @@ export default function BloodPressureCuffs() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{c.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{c.cost}</span>
+                  <span className="text-base font-semibold text-primary">{c.cost}</span>
                 </div>
-                <p className="text-sm">{c.best}</p>
-                <p className="text-sm text-muted-foreground">{c.good}</p>
+                <p className="text-base">{c.best}</p>
+                <p className="text-base text-muted-foreground">{c.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BloodPressureCuffs() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to take BP correctly</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sit quietly 5 minutes BEFORE.</li>
               <li>Empty bladder.</li>
               <li>No caffeine, exercise, smoking 30 min before.</li>
@@ -58,7 +58,7 @@ export default function BloodPressureCuffs() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Healthy range (2025 guidelines)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Normal</strong> — under 120/80.</li>
               <li><strong>Elevated</strong> — 120-129 / under 80.</li>
               <li><strong>Stage 1</strong> — 130-139 / 80-89.</li>
@@ -72,7 +72,7 @@ export default function BloodPressureCuffs() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sharing with doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bluetooth cuffs export PDF reports.</li>
               <li>Or: notebook with date + 2 readings + average.</li>
               <li>Bring 14 days of data to cardiology visits.</li>
@@ -85,7 +85,7 @@ export default function BloodPressureCuffs() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Wrist cuffs less accurate</h3>
-            <p className="text-sm text-muted-foreground">Skip wrist cuffs. Upper-arm cuffs are MUCH more accurate. Take the time to roll up sleeve and use a real cuff. Wrist readings often 5-10 points off.</p>
+            <p className="text-base text-muted-foreground">Skip wrist cuffs. Upper-arm cuffs are MUCH more accurate. Take the time to roll up sleeve and use a real cuff. Wrist readings often 5-10 points off.</p>
           </CardContent>
         </Card>
       </main>

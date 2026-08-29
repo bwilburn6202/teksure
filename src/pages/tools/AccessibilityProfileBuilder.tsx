@@ -395,7 +395,7 @@ export default function AccessibilityProfileBuilder() {
                   >
                     <ArrowLeft className="h-5 w-5" /> Back
                   </Button>
-                  <span className="text-sm text-muted-foreground hidden sm:inline">
+                  <span className="text-base text-muted-foreground hidden sm:inline">
                     Tap an answer to continue
                   </span>
                   <div className="w-[92px]" aria-hidden="true" />
@@ -409,7 +409,7 @@ export default function AccessibilityProfileBuilder() {
                 {/* Confirmation + Summary */}
                 <div className="bg-card border-2 border-primary/30 rounded-2xl p-6 md:p-8 shadow-md">
                   <div className="flex items-start gap-3 mb-4">
-                    <CheckCircle2 className="h-8 w-8 text-green-600 shrink-0" aria-hidden="true" />
+                    <CheckCircle2 className="h-8 w-8 text-success-foreground shrink-0" aria-hidden="true" />
                     <div>
                       <h2 className="text-2xl md:text-3xl font-bold mb-1">
                         Your profile is saved and applied
@@ -466,7 +466,7 @@ export default function AccessibilityProfileBuilder() {
                       </Button>
                       <Badge variant="secondary">Sample badge</Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       Smaller supporting text looks like this.
                     </p>
                   </div>
@@ -501,7 +501,7 @@ export default function AccessibilityProfileBuilder() {
                     />
                   </div>
 
-                  <p className="mt-5 text-sm text-muted-foreground flex items-start gap-2">
+                  <p className="mt-5 text-base text-muted-foreground flex items-start gap-2">
                     <Info className="h-4 w-4 mt-0.5 shrink-0" />
                     These open help pages in a new tab — the actual toggles live inside the
                     Settings app on your phone.

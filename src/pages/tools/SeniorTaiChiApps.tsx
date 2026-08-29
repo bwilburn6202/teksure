@@ -22,7 +22,7 @@ export default function SeniorTaiChiApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior centers</h2><p>FREE classes. Most senior centers have weekly Tai Chi.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Outdoor option</h2><p>Many parks have free outdoor Tai Chi groups. Beautiful + social.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">15 min daily</h2><p>Better balance within 8 weeks.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Tai Chi is meditation in motion. Body + mind benefits.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Tai Chi is meditation in motion. Body + mind benefits.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

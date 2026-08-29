@@ -22,7 +22,7 @@ export default function SeniorTravelClubs() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sam&apos;s Club Travel</h2><p>FREE for members. Cruise and resort discounts.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">USAA Travel</h2><p>FREE for veterans/military. Strong discounts.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Compare always</h2><p>Get quote from one club. Compare to direct booking. Pick cheapest.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: AAA pays for itself with one rental car or one tow.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: AAA pays for itself with one rental car or one tow.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

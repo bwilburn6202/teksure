@@ -19,7 +19,7 @@ export default function ISPNegotiationGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why call</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Promo rates expire after 1-2 years.</li>
               <li>Bill quietly increased $20-40/mo.</li>
               <li>Senior often pays 50%+ more than new customers.</li>
@@ -33,7 +33,7 @@ export default function ISPNegotiationGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pre-call prep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pull current bill — note speed + monthly amount.</li>
               <li>Research competitor prices (10 min Google).</li>
               <li>Note: T-Mobile Home Internet $50/mo, Verizon Fios promo, etc.</li>
@@ -46,7 +46,7 @@ export default function ISPNegotiationGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Negotiation script</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Call. Ask for &quot;Retention Department.&quot;</li>
               <li>&quot;I&apos;m considering canceling. My bill went from $X to $Y.&quot;</li>
               <li>&quot;Verizon is offering $Z for similar speed. Can you match?&quot;</li>
@@ -61,7 +61,7 @@ export default function ISPNegotiationGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Specific savings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Comcast/Xfinity</strong> — usually 25-40% reduction.</li>
               <li><strong>Spectrum</strong> — 20-30% reduction.</li>
               <li><strong>Verizon Fios</strong> — locks in for 2 years.</li>
@@ -75,7 +75,7 @@ export default function ISPNegotiationGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If they won&apos;t budge</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Switch — actually cancel + go competitor.</li>
               <li>Often, calling cancellation triggers retention offer.</li>
               <li>Real switch is okay — bill drops 30%.</li>
@@ -89,7 +89,7 @@ export default function ISPNegotiationGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Service alternatives</h3>
-            <p className="text-sm text-muted-foreground"><strong>BillCutterz</strong> + <strong>Trim</strong> — services negotiate for you, take % of savings. <strong>Honey</strong> + Trim apps. Or use AI (ChatGPT) to write negotiation letter. Anyway saves $$$. Annual review = $300-1,200/yr in your pocket.</p>
+            <p className="text-base text-muted-foreground"><strong>BillCutterz</strong> + <strong>Trim</strong> — services negotiate for you, take % of savings. <strong>Honey</strong> + Trim apps. Or use AI (ChatGPT) to write negotiation letter. Anyway saves $$$. Annual review = $300-1,200/yr in your pocket.</p>
           </CardContent>
         </Card>
       </main>

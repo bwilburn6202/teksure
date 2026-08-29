@@ -62,10 +62,10 @@ export default function CastPhoneToTv() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h2 className="font-bold text-xl mb-3">{result.title}</h2>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   {result.steps.map((s, i) => <li key={i} dangerouslySetInnerHTML={{ __html: s }} />)}
                 </ol>
-                {result.tip && <p className="mt-3 bg-muted/50 p-3 rounded text-sm"><strong>Tip:</strong> {result.tip}</p>}
+                {result.tip && <p className="mt-3 bg-muted/50 p-3 rounded text-base"><strong>Tip:</strong> {result.tip}</p>}
               </CardContent>
             </Card>
             <button onClick={() => { setPhone(null); setTv(null); }} className="w-full p-3 border rounded-lg text-sm">Start over</button>

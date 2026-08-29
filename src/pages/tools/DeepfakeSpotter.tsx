@@ -19,7 +19,7 @@ export default function DeepfakeSpotter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Signs of an AI-made photo</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hands</strong> — extra fingers, fused fingers, bent wrong way. AI still struggles with hands.</li>
               <li><strong>Teeth</strong> — too even, too white, weird gaps.</li>
               <li><strong>Earrings/jewelry</strong> — mismatched (one earring different from other).</li>
@@ -35,7 +35,7 @@ export default function DeepfakeSpotter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Signs of a deepfake video</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lip-sync slightly off</strong> — voice doesn\'t quite match mouth movement.</li>
               <li><strong>Skin texture wrong at certain angles</strong>.</li>
               <li><strong>Face doesn\'t match the lighting</strong> of the rest of the scene.</li>
@@ -50,7 +50,7 @@ export default function DeepfakeSpotter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Signs of an AI voice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Slightly robotic cadence</strong>.</li>
               <li><strong>No background noise or breathing</strong>.</li>
               <li><strong>Says "your grandson" not your grandson\'s NAME</strong>.</li>
@@ -63,7 +63,7 @@ export default function DeepfakeSpotter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to do when in doubt</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Verify on Google</strong>. Type the news headline + "fact check". Snopes, FactCheck.org, PolitiFact.</li>
               <li><strong>Reverse-image-search</strong> any photo you receive. Right-click → "Search Google for image".</li>
               <li><strong>For "my grandchild needs money" calls</strong> — hang up. Call the real grandchild on their normal number. Or ask for the family safe-word.</li>
@@ -76,7 +76,7 @@ export default function DeepfakeSpotter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tools to help</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Content Credentials (c2pa.org)</strong> — emerging standard. "C" icon on photos shows AI-generated or edited.</li>
               <li><strong>Deepware Scanner</strong> — free, scans video for deepfake signs.</li>
               <li><strong>InVID Verify</strong> — browser tool for journalists to verify videos.</li>
@@ -87,7 +87,7 @@ export default function DeepfakeSpotter() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best defense — slow down</h3>
-            <p className="text-sm text-muted-foreground">Almost every fake video is designed to make you ANGRY or SCARED. Both emotions cause snap-shares. If a post triggers strong feelings, pause 5 minutes. Verify before sharing.</p>
+            <p className="text-base text-muted-foreground">Almost every fake video is designed to make you ANGRY or SCARED. Both emotions cause snap-shares. If a post triggers strong feelings, pause 5 minutes. Verify before sharing.</p>
           </CardContent>
         </Card>
       </main>

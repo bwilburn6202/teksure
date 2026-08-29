@@ -17,12 +17,12 @@ export default function SeniorMedicareOnline() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sign up</h2><p>Visit medicare.gov. Use your Medicare card to verify identity. Free.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What you can do</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>See claims status</li><li>Print Medicare card</li><li>Compare drug plans</li><li>Find doctors</li><li>Order replacement card</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What you can do</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>See claims status</li><li>Print Medicare card</li><li>Compare drug plans</li><li>Find doctors</li><li>Order replacement card</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Plan Finder</h2><p>Compare Part D and Medicare Advantage plans by your prescription list. Saves $1,000+/year.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Open Enrollment</h2><p>Oct 15 - Dec 7 yearly. Best time to change plans.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free help</h2><p>SHIP counselors free. Call 1-800-633-4227 to find a local SHIP advisor.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch for scams</h2><p>Medicare NEVER calls without you initiating. Hang up on cold callers.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Update your prescription list yearly in Plan Finder. Plans change pricing.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Update your prescription list yearly in Plan Finder. Plans change pricing.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

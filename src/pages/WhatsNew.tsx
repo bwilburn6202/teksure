@@ -341,7 +341,7 @@ function UpdateGroup({ type, items }: { type: UpdateType; items: Update[] }) {
             />
             <div>
               <p className="text-base font-medium text-foreground leading-snug">{item.title}</p>
-              <p className="text-sm md:text-base text-foreground/70 leading-relaxed">{item.description}</p>
+              <p className="text-base md:text-base text-foreground/70 leading-relaxed">{item.description}</p>
             </div>
           </li>
         ))}
@@ -445,7 +445,7 @@ export default function WhatsNew() {
                           {release.label}
                         </h3>
                         {release.summary && (
-                          <p className="text-sm md:text-base text-foreground/70 font-normal mt-1 leading-relaxed">
+                          <p className="text-base md:text-base text-foreground/70 font-normal mt-1 leading-relaxed">
                             {release.summary}
                           </p>
                         )}

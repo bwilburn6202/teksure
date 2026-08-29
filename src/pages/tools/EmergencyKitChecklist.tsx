@@ -19,7 +19,7 @@ export default function EmergencyKitChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Water + food (3 days)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 gallon water per person per day. 3 gallons total each.</li>
               <li>Manual can opener.</li>
               <li>Canned soup, beans, fruit, vegetables.</li>
@@ -34,7 +34,7 @@ export default function EmergencyKitChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Power + light</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Flashlight + extra batteries (for each person).</li>
               <li>Battery-powered/hand-crank radio (NOAA weather radio).</li>
               <li>Big phone power bank (Anker 20K mAh, ~$50). Charge it monthly.</li>
@@ -48,7 +48,7 @@ export default function EmergencyKitChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health + safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>First aid kit.</li>
               <li>7-day supply of medications (rotate every 6 months).</li>
               <li>Glasses + reading glasses (extra pair).</li>
@@ -65,7 +65,7 @@ export default function EmergencyKitChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Documents (in waterproof bag)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photo ID + passport copies.</li>
               <li>Insurance cards.</li>
               <li>Medication list.</li>
@@ -82,7 +82,7 @@ export default function EmergencyKitChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Comfort + practical</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Blanket / sleeping bag per person.</li>
               <li>Change of clothes (closed-toe shoes!).</li>
               <li>Garbage bags + zip-lock bags.</li>
@@ -99,7 +99,7 @@ export default function EmergencyKitChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">By disaster type</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Power outage</strong> — flashlights, manual can opener, ice in freezer.</li>
               <li><strong>Hurricane</strong> — water, plywood, evacuation plan, pet carriers.</li>
               <li><strong>Earthquake</strong> — sturdy shoes by bed, water heater strap, secured shelves.</li>
@@ -113,7 +113,7 @@ export default function EmergencyKitChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground"><strong>Ready.gov</strong> — federal emergency prep, all free. <strong>Red Cross First Aid app</strong> — free, walks you through emergencies. <strong>FEMA app</strong> — alerts + shelters. Sign up for local emergency text alerts (most counties have them — search "[county] emergency alerts").</p>
+            <p className="text-base text-muted-foreground"><strong>Ready.gov</strong> — federal emergency prep, all free. <strong>Red Cross First Aid app</strong> — free, walks you through emergencies. <strong>FEMA app</strong> — alerts + shelters. Sign up for local emergency text alerts (most counties have them — search "[county] emergency alerts").</p>
           </CardContent>
         </Card>
       </main>

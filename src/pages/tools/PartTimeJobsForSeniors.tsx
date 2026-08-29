@@ -19,7 +19,7 @@ export default function PartTimeJobsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best senior-friendly jobs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Library page / clerk</strong> — quiet, gentle, $15-22/hr.</li>
               <li><strong>School crossing guard</strong> — 2 hours/day, $15-25/hr.</li>
               <li><strong>School bus driver</strong> — $20-30/hr, training provided. Often medical benefits.</li>
@@ -37,7 +37,7 @@ export default function PartTimeJobsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Work-from-home options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bookkeeping</strong> — for small businesses, $20-50/hr.</li>
               <li><strong>Customer service</strong> — many companies hire remote (Apple, Amazon, Discover).</li>
               <li><strong>Tutoring online</strong> — VIPKid, Outschool, $15-30/hr.</li>
@@ -52,7 +52,7 @@ export default function PartTimeJobsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior job sites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>RetirementJobs.com</strong> — age-friendly employers.</li>
               <li><strong>Workforce50.com</strong> — same idea.</li>
               <li><strong>AARP Job Board</strong> — senior-friendly jobs.</li>
@@ -66,7 +66,7 @@ export default function PartTimeJobsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tax + Social Security impact</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Earnings before full retirement age (67) reduce SS benefits if over $22,320 (2025).</li>
               <li>After full retirement age — earn unlimited, no SS reduction.</li>
               <li>Working seniors still pay Social Security + Medicare tax.</li>
@@ -79,7 +79,7 @@ export default function PartTimeJobsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best for staying social</h3>
-            <p className="text-sm text-muted-foreground">For many retirees, part-time work is more about social connection than money. Library, school, hotel desk = built-in community. Picks that get you OUT and around people often beat pure work-from-home for happiness + longevity.</p>
+            <p className="text-base text-muted-foreground">For many retirees, part-time work is more about social connection than money. Library, school, hotel desk = built-in community. Picks that get you OUT and around people often beat pure work-from-home for happiness + longevity.</p>
           </CardContent>
         </Card>
       </main>

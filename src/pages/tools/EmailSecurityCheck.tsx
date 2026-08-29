@@ -41,8 +41,8 @@ export default function EmailSecurityCheck() {
             <div className="text-center mb-6"><div className={`text-6xl font-bold mb-2 ${goodCount >= 6 ? 'text-green-500' : goodCount >= 4 ? 'text-amber-500' : 'text-red-500'}`}>{grade}</div><p className="text-lg font-medium">{goodCount} of {CHECKS.length} security measures in place</p></div>
             <div className="space-y-3">{CHECKS.map(c => { const yes = answers[c.id]; const isGood = c.yesIsGood ? yes : !yes; return (
               <div key={c.id} className={`rounded-lg p-4 border ${isGood ? 'bg-green-500/5 border-green-500/20' : 'bg-red-500/5 border-red-500/20'}`}>
-                <div className="flex items-center gap-2 mb-1">{isGood ? <CheckCircle className="h-4 w-4 text-green-500" /> : <AlertTriangle className="h-4 w-4 text-red-500" />}<span className="font-medium text-sm">{c.question.split('?')[0].split('(')[0].trim()}</span></div>
-                <p className="text-sm text-muted-foreground">{isGood ? c.goodAdvice : c.badAdvice}</p>
+                <div className="flex items-center gap-2 mb-1">{isGood ? <CheckCircle className="h-4 w-4 text-success-foreground" /> : <AlertTriangle className="h-4 w-4 text-danger-foreground" />}<span className="font-medium text-base">{c.question.split('?')[0].split('(')[0].trim()}</span></div>
+                <p className="text-base text-muted-foreground">{isGood ? c.goodAdvice : c.badAdvice}</p>
                 {!isGood && c.link && <a href={c.link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-xs text-primary font-medium mt-2 hover:underline">{c.link.label} <ExternalLink className="h-3 w-3" /></a>}
               </div>
             ); })}</div>
@@ -50,7 +50,7 @@ export default function EmailSecurityCheck() {
           </CardContent></Card>
         ) : (
           <Card><CardContent className="p-6">
-            <div className="flex items-center justify-between mb-6"><Badge variant="outline" className="gap-1"><Lock className="h-3.5 w-3.5" /> Question {currentIdx + 1}</Badge><span className="text-sm text-muted-foreground">{currentIdx + 1} of {CHECKS.length}</span></div>
+            <div className="flex items-center justify-between mb-6"><Badge variant="outline" className="gap-1"><Lock className="h-3.5 w-3.5" /> Question {currentIdx + 1}</Badge><span className="text-base text-muted-foreground">{currentIdx + 1} of {CHECKS.length}</span></div>
             <h2 className="text-lg font-semibold mb-6">{check.question}</h2>
             <div className="flex gap-3"><Button onClick={() => handleAnswer(true)} className="flex-1 gap-2"><CheckCircle className="h-4 w-4" /> Yes</Button><Button onClick={() => handleAnswer(false)} variant="outline" className="flex-1 gap-2"><XCircle className="h-4 w-4" /> No</Button></div>
           </CardContent></Card>

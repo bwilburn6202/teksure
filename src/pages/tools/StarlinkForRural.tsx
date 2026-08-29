@@ -19,7 +19,7 @@ export default function StarlinkForRural() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Starlink?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SpaceX satellite internet.</li>
               <li>Works ANYWHERE with sky view.</li>
               <li>No cables / cell towers needed.</li>
@@ -33,7 +33,7 @@ export default function StarlinkForRural() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hardware: $599 (sometimes promo $349).</li>
               <li>Standard plan: $120/mo.</li>
               <li>Roam plan (RV): $50-150/mo.</li>
@@ -47,7 +47,7 @@ export default function StarlinkForRural() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (1 hour)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Order at starlink.com.</li>
               <li>Box arrives in 1-4 weeks.</li>
               <li>Mount dish — clear sky view, north (US).</li>
@@ -62,7 +62,7 @@ export default function StarlinkForRural() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When Starlink helps seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Rural retirees — no cable available.</li>
               <li>Mountain / forest property.</li>
               <li>Snowbirds (RV plan).</li>
@@ -76,7 +76,7 @@ export default function StarlinkForRural() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Limits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bad weather can degrade.</li>
               <li>Trees blocking sky = problems.</li>
               <li>Large dish needs mounting.</li>
@@ -90,7 +90,7 @@ export default function StarlinkForRural() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Other rural options</h3>
-            <p className="text-sm text-muted-foreground"><strong>Verizon LTE Home Internet</strong> — $25-60/mo if good signal. <strong>T-Mobile Home Internet</strong> — $50/mo. <strong>HughesNet</strong> — older satellite, slower. <strong>Viasat</strong> — older satellite. Check Starlink website for service map. Try competitors first if cheaper.</p>
+            <p className="text-base text-muted-foreground"><strong>Verizon LTE Home Internet</strong> — $25-60/mo if good signal. <strong>T-Mobile Home Internet</strong> — $50/mo. <strong>HughesNet</strong> — older satellite, slower. <strong>Viasat</strong> — older satellite. Check Starlink website for service map. Try competitors first if cheaper.</p>
           </CardContent>
         </Card>
       </main>

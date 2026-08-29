@@ -78,33 +78,33 @@ export default function ChronicPainDailyLog() {
   const topLocations = Object.entries(locationCounts).sort((a, b) => b[1] - a[1]).slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Chronic Pain Daily Log | TekSure" description="Track pain severity, location, and what helped or hurt. See your 14-day pattern. Bring the print to your doctor for a more useful conversation than 'it just hurts a lot'." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Activity className="h-7 w-7 text-red-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Chronic Pain Log</h1>
+            <Activity className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Chronic Pain Log</h1>
           </div>
-          <p className="text-gray-600 text-lg">One entry a day. After 2 weeks, you have an honest picture of your pain and what helps. Bring the print to your doctor.</p>
+          <p className="text-muted-foreground text-lg">One entry a day. After 2 weeks, you have an honest picture of your pain and what helps. Bring the print to your doctor.</p>
         </div>
 
         {recent.length > 0 && (
-          <Card className="mb-4 bg-red-50 border-red-200">
+          <Card className="mb-4 bg-danger border-danger-foreground/25">
             <CardContent className="py-3 px-4 text-center">
-              <p className="text-xs text-gray-600">14-day average pain ({recent.length} entries)</p>
-              <p className="text-3xl font-bold text-red-700">{avgSeverity.toFixed(1)} / 10</p>
+              <p className="text-sm text-muted-foreground">14-day average pain ({recent.length} entries)</p>
+              <p className="text-3xl font-bold text-danger-foreground">{avgSeverity.toFixed(1)} / 10</p>
             </CardContent>
           </Card>
         )}
 
         {topLocations.length > 0 && (
-          <Card className="mb-4 bg-amber-50 border-amber-200">
-            <CardHeader className="pb-1 pt-3"><CardTitle className="text-base text-amber-900">Pain locations (last 14 days)</CardTitle></CardHeader>
+          <Card className="mb-4 bg-warn border-warn-foreground/25">
+            <CardHeader className="pb-1 pt-3"><CardTitle className="text-base text-warn-foreground">Pain locations (last 14 days)</CardTitle></CardHeader>
             <CardContent className="pb-3">
               <div className="flex flex-wrap gap-2">
                 {topLocations.map(([l, n]) => (
-                  <Badge key={l} variant="outline" className="text-sm bg-white border-amber-300 text-amber-900">{l} - {n}x</Badge>
+                  <Badge key={l} variant="outline" className="text-sm bg-card border-warn-foreground/25 text-warn-foreground">{l} - {n}x</Badge>
                 ))}
               </div>
             </CardContent>
@@ -112,14 +112,14 @@ export default function ChronicPainDailyLog() {
         )}
 
         <Card className="mb-4 print:hidden">
-          <CardHeader className="pb-2 pt-3"><CardTitle className="text-lg flex items-center gap-2"><PlusCircle className="h-5 w-5 text-red-700" />Log today</CardTitle></CardHeader>
+          <CardHeader className="pb-2 pt-3"><CardTitle className="text-lg flex items-center gap-2"><PlusCircle className="h-5 w-5 text-danger-foreground" />Log today</CardTitle></CardHeader>
           <CardContent className="space-y-2">
             <div className="grid grid-cols-2 gap-2">
               <Input type="date" value={form.date} onChange={e => setForm(f => ({ ...f, date: e.target.value }))} />
               <Input type="time" value={form.time} onChange={e => setForm(f => ({ ...f, time: e.target.value }))} />
             </div>
             <div>
-              <label className="text-sm font-medium text-gray-700">Pain today (1 = barely there, 10 = worst imaginable)</label>
+              <label className="text-base font-medium text-foreground">Pain today (1 = barely there, 10 = worst imaginable)</label>
               <div className="flex flex-wrap gap-1 mt-1">
                 {([1, 2, 3, 4, 5, 6, 7, 8, 9, 10] as Severity[]).map(s => (
                   <Button key={s} type="button" size="sm" variant={form.severity === s ? "default" : "outline"} onClick={() => setForm(f => ({ ...f, severity: s }))} className="w-10">
@@ -129,7 +129,7 @@ export default function ChronicPainDailyLog() {
               </div>
             </div>
             <div>
-              <label className="text-sm font-medium text-gray-700">Where (tap all that apply)</label>
+              <label className="text-base font-medium text-foreground">Where (tap all that apply)</label>
               <div className="flex flex-wrap gap-1 mt-1">
                 {LOCATIONS.map(l => (
                   <Button key={l} type="button" size="sm" variant={form.locations.includes(l) ? "default" : "outline"} onClick={() => toggleLocation(l)}>
@@ -161,10 +161,10 @@ export default function ChronicPainDailyLog() {
                   <div key={e.id} className="py-2 text-sm">
                     <div className="flex items-center justify-between gap-2">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-gray-500 text-xs">{e.date} {e.time}</span>
+                        <span className="text-muted-foreground text-sm">{e.date} {e.time}</span>
                         <Badge variant="outline" className={`text-xs ${severityTone(e.severity)}`}>Pain {e.severity}/10</Badge>
                       </div>
-                      <Button variant="ghost" size="icon" onClick={() => remove(e.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                      <Button variant="ghost" size="icon" onClick={() => remove(e.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                         <Trash2 className="h-3 w-3" />
                       </Button>
                     </div>
@@ -173,9 +173,9 @@ export default function ChronicPainDailyLog() {
                         {e.locations.map(l => <Badge key={l} variant="secondary" className="text-xs">{l}</Badge>)}
                       </div>
                     )}
-                    {e.whatHelped && <p className="text-xs text-emerald-700 mt-0.5"><span className="font-semibold">Helped:</span> {e.whatHelped}</p>}
-                    {e.whatHurt && <p className="text-xs text-red-700"><span className="font-semibold">Worse:</span> {e.whatHurt}</p>}
-                    {e.note && <p className="text-xs text-gray-500 italic mt-0.5">{e.note}</p>}
+                    {e.whatHelped && <p className="text-sm text-success-foreground mt-0.5"><span className="font-semibold">Helped:</span> {e.whatHelped}</p>}
+                    {e.whatHurt && <p className="text-sm text-danger-foreground"><span className="font-semibold">Worse:</span> {e.whatHurt}</p>}
+                    {e.note && <p className="text-sm text-muted-foreground italic mt-0.5">{e.note}</p>}
                   </div>
                 ))}
               </div>
@@ -183,6 +183,6 @@ export default function ChronicPainDailyLog() {
           </Card>
         )}
       </div>
-    </div>
+    </main>
   );
 }

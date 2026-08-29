@@ -111,7 +111,7 @@ function TechnicianDirectory() {
             <Card className="rounded-2xl border border-border bg-card">
               <CardContent className="p-6 text-center">
                 <p className="font-semibold mb-1">No technician profiles yet</p>
-                <p className="text-muted-foreground text-sm">
+                <p className="text-muted-foreground text-base">
                   We are still building this directory. In the meantime, you can request help
                   and we will match you with someone.
                 </p>
@@ -129,12 +129,12 @@ function TechnicianDirectory() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-1.5">
                         <h3 className="font-semibold text-sm">{tech.name}</h3>
-                        {tech.verified && <span title="ID Verified"><Shield className="h-3 w-3 text-blue-500 shrink-0" aria-label="ID Verified" /></span>}
+                        {tech.verified && <span title="ID Verified"><Shield className="h-3 w-3 text-info-foreground shrink-0" aria-label="ID Verified" /></span>}
                       </div>
-                      <p className="text-xs text-muted-foreground">{tech.title}</p>
+                      <p className="text-sm text-muted-foreground">{tech.title}</p>
                       <div className="flex items-center gap-1 mt-1">
                         <StarRating rating={tech.rating} />
-                        <span className="text-xs text-muted-foreground">{tech.rating} ({tech.reviewCount})</span>
+                        <span className="text-sm text-muted-foreground">{tech.rating} ({tech.reviewCount})</span>
                       </div>
                     </div>
                   </div>
@@ -158,7 +158,7 @@ function TechnicianDirectory() {
           </div>
 
           <div className="text-center mt-8">
-            <p className="text-muted-foreground text-sm mb-3">Ready to book?</p>
+            <p className="text-muted-foreground text-base mb-3">Ready to book?</p>
             <Button asChild size="lg" className="gap-2 rounded-xl">
               <Link to="/book">Book a Technician <ArrowRight className="h-4 w-4" /></Link>
             </Button>
@@ -207,16 +207,16 @@ export default function TechnicianProfile() {
                   <div className="flex items-center gap-2 flex-wrap mb-1">
                     <h1 className="text-xl font-bold">{tech.name}</h1>
                     {tech.verified && (
-                      <span className="flex items-center gap-1 text-xs text-blue-600 bg-blue-50 dark:bg-blue-900/20 px-2 py-0.5 rounded-full border border-blue-200 dark:border-blue-800">
+                      <span className="flex items-center gap-1 text-xs text-info-foreground bg-info px-2 py-0.5 rounded-full border border-info-foreground/25 ">
                         <Shield className="h-3 w-3" /> ID Verified
                       </span>
                     )}
                   </div>
-                  <p className="text-sm text-muted-foreground mb-2">{tech.title}</p>
+                  <p className="text-base text-muted-foreground mb-2">{tech.title}</p>
                   <div className="flex items-center gap-2 flex-wrap">
                     <StarRating rating={tech.rating} size="lg" />
                     <span className="font-semibold">{tech.rating}</span>
-                    <span className="text-sm text-muted-foreground">({tech.reviewCount} reviews)</span>
+                    <span className="text-base text-muted-foreground">({tech.reviewCount} reviews)</span>
                   </div>
                   <div className="flex items-center gap-1 mt-2 text-xs text-muted-foreground">
                     <MapPin className="h-3 w-3" /> {tech.location}
@@ -244,8 +244,8 @@ export default function TechnicianProfile() {
               <Card key={stat.label} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-4 text-center">
                   <stat.icon className="h-5 w-5 text-primary mx-auto mb-1.5" />
-                  <p className="font-bold text-sm">{stat.value}</p>
-                  <p className="text-xs text-muted-foreground">{stat.label}</p>
+                  <p className="font-bold text-base">{stat.value}</p>
+                  <p className="text-sm text-muted-foreground">{stat.label}</p>
                 </CardContent>
               </Card>
             ))}
@@ -255,8 +255,8 @@ export default function TechnicianProfile() {
           <Card className="mb-6 rounded-2xl border border-border bg-card">
             <CardContent className="p-5">
               <h2 className="font-semibold mb-3">About {tech.name.split(' ')[0]}</h2>
-              <p className="text-sm text-muted-foreground leading-relaxed">{tech.bio}</p>
-              <p className="text-xs text-muted-foreground mt-3">TekSure member since {tech.memberSince}</p>
+              <p className="text-base text-muted-foreground leading-relaxed">{tech.bio}</p>
+              <p className="text-sm text-muted-foreground mt-3">TekSure member since {tech.memberSince}</p>
             </CardContent>
           </Card>
 
@@ -281,21 +281,21 @@ export default function TechnicianProfile() {
                 <h2 className="font-semibold">Customer Reviews</h2>
                 <div className="flex items-center gap-1.5">
                   <StarRating rating={tech.rating} />
-                  <span className="text-sm font-medium">{tech.rating}</span>
-                  <span className="text-xs text-muted-foreground">({tech.reviewCount})</span>
+                  <span className="text-base font-medium">{tech.rating}</span>
+                  <span className="text-sm text-muted-foreground">({tech.reviewCount})</span>
                 </div>
               </div>
               <div className="space-y-4">
                 {tech.reviews.map((review, i) => (
                   <div key={i} className={`pb-4 ${i < tech.reviews.length - 1 ? 'border-b border-border' : ''}`}>
                     <div className="flex items-center justify-between mb-1">
-                      <span className="font-medium text-sm">{review.author}</span>
-                      <span className="text-xs text-muted-foreground">
+                      <span className="font-medium text-base">{review.author}</span>
+                      <span className="text-sm text-muted-foreground">
                         {new Date(review.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}
                       </span>
                     </div>
                     <StarRating rating={review.rating} />
-                    <p className="text-sm text-muted-foreground mt-1.5 leading-relaxed">{review.text}</p>
+                    <p className="text-base text-muted-foreground mt-1.5 leading-relaxed">{review.text}</p>
                   </div>
                 ))}
               </div>
@@ -307,7 +307,7 @@ export default function TechnicianProfile() {
             <CardContent className="p-5 flex flex-col sm:flex-row items-center gap-4">
               <div className="flex-1">
                 <p className="font-semibold">Book {tech.name.split(' ')[0]} for your problem</p>
-                <p className="text-sm text-muted-foreground mt-0.5">From ${FIRST_HOUR_PRICE} for the first hour. No fix, no charge.</p>
+                <p className="text-base text-muted-foreground mt-0.5">From ${FIRST_HOUR_PRICE} for the first hour. No fix, no charge.</p>
               </div>
               <Button asChild className="gap-2 shrink-0 rounded-xl">
                 <Link to="/book">Book now <ArrowRight className="h-4 w-4" /></Link>

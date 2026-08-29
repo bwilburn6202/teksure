@@ -175,7 +175,7 @@ export default function UsbStorageGuide() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <HardDrive className="h-8 w-8 text-blue-600" />
+                <HardDrive className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">External Storage Guide</h1>
@@ -190,8 +190,8 @@ export default function UsbStorageGuide() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">The short version</p>
-              <ul className="space-y-1.5 text-sm text-muted-foreground">
+              <p className="text-base font-semibold mb-2">The short version</p>
+              <ul className="space-y-1.5 text-base text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span>For one envelope of tax files: a USB flash drive.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span>For a full computer backup: an external hard drive.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span>For working with video or fast transfers: an external SSD.</span></li>
@@ -201,13 +201,13 @@ export default function UsbStorageGuide() {
             </CardContent>
           </Card>
 
-          <Card className="border-border shadow-sm mb-6 bg-amber-50 dark:bg-amber-900/20 border-amber-200 dark:border-amber-800">
+          <Card className="border-border shadow-sm mb-6 bg-warn border-warn-foreground/25 ">
             <CardContent className="p-5">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-600 dark:text-amber-300 shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm font-semibold text-amber-900 dark:text-amber-100 mb-1">Watch out for fake drives on Amazon</p>
-                  <p className="text-sm text-amber-900/90 dark:text-amber-100/90">
+                  <p className="text-base font-semibold text-warn-foreground mb-1">Watch out for fake drives on Amazon</p>
+                  <p className="text-base text-amber-900/90 dark:text-amber-100/90">
                     Many cheap "1TB" or "2TB" USB drives sold by no-name sellers are counterfeit — they show the wrong size to your computer and lose your files. For storage, buy only from sellers marked "Sold by Amazon," or shop at Best Buy or Costco. SanDisk, Samsung, and Western Digital are the safe brand names.
                   </p>
                 </div>
@@ -215,7 +215,7 @@ export default function UsbStorageGuide() {
             </CardContent>
           </Card>
 
-          <p className="text-sm font-semibold mb-3">The five types, side by side</p>
+          <p className="text-base font-semibold mb-3">The five types, side by side</p>
           <div className="space-y-3 mb-8">
             {STORAGE_TYPES.map((type) => {
               const isOpen = openType === type.id;
@@ -240,7 +240,7 @@ export default function UsbStorageGuide() {
                         </div>
                         <ChevronRight className={`h-5 w-5 text-muted-foreground shrink-0 transition-transform ${isOpen ? 'rotate-90' : ''}`} />
                       </div>
-                      <p className="text-sm text-muted-foreground">{type.ease}</p>
+                      <p className="text-base text-muted-foreground">{type.ease}</p>
                     </button>
 
                     {isOpen && (
@@ -249,7 +249,7 @@ export default function UsbStorageGuide() {
                           <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">Best for</p>
                           <ul className="space-y-1.5">
                             {type.whenToUse.map((use, i) => (
-                              <li key={i} className="flex gap-2 text-sm">
+                              <li key={i} className="flex gap-2 text-base">
                                 <span className="text-primary shrink-0">•</span>
                                 <span>{use}</span>
                               </li>
@@ -258,8 +258,8 @@ export default function UsbStorageGuide() {
                         </div>
                         <div className="p-3 rounded-lg bg-primary/5 border border-primary/20">
                           <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-1">We recommend</p>
-                          <p className="text-sm font-medium">{type.recommend.name}</p>
-                          <p className="text-xs text-muted-foreground mt-0.5">Around {type.recommend.price}</p>
+                          <p className="text-base font-medium">{type.recommend.name}</p>
+                          <p className="text-sm text-muted-foreground mt-0.5">Around {type.recommend.price}</p>
                           <a
                             href={type.recommend.link}
                             target="_blank"
@@ -277,14 +277,14 @@ export default function UsbStorageGuide() {
             })}
           </div>
 
-          <p className="text-sm font-semibold mb-3">When to pick what</p>
+          <p className="text-base font-semibold mb-3">When to pick what</p>
           <div className="space-y-3 mb-8">
             {SCENARIOS.map((s) => (
               <Card key={s.id} className="border-border">
                 <CardContent className="p-5">
-                  <p className="font-semibold text-sm mb-1">{s.question}</p>
+                  <p className="font-semibold text-base mb-1">{s.question}</p>
                   <Badge variant="outline" className="mb-2">{s.pick}</Badge>
-                  <p className="text-sm text-muted-foreground">{s.why}</p>
+                  <p className="text-base text-muted-foreground">{s.why}</p>
                 </CardContent>
               </Card>
             ))}
@@ -292,16 +292,16 @@ export default function UsbStorageGuide() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Quick Tip: the 3-2-1 rule</p>
-              <p className="text-sm text-muted-foreground mb-2">
+              <p className="text-base font-semibold mb-2">Quick Tip: the 3-2-1 rule</p>
+              <p className="text-base text-muted-foreground mb-2">
                 For anything you cannot afford to lose (photos, tax records, family videos), keep:
               </p>
-              <ul className="space-y-1.5 text-sm text-muted-foreground">
+              <ul className="space-y-1.5 text-base text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span><strong>3 copies</strong> of the file</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span>On <strong>2 different kinds of storage</strong> (your computer plus an external drive, for example)</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span><strong>1 copy off-site</strong> (cloud, or a drive at a relative's house)</span></li>
               </ul>
-              <p className="text-xs text-muted-foreground mt-3">
+              <p className="text-sm text-muted-foreground mt-3">
                 A burglary, a fire, or a hard-drive failure cannot wipe out all three at once.
               </p>
             </CardContent>
@@ -309,8 +309,8 @@ export default function UsbStorageGuide() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A few buying notes</p>
-              <ul className="space-y-1.5 text-sm text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A few buying notes</p>
+              <ul className="space-y-1.5 text-base text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span>Modern computers use USB-C ports. If your laptop is from 2020 or newer, look for a drive with a USB-C end (or a small adapter).</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span>iPhones and most Android phones do not have a USB-A port. To plug in a flash drive, you need one with a Lightning, USB-C, or micro-USB end.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span>For a Mac, set the drive to "ExFAT" format if you also want to use it on a Windows computer. Most drives come this way out of the box.</span></li>
@@ -332,16 +332,16 @@ export default function UsbStorageGuide() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/backup-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Backup Wizard</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Step-by-step plan to back up your phone and computer.</p>
+                <p className="font-medium text-base">Backup Wizard</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Step-by-step plan to back up your phone and computer.</p>
               </Link>
               <Link to="/tools/photo-library-tips" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Photo Library Tips</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Sort, save, and share photos without losing any.</p>
+                <p className="font-medium text-base">Photo Library Tips</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Sort, save, and share photos without losing any.</p>
               </Link>
               <Link to="/tools/storage-cleanup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Storage Cleanup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Free up space on a phone or laptop that is full.</p>
+                <p className="font-medium text-base">Storage Cleanup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Free up space on a phone or laptop that is full.</p>
               </Link>
             </div>
           </div>

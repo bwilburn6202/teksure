@@ -19,7 +19,7 @@ export default function ProstateScreeningSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Two main tests</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>PSA blood test</strong> — measures prostate-specific antigen.</li>
               <li><strong>DRE (digital rectal exam)</strong> — physical exam.</li>
               <li>Combined for best detection.</li>
@@ -32,7 +32,7 @@ export default function ProstateScreeningSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to screen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Age 50</strong> — start discussion average risk.</li>
               <li><strong>Age 45</strong> — Black men, family history.</li>
               <li><strong>Age 40</strong> — strong family history.</li>
@@ -46,7 +46,7 @@ export default function ProstateScreeningSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">PSA controversy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>High PSA doesn&apos;t mean cancer (also BPH, infection).</li>
               <li>False positives common.</li>
               <li>Leads to unnecessary biopsies.</li>
@@ -60,7 +60,7 @@ export default function ProstateScreeningSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch + wait</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many slow-growing prostate cancers.</li>
               <li>Active surveillance — monitor without immediate treatment.</li>
               <li>Many die WITH not FROM prostate cancer.</li>
@@ -74,7 +74,7 @@ export default function ProstateScreeningSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Symptoms to mention</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Trouble urinating.</li>
               <li>Weak / interrupted stream.</li>
               <li>Frequent urination at night.</li>
@@ -89,7 +89,7 @@ export default function ProstateScreeningSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Make informed decision</h3>
-            <p className="text-sm text-muted-foreground">Read American Cancer Society guidelines (cancer.org). Discuss with primary doctor. Consider urologist consultation. Strong family history = screen. Most senior men benefit from at least baseline PSA. Discuss every visit. Free with Medicare.</p>
+            <p className="text-base text-muted-foreground">Read American Cancer Society guidelines (cancer.org). Discuss with primary doctor. Consider urologist consultation. Strong family history = screen. Most senior men benefit from at least baseline PSA. Discuss every visit. Free with Medicare.</p>
           </CardContent>
         </Card>
       </main>

@@ -30,10 +30,10 @@ export default function StorageUnitPicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function StorageUnitPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>5×10 typical for 1-2 bedroom downsize</strong>.</li>
               <li><strong>10×10 for 3 bedroom</strong>.</li>
               <li><strong>10×20 for 4+ bedroom</strong>.</li>
@@ -54,17 +54,17 @@ export default function StorageUnitPicks() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t store too long</h2>
-            <p className="text-sm">Average senior pays $100-200/mo. Over 5 years = $6-12K. Most "stored" stuff stays stored forever — kids never want it. Set 6-12 month limit. After that, sort + dispose.</p>
+            <p className="text-base">Average senior pays $100-200/mo. Over 5 years = $6-12K. Most "stored" stuff stays stored forever — kids never want it. Set 6-12 month limit. After that, sort + dispose.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">PODS for moves</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>PODS drops container at home.</li>
               <li>You fill at your pace.</li>
               <li>They store at warehouse OR move to new home.</li>
@@ -77,7 +77,7 @@ export default function StorageUnitPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Insurance</h3>
-            <p className="text-sm text-muted-foreground">Storage company insurance is OPTIONAL but recommended. $10-30/mo. Or check if homeowners/renters insurance covers off-site storage. Don&apos;t store priceless heirlooms — fire / flood happens.</p>
+            <p className="text-base text-muted-foreground">Storage company insurance is OPTIONAL but recommended. $10-30/mo. Or check if homeowners/renters insurance covers off-site storage. Don&apos;t store priceless heirlooms — fire / flood happens.</p>
           </CardContent>
         </Card>
       </main>

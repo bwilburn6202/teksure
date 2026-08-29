@@ -22,7 +22,7 @@ export default function SeniorPrescriptionApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mail order</h2><p>Medicare Part D often allows 90-day mail order. No copay sometimes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Reminder apps</h2><p>Medisafe, MyTherapy. Different from pharmacy app — for taking pills.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Drug interactions</h2><p>Drugs.com Drug Interaction Checker is free. Check before adding new meds.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Compare GoodRx vs your insurance for every prescription. Sometimes GoodRx wins.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Compare GoodRx vs your insurance for every prescription. Sometimes GoodRx wins.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

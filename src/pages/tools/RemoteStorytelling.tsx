@@ -30,10 +30,10 @@ export default function RemoteStorytelling() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{t.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{t.cost}</span>
+                  <span className="text-base font-semibold text-primary">{t.cost}</span>
                 </div>
-                <p className="text-sm">{t.best}</p>
-                <p className="text-sm text-muted-foreground">{t.good}</p>
+                <p className="text-base">{t.best}</p>
+                <p className="text-base text-muted-foreground">{t.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function RemoteStorytelling() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Story prompt ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"When daddy was your age, he..."</li>
               <li>"My first job was..."</li>
               <li>"The day you were born..."</li>
@@ -58,7 +58,7 @@ export default function RemoteStorytelling() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Make it fun for kids</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Show old photos while telling.</li>
               <li>Ask kid to GUESS what happened next.</li>
               <li>Use voices for different characters.</li>
@@ -72,7 +72,7 @@ export default function RemoteStorytelling() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Build a library</h3>
-            <p className="text-sm text-muted-foreground">Record 50 stories over 1-2 years. Save in shared family folder. Grandkids will play them as adults. Their kids will play them. Multi-generation gift.</p>
+            <p className="text-base text-muted-foreground">Record 50 stories over 1-2 years. Save in shared family folder. Grandkids will play them as adults. Their kids will play them. Multi-generation gift.</p>
           </CardContent>
         </Card>
       </main>

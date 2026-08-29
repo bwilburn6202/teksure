@@ -19,8 +19,8 @@ export default function AmazonShoppingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">"Sold by Amazon" vs 3rd party</h2>
-            <p className="text-sm">Many products on Amazon are sold by 3rd-party sellers — Amazon just lists them. Quality and returns vary. Look right under the price for who SELLS it:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Many products on Amazon are sold by 3rd-party sellers — Amazon just lists them. Quality and returns vary. Look right under the price for who SELLS it:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li><strong>"Sold by Amazon"</strong> — best. Amazon&apos;s return policy.</li>
               <li><strong>"Ships from Amazon, sold by [name]"</strong> — OK. Returnable, faster.</li>
               <li><strong>"Sold by [brand]"</strong> + "Fulfilled by Amazon" — usually OK if brand is real.</li>
@@ -32,7 +32,7 @@ export default function AmazonShoppingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spot fake reviews</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use <strong>Fakespot</strong> or <strong>Review Meta</strong> — paste Amazon link, get an honesty grade.</li>
               <li>Sort reviews by "Most recent" — old reviews may be from a different product (review hijacking).</li>
               <li>Read 3-star reviews — most honest. 1- and 5-stars often fake.</li>
@@ -45,7 +45,7 @@ export default function AmazonShoppingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find the real price</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>CamelCamelCamel.com</strong> or <strong>Keepa</strong> — paste Amazon link, see price history. Reveals fake "sale" prices.</li>
               <li>Many "$50, save 40%" items have been $30 for months.</li>
               <li>Honey extension — applies coupon codes at checkout automatically.</li>
@@ -58,7 +58,7 @@ export default function AmazonShoppingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t let kids/grandkids see your Amazon</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Sign-In &amp; Security → Voice Purchase PIN ON.</li>
               <li>Disable "1-Click Ordering" — go to Account → 1-Click Settings.</li>
               <li>Browser auto-fill OFF on shared computers.</li>
@@ -71,7 +71,7 @@ export default function AmazonShoppingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Returns are easier than you think</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Amazon app or website → Your Orders.</li>
               <li>Find item → "Return or replace items".</li>
               <li>Pick reason. Pick refund or replacement.</li>
@@ -85,7 +85,7 @@ export default function AmazonShoppingTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Subscribe &amp; Save</h3>
-            <p className="text-sm text-muted-foreground">For things you buy regularly — vitamins, paper towels, coffee, shampoo — Subscribe &amp; Save gives 5-15% off. Skip or cancel any month free. Ships every 1-6 months. Sign up at amazon.com/sas. Don&apos;t lock in items you only buy occasionally.</p>
+            <p className="text-base text-muted-foreground">For things you buy regularly — vitamins, paper towels, coffee, shampoo — Subscribe &amp; Save gives 5-15% off. Skip or cancel any month free. Ships every 1-6 months. Sign up at amazon.com/sas. Don&apos;t lock in items you only buy occasionally.</p>
           </CardContent>
         </Card>
       </main>

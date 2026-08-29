@@ -19,7 +19,7 @@ export default function GoogleAssistantTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Activate</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Android</strong> — &quot;Hey Google&quot; built in.</li>
               <li><strong>iPhone</strong> — install Google Assistant app.</li>
               <li><strong>Nest devices</strong> — built in.</li>
@@ -32,7 +32,7 @@ export default function GoogleAssistantTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily commands</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Hey Google, what&apos;s 25% of $80?&quot;</li>
               <li>&quot;Hey Google, set alarm 7am.&quot;</li>
               <li>&quot;Hey Google, call mom.&quot;</li>
@@ -48,7 +48,7 @@ export default function GoogleAssistantTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health + safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Hey Google, call 911&quot; — works hands-free.</li>
               <li>&quot;Hey Google, find nearest pharmacy.&quot;</li>
               <li>&quot;Hey Google, am I out of groceries?&quot; (if shopping list set up).</li>
@@ -62,7 +62,7 @@ export default function GoogleAssistantTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hand-free helper</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cooking? &quot;Hey Google, set timer 30 min.&quot;</li>
               <li>Driving? &quot;Hey Google, navigate home.&quot;</li>
               <li>Hands wet/messy? Voice control.</li>
@@ -75,7 +75,7 @@ export default function GoogleAssistantTraining() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly settings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Slow down speech in settings.</li>
               <li>Larger text on screen results.</li>
               <li>Continue Conversation — don&apos;t need &quot;Hey Google&quot; every time.</li>
@@ -88,7 +88,7 @@ export default function GoogleAssistantTraining() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Practice helps</h3>
-            <p className="text-sm text-muted-foreground">First week — try 5 commands a day. By week 4 — using daily for many tasks. Senior tech win — voice removes complexity. Family member can help set up Routines for common needs (medication times, exercise reminders, etc.).</p>
+            <p className="text-base text-muted-foreground">First week — try 5 commands a day. By week 4 — using daily for many tasks. Senior tech win — voice removes complexity. Family member can help set up Routines for common needs (medication times, exercise reminders, etc.).</p>
           </CardContent>
         </Card>
       </main>

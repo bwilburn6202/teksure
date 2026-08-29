@@ -30,10 +30,10 @@ export default function MedicationDeliveryServices() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function MedicationDeliveryServices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">90-day mail-order saves money</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most insurance plans charge 60-day copay for 90-day supply via mail.</li>
               <li>Saves 33% on copays vs monthly pickup.</li>
               <li>Plus saves 12 trips to pharmacy/year.</li>
@@ -55,7 +55,7 @@ export default function MedicationDeliveryServices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When mail-order WON&apos;T work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Controlled substances (some opioids, some ADHD meds) — must pick up at pharmacy.</li>
               <li>Insulin in some states — temperature-sensitive, hand-deliver.</li>
               <li>Brand-new prescription before insurance approves — get from local pharmacy first.</li>
@@ -67,7 +67,7 @@ export default function MedicationDeliveryServices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up Pillpack</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>amazon.com/pillpack</strong>.</li>
               <li>Enter insurance + medications.</li>
               <li>Pillpack contacts your doctor + transfers prescriptions.</li>
@@ -82,7 +82,7 @@ export default function MedicationDeliveryServices() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t skip your local pharmacist</h3>
-            <p className="text-sm text-muted-foreground">Even with mail-order, build relationship with ONE local pharmacist (Costco, CVS, or independent). They&apos;re your free medication consultant. Free interaction checks. Often help with insurance issues mail-order can&apos;t.</p>
+            <p className="text-base text-muted-foreground">Even with mail-order, build relationship with ONE local pharmacist (Costco, CVS, or independent). They&apos;re your free medication consultant. Free interaction checks. Often help with insurance issues mail-order can&apos;t.</p>
           </CardContent>
         </Card>
       </main>

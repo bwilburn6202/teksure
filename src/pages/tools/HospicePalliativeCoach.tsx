@@ -19,32 +19,32 @@ export default function HospicePalliativeCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">The difference</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li><strong>Palliative care</strong> — comfort + symptom relief at any stage. Compatible with active treatment for cancer, heart failure, etc.</li>
               <li><strong>Hospice</strong> — focus on comfort when life expectancy is 6 months or less. Treatment that aims to cure stops; comfort care continues.</li>
             </ul>
-            <p className="text-sm mt-2">Both are MOSTLY covered by Medicare with little out-of-pocket cost.</p>
+            <p className="text-base mt-2">Both are MOSTLY covered by Medicare with little out-of-pocket cost.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When palliative care helps (any time)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Cancer treatment with side effects (pain, nausea, fatigue).</li>
               <li>Advanced heart failure, COPD, kidney disease.</li>
               <li>Parkinson\'s, ALS, Alzheimer\'s.</li>
               <li>Complex chronic illness with multiple symptoms.</li>
               <li>Family burden of caregiving.</li>
             </ul>
-            <p className="text-sm mt-2">Studies show palliative care can EXTEND life — people feel better, eat better, fight better.</p>
+            <p className="text-base mt-2">Studies show palliative care can EXTEND life — people feel better, eat better, fight better.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When hospice helps</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Two doctors estimate ≤6 months if disease takes its natural course.</li>
               <li>You\'ve decided not to pursue more curative treatment.</li>
               <li>Goal: comfort, dignity, time at home with family.</li>
@@ -57,7 +57,7 @@ export default function HospicePalliativeCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What hospice covers</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Nurse visits (regular and on-call 24/7).</li>
               <li>Doctor visits.</li>
               <li>Aide for personal care.</li>
@@ -68,14 +68,14 @@ export default function HospicePalliativeCoach() {
               <li>Volunteer services (companionship, errands).</li>
               <li>Bereavement support for family up to 13 months after death.</li>
             </ul>
-            <p className="text-sm mt-2">Almost no out-of-pocket for Medicare patients. The largest unfilled need is family caregiver support — an aide may visit only a few hours a day.</p>
+            <p className="text-base mt-2">Almost no out-of-pocket for Medicare patients. The largest unfilled need is family caregiver support — an aide may visit only a few hours a day.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to get started</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Ask your doctor: "Would I qualify for palliative care or hospice?" — directly.</li>
               <li>Ask for a referral.</li>
               <li>Compare local hospice agencies at <strong>medicare.gov/care-compare</strong>.</li>
@@ -89,7 +89,7 @@ export default function HospicePalliativeCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>National Hospice and Palliative Care Organization (nhpco.org)</strong> — biggest national resource. <strong>Get Palliative Care (getpalliativecare.org)</strong> — find local providers. <strong>Care Compare on medicare.gov</strong> — quality ratings for every Medicare-certified hospice in the US.</p>
+            <p className="text-base text-muted-foreground"><strong>National Hospice and Palliative Care Organization (nhpco.org)</strong> — biggest national resource. <strong>Get Palliative Care (getpalliativecare.org)</strong> — find local providers. <strong>Care Compare on medicare.gov</strong> — quality ratings for every Medicare-certified hospice in the US.</p>
           </CardContent>
         </Card>
       </main>

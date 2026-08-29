@@ -19,7 +19,7 @@ export default function BlendedFamilyTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common blended family situations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Late-in-life marriage with new partner&apos;s family.</li>
               <li>Adult kids&apos; second marriages — new step-grandkids.</li>
               <li>Mixed inheritance + estate complications.</li>
@@ -33,7 +33,7 @@ export default function BlendedFamilyTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tech that helps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Family Calendar</strong> — covers all branches, no surprises.</li>
               <li><strong>Group photo album</strong> — Apple Photos, Google Photos shared library.</li>
               <li><strong>Family Wallet / Trustworthy</strong> — track who manages what across complex family.</li>
@@ -46,7 +46,7 @@ export default function BlendedFamilyTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Estate planning for blended</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Update will</strong> — explicitly name step-children if intended.</li>
               <li><strong>QTIP trust</strong> — protects spouse + bio kids both.</li>
               <li><strong>Beneficiary forms</strong> — confirm spouse is OR isn&apos;t beneficiary based on intent.</li>
@@ -60,7 +60,7 @@ export default function BlendedFamilyTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step-grandkid relationships</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t force "Grandma/Grandpa" — let kids choose what to call you.</li>
               <li>Give equal attention as bio grandkids.</li>
               <li>Equal gifts at holidays/birthdays.</li>
@@ -74,7 +74,7 @@ export default function BlendedFamilyTech() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground"><strong>National Stepfamily Resource Center</strong> — stepfamilies.info. Free articles + counseling referrals. <strong>Family therapy</strong> covered by most insurance — even occasional sessions help. Most blended families need 5-7 years to fully integrate. Be patient.</p>
+            <p className="text-base text-muted-foreground"><strong>National Stepfamily Resource Center</strong> — stepfamilies.info. Free articles + counseling referrals. <strong>Family therapy</strong> covered by most insurance — even occasional sessions help. Most blended families need 5-7 years to fully integrate. Be patient.</p>
           </CardContent>
         </Card>
       </main>

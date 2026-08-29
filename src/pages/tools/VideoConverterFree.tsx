@@ -16,17 +16,17 @@ export default function VideoConverterFree() {
           <p className="text-lg text-muted-foreground">No sketchy downloads. Tested safe.</p>
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid these</h2>
-            <p className="text-sm">Many "free video converter" search results are loaded with malware, browser hijackers, and pop-ups. Stick to the trusted apps below.</p>
+            <p className="text-base">Many "free video converter" search results are loaded with malware, browser hijackers, and pop-ups. Stick to the trusted apps below.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trusted free converters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>HandBrake</strong> — handbrake.fr. Free, open-source, no ads. Mac/Windows. Best overall.</li>
               <li><strong>VLC Player</strong> — videolan.org. Mostly a video player, but converts under "Convert/Save" menu. Free.</li>
               <li><strong>Apple iMovie</strong> (Mac/iPad/iPhone) — free, built in. Export in any format.</li>
@@ -39,7 +39,7 @@ export default function VideoConverterFree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common needs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>MOV (iPhone) → MP4 (universal)</strong> — HandBrake or VLC. Most TVs and Windows want MP4.</li>
               <li><strong>Big file → smaller file</strong> — HandBrake "Web Optimized" preset. Cuts size 60-80%.</li>
               <li><strong>VHS digitization output → MP4</strong> — most converters output AVI; HandBrake makes them shareable.</li>
@@ -52,7 +52,7 @@ export default function VideoConverterFree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">HandBrake step-by-step</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Download from <strong>handbrake.fr</strong> only (no other sites).</li>
               <li>Install. Open.</li>
               <li>Click "Open Source" → pick your video file.</li>
@@ -68,7 +68,7 @@ export default function VideoConverterFree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For phone-only users</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone Photos app</strong> — share or export. Choose "Most Compatible" for MP4.</li>
               <li><strong>iMovie on iPhone</strong> — drop in video, tap share, pick size.</li>
               <li><strong>Google Photos</strong> — does basic compress on share.</li>
@@ -80,7 +80,7 @@ export default function VideoConverterFree() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free service warning</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t upload sensitive videos (medical, legal, personal) to unknown free converter websites — they may keep a copy. Stick to HandBrake (runs on your computer, never uploads) for anything private.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t upload sensitive videos (medical, legal, personal) to unknown free converter websites — they may keep a copy. Stick to HandBrake (runs on your computer, never uploads) for anything private.</p>
           </CardContent>
         </Card>
       </main>

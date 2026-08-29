@@ -19,7 +19,7 @@ export default function PelotonAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t need the bike</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Peloton App — $13/month or $129/year.</li>
               <li>Hundreds of classes without bike or treadmill.</li>
               <li>Yoga, strength, walking, cardio, meditation.</li>
@@ -33,7 +33,7 @@ export default function PelotonAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Outdoor walking classes (audio-guided).</li>
               <li>Beginner Yoga + Strength.</li>
               <li>Meditation library.</li>
@@ -47,7 +47,7 @@ export default function PelotonAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">App features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Filter by length, instructor, level.</li>
               <li>Save favorites.</li>
               <li>Track progress over time.</li>
@@ -61,7 +61,7 @@ export default function PelotonAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Famous instructors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cody Rigsby — popular cardio.</li>
               <li>Robin Arzon — strength + motivation.</li>
               <li>Kristin McGee — yoga + meditation.</li>
@@ -75,7 +75,7 @@ export default function PelotonAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Should seniors buy the bike?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bike: $1,500 + $44/month subscription.</li>
               <li>Bike+: $2,500 + $44/month.</li>
               <li>Probably not for most seniors.</li>
@@ -89,7 +89,7 @@ export default function PelotonAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tread alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use Peloton classes with any treadmill.</li>
               <li>Or NordicTrack with iFit ($39/month).</li>
               <li>Or Echelon Stride.</li>
@@ -103,7 +103,7 @@ export default function PelotonAppForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">App-only $13 is the sweet spot</h3>
-            <p className="text-sm text-muted-foreground">Peloton App at $13/month is genuinely good value if you enjoy variety. Hundreds of yoga, strength, walking, and meditation classes. No bike or treadmill needed. Try the 30-day free trial — see if you click with the instructor styles. Many seniors find the celebrity-energy of Peloton classes more motivating than other apps.</p>
+            <p className="text-base text-muted-foreground">Peloton App at $13/month is genuinely good value if you enjoy variety. Hundreds of yoga, strength, walking, and meditation classes. No bike or treadmill needed. Try the 30-day free trial — see if you click with the instructor styles. Many seniors find the celebrity-energy of Peloton classes more motivating than other apps.</p>
           </CardContent>
         </Card>
       </main>

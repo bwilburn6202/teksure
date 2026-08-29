@@ -22,7 +22,7 @@ export default function SeniorBugIDApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pest control DIY</h2><p>Once you know the bug, search &ldquo;[bug name] organic control&rdquo; for safe removal.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Beneficial bugs</h2><p>Lady bugs eat aphids. Ground beetles eat slugs. Don&apos;t kill them.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tick season</h2><p>Apps identify ticks. Save photo for doctor if bitten.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Most garden bugs are harmless. Apps stop unnecessary panic.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Most garden bugs are harmless. Apps stop unnecessary panic.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

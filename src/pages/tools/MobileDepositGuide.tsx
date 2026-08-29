@@ -19,7 +19,7 @@ export default function MobileDepositGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you need</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smartphone with camera.</li>
               <li>Bank&apos;s app installed.</li>
               <li>Login to bank app.</li>
@@ -33,7 +33,7 @@ export default function MobileDepositGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step by step</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1. Endorse check back: signature.</li>
               <li>2. Add &quot;For mobile deposit only&quot; or your bank&apos;s phrase.</li>
               <li>3. Open bank app.</li>
@@ -50,7 +50,7 @@ export default function MobileDepositGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photo tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Flat surface — table.</li>
               <li>Dark contrast background.</li>
               <li>All 4 corners visible.</li>
@@ -65,7 +65,7 @@ export default function MobileDepositGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After deposit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Money appears in 1-2 business days.</li>
               <li>Some hold larger checks longer.</li>
               <li>Email confirmation usual.</li>
@@ -80,7 +80,7 @@ export default function MobileDepositGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common errors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Image unclear&quot; — retake with better light.</li>
               <li>&quot;Endorsement missing&quot; — sign back first.</li>
               <li>&quot;Amount mismatch&quot; — type exact amount.</li>
@@ -94,7 +94,7 @@ export default function MobileDepositGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When NOT to mobile deposit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Foreign currency checks.</li>
               <li>Postdated checks.</li>
               <li>Checks for tax payments.</li>
@@ -108,7 +108,7 @@ export default function MobileDepositGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save trips to bank</h3>
-            <p className="text-sm text-muted-foreground">Mobile deposit replaces bank trips for most checks. Faster than mailing. Sister cards / birthday checks deposited from couch. Pension checks. Refund checks. Save $5 in gas every time. 95% of US banks offer. Call your bank if you don&apos;t see &quot;Deposit&quot; — they activate it.</p>
+            <p className="text-base text-muted-foreground">Mobile deposit replaces bank trips for most checks. Faster than mailing. Sister cards / birthday checks deposited from couch. Pension checks. Refund checks. Save $5 in gas every time. 95% of US banks offer. Call your bank if you don&apos;t see &quot;Deposit&quot; — they activate it.</p>
           </CardContent>
         </Card>
       </main>

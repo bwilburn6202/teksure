@@ -20,9 +20,9 @@ export default function SeniorRakutenCashback() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">How it works</h2><p>Click through Rakuten before shopping at Walmart, Macy&apos;s, Kohl&apos;s, etc. They pay you 1-10% back.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Get paid quarterly</h2><p>Check or PayPal. $5+ minimum. Most seniors earn $50-$200/year.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Browser extension</h2><p>Auto-applies cash back. Pops up reminders at checkout.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Department stores</li><li>Travel sites</li><li>Pet supplies (Chewy 4%)</li><li>Holiday shopping</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Department stores</li><li>Travel sites</li><li>Pet supplies (Chewy 4%)</li><li>Holiday shopping</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Alternatives</h2><p>Honey (Amazon-friendly). Capital One Shopping. All free.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Stack with credit card cash back for double rewards.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Stack with credit card cash back for double rewards.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

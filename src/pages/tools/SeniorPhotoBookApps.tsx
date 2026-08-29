@@ -22,7 +22,7 @@ export default function SeniorPhotoBookApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Photos book</h2><p>Built into Mac Photos. Print direct to high-quality books.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior gift idea</h2><p>Make a 12-month family photo book yearly. A 10-year set tells your story.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch sales</h2><p>50% off codes around Mother&apos;s Day, Black Friday, December.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Add captions while making the book. Future generations will treasure the stories.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Add captions while making the book. Future generations will treasure the stories.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

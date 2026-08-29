@@ -19,7 +19,7 @@ export default function BoatingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly boats</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pontoon</strong> — easiest. Stable. Roomy.</li>
               <li><strong>Bowrider</strong> — versatile family boat.</li>
               <li><strong>Fishing boat</strong> — quiet + simple.</li>
@@ -33,7 +33,7 @@ export default function BoatingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Renting vs buying</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Rent first — try before commit.</li>
               <li>Most lakes/marinas rent.</li>
               <li>Owning = $$$$ (slip + maintenance + insurance).</li>
@@ -47,7 +47,7 @@ export default function BoatingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Take Coast Guard boating safety class (free).</li>
               <li>Required in most states for license.</li>
               <li>Life jackets EVERYONE always.</li>
@@ -63,7 +63,7 @@ export default function BoatingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior gear</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sun protection (UPF clothing, hat).</li>
               <li>Sunglasses polarized.</li>
               <li>Non-slip deck shoes.</li>
@@ -77,7 +77,7 @@ export default function BoatingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cruising senior life</h3>
-            <p className="text-sm text-muted-foreground">Some seniors live on trawlers full-time. Loop America (East coast + Mississippi + Great Lakes). Caribbean cruising. Slower pace = senior dream. Boat clubs reduce ownership headaches. Many enjoy boating into 80s.</p>
+            <p className="text-base text-muted-foreground">Some seniors live on trawlers full-time. Loop America (East coast + Mississippi + Great Lakes). Caribbean cruising. Slower pace = senior dream. Boat clubs reduce ownership headaches. Many enjoy boating into 80s.</p>
           </CardContent>
         </Card>
       </main>

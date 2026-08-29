@@ -101,7 +101,7 @@ function KeyCombo({ keys }: { keys: string[] }) {
     <span className="flex flex-wrap items-center gap-1">
       {keys.map((key, i) => (
         <span key={key} className="flex items-center gap-1">
-          {i > 0 && <span className="text-muted-foreground text-sm">+</span>}
+          {i > 0 && <span className="text-muted-foreground text-base">+</span>}
           <kbd className="inline-flex items-center justify-center min-w-[2rem] px-2 py-1 text-sm font-semibold rounded-md border border-border bg-muted text-foreground shadow-sm">
             {key}
           </kbd>
@@ -141,8 +141,8 @@ export default function KeyboardNavigation() {
 
           {/* Quick Tip */}
           <div className="rounded-lg border border-primary/20 bg-primary/5 p-4 mb-10" role="note">
-            <p className="text-sm font-medium text-primary mb-1">Quick Tip</p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base font-medium text-primary mb-1">Quick Tip</p>
+            <p className="text-base text-muted-foreground">
               When you press the <kbd className="px-1.5 py-0.5 text-xs font-semibold rounded border border-border bg-muted">Tab</kbd> key,
               watch for a colored outline that appears around buttons and links. That outline shows
               you which item is currently selected. Press <kbd className="px-1.5 py-0.5 text-xs font-semibold rounded border border-border bg-muted">Enter</kbd> to
@@ -164,7 +164,7 @@ export default function KeyboardNavigation() {
                   <Card key={shortcut.description} className="border border-border">
                     <CardContent className="flex flex-col gap-2 p-4">
                       <KeyCombo keys={shortcut.keys} />
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                      <p className="text-base text-muted-foreground leading-relaxed">
                         {shortcut.description}
                       </p>
                     </CardContent>

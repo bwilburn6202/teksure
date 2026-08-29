@@ -19,7 +19,7 @@ export default function OldPhotoScanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">PhotoScan by Google</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>100% free from Google.</li>
               <li>Eliminates glare from prints.</li>
               <li>Auto-crops and straightens.</li>
@@ -33,7 +33,7 @@ export default function OldPhotoScanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use PhotoScan</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open app, tap scan button.</li>
               <li>Hold phone over photo.</li>
               <li>App shows 4 dots — move phone to each.</li>
@@ -47,7 +47,7 @@ export default function OldPhotoScanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple iPhone Notes app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Notes, tap camera icon.</li>
               <li>Tap &quot;Scan Documents.&quot;</li>
               <li>Works for photos too.</li>
@@ -61,7 +61,7 @@ export default function OldPhotoScanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For larger projects</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Flatbed scanner — Epson Perfection V39 ($90).</li>
               <li>Higher quality than phone scanning.</li>
               <li>Better for old fragile photos.</li>
@@ -75,7 +75,7 @@ export default function OldPhotoScanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mail-in services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ScanMyPhotos — $0.30 per photo.</li>
               <li>iMemories — also handles slides + film.</li>
               <li>Legacybox — premium service, secure shipping.</li>
@@ -89,7 +89,7 @@ export default function OldPhotoScanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Restoring damaged photos</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Google Photos — auto-enhance feature.</li>
               <li>MyHeritage In Color — colorize black + white.</li>
               <li>Remini — AI restoration of blurry photos.</li>
@@ -103,7 +103,7 @@ export default function OldPhotoScanningApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with one photo album</h3>
-            <p className="text-sm text-muted-foreground">Pick one photo album from a shelf. Open Google PhotoScan. Scan 20 photos this Sunday afternoon. Share with family in Google Photos. Repeat next weekend with another album. Within a few months, all your physical photos will be safely backed up to the cloud — protected from fire, flood, and fading. Future generations can access them. The 20 minutes you spend today preserves family history forever.</p>
+            <p className="text-base text-muted-foreground">Pick one photo album from a shelf. Open Google PhotoScan. Scan 20 photos this Sunday afternoon. Share with family in Google Photos. Repeat next weekend with another album. Within a few months, all your physical photos will be safely backed up to the cloud — protected from fire, flood, and fading. Future generations can access them. The 20 minutes you spend today preserves family history forever.</p>
           </CardContent>
         </Card>
       </main>

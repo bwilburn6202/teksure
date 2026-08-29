@@ -19,10 +19,10 @@ export default function SeniorVoiceMemo() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice Memos (iPhone)</h2><p>FREE built in. Tap red button to record. Save forever.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Google Recorder (Pixel)</h2><p>FREE. Auto-transcribes recordings. Search by spoken keyword.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Easy Voice Recorder</h2><p>FREE Android. Senior-friendly with big buttons.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why seniors love them</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Capture grandchildren&apos;s voices</li><li>Audio memoirs</li><li>Doctor visit notes</li><li>Recipe instructions from family</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why seniors love them</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Capture grandchildren&apos;s voices</li><li>Audio memoirs</li><li>Doctor visit notes</li><li>Recipe instructions from family</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Save important ones</h2><p>Email to yourself. Or save to iCloud/Google Drive. Don&apos;t lose family voices.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">StoryCorps</h2><p>FREE. Record interviews with family. Saved in Library of Congress.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Record stories from your parents NOW. Their voices fade once they&apos;re gone.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Record stories from your parents NOW. Their voices fade once they&apos;re gone.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorShowerChairs() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Handheld shower head</h2><p>$30. Required with shower chair. Easier rinsing.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why critical</h2><p>Bathroom is most dangerous senior fall location. Chair = huge fall reduction.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Walk-in shower</h2><p>$3,000-$10,000 remodel. Best long-term. Many seniors retrofit.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: $50 shower chair prevents $30,000 hip surgery. Worth every penny.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: $50 shower chair prevents $30,000 hip surgery. Worth every penny.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -584,8 +584,8 @@ export default function ErrorDecoder() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-blue-50 dark:bg-blue-950/30 flex items-center justify-center flex-shrink-0">
-                <MessageCircleQuestion className="h-6 w-6 text-blue-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-info flex items-center justify-center flex-shrink-0">
+                <MessageCircleQuestion className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -625,7 +625,7 @@ export default function ErrorDecoder() {
               </div>
 
               <div>
-                <p className="text-sm text-muted-foreground mb-2">Or try an example:</p>
+                <p className="text-base text-muted-foreground mb-2">Or try an example:</p>
                 <div className="flex flex-wrap gap-2">
                   {exampleErrors.map((ex) => (
                     <button
@@ -682,14 +682,14 @@ export default function ErrorDecoder() {
                     <h3 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-2">
                       What it means
                     </h3>
-                    <p className="text-sm leading-relaxed">{result.meaning}</p>
+                    <p className="text-base leading-relaxed">{result.meaning}</p>
                   </div>
 
                   <div>
                     <h3 className="font-semibold text-sm uppercase tracking-wide text-muted-foreground mb-2">
                       What to do
                     </h3>
-                    <ol className="space-y-2 text-sm">
+                    <ol className="space-y-2 text-base">
                       {result.whatToDo.map((step, i) => (
                         <li key={i} className="flex gap-3">
                           <span className="font-semibold text-foreground/60 min-w-[1.25rem]">
@@ -706,7 +706,7 @@ export default function ErrorDecoder() {
                       <Lightbulb className="h-4 w-4" aria-hidden="true" />
                       When to worry
                     </h3>
-                    <p className="text-sm leading-relaxed">{result.whenToWorry}</p>
+                    <p className="text-base leading-relaxed">{result.whenToWorry}</p>
                   </div>
 
                   {result.relatedGuide && (
@@ -733,7 +733,7 @@ export default function ErrorDecoder() {
                 <p className="text-muted-foreground">
                   We couldn't match this message to one in our library. Try these next steps:
                 </p>
-                <ul className="space-y-3 text-sm">
+                <ul className="space-y-3 text-base">
                   <li className="flex gap-3">
                     <Search className="h-4 w-4 mt-0.5 text-foreground/60" />
                     <span>
@@ -765,8 +765,8 @@ export default function ErrorDecoder() {
                     <span>Try a restart first — it fixes more than half of all device errors.</span>
                   </li>
                 </ul>
-                <div className="pt-2 p-4 rounded-lg bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900">
-                  <p className="text-sm text-red-800 dark:text-red-300">
+                <div className="pt-2 p-4 rounded-lg bg-danger border border-danger-foreground/25 ">
+                  <p className="text-base text-danger-foreground ">
                     <ShieldAlert className="h-4 w-4 inline-block mr-1" />
                     If the message tells you to call a number, scan a QR code, or pay with gift cards — it's a scam. Close it.
                   </p>

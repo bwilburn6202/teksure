@@ -143,7 +143,7 @@ export default function RenewIdOnline() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <CreditCard className="h-8 w-8 text-blue-600" />
+                <CreditCard className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Renew ID Online Helper</h1>
@@ -159,12 +159,12 @@ export default function RenewIdOnline() {
           {!doc ? (
             <Card className="border-border shadow-sm">
               <CardContent className="p-6">
-                <p className="text-sm font-semibold mb-3">What do you need to renew?</p>
+                <p className="text-base font-semibold mb-3">What do you need to renew?</p>
                 <div className="grid sm:grid-cols-2 gap-2">
                   {DOC_OPTIONS.map(o => (
                     <button key={o.id} onClick={() => setDoc(o.id)}
                       className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all text-left">
-                      <p className="font-medium text-sm">{o.label}</p>
+                      <p className="font-medium text-base">{o.label}</p>
                     </button>
                   ))}
                 </div>
@@ -186,12 +186,12 @@ export default function RenewIdOnline() {
 
               <Card className="border-border mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Who this is for:</strong> {r.who}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Who this is for:</strong> {r.who}</p>
 
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Steps</p>
                   <ol className="space-y-3">
                     {r.steps.map((s, i) => (
-                      <li key={i} className="flex gap-3 text-sm">
+                      <li key={i} className="flex gap-3 text-base">
                         <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                         <span>{s}</span>
                       </li>
@@ -199,8 +199,8 @@ export default function RenewIdOnline() {
                   </ol>
 
                   {r.warning && (
-                    <div className="mt-4 p-3 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800">
-                      <p className="text-xs"><strong className="text-amber-700 dark:text-amber-300">Watch out:</strong>{' '}<span className="text-amber-700 dark:text-amber-300">{r.warning}</span></p>
+                    <div className="mt-4 p-3 rounded-lg bg-warn border border-warn-foreground/25 ">
+                      <p className="text-sm"><strong className="text-warn-foreground ">Watch out:</strong>{' '}<span className="text-warn-foreground ">{r.warning}</span></p>
                     </div>
                   )}
 
@@ -213,9 +213,9 @@ export default function RenewIdOnline() {
             </>
           ) : null}
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch out for "passport renewal" middleman sites</p>
                 <p className="text-muted-foreground">
@@ -229,16 +229,16 @@ export default function RenewIdOnline() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/voter-info-verifier" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Voter Info Verifier</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Other state .gov links.</p>
+                <p className="font-medium text-base">Voter Info Verifier</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Other state .gov links.</p>
               </Link>
               <Link to="/tools/government-benefits-portal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Government Benefits Portal</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Federal benefit applications.</p>
+                <p className="font-medium text-base">Government Benefits Portal</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Federal benefit applications.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">"Renew your license" texts are scams.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">"Renew your license" texts are scams.</p>
               </Link>
             </div>
           </div>

@@ -19,7 +19,7 @@ export default function RavelryForKnitters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Ravelry?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free social network for knitters + crocheters.</li>
               <li>9 million users.</li>
               <li>Browse 1.5 million patterns.</li>
@@ -33,7 +33,7 @@ export default function RavelryForKnitters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find patterns</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search by yarn weight, type, skill level.</li>
               <li>Many free patterns.</li>
               <li>Paid patterns $3–$10.</li>
@@ -47,7 +47,7 @@ export default function RavelryForKnitters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Track your projects</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photo journal of finished pieces.</li>
               <li>Timeline of crafting.</li>
               <li>Notes for each project.</li>
@@ -61,7 +61,7 @@ export default function RavelryForKnitters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Yarn stash management</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Track yarn you own.</li>
               <li>By type, color, weight.</li>
               <li>Find patterns matching your stash.</li>
@@ -75,7 +75,7 @@ export default function RavelryForKnitters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Forums + groups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1,000+ knitting groups.</li>
               <li>By location, technique, project type.</li>
               <li>Senior knitters groups available.</li>
@@ -89,7 +89,7 @@ export default function RavelryForKnitters() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior accessibility</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adjustable text size.</li>
               <li>Print patterns large for easier reading.</li>
               <li>Large clear photos.</li>
@@ -103,7 +103,7 @@ export default function RavelryForKnitters() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free + irreplaceable</h3>
-            <p className="text-sm text-muted-foreground">If you knit or crochet, Ravelry is irreplaceable. Free signup, 1.5 million patterns (many free), community of millions, project tracking. The best resource for any fiber arts crafter. Many senior knitters say Ravelry transformed their craft from solitary hobby to vibrant community. Sign up at Ravelry.com.</p>
+            <p className="text-base text-muted-foreground">If you knit or crochet, Ravelry is irreplaceable. Free signup, 1.5 million patterns (many free), community of millions, project tracking. The best resource for any fiber arts crafter. Many senior knitters say Ravelry transformed their craft from solitary hobby to vibrant community. Sign up at Ravelry.com.</p>
           </CardContent>
         </Card>
       </main>

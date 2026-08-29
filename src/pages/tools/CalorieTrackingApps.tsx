@@ -28,7 +28,7 @@ export default function CalorieTrackingApps() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why log food</h2>
-            <p className="text-sm">Studies consistently show that tracking food doubles weight-loss success. After 60, muscle loss accelerates — protein and resistance training matter more than ever. Tracking food shows you whether you\'re actually getting enough.</p>
+            <p className="text-base">Studies consistently show that tracking food doubles weight-loss success. After 60, muscle loss accelerates — protein and resistance training matter more than ever. Tracking food shows you whether you\'re actually getting enough.</p>
           </CardContent>
         </Card>
 
@@ -38,10 +38,10 @@ export default function CalorieTrackingApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function CalorieTrackingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to actually stick with logging</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Log BEFORE you eat, not after.</li>
               <li>Take a photo of every meal — log it later if you\'re busy.</li>
               <li>Save your common breakfasts/lunches as "meals" — log a recurring breakfast in 3 seconds.</li>
@@ -63,7 +63,7 @@ export default function CalorieTrackingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Talk to a real dietitian</h3>
-            <p className="text-sm text-muted-foreground">Medicare Part B covers some nutrition counseling for diabetes and kidney disease. Many advantage plans cover more. Pair an app with one or two real dietitian visits to get a sustainable plan, not a fad diet.</p>
+            <p className="text-base text-muted-foreground">Medicare Part B covers some nutrition counseling for diabetes and kidney disease. Many advantage plans cover more. Pair an app with one or two real dietitian visits to get a sustainable plan, not a fad diet.</p>
           </CardContent>
         </Card>
       </main>

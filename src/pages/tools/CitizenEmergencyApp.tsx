@@ -32,10 +32,10 @@ export default function CitizenEmergencyApp() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,20 +44,20 @@ export default function CitizenEmergencyApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tune notifications carefully</h2>
-            <p className="text-sm">Citizen and Nextdoor will SPAM you with non-urgent alerts. After install, go into settings and turn off:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Citizen and Nextdoor will SPAM you with non-urgent alerts. After install, go into settings and turn off:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>"Routine" alerts you don\'t care about.</li>
               <li>Anything beyond your immediate neighborhood.</li>
               <li>Daily digests if they get spammy.</li>
             </ul>
-            <p className="text-sm mt-2">Keep ON: severe weather, your zip code\'s fire/police major events, missing-person alerts.</p>
+            <p className="text-base mt-2">Keep ON: severe weather, your zip code\'s fire/police major events, missing-person alerts.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Built-in alerts (already on your phone)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Wireless Emergency Alerts (WEA)</strong> — federal AMBER, weather, presidential alerts. Already enabled.</li>
               <li><strong>Apple Crash Detection</strong> (iPhone 14+ + Watch Series 8+) — auto-911 if car accident detected.</li>
               <li><strong>Apple SOS via Satellite</strong> — for backcountry (no cell signal).</li>
@@ -69,7 +69,7 @@ export default function CitizenEmergencyApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don\'t over-do it</h3>
-            <p className="text-sm text-muted-foreground">Constant emergency alerts can spike anxiety. Pick 2-3 apps that REALLY matter for your area (Watch Duty if wildfires, NOAA Weather if tornadoes, FEMA for federal). Skip the rest. Awareness should reduce stress, not add to it.</p>
+            <p className="text-base text-muted-foreground">Constant emergency alerts can spike anxiety. Pick 2-3 apps that REALLY matter for your area (Watch Duty if wildfires, NOAA Weather if tornadoes, FEMA for federal). Skip the rest. Awareness should reduce stress, not add to it.</p>
           </CardContent>
         </Card>
       </main>

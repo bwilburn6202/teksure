@@ -16,13 +16,13 @@ export default function SeniorAmazonHouseholdShare() {
           <p className="text-lg text-muted-foreground">Free Prime sharing.</p>
         </div>
         <div className="space-y-4">
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What you can share</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Prime shipping</li><li>Prime Video</li><li>Prime Reading</li><li>Audible audiobooks</li><li>Kindle books</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What you can share</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Prime shipping</li><li>Prime Video</li><li>Prime Reading</li><li>Audible audiobooks</li><li>Kindle books</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Setup</h2><p>Amazon → Account → Amazon Household → Add Adult. Send invite via email.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">2 adults max</h2><p>Plus up to 4 teens. Adults share Prime. Teens approved-only purchases.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Privacy</h2><p>Don&apos;t share payment if you don&apos;t want family seeing your purchases.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Save $139/year</h2><p>Two Prime memberships normally. Family Sharing = one membership shared.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Books and audiobooks</h2><p>Buy once, both can read/listen forever.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set this up with your spouse first. Saves $139/year immediately.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set this up with your spouse first. Saves $139/year immediately.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -677,7 +677,7 @@ function DoneScreen({
     <Card className="border-green-600/40 bg-green-50/40 dark:bg-green-950/20">
       <CardContent className="p-6 md:p-8 space-y-6">
         <div className="flex items-center gap-3">
-          <div className="p-3 rounded-full bg-green-600/10 text-green-700 dark:text-green-400">
+          <div className="p-3 rounded-full bg-green-600/10 text-success-foreground ">
             <CheckCircle2 className="w-8 h-8" />
           </div>
           <div>
@@ -878,14 +878,14 @@ export default function RideshareSetup() {
 
                     <div className="grid grid-cols-1 gap-3">
                       <div>
-                        <h4 className="text-sm font-semibold text-green-800 dark:text-green-400 mb-1.5 flex items-center gap-1.5">
+                        <h4 className="text-sm font-semibold text-success-foreground mb-1.5 flex items-center gap-1.5">
                           <CheckCircle2 className="w-4 h-4" />
                           Strengths
                         </h4>
                         <ul className="space-y-1.5">
                           {c.strengths.map((s) => (
                             <li key={s} className="text-base leading-relaxed flex gap-2">
-                              <span className="text-green-700 dark:text-green-400 shrink-0" aria-hidden="true">
+                              <span className="text-success-foreground shrink-0" aria-hidden="true">
                                 +
                               </span>
                               <span>{s}</span>
@@ -894,14 +894,14 @@ export default function RideshareSetup() {
                         </ul>
                       </div>
                       <div>
-                        <h4 className="text-sm font-semibold text-amber-800 dark:text-amber-400 mb-1.5 flex items-center gap-1.5">
+                        <h4 className="text-sm font-semibold text-warn-foreground mb-1.5 flex items-center gap-1.5">
                           <XCircle className="w-4 h-4" />
                           Watch-outs
                         </h4>
                         <ul className="space-y-1.5">
                           {c.watchOuts.map((w) => (
                             <li key={w} className="text-base leading-relaxed flex gap-2">
-                              <span className="text-amber-700 dark:text-amber-400 shrink-0" aria-hidden="true">
+                              <span className="text-warn-foreground shrink-0" aria-hidden="true">
                                 −
                               </span>
                               <span>{w}</span>
@@ -1046,7 +1046,7 @@ export default function RideshareSetup() {
           <section className="border-t border-border bg-muted/30">
             <div className="container py-10 md:py-14">
               <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-                <AlertTriangle className="w-7 h-7 text-amber-700 dark:text-amber-400" />
+                <AlertTriangle className="w-7 h-7 text-warn-foreground " />
                 Scam warnings — know these before your first ride
               </h2>
               <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -1056,11 +1056,11 @@ export default function RideshareSetup() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {SCAMS.map((s) => (
-                  <Card key={s.title} className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+                  <Card key={s.title} className="bg-warn border-amber-500/40">
                     <CardContent className="p-5">
                       <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
                         <AlertTriangle
-                          className="w-5 h-5 text-amber-700 dark:text-amber-400"
+                          className="w-5 h-5 text-warn-foreground "
                           aria-hidden="true"
                         />
                         {s.title}
@@ -1324,15 +1324,15 @@ export default function RideshareSetup() {
             </div>
 
             <div className="flex items-center gap-3 mb-2 flex-wrap">
-              <span className="text-sm md:text-base font-medium text-muted-foreground">
+              <span className="text-base md:text-base font-medium text-muted-foreground">
                 {isDone ? 'All done' : `Step ${stepIndex + 1} of ${totalSteps}`}
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 {completed.size} completed
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 About {app.estTime}
               </span>
             </div>
@@ -1382,10 +1382,10 @@ export default function RideshareSetup() {
               </Card>
 
               {current.stumble && (
-                <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+                <Card className="bg-warn border-amber-500/40">
                   <CardContent className="p-5 flex items-start gap-3">
                     <Lightbulb
-                      className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5"
+                      className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5"
                       aria-hidden="true"
                     />
                     <div>

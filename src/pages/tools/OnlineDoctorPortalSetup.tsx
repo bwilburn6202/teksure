@@ -167,7 +167,7 @@ export default function OnlineDoctorPortalSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-sky-500/10 rounded-full">
-                <Stethoscope className="h-8 w-8 text-sky-600" />
+                <Stethoscope className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Online Doctor Portal Setup</h1>
@@ -182,15 +182,15 @@ export default function OnlineDoctorPortalSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Which portal does your hospital use?</p>
-              <p className="text-xs text-muted-foreground mb-3">Not sure? Ask the front desk at your next visit, check your after-visit summary paperwork, or call the medical records office.</p>
+              <p className="text-base font-semibold mb-3">Which portal does your hospital use?</p>
+              <p className="text-sm text-muted-foreground mb-3">Not sure? Ask the front desk at your next visit, check your after-visit summary paperwork, or call the medical records office.</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {PORTAL_OPTIONS.map(o => (
                   <button key={o.id} onClick={() => setPortal(o.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       portal === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -200,12 +200,12 @@ export default function OnlineDoctorPortalSetup() {
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <Badge variant="outline" className="mb-2">{p.name}</Badge>
-              <p className="text-sm text-muted-foreground mb-4"><strong>Who uses it:</strong> {p.who}</p>
+              <p className="text-base text-muted-foreground mb-4"><strong>Who uses it:</strong> {p.who}</p>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">How to sign up</p>
               <ol className="space-y-1.5 mb-4">
                 {p.setup.map((s, i) => (
-                  <li key={i} className="flex gap-2 text-sm">
+                  <li key={i} className="flex gap-2 text-base">
                     <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                     <span>{s}</span>
                   </li>
@@ -215,14 +215,14 @@ export default function OnlineDoctorPortalSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">What you can do once you are signed in</p>
               <ul className="space-y-1.5 mb-4">
                 {p.features.map((f, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-primary shrink-0">•</span><span>{f}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-primary shrink-0">•</span><span>{f}</span></li>
                 ))}
               </ul>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Worth knowing</p>
               <ul className="space-y-1">
                 {p.notes.map((n, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-primary shrink-0">•</span><span>{n}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-primary shrink-0">•</span><span>{n}</span></li>
                 ))}
               </ul>
 
@@ -233,9 +233,9 @@ export default function OnlineDoctorPortalSetup() {
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch out: fake "your medical records are ready" emails</p>
                 <p className="text-muted-foreground">
@@ -247,8 +247,8 @@ export default function OnlineDoctorPortalSetup() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Five habits that make portals work for you</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Five habits that make portals work for you</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Save your portal password in a notebook at home, not on a sticky note on the computer.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Turn on two-step verification (a code by text) — most portals offer it under Account Settings.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Add the portal app to your phone home screen for one-tap access.</span></li>
@@ -260,8 +260,8 @@ export default function OnlineDoctorPortalSetup() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Sending your first message to a doctor</p>
-              <ol className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Sending your first message to a doctor</p>
+              <ol className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary font-semibold shrink-0">1.</span><span>Open the portal app and tap "Messages".</span></li>
                 <li className="flex gap-2"><span className="text-primary font-semibold shrink-0">2.</span><span>Tap "New Message" and pick the doctor or nurse from the list.</span></li>
                 <li className="flex gap-2"><span className="text-primary font-semibold shrink-0">3.</span><span>Write a short, clear question — one topic per message. Example: "My blood pressure has been 150/90 every morning for a week. Should I come in?"</span></li>
@@ -275,16 +275,16 @@ export default function OnlineDoctorPortalSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/telehealth-prep" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Telehealth Prep</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Get ready for a video visit with your doctor.</p>
+                <p className="font-medium text-base">Telehealth Prep</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Get ready for a video visit with your doctor.</p>
               </Link>
               <Link to="/tools/hospital-discharge-kit" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Hospital Discharge Kit</p>
-                <p className="text-xs text-muted-foreground mt-0.5">What to do after leaving the hospital.</p>
+                <p className="font-medium text-base">Hospital Discharge Kit</p>
+                <p className="text-sm text-muted-foreground mt-0.5">What to do after leaving the hospital.</p>
               </Link>
               <Link to="/tools/medicare-plan-chooser" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Medicare Plan Chooser</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pick the right Medicare plan for you.</p>
+                <p className="font-medium text-base">Medicare Plan Chooser</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pick the right Medicare plan for you.</p>
               </Link>
             </div>
           </div>

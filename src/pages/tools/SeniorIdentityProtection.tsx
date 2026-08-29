@@ -22,7 +22,7 @@ export default function SeniorIdentityProtection() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Aura</h2><p>$9/month. Includes VPN, password manager, and ID monitoring.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">If stolen</h2><p>Report to identitytheft.gov — official FTC site. Walks you through every step.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare ID theft</h2><p>Treat your Medicare number like a credit card. If stolen, call 1-800-MEDICARE.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: A credit freeze is FREE and stops 99% of identity theft. Do this first.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: A credit freeze is FREE and stops 99% of identity theft. Do this first.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

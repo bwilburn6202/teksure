@@ -32,10 +32,10 @@ export default function ResumeBuilderApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function ResumeBuilderApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Resume tips for 50+ workers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Limit to 1-2 pages</strong> — older workers don\'t need to list every job from 1985.</li>
               <li><strong>Show last 15 years</strong>. Earlier work goes in a brief "Earlier Career" section.</li>
               <li><strong>Skip graduation dates</strong> — protects from age discrimination.</li>
@@ -59,16 +59,16 @@ export default function ResumeBuilderApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cover letter quick template</h2>
-            <p className="text-sm">Use ChatGPT or Claude:</p>
-            <p className="text-sm italic bg-muted/50 p-3 rounded mt-2">"Write a 1-page cover letter for a [job title] position at [company name]. My background: [brief work history]. Make it warm but professional."</p>
-            <p className="text-sm mt-2">Edit to make it sound like you. Submit.</p>
+            <p className="text-base">Use ChatGPT or Claude:</p>
+            <p className="text-base italic bg-muted/50 p-3 rounded mt-2">"Write a 1-page cover letter for a [job title] position at [company name]. My background: [brief work history]. Make it warm but professional."</p>
+            <p className="text-base mt-2">Edit to make it sound like you. Submit.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Job search tools paired</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>LinkedIn</strong> — must-have. Make a profile even if you don\'t intend to "social network".</li>
               <li><strong>Indeed</strong> — biggest job board.</li>
               <li><strong>AARP Job Board</strong> — age-friendly employers.</li>
@@ -81,7 +81,7 @@ export default function ResumeBuilderApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">AARP Resume Advisor — best free help</h3>
-            <p className="text-sm text-muted-foreground">If you\'re an AARP member ($16/year), use the free Resume Advisor. They review your resume and give specific feedback. Volunteers are often retired HR professionals — exactly the right perspective for senior job-seekers.</p>
+            <p className="text-base text-muted-foreground">If you\'re an AARP member ($16/year), use the free Resume Advisor. They review your resume and give specific feedback. Volunteers are often retired HR professionals — exactly the right perspective for senior job-seekers.</p>
           </CardContent>
         </Card>
       </main>

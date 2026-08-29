@@ -19,7 +19,7 @@ export default function GoogleCalendarSeniorTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free calendar app.</li>
               <li>Track all appointments.</li>
               <li>Reminders + alerts.</li>
@@ -33,7 +33,7 @@ export default function GoogleCalendarSeniorTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Add appointments</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap + to add event.</li>
               <li>Title, date, time, location.</li>
               <li>Set reminder time.</li>
@@ -47,7 +47,7 @@ export default function GoogleCalendarSeniorTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Share with family</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Share calendar with spouse + adult children.</li>
               <li>They can see + add events.</li>
               <li>Coordinate caregiving.</li>
@@ -61,7 +61,7 @@ export default function GoogleCalendarSeniorTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Calendar alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Built into iPhone.</li>
               <li>Same features as Google Calendar.</li>
               <li>Syncs across Apple devices.</li>
@@ -75,7 +75,7 @@ export default function GoogleCalendarSeniorTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reminder strategies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>15 min before — quick events.</li>
               <li>1 day before — important meetings.</li>
               <li>1 week before — annual reviews.</li>
@@ -89,7 +89,7 @@ export default function GoogleCalendarSeniorTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Doctor appointments — log every one.</li>
               <li>Medication refill reminders.</li>
               <li>Birthdays + anniversaries.</li>
@@ -103,7 +103,7 @@ export default function GoogleCalendarSeniorTutorial() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Replace paper calendar</h3>
-            <p className="text-sm text-muted-foreground">Many seniors still use wall calendars. While charming, digital is better for two reasons: 1) automatic reminders prevent missed appointments, 2) family can share + coordinate. Spend 30 minutes adding upcoming appointments. Set 24-hour reminders. Never miss another doctor visit. Free, on every device.</p>
+            <p className="text-base text-muted-foreground">Many seniors still use wall calendars. While charming, digital is better for two reasons: 1) automatic reminders prevent missed appointments, 2) family can share + coordinate. Spend 30 minutes adding upcoming appointments. Set 24-hour reminders. Never miss another doctor visit. Free, on every device.</p>
           </CardContent>
         </Card>
       </main>

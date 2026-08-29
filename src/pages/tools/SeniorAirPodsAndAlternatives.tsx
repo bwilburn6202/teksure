@@ -20,9 +20,9 @@ export default function SeniorAirPodsAndAlternatives() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AirPods Pro 2</h2><p>$249. Hearing aid mode (FDA approved). Noise cancellation.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Conversation Boost</h2><p>AirPods Pro feature. Amplifies voices in noisy restaurants.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Live Listen</h2><p>Place iPhone on table. AirPods become hearing aid microphone.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Alternatives</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Soundcore P30i ($35)</li><li>Jabra Elite 4 ($80)</li><li>Samsung Galaxy Buds 2 ($150)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Alternatives</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Soundcore P30i ($35)</li><li>Jabra Elite 4 ($80)</li><li>Samsung Galaxy Buds 2 ($150)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Find My AirPods</h2><p>Lost one? Open Find My app. Plays sound. Saves $130.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: AirPods Pro hearing aid mode is a $1000+ savings vs traditional hearing aids.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: AirPods Pro hearing aid mode is a $1000+ savings vs traditional hearing aids.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function InstagramSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors love it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Visual focus = beautiful photos + videos.</li>
               <li>Less politics than Facebook.</li>
               <li>Travel + food + pets popular.</li>
@@ -34,7 +34,7 @@ export default function InstagramSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free download Instagram app.</li>
               <li>Sign up with email.</li>
               <li>Pick username (avoid using full real name).</li>
@@ -49,7 +49,7 @@ export default function InstagramSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to follow</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family + close friends only first.</li>
               <li>Travel accounts.</li>
               <li>Cooking + gardening.</li>
@@ -64,7 +64,7 @@ export default function InstagramSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy + safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Private account = friends only.</li>
               <li>Strangers can&apos;t see posts.</li>
               <li>Don&apos;t post location in real time.</li>
@@ -79,7 +79,7 @@ export default function InstagramSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>DM from strangers — block.</li>
               <li>&quot;Verify your account&quot; emails — phishing.</li>
               <li>Influencer scams promoting products.</li>
@@ -93,7 +93,7 @@ export default function InstagramSeniorGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Avoid Reels addiction</h3>
-            <p className="text-sm text-muted-foreground">Instagram Reels = TikTok-like. Limit time (Settings → Time Limit). Stick to feed of friends. Reels can be addictive. Set 30 min/day limit. Healthier mind. Use for connection, not consumption.</p>
+            <p className="text-base text-muted-foreground">Instagram Reels = TikTok-like. Limit time (Settings → Time Limit). Stick to feed of friends. Reels can be addictive. Set 30 min/day limit. Healthier mind. Use for connection, not consumption.</p>
           </CardContent>
         </Card>
       </main>

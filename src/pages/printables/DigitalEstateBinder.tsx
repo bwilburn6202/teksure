@@ -375,7 +375,7 @@ function FieldLabel({ children, optional = true }: { children: React.ReactNode; 
     <Label className="text-base font-semibold mb-1.5 flex items-center gap-2">
       {children}
       {optional && (
-        <span className="text-xs font-normal text-muted-foreground">(optional)</span>
+        <span className="text-sm font-normal text-muted-foreground">(optional)</span>
       )}
     </Label>
   );
@@ -399,7 +399,7 @@ function TextField({
   return (
     <div className="space-y-1.5">
       <FieldLabel>{label}</FieldLabel>
-      {helper && <p className="text-sm text-muted-foreground">{helper}</p>}
+      {helper && <p className="text-base text-muted-foreground">{helper}</p>}
       <Input
         type={type}
         value={value}
@@ -429,7 +429,7 @@ function TextAreaField({
   return (
     <div className="space-y-1.5">
       <FieldLabel>{label}</FieldLabel>
-      {helper && <p className="text-sm text-muted-foreground">{helper}</p>}
+      {helper && <p className="text-base text-muted-foreground">{helper}</p>}
       <Textarea
         value={value}
         onChange={(e) => onChange(e.target.value)}
@@ -455,7 +455,7 @@ function PersonEditor({
   return (
     <div className="rounded-xl border bg-muted/30 p-4 md:p-5 space-y-3">
       <div className="font-bold text-lg flex items-center gap-2">
-        <User className="h-5 w-5 text-violet-700" aria-hidden />
+        <User className="h-5 w-5 text-primary" aria-hidden />
         {label}
       </div>
       <div className="grid gap-3 sm:grid-cols-2">
@@ -819,14 +819,14 @@ export default function DigitalEstateBinder() {
             aria-hidden
           />
           <div className="relative container max-w-6xl mx-auto px-4 py-10 md:py-14">
-            <div className="flex items-center gap-3 text-violet-700 dark:text-violet-300 text-sm font-bold uppercase tracking-widest mb-3">
+            <div className="flex items-center gap-3 text-primary text-sm font-bold uppercase tracking-widest mb-3">
               <BookMarked className="h-5 w-5" />
               <span>Free Printable Binder</span>
             </div>
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
                 Digital Estate Binder —{' '}
-                <span className="text-violet-700 dark:text-violet-300">
+                <span className="text-primary ">
                   Make It Easy for Your Family
                 </span>
               </h1>
@@ -843,9 +843,9 @@ export default function DigitalEstateBinder() {
             </p>
 
             {/* Privacy warning */}
-            <Alert className="mt-6 border-2 border-amber-400 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-700">
-              <Lock className="h-5 w-5 text-amber-700 dark:text-amber-300" />
-              <AlertTitle className="text-lg font-bold text-amber-900 dark:text-amber-100">
+            <Alert className="mt-6 border-2 border-amber-400 bg-warn dark:border-amber-700">
+              <Lock className="h-5 w-5 text-warn-foreground " />
+              <AlertTitle className="text-lg font-bold text-warn-foreground ">
                 Never write real passwords here.
               </AlertTitle>
               <AlertDescription className="text-base text-amber-900/90 dark:text-amber-100/90 leading-relaxed">
@@ -863,9 +863,9 @@ export default function DigitalEstateBinder() {
             </Alert>
 
             {/* Device privacy notice */}
-            <Alert className="mt-4 border-2 border-violet-300 bg-violet-50 dark:bg-violet-950/30 dark:border-violet-800">
-              <Shield className="h-5 w-5 text-violet-700 dark:text-violet-300" />
-              <AlertTitle className="text-lg font-bold text-violet-900 dark:text-violet-100">
+            <Alert className="mt-4 border-2 border-primary/25 bg-primary/10 ">
+              <Shield className="h-5 w-5 text-primary " />
+              <AlertTitle className="text-lg font-bold text-primary ">
                 Your data stays on this device.
               </AlertTitle>
               <AlertDescription className="text-base text-violet-900/90 dark:text-violet-100/90 leading-relaxed">
@@ -881,7 +881,7 @@ export default function DigitalEstateBinder() {
           <div className="flex flex-wrap items-center gap-3 justify-between rounded-xl border bg-muted/40 p-4">
             <div className="flex flex-wrap items-center gap-2">
               <span
-                className="inline-flex items-center gap-1.5 text-sm text-muted-foreground"
+                className="inline-flex items-center gap-1.5 text-base text-muted-foreground"
                 aria-live="polite"
               >
                 <Save className="h-4 w-4" />
@@ -928,7 +928,7 @@ export default function DigitalEstateBinder() {
                 variant="ghost"
                 size="sm"
                 onClick={handleClear}
-                className="gap-1.5 text-muted-foreground hover:text-rose-600"
+                className="gap-1.5 text-muted-foreground hover:text-danger-foreground"
               >
                 <Trash2 className="h-4 w-4" />
                 Clear all
@@ -937,13 +937,13 @@ export default function DigitalEstateBinder() {
           </div>
 
           {/* Print options */}
-          <div className="mt-4 rounded-xl border-2 border-violet-200 dark:border-violet-900 bg-violet-50/50 dark:bg-violet-950/20 p-4">
+          <div className="mt-4 rounded-xl border-2 border-primary/25 bg-violet-50/50 dark:bg-violet-950/20 p-4">
             <div className="flex items-start justify-between flex-wrap gap-3">
               <div className="flex items-center gap-3">
-                <Printer className="h-6 w-6 text-violet-700 dark:text-violet-300" />
+                <Printer className="h-6 w-6 text-primary " />
                 <div>
                   <div className="font-bold text-lg">Print or save as PDF</div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     In the print dialog, choose <strong>Save as PDF</strong> to keep a
                     digital copy you can store safely.
                   </p>
@@ -971,7 +971,7 @@ export default function DigitalEstateBinder() {
             </div>
 
             {/* Blank template toggle */}
-            <div className="mt-4 pt-4 border-t border-violet-200 dark:border-violet-900">
+            <div className="mt-4 pt-4 border-t border-primary/25 ">
               <label className="flex items-center gap-3 cursor-pointer">
                 <Checkbox
                   checked={showBlankTemplate}
@@ -986,7 +986,7 @@ export default function DigitalEstateBinder() {
             </div>
 
             {/* Section picker — visible when "selected" mode chosen */}
-            <div className="mt-4 pt-4 border-t border-violet-200 dark:border-violet-900">
+            <div className="mt-4 pt-4 border-t border-primary/25 ">
               <div className="font-semibold text-sm uppercase tracking-wide mb-2 text-muted-foreground">
                 Include in print:
               </div>
@@ -994,7 +994,7 @@ export default function DigitalEstateBinder() {
                 {SECTIONS.map((s) => (
                   <label
                     key={s.id}
-                    className="flex items-center gap-2 text-sm cursor-pointer"
+                    className="flex items-center gap-2 text-base cursor-pointer"
                   >
                     <Checkbox
                       checked={selectedSections[s.id]}
@@ -1034,7 +1034,7 @@ export default function DigitalEstateBinder() {
               <Card>
                 <CardContent className="p-6 space-y-5">
                   <div className="flex items-center gap-3">
-                    <BookMarked className="h-7 w-7 text-violet-700" />
+                    <BookMarked className="h-7 w-7 text-primary" />
                     <h2 className="text-2xl font-bold">Cover Page</h2>
                   </div>
                   <p className="text-base text-muted-foreground">
@@ -1080,12 +1080,12 @@ export default function DigitalEstateBinder() {
               <Card>
                 <CardContent className="p-6 space-y-5">
                   <div className="flex items-center gap-3">
-                    <AlertTriangle className="h-7 w-7 text-rose-700" />
+                    <AlertTriangle className="h-7 w-7 text-danger-foreground" />
                     <h2 className="text-2xl font-bold">Start Here (Emergency)</h2>
                   </div>
-                  <Alert className="bg-rose-50 border-rose-300 dark:bg-rose-950/30 dark:border-rose-800">
-                    <AlertTriangle className="h-5 w-5 text-rose-700" />
-                    <AlertTitle className="font-bold text-rose-900 dark:text-rose-100">
+                  <Alert className="bg-danger border-danger-foreground/25 ">
+                    <AlertTriangle className="h-5 w-5 text-danger-foreground" />
+                    <AlertTitle className="font-bold text-danger-foreground ">
                       For immediate medical emergencies, call 911 first.
                     </AlertTitle>
                     <AlertDescription className="text-rose-900/90 dark:text-rose-100/90">
@@ -1130,7 +1130,7 @@ export default function DigitalEstateBinder() {
               <Card>
                 <CardContent className="p-6 space-y-6">
                   <div className="flex items-center gap-3">
-                    <Users className="h-7 w-7 text-violet-700" />
+                    <Users className="h-7 w-7 text-primary" />
                     <h2 className="text-2xl font-bold">Important People</h2>
                   </div>
                   <p className="text-base text-muted-foreground">
@@ -1207,7 +1207,7 @@ export default function DigitalEstateBinder() {
               <Card>
                 <CardContent className="p-6 space-y-5">
                   <div className="flex items-center gap-3">
-                    <FileSignature className="h-7 w-7 text-violet-700" />
+                    <FileSignature className="h-7 w-7 text-primary" />
                     <h2 className="text-2xl font-bold">Key Documents</h2>
                   </div>
                   <p className="text-base text-muted-foreground">
@@ -1299,11 +1299,11 @@ export default function DigitalEstateBinder() {
               <Card>
                 <CardContent className="p-6 space-y-6">
                   <div className="flex items-center gap-3">
-                    <Landmark className="h-7 w-7 text-violet-700" />
+                    <Landmark className="h-7 w-7 text-primary" />
                     <h2 className="text-2xl font-bold">Financial Accounts</h2>
                   </div>
-                  <Alert className="bg-amber-50 border-amber-300 dark:bg-amber-950/30 dark:border-amber-800">
-                    <Lock className="h-5 w-5 text-amber-700" />
+                  <Alert className="bg-warn border-warn-foreground/25 ">
+                    <Lock className="h-5 w-5 text-warn-foreground" />
                     <AlertTitle className="font-bold">
                       Last 4 digits only. Password hints only.
                     </AlertTitle>
@@ -1351,7 +1351,7 @@ export default function DigitalEstateBinder() {
               <Card>
                 <CardContent className="p-6 space-y-4">
                   <div className="flex items-center gap-3">
-                    <ShieldCheck className="h-7 w-7 text-violet-700" />
+                    <ShieldCheck className="h-7 w-7 text-primary" />
                     <h2 className="text-2xl font-bold">Insurance</h2>
                   </div>
                   <p className="text-base text-muted-foreground">
@@ -1375,19 +1375,19 @@ export default function DigitalEstateBinder() {
               <Card>
                 <CardContent className="p-6 space-y-6">
                   <div className="flex items-center gap-3">
-                    <Cloud className="h-7 w-7 text-violet-700" />
+                    <Cloud className="h-7 w-7 text-primary" />
                     <h2 className="text-2xl font-bold">Digital Accounts</h2>
                   </div>
                   <p className="text-base text-muted-foreground">
                     Email, social media, cloud storage, and subscriptions. List the platform
                     and username — not the password.
                   </p>
-                  <div className="rounded-lg bg-violet-50 dark:bg-violet-950/30 border border-violet-200 dark:border-violet-800 p-4">
+                  <div className="rounded-lg bg-primary/10 border border-primary/25 p-4">
                     <p className="text-base">
                       For help closing or memorializing accounts, see{' '}
                       <Link
                         to="/tools/grief-tech-helper"
-                        className="underline font-semibold text-violet-700 dark:text-violet-300"
+                        className="underline font-semibold text-primary "
                       >
                         Grief & Digital Aftercare
                       </Link>
@@ -1432,7 +1432,7 @@ export default function DigitalEstateBinder() {
               <Card>
                 <CardContent className="p-6 space-y-5">
                   <div className="flex items-center gap-3">
-                    <Smartphone className="h-7 w-7 text-violet-700" />
+                    <Smartphone className="h-7 w-7 text-primary" />
                     <h2 className="text-2xl font-bold">Devices</h2>
                   </div>
                   <p className="text-base text-muted-foreground">
@@ -1496,7 +1496,7 @@ export default function DigitalEstateBinder() {
               <Card>
                 <CardContent className="p-6 space-y-5">
                   <div className="flex items-center gap-3">
-                    <PawPrint className="h-7 w-7 text-violet-700" />
+                    <PawPrint className="h-7 w-7 text-primary" />
                     <h2 className="text-2xl font-bold">Pets</h2>
                   </div>
                   <p className="text-base text-muted-foreground">
@@ -1572,7 +1572,7 @@ export default function DigitalEstateBinder() {
               <Card>
                 <CardContent className="p-6 space-y-5">
                   <div className="flex items-center gap-3">
-                    <Flower2 className="h-7 w-7 text-violet-700" />
+                    <Flower2 className="h-7 w-7 text-primary" />
                     <h2 className="text-2xl font-bold">Final Wishes</h2>
                   </div>
                   <p className="text-base text-muted-foreground">
@@ -1633,7 +1633,7 @@ export default function DigitalEstateBinder() {
               <Card>
                 <CardContent className="p-6 space-y-5">
                   <div className="flex items-center gap-3">
-                    <User className="h-7 w-7 text-violet-700" />
+                    <User className="h-7 w-7 text-primary" />
                     <h2 className="text-2xl font-bold">Personal History</h2>
                   </div>
                   <p className="text-base text-muted-foreground">
@@ -1690,11 +1690,11 @@ export default function DigitalEstateBinder() {
               <Card>
                 <CardContent className="p-6 space-y-5">
                   <div className="flex items-center gap-3">
-                    <Mail className="h-7 w-7 text-violet-700" />
+                    <Mail className="h-7 w-7 text-primary" />
                     <h2 className="text-2xl font-bold">Letters to Loved Ones</h2>
                   </div>
-                  <Alert className="bg-violet-50 border-violet-300 dark:bg-violet-950/30 dark:border-violet-800">
-                    <Heart className="h-5 w-5 text-violet-700" />
+                  <Alert className="bg-primary/10 border-primary/25 ">
+                    <Heart className="h-5 w-5 text-primary" />
                     <AlertTitle>Don't write the letters here.</AlertTitle>
                     <AlertDescription>
                       Write sealed letters on paper, keep them somewhere safe, and note below
@@ -2109,7 +2109,7 @@ export default function DigitalEstateBinder() {
         {/* FAQ */}
         <section className="print:hidden container max-w-4xl mx-auto px-4 py-10">
           <h2 className="text-3xl font-bold mb-4 flex items-center gap-2">
-            <Info className="h-7 w-7 text-violet-700" />
+            <Info className="h-7 w-7 text-primary" />
             Questions people ask
           </h2>
           <Accordion type="single" collapsible className="w-full">
@@ -2197,35 +2197,35 @@ export default function DigitalEstateBinder() {
 
         {/* Storage guidance */}
         <section className="print:hidden container max-w-4xl mx-auto px-4 pb-10">
-          <div className="rounded-2xl border-2 border-violet-300 dark:border-violet-800 bg-gradient-to-br from-violet-50 to-fuchsia-50 dark:from-violet-950/40 dark:to-fuchsia-950/20 p-6">
+          <div className="rounded-2xl border-2 border-primary/25 bg-gradient-to-br from-violet-50 to-fuchsia-50 dark:from-violet-950/40 dark:to-fuchsia-950/20 p-6">
             <h2 className="text-2xl font-bold mb-3 flex items-center gap-2">
-              <Shield className="h-6 w-6 text-violet-700" />
+              <Shield className="h-6 w-6 text-primary" />
               Where to keep the printed binder
             </h2>
             <ul className="space-y-2 text-base leading-relaxed">
               <li className="flex gap-2">
-                <span className="text-violet-700 font-bold">•</span>
+                <span className="text-primary font-bold">•</span>
                 <span>
                   <strong>Fireproof safe</strong> at home — and tell your spouse/executor where
                   the key is.
                 </span>
               </li>
               <li className="flex gap-2">
-                <span className="text-violet-700 font-bold">•</span>
+                <span className="text-primary font-bold">•</span>
                 <span>
                   <strong>Your attorney's office</strong> — a sealed envelope they hold until
                   needed.
                 </span>
               </li>
               <li className="flex gap-2">
-                <span className="text-violet-700 font-bold">•</span>
+                <span className="text-primary font-bold">•</span>
                 <span>
                   <strong>Safe deposit box</strong> — but know that some boxes are sealed on
                   death; check with your bank.
                 </span>
               </li>
               <li className="flex gap-2">
-                <span className="text-violet-700 font-bold">•</span>
+                <span className="text-primary font-bold">•</span>
                 <span>
                   <strong>Tell someone it exists.</strong> A perfect binder hidden too well does
                   no good.
@@ -2238,7 +2238,7 @@ export default function DigitalEstateBinder() {
         {/* Related */}
         <section className="print:hidden container max-w-5xl mx-auto px-4 pb-14">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-            <Heart className="h-6 w-6 text-violet-700" />
+            <Heart className="h-6 w-6 text-primary" />
             Related tools
           </h2>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
@@ -2269,13 +2269,13 @@ export default function DigitalEstateBinder() {
                 to={r.path}
                 className="group rounded-xl border bg-card p-4 hover:border-violet-400 hover:shadow-md transition-all"
               >
-                <div className="font-bold text-base mb-1 group-hover:text-violet-700">
+                <div className="font-bold text-base mb-1 group-hover:text-primary">
                   {r.title}
                 </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   {r.description}
                 </p>
-                <div className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-violet-700">
+                <div className="mt-2 inline-flex items-center gap-1 text-sm font-semibold text-primary">
                   Open
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-0.5 transition-transform" />
                 </div>

@@ -461,7 +461,7 @@ export default function TechGlossaryQuiz() {
                     <CatIcon className="h-3.5 w-3.5" />
                     {question.category}
                   </Badge>
-                  <span className="text-sm text-muted-foreground">
+                  <span className="text-base text-muted-foreground">
                     {currentIndex + 1} of {questions.length}
                   </span>
                 </div>
@@ -494,7 +494,7 @@ export default function TechGlossaryQuiz() {
                       <span className="flex items-center justify-center h-6 w-6 rounded-full border text-xs font-bold shrink-0 mt-0.5">
                         {String.fromCharCode(65 + i)}
                       </span>
-                      <span className="text-sm leading-relaxed">{option}</span>
+                      <span className="text-base leading-relaxed">{option}</span>
                       {answered && i === question.correctIndex && (
                         <CheckCircle className="h-5 w-5 ml-auto shrink-0 mt-0.5" />
                       )}
@@ -517,15 +517,15 @@ export default function TechGlossaryQuiz() {
                     >
                       <div className="flex items-center gap-2 mb-2">
                         {isCorrect ? (
-                          <CheckCircle className="h-5 w-5 text-green-500" />
+                          <CheckCircle className="h-5 w-5 text-success-foreground" />
                         ) : (
-                          <XCircle className="h-5 w-5 text-red-500" />
+                          <XCircle className="h-5 w-5 text-danger-foreground" />
                         )}
                         <span className="font-semibold">
                           {isCorrect ? 'Correct!' : 'Not quite.'}
                         </span>
                       </div>
-                      <p className="text-sm leading-relaxed">
+                      <p className="text-base leading-relaxed">
                         {question.explanation}
                       </p>
                     </div>

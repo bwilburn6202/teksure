@@ -248,11 +248,11 @@ export default function DigitalDetox() {
             return (
               <Card key={sign.title} className="border-2">
                 <CardContent className="p-6">
-                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
+                  <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-success text-success-foreground ">
                     <Icon className="h-5 w-5" />
                   </div>
                   <h3 className="mb-2 font-semibold">{sign.title}</h3>
-                  <p className="text-sm text-muted-foreground">{sign.description}</p>
+                  <p className="text-base text-muted-foreground">{sign.description}</p>
                 </CardContent>
               </Card>
             );
@@ -279,24 +279,24 @@ export default function DigitalDetox() {
                   <Apple className="h-5 w-5" />
                   <h3 className="text-xl font-semibold">iPhone Screen Time</h3>
                 </div>
-                <p className="mb-3 text-sm text-muted-foreground">
+                <p className="mb-3 text-base text-muted-foreground">
                   Settings → Screen Time. Turn it on. Wait one week and check the report.
                 </p>
-                <ul className="space-y-2 text-sm">
+                <ul className="space-y-2 text-base">
                   <li className="flex gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-success-foreground" />
                     <span><strong>App Limits:</strong> Set a daily cap on Instagram, TikTok, X, etc. When the limit hits, the app grays out.</span>
                   </li>
                   <li className="flex gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-success-foreground" />
                     <span><strong>Downtime:</strong> Schedule "lights out" hours when only essential apps work. Bedtime to morning is the common choice.</span>
                   </li>
                   <li className="flex gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-success-foreground" />
                     <span><strong>Always Allowed:</strong> Phone, Maps, and Messages stay available even during Downtime so emergencies still work.</span>
                   </li>
                   <li className="flex gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-success-foreground" />
                     <span><strong>Communication Limits:</strong> Restrict who can reach you during Downtime — useful for parents and on-call workers.</span>
                   </li>
                 </ul>
@@ -310,11 +310,11 @@ export default function DigitalDetox() {
                   <Apple className="h-5 w-5" />
                   <h3 className="text-xl font-semibold">iPhone Focus Modes</h3>
                 </div>
-                <p className="mb-3 text-sm text-muted-foreground">
+                <p className="mb-3 text-base text-muted-foreground">
                   Settings → Focus. Different modes for different parts of your day. Each one
                   filters notifications and home screens.
                 </p>
-                <ul className="space-y-2 text-sm">
+                <ul className="space-y-2 text-base">
                   <li><strong>Personal:</strong> After-hours mode. Family and friends only.</li>
                   <li><strong>Work:</strong> Slack, email, work calendar. Personal apps muted.</li>
                   <li><strong>Sleep:</strong> Auto-on at bedtime. Phone goes silent and dims.</li>
@@ -331,25 +331,25 @@ export default function DigitalDetox() {
                   <Android className="h-5 w-5" />
                   <h3 className="text-xl font-semibold">Android Digital Wellbeing</h3>
                 </div>
-                <p className="mb-3 text-sm text-muted-foreground">
+                <p className="mb-3 text-base text-muted-foreground">
                   Settings → Digital Wellbeing &amp; parental controls. Built into every modern
                   Android phone.
                 </p>
-                <ul className="space-y-2 text-sm">
+                <ul className="space-y-2 text-base">
                   <li className="flex gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-success-foreground" />
                     <span><strong>Dashboard:</strong> See unlocks, app usage, and notifications per app.</span>
                   </li>
                   <li className="flex gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-success-foreground" />
                     <span><strong>Bedtime mode:</strong> Auto-grayscale + Do Not Disturb after a chosen time. Grayscale alone cuts scrolling significantly.</span>
                   </li>
                   <li className="flex gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-success-foreground" />
                     <span><strong>Focus mode:</strong> Pause distracting apps during work or study hours.</span>
                   </li>
                   <li className="flex gap-2">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-600" />
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-success-foreground" />
                     <span><strong>App timers:</strong> Set a daily limit per app. Icon grays out when hit.</span>
                   </li>
                 </ul>
@@ -363,10 +363,10 @@ export default function DigitalDetox() {
                   <Laptop className="h-5 w-5" />
                   <h3 className="text-xl font-semibold">Mac Screen Time</h3>
                 </div>
-                <p className="mb-3 text-sm text-muted-foreground">
+                <p className="mb-3 text-base text-muted-foreground">
                   System Settings → Screen Time. Same controls as iPhone, but for the laptop.
                 </p>
-                <ul className="space-y-2 text-sm">
+                <ul className="space-y-2 text-base">
                   <li>App Limits and Downtime sync across all your Apple devices when iCloud is on.</li>
                   <li>Website limits: block specific sites in Safari during work hours.</li>
                   <li>Communication Limits also apply to Messages on Mac.</li>
@@ -382,11 +382,11 @@ export default function DigitalDetox() {
                   <Monitor className="h-5 w-5" />
                   <h3 className="text-xl font-semibold">Windows Focus Sessions</h3>
                 </div>
-                <p className="mb-3 text-sm text-muted-foreground">
+                <p className="mb-3 text-base text-muted-foreground">
                   Built into Windows 11. Open the Clock app → Focus Sessions. Pomodoro-style work
                   blocks with built-in break reminders.
                 </p>
-                <ul className="space-y-2 text-sm">
+                <ul className="space-y-2 text-base">
                   <li>Choose a session length (15, 30, 45, or 60 minutes) and Windows mutes notifications for the duration.</li>
                   <li>Integrates with Spotify for focus music if you sign in.</li>
                   <li>Connects to Microsoft To Do — pick a task to focus on for the session.</li>
@@ -423,8 +423,8 @@ export default function DigitalDetox() {
                     <ExternalLink className="h-4 w-4" />
                   </a>
                 </div>
-                <p className="mb-3 text-sm text-muted-foreground">{app.description}</p>
-                <p className="text-xs text-muted-foreground">
+                <p className="mb-3 text-base text-muted-foreground">{app.description}</p>
+                <p className="text-sm text-muted-foreground">
                   <span className="font-medium text-foreground">Best for:</span> {app.bestFor}
                 </p>
               </CardContent>
@@ -449,14 +449,14 @@ export default function DigitalDetox() {
           </div>
           <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-3">
             {resetPlan.map((day) => (
-              <Card key={day.day} className="border-2 border-emerald-200 dark:border-emerald-900">
+              <Card key={day.day} className="border-2 border-success-foreground/25 ">
                 <CardContent className="p-6">
                   <Badge variant="outline" className="mb-3">{day.day}</Badge>
                   <h3 className="mb-3 text-xl font-semibold">{day.title}</h3>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
+                  <ul className="space-y-2 text-base text-muted-foreground">
                     {day.steps.map((step, i) => (
                       <li key={i} className="flex gap-2">
-                        <span className="font-semibold text-emerald-700 dark:text-emerald-300">
+                        <span className="font-semibold text-success-foreground ">
                           {i + 1}.
                         </span>
                         <span>{step}</span>
@@ -519,7 +519,7 @@ export default function DigitalDetox() {
               <CardContent className="space-y-6 p-6 md:p-8">
                 <div>
                   <h3 className="mb-3 font-semibold">Signs it has crossed into addiction territory</h3>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
+                  <ul className="space-y-2 text-base text-muted-foreground">
                     <li>• You have lied about how much you use the phone, or hidden the use.</li>
                     <li>• Phone use has cost you a relationship, a job, or a meaningful opportunity.</li>
                     <li>• You feel real anxiety, anger, or panic when you cannot access the phone.</li>
@@ -530,7 +530,7 @@ export default function DigitalDetox() {
 
                 <div>
                   <h3 className="mb-3 font-semibold">Where to start</h3>
-                  <ul className="space-y-3 text-sm">
+                  <ul className="space-y-3 text-base">
                     <li>
                       <a
                         href="https://smartrecovery.org"

@@ -22,7 +22,7 @@ export default function SeniorHomeMods() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bathroom remodel</h2><p>$5,000-$25,000. Walk-in shower, grab bars, comfort-height toilet.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">VA Aid &amp; Attendance</h2><p>Up to $2,300/month for veterans. Helps pay for modifications.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">USDA grants</h2><p>Rural seniors. $7,500 grant for safety modifications.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Free home assessment from local Area Agency on Aging.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Free home assessment from local Area Agency on Aging.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

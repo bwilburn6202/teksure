@@ -17,12 +17,12 @@ export default function SeniorResistanceBands() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Set $20</h2><p>5 bands. Light to heavy. Plenty for senior strength training.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>No heavy weights to drop</li><li>Variable resistance</li><li>Travel-friendly</li><li>Joint-friendly</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>No heavy weights to drop</li><li>Variable resistance</li><li>Travel-friendly</li><li>Joint-friendly</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">YouTube</h2><p>Free. &ldquo;Senior resistance band exercises.&rdquo; Lots of guided routines.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">2-3x weekly</h2><p>20 minutes. Targets all major muscle groups.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Strength = independence</h2><p>Maintains ability to climb stairs, carry groceries, get up from floor.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Safety</h2><p>Inspect bands monthly. Replace if cracked. Snap = injury.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 20-min senior strength = better than 1-hour workout 1x weekly.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 20-min senior strength = better than 1-hour workout 1x weekly.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

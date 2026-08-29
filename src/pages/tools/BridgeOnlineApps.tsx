@@ -30,10 +30,10 @@ export default function BridgeOnlineApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BridgeOnlineApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior favorite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Considered #1 brain game.</li>
               <li>Never need 4 partners — apps fill in.</li>
               <li>Play anytime, day or night.</li>
@@ -56,7 +56,7 @@ export default function BridgeOnlineApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bridge Base Online (BBO)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most popular online bridge.</li>
               <li>Free to use.</li>
               <li>Play with bots or real people.</li>
@@ -71,7 +71,7 @@ export default function BridgeOnlineApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local bridge clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ACBL.org — find local club.</li>
               <li>Most cities have weekly games.</li>
               <li>Senior centers + country clubs.</li>
@@ -85,7 +85,7 @@ export default function BridgeOnlineApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Learning bridge</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Audrey Grant</strong> — most popular teacher. Books + videos.</li>
               <li><strong>Bridge for Beginners</strong> apps.</li>
               <li><strong>YouTube</strong> — &quot;Larry Cohen Bridge.&quot;</li>
@@ -99,7 +99,7 @@ export default function BridgeOnlineApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Bridge benefits dementia</h3>
-            <p className="text-sm text-muted-foreground">Studies repeatedly show bridge players have lower dementia rates. Combination of memory + strategy + social = ideal brain protection. Many seniors play bridge into their 90s. Free brain medicine.</p>
+            <p className="text-base text-muted-foreground">Studies repeatedly show bridge players have lower dementia rates. Combination of memory + strategy + social = ideal brain protection. Many seniors play bridge into their 90s. Free brain medicine.</p>
           </CardContent>
         </Card>
       </main>

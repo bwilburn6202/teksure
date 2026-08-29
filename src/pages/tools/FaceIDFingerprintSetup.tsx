@@ -19,7 +19,7 @@ export default function FaceIDFingerprintSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why use it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NO password to remember.</li>
               <li>Faster than typing.</li>
               <li>More secure than typed password.</li>
@@ -34,7 +34,7 @@ export default function FaceIDFingerprintSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Face ID setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Face ID &amp; Passcode.</li>
               <li>Type passcode.</li>
               <li>&quot;Set Up Face ID.&quot;</li>
@@ -48,7 +48,7 @@ export default function FaceIDFingerprintSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Touch ID</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone SE has fingerprint.</li>
               <li>Settings → Touch ID &amp; Passcode.</li>
               <li>Add Fingerprint — touch sensor multiple times.</li>
@@ -62,7 +62,7 @@ export default function FaceIDFingerprintSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Security → Biometrics.</li>
               <li>Set up fingerprint OR face unlock.</li>
               <li>Most Android phones have fingerprint.</li>
@@ -75,7 +75,7 @@ export default function FaceIDFingerprintSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior issues</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Beard growth</strong> — Face ID may need re-set.</li>
               <li><strong>Glasses</strong> — works fine usually.</li>
               <li><strong>Mask</strong> — iPhone 12+ works with mask.</li>
@@ -89,7 +89,7 @@ export default function FaceIDFingerprintSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps that benefit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Banking apps.</li>
               <li>Apple Pay / Google Pay.</li>
               <li>Password manager (1Password, Bitwarden).</li>
@@ -103,7 +103,7 @@ export default function FaceIDFingerprintSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Privacy</h3>
-            <p className="text-sm text-muted-foreground">Face ID + Touch ID data stays on YOUR device. Apple/Google never get fingerprint or face data. Stored encrypted in &quot;Secure Enclave.&quot; Significantly safer than written passwords. Many seniors avoid biometrics due to privacy fears — those fears unfounded.</p>
+            <p className="text-base text-muted-foreground">Face ID + Touch ID data stays on YOUR device. Apple/Google never get fingerprint or face data. Stored encrypted in &quot;Secure Enclave.&quot; Significantly safer than written passwords. Many seniors avoid biometrics due to privacy fears — those fears unfounded.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function ChurchLivestreamSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find your church online</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Search "[your church name] livestream" on Google.</li>
               <li>Most churches stream on YouTube, Facebook, or their own site.</li>
               <li>Some use Zoom for small services.</li>
@@ -32,7 +32,7 @@ export default function ChurchLivestreamSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cast to TV (much better than phone)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Smart TV</strong> — open YouTube/Facebook app on TV directly. Search church name.</li>
               <li><strong>Roku / FireTV / AppleTV</strong> — same. Open app, search.</li>
               <li><strong>Phone → TV</strong> — open service on phone, tap "cast" icon, pick your TV.</li>
@@ -45,7 +45,7 @@ export default function ChurchLivestreamSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">National + denominational online services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Daily Hope (Rick Warren)</strong> — pastor radio + livestream.</li>
               <li><strong>The Catholic Channel</strong> — daily Mass on Sirius XM + EWTN.</li>
               <li><strong>Mass online</strong> — Catholic.org, Loyola Press, EWTN.</li>
@@ -60,7 +60,7 @@ export default function ChurchLivestreamSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online giving</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most churches have "Give" button on website.</li>
               <li>Apps like <strong>Tithe.ly</strong>, <strong>Pushpay</strong>, <strong>Givelify</strong>.</li>
               <li>Set up recurring monthly giving — "set and forget".</li>
@@ -73,7 +73,7 @@ export default function ChurchLivestreamSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Stay connected beyond Sunday</h3>
-            <p className="text-sm text-muted-foreground">Most churches now have email newsletters, Facebook groups, prayer chains via text. Ask the church office how to join. The community matters as much as the service. Keep the relationships even when you can&apos;t make it in person.</p>
+            <p className="text-base text-muted-foreground">Most churches now have email newsletters, Facebook groups, prayer chains via text. Ask the church office how to join. The community matters as much as the service. Keep the relationships even when you can&apos;t make it in person.</p>
           </CardContent>
         </Card>
       </main>

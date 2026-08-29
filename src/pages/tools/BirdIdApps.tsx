@@ -30,10 +30,10 @@ export default function BirdIdApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BirdIdApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Merlin walkthrough</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Download Merlin Bird ID (free).</li>
               <li>Download "Bird Pack" for your region (one time, then offline).</li>
               <li>3 ways to identify:
@@ -61,7 +61,7 @@ export default function BirdIdApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best gear for backyard birding</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bird feeder</strong> — tube or hopper, $20-40.</li>
               <li><strong>Birds&apos; favorite seed</strong> — black oil sunflower (universal). $20 for 20 lbs at Costco.</li>
               <li><strong>Suet cage</strong> — for woodpeckers, $5.</li>
@@ -75,7 +75,7 @@ export default function BirdIdApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Help science</h3>
-            <p className="text-sm text-muted-foreground">eBird users contribute to the largest bird-population database on Earth. Your backyard sightings help scientists track migrations and threatened species. Free citizen science. Cornell uses your data for real research.</p>
+            <p className="text-base text-muted-foreground">eBird users contribute to the largest bird-population database on Earth. Your backyard sightings help scientists track migrations and threatened species. Free citizen science. Cornell uses your data for real research.</p>
           </CardContent>
         </Card>
       </main>

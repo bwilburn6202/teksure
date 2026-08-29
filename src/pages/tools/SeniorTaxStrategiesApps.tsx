@@ -19,10 +19,10 @@ export default function SeniorTaxStrategiesApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bracket management</h2><p>Withdraw just enough each year to stay in low tax bracket. Avoid jumping to next bracket.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Roth conversions</h2><p>Convert IRA to Roth in low-income years. Pay tax now, no tax later.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">QCDs</h2><p>Qualified Charitable Distribution. Donate up to $105,000 from IRA. No taxable income.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free help</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>AARP Tax-Aide</li><li>VITA volunteers</li><li>State SHIP advisors</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free help</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>AARP Tax-Aide</li><li>VITA volunteers</li><li>State SHIP advisors</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tax software</h2><p>FreeTaxUSA ($0 federal). TurboTax Free for simple returns.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Move state</h2><p>9 states have no income tax. Florida, Texas, Tennessee, Nevada, etc.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Talk to a CPA in November. Tax-loss harvesting deadlines are December 31.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Talk to a CPA in November. Tax-loss harvesting deadlines are December 31.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

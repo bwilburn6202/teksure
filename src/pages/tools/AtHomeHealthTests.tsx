@@ -28,7 +28,7 @@ export default function AtHomeHealthTests() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">When at-home tests help</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Routine annual bloodwork (cholesterol, glucose, thyroid).</li>
               <li>Tracking a known condition between doctor visits.</li>
               <li>Doctor wait too long for an appointment.</li>
@@ -44,10 +44,10 @@ export default function AtHomeHealthTests() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{t.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{t.cost}</span>
+                  <span className="text-base font-semibold text-primary">{t.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{t.best}</p>
-                <p className="text-sm text-muted-foreground">{t.good}</p>
+                <p className="text-base mb-1">{t.best}</p>
+                <p className="text-base text-muted-foreground">{t.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,7 +56,7 @@ export default function AtHomeHealthTests() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use a real doctor instead</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Anything serious — chest pain, stroke symptoms, severe pain.</li>
               <li>If you have ANY symptoms — go to a doctor for diagnosis, not a self-test.</li>
               <li>Test results in concerning range — your doctor can interpret in context.</li>
@@ -69,15 +69,15 @@ export default function AtHomeHealthTests() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save with insurance</h2>
-            <p className="text-sm">Many at-home tests qualify for HSA/FSA reimbursement. Cologuard is covered free under most Medicare and commercial insurance every 3 years.</p>
-            <p className="text-sm mt-2">Always check insurance first — sometimes a regular doctor visit + lab is cheaper than the at-home version.</p>
+            <p className="text-base">Many at-home tests qualify for HSA/FSA reimbursement. Cologuard is covered free under most Medicare and commercial insurance every 3 years.</p>
+            <p className="text-base mt-2">Always check insurance first — sometimes a regular doctor visit + lab is cheaper than the at-home version.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best practical use</h3>
-            <p className="text-sm text-muted-foreground">If you take cholesterol or blood-sugar meds, a $50 LetsGetChecked or Quest Direct test mid-year can confirm your meds are working — without paying $200 for an office visit. Share the results in your patient portal.</p>
+            <p className="text-base text-muted-foreground">If you take cholesterol or blood-sugar meds, a $50 LetsGetChecked or Quest Direct test mid-year can confirm your meds are working — without paying $200 for an office visit. Share the results in your patient portal.</p>
           </CardContent>
         </Card>
       </main>

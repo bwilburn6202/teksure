@@ -65,7 +65,7 @@ export default function TripBudgetCalculator() {
   }, {});
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Trip Budget Calculator | TekSure"
         description="Plan a trip budget by category, then track actual spending while you travel. See if you are on track or over budget."
@@ -74,10 +74,10 @@ export default function TripBudgetCalculator() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Plane className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Trip Budget Calculator</h1>
+            <Plane className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Trip Budget Calculator</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Plan what each part of your trip will cost, then update with actual amounts as you go. Easy to spot where you went over.
           </p>
         </div>
@@ -102,15 +102,15 @@ export default function TripBudgetCalculator() {
             <CardContent className="py-4 px-4">
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div>
-                  <p className="text-xs text-gray-500">Planned</p>
-                  <p className="text-xl font-bold text-gray-700">{formatMoney(totalPlanned)}</p>
+                  <p className="text-sm text-muted-foreground">Planned</p>
+                  <p className="text-xl font-bold text-foreground">{formatMoney(totalPlanned)}</p>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500">Actual</p>
-                  <p className="text-xl font-bold text-blue-700">{formatMoney(totalActual)}</p>
+                  <p className="text-sm text-muted-foreground">Actual</p>
+                  <p className="text-xl font-bold text-info-foreground">{formatMoney(totalActual)}</p>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500">{overBudget ? "Over by" : "Under by"}</p>
+                  <p className="text-sm text-muted-foreground">{overBudget ? "Over by" : "Under by"}</p>
                   <p className={`text-2xl font-bold ${overBudget ? "text-red-700" : "text-green-700"}`}>{formatMoney(Math.abs(variance))}</p>
                 </div>
               </div>
@@ -122,14 +122,14 @@ export default function TripBudgetCalculator() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-blue-600" />
+              <PlusCircle className="h-5 w-5 text-info-foreground" />
               Add a Budget Line
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
             <div>
               <Label className="text-base font-medium">Category</Label>
-              <select value={form.category} onChange={e => setForm(f => ({ ...f, category: e.target.value }))} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <select value={form.category} onChange={e => setForm(f => ({ ...f, category: e.target.value }))} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card">
                 {CATEGORIES.map(c => <option key={c}>{c}</option>)}
               </select>
             </div>
@@ -147,7 +147,7 @@ export default function TripBudgetCalculator() {
                 <Input id="actual" type="number" min="0" step="0.01" placeholder="0" value={form.actual} onChange={e => setForm(f => ({ ...f, actual: e.target.value }))} className="mt-1 text-base" />
               </div>
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base">Add Line</Button>
           </CardContent>
         </Card>
@@ -169,10 +169,10 @@ export default function TripBudgetCalculator() {
         {/* Grouped */}
         {expenses.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Plane className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Plane className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No budget lines yet.</p>
-              <p className="text-sm mt-1">Add your first big expense (often flights or lodging).</p>
+              <p className="text-base mt-1">Add your first big expense (often flights or lodging).</p>
             </CardContent>
           </Card>
         ) : (
@@ -183,8 +183,8 @@ export default function TripBudgetCalculator() {
               const sub = subActual - subPlanned;
               return (
                 <Card key={cat} className="print:break-inside-avoid">
-                  <CardHeader className="pb-2 pt-3 bg-blue-50">
-                    <CardTitle className="text-base text-blue-800 flex items-center justify-between">
+                  <CardHeader className="pb-2 pt-3 bg-info">
+                    <CardTitle className="text-base text-info-foreground flex items-center justify-between">
                       <span>{cat}</span>
                       <Badge variant="secondary" className="text-xs">
                         {formatMoney(subActual)} / {formatMoney(subPlanned)}
@@ -198,7 +198,7 @@ export default function TripBudgetCalculator() {
                         const v = e.actual - e.planned;
                         return (
                           <div key={e.id} className="flex items-center justify-between gap-2 py-1">
-                            <span className="text-sm text-gray-800 flex-1 truncate">{e.description}</span>
+                            <span className="text-sm text-foreground flex-1 truncate">{e.description}</span>
                             <div className="flex items-center gap-2 print:hidden">
                               <Input
                                 type="number"
@@ -210,12 +210,12 @@ export default function TripBudgetCalculator() {
                                 className="text-sm h-7 w-24"
                                 aria-label="Actual amount"
                               />
-                              <span className="text-xs text-gray-400 w-20 text-right">of {formatMoney(e.planned)}</span>
-                              <Button variant="ghost" size="icon" onClick={() => remove(e.id)} className="h-6 w-6 text-red-400 hover:text-red-600">
+                              <span className="text-xs text-muted-foreground w-20 text-right">of {formatMoney(e.planned)}</span>
+                              <Button variant="ghost" size="icon" onClick={() => remove(e.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground">
                                 <Trash2 className="h-3 w-3" />
                               </Button>
                             </div>
-                            <span className="hidden print:inline text-sm">
+                            <span className="hidden print:inline text-base">
                               {formatMoney(e.actual)} of {formatMoney(e.planned)}
                               {v !== 0 && ` (${v > 0 ? "+" : ""}${formatMoney(v)})`}
                             </span>
@@ -231,16 +231,16 @@ export default function TripBudgetCalculator() {
         )}
 
         {overBudget && expenses.length > 0 && (
-          <Card className="mt-4 bg-amber-50 border-amber-200 print:hidden">
+          <Card className="mt-4 bg-warn border-warn-foreground/25 print:hidden">
             <CardContent className="py-3 px-4 flex items-start gap-2">
-              <AlertTriangle className="h-5 w-5 text-amber-600 mt-0.5 shrink-0" />
-              <p className="text-sm text-amber-800">
+              <AlertTriangle className="h-5 w-5 text-warn-foreground mt-0.5 shrink-0" />
+              <p className="text-base text-warn-foreground">
                 Currently over budget by <span className="font-semibold">{formatMoney(variance)}</span>. Look at which categories are most over to see where to pull back.
               </p>
             </CardContent>
           </Card>
         )}
       </div>
-    </div>
+    </main>
   );
 }

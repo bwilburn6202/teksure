@@ -22,7 +22,7 @@ export default function SeniorPetHealthApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">11pets</h2><p>FREE. Track meds, vet visits, weight. Multi-pet support.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior pet tip</h2><p>Senior pets need more frequent vet visits. App reminders help.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pet insurance</h2><p>Trupanion and Healthy Paws apps make claims easy. Saves $1000s on emergencies.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Take photo of vet records. Easy to share with pet sitter or new vet.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Take photo of vet records. Easy to share with pet sitter or new vet.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

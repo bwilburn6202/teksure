@@ -22,7 +22,7 @@ export default function SeniorDenturesCare() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Implant-supported</h2><p>$3,000-$30,000. Permanent. No adhesive needed. Game-changer.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Annual check</h2><p>Dentist refits dentures yearly. Mouth changes shape over time.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Dental schools</h2><p>50-70% off dentures. Professor-supervised work.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Replace dentures every 5-7 years. Old ones cause infections.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Replace dentures every 5-7 years. Old ones cause infections.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function TriviaAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trivia Crack</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most popular trivia app.</li>
               <li>Free with optional premium ($3/month).</li>
               <li>Play against friends or strangers.</li>
@@ -33,7 +33,7 @@ export default function TriviaAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">QuizUp</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>500+ topics.</li>
               <li>Niche topics — Beatles, Cold War, etc.</li>
               <li>Free with ads.</li>
@@ -47,7 +47,7 @@ export default function TriviaAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Jeopardy! World Tour</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Official Jeopardy app.</li>
               <li>Real Jeopardy clues.</li>
               <li>Multiplayer + solo modes.</li>
@@ -61,7 +61,7 @@ export default function TriviaAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SongPop</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Music trivia — name that tune.</li>
               <li>Multiple decades — 50s, 60s, 70s, 80s.</li>
               <li>Hear song clip, identify it.</li>
@@ -75,7 +75,7 @@ export default function TriviaAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Heads Up!</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Made famous by Ellen DeGeneres.</li>
               <li>$0.99 — no subscription.</li>
               <li>Hold phone on forehead.</li>
@@ -89,7 +89,7 @@ export default function TriviaAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Geo trivia</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Worldle — daily country guessing game.</li>
               <li>GeoGuessr — guess location from photos.</li>
               <li>Sporcle — quiz creation site.</li>
@@ -103,7 +103,7 @@ export default function TriviaAppsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Trivia Crack with grandkids</h3>
-            <p className="text-sm text-muted-foreground">Great way to bond across generations. Trivia Crack lets you play with grandkids who live far away. Each turn lasts a minute. Over a week you exchange dozens of trivia rounds and chat. They&apos;re impressed at your knowledge of history; you&apos;re impressed at theirs of pop culture. Free relationship-building app.</p>
+            <p className="text-base text-muted-foreground">Great way to bond across generations. Trivia Crack lets you play with grandkids who live far away. Each turn lasts a minute. Over a week you exchange dozens of trivia rounds and chat. They&apos;re impressed at your knowledge of history; you&apos;re impressed at theirs of pop culture. Free relationship-building app.</p>
           </CardContent>
         </Card>
       </main>

@@ -62,10 +62,10 @@ export default function Caregiver() {
                     <div className="flex items-start justify-between mb-3">
                       <div className="rounded-lg bg-primary/10 p-2"><f.icon className="h-4 w-4 text-primary" /></div>
                       {f.status === 'coming-soon' && <Badge variant="outline" className="text-xs">Coming soon</Badge>}
-                      {f.status === 'live' && <CheckCircle2 className="h-4 w-4 text-green-500" />}
+                      {f.status === 'live' && <CheckCircle2 className="h-4 w-4 text-success-foreground" />}
                     </div>
                     <h3 className="font-semibold text-sm mb-1">{f.title}</h3>
-                    <p className="text-xs text-muted-foreground leading-relaxed">{f.desc}</p>
+                    <p className="text-sm text-muted-foreground leading-relaxed">{f.desc}</p>
                   </CardContent>
                 </Card>
               </div>
@@ -81,7 +81,7 @@ export default function Caregiver() {
                   <Link key={g.slug} to={`/guides/${g.slug}`}
                     className="flex items-center gap-3 rounded-xl border border-border hover:border-primary hover:bg-primary/5 p-3 transition-all group">
                     <g.icon className="h-5 w-5 text-primary shrink-0" />
-                    <span className="text-sm font-medium flex-1 group-hover:text-primary transition-colors">{g.title}</span>
+                    <span className="text-base font-medium flex-1 group-hover:text-primary transition-colors">{g.title}</span>
                     <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
                   </Link>
                 ))}
@@ -95,7 +95,7 @@ export default function Caregiver() {
                 {tips.map((tip, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <div className="w-6 h-6 rounded-full bg-pink-100 text-pink-700 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">{i + 1}</div>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{tip}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{tip}</p>
                   </div>
                 ))}
               </div>
@@ -106,7 +106,7 @@ export default function Caregiver() {
           <div className="bg-primary/5 rounded-2xl p-8 text-center border border-border">
             <Heart className="h-8 w-8 text-pink-400 mx-auto mb-3" />
             <h2 className="text-xl font-bold text-primary mb-2">Book help for someone you care for</h2>
-            <p className="text-muted-foreground mb-5 max-w-md mx-auto text-sm">You can book a TekSure technician session on behalf of a family member. Just mention in the notes that it's for someone else and we'll tailor our approach.</p>
+            <p className="text-muted-foreground mb-5 max-w-md mx-auto text-base">You can book a TekSure technician session on behalf of a family member. Just mention in the notes that it's for someone else and we'll tailor our approach.</p>
             <div className="flex gap-3 justify-center flex-wrap">
               <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl gap-2">
                 <Link to="/book"><Phone className="h-4 w-4" />Book Support for Them</Link>

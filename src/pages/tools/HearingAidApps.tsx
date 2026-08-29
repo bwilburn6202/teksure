@@ -194,7 +194,7 @@ export default function HearingAidApps() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-purple-500/10 rounded-full">
-                <Ear className="h-8 w-8 text-purple-600" />
+                <Ear className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Hearing Aid Apps & OTC Aids</h1>
@@ -207,9 +207,9 @@ export default function HearingAidApps() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Hearing Aid Apps' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Read this first — who OTC hearing aids are for</p>
                 <p className="text-muted-foreground">
@@ -221,7 +221,7 @@ export default function HearingAidApps() {
 
           <div className="mb-10">
             <h2 className="text-2xl font-bold mb-3">1. Free hearing-test apps</h2>
-            <p className="text-sm text-muted-foreground mb-5">
+            <p className="text-base text-muted-foreground mb-5">
               Start here. A test app on your phone takes 5-10 minutes and tells you whether you have a hearing concern at all — before you spend a dime on aids.
             </p>
 
@@ -233,12 +233,12 @@ export default function HearingAidApps() {
                       <p className="font-semibold text-base">{app.name}</p>
                       <Badge variant="outline">{app.platform}</Badge>
                     </div>
-                    <p className="text-sm mb-3">{app.what}</p>
+                    <p className="text-base mb-3">{app.what}</p>
 
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">How to use it</p>
                     <ol className="space-y-2 mb-4">
                       {app.how.map((step, i) => (
-                        <li key={i} className="flex gap-3 text-sm">
+                        <li key={i} className="flex gap-3 text-base">
                           <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                           <span>{step}</span>
                         </li>
@@ -246,13 +246,13 @@ export default function HearingAidApps() {
                     </ol>
 
                     <div className="grid sm:grid-cols-2 gap-3 mb-3">
-                      <div className="p-3 rounded-lg bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-900">
-                        <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">When it works</p>
-                        <p className="text-xs">{app.worksWhen}</p>
+                      <div className="p-3 rounded-lg bg-success border border-success-foreground/25 ">
+                        <p className="text-sm font-semibold text-success-foreground mb-1">When it works</p>
+                        <p className="text-sm">{app.worksWhen}</p>
                       </div>
-                      <div className="p-3 rounded-lg bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900">
-                        <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">When it does not</p>
-                        <p className="text-xs">{app.doesNotWorkWhen}</p>
+                      <div className="p-3 rounded-lg bg-danger border border-danger-foreground/25 ">
+                        <p className="text-sm font-semibold text-danger-foreground mb-1">When it does not</p>
+                        <p className="text-sm">{app.doesNotWorkWhen}</p>
                       </div>
                     </div>
 
@@ -267,21 +267,21 @@ export default function HearingAidApps() {
 
             <Card className="border-border bg-muted/30 mt-5">
               <CardContent className="p-5">
-                <p className="text-sm font-semibold mb-2">Brand-specific hearing aid apps (if you already have aids)</p>
-                <p className="text-xs text-muted-foreground mb-3">
+                <p className="text-base font-semibold mb-2">Brand-specific hearing aid apps (if you already have aids)</p>
+                <p className="text-sm text-muted-foreground mb-3">
                   If you already wear prescription hearing aids, the manufacturer has a free app that controls them. These do not replace your audiologist — they let you make small adjustments yourself.
                 </p>
                 <div className="space-y-2">
                   {BRAND_APPS.map(b => (
                     <div key={b.brand} className="border-t border-border pt-2 first:border-t-0 first:pt-0">
                       <div className="flex items-center justify-between gap-2 flex-wrap">
-                        <p className="text-sm font-medium">{b.brand} — {b.app}</p>
+                        <p className="text-base font-medium">{b.brand} — {b.app}</p>
                         <a href={b.link} target="_blank" rel="noreferrer"
                           className="inline-flex items-center gap-1 text-xs text-primary hover:underline">
                           Official link <ExternalLink className="h-3 w-3" />
                         </a>
                       </div>
-                      <p className="text-xs text-muted-foreground mt-1">{b.what}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{b.what}</p>
                     </div>
                   ))}
                 </div>
@@ -291,7 +291,7 @@ export default function HearingAidApps() {
 
           <div className="mb-10">
             <h2 className="text-2xl font-bold mb-3">2. Over-the-counter hearing aid picker</h2>
-            <p className="text-sm text-muted-foreground mb-5">
+            <p className="text-base text-muted-foreground mb-5">
               Since 2022, the FDA allows OTC hearing aids — no prescription needed for adults with mild-to-moderate loss. Five honest picks, ranked from cheapest to most expensive.
             </p>
 
@@ -303,19 +303,19 @@ export default function HearingAidApps() {
                       <p className="font-semibold text-base">{aid.name}</p>
                       <Badge variant="outline">{aid.price}</Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {aid.whoFor}</p>
+                    <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {aid.whoFor}</p>
 
                     <div className="grid sm:grid-cols-2 gap-2 mb-3">
                       <div>
-                        <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                        <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                         <ul className="space-y-0.5">
-                          {aid.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}
+                          {aid.pros.map((p, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>)}
                         </ul>
                       </div>
                       <div>
-                        <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                        <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                         <ul className="space-y-0.5">
-                          {aid.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                          {aid.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                         </ul>
                       </div>
                     </div>
@@ -335,8 +335,8 @@ export default function HearingAidApps() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A few rules before you buy</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A few rules before you buy</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Always check the return window. 30-100 days is normal — anything shorter is a red flag.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Costco, Best Buy, and Walgreens carry OTC aids in person. Trying before buying helps.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Medicare does not cover OTC aids, but some Medicare Advantage plans do — call your plan to ask.</span></li>
@@ -349,20 +349,20 @@ export default function HearingAidApps() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/hearing-aid-pairing-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Hearing Aid Pairing Wizard</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Connect your aids to iPhone or Android.</p>
+                <p className="font-medium text-base">Hearing Aid Pairing Wizard</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Connect your aids to iPhone or Android.</p>
               </Link>
               <Link to="/tools/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Low-Vision Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Sight tools to pair with hearing.</p>
+                <p className="font-medium text-base">Low-Vision Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Sight tools to pair with hearing.</p>
               </Link>
               <Link to="/accessibility" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Accessibility Hub</p>
-                <p className="text-xs text-muted-foreground mt-0.5">All accessibility resources.</p>
+                <p className="font-medium text-base">Accessibility Hub</p>
+                <p className="text-sm text-muted-foreground mt-0.5">All accessibility resources.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: book a baseline hearing test with an audiologist once a year after age 60, even if you feel fine. Catching loss early makes any device — OTC or prescription — work better.
           </p>
         </div>

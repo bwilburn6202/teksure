@@ -235,8 +235,8 @@ export default function SubscriptionAuditor() {
         <section className="border-b">
           <div className="container py-10 md:py-14 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-rose-50 dark:bg-rose-950/30 flex items-center justify-center flex-shrink-0">
-                <Search className="h-6 w-6 text-rose-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-danger flex items-center justify-center flex-shrink-0">
+                <Search className="h-6 w-6 text-danger-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -295,7 +295,7 @@ export default function SubscriptionAuditor() {
                           </label>
                           {isChecked && (
                             <div className="flex items-center gap-1">
-                              <span className="text-muted-foreground text-sm">$</span>
+                              <span className="text-muted-foreground text-base">$</span>
                               <Input
                                 type="number"
                                 inputMode="decimal"
@@ -305,7 +305,7 @@ export default function SubscriptionAuditor() {
                                 className="w-20 h-9"
                                 aria-label={`${item.name} monthly cost`}
                               />
-                              <span className="text-muted-foreground text-sm">/mo</span>
+                              <span className="text-muted-foreground text-base">/mo</span>
                             </div>
                           )}
                         </div>
@@ -320,7 +320,7 @@ export default function SubscriptionAuditor() {
               <Card className="border-2 shadow-lg">
                 <CardContent className="pt-6 flex flex-wrap items-center justify-between gap-4">
                   <div>
-                    <p className="text-sm text-muted-foreground">Checked so far</p>
+                    <p className="text-base text-muted-foreground">Checked so far</p>
                     <p className="text-xl font-bold">
                       {selectedCount} subscription{selectedCount === 1 ? '' : 's'} · ${monthlyTotal}/mo
                     </p>
@@ -341,14 +341,14 @@ export default function SubscriptionAuditor() {
             <div className="grid grid-cols-2 gap-4">
               <Card>
                 <CardContent className="pt-6 text-center">
-                  <p className="text-sm text-muted-foreground mb-1">Monthly Total</p>
-                  <p className="text-3xl font-bold text-rose-600">${monthlyTotal}</p>
+                  <p className="text-base text-muted-foreground mb-1">Monthly Total</p>
+                  <p className="text-3xl font-bold text-danger-foreground">${monthlyTotal}</p>
                 </CardContent>
               </Card>
               <Card>
                 <CardContent className="pt-6 text-center">
-                  <p className="text-sm text-muted-foreground mb-1">Annual Total</p>
-                  <p className="text-3xl font-bold text-rose-600">${annualTotal.toLocaleString()}</p>
+                  <p className="text-base text-muted-foreground mb-1">Annual Total</p>
+                  <p className="text-3xl font-bold text-danger-foreground">${annualTotal.toLocaleString()}</p>
                 </CardContent>
               </Card>
             </div>
@@ -371,7 +371,7 @@ export default function SubscriptionAuditor() {
                       </div>
                       <div className="flex-1">
                         <p className="font-semibold mb-1">{tip.title}</p>
-                        <p className="text-sm text-muted-foreground leading-relaxed">{tip.body}</p>
+                        <p className="text-base text-muted-foreground leading-relaxed">{tip.body}</p>
                         {tip.link && (
                           <a
                             href={tip.link.url}
@@ -409,7 +409,7 @@ export default function SubscriptionAuditor() {
                       >
                         <div>
                           <p className="font-semibold">{i.name}</p>
-                          <p className="text-xs text-muted-foreground">Official cancellation page</p>
+                          <p className="text-sm text-muted-foreground">Official cancellation page</p>
                         </div>
                         <ExternalLink className="h-4 w-4 text-muted-foreground group-hover:text-primary" aria-hidden="true" />
                       </a>
@@ -419,14 +419,14 @@ export default function SubscriptionAuditor() {
             )}
 
             {/* Save Your Receipts callout */}
-            <Card className="border-2 border-amber-200 dark:border-amber-900 bg-amber-50/50 dark:bg-amber-950/20">
+            <Card className="border-2 border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/20">
               <CardContent className="pt-6 flex gap-4 items-start">
-                <div className="h-12 w-12 rounded-xl bg-amber-100 dark:bg-amber-950/50 flex items-center justify-center flex-shrink-0">
-                  <Receipt className="h-6 w-6 text-amber-700" aria-hidden="true" />
+                <div className="h-12 w-12 rounded-xl bg-warn flex items-center justify-center flex-shrink-0">
+                  <Receipt className="h-6 w-6 text-warn-foreground" aria-hidden="true" />
                 </div>
                 <div>
                   <p className="font-bold text-lg mb-1">Save Your Cancellation Receipts</p>
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-base leading-relaxed">
                     After you cancel, take a screenshot of the confirmation or save the email. Some services
                     "accidentally" keep charging — a receipt lets you dispute the charge with your bank.
                   </p>

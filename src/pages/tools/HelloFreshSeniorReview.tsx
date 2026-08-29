@@ -19,7 +19,7 @@ export default function HelloFreshSeniorReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What are meal kits?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Box delivered weekly with recipes + ingredients.</li>
               <li>Everything pre-measured for each meal.</li>
               <li>Just cook + eat — no menu planning needed.</li>
@@ -33,7 +33,7 @@ export default function HelloFreshSeniorReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">HelloFresh — most popular</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Around $9–11 per serving.</li>
               <li>2 or 4 person portions.</li>
               <li>3–6 meals per week.</li>
@@ -47,7 +47,7 @@ export default function HelloFreshSeniorReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other meal kit options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Blue Apron — chef-quality recipes.</li>
               <li>Home Chef — more variety, customization.</li>
               <li>EveryPlate — cheapest, $5/serving.</li>
@@ -61,7 +61,7 @@ export default function HelloFreshSeniorReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Silver Cuisine by BistroMD — heart-healthy, $10/meal.</li>
               <li>Mom&apos;s Meals — Medicare/Medicaid covered for some.</li>
               <li>Magic Kitchen Senior — simple reheat meals.</li>
@@ -75,7 +75,7 @@ export default function HelloFreshSeniorReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pros + cons for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pro: no menu planning or shopping.</li>
               <li>Pro: portion control built in.</li>
               <li>Pro: try new foods + cuisines.</li>
@@ -89,7 +89,7 @@ export default function HelloFreshSeniorReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When meal kits make sense</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Recently widowed — restart cooking habit.</li>
               <li>Recovering from illness or surgery.</li>
               <li>Cooking for one feels overwhelming.</li>
@@ -103,7 +103,7 @@ export default function HelloFreshSeniorReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try one week with sign-up discount</h3>
-            <p className="text-sm text-muted-foreground">All meal kit companies offer 50%+ off your first box — usually around $5–6 per serving. Try ONE week of HelloFresh or EveryPlate (cheapest) to see if you like the format. If yes, continue. If no, cancel before next box ships. For seniors who feel cooking has become a chore, meal kits can rekindle the joy of cooking without the planning burden.</p>
+            <p className="text-base text-muted-foreground">All meal kit companies offer 50%+ off your first box — usually around $5–6 per serving. Try ONE week of HelloFresh or EveryPlate (cheapest) to see if you like the format. If yes, continue. If no, cancel before next box ships. For seniors who feel cooking has become a chore, meal kits can rekindle the joy of cooking without the planning burden.</p>
           </CardContent>
         </Card>
       </main>

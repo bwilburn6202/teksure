@@ -19,7 +19,7 @@ export default function HospitalCompareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free comparison tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Medicare Care Compare</strong> — medicare.gov/care-compare. Star ratings.</li>
               <li><strong>Leapfrog Hospital Safety Grade</strong> — A-F grades. hospitalsafetygrade.org.</li>
               <li><strong>US News Best Hospitals</strong> — annual rankings.</li>
@@ -33,7 +33,7 @@ export default function HospitalCompareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to check</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Star rating overall.</li>
               <li>Mortality rates (lower better).</li>
               <li>Readmission rates (lower better).</li>
@@ -48,7 +48,7 @@ export default function HospitalCompareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Specialty hospitals</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>For elective surgery — research SPECIALIST hospitals.</li>
               <li>Hip / knee replacement: orthopedic specialty centers.</li>
               <li>Cardiac surgery: high-volume cardiac centers.</li>
@@ -62,7 +62,7 @@ export default function HospitalCompareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Worst hospitals to avoid</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1-star Medicare ratings.</li>
               <li>D or F Leapfrog grades.</li>
               <li>High readmission rates.</li>
@@ -76,7 +76,7 @@ export default function HospitalCompareGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">In-network matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Verify with insurance BEFORE elective surgery.</li>
               <li>In-network = lower cost.</li>
               <li>Out-of-network surprise bills $$$ (now mostly illegal but happens).</li>
@@ -90,7 +90,7 @@ export default function HospitalCompareGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Patient advocate</h3>
-            <p className="text-sm text-muted-foreground">If complex surgery — hire patient advocate ($75-200/hr). Nurses or social workers who navigate hospital. <strong>Patient Advocate Foundation</strong> — patientadvocate.org. Free for some. Insurance company should provide. Family member can ALSO be advocate — be present, ask questions.</p>
+            <p className="text-base text-muted-foreground">If complex surgery — hire patient advocate ($75-200/hr). Nurses or social workers who navigate hospital. <strong>Patient Advocate Foundation</strong> — patientadvocate.org. Free for some. Insurance company should provide. Family member can ALSO be advocate — be present, ask questions.</p>
           </CardContent>
         </Card>
       </main>

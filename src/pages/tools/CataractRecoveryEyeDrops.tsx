@@ -47,15 +47,15 @@ export default function CataractRecoveryEyeDrops() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Cataract Recovery Eye-Drop Tracker | TekSure" description="A printable 4-week schedule for the strict eye-drop regimen after cataract surgery. Antibiotic, steroid, and NSAID doses by week. Check off each time you take a drop." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <Eye className="h-7 w-7 text-sky-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Cataract Eye-Drop Tracker</h1>
+            <Eye className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Cataract Eye-Drop Tracker</h1>
           </div>
-          <p className="text-gray-600 text-lg">The first 4 weeks after cataract surgery require careful drops. Type your surgery date and see today as a checklist.</p>
+          <p className="text-muted-foreground text-lg">The first 4 weeks after cataract surgery require careful drops. Type your surgery date and see today as a checklist.</p>
         </div>
 
         <Card className="mb-4 print:hidden">
@@ -65,33 +65,33 @@ export default function CataractRecoveryEyeDrops() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-sky-50 border-sky-200">
+        <Card className="mb-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-sky-900">Day {d} after surgery. You are in <span className="font-bold">{currentWeek}</span>.</p>
+            <p className="text-base text-info-foreground">Day {d} after surgery. You are in <span className="font-bold">{currentWeek}</span>.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="py-4 px-4">
-            <h2 className="text-xl font-bold text-gray-900 mb-3">Today is {today()}</h2>
+            <h2 className="text-xl font-bold text-foreground mb-3">Today is {today()}</h2>
             <div className="space-y-4">
               {DEFAULT_DROPS.map(drop => {
                 const dosesToday = drop.weeks[currentWeek];
                 if (dosesToday === 0) return null;
                 return (
-                  <div key={drop.name} className="border border-gray-200 rounded-lg p-3 bg-white">
+                  <div key={drop.name} className="border border-border rounded-lg p-3 bg-card">
                     <div className="flex items-baseline justify-between gap-2">
                       <div>
-                        <p className="font-semibold text-gray-900">{drop.name}</p>
-                        <p className="text-xs text-gray-500 italic">{drop.type}</p>
+                        <p className="font-semibold text-foreground">{drop.name}</p>
+                        <p className="text-sm text-muted-foreground italic">{drop.type}</p>
                       </div>
                       <Badge variant="outline">{dosesToday}x per day</Badge>
                     </div>
-                    <div className="mt-2 grid grid-cols-4 gap-2">
+                    <div className="mt-2 grid grid-cols-2 sm:grid-cols-4 gap-2">
                       {HOURS.slice(0, dosesToday).map(hour => {
                         const key = `${today()}-${drop.name}-${hour}`;
                         return (
-                          <label key={key} className={`flex items-center gap-2 border rounded p-2 cursor-pointer text-sm ${taken[key] ? "bg-emerald-50 border-emerald-300" : "bg-white border-gray-200"}`}>
+                          <label key={key} className={`flex items-center gap-2 border rounded p-2 cursor-pointer text-base ${taken[key] ? "bg-emerald-50 border-emerald-300" : "bg-white border-gray-200"}`}>
                             <Checkbox checked={!!taken[key]} onCheckedChange={() => toggle(key)} className="print:hidden" />
                             <span className={taken[key] ? "line-through text-gray-500" : "text-gray-900"}>{hour}</span>
                           </label>
@@ -105,21 +105,21 @@ export default function CataractRecoveryEyeDrops() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-amber-50 border-amber-200">
+        <Card className="mb-4 bg-warn border-warn-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-amber-900"><span className="font-semibold">Wait 5 minutes between different drops.</span> Lie back, look up, pull lower lid down, drop in pocket, close eyes for 30 seconds. Press the inner corner with a clean finger to slow drainage and reduce systemic absorption.</p>
+            <p className="text-base text-warn-foreground"><span className="font-semibold">Wait 5 minutes between different drops.</span> Lie back, look up, pull lower lid down, drop in pocket, close eyes for 30 seconds. Press the inner corner with a clean finger to slow drainage and reduce systemic absorption.</p>
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-rose-50 border-rose-200">
+        <Card className="mb-4 bg-danger border-danger-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-rose-900"><span className="font-semibold">CALL YOUR SURGEON if:</span> sudden severe pain, vision suddenly worse, new flashes or shower of floaters, redness with discharge, fever. These can mean infection or retinal detachment and need same-day care.</p>
+            <p className="text-base text-danger-foreground"><span className="font-semibold">CALL YOUR SURGEON if:</span> sudden severe pain, vision suddenly worse, new flashes or shower of floaters, redness with discharge, fever. These can mean infection or retinal detachment and need same-day care.</p>
           </CardContent>
         </Card>
 
-        <Card className="bg-blue-50 border-blue-200 mb-4">
+        <Card className="bg-info border-info-foreground/25 mb-4">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Activity rules typical month 1:</span> No lifting over 10 pounds. No bending below the waist for the first week. No eye rubbing ever. Wear sunglasses outdoors (even cloudy days). No swimming pools or hot tubs for 2 weeks. Always confirm with YOUR surgeon — these vary.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Activity rules typical month 1:</span> No lifting over 10 pounds. No bending below the waist for the first week. No eye rubbing ever. Wear sunglasses outdoors (even cloudy days). No swimming pools or hot tubs for 2 weeks. Always confirm with YOUR surgeon — these vary.</p>
           </CardContent>
         </Card>
 
@@ -129,6 +129,6 @@ export default function CataractRecoveryEyeDrops() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

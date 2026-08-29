@@ -19,7 +19,7 @@ export default function SportsStreamCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">By sport (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NFL</strong> — most games on antenna (free) + Paramount+ (CBS) + Peacock (NBC) + Amazon Prime (Thursday). NFL Sunday Ticket via YouTube ($350/yr) for out-of-market.</li>
               <li><strong>NBA</strong> — ESPN+ + ABC + TNT (now on Max). NBA League Pass for all games ($100-200/yr).</li>
               <li><strong>MLB</strong> — MLB.tv ($150/yr). Local team blackouts unless via cable. Apple TV+ Friday games.</li>
@@ -35,7 +35,7 @@ export default function SportsStreamCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best "everything sports" services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>FuboTV</strong> — $80/mo. Most live sports channels. Cable replacement.</li>
               <li><strong>YouTube TV</strong> — $73/mo. Lots of sports. Cable replacement.</li>
               <li><strong>Sling TV Orange</strong> — $40/mo. ESPN + many basics. Cheaper basic.</li>
@@ -47,7 +47,7 @@ export default function SportsStreamCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save with bundles</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Disney Bundle</strong> — Disney+ + Hulu + ESPN+ for $15/mo.</li>
               <li><strong>Apple TV+ free</strong> with select Comcast/Verizon plans.</li>
               <li><strong>Verizon FiOS</strong> includes some sports streaming.</li>
@@ -59,7 +59,7 @@ export default function SportsStreamCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free sports</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local NFL (Sunday) on antenna — your home team almost always free.</li>
               <li>Local college football on antenna.</li>
               <li>Olympics on Peacock + NBC (NBC free with antenna).</li>
@@ -72,7 +72,7 @@ export default function SportsStreamCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t pay year-round</h3>
-            <p className="text-sm text-muted-foreground">Many sports streamers can be subscribed only for the season. NBA League Pass for the season, then cancel. NFL Sunday Ticket, then cancel. MLB.tv, then cancel. $200/yr targeted beats $1,200/yr for cable.</p>
+            <p className="text-base text-muted-foreground">Many sports streamers can be subscribed only for the season. NBA League Pass for the season, then cancel. NFL Sunday Ticket, then cancel. MLB.tv, then cancel. $200/yr targeted beats $1,200/yr for cable.</p>
           </CardContent>
         </Card>
       </main>

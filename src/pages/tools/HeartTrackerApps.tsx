@@ -30,10 +30,10 @@ export default function HeartTrackerApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{d.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{d.cost}</span>
+                  <span className="text-base font-semibold text-primary">{d.cost}</span>
                 </div>
-                <p className="text-sm">{d.best}</p>
-                <p className="text-sm text-muted-foreground">{d.good}</p>
+                <p className="text-base">{d.best}</p>
+                <p className="text-base text-muted-foreground">{d.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function HeartTrackerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why monitor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AFib detection</strong> — Apple Watch alone has caught millions of cases. Untreated AFib = stroke risk.</li>
               <li>Track resting heart rate trends — sudden change is a flag.</li>
               <li>Help cardiologist see real-world patterns.</li>
@@ -55,7 +55,7 @@ export default function HeartTrackerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to call doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>App says "AFib detected" — show doctor at next visit. Save the PDF.</li>
               <li>Resting heart rate consistently above 100 or below 50.</li>
               <li>Sudden 10+ bpm increase in resting rate without explanation.</li>
@@ -68,7 +68,7 @@ export default function HeartTrackerApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Share with doctor</h3>
-            <p className="text-sm text-muted-foreground">All these apps export PDF reports. Bring to cardiology appointments. Doctors love seeing 30-day trends instead of 1 in-office reading. Cardiologist often catches things in real-world data they&apos;d miss in 5-min visit.</p>
+            <p className="text-base text-muted-foreground">All these apps export PDF reports. Bring to cardiology appointments. Doctors love seeing 30-day trends instead of 1 in-office reading. Cardiologist often catches things in real-world data they&apos;d miss in 5-min visit.</p>
           </CardContent>
         </Card>
       </main>

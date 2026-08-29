@@ -19,7 +19,7 @@ export default function SingingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Strengthens diaphragm + lungs.</li>
               <li>Studies — singing reduces depression 50%.</li>
               <li>Releases endorphins.</li>
@@ -33,7 +33,7 @@ export default function SingingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to sing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Choirs</strong> — church / community.</li>
               <li><strong>Sweet Adelines</strong> — women&apos;s harmony.</li>
               <li><strong>Barbershop quartets</strong> — men&apos;s.</li>
@@ -47,7 +47,7 @@ export default function SingingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice health basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drink water — hydrate vocal cords.</li>
               <li>Warm up gently.</li>
               <li>Don&apos;t strain — voice cracks = stop.</li>
@@ -61,7 +61,7 @@ export default function SingingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Karaoke apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Smule</strong> — sing with others remotely.</li>
               <li><strong>Singa</strong> — millions of songs.</li>
               <li><strong>YouTube karaoke</strong> — endless free.</li>
@@ -75,7 +75,7 @@ export default function SingingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice lessons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local teacher $40-80.</li>
               <li>Online — Yousician, Singing Carrots.</li>
               <li>YouTube — Cheryl Porter, Eric Arceneaux.</li>
@@ -89,7 +89,7 @@ export default function SingingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Singing for dementia</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Music + lyrics last memories preserved.</li>
               <li>Singing brings back memories.</li>
               <li>Stimulates brain regions music + speech.</li>
@@ -103,7 +103,7 @@ export default function SingingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No talent required</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;ve been told &quot;you can&apos;t sing&quot; — disregard. Most amateur choirs welcome anyone. Group singing means you can hide. Voice improves with practice. Brain + body benefits regardless. Sing in shower. Sing while driving. Free, instantly accessible. The most under-used senior wellness tool.</p>
+            <p className="text-base text-muted-foreground">If you&apos;ve been told &quot;you can&apos;t sing&quot; — disregard. Most amateur choirs welcome anyone. Group singing means you can hide. Voice improves with practice. Brain + body benefits regardless. Sing in shower. Sing while driving. Free, instantly accessible. The most under-used senior wellness tool.</p>
           </CardContent>
         </Card>
       </main>

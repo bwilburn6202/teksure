@@ -22,7 +22,7 @@ export default function SeniorAdvanceCarePlanning() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">POLST</h2><p>Physician Orders for Life-Sustaining Treatment. Specific medical orders. Doctor signs.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tell family</h2><p>Don&apos;t hide documents. Tell adults kids where to find them.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Update every 5 years</h2><p>Wishes change. Review and update.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Ask doctor if they support advance care planning. Most do.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Ask doctor if they support advance care planning. Most do.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

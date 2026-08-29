@@ -17,12 +17,12 @@ export default function SeniorTherapyPets() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefits</h2><p>Lower BP. Less depression. Improved memory. Reduced loneliness.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior-friendly pets</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Senior dogs (calm, trained)</li><li>Cats (low-maintenance)</li><li>Birds (long companions)</li><li>Fish (calming)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior-friendly pets</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Senior dogs (calm, trained)</li><li>Cats (low-maintenance)</li><li>Birds (long companions)</li><li>Fish (calming)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pets for the Elderly</h2><p>Foundation pays adoption fees for seniors 60+. Free pet.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Robot pets</h2><p>Joy For All Companion Pet $130. For dementia. Real benefits.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Therapy dog visits</h2><p>FREE. Many groups visit assisted living. Schedule via local senior centers.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Travel hospital fund</h2><p>Pet-Vet partnerships help seniors with vet bills. Grants available.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Senior pets bond fast with senior owners. Mutual rescue.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Senior pets bond fast with senior owners. Mutual rescue.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function AISeniorSearch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best AI search engines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Perplexity AI</strong> (perplexity.ai) — best for FACTUAL questions. Cites sources. Free.</li>
               <li><strong>ChatGPT</strong> — conversational. Best for questions about anything.</li>
               <li><strong>Google AI Overviews</strong> — top of Google results. Free.</li>
@@ -32,7 +32,7 @@ export default function AISeniorSearch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why AI beats Google for some things</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"What&apos;s the best non-stick pan under $50?" — AI summarizes 50 reviews instantly.</li>
               <li>"Side effects of Lisinopril vs Losartan?" — clear answer, no ad spam.</li>
               <li>"Explain this letter from IRS." — paste in, get plain English.</li>
@@ -45,7 +45,7 @@ export default function AISeniorSearch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When Google still wins</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local businesses + hours.</li>
               <li>Maps + directions.</li>
               <li>News (latest).</li>
@@ -59,7 +59,7 @@ export default function AISeniorSearch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly prompts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Explain this in plain English: [paste medical jargon]."</li>
               <li>"What does this mean: [paste IRS letter]."</li>
               <li>"Translate this Spanish prescription label."</li>
@@ -70,11 +70,11 @@ export default function AISeniorSearch() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Verify medical, legal, financial</h2>
-            <p className="text-sm">AI can be wrong — confidently. For ANYTHING medical, legal, or financial:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">AI can be wrong — confidently. For ANYTHING medical, legal, or financial:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Cross-check with real source (CDC, NIH, IRS, official sites).</li>
               <li>Confirm with doctor / lawyer / financial advisor.</li>
               <li>Don&apos;t self-treat / self-file based on AI alone.</li>
@@ -86,7 +86,7 @@ export default function AISeniorSearch() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Voice search</h3>
-            <p className="text-sm text-muted-foreground">All these AI assistants have voice mode. Talk to them while cooking / driving / bedside. ChatGPT app has best voice mode currently. Better than typing for hands-busy moments.</p>
+            <p className="text-base text-muted-foreground">All these AI assistants have voice mode. Talk to them while cooking / driving / bedside. ChatGPT app has best voice mode currently. Better than typing for hands-busy moments.</p>
           </CardContent>
         </Card>
       </main>

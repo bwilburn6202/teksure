@@ -73,7 +73,7 @@ function calcMbps(i: Inputs) {
 function NumStep({ label, value, set, max = 10 }: { label: string; value: number; set: (n: number) => void; max?: number }) {
   return (
     <div className="flex items-center justify-between gap-3 py-2">
-      <span className="text-sm flex-1">{label}</span>
+      <span className="text-base flex-1">{label}</span>
       <div className="flex items-center gap-2">
         <button
           onClick={() => set(Math.max(0, value - 1))}
@@ -94,7 +94,7 @@ function NumStep({ label, value, set, max = 10 }: { label: string; value: number
 function YesNo({ label, value, set }: { label: string; value: boolean; set: (b: boolean) => void }) {
   return (
     <div className="flex items-center justify-between py-2">
-      <span className="text-sm flex-1">{label}</span>
+      <span className="text-base flex-1">{label}</span>
       <Switch checked={value} onCheckedChange={set} />
     </div>
   );
@@ -121,8 +121,8 @@ export default function InternetSpeedNeeds() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-cyan-50 dark:bg-cyan-950/30 flex items-center justify-center flex-shrink-0">
-                <Wifi className="h-6 w-6 text-cyan-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-info flex items-center justify-center flex-shrink-0">
+                <Wifi className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -151,27 +151,27 @@ export default function InternetSpeedNeeds() {
           </Card>
 
           {/* Result */}
-          <Card className="border-cyan-200 dark:border-cyan-800/50">
+          <Card className="border-info-foreground/25 ">
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
-                <Gauge className="h-5 w-5 text-cyan-600" aria-hidden="true" /> Your recommended speed
+                <Gauge className="h-5 w-5 text-info-foreground" aria-hidden="true" /> Your recommended speed
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-5">
               <div className="text-center py-4">
-                <p className="text-sm text-muted-foreground mb-1">You need about</p>
+                <p className="text-base text-muted-foreground mb-1">You need about</p>
                 <p className="text-5xl font-bold tracking-tight">{result.total} <span className="text-2xl font-semibold text-muted-foreground">Mbps</span></p>
-                <p className="text-sm text-muted-foreground mt-2">download speed (with 20% headroom)</p>
+                <p className="text-base text-muted-foreground mt-2">download speed (with 20% headroom)</p>
               </div>
 
-              <div className="rounded-lg bg-cyan-50 dark:bg-cyan-950/30 p-4">
-                <p className="font-semibold text-sm mb-1">Match: {result.plan}</p>
-                <p className="text-sm text-muted-foreground">{result.planNote}</p>
+              <div className="rounded-lg bg-info p-4">
+                <p className="font-semibold text-base mb-1">Match: {result.plan}</p>
+                <p className="text-base text-muted-foreground">{result.planNote}</p>
               </div>
 
               {result.breakdown.length > 0 && (
                 <div>
-                  <p className="text-sm font-semibold mb-2">How we got there:</p>
+                  <p className="text-base font-semibold mb-2">How we got there:</p>
                   <div className="space-y-1">
                     {result.breakdown.map((b) => (
                       <div key={b.label} className="flex justify-between text-sm py-1 border-b last:border-0">
@@ -195,7 +195,7 @@ export default function InternetSpeedNeeds() {
 
           {/* Plain English explainers */}
           <Card>
-            <CardHeader><CardTitle className="text-lg flex items-center gap-2"><Info className="h-5 w-5 text-blue-600" aria-hidden="true" /> What these terms mean</CardTitle></CardHeader>
+            <CardHeader><CardTitle className="text-lg flex items-center gap-2"><Info className="h-5 w-5 text-info-foreground" aria-hidden="true" /> What these terms mean</CardTitle></CardHeader>
             <CardContent className="space-y-4 text-sm">
               <div>
                 <p className="font-semibold mb-1">What is Mbps?</p>
@@ -217,10 +217,10 @@ export default function InternetSpeedNeeds() {
           </Card>
 
           {/* Tips */}
-          <Card className="border-amber-200 dark:border-amber-800/50">
+          <Card className="border-warn-foreground/25 ">
             <CardContent className="pt-6">
               <div className="flex gap-3">
-                <Lightbulb className="h-5 w-5 text-amber-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <Lightbulb className="h-5 w-5 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div className="text-sm">
                   <p className="font-semibold mb-1">Quick Tip</p>
                   <p className="text-muted-foreground">Before you switch plans, run a real-world speed test from a few rooms in your house. If you're already getting more than the speed you need, the upgrade won't change anything you actually do.</p>
@@ -232,12 +232,12 @@ export default function InternetSpeedNeeds() {
           {/* Cross-links */}
           <div className="grid sm:grid-cols-2 gap-3">
             <a href="/tools/wifi-speed" className="rounded-xl border p-4 hover:border-primary hover:bg-muted/50 transition-colors">
-              <p className="font-semibold text-sm">Test your current Wi-Fi speed <ArrowRight className="inline h-4 w-4" /></p>
-              <p className="text-xs text-muted-foreground mt-1">See what you're really getting before changing plans.</p>
+              <p className="font-semibold text-base">Test your current Wi-Fi speed <ArrowRight className="inline h-4 w-4" /></p>
+              <p className="text-sm text-muted-foreground mt-1">See what you're really getting before changing plans.</p>
             </a>
             <a href="/tools/internet-plan-comparator" className="rounded-xl border p-4 hover:border-primary hover:bg-muted/50 transition-colors">
-              <p className="font-semibold text-sm">Compare internet plans <ArrowRight className="inline h-4 w-4" /></p>
-              <p className="text-xs text-muted-foreground mt-1">Side-by-side cost and speed for major providers.</p>
+              <p className="font-semibold text-base">Compare internet plans <ArrowRight className="inline h-4 w-4" /></p>
+              <p className="text-sm text-muted-foreground mt-1">Side-by-side cost and speed for major providers.</p>
             </a>
           </div>
 
@@ -245,7 +245,7 @@ export default function InternetSpeedNeeds() {
             href="https://www.fcc.gov/consumers/guides/broadband-speed-guide"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-1 text-sm text-blue-600 hover:underline"
+            className="inline-flex items-center gap-1 text-sm text-info-foreground hover:underline"
           >
             FCC broadband speed guide <ExternalLink className="h-3 w-3" aria-hidden="true" />
           </a>

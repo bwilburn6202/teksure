@@ -277,7 +277,7 @@ export default function DataBrokerRemoval() {
               </div>
               <div className="flex-1">
                 <h2 className="font-semibold text-foreground mb-1">Google's own removal tool</h2>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Google has a free "Results about you" tool that scans Search for your name, phone,
                   address, and email — then lets you request removal of any matches.
                 </p>
@@ -326,11 +326,11 @@ export default function DataBrokerRemoval() {
                       {b.difficulty}
                     </Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-3">
                     <span className="font-medium text-foreground/80">Shows: </span>
                     {b.shows}
                   </p>
-                  <p className="text-xs text-muted-foreground/80 mb-4">
+                  <p className="text-sm text-muted-foreground/80 mb-4">
                     Typical processing time: <span className="font-medium">{b.processing}</span>
                   </p>
                   <Button asChild variant="outline" size="sm" className="rounded-xl gap-2">
@@ -369,7 +369,7 @@ export default function DataBrokerRemoval() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground mb-1">{s.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                      <p className="text-base text-muted-foreground leading-relaxed">
                         {s.description}
                       </p>
                     </div>
@@ -401,16 +401,16 @@ export default function DataBrokerRemoval() {
                 <CardContent className="p-5">
                   <div className="flex items-baseline justify-between mb-2">
                     <h3 className="font-semibold text-foreground">{s.name}</h3>
-                    <span className="text-sm font-medium text-primary">{s.price}</span>
+                    <span className="text-base font-medium text-primary">{s.price}</span>
                   </div>
                   <div className="space-y-3 mb-4">
                     <div>
-                      <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-300 mb-1">PROS</p>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{s.pros}</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">PROS</p>
+                      <p className="text-base text-muted-foreground leading-relaxed">{s.pros}</p>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-amber-700 dark:text-amber-300 mb-1">CONS</p>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{s.cons}</p>
+                      <p className="text-sm font-semibold text-warn-foreground mb-1">CONS</p>
+                      <p className="text-base text-muted-foreground leading-relaxed">{s.cons}</p>
                     </div>
                   </div>
                   <Button asChild variant="outline" size="sm" className="rounded-xl gap-2">
@@ -429,12 +429,12 @@ export default function DataBrokerRemoval() {
         <section className="container max-w-3xl py-2">
           <Card className="rounded-2xl border border-amber-300/40 bg-amber-50/60 dark:bg-amber-950/20 dark:border-amber-900/50">
             <CardContent className="p-5 md:p-6 flex items-start gap-4">
-              <div className="rounded-xl bg-amber-100 dark:bg-amber-900/40 w-11 h-11 flex items-center justify-center shrink-0">
-                <RefreshCcw className="h-5 w-5 text-amber-700 dark:text-amber-300" />
+              <div className="rounded-xl bg-warn w-11 h-11 flex items-center justify-center shrink-0">
+                <RefreshCcw className="h-5 w-5 text-warn-foreground " />
               </div>
               <div>
                 <h3 className="font-semibold text-foreground mb-1">Keep it up — set a reminder for 3 months from now</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Data brokers re-import public records on a rolling schedule. Even after a successful
                   removal, your listing often reappears in 3–6 months. Add a recurring reminder to your
                   calendar to spot-check the top 5 sites quarterly.
@@ -458,7 +458,7 @@ export default function DataBrokerRemoval() {
               <Card key={f.q} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{f.q}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{f.a}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{f.a}</p>
                 </CardContent>
               </Card>
             ))}

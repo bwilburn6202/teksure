@@ -32,10 +32,10 @@ export default function DeepCouponApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function DeepCouponApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stack the savings</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Start your shopping trip at Rakuten or Capital One Shopping — click through to the store.</li>
               <li>At checkout, let Honey try every coupon code automatically.</li>
               <li>For groceries — clip Ibotta offers BEFORE you shop, then snap the receipt after.</li>
@@ -53,17 +53,17 @@ export default function DeepCouponApps() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy heads-up</h2>
-            <p className="text-sm">These apps see what you buy. That&apos;s how they work. If that bothers you — skip them. None require your bank password. Pay out goes to PayPal or as a gift card. Never share a Social Security number with a coupon app.</p>
+            <p className="text-base">These apps see what you buy. That&apos;s how they work. If that bothers you — skip them. None require your bank password. Pay out goes to PayPal or as a gift card. Never share a Social Security number with a coupon app.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Realistic earnings</h3>
-            <p className="text-sm text-muted-foreground">Most folks earn $100-400/year combined across these apps without changing buying habits. Power users with big grocery bills clear $1,000+. Worth 30 seconds at checkout.</p>
+            <p className="text-base text-muted-foreground">Most folks earn $100-400/year combined across these apps without changing buying habits. Power users with big grocery bills clear $1,000+. Worth 30 seconds at checkout.</p>
           </CardContent>
         </Card>
       </main>

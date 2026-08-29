@@ -143,9 +143,9 @@ const Dashboard = () => {
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
-            <p className="text-sm text-muted-foreground mb-0.5">{getGreeting()},</p>
+            <p className="text-base text-muted-foreground mb-0.5">{getGreeting()},</p>
             <h1 className="text-3xl md:text-4xl font-bold tracking-tight">{user?.fullName ?? 'there'} </h1>
-            <p className="text-muted-foreground text-sm mt-1">Here's how your tech journey is going.</p>
+            <p className="text-muted-foreground text-base mt-1">Here's how your tech journey is going.</p>
           </div>
           <Dialog open={open} onOpenChange={setOpen}>
             <DialogTrigger asChild>
@@ -157,9 +157,9 @@ const Dashboard = () => {
               </DialogHeader>
               {submitted ? (
                 <div className="flex flex-col items-center gap-3 py-6 text-center">
-                  <CheckCircle2 className="h-12 w-12 text-green-500" />
+                  <CheckCircle2 className="h-12 w-12 text-success-foreground" />
                   <p className="font-semibold">Request submitted!</p>
-                  <p className="text-sm text-muted-foreground">A technician will reach out to you shortly.</p>
+                  <p className="text-base text-muted-foreground">A technician will reach out to you shortly.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4 pt-2">
@@ -223,8 +223,8 @@ const Dashboard = () => {
                     <Icon className={`h-5 w-5 ${color}`} />
                   </div>
                   <p className="text-2xl font-bold">{value}</p>
-                  <p className="text-xs font-medium text-foreground/80 mt-0.5">{label}</p>
-                  <p className="text-sm text-muted-foreground mt-0.5">{sub}</p>
+                  <p className="text-sm font-medium text-foreground/80 mt-0.5">{label}</p>
+                  <p className="text-base text-muted-foreground mt-0.5">{sub}</p>
                 </CardContent>
               </Card>
             </div>
@@ -250,10 +250,10 @@ const Dashboard = () => {
                     <span className="font-medium">Next badge at {next}</span>
                   </div>
                   <Progress value={progressPct} className="h-2.5 mb-1" />
-                  <p className="text-xs text-muted-foreground">{next - completedCount} more to unlock your next certificate tier</p>
+                  <p className="text-sm text-muted-foreground">{next - completedCount} more to unlock your next certificate tier</p>
                 </div>
               ) : (
-                <div className="flex items-center gap-2 mb-4 text-sm text-green-600 font-medium">
+                <div className="flex items-center gap-2 mb-4 text-sm text-success-foreground font-medium">
                   <CheckCircle2 className="h-4 w-4" /> All certificate tiers unlocked — amazing work!
                 </div>
               )}
@@ -265,12 +265,12 @@ const Dashboard = () => {
                     <img src={getGuideThumbnailSmall(g)} alt="" className="w-5 h-5 rounded object-cover shrink-0" loading="lazy" />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium truncate">{g.title}</p>
-                      <p className="text-xs text-muted-foreground">{g.readTime} read · {g.difficulty}</p>
+                      <p className="text-sm text-muted-foreground">{g.readTime} read · {g.difficulty}</p>
                     </div>
                     <ArrowRight className="h-4 w-4 text-muted-foreground/40 group-hover:text-primary shrink-0 transition-colors" />
                   </Link>
                 )) : (
-                  <p className="text-sm text-muted-foreground py-2">You've explored all our guides — impressive!</p>
+                  <p className="text-base text-muted-foreground py-2">You've explored all our guides — impressive!</p>
                 )}
               </div>
             </CardContent>
@@ -289,7 +289,7 @@ const Dashboard = () => {
                   className={`flex flex-col items-center gap-1.5 rounded-xl p-3 ${bg} hover:opacity-80 transition-opacity text-center`}
                 >
                   <Icon className={`h-5 w-5 ${color}`} />
-                  <span className="text-xs font-medium leading-tight">{label}</span>
+                  <span className="text-sm font-medium leading-tight">{label}</span>
                 </Link>
               ))}
             </CardContent>
@@ -311,12 +311,12 @@ const Dashboard = () => {
               {loadingBookings ? (
                 <div className="text-center py-8">
                   <Clock className="h-8 w-8 text-muted-foreground/30 mx-auto mb-2 animate-pulse" />
-                  <p className="text-sm text-muted-foreground">Loading your requests...</p>
+                  <p className="text-base text-muted-foreground">Loading your requests...</p>
                 </div>
               ) : bookings.length === 0 ? (
                 <div className="text-center py-8">
                   <MessageSquare className="h-10 w-10 text-muted-foreground/30 mx-auto mb-3" />
-                  <p className="text-sm text-muted-foreground mb-4">No support requests yet</p>
+                  <p className="text-base text-muted-foreground mb-4">No support requests yet</p>
                   <Button size="sm" onClick={() => setOpen(true)}>Create Your First Request</Button>
                 </div>
               ) : (
@@ -329,12 +329,12 @@ const Dashboard = () => {
                           <Icon className="h-4 w-4 text-muted-foreground" />
                         </div>
                         <div className="flex-1 min-w-0">
-                          <p className="text-sm font-medium">{CATEGORY_LABELS[booking.service_type] ?? booking.service_type}</p>
+                          <p className="text-base font-medium">{CATEGORY_LABELS[booking.service_type] ?? booking.service_type}</p>
                           <p className="text-xs text-muted-foreground truncate">{booking.problem_description ?? 'No description'}</p>
                         </div>
                         <div className="flex flex-col items-end gap-1 shrink-0">
                           <StatusBadge status={booking.status} />
-                          <span className="text-xs text-muted-foreground">
+                          <span className="text-sm text-muted-foreground">
                             {new Date(booking.created_at).toLocaleDateString('en-US', { day: 'numeric', month: 'short' })}
                           </span>
                         </div>
@@ -355,13 +355,13 @@ const Dashboard = () => {
               <Card className="rounded-2xl border border-border bg-card">
                 <CardHeader className="pb-2 border-b border-border">
                   <CardTitle className="text-sm flex items-center gap-2">
-                    <Star className="h-4 w-4 text-amber-500" /> Recently completed
+                    <Star className="h-4 w-4 text-warn-foreground" /> Recently completed
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-3 space-y-2">
                   {recentCompleted.map(g => (
                     <Link key={g.slug} to={`/guides/${g.slug}`} className="flex items-center gap-2 text-xs hover:text-primary transition-colors">
-                      <CheckCircle2 className="h-3.5 w-3.5 text-green-500 shrink-0" />
+                      <CheckCircle2 className="h-3.5 w-3.5 text-success-foreground shrink-0" />
                       <span className="truncate">{g.title}</span>
                     </Link>
                   ))}
@@ -373,7 +373,7 @@ const Dashboard = () => {
               <CardContent className="pt-5 pb-5">
                 <Calendar className="h-8 w-8 text-primary mb-3" />
                 <h3 className="font-semibold text-sm mb-1">Need hands-on help?</h3>
-                <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
+                <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
                   Book a friendly technician for a remote screen-share or an in-home visit.
                 </p>
                 <Button size="sm" className="w-full" asChild>
@@ -387,7 +387,7 @@ const Dashboard = () => {
                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2 flex items-center gap-1.5">
                   <Clock className="h-3 w-3" /> Today's tip
                 </p>
-                <p className="text-sm leading-relaxed">
+                <p className="text-base leading-relaxed">
                   Lock your screen when you step away — press <kbd className="bg-muted px-1 rounded text-xs">Win + L</kbd> on Windows or <kbd className="bg-muted px-1 rounded text-xs"> + Ctrl + Q</kbd> on Mac.
                 </p>
               </CardContent>

@@ -22,7 +22,7 @@ export default function SeniorPhotoSlideshow() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Phone Cast</h2><p>Cast photos to TV via Roku, Apple TV. Show family.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for visits</h2><p>Make slideshow for grandkid visits. Show photos of past times.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Memory cafe</h2><p>For dementia: familiar slideshow soothes. Music + photos powerful.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Apple TV screensaver = family photos always. Beautiful living room.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Apple TV screensaver = family photos always. Beautiful living room.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

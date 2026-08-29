@@ -22,7 +22,7 @@ export default function SeniorFallDetectors() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pixel Watch 2</h2><p>$350. Free fall detection. Alerts emergency contacts.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Statistics</h2><p>1 in 4 seniors fall yearly. 30 minutes on floor = serious complications.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why critical</h2><p>Lying alone after fall = lethal complications. Auto-detection saves lives.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Apple Watch is one-time cost vs $30/month subscriptions. Worth comparing.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Apple Watch is one-time cost vs $30/month subscriptions. Worth comparing.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

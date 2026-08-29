@@ -170,7 +170,7 @@ function GuideResultCard({ guide, query }: { guide: Guide; query: string }) {
                   {guide.difficulty}
                 </span>
               )}
-              <span className="inline-flex items-center gap-1 text-sm text-muted-foreground">
+              <span className="inline-flex items-center gap-1 text-base text-muted-foreground">
                 <Clock className="h-4 w-4" aria-hidden="true" />
                 {guide.readTime}
               </span>
@@ -198,7 +198,7 @@ function ToolResultCard({ tool, query }: { tool: Tool; query: string }) {
           <div className="flex items-center gap-2 mb-2 flex-wrap">
             <Badge
               variant="secondary"
-              className="rounded-full text-xs font-medium bg-violet-50 text-violet-800 border border-violet-200 dark:bg-violet-950/40 dark:text-violet-300 dark:border-violet-800"
+              className="rounded-full text-xs font-medium bg-primary/10 text-primary border border-primary/25 "
             >
               Tool
             </Badge>
@@ -226,12 +226,12 @@ function ToolResultCard({ tool, query }: { tool: Tool; query: string }) {
             >
               {tool.difficulty}
             </span>
-            <span className="inline-flex items-center gap-1 text-sm text-muted-foreground">
+            <span className="inline-flex items-center gap-1 text-base text-muted-foreground">
               <Clock className="h-4 w-4" aria-hidden="true" />
               {tool.time}
             </span>
             {tool.path && (
-              <span className="ml-auto inline-flex items-center gap-1 text-sm font-semibold text-primary group-hover:translate-x-0.5 transition-transform">
+              <span className="ml-auto inline-flex items-center gap-1 text-base font-semibold text-primary group-hover:translate-x-0.5 transition-transform">
                 Open tool
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </span>

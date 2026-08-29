@@ -18,11 +18,11 @@ export default function SeniorIPadKidsMode() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Guided Access</h2><p>Settings → Accessibility → Guided Access. Locks them in one app.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Triple-click to lock</h2><p>Triple-click side button. Pick app. Set passcode. Kid stays in chosen app.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best apps for grandkids</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>PBS Kids (free)</li><li>Khan Academy Kids (free)</li><li>Lego Builder (free)</li><li>YouTube Kids</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best apps for grandkids</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>PBS Kids (free)</li><li>Khan Academy Kids (free)</li><li>Lego Builder (free)</li><li>YouTube Kids</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Screen Time limits</h2><p>Set 1-hour limit per session. Auto-pauses. Saves arguments.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Block in-app purchases</h2><p>Settings → Screen Time → Content Restrictions → In-App Purchases off.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Old iPad as kid iPad</h2><p>Hand down old iPad to grandkids. Update to latest iOS first.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Make iPad &ldquo;visit only.&rdquo; Stays at grandparents. Kids look forward to visits.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Make iPad &ldquo;visit only.&rdquo; Stays at grandparents. Kids look forward to visits.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

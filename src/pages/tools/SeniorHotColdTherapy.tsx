@@ -22,7 +22,7 @@ export default function SeniorHotColdTherapy() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cordless heat wraps</h2><p>$60. ThermiPaq. Microwave first. No cord, no fire risk.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Reusable ice packs</h2><p>$25. Magic Bag. Hot or cold reusable. Microwave or freezer.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Safety</h2><p>Don&apos;t fall asleep on heating pad. Never apply to numb skin.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 15-on / 15-off cycle prevents burns and skin damage.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 15-on / 15-off cycle prevents burns and skin damage.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

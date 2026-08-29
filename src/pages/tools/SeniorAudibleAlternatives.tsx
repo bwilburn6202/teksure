@@ -22,7 +22,7 @@ export default function SeniorAudibleAlternatives() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Books</h2><p>Pay per book. No subscription. Works with Apple Music ecosystem.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">LibriVox (FREE)</h2><p>Public domain audiobooks. Classics from Jane Austen to Mark Twain.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Audible Plus</h2><p>$8/month. Cheaper than original $15. Limited catalog.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Get a library card today. Free Libby + Hoopla = $0/month audiobooks forever.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Get a library card today. Free Libby + Hoopla = $0/month audiobooks forever.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

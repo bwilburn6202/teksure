@@ -30,10 +30,10 @@ export default function SeniorRelocationServices() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SeniorRelocationServices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What senior move managers do</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plan space layout in new home.</li>
               <li>Help decide what to keep / sell / donate.</li>
               <li>Pack + label everything.</li>
@@ -58,7 +58,7 @@ export default function SeniorRelocationServices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost expectations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>2-bedroom downsize: $3,000-8,000.</li>
               <li>4-bedroom downsize: $8,000-20,000+.</li>
               <li>Some senior living facilities offer free/discounted relocation.</li>
@@ -72,7 +72,7 @@ export default function SeniorRelocationServices() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vetting checklist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NASMM-certified — gold standard.</li>
               <li>Insured + bonded.</li>
               <li>References from 3+ recent clients.</li>
@@ -87,7 +87,7 @@ export default function SeniorRelocationServices() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">DIY downsizing path</h3>
-            <p className="text-sm text-muted-foreground">If healthy + nearby family helps — DIY saves $$. Use /tools/downsize-checklist + /tools/garage-sale-seniors. Hire just movers ($1,500-3,000). Order 1-2 PODS containers. Take 4-6 weekends. Start 6+ months before move.</p>
+            <p className="text-base text-muted-foreground">If healthy + nearby family helps — DIY saves $$. Use /tools/downsize-checklist + /tools/garage-sale-seniors. Hire just movers ($1,500-3,000). Order 1-2 PODS containers. Take 4-6 weekends. Start 6+ months before move.</p>
           </CardContent>
         </Card>
       </main>

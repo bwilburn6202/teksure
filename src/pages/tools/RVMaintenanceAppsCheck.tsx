@@ -19,7 +19,7 @@ export default function RVMaintenanceAppsCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RV Life Pro</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Includes maintenance tracking.</li>
               <li>Schedule oil changes, tire rotations.</li>
               <li>Reminder alerts.</li>
@@ -33,7 +33,7 @@ export default function RVMaintenanceAppsCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RV Service Reviews</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find reputable RV repair shops.</li>
               <li>Read reviews before choosing.</li>
               <li>Free app.</li>
@@ -47,7 +47,7 @@ export default function RVMaintenanceAppsCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mobile RV mechanics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mobile RV Tech app — find mobile mechanics.</li>
               <li>They come to your campsite.</li>
               <li>No need to drive RV to shop.</li>
@@ -61,7 +61,7 @@ export default function RVMaintenanceAppsCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Roadside assistance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Good Sam Roadside — RV-specific, $109/year.</li>
               <li>AAA RV/Premier — RV included on top tier.</li>
               <li>Coach-Net — full-time RVer choice.</li>
@@ -75,7 +75,7 @@ export default function RVMaintenanceAppsCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY repair resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>YouTube — search RV model + issue.</li>
               <li>RV.org — comprehensive online manual.</li>
               <li>Reddit r/GoRVing — community help.</li>
@@ -89,7 +89,7 @@ export default function RVMaintenanceAppsCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pre-trip checklist apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>RV Checklist Pro — comprehensive checklist.</li>
               <li>Departure + arrival checklists.</li>
               <li>Helps prevent forgotten steps.</li>
@@ -103,7 +103,7 @@ export default function RVMaintenanceAppsCheck() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Roadside coverage is non-negotiable</h3>
-            <p className="text-sm text-muted-foreground">Before any extended RV trip, get RV-specific roadside coverage. Good Sam Roadside ($109/year) is the most popular for casual RVers. Coach-Net for full-timers. Generic AAA usually won&apos;t handle big RVs. One tow truck call without coverage can cost $1,500+. The annual fee pays for itself the first time you need help in the middle of nowhere.</p>
+            <p className="text-base text-muted-foreground">Before any extended RV trip, get RV-specific roadside coverage. Good Sam Roadside ($109/year) is the most popular for casual RVers. Coach-Net for full-timers. Generic AAA usually won&apos;t handle big RVs. One tow truck call without coverage can cost $1,500+. The annual fee pays for itself the first time you need help in the middle of nowhere.</p>
           </CardContent>
         </Card>
       </main>

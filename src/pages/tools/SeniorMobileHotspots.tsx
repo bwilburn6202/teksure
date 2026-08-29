@@ -20,9 +20,9 @@ export default function SeniorMobileHotspots() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Verizon Jetpack</h2><p>$50-$200. Dedicated mobile hotspot. Better battery than phone hotspot.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AT&amp;T Nighthawk</h2><p>$300. Faster speeds. Heavier travelers.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Calyx Institute</h2><p>$500/year. Unlimited data hotspot. Best for nomads.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to use</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Hotel Wi-Fi too slow</li><li>Coffee shop without Wi-Fi</li><li>Road trip backup</li><li>Internet outage at home</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to use</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Hotel Wi-Fi too slow</li><li>Coffee shop without Wi-Fi</li><li>Road trip backup</li><li>Internet outage at home</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch data</h2><p>Streaming uses lots. 1 hour HD = 3 GB. Easy to hit limits.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Library hotspots free. Borrow before buying.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Library hotspots free. Borrow before buying.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -434,7 +434,7 @@ export default function BrowserSafetyAudit() {
         <section className="container pt-8 pb-2">
           <Card className="border-blue-500/40 bg-blue-50/50 dark:bg-blue-950/20">
             <CardContent className="p-5 flex items-start gap-3">
-              <Lock className="w-6 h-6 text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
+              <Lock className="w-6 h-6 text-info-foreground shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg mb-1">Your progress stays with you</h3>
                 <p className="text-base text-muted-foreground leading-relaxed">
@@ -451,7 +451,7 @@ export default function BrowserSafetyAudit() {
         <section className="container pt-4 pb-2">
           <Card className="border-amber-500/40 bg-amber-50/40 dark:bg-amber-950/20">
             <CardContent className="p-5 flex items-start gap-3">
-              <AlertTriangle className="w-6 h-6 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+              <AlertTriangle className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg mb-1">Why the browser?</h3>
                 <p className="text-base text-muted-foreground leading-relaxed">
@@ -624,7 +624,7 @@ export default function BrowserSafetyAudit() {
 
                           {/* Where to find it */}
                           <div className="ml-9 mb-3 p-3 bg-muted/50 rounded-lg">
-                            <p className="text-sm font-semibold text-muted-foreground mb-1">
+                            <p className="text-base font-semibold text-muted-foreground mb-1">
                               Where to find it:
                             </p>
                             <p className="text-base font-mono text-foreground break-words">
@@ -634,9 +634,9 @@ export default function BrowserSafetyAudit() {
 
                           {/* Why it matters */}
                           <div className="ml-9 mb-3 flex items-start gap-2">
-                            <Info className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+                            <Info className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                             <div>
-                              <p className="text-sm font-semibold text-muted-foreground mb-1">
+                              <p className="text-base font-semibold text-muted-foreground mb-1">
                                 Why it matters:
                               </p>
                               <p className="text-base leading-relaxed">{check.why}</p>
@@ -668,15 +668,15 @@ export default function BrowserSafetyAudit() {
 
             {/* Browser-complete card */}
             {browserProgress(active).pct === 100 && (
-              <Card className="mt-6 bg-green-50 dark:bg-green-950/30 border-green-300 dark:border-green-800">
+              <Card className="mt-6 bg-success border-success-foreground/25 ">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-2">
-                    <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-300" />
-                    <h3 className="text-xl font-bold text-green-800 dark:text-green-200">
+                    <CheckCircle2 className="w-6 h-6 text-success-foreground " />
+                    <h3 className="text-xl font-bold text-success-foreground ">
                       {active.title} is locked down!
                     </h3>
                   </div>
-                  <p className="text-base text-green-700 dark:text-green-300 leading-relaxed">
+                  <p className="text-base text-success-foreground leading-relaxed">
                     Every setting reviewed. Come back every 6 months — browsers update their
                     defaults, and new scam techniques appear all the time.
                   </p>
@@ -709,7 +709,7 @@ export default function BrowserSafetyAudit() {
                           </Badge>
                         )}
                         {pct === 100 && (
-                          <CheckCircle2 className="w-4 h-4 ml-2 text-green-600" />
+                          <CheckCircle2 className="w-4 h-4 ml-2 text-success-foreground" />
                         )}
                       </Button>
                     );

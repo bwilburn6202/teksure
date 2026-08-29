@@ -22,7 +22,7 @@ export default function LiveCaptionsSetup() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What live captions do</h2>
-            <p className="text-sm">Your phone listens and types out what it hears, in real time, on the screen. Works for YouTube, FaceTime calls, phone calls, podcasts — and you can hold up the phone during in-person conversations to read along.</p>
+            <p className="text-base">Your phone listens and types out what it hears, in real time, on the screen. Works for YouTube, FaceTime calls, phone calls, podcasts — and you can hold up the phone during in-person conversations to read along.</p>
           </CardContent>
         </Card>
 
@@ -35,15 +35,15 @@ export default function LiveCaptionsSetup() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone — Live Captions</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open <strong>Settings</strong>.</li>
                 <li>Tap <strong>Accessibility</strong>.</li>
                 <li>Tap <strong>Live Captions</strong> (under "Hearing").</li>
                 <li>Turn on <strong>Live Captions</strong>.</li>
                 <li>You can also turn on Live Captions in FaceTime — captions show what each person says with their name.</li>
               </ol>
-              <p className="text-sm mt-3">A floating box appears on screen with text of whatever is being said. Tap the box to make it bigger, smaller, or to pause it.</p>
-              <p className="text-sm mt-3 bg-muted/50 p-3 rounded"><strong>Quick toggle:</strong> Settings → Accessibility → Accessibility Shortcut → choose Live Captions. Then triple-click the side button to turn it on/off anytime.</p>
+              <p className="text-base mt-3">A floating box appears on screen with text of whatever is being said. Tap the box to make it bigger, smaller, or to pause it.</p>
+              <p className="text-base mt-3 bg-muted/50 p-3 rounded"><strong>Quick toggle:</strong> Settings → Accessibility → Accessibility Shortcut → choose Live Captions. Then triple-click the side button to turn it on/off anytime.</p>
             </CardContent>
           </Card>
         )}
@@ -52,13 +52,13 @@ export default function LiveCaptionsSetup() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android — Live Caption</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open <strong>Settings</strong>.</li>
                 <li>Tap <strong>Accessibility</strong> → <strong>Live Caption</strong>. (On Samsung: Accessibility → Hearing enhancements → Live Caption.)</li>
                 <li>Turn it on.</li>
                 <li>Now press the volume up or down button — a small "captions" icon appears next to the volume slider. Tap it to turn captions on/off anytime.</li>
               </ol>
-              <p className="text-sm mt-3">Live Caption works on YouTube, podcasts, video calls, voice notes, and even phone calls (on Pixel and many newer phones).</p>
+              <p className="text-base mt-3">Live Caption works on YouTube, podcasts, video calls, voice notes, and even phone calls (on Pixel and many newer phones).</p>
               <div className="mt-3 bg-muted/50 p-3 rounded text-sm">
                 <p className="font-semibold mb-1">In-person conversations:</p>
                 <p>Open the free <strong>"Live Transcribe"</strong> app from Google. It uses your phone's microphone to caption whatever it hears — perfect for chatting at a noisy restaurant.</p>
@@ -73,7 +73,7 @@ export default function LiveCaptionsSetup() {
               <Volume2 className="w-6 h-6 text-primary shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Bonus: turn on captions everywhere</h3>
-                <ul className="list-disc pl-5 space-y-1 text-sm">
+                <ul className="list-disc pl-5 space-y-1 text-base">
                   <li><strong>YouTube:</strong> Tap the "CC" button on any video.</li>
                   <li><strong>Netflix / Disney+ / Max / Hulu:</strong> Look for the speech-bubble icon during playback. Set to "English" or your preferred language.</li>
                   <li><strong>Zoom:</strong> Click "Show Captions" at the bottom of the meeting window.</li>
@@ -87,7 +87,7 @@ export default function LiveCaptionsSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Captions aren't perfect</h3>
-            <p className="text-sm text-muted-foreground">Live captions guess the words from sound, so they sometimes get names or unusual words wrong — especially in noisy places. They're best for general meaning, not legal or medical detail.</p>
+            <p className="text-base text-muted-foreground">Live captions guess the words from sound, so they sometimes get names or unusual words wrong — especially in noisy places. They're best for general meaning, not legal or medical detail.</p>
           </CardContent>
         </Card>
       </main>

@@ -156,7 +156,7 @@ export default function NotebookAlternatives() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-orange-500/10 rounded-full">
-                <Notebook className="h-8 w-8 text-orange-600" />
+                <Notebook className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Notebook Alternatives</h1>
@@ -169,13 +169,13 @@ export default function NotebookAlternatives() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Notebook Alternatives' }]} />
 
-          <Card className="border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-900/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5">
               <div className="flex gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-700 dark:text-amber-300 shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-sm text-amber-900 dark:text-amber-100 mb-1">Pen and paper still has its place</p>
-                  <p className="text-sm text-amber-800 dark:text-amber-200">
+                  <p className="font-semibold text-base text-warn-foreground mb-1">Pen and paper still has its place</p>
+                  <p className="text-base text-warn-foreground ">
                     Researchers keep finding the same thing: writing by hand helps the brain remember and understand better than typing. Slower, more deliberate, more memorable. Digital notes are convenient — searchable, never lost, with you everywhere — but a paper notebook on the kitchen counter is not old-fashioned. It is good for you. Many folks end up using both.
                   </p>
                 </div>
@@ -189,10 +189,10 @@ export default function NotebookAlternatives() {
               return (
                 <div key={lane.id} className="p-4 rounded-lg border border-border bg-muted/30">
                   <div className="flex items-center gap-2 mb-1">
-                    <Icon className="h-4 w-4 text-orange-600" />
-                    <p className="font-semibold text-sm">{lane.label}</p>
+                    <Icon className="h-4 w-4 text-warn-foreground" />
+                    <p className="font-semibold text-base">{lane.label}</p>
                   </div>
-                  <p className="text-sm text-muted-foreground">{lane.blurb}</p>
+                  <p className="text-base text-muted-foreground">{lane.blurb}</p>
                 </div>
               );
             })}
@@ -205,12 +205,12 @@ export default function NotebookAlternatives() {
                   <div className="flex items-start justify-between gap-3 mb-2 flex-wrap">
                     <div>
                       <p className="font-semibold text-base">{app.name}</p>
-                      <p className="text-sm text-muted-foreground mt-0.5">{app.what}</p>
+                      <p className="text-base text-muted-foreground mt-0.5">{app.what}</p>
                     </div>
                     <Badge variant="outline" className="shrink-0">{app.cost}</Badge>
                   </div>
 
-                  <p className="text-xs text-muted-foreground mb-3"><strong>Best for:</strong> {app.bestFor}</p>
+                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {app.bestFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div className="p-2 rounded bg-muted/40 border border-border text-xs flex gap-2">
@@ -224,7 +224,7 @@ export default function NotebookAlternatives() {
                   </div>
 
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">How to set it up</p>
-                  <ol className="space-y-1.5 text-sm text-muted-foreground mb-3">
+                  <ol className="space-y-1.5 text-base text-muted-foreground mb-3">
                     {app.install.map((step, idx) => (
                       <li key={idx} className="flex gap-2">
                         <span className="text-primary shrink-0">{idx + 1}.</span>
@@ -234,9 +234,9 @@ export default function NotebookAlternatives() {
                   </ol>
 
                   {app.watchOut && (
-                    <div className="p-2 rounded bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 text-xs">
-                      <strong className="text-amber-700 dark:text-amber-300">Watch out:</strong>{' '}
-                      <span className="text-amber-700 dark:text-amber-300">{app.watchOut}</span>
+                    <div className="p-2 rounded bg-warn border border-warn-foreground/25 text-xs">
+                      <strong className="text-warn-foreground ">Watch out:</strong>{' '}
+                      <span className="text-warn-foreground ">{app.watchOut}</span>
                     </div>
                   )}
                 </CardContent>
@@ -246,8 +246,8 @@ export default function NotebookAlternatives() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Which one should you pick first?</p>
-              <ol className="space-y-1.5 text-sm text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Which one should you pick first?</p>
+              <ol className="space-y-1.5 text-base text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary shrink-0">1.</span><span>If you have an iPhone and want zero fuss: open Apple Notes. It is already there, and it costs nothing.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">2.</span><span>If you have an Android phone or use Gmail every day: try Google Keep. The colorful sticky notes are friendly to look at.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">3.</span><span>If you have stacks of paperwork to keep track of: Evernote earns its monthly fee with strong search. Otherwise skip it.</span></li>
@@ -260,20 +260,20 @@ export default function NotebookAlternatives() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/document-scanner-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Document Scanner Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Turn paper into searchable digital files.</p>
+                <p className="font-medium text-base">Document Scanner Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Turn paper into searchable digital files.</p>
               </Link>
               <Link to="/tools/photo-library-tips" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Photo Library Tips</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Keep photos organized and findable.</p>
+                <p className="font-medium text-base">Photo Library Tips</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Keep photos organized and findable.</p>
               </Link>
               <Link to="/tools/dictation-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Dictation Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Talk to your phone instead of typing.</p>
+                <p className="font-medium text-base">Dictation Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Talk to your phone instead of typing.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: pick one app, use it for two weeks, then decide if you want to try another. Switching too often loses notes.
           </p>
         </div>

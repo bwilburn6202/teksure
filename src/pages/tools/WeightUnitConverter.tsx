@@ -27,38 +27,38 @@ export default function WeightUnitConverter() {
   const grams = !isNaN(parseFloat(kilograms)) ? (parseFloat(kilograms) * 1000).toFixed(0) : null;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Weight Converter | TekSure" description="Two-way pounds and kilograms converter, plus ounces, stones, and grams." />
       <div className="max-w-xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Scale className="h-7 w-7 text-purple-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Weight Converter</h1>
+            <Scale className="h-7 w-7 text-primary" />
+            <h1 className="text-3xl font-bold text-foreground">Weight Converter</h1>
           </div>
-          <p className="text-gray-600 text-lg">Type into either box. The other updates instantly.</p>
+          <p className="text-muted-foreground text-lg">Type into either box. The other updates instantly.</p>
         </div>
         <Card>
           <CardContent className="py-6 px-4 space-y-4">
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="text-base font-medium text-gray-700">Pounds (lbs)</label>
+                <label className="text-base font-medium text-foreground">Pounds (lbs)</label>
                 <Input type="number" step="0.1" min="0" placeholder="150" value={pounds} onChange={e => fromLbs(e.target.value)} className="mt-1 text-2xl text-center h-14" />
               </div>
               <div>
-                <label className="text-base font-medium text-gray-700">Kilograms (kg)</label>
+                <label className="text-base font-medium text-foreground">Kilograms (kg)</label>
                 <Input type="number" step="0.1" min="0" placeholder="68" value={kilograms} onChange={e => fromKg(e.target.value)} className="mt-1 text-2xl text-center h-14" />
               </div>
             </div>
             {(oz || grams) && (
               <div className="space-y-2 text-base">
-                {oz && <div className="flex justify-between p-2 bg-purple-50 rounded"><span>Ounces</span><span className="font-semibold">{Number(oz).toLocaleString()} oz</span></div>}
-                {grams && <div className="flex justify-between p-2 bg-purple-50 rounded"><span>Grams</span><span className="font-semibold">{Number(grams).toLocaleString()} g</span></div>}
-                {stones && <div className="flex justify-between p-2 bg-purple-50 rounded"><span>Stones (UK)</span><span className="font-semibold">{stones} st</span></div>}
+                {oz && <div className="flex justify-between p-2 bg-primary/10 rounded"><span>Ounces</span><span className="font-semibold">{Number(oz).toLocaleString()} oz</span></div>}
+                {grams && <div className="flex justify-between p-2 bg-primary/10 rounded"><span>Grams</span><span className="font-semibold">{Number(grams).toLocaleString()} g</span></div>}
+                {stones && <div className="flex justify-between p-2 bg-primary/10 rounded"><span>Stones (UK)</span><span className="font-semibold">{stones} st</span></div>}
               </div>
             )}
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

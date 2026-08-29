@@ -188,7 +188,7 @@ export default function FileOrganizerGuide() {
                           </div>
                           <div className="flex-1">
                             <h3 className="font-semibold mb-1">{p.name}</h3>
-                            <p className="text-sm text-muted-foreground leading-relaxed">{p.description}</p>
+                            <p className="text-base text-muted-foreground leading-relaxed">{p.description}</p>
                           </div>
                         </div>
                       </CardContent>
@@ -200,12 +200,12 @@ export default function FileOrganizerGuide() {
               <Card className="mt-8 bg-muted/30">
                 <CardContent className="p-5">
                   <h3 className="font-semibold mb-3">Golden rules of file organization</h3>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
-                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-green-600 shrink-0 mt-0.5" /><span><strong>Don\'t go too deep.</strong> 3 levels max. If you have to dig 5 folders deep, you\'ll never find it.</span></li>
-                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-green-600 shrink-0 mt-0.5" /><span><strong>Use dates in filenames for anything time-based.</strong> Format: "2026-04-15 Doctor Visit.pdf". Sorts automatically.</span></li>
-                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-green-600 shrink-0 mt-0.5" /><span><strong>One inbox folder.</strong> Everything goes into "Downloads" or "Inbox" first, then gets sorted once a week.</span></li>
-                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-green-600 shrink-0 mt-0.5" /><span><strong>Back up to the cloud.</strong> Hard drives fail, laptops get stolen. iCloud, Google One, OneDrive, Dropbox are all good.</span></li>
-                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-green-600 shrink-0 mt-0.5" /><span><strong>Purge yearly.</strong> Every January, go through last year and delete anything you don\'t need.</span></li>
+                  <ul className="space-y-2 text-base text-muted-foreground">
+                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-success-foreground shrink-0 mt-0.5" /><span><strong>Don\'t go too deep.</strong> 3 levels max. If you have to dig 5 folders deep, you\'ll never find it.</span></li>
+                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-success-foreground shrink-0 mt-0.5" /><span><strong>Use dates in filenames for anything time-based.</strong> Format: "2026-04-15 Doctor Visit.pdf". Sorts automatically.</span></li>
+                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-success-foreground shrink-0 mt-0.5" /><span><strong>One inbox folder.</strong> Everything goes into "Downloads" or "Inbox" first, then gets sorted once a week.</span></li>
+                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-success-foreground shrink-0 mt-0.5" /><span><strong>Back up to the cloud.</strong> Hard drives fail, laptops get stolen. iCloud, Google One, OneDrive, Dropbox are all good.</span></li>
+                    <li className="flex gap-2"><CheckCircle className="w-4 h-4 text-success-foreground shrink-0 mt-0.5" /><span><strong>Purge yearly.</strong> Every January, go through last year and delete anything you don\'t need.</span></li>
                   </ul>
                 </CardContent>
               </Card>
@@ -238,7 +238,7 @@ export default function FileOrganizerGuide() {
                 <Card>
                   <CardContent className="p-5">
                     <h3 className="font-semibold mb-3">Tips for this setup</h3>
-                    <ul className="space-y-2 text-sm">
+                    <ul className="space-y-2 text-base">
                       {selectedPersona.tips.map((tip, i) => (
                         <li key={i} className="flex gap-2 text-muted-foreground">
                           <span className="text-primary mt-0.5">•</span>
@@ -253,21 +253,21 @@ export default function FileOrganizerGuide() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
                 <Card><CardContent className="p-5">
                   <h4 className="font-semibold mb-2 flex items-center gap-2"><Folder className="w-4 h-4" />On iCloud Drive</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">Finder → iCloud Drive → create each top-level folder → drag existing files in.</p>
+                  <p className="text-base text-muted-foreground leading-relaxed mb-3">Finder → iCloud Drive → create each top-level folder → drag existing files in.</p>
                   <Button size="sm" variant="outline" asChild>
                     <a href="https://support.apple.com/en-us/HT204025" target="_blank" rel="noopener noreferrer">iCloud Drive Help <ExternalLink className="w-3 h-3 ml-1" /></a>
                   </Button>
                 </CardContent></Card>
                 <Card><CardContent className="p-5">
                   <h4 className="font-semibold mb-2 flex items-center gap-2"><Folder className="w-4 h-4" />On Google Drive</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">drive.google.com → New → Folder → create each folder → drag files in.</p>
+                  <p className="text-base text-muted-foreground leading-relaxed mb-3">drive.google.com → New → Folder → create each folder → drag files in.</p>
                   <Button size="sm" variant="outline" asChild>
                     <a href="https://support.google.com/drive/" target="_blank" rel="noopener noreferrer">Google Drive Help <ExternalLink className="w-3 h-3 ml-1" /></a>
                   </Button>
                 </CardContent></Card>
                 <Card><CardContent className="p-5">
                   <h4 className="font-semibold mb-2 flex items-center gap-2"><Folder className="w-4 h-4" />On Dropbox</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">dropbox.com → Create → Folder → set up your top-level folders → move existing files.</p>
+                  <p className="text-base text-muted-foreground leading-relaxed mb-3">dropbox.com → Create → Folder → set up your top-level folders → move existing files.</p>
                   <Button size="sm" variant="outline" asChild>
                     <a href="https://help.dropbox.com/" target="_blank" rel="noopener noreferrer">Dropbox Help <ExternalLink className="w-3 h-3 ml-1" /></a>
                   </Button>

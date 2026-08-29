@@ -19,7 +19,7 @@ export default function GrandparentBudgetTalks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">By age</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>5-7</strong> — coins, simple counting, "save / spend / give" jars.</li>
               <li><strong>8-10</strong> — allowance management, banking basics, comparison shopping.</li>
               <li><strong>11-13</strong> — opening savings account, budget first phone bill.</li>
@@ -32,7 +32,7 @@ export default function GrandparentBudgetTalks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stories that teach</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Your first job — what you earned + what you bought.</li>
               <li>First savings — "I saved $500 by 16."</li>
               <li>Mistakes — "I bought X on credit + paid years."</li>
@@ -45,7 +45,7 @@ export default function GrandparentBudgetTalks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Books that help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lemonade in Winter</strong> (4-7) — math + entrepreneurship.</li>
               <li><strong>The Berenstain Bears&apos; Trouble with Money</strong> (5-8).</li>
               <li><strong>Smart Money, Smart Kids</strong> — Dave Ramsey + daughter.</li>
@@ -59,7 +59,7 @@ export default function GrandparentBudgetTalks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Activities that teach</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Grocery shop together — show comparison.</li>
               <li>Help open first bank account.</li>
               <li>Match Roth IRA contributions when they earn.</li>
@@ -73,7 +73,7 @@ export default function GrandparentBudgetTalks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Lasting impact</h3>
-            <p className="text-sm text-muted-foreground">Studies show kids learn financial habits more from grandparents than schools. Wisdom + stories + practice = better money decisions for their lifetime. Best multi-generation gift after love + time.</p>
+            <p className="text-base text-muted-foreground">Studies show kids learn financial habits more from grandparents than schools. Wisdom + stories + practice = better money decisions for their lifetime. Best multi-generation gift after love + time.</p>
           </CardContent>
         </Card>
       </main>

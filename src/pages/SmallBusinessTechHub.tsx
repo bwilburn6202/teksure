@@ -366,9 +366,9 @@ export default function SmallBusinessTechHub() {
       <main id="main-content" className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Hero */}
         <section className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300">
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-info text-info-foreground ">
             <Briefcase className="w-4 h-4" />
-            <span className="text-sm font-medium">Small Business Tech Hub</span>
+            <span className="text-base font-medium">Small Business Tech Hub</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             The Technology You Need to Start or Run a Small Business
@@ -383,7 +383,7 @@ export default function SmallBusinessTechHub() {
               <a
                 key={s.id}
                 href={`#${s.id}`}
-                className="text-sm px-4 py-2 rounded-full border border-border hover:border-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/30 transition-colors"
+                className="text-sm px-4 py-2 rounded-full border border-border hover:border-blue-400 hover:bg-info transition-colors"
               >
                 {s.title}
               </a>
@@ -419,7 +419,7 @@ export default function SmallBusinessTechHub() {
                           className="p-4 rounded-lg bg-background/80 backdrop-blur border border-border/60"
                         >
                           <div className="flex items-start gap-3">
-                            <CheckCircle2 className="w-5 h-5 text-emerald-600 shrink-0 mt-0.5" />
+                            <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" />
                             <div className="flex-1 min-w-0">
                               <div className="flex items-center gap-2 flex-wrap mb-1">
                                 {tool.url ? (
@@ -436,7 +436,7 @@ export default function SmallBusinessTechHub() {
                                   <span className="font-semibold">{tool.name}</span>
                                 )}
                               </div>
-                              <p className="text-sm text-muted-foreground leading-relaxed">
+                              <p className="text-base text-muted-foreground leading-relaxed">
                                 {tool.description}
                               </p>
                             </div>
@@ -471,7 +471,7 @@ export default function SmallBusinessTechHub() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="bg-transparent border-white text-white hover:bg-white hover:text-blue-700"
+                  className="bg-transparent border-white text-white hover:bg-card hover:text-info-foreground"
                 >
                   <a href="/tools">
                     <Calculator className="w-4 h-4 mr-2" />

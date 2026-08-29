@@ -19,7 +19,7 @@ export default function HsaFsaCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick difference</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>HSA (Health Savings Account)</strong> — only available with high-deductible health plans. Money rolls over forever. Triple tax advantage. AFTER 65, you can use it for non-medical expenses too (like an IRA).</li>
               <li><strong>FSA (Flexible Spending Account)</strong> — through your employer. Use it or LOSE IT each year (with small carryover or grace period).</li>
               <li><strong>Limited-Purpose FSA</strong> — for dental and vision only. Pairs with HSA.</li>
@@ -31,7 +31,7 @@ export default function HsaFsaCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What they pay for (more than you think)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Doctor copays, hospital stays, surgeries.</li>
               <li>Prescription drugs.</li>
               <li>Over-the-counter meds (since 2020) — Tylenol, Advil, Sudafed, allergy meds.</li>
@@ -56,16 +56,16 @@ export default function HsaFsaCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">HSA at retirement = secret IRA</h2>
-            <p className="text-sm">After 65, HSA money can be used for ANYTHING (not just medical). You pay regular income tax — same as withdrawing from a traditional IRA. Difference: medical expenses are still TAX-FREE. So an HSA is a "best of both worlds" account — best to MAX OUT in your working years.</p>
-            <p className="text-sm mt-2">2025 HSA contribution limits: $4,300 single, $8,550 family, plus $1,000 catch-up if 55+.</p>
+            <p className="text-base">After 65, HSA money can be used for ANYTHING (not just medical). You pay regular income tax — same as withdrawing from a traditional IRA. Difference: medical expenses are still TAX-FREE. So an HSA is a "best of both worlds" account — best to MAX OUT in your working years.</p>
+            <p className="text-base mt-2">2025 HSA contribution limits: $4,300 single, $8,550 family, plus $1,000 catch-up if 55+.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use FSA before December</h2>
-            <p className="text-sm">FSA money typically expires Dec 31 (some employers allow $640 carryover or a 2.5-month grace period). End-of-year ideas:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">FSA money typically expires Dec 31 (some employers allow $640 carryover or a 2.5-month grace period). End-of-year ideas:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Stock up on contact lenses, prescription glasses.</li>
               <li>Get the dental work you\'ve been putting off.</li>
               <li>Buy a year\'s worth of OTC meds and first aid.</li>
@@ -79,7 +79,7 @@ export default function HsaFsaCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to shop</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>FSA Store / HSA Store</strong> (fsastore.com) — only sells eligible items. No guessing.</li>
               <li><strong>Amazon</strong> — has an "FSA/HSA Eligible" filter.</li>
               <li><strong>Pharmacy</strong> — most automatically charge HSA/FSA card for eligible items.</li>
@@ -91,7 +91,7 @@ export default function HsaFsaCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save receipts (HSA)</h3>
-            <p className="text-sm text-muted-foreground">For HSAs, you don\'t have to USE the money the year you spend it. Save medical receipts forever. Years later, you can REIMBURSE yourself tax-free for them — letting your HSA grow as an investment.</p>
+            <p className="text-base text-muted-foreground">For HSAs, you don\'t have to USE the money the year you spend it. Save medical receipts forever. Years later, you can REIMBURSE yourself tax-free for them — letting your HSA grow as an investment.</p>
           </CardContent>
         </Card>
       </main>

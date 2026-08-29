@@ -19,7 +19,7 @@ export default function DefensiveDrivingCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why take it</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Most insurance companies give 5-15% off your auto premium for 3 years.</li>
               <li>Average driver saves $50-150 a year — up to $450 over 3 years.</li>
               <li>Real updates on rules, signs, and tech (lane assist, blind-spot monitoring).</li>
@@ -32,7 +32,7 @@ export default function DefensiveDrivingCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best courses</h2>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-base">
               <li><strong>AARP Smart Driver</strong> — $25 online for AARP members ($30 non-members). 4-8 hours. Take at your own pace. Most popular.</li>
               <li><strong>AAA RoadWise Driver</strong> — about $30 online. Designed specifically for 65+.</li>
               <li><strong>Improv Defensive Driving</strong> — $25-35. Funny, taught with humor — keeps you engaged.</li>
@@ -45,7 +45,7 @@ export default function DefensiveDrivingCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How online courses work</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pay online. Sign in.</li>
               <li>Watch videos and read short modules. Pause and resume anytime.</li>
               <li>Quiz at end of each section — usually 80% to pass, can retake.</li>
@@ -59,7 +59,7 @@ export default function DefensiveDrivingCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What\'s covered</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Age-related changes — vision, hearing, reaction time, medications.</li>
               <li>How to compensate (more following distance, slower speeds).</li>
               <li>New car features — lane assist, automatic emergency braking.</li>
@@ -73,7 +73,7 @@ export default function DefensiveDrivingCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Who should take it</h3>
-            <p className="text-sm text-muted-foreground">If you\'re 50+ and drive — yes, every 3 years. The discount alone usually pays for the course 2-5 times over. Even better: research shows seniors who take these courses have measurably fewer accidents.</p>
+            <p className="text-base text-muted-foreground">If you\'re 50+ and drive — yes, every 3 years. The discount alone usually pays for the course 2-5 times over. Even better: research shows seniors who take these courses have measurably fewer accidents.</p>
           </CardContent>
         </Card>
       </main>

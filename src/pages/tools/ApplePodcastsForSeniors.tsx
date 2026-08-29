@@ -19,7 +19,7 @@ export default function ApplePodcastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Already on iPhone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pre-installed on every iPhone.</li>
               <li>Purple icon labeled &quot;Podcasts.&quot;</li>
               <li>No additional download needed.</li>
@@ -33,7 +33,7 @@ export default function ApplePodcastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find shows</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search by name or topic.</li>
               <li>Browse charts — most popular.</li>
               <li>Browse by category.</li>
@@ -47,7 +47,7 @@ export default function ApplePodcastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior favorite shows</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>The Daily — NYT, daily news.</li>
               <li>Up First — NPR, 10 min daily.</li>
               <li>This American Life — storytelling.</li>
@@ -61,7 +61,7 @@ export default function ApplePodcastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Listening tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Speed up to 1.25x or 1.5x speed.</li>
               <li>Sleep timer for bedtime listening.</li>
               <li>Skip 15 sec if uninteresting.</li>
@@ -75,7 +75,7 @@ export default function ApplePodcastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Podcasts+</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Premium subscriptions to specific shows.</li>
               <li>Ad-free versions.</li>
               <li>Bonus content.</li>
@@ -89,7 +89,7 @@ export default function ApplePodcastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other podcast apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Spotify — music + podcasts together.</li>
               <li>Pocket Casts — pro features.</li>
               <li>Overcast — popular with iPhone users.</li>
@@ -103,7 +103,7 @@ export default function ApplePodcastsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Already there. Just open it.</h3>
-            <p className="text-sm text-muted-foreground">If you have an iPhone, you already have everything you need. Open Podcasts (purple icon), search a topic you like, subscribe to one show. Listen during your morning coffee or walk. Free, no setup, no extra apps. The world&apos;s biggest podcast library at your fingertips.</p>
+            <p className="text-base text-muted-foreground">If you have an iPhone, you already have everything you need. Open Podcasts (purple icon), search a topic you like, subscribe to one show. Listen during your morning coffee or walk. Free, no setup, no extra apps. The world&apos;s biggest podcast library at your fingertips.</p>
           </CardContent>
         </Card>
       </main>

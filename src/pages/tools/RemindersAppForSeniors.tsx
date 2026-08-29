@@ -19,7 +19,7 @@ export default function RemindersAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Reminders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Built into every iPhone.</li>
               <li>&quot;Hey Siri, remind me to take my pill at 8am.&quot;</li>
               <li>Time + location-based.</li>
@@ -33,7 +33,7 @@ export default function RemindersAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Google Tasks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free with Google account.</li>
               <li>Within Gmail + Google Calendar.</li>
               <li>Simple list approach.</li>
@@ -47,7 +47,7 @@ export default function RemindersAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice command setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Hey Siri, remind me to call doctor at 2pm.&quot;</li>
               <li>&quot;Hey Google, remind me to take pills daily at 8am.&quot;</li>
               <li>Auto-creates with right timing.</li>
@@ -61,7 +61,7 @@ export default function RemindersAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-critical reminders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily medication doses.</li>
               <li>Doctor appointments + days before.</li>
               <li>Pet medications.</li>
@@ -75,7 +75,7 @@ export default function RemindersAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recurring reminders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily — morning pills.</li>
               <li>Weekly — Sunday call mom.</li>
               <li>Monthly — bills due.</li>
@@ -89,7 +89,7 @@ export default function RemindersAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior memory aid</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t fight memory issues.</li>
               <li>Externalize to phone.</li>
               <li>Brain doesn&apos;t need to remember everything.</li>
@@ -103,7 +103,7 @@ export default function RemindersAppForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Voice setup is best</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t fumble with apps. Just say &quot;Hey Siri, remind me to take my blood pressure pill at 8am every morning.&quot; Done. Phone reminds you at 8am tomorrow + every day after. Same with Google Assistant. Voice command + reminders eliminate medication-missing problem for many seniors.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t fumble with apps. Just say &quot;Hey Siri, remind me to take my blood pressure pill at 8am every morning.&quot; Done. Phone reminds you at 8am tomorrow + every day after. Same with Google Assistant. Voice command + reminders eliminate medication-missing problem for many seniors.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorHolidayCardApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Punkpost</h2><p>$5-$10. Real artist hand-letters cards. Premium experience.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch sales</h2><p>40-50% off Black Friday. Order early to lock in low prices.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Address book</h2><p>Apps save addresses year to year. Easier than handwriting.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Order by Dec 5 for guaranteed Christmas delivery.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Order by Dec 5 for guaranteed Christmas delivery.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

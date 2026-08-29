@@ -22,7 +22,7 @@ export default function SeniorPenPalProgramsApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">From schoolchildren</h2><p>Many programs match elementary students with seniors. Both benefit.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Local senior centers</h2><p>Often have card-writing groups. Pair with senior pen pals.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Veterans pen pals</h2><p>Operation Gratitude. Get letters from active military.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Real mail brightens entire week. Sign up for at least one program.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Real mail brightens entire week. Sign up for at least one program.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

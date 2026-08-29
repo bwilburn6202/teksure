@@ -19,7 +19,7 @@ export default function RetirementAccountTypes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Traditional 401(k)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Through your employer.</li>
               <li>Contribute pre-tax money. Saves taxes today.</li>
               <li>Grows tax-deferred. Pay tax when you withdraw in retirement.</li>
@@ -32,7 +32,7 @@ export default function RetirementAccountTypes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Roth 401(k)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Same as 401(k) but you contribute AFTER-tax money.</li>
               <li>Grows tax-free. Withdrawals tax-free in retirement.</li>
               <li>Best for: lower-tax-bracket workers (younger or part-time).</li>
@@ -44,7 +44,7 @@ export default function RetirementAccountTypes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Traditional IRA</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>You open it yourself (Vanguard, Fidelity, Schwab).</li>
               <li>Pre-tax (deductible) IF income is under limits.</li>
               <li>Grows tax-deferred.</li>
@@ -57,7 +57,7 @@ export default function RetirementAccountTypes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Roth IRA</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>You contribute after-tax money.</li>
               <li>Grows tax-free. Withdrawals tax-free.</li>
               <li>Best account in retirement — withdrawals don\'t affect taxes, Medicare premiums.</li>
@@ -71,7 +71,7 @@ export default function RetirementAccountTypes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SEP / SIMPLE IRA</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>SEP-IRA</strong>: for self-employed. High limit, simple paperwork.</li>
               <li><strong>SIMPLE IRA</strong>: for small business employees.</li>
               <li>Both pre-tax. RMDs apply.</li>
@@ -82,7 +82,7 @@ export default function RetirementAccountTypes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pension / Defined Benefit</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Old-school employer plan. Promises a monthly check for life.</li>
               <li>Mostly disappearing in private sector. Still strong for federal, military, state, union.</li>
               <li>(See our "Pension Lump Sum vs Monthly" tool.)</li>
@@ -93,7 +93,7 @@ export default function RetirementAccountTypes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">HSA — secret retirement account</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Triple tax advantage if you have a high-deductible health plan.</li>
               <li>After 65, withdraw for ANYTHING (taxed like IRA) or medical (tax-free).</li>
               <li>Maximize while working — best account that exists.</li>
@@ -104,7 +104,7 @@ export default function RetirementAccountTypes() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Common retiree question: "Is it traditional or Roth?"</h3>
-            <p className="text-sm text-muted-foreground">Look at your account statement. "Pre-tax" or "Traditional" or "Tax-deferred" = pay tax when you withdraw. "After-tax" or "Roth" = tax-free withdrawals. Most workers have both pre-tax 401(k) AND a separate Roth IRA.</p>
+            <p className="text-base text-muted-foreground">Look at your account statement. "Pre-tax" or "Traditional" or "Tax-deferred" = pay tax when you withdraw. "After-tax" or "Roth" = tax-free withdrawals. Most workers have both pre-tax 401(k) AND a separate Roth IRA.</p>
           </CardContent>
         </Card>
       </main>

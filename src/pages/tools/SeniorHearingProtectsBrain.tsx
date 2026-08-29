@@ -22,7 +22,7 @@ export default function SeniorHearingProtectsBrain() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AirPods Pro 2</h2><p>$249. Hearing aid mode. Saves $700+ for mild loss.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free hearing test</h2><p>Costco. Most audiologists. Mimi app. No excuse to skip.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Social isolation</h2><p>Hearing loss → less talking → less social → more dementia. Break the cycle.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Hearing test annually after 60. Get hearing aids if needed. Brain depends on it.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Hearing test annually after 60. Get hearing aids if needed. Brain depends on it.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

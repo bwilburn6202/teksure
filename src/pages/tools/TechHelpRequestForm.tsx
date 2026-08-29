@@ -41,7 +41,7 @@ export default function TechHelpRequestForm() {
   const filled = !!(device || problem);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Tech Help Request Form | TekSure"
         description="Describe a tech problem clearly before asking for help. The form gives you the right things to write down, then prints or copies a clean summary."
@@ -50,10 +50,10 @@ export default function TechHelpRequestForm() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <HelpCircle className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Tech Help Request Form</h1>
+            <HelpCircle className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Tech Help Request Form</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Before calling tech support or asking a family member, fill this in. A clear summary saves everyone time.
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function TechHelpRequestForm() {
             </div>
             <div>
               <Label htmlFor="problem" className="text-base font-medium">What is happening that is wrong?</Label>
-              <textarea id="problem" rows={3} placeholder="Describe what you see, hear, or what is not working" value={problem} onChange={e => setProblem(e.target.value)} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white" />
+              <textarea id="problem" rows={3} placeholder="Describe what you see, hear, or what is not working" value={problem} onChange={e => setProblem(e.target.value)} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card" />
             </div>
             <div>
               <Label htmlFor="when" className="text-base font-medium">When did it start?</Label>
@@ -86,7 +86,7 @@ export default function TechHelpRequestForm() {
             </div>
             <div>
               <Label htmlFor="tried" className="text-base font-medium">What have you already tried?</Label>
-              <textarea id="tried" rows={2} placeholder="e.g. Restarted, tried different cable, looked at Settings" value={tried} onChange={e => setTried(e.target.value)} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white" />
+              <textarea id="tried" rows={2} placeholder="e.g. Restarted, tried different cable, looked at Settings" value={tried} onChange={e => setTried(e.target.value)} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card" />
             </div>
             <div>
               <Label htmlFor="urgency" className="text-base font-medium">How urgent is this?</Label>
@@ -103,10 +103,10 @@ export default function TechHelpRequestForm() {
             </CardHeader>
             <CardContent>
               <div className="hidden print:block mb-2">
-                <h2 className="text-xl font-bold text-gray-900">Tech Help Request</h2>
-                <p className="text-xs text-gray-500">Prepared {new Date().toLocaleDateString("en-US")}</p>
+                <h2 className="text-xl font-bold text-foreground">Tech Help Request</h2>
+                <p className="text-sm text-muted-foreground">Prepared {new Date().toLocaleDateString("en-US")}</p>
               </div>
-              <pre className="whitespace-pre-wrap text-sm text-gray-800 leading-relaxed font-sans">{summary}</pre>
+              <pre className="whitespace-pre-wrap text-sm text-foreground leading-relaxed font-sans">{summary}</pre>
             </CardContent>
           </Card>
         )}
@@ -119,18 +119,18 @@ export default function TechHelpRequestForm() {
           <Button variant="outline" onClick={copyToClipboard} disabled={!filled} className="gap-2">
             {copied ? <><Check className="h-4 w-4" /> Copied!</> : <><Copy className="h-4 w-4" /> Copy Text</>}
           </Button>
-          <Button variant="ghost" onClick={reset} className="gap-2 text-gray-500">Clear</Button>
+          <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground">Clear</Button>
         </div>
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               The more specific you are about what was happening right before the problem started, the faster a helper can figure it out. Even small details matter.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

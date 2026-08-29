@@ -22,7 +22,7 @@ export default function SeniorFreeMusicApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">iHeartRadio</h2><p>Free. Live radio stations from across the country.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hoopla / Freegal</h2><p>FREE music from your library card. 5+ free song downloads weekly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice control</h2><p>&ldquo;Hey Siri, play Frank Sinatra&rdquo; or &ldquo;Hey Google, play 60s oldies.&rdquo;</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Spotify Premium is $5.99/month for seniors with low income through Premium for Students/Limited offers — check eligibility.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Spotify Premium is $5.99/month for seniors with low income through Premium for Students/Limited offers — check eligibility.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

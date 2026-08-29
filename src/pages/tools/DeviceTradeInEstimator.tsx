@@ -46,7 +46,7 @@ export default function DeviceTradeInEstimator() {
         {!device ? (
           <div><h2 className="text-lg font-semibold mb-4 text-center">What type of device do you have?</h2>
             <div className="grid grid-cols-2 gap-3">{([['iphone', 'iPhone', Smartphone], ['android', 'Android Phone', Smartphone], ['ipad', 'iPad / Tablet', Monitor], ['laptop', 'Laptop', Monitor]] as const).map(([id, label, Icon]) => (
-              <Card key={id} className="cursor-pointer hover:border-primary/40 transition-all" onClick={() => setDevice(id as DeviceType)}><CardContent className="p-6 text-center"><Icon className="h-8 w-8 mx-auto mb-2 text-primary" /><p className="font-medium text-sm">{label}</p></CardContent></Card>
+              <Card key={id} className="cursor-pointer hover:border-primary/40 transition-all" onClick={() => setDevice(id as DeviceType)}><CardContent className="p-6 text-center"><Icon className="h-8 w-8 mx-auto mb-2 text-primary" /><p className="font-medium text-base">{label}</p></CardContent></Card>
             ))}</div>
           </div>
         ) : !condition ? (
@@ -57,21 +57,21 @@ export default function DeviceTradeInEstimator() {
               ['fair', 'Fair', 'Visible wear — noticeable scratches or dents, works but battery drains fast'],
               ['broken', 'Broken / Damaged', 'Cracked screen, does not turn on, water damage, or major issues'],
             ] as const).map(([id, label, desc]) => (
-              <Card key={id} className="cursor-pointer hover:border-primary/40 transition-all" onClick={() => setCondition(id as Condition)}><CardContent className="p-4"><h3 className="font-semibold text-sm">{label}</h3><p className="text-xs text-muted-foreground">{desc}</p></CardContent></Card>
+              <Card key={id} className="cursor-pointer hover:border-primary/40 transition-all" onClick={() => setCondition(id as Condition)}><CardContent className="p-4"><h3 className="font-semibold text-sm">{label}</h3><p className="text-sm text-muted-foreground">{desc}</p></CardContent></Card>
             ))}</div>
             <Button variant="ghost" onClick={() => setDevice(null)} className="mt-4 gap-1 text-xs"><ArrowRight className="h-3 w-3 rotate-180" /> Back</Button>
           </div>
         ) : (
           <div>
             <Card className="mb-6 border-primary/40"><CardContent className="p-6 text-center">
-              <p className="text-sm text-muted-foreground mb-1">Estimated trade-in value</p>
+              <p className="text-base text-muted-foreground mb-1">Estimated trade-in value</p>
               <p className="text-4xl font-bold text-primary">${estimate!.min} — ${estimate!.max}</p>
-              <p className="text-xs text-muted-foreground mt-2">Actual value depends on specific model, age, and storage size. Compare offers from multiple sites.</p>
+              <p className="text-sm text-muted-foreground mt-2">Actual value depends on specific model, age, and storage size. Compare offers from multiple sites.</p>
             </CardContent></Card>
             <h3 className="font-semibold mb-3">Where to sell or trade in</h3>
             <div className="space-y-2">{TRADE_IN_SITES.map(site => (
               <Card key={site.name}><CardContent className="p-4 flex items-center justify-between">
-                <div><h4 className="font-medium text-sm">{site.name}</h4><p className="text-xs text-muted-foreground">{site.description}</p></div>
+                <div><h4 className="font-medium text-sm">{site.name}</h4><p className="text-sm text-muted-foreground">{site.description}</p></div>
                 <a href={site.url} target="_blank" rel="noopener noreferrer" className="shrink-0 ml-3"><Button size="sm" variant="outline" className="gap-1 text-xs">Visit <ExternalLink className="h-3 w-3" /></Button></a>
               </CardContent></Card>
             ))}</div>

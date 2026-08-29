@@ -31,10 +31,10 @@ export default function RetirementCalculatorPicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{t.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{t.cost}</span>
+                  <span className="text-base font-semibold text-primary">{t.cost}</span>
                 </div>
-                <p className="text-sm">{t.best}</p>
-                <p className="text-sm text-muted-foreground">{t.good}</p>
+                <p className="text-base">{t.best}</p>
+                <p className="text-base text-muted-foreground">{t.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function RetirementCalculatorPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Rule-of-thumb numbers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>4% rule</strong> — withdraw 4% of nest egg yearly. Lasts 30+ years (most cases). $1M = $40,000/year.</li>
               <li><strong>25× expenses</strong> — multiply yearly spending by 25. $50K/year × 25 = $1.25M nest egg target.</li>
               <li><strong>Social Security</strong> — average benefit $1,975/month (2025). Wait until 67-70 for higher.</li>
@@ -55,7 +55,7 @@ export default function RetirementCalculatorPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Numbers to gather</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Total saved (401k + IRA + brokerage + cash).</li>
               <li>Monthly expenses (Mint, Copilot, or just bank statement).</li>
               <li>Your Social Security estimate (ssa.gov).</li>
@@ -69,7 +69,7 @@ export default function RetirementCalculatorPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to see a real advisor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$1M+ saved with complex situation (multiple accounts, real estate, business).</li>
               <li>Considering Roth conversions.</li>
               <li>Trying to reduce taxes in retirement.</li>
@@ -83,7 +83,7 @@ export default function RetirementCalculatorPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help — AARP and SHIP</h3>
-            <p className="text-sm text-muted-foreground"><strong>AARP Foundation Tax-Aide</strong> — free retirement tax help for 50+ regardless of AARP membership. <strong>SHIP</strong> (State Health Insurance Assistance Program) — free Medicare counseling. Both free, both excellent.</p>
+            <p className="text-base text-muted-foreground"><strong>AARP Foundation Tax-Aide</strong> — free retirement tax help for 50+ regardless of AARP membership. <strong>SHIP</strong> (State Health Insurance Assistance Program) — free Medicare counseling. Both free, both excellent.</p>
           </CardContent>
         </Card>
       </main>

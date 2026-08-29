@@ -19,7 +19,7 @@ export default function CreditScoreCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free credit score apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Credit Karma</strong> — TransUnion + Equifax. Free, no credit card needed.</li>
               <li><strong>Experian app</strong> — your Experian score free.</li>
               <li><strong>Capital One CreditWise</strong> — free even without a Capital One card.</li>
@@ -33,7 +33,7 @@ export default function CreditScoreCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What ACTUALLY moves your score</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Payment history (35%)</strong> — pay every bill on time. Set autopay for at least the minimum.</li>
               <li><strong>Credit utilization (30%)</strong> — use less than 30% of available limit. Pay off cards before statement closes.</li>
               <li><strong>Length of credit history (15%)</strong> — keep oldest cards open even if rarely used.</li>
@@ -46,7 +46,7 @@ export default function CreditScoreCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common myths</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li> "Closing old cards helps" — actually HURTS by reducing total available credit.</li>
               <li> "Carrying a balance helps" — false. Pay in full. Carrying = paying interest.</li>
               <li> "Checking your own credit hurts your score" — false. You can check it daily.</li>
@@ -60,7 +60,7 @@ export default function CreditScoreCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What\'s a good score?</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>800+ = Exceptional. Best loan rates anywhere.</li>
               <li>740-799 = Very good. Great rates.</li>
               <li>670-739 = Good. Most loans, decent rates.</li>
@@ -73,7 +73,7 @@ export default function CreditScoreCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For senior homeowners</h3>
-            <p className="text-sm text-muted-foreground">Your credit score still matters in retirement. Insurance companies use it. Refinancing or HELOC use it. Some landlords (if you ever rent again) use it. Check yearly. Lock down identity theft (credit freeze) if you don\'t plan to apply for new credit. (See our Credit Freeze Coach.)</p>
+            <p className="text-base text-muted-foreground">Your credit score still matters in retirement. Insurance companies use it. Refinancing or HELOC use it. Some landlords (if you ever rent again) use it. Check yearly. Lock down identity theft (credit freeze) if you don\'t plan to apply for new credit. (See our Credit Freeze Coach.)</p>
           </CardContent>
         </Card>
       </main>

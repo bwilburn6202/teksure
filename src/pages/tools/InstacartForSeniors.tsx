@@ -19,7 +19,7 @@ export default function InstacartForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Instacart?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Personal shoppers pick up groceries for you.</li>
               <li>Order from Costco, Aldi, Kroger, Publix, Wegmans, etc.</li>
               <li>Same-day delivery — usually within 2 hours.</li>
@@ -33,7 +33,7 @@ export default function InstacartForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pay-per-order — about $4–8 delivery fee.</li>
               <li>Plus tip for shopper — 10–15% standard.</li>
               <li>Instacart+ membership — $99/year, free delivery on orders $35+.</li>
@@ -47,7 +47,7 @@ export default function InstacartForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to order</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download free Instacart app or go to Instacart.com.</li>
               <li>Enter your zip code — see participating stores.</li>
               <li>Pick a store, browse aisles or search.</li>
@@ -61,7 +61,7 @@ export default function InstacartForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Add notes — &quot;ripe bananas&quot; or &quot;leave at door.&quot;</li>
               <li>Choose &quot;Replace&quot; or &quot;Refund&quot; for out-of-stock.</li>
               <li>Save favorite items — speeds reorders.</li>
@@ -75,7 +75,7 @@ export default function InstacartForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">EBT/SNAP supported</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Instacart accepts EBT for grocery items.</li>
               <li>Free delivery often available for EBT users.</li>
               <li>Eligible items show EBT label.</li>
@@ -89,7 +89,7 @@ export default function InstacartForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walmart+ — $98/year, free Walmart delivery.</li>
               <li>Amazon Fresh — Prime members, varies by area.</li>
               <li>Shipt — Target focused, $99/year.</li>
@@ -103,7 +103,7 @@ export default function InstacartForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try one order first</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t commit to a yearly membership before trying it. Place one $35+ order with a $5 delivery fee. See how it feels — quality of substitutions, freshness, accuracy. If you order weekly, the $99/year Instacart+ pays for itself in delivery fees alone. Many seniors with mobility issues say grocery delivery transformed their independence.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t commit to a yearly membership before trying it. Place one $35+ order with a $5 delivery fee. See how it feels — quality of substitutions, freshness, accuracy. If you order weekly, the $99/year Instacart+ pays for itself in delivery fees alone. Many seniors with mobility issues say grocery delivery transformed their independence.</p>
           </CardContent>
         </Card>
       </main>

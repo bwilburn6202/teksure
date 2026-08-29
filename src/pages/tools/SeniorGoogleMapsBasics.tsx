@@ -22,7 +22,7 @@ export default function SeniorGoogleMapsBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Save Home and Work</h2><p>Tap your profile → Settings → Saved → set Home and Work.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Find services</h2><p>Type &ldquo;pharmacy near me&rdquo; or &ldquo;urgent care.&rdquo; See ratings and hours.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Download offline</h2><p>Save your area for use without internet on trips.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Apple Maps and Waze do the same thing. Pick whichever feels easiest.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Apple Maps and Waze do the same thing. Pick whichever feels easiest.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

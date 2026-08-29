@@ -47,31 +47,31 @@ export default function TimeZoneConverter() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Time Zone Converter | TekSure" description="Type a time and see it in every US time zone, plus London and Paris. Perfect for scheduling calls with family." />
       <div className="max-w-xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Clock className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Time Zone Converter</h1>
+            <Clock className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Time Zone Converter</h1>
           </div>
-          <p className="text-gray-600 text-lg">Type a time and see it in every common time zone.</p>
+          <p className="text-muted-foreground text-lg">Type a time and see it in every common time zone.</p>
         </div>
         <Card className="mb-4">
           <CardContent className="py-4 px-4 space-y-3">
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="text-base font-medium text-gray-700">Date</label>
+                <label className="text-base font-medium text-foreground">Date</label>
                 <Input type="date" value={date} onChange={e => setDate(e.target.value)} className="mt-1 text-base" />
               </div>
               <div>
-                <label className="text-base font-medium text-gray-700">Time</label>
+                <label className="text-base font-medium text-foreground">Time</label>
                 <Input type="time" value={time} onChange={e => setTime(e.target.value)} className="mt-1 text-base" />
               </div>
             </div>
             <div>
-              <label className="text-base font-medium text-gray-700">In time zone</label>
-              <select value={fromZone} onChange={e => setFromZone(e.target.value)} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <label className="text-base font-medium text-foreground">In time zone</label>
+              <select value={fromZone} onChange={e => setFromZone(e.target.value)} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card">
                 {ZONES.map(z => <option key={z.id} value={z.id}>{z.label}</option>)}
               </select>
             </div>
@@ -84,8 +84,8 @@ export default function TimeZoneConverter() {
               <div className="space-y-1">
                 {ZONES.filter(z => z.id !== fromZone).map(z => (
                   <div key={z.id} className="flex justify-between items-center py-2 border-b last:border-0 text-sm">
-                    <span className="text-gray-700">{z.label}</span>
-                    <span className="font-semibold text-blue-700">{convertTo(z.id)}</span>
+                    <span className="text-foreground">{z.label}</span>
+                    <span className="font-semibold text-info-foreground">{convertTo(z.id)}</span>
                   </div>
                 ))}
               </div>
@@ -93,15 +93,15 @@ export default function TimeZoneConverter() {
           </Card>
         )}
 
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Use this before calling family who live far away. A 9 AM call from California is noon in New York.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

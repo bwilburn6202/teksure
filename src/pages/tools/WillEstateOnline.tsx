@@ -28,7 +28,7 @@ export default function WillEstateOnline() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What every adult needs</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li><strong>Will</strong> — what happens to your stuff. Names guardians for minor children.</li>
               <li><strong>Healthcare power of attorney</strong> — who decides medical care if you can\'t.</li>
               <li><strong>Living will / advance directive</strong> — end-of-life wishes (CPR, feeding tube, etc.).</li>
@@ -45,10 +45,10 @@ export default function WillEstateOnline() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base mb-1">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -57,7 +57,7 @@ export default function WillEstateOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use a REAL attorney</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Estate over $1 million</strong> (or close to your state\'s estate tax limit).</li>
               <li><strong>Real estate in multiple states</strong>.</li>
               <li><strong>Complex family</strong> (blended, second marriages, special-needs children).</li>
@@ -71,7 +71,7 @@ export default function WillEstateOnline() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After you make it</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>SIGN it in front of witnesses (rules vary by state).</li>
               <li>NOTARIZE if your state requires it.</li>
               <li>Tell your family WHERE the original is.</li>
@@ -86,7 +86,7 @@ export default function WillEstateOnline() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">"I don\'t need one" — yes you do</h3>
-            <p className="text-sm text-muted-foreground">Without a will, the state decides who gets your stuff. The court process (probate) costs your family thousands and takes 6-18 months. Even simple estates benefit from a will. $200 saves your family thousands and months of stress.</p>
+            <p className="text-base text-muted-foreground">Without a will, the state decides who gets your stuff. The court process (probate) costs your family thousands and takes 6-18 months. Even simple estates benefit from a will. $200 saves your family thousands and months of stress.</p>
           </CardContent>
         </Card>
       </main>

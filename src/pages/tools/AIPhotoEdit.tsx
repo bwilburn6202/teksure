@@ -30,10 +30,10 @@ export default function AIPhotoEdit() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function AIPhotoEdit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Magic uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Remove tourist behind grandkids in vacation photo.</li>
               <li>Erase trash bin from beach shot.</li>
               <li>Fix red eye on old photos.</li>
@@ -58,7 +58,7 @@ export default function AIPhotoEdit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Clean Up walkthrough</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Photos. Pick photo to edit.</li>
               <li>Tap "Edit" (top right).</li>
               <li>Tap "Clean Up" icon.</li>
@@ -73,7 +73,7 @@ export default function AIPhotoEdit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Restore old photos</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Scan old photo (Apple Notes scanner OR PhotoScan app).</li>
               <li>Open in Remini / Adobe Photoshop Express.</li>
               <li>Tap "Enhance" or "AI Restore".</li>
@@ -88,7 +88,7 @@ export default function AIPhotoEdit() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">AI animation feels weird</h3>
-            <p className="text-sm text-muted-foreground">MyHeritage Deep Nostalgia animates old photos — moves their face. Some find it magical, some find it unsettling. Try with permission. Best for distant ancestors. Not always appropriate for recent loved ones.</p>
+            <p className="text-base text-muted-foreground">MyHeritage Deep Nostalgia animates old photos — moves their face. Some find it magical, some find it unsettling. Try with permission. Best for distant ancestors. Not always appropriate for recent loved ones.</p>
           </CardContent>
         </Card>
       </main>

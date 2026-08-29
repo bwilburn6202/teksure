@@ -41,7 +41,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '..');
 const STATE_FILE = path.join(ROOT, '.claude', 'dev-loop-state.json');
 const BACKLOG_FILE = path.join(ROOT, '.claude', 'dev-loop-backlog.md');
-const BACKLOG_MAX_BYTES = 256 * 1024; // 256KB cap; older sections trimmed
+// CLAUDE.md sets the backlog budget at 64KB: this file is read at the start of
+// every run, so its size is a direct context cost. The cap was 256KB - four times
+// the documented budget - which is why it kept having to be trimmed by hand.
+// Keep these two numbers in agreement.
+const BACKLOG_MAX_BYTES = 64 * 1024;
 
 const args = parseArgs(process.argv.slice(2));
 const ONCE = args.has('once');
@@ -797,13 +801,73 @@ function appendBacklog(block) {
     const tail = existing.slice(splitAt + 5);
     updated = head + block + '\n\n' + tail;
   }
-  // Trim if backlog grew past cap. Keep header + most recent ~256KB of cycles.
-  if (Buffer.byteLength(updated, 'utf8') > BACKLOG_MAX_BYTES) {
-    const head = updated.slice(0, splitAt === -1 ? 0 : splitAt + 5);
-    const remainder = updated.slice(head.length, head.length + BACKLOG_MAX_BYTES - head.length);
-    updated = head + remainder + '\n\n_(older cycles trimmed)_\n';
+  fs.writeFileSync(BACKLOG_FILE, trimBacklog(updated));
+}
+
+/**
+ * Trim the backlog to BACKLOG_MAX_BYTES on a cycle boundary.
+ *
+ * The previous implementation sliced at a raw byte offset, which cut through
+ * the middle of whichever cycle happened to straddle the cap and left a
+ * half-sentence followed by a stray code fence. It also computed the header
+ * offset against the pre-insert string while slicing the post-insert one, so
+ * the kept region was off by the length of the new block. Cut at `## Cycle`
+ * headings instead: the result is always a whole number of readable cycles.
+ */
+function trimBacklog(text) {
+  if (Buffer.byteLength(text, 'utf8') <= BACKLOG_MAX_BYTES) return text;
+  const splitAt = text.indexOf('---\n\n');
+  const head = splitAt === -1 ? '' : text.slice(0, splitAt + 5);
+  const body = text.slice(head.length);
+  const marker = '\n## Cycle ';
+  let kept = body;
+  // Drop whole cycles from the oldest end until the file fits.
+  while (Buffer.byteLength(head + kept, 'utf8') > BACKLOG_MAX_BYTES) {
+    const lastCycle = kept.lastIndexOf(marker);
+    if (lastCycle <= 0) break; // never drop the newest cycle
+    kept = kept.slice(0, lastCycle + 1);
   }
-  fs.writeFileSync(BACKLOG_FILE, updated);
+  return head + kept.replace(/\s+$/, '') + '\n\n_(older cycles trimmed)_\n';
+}
+
+/**
+ * Collapse a run of identical all-clear cycles into a single entry.
+ *
+ * The scheduled loop runs every 6 hours. When nothing changes it was writing a
+ * fresh ~70-line dump of the same thirteen "[ok]" lines each time, so nine
+ * consecutive green cycles filled the entire 64KB budget and evicted the
+ * hand-written cycles that actually recorded decisions. When the findings are
+ * byte-identical to the previous cycle, update a counter line on the existing
+ * top block instead of appending a new one.
+ *
+ * Returns true if the repeat was folded in, false if the caller should append.
+ */
+function foldRepeatCycle(cycleNumber, stamp) {
+  if (DRY) return true;
+  if (!fs.existsSync(BACKLOG_FILE)) return false;
+  const text = fs.readFileSync(BACKLOG_FILE, 'utf8');
+  const headingIdx = text.indexOf('\n## Cycle ');
+  if (headingIdx === -1) return false;
+  const lineEnd = text.indexOf('\n', headingIdx + 1);
+  if (lineEnd === -1) return false;
+
+  const rest = text.slice(lineEnd + 1);
+  const nextHeading = rest.indexOf('\n## Cycle ');
+  const blockBody = nextHeading === -1 ? rest : rest.slice(0, nextHeading + 1);
+  const REPEAT_RE = /^_No change through cycle \d+ \([^)]*\) — (\d+) consecutive identical cycles\._$/m;
+
+  const prior = blockBody.match(REPEAT_RE);
+  const count = prior ? Number(prior[1]) + 1 : 2;
+  const line = `_No change through cycle ${cycleNumber} (${stamp}) — ${count} consecutive identical cycles._`;
+
+  const newBody = prior
+    ? blockBody.replace(REPEAT_RE, line)
+    : '\n' + line + '\n' + blockBody;
+
+  const updated =
+    text.slice(0, lineEnd + 1) + newBody + (nextHeading === -1 ? '' : rest.slice(nextHeading + 1));
+  fs.writeFileSync(BACKLOG_FILE, trimBacklog(updated));
+  return true;
 }
 
 // ── Cycle ─────────────────────────────────────────────────────────────────
@@ -862,7 +926,18 @@ function runCycle(state) {
   }
   lines.push('---');
 
-  appendBacklog(lines.join('\n'));
+  // Signature = the findings only, with no timestamp or cycle number, so an
+  // unchanged run is detectable. Written to state so the comparison survives
+  // across processes (the loop runs as a fresh process every 6 hours).
+  const signature = JSON.stringify(
+    results.map((r) => [r.name, r.severity, r.summary, r.details]),
+  );
+  const unchanged = state.lastSignature === signature && state.cycleCount > 1;
+
+  if (!(unchanged && foldRepeatCycle(state.cycleCount, stamp))) {
+    appendBacklog(lines.join('\n'));
+  }
+  state.lastSignature = signature;
 
   // Update state snapshot.
   state.lastFindings = Object.fromEntries(

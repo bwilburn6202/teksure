@@ -19,7 +19,7 @@ export default function BetterWebSearchCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Search like a librarian</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Use quotes</strong> for exact phrases: "best Italian restaurant in Pittsburgh"</li>
               <li><strong>Add a dash to exclude:</strong> garden hose -metal</li>
               <li><strong>Search a specific site:</strong> site:cdc.gov flu vaccine</li>
@@ -34,7 +34,7 @@ export default function BetterWebSearchCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick a privacy-friendly engine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>DuckDuckGo</strong> — doesn\'t track your searches. Same web results. Make it your default.</li>
               <li><strong>Startpage</strong> — gives you Google results without tracking.</li>
               <li><strong>Brave Search</strong> — independent, privacy-friendly.</li>
@@ -49,7 +49,7 @@ export default function BetterWebSearchCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Evaluating what you find</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Who wrote this?</strong> — bio, credentials. Beware "wellness coach" giving medical advice.</li>
               <li><strong>What\'s the .domain?</strong> — .gov and .edu most reliable. .com varies wildly.</li>
               <li><strong>Date</strong> — old article on rapidly-changing topic (medications, tech) can be wrong.</li>
@@ -65,15 +65,15 @@ export default function BetterWebSearchCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid clicking the first thing</h2>
-            <p className="text-sm">First 1-3 results are usually <strong>ads</strong>, marked "Sponsored". Skip them — you\'ll often pay more (the advertiser is paying for the click). Real organic results start below.</p>
-            <p className="text-sm mt-2">For shopping: search the product name, then go DIRECTLY to the manufacturer\'s website. Skip ads pretending to be the brand.</p>
+            <p className="text-base">First 1-3 results are usually <strong>ads</strong>, marked "Sponsored". Skip them — you\'ll often pay more (the advertiser is paying for the click). Real organic results start below.</p>
+            <p className="text-base mt-2">For shopping: search the product name, then go DIRECTLY to the manufacturer\'s website. Skip ads pretending to be the brand.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For medical questions</h3>
-            <p className="text-sm text-muted-foreground">Prefer .gov / hospital-affiliated sites: <strong>medlineplus.gov</strong>, <strong>cdc.gov</strong>, <strong>nih.gov</strong>, <strong>mayoclinic.org</strong>. Skip random .com health sites with too many ads. Better still — message your doctor through the patient portal.</p>
+            <p className="text-base text-muted-foreground">Prefer .gov / hospital-affiliated sites: <strong>medlineplus.gov</strong>, <strong>cdc.gov</strong>, <strong>nih.gov</strong>, <strong>mayoclinic.org</strong>. Skip random .com health sites with too many ads. Better still — message your doctor through the patient portal.</p>
           </CardContent>
         </Card>
       </main>

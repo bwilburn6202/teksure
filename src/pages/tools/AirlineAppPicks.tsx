@@ -19,7 +19,7 @@ export default function AirlineAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Your airline&apos;s app (must-have)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>American Airlines</strong> — best for status &amp; upgrades.</li>
               <li><strong>Delta</strong> — most reliable. Great gate-change alerts.</li>
               <li><strong>United</strong> — strong international.</li>
@@ -27,14 +27,14 @@ export default function AirlineAppPicks() {
               <li><strong>JetBlue</strong> — clean, simple.</li>
               <li><strong>Alaska Airlines</strong> — top-rated app for usability.</li>
             </ul>
-            <p className="text-sm mt-3">Use the app for: digital boarding pass, real-time delays, free in-flight messaging, gate changes (often pinged BEFORE airport speakers announce).</p>
+            <p className="text-base mt-3">Use the app for: digital boarding pass, real-time delays, free in-flight messaging, gate changes (often pinged BEFORE airport speakers announce).</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">TSA &amp; airport apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>MyTSA</strong> — security wait times by airport. Tells you what&apos;s allowed in a carry-on.</li>
               <li><strong>FlightAware</strong> — real-time flight tracking. See if your delayed plane is even at the airport yet.</li>
               <li><strong>Mobile Passport Control (US Customs)</strong> — skip Customs lines on return. Free.</li>
@@ -46,7 +46,7 @@ export default function AirlineAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">In-flight tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Free messaging</strong> — Most US airlines: free iMessage/WhatsApp/Facebook Messenger texts in flight.</li>
               <li><strong>T-Mobile customers</strong> — free in-flight wifi on most US airlines.</li>
               <li><strong>Pre-download Netflix shows</strong> — over wifi at home, watch on plane without paying for wifi.</li>
@@ -58,7 +58,7 @@ export default function AirlineAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Day-of checklist</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>24 hours before — check in via app, save boarding pass to Apple/Google Wallet.</li>
               <li>2 hours before — leave home (3 hours for international).</li>
               <li>App — verify gate, security wait time.</li>
@@ -72,7 +72,7 @@ export default function AirlineAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If your flight is delayed/canceled</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Check airline app FIRST</strong> — already may have rebooked you.</li>
               <li><strong>Call 1-800 number</strong> while waiting in gate-agent line. Whoever answers first wins.</li>
               <li><strong>Use Twitter/X</strong> — DM the airline. They respond fast publicly.</li>
@@ -85,7 +85,7 @@ export default function AirlineAppPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior tip — wheelchair help</h3>
-            <p className="text-sm text-muted-foreground">If walking to gate is hard — request "wheelchair assistance" 24+ hours before flight in the app or by phone. FREE service, federal law requires it. Tip the helper $5-10. Skip the long walk and often security line.</p>
+            <p className="text-base text-muted-foreground">If walking to gate is hard — request "wheelchair assistance" 24+ hours before flight in the app or by phone. FREE service, federal law requires it. Tip the helper $5-10. Skip the long walk and often security line.</p>
           </CardContent>
         </Card>
       </main>

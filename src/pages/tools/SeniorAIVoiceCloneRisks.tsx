@@ -22,7 +22,7 @@ export default function SeniorAIVoiceCloneRisks() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Never wire money urgently</h2><p>Real emergencies wait 5 minutes for verification. Scams demand instant payment.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Limit voice online</h2><p>Lock down social media. Scammers need only seconds of audio to clone a voice.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Report it</h2><p>FTC: reportfraud.ftc.gov. AARP Fraud Watch: 877-908-3360.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Tell every family member the code word. Make it ordinary like &ldquo;blue umbrella.&rdquo;</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Tell every family member the code word. Make it ordinary like &ldquo;blue umbrella.&rdquo;</p></CardContent></Card>
         </div>
       </main>
       <Footer />

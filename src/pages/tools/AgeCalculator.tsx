@@ -31,20 +31,20 @@ export default function AgeCalculator() {
   })();
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Age Calculator | TekSure" description="Type a birthdate and see exact age in years, months, days, plus days until your next birthday." />
       <div className="max-w-xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
             <Cake className="h-7 w-7 text-pink-500" />
-            <h1 className="text-3xl font-bold text-gray-900">Age Calculator</h1>
+            <h1 className="text-3xl font-bold text-foreground">Age Calculator</h1>
           </div>
-          <p className="text-gray-600 text-lg">Enter a birthday and see the exact age — yours, a grandchild's, anyone.</p>
+          <p className="text-muted-foreground text-lg">Enter a birthday and see the exact age — yours, a grandchild's, anyone.</p>
         </div>
         <Card>
           <CardContent className="py-6 px-4 space-y-4">
             <div>
-              <label htmlFor="dob" className="text-base font-medium text-gray-700">Date of birth</label>
+              <label htmlFor="dob" className="text-base font-medium text-foreground">Date of birth</label>
               <Input id="dob" type="date" value={dob} onChange={e => setDob(e.target.value)} className="mt-1 text-2xl text-center h-14" />
             </div>
             {result && (
@@ -52,13 +52,13 @@ export default function AgeCalculator() {
                 <p className="text-3xl font-bold text-pink-700">
                   {result.years} year{result.years !== 1 ? "s" : ""}, {result.months} month{result.months !== 1 ? "s" : ""}, {result.days} day{result.days !== 1 ? "s" : ""}
                 </p>
-                <p className="text-sm text-pink-600">{result.totalDays.toLocaleString()} days alive</p>
-                <p className="text-sm text-pink-600">🎂 {result.daysToBday === 0 ? "Birthday today!" : `${result.daysToBday} days until next birthday`}</p>
+                <p className="text-base text-pink-600">{result.totalDays.toLocaleString()} days alive</p>
+                <p className="text-base text-pink-600">🎂 {result.daysToBday === 0 ? "Birthday today!" : `${result.daysToBday} days until next birthday`}</p>
               </div>
             )}
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

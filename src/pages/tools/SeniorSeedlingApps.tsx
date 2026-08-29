@@ -20,9 +20,9 @@ export default function SeniorSeedlingApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Almanac.com</h2><p>FREE. Old Farmer&apos;s Almanac. Trusted for centuries.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">USDA Zone</h2><p>FREE planthardiness.ars.usda.gov. Type zip. Know your zone.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Garden Planner Pro</h2><p>$5/month. Drag plants on grid. Companion planting suggestions.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Easiest seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Cherry tomatoes</li><li>Lettuce</li><li>Herbs</li><li>Marigolds</li><li>Cucumbers</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Easiest seniors</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Cherry tomatoes</li><li>Lettuce</li><li>Herbs</li><li>Marigolds</li><li>Cucumbers</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Local extension</h2><p>FREE. Master Gardeners. Senior-friendly advice. Free workshops.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Local extension = best gardening advice. Master Gardeners free.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Local extension = best gardening advice. Master Gardeners free.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

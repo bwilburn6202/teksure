@@ -1028,7 +1028,7 @@ export default function VideoCallHelper() {
               return (
                 <Card key={item.title}>
                   <CardContent className="p-5 flex items-start gap-3">
-                    <div className="p-2.5 rounded-lg bg-amber-500/10 text-amber-700 dark:text-amber-400 shrink-0">
+                    <div className="p-2.5 rounded-lg bg-amber-500/10 text-warn-foreground shrink-0">
                       <Icon className="w-5 h-5" />
                     </div>
                     <div>
@@ -1197,14 +1197,14 @@ function PlatformDetail({ info }: { info: PlatformInfo }) {
 
         <div className="pt-4 border-t border-border">
           <h4 className="font-semibold text-lg md:text-xl mb-3 flex items-center gap-2">
-            <Lightbulb className="w-5 h-5 text-amber-600" />
+            <Lightbulb className="w-5 h-5 text-warn-foreground" />
             Common confusion on {info.name}
           </h4>
           <div className="space-y-3">
             {info.confusion.map((c) => (
-              <Card key={c.title} className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+              <Card key={c.title} className="bg-warn border-amber-500/40">
                 <CardContent className="p-4 md:p-5 flex items-start gap-3">
-                  <AlertTriangle className="w-5 h-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
+                  <AlertTriangle className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                   <div>
                     <h5 className="font-semibold text-base md:text-lg mb-1">{c.title}</h5>
                     <p className="text-base leading-relaxed">{c.body}</p>

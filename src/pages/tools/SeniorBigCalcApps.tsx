@@ -22,7 +22,7 @@ export default function SeniorBigCalcApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tip calculator</h2><p>Built into calculator apps. 15-20% tip in seconds.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Currency converter</h2><p>XE Currency. FREE. Travel-essential.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Loan calculator</h2><p>FREE. Mortgage, car loan calculations.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Turn iPhone sideways. Calculator gets way bigger.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Turn iPhone sideways. Calculator gets way bigger.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

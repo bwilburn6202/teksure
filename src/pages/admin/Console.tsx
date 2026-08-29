@@ -148,7 +148,7 @@ function BookingsTab() {
               onClick={() => setFilterStatus(s)}
               className={`text-left rounded-xl border p-4 transition-all hover:shadow-md ${filterStatus === s ? 'ring-2 ring-primary shadow-sm' : ''}`}
             >
-              <p className="text-xs text-muted-foreground mb-1 capitalize">{s === 'all' ? 'Total' : cfg?.label}</p>
+              <p className="text-sm text-muted-foreground mb-1 capitalize">{s === 'all' ? 'Total' : cfg?.label}</p>
               <p className="text-2xl font-bold">{counts[s]}</p>
             </button>
           );
@@ -238,14 +238,14 @@ function BookingsTab() {
                                 <span className="italic">Location not specified (booked before this was collected)</span>
                               )}
                             </div>
-                            <p className="text-xs text-muted-foreground pt-1">Booked {timeAgo(b.created_at)} · Ref: {b.id.slice(0, 8).toUpperCase()}</p>
+                            <p className="text-sm text-muted-foreground pt-1">Booked {timeAgo(b.created_at)} · Ref: {b.id.slice(0, 8).toUpperCase()}</p>
                           </div>
                           {b.problem_description && (
                             <p className="rounded-lg bg-background border p-3 leading-relaxed">{b.problem_description}</p>
                           )}
                         </div>
                         <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t">
-                          <span className="text-xs text-muted-foreground self-center mr-1">Change status:</span>
+                          <span className="text-sm text-muted-foreground self-center mr-1">Change status:</span>
                           {BOOKING_STATUS_OPTIONS.filter(s => s !== b.status).map(s => {
                             const c = bookingStatusConfig[s];
                             return (
@@ -361,19 +361,19 @@ function JobsTab() {
     <div className="space-y-6">
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         <div className="text-left rounded-xl border p-4">
-          <p className="text-xs text-muted-foreground mb-1">Total Jobs</p>
+          <p className="text-sm text-muted-foreground mb-1">Total Jobs</p>
           <p className="text-2xl font-bold">{jobs.length}</p>
         </div>
         <div className="text-left rounded-xl border p-4">
-          <p className="text-xs text-muted-foreground mb-1">In Progress</p>
+          <p className="text-sm text-muted-foreground mb-1">In Progress</p>
           <p className="text-2xl font-bold">{jobs.filter(j => j.status === 'in_progress' || j.status === 'confirmed').length}</p>
         </div>
         <div className="text-left rounded-xl border p-4">
-          <p className="text-xs text-muted-foreground mb-1">Completed</p>
+          <p className="text-sm text-muted-foreground mb-1">Completed</p>
           <p className="text-2xl font-bold">{jobs.filter(j => j.status === 'completed').length}</p>
         </div>
         <div className="text-left rounded-xl border p-4">
-          <p className="text-xs text-muted-foreground mb-1">Disputed</p>
+          <p className="text-sm text-muted-foreground mb-1">Disputed</p>
           <p className="text-2xl font-bold">{jobs.filter(j => j.status === 'disputed').length}</p>
         </div>
       </div>
@@ -425,18 +425,18 @@ function JobsTab() {
                           <div className="space-y-1.5">
                             {job.email && <div className="flex items-center gap-2 text-muted-foreground"><Mail className="h-4 w-4" /><a href={`mailto:${job.email}`} className="hover:underline text-foreground">{job.email}</a></div>}
                             {job.phone && <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /><a href={`tel:${job.phone}`} className="hover:underline text-foreground">{job.phone}</a></div>}
-                            <p className="text-xs text-muted-foreground pt-1">
+                            <p className="text-sm text-muted-foreground pt-1">
                               Created {timeAgo(job.created_at)} · Preferred: {new Date(job.preferred_date).toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' })}
                               {job.preferred_slot && ` · ${formatBookingSlot(job.preferred_slot)}`}
                             </p>
-                            <p className="text-xs text-muted-foreground">Ref: {job.id.slice(0, 8).toUpperCase()}</p>
+                            <p className="text-sm text-muted-foreground">Ref: {job.id.slice(0, 8).toUpperCase()}</p>
                           </div>
                           {job.problem_description && (
                             <p className="rounded-lg bg-background border p-3 leading-relaxed">{job.problem_description}</p>
                           )}
                         </div>
                         <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t">
-                          <span className="text-xs text-muted-foreground self-center mr-1">Change status:</span>
+                          <span className="text-sm text-muted-foreground self-center mr-1">Change status:</span>
                           {JOB_STATUS_OPTIONS.filter(s => s !== job.status).map(s => {
                             const c = jobStatusConfig[s];
                             return (
@@ -523,9 +523,9 @@ function DisputesTab() {
   if (disputes.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center py-16 text-center">
-        <CheckCircle className="h-12 w-12 text-green-500 mb-4" />
+        <CheckCircle className="h-12 w-12 text-success-foreground mb-4" />
         <h3 className="text-lg font-semibold mb-1">No disputes at this time</h3>
-        <p className="text-muted-foreground text-sm max-w-md">
+        <p className="text-muted-foreground text-base max-w-md">
           When a booking is marked as disputed, it will appear here for review.
         </p>
       </div>
@@ -535,8 +535,8 @@ function DisputesTab() {
   return (
     <div className="space-y-6">
       <div className="flex items-center gap-3 rounded-xl border border-amber-500/20 bg-amber-500/5 p-4">
-        <AlertTriangle className="h-5 w-5 text-amber-500 shrink-0" />
-        <p className="text-sm text-muted-foreground">
+        <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0" />
+        <p className="text-base text-muted-foreground">
           <span className="font-semibold text-foreground">{disputes.length} active dispute{disputes.length !== 1 ? 's' : ''}</span> requiring review.
         </p>
       </div>
@@ -571,11 +571,11 @@ function DisputesTab() {
                           <div className="space-y-1.5">
                             {d.email && <div className="flex items-center gap-2 text-muted-foreground"><Mail className="h-4 w-4" /><a href={`mailto:${d.email}`} className="hover:underline text-foreground">{d.email}</a></div>}
                             {d.phone && <div className="flex items-center gap-2 text-muted-foreground"><Phone className="h-4 w-4" /><a href={`tel:${d.phone}`} className="hover:underline text-foreground">{d.phone}</a></div>}
-                            <p className="text-xs text-muted-foreground pt-1">
+                            <p className="text-sm text-muted-foreground pt-1">
                               Booked for {new Date(d.preferred_date).toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short' })}
                               {d.preferred_slot && ` at ${formatBookingSlot(d.preferred_slot)}`}
                             </p>
-                            <p className="text-xs text-muted-foreground">Ref: {d.id.slice(0, 8).toUpperCase()}</p>
+                            <p className="text-sm text-muted-foreground">Ref: {d.id.slice(0, 8).toUpperCase()}</p>
                             {d.payment_status && (
                               <span className={`inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-medium ${(paymentLabels[d.payment_status] || paymentLabels.pending).color}`}>
                                 Payment: {(paymentLabels[d.payment_status] || paymentLabels.pending).label}
@@ -634,7 +634,7 @@ function TechVerificationTab() {
           <CardContent className="flex items-center gap-3 py-4">
             <Users className="h-5 w-5 text-primary" />
             <div>
-              <p className="text-xs text-muted-foreground">Total Techs</p>
+              <p className="text-sm text-muted-foreground">Total Techs</p>
               <p className="text-xl font-bold">{loading ? '...' : techs.length}</p>
             </div>
           </CardContent>
@@ -643,16 +643,16 @@ function TechVerificationTab() {
           <CardContent className="flex items-center gap-3 py-4">
             <Shield className="h-5 w-5 text-primary" />
             <div>
-              <p className="text-xs text-muted-foreground">Verified</p>
+              <p className="text-sm text-muted-foreground">Verified</p>
               <p className="text-xl font-bold">{loading ? '...' : techs.length}</p>
             </div>
           </CardContent>
         </Card>
         <Card className="rounded-2xl border border-border bg-card">
           <CardContent className="flex items-center gap-3 py-4">
-            <CheckCircle className="h-5 w-5 text-green-500" />
+            <CheckCircle className="h-5 w-5 text-success-foreground" />
             <div>
-              <p className="text-xs text-muted-foreground">Active</p>
+              <p className="text-sm text-muted-foreground">Active</p>
               <p className="text-xl font-bold">{loading ? '...' : techs.length}</p>
             </div>
           </CardContent>
@@ -684,7 +684,7 @@ function TechVerificationTab() {
                   {new Date(tech.created_at).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}
                 </TableCell>
                 <TableCell>
-                  <Badge variant="secondary" className="bg-green-500/10 text-green-600 border-green-500/20">
+                  <Badge variant="secondary" className="bg-green-500/10 text-success-foreground border-green-500/20">
                     <CheckCircle className="h-3 w-3 mr-1" />
                     Verified
                   </Badge>
@@ -770,7 +770,7 @@ function HelpRequestsTab() {
               onClick={() => setFilterStatus(s)}
               className={`text-left rounded-xl border p-4 transition-all hover:shadow-md ${filterStatus === s ? 'ring-2 ring-primary shadow-sm' : ''}`}
             >
-              <p className="text-xs text-muted-foreground mb-1 capitalize">{s === 'all' ? 'Total' : cfg?.label}</p>
+              <p className="text-sm text-muted-foreground mb-1 capitalize">{s === 'all' ? 'Total' : cfg?.label}</p>
               <p className="text-2xl font-bold">{count}</p>
               {cfg && (
                 <div className={`mt-2 inline-flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-xs ${cfg.color}`}>
@@ -887,20 +887,20 @@ function HelpRequestsTab() {
                                 <span>{deviceLabels[r.device_type] || r.device_type}</span>
                               </div>
                             )}
-                            <p className="text-xs text-muted-foreground pt-1">
+                            <p className="text-sm text-muted-foreground pt-1">
                               Submitted {formatDate(r.created_at)}{r.user_id ? ' · Logged-in user' : ' · Guest'}
                             </p>
                           </div>
                           <div>
                             {r.problem_description && (
-                              <p className="text-sm rounded-lg bg-background border p-3 leading-relaxed">
+                              <p className="text-base rounded-lg bg-background border p-3 leading-relaxed">
                                 {r.problem_description}
                               </p>
                             )}
                           </div>
                         </div>
                         <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t">
-                          <span className="text-xs text-muted-foreground self-center mr-1">Change status:</span>
+                          <span className="text-sm text-muted-foreground self-center mr-1">Change status:</span>
                           {STATUS_OPTIONS.filter(s => s !== r.status).map(s => {
                             const c = statusConfig[s];
                             return (
@@ -932,6 +932,7 @@ const AdminConsole = () => (
   <div className="min-h-screen bg-background">
     <SEOHead title="Admin Console — TekSure" description="TekSure admin dashboard for managing bookings, users, and support tickets." path="/admin" noindex />
     <Navbar />
+    <main className="flex-1">
     <div className="container py-8">
       <div className="border-b border-border pb-6 mb-8">
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-1">Admin Console</h1>
@@ -982,6 +983,7 @@ const AdminConsole = () => (
         </TabsContent>
       </Tabs>
     </div>
+    </main>
     <Footer />
   </div>
 );

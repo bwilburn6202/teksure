@@ -19,10 +19,10 @@ export default function SeniorEncoreCareers() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Encore.org</h2><p>FREE. Volunteer + paid opportunities for ages 50+.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">RetiredBrains</h2><p>FREE. Senior-only job board. Real part-time roles.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AARP Job Board</h2><p>FREE. Age-friendly employers. Filter by remote.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best senior jobs</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Substitute teacher</li><li>Seasonal IRS</li><li>Census Bureau</li><li>National park ranger</li><li>Tax-Aide volunteer (paid)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best senior jobs</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Substitute teacher</li><li>Seasonal IRS</li><li>Census Bureau</li><li>National park ranger</li><li>Tax-Aide volunteer (paid)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SCORE mentoring</h2><p>FREE. Mentor small business owners. Use your career experience.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch Social Security</h2><p>If under full retirement age, earnings over $22,320 reduce benefits.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Many seniors find encore work boosts mental health more than the income matters.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Many seniors find encore work boosts mental health more than the income matters.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

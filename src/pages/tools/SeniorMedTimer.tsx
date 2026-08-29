@@ -70,7 +70,7 @@ export default function SeniorMedTimer() {
   const total = meds.length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Daily Medication Timer | TekSure"
         description="Visual day-of medication schedule. Tap each med as you take it. Print a clean schedule to keep with your pill bottles."
@@ -79,10 +79,10 @@ export default function SeniorMedTimer() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Pill className="h-7 w-7 text-emerald-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Daily Medication Timer</h1>
+            <Pill className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Daily Medication Timer</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Build today's medication schedule. Tap each med after you take it. Tap "Reset" each morning.
           </p>
         </div>
@@ -92,8 +92,8 @@ export default function SeniorMedTimer() {
           <Card className="mb-4 print:break-inside-avoid">
             <CardContent className="py-3 px-4 flex flex-wrap items-center justify-between gap-3">
               <div>
-                <p className="text-xs text-gray-500">Taken today</p>
-                <p className="text-2xl font-bold text-emerald-700">{takenCount} of {total}</p>
+                <p className="text-sm text-muted-foreground">Taken today</p>
+                <p className="text-2xl font-bold text-success-foreground">{takenCount} of {total}</p>
               </div>
               <Button variant="outline" size="sm" onClick={resetTaken} className="print:hidden">Start a new day</Button>
             </CardContent>
@@ -104,7 +104,7 @@ export default function SeniorMedTimer() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-emerald-600" />
+              <PlusCircle className="h-5 w-5 text-success-foreground" />
               Add a Medication
             </CardTitle>
           </CardHeader>
@@ -128,18 +128,18 @@ export default function SeniorMedTimer() {
                     key={p.time}
                     type="button"
                     onClick={() => setForm(f => ({ ...f, time: p.time }))}
-                    className="text-xs px-2 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 hover:bg-emerald-100"
+                    className="text-xs px-2 py-1 rounded-full bg-success border border-success-foreground/25 text-success-foreground hover:bg-success"
                   >
                     {p.label}
                   </button>
                 ))}
               </div>
             </div>
-            <label className="flex items-center gap-2 text-sm cursor-pointer">
+            <label className="flex items-center gap-2 text-base cursor-pointer">
               <input type="checkbox" checked={form.withFood} onChange={e => setForm(f => ({ ...f, withFood: e.target.checked }))} className="h-4 w-4" />
               <span>Take with food</span>
             </label>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base">Add Medication</Button>
           </CardContent>
         </Card>
@@ -156,18 +156,18 @@ export default function SeniorMedTimer() {
         {/* Schedule */}
         {meds.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Pill className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Pill className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No medications scheduled yet.</p>
-              <p className="text-sm mt-1">Add the first one above. Use the time presets to fill in fast.</p>
+              <p className="text-base mt-1">Add the first one above. Use the time presets to fill in fast.</p>
             </CardContent>
           </Card>
         ) : (
           <div className="space-y-3">
             {Object.entries(grouped).map(([time, items]) => (
               <Card key={time} className="print:break-inside-avoid">
-                <CardHeader className="pb-2 pt-3 bg-emerald-50">
-                  <CardTitle className="text-lg text-emerald-800">⏰ {formatTime(time)}</CardTitle>
+                <CardHeader className="pb-2 pt-3 bg-success">
+                  <CardTitle className="text-lg text-success-foreground">⏰ {formatTime(time)}</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-2">
                   <div className="space-y-2">
@@ -176,10 +176,10 @@ export default function SeniorMedTimer() {
                         key={m.id}
                         onClick={() => toggleTaken(m.id)}
                         className={`w-full text-left flex items-center gap-3 p-3 rounded-lg border transition-colors ${
-                          m.taken ? "bg-green-50 border-green-200" : "bg-white border-gray-200 hover:bg-gray-50"
+                          m.taken ? "bg-green-50 border-green-200" : "bg-white border-border hover:bg-gray-50"
                         }`}
                       >
-                        {m.taken ? <CheckCircle2 className="h-6 w-6 text-green-600 shrink-0" /> : <span className="h-6 w-6 rounded-full border-2 border-gray-300 shrink-0" />}
+                        {m.taken ? <CheckCircle2 className="h-6 w-6 text-success-foreground shrink-0" /> : <span className="h-6 w-6 rounded-full border-2 border-border shrink-0" />}
                         <div className="flex-1">
                           <p className={`font-semibold text-base ${m.taken ? "line-through text-gray-400" : "text-gray-900"}`}>{m.name}</p>
                           <div className="flex flex-wrap gap-2 mt-0.5">
@@ -187,7 +187,7 @@ export default function SeniorMedTimer() {
                             {m.withFood && <Badge variant="outline" className="text-xs">🍽️ With food</Badge>}
                           </div>
                         </div>
-                        <Button variant="ghost" size="icon" onClick={(e) => { e.stopPropagation(); remove(m.id); }} className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden">
+                        <Button variant="ghost" size="icon" onClick={(e) => { e.stopPropagation(); remove(m.id); }} className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden">
                           <Trash2 className="h-3 w-3" />
                         </Button>
                       </button>
@@ -199,15 +199,15 @@ export default function SeniorMedTimer() {
           </div>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Tap each medication in this tool right after you take it. Pair it with a phone alarm so you never miss a dose.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

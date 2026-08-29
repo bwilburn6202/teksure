@@ -127,7 +127,7 @@ const MedicationReminderSetup = () => {
   const [selected, setSelected] = useState<SetupMethod>("iphone");
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-red-50 via-white to-white">
+    <main className="min-h-screen bg-gradient-to-b from-red-50 via-white to-white">
       {/* Hero */}
       <section className="bg-gradient-to-br from-red-600 to-rose-700 text-white py-16 px-4">
         <div className="max-w-5xl mx-auto text-center">
@@ -156,10 +156,10 @@ const MedicationReminderSetup = () => {
 
       <div className="max-w-5xl mx-auto px-4 py-12 space-y-12">
         {/* Why this matters */}
-        <Alert className="border-red-200 bg-red-50">
-          <Info className="h-5 w-5 text-red-600" />
-          <AlertTitle className="text-lg text-red-900">Why this matters</AlertTitle>
-          <AlertDescription className="text-base text-red-800">
+        <Alert className="border-danger-foreground/25 bg-danger">
+          <Info className="h-5 w-5 text-danger-foreground" />
+          <AlertTitle className="text-lg text-danger-foreground">Why this matters</AlertTitle>
+          <AlertDescription className="text-base text-danger-foreground">
             Nearly half of adults over 65 take five or more medications. Missing doses — or
             doubling them — is one of the top reasons for hospital visits. A good reminder system
             can save your life. This guide walks you through every option, from the free app on
@@ -169,8 +169,8 @@ const MedicationReminderSetup = () => {
 
         {/* Choose your setup */}
         <section>
-          <h2 className="text-3xl font-bold mb-2 text-gray-900">Choose Your Setup</h2>
-          <p className="text-lg text-gray-600 mb-6">
+          <h2 className="text-3xl font-bold mb-2 text-foreground">Choose Your Setup</h2>
+          <p className="text-lg text-muted-foreground mb-6">
             Tap the option that fits your devices. You can always add more later.
           </p>
           <div className="grid md:grid-cols-2 gap-4">
@@ -183,8 +183,8 @@ const MedicationReminderSetup = () => {
                   onClick={() => setSelected(method.id)}
                   className={`text-left rounded-xl border-2 p-5 transition-all ${
                     isSelected
-                      ? "border-red-600 bg-red-50 shadow-md"
-                      : "border-gray-200 bg-white hover:border-red-300 hover:shadow-sm"
+                      ? "border-red-600 bg-danger shadow-md"
+                      : "border-gray-200 bg-card hover:border-danger-foreground/25 hover:shadow-sm"
                   }`}
                   aria-pressed={isSelected}
                 >
@@ -197,14 +197,14 @@ const MedicationReminderSetup = () => {
                       <Icon className="w-6 h-6" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-semibold text-lg text-gray-900">{method.name}</h3>
-                      <p className="text-sm text-gray-600 mb-2">{method.subtitle}</p>
+                      <h3 className="font-semibold text-lg text-foreground">{method.name}</h3>
+                      <p className="text-base text-muted-foreground mb-2">{method.subtitle}</p>
                       <div className="flex flex-wrap gap-2 text-xs">
-                        <Badge variant="outline" className="bg-white">
+                        <Badge variant="outline" className="bg-card">
                           <DollarSign className="w-3 h-3 mr-1" />
                           {method.price}
                         </Badge>
-                        <Badge variant="outline" className="bg-white">
+                        <Badge variant="outline" className="bg-card">
                           {method.difficulty}
                         </Badge>
                       </div>
@@ -218,7 +218,7 @@ const MedicationReminderSetup = () => {
 
         {/* Setup instructions */}
         <section>
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Step-by-Step Setup</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Step-by-Step Setup</h2>
 
           {selected === "iphone" && <IPhoneSetup />}
           {selected === "android" && <AndroidSetup />}
@@ -231,17 +231,17 @@ const MedicationReminderSetup = () => {
 
         {/* Comparison table */}
         <section>
-          <h2 className="text-3xl font-bold mb-2 text-gray-900">
+          <h2 className="text-3xl font-bold mb-2 text-foreground">
             Medication App Comparison
           </h2>
-          <p className="text-lg text-gray-600 mb-6">
+          <p className="text-lg text-muted-foreground mb-6">
             If you prefer a dedicated app, here&apos;s how the top four compare.
           </p>
           <Card>
             <CardContent className="p-0 overflow-x-auto">
               <Table>
                 <TableHeader>
-                  <TableRow className="bg-gray-50">
+                  <TableRow className="bg-muted">
                     <TableHead className="text-base font-semibold">App</TableHead>
                     <TableHead className="text-base font-semibold">Price</TableHead>
                     <TableHead className="text-base font-semibold">Pros</TableHead>
@@ -295,7 +295,7 @@ const MedicationReminderSetup = () => {
 
         {/* Best practices */}
         <section>
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Best Practices</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Best Practices</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <BestPracticeCard
               icon={Shield}
@@ -339,37 +339,37 @@ const MedicationReminderSetup = () => {
 
         {/* Integration with family */}
         <section>
-          <h2 className="text-3xl font-bold mb-2 text-gray-900">Loop in Family</h2>
-          <p className="text-lg text-gray-600 mb-6">
+          <h2 className="text-3xl font-bold mb-2 text-foreground">Loop in Family</h2>
+          <p className="text-lg text-muted-foreground mb-6">
             The most powerful safety net is a person. Here&apos;s how to let family help.
           </p>
           <div className="grid md:grid-cols-3 gap-4">
             <Card>
               <CardHeader>
-                <Smartphone className="w-8 h-8 text-red-600" />
+                <Smartphone className="w-8 h-8 text-danger-foreground" />
                 <CardTitle className="text-xl">iPhone Health Sharing</CardTitle>
               </CardHeader>
-              <CardContent className="text-base text-gray-700">
+              <CardContent className="text-base text-foreground">
                 Open Health → tap your photo → <strong>Sharing</strong> → Share with Someone. A
                 family member sees your medications and whether you took them.
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <Speaker className="w-8 h-8 text-red-600" />
+                <Speaker className="w-8 h-8 text-danger-foreground" />
                 <CardTitle className="text-xl">Alexa Drop In</CardTitle>
               </CardHeader>
-              <CardContent className="text-base text-gray-700">
+              <CardContent className="text-base text-foreground">
                 Alexa can check in on you at reminder times, or send a routine that calls a
                 family member&apos;s phone if you don&apos;t respond.
               </CardContent>
             </Card>
             <Card>
               <CardHeader>
-                <Bell className="w-8 h-8 text-red-600" />
+                <Bell className="w-8 h-8 text-danger-foreground" />
                 <CardTitle className="text-xl">Missed-dose texts</CardTitle>
               </CardHeader>
-              <CardContent className="text-base text-gray-700">
+              <CardContent className="text-base text-foreground">
                 Medisafe and CareZone send an automatic text to your Medfriend if you miss a
                 scheduled dose. Quiet, non-intrusive, and a lifesaver.
               </CardContent>
@@ -378,10 +378,10 @@ const MedicationReminderSetup = () => {
         </section>
 
         {/* Safety */}
-        <Alert className="border-amber-300 bg-amber-50">
-          <AlertTriangle className="h-5 w-5 text-amber-600" />
-          <AlertTitle className="text-lg text-amber-900">Safety First</AlertTitle>
-          <AlertDescription className="text-base text-amber-900">
+        <Alert className="border-warn-foreground/25 bg-warn">
+          <AlertTriangle className="h-5 w-5 text-warn-foreground" />
+          <AlertTitle className="text-lg text-warn-foreground">Safety First</AlertTitle>
+          <AlertDescription className="text-base text-warn-foreground">
             <ul className="list-disc pl-5 mt-2 space-y-2">
               <li>
                 <strong>Never rely 100% on technology.</strong> Phones die, Wi-Fi drops. Keep a
@@ -406,13 +406,13 @@ const MedicationReminderSetup = () => {
 
         {/* FAQ */}
         <section>
-          <h2 className="text-3xl font-bold mb-6 text-gray-900">Common Questions</h2>
+          <h2 className="text-3xl font-bold mb-6 text-foreground">Common Questions</h2>
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="q1">
               <AccordionTrigger className="text-lg text-left">
                 What if I take my pill but the reminder still goes off?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-gray-700">
+              <AccordionContent className="text-base text-foreground">
                 Tap the notification and mark it as &quot;Taken.&quot; Most apps stop bugging you
                 once you check it off. The iPhone Health app and Medisafe both support this.
               </AccordionContent>
@@ -421,7 +421,7 @@ const MedicationReminderSetup = () => {
               <AccordionTrigger className="text-lg text-left">
                 What if I miss a dose?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-gray-700">
+              <AccordionContent className="text-base text-foreground">
                 Never double up without asking. Some medications are safe to take late; others
                 are not. Call your pharmacist or check the instructions on the bottle. As a
                 general rule: if it&apos;s close to the next dose, skip the missed one.
@@ -431,7 +431,7 @@ const MedicationReminderSetup = () => {
               <AccordionTrigger className="text-lg text-left">
                 I take 8 medications at different times. Is this still doable?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-gray-700">
+              <AccordionContent className="text-base text-foreground">
                 Yes. Medisafe and MyTherapy handle complex schedules (multiple times per day,
                 alternating days, as-needed). For truly complex regimens, consider a smart pill
                 dispenser like Hero — it physically dispenses the right pills at the right time.
@@ -441,7 +441,7 @@ const MedicationReminderSetup = () => {
               <AccordionTrigger className="text-lg text-left">
                 Is my medication list private?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-gray-700">
+              <AccordionContent className="text-base text-foreground">
                 Apple Health data is encrypted and stays on your phone. Medisafe stores data on
                 their servers but does not sell it to advertisers. Always read the privacy
                 policy. You can also use it fully offline with a pill organizer and paper.
@@ -453,8 +453,8 @@ const MedicationReminderSetup = () => {
         {/* CTA */}
         <Card className="border-2 border-red-600 bg-gradient-to-br from-red-50 to-rose-50">
           <CardContent className="p-8 text-center">
-            <h3 className="text-2xl font-bold mb-3 text-gray-900">You&apos;ve got this.</h3>
-            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+            <h3 className="text-2xl font-bold mb-3 text-foreground">You&apos;ve got this.</h3>
+            <p className="text-lg text-foreground mb-6 max-w-2xl mx-auto">
               Pick one method above, set up just <strong>one medication</strong> today, and test
               the reminder. Once it works, add the rest. Small steps beat a perfect plan.
             </p>
@@ -471,7 +471,7 @@ const MedicationReminderSetup = () => {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 };
 
@@ -489,9 +489,9 @@ const StepList = ({ steps }: StepProps) => (
           {idx + 1}
         </div>
         <div className="flex-1 pt-1">
-          <p className="font-semibold text-lg text-gray-900">{step.title}</p>
+          <p className="font-semibold text-lg text-foreground">{step.title}</p>
           {step.detail && (
-            <p className="text-base text-gray-600 mt-1">{step.detail}</p>
+            <p className="text-base text-muted-foreground mt-1">{step.detail}</p>
           )}
         </div>
       </li>
@@ -503,7 +503,7 @@ const IPhoneSetup = () => (
   <Card>
     <CardHeader>
       <div className="flex items-center gap-3">
-        <Smartphone className="w-8 h-8 text-red-600" />
+        <Smartphone className="w-8 h-8 text-danger-foreground" />
         <div>
           <CardTitle className="text-2xl">iPhone Health App</CardTitle>
           <CardDescription className="text-base">
@@ -573,7 +573,7 @@ const AndroidSetup = () => (
   <Card>
     <CardHeader>
       <div className="flex items-center gap-3">
-        <Smartphone className="w-8 h-8 text-red-600" />
+        <Smartphone className="w-8 h-8 text-danger-foreground" />
         <div>
           <CardTitle className="text-2xl">Android Phone</CardTitle>
           <CardDescription className="text-base">
@@ -585,7 +585,7 @@ const AndroidSetup = () => (
     </CardHeader>
     <CardContent className="space-y-6">
       <div>
-        <h4 className="text-lg font-semibold mb-2 text-gray-900">
+        <h4 className="text-lg font-semibold mb-2 text-foreground">
           Option A — Samsung Health (Samsung phones)
         </h4>
         <StepList
@@ -599,7 +599,7 @@ const AndroidSetup = () => (
         />
       </div>
       <div>
-        <h4 className="text-lg font-semibold mb-2 text-gray-900">
+        <h4 className="text-lg font-semibold mb-2 text-foreground">
           Option B — Google Keep reminders (any Android)
         </h4>
         <StepList
@@ -615,10 +615,10 @@ const AndroidSetup = () => (
         />
       </div>
       <div>
-        <h4 className="text-lg font-semibold mb-2 text-gray-900">
+        <h4 className="text-lg font-semibold mb-2 text-foreground">
           Option C — Download Medisafe (recommended for multiple meds)
         </h4>
-        <p className="text-base text-gray-700">
+        <p className="text-base text-foreground">
           Medisafe is free on the Google Play Store and is the easiest for Android users
           managing more than one or two medications. Jump to the{" "}
           <strong>Dedicated Medication App</strong> setup for details.
@@ -632,7 +632,7 @@ const AlexaSetup = () => (
   <Card>
     <CardHeader>
       <div className="flex items-center gap-3">
-        <Speaker className="w-8 h-8 text-red-600" />
+        <Speaker className="w-8 h-8 text-danger-foreground" />
         <div>
           <CardTitle className="text-2xl">Alexa / Echo</CardTitle>
           <CardDescription className="text-base">
@@ -675,7 +675,7 @@ const GoogleSetup = () => (
   <Card>
     <CardHeader>
       <div className="flex items-center gap-3">
-        <Speaker className="w-8 h-8 text-red-600" />
+        <Speaker className="w-8 h-8 text-danger-foreground" />
         <div>
           <CardTitle className="text-2xl">Google Assistant / Nest</CardTitle>
           <CardDescription className="text-base">
@@ -713,7 +713,7 @@ const AppleWatchSetup = () => (
   <Card>
     <CardHeader>
       <div className="flex items-center gap-3">
-        <Watch className="w-8 h-8 text-red-600" />
+        <Watch className="w-8 h-8 text-danger-foreground" />
         <div>
           <CardTitle className="text-2xl">Apple Watch</CardTitle>
           <CardDescription className="text-base">
@@ -756,7 +756,7 @@ const AppsSetup = () => (
   <Card>
     <CardHeader>
       <div className="flex items-center gap-3">
-        <Pill className="w-8 h-8 text-red-600" />
+        <Pill className="w-8 h-8 text-danger-foreground" />
         <div>
           <CardTitle className="text-2xl">Dedicated Medication App (Medisafe)</CardTitle>
           <CardDescription className="text-base">
@@ -802,9 +802,9 @@ const AppsSetup = () => (
           },
         ]}
       />
-      <Alert className="mt-6 border-blue-200 bg-blue-50">
-        <Info className="h-5 w-5 text-blue-600" />
-        <AlertDescription className="text-base text-blue-900">
+      <Alert className="mt-6 border-info-foreground/25 bg-info">
+        <Info className="h-5 w-5 text-info-foreground" />
+        <AlertDescription className="text-base text-info-foreground">
           Not sure which app? See the comparison table below — <strong>Medisafe</strong> is the
           best overall choice for most seniors.
         </AlertDescription>
@@ -817,7 +817,7 @@ const DispenserSetup = () => (
   <Card>
     <CardHeader>
       <div className="flex items-center gap-3">
-        <Shield className="w-8 h-8 text-red-600" />
+        <Shield className="w-8 h-8 text-danger-foreground" />
         <div>
           <CardTitle className="text-2xl">Smart Pill Dispenser (Hero / MedMinder)</CardTitle>
           <CardDescription className="text-base">
@@ -827,9 +827,9 @@ const DispenserSetup = () => (
       </div>
     </CardHeader>
     <CardContent className="space-y-4">
-      <Alert className="border-amber-200 bg-amber-50">
-        <AlertTriangle className="h-5 w-5 text-amber-600" />
-        <AlertDescription className="text-base text-amber-900">
+      <Alert className="border-warn-foreground/25 bg-warn">
+        <AlertTriangle className="h-5 w-5 text-warn-foreground" />
+        <AlertDescription className="text-base text-warn-foreground">
           These are premium devices ($35–$100/month). They&apos;re worth it for people on 5+
           medications or with memory concerns — but for simpler regimens, a phone reminder
           works just as well.
@@ -878,12 +878,12 @@ interface BestPracticeCardProps {
 const BestPracticeCard = ({ icon: Icon, title, body }: BestPracticeCardProps) => (
   <Card>
     <CardContent className="p-5 flex gap-4 items-start">
-      <div className="w-11 h-11 rounded-lg bg-red-100 text-red-600 flex items-center justify-center flex-shrink-0">
+      <div className="w-11 h-11 rounded-lg bg-danger text-danger-foreground flex items-center justify-center flex-shrink-0">
         <Icon className="w-6 h-6" />
       </div>
       <div>
-        <h4 className="font-semibold text-lg text-gray-900 mb-1">{title}</h4>
-        <p className="text-base text-gray-700">{body}</p>
+        <h4 className="font-semibold text-lg text-foreground mb-1">{title}</h4>
+        <p className="text-base text-foreground">{body}</p>
       </div>
     </CardContent>
   </Card>

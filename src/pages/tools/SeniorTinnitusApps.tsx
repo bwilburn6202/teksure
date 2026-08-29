@@ -22,7 +22,7 @@ export default function SeniorTinnitusApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hearing aids</h2><p>Often help. Brain focuses on real sound, less on tinnitus.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Reduce stress</h2><p>Stress worsens tinnitus. Meditation, exercise help.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Avoid caffeine</h2><p>Coffee, energy drinks. Often makes worse.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Tinnitus rarely cured. Apps make life livable. Real benefit.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Tinnitus rarely cured. Apps make life livable. Real benefit.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

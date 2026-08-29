@@ -22,7 +22,7 @@ export default function SeniorAudiobookApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Spotify</h2><p>15 hours of audiobooks included with regular Premium.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Get a library card</h2><p>Most US libraries offer free cards online. Then download Libby and sign in.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sleep timer</h2><p>All apps have a sleep timer — book pauses after 15-60 minutes for bedtime listening.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Slow narration to 0.8x for easier listening, or speed up to 1.2x for fast readers.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Slow narration to 0.8x for easier listening, or speed up to 1.2x for fast readers.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

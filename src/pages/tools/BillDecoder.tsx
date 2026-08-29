@@ -447,20 +447,20 @@ const TYPE_META: Array<{ type: BillType; label: string; icon: typeof Wifi }> = [
 function statusBadge(status: LineItem['status']) {
   if (status === 'normal') {
     return (
-      <Badge variant="secondary" className="gap-1 bg-green-100 text-green-900 dark:bg-green-900/40 dark:text-green-200">
+      <Badge variant="secondary" className="gap-1 bg-success text-success-foreground ">
         <CheckCircle className="h-3 w-3" /> Normal
       </Badge>
     );
   }
   if (status === 'questionable') {
     return (
-      <Badge variant="secondary" className="gap-1 bg-yellow-100 text-yellow-900 dark:bg-yellow-900/40 dark:text-yellow-200">
+      <Badge variant="secondary" className="gap-1 bg-warn text-warn-foreground ">
         <HelpCircle className="h-3 w-3" /> Worth questioning
       </Badge>
     );
   }
   return (
-    <Badge variant="secondary" className="gap-1 bg-red-100 text-red-900 dark:bg-red-900/40 dark:text-red-200">
+    <Badge variant="secondary" className="gap-1 bg-danger text-danger-foreground ">
       <AlertTriangle className="h-3 w-3" /> Often bloat or scammy
     </Badge>
   );
@@ -537,8 +537,8 @@ export default function BillDecoder() {
                   <Icon className="h-6 w-6 text-primary" />
                   <h2 className="text-xl font-bold">{bill.provider} — {bill.title}</h2>
                 </div>
-                <p className="text-sm text-muted-foreground">{bill.accountDetail}</p>
-                <p className="text-xs text-muted-foreground mt-2 italic">
+                <p className="text-base text-muted-foreground">{bill.accountDetail}</p>
+                <p className="text-sm text-muted-foreground mt-2 italic">
                   This is a realistic example bill. Click any line to see what it means.
                 </p>
               </div>
@@ -570,13 +570,13 @@ export default function BillDecoder() {
                             <div className="text-xs font-semibold uppercase text-muted-foreground mb-1">
                               What it means
                             </div>
-                            <p className="text-sm">{item.plainEnglish}</p>
+                            <p className="text-base">{item.plainEnglish}</p>
                           </div>
                           <div>
                             <div className="text-xs font-semibold uppercase text-muted-foreground mb-1">
                               What to do
                             </div>
-                            <p className="text-sm flex items-start gap-2">
+                            <p className="text-base flex items-start gap-2">
                               <Flag className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                               {item.action}
                             </p>
@@ -606,12 +606,12 @@ export default function BillDecoder() {
             </div>
 
             {/* Dispute guidance */}
-            <div className="mt-6 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-300 dark:border-yellow-800 rounded-xl p-6 md:p-8">
+            <div className="mt-6 bg-warn border border-warn-foreground/25 rounded-xl p-6 md:p-8">
               <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-                <AlertTriangle className="h-5 w-5 text-yellow-700 dark:text-yellow-300" />
+                <AlertTriangle className="h-5 w-5 text-warn-foreground " />
                 When to dispute
               </h3>
-              <p className="text-sm leading-relaxed">{bill.disputeGuidance}</p>
+              <p className="text-base leading-relaxed">{bill.disputeGuidance}</p>
             </div>
 
             {/* Resource links */}

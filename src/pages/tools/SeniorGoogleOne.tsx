@@ -22,7 +22,7 @@ export default function SeniorGoogleOne() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">2 TB Premium ($9.99/month)</h2><p>Includes VPN, AI features, Magic Eraser for photos.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">VPN included</h2><p>Premium tier includes Google&apos;s VPN. Free privacy on hotel Wi-Fi.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Magic Eraser</h2><p>Premium tier. Remove unwanted people/objects from photos. AI magic.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Use across iPhone too. Google Photos works on Apple devices.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Use across iPhone too. Google Photos works on Apple devices.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

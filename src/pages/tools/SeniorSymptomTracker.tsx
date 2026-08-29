@@ -19,10 +19,10 @@ export default function SeniorSymptomTracker() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bearable</h2><p>Free. Track symptoms, mood, sleep, and meds in one place. Best overall.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Manage My Pain</h2><p>Free. Body map — tap where it hurts. Rate 1-10. Print reports.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">CareClinic</h2><p>Free. Built for chronic conditions. Tracks vitals + symptoms + meds.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What to track</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Pain location and severity</li><li>Sleep hours</li><li>Energy level</li><li>Side effects after meds</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What to track</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Pain location and severity</li><li>Sleep hours</li><li>Energy level</li><li>Side effects after meds</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Be consistent</h2><p>Log at the same time daily — morning works best. 2 weeks gives a clear pattern.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share with doctor</h2><p>Email the PDF report 2 days before your appointment so the doctor can review.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: A 5-minute log per day saves 30 minutes of guessing in the doctor&apos;s office.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: A 5-minute log per day saves 30 minutes of guessing in the doctor&apos;s office.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

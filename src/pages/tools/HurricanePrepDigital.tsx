@@ -19,7 +19,7 @@ export default function HurricanePrepDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">National Hurricane Center app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free official NOAA tracking.</li>
               <li>Live storm tracks.</li>
               <li>Cone of uncertainty.</li>
@@ -33,7 +33,7 @@ export default function HurricanePrepDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Documentation apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photograph belongings before storm.</li>
               <li>Apple Notes — &quot;Home Inventory&quot; album.</li>
               <li>HomeZada — paid home inventory app.</li>
@@ -47,7 +47,7 @@ export default function HurricanePrepDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Evacuation apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Florida 511 — traffic + road closures.</li>
               <li>Waze — real-time evacuation routes.</li>
               <li>GasBuddy — find open gas stations.</li>
@@ -61,7 +61,7 @@ export default function HurricanePrepDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Power outage tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Utility company outage map.</li>
               <li>PowerOutage.us — nationwide.</li>
               <li>Battery-powered weather radio.</li>
@@ -75,7 +75,7 @@ export default function HurricanePrepDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Family communication</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Designate out-of-state contact.</li>
               <li>Text more reliable than calls during disasters.</li>
               <li>Share Find My location with family.</li>
@@ -89,7 +89,7 @@ export default function HurricanePrepDigital() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After storm</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FEMA app — apply for assistance.</li>
               <li>Photograph all damage immediately.</li>
               <li>Insurance company app — file claim.</li>
@@ -103,7 +103,7 @@ export default function HurricanePrepDigital() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Photograph everything before season</h3>
-            <p className="text-sm text-muted-foreground">Before hurricane season starts (June 1), spend 30 minutes photographing every room in your home. Open closets, photograph contents. This pre-loss documentation is gold for insurance claims if disaster strikes. Back up to iCloud or Google Photos. Many seniors who lost everything to hurricanes had no documentation — extending insurance claims by months.</p>
+            <p className="text-base text-muted-foreground">Before hurricane season starts (June 1), spend 30 minutes photographing every room in your home. Open closets, photograph contents. This pre-loss documentation is gold for insurance claims if disaster strikes. Back up to iCloud or Google Photos. Many seniors who lost everything to hurricanes had no documentation — extending insurance claims by months.</p>
           </CardContent>
         </Card>
       </main>

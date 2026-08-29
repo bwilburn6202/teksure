@@ -22,7 +22,7 @@ export default function SeniorVeterans() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Veterans Service Organizations</h2><p>VFW, American Legion. Help apply for benefits FREE.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">PACT Act</h2><p>2022 law. Expanded benefits for burn pit, Agent Orange exposure.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">National cemetery</h2><p>FREE burial for veterans + spouse. Honor guard ceremony.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 60% of eligible veterans don&apos;t apply for Aid &amp; Attendance. Don&apos;t miss out.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 60% of eligible veterans don&apos;t apply for Aid &amp; Attendance. Don&apos;t miss out.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

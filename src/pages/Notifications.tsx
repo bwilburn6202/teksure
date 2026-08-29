@@ -166,7 +166,7 @@ export default function Notifications() {
             <CardContent className="py-8 text-center">
               <Bell className="h-10 w-10 text-primary mx-auto mb-3" />
               <h2 className="text-xl font-semibold mb-2 text-primary">Enable Browser Notifications</h2>
-              <p className="text-muted-foreground text-sm mb-6 max-w-sm mx-auto">
+              <p className="text-muted-foreground text-base mb-6 max-w-sm mx-auto">
                 Click the button below and allow notifications when your browser asks. You can turn them off any time.
               </p>
               <Button size="lg" onClick={requestPermission} disabled={requesting} className="gap-2 rounded-xl">
@@ -181,32 +181,32 @@ export default function Notifications() {
           <Card className="mb-6 rounded-2xl border border-green-500/30 bg-green-500/5">
             <CardContent className="py-6">
               <div className="flex items-center gap-3 mb-4">
-                <CheckCircle className="h-6 w-6 text-green-500 shrink-0" />
+                <CheckCircle className="h-6 w-6 text-success-foreground shrink-0" />
                 <div>
-                  <p className="font-semibold text-green-700 dark:text-green-400">
+                  <p className="font-semibold text-success-foreground ">
                     {justEnabled ? 'Notifications just enabled!' : 'Notifications are active'}
                   </p>
                   {prefs.subscribedAt && (
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                       Subscribed {new Date(prefs.subscribedAt).toLocaleDateString()}
                     </p>
                   )}
                 </div>
-                <Badge variant="outline" className="ml-auto border-green-500/50 text-green-600 dark:text-green-400">Active</Badge>
+                <Badge variant="outline" className="ml-auto border-green-500/50 text-success-foreground ">Active</Badge>
               </div>
 
               {/* Preference toggles */}
               <div className="space-y-3">
                 {([
-                  { key: 'tips', icon: <Zap className="h-4 w-4 text-amber-500" />, label: 'Weekly Tech Tips', desc: 'One helpful tip every week' },
-                  { key: 'scamAlerts', icon: <ShieldCheck className="h-4 w-4 text-red-500" />, label: 'Scam Alerts', desc: 'Instant alerts about new scams' },
+                  { key: 'tips', icon: <Zap className="h-4 w-4 text-warn-foreground" />, label: 'Weekly Tech Tips', desc: 'One helpful tip every week' },
+                  { key: 'scamAlerts', icon: <ShieldCheck className="h-4 w-4 text-danger-foreground" />, label: 'Scam Alerts', desc: 'Instant alerts about new scams' },
                   { key: 'newGuides', icon: <ArrowRight className="h-4 w-4 text-primary" />, label: 'New Guides', desc: 'When we publish new step-by-step guides' },
                 ] as const).map(({ key, icon, label, desc }) => (
                   <div key={key} className="flex items-center gap-3 p-3 rounded-lg bg-background border border-border">
                     {icon}
                     <div className="flex-1">
-                      <p className="text-sm font-medium">{label}</p>
-                      <p className="text-xs text-muted-foreground">{desc}</p>
+                      <p className="text-base font-medium">{label}</p>
+                      <p className="text-sm text-muted-foreground">{desc}</p>
                     </div>
                     <Switch
                       checked={prefs[key] as boolean}
@@ -234,7 +234,7 @@ export default function Notifications() {
             <CardContent className="py-6 text-center">
               <BellOff className="h-8 w-8 text-destructive mx-auto mb-3" />
               <h2 className="text-lg font-semibold mb-1">Notifications Blocked</h2>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 Your browser has blocked notifications from TekSure. To re-enable, click the lock icon in your browser's address bar and allow notifications for this site.
               </p>
               <Button variant="outline" size="sm" asChild>
@@ -250,7 +250,7 @@ export default function Notifications() {
         {!notifSupported && (
           <Card className="mb-6 rounded-2xl border border-border bg-card">
             <CardContent className="py-6 text-center">
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground text-base">
                 Your browser doesn't support push notifications. Try Chrome, Firefox, or Edge for the best experience.
               </p>
             </CardContent>
@@ -261,21 +261,21 @@ export default function Notifications() {
         <h2 className="text-lg font-semibold mb-4">What You'll Receive</h2>
         <div className="grid gap-3 mb-8">
           {[
-            { icon: <Zap className="h-5 w-5 text-amber-500" />, title: 'Weekly Tech Tips', desc: 'One bite-sized, actionable tip every week — from speeding up your device to staying safe online.' },
-            { icon: <ShieldCheck className="h-5 w-5 text-red-500" />, title: 'Scam Alerts', desc: 'Instant notifications when new scams are targeting people like you — so you can stay protected.' },
+            { icon: <Zap className="h-5 w-5 text-warn-foreground" />, title: 'Weekly Tech Tips', desc: 'One bite-sized, actionable tip every week — from speeding up your device to staying safe online.' },
+            { icon: <ShieldCheck className="h-5 w-5 text-danger-foreground" />, title: 'Scam Alerts', desc: 'Instant notifications when new scams are targeting people like you — so you can stay protected.' },
             { icon: <Clock className="h-5 w-5 text-primary" />, title: 'New Guide Announcements', desc: 'Be the first to know when we publish new step-by-step guides on topics you care about.' },
           ].map(({ icon, title, desc }) => (
             <div key={title} className="flex items-start gap-3 p-4 rounded-xl border border-border bg-muted/30">
               <div className="shrink-0 mt-0.5">{icon}</div>
               <div>
-                <p className="font-medium text-sm">{title}</p>
-                <p className="text-xs text-muted-foreground mt-0.5">{desc}</p>
+                <p className="font-medium text-base">{title}</p>
+                <p className="text-sm text-muted-foreground mt-0.5">{desc}</p>
               </div>
             </div>
           ))}
         </div>
 
-        <p className="text-xs text-center text-muted-foreground">
+        <p className="text-sm text-center text-muted-foreground">
           TekSure never sends spam. You can unsubscribe any time from this page or your browser settings.{' '}
           <Link to="/guides" className="text-primary hover:underline">Browse guides instead →</Link>
         </p>

@@ -22,7 +22,7 @@ export default function SeniorHomeRadioApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SiriusXM</h2><p>$10-$25/month. Premium stations. Howard Stern, classic country, oldies.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smart speaker</h2><p>&ldquo;Alexa, play WSB Atlanta.&rdquo; &ldquo;Hey Google, play classical music.&rdquo;</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Old radio still works</h2><p>FM transmitter $20 + Echo Dot. Plays Echo audio through old radio.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Listen to childhood hometown radio station. Memories instantly come back.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Listen to childhood hometown radio station. Memories instantly come back.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

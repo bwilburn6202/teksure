@@ -19,7 +19,7 @@ export default function TreeCareWhenToCallPro() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DEFINITELY hire pro for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ANY work above 6 feet — falls kill seniors.</li>
               <li>Trees near power lines.</li>
               <li>Storm-damaged trees.</li>
@@ -35,7 +35,7 @@ export default function TreeCareWhenToCallPro() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find certified arborist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ISA Certified Arborist</strong> — required credential. treesaregood.org.</li>
               <li><strong>TCIA Accredited</strong> — companies, tcia.org.</li>
               <li>Insurance: liability + workers comp REQUIRED.</li>
@@ -49,7 +49,7 @@ export default function TreeCareWhenToCallPro() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Storm scam red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Show up after storm offering &quot;great deal.&quot;</li>
               <li>Pressure for cash / immediate decision.</li>
               <li>Out-of-state license plates.</li>
@@ -65,7 +65,7 @@ export default function TreeCareWhenToCallPro() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost ranges</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pruning small tree: $200-500.</li>
               <li>Pruning large tree: $500-1,500.</li>
               <li>Tree removal (small): $400-1,200.</li>
@@ -80,7 +80,7 @@ export default function TreeCareWhenToCallPro() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY (small + safe)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pruning small branches reachable from ground.</li>
               <li>Mulching around base (3-inch ring, NOT against trunk).</li>
               <li>Watering young trees during drought.</li>
@@ -94,7 +94,7 @@ export default function TreeCareWhenToCallPro() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Prevent problems</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Annual arborist inspection on big trees.</li>
               <li>Watch for: dead branches, lean toward house, fungus on bark.</li>
               <li>Address storm-prone branches BEFORE storms.</li>
@@ -107,7 +107,7 @@ export default function TreeCareWhenToCallPro() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free tree advice</h3>
-            <p className="text-sm text-muted-foreground"><strong>Local Cooperative Extension Office</strong> — Master Gardeners give FREE advice + diagnoses. <strong>State Forestry Service</strong> — sometimes free inspection. <strong>Arbor Day Foundation</strong> — arborday.org. Free resources. Photos via app for ID + diagnosis.</p>
+            <p className="text-base text-muted-foreground"><strong>Local Cooperative Extension Office</strong> — Master Gardeners give FREE advice + diagnoses. <strong>State Forestry Service</strong> — sometimes free inspection. <strong>Arbor Day Foundation</strong> — arborday.org. Free resources. Photos via app for ID + diagnosis.</p>
           </CardContent>
         </Card>
       </main>

@@ -51,7 +51,7 @@ export default function PrintableAddressBook() {
   }, {});
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Printable Address Book | TekSure"
         description="Build a tidy printable address book sorted by last name. Includes name, address, phone, email, and notes for each contact."
@@ -60,10 +60,10 @@ export default function PrintableAddressBook() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:mb-3">
           <div className="flex items-center gap-2 mb-1">
-            <BookOpen className="h-7 w-7 text-rose-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Printable Address Book</h1>
+            <BookOpen className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Printable Address Book</h1>
           </div>
-          <p className="text-gray-600 text-lg print:hidden">
+          <p className="text-muted-foreground text-lg print:hidden">
             Add the people in your life. Print a tidy book sorted by last name to keep by the phone.
           </p>
         </div>
@@ -72,7 +72,7 @@ export default function PrintableAddressBook() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-rose-600" />
+              <PlusCircle className="h-5 w-5 text-danger-foreground" />
               Add a Contact
             </CardTitle>
           </CardHeader>
@@ -113,7 +113,7 @@ export default function PrintableAddressBook() {
                 <Input id="notes" placeholder="e.g. Birthday June 5, golf buddy" value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 text-base" />
               </div>
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={addContact} size="lg" className="w-full sm:w-auto text-base">
               Add Contact
             </Button>
@@ -123,8 +123,8 @@ export default function PrintableAddressBook() {
         {/* Stats */}
         {contacts.length > 0 && (
           <div className="mb-3 flex flex-wrap items-center justify-between gap-3 print:hidden">
-            <p className="text-sm text-gray-500">
-              <span className="font-semibold text-gray-800">{contacts.length}</span> contact{contacts.length !== 1 ? "s" : ""}
+            <p className="text-base text-muted-foreground">
+              <span className="font-semibold text-foreground">{contacts.length}</span> contact{contacts.length !== 1 ? "s" : ""}
             </p>
             <Button variant="outline" onClick={() => window.print()} className="gap-2">
               <Printer className="h-4 w-4" />
@@ -136,47 +136,47 @@ export default function PrintableAddressBook() {
         {/* Print header */}
         <div className="hidden print:block mb-3 text-center border-b pb-2">
           <h2 className="text-xl font-bold">My Address Book</h2>
-          <p className="text-xs text-gray-500">Printed {new Date().toLocaleDateString("en-US")}</p>
+          <p className="text-sm text-muted-foreground">Printed {new Date().toLocaleDateString("en-US")}</p>
         </div>
 
         {/* List */}
         {contacts.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <BookOpen className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <BookOpen className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No contacts yet.</p>
-              <p className="text-sm mt-1">Add your first contact above.</p>
+              <p className="text-base mt-1">Add your first contact above.</p>
             </CardContent>
           </Card>
         ) : (
           <div className="space-y-3">
             {Object.keys(grouped).sort().map(letter => (
               <Card key={letter} className="print:break-inside-avoid">
-                <CardHeader className="pb-1 pt-2 bg-rose-50">
-                  <CardTitle className="text-2xl text-rose-700 font-bold">{letter}</CardTitle>
+                <CardHeader className="pb-1 pt-2 bg-danger">
+                  <CardTitle className="text-2xl text-danger-foreground font-bold">{letter}</CardTitle>
                 </CardHeader>
                 <CardContent className="pt-2 pb-3">
                   <div className="divide-y">
                     {grouped[letter].map(c => (
                       <div key={c.id} className="py-2 flex items-start justify-between gap-2">
                         <div className="flex-1 min-w-0">
-                          <p className="font-semibold text-gray-900 text-base">{c.name}</p>
+                          <p className="font-semibold text-foreground text-base">{c.name}</p>
                           {c.address && (
-                            <p className="text-sm text-gray-700">
+                            <p className="text-base text-foreground">
                               {c.address}{c.city && `, ${c.city}`}{c.state && `, ${c.state}`} {c.zip}
                             </p>
                           )}
                           {(c.phone || c.email) && (
-                            <p className="text-sm text-gray-600">
+                            <p className="text-base text-muted-foreground">
                               {c.phone}{c.phone && c.email && " · "}{c.email}
                             </p>
                           )}
-                          {c.notes && <p className="text-xs text-gray-500 italic mt-0.5">{c.notes}</p>}
+                          {c.notes && <p className="text-sm text-muted-foreground italic mt-0.5">{c.notes}</p>}
                         </div>
                         <Button
                           variant="ghost"
                           size="icon"
-                          className="shrink-0 h-7 w-7 text-red-400 hover:text-red-600 print:hidden"
+                          className="shrink-0 h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden"
                           onClick={() => removeContact(c.id)}
                           aria-label="Remove contact"
                         >
@@ -191,15 +191,15 @@ export default function PrintableAddressBook() {
           </div>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Print two copies. Keep one by the phone and one in your travel bag — you will be glad you have addresses handy when you need to send a card or birthday gift.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

@@ -19,7 +19,7 @@ export default function MinimalismForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why now</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Less to clean / maintain.</li>
               <li>Less to dust.</li>
               <li>Easier to find things.</li>
@@ -35,7 +35,7 @@ export default function MinimalismForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">90/90 rule</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Used in last 90 days OR using in next 90?</li>
               <li>If no — let it go.</li>
               <li>Excludes seasonal, special items.</li>
@@ -49,7 +49,7 @@ export default function MinimalismForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sentimental items hardest — take photo, donate.</li>
               <li>Multiple sets of china/crystal — keep ONE.</li>
               <li>Books — donate to library, keep favorites.</li>
@@ -64,7 +64,7 @@ export default function MinimalismForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Swedish death cleaning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Concept: declutter so kids don&apos;t have to.</li>
               <li>Book: <em>The Gentle Art of Swedish Death Cleaning</em>.</li>
               <li>Decade-long process, not panic.</li>
@@ -78,7 +78,7 @@ export default function MinimalismForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where stuff goes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Family</strong> — ask if they want.</li>
               <li><strong>Buy Nothing groups</strong> — Facebook neighborhood.</li>
               <li><strong>Goodwill / Salvation Army</strong> — pickup available.</li>
@@ -94,7 +94,7 @@ export default function MinimalismForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Digital minimalism too</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Unsubscribe from emails.</li>
               <li>Delete unused apps.</li>
               <li>Cancel unused subscriptions.</li>
@@ -109,7 +109,7 @@ export default function MinimalismForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">One in, one out</h3>
-            <p className="text-sm text-muted-foreground">After decluttering — rule for life: bring something IN, take something OUT. Prevents re-accumulation. Christmas + birthday gifts = display, then donate. Give experiences instead of stuff. Live lighter forever.</p>
+            <p className="text-base text-muted-foreground">After decluttering — rule for life: bring something IN, take something OUT. Prevents re-accumulation. Christmas + birthday gifts = display, then donate. Give experiences instead of stuff. Live lighter forever.</p>
           </CardContent>
         </Card>
       </main>

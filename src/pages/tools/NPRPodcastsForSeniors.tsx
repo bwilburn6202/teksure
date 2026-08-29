@@ -19,7 +19,7 @@ export default function NPRPodcastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">News + current events</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Up First — 10-minute morning headlines.</li>
               <li>NPR News Now — hourly news updates.</li>
               <li>Consider This — daily deep dive on top story.</li>
@@ -33,7 +33,7 @@ export default function NPRPodcastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Storytelling + culture</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>This American Life — long-time favorite.</li>
               <li>Radiolab — science + storytelling.</li>
               <li>Code Switch — race + culture.</li>
@@ -47,7 +47,7 @@ export default function NPRPodcastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Comedy + entertainment</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wait Wait... Don&apos;t Tell Me — news quiz comedy.</li>
               <li>How To Do Everything — fun life advice.</li>
               <li>Ask Me Another — game show.</li>
@@ -61,7 +61,7 @@ export default function NPRPodcastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior interest</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hidden Brain — psychology research.</li>
               <li>Throughline — history series.</li>
               <li>Planet Money — economics made simple.</li>
@@ -75,7 +75,7 @@ export default function NPRPodcastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to listen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NPR One app — free, all NPR content.</li>
               <li>Apple Podcasts — built into iPhone.</li>
               <li>Spotify — free podcasts.</li>
@@ -89,7 +89,7 @@ export default function NPRPodcastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Support NPR</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NPR is listener-supported.</li>
               <li>Donate to local NPR station.</li>
               <li>Public Radio Plus app — premium ad-free.</li>
@@ -103,7 +103,7 @@ export default function NPRPodcastsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Up First daily — 10 minutes</h3>
-            <p className="text-sm text-muted-foreground">Start every weekday with NPR&apos;s Up First (10 minutes). It&apos;s a balanced summary of what matters that day. Listen during morning coffee, walking the dog, or driving to errands. Combined with one weekend long-form show like This American Life, you&apos;ll be more informed than most while spending under an hour weekly. Free, high quality, no algorithmic distortion.</p>
+            <p className="text-base text-muted-foreground">Start every weekday with NPR&apos;s Up First (10 minutes). It&apos;s a balanced summary of what matters that day. Listen during morning coffee, walking the dog, or driving to errands. Combined with one weekend long-form show like This American Life, you&apos;ll be more informed than most while spending under an hour weekly. Free, high quality, no algorithmic distortion.</p>
           </CardContent>
         </Card>
       </main>

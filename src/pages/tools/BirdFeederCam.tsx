@@ -30,10 +30,10 @@ export default function BirdFeederCam() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BirdFeederCam() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why so beloved</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Phone notification: "Cardinal at the feeder!".</li>
               <li>Builds your "yard list" — every species you\'ve had visit.</li>
               <li>Share favorite photos with grandkids ("look what we got today!").</li>
@@ -55,14 +55,14 @@ export default function BirdFeederCam() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pair with Cornell Merlin</h2>
-            <p className="text-sm">Install <strong>Merlin Bird ID</strong> from Cornell (free). It identifies birds by SOUND in real-time. Combine with Bird Buddy and you have a backyard observatory. (See our Bird ID with Merlin tool.)</p>
+            <p className="text-base">Install <strong>Merlin Bird ID</strong> from Cornell (free). It identifies birds by SOUND in real-time. Combine with Bird Buddy and you have a backyard observatory. (See our Bird ID with Merlin tool.)</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best gift for grandparents</h3>
-            <p className="text-sm text-muted-foreground">If you\'re looking for a gift — a Bird Buddy + a year of bird seed delivery from Walmart Subscribe & Save = pure joy. Many seniors call it the best gift they\'ve gotten.</p>
+            <p className="text-base text-muted-foreground">If you\'re looking for a gift — a Bird Buddy + a year of bird seed delivery from Walmart Subscribe & Save = pure joy. Many seniors call it the best gift they\'ve gotten.</p>
           </CardContent>
         </Card>
       </main>

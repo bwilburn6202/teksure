@@ -186,8 +186,8 @@ export default function DigitalLiteracyAssessment() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-purple-50 dark:bg-purple-950/30 flex items-center justify-center flex-shrink-0">
-                <GraduationCap className="h-6 w-6 text-purple-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <GraduationCap className="h-6 w-6 text-primary" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -224,12 +224,12 @@ export default function DigitalLiteracyAssessment() {
                       Section {currentSection + 1} of {sections.length}: {sections[currentSection].title}
                     </CardTitle>
                   </div>
-                  <p className="text-sm text-muted-foreground mt-1">For each statement, choose how well it describes you.</p>
+                  <p className="text-base text-muted-foreground mt-1">For each statement, choose how well it describes you.</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   {sections[currentSection].questions.map((q, qi) => (
                     <div key={qi} className="rounded-lg border p-4">
-                      <p className="text-sm font-medium mb-3">{qi + 1}. {q.text}</p>
+                      <p className="text-base font-medium mb-3">{qi + 1}. {q.text}</p>
                       <div className="flex gap-2">
                         {([['yes', 'Yes, I can'], ['somewhat', 'Somewhat'], ['no', 'No, not yet']] as const).map(([value, label]) => (
                           <Button
@@ -250,9 +250,9 @@ export default function DigitalLiteracyAssessment() {
                   {/* Section score */}
                   {currentSectionComplete && (
                     <div className="rounded-lg bg-muted/50 p-4 text-center">
-                      <p className="text-sm text-muted-foreground">Section score</p>
+                      <p className="text-base text-muted-foreground">Section score</p>
                       <p className="text-2xl font-bold">{sectionScores[currentSection]} / {maxSectionScore}</p>
-                      <p className="text-xs text-muted-foreground mt-1">
+                      <p className="text-sm text-muted-foreground mt-1">
                         {sectionScores[currentSection] >= 12 ? 'Great job!' : sectionScores[currentSection] >= 7 ? 'Good foundation — keep learning!' : 'This is a good area to focus on.'}
                       </p>
                     </div>
@@ -286,11 +286,11 @@ export default function DigitalLiteracyAssessment() {
               <Card>
                 <CardContent className="pt-8 pb-8 text-center">
                   <GraduationCap className={`h-12 w-12 mx-auto mb-3 ${tierInfo.color}`} aria-hidden="true" />
-                  <p className="text-sm text-muted-foreground mb-1">Your digital literacy level</p>
+                  <p className="text-base text-muted-foreground mb-1">Your digital literacy level</p>
                   <h2 className="text-3xl font-bold mb-2">{tierInfo.tier}</h2>
                   <p className="text-4xl font-bold mb-4">{totalScore} <span className="text-lg text-muted-foreground font-normal">/ {maxScore} points</span></p>
                   <Progress value={(totalScore / maxScore) * 100} className="h-3 max-w-md mx-auto mb-4" aria-label={`${Math.round((totalScore / maxScore) * 100)}% overall score`} />
-                  <p className="text-muted-foreground text-sm max-w-md mx-auto">{tierInfo.description}</p>
+                  <p className="text-muted-foreground text-base max-w-md mx-auto">{tierInfo.description}</p>
                 </CardContent>
               </Card>
 
@@ -327,7 +327,7 @@ export default function DigitalLiteracyAssessment() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Based on your results, here are the areas where you would benefit most from additional learning:
                   </p>
                   {weakestSections.map(({ index }) => {
@@ -337,9 +337,9 @@ export default function DigitalLiteracyAssessment() {
                       <div key={index} className="rounded-lg border p-4">
                         <div className="flex items-center gap-2 mb-2">
                           <SIcon className={`h-4 w-4 ${section.color}`} aria-hidden="true" />
-                          <p className="font-medium text-sm">{section.title} ({sectionScores[index]} / {maxSectionScore})</p>
+                          <p className="font-medium text-base">{section.title} ({sectionScores[index]} / {maxSectionScore})</p>
                         </div>
-                        <p className="text-sm text-muted-foreground mb-3">
+                        <p className="text-base text-muted-foreground mb-3">
                           {sectionScores[index] <= 5
                             ? `Start with the basics of ${section.title.toLowerCase()}. The guides below will walk you through everything step by step.`
                             : `You have some skills in ${section.title.toLowerCase()} but could benefit from additional practice. Check out these guides:`

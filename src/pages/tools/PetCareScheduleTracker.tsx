@@ -107,7 +107,7 @@ export default function PetCareScheduleTracker() {
   const upcomingVisits = visits.filter(v => isUpcoming(v.date));
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Pet Care Schedule Tracker | TekSure"
         description="Track your pet's medications, vet appointments, and care details all in one place. Printable for the pet sitter or vet visit."
@@ -116,21 +116,21 @@ export default function PetCareScheduleTracker() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <PawPrint className="h-7 w-7 text-amber-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Pet Care Schedule</h1>
+            <PawPrint className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Pet Care Schedule</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Keep your pet's medications, vet visits, and care notes in one place.
           </p>
         </div>
 
         {/* Upcoming visits warning */}
         {upcomingVisits.length > 0 && (
-          <Card className="mb-4 bg-amber-50 border-amber-200 print:hidden">
+          <Card className="mb-4 bg-warn border-warn-foreground/25 print:hidden">
             <CardContent className="py-3 px-4 flex items-start gap-2">
-              <AlertTriangle className="h-5 w-5 text-amber-600 mt-0.5 shrink-0" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground mt-0.5 shrink-0" />
               <div>
-                <p className="font-semibold text-amber-800 text-sm">
+                <p className="font-semibold text-warn-foreground text-base">
                   {upcomingVisits.length} vet visit{upcomingVisits.length !== 1 ? "s" : ""} in the next 2 weeks
                 </p>
               </div>
@@ -143,7 +143,7 @@ export default function PetCareScheduleTracker() {
           <Card className="mb-6 print:hidden">
             <CardHeader>
               <CardTitle className="text-xl flex items-center gap-2">
-                <PlusCircle className="h-5 w-5 text-amber-600" />
+                <PlusCircle className="h-5 w-5 text-warn-foreground" />
                 Add a Pet
               </CardTitle>
             </CardHeader>
@@ -155,7 +155,7 @@ export default function PetCareScheduleTracker() {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="species" className="text-base font-medium">Type</Label>
-                  <select id="species" value={petForm.species} onChange={e => setPetForm(f => ({ ...f, species: e.target.value }))} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+                  <select id="species" value={petForm.species} onChange={e => setPetForm(f => ({ ...f, species: e.target.value }))} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card">
                     {SPECIES.map(s => <option key={s}>{s}</option>)}
                   </select>
                 </div>
@@ -168,7 +168,7 @@ export default function PetCareScheduleTracker() {
                 <Label htmlFor="petnotes" className="text-base font-medium">Notes (optional)</Label>
                 <Input id="petnotes" placeholder="e.g. Allergic to chicken" value={petForm.notes} onChange={e => setPetForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 text-base" />
               </div>
-              {error && <p className="text-red-600 text-sm">{error}</p>}
+              {error && <p className="text-danger-foreground text-base">{error}</p>}
               <Button onClick={addPet} size="lg" className="w-full sm:w-auto text-base">Add Pet</Button>
             </CardContent>
           </Card>
@@ -182,14 +182,14 @@ export default function PetCareScheduleTracker() {
                 key={p.id}
                 onClick={() => setActivePetId(p.id)}
                 className={`px-3 py-2 rounded-md border text-sm font-medium ${
-                  activePetId === p.id ? "bg-amber-100 border-amber-400 text-amber-900" : "bg-white border-gray-200 text-gray-700 hover:bg-gray-50"
+                  activePetId === p.id ? "bg-amber-100 border-amber-400 text-amber-900" : "bg-white border-border text-foreground hover:bg-gray-50"
                 }`}
               >
                 <PawPrint className="h-4 w-4 inline mr-1" />
                 {p.name}
               </button>
             ))}
-            <button onClick={() => { setActivePetId(null); }} className="px-3 py-2 rounded-md border border-dashed border-gray-300 text-sm text-gray-500 hover:bg-gray-50">
+            <button onClick={() => { setActivePetId(null); }} className="px-3 py-2 rounded-md border border-dashed border-border text-sm text-muted-foreground hover:bg-muted">
               + Add another
             </button>
           </div>
@@ -201,13 +201,13 @@ export default function PetCareScheduleTracker() {
             <Card className="mb-4">
               <CardContent className="py-4 px-4 flex items-start justify-between">
                 <div>
-                  <h2 className="text-xl font-bold text-gray-900">{activePet.name}</h2>
-                  <p className="text-sm text-gray-500">
+                  <h2 className="text-xl font-bold text-foreground">{activePet.name}</h2>
+                  <p className="text-base text-muted-foreground">
                     {activePet.species}{activePet.age ? ` · ${activePet.age}` : ""}
                   </p>
-                  {activePet.notes && <p className="text-sm text-gray-600 italic mt-1">{activePet.notes}</p>}
+                  {activePet.notes && <p className="text-base text-muted-foreground italic mt-1">{activePet.notes}</p>}
                 </div>
-                <Button variant="ghost" size="icon" className="text-red-400 hover:text-red-600 print:hidden" onClick={() => removePet(activePet.id)} aria-label="Remove pet">
+                <Button variant="ghost" size="icon" className="text-danger-foreground hover:text-danger-foreground print:hidden" onClick={() => removePet(activePet.id)} aria-label="Remove pet">
                   <Trash2 className="h-4 w-4" />
                 </Button>
               </CardContent>
@@ -221,29 +221,29 @@ export default function PetCareScheduleTracker() {
               <CardContent>
                 <div className="space-y-2 mb-4">
                   {petMeds.length === 0 ? (
-                    <p className="text-sm text-gray-500 italic">No medications added yet.</p>
+                    <p className="text-base text-muted-foreground italic">No medications added yet.</p>
                   ) : petMeds.map(m => (
                     <div key={m.id} className="border rounded-md p-3 flex items-start justify-between gap-2">
                       <div>
-                        <p className="font-semibold text-gray-900">{m.name}</p>
+                        <p className="font-semibold text-foreground">{m.name}</p>
                         <div className="flex gap-2 flex-wrap mt-1">
                           <Badge variant="secondary" className="text-xs">{m.dose}</Badge>
                           <Badge variant="outline" className="text-xs">{m.frequency}</Badge>
                         </div>
-                        {m.notes && <p className="text-xs text-gray-500 italic mt-1">{m.notes}</p>}
+                        {m.notes && <p className="text-sm text-muted-foreground italic mt-1">{m.notes}</p>}
                       </div>
-                      <Button variant="ghost" size="icon" className="text-red-400 hover:text-red-600 print:hidden" onClick={() => removeMed(m.id)}>
+                      <Button variant="ghost" size="icon" className="text-danger-foreground hover:text-danger-foreground print:hidden" onClick={() => removeMed(m.id)}>
                         <Trash2 className="h-4 w-4" />
                       </Button>
                     </div>
                   ))}
                 </div>
                 <div className="border-t pt-3 print:hidden">
-                  <p className="text-sm font-semibold text-gray-700 mb-2">Add medication</p>
+                  <p className="text-base font-semibold text-foreground mb-2">Add medication</p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-2">
                     <Input placeholder="Medication name" value={medForm.name} onChange={e => setMedForm(f => ({ ...f, name: e.target.value }))} />
                     <Input placeholder="Dose (e.g. 10mg, 1 tablet)" value={medForm.dose} onChange={e => setMedForm(f => ({ ...f, dose: e.target.value }))} />
-                    <select value={medForm.frequency} onChange={e => setMedForm(f => ({ ...f, frequency: e.target.value }))} className="border border-gray-300 rounded-md px-3 py-2 bg-white text-sm">
+                    <select value={medForm.frequency} onChange={e => setMedForm(f => ({ ...f, frequency: e.target.value }))} className="border border-border rounded-md px-3 py-2 bg-card text-sm">
                       {FREQUENCIES.map(f => <option key={f}>{f}</option>)}
                     </select>
                     <Input placeholder="Notes (optional)" value={medForm.notes} onChange={e => setMedForm(f => ({ ...f, notes: e.target.value }))} />
@@ -261,18 +261,18 @@ export default function PetCareScheduleTracker() {
               <CardContent>
                 <div className="space-y-2 mb-4">
                   {petVisits.length === 0 ? (
-                    <p className="text-sm text-gray-500 italic">No vet visits scheduled.</p>
+                    <p className="text-base text-muted-foreground italic">No vet visits scheduled.</p>
                   ) : petVisits.map(v => {
                     const upcoming = isUpcoming(v.date);
                     return (
                       <div key={v.id} className={`border rounded-md p-3 flex items-start justify-between gap-2 ${upcoming ? "border-amber-300 bg-amber-50" : ""}`}>
                         <div>
-                          <p className="font-semibold text-gray-900">{formatDate(v.date)}</p>
-                          <p className="text-sm text-gray-700">{v.reason}</p>
-                          {v.vetName && <p className="text-xs text-gray-500 mt-1">Dr. {v.vetName}</p>}
+                          <p className="font-semibold text-foreground">{formatDate(v.date)}</p>
+                          <p className="text-base text-foreground">{v.reason}</p>
+                          {v.vetName && <p className="text-sm text-muted-foreground mt-1">Dr. {v.vetName}</p>}
                           {upcoming && <Badge className="mt-1 bg-amber-500 hover:bg-amber-600 text-xs">Upcoming</Badge>}
                         </div>
-                        <Button variant="ghost" size="icon" className="text-red-400 hover:text-red-600 print:hidden" onClick={() => removeVisit(v.id)}>
+                        <Button variant="ghost" size="icon" className="text-danger-foreground hover:text-danger-foreground print:hidden" onClick={() => removeVisit(v.id)}>
                           <Trash2 className="h-4 w-4" />
                         </Button>
                       </div>
@@ -280,7 +280,7 @@ export default function PetCareScheduleTracker() {
                   })}
                 </div>
                 <div className="border-t pt-3 print:hidden">
-                  <p className="text-sm font-semibold text-gray-700 mb-2">Add appointment</p>
+                  <p className="text-base font-semibold text-foreground mb-2">Add appointment</p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-2">
                     <Input type="date" value={visitForm.date} onChange={e => setVisitForm(f => ({ ...f, date: e.target.value }))} />
                     <Input placeholder="Reason (e.g. Annual checkup)" value={visitForm.reason} onChange={e => setVisitForm(f => ({ ...f, reason: e.target.value }))} />
@@ -288,7 +288,7 @@ export default function PetCareScheduleTracker() {
                   </div>
                   <Button onClick={addVisit} size="sm">Add Appointment</Button>
                 </div>
-                {error && <p className="text-red-600 text-sm mt-2 print:hidden">{error}</p>}
+                {error && <p className="text-danger-foreground text-base mt-2 print:hidden">{error}</p>}
               </CardContent>
             </Card>
           </>
@@ -301,6 +301,6 @@ export default function PetCareScheduleTracker() {
           </Button>
         )}
       </div>
-    </div>
+    </main>
   );
 }

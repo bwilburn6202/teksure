@@ -53,20 +53,20 @@ export default function ChairYogaSequenceBuilder() {
   })();
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Chair Yoga Sequence Builder | TekSure" description="Pick a goal and get a printable 6-pose chair yoga sequence. Wake up gentle, arthritis relief, balance, or wind down before bed. No floor work." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <Activity className="h-7 w-7 text-teal-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Chair Yoga Builder</h1>
+            <Activity className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Chair Yoga Builder</h1>
           </div>
-          <p className="text-gray-600 text-lg">Pick a goal. Get a printable 6-pose sequence you can do in a sturdy chair. About 10-15 minutes total.</p>
+          <p className="text-muted-foreground text-lg">Pick a goal. Get a printable 6-pose sequence you can do in a sturdy chair. About 10-15 minutes total.</p>
         </div>
 
         <Card className="mb-4 print:hidden">
           <CardContent className="py-4 px-4 space-y-2">
-            <p className="text-sm font-semibold text-gray-700">Pick a goal</p>
+            <p className="text-base font-semibold text-foreground">Pick a goal</p>
             <div className="flex flex-wrap gap-1">
               {(["Wake up gentle", "Arthritis relief", "Balance and focus", "Wind down before bed"] as Goal[]).map(g => (
                 <Button key={g} size="sm" variant={goal === g ? "default" : "outline"} onClick={() => { setGoal(g); setSeed(Date.now()); }}>{g}</Button>
@@ -78,17 +78,17 @@ export default function ChairYogaSequenceBuilder() {
         <Card className="mb-4">
           <CardContent className="py-4 px-4">
             <div className="flex items-center justify-between mb-3">
-              <h2 className="text-2xl font-bold text-gray-900">{goal}</h2>
+              <h2 className="text-2xl font-bold text-foreground">{goal}</h2>
               <Badge variant="outline">6 poses</Badge>
             </div>
             <div className="space-y-3">
               {sequence.map((p, i) => (
-                <div key={`${p.name}-${i}`} className="border border-gray-200 rounded-lg p-3 bg-white">
+                <div key={`${p.name}-${i}`} className="border border-border rounded-lg p-3 bg-card">
                   <div className="flex items-baseline justify-between gap-2">
-                    <p className="font-semibold text-gray-900">{i + 1}. {p.name}</p>
-                    <span className="text-xs text-teal-700 italic">{p.hold}</span>
+                    <p className="font-semibold text-foreground">{i + 1}. {p.name}</p>
+                    <span className="text-sm text-success-foreground italic">{p.hold}</span>
                   </div>
-                  <p className="text-sm text-gray-700 mt-1">{p.how}</p>
+                  <p className="text-base text-foreground mt-1">{p.how}</p>
                 </div>
               ))}
             </div>
@@ -104,18 +104,18 @@ export default function ChairYogaSequenceBuilder() {
           </Button>
         </div>
 
-        <Card className="bg-blue-50 border-blue-200">
+        <Card className="bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Setup that helps:</span> Use a sturdy chair with no wheels. Feet flat (or on a yoga block or thick book if they do not reach). Loose comfortable clothes. Water nearby. Stop any movement that pinches or sharpens pain. Modify always.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Setup that helps:</span> Use a sturdy chair with no wheels. Feet flat (or on a yoga block or thick book if they do not reach). Loose comfortable clothes. Water nearby. Stop any movement that pinches or sharpens pain. Modify always.</p>
           </CardContent>
         </Card>
 
-        <Card className="mt-3 bg-emerald-50 border-emerald-200">
+        <Card className="mt-3 bg-success border-success-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-emerald-900"><span className="font-semibold">Free in-person classes:</span> SilverSneakers (most Medicare Advantage plans include this), Renew Active (UnitedHealthcare AARP), local senior center or library. YouTube channels: Yoga With Adriene chair routine, Senior Shape, Silver Yogis.</p>
+            <p className="text-base text-success-foreground"><span className="font-semibold">Free in-person classes:</span> SilverSneakers (most Medicare Advantage plans include this), Renew Active (UnitedHealthcare AARP), local senior center or library. YouTube channels: Yoga With Adriene chair routine, Senior Shape, Silver Yogis.</p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

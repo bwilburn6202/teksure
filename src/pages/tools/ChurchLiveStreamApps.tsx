@@ -19,7 +19,7 @@ export default function ChurchLiveStreamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you need home worship</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mobility issues prevent attendance.</li>
               <li>Recent surgery or illness.</li>
               <li>Bad weather days.</li>
@@ -33,7 +33,7 @@ export default function ChurchLiveStreamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find your church online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most churches stream on YouTube or Facebook.</li>
               <li>Search church name + &quot;live stream.&quot;</li>
               <li>Subscribe to YouTube channel for notifications.</li>
@@ -47,7 +47,7 @@ export default function ChurchLiveStreamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cast to TV</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Better experience on big TV screen.</li>
               <li>Chromecast or smart TV with YouTube app.</li>
               <li>Cast from phone YouTube to TV.</li>
@@ -61,7 +61,7 @@ export default function ChurchLiveStreamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Catholic Mass online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>EWTN — daily Mass + Catholic programming.</li>
               <li>Daily TV Mass — old-time Catholic Mass.</li>
               <li>USCCB Daily Mass website.</li>
@@ -75,7 +75,7 @@ export default function ChurchLiveStreamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Christian streaming services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pure Flix — Christian movies + shows, $10/month.</li>
               <li>RightNow Media — church curriculum.</li>
               <li>Bible.com (YouVersion) — daily devotional videos.</li>
@@ -89,7 +89,7 @@ export default function ChurchLiveStreamApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Maintaining connection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Online doesn&apos;t fully replace in-person.</li>
               <li>Stay involved in small groups via Zoom.</li>
               <li>Phone call pastor or fellow members.</li>
@@ -103,7 +103,7 @@ export default function ChurchLiveStreamApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Set up before you need it</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t wait until you&apos;re sick or unable to attend. This Sunday, find your church&apos;s online stream and bookmark it. Test casting to TV. Make sure you can find it easily when needed. Many seniors who unexpectedly couldn&apos;t attend church have struggled to find the right stream link in the moment. Set it up while you&apos;re well.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t wait until you&apos;re sick or unable to attend. This Sunday, find your church&apos;s online stream and bookmark it. Test casting to TV. Make sure you can find it easily when needed. Many seniors who unexpectedly couldn&apos;t attend church have struggled to find the right stream link in the moment. Set it up while you&apos;re well.</p>
           </CardContent>
         </Card>
       </main>

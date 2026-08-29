@@ -19,7 +19,7 @@ export default function FireTVStickGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Fire TV Stick?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Amazon&apos;s competitor to Roku.</li>
               <li>HDMI plug-in for any TV.</li>
               <li>Voice control through Alexa.</li>
@@ -33,7 +33,7 @@ export default function FireTVStickGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Models compared</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fire TV Stick — $30, basic HD.</li>
               <li>Fire TV Stick 4K — $50, sharper picture.</li>
               <li>Fire TV Stick 4K Max — $60, fastest.</li>
@@ -47,7 +47,7 @@ export default function FireTVStickGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plug stick into TV HDMI port.</li>
               <li>Plug power cable into wall.</li>
               <li>Switch TV to that HDMI input.</li>
@@ -61,7 +61,7 @@ export default function FireTVStickGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alexa voice control</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Press microphone on remote.</li>
               <li>&quot;Alexa, play Yellowstone.&quot;</li>
               <li>&quot;Alexa, pause.&quot;</li>
@@ -75,7 +75,7 @@ export default function FireTVStickGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fire TV vs Roku</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fire TV — better voice control + Alexa integration.</li>
               <li>Roku — simpler interface, no Amazon account needed.</li>
               <li>Fire TV — pushes Amazon Prime content harder.</li>
@@ -89,7 +89,7 @@ export default function FireTVStickGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Closed captions — Settings → Accessibility.</li>
               <li>Text-to-speech reads menus.</li>
               <li>Magnifier — zoom in on screen.</li>
@@ -103,7 +103,7 @@ export default function FireTVStickGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get Fire TV if you have Echo</h3>
-            <p className="text-sm text-muted-foreground">If you have Amazon Echo speakers in your house, Fire TV Stick is the natural choice — your Echo can control the TV by voice, even from another room. &quot;Alexa, watch the news on Fire TV.&quot; If you don&apos;t use Alexa, Roku is simpler. Both cost similarly. Watch Amazon Prime Day for steep discounts on Fire TV Stick.</p>
+            <p className="text-base text-muted-foreground">If you have Amazon Echo speakers in your house, Fire TV Stick is the natural choice — your Echo can control the TV by voice, even from another room. &quot;Alexa, watch the news on Fire TV.&quot; If you don&apos;t use Alexa, Roku is simpler. Both cost similarly. Watch Amazon Prime Day for steep discounts on Fire TV Stick.</p>
           </CardContent>
         </Card>
       </main>

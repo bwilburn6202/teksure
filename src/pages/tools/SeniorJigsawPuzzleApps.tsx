@@ -22,7 +22,7 @@ export default function SeniorJigsawPuzzleApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior pieces</h2><p>Larger pieces (300-piece) easier on eyes and hands.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Puzzle table</h2><p>$30 portable mat. Roll up between sessions.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cognitive benefit</h2><p>Studies show puzzling slows cognitive decline. Real benefit.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 1 puzzle per month. Brain workout that&apos;s actually fun.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 1 puzzle per month. Brain workout that&apos;s actually fun.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

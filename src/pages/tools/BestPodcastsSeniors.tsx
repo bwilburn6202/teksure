@@ -19,7 +19,7 @@ export default function BestPodcastsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">News + analysis</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>The Daily</strong> (NYT) — 25-min daily.</li>
               <li><strong>Up First</strong> (NPR) — 10-min morning.</li>
               <li><strong>This American Life</strong> — weekly stories.</li>
@@ -33,7 +33,7 @@ export default function BestPodcastsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health + aging</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Peter Attia Drive</strong> — health + longevity.</li>
               <li><strong>Huberman Lab</strong> — neuroscience.</li>
               <li><strong>Senior Living Today</strong> — aging issues.</li>
@@ -46,7 +46,7 @@ export default function BestPodcastsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">History + culture</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hardcore History</strong> — Dan Carlin. Long, deep.</li>
               <li><strong>Revolutions</strong> — Mike Duncan.</li>
               <li><strong>Tides of History</strong>.</li>
@@ -60,7 +60,7 @@ export default function BestPodcastsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior favorites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>How I Built This</strong> — entrepreneur stories.</li>
               <li><strong>Wait Wait... Don&apos;t Tell Me!</strong> — NPR comedy.</li>
               <li><strong>Lake Wobegon</strong> — Garrison Keillor.</li>
@@ -74,7 +74,7 @@ export default function BestPodcastsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to listen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Podcasts (iPhone) free.</li>
               <li>Spotify free.</li>
               <li>Pocket Casts ($10/yr).</li>
@@ -88,7 +88,7 @@ export default function BestPodcastsSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Discover more</h3>
-            <p className="text-sm text-muted-foreground">Apple Podcasts charts. NYT podcast recommendations. Try 1 episode of 3 different shows weekly = find favorites. Listen during chores, exercise, drives. Free education + entertainment = senior brain food.</p>
+            <p className="text-base text-muted-foreground">Apple Podcasts charts. NYT podcast recommendations. Try 1 episode of 3 different shows weekly = find favorites. Listen during chores, exercise, drives. Free education + entertainment = senior brain food.</p>
           </CardContent>
         </Card>
       </main>

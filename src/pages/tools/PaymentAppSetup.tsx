@@ -140,7 +140,7 @@ export default function PaymentAppSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-green-500/10 rounded-full">
-                <Wallet className="h-8 w-8 text-green-600" />
+                <Wallet className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Payment App Setup</h1>
@@ -155,14 +155,14 @@ export default function PaymentAppSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Which app does your family use?</p>
+              <p className="text-base font-semibold mb-3">Which app does your family use?</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {APP_OPTIONS.map(o => (
                   <button key={o.id} onClick={() => setApp(o.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       app === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -172,7 +172,7 @@ export default function PaymentAppSetup() {
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <Badge variant="outline" className="mb-2">{a.name}</Badge>
-              <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {a.who}</p>
+              <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {a.who}</p>
               <div className="grid sm:grid-cols-2 gap-2 mb-3">
                 <Badge variant="outline" className="text-xs justify-start">Fees: {a.fees}</Badge>
                 <Badge variant="outline" className="text-xs justify-start">Protection: {a.protection}</Badge>
@@ -181,7 +181,7 @@ export default function PaymentAppSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Setup</p>
               <ol className="space-y-1.5 mb-4">
                 {a.setup.map((s, i) => (
-                  <li key={i} className="flex gap-2 text-sm">
+                  <li key={i} className="flex gap-2 text-base">
                     <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                     <span>{s}</span>
                   </li>
@@ -191,7 +191,7 @@ export default function PaymentAppSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Send money</p>
               <ol className="space-y-1.5 mb-4">
                 {a.send.map((s, i) => (
-                  <li key={i} className="flex gap-2 text-sm">
+                  <li key={i} className="flex gap-2 text-base">
                     <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                     <span>{s}</span>
                   </li>
@@ -201,7 +201,7 @@ export default function PaymentAppSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Worth knowing</p>
               <ul className="space-y-1">
                 {a.notes.map((n, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-primary shrink-0">•</span><span>{n}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-primary shrink-0">•</span><span>{n}</span></li>
                 ))}
               </ul>
 
@@ -212,9 +212,9 @@ export default function PaymentAppSetup() {
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">The single most important rule for ALL payment apps</p>
                 <p className="text-muted-foreground">
@@ -226,8 +226,8 @@ export default function PaymentAppSetup() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Five universal safety habits</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Five universal safety habits</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Turn on biometric unlock (Face ID / fingerprint) for the app.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Send a $1 test before sending a large amount to a new contact.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Set a daily transfer limit in your bank settings — even $500/day is plenty for normal use.</span></li>
@@ -241,16 +241,16 @@ export default function PaymentAppSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/online-banking-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Online Banking Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Lock down your bank account first.</p>
+                <p className="font-medium text-base">Online Banking Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Lock down your bank account first.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Check that "send Zelle to verify" message.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Check that "send Zelle to verify" message.</p>
               </Link>
               <Link to="/tools/marketplace-scam-spotter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Marketplace Scam Spotter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For payment-app marketplace scams.</p>
+                <p className="font-medium text-base">Marketplace Scam Spotter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For payment-app marketplace scams.</p>
               </Link>
             </div>
           </div>

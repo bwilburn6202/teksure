@@ -19,7 +19,7 @@ export default function SeniorCyclingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">E-bikes change everything</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pedal-assist makes hills + headwind easy.</li>
               <li>Still good exercise (you pedal).</li>
               <li>Can ride 20-50 miles without exhaustion.</li>
@@ -33,7 +33,7 @@ export default function SeniorCyclingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best senior bikes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Trek FX+ 2</strong> — $1,800 e-bike. Senior favorite.</li>
               <li><strong>Specialized Como SL</strong> — $3K, beautiful.</li>
               <li><strong>Aventon Soltera</strong> — $1,200 budget e-bike.</li>
@@ -47,7 +47,7 @@ export default function SeniorCyclingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety essentials</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Helmet ALWAYS — concussions life-changing for seniors.</li>
               <li>Bright clothes / reflective vest.</li>
               <li>Front + rear lights (even daytime).</li>
@@ -63,7 +63,7 @@ export default function SeniorCyclingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior fit + comfort</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Upright handlebars (not racing).</li>
               <li>Comfortable wider seat.</li>
               <li>Padded gloves.</li>
@@ -78,7 +78,7 @@ export default function SeniorCyclingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to ride</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Rail-trails</strong> — flat + safe. Search &quot;rails to trails&quot; near you.</li>
               <li><strong>Park bike paths</strong> — slow + scenic.</li>
               <li><strong>Senior cycling clubs</strong> — Meetup.com, AARP.</li>
@@ -91,7 +91,7 @@ export default function SeniorCyclingTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get back on the bike</h3>
-            <p className="text-sm text-muted-foreground">Haven&apos;t ridden since youth? E-bike removes intimidation. Local shop does demos. Empty parking lot first practice. 70+ year olds ride centuries (100 miles). Many seniors most fit they&apos;ve been at any age. Cycling adds years to life.</p>
+            <p className="text-base text-muted-foreground">Haven&apos;t ridden since youth? E-bike removes intimidation. Local shop does demos. Empty parking lot first practice. 70+ year olds ride centuries (100 miles). Many seniors most fit they&apos;ve been at any age. Cycling adds years to life.</p>
           </CardContent>
         </Card>
       </main>

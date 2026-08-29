@@ -19,8 +19,8 @@ export default function SpecialtyInsuranceCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Flood Insurance</h2>
-            <p className="text-sm">Standard homeowners insurance does NOT cover flood. NOT covered: river rise, hurricane storm surge, even sewer backup.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Standard homeowners insurance does NOT cover flood. NOT covered: river rise, hurricane storm surge, even sewer backup.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li><strong>NFIP (National Flood Insurance Program)</strong> — federal. $700-2,000/year typical. Required if mortgage AND in flood zone.</li>
               <li><strong>Private flood insurance</strong> — sometimes cheaper. Companies like Neptune, Wright, FloodSafe.</li>
               <li><strong>Even outside flood zones</strong>: about 25% of NFIP claims come from "low risk" zones. Worth checking your address at floodsmart.gov.</li>
@@ -32,8 +32,8 @@ export default function SpecialtyInsuranceCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Earthquake Insurance</h2>
-            <p className="text-sm">Also not in standard policies. Important in CA, OR, WA, AK, HI, parts of MO/TN/IL.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Also not in standard policies. Important in CA, OR, WA, AK, HI, parts of MO/TN/IL.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li><strong>California Earthquake Authority (CEA)</strong> — most CA residents.</li>
               <li><strong>Private companies</strong> — GeoVera, Palomar.</li>
               <li><strong>Cost</strong>: $400-3,000/year depending on location.</li>
@@ -45,21 +45,21 @@ export default function SpecialtyInsuranceCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Umbrella Insurance</h2>
-            <p className="text-sm">Extra liability on top of homeowners + auto. Pays out IF someone sues you for more than your basic policies cover.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Extra liability on top of homeowners + auto. Pays out IF someone sues you for more than your basic policies cover.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>$1 million coverage = ~$200-400/year.</li>
               <li>Best protection for retirees with assets to lose.</li>
               <li>Covers: car accidents, dog bites, slip-and-fall on your property, even libel/defamation.</li>
               <li>Required by some HOAs and pool owners.</li>
             </ul>
-            <p className="text-sm mt-2 font-semibold">If you have $500k+ in assets — get umbrella. Best $/protection ratio in insurance.</p>
+            <p className="text-base mt-2 font-semibold">If you have $500k+ in assets — get umbrella. Best $/protection ratio in insurance.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Long-term auto insurance for retirees</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Drop comprehensive on cars worth less than $4,000.</li>
               <li>Senior driving course discount.</li>
               <li>Low-mileage discount.</li>
@@ -71,7 +71,7 @@ export default function SpecialtyInsuranceCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Insurance review checklist (yearly)</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Re-shop homeowners + auto with 3 quotes.</li>
               <li>Add umbrella if you have assets.</li>
               <li>Check flood risk at floodsmart.gov.</li>
@@ -85,7 +85,7 @@ export default function SpecialtyInsuranceCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground">An independent insurance broker (NOT a captive agent for one company) can shop multiple insurers. Often free to you. Search "[your area] independent insurance agent".</p>
+            <p className="text-base text-muted-foreground">An independent insurance broker (NOT a captive agent for one company) can shop multiple insurers. Often free to you. Search "[your area] independent insurance agent".</p>
           </CardContent>
         </Card>
       </main>

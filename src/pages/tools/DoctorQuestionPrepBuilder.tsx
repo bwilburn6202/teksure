@@ -103,7 +103,7 @@ export default function DoctorQuestionPrepBuilder() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Doctor Visit Question Builder | TekSure"
         description="Prepare for your doctor's appointment. Build a list of questions, jot down symptoms and medications, and print it to take with you."
@@ -112,10 +112,10 @@ export default function DoctorQuestionPrepBuilder() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Stethoscope className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Doctor Visit Prep</h1>
+            <Stethoscope className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Doctor Visit Prep</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Walk into your appointment confident. Pick the visit type, customize your questions, and print the list to take with you.
           </p>
         </div>
@@ -130,7 +130,7 @@ export default function DoctorQuestionPrepBuilder() {
               {(Object.keys(VISIT_TYPES) as VisitType[]).map(t => (
                 <Button key={t} size="lg" variant="outline" className="h-auto py-4 px-3 text-left flex flex-col items-start" onClick={() => pickVisitType(t)}>
                   <span className="text-xl mb-1">{VISIT_TYPES[t].emoji}</span>
-                  <span className="text-sm font-semibold text-gray-900">{VISIT_TYPES[t].label}</span>
+                  <span className="text-base font-semibold text-foreground">{VISIT_TYPES[t].label}</span>
                 </Button>
               ))}
             </CardContent>
@@ -145,7 +145,7 @@ export default function DoctorQuestionPrepBuilder() {
               <CardHeader className="pb-2">
                 <CardTitle className="text-lg flex items-center justify-between">
                   <span>{VISIT_TYPES[visitType].emoji} {VISIT_TYPES[visitType].label}</span>
-                  <button onClick={reset} className="text-sm text-blue-600 underline print:hidden">Change</button>
+                  <button onClick={reset} className="text-sm text-info-foreground underline print:hidden">Change</button>
                 </CardTitle>
               </CardHeader>
               <CardContent className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-0">
@@ -173,7 +173,7 @@ export default function DoctorQuestionPrepBuilder() {
                     placeholder="e.g. Knee pain when standing up, started 2 weeks ago"
                     value={symptoms}
                     onChange={e => setSymptoms(e.target.value)}
-                    className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white min-h-[80px]"
+                    className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card min-h-[80px]"
                   />
                 </div>
                 <div>
@@ -183,7 +183,7 @@ export default function DoctorQuestionPrepBuilder() {
                     placeholder="e.g. Lisinopril 10mg daily, Metformin 500mg twice daily, Vitamin D 1000 IU"
                     value={medications}
                     onChange={e => setMedications(e.target.value)}
-                    className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white min-h-[80px]"
+                    className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card min-h-[80px]"
                   />
                 </div>
               </CardContent>
@@ -193,31 +193,31 @@ export default function DoctorQuestionPrepBuilder() {
             <Card className="mb-4 print:shadow-none">
               <CardHeader className="pb-2">
                 <CardTitle className="text-lg flex items-center gap-2">
-                  <PlusCircle className="h-5 w-5 text-blue-600" />
+                  <PlusCircle className="h-5 w-5 text-info-foreground" />
                   My Questions
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 {questions.length === 0 && (
-                  <p className="text-sm text-gray-500 italic mb-3">No questions yet. Add some below.</p>
+                  <p className="text-base text-muted-foreground italic mb-3">No questions yet. Add some below.</p>
                 )}
                 <div className="space-y-2 mb-4">
                   {questions.map((q, i) => (
-                    <div key={q.id} className="border rounded-md p-3 flex items-start justify-between gap-2 bg-white">
+                    <div key={q.id} className="border rounded-md p-3 flex items-start justify-between gap-2 bg-card">
                       <div className="flex-1">
                         <div className="flex items-start gap-2">
-                          <span className="text-blue-600 font-bold shrink-0">{i + 1}.</span>
+                          <span className="text-info-foreground font-bold shrink-0">{i + 1}.</span>
                           <div>
-                            <p className="text-sm text-gray-900">{q.text}</p>
+                            <p className="text-base text-foreground">{q.text}</p>
                             <Badge variant="secondary" className="text-xs mt-1">{q.category}</Badge>
                           </div>
                         </div>
-                        <div className="mt-2 border-t border-dashed border-gray-300 pt-2 hidden print:block">
-                          <span className="text-xs text-gray-400">Doctor's answer:</span>
-                          <div className="mt-1 h-12 border-b border-gray-300"></div>
+                        <div className="mt-2 border-t border-dashed border-border pt-2 hidden print:block">
+                          <span className="text-sm text-muted-foreground">Doctor's answer:</span>
+                          <div className="mt-1 h-12 border-b border-border"></div>
                         </div>
                       </div>
-                      <Button variant="ghost" size="icon" className="shrink-0 text-red-400 hover:text-red-600 print:hidden" onClick={() => removeQuestion(q.id)}>
+                      <Button variant="ghost" size="icon" className="shrink-0 text-danger-foreground hover:text-danger-foreground print:hidden" onClick={() => removeQuestion(q.id)}>
                         <Trash2 className="h-4 w-4" />
                       </Button>
                     </div>
@@ -244,14 +244,14 @@ export default function DoctorQuestionPrepBuilder() {
                 <Printer className="h-4 w-4" />
                 Print to Take With Me
               </Button>
-              <Button variant="ghost" onClick={reset} className="text-gray-500">
+              <Button variant="ghost" onClick={reset} className="text-muted-foreground">
                 Start Over
               </Button>
             </div>
 
-            <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+            <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
               <CardContent className="py-3 px-4">
-                <p className="text-sm text-blue-800">
+                <p className="text-base text-info-foreground">
                   <span className="font-semibold">Tip: </span>
                   Bring a friend or family member if you can — a second set of ears helps you remember what was said and ask questions you might forget.
                 </p>
@@ -260,6 +260,6 @@ export default function DoctorQuestionPrepBuilder() {
           </>
         )}
       </div>
-    </div>
+    </main>
   );
 }

@@ -19,7 +19,7 @@ export default function StarlinkRVInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Starlink?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Satellite internet from SpaceX.</li>
               <li>Works almost anywhere with sky view.</li>
               <li>High-speed (50–250 Mbps).</li>
@@ -33,7 +33,7 @@ export default function StarlinkRVInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Starlink Roam (Mobile) — $50–$165/month.</li>
               <li>Mini ($499 hardware) — small dish.</li>
               <li>Standard ($349 hardware) — full size.</li>
@@ -47,7 +47,7 @@ export default function StarlinkRVInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup process</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Order from Starlink.com.</li>
               <li>Box arrives in week — dish + router.</li>
               <li>Place dish outside RV with sky view.</li>
@@ -61,7 +61,7 @@ export default function StarlinkRVInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for these RVers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Full-time RVers needing reliable work-from-RV.</li>
               <li>Those camping in remote areas.</li>
               <li>Heavy streaming users.</li>
@@ -75,7 +75,7 @@ export default function StarlinkRVInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cellular alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>T-Mobile Home Internet — $50/month.</li>
               <li>Verizon LTE Internet — $60/month.</li>
               <li>Hotspot from cell phone.</li>
@@ -89,7 +89,7 @@ export default function StarlinkRVInternet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When Starlink shines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Remote campgrounds with no cell.</li>
               <li>National park interior camping.</li>
               <li>Boondocking in deserts.</li>
@@ -103,7 +103,7 @@ export default function StarlinkRVInternet() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cellular first, Starlink later</h3>
-            <p className="text-sm text-muted-foreground">For most senior RVers, start with a T-Mobile Home Internet hotspot ($50/month) and a Verizon SIM as backup. Most RV destinations have cellular coverage. If you find yourself frequently in remote areas without service, then add Starlink. Many seniors use both — cell first, Starlink for remote stops. Combined cost about $200/month for unlimited connectivity anywhere.</p>
+            <p className="text-base text-muted-foreground">For most senior RVers, start with a T-Mobile Home Internet hotspot ($50/month) and a Verizon SIM as backup. Most RV destinations have cellular coverage. If you find yourself frequently in remote areas without service, then add Starlink. Many seniors use both — cell first, Starlink for remote stops. Combined cost about $200/month for unlimited connectivity anywhere.</p>
           </CardContent>
         </Card>
       </main>

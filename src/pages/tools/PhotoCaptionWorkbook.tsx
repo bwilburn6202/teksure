@@ -50,7 +50,7 @@ export default function PhotoCaptionWorkbook() {
   const scanned = photos.filter(p => p.scanned).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Photo Caption Workbook | TekSure"
         description="Record what is in each old family photo before details fade. Description, people, place, story. Print as a record to keep with the photos."
@@ -59,10 +59,10 @@ export default function PhotoCaptionWorkbook() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <ImageIcon className="h-7 w-7 text-amber-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Photo Caption Workbook</h1>
+            <ImageIcon className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Photo Caption Workbook</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Old photos lose their stories the longer they sit unlabeled. Use this to capture who, when, and where for each one.
           </p>
         </div>
@@ -72,14 +72,14 @@ export default function PhotoCaptionWorkbook() {
           <div className="grid grid-cols-2 gap-3 mb-4">
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Photos captioned</p>
-                <p className="text-xl font-bold text-amber-700">{photos.length}</p>
+                <p className="text-sm text-muted-foreground">Photos captioned</p>
+                <p className="text-xl font-bold text-warn-foreground">{photos.length}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Scanned to digital</p>
-                <p className="text-xl font-bold text-green-700">{scanned} / {photos.length}</p>
+                <p className="text-sm text-muted-foreground">Scanned to digital</p>
+                <p className="text-xl font-bold text-success-foreground">{scanned} / {photos.length}</p>
               </CardContent>
             </Card>
           </div>
@@ -89,7 +89,7 @@ export default function PhotoCaptionWorkbook() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-amber-600" />
+              <PlusCircle className="h-5 w-5 text-warn-foreground" />
               Caption a Photo
             </CardTitle>
           </CardHeader>
@@ -114,9 +114,9 @@ export default function PhotoCaptionWorkbook() {
             </div>
             <div>
               <Label htmlFor="ph-story" className="text-base font-medium">Story or context (optional)</Label>
-              <textarea id="ph-story" rows={3} placeholder="What was happening? Why was the photo taken? Anything fun about it?" value={form.story} onChange={e => setForm(f => ({ ...f, story: e.target.value }))} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white" />
+              <textarea id="ph-story" rows={3} placeholder="What was happening? Why was the photo taken? Anything fun about it?" value={form.story} onChange={e => setForm(f => ({ ...f, story: e.target.value }))} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base">Save Caption</Button>
           </CardContent>
         </Card>
@@ -132,10 +132,10 @@ export default function PhotoCaptionWorkbook() {
 
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <ImageIcon className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <ImageIcon className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No captions yet.</p>
-              <p className="text-sm mt-1">Pull out one photo and start. The first is the hardest.</p>
+              <p className="text-base mt-1">Pull out one photo and start. The first is the hardest.</p>
             </CardContent>
           </Card>
         ) : (
@@ -145,16 +145,16 @@ export default function PhotoCaptionWorkbook() {
                 <CardContent className="py-3 px-4">
                   <div className="flex items-start justify-between gap-2 mb-2">
                     <div className="flex-1 min-w-0">
-                      <p className="font-semibold text-gray-900 text-base">{p.description}</p>
+                      <p className="font-semibold text-foreground text-base">{p.description}</p>
                       <div className="flex flex-wrap gap-2 mt-1">
                         {p.yearOrDate && <Badge variant="secondary" className="text-xs">{p.yearOrDate}</Badge>}
                         {p.place && <Badge variant="outline" className="text-xs">{p.place}</Badge>}
-                        {p.scanned && <Badge className="text-xs bg-green-100 text-green-700">✓ Scanned</Badge>}
+                        {p.scanned && <Badge className="text-xs bg-success text-success-foreground">✓ Scanned</Badge>}
                       </div>
-                      {p.people && <p className="text-sm text-gray-700 mt-1"><span className="font-semibold">People:</span> {p.people}</p>}
-                      {p.story && <p className="text-sm text-gray-600 italic mt-1">{p.story}</p>}
+                      {p.people && <p className="text-base text-foreground mt-1"><span className="font-semibold">People:</span> {p.people}</p>}
+                      {p.story && <p className="text-base text-muted-foreground italic mt-1">{p.story}</p>}
                     </div>
-                    <Button variant="ghost" size="icon" onClick={() => remove(p.id)} className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden">
+                    <Button variant="ghost" size="icon" onClick={() => remove(p.id)} className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden">
                       <Trash2 className="h-3 w-3" />
                     </Button>
                   </div>
@@ -168,15 +168,15 @@ export default function PhotoCaptionWorkbook() {
           </div>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Print this list and tape it to the back of the photo box. Even if you never finish scanning, the captions alone are a gift to your family.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

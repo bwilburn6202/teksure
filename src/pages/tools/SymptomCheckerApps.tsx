@@ -32,7 +32,7 @@ export default function SymptomCheckerApps() {
               <AlertTriangle className="w-6 h-6 text-destructive shrink-0" />
               <div>
                 <h2 className="font-bold mb-1">Call 911 if</h2>
-                <ul className="text-sm list-disc pl-5">
+                <ul className="text-base list-disc pl-5">
                   <li>Chest pain, shortness of breath, or pressure.</li>
                   <li>One-sided weakness, slurred speech, droopy face (stroke).</li>
                   <li>Severe head injury after fall.</li>
@@ -40,7 +40,7 @@ export default function SymptomCheckerApps() {
                   <li>Sudden severe headache "worst ever".</li>
                   <li>Major bleeding.</li>
                 </ul>
-                <p className="text-sm mt-2">Don\'t open an app. Call 911.</p>
+                <p className="text-base mt-2">Don\'t open an app. Call 911.</p>
               </div>
             </div>
           </CardContent>
@@ -52,10 +52,10 @@ export default function SymptomCheckerApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -64,7 +64,7 @@ export default function SymptomCheckerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Better than symptom checkers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Your patient portal\'s message feature</strong> — message your real doctor. Free, replies usually in 1-2 days.</li>
               <li><strong>Telehealth (Teladoc, Amwell)</strong> — 30-minute video call with real doctor. Can prescribe.</li>
               <li><strong>Pharmacist consultation</strong> — free at every pharmacy. Excellent for "should I see a doctor?" advice.</li>
@@ -76,7 +76,7 @@ export default function SymptomCheckerApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Use AI carefully</h3>
-            <p className="text-sm text-muted-foreground">Don\'t ask ChatGPT "Do I have cancer?" — it\'s not a diagnostic tool. DO ask it: "Help me prepare 5 questions to ask my doctor about [condition]" or "Translate this lab report into plain English". Good companion, not a substitute.</p>
+            <p className="text-base text-muted-foreground">Don\'t ask ChatGPT "Do I have cancer?" — it\'s not a diagnostic tool. DO ask it: "Help me prepare 5 questions to ask my doctor about [condition]" or "Translate this lab report into plain English". Good companion, not a substitute.</p>
           </CardContent>
         </Card>
       </main>

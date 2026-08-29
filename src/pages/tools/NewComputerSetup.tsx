@@ -93,7 +93,7 @@ export default function NewComputerSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-cyan-500/10 rounded-full">
-                <Laptop className="h-8 w-8 text-cyan-600" />
+                <Laptop className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">New Computer Setup</h1>
@@ -108,21 +108,21 @@ export default function NewComputerSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your system</p>
+              <p className="text-base font-semibold mb-3">Pick your system</p>
               <div className="grid sm:grid-cols-3 gap-2">
                 {SYSTEMS.map(s => (
                   <button key={s.id} onClick={() => switchSystem(s.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       system === s.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{s.label}</p>
+                    <p className="font-medium text-base">{s.label}</p>
                   </button>
                 ))}
               </div>
             </CardContent>
           </Card>
 
-          <p className="text-sm text-muted-foreground mb-3">{done.size} of {items.length} done</p>
+          <p className="text-base text-muted-foreground mb-3">{done.size} of {items.length} done</p>
 
           <Card className="border-border mb-6">
             <CardContent className="p-5">
@@ -134,8 +134,8 @@ export default function NewComputerSetup() {
                     }`}>
                     <Checkbox checked={done.has(item.id)} onCheckedChange={() => toggle(item.id)} className="mt-1" />
                     <div className="flex-1">
-                      <p className={`font-medium text-sm ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{item.detail}</p>
+                      <p className={`font-medium text-base ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{item.detail}</p>
                     </div>
                   </label>
                 ))}
@@ -144,11 +144,11 @@ export default function NewComputerSetup() {
           </Card>
 
           {done.size === items.length && (
-            <Card className="border-green-300 bg-green-50 dark:bg-green-950/20 mb-6">
+            <Card className="border-success-foreground/25 bg-success mb-6">
               <CardContent className="p-5 text-center">
-                <Badge className="mb-2 bg-green-100 text-green-700 border-green-300">All set up</Badge>
+                <Badge className="mb-2 bg-success text-success-foreground border-success-foreground/25">All set up</Badge>
                 <p className="font-semibold">Your computer is ready.</p>
-                <p className="text-sm text-muted-foreground mt-1">Print a Tech Cheatsheet next so common tasks are at hand.</p>
+                <p className="text-base text-muted-foreground mt-1">Print a Tech Cheatsheet next so common tasks are at hand.</p>
                 <Button asChild variant="outline" size="sm" className="mt-3">
                   <Link to="/tools/tech-cheatsheet-generator">Tech Cheatsheet Generator</Link>
                 </Button>
@@ -160,16 +160,16 @@ export default function NewComputerSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/speed-up-device" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Speed Up Your Device</p>
-                <p className="text-xs text-muted-foreground mt-0.5">When the new PC starts feeling slow.</p>
+                <p className="font-medium text-base">Speed Up Your Device</p>
+                <p className="text-sm text-muted-foreground mt-0.5">When the new PC starts feeling slow.</p>
               </Link>
               <Link to="/tools/backup-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Backup Wizard</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Make sure backups are running.</p>
+                <p className="font-medium text-base">Backup Wizard</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Make sure backups are running.</p>
               </Link>
               <Link to="/tools/free-office-suite" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Free Office Suite</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Don\'t buy Office.</p>
+                <p className="font-medium text-base">Free Office Suite</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Don\'t buy Office.</p>
               </Link>
             </div>
           </div>

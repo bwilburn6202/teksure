@@ -297,19 +297,19 @@ function PostCard({ post, featured = false }: { post: BlogPost; featured?: boole
           <div className="flex-1">
             <div className="flex items-center gap-2 flex-wrap mb-3">
               {!featured && <post.icon className="h-7 w-7 text-primary mr-1" />}
-              <span className={`text-xs font-medium px-2.5 py-1 rounded-lg ${CATEGORY_COLORS[post.category] || 'bg-muted text-muted-foreground'}`}>
+              <span className={`text-sm font-medium px-2.5 py-1 rounded-lg ${CATEGORY_COLORS[post.category] || 'bg-muted text-muted-foreground'}`}>
                 {post.category}
               </span>
               {post.featured && <Badge className="text-xs font-medium bg-primary/10 text-primary border-0">Featured</Badge>}
-              <span className="text-xs text-muted-foreground flex items-center gap-1 ml-auto">
+              <span className="text-sm text-muted-foreground flex items-center gap-1 ml-auto">
                 <Clock className="h-3 w-3" /> {post.readTime}
               </span>
-              <span className="text-xs text-muted-foreground">
+              <span className="text-sm text-muted-foreground">
                 {new Date(post.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short' })}
               </span>
             </div>
             <h2 className={`font-semibold leading-snug mb-2 ${featured ? 'text-2xl' : 'text-base'}`}>{post.title}</h2>
-            <p className="text-sm text-muted-foreground leading-relaxed mb-4">{post.excerpt}</p>
+            <p className="text-base text-muted-foreground leading-relaxed mb-4">{post.excerpt}</p>
             <Link
               to={`/blog/${post.slug}`}
               className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
@@ -332,19 +332,19 @@ function PostDetail({ post }: { post: BlogPost }) {
       </Link>
       <div className="flex items-center gap-2 mb-3">
         <span className={`text-xs font-medium px-2 py-0.5 rounded-full ${CATEGORY_COLORS[post.category] || 'bg-muted text-muted-foreground'}`}>{post.category}</span>
-        <span className="text-xs text-muted-foreground flex items-center gap-1"><Clock className="h-3 w-3" /> {post.readTime} read</span>
-        <span className="text-xs text-muted-foreground ml-auto">{new Date(post.date).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
+        <span className="text-sm text-muted-foreground flex items-center gap-1"><Clock className="h-3 w-3" /> {post.readTime} read</span>
+        <span className="text-sm text-muted-foreground ml-auto">{new Date(post.date).toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
       </div>
       <post.icon className="h-12 w-12 text-primary mb-4" />
       <h1 className="text-2xl md:text-3xl font-bold mb-6 leading-tight">{post.title}</h1>
       <p className="text-muted-foreground leading-relaxed mb-6 text-base border-l-4 border-primary/40 pl-4 italic">{post.excerpt}</p>
       <div className="space-y-4">
         {post.content.map((para, i) => (
-          <p key={i} className="text-sm leading-relaxed text-foreground/90">{para}</p>
+          <p key={i} className="text-base leading-relaxed text-foreground/90">{para}</p>
         ))}
       </div>
       <div className="mt-8 pt-6 border-t border-border">
-        <p className="text-sm text-muted-foreground mb-3">Keep learning with TekSure guides:</p>
+        <p className="text-base text-muted-foreground mb-3">Keep learning with TekSure guides:</p>
         <Button asChild variant="outline" className="gap-2">
           <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse all guides</Link>
         </Button>

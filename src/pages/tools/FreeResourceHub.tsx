@@ -864,7 +864,7 @@ export default function FreeResourceHub() {
               url="/tools/free-resource-hub"
             />
           </div>
-          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-emerald-100 to-green-200 text-emerald-700 dark:from-emerald-900/50 dark:to-green-900/50 dark:text-emerald-300 mb-5 shadow-sm">
+          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-emerald-100 to-green-200 text-success-foreground dark:from-emerald-900/50 dark:to-green-900/50 mb-5 shadow-sm">
             <Gift className="h-12 w-12" aria-hidden="true" />
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3">
@@ -882,7 +882,7 @@ export default function FreeResourceHub() {
         {!selected && (
           <div>
             <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-              <Search className="h-6 w-6 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+              <Search className="h-6 w-6 text-success-foreground " aria-hidden="true" />
               Pick a category
             </h2>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
@@ -900,13 +900,13 @@ export default function FreeResourceHub() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <h3 className="text-lg font-bold mb-1 flex items-center gap-2">
-                          <Icon className="h-5 w-5 text-emerald-600 dark:text-emerald-400 shrink-0" aria-hidden="true" />
+                          <Icon className="h-5 w-5 text-success-foreground shrink-0" aria-hidden="true" />
                           {cat.title}
                         </h3>
-                        <p className="text-sm text-muted-foreground leading-snug">
+                        <p className="text-base text-muted-foreground leading-snug">
                           {cat.tagline}
                         </p>
-                        <p className="text-xs text-muted-foreground mt-2 font-medium">
+                        <p className="text-sm text-muted-foreground mt-2 font-medium">
                           {cat.resources.length} resources
                         </p>
                       </div>
@@ -919,27 +919,27 @@ export default function FreeResourceHub() {
             {/* ── Universal warning cards (shown before detail is picked) ── */}
             <div className="grid gap-4 mt-10 sm:grid-cols-2">
               {/* How to spot a fake "free" site */}
-              <Card className="border-2 border-red-300 bg-red-50 dark:bg-red-950/30 dark:border-red-800">
+              <Card className="border-2 border-danger-foreground/25 bg-danger ">
                 <CardContent className="p-5">
-                  <h3 className="text-lg font-bold mb-3 flex items-center gap-2 text-red-900 dark:text-red-200">
+                  <h3 className="text-lg font-bold mb-3 flex items-center gap-2 text-danger-foreground ">
                     <ShieldAlert className="h-6 w-6" aria-hidden="true" />
                     How to spot a fake "free" site
                   </h3>
-                  <ul className="space-y-2 text-base text-red-900 dark:text-red-100">
+                  <ul className="space-y-2 text-base text-danger-foreground ">
                     <li className="flex items-start gap-2">
-                      <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 text-red-600 dark:text-red-400" aria-hidden="true" />
+                      <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 text-danger-foreground " aria-hidden="true" />
                       <span>Pirated movies, software, or books — the downloads are almost always bundled with malware.</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 text-red-600 dark:text-red-400" aria-hidden="true" />
+                      <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 text-danger-foreground " aria-hidden="true" />
                       <span>An offer that sounds too good to be true — a "free" iPhone, shopping card, or vacation is a scam.</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 text-red-600 dark:text-red-400" aria-hidden="true" />
+                      <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 text-danger-foreground " aria-hidden="true" />
                       <span>A "free" trial that demands a credit card. Most auto-charge on day 8 and count on you forgetting.</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 text-red-600 dark:text-red-400" aria-hidden="true" />
+                      <AlertTriangle className="h-5 w-5 shrink-0 mt-0.5 text-danger-foreground " aria-hidden="true" />
                       <span>A site with misspelled brand names, no contact page, and no U.S. address — close the tab.</span>
                     </li>
                   </ul>
@@ -947,26 +947,26 @@ export default function FreeResourceHub() {
               </Card>
 
               {/* Support these free services */}
-              <Card className="border-2 border-emerald-300 bg-emerald-50 dark:bg-emerald-950/30 dark:border-emerald-800">
+              <Card className="border-2 border-success-foreground/25 bg-success ">
                 <CardContent className="p-5">
-                  <h3 className="text-lg font-bold mb-3 flex items-center gap-2 text-emerald-900 dark:text-emerald-200">
+                  <h3 className="text-lg font-bold mb-3 flex items-center gap-2 text-success-foreground ">
                     <HandCoins className="h-6 w-6" aria-hidden="true" />
                     Support these free services
                   </h3>
-                  <p className="text-base text-emerald-900 dark:text-emerald-100 leading-relaxed">
+                  <p className="text-base text-success-foreground leading-relaxed">
                     If a nonprofit, library, or open-source project has saved you money, consider a small donation when you can. It is never required — but projects like Wikipedia, Project Gutenberg, and Internet Archive run on donations from people like you. Even $5 once a year helps keep them free for everyone.
                   </p>
                 </CardContent>
               </Card>
 
               {/* Ask your library */}
-              <Card className="border-2 border-blue-300 bg-blue-50 dark:bg-blue-950/30 dark:border-blue-800 sm:col-span-2">
+              <Card className="border-2 border-info-foreground/25 bg-info sm:col-span-2">
                 <CardContent className="p-5">
-                  <h3 className="text-lg font-bold mb-3 flex items-center gap-2 text-blue-900 dark:text-blue-200">
+                  <h3 className="text-lg font-bold mb-3 flex items-center gap-2 text-info-foreground ">
                     <Library className="h-6 w-6" aria-hidden="true" />
                     Ask your local library
                   </h3>
-                  <p className="text-base text-blue-900 dark:text-blue-100 leading-relaxed">
+                  <p className="text-base text-info-foreground leading-relaxed">
                     Librarians are a free research help desk. Stop by or call your branch — they can help you sign up for Libby, find free classes, print forms, search old newspapers, and answer almost any question. Many libraries also loan out laptops, hotspots, and even telescopes and musical instruments.
                   </p>
                 </CardContent>
@@ -990,14 +990,14 @@ export default function FreeResourceHub() {
             </Button>
 
             {/* Detail header */}
-            <Card className="mb-6 border-2 border-emerald-300 bg-emerald-50/70 dark:border-emerald-800 dark:bg-emerald-950/30">
+            <Card className="mb-6 border-2 border-success-foreground/25 bg-emerald-50/70 dark:bg-emerald-950/30">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 text-5xl leading-none" aria-hidden="true">
                     {selected.emoji}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-emerald-900 dark:text-emerald-200">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-success-foreground ">
                       {selected.title}
                     </h2>
                     <p className="text-base text-emerald-900/90 dark:text-emerald-100/90 mb-2 font-medium">
@@ -1022,7 +1022,7 @@ export default function FreeResourceHub() {
                         <h3 className="text-lg font-bold leading-tight">{r.name}</h3>
                         <Badge
                           variant="secondary"
-                          className="bg-emerald-100 text-emerald-900 dark:bg-emerald-900/40 dark:text-emerald-200 shrink-0"
+                          className="bg-success text-success-foreground shrink-0"
                         >
                           Free
                         </Badge>
@@ -1041,7 +1041,7 @@ export default function FreeResourceHub() {
                         </div>
                         {r.caveat && (
                           <div>
-                            <dt className="font-semibold text-amber-700 dark:text-amber-400 flex items-center gap-1">
+                            <dt className="font-semibold text-warn-foreground flex items-center gap-1">
                               <AlertTriangle className="h-4 w-4" aria-hidden="true" />
                               Heads-up
                             </dt>
@@ -1080,7 +1080,7 @@ export default function FreeResourceHub() {
         {/* ── FAQ ── */}
         <section className="mt-12">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-            <HelpCircle className="h-6 w-6 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+            <HelpCircle className="h-6 w-6 text-success-foreground " aria-hidden="true" />
             Frequently asked questions
           </h2>
           <Accordion type="single" collapsible className="w-full">
@@ -1098,9 +1098,9 @@ export default function FreeResourceHub() {
         </section>
 
         {/* ── Trust reminder ── */}
-        <Alert className="mt-10 border-2 border-emerald-300 bg-emerald-50 dark:bg-emerald-950/30 dark:border-emerald-800">
-          <CheckCircle2 className="h-5 w-5 text-emerald-700 dark:text-emerald-400" aria-hidden="true" />
-          <AlertTitle className="text-base font-semibold text-emerald-900 dark:text-emerald-200">
+        <Alert className="mt-10 border-2 border-success-foreground/25 bg-success ">
+          <CheckCircle2 className="h-5 w-5 text-success-foreground " aria-hidden="true" />
+          <AlertTitle className="text-base font-semibold text-success-foreground ">
             Every link on this page goes straight to the official source.
           </AlertTitle>
           <AlertDescription className="text-base text-emerald-900/90 dark:text-emerald-100/90 leading-relaxed">
@@ -1111,7 +1111,7 @@ export default function FreeResourceHub() {
         {/* ── Related tools ── */}
         <section className="mt-10">
           <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-            <Info className="h-6 w-6 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+            <Info className="h-6 w-6 text-success-foreground " aria-hidden="true" />
             Related TekSure tools
           </h2>
           <div className="grid gap-3 sm:grid-cols-2">

@@ -22,7 +22,7 @@ export default function SeniorSeeingAIApp() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Identifies money</h2><p>Point at a bill — &ldquo;20 dollars.&rdquo; Helps with low vision.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Reads barcodes</h2><p>Scan grocery items — app says product name and price.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Recognizes faces</h2><p>Identifies family members you&apos;ve trained the app on.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Even with good vision, this saves time on small print and pill bottles.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Even with good vision, this saves time on small print and pill bottles.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

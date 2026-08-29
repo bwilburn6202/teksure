@@ -18,11 +18,11 @@ export default function SeniorAccountSimplification() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">List your accounts</h2><p>Use a password manager. It shows every account in one place.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">JustDeleteMe</h2><p>FREE. justdeleteme.xyz. Direct links to close any major service&apos;s account.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common closures</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Old retailers (Macy&apos;s, Target you don&apos;t use)</li><li>MySpace, old social</li><li>Yahoo if you&apos;re only on Gmail</li><li>Old stock accounts</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common closures</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Old retailers (Macy&apos;s, Target you don&apos;t use)</li><li>MySpace, old social</li><li>Yahoo if you&apos;re only on Gmail</li><li>Old stock accounts</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out</h2><p>Don&apos;t close email accounts. Banks send recovery info there.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Plan inheritance</h2><p>Tell family which accounts to close after you. Or use Apple Legacy Contact.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cancel paid services</h2><p>Settings → Subscriptions on phone. Or call to cancel cable, gym, etc.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Going from 50 accounts to 15 simplifies your life dramatically.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Going from 50 accounts to 15 simplifies your life dramatically.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

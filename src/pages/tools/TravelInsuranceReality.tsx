@@ -19,7 +19,7 @@ export default function TravelInsuranceReality() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to ALWAYS buy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cruise</strong> — cancellation rules are brutal. Pre-existing conditions are big risk for seniors.</li>
               <li><strong>International trips</strong> over $3,000.</li>
               <li><strong>Travel outside US</strong> — Medicare doesn&apos;t cover overseas. Get medical evac coverage.</li>
@@ -32,7 +32,7 @@ export default function TravelInsuranceReality() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to skip</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Domestic flight under $500.</li>
               <li>Refundable hotel + flexible flight already.</li>
               <li>You have a credit card with built-in trip protection (see below).</li>
@@ -44,20 +44,20 @@ export default function TravelInsuranceReality() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Credit cards with built-in coverage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Chase Sapphire Preferred</strong> ($95/yr) — trip cancellation up to $10,000, baggage, rental car.</li>
               <li><strong>Chase Sapphire Reserve</strong> ($550/yr) — same plus medical evac, trip delay.</li>
               <li><strong>AmEx Platinum</strong> ($695/yr) — premium trip and medical coverage.</li>
               <li><strong>Capital One Venture X</strong> ($395/yr) — trip cancellation, lost luggage.</li>
             </ul>
-            <p className="text-sm mt-3">Catch — you must pay for the trip with that card. Read the benefits guide BEFORE the trip.</p>
+            <p className="text-base mt-3">Catch — you must pay for the trip with that card. Read the benefits guide BEFORE the trip.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best policies (if you do buy)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Allianz Travel</strong> — biggest. Annual plan good for frequent travelers.</li>
               <li><strong>Travel Guard (AIG)</strong> — strong cruise coverage.</li>
               <li><strong>World Nomads</strong> — best for adventure trips.</li>
@@ -70,14 +70,14 @@ export default function TravelInsuranceReality() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">"Cancel for any reason" rider</h2>
-            <p className="text-sm">Standard insurance only covers listed reasons (illness, weather, etc.). "CFAR" (Cancel For Any Reason) lets you cancel for ANY reason and get 50-75% back. Adds 40-50% to premium. Worth it for big trips when you&apos;re unsure.</p>
+            <p className="text-base">Standard insurance only covers listed reasons (illness, weather, etc.). "CFAR" (Cancel For Any Reason) lets you cancel for ANY reason and get 50-75% back. Adds 40-50% to premium. Worth it for big trips when you&apos;re unsure.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Airline owes you anyway</h3>
-            <p className="text-sm text-muted-foreground">If a domestic US airline cancels your flight or delays it more than 3 hours, you&apos;re entitled to a full refund — even on non-refundable tickets. DOT rule, 2024. Don&apos;t accept a voucher unless you want one.</p>
+            <p className="text-base text-muted-foreground">If a domestic US airline cancels your flight or delays it more than 3 hours, you&apos;re entitled to a full refund — even on non-refundable tickets. DOT rule, 2024. Don&apos;t accept a voucher unless you want one.</p>
           </CardContent>
         </Card>
       </main>

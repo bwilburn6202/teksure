@@ -22,7 +22,7 @@ export default function SeniorPlantSensors() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><p>Easy answer to &ldquo;is it time to water?&rdquo; Saves plants from over/underwatering.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Self-watering pots</h2><p>$30. Reservoir lasts 2-4 weeks. Travel-friendly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Greenhouse</h2><p>$200 small greenhouse. Year-round growing.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Sustee sticks $15. No batteries. Foolproof for seniors.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Sustee sticks $15. No batteries. Foolproof for seniors.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

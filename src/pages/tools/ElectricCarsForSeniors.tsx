@@ -30,10 +30,10 @@ export default function ElectricCarsForSeniors() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{e.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{e.cost}</span>
+                  <span className="text-base font-semibold text-primary">{e.cost}</span>
                 </div>
-                <p className="text-sm">{e.best}</p>
-                <p className="text-sm text-muted-foreground">{e.good}</p>
+                <p className="text-base">{e.best}</p>
+                <p className="text-base text-muted-foreground">{e.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function ElectricCarsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">EV pros for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No gas station trips.</li>
               <li>Quieter ride.</li>
               <li>Cheaper to operate (electricity vs gas).</li>
@@ -56,7 +56,7 @@ export default function ElectricCarsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">EV cons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Higher upfront cost.</li>
               <li>Charging time vs gas pump.</li>
               <li>Range anxiety road trips.</li>
@@ -70,7 +70,7 @@ export default function ElectricCarsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Charging options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Level 1</strong> — regular outlet, slow.</li>
               <li><strong>Level 2 home</strong> — $1,500 install.</li>
               <li><strong>Tesla Superchargers</strong> — fast but Tesla-only.</li>
@@ -84,7 +84,7 @@ export default function ElectricCarsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: Tesla Model 3</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$40K base price.</li>
               <li>$7,500 tax credit eligible.</li>
               <li>Best supercharger network.</li>
@@ -99,7 +99,7 @@ export default function ElectricCarsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When EV NOT for you</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apartment without charging.</li>
               <li>Frequent long road trips.</li>
               <li>Cold-climate worry (battery range).</li>
@@ -113,7 +113,7 @@ export default function ElectricCarsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hybrid alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Toyota Prius / RAV4 Hybrid.</li>
               <li>Honda CR-V Hybrid.</li>
               <li>Best of both worlds.</li>
@@ -127,7 +127,7 @@ export default function ElectricCarsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Test drive first</h3>
-            <p className="text-sm text-muted-foreground">EVs feel different — instant acceleration. Many love it. Some find unsettling. Test drive 30 minutes. Use city + highway. Try home charger before buying. Tax credit eligibility check on irs.gov. Many Costco / membership groups have EV programs. AARP guides on EVs available.</p>
+            <p className="text-base text-muted-foreground">EVs feel different — instant acceleration. Many love it. Some find unsettling. Test drive 30 minutes. Use city + highway. Try home charger before buying. Tax credit eligibility check on irs.gov. Many Costco / membership groups have EV programs. AARP guides on EVs available.</p>
           </CardContent>
         </Card>
       </main>

@@ -137,8 +137,8 @@ export default function ChromebookHub() {
         <section className="border-b">
           <div className="container py-12 md:py-20 max-w-4xl">
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-14 w-14 rounded-2xl bg-sky-50 dark:bg-sky-950/30 flex items-center justify-center flex-shrink-0">
-                <Laptop className="h-7 w-7 text-sky-600" aria-hidden="true" />
+              <div className="h-14 w-14 rounded-2xl bg-info flex items-center justify-center flex-shrink-0">
+                <Laptop className="h-7 w-7 text-info-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Device Guide</Badge>
             </div>
@@ -197,10 +197,10 @@ export default function ChromebookHub() {
           </p>
 
           <div className="grid gap-4 md:grid-cols-2">
-            <Card className="border-emerald-200 dark:border-emerald-900">
+            <Card className="border-success-foreground/25 ">
               <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+                  <CheckCircle2 className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                   Yes — get one
                 </CardTitle>
               </CardHeader>
@@ -208,7 +208,7 @@ export default function ChromebookHub() {
                 <ul className="space-y-3">
                   {yesChecks.map((t) => (
                     <li key={t} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-5 w-5 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
+                      <CheckCircle2 className="h-5 w-5 text-success-foreground mt-1 flex-shrink-0" aria-hidden="true" />
                       <span className="text-base leading-relaxed">{t}</span>
                     </li>
                   ))}
@@ -216,10 +216,10 @@ export default function ChromebookHub() {
               </CardContent>
             </Card>
 
-            <Card className="border-rose-200 dark:border-rose-900">
+            <Card className="border-danger-foreground/25 ">
               <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
-                  <XCircle className="h-5 w-5 text-rose-600" aria-hidden="true" />
+                  <XCircle className="h-5 w-5 text-danger-foreground" aria-hidden="true" />
                   Consider alternatives
                 </CardTitle>
               </CardHeader>
@@ -227,7 +227,7 @@ export default function ChromebookHub() {
                 <ul className="space-y-3">
                   {noChecks.map((t) => (
                     <li key={t} className="flex items-start gap-3">
-                      <XCircle className="h-5 w-5 text-rose-600 mt-1 flex-shrink-0" aria-hidden="true" />
+                      <XCircle className="h-5 w-5 text-danger-foreground mt-1 flex-shrink-0" aria-hidden="true" />
                       <span className="text-base leading-relaxed">{t}</span>
                     </li>
                   ))}
@@ -253,8 +253,8 @@ export default function ChromebookHub() {
                 <Card key={r.model}>
                   <CardContent className="pt-6">
                     <div className="flex items-start gap-4">
-                      <div className="h-12 w-12 rounded-xl bg-sky-50 dark:bg-sky-950/30 flex items-center justify-center flex-shrink-0">
-                        <Icon className="h-6 w-6 text-sky-600" aria-hidden="true" />
+                      <div className="h-12 w-12 rounded-xl bg-info flex items-center justify-center flex-shrink-0">
+                        <Icon className="h-6 w-6 text-info-foreground" aria-hidden="true" />
                       </div>
                       <div className="flex-1">
                         <div className="flex flex-wrap items-center gap-2 mb-1">
@@ -286,8 +286,8 @@ export default function ChromebookHub() {
                 to={`/guides/${g.slug}`}
                 className="group flex items-center gap-4 rounded-2xl border bg-card p-5 transition hover:border-primary hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary"
               >
-                <div className="h-12 w-12 rounded-xl bg-sky-50 dark:bg-sky-950/30 flex items-center justify-center flex-shrink-0">
-                  <BookOpen className="h-6 w-6 text-sky-600" aria-hidden="true" />
+                <div className="h-12 w-12 rounded-xl bg-info flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="h-6 w-6 text-info-foreground" aria-hidden="true" />
                 </div>
                 <span className="flex-1 font-semibold text-base leading-snug">{g.title}</span>
                 <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary flex-shrink-0" aria-hidden="true" />
@@ -306,10 +306,10 @@ export default function ChromebookHub() {
           </p>
 
           <div className="grid gap-5 md:grid-cols-2">
-            <Card className="border-emerald-200 dark:border-emerald-900">
+            <Card className="border-success-foreground/25 ">
               <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+                  <CheckCircle2 className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                   What works great
                 </CardTitle>
               </CardHeader>
@@ -317,7 +317,7 @@ export default function ChromebookHub() {
                 <ul className="space-y-2">
                   {worksGreat.map((t) => (
                     <li key={t} className="flex items-start gap-2 text-base leading-relaxed">
-                      <span className="text-emerald-600 mt-1" aria-hidden="true">•</span>
+                      <span className="text-success-foreground mt-1" aria-hidden="true">•</span>
                       <span>{t}</span>
                     </li>
                   ))}
@@ -325,10 +325,10 @@ export default function ChromebookHub() {
               </CardContent>
             </Card>
 
-            <Card className="border-rose-200 dark:border-rose-900">
+            <Card className="border-danger-foreground/25 ">
               <CardHeader>
                 <CardTitle className="text-lg flex items-center gap-2">
-                  <XCircle className="h-5 w-5 text-rose-600" aria-hidden="true" />
+                  <XCircle className="h-5 w-5 text-danger-foreground" aria-hidden="true" />
                   What doesn't work
                 </CardTitle>
               </CardHeader>
@@ -336,7 +336,7 @@ export default function ChromebookHub() {
                 <ul className="space-y-2">
                   {doesntWork.map((t) => (
                     <li key={t} className="flex items-start gap-2 text-base leading-relaxed">
-                      <span className="text-rose-600 mt-1" aria-hidden="true">•</span>
+                      <span className="text-danger-foreground mt-1" aria-hidden="true">•</span>
                       <span>{t}</span>
                     </li>
                   ))}
@@ -347,8 +347,8 @@ export default function ChromebookHub() {
 
           <Card className="mt-6 border-2">
             <CardContent className="pt-6 flex gap-4 items-start">
-              <div className="h-12 w-12 rounded-xl bg-violet-50 dark:bg-violet-950/30 flex items-center justify-center flex-shrink-0">
-                <ShieldCheck className="h-6 w-6 text-violet-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <ShieldCheck className="h-6 w-6 text-primary" aria-hidden="true" />
               </div>
               <div>
                 <h3 className="font-bold text-lg mb-1">Built-in security that takes care of itself</h3>
@@ -374,12 +374,12 @@ export default function ChromebookHub() {
               <Card key={t.title}>
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-3">
-                    <div className="h-10 w-10 rounded-xl bg-amber-50 dark:bg-amber-950/30 flex items-center justify-center flex-shrink-0">
-                      <Wrench className="h-5 w-5 text-amber-700" aria-hidden="true" />
+                    <div className="h-10 w-10 rounded-xl bg-warn flex items-center justify-center flex-shrink-0">
+                      <Wrench className="h-5 w-5 text-warn-foreground" aria-hidden="true" />
                     </div>
                     <div>
                       <h3 className="font-bold mb-1">{t.title}</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{t.body}</p>
+                      <p className="text-base text-muted-foreground leading-relaxed">{t.body}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -393,8 +393,8 @@ export default function ChromebookHub() {
           <Card className="border-2">
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 flex items-center justify-center flex-shrink-0">
-                  <Gift className="h-6 w-6 text-emerald-600" aria-hidden="true" />
+                <div className="h-12 w-12 rounded-xl bg-success flex items-center justify-center flex-shrink-0">
+                  <Gift className="h-6 w-6 text-success-foreground" aria-hidden="true" />
                 </div>
                 <CardTitle className="text-2xl">Free Chromebook Programs</CardTitle>
               </div>

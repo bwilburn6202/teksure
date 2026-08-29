@@ -64,7 +64,7 @@ export default function TechAnxiety() {
                   <CardContent className="pt-5 pb-5">
                     <tip.icon className="h-7 w-7 text-primary mb-3" />
                     <h3 className="font-semibold mb-2">{tip.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{tip.body}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{tip.body}</p>
                   </CardContent>
                 </Card>
               </div>
@@ -78,8 +78,8 @@ export default function TechAnxiety() {
               {quotes.map(q => (
                 <div key={q.name} className="bg-background rounded-xl p-5 border border-border">
                   <Heart className="h-4 w-4 text-pink-400 mb-3" />
-                  <p className="text-sm italic mb-3 text-muted-foreground leading-relaxed">{q.text}</p>
-                  <p className="text-sm font-medium">— {q.name}</p>
+                  <p className="text-base italic mb-3 text-muted-foreground leading-relaxed">{q.text}</p>
+                  <p className="text-base font-medium">— {q.name}</p>
                 </div>
               ))}
             </div>
@@ -96,7 +96,7 @@ export default function TechAnxiety() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold mb-1">{r.title}</h3>
-                    <p className="text-sm text-muted-foreground mb-3">{r.desc}</p>
+                    <p className="text-base text-muted-foreground mb-3">{r.desc}</p>
                     <Button asChild variant="ghost" size="sm" className="h-7 px-0 gap-1 text-primary hover:text-primary hover:bg-transparent rounded-lg">
                       <Link to={r.href}>{r.cta} <ArrowRight className="h-3.5 w-3.5" /></Link>
                     </Button>

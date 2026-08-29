@@ -228,7 +228,7 @@ const STORIES: Story[] = [
 
 export default function SuccessStories() {
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-950">
+    <div className="min-h-screen bg-card ">
       <SEOHead
         title="TekSure Success Stories — Representative Examples | TekSure"
         description="Representative examples of how everyday people use TekSure to solve tech problems, avoid scams, and feel more confident with technology."
@@ -239,10 +239,10 @@ export default function SuccessStories() {
       <main id="main-content" className="container mx-auto px-4 py-12 md:py-16">
         {/* Disclaimer (at top) */}
         <div className="max-w-4xl mx-auto mb-10">
-          <Card className="border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60">
+          <Card className="border-border bg-muted ">
             <CardContent className="p-5 flex gap-3 items-start">
-              <Info className="w-5 h-5 text-slate-500 dark:text-slate-400 flex-shrink-0 mt-0.5" />
-              <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+              <Info className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-0.5" />
+              <p className="text-base text-muted-foreground leading-relaxed">
                 These stories are representative examples inspired by common situations, not actual user testimonials. Names and details are fictional. We don't collect or publish real user stories without explicit consent.
               </p>
             </CardContent>
@@ -255,10 +255,10 @@ export default function SuccessStories() {
             <Sparkles className="w-4 h-4 mr-1.5" />
             Representative examples
           </Badge>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground dark:text-white mb-6 leading-tight">
             Wins That Start Small
           </h1>
-          <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed">
+          <p className="text-xl text-muted-foreground leading-relaxed">
             Twelve everyday scenarios showing what getting unstuck actually looks like.
             The people are written rather than interviewed — the problems are the real ones.
           </p>
@@ -270,7 +270,7 @@ export default function SuccessStories() {
             {STORIES.map((story) => (
               <Card
                 key={story.name}
-                className="border-slate-200 dark:border-slate-800 hover:shadow-xl transition-shadow flex flex-col"
+                className="border-border hover:shadow-xl transition-shadow flex flex-col"
               >
                 <CardContent className="p-6 flex flex-col h-full">
                   <div className="flex items-start justify-between mb-4">
@@ -281,25 +281,25 @@ export default function SuccessStories() {
                     </Badge>
                   </div>
 
-                  <p className="text-sm font-medium text-slate-500 dark:text-slate-400 mb-1">
+                  <p className="text-base font-medium text-muted-foreground mb-1">
                     Meet {story.name}, {story.age}
                   </p>
 
-                  <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-4 leading-snug">
+                  <h2 className="text-xl font-bold text-foreground dark:text-white mb-4 leading-snug">
                     {story.title}
                   </h2>
 
                   <div className="space-y-3 mb-6 flex-grow">
                     {story.paragraphs.map((p, i) => (
-                      <p key={i} className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                      <p key={i} className="text-base text-muted-foreground leading-relaxed">
                         {p}
                       </p>
                     ))}
                   </div>
 
-                  <div className="border-t border-slate-200 dark:border-slate-800 pt-4 space-y-3">
+                  <div className="border-t border-border pt-4 space-y-3">
                     <div>
-                      <p className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400 mb-2">
+                      <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-2">
                         Tools they used
                       </p>
                       <ul className="space-y-1.5">
@@ -307,7 +307,7 @@ export default function SuccessStories() {
                           <li key={tool.href}>
                             <Link
                               to={tool.href}
-                              className="text-sm text-amber-700 dark:text-amber-400 hover:underline inline-flex items-center group"
+                              className="text-sm text-warn-foreground hover:underline inline-flex items-center group"
                             >
                               {tool.label}
                               <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-0.5 transition-transform" />
@@ -317,7 +317,7 @@ export default function SuccessStories() {
                       </ul>
                     </div>
 
-                    <div className="flex items-center text-xs text-slate-500 dark:text-slate-400">
+                    <div className="flex items-center text-xs text-muted-foreground ">
                       <Clock className="w-3.5 h-3.5 mr-1.5" />
                       <span>Time invested: {story.timeInvested}</span>
                     </div>
@@ -330,13 +330,13 @@ export default function SuccessStories() {
 
         {/* Submit Your Story */}
         <section className="max-w-3xl mx-auto">
-          <Card className="bg-gradient-to-br from-amber-50 to-rose-50 dark:from-amber-950/40 dark:to-rose-950/40 border-amber-200 dark:border-amber-900">
+          <Card className="bg-gradient-to-br from-amber-50 to-rose-50 dark:from-amber-950/40 dark:to-rose-950/40 border-warn-foreground/25 ">
             <CardContent className="p-10 text-center">
-              <Heart className="w-12 h-12 mx-auto mb-4 text-rose-500" />
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-4">
+              <Heart className="w-12 h-12 mx-auto mb-4 text-danger-foreground" />
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground dark:text-white mb-4">
                 Have a story to share?
               </h2>
-              <p className="text-lg text-slate-700 dark:text-slate-200 mb-6 leading-relaxed">
+              <p className="text-lg text-foreground mb-6 leading-relaxed">
                 If TekSure has helped you or someone you love, we'd love to hear about it.
                 With your permission, we may share your story (anonymously or with your name — your choice) to encourage others.
               </p>
@@ -346,7 +346,7 @@ export default function SuccessStories() {
                   Email us at stories@teksure.com
                 </a>
               </Button>
-              <p className="text-xs text-slate-500 dark:text-slate-400 mt-4">
+              <p className="text-sm text-muted-foreground mt-4">
                 We will never publish anything without your explicit written consent.
               </p>
             </CardContent>

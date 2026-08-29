@@ -19,7 +19,7 @@ export default function HVACMaintenanceGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Filter changes (CRITICAL)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Replace every 1-3 months.</li>
               <li>Standard 1&quot; filters monthly.</li>
               <li>4-5&quot; pleated filters every 6-12 months.</li>
@@ -34,7 +34,7 @@ export default function HVACMaintenanceGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annual professional service</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Spring</strong> — AC tuneup ($100-200).</li>
               <li><strong>Fall</strong> — heating tuneup ($100-200).</li>
               <li>Annual service contract often $200-300/yr.</li>
@@ -49,7 +49,7 @@ export default function HVACMaintenanceGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY simple tasks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Clear leaves/debris from AC condenser outside.</li>
               <li>Trim plants 2-3 ft from condenser.</li>
               <li>Hose off AC fins gently.</li>
@@ -64,7 +64,7 @@ export default function HVACMaintenanceGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to call pro</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Strange noises (banging, screeching).</li>
               <li>Burning smell.</li>
               <li>Not cooling/heating effectively.</li>
@@ -80,7 +80,7 @@ export default function HVACMaintenanceGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lifespan + replacement</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Furnace 15-30 years.</li>
               <li>AC 10-15 years.</li>
               <li>Heat pump 10-15 years.</li>
@@ -95,7 +95,7 @@ export default function HVACMaintenanceGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save on bills</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smart thermostat (Nest, Ecobee) — saves 10-15%.</li>
               <li>Set 78°F summer, 68°F winter (when home).</li>
               <li>Programmable schedules — adjust when out.</li>
@@ -109,7 +109,7 @@ export default function HVACMaintenanceGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">LIHEAP if cost issue</h3>
-            <p className="text-sm text-muted-foreground"><strong>LIHEAP (Low Income Home Energy Assistance Program)</strong> — federal program. Pays utility bills for income-eligible. Many seniors qualify. Apply at your state&apos;s social services office. Also <strong>Weatherization Assistance Program</strong> — free insulation, weather stripping, HVAC repair. liheap.acl.gov.</p>
+            <p className="text-base text-muted-foreground"><strong>LIHEAP (Low Income Home Energy Assistance Program)</strong> — federal program. Pays utility bills for income-eligible. Many seniors qualify. Apply at your state&apos;s social services office. Also <strong>Weatherization Assistance Program</strong> — free insulation, weather stripping, HVAC repair. liheap.acl.gov.</p>
           </CardContent>
         </Card>
       </main>

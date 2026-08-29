@@ -97,30 +97,30 @@ export default function HomeInventoryTool() {
         title="Home Inventory Tool — TekSure"
         description="Document your belongings room by room for insurance purposes. Add items, estimate values, and print a summary to keep on file."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4 print:bg-white">
+      <main className="min-h-screen bg-muted py-8 px-4 print:bg-card">
         <div className="max-w-2xl mx-auto">
 
           {/* Header */}
           <div className="text-center mb-6 print:mb-4">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-amber-100 dark:bg-amber-950/60 mb-4 print:hidden">
-              <Home className="w-8 h-8 text-amber-600 dark:text-amber-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-warn mb-4 print:hidden">
+              <Home className="w-8 h-8 text-warn-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Home Inventory Tool</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Home Inventory Tool</h1>
+            <p className="text-lg text-muted-foreground ">
               List your belongings room by room so you have a record for your insurance company if anything is ever lost, stolen, or damaged.
             </p>
           </div>
 
           {/* Summary bar */}
           {totalItems > 0 && (
-            <div className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-2xl p-4 mb-5 flex items-center justify-between flex-wrap gap-3">
+            <div className="bg-warn border border-warn-foreground/25 rounded-2xl p-4 mb-5 flex items-center justify-between flex-wrap gap-3">
               <div>
-                <p className="text-sm text-amber-700 dark:text-amber-300 font-medium">Total items documented</p>
-                <p className="text-2xl font-bold text-amber-900 dark:text-amber-100">{totalItems} item{totalItems !== 1 ? 's' : ''}</p>
+                <p className="text-base text-warn-foreground font-medium">Total items documented</p>
+                <p className="text-2xl font-bold text-warn-foreground ">{totalItems} item{totalItems !== 1 ? 's' : ''}</p>
               </div>
               <div className="text-right">
-                <p className="text-sm text-amber-700 dark:text-amber-300 font-medium">Estimated total value</p>
-                <p className="text-2xl font-bold text-amber-900 dark:text-amber-100">{fmt(grandTotal)}</p>
+                <p className="text-base text-warn-foreground font-medium">Estimated total value</p>
+                <p className="text-2xl font-bold text-warn-foreground ">{fmt(grandTotal)}</p>
               </div>
             </div>
           )}
@@ -136,14 +136,14 @@ export default function HomeInventoryTool() {
                   className={`flex-shrink-0 flex items-center gap-1.5 px-3 py-2 rounded-xl text-sm font-medium transition-all ${
                     activeRoom === room.key
                       ? 'bg-amber-600 text-white'
-                      : 'bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-amber-400'
+                      : 'bg-white dark:bg-gray-800 border border-border text-foreground hover:border-amber-400'
                   }`}
                 >
                   <span>{room.emoji}</span>
                   <span>{room.label}</span>
                   {count > 0 && (
                     <span className={`text-xs rounded-full px-1.5 py-0.5 font-bold ${
-                      activeRoom === room.key ? 'bg-amber-500 text-white' : 'bg-amber-100 dark:bg-amber-900 text-amber-700 dark:text-amber-300'
+                      activeRoom === room.key ? 'bg-amber-500 text-white' : 'bg-amber-100 dark:bg-amber-900 text-warn-foreground dark:text-amber-300'
                     }`}>{count}</span>
                   )}
                 </button>
@@ -152,38 +152,38 @@ export default function HomeInventoryTool() {
           </div>
 
           {/* Active room editor */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm p-5 mb-4 print:hidden">
+          <div className="bg-card rounded-2xl border border-border shadow-sm p-5 mb-4 print:hidden">
             <div className="flex items-center justify-between mb-4">
-              <h2 className="font-bold text-gray-900 dark:text-gray-100 text-lg">
+              <h2 className="font-bold text-foreground text-lg">
                 {ROOMS.find(r => r.key === activeRoom)?.emoji}{' '}
                 {ROOMS.find(r => r.key === activeRoom)?.label}
               </h2>
               {roomTotal(activeRoom) > 0 && (
-                <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                  Room total: <span className="text-gray-900 dark:text-gray-100 font-bold">{fmt(roomTotal(activeRoom))}</span>
+                <span className="text-base font-medium text-muted-foreground ">
+                  Room total: <span className="text-foreground font-bold">{fmt(roomTotal(activeRoom))}</span>
                 </span>
               )}
             </div>
 
             {activeItems.length === 0 && (
-              <p className="text-sm text-gray-400 dark:text-gray-500 mb-4">No items yet. Click the button below to add one.</p>
+              <p className="text-base text-muted-foreground mb-4">No items yet. Click the button below to add one.</p>
             )}
 
             <div className="space-y-3">
               {activeItems.map((item, idx) => (
-                <div key={item.id} className="border border-gray-200 dark:border-gray-700 rounded-xl p-3 space-y-2">
+                <div key={item.id} className="border border-border rounded-xl p-3 space-y-2">
                   <div className="flex items-center gap-2">
-                    <span className="text-xs font-bold text-gray-400 w-5 text-center">{idx + 1}</span>
+                    <span className="text-xs font-bold text-muted-foreground w-5 text-center">{idx + 1}</span>
                     <input
                       type="text"
                       value={item.name}
                       onChange={e => updateItem(activeRoom, item.id, 'name', e.target.value)}
                       placeholder="Item name (e.g. Living room sofa)"
-                      className="flex-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+                      className="flex-1 px-3 py-2 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
                     />
                     <button
                       onClick={() => removeItem(activeRoom, item.id)}
-                      className="text-gray-400 hover:text-red-500 transition-colors p-1"
+                      className="text-muted-foreground hover:text-danger-foreground transition-colors p-1"
                       aria-label="Remove item"
                     >
                       <Trash2 className="w-4 h-4" />
@@ -193,12 +193,12 @@ export default function HomeInventoryTool() {
                     <select
                       value={item.category}
                       onChange={e => updateItem(activeRoom, item.id, 'category', e.target.value)}
-                      className="flex-1 px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+                      className="flex-1 px-3 py-2 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
                     >
                       {CATEGORIES.map(c => <option key={c.key} value={c.key}>{c.label}</option>)}
                     </select>
                     <div className="relative w-32">
-                      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">$</span>
+                      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">$</span>
                       <input
                         type="number"
                         inputMode="decimal"
@@ -206,7 +206,7 @@ export default function HomeInventoryTool() {
                         value={item.value}
                         onChange={e => updateItem(activeRoom, item.id, 'value', e.target.value)}
                         placeholder="Value"
-                        className="w-full pl-6 pr-2 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm text-right focus:outline-none focus:ring-2 focus:ring-amber-400"
+                        className="w-full pl-6 pr-2 py-2 rounded-lg border border-border bg-card text-foreground text-sm text-right focus:outline-none focus:ring-2 focus:ring-amber-400"
                       />
                     </div>
                   </div>
@@ -216,7 +216,7 @@ export default function HomeInventoryTool() {
                       value={item.notes}
                       onChange={e => updateItem(activeRoom, item.id, 'notes', e.target.value)}
                       placeholder="Notes — brand, model, serial number, color (optional)"
-                      className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
+                      className="w-full px-3 py-2 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-amber-400"
                     />
                   </div>
                 </div>
@@ -225,7 +225,7 @@ export default function HomeInventoryTool() {
 
             <button
               onClick={() => addItem(activeRoom)}
-              className="mt-4 w-full flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-dashed border-amber-300 dark:border-amber-700 text-amber-600 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/30 transition-colors text-sm font-medium"
+              className="mt-4 w-full flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-dashed border-warn-foreground/25 text-warn-foreground hover:bg-warn transition-colors text-sm font-medium"
             >
               <Plus className="w-4 h-4" />
               Add item to {ROOMS.find(r => r.key === activeRoom)?.label}
@@ -234,32 +234,32 @@ export default function HomeInventoryTool() {
 
           {/* Print summary — shown always, styled for print */}
           {totalItems > 0 && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm p-5 mb-4">
+            <div className="bg-card rounded-2xl border border-border shadow-sm p-5 mb-4">
               <button
                 onClick={() => setCollapsed(p => ({ ...p, summary: !p.summary }))}
                 className="w-full flex items-center justify-between text-left print:hidden"
               >
-                <p className="font-bold text-gray-900 dark:text-gray-100">Full inventory summary</p>
-                {collapsed.summary ? <ChevronDown className="w-5 h-5 text-gray-400" /> : <ChevronUp className="w-5 h-5 text-gray-400" />}
+                <p className="font-bold text-foreground ">Full inventory summary</p>
+                {collapsed.summary ? <ChevronDown className="w-5 h-5 text-muted-foreground" /> : <ChevronUp className="w-5 h-5 text-muted-foreground" />}
               </button>
               {!collapsed.summary && (
                 <div className="mt-4 space-y-4">
                   {ROOMS.filter(r => rooms[r.key].length > 0).map(room => (
                     <div key={room.key}>
                       <div className="flex items-center justify-between mb-1.5">
-                        <h3 className="font-semibold text-gray-800 dark:text-gray-200 text-sm">
+                        <h3 className="font-semibold text-foreground text-sm">
                           {room.emoji} {room.label}
                         </h3>
-                        <span className="text-sm font-medium text-gray-600 dark:text-gray-400">{fmt(roomTotal(room.key))}</span>
+                        <span className="text-base font-medium text-muted-foreground ">{fmt(roomTotal(room.key))}</span>
                       </div>
                       <div className="space-y-1">
                         {rooms[room.key].map(item => (
                           <div key={item.id} className="flex items-start justify-between text-sm gap-2">
                             <div className="flex-1 min-w-0">
-                              <span className="text-gray-800 dark:text-gray-200">{item.name || '(unnamed)'}</span>
-                              {item.notes && <span className="text-gray-400 ml-1 text-xs">— {item.notes}</span>}
+                              <span className="text-foreground ">{item.name || '(unnamed)'}</span>
+                              {item.notes && <span className="text-muted-foreground ml-1 text-sm">— {item.notes}</span>}
                             </div>
-                            <span className="text-gray-600 dark:text-gray-400 flex-shrink-0 font-medium">
+                            <span className="text-muted-foreground flex-shrink-0 font-medium">
                               {item.value ? fmt(parseFloat(item.value)) : '—'}
                             </span>
                           </div>
@@ -267,7 +267,7 @@ export default function HomeInventoryTool() {
                       </div>
                     </div>
                   ))}
-                  <div className="pt-2 border-t border-gray-200 dark:border-gray-700 flex justify-between font-bold text-gray-900 dark:text-gray-100">
+                  <div className="pt-2 border-t border-border flex justify-between font-bold text-foreground ">
                     <span>Grand Total ({totalItems} items)</span>
                     <span>{fmt(grandTotal)}</span>
                   </div>
@@ -288,7 +288,7 @@ export default function HomeInventoryTool() {
             {totalItems > 0 && (
               <button
                 onClick={resetAll}
-                className="flex items-center gap-2 px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                className="flex items-center gap-2 px-4 py-3 rounded-xl border border-border text-muted-foreground hover:bg-muted transition-colors"
               >
                 <RotateCcw className="w-4 h-4" />
                 Clear All
@@ -297,9 +297,9 @@ export default function HomeInventoryTool() {
           </div>
 
           {/* Tip */}
-          <div className="mt-5 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-xl p-4 print:hidden">
-            <p className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">Tips for a good home inventory</p>
-            <ul className="text-sm text-blue-700 dark:text-blue-300 space-y-1 list-disc list-inside">
+          <div className="mt-5 bg-info border border-info-foreground/25 rounded-xl p-4 print:hidden">
+            <p className="text-base font-semibold text-info-foreground mb-1">Tips for a good home inventory</p>
+            <ul className="text-base text-info-foreground space-y-1 list-disc list-inside">
               <li>Write down serial numbers for electronics — you will need them for insurance claims.</li>
               <li>Take photos of valuable items and store them in the cloud (Google Photos or iCloud) so they survive a house fire.</li>
               <li>Print this list and store one copy off-site — at a family member's home, in a safe deposit box, or email it to yourself.</li>
@@ -308,7 +308,7 @@ export default function HomeInventoryTool() {
           </div>
 
         </div>
-      </div>
+      </main>
     </>
   );
 }

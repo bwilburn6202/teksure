@@ -326,7 +326,7 @@ export function DeviceInventory() {
           <Card className="mt-8 bg-muted/50">
             <CardContent className="py-6">
               <h3 className="font-medium mb-2">Why track your devices?</h3>
-              <ul className="text-sm text-muted-foreground space-y-1">
+              <ul className="text-base text-muted-foreground space-y-1">
                 <li>• Get personalized help faster when you need support</li>
                 <li>• Remember which devices you have when setting up new services</li>
                 <li>• Keep track of warranty information and purchase dates</li>

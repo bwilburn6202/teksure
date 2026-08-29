@@ -19,7 +19,7 @@ export default function FindAnAppraiser() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why you might need one</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Insurance scheduling</strong> — to insure jewelry / art for full value.</li>
               <li><strong>Estate</strong> — fair market value for taxes / division.</li>
               <li><strong>Donation</strong> — IRS requires appraisal for donations over $5,000.</li>
@@ -32,7 +32,7 @@ export default function FindAnAppraiser() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find a certified appraiser</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>American Society of Appraisers (appraisers.org)</strong> — biggest. Search by specialty (jewelry, fine art, antiques, machinery).</li>
               <li><strong>Appraisers Association of America (appraisersassociation.org)</strong> — for fine art + decorative.</li>
               <li><strong>International Society of Appraisers (isa-appraisers.org)</strong> — broad specialties.</li>
@@ -45,7 +45,7 @@ export default function FindAnAppraiser() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>By the hour: $100-400/hr.</li>
               <li>Single piece (jewelry): $50-300 per appraisal.</li>
               <li>Full estate: $1,500-5,000+.</li>
@@ -57,19 +57,19 @@ export default function FindAnAppraiser() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Two values they\'ll quote</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Replacement value (insurance)</strong> — what it would cost to replace.</li>
               <li><strong>Fair market value (selling)</strong> — what it would actually sell for.</li>
               <li>These differ by 30-70%! Insurance is much higher.</li>
             </ul>
-            <p className="text-sm mt-2">Use replacement for insurance. Use fair market for actual selling decisions.</p>
+            <p className="text-base mt-2">Use replacement for insurance. Use fair market for actual selling decisions.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free options to start</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>WorthPoint.com</strong> — paid database of past auction prices. Often free trial.</li>
               <li><strong>eBay "sold" filter</strong> — search item, filter "Sold listings" — REAL prices.</li>
               <li><strong>Heritage Auctions free archives</strong> — past sales of high-end items.</li>
@@ -83,7 +83,7 @@ export default function FindAnAppraiser() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Avoid these</h3>
-            <p className="text-sm text-muted-foreground">"Buy your gold" mailers and TV ads — pay 30-50% of value. Estate buyout services that come to your home — same. Get certified appraisal first, THEN sell to top venue (Sotheby\'s, Christie\'s, eBay, Etsy, or local auction).</p>
+            <p className="text-base text-muted-foreground">"Buy your gold" mailers and TV ads — pay 30-50% of value. Estate buyout services that come to your home — same. Get certified appraisal first, THEN sell to top venue (Sotheby\'s, Christie\'s, eBay, Etsy, or local auction).</p>
           </CardContent>
         </Card>
       </main>

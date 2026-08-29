@@ -69,7 +69,7 @@ export default function TravelJournal() {
   const tripDays = activeTrip ? [...days.filter(d => d.tripId === activeTrip)].sort((a, b) => a.date.localeCompare(b.date)) : [];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Travel Journal | TekSure"
         description="Keep a simple travel journal — one entry per day with location, highlight, favorite meal, and notes. Print as a memento after the trip."
@@ -78,10 +78,10 @@ export default function TravelJournal() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <MapPin className="h-7 w-7 text-teal-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Travel Journal</h1>
+            <MapPin className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Travel Journal</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Spend two minutes each evening capturing the day. By trip's end you have a small book of memories.
           </p>
         </div>
@@ -93,13 +93,13 @@ export default function TravelJournal() {
               <button
                 key={t.id}
                 onClick={() => setActiveTrip(t.id)}
-                className={`px-3 py-2 rounded-md border text-sm font-medium ${activeTrip === t.id ? "bg-teal-100 border-teal-400 text-teal-900" : "bg-white border-gray-200 text-gray-700"}`}
+                className={`px-3 py-2 rounded-md border text-sm font-medium ${activeTrip === t.id ? "bg-teal-100 border-teal-400 text-teal-900" : "bg-white border-border text-gray-700"}`}
               >
                 <MapPin className="h-3 w-3 inline mr-1" />
                 {t.destination}
               </button>
             ))}
-            <button onClick={() => setActiveTrip(null)} className="px-3 py-2 rounded-md border border-dashed border-gray-300 text-sm text-gray-500 hover:bg-gray-50">
+            <button onClick={() => setActiveTrip(null)} className="px-3 py-2 rounded-md border border-dashed border-border text-sm text-muted-foreground hover:bg-muted">
               + New trip
             </button>
           </div>
@@ -110,7 +110,7 @@ export default function TravelJournal() {
           <Card className="mb-6 print:hidden">
             <CardHeader>
               <CardTitle className="text-xl flex items-center gap-2">
-                <PlusCircle className="h-5 w-5 text-teal-600" />
+                <PlusCircle className="h-5 w-5 text-success-foreground" />
                 New Trip
               </CardTitle>
             </CardHeader>
@@ -129,7 +129,7 @@ export default function TravelJournal() {
                   <Input id="end-date" type="date" value={tripForm.endDate} onChange={e => setTripForm(f => ({ ...f, endDate: e.target.value }))} className="mt-1 text-base" />
                 </div>
               </div>
-              {error && <p className="text-red-600 text-sm">{error}</p>}
+              {error && <p className="text-danger-foreground text-base">{error}</p>}
               <Button onClick={addTrip} size="lg" className="w-full sm:w-auto text-base">Start Journal</Button>
             </CardContent>
           </Card>
@@ -141,13 +141,13 @@ export default function TravelJournal() {
             <Card className="mb-4 print:break-inside-avoid">
               <CardContent className="py-3 px-4 flex items-start justify-between gap-2">
                 <div>
-                  <h2 className="text-xl font-bold text-teal-700">{trip.destination}</h2>
+                  <h2 className="text-xl font-bold text-success-foreground">{trip.destination}</h2>
                   {(trip.startDate || trip.endDate) && (
-                    <p className="text-sm text-gray-500">{trip.startDate && formatDate(trip.startDate)}{trip.startDate && trip.endDate && " — "}{trip.endDate && formatDate(trip.endDate)}</p>
+                    <p className="text-base text-muted-foreground">{trip.startDate && formatDate(trip.startDate)}{trip.startDate && trip.endDate && " — "}{trip.endDate && formatDate(trip.endDate)}</p>
                   )}
-                  <p className="text-xs text-gray-400 mt-1">{tripDays.length} day{tripDays.length !== 1 ? "s" : ""} logged</p>
+                  <p className="text-sm text-muted-foreground mt-1">{tripDays.length} day{tripDays.length !== 1 ? "s" : ""} logged</p>
                 </div>
-                <Button variant="ghost" size="icon" onClick={() => removeTrip(trip.id)} className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden">
+                <Button variant="ghost" size="icon" onClick={() => removeTrip(trip.id)} className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden">
                   <Trash2 className="h-4 w-4" />
                 </Button>
               </CardContent>
@@ -179,7 +179,7 @@ export default function TravelJournal() {
                 </div>
                 <div>
                   <Label htmlFor="d-notes" className="text-base font-medium">Other notes (optional)</Label>
-                  <textarea id="d-notes" rows={3} placeholder="What stood out, who you met, what surprised you..." value={dayForm.notes} onChange={e => setDayForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white" />
+                  <textarea id="d-notes" rows={3} placeholder="What stood out, who you met, what surprised you..." value={dayForm.notes} onChange={e => setDayForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card" />
                 </div>
                 <Button onClick={addDay} size="lg" className="w-full sm:w-auto text-base">Save Today</Button>
               </CardContent>
@@ -197,9 +197,9 @@ export default function TravelJournal() {
             {/* Days */}
             {tripDays.length === 0 ? (
               <Card className="print:hidden">
-                <CardContent className="py-10 text-center text-gray-500">
+                <CardContent className="py-10 text-center text-muted-foreground">
                   <p className="text-lg">No entries yet.</p>
-                  <p className="text-sm mt-1">Save the first day above.</p>
+                  <p className="text-base mt-1">Save the first day above.</p>
                 </CardContent>
               </Card>
             ) : (
@@ -210,14 +210,14 @@ export default function TravelJournal() {
                       <div className="flex items-start justify-between gap-2">
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 flex-wrap">
-                            <span className="font-semibold text-teal-700">{formatDate(d.date)}</span>
+                            <span className="font-semibold text-success-foreground">{formatDate(d.date)}</span>
                             {d.location && <Badge variant="secondary" className="text-xs">{d.location}</Badge>}
                           </div>
-                          {d.highlight && <p className="text-base text-gray-900 mt-1">{d.highlight}</p>}
-                          {d.meal && <p className="text-sm text-gray-600 mt-1">🍽️ {d.meal}</p>}
-                          {d.notes && <p className="text-sm text-gray-500 italic mt-1">{d.notes}</p>}
+                          {d.highlight && <p className="text-base text-foreground mt-1">{d.highlight}</p>}
+                          {d.meal && <p className="text-base text-muted-foreground mt-1">🍽️ {d.meal}</p>}
+                          {d.notes && <p className="text-base text-muted-foreground italic mt-1">{d.notes}</p>}
                         </div>
-                        <Button variant="ghost" size="icon" onClick={() => removeDay(d.id)} className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden">
+                        <Button variant="ghost" size="icon" onClick={() => removeDay(d.id)} className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden">
                           <Trash2 className="h-3 w-3" />
                         </Button>
                       </div>
@@ -229,15 +229,15 @@ export default function TravelJournal() {
           </>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Snap a photo of one tiny detail each day — a menu, a doorway, the view from your hotel. Pair them with these notes for the best memory keeper.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

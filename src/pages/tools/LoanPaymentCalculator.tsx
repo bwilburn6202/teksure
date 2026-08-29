@@ -30,55 +30,55 @@ export default function LoanPaymentCalculator() {
   function fmt(n: number) { return n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 2 }); }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Loan Payment Calculator | TekSure" description="See your monthly payment, total paid, and total interest for a loan. Works for mortgages, auto loans, and personal loans." />
       <div className="max-w-xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Calculator className="h-7 w-7 text-emerald-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Loan Payment Calculator</h1>
+            <Calculator className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Loan Payment Calculator</h1>
           </div>
-          <p className="text-gray-600 text-lg">Type your loan amount, term, and rate to see the monthly payment.</p>
+          <p className="text-muted-foreground text-lg">Type your loan amount, term, and rate to see the monthly payment.</p>
         </div>
         <Card>
           <CardContent className="py-6 px-4 space-y-4">
             <div className="grid grid-cols-1 gap-3">
               <div>
-                <label className="text-base font-medium text-gray-700">Loan amount ($)</label>
+                <label className="text-base font-medium text-foreground">Loan amount ($)</label>
                 <Input type="number" min="0" step="1000" placeholder="250000" value={amount} onChange={e => setAmount(e.target.value)} className="mt-1 text-2xl text-center h-14" />
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="text-base font-medium text-gray-700">Years</label>
+                  <label className="text-base font-medium text-foreground">Years</label>
                   <Input type="number" min="0" max="50" step="0.5" placeholder="30" value={years} onChange={e => setYears(e.target.value)} className="mt-1 text-2xl text-center h-14" />
                 </div>
                 <div>
-                  <label className="text-base font-medium text-gray-700">Annual rate (%)</label>
+                  <label className="text-base font-medium text-foreground">Annual rate (%)</label>
                   <Input type="number" min="0" max="30" step="0.125" placeholder="6.5" value={rate} onChange={e => setRate(e.target.value)} className="mt-1 text-2xl text-center h-14" />
                 </div>
               </div>
             </div>
             {valid && (
-              <div className="text-center bg-emerald-50 border border-emerald-200 rounded-md py-4 px-3 space-y-2">
-                <p className="text-sm text-emerald-700">Monthly payment</p>
-                <p className="text-4xl font-bold text-emerald-700">{fmt(monthly)}</p>
+              <div className="text-center bg-success border border-success-foreground/25 rounded-md py-4 px-3 space-y-2">
+                <p className="text-base text-success-foreground">Monthly payment</p>
+                <p className="text-4xl font-bold text-success-foreground">{fmt(monthly)}</p>
                 <div className="grid grid-cols-2 gap-3 mt-3 text-sm">
-                  <div><p className="text-gray-500">Total paid</p><p className="font-semibold">{fmt(total)}</p></div>
-                  <div><p className="text-gray-500">Total interest</p><p className="font-semibold text-red-700">{fmt(totalInterest)}</p></div>
+                  <div><p className="text-muted-foreground">Total paid</p><p className="font-semibold">{fmt(total)}</p></div>
+                  <div><p className="text-muted-foreground">Total interest</p><p className="font-semibold text-danger-foreground">{fmt(totalInterest)}</p></div>
                 </div>
               </div>
             )}
           </CardContent>
         </Card>
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Note: </span>
               This shows principal and interest only. Your actual monthly payment may also include property taxes, homeowner's insurance, and PMI for a mortgage.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

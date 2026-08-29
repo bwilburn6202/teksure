@@ -22,7 +22,7 @@ export default function SeniorOneHandedKeyboard() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice typing</h2><p>Even faster. Tap microphone instead of typing.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Stylus</h2><p>$10 cheap stylus helps shaky fingers. Apple Pencil works on iPad.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Switch Control</h2><p>iPhone: Settings → Accessibility → Switch Control. Type with single button or head movement.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Combine voice + one-handed for fastest results when injured.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Combine voice + one-handed for fastest results when injured.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

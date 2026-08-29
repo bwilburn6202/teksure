@@ -869,12 +869,12 @@ export default function TekBrainPage({ chromeless = false }: { chromeless?: bool
               />
             </div>
             <div className="inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-amber-100/80 dark:bg-amber-900/40 backdrop-blur-sm mb-2 shadow-sm">
-              <Brain className="h-5 w-5 md:h-6 md:w-6 text-amber-600 dark:text-amber-400" aria-hidden="true" />
+              <Brain className="h-5 w-5 md:h-6 md:w-6 text-warn-foreground " aria-hidden="true" />
             </div>
-            <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-1">
+            <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground dark:text-white mb-1">
               Ask TekBrain anything.
             </h1>
-            <p className="text-sm md:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+            <p className="text-base md:text-base text-muted-foreground leading-relaxed">
               Your personal tech helper.
             </p>
           </div>
@@ -928,7 +928,7 @@ export default function TekBrainPage({ chromeless = false }: { chromeless?: bool
             {!hasMessages ? (
               // Empty state — starter prompts front and center.
               <div className="py-2">
-                <p className="text-base md:text-lg text-slate-700 dark:text-slate-200 mb-3 text-center">
+                <p className="text-base md:text-lg text-foreground mb-3 text-center">
                   Not sure what to ask? Try one of these:
                 </p>
                 <div className="grid sm:grid-cols-2 gap-2">
@@ -938,15 +938,15 @@ export default function TekBrainPage({ chromeless = false }: { chromeless?: bool
                       type="button"
                       onClick={() => handleStarter(prompt)}
                       disabled={sending}
-                      className="text-left p-3 md:p-3.5 rounded-xl border-2 border-amber-200 dark:border-amber-900/60 bg-amber-50/60 dark:bg-amber-950/20 hover:border-amber-400 dark:hover:border-amber-700 hover:bg-amber-100/60 dark:hover:bg-amber-900/30 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900 transition-colors min-h-[48px] disabled:opacity-60 disabled:cursor-not-allowed"
+                      className="text-left p-3 md:p-3.5 rounded-xl border-2 border-warn-foreground/25 bg-amber-50/60 dark:bg-amber-950/20 hover:border-amber-400 hover:bg-amber-100/60 dark:hover:bg-amber-900/30 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900 transition-colors min-h-[48px] disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      <span className="text-sm md:text-base font-medium text-slate-800 dark:text-slate-100">
+                      <span className="text-base md:text-base font-medium text-foreground ">
                         {prompt}
                       </span>
                     </button>
                   ))}
                 </div>
-                <p className="text-sm text-slate-500 dark:text-slate-400 text-center mt-3">
+                <p className="text-base text-muted-foreground text-center mt-3">
                   Or type your own question in the box below.
                 </p>
               </div>
@@ -983,10 +983,10 @@ export default function TekBrainPage({ chromeless = false }: { chromeless?: bool
           {error && (
             <div
               role="alert"
-              className="mb-4 flex items-start gap-3 rounded-xl border border-rose-300 dark:border-rose-800 bg-rose-50 dark:bg-rose-950/30 p-4"
+              className="mb-4 flex items-start gap-3 rounded-xl border border-danger-foreground/25 bg-danger p-4"
             >
-              <AlertCircle className="h-5 w-5 text-rose-600 dark:text-rose-400 shrink-0 mt-0.5" aria-hidden="true" />
-              <p className="text-base md:text-lg text-rose-900 dark:text-rose-200 leading-snug">
+              <AlertCircle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" aria-hidden="true" />
+              <p className="text-base md:text-lg text-danger-foreground leading-snug">
                 {error}
               </p>
             </div>
@@ -994,11 +994,11 @@ export default function TekBrainPage({ chromeless = false }: { chromeless?: bool
           {voiceError && (
             <div
               role="alert"
-              className="mb-4 flex items-start gap-3 rounded-xl border border-amber-300 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/30 p-4"
+              className="mb-4 flex items-start gap-3 rounded-xl border border-warn-foreground/25 bg-warn p-4"
             >
-              <AlertCircle className="h-5 w-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
+              <AlertCircle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
               <div className="flex-1">
-                <p className="text-base md:text-lg text-amber-900 dark:text-amber-200 leading-snug">
+                <p className="text-base md:text-lg text-warn-foreground leading-snug">
                   {voiceError}
                 </p>
               </div>
@@ -1007,7 +1007,7 @@ export default function TekBrainPage({ chromeless = false }: { chromeless?: bool
                 variant="ghost"
                 size="sm"
                 onClick={() => setVoiceError(null)}
-                className="text-amber-900 dark:text-amber-200 -mt-1"
+                className="text-warn-foreground -mt-1"
               >
                 Dismiss
               </Button>
@@ -1043,7 +1043,7 @@ export default function TekBrainPage({ chromeless = false }: { chromeless?: bool
                   hearing before it commits a final result to the input. */}
               {isListening && interimTranscript && (
                 <div
-                  className="absolute bottom-2 left-3 right-3 text-sm md:text-base italic text-slate-500 dark:text-slate-400 pointer-events-none truncate"
+                  className="absolute bottom-2 left-3 right-3 text-sm md:text-base italic text-muted-foreground pointer-events-none truncate"
                   aria-live="polite"
                 >
                   &ldquo;{interimTranscript}&rdquo;
@@ -1053,7 +1053,7 @@ export default function TekBrainPage({ chromeless = false }: { chromeless?: bool
             <div className="flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
               <p
                 id="tekbrain-input-hint"
-                className="text-xs md:text-sm text-slate-500 dark:text-slate-400"
+                className="text-sm md:text-base text-muted-foreground "
               >
                 {isListening
                   ? 'Listening\u2026 I\u2019ll send when you pause. Press Escape to cancel.'
@@ -1084,7 +1084,7 @@ export default function TekBrainPage({ chromeless = false }: { chromeless?: bool
                   className={`relative text-sm md:text-base px-4 py-2 min-h-[40px] font-semibold ${
                     isListening
                       ? 'bg-rose-600 hover:bg-rose-700 text-white border-rose-600'
-                      : 'border-2 border-amber-600 text-amber-700 hover:bg-amber-50 dark:text-amber-400 dark:hover:bg-amber-950/30'
+                      : 'border-2 border-amber-600 text-warn-foreground hover:bg-warn dark:hover:bg-amber-950/30'
                   }`}
                 >
                   {isListening ? (
@@ -1144,15 +1144,15 @@ function UserBubble({ msg }: { msg: ChatMessage }) {
   return (
     <div className="flex items-start gap-2 max-w-[85%] md:max-w-[75%]">
       <div className="flex-1 rounded-2xl rounded-tr-md bg-amber-600 text-white px-4 py-2 shadow-sm">
-        <p className="text-sm md:text-base leading-relaxed whitespace-pre-wrap break-words">
+        <p className="text-base md:text-base leading-relaxed whitespace-pre-wrap break-words">
           {msg.content}
         </p>
       </div>
       <div
-        className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-900/60 flex items-center justify-center"
+        className="flex-shrink-0 w-8 h-8 rounded-full bg-warn flex items-center justify-center"
         aria-hidden="true"
       >
-        <User className="h-4 w-4 text-amber-700 dark:text-amber-300" />
+        <User className="h-4 w-4 text-warn-foreground " />
       </div>
     </div>
   );
@@ -1187,10 +1187,10 @@ function AssistantBubble({
   return (
     <div className="flex items-start gap-2 max-w-[90%] md:max-w-[85%]">
       <div
-        className="flex-shrink-0 w-8 h-8 rounded-full bg-amber-100 dark:bg-amber-900/60 flex items-center justify-center"
+        className="flex-shrink-0 w-8 h-8 rounded-full bg-warn flex items-center justify-center"
         aria-hidden="true"
       >
-        <Brain className="h-4 w-4 text-amber-700 dark:text-amber-300" />
+        <Brain className="h-4 w-4 text-warn-foreground " />
       </div>
       <div className="flex-1 space-y-2">
         <Card
@@ -1205,7 +1205,7 @@ function AssistantBubble({
           <CardContent className="px-4 py-3">
             <div className="flex items-center justify-between gap-2 mb-1.5">
               <div className="flex items-center gap-2">
-                <span className="text-sm font-semibold text-amber-700 dark:text-amber-400">
+                <span className="text-base font-semibold text-warn-foreground ">
                   TekBrain
                 </span>
                 {msg.streaming && (
@@ -1215,7 +1215,7 @@ function AssistantBubble({
                   </Badge>
                 )}
                 {isSpeaking && (
-                  <Badge variant="outline" className="text-xs border-amber-400 text-amber-700 dark:text-amber-400">
+                  <Badge variant="outline" className="text-xs border-amber-400 text-warn-foreground ">
                     <Volume2 className="h-3 w-3 mr-1 animate-pulse" aria-hidden="true" />
                     Reading aloud
                   </Badge>
@@ -1239,18 +1239,18 @@ function AssistantBubble({
                   className={`min-h-[40px] px-3 ${
                     isSpeaking
                       ? 'bg-amber-600 hover:bg-amber-700 text-white'
-                      : 'text-amber-700 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/30'
+                      : 'text-amber-700 dark:text-amber-400 hover:bg-warn dark:hover:bg-amber-950/30'
                   }`}
                 >
                   {isSpeaking ? (
                     <>
                       <Square className="h-4 w-4 mr-1.5 fill-current" aria-hidden="true" />
-                      <span className="text-sm">Stop</span>
+                      <span className="text-base">Stop</span>
                     </>
                   ) : (
                     <>
                       <Headphones className="h-4 w-4 mr-1.5" aria-hidden="true" />
-                      <span className="text-sm">Listen</span>
+                      <span className="text-base">Listen</span>
                     </>
                   )}
                 </Button>
@@ -1258,11 +1258,11 @@ function AssistantBubble({
             </div>
 
             {showTyping ? (
-              <p className="text-sm md:text-base text-slate-500 dark:text-slate-400 italic">
+              <p className="text-base md:text-base text-muted-foreground italic">
                 Looking through the guides&hellip;
               </p>
             ) : (
-              <p className="text-sm md:text-base leading-relaxed text-slate-800 dark:text-slate-100 whitespace-pre-wrap break-words">
+              <p className="text-base md:text-base leading-relaxed text-foreground whitespace-pre-wrap break-words">
                 {msg.content}
                 {showCursor && (
                   <span
@@ -1323,16 +1323,16 @@ function VoiceSettings({
       <PopoverContent className="w-80 p-5" align="end">
         <div className="space-y-5">
           <div>
-            <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+            <h3 className="text-lg font-semibold text-foreground ">
               Voice settings
             </h3>
-            <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
+            <p className="text-base text-muted-foreground mt-1">
               Speak your question or have answers read aloud.
             </p>
           </div>
 
           {!anyVoiceFeature && (
-            <p className="text-sm text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900/60 rounded-lg p-3">
+            <p className="text-base text-warn-foreground bg-warn border border-warn-foreground/25 rounded-lg p-3">
               Your browser doesn&rsquo;t support voice features. Try Chrome, Edge, or Safari.
             </p>
           )}
@@ -1342,11 +1342,11 @@ function VoiceSettings({
             <div className="flex-1">
               <Label
                 htmlFor="voice-always-on"
-                className="text-base font-medium text-slate-800 dark:text-slate-100"
+                className="text-base font-medium text-foreground "
               >
                 Always read answers aloud
               </Label>
-              <p className="text-sm text-slate-500 dark:text-slate-400 mt-0.5">
+              <p className="text-base text-muted-foreground mt-0.5">
                 TekBrain will speak every answer automatically.
               </p>
             </div>
@@ -1363,7 +1363,7 @@ function VoiceSettings({
           <div className="space-y-2">
             <Label
               htmlFor="voice-picker"
-              className="text-base font-medium text-slate-800 dark:text-slate-100"
+              className="text-base font-medium text-foreground "
             >
               Voice
             </Label>
@@ -1392,7 +1392,7 @@ function VoiceSettings({
           <div className="space-y-2">
             <Label
               htmlFor="voice-rate"
-              className="text-base font-medium text-slate-800 dark:text-slate-100"
+              className="text-base font-medium text-foreground "
             >
               Reading speed
             </Label>
@@ -1414,10 +1414,10 @@ function VoiceSettings({
             </Select>
           </div>
 
-          <div className="pt-2 border-t border-slate-200 dark:border-slate-700 text-xs text-slate-500 dark:text-slate-400 leading-relaxed">
+          <div className="pt-2 border-t border-border text-xs text-muted-foreground leading-relaxed">
             <p className="mb-1"><strong>Keyboard shortcuts:</strong></p>
-            <p>Press <kbd className="px-1.5 py-0.5 rounded border bg-slate-100 dark:bg-slate-800">Space</kbd> to start or stop speaking.</p>
-            <p>Press <kbd className="px-1.5 py-0.5 rounded border bg-slate-100 dark:bg-slate-800">Esc</kbd> to cancel listening or reading.</p>
+            <p>Press <kbd className="px-1.5 py-0.5 rounded border bg-muted ">Space</kbd> to start or stop speaking.</p>
+            <p>Press <kbd className="px-1.5 py-0.5 rounded border bg-muted ">Esc</kbd> to cancel listening or reading.</p>
           </div>
         </div>
       </PopoverContent>
@@ -1439,23 +1439,23 @@ function SourcesList({ sources }: { sources: SourceChunk[] }) {
   });
 
   return (
-    <div className="rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50/60 dark:bg-amber-950/20 px-4 py-3">
+    <div className="rounded-xl border border-warn-foreground/25 bg-amber-50/60 dark:bg-amber-950/20 px-4 py-3">
       <div className="flex items-center gap-2 mb-2">
-        <BookOpen className="h-4 w-4 text-amber-700 dark:text-amber-400" aria-hidden="true" />
-        <span className="text-sm md:text-base font-semibold text-amber-800 dark:text-amber-300">
+        <BookOpen className="h-4 w-4 text-warn-foreground " aria-hidden="true" />
+        <span className="text-base md:text-base font-semibold text-warn-foreground ">
           Sources ({unique.length})
         </span>
       </div>
       <ul className="space-y-1.5">
         {unique.map((s) => (
-          <li key={s.id} className="text-base md:text-lg text-slate-700 dark:text-slate-200">
+          <li key={s.id} className="text-base md:text-lg text-foreground ">
             {s.source_type === 'private_doc' ? (
               s.source_url ? (
                 <a
                   href={s.source_url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:no-underline hover:text-amber-700 dark:hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500 rounded"
+                  className="underline hover:no-underline hover:text-warn-foreground focus:outline-none focus:ring-2 focus:ring-amber-500 rounded"
                 >
                   {s.guide_title}
                 </a>
@@ -1465,7 +1465,7 @@ function SourcesList({ sources }: { sources: SourceChunk[] }) {
             ) : s.guide_id ? (
               <a
                 href={`/guides/${s.guide_id}`}
-                className="underline hover:no-underline hover:text-amber-700 dark:hover:text-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-500 rounded"
+                className="underline hover:no-underline hover:text-warn-foreground focus:outline-none focus:ring-2 focus:ring-amber-500 rounded"
               >
                 {s.guide_title}
               </a>
@@ -1473,7 +1473,7 @@ function SourcesList({ sources }: { sources: SourceChunk[] }) {
               <span className="font-medium">{s.guide_title}</span>
             )}
             {s.heading ? (
-              <span className="text-slate-500 dark:text-slate-400"> &mdash; {s.heading}</span>
+              <span className="text-muted-foreground "> &mdash; {s.heading}</span>
             ) : null}
           </li>
         ))}

@@ -19,7 +19,7 @@ export default function PictureThisPlantID() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What plant ID apps do</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Take photo of leaf, flower, or whole plant.</li>
               <li>App identifies species in seconds.</li>
               <li>Tells you care needs, water schedule, sun needs.</li>
@@ -33,7 +33,7 @@ export default function PictureThisPlantID() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">PictureThis (most popular)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 billion+ photos identified.</li>
               <li>Free with limits — paid: $29.99/year.</li>
               <li>Highly accurate — 1 million+ species.</li>
@@ -47,7 +47,7 @@ export default function PictureThisPlantID() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>PlantNet — 100% free, citizen-science based.</li>
               <li>Seek by iNaturalist — completely free.</li>
               <li>Google Lens — built into Android, very accurate.</li>
@@ -61,7 +61,7 @@ export default function PictureThisPlantID() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open app, tap camera button.</li>
               <li>Photograph the leaf or flower clearly.</li>
               <li>Good light helps — avoid shadows.</li>
@@ -75,7 +75,7 @@ export default function PictureThisPlantID() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Disease + pest help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photograph the affected leaf.</li>
               <li>App diagnoses common problems.</li>
               <li>Suggests organic + chemical treatments.</li>
@@ -89,7 +89,7 @@ export default function PictureThisPlantID() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Identify mystery plant grandkids find.</li>
               <li>Check if backyard plant is toxic to dog.</li>
               <li>Identify poison ivy before touching.</li>
@@ -103,7 +103,7 @@ export default function PictureThisPlantID() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try Google Lens first</h3>
-            <p className="text-sm text-muted-foreground">Before paying for PictureThis, try Google Lens (free, built into most phones). Open Google app, tap camera icon, point at plant. Free, no app to install, works on most plants. If you want care reminders and disease diagnosis, then PictureThis is worth $30/year. PlantNet is the best 100% free dedicated plant ID app.</p>
+            <p className="text-base text-muted-foreground">Before paying for PictureThis, try Google Lens (free, built into most phones). Open Google app, tap camera icon, point at plant. Free, no app to install, works on most plants. If you want care reminders and disease diagnosis, then PictureThis is worth $30/year. PlantNet is the best 100% free dedicated plant ID app.</p>
           </CardContent>
         </Card>
       </main>

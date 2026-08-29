@@ -228,7 +228,7 @@ export default function PhoneDiagnosticChecklist() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-cyan-500/10 rounded-full">
-                <Stethoscope className="h-8 w-8 text-cyan-600" aria-hidden="true" />
+                <Stethoscope className="h-8 w-8 text-info-foreground" aria-hidden="true" />
               </div>
             </div>
             <Badge variant="secondary" className="mb-3">Free Tool · 10 minutes</Badge>
@@ -254,10 +254,10 @@ export default function PhoneDiagnosticChecklist() {
               <Card>
                 <CardContent className="p-5">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="font-semibold text-sm">
+                    <span className="font-semibold text-base">
                       Progress: {summary.passed + summary.failed} of {summary.total} tests
                     </span>
-                    <span className="text-xs text-muted-foreground">
+                    <span className="text-sm text-muted-foreground">
                       {summary.passed} pass · {summary.failed} fail
                     </span>
                   </div>
@@ -291,7 +291,7 @@ export default function PhoneDiagnosticChecklist() {
                               Test {idx + 1}: {test.label}
                             </h3>
                           </div>
-                          <p className="text-sm text-muted-foreground leading-relaxed">
+                          <p className="text-base text-muted-foreground leading-relaxed">
                             {test.instruction}
                           </p>
                         </div>
@@ -340,7 +340,7 @@ export default function PhoneDiagnosticChecklist() {
                 )}
               </div>
               {!completed && (
-                <p className="text-xs text-muted-foreground text-center">
+                <p className="text-sm text-muted-foreground text-center">
                   Mark every test as "Worked" or "Did not work" to see your diagnosis.
                 </p>
               )}
@@ -356,12 +356,12 @@ export default function PhoneDiagnosticChecklist() {
                     Diagnosis: {summary.failed} of {summary.total} tests failed
                   </h2>
                   {summary.failed === 0 ? (
-                    <div className="rounded-xl bg-emerald-50 dark:bg-emerald-950/20 p-4 border border-emerald-200 dark:border-emerald-900/40">
+                    <div className="rounded-xl bg-success p-4 border border-success-foreground/25 ">
                       <div className="flex items-start gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                        <CheckCircle2 className="h-5 w-5 text-success-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                         <div>
                           <p className="font-semibold mb-1">Your phone is healthy.</p>
-                          <p className="text-sm text-muted-foreground">
+                          <p className="text-base text-muted-foreground">
                             All 11 tests passed. If you came here because of a specific issue, the
                             cause may be a single app or a recent setting change. Try restarting
                             the phone and checking for software updates.
@@ -370,7 +370,7 @@ export default function PhoneDiagnosticChecklist() {
                       </div>
                     </div>
                   ) : (
-                    <p className="text-muted-foreground text-sm">
+                    <p className="text-muted-foreground text-base">
                       Below is what each failed test means and what to do about it. Read through
                       each before deciding on repair.
                     </p>
@@ -406,7 +406,7 @@ export default function PhoneDiagnosticChecklist() {
                                     {tag.label}
                                   </span>
                                 </div>
-                                <p className="text-sm text-muted-foreground leading-relaxed">
+                                <p className="text-base text-muted-foreground leading-relaxed">
                                   {t.diagnosis}
                                 </p>
                               </div>
@@ -428,10 +428,10 @@ export default function PhoneDiagnosticChecklist() {
                       Repair, or replace?
                     </h3>
                     {summary.failed >= 4 ? (
-                      <div className="rounded-xl bg-amber-50 dark:bg-amber-950/20 p-4 border border-amber-200 dark:border-amber-900/40">
+                      <div className="rounded-xl bg-warn p-4 border border-warn-foreground/25 ">
                         <div className="flex items-start gap-3">
-                          <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
-                          <p className="text-sm">
+                          <AlertTriangle className="h-5 w-5 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
+                          <p className="text-base">
                             With <strong>{summary.failed} failures</strong>, repair costs add up
                             quickly. Consider replacement — especially if your phone is older than
                             4 years. A refurbished phone (Apple Certified Refurbished, Back Market,
@@ -440,7 +440,7 @@ export default function PhoneDiagnosticChecklist() {
                         </div>
                       </div>
                     ) : (
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         With {summary.failed} failure{summary.failed === 1 ? '' : 's'}, targeted
                         repair is likely worthwhile. Try the free fixes for "could be either" items
                         first; they cost nothing. Then get a quote for any remaining hardware
@@ -481,7 +481,7 @@ export default function PhoneDiagnosticChecklist() {
             </>
           )}
 
-          <p className="text-xs text-muted-foreground text-center max-w-prose mx-auto">
+          <p className="text-sm text-muted-foreground text-center max-w-prose mx-auto">
             All diagnostic guidance is based on public technical documentation from Apple, Samsung,
             and Google, plus repair pricing from Apple Support, uBreakiFix, and Best Buy Geek
             Squad as of 2026.

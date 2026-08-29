@@ -19,7 +19,7 @@ export default function SeniorAirfareDeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best price tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Google Flights</strong> — best for searching.</li>
               <li><strong>Skyscanner</strong> — international comparison.</li>
               <li><strong>Hopper app</strong> — predicts price drops.</li>
@@ -33,7 +33,7 @@ export default function SeniorAirfareDeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior airline discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Most airlines</strong> dropped formal senior discounts.</li>
               <li><strong>Southwest</strong> — &quot;senior fares&quot; available 65+.</li>
               <li><strong>British Airways</strong> — sometimes 65+ rates.</li>
@@ -47,7 +47,7 @@ export default function SeniorAirfareDeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Time it right</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Domestic — book 1-3 months ahead.</li>
               <li>International — 5-6 months ahead.</li>
               <li>Tuesday + Wednesday cheapest fly days.</li>
@@ -61,7 +61,7 @@ export default function SeniorAirfareDeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly travel</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>TSA PreCheck</strong> $78/5yr — keep shoes on, faster.</li>
               <li><strong>Wheelchair</strong> assistance FREE — see /tools/airport-wheelchair-help.</li>
               <li><strong>Aisle seat</strong> — bathroom access.</li>
@@ -74,7 +74,7 @@ export default function SeniorAirfareDeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Travel cards = free flights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sign-up bonuses 75K-100K points.</li>
               <li>Equivalent free domestic round-trip.</li>
               <li>Chase Sapphire Preferred best for travel.</li>
@@ -87,7 +87,7 @@ export default function SeniorAirfareDeals() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Travel insurance</h3>
-            <p className="text-sm text-muted-foreground">For 65+ international = ESSENTIAL. Medicare doesn&apos;t cover overseas. $200-400/trip. Worth peace of mind. See /tools/travel-insurance-reality. Cover trip cancellation, medical, evacuation. Don&apos;t skip.</p>
+            <p className="text-base text-muted-foreground">For 65+ international = ESSENTIAL. Medicare doesn&apos;t cover overseas. $200-400/trip. Worth peace of mind. See /tools/travel-insurance-reality. Cover trip cancellation, medical, evacuation. Don&apos;t skip.</p>
           </CardContent>
         </Card>
       </main>

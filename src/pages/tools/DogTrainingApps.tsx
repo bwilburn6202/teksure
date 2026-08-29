@@ -30,10 +30,10 @@ export default function DogTrainingApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function DogTrainingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First commands to teach</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sit — easiest, foundation.</li>
               <li>Stay — safety + control.</li>
               <li>Come — recall lifesaver.</li>
@@ -56,7 +56,7 @@ export default function DogTrainingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior trainer tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>5-10 minute sessions only.</li>
               <li>Multiple sessions per day.</li>
               <li>Positive reinforcement only.</li>
@@ -70,7 +70,7 @@ export default function DogTrainingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior dog comforts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Soft training treats (chew).</li>
               <li>Short distance work.</li>
               <li>Avoid jumping commands.</li>
@@ -84,7 +84,7 @@ export default function DogTrainingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common problems</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pulling on leash</strong> — &quot;loose leash&quot; method.</li>
               <li><strong>Barking</strong> — interrupt + redirect.</li>
               <li><strong>Jumping on guests</strong> — ignore + reward sit.</li>
@@ -98,7 +98,7 @@ export default function DogTrainingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Petco / PetSmart — group classes ($120).</li>
               <li>Local trainer — Yelp / Nextdoor.</li>
               <li>Boarding + training combo.</li>
@@ -112,7 +112,7 @@ export default function DogTrainingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Old dogs, new tricks</h3>
-            <p className="text-sm text-muted-foreground">Yes — old dogs CAN learn new tricks. Slower pace, more patience. Trick training keeps senior dogs mentally sharp + physically active. Bond strengthens. Free + builds purpose for both. Brain stays young.</p>
+            <p className="text-base text-muted-foreground">Yes — old dogs CAN learn new tricks. Slower pace, more patience. Trick training keeps senior dogs mentally sharp + physically active. Bond strengthens. Free + builds purpose for both. Brain stays young.</p>
           </CardContent>
         </Card>
       </main>

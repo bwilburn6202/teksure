@@ -19,8 +19,8 @@ export default function SubscriptionAuditCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 1 — Find them all</h2>
-            <p className="text-sm mb-2">Subscriptions hide in 3 places:</p>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <p className="text-base mb-2">Subscriptions hide in 3 places:</p>
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Credit card / bank statement</strong> — scroll the last 90 days. Highlight every recurring charge. Most banks now flag "subscription" charges.</li>
               <li><strong>Apple App Store</strong> — Settings → tap your name → Subscriptions. ALL Apple-billed subs.</li>
               <li><strong>Google Play</strong> — Play Store → tap your photo → Payments & subscriptions → Subscriptions.</li>
@@ -33,7 +33,7 @@ export default function SubscriptionAuditCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps that find them for you</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Rocket Money (free version)</strong> — links to bank, lists every recurring charge, lets you cancel inside the app.</li>
               <li><strong>Empower (free)</strong> — same, focused on retirement/net worth + subs.</li>
               <li><strong>Truebill (now Rocket Money)</strong> — same as above.</li>
@@ -45,7 +45,7 @@ export default function SubscriptionAuditCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common forgotten subscriptions</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Streaming you don\'t watch (Hulu, Showtime, Peacock).</li>
               <li>Free trial that auto-renewed.</li>
               <li>Audiobook services for one book purchased years ago.</li>
@@ -63,7 +63,7 @@ export default function SubscriptionAuditCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 2 — Cancel without pain</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>For App Store / Play Store / Amazon — cancel in 2 taps.</li>
               <li>For others — go to the company\'s website. Look for "Cancel" deep in account settings.</li>
               <li>For ones that hide cancel buttons — chat with their support and demand cancellation.</li>
@@ -76,7 +76,7 @@ export default function SubscriptionAuditCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Negotiate down what you keep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cable/Internet</strong> — call once a year. "I\'m considering switching to [competitor]. What can you do?" Saves $20-40/month for 30 minutes of work.</li>
               <li><strong>Streaming bundles</strong> — Disney+ Hulu Max bundle is $17/mo vs $40 separately.</li>
               <li><strong>Annual vs monthly</strong> — most services 15-25% cheaper if paid yearly.</li>
@@ -88,7 +88,7 @@ export default function SubscriptionAuditCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">First-time discovery</h3>
-            <p className="text-sm text-muted-foreground">First-time users of Rocket Money typically discover $40-100/month they had no idea they were paying. That\'s $480-1,200/year saved with one Saturday morning of work.</p>
+            <p className="text-base text-muted-foreground">First-time users of Rocket Money typically discover $40-100/month they had no idea they were paying. That\'s $480-1,200/year saved with one Saturday morning of work.</p>
           </CardContent>
         </Card>
       </main>

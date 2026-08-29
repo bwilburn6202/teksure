@@ -19,7 +19,7 @@ export default function NextdoorBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it&apos;s good for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Recommendations — handyman, plumber, contractor, dog groomer.</li>
               <li>Lost &amp; Found pets, packages, items.</li>
               <li>Free / cheap items neighbors are giving away.</li>
@@ -30,17 +30,17 @@ export default function NextdoorBasics() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Honest warning</h2>
-            <p className="text-sm">Nextdoor has a reputation for: paranoid neighbors, racial profiling reports ("suspicious person walking down the street"), petty drama, and political fights. Use the mute / hide buttons liberally. Don&apos;t take "crime alerts" as gospel — many are misunderstandings.</p>
+            <p className="text-base">Nextdoor has a reputation for: paranoid neighbors, racial profiling reports ("suspicious person walking down the street"), petty drama, and political fights. Use the mute / hide buttons liberally. Don&apos;t take "crime alerts" as gospel — many are misunderstandings.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sign up</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to nextdoor.com or download app.</li>
               <li>Enter your address. (Verifies you live there — postcard or phone call.)</li>
               <li>Choose username. Real name policy now.</li>
@@ -53,7 +53,7 @@ export default function NextdoorBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best uses for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Find a trusted contractor</strong> — search past posts, see who neighbors recommend.</li>
               <li><strong>"Anyone seen my dog?"</strong> — fastest way to recover lost pets.</li>
               <li><strong>Neighborhood watch</strong> — legit alerts about prowler.</li>
@@ -66,7 +66,7 @@ export default function NextdoorBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to avoid</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t share trip dates publicly — that&apos;s when burglaries happen.</li>
               <li>Don&apos;t share full address.</li>
               <li>Don&apos;t engage political fights — block + mute.</li>
@@ -79,7 +79,7 @@ export default function NextdoorBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Local Facebook groups beat Nextdoor</h3>
-            <p className="text-sm text-muted-foreground">Most towns have a "Neighbors of [town name]" Facebook group that&apos;s often friendlier and more active than Nextdoor. Search Facebook for your town. Often less drama, more genuine community.</p>
+            <p className="text-base text-muted-foreground">Most towns have a "Neighbors of [town name]" Facebook group that&apos;s often friendlier and more active than Nextdoor. Search Facebook for your town. Often less drama, more genuine community.</p>
           </CardContent>
         </Card>
       </main>

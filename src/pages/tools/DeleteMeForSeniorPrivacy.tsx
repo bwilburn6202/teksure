@@ -19,7 +19,7 @@ export default function DeleteMeForSeniorPrivacy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What DeleteMe does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Removes you from people-search sites.</li>
               <li>Spokeo, BeenVerified, etc.</li>
               <li>$129/year per person.</li>
@@ -33,7 +33,7 @@ export default function DeleteMeForSeniorPrivacy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why important for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Scammers find seniors via these sites.</li>
               <li>Your address + age + family there.</li>
               <li>Reduces robocalls.</li>
@@ -47,7 +47,7 @@ export default function DeleteMeForSeniorPrivacy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY removal</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Each site has opt-out form.</li>
               <li>Tedious — 50+ sites.</li>
               <li>Free if you have time.</li>
@@ -61,7 +61,7 @@ export default function DeleteMeForSeniorPrivacy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Incogni — $7-15/month.</li>
               <li>Privacy Bee — competitive.</li>
               <li>OneRep — similar.</li>
@@ -75,7 +75,7 @@ export default function DeleteMeForSeniorPrivacy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Manual key sites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Whitepages — biggest, opt out free.</li>
               <li>Spokeo, BeenVerified.</li>
               <li>TruePeopleSearch.</li>
@@ -89,7 +89,7 @@ export default function DeleteMeForSeniorPrivacy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Family + friends</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tell family what info to share publicly.</li>
               <li>Don&apos;t post your address on social media.</li>
               <li>Don&apos;t announce vacations.</li>
@@ -103,7 +103,7 @@ export default function DeleteMeForSeniorPrivacy() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth $129/year for safety</h3>
-            <p className="text-sm text-muted-foreground">For seniors targeted by scammers, DeleteMe&apos;s $129/year is good investment. Removes you from databases scammers use to target. Combined with credit freeze + 2FA + privacy practices, makes you much harder to scam. Many seniors who&apos;ve been victims wish they&apos;d started sooner.</p>
+            <p className="text-base text-muted-foreground">For seniors targeted by scammers, DeleteMe&apos;s $129/year is good investment. Removes you from databases scammers use to target. Combined with credit freeze + 2FA + privacy practices, makes you much harder to scam. Many seniors who&apos;ve been victims wish they&apos;d started sooner.</p>
           </CardContent>
         </Card>
       </main>

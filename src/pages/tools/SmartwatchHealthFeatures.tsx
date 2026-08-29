@@ -19,7 +19,7 @@ export default function SmartwatchHealthFeatures() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">All smartwatches measure</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heart rate (24/7).</li>
               <li>Steps + activity.</li>
               <li>Sleep stages.</li>
@@ -34,7 +34,7 @@ export default function SmartwatchHealthFeatures() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Premium features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ECG/EKG</strong> — Apple Watch, Samsung Galaxy Watch, Fitbit Sense.</li>
               <li><strong>AFib detection</strong> — irregular rhythm warnings.</li>
               <li><strong>SpO2 (blood oxygen)</strong> — Apple, Garmin, Fitbit.</li>
@@ -49,7 +49,7 @@ export default function SmartwatchHealthFeatures() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Coming 2026+</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Non-invasive glucose (Apple, Samsung — slow).</li>
               <li>Hydration monitoring.</li>
               <li>Mental health insights.</li>
@@ -63,7 +63,7 @@ export default function SmartwatchHealthFeatures() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior life-savers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Watch fall detection — auto 911.</li>
               <li>Apple Watch Crash Detection — car accidents.</li>
               <li>Garmin Incident Detection.</li>
@@ -77,7 +77,7 @@ export default function SmartwatchHealthFeatures() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Share with doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Print PDF of health data from app.</li>
               <li>Share trends — heart rate, BP, sleep, activity.</li>
               <li>Doctor sees big picture not just visit snapshot.</li>
@@ -91,7 +91,7 @@ export default function SmartwatchHealthFeatures() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t over-rely</h3>
-            <p className="text-sm text-muted-foreground">Smartwatches FDA-cleared but not medical devices. False positives + negatives. Use as health awareness tool. Take seriously when warnings — but verify with doctor. Pair with annual physical + medical professional. Smartwatch ≠ replace doctor.</p>
+            <p className="text-base text-muted-foreground">Smartwatches FDA-cleared but not medical devices. False positives + negatives. Use as health awareness tool. Take seriously when warnings — but verify with doctor. Pair with annual physical + medical professional. Smartwatch ≠ replace doctor.</p>
           </CardContent>
         </Card>
       </main>

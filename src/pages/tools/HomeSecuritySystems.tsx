@@ -31,10 +31,10 @@ export default function HomeSecuritySystems() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function HomeSecuritySystems() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best parts for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Medical alert button</strong> built into many systems — ADT, SimpliSafe.</li>
               <li><strong>Fall detection</strong> — additional sensor.</li>
               <li><strong>Smoke + CO monitoring</strong> — pro monitor calls fire if alarm sounds.</li>
@@ -57,7 +57,7 @@ export default function HomeSecuritySystems() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip these gimmicks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Free" systems with 5-year contracts.</li>
               <li>Door-to-door sales — they pressure-sell + lock you in.</li>
               <li>"Smart locks" that fail when battery dies.</li>
@@ -70,7 +70,7 @@ export default function HomeSecuritySystems() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Most-protective without spending</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lock doors. (60% of burglaries are unlocked doors.)</li>
               <li>Motion lights at all entrances.</li>
               <li>Trim shrubs by windows.</li>
@@ -86,7 +86,7 @@ export default function HomeSecuritySystems() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Insurance discount</h3>
-            <p className="text-sm text-muted-foreground">Most homeowners insurance gives 5-20% discount for monitored security system. Document it. Often saves $200-500/year — partial payment for the system.</p>
+            <p className="text-base text-muted-foreground">Most homeowners insurance gives 5-20% discount for monitored security system. Document it. Often saves $200-500/year — partial payment for the system.</p>
           </CardContent>
         </Card>
       </main>

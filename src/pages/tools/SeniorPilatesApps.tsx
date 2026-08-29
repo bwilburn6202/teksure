@@ -22,7 +22,7 @@ export default function SeniorPilatesApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Chair pilates</h2><p>For limited mobility. Sitting work effective.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Studios</h2><p>$30-$50/class. Professional instruction. Worth it for first month.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Equipment</h2><p>Mat $20. Resistance band $10. Plenty for senior pilates.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 15 minutes of pilates 3x weekly improves senior balance dramatically.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 15 minutes of pilates 3x weekly improves senior balance dramatically.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

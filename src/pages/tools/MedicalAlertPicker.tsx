@@ -28,12 +28,12 @@ export default function MedicalAlertPicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Two basic types</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li><strong>Home base + pendant</strong> — works inside the home. Cheapest. Won\'t help you if you fall in the yard or store.</li>
               <li><strong>Mobile / GPS pendant</strong> — works anywhere with cell signal. About $5-10/month more than home-only.</li>
               <li><strong>Smartwatch (Apple, Galaxy)</strong> — newer alternative. Many features built in.</li>
             </ul>
-            <p className="text-sm mt-2 font-semibold">Always pick mobile if you ever go outside or drive.</p>
+            <p className="text-base mt-2 font-semibold">Always pick mobile if you ever go outside or drive.</p>
           </CardContent>
         </Card>
 
@@ -43,10 +43,10 @@ export default function MedicalAlertPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base mb-1">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -55,7 +55,7 @@ export default function MedicalAlertPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Features to look for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Automatic fall detection</strong> — calls help even if you can\'t press the button. Worth $5-10/month extra.</li>
               <li><strong>2-way voice</strong> — talk to the operator through the pendant or base.</li>
               <li><strong>Battery life</strong> — pendant should last 5+ days; base unit should have backup battery.</li>
@@ -70,8 +70,8 @@ export default function MedicalAlertPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Watch as a real alternative</h2>
-            <p className="text-sm mb-2">Apple Watch Series 4 and newer have:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Apple Watch Series 4 and newer have:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Fall detection</strong> — calls 911 + emergency contacts if you don\'t move for 1 minute after a fall.</li>
               <li><strong>Crash detection</strong> (Series 8+) — detects car accidents.</li>
               <li><strong>Emergency SOS via satellite</strong> — works with no cell service (Series 8+ paired with iPhone 14+).</li>
@@ -79,14 +79,14 @@ export default function MedicalAlertPicker() {
               <li><strong>EKG</strong> — 30-second test on demand.</li>
               <li>$300+ watch + $5-10/month cellular plan = total monthly cost similar to traditional pendant. AND it\'s a watch.</li>
             </ul>
-            <p className="text-sm mt-2 bg-muted/50 p-3 rounded">Many seniors who refused a "pendant" wear an Apple Watch happily — it doesn\'t signal "elderly".</p>
+            <p className="text-base mt-2 bg-muted/50 p-3 rounded">Many seniors who refused a "pendant" wear an Apple Watch happily — it doesn\'t signal "elderly".</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Insurance / Medicare</h3>
-            <p className="text-sm text-muted-foreground">Original Medicare does NOT cover medical alerts. Many Medicare Advantage plans do — call your plan to ask. Some long-term care insurance and Medicaid waivers cover it.</p>
+            <p className="text-base text-muted-foreground">Original Medicare does NOT cover medical alerts. Many Medicare Advantage plans do — call your plan to ask. Some long-term care insurance and Medicaid waivers cover it.</p>
           </CardContent>
         </Card>
       </main>

@@ -30,10 +30,10 @@ export default function GratitudePracticeApp() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function GratitudePracticeApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why it works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Studies: 2-week practice = lasting happiness boost.</li>
               <li>Lowers depression scores.</li>
               <li>Better sleep.</li>
@@ -57,7 +57,7 @@ export default function GratitudePracticeApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Simple practice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Write 3 things grateful for daily.</li>
               <li>Be specific — &quot;hot coffee on cold morning&quot; vs &quot;coffee.&quot;</li>
               <li>Different things each day.</li>
@@ -71,7 +71,7 @@ export default function GratitudePracticeApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Variations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Gratitude letter</strong> — write to someone who helped you. Don&apos;t send (or do).</li>
               <li><strong>Gratitude visit</strong> — read letter to person.</li>
               <li><strong>Three good things</strong> — at dinner with family.</li>
@@ -85,7 +85,7 @@ export default function GratitudePracticeApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free Yale class</h3>
-            <p className="text-sm text-muted-foreground"><strong>Science of Well-Being</strong> on Coursera — Yale&apos;s most popular course ever. Free audit. Teaches gratitude + happiness research. Life-changing for many seniors. <strong>Greater Good Science Center</strong> — UC Berkeley free resources. Skip self-help books — research-backed practices best.</p>
+            <p className="text-base text-muted-foreground"><strong>Science of Well-Being</strong> on Coursera — Yale&apos;s most popular course ever. Free audit. Teaches gratitude + happiness research. Life-changing for many seniors. <strong>Greater Good Science Center</strong> — UC Berkeley free resources. Skip self-help books — research-backed practices best.</p>
           </CardContent>
         </Card>
       </main>

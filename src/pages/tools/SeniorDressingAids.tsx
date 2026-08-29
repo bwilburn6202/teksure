@@ -22,7 +22,7 @@ export default function SeniorDressingAids() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Zipper pull</h2><p>$5 for 5. Big rings pull zippers easier.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Reacher/grabber</h2><p>$15. Pick things up without bending. 33-inch grabber.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Velcro shoes</h2><p>Easier than ties. Skechers, New Balance senior styles.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: $60 worth of dressing aids = independence after hip surgery.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: $60 worth of dressing aids = independence after hip surgery.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

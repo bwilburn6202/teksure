@@ -22,7 +22,7 @@ export default function SeniorRVApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Good Sam</h2><p>$30/year. Discounts at 2,000+ campgrounds. Roadside assistance.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cracker Barrel</h2><p>FREE overnight RV parking. Check ahead for permission.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Boondockers Welcome</h2><p>$80/year. Free overnight at private homes.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Senior National Park lifetime pass $80. Saves $1000s on entrance fees.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Senior National Park lifetime pass $80. Saves $1000s on entrance fees.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

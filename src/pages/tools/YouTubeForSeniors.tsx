@@ -19,7 +19,7 @@ export default function YouTubeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What seniors love</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>How-to videos</strong> — fix anything yourself.</li>
               <li><strong>Travel videos</strong> — virtual sight-seeing.</li>
               <li><strong>Cooking</strong> — countless recipe channels.</li>
@@ -35,7 +35,7 @@ export default function YouTubeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouTube Premium worth it?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$14/mo Personal — no ads + downloads + YouTube Music.</li>
               <li>$23/mo Family — share with 5.</li>
               <li>FREE option works fine — just ads.</li>
@@ -49,7 +49,7 @@ export default function YouTubeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorite channels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bob &amp; Brad</strong> — physical therapy, senior-friendly.</li>
               <li><strong>HASfit</strong> — workouts seniors do.</li>
               <li><strong>Yes2Next</strong> — chair exercise.</li>
@@ -65,7 +65,7 @@ export default function YouTubeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup well</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sign up Google account if no Gmail.</li>
               <li>Subscribe to channels you like.</li>
               <li>Like videos = better recommendations.</li>
@@ -79,7 +79,7 @@ export default function YouTubeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch out for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Misleading thumbnails (clickbait).</li>
               <li>Conspiracy / health misinformation.</li>
               <li>Stick to verified creators.</li>
@@ -93,7 +93,7 @@ export default function YouTubeForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cast to TV</h3>
-            <p className="text-sm text-muted-foreground">Smart TV has YouTube app built-in. Sign in with phone QR code. Use phone as remote. Bigger screen + better audio. AirPlay (iPhone) or Chromecast = phone to TV. Most seniors prefer TV viewing over phone.</p>
+            <p className="text-base text-muted-foreground">Smart TV has YouTube app built-in. Sign in with phone QR code. Use phone as remote. Bigger screen + better audio. AirPlay (iPhone) or Chromecast = phone to TV. Most seniors prefer TV viewing over phone.</p>
           </CardContent>
         </Card>
       </main>

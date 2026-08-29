@@ -22,7 +22,7 @@ export default function SeniorAnxietyApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Reduce caffeine</h2><p>Coffee + tea contribute to senior anxiety. Cut to morning only.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Walking</h2><p>30 min daily walks reduce anxiety as much as medication.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Talk to doctor</h2><p>Some senior anxiety from medications. Review with PCP.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Box breathing 5 minutes daily reduces senior anxiety dramatically.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Box breathing 5 minutes daily reduces senior anxiety dramatically.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

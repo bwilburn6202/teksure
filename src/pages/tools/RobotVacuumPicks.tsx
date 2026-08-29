@@ -30,10 +30,10 @@ export default function RobotVacuumPicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{v.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{v.cost}</span>
+                  <span className="text-base font-semibold text-primary">{v.cost}</span>
                 </div>
-                <p className="text-sm">{v.best}</p>
-                <p className="text-sm text-muted-foreground">{v.good}</p>
+                <p className="text-base">{v.best}</p>
+                <p className="text-base text-muted-foreground">{v.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function RobotVacuumPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to look for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Self-emptying base</strong> — empties bin into bag, takes weeks before you touch it. Adds $150-300, worth every penny.</li>
               <li><strong>Mapping</strong> — vacuum learns your floor plan. Cleans efficiently. Skip random-pattern bots.</li>
               <li><strong>Suction</strong> — measured in Pa (Pascals). 2,500+ Pa for hardwood; 4,000+ Pa for carpet.</li>
@@ -55,7 +55,7 @@ export default function RobotVacuumPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup tips for seniors</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Put base in a corner with 18" clear on each side.</li>
               <li>Plug base into outlet. Vacuum drives back when done.</li>
               <li>First run — clear floor of cords, socks, small rugs.</li>
@@ -69,7 +69,7 @@ export default function RobotVacuumPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Maintenance (5 min/month)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Empty dust bin (or replace bag if self-empty).</li>
               <li>Clean filter — tap clean weekly, replace every 2-3 months ($10).</li>
               <li>Cut off hair/string from main brush — scissors.</li>
@@ -82,7 +82,7 @@ export default function RobotVacuumPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Mop too?</h3>
-            <p className="text-sm text-muted-foreground">Combo vacuum/mop bots (Roomba Combo, Roborock S8) lift mop pad on carpet, drop on hardwood. Auto-empty AND auto-refill bases mean truly hands-off floors. $700-1,500 — pricey but transformative if you have lots of hard floor.</p>
+            <p className="text-base text-muted-foreground">Combo vacuum/mop bots (Roomba Combo, Roborock S8) lift mop pad on carpet, drop on hardwood. Auto-empty AND auto-refill bases mean truly hands-off floors. $700-1,500 — pricey but transformative if you have lots of hard floor.</p>
           </CardContent>
         </Card>
       </main>

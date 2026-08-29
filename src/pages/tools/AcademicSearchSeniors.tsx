@@ -19,7 +19,7 @@ export default function AcademicSearchSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Google Scholar</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free Google search for academic papers.</li>
               <li>scholar.google.com.</li>
               <li>Many papers free PDF.</li>
@@ -33,7 +33,7 @@ export default function AcademicSearchSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">JSTOR</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free 100 articles/month.</li>
               <li>Sign up at JSTOR.org.</li>
               <li>Humanities + social sciences focus.</li>
@@ -47,7 +47,7 @@ export default function AcademicSearchSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Library access</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Public library cards = free database access.</li>
               <li>Often EBSCO, ProQuest.</li>
               <li>Worth $hundreds in subscriptions.</li>
@@ -61,7 +61,7 @@ export default function AcademicSearchSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">PubMed</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free medical research database.</li>
               <li>Search any health topic.</li>
               <li>Clinical trials + meta-analyses.</li>
@@ -75,7 +75,7 @@ export default function AcademicSearchSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wikipedia caveats</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free + comprehensive.</li>
               <li>Quality varies.</li>
               <li>Check footnotes for sources.</li>
@@ -89,7 +89,7 @@ export default function AcademicSearchSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Newspapers archives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Newspapers.com — historical newspapers.</li>
               <li>Often via library subscription.</li>
               <li>Genealogy research.</li>
@@ -103,7 +103,7 @@ export default function AcademicSearchSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Library card unlocks scholarship</h3>
-            <p className="text-sm text-muted-foreground">If you have intellectual curiosity, your library card is gold. Free access to academic databases worth $hundreds. JSTOR, EBSCO, ProQuest, often Newspapers.com. Ask reference librarian for tour. Many seniors discover lifelong learning via these databases. Free, plentiful, accurate.</p>
+            <p className="text-base text-muted-foreground">If you have intellectual curiosity, your library card is gold. Free access to academic databases worth $hundreds. JSTOR, EBSCO, ProQuest, often Newspapers.com. Ask reference librarian for tour. Many seniors discover lifelong learning via these databases. Free, plentiful, accurate.</p>
           </CardContent>
         </Card>
       </main>

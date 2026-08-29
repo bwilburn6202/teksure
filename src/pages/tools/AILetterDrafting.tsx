@@ -19,7 +19,7 @@ export default function AILetterDrafting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best letter prompts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Insurance dispute</strong> — "Help me write a letter to insurance company appealing denial of [treatment]."</li>
               <li><strong>Medical records request</strong> — "Letter requesting my medical records from [hospital]."</li>
               <li><strong>Landlord</strong> — "Polite letter asking for repair of [issue]."</li>
@@ -36,7 +36,7 @@ export default function AILetterDrafting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to prompt well</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Tell AI: WHO + WHAT + WHEN + WHY.</li>
               <li>Specify TONE: "polite + firm" / "warm + brief" / "formal".</li>
               <li>Specify LENGTH: "2 short paragraphs" / "1 page".</li>
@@ -49,15 +49,15 @@ export default function AILetterDrafting() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Example prompt</h2>
-            <p className="text-sm">"Help me write a polite letter to my homeowner&apos;s insurance company. They denied my claim for water damage from a burst pipe in January. The pipe damage caused $8,000 in flooring damage. I have receipts + photos. The denial letter says &apos;not covered&apos; without explanation. Please write a 1-page appeal asking them to reconsider, requesting a written explanation of the denial, and reminding them of my 8-year clean claim history."</p>
-            <p className="text-sm mt-3">AI generates draft. You edit + sign.</p>
+            <p className="text-base">"Help me write a polite letter to my homeowner&apos;s insurance company. They denied my claim for water damage from a burst pipe in January. The pipe damage caused $8,000 in flooring damage. I have receipts + photos. The denial letter says &apos;not covered&apos; without explanation. Please write a 1-page appeal asking them to reconsider, requesting a written explanation of the denial, and reminding them of my 8-year clean claim history."</p>
+            <p className="text-base mt-3">AI generates draft. You edit + sign.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t share these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Full Social Security number.</li>
               <li>Full credit card number.</li>
               <li>Bank account number.</li>
@@ -71,7 +71,7 @@ export default function AILetterDrafting() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best free AI letter drafters</h3>
-            <p className="text-sm text-muted-foreground"><strong>ChatGPT</strong> (chat.openai.com) — most popular. <strong>Claude</strong> (claude.ai) — best at warm + thoughtful letters. <strong>Google Gemini</strong> — free. <strong>Microsoft Copilot</strong> — free, built into Word. ALL free for letter drafting needs.</p>
+            <p className="text-base text-muted-foreground"><strong>ChatGPT</strong> (chat.openai.com) — most popular. <strong>Claude</strong> (claude.ai) — best at warm + thoughtful letters. <strong>Google Gemini</strong> — free. <strong>Microsoft Copilot</strong> — free, built into Word. ALL free for letter drafting needs.</p>
           </CardContent>
         </Card>
       </main>

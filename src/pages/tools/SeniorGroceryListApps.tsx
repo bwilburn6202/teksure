@@ -22,7 +22,7 @@ export default function SeniorGroceryListApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice add</h2><p>&ldquo;Hey Siri, add milk to grocery list.&rdquo; Hands-free during cooking.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Echo Show</h2><p>&ldquo;Alexa, add tomatoes to grocery list.&rdquo; Reads it back at the store.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share with family</h2><p>Adult kids add items they need. Visit them, bring it.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Make a shared list with spouse. Automatic when one buys what the other added.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Make a shared list with spouse. Automatic when one buys what the other added.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

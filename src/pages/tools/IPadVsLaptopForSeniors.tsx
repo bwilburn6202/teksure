@@ -19,7 +19,7 @@ export default function IPadVsLaptopForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick iPad if</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Browse web + watch videos primarily.</li>
               <li>Email + messaging.</li>
               <li>Photos + video calls.</li>
@@ -35,7 +35,7 @@ export default function IPadVsLaptopForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick laptop if</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heavy typing (memoirs, letters, emails).</li>
               <li>Large spreadsheets.</li>
               <li>Photo / video editing.</li>
@@ -51,7 +51,7 @@ export default function IPadVsLaptopForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best of both</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPad + Magic Keyboard</strong> — $349 + $300. Tablet OR laptop.</li>
               <li><strong>Surface Pro</strong> — Microsoft tablet/laptop hybrid.</li>
               <li><strong>Lenovo IdeaPad Duet Chromebook</strong> — $300 hybrid.</li>
@@ -64,7 +64,7 @@ export default function IPadVsLaptopForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Side-by-side</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Weight</strong> — iPad 1 lb / laptop 2-4 lbs.</li>
               <li><strong>Battery</strong> — iPad 10 hrs / laptop 8-12.</li>
               <li><strong>Touchscreen</strong> — iPad yes / most laptops no.</li>
@@ -79,7 +79,7 @@ export default function IPadVsLaptopForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tip</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If buying first device — iPad easier learning curve.</li>
               <li>If switching from PC — laptop similar feel.</li>
               <li>Test both at Apple Store / Best Buy.</li>
@@ -92,7 +92,7 @@ export default function IPadVsLaptopForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">My device picks 2026</h3>
-            <p className="text-sm text-muted-foreground">For most seniors first device: <strong>iPad 10th gen ($349) + bluetooth keyboard ($30)</strong>. Better than Chromebook for senior intuitive use, better than laptop for portability. For heavy work: <strong>MacBook Air M3 13&quot; ($1,000)</strong> or <strong>Dell Inspiron 16 ($700)</strong>. Test before buying.</p>
+            <p className="text-base text-muted-foreground">For most seniors first device: <strong>iPad 10th gen ($349) + bluetooth keyboard ($30)</strong>. Better than Chromebook for senior intuitive use, better than laptop for portability. For heavy work: <strong>MacBook Air M3 13&quot; ($1,000)</strong> or <strong>Dell Inspiron 16 ($700)</strong>. Test before buying.</p>
           </CardContent>
         </Card>
       </main>

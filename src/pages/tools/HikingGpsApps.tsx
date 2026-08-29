@@ -30,10 +30,10 @@ export default function HikingGpsApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function HikingGpsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly trail filtering</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AllTrails filters</strong> — easy difficulty, paved/wheelchair, dog-friendly, kid-friendly.</li>
               <li>Filter by length: under 2 miles for easy days.</li>
               <li>Filter by elevation gain: under 200ft is mostly flat.</li>
@@ -55,7 +55,7 @@ export default function HikingGpsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety must-dos</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Tell someone where you&apos;re hiking + when back.</li>
               <li>Download trail map BEFORE leaving (cell signal often gone).</li>
               <li>Phone fully charged + portable battery.</li>
@@ -70,7 +70,7 @@ export default function HikingGpsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Emergency SOS for hikers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone 14+ &amp; Apple Watch Ultra</strong> — Emergency SOS via satellite. FREE. Hold side button.</li>
               <li><strong>Garmin inReach Mini 2</strong> — $400 + $15-50/mo. Two-way satellite text. The standard for serious hikers.</li>
               <li><strong>Spot Gen4</strong> — $130 + $13/mo. One-way SOS button.</li>
@@ -82,7 +82,7 @@ export default function HikingGpsApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior National Park pass</h3>
-            <p className="text-sm text-muted-foreground"><strong>America the Beautiful Senior Pass</strong> — $80 lifetime (or $20/year). Free entry to ALL US National Parks for 62+. Get at any park entrance or USGS.gov/store. Best $80 a senior can spend if you like the outdoors.</p>
+            <p className="text-base text-muted-foreground"><strong>America the Beautiful Senior Pass</strong> — $80 lifetime (or $20/year). Free entry to ALL US National Parks for 62+. Get at any park entrance or USGS.gov/store. Best $80 a senior can spend if you like the outdoors.</p>
           </CardContent>
         </Card>
       </main>

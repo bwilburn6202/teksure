@@ -16,17 +16,17 @@ export default function MedicareScamGuide() {
           <p className="text-lg text-muted-foreground">$60 BILLION lost to Medicare fraud each year.</p>
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The big rule</h2>
-            <p className="text-sm font-bold">Medicare NEVER calls or visits you uninvited. Never. If someone calls saying they&apos;re from Medicare — it&apos;s a scam.</p>
+            <p className="text-base font-bold">Medicare NEVER calls or visits you uninvited. Never. If someone calls saying they&apos;re from Medicare — it&apos;s a scam.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common Medicare scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Free" knee/back braces</strong> — they bill Medicare $1,000+, ship junk, and you can&apos;t get a real one later.</li>
               <li><strong>"Free" DNA cancer test</strong> — billed at $9,000+. Most people qualify for nothing.</li>
               <li><strong>"New Medicare card"</strong> — there&apos;s no new card. Asking for your number = identity theft.</li>
@@ -41,7 +41,7 @@ export default function MedicareScamGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Protect your Medicare number</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Treat it like a Social Security number — because it CONTAINS a unique ID.</li>
               <li>Never give it to a stranger, even one "from Medicare".</li>
               <li>Only give to your doctor, hospital, pharmacy, or insurance plan.</li>
@@ -54,7 +54,7 @@ export default function MedicareScamGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags during open enrollment (Oct 15-Dec 7)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Limited time! Today only!" — Medicare doesn&apos;t pressure.</li>
               <li>Cold call about Medicare Advantage plan — illegal.</li>
               <li>Door-knock "Medicare counselor" — illegal.</li>
@@ -66,7 +66,7 @@ export default function MedicareScamGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real help — free</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>1-800-MEDICARE (1-800-633-4227)</strong> — official Medicare line.</li>
               <li><strong>SHIP</strong> — State Health Insurance Assistance Program. Free, unbiased Medicare counselors. Find at <strong>shiphelp.org</strong>.</li>
               <li><strong>Senior Medicare Patrol</strong> — fraud reporting + education. <strong>smpresource.org</strong>.</li>
@@ -78,7 +78,7 @@ export default function MedicareScamGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">The 1-2-3</h3>
-            <p className="text-sm text-muted-foreground">1. Don&apos;t answer unknown calls. 2. Never give your Medicare number to a stranger. 3. Read your quarterly Medicare Summary Notice. Three habits stop 95% of Medicare scams.</p>
+            <p className="text-base text-muted-foreground">1. Don&apos;t answer unknown calls. 2. Never give your Medicare number to a stranger. 3. Read your quarterly Medicare Summary Notice. Three habits stop 95% of Medicare scams.</p>
           </CardContent>
         </Card>
       </main>

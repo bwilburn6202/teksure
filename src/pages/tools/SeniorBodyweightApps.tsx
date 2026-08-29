@@ -19,10 +19,10 @@ export default function SeniorBodyweightApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bold</h2><p>$15/month. Designed for over-60. Bodyweight focus. 15 min daily.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SilverSneakers GO</h2><p>FREE with Medicare Advantage. At-home senior workouts.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Otago Exercise</h2><p>FREE. CDC-recommended. Reduces falls 35%.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior staples</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Sit-to-stands</li><li>Wall push-ups</li><li>Heel raises</li><li>Marching in place</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior staples</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Sit-to-stands</li><li>Wall push-ups</li><li>Heel raises</li><li>Marching in place</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sit-to-stand test</h2><p>Sit, stand 5 times. Can&apos;t do 5 in 14 sec? Need strength training.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free at home</h2><p>YouTube has hundreds of senior bodyweight workouts.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 50 sit-to-stands daily replaces gym membership. Free strength training.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 50 sit-to-stands daily replaces gym membership. Free strength training.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

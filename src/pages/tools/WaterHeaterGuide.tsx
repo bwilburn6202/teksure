@@ -19,7 +19,7 @@ export default function WaterHeaterGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Know your water heater</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find install date — sticker or take photo of nameplate.</li>
               <li>Average lifespan 8-12 years.</li>
               <li>Replace BEFORE failing (proactive saves flood damage).</li>
@@ -32,7 +32,7 @@ export default function WaterHeaterGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annual maintenance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Flush sediment yearly — extends life 5+ years.</li>
               <li>Check anode rod every 3 years (sacrificial part).</li>
               <li>Test pressure relief valve yearly.</li>
@@ -47,7 +47,7 @@ export default function WaterHeaterGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Leak prevention (essential)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Drip pan</strong> under heater — catches small leaks.</li>
               <li><strong>Smart leak detector</strong> ($30-150) — alerts phone.</li>
               <li><strong>Auto shutoff valve</strong> — closes if leak detected ($200-600 install).</li>
@@ -61,7 +61,7 @@ export default function WaterHeaterGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to replace</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Age 10+ years — start planning.</li>
               <li>Rust in hot water.</li>
               <li>Strange noises (popping, rumbling).</li>
@@ -77,7 +77,7 @@ export default function WaterHeaterGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tankless pros + cons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pros</strong> — endless hot water, lasts 2x, smaller, more energy efficient.</li>
               <li><strong>Cons</strong> — higher upfront cost, may need gas line upgrade.</li>
               <li>2026 tax credits — heat pump water heaters $2,000+.</li>
@@ -90,7 +90,7 @@ export default function WaterHeaterGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free leak detector</h3>
-            <p className="text-sm text-muted-foreground">Many home insurance companies + utility companies provide FREE smart leak detectors. Ask. Smart-home insurance discount common 5-10%. Heat pump water heaters often have utility rebates $500-1,500. Senior weatherization programs may include water heater replacement free if income-eligible.</p>
+            <p className="text-base text-muted-foreground">Many home insurance companies + utility companies provide FREE smart leak detectors. Ask. Smart-home insurance discount common 5-10%. Heat pump water heaters often have utility rebates $500-1,500. Senior weatherization programs may include water heater replacement free if income-eligible.</p>
           </CardContent>
         </Card>
       </main>

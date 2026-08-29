@@ -1449,15 +1449,15 @@ export default function RemoteControlDecoder() {
               />
             </div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="p-3 rounded-xl bg-slate-900/10 dark:bg-slate-100/10 text-slate-900 dark:text-slate-100">
+              <div className="p-3 rounded-xl bg-slate-900/10 dark:bg-slate-100/10 text-foreground ">
                 <MonitorSmartphone className="w-7 h-7" />
               </div>
               <Badge variant="outline" className="text-xs">Entertainment · Every button explained</Badge>
             </div>
-            <h1 className="text-3xl md:text-5xl font-bold mb-3 pr-14 text-slate-900 dark:text-slate-100">
+            <h1 className="text-3xl md:text-5xl font-bold mb-3 pr-14 text-foreground ">
               What Does That Button Do?
             </h1>
-            <p className="text-lg md:text-2xl text-slate-700 dark:text-slate-300 max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-2xl text-foreground max-w-3xl leading-relaxed">
               Identify every button on your remote. No more guessing. Pick your remote below and we&apos;ll walk through each key in plain English.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -1628,16 +1628,16 @@ export default function RemoteControlDecoder() {
                   </Card>
 
                   {selected.proTips.length > 0 && (
-                    <Card className="bg-emerald-50 dark:bg-emerald-950/20 border-emerald-500/40">
+                    <Card className="bg-success border-emerald-500/40">
                       <CardContent className="p-5">
                         <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                          <Lightbulb className="w-5 h-5 text-emerald-700 dark:text-emerald-400" />
+                          <Lightbulb className="w-5 h-5 text-success-foreground " />
                           Quick Tips
                         </h3>
                         <ul className="space-y-3">
                           {selected.proTips.map((t) => (
                             <li key={t.title} className="text-base leading-relaxed">
-                              <strong className="text-emerald-900 dark:text-emerald-200">{t.title}.</strong> {t.body}
+                              <strong className="text-success-foreground ">{t.title}.</strong> {t.body}
                             </li>
                           ))}
                         </ul>
@@ -1663,9 +1663,9 @@ export default function RemoteControlDecoder() {
                               <div className="font-semibold text-lg mb-1">{b.name}</div>
                               <p className="text-base leading-relaxed">{b.purpose}</p>
                               {b.confusion && (
-                                <div className="mt-2 rounded-lg border border-amber-500/40 bg-amber-50 dark:bg-amber-950/30 p-3 flex items-start gap-2">
+                                <div className="mt-2 rounded-lg border border-amber-500/40 bg-warn p-3 flex items-start gap-2">
                                   <AlertTriangle
-                                    className="w-5 h-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5"
+                                    className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5"
                                     aria-hidden="true"
                                   />
                                   <div className="text-sm md:text-base leading-relaxed">
@@ -1684,16 +1684,16 @@ export default function RemoteControlDecoder() {
 
               {/* Hidden features */}
               {selected.hidden.length > 0 && (
-                <Card className="mt-6 bg-violet-50 dark:bg-violet-950/20 border-violet-500/40">
+                <Card className="mt-6 bg-primary/10 border-violet-500/40">
                   <CardContent className="p-5 md:p-6">
                     <h3 className="text-xl md:text-2xl font-semibold mb-3 flex items-center gap-2">
-                      <Eye className="w-6 h-6 text-violet-700 dark:text-violet-400" />
+                      <Eye className="w-6 h-6 text-primary " />
                       Hidden features most people miss
                     </h3>
                     <ul className="space-y-3">
                       {selected.hidden.map((h) => (
                         <li key={h.title} className="text-base leading-relaxed">
-                          <strong className="text-violet-900 dark:text-violet-200">{h.title}.</strong> {h.body}
+                          <strong className="text-primary ">{h.title}.</strong> {h.body}
                         </li>
                       ))}
                     </ul>

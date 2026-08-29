@@ -72,7 +72,7 @@ export default function GiftIdeasList() {
   const givenCount = ideas.filter(i => i.given).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Gift Ideas List | TekSure"
         description="Keep a running list of gift ideas for everyone in your life. When holidays come, you'll be ready with thoughtful options."
@@ -82,9 +82,9 @@ export default function GiftIdeasList() {
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
             <Gift className="h-7 w-7 text-pink-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Gift Ideas List</h1>
+            <h1 className="text-3xl font-bold text-foreground">Gift Ideas List</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             When you spot something perfect for a loved one, jot it down here. By holiday time, you have a list ready to go.
           </p>
         </div>
@@ -94,20 +94,20 @@ export default function GiftIdeasList() {
           <div className="grid grid-cols-3 gap-3 mb-4">
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">People</p>
+                <p className="text-sm text-muted-foreground">People</p>
                 <p className="text-xl font-bold text-pink-700">{people.length}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Ideas saved</p>
+                <p className="text-sm text-muted-foreground">Ideas saved</p>
                 <p className="text-xl font-bold text-pink-700">{totalIdeas}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Given</p>
-                <p className="text-xl font-bold text-green-700">{givenCount}</p>
+                <p className="text-sm text-muted-foreground">Given</p>
+                <p className="text-xl font-bold text-success-foreground">{givenCount}</p>
               </CardContent>
             </Card>
           </div>
@@ -136,7 +136,7 @@ export default function GiftIdeasList() {
                 <Input id="p-bday" type="date" value={personForm.birthday} onChange={e => setPersonForm(f => ({ ...f, birthday: e.target.value }))} className="mt-1 text-base" />
               </div>
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={addPerson} size="lg" className="w-full sm:w-auto text-base">Add Person</Button>
           </CardContent>
         </Card>
@@ -153,10 +153,10 @@ export default function GiftIdeasList() {
         {/* People with their ideas */}
         {people.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Gift className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Gift className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No people on the list yet.</p>
-              <p className="text-sm mt-1">Start with a family member or close friend.</p>
+              <p className="text-base mt-1">Start with a family member or close friend.</p>
             </CardContent>
           </Card>
         ) : (
@@ -170,30 +170,30 @@ export default function GiftIdeasList() {
                     <CardTitle className="text-base text-pink-800 flex items-center justify-between">
                       <span>
                         {p.name}
-                        {p.relationship && <span className="text-gray-500 font-normal"> · {p.relationship}</span>}
-                        {p.birthday && <span className="text-gray-500 font-normal text-xs ml-2">🎂 {formatBirthday(p.birthday)}</span>}
+                        {p.relationship && <span className="text-muted-foreground font-normal"> · {p.relationship}</span>}
+                        {p.birthday && <span className="text-muted-foreground font-normal text-sm ml-2">🎂 {formatBirthday(p.birthday)}</span>}
                       </span>
-                      <Button variant="ghost" size="icon" onClick={() => removePerson(p.id)} className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden">
+                      <Button variant="ghost" size="icon" onClick={() => removePerson(p.id)} className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden">
                         <Trash2 className="h-3 w-3" />
                       </Button>
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="pt-2">
                     {personIdeas.length === 0 ? (
-                      <p className="text-sm text-gray-500 italic mb-3 print:hidden">No ideas yet — add one below.</p>
+                      <p className="text-base text-muted-foreground italic mb-3 print:hidden">No ideas yet — add one below.</p>
                     ) : (
                       <ul className="space-y-1 mb-3">
                         {personIdeas.map(i => (
-                          <li key={i.id} className="flex items-center justify-between gap-2 text-sm">
+                          <li key={i.id} className="flex items-center justify-between gap-2 text-base">
                             <button onClick={() => toggleGiven(i.id)} className="flex items-center gap-2 flex-1 text-left print:hidden">
-                              {i.given ? <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0" /> : <span className="h-4 w-4 rounded-full border border-gray-300 shrink-0" />}
+                              {i.given ? <CheckCircle2 className="h-4 w-4 text-success-foreground shrink-0" /> : <span className="h-4 w-4 rounded-full border border-border shrink-0" />}
                               <span className={i.given ? "line-through text-gray-400" : "text-gray-800"}>{i.text}</span>
                               {i.cost && <Badge variant="secondary" className="text-xs">{i.cost}</Badge>}
                             </button>
                             <span className="hidden print:inline">
                               {i.given ? "✓ " : "○ "}{i.text}{i.cost && ` (${i.cost})`}
                             </span>
-                            <Button variant="ghost" size="icon" onClick={() => removeIdea(i.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                            <Button variant="ghost" size="icon" onClick={() => removeIdea(i.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                               <Trash2 className="h-3 w-3" />
                             </Button>
                           </li>
@@ -223,15 +223,15 @@ export default function GiftIdeasList() {
           </div>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Pay attention when family talk about things they want or need. Add it here right away — by November you will have a head start on holiday shopping.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

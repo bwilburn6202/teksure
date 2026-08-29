@@ -93,7 +93,7 @@ export default function ProgressReport() {
                     <stat.icon className={`h-5 w-5 ${stat.color}`} />
                   </div>
                   <p className="text-2xl font-black">{stat.value}</p>
-                  <p className="text-xs text-muted-foreground mt-0.5">{stat.label}</p>
+                  <p className="text-sm text-muted-foreground mt-0.5">{stat.label}</p>
                 </CardContent>
               </Card>
             </div>
@@ -108,7 +108,7 @@ export default function ProgressReport() {
               <Badge variant="secondary">{total} / {nextGoal} guides</Badge>
             </div>
             <Progress value={pctToGoal} className="h-3 mb-2" />
-            <p className="text-sm text-muted-foreground">{nextGoal - total} more guide{nextGoal - total !== 1 ? 's' : ''} to reach your next milestone</p>
+            <p className="text-base text-muted-foreground">{nextGoal - total} more guide{nextGoal - total !== 1 ? 's' : ''} to reach your next milestone</p>
           </CardContent>
         </Card>
 
@@ -143,9 +143,9 @@ export default function ProgressReport() {
                     <img src={getGuideThumbnailSmall(g)} alt="" className="w-5 h-5 rounded object-cover shrink-0" loading="lazy" />
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium truncate group-hover:text-primary transition-colors">{g.title}</p>
-                      <p className="text-xs text-muted-foreground">{g.readTime}</p>
+                      <p className="text-sm text-muted-foreground">{g.readTime}</p>
                     </div>
-                    <CheckCircle2 className="h-4 w-4 text-green-500 shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-success-foreground shrink-0" />
                   </Link>
                 ))}
               </div>
@@ -160,7 +160,7 @@ export default function ProgressReport() {
               <Map className="h-8 w-8 text-primary" />
               <div className="flex-1">
                 <p className="font-semibold">Your learning path</p>
-                <p className="text-sm text-muted-foreground">{chosenPath}</p>
+                <p className="text-base text-muted-foreground">{chosenPath}</p>
               </div>
               <Button asChild variant="outline" size="sm">
                 <Link to="/my-path">View path</Link>
@@ -175,7 +175,7 @@ export default function ProgressReport() {
             <CardContent>
               <BookOpen className="h-12 w-12 mx-auto text-muted-foreground opacity-30 mb-4" />
               <h2 className="text-lg font-semibold mb-2">No guides completed yet</h2>
-              <p className="text-muted-foreground text-sm mb-5">Start reading guides to track your progress here. Your journey begins with a single step.</p>
+              <p className="text-muted-foreground text-base mb-5">Start reading guides to track your progress here. Your journey begins with a single step.</p>
               <Button asChild className="gap-2 rounded-xl">
                 <Link to="/my-path"><BookOpen className="h-4 w-4" /> Start Learning</Link>
               </Button>
@@ -187,11 +187,11 @@ export default function ProgressReport() {
         <Card className="rounded-2xl border border-border bg-card">
           <CardContent className="pt-5 pb-5">
             {subscribed ? (
-              <div className="flex items-center gap-3 text-green-700">
+              <div className="flex items-center gap-3 text-success-foreground">
                 <CheckCircle2 className="h-5 w-5 shrink-0" />
                 <div>
                   <p className="font-semibold">Monthly reports are on</p>
-                  <p className="text-sm text-muted-foreground">We'll email you a progress summary at the start of each month.</p>
+                  <p className="text-base text-muted-foreground">We'll email you a progress summary at the start of each month.</p>
                 </div>
               </div>
             ) : (
@@ -200,7 +200,7 @@ export default function ProgressReport() {
                   <Mail className="h-5 w-5 text-primary shrink-0" />
                   <div>
                     <p className="font-semibold">Get monthly progress emails</p>
-                    <p className="text-sm text-muted-foreground">A brief email each month showing your guides, badges, and what to try next.</p>
+                    <p className="text-base text-muted-foreground">A brief email each month showing your guides, badges, and what to try next.</p>
                   </div>
                 </div>
                 <form onSubmit={handleSubscribe} className="flex gap-2">

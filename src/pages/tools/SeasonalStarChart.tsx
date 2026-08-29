@@ -57,20 +57,20 @@ export default function SeasonalStarChart() {
   const [season, setSeason] = useState<Season>(autoSeason);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Seasonal Star Chart for Seniors | TekSure" description="A simple list of the best things to see in the night sky by season. Constellations, planets, deep sky, meteor showers. Print and take outside." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <Sparkles className="h-7 w-7 text-indigo-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Seasonal Star Chart</h1>
+            <Sparkles className="h-7 w-7 text-primary" />
+            <h1 className="text-3xl font-bold text-foreground">Seasonal Star Chart</h1>
           </div>
-          <p className="text-gray-600 text-lg">The best things to see in tonight is sky. Naked-eye targets, binocular treats, and one or two telescope challenges per season.</p>
+          <p className="text-muted-foreground text-lg">The best things to see in tonight is sky. Naked-eye targets, binocular treats, and one or two telescope challenges per season.</p>
         </div>
 
         <Card className="mb-4 print:hidden">
           <CardContent className="py-4 px-4">
-            <p className="text-sm font-semibold text-gray-700 mb-2">Season</p>
+            <p className="text-base font-semibold text-foreground mb-2">Season</p>
             <div className="flex flex-wrap gap-2">
               {(Object.keys(HIGHLIGHTS) as Season[]).map(s => (
                 <Button key={s} size="sm" variant={season === s ? "default" : "outline"} onClick={() => setSeason(s)}>{s}</Button>
@@ -81,31 +81,31 @@ export default function SeasonalStarChart() {
 
         <Card className="mb-4">
           <CardContent className="py-4 px-4">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">{season} sky highlights</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-3">{season} sky highlights</h2>
             <div className="space-y-3">
               {HIGHLIGHTS[season].map((h, i) => (
-                <div key={i} className="border border-gray-200 rounded-lg p-3 bg-white">
+                <div key={i} className="border border-border rounded-lg p-3 bg-card">
                   <div className="flex items-baseline justify-between gap-2">
-                    <p className="font-semibold text-gray-900">{h.name}</p>
-                    <span className="text-xs text-indigo-700 italic">{h.difficulty}</span>
+                    <p className="font-semibold text-foreground">{h.name}</p>
+                    <span className="text-sm text-primary italic">{h.difficulty}</span>
                   </div>
-                  <p className="text-sm text-gray-700 mt-1">{h.what}</p>
-                  <p className="text-xs text-gray-500 mt-1">When: {h.when}</p>
+                  <p className="text-base text-foreground mt-1">{h.what}</p>
+                  <p className="text-sm text-muted-foreground mt-1">When: {h.when}</p>
                 </div>
               ))}
             </div>
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-blue-50 border-blue-200">
+        <Card className="mb-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Free apps to add:</span> Stellarium (free desktop and phone app, shows exactly what is above you right now), SkySafari (paid), NASA Spot The Station (free, tells you when ISS flies over). Dark Sky Finder maps light pollution near you.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Free apps to add:</span> Stellarium (free desktop and phone app, shows exactly what is above you right now), SkySafari (paid), NASA Spot The Station (free, tells you when ISS flies over). Dark Sky Finder maps light pollution near you.</p>
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-amber-50 border-amber-200">
+        <Card className="mb-4 bg-warn border-warn-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-amber-900"><span className="font-semibold">For older eyes:</span> Let your eyes adjust for 20 minutes (no phone screens). Use a red flashlight to keep night vision. A reclining lawn chair beats a kink in the neck. Warm clothes - it gets colder than you expect.</p>
+            <p className="text-base text-warn-foreground"><span className="font-semibold">For older eyes:</span> Let your eyes adjust for 20 minutes (no phone screens). Use a red flashlight to keep night vision. A reclining lawn chair beats a kink in the neck. Warm clothes - it gets colder than you expect.</p>
           </CardContent>
         </Card>
 
@@ -115,6 +115,6 @@ export default function SeasonalStarChart() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

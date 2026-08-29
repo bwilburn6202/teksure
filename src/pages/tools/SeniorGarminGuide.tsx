@@ -22,7 +22,7 @@ export default function SeniorGarminGuide() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Body Battery</h2><p>Tells you how recovered you are. Helps pace your day.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hiking and golf</h2><p>Built-in GPS for trails. Yardage for golf without phone.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Incident detection</h2><p>If you crash on a bike, watch alerts emergency contacts.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Garmin Connect app is free. No paid subscription needed.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Garmin Connect app is free. No paid subscription needed.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

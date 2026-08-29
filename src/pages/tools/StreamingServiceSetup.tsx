@@ -127,7 +127,7 @@ export default function StreamingServiceSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-red-500/10 rounded-full">
-                <Tv className="h-8 w-8 text-red-600" />
+                <Tv className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Streaming Service Setup</h1>
@@ -142,14 +142,14 @@ export default function StreamingServiceSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick a service</p>
+              <p className="text-base font-semibold mb-3">Pick a service</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {SERVICES.map(o => (
                   <button key={o.id} onClick={() => setS(o.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       s === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -164,7 +164,7 @@ export default function StreamingServiceSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-3 mb-2">Setup</p>
               <ol className="space-y-2 mb-4">
                 {setup.setupSteps.map((step, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{step}</span>
                   </li>
@@ -175,8 +175,8 @@ export default function StreamingServiceSetup() {
               <div className="space-y-2">
                 {setup.shortcuts.map((sc, i) => (
                   <div key={i} className="p-3 rounded-lg border border-border">
-                    <p className="font-medium text-sm">{sc.title}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{sc.detail}</p>
+                    <p className="font-medium text-base">{sc.title}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{sc.detail}</p>
                   </div>
                 ))}
               </div>
@@ -190,8 +190,8 @@ export default function StreamingServiceSetup() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A note on price creep</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A note on price creep</p>
+              <p className="text-sm text-muted-foreground">
                 All these services have raised prices regularly. Check the Subscription Tracker tool every quarter — what you signed up for at $10/mo may now cost $18. Pause or cancel during slow seasons; most accept you back without losing your watchlist.
               </p>
             </CardContent>
@@ -201,16 +201,16 @@ export default function StreamingServiceSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/cord-cutter-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Cord Cutter Wizard</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pick the right combo of services.</p>
+                <p className="font-medium text-base">Cord Cutter Wizard</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pick the right combo of services.</p>
               </Link>
               <Link to="/tools/streaming-calculator" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Streaming Calculator</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Total monthly cost.</p>
+                <p className="font-medium text-base">Streaming Calculator</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Total monthly cost.</p>
               </Link>
               <Link to="/tools/library-power-pack" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Library Power Pack</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Free streaming via your library.</p>
+                <p className="font-medium text-base">Library Power Pack</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Free streaming via your library.</p>
               </Link>
             </div>
           </div>

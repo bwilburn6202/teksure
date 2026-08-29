@@ -30,10 +30,10 @@ export default function SmartLockGuide() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{l.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{l.cost}</span>
+                  <span className="text-base font-semibold text-primary">{l.cost}</span>
                 </div>
-                <p className="text-sm">{l.best}</p>
-                <p className="text-sm text-muted-foreground">{l.good}</p>
+                <p className="text-base">{l.best}</p>
+                <p className="text-base text-muted-foreground">{l.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SmartLockGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors love them</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No more "did I lock the door?" — check from phone.</li>
               <li>Lock remotely if you forgot.</li>
               <li>Codes for caregiver / dog walker / cleaner — change anytime.</li>
@@ -57,7 +57,7 @@ export default function SmartLockGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install in 30 minutes</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Remove old deadbolt (4 screws).</li>
               <li>Install new lock per instructions.</li>
               <li>Connect to wifi via app.</li>
@@ -72,7 +72,7 @@ export default function SmartLockGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Battery + backup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most run on AA batteries — 6-12 months.</li>
               <li>Low battery = warns weeks ahead.</li>
               <li>Backup keyhole on most models — physical key works in emergency.</li>
@@ -85,7 +85,7 @@ export default function SmartLockGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Insurance discount</h3>
-            <p className="text-sm text-muted-foreground">Many homeowner&apos;s policies give 5-10% discount for monitored smart locks + doorbells. Worth filing the form. Often covers cost of locks within 2 years.</p>
+            <p className="text-base text-muted-foreground">Many homeowner&apos;s policies give 5-10% discount for monitored smart locks + doorbells. Worth filing the form. Often covers cost of locks within 2 years.</p>
           </CardContent>
         </Card>
       </main>

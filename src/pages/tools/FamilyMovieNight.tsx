@@ -19,7 +19,7 @@ export default function FamilyMovieNight() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best with grandkids 5-10</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Toy Story (all 4) — Disney+.</li>
               <li>Finding Nemo — Disney+.</li>
               <li>Frozen — Disney+.</li>
@@ -34,7 +34,7 @@ export default function FamilyMovieNight() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best with grandkids 10-15</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Harry Potter (all) — HBO Max.</li>
               <li>Star Wars (original trilogy) — Disney+.</li>
               <li>Princess Bride — HBO Max.</li>
@@ -49,7 +49,7 @@ export default function FamilyMovieNight() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Multi-generation classics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sound of Music — Disney+.</li>
               <li>Mary Poppins (original) — Disney+.</li>
               <li>The Wizard of Oz — Max.</li>
@@ -63,7 +63,7 @@ export default function FamilyMovieNight() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Series for binge nights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>The Mandalorian — Disney+.</li>
               <li>Stranger Things (older kids) — Netflix.</li>
               <li>Wednesday — Netflix.</li>
@@ -77,7 +77,7 @@ export default function FamilyMovieNight() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch remotely together</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Teleparty</strong> — Chrome extension. Sync watching.</li>
               <li><strong>Disney+ GroupWatch</strong> — built-in.</li>
               <li><strong>Amazon Prime Watch Party</strong>.</li>
@@ -91,7 +91,7 @@ export default function FamilyMovieNight() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Movie night setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pop popcorn (microwave OK).</li>
               <li>Theater snacks — candy + drinks.</li>
               <li>Dim lights.</li>
@@ -106,7 +106,7 @@ export default function FamilyMovieNight() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pre-screen difficult content</h3>
-            <p className="text-sm text-muted-foreground">CommonSenseMedia.org rates kid-appropriateness. Check before watching with grandkids. Ask parents what kids may watch. Newer movies = more swearing/violence than older. Disney+ + Pixar generally safe. Pre-watch yourself first if uncertain. Build family tradition.</p>
+            <p className="text-base text-muted-foreground">CommonSenseMedia.org rates kid-appropriateness. Check before watching with grandkids. Ask parents what kids may watch. Newer movies = more swearing/violence than older. Disney+ + Pixar generally safe. Pre-watch yourself first if uncertain. Build family tradition.</p>
           </CardContent>
         </Card>
       </main>

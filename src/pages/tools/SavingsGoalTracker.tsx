@@ -88,7 +88,7 @@ export default function SavingsGoalTracker() {
   const totalSaved = goals.reduce((s, g) => s + g.saved, 0);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Savings Goal Tracker | TekSure"
         description="Track multiple savings goals — emergency fund, holidays, vacation, repairs. Add deposits, see progress bars, and stay motivated."
@@ -98,9 +98,9 @@ export default function SavingsGoalTracker() {
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
             <PiggyBank className="h-7 w-7 text-pink-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Savings Goal Tracker</h1>
+            <h1 className="text-3xl font-bold text-foreground">Savings Goal Tracker</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Set savings goals and track each deposit. Watching the bar fill up keeps you motivated.
           </p>
         </div>
@@ -110,20 +110,20 @@ export default function SavingsGoalTracker() {
           <div className="grid grid-cols-3 gap-3 mb-4">
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Goals</p>
+                <p className="text-sm text-muted-foreground">Goals</p>
                 <p className="text-xl font-bold text-pink-700">{goals.length}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Saved</p>
-                <p className="text-xl font-bold text-green-700">{formatMoney(totalSaved)}</p>
+                <p className="text-sm text-muted-foreground">Saved</p>
+                <p className="text-xl font-bold text-success-foreground">{formatMoney(totalSaved)}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Target</p>
-                <p className="text-xl font-bold text-gray-700">{formatMoney(totalTarget)}</p>
+                <p className="text-sm text-muted-foreground">Target</p>
+                <p className="text-xl font-bold text-foreground">{formatMoney(totalTarget)}</p>
               </CardContent>
             </Card>
           </div>
@@ -172,7 +172,7 @@ export default function SavingsGoalTracker() {
               <Label htmlFor="goal-notes" className="text-base font-medium">Notes (optional)</Label>
               <Input id="goal-notes" placeholder="e.g. From bonus and side gigs" value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={() => add()} size="lg" className="w-full sm:w-auto text-base">Add Goal</Button>
           </CardContent>
         </Card>
@@ -188,10 +188,10 @@ export default function SavingsGoalTracker() {
 
         {goals.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <PiggyBank className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <PiggyBank className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No savings goals yet.</p>
-              <p className="text-sm mt-1">Pick a preset above or enter your own goal.</p>
+              <p className="text-base mt-1">Pick a preset above or enter your own goal.</p>
             </CardContent>
           </Card>
         ) : (
@@ -206,22 +206,22 @@ export default function SavingsGoalTracker() {
                     <div className="flex items-start justify-between gap-2 mb-2">
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2">
-                          {done && <CheckCircle2 className="h-5 w-5 text-green-600" />}
-                          <span className="font-semibold text-gray-900 text-base">{g.name}</span>
+                          {done && <CheckCircle2 className="h-5 w-5 text-success-foreground" />}
+                          <span className="font-semibold text-foreground text-base">{g.name}</span>
                         </div>
-                        <p className="text-sm text-gray-600 mt-0.5">
+                        <p className="text-base text-muted-foreground mt-0.5">
                           <span className="font-bold text-pink-700">{formatMoney(g.saved)}</span>
-                          <span className="text-gray-400"> of {formatMoney(g.target)}</span>
+                          <span className="text-muted-foreground"> of {formatMoney(g.target)}</span>
                           {days !== null && days > 0 && (
-                            <span className="text-xs text-gray-500"> · {days} days to go</span>
+                            <span className="text-sm text-muted-foreground"> · {days} days to go</span>
                           )}
                           {days !== null && days <= 0 && !done && (
                             <Badge className="ml-2 text-xs bg-amber-500">Target date passed</Badge>
                           )}
                         </p>
-                        {g.notes && <p className="text-xs text-gray-500 italic mt-0.5">{g.notes}</p>}
+                        {g.notes && <p className="text-sm text-muted-foreground italic mt-0.5">{g.notes}</p>}
                       </div>
-                      <Button variant="ghost" size="icon" onClick={() => remove(g.id)} className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden">
+                      <Button variant="ghost" size="icon" onClick={() => remove(g.id)} className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden">
                         <Trash2 className="h-3 w-3" />
                       </Button>
                     </div>
@@ -231,7 +231,7 @@ export default function SavingsGoalTracker() {
                         style={{ width: `${p}%` }}
                       />
                     </div>
-                    <p className="text-xs text-gray-500 mb-2">{p}% of goal</p>
+                    <p className="text-sm text-muted-foreground mb-2">{p}% of goal</p>
                     {!done && (
                       <div className="flex gap-2 print:hidden">
                         <Input
@@ -246,7 +246,7 @@ export default function SavingsGoalTracker() {
                         <Button size="sm" onClick={() => deposit(g.id)} className="h-11">Deposit</Button>
                       </div>
                     )}
-                    {done && <p className="text-sm font-semibold text-green-700">🎉 Goal reached!</p>}
+                    {done && <p className="text-base font-semibold text-success-foreground">🎉 Goal reached!</p>}
                   </CardContent>
                 </Card>
               );
@@ -254,15 +254,15 @@ export default function SavingsGoalTracker() {
           </div>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Set up automatic transfers from checking to savings on the day you get paid. Money you don't see is money you don't spend.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

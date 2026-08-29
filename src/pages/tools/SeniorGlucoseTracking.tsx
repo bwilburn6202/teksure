@@ -22,7 +22,7 @@ export default function SeniorGlucoseTracking() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Glucose Buddy</h2><p>Free. Big numbers. Reminds you when to check.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share with family</h2><p>Dexcom and Libre let family see your numbers in real time. Caregivers get low-blood-sugar alerts.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Print for doctor</h2><p>All apps export a PDF report. 2 weeks of data tells your doctor a lot.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Medicare Part B covers continuous monitors for many seniors. Ask your doctor.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Medicare Part B covers continuous monitors for many seniors. Ask your doctor.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

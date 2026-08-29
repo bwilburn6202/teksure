@@ -22,7 +22,7 @@ export default function SeniorAncestryApp() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">DNA test</h2><p>AncestryDNA $99 ($59 on sale). Connect to family tree. Find unknown relatives.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Library access</h2><p>Most libraries offer FREE Ancestry access on library computers. Save the $25/month.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Privacy</h2><p>Decide if you want your tree public. Private trees are still searchable by you.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Interview your oldest relative now. Their stories disappear forever otherwise.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Interview your oldest relative now. Their stories disappear forever otherwise.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

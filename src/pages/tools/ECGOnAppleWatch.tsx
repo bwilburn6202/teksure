@@ -19,7 +19,7 @@ export default function ECGOnAppleWatch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30-second EKG recording.</li>
               <li>FDA-cleared.</li>
               <li>Detects atrial fibrillation (AFib).</li>
@@ -33,7 +33,7 @@ export default function ECGOnAppleWatch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Take an ECG</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open ECG app on Apple Watch.</li>
               <li>Rest arm on table.</li>
               <li>Touch + hold finger on Digital Crown.</li>
@@ -47,7 +47,7 @@ export default function ECGOnAppleWatch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to take ECG</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heart racing / pounding feel.</li>
               <li>Watch alerts irregular rhythm.</li>
               <li>Skipping beats sensation.</li>
@@ -61,7 +61,7 @@ export default function ECGOnAppleWatch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AFib alerts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Watch monitors background — no action needed.</li>
               <li>If detects 5x irregular rhythms in row → notification.</li>
               <li>Take ECG when alerted.</li>
@@ -75,7 +75,7 @@ export default function ECGOnAppleWatch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Send to doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Health app → ECG → tap recording.</li>
               <li>Tap Share PDF → Email/Message to doctor.</li>
               <li>Or print at appointment.</li>
@@ -89,7 +89,7 @@ export default function ECGOnAppleWatch() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Limits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Single-lead vs 12-lead ER.</li>
               <li>Detects AFib but not all heart issues.</li>
               <li>Limited to certain rhythms.</li>
@@ -103,7 +103,7 @@ export default function ECGOnAppleWatch() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Other smartwatch ECG</h3>
-            <p className="text-sm text-muted-foreground"><strong>Samsung Galaxy Watch</strong> — ECG, only with Galaxy phone. <strong>Fitbit Sense 2</strong> — ECG. <strong>Withings ScanWatch</strong> — beautiful + ECG. <strong>KardiaMobile</strong> — $90 device, ECG without watch. All FDA-cleared. AFib detection saves lives.</p>
+            <p className="text-base text-muted-foreground"><strong>Samsung Galaxy Watch</strong> — ECG, only with Galaxy phone. <strong>Fitbit Sense 2</strong> — ECG. <strong>Withings ScanWatch</strong> — beautiful + ECG. <strong>KardiaMobile</strong> — $90 device, ECG without watch. All FDA-cleared. AFib detection saves lives.</p>
           </CardContent>
         </Card>
       </main>

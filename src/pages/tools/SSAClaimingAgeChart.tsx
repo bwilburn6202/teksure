@@ -26,21 +26,21 @@ export default function SSAClaimingAgeChart() {
   function fmt(n: number) { return n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }); }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Social Security Claiming Age Chart | TekSure" description="See how your Social Security benefit changes if you claim at 62, FRA, or 70. Type your Full Retirement Age benefit to see the full chart." />
       <div className="max-w-2xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Landmark className="h-7 w-7 text-blue-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Social Security Claiming Chart</h1>
+            <Landmark className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Social Security Claiming Chart</h1>
           </div>
-          <p className="text-gray-600 text-lg">See what your monthly benefit would be at every claiming age between 62 and 70.</p>
+          <p className="text-muted-foreground text-lg">See what your monthly benefit would be at every claiming age between 62 and 70.</p>
         </div>
         <Card className="mb-4">
           <CardContent className="py-4 px-4">
             <label className="text-base font-medium">Your monthly benefit at Full Retirement Age ($)</label>
             <Input type="number" min="0" step="50" value={fra} onChange={e => setFra(e.target.value)} className="mt-1 text-2xl text-center h-14" />
-            <p className="text-xs text-gray-500 mt-2">Look this up at ssa.gov/myaccount. Type 0 to see percent-based factors.</p>
+            <p className="text-sm text-muted-foreground mt-2">Look this up at ssa.gov/myaccount. Type 0 to see percent-based factors.</p>
           </CardContent>
         </Card>
         {valid && (
@@ -51,11 +51,11 @@ export default function SSAClaimingAgeChart() {
                   <div key={a.age} className={`py-2 px-2 flex items-center justify-between ${a.age === 67 ? "bg-blue-50" : a.age === 62 || a.age === 70 ? "bg-amber-50" : ""}`}>
                     <div>
                       <p className="font-semibold">Age {a.age}</p>
-                      {a.note && <p className="text-xs text-gray-500">{a.note}</p>}
+                      {a.note && <p className="text-sm text-muted-foreground">{a.note}</p>}
                     </div>
                     <div className="text-right">
-                      <p className="text-xl font-bold text-blue-700">{fmt(fraNum * a.factor)}</p>
-                      <p className="text-xs text-gray-500">{Math.round(a.factor * 100)}% of FRA</p>
+                      <p className="text-xl font-bold text-info-foreground">{fmt(fraNum * a.factor)}</p>
+                      <p className="text-sm text-muted-foreground">{Math.round(a.factor * 100)}% of FRA</p>
                     </div>
                   </div>
                 ))}
@@ -63,15 +63,15 @@ export default function SSAClaimingAgeChart() {
             </CardContent>
           </Card>
         )}
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Note: </span>
               The chart assumes a Full Retirement Age of 67. If you were born before 1960, your FRA is between 66 and 66 years 10 months — the percentages shift slightly. Your actual benefit also depends on your lifetime earnings.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

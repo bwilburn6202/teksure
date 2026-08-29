@@ -170,9 +170,9 @@ export default function Webinars() {
               Live and recorded online sessions on the topics that matter most — all free, all beginner-friendly.
             </p>
             <div className="flex items-center justify-center gap-6 mt-5 text-sm text-muted-foreground">
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-green-500" /> Always free</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-green-500" /> No jargon</span>
-              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-green-500" /> Live Q&A</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-success-foreground" /> Always free</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-success-foreground" /> No jargon</span>
+              <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-success-foreground" /> Live Q&A</span>
             </div>
           </div>
         </section>
@@ -220,7 +220,7 @@ export default function Webinars() {
                       </div>
 
                       <h2 className="font-semibold text-base leading-snug mb-1 text-primary">{webinar.title}</h2>
-                      <p className="text-sm text-muted-foreground leading-relaxed mb-3">{webinar.description}</p>
+                      <p className="text-base text-muted-foreground leading-relaxed mb-3">{webinar.description}</p>
 
                       {/* Meta */}
                       <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground mb-3">
@@ -250,7 +250,7 @@ export default function Webinars() {
                       {/* CTA */}
                       {webinar.status === 'upcoming' && (
                         registered.has(webinar.id) ? (
-                          <div className="flex items-center gap-2 text-sm text-green-600">
+                          <div className="flex items-center gap-2 text-sm text-success-foreground">
                             <CheckCircle2 className="h-4 w-4" /> Registered! We\'ll remind you before it starts.
                           </div>
                         ) : (
@@ -287,8 +287,8 @@ export default function Webinars() {
             <CardContent className="p-6 text-center">
               <Bell className="h-8 w-8 text-primary mx-auto mb-3" />
               <h3 className="font-bold text-lg mb-1 text-primary">Don't miss a webinar</h3>
-              <p className="text-sm text-muted-foreground mb-4">We run new sessions every two weeks. Register above for upcoming ones, or check back here for new dates.</p>
-              <p className="text-xs text-muted-foreground">All webinars are free. No spam, ever.</p>
+              <p className="text-base text-muted-foreground mb-4">We run new sessions every two weeks. Register above for upcoming ones, or check back here for new dates.</p>
+              <p className="text-sm text-muted-foreground">All webinars are free. No spam, ever.</p>
             </CardContent>
           </Card>
         </div>

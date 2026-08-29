@@ -30,10 +30,10 @@ export default function OnlineBrokerageStarter() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function OnlineBrokerageStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly choices</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fidelity</strong> = best overall. Free. Real phone support. Great for seniors.</li>
               <li><strong>Schwab</strong> = comparable. Has physical branches.</li>
               <li><strong>Vanguard</strong> = simple. Lowest fund costs.</li>
@@ -56,7 +56,7 @@ export default function OnlineBrokerageStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What account to open</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Brokerage</strong> — taxable. Fully flexible.</li>
               <li><strong>Roth IRA</strong> — tax-free growth (income limits).</li>
               <li><strong>Traditional IRA</strong> — tax-deferred (RMDs at 73).</li>
@@ -69,7 +69,7 @@ export default function OnlineBrokerageStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Simple senior portfolio</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>50-60% bonds (stability) — VTBLX, FXNAX.</li>
               <li>30-40% US stocks — VTI, FZROX.</li>
               <li>10% international stocks — VXUS, FZILX.</li>
@@ -83,7 +83,7 @@ export default function OnlineBrokerageStarter() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Open account safely</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Type fidelity.com (or schwab.com) directly — never through email.</li>
               <li>Strong unique password.</li>
               <li>2-factor authentication ON.</li>
@@ -97,7 +97,7 @@ export default function OnlineBrokerageStarter() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free advisor option</h3>
-            <p className="text-sm text-muted-foreground">Fidelity + Schwab offer FREE consultations with advisors over $25K balance. Help with retirement planning, RMDs, withdrawal strategy. No commission — they&apos;re salaried. Better than fee-based advisor for most seniors. Vanguard PAS = 0.30% for managed account if want hands-off.</p>
+            <p className="text-base text-muted-foreground">Fidelity + Schwab offer FREE consultations with advisors over $25K balance. Help with retirement planning, RMDs, withdrawal strategy. No commission — they&apos;re salaried. Better than fee-based advisor for most seniors. Vanguard PAS = 0.30% for managed account if want hands-off.</p>
           </CardContent>
         </Card>
       </main>

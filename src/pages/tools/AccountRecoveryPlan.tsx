@@ -19,14 +19,14 @@ export default function AccountRecoveryPlan() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why now</h2>
-            <p className="text-sm">If you forget your password, lose your phone, or get hacked — recovery is much easier if you set it up FIRST. Setting up after a problem is painful (or impossible). Five minutes today saves weeks of frustration later.</p>
+            <p className="text-base">If you forget your password, lose your phone, or get hacked — recovery is much easier if you set it up FIRST. Setting up after a problem is painful (or impossible). Five minutes today saves weeks of frustration later.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple ID — Recovery Contact + Recovery Key</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → tap your name → Sign-In &amp; Security.</li>
               <li>Tap "Recovery Contact" — add a trusted family member with their own iPhone.</li>
               <li>If locked out, they help you back in.</li>
@@ -39,7 +39,7 @@ export default function AccountRecoveryPlan() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Google Account</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>myaccount.google.com</strong> → Security.</li>
               <li>Add a recovery phone number (your cell).</li>
               <li>Add a recovery email (a SECOND email, not the same one).</li>
@@ -53,7 +53,7 @@ export default function AccountRecoveryPlan() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Microsoft Account</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>account.microsoft.com</strong> → Security.</li>
               <li>Add recovery phone + recovery email.</li>
               <li>Turn on 2FA via Microsoft Authenticator app.</li>
@@ -66,7 +66,7 @@ export default function AccountRecoveryPlan() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bank accounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Update your phone number on file (online banking → Profile).</li>
               <li>Update email.</li>
               <li>Add a "trusted contact" — bank can call them if account looks compromised. Required for many states for seniors.</li>
@@ -78,8 +78,8 @@ export default function AccountRecoveryPlan() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The "locked out" one-page sheet</h2>
-            <p className="text-sm">Print and keep in a safe place:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Print and keep in a safe place:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Apple ID email + Recovery Key.</li>
               <li>Google email + 8 backup codes.</li>
               <li>Microsoft email + recovery phone.</li>
@@ -87,14 +87,14 @@ export default function AccountRecoveryPlan() {
               <li>Phone passcode + computer login.</li>
               <li>Bank phone numbers.</li>
             </ul>
-            <p className="text-sm mt-3">Sealed envelope. Tell ONE trusted family member where it is.</p>
+            <p className="text-base mt-3">Sealed envelope. Tell ONE trusted family member where it is.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Test it</h3>
-            <p className="text-sm text-muted-foreground">Once a year — try logging into one account using only the recovery process. If recovery doesn&apos;t work, fix it now while you&apos;re calm. NOT after you&apos;re locked out and panicking.</p>
+            <p className="text-base text-muted-foreground">Once a year — try logging into one account using only the recovery process. If recovery doesn&apos;t work, fix it now while you&apos;re calm. NOT after you&apos;re locked out and panicking.</p>
           </CardContent>
         </Card>
       </main>

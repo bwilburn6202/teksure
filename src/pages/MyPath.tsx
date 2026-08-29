@@ -215,7 +215,7 @@ export default function MyPath() {
               {totalDone > 0 && (
                 <div className="flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2">
                   <Flame className="h-4 w-4 text-primary" />
-                  <span className="text-sm font-semibold text-primary">{totalDone} guide{totalDone !== 1 ? 's' : ''} completed</span>
+                  <span className="text-base font-semibold text-primary">{totalDone} guide{totalDone !== 1 ? 's' : ''} completed</span>
                 </div>
               )}
             </div>
@@ -267,7 +267,7 @@ export default function MyPath() {
                 <Button onClick={() => setShowQuiz(true)} className="gap-2 rounded-xl">
                   <Zap className="h-4 w-4" /> Take the quiz
                 </Button>
-                <p className="text-xs text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   Or{' '}
                   <button
                     onClick={() => { setChosenId('beginner'); savePathChoice('beginner'); }}
@@ -305,7 +305,7 @@ export default function MyPath() {
                           <chosenPath.icon className="h-8 w-8 text-primary shrink-0" />
                           <div className="flex-1">
                             <h3 className="font-bold text-lg text-primary">{chosenPath.label}</h3>
-                            <p className="text-sm text-muted-foreground">{chosenPath.description}</p>
+                            <p className="text-base text-muted-foreground">{chosenPath.description}</p>
                           </div>
                           {pct === 100 && (
                             <Badge className="bg-green-500 text-white shrink-0 rounded-full">
@@ -340,7 +340,7 @@ export default function MyPath() {
                                 }`}
                               >
                                 {isDone ? (
-                                  <CheckCircle2 className="h-5 w-5 text-green-500 shrink-0" />
+                                  <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0" />
                                 ) : isNext ? (
                                   <div className="h-5 w-5 rounded-full border-2 border-primary flex items-center justify-center shrink-0">
                                     <ArrowRight className="h-3 w-3 text-primary" />
@@ -351,7 +351,7 @@ export default function MyPath() {
                                 <span className={`flex-1 font-medium ${isDone ? 'line-through text-muted-foreground' : isNext ? 'text-primary' : ''}`}>
                                   {guide?.title ?? slug}
                                 </span>
-                                <span className="text-xs text-muted-foreground shrink-0">Step {i + 1}</span>
+                                <span className="text-sm text-muted-foreground shrink-0">Step {i + 1}</span>
                               </div>
                             );
                           })}
@@ -367,7 +367,7 @@ export default function MyPath() {
                           </Button>
                         ) : (
                           <div className="text-center py-2">
-                            <p className="text-sm font-medium text-green-600 mb-2"> You've completed this path!</p>
+                            <p className="text-base font-medium text-success-foreground mb-2"> You've completed this path!</p>
                             <Button
                               variant="outline"
                               onClick={resetQuiz}
@@ -403,15 +403,15 @@ export default function MyPath() {
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-2">
                         <path.icon className="h-5 w-5 text-primary" />
-                        <span className="font-semibold text-sm text-primary">{path.label}</span>
+                        <span className="font-semibold text-base text-primary">{path.label}</span>
                       </div>
                       {isActive && <Badge variant="secondary" className="text-xs">Active</Badge>}
-                      {pct === 100 && <Trophy className="h-4 w-4 text-amber-500" />}
+                      {pct === 100 && <Trophy className="h-4 w-4 text-warn-foreground" />}
                     </div>
-                    <p className="text-xs text-muted-foreground mb-2">{path.description}</p>
+                    <p className="text-sm text-muted-foreground mb-2">{path.description}</p>
                     <div className="flex items-center gap-2">
                       <Progress value={pct} className="h-1.5 flex-1" />
-                      <span className="text-xs font-medium text-muted-foreground shrink-0">{done}/{total}</span>
+                      <span className="text-sm font-medium text-muted-foreground shrink-0">{done}/{total}</span>
                     </div>
                   </button>
                 );
@@ -424,10 +424,10 @@ export default function MyPath() {
             <Card className="rounded-2xl border border-border bg-card bg-gradient-to-r from-amber-50 to-orange-50">
               <CardContent className="p-4 flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <Trophy className="h-8 w-8 text-amber-500 shrink-0" />
+                  <Trophy className="h-8 w-8 text-warn-foreground shrink-0" />
                   <div>
-                    <p className="font-semibold text-sm text-primary">You've completed {totalDone} guide{totalDone !== 1 ? 's' : ''}!</p>
-                    <p className="text-xs text-muted-foreground">Keep going to earn badges on your profile.</p>
+                    <p className="font-semibold text-base text-primary">You've completed {totalDone} guide{totalDone !== 1 ? 's' : ''}!</p>
+                    <p className="text-sm text-muted-foreground">Keep going to earn badges on your profile.</p>
                   </div>
                 </div>
                 <Button asChild variant="outline" size="sm" className="rounded-xl">

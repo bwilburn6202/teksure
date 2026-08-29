@@ -22,7 +22,7 @@ export default function SeniorBathSafetyTech() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smart water shut-off</h2><p>$500. Detects flooding. Auto-shuts main water.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Anti-slip mat</h2><p>$15. Suction cups. Way safer than wet tile.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bathroom phone</h2><p>Waterproof phone holder. Reach phone easier in fall.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: $50 grab bars + $30 mat + $30 seat = 80% safer bathroom for seniors.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: $50 grab bars + $30 mat + $30 seat = 80% safer bathroom for seniors.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

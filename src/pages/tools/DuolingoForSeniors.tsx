@@ -19,7 +19,7 @@ export default function DuolingoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Duolingo</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FREE forever (paid version removes ads).</li>
               <li>Game-like — addictive in good way.</li>
               <li>5-15 min lessons.</li>
@@ -34,7 +34,7 @@ export default function DuolingoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Duolingo app (free).</li>
               <li>Create account with email.</li>
               <li>Pick language to learn.</li>
@@ -48,7 +48,7 @@ export default function DuolingoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily streak = big motivator. Don&apos;t break it.</li>
               <li>Streak Freezes (free with practice) — protect on bad days.</li>
               <li>Take notes by hand — boosts memory.</li>
@@ -63,7 +63,7 @@ export default function DuolingoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best language picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Spanish</strong> — most useful in US. Travel + community.</li>
               <li><strong>French</strong> — travel + dual cultural value.</li>
               <li><strong>Italian</strong> — easiest for English speakers.</li>
@@ -78,7 +78,7 @@ export default function DuolingoForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mango Languages</strong> — FREE with library card.</li>
               <li><strong>Pimsleur</strong> — FREE with library card.</li>
               <li><strong>BBC Languages</strong> — free podcasts.</li>
@@ -92,7 +92,7 @@ export default function DuolingoForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Brain benefit</h3>
-            <p className="text-sm text-muted-foreground">Bilingual seniors show 4-5 year delay in dementia onset. Even partial language learning protects brain. 15 min/day Duolingo = exercise + brain training combined. Free brain medicine. Plus — handy on travel + connecting with grandkids&apos; classmates, immigrant neighbors.</p>
+            <p className="text-base text-muted-foreground">Bilingual seniors show 4-5 year delay in dementia onset. Even partial language learning protects brain. 15 min/day Duolingo = exercise + brain training combined. Free brain medicine. Plus — handy on travel + connecting with grandkids&apos; classmates, immigrant neighbors.</p>
           </CardContent>
         </Card>
       </main>

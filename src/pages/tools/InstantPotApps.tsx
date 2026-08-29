@@ -30,10 +30,10 @@ export default function InstantPotApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function InstantPotApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Time chart (cheat sheet)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Brown rice</strong> — 22 min, NPR 10 min.</li>
               <li><strong>White rice</strong> — 4 min, NPR 10 min.</li>
               <li><strong>Hard-boiled eggs</strong> — 5 min, NPR 5 min, ice bath.</li>
@@ -60,7 +60,7 @@ export default function InstantPotApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best Instant Pot starter recipes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Beef stew</strong> — every senior cook&apos;s starter.</li>
               <li><strong>Pulled pork</strong> — feed crowds easily.</li>
               <li><strong>Chicken + rice 1-pot</strong> — easy weeknight.</li>
@@ -75,7 +75,7 @@ export default function InstantPotApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior tip</h3>
-            <p className="text-sm text-muted-foreground">Use long handle silicone tongs to lift inner pot — too hot to touch. Buy a glass lid ($15) for slow-cook + sauté modes. Don&apos;t fill above MAX line. Steam release is HOT — angle away from face.</p>
+            <p className="text-base text-muted-foreground">Use long handle silicone tongs to lift inner pot — too hot to touch. Buy a glass lid ($15) for slow-cook + sauté modes. Don&apos;t fill above MAX line. Steam release is HOT — angle away from face.</p>
           </CardContent>
         </Card>
       </main>

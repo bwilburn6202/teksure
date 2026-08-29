@@ -16,17 +16,17 @@ export default function BalanceExerciseApps() {
           <p className="text-lg text-muted-foreground">Best fall prevention there is.</p>
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why balance training matters</h2>
-            <p className="text-sm">1 in 4 seniors falls each year. 1 in 5 falls causes serious injury. Balance training reduces fall risk by 30-40%. 10-15 minutes a day. No equipment.</p>
+            <p className="text-base">1 in 4 seniors falls each year. 1 in 5 falls causes serious injury. Balance training reduces fall risk by 30-40%. 10-15 minutes a day. No equipment.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Nymbl Training (FREE)</strong> — research-backed senior balance app. 10-min/day. Free for many Medicare Advantage members.</li>
               <li><strong>Down Dog (FREE for 60+)</strong> — gentle yoga + balance flow.</li>
               <li><strong>Tai Chi for Seniors apps</strong> — Yang style is gentlest.</li>
@@ -39,7 +39,7 @@ export default function BalanceExerciseApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best research-backed programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Otago Exercise Program</strong> — strength + balance. NIH-validated. Reduces falls 35%. Free PDFs online.</li>
               <li><strong>Tai Chi: Moving for Better Balance</strong> — CDC-approved. Search at "Tai Chi" + your zip — free at many community centers.</li>
               <li><strong>A Matter of Balance</strong> — 8-session free workshop at YMCAs and senior centers.</li>
@@ -51,21 +51,21 @@ export default function BalanceExerciseApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5 simple daily exercises</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Heel-toe walk</strong> — 20 steps, like a tightrope. Hold counter for support.</li>
               <li><strong>Single-leg stand</strong> — 10 sec each leg. Build to 30 sec.</li>
               <li><strong>Sit-to-stand</strong> — 10 reps from chair without using hands.</li>
               <li><strong>Heel raises</strong> — 15 reps, holding counter.</li>
               <li><strong>Side leg raises</strong> — 10 reps each side.</li>
             </ol>
-            <p className="text-sm mt-3">Do all 5 = 10 minutes. Daily. Within 4 weeks, balance noticeably improves.</p>
+            <p className="text-base mt-3">Do all 5 = 10 minutes. Daily. Within 4 weeks, balance noticeably improves.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Medicare PT</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;ve fallen recently, ask doctor for a physical therapy referral. Medicare covers it. Therapist designs a program for YOUR balance issues. Way more effective than apps for the first few weeks. Then maintain with apps.</p>
+            <p className="text-base text-muted-foreground">If you&apos;ve fallen recently, ask doctor for a physical therapy referral. Medicare covers it. Therapist designs a program for YOUR balance issues. Way more effective than apps for the first few weeks. Then maintain with apps.</p>
           </CardContent>
         </Card>
       </main>

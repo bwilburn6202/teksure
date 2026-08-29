@@ -19,7 +19,7 @@ export default function AppleWatchTextingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5 ways to reply</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Voice dictation</strong> — speak, watch transcribes.</li>
               <li><strong>Audio message</strong> — watch records voice, sends as audio.</li>
               <li><strong>Smart Reply suggestions</strong> — tap pre-built short replies.</li>
@@ -32,7 +32,7 @@ export default function AppleWatchTextingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart Reply setup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>iPhone Watch app → My Watch → Messages → Default Replies.</li>
               <li>Edit list — add common responses you actually use.</li>
               <li>Examples: "OK", "On my way", "Call me", "Love you", "Running late", "Yes, please", "No, thanks".</li>
@@ -45,7 +45,7 @@ export default function AppleWatchTextingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice dictation</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Tap message → Reply → microphone.</li>
               <li>Speak full message.</li>
               <li>Tap done.</li>
@@ -59,7 +59,7 @@ export default function AppleWatchTextingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Audio messages = best for shaky fingers.</li>
               <li>Reply WHILE walking, gardening, cooking — phone stays in pocket.</li>
               <li>"Hey Siri, send text to ___" — completely hands-free.</li>
@@ -72,7 +72,7 @@ export default function AppleWatchTextingTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Charging routine</h3>
-            <p className="text-sm text-muted-foreground">Charge while showering daily — establishes routine. Or while sleeping (if not using sleep tracking). 30 min charges to 80%. Never run out if charging routine consistent.</p>
+            <p className="text-base text-muted-foreground">Charge while showering daily — establishes routine. Or while sleeping (if not using sleep tracking). 30 min charges to 80%. Never run out if charging routine consistent.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function SleepCycleAppReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tracks sleep using phone microphone.</li>
               <li>No watch needed.</li>
               <li>Smart alarm — wakes during light sleep.</li>
@@ -33,7 +33,7 @@ export default function SleepCycleAppReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart alarm</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set 30-minute window.</li>
               <li>Wakes at lightest sleep within window.</li>
               <li>Feel more rested.</li>
@@ -47,7 +47,7 @@ export default function SleepCycleAppReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sleep stages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tracks deep + light sleep.</li>
               <li>REM detection.</li>
               <li>Sleep score 1-100.</li>
@@ -61,7 +61,7 @@ export default function SleepCycleAppReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Watch alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Watch tracks sleep too.</li>
               <li>Built into Health app.</li>
               <li>Free with watch.</li>
@@ -75,7 +75,7 @@ export default function SleepCycleAppReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Snoring detection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Records snoring overnight.</li>
               <li>Listen to recording next day.</li>
               <li>Identify if you snore.</li>
@@ -89,7 +89,7 @@ export default function SleepCycleAppReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior sleep insights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Track caffeine effect.</li>
               <li>Test alcohol&apos;s impact.</li>
               <li>Late-day napping.</li>
@@ -103,7 +103,7 @@ export default function SleepCycleAppReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Smart alarm transforms mornings</h3>
-            <p className="text-sm text-muted-foreground">If you wake up groggy or feel un-rested, smart alarm could help. Sleep Cycle wakes you during lightest sleep within 30-min window — feel less groggy. Free version sufficient for most. If you have Apple Watch, use built-in instead. Track 2 weeks to see patterns.</p>
+            <p className="text-base text-muted-foreground">If you wake up groggy or feel un-rested, smart alarm could help. Sleep Cycle wakes you during lightest sleep within 30-min window — feel less groggy. Free version sufficient for most. If you have Apple Watch, use built-in instead. Track 2 weeks to see patterns.</p>
           </CardContent>
         </Card>
       </main>

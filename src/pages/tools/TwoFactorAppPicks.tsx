@@ -27,7 +27,7 @@ export default function TwoFactorAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What 2FA does</h2>
-            <p className="text-sm">After you type your password, the site asks for a 6-digit code from an app on your phone. Code changes every 30 seconds. Hacker who steals your password ALSO needs your physical phone. <strong>Blocks 99% of account hacks.</strong></p>
+            <p className="text-base">After you type your password, the site asks for a 6-digit code from an app on your phone. Code changes every 30 seconds. Hacker who steals your password ALSO needs your physical phone. <strong>Blocks 99% of account hacks.</strong></p>
           </CardContent>
         </Card>
 
@@ -37,10 +37,10 @@ export default function TwoFactorAppPicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -49,14 +49,14 @@ export default function TwoFactorAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why NOT use text-message 2FA</h2>
-            <p className="text-sm">SMS codes (texted to your phone) are better than nothing — but scammers can hijack your phone number ("SIM swap") and intercept the texts. Authenticator apps are MUCH safer. Use SMS only when an app isn&apos;t offered.</p>
+            <p className="text-base">SMS codes (texted to your phone) are better than nothing — but scammers can hijack your phone number ("SIM swap") and intercept the texts. Authenticator apps are MUCH safer. Use SMS only when an app isn&apos;t offered.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup — first time</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install one app from the App Store / Play Store.</li>
               <li>Log into a website (Gmail, bank, Facebook).</li>
               <li>Go to Account → Security → "Two-Factor Authentication".</li>
@@ -71,7 +71,7 @@ export default function TwoFactorAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Accounts to enable 2FA on FIRST</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Email (Gmail, Outlook, Yahoo, iCloud) — most important. If hacker gets email, they can reset everything else.</li>
               <li>Bank and brokerage accounts.</li>
               <li>Apple ID / Google Account / Microsoft Account.</li>
@@ -84,7 +84,7 @@ export default function TwoFactorAppPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save the backup codes</h3>
-            <p className="text-sm text-muted-foreground">When you set up 2FA, the site gives you 10 backup codes. Print them. Put with your will or in a safe. If you lose your phone, these get you back into accounts. Without them — recovery is painful.</p>
+            <p className="text-base text-muted-foreground">When you set up 2FA, the site gives you 10 backup codes. Print them. Put with your will or in a safe. If you lose your phone, these get you back into accounts. Without them — recovery is painful.</p>
           </CardContent>
         </Card>
       </main>

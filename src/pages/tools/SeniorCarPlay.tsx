@@ -18,11 +18,11 @@ export default function SeniorCarPlay() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What it does</h2><p>Plug iPhone into car (or wireless). iPhone shows on dashboard. Big icons.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cars that have it</h2><p>Most cars 2017+. Check Settings → General → CarPlay on your iPhone.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best apps</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Apple Maps or Google Maps</li><li>Phone calls</li><li>Apple Music or Spotify</li><li>Audible</li><li>Messages (Siri reads them)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best apps</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Apple Maps or Google Maps</li><li>Phone calls</li><li>Apple Music or Spotify</li><li>Audible</li><li>Messages (Siri reads them)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice everything</h2><p>&ldquo;Hey Siri, navigate to Walmart.&rdquo; Eyes stay on road.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Wireless CarPlay</h2><p>Newer cars connect wirelessly. No cable each time.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Aftermarket</h2><p>$200-$500 stereo with CarPlay added to older cars. Crutchfield installs.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: CarPlay reduces accidents by half. Worth adding to any car.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: CarPlay reduces accidents by half. Worth adding to any car.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

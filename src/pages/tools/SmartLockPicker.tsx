@@ -115,7 +115,7 @@ export default function SmartLockPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-slate-500/10 rounded-full">
-                <Lock className="h-8 w-8 text-slate-700 dark:text-slate-300" />
+                <Lock className="h-8 w-8 text-foreground " />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Smart Lock Picker</h1>
@@ -130,8 +130,8 @@ export default function SmartLockPicker() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Smart-lock benefits — and tradeoffs</p>
-              <p className="text-xs text-muted-foreground mb-3">
+              <p className="text-base font-semibold mb-2">Smart-lock benefits — and tradeoffs</p>
+              <p className="text-sm text-muted-foreground mb-3">
                 The good: never get locked out, give a guest a temporary code, see when family arrived home, lock the door from your bed. The not-good: batteries die (always have a physical key backup), Wi-Fi outages can lock you out of remote access, and a smart lock is a computer that can be hacked. Pick a name brand, pair it with strong app password, and keep the old key.
               </p>
             </CardContent>
@@ -145,19 +145,19 @@ export default function SmartLockPicker() {
                     <p className="font-semibold text-base">{l.name}</p>
                     <Badge variant="outline">{l.price}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {l.whoFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {l.whoFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {l.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}
+                        {l.pros.map((p, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {l.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                        {l.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -174,15 +174,15 @@ export default function SmartLockPicker() {
             )}
           </div>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Three rules for any smart lock</p>
                 <ol className="space-y-1.5 mt-2">
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">1.</span><span>Always keep your old physical key. Hidden, with a friend, or in a lockbox. The lock\'s battery WILL die at the worst possible time.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">2.</span><span>Set a unique app password and turn on 2FA. Reusing a password here is the same as handing your house keys to a stranger.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">3.</span><span>Never leave the bypass-key code at the default. Most locks ship with 1234 — change it the first day.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">1.</span><span>Always keep your old physical key. Hidden, with a friend, or in a lockbox. The lock\'s battery WILL die at the worst possible time.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">2.</span><span>Set a unique app password and turn on 2FA. Reusing a password here is the same as handing your house keys to a stranger.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">3.</span><span>Never leave the bypass-key code at the default. Most locks ship with 1234 — change it the first day.</span></li>
                 </ol>
               </div>
             </CardContent>
@@ -190,8 +190,8 @@ export default function SmartLockPicker() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Worth knowing about installation</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Worth knowing about installation</p>
+              <p className="text-sm text-muted-foreground">
                 "Mounts on the inside" locks (August, Wyze) take 10 minutes — Phillips screwdriver only. "Replaces the deadbolt" locks (Schlage, Yale, Level) take 30-45 minutes — slightly more skill. A handyman or Best Buy installation is usually $50-$100 if you do not want to do it yourself.
               </p>
             </CardContent>
@@ -201,20 +201,20 @@ export default function SmartLockPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/smart-home-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Smart Home Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">First device picks — many seniors start here.</p>
+                <p className="font-medium text-base">Smart Home Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">First device picks — many seniors start here.</p>
               </Link>
               <Link to="/tools/home-security-camera-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Home Security Camera</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair with a doorbell camera.</p>
+                <p className="font-medium text-base">Home Security Camera</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair with a doorbell camera.</p>
               </Link>
               <Link to="/tools/find-lost-items" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Find Lost Items</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Track your physical keys too.</p>
+                <p className="font-medium text-base">Find Lost Items</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Track your physical keys too.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: walk the door with the lock unscrewed before buying. Some smart locks bind in older doors. Take measurements (deadbolt thickness, door alignment) first.
           </p>
         </div>

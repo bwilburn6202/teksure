@@ -19,7 +19,7 @@ export default function InductionStoveExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it works (in plain words)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Magnets heat the PAN, not the surface.</li>
               <li>Stove top stays cool to touch.</li>
               <li>2x faster than gas or electric.</li>
@@ -33,7 +33,7 @@ export default function InductionStoveExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors love it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Won&apos;t burn skin</strong> — surface stays cool.</li>
               <li><strong>Auto-off</strong> — when pan removed.</li>
               <li><strong>No gas leak</strong> risk.</li>
@@ -48,7 +48,7 @@ export default function InductionStoveExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Try a portable first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Duxtop 9100MC portable</strong> — $60. Test before whole stove replace.</li>
               <li><strong>NuWave PIC Pro</strong> — $90. Good portable.</li>
               <li>Plug into outlet — no rewiring.</li>
@@ -62,7 +62,7 @@ export default function InductionStoveExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Full induction ranges</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$1,500-3,500 for nice 30&quot; range.</li>
               <li>GE Profile, Samsung, Bosch good brands.</li>
               <li>$840+ federal tax credit (Inflation Reduction Act).</li>
@@ -76,7 +76,7 @@ export default function InductionStoveExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cookware compatibility</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Test with magnet — sticks = works.</li>
               <li>Cast iron — works perfectly.</li>
               <li>Magnetic stainless — works.</li>
@@ -91,7 +91,7 @@ export default function InductionStoveExplained() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Climate + health bonus</h3>
-            <p className="text-sm text-muted-foreground">Gas stoves linked to childhood asthma + indoor air pollution. Induction = healthier indoor air. More efficient = lower bills + greener. New construction now banning gas in some cities. Future-proof your kitchen. Federal rebates 2026 cover most cost for many seniors.</p>
+            <p className="text-base text-muted-foreground">Gas stoves linked to childhood asthma + indoor air pollution. Induction = healthier indoor air. More efficient = lower bills + greener. New construction now banning gas in some cities. Future-proof your kitchen. Federal rebates 2026 cover most cost for many seniors.</p>
           </CardContent>
         </Card>
       </main>

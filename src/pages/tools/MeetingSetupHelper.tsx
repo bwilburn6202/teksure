@@ -230,8 +230,8 @@ export default function MeetingSetupHelper() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-teal-50 dark:bg-teal-950/30 flex items-center justify-center flex-shrink-0">
-                <Video className="h-6 w-6 text-teal-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-success flex items-center justify-center flex-shrink-0">
+                <Video className="h-6 w-6 text-success-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -268,7 +268,7 @@ export default function MeetingSetupHelper() {
           {selectedPlatform && (
             <Card>
               <CardContent className="pt-6">
-                <p className="text-sm text-muted-foreground mb-3">What do you need to do?</p>
+                <p className="text-base text-muted-foreground mb-3">What do you need to do?</p>
                 <div className="flex gap-3">
                   <Button
                     variant={mode === 'join' ? 'default' : 'outline'}
@@ -310,10 +310,10 @@ export default function MeetingSetupHelper() {
                 {mode === 'start' && (
                   <>
                     <hr className="my-4" />
-                    <p className="text-sm font-medium">How to invite someone:</p>
+                    <p className="text-base font-medium">How to invite someone:</p>
                     {platform.inviteSteps.map((step, i) => (
                       <div key={`invite-${i}`} className="flex gap-3 text-sm">
-                        <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                        <CheckCircle className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                         <span>{step}</span>
                       </div>
                     ))}
@@ -321,11 +321,11 @@ export default function MeetingSetupHelper() {
                 )}
 
                 {/* Tips */}
-                <div className="rounded-lg bg-blue-50 dark:bg-blue-950/20 p-4 mt-4">
-                  <p className="text-sm font-medium text-blue-800 dark:text-blue-300 mb-2">Quick tips for {platform.name}:</p>
+                <div className="rounded-lg bg-info p-4 mt-4">
+                  <p className="text-base font-medium text-info-foreground mb-2">Quick tips for {platform.name}:</p>
                   <ul className="space-y-1">
                     {platform.tips.map((tip, i) => (
-                      <li key={i} className="text-sm text-blue-700 dark:text-blue-400 flex gap-2">
+                      <li key={i} className="text-base text-info-foreground flex gap-2">
                         <span>-</span><span>{tip}</span>
                       </li>
                     ))}
@@ -346,7 +346,7 @@ export default function MeetingSetupHelper() {
               {preMeetingChecklist.map((item, i) => {
                 const Icon = item.icon;
                 return (
-                  <label key={i} className="flex items-start gap-3 text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-muted/50 transition-colors">
+                  <label key={i} className="flex items-start gap-3 text-base cursor-pointer py-2 px-3 rounded-lg hover:bg-muted/50 transition-colors">
                     <input
                       type="checkbox"
                       checked={checkedItems.has(i)}
@@ -359,7 +359,7 @@ export default function MeetingSetupHelper() {
                   </label>
                 );
               })}
-              <p className="text-xs text-muted-foreground pt-2">
+              <p className="text-sm text-muted-foreground pt-2">
                 <CheckCircle className="h-3 w-3 inline mr-1" aria-hidden="true" />{checkedItems.size} of {preMeetingChecklist.length} ready
               </p>
             </CardContent>
@@ -368,8 +368,8 @@ export default function MeetingSetupHelper() {
           {/* Troubleshooting */}
           <div className="rounded-2xl border p-6">
             <button onClick={() => setShowTroubleshooting(!showTroubleshooting)} className="flex items-center gap-3 w-full text-left">
-              <AlertTriangle className="h-5 w-5 text-amber-500 flex-shrink-0" aria-hidden="true" />
-              <span className="font-semibold text-sm flex-1">Troubleshooting Common Problems</span>
+              <AlertTriangle className="h-5 w-5 text-warn-foreground flex-shrink-0" aria-hidden="true" />
+              <span className="font-semibold text-base flex-1">Troubleshooting Common Problems</span>
               {showTroubleshooting ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
             </button>
             {showTroubleshooting && (
@@ -384,13 +384,13 @@ export default function MeetingSetupHelper() {
                         aria-expanded={expandedTroubleshooting === i}
                       >
                         <TIcon className="h-4 w-4 text-muted-foreground flex-shrink-0" aria-hidden="true" />
-                        <span className="font-medium text-sm flex-1">{t.problem}</span>
+                        <span className="font-medium text-base flex-1">{t.problem}</span>
                         {expandedTroubleshooting === i ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
                       </button>
                       {expandedTroubleshooting === i && (
                         <ul className="mt-3 space-y-2 pl-6">
                           {t.steps.map((step, si) => (
-                            <li key={si} className="text-sm text-muted-foreground flex gap-2">
+                            <li key={si} className="text-base text-muted-foreground flex gap-2">
                               <span className="font-medium flex-shrink-0">{si + 1}.</span>
                               <span>{step}</span>
                             </li>

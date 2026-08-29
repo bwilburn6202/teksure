@@ -19,8 +19,8 @@ export default function MedicalRecordsCarry() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The wallet card</h2>
-            <p className="text-sm">Print on index card. Laminate. Keep in wallet behind ID. Updated every 6 months.</p>
-            <ul className="list-disc pl-5 space-y-2 text-sm mt-2">
+            <p className="text-base">Print on index card. Laminate. Keep in wallet behind ID. Updated every 6 months.</p>
+            <ul className="list-disc pl-5 space-y-2 text-base mt-2">
               <li>Full legal name + DOB.</li>
               <li>Photo (small).</li>
               <li>Conditions: e.g., "Diabetes type 2, Atrial Fib, History of MI 2019."</li>
@@ -40,7 +40,7 @@ export default function MedicalRecordsCarry() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Medical ID (also crucial)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Health app on iPhone.</li>
               <li>Tap your photo → Medical ID → Edit.</li>
               <li>Fill in all medical info above.</li>
@@ -54,7 +54,7 @@ export default function MedicalRecordsCarry() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android equivalent</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → About phone → Emergency information.</li>
               <li>Add medical info, blood type, allergies.</li>
               <li>Add emergency contacts.</li>
@@ -67,7 +67,7 @@ export default function MedicalRecordsCarry() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other emergency tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>MedicAlert bracelet</strong> — engraved + 24/7 hotline. $40/yr. Best for severe allergies/conditions.</li>
               <li><strong>Vial of Life</strong> — magnet on fridge with med list. EMTs trained to look. Free at senior centers.</li>
               <li><strong>Yellow Dot Program</strong> — sticker on car back window points EMTs to glove-box info packet.</li>
@@ -79,7 +79,7 @@ export default function MedicalRecordsCarry() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Update twice a year</h3>
-            <p className="text-sm text-muted-foreground">January 1 + July 4 — re-check your medical card. Outdated info is sometimes worse than no info. Replace meds list when changed. Replace whole card after surgeries / new diagnoses.</p>
+            <p className="text-base text-muted-foreground">January 1 + July 4 — re-check your medical card. Outdated info is sometimes worse than no info. Replace meds list when changed. Replace whole card after surgeries / new diagnoses.</p>
           </CardContent>
         </Card>
       </main>

@@ -30,10 +30,10 @@ export default function ParkinsonsApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function ParkinsonsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Exercise programs (research-backed)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Rock Steady Boxing</strong> — non-contact boxing classes. Slows progression. Find at rocksteadyboxing.org.</li>
               <li><strong>LSVT BIG / LSVT LOUD</strong> — physical and speech therapy specifically for Parkinson&apos;s. Doctor referral. Often Medicare-covered.</li>
               <li><strong>PWR! Moves</strong> — power exercises designed for PD.</li>
@@ -54,7 +54,7 @@ export default function ParkinsonsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Helpful tech + tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Liftware Steady spoon</strong> ($195) — counters tremor, lets you eat soup again.</li>
               <li><strong>Voice amplifier</strong> — soft voice is common; portable mic + speaker helps.</li>
               <li><strong>Big-button phone</strong> — Tremor-friendly.</li>
@@ -69,7 +69,7 @@ export default function ParkinsonsApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Community + support</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Michael J. Fox Foundation</strong> — research, resources, clinical trial finder.</li>
               <li><strong>Parkinson&apos;s Foundation</strong> — parkinson.org, 1-800-4PD-INFO. Care guides + helpline.</li>
               <li><strong>American Parkinson Disease Association</strong> — apdaparkinson.org, local chapters.</li>
@@ -82,7 +82,7 @@ export default function ParkinsonsApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Movement is medicine</h3>
-            <p className="text-sm text-muted-foreground">Studies consistently show: regular vigorous exercise is the single most effective non-medication treatment for Parkinson&apos;s. 30 minutes, 3-4 times a week. Anything that gets your heart rate up. Slows symptom progression measurably.</p>
+            <p className="text-base text-muted-foreground">Studies consistently show: regular vigorous exercise is the single most effective non-medication treatment for Parkinson&apos;s. 30 minutes, 3-4 times a week. Anything that gets your heart rate up. Slows symptom progression measurably.</p>
           </CardContent>
         </Card>
       </main>

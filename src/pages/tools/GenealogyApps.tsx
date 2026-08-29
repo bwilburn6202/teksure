@@ -31,10 +31,10 @@ export default function GenealogyApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function GenealogyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to start</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign up at <strong>familysearch.org</strong> (free).</li>
               <li>Add yourself, your parents, your grandparents — what you know.</li>
               <li>The site automatically searches its records. "Hints" appear suggesting matches.</li>
@@ -57,34 +57,34 @@ export default function GenealogyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DNA testing — what to know</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AncestryDNA</strong> ($60-100) — best for finding US relatives.</li>
               <li><strong>23andMe</strong> ($100-200) — strong on health/medical info plus relatives.</li>
               <li><strong>MyHeritage DNA</strong> ($60-100) — best for European matches.</li>
               <li>Once tested, you can upload the raw DNA file to OTHER services for free — multiplies your matches.</li>
             </ul>
-            <p className="text-sm mt-3 bg-muted/50 p-3 rounded"><strong>Privacy note:</strong> DNA companies sometimes share aggregate data with researchers and law enforcement. Read the privacy policy. Many seniors are fine with this; some are not.</p>
+            <p className="text-base mt-3 bg-muted/50 p-3 rounded"><strong>Privacy note:</strong> DNA companies sometimes share aggregate data with researchers and law enforcement. Read the privacy policy. Many seniors are fine with this; some are not.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Library access (often FREE)</h2>
-            <p className="text-sm mb-2">Most US public libraries offer free access to:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Most US public libraries offer free access to:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Ancestry Library Edition</strong> — usable free at the library or sometimes from home.</li>
               <li><strong>HeritageQuest</strong> — same idea.</li>
               <li><strong>Newspapers.com Library Edition</strong>.</li>
               <li><strong>FamilySearch Library Center</strong> — at your local library or LDS family history center.</li>
             </ul>
-            <p className="text-sm mt-2">Call your library and ask "Do you offer Ancestry Library Edition?" Most do.</p>
+            <p className="text-base mt-2">Call your library and ask "Do you offer Ancestry Library Edition?" Most do.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best gift for grandkids</h3>
-            <p className="text-sm text-muted-foreground">A printed family tree, going back 4-5 generations, with photos and stories — printed as a hardcover book on Mixbook or Shutterfly. Most kids never know their great-great-grandparents\' names. You can change that in a weekend.</p>
+            <p className="text-base text-muted-foreground">A printed family tree, going back 4-5 generations, with photos and stories — printed as a hardcover book on Mixbook or Shutterfly. Most kids never know their great-great-grandparents\' names. You can change that in a weekend.</p>
           </CardContent>
         </Card>
       </main>

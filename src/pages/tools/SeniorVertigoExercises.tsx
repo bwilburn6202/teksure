@@ -22,7 +22,7 @@ export default function SeniorVertigoExercises() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Stop spinning</h2><p>Sit down immediately. Focus on still object. Don&apos;t close eyes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hydrate</h2><p>Dehydration causes vertigo. Many seniors.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch medications</h2><p>BP meds, diuretics common cause. Discuss with doctor.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Vertigo episodes mean fall risk. Get up slowly. Ask doctor about cane.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Vertigo episodes mean fall risk. Get up slowly. Ask doctor about cane.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

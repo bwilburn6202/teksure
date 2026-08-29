@@ -19,14 +19,14 @@ export default function CaregiverPhoneSetup() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">For adult children</h2>
-            <p className="text-sm">Mom or Dad got a new phone. The default settings are NOT designed for them — they're designed to look pretty in store demos. These 12 changes turn any phone into a phone for someone over 70. Takes about 30 minutes.</p>
+            <p className="text-base">Mom or Dad got a new phone. The default settings are NOT designed for them — they're designed to look pretty in store demos. These 12 changes turn any phone into a phone for someone over 70. Takes about 30 minutes.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-4">The Checklist</h2>
-            <ol className="list-decimal pl-5 space-y-4 text-sm">
+            <ol className="list-decimal pl-5 space-y-4 text-base">
               <li><strong>Make text BIG.</strong> Settings → Display → Text Size → push the slider as far right as they can comfortably read.</li>
               <li><strong>Bold all text.</strong> Settings → Display → Bold Text → ON.</li>
               <li><strong>Bigger app icons.</strong> iPhone: Settings → Display → Display Zoom → Larger Text. Android: Settings → Display → Display Size.</li>
@@ -46,7 +46,7 @@ export default function CaregiverPhoneSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bonus moves</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Family Sharing (Apple) or Family Link (Google)</strong> — lets you see if their phone is offline, share their location, and help with App Store purchases.</li>
               <li><strong>Add yourself as Legacy Contact</strong> on their Apple ID / Google account. (See Digital Legacy Setup.)</li>
               <li><strong>Set up a password manager</strong> like 1Password or Bitwarden. They forget passwords; the manager remembers. Set up Emergency Access so you can help.</li>
@@ -59,7 +59,7 @@ export default function CaregiverPhoneSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps to install</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Their bank's app</strong> — set it up together so you've seen their login.</li>
               <li><strong>Their pharmacy's app</strong> — refills are 2 taps.</li>
               <li><strong>MyChart</strong> or their hospital's portal — for results and messaging the doctor.</li>
@@ -70,13 +70,13 @@ export default function CaregiverPhoneSetup() {
           </CardContent>
         </Card>
 
-        <Card className="bg-green-50 border-green-300 dark:bg-green-950/20 dark:border-green-800">
+        <Card className="bg-success border-success-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
+              <CheckCircle2 className="w-6 h-6 text-success-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Most important</h3>
-                <p className="text-sm text-muted-foreground">Don't try to teach everything at once. Pick 2-3 things they'll use this week, and only those. Come back next month and add 2 more. Confidence beats coverage every time.</p>
+                <p className="text-base text-muted-foreground">Don't try to teach everything at once. Pick 2-3 things they'll use this week, and only those. Come back next month and add 2 more. Confidence beats coverage every time.</p>
               </div>
             </div>
           </CardContent>

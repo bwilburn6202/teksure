@@ -19,7 +19,7 @@ export default function PerfumeColognePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior care?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Skin thinner — easier irritation.</li>
               <li>Allergies often worse with age.</li>
               <li>Some retirement homes ban heavy fragrances.</li>
@@ -33,7 +33,7 @@ export default function PerfumeColognePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Women&apos;s picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Chanel No. 5</strong> — timeless, classic.</li>
               <li><strong>Estee Lauder Beautiful</strong> — soft floral.</li>
               <li><strong>Lancome La Vie Est Belle</strong> — sweet.</li>
@@ -47,7 +47,7 @@ export default function PerfumeColognePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Men&apos;s picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Old Spice (classic)</strong> — affordable.</li>
               <li><strong>Tom Ford Tuscan Leather</strong> — premium.</li>
               <li><strong>Ralph Lauren Polo</strong> — classic.</li>
@@ -61,7 +61,7 @@ export default function PerfumeColognePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hypoallergenic options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Clean Reserve</strong> — natural ingredients.</li>
               <li><strong>Stella McCartney</strong>.</li>
               <li><strong>Pacifica</strong> — vegan + cruelty-free.</li>
@@ -75,7 +75,7 @@ export default function PerfumeColognePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Application tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pulse points — wrist, neck.</li>
               <li>Don&apos;t rub wrists together (breaks scent).</li>
               <li>Hair holds fragrance well.</li>
@@ -89,7 +89,7 @@ export default function PerfumeColognePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to buy + sample</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sephora</strong> — sample before buying.</li>
               <li><strong>Ulta</strong> — wide selection.</li>
               <li><strong>Macy&apos;s / Nordstrom</strong> — counter testing.</li>
@@ -103,7 +103,7 @@ export default function PerfumeColognePicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Sensory loss reality</h3>
-            <p className="text-sm text-muted-foreground">Smell weakens with age. Easy to over-spray (don&apos;t smell yourself). Ask spouse / friend &quot;is this too much?&quot;. Better err under than over. Refresh subtly. Some seniors switch to essential oils — gentler. Lavender, sandalwood, rose. Diffusers in home — pleasant ambient scent.</p>
+            <p className="text-base text-muted-foreground">Smell weakens with age. Easy to over-spray (don&apos;t smell yourself). Ask spouse / friend &quot;is this too much?&quot;. Better err under than over. Refresh subtly. Some seniors switch to essential oils — gentler. Lavender, sandalwood, rose. Diffusers in home — pleasant ambient scent.</p>
           </CardContent>
         </Card>
       </main>

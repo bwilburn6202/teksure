@@ -22,7 +22,7 @@ export default function SeniorIHeartRadio() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Themed stations</h2><p>50s Pop. 70s Rock. Classic Country. Easy listening.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sleep timer</h2><p>Fall asleep to talk radio. Auto-shuts off in 30-60 minutes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smart speakers</h2><p>&ldquo;Alexa, play 1010 WINS New York on iHeartRadio.&rdquo; Local hometown station anywhere.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Listen to childhood hometown radio. Memories instant.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Listen to childhood hometown radio. Memories instant.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

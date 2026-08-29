@@ -22,7 +22,7 @@ export default function SeniorFitbitGuide() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sleep tracking</h2><p>Auto-tracks sleep stages. Some seniors discover sleep apnea this way.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Premium $9.99/month</h2><p>Optional. Adds detailed analysis and guided programs. Free for first 6 months.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Works on iPhone &amp; Android</h2><p>Unlike Apple Watch, Fitbit pairs with both phones.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set a 6,000-step daily goal first. Easier to keep than 10,000.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set a 6,000-step daily goal first. Easier to keep than 10,000.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function StarbucksAppRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Order ahead</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Place order in app.</li>
               <li>Skip the line — drink ready when you arrive.</li>
               <li>Especially helpful for arthritic hands.</li>
@@ -33,7 +33,7 @@ export default function StarbucksAppRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stars rewards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Earn Stars per dollar spent.</li>
               <li>25 Stars — extra shot or syrup free.</li>
               <li>100 Stars — handcrafted drink free.</li>
@@ -47,7 +47,7 @@ export default function StarbucksAppRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pay through app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reload Starbucks card via app.</li>
               <li>Earn 2 Stars per dollar paying through app.</li>
               <li>1 Star per dollar paying with credit card.</li>
@@ -61,7 +61,7 @@ export default function StarbucksAppRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior savings tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free hot water + tea bag = bring your own tea.</li>
               <li>Senior coffee discount sometimes available.</li>
               <li>AARP discount — check for current promo.</li>
@@ -75,7 +75,7 @@ export default function StarbucksAppRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Starbucks for non-coffee drinkers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tea — green, herbal, black.</li>
               <li>Hot chocolate.</li>
               <li>Refreshers — fruit + tea.</li>
@@ -89,7 +89,7 @@ export default function StarbucksAppRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other coffee apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Dunkin&apos; — also has rewards app.</li>
               <li>Panera Bread — free coffee subscription $11.99/mo.</li>
               <li>McDonald&apos;s — McCafé Rewards in MyMcDonald&apos;s app.</li>
@@ -103,7 +103,7 @@ export default function StarbucksAppRewards() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Order ahead saves time</h3>
-            <p className="text-sm text-muted-foreground">If you visit Starbucks weekly, the app pays for itself in time alone. Order on the way, walk in, drink waiting on counter. Plus accumulating Stars eventually means a free drink. Less standing in line — easier on senior backs and feet. Many seniors say this single app changed how they enjoy their morning coffee.</p>
+            <p className="text-base text-muted-foreground">If you visit Starbucks weekly, the app pays for itself in time alone. Order on the way, walk in, drink waiting on counter. Plus accumulating Stars eventually means a free drink. Less standing in line — easier on senior backs and feet. Many seniors say this single app changed how they enjoy their morning coffee.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorColonoscopy() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to stop</h2><p>Most stop at 75. Doctor decides. Health more important than calendar.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best time</h2><p>50-75 most beneficial. Polyps found and removed = 90% cancer prevention.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Prep app</h2><p>Sutab, Plenvu newer prep. App reminds steps. Easier than older preps.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Cologuard if you can&apos;t do prep. Same screening benefit.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Cologuard if you can&apos;t do prep. Same screening benefit.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

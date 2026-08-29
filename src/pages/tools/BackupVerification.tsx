@@ -142,7 +142,7 @@ export default function BackupVerification() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <ShieldCheck className="h-8 w-8 text-emerald-600" />
+                <ShieldCheck className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Backup Verification</h1>
@@ -155,15 +155,15 @@ export default function BackupVerification() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Backup Verification' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-800 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-sm text-amber-900 dark:text-amber-100 mb-1">
+                  <p className="font-semibold text-base text-warn-foreground mb-1">
                     "Backed up" does not mean "restorable" until you have tested it.
                   </p>
-                  <p className="text-xs text-amber-800 dark:text-amber-200">
+                  <p className="text-sm text-warn-foreground ">
                     Most backup failures are silent — the icon says everything is fine, the cloud storage is full, and the backup quietly stopped six months ago. Every story of lost photos starts with "I thought it was backing up." A backup you have never restored from is a hope, not a backup.
                   </p>
                 </div>
@@ -173,7 +173,7 @@ export default function BackupVerification() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your device</p>
+              <p className="text-base font-semibold mb-3">Pick your device</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {DEVICES.map(d => {
                   const Icon = d.icon;
@@ -183,7 +183,7 @@ export default function BackupVerification() {
                         device === d.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                       }`}>
                       <Icon className="h-5 w-5 text-muted-foreground shrink-0" />
-                      <p className="font-medium text-sm">{d.label}</p>
+                      <p className="font-medium text-base">{d.label}</p>
                     </button>
                   );
                 })}
@@ -191,7 +191,7 @@ export default function BackupVerification() {
             </CardContent>
           </Card>
 
-          <p className="text-sm text-muted-foreground mb-3">{done.size} of {allSteps.length} done</p>
+          <p className="text-base text-muted-foreground mb-3">{done.size} of {allSteps.length} done</p>
 
           <div className="space-y-3 mb-6">
             {allSteps.map((s, i) => {
@@ -204,8 +204,8 @@ export default function BackupVerification() {
                       <Checkbox checked={isDone} onCheckedChange={() => toggle(`${device}-${i}`)} className="mt-1" />
                       <div className="flex-1">
                         <p className="text-xs uppercase tracking-wider text-muted-foreground font-semibold mb-1">{sectionLabels[i]}</p>
-                        <p className={`font-medium text-sm ${isDone ? 'line-through text-muted-foreground' : ''}`}>{i + 1}. {s.title}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{s.detail}</p>
+                        <p className={`font-medium text-base ${isDone ? 'line-through text-muted-foreground' : ''}`}>{i + 1}. {s.title}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{s.detail}</p>
                       </div>
                     </label>
                   </CardContent>
@@ -216,8 +216,8 @@ export default function BackupVerification() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">The 3-2-1 rule (worth memorizing)</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">The 3-2-1 rule (worth memorizing)</p>
+              <p className="text-sm text-muted-foreground">
                 <strong>3</strong> copies of anything you cannot afford to lose. <strong>2</strong> different types of storage (one local drive, one cloud). <strong>1</strong> copy stored offsite (cloud counts; a USB drive at a relative's house counts). Photos of grandchildren, tax records, scanned medical paperwork — these are the things that need 3-2-1. Cat memes do not.
               </p>
             </CardContent>
@@ -225,8 +225,8 @@ export default function BackupVerification() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">External drive verification, no matter the device</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">External drive verification, no matter the device</p>
+              <p className="text-sm text-muted-foreground">
                 If you back up to a USB drive (Time Machine, File History, manual copies), test the drive twice a year. Plug it in. Open it. Pick three random files from different folders and try to open them. A dead external drive feels exactly like a working one until the moment you need it. Drives last 3-5 years on average — replace before then.
               </p>
             </CardContent>
@@ -236,20 +236,20 @@ export default function BackupVerification() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/backup-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Backup Wizard</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Set up backup from scratch.</p>
+                <p className="font-medium text-base">Backup Wizard</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Set up backup from scratch.</p>
               </Link>
               <Link to="/tools/photo-library-tips" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Photo Library Tips</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Keep photos safe and organized.</p>
+                <p className="font-medium text-base">Photo Library Tips</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Keep photos safe and organized.</p>
               </Link>
               <Link to="/tools/usb-storage-guide" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">USB Storage Guide</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pick the right external drive.</p>
+                <p className="font-medium text-base">USB Storage Guide</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pick the right external drive.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: put a calendar reminder on the first Sunday of every month titled "Verify backup". Two minutes a month saves a lifetime of memories.
           </p>
         </div>

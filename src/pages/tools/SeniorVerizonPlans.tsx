@@ -22,7 +22,7 @@ export default function SeniorVerizonPlans() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best coverage</h2><p>Verizon strongest network in rural areas. Worth premium for many.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free Hum</h2><p>Verizon Hum gives car GPS for safety. Sometimes free with plans.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cheaper alternatives</h2><p>Visible (Verizon-owned) $25/month. Same network, cheaper.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Always negotiate. Verizon often has $10/month off &ldquo;loyalty discount&rdquo; if asked.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Always negotiate. Verizon often has $10/month off &ldquo;loyalty discount&rdquo; if asked.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

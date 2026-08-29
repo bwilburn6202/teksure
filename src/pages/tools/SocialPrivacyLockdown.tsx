@@ -95,7 +95,7 @@ export default function SocialPrivacyLockdown() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-violet-500/10 rounded-full">
-                <Lock className="h-8 w-8 text-violet-600" />
+                <Lock className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Social Media Privacy Lockdown</h1>
@@ -110,7 +110,7 @@ export default function SocialPrivacyLockdown() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick a platform</p>
+              <p className="text-base font-semibold mb-3">Pick a platform</p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                 {PLATFORMS.map(p => {
                   const Icon = p.icon;
@@ -120,7 +120,7 @@ export default function SocialPrivacyLockdown() {
                         platform === p.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                       }`}>
                       <Icon className="h-4 w-4 text-muted-foreground shrink-0" />
-                      <p className="font-medium text-sm">{p.label}</p>
+                      <p className="font-medium text-base">{p.label}</p>
                     </button>
                   );
                 })}
@@ -128,7 +128,7 @@ export default function SocialPrivacyLockdown() {
             </CardContent>
           </Card>
 
-          <p className="text-sm text-muted-foreground mb-3">{done.size} of {settings.length} done</p>
+          <p className="text-base text-muted-foreground mb-3">{done.size} of {settings.length} done</p>
 
           <div className="space-y-3 mb-6">
             {settings.map(s => (
@@ -137,9 +137,9 @@ export default function SocialPrivacyLockdown() {
                   <label className="flex items-start gap-3 cursor-pointer">
                     <Checkbox checked={done.has(s.id)} onCheckedChange={() => toggle(s.id)} className="mt-1" />
                     <div className="flex-1">
-                      <p className={`font-medium text-sm ${done.has(s.id) ? 'line-through text-muted-foreground' : ''}`}>{s.title}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{s.detail}</p>
-                      <p className="text-xs italic text-muted-foreground mt-1"><strong>Why:</strong> {s.why}</p>
+                      <p className={`font-medium text-base ${done.has(s.id) ? 'line-through text-muted-foreground' : ''}`}>{s.title}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{s.detail}</p>
+                      <p className="text-sm italic text-muted-foreground mt-1"><strong>Why:</strong> {s.why}</p>
                     </div>
                   </label>
                 </CardContent>
@@ -148,19 +148,19 @@ export default function SocialPrivacyLockdown() {
           </div>
 
           {done.size === settings.length && (
-            <Card className="border-green-300 bg-green-50 dark:bg-green-950/20 mb-6">
+            <Card className="border-success-foreground/25 bg-success mb-6">
               <CardContent className="p-5 text-center">
-                <Badge className="mb-2 bg-green-100 text-green-700 border-green-300">All done</Badge>
+                <Badge className="mb-2 bg-success text-success-foreground border-success-foreground/25">All done</Badge>
                 <p className="font-semibold">{PLATFORMS.find(p => p.id === platform)?.label} is locked down.</p>
-                <p className="text-sm text-muted-foreground mt-1">Pick the next platform to continue.</p>
+                <p className="text-base text-muted-foreground mt-1">Pick the next platform to continue.</p>
               </CardContent>
             </Card>
           )}
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A quarterly habit</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A quarterly habit</p>
+              <p className="text-sm text-muted-foreground">
                 Privacy settings get reset by app updates and product launches. Set a calendar reminder once a quarter — review your privacy settings on the platforms you use most. 10 minutes, four times a year, keeps the lockdown holding.
               </p>
             </CardContent>
@@ -170,20 +170,20 @@ export default function SocialPrivacyLockdown() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/data-broker-removal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Data Broker Removal</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Remove yourself from people-search.</p>
+                <p className="font-medium text-base">Data Broker Removal</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Remove yourself from people-search.</p>
               </Link>
               <Link to="/tools/cookie-consent-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Cookie Consent Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Reject tracking on every site.</p>
+                <p className="font-medium text-base">Cookie Consent Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Reject tracking on every site.</p>
               </Link>
               <Link to="/tools/account-deletion-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Account Deletion</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Or close it entirely.</p>
+                <p className="font-medium text-base">Account Deletion</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Or close it entirely.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: privacy lockdown does not break any of these apps. Friends still see your posts. Strangers stop being able to.
           </p>
         </div>

@@ -19,7 +19,7 @@ export default function AlexaWithDementia() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Alexa helps dementia</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Voice = familiar interaction.</li>
               <li>No buttons / interfaces to learn.</li>
               <li>Always available — they ask same question 5x = 5 patient answers.</li>
@@ -34,7 +34,7 @@ export default function AlexaWithDementia() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Echo Show 8 = best (screen + voice).</li>
               <li>Place in main living area.</li>
               <li>Caregiver sets up routines.</li>
@@ -49,7 +49,7 @@ export default function AlexaWithDementia() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Helpful daily routines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Good morning&quot; → time, weather, day, breakfast prompt.</li>
               <li>&quot;Take medicine&quot; reminder at 8am, 2pm, 8pm.</li>
               <li>&quot;What day is it?&quot; — Alexa announces.</li>
@@ -63,7 +63,7 @@ export default function AlexaWithDementia() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drop In feature</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family member calls Echo without senior accepting.</li>
               <li>Like intercom — instant connection.</li>
               <li>Visual confirmation senior is okay.</li>
@@ -77,7 +77,7 @@ export default function AlexaWithDementia() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Limits + cautions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Severe dementia — Alexa may confuse.</li>
               <li>Best for early to mid stages.</li>
               <li>Privacy — Alexa records (delete in app).</li>
@@ -91,7 +91,7 @@ export default function AlexaWithDementia() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Alternative: RAZ Memory Phone</h3>
-            <p className="text-sm text-muted-foreground">For severe dementia — RAZ Memory Cell Phone $210 + $40/mo. ONE screen with photos of contacts. Family controls. Often better than Alexa for advanced dementia. See /tools/raz-mobility-phones. Combine: RAZ phone + Alexa = comprehensive.</p>
+            <p className="text-base text-muted-foreground">For severe dementia — RAZ Memory Cell Phone $210 + $40/mo. ONE screen with photos of contacts. Family controls. Often better than Alexa for advanced dementia. See /tools/raz-mobility-phones. Combine: RAZ phone + Alexa = comprehensive.</p>
           </CardContent>
         </Card>
       </main>

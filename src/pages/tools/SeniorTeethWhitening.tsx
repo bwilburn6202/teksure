@@ -22,7 +22,7 @@ export default function SeniorTeethWhitening() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out</h2><p>Sensitivity is common. Stop if teeth hurt. Use sensitive toothpaste.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Crowns/fillings</h2><p>Don&apos;t whiten. Will look mismatched after.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Avoid coffee/tea</h2><p>30 min before/after whitening. Stains undo work.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Crest Whitestrips work fine for most. Save $700 vs dentist.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Crest Whitestrips work fine for most. Save $700 vs dentist.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function BecomeAirbnbHost() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Realistic income</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Spare bedroom in mid-size city</strong>: $300-1,000/month.</li>
               <li><strong>Whole apartment in tourist city</strong>: $1,500-5,000/month.</li>
               <li><strong>Vacation home in beach town</strong>: $2,000-15,000/month seasonal.</li>
@@ -32,7 +32,7 @@ export default function BecomeAirbnbHost() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before you list</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Check local rules</strong> — many cities ban or restrict short-term rentals. Search "[your city] short-term rental ordinance".</li>
               <li><strong>HOA approval</strong> — required in many.</li>
               <li><strong>Special insurance</strong> — homeowners doesn\'t cover STR. Need separate STR rider ($500-2,000/yr) or comprehensive STR insurance like Proper or Slice.</li>
@@ -46,7 +46,7 @@ export default function BecomeAirbnbHost() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup the listing</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Quality photos (hire a pro, $100-200, pays back in higher bookings).</li>
               <li>Write detailed description.</li>
               <li>Set check-in/out times.</li>
@@ -60,7 +60,7 @@ export default function BecomeAirbnbHost() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Clean (or hire cleaner for $80-150/turnover).</li>
               <li>Stock toiletries, toilet paper, coffee.</li>
               <li>Reply to inquiries (Airbnb expects within hours).</li>
@@ -73,14 +73,14 @@ export default function BecomeAirbnbHost() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Co-host or property manager</h2>
-            <p className="text-sm">If hosting is too much work, a co-host or property manager handles 80%+ for 15-30% of revenue. Search Airbnb co-host directory or local property management firms.</p>
+            <p className="text-base">If hosting is too much work, a co-host or property manager handles 80%+ for 15-30% of revenue. Search Airbnb co-host directory or local property management firms.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Easier alternative</h3>
-            <p className="text-sm text-muted-foreground">If full Airbnb feels like too much — try <strong>"home swap"</strong> (HomeExchange.com) or <strong>"long-term traveler"</strong> sites (FurnishedFinder for traveling nurses — typically 1-3 month stays, less turnover, more reliable income).</p>
+            <p className="text-base text-muted-foreground">If full Airbnb feels like too much — try <strong>"home swap"</strong> (HomeExchange.com) or <strong>"long-term traveler"</strong> sites (FurnishedFinder for traveling nurses — typically 1-3 month stays, less turnover, more reliable income).</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function PrescriptionPriceShop() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best price tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>GoodRx</strong> — most popular. Compares all pharmacies.</li>
               <li><strong>SingleCare</strong> — competing app, sometimes lower.</li>
               <li><strong>RxSaver</strong> — Optum&apos;s app.</li>
@@ -34,7 +34,7 @@ export default function PrescriptionPriceShop() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">$4 generic lists</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Walmart $4 List</strong> — 600+ generics for $4 (30 days) or $10 (90 days).</li>
               <li><strong>Costco</strong> — often cheaper than insurance copays.</li>
               <li><strong>HEB</strong> — many generics free.</li>
@@ -47,7 +47,7 @@ export default function PrescriptionPriceShop() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance vs cash</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sometimes cash + GoodRx beats insurance copay.</li>
               <li>Tell pharmacist to compare.</li>
               <li>Used to be illegal to mention — now legal (2018 law).</li>
@@ -60,7 +60,7 @@ export default function PrescriptionPriceShop() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Brand vs generic</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Generic = same active ingredient. Saves 80%.</li>
               <li>FDA tests bioequivalence.</li>
               <li>Always ask for generic.</li>
@@ -73,7 +73,7 @@ export default function PrescriptionPriceShop() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">90-day vs 30-day</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>90-day fills usually 1 copay (vs 3).</li>
               <li>Saves 30-67%.</li>
               <li>Mail order — Express Scripts, Caremark often free shipping.</li>
@@ -87,7 +87,7 @@ export default function PrescriptionPriceShop() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Patient assistance programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NeedyMeds</strong> — needymeds.org. Free directory.</li>
               <li><strong>RxAssist</strong> — pharma assistance programs.</li>
               <li><strong>Pharmaceutical company programs</strong> — e.g., Eliquis, Trulicity assistance.</li>
@@ -101,7 +101,7 @@ export default function PrescriptionPriceShop() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cost Plus Drugs</h3>
-            <p className="text-sm text-muted-foreground">Mark Cuban&apos;s pharmacy: costplusdrugs.com. Cuts middlemen. Often 90% off retail. 1,000+ generics. No insurance accepted but cash prices often lower than insurance copays. Senior favorite. Mail-order to your home. Worth checking every prescription.</p>
+            <p className="text-base text-muted-foreground">Mark Cuban&apos;s pharmacy: costplusdrugs.com. Cuts middlemen. Often 90% off retail. 1,000+ generics. No insurance accepted but cash prices often lower than insurance copays. Senior favorite. Mail-order to your home. Worth checking every prescription.</p>
           </CardContent>
         </Card>
       </main>

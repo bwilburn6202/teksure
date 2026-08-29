@@ -216,7 +216,7 @@ export default function ParentalControlsWizard() {
                           </div>
                           <div className="flex-1">
                             <h3 className="font-semibold mb-1">{p.name}</h3>
-                            <p className="text-sm text-muted-foreground leading-relaxed">{p.description}</p>
+                            <p className="text-base text-muted-foreground leading-relaxed">{p.description}</p>
                           </div>
                         </div>
                       </CardContent>
@@ -237,7 +237,7 @@ export default function ParentalControlsWizard() {
               </div>
 
               <div className="flex items-center justify-between mb-4 p-3 rounded-md bg-muted/50 border border-border">
-                <span className="text-sm font-medium">
+                <span className="text-base font-medium">
                   {completedSteps.size} of {selectedPlatform.steps.length} steps done
                 </span>
                 <div className="flex-1 mx-4 h-2 bg-border rounded-full overflow-hidden max-w-xs">
@@ -263,7 +263,7 @@ export default function ParentalControlsWizard() {
                       <CardContent className="p-4 flex items-start gap-3">
                         <div className="mt-0.5 shrink-0">
                           {done ? (
-                            <CheckCircle className="w-5 h-5 text-green-600" />
+                            <CheckCircle className="w-5 h-5 text-success-foreground" />
                           ) : (
                             <Circle className="w-5 h-5 text-muted-foreground" />
                           )}
@@ -273,7 +273,7 @@ export default function ParentalControlsWizard() {
                             <Badge variant="outline" className="text-xs shrink-0">Step {i + 1}</Badge>
                             <h4 className={`font-semibold ${done ? 'line-through text-muted-foreground' : ''}`}>{step.title}</h4>
                           </div>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{step.detail}</p>
+                          <p className="text-base text-muted-foreground leading-relaxed">{step.detail}</p>
                         </div>
                       </CardContent>
                     </Card>
@@ -285,7 +285,7 @@ export default function ParentalControlsWizard() {
                 <CardContent className="p-5 flex items-center justify-between gap-4 flex-wrap">
                   <div>
                     <h4 className="font-semibold mb-1">Official setup guide</h4>
-                    <p className="text-sm text-muted-foreground">For screenshots and the latest version, check the official documentation.</p>
+                    <p className="text-base text-muted-foreground">For screenshots and the latest version, check the official documentation.</p>
                   </div>
                   <Button asChild>
                     <a href={selectedPlatform.officialLink.url} target="_blank" rel="noopener noreferrer">
@@ -298,7 +298,7 @@ export default function ParentalControlsWizard() {
 
               <div className="mt-10 p-5 rounded-md border border-border bg-muted/30">
                 <h3 className="font-semibold mb-2">Quick Tip</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   The best parental control is an ongoing conversation. Tell your kids what you're blocking and why, and check in regularly. Kids who understand the reasons behind rules are much less likely to try to work around them.
                 </p>
               </div>
@@ -313,7 +313,7 @@ export default function ParentalControlsWizard() {
               <Card>
                 <CardContent className="p-4">
                   <h4 className="font-semibold mb-1 text-sm">Family Tech Agreement</h4>
-                  <p className="text-xs text-muted-foreground mb-3">Printable rules for screens, passwords, and online behavior.</p>
+                  <p className="text-sm text-muted-foreground mb-3">Printable rules for screens, passwords, and online behavior.</p>
                   <Button variant="outline" size="sm" asChild>
                     <a href="/tools/family-tech-agreement">Open <ArrowRight className="w-3 h-3 ml-1" /></a>
                   </Button>
@@ -322,7 +322,7 @@ export default function ParentalControlsWizard() {
               <Card>
                 <CardContent className="p-4">
                   <h4 className="font-semibold mb-1 text-sm">Home Network Map</h4>
-                  <p className="text-xs text-muted-foreground mb-3">See every device on your Wi-Fi — spot unknown ones.</p>
+                  <p className="text-sm text-muted-foreground mb-3">See every device on your Wi-Fi — spot unknown ones.</p>
                   <Button variant="outline" size="sm" asChild>
                     <a href="/tools/home-network-map">Open <ArrowRight className="w-3 h-3 ml-1" /></a>
                   </Button>
@@ -331,7 +331,7 @@ export default function ParentalControlsWizard() {
               <Card>
                 <CardContent className="p-4">
                   <h4 className="font-semibold mb-1 text-sm">Guide: Keeping Kids Safe Online</h4>
-                  <p className="text-xs text-muted-foreground mb-3">Age-by-age guide to online safety conversations.</p>
+                  <p className="text-sm text-muted-foreground mb-3">Age-by-age guide to online safety conversations.</p>
                   <Button variant="outline" size="sm" asChild>
                     <a href="/guides/keeping-kids-safe-online">Read <ArrowRight className="w-3 h-3 ml-1" /></a>
                   </Button>

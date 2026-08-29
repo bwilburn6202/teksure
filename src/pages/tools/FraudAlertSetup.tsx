@@ -19,45 +19,45 @@ export default function FraudAlertSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Two free tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fraud Alert</strong> — bureaus must verify your identity before approving NEW credit. Lasts 1 year (free) or 7 years (with ID-theft report).</li>
               <li><strong>Credit Freeze</strong> — locks your credit reports completely. NO new credit can be opened without you unfreezing first. Strongest protection.</li>
             </ul>
-            <p className="text-sm mt-3">Both are FREE since 2018. Banks tried to charge for years — federal law now bans fees.</p>
+            <p className="text-base mt-3">Both are FREE since 2018. Banks tried to charge for years — federal law now bans fees.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Credit Freeze — recommended for most people</h2>
-            <p className="text-sm">You must freeze with all 3 credit bureaus (separate steps):</p>
-            <ol className="list-decimal pl-5 space-y-2 text-sm mt-2">
+            <p className="text-base">You must freeze with all 3 credit bureaus (separate steps):</p>
+            <ol className="list-decimal pl-5 space-y-2 text-base mt-2">
               <li><strong>Equifax</strong> — equifax.com/personal/credit-report-services or 1-800-685-1111.</li>
               <li><strong>Experian</strong> — experian.com/freeze or 1-888-397-3742.</li>
               <li><strong>TransUnion</strong> — transunion.com/credit-freeze or 1-888-909-8872.</li>
             </ol>
-            <p className="text-sm mt-3">Each gives you a PIN. WRITE DOWN ALL 3 PINs. Need them to unfreeze later.</p>
+            <p className="text-base mt-3">Each gives you a PIN. WRITE DOWN ALL 3 PINs. Need them to unfreeze later.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to thaw (unfreeze)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Applying for a credit card.</li>
               <li>Getting a mortgage or refi.</li>
               <li>Buying a car (loan).</li>
               <li>New apartment (landlord pulls credit).</li>
               <li>New utility account.</li>
             </ul>
-            <p className="text-sm mt-3">Thaw online with your PIN — usually instant. Re-freeze when done. Each thaw can be temporary (1-30 days) or permanent.</p>
+            <p className="text-base mt-3">Thaw online with your PIN — usually instant. Re-freeze when done. Each thaw can be temporary (1-30 days) or permanent.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fraud Alert (alternative — slightly less strong)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Place at any ONE bureau. They notify the other two automatically.</li>
               <li>Lasts 1 year. Free to renew.</li>
               <li>If you confirm ID theft (police report), get 7-year extended fraud alert.</li>
@@ -69,7 +69,7 @@ export default function FraudAlertSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other free protection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>annualcreditreport.com</strong> — pull your free credit reports weekly (since 2023). Check for unfamiliar accounts.</li>
               <li><strong>IRS Identity Protection PIN</strong> — get free at IRS.gov. Stops tax-return fraud. 6-digit PIN required to file.</li>
               <li><strong>Social Security my Social Security account</strong> — at ssa.gov, lock your number. Prevents fake claims.</li>
@@ -81,7 +81,7 @@ export default function FraudAlertSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t pay for &quot;identity theft protection&quot;</h3>
-            <p className="text-sm text-muted-foreground">LifeLock, Aura, IDShield charge $10-30/month. Most of what they offer (credit monitoring, alerts) is FREE elsewhere. Credit freeze is the gold standard and it&apos;s free. Save $200-300/year.</p>
+            <p className="text-base text-muted-foreground">LifeLock, Aura, IDShield charge $10-30/month. Most of what they offer (credit monitoring, alerts) is FREE elsewhere. Credit freeze is the gold standard and it&apos;s free. Save $200-300/year.</p>
           </CardContent>
         </Card>
       </main>

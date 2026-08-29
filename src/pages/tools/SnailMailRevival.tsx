@@ -19,7 +19,7 @@ export default function SnailMailRevival() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why send real mail</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Treasured forever — adult kids find letters in boxes 30 years later.</li>
               <li>Cursive — kids haven&apos;t seen!</li>
               <li>Stands out from email + text noise.</li>
@@ -33,7 +33,7 @@ export default function SnailMailRevival() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Letter ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Birthday letter — share memory of when grandkid was born.</li>
               <li>Story from when their parent was a kid.</li>
               <li>"What I learned at your age."</li>
@@ -49,7 +49,7 @@ export default function SnailMailRevival() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best mail tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Postable</strong> — type message + photo + they print + mail. $2-3/card.</li>
               <li><strong>Touchnote</strong> — phone photo to postcard. $3-5.</li>
               <li><strong>Ink + paper</strong> — old school. Nothing better.</li>
@@ -62,7 +62,7 @@ export default function SnailMailRevival() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Make it routine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 letter / week. Different recipient each.</li>
               <li>Sunday afternoon = letter time. Coffee + paper + pen.</li>
               <li>Build inventory of stamps + cards.</li>
@@ -75,7 +75,7 @@ export default function SnailMailRevival() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">PostalPals + StoryWorth</h3>
-            <p className="text-sm text-muted-foreground">PostalPals — pen pal matching for seniors. StoryWorth — turns letter-stories into bound book at end of year. Both make letter habit fulfilling + lasting.</p>
+            <p className="text-base text-muted-foreground">PostalPals — pen pal matching for seniors. StoryWorth — turns letter-stories into bound book at end of year. Both make letter habit fulfilling + lasting.</p>
           </CardContent>
         </Card>
       </main>

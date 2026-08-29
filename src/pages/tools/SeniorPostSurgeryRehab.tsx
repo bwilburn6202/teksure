@@ -22,7 +22,7 @@ export default function SeniorPostSurgeryRehab() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use insurance</h2><p>Medicare covers 36 PT sessions. Take all. Don&apos;t skip.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pain management</h2><p>Ice + elevation + walking. Don&apos;t lay too long.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Track progress</h2><p>Phone notes daily. Range of motion. Pain level.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Walk first day post-op (with help). Prevents blood clots and pneumonia.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Walk first day post-op (with help). Prevents blood clots and pneumonia.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function EstateFraudPrevention() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Family financial abuse</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$28 BILLION/year stolen from seniors by family members + caregivers.</li>
               <li>Often: child borrows + doesn&apos;t repay, caregiver takes credit cards, "I&apos;ll handle banking" + drains accounts.</li>
               <li>Watch signs: missing items, unfamiliar charges, isolated by one family member.</li>
@@ -31,7 +31,7 @@ export default function EstateFraudPrevention() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lifetime protections</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Limited Power of Attorney</strong> — only what&apos;s necessary, expires.</li>
               <li><strong>Trust + Trustee with co-trustee</strong> — checks and balances.</li>
               <li><strong>Multiple banks</strong> — split accounts, different signatories.</li>
@@ -45,7 +45,7 @@ export default function EstateFraudPrevention() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After-death protection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Will + Trust drafted by attorney</strong> — DIY wills are ground for challenges.</li>
               <li><strong>Witnesses + notary</strong> — both required.</li>
               <li><strong>Specific bequests</strong> — name items, beneficiaries, percentages.</li>
@@ -60,7 +60,7 @@ export default function EstateFraudPrevention() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Deed / property theft</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Some scammers forge deeds to "sell" senior&apos;s home.</li>
               <li>Sign up for free deed monitoring at county recorder (most counties offer).</li>
               <li>Title insurance + monitoring service — Home Title Lock ($15/mo). Helpful but free options exist.</li>
@@ -72,7 +72,7 @@ export default function EstateFraudPrevention() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you suspect fraud</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Stop access — change passwords, lock accounts, revoke POA in writing.</li>
               <li>Document everything — dates, amounts, who did what.</li>
               <li>Adult Protective Services (APS) — your county. Free, confidential.</li>
@@ -86,7 +86,7 @@ export default function EstateFraudPrevention() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free elder law help</h3>
-            <p className="text-sm text-muted-foreground"><strong>National Center on Elder Abuse</strong> — ncea.acl.gov. <strong>Eldercare Locator</strong> — 1-800-677-1116. <strong>Senior Legal Hotlines</strong> — many states have free elder law hotlines. <strong>NAELA</strong> — National Academy of Elder Law Attorneys (find specialist).</p>
+            <p className="text-base text-muted-foreground"><strong>National Center on Elder Abuse</strong> — ncea.acl.gov. <strong>Eldercare Locator</strong> — 1-800-677-1116. <strong>Senior Legal Hotlines</strong> — many states have free elder law hotlines. <strong>NAELA</strong> — National Academy of Elder Law Attorneys (find specialist).</p>
           </CardContent>
         </Card>
       </main>

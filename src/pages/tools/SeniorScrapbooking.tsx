@@ -22,7 +22,7 @@ export default function SeniorScrapbooking() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Shutterfly</h2><p>$30-$80. Auto-fills books from selected photos.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Print yearly</h2><p>One book per year. 10 years = beautiful family record.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Add stories</h2><p>Don&apos;t just photos. Caption with names, places, what was happening.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Best Christmas gift to family. $50 personalized photo book = priceless.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Best Christmas gift to family. $50 personalized photo book = priceless.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

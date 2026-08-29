@@ -129,7 +129,7 @@ export default function AccountAfterLoss() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <HeartHandshake className="h-8 w-8 text-blue-600" />
+                <HeartHandshake className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Closing Accounts After a Loss</h1>
@@ -142,14 +142,14 @@ export default function AccountAfterLoss() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Account After Loss' }]} />
 
-          <Card className="border-border bg-amber-50 dark:bg-amber-950/20 mb-8">
+          <Card className="border-border bg-warn mb-8">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Before you do anything</p>
-              <ul className="space-y-1.5 text-sm">
-                <li className="flex gap-2"><span className="text-amber-600">•</span><span>Get at least 5 certified copies of the death certificate. You will need an original for almost every request.</span></li>
-                <li className="flex gap-2"><span className="text-amber-600">•</span><span>Save photos and family videos out of every account first — accounts get closed, photos can be lost.</span></li>
-                <li className="flex gap-2"><span className="text-amber-600">•</span><span>Take screenshots of recurring charges in case you need to dispute them later.</span></li>
-                <li className="flex gap-2"><span className="text-amber-600">•</span><span>This guide is general information — for legal advice, talk to a probate attorney in your state.</span></li>
+              <p className="text-base font-semibold mb-2">Before you do anything</p>
+              <ul className="space-y-1.5 text-base">
+                <li className="flex gap-2"><span className="text-warn-foreground">•</span><span>Get at least 5 certified copies of the death certificate. You will need an original for almost every request.</span></li>
+                <li className="flex gap-2"><span className="text-warn-foreground">•</span><span>Save photos and family videos out of every account first — accounts get closed, photos can be lost.</span></li>
+                <li className="flex gap-2"><span className="text-warn-foreground">•</span><span>Take screenshots of recurring charges in case you need to dispute them later.</span></li>
+                <li className="flex gap-2"><span className="text-warn-foreground">•</span><span>This guide is general information — for legal advice, talk to a probate attorney in your state.</span></li>
               </ul>
             </CardContent>
           </Card>
@@ -181,11 +181,11 @@ export default function AccountAfterLoss() {
                       </div>
                       <div>
                         <h2 className="font-semibold text-lg">{s.name}</h2>
-                        <p className="text-sm text-muted-foreground mt-1">{s.policy}</p>
+                        <p className="text-base text-muted-foreground mt-1">{s.policy}</p>
                       </div>
                     </div>
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-4 mb-2">Step by step</p>
-                    <ol className="space-y-2 text-sm">
+                    <ol className="space-y-2 text-base">
                       {s.steps.map((step, i) => (
                         <li key={i} className="flex gap-2">
                           <span className="shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary text-xs font-semibold flex items-center justify-center mt-0.5">{i + 1}</span>
@@ -207,7 +207,7 @@ export default function AccountAfterLoss() {
             <CardContent className="p-6">
               <Badge className="mb-3" variant="secondary">Plan ahead</Badge>
               <p className="font-semibold mb-2">For your own family — set this up now, while you can.</p>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 Pick a Legacy Contact on your iPhone today. Set up Google Inactive Account Manager. Save your password manager backup somewhere two trusted people can reach. The hour you spend now saves your family weeks of paperwork later.
               </p>
               <Button asChild>
@@ -220,16 +220,16 @@ export default function AccountAfterLoss() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/bereavement-tech" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Bereavement Tech Hub</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Wider guide for the months after.</p>
+                <p className="font-medium text-base">Bereavement Tech Hub</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Wider guide for the months after.</p>
               </Link>
               <Link to="/tools/data-broker-removal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Data Broker Removal</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Stop their info appearing online.</p>
+                <p className="font-medium text-base">Data Broker Removal</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Stop their info appearing online.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Scammers target grieving families. Check messages.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Scammers target grieving families. Check messages.</p>
               </Link>
             </div>
           </div>

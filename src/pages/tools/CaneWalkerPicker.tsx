@@ -31,10 +31,10 @@ export default function CaneWalkerPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function CaneWalkerPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sizing tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cane top should reach wrist crease when arms hang at side.</li>
               <li>Hold cane on STRONG side, advance with weak leg.</li>
               <li>Walker grips at wrist height with arms slightly bent.</li>
@@ -56,7 +56,7 @@ export default function CaneWalkerPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medicare coverage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medicare Part B covers durable medical equipment (DME).</li>
               <li>Need doctor prescription + medical necessity.</li>
               <li>Pay 20% after deductible.</li>
@@ -70,7 +70,7 @@ export default function CaneWalkerPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No shame in mobility aids</h3>
-            <p className="text-sm text-muted-foreground">Resisting a cane/walker = falls + injury + lost independence. Using one = staying active longer. Seniors who use proper mobility aids stay independent 5+ years longer than those who refuse them. It&apos;s strength, not weakness.</p>
+            <p className="text-base text-muted-foreground">Resisting a cane/walker = falls + injury + lost independence. Using one = staying active longer. Seniors who use proper mobility aids stay independent 5+ years longer than those who refuse them. It&apos;s strength, not weakness.</p>
           </CardContent>
         </Card>
       </main>

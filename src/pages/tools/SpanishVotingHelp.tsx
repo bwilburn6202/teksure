@@ -19,14 +19,14 @@ export default function SpanishVotingHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Federal language law</h2>
-            <p className="text-sm">Voting Rights Act Section 203 — counties with significant Spanish-speaking populations MUST provide Spanish ballots, voting instructions, and oral assistance. <strong>Free, federal right.</strong></p>
+            <p className="text-base">Voting Rights Act Section 203 — counties with significant Spanish-speaking populations MUST provide Spanish ballots, voting instructions, and oral assistance. <strong>Free, federal right.</strong></p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vote in Spanish — official sites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Vote.gov en Español</strong> — federal voter info.</li>
               <li><strong>Vote411.org español</strong> — League of Women Voters bilingual ballot guide.</li>
               <li><strong>NALEO Educational Fund</strong> — naleo.org. Spanish-language voter info hotline 1-888-VE-Y-VOTA (1-888-839-8682).</li>
@@ -38,7 +38,7 @@ export default function SpanishVotingHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">At the polls — your rights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Right to bring ANY person to help you vote (except boss/union rep).</li>
               <li>Right to ask for Spanish ballot if county provides.</li>
               <li>Right to ask for Spanish-speaking poll worker.</li>
@@ -52,7 +52,7 @@ export default function SpanishVotingHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Help hotlines (Spanish)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>1-888-VE-Y-VOTA (NALEO)</strong> — Spanish voter help hotline.</li>
               <li><strong>1-888-839-8682</strong> — same number, easier to dial.</li>
               <li><strong>1-866-MI-VOTO-1</strong> — Election protection in Spanish.</li>
@@ -64,7 +64,7 @@ export default function SpanishVotingHelp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Para abuelos votantes</h3>
-            <p className="text-sm text-muted-foreground">Si tu abuelo o abuela necesita ayuda — ¡puedes acompañarles a la urna! Es legal traer un familiar de confianza. Federal law says any voter can bring an assistant. Don&apos;t skip voting due to language barrier.</p>
+            <p className="text-base text-muted-foreground">Si tu abuelo o abuela necesita ayuda — ¡puedes acompañarles a la urna! Es legal traer un familiar de confianza. Federal law says any voter can bring an assistant. Don&apos;t skip voting due to language barrier.</p>
           </CardContent>
         </Card>
       </main>

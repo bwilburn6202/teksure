@@ -22,7 +22,7 @@ export default function SeniorGoogleCalendar() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share with family</h2><p>Share calendar with kids — they help drive you to appointments.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use voice</h2><p>&ldquo;Hey Google, add doctor appointment Friday at 2.&rdquo;</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Print weekly</h2><p>Calendar.google.com → settings → print. Have a paper backup.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Apple Calendar works the same way — they sync with each other.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Apple Calendar works the same way — they sync with each other.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

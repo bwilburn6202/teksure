@@ -19,7 +19,7 @@ export default function SeniorMotorcycleRiding() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Calimoto — twisty roads finder.</li>
               <li>REVER — track + share rides.</li>
               <li>EatSleepRIDE — group rides.</li>
@@ -33,7 +33,7 @@ export default function SeniorMotorcycleRiding() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior rider safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reflexes slow with age — ride defensively.</li>
               <li>Eye exam annually — vision matters.</li>
               <li>ATGATT — All The Gear, All The Time.</li>
@@ -47,7 +47,7 @@ export default function SeniorMotorcycleRiding() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bluetooth helmets</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sena, Cardo — top brands.</li>
               <li>$200-$400 for unit.</li>
               <li>Music + GPS + calls hands-free.</li>
@@ -61,7 +61,7 @@ export default function SeniorMotorcycleRiding() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Group ride apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find local riding clubs.</li>
               <li>Senior motorcycle groups.</li>
               <li>HOG (Harley Owners Group).</li>
@@ -75,7 +75,7 @@ export default function SeniorMotorcycleRiding() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Weather + roads</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Storm radar before riding.</li>
               <li>Skip wet roads if possible.</li>
               <li>Note hazards in app.</li>
@@ -89,7 +89,7 @@ export default function SeniorMotorcycleRiding() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to slow down</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Honestly assess vision + reaction.</li>
               <li>Eye doctor consultation.</li>
               <li>Switch to trike if balance issues.</li>
@@ -103,7 +103,7 @@ export default function SeniorMotorcycleRiding() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Bluetooth helmet upgrade</h3>
-            <p className="text-sm text-muted-foreground">If you ride and don&apos;t have Bluetooth helmet — biggest senior upgrade. Sena 50S or Cardo Packtalk Edge ($300-$400). Hear GPS directions, take phone calls, listen to music, talk to riding buddies. Especially valuable for senior riders. Worth every dollar for safety + enjoyment.</p>
+            <p className="text-base text-muted-foreground">If you ride and don&apos;t have Bluetooth helmet — biggest senior upgrade. Sena 50S or Cardo Packtalk Edge ($300-$400). Hear GPS directions, take phone calls, listen to music, talk to riding buddies. Especially valuable for senior riders. Worth every dollar for safety + enjoyment.</p>
           </CardContent>
         </Card>
       </main>

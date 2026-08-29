@@ -118,7 +118,7 @@ export default function VideoDoorbellPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <DoorOpen className="h-8 w-8 text-blue-600" />
+                <DoorOpen className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Video Doorbell Picker</h1>
@@ -133,11 +133,11 @@ export default function VideoDoorbellPicker() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">What a video doorbell actually does</p>
-              <p className="text-xs text-muted-foreground mb-2">
+              <p className="text-base font-semibold mb-2">What a video doorbell actually does</p>
+              <p className="text-sm text-muted-foreground mb-2">
                 When someone presses the button OR walks up to your door, the doorbell pings your phone or smartwatch. You can see who is there and talk to them through the doorbell — without opening the door, without getting up.
               </p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 Most also keep a recording so you can see who came by while you were out (delivery person, package thief, neighbour kid).
               </p>
             </CardContent>
@@ -154,19 +154,19 @@ export default function VideoDoorbellPicker() {
                       <Badge variant="outline" className="text-xs">{d.monthly}</Badge>
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {d.whoFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {d.whoFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {d.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}
+                        {d.pros.map((p, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {d.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                        {d.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -183,15 +183,15 @@ export default function VideoDoorbellPicker() {
             )}
           </div>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Three things people do not realize before buying</p>
                 <ol className="space-y-1.5 mt-2">
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">1.</span><span>Most "free trial" cloud-recording subscriptions auto-bill after the trial. Set a calendar reminder.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">2.</span><span>Battery doorbells need recharging every 2-12 months. Wired models do not — but require an existing doorbell wire.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">3.</span><span>Notifications can become noise. Tune the motion zones to your porch only — or you get pinged every time a car drives by.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">1.</span><span>Most "free trial" cloud-recording subscriptions auto-bill after the trial. Set a calendar reminder.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">2.</span><span>Battery doorbells need recharging every 2-12 months. Wired models do not — but require an existing doorbell wire.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">3.</span><span>Notifications can become noise. Tune the motion zones to your porch only — or you get pinged every time a car drives by.</span></li>
                 </ol>
               </div>
             </CardContent>
@@ -201,20 +201,20 @@ export default function VideoDoorbellPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/smart-home-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Smart Home Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair with bulbs and plugs.</p>
+                <p className="font-medium text-base">Smart Home Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair with bulbs and plugs.</p>
               </Link>
               <Link to="/tools/smart-lock-picker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Smart Lock Picker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">See AND unlock from one phone.</p>
+                <p className="font-medium text-base">Smart Lock Picker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">See AND unlock from one phone.</p>
               </Link>
               <Link to="/tools/home-security-camera-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Home Security Camera</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For other angles around the house.</p>
+                <p className="font-medium text-base">Home Security Camera</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For other angles around the house.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: install a doorbell that matches your phone — Ring works great everywhere, but Nest is smoother on Android, Apple HomeKit doorbells are smoother on iPhone.
           </p>
         </div>

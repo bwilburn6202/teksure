@@ -78,14 +78,14 @@ export default function ChatInterface({
               <span className="h-1.5 w-1.5 rounded-full bg-current animate-bounce [animation-delay:-0.3s]" />
               <span className="h-1.5 w-1.5 rounded-full bg-current animate-bounce [animation-delay:-0.15s]" />
               <span className="h-1.5 w-1.5 rounded-full bg-current animate-bounce" />
-              <span className="text-sm">Loading suggestions...</span>
+              <span className="text-base">Loading suggestions...</span>
             </div>
           )}
 
           {/* Suggestion pills */}
           {showSuggestions && onSuggestedQueryClick && (
             <div className="my-3">
-              <p className="text-xs text-muted-foreground mb-2 font-medium">Try one of these:</p>
+              <p className="text-sm text-muted-foreground mb-2 font-medium">Try one of these:</p>
               <div className="flex flex-wrap gap-2">
                 {initialQuerySuggestions.map((s, i) => (
                   <button

@@ -19,7 +19,7 @@ export default function TikTokForSeniorViewers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">It&apos;s not just dancing kids</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>TikTok is short-form videos.</li>
               <li>Algorithm shows what you watch.</li>
               <li>Watch cooking, gardening, history, dogs.</li>
@@ -33,7 +33,7 @@ export default function TikTokForSeniorViewers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly content</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cooking videos — quick recipes.</li>
               <li>Gardening tips.</li>
               <li>History + culture.</li>
@@ -47,7 +47,7 @@ export default function TikTokForSeniorViewers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Train the algorithm</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Like videos you enjoy.</li>
               <li>Skip videos you don&apos;t.</li>
               <li>Follow accounts you like.</li>
@@ -61,7 +61,7 @@ export default function TikTokForSeniorViewers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior creators to follow</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Old Gays — popular senior comedy.</li>
               <li>Joe + Suzy on TikTok — gardening.</li>
               <li>Granfluencer crafts.</li>
@@ -75,7 +75,7 @@ export default function TikTokForSeniorViewers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup for safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Privacy → Private account.</li>
               <li>Settings → Restricted Mode ON.</li>
               <li>Filters out mature content.</li>
@@ -89,7 +89,7 @@ export default function TikTokForSeniorViewers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Time limits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>TikTok algorithmically addictive.</li>
               <li>Settings → Screen Time → Daily limit.</li>
               <li>Set 30 min/day cap.</li>
@@ -103,7 +103,7 @@ export default function TikTokForSeniorViewers() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try one week</h3>
-            <p className="text-sm text-muted-foreground">If skeptical of TikTok, try one week. Like cooking + history + travel videos. Skip the rest. By day 5, your feed will show only senior-friendly content. Many seniors find TikTok the most engaging app for learning new things. Set 30-minute daily limit + Restricted Mode to enjoy without overdoing it.</p>
+            <p className="text-base text-muted-foreground">If skeptical of TikTok, try one week. Like cooking + history + travel videos. Skip the rest. By day 5, your feed will show only senior-friendly content. Many seniors find TikTok the most engaging app for learning new things. Set 30-minute daily limit + Restricted Mode to enjoy without overdoing it.</p>
           </CardContent>
         </Card>
       </main>

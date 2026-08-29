@@ -18,11 +18,11 @@ export default function SeniorKneeReplacementApps() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Force Therapeutics</h2><p>FREE through some hospitals. Daily PT exercises. Connects to surgeon.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hinge Health</h2><p>FREE through Medicare Advantage. Knee program included.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Recovery timeline</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Week 1: home, walker</li><li>Week 4: cane</li><li>Week 6: most activities</li><li>Month 3: 90% recovery</li><li>Year 1: full recovery</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Recovery timeline</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Week 1: home, walker</li><li>Week 4: cane</li><li>Week 6: most activities</li><li>Month 3: 90% recovery</li><li>Year 1: full recovery</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Ice machines</h2><p>$300 cooling system. Reduces swelling. Often covered by insurance.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Daily exercise</h2><p>Skip and recovery doubles. Painful but essential.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare covers</h2><p>Surgery + 36 PT sessions. Use them all.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pre-hab — strengthen knee 6 weeks before surgery. Faster recovery.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pre-hab — strengthen knee 6 weeks before surgery. Faster recovery.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

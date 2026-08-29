@@ -19,7 +19,7 @@ export default function AIWriteEmailHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When AI helps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Complaint letter to company.</li>
               <li>Insurance dispute appeal.</li>
               <li>Wedding / event response.</li>
@@ -35,7 +35,7 @@ export default function AIWriteEmailHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">3 free AI tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ChatGPT</strong> — chat.openai.com. Free version great.</li>
               <li><strong>Claude</strong> — claude.ai. Often better writing.</li>
               <li><strong>Gemini</strong> — gemini.google.com. Free.</li>
@@ -48,7 +48,7 @@ export default function AIWriteEmailHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to ask</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tell it: who it&apos;s to + what you want + tone.</li>
               <li>Example: &quot;Write polite but firm letter to landlord about broken AC, expecting repair within 5 days.&quot;</li>
               <li>Say &quot;short&quot; or &quot;keep it 3 paragraphs.&quot;</li>
@@ -62,7 +62,7 @@ export default function AIWriteEmailHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sample prompts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Help me write thank you to grandkid for graduation gift.&quot;</li>
               <li>&quot;Draft a complaint to insurance about denied claim.&quot;</li>
               <li>&quot;Write a sympathy email to friend who lost spouse.&quot;</li>
@@ -76,7 +76,7 @@ export default function AIWriteEmailHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Always edit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AI gives DRAFT. You make it yours.</li>
               <li>Read carefully — sometimes wrong facts.</li>
               <li>Add personal details.</li>
@@ -90,7 +90,7 @@ export default function AIWriteEmailHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t share these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Social Security number.</li>
               <li>Bank account / credit card.</li>
               <li>Medicare number.</li>
@@ -104,7 +104,7 @@ export default function AIWriteEmailHelp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Voice typing</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t want to type prompt? Use phone&apos;s voice typing — microphone icon on keyboard. Speak your request, AI responds. Faster than typing for many seniors. Works on phone + tablet versions of ChatGPT/Claude/Gemini.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t want to type prompt? Use phone&apos;s voice typing — microphone icon on keyboard. Speak your request, AI responds. Faster than typing for many seniors. Works on phone + tablet versions of ChatGPT/Claude/Gemini.</p>
           </CardContent>
         </Card>
       </main>

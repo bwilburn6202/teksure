@@ -457,8 +457,8 @@ export default function DeviceComparison() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-purple-50 dark:bg-purple-950/30 flex items-center justify-center flex-shrink-0">
-                <Scale className="h-6 w-6 text-purple-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Scale className="h-6 w-6 text-primary" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -474,7 +474,7 @@ export default function DeviceComparison() {
         <div className="container py-10 pb-24 max-w-5xl">
           {/* Comparison selector */}
           <div className="mb-8">
-            <p className="text-sm font-medium mb-3">Choose a comparison:</p>
+            <p className="text-base font-medium mb-3">Choose a comparison:</p>
             <div
               className="flex flex-wrap gap-2"
               role="group"
@@ -563,12 +563,12 @@ export default function DeviceComparison() {
           <Card className="mb-6">
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
-                <Lightbulb className="h-5 w-5 text-amber-500" aria-hidden="true" />
+                <Lightbulb className="h-5 w-5 text-warn-foreground" aria-hidden="true" />
                 The honest takeaway
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-base">
                 {active.takeaway.map((line, i) => (
                   <li key={i} className="flex gap-3">
                     <span className="text-foreground/40 mt-1">•</span>
@@ -588,15 +588,15 @@ export default function DeviceComparison() {
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-5">
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Answer these in your head. If most answers lean the same way, that's probably the right pick for you.
               </p>
               {active.decision.map((d, i) => (
                 <div key={i} className="space-y-2">
-                  <p className="font-medium text-sm">
+                  <p className="font-medium text-base">
                     {i + 1}. {d.question}
                   </p>
-                  <ul className="space-y-1 text-sm pl-4">
+                  <ul className="space-y-1 text-base pl-4">
                     {d.options.map((opt, j) => (
                       <li key={j} className="flex items-start gap-2">
                         <span className="text-foreground/40 mt-1">→</span>
@@ -619,7 +619,7 @@ export default function DeviceComparison() {
                 <Store className="h-6 w-6 text-foreground/70 flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div className="flex-1">
                   <h3 className="font-semibold mb-2">When in doubt, visit a store</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-base text-muted-foreground mb-4">
                     Specs only tell you so much. Holding a phone, typing on a laptop, or listening to a speaker in person is the best way to know if it feels right. Apple Stores, Best Buy, and major carrier stores let you try before you buy — no pressure to purchase that day.
                   </p>
                   <div className="flex flex-wrap gap-3">

@@ -22,7 +22,7 @@ export default function SeniorTSAPreCheckRenewal() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Global Entry alternative</h2><p>$120 for 5 years. Includes TSA PreCheck. Worth it if you fly internationally.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Some credit cards reimburse</h2><p>Chase Sapphire Reserve, Amex Platinum, others. $100 statement credit.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Check status</h2><p>Visit ttp.dhs.gov to see expiration date.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Save Known Traveler Number in airline profiles. Auto-applies to bookings.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Save Known Traveler Number in airline profiles. Auto-applies to bookings.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

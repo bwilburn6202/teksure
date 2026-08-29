@@ -19,7 +19,7 @@ export default function PaperlessPostInvitations() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Paperless Post</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Premium digital invitations.</li>
               <li>Beautiful designer templates.</li>
               <li>Free Flyer style or premium designs.</li>
@@ -33,7 +33,7 @@ export default function PaperlessPostInvitations() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Evite (free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free with ads.</li>
               <li>$50/year ad-free Evite Pro.</li>
               <li>Casual + festive templates.</li>
@@ -47,7 +47,7 @@ export default function PaperlessPostInvitations() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use digital invitations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Casual parties, BBQs, gatherings.</li>
               <li>Family reunion invites.</li>
               <li>Birthday parties.</li>
@@ -61,7 +61,7 @@ export default function PaperlessPostInvitations() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use paper</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Weddings — still traditional.</li>
               <li>Formal events.</li>
               <li>Older generation that doesn&apos;t check email.</li>
@@ -75,7 +75,7 @@ export default function PaperlessPostInvitations() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other free options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Punchbowl — Evite alternative.</li>
               <li>Eventbrite — for ticketed events.</li>
               <li>Facebook Events — free, casual.</li>
@@ -89,7 +89,7 @@ export default function PaperlessPostInvitations() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for success</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Send invites 4–6 weeks ahead.</li>
               <li>Reminder send 1 week before.</li>
               <li>Include all event details clearly.</li>
@@ -103,7 +103,7 @@ export default function PaperlessPostInvitations() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free Evite for casual events</h3>
-            <p className="text-sm text-muted-foreground">For most senior events — birthday parties, anniversary celebrations, family reunions — free Evite is plenty. Beautiful templates, easy RSVP tracking, free for unlimited sends. Save Paperless Post Coins for elegant events. For weddings or formal occasions, stick with traditional paper invitations. Mix and match based on event formality.</p>
+            <p className="text-base text-muted-foreground">For most senior events — birthday parties, anniversary celebrations, family reunions — free Evite is plenty. Beautiful templates, easy RSVP tracking, free for unlimited sends. Save Paperless Post Coins for elegant events. For weddings or formal occasions, stick with traditional paper invitations. Mix and match based on event formality.</p>
           </CardContent>
         </Card>
       </main>

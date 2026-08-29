@@ -184,7 +184,7 @@ export default function FreeTaxFiling() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <Receipt className="h-8 w-8 text-emerald-600" />
+                <Receipt className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Free Tax Filing Helper</h1>
@@ -213,22 +213,22 @@ export default function FreeTaxFiling() {
                   <label className="flex items-start gap-3 p-3 rounded-lg border border-border cursor-pointer hover:bg-muted/40">
                     <input type="radio" name="complexity" value="simple" checked={complexity === 'simple'} onChange={(e) => setComplexity(e.target.value)} className="mt-1" />
                     <div>
-                      <p className="font-medium text-sm">Simple — W-2 income, standard deduction</p>
-                      <p className="text-xs text-muted-foreground">One job, no investments, no rental property.</p>
+                      <p className="font-medium text-base">Simple — W-2 income, standard deduction</p>
+                      <p className="text-sm text-muted-foreground">One job, no investments, no rental property.</p>
                     </div>
                   </label>
                   <label className="flex items-start gap-3 p-3 rounded-lg border border-border cursor-pointer hover:bg-muted/40">
                     <input type="radio" name="complexity" value="medium" checked={complexity === 'medium'} onChange={(e) => setComplexity(e.target.value)} className="mt-1" />
                     <div>
-                      <p className="font-medium text-sm">Medium — itemized, retirement accounts, dividends</p>
-                      <p className="text-xs text-muted-foreground">A few 1099s and itemized deductions.</p>
+                      <p className="font-medium text-base">Medium — itemized, retirement accounts, dividends</p>
+                      <p className="text-sm text-muted-foreground">A few 1099s and itemized deductions.</p>
                     </div>
                   </label>
                   <label className="flex items-start gap-3 p-3 rounded-lg border border-border cursor-pointer hover:bg-muted/40">
                     <input type="radio" name="complexity" value="complex" checked={complexity === 'complex'} onChange={(e) => setComplexity(e.target.value)} className="mt-1" />
                     <div>
-                      <p className="font-medium text-sm">Complex — self-employment, rental property, K-1s</p>
-                      <p className="text-xs text-muted-foreground">Schedule C, multiple states, capital gains.</p>
+                      <p className="font-medium text-base">Complex — self-employment, rental property, K-1s</p>
+                      <p className="text-sm text-muted-foreground">Schedule C, multiple states, capital gains.</p>
                     </div>
                   </label>
                 </div>
@@ -243,7 +243,7 @@ export default function FreeTaxFiling() {
                   <Badge className="mb-2">Best fit</Badge>
                   <p className="text-2xl font-bold mb-1">{result.primary.name}</p>
                   <Badge variant="outline" className="mb-2">{result.primary.cost}</Badge>
-                  <p className="text-sm text-muted-foreground mb-3">{result.reasoning}</p>
+                  <p className="text-base text-muted-foreground mb-3">{result.reasoning}</p>
                   <a href={result.primary.link} target="_blank" rel="noreferrer"
                     className="inline-flex items-center gap-1 text-sm text-primary hover:underline font-medium">
                     Visit {result.primary.name} <ExternalLink className="h-4 w-4" />
@@ -257,7 +257,7 @@ export default function FreeTaxFiling() {
                     <Badge variant="outline" className="mb-1">Backup option</Badge>
                     <p className="font-semibold text-base">{result.alternative.name}</p>
                     <Badge variant="outline" className="my-1">{result.alternative.cost}</Badge>
-                    <p className="text-sm text-muted-foreground mt-2">{result.alternative.whoFor}</p>
+                    <p className="text-base text-muted-foreground mt-2">{result.alternative.whoFor}</p>
                     <a href={result.alternative.link} target="_blank" rel="noreferrer"
                       className="inline-flex items-center gap-1 mt-2 text-xs text-primary hover:underline">
                       Learn more <ExternalLink className="h-3 w-3" />
@@ -277,21 +277,21 @@ export default function FreeTaxFiling() {
                     <p className="font-semibold">{o.name}</p>
                     <Badge variant="outline">{o.cost}</Badge>
                   </div>
-                  <p className="text-xs text-muted-foreground mb-2"><strong>For:</strong> {o.whoFor}</p>
+                  <p className="text-sm text-muted-foreground mb-2"><strong>For:</strong> {o.whoFor}</p>
                   <div className="grid sm:grid-cols-2 gap-2 mb-2">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-1">
                         {o.pros.map((p, i) => (
-                          <li key={i} className="text-xs flex gap-2"><span className="text-green-600 shrink-0">+</span><span>{p}</span></li>
+                          <li key={i} className="text-sm flex gap-2"><span className="text-success-foreground shrink-0">+</span><span>{p}</span></li>
                         ))}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-1">
                         {o.cons.map((c, i) => (
-                          <li key={i} className="text-xs flex gap-2"><span className="text-red-600 shrink-0">−</span><span>{c}</span></li>
+                          <li key={i} className="text-sm flex gap-2"><span className="text-danger-foreground shrink-0">−</span><span>{c}</span></li>
                         ))}
                       </ul>
                     </div>
@@ -305,9 +305,9 @@ export default function FreeTaxFiling() {
             ))}
           </div>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20">
+          <Card className="border-warn-foreground/25 bg-warn ">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch for tax-prep upsells</p>
                 <p className="text-muted-foreground">
@@ -321,16 +321,16 @@ export default function FreeTaxFiling() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For "IRS owes you a refund" texts.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For "IRS owes you a refund" texts.</p>
               </Link>
               <Link to="/tools/id-theft-recovery" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">ID Theft Recovery</p>
-                <p className="text-xs text-muted-foreground mt-0.5">If a fraudulent return was filed in your name.</p>
+                <p className="font-medium text-base">ID Theft Recovery</p>
+                <p className="text-sm text-muted-foreground mt-0.5">If a fraudulent return was filed in your name.</p>
               </Link>
               <Link to="/tools/government-benefits-portal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Government Benefits Portal</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Other federal benefits and credits.</p>
+                <p className="font-medium text-base">Government Benefits Portal</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Other federal benefits and credits.</p>
               </Link>
             </div>
           </div>

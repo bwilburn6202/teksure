@@ -22,7 +22,7 @@ export default function SeniorEthernetCables() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Powerline adapters</h2><p>$50. Use electrical wires for internet. No new cables to run.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">USB-C to Ethernet</h2><p>$15. Plug into iPad/laptop. Faster than Wi-Fi. Worth it for video calls.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hide cables</h2><p>$20 cord covers. Match wall paint. Looks clean.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Smart TVs always run smoother on Ethernet vs Wi-Fi.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Smart TVs always run smoother on Ethernet vs Wi-Fi.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

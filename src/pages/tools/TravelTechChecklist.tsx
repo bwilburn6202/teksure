@@ -234,7 +234,7 @@ export default function TravelTechChecklist() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-sky-500/10 rounded-full">
-                <Plane className="h-8 w-8 text-sky-600" />
+                <Plane className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Travel Tech Checklist</h1>
@@ -260,7 +260,7 @@ export default function TravelTechChecklist() {
                 </div>
               </div>
               <div className="flex flex-col items-end gap-2">
-                <p className="text-sm text-muted-foreground">{done.size} of {totalItems} done</p>
+                <p className="text-base text-muted-foreground">{done.size} of {totalItems} done</p>
                 <Button onClick={printIt} variant="outline" size="sm" className="gap-2">
                   <Printer className="h-4 w-4" /> Print
                 </Button>
@@ -305,8 +305,8 @@ export default function TravelTechChecklist() {
                         >
                           <Checkbox checked={done.has(item.id)} onCheckedChange={() => toggle(item.id)} className="mt-1" />
                           <div className="flex-1">
-                            <p className={`font-medium text-sm ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
-                            <p className="text-xs text-muted-foreground mt-1">{item.detail}</p>
+                            <p className={`font-medium text-base ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
+                            <p className="text-sm text-muted-foreground mt-1">{item.detail}</p>
                             {item.link && (
                               item.link.href.startsWith('/') ? (
                                 <Link to={item.link.href}
@@ -330,9 +330,9 @@ export default function TravelTechChecklist() {
             );
           })}
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">A note on "tech support" scams while travelling</p>
                 <p className="text-muted-foreground">
@@ -346,16 +346,16 @@ export default function TravelTechChecklist() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Travelling = more scam attempts. Check before you reply.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Travelling = more scam attempts. Check before you reply.</p>
               </Link>
               <Link to="/tools/backup-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Backup Wizard</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Make sure your phone is fully backed up.</p>
+                <p className="font-medium text-base">Backup Wizard</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Make sure your phone is fully backed up.</p>
               </Link>
               <Link to="/tools/password-health" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Password Health Check</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Strong passphrase before you log in from anywhere new.</p>
+                <p className="font-medium text-base">Password Health Check</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Strong passphrase before you log in from anywhere new.</p>
               </Link>
             </div>
           </div>
@@ -365,7 +365,7 @@ export default function TravelTechChecklist() {
         <div className="hidden print:block px-8 py-6 text-sm">
           <header className="border-b-2 border-black pb-3 mb-5">
             <h1 className="text-2xl font-bold">Travel Tech Checklist</h1>
-            <p className="text-xs text-gray-600 mt-1">{trip === 'international' ? 'International trip' : 'Domestic (US) trip'} — TekSure.com</p>
+            <p className="text-sm text-muted-foreground mt-1">{trip === 'international' ? 'International trip' : 'Domestic (US) trip'} — TekSure.com</p>
           </header>
           {filteredSections.map(s => (
             <section key={s.id} className="mb-4 break-inside-avoid">
@@ -380,7 +380,7 @@ export default function TravelTechChecklist() {
               </ul>
             </section>
           ))}
-          <footer className="mt-6 pt-3 border-t border-gray-300 text-xs text-gray-600">More free travel tools at TekSure.com.</footer>
+          <footer className="mt-6 pt-3 border-t border-border text-xs text-muted-foreground">More free travel tools at TekSure.com.</footer>
         </div>
       </main>
 

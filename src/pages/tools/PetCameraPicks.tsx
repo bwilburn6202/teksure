@@ -30,10 +30,10 @@ export default function PetCameraPicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{c.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{c.cost}</span>
+                  <span className="text-base font-semibold text-primary">{c.cost}</span>
                 </div>
-                <p className="text-sm">{c.best}</p>
-                <p className="text-sm text-muted-foreground">{c.good}</p>
+                <p className="text-base">{c.best}</p>
+                <p className="text-base text-muted-foreground">{c.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function PetCameraPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What features matter</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Two-way audio</strong> — talk to pet, hear them. Reassures separation anxiety.</li>
               <li><strong>Treat-tossing</strong> — fun + reinforces good behavior.</li>
               <li><strong>Bark/sound alerts</strong> — get notified if pet is distressed.</li>
@@ -56,7 +56,7 @@ export default function PetCameraPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Place where you can see most of the room — corner, high shelf.</li>
               <li>NEVER aim at neighbor&apos;s home (privacy + legal).</li>
               <li>Connect to wifi BEFORE leaving the house.</li>
@@ -69,7 +69,7 @@ export default function PetCameraPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior anxiety relief</h3>
-            <p className="text-sm text-muted-foreground">Pet cameras especially help when family worries about a senior parent&apos;s pet (or a pet whose senior owner has memory loss). Can verify pet was fed, can see if pet&apos;s out, can talk to them. $40-200 buys major peace of mind.</p>
+            <p className="text-base text-muted-foreground">Pet cameras especially help when family worries about a senior parent&apos;s pet (or a pet whose senior owner has memory loss). Can verify pet was fed, can see if pet&apos;s out, can talk to them. $40-200 buys major peace of mind.</p>
           </CardContent>
         </Card>
       </main>

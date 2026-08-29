@@ -126,7 +126,7 @@ export default function NewThread() {
                   >
                     <span className="text-lg">{cat.emoji}</span>
                     <span className="font-medium leading-tight">{cat.label}</span>
-                    <span className="text-xs text-muted-foreground leading-tight">{cat.description}</span>
+                    <span className="text-sm text-muted-foreground leading-tight">{cat.description}</span>
                   </button>
                 ))}
               </div>
@@ -146,7 +146,7 @@ export default function NewThread() {
                 className="text-base"
                 disabled={createThread.isPending}
               />
-              <p className="text-xs text-muted-foreground text-right">{title.length}/120</p>
+              <p className="text-sm text-muted-foreground text-right">{title.length}/120</p>
             </div>
 
             {/* Body */}
@@ -165,7 +165,7 @@ export default function NewThread() {
               />
             </div>
 
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               Posting as <span className="font-medium text-foreground">{user.fullName || user.email}</span>
             </p>
 

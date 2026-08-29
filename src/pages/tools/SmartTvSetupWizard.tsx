@@ -512,7 +512,7 @@ function DoneScreen({
     <Card className="border-green-600/40 bg-green-50/40 dark:bg-green-950/20">
       <CardContent className="p-6 md:p-8 space-y-6">
         <div className="flex items-center gap-3">
-          <div className="p-3 rounded-full bg-green-600/10 text-green-700 dark:text-green-400">
+          <div className="p-3 rounded-full bg-green-600/10 text-success-foreground ">
             <CheckCircle2 className="w-8 h-8" />
           </div>
           <div>
@@ -538,7 +538,7 @@ function DoneScreen({
                   </li>
                 ))}
               </ul>
-              <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+              <p className="text-base text-muted-foreground mt-3 leading-relaxed">
                 These apps have thousands of free movies, TV shows, and live channels with no subscription needed. They show ads — that&apos;s how they stay free.
               </p>
             </CardContent>
@@ -558,7 +558,7 @@ function DoneScreen({
                   </li>
                 ))}
               </ul>
-              <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+              <p className="text-base text-muted-foreground mt-3 leading-relaxed">
                 Already subscribed? Open the app and sign in. Not sure which to pay for? Use our Streaming TV Guide (below) to compare.
               </p>
             </CardContent>
@@ -635,7 +635,7 @@ function TroubleshootingSection() {
             Stuck? Open the troubleshooting guide
           </span>
         </span>
-        <span className="text-sm text-muted-foreground">{open ? 'Hide' : 'Show'}</span>
+        <span className="text-base text-muted-foreground">{open ? 'Hide' : 'Show'}</span>
       </button>
 
       {open && (
@@ -644,7 +644,7 @@ function TroubleshootingSection() {
             <Card key={item.title}>
               <CardContent className="p-5">
                 <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                  <AlertTriangle className="w-5 h-5 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+                  <AlertTriangle className="w-5 h-5 text-warn-foreground " aria-hidden="true" />
                   {item.title}
                 </h3>
                 <p className="text-base leading-relaxed">{item.body}</p>
@@ -755,12 +755,12 @@ export default function SmartTvSetupWizard() {
               ))}
             </div>
 
-            <Card className="mt-8 bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+            <Card className="mt-8 bg-warn border-amber-500/40">
               <CardContent className="p-5 flex items-start gap-3">
-                <ShieldCheck className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
+                <ShieldCheck className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-base mb-1">Not sure which you have?</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     Check the box it came in or the small logo on the device itself. If the streaming apps are already built into the TV (no extra box or stick), pick <strong>Built-in Smart TV</strong>.
                   </p>
                 </div>
@@ -801,11 +801,11 @@ export default function SmartTvSetupWizard() {
             </div>
 
             <div className="flex items-center gap-3 mb-2">
-              <span className="text-sm md:text-base font-medium text-muted-foreground">
+              <span className="text-base md:text-base font-medium text-muted-foreground">
                 {isDone ? 'All done' : `Step ${stepIndex + 1} of ${totalSteps}`}
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 {completed.size} completed
               </span>
             </div>
@@ -861,10 +861,10 @@ export default function SmartTvSetupWizard() {
 
               {/* Stumbling block */}
               {current.stumble && (
-                <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+                <Card className="bg-warn border-amber-500/40">
                   <CardContent className="p-5 flex items-start gap-3">
                     <Lightbulb
-                      className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5"
+                      className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5"
                       aria-hidden="true"
                     />
                     <div>

@@ -19,7 +19,7 @@ export default function OnePotMeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sheet pan dinners</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Salmon + asparagus + lemon</strong> — 400°F, 18 min.</li>
               <li><strong>Chicken thighs + sweet potato + broccoli</strong> — 425°F, 30 min.</li>
               <li><strong>Sausage + peppers + onions + potatoes</strong> — 400°F, 25 min.</li>
@@ -32,7 +32,7 @@ export default function OnePotMeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skillet meals</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Chicken stir-fry</strong> — chicken + frozen veggie mix + soy sauce + rice.</li>
               <li><strong>Egg scramble</strong> — eggs + leftover veggies + cheese.</li>
               <li><strong>Pasta + meat sauce</strong> — ground beef + jar sauce + cooked pasta in same pan.</li>
@@ -44,7 +44,7 @@ export default function OnePotMeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pot meals</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Chicken + rice 1-pot</strong> — boil rice + chicken in broth. 25 min.</li>
               <li><strong>Soup + grilled cheese</strong> — comforting, easy.</li>
               <li><strong>Beans + rice</strong> — cheap, healthy, freezes well.</li>
@@ -56,7 +56,7 @@ export default function OnePotMeals() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pre-cut veggies (Costco / supermarket) — saves arthritis hands.</li>
               <li>Frozen veggie steam-bags — pour right in pan.</li>
               <li>Rotisserie chicken from Costco ($5) — pulls easy + freezes.</li>
@@ -70,7 +70,7 @@ export default function OnePotMeals() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For 1 person households</h3>
-            <p className="text-sm text-muted-foreground">Cook full recipe. Eat half tonight. Freeze half for next week. Or — make smaller in toaster oven (8x8 pan) for true 1-2 servings. Don&apos;t cook tiny — wastes time + ingredients.</p>
+            <p className="text-base text-muted-foreground">Cook full recipe. Eat half tonight. Freeze half for next week. Or — make smaller in toaster oven (8x8 pan) for true 1-2 servings. Don&apos;t cook tiny — wastes time + ingredients.</p>
           </CardContent>
         </Card>
       </main>

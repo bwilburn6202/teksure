@@ -22,7 +22,7 @@ export default function SeniorAutoFeeders() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Wet food feeder</h2><p>Cat Mate C500 ($60). Ice pack underneath keeps food cool 8+ hours.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Battery backup</h2><p>Pick a feeder with battery + plug. Power outages won&apos;t skip a meal.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Travel use</h2><p>Most run 1-2 weeks. Combine with a Furbo camera to check in remotely.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Test for a week before leaving. Pet adjusts to the new schedule.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Test for a week before leaving. Pet adjusts to the new schedule.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

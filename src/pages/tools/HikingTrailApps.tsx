@@ -30,10 +30,10 @@ export default function HikingTrailApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function HikingTrailApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start safely (any trail)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Look for "easy" or "moderate" rated trails.</li>
               <li>Check distance, elevation gain, and recent reviews.</li>
               <li>Tell someone where you\'re going and when you\'ll be back.</li>
@@ -57,7 +57,7 @@ export default function HikingTrailApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you have an Apple Watch or Garmin</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Pair AllTrails — the watch shows turn-by-turn even when phone is in pocket.</li>
               <li>Apple Watch Series 8+ with iPhone 14+ has Emergency SOS via satellite — works in the wilderness with no cell service.</li>
               <li>Garmin inReach is the gold standard for backcountry — sends "I\'m OK" or "SOS" via satellite anywhere on Earth.</li>
@@ -68,7 +68,7 @@ export default function HikingTrailApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior-friendly: rail-trails</h3>
-            <p className="text-sm text-muted-foreground">If big elevation changes are tough, look for "rail trails" — old railway tracks converted to flat, paved walking paths. TrailLink (free) maps thousands. Many are wheelchair accessible. Beautiful, gentle, often along rivers.</p>
+            <p className="text-base text-muted-foreground">If big elevation changes are tough, look for "rail trails" — old railway tracks converted to flat, paved walking paths. TrailLink (free) maps thousands. Many are wheelchair accessible. Beautiful, gentle, often along rivers.</p>
           </CardContent>
         </Card>
       </main>

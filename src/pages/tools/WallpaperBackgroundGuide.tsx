@@ -19,7 +19,7 @@ export default function WallpaperBackgroundGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone wallpaper</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings, then &quot;Wallpaper&quot;.</li>
               <li>&quot;Add New Wallpaper&quot;.</li>
               <li>Choose Photos to use your photo.</li>
@@ -33,7 +33,7 @@ export default function WallpaperBackgroundGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android wallpaper</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Long-press home screen empty area.</li>
               <li>&quot;Wallpapers &amp; style&quot;.</li>
               <li>Choose photo or built-in.</li>
@@ -47,7 +47,7 @@ export default function WallpaperBackgroundGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Windows desktop background</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Right-click desktop, then &quot;Personalize&quot;.</li>
               <li>&quot;Background&quot;.</li>
               <li>Choose Picture / Solid Color / Slideshow.</li>
@@ -61,7 +61,7 @@ export default function WallpaperBackgroundGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mac desktop</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>System Settings, then &quot;Wallpaper&quot;.</li>
               <li>Built-in dynamic options.</li>
               <li>Or click &quot;+&quot; to add photo.</li>
@@ -75,7 +75,7 @@ export default function WallpaperBackgroundGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photo of family ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Grandkids — favorite faces.</li>
               <li>Wedding photo.</li>
               <li>Beach / vacation.</li>
@@ -90,7 +90,7 @@ export default function WallpaperBackgroundGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free wallpaper sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Unsplash.com</strong> — beautiful free photos.</li>
               <li><strong>Pexels.com</strong> — free pictures.</li>
               <li><strong>NASA</strong> — astronomy photos.</li>
@@ -104,7 +104,7 @@ export default function WallpaperBackgroundGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Avoid distracting wallpaper</h3>
-            <p className="text-sm text-muted-foreground">Busy wallpaper makes app icons hard to see. Use simple solid color or low-contrast photo. Lock screen — show favorite face. Home screen — easier to see icons. Rotate seasonal — Christmas in December, beach in summer. Small touches make device feel like yours.</p>
+            <p className="text-base text-muted-foreground">Busy wallpaper makes app icons hard to see. Use simple solid color or low-contrast photo. Lock screen — show favorite face. Home screen — easier to see icons. Rotate seasonal — Christmas in December, beach in summer. Small touches make device feel like yours.</p>
           </CardContent>
         </Card>
       </main>

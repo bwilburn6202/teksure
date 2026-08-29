@@ -19,7 +19,7 @@ export default function JigsawPuzzleStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior favorite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Calming + meditative.</li>
               <li>Improves visual memory.</li>
               <li>Pattern recognition.</li>
@@ -34,7 +34,7 @@ export default function JigsawPuzzleStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best brands</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ravensburger</strong> — gold standard. Premium pieces.</li>
               <li><strong>Cobble Hill</strong> — quality + reasonable price.</li>
               <li><strong>White Mountain</strong> — Americana themes.</li>
@@ -48,7 +48,7 @@ export default function JigsawPuzzleStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly puzzles</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>500 pieces</strong> — manageable.</li>
               <li><strong>1,000 pieces</strong> — classic challenge.</li>
               <li><strong>Large piece puzzles</strong> — for arthritis.</li>
@@ -62,7 +62,7 @@ export default function JigsawPuzzleStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Strategy tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sort edges first.</li>
               <li>Build edge frame.</li>
               <li>Sort by color groups.</li>
@@ -77,7 +77,7 @@ export default function JigsawPuzzleStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior accessories</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Puzzle table</strong> — folding, $50-200.</li>
               <li><strong>Sorting trays</strong> — $15.</li>
               <li><strong>Puzzle mat / roll-up</strong> — pause + store $20.</li>
@@ -91,7 +91,7 @@ export default function JigsawPuzzleStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save + share</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Glue + frame favorites.</li>
               <li>Modge Podge $8 for puzzle glue.</li>
               <li>Donate to senior centers.</li>
@@ -105,7 +105,7 @@ export default function JigsawPuzzleStrategy() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Digital puzzles</h3>
-            <p className="text-sm text-muted-foreground"><strong>Jigsaw Puzzles Pro</strong> + <strong>Magic Jigsaw</strong> apps — endless puzzles on iPad. No mess. Save in progress. Adjust difficulty (50-1000 pieces). Convert your photos to puzzles. Senior favorites for travel + small spaces.</p>
+            <p className="text-base text-muted-foreground"><strong>Jigsaw Puzzles Pro</strong> + <strong>Magic Jigsaw</strong> apps — endless puzzles on iPad. No mess. Save in progress. Adjust difficulty (50-1000 pieces). Convert your photos to puzzles. Senior favorites for travel + small spaces.</p>
           </CardContent>
         </Card>
       </main>

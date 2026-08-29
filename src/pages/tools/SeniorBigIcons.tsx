@@ -22,7 +22,7 @@ export default function SeniorBigIcons() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Big Launcher (Android)</h2><p>Free app. Replaces home screen with HUGE icons.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Trade-off</h2><p>Bigger icons = fewer per screen. Worth it for clarity.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tablet alternative</h2><p>iPad has bigger screen. Same iPhone icons but easier to see and tap.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Big icons + bold text = phone usable forever. Set once, enjoy daily.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Big icons + bold text = phone usable forever. Set once, enjoy daily.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

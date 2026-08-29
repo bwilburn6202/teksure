@@ -83,7 +83,7 @@ export default function CookieConsentDecoder() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <Cookie className="h-8 w-8 text-amber-600" />
+                <Cookie className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Cookie Consent Decoder</h1>
@@ -115,8 +115,8 @@ export default function CookieConsentDecoder() {
                       {b.goodOrBad === 'good' ? 'Click this' : b.goodOrBad === 'bad' ? 'Avoid' : 'Okay'}
                     </Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-2"><strong>What it does:</strong> {b.whatItDoes}</p>
-                  <p className="text-sm"><strong>Guidance:</strong> {b.guidance}</p>
+                  <p className="text-base text-muted-foreground mb-2"><strong>What it does:</strong> {b.whatItDoes}</p>
+                  <p className="text-base"><strong>Guidance:</strong> {b.guidance}</p>
                 </CardContent>
               </Card>
             ))}
@@ -124,8 +124,8 @@ export default function CookieConsentDecoder() {
 
           <Card className="border-border bg-primary/5 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">The 3-second rule for any cookie banner</p>
-              <ol className="space-y-1.5 text-sm">
+              <p className="text-base font-semibold mb-2">The 3-second rule for any cookie banner</p>
+              <ol className="space-y-1.5 text-base">
                 <li className="flex gap-2"><span className="text-primary font-semibold shrink-0">1.</span><span>Look for "Reject All" or "Necessary Only" — click that.</span></li>
                 <li className="flex gap-2"><span className="text-primary font-semibold shrink-0">2.</span><span>Not there? Click "Customize" → toggle everything off except Strictly Necessary → Save.</span></li>
                 <li className="flex gap-2"><span className="text-primary font-semibold shrink-0">3.</span><span>Banner does not let you reject? Close the tab — that site is not respecting you.</span></li>
@@ -138,8 +138,8 @@ export default function CookieConsentDecoder() {
             {FAQ.map(f => (
               <Card key={f.q} className="border-border">
                 <CardContent className="p-5">
-                  <p className="font-semibold text-sm mb-1">{f.q}</p>
-                  <p className="text-sm text-muted-foreground">{f.a}</p>
+                  <p className="font-semibold text-base mb-1">{f.q}</p>
+                  <p className="text-base text-muted-foreground">{f.a}</p>
                 </CardContent>
               </Card>
             ))}
@@ -147,11 +147,11 @@ export default function CookieConsentDecoder() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A bigger fix: install an ad-blocker</p>
-              <p className="text-xs text-muted-foreground mb-3">
+              <p className="text-base font-semibold mb-2">A bigger fix: install an ad-blocker</p>
+              <p className="text-sm text-muted-foreground mb-3">
                 <strong>uBlock Origin</strong> is free, runs in Chrome, Firefox, Edge, and Safari, and blocks trackers and most cookie banners automatically. Install once, every site is calmer afterwards. ublockorigin.com.
               </p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 For phones — <strong>Brave Browser</strong> (free, App Store + Play Store) blocks trackers and ads by default. Use it instead of Safari/Chrome on the phone for cleaner browsing.
               </p>
             </CardContent>
@@ -161,20 +161,20 @@ export default function CookieConsentDecoder() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/data-broker-removal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Data Broker Removal</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Remove yourself from people-search sites.</p>
+                <p className="font-medium text-base">Data Broker Removal</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Remove yourself from people-search sites.</p>
               </Link>
               <Link to="/tools/browser-safety-audit" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Browser Safety Audit</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Lock down your browser further.</p>
+                <p className="font-medium text-base">Browser Safety Audit</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Lock down your browser further.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Suspicious site? Check before clicking.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Suspicious site? Check before clicking.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: defaulting to "Reject All" on every site adds up — over a year, you stop being tracked across thousands of pages.
           </p>
         </div>

@@ -30,10 +30,10 @@ export default function MemoryCareApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function MemoryCareApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wandering safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple AirTag in shoes/wallet</strong> — $30, finds them.</li>
               <li><strong>GPS Smart Sole</strong> — shoe insole with GPS. $300 + $25/mo.</li>
               <li><strong>Project Lifesaver</strong> — local sheriff partnership. Radio bracelet for at-risk wanderers. Free in many counties.</li>
@@ -55,7 +55,7 @@ export default function MemoryCareApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Music + memory</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Music from age 16-25 stays in memory longest. Build playlist of those years.</li>
               <li>Spotify, Apple Music, YouTube — free music to play.</li>
               <li><strong>Music &amp; Memory</strong> nonprofit — free iPods loaded with personal playlists for dementia patients.</li>
@@ -67,7 +67,7 @@ export default function MemoryCareApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free help &amp; resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Alzheimer&apos;s Association</strong> — alz.org or 1-800-272-3900 (24/7).</li>
               <li><strong>National Institute on Aging</strong> — nia.nih.gov, free guides.</li>
               <li><strong>Local memory cafes</strong> — social meetups for patients + caregivers.</li>
@@ -80,7 +80,7 @@ export default function MemoryCareApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Caregiver burnout</h3>
-            <p className="text-sm text-muted-foreground">Memory care is one of the hardest jobs. 40% of dementia caregivers die before the patient — from stress. Take respite seriously. Local Area Agency on Aging arranges weekly respite hours, often free or low cost. Nobody can do this alone.</p>
+            <p className="text-base text-muted-foreground">Memory care is one of the hardest jobs. 40% of dementia caregivers die before the patient — from stress. Take respite seriously. Local Area Agency on Aging arranges weekly respite hours, often free or low cost. Nobody can do this alone.</p>
           </CardContent>
         </Card>
       </main>

@@ -46,21 +46,21 @@ export default function DivorceAt70Checklist() {
   const completedCount = Object.values(done).filter(Boolean).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Divorce at 70+ Checklist | TekSure" description="A dignified, plainspoken checklist for older adults navigating gray divorce. Retirement assets, Medicare, the home, beneficiaries, the new chapter." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Scale className="h-7 w-7 text-slate-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Gray Divorce Checklist</h1>
+            <Scale className="h-7 w-7 text-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Gray Divorce Checklist</h1>
           </div>
-          <p className="text-gray-600 text-lg">A dignified plan for divorce at 70+. Move at your own pace. Bring this to your attorney's first meeting.</p>
+          <p className="text-muted-foreground text-lg">A dignified plan for divorce at 70+. Move at your own pace. Bring this to your attorney's first meeting.</p>
         </div>
 
         {completedCount > 0 && (
-          <Card className="mb-4 bg-slate-50 border-slate-200">
+          <Card className="mb-4 bg-muted border-border">
             <CardContent className="py-3 px-4 text-center">
-              <p className="text-slate-900 font-semibold">{completedCount} of {ITEMS.length} done</p>
+              <p className="text-foreground font-semibold">{completedCount} of {ITEMS.length} done</p>
             </CardContent>
           </Card>
         )}
@@ -68,14 +68,14 @@ export default function DivorceAt70Checklist() {
         {CATEGORIES.map(cat => (
           <Card key={cat} className="mb-4">
             <CardContent className="py-4 px-4">
-              <h2 className="text-xl font-bold text-gray-900 mb-3">{cat}</h2>
+              <h2 className="text-xl font-bold text-foreground mb-3">{cat}</h2>
               <div className="space-y-3">
                 {ITEMS.filter(i => i.category === cat).map(i => (
-                  <div key={i.id} className="flex items-start gap-3 p-3 rounded-lg border border-gray-200 bg-white">
+                  <div key={i.id} className="flex items-start gap-3 p-3 rounded-lg border border-border bg-card">
                     <Checkbox checked={!!done[i.id]} onCheckedChange={() => toggle(i.id)} className="mt-1 print:hidden" />
                     <div className="flex-1 min-w-0">
                       <p className={`font-semibold ${done[i.id] ? "line-through text-gray-400" : "text-gray-900"}`}>{i.title}</p>
-                      <p className="text-sm text-gray-600 mt-1">{i.detail}</p>
+                      <p className="text-base text-muted-foreground mt-1">{i.detail}</p>
                     </div>
                   </div>
                 ))}
@@ -90,6 +90,6 @@ export default function DivorceAt70Checklist() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

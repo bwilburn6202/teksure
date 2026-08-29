@@ -32,10 +32,10 @@ export default function DocumentaryStreaming() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base mb-1">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function DocumentaryStreaming() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Must-watch documentaries</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Ken Burns: The Civil War, Baseball, Vietnam, Country Music</strong> — PBS / PBS Passport.</li>
               <li><strong>Planet Earth / Blue Planet</strong> — Netflix or BBC.</li>
               <li><strong>Won&apos;t You Be My Neighbor? (Mr. Rogers)</strong> — multiple platforms.</li>
@@ -60,7 +60,7 @@ export default function DocumentaryStreaming() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best free path</h3>
-            <p className="text-sm text-muted-foreground">PBS app (free) + the free Hoopla / Kanopy from your library = years of content. Then add Curiosity Stream lifetime deal next time it goes on sale (often Black Friday) for $100 forever.</p>
+            <p className="text-base text-muted-foreground">PBS app (free) + the free Hoopla / Kanopy from your library = years of content. Then add Curiosity Stream lifetime deal next time it goes on sale (often Black Friday) for $100 forever.</p>
           </CardContent>
         </Card>
       </main>

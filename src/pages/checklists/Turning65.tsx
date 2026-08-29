@@ -440,7 +440,7 @@ export default function Turning65() {
         </div>
 
         {/* ── Hero ──────────────────────────────────── */}
-        <section className="border-b border-border bg-gradient-to-br from-amber-100 via-orange-50 to-rose-100 dark:from-amber-950/50 dark:via-orange-950/30 dark:to-rose-950/40 print:bg-white print:border-none">
+        <section className="border-b border-border bg-gradient-to-br from-amber-100 via-orange-50 to-rose-100 dark:from-amber-950/50 dark:via-orange-950/30 dark:to-rose-950/40 print:bg-card print:border-none">
           <div className="container py-10 md:py-14 relative">
             <div className="absolute top-6 right-6 print:hidden">
               <BookmarkButton
@@ -451,7 +451,7 @@ export default function Turning65() {
               />
             </div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 rounded-xl bg-amber-500/15 text-amber-700 dark:text-amber-300">
+              <div className="p-3 rounded-xl bg-amber-500/15 text-warn-foreground ">
                 <Cake className="w-7 h-7" aria-hidden="true" />
               </div>
               <Badge variant="outline" className="text-xs">
@@ -487,19 +487,19 @@ export default function Turning65() {
             </div>
 
             {/* Progress */}
-            <Card className="mt-8 border-amber-300 dark:border-amber-900 bg-white/80 dark:bg-amber-950/40 backdrop-blur print:hidden">
+            <Card className="mt-8 border-warn-foreground/25 bg-white/80 dark:bg-amber-950/40 backdrop-blur print:hidden">
               <CardContent className="p-5 md:p-6">
                 <div className="flex items-center justify-between mb-3">
-                  <div className="font-semibold text-base md:text-lg text-amber-900 dark:text-amber-100">
+                  <div className="font-semibold text-base md:text-lg text-warn-foreground ">
                     Your progress
                   </div>
-                  <div className="text-base md:text-lg font-bold text-amber-800 dark:text-amber-200">
+                  <div className="text-base md:text-lg font-bold text-warn-foreground ">
                     {completedCount} of {totalCount} ({percent}%)
                   </div>
                 </div>
                 <Progress value={percent} className="h-3" />
                 <div className="flex flex-wrap gap-3 items-center justify-between mt-4">
-                  <p className="text-sm text-amber-900/80 dark:text-amber-100/80">
+                  <p className="text-base text-amber-900/80 dark:text-amber-100/80">
                     Progress is saved locally in your browser. Clearing cookies will reset it.
                   </p>
                   {completedCount > 0 && (
@@ -507,7 +507,7 @@ export default function Turning65() {
                       onClick={resetAll}
                       variant="ghost"
                       size="sm"
-                      className="text-amber-800 dark:text-amber-200 hover:bg-amber-100 dark:hover:bg-amber-900/50 min-h-10"
+                      className="text-warn-foreground hover:bg-warn min-h-10"
                     >
                       <RotateCcw className="w-4 h-4 mr-2" aria-hidden="true" />
                       Reset all
@@ -561,9 +561,9 @@ export default function Turning65() {
 
         {/* ── Scam warning ─────────────────────────── */}
         <section className="container pb-4">
-          <Alert className="border-red-300 bg-red-50 dark:bg-red-950/40 dark:border-red-900">
-            <ShieldAlert className="h-5 w-5 text-red-700 dark:text-red-300" />
-            <AlertTitle className="text-red-900 dark:text-red-100 text-lg font-bold">
+          <Alert className="border-danger-foreground/25 bg-danger ">
+            <ShieldAlert className="h-5 w-5 text-danger-foreground " />
+            <AlertTitle className="text-danger-foreground text-lg font-bold">
               Scam warnings for new Medicare members
             </AlertTitle>
             <AlertDescription className="text-red-900/90 dark:text-red-100/90 text-base leading-relaxed">
@@ -579,7 +579,7 @@ export default function Turning65() {
               <p className="mb-3">
                 Never give your Medicare number, Social Security number, or bank info to a caller you did not contact first. Hang up and call Medicare directly at <strong>1-800-MEDICARE</strong>.
               </p>
-              <Button asChild variant="outline" className="bg-white dark:bg-red-950/60 border-red-300 dark:border-red-800 text-red-900 dark:text-red-100 hover:bg-red-100 dark:hover:bg-red-900/60 min-h-12">
+              <Button asChild variant="outline" className="bg-card border-danger-foreground/25 text-danger-foreground hover:bg-danger min-h-12">
                 <Link to="/tools/is-this-real">
                   <ShieldAlert className="w-4 h-4 mr-2" aria-hidden="true" />
                   Check a suspicious message with Is This Real?
@@ -591,9 +591,9 @@ export default function Turning65() {
 
         {/* ── Free help card ───────────────────────── */}
         <section className="container pb-10">
-          <Alert className="border-green-300 bg-green-50 dark:bg-green-950/40 dark:border-green-900">
-            <HandHeart className="h-5 w-5 text-green-700 dark:text-green-300" />
-            <AlertTitle className="text-green-900 dark:text-green-100 text-lg font-bold">
+          <Alert className="border-success-foreground/25 bg-success ">
+            <HandHeart className="h-5 w-5 text-success-foreground " />
+            <AlertTitle className="text-success-foreground text-lg font-bold">
               Free help is real — and independent
             </AlertTitle>
             <AlertDescription className="text-green-900/90 dark:text-green-100/90 text-base leading-relaxed">
@@ -602,10 +602,10 @@ export default function Turning65() {
               </p>
               <ul className="grid md:grid-cols-2 gap-3">
                 <li>
-                  <strong>SHIP</strong> — State Health Insurance Assistance Program. Free one-on-one Medicare counseling in every state. Find your state program at <span className="font-mono text-sm">shiphelp.org</span>.
+                  <strong>SHIP</strong> — State Health Insurance Assistance Program. Free one-on-one Medicare counseling in every state. Find your state program at <span className="font-mono text-base">shiphelp.org</span>.
                 </li>
                 <li>
-                  <strong>AARP Foundation</strong> — Free tax prep (Tax-Aide), benefit screenings, legal aid referrals. Website: <span className="font-mono text-sm">aarpfoundation.org</span>.
+                  <strong>AARP Foundation</strong> — Free tax prep (Tax-Aide), benefit screenings, legal aid referrals. Website: <span className="font-mono text-base">aarpfoundation.org</span>.
                 </li>
                 <li>
                   <strong>VITA / TCE</strong> — IRS-sponsored free tax help for seniors and moderate-income filers. Search "VITA near me" on irs.gov.
@@ -660,7 +660,7 @@ export default function Turning65() {
                                 htmlFor={`chk-${item.id}`}
                                 className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-colors min-h-14 ${
                                   isChecked
-                                    ? 'bg-green-50 border-green-300 dark:bg-green-950/30 dark:border-green-800'
+                                    ? 'bg-green-50 border-success-foreground/25 dark:bg-green-950/30 dark:border-green-800'
                                     : 'bg-background border-border hover:bg-muted/40'
                                 }`}
                               >
@@ -714,7 +714,7 @@ export default function Turning65() {
                                   )}
                                 </div>
                                 {isChecked && (
-                                  <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400 shrink-0 mt-1" aria-hidden="true" />
+                                  <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-1" aria-hidden="true" />
                                 )}
                               </label>
                             </li>
@@ -728,10 +728,10 @@ export default function Turning65() {
             </div>
 
             {percent === 100 && (
-              <Card className="mt-8 border-green-400 bg-green-50 dark:bg-green-950/40 dark:border-green-800 print:hidden">
+              <Card className="mt-8 border-green-400 bg-success dark:border-green-800 print:hidden">
                 <CardContent className="p-6 text-center">
-                  <Sparkles className="w-10 h-10 mx-auto text-green-600 dark:text-green-400 mb-3" aria-hidden="true" />
-                  <h3 className="text-xl md:text-2xl font-bold text-green-900 dark:text-green-100 mb-2">
+                  <Sparkles className="w-10 h-10 mx-auto text-success-foreground mb-3" aria-hidden="true" />
+                  <h3 className="text-xl md:text-2xl font-bold text-success-foreground mb-2">
                     You finished the checklist!
                   </h3>
                   <p className="text-base text-green-900/90 dark:text-green-100/90 leading-relaxed">
@@ -747,7 +747,7 @@ export default function Turning65() {
         <section className="container pb-12 md:pb-16 print:hidden">
           <div className="max-w-4xl">
             <h2 className="text-2xl md:text-4xl font-bold mb-2 flex items-center gap-2">
-              <HelpCircle className="w-7 h-7 text-amber-700" aria-hidden="true" />
+              <HelpCircle className="w-7 h-7 text-warn-foreground" aria-hidden="true" />
               Common questions
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 leading-relaxed">
@@ -770,9 +770,9 @@ export default function Turning65() {
               ))}
             </Accordion>
 
-            <Alert className="mt-8 border-amber-200 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-900">
-              <AlertTriangle className="h-5 w-5 text-amber-700 dark:text-amber-300" />
-              <AlertTitle className="text-amber-900 dark:text-amber-100">This is educational, not advice</AlertTitle>
+            <Alert className="mt-8 border-warn-foreground/25 bg-warn ">
+              <AlertTriangle className="h-5 w-5 text-warn-foreground " />
+              <AlertTitle className="text-warn-foreground ">This is educational, not advice</AlertTitle>
               <AlertDescription className="text-amber-900/90 dark:text-amber-100/90 text-base leading-relaxed">
                 Medicare and Social Security rules change every year, and your situation is unique. For personal decisions, talk to a free SHIP counselor or a licensed advisor before enrolling.
               </AlertDescription>
@@ -787,11 +787,11 @@ export default function Turning65() {
             <div className="grid md:grid-cols-3 gap-4">
               <Card className="hover:border-amber-400 transition-colors">
                 <CardContent className="p-5">
-                  <div className="p-2 inline-flex rounded-lg bg-blue-50 text-blue-700 dark:bg-blue-950/30 dark:text-blue-300 mb-3">
+                  <div className="p-2 inline-flex rounded-lg bg-info text-info-foreground mb-3">
                     <Landmark className="w-6 h-6" aria-hidden="true" />
                   </div>
                   <h3 className="font-bold text-base md:text-lg mb-1">Government Benefits Portal</h3>
-                  <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
+                  <p className="text-base text-muted-foreground mb-3 leading-relaxed">
                     Senior-friendly walkthroughs for every major .gov benefits site — SSA, Medicare, VA, IRS, SNAP.
                   </p>
                   <Link
@@ -805,11 +805,11 @@ export default function Turning65() {
 
               <Card className="hover:border-amber-400 transition-colors">
                 <CardContent className="p-5">
-                  <div className="p-2 inline-flex rounded-lg bg-emerald-50 text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-300 mb-3">
+                  <div className="p-2 inline-flex rounded-lg bg-success text-success-foreground mb-3">
                     <HandHeart className="w-6 h-6" aria-hidden="true" />
                   </div>
                   <h3 className="font-bold text-base md:text-lg mb-1">Free Resource Hub</h3>
-                  <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
+                  <p className="text-base text-muted-foreground mb-3 leading-relaxed">
                     Free, legal resources for seniors — streaming, library apps, classes, tax help, and more.
                   </p>
                   <Link
@@ -823,11 +823,11 @@ export default function Turning65() {
 
               <Card className="hover:border-amber-400 transition-colors">
                 <CardContent className="p-5">
-                  <div className="p-2 inline-flex rounded-lg bg-amber-50 text-amber-700 dark:bg-amber-950/30 dark:text-amber-300 mb-3">
+                  <div className="p-2 inline-flex rounded-lg bg-warn text-warn-foreground mb-3">
                     <FileText className="w-6 h-6" aria-hidden="true" />
                   </div>
                   <h3 className="font-bold text-base md:text-lg mb-1">Money guides</h3>
-                  <p className="text-sm text-muted-foreground mb-3 leading-relaxed">
+                  <p className="text-base text-muted-foreground mb-3 leading-relaxed">
                     Plain-English guides on bills, banking apps, refunds, scams, and protecting your money online.
                   </p>
                   <Link
@@ -844,9 +844,9 @@ export default function Turning65() {
 
         {/* ── Call to contact ──────────────────────── */}
         <section className="container pb-16 print:hidden">
-          <Card className="bg-gradient-to-br from-amber-50 to-rose-50 dark:from-amber-950/30 dark:to-rose-950/30 border-amber-200 dark:border-amber-900">
+          <Card className="bg-gradient-to-br from-amber-50 to-rose-50 dark:from-amber-950/30 dark:to-rose-950/30 border-warn-foreground/25 ">
             <CardContent className="p-6 md:p-8 text-center">
-              <PhoneCall className="w-10 h-10 mx-auto text-amber-700 dark:text-amber-300 mb-3" aria-hidden="true" />
+              <PhoneCall className="w-10 h-10 mx-auto text-warn-foreground mb-3" aria-hidden="true" />
               <h3 className="text-xl md:text-2xl font-bold mb-2">Want a person to walk you through this?</h3>
               <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-5">
                 Book a free, no-pressure session with a TekSure guide — we'll help you set up mySocialSecurity, MyMedicare, and your password manager together.

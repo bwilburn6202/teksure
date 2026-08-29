@@ -71,7 +71,7 @@ export default function HearingAidCareLog() {
   const dueCount = dueTasks.filter(t => t.status !== "ok").length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Hearing Aid Care Log | TekSure"
         description="Track hearing aid maintenance — battery changes, cleanings, wax guard changes, audiologist visits. See what's due and what's overdue."
@@ -80,10 +80,10 @@ export default function HearingAidCareLog() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Headphones className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Hearing Aid Care Log</h1>
+            <Headphones className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Hearing Aid Care Log</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Hearing aids work best with regular care. Log each task and the tool tracks what is due.
           </p>
         </div>
@@ -107,24 +107,24 @@ export default function HearingAidCareLog() {
                     <div className="flex items-center gap-2">
                       <span className="text-xl">{meta.emoji}</span>
                       <div>
-                        <p className="text-sm font-medium text-gray-800">{meta.label}</p>
-                        <p className="text-xs text-gray-500">
+                        <p className="text-base font-medium text-foreground">{meta.label}</p>
+                        <p className="text-sm text-muted-foreground">
                           {t.status === "never" ? "Never logged" : `Last: ${formatDate(t.lastDate!)}`}
                         </p>
                       </div>
                     </div>
                     {t.status === "due" && t.daysOverdue >= 0 && (
-                      <Badge variant="secondary" className="bg-amber-200 text-amber-800 text-xs">
+                      <Badge variant="secondary" className="bg-amber-200 text-warn-foreground text-xs">
                         {t.daysOverdue === 0 ? "Due today" : `${t.daysOverdue} days overdue`}
                       </Badge>
                     )}
                     {t.status === "ok" && t.lastDate && (
-                      <Badge variant="secondary" className="bg-green-200 text-green-800 text-xs">
+                      <Badge variant="secondary" className="bg-green-200 text-success-foreground text-xs">
                         On track
                       </Badge>
                     )}
                     {t.status === "never" && (
-                      <Badge variant="secondary" className="bg-gray-200 text-gray-700 text-xs">
+                      <Badge variant="secondary" className="bg-gray-200 text-foreground text-xs">
                         Set up
                       </Badge>
                     )}
@@ -136,10 +136,10 @@ export default function HearingAidCareLog() {
         </Card>
 
         {dueCount > 0 && (
-          <Card className="mb-4 bg-amber-50 border-amber-200 print:hidden">
+          <Card className="mb-4 bg-warn border-warn-foreground/25 print:hidden">
             <CardContent className="py-3 px-4 flex items-start gap-2">
-              <AlertTriangle className="h-5 w-5 text-amber-600 mt-0.5 shrink-0" />
-              <p className="text-sm text-amber-800">
+              <AlertTriangle className="h-5 w-5 text-warn-foreground mt-0.5 shrink-0" />
+              <p className="text-base text-warn-foreground">
                 <span className="font-semibold">{dueCount} care task{dueCount !== 1 ? "s" : ""} due.</span> Skipping cleaning is the #1 reason hearing aids stop working.
               </p>
             </CardContent>
@@ -150,7 +150,7 @@ export default function HearingAidCareLog() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-lg flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-blue-600" />
+              <PlusCircle className="h-5 w-5 text-info-foreground" />
               Log a Care Event
             </CardTitle>
           </CardHeader>
@@ -163,7 +163,7 @@ export default function HearingAidCareLog() {
                     key={k}
                     type="button"
                     onClick={() => setForm(f => ({ ...f, kind: k }))}
-                    className={`text-sm px-3 py-2 rounded-md border ${form.kind === k ? "bg-blue-50 border-blue-300 text-blue-800" : "bg-white border-gray-200 text-gray-700"}`}
+                    className={`text-sm px-3 py-2 rounded-md border ${form.kind === k ? "bg-blue-50 border-info-foreground/25 text-blue-800" : "bg-white border-border text-gray-700"}`}
                   >
                     {KIND_META[k].emoji} {KIND_META[k].label}
                   </button>
@@ -194,10 +194,10 @@ export default function HearingAidCareLog() {
         {/* History */}
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Headphones className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Headphones className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No care events logged yet.</p>
-              <p className="text-sm mt-1">Start by logging your most recent battery change or cleaning.</p>
+              <p className="text-base mt-1">Start by logging your most recent battery change or cleaning.</p>
             </CardContent>
           </Card>
         ) : (
@@ -216,12 +216,12 @@ export default function HearingAidCareLog() {
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 flex-wrap">
                             <Badge variant="secondary" className={`text-xs ${meta.color}`}>{meta.label}</Badge>
-                            <span className="text-xs text-gray-500">{formatDate(e.date)}</span>
+                            <span className="text-sm text-muted-foreground">{formatDate(e.date)}</span>
                           </div>
-                          {e.notes && <p className="text-xs text-gray-500 italic mt-0.5">{e.notes}</p>}
+                          {e.notes && <p className="text-sm text-muted-foreground italic mt-0.5">{e.notes}</p>}
                         </div>
                       </div>
-                      <Button variant="ghost" size="icon" onClick={() => remove(e.id)} className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden">
+                      <Button variant="ghost" size="icon" onClick={() => remove(e.id)} className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden">
                         <Trash2 className="h-3 w-3" />
                       </Button>
                     </div>
@@ -232,15 +232,15 @@ export default function HearingAidCareLog() {
           </Card>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Wipe your hearing aids with a soft cloth every night before bed. Open the battery door so moisture can escape and batteries last longer.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

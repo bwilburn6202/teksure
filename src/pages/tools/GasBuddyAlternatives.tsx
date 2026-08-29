@@ -79,7 +79,7 @@ export default function GasBuddyAlternatives() {
       <main className="min-h-screen bg-background">
         <section className="bg-gradient-to-br from-amber-50 via-background to-orange-50 dark:from-amber-950/20 dark:to-orange-950/20 border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto text-center">
-            <div className="flex justify-center mb-3"><div className="p-3 bg-amber-500/10 rounded-full"><Fuel className="h-8 w-8 text-amber-600" /></div></div>
+            <div className="flex justify-center mb-3"><div className="p-3 bg-amber-500/10 rounded-full"><Fuel className="h-8 w-8 text-warn-foreground" /></div></div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Save on Gas: Apps & Habits</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">Seven picks to lower your gas bill — from free price-finders to warehouse club fuel and grocery rewards.</p>
           </div>
@@ -89,10 +89,10 @@ export default function GasBuddyAlternatives() {
           <Card className="border-border bg-amber-50/50 dark:bg-amber-950/10 mb-6">
             <CardContent className="p-5">
               <div className="flex items-start gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-warn-foreground flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm font-semibold mb-2">Read the fine print on cashback gas apps</p>
-                  <p className="text-xs text-muted-foreground">Apps like Upside, GetUpside, and Fetch ask you to link a debit or credit card, and many of them share anonymized purchase data with third parties as part of the deal. The cashback is real — but read the privacy terms before linking. If you would rather not share, you can scan the receipt manually inside Upside instead of linking your card.</p>
+                  <p className="text-base font-semibold mb-2">Read the fine print on cashback gas apps</p>
+                  <p className="text-sm text-muted-foreground">Apps like Upside, GetUpside, and Fetch ask you to link a debit or credit card, and many of them share anonymized purchase data with third parties as part of the deal. The cashback is real — but read the privacy terms before linking. If you would rather not share, you can scan the receipt manually inside Upside instead of linking your card.</p>
                 </div>
               </div>
             </CardContent>
@@ -105,15 +105,15 @@ export default function GasBuddyAlternatives() {
                     <p className="font-semibold text-base">{p.name}</p>
                     <Badge variant="outline">{p.cost}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {p.bestFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {p.bestFor}</p>
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
-                      <ul className="space-y-0.5">{p.pros.map((pr, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{pr}</span></li>)}</ul>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
+                      <ul className="space-y-0.5">{p.pros.map((pr, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{pr}</span></li>)}</ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
-                      <ul className="space-y-0.5">{p.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}</ul>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
+                      <ul className="space-y-0.5">{p.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}</ul>
                     </div>
                   </div>
                   <a href={p.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-primary hover:underline">Visit / sign up <ExternalLink className="h-3 w-3" /></a>
@@ -124,28 +124,28 @@ export default function GasBuddyAlternatives() {
           </div>
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Habits that beat any app</p>
-              <p className="text-xs text-muted-foreground">Keep tires inflated to the door-sticker pressure (saves up to 3% on fuel). Combine errands into one loop. Drive 60-65 mph on the highway instead of 75 (10-15% better mileage). Drop the rooftop carrier when you are not using it. Most drivers save more with these habits than with any single app.</p>
+              <p className="text-base font-semibold mb-2">Habits that beat any app</p>
+              <p className="text-sm text-muted-foreground">Keep tires inflated to the door-sticker pressure (saves up to 3% on fuel). Combine errands into one loop. Drive 60-65 mph on the highway instead of 75 (10-15% better mileage). Drop the rooftop carrier when you are not using it. Most drivers save more with these habits than with any single app.</p>
             </CardContent>
           </Card>
           <div className="mt-10 pt-8 border-t border-border">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/maps-navigation-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Maps & Navigation Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Set up Waze and Google Maps the right way.</p>
+                <p className="font-medium text-base">Maps & Navigation Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Set up Waze and Google Maps the right way.</p>
               </Link>
               <Link to="/tools/credit-card-rewards-picker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Credit Card Rewards Picker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Find a card with strong gas cashback.</p>
+                <p className="font-medium text-base">Credit Card Rewards Picker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Find a card with strong gas cashback.</p>
               </Link>
               <Link to="/tools/senior-discount-finder-app" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Senior Discount Finder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">More everyday savings beyond the pump.</p>
+                <p className="font-medium text-base">Senior Discount Finder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">More everyday savings beyond the pump.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1"><ChevronRight className="h-3 w-3" /> Quick Tip: fill up Tuesday or Wednesday morning. National data shows those days have the lowest average prices most weeks.</p>
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1"><ChevronRight className="h-3 w-3" /> Quick Tip: fill up Tuesday or Wednesday morning. National data shows those days have the lowest average prices most weeks.</p>
         </div>
       </main>
       <Footer />

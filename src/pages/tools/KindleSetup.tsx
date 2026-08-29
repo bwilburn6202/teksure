@@ -76,7 +76,7 @@ export default function KindleSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-yellow-500/10 rounded-full">
-                <BookOpen className="h-8 w-8 text-yellow-600" />
+                <BookOpen className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Kindle Setup Helper</h1>
@@ -109,18 +109,18 @@ export default function KindleSetup() {
                       <p className="font-semibold text-base">{m.name}</p>
                       <Badge variant="outline">{m.price}</Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-2"><strong>Best for:</strong> {m.bestFor}</p>
+                    <p className="text-base text-muted-foreground mb-2"><strong>Best for:</strong> {m.bestFor}</p>
                     <div className="grid sm:grid-cols-2 gap-2">
                       <div>
-                        <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                        <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                         <ul className="space-y-0.5">
-                          {m.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}
+                          {m.pros.map((p, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>)}
                         </ul>
                       </div>
                       <div>
-                        <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                        <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                         <ul className="space-y-0.5">
-                          {m.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                          {m.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                         </ul>
                       </div>
                     </div>
@@ -136,7 +136,7 @@ export default function KindleSetup() {
                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Setup steps</p>
                 <ol className="space-y-3">
                   {SETUP_STEPS.map((s, i) => (
-                    <li key={i} className="flex gap-3 text-sm">
+                    <li key={i} className="flex gap-3 text-base">
                       <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                       <div>
                         <p className="font-semibold">{s.title}</p>
@@ -154,7 +154,7 @@ export default function KindleSetup() {
               <Card className="border-border mb-6">
                 <CardContent className="p-5">
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">How to buy a book</p>
-                  <ol className="space-y-2 text-sm">
+                  <ol className="space-y-2 text-base">
                     <li className="flex gap-2"><span className="text-primary font-semibold">1.</span><span>From the Kindle home screen, tap the bag icon (top-right) → Kindle Store.</span></li>
                     <li className="flex gap-2"><span className="text-primary font-semibold">2.</span><span>Search for a book or browse bestsellers.</span></li>
                     <li className="flex gap-2"><span className="text-primary font-semibold">3.</span><span>Tap "Buy Now" → confirm with your Amazon password if asked.</span></li>
@@ -169,8 +169,8 @@ export default function KindleSetup() {
                   <div className="space-y-3">
                     {TIPS.map((t, i) => (
                       <div key={i} className="p-3 rounded-lg border border-border">
-                        <p className="font-medium text-sm">{t.title}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{t.detail}</p>
+                        <p className="font-medium text-base">{t.title}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{t.detail}</p>
                       </div>
                     ))}
                   </div>
@@ -183,11 +183,11 @@ export default function KindleSetup() {
             <>
               <Card className="border-border mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-2">Free books through your library — Libby</p>
-                  <p className="text-xs text-muted-foreground mb-3">
+                  <p className="text-base font-semibold mb-2">Free books through your library — Libby</p>
+                  <p className="text-sm text-muted-foreground mb-3">
                     The single best kept secret. Most US libraries lend Kindle e-books and audiobooks free through the Libby app. Almost the same selection you would buy on Amazon.
                   </p>
-                  <ol className="space-y-2 text-sm">
+                  <ol className="space-y-2 text-base">
                     <li className="flex gap-2"><span className="text-primary font-semibold">1.</span><span>Install "Libby" on your phone or tablet (not on the Kindle directly).</span></li>
                     <li className="flex gap-2"><span className="text-primary font-semibold">2.</span><span>Sign in with your library card number and PIN.</span></li>
                     <li className="flex gap-2"><span className="text-primary font-semibold">3.</span><span>Search any book → tap "Borrow" → choose "Read with Kindle".</span></li>
@@ -203,8 +203,8 @@ export default function KindleSetup() {
 
               <Card className="border-border bg-muted/30">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-2">Other free sources</p>
-                  <ul className="space-y-1.5 text-xs text-muted-foreground">
+                  <p className="text-base font-semibold mb-2">Other free sources</p>
+                  <ul className="space-y-1.5 text-sm text-muted-foreground">
                     <li className="flex gap-2"><span className="text-primary">•</span><span><strong>Project Gutenberg:</strong> 70,000+ classic books out of copyright. Send to your Kindle for free at gutenberg.org.</span></li>
                     <li className="flex gap-2"><span className="text-primary">•</span><span><strong>Kindle Unlimited:</strong> $12/mo, like Netflix for books. Free 30-day trial. Worth a month if you read more than 4 books.</span></li>
                     <li className="flex gap-2"><span className="text-primary">•</span><span><strong>Free Kindle Daily Deals:</strong> amazon.com/kindle-dbs/storefront/freebooks — refreshed daily.</span></li>
@@ -218,16 +218,16 @@ export default function KindleSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/library-power-pack" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Library Power Pack</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Six free apps your library card unlocks.</p>
+                <p className="font-medium text-base">Library Power Pack</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Six free apps your library card unlocks.</p>
               </Link>
               <Link to="/tools/podcast-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Podcast Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For audiobooks-by-another-name.</p>
+                <p className="font-medium text-base">Podcast Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For audiobooks-by-another-name.</p>
               </Link>
               <Link to="/tools/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Low-Vision Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Make any device easier to read.</p>
+                <p className="font-medium text-base">Low-Vision Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Make any device easier to read.</p>
               </Link>
             </div>
           </div>

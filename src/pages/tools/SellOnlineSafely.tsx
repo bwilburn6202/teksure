@@ -125,7 +125,7 @@ export default function SellOnlineSafely() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <ShoppingBag className="h-8 w-8 text-emerald-600" />
+                <ShoppingBag className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Sell Online Safely</h1>
@@ -147,19 +147,19 @@ export default function SellOnlineSafely() {
                     <p className="font-semibold text-base">{p.name}</p>
                     <Badge variant="outline">{p.fees}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-2"><strong>Best for:</strong> {p.bestFor}</p>
+                  <p className="text-base text-muted-foreground mb-2"><strong>Best for:</strong> {p.bestFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-2">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {p.pros.map((pr, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{pr}</span></li>)}
+                        {p.pros.map((pr, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{pr}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {p.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                        {p.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -181,7 +181,7 @@ export default function SellOnlineSafely() {
             <CardContent className="p-5">
               <ol className="space-y-3">
                 {STEPS.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <div>
                       <p className="font-semibold">{s.title}</p>
@@ -193,9 +193,9 @@ export default function SellOnlineSafely() {
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">The most common online-selling scam, in one paragraph</p>
                 <p className="text-muted-foreground">
@@ -209,16 +209,16 @@ export default function SellOnlineSafely() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/marketplace-scam-spotter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Marketplace Scam Spotter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Walk-through checklist for scam buyers and sellers.</p>
+                <p className="font-medium text-base">Marketplace Scam Spotter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Walk-through checklist for scam buyers and sellers.</p>
               </Link>
               <Link to="/tools/device-retirement-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Device Retirement</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Wipe before you sell.</p>
+                <p className="font-medium text-base">Device Retirement</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Wipe before you sell.</p>
               </Link>
               <Link to="/tools/online-banking-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Online Banking Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Lock down before you transact.</p>
+                <p className="font-medium text-base">Online Banking Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Lock down before you transact.</p>
               </Link>
             </div>
           </div>

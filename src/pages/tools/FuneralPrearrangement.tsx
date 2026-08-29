@@ -19,7 +19,7 @@ export default function FuneralPrearrangement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why pre-plan</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family makes decisions while grieving — leads to overspending by $3,000-8,000.</li>
               <li>Lock in today&apos;s prices for tomorrow&apos;s funeral.</li>
               <li>Your wishes followed (cremation vs burial, music, who speaks).</li>
@@ -32,7 +32,7 @@ export default function FuneralPrearrangement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Average costs (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Traditional burial</strong> — $9,000-15,000. Casket + plot + service.</li>
               <li><strong>Cremation with service</strong> — $5,000-7,000.</li>
               <li><strong>Direct cremation</strong> (no service) — $700-2,500. Fastest growing choice.</li>
@@ -45,7 +45,7 @@ export default function FuneralPrearrangement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Three ways to pre-plan</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Pre-pay at a funeral home</strong> — locks price. Make sure it&apos;s state-trust funded (your money safe if home goes out of business).</li>
               <li><strong>Funeral insurance / "final expense" policy</strong> — small life insurance ($5-25K) earmarked for funeral. Beneficiary spends it.</li>
               <li><strong>"Pay on Death" bank account</strong> — set aside $10-15K, beneficiary uses for funeral. Most flexible. Recommended.</li>
@@ -53,10 +53,10 @@ export default function FuneralPrearrangement() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pre-payment scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Funeral home goes out of business — your money may be lost.</li>
               <li>"Cash advance" funeral insurance often costs more than benefit.</li>
               <li>Salesman pressuring "today only" pricing.</li>
@@ -69,7 +69,7 @@ export default function FuneralPrearrangement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Document your wishes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Burial vs cremation.</li>
               <li>Funeral home preferred (or "any reputable").</li>
               <li>Service preferences — religious, secular, music, readings.</li>
@@ -78,14 +78,14 @@ export default function FuneralPrearrangement() {
               <li>Burial plot (if owned) — show family the deed.</li>
               <li>Veterans benefits — VA covers some military burial costs (free flag, headstone, vet cemetery).</li>
             </ul>
-            <p className="text-sm mt-3">Write all this on ONE page. Title it "When I die — wishes". Keep with will.</p>
+            <p className="text-base mt-3">Write all this on ONE page. Title it "When I die — wishes". Keep with will.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Funeral Consumers Alliance</strong> — funerals.org. Free education + local price surveys.</li>
               <li><strong>VA Burial Benefits</strong> — free for veterans. Apply ahead at va.gov.</li>
               <li><strong>Memorial planning sites</strong> — Everplans, Cake. Templates for wishes.</li>
@@ -97,7 +97,7 @@ export default function FuneralPrearrangement() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t make it morbid</h3>
-            <p className="text-sm text-muted-foreground">Pre-arranging is a gift to your family. Spend an hour on it. Tell loved ones you did. They&apos;ll thank you for years — much more than any other "estate planning" task.</p>
+            <p className="text-base text-muted-foreground">Pre-arranging is a gift to your family. Spend an hour on it. Tell loved ones you did. They&apos;ll thank you for years — much more than any other "estate planning" task.</p>
           </CardContent>
         </Card>
       </main>

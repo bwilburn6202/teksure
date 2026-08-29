@@ -19,7 +19,7 @@ export default function AquariumStarterSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lowers blood pressure.</li>
               <li>Reduces anxiety.</li>
               <li>Calms dementia patients.</li>
@@ -33,7 +33,7 @@ export default function AquariumStarterSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best starter: 10-20 gallon</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smaller = harder (water unstable).</li>
               <li>Larger = forgiving + stable.</li>
               <li>20 gallon kit ($100) — ideal.</li>
@@ -47,7 +47,7 @@ export default function AquariumStarterSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy beginner fish</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Betta</strong> — alone, beautiful.</li>
               <li><strong>Goldfish</strong> — classic but messy.</li>
               <li><strong>Tetras</strong> — schools, peaceful.</li>
@@ -61,7 +61,7 @@ export default function AquariumStarterSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup checklist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tank, filter, heater.</li>
               <li>Gravel + decorations.</li>
               <li>Water conditioner.</li>
@@ -75,7 +75,7 @@ export default function AquariumStarterSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Weekly care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Feed daily — small amount.</li>
               <li>20% water change weekly.</li>
               <li>Clean glass.</li>
@@ -89,7 +89,7 @@ export default function AquariumStarterSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior comforts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Auto-feeder for trips ($30).</li>
               <li>LED lights — long-lasting.</li>
               <li>App-controlled tanks (Fluval).</li>
@@ -103,7 +103,7 @@ export default function AquariumStarterSenior() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Resources</h3>
-            <p className="text-sm text-muted-foreground">YouTube — Aquariumcoop, Cory&apos;s Fish Tank. Free + endless. Local fish stores often help with troubleshooting. Petco / PetSmart — basics. Reddit r/Aquariums — community help. Library — fish books. Care less than dog or cat — perfect for seniors traveling part-time.</p>
+            <p className="text-base text-muted-foreground">YouTube — Aquariumcoop, Cory&apos;s Fish Tank. Free + endless. Local fish stores often help with troubleshooting. Petco / PetSmart — basics. Reddit r/Aquariums — community help. Library — fish books. Care less than dog or cat — perfect for seniors traveling part-time.</p>
           </CardContent>
         </Card>
       </main>

@@ -28,7 +28,7 @@ export default function BudgetAppPicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What changed</h2>
-            <p className="text-sm">Mint (free, popular for 15 years) shut down in 2024. Several apps stepped in. Most charge a monthly fee — but for tracking $50,000+ in retirement and credit cards, $10-15/month often pays for itself in spotted errors and saved subscriptions.</p>
+            <p className="text-base">Mint (free, popular for 15 years) shut down in 2024. Several apps stepped in. Most charge a monthly fee — but for tracking $50,000+ in retirement and credit cards, $10-15/month often pays for itself in spotted errors and saved subscriptions.</p>
           </CardContent>
         </Card>
 
@@ -38,10 +38,10 @@ export default function BudgetAppPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-2"><strong>Best for:</strong> {a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-2"><strong>Best for:</strong> {a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function BudgetAppPicker() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you want totally free</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Empower</strong> — best free option for tracking everything in one place.</li>
               <li><strong>EveryDollar Free</strong> — manual entry but works.</li>
               <li><strong>Your bank's app</strong> — Chase, Bank of America, Wells Fargo all have spending breakdowns built in.</li>
@@ -62,14 +62,14 @@ export default function BudgetAppPicker() {
         <Card className="mt-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Security worry?</h2>
-            <p className="text-sm">All these apps use Plaid (or similar) to connect to your bank — read-only. They can SEE transactions but cannot move money. Still, set up two-factor on your bank, never share login codes, and use unique passwords.</p>
+            <p className="text-base">All these apps use Plaid (or similar) to connect to your bank — read-only. They can SEE transactions but cannot move money. Still, set up two-factor on your bank, never share login codes, and use unique passwords.</p>
           </CardContent>
         </Card>
 
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">If you don't know where your money goes — start with Rocket Money's free version. It surfaces every subscription you're paying for. Most users find $20-50/month to cancel right away.</p>
+            <p className="text-base text-muted-foreground">If you don't know where your money goes — start with Rocket Money's free version. It surfaces every subscription you're paying for. Most users find $20-50/month to cancel right away.</p>
           </CardContent>
         </Card>
       </main>

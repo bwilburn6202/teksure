@@ -67,22 +67,22 @@ export default function KnittingProjectQueue() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Knitting Project Queue | TekSure" description="Track your knitting and crochet projects from planned through finished. Yarn, needle size, yardage, recipient, and notes. Print your queue." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
             <Scissors className="h-7 w-7 text-fuchsia-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Knitting Queue</h1>
+            <h1 className="text-3xl font-bold text-foreground">Knitting Queue</h1>
           </div>
-          <p className="text-gray-600 text-lg">Track every project - planned, on needles, finished, or frogged. So your stash and queue make sense at a glance.</p>
+          <p className="text-muted-foreground text-lg">Track every project - planned, on needles, finished, or frogged. So your stash and queue make sense at a glance.</p>
         </div>
 
         {projects.length > 0 && (
           <div className="grid grid-cols-3 gap-3 mb-4">
-            <Card><CardContent className="py-3 px-3 text-center"><p className="text-xs text-gray-500">Planned</p><p className="text-2xl font-bold text-gray-700">{counts.planned}</p></CardContent></Card>
-            <Card><CardContent className="py-3 px-3 text-center"><p className="text-xs text-gray-500">In progress</p><p className="text-2xl font-bold text-amber-700">{counts.inProgress}</p></CardContent></Card>
-            <Card><CardContent className="py-3 px-3 text-center"><p className="text-xs text-gray-500">Finished</p><p className="text-2xl font-bold text-emerald-700">{counts.finished}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-3 text-center"><p className="text-sm text-muted-foreground">Planned</p><p className="text-2xl font-bold text-foreground">{counts.planned}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-3 text-center"><p className="text-sm text-muted-foreground">In progress</p><p className="text-2xl font-bold text-warn-foreground">{counts.inProgress}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-3 text-center"><p className="text-sm text-muted-foreground">Finished</p><p className="text-2xl font-bold text-success-foreground">{counts.finished}</p></CardContent></Card>
           </div>
         )}
 
@@ -100,7 +100,7 @@ export default function KnittingProjectQueue() {
               <Input type="date" value={form.startDate} onChange={e => setForm(f => ({ ...f, startDate: e.target.value }))} />
             </div>
             <Input value={form.recipient} onChange={e => setForm(f => ({ ...f, recipient: e.target.value }))} placeholder="Recipient (gift for X, charity, self)" />
-            <select value={form.status} onChange={e => setForm(f => ({ ...f, status: e.target.value as Status }))} className="w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+            <select value={form.status} onChange={e => setForm(f => ({ ...f, status: e.target.value as Status }))} className="w-full border border-border rounded-md px-3 py-2 text-base bg-card">
               <option>Planned</option>
               <option>In progress</option>
               <option>Finished</option>
@@ -125,25 +125,25 @@ export default function KnittingProjectQueue() {
                   <div key={p.id} className="py-3 text-sm">
                     <div className="flex items-start justify-between gap-2">
                       <div className="flex-1 min-w-0">
-                        <p className="font-semibold text-gray-900">{p.name}</p>
+                        <p className="font-semibold text-foreground">{p.name}</p>
                         <div className="flex flex-wrap items-center gap-2 mt-1">
                           <Badge variant="outline" className={`text-xs ${statusColor(p.status)}`}>{p.status}</Badge>
-                          {p.pattern && <span className="text-xs text-gray-500">{p.pattern}</span>}
-                          {p.recipient && <span className="text-xs text-gray-500">For: {p.recipient}</span>}
+                          {p.pattern && <span className="text-sm text-muted-foreground">{p.pattern}</span>}
+                          {p.recipient && <span className="text-sm text-muted-foreground">For: {p.recipient}</span>}
                         </div>
-                        <div className="flex flex-wrap gap-2 mt-1 text-xs text-gray-600">
+                        <div className="flex flex-wrap gap-2 mt-1 text-xs text-muted-foreground">
                           {p.yarn && <span>Yarn: {p.yarn}</span>}
                           {p.needles && <span>Needles: {p.needles}</span>}
                           {p.yardage && <span>Yards: {p.yardage}</span>}
                         </div>
-                        {p.note && <p className="text-xs text-gray-600 italic mt-1">{p.note}</p>}
+                        {p.note && <p className="text-sm text-muted-foreground italic mt-1">{p.note}</p>}
                         <div className="flex flex-wrap gap-1 mt-2 print:hidden">
                           {(["Planned", "In progress", "Finished", "Frogged"] as Status[]).map(s => (
                             <Button key={s} size="sm" variant={p.status === s ? "default" : "outline"} className="h-6 text-xs px-2" onClick={() => updateStatus(p.id, s)}>{s}</Button>
                           ))}
                         </div>
                       </div>
-                      <Button variant="ghost" size="icon" onClick={() => remove(p.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                      <Button variant="ghost" size="icon" onClick={() => remove(p.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                         <Trash2 className="h-3 w-3" />
                       </Button>
                     </div>
@@ -154,12 +154,12 @@ export default function KnittingProjectQueue() {
           </Card>
         )}
 
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Free tool to pair this with:</span> Ravelry.com is a free knitter/crocheter community with a huge pattern database, free patterns, yarn substitutions, and your projects archive. Many seniors use it as their pattern library plus social network.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Free tool to pair this with:</span> Ravelry.com is a free knitter/crocheter community with a huge pattern database, free patterns, yarn substitutions, and your projects archive. Many seniors use it as their pattern library plus social network.</p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

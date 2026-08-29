@@ -19,22 +19,22 @@ export default function AppleWatchHealthCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Heart rate notifications</h2>
-            <p className="text-sm mb-2">Watch alerts you if your heart rate is unusually high or low while you\'re resting.</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Watch alerts you if your heart rate is unusually high or low while you\'re resting.</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>iPhone: open the <strong>Watch</strong> app → "Heart" → "High Heart Rate".</li>
               <li>Set the threshold (default 120 BPM is fine).</li>
               <li>Same for "Low Heart Rate" (default 40 BPM).</li>
               <li>"Irregular Rhythm Notifications" — turn ON. Detects possible AFib.</li>
             </ol>
-            <p className="text-sm mt-3 bg-muted/50 p-3 rounded">There are documented cases of the watch catching AFib that no one knew about. Worth setting up even if your heart "feels fine".</p>
+            <p className="text-base mt-3 bg-muted/50 p-3 rounded">There are documented cases of the watch catching AFib that no one knew about. Worth setting up even if your heart "feels fine".</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> EKG (Series 4 and newer)</h2>
-            <p className="text-sm mb-2">Take a 30-second medical-grade EKG anytime — useful when you feel "off".</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Take a 30-second medical-grade EKG anytime — useful when you feel "off".</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>iPhone Watch app → "Heart" → "ECG App" → set up (asks your age).</li>
               <li>Open the ECG app on the watch face.</li>
               <li>Hold a finger on the digital crown (the round button) for 30 seconds.</li>
@@ -47,20 +47,20 @@ export default function AppleWatchHealthCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Fall detection (Series 4 and newer)</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>iPhone Watch app → "Emergency SOS" → "Fall Detection" → "Always On".</li>
               <li>If the watch detects a hard fall and you don\'t move for 1 minute, it auto-calls 911 AND your emergency contacts.</li>
               <li>If you fall but you\'re fine — watch shows a button to cancel. Tap it.</li>
             </ol>
-            <p className="text-sm mt-2 text-muted-foreground">For older adults living alone, this feature alone makes the watch worthwhile.</p>
+            <p className="text-base mt-2 text-muted-foreground">For older adults living alone, this feature alone makes the watch worthwhile.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Medication reminders</h2>
-            <p className="text-sm mb-2">The watch can remind you to take meds AND track that you actually did.</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">The watch can remind you to take meds AND track that you actually did.</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>On iPhone: open the <strong>Health</strong> app.</li>
               <li>Tap "Browse" → "Medications".</li>
               <li>Tap "Add Medication" → type the name. App auto-finds it in the database.</li>
@@ -74,7 +74,7 @@ export default function AppleWatchHealthCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Sleep & breathing tracking</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Sleep stages</strong> — watch tracks REM, deep, light sleep nightly.</li>
               <li><strong>Resting heart rate</strong> — long-term trend is meaningful. A rising RHR can be an early sign of illness or stress.</li>
               <li><strong>Sleep apnea detection</strong> (Series 9+) — Watch + iPhone now detects breathing disturbances during sleep that suggest sleep apnea. Worth checking out if you snore loudly.</li>
@@ -86,7 +86,7 @@ export default function AppleWatchHealthCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Sharing with your doctor</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Health app → tap your photo → "Sharing" → "Share with Your Doctor".</li>
               <li>If your doctor uses MyChart and Apple Health integration, you can share heart rate, blood pressure, and EKG directly.</li>
               <li>Or export as a PDF — Health app → tap a metric → tap "..." → Export.</li>
@@ -97,7 +97,7 @@ export default function AppleWatchHealthCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don\'t skip the setup</h3>
-            <p className="text-sm text-muted-foreground">Most Apple Watch owners only use 20% of the health features because the prompts are easy to dismiss during initial setup. Walk through these one by one — even if it takes 30 minutes. If you ever need them, you\'ll be glad they\'re configured.</p>
+            <p className="text-base text-muted-foreground">Most Apple Watch owners only use 20% of the health features because the prompts are easy to dismiss during initial setup. Walk through these one by one — even if it takes 30 minutes. If you ever need them, you\'ll be glad they\'re configured.</p>
           </CardContent>
         </Card>
       </main>

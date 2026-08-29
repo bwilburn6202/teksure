@@ -19,7 +19,7 @@ export default function InstagramReelsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What are Reels?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Short videos within Instagram.</li>
               <li>Same creators often as TikTok.</li>
               <li>15-60 seconds typical.</li>
@@ -33,7 +33,7 @@ export default function InstagramReelsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Reels over TikTok</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Already on Instagram.</li>
               <li>One less app.</li>
               <li>Same content (creators post both).</li>
@@ -47,7 +47,7 @@ export default function InstagramReelsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouTube Shorts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Same format on YouTube app.</li>
               <li>Tap Shorts tab.</li>
               <li>Often educational content.</li>
@@ -61,7 +61,7 @@ export default function InstagramReelsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Discover by topic</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search hashtags — #seniorcooking #travel #garden.</li>
               <li>Browse by interest.</li>
               <li>Follow accounts you like.</li>
@@ -75,7 +75,7 @@ export default function InstagramReelsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set account to Private.</li>
               <li>Settings → Privacy → Private Account.</li>
               <li>Restrict who can DM you.</li>
@@ -89,7 +89,7 @@ export default function InstagramReelsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Time management</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Time on Instagram.</li>
               <li>Set daily limit (30-60 min).</li>
               <li>Reels can be addictive.</li>
@@ -103,7 +103,7 @@ export default function InstagramReelsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Reels = TikTok-lite</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re cautious about TikTok but love short videos, Instagram Reels delivers similar content within an app you may already use. Same creators, same algorithm-based discovery. Set time limits to prevent endless scrolling. Free, fun, educational when curated well. Try it for a week.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re cautious about TikTok but love short videos, Instagram Reels delivers similar content within an app you may already use. Same creators, same algorithm-based discovery. Set time limits to prevent endless scrolling. Free, fun, educational when curated well. Try it for a week.</p>
           </CardContent>
         </Card>
       </main>

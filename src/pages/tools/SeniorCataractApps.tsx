@@ -22,7 +22,7 @@ export default function SeniorCataractApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Recovery</h2><p>1-2 weeks. Eye drops 4-6 weeks. Most see clearly within days.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Both eyes</h2><p>1-2 weeks apart typically. Some surgeons same day.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Don&apos;t delay</h2><p>Putting off makes surgery harder. Drive home risky with cataracts.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Most seniors say cataract surgery transforms their life. Don&apos;t wait.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Most seniors say cataract surgery transforms their life. Don&apos;t wait.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

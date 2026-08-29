@@ -31,10 +31,10 @@ export default function DietApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function DietApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific guidance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Protein</strong> — seniors need MORE (1g per kg body weight).</li>
               <li><strong>Calcium + Vitamin D</strong> — for bones (1,200mg / 800 IU).</li>
               <li><strong>Fiber</strong> — 25-30g/day for digestion + heart.</li>
@@ -57,7 +57,7 @@ export default function DietApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free diet/nutrition resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NIH Senior Health</strong> — nia.nih.gov free PDFs.</li>
               <li><strong>USDA MyPlate</strong> — myplate.gov daily plan.</li>
               <li><strong>AARP Nutrition Resources</strong> — aarp.org/nutrition.</li>
@@ -70,7 +70,7 @@ export default function DietApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Talk to dietitian</h3>
-            <p className="text-sm text-muted-foreground">Medicare covers Medical Nutrition Therapy for diabetes + kidney disease. Doctor referral, then real RD (Registered Dietitian) builds your plan. Apps support, but personalized advice from a pro is gold.</p>
+            <p className="text-base text-muted-foreground">Medicare covers Medical Nutrition Therapy for diabetes + kidney disease. Doctor referral, then real RD (Registered Dietitian) builds your plan. Apps support, but personalized advice from a pro is gold.</p>
           </CardContent>
         </Card>
       </main>

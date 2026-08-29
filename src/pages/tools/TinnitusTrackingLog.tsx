@@ -82,32 +82,32 @@ export default function TinnitusTrackingLog() {
   const topTriggers = Object.entries(triggerCounts).sort((a, b) => b[1] - a[1]).slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Tinnitus Tracking Log | TekSure" description="Log ringing-in-the-ears episodes, find your personal triggers, and print a 14-day report for your audiologist." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Volume2 className="h-7 w-7 text-purple-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Tinnitus Log</h1>
+            <Volume2 className="h-7 w-7 text-primary" />
+            <h1 className="text-3xl font-bold text-foreground">Tinnitus Log</h1>
           </div>
-          <p className="text-gray-600 text-lg">Track when the ringing flares up and what may have triggered it. Patterns become clear after a week or two.</p>
+          <p className="text-muted-foreground text-lg">Track when the ringing flares up and what may have triggered it. Patterns become clear after a week or two.</p>
         </div>
 
         {recent.length > 0 && (
           <div className="grid grid-cols-3 gap-3 mb-4">
-            <Card><CardContent className="py-3 px-3 text-center"><p className="text-xs text-gray-500">14-day episodes</p><p className="text-2xl font-bold text-purple-700">{recent.length}</p></CardContent></Card>
-            <Card><CardContent className="py-3 px-3 text-center"><p className="text-xs text-gray-500">Avg intensity</p><p className="text-2xl font-bold text-purple-700">{avgIntensity.toFixed(1)}</p></CardContent></Card>
-            <Card><CardContent className="py-3 px-3 text-center"><p className="text-xs text-gray-500">Total hours</p><p className="text-2xl font-bold text-purple-700">{totalHours.toFixed(0)}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-3 text-center"><p className="text-sm text-muted-foreground">14-day episodes</p><p className="text-2xl font-bold text-primary">{recent.length}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-3 text-center"><p className="text-sm text-muted-foreground">Avg intensity</p><p className="text-2xl font-bold text-primary">{avgIntensity.toFixed(1)}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-3 text-center"><p className="text-sm text-muted-foreground">Total hours</p><p className="text-2xl font-bold text-primary">{totalHours.toFixed(0)}</p></CardContent></Card>
           </div>
         )}
 
         {topTriggers.length > 0 && (
-          <Card className="mb-4 bg-amber-50 border-amber-200">
-            <CardHeader className="pb-1 pt-3"><CardTitle className="text-base text-amber-900">Your top triggers (last 14 days)</CardTitle></CardHeader>
+          <Card className="mb-4 bg-warn border-warn-foreground/25">
+            <CardHeader className="pb-1 pt-3"><CardTitle className="text-base text-warn-foreground">Your top triggers (last 14 days)</CardTitle></CardHeader>
             <CardContent className="pb-3">
               <div className="flex flex-wrap gap-2">
                 {topTriggers.map(([t, n]) => (
-                  <Badge key={t} variant="outline" className="text-sm bg-white border-amber-300 text-amber-900">{t} - {n}x</Badge>
+                  <Badge key={t} variant="outline" className="text-sm bg-card border-warn-foreground/25 text-warn-foreground">{t} - {n}x</Badge>
                 ))}
               </div>
             </CardContent>
@@ -115,14 +115,14 @@ export default function TinnitusTrackingLog() {
         )}
 
         <Card className="mb-4 print:hidden">
-          <CardHeader className="pb-2 pt-3"><CardTitle className="text-lg flex items-center gap-2"><PlusCircle className="h-5 w-5 text-purple-700" />Log an episode</CardTitle></CardHeader>
+          <CardHeader className="pb-2 pt-3"><CardTitle className="text-lg flex items-center gap-2"><PlusCircle className="h-5 w-5 text-primary" />Log an episode</CardTitle></CardHeader>
           <CardContent className="space-y-2">
             <div className="grid grid-cols-2 gap-2">
               <Input type="date" value={form.date} onChange={e => setForm(f => ({ ...f, date: e.target.value }))} />
               <Input type="time" value={form.time} onChange={e => setForm(f => ({ ...f, time: e.target.value }))} />
             </div>
             <div>
-              <label className="text-sm font-medium text-gray-700">Intensity (1=barely there, 5=overwhelming)</label>
+              <label className="text-base font-medium text-foreground">Intensity (1=barely there, 5=overwhelming)</label>
               <div className="flex gap-1 mt-1">
                 {([1, 2, 3, 4, 5] as Intensity[]).map(i => (
                   <Button key={i} type="button" size="sm" variant={form.intensity === i ? "default" : "outline"} onClick={() => setForm(f => ({ ...f, intensity: i }))} className="flex-1">
@@ -132,11 +132,11 @@ export default function TinnitusTrackingLog() {
               </div>
             </div>
             <div>
-              <label className="text-sm font-medium text-gray-700">How long did it last? (hours)</label>
+              <label className="text-base font-medium text-foreground">How long did it last? (hours)</label>
               <Input type="number" step="0.5" min="0.1" value={form.durationHours} onChange={e => setForm(f => ({ ...f, durationHours: e.target.value }))} className="mt-1" />
             </div>
             <div>
-              <label className="text-sm font-medium text-gray-700">Possible triggers (tap any that apply)</label>
+              <label className="text-base font-medium text-foreground">Possible triggers (tap any that apply)</label>
               <div className="flex flex-wrap gap-1 mt-1">
                 {TRIGGERS.map(t => (
                   <Button key={t} type="button" size="sm" variant={form.triggers.includes(t) ? "default" : "outline"} onClick={() => toggleTrigger(t)}>
@@ -166,11 +166,11 @@ export default function TinnitusTrackingLog() {
                   <div key={en.id} className="py-2 text-sm">
                     <div className="flex items-center justify-between gap-2">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-gray-500 text-xs">{en.date} {en.time}</span>
+                        <span className="text-muted-foreground text-sm">{en.date} {en.time}</span>
                         <Badge variant="outline" className={`text-xs ${intensityTone(en.intensity)}`}>{en.intensity} - {intensityLabel(en.intensity)}</Badge>
-                        <span className="text-xs text-gray-500">{en.durationHours}h</span>
+                        <span className="text-sm text-muted-foreground">{en.durationHours}h</span>
                       </div>
-                      <Button variant="ghost" size="icon" onClick={() => remove(en.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                      <Button variant="ghost" size="icon" onClick={() => remove(en.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                         <Trash2 className="h-3 w-3" />
                       </Button>
                     </div>
@@ -179,7 +179,7 @@ export default function TinnitusTrackingLog() {
                         {en.triggers.map(t => <Badge key={t} variant="secondary" className="text-xs">{t}</Badge>)}
                       </div>
                     )}
-                    {en.note && <p className="text-xs text-gray-500 italic mt-0.5">{en.note}</p>}
+                    {en.note && <p className="text-sm text-muted-foreground italic mt-0.5">{en.note}</p>}
                   </div>
                 ))}
               </div>
@@ -187,12 +187,12 @@ export default function TinnitusTrackingLog() {
           </Card>
         )}
 
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900">Tinnitus tracking helps you find your personal pattern. If you see one trigger come up over and over, try removing it for 2 weeks. Bring this log to your audiologist or ENT. Not medical advice.</p>
+            <p className="text-base text-info-foreground">Tinnitus tracking helps you find your personal pattern. If you see one trigger come up over and over, try removing it for 2 weeks. Bring this log to your audiologist or ENT. Not medical advice.</p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

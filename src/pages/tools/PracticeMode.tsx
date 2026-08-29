@@ -146,7 +146,7 @@ function PhoneFrame({
       >
         {/* Screen */}
         <div
-          className="relative overflow-hidden bg-white dark:bg-neutral-950 flex flex-col"
+          className="relative overflow-hidden bg-card flex flex-col"
           style={{ borderRadius: '36px', height: '620px' }}
         >
           {/* Notch */}
@@ -154,7 +154,7 @@ function PhoneFrame({
 
           {/* Status bar */}
           {showStatusBar && (
-            <div className="relative flex items-center justify-between px-6 pt-2 pb-1 text-xs font-semibold text-gray-900 dark:text-white z-10">
+            <div className="relative flex items-center justify-between px-6 pt-2 pb-1 text-xs font-semibold text-foreground dark:text-white z-10">
               <span className="tabular-nums">{time}</span>
               <div className="flex items-center gap-1.5">
                 <Signal className="h-3.5 w-3.5" />
@@ -168,7 +168,7 @@ function PhoneFrame({
           <div className="flex-1 overflow-hidden relative">{children}</div>
 
           {/* Home indicator */}
-          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 h-1 w-32 rounded-full bg-gray-900 dark:bg-white z-30" />
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 h-1 w-32 rounded-full bg-gray-900 dark:bg-card z-30" />
         </div>
       </div>
     </div>
@@ -181,14 +181,14 @@ function PhoneFrame({
 function GentleHint({ message, onDismiss }: { message: string; onDismiss: () => void }) {
   return (
     <div className="absolute inset-0 bg-black/50 backdrop-blur-sm z-40 flex items-end justify-center p-4">
-      <div className="bg-white dark:bg-neutral-900 rounded-3xl p-5 w-full max-w-sm shadow-2xl animate-in slide-in-from-bottom-4 duration-300">
+      <div className="bg-card rounded-3xl p-5 w-full max-w-sm shadow-2xl animate-in slide-in-from-bottom-4 duration-300">
         <div className="flex items-start gap-3 mb-3">
-          <div className="h-10 w-10 rounded-full bg-amber-100 dark:bg-amber-900/40 flex items-center justify-center shrink-0">
-            <Sparkles className="h-5 w-5 text-amber-600 dark:text-amber-300" />
+          <div className="h-10 w-10 rounded-full bg-warn flex items-center justify-center shrink-0">
+            <Sparkles className="h-5 w-5 text-warn-foreground " />
           </div>
           <div>
-            <p className="font-bold text-base text-gray-900 dark:text-white">That's okay!</p>
-            <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 leading-relaxed">{message}</p>
+            <p className="font-bold text-base text-foreground dark:text-white">That's okay!</p>
+            <p className="text-base text-muted-foreground mt-1 leading-relaxed">{message}</p>
           </div>
         </div>
         <Button onClick={onDismiss} className="w-full min-h-12 text-base" size="lg">
@@ -206,7 +206,7 @@ function PromptBanner({ step, total, text }: { step: number; total: number; text
   return (
     <Card className="border-2 border-primary/40 bg-primary/5 mb-4">
       <CardContent className="p-4">
-        <p className="text-sm font-semibold text-primary mb-1">
+        <p className="text-base font-semibold text-primary mb-1">
           Step {step} of {total}
         </p>
         <p className="text-lg font-medium text-foreground">{text}</p>
@@ -247,7 +247,7 @@ function TextMessageSim({ onComplete }: { onComplete: () => void }) {
               <div className="h-14 w-14 rounded-2xl bg-green-500 flex items-center justify-center shadow-lg ring-2 ring-white/40 animate-pulse">
                 <MessageSquare className="h-7 w-7 text-white" fill="white" />
               </div>
-              <span className="text-white text-xs font-medium drop-shadow">Messages</span>
+              <span className="text-white text-sm font-medium drop-shadow">Messages</span>
             </button>
             {/* Wrong icons */}
             <button
@@ -257,7 +257,7 @@ function TextMessageSim({ onComplete }: { onComplete: () => void }) {
               <div className="h-14 w-14 rounded-2xl bg-gray-800 flex items-center justify-center shadow-lg">
                 <Camera className="h-7 w-7 text-white" />
               </div>
-              <span className="text-white text-xs font-medium drop-shadow">Camera</span>
+              <span className="text-white text-sm font-medium drop-shadow">Camera</span>
             </button>
             <button
               onClick={() => handleWrong('That\'s the Phone app, for voice calls. We want to send a text message — look for the green Messages app.')}
@@ -266,7 +266,7 @@ function TextMessageSim({ onComplete }: { onComplete: () => void }) {
               <div className="h-14 w-14 rounded-2xl bg-green-600 flex items-center justify-center shadow-lg">
                 <Phone className="h-7 w-7 text-white" fill="white" />
               </div>
-              <span className="text-white text-xs font-medium drop-shadow">Phone</span>
+              <span className="text-white text-sm font-medium drop-shadow">Phone</span>
             </button>
             <button
               onClick={() => handleWrong('That\'s the Mail app, for email. To send a quick text, tap the green Messages app instead.')}
@@ -275,7 +275,7 @@ function TextMessageSim({ onComplete }: { onComplete: () => void }) {
               <div className="h-14 w-14 rounded-2xl bg-blue-500 flex items-center justify-center shadow-lg">
                 <Mail className="h-7 w-7 text-white" />
               </div>
-              <span className="text-white text-xs font-medium drop-shadow">Mail</span>
+              <span className="text-white text-sm font-medium drop-shadow">Mail</span>
             </button>
           </div>
         </div>
@@ -283,50 +283,50 @@ function TextMessageSim({ onComplete }: { onComplete: () => void }) {
 
       {/* Step 1 - Messages list */}
       {step === 1 && (
-        <div className="h-full bg-white dark:bg-neutral-950 flex flex-col">
-          <div className="px-4 py-3 border-b border-gray-200 dark:border-gray-800">
-            <h2 className="text-xl font-bold text-gray-900 dark:text-white">Messages</h2>
+        <div className="h-full bg-card flex flex-col">
+          <div className="px-4 py-3 border-b border-border ">
+            <h2 className="text-xl font-bold text-foreground dark:text-white">Messages</h2>
           </div>
           <div className="flex-1 overflow-auto">
             {/* Mom (target) */}
             <button
               onClick={() => setStep(2)}
-              className="w-full flex items-center gap-3 p-4 active:bg-gray-100 dark:active:bg-gray-800 border-b border-gray-100 dark:border-gray-800 text-left"
+              className="w-full flex items-center gap-3 p-4 active:bg-muted border-b border-border text-left"
             >
               <div className="h-12 w-12 rounded-full bg-pink-400 flex items-center justify-center text-white font-bold text-lg shrink-0">
                 M
               </div>
               <div className="flex-1 min-w-0">
-                <p className="font-semibold text-gray-900 dark:text-white">Mom</p>
-                <p className="text-sm text-gray-500 truncate">Can't wait to see you!</p>
+                <p className="font-semibold text-foreground dark:text-white">Mom</p>
+                <p className="text-sm text-muted-foreground truncate">Can't wait to see you!</p>
               </div>
-              <span className="text-xs text-gray-400">Now</span>
+              <span className="text-sm text-muted-foreground">Now</span>
             </button>
             <button
               onClick={() => handleWrong('That\'s a conversation with "Spam Caller." We want to message Mom — tap her row instead.')}
-              className="w-full flex items-center gap-3 p-4 active:bg-gray-100 dark:active:bg-gray-800 border-b border-gray-100 dark:border-gray-800 text-left"
+              className="w-full flex items-center gap-3 p-4 active:bg-muted border-b border-border text-left"
             >
               <div className="h-12 w-12 rounded-full bg-gray-400 flex items-center justify-center text-white font-bold text-lg shrink-0">
                 ?
               </div>
               <div className="flex-1 min-w-0">
-                <p className="font-semibold text-gray-900 dark:text-white">Unknown number</p>
-                <p className="text-sm text-gray-500 truncate">You've won a prize!</p>
+                <p className="font-semibold text-foreground dark:text-white">Unknown number</p>
+                <p className="text-sm text-muted-foreground truncate">You've won a prize!</p>
               </div>
-              <span className="text-xs text-gray-400">2h</span>
+              <span className="text-sm text-muted-foreground">2h</span>
             </button>
             <button
               onClick={() => handleWrong('That\'s a conversation with your friend Tom. Practice by messaging Mom — tap her row at the top.')}
-              className="w-full flex items-center gap-3 p-4 active:bg-gray-100 dark:active:bg-gray-800 text-left"
+              className="w-full flex items-center gap-3 p-4 active:bg-muted text-left"
             >
               <div className="h-12 w-12 rounded-full bg-blue-400 flex items-center justify-center text-white font-bold text-lg shrink-0">
                 T
               </div>
               <div className="flex-1 min-w-0">
-                <p className="font-semibold text-gray-900 dark:text-white">Tom</p>
-                <p className="text-sm text-gray-500 truncate">See you Saturday</p>
+                <p className="font-semibold text-foreground dark:text-white">Tom</p>
+                <p className="text-sm text-muted-foreground truncate">See you Saturday</p>
               </div>
-              <span className="text-xs text-gray-400">Yesterday</span>
+              <span className="text-sm text-muted-foreground">Yesterday</span>
             </button>
           </div>
         </div>
@@ -334,19 +334,19 @@ function TextMessageSim({ onComplete }: { onComplete: () => void }) {
 
       {/* Step 2 - Conversation */}
       {step === 2 && (
-        <div className="h-full bg-gray-50 dark:bg-neutral-900 flex flex-col">
-          <div className="px-4 py-3 border-b border-gray-200 dark:border-gray-800 flex items-center gap-2">
-            <ArrowLeft className="h-5 w-5 text-blue-500" />
+        <div className="h-full bg-muted flex flex-col">
+          <div className="px-4 py-3 border-b border-border flex items-center gap-2">
+            <ArrowLeft className="h-5 w-5 text-info-foreground" />
             <div className="h-8 w-8 rounded-full bg-pink-400 flex items-center justify-center text-white font-bold text-sm">
               M
             </div>
-            <p className="font-semibold text-gray-900 dark:text-white">Mom</p>
+            <p className="font-semibold text-foreground dark:text-white">Mom</p>
           </div>
 
           <div className="flex-1 p-4 space-y-3 overflow-auto">
             <div className="flex justify-start">
               <div className="bg-gray-200 dark:bg-gray-700 rounded-2xl rounded-bl-md px-4 py-2 max-w-[75%]">
-                <p className="text-base text-gray-900 dark:text-white">Can't wait to see you!</p>
+                <p className="text-base text-foreground dark:text-white">Can't wait to see you!</p>
               </div>
             </div>
             {typedText && (
@@ -359,10 +359,10 @@ function TextMessageSim({ onComplete }: { onComplete: () => void }) {
           </div>
 
           {/* Input area */}
-          <div className="border-t border-gray-200 dark:border-gray-800 p-3 bg-white dark:bg-neutral-950">
+          <div className="border-t border-border p-3 bg-card ">
             <div className="flex items-center gap-2">
-              <div className="flex-1 bg-gray-100 dark:bg-gray-800 rounded-full px-4 py-3 min-h-12 flex items-center">
-                <p className="text-base text-gray-500 dark:text-gray-400">
+              <div className="flex-1 bg-muted rounded-full px-4 py-3 min-h-12 flex items-center">
+                <p className="text-base text-muted-foreground ">
                   {typedText || 'iMessage'}
                 </p>
               </div>
@@ -398,7 +398,7 @@ function TextMessageSim({ onComplete }: { onComplete: () => void }) {
               </Button>
             )}
             {typedText && !sent && (
-              <p className="text-center text-xs text-gray-500 mt-2">
+              <p className="text-center text-sm text-muted-foreground mt-2">
                 Now tap the blue Send button
               </p>
             )}
@@ -433,7 +433,7 @@ function TextMessageSim({ onComplete }: { onComplete: () => void }) {
       {step < 3 && !hint && (
         <div className="absolute top-10 inset-x-3 z-30">
           <div className="bg-black/70 backdrop-blur-md rounded-2xl px-4 py-2">
-            <p className="text-white text-sm font-medium text-center">
+            <p className="text-white text-base font-medium text-center">
               {prompts[step]}
             </p>
           </div>
@@ -471,7 +471,7 @@ function VideoCallSim({ onComplete }: { onComplete: () => void }) {
               <div className="h-14 w-14 rounded-2xl bg-green-400 flex items-center justify-center shadow-lg ring-2 ring-white/40 animate-pulse">
                 <Video className="h-7 w-7 text-white" fill="white" />
               </div>
-              <span className="text-white text-xs font-medium drop-shadow">FaceTime</span>
+              <span className="text-white text-sm font-medium drop-shadow">FaceTime</span>
             </button>
             <button
               onClick={() => handleWrong('That\'s the regular Phone app — it only does voice calls. For video, we want FaceTime (the green camera icon).')}
@@ -480,16 +480,16 @@ function VideoCallSim({ onComplete }: { onComplete: () => void }) {
               <div className="h-14 w-14 rounded-2xl bg-green-600 flex items-center justify-center shadow-lg">
                 <Phone className="h-7 w-7 text-white" fill="white" />
               </div>
-              <span className="text-white text-xs font-medium drop-shadow">Phone</span>
+              <span className="text-white text-sm font-medium drop-shadow">Phone</span>
             </button>
             <button
               onClick={() => handleWrong('That\'s Photos, where your pictures live. For a video call, tap FaceTime instead.')}
               className="flex flex-col items-center gap-1 active:scale-95"
             >
-              <div className="h-14 w-14 rounded-2xl bg-white flex items-center justify-center shadow-lg">
+              <div className="h-14 w-14 rounded-2xl bg-card flex items-center justify-center shadow-lg">
                 <ImageIcon className="h-7 w-7 text-pink-500" />
               </div>
-              <span className="text-white text-xs font-medium drop-shadow">Photos</span>
+              <span className="text-white text-sm font-medium drop-shadow">Photos</span>
             </button>
             <button
               onClick={() => handleWrong('That\'s Messages, for texts. For a video call, tap FaceTime — the green camera icon.')}
@@ -498,7 +498,7 @@ function VideoCallSim({ onComplete }: { onComplete: () => void }) {
               <div className="h-14 w-14 rounded-2xl bg-green-500 flex items-center justify-center shadow-lg">
                 <MessageSquare className="h-7 w-7 text-white" fill="white" />
               </div>
-              <span className="text-white text-xs font-medium drop-shadow">Messages</span>
+              <span className="text-white text-sm font-medium drop-shadow">Messages</span>
             </button>
           </div>
         </div>
@@ -506,37 +506,37 @@ function VideoCallSim({ onComplete }: { onComplete: () => void }) {
 
       {/* Step 1 - Contacts list */}
       {step === 1 && (
-        <div className="h-full bg-white dark:bg-neutral-950 flex flex-col">
-          <div className="px-4 py-3 border-b border-gray-200 dark:border-gray-800">
-            <h2 className="text-xl font-bold text-gray-900 dark:text-white">FaceTime</h2>
-            <p className="text-sm text-gray-500">Tap a contact to call</p>
+        <div className="h-full bg-card flex flex-col">
+          <div className="px-4 py-3 border-b border-border ">
+            <h2 className="text-xl font-bold text-foreground dark:text-white">FaceTime</h2>
+            <p className="text-base text-muted-foreground">Tap a contact to call</p>
           </div>
           <div className="flex-1 overflow-auto">
             <button
               onClick={() => setStep(2)}
-              className="w-full flex items-center gap-3 p-4 active:bg-gray-100 dark:active:bg-gray-800 border-b border-gray-100 dark:border-gray-800 text-left"
+              className="w-full flex items-center gap-3 p-4 active:bg-muted border-b border-border text-left"
             >
               <div className="h-14 w-14 rounded-full bg-yellow-400 flex items-center justify-center text-white font-bold text-xl shrink-0">
                 G
               </div>
               <div className="flex-1">
-                <p className="font-semibold text-lg text-gray-900 dark:text-white">Grandkids</p>
-                <p className="text-sm text-gray-500">Tap to video call</p>
+                <p className="font-semibold text-lg text-foreground dark:text-white">Grandkids</p>
+                <p className="text-base text-muted-foreground">Tap to video call</p>
               </div>
-              <Video className="h-6 w-6 text-green-500" />
+              <Video className="h-6 w-6 text-success-foreground" />
             </button>
             <button
               onClick={() => handleWrong('This would call your dentist — probably not who you meant! Tap "Grandkids" instead.')}
-              className="w-full flex items-center gap-3 p-4 active:bg-gray-100 dark:active:bg-gray-800 border-b border-gray-100 dark:border-gray-800 text-left"
+              className="w-full flex items-center gap-3 p-4 active:bg-muted border-b border-border text-left"
             >
               <div className="h-14 w-14 rounded-full bg-blue-400 flex items-center justify-center text-white font-bold text-xl shrink-0">
                 D
               </div>
               <div className="flex-1">
-                <p className="font-semibold text-lg text-gray-900 dark:text-white">Dr. Smith</p>
-                <p className="text-sm text-gray-500">Dentist</p>
+                <p className="font-semibold text-lg text-foreground dark:text-white">Dr. Smith</p>
+                <p className="text-base text-muted-foreground">Dentist</p>
               </div>
-              <Video className="h-6 w-6 text-green-500" />
+              <Video className="h-6 w-6 text-success-foreground" />
             </button>
           </div>
         </div>
@@ -551,14 +551,14 @@ function VideoCallSim({ onComplete }: { onComplete: () => void }) {
               <div className="h-28 w-28 rounded-full bg-yellow-400 mx-auto flex items-center justify-center text-white text-5xl font-bold shadow-lg mb-3">
                 G
               </div>
-              <p className="text-2xl font-bold text-gray-800">Grandkids</p>
-              <p className="text-base text-gray-700 mt-1">Connecting...</p>
+              <p className="text-2xl font-bold text-foreground">Grandkids</p>
+              <p className="text-base text-foreground mt-1">Connecting...</p>
             </div>
           </div>
 
           {/* Self-preview */}
           <div className="absolute top-4 right-4 w-20 h-28 rounded-xl bg-gray-700 border-2 border-white/40 shadow-lg flex items-center justify-center">
-            <p className="text-white text-xs">You</p>
+            <p className="text-white text-sm">You</p>
           </div>
 
           {/* Controls */}
@@ -614,7 +614,7 @@ function VideoCallSim({ onComplete }: { onComplete: () => void }) {
       {step < 3 && !hint && (
         <div className="absolute top-10 inset-x-3 z-30">
           <div className="bg-black/70 backdrop-blur-md rounded-2xl px-4 py-2">
-            <p className="text-white text-sm font-medium text-center">{prompts[step]}</p>
+            <p className="text-white text-base font-medium text-center">{prompts[step]}</p>
           </div>
         </div>
       )}
@@ -682,14 +682,14 @@ function ScreenshotSim({ onComplete }: { onComplete: () => void }) {
         )}
 
         <div
-          className="relative overflow-hidden bg-white dark:bg-neutral-950 flex flex-col"
+          className="relative overflow-hidden bg-card flex flex-col"
           style={{ borderRadius: '36px', height: '620px' }}
         >
           {/* Notch */}
           <div className="absolute top-0 left-1/2 -translate-x-1/2 h-6 w-32 bg-gray-900 dark:bg-black rounded-b-2xl z-20" />
 
           {/* Status bar */}
-          <div className="relative flex items-center justify-between px-6 pt-2 pb-1 text-xs font-semibold text-gray-900 dark:text-white z-10">
+          <div className="relative flex items-center justify-between px-6 pt-2 pb-1 text-xs font-semibold text-foreground dark:text-white z-10">
             <span className="tabular-nums">9:41</span>
             <div className="flex items-center gap-1.5">
               <Signal className="h-3.5 w-3.5" />
@@ -701,25 +701,25 @@ function ScreenshotSim({ onComplete }: { onComplete: () => void }) {
           <div className="flex-1 overflow-hidden relative">
             {/* Step 0 - Fake webpage to screenshot */}
             {step === 0 && (
-              <div className="h-full bg-white dark:bg-neutral-950 p-4 overflow-auto">
-                <div className="border-b border-gray-200 pb-3 mb-3">
-                  <p className="text-xs text-gray-500 font-mono">teksure.com/recipe</p>
+              <div className="h-full bg-card p-4 overflow-auto">
+                <div className="border-b border-border pb-3 mb-3">
+                  <p className="text-sm text-muted-foreground font-mono">teksure.com/recipe</p>
                 </div>
-                <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                <h2 className="text-xl font-bold text-foreground dark:text-white mb-3">
                   Grandma's Famous Cookies
                 </h2>
                 <div className="h-32 rounded-xl bg-gradient-to-br from-amber-300 to-orange-400 mb-3 flex items-center justify-center text-white text-4xl">
                   
                 </div>
-                <h3 className="font-bold text-gray-900 dark:text-white mb-2">Ingredients</h3>
-                <ul className="text-sm text-gray-700 dark:text-gray-300 space-y-1 mb-3">
+                <h3 className="font-bold text-foreground dark:text-white mb-2">Ingredients</h3>
+                <ul className="text-base text-foreground space-y-1 mb-3">
                   <li>• 2 cups flour</li>
                   <li>• 1 cup butter (softened)</li>
                   <li>• 3/4 cup sugar</li>
                   <li>• 1 tsp vanilla extract</li>
                   <li>• 2 eggs</li>
                 </ul>
-                <p className="text-sm text-gray-600 dark:text-gray-400 italic">
+                <p className="text-base text-muted-foreground italic">
                   Tip: Take a screenshot so you have the recipe even without internet!
                 </p>
               </div>
@@ -727,12 +727,12 @@ function ScreenshotSim({ onComplete }: { onComplete: () => void }) {
 
             {/* Step 1 - Preview thumbnail */}
             {step === 1 && (
-              <div className="h-full relative bg-white dark:bg-neutral-950">
+              <div className="h-full relative bg-card ">
                 <div className="p-4">
-                  <div className="border-b border-gray-200 pb-3 mb-3">
-                    <p className="text-xs text-gray-500 font-mono">teksure.com/recipe</p>
+                  <div className="border-b border-border pb-3 mb-3">
+                    <p className="text-sm text-muted-foreground font-mono">teksure.com/recipe</p>
                   </div>
-                  <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  <h2 className="text-xl font-bold text-foreground dark:text-white mb-3">
                     Grandma's Famous Cookies
                   </h2>
                   <div className="h-32 rounded-xl bg-gradient-to-br from-amber-300 to-orange-400 mb-3 flex items-center justify-center text-white text-4xl">
@@ -743,7 +743,7 @@ function ScreenshotSim({ onComplete }: { onComplete: () => void }) {
                 {/* Thumbnail in corner */}
                 <button
                   onClick={() => setStep(2)}
-                  className="absolute bottom-8 left-3 w-24 h-36 rounded-lg bg-white border-2 border-gray-300 shadow-2xl active:scale-95 overflow-hidden ring-4 ring-primary/50 animate-pulse"
+                  className="absolute bottom-8 left-3 w-24 h-36 rounded-lg bg-card border-2 border-border shadow-2xl active:scale-95 overflow-hidden ring-4 ring-primary/50 animate-pulse"
                   aria-label="Screenshot preview"
                 >
                   <div className="h-full w-full bg-gradient-to-br from-amber-300 to-orange-400 flex items-center justify-center text-2xl">
@@ -755,35 +755,35 @@ function ScreenshotSim({ onComplete }: { onComplete: () => void }) {
 
             {/* Step 2 - Full screenshot editor */}
             {step === 2 && (
-              <div className="h-full bg-gray-100 dark:bg-neutral-900 flex flex-col">
+              <div className="h-full bg-muted flex flex-col">
                 <div className="flex items-center justify-between px-4 py-3">
                   <button
                     onClick={() => handleWrong('That would delete your screenshot. Tap "Done" instead to keep it.')}
-                    className="text-base text-blue-500 font-medium active:opacity-60"
+                    className="text-base text-info-foreground font-medium active:opacity-60"
                   >
                     <X className="h-6 w-6" />
                   </button>
                   <button
                     onClick={() => setStep(3)}
-                    className="text-base text-blue-500 font-bold active:opacity-60 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 ring-2 ring-blue-500/40 animate-pulse"
+                    className="text-base text-info-foreground font-bold active:opacity-60 px-3 py-1 rounded-full bg-info ring-2 ring-blue-500/40 animate-pulse"
                   >
                     Done
                   </button>
                 </div>
                 <div className="flex-1 p-6 flex items-center justify-center">
-                  <div className="bg-white rounded-xl shadow-xl w-48 h-72 overflow-hidden">
+                  <div className="bg-card rounded-xl shadow-xl w-48 h-72 overflow-hidden">
                     <div className="p-2">
-                      <p className="text-[6px] text-gray-400 font-mono">teksure.com/recipe</p>
-                      <p className="text-xs font-bold mt-1">Grandma's Cookies</p>
+                      <p className="text-[6px] text-muted-foreground font-mono">teksure.com/recipe</p>
+                      <p className="text-sm font-bold mt-1">Grandma's Cookies</p>
                     </div>
                     <div className="h-20 mx-2 rounded bg-gradient-to-br from-amber-300 to-orange-400 flex items-center justify-center text-xl">
                       
                     </div>
                     <div className="p-2 space-y-0.5">
                       <p className="text-[8px] font-bold">Ingredients</p>
-                      <p className="text-[6px] text-gray-600">• 2 cups flour</p>
-                      <p className="text-[6px] text-gray-600">• 1 cup butter</p>
-                      <p className="text-[6px] text-gray-600">• 3/4 cup sugar</p>
+                      <p className="text-[6px] text-muted-foreground">• 2 cups flour</p>
+                      <p className="text-[6px] text-muted-foreground">• 1 cup butter</p>
+                      <p className="text-[6px] text-muted-foreground">• 3/4 cup sugar</p>
                     </div>
                   </div>
                 </div>
@@ -812,21 +812,21 @@ function ScreenshotSim({ onComplete }: { onComplete: () => void }) {
             )}
 
             {/* Flash animation */}
-            {flash && <div className="absolute inset-0 bg-white z-50 animate-pulse" />}
+            {flash && <div className="absolute inset-0 bg-card z-50 animate-pulse" />}
 
             {hint && <GentleHint message={hint} onDismiss={() => setHint(null)} />}
 
             {step < 3 && !hint && (
               <div className="absolute top-10 inset-x-3 z-30">
                 <div className="bg-black/70 backdrop-blur-md rounded-2xl px-4 py-2">
-                  <p className="text-white text-sm font-medium text-center">{prompts[step]}</p>
+                  <p className="text-white text-base font-medium text-center">{prompts[step]}</p>
                 </div>
               </div>
             )}
           </div>
 
           {/* Home indicator */}
-          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 h-1 w-32 rounded-full bg-gray-900 dark:bg-white z-30" />
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 h-1 w-32 rounded-full bg-gray-900 dark:bg-card z-30" />
         </div>
       </div>
     </div>
@@ -847,16 +847,16 @@ function CompletionScreen({
 }) {
   return (
     <div className="max-w-2xl mx-auto">
-      <Card className="border-2 border-green-400 dark:border-green-700 bg-green-50 dark:bg-green-950/30 mb-6">
+      <Card className="border-2 border-green-400 dark:border-green-700 bg-success mb-6">
         <CardContent className="p-8 text-center">
-          <Trophy className="h-16 w-16 text-green-600 dark:text-green-400 mx-auto mb-4" />
-          <h2 className="text-3xl font-bold text-green-800 dark:text-green-300 mb-3">
+          <Trophy className="h-16 w-16 text-success-foreground mx-auto mb-4" />
+          <h2 className="text-3xl font-bold text-success-foreground mb-3">
             You did it!
           </h2>
           <p className="text-lg text-green-800/90 dark:text-green-200/90 mb-6">
             You just completed the <strong>{sim.title.toLowerCase()}</strong> practice. No real phones were harmed — and now you know exactly what to do.
           </p>
-          <p className="text-xl font-semibold text-gray-900 dark:text-white">
+          <p className="text-xl font-semibold text-foreground dark:text-white">
             Ready to do this on your real phone?
           </p>
         </CardContent>
@@ -939,11 +939,11 @@ export default function PracticeMode() {
               </p>
             </div>
 
-            <Card className="border-2 border-green-300 dark:border-green-800 bg-green-50/50 dark:bg-green-950/20 mb-8 max-w-3xl mx-auto">
+            <Card className="border-2 border-success-foreground/25 bg-green-50/50 dark:bg-green-950/20 mb-8 max-w-3xl mx-auto">
               <CardContent className="p-5 flex items-start gap-4">
-                <Shield className="h-8 w-8 text-green-600 dark:text-green-400 shrink-0" />
+                <Shield className="h-8 w-8 text-success-foreground shrink-0" />
                 <div>
-                  <p className="font-bold text-lg text-green-800 dark:text-green-200 mb-1">
+                  <p className="font-bold text-lg text-success-foreground mb-1">
                     This is a safe practice space
                   </p>
                   <p className="text-base text-green-900/80 dark:text-green-100/80">
@@ -979,7 +979,7 @@ export default function PracticeMode() {
                       <Icon className="h-6 w-6" />
                     </div>
                     <h3 className="font-bold text-lg mb-1">{sim.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-snug">
+                    <p className="text-base text-muted-foreground leading-snug">
                       {sim.description}
                     </p>
                     {!sim.available && (
@@ -1023,10 +1023,10 @@ export default function PracticeMode() {
                     Follow the prompts on the phone. Tap anywhere — mistakes are safe here.
                   </p>
                 </div>
-                <Card className="border-2 border-green-300 dark:border-green-800 bg-green-50/50 dark:bg-green-950/20">
+                <Card className="border-2 border-success-foreground/25 bg-green-50/50 dark:bg-green-950/20">
                   <CardContent className="p-4 flex items-start gap-3">
-                    <Shield className="h-6 w-6 text-green-600 dark:text-green-400 shrink-0" />
-                    <p className="text-base text-green-900 dark:text-green-100">
+                    <Shield className="h-6 w-6 text-success-foreground shrink-0" />
+                    <p className="text-base text-success-foreground ">
                       This is a simulation. Your real phone is not affected.
                     </p>
                   </CardContent>

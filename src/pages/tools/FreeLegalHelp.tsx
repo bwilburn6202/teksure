@@ -160,7 +160,7 @@ export default function FreeLegalHelp() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <Scale className="h-8 w-8 text-amber-600" />
+                <Scale className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Free Legal Help</h1>
@@ -173,9 +173,9 @@ export default function FreeLegalHelp() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Free Legal Help' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch for legal advice scams</p>
                 <p className="text-muted-foreground">
@@ -221,14 +221,14 @@ export default function FreeLegalHelp() {
                       </div>
                     </div>
 
-                    <p className="text-sm text-muted-foreground mb-2"><strong>Who it fits:</strong> {s.who}</p>
-                    <p className="text-sm text-muted-foreground mb-2"><strong>What they help with:</strong> {s.helpsWith}</p>
-                    <p className="text-sm text-muted-foreground mb-3"><strong>How to start:</strong> {s.howToStart}</p>
+                    <p className="text-base text-muted-foreground mb-2"><strong>Who it fits:</strong> {s.who}</p>
+                    <p className="text-base text-muted-foreground mb-2"><strong>What they help with:</strong> {s.helpsWith}</p>
+                    <p className="text-base text-muted-foreground mb-3"><strong>How to start:</strong> {s.howToStart}</p>
 
                     {s.notes && (
                       <ul className="space-y-1 mt-3 pt-3 border-t border-border">
                         {s.notes.map((n, i) => (
-                          <li key={i} className="text-xs text-muted-foreground flex gap-2">
+                          <li key={i} className="text-sm text-muted-foreground flex gap-2">
                             <span className="text-primary">&bull;</span><span>{n}</span>
                           </li>
                         ))}
@@ -247,7 +247,7 @@ export default function FreeLegalHelp() {
                         </a>
                       )}
                       {s.phone && (
-                        <span className="text-xs text-muted-foreground">
+                        <span className="text-sm text-muted-foreground">
                           <strong>Phone:</strong> {s.phone}
                         </span>
                       )}
@@ -260,8 +260,8 @@ export default function FreeLegalHelp() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Other places to look</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Other places to look</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">&bull;</span><span><strong>Law school clinics:</strong> most US law schools run free clinics where supervised students draft wills, defend tenants, and fight benefits denials.</span></li>
                 <li className="flex gap-2"><span className="text-primary">&bull;</span><span><strong>State bar lawyer-referral services:</strong> a 30-minute consult for around $35, then you decide if you want to hire the attorney.</span></li>
                 <li className="flex gap-2"><span className="text-primary">&bull;</span><span><strong>Public library legal nights:</strong> many libraries host free "ask-a-lawyer" evenings once a month.</span></li>
@@ -281,22 +281,22 @@ export default function FreeLegalHelp() {
                 to="/tools/government-benefits-portal"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
-                <p className="font-medium text-sm">Government Benefits Portal</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Find every benefit you qualify for.</p>
+                <p className="font-medium text-base">Government Benefits Portal</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Find every benefit you qualify for.</p>
               </Link>
               <Link
                 to="/tools/account-after-loss"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
-                <p className="font-medium text-sm">Account After Loss</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Close accounts after a death.</p>
+                <p className="font-medium text-base">Account After Loss</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Close accounts after a death.</p>
               </Link>
               <Link
                 to="/tools/tech-will-builder"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
-                <p className="font-medium text-sm">Tech Will Builder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Plan digital accounts for heirs.</p>
+                <p className="font-medium text-base">Tech Will Builder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Plan digital accounts for heirs.</p>
               </Link>
             </div>
           </div>

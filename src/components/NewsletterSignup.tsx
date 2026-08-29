@@ -59,7 +59,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
           {submitted ? (
             <div
               key="success"
-              className="flex items-center gap-2 text-sm text-green-600 font-medium"
+              className="flex items-center gap-2 text-sm text-success-foreground font-medium"
             >
               <CheckCircle className="h-4 w-4" />
               You're subscribed! Weekly tips incoming             </div>
@@ -78,7 +78,7 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
             </form>
           )}
         </>
-        {error && <p className="text-xs text-destructive">{error}</p>}
+        {error && <p className="text-sm text-destructive">{error}</p>}
       </div>
     );
   }
@@ -88,11 +88,11 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
       <div className={`rounded-xl border border-border bg-muted/50 p-4 ${className}`}>
         <div className="flex items-center gap-2 mb-3">
           <Mail className="h-4 w-4 text-primary" />
-          <span className="text-sm font-semibold">Weekly tech tips — free</span>
+          <span className="text-base font-semibold">Weekly tech tips — free</span>
         </div>
         <>
           {submitted ? (
-            <div key="ok" className="flex items-center gap-2 text-sm text-green-600">
+            <div key="ok" className="flex items-center gap-2 text-sm text-success-foreground">
               <CheckCircle className="h-4 w-4" /> Subscribed! Look out for your first tip.
             </div>
           ) : (
@@ -108,8 +108,8 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
             </form>
           )}
         </>
-        {error && <p className="text-xs text-destructive mt-1">{error}</p>}
-        {!submitted && <p className="text-sm text-muted-foreground mt-2">No spam. Unsubscribe any time.</p>}
+        {error && <p className="text-sm text-destructive mt-1">{error}</p>}
+        {!submitted && <p className="text-base text-muted-foreground mt-2">No spam. Unsubscribe any time.</p>}
       </div>
     );
   }
@@ -131,14 +131,14 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
             <div key="done" className="space-y-2">
               <CheckCircle className="h-10 w-10 text-teksure-success mx-auto" />
               <h3 className="text-xl font-bold">You're in!</h3>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Expect one friendly email each week — a quick tip, a new guide, or a scam alert worth knowing about.
               </p>
             </div>
           ) : (
             <div key="form">
               <h3 className="text-xl font-bold mb-2">Get weekly tech tips</h3>
-              <p className="text-sm text-muted-foreground mb-6">
+              <p className="text-base text-muted-foreground mb-6">
                 One email a week with a practical tip, new guide, or scam alert. Plain English. No jargon. Unsubscribe any time.
               </p>
               <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2">
@@ -153,8 +153,8 @@ export function NewsletterSignup({ variant = 'default', className = '' }: Newsle
                   Subscribe <ArrowRight className="h-4 w-4 ml-1" />
                 </Button>
               </form>
-              {error && <p className="text-xs text-destructive mt-2">{error}</p>}
-              <p className="text-sm text-muted-foreground mt-3">
+              {error && <p className="text-sm text-destructive mt-2">{error}</p>}
+              <p className="text-base text-muted-foreground mt-3">
                 We respect your inbox. No spam, ever. Read our{' '}
                 <a href="/privacy" className="underline hover:text-foreground transition-colors">privacy policy</a>.
               </p>

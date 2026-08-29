@@ -19,7 +19,7 @@ export default function PrivacyAuditChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Phone (15 min)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Privacy &amp; Security → review every app permission.</li>
               <li>Apps with location: only when needed.</li>
               <li>Apps with camera/mic: disable for ones that don&apos;t need it.</li>
@@ -33,7 +33,7 @@ export default function PrivacyAuditChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Google account (10 min)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>myaccount.google.com</strong>.</li>
               <li>Privacy + Personalization → Activity controls.</li>
               <li>Web + App Activity — auto-delete every 3 months.</li>
@@ -48,7 +48,7 @@ export default function PrivacyAuditChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Facebook (10 min)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Privacy Checkup.</li>
               <li>Audience for posts: Friends only.</li>
               <li>Profile photo + cover: Public OK.</li>
@@ -62,7 +62,7 @@ export default function PrivacyAuditChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free privacy tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>DuckDuckGo Privacy Pro</strong> — $10/mo. VPN + email aliasing + data broker removal.</li>
               <li><strong>Mullvad VPN</strong> — $5/mo. Privacy-first.</li>
               <li><strong>Have I Been Pwned</strong> — free. Check if your email leaked in any breach.</li>
@@ -75,7 +75,7 @@ export default function PrivacyAuditChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annual maintenance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Run privacy audit every January.</li>
               <li>Check breached emails on haveibeenpwned.com.</li>
               <li>Pull free credit report (annualcreditreport.com).</li>
@@ -88,7 +88,7 @@ export default function PrivacyAuditChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Mostly free</h3>
-            <p className="text-sm text-muted-foreground">90% of senior privacy needs covered by FREE built-in tools. Don&apos;t pay $30/mo for "identity protection" — credit freeze (free) + this audit covers most of what they offer.</p>
+            <p className="text-base text-muted-foreground">90% of senior privacy needs covered by FREE built-in tools. Don&apos;t pay $30/mo for "identity protection" — credit freeze (free) + this audit covers most of what they offer.</p>
           </CardContent>
         </Card>
       </main>

@@ -802,8 +802,8 @@ export default function EmailWriterHelper() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-indigo-50 dark:bg-indigo-950/30 flex items-center justify-center flex-shrink-0">
-                <Mail className="h-6 w-6 text-indigo-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Mail className="h-6 w-6 text-primary" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -833,7 +833,7 @@ export default function EmailWriterHelper() {
                       <span className="text-2xl" aria-hidden="true">{s.icon}</span>
                       <div>
                         <h3 className="font-semibold text-sm mb-1">{s.title}</h3>
-                        <p className="text-xs text-muted-foreground leading-relaxed">{s.description}</p>
+                        <p className="text-sm text-muted-foreground leading-relaxed">{s.description}</p>
                       </div>
                     </div>
                   </button>
@@ -841,8 +841,8 @@ export default function EmailWriterHelper() {
               </div>
 
               <div className="mt-10 p-5 rounded-2xl bg-muted/50 border border-border">
-                <p className="text-sm font-semibold mb-2">Why we like this tool</p>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base font-semibold mb-2">Why we like this tool</p>
+                <p className="text-base text-muted-foreground leading-relaxed">
                   The hardest part of writing a sensitive email is staring at a blank page. We give you the first draft so you can focus on editing — which is always easier than inventing.
                 </p>
               </div>
@@ -862,18 +862,18 @@ export default function EmailWriterHelper() {
                   <span className="text-3xl" aria-hidden="true">{active.icon}</span>
                   <div>
                     <h2 className="text-2xl font-bold">{active.title}</h2>
-                    <p className="text-sm text-muted-foreground">{active.description}</p>
+                    <p className="text-base text-muted-foreground">{active.description}</p>
                   </div>
                 </div>
               </div>
 
               {active.warning && (
-                <div className="rounded-2xl border border-red-200 dark:border-red-900 bg-red-50 dark:bg-red-950/20 p-5">
+                <div className="rounded-2xl border border-danger-foreground/25 bg-danger p-5">
                   <div className="flex gap-3 items-start">
-                    <ShieldAlert className="h-5 w-5 text-red-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <ShieldAlert className="h-5 w-5 text-danger-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <div>
-                      <p className="font-semibold text-sm text-red-800 dark:text-red-300 mb-1">Don't reply.</p>
-                      <p className="text-sm text-red-700 dark:text-red-300 leading-relaxed">
+                      <p className="font-semibold text-base text-danger-foreground mb-1">Don't reply.</p>
+                      <p className="text-base text-danger-foreground leading-relaxed">
                         {active.warning}
                       </p>
                     </div>
@@ -947,7 +947,7 @@ export default function EmailWriterHelper() {
               {output && (
                 <div className="rounded-2xl border border-border bg-card">
                   <div className="flex items-center justify-between px-5 py-3 border-b border-border">
-                    <p className="text-sm font-semibold">Your email (edit freely before sending)</p>
+                    <p className="text-base font-semibold">Your email (edit freely before sending)</p>
                     <Button variant="outline" size="sm" onClick={handleCopy} className="gap-1.5">
                       {copied ? <Check className="h-4 w-4" /> : <Copy className="h-4 w-4" />}
                       {copied ? 'Copied' : 'Copy'}
@@ -969,7 +969,7 @@ export default function EmailWriterHelper() {
               <CheckCircle2 className="h-4 w-4 text-primary" aria-hidden="true" />
               Read it before you send
             </h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
+            <ul className="space-y-2 text-base text-muted-foreground">
               <li className="flex gap-2"><span>•</span> Did you spell names right?</li>
               <li className="flex gap-2"><span>•</span> Right email address in the "To" field?</li>
               <li className="flex gap-2"><span>•</span> Right dates, amounts, and reference numbers?</li>
@@ -979,10 +979,10 @@ export default function EmailWriterHelper() {
             </ul>
           </div>
 
-          <div className="mt-6 p-5 rounded-2xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900">
+          <div className="mt-6 p-5 rounded-2xl bg-warn border border-warn-foreground/25 ">
             <div className="flex gap-3 items-start">
-              <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
-              <p className="text-sm text-amber-800 dark:text-amber-300 leading-relaxed">
+              <AlertTriangle className="h-5 w-5 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
+              <p className="text-base text-warn-foreground leading-relaxed">
                 For anything legal, medical, or with money on the line, the best version of this email is the one you read aloud once before hitting send. If it sounds off when you hear it, it will read off too.
               </p>
             </div>

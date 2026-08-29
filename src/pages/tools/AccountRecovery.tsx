@@ -509,16 +509,16 @@ export default function AccountRecovery() {
                         >
                           {service.icon}
                         </span>
-                        <span className="font-medium text-sm">{service.name}</span>
+                        <span className="font-medium text-base">{service.name}</span>
                         <ChevronRight className="h-4 w-4 text-muted-foreground ml-auto" aria-hidden="true" />
                       </button>
                     ))}
                   </div>
 
                   {/* Scam warning */}
-                  <div className="mt-5 flex items-start gap-2 p-3 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800">
-                    <AlertTriangle className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" aria-hidden="true" />
-                    <p className="text-xs text-amber-700 dark:text-amber-300 leading-relaxed">
+                  <div className="mt-5 flex items-start gap-2 p-3 rounded-lg bg-warn border border-warn-foreground/25 ">
+                    <AlertTriangle className="h-4 w-4 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                    <p className="text-sm text-warn-foreground leading-relaxed">
                       <strong>Watch out for scams:</strong> If someone called you saying your account was compromised and asking for a fee to fix it — that's a scam. Real account recovery is free and done entirely on the company's own website.
                     </p>
                   </div>
@@ -533,22 +533,22 @@ export default function AccountRecovery() {
                     <h2 className="text-lg font-semibold leading-snug">{current.question}</h2>
                   </div>
                   {current.helpText && (
-                    <div className="flex items-start gap-2 p-2.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 mt-3 mb-4">
-                      <Lightbulb className="h-3.5 w-3.5 text-blue-600 shrink-0 mt-0.5" aria-hidden="true" />
-                      <p className="text-xs text-blue-700 dark:text-blue-300">{current.helpText}</p>
+                    <div className="flex items-start gap-2 p-2.5 rounded-lg bg-info border border-info-foreground/25 mt-3 mb-4">
+                      <Lightbulb className="h-3.5 w-3.5 text-info-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                      <p className="text-sm text-info-foreground ">{current.helpText}</p>
                     </div>
                   )}
                   <div className="grid grid-cols-2 gap-3 mt-4">
                     <button
                       onClick={() => current.yesNext && goTo(current.yesNext)}
-                      className="py-4 rounded-xl border-2 border-green-400/60 bg-green-50 dark:bg-green-900/20 hover:bg-green-100 dark:hover:bg-green-900/40 transition-colors font-semibold text-green-700 dark:text-green-300 flex items-center justify-center gap-2"
+                      className="py-4 rounded-xl border-2 border-green-400/60 bg-success hover:bg-success transition-colors font-semibold text-success-foreground flex items-center justify-center gap-2"
                       aria-label="Yes"
                     >
                       <CheckCircle2 className="h-5 w-5" aria-hidden="true" /> Yes
                     </button>
                     <button
                       onClick={() => current.noNext && goTo(current.noNext)}
-                      className="py-4 rounded-xl border-2 border-red-300/60 bg-red-50 dark:bg-red-900/20 hover:bg-red-100 dark:hover:bg-red-900/40 transition-colors font-semibold text-red-600 dark:text-red-300 flex items-center justify-center gap-2"
+                      className="py-4 rounded-xl border-2 border-red-300/60 bg-danger hover:bg-danger transition-colors font-semibold text-danger-foreground flex items-center justify-center gap-2"
                       aria-label="No"
                     >
                       No
@@ -562,19 +562,19 @@ export default function AccountRecovery() {
                 <>
                   <div className="text-center mb-5">
                     <div className="flex justify-center mb-2">
-                      <div className="p-2 rounded-full bg-green-100 dark:bg-green-900/30">
-                        <KeyRound className="h-6 w-6 text-green-600 dark:text-green-400" aria-hidden="true" />
+                      <div className="p-2 rounded-full bg-success ">
+                        <KeyRound className="h-6 w-6 text-success-foreground " aria-hidden="true" />
                       </div>
                     </div>
                     <h2 className="text-xl font-bold">{current.solution.heading}</h2>
-                    <p className="text-sm text-muted-foreground mt-1">{current.solution.summary}</p>
+                    <p className="text-base text-muted-foreground mt-1">{current.solution.summary}</p>
                   </div>
 
                   {/* Warning banner */}
                   {current.solution.warning && (
-                    <div className="flex items-start gap-2 p-3 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 mb-4">
-                      <AlertTriangle className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" aria-hidden="true" />
-                      <p className="text-xs text-amber-700 dark:text-amber-300">{current.solution.warning}</p>
+                    <div className="flex items-start gap-2 p-3 rounded-lg bg-warn border border-warn-foreground/25 mb-4">
+                      <AlertTriangle className="h-4 w-4 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                      <p className="text-sm text-warn-foreground ">{current.solution.warning}</p>
                     </div>
                   )}
 
@@ -593,11 +593,11 @@ export default function AccountRecovery() {
                             {i + 1}
                           </span>
                           <div>
-                            <p className="text-sm text-muted-foreground leading-relaxed">{step.text}</p>
+                            <p className="text-base text-muted-foreground leading-relaxed">{step.text}</p>
                             {step.tip && (
-                              <div className="flex items-start gap-1.5 mt-1.5 p-2 rounded bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800">
-                                <Lightbulb className="h-3 w-3 text-blue-500 shrink-0 mt-0.5" aria-hidden="true" />
-                                <p className="text-xs text-blue-700 dark:text-blue-300">{step.tip}</p>
+                              <div className="flex items-start gap-1.5 mt-1.5 p-2 rounded bg-info border border-blue-100 dark:border-blue-800">
+                                <Lightbulb className="h-3 w-3 text-info-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                                <p className="text-sm text-info-foreground ">{step.tip}</p>
                               </div>
                             )}
                           </div>
@@ -611,9 +611,9 @@ export default function AccountRecovery() {
                     <div className="mt-5 flex items-center gap-2 p-3 rounded-lg bg-primary/5 border border-primary/20">
                       <Phone className="h-4 w-4 text-primary shrink-0" aria-hidden="true" />
                       <div>
-                        <p className="text-xs font-semibold text-foreground">Customer Service Phone</p>
-                        <p className="text-sm font-bold text-primary">{current.solution.phoneNumber}</p>
-                        <p className="text-xs text-muted-foreground">Free to call — available to help you</p>
+                        <p className="text-sm font-semibold text-foreground">Customer Service Phone</p>
+                        <p className="text-base font-bold text-primary">{current.solution.phoneNumber}</p>
+                        <p className="text-sm text-muted-foreground">Free to call — available to help you</p>
                       </div>
                     </div>
                   )}
@@ -635,7 +635,7 @@ export default function AccountRecovery() {
                   {/* Email safety note */}
                   <div className="mt-4 flex items-start gap-2 p-3 rounded-lg bg-muted border border-border">
                     <Mail className="h-4 w-4 text-muted-foreground shrink-0 mt-0.5" aria-hidden="true" />
-                    <p className="text-xs text-muted-foreground leading-relaxed">
+                    <p className="text-sm text-muted-foreground leading-relaxed">
                       <strong>Safety reminder:</strong> The official recovery page links above go directly to the company's real website. Never click a link from an unexpected email or text message claiming your account has a problem — those are often scams.
                     </p>
                   </div>
@@ -667,7 +667,7 @@ export default function AccountRecovery() {
 
           {/* Bottom context */}
           <div className="mt-8 text-center">
-            <p className="text-sm text-muted-foreground mb-2">
+            <p className="text-base text-muted-foreground mb-2">
               Still stuck? A TekSure technician can walk you through this over video call.
             </p>
             <Button variant="outline" asChild size="sm">

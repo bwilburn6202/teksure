@@ -19,7 +19,7 @@ export default function BaseballCardValuation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Most valuable years</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pre-WWII (1909-1948)</strong> — extreme rarity.</li>
               <li><strong>1950s</strong> — Mantle, Mays, Williams = thousands.</li>
               <li><strong>1960s</strong> — Topps cards from era can be valuable.</li>
@@ -33,7 +33,7 @@ export default function BaseballCardValuation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Valuation tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cardladder.com</strong> — best free price tool. Real sales.</li>
               <li><strong>PSA + Beckett price guides</strong>.</li>
               <li><strong>eBay sold listings</strong>.</li>
@@ -47,7 +47,7 @@ export default function BaseballCardValuation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get cards graded</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>PSA</strong> — most popular. $20-100/card.</li>
               <li><strong>BGS</strong> (Beckett) — second most popular.</li>
               <li><strong>SGC</strong> — fastest growing.</li>
@@ -62,7 +62,7 @@ export default function BaseballCardValuation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to sell</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Heritage Auctions</strong> — $500+ cards.</li>
               <li><strong>PWCC</strong> — premier card auctions.</li>
               <li><strong>eBay</strong> — middle market.</li>
@@ -77,7 +77,7 @@ export default function BaseballCardValuation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t clean cards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NEVER wipe, polish, trim cards.</li>
               <li>Destroys value.</li>
               <li>Gentle dust with soft brush only.</li>
@@ -91,7 +91,7 @@ export default function BaseballCardValuation() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Other sports cards</h3>
-            <p className="text-sm text-muted-foreground">Same rules apply: <strong>basketball</strong> (Jordan rookie = $$$), <strong>football</strong>, <strong>hockey</strong>. <strong>Pokemon</strong> + <strong>Magic the Gathering</strong> exploded in value (1999 Pokemon Charizard = $400K). Check ALL old card collections before donating.</p>
+            <p className="text-base text-muted-foreground">Same rules apply: <strong>basketball</strong> (Jordan rookie = $$$), <strong>football</strong>, <strong>hockey</strong>. <strong>Pokemon</strong> + <strong>Magic the Gathering</strong> exploded in value (1999 Pokemon Charizard = $400K). Check ALL old card collections before donating.</p>
           </CardContent>
         </Card>
       </main>

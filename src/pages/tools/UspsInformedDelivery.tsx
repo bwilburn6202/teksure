@@ -20,15 +20,15 @@ export default function UspsInformedDelivery() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What it is</h2>
-            <p className="text-sm mb-2">A free USPS service. Each weekday morning you get an email showing photos of the letters arriving that day, plus tracking for packages.</p>
-            <p className="text-sm"><strong>Why it matters:</strong> If a thief steals your mail (Medicare cards, Social Security letters, tax forms, checks), you'll know within hours instead of weeks.</p>
+            <p className="text-base mb-2">A free USPS service. Each weekday morning you get an email showing photos of the letters arriving that day, plus tracking for packages.</p>
+            <p className="text-base"><strong>Why it matters:</strong> If a thief steals your mail (Medicare cards, Social Security letters, tax forms, checks), you'll know within hours instead of weeks.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you'll need</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Your home address (must be a residential address USPS delivers to).</li>
               <li>An email address you check daily.</li>
               <li>About 10 minutes — including a quick identity check.</li>
@@ -40,7 +40,7 @@ export default function UspsInformedDelivery() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step-by-step setup</h2>
-            <ol className="list-decimal pl-5 space-y-3 text-sm">
+            <ol className="list-decimal pl-5 space-y-3 text-base">
               <li>Go to <a href="https://informeddelivery.usps.com" target="_blank" rel="noopener noreferrer" className="text-primary underline">informeddelivery.usps.com</a>.</li>
               <li>Click the big "Sign Up For Free" button.</li>
               <li>Type your address. If your address is eligible, you'll see a green checkmark.</li>
@@ -59,7 +59,7 @@ export default function UspsInformedDelivery() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After it's set up</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Each weekday around 9 AM, you'll get an email with photos of the letters coming.</li>
               <li>If you see something in the email but it doesn't show up in your box — that's a red flag. Report it.</li>
               <li>You can also see package tracking, request delivery instructions, and forward mail.</li>
@@ -68,13 +68,13 @@ export default function UspsInformedDelivery() {
           </CardContent>
         </Card>
 
-        <Card className="mb-6 bg-green-50 border-green-300 dark:bg-green-950/20 dark:border-green-800">
+        <Card className="mb-6 bg-success border-success-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <ShieldCheck className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
+              <ShieldCheck className="w-6 h-6 text-success-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Bonus: identity-theft protection</h3>
-                <p className="text-sm text-muted-foreground">Sign up <strong>even if you don\'t plan to look at the photos</strong>. The reason: scammers sometimes sign up for Informed Delivery using your address, then watch your mail to commit fraud. Once YOU\'ve claimed your address, they can\'t.</p>
+                <p className="text-base text-muted-foreground">Sign up <strong>even if you don\'t plan to look at the photos</strong>. The reason: scammers sometimes sign up for Informed Delivery using your address, then watch your mail to commit fraud. Once YOU\'ve claimed your address, they can\'t.</p>
               </div>
             </div>
           </CardContent>

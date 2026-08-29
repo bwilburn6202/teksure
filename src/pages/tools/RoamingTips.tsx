@@ -16,11 +16,11 @@ export default function RoamingTips() {
           <p className="text-lg text-muted-foreground">Don&apos;t come home to a $1,200 bill.</p>
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First — turn OFF roaming</h2>
-            <p className="text-sm">Before flying:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Before flying:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>iPhone — Settings → Cellular → Cellular Data Options → "Data Roaming" OFF.</li>
               <li>Android — Settings → Mobile Network → "Data Roaming" OFF.</li>
               <li>This blocks $5-10/MB charges.</li>
@@ -31,7 +31,7 @@ export default function RoamingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best options abroad</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>eSIM (Airalo, Holafly, GigSky)</strong> — buy data plan in app for the country you visit. $5-30/week. Best.</li>
               <li><strong>T-Mobile Magenta</strong> — free 5GB international + free texting in 215+ countries built in. Senior favorite.</li>
               <li><strong>Verizon TravelPass</strong> — $10/day. Use your normal plan abroad.</li>
@@ -45,7 +45,7 @@ export default function RoamingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">eSIM setup (best for most)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Download Airalo or Holafly app.</li>
               <li>Pick country / region.</li>
               <li>Pick data plan (1-30 days, 1-20 GB).</li>
@@ -61,7 +61,7 @@ export default function RoamingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free travel tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Google Maps offline maps BEFORE leaving (in the app).</li>
               <li>Pre-download Netflix shows over hotel wifi for the plane.</li>
               <li>WhatsApp + iMessage work over wifi — free.</li>
@@ -74,14 +74,14 @@ export default function RoamingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cruise ship roaming WARNING</h2>
-            <p className="text-sm">Cruise ships use SATELLITE — unbelievably expensive. $5-15/MB. <strong>Always Airplane Mode at sea.</strong> Only connect to ship&apos;s wifi. Or skip internet entirely (digital detox).</p>
+            <p className="text-base">Cruise ships use SATELLITE — unbelievably expensive. $5-15/MB. <strong>Always Airplane Mode at sea.</strong> Only connect to ship&apos;s wifi. Or skip internet entirely (digital detox).</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Texts vs iMessage</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re iPhone-to-iPhone, iMessage uses wifi/data — FREE internationally. Green-bubble (regular SMS) costs roaming. Tell family to use iMessage / WhatsApp / FaceTime while you&apos;re away — keeps you connected free.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re iPhone-to-iPhone, iMessage uses wifi/data — FREE internationally. Green-bubble (regular SMS) costs roaming. Tell family to use iMessage / WhatsApp / FaceTime while you&apos;re away — keeps you connected free.</p>
           </CardContent>
         </Card>
       </main>

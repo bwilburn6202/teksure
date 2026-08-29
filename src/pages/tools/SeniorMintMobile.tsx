@@ -22,7 +22,7 @@ export default function SeniorMintMobile() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bring your phone</h2><p>Works with most iPhones, Samsung, Google Pixel.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free trial</h2><p>7 days free. Try before you buy.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Save $50/month</h2><p>Average senior saves $600/year switching from major carrier.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Buy 12 months upfront. Lock in $15/month forever.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Buy 12 months upfront. Lock in $15/month forever.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

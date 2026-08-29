@@ -27,7 +27,7 @@ export default function SmokeCoDetectorMaintenance() {
         <Card className="mb-4 border-destructive">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Old detectors fail SILENTLY</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Smoke detectors expire after 10 years — sensor degrades.</li>
               <li>CO detectors expire after 5-7 years (depends on model).</li>
               <li>Many old detectors LOOK fine but won\'t actually alarm in a fire.</li>
@@ -40,7 +40,7 @@ export default function SmokeCoDetectorMaintenance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to install</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>One smoke detector inside each bedroom.</li>
               <li>One outside every sleeping area.</li>
               <li>One on every floor (basement included).</li>
@@ -57,10 +57,10 @@ export default function SmokeCoDetectorMaintenance() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -69,7 +69,7 @@ export default function SmokeCoDetectorMaintenance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Monthly test (1 minute)</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Press the TEST button on each detector.</li>
               <li>Should alarm immediately.</li>
               <li>If quiet/weak — battery dying. Replace battery (or whole detector if 10-year sealed).</li>
@@ -80,7 +80,7 @@ export default function SmokeCoDetectorMaintenance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For seniors who can\'t reach high</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Local fire department often INSTALLS detectors free for seniors. Call non-emergency line.</li>
               <li>Red Cross "Sound the Alarm" program — free smoke detectors + install. soundthealarm.org.</li>
               <li>Reach extender pole ($30) for testing.</li>
@@ -91,7 +91,7 @@ export default function SmokeCoDetectorMaintenance() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Fire extinguisher too</h3>
-            <p className="text-sm text-muted-foreground">One ABC-rated 5-pound fire extinguisher in kitchen, garage, and bedroom. ~$30 each. Replace or recharge every 5-12 years (check tag). Most kitchen fires are STOVE fires — extinguisher near the stove (but not directly above) saves homes.</p>
+            <p className="text-base text-muted-foreground">One ABC-rated 5-pound fire extinguisher in kitchen, garage, and bedroom. ~$30 each. Replace or recharge every 5-12 years (check tag). Most kitchen fires are STOVE fires — extinguisher near the stove (but not directly above) saves homes.</p>
           </CardContent>
         </Card>
       </main>

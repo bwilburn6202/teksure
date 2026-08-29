@@ -22,7 +22,7 @@ export default function SeniorSkypeBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Microsoft replacing</h2><p>Skype getting phased out. Microsoft pushing Teams instead.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Better alternatives now</h2><p>WhatsApp, FaceTime, or Google Meet. Most family already on these.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">If you have credit</h2><p>Use it up. Credits don&apos;t transfer to Teams.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: For international family, switch to WhatsApp now. Free and growing.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: For international family, switch to WhatsApp now. Free and growing.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

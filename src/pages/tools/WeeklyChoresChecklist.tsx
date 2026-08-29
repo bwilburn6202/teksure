@@ -71,7 +71,7 @@ export default function WeeklyChoresChecklist() {
   const doneCount = chores.filter(c => c.done).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Weekly Chores Checklist | TekSure"
         description="A simple weekly chore rotation. Start with 14 ready-made tasks or build your own. Check off as you go, reset each Sunday."
@@ -80,10 +80,10 @@ export default function WeeklyChoresChecklist() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <CheckCircle2 className="h-7 w-7 text-emerald-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Weekly Chores Checklist</h1>
+            <CheckCircle2 className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Weekly Chores Checklist</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Spread household tasks across the week so no single day feels overwhelming. Check things off as you go.
           </p>
         </div>
@@ -91,7 +91,7 @@ export default function WeeklyChoresChecklist() {
         {chores.length === 0 && !seeded && (
           <Card className="mb-4 print:hidden">
             <CardContent className="py-6 text-center">
-              <p className="text-gray-700 mb-3">Start with a ready-made weekly rotation, or build your own from scratch.</p>
+              <p className="text-foreground mb-3">Start with a ready-made weekly rotation, or build your own from scratch.</p>
               <Button onClick={seedDefaults} size="lg">Use Starter Rotation (14 tasks)</Button>
             </CardContent>
           </Card>
@@ -102,8 +102,8 @@ export default function WeeklyChoresChecklist() {
           <Card className="mb-4">
             <CardContent className="py-3 px-4 flex items-center justify-between gap-3">
               <div>
-                <p className="text-xs text-gray-500">Done this week</p>
-                <p className="text-2xl font-bold text-emerald-700">{doneCount} / {total}</p>
+                <p className="text-sm text-muted-foreground">Done this week</p>
+                <p className="text-2xl font-bold text-success-foreground">{doneCount} / {total}</p>
               </div>
               <Button variant="outline" onClick={resetWeek} className="gap-2 print:hidden">
                 <RotateCcw className="h-4 w-4" />
@@ -117,13 +117,13 @@ export default function WeeklyChoresChecklist() {
         <Card className="mb-6 print:hidden">
           <CardHeader className="pb-2">
             <CardTitle className="text-lg flex items-center gap-2">
-              <Plus className="h-5 w-5 text-emerald-600" />
+              <Plus className="h-5 w-5 text-success-foreground" />
               Add a Chore
             </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="flex flex-col sm:flex-row gap-2">
-              <select value={form.day} onChange={e => setForm(f => ({ ...f, day: e.target.value as Day }))} className="border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <select value={form.day} onChange={e => setForm(f => ({ ...f, day: e.target.value as Day }))} className="border border-border rounded-md px-3 py-2 text-base bg-card">
                 {DAYS.map(d => <option key={d}>{d}</option>)}
               </select>
               <Input placeholder="e.g. Water front yard" value={form.task} onChange={e => setForm(f => ({ ...f, task: e.target.value }))} onKeyDown={e => { if (e.key === "Enter") addChore(); }} className="flex-1" />
@@ -149,8 +149,8 @@ export default function WeeklyChoresChecklist() {
             const dayDone = items.filter(c => c.done).length;
             return (
               <Card key={day} className="print:break-inside-avoid">
-                <CardHeader className="pb-2 pt-3 bg-emerald-50">
-                  <CardTitle className="text-base text-emerald-800 flex items-center justify-between">
+                <CardHeader className="pb-2 pt-3 bg-success">
+                  <CardTitle className="text-base text-success-foreground flex items-center justify-between">
                     <span>{day}</span>
                     <Badge variant="secondary" className="text-xs">{dayDone}/{items.length}</Badge>
                   </CardTitle>
@@ -160,10 +160,10 @@ export default function WeeklyChoresChecklist() {
                     {items.map(c => (
                       <div key={c.id} className="flex items-start gap-2 py-1">
                         <button onClick={() => toggle(c.id)} className="mt-0.5 shrink-0" aria-label={c.done ? "Mark incomplete" : "Mark complete"}>
-                          {c.done ? <CheckCircle2 className="h-5 w-5 text-emerald-600" /> : <Circle className="h-5 w-5 text-gray-400" />}
+                          {c.done ? <CheckCircle2 className="h-5 w-5 text-success-foreground" /> : <Circle className="h-5 w-5 text-muted-foreground" />}
                         </button>
-                        <span className={`flex-1 text-sm ${c.done ? "line-through text-gray-400" : "text-gray-800"}`}>{c.task}</span>
-                        <Button variant="ghost" size="icon" onClick={() => remove(c.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                        <span className={`flex-1 text-base ${c.done ? "line-through text-gray-400" : "text-gray-800"}`}>{c.task}</span>
+                        <Button variant="ghost" size="icon" onClick={() => remove(c.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                           <Trash2 className="h-3 w-3" />
                         </Button>
                       </div>
@@ -175,15 +175,15 @@ export default function WeeklyChoresChecklist() {
           })}
         </div>
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               The goal is consistency, not perfection. If you skip a task, no shame — just check it off the next time it comes around.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

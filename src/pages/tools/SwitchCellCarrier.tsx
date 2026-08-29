@@ -19,7 +19,7 @@ export default function SwitchCellCarrier() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Big 3 vs MVNO</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Verizon, ATT, T-Mobile</strong> — $80+/mo.</li>
               <li><strong>MVNOs</strong> — $25-40/mo same network.</li>
               <li>Same coverage.</li>
@@ -33,7 +33,7 @@ export default function SwitchCellCarrier() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best senior carriers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Consumer Cellular</strong> — senior-focused, $20+/mo.</li>
               <li><strong>Mint Mobile</strong> — $15-30/mo, T-Mobile network.</li>
               <li><strong>Visible</strong> — $25/mo unlimited, Verizon.</li>
@@ -47,7 +47,7 @@ export default function SwitchCellCarrier() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: Consumer Cellular</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$20-50/mo.</li>
               <li>AARP discount 5%.</li>
               <li>US-based customer service.</li>
@@ -62,7 +62,7 @@ export default function SwitchCellCarrier() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Switch process</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1. Verify phone unlocked (paid off).</li>
               <li>2. Check coverage at new carrier&apos;s map.</li>
               <li>3. Order new SIM card.</li>
@@ -77,7 +77,7 @@ export default function SwitchCellCarrier() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">eSIM (newer)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Digital SIM — no physical card.</li>
               <li>iPhone 14+ + newer Android.</li>
               <li>Switch carriers from phone.</li>
@@ -91,7 +91,7 @@ export default function SwitchCellCarrier() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid contract gotchas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read termination fees first.</li>
               <li>Check &quot;promotional pricing&quot; expires.</li>
               <li>Hotspot + tethering allowed?</li>
@@ -105,7 +105,7 @@ export default function SwitchCellCarrier() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">First month bonus</h3>
-            <p className="text-sm text-muted-foreground">Many MVNOs offer first month $5 trial. Test coverage in your area. Most port number free. Keep old SIM in drawer 30 days as backup. Tech-savvy family member can help. Senior reps on Consumer Cellular very patient. Worth phone call to plan switch. AARP members extra discount.</p>
+            <p className="text-base text-muted-foreground">Many MVNOs offer first month $5 trial. Test coverage in your area. Most port number free. Keep old SIM in drawer 30 days as backup. Tech-savvy family member can help. Senior reps on Consumer Cellular very patient. Worth phone call to plan switch. AARP members extra discount.</p>
           </CardContent>
         </Card>
       </main>

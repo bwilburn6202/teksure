@@ -22,7 +22,7 @@ export default function SeniorVisionInsurance() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip insurance</h2><p>Buy direct cheaper. Glasses online $100. Eye exam at Costco $80. No insurance needed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Diabetic eye exams</h2><p>Medicare Part B covers annually for diabetics. Don&apos;t skip.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cataract surgery</h2><p>Medicare covers. One-time procedure. Restores sight.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Costco Optical accepts most vision insurance. Big discounts.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Costco Optical accepts most vision insurance. Big discounts.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorBrainGames() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">NYT Games</h2><p>Free crossword Mini, Wordle, Spelling Bee. Daily mental workout.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sudoku</h2><p>Free apps everywhere. Start &ldquo;easy&rdquo; — works memory and logic.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">15 minutes daily</h2><p>Studies show 15 minutes daily, 5 days a week, has measurable effect after 8 weeks.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pair brain games with walking. Both together protect cognition better than either alone.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pair brain games with walking. Both together protect cognition better than either alone.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

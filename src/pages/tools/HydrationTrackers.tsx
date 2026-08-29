@@ -29,19 +29,19 @@ export default function HydrationTrackers() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors dehydrate</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Thirst signal weakens</strong> with age. You don&apos;t feel thirsty when you should.</li>
               <li>Many medications (diuretics) increase fluid loss.</li>
               <li>Many seniors avoid water late to prevent night bathroom trips.</li>
@@ -54,7 +54,7 @@ export default function HydrationTrackers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior daily target</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Aim 6-8 cups (48-64 oz) total fluid/day.</li>
               <li>Coffee, tea, soup, watermelon — all count.</li>
               <li>NOT alcohol — dehydrates.</li>
@@ -67,7 +67,7 @@ export default function HydrationTrackers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy strategies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drink 8 oz first thing in morning.</li>
               <li>One glass at every meal (3 = 24 oz).</li>
               <li>Always carry water bottle — Stanley, Hydro Flask, Yeti.</li>
@@ -82,7 +82,7 @@ export default function HydrationTrackers() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Smart bottle for memory</h3>
-            <p className="text-sm text-muted-foreground">For seniors with memory issues — Hidrate Spark glowing bottle is GREAT. It glows when time to drink. Auto-tracks intake. Family can monitor remotely. $50-90 well spent if dehydration is repeating issue.</p>
+            <p className="text-base text-muted-foreground">For seniors with memory issues — Hidrate Spark glowing bottle is GREAT. It glows when time to drink. Auto-tracks intake. Family can monitor remotely. $50-90 well spent if dehydration is repeating issue.</p>
           </CardContent>
         </Card>
       </main>

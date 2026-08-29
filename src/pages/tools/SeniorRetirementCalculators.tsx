@@ -22,7 +22,7 @@ export default function SeniorRetirementCalculators() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">FIRECalc</h2><p>FREE. firecalc.com. Tests against 100+ years of historical market data.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">4% rule basics</h2><p>Withdraw 4% of nest egg first year. Adjust for inflation. Most plans last 30+ years.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Get a fiduciary</h2><p>Look for fee-only fiduciary advisors. They legally must work in your interest.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Run calculators yearly. Adjust spending if numbers shift.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Run calculators yearly. Adjust spending if numbers shift.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

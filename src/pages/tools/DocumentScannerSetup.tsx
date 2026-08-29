@@ -139,7 +139,7 @@ export default function DocumentScannerSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-slate-500/10 rounded-full">
-                <Scan className="h-8 w-8 text-slate-700 dark:text-slate-300" />
+                <Scan className="h-8 w-8 text-foreground " />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Document Scanner Setup</h1>
@@ -154,7 +154,7 @@ export default function DocumentScannerSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your phone</p>
+              <p className="text-base font-semibold mb-3">Pick your phone</p>
               <div className="flex gap-2">
                 {(['iphone', 'android'] as Phone[]).map(p => (
                   <Button key={p} variant={phone === p ? 'default' : 'outline'} onClick={() => setPhone(p)}>
@@ -177,7 +177,7 @@ export default function DocumentScannerSetup() {
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Setup</p>
                   <ol className="space-y-1.5 mb-3">
                     {t.setup.map((s, i) => (
-                      <li key={i} className="flex gap-2 text-sm">
+                      <li key={i} className="flex gap-2 text-base">
                         <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                         <span>{s}</span>
                       </li>
@@ -187,7 +187,7 @@ export default function DocumentScannerSetup() {
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Features</p>
                   <ul className="space-y-1">
                     {t.features.map((f, i) => (
-                      <li key={i} className="text-xs flex gap-2"><span className="text-primary">•</span><span>{f}</span></li>
+                      <li key={i} className="text-sm flex gap-2"><span className="text-primary">•</span><span>{f}</span></li>
                     ))}
                   </ul>
                 </CardContent>
@@ -200,8 +200,8 @@ export default function DocumentScannerSetup() {
             {USE_CASES.map(u => (
               <Card key={u.title} className="border-border">
                 <CardContent className="p-4">
-                  <p className="font-medium text-sm">{u.title}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{u.detail}</p>
+                  <p className="font-medium text-base">{u.title}</p>
+                  <p className="text-sm text-muted-foreground mt-1">{u.detail}</p>
                 </CardContent>
               </Card>
             ))}
@@ -209,8 +209,8 @@ export default function DocumentScannerSetup() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Pro tips for sharper scans</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Pro tips for sharper scans</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Bright but indirect light. A window with sheer curtain works best.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Solid contrasting surface — dark wood under white paper, or vice versa. Helps edge detection.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Hold the phone parallel — keep the document flat, the camera flat above it.</span></li>
@@ -224,20 +224,20 @@ export default function DocumentScannerSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/photo-library-tips" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Photo Library Tips</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Find scans later by searching.</p>
+                <p className="font-medium text-base">Photo Library Tips</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Find scans later by searching.</p>
               </Link>
               <Link to="/tools/backup-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Backup Wizard</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Make sure scans are backed up.</p>
+                <p className="font-medium text-base">Backup Wizard</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Make sure scans are backed up.</p>
               </Link>
               <Link to="/tools/free-tax-filing" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Free Tax Filing</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Upload scanned receipts to tax software.</p>
+                <p className="font-medium text-base">Free Tax Filing</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Upload scanned receipts to tax software.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: scan immediately after receiving anything important. The "I will scan it later" pile becomes a permanent pile.
           </p>
         </div>

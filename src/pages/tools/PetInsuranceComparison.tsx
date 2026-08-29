@@ -19,7 +19,7 @@ export default function PetInsuranceComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Healthy Paws</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One simple plan — easy to understand.</li>
               <li>Unlimited annual benefit.</li>
               <li>90% reimbursement option.</li>
@@ -33,7 +33,7 @@ export default function PetInsuranceComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Embrace Pet Insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Covers some pre-existing conditions if cured.</li>
               <li>Diminishing deductible for healthy pets.</li>
               <li>Wellness add-on available.</li>
@@ -47,7 +47,7 @@ export default function PetInsuranceComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trupanion</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pays vet directly (in some clinics).</li>
               <li>No annual benefit cap.</li>
               <li>90% reimbursement standard.</li>
@@ -61,7 +61,7 @@ export default function PetInsuranceComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">ASPCA Pet Insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Affiliated with the ASPCA.</li>
               <li>Wellness packages available.</li>
               <li>10% multi-pet discount.</li>
@@ -75,7 +75,7 @@ export default function PetInsuranceComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost factors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pet age — older = much higher premiums.</li>
               <li>Breed — purebreds cost more.</li>
               <li>Location — varies by state.</li>
@@ -89,7 +89,7 @@ export default function PetInsuranceComparison() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to skip</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pet over 10-12 years old.</li>
               <li>Pre-existing conditions excluded.</li>
               <li>Premiums often $80-$150+/month senior pet.</li>
@@ -103,7 +103,7 @@ export default function PetInsuranceComparison() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Healthy Paws for new pets</h3>
-            <p className="text-sm text-muted-foreground">If you adopt a young pet (under 5), Healthy Paws is widely considered the best value. Simple plan, unlimited annual coverage, fast claims. For older pets you already own (8+), pet insurance often costs more than it saves due to age-based premiums + pre-existing exclusions. Self-insurance with $50/month savings often better.</p>
+            <p className="text-base text-muted-foreground">If you adopt a young pet (under 5), Healthy Paws is widely considered the best value. Simple plan, unlimited annual coverage, fast claims. For older pets you already own (8+), pet insurance often costs more than it saves due to age-based premiums + pre-existing exclusions. Self-insurance with $50/month savings often better.</p>
           </CardContent>
         </Card>
       </main>

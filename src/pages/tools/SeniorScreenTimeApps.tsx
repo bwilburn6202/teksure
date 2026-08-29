@@ -22,7 +22,7 @@ export default function SeniorScreenTimeApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bedtime mode</h2><p>9 PM-7 AM phone goes grayscale. Less appealing. Better sleep.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Opal</h2><p>$50/year. Strong app blocker. Group apps to block together.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefits</h2><p>Less phone = better sleep, less back pain, more time with family.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Turn off phone notifications. Most aren&apos;t urgent. Calm restored.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Turn off phone notifications. Most aren&apos;t urgent. Calm restored.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

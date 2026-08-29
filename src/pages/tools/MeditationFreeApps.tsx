@@ -30,10 +30,10 @@ export default function MeditationFreeApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function MeditationFreeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lowers blood pressure 5-10 points.</li>
               <li>Reduces anxiety + depression.</li>
               <li>Improves sleep.</li>
@@ -56,7 +56,7 @@ export default function MeditationFreeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start with these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Body scan</strong> — relax muscle group by group. Best for sleep.</li>
               <li><strong>Breathing meditation</strong> — focus on breath. Beginner-friendly.</li>
               <li><strong>Loving-kindness</strong> — wish well to self + others. Best for grief.</li>
@@ -70,7 +70,7 @@ export default function MeditationFreeApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No "right way"</h3>
-            <p className="text-sm text-muted-foreground">If a faith tradition meditation works (Christian centering prayer, Jewish mussar, Sufi practice) — use that. The point is intentional time of stillness. Not a brand. Not an app. The practice matters.</p>
+            <p className="text-base text-muted-foreground">If a faith tradition meditation works (Christian centering prayer, Jewish mussar, Sufi practice) — use that. The point is intentional time of stillness. Not a brand. Not an app. The practice matters.</p>
           </CardContent>
         </Card>
       </main>

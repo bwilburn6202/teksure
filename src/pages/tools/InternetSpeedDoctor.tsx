@@ -494,19 +494,19 @@ export default function InternetSpeedDoctor() {
                         </div>
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 flex-wrap mb-1">
-                            <span className="text-xs font-semibold text-muted-foreground">
+                            <span className="text-sm font-semibold text-muted-foreground">
                               Step {i + 1}
                             </span>
                             <Badge className={`text-xs ${priorityClass}`}>{priorityLabel}</Badge>
                           </div>
                           <h3 className="text-lg font-bold leading-tight mb-1">{fix.title}</h3>
-                          <p className="text-sm text-muted-foreground">{fix.summary}</p>
+                          <p className="text-base text-muted-foreground">{fix.summary}</p>
                         </div>
                       </div>
 
                       <ol className="space-y-2 mb-3 pl-1">
                         {fix.steps.map((s, idx) => (
-                          <li key={idx} className="flex gap-3 text-sm">
+                          <li key={idx} className="flex gap-3 text-base">
                             <span className="shrink-0 inline-flex items-center justify-center h-6 w-6 rounded-full bg-primary/10 text-primary font-semibold text-xs">
                               {idx + 1}
                             </span>
@@ -517,8 +517,8 @@ export default function InternetSpeedDoctor() {
 
                       {fix.tip && (
                         <div className="rounded-lg bg-muted/60 p-3 flex gap-2 mb-2">
-                          <Lightbulb className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
-                          <p className="text-sm">
+                          <Lightbulb className="h-4 w-4 text-warn-foreground shrink-0 mt-0.5" />
+                          <p className="text-base">
                             <span className="font-semibold">Tip: </span>{fix.tip}
                           </p>
                         </div>
@@ -537,14 +537,14 @@ export default function InternetSpeedDoctor() {
               })}
             </div>
 
-            <div className="rounded-xl bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 p-4 mb-4">
+            <div className="rounded-xl bg-success border border-success-foreground/25 p-4 mb-4">
               <div className="flex gap-2 items-start">
-                <CheckCircle2 className="h-5 w-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm font-semibold text-green-800 dark:text-green-300 mb-1">
+                  <p className="text-base font-semibold text-success-foreground mb-1">
                     You've got this.
                   </p>
-                  <p className="text-sm text-green-800/90 dark:text-green-200/90">
+                  <p className="text-base text-green-800/90 dark:text-green-200/90">
                     Most internet problems are fixed by the first or second step above. If you get
                     stuck anywhere, TekSure has a friendly guide who can help — you're not on your own.
                   </p>
@@ -552,14 +552,14 @@ export default function InternetSpeedDoctor() {
               </div>
             </div>
 
-            <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 p-4 mb-6">
+            <div className="rounded-xl bg-warn border border-warn-foreground/25 p-4 mb-6">
               <div className="flex gap-2 items-start">
-                <AlertTriangle className="h-5 w-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm font-semibold text-amber-800 dark:text-amber-300 mb-1">
+                  <p className="text-base font-semibold text-warn-foreground mb-1">
                     Heads up
                   </p>
-                  <p className="text-sm text-amber-800/90 dark:text-amber-200/90">
+                  <p className="text-base text-amber-800/90 dark:text-amber-200/90">
                     Never let a stranger who calls or texts you "fix" your internet by giving them
                     remote access — that's almost always a scam. Only follow the advice above, or
                     call your provider directly using the number on your bill.

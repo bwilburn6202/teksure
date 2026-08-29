@@ -30,10 +30,10 @@ export default function StepCounterCompare() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{d.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{d.cost}</span>
+                  <span className="text-base font-semibold text-primary">{d.cost}</span>
                 </div>
-                <p className="text-sm">{d.best}</p>
-                <p className="text-sm text-muted-foreground">{d.good}</p>
+                <p className="text-base">{d.best}</p>
+                <p className="text-base text-muted-foreground">{d.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function StepCounterCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How many steps?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>The "10,000 steps" rule was a 1960s Japanese marketing campaign — not science.</li>
               <li>Recent research: <strong>4,400 steps/day cuts mortality 41%</strong> (women 70+).</li>
               <li>Sweet spot: 7,000-8,000 steps for full health benefits.</li>
@@ -55,7 +55,7 @@ export default function StepCounterCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy ways to add steps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Park at the FAR end of grocery lot.</li>
               <li>Walk after every meal — 10 min each. 30 min/day.</li>
               <li>Take phone calls walking around the room.</li>
@@ -70,7 +70,7 @@ export default function StepCounterCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Walking communities</h3>
-            <p className="text-sm text-muted-foreground"><strong>Mall walking</strong> — almost every mall has free senior walking program before stores open. Climate-controlled. Free coffee at some malls. Search "[your city] mall walking program". Best free social fitness for 60+.</p>
+            <p className="text-base text-muted-foreground"><strong>Mall walking</strong> — almost every mall has free senior walking program before stores open. Climate-controlled. Free coffee at some malls. Search "[your city] mall walking program". Best free social fitness for 60+.</p>
           </CardContent>
         </Card>
       </main>

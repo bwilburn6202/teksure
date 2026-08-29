@@ -19,7 +19,7 @@ export default function ClassReunionTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find lost classmates</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Classmates.com</strong> — biggest US site. $40/yr Plus.</li>
               <li><strong>Facebook search</strong> — most found here, free.</li>
               <li><strong>LinkedIn</strong> — for career connections.</li>
@@ -33,7 +33,7 @@ export default function ClassReunionTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Planning tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Eventbrite</strong> — sell tickets, manage RSVPs, send updates.</li>
               <li><strong>Facebook Event</strong> — for casual reunions.</li>
               <li><strong>Reunion Planner / Reunion Manager</strong> — purpose-built.</li>
@@ -47,7 +47,7 @@ export default function ClassReunionTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plan 12-18 months ahead.</li>
               <li>Form 4-5 person committee.</li>
               <li>Hotel room block early.</li>
@@ -63,7 +63,7 @@ export default function ClassReunionTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Virtual reunion</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Zoom Meeting — up to 100 free for 40 min.</li>
               <li>Zoom Webinar — for larger groups.</li>
               <li>Pre-recorded video tributes from those who can&apos;t attend.</li>
@@ -76,7 +76,7 @@ export default function ClassReunionTools() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Memory book</h3>
-            <p className="text-sm text-muted-foreground">Compile reunion memory book — Storyworth, Shutterfly, or Google Docs. Each classmate writes 1 page. Photo + bio + favorite memory. Print + bind. Decades-treasured keepsake. Better than just a meal + drinks.</p>
+            <p className="text-base text-muted-foreground">Compile reunion memory book — Storyworth, Shutterfly, or Google Docs. Each classmate writes 1 page. Photo + bio + favorite memory. Print + bind. Decades-treasured keepsake. Better than just a meal + drinks.</p>
           </CardContent>
         </Card>
       </main>

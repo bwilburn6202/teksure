@@ -22,7 +22,7 @@ export default function TollTextScamDecoder() {
               <AlertTriangle className="w-6 h-6 text-destructive shrink-0" />
               <div>
                 <h2 className="font-bold mb-1">Short answer: delete it</h2>
-                <p className="text-sm">The FBI's IC3 has warned millions of Americans about this exact scam. Real toll agencies (E-ZPass, SunPass, FasTrak, TxTag, etc.) <strong>do not text you</strong> about unpaid tolls. They mail you a paper bill.</p>
+                <p className="text-base">The FBI's IC3 has warned millions of Americans about this exact scam. Real toll agencies (E-ZPass, SunPass, FasTrak, TxTag, etc.) <strong>do not text you</strong> about unpaid tolls. They mail you a paper bill.</p>
               </div>
             </div>
           </CardContent>
@@ -31,7 +31,7 @@ export default function TollTextScamDecoder() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to spot it (every red flag at once)</h2>
-            <ul className="space-y-2 text-sm list-disc pl-5">
+            <ul className="space-y-2 text-base list-disc pl-5">
               <li><strong>Small amount</strong> — usually $4 to $15. Just enough that you'd pay to "make it go away".</li>
               <li><strong>Urgent deadline</strong> — "pay by tomorrow or face a $50 late fee."</li>
               <li><strong>Strange link</strong> — usually NOT the real agency's website. Often ends in <code>.top</code>, <code>.xyz</code>, or has the agency name buried in a long address.</li>
@@ -44,7 +44,7 @@ export default function TollTextScamDecoder() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to do</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Don't tap the link.</strong> If you already did and didn't enter card info, you're probably fine.</li>
               <li>If you DID enter your credit card — call the number on the back of your card right now and report it as a scam. Ask for a new card number.</li>
               <li>Forward the text to <strong>7726</strong> (spells SPAM). Your carrier blocks the sender.</li>
@@ -57,8 +57,8 @@ export default function TollTextScamDecoder() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you're worried it might be real</h2>
-            <p className="text-sm mb-2">Don't click anything in the text. Instead:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Don't click anything in the text. Instead:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Type your toll agency's name into Google yourself (E-ZPass, SunPass, etc.).</li>
               <li>Log in to your real account on the official site.</li>
               <li>Or call the number on a paper bill or the back of your transponder.</li>
@@ -72,7 +72,7 @@ export default function TollTextScamDecoder() {
               <Phone className="w-6 h-6 text-muted-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Same scam, different costume</h3>
-                <p className="text-sm text-muted-foreground">"USPS package can't be delivered" texts, "Bank of America fraud alert" texts, and "Your Apple ID has been disabled" texts all use the same playbook. If a text creates urgency, asks you to click a link, and threatens a small fee — it's a scam every time.</p>
+                <p className="text-base text-muted-foreground">"USPS package can't be delivered" texts, "Bank of America fraud alert" texts, and "Your Apple ID has been disabled" texts all use the same playbook. If a text creates urgency, asks you to click a link, and threatens a small fee — it's a scam every time.</p>
               </div>
             </div>
           </CardContent>

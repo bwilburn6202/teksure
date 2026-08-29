@@ -30,10 +30,10 @@ export default function KnittingCommunityApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function KnittingCommunityApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Ravelry alone is worth it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>900,000+ free patterns. Searchable by skill, yarn type, project size.</li>
               <li>"Stash tracker" — log every yarn skein you own.</li>
               <li>"My Notebook" — track every project, pattern, finished item.</li>
@@ -55,7 +55,7 @@ export default function KnittingCommunityApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy-on-eyes tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPad bigger than phone — patterns much easier to read.</li>
               <li>Knit Companion lets you zoom and highlight current row.</li>
               <li>Print PDF patterns at 125-150% on a copier — bigger text.</li>
@@ -68,7 +68,7 @@ export default function KnittingCommunityApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Local + free</h3>
-            <p className="text-sm text-muted-foreground">Many local libraries host weekly "Stitch &amp; Bitch" or knitting-cafe groups — free. Local yarn shops also host. Search "[your town] knitting group" on Facebook or library calendar. Connection often beats apps.</p>
+            <p className="text-base text-muted-foreground">Many local libraries host weekly "Stitch &amp; Bitch" or knitting-cafe groups — free. Local yarn shops also host. Search "[your town] knitting group" on Facebook or library calendar. Connection often beats apps.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,10 +19,10 @@ export default function SeniorVideoMaking() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">iMovie</h2><p>FREE on iPhone/iPad/Mac. Easy senior interface. Themes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">CapCut</h2><p>FREE. Easier than iMovie. Senior-friendly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Splice (GoPro)</h2><p>FREE. Beautiful templates. Drag photos in.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use cases</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Birthday slideshows</li><li>Travel memories</li><li>Family stories</li><li>Tribute videos</li><li>Anniversary videos</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use cases</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Birthday slideshows</li><li>Travel memories</li><li>Family stories</li><li>Tribute videos</li><li>Anniversary videos</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Memories</h2><p>FREE. Apple Photos auto-makes memory videos. No editing needed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Add music</h2><p>iMovie has free Apple music library. Royalty-free.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Apple Memories auto-makes videos. Send to family. Touched.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Apple Memories auto-makes videos. Send to family. Touched.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

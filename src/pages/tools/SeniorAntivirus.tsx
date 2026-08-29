@@ -22,7 +22,7 @@ export default function SeniorAntivirus() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mac antivirus</h2><p>Macs have built-in protection. Most seniors don&apos;t need extra.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out</h2><p>Pop-ups saying &ldquo;Virus detected!&rdquo; are SCAMS. Real antivirus runs quietly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip these</h2><p>McAfee, AVG, Avast — too pushy. Many ads + upselling.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Click careful = no virus. Software helps but behavior matters more.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Click careful = no virus. Software helps but behavior matters more.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function AlexaMedReminders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup voice reminder</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Alexa, set medication reminder for 8am every day.&quot;</li>
               <li>Alexa repeats announcement at time.</li>
               <li>&quot;Time to take your morning medication.&quot;</li>
@@ -33,7 +33,7 @@ export default function AlexaMedReminders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Care Hub for family</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free family caregiver tool.</li>
               <li>Family member sees activity (no exact details).</li>
               <li>Notification if no activity for hours.</li>
@@ -47,7 +47,7 @@ export default function AlexaMedReminders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alexa Together ($20/mo)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Caregiver paid version of Care Hub.</li>
               <li>Activity tracking + alerts.</li>
               <li>24/7 emergency hotline.</li>
@@ -61,7 +61,7 @@ export default function AlexaMedReminders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Med-specific apps work too</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Medisafe</strong> — free, top-rated.</li>
               <li><strong>MyTherapy</strong> — free.</li>
               <li><strong>Pill Reminder</strong>.</li>
@@ -75,7 +75,7 @@ export default function AlexaMedReminders() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you take many meds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pill organizer (weekly) — $5-30.</li>
               <li>Set Sunday night to fill.</li>
               <li>Voice reminder + visual = layers.</li>
@@ -89,7 +89,7 @@ export default function AlexaMedReminders() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Catch missed doses</h3>
-            <p className="text-sm text-muted-foreground">Smart pill bottles light up if missed. Hero auto-dispenses. PillPack pre-sorts by time. AmazonPharmacy + PillPack = monthly delivery. Many seniors use combinations: Alexa reminder + pill organizer + PillPack delivery = comprehensive.</p>
+            <p className="text-base text-muted-foreground">Smart pill bottles light up if missed. Hero auto-dispenses. PillPack pre-sorts by time. AmazonPharmacy + PillPack = monthly delivery. Many seniors use combinations: Alexa reminder + pill organizer + PillPack delivery = comprehensive.</p>
           </CardContent>
         </Card>
       </main>

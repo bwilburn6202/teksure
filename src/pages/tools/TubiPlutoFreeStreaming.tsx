@@ -19,7 +19,7 @@ export default function TubiPlutoFreeStreaming() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tubi — completely free</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>100% free — no subscription.</li>
               <li>No credit card required.</li>
               <li>20,000+ movies and TV shows.</li>
@@ -33,7 +33,7 @@ export default function TubiPlutoFreeStreaming() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pluto TV — also free</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>100% free — owned by Paramount.</li>
               <li>Live TV channels — like cable but free.</li>
               <li>250+ live channels in categories.</li>
@@ -47,7 +47,7 @@ export default function TubiPlutoFreeStreaming() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best Tubi content for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Classic Western movies — John Wayne era.</li>
               <li>Older action films — Clint Eastwood.</li>
               <li>Family dramas from the 1980s–2000s.</li>
@@ -61,7 +61,7 @@ export default function TubiPlutoFreeStreaming() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best Pluto TV channels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pluto TV News — 24/7 headlines.</li>
               <li>Classic TV — I Love Lucy, Andy Griffith.</li>
               <li>Westerns channel — all day.</li>
@@ -75,7 +75,7 @@ export default function TubiPlutoFreeStreaming() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to set up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search &quot;Tubi&quot; or &quot;Pluto TV&quot; on your device.</li>
               <li>Roku, Fire Stick, Apple TV, Samsung smart TV.</li>
               <li>Download app — no payment info needed.</li>
@@ -89,7 +89,7 @@ export default function TubiPlutoFreeStreaming() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Ads — what to expect</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Both supported by commercials like old TV.</li>
               <li>About 4–5 minutes of ads per hour.</li>
               <li>Less ads than regular cable TV.</li>
@@ -103,7 +103,7 @@ export default function TubiPlutoFreeStreaming() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start here if on a budget</h3>
-            <p className="text-sm text-muted-foreground">If streaming costs feel like too much, start with Tubi and Pluto TV. They&apos;re completely free — no credit card, no trial that forgets to cancel. Pluto TV is especially good for seniors who miss flipping through TV channels. Just pick a channel and watch, exactly like old cable. Great for background noise or casual viewing too.</p>
+            <p className="text-base text-muted-foreground">If streaming costs feel like too much, start with Tubi and Pluto TV. They&apos;re completely free — no credit card, no trial that forgets to cancel. Pluto TV is especially good for seniors who miss flipping through TV channels. Just pick a channel and watch, exactly like old cable. Great for background noise or casual viewing too.</p>
           </CardContent>
         </Card>
       </main>

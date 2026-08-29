@@ -19,7 +19,7 @@ export default function IphoneMagnifierTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Built-in magnifying glass on every iPhone.</li>
               <li>Read tiny menus, labels, prescriptions.</li>
               <li>Improve contrast for low-vision needs.</li>
@@ -33,7 +33,7 @@ export default function IphoneMagnifierTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to find it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Swipe down on home screen — search &quot;Magnifier.&quot;</li>
               <li>Or add to Control Center: Settings → Control Center → Magnifier.</li>
               <li>Now swipe down from top right — tap magnifier icon.</li>
@@ -47,7 +47,7 @@ export default function IphoneMagnifierTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Using it well</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Slide bar to zoom in.</li>
               <li>Tap lightning icon for flashlight.</li>
               <li>Tap freeze button to stop image moving.</li>
@@ -61,7 +61,7 @@ export default function IphoneMagnifierTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best uses for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read pill bottle labels.</li>
               <li>Restaurant menus in dim light.</li>
               <li>Tiny serial numbers on devices.</li>
@@ -75,7 +75,7 @@ export default function IphoneMagnifierTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Detection Mode (advanced)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iOS 16+ feature in Magnifier app.</li>
               <li>People Detection — alerts when someone near.</li>
               <li>Door Detection — finds doors + reads signs.</li>
@@ -89,7 +89,7 @@ export default function IphoneMagnifierTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android equivalent</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Accessibility → Magnification.</li>
               <li>Triple-tap to zoom anywhere.</li>
               <li>Or download &quot;Magnifying Glass&quot; app from Play Store.</li>
@@ -103,7 +103,7 @@ export default function IphoneMagnifierTutorial() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Add to Control Center today</h3>
-            <p className="text-sm text-muted-foreground">If you have an iPhone, take 30 seconds right now: Settings → Control Center → tap green plus next to &quot;Magnifier.&quot; Now any time you need to read tiny print, swipe down from top right and tap the magnifying glass icon. This single setup eliminates the need for separate magnifying glasses around the house. Many seniors don&apos;t know this feature exists.</p>
+            <p className="text-base text-muted-foreground">If you have an iPhone, take 30 seconds right now: Settings → Control Center → tap green plus next to &quot;Magnifier.&quot; Now any time you need to read tiny print, swipe down from top right and tap the magnifying glass icon. This single setup eliminates the need for separate magnifying glasses around the house. Many seniors don&apos;t know this feature exists.</p>
           </CardContent>
         </Card>
       </main>

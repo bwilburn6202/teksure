@@ -30,10 +30,10 @@ export default function RobotMopGuide() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function RobotMopGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to look for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Self-emptying base</strong> — go weeks without thinking.</li>
               <li><strong>Self-cleaning mop</strong> — don&apos;t hand-wash dirty pads.</li>
               <li><strong>Auto-fill water</strong> — top tier, premium.</li>
@@ -56,7 +56,7 @@ export default function RobotMopGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick up small rugs, cords, slippers before run.</li>
               <li>&quot;No-go zones&quot; in app for areas to skip.</li>
               <li>Charge daily — battery weakens over years.</li>
@@ -70,7 +70,7 @@ export default function RobotMopGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When robot mop NOT enough</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heavy spills + sticky messes.</li>
               <li>Deep cleaning (2-4x/year still needed).</li>
               <li>Edges + corners (won&apos;t reach all).</li>
@@ -84,7 +84,7 @@ export default function RobotMopGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Refurbished saves</h3>
-            <p className="text-sm text-muted-foreground">Refurbished iRobot at iRobot.com — 40% off, full warranty. Costco often has best new prices. Black Friday + Prime Day deals 30%+ off. Robot mops are often 50% cheaper than new in fall sales.</p>
+            <p className="text-base text-muted-foreground">Refurbished iRobot at iRobot.com — 40% off, full warranty. Costco often has best new prices. Black Friday + Prime Day deals 30%+ off. Robot mops are often 50% cheaper than new in fall sales.</p>
           </CardContent>
         </Card>
       </main>

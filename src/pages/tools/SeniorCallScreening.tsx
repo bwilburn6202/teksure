@@ -22,7 +22,7 @@ export default function SeniorCallScreening() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hiya app</h2><p>FREE. Identifies callers. Blocks known spam.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Carrier blockers</h2><p>FREE T-Mobile Scam Shield, AT&amp;T ActiveArmor, Verizon Call Filter.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Stop scam calls</h2><p>90% reduction with screening tools. Less stress.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Silence Unknown is best feature. Real callers leave voicemail. Scammers don&apos;t.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Silence Unknown is best feature. Real callers leave voicemail. Scammers don&apos;t.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

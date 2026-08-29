@@ -19,7 +19,7 @@ export default function AppleTVPlusGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Apple TV+</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$10/mo. No ads.</li>
               <li>Smaller selection but high quality.</li>
               <li>Award-winning original content.</li>
@@ -34,7 +34,7 @@ export default function AppleTVPlusGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorite shows</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ted Lasso</strong> — feel-good comedy.</li>
               <li><strong>The Morning Show</strong> — drama with Reese Witherspoon.</li>
               <li><strong>Slow Horses</strong> — British spy series.</li>
@@ -50,7 +50,7 @@ export default function AppleTVPlusGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple One bundle</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Individual</strong> $20/mo — Apple TV+, Music, iCloud 50GB, Arcade.</li>
               <li><strong>Family</strong> $26/mo — same shared with 5.</li>
               <li><strong>Premier</strong> $38/mo — adds 2TB iCloud + News+ + Fitness+.</li>
@@ -63,7 +63,7 @@ export default function AppleTVPlusGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple TV box vs app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple TV 4K box</strong> — $130. Premium streaming.</li>
               <li>App on Smart TV, Roku, Fire TV — same content cheaper.</li>
               <li>App on iPad, iPhone too.</li>
@@ -76,7 +76,7 @@ export default function AppleTVPlusGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free trial first.</li>
               <li>Cancel anytime.</li>
               <li>Subscribe → binge → cancel pattern.</li>
@@ -90,7 +90,7 @@ export default function AppleTVPlusGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth it test</h3>
-            <p className="text-sm text-muted-foreground">Watch Ted Lasso (3 seasons). If loved it = $30 well spent ($10 x 3 mo). Cancel after. Coming back when new shows announced. Most seniors do this rather than perpetual subscription. Apple TV+ best as occasional streamer.</p>
+            <p className="text-base text-muted-foreground">Watch Ted Lasso (3 seasons). If loved it = $30 well spent ($10 x 3 mo). Cancel after. Coming back when new shows announced. Most seniors do this rather than perpetual subscription. Apple TV+ best as occasional streamer.</p>
           </CardContent>
         </Card>
       </main>

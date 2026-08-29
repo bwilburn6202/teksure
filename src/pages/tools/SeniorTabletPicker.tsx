@@ -27,7 +27,7 @@ export default function SeniorTabletPicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Most important — match the tablet to the person</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>If they have an iPhone, an iPad will feel familiar. (Top recommendation for most.)</li>
               <li>If they want cheap and just need email/news/video calls, Fire HD 10 works.</li>
               <li>If they\'ll be using it for grandkid video calls only and you worry about scams or confusion, GrandPad is purpose-built.</li>
@@ -41,10 +41,10 @@ export default function SeniorTabletPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-2">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm mb-2"><strong>Best for:</strong> {p.best}</p>
-                <p className="text-sm text-muted-foreground"><strong>Watch out:</strong> {p.cons}</p>
+                <p className="text-base mb-2"><strong>Best for:</strong> {p.best}</p>
+                <p className="text-base text-muted-foreground"><strong>Watch out:</strong> {p.cons}</p>
               </CardContent>
             </Card>
           ))}
@@ -53,7 +53,7 @@ export default function SeniorTabletPicker() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What size to pick</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>10-11 inch (standard):</strong> Best for reading, video calls, news. Comfortable in two hands.</li>
               <li><strong>8-inch (Mini):</strong> Easier to hold one-handed. Good for travel.</li>
               <li><strong>12-inch+ (iPad Pro):</strong> Overkill for most seniors. Heavy.</li>
@@ -64,7 +64,7 @@ export default function SeniorTabletPicker() {
         <Card className="mt-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Add-ons worth buying</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Folio case with stand</strong> — props the tablet up for video calls.</li>
               <li><strong>Bluetooth keyboard</strong> ($30) — for typing emails. Game-changer.</li>
               <li><strong>Apple Pencil or stylus</strong> — only if they like to draw or write notes.</li>
@@ -76,7 +76,7 @@ export default function SeniorTabletPicker() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don't pay full price</h3>
-            <p className="text-sm text-muted-foreground">Apple sells "Certified Refurbished" iPads at apple.com — same warranty, $50-$150 cheaper. Amazon Renewed offers iPads and Fire tablets cheap. Black Friday is the best time of year for tablets.</p>
+            <p className="text-base text-muted-foreground">Apple sells "Certified Refurbished" iPads at apple.com — same warranty, $50-$150 cheaper. Amazon Renewed offers iPads and Fire tablets cheap. Black Friday is the best time of year for tablets.</p>
           </CardContent>
         </Card>
       </main>

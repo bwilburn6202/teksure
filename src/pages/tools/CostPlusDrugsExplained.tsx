@@ -19,7 +19,7 @@ export default function CostPlusDrugsExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Cost Plus Drugs?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Online pharmacy started by Mark Cuban.</li>
               <li>Charges manufacturer cost + 15% + small fee.</li>
               <li>Transparent pricing — no insurance games.</li>
@@ -33,7 +33,7 @@ export default function CostPlusDrugsExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How much you save</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Imatinib (cancer drug): $9 vs $9,000 retail.</li>
               <li>Atorvastatin (cholesterol): $4/month.</li>
               <li>Metformin (diabetes): $4/month.</li>
@@ -47,7 +47,7 @@ export default function CostPlusDrugsExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to CostPlusDrugs.com.</li>
               <li>Search your medication name.</li>
               <li>See exact price + 15% markup shown.</li>
@@ -61,7 +61,7 @@ export default function CostPlusDrugsExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance + Medicare</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most insurance NOT accepted (cash only).</li>
               <li>Medicare doesn&apos;t apply.</li>
               <li>But: cash price often cheaper than insurance copay.</li>
@@ -75,7 +75,7 @@ export default function CostPlusDrugsExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for these situations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No insurance or high deductible plans.</li>
               <li>Maintenance meds for diabetes, heart, cholesterol.</li>
               <li>Generic drugs (most major drugs available).</li>
@@ -89,7 +89,7 @@ export default function CostPlusDrugsExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Limitations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No controlled substances yet.</li>
               <li>Not all medications available.</li>
               <li>Mail-order only — slower than local pharmacy.</li>
@@ -103,7 +103,7 @@ export default function CostPlusDrugsExplained() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Check your meds today</h3>
-            <p className="text-sm text-muted-foreground">Spend 5 minutes at CostPlusDrugs.com checking your medication list. Compare each drug price to what you pay now. If you&apos;re paying $40+/month for any maintenance medication, Cost Plus is likely 50–90% cheaper. The math is often life-changing for seniors on fixed incomes. Many people switching saved $1,000+/year on prescriptions.</p>
+            <p className="text-base text-muted-foreground">Spend 5 minutes at CostPlusDrugs.com checking your medication list. Compare each drug price to what you pay now. If you&apos;re paying $40+/month for any maintenance medication, Cost Plus is likely 50–90% cheaper. The math is often life-changing for seniors on fixed incomes. Many people switching saved $1,000+/year on prescriptions.</p>
           </CardContent>
         </Card>
       </main>

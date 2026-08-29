@@ -30,10 +30,10 @@ export default function OnlinePetPharmacies() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function OnlinePetPharmacies() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to switch from vet pharmacy</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick online pharmacy (Chewy easiest).</li>
               <li>Sign up. Add pet info.</li>
               <li>Order — they request prescription from your vet directly. Or you can ask vet for paper script.</li>
@@ -56,7 +56,7 @@ export default function OnlinePetPharmacies() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common drugs cheaper online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apoquel</strong> (allergies) — vet $5/pill, online $3.</li>
               <li><strong>Trifexis</strong> (heartworm + flea) — vet $25/dose, online $18.</li>
               <li><strong>Heartgard</strong> — vet $12/dose, online $7.</li>
@@ -66,17 +66,17 @@ export default function OnlinePetPharmacies() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t skimp on flea/tick/heartworm</h2>
-            <p className="text-sm">Cheap online "flea/tick" meds from non-veterinary sources can be counterfeit or under-dosed. Buy from US-licensed pharmacies (Chewy, 1800PetMeds, vet) only. Avoid Amazon/eBay third-party sellers for pet meds.</p>
+            <p className="text-base">Cheap online "flea/tick" meds from non-veterinary sources can be counterfeit or under-dosed. Buy from US-licensed pharmacies (Chewy, 1800PetMeds, vet) only. Avoid Amazon/eBay third-party sellers for pet meds.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Costco Pet Pharmacy hack</h3>
-            <p className="text-sm text-muted-foreground">If your pet is on a drug that has a human equivalent (like Prozac/fluoxetine, prednisone, antibiotics) — Costco pharmacy fills WITH a vet&apos;s prescription, often at $4-10 instead of $40+. Hand vet&apos;s script to Costco pharmacist. Don&apos;t need Costco membership for pharmacy.</p>
+            <p className="text-base text-muted-foreground">If your pet is on a drug that has a human equivalent (like Prozac/fluoxetine, prednisone, antibiotics) — Costco pharmacy fills WITH a vet&apos;s prescription, often at $4-10 instead of $40+. Hand vet&apos;s script to Costco pharmacist. Don&apos;t need Costco membership for pharmacy.</p>
           </CardContent>
         </Card>
       </main>

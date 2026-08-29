@@ -884,7 +884,7 @@ export default function RefundAndReturnHelper() {
           <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 text-white shadow-lg mb-5">
             <div className="relative">
               <DollarSign className="h-12 w-12" aria-hidden="true" />
-              <RotateCcw className="h-5 w-5 absolute -bottom-1 -right-1 bg-white text-emerald-700 rounded-full p-0.5 border-2 border-white" aria-hidden="true" />
+              <RotateCcw className="h-5 w-5 absolute -bottom-1 -right-1 bg-card text-success-foreground rounded-full p-0.5 border-2 border-white" aria-hidden="true" />
             </div>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-3">
@@ -902,9 +902,9 @@ export default function RefundAndReturnHelper() {
 
         {/* ── Encouragement banner ── */}
         {!selected && (
-          <Alert className="mb-8 border-2 border-emerald-300 bg-emerald-50 dark:bg-emerald-950/30 dark:border-emerald-800">
-            <Lightbulb className="h-5 w-5 text-emerald-700 dark:text-emerald-400" />
-            <AlertTitle className="text-lg font-bold text-emerald-900 dark:text-emerald-200">
+          <Alert className="mb-8 border-2 border-success-foreground/25 bg-success ">
+            <Lightbulb className="h-5 w-5 text-success-foreground " />
+            <AlertTitle className="text-lg font-bold text-success-foreground ">
               You have more options than companies want you to think.
             </AlertTitle>
             <AlertDescription className="text-base text-emerald-900/90 dark:text-emerald-100/90 leading-relaxed">
@@ -917,7 +917,7 @@ export default function RefundAndReturnHelper() {
         {!selected && (
           <div>
             <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-              <ListChecks className="h-6 w-6 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+              <ListChecks className="h-6 w-6 text-success-foreground " aria-hidden="true" />
               What happened?
             </h2>
             <div className="grid gap-3 sm:grid-cols-2">
@@ -935,10 +935,10 @@ export default function RefundAndReturnHelper() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <h3 className="text-lg font-bold mb-1 flex items-center gap-2">
-                          <Icon className="h-5 w-5 text-emerald-600 dark:text-emerald-400 shrink-0" aria-hidden="true" />
+                          <Icon className="h-5 w-5 text-success-foreground shrink-0" aria-hidden="true" />
                           {s.title}
                         </h3>
-                        <p className="text-sm text-muted-foreground leading-snug">
+                        <p className="text-base text-muted-foreground leading-snug">
                           {s.tagline}
                         </p>
                       </div>
@@ -965,14 +965,14 @@ export default function RefundAndReturnHelper() {
             </Button>
 
             {/* Detail header */}
-            <Card className="mb-6 border-2 border-emerald-300 bg-emerald-50/70 dark:border-emerald-800 dark:bg-emerald-950/30">
+            <Card className="mb-6 border-2 border-success-foreground/25 bg-emerald-50/70 dark:bg-emerald-950/30">
               <CardContent className="p-6">
                 <div className="flex items-start gap-4">
                   <div className="shrink-0 text-5xl leading-none" aria-hidden="true">
                     {selected.emoji}
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-emerald-900 dark:text-emerald-200">
+                    <h2 className="text-2xl sm:text-3xl font-bold mb-2 text-success-foreground ">
                       {selected.title}
                     </h2>
                     <p className="text-base text-emerald-900/90 dark:text-emerald-100/90 mb-2 font-medium">
@@ -991,10 +991,10 @@ export default function RefundAndReturnHelper() {
               <CardContent className="p-5 sm:p-6">
                 <div className="flex items-center justify-between gap-3 mb-4 flex-wrap">
                   <h3 className="text-xl font-bold flex items-center gap-2">
-                    <CheckCircle2 className="h-6 w-6 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+                    <CheckCircle2 className="h-6 w-6 text-success-foreground " aria-hidden="true" />
                     Your step-by-step walkthrough
                   </h3>
-                  <span className="text-sm font-medium text-muted-foreground">
+                  <span className="text-base font-medium text-muted-foreground">
                     {checkedCount} of {selected.steps.length} done
                   </span>
                 </div>
@@ -1011,7 +1011,7 @@ export default function RefundAndReturnHelper() {
                           htmlFor={key}
                           className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-colors min-h-[4rem] ${
                             checked
-                              ? 'bg-emerald-50 border-emerald-300 dark:bg-emerald-950/30 dark:border-emerald-800'
+                              ? 'bg-emerald-50 border-success-foreground/25 dark:bg-emerald-950/30 dark:border-emerald-800'
                               : 'bg-background border-border hover:bg-muted/40'
                           }`}
                         >
@@ -1044,17 +1044,17 @@ export default function RefundAndReturnHelper() {
 
             {/* Tips */}
             {selected.tips && selected.tips.length > 0 && (
-              <Card className="mb-6 border-2 border-amber-300 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-800">
+              <Card className="mb-6 border-2 border-warn-foreground/25 bg-warn ">
                 <CardContent className="p-5 sm:p-6">
-                  <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-amber-900 dark:text-amber-200">
+                  <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-warn-foreground ">
                     <Lightbulb className="h-6 w-6" aria-hidden="true" />
                     Quick Tips
                   </h3>
                   <ul className="space-y-3">
                     {selected.tips.map((tip, i) => (
                       <li key={i} className="flex items-start gap-3">
-                        <CheckCircle2 className="h-5 w-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
-                        <span className="text-base text-amber-900 dark:text-amber-100 leading-relaxed">{tip}</span>
+                        <CheckCircle2 className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                        <span className="text-base text-warn-foreground leading-relaxed">{tip}</span>
                       </li>
                     ))}
                   </ul>
@@ -1092,7 +1092,7 @@ export default function RefundAndReturnHelper() {
                                 {r.label}
                               </Link>
                             )}
-                            {r.note && <p className="text-sm text-muted-foreground mt-0.5">{r.note}</p>}
+                            {r.note && <p className="text-base text-muted-foreground mt-0.5">{r.note}</p>}
                           </div>
                         </li>
                       );
@@ -1117,9 +1117,9 @@ export default function RefundAndReturnHelper() {
          * ───────────────────────────────────────────────────────────── */}
 
         {/* ── Golden Script ── */}
-        <Card className="mb-6 border-2 border-blue-300 bg-blue-50 dark:bg-blue-950/30 dark:border-blue-800">
+        <Card className="mb-6 border-2 border-info-foreground/25 bg-info ">
           <CardContent className="p-5 sm:p-6">
-            <h3 className="text-xl font-bold mb-2 flex items-center gap-2 text-blue-900 dark:text-blue-200">
+            <h3 className="text-xl font-bold mb-2 flex items-center gap-2 text-info-foreground ">
               <Phone className="h-6 w-6" aria-hidden="true" />
               The Golden Script — what to actually say on the phone
             </h3>
@@ -1136,14 +1136,14 @@ export default function RefundAndReturnHelper() {
                     <p className="text-sm font-semibold text-blue-900/70 dark:text-blue-100/70 uppercase tracking-wide mb-1">
                       {line.speaker}
                     </p>
-                    <p className="text-base text-blue-900 dark:text-blue-100 leading-relaxed italic">
+                    <p className="text-base text-info-foreground leading-relaxed italic">
                       {line.line}
                     </p>
                   </div>
                 </li>
               ))}
             </ol>
-            <div className="mt-5 pt-5 border-t border-blue-200 dark:border-blue-800">
+            <div className="mt-5 pt-5 border-t border-info-foreground/25 ">
               <Button
                 variant="outline"
                 onClick={() =>
@@ -1173,27 +1173,27 @@ export default function RefundAndReturnHelper() {
             </p>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
                 <span className="text-base leading-relaxed"><strong>60 days from the statement date</strong> to dispute most charges. After that, disputes become harder.</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
                 <span className="text-base leading-relaxed"><strong>Provisional credit</strong> — your money goes back during the investigation. Ask for it by name.</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
                 <span className="text-base leading-relaxed"><strong>Put it in writing</strong> — most card companies accept online forms, a letter, or a bank chat. Keep the confirmation.</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
                 <span className="text-base leading-relaxed"><strong>The bank has to investigate</strong> and reach a decision usually within 90 days. If they don't, the provisional credit becomes permanent.</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
                 <span className="text-base leading-relaxed"><strong>You can't be punished</strong> for disputing. The card company can't report the disputed amount as late, and your credit score is protected during the investigation.</span>
               </li>
               <li className="flex items-start gap-3">
-                <CheckCircle2 className="h-5 w-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
                 <span className="text-base leading-relaxed"><strong>Debit cards have weaker protections</strong> under a different law (EFTA). Still worth disputing — but credit cards are safer for online purchases.</span>
               </li>
             </ul>
@@ -1201,9 +1201,9 @@ export default function RefundAndReturnHelper() {
         </Card>
 
         {/* ── Never do this ── */}
-        <Card className="mb-6 border-2 border-red-300 bg-red-50 dark:bg-red-950/30 dark:border-red-800">
+        <Card className="mb-6 border-2 border-danger-foreground/25 bg-danger ">
           <CardContent className="p-5 sm:p-6">
-            <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-red-900 dark:text-red-200">
+            <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-danger-foreground ">
               <ShieldAlert className="h-6 w-6" aria-hidden="true" />
               Never do these — refund scams to avoid
             </h3>
@@ -1213,8 +1213,8 @@ export default function RefundAndReturnHelper() {
             <ul className="space-y-3">
               {NEVER_DO.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <XCircle className="h-5 w-5 text-red-600 dark:text-red-400 shrink-0 mt-0.5" aria-hidden="true" />
-                  <span className="text-base text-red-900 dark:text-red-100 leading-relaxed">{item}</span>
+                  <XCircle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                  <span className="text-base text-danger-foreground leading-relaxed">{item}</span>
                 </li>
               ))}
             </ul>
@@ -1297,7 +1297,7 @@ export default function RefundAndReturnHelper() {
                       {r.label}
                       <ExternalLink className="h-4 w-4" aria-hidden="true" />
                     </a>
-                    {r.note && <p className="text-sm text-muted-foreground mt-0.5">{r.note}</p>}
+                    {r.note && <p className="text-base text-muted-foreground mt-0.5">{r.note}</p>}
                   </div>
                 </li>
               ))}
@@ -1328,51 +1328,51 @@ export default function RefundAndReturnHelper() {
         </Card>
 
         {/* ── Related tools ── */}
-        <Card className="mb-6 border-2 border-emerald-300 bg-emerald-50/60 dark:bg-emerald-950/20 dark:border-emerald-800">
+        <Card className="mb-6 border-2 border-success-foreground/25 bg-emerald-50/60 dark:bg-emerald-950/20 ">
           <CardContent className="p-5 sm:p-6">
-            <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-emerald-900 dark:text-emerald-200">
+            <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-success-foreground ">
               <ArrowUpRight className="h-6 w-6" aria-hidden="true" />
               Related TekSure tools
             </h3>
             <div className="grid gap-3 sm:grid-cols-2">
               <Link
                 to="/tools/is-this-real"
-                className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-colors p-4 min-h-[4.5rem]"
+                className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-success transition-colors p-4 min-h-[4.5rem]"
               >
                 <p className="font-semibold text-base mb-1">Is This Real?</p>
-                <p className="text-sm text-muted-foreground">Verify emails, deals, texts, and photos before you act.</p>
+                <p className="text-base text-muted-foreground">Verify emails, deals, texts, and photos before you act.</p>
               </Link>
               <Link
                 to="/tools/scam-simulator"
-                className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-colors p-4 min-h-[4.5rem]"
+                className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-success transition-colors p-4 min-h-[4.5rem]"
               >
                 <p className="font-semibold text-base mb-1">Scam Simulator</p>
-                <p className="text-sm text-muted-foreground">Practice spotting scams in a safe, fake environment.</p>
+                <p className="text-base text-muted-foreground">Practice spotting scams in a safe, fake environment.</p>
               </Link>
               <Link
                 to="/tools/subscription-auditor"
-                className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-colors p-4 min-h-[4.5rem]"
+                className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-success transition-colors p-4 min-h-[4.5rem]"
               >
                 <p className="font-semibold text-base mb-1">Subscription Auditor</p>
-                <p className="text-sm text-muted-foreground">Find forgotten subscriptions quietly draining your account.</p>
+                <p className="text-base text-muted-foreground">Find forgotten subscriptions quietly draining your account.</p>
               </Link>
               <Link
                 to="/guides?category=Safety"
-                className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-colors p-4 min-h-[4.5rem]"
+                className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-success transition-colors p-4 min-h-[4.5rem]"
               >
                 <p className="font-semibold text-base mb-1">Safety Guides</p>
-                <p className="text-sm text-muted-foreground">Deep-dive articles on scams, fraud, and staying safe online.</p>
+                <p className="text-base text-muted-foreground">Deep-dive articles on scams, fraud, and staying safe online.</p>
               </Link>
             </div>
           </CardContent>
         </Card>
 
         {/* ── Golden closer ── */}
-        <Card className="border-2 border-emerald-300 bg-emerald-50 dark:bg-emerald-950/30 dark:border-emerald-800">
+        <Card className="border-2 border-success-foreground/25 bg-success ">
           <CardContent className="p-5 flex gap-3">
-            <Lightbulb className="h-6 w-6 text-emerald-700 dark:text-emerald-400 shrink-0 mt-0.5" aria-hidden="true" />
+            <Lightbulb className="h-6 w-6 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" />
             <div>
-              <p className="font-semibold text-emerald-900 dark:text-emerald-200 mb-1">One last thing</p>
+              <p className="font-semibold text-success-foreground mb-1">One last thing</p>
               <p className="text-base text-emerald-900/90 dark:text-emerald-100/90 leading-relaxed">
                 Being polite works better than being angry. Every rep you talk to has the power to escalate your request — or quietly drop it. Stay calm, stick to the facts, write down names and case numbers, and keep asking until you get the answer you need. The law is on your side more often than you might think.
               </p>

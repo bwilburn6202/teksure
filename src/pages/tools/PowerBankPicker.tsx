@@ -27,7 +27,7 @@ export default function PowerBankPicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Sizing them out</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li><strong>5,000-10,000 mAh</strong> — pocket size. 1-2 phone charges.</li>
               <li><strong>20,000-26,000 mAh</strong> — travel size. 4-5 phone charges. TSA carry-on max.</li>
               <li><strong>"Power station" (200-2000 watt-hours)</strong> — runs medical equipment, lights, phones during outages.</li>
@@ -41,10 +41,10 @@ export default function PowerBankPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base mb-1">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -53,7 +53,7 @@ export default function PowerBankPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Charging tips</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Charge the power bank every 1-3 months even if not using — battery degrades faster when fully drained.</li>
               <li>Don\'t leave in hot car for hours — heat kills lithium batteries.</li>
               <li>Bring it on flights in carry-on, NEVER in checked luggage (FAA rule).</li>
@@ -65,7 +65,7 @@ export default function PowerBankPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Surge protectors worth knowing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>APC P11VT3 / P11U2</strong> — basic 11-outlet, $30. Good for most homes.</li>
               <li><strong>Tripp Lite Isobar</strong> — premium, longer warranty, better filtering.</li>
               <li><strong>Whole-house surge protector</strong> — $250-500 installed by electrician at the panel. Stops big surges before they reach individual outlets.</li>
@@ -77,7 +77,7 @@ export default function PowerBankPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For medical equipment</h3>
-            <p className="text-sm text-muted-foreground">If you use a CPAP, home oxygen concentrator, or other plug-in medical device — a Jackery or EcoFlow power station is genuinely lifesaving in an outage. Add solar panels for $200-400 if you live in storm country.</p>
+            <p className="text-base text-muted-foreground">If you use a CPAP, home oxygen concentrator, or other plug-in medical device — a Jackery or EcoFlow power station is genuinely lifesaving in an outage. Add solar panels for $200-400 if you live in storm country.</p>
           </CardContent>
         </Card>
       </main>

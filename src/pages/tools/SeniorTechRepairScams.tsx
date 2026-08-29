@@ -19,10 +19,10 @@ export default function SeniorTechRepairScams() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">The classic scam</h2><p>Pop-up: &ldquo;Your computer has virus. Call Microsoft now.&rdquo; They&apos;re scammers.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Microsoft RULE</h2><p>Microsoft NEVER calls you. Never pops up phone numbers. Always a scam.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple RULE</h2><p>Apple NEVER calls you. iCloud doesn&apos;t lock from popups.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">If you got scammed</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Hang up immediately</li><li>Disconnect computer from internet</li><li>Run real antivirus</li><li>Change passwords</li><li>Call bank if they got money</li></ul></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real help</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Apple: 1-800-APL-CARE</li><li>Microsoft: support.microsoft.com</li><li>Local Best Buy</li><li>Local computer shops</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">If you got scammed</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Hang up immediately</li><li>Disconnect computer from internet</li><li>Run real antivirus</li><li>Change passwords</li><li>Call bank if they got money</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real help</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Apple: 1-800-APL-CARE</li><li>Microsoft: support.microsoft.com</li><li>Local Best Buy</li><li>Local computer shops</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Report</h2><p>FTC: reportfraud.ftc.gov. AARP Fraud Watch: 877-908-3360.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: When in doubt, hang up and ask family. Real tech support never pressures.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: When in doubt, hang up and ask family. Real tech support never pressures.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

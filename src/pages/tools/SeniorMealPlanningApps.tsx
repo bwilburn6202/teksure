@@ -22,7 +22,7 @@ export default function SeniorMealPlanningApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">NYT Cooking</h2><p>$5/month. 20,000 recipes. Save into weekly plans.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior tip</h2><p>Plan 3-4 meals/week. Repeat 1-2. Saves food waste and money.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Heart-healthy</h2><p>Filter for &ldquo;DASH diet&rdquo; or &ldquo;Mediterranean.&rdquo; Doctor-recommended.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Cook double on Sundays. Lunches and easy reheats all week.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Cook double on Sundays. Lunches and easy reheats all week.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

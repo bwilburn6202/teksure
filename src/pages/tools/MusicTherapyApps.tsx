@@ -30,10 +30,10 @@ export default function MusicTherapyApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function MusicTherapyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Music + dementia</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Familiar music last memories preserved.</li>
               <li>Songs from teens-20s most powerful.</li>
               <li>Triggers memories + emotions.</li>
@@ -56,7 +56,7 @@ export default function MusicTherapyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mood + sleep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Slower music = relaxation.</li>
               <li>Classical proven to lower BP.</li>
               <li>Spotify sleep playlists.</li>
@@ -70,7 +70,7 @@ export default function MusicTherapyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pain + chronic conditions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Music reduces perceived pain.</li>
               <li>Listened during procedures.</li>
               <li>Reduces anxiety.</li>
@@ -84,7 +84,7 @@ export default function MusicTherapyApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Make playlists</h3>
-            <p className="text-sm text-muted-foreground">Make playlist for each mood: morning, walking, calming, dancing. Family member helps create. Spotify has &quot;Made for You&quot; algorithm. Music + walking = double brain benefit.</p>
+            <p className="text-base text-muted-foreground">Make playlist for each mood: morning, walking, calming, dancing. Family member helps create. Spotify has &quot;Made for You&quot; algorithm. Music + walking = double brain benefit.</p>
           </CardContent>
         </Card>
       </main>

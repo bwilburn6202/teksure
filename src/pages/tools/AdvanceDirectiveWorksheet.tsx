@@ -49,15 +49,15 @@ export default function AdvanceDirectiveWorksheet() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Advance Directive Worksheet | TekSure" description="A starter worksheet to record your end-of-life wishes. Print it and discuss with family — this is not a legal substitute for your state's advance directive form." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <FileText className="h-7 w-7 text-blue-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Advance Directive Worksheet</h1>
+            <FileText className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Advance Directive Worksheet</h1>
           </div>
-          <p className="text-gray-600 text-lg">A starter worksheet to help you think through end-of-life wishes. Talk it over with family and your doctor — and finalize with your state's legal advance directive form.</p>
+          <p className="text-muted-foreground text-lg">A starter worksheet to help you think through end-of-life wishes. Talk it over with family and your doctor — and finalize with your state's legal advance directive form.</p>
         </div>
 
         <Card className="mb-4">
@@ -66,7 +66,7 @@ export default function AdvanceDirectiveWorksheet() {
               <label className="text-base font-medium">Your full name</label>
               <Input value={name} onChange={e => setName(e.target.value)} className="mt-1" placeholder="Mary Smith" />
             </div>
-            <p className="text-sm font-semibold text-gray-700 mt-2">Your healthcare proxy (the person who decides if you cannot):</p>
+            <p className="text-base font-semibold text-foreground mt-2">Your healthcare proxy (the person who decides if you cannot):</p>
             <div className="grid grid-cols-2 gap-3">
               <Input value={proxy.name} onChange={e => setProxy({ ...proxy, name: e.target.value })} placeholder="Proxy name" />
               <Input value={proxy.relationship} onChange={e => setProxy({ ...proxy, relationship: e.target.value })} placeholder="Relationship" />
@@ -98,15 +98,15 @@ export default function AdvanceDirectiveWorksheet() {
         <Card className="mb-4">
           <CardContent className="py-4 px-4">
             <label className="text-base font-medium">Any other wishes or comfort items? (favorite music, prayers, photos)</label>
-            <textarea value={wishes} onChange={e => setWishes(e.target.value)} rows={4} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white" />
+            <textarea value={wishes} onChange={e => setWishes(e.target.value)} rows={4} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card" />
           </CardContent>
         </Card>
 
         <Card className="mb-4 print:break-before-page print:break-inside-avoid">
           <CardContent className="py-4 px-4">
             <h2 className="text-xl font-bold mb-2">My Advance Directive Wishes</h2>
-            {name && <p className="text-sm">Patient: <strong>{name}</strong></p>}
-            {proxy.name && <p className="text-sm">Healthcare proxy: <strong>{proxy.name}</strong>{proxy.relationship && ` (${proxy.relationship})`}{proxy.phone && ` — ${proxy.phone}`}</p>}
+            {name && <p className="text-base">Patient: <strong>{name}</strong></p>}
+            {proxy.name && <p className="text-base">Healthcare proxy: <strong>{proxy.name}</strong>{proxy.relationship && ` (${proxy.relationship})`}{proxy.phone && ` — ${proxy.phone}`}</p>}
             <div className="mt-3 space-y-2 text-sm">
               {QUESTIONS.map(q => answers[q.id] && (
                 <div key={q.id}>
@@ -121,7 +121,7 @@ export default function AdvanceDirectiveWorksheet() {
                 </div>
               )}
             </div>
-            <p className="text-xs text-gray-500 italic mt-3">Worksheet — not a legal document. Use this to guide a conversation, then complete the legal form for your state (caringinfo.org has free templates).</p>
+            <p className="text-sm text-muted-foreground italic mt-3">Worksheet — not a legal document. Use this to guide a conversation, then complete the legal form for your state (caringinfo.org has free templates).</p>
           </CardContent>
         </Card>
 
@@ -132,6 +132,6 @@ export default function AdvanceDirectiveWorksheet() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

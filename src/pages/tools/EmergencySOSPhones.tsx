@@ -19,7 +19,7 @@ export default function EmergencySOSPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Emergency SOS</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hold side + volume buttons together.</li>
               <li>Slide to call 911.</li>
               <li>Or hold longer — countdown then auto-calls.</li>
@@ -33,7 +33,7 @@ export default function EmergencySOSPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android Emergency SOS</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Press power button 5 times rapidly.</li>
               <li>Or Settings → Safety + Emergency.</li>
               <li>Set up emergency contacts to notify.</li>
@@ -47,7 +47,7 @@ export default function EmergencySOSPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup BEFORE you need it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone: Settings → Emergency SOS.</li>
               <li>Add emergency contacts.</li>
               <li>Enable &quot;Call with Hold&quot; if preferred.</li>
@@ -61,7 +61,7 @@ export default function EmergencySOSPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Watch Emergency SOS</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hold side button until SOS slider appears.</li>
               <li>Slide to call 911.</li>
               <li>Or Fall Detection auto-triggers it.</li>
@@ -75,7 +75,7 @@ export default function EmergencySOSPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Watch Fall Detection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Watch SE + 4+ have it.</li>
               <li>Detects hard falls automatically.</li>
               <li>Asks if you&apos;re OK.</li>
@@ -89,7 +89,7 @@ export default function EmergencySOSPhones() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other emergency apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Life360 — family location + crash detection.</li>
               <li>Red Panic Button — sends alert to contacts.</li>
               <li>SilverSafety — senior-focused emergency app.</li>
@@ -103,7 +103,7 @@ export default function EmergencySOSPhones() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Test once + add contacts</h3>
-            <p className="text-sm text-muted-foreground">This week, set up Emergency SOS on your iPhone or Android. Add 2–3 emergency contacts (family who can respond). Practice the button press once (cancel before it actually dials). Knowing how to trigger it before an emergency happens is critical. Combined with Apple Watch fall detection, this is the most important senior safety tech available.</p>
+            <p className="text-base text-muted-foreground">This week, set up Emergency SOS on your iPhone or Android. Add 2–3 emergency contacts (family who can respond). Practice the button press once (cancel before it actually dials). Knowing how to trigger it before an emergency happens is critical. Combined with Apple Watch fall detection, this is the most important senior safety tech available.</p>
           </CardContent>
         </Card>
       </main>

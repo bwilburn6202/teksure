@@ -593,7 +593,7 @@ export default function AudioTutorialHub() {
               />
             </div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 rounded-2xl bg-indigo-200 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-200">
+              <div className="p-3 rounded-2xl bg-indigo-200 text-primary dark:bg-indigo-900/50 ">
                 <Volume2 className="w-7 h-7" />
               </div>
               <Badge className="bg-indigo-600 text-white hover:bg-indigo-700 text-xs">New</Badge>
@@ -629,7 +629,7 @@ export default function AudioTutorialHub() {
           <Card>
             <CardHeader>
               <CardTitle className="text-xl flex items-center gap-2">
-                <Info className="w-5 h-5 text-indigo-600" />
+                <Info className="w-5 h-5 text-primary" />
                 How this works
               </CardTitle>
               <CardDescription className="text-base">
@@ -661,7 +661,7 @@ export default function AudioTutorialHub() {
           <Card>
             <CardHeader>
               <CardTitle className="text-xl flex items-center gap-2">
-                <Mic className="w-5 h-5 text-indigo-600" />
+                <Mic className="w-5 h-5 text-primary" />
                 Voice &amp; playback settings
               </CardTitle>
               <CardDescription className="text-base">
@@ -690,7 +690,7 @@ export default function AudioTutorialHub() {
                     </option>
                   ))}
                 </select>
-                <p className="text-sm text-muted-foreground mt-1.5">
+                <p className="text-base text-muted-foreground mt-1.5">
                   {voices.length > 0
                     ? `${voices.length} voice${voices.length === 1 ? '' : 's'} on this device.`
                     : 'Voices load after the page finishes.'}
@@ -769,7 +769,7 @@ export default function AudioTutorialHub() {
                   <CheckCircle2 className="w-4 h-4" /> Save my settings
                 </Button>
                 {saved && (
-                  <span className="text-sm text-emerald-700 dark:text-emerald-400 font-medium">
+                  <span className="text-base text-success-foreground font-medium">
                     Saved to this device.
                   </span>
                 )}
@@ -779,11 +779,11 @@ export default function AudioTutorialHub() {
 
           {/* ── Now reading bar ───────────────────────────── */}
           {currentPiece && (
-            <Card className="border-indigo-300 bg-indigo-50 dark:bg-indigo-950/30 dark:border-indigo-800 sticky top-2 z-10 shadow-md">
+            <Card className="border-primary/25 bg-primary/10 sticky top-2 z-10 shadow-md">
               <CardContent className="p-5">
                 <div className="flex items-start gap-4 flex-wrap">
                   <div className="flex-1 min-w-0">
-                    <p className="text-xs uppercase tracking-wider text-indigo-700 dark:text-indigo-300 font-semibold mb-1">
+                    <p className="text-xs uppercase tracking-wider text-primary font-semibold mb-1">
                       Now reading…
                     </p>
                     <p className="text-lg font-semibold truncate">{currentPiece.title}</p>
@@ -825,7 +825,7 @@ export default function AudioTutorialHub() {
                     </Button>
                   </div>
                 </div>
-                <p className="text-xs text-muted-foreground mt-3">
+                <p className="text-sm text-muted-foreground mt-3">
                   Tip: press <kbd className="px-1.5 py-0.5 border rounded bg-background text-xs">Shift</kbd> + <kbd className="px-1.5 py-0.5 border rounded bg-background text-xs">Space</kbd> to pause or resume from the keyboard.
                 </p>
               </CardContent>
@@ -836,10 +836,10 @@ export default function AudioTutorialHub() {
           <section aria-labelledby="library-heading">
             <div className="flex items-center justify-between flex-wrap gap-2 mb-5">
               <h2 id="library-heading" className="text-2xl font-bold flex items-center gap-2">
-                <Headphones className="w-6 h-6 text-indigo-600" />
+                <Headphones className="w-6 h-6 text-primary" />
                 Audio library
               </h2>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Tap play on any one. The next guide in the same category plays after.
               </p>
             </div>
@@ -875,7 +875,7 @@ export default function AudioTutorialHub() {
                                   <Clock className="w-3 h-3" /> {mins} min
                                 </Badge>
                               </div>
-                              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                              <p className="text-base text-muted-foreground mb-4 leading-relaxed">
                                 {piece.description}
                               </p>
                               <div className="flex items-center gap-2 flex-wrap">
@@ -913,7 +913,7 @@ export default function AudioTutorialHub() {
                                 {piece.fullPage && (
                                   <Link
                                     to={piece.fullPage}
-                                    className="inline-flex items-center gap-1 text-sm text-indigo-700 dark:text-indigo-300 hover:underline ml-auto"
+                                    className="inline-flex items-center gap-1 text-sm text-primary hover:underline ml-auto"
                                   >
                                     <BookOpen className="w-4 h-4" /> Read full page
                                   </Link>
@@ -947,10 +947,10 @@ export default function AudioTutorialHub() {
           </section>
 
           {/* ── Background play card ──────────────────────── */}
-          <Card className="border-indigo-200 bg-indigo-50/70 dark:bg-indigo-950/20 dark:border-indigo-900">
+          <Card className="border-primary/25 bg-indigo-50/70 dark:bg-indigo-950/20 ">
             <CardHeader>
               <CardTitle className="text-xl flex items-center gap-2">
-                <Headphones className="w-5 h-5 text-indigo-600" />
+                <Headphones className="w-5 h-5 text-primary" />
                 Keep listening while the screen is off
               </CardTitle>
               <CardDescription className="text-base">
@@ -963,7 +963,7 @@ export default function AudioTutorialHub() {
               </p>
               <p>
                 For full-length hands-free listening on iPhone or iPad, open the written guide in Safari, tap the page menu, and choose <strong>Listen to Page</strong> — Safari's native reader keeps going when the screen locks. Our{' '}
-                <Link to="/tools/screen-reader-starter" className="text-indigo-700 dark:text-indigo-300 hover:underline inline-flex items-center gap-1">
+                <Link to="/tools/screen-reader-starter" className="text-primary hover:underline inline-flex items-center gap-1">
                   Screen Reader Starter <ExternalLink className="w-3 h-3" />
                 </Link>{' '}
                 walks through that step by step.
@@ -975,7 +975,7 @@ export default function AudioTutorialHub() {
           <Card>
             <CardHeader>
               <CardTitle className="text-xl flex items-center gap-2">
-                <Sparkles className="w-5 h-5 text-indigo-600" />
+                <Sparkles className="w-5 h-5 text-primary" />
                 Why listening helps
               </CardTitle>
             </CardHeader>
@@ -983,7 +983,7 @@ export default function AudioTutorialHub() {
               <p>Rest your eyes after a long day of screens. Learn something new while walking the dog. Listen while cooking, folding laundry, or waiting in line. Multitask safely without staring at a phone.</p>
               <p>
                 Pair the audio with a Bluetooth hearing aid for clear, direct streaming. If you are new to that setup, our{' '}
-                <Link to="/tools/hearing-aid-tech-helper" className="text-indigo-700 dark:text-indigo-300 hover:underline inline-flex items-center gap-1">
+                <Link to="/tools/hearing-aid-tech-helper" className="text-primary hover:underline inline-flex items-center gap-1">
                   Hearing Aid Tech Helper <ExternalLink className="w-3 h-3" />
                 </Link>{' '}
                 shows how to connect hearing aids to iPhone, iPad, or Android.
@@ -1034,7 +1034,7 @@ export default function AudioTutorialHub() {
               </p>
               <p>
                 On a computer, Chrome offers a <strong>Read Aloud</strong> option, and Google has a free read-aloud extension for any page. Our{' '}
-                <Link to="/tools/screen-reader-starter" className="text-indigo-700 dark:text-indigo-300 hover:underline inline-flex items-center gap-1">
+                <Link to="/tools/screen-reader-starter" className="text-primary hover:underline inline-flex items-center gap-1">
                   Screen Reader Starter <ExternalLink className="w-3 h-3" />
                 </Link>{' '}
                 walks you through the setup on each device without jargon.
@@ -1043,10 +1043,10 @@ export default function AudioTutorialHub() {
           </Card>
 
           {/* ── Privacy ───────────────────────────────────── */}
-          <Card className="border-emerald-200 bg-emerald-50/60 dark:bg-emerald-950/20 dark:border-emerald-900">
+          <Card className="border-success-foreground/25 bg-emerald-50/60 dark:bg-emerald-950/20 ">
             <CardHeader>
               <CardTitle className="text-xl flex items-center gap-2">
-                <ShieldCheck className="w-5 h-5 text-emerald-600" />
+                <ShieldCheck className="w-5 h-5 text-success-foreground" />
                 Your privacy
               </CardTitle>
             </CardHeader>
@@ -1083,12 +1083,12 @@ export default function AudioTutorialHub() {
                     <CheckCircle2 className="w-4 h-4" /> Send my request
                   </Button>
                   {requestSent && (
-                    <span className="text-sm text-emerald-700 dark:text-emerald-400 font-medium">
+                    <span className="text-base text-success-foreground font-medium">
                       Thanks — we'll add it to the queue.
                     </span>
                   )}
                 </div>
-                <p className="text-xs text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   Saved only in your browser. Nothing is sent to a server.
                 </p>
               </form>
@@ -1161,7 +1161,7 @@ export default function AudioTutorialHub() {
                       <p className="font-semibold text-base">{r.label}</p>
                       <p className="text-sm text-muted-foreground truncate">{r.note}</p>
                     </div>
-                    <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-indigo-600 group-hover:translate-x-0.5 transition-all" />
+                    <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition-all" />
                   </Link>
                 ))}
               </div>

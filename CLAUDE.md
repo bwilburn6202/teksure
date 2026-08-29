@@ -8,8 +8,8 @@
 Tech support and digital literacy for non-technical users and seniors (60+). Free, no paywalls on educational content.
 
 - **Stack:** React 18 · TypeScript · Tailwind · shadcn/ui · Supabase · React Query · React Router · Vite
-- **Supabase ref:** `vrhxitxzqtbphzsbdqih` ⚠️ *VERIFY THIS BEFORE FIRST USE — a second ref (`zrgtoefkqafndhxhbuag`) appeared in stale Cowork instructions. Confirm in the Supabase dashboard, then delete this warning.*
-- **Repo:** github.com/bwilburn6202/teksure · **Live:** https://www.teksure.com (canonical host is `www`; apex 301s)
+- **Supabase ref:** `vrhxitxzqtbphzsbdqih` — verified 2026-08-27 against `supabase/config.toml`, `supabase/.temp/project-ref`, and the `dns-prefetch` host in the live HTML. The old ref `zrgtoefkqafndhxhbuag` was wrong and has been purged from `docs/`, where it sat inside copy-pasteable `functions deploy --project-ref` commands. If it reappears anywhere, it is stale — do not deploy against it.
+- **Repo:** github.com/bwilburn6202/teksure · **Live:** https://www.teksure.com (canonical host is `www`; apex currently **307s**, not 301 — see blockers)
 - **Local:** `~/Documents/Claude/Projects/TekSure` · dev on :5173
 
 ## Current state (2026-08-06)
@@ -17,7 +17,7 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 
 **Guide count target: retired.** Closed as MISSED at 4,049 by decision on 2026-08-04. 4,000 mediocre pages rank worse than 400 excellent ones. Do not add guides to move a number.
 
-**Open blockers (raise, don't work around):** analytics wiring unverified · monetization needs AdSense/affiliate credentials · hosted Ollama needs the Hetzner CX22 · `npm run build` OOMs in sandbox (needs ≥8GB) · readability sits at grade 8.3 with ~58.5% above grade 8 and needs one scripted bulk pass or an explicit decision to accept it.
+**Open blockers (raise, don't work around):** analytics wiring unverified · monetization needs AdSense/affiliate credentials · hosted Ollama needs the Hetzner CX22 · `npm run build` OOMs in sandbox (needs ≥8GB) · readability sits at grade 8.3 with ~58.5% above grade 8 and needs one scripted bulk pass or an explicit decision to accept it · **apex `teksure.com` redirects to `www` with a 307 (temporary), not a 308/301** — path is preserved so users are fine, but a 307 does not consolidate link equity onto the canonical host. This is a Vercel *domain* setting, not `vercel.json`, so it cannot be fixed from the repo: Vercel dashboard → Project → Settings → Domains → `teksure.com` → set the redirect to permanent.
 
 ---
 
@@ -25,6 +25,7 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 
 **Build pipeline**
 - `npm run build` = `vite build` → `prerender:safe` → `write-build-info`. **Never remove the prerender step.** Without it every URL serves the same generic title and the site is invisible to Bing, social crawlers, and AI answer engines. `build:spa` exists if you need a fast client-only build.
+- **Prerendering is sharded and must stay that way.** `scripts/prerender-sharded.mjs` runs `prerender.mjs` in slices of 1,000 routes, one child process each. A single process grows RSS past the container ceiling and is killed at ~4,500 of 7,128 routes with `failed: 0` — the memory is external to the V8 heap, so neither `--max-old-space-size` nor `global.gc()` touches it. Do not collapse this back into one process. The driver exits non-zero on a short run; check `https://www.teksure.com/prerender-report.json` — `status` must be `complete` and `written` must equal `routesAttempted`.
 - `scripts/prerender.mjs` must end with `process.exit(0)`. The SSR bundle holds the event loop open; without it the build hangs and Vercel times out while continuing to serve the previous deploy.
 - `vercel.json` must contain **only schema-valid keys**. An unknown property (a `"comment"` key, once) rejects the entire deployment. Put explanations in the generator scripts.
 - `vercel.json` is read at the edge from the **committed** file, before the build runs. Regenerating it in `prebuild` does not affect the deploy in progress — commit the regenerated file.

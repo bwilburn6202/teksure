@@ -19,16 +19,16 @@ export default function LoginGovIdMeHelper() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What these are</h2>
-            <p className="text-sm">Two government-approved sign-in services. Instead of a different password for every federal site (Social Security, Medicare, IRS, VA, USAJobs, etc.), you create ONE account and use it everywhere. Both are free and operated under federal contracts.</p>
-            <p className="text-sm mt-2"><strong>Login.gov</strong> — operated by the General Services Administration. The simpler, government-run option.</p>
-            <p className="text-sm mt-1"><strong>ID.me</strong> — a private company contracted by the government. Has a stricter "verify your identity with selfie" step for some agencies.</p>
+            <p className="text-base">Two government-approved sign-in services. Instead of a different password for every federal site (Social Security, Medicare, IRS, VA, USAJobs, etc.), you create ONE account and use it everywhere. Both are free and operated under federal contracts.</p>
+            <p className="text-base mt-2"><strong>Login.gov</strong> — operated by the General Services Administration. The simpler, government-run option.</p>
+            <p className="text-base mt-1"><strong>ID.me</strong> — a private company contracted by the government. Has a stricter "verify your identity with selfie" step for some agencies.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Which one do you need?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Social Security (SSA):</strong> Both work. Login.gov is simpler. Set up at <strong>ssa.gov/myaccount</strong>.</li>
               <li><strong>IRS (your tax records):</strong> ID.me only. <strong>irs.gov</strong>.</li>
               <li><strong>Medicare:</strong> Login.gov works. <strong>medicare.gov</strong>.</li>
@@ -36,14 +36,14 @@ export default function LoginGovIdMeHelper() {
               <li><strong>USAJobs:</strong> Login.gov.</li>
               <li><strong>StudentAid.gov:</strong> Login.gov.</li>
             </ul>
-            <p className="text-sm mt-2 text-muted-foreground">In short: most people end up with both. Set up Login.gov first since it's used by more agencies and easier.</p>
+            <p className="text-base mt-2 text-muted-foreground">In short: most people end up with both. Set up Login.gov first since it's used by more agencies and easier.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up Login.gov</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>login.gov</strong>.</li>
               <li>Click "Create an account".</li>
               <li>Type your email — use one you check daily.</li>
@@ -58,7 +58,7 @@ export default function LoginGovIdMeHelper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up ID.me (more steps — needed for IRS)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>id.me</strong>.</li>
               <li>Click "Create an ID.me account".</li>
               <li>Email + password + confirm.</li>
@@ -76,13 +76,13 @@ export default function LoginGovIdMeHelper() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <AlertTriangle className="w-6 h-6 text-yellow-700 dark:text-yellow-400 shrink-0" />
+              <AlertTriangle className="w-6 h-6 text-warn-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Watch out for fakes</h3>
-                <ul className="list-disc pl-5 space-y-1 text-sm">
+                <ul className="list-disc pl-5 space-y-1 text-base">
                   <li>Always type <strong>login.gov</strong> or <strong>id.me</strong> directly — never click a link in an email.</li>
                   <li>Real Login.gov and ID.me will never call you, never ask for gift cards, never email you to "verify urgently".</li>
                   <li>Watch for typo-domain scams like "logingov.com" or "idme.net" — those are fake.</li>
@@ -95,7 +95,7 @@ export default function LoginGovIdMeHelper() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you get stuck</h3>
-            <p className="text-sm text-muted-foreground">Both services have free phone support. Login.gov: 1-844-875-6446. ID.me: open a chat at help.id.me. They're patient with first-time users.</p>
+            <p className="text-base text-muted-foreground">Both services have free phone support. Login.gov: 1-844-875-6446. ID.me: open a chat at help.id.me. They're patient with first-time users.</p>
           </CardContent>
         </Card>
       </main>

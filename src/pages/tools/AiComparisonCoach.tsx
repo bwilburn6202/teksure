@@ -28,7 +28,7 @@ export default function AiComparisonCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Bottom line</h2>
-            <p className="text-sm">For most everyday tasks, the FREE versions of any of these are more than enough. Pay for premium only if you use AI heavily for work or want longer / faster responses.</p>
+            <p className="text-base">For most everyday tasks, the FREE versions of any of these are more than enough. Pay for premium only if you use AI heavily for work or want longer / faster responses.</p>
           </CardContent>
         </Card>
 
@@ -38,10 +38,10 @@ export default function AiComparisonCoach() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function AiComparisonCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Match AI to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Translate this email"</strong> → any of them.</li>
               <li><strong>"Help me write a difficult letter"</strong> → Claude is excellent.</li>
               <li><strong>"What\'s the latest news on X?"</strong> → Gemini or Perplexity (real-time web).</li>
@@ -66,7 +66,7 @@ export default function AiComparisonCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy notes</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>All AIs may use your conversations to improve their model — unless you turn it off.</li>
               <li>Don\'t share Social Security, bank info, medical records, or passwords.</li>
               <li>Apple Intelligence and Microsoft Copilot for Business have stronger privacy guarantees.</li>
@@ -77,7 +77,7 @@ export default function AiComparisonCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try them all</h3>
-            <p className="text-sm text-muted-foreground">All have free versions. Try the same question on 2-3 AIs and see which answers you like better. Many people stick with whatever they tried first — but real differences exist.</p>
+            <p className="text-base text-muted-foreground">All have free versions. Try the same question on 2-3 AIs and see which answers you like better. Many people stick with whatever they tried first — but real differences exist.</p>
           </CardContent>
         </Card>
       </main>

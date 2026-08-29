@@ -22,7 +22,7 @@ export default function SeniorBraceMonitorApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Back brace</h2><p>$50. Lower back support. Mixed evidence. May weaken muscles long-term.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare</h2><p>Often covers braces with prescription.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Compression socks</h2><p>$20. Different from braces. Help circulation in legs.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Knee sleeve $25 helps senior arthritis without doctor needed.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Knee sleeve $25 helps senior arthritis without doctor needed.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

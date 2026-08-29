@@ -59,7 +59,7 @@ const Privacy = () => {
             <p className="text-lg text-muted-foreground">
               Your privacy matters to us. This page explains what information we collect, how we use it, and what choices you have — all in plain English.
             </p>
-            <p className="text-sm text-muted-foreground">Last updated: April 5, 2026</p>
+            <p className="text-base text-muted-foreground">Last updated: April 5, 2026</p>
           </div>
 
           {/* What We Collect */}

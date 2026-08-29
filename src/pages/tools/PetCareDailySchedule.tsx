@@ -52,24 +52,24 @@ export default function PetCareDailySchedule() {
   const completedToday = Object.entries(done).filter(([k, v]) => v && k.startsWith(todayKey())).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Pet Care Daily Schedule | TekSure" description="A printable daily schedule for feeding, medication, walks, and litter care for your pet. Helpful for seniors with new pets and family helpers." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <PawPrint className="h-7 w-7 text-orange-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Pet Care Schedule</h1>
+            <PawPrint className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Pet Care Schedule</h1>
           </div>
-          <p className="text-gray-600 text-lg">A printable daily schedule for your pet — so a family helper, dog walker, or pet sitter can take over without questions.</p>
+          <p className="text-muted-foreground text-lg">A printable daily schedule for your pet — so a family helper, dog walker, or pet sitter can take over without questions.</p>
         </div>
 
         <Card className="mb-4 print:hidden">
           <CardContent className="py-4 px-4 space-y-2">
             <Input value={petName} onChange={e => setPetName(e.target.value)} placeholder="Pet name (e.g. Bailey)" />
-            <h2 className="text-lg font-semibold flex items-center gap-2"><PlusCircle className="h-5 w-5 text-orange-700" />Add a task</h2>
+            <h2 className="text-lg font-semibold flex items-center gap-2"><PlusCircle className="h-5 w-5 text-warn-foreground" />Add a task</h2>
             <Input value={form.task} onChange={e => setForm(f => ({ ...f, task: e.target.value }))} placeholder="What to do (e.g. 1/2 cup kibble, give Rimadyl pill)" />
             <div className="grid grid-cols-2 gap-2">
-              <select value={form.category} onChange={e => setForm(f => ({ ...f, category: e.target.value as Cat }))} className="border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <select value={form.category} onChange={e => setForm(f => ({ ...f, category: e.target.value as Cat }))} className="border border-border rounded-md px-3 py-2 text-base bg-card">
                 {CATEGORIES.map(c => <option key={c}>{c}</option>)}
               </select>
               <Input type="time" value={form.time} onChange={e => setForm(f => ({ ...f, time: e.target.value }))} />
@@ -81,9 +81,9 @@ export default function PetCareDailySchedule() {
         {tasks.length > 0 && (
           <>
             {completedToday > 0 && (
-              <Card className="mb-4 bg-emerald-50 border-emerald-200">
+              <Card className="mb-4 bg-success border-success-foreground/25">
                 <CardContent className="py-2 px-4 text-center">
-                  <p className="text-sm text-emerald-900 font-semibold">{completedToday} task(s) done today</p>
+                  <p className="text-base text-success-foreground font-semibold">{completedToday} task(s) done today</p>
                 </CardContent>
               </Card>
             )}
@@ -100,16 +100,16 @@ export default function PetCareDailySchedule() {
                   {tasks.map(t => {
                     const key = `${todayKey()}-${t.id}`;
                     return (
-                      <div key={t.id} className="flex items-center gap-3 p-2 rounded-lg border border-gray-200 bg-white">
+                      <div key={t.id} className="flex items-center gap-3 p-2 rounded-lg border border-border bg-card">
                         <Checkbox checked={!!done[key]} onCheckedChange={() => toggle(key)} className="print:hidden" />
                         <div className="flex-1">
                           <div className="flex items-center gap-2 flex-wrap">
-                            <span className="font-mono text-sm font-semibold text-gray-700">{t.time}</span>
+                            <span className="font-mono text-base font-semibold text-foreground">{t.time}</span>
                             <Badge variant="secondary" className="text-xs">{t.category}</Badge>
                           </div>
-                          <p className={`text-sm mt-0.5 ${done[key] ? "line-through text-gray-400" : "text-gray-900"}`}>{t.task}</p>
+                          <p className={`text-base mt-0.5 ${done[key] ? "line-through text-gray-400" : "text-gray-900"}`}>{t.task}</p>
                         </div>
-                        <Button variant="ghost" size="icon" onClick={() => remove(t.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                        <Button variant="ghost" size="icon" onClick={() => remove(t.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                           <Trash2 className="h-3 w-3" />
                         </Button>
                       </div>
@@ -121,12 +121,12 @@ export default function PetCareDailySchedule() {
           </>
         )}
 
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">If a sitter is taking over:</span> Print this page and leave it on the kitchen counter with: vet name and number, microchip info, feeding amount, where leashes and meds are kept, and one emergency contact. Most pet emergencies happen during transitions.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">If a sitter is taking over:</span> Print this page and leave it on the kitchen counter with: vet name and number, microchip info, feeding amount, where leashes and meds are kept, and one emergency contact. Most pet emergencies happen during transitions.</p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

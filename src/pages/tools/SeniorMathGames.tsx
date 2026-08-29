@@ -22,7 +22,7 @@ export default function SeniorMathGames() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Card games</h2><p>Cribbage, gin rummy. Mental math. Multi-generation game.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real math</h2><p>Calculate restaurant tip in head. Skip calculator. Brain workout.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Math benefits</h2><p>Studies show math practice slows numerical decline. Real benefit.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: One Sudoku at breakfast. Day starts brain working.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: One Sudoku at breakfast. Day starts brain working.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

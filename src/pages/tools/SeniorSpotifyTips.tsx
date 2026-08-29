@@ -22,7 +22,7 @@ export default function SeniorSpotifyTips() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Decade playlists</h2><p>Search &ldquo;60s hits&rdquo; or &ldquo;70s rock.&rdquo; Endless nostalgia.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Daily Mix</h2><p>Algorithm picks 6 daily playlists based on your taste. Auto-personalized.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Audiobook bonus</h2><p>Premium includes 15 hours/month of audiobooks. Saves Audible cost.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Connect to Echo Dot. &ldquo;Alexa, play 60s rock on Spotify.&rdquo; Hands-free.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Connect to Echo Dot. &ldquo;Alexa, play 60s rock on Spotify.&rdquo; Hands-free.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

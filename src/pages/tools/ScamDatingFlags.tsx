@@ -16,10 +16,10 @@ export default function ScamDatingFlags() {
           <p className="text-lg text-muted-foreground">$1.3 billion/yr lost to romance scams.</p>
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Scammer playbook</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Profile picture is too good — model, soldier, doctor, oil rig worker.</li>
               <li>Love-bombs you within days. "I&apos;ve never felt this way."</li>
               <li>Always overseas. Working / military / oil platform.</li>
@@ -35,7 +35,7 @@ export default function ScamDatingFlags() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags — every scammer has them</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Profile: only 1-3 photos. Too perfect.</li>
               <li>"Widowed with one daughter" sob story common.</li>
               <li>Wants to move to text/email/WhatsApp fast (off the dating app).</li>
@@ -51,7 +51,7 @@ export default function ScamDatingFlags() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Test them</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Reverse image search</strong> — save photo, upload to images.google.com. Often shows it&apos;s a stolen model photo.</li>
               <li><strong>Demand video chat</strong> within 1 week. Real people will. Scammers won&apos;t.</li>
               <li><strong>"Ask grandkid to verify"</strong> — show their profile to your tech-savvy grandchild. Outside view spots scams fast.</li>
@@ -64,7 +64,7 @@ export default function ScamDatingFlags() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you&apos;ve been scammed</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Stop sending money IMMEDIATELY.</li>
               <li>Call your bank. Stop pending wires.</li>
               <li>Report to <strong>FTC at reportfraud.ftc.gov</strong>.</li>
@@ -79,7 +79,7 @@ export default function ScamDatingFlags() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">"I&apos;m too smart for this"</h3>
-            <p className="text-sm text-muted-foreground">Lawyers, doctors, teachers, military officers — all get scammed. Loneliness is the vulnerability, not intelligence. Scammers are professionals. They have scripts. They train. The defense is ONE rule: never send money to someone you haven&apos;t met in person.</p>
+            <p className="text-base text-muted-foreground">Lawyers, doctors, teachers, military officers — all get scammed. Loneliness is the vulnerability, not intelligence. Scammers are professionals. They have scripts. They train. The defense is ONE rule: never send money to someone you haven&apos;t met in person.</p>
           </CardContent>
         </Card>
       </main>

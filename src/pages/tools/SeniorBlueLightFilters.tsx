@@ -22,7 +22,7 @@ export default function SeniorBlueLightFilters() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Blue light glasses</h2><p>$20-$80. Studies mixed but many seniors swear by them.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Better sleep</h2><p>Avoid screens 1 hour before bed. Bigger impact than any filter.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Macular degeneration</h2><p>Some studies link blue light to AMD progression. Filter as precaution.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set Night Shift to 7 PM-7 AM. Eyes thank you within a week.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set Night Shift to 7 PM-7 AM. Eyes thank you within a week.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

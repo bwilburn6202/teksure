@@ -19,10 +19,10 @@ export default function SeniorSmartDoorbellSetup() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Ring Video Doorbell</h2><p>Most popular. $99-$199. Battery or wired. Works with Alexa.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Google Nest Doorbell</h2><p>$179. Best for Google Home users. 3 hours of free recording.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Eufy Doorbell</h2><p>$149. No monthly fee — local storage on a hub.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Setup steps</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Charge battery overnight</li><li>Download the app</li><li>Connect to home Wi-Fi</li><li>Mount with screws or 3M tape</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Setup steps</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Charge battery overnight</li><li>Download the app</li><li>Connect to home Wi-Fi</li><li>Mount with screws or 3M tape</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Monthly costs</h2><p>Ring Protect $4.99/month for video history. Eufy is free.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Get help installing</h2><p>Best Buy Geek Squad installs for ~$100. Some HOAs offer free senior installation.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set up notifications to ring on your phone AND a smart speaker. Don&apos;t miss visitors.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set up notifications to ring on your phone AND a smart speaker. Don&apos;t miss visitors.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

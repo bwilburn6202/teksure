@@ -19,7 +19,7 @@ export default function GuitarForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Starter guitar ($150-300)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Yamaha FG800</strong> ($230) — best beginner.</li>
               <li><strong>Fender CD-60S</strong> ($200).</li>
               <li><strong>Yamaha APX600</strong> ($350) — easier neck.</li>
@@ -33,7 +33,7 @@ export default function GuitarForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First 5 chords</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>G, C, D, Em, Am</strong>.</li>
               <li>These = thousands of songs.</li>
               <li>Practice changing between them.</li>
@@ -47,7 +47,7 @@ export default function GuitarForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Learn online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>JustinGuitar.com</strong> — FREE, gold standard.</li>
               <li><strong>YouTube</strong> — Marty Schwartz beginner.</li>
               <li><strong>Yousician</strong> — app, gamified.</li>
@@ -61,7 +61,7 @@ export default function GuitarForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior comforts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Light gauge strings (less finger pain).</li>
               <li>Acoustic-electric — easier on body.</li>
               <li>Strap — sit straight, don&apos;t hold up.</li>
@@ -75,7 +75,7 @@ export default function GuitarForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy first songs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Knockin&apos; on Heaven&apos;s Door.</li>
               <li>Sweet Caroline.</li>
               <li>Wagon Wheel.</li>
@@ -90,7 +90,7 @@ export default function GuitarForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hand dexterity.</li>
               <li>Brain new pathways.</li>
               <li>Stress relief.</li>
@@ -104,7 +104,7 @@ export default function GuitarForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Be patient</h3>
-            <p className="text-sm text-muted-foreground">First 4-6 weeks fingers hurt — calluses form. Push through. Most quit too early. After 90 days you&apos;ll be playing real songs. After year you&apos;ll be playing for family. Family member learns alongside = bonding. Library has guitar books. Free + lifetime hobby.</p>
+            <p className="text-base text-muted-foreground">First 4-6 weeks fingers hurt — calluses form. Push through. Most quit too early. After 90 days you&apos;ll be playing real songs. After year you&apos;ll be playing for family. Family member learns alongside = bonding. Library has guitar books. Free + lifetime hobby.</p>
           </CardContent>
         </Card>
       </main>

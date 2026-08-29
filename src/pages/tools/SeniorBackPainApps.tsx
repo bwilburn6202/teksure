@@ -22,7 +22,7 @@ export default function SeniorBackPainApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Standing desk</h2><p>$40 adapter. Stand 1-2 hours daily. Less back pain than sitting all day.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lumbar support</h2><p>$30 chair pillow. Easy lower back relief.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lift smart</h2><p>Bend knees, not back. 10 lb lift wrong = injury for seniors.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Back pain often weak core. 5-min daily plank fixes most issues.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Back pain often weak core. 5-min daily plank fixes most issues.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorStoveAutoShutoff() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why critical</h2><p>Cooking fires are #1 senior home fire cause. Auto-shutoff saves lives.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cheap alternative</h2><p>$15 timer. Set every time you cook. Buzzer reminds.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">For dementia</h2><p>Some Medicaid waivers cover stove guard for cognitive impairment.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Replace stove with induction. No flame = much safer for seniors.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Replace stove with induction. No flame = much safer for seniors.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

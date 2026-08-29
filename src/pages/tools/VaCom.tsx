@@ -19,7 +19,7 @@ export default function VaCom() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup VA.gov account</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>va.gov</strong>.</li>
               <li>Sign in with Login.gov or ID.me.</li>
               <li>Verify VA enrollment.</li>
@@ -32,7 +32,7 @@ export default function VaCom() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can do</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Schedule + cancel medical appointments.</li>
               <li>View test results.</li>
               <li>Refill prescriptions.</li>
@@ -49,7 +49,7 @@ export default function VaCom() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Benefits seniors often miss</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Aid &amp; Attendance pension</strong> — for vets needing daily care help. $1,500-2,500/mo.</li>
               <li><strong>Free hearing aids</strong> — VA covers fully.</li>
               <li><strong>Free dental</strong> — for service-connected conditions.</li>
@@ -67,7 +67,7 @@ export default function VaCom() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">PACT Act (2022)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Massive expansion of VA benefits.</li>
               <li>Covers veterans exposed to burn pits, Agent Orange, etc.</li>
               <li>Many older vets newly qualified.</li>
@@ -80,7 +80,7 @@ export default function VaCom() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">VSO can help</h3>
-            <p className="text-sm text-muted-foreground">Veterans Service Officers (VSO) are FREE help. American Legion, VFW, DAV all have them. They navigate VA paperwork + help apply. Don&apos;t pay claim assistance companies — VSO is free + better. Find at va.gov/vso.</p>
+            <p className="text-base text-muted-foreground">Veterans Service Officers (VSO) are FREE help. American Legion, VFW, DAV all have them. They navigate VA paperwork + help apply. Don&apos;t pay claim assistance companies — VSO is free + better. Find at va.gov/vso.</p>
           </CardContent>
         </Card>
       </main>

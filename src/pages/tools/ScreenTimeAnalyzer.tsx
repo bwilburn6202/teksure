@@ -84,8 +84,8 @@ export default function ScreenTimeAnalyzer() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-blue-50 dark:bg-blue-950/30 flex items-center justify-center flex-shrink-0">
-                <Clock className="h-6 w-6 text-blue-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-info flex items-center justify-center flex-shrink-0">
+                <Clock className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -103,17 +103,17 @@ export default function ScreenTimeAnalyzer() {
             <CardContent className="space-y-4">
               <div className="grid grid-cols-2 gap-3">
                 {([['iphone', 'iPhone / iPad'], ['android', 'Android']] as const).map(([val, label]) => (
-                  <button key={val} onClick={() => setPlatform(val)} className={`border rounded-xl p-4 text-center text-sm font-medium transition-colors ${platform === val ? 'border-blue-500 bg-blue-50 dark:bg-blue-950/20 text-blue-700' : 'hover:bg-muted'}`}>
+                  <button key={val} onClick={() => setPlatform(val)} className={`border rounded-xl p-4 text-center text-sm font-medium transition-colors ${platform === val ? 'border-blue-500 bg-info text-blue-700' : 'hover:bg-muted'}`}>
                     {label}
                   </button>
                 ))}
               </div>
               {platform && (
                 <div className="bg-muted/50 rounded-xl p-4">
-                  <p className="font-medium text-sm mb-2">How to Find Your Screen Time</p>
+                  <p className="font-medium text-base mb-2">How to Find Your Screen Time</p>
                   <ol className="space-y-1.5">
                     {findInstructions[platform].map((step, i) => (
-                      <li key={i} className="flex gap-2 text-sm text-muted-foreground">
+                      <li key={i} className="flex gap-2 text-base text-muted-foreground">
                         <span className="font-medium text-foreground">{i + 1}.</span> {step}
                       </li>
                     ))}
@@ -128,19 +128,19 @@ export default function ScreenTimeAnalyzer() {
             <CardHeader><CardTitle className="text-lg">Enter Your Usage</CardTitle></CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <label className="text-sm font-medium block mb-1">Daily average (hours)</label>
+                <label className="text-base font-medium block mb-1">Daily average (hours)</label>
                 <Input type="number" step="0.5" min="0" max="24" placeholder="e.g. 5.5" value={dailyAvg} onChange={e => setDailyAvg(e.target.value)} />
               </div>
               <div>
-                <label className="text-sm font-medium block mb-1">Most-used apps (comma-separated)</label>
+                <label className="text-base font-medium block mb-1">Most-used apps (comma-separated)</label>
                 <Input placeholder="e.g. Facebook, YouTube, Messages" value={topApps} onChange={e => setTopApps(e.target.value)} />
               </div>
               <div>
-                <p className="text-sm font-medium mb-2">Hours per category (optional)</p>
+                <p className="text-base font-medium mb-2">Hours per category (optional)</p>
                 <div className="grid grid-cols-2 gap-3">
                   {categories.map(cat => (
                     <div key={cat}>
-                      <label className="text-xs text-muted-foreground">{cat}</label>
+                      <label className="text-sm text-muted-foreground">{cat}</label>
                       <Input type="number" step="0.5" min="0" placeholder="0" value={categoryHours[cat] || ''} onChange={e => setCategoryHours(prev => ({ ...prev, [cat]: e.target.value }))} />
                     </div>
                   ))}
@@ -160,16 +160,16 @@ export default function ScreenTimeAnalyzer() {
                 <CardContent className="space-y-4">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="text-center p-4 bg-muted/50 rounded-xl">
-                      <p className="text-sm text-muted-foreground mb-1">Your Daily Average</p>
-                      <p className="text-3xl font-bold text-blue-600">{dailyNum.toFixed(1)}h</p>
+                      <p className="text-base text-muted-foreground mb-1">Your Daily Average</p>
+                      <p className="text-3xl font-bold text-info-foreground">{dailyNum.toFixed(1)}h</p>
                     </div>
                     <div className="text-center p-4 bg-muted/50 rounded-xl">
-                      <p className="text-sm text-muted-foreground mb-1">National Average (65+)</p>
-                      <p className="text-3xl font-bold text-gray-600">{NATIONAL_AVG}h</p>
+                      <p className="text-base text-muted-foreground mb-1">National Average (65+)</p>
+                      <p className="text-3xl font-bold text-muted-foreground">{NATIONAL_AVG}h</p>
                     </div>
                   </div>
                   <div className={`rounded-xl p-4 ${diff > 0 ? 'bg-amber-50 dark:bg-amber-950/20' : 'bg-emerald-50 dark:bg-emerald-950/20'}`}>
-                    <p className="text-sm font-medium">
+                    <p className="text-base font-medium">
                       {diff > 2 ? 'Your screen time is significantly above the national average. Consider trying some of the reduction tips below.' :
                        diff > 0 ? 'Your screen time is slightly above the national average. Small changes can make a big difference.' :
                        'Your screen time is below the national average. Keep up the good habits!'}
@@ -177,7 +177,7 @@ export default function ScreenTimeAnalyzer() {
                   </div>
                   {topApps && (
                     <div>
-                      <p className="text-sm font-medium mb-2">Your Top Apps</p>
+                      <p className="text-base font-medium mb-2">Your Top Apps</p>
                       <div className="flex flex-wrap gap-2">
                         {topApps.split(',').map((app, i) => (
                           <Badge key={i} variant="outline">{app.trim()}</Badge>
@@ -187,7 +187,7 @@ export default function ScreenTimeAnalyzer() {
                   )}
                   {totalHours > 0 && (
                     <div>
-                      <p className="text-sm font-medium mb-2">Category Breakdown</p>
+                      <p className="text-base font-medium mb-2">Category Breakdown</p>
                       {categories.filter(c => parseFloat(categoryHours[c]) > 0).map(c => {
                         const val = parseFloat(categoryHours[c]);
                         return (
@@ -209,12 +209,12 @@ export default function ScreenTimeAnalyzer() {
                 <CardHeader><CardTitle className="text-lg">Healthy Habits Checklist</CardTitle></CardHeader>
                 <CardContent className="space-y-2">
                   {healthyHabits.map((item, i) => (
-                    <label key={i} className="flex items-start gap-3 text-sm cursor-pointer py-1">
+                    <label key={i} className="flex items-start gap-3 text-base cursor-pointer py-1">
                       <input type="checkbox" checked={habits.has(i)} onChange={() => setHabits(prev => { const n = new Set(prev); n.has(i) ? n.delete(i) : n.add(i); return n; })} className="mt-0.5 h-4 w-4 rounded" />
                       <span className={habits.has(i) ? 'line-through text-muted-foreground' : ''}>{item}</span>
                     </label>
                   ))}
-                  <p className="text-xs text-muted-foreground pt-2">
+                  <p className="text-sm text-muted-foreground pt-2">
                     <CheckCircle className="h-3 w-3 inline mr-1" />{habits.size} of {healthyHabits.length} habits
                   </p>
                 </CardContent>
@@ -225,15 +225,15 @@ export default function ScreenTimeAnalyzer() {
           {/* Tips */}
           <div className="rounded-2xl border p-6">
             <button onClick={() => setShowTips(!showTips)} className="flex items-center gap-3 w-full text-left">
-              <Lightbulb className="h-5 w-5 text-amber-500 flex-shrink-0" aria-hidden="true" />
-              <span className="font-semibold text-sm flex-1">Tips for Reducing Screen Time</span>
+              <Lightbulb className="h-5 w-5 text-warn-foreground flex-shrink-0" aria-hidden="true" />
+              <span className="font-semibold text-base flex-1">Tips for Reducing Screen Time</span>
               {showTips ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
             </button>
             {showTips && (
               <ul className="mt-4 space-y-2">
                 {reductionTips.map((tip, i) => (
-                  <li key={i} className="flex gap-3 text-sm text-muted-foreground">
-                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 dark:bg-amber-950/30 text-amber-700 text-xs flex items-center justify-center font-medium">{i + 1}</span>
+                  <li key={i} className="flex gap-3 text-base text-muted-foreground">
+                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-warn text-warn-foreground text-xs flex items-center justify-center font-medium">{i + 1}</span>
                     {tip}
                   </li>
                 ))}

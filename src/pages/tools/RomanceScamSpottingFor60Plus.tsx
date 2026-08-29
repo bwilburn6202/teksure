@@ -19,7 +19,7 @@ export default function RomanceScamSpottingFor60Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors targeted</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Often have savings + retirement.</li>
               <li>May be lonely after spouse loss.</li>
               <li>Less familiar with online tactics.</li>
@@ -33,7 +33,7 @@ export default function RomanceScamSpottingFor60Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Major red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Falls in love quickly (1–2 weeks).</li>
               <li>Wants to switch off-app immediately.</li>
               <li>Refuses video chat — &quot;camera broken.&quot;</li>
@@ -47,7 +47,7 @@ export default function RomanceScamSpottingFor60Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The money request</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Eventually asks for money.</li>
               <li>&quot;Stuck overseas, need ticket home.&quot;</li>
               <li>&quot;Medical emergency.&quot;</li>
@@ -61,7 +61,7 @@ export default function RomanceScamSpottingFor60Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Verify identity</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reverse image search their photos.</li>
               <li>Use Google Images, TinEye.</li>
               <li>Stolen photos appear elsewhere online.</li>
@@ -75,7 +75,7 @@ export default function RomanceScamSpottingFor60Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you suspect scam</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stop all communication immediately.</li>
               <li>Don&apos;t confront — they&apos;ll manipulate.</li>
               <li>Block + report on dating site.</li>
@@ -89,7 +89,7 @@ export default function RomanceScamSpottingFor60Plus() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Talk to family</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adult children should ask about online dates.</li>
               <li>Senior should share suspicions with family.</li>
               <li>Bank may flag wire transfers to scammers.</li>
@@ -103,7 +103,7 @@ export default function RomanceScamSpottingFor60Plus() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Money = scam, every time</h3>
-            <p className="text-sm text-muted-foreground">The simplest rule: anyone you&apos;ve never met in person who asks for money is a scammer. No exceptions. Real partners don&apos;t need money from someone they haven&apos;t met. Block them and report. Tell family even if embarrassing. The earlier you stop, the less you lose. Many seniors lose retirement savings to these schemes — don&apos;t become a statistic.</p>
+            <p className="text-base text-muted-foreground">The simplest rule: anyone you&apos;ve never met in person who asks for money is a scammer. No exceptions. Real partners don&apos;t need money from someone they haven&apos;t met. Block them and report. Tell family even if embarrassing. The earlier you stop, the less you lose. Many seniors lose retirement savings to these schemes — don&apos;t become a statistic.</p>
           </CardContent>
         </Card>
       </main>

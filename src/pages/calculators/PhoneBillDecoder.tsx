@@ -294,25 +294,25 @@ function verdictBadge(verdict: DecodedInfo['verdict']) {
   switch (verdict) {
     case 'standard':
       return (
-        <Badge className="bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200 border-0">
+        <Badge className="bg-muted text-foreground border-0">
           Standard
         </Badge>
       );
     case 'watch':
       return (
-        <Badge className="bg-amber-100 text-amber-800 dark:bg-amber-950/40 dark:text-amber-200 border-0">
+        <Badge className="bg-warn text-warn-foreground border-0">
           Worth a look
         </Badge>
       );
     case 'drop':
       return (
-        <Badge className="bg-rose-100 text-rose-800 dark:bg-rose-950/40 dark:text-rose-200 border-0">
+        <Badge className="bg-danger text-danger-foreground border-0">
           Often droppable
         </Badge>
       );
     case 'good':
       return (
-        <Badge className="bg-emerald-100 text-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-200 border-0">
+        <Badge className="bg-success text-success-foreground border-0">
           Keep this
         </Badge>
       );
@@ -323,13 +323,13 @@ function verdictIcon(verdict: DecodedInfo['verdict']) {
   const base = 'h-5 w-5 shrink-0';
   switch (verdict) {
     case 'standard':
-      return <Info className={`${base} text-slate-500`} aria-hidden="true" />;
+      return <Info className={`${base} text-muted-foreground`} aria-hidden="true" />;
     case 'watch':
-      return <AlertTriangle className={`${base} text-amber-600`} aria-hidden="true" />;
+      return <AlertTriangle className={`${base} text-warn-foreground`} aria-hidden="true" />;
     case 'drop':
-      return <AlertTriangle className={`${base} text-rose-600`} aria-hidden="true" />;
+      return <AlertTriangle className={`${base} text-danger-foreground`} aria-hidden="true" />;
     case 'good':
-      return <CheckCircle2 className={`${base} text-emerald-600`} aria-hidden="true" />;
+      return <CheckCircle2 className={`${base} text-success-foreground`} aria-hidden="true" />;
   }
 }
 
@@ -471,7 +471,7 @@ export default function PhoneBillDecoder() {
           <div className="flex flex-col gap-4 max-w-3xl">
             <div className="flex items-center gap-3">
               <div className="rounded-2xl bg-teal-600/10 p-3 border border-teal-600/20">
-                <Phone className="h-7 w-7 text-teal-700 dark:text-teal-300" aria-hidden="true" />
+                <Phone className="h-7 w-7 text-success-foreground " aria-hidden="true" />
               </div>
               <Badge className="bg-teal-600 text-white border-0">Money-saver</Badge>
             </div>
@@ -495,7 +495,7 @@ export default function PhoneBillDecoder() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg md:text-xl">
-              <Tag className="h-5 w-5 text-teal-700" aria-hidden="true" />
+              <Tag className="h-5 w-5 text-success-foreground" aria-hidden="true" />
               Step 1 — Who's your carrier?
             </CardTitle>
           </CardHeader>
@@ -522,7 +522,7 @@ export default function PhoneBillDecoder() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg md:text-xl">
-              <Receipt className="h-5 w-5 text-teal-700" aria-hidden="true" />
+              <Receipt className="h-5 w-5 text-success-foreground" aria-hidden="true" />
               Step 2 — Add each line from your bill
             </CardTitle>
           </CardHeader>
@@ -586,7 +586,7 @@ export default function PhoneBillDecoder() {
 
             {/* Suggestions */}
             <div>
-              <p className="text-sm text-muted-foreground mb-2">
+              <p className="text-base text-muted-foreground mb-2">
                 Common line items — tap one to autofill:
               </p>
               <div className="flex flex-wrap gap-2">
@@ -595,7 +595,7 @@ export default function PhoneBillDecoder() {
                     key={s.label}
                     type="button"
                     onClick={() => useSuggestion(s)}
-                    className="px-3 py-2 rounded-full text-sm bg-teal-50 dark:bg-teal-950/30 text-teal-800 dark:text-teal-100 border border-teal-200 dark:border-teal-900 hover:bg-teal-100 dark:hover:bg-teal-900/40 transition min-h-11"
+                    className="px-3 py-2 rounded-full text-sm bg-success text-success-foreground border border-success-foreground/25 hover:bg-success transition min-h-11"
                   >
                     {s.label}
                   </button>
@@ -630,11 +630,11 @@ export default function PhoneBillDecoder() {
                               </Badge>
                               {verdictBadge(d.verdict)}
                             </div>
-                            <p className="text-sm md:text-base text-muted-foreground mt-1">
+                            <p className="text-base md:text-base text-muted-foreground mt-1">
                               {d.plainEnglish}
                             </p>
                             {d.tip && (
-                              <p className="text-sm md:text-base text-teal-800 dark:text-teal-200 mt-2 flex items-start gap-1">
+                              <p className="text-base md:text-base text-success-foreground mt-2 flex items-start gap-1">
                                 <Sparkles className="h-4 w-4 mt-0.5 shrink-0" aria-hidden="true" />
                                 <span>
                                   <span className="font-semibold">Quick Tip:</span> {d.tip}
@@ -654,7 +654,7 @@ export default function PhoneBillDecoder() {
                             aria-label={`Remove ${i.label}`}
                             className="min-h-11 min-w-11"
                           >
-                            <Trash2 className="h-5 w-5 text-rose-600" aria-hidden="true" />
+                            <Trash2 className="h-5 w-5 text-danger-foreground" aria-hidden="true" />
                           </Button>
                         </div>
                       </div>
@@ -663,14 +663,14 @@ export default function PhoneBillDecoder() {
                 })}
 
                 {/* Totals */}
-                <div className="rounded-lg bg-teal-50 dark:bg-teal-950/30 border border-teal-200 dark:border-teal-900 p-4 md:p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                <div className="rounded-lg bg-success border border-success-foreground/25 p-4 md:p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
                   <div className="flex items-center gap-2">
-                    <DollarSign className="h-5 w-5 text-teal-700" aria-hidden="true" />
+                    <DollarSign className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                     <span className="text-base md:text-lg font-semibold text-foreground">
                       Monthly bill total
                     </span>
                   </div>
-                  <span className="text-2xl font-bold text-teal-800 dark:text-teal-200">
+                  <span className="text-2xl font-bold text-success-foreground ">
                     {money(totals.total)}
                   </span>
                 </div>
@@ -680,10 +680,10 @@ export default function PhoneBillDecoder() {
         </Card>
 
         {/* Savings calculator */}
-        <Card className="border-emerald-200 dark:border-emerald-900">
+        <Card className="border-success-foreground/25 ">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg md:text-xl">
-              <TrendingDown className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+              <TrendingDown className="h-5 w-5 text-success-foreground" aria-hidden="true" />
               Here's what you could save
             </CardTitle>
           </CardHeader>
@@ -699,13 +699,13 @@ export default function PhoneBillDecoder() {
                   {savings.list.map((s) => (
                     <div
                       key={s.label}
-                      className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 rounded-md bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900 p-3"
+                      className="flex flex-col md:flex-row md:items-center md:justify-between gap-1 rounded-md bg-success border border-success-foreground/25 p-3"
                     >
                       <div>
                         <p className="text-base font-semibold text-foreground">{s.label}</p>
-                        <p className="text-sm text-muted-foreground">{s.why}</p>
+                        <p className="text-base text-muted-foreground">{s.why}</p>
                       </div>
-                      <div className="text-emerald-800 dark:text-emerald-200 font-semibold text-base">
+                      <div className="text-success-foreground font-semibold text-base">
                         -{money(s.amount)}/mo
                       </div>
                     </div>
@@ -719,7 +719,7 @@ export default function PhoneBillDecoder() {
                     up to {money(savings.droppable)}/mo
                   </span>
                 </div>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   That's about {money(savings.droppable * 12)} a year without changing carriers.
                 </p>
               </>
@@ -728,7 +728,7 @@ export default function PhoneBillDecoder() {
             <div className="grid md:grid-cols-2 gap-3 pt-2">
               <div className="rounded-md border border-border p-4">
                 <p className="font-semibold text-base mb-1">Use under 5 GB of data?</p>
-                <p className="text-sm text-muted-foreground mb-3">
+                <p className="text-base text-muted-foreground mb-3">
                   An MVNO like Mint, Consumer Cellular, or Visible could cut your bill in half on
                   the same network.
                 </p>
@@ -740,7 +740,7 @@ export default function PhoneBillDecoder() {
               </div>
               <div className="rounded-md border border-border p-4">
                 <p className="font-semibold text-base mb-1">Device almost paid off?</p>
-                <p className="text-sm text-muted-foreground mb-3">
+                <p className="text-base text-muted-foreground mb-3">
                   Once you own the phone, you're free to move to a cheaper carrier. Ask for your
                   payoff amount.
                 </p>
@@ -755,15 +755,15 @@ export default function PhoneBillDecoder() {
         </Card>
 
         {/* Gotcha alerts */}
-        <Card className="border-amber-200 dark:border-amber-900">
+        <Card className="border-warn-foreground/25 ">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg md:text-xl">
-              <AlertTriangle className="h-5 w-5 text-amber-600" aria-hidden="true" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground" aria-hidden="true" />
               Hidden gotchas to watch for
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-3">
-            <Alert className="border-amber-200 dark:border-amber-900 bg-amber-50 dark:bg-amber-950/30">
+            <Alert className="border-warn-foreground/25 bg-warn ">
               <AlertTitle className="text-base font-semibold">
                 "Next-Up Anytime" — $5-7/month upgrade fund
               </AlertTitle>
@@ -772,7 +772,7 @@ export default function PhoneBillDecoder() {
                 never use.
               </AlertDescription>
             </Alert>
-            <Alert className="border-amber-200 dark:border-amber-900 bg-amber-50 dark:bg-amber-950/30">
+            <Alert className="border-warn-foreground/25 bg-warn ">
               <AlertTitle className="text-base font-semibold">
                 Device protection after the warranty
               </AlertTitle>
@@ -781,7 +781,7 @@ export default function PhoneBillDecoder() {
                 may be double-covered.
               </AlertDescription>
             </Alert>
-            <Alert className="border-amber-200 dark:border-amber-900 bg-amber-50 dark:bg-amber-950/30">
+            <Alert className="border-warn-foreground/25 bg-warn ">
               <AlertTitle className="text-base font-semibold">
                 "International pass" you never use
               </AlertTitle>
@@ -789,7 +789,7 @@ export default function PhoneBillDecoder() {
                 Remove the pass between trips. You can turn it back on the day before you fly.
               </AlertDescription>
             </Alert>
-            <Alert className="border-rose-200 dark:border-rose-900 bg-rose-50 dark:bg-rose-950/30">
+            <Alert className="border-danger-foreground/25 bg-danger ">
               <AlertTitle className="text-base font-semibold">
                 Third-party charges billed through your carrier
               </AlertTitle>
@@ -806,7 +806,7 @@ export default function PhoneBillDecoder() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg md:text-xl">
-              <ShieldCheck className="h-5 w-5 text-teal-700" aria-hidden="true" />
+              <ShieldCheck className="h-5 w-5 text-success-foreground" aria-hidden="true" />
               Discounts you may qualify for
             </CardTitle>
           </CardHeader>
@@ -827,7 +827,7 @@ export default function PhoneBillDecoder() {
                   className="rounded-md border border-border p-3 bg-card"
                 >
                   <p className="font-semibold text-base text-foreground">{d.label}</p>
-                  <p className="text-sm text-muted-foreground">{d.detail}</p>
+                  <p className="text-base text-muted-foreground">{d.detail}</p>
                 </div>
               ))}
             </div>
@@ -835,10 +835,10 @@ export default function PhoneBillDecoder() {
         </Card>
 
         {/* Negotiation script */}
-        <Card className="border-teal-200 dark:border-teal-900">
+        <Card className="border-success-foreground/25 ">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg md:text-xl">
-              <PhoneCall className="h-5 w-5 text-teal-700" aria-hidden="true" />
+              <PhoneCall className="h-5 w-5 text-success-foreground" aria-hidden="true" />
               Your call script
             </CardTitle>
           </CardHeader>
@@ -870,21 +870,21 @@ export default function PhoneBillDecoder() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg md:text-xl">
-              <Scale className="h-5 w-5 text-teal-700" aria-hidden="true" />
+              <Scale className="h-5 w-5 text-success-foreground" aria-hidden="true" />
               Thinking of switching? Check these first
             </CardTitle>
           </CardHeader>
           <CardContent>
             <ul className="space-y-3 text-base">
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-5 w-5 text-emerald-600 mt-0.5 shrink-0" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground mt-0.5 shrink-0" aria-hidden="true" />
                 <span>
                   <span className="font-semibold">Port-in number:</span> you can keep your
                   existing phone number. Don't cancel the old line until the new SIM is active.
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-5 w-5 text-emerald-600 mt-0.5 shrink-0" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground mt-0.5 shrink-0" aria-hidden="true" />
                 <span>
                   <span className="font-semibold">Unlocked device:</span> your phone must be
                   unlocked. If you're still paying it off, it may be locked. Ask your carrier to
@@ -892,14 +892,14 @@ export default function PhoneBillDecoder() {
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-5 w-5 text-emerald-600 mt-0.5 shrink-0" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground mt-0.5 shrink-0" aria-hidden="true" />
                 <span>
                   <span className="font-semibold">eSIM:</span> most modern phones use a built-in
                   eSIM — no physical card mailed, activation in minutes.
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <CheckCircle2 className="h-5 w-5 text-emerald-600 mt-0.5 shrink-0" aria-hidden="true" />
+                <CheckCircle2 className="h-5 w-5 text-success-foreground mt-0.5 shrink-0" aria-hidden="true" />
                 <span>
                   <span className="font-semibold">Final bill:</span> expect one more bill from
                   the old carrier covering partial-month service. Early termination fees are
@@ -918,7 +918,7 @@ export default function PhoneBillDecoder() {
               <p className="text-base font-semibold text-foreground">
                 Coming soon: upload or paste your bill
               </p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 We're building a reader that pulls line items straight from a PDF or photo of your
                 paper bill. For now, type them in above.
               </p>
@@ -927,10 +927,10 @@ export default function PhoneBillDecoder() {
         </Card>
 
         {/* Share with family */}
-        <Card className="border-cyan-200 dark:border-cyan-900 bg-cyan-50/40 dark:bg-cyan-950/20">
+        <Card className="border-info-foreground/25 bg-cyan-50/40 dark:bg-cyan-950/20">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg md:text-xl">
-              <Users className="h-5 w-5 text-cyan-700" aria-hidden="true" />
+              <Users className="h-5 w-5 text-info-foreground" aria-hidden="true" />
               Helping a parent or loved one
             </CardTitle>
           </CardHeader>
@@ -942,7 +942,7 @@ export default function PhoneBillDecoder() {
             <div className="rounded-lg bg-muted p-4 md:p-5 text-base md:text-lg leading-relaxed whitespace-pre-wrap">
               {`"Hi, my name is [YOUR NAME] and I'm on the line with my parent, [PARENT'S NAME], who is the account holder. They're giving you verbal authorization to discuss the account with me. We're reviewing the monthly bill and want to see what options are available to lower the total."`}
             </div>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               Have your parent's account number, billing ZIP, and the last 4 of the card on file
               ready. The rep will ask the account holder directly before sharing details.
             </p>
@@ -953,7 +953,7 @@ export default function PhoneBillDecoder() {
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-lg md:text-xl">
-              <Info className="h-5 w-5 text-teal-700" aria-hidden="true" />
+              <Info className="h-5 w-5 text-success-foreground" aria-hidden="true" />
               Common questions
             </CardTitle>
           </CardHeader>

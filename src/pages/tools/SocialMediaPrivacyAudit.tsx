@@ -19,7 +19,7 @@ export default function SocialMediaPrivacyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why audit?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reduce scammer access.</li>
               <li>Protect your photos.</li>
               <li>Stop strangers seeing personal info.</li>
@@ -33,7 +33,7 @@ export default function SocialMediaPrivacyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Facebook</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Privacy.</li>
               <li>&quot;Who can see your future posts?&quot; → Friends.</li>
               <li>&quot;Who can look you up by phone?&quot; → Friends.</li>
@@ -47,7 +47,7 @@ export default function SocialMediaPrivacyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Instagram</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Privacy.</li>
               <li>Switch to private account.</li>
               <li>Block + restrict harassers.</li>
@@ -61,7 +61,7 @@ export default function SocialMediaPrivacyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">All accounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Enable 2FA everywhere.</li>
               <li>Strong unique passwords.</li>
               <li>Recovery email + phone updated.</li>
@@ -75,7 +75,7 @@ export default function SocialMediaPrivacyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Birthday + location</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hide birth year (= identity theft).</li>
               <li>Hide hometown.</li>
               <li>Don&apos;t post home address.</li>
@@ -89,7 +89,7 @@ export default function SocialMediaPrivacyAudit() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Advertising opt-outs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Facebook ad preferences.</li>
               <li>Google ad personalization.</li>
               <li>Apple iOS — limit ad tracking.</li>
@@ -103,7 +103,7 @@ export default function SocialMediaPrivacyAudit() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick win: family photos</h3>
-            <p className="text-sm text-muted-foreground">Stop sharing grandchildren photos publicly. Friends-only or private. Predators scan public profiles. Can ID school, route, family. Set kids&apos; photos friends-only. Don&apos;t tag minors in public posts. Family group chat better. Print + mail still meaningful. Privacy + protection.</p>
+            <p className="text-base text-muted-foreground">Stop sharing grandchildren photos publicly. Friends-only or private. Predators scan public profiles. Can ID school, route, family. Set kids&apos; photos friends-only. Don&apos;t tag minors in public posts. Family group chat better. Print + mail still meaningful. Privacy + protection.</p>
           </CardContent>
         </Card>
       </main>

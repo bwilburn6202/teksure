@@ -186,7 +186,7 @@ export default function SmartSpeakerPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-cyan-500/10 rounded-full">
-                <Speaker className="h-8 w-8 text-cyan-600" />
+                <Speaker className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Smart Speaker Picker</h1>
@@ -202,7 +202,7 @@ export default function SmartSpeakerPicker() {
           {!submitted ? (
             <Card className="border-border shadow-sm">
               <CardContent className="p-6">
-                <p className="text-sm font-semibold mb-3">What matters most? Pick anything that applies.</p>
+                <p className="text-base font-semibold mb-3">What matters most? Pick anything that applies.</p>
                 <div className="space-y-2 mb-5">
                   {WANT_OPTIONS.map(o => (
                     <label key={o.id}
@@ -210,7 +210,7 @@ export default function SmartSpeakerPicker() {
                         wants.has(o.id) ? 'border-primary bg-primary/5' : 'border-border hover:bg-muted/40'
                       }`}>
                       <Checkbox checked={wants.has(o.id)} onCheckedChange={() => toggle(o.id)} />
-                      <span className="font-medium text-sm">{o.label}</span>
+                      <span className="font-medium text-base">{o.label}</span>
                     </label>
                   ))}
                 </div>
@@ -245,20 +245,20 @@ export default function SmartSpeakerPicker() {
                         </div>
                         <ul className="space-y-1.5 mb-3">
                           {p.whyHere.map((why, k) => (
-                            <li key={k} className="flex gap-2 text-sm">
+                            <li key={k} className="flex gap-2 text-base">
                               <span className="text-primary shrink-0">•</span>
                               <span>{why}</span>
                             </li>
                           ))}
                         </ul>
                         {p.watchOut && (
-                          <div className="p-2 rounded bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800 text-xs">
-                            <strong className="text-amber-700 dark:text-amber-300">Watch out:</strong>{' '}
-                            <span className="text-amber-700 dark:text-amber-300">{p.watchOut}</span>
+                          <div className="p-2 rounded bg-warn border border-warn-foreground/25 text-xs">
+                            <strong className="text-warn-foreground ">Watch out:</strong>{' '}
+                            <span className="text-warn-foreground ">{p.watchOut}</span>
                           </div>
                         )}
                         {reasoning[i] && (
-                          <p className="text-xs text-muted-foreground mt-3 italic">Why for you: {reasoning[i].split(': ')[1]}</p>
+                          <p className="text-sm text-muted-foreground mt-3 italic">Why for you: {reasoning[i].split(': ')[1]}</p>
                         )}
                         <a href={p.link} target="_blank" rel="noreferrer"
                           className="inline-flex items-center gap-1 mt-3 text-xs text-primary hover:underline">
@@ -272,8 +272,8 @@ export default function SmartSpeakerPicker() {
 
               <Card className="border-border bg-muted/30 mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-2 flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-primary" />Privacy basics for any smart speaker</p>
-                  <ul className="space-y-1.5 text-xs text-muted-foreground">
+                  <p className="text-base font-semibold mb-2 flex items-center gap-2"><ShieldCheck className="h-4 w-4 text-primary" />Privacy basics for any smart speaker</p>
+                  <ul className="space-y-1.5 text-sm text-muted-foreground">
                     <li className="flex gap-2"><span className="text-primary">•</span><span>Mute the microphone with the physical button when you do not want it listening (every model has one).</span></li>
                     <li className="flex gap-2"><span className="text-primary">•</span><span>Turn off the camera shutter on Echo Show and Nest Hub Max if you are not on a call.</span></li>
                     <li className="flex gap-2"><span className="text-primary">•</span><span>In the app, set voice recordings to "auto-delete after 3 months" — none of these need to keep your voice for years.</span></li>
@@ -288,20 +288,20 @@ export default function SmartSpeakerPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/smart-home-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Smart Home Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair speaker with bulbs, plugs, doorbells.</p>
+                <p className="font-medium text-base">Smart Home Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair speaker with bulbs, plugs, doorbells.</p>
               </Link>
               <Link to="/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Grandparent Device Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair the speaker with a tablet for grandparents.</p>
+                <p className="font-medium text-base">Grandparent Device Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair the speaker with a tablet for grandparents.</p>
               </Link>
               <Link to="/tools/senior-friendly-apps" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Senior-Friendly Apps</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Apps that work great with smart speakers.</p>
+                <p className="font-medium text-base">Senior-Friendly Apps</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Apps that work great with smart speakers.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <Smartphone className="h-3 w-3" /> Quick Tip: pick a speaker that matches the phones in your house. Mixed brands work, but the same brand is smoother.
           </p>
         </div>

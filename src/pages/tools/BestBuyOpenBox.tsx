@@ -19,7 +19,7 @@ export default function BestBuyOpenBox() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Open Box conditions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Excellent — Certified</strong> — like new, full warranty.</li>
               <li><strong>Excellent</strong> — slight cosmetic flaws, unused, full warranty.</li>
               <li><strong>Satisfactory</strong> — slight wear, full function, full warranty.</li>
@@ -32,7 +32,7 @@ export default function BestBuyOpenBox() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to find</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>BestBuy.com/openbox</strong> — searchable inventory across stores.</li>
               <li>Filter by store + condition.</li>
               <li>Online photos of actual unit.</li>
@@ -46,7 +46,7 @@ export default function BestBuyOpenBox() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best buys open-box</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>TVs</strong> — 25-40% off. Most common.</li>
               <li><strong>Laptops</strong> — 15-25% off. Reset to factory before use.</li>
               <li><strong>iPads / tablets</strong> — 20-30% off if available.</li>
@@ -60,7 +60,7 @@ export default function BestBuyOpenBox() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other refurbished programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Refurbished Store</strong> — apple.com/shop/refurbished. Like new + 1-year warranty. 15-30% off.</li>
               <li><strong>Amazon Renewed</strong> — varies in quality. Read reviews.</li>
               <li><strong>Dell Outlet</strong> — refurbished business laptops. 30-50% off.</li>
@@ -73,7 +73,7 @@ export default function BestBuyOpenBox() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Apple refurbished is gold standard</h3>
-            <p className="text-sm text-muted-foreground">Apple refurbished products are inspected, replaced battery + shell if needed, and come with full 1-year warranty. INDISTINGUISHABLE from new. Save 15-30%. Best deal in tech for most buyers.</p>
+            <p className="text-base text-muted-foreground">Apple refurbished products are inspected, replaced battery + shell if needed, and come with full 1-year warranty. INDISTINGUISHABLE from new. Save 15-30%. Best deal in tech for most buyers.</p>
           </CardContent>
         </Card>
       </main>

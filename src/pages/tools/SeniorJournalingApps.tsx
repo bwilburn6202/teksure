@@ -22,7 +22,7 @@ export default function SeniorJournalingApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Studies show</h2><p>Journaling reduces anxiety, depression. Real measurable benefit.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice journaling</h2><p>Easier than typing. iPhone Voice Memos. 5 min daily.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Gratitude focus</h2><p>3 things grateful for daily. Real mood improvement in 2 weeks.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 5 minutes journaling daily = real mental health treatment.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 5 minutes journaling daily = real mental health treatment.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

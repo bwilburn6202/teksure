@@ -19,7 +19,7 @@ export default function FEMAAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What the FEMA app does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free official US government emergency app.</li>
               <li>Real-time weather + disaster alerts.</li>
               <li>Shelter locations during disasters.</li>
@@ -33,7 +33,7 @@ export default function FEMAAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to set up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search &quot;FEMA&quot; in app store.</li>
               <li>Verify it&apos;s official: published by FEMA.</li>
               <li>Download free.</li>
@@ -47,7 +47,7 @@ export default function FEMAAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alerts you&apos;ll get</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tornado warnings.</li>
               <li>Hurricane evacuation orders.</li>
               <li>Flash flood alerts.</li>
@@ -61,7 +61,7 @@ export default function FEMAAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Disaster prep info inside app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>What to do before disaster strikes.</li>
               <li>What to do during the event.</li>
               <li>What to do after.</li>
@@ -75,7 +75,7 @@ export default function FEMAAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apply for aid in app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If FEMA disaster declared in your area.</li>
               <li>Apply for individual assistance through app.</li>
               <li>Check status anytime.</li>
@@ -89,7 +89,7 @@ export default function FEMAAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other essential safety apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Red Cross First Aid — free emergency reference.</li>
               <li>Red Cross Emergency — disaster alerts + tips.</li>
               <li>Red Cross Hurricane / Tornado / Earthquake apps.</li>
@@ -103,7 +103,7 @@ export default function FEMAAppForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Install before you need it</h3>
-            <p className="text-sm text-muted-foreground">The worst time to install the FEMA app is during a disaster — internet may be down. Install it today, set up your locations, and enable notifications. The 10 minutes spent setting up could give you 30+ minutes warning of a tornado that lets you find shelter. Add your home, your kids&apos; addresses, and any vacation home you visit.</p>
+            <p className="text-base text-muted-foreground">The worst time to install the FEMA app is during a disaster — internet may be down. Install it today, set up your locations, and enable notifications. The 10 minutes spent setting up could give you 30+ minutes warning of a tornado that lets you find shelter. Add your home, your kids&apos; addresses, and any vacation home you visit.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function MyMedicareGov() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>medicare.gov</strong>.</li>
               <li>Click "Create Account".</li>
               <li>Verify with Login.gov or ID.me.</li>
@@ -32,7 +32,7 @@ export default function MyMedicareGov() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can do</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>See claims (what was billed).</li>
               <li>Order replacement Medicare card.</li>
               <li>See coverage details.</li>
@@ -48,7 +48,7 @@ export default function MyMedicareGov() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Care Compare tool</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>medicare.gov/care-compare — best part of site.</li>
               <li>Hospital ratings (1-5 stars).</li>
               <li>Nursing home star ratings.</li>
@@ -63,7 +63,7 @@ export default function MyMedicareGov() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plan Finder annually</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Every October-December — review Part D + Advantage plans.</li>
               <li>Plan Finder shows which covers YOUR exact medications.</li>
               <li>Compare total annual cost.</li>
@@ -76,7 +76,7 @@ export default function MyMedicareGov() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">SHIP for help</h3>
-            <p className="text-sm text-muted-foreground">If overwhelmed by Medicare.gov — SHIP counselors do this FREE for you. shiphelp.org. Find local SHIP office. Sit with counselor 30 min, they navigate site + plan finder for your situation. Best free help available.</p>
+            <p className="text-base text-muted-foreground">If overwhelmed by Medicare.gov — SHIP counselors do this FREE for you. shiphelp.org. Find local SHIP office. Sit with counselor 30 min, they navigate site + plan finder for your situation. Best free help available.</p>
           </CardContent>
         </Card>
       </main>

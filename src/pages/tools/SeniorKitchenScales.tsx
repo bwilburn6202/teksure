@@ -22,7 +22,7 @@ export default function SeniorKitchenScales() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Heart-healthy</h2><p>Track sodium, fat, sugar by exact amount, not guesses.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Recipe accuracy</h2><p>Baking succeeds with weight measurements. Cups vary; grams don&apos;t.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Digital readout</h2><p>Look for scales with backlit, large displays. Easier to read.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pair with MyFitnessPal app. Auto-imports nutrition for tracked food.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pair with MyFitnessPal app. Auto-imports nutrition for tracked food.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

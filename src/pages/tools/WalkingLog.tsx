@@ -68,7 +68,7 @@ export default function WalkingLog() {
   const sorted = [...walks].sort((a, b) => b.date.localeCompare(a.date));
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Walking Log | TekSure"
         description="Log every walk — minutes, miles, route, notes. See weekly totals against the 150-minute health goal."
@@ -77,10 +77,10 @@ export default function WalkingLog() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Footprints className="h-7 w-7 text-green-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Walking Log</h1>
+            <Footprints className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Walking Log</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Log every walk and watch the minutes add up. CDC says 150 minutes a week is the goal for adults.
           </p>
         </div>
@@ -90,26 +90,26 @@ export default function WalkingLog() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Last 7 days</p>
-                <p className="text-xl font-bold text-green-700">{week7Min} min</p>
+                <p className="text-sm text-muted-foreground">Last 7 days</p>
+                <p className="text-xl font-bold text-success-foreground">{week7Min} min</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Last 7 days miles</p>
-                <p className="text-xl font-bold text-green-700">{week7Miles.toFixed(1)} mi</p>
+                <p className="text-sm text-muted-foreground">Last 7 days miles</p>
+                <p className="text-xl font-bold text-success-foreground">{week7Miles.toFixed(1)} mi</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">All-time minutes</p>
-                <p className="text-xl font-bold text-gray-700">{totalMinutes}</p>
+                <p className="text-sm text-muted-foreground">All-time minutes</p>
+                <p className="text-xl font-bold text-foreground">{totalMinutes}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">All-time miles</p>
-                <p className="text-xl font-bold text-gray-700">{totalMiles.toFixed(1)}</p>
+                <p className="text-sm text-muted-foreground">All-time miles</p>
+                <p className="text-xl font-bold text-foreground">{totalMiles.toFixed(1)}</p>
               </CardContent>
             </Card>
           </div>
@@ -120,15 +120,15 @@ export default function WalkingLog() {
           <Card className={`mb-4 ${weeklyGoalMet ? "bg-green-50 border-green-200" : "bg-amber-50 border-amber-200"}`}>
             <CardContent className="py-3 px-4 text-center">
               {weeklyGoalMet ? (
-                <p className="text-sm text-green-800">
+                <p className="text-base text-success-foreground">
                   <span className="font-semibold">Goal met!</span> {week7Min} of 150 minutes this week. Keep it up.
                 </p>
               ) : (
-                <p className="text-sm text-amber-800">
+                <p className="text-base text-warn-foreground">
                   <span className="font-semibold">{week7Min} of 150 minutes</span> this week — {150 - week7Min} more to go.
                 </p>
               )}
-              <div className="w-full bg-white border border-current rounded-full h-2 mt-2 overflow-hidden">
+              <div className="w-full bg-card border border-current rounded-full h-2 mt-2 overflow-hidden">
                 <div
                   className={`h-2 rounded-full transition-all ${weeklyGoalMet ? "bg-green-500" : "bg-amber-500"}`}
                   style={{ width: `${Math.min(100, (week7Min / 150) * 100)}%` }}
@@ -142,7 +142,7 @@ export default function WalkingLog() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-green-600" />
+              <PlusCircle className="h-5 w-5 text-success-foreground" />
               Log a Walk
             </CardTitle>
           </CardHeader>
@@ -169,14 +169,14 @@ export default function WalkingLog() {
               <Label htmlFor="walk-notes" className="text-base font-medium">Notes (optional)</Label>
               <Input id="walk-notes" placeholder="e.g. Sunny day, walked with neighbor" value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base">Log Walk</Button>
           </CardContent>
         </Card>
 
         {walks.length > 0 && (
           <div className="mb-3 flex flex-wrap items-center justify-between gap-3 print:hidden">
-            <p className="text-sm text-gray-500">{walks.length} walk{walks.length !== 1 ? "s" : ""} logged</p>
+            <p className="text-base text-muted-foreground">{walks.length} walk{walks.length !== 1 ? "s" : ""} logged</p>
             <Button variant="outline" onClick={() => window.print()} className="gap-2">
               <Printer className="h-4 w-4" />
               Print
@@ -187,10 +187,10 @@ export default function WalkingLog() {
         {/* List */}
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Footprints className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Footprints className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No walks logged yet.</p>
-              <p className="text-sm mt-1">Take a short walk today and log it above.</p>
+              <p className="text-base mt-1">Take a short walk today and log it above.</p>
             </CardContent>
           </Card>
         ) : (
@@ -204,17 +204,17 @@ export default function WalkingLog() {
                   <div key={w.id} className="py-2 flex items-start justify-between gap-2">
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-sm font-medium text-gray-700 w-20">{formatDate(w.date)}</span>
+                        <span className="text-sm font-medium text-foreground w-20">{formatDate(w.date)}</span>
                         <Badge variant="secondary" className="text-xs">{w.minutes} min</Badge>
                         {w.miles > 0 && <Badge variant="outline" className="text-xs">{w.miles.toFixed(1)} mi</Badge>}
                       </div>
-                      {w.route && <p className="text-xs text-gray-600 mt-1">{w.route}</p>}
-                      {w.notes && <p className="text-xs text-gray-500 italic">{w.notes}</p>}
+                      {w.route && <p className="text-sm text-muted-foreground mt-1">{w.route}</p>}
+                      {w.notes && <p className="text-sm text-muted-foreground italic">{w.notes}</p>}
                     </div>
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden"
+                      className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden"
                       onClick={() => remove(w.id)}
                       aria-label="Remove walk"
                     >
@@ -227,15 +227,15 @@ export default function WalkingLog() {
           </Card>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               You do not need to walk 150 minutes in one go — three 10-minute walks count the same as a 30-minute walk. Break it up however works for you.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

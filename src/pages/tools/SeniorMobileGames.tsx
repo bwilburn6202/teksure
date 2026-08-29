@@ -19,7 +19,7 @@ export default function SeniorMobileGames() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Word games</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wordscapes — most popular senior word game.</li>
               <li>Wordle — one puzzle daily, free.</li>
               <li>Words With Friends — play with family.</li>
@@ -33,7 +33,7 @@ export default function SeniorMobileGames() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Card games</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Microsoft Solitaire Collection — classic + free.</li>
               <li>Spider Solitaire — multiple difficulty levels.</li>
               <li>FreeCell — strategic solitaire.</li>
@@ -47,7 +47,7 @@ export default function SeniorMobileGames() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Puzzle games</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sudoku — many free apps.</li>
               <li>Crossword — NYT, USA Today have apps.</li>
               <li>Mahjong (matching tiles) — relaxing.</li>
@@ -61,7 +61,7 @@ export default function SeniorMobileGames() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AARP Games</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free at AARP.org/games.</li>
               <li>No app needed — plays in browser.</li>
               <li>Hundreds of games across categories.</li>
@@ -75,7 +75,7 @@ export default function SeniorMobileGames() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Casino-style (no real money)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bingo Blitz — popular online bingo.</li>
               <li>Slotomania — slot machine simulation.</li>
               <li>Free coins, no real money.</li>
@@ -89,7 +89,7 @@ export default function SeniorMobileGames() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid these traps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Games with constant pop-up ads.</li>
               <li>&quot;Pay $5 to skip ads&quot; — usually scams.</li>
               <li>Games requiring excessive permissions.</li>
@@ -103,7 +103,7 @@ export default function SeniorMobileGames() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Wordscapes for daily brain exercise</h3>
-            <p className="text-sm text-muted-foreground">For most seniors looking for one game to play daily, Wordscapes is the best entry point. Free, addictive in a healthy way, mentally engaging without being stressful, and the daily puzzle gives you an achievable goal. Microsoft Solitaire Collection is a close second — bring back classic Windows solitaire memories. Both are free.</p>
+            <p className="text-base text-muted-foreground">For most seniors looking for one game to play daily, Wordscapes is the best entry point. Free, addictive in a healthy way, mentally engaging without being stressful, and the daily puzzle gives you an achievable goal. Microsoft Solitaire Collection is a close second — bring back classic Windows solitaire memories. Both are free.</p>
           </CardContent>
         </Card>
       </main>

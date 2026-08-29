@@ -94,8 +94,8 @@ export default function FamilySharing() {
                 <div className={`w-10 h-10 rounded-full ${b.color} flex items-center justify-center mx-auto mb-2`}>
                   <b.icon className="h-5 w-5" />
                 </div>
-                <p className="font-semibold text-sm mb-1">{b.title}</p>
-                <p className="text-xs text-muted-foreground">{b.desc}</p>
+                <p className="font-semibold text-base mb-1">{b.title}</p>
+                <p className="text-sm text-muted-foreground">{b.desc}</p>
               </CardContent>
             </Card>
           ))}
@@ -108,10 +108,10 @@ export default function FamilySharing() {
             <div className="flex gap-2">
               <Input value={inviteLink} readOnly className="text-xs text-muted-foreground bg-muted rounded-xl" />
               <Button variant="outline" onClick={copyLink} className="shrink-0 gap-1.5 rounded-xl">
-                {copied ? <><CheckCircle2 className="h-4 w-4 text-green-500" />Copied</> : <><Copy className="h-4 w-4" />Copy</>}
+                {copied ? <><CheckCircle2 className="h-4 w-4 text-success-foreground" />Copied</> : <><Copy className="h-4 w-4" />Copy</>}
               </Button>
             </div>
-            <p className="text-xs text-muted-foreground mt-2">Share this link with family members. They'll create their own free account and be linked to your family group.</p>
+            <p className="text-sm text-muted-foreground mt-2">Share this link with family members. They'll create their own free account and be linked to your family group.</p>
           </CardContent>
         </Card>
 
@@ -137,7 +137,7 @@ export default function FamilySharing() {
                 </Button>
               </form>
             ) : (
-              <p className="text-sm text-muted-foreground text-center py-3">Family group is full ({MAX_MEMBERS}/{MAX_MEMBERS}). Remove a member to add someone new.</p>
+              <p className="text-base text-muted-foreground text-center py-3">Family group is full ({MAX_MEMBERS}/{MAX_MEMBERS}). Remove a member to add someone new.</p>
             )}
           </CardContent>
         </Card>
@@ -154,7 +154,7 @@ export default function FamilySharing() {
                       {m.name[0].toUpperCase()}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="font-medium text-sm">{m.name}</p>
+                      <p className="font-medium text-base">{m.name}</p>
                       <p className="text-xs text-muted-foreground truncate">{m.email}</p>
                     </div>
                     <Badge variant={m.status === 'active' ? 'secondary' : 'outline'} className="text-xs shrink-0">

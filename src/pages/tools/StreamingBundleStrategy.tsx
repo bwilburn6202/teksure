@@ -28,8 +28,8 @@ export default function StreamingBundleStrategy() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Check your benefits FIRST</h2>
-            <p className="text-sm">Many of these are FREE through:</p>
-            <ul className="text-sm list-disc pl-5 mt-2">
+            <p className="text-base">Many of these are FREE through:</p>
+            <ul className="text-base list-disc pl-5 mt-2">
               <li><strong>T-Mobile</strong> — Apple TV+, Netflix Basic, Hulu free with some plans.</li>
               <li><strong>Verizon</strong> — Disney+/Hulu/Max bundle with some plans.</li>
               <li><strong>Walmart+</strong> — Paramount+ included.</li>
@@ -37,7 +37,7 @@ export default function StreamingBundleStrategy() {
               <li><strong>Amex Platinum</strong> — Disney+ credit, Walmart+ credit.</li>
               <li><strong>Chase Sapphire</strong> — sometimes Apple subscription credits.</li>
             </ul>
-            <p className="text-sm mt-2">Call carrier and credit card. Often you\'re paying for streaming you ALREADY HAVE.</p>
+            <p className="text-base mt-2">Call carrier and credit card. Often you\'re paying for streaming you ALREADY HAVE.</p>
           </CardContent>
         </Card>
 
@@ -47,10 +47,10 @@ export default function StreamingBundleStrategy() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{b.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{b.price}</span>
+                  <span className="text-base font-semibold text-primary">{b.price}</span>
                 </div>
-                <p className="text-sm">{b.best}</p>
-                <p className="text-sm text-muted-foreground">{b.good}</p>
+                <p className="text-base">{b.best}</p>
+                <p className="text-base text-muted-foreground">{b.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -59,7 +59,7 @@ export default function StreamingBundleStrategy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annual vs monthly</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Most services 15-25% cheaper if paid annually.</li>
               <li>Apple TV+, Hulu, Disney+, Paramount+ all offer yearly discount.</li>
               <li>Black Friday + January often have year-long deals.</li>
@@ -71,7 +71,7 @@ export default function StreamingBundleStrategy() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For 60+ households</h3>
-            <p className="text-sm text-muted-foreground">If you watch a few specific shows — pause subscriptions when not actively watching. Apple TV+ and Hulu both make this easy. Most retirees watching 2-3 hours a day pay $40-60 in bundles instead of $80-120 stacked separately.</p>
+            <p className="text-base text-muted-foreground">If you watch a few specific shows — pause subscriptions when not actively watching. Apple TV+ and Hulu both make this easy. Most retirees watching 2-3 hours a day pay $40-60 in bundles instead of $80-120 stacked separately.</p>
           </CardContent>
         </Card>
       </main>

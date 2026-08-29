@@ -19,15 +19,15 @@ export default function WhatsAppCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why WhatsApp</h2>
-            <p className="text-sm">Used by over 2 billion people worldwide. Free messaging, voice calls, and video calls between any phone — iPhone OR Android. Owned by Meta (Facebook). Texts and calls are encrypted (end-to-end).</p>
-            <p className="text-sm mt-2">If your family or friends include international relatives, WhatsApp is often the only thing everyone uses.</p>
+            <p className="text-base">Used by over 2 billion people worldwide. Free messaging, voice calls, and video calls between any phone — iPhone OR Android. Owned by Meta (Facebook). Texts and calls are encrypted (end-to-end).</p>
+            <p className="text-base mt-2">If your family or friends include international relatives, WhatsApp is often the only thing everyone uses.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (5 minutes)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install <strong>WhatsApp</strong> from the App Store or Play Store. Free.</li>
               <li>Open it. Verify with your phone number — they text you a 6-digit code.</li>
               <li>Add your name and (optionally) a photo. People will see this.</li>
@@ -40,7 +40,7 @@ export default function WhatsAppCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Text any contact</strong> — same as Messages, but works between iPhone and Android with no extra cost (even internationally).</li>
               <li><strong>Voice notes</strong> — press and hold the microphone icon, talk, release. Faster than typing for long messages. Family loves these.</li>
               <li><strong>Voice calls</strong> — tap phone icon. Free anywhere in the world over Wi-Fi.</li>
@@ -54,21 +54,21 @@ export default function WhatsAppCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Group chats — the real magic</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>In the chat list, tap the pencil/new chat icon → "New Group".</li>
               <li>Pick contacts. Tap "Next".</li>
               <li>Name the group ("Family", "Bridge Club", "Garden Crew").</li>
               <li>Tap Create.</li>
               <li>Whole family sees every message and photo. Replace the awkward "iMessage with green bubbles" mess.</li>
             </ol>
-            <p className="text-sm mt-2">For very chatty groups, mute notifications: tap group name → "Mute". You\'ll still see messages when you open the app, but no buzzes.</p>
+            <p className="text-base mt-2">For very chatty groups, mute notifications: tap group name → "Mute". You\'ll still see messages when you open the app, but no buzzes.</p>
           </CardContent>
         </Card>
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Watch for scams</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Number you don\'t recognize messages you</strong> claiming to be a relative whose phone "broke" — scam. Verify by calling the real person\'s normal number.</li>
               <li><strong>"Win a prize" links</strong> — never tap.</li>
               <li><strong>Random WhatsApp video calls from unknown numbers</strong> — don\'t answer.</li>
@@ -80,7 +80,7 @@ export default function WhatsAppCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy settings to check</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Settings → Privacy.</li>
               <li>"Last Seen & Online" — set to "My Contacts" or "Nobody" if you don\'t want others knowing when you\'re online.</li>
               <li>"Profile Photo" — "My Contacts" only.</li>
@@ -94,7 +94,7 @@ export default function WhatsAppCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best for keeping in touch with</h3>
-            <p className="text-sm text-muted-foreground">Adult kids in different countries. Grandkids who use Android. Bridge club, golf buddies. International friends. Old college roommates. Anyone you want to call without paying long-distance.</p>
+            <p className="text-base text-muted-foreground">Adult kids in different countries. Grandkids who use Android. Bridge club, golf buddies. International friends. Old college roommates. Anyone you want to call without paying long-distance.</p>
           </CardContent>
         </Card>
       </main>

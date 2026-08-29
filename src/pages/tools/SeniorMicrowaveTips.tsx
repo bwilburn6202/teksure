@@ -22,7 +22,7 @@ export default function SeniorMicrowaveTips() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mug meals</h2><p>YouTube has hundreds. Eggs, oatmeal, cake in 2 minutes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Reheat</h2><p>Rice with damp paper towel. Pizza on plate with cup of water. Better results.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Defrost</h2><p>Use defrost setting, not full power. Even thawing.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 5-min Mug Meals cookbook for seniors. Hundreds of recipes.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 5-min Mug Meals cookbook for seniors. Hundreds of recipes.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

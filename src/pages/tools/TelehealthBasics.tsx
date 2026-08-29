@@ -19,7 +19,7 @@ export default function TelehealthBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can do on telehealth</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cold, flu, sinus, UTI — get a prescription.</li>
               <li>Skin issues — rash, mole, acne (send a photo).</li>
               <li>Mental health — therapy, anxiety/depression med management.</li>
@@ -33,7 +33,7 @@ export default function TelehealthBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Your own doctor&apos;s portal (MyChart, FollowMyHealth)</strong> — best option. Same doctor, video visit. Often free with insurance.</li>
               <li><strong>Teladoc</strong> — biggest. Often included free with employer or Medicare Advantage plans.</li>
               <li><strong>Amwell</strong> — same idea. Visit fee around $79 without insurance.</li>
@@ -47,7 +47,7 @@ export default function TelehealthBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medicare coverage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medicare Part B covers telehealth as of 2025 — same as in-person visit (~$0-30 copay).</li>
               <li>You must use a doctor enrolled with Medicare.</li>
               <li>Medicare Advantage often INCLUDES Teladoc/MDLIVE for free.</li>
@@ -59,7 +59,7 @@ export default function TelehealthBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How a visit works</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open the app or website. Pick a doctor or take "next available".</li>
               <li>Wait 5-30 minutes (like a waiting room).</li>
               <li>Video call starts. Doctor asks questions. Listens to symptoms.</li>
@@ -73,7 +73,7 @@ export default function TelehealthBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for a smooth visit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Test the camera/microphone 10 minutes before.</li>
               <li>Sit in good light, near a window.</li>
               <li>Have a list of medications ready.</li>
@@ -87,7 +87,7 @@ export default function TelehealthBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best use</h3>
-            <p className="text-sm text-muted-foreground">Telehealth is fastest for: prescription refills, simple infections, and a same-day urgent question. Saves a 90-minute trip to urgent care. Not a replacement for an annual physical or your primary doctor.</p>
+            <p className="text-base text-muted-foreground">Telehealth is fastest for: prescription refills, simple infections, and a same-day urgent question. Saves a 90-minute trip to urgent care. Not a replacement for an annual physical or your primary doctor.</p>
           </CardContent>
         </Card>
       </main>

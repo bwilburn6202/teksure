@@ -22,7 +22,7 @@ export default function SeniorAndroidTablets() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When Android tablet</h2><p>If you have Android phone — apps share between. Saves money.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When iPad better</h2><p>If you have iPhone, Apple Watch, etc. — iPad easier.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Easy Mode (Samsung)</h2><p>Settings → Display → Easy Mode. Big icons for seniors.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Fire HD 10 ($140) is plenty for most senior daily uses.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Fire HD 10 ($140) is plenty for most senior daily uses.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

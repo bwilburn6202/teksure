@@ -19,7 +19,7 @@ export default function VRForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best headsets</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Meta Quest 3S</strong> — $300. Best for first VR.</li>
               <li><strong>Meta Quest 3</strong> — $500. More premium.</li>
               <li><strong>Apple Vision Pro</strong> — $3,500. Premium.</li>
@@ -33,7 +33,7 @@ export default function VRForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Travel</strong> — Wander app: visit Paris, Egypt, Hawaii.</li>
               <li><strong>Concerts</strong> — front-row Beatles, Pavarotti, etc.</li>
               <li><strong>Memory therapy</strong> — Rendever for dementia (revisit childhood home).</li>
@@ -48,7 +48,7 @@ export default function VRForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorite apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Wander</strong> — Google Street View VR. $10. Travel anywhere.</li>
               <li><strong>National Geographic Explore</strong> — Antarctica, Machu Picchu.</li>
               <li><strong>Meta Quest TV</strong> — movies on giant virtual screen.</li>
@@ -62,7 +62,7 @@ export default function VRForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for first time</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sit DOWN first time — prevents falls.</li>
               <li>Start with stationary apps (travel, movies).</li>
               <li>Avoid motion sickness — start slow.</li>
@@ -77,7 +77,7 @@ export default function VRForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Care facility VR</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Rendever</strong> — VR for memory care.</li>
               <li>Many senior living facilities have VR.</li>
               <li>Group VR experiences.</li>
@@ -91,7 +91,7 @@ export default function VRForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cautions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Glaucoma — don&apos;t use (pressure).</li>
               <li>Inner ear / vertigo issues — avoid motion games.</li>
               <li>Eye strain — limit sessions.</li>
@@ -105,7 +105,7 @@ export default function VRForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try before buy</h3>
-            <p className="text-sm text-muted-foreground">Best Buy, Costco let you try. Apple stores demo Vision Pro. Many libraries lend Meta Quests free. Try 10 minutes — different than expected. Some seniors love, others don&apos;t. Family with VR? Borrow theirs first.</p>
+            <p className="text-base text-muted-foreground">Best Buy, Costco let you try. Apple stores demo Vision Pro. Many libraries lend Meta Quests free. Try 10 minutes — different than expected. Some seniors love, others don&apos;t. Family with VR? Borrow theirs first.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function EnergyAuditFree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Utility company</strong> — most offer FREE audit.</li>
               <li><strong>Weatherization Assistance</strong> — free for income-eligible.</li>
               <li><strong>State energy office</strong> — programs.</li>
@@ -32,7 +32,7 @@ export default function EnergyAuditFree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Audit finds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drafty windows + doors.</li>
               <li>Insulation gaps.</li>
               <li>Inefficient appliances.</li>
@@ -47,7 +47,7 @@ export default function EnergyAuditFree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY simple savings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>LED bulbs everywhere.</li>
               <li>Smart thermostat.</li>
               <li>Caulk windows + doors.</li>
@@ -63,7 +63,7 @@ export default function EnergyAuditFree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bigger upgrades</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Attic insulation upgrade ($1K-3K).</li>
               <li>Window replacement ($300-1,000/window).</li>
               <li>Heat pump water heater.</li>
@@ -77,7 +77,7 @@ export default function EnergyAuditFree() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Weatherization Assistance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FREE for income-eligible (200% poverty).</li>
               <li>Up to $7,500 home upgrades.</li>
               <li>Insulation, weather stripping, HVAC.</li>
@@ -91,7 +91,7 @@ export default function EnergyAuditFree() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior tax credits 2026</h3>
-            <p className="text-sm text-muted-foreground">Insulation + windows + heat pump + solar = 30% federal tax credit. Plus state rebates. Plus utility rebates. Stack them. Senior fixed income especially benefits. Lower bills permanently. Free audit shows where to start.</p>
+            <p className="text-base text-muted-foreground">Insulation + windows + heat pump + solar = 30% federal tax credit. Plus state rebates. Plus utility rebates. Stack them. Senior fixed income especially benefits. Lower bills permanently. Free audit shows where to start.</p>
           </CardContent>
         </Card>
       </main>

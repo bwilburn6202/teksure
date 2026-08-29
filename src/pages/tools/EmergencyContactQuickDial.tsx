@@ -21,15 +21,15 @@ export default function EmergencyContactQuickDial() {
   const [personal, setPersonal] = useState({ doctor: "", doctorPhone: "", pharm: "", pharmPhone: "", emergencyContact: "", emergencyContactPhone: "", neighbor: "", neighborPhone: "" });
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Emergency Quick Dial Card | TekSure" description="Print a fridge card with national emergency numbers plus your doctor, pharmacy, neighbor, and emergency contact." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:mb-2">
           <div className="flex items-center gap-2 mb-1">
-            <Siren className="h-7 w-7 text-red-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Emergency Quick Dial Card</h1>
+            <Siren className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Emergency Quick Dial Card</h1>
           </div>
-          <p className="text-gray-600 text-lg print:hidden">Fill in your personal contacts, then print and tape it to the fridge or near your phone.</p>
+          <p className="text-muted-foreground text-lg print:hidden">Fill in your personal contacts, then print and tape it to the fridge or near your phone.</p>
         </div>
 
         <Card className="mb-4 print:hidden">
@@ -52,21 +52,21 @@ export default function EmergencyContactQuickDial() {
           </CardContent>
         </Card>
 
-        <div className="border-2 border-red-500 rounded-lg bg-white p-4 print:border-2 print:rounded-none">
+        <div className="border-2 border-red-500 rounded-lg bg-card p-4 print:border-2 print:rounded-none">
           <div className="bg-red-600 text-white -mx-4 -mt-4 px-4 py-2 mb-3 flex items-center gap-2">
             <Siren className="h-5 w-5" />
             <span className="font-bold text-lg tracking-wide">EMERGENCY NUMBERS</span>
           </div>
           {(personal.doctor || personal.pharm || personal.emergencyContact || personal.neighbor) && (
-            <div className="mb-3 pb-3 border-b border-dashed border-gray-300">
-              <p className="text-xs font-semibold text-red-700 mb-1">MY PEOPLE:</p>
-              {personal.doctor && <p className="text-sm"><span className="font-semibold">Doctor:</span> {personal.doctor} — {personal.doctorPhone}</p>}
-              {personal.pharm && <p className="text-sm"><span className="font-semibold">Pharmacy:</span> {personal.pharm} — {personal.pharmPhone}</p>}
-              {personal.emergencyContact && <p className="text-sm"><span className="font-semibold">Emergency:</span> {personal.emergencyContact} — {personal.emergencyContactPhone}</p>}
-              {personal.neighbor && <p className="text-sm"><span className="font-semibold">Neighbor:</span> {personal.neighbor} — {personal.neighborPhone}</p>}
+            <div className="mb-3 pb-3 border-b border-dashed border-border">
+              <p className="text-sm font-semibold text-danger-foreground mb-1">MY PEOPLE:</p>
+              {personal.doctor && <p className="text-base"><span className="font-semibold">Doctor:</span> {personal.doctor} — {personal.doctorPhone}</p>}
+              {personal.pharm && <p className="text-base"><span className="font-semibold">Pharmacy:</span> {personal.pharm} — {personal.pharmPhone}</p>}
+              {personal.emergencyContact && <p className="text-base"><span className="font-semibold">Emergency:</span> {personal.emergencyContact} — {personal.emergencyContactPhone}</p>}
+              {personal.neighbor && <p className="text-base"><span className="font-semibold">Neighbor:</span> {personal.neighbor} — {personal.neighborPhone}</p>}
             </div>
           )}
-          <p className="text-xs font-semibold text-red-700 mb-1">NATIONAL:</p>
+          <p className="text-sm font-semibold text-danger-foreground mb-1">NATIONAL:</p>
           <div className="space-y-0.5">
             {NATIONAL.map(n => (
               <div key={n.label} className="flex justify-between items-baseline text-sm">
@@ -75,9 +75,9 @@ export default function EmergencyContactQuickDial() {
               </div>
             ))}
           </div>
-          <p className="text-xs text-gray-500 mt-3 italic">Tape near your phone or on the fridge. Update once a year.</p>
+          <p className="text-sm text-muted-foreground mt-3 italic">Tape near your phone or on the fridge. Update once a year.</p>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -71,7 +71,7 @@ export default function DataLeakDashboard() {
                 <div className="grid sm:grid-cols-2 gap-3">{EMAIL_SERVICES.map(svc => (
                   <Card key={svc.name}><CardContent className="p-4">
                     <div className="flex items-start justify-between mb-2"><h3 className="font-semibold text-sm">{svc.name}</h3><Badge variant={svc.trust === 'high' ? 'default' : 'secondary'} className="text-xs">{svc.trust === 'high' ? 'Trusted' : 'Useful'}</Badge></div>
-                    <p className="text-xs text-muted-foreground mb-3">{svc.description}</p>
+                    <p className="text-sm text-muted-foreground mb-3">{svc.description}</p>
                     <div className="flex items-center justify-between"><Badge variant="outline" className="text-xs">{svc.pricing}</Badge><a href={svc.url} target="_blank" rel="noopener noreferrer" className="text-xs text-primary font-medium flex items-center gap-1 hover:underline">Check Now <ExternalLink className="h-3 w-3" /></a></div>
                   </CardContent></Card>
                 ))}</div>
@@ -80,7 +80,7 @@ export default function DataLeakDashboard() {
                 <div className="grid sm:grid-cols-2 gap-3">{DOMAIN_SERVICES.map(svc => (
                   <Card key={svc.name}><CardContent className="p-4">
                     <div className="flex items-start justify-between mb-2"><h3 className="font-semibold text-sm">{svc.name}</h3><Badge variant="outline" className="text-xs">{svc.pricing}</Badge></div>
-                    <p className="text-xs text-muted-foreground mb-3">{svc.description}</p>
+                    <p className="text-sm text-muted-foreground mb-3">{svc.description}</p>
                     <div className="flex items-center gap-2 flex-wrap">{svc.checks.map(c => <Badge key={c} variant="secondary" className="text-xs">{c}</Badge>)}<a href={svc.url} target="_blank" rel="noopener noreferrer" className="text-xs text-primary font-medium flex items-center gap-1 hover:underline ml-auto">Visit <ExternalLink className="h-3 w-3" /></a></div>
                   </CardContent></Card>
                 ))}</div>
@@ -93,8 +93,8 @@ export default function DataLeakDashboard() {
               <Card key={b.name} className={b.severity === 'critical' ? 'border-red-500/30' : b.severity === 'high' ? 'border-amber-500/30' : ''}>
                 <CardContent className="p-4 flex items-center gap-4">
                   <div className="flex-1"><div className="flex items-center gap-2 mb-1"><h3 className="font-semibold text-sm">{b.name}</h3><Badge variant={b.severity === 'critical' ? 'destructive' : b.severity === 'high' ? 'default' : 'secondary'} className="text-xs">{b.severity}</Badge></div>
-                    <p className="text-xs text-muted-foreground">{b.data}</p></div>
-                  <div className="text-right shrink-0"><p className="font-bold text-sm">{b.records}</p><p className="text-xs text-muted-foreground flex items-center gap-1 justify-end"><Clock className="h-3 w-3" /> {b.date}</p></div>
+                    <p className="text-sm text-muted-foreground">{b.data}</p></div>
+                  <div className="text-right shrink-0"><p className="font-bold text-base">{b.records}</p><p className="text-sm text-muted-foreground flex items-center gap-1 justify-end"><Clock className="h-3 w-3" /> {b.date}</p></div>
                 </CardContent>
               </Card>
             ))}</div>
@@ -106,7 +106,7 @@ export default function DataLeakDashboard() {
               <div className="space-y-4">{RECOVERY_STEPS.map((step, i) => (
                 <div key={i} className="flex gap-4 p-3 rounded-lg hover:bg-muted/50">
                   <div className="bg-primary/10 rounded-full h-10 w-10 flex items-center justify-center shrink-0"><step.icon className="h-5 w-5 text-primary" /></div>
-                  <div><h3 className="font-medium text-sm">Step {i + 1}: {step.title}</h3><p className="text-xs text-muted-foreground mt-1">{step.detail}</p></div>
+                  <div><h3 className="font-medium text-sm">Step {i + 1}: {step.title}</h3><p className="text-sm text-muted-foreground mt-1">{step.detail}</p></div>
                 </div>
               ))}</div>
               <div className="mt-6 pt-4 border-t"><Link to="/tools/cyber-scorecard" className="text-sm text-primary font-medium hover:underline">Take the Security Scorecard to check your overall security posture →</Link></div>

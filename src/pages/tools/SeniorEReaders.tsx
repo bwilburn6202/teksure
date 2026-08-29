@@ -22,7 +22,7 @@ export default function SeniorEReaders() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Big text</h2><p>All e-readers let you make text 3x bigger than print books.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lighter than books</h2><p>Hold a 1,000-page novel one-handed. Easier on arthritis.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free books</h2><p>Library Libby/OverDrive. Project Gutenberg has 70,000+ free classics.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: E-ink is NOT the same as a phone screen. No eye strain. Like reading paper.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: E-ink is NOT the same as a phone screen. No eye strain. Like reading paper.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

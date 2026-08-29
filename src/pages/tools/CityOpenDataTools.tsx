@@ -19,7 +19,7 @@ export default function CityOpenDataTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free public records</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Property records</strong> — county assessor website. Type address, see owner, value, tax, square footage.</li>
               <li><strong>Building permits</strong> — town/city. See what work neighbors are doing.</li>
               <li><strong>Court records</strong> — county clerk. Civil + criminal cases public (PACER for federal, $0.10/page).</li>
@@ -33,7 +33,7 @@ export default function CityOpenDataTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Government data sites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Data.gov</strong> — federal data portal. Census, weather, health.</li>
               <li><strong>Census.gov</strong> — neighborhood demographics, income, education.</li>
               <li><strong>Medicare.gov Care Compare</strong> — hospital, nursing home, hospice ratings.</li>
@@ -47,7 +47,7 @@ export default function CityOpenDataTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real-life uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Buying a home</strong> — check property taxes, building permits, neighborhood crime, school ratings (GreatSchools.org).</li>
               <li><strong>Researching a contractor</strong> — court records for past lawsuits.</li>
               <li><strong>Choosing a nursing home</strong> — Medicare Care Compare star ratings.</li>
@@ -60,7 +60,7 @@ export default function CityOpenDataTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Beware paid sites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sites like BeenVerified, Spokeo, TruthFinder charge $30+/mo for data that&apos;s mostly FREE on government sites.</li>
               <li>They aggregate public records + sell.</li>
               <li>One thing they do better — find old addresses + relatives — but rarely worth the price.</li>
@@ -72,7 +72,7 @@ export default function CityOpenDataTools() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Public participation</h3>
-            <p className="text-sm text-muted-foreground">Town council meetings, school board meetings — all public. Most stream live now via Zoom or YouTube. You can watch from your couch. If something matters to you (rezoning, budget cuts, school changes), 5 minutes of public comment is more powerful than yelling on Facebook.</p>
+            <p className="text-base text-muted-foreground">Town council meetings, school board meetings — all public. Most stream live now via Zoom or YouTube. You can watch from your couch. If something matters to you (rezoning, budget cuts, school changes), 5 minutes of public comment is more powerful than yelling on Facebook.</p>
           </CardContent>
         </Card>
       </main>

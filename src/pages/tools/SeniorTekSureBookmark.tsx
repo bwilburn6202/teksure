@@ -18,11 +18,11 @@ export default function SeniorTekSureBookmark() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">iPhone</h2><p>Open teksure.com in Safari. Tap Share → Add to Home Screen. Done.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Android</h2><p>Chrome → 3-dot menu → Add to Home Screen.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What you get</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>800+ senior tech guides</li><li>FREE always</li><li>No subscription</li><li>Plain English</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What you get</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>800+ senior tech guides</li><li>FREE always</li><li>No subscription</li><li>Plain English</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bookmark on computer</h2><p>Visit teksure.com. Press Ctrl+D (Cmd+D on Mac). Save to bookmark bar.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share with friends</h2><p>Copy teksure.com to text. Send to senior friends. Pay it forward.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Suggest topics</h2><p>Email suggestions to feedback@teksure.com. We add what seniors ask for.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: TekSure is free forever. No accounts. No emails. Just help.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: TekSure is free forever. No accounts. No emails. Just help.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

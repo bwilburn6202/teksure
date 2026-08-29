@@ -91,7 +91,7 @@ export default function EmailSignatureBuilder() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <Mail className="h-8 w-8 text-blue-600" />
+                <Mail className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Email Signature Builder</h1>
@@ -117,7 +117,7 @@ export default function EmailSignatureBuilder() {
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-6 space-y-5">
               <div>
-                <p className="text-sm font-semibold mb-3">Your details</p>
+                <p className="text-base font-semibold mb-3">Your details</p>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="fn">Full name</Label>
@@ -178,7 +178,7 @@ export default function EmailSignatureBuilder() {
                       onChange={(e) => set('address', e.target.value)}
                       className="mt-1"
                     />
-                    <p className="text-xs text-muted-foreground mt-1">
+                    <p className="text-sm text-muted-foreground mt-1">
                       A city and state is plenty. You do not need a full street address.
                     </p>
                   </div>
@@ -192,7 +192,7 @@ export default function EmailSignatureBuilder() {
                     onChange={(e) => set('quote', e.target.value)}
                     className="mt-1"
                   />
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="text-sm text-muted-foreground mt-1">
                     Keep it short — one or two lines reads best.
                   </p>
                 </div>
@@ -200,7 +200,7 @@ export default function EmailSignatureBuilder() {
 
               <div className="border-t border-border pt-5">
                 <div className="flex items-center justify-between mb-3">
-                  <p className="text-sm font-semibold">Your signature preview</p>
+                  <p className="text-base font-semibold">Your signature preview</p>
                   <Button
                     onClick={copySignature}
                     disabled={!hasContent}
@@ -223,7 +223,7 @@ export default function EmailSignatureBuilder() {
                     ? signature
                     : 'Start typing above and your signature will appear here.'}
                 </pre>
-                <p className="text-xs text-muted-foreground mt-2">
+                <p className="text-sm text-muted-foreground mt-2">
                   Nothing you fill in leaves your device. We do not save or send any of this.
                 </p>
               </div>
@@ -233,10 +233,10 @@ export default function EmailSignatureBuilder() {
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-6">
               <h2 className="text-xl font-bold mb-2">Install in Gmail</h2>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 Use these steps on a computer. Once it is set, every new Gmail message will include the signature.
               </p>
-              <ol className="space-y-2 text-sm list-decimal pl-5">
+              <ol className="space-y-2 text-base list-decimal pl-5">
                 <li>Copy your signature using the button above.</li>
                 <li>Open Gmail at <span className="font-mono">mail.google.com</span> and sign in.</li>
                 <li>Click the gear icon in the top right, then click <span className="font-semibold">See all settings</span>.</li>
@@ -252,12 +252,12 @@ export default function EmailSignatureBuilder() {
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-6">
               <h2 className="text-xl font-bold mb-2">Install in Apple Mail</h2>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 Apple Mail comes on iPhone, iPad, and Mac. Pick the one you use most.
               </p>
 
               <h3 className="font-semibold mt-2 mb-2">On iPhone or iPad</h3>
-              <ol className="space-y-2 text-sm list-decimal pl-5">
+              <ol className="space-y-2 text-base list-decimal pl-5">
                 <li>Copy your signature using the button above.</li>
                 <li>Open the <span className="font-semibold">Settings</span> app.</li>
                 <li>Scroll down and tap <span className="font-semibold">Apps</span>, then tap <span className="font-semibold">Mail</span>. (On older versions of iOS, scroll until you see Mail in the main list.)</li>
@@ -268,7 +268,7 @@ export default function EmailSignatureBuilder() {
               </ol>
 
               <h3 className="font-semibold mt-5 mb-2">On a Mac</h3>
-              <ol className="space-y-2 text-sm list-decimal pl-5">
+              <ol className="space-y-2 text-base list-decimal pl-5">
                 <li>Copy your signature using the button above.</li>
                 <li>Open the <span className="font-semibold">Mail</span> app.</li>
                 <li>From the top menu, click <span className="font-semibold">Mail</span>, then <span className="font-semibold">Settings</span> (older Macs say Preferences).</li>
@@ -284,12 +284,12 @@ export default function EmailSignatureBuilder() {
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-6">
               <h2 className="text-xl font-bold mb-2">Install in Outlook</h2>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 Outlook comes in a few flavors. The web version is the most common at home.
               </p>
 
               <h3 className="font-semibold mt-2 mb-2">Outlook on the web (outlook.com or office.com)</h3>
-              <ol className="space-y-2 text-sm list-decimal pl-5">
+              <ol className="space-y-2 text-base list-decimal pl-5">
                 <li>Copy your signature using the button above.</li>
                 <li>Sign in at <span className="font-mono">outlook.com</span>.</li>
                 <li>Click the <span className="font-semibold">gear icon</span> in the top right.</li>
@@ -300,7 +300,7 @@ export default function EmailSignatureBuilder() {
               </ol>
 
               <h3 className="font-semibold mt-5 mb-2">Outlook desktop app on Windows</h3>
-              <ol className="space-y-2 text-sm list-decimal pl-5">
+              <ol className="space-y-2 text-base list-decimal pl-5">
                 <li>Copy your signature using the button above.</li>
                 <li>Open <span className="font-semibold">Outlook</span>.</li>
                 <li>Click <span className="font-semibold">File</span> in the top left, then <span className="font-semibold">Options</span>.</li>
@@ -332,26 +332,26 @@ export default function EmailSignatureBuilder() {
                 to="/tools/email-organization"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
-                <p className="font-medium text-sm">Email Organization</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Tame the inbox once and for all.</p>
+                <p className="font-medium text-base">Email Organization</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Tame the inbox once and for all.</p>
               </Link>
               <Link
                 to="/tools/email-migration"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
-                <p className="font-medium text-sm">Email Migration</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Move from one email service to another.</p>
+                <p className="font-medium text-base">Email Migration</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Move from one email service to another.</p>
               </Link>
               <Link
                 to="/tools/scam-message-decoder"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Tell a real email from a fake one.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Tell a real email from a fake one.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Built free at TekSure for our friends, parents, and grandparents.
           </p>
         </div>

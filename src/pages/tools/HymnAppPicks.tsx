@@ -30,10 +30,10 @@ export default function HymnAppPicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function HymnAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">By tradition</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Baptist</strong> — Lifeway Hymnal Hub, Baptist Hymnal app.</li>
               <li><strong>Catholic</strong> — Catholic Hymnal app, GIA Music app.</li>
               <li><strong>Methodist</strong> — UMC Hymnal, Discipleship Ministries.</li>
@@ -57,7 +57,7 @@ export default function HymnAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For dementia + memory care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hymns from age 16-25 stay in memory long after other words.</li>
               <li>Singing reduces agitation in dementia patients.</li>
               <li>Free YouTube playlists — search "[hymn name] lyrics".</li>
@@ -69,7 +69,7 @@ export default function HymnAppPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Bedtime hymn playlist</h3>
-            <p className="text-sm text-muted-foreground">Spotify and YouTube both have "Sleep Hymns" / "Peaceful Hymns" playlists. 8 hours of gentle hymns. Help fall asleep, sense of comfort. Free with ad-supported tier.</p>
+            <p className="text-base text-muted-foreground">Spotify and YouTube both have "Sleep Hymns" / "Peaceful Hymns" playlists. 8 hours of gentle hymns. Help fall asleep, sense of comfort. Free with ad-supported tier.</p>
           </CardContent>
         </Card>
       </main>

@@ -220,7 +220,7 @@ export function Achievements() {
           <Card className="mt-8 bg-muted/50">
             <CardContent className="py-6">
               <h3 className="font-medium mb-2">How to earn badges</h3>
-              <ul className="text-sm text-muted-foreground space-y-1">
+              <ul className="text-base text-muted-foreground space-y-1">
                 <li>• <strong>Completion badges:</strong> Complete guides to earn these</li>
                 <li>• <strong>Category badges:</strong> Complete multiple guides in the same category</li>
                 <li>• <strong>Streak badges:</strong> Visit TekSure every day to build your streak</li>
@@ -253,7 +253,7 @@ function BadgeCard({ badge }: { badge: Badge }) {
             )}
           </div>
           <h3 className="font-medium mb-1">{badge.name}</h3>
-          <p className="text-sm text-muted-foreground mb-2">{badge.description}</p>
+          <p className="text-base text-muted-foreground mb-2">{badge.description}</p>
           {badge.earned ? (
             <Badge className="bg-primary">
               <CheckCircle2 className="h-3 w-3 mr-1" />

@@ -19,7 +19,7 @@ export default function HVACMaintenanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annual maintenance plan</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most HVAC companies offer plans.</li>
               <li>$150-$300/year typical.</li>
               <li>Spring AC tune-up.</li>
@@ -33,7 +33,7 @@ export default function HVACMaintenanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY filter changes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Change every 1-3 months.</li>
               <li>FilterEasy app — auto-shipment.</li>
               <li>Saves trips to hardware store.</li>
@@ -47,7 +47,7 @@ export default function HVACMaintenanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart thermostat</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Nest, Ecobee — $130-$250.</li>
               <li>Learns your patterns.</li>
               <li>Saves 10-15% on energy bills.</li>
@@ -61,7 +61,7 @@ export default function HVACMaintenanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Energy bill apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Utility company apps — track usage.</li>
               <li>OhmConnect — earn rewards reducing usage.</li>
               <li>Sense — home energy monitor ($300).</li>
@@ -75,7 +75,7 @@ export default function HVACMaintenanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to replace</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>HVAC lifespan 15-20 years.</li>
               <li>Repairs over $1,500 — consider replacing.</li>
               <li>New systems much more efficient.</li>
@@ -89,7 +89,7 @@ export default function HVACMaintenanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find HVAC pro</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Yelp, Google reviews critical.</li>
               <li>Ask neighbors via Nextdoor.</li>
               <li>Verify license + insurance.</li>
@@ -103,7 +103,7 @@ export default function HVACMaintenanceApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">$200/year prevents disasters</h3>
-            <p className="text-sm text-muted-foreground">Annual HVAC maintenance plan ($150-$300/year) catches small problems before they become $5,000 replacements. Spring + fall tune-ups discover issues. Plus priority service when AC fails on hottest day. For senior homes especially — comfortable home prevents heat stroke + cold dangers. Worth every dollar.</p>
+            <p className="text-base text-muted-foreground">Annual HVAC maintenance plan ($150-$300/year) catches small problems before they become $5,000 replacements. Spring + fall tune-ups discover issues. Plus priority service when AC fails on hottest day. For senior homes especially — comfortable home prevents heat stroke + cold dangers. Worth every dollar.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function HotelDealForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior discount chains</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Choice Hotels</strong> (Comfort Inn, Quality Inn) — 60+: 10%.</li>
               <li><strong>Marriott</strong> — 62+: up to 15%.</li>
               <li><strong>Hilton</strong> — 65+: 5-10%.</li>
@@ -34,7 +34,7 @@ export default function HotelDealForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save more</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AAA</strong> rate — usually 10%.</li>
               <li><strong>AARP</strong> rate — usually 10%.</li>
               <li><strong>Costco Travel</strong> — bundles often best.</li>
@@ -48,7 +48,7 @@ export default function HotelDealForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Loyalty programs (FREE)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Marriott Bonvoy</strong>.</li>
               <li><strong>Hilton Honors</strong>.</li>
               <li><strong>IHG One Rewards</strong> (Holiday Inn).</li>
@@ -63,7 +63,7 @@ export default function HotelDealForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best booking strategies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Book DIRECT with hotel — best rates often.</li>
               <li>Sign up for hotel email — discounts coming.</li>
               <li>Best price match guarantee — show competitor cheaper.</li>
@@ -77,7 +77,7 @@ export default function HotelDealForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly hotels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ground floor / accessible rooms.</li>
               <li>Walk-in showers.</li>
               <li>Grab bars.</li>
@@ -91,7 +91,7 @@ export default function HotelDealForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Premium card lounges</h3>
-            <p className="text-sm text-muted-foreground">Chase Sapphire Preferred + Reserve = travel insurance, lounge access. American Express Gold + Platinum more lounges. See /tools/chase-sapphire-explain. Travel cards essential for frequent travelers.</p>
+            <p className="text-base text-muted-foreground">Chase Sapphire Preferred + Reserve = travel insurance, lounge access. American Express Gold + Platinum more lounges. See /tools/chase-sapphire-explain. Travel cards essential for frequent travelers.</p>
           </CardContent>
         </Card>
       </main>

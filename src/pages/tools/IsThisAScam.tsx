@@ -482,8 +482,8 @@ export default function IsThisAScam() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-red-50 dark:bg-red-950/30 flex items-center justify-center flex-shrink-0">
-                <ShieldAlert className="h-6 w-6 text-red-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-danger flex items-center justify-center flex-shrink-0">
+                <ShieldAlert className="h-6 w-6 text-danger-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -499,7 +499,7 @@ export default function IsThisAScam() {
         <div className="container py-10 pb-24 max-w-4xl">
           {/* Channel tabs */}
           <div className="mb-6">
-            <p className="text-sm font-medium mb-3">What kind of message is this?</p>
+            <p className="text-base font-medium mb-3">What kind of message is this?</p>
             <div
               className="flex flex-wrap gap-2"
               role="group"
@@ -582,7 +582,7 @@ export default function IsThisAScam() {
                             <Badge variant="secondary">Score: {result.score}</Badge>
                           </div>
                           <h2 className="text-xl font-bold mb-2">{v.headline}</h2>
-                          <p className="text-sm leading-relaxed">{v.recommendation}</p>
+                          <p className="text-base leading-relaxed">{v.recommendation}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -598,7 +598,7 @@ export default function IsThisAScam() {
                 <CardContent>
                   {result.triggers.length === 0 ? (
                     <div className="flex items-start gap-3 text-sm">
-                      <CheckCircle2 className="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                      <CheckCircle2 className="h-5 w-5 text-success-foreground mt-0.5 flex-shrink-0" />
                       <p>
                         No common scam patterns matched. The message might still be one-of-a-kind, so stay alert — but nothing here tripped our red-flag list.
                       </p>
@@ -606,8 +606,8 @@ export default function IsThisAScam() {
                   ) : (
                     <ul className="space-y-3">
                       {result.triggers.map((t, i) => (
-                        <li key={i} className="flex items-start gap-3 text-sm">
-                          <AlertTriangle className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
+                        <li key={i} className="flex items-start gap-3 text-base">
+                          <AlertTriangle className="h-4 w-4 text-warn-foreground mt-0.5 flex-shrink-0" />
                           <div className="flex-1">
                             <p>{t.label}</p>
                           </div>
@@ -645,10 +645,10 @@ export default function IsThisAScam() {
                       to="/scam-defense"
                       className="flex items-center gap-3 p-4 rounded-lg border hover:border-foreground/30 transition-colors"
                     >
-                      <ShieldAlert className="h-5 w-5 text-red-600 flex-shrink-0" />
+                      <ShieldAlert className="h-5 w-5 text-danger-foreground flex-shrink-0" />
                       <div className="flex-1 min-w-0">
-                        <p className="font-medium text-sm">Scam Defense Center</p>
-                        <p className="text-xs text-muted-foreground">
+                        <p className="font-medium text-base">Scam Defense Center</p>
+                        <p className="text-sm text-muted-foreground">
                           Learn how to recognize and recover
                         </p>
                       </div>
@@ -658,10 +658,10 @@ export default function IsThisAScam() {
                       to="/tools/scam-simulator"
                       className="flex items-center gap-3 p-4 rounded-lg border hover:border-foreground/30 transition-colors"
                     >
-                      <ShieldCheck className="h-5 w-5 text-blue-600 flex-shrink-0" />
+                      <ShieldCheck className="h-5 w-5 text-info-foreground flex-shrink-0" />
                       <div className="flex-1 min-w-0">
-                        <p className="font-medium text-sm">Practice Scam Spotting</p>
-                        <p className="text-xs text-muted-foreground">
+                        <p className="font-medium text-base">Practice Scam Spotting</p>
+                        <p className="text-sm text-muted-foreground">
                           Try our Scam Simulator tool
                         </p>
                       </div>

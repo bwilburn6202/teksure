@@ -19,7 +19,7 @@ export default function KidneyHealthGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior kidney facts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>40% of seniors 65+ have CKD.</li>
               <li>Most don&apos;t know.</li>
               <li>Kidney function declines naturally with age.</li>
@@ -33,7 +33,7 @@ export default function KidneyHealthGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get tested</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Blood test: GFR (glomerular filtration rate).</li>
               <li>Urine test: protein in urine.</li>
               <li>Annual after 60.</li>
@@ -47,7 +47,7 @@ export default function KidneyHealthGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Protect kidneys</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Control BP under 130/80.</li>
               <li>Control diabetes (A1C).</li>
               <li>Limit salt under 1,500mg/day.</li>
@@ -63,7 +63,7 @@ export default function KidneyHealthGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If diagnosed CKD</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>See nephrologist.</li>
               <li>Renal-friendly diet.</li>
               <li>Avoid certain medications (NSAIDs, contrast dye).</li>
@@ -77,7 +77,7 @@ export default function KidneyHealthGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid kidney damage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Limit Advil, Aleve, Motrin (NSAIDs).</li>
               <li>Tylenol safer for pain.</li>
               <li>Stay hydrated.</li>
@@ -91,7 +91,7 @@ export default function KidneyHealthGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>National Kidney Foundation</strong> — kidney.org. Free guides + community. <strong>DaVita Kidney Care</strong> — recipe + education. Most insurance covers nephrology consult. Be proactive — kidneys silent until late.</p>
+            <p className="text-base text-muted-foreground"><strong>National Kidney Foundation</strong> — kidney.org. Free guides + community. <strong>DaVita Kidney Care</strong> — recipe + education. Most insurance covers nephrology consult. Be proactive — kidneys silent until late.</p>
           </CardContent>
         </Card>
       </main>

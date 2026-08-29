@@ -22,19 +22,19 @@ export default function AdultScreenTimeCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why this matters</h2>
-            <p className="text-sm">Studies show adults over 60 average 4-6 hours daily on phones — much of it on Facebook, news, and games. Cutting that even 30 minutes a day frees up 3+ hours a week. More walks, more reading, more conversation with the spouse.</p>
+            <p className="text-base">Studies show adults over 60 average 4-6 hours daily on phones — much of it on Facebook, news, and games. Cutting that even 30 minutes a day frees up 3+ hours a week. More walks, more reading, more conversation with the spouse.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 1 — See where time goes</h2>
-            <p className="text-sm mb-2">Both phones have it built in.</p>
-            <p className="font-semibold text-sm"> iPhone:</p>
-            <p className="text-sm mb-2">Settings → Screen Time → "See All Activity". Shows daily and weekly time per app.</p>
-            <p className="font-semibold text-sm"> Android:</p>
-            <p className="text-sm">Settings → Digital Wellbeing & parental controls → "Dashboard".</p>
-            <p className="text-sm mt-2 bg-muted/50 p-3 rounded">Look at it once. The numbers are usually startling.</p>
+            <p className="text-base mb-2">Both phones have it built in.</p>
+            <p className="font-semibold text-base"> iPhone:</p>
+            <p className="text-base mb-2">Settings → Screen Time → "See All Activity". Shows daily and weekly time per app.</p>
+            <p className="font-semibold text-base"> Android:</p>
+            <p className="text-base">Settings → Digital Wellbeing & parental controls → "Dashboard".</p>
+            <p className="text-base mt-2 bg-muted/50 p-3 rounded">Look at it once. The numbers are usually startling.</p>
           </CardContent>
         </Card>
 
@@ -47,14 +47,14 @@ export default function AdultScreenTimeCoach() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Step 2 — Set app limits (iPhone)</h3>
-              <ol className="list-decimal pl-5 space-y-1 text-sm">
+              <ol className="list-decimal pl-5 space-y-1 text-base">
                 <li>Settings → Screen Time → App Limits → Add Limit.</li>
                 <li>Pick a category (Social Networking) or specific apps.</li>
                 <li>Set 30 min per day or 1 hr per day.</li>
                 <li>When time\'s up, the app dims. You can tap "Ignore" once but it\'s a small friction.</li>
               </ol>
               <h3 className="font-bold text-lg mt-4 mb-3">Step 3 — Downtime</h3>
-              <ol className="list-decimal pl-5 space-y-1 text-sm">
+              <ol className="list-decimal pl-5 space-y-1 text-base">
                 <li>Settings → Screen Time → Downtime.</li>
                 <li>Set 9 PM - 7 AM. Only essential apps (Phone, Messages, Maps, weather) work during downtime.</li>
                 <li>Better sleep, less doom-scrolling.</li>
@@ -67,13 +67,13 @@ export default function AdultScreenTimeCoach() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Step 2 — Set app timers (Android)</h3>
-              <ol className="list-decimal pl-5 space-y-1 text-sm">
+              <ol className="list-decimal pl-5 space-y-1 text-base">
                 <li>Settings → Digital Wellbeing → Dashboard.</li>
                 <li>Tap an app → tap the hourglass icon → set a daily limit (15-60 min).</li>
                 <li>App goes grayscale and locked when time\'s up.</li>
               </ol>
               <h3 className="font-bold text-lg mt-4 mb-3">Step 3 — Bedtime Mode</h3>
-              <ol className="list-decimal pl-5 space-y-1 text-sm">
+              <ol className="list-decimal pl-5 space-y-1 text-base">
                 <li>Settings → Digital Wellbeing → Bedtime mode.</li>
                 <li>Set 9 PM - 7 AM. Phone goes grayscale and silent.</li>
                 <li>Helps sleep. Boring screen at night = you put it down sooner.</li>
@@ -85,7 +85,7 @@ export default function AdultScreenTimeCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other tricks that work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Move "time-suck" apps off your home screen</strong> — into a folder on page 3. Adds a friction step.</li>
               <li><strong>Turn off notifications</strong> for Facebook, news, games. Settings → Notifications → "Off" for each.</li>
               <li><strong>Replace bedtime scrolling</strong> with a Kindle book or audiobook. Both are still tech but more thoughtful.</li>
@@ -98,7 +98,7 @@ export default function AdultScreenTimeCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don\'t go cold turkey</h3>
-            <p className="text-sm text-muted-foreground">Set a small limit first — 1 hour Facebook a day. Stick to it for 2 weeks. Then tighten if you want. Going from "all day" to "1 hour" overnight rarely sticks.</p>
+            <p className="text-base text-muted-foreground">Set a small limit first — 1 hour Facebook a day. Stick to it for 2 weeks. Then tighten if you want. Going from "all day" to "1 hour" overnight rarely sticks.</p>
           </CardContent>
         </Card>
       </main>

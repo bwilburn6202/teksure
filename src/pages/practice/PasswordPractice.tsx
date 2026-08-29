@@ -373,9 +373,9 @@ export default function PasswordPractice() {
 
         <div className="container py-8 pb-24 max-w-4xl space-y-8">
           {/* ── PRIVACY CALLOUT ───────────────────────────── */}
-          <Alert className="border-emerald-500/60 bg-emerald-50 dark:bg-emerald-950/30">
-            <Shield className="h-5 w-5 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
-            <AlertTitle className="text-emerald-900 dark:text-emerald-100 text-lg font-semibold">
+          <Alert className="border-emerald-500/60 bg-success ">
+            <Shield className="h-5 w-5 text-success-foreground " aria-hidden="true" />
+            <AlertTitle className="text-success-foreground text-lg font-semibold">
               Nothing here is saved. Nothing is sent anywhere.
             </AlertTitle>
             <AlertDescription className="text-emerald-900/90 dark:text-emerald-100/90 text-base mt-1">
@@ -388,7 +388,7 @@ export default function PasswordPractice() {
           {streak.sessions > 0 && (
             <div className="flex flex-wrap gap-3">
               <Badge variant="secondary" className="text-base min-h-[2rem] px-3 py-1">
-                <CheckCircle2 className="h-4 w-4 mr-1.5 text-emerald-600" aria-hidden="true" />
+                <CheckCircle2 className="h-4 w-4 mr-1.5 text-success-foreground" aria-hidden="true" />
                 {streak.sessions} practice {streak.sessions === 1 ? 'session' : 'sessions'} completed
               </Badge>
               <Badge variant="secondary" className="text-base min-h-[2rem] px-3 py-1">
@@ -514,9 +514,9 @@ export default function PasswordPractice() {
 
               {/* Flags */}
               <div className="grid md:grid-cols-2 gap-4">
-                <Card className="border-red-200 dark:border-red-900/40">
+                <Card className="border-danger-foreground/25 ">
                   <CardHeader>
-                    <CardTitle className="text-lg text-red-700 dark:text-red-300">Red flags</CardTitle>
+                    <CardTitle className="text-lg text-danger-foreground ">Red flags</CardTitle>
                   </CardHeader>
                   <CardContent className="text-base text-muted-foreground space-y-2">
                     <div>• Under 12 characters total</div>
@@ -526,9 +526,9 @@ export default function PasswordPractice() {
                     <div>• Is on any "top 100 common passwords" list</div>
                   </CardContent>
                 </Card>
-                <Card className="border-emerald-200 dark:border-emerald-900/40">
+                <Card className="border-success-foreground/25 ">
                   <CardHeader>
-                    <CardTitle className="text-lg text-emerald-700 dark:text-emerald-300">Green flags</CardTitle>
+                    <CardTitle className="text-lg text-success-foreground ">Green flags</CardTitle>
                   </CardHeader>
                   <CardContent className="text-base text-muted-foreground space-y-2">
                     <div>• 16 or more characters</div>
@@ -554,7 +554,7 @@ export default function PasswordPractice() {
                   </p>
 
                   <div className="rounded-xl bg-slate-900 text-white p-5 flex items-center gap-3">
-                    <Lock className="h-6 w-6 text-emerald-400 shrink-0" aria-hidden="true" />
+                    <Lock className="h-6 w-6 text-success-foreground shrink-0" aria-hidden="true" />
                     <code className="flex-1 text-2xl font-mono break-all tracking-wide">
                       {sampleVisible ? sample : '•'.repeat(sample.length)}
                     </code>
@@ -587,7 +587,7 @@ export default function PasswordPractice() {
                         <div
                           key={i}
                           className={`rounded-xl border p-4 ${
-                            done ? (a.ok ? 'border-emerald-400 bg-emerald-50 dark:bg-emerald-950/20' : 'border-amber-400 bg-amber-50 dark:bg-amber-950/20') : active ? 'border-primary' : 'opacity-60'
+                            done ? (a.ok ? 'border-emerald-400 bg-success dark:bg-emerald-950/20' : 'border-amber-400 bg-warn dark:bg-amber-950/20') : active ? 'border-primary' : 'opacity-60'
                           }`}
                         >
                           <div className="flex items-center justify-between mb-2">
@@ -635,9 +635,9 @@ export default function PasswordPractice() {
 
                   {/* Completed state */}
                   {attempts.length >= 3 && (
-                    <Alert className="border-emerald-500/60 bg-emerald-50 dark:bg-emerald-950/30">
-                      <CheckCircle2 className="h-5 w-5 text-emerald-700" aria-hidden="true" />
-                      <AlertTitle className="text-emerald-900 dark:text-emerald-100 text-lg">
+                    <Alert className="border-emerald-500/60 bg-success ">
+                      <CheckCircle2 className="h-5 w-5 text-success-foreground" aria-hidden="true" />
+                      <AlertTitle className="text-success-foreground text-lg">
                         Round complete
                       </AlertTitle>
                       <AlertDescription className="text-emerald-900/90 dark:text-emerald-100/90 text-base">
@@ -726,9 +726,9 @@ export default function PasswordPractice() {
 
             {/* ── DRILL 4: RED TEAM MODE ───────────────────── */}
             <TabsContent value="redteam" className="space-y-6">
-              <Alert className="border-red-500/60 bg-red-50 dark:bg-red-950/30">
-                <Shield className="h-5 w-5 text-red-700" aria-hidden="true" />
-                <AlertTitle className="text-red-900 dark:text-red-100 text-lg">
+              <Alert className="border-red-500/60 bg-danger ">
+                <Shield className="h-5 w-5 text-danger-foreground" aria-hidden="true" />
+                <AlertTitle className="text-danger-foreground text-lg">
                   How scammers actually steal passwords
                 </AlertTitle>
                 <AlertDescription className="text-red-900/90 dark:text-red-100/90 text-base mt-1">
@@ -780,9 +780,9 @@ export default function PasswordPractice() {
                     defense: 'Treat recovery questions like passwords — use fake answers you store in your manager.',
                   },
                 ].map((t) => (
-                  <Card key={t.name} className="border-red-200 dark:border-red-900/30">
+                  <Card key={t.name} className="border-danger-foreground/25 ">
                     <CardHeader>
-                      <CardTitle className="text-lg text-red-700 dark:text-red-300">{t.name}</CardTitle>
+                      <CardTitle className="text-lg text-danger-foreground ">{t.name}</CardTitle>
                     </CardHeader>
                     <CardContent className="space-y-2 text-base">
                       <div><span className="font-semibold">How it works: </span><span className="text-muted-foreground">{t.how}</span></div>
@@ -798,7 +798,7 @@ export default function PasswordPractice() {
           <Card>
             <CardHeader>
               <CardTitle className="text-xl flex items-center gap-2">
-                <RefreshCw className="h-5 w-5 text-indigo-600" aria-hidden="true" />
+                <RefreshCw className="h-5 w-5 text-primary" aria-hidden="true" />
                 Passphrase generator
               </CardTitle>
             </CardHeader>
@@ -865,8 +865,8 @@ export default function PasswordPractice() {
                 aria-label="Reuse check input"
               />
               {reuseMatch === true && (
-                <Alert className="border-red-500/60 bg-red-50 dark:bg-red-950/30">
-                  <AlertTitle className="text-red-900 dark:text-red-100 text-lg">Found on the common list</AlertTitle>
+                <Alert className="border-red-500/60 bg-danger ">
+                  <AlertTitle className="text-danger-foreground text-lg">Found on the common list</AlertTitle>
                   <AlertDescription className="text-red-900/90 dark:text-red-100/90 text-base">
                     This password is in the top 100 most-leaked set. Attackers try these in the first second of any
                     guessing attempt. Pick something longer and less common.
@@ -874,8 +874,8 @@ export default function PasswordPractice() {
                 </Alert>
               )}
               {reuseMatch === false && reuseCheck && (
-                <Alert className="border-emerald-500/60 bg-emerald-50 dark:bg-emerald-950/30">
-                  <AlertTitle className="text-emerald-900 dark:text-emerald-100 text-lg">Not on our sample list</AlertTitle>
+                <Alert className="border-emerald-500/60 bg-success ">
+                  <AlertTitle className="text-success-foreground text-lg">Not on our sample list</AlertTitle>
                   <AlertDescription className="text-emerald-900/90 dark:text-emerald-100/90 text-base">
                     Our 100-password list is tiny though — a real check happens inside your password manager against
                     hundreds of millions of leaked records. Always prefer a manager for that verification.
@@ -936,7 +936,7 @@ export default function PasswordPractice() {
           </Card>
 
           {/* ── STICKY NOTE REALITY CHECK ─────────────────── */}
-          <Card className="border-amber-300 dark:border-amber-900/40">
+          <Card className="border-warn-foreground/25 ">
             <CardHeader>
               <CardTitle className="text-xl">Sticky-note reality check</CardTitle>
             </CardHeader>
@@ -1008,21 +1008,21 @@ export default function PasswordPractice() {
               className="rounded-xl border p-4 hover:border-primary hover:bg-muted/50 transition-colors block"
             >
               <p className="font-semibold text-base">Password Strength Tester →</p>
-              <p className="text-sm text-muted-foreground mt-1">Check any password's strength.</p>
+              <p className="text-base text-muted-foreground mt-1">Check any password's strength.</p>
             </Link>
             <Link
               to="/tools/password-leak-checker"
               className="rounded-xl border p-4 hover:border-primary hover:bg-muted/50 transition-colors block"
             >
               <p className="font-semibold text-base">Password Leak Checker →</p>
-              <p className="text-sm text-muted-foreground mt-1">See if yours is in a known breach.</p>
+              <p className="text-base text-muted-foreground mt-1">See if yours is in a known breach.</p>
             </Link>
             <Link
               to="/tools/two-factor-setup"
               className="rounded-xl border p-4 hover:border-primary hover:bg-muted/50 transition-colors block"
             >
               <p className="font-semibold text-base">Turn on 2FA →</p>
-              <p className="text-sm text-muted-foreground mt-1">Step-by-step for each account type.</p>
+              <p className="text-base text-muted-foreground mt-1">Step-by-step for each account type.</p>
             </Link>
           </div>
         </div>

@@ -22,7 +22,7 @@ export default function SeniorPartDPlanFinder() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Open Enrollment</h2><p>Oct 15-Dec 7 yearly. Window to change Part D plans.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Extra Help</h2><p>Low-income seniors get $0-$10 prescriptions. Apply at SSA.gov.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out</h2><p>Insurance brokers may favor highest-commission plans. SHIP advisors are unbiased.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Run Plan Finder every November. Confirm or switch plans.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Run Plan Finder every November. Confirm or switch plans.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

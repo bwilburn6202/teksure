@@ -18,11 +18,11 @@ export default function SeniorSmartGarageDoor() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Chamberlain myQ</h2><p>$30. Add to existing Chamberlain/LiftMaster opener. Phone control.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tailwind iQ3</h2><p>$80. Universal. Works with most brands.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Did I close it?</li><li>Open for delivery without going down</li><li>Family check from anywhere</li><li>Auto-close timer</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Did I close it?</li><li>Open for delivery without going down</li><li>Family check from anywhere</li><li>Auto-close timer</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice control</h2><p>&ldquo;Alexa, close the garage.&rdquo; Hands-free.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">In-Garage Delivery</h2><p>Amazon delivers in garage. No porch pirate worry.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Setup</h2><p>Plug in. Connect Wi-Fi. Press button on opener. Done.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set auto-close after 10 PM. Never wonder if you closed it.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set auto-close after 10 PM. Never wonder if you closed it.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

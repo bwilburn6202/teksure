@@ -807,8 +807,8 @@ export default function MyFirstSmartphone() {
             />
           </div>
           <div className="flex items-center gap-2 mb-4">
-            <Smartphone className="w-5 h-5 text-orange-700 dark:text-orange-300" />
-            <Badge variant="outline" className="text-xs border-orange-300 text-orange-800 dark:text-orange-200">
+            <Smartphone className="w-5 h-5 text-warn-foreground " />
+            <Badge variant="outline" className="text-xs border-warn-foreground/25 text-warn-foreground ">
               First-time smartphone · Guided walkthrough
             </Badge>
           </div>
@@ -840,8 +840,8 @@ export default function MyFirstSmartphone() {
           {/* Resume banner */}
           {resumeOffer && (
             <section className="container pt-6">
-              <Alert className="border-orange-400/60 bg-orange-50 dark:bg-orange-950/30">
-                <Bookmark className="h-5 w-5 text-orange-700 dark:text-orange-300" />
+              <Alert className="border-orange-400/60 bg-warn ">
+                <Bookmark className="h-5 w-5 text-warn-foreground " />
                 <AlertTitle className="text-base">Welcome back!</AlertTitle>
                 <AlertDescription className="text-base leading-relaxed">
                   You were on step {resumeOffer.stepIndex + 1} of your{' '}
@@ -877,7 +877,7 @@ export default function MyFirstSmartphone() {
                 className="group text-left rounded-2xl border-2 border-border hover:border-orange-500 focus-visible:border-orange-500 focus-visible:outline-none bg-card hover:bg-orange-50/60 dark:hover:bg-orange-950/20 transition-all p-6 md:p-8 min-h-14"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-4 rounded-2xl bg-orange-100 text-orange-700 dark:bg-orange-950/40 dark:text-orange-300 shrink-0">
+                  <div className="p-4 rounded-2xl bg-warn text-warn-foreground shrink-0">
                     <Apple className="w-10 h-10" />
                   </div>
                   <div className="flex-1">
@@ -885,7 +885,7 @@ export default function MyFirstSmartphone() {
                     <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                       Made by Apple. Back of phone has the Apple logo. About 15 steps.
                     </p>
-                    <div className="mt-4 inline-flex items-center gap-2 text-orange-700 dark:text-orange-300 font-semibold text-base md:text-lg">
+                    <div className="mt-4 inline-flex items-center gap-2 text-warn-foreground font-semibold text-base md:text-lg">
                       Start the iPhone walkthrough
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
                     </div>
@@ -900,7 +900,7 @@ export default function MyFirstSmartphone() {
                 className="group text-left rounded-2xl border-2 border-border hover:border-rose-500 focus-visible:border-rose-500 focus-visible:outline-none bg-card hover:bg-rose-50/60 dark:hover:bg-rose-950/20 transition-all p-6 md:p-8 min-h-14"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-4 rounded-2xl bg-rose-100 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 shrink-0">
+                  <div className="p-4 rounded-2xl bg-danger text-danger-foreground shrink-0">
                     <Smartphone className="w-10 h-10" />
                   </div>
                   <div className="flex-1">
@@ -908,7 +908,7 @@ export default function MyFirstSmartphone() {
                     <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                       Made by Samsung, Google Pixel, Motorola, OnePlus, and others. About 15 steps.
                     </p>
-                    <div className="mt-4 inline-flex items-center gap-2 text-rose-700 dark:text-rose-300 font-semibold text-base md:text-lg">
+                    <div className="mt-4 inline-flex items-center gap-2 text-danger-foreground font-semibold text-base md:text-lg">
                       Start the Android walkthrough
                       <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
                     </div>
@@ -922,7 +922,7 @@ export default function MyFirstSmartphone() {
               <Card className="border-orange-300/50 bg-orange-50/40 dark:bg-orange-950/10">
                 <CardContent className="p-6 space-y-3">
                   <h3 className="text-xl font-semibold flex items-center gap-2">
-                    <HelpCircle className="w-5 h-5 text-orange-700 dark:text-orange-300" />
+                    <HelpCircle className="w-5 h-5 text-warn-foreground " />
                     Do I have an iPhone or an Android?
                   </h3>
                   <p className="text-base leading-relaxed">
@@ -930,14 +930,14 @@ export default function MyFirstSmartphone() {
                   </p>
                   <ul className="space-y-2 text-base leading-relaxed">
                     <li className="flex gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" />
                       <span>
                         You see a <strong>shiny Apple logo</strong> (an apple with a bite out of it) →{' '}
                         <strong>iPhone</strong>.
                       </span>
                     </li>
                     <li className="flex gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" />
                       <span>
                         You see a word like <strong>Samsung</strong>, <strong>Pixel</strong>, <strong>Google</strong>,{' '}
                         <strong>Motorola</strong>, <strong>OnePlus</strong>, or <strong>Galaxy</strong> →{' '}
@@ -945,14 +945,14 @@ export default function MyFirstSmartphone() {
                       </span>
                     </li>
                     <li className="flex gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" />
                       <span>
                         You see any <strong>other brand name</strong> (TCL, Nokia, LG, etc.) → almost always{' '}
                         <strong>Android</strong>.
                       </span>
                     </li>
                   </ul>
-                  <p className="text-sm text-muted-foreground leading-relaxed pt-1">
+                  <p className="text-base text-muted-foreground leading-relaxed pt-1">
                     Note: some Samsung and Pixel phones show the brand name instead of &quot;Android&quot; — that&apos;s still
                     Android under the hood.
                   </p>
@@ -989,7 +989,7 @@ export default function MyFirstSmartphone() {
                       Print Android cheat sheet
                     </Button>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed pt-2">
+                  <p className="text-base text-muted-foreground leading-relaxed pt-2">
                     A print window will open. If nothing happens, check that your browser allows pop-ups from teksure.com.
                   </p>
                 </CardContent>
@@ -1075,7 +1075,7 @@ export default function MyFirstSmartphone() {
           <div className="container py-6 md:py-8">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
               <div className="flex items-center gap-3">
-                <StepIcon className="w-5 h-5 text-orange-700 dark:text-orange-300" />
+                <StepIcon className="w-5 h-5 text-warn-foreground " />
                 <span className="text-base md:text-lg font-medium">
                   {phone === 'iphone' ? 'iPhone' : 'Android'} walkthrough
                 </span>
@@ -1112,15 +1112,15 @@ export default function MyFirstSmartphone() {
             </div>
 
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-2">
-              <span className="text-sm md:text-base font-medium">
+              <span className="text-base md:text-base font-medium">
                 Step {stepIndex + 1} of {totalSteps}
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 {completed.size} completed
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 You&apos;re doing great — take your time.
               </span>
             </div>
@@ -1142,7 +1142,7 @@ export default function MyFirstSmartphone() {
                   </Badge>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="p-3 rounded-xl bg-orange-100 text-orange-700 dark:bg-orange-950/40 dark:text-orange-300 shrink-0">
+                  <div className="p-3 rounded-xl bg-warn text-warn-foreground shrink-0">
                     <StepIcon className="w-8 h-8" />
                   </div>
                   <div>
@@ -1178,7 +1178,7 @@ export default function MyFirstSmartphone() {
                       <li key={i} className="flex gap-3 text-base md:text-lg leading-relaxed">
                         <span
                           aria-hidden="true"
-                          className="shrink-0 w-8 h-8 rounded-full bg-orange-100 text-orange-800 dark:bg-orange-950/40 dark:text-orange-200 font-bold flex items-center justify-center text-base"
+                          className="shrink-0 w-8 h-8 rounded-full bg-warn text-warn-foreground font-bold flex items-center justify-center text-base"
                         >
                           {i + 1}
                         </span>
@@ -1190,8 +1190,8 @@ export default function MyFirstSmartphone() {
               </Card>
 
               {/* Stumbling block */}
-              <Alert className="border-amber-400/60 bg-amber-50 dark:bg-amber-950/30">
-                <Lightbulb className="h-5 w-5 text-amber-700 dark:text-amber-300" />
+              <Alert className="border-amber-400/60 bg-warn ">
+                <Lightbulb className="h-5 w-5 text-warn-foreground " />
                 <AlertTitle className="text-base md:text-lg">Common stumbling block</AlertTitle>
                 <AlertDescription className="text-base leading-relaxed">
                   {current.stumble}
@@ -1253,7 +1253,7 @@ export default function MyFirstSmartphone() {
                 <Card className="border-green-600/40 bg-green-50/40 dark:bg-green-950/20">
                   <CardContent className="p-6 md:p-8 space-y-4">
                     <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-2">
-                      <CheckCircle2 className="w-7 h-7 text-green-700 dark:text-green-400" />
+                      <CheckCircle2 className="w-7 h-7 text-success-foreground " />
                       You did it!
                     </h2>
                     <p className="text-base md:text-lg leading-relaxed">

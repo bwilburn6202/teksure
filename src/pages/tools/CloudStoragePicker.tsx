@@ -28,7 +28,7 @@ export default function CloudStoragePicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What "the cloud" really is</h2>
-            <p className="text-sm">A copy of your files on a company\'s servers. If your phone breaks, gets lost, or stops working, your photos and documents survive. Most cloud services back up automatically — set it once, never worry again.</p>
+            <p className="text-base">A copy of your files on a company\'s servers. If your phone breaks, gets lost, or stops working, your photos and documents survive. Most cloud services back up automatically — set it once, never worry again.</p>
           </CardContent>
         </Card>
 
@@ -38,10 +38,10 @@ export default function CloudStoragePicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,26 +50,26 @@ export default function CloudStoragePicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How much do you need?</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>50GB ($1/mo)</strong> — fine if you don\'t shoot many videos.</li>
               <li><strong>200GB ($3/mo)</strong> — sweet spot for most. Years of photos, videos, files.</li>
               <li><strong>2TB ($10/mo)</strong> — overkill unless you\'re a photographer or have decades of digitized media.</li>
             </ul>
-            <p className="text-sm mt-2 text-muted-foreground">Tip: Apple\'s iCloud+ Family Plan splits 200GB across 6 family members for $3/mo total.</p>
+            <p className="text-base mt-2 text-muted-foreground">Tip: Apple\'s iCloud+ Family Plan splits 200GB across 6 family members for $3/mo total.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don\'t put all eggs in one basket</h2>
-            <p className="text-sm">Pick TWO clouds for important things. Most photographers use Apple Photos OR Google Photos as primary, plus Amazon Photos (free with Prime) as a free second backup. If one company has a crash or you lose access, the other has it all.</p>
+            <p className="text-base">Pick TWO clouds for important things. Most photographers use Apple Photos OR Google Photos as primary, plus Amazon Photos (free with Prime) as a free second backup. If one company has a crash or you lose access, the other has it all.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Already paying for something?</h3>
-            <p className="text-sm text-muted-foreground"><strong>Microsoft 365 Family</strong> is the best value if you have multiple devices: $100/year for 6 people, includes 1TB OneDrive each, plus Word/Excel/PowerPoint. <strong>Amazon Prime</strong> already includes unlimited Photos. <strong>Apple One</strong> bundles iCloud+ with Music, TV, Arcade.</p>
+            <p className="text-base text-muted-foreground"><strong>Microsoft 365 Family</strong> is the best value if you have multiple devices: $100/year for 6 people, includes 1TB OneDrive each, plus Word/Excel/PowerPoint. <strong>Amazon Prime</strong> already includes unlimited Photos. <strong>Apple One</strong> bundles iCloud+ with Music, TV, Arcade.</p>
           </CardContent>
         </Card>
       </main>

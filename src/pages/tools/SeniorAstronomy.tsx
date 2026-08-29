@@ -22,7 +22,7 @@ export default function SeniorAstronomy() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smart telescopes</h2><p>Unistellar eVscope $2,500. Auto-aligns. Senior-easy.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Beginner telescope</h2><p>Celestron NexStar $300. Computerized goto. Find objects.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Star parties</h2><p>Local astronomy clubs. Free events. Use their telescopes.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Phone app + naked eye = magical free astronomy. No telescope needed.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Phone app + naked eye = magical free astronomy. No telescope needed.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

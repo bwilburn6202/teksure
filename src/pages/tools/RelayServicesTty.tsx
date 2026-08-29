@@ -29,7 +29,7 @@ export default function RelayServicesTty() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Federal funding</h2>
-            <p className="text-sm">All these services are funded by FCC for hearing-impaired Americans. The phones are free if you qualify. The service is free. Includes training and installation help.</p>
+            <p className="text-base">All these services are funded by FCC for hearing-impaired Americans. The phones are free if you qualify. The service is free. Includes training and installation help.</p>
           </CardContent>
         </Card>
 
@@ -38,8 +38,8 @@ export default function RelayServicesTty() {
             <Card key={s.name}>
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{s.name}</h3>
-                <p className="text-sm">{s.what}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.what}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -48,7 +48,7 @@ export default function RelayServicesTty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to qualify (most providers)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Hearing loss that affects phone use.</li>
               <li>One-page certification from any audiologist or doctor.</li>
               <li>Mail / scan certification.</li>
@@ -61,7 +61,7 @@ export default function RelayServicesTty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For dual sensory loss (vision + hearing)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Sprint Accessibility Network</strong> — phone with high-contrast keypad + captions.</li>
               <li><strong>iCanConnect</strong> — federal program for low-income with combined vision/hearing loss. Free equipment and training.</li>
               <li>Apply at <strong>icanconnect.org</strong>.</li>
@@ -72,7 +72,7 @@ export default function RelayServicesTty() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick win for any iPhone user with hearing loss</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Settings → Accessibility → Live Captions → ON.</li>
               <li>For phone calls: settings → Phone → Live Captions during call → ON.</li>
               <li>Now ANY call shows real-time text on screen.</li>
@@ -84,7 +84,7 @@ export default function RelayServicesTty() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hearing aids + phone</h3>
-            <p className="text-sm text-muted-foreground">"MFi hearing aids" (Made for iPhone) pair to iPhone for direct streaming. Phone calls go straight to hearing aids — clearer than holding phone to ear. Most modern hearing aids support this.</p>
+            <p className="text-base text-muted-foreground">"MFi hearing aids" (Made for iPhone) pair to iPhone for direct streaming. Phone calls go straight to hearing aids — clearer than holding phone to ear. Most modern hearing aids support this.</p>
           </CardContent>
         </Card>
       </main>

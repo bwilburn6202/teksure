@@ -153,7 +153,7 @@ export default function Onboarding() {
               className="text-center mb-10"
             >
               <div className="h-16 w-16 rounded-full bg-green-500/10 flex items-center justify-center mx-auto mb-6">
-                <CheckCircle2 className="h-8 w-8 text-green-600" />
+                <CheckCircle2 className="h-8 w-8 text-success-foreground" />
               </div>
               <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-3">
                 You're all set!
@@ -190,7 +190,7 @@ export default function Onboarding() {
                     <CardContent className="p-6 text-center">
                       <BookOpen className="h-8 w-8 text-muted-foreground mx-auto mb-3" />
                       <p className="font-medium mb-1">We have hundreds of guides for you</p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         Browse our full library to find exactly what you need.
                       </p>
                     </CardContent>
@@ -343,13 +343,13 @@ export default function Onboarding() {
                             <CheckCircle2 className="h-3.5 w-3.5 text-primary-foreground" />
                           )}
                         </div>
-                        <span className="text-sm font-medium">{f}</span>
+                        <span className="text-base font-medium">{f}</span>
                       </button>
                     );
                   })}
                 </div>
 
-                <p className="text-xs text-muted-foreground mb-6 text-center">
+                <p className="text-sm text-muted-foreground mb-6 text-center">
                   {data.frustrations.length}/3 selected
                 </p>
 
@@ -398,7 +398,7 @@ export default function Onboarding() {
                       <opt.icon className="h-7 w-7 text-primary shrink-0" />
                       <div>
                         <span className="font-semibold text-base block">{opt.label}</span>
-                        <span className="text-sm text-muted-foreground">{opt.desc}</span>
+                        <span className="text-base text-muted-foreground">{opt.desc}</span>
                       </div>
                     </button>
                   ))}

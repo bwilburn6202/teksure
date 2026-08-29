@@ -28,7 +28,7 @@ export default function HomeSecuritySystemPick() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">DIY vs pro</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li><strong>DIY (SimpliSafe, Ring, Abode)</strong> — $300-700 once. Self-install in 30 min. No contracts. Cancel monitoring anytime.</li>
               <li><strong>Professional (ADT, Vivint)</strong> — high-pressure sales, 36-60 month contracts. Hard to cancel. Don\'t recommend unless very specific need.</li>
             </ul>
@@ -41,10 +41,10 @@ export default function HomeSecuritySystemPick() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -53,7 +53,7 @@ export default function HomeSecuritySystemPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to include</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Base station with cellular backup.</li>
               <li>Door/window sensors on EVERY accessible door + bottom-floor windows.</li>
               <li>Motion sensor in the main living area.</li>
@@ -67,7 +67,7 @@ export default function HomeSecuritySystemPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Monitoring — yes or no?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>WITH professional monitoring</strong> ($20-30/mo): Police dispatched on confirmed break-in. Required for insurance discount.</li>
               <li><strong>WITHOUT</strong>: Alarm sounds + you get a phone alert. You decide whether to call 911. Saves $250-360/year.</li>
               <li><strong>Insurance discount</strong>: 5-20% off homeowners with monitored system. Often pays for monitoring.</li>
@@ -78,7 +78,7 @@ export default function HomeSecuritySystemPick() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For frugal seniors</h3>
-            <p className="text-sm text-muted-foreground"><strong>Ring Alarm 8-piece kit ($199) + Ring Doorbell ($100) + 1 outdoor cam ($100) + $10/mo monitoring</strong> = full coverage, no contract, less than $30/month forever. Hard to beat.</p>
+            <p className="text-base text-muted-foreground"><strong>Ring Alarm 8-piece kit ($199) + Ring Doorbell ($100) + 1 outdoor cam ($100) + $10/mo monitoring</strong> = full coverage, no contract, less than $30/month forever. Hard to beat.</p>
           </CardContent>
         </Card>
       </main>

@@ -907,35 +907,35 @@ export default function PhonePlanComparison() {
 
         {/* ── Why this tool? ───────────────────────────────────── */}
         <section className="container py-8 md:py-10">
-          <Card className="bg-sky-50 dark:bg-sky-950/20 border-sky-500/40">
+          <Card className="bg-info border-sky-500/40">
             <CardContent className="p-6 md:p-8 space-y-4">
               <h2 className="text-xl md:text-2xl font-semibold flex items-center gap-3">
-                <Lightbulb className="w-6 h-6 text-sky-700 dark:text-sky-300" />
+                <Lightbulb className="w-6 h-6 text-info-foreground " />
                 Why this tool?
               </h2>
               <ul className="space-y-2 text-base md:text-lg leading-relaxed">
                 <li className="flex gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-sky-700 dark:text-sky-300 shrink-0 mt-1" />
+                  <CheckCircle2 className="w-5 h-5 text-info-foreground shrink-0 mt-1" />
                   <span>
                     Carriers hide senior discounts behind several clicks — we put them front and center.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-sky-700 dark:text-sky-300 shrink-0 mt-1" />
+                  <CheckCircle2 className="w-5 h-5 text-info-foreground shrink-0 mt-1" />
                   <span>
                     Real $15/month plans exist. They use the same towers as the big carriers — they&apos;re
                     called MVNOs (networks that rent from Verizon, AT&T, or T-Mobile).
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-sky-700 dark:text-sky-300 shrink-0 mt-1" />
+                  <CheckCircle2 className="w-5 h-5 text-info-foreground shrink-0 mt-1" />
                   <span>
                     You can usually keep your current phone and your phone number — no need to buy
                     anything new in most cases.
                   </span>
                 </li>
                 <li className="flex gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-sky-700 dark:text-sky-300 shrink-0 mt-1" />
+                  <CheckCircle2 className="w-5 h-5 text-info-foreground shrink-0 mt-1" />
                   <span>
                     We don&apos;t take commissions from any carrier. Prices shown are what we saw on
                     carrier websites — they change often, so always double-check before you sign up.
@@ -952,10 +952,10 @@ export default function PhonePlanComparison() {
             {!done && (
               <div className="mb-6">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm md:text-base font-medium text-muted-foreground">
+                  <span className="text-base md:text-base font-medium text-muted-foreground">
                     Question {step + 1} of {totalSteps}
                   </span>
-                  <span className="text-sm md:text-base text-muted-foreground">
+                  <span className="text-base md:text-base text-muted-foreground">
                     About 2 minutes total
                   </span>
                 </div>
@@ -1089,7 +1089,7 @@ export default function PhonePlanComparison() {
                       />
                     </div>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Skip this and we&apos;ll still show you our top 3 matches.
                   </p>
                 </CardContent>
@@ -1127,7 +1127,7 @@ export default function PhonePlanComparison() {
                 <Card className="bg-gradient-to-br from-sky-50 to-teal-50 dark:from-sky-950/30 dark:to-teal-950/30 border-sky-500/40">
                   <CardContent className="p-6 md:p-8 space-y-4">
                     <div className="flex items-center gap-3">
-                      <Trophy className="w-7 h-7 text-sky-700 dark:text-sky-300" />
+                      <Trophy className="w-7 h-7 text-info-foreground " />
                       <h2 className="text-2xl md:text-3xl font-semibold">Your top 3 matches</h2>
                     </div>
                     <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
@@ -1165,18 +1165,18 @@ export default function PhonePlanComparison() {
                               {plan.priceLabel}
                             </p>
                             {plan.activationFee && (
-                              <p className="text-sm text-muted-foreground mt-1">{plan.activationFee}</p>
+                              <p className="text-base text-muted-foreground mt-1">{plan.activationFee}</p>
                             )}
                           </div>
                         </div>
 
                         {savings !== null && (
-                          <div className="p-4 rounded-xl bg-green-50 dark:bg-green-950/20 border border-green-500/40">
-                            <p className="text-base md:text-lg font-medium text-green-900 dark:text-green-200">
+                          <div className="p-4 rounded-xl bg-success border border-green-500/40">
+                            <p className="text-base md:text-lg font-medium text-success-foreground ">
                               You could save about {formatUSD(savings)}/month — {formatUSD(savings * 12)} per year
                               — vs. your current {formatUSD(currentBillNum!)} bill.
                             </p>
-                            <p className="text-sm text-green-800 dark:text-green-300 mt-1">
+                            <p className="text-base text-success-foreground mt-1">
                               Savings estimate only. Taxes, fees, and carrier promotions vary.
                             </p>
                           </div>
@@ -1184,28 +1184,28 @@ export default function PhonePlanComparison() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                           <div>
-                            <h4 className="text-base font-semibold text-green-800 dark:text-green-300 mb-2 flex items-center gap-2">
+                            <h4 className="text-base font-semibold text-success-foreground mb-2 flex items-center gap-2">
                               <CheckCircle2 className="w-5 h-5" />
                               What&apos;s included
                             </h4>
                             <ul className="space-y-2">
                               {plan.includes.map((line) => (
                                 <li key={line} className="text-base leading-relaxed flex gap-2">
-                                  <span className="text-green-700 dark:text-green-400 shrink-0 font-bold" aria-hidden>+</span>
+                                  <span className="text-success-foreground shrink-0 font-bold" aria-hidden>+</span>
                                   <span>{line}</span>
                                 </li>
                               ))}
                             </ul>
                           </div>
                           <div>
-                            <h4 className="text-base font-semibold text-amber-800 dark:text-amber-300 mb-2 flex items-center gap-2">
+                            <h4 className="text-base font-semibold text-warn-foreground mb-2 flex items-center gap-2">
                               <XCircle className="w-5 h-5" />
                               What&apos;s not included
                             </h4>
                             <ul className="space-y-2">
                               {plan.notIncluded.map((line) => (
                                 <li key={line} className="text-base leading-relaxed flex gap-2">
-                                  <span className="text-amber-700 dark:text-amber-400 shrink-0 font-bold" aria-hidden>−</span>
+                                  <span className="text-warn-foreground shrink-0 font-bold" aria-hidden>−</span>
                                   <span>{line}</span>
                                 </li>
                               ))}
@@ -1214,10 +1214,10 @@ export default function PhonePlanComparison() {
                         </div>
 
                         <div className="p-4 rounded-xl bg-muted/40 border border-border">
-                          <p className="text-sm md:text-base leading-relaxed">
+                          <p className="text-base md:text-base leading-relaxed">
                             <strong>Coverage:</strong> {plan.coverageNote}
                           </p>
-                          <p className="text-sm md:text-base leading-relaxed mt-2">
+                          <p className="text-base md:text-base leading-relaxed mt-2">
                             <strong>Best for:</strong> {plan.bestFor}
                           </p>
                         </div>
@@ -1237,9 +1237,9 @@ export default function PhonePlanComparison() {
                           </Button>
                         </div>
 
-                        <div className="flex items-start gap-2 p-3 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-500/30">
-                          <AlertTriangle className="w-5 h-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
-                          <p className="text-sm md:text-base leading-relaxed">
+                        <div className="flex items-start gap-2 p-3 rounded-lg bg-warn border border-amber-500/30">
+                          <AlertTriangle className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
+                          <p className="text-base md:text-base leading-relaxed">
                             <strong>Heads up:</strong> In-store reps earn commissions on upgrades and accessories.
                             Stick to the plan you researched here — politely decline add-ons you didn&apos;t ask for.
                           </p>
@@ -1269,7 +1269,7 @@ export default function PhonePlanComparison() {
                     <div className="flex items-start justify-between gap-3">
                       <div>
                         <h3 className="text-xl font-semibold">{c.name}</h3>
-                        <span className={`inline-block mt-1 px-2 py-0.5 rounded text-xs font-medium ${c.badgeColor}`}>
+                        <span className={`inline-block mt-1 px-2 py-0.5 rounded text-sm font-medium ${c.badgeColor}`}>
                           {c.kind}
                         </span>
                       </div>
@@ -1281,22 +1281,22 @@ export default function PhonePlanComparison() {
                     </p>
 
                     <div>
-                      <h4 className="text-sm font-semibold text-green-800 dark:text-green-300 mb-1.5 flex items-center gap-1.5">
+                      <h4 className="text-sm font-semibold text-success-foreground mb-1.5 flex items-center gap-1.5">
                         <CheckCircle2 className="w-4 h-4" />
                         Strengths
                       </h4>
                       <ul className="space-y-1.5">
                         {c.strengths.map((s) => (
                           <li key={s} className="text-base leading-relaxed flex gap-2">
-                            <span className="text-green-700 dark:text-green-400 shrink-0" aria-hidden>+</span>
+                            <span className="text-success-foreground shrink-0" aria-hidden>+</span>
                             <span>{s}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
-                    <div className="p-3 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-500/30">
-                      <p className="text-sm md:text-base leading-relaxed">
+                    <div className="p-3 rounded-lg bg-warn border border-amber-500/30">
+                      <p className="text-base md:text-base leading-relaxed">
                         <strong>The catch:</strong> {c.catch}
                       </p>
                     </div>
@@ -1384,7 +1384,7 @@ export default function PhonePlanComparison() {
         <section className="border-t border-border bg-red-50/40 dark:bg-red-950/10">
           <div className="container py-10 md:py-14">
             <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-              <AlertTriangle className="w-7 h-7 text-red-700 dark:text-red-400" />
+              <AlertTriangle className="w-7 h-7 text-danger-foreground " />
               Red flags — watch out for these
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -1422,7 +1422,7 @@ export default function PhonePlanComparison() {
                 <Card key={r.title} className="border-red-500/30">
                   <CardContent className="p-5 space-y-2">
                     <h3 className="font-semibold text-lg flex items-center gap-2">
-                      <AlertTriangle className="w-5 h-5 text-red-700 dark:text-red-400" />
+                      <AlertTriangle className="w-5 h-5 text-danger-foreground " />
                       {r.title}
                     </h3>
                     <p className="text-base leading-relaxed">{r.body}</p>
@@ -1456,11 +1456,11 @@ export default function PhonePlanComparison() {
                 </p>
                 <ul className="space-y-1.5 text-base">
                   <li className="flex gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" />
                     <span>&quot;No SIM restrictions&quot; means unlocked — you can switch any time.</span>
                   </li>
                   <li className="flex gap-2">
-                    <XCircle className="w-5 h-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
+                    <XCircle className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                     <span>Any other message means locked — call your carrier to request an unlock.</span>
                   </li>
                 </ul>
@@ -1479,11 +1479,11 @@ export default function PhonePlanComparison() {
                 </p>
                 <ul className="space-y-1.5 text-base">
                   <li className="flex gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" />
                     <span>If it says unlocked or no network restriction, you&apos;re good.</span>
                   </li>
                   <li className="flex gap-2">
-                    <XCircle className="w-5 h-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
+                    <XCircle className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                     <span>Still unsure? Pop in a friend&apos;s SIM card from a different carrier. If it
                       connects to their network, your phone is unlocked.</span>
                   </li>
@@ -1492,10 +1492,10 @@ export default function PhonePlanComparison() {
             </Card>
           </div>
 
-          <Card className="mt-5 bg-sky-50 dark:bg-sky-950/20 border-sky-500/40">
+          <Card className="mt-5 bg-info border-sky-500/40">
             <CardContent className="p-5 space-y-2">
               <h3 className="text-lg font-semibold flex items-center gap-2">
-                <ShieldCheck className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+                <ShieldCheck className="w-5 h-5 text-info-foreground " />
                 Is your phone locked? Here&apos;s how to unlock it
               </h3>
               <p className="text-base leading-relaxed">

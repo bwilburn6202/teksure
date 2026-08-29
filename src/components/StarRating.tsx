@@ -183,7 +183,7 @@ export function StarRating({
       <span className={cn('inline-flex items-center gap-1', className)}>
         {renderStars(avgStars)}
         {ratingCount > 0 && (
-          <span className="text-xs text-muted-foreground ml-0.5">
+          <span className="text-sm text-muted-foreground ml-0.5">
             {avgStars.toFixed(1)} ({ratingCount})
           </span>
         )}
@@ -198,7 +198,7 @@ export function StarRating({
     return (
       <div className={cn('flex flex-col items-center gap-1', className)}>
         <span className="flex gap-0.5">{renderStars(userStars)}</span>
-        <p className="text-xs text-muted-foreground">
+        <p className="text-sm text-muted-foreground">
           Your rating: {userStars}/5
           {ratingCount > 1 && ` · Avg ${avgStars.toFixed(1)} from ${ratingCount} ratings`}
         </p>
@@ -239,7 +239,7 @@ export function StarRating({
           </button>
         ))}
       </div>
-      <p className="text-xs text-muted-foreground">
+      <p className="text-sm text-muted-foreground">
         {hover ? ['', 'Poor', 'Fair', 'Good', 'Very good', 'Excellent'][hover] : 'Tap to rate'}
         {ratingCount > 0 && !hover && ` · ${ratingCount} rating${ratingCount !== 1 ? 's' : ''}`}
       </p>

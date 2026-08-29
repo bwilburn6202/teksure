@@ -19,7 +19,7 @@ export default function FishbrainAnglerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why fishing apps?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find proven fishing spots near you.</li>
               <li>See what others caught + when.</li>
               <li>Identify mystery fish from photo.</li>
@@ -33,7 +33,7 @@ export default function FishbrainAnglerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fishbrain — most popular</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free with limits — Pro: $9.99/month.</li>
               <li>15 million users worldwide.</li>
               <li>Fishing spot maps with depth contours.</li>
@@ -47,7 +47,7 @@ export default function FishbrainAnglerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">FishAngler — free</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Completely free — no premium.</li>
               <li>Catch logging + community.</li>
               <li>Weather and solunar (best fishing times).</li>
@@ -61,7 +61,7 @@ export default function FishbrainAnglerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Navionics — for boaters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Marine charts for boat fishing.</li>
               <li>Detailed lake + ocean depth maps.</li>
               <li>Annual subscription required.</li>
@@ -75,7 +75,7 @@ export default function FishbrainAnglerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Weather + tide apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tides Near Me — free, simple tide tracker.</li>
               <li>Windy — wind forecasting essential for fishing.</li>
               <li>Solunar Forecast — best fishing times by moon.</li>
@@ -89,7 +89,7 @@ export default function FishbrainAnglerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">License + regulations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most states sell fishing license through state app.</li>
               <li>Some states free for seniors 65+.</li>
               <li>Check state fish + wildlife website.</li>
@@ -103,7 +103,7 @@ export default function FishbrainAnglerApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with Fishbrain free</h3>
-            <p className="text-sm text-muted-foreground">Download Fishbrain free version first. The fishing spot map alone is worth it. You can see exactly where local anglers caught fish recently. Many seniors discover great fishing spots a few miles from home they never knew existed. The Pro upgrade is worth it if you fish 2+ times a month and want all the depth charts and detailed data.</p>
+            <p className="text-base text-muted-foreground">Download Fishbrain free version first. The fishing spot map alone is worth it. You can see exactly where local anglers caught fish recently. Many seniors discover great fishing spots a few miles from home they never knew existed. The Pro upgrade is worth it if you fish 2+ times a month and want all the depth charts and detailed data.</p>
           </CardContent>
         </Card>
       </main>

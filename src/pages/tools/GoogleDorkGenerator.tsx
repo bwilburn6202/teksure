@@ -105,7 +105,7 @@ export default function GoogleDorkGenerator() {
 
           {/* Ethics Warning */}
           <div className="rounded-lg bg-amber-500/10 border border-amber-500/30 p-4 mb-8 flex gap-3">
-            <AlertTriangle className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
+            <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
             <div className="text-sm"><strong>Use responsibly.</strong> Google dorking is a legitimate research technique, but accessing private systems without permission is illegal. Only use these queries on websites you own or have permission to test.</div>
           </div>
 
@@ -132,7 +132,7 @@ export default function GoogleDorkGenerator() {
                     <Card key={t.id} className="cursor-pointer hover:border-primary/40 transition-all" onClick={() => setSelectedTemplate(t)}>
                       <CardContent className="p-4">
                         <h3 className="font-semibold text-sm mb-1">{t.name}</h3>
-                        <p className="text-xs text-muted-foreground mb-2">{t.description}</p>
+                        <p className="text-sm text-muted-foreground mb-2">{t.description}</p>
                         <code className="text-xs bg-muted px-2 py-1 rounded font-mono">{t.template}</code>
                       </CardContent>
                     </Card>
@@ -144,20 +144,20 @@ export default function GoogleDorkGenerator() {
                     <div className="flex items-center justify-between mb-4">
                       <div>
                         <h3 className="font-semibold">{selectedTemplate.name}</h3>
-                        <p className="text-sm text-muted-foreground">{selectedTemplate.description}</p>
+                        <p className="text-base text-muted-foreground">{selectedTemplate.description}</p>
                       </div>
                       <Button size="sm" variant="ghost" onClick={() => { setSelectedTemplate(null); setInput(''); }}>Change</Button>
                     </div>
 
                     <div className="space-y-4">
                       <div>
-                        <label className="text-sm font-medium block mb-1.5">Enter your target:</label>
+                        <label className="text-base font-medium block mb-1.5">Enter your target:</label>
                         <Input value={input} onChange={e => setInput(e.target.value)} placeholder={selectedTemplate.placeholder} className="font-mono" />
                       </div>
 
                       {generatedDork && (
                         <div className="rounded-lg bg-muted p-4">
-                          <label className="text-xs font-medium text-muted-foreground block mb-2">Generated query:</label>
+                          <label className="text-sm font-medium text-muted-foreground block mb-2">Generated query:</label>
                           <code className="text-sm font-mono break-all block mb-3">{generatedDork}</code>
                           <div className="flex gap-2">
                             <Button size="sm" onClick={handleCopy} variant="outline" className="gap-1.5">
@@ -187,7 +187,7 @@ export default function GoogleDorkGenerator() {
                       <div key={op.op} className="flex items-start gap-4 p-3 rounded-lg hover:bg-muted/50">
                         <code className="text-sm font-mono font-bold text-primary whitespace-nowrap min-w-[100px]">{op.op}</code>
                         <div className="flex-1">
-                          <p className="text-sm">{op.desc}</p>
+                          <p className="text-base">{op.desc}</p>
                           <code className="text-xs text-muted-foreground font-mono">{op.example}</code>
                         </div>
                       </div>

@@ -19,7 +19,7 @@ export default function PocketWifiAbroad() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The problem: roaming charges</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Using your regular phone abroad = expensive.</li>
               <li>Some carriers charge $10–$15/day for international.</li>
               <li>Unexpected charges = bill shock.</li>
@@ -33,7 +33,7 @@ export default function PocketWifiAbroad() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Option 1: Pocket WiFi hotspot</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Small device — fits in pocket or purse.</li>
               <li>Creates WiFi for your phone and tablet.</li>
               <li>Rent at airport kiosks or order before trip.</li>
@@ -47,7 +47,7 @@ export default function PocketWifiAbroad() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Option 2: International SIM card</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Buy a local SIM card at destination.</li>
               <li>Replace US SIM temporarily.</li>
               <li>Very cheap data — often $10–$30 for whole trip.</li>
@@ -61,7 +61,7 @@ export default function PocketWifiAbroad() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Option 3: eSIM (easiest)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Digital SIM — no physical card swap.</li>
               <li>Buy online before trip — Airalo, Holafly.</li>
               <li>Scan QR code to activate.</li>
@@ -75,7 +75,7 @@ export default function PocketWifiAbroad() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Option 4: Carrier international plan</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>T-Mobile — free international data (slow) in 200+ countries.</li>
               <li>AT&amp;T International Day Pass — $10/day when used.</li>
               <li>Verizon TravelPass — $10/day.</li>
@@ -89,7 +89,7 @@ export default function PocketWifiAbroad() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before you leave</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Call carrier: &quot;What are my international rates?&quot;</li>
               <li>Download maps for offline use (Google Maps).</li>
               <li>Download translation app with offline language packs.</li>
@@ -103,7 +103,7 @@ export default function PocketWifiAbroad() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">eSIM easiest for iPhone users</h3>
-            <p className="text-sm text-muted-foreground">If you have an iPhone XS or newer, an eSIM from Airalo is the easiest option. Search the country you&apos;re visiting, pay $15–$25, scan the QR code, and you have data for your whole trip. Your US number still works on WiFi calls. No physical SIM swap, no renting a hotspot device. Buy it the night before you leave.</p>
+            <p className="text-base text-muted-foreground">If you have an iPhone XS or newer, an eSIM from Airalo is the easiest option. Search the country you&apos;re visiting, pay $15–$25, scan the QR code, and you have data for your whole trip. Your US number still works on WiFi calls. No physical SIM swap, no renting a hotspot device. Buy it the night before you leave.</p>
           </CardContent>
         </Card>
       </main>

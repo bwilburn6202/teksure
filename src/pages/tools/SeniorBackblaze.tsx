@@ -22,7 +22,7 @@ export default function SeniorBackblaze() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Vs others</h2><p>iCloud/Google = limited. Backblaze = unlimited. Best for big photo libraries.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Carbonite alternative</h2><p>$6/month. Same idea. Both work well.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Setup</h2><p>Download app. Sign in. Walk away. Done.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Worth every penny. One ransomware attack avoided pays for years.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Worth every penny. One ransomware attack avoided pays for years.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

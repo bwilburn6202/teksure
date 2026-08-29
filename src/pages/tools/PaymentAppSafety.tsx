@@ -40,7 +40,7 @@ export default function PaymentAppSafety() {
               <AlertTriangle className="w-6 h-6 text-destructive shrink-0" />
               <div>
                 <h2 className="font-bold mb-1">The golden rule</h2>
-                <p className="text-sm">Once you send money on these apps, it's almost impossible to get back. <strong>Only send to people you actually know.</strong> If you wouldn't hand them $200 in cash, don't send it on the app.</p>
+                <p className="text-base">Once you send money on these apps, it's almost impossible to get back. <strong>Only send to people you actually know.</strong> If you wouldn't hand them $200 in cash, don't send it on the app.</p>
               </div>
             </div>
           </CardContent>
@@ -60,11 +60,11 @@ export default function PaymentAppSafety() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h2 className="text-2xl font-bold flex items-center gap-2 mb-1">{a.emoji} {a.name}</h2>
-                <p className="text-sm text-muted-foreground mb-4">{a.owner}</p>
-                <h3 className="font-bold mb-2 flex items-center gap-2"><ShieldCheck className="w-5 h-5 text-green-600" />Safety steps</h3>
-                <ul className="list-disc pl-5 space-y-2 text-sm mb-4">{a.safety.map((s, i) => <li key={i}>{s}</li>)}</ul>
+                <p className="text-base text-muted-foreground mb-4">{a.owner}</p>
+                <h3 className="font-bold mb-2 flex items-center gap-2"><ShieldCheck className="w-5 h-5 text-success-foreground" />Safety steps</h3>
+                <ul className="list-disc pl-5 space-y-2 text-base mb-4">{a.safety.map((s, i) => <li key={i}>{s}</li>)}</ul>
                 <h3 className="font-bold mb-2 flex items-center gap-2"><AlertTriangle className="w-5 h-5 text-destructive" />Common scams</h3>
-                <ul className="list-disc pl-5 space-y-2 text-sm">{a.scams.map((s, i) => <li key={i}>{s}</li>)}</ul>
+                <ul className="list-disc pl-5 space-y-2 text-base">{a.scams.map((s, i) => <li key={i}>{s}</li>)}</ul>
               </CardContent>
             </Card>
           </div>
@@ -73,7 +73,7 @@ export default function PaymentAppSafety() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you got scammed</h3>
-            <ol className="list-decimal pl-5 space-y-1 text-sm text-muted-foreground">
+            <ol className="list-decimal pl-5 space-y-1 text-base text-muted-foreground">
               <li>Open the app and report the transaction as fraud right away.</li>
               <li>Call your bank — they may be able to reverse it if it just happened.</li>
               <li>Report to the FTC at reportfraud.ftc.gov.</li>

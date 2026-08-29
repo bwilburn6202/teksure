@@ -32,10 +32,10 @@ export default function DrawingPhotoEditingApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function DrawingPhotoEditingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For absolute beginners</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Apple Photos / Google Photos</strong> — built-in editing. Auto-enhance, crop, light tweaks. Often enough.</li>
               <li><strong>Snapseed</strong> — free, good selective editing without learning curve.</li>
               <li><strong>Canva</strong> — drag-and-drop. Make a Christmas card with family photos in 10 minutes.</li>
@@ -56,7 +56,7 @@ export default function DrawingPhotoEditingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For serious photo editing</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Adobe Lightroom</strong> — industry standard. $10/mo.</li>
               <li><strong>Affinity Photo</strong> — $70 once, no subscription. Excellent.</li>
               <li><strong>Apple Photos\' built-in tools</strong> — improved enormously. Free.</li>
@@ -68,7 +68,7 @@ export default function DrawingPhotoEditingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free YouTube tutorials beat paid courses</h3>
-            <p className="text-sm text-muted-foreground">Whatever app you pick — search YouTube for "[app name] tutorial for beginners". Hundreds of free hours of teaching. Watch 30 minutes, then play. Better than any paid course for first-timers.</p>
+            <p className="text-base text-muted-foreground">Whatever app you pick — search YouTube for "[app name] tutorial for beginners". Hundreds of free hours of teaching. Watch 30 minutes, then play. Better than any paid course for first-timers.</p>
           </CardContent>
         </Card>
       </main>

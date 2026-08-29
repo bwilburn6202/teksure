@@ -30,10 +30,10 @@ export default function TeethCleaningApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function TeethCleaningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior dental issues + prevention</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Dry mouth</strong> — many meds cause it. Drink more water. Sugar-free gum. Biotene mouthwash.</li>
               <li><strong>Receding gums</strong> — soft toothbrush only. Sensodyne toothpaste.</li>
               <li><strong>Root cavities</strong> — fluoride mouthwash (ACT) helps.</li>
@@ -56,7 +56,7 @@ export default function TeethCleaningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free + cheap dental care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Dental schools</strong> — students do work supervised, 30-50% off.</li>
               <li><strong>FQHC clinics</strong> — sliding-scale fees.</li>
               <li><strong>Mission of Mercy</strong> — annual free dental clinics.</li>
@@ -70,7 +70,7 @@ export default function TeethCleaningApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Original Medicare doesn&apos;t cover dental</h3>
-            <p className="text-sm text-muted-foreground">Big surprise to many — Original Medicare covers ZERO routine dental. Medicare Advantage often does. Standalone dental insurance ($30-60/mo) for cleanings + simple work. For implants/crowns, dental plan often saves less than expected. Calculate carefully.</p>
+            <p className="text-base text-muted-foreground">Big surprise to many — Original Medicare covers ZERO routine dental. Medicare Advantage often does. Standalone dental insurance ($30-60/mo) for cleanings + simple work. For implants/crowns, dental plan often saves less than expected. Calculate carefully.</p>
           </CardContent>
         </Card>
       </main>

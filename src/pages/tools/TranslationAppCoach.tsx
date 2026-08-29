@@ -19,21 +19,21 @@ export default function TranslationAppCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> iPhone — Translate app (free, built in)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open the <strong>Translate</strong> app (white with a globe). If you don't see it, search the App Store for "Translate" — it's free from Apple.</li>
               <li>Tap the languages at the top — pick English on the left and Spanish (or whatever) on the right.</li>
               <li>Tap the <strong>Conversation</strong> tab at the bottom for two-way chats.</li>
               <li>Tap the microphone and speak. Translation appears AND speaks aloud.</li>
               <li>Hand the phone to the other person — they tap the mic and speak. Translation comes back.</li>
             </ol>
-            <p className="text-sm mt-3 bg-muted/50 p-3 rounded"><strong>Tip:</strong> Tap "Auto Detect" so the app figures out who's speaking which language. Easier than tapping every time.</p>
+            <p className="text-base mt-3 bg-muted/50 p-3 rounded"><strong>Tip:</strong> Tap "Auto Detect" so the app figures out who's speaking which language. Easier than tapping every time.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Android — Google Translate (free)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install <strong>Google Translate</strong> from the Play Store (often pre-installed).</li>
               <li>Pick the two languages at the top.</li>
               <li>Tap <strong>Conversation</strong> for two-way mode.</li>
@@ -46,7 +46,7 @@ export default function TranslationAppCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Use cases that actually help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Reading menus on vacation</strong> — point camera at the menu. Done.</li>
               <li><strong>Talking to a non-English-speaking neighbor</strong> — open Conversation mode. Hand the phone back and forth.</li>
               <li><strong>Doctor's office paperwork</strong> — point camera at a Spanish form. Read in English.</li>
@@ -59,7 +59,7 @@ export default function TranslationAppCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before you travel</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open the translate app at home (with Wi-Fi).</li>
               <li>Tap the language list. Look for a download arrow next to your destination's language.</li>
               <li>Download it. Now translation works <strong>without internet</strong> — important when roaming charges are sky-high.</li>
@@ -71,7 +71,7 @@ export default function TranslationAppCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">A small caution</h3>
-            <p className="text-sm text-muted-foreground">Translation apps are great for everyday talk, menus, and signs. They're NOT reliable for legal documents, contracts, or medical instructions where one wrong word matters. For those, ask for a real human translator.</p>
+            <p className="text-base text-muted-foreground">Translation apps are great for everyday talk, menus, and signs. They're NOT reliable for legal documents, contracts, or medical instructions where one wrong word matters. For those, ask for a real human translator.</p>
           </CardContent>
         </Card>
       </main>

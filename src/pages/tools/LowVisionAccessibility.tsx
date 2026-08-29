@@ -56,20 +56,20 @@ export default function LowVisionAccessibility() {
   const [platform, setPlatform] = useState<Platform>("iPhone");
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Low-Vision Accessibility Quick Reference | TekSure" description="Step-by-step instructions for enabling large text, magnifier, screen reader, and contrast settings on iPhone, iPad, Android, Windows, and Mac. Print and keep by your device." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <Eye className="h-7 w-7 text-blue-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Low-Vision Accessibility</h1>
+            <Eye className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Low-Vision Accessibility</h1>
           </div>
-          <p className="text-gray-600 text-lg">Make your device easier to see. Pick your device, follow the steps, print this page if it helps.</p>
+          <p className="text-muted-foreground text-lg">Make your device easier to see. Pick your device, follow the steps, print this page if it helps.</p>
         </div>
 
         <Card className="mb-4 print:hidden">
           <CardContent className="py-4 px-4">
-            <p className="text-sm font-semibold text-gray-700 mb-2">Pick your device</p>
+            <p className="text-base font-semibold text-foreground mb-2">Pick your device</p>
             <div className="flex flex-wrap gap-2">
               {(Object.keys(SETTINGS) as Platform[]).map(p => (
                 <Button key={p} size="sm" variant={platform === p ? "default" : "outline"} onClick={() => setPlatform(p)}>
@@ -82,28 +82,28 @@ export default function LowVisionAccessibility() {
 
         <Card className="mb-4 print:break-inside-avoid">
           <CardContent className="py-4 px-4">
-            <h2 className="text-2xl font-bold text-gray-900 mb-3">{platform}</h2>
+            <h2 className="text-2xl font-bold text-foreground mb-3">{platform}</h2>
             <div className="space-y-3">
               {SETTINGS[platform].map((s, i) => (
-                <div key={i} className="border border-gray-200 rounded-lg p-3 bg-white">
-                  <p className="font-semibold text-gray-900">{s.feature}</p>
-                  <p className="text-sm text-gray-600 italic">{s.what}</p>
-                  <p className="text-sm text-gray-800 mt-1"><span className="font-semibold">How:</span> {s.steps}</p>
+                <div key={i} className="border border-border rounded-lg p-3 bg-card">
+                  <p className="font-semibold text-foreground">{s.feature}</p>
+                  <p className="text-base text-muted-foreground italic">{s.what}</p>
+                  <p className="text-base text-foreground mt-1"><span className="font-semibold">How:</span> {s.steps}</p>
                 </div>
               ))}
             </div>
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-blue-50 border-blue-200">
+        <Card className="mb-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Free help:</span> The National Library Service (NLS BARD) lends free audiobooks and braille books by mail to anyone with low vision. Call 1-888-NLS-READ or visit nlsbard.loc.gov. Bookshare (bookshare.org) offers free ebooks in large print and audio for qualifying users.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Free help:</span> The National Library Service (NLS BARD) lends free audiobooks and braille books by mail to anyone with low vision. Call 1-888-NLS-READ or visit nlsbard.loc.gov. Bookshare (bookshare.org) offers free ebooks in large print and audio for qualifying users.</p>
           </CardContent>
         </Card>
 
-        <Card className="bg-emerald-50 border-emerald-200 mb-4">
+        <Card className="bg-success border-success-foreground/25 mb-4">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-emerald-900"><span className="font-semibold">Sound out loud:</span> Voice assistants are a low-vision senior is best friend. iPhone: hold the side button and ask Siri. Android: say Hey Google. Both can call, text, set reminders, read news, and answer questions hands-free and eyes-free.</p>
+            <p className="text-base text-success-foreground"><span className="font-semibold">Sound out loud:</span> Voice assistants are a low-vision senior is best friend. iPhone: hold the side button and ask Siri. Android: say Hey Google. Both can call, text, set reminders, read news, and answer questions hands-free and eyes-free.</p>
           </CardContent>
         </Card>
 
@@ -113,6 +113,6 @@ export default function LowVisionAccessibility() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -18,11 +18,11 @@ export default function SeniorAmateurRadio() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Technician license</h2><p>$15 + study. Most basic. Free practice tests online.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cheap radio</h2><p>$30 Baofeng UV-5R. Beginner radio. Talk to other hams.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Emergency communication</li><li>Connect during disasters</li><li>Active social hobby</li><li>Brain workout</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Emergency communication</li><li>Connect during disasters</li><li>Active social hobby</li><li>Brain workout</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Local clubs</h2><p>ARRL.org. Find clubs. Mentors help seniors learn.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Field Day</h2><p>4th weekend in June. Public events. Try radios. Free.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Emergency value</h2><p>When power/cell fails, ham radio works. Real lifesaver.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Many seniors love ham radio. Lifelong learning hobby.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Many seniors love ham radio. Lifelong learning hobby.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

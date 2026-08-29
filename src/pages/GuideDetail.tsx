@@ -224,7 +224,7 @@ const StepScreenshot = ({
             <AnnotationLayer annotations={annotations} />
           )}
           <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity bg-black/10">
-            <span className="bg-black/60 text-white text-sm px-3 py-1.5 rounded-lg backdrop-blur-sm">
+            <span className="bg-black/60 text-white text-base px-3 py-1.5 rounded-lg backdrop-blur-sm">
               Click to enlarge
             </span>
           </div>
@@ -232,13 +232,13 @@ const StepScreenshot = ({
         {annotations && annotations.length > 0 && (
           <div className="bg-muted/50 border-t border-border px-4 py-2 flex flex-wrap gap-3">
             {annotations.filter(a => a.label && a.type !== 'highlight').map((a, i) => (
-              <span key={i} className="flex items-center gap-1.5 text-sm text-muted-foreground">
+              <span key={i} className="flex items-center gap-1.5 text-base text-muted-foreground">
                 {a.type === 'callout' && (
                   <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-red-500 text-white text-[11px] font-bold shrink-0">
                     {a.label}
                   </span>
                 )}
-                {a.type === 'arrow' && <span className="text-red-500 font-bold">↓</span>}
+                {a.type === 'arrow' && <span className="text-danger-foreground font-bold">↓</span>}
                 {a.label}
               </span>
             ))}
@@ -257,11 +257,11 @@ const StepScreenshot = ({
 };
 
 const ProTip = ({ children }: { children: React.ReactNode }) => (
-  <div className="mt-4 rounded-lg border border-amber-300/40 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-700/40 px-4 py-3 flex items-start gap-3">
-    <Lightbulb className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
+  <div className="mt-4 rounded-lg border border-amber-300/40 bg-warn dark:border-amber-700/40 px-4 py-3 flex items-start gap-3">
+    <Lightbulb className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
     <div>
-      <p className="text-sm font-bold text-amber-700 dark:text-amber-400 mb-0.5">Quick Tip</p>
-      <p className="text-sm text-muted-foreground leading-relaxed">{children}</p>
+      <p className="text-base font-bold text-warn-foreground mb-0.5">Quick Tip</p>
+      <p className="text-base text-muted-foreground leading-relaxed">{children}</p>
     </div>
   </div>
 );
@@ -270,8 +270,8 @@ const WarningBox = ({ children }: { children: React.ReactNode }) => (
   <div className="mt-4 rounded-lg border border-destructive/30 bg-destructive/5 px-4 py-3 flex items-start gap-3">
     <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
     <div>
-      <p className="text-sm font-bold text-destructive mb-0.5">Warning</p>
-      <p className="text-sm text-muted-foreground leading-relaxed">{children}</p>
+      <p className="text-base font-bold text-destructive mb-0.5">Warning</p>
+      <p className="text-base text-muted-foreground leading-relaxed">{children}</p>
     </div>
   </div>
 );
@@ -282,10 +282,10 @@ const CompletionBanner = ({ guideTitle, slug }: { guideTitle: string; slug: stri
       <div className="text-center mb-4">
         <CheckCircle className="h-8 w-8 text-teksure-success mx-auto mb-2" />
         <p className="font-bold text-base mb-1">You Did It!</p>
-        <p className="text-sm text-muted-foreground">You've finished reading: <strong>{guideTitle}</strong></p>
+        <p className="text-base text-muted-foreground">You've finished reading: <strong>{guideTitle}</strong></p>
       </div>
       <MasteryPicker slug={slug} />
-      <p className="text-sm text-muted-foreground mt-4 text-center">
+      <p className="text-base text-muted-foreground mt-4 text-center">
         Need more help? <Link to="/book" className="text-primary hover:underline font-medium">Book a TekSure tech <span aria-hidden="true">→</span></Link>
       </p>
     </div>
@@ -334,7 +334,7 @@ const HelpfulSection = ({ guideSlug }: { guideSlug: string }) => (
   <Card className="mb-8">
     <CardContent className="py-6 text-center">
       <p className="font-semibold mb-1">Rate this guide</p>
-      <p className="text-sm text-muted-foreground mb-4">How helpful was this guide?</p>
+      <p className="text-base text-muted-foreground mb-4">How helpful was this guide?</p>
       <StarRating guideSlug={guideSlug} size="lg" />
     </CardContent>
   </Card>
@@ -533,17 +533,17 @@ const GuideDetail = () => {
                   <CheckCircle className="h-3.5 w-3.5" /> Verified Helpful
                 </Badge>
               )}
-              <span className="flex items-center gap-1 text-sm text-muted-foreground">
+              <span className="flex items-center gap-1 text-base text-muted-foreground">
                 <Clock className="h-3.5 w-3.5" /> {estimatedReadTime}
               </span>
-              <span className="flex items-center gap-1 text-sm text-muted-foreground">
+              <span className="flex items-center gap-1 text-base text-muted-foreground">
                 <BookOpen className="h-3.5 w-3.5" /> {guide.steps?.length || 0} steps
               </span>
-              <span className="text-sm text-muted-foreground">
+              <span className="text-base text-muted-foreground">
                 {new Date(guide.publishedAt).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
               </span>
               {guide.lastVerifiedAt && (
-                <span className="flex items-center gap-1 text-sm text-teksure-success">
+                <span className="flex items-center gap-1 text-base text-teksure-success">
                   <CheckCircle className="h-3.5 w-3.5" />
                   Verified {new Date(guide.lastVerifiedAt).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}
                 </span>
@@ -606,12 +606,12 @@ const GuideDetail = () => {
           {guide.steps && guide.steps.length > 3 && (
             <Card className="mb-8 bg-muted/50">
               <CardContent className="py-4">
-                <p className="text-sm font-semibold mb-2">In this guide ({guide.steps.length} steps):</p>
+                <p className="text-base font-semibold mb-2">In this guide ({guide.steps.length} steps):</p>
                 <ol className="space-y-1">
                   {guide.steps.map((step, i) => (
                     <li key={i}>
                       <a href={`#step-${i + 1}`} className="text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-2">
-                        <span className="text-xs font-mono text-primary">{i + 1}.</span>
+                        <span className="text-sm font-mono text-primary">{i + 1}.</span>
                         {step.title}
                       </a>
                     </li>
@@ -653,7 +653,7 @@ const GuideDetail = () => {
                               return Icon ? <Icon className="h-[18px] w-[18px] text-primary/70 shrink-0" /> : null;
                             })()}
                             <h3 className="font-bold text-lg">{step.title}</h3>
-                            <span className="text-sm text-muted-foreground ml-auto shrink-0">{calcStepTime(step)}</span>
+                            <span className="text-base text-muted-foreground ml-auto shrink-0">{calcStepTime(step)}</span>
                           </div>
                           <div className="text-base text-foreground leading-relaxed">
                             <StepContent text={step.content} />
@@ -769,7 +769,7 @@ const GuideDetail = () => {
                   </a>
                 ))}
               </div>
-              <p className="text-sm text-muted-foreground mt-3">
+              <p className="text-base text-muted-foreground mt-3">
                 Sources used to create and verify this guide. <a href="/sources" className="text-primary hover:underline">View all sources →</a>
               </p>
             </div>
@@ -781,7 +781,7 @@ const GuideDetail = () => {
               <Link to={`/guides/${prevGuide.slug}`} className="group">
                 <Card className="h-full hover:shadow-md transition-shadow">
                   <CardContent className="py-4">
-                    <p className="text-sm text-muted-foreground mb-1">← Previous</p>
+                    <p className="text-base text-muted-foreground mb-1">← Previous</p>
                     <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{prevGuide.title}</p>
                   </CardContent>
                 </Card>
@@ -791,7 +791,7 @@ const GuideDetail = () => {
               <Link to={`/guides/${nextGuide.slug}`} className="group text-right">
                 <Card className="h-full hover:shadow-md transition-shadow">
                   <CardContent className="py-4">
-                    <p className="text-sm text-muted-foreground mb-1">Next →</p>
+                    <p className="text-base text-muted-foreground mb-1">Next →</p>
                     <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{nextGuide.title}</p>
                   </CardContent>
                 </Card>
@@ -804,7 +804,7 @@ const GuideDetail = () => {
           {/* CTA */}
           <div className="rounded-2xl border border-border bg-muted/50 p-10 text-center mb-12">
             <h2 className="text-xl font-bold mb-2">Still stuck? Let a pro handle it.</h2>
-            <p className="text-muted-foreground mb-6 max-w-md mx-auto text-sm">A real person can walk you through this over the phone, anywhere in the US. If we can't fix it, you don't pay.</p>
+            <p className="text-muted-foreground mb-6 max-w-md mx-auto text-base">A real person can walk you through this over the phone, anywhere in the US. If we can't fix it, you don't pay.</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Button asChild size="lg" className="rounded-xl gap-2">
                 <Link to="/book">Book a Verified Tech <ArrowRight className="h-4 w-4" /></Link>
@@ -821,7 +821,7 @@ const GuideDetail = () => {
               <CardContent className="py-5 px-5">
                 <div className="flex items-center gap-2 mb-3">
                   <ExternalLink className="h-4 w-4 text-primary" />
-                  <p className="text-sm font-semibold">Learn more from official sources</p>
+                  <p className="text-base font-semibold">Learn more from official sources</p>
                 </div>
                 <ul className="space-y-2">
                   {learnMoreResources.map((r) => (
@@ -833,7 +833,7 @@ const GuideDetail = () => {
                         className="text-sm text-primary hover:underline inline-flex items-center gap-1.5"
                       >
                         {r.title}
-                        <span className="text-sm text-muted-foreground">— {r.source}</span>
+                        <span className="text-base text-muted-foreground">— {r.source}</span>
                         <ExternalLink className="h-3 w-3 opacity-50" />
                       </a>
                     </li>
@@ -855,7 +855,7 @@ const GuideDetail = () => {
                         <img src={getGuideThumbnailSmall(g)} alt="" className="w-10 h-10 rounded-lg object-cover mb-2" loading="lazy" />
                         <p className="text-sm font-medium group-hover:text-primary transition-colors line-clamp-2">{g.title}</p>
                         <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{g.excerpt}</p>
-                        <p className="text-sm text-muted-foreground mt-1">{calcReadTime(g)}</p>
+                        <p className="text-base text-muted-foreground mt-1">{calcReadTime(g)}</p>
                       </CardContent>
                     </Card>
                   </Link>

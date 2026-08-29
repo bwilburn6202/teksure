@@ -19,14 +19,14 @@ export default function FuneralPlanningCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why pre-plan</h2>
-            <p className="text-sm">Average funeral costs $8,000-15,000. In grief, families overspend by 30-50%. Pre-planning means YOU choose what fits your wishes and budget — not your kids in tears at 3am.</p>
+            <p className="text-base">Average funeral costs $8,000-15,000. In grief, families overspend by 30-50%. Pre-planning means YOU choose what fits your wishes and budget — not your kids in tears at 3am.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost ranges (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Direct cremation</strong> — $700-2,500. No service, just cremation.</li>
               <li><strong>Cremation with memorial</strong> — $2,500-5,000.</li>
               <li><strong>Direct burial</strong> — $1,500-3,500. No viewing, no embalming.</li>
@@ -40,7 +40,7 @@ export default function FuneralPlanningCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Get the FTC "General Price List"</strong> — by law, every funeral home must provide one. Compare 3 homes — prices vary 2-3x for the same services.</li>
               <li><strong>Funeralocity / Parting.com</strong> — compare prices online by zip code.</li>
               <li><strong>Costco caskets</strong> — federal "Funeral Rule" lets you buy elsewhere. Costco/Walmart caskets are $900-1,500 vs $3,000-5,000 at funeral homes.</li>
@@ -52,7 +52,7 @@ export default function FuneralPlanningCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Funding methods</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pay-on-death savings account</strong> — simplest. Names beneficiary; bypasses probate.</li>
               <li><strong>Pre-paid funeral contract</strong> — careful: company may go out of business. Check if it\'s in a state-protected trust.</li>
               <li><strong>Burial insurance / Final Expense Life Insurance</strong> — small life policy ($5,000-30,000). Often heavily marketed; usually overpriced.</li>
@@ -66,7 +66,7 @@ export default function FuneralPlanningCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Document and tell family</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Write down your wishes — "Five Wishes" form covers this. Include: cremation/burial, location, music, who speaks.</li>
               <li>Tell your spouse and adult kids where the document is.</li>
               <li>If pre-paid: keep the contract with your will.</li>
@@ -80,7 +80,7 @@ export default function FuneralPlanningCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>Funeral Consumers Alliance (funerals.org)</strong> — non-profit advocate, brilliant guides. <strong>Compassion & Choices</strong> for end-of-life options. <strong>Veterans Funeral Care</strong> for vets. <strong>"Final Plans" by AARP</strong> — free 32-page workbook.</p>
+            <p className="text-base text-muted-foreground"><strong>Funeral Consumers Alliance (funerals.org)</strong> — non-profit advocate, brilliant guides. <strong>Compassion & Choices</strong> for end-of-life options. <strong>Veterans Funeral Care</strong> for vets. <strong>"Final Plans" by AARP</strong> — free 32-page workbook.</p>
           </CardContent>
         </Card>
       </main>

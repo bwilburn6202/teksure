@@ -19,10 +19,10 @@ export default function SeniorMassageGuns() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Theragun Mini</h2><p>$200. Quiet. Compact. Easy on hands.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hyperice Hypervolt</h2><p>$200. Most powerful. Multiple speeds.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Renpho R3</h2><p>$70. Budget. Surprisingly good.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to use</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Sore neck/shoulders</li><li>After walks/exercise</li><li>Lower back tension</li><li>Calf cramps</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to use</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Sore neck/shoulders</li><li>After walks/exercise</li><li>Lower back tension</li><li>Calf cramps</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to AVOID</h2><p>Don&apos;t use on bones, throat, blood thinners, recent surgery, varicose veins.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Ask your doctor</h2><p>Especially if you take blood thinners or have heart conditions.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Lowest setting. 30 seconds per area. Less is more.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Lowest setting. 30 seconds per area. Less is more.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -30,10 +30,10 @@ export default function BilingualMedicalApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,8 +42,8 @@ export default function BilingualMedicalApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Federal law — free interpreters</h2>
-            <p className="text-sm">Federal law (Title VI, Civil Rights Act) requires hospitals/clinics that get federal funding to provide FREE interpreters in any language you need. ALL major hospitals, FQHCs, and Medicare-accepting offices.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Federal law (Title VI, Civil Rights Act) requires hospitals/clinics that get federal funding to provide FREE interpreters in any language you need. ALL major hospitals, FQHCs, and Medicare-accepting offices.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>"I need an interpreter, please" — bring you one or video.</li>
               <li>Don&apos;t accept "your family member can interpret" — that violates federal law for medical visits.</li>
               <li>Most ERs have phone-interpreter service available 24/7.</li>
@@ -54,7 +54,7 @@ export default function BilingualMedicalApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find Spanish-speaking doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Insurance directory</strong> — filter by Spanish-speaking.</li>
               <li><strong>Zocdoc</strong> — search "Spanish-speaking" + your zip.</li>
               <li><strong>Healthgrades</strong> — language filter.</li>
@@ -67,7 +67,7 @@ export default function BilingualMedicalApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t skip care due to language</h3>
-            <p className="text-sm text-muted-foreground">Idioma no debe ser barrera para atención médica. Pide intérprete — es tu derecho federal. La salud es lo primero.</p>
+            <p className="text-base text-muted-foreground">Idioma no debe ser barrera para atención médica. Pide intérprete — es tu derecho federal. La salud es lo primero.</p>
           </CardContent>
         </Card>
       </main>

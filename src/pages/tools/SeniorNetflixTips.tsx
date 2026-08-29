@@ -22,7 +22,7 @@ export default function SeniorNetflixTips() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Audio description</h2><p>Some shows include narration of action for low-vision viewers. Look for &ldquo;Audio&rdquo; menu.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pause auto-play</h2><p>Account → Profile → Playback. Turn off &ldquo;Autoplay next episode.&rdquo;</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Download for travel</h2><p>Tap download arrow on a show. Watch offline on your tablet on a flight.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: The Standard with Ads plan is $7.99/month — same shows, occasional ads.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: The Standard with Ads plan is $7.99/month — same shows, occasional ads.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

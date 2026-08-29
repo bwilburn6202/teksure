@@ -261,7 +261,7 @@ export default function TechComfortQuiz() {
           <div>
             <Card className="border-2 border-primary/20">
               <CardContent className="p-6 sm:p-8">
-                <p className="text-sm text-primary font-semibold mb-1">
+                <p className="text-base text-primary font-semibold mb-1">
                   Question {questions[currentQ].id} of {totalQuestions}
                 </p>
                 <h2 className="text-xl sm:text-2xl font-bold mb-1">{questions[currentQ].text}</h2>
@@ -291,8 +291,8 @@ export default function TechComfortQuiz() {
               </CardContent>
             </Card>
 
-            <div className="mt-4 rounded-xl bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 p-4">
-              <p className="text-sm text-blue-700 dark:text-blue-300">
+            <div className="mt-4 rounded-xl bg-info border border-info-foreground/25 p-4">
+              <p className="text-base text-info-foreground ">
                  <strong>No pressure!</strong> There are no right or wrong answers. Just pick what feels closest to your experience.
               </p>
             </div>
@@ -345,7 +345,7 @@ export default function TechComfortQuiz() {
                             </span>
                           )}
                         </div>
-                        <p className="text-sm text-muted-foreground">{guide.description}</p>
+                        <p className="text-base text-muted-foreground">{guide.description}</p>
                       </div>
                       <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
                     </CardContent>
@@ -355,11 +355,11 @@ export default function TechComfortQuiz() {
             </div>
 
             {/* Encouragement box */}
-            <div className="rounded-xl bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 p-5 mb-6">
-              <p className="text-base font-semibold text-green-700 dark:text-green-400 mb-1">
+            <div className="rounded-xl bg-success border border-success-foreground/25 p-5 mb-6">
+              <p className="text-base font-semibold text-success-foreground mb-1">
                  You're already making progress!
               </p>
-              <p className="text-sm text-green-700/90 dark:text-green-300/90">
+              <p className="text-base text-green-700/90 dark:text-green-300/90">
                 Just by taking this assessment, you've shown that you're ready to learn. Technology is a tool — and like any tool, it gets easier with practice. We're here to help every step of the way.
               </p>
             </div>

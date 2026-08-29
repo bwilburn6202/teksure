@@ -19,7 +19,7 @@ export default function AppleNotesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Take notes by typing or voice.</li>
               <li>Photograph documents to save.</li>
               <li>Scan documents (PDF).</li>
@@ -33,7 +33,7 @@ export default function AppleNotesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Grocery lists.</li>
               <li>Medication tracker.</li>
               <li>Doctor notes.</li>
@@ -47,7 +47,7 @@ export default function AppleNotesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Scan documents</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap camera icon.</li>
               <li>&quot;Scan Documents.&quot;</li>
               <li>Auto-detects edges.</li>
@@ -61,7 +61,7 @@ export default function AppleNotesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice dictation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap microphone on keyboard.</li>
               <li>Speak — words appear.</li>
               <li>Easier than typing.</li>
@@ -75,7 +75,7 @@ export default function AppleNotesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lock private notes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap lock icon on note.</li>
               <li>Set password or Face ID.</li>
               <li>For SSN, account numbers.</li>
@@ -89,7 +89,7 @@ export default function AppleNotesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sync everywhere</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone, iPad, Mac all see same notes.</li>
               <li>iCloud syncs automatically.</li>
               <li>Web access via iCloud.com.</li>
@@ -103,7 +103,7 @@ export default function AppleNotesForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Use what you already have</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t install Notion, Evernote, or fancy note apps. Apple Notes (already on your iPhone) does 95% of what those do for free. Voice dictation, document scanning, photo notes, sync across devices, password protection. Most seniors find Apple Notes more than sufficient. Less is more.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t install Notion, Evernote, or fancy note apps. Apple Notes (already on your iPhone) does 95% of what those do for free. Voice dictation, document scanning, photo notes, sync across devices, password protection. Most seniors find Apple Notes more than sufficient. Less is more.</p>
           </CardContent>
         </Card>
       </main>

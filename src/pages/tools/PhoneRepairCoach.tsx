@@ -19,14 +19,14 @@ export default function PhoneRepairCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">First — back up your phone</h2>
-            <p className="text-sm">Before any repair: back up to iCloud or Google. Repair sometimes wipes the phone. Settings → tap your name → iCloud → "iCloud Backup" → "Back Up Now". Or for Android: Settings → Google → Backup → "Back up now".</p>
+            <p className="text-base">Before any repair: back up to iCloud or Google. Repair sometimes wipes the phone. Settings → tap your name → iCloud → "iCloud Backup" → "Back Up Now". Or for Android: Settings → Google → Backup → "Back up now".</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common repairs and rough costs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cracked screen, iPhone:</strong> $150-$400 at Apple. $80-$200 at local repair shops.</li>
               <li><strong>Battery replacement, iPhone:</strong> $69-$119 at Apple. $50-$80 at local shops.</li>
               <li><strong>Battery, Android:</strong> $50-$120.</li>
@@ -40,7 +40,7 @@ export default function PhoneRepairCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to get repairs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Store / Apple Authorized Service</strong> — Genuine parts, 1-year warranty on repair. More expensive.</li>
               <li><strong>Best Buy Geek Squad</strong> — Authorized Apple repair. Often same-day. Reliable.</li>
               <li><strong>uBreakiFix (Samsung partner)</strong> — Authorized Samsung. Good for Android.</li>
@@ -53,7 +53,7 @@ export default function PhoneRepairCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Decision tree: repair vs replace</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Phone is 1-3 years old + repair is under $150:</strong> Repair.</li>
               <li><strong>Phone is 4+ years old + repair is over $150:</strong> Probably replace. Apple stops supporting iPhones after about 6 years.</li>
               <li><strong>Multiple things broken:</strong> Replace.</li>
@@ -63,13 +63,13 @@ export default function PhoneRepairCoach() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <AlertTriangle className="w-6 h-6 text-yellow-700 dark:text-yellow-400 shrink-0" />
+              <AlertTriangle className="w-6 h-6 text-warn-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-2">Watch out for repair scams</h3>
-                <ul className="list-disc pl-5 space-y-1 text-sm">
+                <ul className="list-disc pl-5 space-y-1 text-base">
                   <li>Demands you pay before any diagnosis.</li>
                   <li>Won\'t give a written estimate.</li>
                   <li>"Found more problems" once they have the phone — get a second opinion.</li>
@@ -83,7 +83,7 @@ export default function PhoneRepairCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save money on a replacement</h3>
-            <p className="text-sm text-muted-foreground"><strong>Apple Certified Refurbished</strong> — same warranty as new, $50-$200 cheaper. <strong>Amazon Renewed</strong> — slightly cheaper. <strong>Verizon, AT&T, T-Mobile trade-in</strong> — gives credit toward a new phone but read the fine print on monthly payments. <strong>Don\'t pre-pay for an "iPhone 17" rumor</strong> — buy current models that are proven.</p>
+            <p className="text-base text-muted-foreground"><strong>Apple Certified Refurbished</strong> — same warranty as new, $50-$200 cheaper. <strong>Amazon Renewed</strong> — slightly cheaper. <strong>Verizon, AT&T, T-Mobile trade-in</strong> — gives credit toward a new phone but read the fine print on monthly payments. <strong>Don\'t pre-pay for an "iPhone 17" rumor</strong> — buy current models that are proven.</p>
           </CardContent>
         </Card>
       </main>

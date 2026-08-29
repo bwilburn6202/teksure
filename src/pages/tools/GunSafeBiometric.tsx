@@ -19,7 +19,7 @@ export default function GunSafeBiometric() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why biometric safes for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fingerprint opens in 2 seconds.</li>
               <li>No combination to remember at night.</li>
               <li>Backup PIN code + key.</li>
@@ -33,7 +33,7 @@ export default function GunSafeBiometric() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick-access pistol safes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vaultek MX — $200, top-rated.</li>
               <li>SentrySafe Quick Access — $100.</li>
               <li>RPNB Mounted — $80, smaller budget option.</li>
@@ -47,7 +47,7 @@ export default function GunSafeBiometric() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Long gun safes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SecureIt Agile — modular, $400+.</li>
               <li>Stack-On Tactical — affordable, $300.</li>
               <li>Liberty Centurion — budget option.</li>
@@ -61,7 +61,7 @@ export default function GunSafeBiometric() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up biometric</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Register multiple fingerprints.</li>
               <li>Both index fingers of each hand.</li>
               <li>Re-register every few months — fingerprints change.</li>
@@ -75,7 +75,7 @@ export default function GunSafeBiometric() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trigger locks (alternative)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$15–$40 per lock.</li>
               <li>Cheaper than safe.</li>
               <li>Less secure than safe.</li>
@@ -89,7 +89,7 @@ export default function GunSafeBiometric() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior firearm safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Annual checkup — clean + inspect.</li>
               <li>Concealed carry training refreshers.</li>
               <li>Reassess as eyesight + reflexes change.</li>
@@ -103,7 +103,7 @@ export default function GunSafeBiometric() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Vaultek MX is the gold standard</h3>
-            <p className="text-sm text-muted-foreground">If you keep a pistol for home defense, the Vaultek MX ($200) is widely considered the best biometric quick-access safe. Opens in under 2 seconds with fingerprint. Three backup methods — PIN, key, and Vaultek app. Reliable battery life. The peace of mind of safe storage that opens fast when needed is worth every dollar.</p>
+            <p className="text-base text-muted-foreground">If you keep a pistol for home defense, the Vaultek MX ($200) is widely considered the best biometric quick-access safe. Opens in under 2 seconds with fingerprint. Three backup methods — PIN, key, and Vaultek app. Reliable battery life. The peace of mind of safe storage that opens fast when needed is worth every dollar.</p>
           </CardContent>
         </Card>
       </main>

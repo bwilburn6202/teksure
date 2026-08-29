@@ -929,7 +929,7 @@ function AlertCard({ alert }: { alert: ScamAlert }) {
       <CardHeader className="pb-4">
         <div className="flex flex-wrap items-start gap-3">
           <div
-            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-red-200 bg-red-50 text-red-700 dark:border-red-900/60 dark:bg-red-950/40 dark:text-red-300"
+            className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-danger-foreground/25 bg-danger text-danger-foreground "
             aria-hidden="true"
           >
             <CategoryIcon className="h-5 w-5" />
@@ -952,7 +952,7 @@ function AlertCard({ alert }: { alert: ScamAlert }) {
               <Badge variant="outline" className="text-xs font-medium">
                 {REGION_LABEL[alert.region]}
               </Badge>
-              <span className="text-xs text-muted-foreground">
+              <span className="text-sm text-muted-foreground">
                 Reported {formattedDate}
               </span>
             </div>
@@ -982,7 +982,7 @@ function AlertCard({ alert }: { alert: ScamAlert }) {
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
-          className="inline-flex min-h-14 items-center gap-2 rounded-full border-2 border-red-200 bg-red-50 px-5 text-base font-semibold text-red-800 transition-colors hover:bg-red-100 dark:border-red-900/60 dark:bg-red-950/40 dark:text-red-200 dark:hover:bg-red-950/70"
+          className="inline-flex min-h-14 items-center gap-2 rounded-full border-2 border-danger-foreground/25 bg-danger px-5 text-base font-semibold text-danger-foreground transition-colors hover:bg-danger "
         >
           {open ? 'Hide details' : 'See red flags and what to do'}
           <ChevronDown
@@ -993,15 +993,15 @@ function AlertCard({ alert }: { alert: ScamAlert }) {
 
         {open && (
           <div className="grid gap-5 md:grid-cols-2 pt-2">
-            <div className="rounded-xl border border-red-200 bg-red-50/60 p-4 dark:border-red-900/60 dark:bg-red-950/20">
-              <h3 className="mb-2 text-sm font-bold uppercase tracking-wide text-red-800 dark:text-red-200">
+            <div className="rounded-xl border border-danger-foreground/25 bg-red-50/60 p-4 dark:bg-red-950/20">
+              <h3 className="mb-2 text-sm font-bold uppercase tracking-wide text-danger-foreground ">
                 Red flags
               </h3>
               <ul className="space-y-2">
                 {alert.redFlags.map((flag) => (
                   <li key={flag} className="flex gap-2 text-base leading-relaxed">
                     <AlertTriangle
-                      className="h-5 w-5 shrink-0 text-red-600 dark:text-red-400 mt-0.5"
+                      className="h-5 w-5 shrink-0 text-danger-foreground mt-0.5"
                       aria-hidden="true"
                     />
                     <span>{flag}</span>
@@ -1010,15 +1010,15 @@ function AlertCard({ alert }: { alert: ScamAlert }) {
               </ul>
             </div>
 
-            <div className="rounded-xl border border-emerald-200 bg-emerald-50/60 p-4 dark:border-emerald-900/60 dark:bg-emerald-950/20">
-              <h3 className="mb-2 text-sm font-bold uppercase tracking-wide text-emerald-800 dark:text-emerald-200">
+            <div className="rounded-xl border border-success-foreground/25 bg-emerald-50/60 p-4 dark:bg-emerald-950/20">
+              <h3 className="mb-2 text-sm font-bold uppercase tracking-wide text-success-foreground ">
                 What to do
               </h3>
               <ul className="space-y-2">
                 {alert.whatToDo.map((step) => (
                   <li key={step} className="flex gap-2 text-base leading-relaxed">
                     <Check
-                      className="h-5 w-5 shrink-0 text-emerald-600 dark:text-emerald-400 mt-0.5"
+                      className="h-5 w-5 shrink-0 text-success-foreground mt-0.5"
                       aria-hidden="true"
                     />
                     <span>{step}</span>
@@ -1200,7 +1200,7 @@ export default function ScamAlertFeed() {
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed">
             What&apos;s hitting seniors right now. Updated weekly.
           </p>
-          <p className="mt-4 text-sm text-white/75 max-w-xl mx-auto">
+          <p className="mt-4 text-base text-white/75 max-w-xl mx-auto">
             Summaries from the FTC, FBI IC3, AARP Fraud Watch, and BBB Scam Tracker — in plain
             English, with red flags and what to do.
           </p>
@@ -1210,12 +1210,12 @@ export default function ScamAlertFeed() {
       <main className="container max-w-6xl mx-auto px-4 py-12 space-y-12">
         {/* ── Trending card (sticky on desktop) ────────────────────────────── */}
         <section aria-labelledby="trending-heading">
-          <Card className="border-2 border-amber-300 bg-amber-50/60 dark:border-amber-800/60 dark:bg-amber-950/20">
+          <Card className="border-2 border-warn-foreground/25 bg-amber-50/60 dark:bg-amber-950/20">
             <CardHeader className="pb-3">
               <div className="flex items-center gap-3">
-                <div className="rounded-lg bg-amber-100 p-2 dark:bg-amber-900/50">
+                <div className="rounded-lg bg-warn p-2 ">
                   <TrendingUp
-                    className="h-5 w-5 text-amber-700 dark:text-amber-300"
+                    className="h-5 w-5 text-warn-foreground "
                     aria-hidden="true"
                   />
                 </div>
@@ -1228,7 +1228,7 @@ export default function ScamAlertFeed() {
               <ol className="space-y-2">
                 {trendingAlerts.map((alert, i) => (
                   <li key={alert.id} className="flex items-start gap-3 text-base">
-                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amber-200 text-sm font-bold text-amber-900 dark:bg-amber-900/60 dark:text-amber-100">
+                    <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-amber-200 text-sm font-bold text-warn-foreground dark:bg-amber-900/60 ">
                       {i + 1}
                     </span>
                     <a
@@ -1250,7 +1250,7 @@ export default function ScamAlertFeed() {
             <h2 id="filters-heading" className="text-2xl font-bold">
               Browse alerts
             </h2>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               Showing <strong>{filteredAlerts.length}</strong> of {ALERTS.length} alerts
             </p>
           </div>
@@ -1258,7 +1258,7 @@ export default function ScamAlertFeed() {
           <div className="rounded-2xl border-2 bg-card p-4 sm:p-6 space-y-4 shadow-sm">
             {/* Category pill row */}
             <div>
-              <p className="mb-2 text-sm font-semibold text-muted-foreground">
+              <p className="mb-2 text-base font-semibold text-muted-foreground">
                 Category
               </p>
               <div className="flex flex-wrap gap-2">
@@ -1286,7 +1286,7 @@ export default function ScamAlertFeed() {
               <div>
                 <label
                   htmlFor="severity"
-                  className="mb-1.5 block text-sm font-semibold text-muted-foreground"
+                  className="mb-1.5 block text-base font-semibold text-muted-foreground"
                 >
                   Severity
                 </label>
@@ -1309,7 +1309,7 @@ export default function ScamAlertFeed() {
               <div>
                 <label
                   htmlFor="date-range"
-                  className="mb-1.5 block text-sm font-semibold text-muted-foreground"
+                  className="mb-1.5 block text-base font-semibold text-muted-foreground"
                 >
                   Date
                 </label>
@@ -1331,7 +1331,7 @@ export default function ScamAlertFeed() {
               <div>
                 <label
                   htmlFor="region"
-                  className="mb-1.5 block text-sm font-semibold text-muted-foreground"
+                  className="mb-1.5 block text-base font-semibold text-muted-foreground"
                 >
                   Region
                 </label>
@@ -1354,7 +1354,7 @@ export default function ScamAlertFeed() {
               <div>
                 <label
                   htmlFor="search"
-                  className="mb-1.5 block text-sm font-semibold text-muted-foreground"
+                  className="mb-1.5 block text-base font-semibold text-muted-foreground"
                 >
                   Search
                 </label>
@@ -1465,7 +1465,7 @@ export default function ScamAlertFeed() {
                   Sign me up
                 </Button>
               </form>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 Email signup is coming soon. In the meantime, you can bookmark this page or
                 follow our <Link to="/weekly-tips" className="underline underline-offset-2">Weekly Tips</Link>.
               </p>
@@ -1475,7 +1475,7 @@ export default function ScamAlertFeed() {
 
         {/* ── Sources + disclaimer ────────────────────────────────────────── */}
         <section aria-labelledby="sources-heading">
-          <Alert className="border-slate-300 bg-slate-50 dark:bg-slate-900/40">
+          <Alert className="border-border bg-muted ">
             <AlertTitle id="sources-heading" className="text-base font-bold">
               Where these alerts come from
             </AlertTitle>
@@ -1524,7 +1524,7 @@ export default function ScamAlertFeed() {
                 className="block rounded-xl border-2 bg-card p-4 transition-colors hover:border-[#2A5FCC] hover:bg-[#2A5FCC]/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#2A5FCC]"
               >
                 <p className="text-base font-semibold mb-1">{tool.label}</p>
-                <p className="text-sm text-muted-foreground">{tool.desc}</p>
+                <p className="text-base text-muted-foreground">{tool.desc}</p>
               </Link>
             ))}
           </div>

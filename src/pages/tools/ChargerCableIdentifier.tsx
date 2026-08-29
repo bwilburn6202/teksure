@@ -58,7 +58,7 @@ export default function ChargerCableIdentifier() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-1">Quick way to tell</h2>
-            <p className="text-sm text-muted-foreground">Most charging cables have <strong>two different ends</strong>. The big rectangle end (USB-A) plugs into the wall block. The OTHER end is the one that matches your device — that's the one we're naming below.</p>
+            <p className="text-base text-muted-foreground">Most charging cables have <strong>two different ends</strong>. The big rectangle end (USB-A) plugs into the wall block. The OTHER end is the one that matches your device — that's the one we're naming below.</p>
           </CardContent>
         </Card>
 
@@ -70,21 +70,21 @@ export default function ChargerCableIdentifier() {
                   <div className="flex justify-between items-start gap-3">
                     <div>
                       <h3 className="font-bold text-lg mb-1">{c.name}</h3>
-                      <p className="text-sm text-muted-foreground">{c.shape}</p>
+                      <p className="text-base text-muted-foreground">{c.shape}</p>
                     </div>
-                    <span className="text-sm text-primary font-medium shrink-0">{open === c.id ? 'Hide' : 'Details'}</span>
+                    <span className="text-base text-primary font-medium shrink-0">{open === c.id ? 'Hide' : 'Details'}</span>
                   </div>
                 </button>
                 {open === c.id && (
                   <div className="mt-4 pt-4 border-t space-y-3">
                     <div>
                       <p className="font-semibold mb-1">Fits:</p>
-                      <ul className="text-sm list-disc pl-5 space-y-1 text-muted-foreground">
+                      <ul className="text-base list-disc pl-5 space-y-1 text-muted-foreground">
                         {c.fits.map((f, i) => <li key={i}>{f}</li>)}
                       </ul>
                     </div>
-                    <p className="text-sm bg-muted/50 p-3 rounded">{c.notes}</p>
-                    {c.watchOut && <p className="text-sm bg-yellow-50 dark:bg-yellow-950/20 border border-yellow-300 dark:border-yellow-800 p-3 rounded"><strong>Watch out:</strong> {c.watchOut}</p>}
+                    <p className="text-base bg-muted/50 p-3 rounded">{c.notes}</p>
+                    {c.watchOut && <p className="text-base bg-warn border border-warn-foreground/25 p-3 rounded"><strong>Watch out:</strong> {c.watchOut}</p>}
                   </div>
                 )}
               </CardContent>
@@ -95,7 +95,7 @@ export default function ChargerCableIdentifier() {
         <Card className="mt-6 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Buying a replacement?</h3>
-            <p className="text-sm text-muted-foreground">Bring the OLD cable to the store, or take a clear photo of the end that plugs into your device. Staff at any phone store can match it.</p>
+            <p className="text-base text-muted-foreground">Bring the OLD cable to the store, or take a clear photo of the end that plugs into your device. Staff at any phone store can match it.</p>
           </CardContent>
         </Card>
       </main>

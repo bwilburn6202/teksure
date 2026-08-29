@@ -318,7 +318,7 @@ export default function BackupWizard() {
                 <CardContent className="py-8 text-center">
                   <div className="text-5xl mb-4"></div>
                   <h2 className="text-xl font-semibold mb-3">Is your data backed up?</h2>
-                  <p className="text-muted-foreground text-sm leading-relaxed max-w-md mx-auto">
+                  <p className="text-muted-foreground text-base leading-relaxed max-w-md mx-auto">
                     Phones break. Computers crash. A backup means you never lose your photos, contacts, or important documents. This wizard gives you a personalized plan in under 3 minutes.
                   </p>
                 </CardContent>
@@ -349,7 +349,7 @@ export default function BackupWizard() {
               <Card className="mb-5">
                 <CardContent className="py-6 text-center">
                   <p className="text-xl font-semibold">What do you want to back up?</p>
-                  <p className="text-sm text-muted-foreground mt-1">Select all that apply — or choose "Everything"</p>
+                  <p className="text-base text-muted-foreground mt-1">Select all that apply — or choose "Everything"</p>
                 </CardContent>
               </Card>
 
@@ -367,7 +367,7 @@ export default function BackupWizard() {
                       <item.icon className="h-6 w-6 text-primary shrink-0" />
                       <div className="flex-1 min-w-0">
                         <p className="font-medium">{item.label}</p>
-                        <p className="text-sm text-muted-foreground">{item.desc}</p>
+                        <p className="text-base text-muted-foreground">{item.desc}</p>
                       </div>
                       {selected && <CheckCircle2 className="h-5 w-5 text-primary shrink-0" />}
                     </button>
@@ -392,7 +392,7 @@ export default function BackupWizard() {
               <Card className="mb-5">
                 <CardContent className="py-6 text-center">
                   <p className="text-xl font-semibold">Where do you want to back up?</p>
-                  <p className="text-sm text-muted-foreground mt-1">Both is always safer, but either works</p>
+                  <p className="text-base text-muted-foreground mt-1">Both is always safer, but either works</p>
                 </CardContent>
               </Card>
 
@@ -416,8 +416,8 @@ export default function BackupWizard() {
                           {dest.label}
                           {dest.id === 'both' && <Badge variant="secondary" className="text-xs">Best choice</Badge>}
                         </p>
-                        <p className="text-sm text-muted-foreground">{dest.desc}</p>
-                        <p className="text-xs text-primary mt-1">{dest.pros}</p>
+                        <p className="text-base text-muted-foreground">{dest.desc}</p>
+                        <p className="text-sm text-primary mt-1">{dest.pros}</p>
                       </div>
                       {selected && <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-1" />}
                     </button>
@@ -487,7 +487,7 @@ export default function BackupWizard() {
               <div className="text-center mb-8">
                 <div className="text-5xl mb-3"></div>
                 <h2 className="text-2xl font-bold mb-1">Your Personalized Backup Plan</h2>
-                <p className="text-muted-foreground text-sm">Follow these steps to keep your data safe</p>
+                <p className="text-muted-foreground text-base">Follow these steps to keep your data safe</p>
               </div>
 
               {instructions.length === 0 ? (
@@ -514,15 +514,15 @@ export default function BackupWizard() {
                               <div className="h-6 w-6 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-xs font-bold shrink-0 mt-0.5">
                                 {i + 1}
                               </div>
-                              <p className="text-sm leading-relaxed">{s}</p>
+                              <p className="text-base leading-relaxed">{s}</p>
                             </div>
                           ))}
                         </div>
 
                         {block.tip && (
-                          <div className="mt-4 flex items-start gap-2 bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/40 rounded-lg px-3 py-2.5">
-                            <span className="text-amber-500 shrink-0 text-sm"></span>
-                            <p className="text-xs text-muted-foreground leading-relaxed">{block.tip}</p>
+                          <div className="mt-4 flex items-start gap-2 bg-warn border border-warn-foreground/25 rounded-lg px-3 py-2.5">
+                            <span className="text-warn-foreground shrink-0 text-base"></span>
+                            <p className="text-sm text-muted-foreground leading-relaxed">{block.tip}</p>
                           </div>
                         )}
                       </CardContent>
@@ -535,7 +535,7 @@ export default function BackupWizard() {
               <Card className="mb-6 bg-primary text-primary-foreground border-0">
                 <CardContent className="py-5">
                   <p className="font-semibold mb-1"> How often should you back up?</p>
-                  <p className="text-sm opacity-90">
+                  <p className="text-base opacity-90">
                     Photos: <strong>weekly</strong> or enable automatic backup ·
                     Documents: <strong>after every important change</strong> ·
                     Full device: <strong>monthly</strong> at minimum

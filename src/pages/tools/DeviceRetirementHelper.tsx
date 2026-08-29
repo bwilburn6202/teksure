@@ -173,7 +173,7 @@ export default function DeviceRetirementHelper() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <Recycle className="h-8 w-8 text-emerald-600" />
+                <Recycle className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Device Retirement Helper</h1>
@@ -194,7 +194,7 @@ export default function DeviceRetirementHelper() {
           {!device && (
             <Card className="border-border shadow-sm">
               <CardContent className="p-6">
-                <p className="text-sm font-semibold mb-4">1. What kind of device?</p>
+                <p className="text-base font-semibold mb-4">1. What kind of device?</p>
                 <div className="grid sm:grid-cols-3 gap-3">
                   {DEVICES.map(d => {
                     const Icon = d.icon;
@@ -205,7 +205,7 @@ export default function DeviceRetirementHelper() {
                         className="p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-primary/5 transition-all text-left"
                       >
                         <Icon className="h-5 w-5 text-muted-foreground mb-2" />
-                        <p className="font-medium text-sm">{d.label}</p>
+                        <p className="font-medium text-base">{d.label}</p>
                       </button>
                     );
                   })}
@@ -217,7 +217,7 @@ export default function DeviceRetirementHelper() {
           {device && !state && (
             <Card className="border-border shadow-sm">
               <CardContent className="p-6">
-                <p className="text-sm font-semibold mb-4">2. Does it still work?</p>
+                <p className="text-base font-semibold mb-4">2. Does it still work?</p>
                 <div className="grid sm:grid-cols-3 gap-3">
                   {([
                     { id: 'works',  label: 'Yes, it still works', sub: 'Powers on, screen is fine' },
@@ -229,8 +229,8 @@ export default function DeviceRetirementHelper() {
                       onClick={() => setState(s.id === 'unsure' ? 'works' : s.id)}
                       className="p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-primary/5 transition-all text-left"
                     >
-                      <p className="font-medium text-sm">{s.label}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{s.sub}</p>
+                      <p className="font-medium text-base">{s.label}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{s.sub}</p>
                     </button>
                   ))}
                 </div>
@@ -263,12 +263,12 @@ export default function DeviceRetirementHelper() {
                           </div>
                           <div>
                             <p className="font-semibold text-base">{p.title}</p>
-                            <p className="text-sm text-muted-foreground mt-0.5">{p.why}</p>
+                            <p className="text-base text-muted-foreground mt-0.5">{p.why}</p>
                           </div>
                         </div>
                         <ol className="space-y-2 mb-3 ml-1">
                           {p.steps.map((s, j) => (
-                            <li key={j} className="flex gap-2 text-sm">
+                            <li key={j} className="flex gap-2 text-base">
                               <span className="text-primary font-semibold shrink-0">{j + 1}.</span>
                               <span>{s}</span>
                             </li>
@@ -303,16 +303,16 @@ export default function DeviceRetirementHelper() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/device-age-checker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Device Age Checker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Should you replace it yet?</p>
+                <p className="font-medium text-base">Device Age Checker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Should you replace it yet?</p>
               </Link>
               <Link to="/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Grandparent Device Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Set up an old tablet for grandkids.</p>
+                <p className="font-medium text-base">Grandparent Device Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Set up an old tablet for grandkids.</p>
               </Link>
               <Link to="/tools/data-broker-removal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Data Broker Removal</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Clean up data tied to old accounts.</p>
+                <p className="font-medium text-base">Data Broker Removal</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Clean up data tied to old accounts.</p>
               </Link>
             </div>
           </div>

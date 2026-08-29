@@ -22,7 +22,7 @@ export default function SeniorCaringApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">CareZone</h2><p>FREE. Track meds, appointments, and contacts. Photo of pill bottle auto-fills info.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Aloe Care Health</h2><p>$25/month. Smart speaker + sensors. Voice-activated emergency response.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Caregiver burnout help</h2><p>AARP Caregiver Resource Center is free. Real support.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: One family group chat replaces 100 confused phone calls.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: One family group chat replaces 100 confused phone calls.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

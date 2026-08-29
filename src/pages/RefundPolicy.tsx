@@ -45,7 +45,7 @@ const RefundPolicy = () => (
             The short version: if we don't fix your problem, you don't pay. And you can cancel a
             booking for a full refund up to {FREE_CANCELLATION_HOURS} hours beforehand.
           </p>
-          <p className="text-sm text-muted-foreground">Last updated: July 26, 2026</p>
+          <p className="text-base text-muted-foreground">Last updated: July 26, 2026</p>
         </div>
 
         {/* No fix, no charge */}
@@ -64,7 +64,7 @@ const RefundPolicy = () => (
               the end of the session, the technician marks the job unresolved and the refund is
               issued automatically.
             </p>
-            <p className="text-sm">
+            <p className="text-base">
               One honest exception: if the problem turns out to need a paid part, a new device, or a
               repair we aren't able to perform (a cracked screen, a failed hard drive, a service
               only your internet provider can carry out), we'll tell you plainly and you won't be
@@ -107,7 +107,7 @@ const RefundPolicy = () => (
                 slot.
               </li>
             </ul>
-            <p className="text-sm">
+            <p className="text-base">
               Emergencies happen. If you miss an appointment because of illness, a hospital visit,
               or a family emergency, contact us and we will refund the deposit. We would rather be
               generous than argue over {formatPrice(DEPOSIT_AMOUNT)}.
@@ -133,7 +133,7 @@ const RefundPolicy = () => (
               We will never start a second hour without asking you first. If a job is going to run
               long, the technician stops, explains why, and lets you decide whether to continue.
             </p>
-            <p className="text-sm">
+            <p className="text-base">
               See <Link to="/pricing" className="text-primary hover:underline">full pricing</Link>{' '}
               for the complete breakdown.
             </p>
@@ -159,7 +159,7 @@ const RefundPolicy = () => (
                 days to post it. That second delay is on your bank's side, not ours.
               </span>
             </p>
-            <p className="text-sm">
+            <p className="text-base">
               If you paid the technician directly on the day (cash, card, or transfer), contact us
               and we will arrange the refund the same way you paid.
             </p>
@@ -189,7 +189,7 @@ const RefundPolicy = () => (
               A real person reads every one of these. If you're unhappy with how a refund was
               handled, say so in your reply and it will be looked at again.
             </p>
-            <p className="text-sm">
+            <p className="text-base">
               This policy does not limit any rights you have under your state's consumer protection
               laws.
             </p>

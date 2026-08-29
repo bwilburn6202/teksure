@@ -22,7 +22,7 @@ export default function SeniorGriefSupport() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Modern Loss</h2><p>FREE app. Daily grief support. Real stories.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Local hospice</h2><p>Often free bereavement programs. Even if loved one wasn&apos;t their patient.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Therapy</h2><p>Medicare covers grief counseling. Don&apos;t suffer alone.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Grief takes years, not months. Be patient with yourself.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Grief takes years, not months. Be patient with yourself.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

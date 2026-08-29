@@ -19,7 +19,7 @@ export default function SeniorClassesAtCommunityCollege() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tuition waivers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many states waive tuition for 60+.</li>
               <li>Auditing free in many states.</li>
               <li>Cred for credit possible too.</li>
@@ -33,7 +33,7 @@ export default function SeniorClassesAtCommunityCollege() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">States with free senior</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Maryland — free 60+.</li>
               <li>Florida — free at many.</li>
               <li>Georgia — free 62+.</li>
@@ -47,7 +47,7 @@ export default function SeniorClassesAtCommunityCollege() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Continuing education</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Non-credit classes for hobbies + interests.</li>
               <li>Photography, computer skills, languages.</li>
               <li>$30-$100 per class typically.</li>
@@ -61,7 +61,7 @@ export default function SeniorClassesAtCommunityCollege() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Audit vs credit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Audit — attend, no grade or credit.</li>
               <li>For learning, low pressure.</li>
               <li>Credit — graded + earns credit.</li>
@@ -75,7 +75,7 @@ export default function SeniorClassesAtCommunityCollege() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online + in-person</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most colleges offer both.</li>
               <li>In-person — social interaction.</li>
               <li>Online — convenience.</li>
@@ -89,7 +89,7 @@ export default function SeniorClassesAtCommunityCollege() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get started</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Visit local community college website.</li>
               <li>Search &quot;senior tuition&quot; or &quot;continuing ed.&quot;</li>
               <li>Or call admissions office.</li>
@@ -103,7 +103,7 @@ export default function SeniorClassesAtCommunityCollege() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free education in your state</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t pay for online courses if your state offers free community college tuition for seniors. Check policy. Many seniors take 1-2 classes per semester for years — free education + social interaction. Wonderful retirement strategy. Combined with OLLI, your retirement education becomes essentially free + endless.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t pay for online courses if your state offers free community college tuition for seniors. Check policy. Many seniors take 1-2 classes per semester for years — free education + social interaction. Wonderful retirement strategy. Combined with OLLI, your retirement education becomes essentially free + endless.</p>
           </CardContent>
         </Card>
       </main>

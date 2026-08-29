@@ -953,7 +953,7 @@ export default function WeeklyNewsletterTemplate() {
                   <Button
                     size="lg"
                     onClick={printNewsletter}
-                    className="min-h-14 bg-white text-amber-800 hover:bg-amber-50 text-base font-semibold"
+                    className="min-h-14 bg-card text-warn-foreground hover:bg-warn text-base font-semibold"
                   >
                     <Printer className="h-5 w-5 mr-2" /> Print this week's newsletter
                   </Button>
@@ -981,10 +981,10 @@ export default function WeeklyNewsletterTemplate() {
 
         {/* ── Quick-start picker ─────────────────────────────── */}
         <section className="container max-w-7xl mx-auto px-4 py-8 print:hidden">
-          <Card className="border-amber-200 dark:border-amber-900/40 bg-amber-50/60 dark:bg-amber-950/20">
+          <Card className="border-warn-foreground/25 bg-amber-50/60 dark:bg-amber-950/20">
             <CardContent className="p-5 md:p-6">
               <div className="flex items-start gap-3">
-                <Wand2 className="h-6 w-6 text-amber-700 dark:text-amber-300 shrink-0 mt-0.5" />
+                <Wand2 className="h-6 w-6 text-warn-foreground shrink-0 mt-0.5" />
                 <div className="flex-1">
                   <h2 className="text-lg md:text-xl font-bold mb-1">
                     Start with a prefilled edition
@@ -1032,7 +1032,7 @@ export default function WeeklyNewsletterTemplate() {
             <div className="space-y-6 print:hidden">
               <div className="flex items-center justify-between">
                 <h2 className="text-2xl font-bold">Fill in your newsletter</h2>
-                <span className="text-sm text-muted-foreground flex items-center gap-1.5">
+                <span className="text-base text-muted-foreground flex items-center gap-1.5">
                   <Save className="h-4 w-4" /> {savedLabel || 'Draft saved automatically'}
                 </span>
               </div>
@@ -1138,7 +1138,7 @@ export default function WeeklyNewsletterTemplate() {
                           variant="ghost"
                           size="sm"
                           onClick={clearLogo}
-                          className="text-rose-600"
+                          className="text-danger-foreground"
                         >
                           <Trash2 className="h-4 w-4 mr-1" /> Remove
                         </Button>
@@ -1233,7 +1233,7 @@ export default function WeeklyNewsletterTemplate() {
               <Card>
                 <CardContent className="p-5 space-y-4">
                   <h3 className="font-semibold text-lg flex items-center gap-2">
-                    <ShieldAlert className="h-5 w-5 text-rose-600" /> Watch out for
+                    <ShieldAlert className="h-5 w-5 text-danger-foreground" /> Watch out for
                   </h3>
                   <div>
                     <Label htmlFor="st" className="text-base">
@@ -1315,7 +1315,7 @@ export default function WeeklyNewsletterTemplate() {
                         variant="ghost"
                         size="icon"
                         onClick={() => removeEvent(i)}
-                        className="min-h-14 min-w-11 text-rose-600"
+                        className="min-h-14 min-w-11 text-danger-foreground"
                         aria-label={`Remove event ${i + 1}`}
                       >
                         <Trash2 className="h-4 w-4" />
@@ -1399,7 +1399,7 @@ export default function WeeklyNewsletterTemplate() {
                 <Button
                   variant="outline"
                   onClick={clearAll}
-                  className="min-h-14 text-base text-rose-600 hover:text-rose-700"
+                  className="min-h-14 text-base text-danger-foreground hover:text-danger-foreground"
                 >
                   <Trash2 className="h-5 w-5 mr-2" /> Start fresh
                 </Button>
@@ -1556,7 +1556,7 @@ export default function WeeklyNewsletterTemplate() {
             <Card>
               <CardContent className="p-5">
                 <div className="flex items-center gap-2 mb-2">
-                  <Printer className="h-5 w-5 text-amber-700" />
+                  <Printer className="h-5 w-5 text-warn-foreground" />
                   <h3 className="font-semibold text-lg">Print 10-50 copies</h3>
                 </div>
                 <p className="text-base text-muted-foreground">
@@ -1568,7 +1568,7 @@ export default function WeeklyNewsletterTemplate() {
             <Card>
               <CardContent className="p-5">
                 <div className="flex items-center gap-2 mb-2">
-                  <Users className="h-5 w-5 text-amber-700" />
+                  <Users className="h-5 w-5 text-warn-foreground" />
                   <h3 className="font-semibold text-lg">Post it on the refrigerator</h3>
                 </div>
                 <p className="text-base text-muted-foreground">
@@ -1580,7 +1580,7 @@ export default function WeeklyNewsletterTemplate() {
             <Card>
               <CardContent className="p-5">
                 <div className="flex items-center gap-2 mb-2">
-                  <Mail className="h-5 w-5 text-amber-700" />
+                  <Mail className="h-5 w-5 text-warn-foreground" />
                   <h3 className="font-semibold text-lg">Email to a family group</h3>
                 </div>
                 <p className="text-base text-muted-foreground">
@@ -1592,7 +1592,7 @@ export default function WeeklyNewsletterTemplate() {
             <Card>
               <CardContent className="p-5">
                 <div className="flex items-center gap-2 mb-2">
-                  <MapPin className="h-5 w-5 text-amber-700" />
+                  <MapPin className="h-5 w-5 text-warn-foreground" />
                   <h3 className="font-semibold text-lg">Community bulletin boards</h3>
                 </div>
                 <p className="text-base text-muted-foreground">
@@ -1604,7 +1604,7 @@ export default function WeeklyNewsletterTemplate() {
             <Card>
               <CardContent className="p-5">
                 <div className="flex items-center gap-2 mb-2">
-                  <QrCode className="h-5 w-5 text-amber-700" />
+                  <QrCode className="h-5 w-5 text-warn-foreground" />
                   <h3 className="font-semibold text-lg">Let the QR code do the work</h3>
                 </div>
                 <p className="text-base text-muted-foreground">
@@ -1616,7 +1616,7 @@ export default function WeeklyNewsletterTemplate() {
             <Card>
               <CardContent className="p-5">
                 <div className="flex items-center gap-2 mb-2">
-                  <Clock className="h-5 w-5 text-amber-700" />
+                  <Clock className="h-5 w-5 text-warn-foreground" />
                   <h3 className="font-semibold text-lg">One edition a week</h3>
                 </div>
                 <p className="text-base text-muted-foreground">
@@ -1630,8 +1630,8 @@ export default function WeeklyNewsletterTemplate() {
 
         {/* ── Permissions ───────────────────────────────────── */}
         <section className="container max-w-4xl mx-auto px-4 pb-12 print:hidden">
-          <Alert className="border-amber-200 dark:border-amber-900/40 bg-amber-50/60 dark:bg-amber-950/20">
-            <Info className="h-5 w-5 text-amber-700" />
+          <Alert className="border-warn-foreground/25 bg-amber-50/60 dark:bg-amber-950/20">
+            <Info className="h-5 w-5 text-warn-foreground" />
             <AlertTitle className="text-lg font-bold">Share freely</AlertTitle>
             <AlertDescription className="text-base">
               You are welcome to print, email, post, and distribute this newsletter as
@@ -1649,13 +1649,13 @@ export default function WeeklyNewsletterTemplate() {
             <Link to="/safety/scam-alerts" className="block group">
               <Card className="h-full hover:shadow-lg hover:-translate-y-0.5 transition-all">
                 <CardContent className="p-5">
-                  <ShieldAlert className="h-6 w-6 text-rose-600 mb-2" />
+                  <ShieldAlert className="h-6 w-6 text-danger-foreground mb-2" />
                   <h3 className="font-semibold text-lg mb-1">Scam Alerts</h3>
-                  <p className="text-sm text-muted-foreground mb-3">
+                  <p className="text-base text-muted-foreground mb-3">
                     Fresh scam warnings to use in your newsletter's "Watch out for"
                     section.
                   </p>
-                  <span className="text-sm text-amber-700 font-semibold inline-flex items-center gap-1">
+                  <span className="text-base text-warn-foreground font-semibold inline-flex items-center gap-1">
                     Open <ArrowRight className="h-4 w-4" />
                   </span>
                 </CardContent>
@@ -1664,13 +1664,13 @@ export default function WeeklyNewsletterTemplate() {
             <Link to="/tools/is-this-real" className="block group">
               <Card className="h-full hover:shadow-lg hover:-translate-y-0.5 transition-all">
                 <CardContent className="p-5">
-                  <ShieldCheck className="h-6 w-6 text-emerald-600 mb-2" />
+                  <ShieldCheck className="h-6 w-6 text-success-foreground mb-2" />
                   <h3 className="font-semibold text-lg mb-1">Is This Real?</h3>
-                  <p className="text-sm text-muted-foreground mb-3">
+                  <p className="text-base text-muted-foreground mb-3">
                     Check a suspicious email, text, or phone call before writing about
                     it.
                   </p>
-                  <span className="text-sm text-amber-700 font-semibold inline-flex items-center gap-1">
+                  <span className="text-base text-warn-foreground font-semibold inline-flex items-center gap-1">
                     Open <ArrowRight className="h-4 w-4" />
                   </span>
                 </CardContent>
@@ -1679,13 +1679,13 @@ export default function WeeklyNewsletterTemplate() {
             <Link to="/toolkits/caregiver" className="block group">
               <Card className="h-full hover:shadow-lg hover:-translate-y-0.5 transition-all">
                 <CardContent className="p-5">
-                  <Users className="h-6 w-6 text-blue-600 mb-2" />
+                  <Users className="h-6 w-6 text-info-foreground mb-2" />
                   <h3 className="font-semibold text-lg mb-1">Caregiver Toolkit</h3>
-                  <p className="text-sm text-muted-foreground mb-3">
+                  <p className="text-base text-muted-foreground mb-3">
                     Pair with this toolkit when the newsletter is going to families or
                     caregivers.
                   </p>
-                  <span className="text-sm text-amber-700 font-semibold inline-flex items-center gap-1">
+                  <span className="text-base text-warn-foreground font-semibold inline-flex items-center gap-1">
                     Open <ArrowRight className="h-4 w-4" />
                   </span>
                 </CardContent>
@@ -1694,13 +1694,13 @@ export default function WeeklyNewsletterTemplate() {
             <Link to="/tools/free-resource-hub" className="block group">
               <Card className="h-full hover:shadow-lg hover:-translate-y-0.5 transition-all">
                 <CardContent className="p-5">
-                  <BookOpen className="h-6 w-6 text-purple-600 mb-2" />
+                  <BookOpen className="h-6 w-6 text-primary mb-2" />
                   <h3 className="font-semibold text-lg mb-1">Free Resource Hub</h3>
-                  <p className="text-sm text-muted-foreground mb-3">
+                  <p className="text-base text-muted-foreground mb-3">
                     Free government and nonprofit tech programs to list in your events
                     section.
                   </p>
-                  <span className="text-sm text-amber-700 font-semibold inline-flex items-center gap-1">
+                  <span className="text-base text-warn-foreground font-semibold inline-flex items-center gap-1">
                     Open <ArrowRight className="h-4 w-4" />
                   </span>
                 </CardContent>

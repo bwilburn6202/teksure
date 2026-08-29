@@ -35,15 +35,15 @@ export default function MortgageRefiBreakEven() {
   function fmt(n: number) { return n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }); }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Mortgage Refi Break-Even | TekSure" description="Figure out how many months it takes for refinance savings to pay off the closing costs." />
       <div className="max-w-xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Calculator className="h-7 w-7 text-emerald-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Refi Break-Even Calculator</h1>
+            <Calculator className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Refi Break-Even Calculator</h1>
           </div>
-          <p className="text-gray-600 text-lg">How many months until refinance savings pay off the closing costs.</p>
+          <p className="text-muted-foreground text-lg">How many months until refinance savings pay off the closing costs.</p>
         </div>
         <Card>
           <CardContent className="py-6 px-4 space-y-3">
@@ -75,18 +75,18 @@ export default function MortgageRefiBreakEven() {
             </div>
             {valid && (
               <div className="space-y-2 mt-3">
-                <div className="flex justify-between p-2 bg-gray-50 rounded text-sm"><span>Old payment</span><span className="font-semibold">{fmt(oldPay)}</span></div>
-                <div className="flex justify-between p-2 bg-gray-50 rounded text-sm"><span>New payment</span><span className="font-semibold">{fmt(newPay)}</span></div>
-                <div className="flex justify-between p-2 bg-emerald-50 rounded text-sm"><span>Monthly savings</span><span className={`font-semibold ${monthlySavings > 0 ? "text-emerald-700" : "text-red-700"}`}>{fmt(monthlySavings)}</span></div>
+                <div className="flex justify-between p-2 bg-muted rounded text-sm"><span>Old payment</span><span className="font-semibold">{fmt(oldPay)}</span></div>
+                <div className="flex justify-between p-2 bg-muted rounded text-sm"><span>New payment</span><span className="font-semibold">{fmt(newPay)}</span></div>
+                <div className="flex justify-between p-2 bg-success rounded text-sm"><span>Monthly savings</span><span className={`font-semibold ${monthlySavings > 0 ? "text-emerald-700" : "text-red-700"}`}>{fmt(monthlySavings)}</span></div>
                 {monthlySavings > 0 ? (
-                  <div className="text-center bg-emerald-100 rounded-md py-3 px-3 mt-2">
-                    <p className="text-sm">Break-even point</p>
-                    <p className="text-3xl font-bold text-emerald-700">{breakEvenMonths.toFixed(1)} months</p>
-                    <p className="text-xs text-emerald-600 mt-1">({(breakEvenMonths / 12).toFixed(1)} years to recoup closing costs)</p>
+                  <div className="text-center bg-success rounded-md py-3 px-3 mt-2">
+                    <p className="text-base">Break-even point</p>
+                    <p className="text-3xl font-bold text-success-foreground">{breakEvenMonths.toFixed(1)} months</p>
+                    <p className="text-sm text-success-foreground mt-1">({(breakEvenMonths / 12).toFixed(1)} years to recoup closing costs)</p>
                   </div>
                 ) : (
-                  <div className="text-center bg-red-50 rounded-md py-3 px-3 mt-2">
-                    <p className="text-sm text-red-800">The new payment is higher than the old one. This refi likely doesn't save money.</p>
+                  <div className="text-center bg-danger rounded-md py-3 px-3 mt-2">
+                    <p className="text-base text-danger-foreground">The new payment is higher than the old one. This refi likely doesn't save money.</p>
                   </div>
                 )}
               </div>
@@ -94,6 +94,6 @@ export default function MortgageRefiBreakEven() {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

@@ -20,9 +20,9 @@ export default function SeniorPetTrackingGPS() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Whistle Go</h2><p>$130 device + $9/month. Health tracking too.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple AirTag</h2><p>$29. No subscription. Works only when other Apple devices are nearby.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tile</h2><p>$25. Works with iPhone or Android. Limited range without crowdsourcing.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Choose by need</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Indoor cat: AirTag/Tile is enough</li><li>Outdoor cat: Tractive subscription</li><li>Dog who escapes: Tractive or Whistle</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Choose by need</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Indoor cat: AirTag/Tile is enough</li><li>Outdoor cat: Tractive subscription</li><li>Dog who escapes: Tractive or Whistle</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Microchip too</h2><p>GPS batteries die. A vet-installed microchip ($25-$50) is a permanent backup ID.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Test the tracker. Walk down the block — make sure the alert works.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Test the tracker. Walk down the block — make sure the alert works.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

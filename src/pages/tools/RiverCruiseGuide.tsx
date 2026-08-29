@@ -30,10 +30,10 @@ export default function RiverCruiseGuide() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{l.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{l.cost}</span>
+                  <span className="text-base font-semibold text-primary">{l.cost}</span>
                 </div>
-                <p className="text-sm">{l.best}</p>
-                <p className="text-sm text-muted-foreground">{l.good}</p>
+                <p className="text-base">{l.best}</p>
+                <p className="text-base text-muted-foreground">{l.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function RiverCruiseGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">River cruise advantages</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NO seasickness (vs ocean).</li>
               <li>180 passengers vs 4,000 ocean.</li>
               <li>Dock right in cities — walk off.</li>
@@ -57,7 +57,7 @@ export default function RiverCruiseGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best routes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Danube</strong> (Germany, Austria, Hungary) — most popular.</li>
               <li><strong>Rhine</strong> (Switzerland, Germany, Netherlands).</li>
               <li><strong>Seine</strong> (France) — Paris + Normandy.</li>
@@ -72,7 +72,7 @@ export default function RiverCruiseGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One unpacking — visit multiple cities.</li>
               <li>Walking distance everywhere.</li>
               <li>Wheelchair accessible cabins.</li>
@@ -86,7 +86,7 @@ export default function RiverCruiseGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save on cruises</h3>
-            <p className="text-sm text-muted-foreground">Book 12+ months ahead for best cabins. Or wait for last-minute deals (sometimes 50% off). AAA + Costco Travel offer river cruise discounts. Single supplements waived sometimes. Off-season (March, November) much cheaper. Travel insurance ESSENTIAL.</p>
+            <p className="text-base text-muted-foreground">Book 12+ months ahead for best cabins. Or wait for last-minute deals (sometimes 50% off). AAA + Costco Travel offer river cruise discounts. Single supplements waived sometimes. Off-season (March, November) much cheaper. Travel insurance ESSENTIAL.</p>
           </CardContent>
         </Card>
       </main>

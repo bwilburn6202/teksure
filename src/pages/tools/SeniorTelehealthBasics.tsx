@@ -18,11 +18,11 @@ export default function SeniorTelehealthBasics() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare covers it</h2><p>Most telehealth visits are covered like in-person visits.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What you need</h2><p>Phone, tablet, or computer with camera and microphone. Wi-Fi or cell signal.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common platforms</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Zoom (most common)</li><li>Doxy.me (just a link, no app)</li><li>MyChart (hospital portals)</li><li>Teladoc</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common platforms</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Zoom (most common)</li><li>Doxy.me (just a link, no app)</li><li>MyChart (hospital portals)</li><li>Teladoc</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Test before</h2><p>Click the link 10 minutes early. Test camera and mic.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Have ready</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>List of medications</li><li>Notes on symptoms</li><li>Blood pressure log if any</li><li>Insurance card</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Have ready</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>List of medications</li><li>Notes on symptoms</li><li>Blood pressure log if any</li><li>Insurance card</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Ask a family member</h2><p>Have someone with you for important visits. They can help take notes.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Phone-only visits are billed as &ldquo;audio only&rdquo; — also covered by Medicare.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Phone-only visits are billed as &ldquo;audio only&rdquo; — also covered by Medicare.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

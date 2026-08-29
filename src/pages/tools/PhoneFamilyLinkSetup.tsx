@@ -126,7 +126,7 @@ export default function PhoneFamilyLinkSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <ShieldCheck className="h-8 w-8 text-blue-600" />
+                <ShieldCheck className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Phone Parental Controls for Grandkids</h1>
@@ -141,14 +141,14 @@ export default function PhoneFamilyLinkSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Which device do the grandkids use?</p>
+              <p className="text-base font-semibold mb-3">Which device do the grandkids use?</p>
               <div className="grid sm:grid-cols-3 gap-2">
                 {PLATFORM_OPTIONS.map(o => (
                   <button key={o.id} onClick={() => setPlatform(o.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       platform === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -158,7 +158,7 @@ export default function PhoneFamilyLinkSetup() {
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <Badge variant="outline" className="mb-2">{p.name}</Badge>
-              <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {p.who}</p>
+              <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {p.who}</p>
               <div className="grid sm:grid-cols-2 gap-2 mb-3">
                 <Badge variant="outline" className="text-xs justify-start">Cost: {p.cost}</Badge>
                 <Badge variant="outline" className="text-xs justify-start">Ages: {p.ages}</Badge>
@@ -167,7 +167,7 @@ export default function PhoneFamilyLinkSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">First-time setup</p>
               <ol className="space-y-1.5 mb-4">
                 {p.setup.map((s, i) => (
-                  <li key={i} className="flex gap-2 text-sm">
+                  <li key={i} className="flex gap-2 text-base">
                     <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                     <span>{s}</span>
                   </li>
@@ -177,7 +177,7 @@ export default function PhoneFamilyLinkSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Day-to-day use</p>
               <ol className="space-y-1.5 mb-4">
                 {p.daily.map((s, i) => (
-                  <li key={i} className="flex gap-2 text-sm">
+                  <li key={i} className="flex gap-2 text-base">
                     <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                     <span>{s}</span>
                   </li>
@@ -187,7 +187,7 @@ export default function PhoneFamilyLinkSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Worth knowing</p>
               <ul className="space-y-1">
                 {p.notes.map((n, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-primary shrink-0">•</span><span>{n}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-primary shrink-0">•</span><span>{n}</span></li>
                 ))}
               </ul>
 
@@ -198,9 +198,9 @@ export default function PhoneFamilyLinkSetup() {
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Screen-time limits are educational tools, not 100% blocks</p>
                 <p className="text-muted-foreground">
@@ -212,8 +212,8 @@ export default function PhoneFamilyLinkSetup() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Five universal rules for shared-device families</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Five universal rules for shared-device families</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Sign yourself OUT of email, banking, and social-media apps before handing the device over. A grandkid does not need access to your inbox.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Set a separate parental-control PIN that the kids do not know — and write it down somewhere only adults see.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Turn off in-app purchases everywhere. One tap on the wrong button can cost real money.</span></li>
@@ -227,16 +227,16 @@ export default function PhoneFamilyLinkSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Grandparent Device Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Get a spare phone or tablet ready to share.</p>
+                <p className="font-medium text-base">Grandparent Device Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Get a spare phone or tablet ready to share.</p>
               </Link>
               <Link to="/tools/kids-online-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Kids Online Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Wider safety habits beyond the device itself.</p>
+                <p className="font-medium text-base">Kids Online Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Wider safety habits beyond the device itself.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Teach grandkids to spot a fake text together.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Teach grandkids to spot a fake text together.</p>
               </Link>
             </div>
           </div>

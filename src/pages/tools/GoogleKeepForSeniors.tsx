@@ -19,7 +19,7 @@ export default function GoogleKeepForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sticky note-style organization.</li>
               <li>Color-coded notes.</li>
               <li>Photos + voice notes.</li>
@@ -33,7 +33,7 @@ export default function GoogleKeepForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Grocery lists.</li>
               <li>Medication reminders.</li>
               <li>Doctor questions.</li>
@@ -47,7 +47,7 @@ export default function GoogleKeepForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice + photo notes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Speak note — auto-transcribed.</li>
               <li>Photo of physical document.</li>
               <li>Search text within photos.</li>
@@ -61,7 +61,7 @@ export default function GoogleKeepForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reminders + alarms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set reminder on note.</li>
               <li>Time-based or location-based.</li>
               <li>&quot;Remind me at 8am.&quot;</li>
@@ -75,7 +75,7 @@ export default function GoogleKeepForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Share with family</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Share grocery list with spouse.</li>
               <li>Both can edit in real time.</li>
               <li>Add items as you remember.</li>
@@ -89,7 +89,7 @@ export default function GoogleKeepForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">vs Apple Notes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Notes — for Apple devices.</li>
               <li>Google Keep — works everywhere.</li>
               <li>Including Windows + Chromebook.</li>
@@ -103,7 +103,7 @@ export default function GoogleKeepForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free shopping list with spouse</h3>
-            <p className="text-sm text-muted-foreground">Best feature: shared grocery list with spouse. Both add items in real time. As you grocery shop, items checked off update spouse&apos;s view. No more &quot;did you get the milk?&quot; calls. Free, easy, transformative for senior couples managing household together.</p>
+            <p className="text-base text-muted-foreground">Best feature: shared grocery list with spouse. Both add items in real time. As you grocery shop, items checked off update spouse&apos;s view. No more &quot;did you get the milk?&quot; calls. Free, easy, transformative for senior couples managing household together.</p>
           </CardContent>
         </Card>
       </main>

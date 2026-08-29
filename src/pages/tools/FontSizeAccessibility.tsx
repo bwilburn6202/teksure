@@ -19,7 +19,7 @@ export default function FontSizeAccessibility() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone — bigger text</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Display &amp; Brightness → Text Size.</li>
               <li>Slide RIGHT for bigger text.</li>
               <li>For MUCH bigger: Settings → Accessibility → Display &amp; Text Size → Larger Text → ON.</li>
@@ -32,7 +32,7 @@ export default function FontSizeAccessibility() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone — bigger icons</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Display &amp; Brightness → Display Zoom.</li>
               <li>Tap "Larger Text".</li>
               <li>Phone restarts.</li>
@@ -45,7 +45,7 @@ export default function FontSizeAccessibility() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Android — bigger text</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Display → Font Size + Display Size.</li>
               <li>Slide both right.</li>
               <li>Display Size makes EVERYTHING bigger.</li>
@@ -58,7 +58,7 @@ export default function FontSizeAccessibility() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other senior-friendly tweaks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone Reduce Motion</strong> — Settings → Accessibility → Motion → Reduce Motion ON.</li>
               <li><strong>Increase Contrast</strong> — Accessibility → Display &amp; Text Size → Increase Contrast.</li>
               <li><strong>Bold Text</strong> — same menu.</li>
@@ -72,7 +72,7 @@ export default function FontSizeAccessibility() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Settings change everywhere</h3>
-            <p className="text-sm text-muted-foreground">When you set bigger text, ALL apps that respect the setting use it. Mail, Messages, Settings, Notes — all get bigger together. Apps that ignore it (some old apps) — replace if possible.</p>
+            <p className="text-base text-muted-foreground">When you set bigger text, ALL apps that respect the setting use it. Mail, Messages, Settings, Notes — all get bigger together. Apps that ignore it (some old apps) — replace if possible.</p>
           </CardContent>
         </Card>
       </main>

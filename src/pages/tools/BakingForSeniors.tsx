@@ -19,7 +19,7 @@ export default function BakingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy senior bakes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Box mixes</strong> — perfectly fine. Add own touches.</li>
               <li><strong>Banana bread</strong> — forgiving recipe.</li>
               <li><strong>Cookies</strong> — drop cookies easiest.</li>
@@ -33,7 +33,7 @@ export default function BakingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Stand mixer</strong> — KitchenAid forever, or hand mixer.</li>
               <li><strong>Silicone baking mats</strong> — no greasing.</li>
               <li><strong>Pre-cut parchment</strong> — easy lift out.</li>
@@ -48,7 +48,7 @@ export default function BakingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Modify recipes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AI helps adapt — see /tools/ai-translate-recipe.</li>
               <li>Reduce sugar 25-30% (still works).</li>
               <li>Half recipe for less waste.</li>
@@ -62,7 +62,7 @@ export default function BakingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Joy of baking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Therapy + creative.</li>
               <li>Share with neighbors.</li>
               <li>Family heritage recipes.</li>
@@ -76,7 +76,7 @@ export default function BakingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best beginner cookbooks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>How to Bake Everything</strong> — Mark Bittman.</li>
               <li><strong>The Joy of Cooking</strong> — classic.</li>
               <li><strong>Sally&apos;s Baking Addiction</strong> — blog + cookbooks.</li>
@@ -90,7 +90,7 @@ export default function BakingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Joy not perfection</h3>
-            <p className="text-sm text-muted-foreground">Imperfect cookies = still delicious. Don&apos;t aim for Pinterest-perfect. Family loves grandma&apos;s slightly burnt cookies. Process matters more than result. Bake for love.</p>
+            <p className="text-base text-muted-foreground">Imperfect cookies = still delicious. Don&apos;t aim for Pinterest-perfect. Family loves grandma&apos;s slightly burnt cookies. Process matters more than result. Bake for love.</p>
           </CardContent>
         </Card>
       </main>

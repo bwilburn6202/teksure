@@ -19,7 +19,7 @@ export default function TaiChiBeginner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Tai Chi for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reduces falls 30-50% (proven studies).</li>
               <li>Improves balance + posture.</li>
               <li>Lowers BP.</li>
@@ -35,7 +35,7 @@ export default function TaiChiBeginner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to start FREE</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tai Chi for Health Institute</strong> — proven program. taichiforhealthinstitute.org.</li>
               <li><strong>YMCA</strong> — Tai Chi for Arthritis classes.</li>
               <li><strong>Senior centers</strong> — most have free classes.</li>
@@ -49,7 +49,7 @@ export default function TaiChiBeginner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">In-person vs YouTube</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>In-person better — instructor corrects form.</li>
               <li>Group practice = consistent + social.</li>
               <li>YouTube great for daily practice between classes.</li>
@@ -62,7 +62,7 @@ export default function TaiChiBeginner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start simple</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>10-min daily better than 1-hour weekly.</li>
               <li>Yang style most beginner-friendly.</li>
               <li>Tai Chi for Arthritis program — designed for seniors.</li>
@@ -78,7 +78,7 @@ export default function TaiChiBeginner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps + DVDs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tai Chi Step by Step</strong> — app, beginner-friendly.</li>
               <li><strong>Dr. Paul Lam DVDs</strong> — gold standard, $30-50.</li>
               <li><strong>Tai Chi for Arthritis</strong> book + DVD.</li>
@@ -91,7 +91,7 @@ export default function TaiChiBeginner() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Daily 15-min routine</h3>
-            <p className="text-sm text-muted-foreground">15 min/day Tai Chi over 6 months = measurable balance improvement, fewer falls. Better than complicated gym programs. Cumulative effect. Many seniors continue 20+ years. Joint health, balance, calm mind. Best senior exercise discovery many say.</p>
+            <p className="text-base text-muted-foreground">15 min/day Tai Chi over 6 months = measurable balance improvement, fewer falls. Better than complicated gym programs. Cumulative effect. Many seniors continue 20+ years. Joint health, balance, calm mind. Best senior exercise discovery many say.</p>
           </CardContent>
         </Card>
       </main>

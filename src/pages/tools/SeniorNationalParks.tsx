@@ -18,11 +18,11 @@ export default function SeniorNationalParks() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior Pass</h2><p>$80 lifetime. ALL US national parks free. Buy at park or store.recreation.gov.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Annual Senior</h2><p>$20/year. Same benefits. Try before lifetime.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best senior parks</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Acadia (Maine, easy)</li><li>Glacier (Montana)</li><li>Smoky Mountains (TN/NC)</li><li>Grand Canyon (AZ)</li><li>Zion (Utah)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best senior parks</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Acadia (Maine, easy)</li><li>Glacier (Montana)</li><li>Smoky Mountains (TN/NC)</li><li>Grand Canyon (AZ)</li><li>Zion (Utah)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Accessibility</h2><p>Most parks have wheelchair-friendly trails. Check park website ahead.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free shuttles</h2><p>Many parks have shuttles. No driving in park needed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Ranger programs</h2><p>FREE. Daily walks, talks. Senior-friendly pace.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Senior pass also covers spouse and kids in same car. Family discount.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Senior pass also covers spouse and kids in same car. Family discount.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

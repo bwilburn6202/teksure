@@ -143,7 +143,7 @@ export default function ESignatureSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <PenTool className="h-8 w-8 text-blue-600" />
+                <PenTool className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">E-Signature Setup</h1>
@@ -156,13 +156,13 @@ export default function ESignatureSetup() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'E-Signature Setup' }]} />
 
-          <Card className="border-emerald-300 bg-emerald-50 dark:bg-emerald-950/20 mb-6">
+          <Card className="border-success-foreground/25 bg-success mb-6">
             <CardContent className="p-5">
-              <p className="font-semibold mb-1 text-sm">Is this legally valid?</p>
-              <p className="text-sm text-muted-foreground">
+              <p className="font-semibold mb-1 text-base">Is this legally valid?</p>
+              <p className="text-base text-muted-foreground">
                 Yes. Under the federal ESIGN Act of 2000, an electronic signature carries the same legal weight as a pen-and-paper signature for most documents — leases, real estate offers, work contracts, healthcare forms, and tax paperwork. A small number of items still need a wet signature (wills, some court filings, certain notarized documents). When in doubt, ask the person who sent the request.
               </p>
-              <p className="text-sm text-muted-foreground mt-2">
+              <p className="text-base text-muted-foreground mt-2">
                 What makes a signature valid? Three things: you intended to sign, you agreed to use an electronic method, and the document keeps a record showing who signed and when. The big services handle all three for you.
               </p>
             </CardContent>
@@ -171,41 +171,41 @@ export default function ESignatureSetup() {
           <h2 className="text-xl font-bold mb-3">Part 1 — Receiving an e-sign request</h2>
           <Card className="border-border mb-6">
             <CardContent className="p-5">
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 Most of the time, you will be on the receiving end. Here is what to expect when a real estate agent, lawyer, or HR person sends you a document to sign.
               </p>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Step by step</p>
               <ol className="space-y-1.5 mb-4">
-                <li className="flex gap-2 text-sm">
+                <li className="flex gap-2 text-base">
                   <span className="text-primary font-semibold shrink-0">1.</span>
                   <span>You get an email titled something like "Please DocuSign: Lease agreement.pdf". The sender is the person you expected (your agent, your boss, your bank).</span>
                 </li>
-                <li className="flex gap-2 text-sm">
+                <li className="flex gap-2 text-base">
                   <span className="text-primary font-semibold shrink-0">2.</span>
                   <span>Check the sender domain first. A real DocuSign email comes from an address ending in <strong>docusign.net</strong>. If the email comes from "docu-sign.co" or "docusign.support-portal.com", stop — that is a phishing scam.</span>
                 </li>
-                <li className="flex gap-2 text-sm">
+                <li className="flex gap-2 text-base">
                   <span className="text-primary font-semibold shrink-0">3.</span>
                   <span>Click the "Review Document" button in the email. It opens in your web browser. You do not need to install anything or create an account.</span>
                 </li>
-                <li className="flex gap-2 text-sm">
+                <li className="flex gap-2 text-base">
                   <span className="text-primary font-semibold shrink-0">4.</span>
                   <span>Read the document. Use the scroll bar or arrow buttons to move through every page. Take your time.</span>
                 </li>
-                <li className="flex gap-2 text-sm">
+                <li className="flex gap-2 text-base">
                   <span className="text-primary font-semibold shrink-0">5.</span>
                   <span>When you reach the signature line, click the yellow "Sign" tag. A pop-up will ask you to type your full name and pick a signature style — or draw your own with your finger or mouse.</span>
                 </li>
-                <li className="flex gap-2 text-sm">
+                <li className="flex gap-2 text-base">
                   <span className="text-primary font-semibold shrink-0">6.</span>
                   <span>Click "Adopt and Sign", then "Finish" at the top. Done. You will get a copy of the fully signed document by email within a minute or two.</span>
                 </li>
               </ol>
 
-              <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20">
+              <Card className="border-warn-foreground/25 bg-warn ">
                 <CardContent className="p-4 flex gap-3">
-                  <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                   <div className="text-sm">
                     <p className="font-semibold mb-1">Always download and save a copy</p>
                     <p className="text-muted-foreground">
@@ -218,20 +218,20 @@ export default function ESignatureSetup() {
           </Card>
 
           <h2 className="text-xl font-bold mb-3">Part 2 — Sending a signature request</h2>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             Need someone else to sign? Pick a service below to see how to set it up and send your first request.
           </p>
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Which service do you want to use?</p>
+              <p className="text-base font-semibold mb-3">Which service do you want to use?</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {SERVICE_OPTIONS.map(o => (
                   <button key={o.id} onClick={() => setService(o.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       service === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -241,7 +241,7 @@ export default function ESignatureSetup() {
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <Badge variant="outline" className="mb-2">{s.name}</Badge>
-              <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {s.who}</p>
+              <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {s.who}</p>
               <div className="grid sm:grid-cols-1 gap-2 mb-3">
                 <Badge variant="outline" className="text-xs justify-start">Free tier: {s.freeTier}</Badge>
               </div>
@@ -249,7 +249,7 @@ export default function ESignatureSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Setup</p>
               <ol className="space-y-1.5 mb-4">
                 {s.setup.map((step, i) => (
-                  <li key={i} className="flex gap-2 text-sm">
+                  <li key={i} className="flex gap-2 text-base">
                     <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                     <span>{step}</span>
                   </li>
@@ -259,7 +259,7 @@ export default function ESignatureSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Send a request</p>
               <ol className="space-y-1.5 mb-4">
                 {s.send.map((step, i) => (
-                  <li key={i} className="flex gap-2 text-sm">
+                  <li key={i} className="flex gap-2 text-base">
                     <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                     <span>{step}</span>
                   </li>
@@ -269,7 +269,7 @@ export default function ESignatureSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Worth knowing</p>
               <ul className="space-y-1">
                 {s.notes.map((n, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-primary shrink-0">•</span><span>{n}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-primary shrink-0">•</span><span>{n}</span></li>
                 ))}
               </ul>
 
@@ -280,19 +280,19 @@ export default function ESignatureSetup() {
             </CardContent>
           </Card>
 
-          <Card className="border-red-300 bg-red-50 dark:bg-red-950/20 mb-6">
+          <Card className="border-danger-foreground/25 bg-danger mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-red-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch out for fake DocuSign emails</p>
                 <p className="text-muted-foreground mb-2">
                   Scammers send fake DocuSign emails by the millions, hoping you will click and hand over your password or download malware. Real signature emails follow a few clear rules:
                 </p>
                 <ul className="space-y-1 text-muted-foreground">
-                  <li className="flex gap-2"><span className="text-red-600 shrink-0">•</span><span>The sender address ends in <strong>docusign.net</strong> or <strong>docusign.com</strong>. Look at the full email address, not the display name.</span></li>
-                  <li className="flex gap-2"><span className="text-red-600 shrink-0">•</span><span>The email mentions a specific document and a specific person you know.</span></li>
-                  <li className="flex gap-2"><span className="text-red-600 shrink-0">•</span><span>It does NOT pressure you with threats like "sign in 24 hours or your account closes".</span></li>
-                  <li className="flex gap-2"><span className="text-red-600 shrink-0">•</span><span>If you were not expecting a document, do not click. Call the person who supposedly sent it on a phone number you already know.</span></li>
+                  <li className="flex gap-2"><span className="text-danger-foreground shrink-0">•</span><span>The sender address ends in <strong>docusign.net</strong> or <strong>docusign.com</strong>. Look at the full email address, not the display name.</span></li>
+                  <li className="flex gap-2"><span className="text-danger-foreground shrink-0">•</span><span>The email mentions a specific document and a specific person you know.</span></li>
+                  <li className="flex gap-2"><span className="text-danger-foreground shrink-0">•</span><span>It does NOT pressure you with threats like "sign in 24 hours or your account closes".</span></li>
+                  <li className="flex gap-2"><span className="text-danger-foreground shrink-0">•</span><span>If you were not expecting a document, do not click. Call the person who supposedly sent it on a phone number you already know.</span></li>
                 </ul>
               </div>
             </CardContent>
@@ -300,11 +300,11 @@ export default function ESignatureSetup() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Prefer paper? Print and mail still works</p>
-              <p className="text-sm text-muted-foreground mb-2">
+              <p className="text-base font-semibold mb-2">Prefer paper? Print and mail still works</p>
+              <p className="text-base text-muted-foreground mb-2">
                 You are never required to sign electronically. Federal law gives you the right to opt out and use a wet signature. If you would rather print and mail:
               </p>
-              <ul className="space-y-1.5 text-sm text-muted-foreground">
+              <ul className="space-y-1.5 text-base text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Reply to the sender and ask them to email you a plain PDF.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Print the document, sign in blue or black ink, and date every page they request.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Scan it back to PDF (use a phone scanner app like Adobe Scan) or mail the paper copy with tracking.</span></li>
@@ -315,8 +315,8 @@ export default function ESignatureSetup() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Five habits that keep e-signing safe</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Five habits that keep e-signing safe</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Always read every page before signing — yes, even the long ones.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Verify the sender domain matches the real service (docusign.net, adobesign.com, dropboxsign.com).</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Download a PDF copy of the signed document and save it where you can find it later.</span></li>
@@ -335,16 +335,16 @@ export default function ESignatureSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Check that suspicious DocuSign email before clicking.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Check that suspicious DocuSign email before clicking.</p>
               </Link>
               <Link to="/tools/document-scanner-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Document Scanner Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Turn paper documents into clean PDFs with your phone.</p>
+                <p className="font-medium text-base">Document Scanner Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Turn paper documents into clean PDFs with your phone.</p>
               </Link>
               <Link to="/tools/online-forms-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Online Forms Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Walk through tricky online forms field by field.</p>
+                <p className="font-medium text-base">Online Forms Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Walk through tricky online forms field by field.</p>
               </Link>
             </div>
           </div>

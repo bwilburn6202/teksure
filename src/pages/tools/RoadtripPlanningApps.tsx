@@ -31,10 +31,10 @@ export default function RoadtripPlanningApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function RoadtripPlanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior road trip basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>250-350 miles/day max — don&apos;t exhaust.</li>
               <li>Stop every 2 hours — stretch, walk.</li>
               <li>Plan rest days (1 in 4 driving days).</li>
@@ -58,7 +58,7 @@ export default function RoadtripPlanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly trips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pacific Coast Highway</strong> — beautiful + slow.</li>
               <li><strong>Blue Ridge Parkway</strong> — fall foliage.</li>
               <li><strong>Route 66</strong> — nostalgia.</li>
@@ -73,7 +73,7 @@ export default function RoadtripPlanningApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pre-trip preparation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Car inspection (oil, tires, brakes, fluids).</li>
               <li>AAA membership current.</li>
               <li>Insurance card + roadside insurance verified.</li>
@@ -88,7 +88,7 @@ export default function RoadtripPlanningApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior travel groups</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t want to plan alone? <strong>Road Scholar</strong> + <strong>Caravan Tours</strong> offer guided road trips. Bus tours senior-paced. <strong>Adventure Caravans</strong> for RVers. Build your own with apps OR join a group — both work for seniors. See /tools/senior-travel-groups.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t want to plan alone? <strong>Road Scholar</strong> + <strong>Caravan Tours</strong> offer guided road trips. Bus tours senior-paced. <strong>Adventure Caravans</strong> for RVers. Build your own with apps OR join a group — both work for seniors. See /tools/senior-travel-groups.</p>
           </CardContent>
         </Card>
       </main>

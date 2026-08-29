@@ -28,7 +28,7 @@ export default function TelehealthVisitCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">When telehealth is great</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Cold, flu, sinus infection.</li>
               <li>Pink eye, mild rashes.</li>
               <li>UTIs.</li>
@@ -36,7 +36,7 @@ export default function TelehealthVisitCoach() {
               <li>Mental health visits.</li>
               <li>Follow-up with your usual doctor when stable.</li>
             </ul>
-            <p className="text-sm mt-2 font-semibold">Don\'t use telehealth for: chest pain, severe shortness of breath, stroke symptoms (face droop, weakness), serious bleeding, severe pain. Call 911.</p>
+            <p className="text-base mt-2 font-semibold">Don\'t use telehealth for: chest pain, severe shortness of breath, stroke symptoms (face droop, weakness), serious bleeding, severe pain. Call 911.</p>
           </CardContent>
         </Card>
 
@@ -46,10 +46,10 @@ export default function TelehealthVisitCoach() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base mb-1">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -58,7 +58,7 @@ export default function TelehealthVisitCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before the visit</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Find a quiet, well-lit room.</li>
               <li>Have your phone or laptop charged or plugged in.</li>
               <li>List your symptoms in order of severity.</li>
@@ -73,7 +73,7 @@ export default function TelehealthVisitCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">During the visit</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Speak slowly and clearly.</li>
               <li>If you can\'t hear well, ask the doctor to type the diagnosis in chat.</li>
               <li>At the end, repeat back the plan: "So you\'re prescribing X for 7 days, and I follow up if Y?".</li>
@@ -85,7 +85,7 @@ export default function TelehealthVisitCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Medicare Advantage often includes free telehealth</h3>
-            <p className="text-sm text-muted-foreground">Many Medicare Advantage plans include unlimited telehealth visits with $0 copay. Check your plan benefits — call the number on your card. Original Medicare also covers telehealth as of 2024 in most cases.</p>
+            <p className="text-base text-muted-foreground">Many Medicare Advantage plans include unlimited telehealth visits with $0 copay. Check your plan benefits — call the number on your card. Original Medicare also covers telehealth as of 2024 in most cases.</p>
           </CardContent>
         </Card>
       </main>

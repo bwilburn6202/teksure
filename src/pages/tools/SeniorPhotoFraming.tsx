@@ -22,7 +22,7 @@ export default function SeniorPhotoFraming() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Shutterfly</h2><p>Wall art deals. Often 50% off. Watch for sales.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Print monthly</h2><p>1 favorite per month. 12 photos a year. Wall full.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Photo books</h2><p>Apple Books. Shutterfly. $20-$80 hardcover. Easy gifts.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Mixtiles are senior-friendly. Just stick on. Move anytime.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Mixtiles are senior-friendly. Just stick on. Move anytime.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function SpotifyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick a service</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Spotify</strong> — $11/mo. Biggest. Best playlists.</li>
               <li><strong>Apple Music</strong> — $11/mo. Best on iPhone.</li>
               <li><strong>YouTube Music</strong> — $11/mo. Comes with YouTube Premium.</li>
@@ -33,7 +33,7 @@ export default function SpotifyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Voice control: "Alexa, play the Beatles" / "Hey Siri, play Sinatra".</li>
               <li>Settings → bigger text size in app.</li>
               <li>Pin favorite playlists to home.</li>
@@ -47,7 +47,7 @@ export default function SpotifyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for seniors playlists</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search "1950s/60s/70s hits" — playlists ready.</li>
               <li>"Big Band Era".</li>
               <li>"Classical Sleep".</li>
@@ -62,7 +62,7 @@ export default function SpotifyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Family Plan</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Spotify Family — $17/mo for 6 people.</li>
               <li>Apple Music Family — $17/mo for 6.</li>
               <li>Each gets own profile.</li>
@@ -75,7 +75,7 @@ export default function SpotifyForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Music + memory care</h3>
-            <p className="text-sm text-muted-foreground">For dementia patients — music from age 16-25 stays in memory longest. Build playlist of those years. Plays calmly during anxiety. Music &amp; Memory non-profit also free curated playlists for nursing homes.</p>
+            <p className="text-base text-muted-foreground">For dementia patients — music from age 16-25 stays in memory longest. Build playlist of those years. Plays calmly during anxiety. Music &amp; Memory non-profit also free curated playlists for nursing homes.</p>
           </CardContent>
         </Card>
       </main>

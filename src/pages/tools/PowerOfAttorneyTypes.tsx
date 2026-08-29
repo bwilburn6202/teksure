@@ -19,7 +19,7 @@ export default function PowerOfAttorneyTypes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">4 main types</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>General POA</strong> — broad financial powers. Ends if you become incapacitated.</li>
               <li><strong>Durable POA</strong> — continues if you become incapacitated. **MOST IMPORTANT for seniors**.</li>
               <li><strong>Healthcare POA</strong> (Medical POA) — medical decisions only.</li>
@@ -32,7 +32,7 @@ export default function PowerOfAttorneyTypes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why you NEED both</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Without POA — family must go to COURT for guardianship.</li>
               <li>Court process: $5K-15K + 6-12 months.</li>
               <li>Court appoints — may not be person you&apos;d pick.</li>
@@ -46,7 +46,7 @@ export default function PowerOfAttorneyTypes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick your agent carefully</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Trust 100% — they have access to EVERYTHING.</li>
               <li>Live nearby (or willing to travel).</li>
               <li>Financially responsible.</li>
@@ -62,7 +62,7 @@ export default function PowerOfAttorneyTypes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What POA can do</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pay your bills.</li>
               <li>Manage bank accounts + investments.</li>
               <li>Sign tax returns.</li>
@@ -79,7 +79,7 @@ export default function PowerOfAttorneyTypes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY vs lawyer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>State-specific forms</strong> — most states have official POA form.</li>
               <li><strong>LegalZoom, Rocket Lawyer</strong> — $50-150. Decent for simple situations.</li>
               <li><strong>Elder law attorney</strong> — $200-500. Best for complex.</li>
@@ -93,7 +93,7 @@ export default function PowerOfAttorneyTypes() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground"><strong>AARP</strong> — free POA forms by state. <strong>FreeWill.com</strong> — free POA online for seniors. <strong>Legal Aid</strong> societies — free for low income. <strong>Senior Legal Services</strong> via Area Agency on Aging — often free. Don&apos;t put off — most seniors regret waiting until crisis.</p>
+            <p className="text-base text-muted-foreground"><strong>AARP</strong> — free POA forms by state. <strong>FreeWill.com</strong> — free POA online for seniors. <strong>Legal Aid</strong> societies — free for low income. <strong>Senior Legal Services</strong> via Area Agency on Aging — often free. Don&apos;t put off — most seniors regret waiting until crisis.</p>
           </CardContent>
         </Card>
       </main>

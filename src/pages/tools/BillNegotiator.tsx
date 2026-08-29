@@ -642,11 +642,11 @@ export default function BillNegotiator() {
             </Card>
 
             {/* Safety / realism note */}
-            <div className="rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 p-4 no-print">
-              <p className="text-base font-semibold text-amber-800 dark:text-amber-300 mb-1">
+            <div className="rounded-xl bg-warn border border-warn-foreground/25 p-4 no-print">
+              <p className="text-base font-semibold text-warn-foreground mb-1">
                  A few things to remember
               </p>
-              <ul className="text-sm text-amber-800/90 dark:text-amber-200/90 list-disc pl-5 space-y-1">
+              <ul className="text-base text-amber-800/90 dark:text-amber-200/90 list-disc pl-5 space-y-1">
                 <li>Not every call succeeds. If the first rep won&apos;t budge, hang up politely and call back later — you may reach someone more flexible.</li>
                 <li>
                   Be kind. Reps are people too, and politeness gets you further than pressure.

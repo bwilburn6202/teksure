@@ -29,7 +29,7 @@ export default function ScreenshotHowTo() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone</h3>
-              <ul className="list-disc pl-5 space-y-2 text-sm">
+              <ul className="list-disc pl-5 space-y-2 text-base">
                 <li><strong>Face ID iPhones</strong> (no home button) — press Side button + Volume Up at the same time. Quick press, release.</li>
                 <li><strong>Home button iPhones</strong> — press Home button + Side/top button at the same time.</li>
                 <li>You&apos;ll hear shutter sound. Thumbnail appears bottom-left.</li>
@@ -44,7 +44,7 @@ export default function ScreenshotHowTo() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android</h3>
-              <ul className="list-disc pl-5 space-y-2 text-sm">
+              <ul className="list-disc pl-5 space-y-2 text-base">
                 <li>Press Power + Volume Down at the same time.</li>
                 <li>Or swipe down with three fingers (some Samsungs and Pixels).</li>
                 <li>Or press and hold Power → tap "Screenshot" on menu.</li>
@@ -58,7 +58,7 @@ export default function ScreenshotHowTo() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Mac</h3>
-              <ul className="list-disc pl-5 space-y-2 text-sm">
+              <ul className="list-disc pl-5 space-y-2 text-base">
                 <li><strong>Whole screen</strong> — <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">3</kbd></li>
                 <li><strong>Just part of screen</strong> — <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">4</kbd>. Drag a box.</li>
                 <li><strong>Just one window</strong> — <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">4</kbd>, then press Spacebar. Click the window.</li>
@@ -72,7 +72,7 @@ export default function ScreenshotHowTo() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Windows 10/11</h3>
-              <ul className="list-disc pl-5 space-y-2 text-sm">
+              <ul className="list-disc pl-5 space-y-2 text-base">
                 <li><strong>Whole screen</strong> — Press <kbd className="bg-muted px-1.5 py-0.5 rounded">PrtSc</kbd> (or "Print Screen"). Copies to clipboard. Paste into email or Word.</li>
                 <li><strong>Whole screen, save as file</strong> — <kbd className="bg-muted px-1.5 py-0.5 rounded">Win</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">PrtSc</kbd>. Saves to Pictures → Screenshots.</li>
                 <li><strong>Snipping tool</strong> — <kbd className="bg-muted px-1.5 py-0.5 rounded">Win</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">S</kbd>. Drag a box. Mark up. Save.</li>
@@ -84,7 +84,7 @@ export default function ScreenshotHowTo() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Why screenshots help</h3>
-            <p className="text-sm text-muted-foreground">When something goes wrong on screen, take a screenshot. Send to family or tech support. They can see exactly what you see — way easier than describing it. Saves hours of "what does it say now?" back-and-forth.</p>
+            <p className="text-base text-muted-foreground">When something goes wrong on screen, take a screenshot. Send to family or tech support. They can see exactly what you see — way easier than describing it. Saves hours of "what does it say now?" back-and-forth.</p>
           </CardContent>
         </Card>
       </main>

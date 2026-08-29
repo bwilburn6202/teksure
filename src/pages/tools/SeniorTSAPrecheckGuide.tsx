@@ -18,11 +18,11 @@ export default function SeniorTSAPrecheckGuide() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What it is</h2><p>$78 for 5 years. Faster security line at 200+ U.S. airports.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apply online</h2><p>Visit tsa.gov/precheck. Fill the form, then visit an enrollment center for fingerprints.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bring to enrollment</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Driver&apos;s license or passport</li><li>Birth certificate</li><li>Proof of address</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bring to enrollment</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Driver&apos;s license or passport</li><li>Birth certificate</li><li>Proof of address</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Approval time</h2><p>Most travelers approved within 3-5 days. Your Known Traveler Number arrives by mail or email.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use it</h2><p>Add your Known Traveler Number to every airline reservation. Look for &ldquo;TSA Pre&rdquo; on your boarding pass.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior tip</h2><p>Travelers 75+ already get some benefits without PreCheck — but PreCheck still saves time.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Some credit cards reimburse the $78 PreCheck fee.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Some credit cards reimburse the $78 PreCheck fee.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

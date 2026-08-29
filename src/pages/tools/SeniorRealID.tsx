@@ -18,11 +18,11 @@ export default function SeniorRealID() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Required May 2025</h2><p>For domestic flights and federal buildings. Driver license needs star.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Visit DMV</h2><p>Bring documents. Make appointment online. Avoid long lines.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Documents needed</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Birth certificate or passport</li><li>Social Security card</li><li>2 proofs of address</li><li>Marriage license if name changed</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Documents needed</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Birth certificate or passport</li><li>Social Security card</li><li>2 proofs of address</li><li>Marriage license if name changed</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip if you have passport</h2><p>Passport works for domestic flights. No Real ID needed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cost</h2><p>$30-$60 typically. Often included with renewal.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">No mobile DMV</h2><p>Must visit in person. Some states have senior-friendly appointments.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Combine Real ID with renewal. Save trip.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Combine Real ID with renewal. Save trip.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

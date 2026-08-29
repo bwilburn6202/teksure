@@ -68,7 +68,7 @@ export default function WeightLogTracker() {
   const goalDiff = latest && !isNaN(goalNum) ? latest.weight - goalNum : null;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Weight Log Tracker | TekSure"
         description="Track weight readings over time, see 4-week and 12-week averages, and check progress against your goal. Printable for doctor visits."
@@ -77,10 +77,10 @@ export default function WeightLogTracker() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Scale className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Weight Log Tracker</h1>
+            <Scale className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Weight Log Tracker</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Log your weight when you take it. Watch the trend over weeks, not days — that is what matters.
           </p>
         </div>
@@ -120,7 +120,7 @@ export default function WeightLogTracker() {
                 <Input id="notes" placeholder="e.g. After breakfast" value={notes} onChange={e => setNotes(e.target.value)} className="mt-1 text-base" />
               </div>
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={addReading} size="lg" className="w-full sm:w-auto text-base">
               Add Reading
             </Button>
@@ -132,13 +132,13 @@ export default function WeightLogTracker() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Latest</p>
-                <p className="text-xl font-bold text-blue-700">{latest!.weight} lbs</p>
+                <p className="text-sm text-muted-foreground">Latest</p>
+                <p className="text-xl font-bold text-info-foreground">{latest!.weight} lbs</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Last change</p>
+                <p className="text-sm text-muted-foreground">Last change</p>
                 <p className={`text-xl font-bold flex items-center justify-center gap-1 ${
                   lastChange > 0 ? "text-amber-600" : lastChange < 0 ? "text-green-600" : "text-gray-500"
                 }`}>
@@ -149,14 +149,14 @@ export default function WeightLogTracker() {
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">4-week avg</p>
-                <p className="text-xl font-bold text-gray-700">{avg4w ? `${avg4w.toFixed(1)} lbs` : "—"}</p>
+                <p className="text-sm text-muted-foreground">4-week avg</p>
+                <p className="text-xl font-bold text-foreground">{avg4w ? `${avg4w.toFixed(1)} lbs` : "—"}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">12-week avg</p>
-                <p className="text-xl font-bold text-gray-700">{avg12w ? `${avg12w.toFixed(1)} lbs` : "—"}</p>
+                <p className="text-sm text-muted-foreground">12-week avg</p>
+                <p className="text-xl font-bold text-foreground">{avg12w ? `${avg12w.toFixed(1)} lbs` : "—"}</p>
               </CardContent>
             </Card>
           </div>
@@ -164,8 +164,8 @@ export default function WeightLogTracker() {
 
         {/* Total change banner */}
         {sorted.length >= 2 && (
-          <div className="mb-4 px-3 py-2 rounded-lg bg-gray-100 text-center text-sm">
-            <span className="text-gray-700">Total change since first reading: </span>
+          <div className="mb-4 px-3 py-2 rounded-lg bg-muted text-center text-sm">
+            <span className="text-foreground">Total change since first reading: </span>
             <span className={`font-bold ${totalChange > 0 ? "text-amber-700" : totalChange < 0 ? "text-green-700" : "text-gray-700"}`}>
               {totalChange > 0 ? "+" : ""}{totalChange.toFixed(1)} lbs
             </span>
@@ -175,10 +175,10 @@ export default function WeightLogTracker() {
         {/* Readings list */}
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Scale className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Scale className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No readings yet.</p>
-              <p className="text-sm mt-1">Add your first weight reading above.</p>
+              <p className="text-base mt-1">Add your first weight reading above.</p>
             </CardContent>
           </Card>
         ) : (
@@ -194,19 +194,19 @@ export default function WeightLogTracker() {
                   return (
                     <div key={r.id} className="flex items-center justify-between py-2 gap-2">
                       <div className="flex items-center gap-3 flex-1 min-w-0">
-                        <span className="text-sm text-gray-500 w-20 shrink-0">{formatDate(r.date)}</span>
-                        <span className="text-base font-semibold text-gray-900 w-24">{r.weight} lbs</span>
+                        <span className="text-sm text-muted-foreground w-20 shrink-0">{formatDate(r.date)}</span>
+                        <span className="text-base font-semibold text-foreground w-24">{r.weight} lbs</span>
                         {next && (
-                          <span className={`text-xs ${change > 0 ? "text-amber-600" : change < 0 ? "text-green-600" : "text-gray-400"}`}>
+                          <span className={`text-sm ${change > 0 ? "text-amber-600" : change < 0 ? "text-green-600" : "text-gray-400"}`}>
                             {change > 0 ? "+" : ""}{change.toFixed(1)}
                           </span>
                         )}
-                        {r.notes && <span className="text-xs text-gray-400 italic truncate">{r.notes}</span>}
+                        {r.notes && <span className="text-xs text-muted-foreground italic truncate">{r.notes}</span>}
                       </div>
                       <Button
                         variant="ghost"
                         size="icon"
-                        className="h-11 w-11 text-red-400 hover:text-red-600 print:hidden"
+                        className="h-11 w-11 text-danger-foreground hover:text-danger-foreground print:hidden"
                         onClick={() => remove(r.id)}
                         aria-label="Remove reading"
                       >
@@ -229,15 +229,15 @@ export default function WeightLogTracker() {
           </div>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Weigh yourself at the same time each day, in the same clothes (or none), on the same scale. Same conditions give you the most useful trend.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

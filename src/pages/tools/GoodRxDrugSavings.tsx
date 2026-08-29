@@ -19,7 +19,7 @@ export default function GoodRxDrugSavings() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is GoodRx?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free service — lowers prescription prices.</li>
               <li>Search your drug name, get discount coupons.</li>
               <li>Show coupon at pharmacy — pay less.</li>
@@ -33,7 +33,7 @@ export default function GoodRxDrugSavings() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to GoodRx.com or download free app.</li>
               <li>Type your medication name.</li>
               <li>Enter your zip code.</li>
@@ -47,7 +47,7 @@ export default function GoodRxDrugSavings() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How much can you save?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Generic drugs — often 50–80% off retail.</li>
               <li>Some drugs cost pennies with GoodRx.</li>
               <li>Brand-name — smaller discounts but still helps.</li>
@@ -61,7 +61,7 @@ export default function GoodRxDrugSavings() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">GoodRx vs insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sometimes GoodRx beats your insurance copay.</li>
               <li>Always check — prices vary by pharmacy.</li>
               <li>Medicare: GoodRx can&apos;t be combined with Medicare Part D.</li>
@@ -75,7 +75,7 @@ export default function GoodRxDrugSavings() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mark Cuban&apos;s Cost Plus Drugs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>CostPlusDrugs.com — transparent pricing.</li>
               <li>Cost + 15% markup only — very honest.</li>
               <li>Home delivery only — not at pharmacies.</li>
@@ -89,7 +89,7 @@ export default function GoodRxDrugSavings() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other savings programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>RxSaver — similar to GoodRx.</li>
               <li>NeedyMeds — patient assistance programs.</li>
               <li>Manufacturer coupons — brand-name drugs.</li>
@@ -103,7 +103,7 @@ export default function GoodRxDrugSavings() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Check before every refill</h3>
-            <p className="text-sm text-muted-foreground">Drug prices change often. What was cheap last month may have a better deal today at a different pharmacy. Check GoodRx every time you refill a prescription — takes 30 seconds. Many seniors save $50–$200/month on medications they&apos;ve been overpaying for years. Show the coupon on your phone — pharmacists deal with GoodRx every day.</p>
+            <p className="text-base text-muted-foreground">Drug prices change often. What was cheap last month may have a better deal today at a different pharmacy. Check GoodRx every time you refill a prescription — takes 30 seconds. Many seniors save $50–$200/month on medications they&apos;ve been overpaying for years. Show the coupon on your phone — pharmacists deal with GoodRx every day.</p>
           </CardContent>
         </Card>
       </main>

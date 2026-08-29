@@ -265,7 +265,7 @@ export default function DeviceChooser() {
                     <span></span><span></span><span></span>
                   </div>
                   <h2 className="text-xl font-semibold mb-3">Not sure which device to buy?</h2>
-                  <p className="text-muted-foreground text-sm leading-relaxed max-w-sm mx-auto">
+                  <p className="text-muted-foreground text-base leading-relaxed max-w-sm mx-auto">
                     This quick quiz asks 5 easy questions about how you'll use it, where, and your budget — then gives you a personalized, honest recommendation.
                   </p>
                 </CardContent>
@@ -303,7 +303,7 @@ export default function DeviceChooser() {
                 <CardContent className="py-7 text-center">
                   <p className="text-xl font-semibold mb-1">{currentQuestion.text}</p>
                   {currentQuestion.subtext && (
-                    <p className="text-sm text-muted-foreground mt-2">{currentQuestion.subtext}</p>
+                    <p className="text-base text-muted-foreground mt-2">{currentQuestion.subtext}</p>
                   )}
                 </CardContent>
               </Card>
@@ -346,15 +346,15 @@ export default function DeviceChooser() {
 
               <Card className="mb-6 border-primary/30">
                 <CardContent className="py-6">
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-5">{result.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed mb-5">{result.description}</p>
 
                   <div className="grid sm:grid-cols-2 gap-4 mb-2">
                     <div>
                       <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2"> Why it suits you</p>
                       <ul className="space-y-2">
                         {result.pros.map(p => (
-                          <li key={p} className="flex items-start gap-2 text-sm">
-                            <CheckCircle2 className="h-3.5 w-3.5 text-green-500 shrink-0 mt-0.5" />
+                          <li key={p} className="flex items-start gap-2 text-base">
+                            <CheckCircle2 className="h-3.5 w-3.5 text-success-foreground shrink-0 mt-0.5" />
                             {p}
                           </li>
                         ))}
@@ -364,8 +364,8 @@ export default function DeviceChooser() {
                       <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2"> Things to know</p>
                       <ul className="space-y-2">
                         {result.cons.map(c => (
-                          <li key={c} className="flex items-start gap-2 text-sm text-muted-foreground">
-                            <span className="text-amber-500 shrink-0">•</span>
+                          <li key={c} className="flex items-start gap-2 text-base text-muted-foreground">
+                            <span className="text-warn-foreground shrink-0">•</span>
                             {c}
                           </li>
                         ))}
@@ -382,9 +382,9 @@ export default function DeviceChooser() {
                   <div key={i} className="flex items-start gap-3 p-3 rounded-lg bg-muted/50 border border-border">
                     <Badge variant="outline" className="shrink-0 text-xs px-2">{i + 1}</Badge>
                     <div className="min-w-0">
-                      <p className="font-medium text-sm">{ex.name}</p>
-                      <p className="text-xs text-primary font-medium">{ex.price}</p>
-                      <p className="text-xs text-muted-foreground mt-0.5">{ex.why}</p>
+                      <p className="font-medium text-base">{ex.name}</p>
+                      <p className="text-sm text-primary font-medium">{ex.price}</p>
+                      <p className="text-sm text-muted-foreground mt-0.5">{ex.why}</p>
                     </div>
                   </div>
                 ))}

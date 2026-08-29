@@ -29,7 +29,7 @@ export default function SeniorExerciseApps() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why exercise matters more after 60</h2>
-            <p className="text-sm">Strength training literally adds years to life. Walking 30 min/day cuts heart disease risk by 30%. Balance work prevents falls (the #1 cause of senior injury). Best news: even SHORT, light exercise has big effects.</p>
+            <p className="text-base">Strength training literally adds years to life. Walking 30 min/day cuts heart disease risk by 30%. Balance work prevents falls (the #1 cause of senior injury). Best news: even SHORT, light exercise has big effects.</p>
           </CardContent>
         </Card>
 
@@ -39,10 +39,10 @@ export default function SeniorExerciseApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -51,7 +51,7 @@ export default function SeniorExerciseApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Check your insurance for free fitness</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Most <strong>Medicare Advantage</strong> plans include SilverSneakers, Renew Active, or GoActive — often FREE.</li>
               <li>Call the number on your insurance card and ask "Do I have a free fitness benefit?".</li>
               <li>If yes, you walk into a partner gym (Planet Fitness, Anytime Fitness, YMCA, Curves) and just say "I have SilverSneakers" — they sign you up free.</li>
@@ -62,7 +62,7 @@ export default function SeniorExerciseApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For people who can\'t leave home</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>YouTube "chair yoga"</strong> — hundreds of free 10-30 minute videos.</li>
               <li><strong>YouTube "senior strength training"</strong> — instructors like Bob & Brad Physical Therapists are golden.</li>
               <li><strong>Apple Fitness+</strong> — has dedicated senior categories, including chair-only.</li>
@@ -74,7 +74,7 @@ export default function SeniorExerciseApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best place to start</h3>
-            <p className="text-sm text-muted-foreground">Walk 20 minutes a day. That\'s it. Add light resistance (canned soup or 1-2lb dumbbells) twice a week. Add balance — stand on one foot for 30 seconds while brushing teeth. Three pillars, no gym needed, dramatic health benefits.</p>
+            <p className="text-base text-muted-foreground">Walk 20 minutes a day. That\'s it. Add light resistance (canned soup or 1-2lb dumbbells) twice a week. Add balance — stand on one foot for 30 seconds while brushing teeth. Three pillars, no gym needed, dramatic health benefits.</p>
           </CardContent>
         </Card>
       </main>

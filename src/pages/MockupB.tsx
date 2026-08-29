@@ -173,7 +173,7 @@ const MockupB = () => {
                 <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{ background: `${item.color}15` }}>
                   <item.icon className="w-5 h-5" style={{ color: item.color }} />
                 </div>
-                <span className="text-sm font-medium leading-tight" style={{ color: '#222222' }}>{item.label}</span>
+                <span className="text-base font-medium leading-tight" style={{ color: '#222222' }}>{item.label}</span>
               </button>
             ))}
           </div>
@@ -208,7 +208,7 @@ const MockupB = () => {
                   </div>
                 </div>
                 <h3 className="text-[15px] font-semibold leading-snug mb-1 group-hover:underline" style={{ color: '#222222' }}>{card.title}</h3>
-                <p className="text-sm" style={{ color: '#717171' }}>{card.time}</p>
+                <p className="text-base" style={{ color: '#717171' }}>{card.time}</p>
               </div>
             ))}
           </div>
@@ -257,7 +257,7 @@ const MockupB = () => {
               <div key={step.num} className="text-center">
                 <div className="text-5xl font-bold mb-4" style={{ color: step.color, opacity: 0.15 }}>{step.num}</div>
                 <h3 className="text-lg font-bold mb-2" style={{ color: '#222222' }}>{step.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: '#717171' }}>{step.desc}</p>
+                <p className="text-base leading-relaxed" style={{ color: '#717171' }}>{step.desc}</p>
               </div>
             ))}
           </div>
@@ -292,11 +292,11 @@ const MockupB = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ background: '#ff385c' }}>
-                  <span className="text-white font-bold text-sm">T</span>
+                  <span className="text-white font-bold text-base">T</span>
                 </div>
                 <span className="font-bold" style={{ color: '#222222' }}>TekSure</span>
               </div>
-              <p className="text-sm" style={{ color: '#717171' }}>Free tech help for everyone, everywhere.</p>
+              <p className="text-base" style={{ color: '#717171' }}>Free tech help for everyone, everywhere.</p>
             </div>
             <div>
               <h4 className="text-xs font-bold uppercase tracking-wider mb-3" style={{ color: '#222222' }}>Learn</h4>

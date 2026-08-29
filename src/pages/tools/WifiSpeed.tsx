@@ -26,6 +26,7 @@ const WifiSpeed = () => {
         path="/tools/wifi-speed"
       />
       <Navbar />
+      <main className="flex-1">
 
       <div className="container pt-4">
         <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Wi-Fi Speed Test' }]} />
@@ -45,7 +46,7 @@ const WifiSpeed = () => {
         {/* Speed test embed */}
         <Card className="mb-10 overflow-hidden">
           <CardContent className="pt-6 text-center space-y-4">
-            <p className="text-muted-foreground text-sm">
+            <p className="text-muted-foreground text-base">
               Click the button below to test your internet speed using Fast.com (powered by Netflix).
             </p>
             <Button asChild size="lg" className="gap-2">
@@ -53,7 +54,7 @@ const WifiSpeed = () => {
                 Test Your Speed <ExternalLink className="h-4 w-4" />
               </SafeLink>
             </Button>
-            <p className="text-xs text-muted-foreground">Opens in a new tab. Free, no sign-up required.</p>
+            <p className="text-sm text-muted-foreground">Opens in a new tab. Free, no sign-up required.</p>
           </CardContent>
         </Card>
 
@@ -71,7 +72,7 @@ const WifiSpeed = () => {
                 <CardContent className="pt-5">
                   <span className="text-2xl mb-2 block">{tip.emoji}</span>
                   <h3 className="font-semibold text-sm mb-1">{tip.title}</h3>
-                  <p className="text-sm text-muted-foreground">{tip.desc}</p>
+                  <p className="text-base text-muted-foreground">{tip.desc}</p>
                 </CardContent>
               </Card>
             </div>
@@ -82,7 +83,7 @@ const WifiSpeed = () => {
         <Card className="border-b overflow-hidden">
           <CardContent className="py-8 text-center">
             <h2 className="text-xl font-bold mb-2">Still having WiFi issues?</h2>
-            <p className="opacity-80 mb-4 text-sm">Our verified techs can diagnose and fix your network.</p>
+            <p className="opacity-80 mb-4 text-base">Our verified techs can diagnose and fix your network.</p>
             <Button asChild size="lg" variant="secondary">
               <Link to="/signup">Get Expert Help <ArrowRight className="ml-2 h-4 w-4" /></Link>
             </Button>
@@ -90,6 +91,7 @@ const WifiSpeed = () => {
         </Card>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

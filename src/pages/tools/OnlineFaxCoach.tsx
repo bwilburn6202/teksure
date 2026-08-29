@@ -28,7 +28,7 @@ export default function OnlineFaxCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why doctors still fax</h2>
-            <p className="text-sm">HIPAA privacy rules. Faxes are considered "secure" while emails aren\'t (without specific encryption). Healthcare and legal offices are stuck with fax for years to come. You can fax FROM your phone or computer without owning a fax machine.</p>
+            <p className="text-base">HIPAA privacy rules. Faxes are considered "secure" while emails aren\'t (without specific encryption). Healthcare and legal offices are stuck with fax for years to come. You can fax FROM your phone or computer without owning a fax machine.</p>
           </CardContent>
         </Card>
 
@@ -38,10 +38,10 @@ export default function OnlineFaxCoach() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base mb-1">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function OnlineFaxCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How online fax works</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign up for a service. Get an online fax number.</li>
               <li>To SEND: take a photo or PDF of the document. Email it (with the recipient\'s fax number in the to: field) OR upload through their app.</li>
               <li>Service converts to fax format and dials the recipient\'s machine.</li>
@@ -62,7 +62,7 @@ export default function OnlineFaxCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you\'ll likely fax</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Medical records release forms.</li>
               <li>Insurance claims.</li>
               <li>Doctor\'s office paperwork.</li>
@@ -76,7 +76,7 @@ export default function OnlineFaxCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — sometimes a portal works instead</h3>
-            <p className="text-sm text-muted-foreground">Before paying for a fax service, ask the doctor\'s office: "Can I upload through your patient portal instead?" Most offices accept secure messages through MyChart or similar — no fax needed.</p>
+            <p className="text-base text-muted-foreground">Before paying for a fax service, ask the doctor\'s office: "Can I upload through your patient portal instead?" Most offices accept secure messages through MyChart or similar — no fax needed.</p>
           </CardContent>
         </Card>
       </main>

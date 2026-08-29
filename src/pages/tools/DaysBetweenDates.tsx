@@ -23,49 +23,49 @@ export default function DaysBetweenDates() {
   })();
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Days Between Dates | TekSure" description="Pick two dates and instantly see days, weeks, months, and years between them." />
       <div className="max-w-xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Calendar className="h-7 w-7 text-teal-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Days Between Dates</h1>
+            <Calendar className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Days Between Dates</h1>
           </div>
-          <p className="text-gray-600 text-lg">Pick two dates and instantly see how far apart they are.</p>
+          <p className="text-muted-foreground text-lg">Pick two dates and instantly see how far apart they are.</p>
         </div>
         <Card>
           <CardContent className="py-6 px-4 space-y-4">
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="text-base font-medium text-gray-700">Start date</label>
+                <label className="text-base font-medium text-foreground">Start date</label>
                 <Input type="date" value={start} onChange={e => setStart(e.target.value)} className="mt-1 text-base" />
               </div>
               <div>
-                <label className="text-base font-medium text-gray-700">End date</label>
+                <label className="text-base font-medium text-foreground">End date</label>
                 <Input type="date" value={end} onChange={e => setEnd(e.target.value)} className="mt-1 text-base" />
               </div>
             </div>
             {result && (
-              <div className="text-center bg-teal-50 border border-teal-200 rounded-md py-4 px-3">
-                <p className="text-4xl font-bold text-teal-700">{Math.abs(result.days).toLocaleString()} days</p>
-                <p className="text-sm text-teal-600 mt-2">
+              <div className="text-center bg-success border border-success-foreground/25 rounded-md py-4 px-3">
+                <p className="text-4xl font-bold text-success-foreground">{Math.abs(result.days).toLocaleString()} days</p>
+                <p className="text-base text-success-foreground mt-2">
                   {result.weeks} week{result.weeks !== 1 ? "s" : ""} {result.remainder > 0 ? `+ ${result.remainder} days` : ""}
                 </p>
-                <p className="text-sm text-teal-600">~{result.months} months · ~{result.years} years</p>
-                {result.days < 0 && <p className="text-xs text-gray-500 mt-1">(end date is before start)</p>}
+                <p className="text-base text-success-foreground">~{result.months} months · ~{result.years} years</p>
+                {result.days < 0 && <p className="text-sm text-muted-foreground mt-1">(end date is before start)</p>}
               </div>
             )}
           </CardContent>
         </Card>
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Use cases: </span>
               Count days until a vacation, anniversary, birthday, or appointment. Or figure out how long it has been since an event.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

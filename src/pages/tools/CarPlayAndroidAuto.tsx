@@ -19,14 +19,14 @@ export default function CarPlayAndroidAuto() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What they do</h2>
-            <p className="text-sm">CarPlay (iPhone) and Android Auto turn your car&apos;s screen into a phone screen. Maps, music, podcasts, texts, and calls — all controlled by voice or big buttons. Built into most cars 2017+.</p>
+            <p className="text-base">CarPlay (iPhone) and Android Auto turn your car&apos;s screen into a phone screen. Maps, music, podcasts, texts, and calls — all controlled by voice or big buttons. Built into most cars 2017+.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up CarPlay (iPhone)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Plug the iPhone into the car\'s USB port with a Lightning or USB-C cable.</li>
               <li>Car asks: "Use CarPlay?" — Yes.</li>
               <li>Done. Maps, Music, Phone all on the car screen.</li>
@@ -38,7 +38,7 @@ export default function CarPlayAndroidAuto() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up Android Auto</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install <strong>Android Auto</strong> from Play Store (often pre-installed).</li>
               <li>Plug the phone into the car USB.</li>
               <li>App walks you through pairing.</li>
@@ -50,7 +50,7 @@ export default function CarPlayAndroidAuto() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best things to do once it\'s working</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Hey Siri / Hey Google, take me home"</strong> — turn-by-turn directions on car screen.</li>
               <li><strong>"Send a text to Mary"</strong> — dictate hands-free; Siri / Google reads incoming texts aloud.</li>
               <li><strong>Spotify, Apple Music, Audible</strong> — controls all on the car screen.</li>
@@ -64,7 +64,7 @@ export default function CarPlayAndroidAuto() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If your car doesn\'t support it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Aftermarket head units</strong> from Pioneer, Kenwood, Sony — $200-600 installed. Replaces your factory radio.</li>
               <li><strong>Best Buy / Crutchfield install</strong> — $50-100 install fee.</li>
               <li><strong>Carlinkit Box</strong> — $80-130 plug-in adapter that adds wireless CarPlay/Android Auto to cars that already have wired support.</li>
@@ -76,7 +76,7 @@ export default function CarPlayAndroidAuto() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Driving safety</h3>
-            <p className="text-sm text-muted-foreground">Use VOICE for everything you can. Glancing at the screen is faster than fumbling for your phone, but voice is safest. Ask Siri or Google for directions, music, calls, texts. Set commands up before driving.</p>
+            <p className="text-base text-muted-foreground">Use VOICE for everything you can. Glancing at the screen is faster than fumbling for your phone, but voice is safest. Ask Siri or Google for directions, music, calls, texts. Set commands up before driving.</p>
           </CardContent>
         </Card>
       </main>

@@ -103,7 +103,7 @@ export default function PhishingLinkInspector() {
             <label className="font-medium">Paste the web link (URL)</label>
             <Input value={link} onChange={(e) => setLink(e.target.value)} placeholder="https://example.com/verify" onKeyDown={(e) => e.key === 'Enter' && run()} />
             <Button onClick={run} className="w-full" size="lg"><Search className="w-4 h-4 mr-2" />Check this link</Button>
-            <p className="text-xs text-muted-foreground flex items-start gap-2"><Info className="w-3 h-3 mt-0.5 shrink-0" />Your link never leaves your device. We do not save or send it anywhere.</p>
+            <p className="text-sm text-muted-foreground flex items-start gap-2"><Info className="w-3 h-3 mt-0.5 shrink-0" />Your link never leaves your device. We do not save or send it anywhere.</p>
           </CardContent>
         </Card>
 
@@ -112,8 +112,8 @@ export default function PhishingLinkInspector() {
             <Card className={`mb-6 border-2 ${verdict === 'danger' ? 'border-destructive' : verdict === 'warn' ? 'border-yellow-500' : 'border-green-600'}`}>
               <CardContent className="pt-6 text-center">
                 {verdict === 'danger' && <><AlertTriangle className="w-12 h-12 text-destructive mx-auto mb-2" /><h2 className="text-2xl font-bold text-destructive">Do not click this link</h2><p className="text-muted-foreground mt-1">We found {dangerCount} serious warning sign{dangerCount !== 1 ? 's' : ''}.</p></>}
-                {verdict === 'warn' && <><AlertTriangle className="w-12 h-12 text-yellow-600 mx-auto mb-2" /><h2 className="text-2xl font-bold text-yellow-700">Be careful with this link</h2><p className="text-muted-foreground mt-1">{warnCount} thing{warnCount !== 1 ? 's' : ''} look unusual. Only click if you trust the sender.</p></>}
-                {verdict === 'ok' && <><ShieldCheck className="w-12 h-12 text-green-600 mx-auto mb-2" /><h2 className="text-2xl font-bold text-green-700">No big red flags found</h2><p className="text-muted-foreground mt-1">Still — only visit links from people and companies you trust.</p></>}
+                {verdict === 'warn' && <><AlertTriangle className="w-12 h-12 text-warn-foreground mx-auto mb-2" /><h2 className="text-2xl font-bold text-warn-foreground">Be careful with this link</h2><p className="text-muted-foreground mt-1">{warnCount} thing{warnCount !== 1 ? 's' : ''} look unusual. Only click if you trust the sender.</p></>}
+                {verdict === 'ok' && <><ShieldCheck className="w-12 h-12 text-success-foreground mx-auto mb-2" /><h2 className="text-2xl font-bold text-success-foreground">No big red flags found</h2><p className="text-muted-foreground mt-1">Still — only visit links from people and companies you trust.</p></>}
               </CardContent>
             </Card>
 
@@ -122,9 +122,9 @@ export default function PhishingLinkInspector() {
                 <Card key={i} className={f.level === 'danger' ? 'border-destructive/50' : f.level === 'warn' ? 'border-yellow-500/50' : 'border-green-600/30'}>
                   <CardContent className="pt-4 flex gap-3">
                     {f.level === 'danger' && <AlertTriangle className="w-5 h-5 text-destructive shrink-0 mt-0.5" />}
-                    {f.level === 'warn' && <AlertTriangle className="w-5 h-5 text-yellow-600 shrink-0 mt-0.5" />}
-                    {f.level === 'ok' && <ShieldCheck className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />}
-                    <div><p className="font-semibold">{f.title}</p><p className="text-sm text-muted-foreground">{f.detail}</p></div>
+                    {f.level === 'warn' && <AlertTriangle className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />}
+                    {f.level === 'ok' && <ShieldCheck className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" />}
+                    <div><p className="font-semibold">{f.title}</p><p className="text-base text-muted-foreground">{f.detail}</p></div>
                   </CardContent>
                 </Card>
               ))}
@@ -133,7 +133,7 @@ export default function PhishingLinkInspector() {
             <Card className="mt-6 bg-muted/40">
               <CardContent className="pt-6">
                 <h3 className="font-bold mb-2">When in doubt</h3>
-                <ul className="text-sm space-y-1 list-disc pl-5 text-muted-foreground">
+                <ul className="text-base space-y-1 list-disc pl-5 text-muted-foreground">
                   <li>Don't click. Open a new tab and type the company name yourself.</li>
                   <li>Call the company using the phone number on your bill or the back of your card — not a number from the message.</li>
                   <li>Forward suspicious texts to <strong>7726</strong> (SPAM) and emails to <strong>reportphishing@apwg.org</strong>.</li>

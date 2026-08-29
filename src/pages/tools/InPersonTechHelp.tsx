@@ -34,10 +34,10 @@ export default function InPersonTechHelp() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -46,7 +46,7 @@ export default function InPersonTechHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Genius Bar — most underused</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Book at <strong>apple.com/retail</strong> → pick a store → "Get Help".</li>
               <li>Tell them what you need: "I want help setting up Family Sharing" or "Help me pair AirPods to my hearing aids".</li>
               <li>Bring your iPhone, iPad, or Mac.</li>
@@ -59,14 +59,14 @@ export default function InPersonTechHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">"Today at Apple" sessions</h2>
-            <p className="text-sm">Free in-store classes — Photo basics, iPhone basics, iPad creativity, even music-making. 30-90 minutes. Book at apple.com/today. Best free tech learning available.</p>
+            <p className="text-base">Free in-store classes — Photo basics, iPhone basics, iPad creativity, even music-making. 30-90 minutes. Book at apple.com/today. Best free tech learning available.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For ongoing help</h3>
-            <p className="text-sm text-muted-foreground">Best Buy\'s <strong>Total Tech ($200/year)</strong> covers unlimited Geek Squad help — install your TV, set up smart home, fix computer, configure printer. Pays for itself with one big install. Compare to local installer pricing first.</p>
+            <p className="text-base text-muted-foreground">Best Buy\'s <strong>Total Tech ($200/year)</strong> covers unlimited Geek Squad help — install your TV, set up smart home, fix computer, configure printer. Pays for itself with one big install. Compare to local installer pricing first.</p>
           </CardContent>
         </Card>
       </main>

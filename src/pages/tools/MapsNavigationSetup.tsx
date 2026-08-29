@@ -104,7 +104,7 @@ export default function MapsNavigationSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <MapPin className="h-8 w-8 text-blue-600" />
+                <MapPin className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Maps &amp; Navigation Setup</h1>
@@ -119,7 +119,7 @@ export default function MapsNavigationSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your maps app</p>
+              <p className="text-base font-semibold mb-3">Pick your maps app</p>
               <div className="grid sm:grid-cols-3 gap-2">
                 {([
                   { id: 'google' as App, label: 'Google Maps' },
@@ -130,7 +130,7 @@ export default function MapsNavigationSetup() {
                     className={`p-3 rounded-lg border text-left transition-all ${
                       app === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -144,7 +144,7 @@ export default function MapsNavigationSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-3 mb-2">Setup</p>
               <ol className="space-y-2 mb-4">
                 {guide.setup.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{s}</span>
                   </li>
@@ -155,8 +155,8 @@ export default function MapsNavigationSetup() {
               <div className="space-y-2">
                 {guide.pro.map((t, i) => (
                   <div key={i} className="p-3 rounded-lg border border-border">
-                    <p className="font-medium text-sm">{t.title}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{t.detail}</p>
+                    <p className="font-medium text-base">{t.title}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{t.detail}</p>
                   </div>
                 ))}
               </div>
@@ -168,8 +168,8 @@ export default function MapsNavigationSetup() {
             {SCENARIOS.map((s, i) => (
               <Card key={i} className="border-border">
                 <CardContent className="p-4">
-                  <p className="font-medium text-sm">{s.title}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{s.detail}</p>
+                  <p className="font-medium text-base">{s.title}</p>
+                  <p className="text-sm text-muted-foreground mt-1">{s.detail}</p>
                 </CardContent>
               </Card>
             ))}
@@ -177,8 +177,8 @@ export default function MapsNavigationSetup() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">If voice directions sound too quiet</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">If voice directions sound too quiet</p>
+              <p className="text-sm text-muted-foreground">
                 Pair your phone via Bluetooth to your car (see Car Phone Setup). Voice goes through the car speakers — much louder than the phone speaker. CarPlay and Android Auto both display the map on your car\'s screen too.
               </p>
             </CardContent>
@@ -188,16 +188,16 @@ export default function MapsNavigationSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/car-phone-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Car Phone Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">CarPlay / Android Auto for the road.</p>
+                <p className="font-medium text-base">Car Phone Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">CarPlay / Android Auto for the road.</p>
               </Link>
               <Link to="/tools/find-lost-items" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Find Lost Items</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For finding things, not places.</p>
+                <p className="font-medium text-base">Find Lost Items</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For finding things, not places.</p>
               </Link>
               <Link to="/tools/travel-tech-checklist" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Travel Tech Checklist</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pre-trip phone setup including offline maps.</p>
+                <p className="font-medium text-base">Travel Tech Checklist</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pre-trip phone setup including offline maps.</p>
               </Link>
             </div>
           </div>

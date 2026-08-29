@@ -132,7 +132,7 @@ export default function AmazonReviewSpotter() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-orange-500/10 rounded-full">
-                <ShoppingCart className="h-8 w-8 text-orange-600" />
+                <ShoppingCart className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Amazon Review Spotter</h1>
@@ -150,7 +150,7 @@ export default function AmazonReviewSpotter() {
               <div>
                 <Badge className="mb-1">{v.badge} ({score} pts)</Badge>
                 <p className="font-semibold text-lg">{v.label}</p>
-                <p className="text-sm text-muted-foreground mt-1">{v.explain}</p>
+                <p className="text-base text-muted-foreground mt-1">{v.explain}</p>
               </div>
               {flagged.size > 0 && (
                 <Button variant="ghost" size="sm" onClick={() => setFlagged(new Set())}>Reset</Button>
@@ -169,8 +169,8 @@ export default function AmazonReviewSpotter() {
                     }`}>
                     <Checkbox checked={flagged.has(f.id)} onCheckedChange={() => toggle(f.id)} className="mt-1" />
                     <div className="flex-1">
-                      <p className="font-medium text-sm">{f.question}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{f.detail}</p>
+                      <p className="font-medium text-base">{f.question}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{f.detail}</p>
                     </div>
                   </label>
                 ))}
@@ -180,8 +180,8 @@ export default function AmazonReviewSpotter() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Two free tools that go deeper</p>
-              <ul className="space-y-2 text-sm">
+              <p className="text-base font-semibold mb-2">Two free tools that go deeper</p>
+              <ul className="space-y-2 text-base">
                 <li className="flex gap-2">
                   <Star className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                   <div>
@@ -206,9 +206,9 @@ export default function AmazonReviewSpotter() {
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20">
+          <Card className="border-warn-foreground/25 bg-warn ">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">The 3-star review trick</p>
                 <p className="text-muted-foreground">
@@ -222,20 +222,20 @@ export default function AmazonReviewSpotter() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For text and email scams.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For text and email scams.</p>
               </Link>
               <Link to="/tools/refund-and-return-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Refund &amp; Return Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">If a purchase was a mistake.</p>
+                <p className="font-medium text-base">Refund &amp; Return Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">If a purchase was a mistake.</p>
               </Link>
               <Link to="/tools/bill-negotiator" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Bill Negotiator</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Negotiate bills you already have.</p>
+                <p className="font-medium text-base">Bill Negotiator</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Negotiate bills you already have.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: when in doubt, pay an extra $20 for a brand you have heard of. The fake-review premium on cheap gadgets is bigger than it looks.
           </p>
         </div>

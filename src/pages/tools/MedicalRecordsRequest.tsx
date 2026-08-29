@@ -19,7 +19,7 @@ export default function MedicalRecordsRequest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Your rights (HIPAA)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Federal law guarantees access to YOUR records.</li>
               <li>Provider must respond in 30 days (one 30-day extension allowed).</li>
               <li>Can charge a "reasonable fee" — usually $0-50 for digital, $50-200 for paper.</li>
@@ -33,7 +33,7 @@ export default function MedicalRecordsRequest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easiest method — patient portals</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>MyChart</strong> (Epic) — used by 60%+ of US hospitals. Free.</li>
               <li><strong>FollowMyHealth</strong> — second biggest portal.</li>
               <li><strong>HealtheLife / NextGen</strong> — other common portals.</li>
@@ -46,7 +46,7 @@ export default function MedicalRecordsRequest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Request paper records (old providers)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Find provider&apos;s "Records" or "Release of Information" department.</li>
               <li>Fill out HIPAA Authorization form (download from their website).</li>
               <li>Specify: dates, types of records, how to send (digital, paper, fax).</li>
@@ -60,20 +60,20 @@ export default function MedicalRecordsRequest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Combine portals into one app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Health</strong> (iPhone) — connects to most US hospital portals. View all records in one place.</li>
               <li><strong>Google Health (limited)</strong> — Android partial support.</li>
               <li><strong>Healow</strong> — combines multiple portals.</li>
               <li><strong>MyMedicalLocker</strong> — paper-and-digital combiner.</li>
             </ul>
-            <p className="text-sm mt-3">In Apple Health: Browse → Medical Records → Add Account → search for hospital → log in.</p>
+            <p className="text-base mt-3">In Apple Health: Browse → Medical Records → Add Account → search for hospital → log in.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why bother</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>New doctor sees your full history → better diagnoses.</li>
               <li>Avoid duplicate tests ($300-3,000 each).</li>
               <li>Catch errors in records (15% have errors).</li>
@@ -87,7 +87,7 @@ export default function MedicalRecordsRequest() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Build your own health folder</h3>
-            <p className="text-sm text-muted-foreground">Once a year — download 12 months of records from each portal. Save in a folder labeled "[Year] Medical Records" on iCloud or Google Drive. Share access with spouse + adult kids. If something happens, family can hand records to ER doctor in 30 seconds.</p>
+            <p className="text-base text-muted-foreground">Once a year — download 12 months of records from each portal. Save in a folder labeled "[Year] Medical Records" on iCloud or Google Drive. Share access with spouse + adult kids. If something happens, family can hand records to ER doctor in 30 seconds.</p>
           </CardContent>
         </Card>
       </main>

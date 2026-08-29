@@ -19,7 +19,7 @@ export default function GardenClubFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">National Garden Clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>165,000 members across 50 states.</li>
               <li>5,000+ local chapters.</li>
               <li>Find at <strong>gardenclub.org</strong> — search by state.</li>
@@ -33,7 +33,7 @@ export default function GardenClubFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Specialty groups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>American Rose Society</strong> — local rose societies.</li>
               <li><strong>American Iris Society</strong> — local iris groups.</li>
               <li><strong>African Violet Society</strong>.</li>
@@ -47,7 +47,7 @@ export default function GardenClubFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Master Gardener (advanced)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>USDA-certified Cooperative Extension program.</li>
               <li>40-50 hr training + 40-50 volunteer hours.</li>
               <li>$100-200 cost. Training value $2-3K.</li>
@@ -60,7 +60,7 @@ export default function GardenClubFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Community garden plots</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most cities have community gardens.</li>
               <li>$25-100/year for 4×8 plot.</li>
               <li>Built-in community.</li>
@@ -73,7 +73,7 @@ export default function GardenClubFinder() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Online garden community</h3>
-            <p className="text-sm text-muted-foreground"><strong>r/gardening</strong> (Reddit) — friendly community. <strong>Garden Tags app</strong> — share photos. <strong>iNaturalist</strong> — identify + log plants. Free + active 24/7. Best for those without local club.</p>
+            <p className="text-base text-muted-foreground"><strong>r/gardening</strong> (Reddit) — friendly community. <strong>Garden Tags app</strong> — share photos. <strong>iNaturalist</strong> — identify + log plants. Free + active 24/7. Best for those without local club.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorPhotoSharing() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Facebook</h2><p>Post photos to your timeline or in family group. All Facebook friends can see.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Email</h2><p>Best for 1-5 photos. Many at once may bounce.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Privacy</h2><p>Don&apos;t post photos with location turned on. Disable in iPhone Settings → Privacy → Location → Camera.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: A shared album is best for grandparents — photos appear automatically when family adds them.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: A shared album is best for grandparents — photos appear automatically when family adds them.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

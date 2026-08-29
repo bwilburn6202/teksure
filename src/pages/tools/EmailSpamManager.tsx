@@ -449,14 +449,14 @@ export default function EmailSpamManager() {
               <div className="flex items-center gap-4">
                 <div className="relative">
                   <div className="p-4 bg-amber-500/15 rounded-2xl ring-1 ring-amber-500/20">
-                    <Mail className="h-10 w-10 text-amber-700 dark:text-amber-300" />
+                    <Mail className="h-10 w-10 text-warn-foreground " />
                   </div>
-                  <div className="absolute -bottom-1 -right-1 p-1.5 bg-white dark:bg-zinc-900 rounded-full border border-amber-300">
-                    <Trash2 className="h-4 w-4 text-red-600" />
+                  <div className="absolute -bottom-1 -right-1 p-1.5 bg-card rounded-full border border-warn-foreground/25">
+                    <Trash2 className="h-4 w-4 text-danger-foreground" />
                   </div>
                 </div>
                 <div>
-                  <Badge variant="outline" className="mb-2 border-amber-400/60 text-amber-800 dark:text-amber-200 bg-white/50 dark:bg-amber-950/40">
+                  <Badge variant="outline" className="mb-2 border-amber-400/60 text-warn-foreground bg-white/50 dark:bg-amber-950/40">
                     Guide + Tool
                   </Badge>
                   <h1 className="text-3xl md:text-4xl font-bold text-foreground">
@@ -496,10 +496,10 @@ export default function EmailSpamManager() {
                     <CardContent className="p-5 flex items-start gap-4 h-full">
                       <div className="text-4xl shrink-0" aria-hidden>{p.emoji}</div>
                       <div className="flex-1 min-w-0">
-                        <h3 className="font-semibold text-lg mb-1 group-hover:text-amber-700 dark:group-hover:text-amber-300 transition-colors">
+                        <h3 className="font-semibold text-lg mb-1 group-hover:text-warn-foreground transition-colors">
                           {p.name}
                         </h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">{p.tagline}</p>
+                        <p className="text-base text-muted-foreground leading-relaxed">{p.tagline}</p>
                       </div>
                     </CardContent>
                   </Card>
@@ -543,7 +543,7 @@ export default function EmailSpamManager() {
                     className={`inline-flex items-center gap-2 px-4 min-h-11 rounded-full border text-sm font-medium transition-colors
                       ${active
                         ? 'bg-amber-500 text-white border-amber-500 shadow-sm'
-                        : 'bg-white dark:bg-zinc-900 border-border hover:border-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/30'
+                        : 'bg-white border-border hover:border-amber-400 hover:bg-warn dark:hover:bg-amber-950/30'
                       }`}
                   >
                     <Icon className="h-4 w-4" />
@@ -561,7 +561,7 @@ export default function EmailSpamManager() {
               <CardContent className="p-5 flex flex-col sm:flex-row sm:items-center gap-3 justify-between">
                 <div>
                   <h4 className="font-semibold mb-1">Need more help from {selected.name}?</h4>
-                  <p className="text-sm text-muted-foreground">The official help site has screenshots and short videos.</p>
+                  <p className="text-base text-muted-foreground">The official help site has screenshots and short videos.</p>
                 </div>
                 <Button asChild variant="outline" className="min-h-11 shrink-0">
                   <a href={selected.support.url} target="_blank" rel="noopener noreferrer">
@@ -600,7 +600,7 @@ function ProviderSectionSteps({ section }: { section: ProviderSection }) {
     <Card className="border-2 border-amber-200/70 dark:border-amber-900/40">
       <CardContent className="p-6">
         <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-          <ListChecks className="h-5 w-5 text-amber-600" />
+          <ListChecks className="h-5 w-5 text-warn-foreground" />
           {section.title}
         </h3>
         <ol className="space-y-4">
@@ -657,7 +657,7 @@ function GoldenRulesCard() {
     <Card className="mt-8 border-2 border-amber-300/70 dark:border-amber-800/50 bg-amber-50/50 dark:bg-amber-950/20">
       <CardContent className="p-6">
         <div className="flex items-center gap-2 mb-4">
-          <Sparkles className="h-5 w-5 text-amber-600" />
+          <Sparkles className="h-5 w-5 text-warn-foreground" />
           <h3 className="text-xl font-bold">The golden rules</h3>
         </div>
         <ul className="space-y-3">
@@ -691,8 +691,8 @@ function RedFlagsCard() {
     <Card className="border-red-300/70 dark:border-red-900/50 bg-red-50/40 dark:bg-red-950/20">
       <CardContent className="p-6">
         <div className="flex items-center gap-2 mb-2">
-          <AlertTriangle className="h-5 w-5 text-red-600" />
-          <h3 className="text-xl font-bold text-red-900 dark:text-red-200">Red flags that mean "phishing scam"</h3>
+          <AlertTriangle className="h-5 w-5 text-danger-foreground" />
+          <h3 className="text-xl font-bold text-danger-foreground ">Red flags that mean "phishing scam"</h3>
         </div>
         <p className="text-base text-muted-foreground mb-4">
           If an email has ANY of these, treat it as a scam. Don\'t click anything — mark it as spam.
@@ -700,7 +700,7 @@ function RedFlagsCard() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {flags.map((f, i) => (
             <div key={i} className="flex gap-3">
-              <AlertTriangle className="h-4 w-4 text-red-500 shrink-0 mt-1" />
+              <AlertTriangle className="h-4 w-4 text-danger-foreground shrink-0 mt-1" />
               <div>
                 <p className="font-semibold text-base">{f.title}</p>
                 <p className="text-base text-muted-foreground leading-relaxed">{f.detail}</p>
@@ -708,13 +708,13 @@ function RedFlagsCard() {
             </div>
           ))}
         </div>
-        <div className="mt-5 p-4 rounded-lg bg-white dark:bg-zinc-900 border border-red-200 dark:border-red-900/40 flex items-start gap-3">
-          <ShieldCheck className="h-5 w-5 text-green-600 shrink-0 mt-0.5" />
+        <div className="mt-5 p-4 rounded-lg bg-card border border-danger-foreground/25 flex items-start gap-3">
+          <ShieldCheck className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" />
           <div className="flex-1">
             <p className="font-semibold text-base mb-1">Not sure about a specific link?</p>
             <p className="text-base text-muted-foreground">
               Paste it into our{' '}
-              <Link to="/tools/phishing-scanner" className="text-amber-700 dark:text-amber-300 underline font-medium">
+              <Link to="/tools/phishing-scanner" className="text-warn-foreground underline font-medium">
                 Phishing Scanner
               </Link>
               {' '}to check for warning signs before you click.
@@ -731,7 +731,7 @@ function PromotionalEmailsCard() {
     <Card className="border-2 border-blue-200/60 dark:border-blue-900/40">
       <CardContent className="p-6">
         <div className="flex items-center gap-2 mb-2">
-          <Inbox className="h-5 w-5 text-blue-600" />
+          <Inbox className="h-5 w-5 text-info-foreground" />
           <h3 className="text-xl font-bold">What about promotional emails I actually want?</h3>
         </div>
         <p className="text-base text-muted-foreground mb-5">
@@ -784,7 +784,7 @@ function WeeklyRoutineCard() {
     <Card className="border-2 border-green-300/60 dark:border-green-900/40 bg-green-50/30 dark:bg-green-950/20">
       <CardContent className="p-6">
         <div className="flex items-center gap-2 mb-2">
-          <ListChecks className="h-5 w-5 text-green-700 dark:text-green-400" />
+          <ListChecks className="h-5 w-5 text-success-foreground " />
           <h3 className="text-xl font-bold">5-minute weekly cleanup routine</h3>
         </div>
         <p className="text-base text-muted-foreground mb-5">
@@ -793,7 +793,7 @@ function WeeklyRoutineCard() {
 
         <ol className="space-y-3">
           {tasks.map((t, i) => (
-            <li key={i} className="flex gap-3 p-3 rounded-lg bg-white dark:bg-zinc-900 border border-border">
+            <li key={i} className="flex gap-3 p-3 rounded-lg bg-card border border-border">
               <div
                 aria-hidden
                 className="flex-shrink-0 h-8 w-8 rounded-full bg-green-600 text-white font-bold flex items-center justify-center text-sm"
@@ -854,10 +854,10 @@ function RelatedToolsCard() {
               className="block p-4 rounded-lg border border-border hover:border-amber-400 hover:bg-amber-50/40 dark:hover:bg-amber-950/20 transition-colors min-h-14"
             >
               <div className="flex items-start gap-3">
-                <Icon className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                <Icon className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                 <div>
                   <p className="font-semibold text-base">{label}</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{desc}</p>
                 </div>
               </div>
             </Link>

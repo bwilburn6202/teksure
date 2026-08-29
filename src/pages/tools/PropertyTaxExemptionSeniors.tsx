@@ -19,7 +19,7 @@ export default function PropertyTaxExemptionSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What programs exist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Homestead exemption — reduces taxable home value.</li>
               <li>Senior exemption — additional reduction for 65+.</li>
               <li>Tax freeze — locks property tax at current amount.</li>
@@ -33,7 +33,7 @@ export default function PropertyTaxExemptionSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Who typically qualifies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Age 65+ (some states 62+).</li>
               <li>Own and live in the home as primary residence.</li>
               <li>Income below a certain limit — varies by state.</li>
@@ -47,7 +47,7 @@ export default function PropertyTaxExemptionSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to apply</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Contact your county assessor&apos;s office.</li>
               <li>Search: &quot;[your county] senior property tax exemption.&quot;</li>
               <li>Most counties have online application.</li>
@@ -61,7 +61,7 @@ export default function PropertyTaxExemptionSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Documents typically needed</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Proof of age — birth certificate or driver&apos;s license.</li>
               <li>Proof of residency — utility bill, voter registration.</li>
               <li>Property deed — to prove ownership.</li>
@@ -75,7 +75,7 @@ export default function PropertyTaxExemptionSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How much can you save?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Varies widely — $200 to $2,000+ per year.</li>
               <li>Tax freeze can save thousands over 20+ years.</li>
               <li>Illinois example: senior freeze saves average $1,000/year.</li>
@@ -89,7 +89,7 @@ export default function PropertyTaxExemptionSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other homeowner benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Energy efficiency rebates — weatherization programs.</li>
               <li>LIHEAP — heating and cooling bill assistance.</li>
               <li>HUD home repair grants for seniors.</li>
@@ -103,7 +103,7 @@ export default function PropertyTaxExemptionSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Most seniors never apply</h3>
-            <p className="text-sm text-muted-foreground">Studies show the majority of eligible seniors never apply for property tax exemptions. The programs exist, the money is there, but the application never gets filed. One 20-minute call to your county assessor&apos;s office can result in hundreds of dollars in annual savings — every year, as long as you live there. Look up your county assessor online and call this week.</p>
+            <p className="text-base text-muted-foreground">Studies show the majority of eligible seniors never apply for property tax exemptions. The programs exist, the money is there, but the application never gets filed. One 20-minute call to your county assessor&apos;s office can result in hundreds of dollars in annual savings — every year, as long as you live there. Look up your county assessor online and call this week.</p>
           </CardContent>
         </Card>
       </main>

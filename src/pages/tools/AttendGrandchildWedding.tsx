@@ -19,7 +19,7 @@ export default function AttendGrandchildWedding() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Travel planning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Book flights early.</li>
               <li>Direct flights — fewer transfers.</li>
               <li>Aisle seat — bathroom access.</li>
@@ -34,7 +34,7 @@ export default function AttendGrandchildWedding() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wedding day comfort</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Comfortable shoes (not fancy painful).</li>
               <li>Layers (venues vary in temperature).</li>
               <li>Cane / walker if needed.</li>
@@ -49,7 +49,7 @@ export default function AttendGrandchildWedding() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photo opportunities</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family generations photo.</li>
               <li>Grandparent + grandchild.</li>
               <li>Tell photographer in advance.</li>
@@ -63,7 +63,7 @@ export default function AttendGrandchildWedding() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior gift ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family heirloom (gold + meaning).</li>
               <li>Letter of life advice.</li>
               <li>Family photo album.</li>
@@ -78,7 +78,7 @@ export default function AttendGrandchildWedding() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If can&apos;t attend physically</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Video message played at reception.</li>
               <li>FaceTime during ceremony.</li>
               <li>Send heartfelt letter.</li>
@@ -92,7 +92,7 @@ export default function AttendGrandchildWedding() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Push if you can</h3>
-            <p className="text-sm text-muted-foreground">Many seniors regret missing weddings. Health permitting — make trip work. Family helps with logistics. Wheelchair, oxygen, special diets accommodated. Lifetime memory. Don&apos;t let perfect be enemy of good. Even attending part = wonderful.</p>
+            <p className="text-base text-muted-foreground">Many seniors regret missing weddings. Health permitting — make trip work. Family helps with logistics. Wheelchair, oxygen, special diets accommodated. Lifetime memory. Don&apos;t let perfect be enemy of good. Even attending part = wonderful.</p>
           </CardContent>
         </Card>
       </main>

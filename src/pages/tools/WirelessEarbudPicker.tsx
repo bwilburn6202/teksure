@@ -32,10 +32,10 @@ export default function WirelessEarbudPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm mb-1"><strong>Best for:</strong> {p.best}</p>
-                <p className="text-sm text-muted-foreground"><strong>Watch out:</strong> {p.cons}</p>
+                <p className="text-base mb-1"><strong>Best for:</strong> {p.best}</p>
+                <p className="text-base text-muted-foreground"><strong>Watch out:</strong> {p.cons}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,21 +44,21 @@ export default function WirelessEarbudPicker() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Earbuds as hearing aids (yes, really)</h2>
-            <p className="text-sm mb-2"><strong>AirPods Pro 2 with iOS 18+</strong> are FDA-approved as over-the-counter hearing aids for mild-to-moderate hearing loss.</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2"><strong>AirPods Pro 2 with iOS 18+</strong> are FDA-approved as over-the-counter hearing aids for mild-to-moderate hearing loss.</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Settings → Accessibility → Hearing → Hearing Aid Mode.</li>
               <li>Take the included Apple hearing test.</li>
               <li>AirPods adjust to your hearing profile.</li>
               <li>"Live Listen" — turn on, then place iPhone near the speaker (across the table at dinner). AirPods amplify the sound.</li>
             </ol>
-            <p className="text-sm mt-2 bg-muted/50 p-3 rounded">$249 vs $2,000-$5,000 for traditional hearing aids. For mild hearing loss, this is a real game-changer.</p>
+            <p className="text-base mt-2 bg-muted/50 p-3 rounded">$249 vs $2,000-$5,000 for traditional hearing aids. For mild hearing loss, this is a real game-changer.</p>
           </CardContent>
         </Card>
 
         <Card className="mt-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for buying</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Match your phone — AirPods truly shine on iPhone; Galaxy Buds on Samsung.</li>
               <li>Try them in store. Apple Store and Best Buy let you test.</li>
               <li>Black Friday and Prime Day usually have $30-50 off AirPods.</li>
@@ -71,7 +71,7 @@ export default function WirelessEarbudPicker() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Earbud or over-ear?</h3>
-            <p className="text-sm text-muted-foreground">Over-ear headphones (Sony WH-1000XM5, Bose QuietComfort, Apple AirPods Max) sound better and last longer per charge but are bulkier. Worth it for long flights and home listening; earbuds win for everyday use, walks, and travel.</p>
+            <p className="text-base text-muted-foreground">Over-ear headphones (Sony WH-1000XM5, Bose QuietComfort, Apple AirPods Max) sound better and last longer per charge but are bulkier. Worth it for long flights and home listening; earbuds win for everyday use, walks, and travel.</p>
           </CardContent>
         </Card>
       </main>

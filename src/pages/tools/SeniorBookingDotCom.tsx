@@ -20,9 +20,9 @@ export default function SeniorBookingDotCom() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free cancellation</h2><p>Filter for &ldquo;free cancellation&rdquo; — change plans without penalty.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Read reviews</h2><p>Filter by &ldquo;Solo travelers&rdquo; or &ldquo;Older couples&rdquo; for senior-relevant feedback.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Genius rewards</h2><p>Free. Sign up — automatic 10-15% discounts after a few stays.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior watch-outs</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Hidden resort fees</li><li>Stairs without elevator</li><li>Far-from-airport &ldquo;deals&rdquo;</li><li>Photos different from reality</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior watch-outs</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Hidden resort fees</li><li>Stairs without elevator</li><li>Far-from-airport &ldquo;deals&rdquo;</li><li>Photos different from reality</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Alternatives</h2><p>Hotels.com, Expedia, AARP travel discounts. Compare 2-3 sites.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Book directly with hotel after seeing Booking.com price. Often matches and includes loyalty perks.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Book directly with hotel after seeing Booking.com price. Often matches and includes loyalty perks.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

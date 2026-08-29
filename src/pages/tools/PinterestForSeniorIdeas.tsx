@@ -19,7 +19,7 @@ export default function PinterestForSeniorIdeas() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What Pinterest does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Save ideas as &quot;pins&quot; to boards.</li>
               <li>Visual search engine.</li>
               <li>Free.</li>
@@ -33,7 +33,7 @@ export default function PinterestForSeniorIdeas() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best uses for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Recipe collections.</li>
               <li>Garden planning ideas.</li>
               <li>Craft inspiration.</li>
@@ -47,7 +47,7 @@ export default function PinterestForSeniorIdeas() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Build boards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Create boards by topic.</li>
               <li>&quot;Christmas Cookies&quot; board.</li>
               <li>&quot;Garden Plans 2026.&quot;</li>
@@ -61,7 +61,7 @@ export default function PinterestForSeniorIdeas() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Search visually</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Take photo of object.</li>
               <li>Pinterest Lens finds similar.</li>
               <li>&quot;Where can I find shoes like these?&quot;</li>
@@ -75,7 +75,7 @@ export default function PinterestForSeniorIdeas() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-popular boards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Quilt patterns.</li>
               <li>Knitting projects.</li>
               <li>Holiday cards.</li>
@@ -89,7 +89,7 @@ export default function PinterestForSeniorIdeas() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid distraction</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pinterest can be addictive.</li>
               <li>Set daily time limit.</li>
               <li>Pin with intent — for actual projects.</li>
@@ -103,7 +103,7 @@ export default function PinterestForSeniorIdeas() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Inspiration on tap</h3>
-            <p className="text-sm text-muted-foreground">Pinterest is wonderful for visual inspiration. Plan your garden, find new recipes, design holiday cards, organize travel dreams. Free, beautiful, useful. Just don&apos;t spend hours pinning things you&apos;ll never make. Set 30-minute daily limit. Use what you save.</p>
+            <p className="text-base text-muted-foreground">Pinterest is wonderful for visual inspiration. Plan your garden, find new recipes, design holiday cards, organize travel dreams. Free, beautiful, useful. Just don&apos;t spend hours pinning things you&apos;ll never make. Set 30-minute daily limit. Use what you save.</p>
           </CardContent>
         </Card>
       </main>

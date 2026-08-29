@@ -20,7 +20,7 @@ export function ContentBadge(props: ContentBadgeProps) {
   if (props.type === 'original') {
     return (
       <span
-        className={`inline-flex items-center gap-1 rounded-full font-medium bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300 border border-blue-200 dark:border-blue-800 ${
+        className={`inline-flex items-center gap-1 rounded-full font-medium bg-info text-info-foreground border border-info-foreground/25 ${
           isSmall ? 'text-xs px-2 py-0.5' : 'text-xs px-2.5 py-1'
         }`}
         aria-label="TekSure Original content"
@@ -36,7 +36,7 @@ export function ContentBadge(props: ContentBadgeProps) {
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 rounded-full font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 ${
+      className={`inline-flex items-center gap-1.5 rounded-full font-medium bg-success text-success-foreground border border-success-foreground/25 ${
         isSmall ? 'text-xs px-2 py-0.5' : 'text-xs px-2.5 py-1'
       }`}
       aria-label={`Simplified from ${source.name}`}

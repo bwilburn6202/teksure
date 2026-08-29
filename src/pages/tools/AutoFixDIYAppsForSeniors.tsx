@@ -19,7 +19,7 @@ export default function AutoFixDIYAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">OBD-II scanner</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Plug under steering wheel.</li>
               <li>$30-$100 for Bluetooth scanner.</li>
               <li>Connects to phone app.</li>
@@ -33,7 +33,7 @@ export default function AutoFixDIYAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouTube auto fix</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ChrisFix — most popular.</li>
               <li>ScannerDanner — diagnostics.</li>
               <li>Search your make/model + problem.</li>
@@ -47,7 +47,7 @@ export default function AutoFixDIYAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RepairPal</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Repair cost estimates.</li>
               <li>Find certified mechanics.</li>
               <li>Read shop reviews.</li>
@@ -61,7 +61,7 @@ export default function AutoFixDIYAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior DIY ok</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Air filter replacement.</li>
               <li>Wiper blades.</li>
               <li>Battery testing.</li>
@@ -75,7 +75,7 @@ export default function AutoFixDIYAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Take to mechanic</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Brakes.</li>
               <li>Anything under car.</li>
               <li>Engine work.</li>
@@ -89,7 +89,7 @@ export default function AutoFixDIYAppsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vetting mechanics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>RepairPal certified shops.</li>
               <li>BBB rated.</li>
               <li>Yelp + Google reviews.</li>
@@ -103,7 +103,7 @@ export default function AutoFixDIYAppsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">$30 OBD scanner saves $$</h3>
-            <p className="text-sm text-muted-foreground">Buy $30 BlueDriver OBD-II Bluetooth scanner. When check engine light comes on, plug in, see code, Google what it means. Often a sensor issue ($50 part), not engine failure ($3,000). Many seniors save thousands on unneeded mechanic visits. Free DIY help via YouTube.</p>
+            <p className="text-base text-muted-foreground">Buy $30 BlueDriver OBD-II Bluetooth scanner. When check engine light comes on, plug in, see code, Google what it means. Often a sensor issue ($50 part), not engine failure ($3,000). Many seniors save thousands on unneeded mechanic visits. Free DIY help via YouTube.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorOsteoporosisTracking() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Weight-bearing exercise</h2><p>Walking, dancing, light weights. 30 min, 3x weekly. Builds bone density.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medications</h2><p>Bisphosphonates. Prolia. Forteo. Doctor decides based on fracture risk.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Track in Apple Health</h2><p>FREE. Log calcium, exercise, BMD. Pattern over years.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Hip fracture from fall = 25% mortality within 1 year. Bones matter.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Hip fracture from fall = 25% mortality within 1 year. Bones matter.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

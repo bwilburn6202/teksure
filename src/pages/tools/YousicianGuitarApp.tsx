@@ -19,7 +19,7 @@ export default function YousicianGuitarApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Yousician?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>App that teaches guitar, piano, ukulele, voice, bass.</li>
               <li>Listens through phone microphone.</li>
               <li>Gives real-time feedback as you play.</li>
@@ -33,7 +33,7 @@ export default function YousicianGuitarApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Place phone or tablet on music stand.</li>
               <li>App shows tablature and chord diagrams.</li>
               <li>You play — app listens via microphone.</li>
@@ -47,7 +47,7 @@ export default function YousicianGuitarApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free — limited daily practice time.</li>
               <li>Premium: $19.99/month or $179.88/year.</li>
               <li>Premium+: covers all instruments.</li>
@@ -61,7 +61,7 @@ export default function YousicianGuitarApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for senior beginners</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No teacher embarrassment.</li>
               <li>Practice your favorite songs from start.</li>
               <li>Beatles, classic rock, country in library.</li>
@@ -75,7 +75,7 @@ export default function YousicianGuitarApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Need a guitar?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Beginner acoustic — Yamaha FG800 ($230).</li>
               <li>Even cheaper — Donner DAG-1C ($90).</li>
               <li>Used guitars great on Facebook Marketplace.</li>
@@ -89,7 +89,7 @@ export default function YousicianGuitarApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other guitar apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fender Play — $14.99/month, polished lessons.</li>
               <li>JustinGuitar — completely free, beloved teacher.</li>
               <li>Ultimate Guitar — chord library + tabs.</li>
@@ -103,7 +103,7 @@ export default function YousicianGuitarApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try JustinGuitar first — it&apos;s free</h3>
-            <p className="text-sm text-muted-foreground">Before paying for Yousician, try JustinGuitar.com — Justin Sandercoe has built the most loved free beginner guitar course on the internet. Hundreds of structured video lessons, all free. If you want the gamified app experience with mic-listening, then Yousician is excellent. Either way: pick your favorite Beatles song, that&apos;s your first goal. Most can play it within 8 weeks.</p>
+            <p className="text-base text-muted-foreground">Before paying for Yousician, try JustinGuitar.com — Justin Sandercoe has built the most loved free beginner guitar course on the internet. Hundreds of structured video lessons, all free. If you want the gamified app experience with mic-listening, then Yousician is excellent. Either way: pick your favorite Beatles song, that&apos;s your first goal. Most can play it within 8 weeks.</p>
           </CardContent>
         </Card>
       </main>

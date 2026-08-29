@@ -19,7 +19,7 @@ export default function EchoShowForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Echo Show?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Amazon&apos;s smart speaker WITH screen.</li>
               <li>Echo Show 5 ($85), Echo Show 8 ($150), Echo Show 15 ($280).</li>
               <li>Voice + touch control.</li>
@@ -33,7 +33,7 @@ export default function EchoShowForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best uses for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Video call grandkids — &quot;Drop In&quot; feature.</li>
               <li>Display rotating photos.</li>
               <li>Watch recipe videos in kitchen.</li>
@@ -47,7 +47,7 @@ export default function EchoShowForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drop In feature</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family video calls without answer needed.</li>
               <li>Connects automatically.</li>
               <li>Like a video intercom.</li>
@@ -61,7 +61,7 @@ export default function EchoShowForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photo display</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Connect Amazon Photos.</li>
               <li>Family uploads photos to your account.</li>
               <li>Latest photos auto-display when idle.</li>
@@ -75,7 +75,7 @@ export default function EchoShowForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior accessibility</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Large text mode.</li>
               <li>Voice control everything.</li>
               <li>Color contrast options.</li>
@@ -89,7 +89,7 @@ export default function EchoShowForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Echo Hub for big families</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Echo Hub ($180) — wall-mounted control center.</li>
               <li>8-inch screen.</li>
               <li>Smart home control center.</li>
@@ -103,7 +103,7 @@ export default function EchoShowForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Echo Show 8 hits sweet spot</h3>
-            <p className="text-sm text-muted-foreground">For most senior homes, the Echo Show 8 ($150 or often $100 on sale) is the right pick. Bigger screen than Show 5 makes video calls genuinely usable. Smaller than Show 15 for kitchen counter or bedside. Combined with Drop In for family check-ins, it&apos;s the most-recommended smart device for seniors. Great gift from adult children to parents.</p>
+            <p className="text-base text-muted-foreground">For most senior homes, the Echo Show 8 ($150 or often $100 on sale) is the right pick. Bigger screen than Show 5 makes video calls genuinely usable. Smaller than Show 15 for kitchen counter or bedside. Combined with Drop In for family check-ins, it&apos;s the most-recommended smart device for seniors. Great gift from adult children to parents.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function ChessComForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Chess.com?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Largest chess site — 150 million members.</li>
               <li>Free with optional premium.</li>
               <li>Play vs computer or humans.</li>
@@ -33,7 +33,7 @@ export default function ChessComForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Game speeds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bullet — 1 minute games (intense).</li>
               <li>Blitz — 3–5 minute games.</li>
               <li>Rapid — 10–30 minutes (most popular).</li>
@@ -47,7 +47,7 @@ export default function ChessComForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Computer opponents</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>10 difficulty levels — 200 to 3000 ELO.</li>
               <li>Start at lowest, work up.</li>
               <li>No pressure of human opponent.</li>
@@ -61,7 +61,7 @@ export default function ChessComForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lessons + improvement</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free lessons for beginners.</li>
               <li>Premium ($14/month) — extensive video courses.</li>
               <li>Daily puzzles (free).</li>
@@ -75,7 +75,7 @@ export default function ChessComForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lichess — free alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>100% free, no premium tier.</li>
               <li>Open source nonprofit.</li>
               <li>Same features as Chess.com Premium.</li>
@@ -89,7 +89,7 @@ export default function ChessComForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for senior chess</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Play Daily games — no time pressure.</li>
               <li>Tablet larger than phone — easier on eyes.</li>
               <li>Set difficulty just at your level.</li>
@@ -103,7 +103,7 @@ export default function ChessComForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Daily games are best for seniors</h3>
-            <p className="text-sm text-muted-foreground">Skip blitz games — they cause stress. Play 2-3 Daily games at once. Make a move when you have time, opponent makes theirs when they do. Games last days. No pressure. Excellent brain exercise. Many seniors find this calmer rhythm aligns with their lifestyle while still enjoying competitive chess.</p>
+            <p className="text-base text-muted-foreground">Skip blitz games — they cause stress. Play 2-3 Daily games at once. Make a move when you have time, opponent makes theirs when they do. Games last days. No pressure. Excellent brain exercise. Many seniors find this calmer rhythm aligns with their lifestyle while still enjoying competitive chess.</p>
           </CardContent>
         </Card>
       </main>

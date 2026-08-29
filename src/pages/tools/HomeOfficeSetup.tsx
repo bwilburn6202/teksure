@@ -314,7 +314,7 @@ export default function HomeOfficeSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-indigo-500/10 rounded-full">
-                <Monitor className="h-8 w-8 text-indigo-600" />
+                <Monitor className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Home Office Setup</h1>
@@ -329,14 +329,14 @@ export default function HomeOfficeSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-1">How to use this page</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-1">How to use this page</p>
+              <p className="text-sm text-muted-foreground">
                 Each section below has two picks: a well-reviewed mid-priced option and a budget option that still does the job. Tick the box once you have made your choice in that category — your progress saves while you read.
               </p>
             </CardContent>
           </Card>
 
-          <p className="text-sm text-muted-foreground mb-3">{done.size} of {CATEGORIES.length} categories decided</p>
+          <p className="text-base text-muted-foreground mb-3">{done.size} of {CATEGORIES.length} categories decided</p>
 
           <div className="space-y-4 mb-6">
             {CATEGORIES.map(cat => (
@@ -352,25 +352,25 @@ export default function HomeOfficeSetup() {
                       <p className={`font-semibold text-lg ${done.has(cat.id) ? 'line-through text-muted-foreground' : ''}`}>
                         {cat.title}
                       </p>
-                      <p className="text-sm text-muted-foreground mt-0.5">{cat.summary}</p>
+                      <p className="text-base text-muted-foreground mt-0.5">{cat.summary}</p>
                     </div>
                   </label>
 
                   <div className="grid sm:grid-cols-2 gap-3">
                     {cat.picks.map((pick, i) => (
                       <div key={i} className="rounded-lg border border-border p-4 bg-card">
-                        <p className="font-semibold text-sm">{pick.name}</p>
+                        <p className="font-semibold text-base">{pick.name}</p>
                         <Badge variant="outline" className="mt-1 mb-2">{pick.price}</Badge>
-                        <p className="text-xs text-muted-foreground mb-2">
+                        <p className="text-sm text-muted-foreground mb-2">
                           <span className="font-semibold text-foreground">Fits: </span>{pick.fits}
                         </p>
-                        <p className="text-xs mb-3">{pick.why}</p>
+                        <p className="text-sm mb-3">{pick.why}</p>
 
                         <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Pros</p>
                         <ul className="space-y-1 mb-3">
                           {pick.pros.map((p, j) => (
-                            <li key={j} className="flex gap-2 text-xs text-muted-foreground">
-                              <span className="text-green-600">+</span>
+                            <li key={j} className="flex gap-2 text-sm text-muted-foreground">
+                              <span className="text-success-foreground">+</span>
                               <span>{p}</span>
                             </li>
                           ))}
@@ -379,8 +379,8 @@ export default function HomeOfficeSetup() {
                         <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Cons</p>
                         <ul className="space-y-1">
                           {pick.cons.map((c, j) => (
-                            <li key={j} className="flex gap-2 text-xs text-muted-foreground">
-                              <span className="text-amber-600">-</span>
+                            <li key={j} className="flex gap-2 text-sm text-muted-foreground">
+                              <span className="text-warn-foreground">-</span>
                               <span>{c}</span>
                             </li>
                           ))}
@@ -393,13 +393,13 @@ export default function HomeOfficeSetup() {
             ))}
           </div>
 
-          <Card className="border-indigo-300 bg-indigo-50/60 dark:bg-indigo-950/20 mb-6">
+          <Card className="border-primary/25 bg-indigo-50/60 dark:bg-indigo-950/20 mb-6">
             <CardContent className="p-5">
               <p className="font-semibold mb-2">Cheapest practical setup — around $700</p>
-              <p className="text-sm text-muted-foreground mb-3">
+              <p className="text-base text-muted-foreground mb-3">
                 The full home office on a tight budget, picking the lower option in every category. Comfortable, capable, and good for years of light-to-medium use.
               </p>
-              <ul className="space-y-1 text-sm">
+              <ul className="space-y-1 text-base">
                 <li className="flex justify-between border-b border-border pb-1">
                   <span>Dell P2422H 24" monitor</span>
                   <span className="text-muted-foreground">$170</span>
@@ -433,7 +433,7 @@ export default function HomeOfficeSetup() {
                   <span>~$765</span>
                 </li>
               </ul>
-              <p className="text-xs text-muted-foreground mt-3">
+              <p className="text-sm text-muted-foreground mt-3">
                 You can shave $65 by skipping the printer and using a library or office store for the few pages a year you actually print, bringing the total to about $700.
               </p>
             </CardContent>
@@ -442,7 +442,7 @@ export default function HomeOfficeSetup() {
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
               <p className="font-semibold mb-2">A note on cables and outlets</p>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Add a $25 surge protector with USB ports — protects all this gear from a power surge during a storm and gives you spots to charge a phone or tablet without crawling under the desk. Belkin and APC are the brands to look for.
               </p>
             </CardContent>
@@ -452,25 +452,25 @@ export default function HomeOfficeSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/new-computer-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">New Computer Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Set up the laptop or PC that goes on this desk.</p>
+                <p className="font-medium text-base">New Computer Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Set up the laptop or PC that goes on this desk.</p>
               </Link>
               <Link to="/tools/router-upgrade-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Router Upgrade Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">A reliable Wi-Fi signal at the desk.</p>
+                <p className="font-medium text-base">Router Upgrade Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">A reliable Wi-Fi signal at the desk.</p>
               </Link>
               <Link to="/tools/telehealth-prep" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Telehealth Prep</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Use the same webcam and mic for doctor visits.</p>
+                <p className="font-medium text-base">Telehealth Prep</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Use the same webcam and mic for doctor visits.</p>
               </Link>
             </div>
           </div>
 
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: buy the chair first. A good chair fixes back pain that no monitor or webcam can.
           </p>
 
-          <p className="text-xs text-muted-foreground mt-2 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-2 flex items-center gap-1">
             <ExternalLink className="h-3 w-3" /> Prices are US averages as of 2026 — check current price at the retailer before buying.
           </p>
         </div>

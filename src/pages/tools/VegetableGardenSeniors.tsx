@@ -19,7 +19,7 @@ export default function VegetableGardenSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easiest vegetables</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tomatoes</strong> — most rewarding.</li>
               <li><strong>Zucchini / squash</strong> — abundant production.</li>
               <li><strong>Lettuce + greens</strong> — fast + cool weather.</li>
@@ -35,7 +35,7 @@ export default function VegetableGardenSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Raised beds</strong> — 24-36&quot; tall = no bending.</li>
               <li><strong>Standing planters</strong> — Lifetime $200, perfect height.</li>
               <li><strong>Wheelchair accessible beds</strong> — 24&quot; tall + open under.</li>
@@ -49,7 +49,7 @@ export default function VegetableGardenSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy maintenance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Drip irrigation</strong> — auto water with timer.</li>
               <li><strong>Mulch heavy</strong> — less weeds, less water.</li>
               <li><strong>Square foot gardening</strong> — densely planted.</li>
@@ -63,7 +63,7 @@ export default function VegetableGardenSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Long-handle tools</strong> — less bending.</li>
               <li><strong>Garden seat / kneeler</strong> — saves knees + back.</li>
               <li><strong>Ergonomic trowel + cultivator</strong> — easier grip.</li>
@@ -77,7 +77,7 @@ export default function VegetableGardenSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Light exercise 3-4 hours/week.</li>
               <li>Vitamin D from sun (don&apos;t skip sunscreen!).</li>
               <li>Stress relief.</li>
@@ -92,7 +92,7 @@ export default function VegetableGardenSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Master Gardener help</h3>
-            <p className="text-sm text-muted-foreground">FREE Cooperative Extension Master Gardener help. Call your county extension. Diagnose plant problems, soil testing, climate-specific advice. Many programs train seniors to BE Master Gardeners — volunteer + learn. Best gardening resource exists. mastergardener.org.</p>
+            <p className="text-base text-muted-foreground">FREE Cooperative Extension Master Gardener help. Call your county extension. Diagnose plant problems, soil testing, climate-specific advice. Many programs train seniors to BE Master Gardeners — volunteer + learn. Best gardening resource exists. mastergardener.org.</p>
           </CardContent>
         </Card>
       </main>

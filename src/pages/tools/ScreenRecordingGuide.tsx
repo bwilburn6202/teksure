@@ -107,7 +107,7 @@ export default function ScreenRecordingGuide() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-purple-500/10 rounded-full">
-                <Camera className="h-8 w-8 text-purple-600" />
+                <Camera className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Screenshots &amp; Screen Recording</h1>
@@ -122,14 +122,14 @@ export default function ScreenRecordingGuide() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your device</p>
+              <p className="text-base font-semibold mb-3">Pick your device</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {DEVICES.map(d => (
                   <button key={d.id} onClick={() => setDevice(d.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       device === d.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{d.label}</p>
+                    <p className="font-medium text-base">{d.label}</p>
                   </button>
                 ))}
               </div>
@@ -141,7 +141,7 @@ export default function ScreenRecordingGuide() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Take a screenshot</p>
               <ol className="space-y-2 mb-5">
                 {guide.screenshot.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{s}</span>
                   </li>
@@ -151,15 +151,15 @@ export default function ScreenRecordingGuide() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Record the screen</p>
               <ol className="space-y-2 mb-5">
                 {guide.screenRecord.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{s}</span>
                   </li>
                 ))}
               </ol>
 
-              <div className="p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
-                <p className="text-xs text-blue-700 dark:text-blue-300"><strong>Where files save:</strong> {guide.whereSaved}</p>
+              <div className="p-3 rounded-lg bg-info border border-info-foreground/25 ">
+                <p className="text-sm text-info-foreground "><strong>Where files save:</strong> {guide.whereSaved}</p>
               </div>
             </CardContent>
           </Card>
@@ -169,8 +169,8 @@ export default function ScreenRecordingGuide() {
             {USE_CASES.map(u => (
               <Card key={u.title} className="border-border">
                 <CardContent className="p-4">
-                  <p className="font-medium text-sm">{u.title}</p>
-                  <p className="text-xs text-muted-foreground mt-1">{u.detail}</p>
+                  <p className="font-medium text-base">{u.title}</p>
+                  <p className="text-sm text-muted-foreground mt-1">{u.detail}</p>
                 </CardContent>
               </Card>
             ))}
@@ -178,8 +178,8 @@ export default function ScreenRecordingGuide() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Editing screenshots</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Editing screenshots</p>
+              <p className="text-sm text-muted-foreground">
                 Most platforms let you crop and annotate immediately after capturing. Tap the thumbnail (iPhone, Android) or click the toast (Windows) to draw arrows, highlight, or blur sensitive info before sharing.
               </p>
             </CardContent>
@@ -189,20 +189,20 @@ export default function ScreenRecordingGuide() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/remote-tech-help" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Remote Tech Help</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Live screen-share with a helper.</p>
+                <p className="font-medium text-base">Remote Tech Help</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Live screen-share with a helper.</p>
               </Link>
               <Link to="/tools/photo-library-tips" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Photo Library Tips</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Find old screenshots later.</p>
+                <p className="font-medium text-base">Photo Library Tips</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Find old screenshots later.</p>
               </Link>
               <Link to="/tools/document-scanner-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Document Scanner</p>
-                <p className="text-xs text-muted-foreground mt-0.5">For paper, not screens.</p>
+                <p className="font-medium text-base">Document Scanner</p>
+                <p className="text-sm text-muted-foreground mt-0.5">For paper, not screens.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: blur sensitive info BEFORE sharing — credit card numbers, addresses, account screens. Most editors have a "redact" or "marker" tool.
           </p>
         </div>

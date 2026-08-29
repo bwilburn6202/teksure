@@ -950,7 +950,7 @@ export default function StreamingServicePicker() {
                         </button>
                       );
                     })}
-                    <p className="text-sm text-muted-foreground">Pick as many as apply — then tap Next.</p>
+                    <p className="text-base text-muted-foreground">Pick as many as apply — then tap Next.</p>
                   </div>
                 )}
 
@@ -1012,12 +1012,12 @@ export default function StreamingServicePicker() {
                         <div className="flex flex-wrap gap-2">
                           <Badge variant="outline" className="text-sm">{s.priceSummary}</Badge>
                           {s.liveTv && (
-                            <Badge variant="outline" className="text-sm bg-blue-50 dark:bg-blue-950/20 text-blue-800 dark:text-blue-300 border-blue-600/40">
+                            <Badge variant="outline" className="text-sm bg-info text-info-foreground border-blue-600/40">
                               Live TV
                             </Badge>
                           )}
                           {s.cancelAnytime && (
-                            <Badge variant="outline" className="text-sm bg-green-50 dark:bg-green-950/20 text-green-800 dark:text-green-300 border-green-600/40">
+                            <Badge variant="outline" className="text-sm bg-success text-success-foreground border-green-600/40">
                               Cancel anytime
                             </Badge>
                           )}
@@ -1045,28 +1045,28 @@ export default function StreamingServicePicker() {
 
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                         <div className="rounded-xl border border-green-600/40 bg-green-50/40 dark:bg-green-950/20 p-4">
-                          <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-green-800 dark:text-green-300">
+                          <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-success-foreground ">
                             <CheckCircle2 className="w-5 h-5" />
                             Top shows and content
                           </h4>
                           <ul className="space-y-1.5">
                             {s.topShows.slice(0, 5).map((show) => (
                               <li key={show} className="text-base leading-relaxed flex gap-2">
-                                <span className="text-green-700 dark:text-green-400 shrink-0" aria-hidden="true">+</span>
+                                <span className="text-success-foreground shrink-0" aria-hidden="true">+</span>
                                 <span>{show}</span>
                               </li>
                             ))}
                           </ul>
                         </div>
                         <div className="rounded-xl border border-amber-500/40 bg-amber-50/40 dark:bg-amber-950/20 p-4">
-                          <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-amber-800 dark:text-amber-300">
+                          <h4 className="font-semibold text-base mb-2 flex items-center gap-2 text-warn-foreground ">
                             <AlertTriangle className="w-5 h-5" />
                             Watch out for
                           </h4>
                           <ul className="space-y-1.5">
                             {s.watchOut.map((w) => (
                               <li key={w} className="text-base leading-relaxed flex gap-2">
-                                <span className="text-amber-700 dark:text-amber-400 shrink-0" aria-hidden="true">!</span>
+                                <span className="text-warn-foreground shrink-0" aria-hidden="true">!</span>
                                 <span>{w}</span>
                               </li>
                             ))}
@@ -1160,7 +1160,7 @@ export default function StreamingServicePicker() {
                 </TableBody>
               </Table>
             </div>
-            <p className="mt-3 text-sm text-muted-foreground">All services let you cancel at any time. Tap a service on its own website for the most current pricing.</p>
+            <p className="mt-3 text-base text-muted-foreground">All services let you cancel at any time. Tap a service on its own website for the most current pricing.</p>
           </div>
         </section>
 
@@ -1177,7 +1177,7 @@ export default function StreamingServicePicker() {
             <Card>
               <CardContent className="p-5 space-y-3">
                 <div className="flex items-center gap-2">
-                  <div className="p-2 rounded-lg bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
+                  <div className="p-2 rounded-lg bg-info text-info-foreground ">
                     <Sparkles className="w-5 h-5" />
                   </div>
                   <h3 className="font-semibold text-lg">Disney Bundle</h3>
@@ -1190,7 +1190,7 @@ export default function StreamingServicePicker() {
             <Card>
               <CardContent className="p-5 space-y-3">
                 <div className="flex items-center gap-2">
-                  <div className="p-2 rounded-lg bg-indigo-100 text-indigo-700 dark:bg-indigo-900/40 dark:text-indigo-300">
+                  <div className="p-2 rounded-lg bg-primary/10 text-primary ">
                     <Film className="w-5 h-5" />
                   </div>
                   <h3 className="font-semibold text-lg">Hulu / Disney+ / Max bundle</h3>
@@ -1203,7 +1203,7 @@ export default function StreamingServicePicker() {
             <Card>
               <CardContent className="p-5 space-y-3">
                 <div className="flex items-center gap-2">
-                  <div className="p-2 rounded-lg bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-300">
+                  <div className="p-2 rounded-lg bg-danger text-danger-foreground ">
                     <Tv className="w-5 h-5" />
                   </div>
                   <h3 className="font-semibold text-lg">Verizon myPlan perks</h3>
@@ -1229,7 +1229,7 @@ export default function StreamingServicePicker() {
             <Card>
               <CardContent className="p-5 space-y-3">
                 <div className="flex items-center gap-2">
-                  <div className="p-2 rounded-lg bg-yellow-100 text-yellow-700 dark:bg-yellow-900/40 dark:text-yellow-300">
+                  <div className="p-2 rounded-lg bg-warn text-warn-foreground ">
                     <DollarSign className="w-5 h-5" />
                   </div>
                   <h3 className="font-semibold text-lg">Best Buy Totaltech / My Best Buy perks</h3>
@@ -1242,7 +1242,7 @@ export default function StreamingServicePicker() {
             <Card>
               <CardContent className="p-5 space-y-3">
                 <div className="flex items-center gap-2">
-                  <div className="p-2 rounded-lg bg-sky-100 text-sky-700 dark:bg-sky-900/40 dark:text-sky-300">
+                  <div className="p-2 rounded-lg bg-info text-info-foreground ">
                     <Lock className="w-5 h-5" />
                   </div>
                   <h3 className="font-semibold text-lg">Annual plans vs. monthly</h3>
@@ -1259,8 +1259,8 @@ export default function StreamingServicePicker() {
         <section className="border-t border-border bg-muted/30">
           <div className="container py-10 md:py-14 max-w-4xl">
             <Alert className="border-indigo-500/40 bg-indigo-50/40 dark:bg-indigo-950/20">
-              <RotateCcw className="w-5 h-5 text-indigo-700 dark:text-indigo-400" />
-              <AlertTitle className="text-xl md:text-2xl font-semibold text-indigo-900 dark:text-indigo-200">
+              <RotateCcw className="w-5 h-5 text-primary " />
+              <AlertTitle className="text-xl md:text-2xl font-semibold text-primary ">
                 Rotate, don&apos;t stack
               </AlertTitle>
               <AlertDescription className="text-base md:text-lg leading-relaxed text-foreground">

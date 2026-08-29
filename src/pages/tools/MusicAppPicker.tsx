@@ -31,10 +31,10 @@ export default function MusicAppPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function MusicAppPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Discounts seniors miss</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Spotify Premium</strong> — no specific senior plan, but the free tier is fine. Family plan ($20/month for 6) splits cheap.</li>
               <li><strong>Amazon Music</strong> — included free with Prime (which seniors get for $7/month on Prime Access).</li>
               <li><strong>Apple Music</strong> — free 1 year for college student grandkid; older relatives can join their family plan.</li>
@@ -55,7 +55,7 @@ export default function MusicAppPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">If you have Amazon Prime — Amazon Music is already paid for. Open it. If you have an iPhone — try Apple Music\'s 1-month free trial. Otherwise, Spotify Free is the easiest first step.</p>
+            <p className="text-base text-muted-foreground">If you have Amazon Prime — Amazon Music is already paid for. Open it. If you have an iPhone — try Apple Music\'s 1-month free trial. Otherwise, Spotify Free is the easiest first step.</p>
           </CardContent>
         </Card>
       </main>

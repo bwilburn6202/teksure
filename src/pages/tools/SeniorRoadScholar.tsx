@@ -22,7 +22,7 @@ export default function SeniorRoadScholar() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Solo travel</h2><p>Many tours have low/no single supplements. Great way to travel alone safely.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Levels of activity</h2><p>Filter by easy/moderate/active. Choose what fits your fitness.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free catalogs</h2><p>Order printed catalog from roadscholar.org. Beautiful inspiration.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Book 6-12 months ahead. Best programs sell out. Early bird discounts often.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Book 6-12 months ahead. Best programs sell out. Early bird discounts often.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function BestBooksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">On aging well</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Being Mortal</strong> — Atul Gawande.</li>
               <li><strong>Successful Aging</strong> — Daniel Levitin.</li>
               <li><strong>From Strength to Strength</strong> — Arthur Brooks.</li>
@@ -33,7 +33,7 @@ export default function BestBooksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Memoir + biography</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>The Light We Carry</strong> — Michelle Obama.</li>
               <li><strong>Spare</strong> — Prince Harry.</li>
               <li><strong>Educated</strong> — Tara Westover.</li>
@@ -47,7 +47,7 @@ export default function BestBooksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cozy mysteries</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior favorite genre.</li>
               <li><strong>Thursday Murder Club</strong> — Richard Osman.</li>
               <li><strong>Louise Penny</strong> — Inspector Gamache series.</li>
@@ -61,7 +61,7 @@ export default function BestBooksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Big ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sapiens</strong> — Yuval Noah Harari.</li>
               <li><strong>Bowling Alone</strong> — Robert Putnam.</li>
               <li><strong>Thinking Fast and Slow</strong> — Daniel Kahneman.</li>
@@ -74,7 +74,7 @@ export default function BestBooksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spirituality + reflection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tuesdays with Morrie</strong> — Mitch Albom.</li>
               <li><strong>The Last Lecture</strong> — Randy Pausch.</li>
               <li><strong>When Things Fall Apart</strong> — Pema Chödrön.</li>
@@ -87,7 +87,7 @@ export default function BestBooksForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free at library</h3>
-            <p className="text-sm text-muted-foreground">All free at library — physical or via Libby app. See /tools/libby-app-for-seniors. Book club discussion adds joy. Goodreads tracks reading. NYT Best Sellers — see what&apos;s popular. Reading = brain exercise + pleasure.</p>
+            <p className="text-base text-muted-foreground">All free at library — physical or via Libby app. See /tools/libby-app-for-seniors. Book club discussion adds joy. Goodreads tracks reading. NYT Best Sellers — see what&apos;s popular. Reading = brain exercise + pleasure.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function AdvocateForYourself() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Magic phrases</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"I want to make sure I understand. Can you explain that again?"</li>
               <li>"What are the alternatives?"</li>
               <li>"What if I do nothing?"</li>
@@ -35,7 +35,7 @@ export default function AdvocateForYourself() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you&apos;re dismissed</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"It&apos;s just aging" / "It&apos;s in your head" — push back. "What tests would rule out [condition]?"</li>
               <li>Document EVERYTHING. Date, who said what, what was decided.</li>
               <li>Send follow-up message via patient portal — creates paper trail.</li>
@@ -49,7 +49,7 @@ export default function AdvocateForYourself() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">In the hospital</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ask hospitalists their name + role</strong> — multiple specialists may be involved.</li>
               <li><strong>Ask for whiteboard updates</strong> — daily plan, who&apos;s on team.</li>
               <li><strong>Hand-washing</strong> — ask EVERY person before touching you. They can&apos;t get offended.</li>
@@ -63,7 +63,7 @@ export default function AdvocateForYourself() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hire an advocate</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Patient advocate (private)</strong> — $100-200/hr. AdvoConnection.com directory.</li>
               <li><strong>Hospital ombudsman</strong> — free, on staff at most hospitals.</li>
               <li><strong>State Long-Term Care Ombudsman</strong> — free for nursing home issues.</li>
@@ -75,7 +75,7 @@ export default function AdvocateForYourself() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Polite + persistent wins</h3>
-            <p className="text-sm text-muted-foreground">"Difficult" patients get worse care. "Engaged" patients with documented concerns get BETTER care. Same energy — different label. Politely say "I want to understand" 4 times if needed. Don&apos;t apologize for asking.</p>
+            <p className="text-base text-muted-foreground">"Difficult" patients get worse care. "Engaged" patients with documented concerns get BETTER care. Same energy — different label. Politely say "I want to understand" 4 times if needed. Don&apos;t apologize for asking.</p>
           </CardContent>
         </Card>
       </main>

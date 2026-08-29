@@ -215,7 +215,7 @@ const Index = () => {
 
                   {msg.role === 'bot' && msg.relatedGuides && msg.relatedGuides.length > 0 && (
                     <div className="mt-2 max-w-[88%] w-full">
-                      <p className="text-xs text-muted-foreground font-medium mb-1.5 flex items-center gap-1">
+                      <p className="text-sm text-muted-foreground font-medium mb-1.5 flex items-center gap-1">
                         <BookOpen className="h-3 w-3" aria-hidden="true" /> Related guides
                       </p>
                       <div className="space-y-1">
@@ -224,7 +224,7 @@ const Index = () => {
                             key={g.slug}
                             href={`/guides/${g.slug}`}
                             aria-label={`Read guide: ${g.title}`}
-                            className="flex items-center gap-2 rounded-lg px-3 py-2 bg-white border border-border hover:border-primary/40 hover:bg-primary/5 transition-all text-sm group"
+                            className="flex items-center gap-2 rounded-lg px-3 py-2 bg-card border border-border hover:border-primary/40 hover:bg-primary/5 transition-all text-sm group"
                           >
                             <img src={getGuideThumbnailSmall(g)} alt="" className="w-5 h-5 rounded object-cover shrink-0" loading="lazy" />
                             <span className="flex-1 font-medium leading-tight group-hover:text-primary transition-colors line-clamp-1">{g.title}</span>
@@ -277,10 +277,10 @@ const Index = () => {
                   <div
                     role="listbox"
                     aria-label="Select your device"
-                    className="absolute right-0 top-full mt-1 rounded-xl border border-border bg-white shadow-xl z-20"
+                    className="absolute right-0 top-full mt-1 rounded-xl border border-border bg-card shadow-xl z-20"
                     style={{ minWidth: 160 }}
                   >
-                    <p className="px-3 pt-2 pb-1 text-xs font-semibold text-muted-foreground">Your device</p>
+                    <p className="px-3 pt-2 pb-1 text-sm font-semibold text-muted-foreground">Your device</p>
                     {DEVICE_OPTIONS.map(opt => (
                       <button
                         key={opt.value}
@@ -365,7 +365,7 @@ const Index = () => {
           </div>
 
           {/* Stats */}
-          <p className="text-center text-sm text-muted-foreground mt-4 shrink-0">
+          <p className="text-center text-base text-muted-foreground mt-4 shrink-0">
             <strong className="text-foreground font-semibold">{guides.length.toLocaleString()}+</strong> free guides &middot; Real humans &middot; Plain English
           </p>
 

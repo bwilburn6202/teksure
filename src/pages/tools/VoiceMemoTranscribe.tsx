@@ -98,7 +98,7 @@ export default function VoiceMemoTranscribe() {
       <main className="min-h-screen bg-background">
         <section className="bg-gradient-to-br from-blue-50 via-background to-cyan-50 dark:from-blue-950/20 dark:to-cyan-950/20 border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto text-center">
-            <div className="flex justify-center mb-3"><div className="p-3 bg-blue-500/10 rounded-full"><FileAudio className="h-8 w-8 text-blue-600" /></div></div>
+            <div className="flex justify-center mb-3"><div className="p-3 bg-blue-500/10 rounded-full"><FileAudio className="h-8 w-8 text-info-foreground" /></div></div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Voice Memo to Text</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">Dictate a long letter. Capture a story from your mother. Read back what your doctor said. Five tools — pick the one that fits.</p>
           </div>
@@ -107,24 +107,24 @@ export default function VoiceMemoTranscribe() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Voice Memo to Text' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
-                <p className="font-semibold text-amber-900 dark:text-amber-200 mb-1">Recording a doctor visit? Read this first.</p>
-                <p className="text-amber-900 dark:text-amber-100">Most US states are "one-party consent" — you can record any conversation you are part of without telling anyone. Twelve states (including California, Florida, Pennsylvania, and Washington) require everyone to agree. The respectful move in any state: tell your doctor before you press record. Most will say yes — patients ask all the time.</p>
+                <p className="font-semibold text-warn-foreground mb-1">Recording a doctor visit? Read this first.</p>
+                <p className="text-warn-foreground ">Most US states are "one-party consent" — you can record any conversation you are part of without telling anyone. Twelve states (including California, Florida, Pennsylvania, and Washington) require everyone to agree. The respectful move in any state: tell your doctor before you press record. Most will say yes — patients ask all the time.</p>
               </div>
             </CardContent>
           </Card>
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick a service</p>
+              <p className="text-base font-semibold mb-3">Pick a service</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {SERVICES.map(s => (
                   <button key={s.id} onClick={() => setActiveId(s.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${activeId === s.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'}`}>
-                    <p className="font-medium text-sm">{s.name}</p>
+                    <p className="font-medium text-base">{s.name}</p>
                   </button>
                 ))}
               </div>
@@ -134,11 +134,11 @@ export default function VoiceMemoTranscribe() {
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Cost</p>
-              <p className="text-sm mb-5">{active.cost}</p>
+              <p className="text-base mb-5">{active.cost}</p>
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">How to use it</p>
               <ol className="space-y-2 mb-5">
                 {active.howToUse.map((step, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{step}</span>
                   </li>
@@ -146,25 +146,25 @@ export default function VoiceMemoTranscribe() {
               </ol>
               <div className="p-3 rounded-lg bg-primary/5 border border-primary/20">
                 <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-1">Who it fits</p>
-                <p className="text-sm">{active.whoFits}</p>
+                <p className="text-base">{active.whoFits}</p>
               </div>
             </CardContent>
           </Card>
 
           <div className="grid md:grid-cols-2 gap-4 mb-6">
-            <Card className="border-green-300 bg-green-50/50 dark:bg-green-950/10">
+            <Card className="border-success-foreground/25 bg-green-50/50 dark:bg-green-950/10">
               <CardContent className="p-5">
-                <p className="text-xs font-semibold uppercase tracking-wider text-green-700 dark:text-green-400 mb-3">Pros</p>
-                <ul className="space-y-2 text-sm">
-                  {active.pros.map((p, i) => (<li key={i} className="flex gap-2"><span className="text-green-600 shrink-0">+</span><span>{p}</span></li>))}
+                <p className="text-xs font-semibold uppercase tracking-wider text-success-foreground mb-3">Pros</p>
+                <ul className="space-y-2 text-base">
+                  {active.pros.map((p, i) => (<li key={i} className="flex gap-2"><span className="text-success-foreground shrink-0">+</span><span>{p}</span></li>))}
                 </ul>
               </CardContent>
             </Card>
-            <Card className="border-rose-300 bg-rose-50/50 dark:bg-rose-950/10">
+            <Card className="border-danger-foreground/25 bg-rose-50/50 dark:bg-rose-950/10">
               <CardContent className="p-5">
-                <p className="text-xs font-semibold uppercase tracking-wider text-rose-700 dark:text-rose-400 mb-3">Cons</p>
-                <ul className="space-y-2 text-sm">
-                  {active.cons.map((c, i) => (<li key={i} className="flex gap-2"><span className="text-rose-600 shrink-0">−</span><span>{c}</span></li>))}
+                <p className="text-xs font-semibold uppercase tracking-wider text-danger-foreground mb-3">Cons</p>
+                <ul className="space-y-2 text-base">
+                  {active.cons.map((c, i) => (<li key={i} className="flex gap-2"><span className="text-danger-foreground shrink-0">−</span><span>{c}</span></li>))}
                 </ul>
               </CardContent>
             </Card>
@@ -174,20 +174,20 @@ export default function VoiceMemoTranscribe() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/dictation-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Dictation Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Talk instead of typing in any app.</p>
+                <p className="font-medium text-base">Dictation Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Talk instead of typing in any app.</p>
               </Link>
               <Link to="/tools/document-scanner-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Document Scanner Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Turn paper into PDF with your phone.</p>
+                <p className="font-medium text-base">Document Scanner Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Turn paper into PDF with your phone.</p>
               </Link>
               <Link to="/tools/photo-library-tips" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Photo Library Tips</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Find, sort, and protect your photos.</p>
+                <p className="font-medium text-base">Photo Library Tips</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Find, sort, and protect your photos.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: hold the phone about a foot from whoever is speaking. Closer is muffled, farther is faint.
           </p>
         </div>

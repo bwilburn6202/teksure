@@ -987,7 +987,7 @@ function DoneScreen({
     <Card className="border-green-600/40 bg-green-50/40 dark:bg-green-950/20">
       <CardContent className="p-6 md:p-8 space-y-6">
         <div className="flex items-center gap-3">
-          <div className="p-3 rounded-full bg-green-600/10 text-green-700 dark:text-green-400">
+          <div className="p-3 rounded-full bg-green-600/10 text-success-foreground ">
             <CheckCircle2 className="w-8 h-8" />
           </div>
           <div>
@@ -1108,7 +1108,7 @@ export default function SmartThermostatSetup() {
                 />
               </div>
               <div className="flex items-center gap-2 mb-4">
-                <div className="p-2 rounded-lg bg-orange-500/15 text-orange-700 dark:text-orange-300">
+                <div className="p-2 rounded-lg bg-orange-500/15 text-warn-foreground ">
                   <Thermometer className="w-5 h-5" />
                 </div>
                 <Badge variant="outline" className="text-xs">Home Setup · Compare &amp; Install</Badge>
@@ -1116,7 +1116,7 @@ export default function SmartThermostatSetup() {
               <h1 className="text-3xl md:text-5xl font-bold mb-3 pr-14">
                 Smart Thermostat Setup — Pick One and Install It
               </h1>
-              <p className="text-lg md:text-2xl text-slate-700 dark:text-slate-300 max-w-3xl leading-relaxed">
+              <p className="text-lg md:text-2xl text-foreground max-w-3xl leading-relaxed">
                 A plain-English walkthrough for Nest, ecobee, Honeywell, Sensi, and Amazon. We cover the C-wire question, wiring safely, schedules, and saving money on your bill.
               </p>
 
@@ -1147,7 +1147,7 @@ export default function SmartThermostatSetup() {
                 return (
                   <Card key={item.title}>
                     <CardContent className="p-5 flex items-start gap-3">
-                      <div className="p-2 rounded-lg bg-orange-500/10 text-orange-700 dark:text-orange-300 shrink-0">
+                      <div className="p-2 rounded-lg bg-orange-500/10 text-warn-foreground shrink-0">
                         <Icon className="w-6 h-6" />
                       </div>
                       <div>
@@ -1165,7 +1165,7 @@ export default function SmartThermostatSetup() {
           <section className="border-t border-border bg-muted/30">
             <div className="container py-10 md:py-14">
               <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-                <AlertTriangle className="w-7 h-7 text-amber-700 dark:text-amber-400" />
+                <AlertTriangle className="w-7 h-7 text-warn-foreground " />
                 Compatibility warnings — read this before you buy
               </h2>
               <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -1179,7 +1179,7 @@ export default function SmartThermostatSetup() {
                     <Card key={item.id} className="bg-amber-50/40 dark:bg-amber-950/20 border-amber-500/40">
                       <CardContent className="p-5 space-y-3">
                         <h3 className="text-lg md:text-xl font-semibold flex items-center gap-2">
-                          <Icon className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0" />
+                          <Icon className="w-6 h-6 text-warn-foreground shrink-0" />
                           <span>{item.label}</span>
                         </h3>
                         <p className="text-base leading-relaxed">{item.summary}</p>
@@ -1206,7 +1206,7 @@ export default function SmartThermostatSetup() {
                 <Card key={b.id} className="flex flex-col">
                   <CardContent className="p-6 flex-1 flex flex-col gap-4">
                     <div className="flex items-start gap-3">
-                      <div className="p-3 rounded-xl bg-orange-500/10 text-orange-700 dark:text-orange-300 shrink-0">
+                      <div className="p-3 rounded-xl bg-orange-500/10 text-warn-foreground shrink-0">
                         <Thermometer className="w-7 h-7" />
                       </div>
                       <div className="flex-1">
@@ -1229,19 +1229,19 @@ export default function SmartThermostatSetup() {
                     <div className="space-y-3">
                       <div className="grid grid-cols-1 gap-2 text-base">
                         <div className="flex gap-2">
-                          <Thermometer className="w-5 h-5 text-orange-600 dark:text-orange-400 shrink-0 mt-0.5" />
+                          <Thermometer className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                           <span><strong>Models:</strong> {b.models}</span>
                         </div>
                         <div className="flex gap-2">
-                          <Zap className="w-5 h-5 text-orange-600 dark:text-orange-400 shrink-0 mt-0.5" />
+                          <Zap className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                           <span><strong>C-wire:</strong> {b.cWireNeeded}</span>
                         </div>
                         <div className="flex gap-2">
-                          <Smartphone className="w-5 h-5 text-orange-600 dark:text-orange-400 shrink-0 mt-0.5" />
+                          <Smartphone className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                           <span><strong>Works with:</strong> {b.worksWith}</span>
                         </div>
                         <div className="flex gap-2">
-                          <Sparkles className="w-5 h-5 text-orange-600 dark:text-orange-400 shrink-0 mt-0.5" />
+                          <Sparkles className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                           <span><strong>Best for:</strong> {b.bestFor}</span>
                         </div>
                       </div>
@@ -1249,28 +1249,28 @@ export default function SmartThermostatSetup() {
 
                     <div className="grid grid-cols-1 gap-3">
                       <div>
-                        <h4 className="text-sm font-semibold text-green-800 dark:text-green-400 mb-1.5 flex items-center gap-1.5">
+                        <h4 className="text-sm font-semibold text-success-foreground mb-1.5 flex items-center gap-1.5">
                           <CheckCircle2 className="w-4 h-4" />
                           Strengths
                         </h4>
                         <ul className="space-y-1.5">
                           {b.strengths.map((s) => (
                             <li key={s} className="text-base leading-relaxed flex gap-2">
-                              <span className="text-green-700 dark:text-green-400 shrink-0" aria-hidden="true">+</span>
+                              <span className="text-success-foreground shrink-0" aria-hidden="true">+</span>
                               <span>{s}</span>
                             </li>
                           ))}
                         </ul>
                       </div>
                       <div>
-                        <h4 className="text-sm font-semibold text-amber-800 dark:text-amber-400 mb-1.5 flex items-center gap-1.5">
+                        <h4 className="text-sm font-semibold text-warn-foreground mb-1.5 flex items-center gap-1.5">
                           <XCircle className="w-4 h-4" />
                           Weaknesses
                         </h4>
                         <ul className="space-y-1.5">
                           {b.weaknesses.map((w) => (
                             <li key={w} className="text-base leading-relaxed flex gap-2">
-                              <span className="text-amber-700 dark:text-amber-400 shrink-0" aria-hidden="true">−</span>
+                              <span className="text-warn-foreground shrink-0" aria-hidden="true">−</span>
                               <span>{w}</span>
                             </li>
                           ))}
@@ -1320,7 +1320,7 @@ export default function SmartThermostatSetup() {
                         <dl className="space-y-2">
                           {data.items.map((item) => (
                             <div key={item.symbol} className="grid grid-cols-[minmax(110px,auto)_1fr] gap-3 text-base leading-relaxed">
-                              <dt className="font-semibold text-orange-700 dark:text-orange-300">{item.symbol}</dt>
+                              <dt className="font-semibold text-warn-foreground ">{item.symbol}</dt>
                               <dd>{item.meaning}</dd>
                             </div>
                           ))}
@@ -1349,7 +1349,7 @@ export default function SmartThermostatSetup() {
                 return (
                   <Card key={item.title}>
                     <CardContent className="p-5 flex items-start gap-3">
-                      <div className="p-2 rounded-lg bg-green-500/10 text-green-700 dark:text-green-300 shrink-0">
+                      <div className="p-2 rounded-lg bg-green-500/10 text-success-foreground shrink-0">
                         <Icon className="w-6 h-6" />
                       </div>
                       <div>
@@ -1380,7 +1380,7 @@ export default function SmartThermostatSetup() {
                   return (
                     <Card key={item.title}>
                       <CardContent className="p-5 flex items-start gap-3">
-                        <div className="p-2 rounded-lg bg-orange-500/10 text-orange-700 dark:text-orange-300 shrink-0">
+                        <div className="p-2 rounded-lg bg-orange-500/10 text-warn-foreground shrink-0">
                           <Icon className="w-6 h-6" />
                         </div>
                         <div>
@@ -1410,7 +1410,7 @@ export default function SmartThermostatSetup() {
                 <AccordionItem key={item.title} value={`trouble-${i}`}>
                   <AccordionTrigger className="px-5 py-4 text-left text-base md:text-lg font-medium">
                     <span className="flex items-start gap-2 text-left">
-                      <AlertTriangle className="w-5 h-5 text-amber-700 dark:text-amber-400 shrink-0 mt-1" aria-hidden="true" />
+                      <AlertTriangle className="w-5 h-5 text-warn-foreground shrink-0 mt-1" aria-hidden="true" />
                       <span>{item.title}</span>
                     </span>
                   </AccordionTrigger>
@@ -1574,7 +1574,7 @@ export default function SmartThermostatSetup() {
           <div className="container py-6 md:py-8">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
               <div className="flex items-center gap-3">
-                <Thermometer className="w-5 h-5 text-orange-700 dark:text-orange-300" />
+                <Thermometer className="w-5 h-5 text-warn-foreground " />
                 <span className="text-base md:text-lg font-medium">
                   Installing · {setup.brandName}
                 </span>
@@ -1586,19 +1586,19 @@ export default function SmartThermostatSetup() {
             </div>
 
             <div className="flex flex-wrap items-center gap-3 mb-2">
-              <span className="text-sm md:text-base font-medium text-muted-foreground">
+              <span className="text-base md:text-base font-medium text-muted-foreground">
                 {isDone ? 'All done' : `Step ${stepIndex + 1} of ${totalSteps}`}
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 {completed.size} completed
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 App: <strong>{setup.appName}</strong>
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 About {setup.estTime}
               </span>
             </div>
@@ -1648,10 +1648,10 @@ export default function SmartThermostatSetup() {
               </Card>
 
               {current.stumble && (
-                <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+                <Card className="bg-warn border-amber-500/40">
                   <CardContent className="p-5 flex items-start gap-3">
                     <Lightbulb
-                      className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5"
+                      className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5"
                       aria-hidden="true"
                     />
                     <div>
@@ -1742,13 +1742,13 @@ export default function SmartThermostatSetup() {
                     <Smartphone className="w-5 h-5 text-primary" />
                     While you&apos;re here
                   </h3>
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-base leading-relaxed">
                     <strong>2.4 GHz Wi-Fi:</strong> Smart thermostats use the 2.4 GHz Wi-Fi band only. If setup keeps failing, check this first.
                   </p>
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-base leading-relaxed">
                     <strong>Turn the breaker off:</strong> Never work on thermostat wiring with the HVAC breaker on.
                   </p>
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-base leading-relaxed">
                     <strong>Official help:</strong>{' '}
                     <a
                       href={setup.support.url}

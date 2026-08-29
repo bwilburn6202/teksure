@@ -112,7 +112,7 @@ export default function SeniorFitnessApps() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-rose-500/10 rounded-full">
-                <Heart className="h-8 w-8 text-rose-600" />
+                <Heart className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Senior Fitness Apps</h1>
@@ -127,8 +127,8 @@ export default function SeniorFitnessApps() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Check SilverSneakers first</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Check SilverSneakers first</p>
+              <p className="text-sm text-muted-foreground">
                 If you have Medicare Advantage (a "Part C" plan), there\'s an 80%+ chance you have FREE SilverSneakers — covers gyms AND on-demand classes. Check your plan website or call the member-services number on your insurance card before paying for any other app.
               </p>
             </CardContent>
@@ -142,19 +142,19 @@ export default function SeniorFitnessApps() {
                     <p className="font-semibold text-base">{p.name}</p>
                     <Badge variant="outline">{p.cost}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {p.bestFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {p.bestFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {p.pros.map((pr, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{pr}</span></li>)}
+                        {p.pros.map((pr, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{pr}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {p.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                        {p.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -173,8 +173,8 @@ export default function SeniorFitnessApps() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Talk to your doctor first</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Talk to your doctor first</p>
+              <p className="text-sm text-muted-foreground">
                 Especially for strength training or longer cardio. Your doctor or PT can recommend modifications based on knees, back, heart, or balance. Many also write a referral that gets fitness covered by insurance.
               </p>
             </CardContent>
@@ -184,20 +184,20 @@ export default function SeniorFitnessApps() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/fitness-tracker-picker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Fitness Tracker Picker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Hardware to pair with the app.</p>
+                <p className="font-medium text-base">Fitness Tracker Picker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Hardware to pair with the app.</p>
               </Link>
               <Link to="/tools/fall-detection-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Fall Detection</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Safety while exercising solo.</p>
+                <p className="font-medium text-base">Fall Detection</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Safety while exercising solo.</p>
               </Link>
               <Link to="/tools/medicare-plan-chooser" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Medicare Plan Chooser</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pick a plan that includes SilverSneakers.</p>
+                <p className="font-medium text-base">Medicare Plan Chooser</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pick a plan that includes SilverSneakers.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: pick something you would actually do. The best fitness app is the one you open three times a week.
           </p>
         </div>

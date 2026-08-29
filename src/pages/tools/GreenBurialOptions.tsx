@@ -19,7 +19,7 @@ export default function GreenBurialOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Green burial</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NO embalming.</li>
               <li>Biodegradable casket (cardboard, wood, shroud).</li>
               <li>Direct return to earth.</li>
@@ -34,7 +34,7 @@ export default function GreenBurialOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cremation options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Direct cremation</strong> — $500-2,000. Cheapest.</li>
               <li><strong>Aquamation (water cremation)</strong> — $2,500-3,500. More eco-friendly.</li>
               <li><strong>Human composting</strong> — newer, available some states.</li>
@@ -48,7 +48,7 @@ export default function GreenBurialOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find green burial</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Green Burial Council</strong> — greenburialcouncil.org.</li>
               <li>Find certified providers.</li>
               <li>200+ green cemeteries USA.</li>
@@ -62,7 +62,7 @@ export default function GreenBurialOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why green</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No toxic embalming chemicals.</li>
               <li>Conservation land protected.</li>
               <li>Cheaper.</li>
@@ -77,7 +77,7 @@ export default function GreenBurialOptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Veteran burial</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>National cemeteries — free for veterans.</li>
               <li>Includes spouse.</li>
               <li>See /tools/national-cemetery-burial.</li>
@@ -90,7 +90,7 @@ export default function GreenBurialOptions() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save with planning</h3>
-            <p className="text-sm text-muted-foreground">Pre-plan funeral = save $5K-10K vs grieving family decisions. Write wishes. Tell family. Pre-pay if want (with reputable funeral home). Don&apos;t over-pay for traditional if don&apos;t want. Many seniors find green burial deeply meaningful.</p>
+            <p className="text-base text-muted-foreground">Pre-plan funeral = save $5K-10K vs grieving family decisions. Write wishes. Tell family. Pre-pay if want (with reputable funeral home). Don&apos;t over-pay for traditional if don&apos;t want. Many seniors find green burial deeply meaningful.</p>
           </CardContent>
         </Card>
       </main>

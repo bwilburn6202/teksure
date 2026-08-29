@@ -22,7 +22,7 @@ export default function SeniorComposting2() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Worm bin</h2><p>$80. Indoor red worms. No smell. Nutrient-rich.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">City pickup</h2><p>Many cities have free compost pickup. Check with city.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip these</h2><p>Meat, dairy, oily food. Attracts pests.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Tumbler is best senior compost. No effort. Steady supply.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Tumbler is best senior compost. No effort. Steady supply.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

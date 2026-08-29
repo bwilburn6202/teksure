@@ -19,15 +19,15 @@ export default function SafeWithdrawalRate() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">The classic "4% rule"</h2>
-            <p className="text-sm">From a famous 1994 study (Bengen). For a 30-year retirement, withdraw 4% of your initial portfolio in year 1, then adjust for inflation each year. Historically — high success rate.</p>
-            <p className="text-sm mt-2">Example: $1,000,000 portfolio. Year 1: take $40,000. If inflation is 3%, year 2: $41,200.</p>
+            <p className="text-base">From a famous 1994 study (Bengen). For a 30-year retirement, withdraw 4% of your initial portfolio in year 1, then adjust for inflation each year. Historically — high success rate.</p>
+            <p className="text-base mt-2">Example: $1,000,000 portfolio. Year 1: take $40,000. If inflation is 3%, year 2: $41,200.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Updated thinking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>3.3-3.7%</strong> may be safer for current low-yield environment, says Morningstar 2024.</li>
               <li><strong>5-5.5%</strong> may be okay if you start a "guard rails" plan — flex up/down based on market.</li>
               <li><strong>For longer retirements (40 years)</strong>, lower the starting rate to 3-3.5%.</li>
@@ -39,33 +39,33 @@ export default function SafeWithdrawalRate() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bucket strategy — popular alternative</h2>
-            <p className="text-sm mb-2">Split retirement money into 3 buckets:</p>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <p className="text-base mb-2">Split retirement money into 3 buckets:</p>
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bucket 1 (1-2 years of expenses)</strong> — cash + money market. Spend from this.</li>
               <li><strong>Bucket 2 (3-7 years)</strong> — bonds and bond funds. Refill bucket 1.</li>
               <li><strong>Bucket 3 (8+ years)</strong> — stocks. Long-term growth. Refill bucket 2.</li>
             </ul>
-            <p className="text-sm mt-2">If stocks crash, you don\'t sell — you spend from buckets 1 and 2 while stocks recover.</p>
+            <p className="text-base mt-2">If stocks crash, you don\'t sell — you spend from buckets 1 and 2 while stocks recover.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Order of withdrawal — taxes matter</h2>
-            <p className="text-sm">For a couple with traditional IRA + Roth IRA + taxable brokerage, conventional wisdom:</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="text-base">For a couple with traditional IRA + Roth IRA + taxable brokerage, conventional wisdom:</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Spend taxable brokerage first (uses up old gains, makes room for withdrawals).</li>
               <li>Then Traditional IRA / 401(k) (forced withdrawals start at 73 anyway).</li>
               <li>Save Roth IRA for last (no RMDs, tax-free heir money).</li>
             </ol>
-            <p className="text-sm mt-2">Real strategies are more nuanced — Roth conversions in 60s can save lots of tax later. Run by a fee-only advisor.</p>
+            <p className="text-base mt-2">Real strategies are more nuanced — Roth conversions in 60s can save lots of tax later. Run by a fee-only advisor.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free tools</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Empower (free)</strong> — has retirement planner with Monte Carlo simulation.</li>
               <li><strong>Vanguard Retirement Planner</strong> — free for account holders.</li>
               <li><strong>Schwab Retirement Calculator</strong>.</li>
@@ -78,7 +78,7 @@ export default function SafeWithdrawalRate() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get a real plan</h3>
-            <p className="text-sm text-muted-foreground">For decisions this big, pay a one-time fee-only fiduciary advisor ($1,000-3,000). They build a 30-year plan accounting for Social Security, inflation, taxes, RMDs, healthcare. Worth far more than the fee. Find at NAPFA.org.</p>
+            <p className="text-base text-muted-foreground">For decisions this big, pay a one-time fee-only fiduciary advisor ($1,000-3,000). They build a 30-year plan accounting for Social Security, inflation, taxes, RMDs, healthcare. Worth far more than the fee. Find at NAPFA.org.</p>
           </CardContent>
         </Card>
       </main>

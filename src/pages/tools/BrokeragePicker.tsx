@@ -29,7 +29,7 @@ export default function BrokeragePicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">For most retirees</h2>
-            <p className="text-sm">Pick ONE big broker (Vanguard, Fidelity, or Schwab) and consolidate. They\'re all SIPC-insured, all charge $0 commissions on stocks/ETFs, all offer help over the phone. You don\'t need accounts at three different places.</p>
+            <p className="text-base">Pick ONE big broker (Vanguard, Fidelity, or Schwab) and consolidate. They\'re all SIPC-insured, all charge $0 commissions on stocks/ETFs, all offer help over the phone. You don\'t need accounts at three different places.</p>
           </CardContent>
         </Card>
 
@@ -38,8 +38,8 @@ export default function BrokeragePicker() {
             <Card key={p.name}>
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{p.name}</h3>
-                <p className="text-sm mb-1"><strong>Best:</strong> {p.best}</p>
-                <p className="text-sm text-muted-foreground"><strong>Cons:</strong> {p.cons}</p>
+                <p className="text-base mb-1"><strong>Best:</strong> {p.best}</p>
+                <p className="text-base text-muted-foreground"><strong>Cons:</strong> {p.cons}</p>
               </CardContent>
             </Card>
           ))}
@@ -48,29 +48,29 @@ export default function BrokeragePicker() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Should you consolidate?</h2>
-            <p className="text-sm mb-2">If you have accounts at 3-4 brokers from old jobs and IRA rollovers — consolidating to ONE saves headaches:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">If you have accounts at 3-4 brokers from old jobs and IRA rollovers — consolidating to ONE saves headaches:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>One statement, one tax form.</li>
               <li>Easier RMD calculations.</li>
               <li>One login for spouse/heirs to learn.</li>
               <li>Sometimes better client tier (Fidelity Premium, Schwab Pinnacle) at higher balances.</li>
             </ul>
-            <p className="text-sm mt-2">To consolidate: at the receiving broker, fill out an "ACAT transfer" form. Brokers move the assets in 5-10 days. No tax event for "in-kind" transfers.</p>
+            <p className="text-base mt-2">To consolidate: at the receiving broker, fill out an "ACAT transfer" form. Brokers move the assets in 5-10 days. No tax event for "in-kind" transfers.</p>
           </CardContent>
         </Card>
 
         <Card className="mt-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">A word of warning on advisor fees</h2>
-            <p className="text-sm">If a "financial advisor" charges 1% of assets per year — on a $1M portfolio that\'s $10,000/year. Over 20 years of retirement: $200,000+ to that advisor. Often you can do better with a fee-only fiduciary (one-time $300-1000 plan) plus self-managing simple index funds.</p>
-            <p className="text-sm mt-2">Fee-only fiduciaries: search NAPFA.org. Vanguard Personal Advisor at 0.30%/year is also popular and much cheaper than the typical advisor.</p>
+            <p className="text-base">If a "financial advisor" charges 1% of assets per year — on a $1M portfolio that\'s $10,000/year. Over 20 years of retirement: $200,000+ to that advisor. Often you can do better with a fee-only fiduciary (one-time $300-1000 plan) plus self-managing simple index funds.</p>
+            <p className="text-base mt-2">Fee-only fiduciaries: search NAPFA.org. Vanguard Personal Advisor at 0.30%/year is also popular and much cheaper than the typical advisor.</p>
           </CardContent>
         </Card>
 
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">If you don\'t have a broker — open a free Schwab or Fidelity account. Both are excellent for retirees. Vanguard if you\'re happy holding a few index funds and don\'t need much hand-holding.</p>
+            <p className="text-base text-muted-foreground">If you don\'t have a broker — open a free Schwab or Fidelity account. Both are excellent for retirees. Vanguard if you\'re happy holding a few index funds and don\'t need much hand-holding.</p>
           </CardContent>
         </Card>
       </main>

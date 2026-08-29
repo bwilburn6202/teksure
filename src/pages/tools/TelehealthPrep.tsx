@@ -131,7 +131,7 @@ export default function TelehealthPrep() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <Video className="h-8 w-8 text-blue-600" />
+                <Video className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Telehealth Visit Prep</h1>
@@ -146,7 +146,7 @@ export default function TelehealthPrep() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5 flex items-center justify-between flex-wrap gap-3">
-              <p className="text-sm text-muted-foreground">{done.size} of {total} done</p>
+              <p className="text-base text-muted-foreground">{done.size} of {total} done</p>
               <Button onClick={printIt} variant="outline" size="sm" className="gap-2">
                 <Printer className="h-4 w-4" /> Print this checklist
               </Button>
@@ -163,7 +163,7 @@ export default function TelehealthPrep() {
                   </div>
                   <div>
                     <h2 className="text-xl font-bold">{s.title}</h2>
-                    {s.when && <p className="text-xs text-muted-foreground italic">{s.when}</p>}
+                    {s.when && <p className="text-sm text-muted-foreground italic">{s.when}</p>}
                   </div>
                 </div>
                 <Card className="border-border">
@@ -176,8 +176,8 @@ export default function TelehealthPrep() {
                           }`}>
                           <Checkbox checked={done.has(item.id)} onCheckedChange={() => toggle(item.id)} className="mt-1" />
                           <div className="flex-1">
-                            <p className={`font-medium text-sm ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
-                            <p className="text-xs text-muted-foreground mt-1">{item.detail}</p>
+                            <p className={`font-medium text-base ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
+                            <p className="text-sm text-muted-foreground mt-1">{item.detail}</p>
                           </div>
                         </label>
                       ))}
@@ -194,9 +194,9 @@ export default function TelehealthPrep() {
               <div className="space-y-3">
                 {APPS.map(a => (
                   <div key={a.name} className="p-3 rounded-lg border border-border">
-                    <p className="font-medium text-sm">{a.name}</p>
-                    <p className="text-xs text-muted-foreground mt-0.5"><strong>Used by:</strong> {a.who}</p>
-                    <p className="text-xs text-muted-foreground mt-1">{a.setup}</p>
+                    <p className="font-medium text-base">{a.name}</p>
+                    <p className="text-sm text-muted-foreground mt-0.5"><strong>Used by:</strong> {a.who}</p>
+                    <p className="text-sm text-muted-foreground mt-1">{a.setup}</p>
                   </div>
                 ))}
               </div>
@@ -207,16 +207,16 @@ export default function TelehealthPrep() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/hospital-discharge-kit" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Hospital Discharge Kit</p>
-                <p className="text-xs text-muted-foreground mt-0.5">After a hospital stay.</p>
+                <p className="font-medium text-base">Hospital Discharge Kit</p>
+                <p className="text-sm text-muted-foreground mt-0.5">After a hospital stay.</p>
               </Link>
               <Link to="/tools/medicare-plan-chooser" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Medicare Plan Chooser</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pick the right plan.</p>
+                <p className="font-medium text-base">Medicare Plan Chooser</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pick the right plan.</p>
               </Link>
               <Link to="/caregiver" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Caregiver Hub</p>
-                <p className="text-xs text-muted-foreground mt-0.5">More health-tech help.</p>
+                <p className="font-medium text-base">Caregiver Hub</p>
+                <p className="text-sm text-muted-foreground mt-0.5">More health-tech help.</p>
               </Link>
             </div>
           </div>
@@ -226,12 +226,12 @@ export default function TelehealthPrep() {
         <div className="hidden print:block px-8 py-6 text-sm">
           <header className="border-b-2 border-black pb-3 mb-5">
             <h1 className="text-2xl font-bold">Telehealth Visit Prep Checklist</h1>
-            <p className="text-xs text-gray-600 mt-1">From TekSure.com</p>
+            <p className="text-sm text-muted-foreground mt-1">From TekSure.com</p>
           </header>
           {SECTIONS.map(s => (
             <section key={s.id} className="mb-4 break-inside-avoid">
               <h2 className="font-bold uppercase tracking-wider text-xs mb-1">{s.title}</h2>
-              {s.when && <p className="text-xs text-gray-600 italic mb-1">{s.when}</p>}
+              {s.when && <p className="text-sm text-muted-foreground italic mb-1">{s.when}</p>}
               <ul className="space-y-1">
                 {s.items.map(item => (
                   <li key={item.id} className="leading-snug">

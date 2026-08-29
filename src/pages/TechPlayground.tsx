@@ -114,7 +114,7 @@ function MousePlayground() {
       <div className="flex items-center justify-between">
         <div>
           <h3 className="font-semibold text-lg">Mouse Practice Area</h3>
-          <p className="text-sm text-muted-foreground">Exercise {currentExercise + 1} of {mouseExercises.length}</p>
+          <p className="text-base text-muted-foreground">Exercise {currentExercise + 1} of {mouseExercises.length}</p>
         </div>
         <Badge variant={completed.length === mouseExercises.length ? 'default' : 'secondary'}>
           {completed.length}/{mouseExercises.length} complete
@@ -126,7 +126,7 @@ function MousePlayground() {
       <div className="bg-muted/30 rounded-2xl p-6 min-h-[300px]">
         <div className="mb-4 p-4 bg-primary/10 rounded-xl border border-primary/20">
           <p className="font-medium text-primary">{exercise.instruction}</p>
-          <p className="text-sm text-muted-foreground mt-1"> {exercise.hint}</p>
+          <p className="text-base text-muted-foreground mt-1"> {exercise.hint}</p>
         </div>
 
         <div className="flex flex-wrap gap-4">
@@ -174,7 +174,7 @@ function MousePlayground() {
                 }}
                 className="w-full h-2 bg-muted rounded-lg appearance-none cursor-pointer"
               />
-              <p className="text-sm text-muted-foreground mt-2 text-center">
+              <p className="text-base text-muted-foreground mt-2 text-center">
                 Drag to the right — {sliderPosition}%
               </p>
             </div>
@@ -237,12 +237,12 @@ function FormPlayground() {
 
   return (
     <div className="space-y-6">
-      <div className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl p-4">
+      <div className="bg-warn border border-warn-foreground/25 rounded-xl p-4">
         <div className="flex items-start gap-2">
-          <Shield className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+          <Shield className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
           <div>
-            <p className="font-medium text-amber-800 dark:text-amber-200">Safe Practice Environment</p>
-            <p className="text-sm text-amber-700 dark:text-amber-300">
+            <p className="font-medium text-warn-foreground ">Safe Practice Environment</p>
+            <p className="text-base text-warn-foreground ">
               This form doesn't actually send anywhere. Practice entering information safely!
             </p>
           </div>
@@ -252,7 +252,7 @@ function FormPlayground() {
       <div className="grid md:grid-cols-2 gap-6">
         <div className="space-y-4">
           <div>
-            <label className="text-sm font-medium mb-1.5 block">Your Name</label>
+            <label className="text-base font-medium mb-1.5 block">Your Name</label>
             <input
               type="text"
               value={formData.name}
@@ -263,7 +263,7 @@ function FormPlayground() {
           </div>
           
           <div>
-            <label className="text-sm font-medium mb-1.5 block">Email Address</label>
+            <label className="text-base font-medium mb-1.5 block">Email Address</label>
             <input
               type="email"
               value={formData.email}
@@ -278,7 +278,7 @@ function FormPlayground() {
               {showEmailHint ? 'Hide tip' : 'What makes a good email?'}
             </button>
             {showEmailHint && (
-              <p className="text-sm text-muted-foreground mt-2 bg-muted p-3 rounded-lg">
+              <p className="text-base text-muted-foreground mt-2 bg-muted p-3 rounded-lg">
                 A good email has two parts: your name + the email service. 
                 Example: john@gmail.com — "john" is your name, "gmail.com" is the service.
               </p>
@@ -286,7 +286,7 @@ function FormPlayground() {
           </div>
 
           <div>
-            <label className="text-sm font-medium mb-1.5 block">Phone Number</label>
+            <label className="text-base font-medium mb-1.5 block">Phone Number</label>
             <input
               type="tel"
               value={formData.phone}
@@ -310,7 +310,7 @@ function FormPlayground() {
               ) : (
                 <div className="h-5 w-5 rounded-full border-2 border-muted" />
               )}
-              <span className="text-sm">Name: At least 2 characters</span>
+              <span className="text-base">Name: At least 2 characters</span>
             </div>
             <div className="flex items-center gap-2">
               {formData.email.includes('@') && formData.email.includes('.') ? (
@@ -318,7 +318,7 @@ function FormPlayground() {
               ) : (
                 <div className="h-5 w-5 rounded-full border-2 border-muted" />
               )}
-              <span className="text-sm">Email: Contains @ and .</span>
+              <span className="text-base">Email: Contains @ and .</span>
             </div>
             <div className="flex items-center gap-2">
               {formData.phone.length >= 10 ? (
@@ -326,14 +326,14 @@ function FormPlayground() {
               ) : (
                 <div className="h-5 w-5 rounded-full border-2 border-muted" />
               )}
-              <span className="text-sm">Phone: At least 10 digits</span>
+              <span className="text-base">Phone: At least 10 digits</span>
             </div>
           </div>
 
           {score > 0 && (
             <div className={`mt-6 p-4 rounded-xl text-center ${score === 3 ? 'bg-teksure-success/10' : 'bg-primary/10'}`}>
               <p className="font-bold text-lg">{score}/3 correct!</p>
-              <p className="text-sm text-muted-foreground mt-1">
+              <p className="text-base text-muted-foreground mt-1">
                 {score === 3 ? 'Perfect! Your form is ready to submit.' : 'Keep trying to get all three correct!'}
               </p>
             </div>
@@ -385,7 +385,7 @@ function KeyboardPlayground() {
             </div>
           ))}
           {pressedKeys.length === 0 && (
-            <p className="text-sm text-muted-foreground">Start typing...</p>
+            <p className="text-base text-muted-foreground">Start typing...</p>
           )}
         </div>
 
@@ -399,18 +399,18 @@ function KeyboardPlayground() {
       <div className="grid sm:grid-cols-3 gap-4">
         <div className="glass-card p-4 text-center">
           <Keyboard className="h-6 w-6 mx-auto mb-2 text-primary" />
-          <p className="text-sm font-medium">Type keys</p>
-          <p className="text-xs text-muted-foreground">A-Z, numbers, symbols</p>
+          <p className="text-base font-medium">Type keys</p>
+          <p className="text-sm text-muted-foreground">A-Z, numbers, symbols</p>
         </div>
         <div className="glass-card p-4 text-center">
           <span className="text-lg font-bold">Ctrl / </span>
-          <p className="text-sm font-medium">Modifier keys</p>
-          <p className="text-xs text-muted-foreground">Combine with others</p>
+          <p className="text-base font-medium">Modifier keys</p>
+          <p className="text-sm text-muted-foreground">Combine with others</p>
         </div>
         <div className="glass-card p-4 text-center">
           <Settings className="h-6 w-6 mx-auto mb-2 text-muted-foreground" />
-          <p className="text-sm font-medium">Special keys</p>
-          <p className="text-xs text-muted-foreground">Shift, Tab, Enter</p>
+          <p className="text-base font-medium">Special keys</p>
+          <p className="text-sm text-muted-foreground">Shift, Tab, Enter</p>
         </div>
       </div>
     </div>
@@ -506,7 +506,7 @@ const TechPlayground = () => {
                     </CardHeader>
                     <CardContent>
                       <CardTitle className="text-base mb-1">{module.title}</CardTitle>
-                      <p className="text-sm text-muted-foreground mb-3">{module.description}</p>
+                      <p className="text-base text-muted-foreground mb-3">{module.description}</p>
                       <div className="flex items-center gap-2 text-xs text-muted-foreground">
                         <span>{module.duration}</span>
                         {completedModules.includes(module.id) && (
@@ -527,7 +527,7 @@ const TechPlayground = () => {
             <div className="mt-12 text-center">
               <div className="inline-flex items-center gap-2 p-4 bg-muted/30 rounded-2xl">
                 <Shield className="h-5 w-5 text-teksure-success" />
-                <span className="text-sm">100% safe — nothing you do here affects your real devices</span>
+                <span className="text-base">100% safe — nothing you do here affects your real devices</span>
               </div>
             </div>
           </TabsContent>

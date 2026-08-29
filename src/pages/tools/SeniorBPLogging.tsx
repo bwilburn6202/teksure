@@ -22,7 +22,7 @@ export default function SeniorBPLogging() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to log</h2><p>Same time daily. Morning before meds. Sit 5 min first.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Two readings</h2><p>1 minute apart. Average for accuracy.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share with doctor</h2><p>Email PDF before visit. Better data than &ldquo;I felt off.&rdquo;</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Two weeks of readings tells doctor more than 5 office visits.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Two weeks of readings tells doctor more than 5 office visits.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

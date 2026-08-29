@@ -22,7 +22,7 @@ export default function SeniorWoodCarving() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Dremel</h2><p>$80. Power carver. Easier on arthritic hands.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior wood clubs</h2><p>Most cities. Free or low fee. Senior wisdom shared.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sell on Etsy</h2><p>Many carvers earn $200+/month from hobby.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Whittle while watching TV. Productive hobby.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Whittle while watching TV. Productive hobby.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

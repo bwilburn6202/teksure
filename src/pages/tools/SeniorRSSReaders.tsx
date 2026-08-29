@@ -21,8 +21,8 @@ export default function SeniorRSSReaders() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">NetNewsWire</h2><p>FREE on iPhone/Mac. No tracking. Simplest.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why use RSS</h2><p>No algorithms deciding what you see. Pure chronological from sources you choose.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Add a feed</h2><p>Most websites have RSS link. Or paste URL into reader — finds RSS automatically.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior favorites</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>NYT Cooking</li><li>AARP Bulletin</li><li>Smithsonian Magazine</li><li>National Geographic</li></ul></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Replaces social media for news junkies. Less distraction, more substance.</p></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior favorites</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>NYT Cooking</li><li>AARP Bulletin</li><li>Smithsonian Magazine</li><li>National Geographic</li></ul></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Replaces social media for news junkies. Less distraction, more substance.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

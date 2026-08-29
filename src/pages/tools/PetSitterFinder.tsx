@@ -30,10 +30,10 @@ export default function PetSitterFinder() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function PetSitterFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: Rover</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Largest network nationwide.</li>
               <li>Background-checked sitters.</li>
               <li>Reviews + photos.</li>
@@ -56,7 +56,7 @@ export default function PetSitterFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sitter screening</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read 10+ reviews.</li>
               <li>Look for repeat customers.</li>
               <li>Meet-and-greet first.</li>
@@ -70,7 +70,7 @@ export default function PetSitterFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before you leave</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vet contact info.</li>
               <li>Medication schedule.</li>
               <li>Emergency contact.</li>
@@ -85,7 +85,7 @@ export default function PetSitterFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">In-home vs boarding</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>In-home — less stress for pet.</li>
               <li>Daily routines kept.</li>
               <li>Less risk of illness.</li>
@@ -99,7 +99,7 @@ export default function PetSitterFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Trade with neighbors / friends.</li>
               <li>Family for big trips.</li>
               <li>Trusted Housesitters — free.</li>
@@ -113,7 +113,7 @@ export default function PetSitterFinder() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Trust your camera</h3>
-            <p className="text-sm text-muted-foreground">Pet camera ($50-150) — Furbo, Petcube. Watch sitter visits. Photo + audio updates. Phone app. Brings peace of mind. See pet thriving while gone. Travel without guilt. Pet stays in routine while you have peace.</p>
+            <p className="text-base text-muted-foreground">Pet camera ($50-150) — Furbo, Petcube. Watch sitter visits. Photo + audio updates. Phone app. Brings peace of mind. See pet thriving while gone. Travel without guilt. Pet stays in routine while you have peace.</p>
           </CardContent>
         </Card>
       </main>

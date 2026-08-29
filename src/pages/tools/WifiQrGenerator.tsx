@@ -188,22 +188,22 @@ export default function WifiQrGenerator() {
         <div className="hidden print:block">
           <div className="text-center py-12 px-8">
             <h1 className="text-5xl font-bold mb-4">Welcome!</h1>
-            <p className="text-2xl mb-10 text-gray-700">Scan here to join our WiFi</p>
+            <p className="text-2xl mb-10 text-foreground">Scan here to join our WiFi</p>
             {qr && (
               <div className="flex justify-center mb-10">
                 <canvas
                   ref={printCanvasRef}
-                  className="border-4 border-black p-4 bg-white"
+                  className="border-4 border-black p-4 bg-card"
                   aria-label="WiFi QR code"
                 />
               </div>
             )}
-            <div className="text-2xl space-y-3 text-gray-800">
+            <div className="text-2xl space-y-3 text-foreground">
               <p><strong>Network:</strong> {form.ssid || '—'}</p>
               {form.security !== 'nopass' && form.password && (
                 <p><strong>Password:</strong> {form.password}</p>
               )}
-              <p className="text-lg text-gray-600 mt-8">
+              <p className="text-lg text-muted-foreground mt-8">
                 Don't have a QR scanner? Open your phone's camera and point it at the code.
               </p>
             </div>
@@ -239,7 +239,7 @@ export default function WifiQrGenerator() {
                 <Label htmlFor="ssid" className="block text-lg font-semibold mb-2">
                   Network name (SSID)
                 </Label>
-                <p className="text-sm text-muted-foreground mb-2">
+                <p className="text-base text-muted-foreground mb-2">
                   The name that shows up when you look for WiFi — usually printed on the
                   bottom of your router.
                 </p>
@@ -258,7 +258,7 @@ export default function WifiQrGenerator() {
                 <Label htmlFor="password" className="block text-lg font-semibold mb-2">
                   Password
                 </Label>
-                <p className="text-sm text-muted-foreground mb-2">
+                <p className="text-base text-muted-foreground mb-2">
                   Type it exactly as it appears on your router. Capital letters matter.
                 </p>
                 <div className="relative">
@@ -297,7 +297,7 @@ export default function WifiQrGenerator() {
                 <Label htmlFor="security" className="block text-lg font-semibold mb-2">
                   Security type
                 </Label>
-                <p className="text-sm text-muted-foreground mb-2">
+                <p className="text-base text-muted-foreground mb-2">
                   Not sure? Leave it on the first one — that's what almost every home network uses.
                 </p>
                 <Select
@@ -312,7 +312,7 @@ export default function WifiQrGenerator() {
                       <SelectItem key={o.value} value={o.value} className="text-base py-3">
                         <div className="flex flex-col items-start">
                           <span className="font-medium">{o.label}</span>
-                          <span className="text-xs text-muted-foreground">{o.hint}</span>
+                          <span className="text-sm text-muted-foreground">{o.hint}</span>
                         </div>
                       </SelectItem>
                     ))}
@@ -331,7 +331,7 @@ export default function WifiQrGenerator() {
                   <Label htmlFor="hidden" className="text-base font-semibold cursor-pointer">
                     This is a hidden network
                   </Label>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     Only check this if your WiFi doesn't show up in the normal list — most
                     home networks aren't hidden.
                   </p>
@@ -347,14 +347,14 @@ export default function WifiQrGenerator() {
                 <QrIcon className="h-5 w-5 text-primary" aria-hidden="true" />
                 Your WiFi QR code
               </h2>
-              <p className="text-sm text-muted-foreground mb-5">
+              <p className="text-base text-muted-foreground mb-5">
                 The code updates automatically as you type.
               </p>
 
               {hasContent && qr && svg ? (
                 <>
                   <div className="flex justify-center">
-                    <div className="rounded-xl bg-white p-5 border-2 border-border shadow-sm inline-block">
+                    <div className="rounded-xl bg-card p-5 border-2 border-border shadow-sm inline-block">
                       {/* SVG for crisp on-screen display */}
                       <svg
                         viewBox={`0 0 ${svg.size} ${svg.size}`}
@@ -379,17 +379,17 @@ export default function WifiQrGenerator() {
                     </p>
                     <dl className="grid gap-3 text-xl">
                       <div>
-                        <dt className="text-sm text-muted-foreground">Network name</dt>
+                        <dt className="text-base text-muted-foreground">Network name</dt>
                         <dd className="font-mono font-semibold break-all">{form.ssid}</dd>
                       </div>
                       {form.security !== 'nopass' && form.password && (
                         <div>
-                          <dt className="text-sm text-muted-foreground">Password</dt>
+                          <dt className="text-base text-muted-foreground">Password</dt>
                           <dd className="font-mono font-semibold break-all">{form.password}</dd>
                         </div>
                       )}
                       <div>
-                        <dt className="text-sm text-muted-foreground">Security</dt>
+                        <dt className="text-base text-muted-foreground">Security</dt>
                         <dd className="text-base">{securityLabel}</dd>
                       </div>
                     </dl>
@@ -405,7 +405,7 @@ export default function WifiQrGenerator() {
                     <Button size="lg" variant="outline" onClick={copyImage} className="gap-2">
                       {copyStatus === 'copied' ? (
                         <>
-                          <ClipboardCheck className="h-5 w-5 text-green-600" aria-hidden="true" /> Copied!
+                          <ClipboardCheck className="h-5 w-5 text-success-foreground" aria-hidden="true" /> Copied!
                         </>
                       ) : (
                         <>
@@ -415,7 +415,7 @@ export default function WifiQrGenerator() {
                     </Button>
                   </div>
                   {copyStatus === 'error' && (
-                    <p className="mt-3 text-sm text-amber-700 dark:text-amber-400">
+                    <p className="mt-3 text-base text-warn-foreground ">
                       Your browser didn't allow copying images. Try downloading the PNG instead.
                     </p>
                   )}
@@ -451,7 +451,7 @@ export default function WifiQrGenerator() {
                   </li>
                 ))}
               </ol>
-              <p className="text-sm text-muted-foreground mt-4 flex items-start gap-2">
+              <p className="text-base text-muted-foreground mt-4 flex items-start gap-2">
                 <Info className="h-4 w-4 mt-0.5 shrink-0" aria-hidden="true" />
                 Most iPhones and Android phones from the last 7 or 8 years can do this
                 straight from the Camera app — no extra app needed.
@@ -478,14 +478,14 @@ export default function WifiQrGenerator() {
           </Card>
 
           {/* Privacy */}
-          <Card className="mb-6 border-2 border-green-300 bg-green-50 dark:bg-green-950/30 dark:border-green-800">
+          <Card className="mb-6 border-2 border-success-foreground/25 bg-success ">
             <CardContent className="p-5 flex gap-3">
-              <Lock className="h-6 w-6 text-green-700 dark:text-green-400 shrink-0" aria-hidden="true" />
+              <Lock className="h-6 w-6 text-success-foreground shrink-0" aria-hidden="true" />
               <div>
-                <p className="font-semibold text-green-900 dark:text-green-200 mb-1">
+                <p className="font-semibold text-success-foreground mb-1">
                   Your password never leaves this page
                 </p>
-                <p className="text-sm text-green-900/90 dark:text-green-200/90">
+                <p className="text-base text-green-900/90 dark:text-green-200/90">
                   The QR code is built right inside your web browser. Nothing you type here
                   is uploaded, stored, or shared — you could even unplug your internet and
                   this page would still work.
@@ -495,14 +495,14 @@ export default function WifiQrGenerator() {
           </Card>
 
           {/* Safety reminder */}
-          <Card className="mb-6 border-2 border-amber-300 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-800">
+          <Card className="mb-6 border-2 border-warn-foreground/25 bg-warn ">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-6 w-6 text-amber-700 dark:text-amber-400 shrink-0" aria-hidden="true" />
+              <AlertTriangle className="h-6 w-6 text-warn-foreground shrink-0" aria-hidden="true" />
               <div>
-                <p className="font-semibold text-amber-900 dark:text-amber-200 mb-1">
+                <p className="font-semibold text-warn-foreground mb-1">
                   A quick safety thought
                 </p>
-                <p className="text-sm text-amber-900/90 dark:text-amber-200/90">
+                <p className="text-base text-amber-900/90 dark:text-amber-200/90">
                   Anyone who can see the printed code can join your network. Keep the sign
                   in places you trust — inside your home, at a family gathering, or a
                   private office — rather than in a shop window. If you'd like a separate

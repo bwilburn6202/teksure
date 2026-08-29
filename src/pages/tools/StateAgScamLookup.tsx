@@ -1187,12 +1187,12 @@ export default function StateAgScamLookup() {
         </div>
 
         {/* ── Freeze credit first callout ── */}
-        <Alert className="mb-8 border-2 border-red-300 bg-red-50 dark:bg-red-950/30 dark:border-red-800">
-          <Lock className="h-5 w-5 text-red-700 dark:text-red-300" aria-hidden="true" />
-          <AlertTitle className="text-lg font-bold text-red-900 dark:text-red-100">
+        <Alert className="mb-8 border-2 border-danger-foreground/25 bg-danger ">
+          <Lock className="h-5 w-5 text-danger-foreground " aria-hidden="true" />
+          <AlertTitle className="text-lg font-bold text-danger-foreground ">
             Identity theft? Freeze your credit first — before you file anything.
           </AlertTitle>
-          <AlertDescription className="text-base text-red-900 dark:text-red-100 mt-2 space-y-2">
+          <AlertDescription className="text-base text-danger-foreground mt-2 space-y-2">
             <p>
               A credit freeze blocks new accounts from being opened in your name. It is free at all
               three bureaus and takes a few minutes each.
@@ -1238,10 +1238,10 @@ export default function StateAgScamLookup() {
         </Alert>
 
         {/* ── Decision tree wizard ── */}
-        <Card className="mb-8 border-2 border-blue-300 bg-blue-50/60 dark:bg-blue-950/30 dark:border-blue-800">
+        <Card className="mb-8 border-2 border-info-foreground/25 bg-blue-50/60 dark:bg-blue-950/30 ">
           <CardContent className="p-5 sm:p-7">
             <div className="flex items-center justify-between mb-4 flex-wrap gap-2">
-              <h2 className="text-2xl font-bold flex items-center gap-2 text-blue-900 dark:text-blue-100">
+              <h2 className="text-2xl font-bold flex items-center gap-2 text-info-foreground ">
                 <HelpCircle className="h-6 w-6" aria-hidden="true" />
                 I was scammed — where do I report?
               </h2>
@@ -1271,10 +1271,10 @@ export default function StateAgScamLookup() {
                     <button
                       key={i}
                       onClick={() => handleAnswer(opt)}
-                      className="text-left w-full rounded-xl border-2 border-blue-200 dark:border-blue-800 bg-white dark:bg-slate-900 hover:border-blue-500 dark:hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/50 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors px-4 py-3 min-h-14 flex items-center justify-between gap-3"
+                      className="text-left w-full rounded-xl border-2 border-info-foreground/25 bg-card hover:border-blue-500 hover:bg-info focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors px-4 py-3 min-h-14 flex items-center justify-between gap-3"
                     >
                       <span className="text-base sm:text-lg">{opt.label}</span>
-                      <ChevronRight className="h-5 w-5 text-blue-600 dark:text-blue-400 shrink-0" aria-hidden="true" />
+                      <ChevronRight className="h-5 w-5 text-info-foreground shrink-0" aria-hidden="true" />
                     </button>
                   ))}
                 </div>
@@ -1294,7 +1294,7 @@ export default function StateAgScamLookup() {
 
             {wizardResult && (
               <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-100 text-emerald-900 dark:bg-emerald-900/40 dark:text-emerald-100 font-semibold text-sm mb-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-success text-success-foreground font-semibold text-sm mb-4">
                   <ShieldCheck className="h-4 w-4" aria-hidden="true" />
                   File with these agencies
                 </div>
@@ -1304,10 +1304,10 @@ export default function StateAgScamLookup() {
                     return (
                       <li
                         key={a.id}
-                        className="rounded-xl border-2 border-blue-200 dark:border-blue-800 bg-white dark:bg-slate-900 p-4"
+                        className="rounded-xl border-2 border-info-foreground/25 bg-card p-4"
                       >
                         <div className="flex items-start gap-3">
-                          <div className="shrink-0 h-10 w-10 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-700 dark:text-blue-300">
+                          <div className="shrink-0 h-10 w-10 rounded-lg bg-info flex items-center justify-center text-info-foreground ">
                             <Icon className="h-5 w-5" aria-hidden="true" />
                           </div>
                           <div className="flex-1 min-w-0">
@@ -1339,7 +1339,7 @@ export default function StateAgScamLookup() {
                     );
                   })}
                 </ul>
-                <div className="mt-4 p-3 rounded-lg bg-blue-100/60 dark:bg-blue-900/30 text-sm text-blue-900 dark:text-blue-100">
+                <div className="mt-4 p-3 rounded-lg bg-blue-100/60 dark:bg-blue-900/30 text-sm text-info-foreground ">
                   <strong>Tip:</strong> File with all of the above — each agency tracks different
                   things. Your State AG (pick it below) also belongs on most lists.
                 </div>
@@ -1409,16 +1409,16 @@ export default function StateAgScamLookup() {
                 href={`tel:${state.hotline.replace(/\D/g, '')}`}
                 className="rounded-xl border-2 border-border bg-background hover:border-primary p-4 min-h-14 flex items-start gap-3 transition-colors"
               >
-                <div className="shrink-0 h-10 w-10 rounded-lg bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center text-emerald-700 dark:text-emerald-300">
+                <div className="shrink-0 h-10 w-10 rounded-lg bg-success flex items-center justify-center text-success-foreground ">
                   <Phone className="h-5 w-5" aria-hidden="true" />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-semibold text-muted-foreground">
+                  <p className="text-base font-semibold text-muted-foreground">
                     Consumer Protection hotline
                   </p>
                   <p className="text-lg font-bold">{state.hotline}</p>
                   {state.hotlineNote && (
-                    <p className="text-sm text-muted-foreground">{state.hotlineNote}</p>
+                    <p className="text-base text-muted-foreground">{state.hotlineNote}</p>
                   )}
                 </div>
               </a>
@@ -1428,11 +1428,11 @@ export default function StateAgScamLookup() {
                 rel="noreferrer noopener"
                 className="rounded-xl border-2 border-border bg-background hover:border-primary p-4 min-h-14 flex items-start gap-3 transition-colors"
               >
-                <div className="shrink-0 h-10 w-10 rounded-lg bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center text-blue-700 dark:text-blue-300">
+                <div className="shrink-0 h-10 w-10 rounded-lg bg-info flex items-center justify-center text-info-foreground ">
                   <FileText className="h-5 w-5" aria-hidden="true" />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-semibold text-muted-foreground">
+                  <p className="text-base font-semibold text-muted-foreground">
                     Online complaint form
                   </p>
                   <p className="text-lg font-bold inline-flex items-center gap-1">
@@ -1444,11 +1444,11 @@ export default function StateAgScamLookup() {
                 href={`tel:${state.apsHotline.replace(/\D/g, '')}`}
                 className="rounded-xl border-2 border-border bg-background hover:border-primary p-4 min-h-14 flex items-start gap-3 transition-colors"
               >
-                <div className="shrink-0 h-10 w-10 rounded-lg bg-rose-100 dark:bg-rose-900/40 flex items-center justify-center text-rose-700 dark:text-rose-300">
+                <div className="shrink-0 h-10 w-10 rounded-lg bg-danger flex items-center justify-center text-danger-foreground ">
                   <HandHeart className="h-5 w-5" aria-hidden="true" />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-semibold text-muted-foreground">
+                  <p className="text-base font-semibold text-muted-foreground">
                     Adult Protective Services (elder abuse)
                   </p>
                   <p className="text-lg font-bold">{state.apsHotline}</p>
@@ -1460,11 +1460,11 @@ export default function StateAgScamLookup() {
                 rel="noreferrer noopener"
                 className="rounded-xl border-2 border-border bg-background hover:border-primary p-4 min-h-14 flex items-start gap-3 transition-colors"
               >
-                <div className="shrink-0 h-10 w-10 rounded-lg bg-indigo-100 dark:bg-indigo-900/40 flex items-center justify-center text-indigo-700 dark:text-indigo-300">
+                <div className="shrink-0 h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary ">
                   <Globe className="h-5 w-5" aria-hidden="true" />
                 </div>
                 <div className="min-w-0">
-                  <p className="text-sm font-semibold text-muted-foreground">AG homepage</p>
+                  <p className="text-base font-semibold text-muted-foreground">AG homepage</p>
                   <p className="text-lg font-bold inline-flex items-center gap-1">
                     {state.agWebsite} <ExternalLink className="h-4 w-4" aria-hidden="true" />
                   </p>
@@ -1500,7 +1500,7 @@ export default function StateAgScamLookup() {
             {/* Extras */}
             <div className="grid sm:grid-cols-3 gap-3">
               <div className="rounded-lg border border-border p-3 bg-background">
-                <p className="text-sm font-semibold text-muted-foreground mb-0.5">
+                <p className="text-base font-semibold text-muted-foreground mb-0.5">
                   State Do-Not-Call registry
                 </p>
                 {state.stateDoNotCall ? (
@@ -1527,7 +1527,7 @@ export default function StateAgScamLookup() {
                 )}
               </div>
               <div className="rounded-lg border border-border p-3 bg-background">
-                <p className="text-sm font-semibold text-muted-foreground mb-0.5">
+                <p className="text-base font-semibold text-muted-foreground mb-0.5">
                   2-1-1 help line
                 </p>
                 <p className="text-base">
@@ -1541,7 +1541,7 @@ export default function StateAgScamLookup() {
                 </p>
               </div>
               <div className="rounded-lg border border-border p-3 bg-background">
-                <p className="text-sm font-semibold text-muted-foreground mb-0.5">
+                <p className="text-base font-semibold text-muted-foreground mb-0.5">
                   Small claims limit
                 </p>
                 <p className="text-base font-bold">
@@ -1553,13 +1553,13 @@ export default function StateAgScamLookup() {
         </Card>
 
         {/* ── AARP Fraud Watch Helpline ── */}
-        <Card className="mb-8 border-2 border-amber-300 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-800">
+        <Card className="mb-8 border-2 border-warn-foreground/25 bg-warn ">
           <CardContent className="p-5 sm:p-6 flex flex-col sm:flex-row items-start gap-4">
-            <div className="shrink-0 h-14 w-14 rounded-xl bg-amber-200 dark:bg-amber-900/50 flex items-center justify-center text-amber-800 dark:text-amber-200">
+            <div className="shrink-0 h-14 w-14 rounded-xl bg-amber-200 dark:bg-amber-900/50 flex items-center justify-center text-warn-foreground ">
               <Headphones className="h-7 w-7" aria-hidden="true" />
             </div>
             <div className="flex-1">
-              <h3 className="text-xl font-bold text-amber-900 dark:text-amber-100 mb-1">
+              <h3 className="text-xl font-bold text-warn-foreground mb-1">
                 AARP Fraud Watch Helpline — 1-877-908-3360
               </h3>
               <p className="text-base text-amber-900/90 dark:text-amber-100/90 leading-relaxed">
@@ -1571,7 +1571,7 @@ export default function StateAgScamLookup() {
                 href="https://www.aarp.org/money/scams-fraud/helpline/"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex items-center gap-1 mt-2 text-amber-900 dark:text-amber-100 font-semibold underline hover:no-underline"
+                className="inline-flex items-center gap-1 mt-2 text-warn-foreground font-semibold underline hover:no-underline"
               >
                 AARP Fraud Watch Network <ExternalLink className="h-4 w-4" aria-hidden="true" />
               </a>
@@ -1638,9 +1638,9 @@ export default function StateAgScamLookup() {
         </Card>
 
         {/* ── Multi-agency strategy ── */}
-        <Card className="mb-8 border-2 border-indigo-300 bg-indigo-50/60 dark:bg-indigo-950/30 dark:border-indigo-800">
+        <Card className="mb-8 border-2 border-primary/25 bg-indigo-50/60 dark:bg-indigo-950/30 ">
           <CardContent className="p-5 sm:p-7">
-            <h2 className="text-2xl font-bold mb-3 flex items-center gap-2 text-indigo-900 dark:text-indigo-100">
+            <h2 className="text-2xl font-bold mb-3 flex items-center gap-2 text-primary ">
               <Users className="h-6 w-6" aria-hidden="true" />
               Why report to more than one agency
             </h2>
@@ -1649,7 +1649,7 @@ export default function StateAgScamLookup() {
               has different powers — criminal vs. civil, state vs. federal, complaint-based vs.
               pattern-based.
             </p>
-            <ul className="space-y-3 text-base text-indigo-900 dark:text-indigo-100">
+            <ul className="space-y-3 text-base text-primary ">
               <li className="flex items-start gap-3">
                 <span className="shrink-0 inline-flex items-center justify-center h-7 w-7 rounded-full bg-indigo-600 text-white font-bold text-sm">
                   1
@@ -1723,10 +1723,10 @@ export default function StateAgScamLookup() {
         </Card>
 
         {/* ── Keep records ── */}
-        <Card className="mb-8 border-2 border-slate-300 bg-slate-50 dark:bg-slate-900/50 dark:border-slate-700">
+        <Card className="mb-8 border-2 border-border bg-muted ">
           <CardContent className="p-5 sm:p-6">
             <h3 className="text-xl font-bold mb-3 flex items-center gap-2">
-              <FileText className="h-6 w-6 text-slate-700 dark:text-slate-300" aria-hidden="true" />
+              <FileText className="h-6 w-6 text-foreground " aria-hidden="true" />
               Keep records — at least 3 years
             </h3>
             <p className="text-base mb-3 leading-relaxed">
@@ -1754,14 +1754,14 @@ export default function StateAgScamLookup() {
         </Card>
 
         {/* ── Deceased loved one ── */}
-        <Card className="mb-8 border-2 border-violet-300 bg-violet-50 dark:bg-violet-950/30 dark:border-violet-800">
+        <Card className="mb-8 border-2 border-primary/25 bg-primary/10 ">
           <CardContent className="p-5 sm:p-6">
             <div className="flex items-start gap-3">
-              <div className="shrink-0 h-12 w-12 rounded-xl bg-violet-200 dark:bg-violet-900/50 flex items-center justify-center text-violet-800 dark:text-violet-200">
+              <div className="shrink-0 h-12 w-12 rounded-xl bg-violet-200 dark:bg-violet-900/50 flex items-center justify-center text-primary ">
                 <Heart className="h-6 w-6" aria-hidden="true" />
               </div>
               <div className="flex-1">
-                <h3 className="text-xl font-bold text-violet-900 dark:text-violet-100 mb-1">
+                <h3 className="text-xl font-bold text-primary mb-1">
                   Fraud against a deceased relative
                 </h3>
                 <p className="text-base text-violet-900/90 dark:text-violet-100/90 leading-relaxed mb-3">
@@ -1772,7 +1772,7 @@ export default function StateAgScamLookup() {
                 </p>
                 <Link
                   to="/tools/grief-tech-helper"
-                  className="inline-flex items-center gap-1 text-violet-900 dark:text-violet-100 font-semibold underline hover:no-underline"
+                  className="inline-flex items-center gap-1 text-primary font-semibold underline hover:no-underline"
                 >
                   Open Grief &amp; Digital Aftercare guide
                   <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
@@ -1783,13 +1783,13 @@ export default function StateAgScamLookup() {
         </Card>
 
         {/* ── Scam of the moment ── */}
-        <Card className="mb-8 border-2 border-orange-300 bg-orange-50 dark:bg-orange-950/30 dark:border-orange-800">
+        <Card className="mb-8 border-2 border-warn-foreground/25 bg-warn ">
           <CardContent className="p-5 sm:p-6 flex flex-col sm:flex-row items-start gap-4">
-            <div className="shrink-0 h-14 w-14 rounded-xl bg-orange-200 dark:bg-orange-900/50 flex items-center justify-center text-orange-800 dark:text-orange-200">
+            <div className="shrink-0 h-14 w-14 rounded-xl bg-orange-200 dark:bg-orange-900/50 flex items-center justify-center text-warn-foreground ">
               <Newspaper className="h-7 w-7" aria-hidden="true" />
             </div>
             <div className="flex-1">
-              <h3 className="text-xl font-bold text-orange-900 dark:text-orange-100 mb-1">
+              <h3 className="text-xl font-bold text-warn-foreground mb-1">
                 Scam of the moment
               </h3>
               <p className="text-base text-orange-900/90 dark:text-orange-100/90 leading-relaxed">
@@ -1798,7 +1798,7 @@ export default function StateAgScamLookup() {
               </p>
               <Link
                 to="/scam-alerts"
-                className="inline-flex items-center gap-1 mt-2 text-orange-900 dark:text-orange-100 font-semibold underline hover:no-underline"
+                className="inline-flex items-center gap-1 mt-2 text-warn-foreground font-semibold underline hover:no-underline"
               >
                 Open the scam alerts feed <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
               </Link>
@@ -1829,9 +1829,9 @@ export default function StateAgScamLookup() {
         </Card>
 
         {/* ── Related tools ── */}
-        <Card className="mb-10 border-2 border-emerald-300 bg-emerald-50/60 dark:bg-emerald-950/30 dark:border-emerald-800">
+        <Card className="mb-10 border-2 border-success-foreground/25 bg-emerald-50/60 dark:bg-emerald-950/30 ">
           <CardContent className="p-5 sm:p-6">
-            <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-emerald-900 dark:text-emerald-100">
+            <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-success-foreground ">
               <ArrowUpRight className="h-6 w-6" aria-hidden="true" />
               Related TekSure tools
             </h3>
@@ -1841,10 +1841,10 @@ export default function StateAgScamLookup() {
                 className="rounded-xl border-2 border-border bg-background hover:border-emerald-500 p-4 min-h-14 transition-colors"
               >
                 <p className="font-bold text-base mb-1 inline-flex items-center gap-2">
-                  <ShieldAlert className="h-5 w-5 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
+                  <ShieldAlert className="h-5 w-5 text-success-foreground " aria-hidden="true" />
                   Scam Alerts
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   The latest scams circulating, with plain-language warnings.
                 </p>
               </Link>
@@ -1853,10 +1853,10 @@ export default function StateAgScamLookup() {
                 className="rounded-xl border-2 border-border bg-background hover:border-emerald-500 p-4 min-h-14 transition-colors"
               >
                 <p className="font-bold text-base mb-1 inline-flex items-center gap-2">
-                  <FileSearch className="h-5 w-5 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
+                  <FileSearch className="h-5 w-5 text-success-foreground " aria-hidden="true" />
                   Is This Real?
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Verify a news story, email, deal, or photo before you share or act.
                 </p>
               </Link>
@@ -1865,10 +1865,10 @@ export default function StateAgScamLookup() {
                 className="rounded-xl border-2 border-border bg-background hover:border-emerald-500 p-4 min-h-14 transition-colors"
               >
                 <p className="font-bold text-base mb-1 inline-flex items-center gap-2">
-                  <CreditCard className="h-5 w-5 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
+                  <CreditCard className="h-5 w-5 text-success-foreground " aria-hidden="true" />
                   Refund &amp; Return Helper
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Step-by-step walkthroughs for getting charges reversed or money back.
                 </p>
               </Link>
@@ -1877,10 +1877,10 @@ export default function StateAgScamLookup() {
                 className="rounded-xl border-2 border-border bg-background hover:border-emerald-500 p-4 min-h-14 transition-colors"
               >
                 <p className="font-bold text-base mb-1 inline-flex items-center gap-2">
-                  <Landmark className="h-5 w-5 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
+                  <Landmark className="h-5 w-5 text-success-foreground " aria-hidden="true" />
                   Government Benefits Portal
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Official benefits, forms, and agency phone numbers — no middlemen.
                 </p>
               </Link>

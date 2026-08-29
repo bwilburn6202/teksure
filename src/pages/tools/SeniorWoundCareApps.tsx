@@ -22,7 +22,7 @@ export default function SeniorWoundCareApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Wound photo tracking</h2><p>Take daily photos. Same angle. See if healing or worsening.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Wound clinics</h2><p>Medicare covers. For chronic wounds. Specialists.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Nutrition matters</h2><p>Protein, zinc, vitamin C help wounds heal. Diet affects.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Wound not healing in 2 weeks = see doctor. Especially for diabetics.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Wound not healing in 2 weeks = see doctor. Especially for diabetics.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

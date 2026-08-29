@@ -339,7 +339,7 @@ export default function WarrantyChecker() {
                     className="flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-border bg-card text-center transition-all hover:border-primary/60 hover:bg-primary/5"
                   >
                     <span className="text-3xl">{b.emoji}</span>
-                    <span className="font-medium text-sm">{b.label}</span>
+                    <span className="font-medium text-base">{b.label}</span>
                   </button>
                 ))}
               </div>
@@ -358,7 +358,7 @@ export default function WarrantyChecker() {
                     className="flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-border bg-card text-center transition-all hover:border-primary/60 hover:bg-primary/5"
                   >
                     <span className="text-3xl">{d.emoji}</span>
-                    <span className="font-medium text-sm">{d.label}</span>
+                    <span className="font-medium text-base">{d.label}</span>
                   </button>
                 ))}
               </div>
@@ -384,7 +384,7 @@ export default function WarrantyChecker() {
                     <span className="text-4xl">{brands.find(b => b.id === brand)?.emoji}</span>
                     <div>
                       <h2 className="text-2xl font-bold">{brands.find(b => b.id === brand)?.label} {deviceTypes.find(d => d.id === deviceType)?.label}</h2>
-                      <p className="text-muted-foreground text-sm">Warranty &amp; repair information</p>
+                      <p className="text-muted-foreground text-base">Warranty &amp; repair information</p>
                     </div>
                   </div>
 
@@ -396,9 +396,9 @@ export default function WarrantyChecker() {
                           <Clock className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                           <div>
                             <p className="font-semibold mb-1">Standard warranty period</p>
-                            <p className="text-sm text-muted-foreground">{info.standardPeriod}</p>
+                            <p className="text-base text-muted-foreground">{info.standardPeriod}</p>
                             {info.extendedOption && (
-                              <p className="text-sm text-green-600 dark:text-green-400 mt-1">
+                              <p className="text-base text-success-foreground mt-1">
                                 <strong>Extended option:</strong> {info.extendedOption}
                               </p>
                             )}
@@ -414,10 +414,10 @@ export default function WarrantyChecker() {
                           <Search className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                           <div className="flex-1">
                             <p className="font-semibold mb-2">How to check your warranty</p>
-                            <p className="text-sm text-muted-foreground mb-3">{info.howToCheck}</p>
+                            <p className="text-base text-muted-foreground mb-3">{info.howToCheck}</p>
                             <div className="rounded-lg bg-muted/60 p-3 mb-3">
-                              <p className="text-xs font-semibold text-muted-foreground mb-1"> Where to find your serial number:</p>
-                              <p className="text-sm">{info.serialTip}</p>
+                              <p className="text-sm font-semibold text-muted-foreground mb-1"> Where to find your serial number:</p>
+                              <p className="text-base">{info.serialTip}</p>
                             </div>
                             <Button asChild size="sm">
                               <a href={info.checkUrl} target="_blank" rel="noreferrer">
@@ -460,12 +460,12 @@ export default function WarrantyChecker() {
 
                     {/* Important notes */}
                     {info.importantNotes.length > 0 && (
-                      <Card className="border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/30">
+                      <Card className="border-warn-foreground/25 bg-warn ">
                         <CardContent className="p-4">
-                          <p className="font-semibold text-amber-700 dark:text-amber-400 mb-2"> Important to know</p>
+                          <p className="font-semibold text-warn-foreground mb-2"> Important to know</p>
                           <ul className="space-y-1">
                             {info.importantNotes.map((note, i) => (
-                              <li key={i} className="text-sm text-amber-700/90 dark:text-amber-300/90 flex items-start gap-2">
+                              <li key={i} className="text-base text-amber-700/90 dark:text-amber-300/90 flex items-start gap-2">
                                 <span className="mt-1 shrink-0">•</span>
                                 <span>{note}</span>
                               </li>
@@ -477,10 +477,10 @@ export default function WarrantyChecker() {
                   </div>
 
                   {/* UK Consumer rights reminder */}
-                  <Card className="mb-6 border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-950/30">
+                  <Card className="mb-6 border-info-foreground/25 bg-info ">
                     <CardContent className="p-4">
-                      <p className="font-semibold text-blue-700 dark:text-blue-400 mb-1"> UK Consumer Rights</p>
-                      <p className="text-sm text-blue-700/90 dark:text-blue-300/90">
+                      <p className="font-semibold text-info-foreground mb-1"> UK Consumer Rights</p>
+                      <p className="text-base text-blue-700/90 dark:text-blue-300/90">
                         Under the Consumer Rights Act 2015, goods must be of satisfactory quality and last a reasonable time. You may be entitled to a repair, replacement, or refund for up to 6 years — even after the manufacturer warranty expires. Always contact the <strong>retailer</strong> (shop you bought it from) first, not just the manufacturer.
                       </p>
                     </CardContent>

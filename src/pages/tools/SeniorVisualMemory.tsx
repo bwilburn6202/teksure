@@ -22,7 +22,7 @@ export default function SeniorVisualMemory() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Magic Eye</h2><p>3D pictures. Senior nostalgia. Visual brain workout.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Optical illusions</h2><p>Free online. Test brain&apos;s pattern recognition.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why visual</h2><p>Visual memory often stays sharper than verbal. Train it more.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Photo memory game with grandkids = visual memory + bonding.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Photo memory game with grandkids = visual memory + bonding.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

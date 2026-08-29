@@ -19,7 +19,7 @@ export default function ReturnsRefundsHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best return policies (US, 2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Costco</strong> — basically lifetime, except electronics (90 days). Even open food/perishables.</li>
               <li><strong>L.L.Bean</strong> — 1 year, no receipt needed.</li>
               <li><strong>REI</strong> — 1 year (members).</li>
@@ -33,7 +33,7 @@ export default function ReturnsRefundsHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Standard return rules (most stores)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30-90 days typical. Holiday season often extended.</li>
               <li>Receipt makes everything easier. Take a photo when you buy.</li>
               <li>Original packaging usually required for electronics.</li>
@@ -47,7 +47,7 @@ export default function ReturnsRefundsHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If the store refuses</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Ask politely for a manager.</li>
               <li>Be calm. Explain the issue clearly.</li>
               <li>If still refused, mention "I&apos;d hate to dispute the charge with my credit card."</li>
@@ -61,22 +61,22 @@ export default function ReturnsRefundsHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Credit card chargeback (your secret weapon)</h2>
-            <p className="text-sm">Federal law (Fair Credit Billing Act) lets you dispute any charge on a credit card if:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Federal law (Fair Credit Billing Act) lets you dispute any charge on a credit card if:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Item never arrived.</li>
               <li>Item was damaged or wrong.</li>
               <li>Item materially different from description.</li>
               <li>Service not performed.</li>
               <li>Billed wrong amount.</li>
             </ul>
-            <p className="text-sm mt-3"><strong>Time limit:</strong> 60 days from statement. Call the number on back of card. Say "I want to dispute a charge."</p>
+            <p className="text-base mt-3"><strong>Time limit:</strong> 60 days from statement. Call the number on back of card. Say "I want to dispute a charge."</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online order that never arrived</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Wait until 5 days past promised delivery date.</li>
               <li>Email seller. Give them 7 days to respond/refund.</li>
               <li>If no response — call credit card company. Chargeback.</li>
@@ -89,7 +89,7 @@ export default function ReturnsRefundsHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Extended warranty rights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many credit cards DOUBLE manufacturer warranty for free.</li>
               <li>Visa Signature, Mastercard World Elite, AmEx Platinum, Chase Sapphire — extended warranty included.</li>
               <li>Save receipts in your password manager or photos.</li>
@@ -101,7 +101,7 @@ export default function ReturnsRefundsHowTo() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t accept a "store credit" first</h3>
-            <p className="text-sm text-muted-foreground">Stores often offer store credit when you ask for refund. You don&apos;t have to accept. Politely say "I&apos;d prefer the refund to my card." Most managers honor it. Store credit expires; cash refund doesn&apos;t.</p>
+            <p className="text-base text-muted-foreground">Stores often offer store credit when you ask for refund. You don&apos;t have to accept. Politely say "I&apos;d prefer the refund to my card." Most managers honor it. Store credit expires; cash refund doesn&apos;t.</p>
           </CardContent>
         </Card>
       </main>

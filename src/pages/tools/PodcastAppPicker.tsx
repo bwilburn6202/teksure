@@ -27,7 +27,7 @@ export default function PodcastAppPicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What podcasts are</h2>
-            <p className="text-sm">Free audio shows you listen to like the radio — but on demand. Two million+ shows on every topic from history to gardening to medicine. Most are completely free, supported by ads or listener donations.</p>
+            <p className="text-base">Free audio shows you listen to like the radio — but on demand. Two million+ shows on every topic from history to gardening to medicine. Most are completely free, supported by ads or listener donations.</p>
           </CardContent>
         </Card>
 
@@ -37,10 +37,10 @@ export default function PodcastAppPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -49,7 +49,7 @@ export default function PodcastAppPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Great podcasts to start with (free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>This American Life</strong> — beloved storytelling on NPR. Always good.</li>
               <li><strong>The Daily (NYT)</strong> — 20-minute morning news catch-up.</li>
               <li><strong>Hidden Brain</strong> — psychology, clearly explained.</li>
@@ -67,7 +67,7 @@ export default function PodcastAppPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Listening smart</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Speed up</strong> if you find the host slow — most apps offer 1.25x or 1.5x.</li>
               <li><strong>Download episodes over Wi-Fi</strong> for car trips with no signal.</li>
               <li><strong>Sleep timer</strong> — most apps stop after 20 minutes for bedtime listening.</li>
@@ -79,7 +79,7 @@ export default function PodcastAppPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">First-time tip</h3>
-            <p className="text-sm text-muted-foreground">Open Apple Podcasts or Spotify and search a topic you love — gardening, WWII, baseball, knitting. Pick a show with 4+ stars and listen to one episode. If you like it, "subscribe" — new episodes auto-download.</p>
+            <p className="text-base text-muted-foreground">Open Apple Podcasts or Spotify and search a topic you love — gardening, WWII, baseball, knitting. Pick a show with 4+ stars and listen to one episode. If you like it, "subscribe" — new episodes auto-download.</p>
           </CardContent>
         </Card>
       </main>

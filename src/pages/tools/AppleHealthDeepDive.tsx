@@ -19,7 +19,7 @@ export default function AppleHealthDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Auto-tracked (no work)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Steps + walking distance.</li>
               <li>Flights climbed.</li>
               <li>Walking pace + asymmetry (fall risk).</li>
@@ -34,7 +34,7 @@ export default function AppleHealthDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Manual entries valuable</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Blood pressure (or auto from connected cuff).</li>
               <li>Weight (or auto from smart scale).</li>
               <li>Glucose (auto from CGM).</li>
@@ -49,7 +49,7 @@ export default function AppleHealthDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior key features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Walking Steadiness</strong> — fall risk warning.</li>
               <li><strong>Medical ID</strong> — emergencies see your conditions.</li>
               <li><strong>Health records</strong> — sync with hospital portals.</li>
@@ -63,7 +63,7 @@ export default function AppleHealthDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up Medical ID</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Health app → tap profile photo.</li>
               <li>Tap Medical ID → Edit.</li>
               <li>Add: medical conditions, allergies, medications.</li>
@@ -79,7 +79,7 @@ export default function AppleHealthDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Connect health records</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Health → Health Records → Add Account.</li>
               <li>Search for hospital / clinic.</li>
               <li>Log in with patient portal credentials.</li>
@@ -94,7 +94,7 @@ export default function AppleHealthDeepDive() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Share with family</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Health → Sharing → Share with Someone.</li>
               <li>Choose what to share (steps, heart rate, etc.).</li>
               <li>Family member sees in their Health app.</li>
@@ -108,7 +108,7 @@ export default function AppleHealthDeepDive() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Android equivalent</h3>
-            <p className="text-sm text-muted-foreground"><strong>Google Fit</strong> + <strong>Samsung Health</strong> — similar features for Android. <strong>MyChart</strong> — patient portal aggregator. <strong>Fitbit Premium</strong> ($10/mo) — health insights. iPhone Health most comprehensive currently. Big advantage of Apple ecosystem for seniors.</p>
+            <p className="text-base text-muted-foreground"><strong>Google Fit</strong> + <strong>Samsung Health</strong> — similar features for Android. <strong>MyChart</strong> — patient portal aggregator. <strong>Fitbit Premium</strong> ($10/mo) — health insights. iPhone Health most comprehensive currently. Big advantage of Apple ecosystem for seniors.</p>
           </CardContent>
         </Card>
       </main>

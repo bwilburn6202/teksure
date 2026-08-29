@@ -19,7 +19,7 @@ export default function OnlineBusinessForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best low-effort starts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Consulting in your career field</strong> — easiest. Existing network + expertise. $50-200/hr.</li>
               <li><strong>Etsy shop</strong> — your craft. Low overhead.</li>
               <li><strong>Online tutoring</strong> — career skills, retired teachers. $20-50/hr.</li>
@@ -34,7 +34,7 @@ export default function OnlineBusinessForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free starter tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Google Workspace</strong> — $7/mo. Email, docs, calendar.</li>
               <li><strong>Stripe / PayPal / Square</strong> — collect money. ~3% fee.</li>
               <li><strong>Square Free Website Builder</strong> — basic site free.</li>
@@ -49,7 +49,7 @@ export default function OnlineBusinessForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SCORE</strong> — free mentoring from retired executives. score.org.</li>
               <li><strong>SBA — Small Business Administration</strong> — free guides + training. sba.gov.</li>
               <li><strong>Local Small Business Development Center</strong> — free 1-on-1 advisors.</li>
@@ -62,7 +62,7 @@ export default function OnlineBusinessForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Legal basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sole proprietor</strong> — simplest. Use your name, file Schedule C with taxes.</li>
               <li><strong>LLC</strong> — $50-300 to file in state. Personal asset protection. Recommended for serious business.</li>
               <li><strong>EIN</strong> — free at IRS.gov. Like SSN for business.</li>
@@ -75,7 +75,7 @@ export default function OnlineBusinessForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Realistic expectations</h3>
-            <p className="text-sm text-muted-foreground">Most senior side businesses earn $200-2,000/month. Few become full-time replacements. That&apos;s OK. Goal isn&apos;t empire — it&apos;s mental engagement, supplemental income, and meaningful work. Expect 6-12 months before consistent income.</p>
+            <p className="text-base text-muted-foreground">Most senior side businesses earn $200-2,000/month. Few become full-time replacements. That&apos;s OK. Goal isn&apos;t empire — it&apos;s mental engagement, supplemental income, and meaningful work. Expect 6-12 months before consistent income.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function AmazonKDPForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is KDP?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Kindle Direct Publishing — Amazon&apos;s self-publishing.</li>
               <li>Free to publish.</li>
               <li>Earn royalties on sales (35–70%).</li>
@@ -33,7 +33,7 @@ export default function AmazonKDPForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors should consider</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Print copies for family — cheaper than vanity press.</li>
               <li>Memoir for grandchildren.</li>
               <li>Novel you always wanted to write.</li>
@@ -47,7 +47,7 @@ export default function AmazonKDPForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Process basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Write book in Word or Google Docs.</li>
               <li>Format using KDP template.</li>
               <li>Design cover (Canva works) or hire designer.</li>
@@ -61,7 +61,7 @@ export default function AmazonKDPForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Publishing — FREE.</li>
               <li>Optional cover designer — $50–$300.</li>
               <li>Optional editor — $200–$2,000.</li>
@@ -75,7 +75,7 @@ export default function AmazonKDPForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For family-only books</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Order author copies at print cost.</li>
               <li>Don&apos;t market or promote.</li>
               <li>Make 5–20 copies for family.</li>
@@ -89,7 +89,7 @@ export default function AmazonKDPForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Help available</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>YouTube — &quot;KDP for beginners&quot; — many free guides.</li>
               <li>Reddit r/selfpublish — community help.</li>
               <li>Hire ghostwriter via Upwork if needed.</li>
@@ -103,7 +103,7 @@ export default function AmazonKDPForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Family heirloom for $50</h3>
-            <p className="text-sm text-muted-foreground">Total cost to make a family memoir book on Amazon KDP: $0 to publish + maybe $50 in author copies for family. The book is professionally printed, available forever (your kids could order more copies in 30 years), and you have full creative control. Beats $2,000 vanity press by far. Worth the time investment for the family legacy.</p>
+            <p className="text-base text-muted-foreground">Total cost to make a family memoir book on Amazon KDP: $0 to publish + maybe $50 in author copies for family. The book is professionally printed, available forever (your kids could order more copies in 30 years), and you have full creative control. Beats $2,000 vanity press by far. Worth the time investment for the family legacy.</p>
           </CardContent>
         </Card>
       </main>

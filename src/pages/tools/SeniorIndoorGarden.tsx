@@ -19,10 +19,10 @@ export default function SeniorIndoorGarden() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AeroGarden Harvest</h2><p>$80-$150. 6 herbs at once. Built-in light. No sun needed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Click and Grow</h2><p>$100-$200. Smaller. Pretty design. Plant pods refills.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lettuce Grow Farmstand</h2><p>$400+. Tall vertical garden. 24-36 plants.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Basil</li><li>Cilantro</li><li>Parsley</li><li>Lettuce</li><li>Cherry tomatoes</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for seniors</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Basil</li><li>Cilantro</li><li>Parsley</li><li>Lettuce</li><li>Cherry tomatoes</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">No skill needed</h2><p>Auto-waters. Auto-light. Just refill water + nutrients monthly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior benefits</h2><p>Fresh herbs without bending. No outdoor work. Year-round.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Place near kitchen. Use herbs same week as picked.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Place near kitchen. Use herbs same week as picked.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

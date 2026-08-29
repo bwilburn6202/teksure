@@ -22,7 +22,7 @@ export default function SeniorWaterTracking() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Health</h2><p>FREE. Built into iPhone. Log water with one tap.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smart bottles</h2><p>HidrateSpark $40-$80. Reminds with light when you haven&apos;t drunk.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Goal</h2><p>Most seniors need 6-8 cups daily. More if hot/medicated.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Big water bottle on counter you must finish daily. Visual reminder works.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Big water bottle on counter you must finish daily. Visual reminder works.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorMattressSensors() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">For caregivers</h2><p>Bed sensors send alerts. Help arrives faster after falls or wandering.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior dignity</h2><p>Better than camera in bedroom. Sensors only detect bed presence.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Insurance</h2><p>Some Medicaid waivers cover medical bed sensors. Ask social worker.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Withings Mat is best dual-purpose: sleep tracking + caregiver alerts.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Withings Mat is best dual-purpose: sleep tracking + caregiver alerts.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,21 +19,21 @@ export default function CreditRepairScamWarning() {
         <Card className="mb-4 border-destructive">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">The truth</h2>
-            <p className="text-sm">Credit repair companies promise to "fix" your credit for $100-200/month. They mostly:</p>
-            <ul className="text-sm list-disc pl-5 mt-2">
+            <p className="text-base">Credit repair companies promise to "fix" your credit for $100-200/month. They mostly:</p>
+            <ul className="text-base list-disc pl-5 mt-2">
               <li>Send dispute letters to bureaus (you can do free).</li>
               <li>Wait for items to age off (happens regardless of payment).</li>
               <li>Sometimes file fake disputes that get reversed when verified.</li>
               <li>String you along for 12-24 months billing $1,200-4,800.</li>
             </ul>
-            <p className="text-sm mt-2 font-semibold">Federal Trade Commission has shut down many. Most are scams.</p>
+            <p className="text-base mt-2 font-semibold">Federal Trade Commission has shut down many. Most are scams.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What works (FREE)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Pay bills on time, every time</strong>. Single biggest factor (35% of score).</li>
               <li><strong>Pay down credit card balances</strong>. Get utilization under 30% — ideally under 10%.</li>
               <li><strong>Dispute errors yourself</strong>. annualcreditreport.com → see your reports → file disputes online with each bureau (Equifax, Experian, TransUnion).</li>
@@ -49,7 +49,7 @@ export default function CreditRepairScamWarning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you DO need help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NFCC.org — National Foundation for Credit Counseling</strong>. Non-profit. Free or low-cost. Real help.</li>
               <li><strong>HUD-approved housing counselors</strong> (hud.gov) — free for housing-related credit issues.</li>
               <li><strong>Legal Aid</strong> — for FCRA disputes / debt harassment. Free for low-income.</li>
@@ -61,7 +61,7 @@ export default function CreditRepairScamWarning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags to walk away from</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>"Guaranteed" results.</li>
               <li>Demands payment upfront before any work (illegal under federal law).</li>
               <li>Tells you to dispute accurate information.</li>
@@ -75,7 +75,7 @@ export default function CreditRepairScamWarning() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Bottom line</h3>
-            <p className="text-sm text-muted-foreground">If your credit is bad, the only real fix is TIME + on-time payments + reduced utilization. No company can magically erase legitimate negative items. Do the work yourself for free, or get help from NFCC. Skip everyone in a TV ad promising "credit repair".</p>
+            <p className="text-base text-muted-foreground">If your credit is bad, the only real fix is TIME + on-time payments + reduced utilization. No company can magically erase legitimate negative items. Do the work yourself for free, or get help from NFCC. Skip everyone in a TV ad promising "credit repair".</p>
           </CardContent>
         </Card>
       </main>

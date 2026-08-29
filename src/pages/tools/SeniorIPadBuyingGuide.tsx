@@ -22,7 +22,7 @@ export default function SeniorIPadBuyingGuide() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">iPad Pro</h2><p>$999+. Most seniors don&apos;t need this. Skip.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">256GB recommended</h2><p>$100 more. Don&apos;t worry about storage filling.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cellular?</h2><p>$130 extra. Worth it if no Wi-Fi when traveling. Most don&apos;t need.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: iPad has bigger screen than iPhone — easier on senior eyes. Best tablet.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: iPad has bigger screen than iPhone — easier on senior eyes. Best tablet.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorTravelTranslationApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Translate</h2><p>Built into iPhone. Side-by-side mode for two people talking.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Microsoft Translator</h2><p>Group chat — up to 100 people, each in their own language.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Practice phrases</h2><p>Save common phrases (&ldquo;Where is the bathroom?&rdquo;) to your phrasebook for quick access.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Increase phone volume before showing translations to a non-English speaker.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Increase phone volume before showing translations to a non-English speaker.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

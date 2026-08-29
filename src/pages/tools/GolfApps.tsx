@@ -32,10 +32,10 @@ export default function GolfApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost ?? a.price}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost ?? a.price}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function GolfApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For different needs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Just yardages</strong> → Hole19 free or Golfshot free.</li>
               <li><strong>Track score + stats</strong> → Golfshot or 18Birdies.</li>
               <li><strong>Real handicap</strong> → TheGrint (free) or USGA GHIN ($45/yr).</li>
@@ -58,7 +58,7 @@ export default function GolfApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Watch / Garmin watch features</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Yardages without taking phone out of pocket.</li>
               <li>Score input via voice ("4" → next hole).</li>
               <li>Heart rate during round.</li>
@@ -71,7 +71,7 @@ export default function GolfApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior tee discounts</h3>
-            <p className="text-sm text-muted-foreground">Most courses offer senior rates (often 20-30% off). Some offer "twilight" rates after 2-3 PM. GolfNow app shows discounted tee times. Many private clubs offer senior memberships at 50%+ off — ask.</p>
+            <p className="text-base text-muted-foreground">Most courses offer senior rates (often 20-30% off). Some offer "twilight" rates after 2-3 PM. GolfNow app shows discounted tee times. Many private clubs offer senior memberships at 50%+ off — ask.</p>
           </CardContent>
         </Card>
       </main>

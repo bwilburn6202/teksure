@@ -19,7 +19,7 @@ export default function HomeInsuranceShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Major insurers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>State Farm — largest US insurer.</li>
               <li>USAA — military families only.</li>
               <li>Allstate.</li>
@@ -33,7 +33,7 @@ export default function HomeInsuranceShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Retired senior discount common (5-10%).</li>
               <li>Loyal customer discount.</li>
               <li>Bundle home + auto = 15-25%.</li>
@@ -47,7 +47,7 @@ export default function HomeInsuranceShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Compare quotes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Get quotes from 3-5 insurers.</li>
               <li>Same coverage levels for fair compare.</li>
               <li>Policygenius — free aggregator.</li>
@@ -61,7 +61,7 @@ export default function HomeInsuranceShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Coverage essentials</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Dwelling coverage = rebuild value.</li>
               <li>Personal property = belongings.</li>
               <li>Liability = if someone hurt at your home.</li>
@@ -75,7 +75,7 @@ export default function HomeInsuranceShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Raise deductible from $500 to $1,000 — save 10%.</li>
               <li>Bundle with auto.</li>
               <li>Update insurer on home improvements.</li>
@@ -89,7 +89,7 @@ export default function HomeInsuranceShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Document inventory</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Video walkthrough of home + belongings.</li>
               <li>Open every closet + drawer.</li>
               <li>Backup to cloud.</li>
@@ -103,7 +103,7 @@ export default function HomeInsuranceShoppingSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Shop every 2-3 years</h3>
-            <p className="text-sm text-muted-foreground">Insurance loyalty rarely pays. After 2-3 years with same insurer, your rate often inflates. Get fresh quotes from competitors. Bring quote to current insurer — often they&apos;ll match. If not, switch. Many seniors save $500-$1,500/year with this routine. Set calendar reminder.</p>
+            <p className="text-base text-muted-foreground">Insurance loyalty rarely pays. After 2-3 years with same insurer, your rate often inflates. Get fresh quotes from competitors. Bring quote to current insurer — often they&apos;ll match. If not, switch. Many seniors save $500-$1,500/year with this routine. Set calendar reminder.</p>
           </CardContent>
         </Card>
       </main>

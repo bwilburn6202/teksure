@@ -19,7 +19,7 @@ export default function SeniorCampingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cabins</strong> — KOA, state parks. With bed.</li>
               <li><strong>Glamping</strong> — luxury safari tents.</li>
               <li><strong>Camper van</strong> — bed + cooking inside.</li>
@@ -33,7 +33,7 @@ export default function SeniorCampingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Camping comfort upgrades</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tall cot</strong> — easier in/out than ground.</li>
               <li><strong>Self-inflating mattress</strong>.</li>
               <li><strong>Power pack</strong> — phone charging.</li>
@@ -48,7 +48,7 @@ export default function SeniorCampingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior National Park Pass</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$80 lifetime for 62+.</li>
               <li>FREE entry all national parks.</li>
               <li>50% off camping at federal sites.</li>
@@ -62,7 +62,7 @@ export default function SeniorCampingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Camp safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t go alone first time.</li>
               <li>Cell signal at site.</li>
               <li>Tell someone where + when.</li>
@@ -78,7 +78,7 @@ export default function SeniorCampingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best senior camping spots</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>State parks — usually flat, accessible.</li>
               <li>KOA campgrounds — amenities.</li>
               <li>National park lodges — premium.</li>
@@ -92,7 +92,7 @@ export default function SeniorCampingGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior camping clubs</h3>
-            <p className="text-sm text-muted-foreground">RV clubs welcome solo seniors. Escapees RV Club. Good Sam. Many seniors find lifelong friends camping. Don&apos;t let age stop you. Modern camping much more comfortable than youth memories.</p>
+            <p className="text-base text-muted-foreground">RV clubs welcome solo seniors. Escapees RV Club. Good Sam. Many seniors find lifelong friends camping. Don&apos;t let age stop you. Modern camping much more comfortable than youth memories.</p>
           </CardContent>
         </Card>
       </main>

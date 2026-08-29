@@ -73,7 +73,7 @@ export default function SleepDiary() {
   const avgQuality = last7.length > 0 ? last7.reduce((s, e) => s + e.quality, 0) / last7.length : 0;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Sleep Diary | TekSure"
         description="Track your sleep for one week. Log bedtime, wake time, quality, and notes. Print for your doctor visit."
@@ -82,10 +82,10 @@ export default function SleepDiary() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Moon className="h-7 w-7 text-indigo-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Sleep Diary</h1>
+            <Moon className="h-7 w-7 text-primary" />
+            <h1 className="text-3xl font-bold text-foreground">Sleep Diary</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Log your sleep each morning for one week. Patterns become much clearer than relying on memory.
           </p>
         </div>
@@ -95,20 +95,20 @@ export default function SleepDiary() {
           <div className="grid grid-cols-3 gap-3 mb-4">
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Nights logged</p>
-                <p className="text-xl font-bold text-indigo-700">{last7.length}/7</p>
+                <p className="text-sm text-muted-foreground">Nights logged</p>
+                <p className="text-xl font-bold text-primary">{last7.length}/7</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Average sleep</p>
-                <p className="text-xl font-bold text-indigo-700">{avgHours.toFixed(1)} hrs</p>
+                <p className="text-sm text-muted-foreground">Average sleep</p>
+                <p className="text-xl font-bold text-primary">{avgHours.toFixed(1)} hrs</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Average quality</p>
-                <p className="text-xl font-bold text-indigo-700">{avgQuality.toFixed(1)} / 5</p>
+                <p className="text-sm text-muted-foreground">Average quality</p>
+                <p className="text-xl font-bold text-primary">{avgQuality.toFixed(1)} / 5</p>
               </CardContent>
             </Card>
           </div>
@@ -154,14 +154,14 @@ export default function SleepDiary() {
               <Label htmlFor="sleep-notes" className="text-base font-medium">Notes (optional)</Label>
               <Input id="sleep-notes" placeholder="e.g. Woke up twice, took 30 minutes to fall asleep" value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base">Log Tonight</Button>
           </CardContent>
         </Card>
 
         {sorted.length > 0 && (
           <div className="mb-3 flex flex-wrap items-center justify-between gap-3 print:hidden">
-            <p className="text-sm text-gray-500">{sorted.length} night{sorted.length !== 1 ? "s" : ""} logged</p>
+            <p className="text-base text-muted-foreground">{sorted.length} night{sorted.length !== 1 ? "s" : ""} logged</p>
             <Button variant="outline" onClick={() => window.print()} className="gap-2">
               <Printer className="h-4 w-4" />
               Print for Doctor
@@ -172,10 +172,10 @@ export default function SleepDiary() {
         {/* Entry list */}
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Moon className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Moon className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No sleep entries yet.</p>
-              <p className="text-sm mt-1">Log last night above to get started.</p>
+              <p className="text-base mt-1">Log last night above to get started.</p>
             </CardContent>
           </Card>
         ) : (
@@ -191,7 +191,7 @@ export default function SleepDiary() {
                     <div key={e.id} className="py-2 flex items-start justify-between gap-2">
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <span className="text-sm font-medium text-gray-700 w-20">{formatDate(e.date)}</span>
+                          <span className="text-sm font-medium text-foreground w-20">{formatDate(e.date)}</span>
                           <Badge variant="secondary" className="text-xs">{hours.toFixed(1)} hrs</Badge>
                           <span className="flex">
                             {[1, 2, 3, 4, 5].map(n => (
@@ -199,15 +199,15 @@ export default function SleepDiary() {
                             ))}
                           </span>
                         </div>
-                        <p className="text-xs text-gray-500 mt-1">
+                        <p className="text-sm text-muted-foreground mt-1">
                           Bed: {formatTime(e.bedtime)} · Wake: {formatTime(e.wakeTime)}
                         </p>
-                        {e.notes && <p className="text-xs text-gray-500 italic mt-0.5">{e.notes}</p>}
+                        {e.notes && <p className="text-sm text-muted-foreground italic mt-0.5">{e.notes}</p>}
                       </div>
                       <Button
                         variant="ghost"
                         size="icon"
-                        className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden"
+                        className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden"
                         onClick={() => remove(e.id)}
                         aria-label="Remove entry"
                       >
@@ -221,15 +221,15 @@ export default function SleepDiary() {
           </Card>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Most adults need 7-9 hours of sleep. If you regularly get less, or if your quality scores are low, bring this diary to your next doctor visit.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

@@ -22,7 +22,7 @@ export default function SeniorSnoreApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why important</h2><p>80% of seniors with sleep apnea are undiagnosed. Apps catch it.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Show doctor</h2><p>Email recordings to your doctor. Real evidence helps diagnosis.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Anti-snore devices</h2><p>If diagnosed: CPAP machine. Most Medicare plans cover.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Track for 1 week. Pattern matters more than one bad night.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Track for 1 week. Pattern matters more than one bad night.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

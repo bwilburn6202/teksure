@@ -124,7 +124,7 @@ export default function Changelog() {
                           <Icon className="h-3 w-3" />
                           {badge.label}
                         </Badge>
-                        <p className="text-sm text-muted-foreground leading-relaxed">{item.text}</p>
+                        <p className="text-base text-muted-foreground leading-relaxed">{item.text}</p>
                       </div>
                     );
                   })}

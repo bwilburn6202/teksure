@@ -348,7 +348,7 @@ export default function StorageCleanup() {
                         className="flex flex-col items-center justify-center gap-2 p-5 rounded-xl border border-border bg-card hover:border-primary hover:shadow-md transition-all"
                       >
                         <span className="text-3xl">{opt.emoji}</span>
-                        <span className="font-medium text-sm">{opt.label}</span>
+                        <span className="font-medium text-base">{opt.label}</span>
                       </button>
                     ))}
                   </div>
@@ -362,7 +362,7 @@ export default function StorageCleanup() {
                         {osOptions.find(o => o.type === os)?.emoji}{' '}
                         {osOptions.find(o => o.type === os)?.label} — Cleanup Checklist
                       </h2>
-                      <p className="text-sm text-muted-foreground">Tick each step as you go</p>
+                      <p className="text-base text-muted-foreground">Tick each step as you go</p>
                     </div>
                     <Button variant="ghost" size="sm" onClick={handleReset} className="text-muted-foreground">
                       <RotateCcw className="h-3.5 w-3.5 mr-1" /> Change
@@ -375,7 +375,7 @@ export default function StorageCleanup() {
                       className="mb-4 p-3 rounded-lg bg-[hsl(var(--teksure-success)/0.1)] border border-[hsl(var(--teksure-success)/0.3)] flex items-center gap-3"
                     >
                       <CheckCircle2 className="h-5 w-5 text-[hsl(var(--teksure-success))] shrink-0" />
-                      <p className="text-sm font-medium">
+                      <p className="text-base font-medium">
                         {completedCount} task{completedCount !== 1 ? 's' : ''} done — estimated saving:{' '}
                         <span className="text-[hsl(var(--teksure-success))]">{formatSize(totalEstimatedMB)}</span>
                       </p>
@@ -403,18 +403,18 @@ export default function StorageCleanup() {
                                 />
                                 <div className="flex-1 min-w-0">
                                   <div className="flex items-center justify-between gap-2 flex-wrap">
-                                    <label htmlFor={task.id} className={`font-semibold text-sm cursor-pointer ${isChecked ? 'line-through text-muted-foreground' : ''}`}>
+                                    <label htmlFor={task.id} className={`font-semibold text-base cursor-pointer ${isChecked ? 'line-through text-muted-foreground' : ''}`}>
                                       <Icon className="inline h-4 w-4 mr-1.5 align-text-bottom" />
                                       {task.title}
                                     </label>
                                     <div className="flex items-center gap-2 shrink-0">
-                                      <Badge variant="outline" className={`text-xs ${task.difficulty === 'Easy' ? 'bg-green-50 text-green-600 border-green-200 dark:bg-green-950/20' : 'bg-orange-50 text-orange-600 border-orange-200 dark:bg-orange-950/20'}`}>
+                                      <Badge variant="outline" className={`text-xs ${task.difficulty === 'Easy' ? 'bg-green-50 text-success-foreground border-success-foreground/25 dark:bg-green-950/20' : 'bg-orange-50 text-warn-foreground border-warn-foreground/25 dark:bg-orange-950/20'}`}>
                                         {task.difficulty}
                                       </Badge>
-                                      <span className="text-xs text-muted-foreground">{formatSize(task.estimatedSpaceMB)}</span>
+                                      <span className="text-sm text-muted-foreground">{formatSize(task.estimatedSpaceMB)}</span>
                                     </div>
                                   </div>
-                                  <p className="text-xs text-muted-foreground mt-0.5">{task.description}</p>
+                                  <p className="text-sm text-muted-foreground mt-0.5">{task.description}</p>
                                   <button
                                     className="mt-2 text-xs text-primary hover:underline flex items-center gap-1"
                                     onClick={() => setExpandedId(isExpanded ? null : task.id)}
@@ -428,7 +428,7 @@ export default function StorageCleanup() {
                                         className="mt-2 space-y-1.5 list-decimal list-inside"
                                       >
                                         {task.steps.map((step, si) => (
-                                          <li key={si} className="text-xs text-foreground/80 leading-relaxed">{step}</li>
+                                          <li key={si} className="text-sm text-foreground/80 leading-relaxed">{step}</li>
                                         ))}
                                       </ol>
                                     )}
@@ -449,7 +449,7 @@ export default function StorageCleanup() {
                         <CardContent className="p-6 text-center">
                           <CheckCircle2 className="h-10 w-10 text-[hsl(var(--teksure-success))] mx-auto mb-2" />
                           <h3 className="font-bold text-lg mb-1">Cleanup complete! </h3>
-                          <p className="text-sm text-muted-foreground mb-3">
+                          <p className="text-base text-muted-foreground mb-3">
                             You've freed up an estimated {formatSize(totalEstimatedMB)} of storage. Your device should feel snappier.
                           </p>
                           <Button asChild variant="outline">

@@ -22,7 +22,7 @@ export default function SeniorBreathingExercises() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Watch breathe</h2><p>FREE. Reminds throughout day. Vibrates to time breaths.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Vagus nerve</h2><p>Long exhales activate. Reduces inflammation.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pulmonary rehab</h2><p>Medicare covers. Breathing for COPD/asthma. Real benefits.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 5 min daily. Lower BP, less anxiety, better sleep. Free.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 5 min daily. Lower BP, less anxiety, better sleep. Free.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

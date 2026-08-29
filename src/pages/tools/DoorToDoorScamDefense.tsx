@@ -22,7 +22,7 @@ export default function DoorToDoorScamDefense() {
               <AlertTriangle className="w-6 h-6 text-destructive shrink-0" />
               <div>
                 <h2 className="font-bold mb-1">Universal rule</h2>
-                <p className="text-sm">Anyone showing up unannounced asking to "inspect" your roof, solar potential, septic, water, or driveway — say no thanks and close the door. Real businesses don\'t cold-canvass neighborhoods. Reputable contractors get work through referrals and Yelp.</p>
+                <p className="text-base">Anyone showing up unannounced asking to "inspect" your roof, solar potential, septic, water, or driveway — say no thanks and close the door. Real businesses don\'t cold-canvass neighborhoods. Reputable contractors get work through referrals and Yelp.</p>
               </div>
             </div>
           </CardContent>
@@ -71,15 +71,15 @@ export default function DoorToDoorScamDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The polite no (memorize this)</h2>
-            <p className="text-sm mb-2">"I don\'t do business at the door. If your company is interested in working with me, please leave a card and I\'ll consider it after I research your reviews. Have a good day."</p>
-            <p className="text-sm">Then close the door. Don\'t be drawn into "let me explain" — there\'s nothing to explain. Real contractors don\'t mind you doing your homework; scammers will keep pushing.</p>
+            <p className="text-base mb-2">"I don\'t do business at the door. If your company is interested in working with me, please leave a card and I\'ll consider it after I research your reviews. Have a good day."</p>
+            <p className="text-base">Then close the door. Don\'t be drawn into "let me explain" — there\'s nothing to explain. Real contractors don\'t mind you doing your homework; scammers will keep pushing.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart preventions</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Video doorbell</strong> (Ring, Nest, Eufy) — see who\'s there before opening. Talk to them through speaker without opening.</li>
               <li><strong>"No Soliciting" sign</strong> — required to be honored in many cities.</li>
               <li><strong>Don\'t hand over ID, cash, or signed paperwork at the door, ever.</strong></li>
@@ -91,7 +91,7 @@ export default function DoorToDoorScamDefense() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Right after a storm, beware "storm chasers"</h3>
-            <p className="text-sm text-muted-foreground">After hurricanes, hail, or tornadoes, out-of-town crews flood neighborhoods. Many do shoddy or no work, demand a deposit, then disappear. ALWAYS use local contractors with a long track record.</p>
+            <p className="text-base text-muted-foreground">After hurricanes, hail, or tornadoes, out-of-town crews flood neighborhoods. Many do shoddy or no work, demand a deposit, then disappear. ALWAYS use local contractors with a long track record.</p>
           </CardContent>
         </Card>
       </main>

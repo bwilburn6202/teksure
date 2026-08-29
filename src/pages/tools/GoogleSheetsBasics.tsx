@@ -19,7 +19,7 @@ export default function GoogleSheetsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Google Sheets?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FREE forever.</li>
               <li>Auto-saves to cloud.</li>
               <li>Share with family.</li>
@@ -33,7 +33,7 @@ export default function GoogleSheetsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Open + create</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to sheets.google.com.</li>
               <li>Sign in with Google account.</li>
               <li>Click &quot;Blank&quot; for new sheet.</li>
@@ -47,7 +47,7 @@ export default function GoogleSheetsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Track expenses.</li>
               <li>Medication schedule.</li>
               <li>Family contacts list.</li>
@@ -62,7 +62,7 @@ export default function GoogleSheetsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Click cell, type, press Enter.</li>
               <li>Bold = Ctrl+B (Cmd+B Mac).</li>
               <li>Make formulas: =SUM(A1:A10).</li>
@@ -76,7 +76,7 @@ export default function GoogleSheetsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Templates save time</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>File &gt; New from template.</li>
               <li>Budget templates built-in.</li>
               <li>To-do list template.</li>
@@ -90,7 +90,7 @@ export default function GoogleSheetsBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Share with family</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Click blue &quot;Share&quot; button.</li>
               <li>Type email address.</li>
               <li>Choose viewer or editor.</li>
@@ -104,7 +104,7 @@ export default function GoogleSheetsBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Help available</h3>
-            <p className="text-sm text-muted-foreground">YouTube — &quot;Google Sheets for beginners&quot;. Help menu in Sheets — top right. Google Help Center. Library has Sheets books. Senior centers offer classes. Cousin or grandkid can show in 30 minutes. Once basics learned — opens countless uses. Free + valuable senior skill.</p>
+            <p className="text-base text-muted-foreground">YouTube — &quot;Google Sheets for beginners&quot;. Help menu in Sheets — top right. Google Help Center. Library has Sheets books. Senior centers offer classes. Cousin or grandkid can show in 30 minutes. Once basics learned — opens countless uses. Free + valuable senior skill.</p>
           </CardContent>
         </Card>
       </main>

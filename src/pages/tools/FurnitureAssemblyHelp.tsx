@@ -19,7 +19,7 @@ export default function FurnitureAssemblyHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pay someone to assemble</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>TaskRabbit</strong> — $50-100 typical. IKEA-certified taskers in cities. Fast.</li>
               <li><strong>Handy.com</strong> — $40-80. Pre-vetted assemblers.</li>
               <li><strong>IKEA in-store</strong> — IKEA partners with TaskRabbit at checkout.</li>
@@ -33,7 +33,7 @@ export default function FurnitureAssemblyHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY tips</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Read ALL instructions BEFORE opening parts bag.</li>
               <li>Lay out all parts. Match to inventory list.</li>
               <li>Don&apos;t fully tighten until ALL parts are in place.</li>
@@ -48,7 +48,7 @@ export default function FurnitureAssemblyHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When things go wrong</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Missing part — every brand has free replacement service. IKEA app, Wayfair chat.</li>
               <li>Stripped screw hole — wood toothpicks + glue, then re-screw.</li>
               <li>Part on backwards — STOP, look at picture twice. Most "wrong" parts are upside down.</li>
@@ -60,7 +60,7 @@ export default function FurnitureAssemblyHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouTube saves the day</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search "[exact item name] assembly" on YouTube.</li>
               <li>Most popular IKEA/Wayfair items have walk-through videos.</li>
               <li>Pause + rewind — way easier than paper instructions.</li>
@@ -72,7 +72,7 @@ export default function FurnitureAssemblyHelp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pre-assembled options</h3>
-            <p className="text-sm text-muted-foreground">Burrow, Joybird, Floyd, Sabai sell premium furniture that assembles in 5-10 min with zero tools. More expensive than IKEA but ZERO assembly nightmare. Worth it for big pieces (sofas, beds) at any age — especially 60+.</p>
+            <p className="text-base text-muted-foreground">Burrow, Joybird, Floyd, Sabai sell premium furniture that assembles in 5-10 min with zero tools. More expensive than IKEA but ZERO assembly nightmare. Worth it for big pieces (sofas, beds) at any age — especially 60+.</p>
           </CardContent>
         </Card>
       </main>

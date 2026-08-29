@@ -278,7 +278,7 @@ export default function CaregiverHub() {
                   <h3 className="font-semibold text-foreground mb-2 leading-snug">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-4 flex-1">
                     {item.description}
                   </p>
                   <Link
@@ -371,7 +371,7 @@ export default function CaregiverHub() {
                       {tool.title}
                     </h3>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-4 flex-1">
                     {tool.description}
                   </p>
                   <Link
@@ -416,8 +416,8 @@ export default function CaregiverHub() {
                       </div>
                       <h3 className="font-semibold text-foreground">{s.topic}</h3>
                     </div>
-                    <p className="text-xs text-muted-foreground/90 italic mb-3">{s.intro}</p>
-                    <blockquote className="border-l-2 border-primary/40 pl-4 text-sm text-foreground/90 leading-relaxed">
+                    <p className="text-sm text-muted-foreground/90 italic mb-3">{s.intro}</p>
+                    <blockquote className="border-l-2 border-primary/40 pl-4 text-base text-foreground/90 leading-relaxed">
                       {s.script}
                     </blockquote>
                   </CardContent>
@@ -438,7 +438,7 @@ export default function CaregiverHub() {
                 <h3 className="text-lg font-bold text-foreground mb-2">
                   Free programs for seniors
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                <p className="text-base text-muted-foreground leading-relaxed mb-5">
                   Affordable Connectivity, discounted phone plans, free tablet programs from AARP,
                   and local library tech classes. Real programs, with real eligibility rules.
                 </p>
@@ -457,7 +457,7 @@ export default function CaregiverHub() {
                   <MessageSquare className="h-5 w-5 text-primary" />
                 </div>
                 <h3 className="text-lg font-bold text-foreground mb-2">Caregiver community</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-5">
+                <p className="text-base text-muted-foreground leading-relaxed mb-5">
                   Ask questions, share what worked, and learn from other people doing exactly what
                   you are doing. Moderated, free, and no judgment.
                 </p>

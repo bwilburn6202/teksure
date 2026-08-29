@@ -22,7 +22,7 @@ export default function SeniorGardenPlannerApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Almanac.com</h2><p>FREE. Old Farmer&apos;s Almanac. Best planting dates for your area.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">USDA Hardiness Zone</h2><p>planthardiness.ars.usda.gov. Type zip — find your zone.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior tip</h2><p>Raised beds save backs. Easier on knees and joints.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Photo every plant when you first plant it. Helps remember what&apos;s where.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Photo every plant when you first plant it. Helps remember what&apos;s where.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

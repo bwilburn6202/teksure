@@ -589,7 +589,7 @@ export default function CaregiverPlannerPack() {
               <Badge className="bg-emerald-600 hover:bg-emerald-700 text-white text-base min-h-8">
                 Printable Pack
               </Badge>
-              <Badge variant="outline" className="text-base min-h-8 border-emerald-300 text-emerald-800 dark:text-emerald-200">
+              <Badge variant="outline" className="text-base min-h-8 border-success-foreground/25 text-success-foreground ">
                 8 pages
               </Badge>
               <BookmarkButton
@@ -623,13 +623,13 @@ export default function CaregiverPlannerPack() {
                     onClick={handlePrintBlankTemplate}
                     size="lg"
                     variant="outline"
-                    className="min-h-14 text-base border-emerald-300"
+                    className="min-h-14 text-base border-success-foreground/25"
                   >
                     <FileCheck className="w-5 h-5 mr-2" />
                     Print blank template
                   </Button>
                 </div>
-                <p className="mt-4 text-sm text-emerald-900/70 dark:text-emerald-100/70">
+                <p className="mt-4 text-base text-emerald-900/70 dark:text-emerald-100/70">
                   Draft saved {savedAt ? `at ${formatDateTime(savedAt)}` : '(nothing saved yet)'} · {filledCount}/6 key fields on page 1
                 </p>
               </div>
@@ -639,9 +639,9 @@ export default function CaregiverPlannerPack() {
 
         {/* ── Privacy reminder ─────────────────────────────────── */}
         <section className="container max-w-6xl mx-auto px-4 -mt-4 md:-mt-6 print:hidden relative z-10">
-          <Alert className="border-2 border-emerald-300 bg-emerald-50 dark:bg-emerald-950/40">
-            <Lock className="h-5 w-5 text-emerald-700 dark:text-emerald-300" />
-            <AlertTitle className="text-emerald-900 dark:text-emerald-100 text-lg">
+          <Alert className="border-2 border-success-foreground/25 bg-success ">
+            <Lock className="h-5 w-5 text-success-foreground " />
+            <AlertTitle className="text-success-foreground text-lg">
               This contains sensitive info. Handle with care.
             </AlertTitle>
             <AlertDescription className="text-emerald-900/90 dark:text-emerald-100/90 text-base">
@@ -652,19 +652,19 @@ export default function CaregiverPlannerPack() {
 
         {/* ── Toolbar ──────────────────────────────────────────── */}
         <section className="container max-w-6xl mx-auto px-4 mt-8 print:hidden">
-          <Card className="border-2 border-emerald-200 dark:border-emerald-900">
+          <Card className="border-2 border-success-foreground/25 ">
             <CardContent className="p-5 md:p-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <h2 className="text-xl font-bold mb-3 flex items-center gap-2">
-                    <Printer className="w-5 h-5 text-emerald-700" />
+                    <Printer className="w-5 h-5 text-success-foreground" />
                     Print selected pages
                   </h2>
                   <div className="grid grid-cols-2 gap-2">
                     {PAGE_META.map((p) => (
                       <label
                         key={p.num}
-                        className="flex items-start gap-2 p-2 rounded border border-border hover:border-emerald-300 cursor-pointer"
+                        className="flex items-start gap-2 p-2 rounded border border-border hover:border-success-foreground/25 cursor-pointer"
                       >
                         <Checkbox
                           checked={selectedPages[p.num] ?? false}
@@ -674,7 +674,7 @@ export default function CaregiverPlannerPack() {
                           className="mt-0.5"
                           aria-label={`Include page ${p.num}: ${p.label}`}
                         />
-                        <span className="text-sm">
+                        <span className="text-base">
                           <span className="font-semibold">P{p.num}.</span> {p.label}
                         </span>
                       </label>
@@ -710,7 +710,7 @@ export default function CaregiverPlannerPack() {
                 </div>
                 <div>
                   <h2 className="text-xl font-bold mb-3 flex items-center gap-2">
-                    <Save className="w-5 h-5 text-emerald-700" />
+                    <Save className="w-5 h-5 text-success-foreground" />
                     Save, back up, or reset
                   </h2>
                   <div className="flex flex-col gap-2">
@@ -740,12 +740,12 @@ export default function CaregiverPlannerPack() {
                     <Button
                       variant="outline"
                       onClick={handleClearAll}
-                      className="justify-start min-h-12 text-base text-red-700 hover:bg-red-50 dark:hover:bg-red-950/30"
+                      className="justify-start min-h-12 text-base text-danger-foreground hover:bg-danger "
                     >
                       <Trash2 className="w-4 h-4 mr-2" />
                       Erase all fields on this device
                     </Button>
-                    <p className="text-xs text-muted-foreground mt-1">
+                    <p className="text-sm text-muted-foreground mt-1">
                       Import replaces every page with the file&apos;s contents. Exporting is the only way to move a draft between devices.
                     </p>
                   </div>
@@ -792,7 +792,7 @@ export default function CaregiverPlannerPack() {
                   />
                   <div className="md:col-span-2">
                     <Label className="text-base font-semibold">SSN</Label>
-                    <div className="mt-1 p-3 rounded border border-dashed border-amber-400 bg-amber-50 dark:bg-amber-950/30 text-sm text-amber-900 dark:text-amber-200">
+                    <div className="mt-1 p-3 rounded border border-dashed border-amber-400 bg-warn text-sm text-warn-foreground ">
                       We don&apos;t store Social Security Numbers in the app, even on your device. Leave the SSN line blank on the digital draft and fill it in by hand after printing.
                     </div>
                   </div>
@@ -1178,8 +1178,8 @@ export default function CaregiverPlannerPack() {
                 label="Account logins summary"
                 description="Usernames only. Passwords live in a password manager — never write them on this page."
               />
-              <Alert className="border-emerald-300 bg-emerald-50 dark:bg-emerald-950/40">
-                <Info className="h-5 w-5 text-emerald-700 dark:text-emerald-300" />
+              <Alert className="border-success-foreground/25 bg-success ">
+                <Info className="h-5 w-5 text-success-foreground " />
                 <AlertTitle>Use a password manager</AlertTitle>
                 <AlertDescription>
                   Need help picking one?{' '}
@@ -1651,14 +1651,14 @@ export default function CaregiverPlannerPack() {
             <CardContent className="p-5 md:p-6">
               <div className="flex items-center justify-between mb-3 flex-wrap gap-2">
                 <h2 className="text-xl font-bold flex items-center gap-2">
-                  <FileText className="w-5 h-5 text-emerald-700" />
+                  <FileText className="w-5 h-5 text-success-foreground" />
                   Live preview — what will print
                 </h2>
                 <Badge variant="secondary" className="text-sm">
                   Showing: {PAGE_META.find((p) => p.key === activeTab)?.label}
                 </Badge>
               </div>
-              <div className="bg-white dark:bg-neutral-100 dark:text-neutral-900 rounded border shadow-inner p-4 md:p-6 max-h-[520px] overflow-auto">
+              <div className="bg-card dark:text-neutral-900 rounded border shadow-inner p-4 md:p-6 max-h-[520px] overflow-auto">
                 <PrintablePage
                   num={PAGE_META.find((p) => p.key === activeTab)?.num ?? 1}
                   data={data}
@@ -1689,7 +1689,7 @@ export default function CaregiverPlannerPack() {
                     key={label}
                     className="border rounded-lg p-3 flex items-center gap-2 bg-emerald-50/50 dark:bg-emerald-950/30"
                   >
-                    <Icon className="w-5 h-5 text-emerald-700 shrink-0" />
+                    <Icon className="w-5 h-5 text-success-foreground shrink-0" />
                     <span className="text-base font-medium">{label}</span>
                   </div>
                 ))}
@@ -1700,31 +1700,31 @@ export default function CaregiverPlannerPack() {
 
         {/* ── Keep it updated ──────────────────────────────────── */}
         <section className="container max-w-6xl mx-auto px-4 mb-12 print:hidden">
-          <Card className="border-2 border-amber-200 dark:border-amber-900 bg-amber-50/50 dark:bg-amber-950/30">
+          <Card className="border-2 border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/30">
             <CardContent className="p-5 md:p-6">
               <h2 className="text-2xl font-bold mb-3 flex items-center gap-2">
-                <RefreshCw className="w-6 h-6 text-amber-700" />
+                <RefreshCw className="w-6 h-6 text-warn-foreground" />
                 Keep it updated
               </h2>
               <ul className="space-y-2 text-base">
                 <li className="flex items-start gap-2">
-                  <Calendar className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
+                  <Calendar className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                   <span>At least once a year — pick a date you&apos;ll remember, like their birthday or New Year&apos;s.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                   <span>After a hospital stay or ER visit.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                   <span>After any new medication, dose change, or new specialist.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                   <span>After a move, a new device purchase, or a cancelled service.</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-amber-700 shrink-0 mt-0.5" />
+                  <CheckCircle2 className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                   <span>After losing someone on the contact tree.</span>
                 </li>
               </ul>
@@ -1785,48 +1785,48 @@ export default function CaregiverPlannerPack() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             <Link
               to="/toolkits/caregiver"
-              className="border rounded-xl p-5 hover:shadow-md hover:border-emerald-300 transition group flex items-start gap-3"
+              className="border rounded-xl p-5 hover:shadow-md hover:border-success-foreground/25 transition group flex items-start gap-3"
             >
-              <Users className="h-6 w-6 text-emerald-700 shrink-0 mt-0.5" />
+              <Users className="h-6 w-6 text-success-foreground shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg">Caregiver toolkit</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   The full hub — guides, tools, and checklists for caregivers.
                 </p>
               </div>
             </Link>
             <Link
               to="/tools/emergency-info-card"
-              className="border rounded-xl p-5 hover:shadow-md hover:border-emerald-300 transition group flex items-start gap-3"
+              className="border rounded-xl p-5 hover:shadow-md hover:border-success-foreground/25 transition group flex items-start gap-3"
             >
-              <AlertTriangle className="h-6 w-6 text-rose-700 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-6 w-6 text-danger-foreground shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg">Emergency Info Card</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Wallet + fridge + lockscreen card for first responders.
                 </p>
               </div>
             </Link>
             <Link
               to="/tools/digital-will-template"
-              className="border rounded-xl p-5 hover:shadow-md hover:border-emerald-300 transition group flex items-start gap-3"
+              className="border rounded-xl p-5 hover:shadow-md hover:border-success-foreground/25 transition group flex items-start gap-3"
             >
-              <FileText className="h-6 w-6 text-indigo-700 shrink-0 mt-0.5" />
+              <FileText className="h-6 w-6 text-primary shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg">Digital Will Template</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   The accounts your family will need, in one document.
                 </p>
               </div>
             </Link>
             <Link
               to="/tools/grief-tech-helper"
-              className="border rounded-xl p-5 hover:shadow-md hover:border-emerald-300 transition group flex items-start gap-3"
+              className="border rounded-xl p-5 hover:shadow-md hover:border-success-foreground/25 transition group flex items-start gap-3"
             >
-              <HeartPulse className="h-6 w-6 text-violet-700 shrink-0 mt-0.5" />
+              <HeartPulse className="h-6 w-6 text-primary shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg">Grief + Digital Aftercare</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   A gentle guide for after a loved one passes.
                 </p>
               </div>
@@ -1929,7 +1929,7 @@ function PageHeader({
       </div>
       <div>
         <h2 className="text-xl md:text-2xl font-bold">{label}</h2>
-        <p className="text-sm md:text-base text-muted-foreground">{description}</p>
+        <p className="text-base md:text-base text-muted-foreground">{description}</p>
       </div>
     </div>
   );
@@ -1997,12 +1997,12 @@ function PrintablePage({
   const headerLabel = PAGE_META.find((p) => p.num === num)?.label ?? '';
 
   return (
-    <div className="cp-printable text-neutral-900">
+    <div className="cp-printable text-foreground">
       <div className="cp-print-heading mb-3">
         <h1 className="cp-print-title text-2xl font-extrabold">
           Caregiver Planner · Page {num}
         </h1>
-        <p className="cp-print-subtitle text-xs text-neutral-600">
+        <p className="cp-print-subtitle text-sm text-muted-foreground">
           {headerLabel} · Keep this in a fireproof box or locked drawer
         </p>
       </div>
@@ -2024,7 +2024,7 @@ type ShowFn = (v: string) => string;
 function Field({ label, value }: { label: string; value: string }) {
   return (
     <div className="mb-2">
-      <div className="cp-print-label text-[10px] uppercase tracking-wide text-neutral-500">
+      <div className="cp-print-label text-[10px] uppercase tracking-wide text-muted-foreground">
         {label}
       </div>
       <div className="cp-print-field border-b border-neutral-700 min-h-[1.4rem] pb-0.5 text-sm">
@@ -2130,7 +2130,7 @@ function PrintablePage2({ data, show }: { data: PlannerData; show: ShowFn }) {
         />
         <FieldBlock label="Medical devices" value={show(p.medicalDevices)} />
       </div>
-      <div className="border-2 border-dashed border-neutral-400 rounded p-2 min-h-24 text-xs text-neutral-500">
+      <div className="border-2 border-dashed border-neutral-400 rounded p-2 min-h-24 text-xs text-muted-foreground">
         Tape or paste insurance card copies here ↑
       </div>
     </div>
@@ -2187,7 +2187,7 @@ function PrintablePage4({ data, show }: { data: PlannerData; show: ShowFn }) {
   const p = data.page4;
   return (
     <div className="space-y-3">
-      <div className="text-xs text-neutral-600 italic">
+      <div className="text-xs text-muted-foreground italic">
         Usernames only. Passwords live in a password manager — never on this page.
       </div>
       <table className="cp-print-table w-full">
@@ -2365,7 +2365,7 @@ function PrintablePage8({ data, show }: { data: PlannerData; show: ShowFn }) {
 function FieldBlock({ label, value }: { label: string; value: string }) {
   return (
     <div className="border border-neutral-400 rounded p-2 min-h-16">
-      <div className="cp-print-label text-[10px] uppercase tracking-wide text-neutral-500 mb-1">
+      <div className="cp-print-label text-[10px] uppercase tracking-wide text-muted-foreground mb-1">
         {label}
       </div>
       <div className="whitespace-pre-wrap text-sm">{value || '\u00A0'}</div>

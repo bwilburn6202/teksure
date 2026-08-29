@@ -19,7 +19,7 @@ export default function SoundbarTVAudioForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why TVs sound bad now</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Modern TVs are slim — speakers are tiny + weak.</li>
               <li>Speakers face down or back, not at viewer.</li>
               <li>Mumbled dialogue common complaint.</li>
@@ -33,7 +33,7 @@ export default function SoundbarTVAudioForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best soundbars for clear dialogue</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Zvox AccuVoice AV203 — $250, designed for hearing loss.</li>
               <li>Boost AccuVoice levels with one button.</li>
               <li>Sonos Beam — $400, premium quality.</li>
@@ -47,7 +47,7 @@ export default function SoundbarTVAudioForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Connect via HDMI ARC port (best).</li>
               <li>Or optical cable.</li>
               <li>Or Bluetooth (lower quality).</li>
@@ -61,7 +61,7 @@ export default function SoundbarTVAudioForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">TV settings to adjust</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Audio output: External Speakers/HDMI.</li>
               <li>Sound mode: Dialogue or Voice.</li>
               <li>Turn off &quot;virtual surround.&quot;</li>
@@ -75,7 +75,7 @@ export default function SoundbarTVAudioForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wireless headphones option</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>TV-specific headphones — Sennheiser RS 175 ($300).</li>
               <li>Or basic Bluetooth headphones with TV transmitter.</li>
               <li>Apple AirPods Pro work with Apple TV.</li>
@@ -89,7 +89,7 @@ export default function SoundbarTVAudioForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hearing aid pairing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Modern hearing aids stream TV directly.</li>
               <li>TV streamer accessory required ($200–$300).</li>
               <li>Phonak, Oticon, ReSound all offer this.</li>
@@ -103,7 +103,7 @@ export default function SoundbarTVAudioForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Zvox is built for seniors</h3>
-            <p className="text-sm text-muted-foreground">If you struggle to hear TV dialogue, the Zvox AccuVoice AV203 ($250) was specifically designed for seniors with hearing loss. It boosts vocal frequencies independently from background music + effects. Six AccuVoice levels — turn it up just for hard-to-hear shows. Many hearing audiologists recommend it as a $250 upgrade that makes TV enjoyable again.</p>
+            <p className="text-base text-muted-foreground">If you struggle to hear TV dialogue, the Zvox AccuVoice AV203 ($250) was specifically designed for seniors with hearing loss. It boosts vocal frequencies independently from background music + effects. Six AccuVoice levels — turn it up just for hard-to-hear shows. Many hearing audiologists recommend it as a $250 upgrade that makes TV enjoyable again.</p>
           </CardContent>
         </Card>
       </main>

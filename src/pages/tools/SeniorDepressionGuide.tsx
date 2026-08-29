@@ -19,7 +19,7 @@ export default function SeniorDepressionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">More common than think</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>20% of seniors have depression.</li>
               <li>Often missed — looks like &quot;just aging.&quot;</li>
               <li>Higher in widowed, isolated, chronically ill.</li>
@@ -33,7 +33,7 @@ export default function SeniorDepressionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior symptoms (different)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Loss of interest (NOT just &quot;sad&quot;).</li>
               <li>Sleep changes (too much or too little).</li>
               <li>Appetite changes.</li>
@@ -49,7 +49,7 @@ export default function SeniorDepressionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tell primary doctor — they screen + refer.</li>
               <li>Medicare covers therapy + meds.</li>
               <li>Psychology Today — find therapist.</li>
@@ -63,7 +63,7 @@ export default function SeniorDepressionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lifestyle helps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily walks (proven antidepressant).</li>
               <li>Social engagement — call/visit weekly.</li>
               <li>Volunteer = sense of purpose.</li>
@@ -79,7 +79,7 @@ export default function SeniorDepressionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Crisis resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>988 Suicide &amp; Crisis Lifeline</strong> — call or text 988. FREE.</li>
               <li><strong>Friendship Line for Seniors</strong> — 1-800-971-0016.</li>
               <li>If unsafe — go to ER.</li>
@@ -93,7 +93,7 @@ export default function SeniorDepressionGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Reach out</h3>
-            <p className="text-sm text-muted-foreground">Depression in seniors highly treatable. SSRIs work well. Therapy proven effective. Don&apos;t suffer in silence — generation often does. Tell ONE person. Doctor, family, friend, hotline. First step hardest. Better days possible.</p>
+            <p className="text-base text-muted-foreground">Depression in seniors highly treatable. SSRIs work well. Therapy proven effective. Don&apos;t suffer in silence — generation often does. Tell ONE person. Doctor, family, friend, hotline. First step hardest. Better days possible.</p>
           </CardContent>
         </Card>
       </main>

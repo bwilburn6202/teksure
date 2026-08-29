@@ -22,7 +22,7 @@ export default function SeniorVoiceMonitoring() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Speak medical info</h2><p>Set up custom: &ldquo;Alexa, I need help.&rdquo; Sends pre-typed message to family.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Drop In</h2><p>Family says &ldquo;Drop in on Mom.&rdquo; Hears her in any room. Welfare check.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Multiple speakers</h2><p>Echo Dot in every room. Voice help reaches you wherever you fall.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 3 Echo Dots ($90 total) cover most homes. Cheaper than monthly monitoring.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 3 Echo Dots ($90 total) cover most homes. Cheaper than monthly monitoring.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -501,7 +501,7 @@ export default function TechConfidenceQuiz() {
                   <Button
                     size="lg"
                     onClick={startQuiz}
-                    className="min-h-14 text-base bg-white text-teal-800 hover:bg-white/90"
+                    className="min-h-14 text-base bg-card text-success-foreground hover:bg-white/90"
                   >
                     Start the 25-question quiz
                     <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
@@ -516,12 +516,12 @@ export default function TechConfidenceQuiz() {
                 </div>
 
                 {priorBest !== null && (
-                  <p className="mt-5 text-sm text-white/90">
+                  <p className="mt-5 text-base text-white/90">
                     Your best so far: <strong>{priorBest}/100</strong>. Room to grow \u2014 or a score to defend.
                   </p>
                 )}
                 {sharedScore !== null && (
-                  <p className="mt-3 text-sm text-white/90">
+                  <p className="mt-3 text-base text-white/90">
                     A friend shared their score: <strong>{sharedScore}/100</strong>. See how your result compares.
                   </p>
                 )}
@@ -531,8 +531,8 @@ export default function TechConfidenceQuiz() {
 
           {/* Encouragement */}
           <section className="container py-10 md:py-12">
-            <Alert className="max-w-4xl mx-auto border-teal-200 bg-teal-50/60 dark:border-teal-900/40 dark:bg-teal-950/20">
-              <Heart className="h-5 w-5 text-teal-700" aria-hidden="true" />
+            <Alert className="max-w-4xl mx-auto border-success-foreground/25 bg-teal-50/60 dark:bg-teal-950/20">
+              <Heart className="h-5 w-5 text-success-foreground" aria-hidden="true" />
               <AlertTitle className="text-base font-semibold">Wherever you are is fine. Everyone started somewhere.</AlertTitle>
               <AlertDescription className="text-base leading-relaxed mt-1">
                 This quiz is a mirror, not a test. Whatever your score, you\u2019ll leave with two or three specific
@@ -544,7 +544,7 @@ export default function TechConfidenceQuiz() {
               <Card>
                 <CardContent className="p-6">
                   <h2 className="text-xl font-semibold mb-3 flex items-center gap-2">
-                    <Sparkles className="h-5 w-5 text-teal-600" aria-hidden="true" />
+                    <Sparkles className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                     How it works
                   </h2>
                   <ul className="space-y-2 text-base leading-relaxed list-disc pl-5">
@@ -559,7 +559,7 @@ export default function TechConfidenceQuiz() {
               <Card>
                 <CardContent className="p-6">
                   <h2 className="text-xl font-semibold mb-3 flex items-center gap-2">
-                    <Trophy className="h-5 w-5 text-amber-500" aria-hidden="true" />
+                    <Trophy className="h-5 w-5 text-warn-foreground" aria-hidden="true" />
                     Five comfort tiers
                   </h2>
                   <ul className="space-y-2 text-base leading-relaxed">
@@ -571,7 +571,7 @@ export default function TechConfidenceQuiz() {
                             <Icon className="h-3.5 w-3.5 mr-1" aria-hidden="true" />
                             {t.name}
                           </Badge>
-                          <span className="text-muted-foreground text-sm">
+                          <span className="text-muted-foreground text-base">
                             {t.min}\u2013{t.max} points
                           </span>
                         </li>
@@ -596,7 +596,7 @@ export default function TechConfidenceQuiz() {
                       <Icon className={`h-6 w-6 ${meta.color}`} aria-hidden="true" />
                       <div>
                         <p className="font-semibold">{meta.label}</p>
-                        <p className="text-xs text-muted-foreground">{meta.short}</p>
+                        <p className="text-sm text-muted-foreground">{meta.short}</p>
                       </div>
                     </div>
                   );
@@ -616,7 +616,7 @@ export default function TechConfidenceQuiz() {
           <section className="container pb-16 md:pb-20">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <HelpCircle className="h-6 w-6 text-teal-600" aria-hidden="true" />
+                <HelpCircle className="h-6 w-6 text-success-foreground" aria-hidden="true" />
                 Common questions
               </h2>
               <Accordion type="single" collapsible className="w-full border rounded-xl">
@@ -683,13 +683,13 @@ export default function TechConfidenceQuiz() {
                   <Smile className="h-5 w-5" aria-hidden="true" />
                   <span className="font-semibold">Tech Confidence Quiz</span>
                 </div>
-                <span className="text-sm text-white/90">
+                <span className="text-base text-white/90">
                   Question {currentIdx + 1} of {total}
                 </span>
               </div>
               <Progress
                 value={progressPct}
-                className="h-3 bg-white/20 [&>div]:bg-white"
+                className="h-3 bg-white/20 [&>div]:bg-card"
                 aria-label={`Progress: ${Math.round(progressPct)} percent complete`}
               />
             </div>
@@ -728,7 +728,7 @@ export default function TechConfidenceQuiz() {
                       onClick={() => pick(c.score)}
                       className={`min-h-14 w-full text-left rounded-xl border-2 px-5 py-4 transition-all text-base leading-snug focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-2 ${
                         isPicked
-                          ? 'border-teal-600 bg-teal-50 dark:bg-teal-950/30 shadow-sm'
+                          ? 'border-teal-600 bg-success shadow-sm'
                           : 'border-border bg-background hover:border-teal-400 hover:bg-muted/40'
                       }`}
                     >
@@ -745,10 +745,10 @@ export default function TechConfidenceQuiz() {
                         </span>
                         <div className="flex-1">
                           <p className="font-medium">{c.label}</p>
-                          <p className="text-sm text-muted-foreground">{c.sub}</p>
+                          <p className="text-base text-muted-foreground">{c.sub}</p>
                         </div>
                         {isPicked && (
-                          <CheckCircle2 className="h-5 w-5 text-teal-600 shrink-0" aria-hidden="true" />
+                          <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0" aria-hidden="true" />
                         )}
                       </div>
                     </button>
@@ -767,7 +767,7 @@ export default function TechConfidenceQuiz() {
                   <ArrowLeft className="mr-2 h-5 w-5" aria-hidden="true" />
                   Back
                 </Button>
-                <span className="text-sm text-muted-foreground" aria-live="polite">
+                <span className="text-base text-muted-foreground" aria-live="polite">
                   {answeredCount} of {total} answered
                 </span>
                 {currentIdx < total - 1 ? (
@@ -902,7 +902,7 @@ export default function TechConfidenceQuiz() {
                         <div className="flex items-center gap-2 mb-2">
                           <Icon className={`h-5 w-5 ${meta.color}`} aria-hidden="true" />
                           <h3 className="font-semibold text-base">{meta.label}</h3>
-                          <span className="ml-auto text-sm font-semibold tabular-nums">
+                          <span className="ml-auto text-base font-semibold tabular-nums">
                             {value}/20
                             <span className="text-muted-foreground font-normal ml-1">({pct}%)</span>
                           </span>
@@ -924,7 +924,7 @@ export default function TechConfidenceQuiz() {
               <Card className="border-l-4 border-l-emerald-500">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                    <Sparkles className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+                    <Sparkles className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                     Your strongest two
                   </h3>
                   <ul className="space-y-2">
@@ -935,7 +935,7 @@ export default function TechConfidenceQuiz() {
                         <li key={s.domain} className="flex items-center gap-2 text-base">
                           <Icon className={`h-4 w-4 ${meta.color}`} aria-hidden="true" />
                           <span className="font-medium">{meta.label}</span>
-                          <span className="ml-auto text-sm text-muted-foreground">{s.total}/20</span>
+                          <span className="ml-auto text-base text-muted-foreground">{s.total}/20</span>
                         </li>
                       );
                     })}
@@ -946,7 +946,7 @@ export default function TechConfidenceQuiz() {
               <Card className="border-l-4 border-l-amber-500">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-lg mb-3 flex items-center gap-2">
-                    <Rocket className="h-5 w-5 text-amber-600" aria-hidden="true" />
+                    <Rocket className="h-5 w-5 text-warn-foreground" aria-hidden="true" />
                     Growing areas
                   </h3>
                   <ul className="space-y-2">
@@ -957,7 +957,7 @@ export default function TechConfidenceQuiz() {
                         <li key={g.domain} className="flex items-center gap-2 text-base">
                           <Icon className={`h-4 w-4 ${meta.color}`} aria-hidden="true" />
                           <span className="font-medium">{meta.label}</span>
-                          <span className="ml-auto text-sm text-muted-foreground">{g.total}/20</span>
+                          <span className="ml-auto text-base text-muted-foreground">{g.total}/20</span>
                         </li>
                       );
                     })}
@@ -992,7 +992,7 @@ export default function TechConfidenceQuiz() {
                             <Badge variant="outline" className="text-xs">{meta.label}</Badge>
                           </div>
                           <h3 className="font-semibold text-base mb-1">{h.title}</h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{h.description}</p>
+                          <p className="text-base text-muted-foreground leading-relaxed">{h.description}</p>
                         </div>
                         <ArrowRight className="h-5 w-5 text-muted-foreground shrink-0" aria-hidden="true" />
                       </div>
@@ -1003,8 +1003,8 @@ export default function TechConfidenceQuiz() {
             </div>
 
             {/* Encouragement */}
-            <Alert className="border-teal-200 bg-teal-50/60 dark:border-teal-900/40 dark:bg-teal-950/20">
-              <Heart className="h-5 w-5 text-teal-700" aria-hidden="true" />
+            <Alert className="border-success-foreground/25 bg-teal-50/60 dark:bg-teal-950/20">
+              <Heart className="h-5 w-5 text-success-foreground" aria-hidden="true" />
               <AlertTitle className="text-base font-semibold">Wherever you are is fine. Everyone started somewhere.</AlertTitle>
               <AlertDescription className="text-base leading-relaxed mt-1">
                 Tech confidence is a skill, not a personality trait. The people in the Tech Wizard tier all started at
@@ -1020,7 +1020,7 @@ export default function TechConfidenceQuiz() {
                 </div>
                 <div className="flex-1 min-w-[12rem]">
                   <p className="font-semibold">Share this quiz with a friend</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     5 minutes of honest self-assessment beats a year of guessing.
                   </p>
                 </div>
@@ -1044,7 +1044,7 @@ export default function TechConfidenceQuiz() {
                         .map((a, i) => (
                           <li
                             key={`${a.date}-${i}`}
-                            className="py-2 flex items-center gap-3 text-sm flex-wrap"
+                            className="py-2 flex items-center gap-3 text-base flex-wrap"
                           >
                             <span className="text-muted-foreground w-40 shrink-0">
                               {new Date(a.date).toLocaleString(undefined, {
@@ -1068,9 +1068,9 @@ export default function TechConfidenceQuiz() {
                 to="/tools"
                 className="rounded-xl border p-5 hover:border-teal-500 hover:bg-muted/40 transition-colors"
               >
-                <Sparkles className="h-6 w-6 text-teal-600 mb-2" aria-hidden="true" />
+                <Sparkles className="h-6 w-6 text-success-foreground mb-2" aria-hidden="true" />
                 <h3 className="font-semibold mb-1">All TekSure tools</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   99+ free tools across safety, learning, health, and more.
                 </p>
               </Link>
@@ -1078,9 +1078,9 @@ export default function TechConfidenceQuiz() {
                 to="/guides"
                 className="rounded-xl border p-5 hover:border-teal-500 hover:bg-muted/40 transition-colors"
               >
-                <Globe className="h-6 w-6 text-indigo-600 mb-2" aria-hidden="true" />
+                <Globe className="h-6 w-6 text-primary mb-2" aria-hidden="true" />
                 <h3 className="font-semibold mb-1">Guide library</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Thousands of plain-English walkthroughs with pictures at every step.
                 </p>
               </Link>
@@ -1088,9 +1088,9 @@ export default function TechConfidenceQuiz() {
                 to="/ai-tutor"
                 className="rounded-xl border p-5 hover:border-teal-500 hover:bg-muted/40 transition-colors"
               >
-                <Star className="h-6 w-6 text-cyan-600 mb-2" aria-hidden="true" />
+                <Star className="h-6 w-6 text-info-foreground mb-2" aria-hidden="true" />
                 <h3 className="font-semibold mb-1">AI Tutor</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   Ask any tech question and get an answer matched to your comfort level.
                 </p>
               </Link>

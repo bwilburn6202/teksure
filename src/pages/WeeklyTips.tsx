@@ -174,23 +174,23 @@ export default function WeeklyTips() {
         {/* ── Hero ─────────────────────────────────────────────────────── */}
         <section className="border-b border-amber-200/70 dark:border-white/10 py-14 md:py-20">
           <div className="container max-w-3xl text-center px-4">
-            <Badge className="mb-5 bg-amber-200/70 text-amber-900 hover:bg-amber-200/70 border-0 px-3 py-1 text-sm dark:bg-amber-900/40 dark:text-amber-100">
+            <Badge className="mb-5 bg-amber-200/70 text-warn-foreground hover:bg-amber-200/70 border-0 px-3 py-1 text-sm dark:bg-amber-900/40 ">
               <Sparkles className="w-4 h-4 mr-1.5" aria-hidden="true" />
               {isViewingCurrent ? 'This week' : 'Archive'}
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 dark:text-white mb-4 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground dark:text-white mb-4 leading-tight">
               This Week at TekSure
             </h1>
-            <p className="text-xl md:text-2xl text-slate-700 dark:text-slate-300 leading-relaxed mb-3">
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed mb-3">
               Five tips to help you stay safer, save money, and get more out of the tech in your life.
             </p>
-            <p className="text-base md:text-lg text-slate-600 dark:text-slate-400 inline-flex items-center gap-2">
+            <p className="text-base md:text-lg text-muted-foreground inline-flex items-center gap-2">
               <Calendar className="h-4 w-4" aria-hidden="true" />
               Week of {weekRange}
               {!isViewingCurrent && (
                 <button
                   onClick={clearWeek}
-                  className="ml-3 text-sm font-semibold text-orange-700 dark:text-orange-400 hover:underline"
+                  className="ml-3 text-sm font-semibold text-warn-foreground hover:underline"
                 >
                   Jump to this week →
                 </button>
@@ -207,7 +207,7 @@ export default function WeeklyTips() {
             return (
               <Card
                 key={`${viewing.year}-${viewing.week}-${tip.id}`}
-                className="rounded-3xl border-2 border-amber-100 dark:border-white/10 bg-white dark:bg-slate-900 shadow-sm hover:shadow-md transition-shadow"
+                className="rounded-3xl border-2 border-amber-100 dark:border-white/10 bg-card shadow-sm hover:shadow-md transition-shadow"
               >
                 <CardContent className="p-7 md:p-9">
                   {/* Top row: icon + category + tip number */}
@@ -225,7 +225,7 @@ export default function WeeklyTips() {
                         >
                           {tip.category}
                         </Badge>
-                        <span className="text-xs font-medium text-slate-500 dark:text-slate-400">
+                        <span className="text-sm font-medium text-muted-foreground ">
                           Tip {idx + 1} of 5
                         </span>
                       </div>
@@ -233,7 +233,7 @@ export default function WeeklyTips() {
                   </div>
 
                   {/* Headline */}
-                  <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-white leading-snug mb-4">
+                  <h2 className="text-xl md:text-2xl font-bold text-foreground dark:text-white leading-snug mb-4">
                     {tip.headline}
                   </h2>
 
@@ -242,7 +242,7 @@ export default function WeeklyTips() {
                     {tip.body.map((p, i) => (
                       <p
                         key={i}
-                        className="text-base md:text-lg text-slate-700 dark:text-slate-300 leading-relaxed"
+                        className="text-base md:text-lg text-foreground leading-relaxed"
                       >
                         {p}
                       </p>
@@ -270,12 +270,12 @@ export default function WeeklyTips() {
         <section className="border-y border-amber-200/70 dark:border-white/10 bg-white/60 dark:bg-slate-950/40 py-12">
           <div className="container max-w-3xl px-4">
             <div className="flex items-center gap-2 mb-6">
-              <ChevronLeft className="h-5 w-5 text-slate-600 dark:text-slate-400" aria-hidden="true" />
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white">
+              <ChevronLeft className="h-5 w-5 text-muted-foreground " aria-hidden="true" />
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground dark:text-white">
                 Previous weeks
               </h2>
             </div>
-            <p className="text-base text-slate-600 dark:text-slate-400 mb-6">
+            <p className="text-base text-muted-foreground mb-6">
               Missed a week? Catch up on recent tips.
             </p>
             <ul className="grid gap-3 sm:grid-cols-2">
@@ -283,19 +283,19 @@ export default function WeeklyTips() {
                 <li key={w.label}>
                   <button
                     onClick={() => goToWeek(w.label)}
-                    className="w-full text-left rounded-2xl border-2 border-amber-100 dark:border-white/10 bg-white dark:bg-slate-900 hover:border-orange-300 dark:hover:border-orange-700 hover:shadow-md transition-all p-5 group"
+                    className="w-full text-left rounded-2xl border-2 border-amber-100 dark:border-white/10 bg-card hover:border-warn-foreground/25 hover:shadow-md transition-all p-5 group"
                   >
                     <div className="flex items-center justify-between gap-3">
                       <div className="min-w-0">
-                        <p className="text-sm font-mono text-slate-500 dark:text-slate-400 mb-1">
+                        <p className="text-base font-mono text-muted-foreground mb-1">
                           {w.label}
                         </p>
-                        <p className="font-semibold text-slate-900 dark:text-white">
+                        <p className="font-semibold text-foreground dark:text-white">
                           {w.range}
                         </p>
                       </div>
                       <ChevronRight
-                        className="h-5 w-5 text-slate-400 group-hover:text-orange-600 group-hover:translate-x-1 transition-all shrink-0"
+                        className="h-5 w-5 text-muted-foreground group-hover:text-warn-foreground group-hover:translate-x-1 transition-all shrink-0"
                         aria-hidden="true"
                       />
                     </div>
@@ -309,13 +309,13 @@ export default function WeeklyTips() {
         {/* ── Subscribe ────────────────────────────────────────────────── */}
         <section className="py-14 md:py-20">
           <div className="container max-w-2xl px-4">
-            <Card className="rounded-3xl border-2 border-orange-200 dark:border-orange-900/40 bg-gradient-to-br from-orange-100 via-amber-50 to-orange-50 dark:from-orange-950/30 dark:via-slate-900 dark:to-amber-950/30 shadow-lg">
+            <Card className="rounded-3xl border-2 border-warn-foreground/25 bg-gradient-to-br from-orange-100 via-amber-50 to-orange-50 dark:from-orange-950/30 dark:via-slate-900 dark:to-amber-950/30 shadow-lg">
               <CardContent className="p-8 md:p-10 text-center">
-                <Mail className="h-10 w-10 mx-auto text-orange-700 dark:text-orange-400 mb-4" aria-hidden="true" />
-                <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-3">
+                <Mail className="h-10 w-10 mx-auto text-warn-foreground mb-4" aria-hidden="true" />
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground dark:text-white mb-3">
                   Want these delivered to your email?
                 </h2>
-                <p className="text-base md:text-lg text-slate-700 dark:text-slate-300 mb-6 leading-relaxed">
+                <p className="text-base md:text-lg text-foreground mb-6 leading-relaxed">
                   One short email every week. Five tips, no fluff, always free.
                   Unsubscribe any time.
                 </p>
@@ -323,7 +323,7 @@ export default function WeeklyTips() {
                 {subscribed ? (
                   <div
                     role="status"
-                    className="inline-flex items-center gap-2 rounded-full bg-emerald-100 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-200 px-5 py-3 font-semibold"
+                    className="inline-flex items-center gap-2 rounded-full bg-success text-success-foreground px-5 py-3 font-semibold"
                   >
                     <CheckCircle2 className="h-5 w-5" aria-hidden="true" />
                     Thanks! We&rsquo;ll send the next tips to your inbox.
@@ -344,7 +344,7 @@ export default function WeeklyTips() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="your@email.com"
-                      className="h-12 text-base rounded-full px-5 bg-white dark:bg-slate-900"
+                      className="h-12 text-base rounded-full px-5 bg-card "
                     />
                     <Button
                       type="submit"
@@ -355,7 +355,7 @@ export default function WeeklyTips() {
                     </Button>
                   </form>
                 )}
-                <p className="text-xs text-slate-500 dark:text-slate-500 mt-4">
+                <p className="text-sm text-muted-foreground mt-4">
                   We don&rsquo;t sell your email. We don&rsquo;t track clicks. Ever.
                 </p>
               </CardContent>
@@ -366,24 +366,24 @@ export default function WeeklyTips() {
         {/* ── Share section ────────────────────────────────────────────── */}
         <section className="pb-20">
           <div className="container max-w-2xl px-4">
-            <Card className="rounded-3xl border-2 border-amber-100 dark:border-white/10 bg-white dark:bg-slate-900">
+            <Card className="rounded-3xl border-2 border-amber-100 dark:border-white/10 bg-card ">
               <CardContent className="p-8 md:p-10">
                 <div className="flex items-start gap-4 mb-5">
-                  <div className="h-12 w-12 rounded-2xl bg-teal-100 dark:bg-teal-950/40 text-teal-900 dark:text-teal-200 flex items-center justify-center shrink-0">
+                  <div className="h-12 w-12 rounded-2xl bg-success text-success-foreground flex items-center justify-center shrink-0">
                     <Share2 className="h-6 w-6" aria-hidden="true" />
                   </div>
                   <div>
-                    <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                    <h2 className="text-2xl font-bold text-foreground dark:text-white mb-2">
                       Send this to a friend
                     </h2>
-                    <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                    <p className="text-base text-foreground leading-relaxed">
                       A little tech help goes a long way. Share this week&rsquo;s tips with someone who&rsquo;d find them useful.
                     </p>
                   </div>
                 </div>
 
-                <div className="rounded-2xl bg-amber-50 dark:bg-slate-950/50 border border-amber-200 dark:border-white/10 p-4 mb-5">
-                  <p className="text-sm text-slate-700 dark:text-slate-300 whitespace-pre-wrap leading-relaxed">
+                <div className="rounded-2xl bg-warn border border-warn-foreground/25 dark:border-white/10 p-4 mb-5">
+                  <p className="text-base text-foreground whitespace-pre-wrap leading-relaxed">
                     {shareText}
                   </p>
                 </div>
@@ -393,7 +393,7 @@ export default function WeeklyTips() {
                     onClick={handleCopyShare}
                     size="lg"
                     variant="outline"
-                    className="rounded-full border-2 border-orange-300 text-orange-900 dark:text-orange-200 dark:border-orange-800 font-semibold h-12 flex-1"
+                    className="rounded-full border-2 border-warn-foreground/25 text-warn-foreground font-semibold h-12 flex-1"
                   >
                     {copied ? (
                       <>

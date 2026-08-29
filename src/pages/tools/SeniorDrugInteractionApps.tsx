@@ -22,7 +22,7 @@ export default function SeniorDrugInteractionApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Critical for seniors</h2><p>Average senior on 5+ meds. Interactions cause 100,000+ hospitalizations yearly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Include OTC and vitamins</h2><p>Tylenol, ibuprofen, fish oil all interact. Add everything.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pharmacist FREE check</h2><p>Bring everything to pharmacist annually. Best human check.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Check before adding any new med. Even &ldquo;harmless&rdquo; supplements interact.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Check before adding any new med. Even &ldquo;harmless&rdquo; supplements interact.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function TapToPaySetup() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why tap-to-pay is safer</h2>
-            <p className="text-sm">Your real card number is NEVER sent to the store. The phone sends a one-time code instead. Even if the store's computers are hacked, your card number doesn't leak. It's the safest way to pay.</p>
+            <p className="text-base">Your real card number is NEVER sent to the store. The phone sends a one-time code instead. Even if the store's computers are hacked, your card number doesn't leak. It's the safest way to pay.</p>
           </CardContent>
         </Card>
 
@@ -35,7 +35,7 @@ export default function TapToPaySetup() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Setting up Apple Pay</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open the <strong>Wallet</strong> app (black with cards).</li>
                 <li>Tap the <strong>+</strong> button in the top right.</li>
                 <li>Tap "Debit or Credit Card" → <strong>Continue</strong>.</li>
@@ -44,7 +44,7 @@ export default function TapToPaySetup() {
                 <li>Done. Your card now lives in Wallet.</li>
               </ol>
               <h4 className="font-bold mt-4 mb-2">How to pay at the register</h4>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Look for the contactless symbol on the card reader (looks like Wi-Fi waves on its side).</li>
                 <li>Double-click the side button on iPhone.</li>
                 <li>Look at the screen (Face ID) or put your finger on the home button (older iPhones).</li>
@@ -59,7 +59,7 @@ export default function TapToPaySetup() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Setting up Google Pay (now called "Google Wallet")</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Install <strong>Google Wallet</strong> from the Play Store (often pre-installed).</li>
                 <li>Open it. Sign in with your Google account.</li>
                 <li>Tap <strong>+ Add to Wallet</strong> → "Payment card".</li>
@@ -68,7 +68,7 @@ export default function TapToPaySetup() {
                 <li>Done. The card is in Google Wallet.</li>
               </ol>
               <h4 className="font-bold mt-4 mb-2">How to pay at the register</h4>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Wake up your phone (no app needed).</li>
                 <li>Hold the phone within 1-2 inches of the contactless reader.</li>
                 <li>You may need to unlock first (PIN, Face, or fingerprint).</li>
@@ -81,7 +81,7 @@ export default function TapToPaySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">What works besides credit cards</h3>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Debit cards</strong> — same way as credit.</li>
               <li><strong>Driver's license</strong> — in some states (Arizona, Maryland, Colorado, etc.) you can store a digital ID.</li>
               <li><strong>Boarding passes</strong> — most airlines support adding to Wallet.</li>
@@ -92,13 +92,13 @@ export default function TapToPaySetup() {
           </CardContent>
         </Card>
 
-        <Card className="bg-green-50 border-green-300 dark:bg-green-950/20 dark:border-green-800">
+        <Card className="bg-success border-success-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <ShieldCheck className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
+              <ShieldCheck className="w-6 h-6 text-success-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">If you lose your phone</h3>
-                <p className="text-sm text-muted-foreground">Your cards are still safe. The phone needs your face or PIN to pay. To be extra sure, sign in to <strong>icloud.com/find</strong> (iPhone) or <strong>android.com/find</strong> and erase the device — your cards are removed from the phone immediately.</p>
+                <p className="text-base text-muted-foreground">Your cards are still safe. The phone needs your face or PIN to pay. To be extra sure, sign in to <strong>icloud.com/find</strong> (iPhone) or <strong>android.com/find</strong> and erase the device — your cards are removed from the phone immediately.</p>
               </div>
             </div>
           </CardContent>

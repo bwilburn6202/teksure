@@ -19,7 +19,7 @@ function SenderAvatar({ sender }: { sender: MessageSender }) {
   }
   if (sender === MessageSender.MODEL) {
     return (
-      <div className="h-8 w-8 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
+      <div className="h-8 w-8 rounded-full bg-success text-success-foreground flex items-center justify-center shrink-0">
         <Bot className="h-4 w-4" />
       </div>
     );
@@ -46,7 +46,7 @@ export default function MessageItem({ message }: { message: ChatMessage }) {
         />
       );
     }
-    return <p className="text-sm whitespace-pre-wrap">{message.text}</p>;
+    return <p className="text-base whitespace-pre-wrap">{message.text}</p>;
   };
 
   /* Bubble styles */
@@ -78,7 +78,7 @@ export default function MessageItem({ message }: { message: ChatMessage }) {
           {/* URL context sources */}
           {isModel && message.urlContext && message.urlContext.length > 0 && (
             <div className="mt-2.5 pt-2.5 border-t border-border">
-              <p className="text-xs font-medium text-muted-foreground mb-1">Sources checked:</p>
+              <p className="text-sm font-medium text-muted-foreground mb-1">Sources checked:</p>
               <ul className="space-y-0.5">
                 {message.urlContext.map((meta: UrlContextMetadataItem, idx: number) => {
                   const status = typeof meta.urlRetrievalStatus === "string"
@@ -98,7 +98,7 @@ export default function MessageItem({ message }: { message: ChatMessage }) {
                       <span
                         className={`ml-1.5 px-1 py-0.5 rounded text-[9px] ${
                           ok
-                            ? "bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-400"
+                            ? "bg-emerald-100 dark:bg-emerald-900/40 text-success-foreground dark:text-emerald-400"
                             : "bg-muted text-muted-foreground"
                         }`}
                       >

@@ -436,7 +436,7 @@ export default function JobSearchTechHub() {
               <Card key={l.title} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{l.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{l.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{l.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -465,7 +465,7 @@ export default function JobSearchTechHub() {
                       <h3 className="font-semibold text-foreground">{b.name}</h3>
                       <Badge variant="secondary" className="text-xs">{b.best}</Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{b.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{b.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -491,7 +491,7 @@ export default function JobSearchTechHub() {
               <Card key={r.name} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{r.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{r.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{r.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -516,7 +516,7 @@ export default function JobSearchTechHub() {
                 <Card key={c.title} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{c.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{c.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{c.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -542,7 +542,7 @@ export default function JobSearchTechHub() {
               <Card key={i.title} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{i.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{i.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{i.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -568,7 +568,7 @@ export default function JobSearchTechHub() {
                 <Card key={ind.industry} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{ind.industry}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{ind.boards}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{ind.boards}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -594,7 +594,7 @@ export default function JobSearchTechHub() {
               <Card key={b.title} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{b.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{b.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{b.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -624,7 +624,7 @@ export default function JobSearchTechHub() {
                       <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">{s.sign}</h3>
-                        <p className="text-sm text-muted-foreground leading-relaxed">{s.detail}</p>
+                        <p className="text-base text-muted-foreground leading-relaxed">{s.detail}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -652,7 +652,7 @@ export default function JobSearchTechHub() {
               <Card key={t.title} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{t.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{t.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{t.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -678,7 +678,7 @@ export default function JobSearchTechHub() {
                 <Card key={g.name} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{g.name}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{g.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{g.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -704,7 +704,7 @@ export default function JobSearchTechHub() {
               <Card key={r.name} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{r.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{r.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{r.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -730,7 +730,7 @@ export default function JobSearchTechHub() {
                 <Card key={n.name} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{n.name}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{n.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{n.description}</p>
                   </CardContent>
                 </Card>
               ))}

@@ -123,7 +123,7 @@ export default function Certificate() {
                       <p className="font-semibold">{p.name}</p>
                       {earned ? <Badge variant="secondary" className="text-xs">Earned </Badge> : <Lock className="h-3.5 w-3.5 text-muted-foreground" />}
                     </div>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       {earned ? `Unlocked — ${total}/${p.required} guides done` : `Complete ${p.required} guides to unlock (${total}/${p.required})`}
                     </p>
                   </div>

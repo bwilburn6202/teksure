@@ -30,10 +30,10 @@ export default function KitchenScalePicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function KitchenScalePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why a kitchen scale</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Better baking</strong> — flour cup measurements vary 30%. Weight is exact.</li>
               <li><strong>Portion control</strong> — for diabetes, weight loss.</li>
               <li><strong>Less dishes</strong> — measure into mixing bowl.</li>
@@ -55,7 +55,7 @@ export default function KitchenScalePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sized + senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pull-out display (OXO) — see weight even when bowl covers display.</li>
               <li>Backlit display — easier to read.</li>
               <li>g/oz toggle button.</li>
@@ -69,7 +69,7 @@ export default function KitchenScalePicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where it really shines</h3>
-            <p className="text-sm text-muted-foreground">Sourdough bread baking, canning jam (need exact sugar ratios), pet food portioning, and packing for shipping. Worth the $25-50 for any one of those uses.</p>
+            <p className="text-base text-muted-foreground">Sourdough bread baking, canning jam (need exact sugar ratios), pet food portioning, and packing for shipping. Worth the $25-50 for any one of those uses.</p>
           </CardContent>
         </Card>
       </main>

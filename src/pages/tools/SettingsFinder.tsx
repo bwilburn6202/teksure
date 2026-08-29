@@ -1005,7 +1005,7 @@ function SettingCard({
             {setting.category}
           </Badge>
         </div>
-        <p className="text-sm text-muted-foreground pt-1">{setting.description}</p>
+        <p className="text-base text-muted-foreground pt-1">{setting.description}</p>
       </CardHeader>
       <CardContent className="space-y-3">
         <div className="space-y-2.5">
@@ -1028,7 +1028,7 @@ function SettingCard({
 
         {related.length > 0 && (
           <div className="pt-2 border-t">
-            <p className="text-xs font-medium text-muted-foreground mb-2">Related settings</p>
+            <p className="text-sm font-medium text-muted-foreground mb-2">Related settings</p>
             <div className="flex flex-wrap gap-1.5">
               {related.map((r) => (
                 <button
@@ -1223,7 +1223,7 @@ export default function SettingsFinder() {
                 >
                   <div className="flex items-center justify-between gap-2">
                     <span className="font-medium">{s.name}</span>
-                    <span className="text-xs text-muted-foreground shrink-0">{s.category}</span>
+                    <span className="text-sm text-muted-foreground shrink-0">{s.category}</span>
                   </div>
                   <p className="text-xs text-muted-foreground truncate">{s.description}</p>
                 </button>
@@ -1289,7 +1289,7 @@ export default function SettingsFinder() {
         {results.length > 0 && (
           <div className="space-y-10">
             {trimmed && (
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 Showing {results.length} {results.length === 1 ? 'match' : 'matches'} for "{trimmed}"
               </p>
             )}
@@ -1309,7 +1309,7 @@ export default function SettingsFinder() {
         {/* Footer help */}
         <div className="mt-16 rounded-xl border bg-muted/40 p-6 max-w-3xl">
           <h3 className="font-semibold mb-1">Can't find what you're looking for?</h3>
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             Settings menus change between software updates and phone brands. If the path here
             doesn't match what you see, ask TekBrain for step-by-step help with your exact device.
           </p>

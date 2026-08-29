@@ -22,7 +22,7 @@ export default function SeniorMyChartGuide() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Message your doctor</h2><p>Free, secure messaging. Most doctors respond in 1-2 business days.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Refill prescriptions</h2><p>Tap Medications → Refill. Doctor approves. Pharmacy fills.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family access</h2><p>Set up &ldquo;Proxy Access&rdquo; so a child or spouse can see your records too.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Print or PDF lab results before doctor visits — easier reference together.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Print or PDF lab results before doctor visits — easier reference together.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

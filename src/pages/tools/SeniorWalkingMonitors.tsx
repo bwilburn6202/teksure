@@ -22,7 +22,7 @@ export default function SeniorWalkingMonitors() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Step goal</h2><p>6,000-8,000 daily for seniors. Studies show benefits at lower than 10,000.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">10,000 myth</h2><p>Came from Japanese marketing in 1960s. Not magic. 6,000 is plenty for benefits.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Track speed</h2><p>Faster walking = more benefit. 100 steps/min is brisk.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Walk after meals. 15 min walks 3x daily = lower blood sugar.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Walk after meals. 15 min walks 3x daily = lower blood sugar.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

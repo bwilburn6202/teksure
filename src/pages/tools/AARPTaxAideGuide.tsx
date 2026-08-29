@@ -19,7 +19,7 @@ export default function AARPTaxAideGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AARP Tax-Aide</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Completely free — no AARP membership required.</li>
               <li>Trained volunteers prepare your taxes.</li>
               <li>In-person and virtual appointments.</li>
@@ -33,7 +33,7 @@ export default function AARPTaxAideGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">VITA program</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VITA = Volunteer Income Tax Assistance.</li>
               <li>IRS-sponsored free tax prep.</li>
               <li>Free if income under $67,000 (check current limit).</li>
@@ -47,7 +47,7 @@ export default function AARPTaxAideGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">IRS Free File</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>File taxes free online at IRS.gov/freefile.</li>
               <li>Free if income under $84,000.</li>
               <li>Guided software — like TurboTax but free.</li>
@@ -61,7 +61,7 @@ export default function AARPTaxAideGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to bring to appointment</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photo ID and Social Security cards for all.</li>
               <li>All W-2, 1099, and SSA-1099 forms.</li>
               <li>1099-R if you have retirement distributions.</li>
@@ -75,7 +75,7 @@ export default function AARPTaxAideGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tax credits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Credit for the Elderly and Disabled — check eligibility.</li>
               <li>Higher standard deduction for age 65+.</li>
               <li>Medical expense deduction — lower threshold at 65+.</li>
@@ -89,7 +89,7 @@ export default function AARPTaxAideGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to find help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AARP Tax-Aide: AARP.org/taxaide or 888-687-2277.</li>
               <li>VITA locator: IRS.gov/VITA or 800-906-9887.</li>
               <li>Or search &quot;VITA tax help near me.&quot;</li>
@@ -103,7 +103,7 @@ export default function AARPTaxAideGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Stop paying for tax prep</h3>
-            <p className="text-sm text-muted-foreground">Millions of seniors pay $150–$400 to tax preparers for returns that qualify for free preparation through AARP Tax-Aide or VITA. These programs serve seniors with Social Security income, pensions, investment income, and most common situations. The volunteers are IRS-certified and trained for senior-specific situations. Call to schedule an appointment in January before spots fill.</p>
+            <p className="text-base text-muted-foreground">Millions of seniors pay $150–$400 to tax preparers for returns that qualify for free preparation through AARP Tax-Aide or VITA. These programs serve seniors with Social Security income, pensions, investment income, and most common situations. The volunteers are IRS-certified and trained for senior-specific situations. Call to schedule an appointment in January before spots fill.</p>
           </CardContent>
         </Card>
       </main>

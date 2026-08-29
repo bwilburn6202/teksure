@@ -19,7 +19,7 @@ export default function MailMerge100Cards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use printer&apos;s addressing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Shutterfly + Minted print addresses free on envelopes.</li>
               <li>Upload Excel of addresses.</li>
               <li>Or import from Google Contacts.</li>
@@ -33,7 +33,7 @@ export default function MailMerge100Cards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Print labels yourself</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Buy Avery 5160 labels at office store.</li>
               <li>Use Avery&apos;s free design tool online.</li>
               <li>Or Microsoft Word mail merge.</li>
@@ -47,7 +47,7 @@ export default function MailMerge100Cards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Build address book once</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Excel or Google Sheets columns: Name, Address, City, State, Zip.</li>
               <li>Build it once over a few sessions.</li>
               <li>Use it every year forward.</li>
@@ -61,7 +61,7 @@ export default function MailMerge100Cards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Writing inside cards</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sign once, then take photo.</li>
               <li>Or use stamp with your signature.</li>
               <li>Pre-print message inside (Shutterfly/Minted offer this).</li>
@@ -75,7 +75,7 @@ export default function MailMerge100Cards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stamps in bulk</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Buy 100 forever stamps at once.</li>
               <li>USPS.com — order online, mailed to you.</li>
               <li>No trip to post office.</li>
@@ -89,7 +89,7 @@ export default function MailMerge100Cards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drop off vs mail</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>USPS pickup — schedule online.</li>
               <li>Mail carrier picks up from your home.</li>
               <li>No box trip required.</li>
@@ -103,7 +103,7 @@ export default function MailMerge100Cards() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free address printing changes everything</h3>
-            <p className="text-sm text-muted-foreground">If you send 50+ holiday cards yearly, free address printing from Shutterfly or Minted is genuinely transformative. Upload Excel of addresses, they print envelopes, you stuff cards + apply stamps. What used to be 5+ hours of hand-cramping work becomes 30 minutes. The cost savings + time savings + reduced wrist pain make this one of the best senior tech upgrades.</p>
+            <p className="text-base text-muted-foreground">If you send 50+ holiday cards yearly, free address printing from Shutterfly or Minted is genuinely transformative. Upload Excel of addresses, they print envelopes, you stuff cards + apply stamps. What used to be 5+ hours of hand-cramping work becomes 30 minutes. The cost savings + time savings + reduced wrist pain make this one of the best senior tech upgrades.</p>
           </CardContent>
         </Card>
       </main>

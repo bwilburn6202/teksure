@@ -18,11 +18,11 @@ export default function SeniorAirFryers() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Ninja Foodi 6-quart</h2><p>$120. Most popular. Easy buttons. Good for 1-4 servings.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">COSORI 5.8-quart</h2><p>$100. Senior-friendly. Few buttons. Reliable.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why seniors love them</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>No bending into oven</li><li>Cooks fast (10-15 min)</li><li>Less oil = healthier</li><li>Easier cleanup than frying</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why seniors love them</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>No bending into oven</li><li>Cooks fast (10-15 min)</li><li>Less oil = healthier</li><li>Easier cleanup than frying</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Easy meals</h2><p>Frozen chicken, fish, fries, vegetables. 12-18 minutes. No flipping needed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Reheat better</h2><p>Pizza, fries, chicken — air fryer reheats crisp like new (microwaves make it soggy).</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Recipes</h2><p>Search &ldquo;air fryer for seniors&rdquo; on YouTube. Many simple cooks demonstrate.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Spray with oil before cooking. Even 1 second of spray makes everything crispier.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Spray with oil before cooking. Even 1 second of spray makes everything crispier.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

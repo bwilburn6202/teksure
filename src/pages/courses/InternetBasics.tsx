@@ -179,7 +179,7 @@ function LessonShell({ lesson, isDone, onToggleDone, onNext, nextLabel, children
               onClick={onToggleDone}
               className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl border text-sm font-medium transition-colors ${
                 isDone
-                  ? 'border-emerald-300 dark:border-emerald-700/50 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300'
+                  ? 'border-emerald-300 dark:border-emerald-700/50 bg-success text-success-foreground dark:text-emerald-300'
                   : 'border-border bg-card hover:bg-muted text-foreground'
               }`}
               aria-pressed={isDone}
@@ -263,6 +263,7 @@ const InternetBasics = () => {
         ]}
       />
       <Navbar />
+      <main className="flex-1">
 
       {/* Hero */}
       <section className="relative overflow-hidden border-b border-border/40">
@@ -307,7 +308,7 @@ const InternetBasics = () => {
                 <div className="flex items-center justify-between gap-4 mb-4">
                   <div>
                     <h2 className="text-lg md:text-xl font-semibold">Your progress</h2>
-                    <p className="text-sm text-muted-foreground mt-0.5">
+                    <p className="text-base text-muted-foreground mt-0.5">
                       {doneCount} of {lessons.length} lessons complete · {percent}% done
                     </p>
                   </div>
@@ -342,13 +343,13 @@ const InternetBasics = () => {
                               <Icon className="h-[18px] w-[18px]" aria-hidden="true" />
                             </div>
                             <div className="flex-1 min-w-0">
-                              <p className="font-medium text-sm md:text-[15px]">
+                              <p className="font-medium text-base md:text-[15px]">
                                 Lesson {l.number}: {l.title}
                               </p>
                               <p className="text-xs text-muted-foreground truncate">{l.subtitle}</p>
                             </div>
                             {isDone ? (
-                              <CheckCircle2 className="h-5 w-5 text-emerald-500 shrink-0" aria-label="Complete" />
+                              <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0" aria-label="Complete" />
                             ) : (
                               <Circle className="h-5 w-5 text-muted-foreground/40 shrink-0" aria-hidden="true" />
                             )}
@@ -424,7 +425,7 @@ const InternetBasics = () => {
               </ul>
 
               <div className="rounded-xl border border-primary/20 bg-primary/5 p-5 mt-8">
-                <p className="text-sm md:text-base m-0">
+                <p className="text-base md:text-base m-0">
                   <strong>Quick Tip:</strong> You don't have to memorize any of this. If a word confuses you later, you can always check our{' '}
                   <Link to="/glossary" className="text-primary font-medium underline underline-offset-2">glossary</Link>.
                 </p>
@@ -514,7 +515,7 @@ const InternetBasics = () => {
               </ul>
 
               <div className="rounded-xl border border-primary/20 bg-primary/5 p-5 mt-8">
-                <p className="text-sm md:text-base m-0">
+                <p className="text-base md:text-base m-0">
                   <strong>Quick Tip:</strong> If a website ever looks strange, try pressing Refresh first. It fixes most small glitches.
                 </p>
               </div>
@@ -597,7 +598,7 @@ const InternetBasics = () => {
               </p>
 
               <div className="rounded-xl border border-primary/20 bg-primary/5 p-5 mt-8">
-                <p className="text-sm md:text-base m-0">
+                <p className="text-base md:text-base m-0">
                   <strong>Quick Tip:</strong> If an email looks odd, has lots of spelling mistakes, or asks for money or passwords — don't reply. Delete it. You'll learn more in the next lesson.
                 </p>
               </div>
@@ -617,20 +618,20 @@ const InternetBasics = () => {
 
               <h3 className="text-xl font-semibold tracking-tight mt-8">The 3 golden rules</h3>
               <div className="grid gap-3 not-prose">
-                <div className="rounded-xl border border-rose-200 dark:border-rose-800/40 bg-rose-50/60 dark:bg-rose-950/20 p-5">
-                  <p className="font-semibold mb-1 text-rose-700 dark:text-rose-300">1. Don't trust urgent messages.</p>
+                <div className="rounded-xl border border-danger-foreground/25 bg-rose-50/60 dark:bg-rose-950/20 p-5">
+                  <p className="font-semibold mb-1 text-danger-foreground ">1. Don't trust urgent messages.</p>
                   <p className="text-[16px] leading-relaxed m-0 text-foreground/90">
                     Real companies and government agencies don't demand instant action. If a message says "your account will be closed in 1 hour" or "pay right now or go to jail" — it's almost certainly a scam.
                   </p>
                 </div>
-                <div className="rounded-xl border border-amber-200 dark:border-amber-800/40 bg-amber-50/60 dark:bg-amber-950/20 p-5">
-                  <p className="font-semibold mb-1 text-amber-700 dark:text-amber-300">2. Don't click unknown links.</p>
+                <div className="rounded-xl border border-warn-foreground/25 bg-amber-50/60 dark:bg-amber-950/20 p-5">
+                  <p className="font-semibold mb-1 text-warn-foreground ">2. Don't click unknown links.</p>
                   <p className="text-[16px] leading-relaxed m-0 text-foreground/90">
                     If you don't recognize the sender, don't click the link. Go straight to the company's real website by typing it into your browser instead.
                   </p>
                 </div>
-                <div className="rounded-xl border border-violet-200 dark:border-violet-800/40 bg-violet-50/60 dark:bg-violet-950/20 p-5">
-                  <p className="font-semibold mb-1 text-violet-700 dark:text-violet-300">3. Don't share passwords.</p>
+                <div className="rounded-xl border border-primary/25 bg-violet-50/60 dark:bg-violet-950/20 p-5">
+                  <p className="font-semibold mb-1 text-primary ">3. Don't share passwords.</p>
                   <p className="text-[16px] leading-relaxed m-0 text-foreground/90">
                     No legitimate company will ever ask for your password by email, text, or phone. Not your bank. Not Amazon. Not Microsoft. Ever.
                   </p>
@@ -739,7 +740,7 @@ const InternetBasics = () => {
               </p>
 
               <div className="rounded-xl border border-primary/20 bg-primary/5 p-5 mt-8">
-                <p className="text-sm md:text-base m-0">
+                <p className="text-base md:text-base m-0">
                   <strong>Remember:</strong> every expert was once a beginner. Asking questions is how you become the person other people ask.
                 </p>
               </div>
@@ -749,7 +750,7 @@ const InternetBasics = () => {
             <section id="congrats" className="scroll-mt-24">
               <Card className={`overflow-hidden border ${allDone ? 'border-emerald-300 dark:border-emerald-700/50' : 'border-border'}`}>
                 <div className={`bg-gradient-to-br ${allDone ? 'from-emerald-50 to-teal-50 dark:from-emerald-950/40 dark:to-teal-950/40' : 'from-muted to-muted/50'} px-6 md:px-10 py-10 md:py-14 text-center`}>
-                  <div className={`mx-auto h-16 w-16 rounded-2xl ${allDone ? 'bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-300' : 'bg-muted-foreground/10 text-muted-foreground'} flex items-center justify-center mb-5`}>
+                  <div className={`mx-auto h-16 w-16 rounded-2xl ${allDone ? 'bg-emerald-100 dark:bg-emerald-900/50 text-success-foreground dark:text-emerald-300' : 'bg-muted-foreground/10 text-muted-foreground'} flex items-center justify-center mb-5`}>
                     <Trophy className="h-8 w-8" aria-hidden="true" />
                   </div>
                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight mb-3">
@@ -775,45 +776,45 @@ const InternetBasics = () => {
                     <Link to="/learn" className="group block">
                       <div className="rounded-xl border border-border bg-card p-5 h-full hover:border-primary/40 hover:shadow-sm transition-all">
                         <div className="flex items-center gap-3 mb-2">
-                          <div className="h-10 w-10 rounded-lg bg-violet-100 dark:bg-violet-900/40 text-violet-600 dark:text-violet-400 flex items-center justify-center">
+                          <div className="h-10 w-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
                             <BookOpen className="h-5 w-5" />
                           </div>
                           <h4 className="font-semibold group-hover:text-primary transition-colors">All learning paths</h4>
                         </div>
-                        <p className="text-sm text-muted-foreground">Every TekSure course in one place, sorted by skill level.</p>
+                        <p className="text-base text-muted-foreground">Every TekSure course in one place, sorted by skill level.</p>
                       </div>
                     </Link>
                     <Link to="/scam-defense" className="group block">
                       <div className="rounded-xl border border-border bg-card p-5 h-full hover:border-primary/40 hover:shadow-sm transition-all">
                         <div className="flex items-center gap-3 mb-2">
-                          <div className="h-10 w-10 rounded-lg bg-rose-100 dark:bg-rose-900/40 text-rose-600 dark:text-rose-400 flex items-center justify-center">
+                          <div className="h-10 w-10 rounded-lg bg-danger text-danger-foreground flex items-center justify-center">
                             <ShieldCheck className="h-5 w-5" />
                           </div>
                           <h4 className="font-semibold group-hover:text-primary transition-colors">Scam Defense Center</h4>
                         </div>
-                        <p className="text-sm text-muted-foreground">Go deeper on staying safe online — threats, warning signs, recovery help.</p>
+                        <p className="text-base text-muted-foreground">Go deeper on staying safe online — threats, warning signs, recovery help.</p>
                       </div>
                     </Link>
                     <Link to="/brain" className="group block">
                       <div className="rounded-xl border border-border bg-card p-5 h-full hover:border-primary/40 hover:shadow-sm transition-all">
                         <div className="flex items-center gap-3 mb-2">
-                          <div className="h-10 w-10 rounded-lg bg-sky-100 dark:bg-sky-900/40 text-sky-600 dark:text-sky-400 flex items-center justify-center">
+                          <div className="h-10 w-10 rounded-lg bg-info text-info-foreground flex items-center justify-center">
                             <Sparkles className="h-5 w-5" />
                           </div>
                           <h4 className="font-semibold group-hover:text-primary transition-colors">TekSure Brain</h4>
                         </div>
-                        <p className="text-sm text-muted-foreground">Ask any tech question and get an answer drawn from all 1,200+ guides.</p>
+                        <p className="text-base text-muted-foreground">Ask any tech question and get an answer drawn from all 1,200+ guides.</p>
                       </div>
                     </Link>
                     <Link to="/forum" className="group block">
                       <div className="rounded-xl border border-border bg-card p-5 h-full hover:border-primary/40 hover:shadow-sm transition-all">
                         <div className="flex items-center gap-3 mb-2">
-                          <div className="h-10 w-10 rounded-lg bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+                          <div className="h-10 w-10 rounded-lg bg-success text-success-foreground flex items-center justify-center">
                             <Users className="h-5 w-5" />
                           </div>
                           <h4 className="font-semibold group-hover:text-primary transition-colors">Community forum</h4>
                         </div>
-                        <p className="text-sm text-muted-foreground">Ask real people your next question. No question is too basic.</p>
+                        <p className="text-base text-muted-foreground">Ask real people your next question. No question is too basic.</p>
                       </div>
                     </Link>
                   </div>
@@ -836,6 +837,7 @@ const InternetBasics = () => {
         </button>
       )}
 
+      </main>
       <Footer />
     </div>
   );

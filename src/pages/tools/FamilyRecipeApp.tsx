@@ -118,7 +118,7 @@ export default function FamilyRecipeApp() {
         <section className="bg-gradient-to-br from-rose-50 via-background to-amber-50 dark:from-rose-950/20 dark:to-amber-950/20 border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
-              <div className="p-3 bg-rose-500/10 rounded-full"><ChefHat className="h-8 w-8 text-rose-600" /></div>
+              <div className="p-3 bg-rose-500/10 rounded-full"><ChefHat className="h-8 w-8 text-danger-foreground" /></div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Digitize Your Family Recipes</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
@@ -131,12 +131,12 @@ export default function FamilyRecipeApp() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Family Recipe Apps' }]} />
 
-          <Card className="border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/20 mb-6">
+          <Card className="border-danger-foreground/25 bg-rose-50/50 dark:bg-rose-950/20 mb-6">
             <CardContent className="p-5 flex gap-3">
-              <Heart className="h-5 w-5 text-rose-600 shrink-0 mt-0.5" />
+              <Heart className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" />
               <div>
-                <p className="font-semibold text-sm mb-1">Why scan them now</p>
-                <p className="text-sm text-muted-foreground">
+                <p className="font-semibold text-base mb-1">Why scan them now</p>
+                <p className="text-base text-muted-foreground">
                   A recipe card is a handwritten letter from a parent or grandparent. Once it is in your phone, it survives
                   spills, moves, and the years. Spend one afternoon scanning the tin — then share the file with every cousin.
                 </p>
@@ -167,23 +167,23 @@ export default function FamilyRecipeApp() {
                   <CardContent className="p-5">
                     <div className="flex items-start justify-between gap-3 mb-2 flex-wrap">
                       <div className="flex gap-2 items-start">
-                        <Icon className="h-5 w-5 text-rose-600 shrink-0 mt-0.5" />
+                        <Icon className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" />
                         <div>
                           <p className="font-semibold text-base">{app.name}</p>
-                          <p className="text-sm text-muted-foreground mt-0.5">{app.what}</p>
+                          <p className="text-base text-muted-foreground mt-0.5">{app.what}</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="shrink-0">{app.cost}</Badge>
                     </div>
-                    <p className="text-xs text-muted-foreground mb-3"><strong>Best for:</strong> {app.whoFor}</p>
+                    <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {app.whoFor}</p>
                     <div className="grid sm:grid-cols-2 gap-2 mb-3">
-                      <div className="p-2 rounded bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900 text-xs">
-                        <strong className="text-emerald-700 dark:text-emerald-300">Pros:</strong>{' '}
-                        <span className="text-emerald-700 dark:text-emerald-300">{app.pros}</span>
+                      <div className="p-2 rounded bg-success border border-success-foreground/25 text-xs">
+                        <strong className="text-success-foreground ">Pros:</strong>{' '}
+                        <span className="text-success-foreground ">{app.pros}</span>
                       </div>
-                      <div className="p-2 rounded bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900 text-xs">
-                        <strong className="text-amber-700 dark:text-amber-300">Cons:</strong>{' '}
-                        <span className="text-amber-700 dark:text-amber-300">{app.cons}</span>
+                      <div className="p-2 rounded bg-warn border border-warn-foreground/25 text-xs">
+                        <strong className="text-warn-foreground ">Cons:</strong>{' '}
+                        <span className="text-warn-foreground ">{app.cons}</span>
                       </div>
                     </div>
                     <a href={app.link} target="_blank" rel="noopener noreferrer"
@@ -200,20 +200,20 @@ export default function FamilyRecipeApp() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/document-scanner-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Document Scanner Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Get sharper scans of paper records.</p>
+                <p className="font-medium text-base">Document Scanner Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Get sharper scans of paper records.</p>
               </Link>
               <Link to="/tools/photo-library-tips" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Photo Library Tips</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Organize photos and scans.</p>
+                <p className="font-medium text-base">Photo Library Tips</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Organize photos and scans.</p>
               </Link>
               <Link to="/tools/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Grandparent Device Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Make the phone friendlier first.</p>
+                <p className="font-medium text-base">Grandparent Device Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Make the phone friendlier first.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: write the cook's name and the year next to each scanned recipe. The story is half of why the recipe matters.
           </p>
         </div>

@@ -134,7 +134,7 @@ export function VideoPlayer({ videoUrl, title }: VideoPlayerProps) {
       {/* Control bar */}
       <div className="flex items-center gap-2 px-4 py-3 bg-muted/80 border-t border-border flex-wrap">
         <Play className="h-4 w-4 text-muted-foreground shrink-0" aria-hidden="true" />
-        <span className="text-xs font-medium text-muted-foreground mr-1">Speed:</span>
+        <span className="text-sm font-medium text-muted-foreground mr-1">Speed:</span>
 
         {SPEED_OPTIONS.map(opt => (
           <Button
@@ -161,7 +161,7 @@ export function VideoPlayer({ videoUrl, title }: VideoPlayerProps) {
           aria-label={captionsOn ? 'Turn off captions' : 'Turn on captions'}
         >
           <span className="text-base leading-none" aria-hidden="true">CC</span>
-          <span className="hidden sm:inline text-sm">{captionsOn ? 'Captions On' : 'Captions'}</span>
+          <span className="hidden sm:inline text-base">{captionsOn ? 'Captions On' : 'Captions'}</span>
         </Button>
 
         {/* Fullscreen */}
@@ -173,7 +173,7 @@ export function VideoPlayer({ videoUrl, title }: VideoPlayerProps) {
           aria-label="Watch fullscreen"
         >
           <Maximize2 className="h-4 w-4" />
-          <span className="hidden sm:inline text-sm">Fullscreen</span>
+          <span className="hidden sm:inline text-base">Fullscreen</span>
         </Button>
       </div>
     </div>

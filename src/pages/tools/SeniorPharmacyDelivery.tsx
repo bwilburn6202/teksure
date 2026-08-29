@@ -22,7 +22,7 @@ export default function SeniorPharmacyDelivery() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">CVS Same-Day</h2><p>$10/order. Most areas. Use CVS Carepass for free.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Walgreens</h2><p>FREE for active 90-day prescriptions. Standard delivery.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mail order</h2><p>Medicare Part D. Often $0 copay 90-day supply.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Free home delivery. Why drive to pharmacy?</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Free home delivery. Why drive to pharmacy?</p></CardContent></Card>
         </div>
       </main>
       <Footer />

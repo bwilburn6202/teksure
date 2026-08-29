@@ -123,14 +123,14 @@ export function GuideVideoSection({
 
       {/* No match yet — prompt user to pick */}
       {needsPicker && !matchedVideo && (
-        <p className="text-sm text-muted-foreground mt-3">
+        <p className="text-base text-muted-foreground mt-3">
           Select your device above to watch the matching tutorial.
         </p>
       )}
 
       {/* No video for this OS */}
       {needsPicker && selectedOS && !matchedVideo && rows.length > 0 && (
-        <p className="text-sm text-muted-foreground mt-3">
+        <p className="text-base text-muted-foreground mt-3">
           No video is available for your device yet — try a different option or read the steps below.
         </p>
       )}
@@ -147,7 +147,7 @@ function SectionWrapper({ title, children }: { title: string; children: React.Re
         Watch the video walkthrough
       </h2>
       {children}
-      <p className="text-xs text-muted-foreground mt-2">
+      <p className="text-sm text-muted-foreground mt-2">
         Video not working? Read the step-by-step instructions below.
       </p>
     </div>

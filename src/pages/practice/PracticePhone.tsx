@@ -122,7 +122,7 @@ export default function PracticePhone() {
             </Button>
             <div className="flex items-center gap-3 text-sm">
               {progress.rooms.phone.currentStreak > 0 && (
-                <span className="inline-flex items-center gap-1 text-orange-600 dark:text-orange-400">
+                <span className="inline-flex items-center gap-1 text-warn-foreground ">
                   <Flame className="h-4 w-4" />
                   {progress.rooms.phone.currentStreak} streak
                 </span>
@@ -167,7 +167,7 @@ export default function PracticePhone() {
               <ArrowRight className="h-4 w-4" />
             </Button>
             {PHONE_SCENARIOS.length > tierPool.length && (
-              <p className="text-xs text-muted-foreground mt-3">
+              <p className="text-sm text-muted-foreground mt-3">
                 Showing scenarios at or below your difficulty. Bump up your tier in{' '}
                 <Link to="/setup" className="text-primary hover:underline">
                   setup
@@ -195,7 +195,7 @@ export default function PracticePhone() {
                   onClick={() => handleGuess('legit')}
                   className="h-14 text-base gap-2 border-emerald-500/40 hover:bg-emerald-500/10"
                 >
-                  <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+                  <CheckCircle2 className="h-5 w-5 text-success-foreground" />
                   This looks safe
                 </Button>
                 <Button
@@ -204,7 +204,7 @@ export default function PracticePhone() {
                   onClick={() => handleGuess('phishing')}
                   className="h-14 text-base gap-2 border-red-500/40 hover:bg-red-500/10"
                 >
-                  <ShieldAlert className="h-5 w-5 text-red-600" />
+                  <ShieldAlert className="h-5 w-5 text-danger-foreground" />
                   This is a scam
                 </Button>
               </div>
@@ -232,20 +232,20 @@ export default function PracticePhone() {
 function FakeCallView({ event }: { event: Extract<PhoneEvent, { type: 'call' }> }) {
   return (
     <div className="rounded-3xl bg-gradient-to-b from-slate-900 to-slate-800 text-white p-6 shadow-xl border border-slate-700">
-      <p className="text-center text-xs uppercase tracking-widest text-slate-400 mb-6">
+      <p className="text-center text-xs uppercase tracking-widest text-muted-foreground mb-6">
         Incoming call · simulation
       </p>
 
       <div className="flex flex-col items-center text-center mb-6">
         <div className="h-20 w-20 rounded-full bg-slate-700 flex items-center justify-center mb-4">
-          <PhoneIncoming className="h-10 w-10 text-slate-300" />
+          <PhoneIncoming className="h-10 w-10 text-muted-foreground" />
         </div>
         <p className="text-xl font-semibold">{event.callerId}</p>
-        <p className="text-sm text-slate-400 mt-1">{event.number}</p>
+        <p className="text-base text-muted-foreground mt-1">{event.number}</p>
       </div>
 
       <div className="rounded-xl bg-slate-700/40 border border-slate-600 p-4 text-sm text-slate-200 italic">
-        <p className="text-xs uppercase tracking-wider text-slate-400 not-italic mb-2">
+        <p className="text-xs uppercase tracking-wider text-muted-foreground not-italic mb-2">
           What they would say if you answered:
         </p>
         {event.transcript}
@@ -256,7 +256,7 @@ function FakeCallView({ event }: { event: Extract<PhoneEvent, { type: 'call' }> 
         <FakePhoneButton color="green" icon={<Phone className="h-5 w-5" />} label="Answer" />
         <FakePhoneButton color="slate" icon={<ShieldAlert className="h-5 w-5" />} label="Block" />
       </div>
-      <p className="text-center text-xs text-slate-500 mt-3">
+      <p className="text-center text-sm text-muted-foreground mt-3">
         These buttons are display-only — make your call below.
       </p>
     </div>
@@ -283,7 +283,7 @@ function FakePhoneButton({
       className={`flex flex-col items-center gap-1 py-3 rounded-2xl ${styles[color]} opacity-80`}
     >
       {icon}
-      <span className="text-xs font-medium">{label}</span>
+      <span className="text-sm font-medium">{label}</span>
     </div>
   );
 }
@@ -300,8 +300,8 @@ function FakeTextView({ event }: { event: Extract<PhoneEvent, { type: 'text' }> 
           <MessageSquare className="h-5 w-5 text-muted-foreground" />
         </div>
         <div>
-          <p className="font-medium text-sm">{event.sender}</p>
-          <p className="text-xs text-muted-foreground">SMS · now</p>
+          <p className="font-medium text-base">{event.sender}</p>
+          <p className="text-sm text-muted-foreground">SMS · now</p>
         </div>
       </div>
 
@@ -309,7 +309,7 @@ function FakeTextView({ event }: { event: Extract<PhoneEvent, { type: 'text' }> 
         {event.message}
       </div>
 
-      <p className="text-center text-xs text-muted-foreground mt-4">
+      <p className="text-center text-sm text-muted-foreground mt-4">
         Make your call below — no link will open if you tap.
       </p>
     </div>
@@ -337,15 +337,15 @@ function FeedbackPanel({
       <CardContent className="p-5">
         <div className="flex items-start gap-3 mb-3">
           {correct ? (
-            <CheckCircle2 className="h-6 w-6 text-emerald-600 shrink-0 mt-0.5" />
+            <CheckCircle2 className="h-6 w-6 text-success-foreground shrink-0 mt-0.5" />
           ) : (
-            <XCircle className="h-6 w-6 text-amber-600 shrink-0 mt-0.5" />
+            <XCircle className="h-6 w-6 text-warn-foreground shrink-0 mt-0.5" />
           )}
           <div className="flex-1">
             <p className="font-bold text-base">
               {correct ? 'Nailed it.' : 'Not quite.'}
             </p>
-            <p className="text-sm text-muted-foreground mt-0.5">
+            <p className="text-base text-muted-foreground mt-0.5">
               That {event.type === 'call' ? 'call' : 'text'} was{' '}
               <strong className={isPhishing ? 'text-red-600' : 'text-emerald-700'}>
                 {isPhishing ? 'a scam.' : 'real / safe.'}
@@ -359,10 +359,10 @@ function FeedbackPanel({
             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
               Red flags
             </p>
-            <ul className="space-y-1.5 text-sm text-muted-foreground">
+            <ul className="space-y-1.5 text-base text-muted-foreground">
               {event.redFlags.map((flag, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5" aria-hidden="true">
+                  <span className="text-danger-foreground mt-0.5" aria-hidden="true">
                     •
                   </span>
                   <span>{flag}</span>
@@ -376,7 +376,7 @@ function FeedbackPanel({
           <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-1">
             Why
           </p>
-          <p className="text-sm text-muted-foreground">{event.explanation}</p>
+          <p className="text-base text-muted-foreground">{event.explanation}</p>
         </div>
 
         <Button onClick={onContinue} className="w-full gap-2">
@@ -424,10 +424,10 @@ function FinishedSummary({
             <ul className="space-y-3">
               {state.missed.map(s => (
                 <li key={s.id} className="border-l-2 border-amber-500/60 pl-3">
-                  <p className="text-sm font-medium">
+                  <p className="text-base font-medium">
                     {s.type === 'call' ? `Call from "${s.callerId}"` : `Text from ${s.sender}`}
                   </p>
-                  <p className="text-xs text-muted-foreground mt-0.5">
+                  <p className="text-sm text-muted-foreground mt-0.5">
                     Was: {s.verdict === 'phishing' ? 'a scam' : 'real / safe'} · {s.explanation}
                   </p>
                 </li>

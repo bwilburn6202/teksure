@@ -19,7 +19,7 @@ export default function FreezerMealPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best freezer foods</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Soups + chili</strong> — freeze in 1-cup portions.</li>
               <li><strong>Lasagna</strong> — make 2, eat 1, freeze 1.</li>
               <li><strong>Casseroles</strong> — most freeze 3 months.</li>
@@ -35,7 +35,7 @@ export default function FreezerMealPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t freeze well</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lettuce / fresh greens — turn to mush.</li>
               <li>Mayo or sour cream sauces — separate.</li>
               <li>Hard-boiled eggs.</li>
@@ -50,7 +50,7 @@ export default function FreezerMealPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-portion freezing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>1-cup deli containers</strong> — perfect for soup / 1-person meal.</li>
               <li><strong>Glad zip-top bags</strong> — flatten for easy stacking.</li>
               <li><strong>Disposable foil pans</strong> — for casseroles.</li>
@@ -63,7 +63,7 @@ export default function FreezerMealPrep() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sunday cook-up routine</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick 2 simple recipes (chili + chicken + rice).</li>
               <li>Cook double batches.</li>
               <li>Eat one tonight.</li>
@@ -77,7 +77,7 @@ export default function FreezerMealPrep() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Buy a chest freezer</h3>
-            <p className="text-sm text-muted-foreground">Cheap chest freezer ($200) in basement / garage = transformative. Holds months of meals. Costco bulk meat splits beautifully into freezer meals. Best ROI senior kitchen upgrade.</p>
+            <p className="text-base text-muted-foreground">Cheap chest freezer ($200) in basement / garage = transformative. Holds months of meals. Costco bulk meat splits beautifully into freezer meals. Best ROI senior kitchen upgrade.</p>
           </CardContent>
         </Card>
       </main>

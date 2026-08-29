@@ -76,25 +76,25 @@ export default function TVSizeCalculator() {
         title="TV Size Calculator — TekSure"
         description="What size TV should you buy? Enter how far you sit from the TV and we'll recommend a size that's comfortable for your room and eyesight."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4">
+      <main className="min-h-screen bg-muted py-8 px-4">
         <div className="max-w-xl mx-auto">
 
           {/* Header */}
           <div className="text-center mb-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-purple-100 dark:bg-purple-950/60 mb-4">
-              <Tv className="w-8 h-8 text-purple-600 dark:text-purple-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-4">
+              <Tv className="w-8 h-8 text-primary " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">TV Size Calculator</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">TV Size Calculator</h1>
+            <p className="text-lg text-muted-foreground ">
               What size TV should you buy? Enter your viewing distance and get a recommendation.
             </p>
           </div>
 
           {!showResult && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
+            <div className="bg-card rounded-2xl border border-border p-5 shadow-sm">
               {/* Distance input */}
               <div className="mb-5">
-                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                <label className="block text-base font-semibold text-foreground mb-2">
                   How far is your couch from the TV?
                 </label>
                 <div className="flex items-center gap-3">
@@ -104,18 +104,18 @@ export default function TVSizeCalculator() {
                     max="30"
                     value={distanceFt}
                     onChange={e => setDistanceFt(e.target.value)}
-                    className="w-24 text-2xl font-bold text-center rounded-xl px-3 py-3 border-2 border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 outline-none focus:border-purple-400"
+                    className="w-24 text-2xl font-bold text-center rounded-xl px-3 py-3 border-2 border-border bg-muted text-foreground outline-none focus:border-purple-400"
                   />
-                  <span className="text-gray-700 dark:text-gray-300 font-medium">feet</span>
+                  <span className="text-foreground font-medium">feet</span>
                 </div>
-                <p className="text-xs text-gray-400 dark:text-gray-500 mt-2">
+                <p className="text-sm text-muted-foreground mt-2">
                   Most living rooms are 8 to 12 feet between the couch and the TV. Walk it out heel-to-toe — each step is about 2.5 feet.
                 </p>
               </div>
 
               {/* TV resolution */}
               <div className="mb-5">
-                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                <label className="block text-base font-semibold text-foreground mb-2">
                   What kind of TV are you buying?
                 </label>
                 <div className="grid grid-cols-2 gap-3">
@@ -123,33 +123,33 @@ export default function TVSizeCalculator() {
                     onClick={() => setResolution('4k')}
                     className={`p-3 rounded-xl border-2 text-left transition-all ${
                       resolution === '4k'
-                        ? 'border-purple-500 bg-purple-50 dark:bg-purple-950/30'
+                        ? 'border-purple-500 bg-primary/10 dark:bg-purple-950/30'
                         : 'border-gray-200 dark:border-gray-700 hover:border-gray-300'
                     }`}
                   >
-                    <p className="font-semibold text-gray-900 dark:text-gray-100">4K (UHD)</p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Most TVs sold today</p>
+                    <p className="font-semibold text-foreground ">4K (UHD)</p>
+                    <p className="text-sm text-muted-foreground mt-0.5">Most TVs sold today</p>
                   </button>
                   <button
                     onClick={() => setResolution('1080p')}
                     className={`p-3 rounded-xl border-2 text-left transition-all ${
                       resolution === '1080p'
-                        ? 'border-purple-500 bg-purple-50 dark:bg-purple-950/30'
+                        ? 'border-purple-500 bg-primary/10 dark:bg-purple-950/30'
                         : 'border-gray-200 dark:border-gray-700 hover:border-gray-300'
                     }`}
                   >
-                    <p className="font-semibold text-gray-900 dark:text-gray-100">1080p (HD)</p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Older or budget TVs</p>
+                    <p className="font-semibold text-foreground ">1080p (HD)</p>
+                    <p className="text-sm text-muted-foreground mt-0.5">Older or budget TVs</p>
                   </button>
                 </div>
-                <p className="text-xs text-gray-400 dark:text-gray-500 mt-2">
+                <p className="text-sm text-muted-foreground mt-2">
                   Not sure? Pick 4K — almost every TV sold in stores today is 4K.
                 </p>
               </div>
 
               {/* Vision */}
               <div className="mb-5">
-                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2">
+                <label className="block text-base font-semibold text-foreground mb-2">
                   How is your eyesight?
                 </label>
                 <div className="grid grid-cols-2 gap-3">
@@ -157,23 +157,23 @@ export default function TVSizeCalculator() {
                     onClick={() => setVision('normal')}
                     className={`p-3 rounded-xl border-2 text-left transition-all ${
                       vision === 'normal'
-                        ? 'border-purple-500 bg-purple-50 dark:bg-purple-950/30'
+                        ? 'border-purple-500 bg-primary/10 dark:bg-purple-950/30'
                         : 'border-gray-200 dark:border-gray-700 hover:border-gray-300'
                     }`}
                   >
-                    <p className="font-semibold text-gray-900 dark:text-gray-100">Good</p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">With glasses if needed</p>
+                    <p className="font-semibold text-foreground ">Good</p>
+                    <p className="text-sm text-muted-foreground mt-0.5">With glasses if needed</p>
                   </button>
                   <button
                     onClick={() => setVision('reduced')}
                     className={`p-3 rounded-xl border-2 text-left transition-all ${
                       vision === 'reduced'
-                        ? 'border-purple-500 bg-purple-50 dark:bg-purple-950/30'
+                        ? 'border-purple-500 bg-primary/10 dark:bg-purple-950/30'
                         : 'border-gray-200 dark:border-gray-700 hover:border-gray-300'
                     }`}
                   >
-                    <p className="font-semibold text-gray-900 dark:text-gray-100">Reduced</p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Macular degeneration, cataracts, etc.</p>
+                    <p className="font-semibold text-foreground ">Reduced</p>
+                    <p className="text-sm text-muted-foreground mt-0.5">Macular degeneration, cataracts, etc.</p>
                   </button>
                 </div>
               </div>
@@ -192,38 +192,38 @@ export default function TVSizeCalculator() {
           {showResult && recommendation && (
             <>
               {/* Recommendation */}
-              <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-6 shadow-sm text-center mb-4">
-                <p className="text-sm font-medium text-purple-600 dark:text-purple-400 mb-1">Recommended TV size</p>
-                <p className="text-7xl font-bold text-gray-900 dark:text-gray-100 my-3">
-                  {recommendation.recommended}<span className="text-3xl text-gray-500">"</span>
+              <div className="bg-card rounded-2xl border border-border p-6 shadow-sm text-center mb-4">
+                <p className="text-base font-medium text-primary mb-1">Recommended TV size</p>
+                <p className="text-7xl font-bold text-foreground my-3">
+                  {recommendation.recommended}<span className="text-3xl text-muted-foreground">"</span>
                 </p>
-                <p className="text-gray-600 dark:text-gray-400">
+                <p className="text-muted-foreground ">
                   Range that works for your room: <strong>{recommendation.minSize}" to {recommendation.maxSize}"</strong>
                 </p>
               </div>
 
               {/* Details */}
-              <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm mb-4">
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">What this means</h3>
-                <div className="space-y-3 text-sm text-gray-700 dark:text-gray-300">
+              <div className="bg-card rounded-2xl border border-border p-5 shadow-sm mb-4">
+                <h3 className="font-semibold text-foreground mb-3">What this means</h3>
+                <div className="space-y-3 text-sm text-foreground ">
                   <div className="flex gap-3">
-                    <Eye className="w-5 h-5 text-purple-500 flex-shrink-0 mt-0.5" />
+                    <Eye className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-medium text-gray-900 dark:text-gray-100">Comfortable viewing</p>
+                      <p className="font-medium text-foreground ">Comfortable viewing</p>
                       <p>At {distanceFt} feet, a {recommendation.recommended}-inch TV fills your field of view without forcing you to turn your head or strain your eyes.</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-medium text-gray-900 dark:text-gray-100">Room fit</p>
+                      <p className="font-medium text-foreground ">Room fit</p>
                       <p>{getRoomGuidance(recommendation.recommended)}</p>
                     </div>
                   </div>
                   <div className="flex gap-3">
                     <span className="text-xl flex-shrink-0">💰</span>
                     <div>
-                      <p className="font-medium text-gray-900 dark:text-gray-100">Typical price</p>
+                      <p className="font-medium text-foreground ">Typical price</p>
                       <p>{getPriceRange(recommendation.recommended)} for a quality 4K smart TV</p>
                     </div>
                   </div>
@@ -231,20 +231,20 @@ export default function TVSizeCalculator() {
               </div>
 
               {/* Tips */}
-              <div className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl p-4 mb-4">
+              <div className="bg-warn border border-warn-foreground/25 rounded-xl p-4 mb-4">
                 <div className="flex gap-2">
-                  <AlertCircle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
-                  <div className="text-sm text-amber-800 dark:text-amber-200">
+                  <AlertCircle className="w-5 h-5 text-warn-foreground flex-shrink-0 mt-0.5" />
+                  <div className="text-sm text-warn-foreground ">
                     <p className="font-semibold mb-1">Quick Tip</p>
                     <p>When in doubt, go bigger. Studies show most people end up wishing they had bought a larger TV — almost no one wishes they had bought smaller.</p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-xl p-4 mb-4">
+              <div className="bg-info border border-info-foreground/25 rounded-xl p-4 mb-4">
                 <div className="flex gap-2">
-                  <Eye className="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
-                  <div className="text-sm text-blue-800 dark:text-blue-200">
+                  <Eye className="w-5 h-5 text-info-foreground flex-shrink-0 mt-0.5" />
+                  <div className="text-sm text-info-foreground ">
                     <p className="font-semibold mb-1">Vision considerations</p>
                     <p>For reduced vision (macular degeneration, cataracts), a larger TV with brighter "OLED" or "QLED" technology can make a big difference. Look for "high contrast" and bright peak brightness ratings.</p>
                   </div>
@@ -253,14 +253,14 @@ export default function TVSizeCalculator() {
 
               <button
                 onClick={handleReset}
-                className="w-full py-3 rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm font-medium"
+                className="w-full py-3 rounded-xl border border-border text-muted-foreground hover:bg-muted transition-colors text-sm font-medium"
               >
                 Try Different Numbers
               </button>
             </>
           )}
         </div>
-      </div>
+      </main>
     </>
   );
 }

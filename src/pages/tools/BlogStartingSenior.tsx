@@ -30,10 +30,10 @@ export default function BlogStartingSenior() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BlogStartingSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why blog?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Share life wisdom with strangers + family.</li>
               <li>Stay mentally sharp.</li>
               <li>Document family history.</li>
@@ -56,7 +56,7 @@ export default function BlogStartingSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: Substack</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FREE to start.</li>
               <li>People sign up to email list.</li>
               <li>Write 1 email/week (or month).</li>
@@ -70,7 +70,7 @@ export default function BlogStartingSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Topic ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family history + genealogy.</li>
               <li>Recipes from your kitchen.</li>
               <li>Career stories.</li>
@@ -86,7 +86,7 @@ export default function BlogStartingSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Writing basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Write what you know.</li>
               <li>500-1000 words/post good.</li>
               <li>Personal stories beat advice.</li>
@@ -101,7 +101,7 @@ export default function BlogStartingSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Build readership</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Share with family + friends first.</li>
               <li>Post on Facebook.</li>
               <li>Pinterest for photo content.</li>
@@ -116,7 +116,7 @@ export default function BlogStartingSenior() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Famous senior bloggers</h3>
-            <p className="text-sm text-muted-foreground">Examples: Ronni Bennett (Time Goes By), Sue Bock (Sue&apos;s Health Hub), Susan Sundwall. Many over 60. Some make $1,000+/mo. Most just enjoy connection. Library — books on blogging. Free templates. Just write. Start today. 100 posts in = real audience.</p>
+            <p className="text-base text-muted-foreground">Examples: Ronni Bennett (Time Goes By), Sue Bock (Sue&apos;s Health Hub), Susan Sundwall. Many over 60. Some make $1,000+/mo. Most just enjoy connection. Library — books on blogging. Free templates. Just write. Start today. 100 posts in = real audience.</p>
           </CardContent>
         </Card>
       </main>

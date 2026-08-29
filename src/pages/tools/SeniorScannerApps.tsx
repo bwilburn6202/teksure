@@ -20,9 +20,9 @@ export default function SeniorScannerApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Adobe Scan</h2><p>FREE for iPhone or Android. Auto-detects edges. Saves as PDF.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Microsoft Lens</h2><p>FREE. Works with OneDrive. Best for Windows users.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Google Drive</h2><p>FREE. Drive app → +. Tap Scan. Save right to your Google account.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use for</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Tax documents</li><li>Insurance claims</li><li>Medical receipts</li><li>Old photos</li><li>Recipes from books</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use for</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Tax documents</li><li>Insurance claims</li><li>Medical receipts</li><li>Old photos</li><li>Recipes from books</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tips for sharper scans</h2><p>Bright even light. No shadows. Hold phone parallel to paper.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Scanned PDFs are searchable. Type any word — finds it across all your scans.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Scanned PDFs are searchable. Type any word — finds it across all your scans.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

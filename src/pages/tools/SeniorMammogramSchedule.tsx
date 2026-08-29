@@ -22,7 +22,7 @@ export default function SeniorMammogramSchedule() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Self-exams</h2><p>Monthly. Same time each month. Look for changes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family history</h2><p>BRCA gene test if family cancer. Medicare covers if criteria met.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tomosynthesis</h2><p>Newer 3D. Reduces false positives. Worth requesting.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 70+ years old? Discuss continued screening with primary doctor.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 70+ years old? Discuss continued screening with primary doctor.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

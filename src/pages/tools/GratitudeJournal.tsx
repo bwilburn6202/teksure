@@ -70,7 +70,7 @@ export default function GratitudeJournal() {
   const myStreak = streak();
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Gratitude Journal | TekSure"
         description="Write three things you are grateful for each day. Build a streak and a small book of good moments to look back on."
@@ -79,10 +79,10 @@ export default function GratitudeJournal() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Heart className="h-7 w-7 text-rose-500" />
-            <h1 className="text-3xl font-bold text-gray-900">Gratitude Journal</h1>
+            <Heart className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Gratitude Journal</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Each day, jot down three small things that went well. Over time it becomes a quiet record of good moments.
           </p>
         </div>
@@ -92,14 +92,14 @@ export default function GratitudeJournal() {
           <div className="grid grid-cols-2 gap-3 mb-4">
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Days journaled</p>
-                <p className="text-xl font-bold text-rose-700">{entries.length}</p>
+                <p className="text-sm text-muted-foreground">Days journaled</p>
+                <p className="text-xl font-bold text-danger-foreground">{entries.length}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Current streak</p>
-                <p className="text-xl font-bold text-orange-600">{myStreak} day{myStreak !== 1 ? "s" : ""}</p>
+                <p className="text-sm text-muted-foreground">Current streak</p>
+                <p className="text-xl font-bold text-warn-foreground">{myStreak} day{myStreak !== 1 ? "s" : ""}</p>
               </CardContent>
             </Card>
           </div>
@@ -109,7 +109,7 @@ export default function GratitudeJournal() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-rose-600" />
+              <PlusCircle className="h-5 w-5 text-danger-foreground" />
               Today's Three Things
             </CardTitle>
           </CardHeader>
@@ -118,27 +118,27 @@ export default function GratitudeJournal() {
               <Input id="g-date" type="date" value={form.date} onChange={e => setForm(f => ({ ...f, date: e.target.value }))} className="text-base" />
             </div>
             <div>
-              <label htmlFor="thing1" className="text-base font-medium text-gray-700 flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-rose-400" />
+              <label htmlFor="thing1" className="text-base font-medium text-foreground flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-danger-foreground" />
                 Something I am grateful for...
               </label>
               <Input id="thing1" placeholder="e.g. The way the morning light came through the kitchen window" value={form.thing1} onChange={e => setForm(f => ({ ...f, thing1: e.target.value }))} className="mt-1 text-base" />
             </div>
             <div>
-              <label htmlFor="thing2" className="text-base font-medium text-gray-700 flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-rose-400" />
+              <label htmlFor="thing2" className="text-base font-medium text-foreground flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-danger-foreground" />
                 A second thing...
               </label>
               <Input id="thing2" placeholder="e.g. My daughter called to check in" value={form.thing2} onChange={e => setForm(f => ({ ...f, thing2: e.target.value }))} className="mt-1 text-base" />
             </div>
             <div>
-              <label htmlFor="thing3" className="text-base font-medium text-gray-700 flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-rose-400" />
+              <label htmlFor="thing3" className="text-base font-medium text-foreground flex items-center gap-2">
+                <Sparkles className="h-4 w-4 text-danger-foreground" />
                 A third thing...
               </label>
               <Input id="thing3" placeholder="e.g. Found a quarter on the sidewalk" value={form.thing3} onChange={e => setForm(f => ({ ...f, thing3: e.target.value }))} className="mt-1 text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base bg-rose-500 hover:bg-rose-600">Save Today</Button>
           </CardContent>
         </Card>
@@ -154,10 +154,10 @@ export default function GratitudeJournal() {
 
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Heart className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Heart className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">Your journal is empty.</p>
-              <p className="text-sm mt-1">Take 30 seconds to jot down today's three things.</p>
+              <p className="text-base mt-1">Take 30 seconds to jot down today's three things.</p>
             </CardContent>
           </Card>
         ) : (
@@ -168,14 +168,14 @@ export default function GratitudeJournal() {
                 <Card key={e.id} className="print:break-inside-avoid">
                   <CardContent className="py-3 px-4">
                     <div className="flex items-start justify-between gap-2 mb-2">
-                      <p className="text-sm font-semibold text-rose-700">{formatDate(e.date)}</p>
-                      <Button variant="ghost" size="icon" onClick={() => remove(e.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                      <p className="text-base font-semibold text-danger-foreground">{formatDate(e.date)}</p>
+                      <Button variant="ghost" size="icon" onClick={() => remove(e.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                         <Trash2 className="h-3 w-3" />
                       </Button>
                     </div>
                     <ol className="list-decimal pl-5 space-y-1">
                       {items.map((t, i) => (
-                        <li key={i} className="text-sm text-gray-700">{t}</li>
+                        <li key={i} className="text-base text-foreground">{t}</li>
                       ))}
                     </ol>
                   </CardContent>
@@ -185,15 +185,15 @@ export default function GratitudeJournal() {
           </div>
         )}
 
-        <Card className="mt-6 bg-rose-50 border-rose-200 print:hidden">
+        <Card className="mt-6 bg-danger border-danger-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-rose-800">
+            <p className="text-base text-danger-foreground">
               <span className="font-semibold">Quick Tip: </span>
               The smallest things count. The smell of coffee. A neighbor's wave. A song on the radio. The point is to notice them, not to find big ones.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

@@ -20,9 +20,9 @@ export default function SeniorBackupGuide() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Android backup</h2><p>Google One. 100 GB for $1.99/month. Auto-runs.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mac backup</h2><p>Time Machine. $80 external drive. Plug in. Set forget. Auto-saves hourly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">PC backup</h2><p>Windows Backup is free. Or Backblaze ($9/month) for unlimited cloud.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">3-2-1 rule</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>3 copies of important files</li><li>2 different types of storage</li><li>1 copy off-site (cloud)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">3-2-1 rule</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>3 copies of important files</li><li>2 different types of storage</li><li>1 copy off-site (cloud)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Test backup yearly</h2><p>Try restoring a single photo. Make sure backup actually works.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Photos of grandkids matter most. Pay for cloud backup. Worth every penny.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Photos of grandkids matter most. Pay for cloud backup. Worth every penny.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

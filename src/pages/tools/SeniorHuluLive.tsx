@@ -22,7 +22,7 @@ export default function SeniorHuluLive() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hulu library</h2><p>10,000+ on-demand shows and movies. Massive bonus.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Disney+ bonus</h2><p>All Disney, Pixar, Marvel, Star Wars. Great for grandkid visits.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Compare to YouTube TV</h2><p>Same channels. YouTube TV $4 cheaper but no Disney+.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 30-day free trial. Plenty of time to decide.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 30-day free trial. Plenty of time to decide.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

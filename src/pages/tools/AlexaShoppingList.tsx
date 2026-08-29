@@ -19,7 +19,7 @@ export default function AlexaShoppingList() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Alexa, add milk to shopping list.&quot;</li>
               <li>&quot;Hey Google, add bread to shopping list.&quot;</li>
               <li>List syncs to phone app.</li>
@@ -33,7 +33,7 @@ export default function AlexaShoppingList() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup Alexa</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Alexa app.</li>
               <li>Lists → Shopping List.</li>
               <li>Add items by voice anytime.</li>
@@ -47,7 +47,7 @@ export default function AlexaShoppingList() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup Google</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Hey Google, add eggs to shopping list&quot; auto-creates.</li>
               <li>Open Google Keep on phone.</li>
               <li>See list there.</li>
@@ -60,7 +60,7 @@ export default function AlexaShoppingList() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Add items WHEN YOU REMEMBER (cooking, in bath, watching TV).</li>
               <li>No paper lost.</li>
               <li>Always with you (on phone).</li>
@@ -74,7 +74,7 @@ export default function AlexaShoppingList() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best shopping apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AnyList</strong> ($10/yr) — most loved. Best lists.</li>
               <li><strong>Bring!</strong> — free, beautiful.</li>
               <li><strong>Cozi Family Organizer</strong> — list + calendar.</li>
@@ -88,7 +88,7 @@ export default function AlexaShoppingList() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">More uses</h3>
-            <p className="text-sm text-muted-foreground">Multiple lists by voice — &quot;to-do list,&quot; &quot;Costco list,&quot; &quot;hardware store list,&quot; &quot;packing list.&quot; Tell Alexa/Google which list. Voice-add removes effort. Senior life simplifier. Family stays coordinated.</p>
+            <p className="text-base text-muted-foreground">Multiple lists by voice — &quot;to-do list,&quot; &quot;Costco list,&quot; &quot;hardware store list,&quot; &quot;packing list.&quot; Tell Alexa/Google which list. Voice-add removes effort. Senior life simplifier. Family stays coordinated.</p>
           </CardContent>
         </Card>
       </main>

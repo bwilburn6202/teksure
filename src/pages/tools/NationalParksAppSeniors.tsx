@@ -19,7 +19,7 @@ export default function NationalParksAppSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Official NPS app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free official app.</li>
               <li>All 400+ parks + monuments.</li>
               <li>Maps, trails, hours.</li>
@@ -33,7 +33,7 @@ export default function NationalParksAppSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior Pass</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$80 lifetime pass for 62+.</li>
               <li>Or $20/year senior pass.</li>
               <li>Free entry to all 400+ federal sites.</li>
@@ -47,7 +47,7 @@ export default function NationalParksAppSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recreation.gov</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reserve campsites + cabins.</li>
               <li>Book months in advance for popular.</li>
               <li>Pay hiking permit fees.</li>
@@ -61,7 +61,7 @@ export default function NationalParksAppSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best parks for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Yellowstone — accessible boardwalks.</li>
               <li>Grand Canyon — South Rim drive + lookouts.</li>
               <li>Acadia — paved carriage roads.</li>
@@ -75,7 +75,7 @@ export default function NationalParksAppSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Self-guided tours</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Audio narration of points of interest.</li>
               <li>GPS-triggered descriptions.</li>
               <li>Park ranger expert content.</li>
@@ -89,7 +89,7 @@ export default function NationalParksAppSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Volunteering</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Volunteer.gov — find park opportunities.</li>
               <li>Camp host = free site for hosting.</li>
               <li>Visitor center help.</li>
@@ -103,7 +103,7 @@ export default function NationalParksAppSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Buy Senior Pass first</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re 62+ and haven&apos;t bought the $80 lifetime America the Beautiful Senior Pass, do it today. Best deal in travel. Pays for itself in 3–4 park visits. Combined with the free NPS app for self-guided tours, you have a complete national parks experience for under $100. Start with closest park to you.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re 62+ and haven&apos;t bought the $80 lifetime America the Beautiful Senior Pass, do it today. Best deal in travel. Pays for itself in 3–4 park visits. Combined with the free NPS app for self-guided tours, you have a complete national parks experience for under $100. Start with closest park to you.</p>
           </CardContent>
         </Card>
       </main>

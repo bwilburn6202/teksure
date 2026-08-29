@@ -19,8 +19,8 @@ export default function IRSPaymentPortal() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to pay</h2>
-            <p className="text-sm">Only at <strong>IRS.gov/payments</strong>. Anything else = scam.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Only at <strong>IRS.gov/payments</strong>. Anything else = scam.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li><strong>Direct Pay</strong> — free from bank account.</li>
               <li><strong>Debit/credit card</strong> — small fee 1.85-2.95%.</li>
               <li><strong>EFTPS</strong> — for businesses + individual estimated.</li>
@@ -32,7 +32,7 @@ export default function IRSPaymentPortal() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get an IP PIN (free)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>IRS.gov → "Get an Identity Protection PIN".</li>
               <li>Verify identity via Login.gov.</li>
               <li>Get 6-digit PIN.</li>
@@ -46,7 +46,7 @@ export default function IRSPaymentPortal() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Payment plans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Owe more than you can pay? Apply for payment plan online.</li>
               <li><strong>Short-term</strong> — pay in 180 days. No fee.</li>
               <li><strong>Long-term</strong> — monthly installments. $31 setup fee online.</li>
@@ -60,7 +60,7 @@ export default function IRSPaymentPortal() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other free IRS tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Where&apos;s My Refund</strong> — check refund status.</li>
               <li><strong>Get My Payment</strong> — past stimulus checks.</li>
               <li><strong>Get Transcript</strong> — old tax returns, summary, account.</li>
@@ -71,10 +71,10 @@ export default function IRSPaymentPortal() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">IRS scam warnings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>IRS NEVER calls demanding immediate payment.</li>
               <li>IRS NEVER threatens arrest.</li>
               <li>IRS NEVER asks for gift cards / wire / crypto.</li>
@@ -87,7 +87,7 @@ export default function IRSPaymentPortal() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">AARP Tax-Aide free help</h3>
-            <p className="text-sm text-muted-foreground">Real free human help: AARP Foundation Tax-Aide. 5,000 sites nationwide. Free for any age (don&apos;t need AARP membership). Find at aarp.org/findtaxhelp. February-April. Best free tax help.</p>
+            <p className="text-base text-muted-foreground">Real free human help: AARP Foundation Tax-Aide. 5,000 sites nationwide. Free for any age (don&apos;t need AARP membership). Find at aarp.org/findtaxhelp. February-April. Best free tax help.</p>
           </CardContent>
         </Card>
       </main>

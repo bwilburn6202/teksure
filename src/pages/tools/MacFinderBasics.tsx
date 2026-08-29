@@ -19,7 +19,7 @@ export default function MacFinderBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Open Finder</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Click smiley face icon on dock.</li>
               <li>Or click desktop, then &quot;Finder&quot; in menu bar.</li>
               <li>New window opens.</li>
@@ -33,7 +33,7 @@ export default function MacFinderBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sidebar locations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Recents</strong> — recent files.</li>
               <li><strong>Applications</strong> — all apps.</li>
               <li><strong>Desktop</strong> — files visible.</li>
@@ -47,7 +47,7 @@ export default function MacFinderBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find a file (Spotlight)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cmd + Space — opens Spotlight.</li>
               <li>Type any part of file name.</li>
               <li>Searches entire Mac instantly.</li>
@@ -61,7 +61,7 @@ export default function MacFinderBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Move + copy files</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drag file = move.</li>
               <li>Hold Option + drag = copy.</li>
               <li>Or Cmd+C to copy, Cmd+V to paste.</li>
@@ -75,7 +75,7 @@ export default function MacFinderBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Make folders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>File menu, then &quot;New Folder&quot;.</li>
               <li>Or Cmd + Shift + N.</li>
               <li>Type name immediately.</li>
@@ -89,7 +89,7 @@ export default function MacFinderBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Delete + recover</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drag to Trash bin (dock).</li>
               <li>Or Cmd + Delete on file.</li>
               <li>Click Trash to view.</li>
@@ -103,7 +103,7 @@ export default function MacFinderBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">View options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Icons (default).</li>
               <li>List — alphabetical with details.</li>
               <li>Columns — show folder hierarchy.</li>
@@ -117,7 +117,7 @@ export default function MacFinderBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">iCloud + Time Machine</h3>
-            <p className="text-sm text-muted-foreground">iCloud Drive automatically syncs Documents + Desktop. Time Machine — plug external drive once, set + forget. Backs up automatically. Recovers anything ever deleted. System Settings &gt; General &gt; Time Machine. $60 external drive = peace of mind for life.</p>
+            <p className="text-base text-muted-foreground">iCloud Drive automatically syncs Documents + Desktop. Time Machine — plug external drive once, set + forget. Backs up automatically. Recovers anything ever deleted. System Settings &gt; General &gt; Time Machine. $60 external drive = peace of mind for life.</p>
           </CardContent>
         </Card>
       </main>

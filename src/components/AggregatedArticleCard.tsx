@@ -51,10 +51,10 @@ export function AggregatedArticleCard({ article, source }: AggregatedArticleCard
           <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground">
             {article.category}
           </span>
-          <span className={`text-xs font-medium ${difficultyColors[article.difficulty]}`}>
+          <span className={`text-sm font-medium ${difficultyColors[article.difficulty]}`}>
             {article.difficulty}
           </span>
-          <span className="flex items-center gap-1 text-xs text-muted-foreground">
+          <span className="flex items-center gap-1 text-sm text-muted-foreground">
             <Clock className="h-2.5 w-2.5" aria-hidden="true" />
             {article.readTime}
           </span>

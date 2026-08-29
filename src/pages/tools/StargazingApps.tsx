@@ -27,7 +27,7 @@ export default function StargazingApps() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">How they work</h2>
-            <p className="text-sm">Your phone\'s compass and tilt sensors know which direction you\'re holding it. The app overlays the names of stars, planets, and constellations on the screen, matching the real sky.</p>
+            <p className="text-base">Your phone\'s compass and tilt sensors know which direction you\'re holding it. The app overlays the names of stars, planets, and constellations on the screen, matching the real sky.</p>
           </CardContent>
         </Card>
 
@@ -37,10 +37,10 @@ export default function StargazingApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -49,7 +49,7 @@ export default function StargazingApps() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best things to look for through the year</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Big Dipper</strong> — visible all year in the northern US. Easy to find first.</li>
               <li><strong>Orion</strong> — winter king. Belt of three bright stars in a row.</li>
               <li><strong>Venus</strong> — usually the brightest "star" in dawn or dusk. It\'s a planet.</li>
@@ -64,7 +64,7 @@ export default function StargazingApps() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best with grandkids</h3>
-            <p className="text-sm text-muted-foreground">SkyView Lite + a meteor shower night = magic. Bring lawn chairs, tea, and pick a date 1-2 days BEFORE the peak (less crowded, often clearer). Most kids remember the first time they spotted Saturn for life.</p>
+            <p className="text-base text-muted-foreground">SkyView Lite + a meteor shower night = magic. Bring lawn chairs, tea, and pick a date 1-2 days BEFORE the peak (less crowded, often clearer). Most kids remember the first time they spotted Saturn for life.</p>
           </CardContent>
         </Card>
       </main>

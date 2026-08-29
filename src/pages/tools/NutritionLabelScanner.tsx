@@ -30,10 +30,10 @@ export default function NutritionLabelScanner() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function NutritionLabelScanner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick label checks for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sodium</strong> — under 140mg per serving = "low sodium". 600+mg = high.</li>
               <li><strong>Added sugar</strong> — under 5g/serving good. 15g+ is dessert territory.</li>
               <li><strong>Fiber</strong> — 5g+ per serving good for digestion.</li>
@@ -56,7 +56,7 @@ export default function NutritionLabelScanner() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch out for tricks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Made with whole grains" — could be 2% whole grain.</li>
               <li>"Reduced fat" — usually has more sugar to compensate.</li>
               <li>"All natural" — meaningless legally.</li>
@@ -70,7 +70,7 @@ export default function NutritionLabelScanner() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best for diabetes</h3>
-            <p className="text-sm text-muted-foreground">Diabetic? Yuka + Fooducate both have specific diabetic filters. Show added sugar grams clearly. Some show glycemic index. Helps you avoid surprise carbs in &quot;healthy&quot; products.</p>
+            <p className="text-base text-muted-foreground">Diabetic? Yuka + Fooducate both have specific diabetic filters. Show added sugar grams clearly. Some show glycemic index. Helps you avoid surprise carbs in &quot;healthy&quot; products.</p>
           </CardContent>
         </Card>
       </main>

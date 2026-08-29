@@ -27,7 +27,7 @@ export default function SeniorPrinterPicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">The trap</h2>
-            <p className="text-sm">Cheap printers are sold at a loss — manufacturers make their money on overpriced ink. Buy a $40 printer, pay $50/year in ink. Better to spend more upfront on a printer with cheap consumables.</p>
+            <p className="text-base">Cheap printers are sold at a loss — manufacturers make their money on overpriced ink. Buy a $40 printer, pay $50/year in ink. Better to spend more upfront on a printer with cheap consumables.</p>
           </CardContent>
         </Card>
 
@@ -37,10 +37,10 @@ export default function SeniorPrinterPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -49,14 +49,14 @@ export default function SeniorPrinterPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Black-and-white laser is best for most</h2>
-            <p className="text-sm">Most seniors print: shipping labels, letters, recipes, tickets, photos of grandkids occasionally. A B&W laser printer like the Brother HL-L2350DW prints 1,200 pages on $50 of toner. Letters cost <strong>$0.04 each</strong> vs $0.20+ on inkjet.</p>
+            <p className="text-base">Most seniors print: shipping labels, letters, recipes, tickets, photos of grandkids occasionally. A B&W laser printer like the Brother HL-L2350DW prints 1,200 pages on $50 of toner. Letters cost <strong>$0.04 each</strong> vs $0.20+ on inkjet.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When color matters</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Lots of grandkid photo printing — get an Epson EcoTank.</li>
               <li>Occasional color (church bulletins, color signs) — keep a B&W laser, use Walgreens or CVS for color photos.</li>
             </ul>
@@ -66,7 +66,7 @@ export default function SeniorPrinterPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip these</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>$30-50 inkjet printers from Walmart</strong> — ink will cost you 5x the printer in 1 year.</li>
               <li><strong>Printers that REQUIRE you to use brand ink</strong> — they brick when 3rd-party ink is detected.</li>
               <li><strong>"Wireless only" printers without USB option</strong> — when Wi-Fi fails, you\'re stuck.</li>
@@ -77,7 +77,7 @@ export default function SeniorPrinterPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don\'t need a printer often?</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>FedEx Office / UPS Store</strong> — print a few pages from email, $0.20-1.00 each.</li>
               <li><strong>Public library</strong> — usually free or $0.10/page.</li>
               <li><strong>CVS / Walgreens</strong> — for photos.</li>
@@ -89,7 +89,7 @@ export default function SeniorPrinterPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Top recommendation</h3>
-            <p className="text-sm text-muted-foreground"><strong>Brother HL-L2350DW</strong> ($160) for B&W. <strong>Epson EcoTank ET-2850</strong> ($300) if you need color. Skip the $50 inkjet printers — guaranteed to disappoint.</p>
+            <p className="text-base text-muted-foreground"><strong>Brother HL-L2350DW</strong> ($160) for B&W. <strong>Epson EcoTank ET-2850</strong> ($300) if you need color. Skip the $50 inkjet printers — guaranteed to disappoint.</p>
           </CardContent>
         </Card>
       </main>

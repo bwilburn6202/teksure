@@ -22,7 +22,7 @@ export default function SeniorAdultDayCareTech() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cost</h2><p>Adult day care: $80/day average. Often Medicaid waiver covers it.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Veterans Aid &amp; Attendance</h2><p>Up to $2,300/month for veterans. va.gov.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">211 helpline</h2><p>Dial 211 from any phone. Free local resource help.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Tour at least 3 places. Visit at lunch — see how staff treats residents.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Tour at least 3 places. Visit at lunch — see how staff treats residents.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

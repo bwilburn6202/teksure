@@ -50,21 +50,21 @@ export default function StrengthRoutineBuilder() {
   const [equipment, setEquipment] = useState<Equipment>("Bodyweight (free)");
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Senior Strength Routine Builder | TekSure" description="Pick your goal and your equipment, get a printable 5-exercise strength routine for older adults. Twice a week, 30 minutes, no jargon." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <Dumbbell className="h-7 w-7 text-emerald-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Strength Routine Builder</h1>
+            <Dumbbell className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Strength Routine Builder</h1>
           </div>
-          <p className="text-gray-600 text-lg">Pick your equipment, print the page, do this twice a week. The Fiatarone studies showed seniors gain muscle at any age.</p>
+          <p className="text-muted-foreground text-lg">Pick your equipment, print the page, do this twice a week. The Fiatarone studies showed seniors gain muscle at any age.</p>
         </div>
 
         <Card className="mb-4 print:hidden">
           <CardContent className="py-4 px-4 space-y-3">
             <div>
-              <p className="text-sm font-semibold text-gray-700 mb-1">Your goal (informational)</p>
+              <p className="text-base font-semibold text-foreground mb-1">Your goal (informational)</p>
               <div className="flex flex-wrap gap-1">
                 {(["Stay independent", "Get stronger", "Prevent falls", "Build muscle"] as Goal[]).map(g => (
                   <Button key={g} size="sm" variant={goal === g ? "default" : "outline"} onClick={() => setGoal(g)}>{g}</Button>
@@ -72,7 +72,7 @@ export default function StrengthRoutineBuilder() {
               </div>
             </div>
             <div>
-              <p className="text-sm font-semibold text-gray-700 mb-1">What equipment do you have?</p>
+              <p className="text-base font-semibold text-foreground mb-1">What equipment do you have?</p>
               <div className="flex flex-wrap gap-1">
                 {(Object.keys(ROUTINES) as Equipment[]).map(e => (
                   <Button key={e} size="sm" variant={equipment === e ? "default" : "outline"} onClick={() => setEquipment(e)}>{e}</Button>
@@ -85,25 +85,25 @@ export default function StrengthRoutineBuilder() {
         <Card className="mb-4">
           <CardContent className="py-4 px-4">
             <div className="flex items-center justify-between mb-2">
-              <h2 className="text-2xl font-bold text-gray-900">Your Routine</h2>
+              <h2 className="text-2xl font-bold text-foreground">Your Routine</h2>
               <Badge variant="outline">{equipment}</Badge>
             </div>
-            <p className="text-sm text-gray-600 mb-3">Twice a week, 30-45 minutes per session. Rest 60-90 seconds between sets. Add a 5-minute walk warm-up.</p>
+            <p className="text-base text-muted-foreground mb-3">Twice a week, 30-45 minutes per session. Rest 60-90 seconds between sets. Add a 5-minute walk warm-up.</p>
             <div className="space-y-3">
               {ROUTINES[equipment].map((ex, i) => (
-                <div key={i} className="border border-gray-200 rounded-lg p-3 bg-white">
-                  <p className="font-semibold text-gray-900">{i + 1}. {ex.name}</p>
-                  <p className="text-xs text-emerald-700 italic mt-0.5">Why: {ex.why}</p>
-                  <p className="text-sm text-gray-700 mt-1">How: {ex.how}</p>
+                <div key={i} className="border border-border rounded-lg p-3 bg-card">
+                  <p className="font-semibold text-foreground">{i + 1}. {ex.name}</p>
+                  <p className="text-sm text-success-foreground italic mt-0.5">Why: {ex.why}</p>
+                  <p className="text-base text-foreground mt-1">How: {ex.how}</p>
                 </div>
               ))}
             </div>
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-blue-50 border-blue-200">
+        <Card className="mb-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Progress, not perfection:</span> Most older adults gain measurable strength within 6 weeks of starting. Add one rep per set every two weeks. When you can do all 3 sets of 12 reps easily, add light weight or harder leverage. Not medical advice — talk to your doctor first, especially if you have heart, joint, or balance concerns.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Progress, not perfection:</span> Most older adults gain measurable strength within 6 weeks of starting. Add one rep per set every two weeks. When you can do all 3 sets of 12 reps easily, add light weight or harder leverage. Not medical advice — talk to your doctor first, especially if you have heart, joint, or balance concerns.</p>
           </CardContent>
         </Card>
 
@@ -112,6 +112,6 @@ export default function StrengthRoutineBuilder() {
           <Button variant="outline" onClick={() => { setGoal("Stay independent"); setEquipment("Bodyweight (free)"); }} className="gap-2"><RotateCcw className="h-4 w-4" />Reset</Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

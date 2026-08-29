@@ -22,7 +22,7 @@ export default function SeniorVideoCallTablets() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Facebook Portal — discontinued</h2><p>If you find one used, it still works. Big screen, easy video calls.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Setup tips</h2><p>Have a grandchild set up favorites/contacts. Then it&apos;s one-tap to call.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Stand it up</h2><p>$15 stand makes hands-free calls easy. Keep it on kitchen counter.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Echo Show is best gift. &ldquo;Alexa, video call Mom&rdquo; is hands-free magic.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Echo Show is best gift. &ldquo;Alexa, video call Mom&rdquo; is hands-free magic.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

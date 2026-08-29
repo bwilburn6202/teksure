@@ -22,7 +22,7 @@ export default function SeniorEmergencyAlerts() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Nextdoor crime alerts</h2><p>Neighbor reports. Sometimes alarmist but useful.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family alerts</h2><p>Apple Find My family. iPhone alerts when family arrives home safe.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">FEMA app</h2><p>FREE. Disaster info. Shelters. Real-time.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Don&apos;t turn off Wireless Emergency Alerts. Saves lives in tornadoes.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Don&apos;t turn off Wireless Emergency Alerts. Saves lives in tornadoes.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

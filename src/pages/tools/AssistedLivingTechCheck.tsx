@@ -19,7 +19,7 @@ export default function AssistedLivingTechCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wifi questions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Is wifi free + included? (Should be.)</li>
               <li>Speeds in apartment? (Test on tour — should be 25+ Mbps.)</li>
               <li>Does it cover whole apartment, common areas?</li>
@@ -32,7 +32,7 @@ export default function AssistedLivingTechCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Communication tech</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Video calling room/area for family calls?</li>
               <li>Tech support staff (or just IT volunteer)?</li>
               <li>Help with new devices?</li>
@@ -45,7 +45,7 @@ export default function AssistedLivingTechCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety tech</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pull cords / emergency buttons in apartment.</li>
               <li>How quickly do staff respond? (Ideally under 5 min.)</li>
               <li>Wearable medical alert systems supported?</li>
@@ -60,7 +60,7 @@ export default function AssistedLivingTechCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Activities + entertainment tech</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Movie theater / TV lounge with closed captions?</li>
               <li>Smart TV in apartment?</li>
               <li>Streaming services included?</li>
@@ -73,7 +73,7 @@ export default function AssistedLivingTechCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Family communication</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family portal / app (see meds, activities, photos)?</li>
               <li>Video monitoring for memory care unit (with consent)?</li>
               <li>Easy way to schedule visits?</li>
@@ -86,7 +86,7 @@ export default function AssistedLivingTechCheck() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t skip the tour</h3>
-            <p className="text-sm text-muted-foreground">Marketing brochures lie. Visit. Stay 2 hours. Eat a meal. Talk to current residents alone (without sales staff). Tech is real — sales pitch isn&apos;t. Trust your eyes.</p>
+            <p className="text-base text-muted-foreground">Marketing brochures lie. Visit. Stay 2 hours. Eat a meal. Talk to current residents alone (without sales staff). Tech is real — sales pitch isn&apos;t. Trust your eyes.</p>
           </CardContent>
         </Card>
       </main>

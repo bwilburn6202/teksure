@@ -30,10 +30,10 @@ export default function AirPurifierPicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function AirPurifierPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors need them</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lungs more sensitive with age.</li>
               <li>Wildfire smoke health threat (2-3 weeks/yr in many areas).</li>
               <li>Pollen + dust allergies worsen.</li>
@@ -56,7 +56,7 @@ export default function AirPurifierPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to look for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>True HEPA filter</strong> (not &quot;HEPA-type&quot; — fake).</li>
               <li><strong>CADR rating</strong> matches room size.</li>
               <li><strong>Activated carbon</strong> for odors + smoke.</li>
@@ -70,7 +70,7 @@ export default function AirPurifierPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Filter replacement</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>HEPA filters last 6-12 months ($40-100).</li>
               <li>Pre-filter washable monthly.</li>
               <li>Carbon filter every 3-6 months.</li>
@@ -84,7 +84,7 @@ export default function AirPurifierPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Placement</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bedroom — most important. Run 24/7 on auto.</li>
               <li>Living room — second priority.</li>
               <li>3 feet from walls + furniture.</li>
@@ -98,7 +98,7 @@ export default function AirPurifierPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Wildfire emergency</h3>
-            <p className="text-sm text-muted-foreground">During wildfires — seal windows + run on max. Buy spare HEPA filters ahead of fire season. DIY box-fan + MERV 13 filter alternative ($30 — &quot;Corsi-Rosenthal box&quot;) — proven effective. EPA AirNow.gov for air quality.</p>
+            <p className="text-base text-muted-foreground">During wildfires — seal windows + run on max. Buy spare HEPA filters ahead of fire season. DIY box-fan + MERV 13 filter alternative ($30 — &quot;Corsi-Rosenthal box&quot;) — proven effective. EPA AirNow.gov for air quality.</p>
           </CardContent>
         </Card>
       </main>

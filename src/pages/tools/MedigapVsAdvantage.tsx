@@ -19,7 +19,7 @@ export default function MedigapVsAdvantage() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medigap (Supplement)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Used with Original Medicare.</li>
               <li>Higher monthly premium ($150-$300+).</li>
               <li>Lower out-of-pocket when you need care.</li>
@@ -33,7 +33,7 @@ export default function MedigapVsAdvantage() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medicare Advantage</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Replaces Original Medicare.</li>
               <li>Often $0 monthly premium.</li>
               <li>Must use network doctors.</li>
@@ -47,7 +47,7 @@ export default function MedigapVsAdvantage() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medigap better when</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You travel often - accepted nationwide.</li>
               <li>Have specific specialists you want.</li>
               <li>Live in multiple states.</li>
@@ -61,7 +61,7 @@ export default function MedigapVsAdvantage() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Advantage better when</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stay in one area + healthy.</li>
               <li>Want low monthly premium.</li>
               <li>Doctors are in plan&apos;s network.</li>
@@ -75,7 +75,7 @@ export default function MedigapVsAdvantage() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The trap</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Switching FROM Advantage TO Medigap is hard.</li>
               <li>Medigap can deny based on health.</li>
               <li>Once locked into Advantage, often stuck.</li>
@@ -89,7 +89,7 @@ export default function MedigapVsAdvantage() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get unbiased advice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SHIP - State Health Insurance Assistance.</li>
               <li>Free Medicare counseling.</li>
               <li>Independent - no commission.</li>
@@ -103,7 +103,7 @@ export default function MedigapVsAdvantage() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Decide carefully at age 65</h3>
-            <p className="text-sm text-muted-foreground">Your initial Medicare enrollment at 65 is the critical decision. Medigap (Supplement) Plan G is most common - covers most gaps in Original Medicare. Higher premium, lower copays. Medicare Advantage often has $0 premium but more restricted networks. Talk to free SHIP counselor before deciding. Get it right the first time.</p>
+            <p className="text-base text-muted-foreground">Your initial Medicare enrollment at 65 is the critical decision. Medigap (Supplement) Plan G is most common - covers most gaps in Original Medicare. Higher premium, lower copays. Medicare Advantage often has $0 premium but more restricted networks. Talk to free SHIP counselor before deciding. Get it right the first time.</p>
           </CardContent>
         </Card>
       </main>

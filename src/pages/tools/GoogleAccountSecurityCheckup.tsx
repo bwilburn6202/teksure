@@ -19,7 +19,7 @@ export default function GoogleAccountSecurityCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Run a Security Checkup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to MyAccount.Google.com.</li>
               <li>Click &quot;Security Checkup&quot; — top of page.</li>
               <li>Walk through automated review.</li>
@@ -33,7 +33,7 @@ export default function GoogleAccountSecurityCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">2-Step Verification</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most important security step.</li>
               <li>Google.com/landing/2step.</li>
               <li>Enable text or app verification.</li>
@@ -47,7 +47,7 @@ export default function GoogleAccountSecurityCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recent activity</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Review locations + devices that signed in.</li>
               <li>Anything unfamiliar?</li>
               <li>Sign out unrecognized devices.</li>
@@ -61,7 +61,7 @@ export default function GoogleAccountSecurityCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Connected apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apps + websites you allowed access to your Google.</li>
               <li>Remove anything you don&apos;t recognize or use.</li>
               <li>Old apps? Click &quot;Remove Access.&quot;</li>
@@ -75,7 +75,7 @@ export default function GoogleAccountSecurityCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Inactive Account Manager</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Decide what happens after you stop using Google.</li>
               <li>MyAccount.Google.com → Data + Privacy.</li>
               <li>Set inactivity period (3, 6, 12, 18 months).</li>
@@ -89,7 +89,7 @@ export default function GoogleAccountSecurityCheckup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy Checkup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>MyAccount.Google.com → Privacy Checkup.</li>
               <li>Reviews ad personalization.</li>
               <li>Location history settings.</li>
@@ -103,7 +103,7 @@ export default function GoogleAccountSecurityCheckup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">10 minutes annually</h3>
-            <p className="text-sm text-muted-foreground">Once a year — pick a memorable date like your birthday — go to MyAccount.Google.com and run the Security Checkup + Privacy Checkup. Both are guided, take 10 minutes, and dramatically improve your account safety. Set a calendar reminder for next year. Most seniors never review these settings — easy to fix.</p>
+            <p className="text-base text-muted-foreground">Once a year — pick a memorable date like your birthday — go to MyAccount.Google.com and run the Security Checkup + Privacy Checkup. Both are guided, take 10 minutes, and dramatically improve your account safety. Set a calendar reminder for next year. Most seniors never review these settings — easy to fix.</p>
           </CardContent>
         </Card>
       </main>

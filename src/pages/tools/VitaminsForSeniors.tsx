@@ -19,7 +19,7 @@ export default function VitaminsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Most important</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Vitamin D</strong> — bones + immune.</li>
               <li><strong>Vitamin B12</strong> — energy + nerves.</li>
               <li><strong>Calcium</strong> — bones (with D).</li>
@@ -33,7 +33,7 @@ export default function VitaminsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vitamin D specifically</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1,000-2,000 IU daily for most.</li>
               <li>Reduces falls 20%.</li>
               <li>Better immunity.</li>
@@ -47,7 +47,7 @@ export default function VitaminsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">B12 — sneaky deficiency</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30%+ of seniors deficient.</li>
               <li>Causes fatigue, depression, dementia symptoms.</li>
               <li>Stomach acid decreases with age = absorption.</li>
@@ -61,7 +61,7 @@ export default function VitaminsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Multivitamin debate</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Centrum Silver / One A Day 65+.</li>
               <li>Senior-targeted formulas.</li>
               <li>Some studies show benefit.</li>
@@ -75,7 +75,7 @@ export default function VitaminsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SKIP these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Vitamin E</strong> — high-dose risky.</li>
               <li><strong>Vitamin A</strong> — too much harmful.</li>
               <li><strong>Iron</strong> — unless deficient.</li>
@@ -89,7 +89,7 @@ export default function VitaminsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drug interactions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vitamin K + warfarin (Coumadin) = bleeding risk.</li>
               <li>Calcium + thyroid meds = absorption issue.</li>
               <li>St. John&apos;s Wort + many meds.</li>
@@ -103,7 +103,7 @@ export default function VitaminsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get tested first</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t guess. Annual blood panel includes Vitamin D, B12, folate. Medicare covers. Cheaper than buying random supplements. Most seniors deficient in something. Targeted supplementation. Quality matters — USP-verified. Whole foods preferred when possible. Vitamin pills don&apos;t replace healthy diet.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t guess. Annual blood panel includes Vitamin D, B12, folate. Medicare covers. Cheaper than buying random supplements. Most seniors deficient in something. Targeted supplementation. Quality matters — USP-verified. Whole foods preferred when possible. Vitamin pills don&apos;t replace healthy diet.</p>
           </CardContent>
         </Card>
       </main>

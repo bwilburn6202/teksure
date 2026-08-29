@@ -474,8 +474,8 @@ export default function AppleWatchSetup() {
             />
           </div>
           <div className="flex items-center gap-2 mb-4">
-            <Watch className="w-5 h-5 text-slate-700 dark:text-slate-200" />
-            <Badge variant="outline" className="text-xs border-slate-400 text-slate-800 dark:text-slate-200">
+            <Watch className="w-5 h-5 text-foreground " />
+            <Badge variant="outline" className="text-xs border-slate-400 text-foreground ">
               New Apple Watch · Guided setup
             </Badge>
           </div>
@@ -507,8 +507,8 @@ export default function AppleWatchSetup() {
           {/* Resume banner */}
           {resumeOffer && (
             <section className="container pt-6">
-              <Alert className="border-slate-400/60 bg-slate-50 dark:bg-slate-900/30">
-                <Bookmark className="h-5 w-5 text-slate-700 dark:text-slate-300" />
+              <Alert className="border-slate-400/60 bg-muted ">
+                <Bookmark className="h-5 w-5 text-foreground " />
                 <AlertTitle className="text-base">Welcome back!</AlertTitle>
                 <AlertDescription className="text-base leading-relaxed">
                   You were on step {resumeOffer.stepIndex + 1} of your Apple Watch walkthrough. Want to pick up
@@ -575,7 +575,7 @@ export default function AppleWatchSetup() {
                             </Badge>
                           )}
                         </div>
-                        <p className="text-sm md:text-base text-muted-foreground">{m.years}</p>
+                        <p className="text-base md:text-base text-muted-foreground">{m.years}</p>
                         <p className="text-base leading-relaxed mt-2">{m.note}</p>
                       </div>
                     </div>
@@ -588,7 +588,7 @@ export default function AppleWatchSetup() {
               <Card className="mt-6 border-slate-400/60">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-3 flex items-center gap-2">
-                    <Sparkles className="w-5 h-5 text-slate-700 dark:text-slate-300" />
+                    <Sparkles className="w-5 h-5 text-foreground " />
                     What works on your {selectedModel.name}
                   </h3>
                   <ul className="space-y-2 text-base leading-relaxed">
@@ -640,8 +640,8 @@ export default function AppleWatchSetup() {
                     </li>
                   </ul>
                   {!selectedModel.supported && (
-                    <Alert className="mt-4 border-amber-400/60 bg-amber-50 dark:bg-amber-950/30">
-                      <AlertTriangle className="h-5 w-5 text-amber-700 dark:text-amber-300" />
+                    <Alert className="mt-4 border-amber-400/60 bg-warn ">
+                      <AlertTriangle className="h-5 w-5 text-warn-foreground " />
                       <AlertTitle className="text-base">Heads up about older models</AlertTitle>
                       <AlertDescription className="text-base leading-relaxed">
                         Series 3 and older do not receive the latest watchOS updates. Pairing still works, but you
@@ -663,7 +663,7 @@ export default function AppleWatchSetup() {
                 Start the setup walkthrough
                 <ArrowRight className="w-5 h-5" />
               </Button>
-              <p className="text-sm text-muted-foreground">
+              <p className="text-base text-muted-foreground">
                 12 short steps. Your progress is saved automatically.
               </p>
             </div>
@@ -745,7 +745,7 @@ export default function AppleWatchSetup() {
           <div className="container py-6 md:py-8">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
               <div className="flex items-center gap-3">
-                <StepIcon className="w-5 h-5 text-slate-700 dark:text-slate-200" />
+                <StepIcon className="w-5 h-5 text-foreground " />
                 <span className="text-base md:text-lg font-medium">Apple Watch walkthrough</span>
               </div>
               <div className="flex flex-wrap gap-2">
@@ -771,15 +771,15 @@ export default function AppleWatchSetup() {
             </div>
 
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-2">
-              <span className="text-sm md:text-base font-medium">
+              <span className="text-base md:text-base font-medium">
                 Step {stepIndex + 1} of {totalSteps}
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 {completed.size} completed
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 You&apos;re doing great — take your time.
               </span>
             </div>
@@ -803,7 +803,7 @@ export default function AppleWatchSetup() {
                   )}
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="p-3 rounded-xl bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-100 shrink-0">
+                  <div className="p-3 rounded-xl bg-slate-200 text-foreground dark:bg-slate-800 shrink-0">
                     <StepIcon className="w-8 h-8" />
                   </div>
                   <div>
@@ -837,7 +837,7 @@ export default function AppleWatchSetup() {
                       <li key={i} className="flex gap-3 text-base md:text-lg leading-relaxed">
                         <span
                           aria-hidden="true"
-                          className="shrink-0 w-8 h-8 rounded-full bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-100 font-bold flex items-center justify-center text-base"
+                          className="shrink-0 w-8 h-8 rounded-full bg-slate-200 text-foreground dark:bg-slate-800 font-bold flex items-center justify-center text-base"
                         >
                           {i + 1}
                         </span>
@@ -849,8 +849,8 @@ export default function AppleWatchSetup() {
               </Card>
 
               {/* Stumbling block */}
-              <Alert className="border-amber-400/60 bg-amber-50 dark:bg-amber-950/30">
-                <Lightbulb className="h-5 w-5 text-amber-700 dark:text-amber-300" />
+              <Alert className="border-amber-400/60 bg-warn ">
+                <Lightbulb className="h-5 w-5 text-warn-foreground " />
                 <AlertTitle className="text-base md:text-lg">Common stumbling block</AlertTitle>
                 <AlertDescription className="text-base leading-relaxed">
                   {current.stumble}
@@ -902,7 +902,7 @@ export default function AppleWatchSetup() {
                 <Card className="border-green-600/40 bg-green-50/40 dark:bg-green-950/20">
                   <CardContent className="p-6 md:p-8 space-y-4">
                     <h2 className="text-2xl md:text-3xl font-bold flex items-center gap-2">
-                      <CheckCircle2 className="w-7 h-7 text-green-700 dark:text-green-400" />
+                      <CheckCircle2 className="w-7 h-7 text-success-foreground " />
                       You did it!
                     </h2>
                     <p className="text-base md:text-lg leading-relaxed">
@@ -1051,7 +1051,7 @@ function MustDoSafetySettings() {
     <section className="border-t border-border bg-red-50/40 dark:bg-red-950/10">
       <div className="container py-10 md:py-14">
         <div className="flex items-center gap-2 mb-3">
-          <Siren className="w-6 h-6 text-red-700 dark:text-red-300" />
+          <Siren className="w-6 h-6 text-danger-foreground " />
           <Badge className="bg-red-700 hover:bg-red-700 text-white">Do these first</Badge>
         </div>
         <h2 className="text-2xl md:text-3xl font-semibold mb-3">Must-do safety settings</h2>
@@ -1066,7 +1066,7 @@ function MustDoSafetySettings() {
             <Card key={i} className="border-red-200/60 dark:border-red-900/40">
               <CardContent className="p-5 md:p-6 space-y-3">
                 <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-lg bg-red-100 text-red-800 dark:bg-red-950/40 dark:text-red-200 shrink-0">
+                  <div className="p-2.5 rounded-lg bg-danger text-danger-foreground shrink-0">
                     <item.icon className="w-6 h-6" />
                   </div>
                   <div>
@@ -1078,7 +1078,7 @@ function MustDoSafetySettings() {
                   <strong className="font-semibold">How to turn it on:</strong> {item.path}
                 </div>
                 {item.eligibility && (
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     <strong>Eligibility:</strong> {item.eligibility}
                   </p>
                 )}
@@ -1160,7 +1160,7 @@ function HealthFeaturesWalkthrough() {
     <section className="border-t border-border">
       <div className="container py-10 md:py-14">
         <div className="flex items-center gap-2 mb-3">
-          <HeartPulse className="w-6 h-6 text-rose-700 dark:text-rose-300" />
+          <HeartPulse className="w-6 h-6 text-danger-foreground " />
           <Badge variant="outline" className="text-sm">
             Health features
           </Badge>
@@ -1176,13 +1176,13 @@ function HealthFeaturesWalkthrough() {
             <Card key={i}>
               <CardContent className="p-5 md:p-6 space-y-3">
                 <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-lg bg-rose-100 text-rose-800 dark:bg-rose-950/40 dark:text-rose-200 shrink-0">
+                  <div className="p-2.5 rounded-lg bg-danger text-danger-foreground shrink-0">
                     <f.icon className="w-6 h-6" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg md:text-xl font-semibold">{f.title}</h3>
                     {f.eligibility && (
-                      <p className="text-sm text-muted-foreground">{f.eligibility}</p>
+                      <p className="text-base text-muted-foreground">{f.eligibility}</p>
                     )}
                   </div>
                 </div>
@@ -1307,7 +1307,7 @@ function DailyBasics() {
             <Card key={i}>
               <CardContent className="p-5 md:p-6 space-y-3">
                 <div className="flex items-start gap-3">
-                  <div className="p-2.5 rounded-lg bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-100 shrink-0">
+                  <div className="p-2.5 rounded-lg bg-slate-200 text-foreground dark:bg-slate-800 shrink-0">
                     <b.icon className="w-6 h-6" />
                   </div>
                   <h3 className="text-lg md:text-xl font-semibold">{b.title}</h3>
@@ -1317,7 +1317,7 @@ function DailyBasics() {
                     <li key={j} className="flex gap-2">
                       <span
                         aria-hidden="true"
-                        className="shrink-0 w-6 h-6 rounded-full bg-slate-300 text-slate-900 dark:bg-slate-700 dark:text-slate-100 font-bold flex items-center justify-center text-xs"
+                        className="shrink-0 w-6 h-6 rounded-full bg-slate-300 text-foreground dark:bg-slate-700 font-bold flex items-center justify-center text-xs"
                       >
                         {j + 1}
                       </span>
@@ -1341,7 +1341,7 @@ function AccessibilitySection() {
     <section className="border-t border-border">
       <div className="container py-10 md:py-14">
         <div className="flex items-center gap-2 mb-3">
-          <Accessibility className="w-6 h-6 text-indigo-700 dark:text-indigo-300" />
+          <Accessibility className="w-6 h-6 text-primary " />
           <Badge variant="outline" className="text-sm">
             Accessibility
           </Badge>
@@ -1361,7 +1361,7 @@ function AccessibilitySection() {
               <p className="text-base leading-relaxed">
                 Pick a simpler, bigger watch face like X-Large or Numerals. Then bump the text size.
               </p>
-              <p className="text-sm font-mono leading-relaxed text-muted-foreground">
+              <p className="text-base font-mono leading-relaxed text-muted-foreground">
                 Watch: press firmly on the face → browse faces → pick X-Large. For text: iPhone → Watch app → My
                 Watch → Display &amp; Brightness → Text Size.
               </p>
@@ -1375,7 +1375,7 @@ function AccessibilitySection() {
                 Double-tap with two fingers to zoom in. Drag with two fingers to move around. Double-tap again to
                 zoom out.
               </p>
-              <p className="text-sm font-mono leading-relaxed text-muted-foreground">
+              <p className="text-base font-mono leading-relaxed text-muted-foreground">
                 iPhone → Watch app → My Watch → Accessibility → Zoom → On.
               </p>
             </CardContent>
@@ -1388,7 +1388,7 @@ function AccessibilitySection() {
                 The watch reads what&apos;s on the screen out loud. For people with low vision or those who find
                 the text hard to read.
               </p>
-              <p className="text-sm font-mono leading-relaxed text-muted-foreground">
+              <p className="text-base font-mono leading-relaxed text-muted-foreground">
                 iPhone → Watch app → My Watch → Accessibility → VoiceOver → On.
               </p>
             </CardContent>
@@ -1401,7 +1401,7 @@ function AccessibilitySection() {
                 Control the watch with hand gestures — clench your fist twice to tap, pinch your fingers to
                 scroll. No touching the screen needed.
               </p>
-              <p className="text-sm font-mono leading-relaxed text-muted-foreground">
+              <p className="text-base font-mono leading-relaxed text-muted-foreground">
                 iPhone → Watch app → My Watch → Accessibility → AssistiveTouch → On, then run Hand Gestures
                 Tutorial.
               </p>
@@ -1415,7 +1415,7 @@ function AccessibilitySection() {
                 Turns off the swooping animations between apps. Helpful for motion sickness or people who find
                 the movement distracting.
               </p>
-              <p className="text-sm font-mono leading-relaxed text-muted-foreground">
+              <p className="text-base font-mono leading-relaxed text-muted-foreground">
                 iPhone → Watch app → My Watch → Accessibility → Reduce Motion → On.
               </p>
             </CardContent>
@@ -1428,7 +1428,7 @@ function AccessibilitySection() {
                 Makes all the letters thicker and easier to read at a glance. Pair with Increase Contrast for
                 even better readability.
               </p>
-              <p className="text-sm font-mono leading-relaxed text-muted-foreground">
+              <p className="text-base font-mono leading-relaxed text-muted-foreground">
                 iPhone → Watch app → My Watch → Display &amp; Brightness → Bold Text + Accessibility → Increase
                 Contrast.
               </p>
@@ -1437,8 +1437,8 @@ function AccessibilitySection() {
         </div>
 
         <div className="mt-6">
-          <Alert className="border-indigo-400/60 bg-indigo-50 dark:bg-indigo-950/20">
-            <Sparkles className="h-5 w-5 text-indigo-700 dark:text-indigo-300" />
+          <Alert className="border-indigo-400/60 bg-primary/10 ">
+            <Sparkles className="h-5 w-5 text-primary " />
             <AlertDescription className="text-base leading-relaxed">
               Looking for more help with accessibility across all your devices?{' '}
               <Link to="/tools/accessibility-hub" className="text-primary underline font-medium">
@@ -1460,7 +1460,7 @@ function FamilySetupSection() {
     <section className="border-t border-border bg-blue-50/40 dark:bg-blue-950/10">
       <div className="container py-10 md:py-14">
         <div className="flex items-center gap-2 mb-3">
-          <Users className="w-6 h-6 text-blue-700 dark:text-blue-300" />
+          <Users className="w-6 h-6 text-info-foreground " />
           <Badge variant="outline" className="text-sm border-blue-400">
             Family Setup
           </Badge>
@@ -1476,29 +1476,29 @@ function FamilySetupSection() {
         <Card className="mb-6 border-blue-300/60">
           <CardContent className="p-6 space-y-3">
             <h3 className="text-xl font-semibold flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-blue-700 dark:text-blue-300" />
+              <CheckCircle2 className="w-5 h-5 text-info-foreground " />
               Requirements
             </h3>
             <ul className="space-y-2 text-base leading-relaxed">
               <li className="flex gap-2">
-                <ArrowRight className="w-5 h-5 text-blue-700 shrink-0 mt-0.5" />
+                <ArrowRight className="w-5 h-5 text-info-foreground shrink-0 mt-0.5" />
                 <span>
                   A <strong>cellular</strong> Apple Watch Series 4 or later (GPS + Cellular model — look for the
                   red dot on the Digital Crown of older models, or check the box).
                 </span>
               </li>
               <li className="flex gap-2">
-                <ArrowRight className="w-5 h-5 text-blue-700 shrink-0 mt-0.5" />
+                <ArrowRight className="w-5 h-5 text-info-foreground shrink-0 mt-0.5" />
                 <span>
                   An active cellular plan on that watch — most US carriers offer $10/month Apple Watch plans.
                 </span>
               </li>
               <li className="flex gap-2">
-                <ArrowRight className="w-5 h-5 text-blue-700 shrink-0 mt-0.5" />
+                <ArrowRight className="w-5 h-5 text-info-foreground shrink-0 mt-0.5" />
                 <span>The family member&apos;s iPhone (the one doing the setup).</span>
               </li>
               <li className="flex gap-2">
-                <ArrowRight className="w-5 h-5 text-blue-700 shrink-0 mt-0.5" />
+                <ArrowRight className="w-5 h-5 text-info-foreground shrink-0 mt-0.5" />
                 <span>
                   An Apple ID for the parent — create a free one during setup if they don&apos;t have one.
                 </span>
@@ -1524,7 +1524,7 @@ function FamilySetupSection() {
                 <li key={i} className="flex gap-3">
                   <span
                     aria-hidden="true"
-                    className="shrink-0 w-7 h-7 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-950/40 dark:text-blue-200 font-bold flex items-center justify-center text-sm"
+                    className="shrink-0 w-7 h-7 rounded-full bg-info text-info-foreground font-bold flex items-center justify-center text-sm"
                   >
                     {i + 1}
                   </span>
@@ -1533,8 +1533,8 @@ function FamilySetupSection() {
               ))}
             </ol>
 
-            <Alert className="mt-4 border-blue-400/60 bg-blue-50 dark:bg-blue-950/20">
-              <Lightbulb className="h-5 w-5 text-blue-700 dark:text-blue-300" />
+            <Alert className="mt-4 border-blue-400/60 bg-info ">
+              <Lightbulb className="h-5 w-5 text-info-foreground " />
               <AlertTitle className="text-base">Tip</AlertTitle>
               <AlertDescription className="text-base leading-relaxed">
                 Family Setup is a wonderful option for a parent who doesn&apos;t want a smartphone but would use a
@@ -1556,7 +1556,7 @@ function PrivacyCard() {
     <section className="border-t border-border">
       <div className="container py-10 md:py-14">
         <div className="flex items-center gap-2 mb-3">
-          <ShieldCheck className="w-6 h-6 text-emerald-700 dark:text-emerald-300" />
+          <ShieldCheck className="w-6 h-6 text-success-foreground " />
           <Badge variant="outline" className="text-sm border-emerald-400">
             Privacy + security
           </Badge>
@@ -1585,7 +1585,7 @@ function PrivacyCard() {
                 Turn this on today if it isn&apos;t already. It stops a scammer from signing into your account
                 even if they somehow get your password.
               </p>
-              <p className="text-sm font-mono leading-relaxed text-muted-foreground">
+              <p className="text-base font-mono leading-relaxed text-muted-foreground">
                 iPhone → Settings → your name → Sign-In &amp; Security → Two-Factor Authentication → On.
               </p>
             </CardContent>
@@ -1598,7 +1598,7 @@ function PrivacyCard() {
                 Always unpair the watch from your iPhone first — this wipes the watch and removes Activation
                 Lock, so the next owner can set it up fresh.
               </p>
-              <p className="text-sm font-mono leading-relaxed text-muted-foreground">
+              <p className="text-base font-mono leading-relaxed text-muted-foreground">
                 iPhone → Watch app → My Watch → All Watches → tap the (i) → Unpair Apple Watch → enter Apple ID
                 password.
               </p>
@@ -1612,7 +1612,7 @@ function PrivacyCard() {
                 If the watch is stuck or you want to start fresh without going through an iPhone, you can wipe it
                 from the watch itself — this is safe as long as you also unpair from the iPhone afterward.
               </p>
-              <p className="text-sm font-mono leading-relaxed text-muted-foreground">
+              <p className="text-base font-mono leading-relaxed text-muted-foreground">
                 On the watch: Settings → General → Reset → Erase All Content and Settings → confirm.
               </p>
             </CardContent>
@@ -1630,7 +1630,7 @@ function TroubleshootingSection() {
     <section className="border-t border-border bg-muted/30">
       <div className="container py-10 md:py-14">
         <div className="flex items-center gap-2 mb-3">
-          <HelpCircle className="w-6 h-6 text-amber-700 dark:text-amber-300" />
+          <HelpCircle className="w-6 h-6 text-warn-foreground " />
           <Badge variant="outline" className="text-sm">
             Troubleshooting
           </Badge>
@@ -1898,7 +1898,7 @@ function RelatedLinks() {
               to={l.to}
               className="group rounded-xl border-2 border-border bg-card p-5 hover:border-slate-500 transition-all min-h-14 flex items-start gap-4"
             >
-              <div className="p-3 rounded-lg bg-slate-200 text-slate-800 dark:bg-slate-800 dark:text-slate-100 shrink-0">
+              <div className="p-3 rounded-lg bg-slate-200 text-foreground dark:bg-slate-800 shrink-0">
                 <l.icon className="w-6 h-6" />
               </div>
               <div className="flex-1">

@@ -22,7 +22,7 @@ export default function SeniorClassmates() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">LinkedIn</h2><p>Free. Search by school + graduation year. Many people on it.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Reunite It</h2><p>Free. Specifically for organizing class reunions.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Gone too soon</h2><p>Sites like findagrave.com help honor classmates who passed.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Reach out gently. Many old friends are waiting to hear from you.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Reach out gently. Many old friends are waiting to hear from you.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

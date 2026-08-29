@@ -30,10 +30,10 @@ export default function PetSupplyDelivery() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function PetSupplyDelivery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Auto-ship benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Save 5-15% on every order.</li>
               <li>Schedule monthly / 6-week / quarterly.</li>
               <li>Skip or pause anytime.</li>
@@ -56,7 +56,7 @@ export default function PetSupplyDelivery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Chewy — senior favorite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>24/7 phone support — real people.</li>
               <li>365-day return policy.</li>
               <li>Personal touch — flowers if pet dies.</li>
@@ -70,7 +70,7 @@ export default function PetSupplyDelivery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money on pet care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Generic vs name-brand often equivalent.</li>
               <li>Vet/specialty diets — get prescription, buy at pharmacy.</li>
               <li>Costco Kirkland brand = excellent quality + price.</li>
@@ -84,7 +84,7 @@ export default function PetSupplyDelivery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pet meds online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Chewy Pharmacy</strong> — prescription meds, often half vet&apos;s price.</li>
               <li><strong>1-800-PetMeds</strong> — long-time online pharmacy.</li>
               <li><strong>Costco Pet Pharmacy</strong> — even cheaper if member.</li>
@@ -98,7 +98,7 @@ export default function PetSupplyDelivery() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free pet food assistance</h3>
-            <p className="text-sm text-muted-foreground">If on fixed income — many local food banks include pet food. <strong>Pet Pantry</strong> programs nationwide. <strong>Meals on Wheels</strong> serves pets too in many areas. <strong>Banfield Foundation Pet Pantry</strong> grants. Call local Humane Society — most know all programs.</p>
+            <p className="text-base text-muted-foreground">If on fixed income — many local food banks include pet food. <strong>Pet Pantry</strong> programs nationwide. <strong>Meals on Wheels</strong> serves pets too in many areas. <strong>Banfield Foundation Pet Pantry</strong> grants. Call local Humane Society — most know all programs.</p>
           </CardContent>
         </Card>
       </main>

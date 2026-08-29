@@ -18,11 +18,11 @@ export default function SeniorDuolingoBasics() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free forever</h2><p>Free version is plenty. Premium ($7/month) removes ads.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Setup</h2><p>Download. Pick a language. Pick &ldquo;5 minutes a day&rdquo; goal. Start your first lesson.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best languages for seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Spanish — most useful in US</li><li>Italian — fun for travel</li><li>French — popular for trips</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best languages for seniors</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Spanish — most useful in US</li><li>Italian — fun for travel</li><li>French — popular for trips</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Streaks build habit</h2><p>App tracks how many days in a row. Most seniors keep streaks of 100+ days.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Brain benefits</h2><p>Studies show language learning slows cognitive decline. Real measurable benefit.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Speak out loud</h2><p>Don&apos;t skip pronunciation. Speak the answers — improves recall.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pair Duolingo with Netflix shows in that language with subtitles. Learn faster.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pair Duolingo with Netflix shows in that language with subtitles. Learn faster.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

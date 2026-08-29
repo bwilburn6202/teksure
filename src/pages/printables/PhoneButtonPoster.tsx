@@ -875,8 +875,8 @@ export default function PhoneButtonPoster() {
           {/* ── Hero ───────────────────────────────── */}
           <section className="mt-4 mb-10 rounded-3xl p-8 md:p-12 bg-gradient-to-br from-slate-100 via-amber-50 to-orange-100 dark:from-slate-800 dark:via-slate-800 dark:to-amber-950/30 border border-amber-200/60 dark:border-amber-900/40">
             <div className="flex items-start gap-5 flex-wrap">
-              <div className="h-16 w-16 rounded-2xl bg-white shadow flex items-center justify-center shrink-0">
-                <Printer className="h-9 w-9 text-amber-700" aria-hidden />
+              <div className="h-16 w-16 rounded-2xl bg-card shadow flex items-center justify-center shrink-0">
+                <Printer className="h-9 w-9 text-warn-foreground" aria-hidden />
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-3 flex-wrap mb-3">
@@ -884,10 +884,10 @@ export default function PhoneButtonPoster() {
                   <Badge variant="outline">Accessibility</Badge>
                   <Badge variant="outline">Caregiver friendly</Badge>
                 </div>
-                <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50">
+                <h1 className="text-3xl md:text-5xl font-extrabold tracking-tight text-foreground ">
                   Phone Button Wall Poster
                 </h1>
-                <p className="mt-3 text-lg text-slate-700 dark:text-slate-300 max-w-3xl">
+                <p className="mt-3 text-lg text-foreground max-w-3xl">
                   A printable wall poster that names every button on your phone. Hang it near the counter.
                 </p>
                 <div className="mt-4 flex items-center gap-3">
@@ -904,18 +904,18 @@ export default function PhoneButtonPoster() {
 
           {/* ── Picker ─────────────────────────────── */}
           <section className="mb-8">
-            <Card className="border-slate-200 dark:border-slate-800">
+            <Card className="border-border ">
               <CardContent className="p-6 md:p-8">
-                <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-50 mb-1">
+                <h2 className="text-2xl font-bold text-foreground mb-1">
                   1. Pick the poster
                 </h2>
-                <p className="text-slate-600 dark:text-slate-400 mb-6 text-base">
+                <p className="text-muted-foreground mb-6 text-base">
                   Choose the device you want to label. Each option becomes a printable page.
                 </p>
 
                 {categoryGroups.map((group) => (
                   <div key={group.label} className="mb-6 last:mb-0">
-                    <h3 className="text-lg font-semibold text-slate-800 dark:text-slate-200 mb-3">
+                    <h3 className="text-lg font-semibold text-foreground mb-3">
                       {group.label}
                     </h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -945,10 +945,10 @@ export default function PhoneButtonPoster() {
                                 <Icon className="h-5 w-5" aria-hidden />
                               </div>
                               <div className="min-w-0">
-                                <div className="font-semibold text-base text-slate-900 dark:text-slate-50">
+                                <div className="font-semibold text-base text-foreground ">
                                   {p.title}
                                 </div>
-                                <div className="text-sm text-slate-600 dark:text-slate-400 mt-1">
+                                <div className="text-sm text-muted-foreground mt-1">
                                   {p.subtitle}
                                 </div>
                               </div>
@@ -967,16 +967,16 @@ export default function PhoneButtonPoster() {
           <section className="mb-8">
             <Card>
               <CardContent className="p-6 md:p-8">
-                <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-50 mb-1">
+                <h2 className="text-2xl font-bold text-foreground mb-1">
                   2. Print preferences
                 </h2>
-                <p className="text-slate-600 dark:text-slate-400 mb-6 text-base">
+                <p className="text-muted-foreground mb-6 text-base">
                   Pick paper size, ink, and how big you want the labels.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="paper-size" className="block text-base font-semibold text-slate-800 dark:text-slate-200 mb-2">
+                    <label htmlFor="paper-size" className="block text-base font-semibold text-foreground mb-2">
                       Paper size
                     </label>
                     <Select value={paper} onValueChange={(v) => setPaper(v as PaperSize)}>
@@ -991,7 +991,7 @@ export default function PhoneButtonPoster() {
                   </div>
 
                   <div>
-                    <label htmlFor="color-mode" className="block text-base font-semibold text-slate-800 dark:text-slate-200 mb-2">
+                    <label htmlFor="color-mode" className="block text-base font-semibold text-foreground mb-2">
                       Ink
                     </label>
                     <Select value={colorMode} onValueChange={(v) => setColorMode(v as ColorMode)}>
@@ -1015,10 +1015,10 @@ export default function PhoneButtonPoster() {
                       className="mt-1"
                     />
                     <div>
-                      <label htmlFor="large-print" className="text-base font-semibold text-slate-800 dark:text-slate-200 cursor-pointer">
+                      <label htmlFor="large-print" className="text-base font-semibold text-foreground cursor-pointer">
                         Large print mode
                       </label>
-                      <p className="text-sm text-slate-600 dark:text-slate-400">
+                      <p className="text-base text-muted-foreground ">
                         Makes labels much bigger — best for low vision.
                       </p>
                     </div>
@@ -1031,10 +1031,10 @@ export default function PhoneButtonPoster() {
                       className="mt-1"
                     />
                     <div>
-                      <label htmlFor="show-footer" className="text-base font-semibold text-slate-800 dark:text-slate-200 cursor-pointer">
+                      <label htmlFor="show-footer" className="text-base font-semibold text-foreground cursor-pointer">
                         Show "Made by TekSure" footer
                       </label>
-                      <p className="text-sm text-slate-600 dark:text-slate-400">
+                      <p className="text-base text-muted-foreground ">
                         Turn off for a cleaner print, or leave on to remember where you got it.
                       </p>
                     </div>
@@ -1048,16 +1048,16 @@ export default function PhoneButtonPoster() {
           <section className="mb-8">
             <Card>
               <CardContent className="p-6 md:p-8">
-                <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-50 mb-1">
+                <h2 className="text-2xl font-bold text-foreground mb-1">
                   3. Add a name and emergency contacts (optional)
                 </h2>
-                <p className="text-slate-600 dark:text-slate-400 mb-6 text-base">
+                <p className="text-muted-foreground mb-6 text-base">
                   These get printed at the bottom of the poster. Leave blank to skip.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="caregiver" className="block text-base font-semibold text-slate-800 dark:text-slate-200 mb-2">
+                    <label htmlFor="caregiver" className="block text-base font-semibold text-foreground mb-2">
                       Call this person first
                     </label>
                     <Input
@@ -1069,7 +1069,7 @@ export default function PhoneButtonPoster() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="contact1" className="block text-base font-semibold text-slate-800 dark:text-slate-200 mb-2">
+                    <label htmlFor="contact1" className="block text-base font-semibold text-foreground mb-2">
                       Other contact 1
                     </label>
                     <Input
@@ -1081,7 +1081,7 @@ export default function PhoneButtonPoster() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="contact2" className="block text-base font-semibold text-slate-800 dark:text-slate-200 mb-2">
+                    <label htmlFor="contact2" className="block text-base font-semibold text-foreground mb-2">
                       Other contact 2
                     </label>
                     <Input
@@ -1093,7 +1093,7 @@ export default function PhoneButtonPoster() {
                     />
                   </div>
                   <div>
-                    <label htmlFor="contact3" className="block text-base font-semibold text-slate-800 dark:text-slate-200 mb-2">
+                    <label htmlFor="contact3" className="block text-base font-semibold text-foreground mb-2">
                       Other contact 3
                     </label>
                     <Input
@@ -1112,7 +1112,7 @@ export default function PhoneButtonPoster() {
           {/* ── Preview + print ────────────────────── */}
           <section className="mb-8">
             <div className="flex items-center justify-between mb-4 flex-wrap gap-3">
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-50">
+              <h2 className="text-2xl font-bold text-foreground ">
                 4. Preview and print
               </h2>
               <div className="flex items-center gap-3">
@@ -1126,10 +1126,10 @@ export default function PhoneButtonPoster() {
               </div>
             </div>
 
-            <Alert className="mb-6 border-sky-200 bg-sky-50 dark:border-sky-900 dark:bg-sky-950/30">
-              <Download className="h-4 w-4 text-sky-700 dark:text-sky-300" aria-hidden />
-              <AlertTitle className="text-sky-900 dark:text-sky-100">Save as PDF</AlertTitle>
-              <AlertDescription className="text-sky-900 dark:text-sky-100 text-base">
+            <Alert className="mb-6 border-info-foreground/25 bg-info ">
+              <Download className="h-4 w-4 text-info-foreground " aria-hidden />
+              <AlertTitle className="text-info-foreground ">Save as PDF</AlertTitle>
+              <AlertDescription className="text-info-foreground text-base">
                 You do not need a PDF app. In the print window:
                 <span className="block mt-1"><span className="font-semibold">Windows</span> — pick "Microsoft Print to PDF" as the printer, then click Print.</span>
                 <span className="block"><span className="font-semibold">Mac</span> — click the PDF dropdown in the bottom-left, then "Save as PDF".</span>
@@ -1164,14 +1164,14 @@ export default function PhoneButtonPoster() {
             <Card>
               <CardContent className="p-6 md:p-8">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="h-10 w-10 rounded-lg bg-amber-100 dark:bg-amber-950/40 flex items-center justify-center">
-                    <AccessibilityIcon className="h-5 w-5 text-amber-700 dark:text-amber-300" aria-hidden />
+                  <div className="h-10 w-10 rounded-lg bg-warn flex items-center justify-center">
+                    <AccessibilityIcon className="h-5 w-5 text-warn-foreground " aria-hidden />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-50">
+                  <h2 className="text-2xl font-bold text-foreground ">
                     Hanging tips
                   </h2>
                 </div>
-                <ul className="space-y-3 text-base text-slate-700 dark:text-slate-300">
+                <ul className="space-y-3 text-base text-foreground ">
                   <li>
                     <strong>Best spots to hang it:</strong> next to the kitchen phone, on the fridge, beside the recliner, or inside a cabinet door where the phone charger lives.
                   </li>
@@ -1194,22 +1194,22 @@ export default function PhoneButtonPoster() {
 
           {/* ── For caregivers ─────────────────────── */}
           <section className="mb-10">
-            <Card className="border-rose-200 dark:border-rose-900 bg-rose-50/40 dark:bg-rose-950/20">
+            <Card className="border-danger-foreground/25 bg-rose-50/40 dark:bg-rose-950/20">
               <CardContent className="p-6 md:p-8">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="h-10 w-10 rounded-lg bg-rose-100 dark:bg-rose-950/40 flex items-center justify-center">
-                    <HeartHandshake className="h-5 w-5 text-rose-700 dark:text-rose-300" aria-hidden />
+                  <div className="h-10 w-10 rounded-lg bg-danger flex items-center justify-center">
+                    <HeartHandshake className="h-5 w-5 text-danger-foreground " aria-hidden />
                   </div>
-                  <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-50">
+                  <h2 className="text-2xl font-bold text-foreground ">
                     For caregivers
                   </h2>
                 </div>
-                <p className="text-base text-slate-700 dark:text-slate-300 mb-4">
+                <p className="text-base text-foreground mb-4">
                   Print one for your parent's counter. A labeled poster near the phone cuts confusion and the "what did this button do again?" calls in half. Fill in your name and number in step 3 so they know who to call first when stuck.
                 </p>
                 <Link
                   to="/toolkits/caregiver"
-                  className="inline-flex items-center gap-2 text-rose-700 dark:text-rose-300 font-semibold hover:underline min-h-14 text-base"
+                  className="inline-flex items-center gap-2 text-danger-foreground font-semibold hover:underline min-h-14 text-base"
                 >
                   Open the Caregiver Toolkit
                   <ArrowRight className="h-4 w-4" aria-hidden />
@@ -1220,48 +1220,48 @@ export default function PhoneButtonPoster() {
 
           {/* ── Related ────────────────────────────── */}
           <section className="mb-14">
-            <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-50 mb-4">
+            <h2 className="text-2xl font-bold text-foreground mb-4">
               Related tools
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <Link
                 to="/tools/remote-control-decoder"
-                className="block p-5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-amber-600 bg-white dark:bg-slate-900 transition min-h-14"
+                className="block p-5 rounded-xl border border-border hover:border-amber-400 bg-card transition min-h-14"
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <Tv className="h-5 w-5 text-amber-700" aria-hidden />
-                  <div className="font-semibold text-base text-slate-900 dark:text-slate-50">Remote Control Decoder</div>
+                  <Tv className="h-5 w-5 text-warn-foreground" aria-hidden />
+                  <div className="font-semibold text-base text-foreground ">Remote Control Decoder</div>
                 </div>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
+                <p className="text-base text-muted-foreground ">
                   Find out what every button does on your Roku, Fire TV, Apple TV, Samsung, or LG remote.
                 </p>
               </Link>
               <Link
                 to="/tools/voice-commands"
-                className="block p-5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-amber-600 bg-white dark:bg-slate-900 transition min-h-14"
+                className="block p-5 rounded-xl border border-border hover:border-amber-400 bg-card transition min-h-14"
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <Speaker className="h-5 w-5 text-amber-700" aria-hidden />
-                  <div className="font-semibold text-base text-slate-900 dark:text-slate-50">Voice Commands</div>
+                  <Speaker className="h-5 w-5 text-warn-foreground" aria-hidden />
+                  <div className="font-semibold text-base text-foreground ">Voice Commands</div>
                 </div>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
+                <p className="text-base text-muted-foreground ">
                   Plain-English voice commands for Siri, Google Assistant, and Alexa.
                 </p>
               </Link>
               <Link
                 to="/tools/low-vision-tech-hub"
-                className="block p-5 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-amber-400 dark:hover:border-amber-600 bg-white dark:bg-slate-900 transition min-h-14"
+                className="block p-5 rounded-xl border border-border hover:border-amber-400 bg-card transition min-h-14"
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <AccessibilityIcon className="h-5 w-5 text-amber-700" aria-hidden />
-                  <div className="font-semibold text-base text-slate-900 dark:text-slate-50">Low Vision Tech Hub</div>
+                  <AccessibilityIcon className="h-5 w-5 text-warn-foreground" aria-hidden />
+                  <div className="font-semibold text-base text-foreground ">Low Vision Tech Hub</div>
                 </div>
-                <p className="text-sm text-slate-600 dark:text-slate-400">
+                <p className="text-base text-muted-foreground ">
                   Bigger text, high contrast, screen readers, and hardware that helps with vision loss.
                 </p>
               </Link>
             </div>
-            <div className="mt-4 text-sm text-slate-500 dark:text-slate-400">
+            <div className="mt-4 text-sm text-muted-foreground ">
               Poster currently showing: <span className="font-semibold">{poster.title}</span> · Category: {posterCategory(posterId)}
             </div>
           </section>

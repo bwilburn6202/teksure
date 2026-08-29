@@ -16,13 +16,13 @@ export default function SeniorMedicationLists() {
           <p className="text-lg text-muted-foreground">Save your life in ER.</p>
         </div>
         <div className="space-y-4">
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What to include</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Drug name + dose</li><li>How often</li><li>What for</li><li>Allergies</li><li>OTC meds, vitamins</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What to include</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Drug name + dose</li><li>How often</li><li>What for</li><li>Allergies</li><li>OTC meds, vitamins</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Where to keep</h2><p>Phone Medical ID. Wallet card. Magnet on fridge. Multiple locations.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Care2u app</h2><p>FREE. Phone wallet for meds. Share with family.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">CareZone</h2><p>FREE. Photo of pill bottle auto-fills info. Save time.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Vial of Life</h2><p>FREE program. Form on fridge. EMTs find in emergency.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Update at every doctor visit</h2><p>Don&apos;t leave doctor without updated list. Most have free templates.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: ER staff can save your life only with accurate med list. Have it ready.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: ER staff can save your life only with accurate med list. Have it ready.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

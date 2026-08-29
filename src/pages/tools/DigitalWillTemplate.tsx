@@ -510,7 +510,7 @@ export default function DigitalWillTemplate() {
 
         {/* Hero & Controls */}
         <section className="print:hidden container max-w-5xl mx-auto px-4 pt-6 pb-4">
-          <div className="flex items-center gap-3 text-indigo-600 text-sm font-bold uppercase tracking-widest mb-3">
+          <div className="flex items-center gap-3 text-primary text-sm font-bold uppercase tracking-widest mb-3">
             <FileSignature className="h-5 w-5" />
             <span>Free Printable Template</span>
           </div>
@@ -526,7 +526,7 @@ export default function DigitalWillTemplate() {
           <div className="mt-4">
             <Link
               to="/guides/digital-estate-planning-accounts-after-death"
-              className="inline-flex items-center gap-2 text-base font-semibold text-indigo-700 hover:text-indigo-900 dark:text-indigo-300 hover:underline"
+              className="inline-flex items-center gap-2 text-base font-semibold text-primary hover:text-primary hover:underline"
             >
               <BookOpen className="h-4 w-4" />
               Read the Digital Estate Planning guide first
@@ -535,10 +535,10 @@ export default function DigitalWillTemplate() {
           </div>
 
           {/* Important warning */}
-          <div className="mt-6 rounded-xl border-2 border-rose-300 bg-rose-50 dark:bg-rose-950/20 dark:border-rose-900 p-5 md:p-6 flex gap-4 items-start">
-            <ShieldAlert className="h-7 w-7 md:h-8 md:w-8 text-rose-600 shrink-0 mt-0.5" aria-hidden />
+          <div className="mt-6 rounded-xl border-2 border-danger-foreground/25 bg-danger p-5 md:p-6 flex gap-4 items-start">
+            <ShieldAlert className="h-7 w-7 md:h-8 md:w-8 text-danger-foreground shrink-0 mt-0.5" aria-hidden />
             <div className="text-base md:text-lg leading-relaxed">
-              <p className="font-bold text-rose-900 dark:text-rose-200 mb-1">
+              <p className="font-bold text-danger-foreground mb-1">
                 Do NOT put actual passwords here.
               </p>
               <p className="text-rose-900/90 dark:text-rose-100/90">
@@ -590,7 +590,7 @@ export default function DigitalWillTemplate() {
             <div className="flex gap-2 items-center flex-wrap">
               {mode === 'form' && (
                 <span
-                  className="inline-flex items-center gap-1.5 text-sm text-muted-foreground"
+                  className="inline-flex items-center gap-1.5 text-base text-muted-foreground"
                   aria-live="polite"
                 >
                   <Save className="h-4 w-4" />
@@ -602,7 +602,7 @@ export default function DigitalWillTemplate() {
                   variant="ghost"
                   size="sm"
                   onClick={handleClear}
-                  className="gap-1.5 text-muted-foreground hover:text-rose-600"
+                  className="gap-1.5 text-muted-foreground hover:text-danger-foreground"
                 >
                   <Trash2 className="h-4 w-4" />
                   Clear
@@ -615,7 +615,7 @@ export default function DigitalWillTemplate() {
             </div>
           </div>
 
-          <p className="mt-3 text-sm text-muted-foreground flex items-start gap-2">
+          <p className="mt-3 text-base text-muted-foreground flex items-start gap-2">
             <Info className="h-4 w-4 shrink-0 mt-0.5" />
             <span>
               In the print dialog, choose <strong>Save as PDF</strong> as the
@@ -644,7 +644,7 @@ export default function DigitalWillTemplate() {
             <div className="dw-rule" />
 
             <div className="dw-warn" role="note">
-              <AlertTriangle className="h-5 w-5 text-red-700 shrink-0 mt-0.5" aria-hidden />
+              <AlertTriangle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" aria-hidden />
               <p>
                 <strong>Do NOT write actual passwords on this document.</strong>
                 {' '}Passwords belong in a password manager or a sealed envelope
@@ -981,10 +981,10 @@ export default function DigitalWillTemplate() {
               to="/guides/digital-estate-planning-accounts-after-death"
               className="border rounded-xl p-5 hover:shadow-md transition group flex items-start gap-3"
             >
-              <BookOpen className="h-6 w-6 text-indigo-600 shrink-0 mt-0.5" />
+              <BookOpen className="h-6 w-6 text-primary shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg">Digital Estate Planning Guide</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   The full plain-English explainer this template comes from.
                 </p>
               </div>
@@ -993,10 +993,10 @@ export default function DigitalWillTemplate() {
               to="/tools/password-manager"
               className="border rounded-xl p-5 hover:shadow-md transition group flex items-start gap-3"
             >
-              <FileText className="h-6 w-6 text-indigo-600 shrink-0 mt-0.5" />
+              <FileText className="h-6 w-6 text-primary shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg">Password Manager Picker</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   The safe place to keep the passwords that don't belong here.
                 </p>
               </div>
@@ -1005,10 +1005,10 @@ export default function DigitalWillTemplate() {
               to="/checklists"
               className="border rounded-xl p-5 hover:shadow-md transition group flex items-start gap-3"
             >
-              <FileSignature className="h-6 w-6 text-indigo-600 shrink-0 mt-0.5" />
+              <FileSignature className="h-6 w-6 text-primary shrink-0 mt-0.5" />
               <div>
                 <h3 className="font-semibold text-lg">Printable Checklists</h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   "My Loved One Passed Away" and "Family Digital Legacy Plan."
                 </p>
               </div>

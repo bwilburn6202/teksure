@@ -19,7 +19,7 @@ export default function HolidayCardSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best holiday card services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Shutterfly</strong> — biggest. 50%+ sales constantly. $1-2/card.</li>
               <li><strong>Minted</strong> — premium cards. Best designs.</li>
               <li><strong>Snapfish</strong> — cheapest. $0.70-1.50/card.</li>
@@ -33,7 +33,7 @@ export default function HolidayCardSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Address-and-mail-for-you</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Postable</strong> — they print + address + mail. $2-3/card.</li>
               <li><strong>Mixbook Send</strong> — same.</li>
               <li><strong>Punkpost</strong> — handwritten cards.</li>
@@ -45,7 +45,7 @@ export default function HolidayCardSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Workflow that works</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>October — pick photo for card (family photo from year).</li>
               <li>October-November — design at Shutterfly + watch for 50% off.</li>
               <li>Mid-November — order. Arrives in 5-7 days.</li>
@@ -59,7 +59,7 @@ export default function HolidayCardSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save the address book</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Type addresses into Apple Contacts ONCE — save forever.</li>
               <li>Or use Postable&apos;s address book.</li>
               <li>Update each year as people move.</li>
@@ -72,7 +72,7 @@ export default function HolidayCardSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Skip the year-in-review letter</h3>
-            <p className="text-sm text-muted-foreground">Long "letter from the family" most people don&apos;t read. Photo card + handwritten "thinking of you" line means more. 30 short personal notes &gt; 30 mass letters.</p>
+            <p className="text-base text-muted-foreground">Long "letter from the family" most people don&apos;t read. Photo card + handwritten "thinking of you" line means more. 30 short personal notes &gt; 30 mass letters.</p>
           </CardContent>
         </Card>
       </main>

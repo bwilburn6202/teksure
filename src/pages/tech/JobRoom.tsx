@@ -129,10 +129,12 @@ const TechJobRoom = () => {
     return (
       <div className="min-h-screen bg-background">
         <Navbar />
+        <main className="flex-1">
         <div className="container py-16 max-w-4xl flex flex-col items-center justify-center gap-4">
           <Loader2 className="h-10 w-10 animate-spin text-primary" />
           <p className="text-lg text-muted-foreground">Loading booking details...</p>
         </div>
+        </main>
         <Footer />
       </div>
     );
@@ -143,6 +145,7 @@ const TechJobRoom = () => {
     return (
       <div className="min-h-screen bg-background">
         <Navbar />
+        <main className="flex-1">
         <div className="container py-16 max-w-4xl">
           <Link to="/tech" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6">
             <ArrowLeft className="h-4 w-4" /> Back to Dashboard
@@ -165,6 +168,7 @@ const TechJobRoom = () => {
             </CardContent>
           </Card>
         </div>
+        </main>
         <Footer />
       </div>
     );
@@ -179,6 +183,7 @@ const TechJobRoom = () => {
     <div className="min-h-screen bg-background">
       <SEOHead title="Job Details — TekSure Tech" description="View and manage support job details." path={`/tech/job/${id}`} />
       <Navbar />
+      <main className="flex-1">
       <div className="container py-8 max-w-4xl">
         <Link to="/tech" className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground mb-6">
           <ArrowLeft className="h-4 w-4" /> Back to Dashboard
@@ -256,18 +261,18 @@ const TechJobRoom = () => {
             <CardContent className="pt-4 space-y-4">
               <div>
                 <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Name</p>
-                <p className="text-sm font-medium">{booking.name || 'Not provided'}</p>
+                <p className="text-base font-medium">{booking.name || 'Not provided'}</p>
               </div>
               {booking.email && (
                 <div>
                   <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Email</p>
-                  <p className="text-sm">{booking.email}</p>
+                  <p className="text-base">{booking.email}</p>
                 </div>
               )}
               {booking.phone && (
                 <div>
                   <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Phone</p>
-                  <p className="text-sm">{booking.phone}</p>
+                  <p className="text-base">{booking.phone}</p>
                 </div>
               )}
               <Separator />
@@ -294,22 +299,22 @@ const TechJobRoom = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Issue Type</p>
-                    <p className="text-sm font-medium">{issueLabel}</p>
+                    <p className="text-base font-medium">{issueLabel}</p>
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Booking ID</p>
-                    <p className="text-sm font-mono text-muted-foreground">{booking.id.slice(0, 8)}...</p>
+                    <p className="text-base font-mono text-muted-foreground">{booking.id.slice(0, 8)}...</p>
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Preferred Date</p>
-                    <p className="text-sm font-medium flex items-center gap-1.5">
+                    <p className="text-base font-medium flex items-center gap-1.5">
                       <Calendar className="h-4 w-4 text-muted-foreground" />
                       {formatDate(booking.preferred_date)}
                     </p>
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Preferred Time</p>
-                    <p className="text-sm font-medium flex items-center gap-1.5">
+                    <p className="text-base font-medium flex items-center gap-1.5">
                       <Clock className="h-4 w-4 text-muted-foreground" />
                       {booking.preferred_slot ? formatBookingSlot(booking.preferred_slot) : 'Not set'}
                     </p>
@@ -321,7 +326,7 @@ const TechJobRoom = () => {
                     <Separator />
                     <div>
                       <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Problem Description</p>
-                      <p className="text-sm leading-relaxed">{booking.problem_description}</p>
+                      <p className="text-base leading-relaxed">{booking.problem_description}</p>
                     </div>
                   </>
                 )}
@@ -329,7 +334,7 @@ const TechJobRoom = () => {
                 <Separator />
                 <div>
                   <p className="text-xs text-muted-foreground font-medium uppercase tracking-wider mb-1">Created</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     {new Date(booking.created_at).toLocaleString('en-US', {
                       weekday: 'short', day: 'numeric', month: 'short', year: 'numeric',
                       hour: '2-digit', minute: '2-digit',
@@ -354,7 +359,7 @@ const TechJobRoom = () => {
                   rows={4}
                   className="text-sm"
                 />
-                <p className="text-xs text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   These notes are saved locally in your browser for now. A shared notes system is coming soon.
                 </p>
               </CardContent>
@@ -372,7 +377,7 @@ const TechJobRoom = () => {
                   <MessageSquare className="h-10 w-10 text-muted-foreground/30" />
                   <div>
                     <p className="text-base font-semibold mb-1">Live chat coming soon</p>
-                    <p className="text-sm text-muted-foreground max-w-sm">
+                    <p className="text-base text-muted-foreground max-w-sm">
                       A messaging feature is being built so you can communicate directly with customers.
                       For now, use the contact details above.
                     </p>
@@ -383,6 +388,7 @@ const TechJobRoom = () => {
           </div>
         </div>
       </div>
+      </main>
       <Footer />
     </div>
   );

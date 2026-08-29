@@ -22,7 +22,7 @@ export default function SeniorTreadmillApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Fitness+</h2><p>$10/month. Time to Walk audio walks.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mall walking</h2><p>FREE. Many malls open early for senior walkers. Climate-controlled.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch TV</h2><p>Most seniors walk during favorite shows. 30-60 min flies by.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Walking Pad is best $300 senior tech. Walk indoors anytime.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Walking Pad is best $300 senior tech. Walk indoors anytime.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function ApplianceLifespanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Average lifespans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Refrigerator</strong> — 13 years.</li>
               <li><strong>Dishwasher</strong> — 9 years.</li>
               <li><strong>Microwave</strong> — 9 years.</li>
@@ -35,7 +35,7 @@ export default function ApplianceLifespanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Repair-or-replace rule</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If repair &gt; 50% of new price = replace.</li>
               <li>If appliance &gt; 75% of life = replace.</li>
               <li>Repeated repairs same year = replace.</li>
@@ -49,7 +49,7 @@ export default function ApplianceLifespanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy DIY fixes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Refrigerator coil cleaning yearly.</li>
               <li>Dryer lint trap every load.</li>
               <li>Dryer vent yearly (fire hazard).</li>
@@ -63,7 +63,7 @@ export default function ApplianceLifespanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to call repair person</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Strange noises.</li>
               <li>Leaking water.</li>
               <li>Burning smell.</li>
@@ -77,7 +77,7 @@ export default function ApplianceLifespanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly buying</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>French door fridge (less bending).</li>
               <li>Front-load washer (no reach down).</li>
               <li>Wall oven mid-height (no bending).</li>
@@ -91,7 +91,7 @@ export default function ApplianceLifespanGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Costco / Lowes during holiday sales.</li>
               <li>Open-box / scratch-and-dent — 30% off.</li>
               <li>Used appliances Facebook Marketplace.</li>
@@ -105,7 +105,7 @@ export default function ApplianceLifespanGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Old appliance disposal</h3>
-            <p className="text-sm text-muted-foreground">Most retailers haul away old when delivering new — free. Or city pickup ($25). Some appliance recycling — Best Buy, Home Depot. Avoid leaving on curb (illegal). Donate working ones to Habitat for Humanity ReStore. Goodwill takes some. Don&apos;t waste working appliances.</p>
+            <p className="text-base text-muted-foreground">Most retailers haul away old when delivering new — free. Or city pickup ($25). Some appliance recycling — Best Buy, Home Depot. Avoid leaving on curb (illegal). Donate working ones to Habitat for Humanity ReStore. Goodwill takes some. Don&apos;t waste working appliances.</p>
           </CardContent>
         </Card>
       </main>

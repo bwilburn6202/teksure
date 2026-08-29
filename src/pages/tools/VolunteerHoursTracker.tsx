@@ -67,7 +67,7 @@ export default function VolunteerHoursTracker() {
   const sorted = [...entries].sort((a, b) => b.date.localeCompare(a.date));
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Volunteer Hours Tracker | TekSure"
         description="Log volunteer hours by organization. See month, year-to-date, and lifetime totals. Print for tax records or service awards."
@@ -76,10 +76,10 @@ export default function VolunteerHoursTracker() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <HandHeart className="h-7 w-7 text-rose-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Volunteer Hours Tracker</h1>
+            <HandHeart className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Volunteer Hours Tracker</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Log every volunteer shift. The total adds up to a record you can show for tax mileage or community service awards.
           </p>
         </div>
@@ -89,20 +89,20 @@ export default function VolunteerHoursTracker() {
           <div className="grid grid-cols-3 gap-3 mb-4">
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">This month</p>
-                <p className="text-xl font-bold text-rose-700">{monthHours.toFixed(1)} hrs</p>
+                <p className="text-sm text-muted-foreground">This month</p>
+                <p className="text-xl font-bold text-danger-foreground">{monthHours.toFixed(1)} hrs</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">{thisYear}</p>
-                <p className="text-xl font-bold text-rose-700">{ytdHours.toFixed(1)} hrs</p>
+                <p className="text-sm text-muted-foreground">{thisYear}</p>
+                <p className="text-xl font-bold text-danger-foreground">{ytdHours.toFixed(1)} hrs</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Lifetime</p>
-                <p className="text-xl font-bold text-gray-700">{totalHours.toFixed(1)} hrs</p>
+                <p className="text-sm text-muted-foreground">Lifetime</p>
+                <p className="text-xl font-bold text-foreground">{totalHours.toFixed(1)} hrs</p>
               </CardContent>
             </Card>
           </div>
@@ -118,7 +118,7 @@ export default function VolunteerHoursTracker() {
               <div className="space-y-1">
                 {Object.entries(byOrg).sort((a, b) => b[1] - a[1]).map(([org, hours]) => (
                   <div key={org} className="flex items-center justify-between py-1 text-sm">
-                    <span className="font-medium text-gray-800 truncate">{org}</span>
+                    <span className="font-medium text-foreground truncate">{org}</span>
                     <Badge variant="secondary" className="text-xs">{hours.toFixed(1)} hrs</Badge>
                   </div>
                 ))}
@@ -131,7 +131,7 @@ export default function VolunteerHoursTracker() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-rose-600" />
+              <PlusCircle className="h-5 w-5 text-danger-foreground" />
               Log Volunteer Time
             </CardTitle>
           </CardHeader>
@@ -158,7 +158,7 @@ export default function VolunteerHoursTracker() {
               <Label htmlFor="vol-notes" className="text-base font-medium">Notes (optional)</Label>
               <Input id="vol-notes" placeholder="e.g. With Linda, Saturday shift" value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base">Log Hours</Button>
           </CardContent>
         </Card>
@@ -174,10 +174,10 @@ export default function VolunteerHoursTracker() {
 
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <HandHeart className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <HandHeart className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No volunteer hours logged yet.</p>
-              <p className="text-sm mt-1">Add your most recent shift above.</p>
+              <p className="text-base mt-1">Add your most recent shift above.</p>
             </CardContent>
           </Card>
         ) : (
@@ -191,17 +191,17 @@ export default function VolunteerHoursTracker() {
                   <div key={e.id} className="py-2 flex items-start justify-between gap-2 print:break-inside-avoid">
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-sm font-medium text-gray-700 w-20">{formatDate(e.date)}</span>
+                        <span className="text-sm font-medium text-foreground w-20">{formatDate(e.date)}</span>
                         <Badge variant="secondary" className="text-xs">{e.hours.toFixed(1)} hrs</Badge>
-                        <span className="font-medium text-gray-900 truncate">{e.organization}</span>
+                        <span className="font-medium text-foreground truncate">{e.organization}</span>
                       </div>
-                      {e.activity && <p className="text-xs text-gray-600 mt-1 ml-20">{e.activity}</p>}
-                      {e.notes && <p className="text-xs text-gray-500 italic ml-20">{e.notes}</p>}
+                      {e.activity && <p className="text-sm text-muted-foreground mt-1 ml-20">{e.activity}</p>}
+                      {e.notes && <p className="text-sm text-muted-foreground italic ml-20">{e.notes}</p>}
                     </div>
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden"
+                      className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden"
                       onClick={() => remove(e.id)}
                       aria-label="Remove entry"
                     >
@@ -214,15 +214,15 @@ export default function VolunteerHoursTracker() {
           </Card>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Tax Tip: </span>
               Volunteer time is not deductible, but mileage to and from volunteer sites may be — track miles separately. Keep this log as supporting documentation if asked.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

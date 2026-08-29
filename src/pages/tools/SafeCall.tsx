@@ -224,8 +224,8 @@ export default function SafeCall() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-2xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-green-50 dark:bg-green-950/30 flex items-center justify-center flex-shrink-0">
-                <Phone className="h-6 w-6 text-green-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-success flex items-center justify-center flex-shrink-0">
+                <Phone className="h-6 w-6 text-success-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -272,12 +272,12 @@ export default function SafeCall() {
                 </p>
               </div>
 
-              <div className="p-5 rounded-2xl bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800">
+              <div className="p-5 rounded-2xl bg-warn border border-warn-foreground/25 ">
                 <div className="flex gap-3">
-                  <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <AlertTriangle className="h-5 w-5 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="font-semibold text-sm text-amber-800 dark:text-amber-300 mb-1">If you already paid money or gave personal information</p>
-                    <p className="text-sm text-amber-700 dark:text-amber-400">
+                    <p className="font-semibold text-base text-warn-foreground mb-1">If you already paid money or gave personal information</p>
+                    <p className="text-base text-warn-foreground ">
                       Contact your bank immediately. Time matters. Then report the scam to the FTC at reportfraud.ftc.gov.
                     </p>
                   </div>
@@ -301,7 +301,7 @@ export default function SafeCall() {
                 <p className="text-xs text-muted-foreground uppercase tracking-wider mb-2">Question {step} of {questions.length}</p>
                 <h2 className="text-xl font-bold mb-1">{currentQuestion.text}</h2>
                 {currentQuestion.hint && (
-                  <p className="text-sm text-muted-foreground">{currentQuestion.hint}</p>
+                  <p className="text-base text-muted-foreground">{currentQuestion.hint}</p>
                 )}
               </div>
               <div className="space-y-3">
@@ -312,7 +312,7 @@ export default function SafeCall() {
                     className="w-full text-left p-4 rounded-2xl border border-border hover:border-primary/40 hover:bg-primary/5 transition-colors min-h-[52px] flex items-center gap-3 group"
                   >
                     <span className="h-5 w-5 rounded-full border-2 border-border group-hover:border-primary flex-shrink-0 transition-colors" aria-hidden="true" />
-                    <span className="text-sm font-medium">{opt.label}</span>
+                    <span className="text-base font-medium">{opt.label}</span>
                   </button>
                 ))}
               </div>
@@ -337,7 +337,7 @@ export default function SafeCall() {
                     <h2 className="text-xl font-bold">{result.headline}</h2>
                   </div>
                 </div>
-                <p className="text-sm leading-relaxed">{result.summary}</p>
+                <p className="text-base leading-relaxed">{result.summary}</p>
               </div>
 
               {/* What to do */}
@@ -345,7 +345,7 @@ export default function SafeCall() {
                 <h3 className="font-bold text-base mb-4">What to do</h3>
                 <ol className="space-y-3">
                   {result.actions.map((action, i) => (
-                    <li key={i} className="flex gap-3 text-sm">
+                    <li key={i} className="flex gap-3 text-base">
                       <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary text-xs flex items-center justify-center font-semibold mt-0.5">
                         {i + 1}
                       </span>
@@ -359,7 +359,7 @@ export default function SafeCall() {
               {result.reportLinks.length > 0 && (
                 <div className="p-6 rounded-2xl border bg-card">
                   <h3 className="font-bold text-base mb-4">Report this scam</h3>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-base text-muted-foreground mb-4">
                     Reporting scam calls helps protect others. It only takes 2 minutes.
                   </p>
                   <div className="space-y-3">
@@ -382,7 +382,7 @@ export default function SafeCall() {
               {/* Common scam tactics */}
               <div className="p-5 rounded-2xl bg-muted/50 border border-border">
                 <h3 className="font-semibold text-sm mb-3">Quick Tip: Signs of a scam call</h3>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground">
                   {[
                     'Asks for gift cards as payment — any card brand',
                     'Claims you owe money to the IRS or government',
@@ -392,7 +392,7 @@ export default function SafeCall() {
                     'A "family member" calls asking for emergency money',
                   ].map((tip, i) => (
                     <li key={i} className="flex gap-2">
-                      <XCircle className="h-4 w-4 text-red-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                      <XCircle className="h-4 w-4 text-danger-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                       <span>{tip}</span>
                     </li>
                   ))}

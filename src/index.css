@@ -21,19 +21,19 @@
     --card-foreground: 0 0% 6%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 6%;
-    --primary: 243 100% 75%;            /* #847dff Violet Haze */
+    --primary: 243 66% 62%;            /* #655ede Violet Haze - AA (4.99:1 w/ white) */
     --primary-foreground: 0 0% 100%;
     --secondary: 240 6% 92%;
     --secondary-foreground: 0 0% 6%;
     --muted: 240 5% 90%;
     --muted-foreground: 240 1% 42%;     /* #6a6b6b Whisper Blue */
-    --accent: 192 100% 43%;             /* #00b3dd Ocean Glimmer */
+    --accent: 192 99% 29%;            /* #017693 Ocean Glimmer - AA (5.24:1 w/ white, 4.73:1 on canvas) */
     --accent-foreground: 0 0% 100%;
     --destructive: 0 72% 55%;
     --destructive-foreground: 0 0% 100%;
     --border: 240 6% 88%;
     --input: 240 6% 88%;
-    --ring: 243 100% 75%;
+    --ring: 243 66% 62%;
     --radius: 1rem;                     /* 16px — Origin card radius */
 
     --teksure-success: 152 55% 42%;
@@ -45,16 +45,16 @@
     --zone-tools: 243 100% 96%;         /* Violet Haze wash */
     --zone-safety: 241 41% 96%;         /* Deep Indigo wash */
     --zone-support: 192 100% 96%;       /* Ocean Glimmer wash */
-    --zone-cta: 243 100% 75%;
+    --zone-cta: 243 66% 62%;
 
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 0 0% 6%;
-    --sidebar-primary: 243 100% 75%;
+    --sidebar-primary: 243 66% 62%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 240 5% 92%;
     --sidebar-accent-foreground: 0 0% 6%;
     --sidebar-border: 240 6% 88%;
-    --sidebar-ring: 243 100% 75%;
+    --sidebar-ring: 243 66% 62%;
 
     /* ── Origin accent palette (raw HSL — usable from any class) ── */
     --origin-midnight: 220 8% 6%;       /* #0f1011 Midnight Ink */
@@ -71,6 +71,24 @@
     --origin-indigo: 241 41% 48%;       /* #4b49aa Deep Indigo */
     --origin-sky: 213 76% 75%;          /* #90b8f0 Sky Tint */
     --origin-deep-sea: 208 71% 35%;     /* #195f97 Deep Sea */
+
+    /* Semantic surfaces (AA-safe). Replace raw bg-amber-50 / bg-green-50 /
+       bg-red-50 / bg-blue-50 washes with these so dark mode is correct by
+       default instead of needing a hand-written dark: variant each time. */
+    --warn-surface: 38 92% 95%;
+    --warn-surface-foreground: 30 80% 25%;
+    --success-surface: 152 55% 94%;
+    --success-surface-foreground: 152 60% 22%;
+    --info-surface: 213 90% 95%;
+    --info-surface-foreground: 213 70% 27%;
+    --danger-surface: 0 86% 96%;
+    --danger-surface-foreground: 0 65% 34%;
+
+    /* AA-safe TEXT variants of the decorative Origin accents. The raw
+       --origin-sky / --origin-lavender values stay as they are for use as
+       background washes; use these two when the color carries text. */
+    --origin-sky-text: 213 40% 46%;
+    --origin-lavender-text: 248 40% 56%;
   }
 
   /* Origin Midnight Ink dark — the canonical Origin look */
@@ -81,19 +99,19 @@
     --card-foreground: 0 0% 100%;
     --popover: 0 0% 18%;
     --popover-foreground: 0 0% 100%;
-    --primary: 243 100% 75%;            /* #847dff Violet Haze */
-    --primary-foreground: 0 0% 100%;
+    --primary: 246 100% 81%;            /* #a99fff - AA on card (5.9) and bg (8.2) */
+    --primary-foreground: 220 8% 6%;            /* dark label on bright violet */
     --secondary: 0 0% 0%;               /* #000000 Slate Canvas */
     --secondary-foreground: 0 0% 100%;
     --muted: 220 8% 12%;
     --muted-foreground: 0 0% 79%;       /* #cacaca Subtle Ash */
     --accent: 192 100% 43%;             /* #00b3dd Ocean Glimmer */
-    --accent-foreground: 0 0% 100%;
+    --accent-foreground: 220 8% 6%;            /* dark label on Ocean Glimmer */
     --destructive: 0 62% 48%;
     --destructive-foreground: 0 0% 100%;
     --border: 0 0% 20%;
     --input: 0 0% 0%;                   /* Slate Canvas — Origin input bg */
-    --ring: 243 100% 75%;
+    --ring: 246 100% 81%;
 
     --teksure-success: 192 100% 43%;
     --teksure-warning: 304 56% 71%;
@@ -103,16 +121,28 @@
     --zone-tools: 243 50% 14%;
     --zone-safety: 241 41% 14%;
     --zone-support: 192 80% 12%;
-    --zone-cta: 243 100% 75%;
+    --zone-cta: 246 100% 81%;
 
     --sidebar-background: 220 8% 6%;
     --sidebar-foreground: 0 0% 100%;
-    --sidebar-primary: 243 100% 75%;
-    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-primary: 246 100% 81%;
+    --sidebar-primary-foreground: 220 8% 6%;
     --sidebar-accent: 0 0% 18%;
     --sidebar-accent-foreground: 0 0% 100%;
     --sidebar-border: 0 0% 20%;
-    --sidebar-ring: 243 100% 75%;
+    --sidebar-ring: 246 100% 81%;
+
+    --warn-surface: 38 60% 14%;
+    --warn-surface-foreground: 38 90% 76%;
+    --success-surface: 152 45% 12%;
+    --success-surface-foreground: 152 60% 70%;
+    --info-surface: 213 55% 14%;
+    --info-surface-foreground: 213 80% 78%;
+    --danger-surface: 0 50% 14%;
+    --danger-surface-foreground: 0 80% 78%;
+
+    --origin-sky-text: 213 76% 75%;
+    --origin-lavender-text: 248 100% 90%;
   }
 }
 

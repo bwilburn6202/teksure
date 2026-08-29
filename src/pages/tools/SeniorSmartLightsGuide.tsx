@@ -22,7 +22,7 @@ export default function SeniorSmartLightsGuide() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Wyze Bulbs</h2><p>Cheapest at $10. Easy app. Reliable for basic on/off.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Setup</h2><p>Screw bulb into lamp. Open app. Tap &ldquo;Add device.&rdquo; Connect to Wi-Fi.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice control</h2><p>Link to Alexa or Google. Say &ldquo;Turn on bedroom lamp.&rdquo;</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set a sunrise schedule — lights brighten gradually as you wake up.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set a sunrise schedule — lights brighten gradually as you wake up.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

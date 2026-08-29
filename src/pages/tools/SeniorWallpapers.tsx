@@ -22,7 +22,7 @@ export default function SeniorWallpapers() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Live photos</h2><p>Long-press home wallpaper. Photos move briefly. Magical with grandkids.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Big text contrast</h2><p>Choose wallpapers that don&apos;t hide your icons. Solid colors work best.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">ICE info on lock</h2><p>Make wallpaper say &ldquo;If found, call: [number].&rdquo; Helps if lost.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Family photo on home screen = small daily joy. Worth the 30 seconds to set up.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Family photo on home screen = small daily joy. Worth the 30 seconds to set up.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

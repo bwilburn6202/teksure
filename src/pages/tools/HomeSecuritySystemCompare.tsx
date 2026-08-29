@@ -19,7 +19,7 @@ export default function HomeSecuritySystemCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SimpliSafe — best no-contract</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No contract — cancel anytime.</li>
               <li>Monitoring from $19.99/month.</li>
               <li>Works without internet (cellular backup).</li>
@@ -33,7 +33,7 @@ export default function HomeSecuritySystemCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Ring Alarm — best for Amazon users</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Works with Alexa voice control.</li>
               <li>Monitoring from $20/month.</li>
               <li>Connects to Ring doorbells + cameras.</li>
@@ -47,7 +47,7 @@ export default function HomeSecuritySystemCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">ADT — best professional install</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Oldest, most recognized brand.</li>
               <li>Professional installation included.</li>
               <li>Monitoring from $24.99/month.</li>
@@ -61,7 +61,7 @@ export default function HomeSecuritySystemCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vivint — best full-featured</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Premium smart home + security combo.</li>
               <li>Professional installation.</li>
               <li>Smart locks, lights, garage — all connected.</li>
@@ -75,7 +75,7 @@ export default function HomeSecuritySystemCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Questions to ask before buying</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Is there a contract? How long?</li>
               <li>What is the cancellation policy?</li>
               <li>Does it work without internet?</li>
@@ -89,7 +89,7 @@ export default function HomeSecuritySystemCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wyze cameras — cheap + decent.</li>
               <li>Blink cameras — low cost, Amazon-owned.</li>
               <li>Good locks + outdoor lighting — basics work.</li>
@@ -103,7 +103,7 @@ export default function HomeSecuritySystemCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Recommendation for most seniors</h3>
-            <p className="text-sm text-muted-foreground">SimpliSafe wins for most seniors. No contract means you&apos;re never trapped in a long-term bill, especially important if considering assisted living in the future. The system works when the internet goes down, which matters during storms. ADT is fine but the multi-year contract is a big commitment. Ring is great if you&apos;re already using Amazon devices.</p>
+            <p className="text-base text-muted-foreground">SimpliSafe wins for most seniors. No contract means you&apos;re never trapped in a long-term bill, especially important if considering assisted living in the future. The system works when the internet goes down, which matters during storms. ADT is fine but the multi-year contract is a big commitment. Ring is great if you&apos;re already using Amazon devices.</p>
           </CardContent>
         </Card>
       </main>

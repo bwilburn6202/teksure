@@ -22,7 +22,7 @@ export default function SeniorPhotoOrganizing() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Faces</h2><p>Tag once. Find every photo of grandkids automatically.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Memories</h2><p>App auto-creates anniversary memories. &ldquo;Remember 5 years ago&rdquo; videos.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Yearly cleanup</h2><p>Delete blurry/duplicate photos once a year. 30-min task. Saves storage.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Make album of 10 favorite photos a year. Easy to print as gift later.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Make album of 10 favorite photos a year. Easy to print as gift later.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

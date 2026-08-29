@@ -19,7 +19,7 @@ export default function ScreenTimeForKids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AAP recommended limits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Under 18 months</strong> — only video calls (Grandma on FaceTime).</li>
               <li><strong>18-24 months</strong> — high-quality with adult.</li>
               <li><strong>2-5 years</strong> — 1 hour/day max, with adult co-watching.</li>
@@ -34,7 +34,7 @@ export default function ScreenTimeForKids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Built-in screen time tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone/iPad — Screen Time</strong> — Settings → Screen Time. Pin-locked time limits, app limits, content filters.</li>
               <li><strong>Android — Family Link</strong> — free Google app. Same idea.</li>
               <li><strong>Apple Family Sharing</strong> — set up grandkid&apos;s account. You get reports.</li>
@@ -48,7 +48,7 @@ export default function ScreenTimeForKids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Good vs junk screen time</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>GOOD</strong> — video chat with family, learning apps (Khan Academy Kids), educational shows (Sesame Street, Bluey, Wild Kratts), reading apps (Epic!), creative tools (Lego app, GarageBand).</li>
               <li><strong>NEUTRAL</strong> — most age-appropriate movies, audiobooks.</li>
               <li><strong>JUNK</strong> — endless YouTube/TikTok scrolling, ad-heavy free games, &quot;unboxing&quot; videos, anything algorithm-driven.</li>
@@ -59,7 +59,7 @@ export default function ScreenTimeForKids() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Grandparent-friendly rules</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Ask parents what THEIR rules are — follow them.</li>
               <li>Don&apos;t feel guilty saying "screens off, let&apos;s [ride bikes / bake / play board games]".</li>
               <li>If you allow extra — be honest with parents.</li>
@@ -73,7 +73,7 @@ export default function ScreenTimeForKids() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best free tools</h3>
-            <p className="text-sm text-muted-foreground"><strong>Khan Academy Kids</strong> — free, ad-free, ages 2-8. <strong>PBS Kids</strong> — free, educational. <strong>YouTube Kids</strong> — restricted YouTube (better than regular YouTube, still imperfect). <strong>Common Sense Media</strong> — reviews movies/games/apps for age-appropriateness.</p>
+            <p className="text-base text-muted-foreground"><strong>Khan Academy Kids</strong> — free, ad-free, ages 2-8. <strong>PBS Kids</strong> — free, educational. <strong>YouTube Kids</strong> — restricted YouTube (better than regular YouTube, still imperfect). <strong>Common Sense Media</strong> — reviews movies/games/apps for age-appropriateness.</p>
           </CardContent>
         </Card>
       </main>

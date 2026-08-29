@@ -19,7 +19,7 @@ export default function GripStrengthTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why grip strength matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Studies link weak grip to higher mortality.</li>
               <li>Strong grip = full-body strength indicator.</li>
               <li>Easier daily life — opening jars, carrying groceries.</li>
@@ -32,7 +32,7 @@ export default function GripStrengthTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Grip trainers ($10-30)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Stress ball</strong> — $5. Squeeze 30x per hand daily.</li>
               <li><strong>Hand grip strengthener</strong> — adjustable, $15.</li>
               <li><strong>Therapy putty</strong> — different resistances. $10.</li>
@@ -45,7 +45,7 @@ export default function GripStrengthTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily grip exercises</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Squeeze stress ball 30x while watching TV.</li>
               <li>Towel wring — twist towel like wringing water, 10x.</li>
               <li>Finger spread — rubber band around fingers, spread 20x.</li>
@@ -58,7 +58,7 @@ export default function GripStrengthTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Jar opener tools (when grip fails)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>EZ Off Jar Opener</strong> — $15. Mounts under cabinet.</li>
               <li><strong>Black &amp; Decker Lids Off</strong> — electric, $40.</li>
               <li><strong>Rubber jar grippers</strong> — $5. Better leverage.</li>
@@ -71,7 +71,7 @@ export default function GripStrengthTools() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Test your grip</h3>
-            <p className="text-sm text-muted-foreground">Hand dynamometer — $25 on Amazon. Measures grip in pounds. Track monthly. Goal: maintain or improve. Drops of 20%+ year-over-year = talk to doctor (could indicate health issue).</p>
+            <p className="text-base text-muted-foreground">Hand dynamometer — $25 on Amazon. Measures grip in pounds. Track monthly. Goal: maintain or improve. Drops of 20%+ year-over-year = talk to doctor (could indicate health issue).</p>
           </CardContent>
         </Card>
       </main>

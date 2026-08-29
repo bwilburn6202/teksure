@@ -22,7 +22,7 @@ export default function SeniorPokerApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out for spending</h2><p>Apps push real-money chip purchases. Stay free version only.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family games</h2><p>Apps let you create private tables. Play with grandkids virtually.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real money risk</h2><p>Online real-money poker is illegal in most states. Stay play-money.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Play-money poker is harmless fun. Real-money apps target seniors with addiction.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Play-money poker is harmless fun. Real-money apps target seniors with addiction.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function ApplePaySetupSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why use Apple Pay</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Card # NEVER given to merchant.</li>
               <li>Face ID / fingerprint required — thieves can&apos;t use.</li>
               <li>Faster than card.</li>
@@ -33,7 +33,7 @@ export default function ApplePaySetupSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup steps (3 minutes)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Wallet app (orange/red icon).</li>
               <li>Tap + (top right).</li>
               <li>Choose &quot;Debit or Credit Card&quot;.</li>
@@ -48,7 +48,7 @@ export default function ApplePaySetupSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to pay</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>At checkout — terminal asks &quot;tap to pay&quot;.</li>
               <li>Double-click side button (iPhone with Face ID).</li>
               <li>Or hold near terminal.</li>
@@ -62,7 +62,7 @@ export default function ApplePaySetupSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online + app payments</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many websites have &quot;Apple Pay&quot; button at checkout.</li>
               <li>One tap = pay. No typing card #.</li>
               <li>Same for app purchases.</li>
@@ -75,7 +75,7 @@ export default function ApplePaySetupSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If phone lost/stolen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Pay PROTECTED by Face ID/passcode.</li>
               <li>Sign in to iCloud.com on another device.</li>
               <li>Mark phone as Lost — Apple Pay disabled.</li>
@@ -89,7 +89,7 @@ export default function ApplePaySetupSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Google Pay / Samsung Pay</h3>
-            <p className="text-sm text-muted-foreground">Same idea, Android phones. Google Wallet app — add card, tap to pay. Samsung Pay built into Galaxy phones. All three (Apple, Google, Samsung) more secure than plastic. PIN/fingerprint protects even if phone lost.</p>
+            <p className="text-base text-muted-foreground">Same idea, Android phones. Google Wallet app — add card, tap to pay. Samsung Pay built into Galaxy phones. All three (Apple, Google, Samsung) more secure than plastic. PIN/fingerprint protects even if phone lost.</p>
           </CardContent>
         </Card>
       </main>

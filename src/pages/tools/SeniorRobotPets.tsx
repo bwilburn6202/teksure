@@ -22,7 +22,7 @@ export default function SeniorRobotPets() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why work</h2><p>Dementia patients respond to texture, sound, motion. Robot pets reduce anxiety.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Studies show</h2><p>Reduces agitation. Improves mood. Less medication needed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">No care needed</h2><p>No vet bills. No food. No mess. Sleep when not used.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Joy For All ($130) is great affordable option. Real benefits documented.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Joy For All ($130) is great affordable option. Real benefits documented.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

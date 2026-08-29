@@ -19,14 +19,14 @@ export default function CCRCExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What CCRC means</h2>
-            <p className="text-sm">Continuing Care Retirement Community. ALL levels of care in one place — independent → assisted → memory → skilled nursing. Move once + age in place. Often called "Life Plan" community.</p>
+            <p className="text-base">Continuing Care Retirement Community. ALL levels of care in one place — independent → assisted → memory → skilled nursing. Move once + age in place. Often called "Life Plan" community.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">3 contract types</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Type A (Life Care)</strong> — pay big upfront ($300K-$2M+) + monthly fee. Care levels included even if you need them later. Most predictable.</li>
               <li><strong>Type B (Modified)</strong> — middle ground. Some care discounted, some pay-as-you-go.</li>
               <li><strong>Type C (Fee-for-Service)</strong> — pay full market rate as needs change. Lowest entry, highest risk.</li>
@@ -38,7 +38,7 @@ export default function CCRCExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Realistic costs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Entrance fee</strong> — $200K-$2M. Refundable 50-90% to estate (depending on contract).</li>
               <li><strong>Monthly fee</strong> — $3K-$8K independent, more for higher care.</li>
               <li><strong>Annual increases</strong> — 3-6% typical. Lock in early for best rates.</li>
@@ -51,7 +51,7 @@ export default function CCRCExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pros</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Predictable cost (Type A).</li>
               <li>One move — never have to relocate as needs change.</li>
               <li>Spouse can stay even if other goes to memory care.</li>
@@ -62,10 +62,10 @@ export default function CCRCExplained() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cons + risks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Big entrance fee ties up assets.</li>
               <li>If CCRC goes bankrupt — refund may be lost.</li>
               <li>Annual increases can outpace pension/SS.</li>
@@ -79,7 +79,7 @@ export default function CCRCExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vetting checklist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>How many years operating?</li>
               <li>Owner — non-profit, religious, or corporate?</li>
               <li>Audited financial statements (request).</li>
@@ -95,7 +95,7 @@ export default function CCRCExplained() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hire CCRC-experienced lawyer</h3>
-            <p className="text-sm text-muted-foreground">For big-money CCRC decisions, hire elder-law attorney who specializes in CCRC contracts. $1,500-3,000 review can save $500K of regret. Especially Type A contract review.</p>
+            <p className="text-base text-muted-foreground">For big-money CCRC decisions, hire elder-law attorney who specializes in CCRC contracts. $1,500-3,000 review can save $500K of regret. Especially Type A contract review.</p>
           </CardContent>
         </Card>
       </main>

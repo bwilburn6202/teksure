@@ -19,7 +19,7 @@ export default function EstateGiftingPlanning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Annual gift exclusion</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>$19,000/year per recipient</strong> in 2025. NO tax. NO reporting.</li>
               <li>Married couples can give $38K/year per recipient ($19K each).</li>
               <li>Each recipient is separate — give to all kids + grandkids.</li>
@@ -32,7 +32,7 @@ export default function EstateGiftingPlanning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tax-smart gift options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>529 College Plan</strong> — fund up to $90K at once (5-year acceleration). Grows tax-free.</li>
               <li><strong>Direct tuition payment</strong> — UNLIMITED if paid to school directly. Doesn&apos;t count as gift.</li>
               <li><strong>Direct medical payment</strong> — UNLIMITED if paid to provider directly.</li>
@@ -45,7 +45,7 @@ export default function EstateGiftingPlanning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Charitable giving</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>QCD (Qualified Charitable Distribution)</strong> — give from IRA directly to charity. Up to $108K/yr (2025). Counts toward RMD. NO income tax.</li>
               <li><strong>Donor Advised Fund</strong> — Fidelity Charitable, Vanguard. Donate big now, distribute over years.</li>
               <li><strong>Charitable Remainder Trust</strong> — give appreciated stock, get income for life, charity gets remainder.</li>
@@ -57,7 +57,7 @@ export default function EstateGiftingPlanning() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Heir tax savings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Roth conversion</strong> — convert traditional IRA to Roth. Heirs inherit tax-free.</li>
               <li><strong>Step-up in basis</strong> — appreciated assets at death get reset basis. Heirs sell with little/no capital gains.</li>
               <li><strong>Life insurance</strong> — proceeds tax-free to heirs.</li>
@@ -69,7 +69,7 @@ export default function EstateGiftingPlanning() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Watch your own future</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t over-gift. Healthcare costs in 80s+ can be massive. Keep enough for yourself + spouse to age in place comfortably with care needs. Generous in retirement = run-out at 88. Plan with fee-only advisor — NAPFA.org.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t over-gift. Healthcare costs in 80s+ can be massive. Keep enough for yourself + spouse to age in place comfortably with care needs. Generous in retirement = run-out at 88. Plan with fee-only advisor — NAPFA.org.</p>
           </CardContent>
         </Card>
       </main>

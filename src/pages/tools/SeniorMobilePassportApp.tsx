@@ -22,7 +22,7 @@ export default function SeniorMobilePassportApp() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use at airport</h2><p>After landing, answer 4 customs questions in the app. Show the receipt to the officer.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Where it works</h2><p>33+ U.S. airports and 4 cruise ports. Includes JFK, LAX, MIA, ORD, SFO.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Save vs Global Entry</h2><p>Free instead of $100. No interview required. Good if you travel internationally less than twice a year.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Connect to airport Wi-Fi before submitting — works without cell signal.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Connect to airport Wi-Fi before submitting — works without cell signal.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

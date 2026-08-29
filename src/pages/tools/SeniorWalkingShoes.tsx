@@ -30,10 +30,10 @@ export default function SeniorWalkingShoes() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SeniorWalkingShoes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: Hoka Bondi</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$165 — pricier but worth it.</li>
               <li>Maximum cushion = joint protection.</li>
               <li>Wide toe box.</li>
@@ -56,7 +56,7 @@ export default function SeniorWalkingShoes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to look for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cushion</strong> — knee + hip protection.</li>
               <li><strong>Stability</strong> — balance + falls prevention.</li>
               <li><strong>Wide toe box</strong> — bunions / hammer toes.</li>
@@ -70,7 +70,7 @@ export default function SeniorWalkingShoes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to buy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Specialty running stores</strong> — gait analysis.</li>
               <li><strong>Fleet Feet, Road Runner</strong>.</li>
               <li><strong>Zappos</strong> — free returns 365 days.</li>
@@ -84,7 +84,7 @@ export default function SeniorWalkingShoes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to replace</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Every 500 miles or 6 months.</li>
               <li>Walk 30 min/day = 6 months.</li>
               <li>Cushion compresses — joint pain.</li>
@@ -98,7 +98,7 @@ export default function SeniorWalkingShoes() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Foot health flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pain after walks — see podiatrist.</li>
               <li>Bunions worsening = surgery option.</li>
               <li>Plantar fasciitis = orthotic insoles.</li>
@@ -112,7 +112,7 @@ export default function SeniorWalkingShoes() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Diabetic shoes</h3>
-            <p className="text-sm text-muted-foreground">Medicare covers 1 pair therapeutic shoes per year for diabetics. Need prescription. Custom-fitted. Prevent foot ulcers + amputations. Apexfoot, Drew Shoe, Aetrex. Diabetic ed nurse can refer. Save $200+ annually. Sign up via Medicare.gov.</p>
+            <p className="text-base text-muted-foreground">Medicare covers 1 pair therapeutic shoes per year for diabetics. Need prescription. Custom-fitted. Prevent foot ulcers + amputations. Apexfoot, Drew Shoe, Aetrex. Diabetic ed nurse can refer. Save $200+ annually. Sign up via Medicare.gov.</p>
           </CardContent>
         </Card>
       </main>

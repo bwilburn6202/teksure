@@ -131,9 +131,9 @@ export default function Ambassadors() {
               Our Ambassadors are everyday people who go the extra mile to help others feel confident with technology.
             </p>
             <div className="flex items-center justify-center gap-6 mt-5 text-sm text-muted-foreground flex-wrap">
-              <span className="flex items-center gap-1.5"><Star className="h-4 w-4 text-amber-500" /> {AMBASSADORS.length} Ambassadors</span>
-              <span className="flex items-center gap-1.5"><Heart className="h-4 w-4 text-red-500" /> {AMBASSADORS.reduce((s, a) => s + a.helpedCount, 0)}+ people helped</span>
-              <span className="flex items-center gap-1.5"><MapPin className="h-4 w-4 text-blue-500" /> Communities across the US</span>
+              <span className="flex items-center gap-1.5"><Star className="h-4 w-4 text-warn-foreground" /> {AMBASSADORS.length} Ambassadors</span>
+              <span className="flex items-center gap-1.5"><Heart className="h-4 w-4 text-danger-foreground" /> {AMBASSADORS.reduce((s, a) => s + a.helpedCount, 0)}+ people helped</span>
+              <span className="flex items-center gap-1.5"><MapPin className="h-4 w-4 text-info-foreground" /> Communities across the US</span>
             </div>
           </div>
         </section>
@@ -153,12 +153,12 @@ export default function Ambassadors() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap mb-1">
                         <h3 className="font-semibold text-sm">{amb.name}</h3>
-                        <span className="text-xs text-muted-foreground flex items-center gap-0.5">
+                        <span className="text-sm text-muted-foreground flex items-center gap-0.5">
                           <MapPin className="h-3 w-3" /> {amb.location}
                         </span>
                       </div>
-                      <p className="text-xs text-primary font-medium mb-2">{amb.speciality}</p>
-                      <p className="text-xs text-muted-foreground leading-relaxed mb-3">{amb.bio}</p>
+                      <p className="text-sm text-primary font-medium mb-2">{amb.speciality}</p>
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-3">{amb.bio}</p>
                       <div className="flex flex-wrap gap-1.5 mb-2">
                         {amb.badges.map(badge => (
                           <span key={badge} className={`text-xs px-2 py-0.5 rounded-full font-medium ${BADGE_COLORS[badge] || 'bg-muted text-muted-foreground'}`}>
@@ -166,7 +166,7 @@ export default function Ambassadors() {
                           </span>
                         ))}
                       </div>
-                      <p className="text-xs text-muted-foreground">
+                      <p className="text-sm text-muted-foreground">
                         <span className="font-medium text-foreground">{amb.helpedCount}</span> people helped · Member since {amb.joinedYear}
                       </p>
                     </div>
@@ -182,7 +182,7 @@ export default function Ambassadors() {
             <Card className="rounded-2xl border border-border bg-card">
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-4">
-                  <Award className="h-5 w-5 text-amber-500" />
+                  <Award className="h-5 w-5 text-warn-foreground" />
                   <h2 className="font-bold text-lg">Ambassador Perks</h2>
                 </div>
                 <div className="space-y-3">
@@ -190,8 +190,8 @@ export default function Ambassadors() {
                     <div key={perk.title} className="flex gap-3">
                       <span className="text-xl shrink-0">{perk.emoji}</span>
                       <div>
-                        <p className="text-sm font-medium">{perk.title}</p>
-                        <p className="text-xs text-muted-foreground">{perk.desc}</p>
+                        <p className="text-base font-medium">{perk.title}</p>
+                        <p className="text-sm text-muted-foreground">{perk.desc}</p>
                       </div>
                     </div>
                   ))}
@@ -206,14 +206,14 @@ export default function Ambassadors() {
                   <Heart className="h-5 w-5 text-primary" />
                   <h2 className="font-bold text-lg">Become an Ambassador</h2>
                 </div>
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-base text-muted-foreground mb-4">
                   We're looking for people who love helping others and want to make technology more accessible. No qualifications needed — just patience and enthusiasm.
                 </p>
                 <div className="space-y-2 mb-5">
                   {REQUIREMENTS.map((req, i) => (
                     <div key={i} className="flex items-start gap-2">
                       <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                      <p className="text-xs text-muted-foreground">{req}</p>
+                      <p className="text-sm text-muted-foreground">{req}</p>
                     </div>
                   ))}
                 </div>
@@ -222,7 +222,7 @@ export default function Ambassadors() {
                     Apply to become an Ambassador <ArrowRight className="h-4 w-4" />
                   </Link>
                 </Button>
-                <p className="text-xs text-muted-foreground text-center mt-3">We review applications within 5 working days.</p>
+                <p className="text-sm text-muted-foreground text-center mt-3">We review applications within 5 working days.</p>
               </CardContent>
             </Card>
           </div>
@@ -232,8 +232,8 @@ export default function Ambassadors() {
             <CardContent className="p-5 flex gap-4 items-center">
               <MessageSquare className="h-8 w-8 text-primary shrink-0" />
               <div>
-                <p className="font-semibold text-sm">Have a question? Ask the community</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Our Ambassadors are active on the TekSure forum every day — ask anything and get a friendly, jargon-free answer.</p>
+                <p className="font-semibold text-base">Have a question? Ask the community</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Our Ambassadors are active on the TekSure forum every day — ask anything and get a friendly, jargon-free answer.</p>
               </div>
               <Button asChild variant="outline" size="sm" className="shrink-0 ml-auto">
                 <Link to="/forum">Go to Forum</Link>

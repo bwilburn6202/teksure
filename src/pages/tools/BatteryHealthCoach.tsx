@@ -175,7 +175,7 @@ export default function BatteryHealthCoach() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <BatteryFull className="h-8 w-8 text-emerald-600" aria-hidden="true" />
+                <BatteryFull className="h-8 w-8 text-success-foreground" aria-hidden="true" />
               </div>
             </div>
             <Badge variant="secondary" className="mb-3">Free Tool · 30 seconds</Badge>
@@ -213,7 +213,7 @@ export default function BatteryHealthCoach() {
                       }`}
                     >
                       <p className="font-semibold mb-1">iPhone</p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         Find: Settings → Battery → Battery Health & Charging
                       </p>
                     </button>
@@ -227,7 +227,7 @@ export default function BatteryHealthCoach() {
                       }`}
                     >
                       <p className="font-semibold mb-1">Android Phone</p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         Samsung: Settings → Battery and device care → Battery
                       </p>
                     </button>
@@ -240,7 +240,7 @@ export default function BatteryHealthCoach() {
                 <Card>
                   <CardContent className="p-6">
                     <h2 className="text-lg font-semibold mb-2">Step 2: Enter your battery health</h2>
-                    <p className="text-sm text-muted-foreground mb-4">
+                    <p className="text-base text-muted-foreground mb-4">
                       It is the "Maximum Capacity" number on iPhone, or the "Battery health"
                       reading on most Android phones. If you do not see it, see the help below.
                     </p>
@@ -310,7 +310,7 @@ export default function BatteryHealthCoach() {
                         <li>Tap "Battery."</li>
                         <li>Tap "Battery Health."</li>
                       </ol>
-                      <p className="text-xs text-muted-foreground mt-1">
+                      <p className="text-sm text-muted-foreground mt-1">
                         Pixel 8a and newer show the percentage directly.
                       </p>
                     </div>
@@ -355,7 +355,7 @@ export default function BatteryHealthCoach() {
                       <Lightbulb className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
                       Expected remaining life
                     </h3>
-                    <p className="text-sm text-muted-foreground">{result.remainingLifeYears}</p>
+                    <p className="text-base text-muted-foreground">{result.remainingLifeYears}</p>
                   </CardContent>
                 </Card>
                 <Card>
@@ -364,7 +364,7 @@ export default function BatteryHealthCoach() {
                       <DollarSign className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
                       Replacement cost
                     </h3>
-                    <p className="text-sm text-muted-foreground">{result.replacementCost}</p>
+                    <p className="text-base text-muted-foreground">{result.replacementCost}</p>
                   </CardContent>
                 </Card>
               </div>
@@ -376,7 +376,7 @@ export default function BatteryHealthCoach() {
                     <Wrench className="h-5 w-5 text-muted-foreground" aria-hidden="true" />
                     Habits that extend battery life
                   </h3>
-                  <ul className="space-y-2 text-sm">
+                  <ul className="space-y-2 text-base">
                     {result.habits.map((h, i) => (
                       <li key={i} className="flex gap-2">
                         <span className="text-primary font-semibold">•</span>
@@ -391,7 +391,7 @@ export default function BatteryHealthCoach() {
               <Card>
                 <CardContent className="p-6">
                   <h3 className="font-semibold mb-2">What to do next</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{result.nextStep}</p>
+                  <p className="text-base text-muted-foreground mb-4">{result.nextStep}</p>
                   <div className="flex flex-wrap gap-3">
                     <Button variant="outline" onClick={reset} className="gap-2">
                       <RotateCcw className="h-4 w-4" aria-hidden="true" /> Check another phone

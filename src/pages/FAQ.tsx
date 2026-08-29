@@ -772,7 +772,7 @@ const FAQ = () => {
             </div>
 
             {normalized && (
-              <p className="mt-4 text-sm text-muted-foreground" aria-live="polite">
+              <p className="mt-4 text-base text-muted-foreground" aria-live="polite">
                 Showing {totalVisible} {totalVisible === 1 ? 'answer' : 'answers'} for
                 &ldquo;{search}&rdquo;
               </p>

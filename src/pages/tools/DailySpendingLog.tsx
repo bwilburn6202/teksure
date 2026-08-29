@@ -53,33 +53,33 @@ export default function DailySpendingLog() {
   })).filter(x => x.total > 0).sort((a, b) => b.total - a.total);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Daily Spending Log | TekSure" description="Log expenses as you go. See today, last 7 days, and last 30 days totals — plus a breakdown by category." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Wallet className="h-7 w-7 text-emerald-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Daily Spending Log</h1>
+            <Wallet className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Daily Spending Log</h1>
           </div>
-          <p className="text-gray-600 text-lg">Log a spend in 10 seconds. Watch the daily, weekly, and monthly totals build up.</p>
+          <p className="text-muted-foreground text-lg">Log a spend in 10 seconds. Watch the daily, weekly, and monthly totals build up.</p>
         </div>
 
         {spends.length > 0 && (
           <div className="grid grid-cols-3 gap-3 mb-4">
-            <Card><CardContent className="py-3 px-3 text-center"><p className="text-xs text-gray-500">Today</p><p className="text-xl font-bold text-emerald-700">{fmt(todayTotal)}</p></CardContent></Card>
-            <Card><CardContent className="py-3 px-3 text-center"><p className="text-xs text-gray-500">Last 7 days</p><p className="text-xl font-bold text-emerald-700">{fmt(week7Total)}</p></CardContent></Card>
-            <Card><CardContent className="py-3 px-3 text-center"><p className="text-xs text-gray-500">Last 30 days</p><p className="text-xl font-bold text-emerald-700">{fmt(month30Total)}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-3 text-center"><p className="text-sm text-muted-foreground">Today</p><p className="text-xl font-bold text-success-foreground">{fmt(todayTotal)}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-3 text-center"><p className="text-sm text-muted-foreground">Last 7 days</p><p className="text-xl font-bold text-success-foreground">{fmt(week7Total)}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-3 text-center"><p className="text-sm text-muted-foreground">Last 30 days</p><p className="text-xl font-bold text-success-foreground">{fmt(month30Total)}</p></CardContent></Card>
           </div>
         )}
 
         <Card className="mb-4 print:hidden">
-          <CardHeader className="pb-2 pt-3"><CardTitle className="text-lg flex items-center gap-2"><PlusCircle className="h-5 w-5 text-emerald-700" />Add a Spend</CardTitle></CardHeader>
+          <CardHeader className="pb-2 pt-3"><CardTitle className="text-lg flex items-center gap-2"><PlusCircle className="h-5 w-5 text-success-foreground" />Add a Spend</CardTitle></CardHeader>
           <CardContent className="space-y-2">
             <div className="grid grid-cols-2 gap-2">
               <Input type="date" value={form.date} onChange={e => setForm(f => ({ ...f, date: e.target.value }))} />
               <Input type="number" step="0.01" placeholder="Amount $" value={form.amount} onChange={e => setForm(f => ({ ...f, amount: e.target.value }))} />
             </div>
-            <select value={form.category} onChange={e => setForm(f => ({ ...f, category: e.target.value as Category }))} className="w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+            <select value={form.category} onChange={e => setForm(f => ({ ...f, category: e.target.value as Category }))} className="w-full border border-border rounded-md px-3 py-2 text-base bg-card">
               {CATEGORIES.map(c => <option key={c}>{c}</option>)}
             </select>
             <Input placeholder="Note (optional)" value={form.note} onChange={e => setForm(f => ({ ...f, note: e.target.value }))} />
@@ -112,14 +112,14 @@ export default function DailySpendingLog() {
                   <div key={s.id} className="py-2 flex items-center justify-between gap-2 text-sm">
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-gray-500 text-xs">{s.date}</span>
+                        <span className="text-muted-foreground text-sm">{s.date}</span>
                         <Badge variant="secondary" className="text-xs">{s.category}</Badge>
                       </div>
-                      {s.note && <p className="text-xs text-gray-500 italic mt-0.5">{s.note}</p>}
+                      {s.note && <p className="text-sm text-muted-foreground italic mt-0.5">{s.note}</p>}
                     </div>
                     <div className="flex items-center gap-2">
-                      <span className="font-semibold text-emerald-700">{fmt(s.amount)}</span>
-                      <Button variant="ghost" size="icon" onClick={() => remove(s.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                      <span className="font-semibold text-success-foreground">{fmt(s.amount)}</span>
+                      <Button variant="ghost" size="icon" onClick={() => remove(s.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                         <Trash2 className="h-3 w-3" />
                       </Button>
                     </div>
@@ -130,6 +130,6 @@ export default function DailySpendingLog() {
           </Card>
         )}
       </div>
-    </div>
+    </main>
   );
 }

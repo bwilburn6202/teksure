@@ -22,7 +22,7 @@ export default function SeniorAirlineAppGuide() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">American Airlines</h2><p>Easy to find your gate. Shows wait times at security.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Southwest</h2><p>Set a check-in reminder for exactly 24 hours before departure to get a better boarding spot.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Save boarding pass</h2><p>Add to Apple Wallet (iPhone) or Google Wallet (Android). Works without internet.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Print a paper backup. Phones die. Paper doesn&apos;t.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Print a paper backup. Phones die. Paper doesn&apos;t.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorSmartFridges() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When worth it</h2><p>If kids will use it for daily family schedules. Or for leaks/temp alerts when away.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cheap alternative</h2><p>$30 smart sensor on the fridge door tells you if it&apos;s open. Same alert. 99% cheaper.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out for repairs</h2><p>Smart fridges break more often. Tech updates last 5 years. Plain fridges last 15+.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Save money. A regular fridge + iPad on the counter does it all.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Save money. A regular fridge + iPad on the counter does it all.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

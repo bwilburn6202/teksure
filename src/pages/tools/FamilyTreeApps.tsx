@@ -30,10 +30,10 @@ export default function FamilyTreeApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function FamilyTreeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free first — FamilySearch</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>familysearch.org</strong>. Free, forever. No credit card.</li>
               <li>Enter your name + parents&apos; names + grandparents&apos; names.</li>
               <li>Site searches its 6 billion records. Auto-suggests matches.</li>
@@ -56,7 +56,7 @@ export default function FamilyTreeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to add Ancestry.com</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FamilySearch hits dead ends.</li>
               <li>You want DNA matches with distant relatives.</li>
               <li>Your family came from countries with limited free records.</li>
@@ -69,7 +69,7 @@ export default function FamilyTreeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DNA tests — privacy notes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Once you submit DNA, you can&apos;t take it back. Read privacy carefully.</li>
               <li><strong>23andMe</strong> filed for bankruptcy 2025 — data may move to new owner. Some users deleted data.</li>
               <li><strong>Ancestry DNA</strong> stable. Best DNA matching pool.</li>
@@ -83,7 +83,7 @@ export default function FamilyTreeApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Local library</strong> — free Ancestry access if you&apos;re inside the building (most US libraries).</li>
               <li><strong>FamilySearch Centers</strong> — 5,000+ worldwide. Volunteers help free.</li>
               <li><strong>Local genealogy society</strong> — free or low-cost lookup help.</li>
@@ -95,7 +95,7 @@ export default function FamilyTreeApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Ask oldest relatives FIRST</h3>
-            <p className="text-sm text-muted-foreground">Before paying any service — call your oldest aunts, uncles, parents. Record (with permission) their stories about your great-grandparents. Names, towns, occupations. That&apos;s gold no website has. Once they&apos;re gone, that knowledge goes with them. This is the single most important step.</p>
+            <p className="text-base text-muted-foreground">Before paying any service — call your oldest aunts, uncles, parents. Record (with permission) their stories about your great-grandparents. Names, towns, occupations. That&apos;s gold no website has. Once they&apos;re gone, that knowledge goes with them. This is the single most important step.</p>
           </CardContent>
         </Card>
       </main>

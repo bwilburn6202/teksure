@@ -22,7 +22,7 @@ export default function SeniorMotionSensors() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Alexa Together</h2><p>$20/month. 24/7 urgent response + activity tracking via Echo.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Privacy</h2><p>No cameras. Just motion + door sensors. Senior dignity protected.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior agreement</h2><p>Discuss with parent first. Surveillance feels invasive without buy-in.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Even daily call is enough for many seniors. Tech only if needed.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Even daily call is enough for many seniors. Tech only if needed.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

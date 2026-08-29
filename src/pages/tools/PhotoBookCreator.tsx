@@ -33,7 +33,7 @@ export default function PhotoBookCreator() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Steps (any service)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install the app or go to the website.</li>
               <li>Pick book size (8×8" softcover is the most common starter size).</li>
               <li>Pick a theme — they\'ll suggest layouts.</li>
@@ -48,7 +48,7 @@ export default function PhotoBookCreator() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save on price</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Coupons:</strong> Shutterfly emails 50% codes weekly. Sign up for their email — wait 48 hours.</li>
               <li><strong>Honey browser extension</strong> auto-applies coupon codes at checkout.</li>
               <li><strong>Black Friday / Mother\'s Day</strong> — both have the deepest discounts.</li>
@@ -60,7 +60,7 @@ export default function PhotoBookCreator() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photo book ideas worth making</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Year in review</strong> — every January, make a book of the year. 5 minutes per month, big payoff.</li>
               <li><strong>Big trip</strong> — vacations live forever in a hardcover.</li>
               <li><strong>Grandkid\'s first year</strong> — perfect 1st birthday gift to the parents.</li>
@@ -74,7 +74,7 @@ export default function PhotoBookCreator() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">Photo books take 1-2 hours to make the first time, less after. Order ONE printed copy first, look it over, then order copies for everyone. Saves expensive mistakes.</p>
+            <p className="text-base text-muted-foreground">Photo books take 1-2 hours to make the first time, less after. Order ONE printed copy first, look it over, then order copies for everyone. Saves expensive mistakes.</p>
           </CardContent>
         </Card>
       </main>

@@ -92,7 +92,7 @@ export default function DailyRoutineBuilder() {
   const usedSuggestionTexts = new Set(activities.map(a => `${a.period}|${a.task}`));
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Daily Routine Builder | TekSure"
         description="Design a printable daily routine with morning, afternoon, and evening activities. Add medications, meals, exercise, and quiet time."
@@ -101,10 +101,10 @@ export default function DailyRoutineBuilder() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Clock className="h-7 w-7 text-amber-600" />
-            <h1 className="text-3xl font-bold text-gray-900">My Daily Routine</h1>
+            <Clock className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">My Daily Routine</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Build a clear daily plan with times for medications, meals, exercise, and rest. Print it and keep it handy.
           </p>
         </div>
@@ -113,7 +113,7 @@ export default function DailyRoutineBuilder() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-amber-600" />
+              <PlusCircle className="h-5 w-5 text-warn-foreground" />
               Add an Activity
             </CardTitle>
           </CardHeader>
@@ -127,7 +127,7 @@ export default function DailyRoutineBuilder() {
                     type="button"
                     onClick={() => setForm(f => ({ ...f, period: p }))}
                     className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${
-                      form.period === p ? "bg-amber-50 border-amber-400 text-amber-800" : "bg-white border-gray-200 text-gray-700 hover:bg-gray-50"
+                      form.period === p ? "bg-amber-50 border-amber-400 text-amber-800" : "bg-white border-border text-foreground hover:bg-gray-50"
                     }`}
                   >
                     {PERIOD_META[p].emoji} {PERIOD_META[p].label}
@@ -149,7 +149,7 @@ export default function DailyRoutineBuilder() {
               <Label htmlFor="notes" className="text-base font-medium">Notes (optional)</Label>
               <Input id="notes" placeholder="e.g. With a glass of water, after breakfast" value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={addActivity} size="lg" className="w-full sm:w-auto text-base">
               Add to Routine
             </Button>
@@ -158,18 +158,18 @@ export default function DailyRoutineBuilder() {
 
         {/* Suggestions */}
         {activities.length < 5 && (
-          <Card className="mb-4 bg-blue-50 border-blue-200 print:hidden">
+          <Card className="mb-4 bg-info border-info-foreground/25 print:hidden">
             <CardHeader className="pb-2">
-              <CardTitle className="text-base text-blue-800">Quick start suggestions</CardTitle>
+              <CardTitle className="text-base text-info-foreground">Quick start suggestions</CardTitle>
             </CardHeader>
             <CardContent className="pt-0">
-              <p className="text-sm text-blue-700 mb-2">Tap any suggestion below to add it. You can change times and details later.</p>
+              <p className="text-base text-info-foreground mb-2">Tap any suggestion below to add it. You can change times and details later.</p>
               <div className="flex flex-wrap gap-2">
                 {SUGGESTIONS.filter(s => !usedSuggestionTexts.has(`${s.period}|${s.task}`)).slice(0, 8).map((s, i) => (
                   <button
                     key={i}
                     onClick={() => addSuggestion(s)}
-                    className="text-xs px-2 py-1 rounded-full bg-white border border-blue-200 text-blue-700 hover:bg-blue-100"
+                    className="text-xs px-2 py-1 rounded-full bg-card border border-info-foreground/25 text-info-foreground hover:bg-info"
                   >
                     + {formatTime(s.time)} {s.task}
                   </button>
@@ -182,9 +182,9 @@ export default function DailyRoutineBuilder() {
         {/* Routine display */}
         {activities.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
+            <CardContent className="py-10 text-center text-muted-foreground">
               <p className="text-lg">No activities yet.</p>
-              <p className="text-sm mt-1">Add your first activity or pick a suggestion above.</p>
+              <p className="text-base mt-1">Add your first activity or pick a suggestion above.</p>
             </CardContent>
           </Card>
         ) : (
@@ -203,17 +203,17 @@ export default function DailyRoutineBuilder() {
                   <CardContent className="pt-0 pb-3">
                     <div className="space-y-2">
                       {list.map(a => (
-                        <div key={a.id} className="bg-white rounded-md p-3 flex items-start justify-between gap-2 border border-gray-100">
+                        <div key={a.id} className="bg-card rounded-md p-3 flex items-start justify-between gap-2 border border-border">
                           <div className="flex-1">
                             <div className="flex items-center gap-2">
                               <Badge variant="secondary" className="text-sm font-mono">
                                 {formatTime(a.time)}
                               </Badge>
-                              <span className="font-medium text-gray-900">{a.task}</span>
+                              <span className="font-medium text-foreground">{a.task}</span>
                             </div>
-                            {a.notes && <p className="text-sm text-gray-500 italic mt-1 ml-1">{a.notes}</p>}
+                            {a.notes && <p className="text-base text-muted-foreground italic mt-1 ml-1">{a.notes}</p>}
                           </div>
-                          <Button variant="ghost" size="icon" className="shrink-0 text-red-400 hover:text-red-600 print:hidden" onClick={() => removeActivity(a.id)}>
+                          <Button variant="ghost" size="icon" className="shrink-0 text-danger-foreground hover:text-danger-foreground print:hidden" onClick={() => removeActivity(a.id)}>
                             <Trash2 className="h-4 w-4" />
                           </Button>
                         </div>
@@ -235,6 +235,6 @@ export default function DailyRoutineBuilder() {
           </div>
         )}
       </div>
-    </div>
+    </main>
   );
 }

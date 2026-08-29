@@ -19,7 +19,7 @@ export default function OutlookBasicsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Outlook vs Gmail</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Outlook — Microsoft / Hotmail.</li>
               <li>Gmail — Google.</li>
               <li>Both free.</li>
@@ -33,7 +33,7 @@ export default function OutlookBasicsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get started</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to outlook.com.</li>
               <li>Or download app.</li>
               <li>Sign in or create account.</li>
@@ -47,7 +47,7 @@ export default function OutlookBasicsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Send email</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Click &quot;New mail&quot;.</li>
               <li>Type recipient email.</li>
               <li>Subject line.</li>
@@ -61,7 +61,7 @@ export default function OutlookBasicsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Organize inbox</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Focused&quot; — important emails.</li>
               <li>&quot;Other&quot; — promotions, etc.</li>
               <li>Create folders for organizing.</li>
@@ -75,7 +75,7 @@ export default function OutlookBasicsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Calendar built-in</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Click calendar icon left side.</li>
               <li>Add appointments.</li>
               <li>Reminders alerts.</li>
@@ -89,7 +89,7 @@ export default function OutlookBasicsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Make text larger — Settings &gt; Display.</li>
               <li>Mark spam — &quot;Junk&quot; option.</li>
               <li>Block sender option.</li>
@@ -103,7 +103,7 @@ export default function OutlookBasicsSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Outlook scams</h3>
-            <p className="text-sm text-muted-foreground">Common: &quot;Your Outlook account will be suspended&quot; emails — fake. Microsoft never asks for password via email. &quot;Click here to verify&quot; = scam. Report → mark as junk + phishing. 2FA on account essential. Recovery email + phone updated. Outlook spam filter excellent — trust junk folder.</p>
+            <p className="text-base text-muted-foreground">Common: &quot;Your Outlook account will be suspended&quot; emails — fake. Microsoft never asks for password via email. &quot;Click here to verify&quot; = scam. Report → mark as junk + phishing. 2FA on account essential. Recovery email + phone updated. Outlook spam filter excellent — trust junk folder.</p>
           </CardContent>
         </Card>
       </main>

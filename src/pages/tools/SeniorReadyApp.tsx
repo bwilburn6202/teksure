@@ -17,12 +17,12 @@ export default function SeniorReadyApp() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Ready.gov</h2><p>FREE. FEMA preparedness. Senior-specific resources.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior checklist</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>7-day medications</li><li>Mobility aids</li><li>Hearing aid batteries</li><li>Glasses backup</li><li>Medical info</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior checklist</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>7-day medications</li><li>Mobility aids</li><li>Hearing aid batteries</li><li>Glasses backup</li><li>Medical info</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Emergency plan</h2><p>Where to meet family. Out-of-state contact. Meeting points.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Special Needs Registry</h2><p>FREE local. Tells emergency responders about your needs in advance.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pets included</h2><p>Pet emergency plan. Carriers, food, vet records.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Practice annually</h2><p>Walk through emergency plan with family. Real preparedness.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Sign up for local Special Needs Registry. Free. Saves lives.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Sign up for local Special Needs Registry. Free. Saves lives.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

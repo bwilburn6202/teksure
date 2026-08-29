@@ -19,7 +19,7 @@ export default function ScenicByways() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Top picks for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Blue Ridge Parkway (NC/VA)</strong> — 469 miles. Slow, scenic. Most senior-loved drive in US.</li>
               <li><strong>Pacific Coast Highway (CA)</strong> — Hwy 1, Big Sur. Stunning. Limited senior facilities — plan stops.</li>
               <li><strong>Great River Road (10 states)</strong> — follows Mississippi River. River towns, history, paddle boats.</li>
@@ -35,7 +35,7 @@ export default function ScenicByways() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free trip planning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>FHWA scenicbyways.cs.byu.edu</strong> — official US byway directory.</li>
               <li><strong>Roadtrippers app</strong> — find quirky stops along route.</li>
               <li><strong>iExit</strong> — what&apos;s at next exit.</li>
@@ -49,7 +49,7 @@ export default function ScenicByways() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drive 4-6 hours/day max — overnights in between.</li>
               <li>Stop every 2 hours minimum.</li>
               <li>Pack snacks, water, paper map (signal cuts out).</li>
@@ -64,7 +64,7 @@ export default function ScenicByways() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RV travel for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>RVshare / Outdoorsy</strong> — Airbnb for RVs. Try before buying.</li>
               <li><strong>KOA + Good Sam</strong> — best chains for seniors.</li>
               <li><strong>Harvest Hosts</strong> — overnight at wineries, farms ($110/yr).</li>
@@ -77,7 +77,7 @@ export default function ScenicByways() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior America the Beautiful Pass</h3>
-            <p className="text-sm text-muted-foreground">$80 LIFETIME for 62+. Free entry to all 2,000+ federal recreation sites including every National Park, BLM, USFS. Single best $80 a senior can spend on travel. Get at any park entrance OR usgs.gov/store.</p>
+            <p className="text-base text-muted-foreground">$80 LIFETIME for 62+. Free entry to all 2,000+ federal recreation sites including every National Park, BLM, USFS. Single best $80 a senior can spend on travel. Get at any park entrance OR usgs.gov/store.</p>
           </CardContent>
         </Card>
       </main>

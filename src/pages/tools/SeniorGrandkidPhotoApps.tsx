@@ -22,7 +22,7 @@ export default function SeniorGrandkidPhotoApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Google Photos shared</h2><p>Free. Same as Apple but works for Android families too.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Aura digital frame</h2><p>$179. Family texts photos to frame. Display rotates daily.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">No social media risk</h2><p>These are private. Only family sees photos. Safer than Facebook.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set parents up with Tinybeans now. Treasure of memories in 5 years.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set parents up with Tinybeans now. Treasure of memories in 5 years.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -117,7 +117,7 @@ const NotFound = () => {
                 <Link
                   key={to}
                   to={to}
-                  className="group relative flex items-start gap-4 rounded-2xl bg-white p-5 md:p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl border-2 focus-visible:outline-none focus-visible:ring-4"
+                  className="group relative flex items-start gap-4 rounded-2xl bg-card p-5 md:p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl border-2 focus-visible:outline-none focus-visible:ring-4"
                   style={{ borderColor: '#E4DFD4' }}
                 >
                   <div
@@ -134,7 +134,7 @@ const NotFound = () => {
                     <p className="text-lg md:text-xl font-bold mb-1" style={{ color: '#1A1A1A' }}>
                       {label}
                     </p>
-                    <p className="text-sm md:text-base leading-snug" style={{ color: '#6B6B6B' }}>
+                    <p className="text-base md:text-base leading-snug" style={{ color: '#6B6B6B' }}>
                       {desc}
                     </p>
                   </div>
@@ -162,7 +162,7 @@ const NotFound = () => {
                 <li key={to}>
                   <Link
                     to={to}
-                    className="inline-flex items-center px-4 py-2 rounded-full bg-white border-2 font-semibold text-sm md:text-base transition-all hover:shadow-sm hover:-translate-y-0.5"
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-card border-2 font-semibold text-sm md:text-base transition-all hover:shadow-sm hover:-translate-y-0.5"
                     style={{ borderColor: '#E4DFD4', color: '#1A1A1A' }}
                   >
                     {label}
@@ -174,12 +174,12 @@ const NotFound = () => {
 
           {/* Report this — escape hatch for broken links */}
           <div className="text-center">
-            <p className="text-sm md:text-base mb-3" style={{ color: '#6B6B6B' }}>
+            <p className="text-base md:text-base mb-3" style={{ color: '#6B6B6B' }}>
               Got here by clicking a link somewhere? Let us know so we can fix it.
             </p>
             <a
               href={reportMailto}
-              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white border-2 font-semibold text-base transition-all hover:shadow-sm hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-card border-2 font-semibold text-base transition-all hover:shadow-sm hover:-translate-y-0.5"
               style={{ borderColor: '#E4DFD4', color: '#2A5FCC' }}
             >
               <Flag className="h-4 w-4" aria-hidden="true" />
@@ -187,7 +187,7 @@ const NotFound = () => {
             </a>
             {location.pathname && (
               <p
-                className="mt-5 text-xs font-mono break-all max-w-md mx-auto"
+                className="mt-5 text-sm font-mono break-all max-w-md mx-auto"
                 style={{ color: '#9B9B9B' }}
               >
                 Missing: {location.pathname}{location.search}

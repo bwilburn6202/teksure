@@ -19,7 +19,7 @@ export default function DisneyPlusForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you get</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Classic Disney animated films.</li>
               <li>Pixar movies (Toy Story, Finding Nemo).</li>
               <li>Marvel superhero series + movies.</li>
@@ -33,7 +33,7 @@ export default function DisneyPlusForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Basic (with ads) — $7.99/month.</li>
               <li>Premium (no ads) — $13.99/month.</li>
               <li>Bundle: Disney+ + Hulu + ESPN+ — $14.99/month.</li>
@@ -47,7 +47,7 @@ export default function DisneyPlusForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to DisneyPlus.com or download app.</li>
               <li>Create account with email.</li>
               <li>Enter credit card or PayPal.</li>
@@ -61,7 +61,7 @@ export default function DisneyPlusForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Classic 1950s–1990s Disney films — nostalgic.</li>
               <li>National Geographic nature docs.</li>
               <li>Holiday specials — Christmas classics.</li>
@@ -75,7 +75,7 @@ export default function DisneyPlusForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Navigation tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Home tab — recommended for you.</li>
               <li>Search icon — type any title.</li>
               <li>Watchlist — add movies to watch later.</li>
@@ -89,7 +89,7 @@ export default function DisneyPlusForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Profiles</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Up to 4 profiles per account.</li>
               <li>Each person has own watchlist.</li>
               <li>Kids profile = age-appropriate only.</li>
@@ -103,7 +103,7 @@ export default function DisneyPlusForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth it?</h3>
-            <p className="text-sm text-muted-foreground">If you have grandkids — yes, Disney+ is a grandparent goldmine. Watch Bambi, Cinderella, Fantasia together. National Geographic alone is worth it for nature lovers. If Marvel and Star Wars don&apos;t interest you, the library may feel thin. Try a free trial first to see if the content matches your taste before committing monthly.</p>
+            <p className="text-base text-muted-foreground">If you have grandkids — yes, Disney+ is a grandparent goldmine. Watch Bambi, Cinderella, Fantasia together. National Geographic alone is worth it for nature lovers. If Marvel and Star Wars don&apos;t interest you, the library may feel thin. Try a free trial first to see if the content matches your taste before committing monthly.</p>
           </CardContent>
         </Card>
       </main>

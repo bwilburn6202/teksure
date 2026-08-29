@@ -6,7 +6,7 @@ Supabase database schema, Edge Functions, and integration points.
 
 ## Supabase Project
 
-- **Project ref**: `zrgtoefkqafndhxhbuag`
+- **Project ref**: `vrhxitxzqtbphzsbdqih`
 - **Client**: `@supabase/supabase-js` v2
 - **Types**: Auto-generated in `src/integrations/supabase/types.ts`
 

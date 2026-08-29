@@ -93,36 +93,36 @@ export default function FreeTrialTracker() {
         title="Free Trial Tracker — TekSure"
         description="Track your free trial subscriptions so you never get charged by accident. See when each trial ends and get reminded to cancel in time."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4 print:bg-white">
+      <main className="min-h-screen bg-muted py-8 px-4 print:bg-card">
         <div className="max-w-2xl mx-auto">
 
           <div className="text-center mb-6 print:mb-4">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-orange-100 dark:bg-orange-950/60 mb-4 print:hidden">
-              <Clock className="w-8 h-8 text-orange-600 dark:text-orange-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-warn mb-4 print:hidden">
+              <Clock className="w-8 h-8 text-warn-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Free Trial Tracker</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Free Trial Tracker</h1>
+            <p className="text-lg text-muted-foreground ">
               Keep track of free trials so you know exactly when to cancel — before your credit card gets charged.
             </p>
           </div>
 
           {urgentCount > 0 && (
-            <div className="bg-red-50 dark:bg-red-950/30 border border-red-300 dark:border-red-700 rounded-2xl p-4 mb-5 flex items-start gap-3">
-              <AlertTriangle className="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
-              <p className="text-sm font-semibold text-red-800 dark:text-red-200">
+            <div className="bg-danger border border-danger-foreground/25 rounded-2xl p-4 mb-5 flex items-start gap-3">
+              <AlertTriangle className="w-5 h-5 text-danger-foreground flex-shrink-0 mt-0.5" />
+              <p className="text-base font-semibold text-danger-foreground ">
                 {urgentCount} trial{urgentCount !== 1 ? 's' : ''} ending soon — cancel now to avoid being charged.
               </p>
             </div>
           )}
 
           {/* Quick add popular services */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm p-4 mb-4 print:hidden">
+          <div className="bg-card rounded-2xl border border-border shadow-sm p-4 mb-4 print:hidden">
             <button
               onClick={() => setShowQuickAdd(!showQuickAdd)}
               className="w-full flex items-center justify-between text-left"
             >
-              <p className="font-semibold text-gray-800 dark:text-gray-200 text-sm">Quick-add a popular service</p>
-              <span className="text-xs text-orange-600 dark:text-orange-400 font-medium">{showQuickAdd ? 'Hide' : 'Show'}</span>
+              <p className="font-semibold text-foreground text-base">Quick-add a popular service</p>
+              <span className="text-sm text-warn-foreground font-medium">{showQuickAdd ? 'Hide' : 'Show'}</span>
             </button>
             {showQuickAdd && (
               <div className="mt-3 flex flex-wrap gap-2">
@@ -130,7 +130,7 @@ export default function FreeTrialTracker() {
                   <button
                     key={s.name}
                     onClick={() => quickAdd(s)}
-                    className="px-3 py-1.5 rounded-lg border border-gray-200 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:border-orange-400 hover:bg-orange-50 dark:hover:bg-orange-950/20 transition-colors"
+                    className="px-3 py-1.5 rounded-lg border border-border text-sm text-foreground hover:border-orange-400 hover:bg-warn transition-colors"
                   >
                     {s.name}
                   </button>
@@ -158,17 +158,17 @@ export default function FreeTrialTracker() {
                 <div key={trial.id} className={`rounded-2xl border-2 shadow-sm p-4 ${borderColor} ${bgColor}`}>
                   <div className="flex items-start justify-between gap-2 mb-3">
                     <div className="flex items-center gap-2">
-                      <span className="text-xs font-bold text-gray-400 w-5 text-center">{idx + 1}</span>
-                      {trial.urgency === 'ok' && <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />}
-                      {trial.urgency === 'warning' && <AlertTriangle className="w-4 h-4 text-yellow-500 flex-shrink-0" />}
-                      {trial.urgency === 'critical' && <AlertTriangle className="w-4 h-4 text-red-500 flex-shrink-0" />}
-                      {trial.urgency === 'expired' && <Clock className="w-4 h-4 text-gray-400 flex-shrink-0" />}
+                      <span className="text-xs font-bold text-muted-foreground w-5 text-center">{idx + 1}</span>
+                      {trial.urgency === 'ok' && <CheckCircle className="w-4 h-4 text-success-foreground flex-shrink-0" />}
+                      {trial.urgency === 'warning' && <AlertTriangle className="w-4 h-4 text-warn-foreground flex-shrink-0" />}
+                      {trial.urgency === 'critical' && <AlertTriangle className="w-4 h-4 text-danger-foreground flex-shrink-0" />}
+                      {trial.urgency === 'expired' && <Clock className="w-4 h-4 text-muted-foreground flex-shrink-0" />}
                       {trial.endDate && trial.daysLeft !== null && (
                         <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
                           trial.urgency === 'expired' ? 'bg-gray-100 dark:bg-gray-800 text-gray-500' :
-                          trial.urgency === 'critical' ? 'bg-red-100 dark:bg-red-900/50 text-red-700 dark:text-red-300' :
-                          trial.urgency === 'warning' ? 'bg-yellow-100 dark:bg-yellow-900/50 text-yellow-700 dark:text-yellow-300' :
-                          'bg-green-100 dark:bg-green-900/50 text-green-700 dark:text-green-300'
+                          trial.urgency === 'critical' ? 'bg-red-100 dark:bg-red-900/50 text-danger-foreground dark:text-red-300' :
+                          trial.urgency === 'warning' ? 'bg-yellow-100 dark:bg-yellow-900/50 text-warn-foreground dark:text-yellow-300' :
+                          'bg-green-100 dark:bg-green-900/50 text-success-foreground dark:text-green-300'
                         }`}>
                           {trial.daysLeft <= 0 ? 'Expired / Charged' : `${trial.daysLeft} day${trial.daysLeft !== 1 ? 's' : ''} left`}
                         </span>
@@ -176,7 +176,7 @@ export default function FreeTrialTracker() {
                     </div>
                     <button
                       onClick={() => removeTrial(trial.id)}
-                      className="text-gray-400 hover:text-red-500 transition-colors p-1 flex-shrink-0 print:hidden"
+                      className="text-muted-foreground hover:text-danger-foreground transition-colors p-1 flex-shrink-0 print:hidden"
                     >
                       <Trash2 className="w-4 h-4" />
                     </button>
@@ -184,27 +184,27 @@ export default function FreeTrialTracker() {
 
                   <div className="grid grid-cols-2 gap-2 mb-2">
                     <div className="col-span-2">
-                      <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Service name</label>
+                      <label className="block text-sm font-medium text-muted-foreground mb-1">Service name</label>
                       <input
                         type="text"
                         value={trial.service}
                         onChange={e => updateTrial(trial.id, 'service', e.target.value)}
                         placeholder="e.g. Netflix, Hulu, Amazon Prime..."
-                        className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 print:hidden"
+                        className="w-full px-3 py-2 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-orange-400 print:hidden"
                       />
-                      <p className="font-semibold text-gray-900 dark:text-gray-100 hidden print:block">{trial.service || '(unnamed)'}</p>
+                      <p className="font-semibold text-foreground hidden print:block">{trial.service || '(unnamed)'}</p>
                     </div>
                     <div>
-                      <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Sign-up date</label>
+                      <label className="block text-sm font-medium text-muted-foreground mb-1">Sign-up date</label>
                       <input
                         type="date"
                         value={trial.signupDate}
                         onChange={e => updateTrial(trial.id, 'signupDate', e.target.value)}
-                        className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+                        className="w-full px-3 py-2 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Trial length (days)</label>
+                      <label className="block text-sm font-medium text-muted-foreground mb-1">Trial length (days)</label>
                       <input
                         type="number"
                         inputMode="numeric"
@@ -212,13 +212,13 @@ export default function FreeTrialTracker() {
                         value={trial.trialDays}
                         onChange={e => updateTrial(trial.id, 'trialDays', e.target.value)}
                         placeholder="30"
-                        className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+                        className="w-full px-3 py-2 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
                       />
                     </div>
                     <div>
-                      <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Monthly price if not cancelled</label>
+                      <label className="block text-sm font-medium text-muted-foreground mb-1">Monthly price if not cancelled</label>
                       <div className="relative">
-                        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm">$</span>
+                        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">$</span>
                         <input
                           type="number"
                           inputMode="decimal"
@@ -226,31 +226,31 @@ export default function FreeTrialTracker() {
                           value={trial.monthlyPrice}
                           onChange={e => updateTrial(trial.id, 'monthlyPrice', e.target.value)}
                           placeholder="0"
-                          className="w-full pl-7 pr-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+                          className="w-full pl-7 pr-3 py-2 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
                         />
                       </div>
                     </div>
                     <div>
-                      <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Card used (last 4 digits)</label>
+                      <label className="block text-sm font-medium text-muted-foreground mb-1">Card used (last 4 digits)</label>
                       <input
                         type="text"
                         maxLength={4}
                         value={trial.cardUsed}
                         onChange={e => updateTrial(trial.id, 'cardUsed', e.target.value.replace(/\D/g, '').slice(0, 4))}
                         placeholder="1234"
-                        className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+                        className="w-full px-3 py-2 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
                       />
                     </div>
                   </div>
 
                   <div className="mb-2">
-                    <label className="block text-xs font-medium text-gray-500 dark:text-gray-400 mb-1">Where to cancel</label>
+                    <label className="block text-sm font-medium text-muted-foreground mb-1">Where to cancel</label>
                     <input
                       type="text"
                       value={trial.cancelUrl}
                       onChange={e => updateTrial(trial.id, 'cancelUrl', e.target.value)}
                       placeholder="e.g. netflix.com/account or Settings → your name → Subscriptions"
-                      className="w-full px-3 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
+                      className="w-full px-3 py-2 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-orange-400"
                     />
                   </div>
 
@@ -262,11 +262,11 @@ export default function FreeTrialTracker() {
                       'bg-green-50 dark:bg-green-950/20'
                     }`}>
                       <div className="flex items-center gap-2 flex-wrap">
-                        <Calendar className="w-4 h-4 text-gray-500 flex-shrink-0" />
-                        <span className="text-gray-700 dark:text-gray-300">
+                        <Calendar className="w-4 h-4 text-muted-foreground flex-shrink-0" />
+                        <span className="text-foreground ">
                           Trial ends: <strong>{formatDate(trial.endDate)}</strong>
                         </span>
-                        <span className="text-gray-500">•</span>
+                        <span className="text-muted-foreground">•</span>
                         <span className={`font-semibold ${
                           trial.urgency === 'critical' ? 'text-red-700 dark:text-red-300' :
                           trial.urgency === 'warning' ? 'text-yellow-700 dark:text-yellow-300' :
@@ -287,7 +287,7 @@ export default function FreeTrialTracker() {
           <div className="flex gap-3 mt-4 print:hidden">
             <button
               onClick={addTrial}
-              className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-dashed border-orange-300 dark:border-orange-700 text-orange-600 dark:text-orange-400 hover:bg-orange-50 dark:hover:bg-orange-950/20 transition-colors text-sm font-medium"
+              className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border-2 border-dashed border-warn-foreground/25 text-warn-foreground hover:bg-warn transition-colors text-sm font-medium"
             >
               <Plus className="w-4 h-4" /> Add another trial
             </button>
@@ -299,15 +299,15 @@ export default function FreeTrialTracker() {
             </button>
           </div>
 
-          <div className="mt-5 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-xl p-4 print:hidden">
-            <p className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-1">The #1 rule for free trials</p>
-            <p className="text-sm text-blue-700 dark:text-blue-300">
+          <div className="mt-5 bg-info border border-info-foreground/25 rounded-xl p-4 print:hidden">
+            <p className="text-base font-semibold text-info-foreground mb-1">The #1 rule for free trials</p>
+            <p className="text-base text-info-foreground ">
               The moment you sign up for a free trial, open your calendar and set a reminder 2 days before the trial ends. Mark it "Cancel [service name] before being charged." That 60-second habit will save you money every time.
             </p>
           </div>
 
         </div>
-      </div>
+      </main>
     </>
   );
 }

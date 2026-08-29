@@ -176,8 +176,8 @@ export default function ContactBackupTool() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-cyan-50 dark:bg-cyan-950/30 flex items-center justify-center flex-shrink-0">
-                <Contact className="h-6 w-6 text-cyan-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-info flex items-center justify-center flex-shrink-0">
+                <Contact className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -240,7 +240,7 @@ export default function ContactBackupTool() {
                   {backupSteps.map((step, i) => {
                     const key = `backup-${i}`;
                     return (
-                      <label key={i} className="flex items-start gap-3 text-sm cursor-pointer py-2 px-3 rounded-lg hover:bg-muted/50 transition-colors">
+                      <label key={i} className="flex items-start gap-3 text-base cursor-pointer py-2 px-3 rounded-lg hover:bg-muted/50 transition-colors">
                         <input
                           type="checkbox"
                           checked={completedSteps.has(key)}
@@ -265,10 +265,10 @@ export default function ContactBackupTool() {
                 <CardContent className="pt-6">
                   <div className="flex items-center justify-between">
                     <div className="flex items-start gap-3">
-                      <CheckCircle className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                      <CheckCircle className="h-5 w-5 text-success-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                       <div>
-                        <p className="font-medium text-sm">Verify Your Backup</p>
-                        <p className="text-sm text-muted-foreground mt-1">
+                        <p className="font-medium text-base">Verify Your Backup</p>
+                        <p className="text-base text-muted-foreground mt-1">
                           Visit {verifyLabel} on a computer to confirm all your contacts are there.
                         </p>
                       </div>
@@ -289,16 +289,16 @@ export default function ContactBackupTool() {
               {/* Export contacts */}
               <div className="rounded-2xl border p-6">
                 <button onClick={() => setShowExport(!showExport)} className="flex items-center gap-3 w-full text-left">
-                  <Copy className="h-5 w-5 text-blue-500 flex-shrink-0" aria-hidden="true" />
-                  <span className="font-semibold text-sm flex-1">Export Contacts to a File</span>
+                  <Copy className="h-5 w-5 text-info-foreground flex-shrink-0" aria-hidden="true" />
+                  <span className="font-semibold text-base flex-1">Export Contacts to a File</span>
                   {showExport ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
                 </button>
                 {showExport && (
                   <div className="mt-4 space-y-3">
-                    <p className="text-sm text-muted-foreground">Save a copy of your contacts as a file that you can store on your computer or a USB drive.</p>
+                    <p className="text-base text-muted-foreground">Save a copy of your contacts as a file that you can store on your computer or a USB drive.</p>
                     {exportSteps.map((step, i) => (
                       <div key={i} className="flex gap-3 text-sm">
-                        <span className="flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-950/30 text-blue-700 text-xs flex items-center justify-center font-medium">{i + 1}</span>
+                        <span className="flex-shrink-0 w-5 h-5 rounded-full bg-info text-info-foreground text-xs flex items-center justify-center font-medium">{i + 1}</span>
                         <div>
                           <p className="font-medium">{step.title}</p>
                           <p className="text-muted-foreground">{step.detail}</p>
@@ -312,15 +312,15 @@ export default function ContactBackupTool() {
               {/* Merge duplicates */}
               <div className="rounded-2xl border p-6">
                 <button onClick={() => setShowDuplicates(!showDuplicates)} className="flex items-center gap-3 w-full text-left">
-                  <Users className="h-5 w-5 text-purple-500 flex-shrink-0" aria-hidden="true" />
-                  <span className="font-semibold text-sm flex-1">Fix Duplicate Contacts</span>
+                  <Users className="h-5 w-5 text-primary flex-shrink-0" aria-hidden="true" />
+                  <span className="font-semibold text-base flex-1">Fix Duplicate Contacts</span>
                   {showDuplicates ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
                 </button>
                 {showDuplicates && (
                   <ul className="mt-4 space-y-2">
                     {duplicateTips.map((tip, i) => (
-                      <li key={i} className="flex gap-3 text-sm text-muted-foreground">
-                        <span className="flex-shrink-0 w-5 h-5 rounded-full bg-purple-100 dark:bg-purple-950/30 text-purple-700 text-xs flex items-center justify-center font-medium">{i + 1}</span>
+                      <li key={i} className="flex gap-3 text-base text-muted-foreground">
+                        <span className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 text-primary text-xs flex items-center justify-center font-medium">{i + 1}</span>
                         {tip}
                       </li>
                     ))}
@@ -331,20 +331,20 @@ export default function ContactBackupTool() {
               {/* Emergency recovery */}
               <div className="rounded-2xl border p-6">
                 <button onClick={() => setShowEmergency(!showEmergency)} className="flex items-center gap-3 w-full text-left">
-                  <AlertTriangle className="h-5 w-5 text-red-500 flex-shrink-0" aria-hidden="true" />
-                  <span className="font-semibold text-sm flex-1">I Lost My Contacts — Emergency Recovery</span>
+                  <AlertTriangle className="h-5 w-5 text-danger-foreground flex-shrink-0" aria-hidden="true" />
+                  <span className="font-semibold text-base flex-1">I Lost My Contacts — Emergency Recovery</span>
                   {showEmergency ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
                 </button>
                 {showEmergency && (
                   <div className="mt-4 space-y-4">
                     {emergencyRecoverySteps.map((section, si) => (
                       <div key={si}>
-                        <p className="font-medium text-sm flex items-center gap-2">
-                          <RefreshCw className="h-4 w-4 text-red-500" aria-hidden="true" /> {section.title}
+                        <p className="font-medium text-base flex items-center gap-2">
+                          <RefreshCw className="h-4 w-4 text-danger-foreground" aria-hidden="true" /> {section.title}
                         </p>
                         <ol className="mt-2 space-y-1 pl-6">
                           {section.steps.map((step, i) => (
-                            <li key={i} className="text-sm text-muted-foreground flex gap-2">
+                            <li key={i} className="text-base text-muted-foreground flex gap-2">
                               <span className="font-medium flex-shrink-0">{i + 1}.</span>
                               <span>{step}</span>
                             </li>

@@ -19,7 +19,7 @@ export default function AAADiscountList() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hotel discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most major chains 10% off.</li>
               <li>Hilton, Marriott, Hyatt, IHG, Choice, Best Western.</li>
               <li>Stack with senior discounts.</li>
@@ -32,7 +32,7 @@ export default function AAADiscountList() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Theme parks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Disney, Universal — buy through AAA.</li>
               <li>Six Flags, Cedar Point.</li>
               <li>Aquariums, zoos, museums.</li>
@@ -45,7 +45,7 @@ export default function AAADiscountList() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Restaurants — Outback, Olive Garden, IHOP.</li>
               <li>Tours — group + individual.</li>
               <li>Cruises — discount + onboard credits.</li>
@@ -61,7 +61,7 @@ export default function AAADiscountList() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best AAA value tier</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Classic</strong> — $70-90/yr. 4 free tows/yr (100 mile).</li>
               <li><strong>Plus</strong> — $110/yr. 200-mile tows.</li>
               <li><strong>Premier</strong> — $150/yr. 200-mile tow + extras.</li>
@@ -75,7 +75,7 @@ export default function AAADiscountList() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free DMV services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Many states — register vehicles via AAA.</li>
               <li>Skip DMV lines.</li>
               <li>License renewal.</li>
@@ -89,7 +89,7 @@ export default function AAADiscountList() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth it?</h3>
-            <p className="text-sm text-muted-foreground">If you drive — yes. Membership pays back from one tow + a few hotel stays. AAA Classic = best senior value. Use online or app to check discounts. Free passport photos. Free maps + travel planning. Many seniors keep AAA decades.</p>
+            <p className="text-base text-muted-foreground">If you drive — yes. Membership pays back from one tow + a few hotel stays. AAA Classic = best senior value. Use online or app to check discounts. Free passport photos. Free maps + travel planning. Many seniors keep AAA decades.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function AcidRefluxSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Diet changes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Trigger foods</strong>: spicy, citrus, tomato, chocolate, mint, fried, fatty.</li>
               <li>Caffeine + alcohol worsen.</li>
               <li>Eat smaller portions.</li>
@@ -33,7 +33,7 @@ export default function AcidRefluxSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sleep elevated</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wedge pillow ($30) — elevate upper body.</li>
               <li>Don&apos;t just stack pillows (kinks neck).</li>
               <li>Bed riser at head of bed.</li>
@@ -47,7 +47,7 @@ export default function AcidRefluxSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medications</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Antacids</strong> (Tums, Rolaids) — quick relief.</li>
               <li><strong>H2 blockers</strong> (Pepcid, Zantac) — moderate.</li>
               <li><strong>PPIs</strong> (Prilosec, Nexium) — strongest.</li>
@@ -61,7 +61,7 @@ export default function AcidRefluxSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to see doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heartburn 2+ times/week.</li>
               <li>OTC meds not enough.</li>
               <li>Trouble swallowing.</li>
@@ -77,7 +77,7 @@ export default function AcidRefluxSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lifestyle wins</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lose 5-10 lbs if overweight.</li>
               <li>Quit smoking.</li>
               <li>Reduce stress.</li>
@@ -91,7 +91,7 @@ export default function AcidRefluxSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Long-term GERD = risks</h3>
-            <p className="text-sm text-muted-foreground">Untreated GERD can lead to Barrett&apos;s esophagus (precancer). Esophageal cancer rare but serious. Don&apos;t ignore. Annual check if chronic. Many seniors with GERD lifetime — manage well with right combination of lifestyle + meds.</p>
+            <p className="text-base text-muted-foreground">Untreated GERD can lead to Barrett&apos;s esophagus (precancer). Esophageal cancer rare but serious. Don&apos;t ignore. Annual check if chronic. Many seniors with GERD lifetime — manage well with right combination of lifestyle + meds.</p>
           </CardContent>
         </Card>
       </main>

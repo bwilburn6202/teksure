@@ -31,10 +31,10 @@ export default function PasswordManagerCompare() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function PasswordManagerCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why a password manager</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You only memorize ONE master password.</li>
               <li>Every site gets a unique, random 20-character password.</li>
               <li>If one site gets breached, your other accounts are safe.</li>
@@ -57,7 +57,7 @@ export default function PasswordManagerCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick decision</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Family of 2-6 people, mix of devices</strong> — 1Password Family ($5/mo).</li>
               <li><strong>One person, want it free</strong> — Bitwarden Free.</li>
               <li><strong>All Apple, basic needs</strong> — Apple Passwords (free, built in).</li>
@@ -69,7 +69,7 @@ export default function PasswordManagerCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time setup (15 min)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Pick one. Install on phone + computer.</li>
               <li>Create master password — 4 random words like "BlueTractor-Apple-Window-7". Easy to remember, hard to crack. Write it on paper. Put paper somewhere safe.</li>
               <li>Import old passwords from browser (Chrome, Safari, Firefox export — manager imports).</li>
@@ -83,7 +83,7 @@ export default function PasswordManagerCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Master password</h3>
-            <p className="text-sm text-muted-foreground">If you lose your master password — you lose ALL your passwords. Write it on paper. Sealed envelope. Safe deposit box or fireproof safe. Tell ONE trusted person where it is.</p>
+            <p className="text-base text-muted-foreground">If you lose your master password — you lose ALL your passwords. Write it on paper. Sealed envelope. Safe deposit box or fireproof safe. Tell ONE trusted person where it is.</p>
           </CardContent>
         </Card>
       </main>

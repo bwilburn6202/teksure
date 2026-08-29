@@ -16,10 +16,10 @@ export default function AIHealthQuestions() {
           <p className="text-lg text-muted-foreground">Use safely. Always verify with doctor.</p>
         </div>
 
-        <Card className="mb-4 border-yellow-300">
+        <Card className="mb-4 border-warn-foreground/25">
           <CardContent className="pt-6">
-            <h2 className="font-bold text-xl mb-3 text-yellow-700">Important caveats</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <h2 className="font-bold text-xl mb-3 text-warn-foreground">Important caveats</h2>
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AI isn&apos;t a doctor.</li>
               <li>Don&apos;t trust diagnoses.</li>
               <li>Don&apos;t change medications.</li>
@@ -33,7 +33,7 @@ export default function AIHealthQuestions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Good AI use cases</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Understand a diagnosis.</li>
               <li>Prepare doctor questions.</li>
               <li>Side effect possibilities.</li>
@@ -47,7 +47,7 @@ export default function AIHealthQuestions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pre-doctor visit prep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;What questions should I ask my cardiologist?&quot;</li>
               <li>&quot;What does my A1c result mean?&quot;</li>
               <li>&quot;Help me describe my symptoms accurately.&quot;</li>
@@ -61,7 +61,7 @@ export default function AIHealthQuestions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Symptom research</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t Google diseases (panic).</li>
               <li>AI better — context-aware.</li>
               <li>&quot;What could cause [symptom]?&quot; in moderation.</li>
@@ -75,7 +75,7 @@ export default function AIHealthQuestions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medication questions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Side effects of [medication]?&quot;</li>
               <li>&quot;What does [med] do?&quot;</li>
               <li>&quot;Can I take [med] with food?&quot;</li>
@@ -89,7 +89,7 @@ export default function AIHealthQuestions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trustworthy AI sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ChatGPT</strong> — general questions.</li>
               <li><strong>Claude</strong> — careful with health.</li>
               <li><strong>Google Gemini</strong> — links to sources.</li>
@@ -103,7 +103,7 @@ export default function AIHealthQuestions() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Doctor still essential</h3>
-            <p className="text-sm text-muted-foreground">AI great for: understanding, preparing, asking better questions. AI bad for: diagnosing, prescribing, replacing checkups. New AI tool — Open Evidence, Glass — for medical professionals. Patient-facing AI advancing. But always verify with REAL doctor. AI helps you become better patient, not your own doctor.</p>
+            <p className="text-base text-muted-foreground">AI great for: understanding, preparing, asking better questions. AI bad for: diagnosing, prescribing, replacing checkups. New AI tool — Open Evidence, Glass — for medical professionals. Patient-facing AI advancing. But always verify with REAL doctor. AI helps you become better patient, not your own doctor.</p>
           </CardContent>
         </Card>
       </main>

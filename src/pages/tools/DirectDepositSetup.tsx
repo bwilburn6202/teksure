@@ -19,7 +19,7 @@ export default function DirectDepositSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why direct deposit?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Safer than mailed checks.</li>
               <li>Faster — money same day.</li>
               <li>No lost / stolen checks.</li>
@@ -33,7 +33,7 @@ export default function DirectDepositSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Information needed</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bank name.</li>
               <li>Routing number (9 digits).</li>
               <li>Account number.</li>
@@ -47,7 +47,7 @@ export default function DirectDepositSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up Social Security</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Online — ssa.gov.</li>
               <li>Sign in to my Social Security.</li>
               <li>&quot;Benefits &amp; Payment Details&quot;.</li>
@@ -62,7 +62,7 @@ export default function DirectDepositSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up pensions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Contact pension provider.</li>
               <li>Form usually mailed or online.</li>
               <li>Routing + account info.</li>
@@ -76,7 +76,7 @@ export default function DirectDepositSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up tax refund</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>On tax return — Form 1040.</li>
               <li>Routing + account number lines.</li>
               <li>Choose checking or savings.</li>
@@ -90,7 +90,7 @@ export default function DirectDepositSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Switching banks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t close old account immediately.</li>
               <li>Update direct deposit at all sources.</li>
               <li>Wait 60 days to confirm receipt.</li>
@@ -104,7 +104,7 @@ export default function DirectDepositSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Beware scams</h3>
-            <p className="text-sm text-muted-foreground">SSA + IRS NEVER call to ask for direct deposit info. Never give to caller. Setup only via official websites or in person. If asked by phone — hang up + call back at official number. Most senior bank fraud starts with phone calls. Direct deposit setup is YOUR initiative only.</p>
+            <p className="text-base text-muted-foreground">SSA + IRS NEVER call to ask for direct deposit info. Never give to caller. Setup only via official websites or in person. If asked by phone — hang up + call back at official number. Most senior bank fraud starts with phone calls. Direct deposit setup is YOUR initiative only.</p>
           </CardContent>
         </Card>
       </main>

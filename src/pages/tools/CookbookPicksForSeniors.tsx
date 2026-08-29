@@ -19,7 +19,7 @@ export default function CookbookPicksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Foundational</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Joy of Cooking</strong> — classic, encyclopedic.</li>
               <li><strong>How to Cook Everything</strong> — Mark Bittman.</li>
               <li><strong>The America&apos;s Test Kitchen Cookbook</strong>.</li>
@@ -33,7 +33,7 @@ export default function CookbookPicksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health-focused</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>The Mediterranean Diet Cookbook</strong>.</li>
               <li><strong>The Complete DASH Diet Solution</strong>.</li>
               <li><strong>Forks Over Knives Family</strong>.</li>
@@ -46,7 +46,7 @@ export default function CookbookPicksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior + special diet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Diabetic Cooking</strong> series.</li>
               <li><strong>Heart Healthy Cookbook</strong>.</li>
               <li><strong>Cooking for One</strong> books.</li>
@@ -60,7 +60,7 @@ export default function CookbookPicksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Beautiful + fun</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Smitten Kitchen Every Day</strong>.</li>
               <li><strong>Salt, Fat, Acid, Heat</strong> — Samin Nosrat.</li>
               <li><strong>The Pioneer Woman</strong> — Ree Drummond.</li>
@@ -74,7 +74,7 @@ export default function CookbookPicksForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior favorites</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cook&apos;s Illustrated</strong> magazine.</li>
               <li><strong>Bon Appétit</strong> magazine.</li>
               <li><strong>Senior cooking blogs</strong> — Skinnytaste.</li>
@@ -88,7 +88,7 @@ export default function CookbookPicksForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Family recipes</h3>
-            <p className="text-sm text-muted-foreground">Most precious cookbook = grandma&apos;s. Type up / scan handwritten recipes before lost. Make family cookbook for grandkids — Shutterfly photo book. Capture heritage. Tradition continues.</p>
+            <p className="text-base text-muted-foreground">Most precious cookbook = grandma&apos;s. Type up / scan handwritten recipes before lost. Make family cookbook for grandkids — Shutterfly photo book. Capture heritage. Tradition continues.</p>
           </CardContent>
         </Card>
       </main>

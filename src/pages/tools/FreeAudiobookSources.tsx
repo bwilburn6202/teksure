@@ -19,7 +19,7 @@ export default function FreeAudiobookSources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Library apps (FREE)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Libby</strong> — see /tools/libby-app-for-seniors.</li>
               <li><strong>Hoopla</strong> — different selection, instant.</li>
               <li><strong>OverDrive</strong> — older version (use Libby instead).</li>
@@ -33,7 +33,7 @@ export default function FreeAudiobookSources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">NLS (free for vision/print disability)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>National Library Service for the Blind</strong> — Library of Congress.</li>
               <li>Free audiobooks + Braille.</li>
               <li>Eligible: blind, low vision, reading disability, physical inability to hold book.</li>
@@ -48,7 +48,7 @@ export default function FreeAudiobookSources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Librivox (public domain free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Librivox.org</strong> — volunteer-narrated classics.</li>
               <li>Public domain — Mark Twain, Dickens, Shakespeare, all free.</li>
               <li>Quality varies — some narrators excellent.</li>
@@ -62,7 +62,7 @@ export default function FreeAudiobookSources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Audiobook samplers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Audible free trial</strong> — 30 days + 1 free audiobook.</li>
               <li><strong>Spotify Premium</strong> — now includes 15 hrs/mo audiobook listening (with subscription).</li>
               <li><strong>YouTube</strong> — many full audiobooks (legality varies).</li>
@@ -75,7 +75,7 @@ export default function FreeAudiobookSources() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly listening</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bluetooth speaker for hands-free listening.</li>
               <li>Sleep timer — won&apos;t miss progress if dozing.</li>
               <li>Slow playback (0.75x) for complex books.</li>
@@ -89,7 +89,7 @@ export default function FreeAudiobookSources() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you DO pay for Audible</h3>
-            <p className="text-sm text-muted-foreground">Get $7.95/mo Audible Plus Catalog (cheaper plan, smaller selection but unlimited). Or Audible Premium $14.95/mo with 1 credit + Plus catalog. Cancel anytime — they&apos;ll often offer 50% off to retain. Many seniors don&apos;t need it once they discover free library options.</p>
+            <p className="text-base text-muted-foreground">Get $7.95/mo Audible Plus Catalog (cheaper plan, smaller selection but unlimited). Or Audible Premium $14.95/mo with 1 credit + Plus catalog. Cancel anytime — they&apos;ll often offer 50% off to retain. Many seniors don&apos;t need it once they discover free library options.</p>
           </CardContent>
         </Card>
       </main>

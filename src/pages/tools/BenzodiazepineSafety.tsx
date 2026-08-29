@@ -19,7 +19,7 @@ export default function BenzodiazepineSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common benzos</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Xanax (alprazolam)</strong>.</li>
               <li><strong>Ativan (lorazepam)</strong>.</li>
               <li><strong>Valium (diazepam)</strong>.</li>
@@ -33,7 +33,7 @@ export default function BenzodiazepineSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why dangerous in seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Falls — 50%+ increased risk.</li>
               <li>Hip fractures.</li>
               <li>Confusion + delirium.</li>
@@ -49,7 +49,7 @@ export default function BenzodiazepineSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safer alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Anxiety</strong> — SSRIs (sertraline, citalopram). Slower onset, safer long-term.</li>
               <li><strong>Sleep</strong> — sleep hygiene, melatonin, trazodone.</li>
               <li><strong>CBT-I</strong> — cognitive therapy for insomnia. Free app from VA.</li>
@@ -62,7 +62,7 @@ export default function BenzodiazepineSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If on benzo long-term</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NEVER stop suddenly — withdrawal seizures.</li>
               <li>Doctor must taper slowly (months).</li>
               <li>Some require year+ taper.</li>
@@ -76,7 +76,7 @@ export default function BenzodiazepineSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tell your doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Get pharmacist medication review.</li>
               <li>Ask about Beers Criteria for your meds.</li>
               <li>Consider taper if on benzo long-term.</li>
@@ -90,7 +90,7 @@ export default function BenzodiazepineSafety() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Z-drugs same risks</h3>
-            <p className="text-sm text-muted-foreground"><strong>Ambien (zolpidem)</strong>, <strong>Lunesta</strong>, <strong>Sonata</strong> = same fall + confusion risks. Also avoid in seniors per Beers Criteria. Sleep hygiene + CBT-I = better long-term. Many seniors over-prescribed sleep + anxiety meds. Review.</p>
+            <p className="text-base text-muted-foreground"><strong>Ambien (zolpidem)</strong>, <strong>Lunesta</strong>, <strong>Sonata</strong> = same fall + confusion risks. Also avoid in seniors per Beers Criteria. Sleep hygiene + CBT-I = better long-term. Many seniors over-prescribed sleep + anxiety meds. Review.</p>
           </CardContent>
         </Card>
       </main>

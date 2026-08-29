@@ -31,10 +31,10 @@ export default function FindADoctorApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function FindADoctorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to pick a new doctor</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Start with your insurance\'s "Find a doctor" tool — only see in-network. Saves hundreds in surprise bills.</li>
               <li>Cross-reference with reviews on Healthgrades AND Vitals.com.</li>
               <li>Read 1-star and 3-star reviews — they\'re honest. 5-star reviews are sometimes friends/family.</li>
@@ -58,7 +58,7 @@ export default function FindADoctorApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Specialties most seniors need</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Primary care / internist</strong> — your annual physical, refills.</li>
               <li><strong>Geriatrician</strong> — primary care doctor specifically trained for adults 65+. Worth seeking if available.</li>
               <li><strong>Cardiologist</strong> — heart issues.</li>
@@ -74,7 +74,7 @@ export default function FindADoctorApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best primary care option</h3>
-            <p className="text-sm text-muted-foreground">If available — find a <strong>geriatrician</strong>, a primary care doctor specially trained for adults 65+. They understand polypharmacy, fall risk, dementia, and the differences in how older bodies respond to medication. Limited supply nationally, but worth searching.</p>
+            <p className="text-base text-muted-foreground">If available — find a <strong>geriatrician</strong>, a primary care doctor specially trained for adults 65+. They understand polypharmacy, fall risk, dementia, and the differences in how older bodies respond to medication. Limited supply nationally, but worth searching.</p>
           </CardContent>
         </Card>
       </main>

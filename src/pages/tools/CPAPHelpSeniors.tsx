@@ -19,7 +19,7 @@ export default function CPAPHelpSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Do you have sleep apnea?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Loud snoring most nights.</li>
               <li>Spouse hears you stop breathing.</li>
               <li>Wake gasping or choking.</li>
@@ -34,7 +34,7 @@ export default function CPAPHelpSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get diagnosed</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ask doctor for sleep study referral.</li>
               <li>Home sleep test usually fine ($150-300).</li>
               <li>Medicare covers with diagnosis.</li>
@@ -47,7 +47,7 @@ export default function CPAPHelpSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mask types</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Nasal pillow</strong> — small, light. Good if mouth-breather + chinstrap.</li>
               <li><strong>Nasal mask</strong> — covers nose. Most popular.</li>
               <li><strong>Full-face</strong> — nose + mouth. Best for mouth breathers.</li>
@@ -60,7 +60,7 @@ export default function CPAPHelpSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cleaning + care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wipe mask cushion daily with mild soap.</li>
               <li>Wash mask + tubing weekly.</li>
               <li>Replace mask cushion monthly.</li>
@@ -75,7 +75,7 @@ export default function CPAPHelpSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common problems</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Dry mouth</strong> — increase humidifier setting.</li>
               <li><strong>Mask leak</strong> — try different size/type.</li>
               <li><strong>Aerophagia (gas)</strong> — pressure too high. Doctor adjust.</li>
@@ -89,7 +89,7 @@ export default function CPAPHelpSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>cpap.com</strong> — supplies + advice. <strong>Reddit r/CPAP</strong> — active community. <strong>Sleep Foundation</strong> — sleepfoundation.org. Free. Medicare Part B covers CPAP rental, becomes yours after 13 months.</p>
+            <p className="text-base text-muted-foreground"><strong>cpap.com</strong> — supplies + advice. <strong>Reddit r/CPAP</strong> — active community. <strong>Sleep Foundation</strong> — sleepfoundation.org. Free. Medicare Part B covers CPAP rental, becomes yours after 13 months.</p>
           </CardContent>
         </Card>
       </main>

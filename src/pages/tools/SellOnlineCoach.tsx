@@ -32,10 +32,10 @@ export default function SellOnlineCoach() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base mb-1">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function SellOnlineCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5 things every listing needs</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li><strong>Clear photos</strong> — daylight, plain background, multiple angles.</li>
               <li><strong>Honest description</strong> — note flaws clearly. "Small scratch on left side" beats a return.</li>
               <li><strong>Realistic price</strong> — search what similar items SOLD for (not what they\'re listed at).</li>
@@ -57,7 +57,7 @@ export default function SellOnlineCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid scams when selling</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cash for in-person pickup</strong> — best. Meet in public; bring a friend. (See our Marketplace Safety guide.)</li>
               <li><strong>Don\'t accept checks or money orders</strong> — almost always fake.</li>
               <li><strong>Use the platform\'s payment system</strong> — eBay, Poshmark, Mercari handle the money. Don\'t agree to "PayPal Friends and Family" with strangers.</li>
@@ -70,14 +70,14 @@ export default function SellOnlineCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tax tip</h2>
-            <p className="text-sm">If you sell over $5,000 (2024) or $600 (2025+ proposed) in a year, platforms send you a 1099-K. Personal items sold for less than you bought them aren\'t taxable, but you may still need to report. Save your selling records all year — date, item, sale price, what you originally paid.</p>
+            <p className="text-base">If you sell over $5,000 (2024) or $600 (2025+ proposed) in a year, platforms send you a 1099-K. Personal items sold for less than you bought them aren\'t taxable, but you may still need to report. Save your selling records all year — date, item, sale price, what you originally paid.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground"><strong>Big items / furniture</strong> → Facebook Marketplace.<br /><strong>Old phones, DVDs, books</strong> → Decluttr.<br /><strong>Anything else worth $50+</strong> → eBay.<br /><strong>Clothes</strong> → Poshmark.<br /><strong>Free or low-value</strong> → Nextdoor "free" pile.</p>
+            <p className="text-base text-muted-foreground"><strong>Big items / furniture</strong> → Facebook Marketplace.<br /><strong>Old phones, DVDs, books</strong> → Decluttr.<br /><strong>Anything else worth $50+</strong> → eBay.<br /><strong>Clothes</strong> → Poshmark.<br /><strong>Free or low-value</strong> → Nextdoor "free" pile.</p>
           </CardContent>
         </Card>
       </main>

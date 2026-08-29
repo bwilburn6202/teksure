@@ -19,7 +19,7 @@ export default function SpanishSpeakingSupport() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Major company Spanish hotlines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Spanish</strong> — 1-800-MY-APPLE press 4 for Spanish.</li>
               <li><strong>Microsoft Spanish</strong> — 1-800-936-5900 + Spanish option.</li>
               <li><strong>Comcast/Xfinity Spanish</strong> — 1-855-765-8961.</li>
@@ -34,7 +34,7 @@ export default function SpanishSpeakingSupport() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spanish-language help organizations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AARP en Español</strong> — aarp.org/espanol. Articles, tools.</li>
               <li><strong>Senior Planet en Español</strong> — free senior tech classes online.</li>
               <li><strong>Latinas Aging Services</strong> — local communities offer Spanish tech help.</li>
@@ -47,7 +47,7 @@ export default function SpanishSpeakingSupport() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone in Spanish</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → General → Language &amp; Region → iPhone Language → Spanish.</li>
               <li>Phone restarts in Spanish.</li>
               <li>Siri also speaks Spanish.</li>
@@ -60,7 +60,7 @@ export default function SpanishSpeakingSupport() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real-time translation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Translate</strong> — built-in. Voice + camera + conversation.</li>
               <li><strong>Google Translate</strong> — free. Camera translates signs in real-time.</li>
               <li><strong>iPhone Live Captions</strong> — auto-captions any audio in Spanish (and translates).</li>
@@ -72,7 +72,7 @@ export default function SpanishSpeakingSupport() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Para abuelos</h3>
-            <p className="text-sm text-muted-foreground">Si su abuelo o abuela necesita ayuda con el teléfono — los recursos de arriba están en español. AARP en Español es excelente. Su biblioteca local probablemente tiene voluntarios bilingües. ¡Pregunte!</p>
+            <p className="text-base text-muted-foreground">Si su abuelo o abuela necesita ayuda con el teléfono — los recursos de arriba están en español. AARP en Español es excelente. Su biblioteca local probablemente tiene voluntarios bilingües. ¡Pregunte!</p>
           </CardContent>
         </Card>
       </main>

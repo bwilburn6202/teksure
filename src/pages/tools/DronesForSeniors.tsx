@@ -29,10 +29,10 @@ export default function DronesForSeniors() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -41,7 +41,7 @@ export default function DronesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior-friendly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Modern drones FLY THEMSELVES.</li>
               <li>GPS hover means hands-off easy.</li>
               <li>Auto-return to home if low battery.</li>
@@ -55,7 +55,7 @@ export default function DronesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">FAA rules (important)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drones over 250g — register with FAA ($5).</li>
               <li>Take TRUST test online (free) — required for all.</li>
               <li>Don&apos;t fly above 400 feet.</li>
@@ -70,7 +70,7 @@ export default function DronesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First flight</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Take TRUST test first.</li>
               <li>Open field, no people.</li>
               <li>No wind first time.</li>
@@ -85,7 +85,7 @@ export default function DronesForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior uses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Real estate photography (paid hobby).</li>
               <li>Family event aerial shots.</li>
               <li>Wedding photography.</li>
@@ -100,7 +100,7 @@ export default function DronesForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Drone clubs</h3>
-            <p className="text-sm text-muted-foreground">Many local drone clubs welcome seniors. Group flights, photo competitions, training. Find via AMA (Academy of Model Aeronautics). Mature crowd, lots of retired engineers. Great social hobby. Drone hobby + photography = perfect retirement combination for tech-curious seniors.</p>
+            <p className="text-base text-muted-foreground">Many local drone clubs welcome seniors. Group flights, photo competitions, training. Find via AMA (Academy of Model Aeronautics). Mature crowd, lots of retired engineers. Great social hobby. Drone hobby + photography = perfect retirement combination for tech-curious seniors.</p>
           </CardContent>
         </Card>
       </main>

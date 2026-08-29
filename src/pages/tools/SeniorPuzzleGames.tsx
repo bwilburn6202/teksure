@@ -22,7 +22,7 @@ export default function SeniorPuzzleGames() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Magic Jigsaw Puzzles</h2><p>FREE. 30,000+ puzzles. Beautiful art. No mess to clean up.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mahjong</h2><p>Many free apps. Match tiles. Calming and challenging.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Word search</h2><p>Search &ldquo;word search&rdquo; in app store. Many free options. Big-text versions for low vision.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 15 minutes of puzzles daily linked to slower memory decline. Real benefit.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 15 minutes of puzzles daily linked to slower memory decline. Real benefit.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

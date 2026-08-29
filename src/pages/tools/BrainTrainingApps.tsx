@@ -28,14 +28,14 @@ export default function BrainTrainingApps() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Honest take</h2>
-            <p className="text-sm">Brain games make you better at the games. Whether they prevent dementia is debated. What\'s NOT debated:</p>
-            <ul className="text-sm list-disc pl-5 mt-2">
+            <p className="text-base">Brain games make you better at the games. Whether they prevent dementia is debated. What\'s NOT debated:</p>
+            <ul className="text-base list-disc pl-5 mt-2">
               <li><strong>Physical exercise</strong> is the #1 dementia-prevention activity, full stop.</li>
               <li><strong>Social engagement</strong> (talking to people) is #2.</li>
               <li><strong>Sleep</strong> matters more than puzzles.</li>
               <li><strong>Learning something genuinely new</strong> (a language, an instrument) outperforms apps.</li>
             </ul>
-            <p className="text-sm mt-2">That said — brain games are fun, low-stakes, and probably help. Pick what you enjoy.</p>
+            <p className="text-base mt-2">That said — brain games are fun, low-stakes, and probably help. Pick what you enjoy.</p>
           </CardContent>
         </Card>
 
@@ -45,10 +45,10 @@ export default function BrainTrainingApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -57,7 +57,7 @@ export default function BrainTrainingApps() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free options that work great</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Wordle</strong> — free at nytimes.com.</li>
               <li><strong>Connections</strong> — free at nytimes.com.</li>
               <li><strong>Sudoku.com</strong> — free, ad-supported.</li>
@@ -71,7 +71,7 @@ export default function BrainTrainingApps() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Things that beat any app</h3>
-            <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
+            <ul className="list-disc pl-5 space-y-1 text-base text-muted-foreground">
               <li>Daily 30-minute walk.</li>
               <li>Phone call with a friend.</li>
               <li>Cooking from a new recipe.</li>

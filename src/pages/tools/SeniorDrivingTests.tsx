@@ -19,7 +19,7 @@ export default function SeniorDrivingTests() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Refresher courses</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AARP Smart Driver</strong> — 6-hour online course $20-30. Insurance discount in most states.</li>
               <li><strong>AAA RoadWise Driver</strong> — similar. Senior-focused.</li>
               <li><strong>State-sponsored courses</strong> — many free for 55+.</li>
@@ -32,7 +32,7 @@ export default function SeniorDrivingTests() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Self-evaluation signs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family makes nervous comments about your driving.</li>
               <li>Multiple recent fender-benders or close calls.</li>
               <li>Get lost on familiar routes.</li>
@@ -49,7 +49,7 @@ export default function SeniorDrivingTests() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Professional evaluations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>OT-trained Driver Rehabilitation Specialist (CDRS)</strong> — comprehensive assessment $200-500. Find at aded.net.</li>
               <li><strong>Driving evaluation by physician</strong> — sometimes covered by insurance.</li>
               <li><strong>Cognitive testing</strong> — ask doctor about MoCA test.</li>
@@ -61,7 +61,7 @@ export default function SeniorDrivingTests() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Adaptations to extend driving</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pedal extender</strong> ($40-80) — for shorter people.</li>
               <li><strong>Steering wheel cover</strong> for grip.</li>
               <li><strong>Seat cushion / wedge</strong> for visibility.</li>
@@ -73,11 +73,11 @@ export default function SeniorDrivingTests() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to stop driving</h2>
-            <p className="text-sm">Hard conversation. Things to consider:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Hard conversation. Things to consider:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Doctor recommends.</li>
               <li>Family + you both honestly say it&apos;s time.</li>
               <li>Can&apos;t drive at night safely.</li>
@@ -91,7 +91,7 @@ export default function SeniorDrivingTests() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">After driving — keep mobility</h3>
-            <p className="text-sm text-muted-foreground">Stopping driving doesn&apos;t mean isolation. See /tools/rideshare-for-seniors. Many Medicare Advantage plans include free rides. Senior centers run shuttle programs. Family can help. Don&apos;t equate "no car" with "no life".</p>
+            <p className="text-base text-muted-foreground">Stopping driving doesn&apos;t mean isolation. See /tools/rideshare-for-seniors. Many Medicare Advantage plans include free rides. Senior centers run shuttle programs. Family can help. Don&apos;t equate "no car" with "no life".</p>
           </CardContent>
         </Card>
       </main>

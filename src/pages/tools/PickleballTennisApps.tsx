@@ -32,10 +32,10 @@ export default function PickleballTennisApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function PickleballTennisApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to play</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Local senior centers</strong> — most have FREE pickleball drop-in.</li>
               <li><strong>YMCAs</strong> — affordable; good lessons.</li>
               <li><strong>Park & Rec dept</strong> — free outdoor courts in many cities.</li>
@@ -57,7 +57,7 @@ export default function PickleballTennisApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior leagues</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Senior Games</strong> — yearly state and national. (50+ for many; nationals at 50/55+.)</li>
               <li><strong>USTA Senior Tennis</strong> — leagues by age (40s, 50s, 60s, 70s, 80+).</li>
               <li><strong>USAPA Pickleball Senior Open</strong> — annual national.</li>
@@ -68,7 +68,7 @@ export default function PickleballTennisApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Health benefit</h3>
-            <p className="text-sm text-muted-foreground">Pickleball is the fastest-growing sport in the US, dominated by 55+. Cardio, balance, social, easy on joints. Three doubles games burn 300-500 calories AND give you new friends. Joining a local group changes lives.</p>
+            <p className="text-base text-muted-foreground">Pickleball is the fastest-growing sport in the US, dominated by 55+. Cardio, balance, social, easy on joints. Three doubles games burn 300-500 calories AND give you new friends. Joining a local group changes lives.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorRMDApp() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Auto-RMD</h2><p>Set up automatic RMD payments at your brokerage. Never miss again.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Roth IRAs</h2><p>NO RMDs ever during your lifetime. Big advantage of Roth.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">QCD strategy</h2><p>Direct RMD to charity (up to $100,000). Counts as RMD without taxable income.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Take RMD in January, not December. Less stress, more tax-planning time.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Take RMD in January, not December. Less stress, more tax-planning time.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

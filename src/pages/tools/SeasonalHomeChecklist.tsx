@@ -19,7 +19,7 @@ export default function SeasonalHomeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spring (March-May)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Service HVAC.</li>
               <li>Clean gutters.</li>
               <li>Check roof for winter damage.</li>
@@ -34,7 +34,7 @@ export default function SeasonalHomeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Summer (June-Aug)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Replace air filter monthly.</li>
               <li>Clean ceiling fans.</li>
               <li>Check window AC seals.</li>
@@ -49,7 +49,7 @@ export default function SeasonalHomeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fall (Sept-Nov)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Service heating system.</li>
               <li>Clean gutters AGAIN.</li>
               <li>Drain outdoor faucets.</li>
@@ -64,7 +64,7 @@ export default function SeasonalHomeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Winter (Dec-Feb)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Run faucets in cold (prevent freeze).</li>
               <li>Check roof for ice dams.</li>
               <li>Salt walkways early.</li>
@@ -79,7 +79,7 @@ export default function SeasonalHomeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Monthly all year</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Test smoke + CO detectors.</li>
               <li>Check air filter.</li>
               <li>Run garbage disposal w/ ice.</li>
@@ -93,7 +93,7 @@ export default function SeasonalHomeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Yearly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Termite + pest inspection.</li>
               <li>Septic / sewer pumping.</li>
               <li>Chimney sweep.</li>
@@ -107,7 +107,7 @@ export default function SeasonalHomeChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hire help</h3>
-            <p className="text-sm text-muted-foreground">Many tasks too risky / hard for seniors — gutter cleaning ($150), HVAC service ($150), chimney sweep ($300), tree trimming ($500). Worth hiring. Ask family. Local handyman services. Senior-friendly handymen often discounted. Don&apos;t risk falls. Schedule yearly with family help. Check Nextdoor for trusted local pros.</p>
+            <p className="text-base text-muted-foreground">Many tasks too risky / hard for seniors — gutter cleaning ($150), HVAC service ($150), chimney sweep ($300), tree trimming ($500). Worth hiring. Ask family. Local handyman services. Senior-friendly handymen often discounted. Don&apos;t risk falls. Schedule yearly with family help. Check Nextdoor for trusted local pros.</p>
           </CardContent>
         </Card>
       </main>

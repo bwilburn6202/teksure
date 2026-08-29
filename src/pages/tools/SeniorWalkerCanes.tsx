@@ -22,7 +22,7 @@ export default function SeniorWalkerCanes() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Quad cane</h2><p>$30. 4 feet. More stability than single cane.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare</h2><p>Covered with doctor prescription. Part B covers 80%.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Right size</h2><p>Handle at wrist height when arm hanging. Shorter = bad posture.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Try one before buying. Senior centers often loan equipment.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Try one before buying. Senior centers often loan equipment.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

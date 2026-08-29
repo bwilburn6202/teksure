@@ -168,7 +168,7 @@ export default function AppPermissions() {
 
             {/* Platform picker */}
             <div>
-              <p className="text-sm text-muted-foreground mb-3 font-medium">Select your device to see instructions tailored to you:</p>
+              <p className="text-base text-muted-foreground mb-3 font-medium">Select your device to see instructions tailored to you:</p>
               <div className="flex flex-wrap gap-2">
                 {platforms.map(p => (
                   <button
@@ -185,7 +185,7 @@ export default function AppPermissions() {
                 ))}
               </div>
               {!platform && (
-                <p className="text-xs text-muted-foreground mt-2 flex items-center gap-1">
+                <p className="text-sm text-muted-foreground mt-2 flex items-center gap-1">
                   <Info className="h-3 w-3" /> Select a device above to see step-by-step instructions for each permission.
                 </p>
               )}
@@ -228,7 +228,7 @@ export default function AppPermissions() {
                             >
                               <div className="flex items-start gap-2">
                                 <CheckCircle2 className="h-4 w-4 text-primary shrink-0 mt-0.5" />
-                                <p className="text-sm"><span className="font-medium">Rule: </span>{perm.rule}</p>
+                                <p className="text-base"><span className="font-medium">Rule: </span>{perm.rule}</p>
                               </div>
                               {platform && (
                                 <div>
@@ -237,13 +237,13 @@ export default function AppPermissions() {
                                   </p>
                                   <ol className="space-y-1.5 list-decimal list-inside">
                                     {perm.steps[platform].map((step, si) => (
-                                      <li key={si} className="text-sm text-foreground/80">{step}</li>
+                                      <li key={si} className="text-base text-foreground/80">{step}</li>
                                     ))}
                                   </ol>
                                 </div>
                               )}
                               {!platform && (
-                                <p className="text-xs text-muted-foreground flex items-center gap-1">
+                                <p className="text-sm text-muted-foreground flex items-center gap-1">
                                   <Info className="h-3 w-3" /> Select your device above to see step-by-step instructions.
                                 </p>
                               )}
@@ -262,8 +262,8 @@ export default function AppPermissions() {
               <CardContent className="p-5 flex items-start gap-3">
                 <Shield className="h-5 w-5 text-[hsl(var(--teksure-success))] shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-sm mb-1">Quick audit tip</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="font-semibold text-base mb-1">Quick audit tip</p>
+                  <p className="text-base text-muted-foreground">
                     Start with the <strong>High Risk</strong> permissions — Location, Camera, and Microphone. Spend 5 minutes reviewing those three, and you'll significantly reduce your privacy exposure.
                   </p>
                 </div>

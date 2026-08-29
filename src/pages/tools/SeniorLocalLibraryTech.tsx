@@ -22,7 +22,7 @@ export default function SeniorLocalLibraryTech() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hotspot lending</h2><p>Many libraries lend Wi-Fi hotspots. Take home for free internet 1-2 weeks.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free ebooks/audiobooks</h2><p>Libby and Hoopla apps. All free with library card.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Computer access</h2><p>Free computer use for hours. Print for $0.10/page.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Visit your library this week. Most seniors don&apos;t realize how much is free.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Visit your library this week. Most seniors don&apos;t realize how much is free.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

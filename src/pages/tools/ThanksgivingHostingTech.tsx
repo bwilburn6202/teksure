@@ -19,7 +19,7 @@ export default function ThanksgivingHostingTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recipe + meal planning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NYT Cooking</strong> — Thanksgiving guide.</li>
               <li><strong>AllRecipes app</strong> — voice search.</li>
               <li><strong>Yummly</strong> — meal planning.</li>
@@ -33,7 +33,7 @@ export default function ThanksgivingHostingTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Grocery delivery</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Instacart</strong> — Costco, Safeway, more.</li>
               <li><strong>Amazon Fresh / Whole Foods</strong>.</li>
               <li><strong>Walmart Plus</strong>.</li>
@@ -47,7 +47,7 @@ export default function ThanksgivingHostingTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cooking timing apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Turkey timer apps</strong> — calculate by weight.</li>
               <li><strong>Multiple kitchen timers</strong> — Alexa, Google.</li>
               <li>Ask Alexa: &quot;set turkey timer 4 hours&quot;.</li>
@@ -61,7 +61,7 @@ export default function ThanksgivingHostingTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Connect family far away</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FaceTime / Zoom during dinner.</li>
               <li>Set up tablet at table.</li>
               <li>Pre-test camera + audio.</li>
@@ -75,7 +75,7 @@ export default function ThanksgivingHostingTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart home help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Hey Alexa — Thanksgiving playlist.&quot;</li>
               <li>&quot;Add cranberry sauce to grocery list.&quot;</li>
               <li>&quot;What temperature for turkey?&quot;</li>
@@ -89,7 +89,7 @@ export default function ThanksgivingHostingTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After the meal</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photo all the family.</li>
               <li>Share on family group chat.</li>
               <li>Send leftovers home — Tupperware photos.</li>
@@ -103,7 +103,7 @@ export default function ThanksgivingHostingTech() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cyber Monday next</h3>
-            <p className="text-sm text-muted-foreground">Use Thanksgiving evening for Cyber Monday early-bird deals. Make Christmas list now. Order before December rush. Black Friday online safer than store crowds. AARP + Senior partner discounts kick in. Holiday joy = stress reduction tools.</p>
+            <p className="text-base text-muted-foreground">Use Thanksgiving evening for Cyber Monday early-bird deals. Make Christmas list now. Order before December rush. Black Friday online safer than store crowds. AARP + Senior partner discounts kick in. Holiday joy = stress reduction tools.</p>
           </CardContent>
         </Card>
       </main>

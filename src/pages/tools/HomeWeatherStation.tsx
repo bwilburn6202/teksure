@@ -30,10 +30,10 @@ export default function HomeWeatherStation() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function HomeWeatherStation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why a home station beats apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hyperlocal</strong> — phone weather might be 10 miles away. Your mountain or the lake creates microclimates.</li>
               <li><strong>Lightning warning</strong> — Tempest detects strikes within minutes.</li>
               <li><strong>Rain accumulation</strong> — for gardening, water restrictions.</li>
@@ -56,7 +56,7 @@ export default function HomeWeatherStation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup tips</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Mount in OPEN area — not next to house wall (heats up unequally).</li>
               <li>Rain gauge needs clear sky above (no overhang).</li>
               <li>Wind reading needs unobstructed view.</li>
@@ -68,7 +68,7 @@ export default function HomeWeatherStation() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For pure pleasure</h3>
-            <p className="text-sm text-muted-foreground">A home weather station is one of those toys that brings simple joy. Watching real-time data from your yard. Comparing your high temp to neighbors. Tracking rain through a season. If you garden, sail, ski, or fly drones — surprisingly satisfying.</p>
+            <p className="text-base text-muted-foreground">A home weather station is one of those toys that brings simple joy. Watching real-time data from your yard. Comparing your high temp to neighbors. Tracking rain through a season. If you garden, sail, ski, or fly drones — surprisingly satisfying.</p>
           </CardContent>
         </Card>
       </main>

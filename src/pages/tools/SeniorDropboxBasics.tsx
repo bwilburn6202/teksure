@@ -22,7 +22,7 @@ export default function SeniorDropboxBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Auto-sync</h2><p>Save to Dropbox folder. All devices sync automatically.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family share</h2><p>Share folder with family. They add files. You see them.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Alternatives</h2><p>WeTransfer free for one-time big sends. Google Drive does the same.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Use Dropbox for sharing large videos. Apple Mail rejects 25 MB+.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Use Dropbox for sharing large videos. Apple Mail rejects 25 MB+.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

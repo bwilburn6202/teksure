@@ -19,7 +19,7 @@ export default function MetronomeTunerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why every musician needs these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Metronome keeps you on time — like a steady drum.</li>
               <li>Tuner ensures instrument sounds right.</li>
               <li>No more borrowed or expensive devices.</li>
@@ -33,7 +33,7 @@ export default function MetronomeTunerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best free metronomes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pro Metronome — most popular, free with ads.</li>
               <li>Soundbrenner Metronome — beautiful interface, free.</li>
               <li>Metronome Beats — simple + reliable.</li>
@@ -47,7 +47,7 @@ export default function MetronomeTunerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best free tuners</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>GuitarTuna — guitar, ukulele, bass, violin.</li>
               <li>Most accurate free tuner available.</li>
               <li>BOSS Tuner — pro-quality, free.</li>
@@ -61,7 +61,7 @@ export default function MetronomeTunerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to tune your guitar</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open GuitarTuna — point phone toward guitar.</li>
               <li>Pluck the lowest (thickest) string.</li>
               <li>App shows current note + target.</li>
@@ -75,7 +75,7 @@ export default function MetronomeTunerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Using a metronome</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Start slow — 60 BPM (beats per minute).</li>
               <li>Tap or click on each beat.</li>
               <li>Speed up gradually as you get comfortable.</li>
@@ -89,7 +89,7 @@ export default function MetronomeTunerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other useful music apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ultimate Guitar — chord library, tabs for thousands of songs.</li>
               <li>Anytune — slow down songs to learn parts.</li>
               <li>Chordify — auto-detect chords in any song.</li>
@@ -103,7 +103,7 @@ export default function MetronomeTunerApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">GuitarTuna for tuning, Pro Metronome for time</h3>
-            <p className="text-sm text-muted-foreground">If you play guitar, ukulele, or any string instrument: download GuitarTuna (free). It&apos;s replaced the need for $30 clip-on tuners for most players. For metronome, Pro Metronome (free) does everything you need. Both apps would have cost $50+ in dedicated devices a decade ago. Now they&apos;re free in your pocket.</p>
+            <p className="text-base text-muted-foreground">If you play guitar, ukulele, or any string instrument: download GuitarTuna (free). It&apos;s replaced the need for $30 clip-on tuners for most players. For metronome, Pro Metronome (free) does everything you need. Both apps would have cost $50+ in dedicated devices a decade ago. Now they&apos;re free in your pocket.</p>
           </CardContent>
         </Card>
       </main>

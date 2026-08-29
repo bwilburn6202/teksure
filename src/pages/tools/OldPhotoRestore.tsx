@@ -19,21 +19,21 @@ export default function OldPhotoRestore() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What modern apps can do</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Sharpen blurry photos.</li>
               <li>Fix scratches, water spots, and torn corners.</li>
               <li>Add realistic color to black-and-white photos.</li>
               <li>Brighten faded photos.</li>
               <li>Remove people you don't want in the photo (or fix one closed eye).</li>
             </ul>
-            <p className="text-sm mt-2">All from a snapshot you take of the original photo with your phone.</p>
+            <p className="text-base mt-2">All from a snapshot you take of the original photo with your phone.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 1 — Get a clean photo of the photo</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Lay the old photo flat on a table near a window — daylight is best, no flash.</li>
               <li>Hold your phone directly over the photo (not at an angle).</li>
               <li>Take the picture. Or — even better — use the free <strong>"PhotoScan by Google Photos"</strong> app. It does the lining-up automatically and removes glare.</li>
@@ -48,23 +48,23 @@ export default function OldPhotoRestore() {
             <div className="space-y-3">
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">Google Photos (free, built in)</p>
-                <p className="text-sm text-muted-foreground">Open the photo → tap "Edit" → tap "Tools" → "Photo Unblur" or "Colorize". Works well, no extra app.</p>
+                <p className="text-base text-muted-foreground">Open the photo → tap "Edit" → tap "Tools" → "Photo Unblur" or "Colorize". Works well, no extra app.</p>
               </div>
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">Remini (free with limits)</p>
-                <p className="text-sm text-muted-foreground">Famous for sharpening blurry old photos. Free with a daily limit and a "watch ad" option for more.</p>
+                <p className="text-base text-muted-foreground">Famous for sharpening blurry old photos. Free with a daily limit and a "watch ad" option for more.</p>
               </div>
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">MyHeritage In Color</p>
-                <p className="text-sm text-muted-foreground">Adds color to black-and-white photos. Free for a few photos; paid plan for unlimited.</p>
+                <p className="text-base text-muted-foreground">Adds color to black-and-white photos. Free for a few photos; paid plan for unlimited.</p>
               </div>
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">Apple Photos (built in to iPhone/Mac)</p>
-                <p className="text-sm text-muted-foreground">Edit → tap the wand. Modern iPhones automatically improve faded photos.</p>
+                <p className="text-base text-muted-foreground">Edit → tap the wand. Modern iPhones automatically improve faded photos.</p>
               </div>
               <div className="border-l-4 border-primary pl-3">
                 <p className="font-bold">Photomyne</p>
-                <p className="text-sm text-muted-foreground">Scans multiple old photos at once (great for an album). Then you can colorize and enhance.</p>
+                <p className="text-base text-muted-foreground">Scans multiple old photos at once (great for an album). Then you can colorize and enhance.</p>
               </div>
             </div>
           </CardContent>
@@ -73,7 +73,7 @@ export default function OldPhotoRestore() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 3 — Save and share</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Save BOTH the original and the restored version. AI restoration is impressive but not always 100% accurate to the real moment.</li>
               <li>Back up to Google Photos or iCloud — that way grandkids will see them too.</li>
               <li>Print the restored version. Walgreens, CVS, and Walmart all have $0.30 photo prints. Many offer free same-day pickup if you order from their app.</li>
@@ -84,20 +84,20 @@ export default function OldPhotoRestore() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For BIG batches — let the pros do it</h2>
-            <p className="text-sm mb-2">Got a shoebox of 500 old photos? Send them out:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Got a shoebox of 500 old photos? Send them out:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Legacybox</strong> — mail in photos, slides, VHS tapes; they digitize everything.</li>
               <li><strong>ScanCafe</strong> — competing service, often cheaper.</li>
               <li><strong>Local options</strong> — Costco, FedEx Office, and many camera stores offer scanning.</li>
             </ul>
-            <p className="text-sm mt-2">Look for sales — Black Friday and Mother's Day usually have 40-60% off promotions.</p>
+            <p className="text-base mt-2">Look for sales — Black Friday and Mother's Day usually have 40-60% off promotions.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Privacy note</h3>
-            <p className="text-sm text-muted-foreground">When you upload a photo to an AI app, the app's company can see it. Don't upload photos with sensitive content (driver's license info, medical records) to free apps. For family photos, it's generally fine — but read the app's privacy policy if you're unsure.</p>
+            <p className="text-base text-muted-foreground">When you upload a photo to an AI app, the app's company can see it. Don't upload photos with sensitive content (driver's license info, medical records) to free apps. For family photos, it's generally fine — but read the app's privacy policy if you're unsure.</p>
           </CardContent>
         </Card>
       </main>

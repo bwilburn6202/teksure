@@ -231,7 +231,7 @@ export default function ChildAppSafetyChecker() {
                   </Button>
                 </div>
                 <div className="mt-3 flex flex-wrap gap-2">
-                  <p className="text-xs text-muted-foreground w-full">Try one of these:</p>
+                  <p className="text-sm text-muted-foreground w-full">Try one of these:</p>
                   {['TikTok', 'Roblox', 'YouTube', 'Minecraft', 'Discord', 'Snapchat', 'Duolingo'].map((app) => (
                     <button
                       key={app}
@@ -280,7 +280,7 @@ export default function ChildAppSafetyChecker() {
 
                   <div className="mb-4">
                     <h3 className="font-semibold mb-1">What to know</h3>
-                    <p className="text-sm text-muted-foreground">{result.notes}</p>
+                    <p className="text-base text-muted-foreground">{result.notes}</p>
                   </div>
 
                   <div className="bg-background/60 rounded-lg p-4 border">
@@ -288,7 +288,7 @@ export default function ChildAppSafetyChecker() {
                       <Shield className="h-4 w-4 text-primary" />
                       Parental control steps
                     </h3>
-                    <p className="text-sm text-muted-foreground">{result.parentalControls}</p>
+                    <p className="text-base text-muted-foreground">{result.parentalControls}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -297,9 +297,9 @@ export default function ChildAppSafetyChecker() {
             {notFound && (
               <Card className="border-2">
                 <CardContent className="p-6 text-center">
-                  <AlertTriangle className="h-10 w-10 text-amber-500 mx-auto mb-3" />
+                  <AlertTriangle className="h-10 w-10 text-warn-foreground mx-auto mb-3" />
                   <h2 className="font-bold text-lg mb-2">App not in our database</h2>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-base text-muted-foreground mb-4">
                     We do not have information on "{query}" yet. You can look it up on Common Sense
                     Media, which reviews thousands of apps and games for families.
                   </p>
@@ -317,30 +317,30 @@ export default function ChildAppSafetyChecker() {
             <Card>
               <CardContent className="p-6">
                 <h2 className="font-bold text-lg mb-3">General tips for any app</h2>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground">
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" />
                     <span>Download and use the app yourself before letting your child install it.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" />
                     <span>On iPhone: Settings → Screen Time → Content & Privacy Restrictions lets you approve all app downloads.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" />
                     <span>On Android: Google Family Link can approve downloads, set screen time, and review activity.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" />
                     <span>Set up purchases to require your approval — most app stores have this in family settings.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-600 mt-0.5 shrink-0" />
+                    <CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" />
                     <span>Have an open conversation about what to do if something feels wrong or uncomfortable online.</span>
                   </li>
                 </ul>
                 <div className="mt-4 pt-4 border-t">
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     For comprehensive app reviews:{' '}
                     <a href="https://www.commonsensemedia.org" target="_blank" rel="noopener noreferrer" className="text-primary underline">
                       Common Sense Media

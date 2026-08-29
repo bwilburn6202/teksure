@@ -20,7 +20,7 @@ export default function CharityVettingTool() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Two things to check</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Is the charity real and IRS-registered? (Or is it a fake using a similar name?)</li>
               <li>How much of your dollar actually reaches people in need? (Some charities spend 80% on overhead.)</li>
             </ol>
@@ -33,22 +33,22 @@ export default function CharityVettingTool() {
             <div className="space-y-3">
               <div>
                 <p className="font-bold">Charity Navigator (charitynavigator.org)</p>
-                <p className="text-sm text-muted-foreground mb-2">The biggest free rating site. Stars (1-4) based on financial efficiency, accountability, and impact.</p>
+                <p className="text-base text-muted-foreground mb-2">The biggest free rating site. Stars (1-4) based on financial efficiency, accountability, and impact.</p>
                 <Button asChild variant="outline" size="sm"><a href="https://www.charitynavigator.org" target="_blank" rel="noopener noreferrer">Look up a charity <ExternalLink className="w-3 h-3 ml-1" /></a></Button>
               </div>
               <div>
                 <p className="font-bold">CharityWatch (charitywatch.org)</p>
-                <p className="text-sm text-muted-foreground mb-2">Tougher grades (A through F). Focuses on what % goes to programs vs. fundraising.</p>
+                <p className="text-base text-muted-foreground mb-2">Tougher grades (A through F). Focuses on what % goes to programs vs. fundraising.</p>
                 <Button asChild variant="outline" size="sm"><a href="https://www.charitywatch.org" target="_blank" rel="noopener noreferrer">Look up a charity <ExternalLink className="w-3 h-3 ml-1" /></a></Button>
               </div>
               <div>
                 <p className="font-bold">GuideStar / Candid (candid.org)</p>
-                <p className="text-sm text-muted-foreground mb-2">Free profile of every IRS-registered nonprofit. Shows tax filings.</p>
+                <p className="text-base text-muted-foreground mb-2">Free profile of every IRS-registered nonprofit. Shows tax filings.</p>
                 <Button asChild variant="outline" size="sm"><a href="https://candid.org" target="_blank" rel="noopener noreferrer">Look up a charity <ExternalLink className="w-3 h-3 ml-1" /></a></Button>
               </div>
               <div>
                 <p className="font-bold">IRS Tax Exempt Organization Search</p>
-                <p className="text-sm text-muted-foreground mb-2">Confirms a charity is real and donations are tax-deductible.</p>
+                <p className="text-base text-muted-foreground mb-2">Confirms a charity is real and donations are tax-deductible.</p>
                 <Button asChild variant="outline" size="sm"><a href="https://apps.irs.gov/app/eos/" target="_blank" rel="noopener noreferrer">IRS lookup <ExternalLink className="w-3 h-3 ml-1" /></a></Button>
               </div>
             </div>
@@ -58,7 +58,7 @@ export default function CharityVettingTool() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Name sounds almost like a famous one.</strong> "American Red Cross Foundation Inc." (the real one is just "American Red Cross"). Scammers copy famous names.</li>
               <li><strong>High-pressure phone calls.</strong> "Send your donation TONIGHT to help fire victims." Real charities give you time.</li>
               <li><strong>Vague mission.</strong> "To help children" — but who, where, how?</li>
@@ -73,7 +73,7 @@ export default function CharityVettingTool() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to give safely</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Type the charity's full website yourself — don't click a link in an email.</li>
               <li>Donate through their site, not a third-party "donation aggregator".</li>
               <li>Use a credit card — chargeback protection if it's a scam.</li>
@@ -86,7 +86,7 @@ export default function CharityVettingTool() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">A note on overhead</h3>
-            <p className="text-sm text-muted-foreground">Don't penalize a charity for "high overhead" alone. A small charity may spend more on administration just because of fixed costs. The questions to ask: Is the work effective? Are programs reaching real people? Charity Navigator's "Impact" score gets at this better than overhead alone.</p>
+            <p className="text-base text-muted-foreground">Don't penalize a charity for "high overhead" alone. A small charity may spend more on administration just because of fixed costs. The questions to ask: Is the work effective? Are programs reaching real people? Charity Navigator's "Impact" score gets at this better than overhead alone.</p>
           </CardContent>
         </Card>
       </main>

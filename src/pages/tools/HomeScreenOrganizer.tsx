@@ -29,7 +29,7 @@ export default function HomeScreenOrganizer() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3"> Make a folder</h3>
-                <ol className="list-decimal pl-5 space-y-1 text-sm">
+                <ol className="list-decimal pl-5 space-y-1 text-base">
                   <li>Press and hold any app — wait until everything wiggles.</li>
                   <li>Drag the app on top of another app. They merge into a folder.</li>
                   <li>Tap the folder name and rename it ("Banking", "Health", "Family").</li>
@@ -41,20 +41,20 @@ export default function HomeScreenOrganizer() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3"> Add a widget</h3>
-                <ol className="list-decimal pl-5 space-y-1 text-sm">
+                <ol className="list-decimal pl-5 space-y-1 text-base">
                   <li>Long-press the home screen until apps wiggle.</li>
                   <li>Tap the "+" in the top left.</li>
                   <li>Pick a widget — Weather, Calendar, Photos, Battery, Reminders.</li>
                   <li>Pick the size (small, medium, large).</li>
                   <li>Tap "Add Widget" and place it.</li>
                 </ol>
-                <p className="text-sm mt-2 text-muted-foreground">Useful widgets for seniors: Weather (current temp big and clear), Calendar (today\'s appointments), Battery (so you never get stranded with a dead phone), Photos (random family photo daily).</p>
+                <p className="text-base mt-2 text-muted-foreground">Useful widgets for seniors: Weather (current temp big and clear), Calendar (today\'s appointments), Battery (so you never get stranded with a dead phone), Photos (random family photo daily).</p>
               </CardContent>
             </Card>
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3"> Hide apps you never use</h3>
-                <ol className="list-decimal pl-5 space-y-1 text-sm">
+                <ol className="list-decimal pl-5 space-y-1 text-base">
                   <li>Long-press an app → "Remove App" → "Move to App Library".</li>
                   <li>It\'s removed from the home screen but still installed (in App Library).</li>
                   <li>To find it later — swipe right on the home screen all the way → search.</li>
@@ -69,7 +69,7 @@ export default function HomeScreenOrganizer() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3"> Make a folder</h3>
-                <ol className="list-decimal pl-5 space-y-1 text-sm">
+                <ol className="list-decimal pl-5 space-y-1 text-base">
                   <li>Press and hold an app icon.</li>
                   <li>Drag it on top of another app.</li>
                   <li>A folder appears with both apps.</li>
@@ -80,7 +80,7 @@ export default function HomeScreenOrganizer() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3"> Add a widget</h3>
-                <ol className="list-decimal pl-5 space-y-1 text-sm">
+                <ol className="list-decimal pl-5 space-y-1 text-base">
                   <li>Long-press an empty area of the home screen.</li>
                   <li>Tap "Widgets".</li>
                   <li>Scroll through the list — Weather, Clock, Photos, Calendar.</li>
@@ -91,7 +91,7 @@ export default function HomeScreenOrganizer() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3"> Remove unused apps</h3>
-                <ol className="list-decimal pl-5 space-y-1 text-sm">
+                <ol className="list-decimal pl-5 space-y-1 text-base">
                   <li>Long-press app → "Uninstall" (removes completely) or "Remove" (just hides from home screen, still in app drawer).</li>
                   <li>For pre-installed bloatware that won\'t uninstall: Settings → Apps → tap the app → "Disable".</li>
                 </ol>
@@ -103,8 +103,8 @@ export default function HomeScreenOrganizer() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Suggested layout for seniors</h2>
-            <p className="text-sm mb-2">A simple home screen most seniors love:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">A simple home screen most seniors love:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Bottom dock</strong> (4 apps): Phone, Messages, Camera, Mail.</li>
               <li><strong>Top of page 1:</strong> Weather widget, Calendar widget.</li>
               <li><strong>Page 1 apps:</strong> Maps, Photos, FaceTime/WhatsApp, Settings, Banking app, Pharmacy app, Notes.</li>
@@ -117,7 +117,7 @@ export default function HomeScreenOrganizer() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Photos of your family on the lock screen</h3>
-            <p className="text-sm text-muted-foreground">Both iPhone and Android let you set the background to a rotating album of family photos. Hugely cheerful — every glance shows a grandkid. iPhone: Settings → Wallpaper → "Photo Shuffle". Android: Wallpapers → "Featured photos".</p>
+            <p className="text-base text-muted-foreground">Both iPhone and Android let you set the background to a rotating album of family photos. Hugely cheerful — every glance shows a grandkid. iPhone: Settings → Wallpaper → "Photo Shuffle". Android: Wallpapers → "Featured photos".</p>
           </CardContent>
         </Card>
       </main>

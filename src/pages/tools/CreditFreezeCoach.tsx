@@ -26,16 +26,16 @@ export default function CreditFreezeCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What is a credit freeze?</h2>
-            <p className="text-sm mb-2">It locks your credit reports so no one — not even you — can open a new loan, credit card, or account in your name without first un-freezing.</p>
-            <p className="text-sm mb-2"><strong>It does NOT:</strong> stop you from using current cards, lower your credit score, or cost any money. It's free by federal law.</p>
-            <p className="text-sm"><strong>It DOES:</strong> stop nearly all "someone opened a credit card in my name" identity theft. The FTC and AARP both recommend it.</p>
+            <p className="text-base mb-2">It locks your credit reports so no one — not even you — can open a new loan, credit card, or account in your name without first un-freezing.</p>
+            <p className="text-base mb-2"><strong>It does NOT:</strong> stop you from using current cards, lower your credit score, or cost any money. It's free by federal law.</p>
+            <p className="text-base"><strong>It DOES:</strong> stop nearly all "someone opened a credit card in my name" identity theft. The FTC and AARP both recommend it.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you'll need first</h2>
-            <ul className="text-sm space-y-1 list-disc pl-5">
+            <ul className="text-base space-y-1 list-disc pl-5">
               <li>Your full name, address, date of birth, Social Security number</li>
               <li>An email address (and access to it)</li>
               <li>30 minutes — about 10 minutes per bureau</li>
@@ -53,7 +53,7 @@ export default function CreditFreezeCoach() {
                   <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold shrink-0">{i + 1}</div>
                   <div className="flex-1">
                     <h3 className="font-bold text-lg">{b.name}</h3>
-                    <p className="text-sm text-muted-foreground">Sign up for an account, verify your identity, then click "Place a freeze".</p>
+                    <p className="text-base text-muted-foreground">Sign up for an account, verify your identity, then click "Place a freeze".</p>
                   </div>
                 </div>
                 <div className="grid sm:grid-cols-2 gap-2">
@@ -68,7 +68,7 @@ export default function CreditFreezeCoach() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you need a loan or credit card later</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Ask the lender which bureau they pull from (most pull just one).</li>
               <li>Go to that bureau's website or call them.</li>
               <li>Sign in with the username and PIN you saved.</li>
@@ -78,13 +78,13 @@ export default function CreditFreezeCoach() {
           </CardContent>
         </Card>
 
-        <Card className="bg-green-50 border-green-300 dark:bg-green-950/20 dark:border-green-800">
+        <Card className="bg-success border-success-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
+              <CheckCircle2 className="w-6 h-6 text-success-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Bonus protection — also free</h3>
-                <p className="text-sm text-muted-foreground">Sign up for <strong>USPS Informed Delivery</strong> at informeddelivery.usps.com. It emails you photos of mail before it arrives — so you'll know if a thief steals letters from your mailbox (Medicare cards, tax forms, etc.).</p>
+                <p className="text-base text-muted-foreground">Sign up for <strong>USPS Informed Delivery</strong> at informeddelivery.usps.com. It emails you photos of mail before it arrives — so you'll know if a thief steals letters from your mailbox (Medicare cards, tax forms, etc.).</p>
               </div>
             </div>
           </CardContent>

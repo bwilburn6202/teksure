@@ -22,7 +22,7 @@ export default function SeniorFaceTimeBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Call Android too</h2><p>Newer iPhones can call Android via FaceTime link. Tap &ldquo;Create Link&rdquo; and text it.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Group calls</h2><p>Up to 32 people. Great for family holidays.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Captions</h2><p>Settings → Accessibility → Live Captions. Read what&apos;s being said in real time.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set up your iPad with FaceTime — bigger screen makes faces easier to see.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set up your iPad with FaceTime — bigger screen makes faces easier to see.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

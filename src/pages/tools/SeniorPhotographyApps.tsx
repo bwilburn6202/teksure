@@ -19,10 +19,10 @@ export default function SeniorPhotographyApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip the camera</h2><p>iPhone Pro takes magazine-quality photos. Skip $1,000 cameras.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">VSCO</h2><p>FREE. Best free editing app. Beautiful filters.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Snapseed (Google)</h2><p>FREE. Google&apos;s editor. Magic eraser to remove tourists.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior tips</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Tap to focus</li><li>Hold steady</li><li>Use grid (rule of thirds)</li><li>Avoid digital zoom</li><li>Golden hour (sunset)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior tips</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Tap to focus</li><li>Hold steady</li><li>Use grid (rule of thirds)</li><li>Avoid digital zoom</li><li>Golden hour (sunset)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Print favorites</h2><p>Shutterfly. Mixbook. Print 12 best photos year. Hang.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Photography classes</h2><p>Senior centers free. Lifelong learning courses online.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: A $20 phone tripod transforms senior photography. Steady = sharp.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: A $20 phone tripod transforms senior photography. Steady = sharp.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

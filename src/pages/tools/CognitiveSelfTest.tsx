@@ -19,14 +19,14 @@ export default function CognitiveSelfTest() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What SAGE is</h2>
-            <p className="text-sm">The Self-Administered Gerocognitive Examination — a free, validated test from Ohio State University. Used by tens of thousands of doctors. Catches early signs of cognitive impairment that lead to dementia. NOT a diagnosis — but flags whether you should see a doctor.</p>
+            <p className="text-base">The Self-Administered Gerocognitive Examination — a free, validated test from Ohio State University. Used by tens of thousands of doctors. Catches early signs of cognitive impairment that lead to dementia. NOT a diagnosis — but flags whether you should see a doctor.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to take it</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Forgetting things more than usual.</li>
               <li>Family is concerned.</li>
               <li>Repeating yourself.</li>
@@ -40,21 +40,21 @@ export default function CognitiveSelfTest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to take it</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>sagetest.osu.edu</strong> and download the free PDF (4 different versions).</li>
               <li>Print it. You\'ll need a pen and a quiet 10-15 minutes.</li>
               <li>NO time pressure. Take as long as you need.</li>
               <li>Don\'t look up answers, don\'t use a calculator.</li>
               <li>When done, give the paper to your doctor at your next visit. Or you can score it yourself using the answer key — but the doctor\'s read is what matters.</li>
             </ol>
-            <p className="text-sm mt-3 bg-muted/50 p-3 rounded">Score 17+ out of 22 = normal. 15-16 = mild concern. Below 15 = should be evaluated. NOT a final answer; just a starting conversation.</p>
+            <p className="text-base mt-3 bg-muted/50 p-3 rounded">Score 17+ out of 22 = normal. 15-16 = mild concern. Below 15 = should be evaluated. NOT a final answer; just a starting conversation.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other free options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mini-Cog</strong> — your doctor can do it in 3 minutes. Just ask at your next visit.</li>
               <li><strong>BrainTest (paid app, $30)</strong> — at-home tablet test. Mixed reviews.</li>
               <li><strong>Annual wellness visit</strong> — Medicare covers a free yearly cognitive screening as part of your annual wellness check. Most patients don\'t know to ask. Ask: "Can we do a cognitive screening today?"</li>
@@ -62,14 +62,14 @@ export default function CognitiveSelfTest() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <AlertTriangle className="w-6 h-6 text-yellow-700 dark:text-yellow-400 shrink-0" />
+              <AlertTriangle className="w-6 h-6 text-warn-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">If results concern you</h3>
-                <p className="text-sm">Many things mimic dementia and are FIXABLE: medications, depression, B12 deficiency, thyroid, sleep apnea, even hearing loss. See your primary doctor first. Get bloodwork. Then if needed, ask for a neurology referral.</p>
-                <p className="text-sm mt-2">Early intervention matters. New treatments (lecanemab, donanemab) work better the earlier they start. Don\'t put off a doctor visit out of fear.</p>
+                <p className="text-base">Many things mimic dementia and are FIXABLE: medications, depression, B12 deficiency, thyroid, sleep apnea, even hearing loss. See your primary doctor first. Get bloodwork. Then if needed, ask for a neurology referral.</p>
+                <p className="text-base mt-2">Early intervention matters. New treatments (lecanemab, donanemab) work better the earlier they start. Don\'t put off a doctor visit out of fear.</p>
               </div>
             </div>
           </CardContent>
@@ -78,7 +78,7 @@ export default function CognitiveSelfTest() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best dementia prevention isn&apos;t apps</h3>
-            <p className="text-sm text-muted-foreground">Daily walks, social engagement, learning a language, treating high BP and diabetes, sleeping well, treating hearing loss. The data on these is much stronger than on brain-training apps.</p>
+            <p className="text-base text-muted-foreground">Daily walks, social engagement, learning a language, treating high BP and diabetes, sleeping well, treating hearing loss. The data on these is much stronger than on brain-training apps.</p>
           </CardContent>
         </Card>
       </main>

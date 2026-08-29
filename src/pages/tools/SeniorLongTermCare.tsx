@@ -22,7 +22,7 @@ export default function SeniorLongTermCare() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hybrid policies</h2><p>Life insurance + long-term care. Less use-it-or-lose-it.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicaid for nursing home</h2><p>Covers nursing home if you spend down assets. Plan 5+ years ahead with elder law attorney.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Genworth Cost of Care</h2><p>FREE. genworth.com. Estimates costs in your specific state.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Even self-paying for 2 years of care wipes out average retirement savings.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Even self-paying for 2 years of care wipes out average retirement savings.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

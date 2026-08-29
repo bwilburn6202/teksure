@@ -19,7 +19,7 @@ export default function GuardianshipVsConservatorship() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Definitions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Guardianship</strong> — court-appointed person makes PERSONAL decisions (where to live, healthcare).</li>
               <li><strong>Conservatorship</strong> — court-appointed person manages FINANCES.</li>
               <li>Some states use one term for both, others split.</li>
@@ -33,7 +33,7 @@ export default function GuardianshipVsConservatorship() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why families need this</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Parent has dementia, no POA done in time.</li>
               <li>Parent making dangerous financial decisions.</li>
               <li>Falling for scams repeatedly.</li>
@@ -48,7 +48,7 @@ export default function GuardianshipVsConservatorship() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid if possible</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cost</strong> — $5,000-15,000 attorney fees, ongoing.</li>
               <li><strong>Time</strong> — 6-12 months process.</li>
               <li><strong>Public</strong> — court records.</li>
@@ -63,7 +63,7 @@ export default function GuardianshipVsConservatorship() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Process overview</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>File petition in elder&apos;s county court.</li>
               <li>Doctor evaluation of incapacity.</li>
               <li>Notice to all family members.</li>
@@ -79,7 +79,7 @@ export default function GuardianshipVsConservatorship() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Less restrictive alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>POA</strong> — if before incapacity (best).</li>
               <li><strong>Trust + trustee</strong> — manages assets without court.</li>
               <li><strong>Joint bank accounts</strong> — limited but useful.</li>
@@ -94,7 +94,7 @@ export default function GuardianshipVsConservatorship() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For families considering</h3>
-            <p className="text-sm text-muted-foreground">Consult elder law attorney FIRST — many alternatives. National Academy of Elder Law Attorneys (NAELA) finds qualified ones. Britney Spears case made &quot;conservatorship&quot; controversial — court oversight critical to prevent abuse. <strong>Justice in Aging</strong> — free legal help for low-income seniors.</p>
+            <p className="text-base text-muted-foreground">Consult elder law attorney FIRST — many alternatives. National Academy of Elder Law Attorneys (NAELA) finds qualified ones. Britney Spears case made &quot;conservatorship&quot; controversial — court oversight critical to prevent abuse. <strong>Justice in Aging</strong> — free legal help for low-income seniors.</p>
           </CardContent>
         </Card>
       </main>

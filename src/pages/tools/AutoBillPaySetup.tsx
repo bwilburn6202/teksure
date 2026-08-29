@@ -19,7 +19,7 @@ export default function AutoBillPaySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why auto-pay</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Never late = better credit score.</li>
               <li>Avoids late fees ($25-100/missed).</li>
               <li>One less thing to remember.</li>
@@ -33,7 +33,7 @@ export default function AutoBillPaySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">2 ways to set up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Through bank&apos;s bill pay</strong> — bank sends payment. Easiest to control.</li>
               <li><strong>Through company website</strong> — they pull from bank. More automatic.</li>
               <li>Mix both — pick what works per bill.</li>
@@ -44,7 +44,7 @@ export default function AutoBillPaySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to auto-pay</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>FIXED bills</strong> — same every month. Mortgage, car loan, insurance.</li>
               <li><strong>Subscriptions</strong> — Netflix, Hulu, Costco.</li>
               <li><strong>Internet, phone, cable</strong> — same monthly.</li>
@@ -58,7 +58,7 @@ export default function AutoBillPaySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Variable bill caution</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Electric, gas, water — changes monthly.</li>
               <li>Set MAXIMUM cap with bank.</li>
               <li>Or get email notice each month with amount, then auto-pay.</li>
@@ -71,7 +71,7 @@ export default function AutoBillPaySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety + control</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use ONE checking account for all auto-payments.</li>
               <li>Keep 1.5-2x monthly bills as cushion.</li>
               <li>Email notifications for every payment.</li>
@@ -85,7 +85,7 @@ export default function AutoBillPaySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you&apos;re hospitalized</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bills keep getting paid.</li>
               <li>Trusted family member with Power of Attorney can manage.</li>
               <li>List of all auto-payments somewhere safe.</li>
@@ -98,7 +98,7 @@ export default function AutoBillPaySetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Bill list document</h3>
-            <p className="text-sm text-muted-foreground">Keep ONE document listing all auto-pays: company name, account #, monthly cost, bank account used, due date. Share with spouse + POA. Update yearly. Critical if you become incapacitated. Stored in secure but accessible location.</p>
+            <p className="text-base text-muted-foreground">Keep ONE document listing all auto-pays: company name, account #, monthly cost, bank account used, due date. Share with spouse + POA. Update yearly. Critical if you become incapacitated. Stored in secure but accessible location.</p>
           </CardContent>
         </Card>
       </main>

@@ -55,20 +55,20 @@ export default function HoardingDownsizingPlan() {
   const doneCount = rooms.filter(r => r.status === "Done").length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Senior Downsizing Plan | TekSure" description="A compassionate room-by-room downsizing plan for older adults. Three short notes per room — keep, gift, donate. No judgment. No deadlines." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Boxes className="h-7 w-7 text-orange-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Downsizing Plan</h1>
+            <Boxes className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Downsizing Plan</h1>
           </div>
-          <p className="text-gray-600 text-lg">A gentle room-by-room plan. The hardest part is starting. Pick one room. Spend 90 minutes. Stop. Repeat next week.</p>
+          <p className="text-muted-foreground text-lg">A gentle room-by-room plan. The hardest part is starting. Pick one room. Spend 90 minutes. Stop. Repeat next week.</p>
         </div>
 
-        <Card className="mb-4 bg-orange-50 border-orange-200">
+        <Card className="mb-4 bg-warn border-warn-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-orange-900"><span className="font-semibold">{doneCount} of {rooms.length} rooms done.</span> The goal is not to finish in a weekend. The goal is to make a decision about each thing in each room, one item at a time, without rushing yourself. A senior move manager (NASMM.org) charges $50-$125/hr if you want a calm professional helping.</p>
+            <p className="text-base text-warn-foreground"><span className="font-semibold">{doneCount} of {rooms.length} rooms done.</span> The goal is not to finish in a weekend. The goal is to make a decision about each thing in each room, one item at a time, without rushing yourself. A senior move manager (NASMM.org) charges $50-$125/hr if you want a calm professional helping.</p>
           </CardContent>
         </Card>
 
@@ -76,7 +76,7 @@ export default function HoardingDownsizingPlan() {
           <Card key={r.name} className="mb-3">
             <CardContent className="py-4 px-4">
               <div className="flex items-center justify-between mb-2">
-                <h2 className="text-xl font-bold text-gray-900">{r.name}</h2>
+                <h2 className="text-xl font-bold text-foreground">{r.name}</h2>
                 <Button
                   variant="outline"
                   size="sm"
@@ -89,15 +89,15 @@ export default function HoardingDownsizingPlan() {
               </div>
               <div className="space-y-2">
                 <div>
-                  <label className="text-xs font-semibold text-emerald-700">KEEP</label>
+                  <label className="text-sm font-semibold text-success-foreground">KEEP</label>
                   <Input value={r.keepNote} onChange={e => updateRoom(i, "keepNote", e.target.value)} placeholder="What you want to keep" />
                 </div>
                 <div>
-                  <label className="text-xs font-semibold text-blue-700">GIFT to family or friends</label>
+                  <label className="text-sm font-semibold text-info-foreground">GIFT to family or friends</label>
                   <Input value={r.giftNote} onChange={e => updateRoom(i, "giftNote", e.target.value)} placeholder="The blue china to Sarah, the toolset to John" />
                 </div>
                 <div>
-                  <label className="text-xs font-semibold text-amber-700">DONATE / SELL / RECYCLE</label>
+                  <label className="text-sm font-semibold text-warn-foreground">DONATE / SELL / RECYCLE</label>
                   <Input value={r.donateNote} onChange={e => updateRoom(i, "donateNote", e.target.value)} placeholder="Salvation Army, estate sale, recycling" />
                 </div>
               </div>
@@ -105,9 +105,9 @@ export default function HoardingDownsizingPlan() {
           </Card>
         ))}
 
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">For very sentimental items you cannot keep:</span> photograph each one, write 1-2 sentences about it, and save it in a "memory book". You keep the meaning. The object can go to someone who will use it.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">For very sentimental items you cannot keep:</span> photograph each one, write 1-2 sentences about it, and save it in a "memory book". You keep the meaning. The object can go to someone who will use it.</p>
           </CardContent>
         </Card>
 
@@ -117,6 +117,6 @@ export default function HoardingDownsizingPlan() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

@@ -22,7 +22,7 @@ export default function SeniorAffordableConnectivity() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Spectrum Internet Assist</h2><p>$15/month. SSI or SNAP needed. 30 Mbps.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">T-Mobile Home Internet</h2><p>$50/month. No contracts. 5G home internet. Often beats cable.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Library hotspot</h2><p>FREE. Many libraries lend Wi-Fi hotspots 1-2 weeks.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Apply for Lifeline first. Free $10/month off any provider.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Apply for Lifeline first. Free $10/month off any provider.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

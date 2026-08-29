@@ -20,9 +20,9 @@ export default function SeniorWasherDryerApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">LG ThinQ</h2><p>Same. Diagnostic mode helps the repairman.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">GE Profile</h2><p>UltraFresh vent system reduces mold. Sends alerts to phone.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip smart, use timer</h2><p>$15 plug-in timer + Alexa = same alert without expensive appliances.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior-friendly features</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Big buttons</li><li>Auto-detect load size</li><li>Front-load (no bending into top)</li><li>Pedestal for easier loading</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior-friendly features</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Big buttons</li><li>Auto-detect load size</li><li>Front-load (no bending into top)</li><li>Pedestal for easier loading</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Detergent dispenser</h2><p>Holds 30+ loads of detergent. No measuring each time.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: A pedestal under the front-loader saves your back. Worth the $200.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: A pedestal under the front-loader saves your back. Worth the $200.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorReadingGlasses() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Multiple pairs</h2><p>Keep pairs in: bedroom, kitchen, car, living room, bathroom. Always handy.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bigger frames</h2><p>Larger frames easier to find. Less likely to misplace.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Strap or chain</h2><p>$5. Hangs from neck. Never &ldquo;where are my glasses?&rdquo; again.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Eye exam every 2 years. Prescription changes faster as we age.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Eye exam every 2 years. Prescription changes faster as we age.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

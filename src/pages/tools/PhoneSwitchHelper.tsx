@@ -29,7 +29,7 @@ export default function PhoneSwitchHelper() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Before you begin</h3>
-                <ul className="list-disc pl-5 space-y-1 text-sm">
+                <ul className="list-disc pl-5 space-y-1 text-base">
                   <li>Both phones charged at least 50% (or plugged in).</li>
                   <li>Wi-Fi available — the transfer is large.</li>
                   <li>Allow about an hour. Don't transfer at bedtime.</li>
@@ -41,7 +41,7 @@ export default function PhoneSwitchHelper() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Use Apple's "Move to iOS" app — free</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>On your Android, install <strong>Move to iOS</strong> from the Play Store.</li>
                   <li>Turn on the new iPhone. Follow setup until you reach <strong>"Apps & Data"</strong>.</li>
                   <li>Tap <strong>"Move Data from Android"</strong>.</li>
@@ -57,7 +57,7 @@ export default function PhoneSwitchHelper() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">After it's done</h3>
-                <ul className="list-disc pl-5 space-y-1 text-sm">
+                <ul className="list-disc pl-5 space-y-1 text-base">
                   <li><strong>Re-buy any paid Android apps</strong> — they don't transfer. iPhone has its own versions.</li>
                   <li><strong>WhatsApp</strong> — newer versions can transfer your chat history during this process. If yours didn't, open WhatsApp on iPhone first; it'll prompt you.</li>
                   <li><strong>Music and audiobooks</strong> — move via the Apple Music app or your purchased account on Spotify/Audible.</li>
@@ -73,7 +73,7 @@ export default function PhoneSwitchHelper() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Before you begin</h3>
-                <ul className="list-disc pl-5 space-y-1 text-sm">
+                <ul className="list-disc pl-5 space-y-1 text-base">
                   <li><strong>VERY important — turn off iMessage on the iPhone first</strong>. Otherwise your texts may keep going to Apple servers and you won't get them on Android. Settings → Messages → iMessage OFF. Also Settings → FaceTime → OFF.</li>
                   <li>If you've already given up the iPhone, go to <a href="https://selfsolve.apple.com/deregister-imessage" target="_blank" rel="noopener noreferrer" className="text-primary underline">selfsolve.apple.com/deregister-imessage</a> and enter your phone number to deregister.</li>
                   <li>Charge both phones. Get on Wi-Fi.</li>
@@ -84,7 +84,7 @@ export default function PhoneSwitchHelper() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Best path — use a USB cable</h3>
-                <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <ol className="list-decimal pl-5 space-y-2 text-base">
                   <li>Turn on the new Android. When it asks "Copy data?" — say YES.</li>
                   <li>Choose "From an iPhone" or "iCloud" or "From a Cable".</li>
                   <li>Connect the two phones with the cable that came in the box (or use a Lightning-to-USB-C adapter).</li>
@@ -98,7 +98,7 @@ export default function PhoneSwitchHelper() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Easier paths if cables don't work</h3>
-                <ul className="list-disc pl-5 space-y-2 text-sm">
+                <ul className="list-disc pl-5 space-y-2 text-base">
                   <li><strong>Photos:</strong> Install Google Photos on the iPhone. Sign in. Let it back up everything. On Android, sign in to the same Google account — photos appear.</li>
                   <li><strong>Contacts:</strong> On iPhone: Settings → Contacts → Accounts → Add Google account → turn on Contacts. iPhone uploads them. New Android with same Google account already has them.</li>
                   <li><strong>Calendar:</strong> Same as contacts — sync with Google Calendar.</li>
@@ -112,7 +112,7 @@ export default function PhoneSwitchHelper() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If something doesn't transfer</h3>
-            <p className="text-sm text-muted-foreground">Don't panic. Both Apple and Google have free phone support. Apple: 1-800-MY-APPLE. Google Pixel: 1-855-836-3987. They walk you through it patiently.</p>
+            <p className="text-base text-muted-foreground">Don't panic. Both Apple and Google have free phone support. Apple: 1-800-MY-APPLE. Google Pixel: 1-855-836-3987. They walk you through it patiently.</p>
           </CardContent>
         </Card>
       </main>

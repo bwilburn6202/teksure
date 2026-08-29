@@ -22,8 +22,8 @@ export default function PigButcheringDefense() {
               <AlertTriangle className="w-6 h-6 text-destructive shrink-0" />
               <div>
                 <h2 className="font-bold mb-1">Why the strange name?</h2>
-                <p className="text-sm">It's the literal Mandarin term scammers use — "fattening the pig before slaughter". They befriend you for weeks or months, build trust, then "introduce" a magical investment app. You see your fake balance grow. When you try to cash out — gone.</p>
-                <p className="text-sm mt-2">The FBI says Americans lost over <strong>$5 billion</strong> to this scam in 2024 alone.</p>
+                <p className="text-base">It's the literal Mandarin term scammers use — "fattening the pig before slaughter". They befriend you for weeks or months, build trust, then "introduce" a magical investment app. You see your fake balance grow. When you try to cash out — gone.</p>
+                <p className="text-base mt-2">The FBI says Americans lost over <strong>$5 billion</strong> to this scam in 2024 alone.</p>
               </div>
             </div>
           </CardContent>
@@ -32,7 +32,7 @@ export default function PigButcheringDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it always starts</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>A "wrong number" text. <em>"Hi Karen, are we still on for dinner Saturday?"</em> You reply, "Wrong number." They apologize and chat — friendly, attractive, successful.</li>
               <li>Or — a stranger DMs you on Facebook, Instagram, LinkedIn, or a dating app.</li>
               <li>You start chatting daily. Weeks pass. They never ask for money. They send food photos, complain about work, ask about your day.</li>
@@ -48,7 +48,7 @@ export default function PigButcheringDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stranger you've never met in person teaches you about money or investing.</li>
               <li>"Investment app" you've never heard of — not Fidelity, Schwab, Vanguard, or a real bank.</li>
               <li>App requires depositing crypto (Bitcoin, Tether/USDT) instead of dollars.</li>
@@ -60,12 +60,12 @@ export default function PigButcheringDefense() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The bedrock rule</h2>
-            <p className="text-sm mb-2">Don't take investment advice from anyone you've only met online. Ever.</p>
-            <p className="text-sm">If you want to invest, talk to:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Don't take investment advice from anyone you've only met online. Ever.</p>
+            <p className="text-base">If you want to invest, talk to:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>A fee-only fiduciary financial advisor (search NAPFA.org for one near you).</li>
               <li>Vanguard, Fidelity, or Schwab — real, regulated US firms with phone support.</li>
               <li>Your bank's wealth advisor — even if you don't use them, they\'ll explain real options.</li>
@@ -76,7 +76,7 @@ export default function PigButcheringDefense() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you've already sent money</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Stop. Don\'t send the "tax payment" or "withdrawal fee". It's the same scammers — they've taken everything they\'re going to.</li>
               <li>Save all chats and screenshots from the fake app.</li>
               <li>Call the FBI's IC3 at <a href="https://www.ic3.gov" target="_blank" rel="noopener noreferrer" className="text-primary underline">ic3.gov</a>. Crypto scams are their specialty now.</li>
@@ -90,7 +90,7 @@ export default function PigButcheringDefense() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tell someone</h3>
-            <p className="text-sm text-muted-foreground">Most victims don't tell anyone for months because of shame. Don't. The scammers do this for a living, with practiced scripts and teams of operators. Telling family, your bank, and the FBI is the single most powerful thing you can do to slow them down — and to start healing.</p>
+            <p className="text-base text-muted-foreground">Most victims don't tell anyone for months because of shame. Don't. The scammers do this for a living, with practiced scripts and teams of operators. Telling family, your bank, and the FBI is the single most powerful thing you can do to slow them down — and to start healing.</p>
           </CardContent>
         </Card>
       </main>

@@ -168,11 +168,11 @@ export default function EmptyNestTech() {
               return (
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
+                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-info text-info-foreground ">
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -201,11 +201,11 @@ export default function EmptyNestTech() {
                 return (
                   <Card key={item.title} className="border-2">
                     <CardContent className="p-6">
-                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-info text-info-foreground ">
                         <Icon className="h-5 w-5" />
                       </div>
                       <h3 className="mb-2 font-semibold">{item.title}</h3>
-                      <p className="text-sm text-muted-foreground">{item.description}</p>
+                      <p className="text-base text-muted-foreground">{item.description}</p>
                     </CardContent>
                   </Card>
                 );
@@ -234,11 +234,11 @@ export default function EmptyNestTech() {
               return (
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300">
+                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-lg bg-success text-success-foreground ">
                       <Icon className="h-5 w-5" />
                     </div>
                     <h3 className="mb-2 font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               );
@@ -260,7 +260,7 @@ export default function EmptyNestTech() {
                 <Card key={item.title} className="border-2">
                   <CardContent className="p-6">
                     <h3 className="mb-2 text-lg font-semibold">{item.title}</h3>
-                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                    <p className="text-base text-muted-foreground">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -273,7 +273,7 @@ export default function EmptyNestTech() {
       <section className="border-t bg-gradient-to-b from-blue-50 to-background dark:from-blue-950/30">
         <div className="container mx-auto px-4 py-20">
           <div className="mx-auto max-w-3xl text-center">
-            <Home className="mx-auto mb-6 h-12 w-12 text-blue-600 dark:text-blue-400" />
+            <Home className="mx-auto mb-6 h-12 w-12 text-info-foreground " />
             <h2 className="mb-4 text-2xl font-bold md:text-3xl">Need a hand setting things up?</h2>
             <p className="mb-8 text-lg text-muted-foreground">
               Our tech help sessions are designed for exactly this kind of life moment — a patient

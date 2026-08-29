@@ -22,7 +22,7 @@ export default function SeniorTravelBuddy() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Road Scholar</h2><p>Designed for 50+. No supplements on many tours. Educational.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cruise singles</h2><p>Many lines have host nights. Meet single seniors at sea.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Meetup.com travel groups</h2><p>FREE local senior travel groups. Plan trips together.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Solo travel is empowering. Senior groups make it safe and fun.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Solo travel is empowering. Senior groups make it safe and fun.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

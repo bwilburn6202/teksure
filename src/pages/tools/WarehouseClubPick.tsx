@@ -30,10 +30,10 @@ export default function WarehouseClubPick() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function WarehouseClubPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best Costco buys</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Hearing aids</strong> — Costco Hearing Aid Center: $1,500 vs $5,000 elsewhere.</li>
               <li><strong>Glasses + eye exams</strong>.</li>
               <li><strong>Pharmacy</strong> — non-members can use too. Often cheapest cash prices.</li>
@@ -59,7 +59,7 @@ export default function WarehouseClubPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid the trap</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Don\'t buy bulk perishables that\'ll spoil before you finish.</li>
               <li>Don\'t buy because "it\'s a good deal" — only what you actually use.</li>
               <li>Track membership cost vs actual savings. Some families don\'t spend enough to break even.</li>
@@ -71,7 +71,7 @@ export default function WarehouseClubPick() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick math</h3>
-            <p className="text-sm text-muted-foreground">If you spend $200/month at the warehouse club + use the gas + use the pharmacy or eye exam — Costco Executive ($130/yr) earns back 2%. Most families end up break-even or net-positive after the rebate.</p>
+            <p className="text-base text-muted-foreground">If you spend $200/month at the warehouse club + use the gas + use the pharmacy or eye exam — Costco Executive ($130/yr) earns back 2%. Most families end up break-even or net-positive after the rebate.</p>
           </CardContent>
         </Card>
       </main>

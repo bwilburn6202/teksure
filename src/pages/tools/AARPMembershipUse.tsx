@@ -19,7 +19,7 @@ export default function AARPMembershipUse() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Basic membership = $16/yr</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Age 50+ to join.</li>
               <li>5-year membership $63.</li>
               <li>Couple — both members for one fee.</li>
@@ -33,7 +33,7 @@ export default function AARPMembershipUse() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Travel discounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hotels — Marriott, Best Western, Wyndham 10%.</li>
               <li>Rental cars — Avis, Budget 30%.</li>
               <li>Cruises — Norwegian Cruise Line.</li>
@@ -48,7 +48,7 @@ export default function AARPMembershipUse() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free senior services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Tax-Aide</strong> — free tax help February-April.</li>
               <li><strong>Driver Safety Course</strong> — discount auto insurance.</li>
               <li><strong>Smart Driver</strong> course $25.</li>
@@ -62,7 +62,7 @@ export default function AARPMembershipUse() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance through AARP</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Auto, home — Hartford.</li>
               <li>Medicare Supplement — UnitedHealthcare.</li>
               <li>Life insurance — New York Life.</li>
@@ -76,7 +76,7 @@ export default function AARPMembershipUse() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Caregiver tools</strong> — free.</li>
               <li><strong>Job board</strong> — older worker focused.</li>
               <li><strong>Money management</strong>.</li>
@@ -90,7 +90,7 @@ export default function AARPMembershipUse() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth $16/yr?</h3>
-            <p className="text-sm text-muted-foreground">Definitely. Saves on hotels alone in 1-2 trips. Tax-Aide saves CPA fees. Magazine entertaining. Senior advocacy meaningful. Most seniors join 50+. Easily worth $16. Renew when reminded.</p>
+            <p className="text-base text-muted-foreground">Definitely. Saves on hotels alone in 1-2 trips. Tax-Aide saves CPA fees. Magazine entertaining. Senior advocacy meaningful. Most seniors join 50+. Easily worth $16. Renew when reminded.</p>
           </CardContent>
         </Card>
       </main>

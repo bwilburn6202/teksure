@@ -19,7 +19,7 @@ export default function WordForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">5 essential skills</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Open + Save</strong> — basics.</li>
               <li><strong>Type + edit</strong> — copy/paste, undo (Ctrl+Z).</li>
               <li><strong>Format</strong> — bold, italic, font size.</li>
@@ -33,7 +33,7 @@ export default function WordForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly settings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Increase default font size to 14 or 16pt.</li>
               <li>Increase Word display zoom (View → Zoom → 150%).</li>
               <li>Enable spelling + grammar check.</li>
@@ -47,7 +47,7 @@ export default function WordForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Templates save time</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>File → New — search templates.</li>
               <li>Letters, resumes, flyers, certificates.</li>
               <li>Memorial programs.</li>
@@ -62,7 +62,7 @@ export default function WordForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice typing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Microsoft 365 Word has Dictate.</li>
               <li>Click Dictate icon (Home tab).</li>
               <li>Speak — text appears.</li>
@@ -77,7 +77,7 @@ export default function WordForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free Word alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Word Online</strong> — FREE at office.com.</li>
               <li><strong>Google Docs</strong> — FREE at docs.google.com.</li>
               <li><strong>LibreOffice Writer</strong> — FREE download.</li>
@@ -91,7 +91,7 @@ export default function WordForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground"><strong>Microsoft Support</strong> — support.microsoft.com. Free tutorials. <strong>YouTube</strong> — &quot;Word for beginners.&quot; <strong>Library classes</strong> — many libraries teach Word free. <strong>Senior Planet</strong> — free senior tech classes. Don&apos;t struggle alone.</p>
+            <p className="text-base text-muted-foreground"><strong>Microsoft Support</strong> — support.microsoft.com. Free tutorials. <strong>YouTube</strong> — &quot;Word for beginners.&quot; <strong>Library classes</strong> — many libraries teach Word free. <strong>Senior Planet</strong> — free senior tech classes. Don&apos;t struggle alone.</p>
           </CardContent>
         </Card>
       </main>

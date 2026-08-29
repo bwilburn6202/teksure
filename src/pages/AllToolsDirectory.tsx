@@ -33,7 +33,7 @@ export default function AllToolsDirectory() {
   }, [filtered]);
 
   return (
-    <div className="container mx-auto px-4 py-10 max-w-5xl">
+    <main className="container mx-auto px-4 py-10 max-w-5xl">
       <SEOHead
         title="All Tools A to Z | TekSure"
         description={`Browse every TekSure tool and helper page in one place — ${toolsDirectory.length} free tools for phones, computers, safety, health, money, and daily life.`}
@@ -89,6 +89,6 @@ export default function AllToolsDirectory() {
           </section>
         ))
       )}
-    </div>
+    </main>
   );
 }

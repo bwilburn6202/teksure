@@ -19,7 +19,7 @@ export default function HardDriveBackup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best external hard drives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Seagate Backup Plus 2TB</strong> ($65) — most popular.</li>
               <li><strong>WD Easystore 4TB</strong> ($90) — Costco often has on sale.</li>
               <li><strong>Samsung T7 SSD 1TB</strong> ($90) — fast + small + tough.</li>
@@ -33,8 +33,8 @@ export default function HardDriveBackup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Backup strategy</h2>
-            <p className="text-sm">"3-2-1 rule":</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">"3-2-1 rule":</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>3 copies of important files.</li>
               <li>2 different storage types (computer + external drive).</li>
               <li>1 OFFSITE (cloud OR drive at relative&apos;s house).</li>
@@ -45,7 +45,7 @@ export default function HardDriveBackup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mac — Time Machine</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Plug in external drive.</li>
               <li>Mac asks "Use as Time Machine drive?" → Yes.</li>
               <li>Auto-backs up hourly forever.</li>
@@ -58,7 +58,7 @@ export default function HardDriveBackup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Windows — File History</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Plug in external drive.</li>
               <li>Settings → Update + Security → Backup → "Back up using File History" → ON.</li>
               <li>Pick external drive.</li>
@@ -71,7 +71,7 @@ export default function HardDriveBackup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cloud backup (offsite)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iCloud / Google Drive / OneDrive</strong> — for photos + documents.</li>
               <li><strong>Backblaze</strong> — $99/yr unlimited backup of whole computer.</li>
               <li><strong>Carbonite</strong> — same idea.</li>
@@ -84,7 +84,7 @@ export default function HardDriveBackup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Family-share drive</h3>
-            <p className="text-sm text-muted-foreground">Buy 2nd external drive. Once a year — copy your files to it. Give to adult kid for safekeeping. If your house burns / floods / robbed — they have backup. Best free offsite backup option.</p>
+            <p className="text-base text-muted-foreground">Buy 2nd external drive. Once a year — copy your files to it. Give to adult kid for safekeeping. If your house burns / floods / robbed — they have backup. Best free offsite backup option.</p>
           </CardContent>
         </Card>
       </main>

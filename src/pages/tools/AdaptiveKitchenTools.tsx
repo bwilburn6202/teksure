@@ -19,7 +19,7 @@ export default function AdaptiveKitchenTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Jar + bottle openers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>EZ Off Jar Opener</strong> — $15. Mounts under cabinet.</li>
               <li><strong>Black &amp; Decker Lids Off</strong> — electric, $40.</li>
               <li><strong>Strap wrench</strong> — $10. Best for stuck lids.</li>
@@ -32,7 +32,7 @@ export default function AdaptiveKitchenTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy-grip utensils</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>OXO Good Grips</strong> — fat handles, soft grip. Whole line.</li>
               <li><strong>Ergo Chef pizza cutter</strong> — easier than rolling cutter.</li>
               <li><strong>Built-up handle utensils</strong> — for forks/spoons.</li>
@@ -46,7 +46,7 @@ export default function AdaptiveKitchenTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Low vision aids</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Talking measuring cup</strong> — announces ounces.</li>
               <li><strong>Talking timer</strong> — speaks countdown.</li>
               <li><strong>Bump dots</strong> — touch markers on stove/microwave dials.</li>
@@ -60,7 +60,7 @@ export default function AdaptiveKitchenTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reduce bending + reaching</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lazy susans for cabinets.</li>
               <li>Pull-down shelf hardware (rev-a-shelf).</li>
               <li>Raised dishwasher install (or drawer dishwasher).</li>
@@ -74,7 +74,7 @@ export default function AdaptiveKitchenTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety + assistance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stove auto-shutoff (FireAvert, $130 — auto turns off if you forget).</li>
               <li>Anti-fatigue floor mats.</li>
               <li>Burn-resistant oven mitts that go up arm.</li>
@@ -88,7 +88,7 @@ export default function AdaptiveKitchenTools() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to buy</h3>
-            <p className="text-sm text-muted-foreground"><strong>OXO Good Grips</strong> — best ergonomic line. <strong>Maxi-Aids</strong> (maxiaids.com) — adaptive products specialist. <strong>Performance Health</strong> — therapy + adaptive. <strong>Amazon</strong> — &quot;adaptive kitchen&quot; search. Occupational Therapist can recommend specific tools — Medicare may cover OT consult.</p>
+            <p className="text-base text-muted-foreground"><strong>OXO Good Grips</strong> — best ergonomic line. <strong>Maxi-Aids</strong> (maxiaids.com) — adaptive products specialist. <strong>Performance Health</strong> — therapy + adaptive. <strong>Amazon</strong> — &quot;adaptive kitchen&quot; search. Occupational Therapist can recommend specific tools — Medicare may cover OT consult.</p>
           </CardContent>
         </Card>
       </main>

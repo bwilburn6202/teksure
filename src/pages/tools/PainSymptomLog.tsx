@@ -75,7 +75,7 @@ export default function PainSymptomLog() {
   })();
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Pain & Symptom Log | TekSure"
         description="Track pain or symptoms with location, level, type, triggers, and what helped. Print for your next doctor visit."
@@ -84,10 +84,10 @@ export default function PainSymptomLog() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <HeartPulse className="h-7 w-7 text-rose-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Pain &amp; Symptom Log</h1>
+            <HeartPulse className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Pain &amp; Symptom Log</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Note pain or symptoms when they happen. Patterns will help your doctor figure out what is going on.
           </p>
         </div>
@@ -97,14 +97,14 @@ export default function PainSymptomLog() {
           <div className="grid grid-cols-2 gap-3 mb-4">
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Entries logged</p>
-                <p className="text-xl font-bold text-rose-700">{entries.length}</p>
+                <p className="text-sm text-muted-foreground">Entries logged</p>
+                <p className="text-xl font-bold text-danger-foreground">{entries.length}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Avg level (last 7 days)</p>
-                <p className="text-xl font-bold text-rose-700">{avgLast7 > 0 ? avgLast7.toFixed(1) : "—"} / 10</p>
+                <p className="text-sm text-muted-foreground">Avg level (last 7 days)</p>
+                <p className="text-xl font-bold text-danger-foreground">{avgLast7 > 0 ? avgLast7.toFixed(1) : "—"} / 10</p>
               </CardContent>
             </Card>
           </div>
@@ -114,7 +114,7 @@ export default function PainSymptomLog() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-rose-600" />
+              <PlusCircle className="h-5 w-5 text-danger-foreground" />
               Log Pain or Symptom
             </CardTitle>
           </CardHeader>
@@ -131,12 +131,12 @@ export default function PainSymptomLog() {
             </div>
             <div>
               <Label htmlFor="pain-location" className="text-base font-medium">Where?</Label>
-              <select id="pain-location" value={form.location} onChange={e => setForm(f => ({ ...f, location: e.target.value }))} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <select id="pain-location" value={form.location} onChange={e => setForm(f => ({ ...f, location: e.target.value }))} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card">
                 {LOCATIONS.map(l => <option key={l}>{l}</option>)}
               </select>
             </div>
             <div>
-              <Label className="text-base font-medium">Pain level: <span className="font-bold text-rose-700">{form.level}</span> / 10</Label>
+              <Label className="text-base font-medium">Pain level: <span className="font-bold text-danger-foreground">{form.level}</span> / 10</Label>
               <input
                 type="range"
                 min="0"
@@ -145,7 +145,7 @@ export default function PainSymptomLog() {
                 onChange={e => setForm(f => ({ ...f, level: parseInt(e.target.value, 10) }))}
                 className="w-full mt-1"
               />
-              <div className="flex justify-between text-xs text-gray-500">
+              <div className="flex justify-between text-xs text-muted-foreground">
                 <span>0 = none</span>
                 <span>5 = moderate</span>
                 <span>10 = worst</span>
@@ -153,7 +153,7 @@ export default function PainSymptomLog() {
             </div>
             <div>
               <Label htmlFor="pain-type" className="text-base font-medium">Type</Label>
-              <select id="pain-type" value={form.type} onChange={e => setForm(f => ({ ...f, type: e.target.value }))} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <select id="pain-type" value={form.type} onChange={e => setForm(f => ({ ...f, type: e.target.value }))} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card">
                 {TYPES.map(t => <option key={t}>{t}</option>)}
               </select>
             </div>
@@ -165,14 +165,14 @@ export default function PainSymptomLog() {
               <Label htmlFor="helped" className="text-base font-medium">What helped? (optional)</Label>
               <Input id="helped" placeholder="e.g. Tylenol, rest, heating pad" value={form.helped} onChange={e => setForm(f => ({ ...f, helped: e.target.value }))} className="mt-1 text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base">Log Entry</Button>
           </CardContent>
         </Card>
 
         {entries.length > 0 && (
           <div className="mb-3 flex flex-wrap items-center justify-between gap-3 print:hidden">
-            <p className="text-sm text-gray-500">{entries.length} entr{entries.length !== 1 ? "ies" : "y"}</p>
+            <p className="text-base text-muted-foreground">{entries.length} entr{entries.length !== 1 ? "ies" : "y"}</p>
             <Button variant="outline" onClick={() => window.print()} className="gap-2">
               <Printer className="h-4 w-4" />
               Print for Doctor
@@ -182,10 +182,10 @@ export default function PainSymptomLog() {
 
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <HeartPulse className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <HeartPulse className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No entries yet.</p>
-              <p className="text-sm mt-1">Log pain or a symptom when it happens — patterns are easier to spot from notes than from memory.</p>
+              <p className="text-base mt-1">Log pain or a symptom when it happens — patterns are easier to spot from notes than from memory.</p>
             </CardContent>
           </Card>
         ) : (
@@ -202,14 +202,14 @@ export default function PainSymptomLog() {
                         <Badge variant="secondary" className={`text-xs ${levelColor(e.level)}`}>
                           {e.level}/10
                         </Badge>
-                        <span className="font-medium text-gray-900">{e.location}</span>
-                        <span className="text-xs text-gray-500">{e.type}</span>
+                        <span className="font-medium text-foreground">{e.location}</span>
+                        <span className="text-sm text-muted-foreground">{e.type}</span>
                       </div>
-                      <p className="text-xs text-gray-500 mt-0.5">
+                      <p className="text-sm text-muted-foreground mt-0.5">
                         {formatDate(e.date)} at {formatTime(e.time)}
                       </p>
                       {(e.trigger || e.helped) && (
-                        <div className="text-xs text-gray-600 mt-1">
+                        <div className="text-xs text-muted-foreground mt-1">
                           {e.trigger && <span><span className="font-semibold">Trigger:</span> {e.trigger}</span>}
                           {e.trigger && e.helped && <span> · </span>}
                           {e.helped && <span><span className="font-semibold">Helped:</span> {e.helped}</span>}
@@ -219,7 +219,7 @@ export default function PainSymptomLog() {
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden"
+                      className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden"
                       onClick={() => remove(e.id)}
                       aria-label="Remove entry"
                     >
@@ -232,15 +232,15 @@ export default function PainSymptomLog() {
           </Card>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Bring this log to your next doctor visit — they will spot patterns from a clear log that you might miss day to day.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

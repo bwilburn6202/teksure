@@ -18,11 +18,11 @@ export default function SeniorCruiseTips() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Accessible cabins</h2><p>Wider doors, roll-in shower. Book early. Limited number.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Singles cruises</h2><p>Many lines have no single supplement weeks. Saves 50-100% extra.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior cruise lines</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Holland America (older crowd)</li><li>Princess (relaxed)</li><li>Viking (no kids)</li><li>Oceania (mature)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior cruise lines</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Holland America (older crowd)</li><li>Princess (relaxed)</li><li>Viking (no kids)</li><li>Oceania (mature)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Travel insurance</h2><p>ALWAYS for cruise. Medical evac at sea $50,000+.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mid-ship cabin</h2><p>Less seasickness. Quieter. Better for seniors.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Port days</h2><p>Skip excursions sometimes. Quiet ship day = relaxing.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Cruise Critic forums for honest reviews of senior-friendly ships.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Cruise Critic forums for honest reviews of senior-friendly ships.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

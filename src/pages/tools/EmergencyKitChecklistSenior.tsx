@@ -19,7 +19,7 @@ export default function EmergencyKitChecklistSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why every senior needs one</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Power outages, storms, evacuations happen.</li>
               <li>Seniors often most affected — mobility, meds.</li>
               <li>3-day supply minimum (FEMA standard).</li>
@@ -33,7 +33,7 @@ export default function EmergencyKitChecklistSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Water + food (3 days)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>1 gallon water per person per day = 3 gallons.</li>
               <li>Canned goods — soup, beans, fruit, vegetables.</li>
               <li>Manual can opener.</li>
@@ -47,7 +47,7 @@ export default function EmergencyKitChecklistSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Medications + medical</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>3-day supply of all prescription meds.</li>
               <li>Written list of medications + dosages.</li>
               <li>Doctor + pharmacist phone numbers.</li>
@@ -61,7 +61,7 @@ export default function EmergencyKitChecklistSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Power + light</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Battery-powered or hand-crank radio.</li>
               <li>Multiple flashlights (1 per room ideal).</li>
               <li>Spare batteries for everything.</li>
@@ -75,7 +75,7 @@ export default function EmergencyKitChecklistSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Documents + cash</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Copies of ID, insurance, bank info.</li>
               <li>Recent photo of yourself (in case missing).</li>
               <li>Family contact list — written, not just phone.</li>
@@ -89,7 +89,7 @@ export default function EmergencyKitChecklistSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Comfort + clothing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Change of clothes — weather appropriate.</li>
               <li>Sturdy shoes near bed at night.</li>
               <li>Blankets or sleeping bags.</li>
@@ -103,7 +103,7 @@ export default function EmergencyKitChecklistSenior() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pre-built kits work too</h3>
-            <p className="text-sm text-muted-foreground">If assembling a kit feels overwhelming, buy a pre-made one — Red Cross, Sustain Supply, or Ready America sell complete 3-day kits for $80–$150 on Amazon. Add your specific medications and you&apos;re done. The most important thing is HAVING the kit, not building it from scratch. Keep it where you can grab it in 60 seconds.</p>
+            <p className="text-base text-muted-foreground">If assembling a kit feels overwhelming, buy a pre-made one — Red Cross, Sustain Supply, or Ready America sell complete 3-day kits for $80–$150 on Amazon. Add your specific medications and you&apos;re done. The most important thing is HAVING the kit, not building it from scratch. Keep it where you can grab it in 60 seconds.</p>
           </CardContent>
         </Card>
       </main>

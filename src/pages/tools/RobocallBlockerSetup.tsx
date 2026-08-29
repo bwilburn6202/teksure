@@ -160,7 +160,7 @@ export default function RobocallBlockerSetup() {
           {!carrier && (
             <Card className="border-border shadow-sm">
               <CardContent className="p-6">
-                <p className="text-sm font-semibold mb-4">Which carrier are you on?</p>
+                <p className="text-base font-semibold mb-4">Which carrier are you on?</p>
                 <div className="grid sm:grid-cols-2 gap-3">
                   {(Object.keys(CARRIERS) as Carrier[]).map(c => (
                     <button
@@ -168,12 +168,12 @@ export default function RobocallBlockerSetup() {
                       onClick={() => setCarrier(c)}
                       className="p-4 rounded-xl border border-border hover:border-primary/50 hover:bg-primary/5 transition-all text-left"
                     >
-                      <p className="font-medium text-sm">{CARRIERS[c].name}</p>
-                      <p className="text-xs text-muted-foreground mt-0.5">Free: {CARRIERS[c].appName}</p>
+                      <p className="font-medium text-base">{CARRIERS[c].name}</p>
+                      <p className="text-sm text-muted-foreground mt-0.5">Free: {CARRIERS[c].appName}</p>
                     </button>
                   ))}
                 </div>
-                <p className="text-xs text-muted-foreground mt-4">
+                <p className="text-sm text-muted-foreground mt-4">
                   Not sure? Pick &quot;Any phone&quot; — those steps work on every iPhone and Android, regardless of carrier.
                 </p>
               </CardContent>
@@ -186,7 +186,7 @@ export default function RobocallBlockerSetup() {
                 <CardContent className="p-5 flex items-center justify-between flex-wrap gap-3">
                   <div>
                     <Badge variant="outline" className="mb-1">{guide.name}</Badge>
-                    <p className="text-sm font-semibold">{guide.appName}</p>
+                    <p className="text-base font-semibold">{guide.appName}</p>
                   </div>
                   <Button variant="outline" size="sm" onClick={() => setCarrier(null)}>Change carrier</Button>
                 </CardContent>
@@ -197,8 +197,8 @@ export default function RobocallBlockerSetup() {
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Free protection you can turn on today</p>
                   <ul className="space-y-2 mb-5">
                     {guide.freeFeatures.map((f, i) => (
-                      <li key={i} className="flex gap-2 text-sm">
-                        <CheckCircle2 className="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
+                      <li key={i} className="flex gap-2 text-base">
+                        <CheckCircle2 className="h-4 w-4 text-success-foreground shrink-0 mt-0.5" />
                         <span>{f}</span>
                       </li>
                     ))}
@@ -207,15 +207,15 @@ export default function RobocallBlockerSetup() {
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Setup steps</p>
                   <ol className="space-y-3 mb-5">
                     {guide.steps.map((s, i) => (
-                      <li key={i} className="flex gap-3 text-sm">
+                      <li key={i} className="flex gap-3 text-base">
                         <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                         <span>{s}</span>
                       </li>
                     ))}
                   </ol>
 
-                  <div className="p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800">
-                    <p className="text-xs text-blue-700 dark:text-blue-300">
+                  <div className="p-3 rounded-lg bg-info border border-info-foreground/25 ">
+                    <p className="text-sm text-info-foreground ">
                       <strong>Bonus:</strong> When a spam text comes in, forward it to <strong>{guide.callToReport}</strong>. It is free, takes 5 seconds, and helps your carrier block more of them for everyone.
                     </p>
                   </div>
@@ -229,8 +229,8 @@ export default function RobocallBlockerSetup() {
 
               <Card className="border-border bg-muted/30 mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-2">Add yourself to the Do Not Call Registry</p>
-                  <p className="text-xs text-muted-foreground mb-3">
+                  <p className="text-base font-semibold mb-2">Add yourself to the Do Not Call Registry</p>
+                  <p className="text-sm text-muted-foreground mb-3">
                     Free, run by the FTC. Real telemarketers must stop within 31 days. (Scammers ignore it — that is what the carrier tools above are for.)
                   </p>
                   <a href="https://www.donotcall.gov/" target="_blank" rel="noreferrer"
@@ -246,21 +246,21 @@ export default function RobocallBlockerSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Got a weird text? Check it here.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Got a weird text? Check it here.</p>
               </Link>
               <Link to="/tools/scam-witness-statement" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Report a Scam Call</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Build an FTC report.</p>
+                <p className="font-medium text-base">Report a Scam Call</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Build an FTC report.</p>
               </Link>
               <Link to="/scam-defense" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Defense Center</p>
-                <p className="text-xs text-muted-foreground mt-0.5">All scam protection in one place.</p>
+                <p className="font-medium text-base">Scam Defense Center</p>
+                <p className="text-sm text-muted-foreground mt-0.5">All scam protection in one place.</p>
               </Link>
             </div>
           </div>
 
-          <p className="text-xs text-muted-foreground mt-6 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-6 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> No carrier app collects your call list — these are free tools your carrier already runs on the network.
           </p>
         </div>

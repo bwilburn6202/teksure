@@ -19,7 +19,7 @@ export default function CharityScamCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Verification sites (FREE)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Charity Navigator</strong> — charitynavigator.org. Star ratings.</li>
               <li><strong>GuideStar / Candid</strong> — candid.org. Tax forms + transparency.</li>
               <li><strong>BBB Wise Giving Alliance</strong> — give.org. Standards.</li>
@@ -32,7 +32,7 @@ export default function CharityScamCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common charity scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Names sound LIKE real charities — &quot;Police Officers Federation&quot; vs real Fraternal Order.</li>
               <li>Cold call for veterans, police, firefighters.</li>
               <li>Disaster scams after hurricanes / fires.</li>
@@ -46,7 +46,7 @@ export default function CharityScamCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pressure to give immediately.</li>
               <li>Cash, gift card, or wire only.</li>
               <li>Won&apos;t share name + address.</li>
@@ -61,7 +61,7 @@ export default function CharityScamCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart giving</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>You start the donation — you call them.</li>
               <li>Pay by check or credit card (NEVER cash/wire).</li>
               <li>Get receipt for tax deduction.</li>
@@ -75,7 +75,7 @@ export default function CharityScamCheck() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">QCD: senior tax win</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Qualified Charitable Distribution from IRA.</li>
               <li>Age 70½+ — direct from IRA to charity.</li>
               <li>Counts toward RMD.</li>
@@ -89,7 +89,7 @@ export default function CharityScamCheck() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Report charity fraud</h3>
-            <p className="text-sm text-muted-foreground"><strong>State Attorney General</strong> — most have charity fraud divisions. <strong>FTC</strong> — reportfraud.ftc.gov. <strong>BBB</strong> — bbb.org/scamtracker. <strong>IRS</strong> — Form 13909 reports tax-exempt abuse. Also tell family — protect community.</p>
+            <p className="text-base text-muted-foreground"><strong>State Attorney General</strong> — most have charity fraud divisions. <strong>FTC</strong> — reportfraud.ftc.gov. <strong>BBB</strong> — bbb.org/scamtracker. <strong>IRS</strong> — Form 13909 reports tax-exempt abuse. Also tell family — protect community.</p>
           </CardContent>
         </Card>
       </main>

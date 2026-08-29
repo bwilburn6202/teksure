@@ -19,14 +19,14 @@ export default function RothConversionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it means</h2>
-            <p className="text-sm">Move money from traditional IRA → Roth IRA. Pay tax NOW on the amount converted. Future withdrawals are tax-free. Forever.</p>
+            <p className="text-base">Move money from traditional IRA → Roth IRA. Pay tax NOW on the amount converted. Future withdrawals are tax-free. Forever.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why convert</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lower tax now than future</strong> — early retirement (60-69) often has low income → low tax bracket.</li>
               <li><strong>RMDs avoided</strong> — Roth has no Required Minimum Distributions. Trad IRA forces withdrawals at 73.</li>
               <li><strong>Heir tax savings</strong> — Roth inheritances are tax-free.</li>
@@ -39,7 +39,7 @@ export default function RothConversionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best time to convert</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Years 60-72</strong> — sweet spot. Retired, before RMDs, before higher Social Security taxes.</li>
               <li><strong>Year of low income</strong> — no W-2, before SS starts.</li>
               <li><strong>Market crash year</strong> — convert "low" + grow tax-free.</li>
@@ -52,7 +52,7 @@ export default function RothConversionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to do it</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Talk to fee-only fiduciary advisor first. <strong>This decision is complex.</strong></li>
               <li>Calculate: amount + your current tax rate vs expected future rate.</li>
               <li>Convert in chunks (e.g., $20K-50K/year) to fill lower tax brackets.</li>
@@ -67,7 +67,7 @@ export default function RothConversionGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Costs to consider</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Higher AGI year → may push Medicare IRMAA surcharge.</li>
               <li>Higher AGI → may make more Social Security taxable.</li>
               <li>State income tax on conversion.</li>
@@ -80,7 +80,7 @@ export default function RothConversionGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hire fee-only advisor</h3>
-            <p className="text-sm text-muted-foreground">Roth conversions can save / cost $50K-200K+ over a retirement. Worth $1,000-3,000 for a fee-only fiduciary advisor (NAPFA.org). They model multi-year strategies. NEVER advisor working on commission for conversions.</p>
+            <p className="text-base text-muted-foreground">Roth conversions can save / cost $50K-200K+ over a retirement. Worth $1,000-3,000 for a fee-only fiduciary advisor (NAPFA.org). They model multi-year strategies. NEVER advisor working on commission for conversions.</p>
           </CardContent>
         </Card>
       </main>

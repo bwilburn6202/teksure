@@ -43,7 +43,7 @@ export default function RecallChecker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Check your car NOW</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Find your VIN — printed on driver-side dashboard, registration, insurance card.</li>
               <li>Go to <strong>nhtsa.gov/recalls</strong>.</li>
               <li>Type VIN. Hit Check.</li>
@@ -55,7 +55,7 @@ export default function RecallChecker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common product recalls (2024+)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Recliners with electrical hazards.</li>
               <li>Pressure cookers with bad lids.</li>
               <li>Baby and child products (mostly cribs, strollers, car seats).</li>
@@ -70,20 +70,20 @@ export default function RecallChecker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sign up for email alerts</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>CPSC: cpsc.gov → "Email Subscriptions" → "Recalls".</li>
               <li>FDA: fda.gov → email alerts.</li>
               <li>FoodSafety: foodsafety.gov → email alerts.</li>
               <li>NHTSA: nhtsa.gov → recall search subscription.</li>
             </ul>
-            <p className="text-sm mt-2">5 minutes once. Saves you finding out years later that your vehicle had a brake recall.</p>
+            <p className="text-base mt-2">5 minutes once. Saves you finding out years later that your vehicle had a brake recall.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Annual habit</h3>
-            <p className="text-sm text-muted-foreground">Once a year (your birthday or January 1) — run your VIN through NHTSA. Search "[brand] recall" for major appliances and recliners. 10 minutes total. Sometimes finds free repairs worth hundreds of dollars.</p>
+            <p className="text-base text-muted-foreground">Once a year (your birthday or January 1) — run your VIN through NHTSA. Search "[brand] recall" for major appliances and recliners. 10 minutes total. Sometimes finds free repairs worth hundreds of dollars.</p>
           </CardContent>
         </Card>
       </main>

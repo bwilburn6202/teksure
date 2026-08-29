@@ -22,7 +22,7 @@ export default function SeniorPolitical() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">BallotReady</h2><p>FREE. Research candidates and ballot measures before voting.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AARP advocacy</h2><p>FREE. AARP follows senior issues — Medicare, Social Security. Action alerts.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">FEC.gov</h2><p>FREE. See who donates to political campaigns. Public records.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Seniors vote at higher rates than any age group. Power matters.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Seniors vote at higher rates than any age group. Power matters.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

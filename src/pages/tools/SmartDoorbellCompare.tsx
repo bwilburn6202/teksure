@@ -30,10 +30,10 @@ export default function SmartDoorbellCompare() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{b.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{b.cost}</span>
+                  <span className="text-base font-semibold text-primary">{b.cost}</span>
                 </div>
-                <p className="text-sm">{b.best}</p>
-                <p className="text-sm text-muted-foreground">{b.good}</p>
+                <p className="text-base">{b.best}</p>
+                <p className="text-base text-muted-foreground">{b.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SmartDoorbellCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why bother</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>See who&apos;s at the door</strong> from anywhere — phone, tablet, watch.</li>
               <li><strong>Talk to delivery drivers</strong> — "leave it on the porch please".</li>
               <li><strong>Scare off strangers</strong> — "Can I help you?" through speaker.</li>
@@ -55,7 +55,7 @@ export default function SmartDoorbellCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Battery vs wired</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Battery</strong> — easy install (3 screws). Charge every 2-6 months. Most people pick this.</li>
               <li><strong>Wired</strong> — uses existing doorbell wires. Always on. No charging. Needs minor electrical knowledge or installer.</li>
             </ul>
@@ -65,21 +65,21 @@ export default function SmartDoorbellCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Subscription gotcha</h2>
-            <p className="text-sm">Most doorbells need a $3-10/month subscription to:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Most doorbells need a $3-10/month subscription to:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Save video clips longer than 3-24 hours.</li>
               <li>Watch recordings (otherwise just live view).</li>
               <li>Use facial recognition.</li>
               <li>Multiple cameras one bill.</li>
             </ul>
-            <p className="text-sm mt-3">Eufy and some Wyze stay free, with local storage. Trade-off: less cloud security.</p>
+            <p className="text-base mt-3">Eufy and some Wyze stay free, with local storage. Trade-off: less cloud security.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly setup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Have a tech-savvy family member do the wifi setup.</li>
               <li>Install on phone. Test "answer doorbell" once.</li>
               <li>Set up "snooze" if you don&apos;t want notifications during nap (1-12 hours).</li>
@@ -92,7 +92,7 @@ export default function SmartDoorbellCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Privacy note</h3>
-            <p className="text-sm text-muted-foreground">Ring shares footage with police on request, sometimes without notifying you. If that bothers you, Eufy or Wyze (local storage) are safer choices. All doorbells should follow local laws — don&apos;t aim camera at neighbor&apos;s yard.</p>
+            <p className="text-base text-muted-foreground">Ring shares footage with police on request, sometimes without notifying you. If that bothers you, Eufy or Wyze (local storage) are safer choices. All doorbells should follow local laws — don&apos;t aim camera at neighbor&apos;s yard.</p>
           </CardContent>
         </Card>
       </main>

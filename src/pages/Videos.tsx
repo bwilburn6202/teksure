@@ -124,7 +124,7 @@ export default function Videos() {
             </div>
             <div>
               <h1 className="text-3xl font-bold tracking-tight">Video Tutorials</h1>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground text-base">
                 Watch along — we show every step on screen.
               </p>
             </div>
@@ -170,7 +170,7 @@ export default function Videos() {
           <div className="text-center py-20">
             <div className="text-5xl mb-4"></div>
             <p className="text-lg font-semibold mb-2">No videos yet for this device</p>
-            <p className="text-muted-foreground text-sm mb-6">
+            <p className="text-muted-foreground text-base mb-6">
               We're always adding new tutorials. Check back soon!
             </p>
             <Button variant="outline" onClick={() => setActiveFilter('all')}>
@@ -271,7 +271,7 @@ function VideoCard({ video }: { video: VideoTutorial }) {
           {video.description && (
             <p className="text-xs text-muted-foreground mt-1 line-clamp-2">{video.description}</p>
           )}
-          <p className="text-xs text-primary mt-3 font-medium">Watch in guide →</p>
+          <p className="text-sm text-primary mt-3 font-medium">Watch in guide →</p>
         </CardContent>
       </Card>
     </Link>

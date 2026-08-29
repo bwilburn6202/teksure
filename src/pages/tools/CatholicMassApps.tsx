@@ -32,10 +32,10 @@ export default function CatholicMassApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function CatholicMassApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stream Mass live</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Your parish website</strong> — most stream Sunday Mass.</li>
               <li><strong>EWTN</strong> — daily Mass at multiple times.</li>
               <li><strong>Vatican TV</strong> — live papal events and Vatican Mass.</li>
@@ -57,7 +57,7 @@ export default function CatholicMassApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For housebound</h3>
-            <p className="text-sm text-muted-foreground">A Eucharistic Minister can bring Holy Communion to your home weekly. Call your parish office. Many parishes also visit homebound seniors monthly.</p>
+            <p className="text-base text-muted-foreground">A Eucharistic Minister can bring Holy Communion to your home weekly. Call your parish office. Many parishes also visit homebound seniors monthly.</p>
           </CardContent>
         </Card>
       </main>

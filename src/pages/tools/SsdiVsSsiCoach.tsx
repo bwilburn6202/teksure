@@ -19,7 +19,7 @@ export default function SsdiVsSsiCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Quick difference</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li><strong>SSDI</strong> — for people who can\'t work due to disability AND have a work history (paid into Social Security).</li>
               <li><strong>SSI</strong> — for low-income disabled, blind, or seniors 65+ regardless of work history.</li>
               <li>You can sometimes get both.</li>
@@ -30,7 +30,7 @@ export default function SsdiVsSsiCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SSDI (Social Security Disability Insurance)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>You worked at least 5 of the last 10 years.</li>
               <li>You can\'t do "substantial work" (under $1,620/month for 2025).</li>
               <li>Your disability has lasted (or is expected to last) 12+ months.</li>
@@ -44,7 +44,7 @@ export default function SsdiVsSsiCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SSI (Supplemental Security Income)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>For people 65+, blind, or disabled.</li>
               <li>Income limit: under ~$1,000/month per person.</li>
               <li>Asset limit: $2,000 individual, $3,000 couple (excluding home and one car).</li>
@@ -57,7 +57,7 @@ export default function SsdiVsSsiCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to apply</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Apply online at <strong>ssa.gov/applyfordisability</strong>.</li>
               <li>Or call 1-800-772-1213.</li>
               <li>Or visit a local SSA office (long lines, but personal help).</li>
@@ -78,7 +78,7 @@ export default function SsdiVsSsiCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get help — fee is free if you don\'t win</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Disability lawyers</strong> — typically work on contingency. They get paid only if you win, capped at 25% of back-pay (max ~$7,200 in 2025). Look for "non-attorney representative" too — same idea, sometimes cheaper.</li>
               <li><strong>State Vocational Rehabilitation</strong> — free.</li>
               <li><strong>NOSSCR.org</strong> — find disability advocates by state.</li>
@@ -90,7 +90,7 @@ export default function SsdiVsSsiCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common mistakes</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Not getting medical documentation before applying.</li>
               <li>Not telling doctors specifically what tasks you can\'t do.</li>
               <li>Working too much during application — even part-time work can disqualify you.</li>
@@ -103,7 +103,7 @@ export default function SsdiVsSsiCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you\'re close to retirement age</h3>
-            <p className="text-sm text-muted-foreground">If you\'re within a few years of full retirement age, sometimes early retirement is faster than fighting for SSDI. SSDI converts to retirement at FRA anyway. A disability lawyer can help you decide which path is better for your situation.</p>
+            <p className="text-base text-muted-foreground">If you\'re within a few years of full retirement age, sometimes early retirement is faster than fighting for SSDI. SSDI converts to retirement at FRA anyway. A disability lawyer can help you decide which path is better for your situation.</p>
           </CardContent>
         </Card>
       </main>

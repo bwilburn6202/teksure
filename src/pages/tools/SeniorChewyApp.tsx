@@ -22,7 +22,7 @@ export default function SeniorChewyApp() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">24/7 customer service</h2><p>Phone or chat. Real people. Often send handwritten cards and pet portraits.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Returns</h2><p>365-day returns. Pet doesn&apos;t like the food? Free return.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sad alternatives</h2><p>If a pet passes, Chewy refunds remaining auto-ship orders. Often donates the food.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Connect with Rakuten for cash back. Stack savings.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Connect with Rakuten for cash back. Stack savings.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

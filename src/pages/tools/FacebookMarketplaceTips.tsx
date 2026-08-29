@@ -19,7 +19,7 @@ export default function FacebookMarketplaceTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What sells well locally</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Furniture — too expensive to ship.</li>
               <li>Lawn equipment.</li>
               <li>Exercise equipment.</li>
@@ -33,7 +33,7 @@ export default function FacebookMarketplaceTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">List for free</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free Facebook account required.</li>
               <li>Tap Marketplace icon.</li>
               <li>+Sell button.</li>
@@ -47,7 +47,7 @@ export default function FacebookMarketplaceTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior safety rules</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Meet in public — Walmart, police station.</li>
               <li>Day light only.</li>
               <li>Tell family member.</li>
@@ -61,7 +61,7 @@ export default function FacebookMarketplaceTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t allow these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t let strangers in your home.</li>
               <li>Especially if living alone.</li>
               <li>Don&apos;t accept Zelle/Venmo from buyers (scams).</li>
@@ -75,7 +75,7 @@ export default function FacebookMarketplaceTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Buyer overpays + asks refund difference (fake check).</li>
               <li>Asks for your phone number to text — phishing setup.</li>
               <li>Wants to ship — usually scam.</li>
@@ -89,7 +89,7 @@ export default function FacebookMarketplaceTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For senior buyers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Inspect before paying.</li>
               <li>Check seller&apos;s profile + ratings.</li>
               <li>Ask questions in chat first.</li>
@@ -103,7 +103,7 @@ export default function FacebookMarketplaceTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Police safe trade spots</h3>
-            <p className="text-sm text-muted-foreground">Many police stations now have designated &quot;Safe Trade&quot; areas in their lot — under camera surveillance. Use these for Marketplace transactions. Free + safe. Search &quot;safe trade location near me.&quot; Combined with cash-only + bring-a-friend rules, Facebook Marketplace becomes a safe + valuable tool for seniors.</p>
+            <p className="text-base text-muted-foreground">Many police stations now have designated &quot;Safe Trade&quot; areas in their lot — under camera surveillance. Use these for Marketplace transactions. Free + safe. Search &quot;safe trade location near me.&quot; Combined with cash-only + bring-a-friend rules, Facebook Marketplace becomes a safe + valuable tool for seniors.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function WildfirePrepGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Year-round preparation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Clear 100 ft &quot;defensible space.&quot;</li>
               <li>Trim trees away from house.</li>
               <li>Remove dry brush.</li>
@@ -34,7 +34,7 @@ export default function WildfirePrepGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Go bag (always packed)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Important documents (deed, ID, insurance, meds list).</li>
               <li>5-7 days of medications.</li>
               <li>Glasses, hearing aids, CPAP.</li>
@@ -51,7 +51,7 @@ export default function WildfirePrepGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior special prep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>EVACUATE EARLY — don&apos;t wait.</li>
               <li>Tell out-of-state contact your plans.</li>
               <li>Identify pet-friendly shelter.</li>
@@ -66,7 +66,7 @@ export default function WildfirePrepGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If smoke</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stay inside, doors + windows closed.</li>
               <li>HEPA air purifier.</li>
               <li>N95 masks if must go outside.</li>
@@ -81,7 +81,7 @@ export default function WildfirePrepGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photo/video EVERY room before fire season.</li>
               <li>Save inventory in cloud (not just home).</li>
               <li>Replacement cost coverage (not market value).</li>
@@ -95,7 +95,7 @@ export default function WildfirePrepGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>Ready.gov/wildfires</strong>. <strong>FEMA app</strong> — alerts. <strong>Watch Duty</strong> app — best wildfire tracking. <strong>Cal Fire</strong> if California. Nextdoor for neighborhood info. Get out early. Don&apos;t lose life trying to save belongings.</p>
+            <p className="text-base text-muted-foreground"><strong>Ready.gov/wildfires</strong>. <strong>FEMA app</strong> — alerts. <strong>Watch Duty</strong> app — best wildfire tracking. <strong>Cal Fire</strong> if California. Nextdoor for neighborhood info. Get out early. Don&apos;t lose life trying to save belongings.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorJointSupplements() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Vitamin D</h2><p>Critical. Most seniors deficient. Affects joint and bone health.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip</h2><p>Magic shilajit. Cure-all powders. Most studies show placebo only.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Drug interactions</h2><p>Show pharmacist all supplements. Some interact with blood thinners.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Movement and weight loss matter more than any supplement.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Movement and weight loss matter more than any supplement.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

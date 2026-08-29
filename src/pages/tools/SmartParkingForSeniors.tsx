@@ -19,7 +19,7 @@ export default function SmartParkingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone — automatic</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Maps → Show Parked Location.</li>
               <li>iPhone notes spot when you exit car.</li>
               <li>Bluetooth car connection required.</li>
@@ -33,7 +33,7 @@ export default function SmartParkingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Manual marker</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Google Maps — drop pin on car.</li>
               <li>Photo of section letter/number.</li>
               <li>Apple Notes voice memo.</li>
@@ -47,7 +47,7 @@ export default function SmartParkingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AirTag for car</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Place Apple AirTag in car.</li>
               <li>Find My app shows car location.</li>
               <li>$30 one-time cost.</li>
@@ -61,7 +61,7 @@ export default function SmartParkingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hospital parking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Take photo of garage level + section.</li>
               <li>Cell signal often weak in hospitals.</li>
               <li>AirTag may not work indoors.</li>
@@ -75,7 +75,7 @@ export default function SmartParkingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Airport long-term</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photo of garage level + row.</li>
               <li>Email yourself location.</li>
               <li>Note in Apple Notes.</li>
@@ -89,7 +89,7 @@ export default function SmartParkingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you lose car</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use key fob — press unlock + horn.</li>
               <li>Listen for honk.</li>
               <li>Walk toward sound.</li>
@@ -103,7 +103,7 @@ export default function SmartParkingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Photo + iPhone Bluetooth = magic</h3>
-            <p className="text-sm text-muted-foreground">When parking at airport, hospital, big mall — take 3 seconds to photograph your section/row. Plus iPhone&apos;s Bluetooth-detected parked location. These two habits prevent the senior nightmare of forgetting where you parked. Free, easy, transformative for stress reduction.</p>
+            <p className="text-base text-muted-foreground">When parking at airport, hospital, big mall — take 3 seconds to photograph your section/row. Plus iPhone&apos;s Bluetooth-detected parked location. These two habits prevent the senior nightmare of forgetting where you parked. Free, easy, transformative for stress reduction.</p>
           </CardContent>
         </Card>
       </main>

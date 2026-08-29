@@ -19,7 +19,7 @@ export default function MarketplaceSafety() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> The 7 rules</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Meet in public.</strong> Police station parking lots, busy coffee shops, the front of a bank during business hours. Many police stations have "Safe Exchange Zones" with cameras.</li>
               <li><strong>Bring someone with you.</strong> A friend or family member, or at least tell someone where you're going.</li>
               <li><strong>Daytime only.</strong> Don't meet strangers at night.</li>
@@ -37,7 +37,7 @@ export default function MarketplaceSafety() {
               <AlertTriangle className="w-6 h-6 text-destructive shrink-0" />
               <div>
                 <h3 className="font-bold mb-2"> Top scams to watch for</h3>
-                <ul className="space-y-3 text-sm">
+                <ul className="space-y-3 text-base">
                   <li><strong>"Just send me a Zelle for shipping" (selling)</strong> — buyer "accidentally" sends too much, asks you to refund the difference. Their original payment will reverse, leaving you out the refund money.</li>
                   <li><strong>"I'll pay through Venmo Friends and Family" (buying)</strong> — Friends and Family removes buyer protection. Use Goods and Services or pay in person.</li>
                   <li><strong>Cashier's check or money order</strong> — fake. Banks may take days to confirm and you're on the hook when it bounces.</li>
@@ -53,7 +53,7 @@ export default function MarketplaceSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h3 className="font-bold text-lg mb-3">Buying smart</h3>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Reverse-image-search the photo (right-click → "Search Google for image"). If the picture is from a stock site, it's a scam.</li>
               <li>Check the seller's profile age and reviews. Brand-new accounts with no friends are red flags.</li>
               <li>Ask a question only the real owner could answer ("send me a photo with today's date written on a piece of paper next to the item").</li>
@@ -65,7 +65,7 @@ export default function MarketplaceSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h3 className="font-bold text-lg mb-3">Selling smart</h3>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Take photos in front of a plain background. Don't show your house number.</li>
               <li>Don't list on multiple sites with the same wording — scammers copy listings.</li>
               <li>Decline checks and money orders. Cash is king. Zelle in person is OK.</li>
@@ -78,7 +78,7 @@ export default function MarketplaceSafety() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If something goes wrong</h3>
-            <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
+            <ul className="list-disc pl-5 space-y-1 text-base text-muted-foreground">
               <li>Report the listing to Facebook, Craigslist, or Nextdoor through their "Report" button.</li>
               <li>File at <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener noreferrer" className="text-primary underline">reportfraud.ftc.gov</a>.</li>
               <li>If you lost more than $500, file a police report. They sometimes catch repeat scammers.</li>

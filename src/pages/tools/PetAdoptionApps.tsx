@@ -31,10 +31,10 @@ export default function PetAdoptionApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,8 +43,8 @@ export default function PetAdoptionApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">"Seniors for Seniors" programs</h2>
-            <p className="text-sm">Many US shelters have a "Seniors for Seniors" program — adopt a senior pet for free or reduced fee.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Many US shelters have a "Seniors for Seniors" program — adopt a senior pet for free or reduced fee.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Senior pets often house-trained, mellow, lower-energy.</li>
               <li>Reduced or waived adoption fees ($0-50 vs $200-500).</li>
               <li>Some include free vet visit + initial supplies.</li>
@@ -57,7 +57,7 @@ export default function PetAdoptionApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Considerations for older adopters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Outliving the pet</strong> — talk to family. Have a plan if pet outlives you.</li>
               <li><strong>Mobility</strong> — cats, smaller dogs, older dogs better than energetic puppies.</li>
               <li><strong>Allergies</strong> — try a "meet and greet" or foster first.</li>
@@ -70,14 +70,14 @@ export default function PetAdoptionApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Foster first</h2>
-            <p className="text-sm">Many shelters have "foster-to-adopt" programs. Take a pet home for 2-4 weeks. If it works — adopt. If not — return without judgment. Lowers risk dramatically.</p>
+            <p className="text-base">Many shelters have "foster-to-adopt" programs. Take a pet home for 2-4 weeks. If it works — adopt. If not — return without judgment. Lowers risk dramatically.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best fit for many seniors</h3>
-            <p className="text-sm text-muted-foreground">Adult cats (2-7 years old) — already house-trained, social, lower-maintenance than dogs. Many languish in shelters because puppies/kittens get adopted first. Save a life and gain a quiet companion.</p>
+            <p className="text-base text-muted-foreground">Adult cats (2-7 years old) — already house-trained, social, lower-maintenance than dogs. Many languish in shelters because puppies/kittens get adopted first. Save a life and gain a quiet companion.</p>
           </CardContent>
         </Card>
       </main>

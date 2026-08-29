@@ -19,7 +19,7 @@ export default function SeniorVaccinesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recommended vaccines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Flu</strong> — yearly. High-dose senior version.</li>
               <li><strong>COVID</strong> — annual updates.</li>
               <li><strong>Pneumonia</strong> — once or twice in life.</li>
@@ -34,7 +34,7 @@ export default function SeniorVaccinesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Shingles (most missed)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Shingrix — 2-dose vaccine.</li>
               <li>97% effective.</li>
               <li>Shingles VERY painful, lasts months.</li>
@@ -49,7 +49,7 @@ export default function SeniorVaccinesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RSV (new important)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>RSV (respiratory syncytial virus) hospitalizes 60K seniors/yr.</li>
               <li>New vaccines 2023+ effective.</li>
               <li>Recommended for 60+ in poor health, 75+ everyone.</li>
@@ -63,7 +63,7 @@ export default function SeniorVaccinesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Travel vaccines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Talk to doctor 4-6 weeks before international travel.</li>
               <li>Hepatitis A — most warm climates.</li>
               <li>Typhoid — South Asia, Africa.</li>
@@ -77,7 +77,7 @@ export default function SeniorVaccinesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free + easy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>CVS, Walgreens, Walmart pharmacies — walk-in.</li>
               <li>Most free with Medicare or insurance.</li>
               <li>Schedule online or walk-in.</li>
@@ -91,7 +91,7 @@ export default function SeniorVaccinesGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Vaccine record</h3>
-            <p className="text-sm text-muted-foreground">Keep digital copy in iPhone Health app or Google Pay (vaccine card scanning). Print copy in important docs file. Helps doctor know what you&apos;ve had. State immunization registries also keep record. Get when offered — saves visits.</p>
+            <p className="text-base text-muted-foreground">Keep digital copy in iPhone Health app or Google Pay (vaccine card scanning). Print copy in important docs file. Helps doctor know what you&apos;ve had. State immunization registries also keep record. Get when offered — saves visits.</p>
           </CardContent>
         </Card>
       </main>

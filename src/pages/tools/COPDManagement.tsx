@@ -19,7 +19,7 @@ export default function COPDManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">COPD basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Chronic Obstructive Pulmonary Disease.</li>
               <li>Includes emphysema, chronic bronchitis.</li>
               <li>16M+ Americans diagnosed.</li>
@@ -33,7 +33,7 @@ export default function COPDManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best treatments</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Quit smoking</strong> — #1 priority.</li>
               <li><strong>Inhalers</strong> — bronchodilators, steroids.</li>
               <li><strong>Pulmonary rehab</strong> — Medicare covered. Game-changer.</li>
@@ -47,7 +47,7 @@ export default function COPDManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pulmonary rehab</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>6-12 week program.</li>
               <li>Exercise + breathing techniques + education.</li>
               <li>Medicare covers.</li>
@@ -62,7 +62,7 @@ export default function COPDManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily management</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use inhalers correctly (technique matters).</li>
               <li>Avoid smoke + pollution.</li>
               <li>Air purifier home.</li>
@@ -78,7 +78,7 @@ export default function COPDManagement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch warning signs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Worse shortness of breath.</li>
               <li>More mucus / different color.</li>
               <li>Fever.</li>
@@ -93,7 +93,7 @@ export default function COPDManagement() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground"><strong>American Lung Association</strong> — lung.org. Free Better Breathers Clubs nationwide. <strong>COPD Foundation</strong> — copdfoundation.org. Free education + community. Don&apos;t do this alone. Many resources.</p>
+            <p className="text-base text-muted-foreground"><strong>American Lung Association</strong> — lung.org. Free Better Breathers Clubs nationwide. <strong>COPD Foundation</strong> — copdfoundation.org. Free education + community. Don&apos;t do this alone. Many resources.</p>
           </CardContent>
         </Card>
       </main>

@@ -30,10 +30,10 @@ export default function BibleAppCompare() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BibleAppCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YouVersion features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free audio Bible — multiple narrators, multiple translations.</li>
               <li>Daily verse pushed to phone.</li>
               <li>20,000+ reading plans (Through-the-Bible, devotionals, topical).</li>
@@ -57,7 +57,7 @@ export default function BibleAppCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap font icon — make text BIGGER (often 4-5 sizes).</li>
               <li>Audio Bible — listen while doing dishes, walking, falling asleep.</li>
               <li>Pick translation you grew up with — KJV, NIV, NLT, ESV all available.</li>
@@ -70,7 +70,7 @@ export default function BibleAppCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free study resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>BibleProject</strong> (YouTube + app) — free animated explanations of every Bible book.</li>
               <li><strong>RightNow Media</strong> — many churches give free access. Like Netflix for Christian study.</li>
               <li><strong>Pray.com</strong> — free, audio-driven devotionals.</li>
@@ -82,7 +82,7 @@ export default function BibleAppCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quiet morning routine</h3>
-            <p className="text-sm text-muted-foreground">Best use for many seniors: 10 minutes each morning. Open Bible app, read today&apos;s passage, listen to audio while drinking coffee, journal a sentence in a paper notebook. Simple. Sustainable.</p>
+            <p className="text-base text-muted-foreground">Best use for many seniors: 10 minutes each morning. Open Bible app, read today&apos;s passage, listen to audio while drinking coffee, journal a sentence in a paper notebook. Simple. Sustainable.</p>
           </CardContent>
         </Card>
       </main>

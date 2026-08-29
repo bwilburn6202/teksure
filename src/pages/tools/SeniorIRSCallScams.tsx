@@ -22,7 +22,7 @@ export default function SeniorIRSCallScams() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">If they threaten arrest</h2><p>It&apos;s a SCAM. Real government never threatens immediate arrest by phone.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Spoofed numbers</h2><p>Caller ID can fake any number. Even if it shows IRS, hang up.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Verify directly</h2><p>Call IRS 1-800-829-1040. SSA 1-800-772-1213. Confirm any letter.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Tell family you got a scam call. They can warn other seniors.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Tell family you got a scam call. They can warn other seniors.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

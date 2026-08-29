@@ -19,7 +19,7 @@ export default function AppleWeatherIphone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Built-in weather</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple acquired Dark Sky 2020.</li>
               <li>Most accurate phone weather.</li>
               <li>Free, built into iPhone.</li>
@@ -33,7 +33,7 @@ export default function AppleWeatherIphone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hidden features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap any hour for detailed forecast.</li>
               <li>Air quality index.</li>
               <li>UV index for sun protection.</li>
@@ -47,7 +47,7 @@ export default function AppleWeatherIphone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Add multiple cities</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap menu icon top-right.</li>
               <li>Add cities — your home + family + travel.</li>
               <li>Swipe to switch between.</li>
@@ -61,7 +61,7 @@ export default function AppleWeatherIphone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Weather widgets</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Add Weather widget to home screen.</li>
               <li>Multiple widget sizes.</li>
               <li>See current temp at glance.</li>
@@ -75,7 +75,7 @@ export default function AppleWeatherIphone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Severe weather alerts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Notifications → Weather.</li>
               <li>Toggle Severe Weather ON.</li>
               <li>Tornado, hurricane, blizzard alerts.</li>
@@ -89,7 +89,7 @@ export default function AppleWeatherIphone() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Weather + Siri</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Hey Siri, what&apos;s the weather today?&quot;</li>
               <li>&quot;Will it rain tomorrow?&quot;</li>
               <li>&quot;What&apos;s the weather in Phoenix?&quot;</li>
@@ -103,7 +103,7 @@ export default function AppleWeatherIphone() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t install another weather app</h3>
-            <p className="text-sm text-muted-foreground">If you have iPhone, Apple Weather (free, built in) is more accurate than most paid weather apps. Don&apos;t pay for AccuWeather Premium or Weather Channel ad-free. Apple Weather has hyperlocal Dark Sky technology. Add severe weather alerts in Settings, add multiple cities for family. That&apos;s all most seniors need for weather.</p>
+            <p className="text-base text-muted-foreground">If you have iPhone, Apple Weather (free, built in) is more accurate than most paid weather apps. Don&apos;t pay for AccuWeather Premium or Weather Channel ad-free. Apple Weather has hyperlocal Dark Sky technology. Add severe weather alerts in Settings, add multiple cities for family. That&apos;s all most seniors need for weather.</p>
           </CardContent>
         </Card>
       </main>

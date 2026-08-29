@@ -19,8 +19,8 @@ export default function AmazonPrimeMastery() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What Prime really includes</h2>
-            <p className="text-sm mb-2">Most people only know about free shipping. Prime is also:</p>
-            <ul className="text-sm list-disc pl-5">
+            <p className="text-base mb-2">Most people only know about free shipping. Prime is also:</p>
+            <ul className="text-base list-disc pl-5">
               <li>Prime Video (movies and original shows)</li>
               <li>Amazon Music (free with ads, or limited tier)</li>
               <li>Prime Reading (free e-books and magazines)</li>
@@ -36,22 +36,22 @@ export default function AmazonPrimeMastery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Returning is the magic</h2>
-            <p className="text-sm mb-2">Amazon's return process is among the easiest in retail:</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Amazon's return process is among the easiest in retail:</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Open Amazon → "Your Orders" → find the item → "Return or replace items".</li>
               <li>Pick a reason (didn't fit, defective, changed my mind).</li>
               <li>Choose drop-off — usually <strong>Whole Foods</strong>, <strong>Kohl's</strong>, <strong>UPS Store</strong>, or <strong>Amazon Locker</strong>. Most need NO box, NO label — just bring the item and your QR code.</li>
               <li>Take the QR code from the email when you go.</li>
               <li>Refund hits your card in 1-3 days, often before the item gets back to Amazon.</li>
             </ol>
-            <p className="text-sm mt-3">No printer, no tape, no scissors. Boxless drop-off changed everything.</p>
+            <p className="text-base mt-3">No printer, no tape, no scissors. Boxless drop-off changed everything.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money on Prime itself</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Senior pricing — Prime Access:</strong> If you're on EBT or qualifying government programs, Prime is $7/month instead of $15. Sign up at amazon.com/access.</li>
               <li><strong>Annual:</strong> $139/year is cheaper per month than monthly.</li>
               <li><strong>Share with one household member</strong> — through Amazon Household, share the benefits with a spouse or grandchild for free.</li>
@@ -63,7 +63,7 @@ export default function AmazonPrimeMastery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hidden gems</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Amazon Photos</strong> — UNLIMITED free photo storage. Most don't realize this. Backs up your phone automatically — install the Amazon Photos app.</li>
               <li><strong>"Subscribe & Save"</strong> — 5-15% off groceries and everyday items if you let Amazon ship monthly. Pause anytime; not a contract.</li>
               <li><strong>Amazon Smile (charity)</strong> — Smile shut down in 2023 but you can sometimes find similar with the AmazonAccess program.</li>
@@ -77,7 +77,7 @@ export default function AmazonPrimeMastery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid pitfalls</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Auto-renew traps:</strong> Settings → "Manage Prime Membership" — turn OFF "Auto-renew" if you only want it for a season.</li>
               <li><strong>Fake reviews:</strong> Be skeptical of products with hundreds of identical 5-star reviews. Use Fakespot.com or check verified-purchaser ones.</li>
               <li><strong>Add-on items</strong> — small items only ship free if you add to a $25+ order.</li>
@@ -89,7 +89,7 @@ export default function AmazonPrimeMastery() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you only buy a few things a year</h3>
-            <p className="text-sm text-muted-foreground">Don't pay for Prime. Most items still ship free if your order is over $25-35. Walmart+, Target Circle 360, and Costco are alternatives if you don't watch streaming or buy small items often.</p>
+            <p className="text-base text-muted-foreground">Don't pay for Prime. Most items still ship free if your order is over $25-35. Walmart+, Target Circle 360, and Costco are alternatives if you don't watch streaming or buy small items often.</p>
           </CardContent>
         </Card>
       </main>

@@ -281,35 +281,35 @@ export default function HomeSafetyWalkthrough() {
         title="Home Safety Walkthrough — TekSure"
         description="Room-by-room safety check for seniors aging in place. Answer simple questions and get a prioritized list of fixes for falls, fires, and other home hazards."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4 print:bg-white">
+      <main className="min-h-screen bg-muted py-8 px-4 print:bg-card">
         <div className="max-w-2xl mx-auto">
 
           {/* Header */}
           <div className="text-center mb-6 print:hidden">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-orange-100 dark:bg-orange-950/60 mb-4">
-              <Home className="w-8 h-8 text-orange-600 dark:text-orange-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-warn mb-4">
+              <Home className="w-8 h-8 text-warn-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Home Safety Walkthrough</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Home Safety Walkthrough</h1>
+            <p className="text-lg text-muted-foreground ">
               Room-by-room safety check. Answer the questions and get a prioritized list of fixes.
             </p>
           </div>
 
           {/* Progress */}
           {!showRisks && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-4 mb-5 shadow-sm print:hidden">
+            <div className="bg-card rounded-2xl border border-border p-4 mb-5 shadow-sm print:hidden">
               <div className="flex justify-between mb-2">
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Progress</span>
-                <span className="text-sm font-bold text-orange-600 dark:text-orange-400">
+                <span className="text-base font-medium text-foreground ">Progress</span>
+                <span className="text-base font-bold text-warn-foreground ">
                   {answeredCount} of {totalItems} ({pct}%)
                 </span>
               </div>
-              <div className="w-full bg-gray-100 dark:bg-gray-800 rounded-full h-2">
+              <div className="w-full bg-muted rounded-full h-2">
                 <div className="bg-orange-500 h-2 rounded-full transition-all" style={{ width: `${pct}%` }} />
               </div>
               <div className="flex gap-4 mt-3 text-xs">
-                <span className="text-green-600 dark:text-green-400 font-medium">✓ {safeCount} safe</span>
-                <span className="text-red-600 dark:text-red-400 font-medium">⚠ {riskCount} need fixing</span>
+                <span className="text-success-foreground font-medium">✓ {safeCount} safe</span>
+                <span className="text-danger-foreground font-medium">⚠ {riskCount} need fixing</span>
               </div>
             </div>
           )}
@@ -324,22 +324,22 @@ export default function HomeSafetyWalkthrough() {
                   const roomRisks = room.items.filter(i => states[i.id] === 'risk').length;
 
                   return (
-                    <div key={room.id} className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm">
-                      <button onClick={() => toggle(room.id)} className="w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors">
+                    <div key={room.id} className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm">
+                      <button onClick={() => toggle(room.id)} className="w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-muted transition-colors">
                         <span className="text-3xl">{room.emoji}</span>
                         <div className="flex-1 min-w-0">
-                          <p className="font-semibold text-gray-900 dark:text-gray-100">{room.name}</p>
-                          <p className="text-sm text-gray-500 dark:text-gray-400">
+                          <p className="font-semibold text-foreground ">{room.name}</p>
+                          <p className="text-base text-muted-foreground ">
                             {roomAnswered} of {room.items.length} checked
-                            {roomRisks > 0 && <span className="text-red-600 dark:text-red-400 ml-2">• {roomRisks} need fixing</span>}
+                            {roomRisks > 0 && <span className="text-danger-foreground ml-2">• {roomRisks} need fixing</span>}
                           </p>
                         </div>
-                        {isOpen ? <ChevronUp className="w-5 h-5 text-gray-400" /> : <ChevronDown className="w-5 h-5 text-gray-400" />}
+                        {isOpen ? <ChevronUp className="w-5 h-5 text-muted-foreground" /> : <ChevronDown className="w-5 h-5 text-muted-foreground" />}
                       </button>
 
                       {isOpen && (
-                        <div className="border-t border-gray-100 dark:border-gray-800">
-                          <p className="px-5 py-3 text-sm text-gray-600 dark:text-gray-400 bg-orange-50/50 dark:bg-orange-950/20 italic">
+                        <div className="border-t border-border ">
+                          <p className="px-5 py-3 text-base text-muted-foreground bg-orange-50/50 dark:bg-orange-950/20 italic">
                             {room.intro}
                           </p>
                           <div className="divide-y divide-gray-50 dark:divide-gray-800/50">
@@ -347,14 +347,14 @@ export default function HomeSafetyWalkthrough() {
                               const state = states[item.id] || 'unanswered';
                               return (
                                 <div key={item.id} className="px-5 py-4">
-                                  <p className="font-medium text-gray-800 dark:text-gray-200 mb-2">{item.question}</p>
+                                  <p className="font-medium text-foreground mb-2">{item.question}</p>
                                   <div className="grid grid-cols-2 gap-2 mb-3">
                                     <button
                                       onClick={() => setItemState(item.id, 'safe')}
                                       className={`py-2.5 rounded-xl text-sm font-medium transition-colors ${
                                         state === 'safe'
                                           ? 'bg-green-600 text-white'
-                                          : 'bg-green-50 dark:bg-green-950/30 text-green-700 dark:text-green-300 border border-green-200 dark:border-green-800 hover:bg-green-100 dark:hover:bg-green-950/50'
+                                          : 'bg-green-50 text-success-foreground border border-success-foreground/25 hover:bg-success dark:hover:bg-green-950/50'
                                       }`}
                                     >
                                       ✓ Yes (safe)
@@ -364,17 +364,17 @@ export default function HomeSafetyWalkthrough() {
                                       className={`py-2.5 rounded-xl text-sm font-medium transition-colors ${
                                         state === 'risk'
                                           ? 'bg-red-600 text-white'
-                                          : 'bg-red-50 dark:bg-red-950/30 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800 hover:bg-red-100 dark:hover:bg-red-950/50'
+                                          : 'bg-red-50 text-danger-foreground border border-danger-foreground/25 hover:bg-danger dark:hover:bg-red-950/50'
                                       }`}
                                     >
                                       ⚠ No (need to fix)
                                     </button>
                                   </div>
                                   {state === 'risk' && (
-                                    <div className="mt-2 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-lg p-3">
-                                      <p className="text-xs font-semibold text-amber-800 dark:text-amber-200 uppercase tracking-wide mb-1">How to fix this</p>
-                                      <p className="text-sm text-amber-900 dark:text-amber-100">{item.fix}</p>
-                                      <p className="text-xs text-amber-700 dark:text-amber-300 mt-2 italic">{item.why}</p>
+                                    <div className="mt-2 bg-warn border border-warn-foreground/25 rounded-lg p-3">
+                                      <p className="text-xs font-semibold text-warn-foreground uppercase tracking-wide mb-1">How to fix this</p>
+                                      <p className="text-base text-warn-foreground ">{item.fix}</p>
+                                      <p className="text-sm text-warn-foreground mt-2 italic">{item.why}</p>
                                     </div>
                                   )}
                                 </div>
@@ -407,19 +407,19 @@ export default function HomeSafetyWalkthrough() {
               <div className="text-center mb-6 print:mb-2">
                 {risks.length === 0 ? (
                   <>
-                    <Trophy className="w-16 h-16 mx-auto text-green-500 mb-3" />
-                    <h2 className="text-2xl font-bold text-green-700 dark:text-green-400">Great work!</h2>
-                    <p className="text-gray-600 dark:text-gray-400">No safety risks identified in your home.</p>
+                    <Trophy className="w-16 h-16 mx-auto text-success-foreground mb-3" />
+                    <h2 className="text-2xl font-bold text-success-foreground ">Great work!</h2>
+                    <p className="text-muted-foreground ">No safety risks identified in your home.</p>
                   </>
                 ) : (
                   <>
-                    <AlertCircle className="w-16 h-16 mx-auto text-amber-500 mb-3 print:hidden" />
-                    <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Your Safety Action Plan</h2>
-                    <p className="text-gray-600 dark:text-gray-400">
+                    <AlertCircle className="w-16 h-16 mx-auto text-warn-foreground mb-3 print:hidden" />
+                    <h2 className="text-2xl font-bold text-foreground ">Your Safety Action Plan</h2>
+                    <p className="text-muted-foreground ">
                       {risks.length} item{risks.length === 1 ? '' : 's'} to address
                       {highPriorityRisks.length > 0 && ` (${highPriorityRisks.length} high priority)`}
                     </p>
-                    <p className="hidden print:block text-sm mt-1 text-gray-500">Generated {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                    <p className="hidden print:block text-base mt-1 text-muted-foreground">Generated {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
                   </>
                 )}
               </div>
@@ -429,12 +429,12 @@ export default function HomeSafetyWalkthrough() {
                   {/* High priority */}
                   {highPriorityRisks.length > 0 && (
                     <>
-                      <h3 className="text-lg font-bold text-red-700 dark:text-red-400 mt-4 print:mt-2">🚨 High Priority — Fix Soon</h3>
+                      <h3 className="text-lg font-bold text-danger-foreground mt-4 print:mt-2">🚨 High Priority — Fix Soon</h3>
                       {highPriorityRisks.map(item => (
-                        <div key={item.id} className="bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-900 rounded-xl p-4">
-                          <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">{item.roomEmoji} {item.roomName}</p>
-                          <p className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{item.question}</p>
-                          <p className="text-sm text-gray-700 dark:text-gray-300"><strong>Fix:</strong> {item.fix}</p>
+                        <div key={item.id} className="bg-danger border border-danger-foreground/25 rounded-xl p-4">
+                          <p className="text-base text-muted-foreground mb-1">{item.roomEmoji} {item.roomName}</p>
+                          <p className="font-semibold text-foreground mb-2">{item.question}</p>
+                          <p className="text-base text-foreground "><strong>Fix:</strong> {item.fix}</p>
                         </div>
                       ))}
                     </>
@@ -442,12 +442,12 @@ export default function HomeSafetyWalkthrough() {
                   {/* Medium / low */}
                   {risks.filter(r => r.priority !== 'high').length > 0 && (
                     <>
-                      <h3 className="text-lg font-bold text-amber-700 dark:text-amber-400 mt-6 print:mt-2">📋 Address When You Can</h3>
+                      <h3 className="text-lg font-bold text-warn-foreground mt-6 print:mt-2">📋 Address When You Can</h3>
                       {risks.filter(r => r.priority !== 'high').map(item => (
-                        <div key={item.id} className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-900 rounded-xl p-4">
-                          <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">{item.roomEmoji} {item.roomName}</p>
-                          <p className="font-semibold text-gray-900 dark:text-gray-100 mb-2">{item.question}</p>
-                          <p className="text-sm text-gray-700 dark:text-gray-300"><strong>Fix:</strong> {item.fix}</p>
+                        <div key={item.id} className="bg-warn border border-warn-foreground/25 rounded-xl p-4">
+                          <p className="text-base text-muted-foreground mb-1">{item.roomEmoji} {item.roomName}</p>
+                          <p className="font-semibold text-foreground mb-2">{item.question}</p>
+                          <p className="text-base text-foreground "><strong>Fix:</strong> {item.fix}</p>
                         </div>
                       ))}
                     </>
@@ -458,7 +458,7 @@ export default function HomeSafetyWalkthrough() {
               <div className="flex gap-3 print:hidden">
                 <button
                   onClick={() => setShowRisks(false)}
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors text-sm font-medium"
+                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-border text-muted-foreground hover:bg-muted transition-colors text-sm font-medium"
                 >
                   Back to Walkthrough
                 </button>
@@ -477,14 +477,14 @@ export default function HomeSafetyWalkthrough() {
 
           {/* Footer note */}
           {!showRisks && allDone && (
-            <div className="mt-6 bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 rounded-xl p-4 text-center print:hidden">
-              <CheckCircle2 className="w-8 h-8 text-green-600 dark:text-green-400 mx-auto mb-2" />
-              <p className="font-semibold text-green-800 dark:text-green-200">Walkthrough complete!</p>
-              <p className="text-sm text-green-700 dark:text-green-300">Click "See My Action Plan" above for a printable summary.</p>
+            <div className="mt-6 bg-success border border-success-foreground/25 rounded-xl p-4 text-center print:hidden">
+              <CheckCircle2 className="w-8 h-8 text-success-foreground mx-auto mb-2" />
+              <p className="font-semibold text-success-foreground ">Walkthrough complete!</p>
+              <p className="text-base text-success-foreground ">Click "See My Action Plan" above for a printable summary.</p>
             </div>
           )}
         </div>
-      </div>
+      </main>
     </>
   );
 }

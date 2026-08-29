@@ -22,7 +22,7 @@ export default function SeniorIntergenerational() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SAGE</h2><p>National program. Senior + young adult connections.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Generations United</h2><p>FREE. Find local intergenerational programs. gu.org.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why these work</h2><p>Older adults gain purpose. Young adults gain wisdom. Both gain friendship.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Mentoring linked to slower cognitive decline. You give and receive.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Mentoring linked to slower cognitive decline. You give and receive.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

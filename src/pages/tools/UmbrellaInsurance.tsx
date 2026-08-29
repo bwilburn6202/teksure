@@ -19,14 +19,14 @@ export default function UmbrellaInsurance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it is</h2>
-            <p className="text-sm">Extra liability coverage on top of your home + auto. Kicks in when those run out. $1-2 million coverage typically $150-400/year.</p>
+            <p className="text-base">Extra liability coverage on top of your home + auto. Kicks in when those run out. $1-2 million coverage typically $150-400/year.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When seniors need it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Net worth $500K+</strong> — assets at risk if sued.</li>
               <li><strong>Pool / hot tub</strong> at home.</li>
               <li><strong>Trampoline / playset</strong> for grandkids.</li>
@@ -42,7 +42,7 @@ export default function UmbrellaInsurance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>$1M coverage</strong> — $150-300/year.</li>
               <li><strong>$2M</strong> — $200-400/year.</li>
               <li><strong>$5M+</strong> — for high-net-worth.</li>
@@ -55,7 +55,7 @@ export default function UmbrellaInsurance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it covers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bodily injury you cause (car accident).</li>
               <li>Property damage you cause.</li>
               <li>Personal injury (libel, slander, false arrest).</li>
@@ -69,7 +69,7 @@ export default function UmbrellaInsurance() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to buy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Same insurer as home + auto = bundle discount.</li>
               <li>USAA, State Farm, Liberty Mutual, Allstate all offer.</li>
               <li>RLI Insurance — sometimes cheapest standalone.</li>
@@ -82,7 +82,7 @@ export default function UmbrellaInsurance() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior reality</h3>
-            <p className="text-sm text-muted-foreground">Senior at-fault accidents can result in catastrophic verdicts ($2M+ in serious cases). Umbrella protects retirement savings if you cause severe injury. $200/yr buys massive peace of mind. Especially if you drive + have $500K+ saved.</p>
+            <p className="text-base text-muted-foreground">Senior at-fault accidents can result in catastrophic verdicts ($2M+ in serious cases). Umbrella protects retirement savings if you cause severe injury. $200/yr buys massive peace of mind. Especially if you drive + have $500K+ saved.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function BluetoothPairingTroubleshoot() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick fixes (try in order)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Bluetooth on?</strong> — Settings → Bluetooth → ON.</li>
               <li><strong>Restart Bluetooth</strong> — toggle OFF, wait 5 seconds, toggle ON.</li>
               <li><strong>Restart the device</strong> (the phone, computer, etc.).</li>
@@ -35,7 +35,7 @@ export default function BluetoothPairingTroubleshoot() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AirPods specifically</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open AirPods case lid near iPhone. Wait — pop-up should appear.</li>
               <li>If no pop-up: Settings → Bluetooth → "AirPods" listed but disconnected. Tap to connect.</li>
               <li>If not listed: hold the button on back of case for 15 seconds until light flashes WHITE (not orange).</li>
@@ -48,7 +48,7 @@ export default function BluetoothPairingTroubleshoot() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bluetooth speaker stuck</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Unpair from old phone (or that phone is interfering).</li>
               <li>Hold speaker\'s Bluetooth button for 5-10 seconds → "discoverable" mode.</li>
               <li>Look in your phone\'s Bluetooth list — speaker should appear with name.</li>
@@ -60,7 +60,7 @@ export default function BluetoothPairingTroubleshoot() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bluetooth mouse / keyboard</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Replace batteries.</li>
               <li>Reset device (most have a tiny pinhole reset).</li>
               <li>Computer: Settings → Bluetooth → Forget device → Add new.</li>
@@ -72,7 +72,7 @@ export default function BluetoothPairingTroubleshoot() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Last resort</h3>
-            <p className="text-sm text-muted-foreground">If NOTHING works after 30 minutes — bring the phone or device to Apple Genius Bar / Best Buy Geek Squad. Free 15-minute appointment usually solves what you can\'t.</p>
+            <p className="text-base text-muted-foreground">If NOTHING works after 30 minutes — bring the phone or device to Apple Genius Bar / Best Buy Geek Squad. Free 15-minute appointment usually solves what you can\'t.</p>
           </CardContent>
         </Card>
       </main>

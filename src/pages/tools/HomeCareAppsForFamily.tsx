@@ -99,7 +99,7 @@ export default function HomeCareAppsForFamily() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-rose-500/10 rounded-full">
-                <HeartHandshake className="h-8 w-8 text-rose-600" />
+                <HeartHandshake className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Home Care Apps for Family</h1>
@@ -141,8 +141,8 @@ export default function HomeCareAppsForFamily() {
                         </div>
                       </div>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-2">{s.what}</p>
-                    <p className="text-xs text-muted-foreground mb-2"><strong>How to start:</strong> {s.howToStart}</p>
+                    <p className="text-base text-muted-foreground mb-2">{s.what}</p>
+                    <p className="text-sm text-muted-foreground mb-2"><strong>How to start:</strong> {s.howToStart}</p>
 
                     {s.link && (
                       <a href={s.link} target="_blank" rel="noreferrer"
@@ -158,8 +158,8 @@ export default function HomeCareAppsForFamily() {
 
           <Card className="border-border bg-gradient-to-br from-rose-50 to-pink-50 dark:from-rose-950/20 dark:to-pink-950/20 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A note on which to pick first</p>
-              <p className="text-xs text-muted-foreground mb-3">
+              <p className="text-base font-semibold mb-2">A note on which to pick first</p>
+              <p className="text-sm text-muted-foreground mb-3">
                 If a parent had a fall or new diagnosis this week, start with CaringBridge to update everyone at once, then add Lotsa Helping Hands so neighbors and church friends can sign up to bring meals. CircleOf is the next step once siblings want a daily caregiving chat. Eldercare Locator is the call to make if you need professional help — meals, rides, an aide.
               </p>
               <a href="https://eldercare.acl.gov" target="_blank" rel="noreferrer"
@@ -173,16 +173,16 @@ export default function HomeCareAppsForFamily() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/family-tech-roundtable" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Family Tech Roundtable</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Plan tech help with the family.</p>
+                <p className="font-medium text-base">Family Tech Roundtable</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Plan tech help with the family.</p>
               </Link>
               <Link to="/tools/tech-buddy-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Tech Buddy Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair a parent with a regular helper.</p>
+                <p className="font-medium text-base">Tech Buddy Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair a parent with a regular helper.</p>
               </Link>
               <Link to="/tools/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Account After Loss</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Handle accounts after a death.</p>
+                <p className="font-medium text-base">Account After Loss</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Handle accounts after a death.</p>
               </Link>
             </div>
           </div>

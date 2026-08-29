@@ -74,7 +74,7 @@ export default function CharitableDonationTracker() {
   const sorted = [...donations].sort((a, b) => a.date.localeCompare(b.date));
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Charitable Donation Tracker | TekSure"
         description="Track your charitable donations throughout the year. Print a summary at tax time to support your deductions."
@@ -82,8 +82,8 @@ export default function CharitableDonationTracker() {
 
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4" ref={printRef}>
         <div className="mb-6 print:mb-4">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Charitable Donation Tracker</h1>
-          <p className="text-gray-600 text-lg">
+          <h1 className="text-3xl font-bold text-foreground mb-2">Charitable Donation Tracker</h1>
+          <p className="text-muted-foreground text-lg">
             Record your donations as you make them. Print a full summary when tax season arrives.
           </p>
         </div>
@@ -92,7 +92,7 @@ export default function CharitableDonationTracker() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-blue-600" />
+              <PlusCircle className="h-5 w-5 text-info-foreground" />
               Add a Donation
             </CardTitle>
           </CardHeader>
@@ -137,7 +137,7 @@ export default function CharitableDonationTracker() {
                   id="method"
                   value={form.method}
                   onChange={e => setForm(f => ({ ...f, method: e.target.value }))}
-                  className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white"
+                  className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card"
                 >
                   {PAYMENT_METHODS.map(m => <option key={m}>{m}</option>)}
                 </select>
@@ -153,7 +153,7 @@ export default function CharitableDonationTracker() {
                 />
               </div>
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={handleAdd} size="lg" className="w-full sm:w-auto text-base">
               Add Donation
             </Button>
@@ -165,9 +165,9 @@ export default function CharitableDonationTracker() {
           <div className="mb-6">
             <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
               <div className="flex items-center gap-2">
-                <DollarSign className="h-5 w-5 text-green-600" />
-                <span className="text-xl font-semibold text-gray-800">
-                  Total donated in {currentYear}: <span className="text-green-700">{formatCurrency(totalDonated)}</span>
+                <DollarSign className="h-5 w-5 text-success-foreground" />
+                <span className="text-xl font-semibold text-foreground">
+                  Total donated in {currentYear}: <span className="text-success-foreground">{formatCurrency(totalDonated)}</span>
                 </span>
               </div>
               <Button variant="outline" onClick={handlePrint} className="print:hidden gap-2">
@@ -175,7 +175,7 @@ export default function CharitableDonationTracker() {
                 Print Summary
               </Button>
             </div>
-            <p className="text-sm text-gray-500 print:hidden">
+            <p className="text-base text-muted-foreground print:hidden">
               Keep the receipts or confirmation emails from each organization as supporting documents.
             </p>
           </div>
@@ -183,37 +183,37 @@ export default function CharitableDonationTracker() {
 
         {/* Print header */}
         <div className="hidden print:block mb-4 border-b pb-3">
-          <p className="text-sm text-gray-600">TekSure Charitable Donation Tracker — {currentYear} Summary</p>
-          <p className="text-sm text-gray-600">Printed: {new Date().toLocaleDateString("en-US")}</p>
+          <p className="text-base text-muted-foreground">TekSure Charitable Donation Tracker — {currentYear} Summary</p>
+          <p className="text-base text-muted-foreground">Printed: {new Date().toLocaleDateString("en-US")}</p>
         </div>
 
         {/* Donations list */}
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
+            <CardContent className="py-10 text-center text-muted-foreground">
               <p className="text-lg">No donations recorded yet.</p>
-              <p className="text-sm mt-1">Add your first donation above to get started.</p>
+              <p className="text-base mt-1">Add your first donation above to get started.</p>
             </CardContent>
           </Card>
         ) : (
           <div className="space-y-3">
             {sorted.map(d => (
-              <Card key={d.id} className="border border-gray-200">
+              <Card key={d.id} className="border border-border">
                 <CardContent className="py-3 px-4">
                   <div className="flex items-start justify-between gap-2">
                     <div className="flex-1 min-w-0">
-                      <p className="font-semibold text-gray-900 text-base truncate">{d.organization}</p>
+                      <p className="font-semibold text-foreground text-base truncate">{d.organization}</p>
                       <div className="flex flex-wrap gap-2 mt-1">
-                        <span className="text-green-700 font-medium">{formatCurrency(d.amount)}</span>
-                        <span className="text-gray-500 text-sm">{formatDate(d.date)}</span>
+                        <span className="text-success-foreground font-medium">{formatCurrency(d.amount)}</span>
+                        <span className="text-muted-foreground text-base">{formatDate(d.date)}</span>
                         <Badge variant="secondary" className="text-xs">{d.method}</Badge>
                       </div>
-                      {d.notes && <p className="text-sm text-gray-500 mt-1 italic">{d.notes}</p>}
+                      {d.notes && <p className="text-base text-muted-foreground mt-1 italic">{d.notes}</p>}
                     </div>
                     <Button
                       variant="ghost"
                       size="icon"
-                      className="shrink-0 text-red-400 hover:text-red-600 print:hidden"
+                      className="shrink-0 text-danger-foreground hover:text-danger-foreground print:hidden"
                       onClick={() => handleRemove(d.id)}
                       aria-label="Remove donation"
                     >
@@ -226,10 +226,10 @@ export default function CharitableDonationTracker() {
 
             {/* Print total row */}
             <div className="pt-3 border-t mt-2">
-              <p className="text-lg font-bold text-gray-900 text-right">
+              <p className="text-lg font-bold text-foreground text-right">
                 Total: {formatCurrency(totalDonated)}
               </p>
-              <p className="text-sm text-gray-500 text-right print:hidden">
+              <p className="text-base text-muted-foreground text-right print:hidden">
                 {donations.length} donation{donations.length !== 1 ? "s" : ""} recorded
               </p>
             </div>
@@ -238,10 +238,10 @@ export default function CharitableDonationTracker() {
 
         {/* Tax reminder */}
         {donations.length > 0 && (
-          <Card className="mt-6 bg-blue-50 border-blue-200">
+          <Card className="mt-6 bg-info border-info-foreground/25">
             <CardContent className="py-4 px-4">
-              <p className="text-sm font-semibold text-blue-800 mb-1">Tax Season Reminder</p>
-              <ul className="text-sm text-blue-700 space-y-1 list-disc pl-4">
+              <p className="text-base font-semibold text-info-foreground mb-1">Tax Season Reminder</p>
+              <ul className="text-base text-info-foreground space-y-1 list-disc pl-4">
                 <li>You can only deduct donations to IRS-qualified 501(c)(3) organizations.</li>
                 <li>Cash donations over $250 require a written acknowledgment from the organization.</li>
                 <li>Keep receipts, bank statements, or emails as proof of each donation.</li>
@@ -251,6 +251,6 @@ export default function CharitableDonationTracker() {
           </Card>
         )}
       </div>
-    </div>
+    </main>
   );
 }

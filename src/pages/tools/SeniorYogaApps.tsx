@@ -22,7 +22,7 @@ export default function SeniorYogaApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Chair yoga</h2><p>Search &ldquo;chair yoga seniors&rdquo; on YouTube. No floor work needed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Balance focus</h2><p>Tree Pose, Mountain Pose, and standing leg lifts reduce fall risk by 30%.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Stay safe</h2><p>Practice near a wall or sturdy chair. Stop if anything hurts.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 10 minutes daily beats 60 minutes once a week.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 10 minutes daily beats 60 minutes once a week.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

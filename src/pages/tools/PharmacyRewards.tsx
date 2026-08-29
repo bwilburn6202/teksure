@@ -32,10 +32,10 @@ export default function PharmacyRewards() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function PharmacyRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stack discounts</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Compare prices: GoodRx, SingleCare, your insurance copay, Mark Cuban Cost Plus.</li>
               <li>Use the cheapest path. Sometimes free GoodRx beats your insurance.</li>
               <li>Apply rewards card for that pharmacy.</li>
@@ -57,7 +57,7 @@ export default function PharmacyRewards() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Medicare Part D Plan Finder</strong> — picks plan that covers YOUR specific drugs cheapest.</li>
               <li><strong>$2,000 cap on Part D drugs</strong> (2025+) — total out-of-pocket capped.</li>
               <li><strong>Extra Help</strong> — $0 premiums + tiny copays for low-income.</li>
@@ -70,7 +70,7 @@ export default function PharmacyRewards() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best path</h3>
-            <p className="text-sm text-muted-foreground">Use ONE pharmacy for all prescriptions. Sign up for their free rewards. Try GoodRx for each script. For generic chronic-condition drugs (statins, BP meds, diabetes) — try Mark Cuban Cost Plus first. Often 80-95% cheaper.</p>
+            <p className="text-base text-muted-foreground">Use ONE pharmacy for all prescriptions. Sign up for their free rewards. Try GoodRx for each script. For generic chronic-condition drugs (statins, BP meds, diabetes) — try Mark Cuban Cost Plus first. Often 80-95% cheaper.</p>
           </CardContent>
         </Card>
       </main>

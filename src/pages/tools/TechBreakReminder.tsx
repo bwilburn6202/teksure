@@ -511,14 +511,14 @@ export default function TechBreakReminder() {
         <section className="border-b border-emerald-100 dark:border-emerald-900/30 bg-gradient-to-b from-[#eef4ea] to-[#f7f5ee] dark:from-emerald-950/20 dark:to-background">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-14 w-14 rounded-2xl bg-emerald-100 dark:bg-emerald-950/40 flex items-center justify-center flex-shrink-0">
-                <Leaf className="h-7 w-7 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
+              <div className="h-14 w-14 rounded-2xl bg-success flex items-center justify-center flex-shrink-0">
+                <Leaf className="h-7 w-7 text-success-foreground " aria-hidden="true" />
               </div>
-              <Badge variant="secondary" className="bg-emerald-100 text-emerald-800 hover:bg-emerald-100 border-emerald-200">
+              <Badge variant="secondary" className="bg-success text-success-foreground hover:bg-success border-success-foreground/25">
                 Wellness
               </Badge>
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-emerald-900 dark:text-emerald-100">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-success-foreground ">
               Your Eyes (and Brain) Will Thank You
             </h1>
             <p className="text-xl md:text-2xl text-emerald-800/80 dark:text-emerald-200/80 leading-relaxed">
@@ -530,16 +530,16 @@ export default function TechBreakReminder() {
         <div className="container py-8 pb-24 max-w-4xl space-y-8">
           {/* Focus phase banner */}
           {focusPhaseRemaining !== null && (
-            <Card className="border-emerald-300 bg-emerald-50 dark:bg-emerald-950/30 shadow-sm">
+            <Card className="border-success-foreground/25 bg-success shadow-sm">
               <CardContent className="pt-6 text-center space-y-3">
-                <div className="flex items-center justify-center gap-2 text-emerald-800 dark:text-emerald-200">
+                <div className="flex items-center justify-center gap-2 text-success-foreground ">
                   <Eye className="h-6 w-6" aria-hidden="true" />
                   <span className="text-lg font-semibold">Look at something 20 feet away</span>
                 </div>
-                <div className="text-5xl md:text-6xl font-bold tabular-nums text-emerald-700 dark:text-emerald-300">
+                <div className="text-5xl md:text-6xl font-bold tabular-nums text-success-foreground ">
                   {focusPhaseRemaining}s
                 </div>
-                <p className="text-sm text-emerald-800/80 dark:text-emerald-200/80">
+                <p className="text-base text-emerald-800/80 dark:text-emerald-200/80">
                   A window, a doorway, or anything across the room. We'll chime when you can look back.
                 </p>
               </CardContent>
@@ -548,7 +548,7 @@ export default function TechBreakReminder() {
 
           {/* Active timers dashboard */}
           <section>
-            <h2 className="text-2xl font-bold mb-4 text-emerald-900 dark:text-emerald-100 flex items-center gap-2">
+            <h2 className="text-2xl font-bold mb-4 text-success-foreground flex items-center gap-2">
               <Timer className="h-6 w-6" aria-hidden="true" /> Active reminders
             </h2>
             <div className="grid md:grid-cols-2 gap-4">
@@ -596,25 +596,25 @@ export default function TechBreakReminder() {
           </section>
 
           {/* Sunset card */}
-          <Card className="border-amber-200 bg-amber-50/60 dark:bg-amber-950/20 dark:border-amber-900/40">
+          <Card className="border-warn-foreground/25 bg-amber-50/60 dark:bg-amber-950/20 ">
             <CardContent className="pt-6 flex items-start gap-4">
-              <div className="h-12 w-12 rounded-xl bg-amber-100 dark:bg-amber-900/40 flex items-center justify-center flex-shrink-0">
-                <Sunset className="h-6 w-6 text-amber-700 dark:text-amber-300" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-xl bg-warn flex items-center justify-center flex-shrink-0">
+                <Sunset className="h-6 w-6 text-warn-foreground " aria-hidden="true" />
               </div>
               <div className="flex-1">
                 <div className="flex items-center justify-between gap-3 flex-wrap">
-                  <h3 className="font-semibold text-lg text-amber-900 dark:text-amber-100">Sunset wind-down</h3>
+                  <h3 className="font-semibold text-lg text-warn-foreground ">Sunset wind-down</h3>
                   <Switch
                     checked={settings.enabled.sunset}
                     onCheckedChange={() => toggleReminder('sunset')}
                     aria-label="Toggle sunset wind-down"
                   />
                 </div>
-                <p className="text-sm text-amber-900/80 dark:text-amber-100/80 mt-1">
+                <p className="text-base text-amber-900/80 dark:text-amber-100/80 mt-1">
                   Around sunset (~{sunsetLabel} today), we'll suggest dimming your screen and reducing blue light. Your sleep quality will thank you.
                 </p>
                 {isPastSunset(new Date(now)) && (
-                  <p className="mt-2 text-sm font-medium text-amber-800 dark:text-amber-200 flex items-center gap-1">
+                  <p className="mt-2 text-base font-medium text-warn-foreground flex items-center gap-1">
                     <Sparkles className="h-4 w-4" aria-hidden="true" /> The sun has set. Consider Night Shift or Night Light now.
                   </p>
                 )}
@@ -623,20 +623,20 @@ export default function TechBreakReminder() {
           </Card>
 
           {/* Today's screen time */}
-          <Card className="border-emerald-200 dark:border-emerald-900/40">
+          <Card className="border-success-foreground/25 ">
             <CardHeader>
-              <CardTitle className="text-lg flex items-center gap-2 text-emerald-900 dark:text-emerald-100">
+              <CardTitle className="text-lg flex items-center gap-2 text-success-foreground ">
                 <Clock className="h-5 w-5" aria-hidden="true" /> Today on TekSure
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex items-baseline gap-3 flex-wrap">
-                <span className="text-4xl md:text-5xl font-bold tabular-nums text-emerald-700 dark:text-emerald-300">
+                <span className="text-4xl md:text-5xl font-bold tabular-nums text-success-foreground ">
                   {formatDuration(screenTime)}
                 </span>
-                <span className="text-sm text-muted-foreground">active on this site since midnight</span>
+                <span className="text-base text-muted-foreground">active on this site since midnight</span>
               </div>
-              <p className="text-sm text-muted-foreground mt-3">
+              <p className="text-base text-muted-foreground mt-3">
                 We count only time you've had the page visible — switching tabs or minimizing the window pauses the clock.
               </p>
             </CardContent>
@@ -654,13 +654,13 @@ export default function TechBreakReminder() {
               <div className="flex items-center justify-between gap-4 flex-wrap">
                 <div className="flex items-center gap-3">
                   {settings.sound ? (
-                    <Volume2 className="h-5 w-5 text-emerald-700" aria-hidden="true" />
+                    <Volume2 className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                   ) : (
                     <VolumeX className="h-5 w-5 text-muted-foreground" aria-hidden="true" />
                   )}
                   <div>
                     <p className="font-medium">Gentle chime</p>
-                    <p className="text-sm text-muted-foreground">A soft bell when a reminder fires. Off by default.</p>
+                    <p className="text-base text-muted-foreground">A soft bell when a reminder fires. Off by default.</p>
                   </div>
                 </div>
                 <Switch checked={settings.sound} onCheckedChange={toggleSound} aria-label="Toggle sound" />
@@ -676,7 +676,7 @@ export default function TechBreakReminder() {
                       onClick={() => setIntensity(level)}
                       className={`p-3 rounded-xl border text-sm font-medium transition-colors ${
                         settings.intensity === level
-                          ? 'border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30 text-emerald-800 dark:text-emerald-200'
+                          ? 'border-emerald-500 bg-success text-success-foreground dark:text-emerald-200'
                           : 'hover:border-primary hover:bg-muted/50'
                       }`}
                       aria-pressed={settings.intensity === level}
@@ -690,7 +690,7 @@ export default function TechBreakReminder() {
                     </button>
                   ))}
                 </div>
-                <p className="text-xs text-muted-foreground">
+                <p className="text-sm text-muted-foreground">
                   Eyes: every {Math.round(BASE_INTERVALS.eyes * INTENSITY_MULT[settings.intensity])}m · Posture: every{' '}
                   {Math.round(BASE_INTERVALS.posture * INTENSITY_MULT[settings.intensity])}m · Stretch: every{' '}
                   {Math.round(BASE_INTERVALS.stretch * INTENSITY_MULT[settings.intensity])}m · Water: every{' '}
@@ -710,7 +710,7 @@ export default function TechBreakReminder() {
           <Card>
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
-                <Armchair className="h-5 w-5 text-emerald-700" aria-hidden="true" /> Good posture, at a glance
+                <Armchair className="h-5 w-5 text-success-foreground" aria-hidden="true" /> Good posture, at a glance
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -730,7 +730,7 @@ export default function TechBreakReminder() {
           <Card>
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
-                <HeartPulse className="h-5 w-5 text-emerald-700" aria-hidden="true" /> The five stretches we rotate through
+                <HeartPulse className="h-5 w-5 text-success-foreground" aria-hidden="true" /> The five stretches we rotate through
               </CardTitle>
             </CardHeader>
             <CardContent className="grid md:grid-cols-2 gap-3">
@@ -741,42 +741,42 @@ export default function TechBreakReminder() {
                       {s.icon}
                     </span>
                     <p className="font-semibold">{s.name}</p>
-                    <span className="ml-auto text-xs text-muted-foreground">{s.duration}</span>
+                    <span className="ml-auto text-sm text-muted-foreground">{s.duration}</span>
                   </div>
-                  <p className="text-sm text-muted-foreground">{s.instruction}</p>
+                  <p className="text-base text-muted-foreground">{s.instruction}</p>
                 </div>
               ))}
             </CardContent>
           </Card>
 
           {/* Senior-specific tips */}
-          <Card className="border-emerald-200 bg-[#f0f7ed] dark:bg-emerald-950/20 dark:border-emerald-900/40">
+          <Card className="border-success-foreground/25 bg-[#f0f7ed] dark:bg-emerald-950/20 ">
             <CardHeader>
-              <CardTitle className="text-lg flex items-center gap-2 text-emerald-900 dark:text-emerald-100">
+              <CardTitle className="text-lg flex items-center gap-2 text-success-foreground ">
                 <Leaf className="h-5 w-5" aria-hidden="true" /> Tips for older eyes and older shoulders
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4 text-base">
               <div>
-                <p className="font-semibold text-emerald-900 dark:text-emerald-100">If you have dry eye, blinking exercises help.</p>
+                <p className="font-semibold text-success-foreground ">If you have dry eye, blinking exercises help.</p>
                 <p className="text-emerald-900/80 dark:text-emerald-200/80 mt-1">
                   We blink about half as often when staring at screens. Try this: close your eyes slowly, squeeze gently for 2 seconds, then open. Repeat 5 times every hour. Artificial tears (like Systane or Refresh) are fine to use, but talk to your eye doctor if dryness is persistent.
                 </p>
               </div>
               <div>
-                <p className="font-semibold text-emerald-900 dark:text-emerald-100">Cataracts and screens: talk to your eye doctor.</p>
+                <p className="font-semibold text-success-foreground ">Cataracts and screens: talk to your eye doctor.</p>
                 <p className="text-emerald-900/80 dark:text-emerald-200/80 mt-1">
                   Screens don't cause cataracts, but bright glare can make cloudy vision worse. If text looks smeary or halos appear around lights, schedule a comprehensive eye exam. Cataract surgery today is very safe and often dramatically improves screen use.
                 </p>
               </div>
               <div>
-                <p className="font-semibold text-emerald-900 dark:text-emerald-100">Text-neck is real — prop your phone up, don't hunch.</p>
+                <p className="font-semibold text-success-foreground ">Text-neck is real — prop your phone up, don't hunch.</p>
                 <p className="text-emerald-900/80 dark:text-emerald-200/80 mt-1">
                   Looking down at a phone loads the neck with up to 60 pounds of force. Instead: bring the phone up to eye level, or prop it on a stand. For longer reading, switch to a tablet or computer. Your neck and upper back will feel the difference within days.
                 </p>
               </div>
               <div>
-                <p className="font-semibold text-emerald-900 dark:text-emerald-100">Ask your eye doctor about "computer glasses."</p>
+                <p className="font-semibold text-success-foreground ">Ask your eye doctor about "computer glasses."</p>
                 <p className="text-emerald-900/80 dark:text-emerald-200/80 mt-1">
                   If you already wear bifocals or progressives, a dedicated pair of single-focus "computer distance" glasses can remove the strain of tilting your head to find the right zone.
                 </p>
@@ -788,23 +788,23 @@ export default function TechBreakReminder() {
           <div className="grid md:grid-cols-2 gap-4">
             <a
               href="/tools/accessibility-check"
-              className="block rounded-xl border p-4 hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-colors"
+              className="block rounded-xl border p-4 hover:border-emerald-500 hover:bg-success transition-colors"
             >
-              <p className="font-semibold text-sm flex items-center gap-1">
+              <p className="font-semibold text-base flex items-center gap-1">
                 Accessibility check-up <ChevronRight className="h-4 w-4" />
               </p>
-              <p className="text-xs text-muted-foreground mt-1">
+              <p className="text-sm text-muted-foreground mt-1">
                 Bigger text, higher contrast, louder sound — tune your device for easier use.
               </p>
             </a>
             <a
               href="/digital-detox"
-              className="block rounded-xl border p-4 hover:border-emerald-500 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-colors"
+              className="block rounded-xl border p-4 hover:border-emerald-500 hover:bg-success transition-colors"
             >
-              <p className="font-semibold text-sm flex items-center gap-1">
+              <p className="font-semibold text-base flex items-center gap-1">
                 Digital detox guide <ChevronRight className="h-4 w-4" />
               </p>
-              <p className="text-xs text-muted-foreground mt-1">
+              <p className="text-sm text-muted-foreground mt-1">
                 Gentler ways to step back from screens without going off-grid.
               </p>
             </a>
@@ -822,7 +822,7 @@ export default function TechBreakReminder() {
                 <DialogTitle className="text-2xl flex items-center gap-2">
                   {modal.kind === 'eyes' && (
                     <>
-                      <Eye className="h-6 w-6 text-emerald-600" aria-hidden="true" /> Time to rest your eyes
+                      <Eye className="h-6 w-6 text-success-foreground" aria-hidden="true" /> Time to rest your eyes
                     </>
                   )}
                   {modal.kind === 'stretch' && modal.stretch && (
@@ -832,17 +832,17 @@ export default function TechBreakReminder() {
                   )}
                   {modal.kind === 'posture' && (
                     <>
-                      <Armchair className="h-6 w-6 text-emerald-600" aria-hidden="true" /> Posture check
+                      <Armchair className="h-6 w-6 text-success-foreground" aria-hidden="true" /> Posture check
                     </>
                   )}
                   {modal.kind === 'hydration' && (
                     <>
-                      <Droplets className="h-6 w-6 text-sky-600" aria-hidden="true" /> Take a sip
+                      <Droplets className="h-6 w-6 text-info-foreground" aria-hidden="true" /> Take a sip
                     </>
                   )}
                   {modal.kind === 'sunset' && (
                     <>
-                      <Sunset className="h-6 w-6 text-amber-600" aria-hidden="true" /> Wind down
+                      <Sunset className="h-6 w-6 text-warn-foreground" aria-hidden="true" /> Wind down
                     </>
                   )}
                 </DialogTitle>
@@ -935,15 +935,15 @@ function TimerCard({
             </div>
             <div>
               <p className="font-semibold text-base leading-tight">{title}</p>
-              <p className="text-xs text-muted-foreground mt-0.5">{subtitle}</p>
+              <p className="text-sm text-muted-foreground mt-0.5">{subtitle}</p>
             </div>
           </div>
           <Switch checked={enabled} onCheckedChange={onToggle} aria-label={`Toggle ${title}`} />
         </div>
         <div className="flex items-end justify-between gap-3">
           <div>
-            <p className="text-xs text-muted-foreground">Next in</p>
-            <p className="text-3xl font-bold tabular-nums text-emerald-800 dark:text-emerald-200">
+            <p className="text-sm text-muted-foreground">Next in</p>
+            <p className="text-3xl font-bold tabular-nums text-success-foreground ">
               {enabled ? formatMMSS(seconds) : '--:--'}
             </p>
           </div>
@@ -968,7 +968,7 @@ function PostureItem({ label, detail }: { label: string; detail: string }) {
       <span className="mt-1 h-2.5 w-2.5 rounded-full bg-emerald-500 flex-shrink-0" aria-hidden="true" />
       <div>
         <p className="font-semibold">{label}</p>
-        <p className="text-sm text-muted-foreground">{detail}</p>
+        <p className="text-base text-muted-foreground">{detail}</p>
       </div>
     </li>
   );

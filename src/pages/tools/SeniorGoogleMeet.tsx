@@ -22,7 +22,7 @@ export default function SeniorGoogleMeet() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">60-minute limit</h2><p>Free version cuts off at 60 minutes for groups. Just rejoin.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Calendar integration</h2><p>Schedule meetings in Google Calendar. Auto-sends invite.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Easier than Zoom</h2><p>No login required. Click link, type name, join.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Bookmark meet.google.com on home screen. One-tap video calls.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Bookmark meet.google.com on home screen. One-tap video calls.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

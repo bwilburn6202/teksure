@@ -19,7 +19,7 @@ export default function SmartScaleForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is a smart scale?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bathroom scale that connects to your phone.</li>
               <li>Records every weigh-in automatically.</li>
               <li>Shows weight trend over weeks + months.</li>
@@ -33,7 +33,7 @@ export default function SmartScaleForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why trends matter more than today&apos;s number</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Weight naturally fluctuates 2–5 lbs daily.</li>
               <li>Water, food, time of day all affect it.</li>
               <li>Weekly average is more meaningful.</li>
@@ -47,7 +47,7 @@ export default function SmartScaleForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best options for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Withings Body — $99, syncs Apple Health.</li>
               <li>Eufy Smart Scale P2 — $35, affordable + reliable.</li>
               <li>Fitbit Aria Air — $50, syncs Fitbit app.</li>
@@ -61,7 +61,7 @@ export default function SmartScaleForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download the scale&apos;s companion app.</li>
               <li>Create account — enter age, height, goal.</li>
               <li>Turn on scale Bluetooth — follow pairing steps.</li>
@@ -75,7 +75,7 @@ export default function SmartScaleForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Healthy habits with scale</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Weigh same time every day — morning, before eating.</li>
               <li>Same clothing (or none) each time.</li>
               <li>Don&apos;t obsess over daily number.</li>
@@ -89,7 +89,7 @@ export default function SmartScaleForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">No Bluetooth? Simple option</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Not everyone wants Bluetooth scale.</li>
               <li>Regular scale + notebook log works fine.</li>
               <li>Write date + weight each morning.</li>
@@ -103,7 +103,7 @@ export default function SmartScaleForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Alert for CHF and kidney patients</h3>
-            <p className="text-sm text-muted-foreground">If you have congestive heart failure, kidney disease, or take water pills — daily weighing is medically important, not optional. Sudden weight gain of 2–3 lbs in a day often means fluid retention requiring medication adjustment. Many cardiologists say a smart scale that alerts you to sudden gain is one of the best investments their patients can make.</p>
+            <p className="text-base text-muted-foreground">If you have congestive heart failure, kidney disease, or take water pills — daily weighing is medically important, not optional. Sudden weight gain of 2–3 lbs in a day often means fluid retention requiring medication adjustment. Many cardiologists say a smart scale that alerts you to sudden gain is one of the best investments their patients can make.</p>
           </CardContent>
         </Card>
       </main>

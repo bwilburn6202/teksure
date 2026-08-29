@@ -19,7 +19,7 @@ export default function KindleUnlimitedScribdReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Kindle Unlimited</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$11.99/month — unlimited from KU library.</li>
               <li>2 million+ books available.</li>
               <li>Read on Kindle device or app.</li>
@@ -33,7 +33,7 @@ export default function KindleUnlimitedScribdReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Scribd (Everand)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$11.99/month — books, audiobooks, magazines.</li>
               <li>Now called &quot;Everand&quot;.</li>
               <li>Larger bestseller selection than KU.</li>
@@ -47,7 +47,7 @@ export default function KindleUnlimitedScribdReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Audible (audiobooks)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$14.95/month — 1 audiobook credit + Audible Plus library.</li>
               <li>Premium Plus: $7.95/month for Plus library only.</li>
               <li>Great for car listening.</li>
@@ -61,7 +61,7 @@ export default function KindleUnlimitedScribdReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">FREE: Library + Libby</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Get library card — usually free.</li>
               <li>Download Libby app.</li>
               <li>Borrow ebooks + audiobooks free.</li>
@@ -75,7 +75,7 @@ export default function KindleUnlimitedScribdReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hoopla — also free</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free with library card.</li>
               <li>No wait lists.</li>
               <li>Books, audiobooks, music, movies.</li>
@@ -89,7 +89,7 @@ export default function KindleUnlimitedScribdReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Which to choose?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heavy reader: Library + Libby (free) often enough.</li>
               <li>Audiobooks lover: Audible.</li>
               <li>Magazines + books: Scribd/Everand.</li>
@@ -103,7 +103,7 @@ export default function KindleUnlimitedScribdReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try Libby first — it&apos;s free</h3>
-            <p className="text-sm text-muted-foreground">Before paying $12/month for any service, get a library card and download Libby. Most seniors find the free library app provides plenty of reading material with zero cost. If you read 20+ books per month and find Libby&apos;s wait lists frustrating, then Kindle Unlimited makes sense. Audible is the only one truly worth paying for if you love audiobooks specifically.</p>
+            <p className="text-base text-muted-foreground">Before paying $12/month for any service, get a library card and download Libby. Most seniors find the free library app provides plenty of reading material with zero cost. If you read 20+ books per month and find Libby&apos;s wait lists frustrating, then Kindle Unlimited makes sense. Audible is the only one truly worth paying for if you love audiobooks specifically.</p>
           </CardContent>
         </Card>
       </main>

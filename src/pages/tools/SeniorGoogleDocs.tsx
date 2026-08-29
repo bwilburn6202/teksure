@@ -22,7 +22,7 @@ export default function SeniorGoogleDocs() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share with family</h2><p>Share button → email. They edit. You see changes live.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Convert to PDF</h2><p>File → Download → PDF. Email or print.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Templates</h2><p>Pre-made templates for letters, resumes, recipes. Click File → Template Gallery.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Make font bigger before typing — View → 150% zoom.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Make font bigger before typing — View → 150% zoom.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

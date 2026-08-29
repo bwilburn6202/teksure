@@ -22,7 +22,7 @@ export default function SeniorOnlineGlasses() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Get prescription</h2><p>Ask eye doctor for &ldquo;PD&rdquo; (pupillary distance). They legally must give your prescription.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Progressive lenses</h2><p>$60-$120 online vs $400-$800 in store. Same quality.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Try at home</h2><p>Warby ships 5 frames free. Try at home. Mail back. Buy your favorite.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Many Medicare Advantage plans include a $200/year glasses benefit. Check yours.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Many Medicare Advantage plans include a $200/year glasses benefit. Check yours.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

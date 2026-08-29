@@ -22,7 +22,7 @@ export default function SeniorWildlifeCams() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cellular trail cams</h2><p>$200+. Send photos to your phone. No need to retrieve SD card.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Setup</h2><p>Mount on tree at chest height. Aim toward likely paths.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Privacy</h2><p>Inform neighbors if visible from their property. Most love seeing wildlife photos.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Photos at 3 AM are best — most active wildlife time.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Photos at 3 AM are best — most active wildlife time.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

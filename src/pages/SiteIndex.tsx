@@ -334,7 +334,7 @@ const EntryRow = ({ entry }: { entry: Entry }) => (
         <span className="text-base font-medium text-foreground group-hover:text-primary leading-snug">
           {entry.label}
         </span>
-        <span className="text-sm text-muted-foreground leading-snug">
+        <span className="text-base text-muted-foreground leading-snug">
           {entry.description}
         </span>
       </span>
@@ -389,6 +389,7 @@ const SiteIndex = () => {
         }}
       />
       <Navbar />
+      <main className="flex-1">
 
       {/* Hero */}
       <section className="border-b border-border">
@@ -421,7 +422,7 @@ const SiteIndex = () => {
               />
             </div>
             <p
-              className="text-sm text-muted-foreground mt-4"
+              className="text-base text-muted-foreground mt-4"
               aria-live="polite"
             >
               {q ? (
@@ -581,6 +582,7 @@ const SiteIndex = () => {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

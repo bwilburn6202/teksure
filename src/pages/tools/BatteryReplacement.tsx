@@ -19,7 +19,7 @@ export default function BatteryReplacement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to replace battery</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Phone dies before lunch.</li>
               <li>Laptop won&apos;t hold charge over 2 hours.</li>
               <li>Phone shuts off unexpectedly.</li>
@@ -32,7 +32,7 @@ export default function BatteryReplacement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone replacement options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Store</strong> — $89-119. Genuine. Best quality.</li>
               <li><strong>uBreakiFix (Asurion)</strong> — Apple-authorized. Same quality. Often faster.</li>
               <li><strong>Local repair shop</strong> — $50-80. Quality varies.</li>
@@ -45,7 +45,7 @@ export default function BatteryReplacement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Laptop battery replacement</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mac</strong> — Apple replaces $129-199.</li>
               <li><strong>Windows laptop</strong> — manufacturer site $50-150.</li>
               <li><strong>Best Buy / uBreakiFix</strong> — service for many brands.</li>
@@ -58,7 +58,7 @@ export default function BatteryReplacement() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Extend battery life</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone — Settings → Battery → Optimized Battery Charging ON.</li>
               <li>Don&apos;t leave at 100% all day.</li>
               <li>Don&apos;t let it drain to 0.</li>
@@ -72,7 +72,7 @@ export default function BatteryReplacement() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When to give up</h3>
-            <p className="text-sm text-muted-foreground">If your phone is 7+ years old + slow + battery dying — replace. New phone gets security updates. iPhone SE ($429) cheap entry. Old phones eventually dropped from updates = security risk.</p>
+            <p className="text-base text-muted-foreground">If your phone is 7+ years old + slow + battery dying — replace. New phone gets security updates. iPhone SE ($429) cheap entry. Old phones eventually dropped from updates = security risk.</p>
           </CardContent>
         </Card>
       </main>

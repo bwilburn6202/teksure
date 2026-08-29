@@ -211,7 +211,7 @@ export default function TwoFactorRecoveryPlan() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-indigo-500/10 rounded-full">
-                <KeyRound className="h-8 w-8 text-indigo-600" aria-hidden="true" />
+                <KeyRound className="h-8 w-8 text-primary" aria-hidden="true" />
               </div>
             </div>
             <Badge variant="secondary" className="mb-3">Free Tool · 5 minutes</Badge>
@@ -238,7 +238,7 @@ export default function TwoFactorRecoveryPlan() {
               <Card>
                 <CardContent className="p-6">
                   <h2 className="text-lg font-semibold mb-2">Step 1: Which accounts have 2-factor turned on?</h2>
-                  <p className="text-sm text-muted-foreground mb-5">
+                  <p className="text-base text-muted-foreground mb-5">
                     Check every account where you receive a text code, use an authenticator app, or
                     get a code by email when you sign in. We\'ll build a recovery plan for each.
                   </p>
@@ -269,7 +269,7 @@ export default function TwoFactorRecoveryPlan() {
                           />
                           <div className="min-w-0 flex-1">
                             <p className="font-medium">{acc.label}</p>
-                            <p className="text-xs text-muted-foreground mt-0.5">{acc.why}</p>
+                            <p className="text-sm text-muted-foreground mt-0.5">{acc.why}</p>
                           </div>
                         </label>
                       );
@@ -298,10 +298,10 @@ export default function TwoFactorRecoveryPlan() {
               <Card className="border-dashed">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-3">
-                    <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <AlertTriangle className="h-5 w-5 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <div>
                       <h3 className="font-semibold mb-1">Why this matters</h3>
-                      <p className="text-sm text-muted-foreground leading-relaxed">
+                      <p className="text-base text-muted-foreground leading-relaxed">
                         Two-factor authentication is excellent security — but if you lose your phone
                         without a backup plan, recovery can take 2 days for a bank account or 2
                         weeks for an Apple ID. Most people only realize this AFTER they need it.
@@ -334,7 +334,7 @@ export default function TwoFactorRecoveryPlan() {
                     <Lock className="h-5 w-5 text-muted-foreground" aria-hidden="true" />
                     Recover these accounts in this order
                   </h3>
-                  <p className="text-sm text-muted-foreground mb-5">
+                  <p className="text-base text-muted-foreground mb-5">
                     Higher priority means recovery is more urgent or unblocks other accounts. Work
                     through them in order — start with the highest-priority account.
                   </p>
@@ -349,20 +349,20 @@ export default function TwoFactorRecoveryPlan() {
                         >
                           <div className="flex items-start gap-3">
                             <div className="h-9 w-9 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                              <span className="text-sm font-bold text-primary">{i + 1}</span>
+                              <span className="text-base font-bold text-primary">{i + 1}</span>
                             </div>
                             <div className="flex-1 min-w-0">
                               <div className="flex items-center gap-2 flex-wrap">
                                 <Icon className="h-4 w-4 text-muted-foreground" aria-hidden="true" />
                                 <h4 className="font-semibold">{acc.label}</h4>
                               </div>
-                              <p className="text-sm text-muted-foreground mt-1">{acc.why}</p>
+                              <p className="text-base text-muted-foreground mt-1">{acc.why}</p>
                             </div>
                           </div>
-                          <ul className="ml-12 space-y-2 text-sm">
+                          <ul className="ml-12 space-y-2 text-base">
                             {acc.recoverySteps.map((step, j) => (
                               <li key={j} className="flex gap-2">
-                                <CheckCircle2 className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                                <CheckCircle2 className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                                 <span>{step}</span>
                               </li>
                             ))}
@@ -383,11 +383,11 @@ export default function TwoFactorRecoveryPlan() {
                         <h4 className="font-semibold mb-2">{opt.label}</h4>
                         <div className="grid sm:grid-cols-3 gap-3 text-xs">
                           <div>
-                            <p className="font-medium text-emerald-700 dark:text-emerald-400 mb-1">Pros</p>
+                            <p className="font-medium text-success-foreground mb-1">Pros</p>
                             <p className="text-muted-foreground">{opt.pros}</p>
                           </div>
                           <div>
-                            <p className="font-medium text-amber-700 dark:text-amber-400 mb-1">Cons</p>
+                            <p className="font-medium text-warn-foreground mb-1">Cons</p>
                             <p className="text-muted-foreground">{opt.cons}</p>
                           </div>
                           <div>
@@ -407,7 +407,7 @@ export default function TwoFactorRecoveryPlan() {
                     <ArrowRight className="h-5 w-5 text-primary" aria-hidden="true" />
                     The 30-minute action plan
                   </h3>
-                  <ol className="space-y-3 text-sm">
+                  <ol className="space-y-3 text-base">
                     <li className="flex gap-3">
                       <span className="font-bold text-primary">1.</span>
                       <span>
@@ -469,7 +469,7 @@ export default function TwoFactorRecoveryPlan() {
             </>
           )}
 
-          <p className="text-xs text-muted-foreground text-center max-w-prose mx-auto print:mt-6">
+          <p className="text-sm text-muted-foreground text-center max-w-prose mx-auto print:mt-6">
             Built from public guidance by Apple, Google, Microsoft, and the FTC. Nothing you select
             on this page is recorded — the plan is generated entirely in your browser.
           </p>

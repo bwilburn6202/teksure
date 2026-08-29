@@ -19,7 +19,7 @@ export default function SeniorRadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iHeartRadio (free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free app — local FM/AM stations.</li>
               <li>Listen to radio anywhere via internet.</li>
               <li>Hometown stations on vacation.</li>
@@ -33,7 +33,7 @@ export default function SeniorRadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">TuneIn Radio</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>100,000+ stations worldwide.</li>
               <li>Free with optional Premium.</li>
               <li>NPR + BBC + foreign stations.</li>
@@ -47,7 +47,7 @@ export default function SeniorRadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SiriusXM</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Subscription radio — $10–$25/month.</li>
               <li>Often free in new cars first 3 months.</li>
               <li>Howard Stern, Andy Cohen, etc.</li>
@@ -61,7 +61,7 @@ export default function SeniorRadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SiriusXM senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Negotiate rate — call when subscription expires.</li>
               <li>Often willing to discount $5–$10.</li>
               <li>40s, 50s, 60s, 70s music channels.</li>
@@ -75,7 +75,7 @@ export default function SeniorRadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">NPR + BBC apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NPR One — all NPR content free.</li>
               <li>BBC Sounds — UK news + dramas.</li>
               <li>NPR Live — local NPR station.</li>
@@ -89,7 +89,7 @@ export default function SeniorRadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Listen on smart speaker</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Alexa, play [station] on iHeartRadio.&quot;</li>
               <li>&quot;Hey Google, play NPR.&quot;</li>
               <li>&quot;Hey Siri, play KQED.&quot;</li>
@@ -103,7 +103,7 @@ export default function SeniorRadioApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">iHeartRadio free is plenty</h3>
-            <p className="text-sm text-muted-foreground">For most seniors, free iHeartRadio is enough. Listen to your hometown stations even when traveling. NPR app for news. BBC app for international news. SiriusXM only worth paying for if you commute long distances and love their decade music or talk shows. Try free options first.</p>
+            <p className="text-base text-muted-foreground">For most seniors, free iHeartRadio is enough. Listen to your hometown stations even when traveling. NPR app for news. BBC app for international news. SiriusXM only worth paying for if you commute long distances and love their decade music or talk shows. Try free options first.</p>
           </CardContent>
         </Card>
       </main>

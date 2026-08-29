@@ -20,9 +20,9 @@ export default function SeniorVitaminApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medisafe</h2><p>FREE. Add vitamins as &ldquo;medication.&rdquo; Reminders + tracking.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Care/of</h2><p>$20+/month. Personalized vitamin packs by mail. Quiz-based recommendations.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior tip</h2><p>Bring all bottles to next doctor visit. Pharmacist reviews for free.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common dangerous combos</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Warfarin + vitamin K</li><li>St John&apos;s Wort + many drugs</li><li>Calcium + thyroid meds</li><li>Grapefruit + statins</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common dangerous combos</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Warfarin + vitamin K</li><li>St John&apos;s Wort + many drugs</li><li>Calcium + thyroid meds</li><li>Grapefruit + statins</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip useless</h2><p>Most seniors don&apos;t need a multivitamin if eating well. Save money.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Take vitamins with food. Better absorption + less stomach upset.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Take vitamins with food. Better absorption + less stomach upset.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

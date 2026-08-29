@@ -22,7 +22,7 @@ export default function SeniorAirQualityApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why critical for seniors</h2><p>Asthma, COPD, heart conditions all worsen with bad air. AQI over 100 = stay indoors.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Wildfire smoke</h2><p>Apps track wildfire smoke spread. Crucial in West and California.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pollen tracking</h2><p>Pollen.com app — alerts when allergens are high.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: AQI over 150 = wear N95 mask outside. Saves lung damage.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: AQI over 150 = wear N95 mask outside. Saves lung damage.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

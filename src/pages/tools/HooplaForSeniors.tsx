@@ -19,7 +19,7 @@ export default function HooplaForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What Hoopla offers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Movies + TV shows</strong> — many classics + indie films.</li>
               <li><strong>Music albums</strong> — borrow full albums.</li>
               <li><strong>Audiobooks</strong> — different selection than Libby.</li>
@@ -33,7 +33,7 @@ export default function HooplaForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (3 minutes)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Hoopla Digital app.</li>
               <li>Sign up with email + password.</li>
               <li>Search for + select your library.</li>
@@ -47,7 +47,7 @@ export default function HooplaForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">No wait list — instant access</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Unlike Libby — NO HOLDS.</li>
               <li>Click + watch / listen instantly.</li>
               <li>Limit per month (4-12 depending on library).</li>
@@ -61,7 +61,7 @@ export default function HooplaForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch on TV</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hoopla app on Roku, Apple TV, Fire TV, Chromecast.</li>
               <li>Cast from phone to TV.</li>
               <li>Smart TVs (Samsung, LG) often have it built-in.</li>
@@ -73,7 +73,7 @@ export default function HooplaForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-favorite content</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Classic movies (1930s-1980s) — huge selection.</li>
               <li>Older PBS shows.</li>
               <li>Travel documentaries.</li>
@@ -88,7 +88,7 @@ export default function HooplaForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Combine with Libby + Kanopy</h3>
-            <p className="text-sm text-muted-foreground">Use ALL three free apps: Libby (best ebooks/audiobooks), Hoopla (instant movies + music), Kanopy (best documentaries + foreign films). Save $30-50/mo vs paid streaming. All FREE with library card. Some libraries also offer Flipster (free magazines).</p>
+            <p className="text-base text-muted-foreground">Use ALL three free apps: Libby (best ebooks/audiobooks), Hoopla (instant movies + music), Kanopy (best documentaries + foreign films). Save $30-50/mo vs paid streaming. All FREE with library card. Some libraries also offer Flipster (free magazines).</p>
           </CardContent>
         </Card>
       </main>

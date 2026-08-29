@@ -194,7 +194,7 @@ export default function IdTheftRecovery() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-red-500/10 rounded-full">
-                <ShieldX className="h-8 w-8 text-red-600" />
+                <ShieldX className="h-8 w-8 text-danger-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">ID Theft Recovery Wizard</h1>
@@ -210,8 +210,8 @@ export default function IdTheftRecovery() {
           {!submitted ? (
             <Card className="border-border shadow-sm mb-6">
               <CardContent className="p-6">
-                <p className="text-sm font-semibold mb-1">What was stolen or compromised?</p>
-                <p className="text-xs text-muted-foreground mb-4">Pick everything that applies — even if you are not sure.</p>
+                <p className="text-base font-semibold mb-1">What was stolen or compromised?</p>
+                <p className="text-sm text-muted-foreground mb-4">Pick everything that applies — even if you are not sure.</p>
                 <div className="space-y-2">
                   {ITEMS.map(item => {
                     const Icon = item.icon;
@@ -226,8 +226,8 @@ export default function IdTheftRecovery() {
                         <Checkbox checked={checked} onCheckedChange={() => toggle(item.id)} className="mt-1" />
                         <Icon className="h-5 w-5 text-muted-foreground shrink-0 mt-0.5" />
                         <div>
-                          <p className="font-medium text-sm">{item.label}</p>
-                          <p className="text-xs text-muted-foreground mt-0.5">{item.sub}</p>
+                          <p className="font-medium text-base">{item.label}</p>
+                          <p className="text-sm text-muted-foreground mt-0.5">{item.sub}</p>
                         </div>
                       </label>
                     );
@@ -246,12 +246,12 @@ export default function IdTheftRecovery() {
             </Card>
           ) : (
             <>
-              <Card className="border-red-300 bg-red-50 dark:bg-red-950/20 mb-6">
+              <Card className="border-danger-foreground/25 bg-danger mb-6">
                 <CardContent className="p-5 flex gap-3">
-                  <AlertTriangle className="h-5 w-5 text-red-600 shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold text-sm">Do these in order. The "today" calls matter most — every hour counts.</p>
-                    <p className="text-xs text-muted-foreground mt-1">
+                    <p className="font-semibold text-base">Do these in order. The "today" calls matter most — every hour counts.</p>
+                    <p className="text-sm text-muted-foreground mt-1">
                       We do not store any of your selections. This page generates everything client-side.
                     </p>
                   </div>
@@ -269,16 +269,16 @@ export default function IdTheftRecovery() {
                   <section key={tier} className="mb-6">
                     <div className="flex items-center gap-2 mb-3">
                       <Badge variant="outline" className="text-xs">{tierMeta.emoji} {tierMeta.label}</Badge>
-                      <p className="text-xs text-muted-foreground">{tierMeta.desc}</p>
+                      <p className="text-sm text-muted-foreground">{tierMeta.desc}</p>
                     </div>
                     <div className="space-y-3">
                       {plan[tier].map((step, i) => (
                         <Card key={i} className="border-border">
                           <CardContent className="p-4">
-                            <p className="font-semibold text-sm mb-1">{i + 1}. {step.title}</p>
-                            <p className="text-sm text-muted-foreground">{step.detail}</p>
+                            <p className="font-semibold text-base mb-1">{i + 1}. {step.title}</p>
+                            <p className="text-base text-muted-foreground">{step.detail}</p>
                             {step.callOut && (
-                              <p className="text-xs mt-2 p-2 rounded bg-muted/40 border border-border">
+                              <p className="text-sm mt-2 p-2 rounded bg-muted/40 border border-border">
                                 <strong>Tip:</strong> {step.callOut}
                               </p>
                             )}
@@ -316,16 +316,16 @@ export default function IdTheftRecovery() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Spot the next attempt before you click.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Spot the next attempt before you click.</p>
               </Link>
               <Link to="/tools/password-health" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Password Health Check</p>
-                <p className="text-xs text-muted-foreground mt-0.5">See if your password is in a known breach.</p>
+                <p className="font-medium text-base">Password Health Check</p>
+                <p className="text-sm text-muted-foreground mt-0.5">See if your password is in a known breach.</p>
               </Link>
               <Link to="/scam-defense" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Defense Center</p>
-                <p className="text-xs text-muted-foreground mt-0.5">All scam protection in one place.</p>
+                <p className="font-medium text-base">Scam Defense Center</p>
+                <p className="text-sm text-muted-foreground mt-0.5">All scam protection in one place.</p>
               </Link>
             </div>
           </div>

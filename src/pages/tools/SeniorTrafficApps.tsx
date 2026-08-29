@@ -22,7 +22,7 @@ export default function SeniorTrafficApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Avoid highways</h2><p>All apps offer this option. Less stressful for some seniors.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice navigation</h2><p>Always use voice. Eyes on road. No texting/touching phone.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">CarPlay/Android Auto</h2><p>Plug phone into newer cars. Big screen on dashboard.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set Home and Work in app. One-tap navigation home from anywhere.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set Home and Work in app. One-tap navigation home from anywhere.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

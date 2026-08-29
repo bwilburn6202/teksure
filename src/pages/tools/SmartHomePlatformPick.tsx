@@ -27,7 +27,7 @@ export default function SmartHomePlatformPick() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why pick one</h2>
-            <p className="text-sm">If your bulb works with Alexa but your thermostat works with Google — you\'re stuck juggling two apps and two voice assistants. Pick a platform first, then buy devices that work with it. The "Matter" standard is fixing this slowly, but for now — pick one.</p>
+            <p className="text-base">If your bulb works with Alexa but your thermostat works with Google — you\'re stuck juggling two apps and two voice assistants. Pick a platform first, then buy devices that work with it. The "Matter" standard is fixing this slowly, but for now — pick one.</p>
           </CardContent>
         </Card>
 
@@ -37,10 +37,10 @@ export default function SmartHomePlatformPick() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base mb-1">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -49,7 +49,7 @@ export default function SmartHomePlatformPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Match platform to your phone</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone user</strong> → Apple HomeKit (most private) OR Alexa (most devices).</li>
               <li><strong>Samsung Galaxy user</strong> → SmartThings (built in) or Alexa.</li>
               <li><strong>Google Pixel / Android</strong> → Google Home or Alexa.</li>
@@ -61,19 +61,19 @@ export default function SmartHomePlatformPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Start small — first 3 things</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>One smart speaker</strong> — Echo Dot ($20-50) or Nest Mini ($30) for voice control.</li>
               <li><strong>2-3 smart bulbs</strong> — for the lamps you use most.</li>
               <li><strong>Smart plug</strong> ($10-20) — turns ANY device into a "smart" device. Plug a coffee maker into it, schedule "on" at 7 AM.</li>
             </ol>
-            <p className="text-sm mt-2">Total: $80-150. Test if smart home is right for you before going bigger.</p>
+            <p className="text-base mt-2">Total: $80-150. Test if smart home is right for you before going bigger.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior-favorite features</h3>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>"Alexa, turn off all the lights" before bed.</li>
               <li>"Alexa, set a timer for 10 minutes" while cooking.</li>
               <li>"Alexa, drop in on Mom" — instant intercom to family with Echo.</li>

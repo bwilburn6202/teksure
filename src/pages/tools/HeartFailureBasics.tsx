@@ -19,7 +19,7 @@ export default function HeartFailureBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What heart failure is</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Heart pumps less efficiently.</li>
               <li>NOT the same as heart attack.</li>
               <li>Fluid backs up in lungs + body.</li>
@@ -33,7 +33,7 @@ export default function HeartFailureBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily symptoms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Shortness of breath (especially lying down).</li>
               <li>Swelling in legs, ankles, feet.</li>
               <li>Fatigue.</li>
@@ -48,7 +48,7 @@ export default function HeartFailureBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily management</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Weigh every morning. Same time. Same scale.</li>
               <li>Gain 3+ lbs in 2-3 days = call doctor.</li>
               <li>Limit salt under 2,000mg/day (often 1,500).</li>
@@ -63,7 +63,7 @@ export default function HeartFailureBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Critical medications</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ACE/ARBs</strong> — lisinopril, losartan.</li>
               <li><strong>Beta blockers</strong> — carvedilol, metoprolol.</li>
               <li><strong>Diuretics</strong> — furosemide. Removes fluid.</li>
@@ -78,7 +78,7 @@ export default function HeartFailureBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get to ER if</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Severe shortness of breath (can&apos;t lie down).</li>
               <li>Sudden swelling.</li>
               <li>Chest pain.</li>
@@ -93,7 +93,7 @@ export default function HeartFailureBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Get cardiologist + heart failure specialist</h3>
-            <p className="text-sm text-muted-foreground">Many patients only see primary care. Heart failure clinic = specialized + better outcomes. Reduces hospitalizations 50%. Medicare covers. <strong>Heart Failure Society of America</strong> — find specialist. Living well with heart failure possible.</p>
+            <p className="text-base text-muted-foreground">Many patients only see primary care. Heart failure clinic = specialized + better outcomes. Reduces hospitalizations 50%. Medicare covers. <strong>Heart Failure Society of America</strong> — find specialist. Living well with heart failure possible.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorPDFApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">DocuSign</h2><p>If form requires it. Free for receivers. Legal e-signature.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Scan paper to PDF</h2><p>Apple Notes → camera → Scan Documents. Free, sharp results.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Combine PDFs</h2><p>Adobe Acrobat online ($10/month) or free ilovepdf.com.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Save your signature once in Apple Mail. Tap to insert in any future PDF.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Save your signature once in Apple Mail. Tap to insert in any future PDF.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

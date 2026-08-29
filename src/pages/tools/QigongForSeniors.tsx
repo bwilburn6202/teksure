@@ -19,7 +19,7 @@ export default function QigongForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Qigong vs Tai Chi</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Qigong = simpler, repetitive movements.</li>
               <li>Tai Chi = longer flowing sequences.</li>
               <li>Qigong easier for very limited mobility.</li>
@@ -33,7 +33,7 @@ export default function QigongForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Health benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reduces stress + anxiety.</li>
               <li>Improves circulation.</li>
               <li>Better sleep.</li>
@@ -49,7 +49,7 @@ export default function QigongForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy first practice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stand or sit comfortably.</li>
               <li>Breathe slowly through nose.</li>
               <li>Raise arms slowly while inhaling.</li>
@@ -64,7 +64,7 @@ export default function QigongForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best learning resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Lee Holden</strong> — YouTube + courses. Most popular Qigong teacher.</li>
               <li><strong>Qigong with Jeffrey Chand</strong> — YouTube channel.</li>
               <li><strong>5 Element Qigong</strong> by Lee Holden — DVD.</li>
@@ -78,7 +78,7 @@ export default function QigongForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">8 Brocades — classic senior set</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ba Duan Jin — 8 simple movements.</li>
               <li>1,000+ years old.</li>
               <li>Each move 8 reps.</li>
@@ -92,7 +92,7 @@ export default function QigongForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pair with meditation</h3>
-            <p className="text-sm text-muted-foreground">Qigong + meditation = perfect senior daily practice. 10 min movement + 10 min sitting meditation = transformative over months. Both improve cognition, mood, sleep. No equipment needed. Can do home alone or with classes. Most seniors find this most enjoyable exercise.</p>
+            <p className="text-base text-muted-foreground">Qigong + meditation = perfect senior daily practice. 10 min movement + 10 min sitting meditation = transformative over months. Both improve cognition, mood, sleep. No equipment needed. Can do home alone or with classes. Most seniors find this most enjoyable exercise.</p>
           </CardContent>
         </Card>
       </main>

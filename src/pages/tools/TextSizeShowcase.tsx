@@ -16,36 +16,36 @@ const SIZES = [
 
 export default function TextSizeShowcase() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Text Size Showcase | TekSure" description="See the same sentence at every common font size. Find the size that works for your eyes — then ask your family to match it on your devices." />
       <div className="max-w-2xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Type className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Text Size Showcase</h1>
+            <Type className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Text Size Showcase</h1>
           </div>
-          <p className="text-gray-600 text-lg">Scroll through and pick the size that's most comfortable for your eyes. Bookmark this page to show family when adjusting your devices.</p>
+          <p className="text-muted-foreground text-lg">Scroll through and pick the size that's most comfortable for your eyes. Bookmark this page to show family when adjusting your devices.</p>
         </div>
         <div className="space-y-3">
           {SIZES.map(s => (
             <Card key={s.label}>
               <CardContent className="py-4 px-4">
-                <p className="text-xs font-semibold text-blue-600 uppercase tracking-wide mb-2">{s.label}</p>
+                <p className="text-xs font-semibold text-info-foreground uppercase tracking-wide mb-2">{s.label}</p>
                 <p className={s.className}>{SAMPLE}</p>
-                <p className="text-xs text-gray-500 italic mt-2">{s.note}</p>
+                <p className="text-sm text-muted-foreground italic mt-2">{s.note}</p>
               </CardContent>
             </Card>
           ))}
         </div>
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Next step: </span>
               On iPhone, go to Settings → Display & Brightness → Text Size. On Android, go to Settings → Display → Font size. Pick the size that matches what you found comfortable here.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

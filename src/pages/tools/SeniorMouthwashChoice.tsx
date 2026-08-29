@@ -22,7 +22,7 @@ export default function SeniorMouthwashChoice() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sensitive mouth</h2><p>Tom&apos;s of Maine, CloSYS. No alcohol. Gentler.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Avoid alcohol</h2><p>Many seniors with dry mouth should avoid alcohol-based mouthwash. Worsens issue.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Twice daily</h2><p>30 seconds after brushing. Don&apos;t rinse with water after.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Ask dentist which mouthwash for your specific needs.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Ask dentist which mouthwash for your specific needs.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

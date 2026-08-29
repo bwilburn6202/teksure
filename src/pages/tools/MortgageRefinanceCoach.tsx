@@ -19,7 +19,7 @@ export default function MortgageRefinanceCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">When refinancing makes sense</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Current rates are 0.75-1% LOWER than your existing rate AND you\'ll stay in the home 3+ more years.</li>
               <li>You can shorten loan term (30 → 15 year) and afford the higher payment.</li>
               <li>You want to drop PMI (private mortgage insurance).</li>
@@ -32,7 +32,7 @@ export default function MortgageRefinanceCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When NOT to refinance</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Rate savings under 0.5%.</li>
               <li>You plan to sell in 2-3 years.</li>
               <li>Closing costs eat the savings.</li>
@@ -45,16 +45,16 @@ export default function MortgageRefinanceCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The math — break-even</h2>
-            <p className="text-sm mb-2">Closing costs (typically $3,000-6,000) ÷ monthly savings = months to break even.</p>
-            <p className="text-sm">Example: Save $200/month. Closing $4,000. Break even at month 20.</p>
-            <p className="text-sm mt-2">If you\'ll stay past break-even by years — refinance is profitable.</p>
+            <p className="text-base mb-2">Closing costs (typically $3,000-6,000) ÷ monthly savings = months to break even.</p>
+            <p className="text-base">Example: Save $200/month. Closing $4,000. Break even at month 20.</p>
+            <p className="text-base mt-2">If you\'ll stay past break-even by years — refinance is profitable.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to shop</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bankrate.com / NerdWallet</strong> — current rates by zip code.</li>
               <li><strong>Your existing lender</strong> — sometimes offers "streamline" refinance with lower closing costs.</li>
               <li><strong>Local credit union</strong> — often cheapest. NavyFed, USAA for military / families.</li>
@@ -67,7 +67,7 @@ export default function MortgageRefinanceCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch out for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"No closing cost" refis</strong> — the costs are rolled into the loan or a higher rate.</li>
               <li><strong>Cash-out refinance</strong> — fine for clear purposes, but don\'t refi to fund vacations.</li>
               <li><strong>Resetting a 30-year</strong> when you\'re 65 — you might pass before paid off, leaving heirs with the mortgage.</li>
@@ -80,7 +80,7 @@ export default function MortgageRefinanceCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For seniors specifically</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If close to paying off — DON\'T restart 30 years. Better: refi to remaining term (15-year, 10-year).</li>
               <li>If income is reduced — lower payment may help cash flow.</li>
               <li>Check VA loan refinance if veteran — usually lowest rate available.</li>
@@ -92,7 +92,7 @@ export default function MortgageRefinanceCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free tools</h3>
-            <p className="text-sm text-muted-foreground"><strong>Bankrate refinance calculator</strong>, <strong>NerdWallet</strong>, or <strong>your bank\'s app</strong>. Plug in current loan + new rate. Tells you break-even and lifetime savings instantly.</p>
+            <p className="text-base text-muted-foreground"><strong>Bankrate refinance calculator</strong>, <strong>NerdWallet</strong>, or <strong>your bank\'s app</strong>. Plug in current loan + new rate. Tells you break-even and lifetime savings instantly.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorDiabetesEducation() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mayo Clinic</h2><p>FREE app. Doctor-quality diabetes content.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">CGM training</h2><p>Free if you have continuous monitor. Dexcom, Libre offer training.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Diabetes coaching</h2><p>Livongo (now Teladoc Health). Often free through Medicare Advantage.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Take Medicare DSMES. Cuts hospital visits 30%. Better control.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Take Medicare DSMES. Cuts hospital visits 30%. Better control.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

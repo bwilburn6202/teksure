@@ -19,7 +19,7 @@ export default function SeniorDriverEvaluation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Warning signs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Multiple recent fender benders.</li>
               <li>Getting lost in familiar areas.</li>
               <li>Family + friends afraid to ride with you.</li>
@@ -33,7 +33,7 @@ export default function SeniorDriverEvaluation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Driver Rehabilitation Specialist</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Occupational therapist trained in driving.</li>
               <li>Comprehensive driving evaluation.</li>
               <li>2–4 hours, costs $200–$500.</li>
@@ -47,7 +47,7 @@ export default function SeniorDriverEvaluation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AAA Senior Driver tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SeniorDriving.AAA.com — free resources.</li>
               <li>Self-assessment quizzes.</li>
               <li>RoadwiseRX — medication side effects on driving.</li>
@@ -61,7 +61,7 @@ export default function SeniorDriverEvaluation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AARP Smart Driver Course</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Online or in-classroom course.</li>
               <li>4 hours total.</li>
               <li>Insurance discount in many states.</li>
@@ -75,7 +75,7 @@ export default function SeniorDriverEvaluation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Family conversation tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Address concerns early — not after accident.</li>
               <li>Use specific examples without judgment.</li>
               <li>Suggest professional evaluation.</li>
@@ -89,7 +89,7 @@ export default function SeniorDriverEvaluation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Adjusting driving habits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drive only daytime — no night driving.</li>
               <li>Avoid highways or rush hour.</li>
               <li>Stay in familiar areas.</li>
@@ -103,7 +103,7 @@ export default function SeniorDriverEvaluation() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Plan for the day before it comes</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t wait until an accident forces the issue. Set up Uber on your phone NOW while you&apos;re still driving. Identify ride alternatives. Take the AARP Smart Driver Course this year. The hardest part of giving up driving isn&apos;t the act — it&apos;s the feeling of lost independence. Having alternatives ready makes the eventual transition much easier.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t wait until an accident forces the issue. Set up Uber on your phone NOW while you&apos;re still driving. Identify ride alternatives. Take the AARP Smart Driver Course this year. The hardest part of giving up driving isn&apos;t the act — it&apos;s the feeling of lost independence. Having alternatives ready makes the eventual transition much easier.</p>
           </CardContent>
         </Card>
       </main>

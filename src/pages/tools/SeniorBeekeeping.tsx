@@ -22,7 +22,7 @@ export default function SeniorBeekeeping() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Time required</h2><p>Few hours weekly. Most spring/summer. Slow winter.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Allergies</h2><p>Check epinephrine. Stings happen. Have plan.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Honey harvest</h2><p>1 hive = 30-60 lbs honey/year. Sell or gift.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Take beekeeping class first. Don&apos;t buy bees blind.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Take beekeeping class first. Don&apos;t buy bees blind.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function BloodThinnerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common blood thinners</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Eliquis (apixaban)</strong> — most popular. 2x daily.</li>
               <li><strong>Xarelto (rivaroxaban)</strong> — daily.</li>
               <li><strong>Pradaxa (dabigatran)</strong> — 2x daily.</li>
@@ -33,7 +33,7 @@ export default function BloodThinnerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch for bleeding</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Easy bruising — common.</li>
               <li>Nosebleeds.</li>
               <li>Bleeding gums.</li>
@@ -49,7 +49,7 @@ export default function BloodThinnerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wear medical ID bracelet.</li>
               <li>Tell ALL doctors + dentists.</li>
               <li>Use electric razor (not blade).</li>
@@ -65,7 +65,7 @@ export default function BloodThinnerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Warfarin diet (if on it)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vitamin K affects how it works.</li>
               <li>Don&apos;t suddenly change leafy greens.</li>
               <li>Consistent intake = stable INR.</li>
@@ -79,7 +79,7 @@ export default function BloodThinnerGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Eliquis $500-700/mo brand.</li>
               <li>Manufacturer assistance programs.</li>
               <li>Generic apixaban arriving 2026.</li>
@@ -93,7 +93,7 @@ export default function BloodThinnerGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Surgery prep</h3>
-            <p className="text-sm text-muted-foreground">Most surgeries require stopping blood thinner days before. NEVER stop without doctor. Some procedures (cataract surgery) safe to continue. Always tell every doctor + dentist about blood thinner. Carry list of medications.</p>
+            <p className="text-base text-muted-foreground">Most surgeries require stopping blood thinner days before. NEVER stop without doctor. Some procedures (cataract surgery) safe to continue. Always tell every doctor + dentist about blood thinner. Carry list of medications.</p>
           </CardContent>
         </Card>
       </main>

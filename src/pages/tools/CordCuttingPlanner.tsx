@@ -77,28 +77,28 @@ export default function CordCuttingPlanner() {
         title="Cord-Cutting Savings Planner — TekSure"
         description="See how much you could save by cancelling cable and switching to streaming services. Enter your current cable bill and pick the services you want."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4">
+      <main className="min-h-screen bg-muted py-8 px-4">
         <div className="max-w-2xl mx-auto">
 
           <div className="text-center mb-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-purple-100 dark:bg-purple-950/60 mb-4">
-              <Tv className="w-8 h-8 text-purple-600 dark:text-purple-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-4">
+              <Tv className="w-8 h-8 text-primary " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Cord-Cutting Savings Planner</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Cord-Cutting Savings Planner</h1>
+            <p className="text-lg text-muted-foreground ">
               See how much you could save by cancelling cable and switching to streaming. The average household saves $100+ per month.
             </p>
           </div>
 
           {/* Step 1 — Current bills */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm mb-4">
-            <p className="font-bold text-gray-900 dark:text-gray-100 text-lg mb-1">Step 1 — Your current monthly bills</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Check your most recent bill or bank statement.</p>
+          <div className="bg-card rounded-2xl border border-border p-5 shadow-sm mb-4">
+            <p className="font-bold text-foreground text-lg mb-1">Step 1 — Your current monthly bills</p>
+            <p className="text-base text-muted-foreground mb-4">Check your most recent bill or bank statement.</p>
             <div className="space-y-3">
               <div className="flex items-center gap-3">
-                <label className="w-44 text-sm font-medium text-gray-700 dark:text-gray-300 flex-shrink-0">Cable TV bill</label>
+                <label className="w-44 text-sm font-medium text-foreground flex-shrink-0">Cable TV bill</label>
                 <div className="relative flex-1">
-                  <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">$</span>
+                  <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
                   <input
                     type="number"
                     inputMode="decimal"
@@ -106,17 +106,17 @@ export default function CordCuttingPlanner() {
                     value={cableBill}
                     onChange={e => setCableBill(e.target.value)}
                     placeholder="e.g. 120"
-                    className="w-full pl-7 pr-3 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-purple-400"
+                    className="w-full pl-7 pr-3 py-2.5 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-purple-400"
                   />
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <label className="w-44 text-sm font-medium text-gray-700 dark:text-gray-300 flex-shrink-0">
+                <label className="w-44 text-sm font-medium text-foreground flex-shrink-0">
                   Internet bill
-                  <span className="block text-xs font-normal text-gray-400">If bundled with cable, use 0</span>
+                  <span className="block text-sm font-normal text-muted-foreground">If bundled with cable, use 0</span>
                 </label>
                 <div className="relative flex-1">
-                  <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">$</span>
+                  <span className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground">$</span>
                   <input
                     type="number"
                     inputMode="decimal"
@@ -124,13 +124,13 @@ export default function CordCuttingPlanner() {
                     value={internetCost}
                     onChange={e => setInternetCost(e.target.value)}
                     placeholder="e.g. 60"
-                    className="w-full pl-7 pr-3 py-2.5 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-purple-400"
+                    className="w-full pl-7 pr-3 py-2.5 rounded-lg border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-purple-400"
                   />
                 </div>
               </div>
               {cable > 0 && (
-                <p className="text-sm text-gray-500 dark:text-gray-400 pt-1">
-                  Current monthly total: <span className="font-semibold text-gray-900 dark:text-gray-100">${(cable + internet).toFixed(0)}</span>
+                <p className="text-base text-muted-foreground pt-1">
+                  Current monthly total: <span className="font-semibold text-foreground ">${(cable + internet).toFixed(0)}</span>
                   {cable > 0 && internet > 0 && ` (${cable.toFixed(0)} cable + ${internet.toFixed(0)} internet)`}
                 </p>
               )}
@@ -138,9 +138,9 @@ export default function CordCuttingPlanner() {
           </div>
 
           {/* Step 2 — Choose services */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm mb-4">
-            <p className="font-bold text-gray-900 dark:text-gray-100 text-lg mb-1">Step 2 — Pick the services you want</p>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Choose as many or as few as you like. Start with 1–2 and add more later.</p>
+          <div className="bg-card rounded-2xl border border-border p-5 shadow-sm mb-4">
+            <p className="font-bold text-foreground text-lg mb-1">Step 2 — Pick the services you want</p>
+            <p className="text-base text-muted-foreground mb-4">Choose as many or as few as you like. Start with 1–2 and add more later.</p>
             <div className="space-y-2">
               {visibleServices.map(service => {
                 const isSelected = selectedServices.has(service.id);
@@ -150,7 +150,7 @@ export default function CordCuttingPlanner() {
                     onClick={() => toggleService(service.id)}
                     className={`w-full flex items-center gap-3 p-3 rounded-xl border-2 text-left transition-all ${
                       isSelected
-                        ? 'border-purple-500 bg-purple-50 dark:bg-purple-950/30'
+                        ? 'border-purple-500 bg-primary/10 dark:bg-purple-950/30'
                         : 'border-gray-200 dark:border-gray-700 hover:border-purple-300'
                     }`}
                   >
@@ -161,20 +161,20 @@ export default function CordCuttingPlanner() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className={`font-semibold text-sm ${isSelected ? 'text-purple-800 dark:text-purple-200' : 'text-gray-900 dark:text-gray-100'}`}>
+                        <span className={`font-semibold text-base ${isSelected ? 'text-purple-800 dark:text-purple-200' : 'text-gray-900 dark:text-gray-100'}`}>
                           {service.name}
                         </span>
                         {service.monthlyPrice === 0 && (
-                          <span className="text-xs bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 px-1.5 py-0.5 rounded font-medium">FREE</span>
+                          <span className="text-sm bg-success text-success-foreground px-1.5 py-0.5 rounded font-medium">FREE</span>
                         )}
                       </div>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">{service.description}</p>
+                      <p className="text-sm text-muted-foreground ">{service.description}</p>
                       {service.freeOption && (
-                        <p className="text-xs text-green-600 dark:text-green-400">{service.freeOption}</p>
+                        <p className="text-sm text-success-foreground ">{service.freeOption}</p>
                       )}
                     </div>
                     <div className="text-right flex-shrink-0">
-                      <p className={`font-bold text-sm ${isSelected ? 'text-purple-700 dark:text-purple-300' : 'text-gray-700 dark:text-gray-300'}`}>
+                      <p className={`font-bold text-base ${isSelected ? 'text-purple-700 dark:text-purple-300' : 'text-gray-700 dark:text-gray-300'}`}>
                         {service.monthlyPrice === 0 ? 'Free' : `$${service.monthlyPrice}/mo`}
                       </p>
                     </div>
@@ -185,7 +185,7 @@ export default function CordCuttingPlanner() {
             {!showAllServices && (
               <button
                 onClick={() => setShowAllServices(true)}
-                className="mt-3 w-full py-2 text-sm text-purple-600 dark:text-purple-400 hover:underline flex items-center justify-center gap-1"
+                className="mt-3 w-full py-2 text-sm text-primary hover:underline flex items-center justify-center gap-1"
               >
                 <ChevronDown className="w-4 h-4" />
                 Show all {STREAMING.length} services
@@ -194,7 +194,7 @@ export default function CordCuttingPlanner() {
             {showAllServices && (
               <button
                 onClick={() => setShowAllServices(false)}
-                className="mt-3 w-full py-2 text-sm text-gray-500 dark:text-gray-400 hover:underline flex items-center justify-center gap-1"
+                className="mt-3 w-full py-2 text-sm text-muted-foreground hover:underline flex items-center justify-center gap-1"
               >
                 <ChevronUp className="w-4 h-4" />
                 Show fewer
@@ -207,14 +207,14 @@ export default function CordCuttingPlanner() {
             <div className={`rounded-2xl border-2 p-5 mb-4 ${
               monthlySavings > 0
                 ? 'bg-green-50 dark:bg-green-950/30 border-green-400 dark:border-green-700'
-                : 'bg-gray-100 dark:bg-gray-800 border-gray-300 dark:border-gray-600'
+                : 'bg-gray-100 dark:bg-gray-800 border-border dark:border-gray-600'
             }`}>
               <div className="flex items-start gap-3 mb-4">
                 {monthlySavings > 0
-                  ? <TrendingDown className="w-6 h-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  : <DollarSign className="w-6 h-6 text-gray-500 flex-shrink-0 mt-0.5" />}
+                  ? <TrendingDown className="w-6 h-6 text-success-foreground flex-shrink-0 mt-0.5" />
+                  : <DollarSign className="w-6 h-6 text-muted-foreground flex-shrink-0 mt-0.5" />}
                 <div>
-                  <p className="font-bold text-gray-900 dark:text-gray-100 text-lg">
+                  <p className="font-bold text-foreground text-lg">
                     {monthlySavings > 0
                       ? `You could save $${monthlySavings.toFixed(0)}/month`
                       : monthlySavings < 0
@@ -222,7 +222,7 @@ export default function CordCuttingPlanner() {
                       : 'Same monthly cost as cable'}
                   </p>
                   {monthlySavings > 0 && (
-                    <p className="text-sm text-green-700 dark:text-green-300">
+                    <p className="text-base text-success-foreground ">
                       That's <strong>${yearlySavings.toFixed(0)} per year</strong> back in your pocket.
                     </p>
                   )}
@@ -230,28 +230,28 @@ export default function CordCuttingPlanner() {
               </div>
 
               <div className="space-y-2 text-sm">
-                <div className="flex justify-between py-1 border-b border-gray-200 dark:border-gray-700">
-                  <span className="text-gray-600 dark:text-gray-400">Current cable + internet</span>
-                  <span className="font-semibold text-gray-900 dark:text-gray-100">${currentTotal.toFixed(0)}/mo</span>
+                <div className="flex justify-between py-1 border-b border-border ">
+                  <span className="text-muted-foreground ">Current cable + internet</span>
+                  <span className="font-semibold text-foreground ">${currentTotal.toFixed(0)}/mo</span>
                 </div>
-                <div className="flex justify-between py-1 border-b border-gray-200 dark:border-gray-700">
-                  <span className="text-gray-600 dark:text-gray-400">Internet only (after cutting cable)</span>
-                  <span className="font-semibold text-gray-900 dark:text-gray-100">${internet.toFixed(0)}/mo</span>
+                <div className="flex justify-between py-1 border-b border-border ">
+                  <span className="text-muted-foreground ">Internet only (after cutting cable)</span>
+                  <span className="font-semibold text-foreground ">${internet.toFixed(0)}/mo</span>
                 </div>
-                <div className="flex justify-between py-1 border-b border-gray-200 dark:border-gray-700">
-                  <span className="text-gray-600 dark:text-gray-400">
+                <div className="flex justify-between py-1 border-b border-border ">
+                  <span className="text-muted-foreground ">
                     Selected streaming ({selectedServices.size} service{selectedServices.size !== 1 ? 's' : ''})
                   </span>
-                  <span className="font-semibold text-gray-900 dark:text-gray-100">${streamingTotal.toFixed(0)}/mo</span>
+                  <span className="font-semibold text-foreground ">${streamingTotal.toFixed(0)}/mo</span>
                 </div>
                 <div className="flex justify-between py-1">
-                  <span className="font-bold text-gray-900 dark:text-gray-100">New monthly total</span>
-                  <span className="font-bold text-gray-900 dark:text-gray-100">${newMonthlyTotal.toFixed(0)}/mo</span>
+                  <span className="font-bold text-foreground ">New monthly total</span>
+                  <span className="font-bold text-foreground ">${newMonthlyTotal.toFixed(0)}/mo</span>
                 </div>
               </div>
 
               {selectedServices.size === 0 && (
-                <p className="text-sm text-gray-500 dark:text-gray-400 mt-3">
+                <p className="text-base text-muted-foreground mt-3">
                   Select services above to see your new total cost.
                 </p>
               )}
@@ -259,39 +259,39 @@ export default function CordCuttingPlanner() {
           )}
 
           {/* Tips */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm mb-4">
+          <div className="bg-card rounded-2xl border border-border p-5 shadow-sm mb-4">
             <button
               onClick={() => setShowTips(!showTips)}
               className="w-full flex items-center justify-between text-left"
             >
-              <p className="font-bold text-gray-900 dark:text-gray-100">How to actually cut the cord — next steps</p>
-              {showTips ? <ChevronUp className="w-5 h-5 text-gray-400" /> : <ChevronDown className="w-5 h-5 text-gray-400" />}
+              <p className="font-bold text-foreground ">How to actually cut the cord — next steps</p>
+              {showTips ? <ChevronUp className="w-5 h-5 text-muted-foreground" /> : <ChevronDown className="w-5 h-5 text-muted-foreground" />}
             </button>
             {showTips && (
               <div className="mt-3 space-y-3">
                 <div className="space-y-2">
-                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">1. What you need</p>
-                  <ul className="text-sm text-gray-600 dark:text-gray-400 list-disc list-inside space-y-1">
+                  <p className="text-base font-semibold text-foreground ">1. What you need</p>
+                  <ul className="text-base text-muted-foreground list-disc list-inside space-y-1">
                     <li>A smart TV, or a streaming stick (Roku, Amazon Fire Stick) plugged into your TV</li>
                     <li>A reliable internet connection (25+ Mbps for HD streaming)</li>
                     <li>A free account with any streaming service you pick</li>
                   </ul>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">2. Call your cable company</p>
-                  <ul className="text-sm text-gray-600 dark:text-gray-400 list-disc list-inside space-y-1">
+                  <p className="text-base font-semibold text-foreground ">2. Call your cable company</p>
+                  <ul className="text-base text-muted-foreground list-disc list-inside space-y-1">
                     {INTERNET_TIPS.map((tip, i) => <li key={i}>{tip}</li>)}
                   </ul>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">3. Start small</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                  <p className="text-base font-semibold text-foreground ">3. Start small</p>
+                  <p className="text-base text-muted-foreground ">
                     Pick one or two services and watch them for a month before adding more. Most services let you cancel anytime. Start with the free options (Tubi, Pluto TV, PBS) — they cost nothing and have a lot of good content.
                   </p>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-sm font-semibold text-gray-700 dark:text-gray-300">4. Antennas for local channels</p>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                  <p className="text-base font-semibold text-foreground ">4. Antennas for local channels</p>
+                  <p className="text-base text-muted-foreground ">
                     A $20–$40 indoor TV antenna picks up free local channels (ABC, NBC, CBS, PBS, FOX) in most areas — no subscription needed. Search "indoor TV antenna" on Amazon. This gives you local news and network TV for free.
                   </p>
                 </div>
@@ -299,12 +299,12 @@ export default function CordCuttingPlanner() {
             )}
           </div>
 
-          <p className="text-xs text-center text-gray-400 dark:text-gray-500 pb-4">
+          <p className="text-sm text-center text-muted-foreground pb-4">
             Prices shown are approximate as of early 2026. Service pricing changes — verify current prices before subscribing.
           </p>
 
         </div>
-      </div>
+      </main>
     </>
   );
 }

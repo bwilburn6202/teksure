@@ -19,7 +19,7 @@ export default function SimpliSafeReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is SimpliSafe?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Home security system — no contract required.</li>
               <li>Self-install — no technician needed.</li>
               <li>Sensors, cameras, alarm, monitoring.</li>
@@ -33,7 +33,7 @@ export default function SimpliSafeReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost breakdown</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Starter kit — around $250–$350.</li>
               <li>No monitoring: free (self-monitored).</li>
               <li>Standard monitoring: $19.99/month.</li>
@@ -47,7 +47,7 @@ export default function SimpliSafeReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What comes in kit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Base station — the brain.</li>
               <li>Keypad — arm and disarm.</li>
               <li>Door + window sensors.</li>
@@ -61,7 +61,7 @@ export default function SimpliSafeReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Peel-and-stick sensors — no drilling needed.</li>
               <li>Set up from phone app.</li>
               <li>Plug in base station, follow phone steps.</li>
@@ -75,7 +75,7 @@ export default function SimpliSafeReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Large keypad buttons — easy to press.</li>
               <li>Panic button available.</li>
               <li>Medical alert integration possible.</li>
@@ -89,7 +89,7 @@ export default function SimpliSafeReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pros and cons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pro: no contract — flexible.</li>
               <li>Pro: DIY install — no appointment needed.</li>
               <li>Pro: works during internet outages.</li>
@@ -103,7 +103,7 @@ export default function SimpliSafeReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best for seniors living alone</h3>
-            <p className="text-sm text-muted-foreground">SimpliSafe is one of the top choices for seniors, especially those living alone. The panic button gives peace of mind. No contract means you can cancel if moving to assisted living. The $19.99 monitoring plan is affordable. Many adult children buy SimpliSafe systems as a gift for aging parents — installation is straightforward enough that a family visit can get it done.</p>
+            <p className="text-base text-muted-foreground">SimpliSafe is one of the top choices for seniors, especially those living alone. The panic button gives peace of mind. No contract means you can cancel if moving to assisted living. The $19.99 monitoring plan is affordable. Many adult children buy SimpliSafe systems as a gift for aging parents — installation is straightforward enough that a family visit can get it done.</p>
           </CardContent>
         </Card>
       </main>

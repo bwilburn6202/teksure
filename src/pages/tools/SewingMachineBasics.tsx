@@ -30,10 +30,10 @@ export default function SewingMachineBasics() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{m.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{m.cost}</span>
+                  <span className="text-base font-semibold text-primary">{m.cost}</span>
                 </div>
-                <p className="text-sm">{m.best}</p>
-                <p className="text-sm text-muted-foreground">{m.good}</p>
+                <p className="text-base">{m.best}</p>
+                <p className="text-base text-muted-foreground">{m.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SewingMachineBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: Brother CS7000X</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$220.</li>
               <li>70 built-in stitches.</li>
               <li>Easy threading.</li>
@@ -57,7 +57,7 @@ export default function SewingMachineBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First steps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read manual cover to cover.</li>
               <li>Watch YouTube — model-specific.</li>
               <li>Practice on scrap fabric first.</li>
@@ -71,7 +71,7 @@ export default function SewingMachineBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy senior projects</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hem pants (cheaper than tailor).</li>
               <li>Mend torn clothes.</li>
               <li>Pillowcases.</li>
@@ -86,7 +86,7 @@ export default function SewingMachineBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior comfort</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Magnifying lamp</strong> — ($40) clearer threading.</li>
               <li><strong>Auto needle threader</strong> — vision-friendly.</li>
               <li><strong>Larger spool holders</strong>.</li>
@@ -100,7 +100,7 @@ export default function SewingMachineBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money sewing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hem pants — save $15 ea/tailor.</li>
               <li>Mend rather than throw out.</li>
               <li>Make gifts.</li>
@@ -114,7 +114,7 @@ export default function SewingMachineBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free classes</h3>
-            <p className="text-sm text-muted-foreground">Joann + Hobby Lobby — free beginner classes. YouTube — &quot;Whitney Sews&quot;, &quot;Made to Sew&quot;. Library — sewing books + sometimes machines to borrow. Senior centers + church groups. Many seniors restart sewing as creative outlet.</p>
+            <p className="text-base text-muted-foreground">Joann + Hobby Lobby — free beginner classes. YouTube — &quot;Whitney Sews&quot;, &quot;Made to Sew&quot;. Library — sewing books + sometimes machines to borrow. Senior centers + church groups. Many seniors restart sewing as creative outlet.</p>
           </CardContent>
         </Card>
       </main>

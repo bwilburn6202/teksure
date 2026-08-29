@@ -19,7 +19,7 @@ export default function YubiKeyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is a YubiKey?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>USB-shaped physical key.</li>
               <li>Plug into computer/phone to log in.</li>
               <li>Hackers can&apos;t steal what they don&apos;t have.</li>
@@ -34,7 +34,7 @@ export default function YubiKeyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best YubiKey models</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YubiKey 5C NFC</strong> — $55. Works on USB-C + NFC phones.</li>
               <li><strong>YubiKey 5 NFC</strong> — $50. Standard USB + NFC.</li>
               <li><strong>YubiKey 5Ci</strong> — $75. iPhone Lightning + USB-C.</li>
@@ -47,7 +47,7 @@ export default function YubiKeyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Worth it for seniors?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YES</strong> — if active hacking targets (executives, lawyers, doctors).</li>
               <li><strong>YES</strong> — if managing $$$ online.</li>
               <li><strong>YES</strong> — if past identity theft victim.</li>
@@ -61,7 +61,7 @@ export default function YubiKeyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Buy from yubico.com or Amazon.</li>
               <li>Sign into account → Security → Add 2FA.</li>
               <li>Choose &quot;Hardware key.&quot;</li>
@@ -75,7 +75,7 @@ export default function YubiKeyForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Carry safely</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>On keychain — small.</li>
               <li>Backup key at home in safe.</li>
               <li>Never connect strange computers.</li>
@@ -89,7 +89,7 @@ export default function YubiKeyForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free alternative: passkey</h3>
-            <p className="text-sm text-muted-foreground">Apple, Google, Microsoft now support PASSKEYS — phone&apos;s Face ID/fingerprint replaces password. Free. Same security level. Easier than YubiKey. See /tools/passkey-explained. Many seniors find passkeys sufficient. YubiKey if you want maximum security across all devices.</p>
+            <p className="text-base text-muted-foreground">Apple, Google, Microsoft now support PASSKEYS — phone&apos;s Face ID/fingerprint replaces password. Free. Same security level. Easier than YubiKey. See /tools/passkey-explained. Many seniors find passkeys sufficient. YubiKey if you want maximum security across all devices.</p>
           </CardContent>
         </Card>
       </main>

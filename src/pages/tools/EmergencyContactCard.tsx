@@ -77,7 +77,7 @@ export default function EmergencyContactCard() {
         description="Create a printable emergency contact card with your medical info, contacts, and insurance details. Nothing is saved or sent anywhere."
       />
       <Navbar />
-      <main className="min-h-screen bg-gray-50 dark:bg-gray-950 pb-16">
+      <main className="min-h-screen bg-muted pb-16">
         <div className="max-w-2xl mx-auto px-4 pt-6">
           <PageBreadcrumb
             items={[
@@ -88,13 +88,13 @@ export default function EmergencyContactCard() {
 
           <div className="text-center mb-8 mt-4 print:hidden">
             <div className="text-5xl mb-3">🆘</div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+            <h1 className="text-3xl font-bold text-foreground dark:text-white mb-2">
               Emergency Contact Card
             </h1>
-            <p className="text-gray-600 dark:text-gray-300 text-lg">
+            <p className="text-muted-foreground text-lg">
               Fill in your information below, then print a wallet card or full sheet for first responders and family.
             </p>
-            <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+            <p className="text-base text-muted-foreground mt-2">
               Nothing is sent anywhere — all information stays on your device.
             </p>
           </div>
@@ -106,14 +106,14 @@ export default function EmergencyContactCard() {
                 <CardContent className="p-5">
                   <div className="flex items-center gap-2 mb-4">
                     <Icon size={18} className={color} />
-                    <h2 className="font-bold text-gray-900 dark:text-white">{title}</h2>
+                    <h2 className="font-bold text-foreground dark:text-white">{title}</h2>
                   </div>
                   <div className="grid grid-cols-1 gap-3">
                     {fieldsBySection(id).map((field) => (
                       <div key={field.id}>
                         <label
                           htmlFor={field.id}
-                          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                          className="block text-base font-medium text-foreground mb-1"
                         >
                           {field.label}
                         </label>
@@ -164,11 +164,11 @@ export default function EmergencyContactCard() {
               </div>
 
               {/* Full sheet card — shows on screen and prints */}
-              <Card className="border-2 border-red-200 dark:border-red-800 print:border-2 print:border-red-500">
+              <Card className="border-2 border-danger-foreground/25 print:border-2 print:border-red-500">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-2 mb-4 pb-3 border-b border-red-100 dark:border-red-900">
-                    <Heart size={20} className="text-red-500" />
-                    <h2 className="text-xl font-bold text-red-700 dark:text-red-400">
+                    <Heart size={20} className="text-danger-foreground" />
+                    <h2 className="text-xl font-bold text-danger-foreground ">
                       Emergency Information — {values['name'] || 'Unknown'}
                     </h2>
                   </div>
@@ -176,14 +176,14 @@ export default function EmergencyContactCard() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Personal */}
                     <section>
-                      <h3 className="font-bold text-gray-900 dark:text-white mb-2 flex items-center gap-1.5 text-sm uppercase tracking-wide">
-                        <User size={14} className="text-blue-500" /> Personal
+                      <h3 className="font-bold text-foreground dark:text-white mb-2 flex items-center gap-1.5 text-sm uppercase tracking-wide">
+                        <User size={14} className="text-info-foreground" /> Personal
                       </h3>
                       <dl className="space-y-1 text-sm">
                         {fieldsBySection('personal').filter(f => values[f.id]).map(f => (
                           <div key={f.id} className="flex gap-2">
-                            <dt className="text-gray-500 dark:text-gray-400 shrink-0 min-w-[80px]">{f.label}:</dt>
-                            <dd className="text-gray-900 dark:text-white font-medium">{values[f.id]}</dd>
+                            <dt className="text-muted-foreground shrink-0 min-w-[80px]">{f.label}:</dt>
+                            <dd className="text-foreground dark:text-white font-medium">{values[f.id]}</dd>
                           </div>
                         ))}
                       </dl>
@@ -191,23 +191,23 @@ export default function EmergencyContactCard() {
 
                     {/* Emergency Contacts */}
                     <section>
-                      <h3 className="font-bold text-gray-900 dark:text-white mb-2 flex items-center gap-1.5 text-sm uppercase tracking-wide">
-                        <Phone size={14} className="text-red-500" /> Emergency Contacts
+                      <h3 className="font-bold text-foreground dark:text-white mb-2 flex items-center gap-1.5 text-sm uppercase tracking-wide">
+                        <Phone size={14} className="text-danger-foreground" /> Emergency Contacts
                       </h3>
                       <dl className="space-y-1 text-sm">
                         {values['ec1_name'] && (
                           <div>
-                            <dd className="text-gray-900 dark:text-white font-medium">{values['ec1_name']}</dd>
+                            <dd className="text-foreground dark:text-white font-medium">{values['ec1_name']}</dd>
                             {values['ec1_phone'] && (
-                              <dd className="text-blue-600 dark:text-blue-400">{values['ec1_phone']}</dd>
+                              <dd className="text-info-foreground ">{values['ec1_phone']}</dd>
                             )}
                           </div>
                         )}
                         {values['ec2_name'] && (
                           <div className="mt-2">
-                            <dd className="text-gray-900 dark:text-white font-medium">{values['ec2_name']}</dd>
+                            <dd className="text-foreground dark:text-white font-medium">{values['ec2_name']}</dd>
                             {values['ec2_phone'] && (
-                              <dd className="text-blue-600 dark:text-blue-400">{values['ec2_phone']}</dd>
+                              <dd className="text-info-foreground ">{values['ec2_phone']}</dd>
                             )}
                           </div>
                         )}
@@ -216,14 +216,14 @@ export default function EmergencyContactCard() {
 
                     {/* Medical */}
                     <section>
-                      <h3 className="font-bold text-gray-900 dark:text-white mb-2 flex items-center gap-1.5 text-sm uppercase tracking-wide">
-                        <Stethoscope size={14} className="text-green-500" /> Medical
+                      <h3 className="font-bold text-foreground dark:text-white mb-2 flex items-center gap-1.5 text-sm uppercase tracking-wide">
+                        <Stethoscope size={14} className="text-success-foreground" /> Medical
                       </h3>
                       <dl className="space-y-1 text-sm">
                         {fieldsBySection('medical').filter(f => values[f.id]).map(f => (
                           <div key={f.id} className="flex gap-2">
-                            <dt className="text-gray-500 dark:text-gray-400 shrink-0 min-w-[80px]">{f.label.replace("Primary ", "").replace("Doctor's ", "Dr. ")}:</dt>
-                            <dd className="text-gray-900 dark:text-white font-medium">{values[f.id]}</dd>
+                            <dt className="text-muted-foreground shrink-0 min-w-[80px]">{f.label.replace("Primary ", "").replace("Doctor's ", "Dr. ")}:</dt>
+                            <dd className="text-foreground dark:text-white font-medium">{values[f.id]}</dd>
                           </div>
                         ))}
                       </dl>
@@ -231,27 +231,27 @@ export default function EmergencyContactCard() {
 
                     {/* Insurance */}
                     <section>
-                      <h3 className="font-bold text-gray-900 dark:text-white mb-2 flex items-center gap-1.5 text-sm uppercase tracking-wide">
-                        <Shield size={14} className="text-purple-500" /> Insurance
+                      <h3 className="font-bold text-foreground dark:text-white mb-2 flex items-center gap-1.5 text-sm uppercase tracking-wide">
+                        <Shield size={14} className="text-primary" /> Insurance
                       </h3>
                       <dl className="space-y-1 text-sm">
                         {fieldsBySection('insurance').filter(f => values[f.id]).map(f => (
                           <div key={f.id} className="flex gap-2">
-                            <dt className="text-gray-500 dark:text-gray-400 shrink-0 min-w-[80px]">{f.label}:</dt>
-                            <dd className="text-gray-900 dark:text-white font-medium">{values[f.id]}</dd>
+                            <dt className="text-muted-foreground shrink-0 min-w-[80px]">{f.label}:</dt>
+                            <dd className="text-foreground dark:text-white font-medium">{values[f.id]}</dd>
                           </div>
                         ))}
                       </dl>
                     </section>
                   </div>
 
-                  <div className="mt-4 pt-3 border-t border-gray-200 dark:border-gray-700 text-xs text-gray-500 dark:text-gray-400">
+                  <div className="mt-4 pt-3 border-t border-border text-xs text-muted-foreground ">
                     Printed from TekSure.com — Emergency Contact Card tool. Keep a copy in your wallet, on your refrigerator, and share with family.
                   </div>
                 </CardContent>
               </Card>
 
-              <div className="print:hidden bg-amber-50 dark:bg-amber-900/20 rounded-lg p-4 text-sm text-amber-800 dark:text-amber-200 space-y-1">
+              <div className="print:hidden bg-warn rounded-lg p-4 text-sm text-warn-foreground space-y-1">
                 <p className="font-semibold">Suggested places to keep printed copies:</p>
                 <ul className="list-disc list-inside space-y-0.5 ml-1">
                   <li>Your wallet or purse</li>
@@ -264,9 +264,9 @@ export default function EmergencyContactCard() {
           )}
 
           {filledCount < 4 && (
-            <div className="text-center text-gray-400 dark:text-gray-600 py-6 print:hidden">
+            <div className="text-center text-muted-foreground py-6 print:hidden">
               <Heart size={36} className="mx-auto mb-2 opacity-30" />
-              <p className="text-sm">Fill in at least 4 fields above to preview your card.</p>
+              <p className="text-base">Fill in at least 4 fields above to preview your card.</p>
             </div>
           )}
         </div>

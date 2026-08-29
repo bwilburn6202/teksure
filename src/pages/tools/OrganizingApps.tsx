@@ -31,10 +31,10 @@ export default function OrganizingApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function OrganizingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Notes folders to set up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medications + dosages.</li>
               <li>Doctors + phone numbers.</li>
               <li>Family birthdays + anniversaries.</li>
@@ -62,7 +62,7 @@ export default function OrganizingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hire a pro organizer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>National Association of Productivity + Organizing Professionals (NAPO).</li>
               <li>$50-150/hr typical.</li>
               <li>Sessions 3-8 hrs.</li>
@@ -75,7 +75,7 @@ export default function OrganizingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t over-organize</h3>
-            <p className="text-sm text-muted-foreground">Easy to spend more time managing organizing apps than the things they organize. Notes app + calendar covers 90% of senior needs. Don&apos;t buy fancy. Use what you have.</p>
+            <p className="text-base text-muted-foreground">Easy to spend more time managing organizing apps than the things they organize. Notes app + calendar covers 90% of senior needs. Don&apos;t buy fancy. Use what you have.</p>
           </CardContent>
         </Card>
       </main>

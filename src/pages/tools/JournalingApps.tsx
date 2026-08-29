@@ -28,7 +28,7 @@ export default function JournalingApps() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why journal</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Lower stress and anxiety (real studies).</li>
               <li>Better sleep when you do an "evening dump" before bed.</li>
               <li>A record for your kids and grandkids when you\'re gone — your stories, your perspective.</li>
@@ -43,10 +43,10 @@ export default function JournalingApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -55,7 +55,7 @@ export default function JournalingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy daily prompts</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>"3 things that happened today" (good or interesting).</li>
               <li>"3 things I\'m grateful for".</li>
               <li>"What\'s on my mind I haven\'t told anyone?"</li>
@@ -70,7 +70,7 @@ export default function JournalingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sticking with it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick the same time daily — right after coffee or right before bed.</li>
               <li>Set a phone reminder.</li>
               <li>Don\'t worry about grammar or beauty. Bullet points are fine.</li>
@@ -83,7 +83,7 @@ export default function JournalingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For grandkids</h3>
-            <p className="text-sm text-muted-foreground">Once a week, write one story from your life. Where you were when JFK was shot. The first time you flew on a plane. Your wedding day. Compile after a year — that\'s a memoir for your family. Day One and Apple Journal both make beautiful printed books from your entries.</p>
+            <p className="text-base text-muted-foreground">Once a week, write one story from your life. Where you were when JFK was shot. The first time you flew on a plane. Your wedding day. Compile after a year — that\'s a memoir for your family. Day One and Apple Journal both make beautiful printed books from your entries.</p>
           </CardContent>
         </Card>
       </main>

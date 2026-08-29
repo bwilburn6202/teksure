@@ -59,9 +59,9 @@ export default function UrlSafetyCheckerV2() {
 
         <div className="container max-w-2xl mx-auto px-4 py-8">
           {/* How it works */}
-          <div className="flex items-start gap-2 p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 mb-6">
-            <Info className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" aria-hidden="true" />
-            <p className="text-xs text-blue-700 dark:text-blue-300">
+          <div className="flex items-start gap-2 p-3 rounded-lg bg-info border border-info-foreground/25 mb-6">
+            <Info className="h-4 w-4 text-info-foreground shrink-0 mt-0.5" aria-hidden="true" />
+            <p className="text-sm text-info-foreground ">
               <strong>How it works:</strong> We check the address against Google Safe Browsing, PhishTank, and common scam patterns. We don't visit the link. No automated tool is perfect — use your own judgment too.
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function UrlSafetyCheckerV2() {
           {!result && (
             <Card className="border-border shadow-sm mb-6">
               <CardContent className="p-6">
-                <label className="block text-sm font-medium mb-2" htmlFor="url-input">
+                <label className="block text-base font-medium mb-2" htmlFor="url-input">
                   Paste the link you want to check
                 </label>
                 <div className="flex gap-2">
@@ -104,7 +104,7 @@ export default function UrlSafetyCheckerV2() {
                 </div>
 
                 <div className="mt-4">
-                  <p className="text-xs text-muted-foreground mb-2">Try an example:</p>
+                  <p className="text-sm text-muted-foreground mb-2">Try an example:</p>
                   <div className="flex flex-wrap gap-2">
                     {EXAMPLES.map(ex => (
                       <button
@@ -134,17 +134,17 @@ export default function UrlSafetyCheckerV2() {
                     What to do next
                   </p>
                   {result.verdict === 'safe' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       No obvious red flags found. Still, check the address bar after you click — scammers sometimes register look-alike sites.
                     </p>
                   )}
                   {result.verdict === 'caution' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       Be careful. If you received this link out of the blue, don't click it. If it claims to be from a company you use, go to their website directly by typing the address.
                     </p>
                   )}
                   {result.verdict === 'danger' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       Do not click this link. Delete the message that contained it. If you think you've already been scammed, contact your bank and report it at{' '}
                       <strong>1-877-382-4357</strong> or{' '}
                       <a href="https://reportfraud.ftc.gov" target="_blank" rel="noopener noreferrer" className="underline">
@@ -154,7 +154,7 @@ export default function UrlSafetyCheckerV2() {
                     </p>
                   )}
                   {result.verdict === 'unknown' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       We couldn't reach every source. If anything feels off — urgency, grammar mistakes, asking for money or passwords — treat the link as unsafe.
                     </p>
                   )}
@@ -180,7 +180,7 @@ export default function UrlSafetyCheckerV2() {
               <CardContent className="p-5">
                 <div className="flex items-center gap-2 mb-3">
                   <Shield className="h-4 w-4 text-primary" aria-hidden="true" />
-                  <p className="text-sm font-medium">Red flags to watch for</p>
+                  <p className="text-base font-medium">Red flags to watch for</p>
                 </div>
                 <ul className="space-y-2">
                   {[
@@ -190,7 +190,7 @@ export default function UrlSafetyCheckerV2() {
                     "You didn't expect the message — even if it looks like a company you use",
                     'Shortened links like bit.ly hide the real destination',
                   ].map((tip, i) => (
-                    <li key={i} className="text-xs text-muted-foreground flex items-start gap-2">
+                    <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
                       <span aria-hidden="true">•</span>
                       <span>{tip}</span>
                     </li>

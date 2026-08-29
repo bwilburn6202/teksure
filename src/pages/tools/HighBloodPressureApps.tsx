@@ -30,10 +30,10 @@ export default function HighBloodPressureApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function HighBloodPressureApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">BP targets (2026)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Normal: under 120/80.</li>
               <li>Elevated: 120-129 / under 80.</li>
               <li>Stage 1 high: 130-139 / 80-89.</li>
@@ -57,7 +57,7 @@ export default function HighBloodPressureApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Take BP correctly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sit 5 min quiet first.</li>
               <li>Empty bladder before.</li>
               <li>Feet flat, back supported.</li>
@@ -73,7 +73,7 @@ export default function HighBloodPressureApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lower BP without meds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reduce salt to 1,500mg/day (see /tools/salt-reduction-tips).</li>
               <li>Lose 5-10 lbs — drops BP 5-10 points.</li>
               <li>30 min walking 5 days/week.</li>
@@ -88,7 +88,7 @@ export default function HighBloodPressureApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common BP medications</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ACE inhibitors</strong> — lisinopril. Common.</li>
               <li><strong>ARBs</strong> — losartan, valsartan.</li>
               <li><strong>Calcium channel blockers</strong> — amlodipine.</li>
@@ -103,7 +103,7 @@ export default function HighBloodPressureApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help</h3>
-            <p className="text-sm text-muted-foreground"><strong>Heart.org</strong> (American Heart Association) — free BP charts + DASH diet. <strong>Million Hearts</strong> initiative — millionhearts.hhs.gov. Most pharmacies have free BP machines (CVS, Walgreens, Walmart). Track for 1 week before doctor visit = better treatment decisions.</p>
+            <p className="text-base text-muted-foreground"><strong>Heart.org</strong> (American Heart Association) — free BP charts + DASH diet. <strong>Million Hearts</strong> initiative — millionhearts.hhs.gov. Most pharmacies have free BP machines (CVS, Walgreens, Walmart). Track for 1 week before doctor visit = better treatment decisions.</p>
           </CardContent>
         </Card>
       </main>

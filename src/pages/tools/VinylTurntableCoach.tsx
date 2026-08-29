@@ -25,11 +25,11 @@ export default function VinylTurntableCoach() {
           <p className="text-lg text-muted-foreground">Records you saved from the 70s? Time to rediscover.</p>
         </div>
 
-        <Card className="mb-6 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-6 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2"> Skip the cheap "suitcase" turntables</h2>
-            <p className="text-sm">Crosley, Victrola, "1byone" cheap suitcase-style players have heavy needles that damage records. Each play wears the record more. After 50 plays, your treasured 1973 Stevie Wonder LP is unwearable.</p>
-            <p className="text-sm mt-2">Spend at least $200 on a real turntable. Otherwise, you\'re destroying value.</p>
+            <p className="text-base">Crosley, Victrola, "1byone" cheap suitcase-style players have heavy needles that damage records. Each play wears the record more. After 50 plays, your treasured 1973 Stevie Wonder LP is unwearable.</p>
+            <p className="text-base mt-2">Spend at least $200 on a real turntable. Otherwise, you\'re destroying value.</p>
           </CardContent>
         </Card>
 
@@ -39,10 +39,10 @@ export default function VinylTurntableCoach() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -51,7 +51,7 @@ export default function VinylTurntableCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Connect to speakers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Powered speakers (Audioengine A2+, Edifier R1280T)</strong> — connect turntable directly. ~$200-400.</li>
               <li><strong>Vintage receiver + speakers</strong> — find at thrift stores, often great quality $50-100.</li>
               <li><strong>Bluetooth turntable + Sonos</strong> — many newer turntables have Bluetooth out.</li>
@@ -63,7 +63,7 @@ export default function VinylTurntableCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Caring for records</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Always handle by edges, never the surface.</li>
               <li>Clean before each play — record cleaning brush ($15) or LP cleaning kit ($30).</li>
               <li>Store vertically, never stacked.</li>
@@ -76,7 +76,7 @@ export default function VinylTurntableCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Buying records</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Discogs.com</strong> — global record marketplace. Almost any album you remember.</li>
               <li><strong>Local record stores</strong> — find at recordstoreday.com.</li>
               <li><strong>Thrift stores</strong> — good for finding 60s/70s albums cheap.</li>
@@ -89,7 +89,7 @@ export default function VinylTurntableCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Recommended starter setup</h3>
-            <p className="text-sm text-muted-foreground"><strong>Audio-Technica AT-LP60X-BT</strong> ($200) + <strong>Edifier R1280T powered speakers</strong> ($130). Total $330. Plays vinyl like your dad\'s setup did. Bluetooth-pair to phone for digital backup.</p>
+            <p className="text-base text-muted-foreground"><strong>Audio-Technica AT-LP60X-BT</strong> ($200) + <strong>Edifier R1280T powered speakers</strong> ($130). Total $330. Plays vinyl like your dad\'s setup did. Bluetooth-pair to phone for digital backup.</p>
           </CardContent>
         </Card>
       </main>

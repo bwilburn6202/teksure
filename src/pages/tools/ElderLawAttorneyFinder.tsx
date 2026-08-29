@@ -19,7 +19,7 @@ export default function ElderLawAttorneyFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to hire one</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Estate planning beyond simple will.</li>
               <li>Medicaid asset protection planning.</li>
               <li>Long-term care planning.</li>
@@ -35,7 +35,7 @@ export default function ElderLawAttorneyFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find one</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NAELA</strong> — National Academy of Elder Law Attorneys. naela.org. Best directory.</li>
               <li><strong>National Elder Law Foundation</strong> — Certified Elder Law Attorneys (CELA).</li>
               <li><strong>State bar association</strong> — referral services.</li>
@@ -49,7 +49,7 @@ export default function ElderLawAttorneyFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost ranges</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Initial consult: $0-300 (often free).</li>
               <li>Simple POA: $200-500.</li>
               <li>Will + POA + Healthcare directive bundle: $500-1,500.</li>
@@ -65,7 +65,7 @@ export default function ElderLawAttorneyFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Vetting questions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>How long practiced elder law specifically?</li>
               <li>What % of practice is elder law?</li>
               <li>Are you a CELA?</li>
@@ -81,7 +81,7 @@ export default function ElderLawAttorneyFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free + low-cost options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Legal Services Corporation</strong> — lsc.gov. Free if low income.</li>
               <li><strong>Legal Aid</strong> — local nonprofits, free.</li>
               <li><strong>Senior Legal Hotline</strong> — many states have free.</li>
@@ -96,7 +96,7 @@ export default function ElderLawAttorneyFinder() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Avoid these</h3>
-            <p className="text-sm text-muted-foreground">Avoid &quot;estate planning seminars&quot; that pitch overpriced trusts. Avoid attorneys who push annuities. Avoid generalist lawyers for complex elder matters. Avoid online-only services for complex situations. Avoid pressure to make decisions same day. Take time to research.</p>
+            <p className="text-base text-muted-foreground">Avoid &quot;estate planning seminars&quot; that pitch overpriced trusts. Avoid attorneys who push annuities. Avoid generalist lawyers for complex elder matters. Avoid online-only services for complex situations. Avoid pressure to make decisions same day. Take time to research.</p>
           </CardContent>
         </Card>
       </main>

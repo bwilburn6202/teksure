@@ -28,7 +28,7 @@ export default function ParentalControls() {
 
         {/* 1. Why Parental Controls Matter */}
         <Section icon={ShieldCheck} title="Why Parental Controls Matter">
-          <p className="text-sm text-muted-foreground leading-relaxed">
+          <p className="text-base text-muted-foreground leading-relaxed">
             Children are going online younger than ever — and while the internet is an amazing learning tool, it also exposes them to content, contacts, and habits that aren't age-appropriate. Parental controls don't replace good conversations, but they add a safety net. Think of them like a seatbelt: you hope you won't need it, but you're glad it's there.
           </p>
         </Section>
@@ -37,7 +37,7 @@ export default function ParentalControls() {
 
         {/* 2. Built-In Device Controls */}
         <Section icon={Monitor} title="Built-In Device Controls">
-          <p className="text-sm text-muted-foreground mb-6">
+          <p className="text-base text-muted-foreground mb-6">
             Every major device has free parental controls built in. Here's how to set them up:
           </p>
 
@@ -86,7 +86,7 @@ export default function ParentalControls() {
 
         {/* 3. Router-Level Controls */}
         <Section icon={Wifi} title="Router-Level Controls">
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             Router-level controls protect every device on your home network at once — including smart TVs, tablets, and games consoles that might not have their own parental settings.
           </p>
           <Steps steps={[
@@ -102,7 +102,7 @@ export default function ParentalControls() {
 
         {/* 4. Safe Search Settings */}
         <Section icon={Search} title="Safe Search Settings">
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             Safe search filters help block explicit content from search results and video platforms.
           </p>
 
@@ -135,7 +135,7 @@ export default function ParentalControls() {
 
         {/* 5. Apps to Help */}
         <Section icon={AppWindow} title="Apps to Help">
-          <p className="text-sm text-muted-foreground mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             These well-known apps offer additional monitoring and filtering beyond what's built into devices:
           </p>
           <div className="space-y-3">
@@ -150,8 +150,8 @@ export default function ParentalControls() {
                 <CardContent className="py-3 flex gap-3">
                   <AppWindow className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
-                    <p className="text-sm font-semibold">{app.name}</p>
-                    <p className="text-sm text-muted-foreground">{app.desc}</p>
+                    <p className="text-base font-semibold">{app.name}</p>
+                    <p className="text-base text-muted-foreground">{app.desc}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -171,7 +171,7 @@ export default function ParentalControls() {
               'Encourage them to come to you if anything online makes them uncomfortable — without fear of punishment.',
               'Revisit the conversation regularly as they grow — what\'s appropriate at age 8 changes by age 12.',
             ].map((tip, i) => (
-              <li key={i} className="text-sm text-muted-foreground flex gap-3">
+              <li key={i} className="text-base text-muted-foreground flex gap-3">
                 <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs font-bold">{i + 1}</span>
                 {tip}
               </li>
@@ -183,7 +183,7 @@ export default function ParentalControls() {
 
         <Card className="rounded-2xl border border-primary/20 bg-primary/5">
           <CardContent className="py-6 text-center">
-            <p className="text-sm text-muted-foreground mb-2">Want to learn more about staying safe online?</p>
+            <p className="text-base text-muted-foreground mb-2">Want to learn more about staying safe online?</p>
             <Link to="/safety/scam-alerts" className="text-primary font-medium hover:underline">
               View our Scam Alerts Guide →
             </Link>
@@ -220,7 +220,7 @@ function Steps({ steps }: { steps: string[] }) {
   return (
     <ol className="space-y-2">
       {steps.map((step, i) => (
-        <li key={i} className="text-sm text-muted-foreground flex gap-3">
+        <li key={i} className="text-base text-muted-foreground flex gap-3">
           <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs font-semibold">
             {i + 1}
           </span>

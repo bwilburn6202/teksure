@@ -30,7 +30,7 @@ export default function BreachResponseChecklist() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-1">Before you start</h2>
-            <p className="text-sm">If your computer might have a virus, do these steps from a different device — your phone, a tablet, or a relative's computer. The hacker may still be watching the infected one.</p>
+            <p className="text-base">If your computer might have a virus, do these steps from a different device — your phone, a tablet, or a relative's computer. The hacker may still be watching the infected one.</p>
           </CardContent>
         </Card>
 
@@ -43,7 +43,7 @@ export default function BreachResponseChecklist() {
                   <div className="flex-1">
                     <p className="text-xs text-primary uppercase tracking-wide font-semibold">{s.hour}</p>
                     <h3 className="font-bold text-lg">{s.title}</h3>
-                    <p className="text-sm text-muted-foreground">{s.body}</p>
+                    <p className="text-base text-muted-foreground">{s.body}</p>
                   </div>
                 </div>
               </CardContent>
@@ -51,13 +51,13 @@ export default function BreachResponseChecklist() {
           ))}
         </div>
 
-        <Card className="bg-green-50 border-green-300 dark:bg-green-950/20 dark:border-green-800">
+        <Card className="bg-success border-success-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
+              <CheckCircle2 className="w-6 h-6 text-success-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Once you're locked back in</h3>
-                <p className="text-sm text-muted-foreground">Watch your bank statements and email closely for 30 days. If something else strange happens, repeat this checklist. And tell a family member what happened — they may need to watch their own accounts too if you share any.</p>
+                <p className="text-base text-muted-foreground">Watch your bank statements and email closely for 30 days. If something else strange happens, repeat this checklist. And tell a family member what happened — they may need to watch their own accounts too if you share any.</p>
               </div>
             </div>
           </CardContent>

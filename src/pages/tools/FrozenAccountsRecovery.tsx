@@ -19,7 +19,7 @@ export default function FrozenAccountsRecovery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why accounts get frozen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Suspicious activity</strong> — someone tried to log in / wire / withdraw.</li>
               <li><strong>You triggered fraud detection</strong> — large deposit, sudden purchase, login from new device.</li>
               <li><strong>You requested it</strong> — maybe forgot.</li>
@@ -33,7 +33,7 @@ export default function FrozenAccountsRecovery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Steps to unfreeze</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Call bank&apos;s number from BACK OF YOUR CARD (don&apos;t Google — risk of scam numbers).</li>
               <li>Verify identity — security questions, ID verification.</li>
               <li>Confirm recent legitimate transactions.</li>
@@ -45,17 +45,17 @@ export default function FrozenAccountsRecovery() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DO NOT click email "unfreeze account" links</h2>
-            <p className="text-sm">Scammers send fake "account locked" emails. ALWAYS go directly to bank&apos;s website by typing it OR call the number on your card. Email links are how scams steal what wasn&apos;t even at risk.</p>
+            <p className="text-base">Scammers send fake "account locked" emails. ALWAYS go directly to bank&apos;s website by typing it OR call the number on your card. Email links are how scams steal what wasn&apos;t even at risk.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If frozen by court / IRS / child support</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lawyer up. Worth $500-2,000 to restore $5K+ funds.</li>
               <li>Some states have low-income legal aid for seniors.</li>
               <li>Don&apos;t move funds to other accounts — same lien follows.</li>
@@ -68,7 +68,7 @@ export default function FrozenAccountsRecovery() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Prevent future freezes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Update phone number + email at bank.</li>
               <li>Tell bank ahead of large transactions.</li>
               <li>Use 2FA so YOUR logins don&apos;t trigger fraud.</li>
@@ -81,7 +81,7 @@ export default function FrozenAccountsRecovery() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Stay calm</h3>
-            <p className="text-sm text-muted-foreground">Frozen accounts are scary but almost always recoverable. Banks ARE on your side — they froze it to protect you. Verify identity properly, and access usually returns within 24-72 hours. Don&apos;t panic into clicking suspicious links.</p>
+            <p className="text-base text-muted-foreground">Frozen accounts are scary but almost always recoverable. Banks ARE on your side — they froze it to protect you. Verify identity properly, and access usually returns within 24-72 hours. Don&apos;t panic into clicking suspicious links.</p>
           </CardContent>
         </Card>
       </main>

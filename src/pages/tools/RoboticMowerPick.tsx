@@ -27,7 +27,7 @@ export default function RoboticMowerPick() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why robotic mowers?</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Mows DAILY — short trims keep grass healthier.</li>
               <li>Eliminates the back/knee pain of pushing a mower.</li>
               <li>Quiet — many run while you sleep.</li>
@@ -44,10 +44,10 @@ export default function RoboticMowerPick() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,7 +56,7 @@ export default function RoboticMowerPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Wired vs wireless</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Wired (Husqvarna, Worx)</strong> — buried boundary wire defines mowing area. Tedious DIY install (4-8 hours) or $300-500 pro install.</li>
               <li><strong>Wireless RTK GPS (Mammotion, Segway)</strong> — no wire. Just place a GPS antenna on a roof or pole. Newer, more expensive, but install is 1-2 hours.</li>
             </ul>
@@ -66,7 +66,7 @@ export default function RoboticMowerPick() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Worth knowing</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Most can\'t handle slopes over 20-25 degrees.</li>
               <li>Need a flat charging dock area near power.</li>
               <li>Theft worry — many have GPS lock + alarm.</li>
@@ -80,7 +80,7 @@ export default function RoboticMowerPick() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For most senior yards</h3>
-            <p className="text-sm text-muted-foreground">If your lawn is under 0.25 acre and mostly flat — Worx Landroid. If bigger or hillier — Husqvarna Automower 320. Both rated for senior-friendly install if you can DIY the boundary wire.</p>
+            <p className="text-base text-muted-foreground">If your lawn is under 0.25 acre and mostly flat — Worx Landroid. If bigger or hillier — Husqvarna Automower 320. Both rated for senior-friendly install if you can DIY the boundary wire.</p>
           </CardContent>
         </Card>
       </main>

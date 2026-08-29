@@ -19,7 +19,7 @@ export default function HolidayShoppingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best deal-hunting apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Honey</strong> — auto-applies coupon codes at checkout. Free.</li>
               <li><strong>Capital One Shopping</strong> — price compare across stores.</li>
               <li><strong>Camelcamelcamel</strong> — Amazon price history. Reveals fake "sales".</li>
@@ -33,7 +33,7 @@ export default function HolidayShoppingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best buying days</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Black Friday</strong> (Nov) — TVs, electronics, appliances.</li>
               <li><strong>Cyber Monday</strong> (Nov) — online deals, smaller items.</li>
               <li><strong>Prime Day</strong> (July) — Amazon-specific.</li>
@@ -48,7 +48,7 @@ export default function HolidayShoppingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid scams during holidays</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fake "Amazon order confirmation" emails surge in November-December.</li>
               <li>Sketchy "deal of the day" sites = often scams.</li>
               <li>Use credit cards (chargeback protection) NOT debit.</li>
@@ -62,7 +62,7 @@ export default function HolidayShoppingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior shopping tip</h3>
-            <p className="text-sm text-muted-foreground">Make a "to buy" list in November. Add things to Slickdeals/Camelcamelcamel alerts. Wait for actual Black Friday — many "early Black Friday" deals are fake. Deals 25-Nov to 2-Dec are real ones.</p>
+            <p className="text-base text-muted-foreground">Make a "to buy" list in November. Add things to Slickdeals/Camelcamelcamel alerts. Wait for actual Black Friday — many "early Black Friday" deals are fake. Deals 25-Nov to 2-Dec are real ones.</p>
           </CardContent>
         </Card>
       </main>

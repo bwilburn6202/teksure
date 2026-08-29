@@ -19,15 +19,15 @@ export default function MyChartHelper() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What is MyChart?</h2>
-            <p className="text-sm mb-2">A free website and app from your doctor's office. Most US hospitals (Kaiser, Mayo, Cleveland Clinic, university hospitals, large local clinics) use MyChart or a similar portal like FollowMyHealth or athenahealth.</p>
-            <p className="text-sm">With it, you can see lab results within hours, message your doctor without phone tag, refill prescriptions, schedule appointments, and view your full medical history.</p>
+            <p className="text-base mb-2">A free website and app from your doctor's office. Most US hospitals (Kaiser, Mayo, Cleveland Clinic, university hospitals, large local clinics) use MyChart or a similar portal like FollowMyHealth or athenahealth.</p>
+            <p className="text-base">With it, you can see lab results within hours, message your doctor without phone tag, refill prescriptions, schedule appointments, and view your full medical history.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time signup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>At your next doctor's visit, ask the front desk for an "activation code" or "MyChart sign-up letter". They print it for you.</li>
               <li>Or go to <strong>mychart.com</strong> → click "Sign Up Now" → search for your doctor's clinic.</li>
               <li>Enter the activation code, your date of birth, and your last 4 of Social Security to verify it's really you.</li>
@@ -42,7 +42,7 @@ export default function MyChartHelper() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can do once signed in</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Test results</strong> — usually appear within hours of the lab finishing. (Tip: if a number worries you, message your doctor before Googling. Lots of "abnormal" labs are actually normal for your age.)</li>
               <li><strong>Message your doctor</strong> — replies in 1-3 business days. Faster than phone tag.</li>
               <li><strong>Refill prescriptions</strong> — tap the medication, "Refill", pick your pharmacy.</li>
@@ -54,13 +54,13 @@ export default function MyChartHelper() {
           </CardContent>
         </Card>
 
-        <Card className="mb-6 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-6 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <AlertTriangle className="w-6 h-6 text-yellow-700 dark:text-yellow-400 shrink-0" />
+              <AlertTriangle className="w-6 h-6 text-warn-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">When NOT to use the message feature</h3>
-                <p className="text-sm text-muted-foreground">For chest pain, sudden weakness, fall with a head bump, severe shortness of breath, or any emergency — call <strong>911</strong>. Messages may take a day to be read. Don't wait.</p>
+                <p className="text-base text-muted-foreground">For chest pain, sudden weakness, fall with a head bump, severe shortness of breath, or any emergency — call <strong>911</strong>. Messages may take a day to be read. Don't wait.</p>
               </div>
             </div>
           </CardContent>
@@ -69,7 +69,7 @@ export default function MyChartHelper() {
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other portals (same idea, different name)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>FollowMyHealth</strong> — used by many clinics. Sign up at followmyhealth.com.</li>
               <li><strong>athenahealth Patient Portal</strong> — your doctor sends an email invite.</li>
               <li><strong>Kaiser Permanente</strong> — kp.org or the Kaiser Permanente app.</li>
@@ -79,13 +79,13 @@ export default function MyChartHelper() {
           </CardContent>
         </Card>
 
-        <Card className="bg-green-50 border-green-300 dark:bg-green-950/20 dark:border-green-800">
+        <Card className="bg-success border-success-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <CheckCircle2 className="w-6 h-6 text-green-700 dark:text-green-400 shrink-0" />
+              <CheckCircle2 className="w-6 h-6 text-success-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Quick Tip — set up family access</h3>
-                <p className="text-sm text-muted-foreground">If your spouse or adult child helps with appointments and meds, ask the front desk about "Proxy Access". You sign one form and they can see your portal too. Saves headaches and keeps everyone informed.</p>
+                <p className="text-base text-muted-foreground">If your spouse or adult child helps with appointments and meds, ask the front desk about "Proxy Access". You sign one form and they can see your portal too. Saves headaches and keeps everyone informed.</p>
               </div>
             </div>
           </CardContent>

@@ -19,7 +19,7 @@ export default function SoloSeniorTravelTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why solo travel is great</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go where you want, when you want.</li>
               <li>Your pace — no compromise.</li>
               <li>Meet new people more easily.</li>
@@ -33,7 +33,7 @@ export default function SoloSeniorTravelTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Before you leave</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Share itinerary with trusted family member.</li>
               <li>Check in schedule — text when you arrive.</li>
               <li>Travel insurance — especially medical evacuation.</li>
@@ -47,7 +47,7 @@ export default function SoloSeniorTravelTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tech tools for safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Life360 — share real-time location with family.</li>
               <li>Find My (iPhone) — family can see your location.</li>
               <li>Google Maps — save hotel address offline.</li>
@@ -61,7 +61,7 @@ export default function SoloSeniorTravelTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Accommodation tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hotels often safer than vacation rentals solo.</li>
               <li>Request room near elevator — less walking.</li>
               <li>Don&apos;t display room number where strangers see.</li>
@@ -75,7 +75,7 @@ export default function SoloSeniorTravelTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Group tours option</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Solo but not alone — best of both.</li>
               <li>Tauck, Collette, Road Scholar — senior-friendly.</li>
               <li>Tour guide handles all logistics.</li>
@@ -89,7 +89,7 @@ export default function SoloSeniorTravelTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Money safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Notify bank before traveling — avoid card block.</li>
               <li>Bring two cards — keep one separate from purse.</li>
               <li>Small amounts of cash for tips + emergencies.</li>
@@ -103,7 +103,7 @@ export default function SoloSeniorTravelTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start close to home</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;ve never traveled solo, start with a domestic trip — a nearby city, a national park, or a short flight somewhere. Get comfortable booking, navigating, and being on your own before international travel. Many seniors discover solo travel in their 60s and 70s after children leave or losing a spouse, and find it more freeing than they expected.</p>
+            <p className="text-base text-muted-foreground">If you&apos;ve never traveled solo, start with a domestic trip — a nearby city, a national park, or a short flight somewhere. Get comfortable booking, navigating, and being on your own before international travel. Many seniors discover solo travel in their 60s and 70s after children leave or losing a spouse, and find it more freeing than they expected.</p>
           </CardContent>
         </Card>
       </main>

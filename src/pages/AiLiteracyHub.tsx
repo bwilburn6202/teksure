@@ -411,9 +411,9 @@ export default function AiLiteracyHub() {
       <main id="main-content" className="container mx-auto px-4 py-12 max-w-6xl">
         {/* Hero */}
         <section className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-950/40 text-purple-700 dark:text-purple-300">
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-primary/10 text-primary ">
             <Sparkles className="w-4 h-4" />
-            <span className="text-sm font-medium">AI Literacy Hub</span>
+            <span className="text-base font-medium">AI Literacy Hub</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
             AI Without the Hype — What You Actually Need to Know
@@ -429,7 +429,7 @@ export default function AiLiteracyHub() {
               <a
                 key={s.id}
                 href={`#${s.id}`}
-                className="text-sm px-4 py-2 rounded-full border border-border hover:border-purple-400 hover:bg-purple-50 dark:hover:bg-purple-950/30 transition-colors"
+                className="text-sm px-4 py-2 rounded-full border border-border hover:border-purple-400 hover:bg-primary/10 transition-colors"
               >
                 {s.title}
               </a>
@@ -492,7 +492,7 @@ export default function AiLiteracyHub() {
                                   <span className="font-semibold">{item.name}</span>
                                 )}
                               </div>
-                              <p className="text-sm text-muted-foreground leading-relaxed">
+                              <p className="text-base text-muted-foreground leading-relaxed">
                                 {item.description}
                               </p>
                             </div>
@@ -528,7 +528,7 @@ export default function AiLiteracyHub() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="bg-transparent border-white text-white hover:bg-white hover:text-purple-700"
+                  className="bg-transparent border-white text-white hover:bg-card hover:text-primary"
                 >
                   <a href="/deepfake-defense-hub">
                     <ShieldAlert className="w-4 h-4 mr-2" />

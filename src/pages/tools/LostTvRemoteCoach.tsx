@@ -19,8 +19,8 @@ export default function LostTvRemoteCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple TV / iPhone</h2>
-            <p className="text-sm mb-2">Your iPhone IS an Apple TV remote.</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Your iPhone IS an Apple TV remote.</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Swipe down from top-right corner — Control Center.</li>
               <li>Tap the Apple TV remote icon (rectangle with play button).</li>
               <li>Pick your Apple TV. Use the touchpad on screen.</li>
@@ -32,7 +32,7 @@ export default function LostTvRemoteCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Roku TV / stick</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Install the free <strong>Roku</strong> app from App Store / Play Store.</li>
               <li>Phone must be on the same Wi-Fi as the Roku.</li>
               <li>App auto-detects your Roku.</li>
@@ -45,7 +45,7 @@ export default function LostTvRemoteCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Amazon Fire TV / Stick</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Install the <strong>Fire TV</strong> app.</li>
               <li>Sign in with the same Amazon account as the Fire TV.</li>
               <li>Connect (same Wi-Fi).</li>
@@ -58,7 +58,7 @@ export default function LostTvRemoteCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Samsung Smart TV</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Install <strong>SmartThings</strong> from Samsung.</li>
               <li>Sign in with Samsung account (or create one).</li>
               <li>Add your TV as a device.</li>
@@ -70,7 +70,7 @@ export default function LostTvRemoteCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">LG, Vizio, Sony Smart TVs</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>LG ThinQ app</strong>.</li>
               <li><strong>SmartCast app</strong> (Vizio).</li>
               <li><strong>Sony Video & TV SideView app</strong>.</li>
@@ -82,8 +82,8 @@ export default function LostTvRemoteCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If your TV is older (no Wi-Fi)</h2>
-            <p className="text-sm mb-2">You need a phone with an infrared (IR) blaster — most newer phones don\'t have one. But:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">You need a phone with an infrared (IR) blaster — most newer phones don\'t have one. But:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Samsung Galaxy older models</strong> have IR blasters. App: SmartThings or "Peel Remote".</li>
               <li><strong>For most phones</strong>: buy a $30 BroadLink IR hub. Plugs in, controls IR devices via app.</li>
               <li><strong>Or just buy a $10 universal remote</strong> from Walmart and program it.</li>
@@ -94,7 +94,7 @@ export default function LostTvRemoteCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Find that remote</h3>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Couch cushions — always check first.</li>
               <li>Between recliner cushions / under recliner.</li>
               <li>In the bathroom or kitchen (you took it during commercials).</li>

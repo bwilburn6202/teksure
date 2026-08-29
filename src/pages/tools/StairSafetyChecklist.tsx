@@ -19,7 +19,7 @@ export default function StairSafetyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Essential upgrades</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Handrails BOTH sides — required for safety, not optional.</li>
               <li>Handrails extend past top + bottom step.</li>
               <li>Bright lighting top + bottom (motion sensor).</li>
@@ -34,7 +34,7 @@ export default function StairSafetyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily habits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Always use handrail — even when feeling steady.</li>
               <li>One step at a time — both feet on each step if needed.</li>
               <li>Wear shoes/slippers with grip — not socks.</li>
@@ -48,7 +48,7 @@ export default function StairSafetyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stair lifts ($2,500-10,000)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Acorn</strong> — most installed. Straight stairs from $2,500.</li>
               <li><strong>Bruno</strong> — premium. Curved stairs $7K-15K.</li>
               <li><strong>Stannah</strong> — UK brand, US dealers.</li>
@@ -62,7 +62,7 @@ export default function StairSafetyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alternatives if stairs become unsafe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Move bedroom to first floor.</li>
               <li>Add downstairs half-bath/full-bath.</li>
               <li>Single-level living next move (ranch home, condo).</li>
@@ -75,7 +75,7 @@ export default function StairSafetyChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free home assessment</h3>
-            <p className="text-sm text-muted-foreground">Many local Area Agencies on Aging do free home safety assessments. Call <strong>Eldercare Locator: 1-800-677-1116</strong>. Occupational therapists can do prescribed home assessment (Medicare may cover with doctor referral).</p>
+            <p className="text-base text-muted-foreground">Many local Area Agencies on Aging do free home safety assessments. Call <strong>Eldercare Locator: 1-800-677-1116</strong>. Occupational therapists can do prescribed home assessment (Medicare may cover with doctor referral).</p>
           </CardContent>
         </Card>
       </main>

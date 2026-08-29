@@ -19,7 +19,7 @@ export default function SurgeryRecoveryTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up BEFORE surgery</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Echo / Google Home</strong> by bedside — hands-free help.</li>
               <li><strong>Echo Show</strong> with video calling — keep family in loop.</li>
               <li><strong>Mom&apos;s Meals or Magic Kitchen</strong> — pre-order 14 days of meals.</li>
@@ -35,7 +35,7 @@ export default function SurgeryRecoveryTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice commands during recovery</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Alexa, call my daughter."</li>
               <li>"Alexa, set timer for next pain pill at 2 PM."</li>
               <li>"Hey Google, what time is it?"</li>
@@ -50,7 +50,7 @@ export default function SurgeryRecoveryTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Track recovery</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medication app (Medisafe) for new pain meds.</li>
               <li>Apple Health — track walking, heart rate, sleep.</li>
               <li>Apple Watch detects falls — auto-calls 911.</li>
@@ -64,7 +64,7 @@ export default function SurgeryRecoveryTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free + insurance-covered help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Home health aide</strong> — Medicare often covers post-hospital.</li>
               <li><strong>Physical therapy at home</strong> — Medicare covered with referral.</li>
               <li><strong>Mom&apos;s Meals</strong> — Medicare Advantage often covers 14-30 days post-hospital.</li>
@@ -78,7 +78,7 @@ export default function SurgeryRecoveryTech() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t recover alone if avoidable</h3>
-            <p className="text-sm text-muted-foreground">First 1-2 weeks are highest risk. Have someone stay overnight if possible. Hire night aide $20-30/hr. Worth it for peace of mind. Hospital re-admission is 30% in seniors recovering alone — half the cost of just having help.</p>
+            <p className="text-base text-muted-foreground">First 1-2 weeks are highest risk. Have someone stay overnight if possible. Hire night aide $20-30/hr. Worth it for peace of mind. Hospital re-admission is 30% in seniors recovering alone — half the cost of just having help.</p>
           </CardContent>
         </Card>
       </main>

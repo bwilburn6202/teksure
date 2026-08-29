@@ -34,8 +34,8 @@ export default function DiseaseSupportCommunities() {
             <Card key={c.name}>
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{c.name}</h3>
-                <p className="text-sm">{c.what}</p>
-                <p className="text-sm text-muted-foreground">{c.good}</p>
+                <p className="text-base">{c.what}</p>
+                <p className="text-base text-muted-foreground">{c.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function DiseaseSupportCommunities() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For caregivers</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Caregiver Action Network</strong> — caregiveraction.org.</li>
               <li><strong>Family Caregiver Alliance</strong> — caregiver.org. State-specific resources.</li>
               <li><strong>CaringBridge</strong> — share updates with friends/family. (See our Caregiver Coordination tool.)</li>
@@ -56,7 +56,7 @@ export default function DiseaseSupportCommunities() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Helplines worth saving</h3>
-            <p className="text-sm text-muted-foreground"><strong>988</strong> — Suicide/Crisis. <strong>1-800-799-7233</strong> — Domestic violence. <strong>1-800-272-3900</strong> — Alzheimer\'s 24/7. <strong>1-800-227-2345</strong> — American Cancer Society 24/7. Save in your phone — when you need to talk at 3 AM, it\'s there.</p>
+            <p className="text-base text-muted-foreground"><strong>988</strong> — Suicide/Crisis. <strong>1-800-799-7233</strong> — Domestic violence. <strong>1-800-272-3900</strong> — Alzheimer\'s 24/7. <strong>1-800-227-2345</strong> — American Cancer Society 24/7. Save in your phone — when you need to talk at 3 AM, it\'s there.</p>
           </CardContent>
         </Card>
       </main>

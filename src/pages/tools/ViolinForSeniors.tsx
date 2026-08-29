@@ -19,7 +19,7 @@ export default function ViolinForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Honest expectations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hardest instrument to learn.</li>
               <li>First 6 months sound bad.</li>
               <li>Never quit too early.</li>
@@ -33,7 +33,7 @@ export default function ViolinForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First violin ($250-500)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cecilio CVN-300</strong> ($150) — entry kit.</li>
               <li><strong>Eastman</strong> series ($400-1000) — best beginner.</li>
               <li><strong>Stentor Student II</strong> ($200).</li>
@@ -47,7 +47,7 @@ export default function ViolinForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lessons essential</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Self-teaching = bad habits.</li>
               <li>Local teacher $40-80/wk.</li>
               <li>Suzuki method common.</li>
@@ -61,7 +61,7 @@ export default function ViolinForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior comforts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sit while practicing OK.</li>
               <li>Shoulder rest reduces neck strain.</li>
               <li>Lighter bow.</li>
@@ -75,7 +75,7 @@ export default function ViolinForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Violin Lab Channel</strong> — YouTube.</li>
               <li><strong>FiddleHed</strong> — folk + fiddle.</li>
               <li><strong>Suzuki Method</strong> — books.</li>
@@ -89,7 +89,7 @@ export default function ViolinForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First songs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Twinkle Twinkle Little Star.</li>
               <li>Lightly Row.</li>
               <li>Boil &apos;Em Cabbage Down.</li>
@@ -103,7 +103,7 @@ export default function ViolinForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior orchestra</h3>
-            <p className="text-sm text-muted-foreground">Many cities have senior / community orchestras. New England Conservatory + most music schools have adult programs. Local string quartets need pickup players. Symphony chorus often free. Music theory community classes. Connect with other senior musicians = lifelong friendships.</p>
+            <p className="text-base text-muted-foreground">Many cities have senior / community orchestras. New England Conservatory + most music schools have adult programs. Local string quartets need pickup players. Symphony chorus often free. Music theory community classes. Connect with other senior musicians = lifelong friendships.</p>
           </CardContent>
         </Card>
       </main>

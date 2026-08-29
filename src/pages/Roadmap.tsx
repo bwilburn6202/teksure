@@ -396,7 +396,7 @@ export default function Roadmap() {
                         <h2 className="text-2xl font-bold text-foreground leading-tight">
                           {cfg.label}
                         </h2>
-                        <p className="text-sm text-foreground/65">
+                        <p className="text-base text-foreground/65">
                           {cfg.description} &middot; {items.length} item
                           {items.length !== 1 ? 's' : ''}
                         </p>

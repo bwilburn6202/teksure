@@ -85,7 +85,7 @@ export default function ScamWitnessStatement() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <FileText className="h-8 w-8 text-amber-600" />
+                <FileText className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Witness Statement Builder</h1>
@@ -228,7 +228,7 @@ export default function ScamWitnessStatement() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Where to send it</p>
+              <p className="text-base font-semibold mb-2">Where to send it</p>
               <div className="space-y-2 text-sm">
                 <a href="https://reportfraud.ftc.gov" target="_blank" rel="noreferrer"
                   className="flex items-center gap-1 text-primary hover:underline">
@@ -241,7 +241,7 @@ export default function ScamWitnessStatement() {
                 <Link to="/tools/state-ag-scam-lookup" className="flex items-center gap-1 text-primary hover:underline">
                   Your state Attorney General <ChevronRight className="h-4 w-4" />
                 </Link>
-                <p className="text-xs text-muted-foreground mt-3">
+                <p className="text-sm text-muted-foreground mt-3">
                   If you were scammed in person or your safety feels at risk, also call your local police non-emergency line.
                 </p>
               </div>
@@ -252,16 +252,16 @@ export default function ScamWitnessStatement() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Check a message before you reply.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Check a message before you reply.</p>
               </Link>
               <Link to="/tools/robocall-blocker-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Robocall Blocker Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Stop the calls coming in.</p>
+                <p className="font-medium text-base">Robocall Blocker Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Stop the calls coming in.</p>
               </Link>
               <Link to="/scam-defense" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Defense Center</p>
-                <p className="text-xs text-muted-foreground mt-0.5">All scam protection in one place.</p>
+                <p className="font-medium text-base">Scam Defense Center</p>
+                <p className="text-sm text-muted-foreground mt-0.5">All scam protection in one place.</p>
               </Link>
             </div>
           </div>

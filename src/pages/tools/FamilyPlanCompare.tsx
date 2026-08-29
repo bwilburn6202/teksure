@@ -19,7 +19,7 @@ export default function FamilyPlanCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">2025 family plan prices (per line)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>T-Mobile Go5G Plus</strong> — $40-80/line on 4 lines. Includes Apple TV+, Netflix Basic.</li>
               <li><strong>Verizon Welcome Unlimited</strong> — $30-65/line on 4 lines. Discounts with Verizon Internet.</li>
               <li><strong>AT&amp;T Unlimited Premium</strong> — $50-85/line on 4 lines. Includes 50GB hotspot.</li>
@@ -33,7 +33,7 @@ export default function FamilyPlanCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When family plans are worth it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>4+ lines on Big 3 → meaningful per-line savings.</li>
               <li>Heavy data users (gaming, streaming) — unlimited plans work better.</li>
               <li>Multiple kids/teens benefit from "talk + text" lines free with main line.</li>
@@ -45,7 +45,7 @@ export default function FamilyPlanCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When MVNOs beat family plans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>2-3 light users (texting, occasional video) — Visible, Mint cheaper than Big 3 family.</li>
               <li>Different family members on different networks — flexibility wins.</li>
               <li>Ex: 2 grandparents on Mint at $15 + Visible at $25 = $55/mo total. Verizon family of 2 = $130+.</li>
@@ -56,7 +56,7 @@ export default function FamilyPlanCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sharing across generations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adult kids can add grandparents to plan — usually saves $20-40/line.</li>
               <li>Each person gets own number + bill itemized.</li>
               <li>Apple Family Sharing handles iCloud, Apple One, Apple Music separately. Keep in mind.</li>
@@ -68,7 +68,7 @@ export default function FamilyPlanCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">"Best plan" varies</h3>
-            <p className="text-sm text-muted-foreground">Use a plan-comparison site like <strong>WhistleOut</strong> or <strong>BestMVNO</strong>. Type your needs (lines, GB, calls, hotspot). Real recommendations from neutral sources. Beats marketing pitches from carrier reps.</p>
+            <p className="text-base text-muted-foreground">Use a plan-comparison site like <strong>WhistleOut</strong> or <strong>BestMVNO</strong>. Type your needs (lines, GB, calls, hotspot). Real recommendations from neutral sources. Beats marketing pitches from carrier reps.</p>
           </CardContent>
         </Card>
       </main>

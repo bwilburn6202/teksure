@@ -123,7 +123,7 @@ export default function PracticeInbox() {
             </Button>
             <div className="flex items-center gap-3 text-sm">
               {progress.rooms.inbox.currentStreak > 0 && (
-                <span className="inline-flex items-center gap-1 text-orange-600 dark:text-orange-400">
+                <span className="inline-flex items-center gap-1 text-warn-foreground ">
                   <Flame className="h-4 w-4" />
                   {progress.rooms.inbox.currentStreak} streak
                 </span>
@@ -169,7 +169,7 @@ export default function PracticeInbox() {
               <ArrowRight className="h-4 w-4" />
             </Button>
             {EMAIL_SCENARIOS.length > tierPool.length && (
-              <p className="text-xs text-muted-foreground mt-3">
+              <p className="text-sm text-muted-foreground mt-3">
                 Showing scenarios at or below your difficulty. Bump up your tier in{' '}
                 <Link to="/setup" className="text-primary hover:underline">
                   setup
@@ -193,7 +193,7 @@ export default function PracticeInbox() {
                   onClick={() => handleGuess('legit')}
                   className="h-14 text-base gap-2 border-emerald-500/40 hover:bg-emerald-500/10"
                 >
-                  <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+                  <CheckCircle2 className="h-5 w-5 text-success-foreground" />
                   This looks safe
                 </Button>
                 <Button
@@ -202,7 +202,7 @@ export default function PracticeInbox() {
                   onClick={() => handleGuess('phishing')}
                   className="h-14 text-base gap-2 border-red-500/40 hover:bg-red-500/10"
                 >
-                  <ShieldAlert className="h-5 w-5 text-red-600" />
+                  <ShieldAlert className="h-5 w-5 text-danger-foreground" />
                   This is a scam
                 </Button>
               </div>
@@ -249,9 +249,9 @@ function FakeEmailView({ email }: { email: EmailScenario }) {
             {email.fromName.charAt(0)}
           </div>
           <div className="flex-1 min-w-0">
-            <p className="font-medium text-sm">{email.fromName}</p>
-            <p className="text-xs text-muted-foreground break-all">&lt;{email.fromAddress}&gt;</p>
-            <p className="text-xs text-muted-foreground mt-1">to me · {email.receivedAt}</p>
+            <p className="font-medium text-base">{email.fromName}</p>
+            <p className="text-sm text-muted-foreground break-all">&lt;{email.fromAddress}&gt;</p>
+            <p className="text-sm text-muted-foreground mt-1">to me · {email.receivedAt}</p>
           </div>
         </div>
 
@@ -291,15 +291,15 @@ function FeedbackPanel({
       <CardContent className="p-5">
         <div className="flex items-start gap-3 mb-3">
           {correct ? (
-            <CheckCircle2 className="h-6 w-6 text-emerald-600 shrink-0 mt-0.5" />
+            <CheckCircle2 className="h-6 w-6 text-success-foreground shrink-0 mt-0.5" />
           ) : (
-            <XCircle className="h-6 w-6 text-amber-600 shrink-0 mt-0.5" />
+            <XCircle className="h-6 w-6 text-warn-foreground shrink-0 mt-0.5" />
           )}
           <div className="flex-1">
             <p className="font-bold text-base">
               {correct ? 'Nailed it.' : 'Not quite.'}
             </p>
-            <p className="text-sm text-muted-foreground mt-0.5">
+            <p className="text-base text-muted-foreground mt-0.5">
               That email was{' '}
               <strong className={isPhishing ? 'text-red-600' : 'text-emerald-700'}>
                 {isPhishing ? 'a scam.' : 'real / safe.'}
@@ -313,10 +313,10 @@ function FeedbackPanel({
             <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground mb-2">
               Red flags
             </p>
-            <ul className="space-y-1.5 text-sm text-muted-foreground">
+            <ul className="space-y-1.5 text-base text-muted-foreground">
               {scenario.redFlags.map((flag, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="text-red-500 mt-0.5" aria-hidden="true">
+                  <span className="text-danger-foreground mt-0.5" aria-hidden="true">
                     •
                   </span>
                   <span>{flag}</span>
@@ -330,7 +330,7 @@ function FeedbackPanel({
           <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-1">
             Why
           </p>
-          <p className="text-sm text-muted-foreground">{scenario.explanation}</p>
+          <p className="text-base text-muted-foreground">{scenario.explanation}</p>
         </div>
 
         <Button onClick={onContinue} className="w-full gap-2">
@@ -378,8 +378,8 @@ function FinishedSummary({
             <ul className="space-y-3">
               {state.missed.map(s => (
                 <li key={s.id} className="border-l-2 border-amber-500/60 pl-3">
-                  <p className="text-sm font-medium">"{s.subject}"</p>
-                  <p className="text-xs text-muted-foreground mt-0.5">
+                  <p className="text-base font-medium">"{s.subject}"</p>
+                  <p className="text-sm text-muted-foreground mt-0.5">
                     Was: {s.verdict === 'phishing' ? 'a scam' : 'real / safe'} · {s.explanation}
                   </p>
                 </li>

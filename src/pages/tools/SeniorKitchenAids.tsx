@@ -22,7 +22,7 @@ export default function SeniorKitchenAids() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Reacher tool</h2><p>$15. Get items from high shelves without ladder. 33 inches.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lazy Susan</h2><p>$20. In cabinet, refrigerator. Spin to find items.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pull-out drawers</h2><p>$50/each. Install in lower cabinets. No more bending and reaching.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: $100 of senior kitchen aids = real independence in cooking.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: $100 of senior kitchen aids = real independence in cooking.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

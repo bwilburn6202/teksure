@@ -306,7 +306,7 @@ function ScenarioCard({ scenario, onClick, completed }: { scenario: Scenario; on
           <p className="text-sm text-muted-foreground mb-3 line-clamp-2">{scenario.description}</p>
           <div className="flex items-center gap-2">
             <Badge className={difficultyColors[scenario.difficulty]}>{scenario.difficulty}</Badge>
-            <span className="text-xs text-muted-foreground flex items-center gap-1">
+            <span className="text-sm text-muted-foreground flex items-center gap-1">
               <Clock className="h-3 w-3" /> {scenario.duration}
             </span>
           </div>
@@ -369,7 +369,7 @@ function ScenarioPlay({ scenario, onComplete }: { scenario: Scenario; onComplete
             {score >= 70 ? (
               <Trophy className="h-10 w-10 text-teksure-success" />
             ) : (
-              <Target className="h-10 w-10 text-amber-500" />
+              <Target className="h-10 w-10 text-warn-foreground" />
             )}
           </div>
           <h2 className="text-2xl font-bold mb-2">
@@ -382,13 +382,13 @@ function ScenarioPlay({ scenario, onComplete }: { scenario: Scenario; onComplete
 
         <div className="glass-card p-6 mb-6">
           <h3 className="font-semibold mb-4">Key takeaways</h3>
-          <ul className="space-y-2 text-sm">
+          <ul className="space-y-2 text-base">
             <li className="flex items-start gap-2">
               <Shield className="h-4 w-4 text-teksure-success mt-0.5 shrink-0" />
               <span>When in doubt, hang up and verify through official channels</span>
             </li>
             <li className="flex items-start gap-2">
-              <AlertTriangle className="h-4 w-4 text-amber-500 mt-0.5 shrink-0" />
+              <AlertTriangle className="h-4 w-4 text-warn-foreground mt-0.5 shrink-0" />
               <span>Urgency and threats are manipulation tactics — stay calm</span>
             </li>
             <li className="flex items-start gap-2">
@@ -413,7 +413,7 @@ function ScenarioPlay({ scenario, onComplete }: { scenario: Scenario; onComplete
   return (
     <div>
       <div className="flex items-center justify-between mb-4">
-        <span className="text-sm text-muted-foreground">Step {currentStep + 1} of {scenario.steps.length}</span>
+        <span className="text-base text-muted-foreground">Step {currentStep + 1} of {scenario.steps.length}</span>
         <div className="flex items-center gap-2">
           <Badge className="bg-teksure-success/10 text-teksure-success">{correct} </Badge>
           <Badge variant="destructive">{wrong} </Badge>
@@ -422,8 +422,8 @@ function ScenarioPlay({ scenario, onComplete }: { scenario: Scenario; onComplete
       <Progress value={progress} className="h-2 mb-6" />
 
       <div className="mb-6">
-        <div className="p-4 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl mb-4">
-          <p className="font-medium text-amber-900 dark:text-amber-100">{step.situation}</p>
+        <div className="p-4 bg-warn border border-warn-foreground/25 rounded-xl mb-4">
+          <p className="font-medium text-warn-foreground ">{step.situation}</p>
         </div>
 
         {step.tip && (
@@ -466,7 +466,7 @@ function ScenarioPlay({ scenario, onComplete }: { scenario: Scenario; onComplete
                   }`}>
                     {showAsCorrect ? <CheckCircle className="h-4 w-4" /> : showAsWrong ? <XCircle className="h-4 w-4" /> : null}
                   </div>
-                  <span className="text-sm">{option.text}</span>
+                  <span className="text-base">{option.text}</span>
                 </div>
 
                 {showFeedback && (
@@ -553,7 +553,7 @@ const TechLifeSimulator = () => {
                 </div>
                 <div>
                   <h2 className="text-xl font-bold">{activeScenario.title}</h2>
-                  <p className="text-sm text-muted-foreground">{activeScenario.description}</p>
+                  <p className="text-base text-muted-foreground">{activeScenario.description}</p>
                 </div>
               </div>
             </div>
@@ -571,7 +571,7 @@ const TechLifeSimulator = () => {
           <>
             <div className="text-center mb-12">
               <div className="inline-flex h-16 w-16 rounded-full bg-gradient-to-br from-amber-500/20 to-primary/5 items-center justify-center mb-6">
-                <Brain className="h-8 w-8 text-amber-500" />
+                <Brain className="h-8 w-8 text-warn-foreground" />
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-4 display-heading">
                 Tech Life Simulator
@@ -609,7 +609,7 @@ const TechLifeSimulator = () => {
             <div className="text-center">
               <div className="inline-flex items-center gap-2 p-4 bg-muted/30 rounded-2xl">
                 <Zap className="h-5 w-5 text-primary" />
-                <span className="text-sm">
+                <span className="text-base">
                   {completedScenarios.length} of {scenarios.length} scenarios completed
                 </span>
               </div>

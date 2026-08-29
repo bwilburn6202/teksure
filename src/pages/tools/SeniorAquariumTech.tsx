@@ -22,7 +22,7 @@ export default function SeniorAquariumTech() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smart light timer</h2><p>Wyze Smart Plug ($15). Auto on/off lights. Looks like sunrise/sunset.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Beginner tank</h2><p>20-gallon long with hood and filter $80-$120 starter kit.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Calming benefit</h2><p>Studies show watching fish reduces blood pressure and anxiety.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Start with hardy fish (zebra danios, platies). Less stressful than goldfish.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Start with hardy fish (zebra danios, platies). Less stressful than goldfish.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

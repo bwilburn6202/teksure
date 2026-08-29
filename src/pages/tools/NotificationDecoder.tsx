@@ -381,8 +381,8 @@ export default function NotificationDecoder() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-violet-50 dark:bg-violet-950/30 flex items-center justify-center flex-shrink-0">
-                <Bell className="h-6 w-6 text-violet-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <Bell className="h-6 w-6 text-primary" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -425,7 +425,7 @@ export default function NotificationDecoder() {
           </div>
 
           {/* Results count */}
-          <p className="text-sm text-muted-foreground mb-6">
+          <p className="text-base text-muted-foreground mb-6">
             Showing {filtered.length} notification{filtered.length !== 1 ? 's' : ''}
           </p>
 
@@ -434,7 +434,7 @@ export default function NotificationDecoder() {
             <div className="text-center py-20">
               <p className="text-4xl mb-3"></p>
               <p className="font-semibold text-lg mb-2">No results found</p>
-              <p className="text-muted-foreground text-sm max-w-xs mx-auto">
+              <p className="text-muted-foreground text-base max-w-xs mx-auto">
                 Try different words — for example, type "virus" instead of "virus warning."
               </p>
             </div>
@@ -465,10 +465,10 @@ export default function NotificationDecoder() {
                           <span className={`text-xs font-semibold px-2 py-0.5 rounded-full ${cfg.bg} ${cfg.color}`}>
                             {cfg.label}
                           </span>
-                          <span className="text-xs text-muted-foreground">{n.category}</span>
+                          <span className="text-sm text-muted-foreground">{n.category}</span>
                         </div>
                         <h2 className="font-semibold text-base leading-snug mb-0.5">{n.title}</h2>
-                        <p className="text-sm text-muted-foreground">{n.subtitle}</p>
+                        <p className="text-base text-muted-foreground">{n.subtitle}</p>
                       </div>
                       <div className="flex-shrink-0 mt-1">
                         {isOpen
@@ -482,18 +482,18 @@ export default function NotificationDecoder() {
                     {isOpen && (
                       <div id={`notification-${n.id}`} className="px-5 pb-6 border-t border-inherit pt-5 space-y-5">
                         {/* Tagline */}
-                        <p className={`text-sm font-medium ${cfg.color}`}>{cfg.tagline}</p>
+                        <p className={`text-base font-medium ${cfg.color}`}>{cfg.tagline}</p>
 
                         {/* What it means */}
                         <div>
                           <h3 className="font-semibold text-sm mb-1.5">What this means</h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{n.whatItMeans}</p>
+                          <p className="text-base text-muted-foreground leading-relaxed">{n.whatItMeans}</p>
                         </div>
 
                         {/* What caused it */}
                         <div>
                           <h3 className="font-semibold text-sm mb-1.5">Why you're seeing it</h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{n.whatCausedIt}</p>
+                          <p className="text-base text-muted-foreground leading-relaxed">{n.whatCausedIt}</p>
                         </div>
 
                         {/* What to do */}
@@ -501,7 +501,7 @@ export default function NotificationDecoder() {
                           <h3 className="font-semibold text-sm mb-2">What to do</h3>
                           <ol className="space-y-2">
                             {n.whatToDo.map((step, i) => (
-                              <li key={i} className="flex gap-3 text-sm">
+                              <li key={i} className="flex gap-3 text-base">
                                 <span className="flex-shrink-0 w-5 h-5 rounded-full bg-foreground/10 text-xs flex items-center justify-center font-medium mt-0.5">
                                   {i + 1}
                                 </span>
@@ -512,7 +512,7 @@ export default function NotificationDecoder() {
                         </div>
 
                         {/* Safe to ignore */}
-                        <div className={`flex items-center gap-2 text-sm px-3 py-2.5 rounded-xl ${n.safeToIgnore ? 'bg-green-50 dark:bg-green-950/20 text-green-700 dark:text-green-400' : 'bg-amber-50 dark:bg-amber-950/20 text-amber-700 dark:text-amber-400'}`}>
+                        <div className={`flex items-center gap-2 text-sm px-3 py-2.5 rounded-xl ${n.safeToIgnore ? 'bg-green-50 dark:bg-green-950/20 text-success-foreground dark:text-green-400' : 'bg-amber-50 dark:bg-amber-950/20 text-warn-foreground dark:text-amber-400'}`}>
                           {n.safeToIgnore
                             ? <><CheckCircle className="h-4 w-4 flex-shrink-0" aria-hidden="true" /><span>This notification is safe to ignore if you're not ready to act.</span></>
                             : <><AlertTriangle className="h-4 w-4 flex-shrink-0" aria-hidden="true" /><span>This notification is worth acting on — don't dismiss it without reading what to do.</span></>
@@ -538,8 +538,8 @@ export default function NotificationDecoder() {
             <div className="flex gap-3 items-start">
               <ShieldAlert className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
               <div>
-                <p className="font-semibold text-sm mb-1">Quick Tip: Real vs. Fake alerts</p>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="font-semibold text-base mb-1">Quick Tip: Real vs. Fake alerts</p>
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Real security alerts from Apple, Microsoft, and Google appear in your device's Settings app — not in a browser pop-up. If a pop-up shows a phone number to call, it\'s always a scam. Close it without clicking anything.
                 </p>
               </div>

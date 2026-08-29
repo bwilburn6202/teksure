@@ -171,22 +171,22 @@ export default function TechSupportPrepSheet() {
         title="Tech Support Prep Sheet — TekSure"
         description="Before you call tech support, gather all the info they will need. Fill out this quick form and print or read from your prep sheet during the call."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4 print:bg-white">
+      <main className="min-h-screen bg-muted py-8 px-4 print:bg-card">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-6 print:mb-3">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-100 dark:bg-blue-950/60 mb-4 print:hidden">
-              <ClipboardList className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-info mb-4 print:hidden">
+              <ClipboardList className="w-8 h-8 text-info-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Tech Support Prep Sheet</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400 print:hidden">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Tech Support Prep Sheet</h1>
+            <p className="text-lg text-muted-foreground print:hidden">
               Answer a few quick questions before you call — so you have everything ready.
             </p>
           </div>
 
           {/* Step 0: Device */}
           {step === 0 && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
-              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-4 text-lg">What device do you need help with?</p>
+            <div className="bg-card rounded-2xl border border-border p-5 shadow-sm">
+              <p className="font-semibold text-foreground mb-4 text-lg">What device do you need help with?</p>
               <div className="grid grid-cols-2 gap-3">
                 {DEVICES.map(d => (
                   <button
@@ -194,14 +194,14 @@ export default function TechSupportPrepSheet() {
                     onClick={() => { setDevice(d); setStep(1); }}
                     className={`p-4 rounded-xl border-2 text-left transition-all ${
                       device === d
-                        ? 'border-blue-500 bg-blue-50 dark:bg-blue-950/30'
+                        ? 'border-blue-500 bg-info dark:bg-blue-950/30'
                         : 'border-gray-200 dark:border-gray-700 hover:border-blue-400'
                     }`}
                   >
                     <p className="text-2xl mb-1">
                       {d === 'iPhone' ? '📱' : d === 'Android' ? '🤖' : d === 'Windows PC' ? '🖥️' : d === 'Mac' ? '💻' : d === 'iPad' ? '📲' : '❓'}
                     </p>
-                    <p className="font-semibold text-gray-900 dark:text-gray-100 text-sm">{d}</p>
+                    <p className="font-semibold text-foreground text-base">{d}</p>
                   </button>
                 ))}
               </div>
@@ -210,8 +210,8 @@ export default function TechSupportPrepSheet() {
 
           {/* Step 1: Problem */}
           {step === 1 && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
-              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-4 text-lg">What is the problem?</p>
+            <div className="bg-card rounded-2xl border border-border p-5 shadow-sm">
+              <p className="font-semibold text-foreground mb-4 text-lg">What is the problem?</p>
               <div className="space-y-2">
                 {PROBLEMS.map(p => (
                   <button
@@ -219,15 +219,15 @@ export default function TechSupportPrepSheet() {
                     onClick={() => { setProblem(p); setStep(2); }}
                     className={`w-full text-left px-4 py-3 rounded-xl border-2 transition-all text-sm font-medium ${
                       problem === p
-                        ? 'border-blue-500 bg-blue-50 dark:bg-blue-950/30 text-blue-800 dark:text-blue-200'
-                        : 'border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200 hover:border-blue-400'
+                        ? 'border-blue-500 bg-info text-info-foreground dark:text-blue-200'
+                        : 'border-gray-200 dark:border-gray-700 text-foreground hover:border-blue-400'
                     }`}
                   >
                     {p}
                   </button>
                 ))}
               </div>
-              <button onClick={() => setStep(0)} className="mt-4 flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+              <button onClick={() => setStep(0)} className="mt-4 flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground ">
                 <ChevronLeft className="w-4 h-4" /> Back
               </button>
             </div>
@@ -235,9 +235,9 @@ export default function TechSupportPrepSheet() {
 
           {/* Step 2: When + detail */}
           {step === 2 && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm space-y-5">
+            <div className="bg-card rounded-2xl border border-border p-5 shadow-sm space-y-5">
               <div>
-                <p className="font-semibold text-gray-900 dark:text-gray-100 mb-3">When did the problem start?</p>
+                <p className="font-semibold text-foreground mb-3">When did the problem start?</p>
                 <div className="grid grid-cols-2 gap-2">
                   {WHEN.map(w => (
                     <button
@@ -245,8 +245,8 @@ export default function TechSupportPrepSheet() {
                       onClick={() => setWhenStarted(w)}
                       className={`px-3 py-2.5 rounded-xl border-2 text-sm font-medium text-left transition-all ${
                         whenStarted === w
-                          ? 'border-blue-500 bg-blue-50 dark:bg-blue-950/30 text-blue-800 dark:text-blue-200'
-                          : 'border-gray-200 dark:border-gray-700 text-gray-800 dark:text-gray-200 hover:border-blue-400'
+                          ? 'border-blue-500 bg-info text-info-foreground dark:text-blue-200'
+                          : 'border-gray-200 dark:border-gray-700 text-foreground hover:border-blue-400'
                       }`}
                     >
                       {w}
@@ -256,20 +256,20 @@ export default function TechSupportPrepSheet() {
               </div>
 
               <div>
-                <label className="block font-semibold text-gray-900 dark:text-gray-100 mb-2">
-                  Describe the problem in your own words <span className="text-gray-400 font-normal">(optional)</span>
+                <label className="block font-semibold text-foreground mb-2">
+                  Describe the problem in your own words <span className="text-muted-foreground font-normal">(optional)</span>
                 </label>
                 <textarea
                   value={problemDetail}
                   onChange={e => setProblemDetail(e.target.value)}
                   placeholder="e.g. When I try to open my email, I see a spinning circle and it never loads. Started after I updated the app yesterday."
                   rows={3}
-                  className="w-full px-3 py-2 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-3 py-2 rounded-xl border border-border bg-card text-foreground text-sm resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
 
               <div className="flex gap-3">
-                <button onClick={() => setStep(1)} className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                <button onClick={() => setStep(1)} className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground ">
                   <ChevronLeft className="w-4 h-4" /> Back
                 </button>
                 <button
@@ -285,9 +285,9 @@ export default function TechSupportPrepSheet() {
 
           {/* Step 3: What have you tried */}
           {step === 3 && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
-              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1 text-lg">What have you already tried?</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">Check everything that applies. It is fine if the answer is "nothing yet."</p>
+            <div className="bg-card rounded-2xl border border-border p-5 shadow-sm">
+              <p className="font-semibold text-foreground mb-1 text-lg">What have you already tried?</p>
+              <p className="text-base text-muted-foreground mb-4">Check everything that applies. It is fine if the answer is "nothing yet."</p>
               <div className="space-y-2">
                 {TRIED_OPTIONS.map(item => {
                   const checked = tried.includes(item);
@@ -297,20 +297,20 @@ export default function TechSupportPrepSheet() {
                       onClick={() => toggleTried(item)}
                       className={`w-full flex items-start gap-3 px-4 py-3 rounded-xl border-2 text-left text-sm transition-all ${
                         checked
-                          ? 'border-blue-500 bg-blue-50 dark:bg-blue-950/30'
+                          ? 'border-blue-500 bg-info dark:bg-blue-950/30'
                           : 'border-gray-200 dark:border-gray-700 hover:border-blue-300'
                       }`}
                     >
                       <span className={`mt-0.5 flex-shrink-0 ${checked ? 'text-blue-600 dark:text-blue-400' : 'text-gray-400'}`}>
                         <CheckCircle2 className="w-5 h-5" />
                       </span>
-                      <span className="text-gray-800 dark:text-gray-200">{item}</span>
+                      <span className="text-foreground ">{item}</span>
                     </button>
                   );
                 })}
               </div>
               <div className="flex gap-3 mt-5">
-                <button onClick={() => setStep(2)} className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                <button onClick={() => setStep(2)} className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground ">
                   <ChevronLeft className="w-4 h-4" /> Back
                 </button>
                 <button
@@ -325,29 +325,29 @@ export default function TechSupportPrepSheet() {
 
           {/* Step 4: Contact info (optional) */}
           {step === 4 && (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm space-y-4">
+            <div className="bg-card rounded-2xl border border-border p-5 shadow-sm space-y-4">
               <div>
-                <p className="font-semibold text-gray-900 dark:text-gray-100 mb-1">Your name and phone number <span className="text-gray-400 font-normal">(optional — for your own printout)</span></p>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">This information stays on your device and is never sent anywhere.</p>
+                <p className="font-semibold text-foreground mb-1">Your name and phone number <span className="text-muted-foreground font-normal">(optional — for your own printout)</span></p>
+                <p className="text-base text-muted-foreground mb-4">This information stays on your device and is never sent anywhere.</p>
                 <div className="space-y-3">
                   <input
                     type="text"
                     value={name}
                     onChange={e => setName(e.target.value)}
                     placeholder="Your name"
-                    className="w-full px-3 py-2 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-3 py-2 rounded-xl border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                   <input
                     type="tel"
                     value={phone}
                     onChange={e => setPhone(e.target.value)}
                     placeholder="Phone number"
-                    className="w-full px-3 py-2 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-3 py-2 rounded-xl border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
               </div>
               <div className="flex gap-3">
-                <button onClick={() => setStep(3)} className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200">
+                <button onClick={() => setStep(3)} className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground ">
                   <ChevronLeft className="w-4 h-4" /> Back
                 </button>
                 <button
@@ -363,40 +363,40 @@ export default function TechSupportPrepSheet() {
           {/* Step 5: Prep Sheet */}
           {step === 5 && device && problem && whenStarted && deviceInfo && (
             <>
-              <div className="bg-white dark:bg-gray-900 rounded-2xl border-2 border-blue-200 dark:border-blue-800 p-5 shadow-sm print:border-gray-400">
+              <div className="bg-card rounded-2xl border-2 border-info-foreground/25 p-5 shadow-sm print:border-gray-400">
                 <div className="flex items-center gap-2 mb-4">
-                  <ClipboardList className="w-5 h-5 text-blue-600 dark:text-blue-400 print:text-gray-700" />
-                  <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">Your Tech Support Prep Sheet</h2>
+                  <ClipboardList className="w-5 h-5 text-info-foreground print:text-foreground" />
+                  <h2 className="text-xl font-bold text-foreground ">Your Tech Support Prep Sheet</h2>
                 </div>
 
                 {(name || phone) && (
-                  <div className="mb-4 pb-4 border-b border-gray-200 dark:border-gray-700">
-                    {name && <p className="text-sm text-gray-700 dark:text-gray-300"><span className="font-semibold">Name:</span> {name}</p>}
-                    {phone && <p className="text-sm text-gray-700 dark:text-gray-300"><span className="font-semibold">Phone:</span> {phone}</p>}
+                  <div className="mb-4 pb-4 border-b border-border ">
+                    {name && <p className="text-base text-foreground "><span className="font-semibold">Name:</span> {name}</p>}
+                    {phone && <p className="text-base text-foreground "><span className="font-semibold">Phone:</span> {phone}</p>}
                   </div>
                 )}
 
                 {/* Problem summary */}
-                <div className="mb-4 pb-4 border-b border-gray-200 dark:border-gray-700">
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">The Problem</h3>
-                  <p className="text-sm text-gray-700 dark:text-gray-300"><span className="font-medium">Device:</span> {device}</p>
-                  <p className="text-sm text-gray-700 dark:text-gray-300"><span className="font-medium">Issue:</span> {problem}</p>
-                  <p className="text-sm text-gray-700 dark:text-gray-300"><span className="font-medium">When it started:</span> {whenStarted}</p>
+                <div className="mb-4 pb-4 border-b border-border ">
+                  <h3 className="font-semibold text-foreground mb-2">The Problem</h3>
+                  <p className="text-base text-foreground "><span className="font-medium">Device:</span> {device}</p>
+                  <p className="text-base text-foreground "><span className="font-medium">Issue:</span> {problem}</p>
+                  <p className="text-base text-foreground "><span className="font-medium">When it started:</span> {whenStarted}</p>
                   {problemDetail && (
-                    <p className="text-sm text-gray-700 dark:text-gray-300 mt-1"><span className="font-medium">Details:</span> {problemDetail}</p>
+                    <p className="text-base text-foreground mt-1"><span className="font-medium">Details:</span> {problemDetail}</p>
                   )}
                 </div>
 
                 {/* What was tried */}
-                <div className="mb-4 pb-4 border-b border-gray-200 dark:border-gray-700">
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">What I Have Already Tried</h3>
+                <div className="mb-4 pb-4 border-b border-border ">
+                  <h3 className="font-semibold text-foreground mb-2">What I Have Already Tried</h3>
                   {tried.length === 0 ? (
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Nothing yet — this is my first step.</p>
+                    <p className="text-base text-muted-foreground ">Nothing yet — this is my first step.</p>
                   ) : (
                     <ul className="space-y-1">
                       {tried.map(t => (
-                        <li key={t} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
-                          <span className="text-blue-500 flex-shrink-0 mt-0.5">✓</span>
+                        <li key={t} className="flex items-start gap-2 text-base text-foreground ">
+                          <span className="text-info-foreground flex-shrink-0 mt-0.5">✓</span>
                           {t}
                         </li>
                       ))}
@@ -405,16 +405,16 @@ export default function TechSupportPrepSheet() {
                 </div>
 
                 {/* Device info to gather */}
-                <div className="mb-4 pb-4 border-b border-gray-200 dark:border-gray-700">
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Device Information to Have Ready</h3>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">Look up these details before the call and write them in:</p>
+                <div className="mb-4 pb-4 border-b border-border ">
+                  <h3 className="font-semibold text-foreground mb-2">Device Information to Have Ready</h3>
+                  <p className="text-sm text-muted-foreground mb-2">Look up these details before the call and write them in:</p>
                   <div className="space-y-2">
                     {deviceInfo.info.map((item, i) => (
                       <div key={i} className="flex items-start gap-3">
-                        <span className="text-xs text-gray-500 w-4 flex-shrink-0 mt-1">{i + 1}.</span>
+                        <span className="text-xs text-muted-foreground w-4 flex-shrink-0 mt-1">{i + 1}.</span>
                         <div className="flex-1">
-                          <p className="text-sm text-gray-700 dark:text-gray-300">{item}</p>
-                          <div className="mt-1 border-b border-dotted border-gray-300 dark:border-gray-600 h-5" />
+                          <p className="text-base text-foreground ">{item}</p>
+                          <div className="mt-1 border-b border-dotted border-border h-5" />
                         </div>
                       </div>
                     ))}
@@ -423,20 +423,20 @@ export default function TechSupportPrepSheet() {
 
                 {/* Reminders */}
                 <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-2">Reminders for the Call</h3>
+                  <h3 className="font-semibold text-foreground mb-2">Reminders for the Call</h3>
                   <ul className="space-y-1">
                     {deviceInfo.reminders.map((r, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
-                        <span className="text-blue-500 flex-shrink-0 mt-0.5">→</span>
+                      <li key={i} className="flex items-start gap-2 text-base text-foreground ">
+                        <span className="text-info-foreground flex-shrink-0 mt-0.5">→</span>
                         {r}
                       </li>
                     ))}
-                    <li className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
-                      <span className="text-blue-500 flex-shrink-0 mt-0.5">→</span>
+                    <li className="flex items-start gap-2 text-base text-foreground ">
+                      <span className="text-info-foreground flex-shrink-0 mt-0.5">→</span>
                       Ask the support agent for their name and a case number at the start of the call
                     </li>
-                    <li className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
-                      <span className="text-blue-500 flex-shrink-0 mt-0.5">→</span>
+                    <li className="flex items-start gap-2 text-base text-foreground ">
+                      <span className="text-info-foreground flex-shrink-0 mt-0.5">→</span>
                       Keep a pen and paper nearby to write down what they tell you
                     </li>
                   </ul>
@@ -444,9 +444,9 @@ export default function TechSupportPrepSheet() {
               </div>
 
               {/* Scam warning */}
-              <div className="mt-4 bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl p-4">
-                <p className="text-sm font-semibold text-amber-800 dark:text-amber-200 mb-1">Watch out for tech support scams</p>
-                <p className="text-sm text-amber-700 dark:text-amber-300">
+              <div className="mt-4 bg-warn border border-warn-foreground/25 rounded-xl p-4">
+                <p className="text-base font-semibold text-warn-foreground mb-1">Watch out for tech support scams</p>
+                <p className="text-base text-warn-foreground ">
                   Legitimate companies (Apple, Microsoft, Google) will <strong>never</strong> call you out of the blue and say your computer has a virus. Do not let anyone you did not contact first take remote control of your device, and never pay for support with gift cards or wire transfer. If something feels off, hang up and call the company directly using a number from their official website.
                 </p>
               </div>
@@ -454,7 +454,7 @@ export default function TechSupportPrepSheet() {
               <div className="mt-4 flex gap-3 print:hidden">
                 <button
                   onClick={reset}
-                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 text-sm font-medium transition-colors"
+                  className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-border text-muted-foreground hover:bg-muted text-sm font-medium transition-colors"
                 >
                   <RotateCcw className="w-4 h-4" />
                   Start Over
@@ -470,7 +470,7 @@ export default function TechSupportPrepSheet() {
             </>
           )}
         </div>
-      </div>
+      </main>
     </>
   );
 }

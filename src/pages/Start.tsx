@@ -101,12 +101,12 @@ export default function Start() {
                 <Link key={p.to} to={p.to}>
                   <Card className={`bg-gradient-to-r ${p.cls} hover:shadow-md transition-all border-2`}>
                     <CardContent className="p-5 flex items-center gap-4">
-                      <div className="p-3 bg-white dark:bg-slate-900 rounded-xl shadow-sm shrink-0">
+                      <div className="p-3 bg-card rounded-xl shadow-sm shrink-0">
                         <Icon className="h-6 w-6 text-foreground" />
                       </div>
                       <div className="flex-1">
                         <p className="font-semibold text-base md:text-lg">{p.q}</p>
-                        <p className="text-sm text-muted-foreground mt-0.5">{p.description}</p>
+                        <p className="text-base text-muted-foreground mt-0.5">{p.description}</p>
                       </div>
                       <ArrowRight className="h-5 w-5 text-muted-foreground shrink-0" />
                     </CardContent>
@@ -117,7 +117,7 @@ export default function Start() {
           </div>
 
           <div className="mt-12 text-center">
-            <p className="text-sm text-muted-foreground mb-2">None of these match what you need?</p>
+            <p className="text-base text-muted-foreground mb-2">None of these match what you need?</p>
             <Link to="/site-index" className="text-primary hover:underline text-sm font-medium">
               See every page on TekSure →
             </Link>

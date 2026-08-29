@@ -77,7 +77,7 @@ export default function AiTutor() {
                 className="rounded-2xl border border-border bg-card hover:border-primary/50 p-6 text-left transition-colors">
                 <div className="text-3xl mb-2">{cfg.emoji}</div>
                 <p className="font-bold text-base mb-1 text-primary">{cfg.label}</p>
-                <p className="text-xs text-muted-foreground">{cfg.desc}</p>
+                <p className="text-sm text-muted-foreground">{cfg.desc}</p>
               </button>
             ))}
           </div>
@@ -105,7 +105,7 @@ export default function AiTutor() {
               <h1 className="font-bold text-primary">AI Tech Tutor</h1>
               <div className="flex items-center gap-2">
                 <Badge variant="outline" className="text-xs">{levelConfig[level].emoji} {levelConfig[level].label}</Badge>
-                {lessonCount > 0 && <span className="text-xs text-muted-foreground">{lessonCount} exchange{lessonCount !== 1 ? 's' : ''} today</span>}
+                {lessonCount > 0 && <span className="text-sm text-muted-foreground">{lessonCount} exchange{lessonCount !== 1 ? 's' : ''} today</span>}
               </div>
             </div>
           </div>
@@ -117,13 +117,13 @@ export default function AiTutor() {
         {/* Lesson starters */}
         {messages.length === 0 && (
           <div className="mb-6">
-            <p className="text-sm font-medium text-muted-foreground mb-3 flex items-center gap-2"><Lightbulb className="h-4 w-4" /> Pick a topic to start a lesson, or type your own question below</p>
+            <p className="text-base font-medium text-muted-foreground mb-3 flex items-center gap-2"><Lightbulb className="h-4 w-4" /> Pick a topic to start a lesson, or type your own question below</p>
             <div className="grid sm:grid-cols-2 gap-2">
               {lessonTopics.map(t => (
                 <button key={t.label} onClick={() => startTopic(t.prompt)}
                   className="flex items-center gap-3 rounded-xl border border-border bg-card hover:border-primary hover:bg-primary/5 p-3 text-left transition-all group">
                   <span className="text-xl">{t.emoji}</span>
-                  <span className="text-sm font-medium flex-1">{t.label}</span>
+                  <span className="text-base font-medium flex-1">{t.label}</span>
                   <ChevronRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors shrink-0" />
                 </button>
               ))}
@@ -181,7 +181,7 @@ export default function AiTutor() {
             </div>
             <div className="flex items-center gap-1.5 mt-2">
               <BookOpen className="h-3 w-3 text-muted-foreground" />
-              <p className="text-xs text-muted-foreground">Ask follow-up questions — your tutor remembers the conversation.</p>
+              <p className="text-sm text-muted-foreground">Ask follow-up questions — your tutor remembers the conversation.</p>
             </div>
           </CardContent>
         </Card>

@@ -19,7 +19,7 @@ export default function CarMaintenanceSchedule() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Monthly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Check tire pressure (cold).</li>
               <li>Check oil level.</li>
               <li>Test all lights (turn signals, headlights, brake lights).</li>
@@ -32,7 +32,7 @@ export default function CarMaintenanceSchedule() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Every 5,000-7,500 miles</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Oil change (synthetic 7,500-10,000).</li>
               <li>Tire rotation.</li>
               <li>Inspect brakes.</li>
@@ -45,7 +45,7 @@ export default function CarMaintenanceSchedule() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Yearly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wheel alignment.</li>
               <li>Cabin air filter.</li>
               <li>Wiper blades replace.</li>
@@ -59,7 +59,7 @@ export default function CarMaintenanceSchedule() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Every 30K miles</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Engine air filter.</li>
               <li>Spark plugs (some 100K).</li>
               <li>Brakes pads (varies).</li>
@@ -72,7 +72,7 @@ export default function CarMaintenanceSchedule() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Every 60-100K miles</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Timing belt (some cars).</li>
               <li>Transmission service.</li>
               <li>Coolant flush.</li>
@@ -86,7 +86,7 @@ export default function CarMaintenanceSchedule() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save money</h3>
-            <p className="text-sm text-muted-foreground">Find independent mechanic — half dealer prices. Get 2 quotes. Don&apos;t fall for &quot;recommended&quot; services not in manual. Ask &quot;Is this in manufacturer&apos;s schedule?&quot; Track yourself in notebook. Trust your own knowledge.</p>
+            <p className="text-base text-muted-foreground">Find independent mechanic — half dealer prices. Get 2 quotes. Don&apos;t fall for &quot;recommended&quot; services not in manual. Ask &quot;Is this in manufacturer&apos;s schedule?&quot; Track yourself in notebook. Trust your own knowledge.</p>
           </CardContent>
         </Card>
       </main>

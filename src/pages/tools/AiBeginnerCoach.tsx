@@ -19,28 +19,28 @@ export default function AiBeginnerCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What "AI" is, really</h2>
-            <p className="text-sm">An AI like ChatGPT is a typing assistant that has read most of the internet. You ask it a question, it writes an answer in normal English. It can also help you write emails, summarize long documents, and explain things in simpler words.</p>
-            <p className="text-sm mt-2"><strong>What it isn't:</strong> A real person. A search engine. A doctor. A lawyer. It guesses confidently, even when wrong.</p>
+            <p className="text-base">An AI like ChatGPT is a typing assistant that has read most of the internet. You ask it a question, it writes an answer in normal English. It can also help you write emails, summarize long documents, and explain things in simpler words.</p>
+            <p className="text-base mt-2"><strong>What it isn't:</strong> A real person. A search engine. A doctor. A lawyer. It guesses confidently, even when wrong.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick one. They're all similar.</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ChatGPT</strong> — most popular. Free at chatgpt.com or in the app store.</li>
               <li><strong>Claude</strong> — known for clear writing and longer documents. Free at claude.ai.</li>
               <li><strong>Google Gemini</strong> — built into Google. Free at gemini.google.com.</li>
               <li><strong>Microsoft Copilot</strong> — built into Windows and Edge. Free.</li>
             </ul>
-            <p className="text-sm mt-3">Sign up with your email. The free version is plenty for everyday tasks.</p>
+            <p className="text-base mt-3">Sign up with your email. The free version is plenty for everyday tasks.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">10 things AI is genuinely great for</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Explain something simply.</strong> "Explain Medicare Part D in plain English to someone over 70."</li>
               <li><strong>Write a tough email.</strong> "Help me write a polite email to my landlord about a broken stove."</li>
               <li><strong>Summarize a long article.</strong> Paste in the article. "Summarize this in 5 bullet points."</li>
@@ -55,13 +55,13 @@ export default function AiBeginnerCoach() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <div className="flex gap-3">
-              <AlertTriangle className="w-6 h-6 text-yellow-700 dark:text-yellow-400 shrink-0" />
+              <AlertTriangle className="w-6 h-6 text-warn-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-2">Things to NOT trust without checking</h3>
-                <ul className="list-disc pl-5 space-y-1 text-sm">
+                <ul className="list-disc pl-5 space-y-1 text-base">
                   <li><strong>Medical advice.</strong> AI gets symptoms confused. Real doctors only.</li>
                   <li><strong>Legal advice.</strong> Don't decide a will or contract from an AI. Lawyer up.</li>
                   <li><strong>Specific phone numbers, addresses, store hours.</strong> AI sometimes invents these. Check on Google.</li>
@@ -77,33 +77,33 @@ export default function AiBeginnerCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to ask a good question</h2>
-            <p className="text-sm mb-2">Just type like you're talking to a smart friend. The clearer you are, the better the answer.</p>
-            <p className="text-sm font-semibold mt-3">Bad question:</p>
-            <p className="text-sm bg-destructive/10 p-3 rounded">"Tell me about cooking."</p>
-            <p className="text-sm font-semibold mt-3">Good question:</p>
-            <p className="text-sm bg-green-100 dark:bg-green-950/20 p-3 rounded">"I'm cooking dinner for my husband and me. We have chicken thighs, rice, and broccoli. What's a simple recipe that takes under 30 minutes?"</p>
-            <p className="text-sm mt-3">If the first answer isn't quite right, just say so. Type "shorter please" or "make this less spicy" or "explain that part more". It learns from your follow-ups in the same conversation.</p>
+            <p className="text-base mb-2">Just type like you're talking to a smart friend. The clearer you are, the better the answer.</p>
+            <p className="text-base font-semibold mt-3">Bad question:</p>
+            <p className="text-base bg-destructive/10 p-3 rounded">"Tell me about cooking."</p>
+            <p className="text-base font-semibold mt-3">Good question:</p>
+            <p className="text-base bg-success p-3 rounded">"I'm cooking dinner for my husband and me. We have chicken thighs, rice, and broccoli. What's a simple recipe that takes under 30 minutes?"</p>
+            <p className="text-base mt-3">If the first answer isn't quite right, just say so. Type "shorter please" or "make this less spicy" or "explain that part more". It learns from your follow-ups in the same conversation.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy — what to NOT type in</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Your full Social Security number.</li>
               <li>Your bank account or credit card numbers.</li>
               <li>Your home address (if you don't want it associated with the account).</li>
               <li>Confidential medical records.</li>
               <li>Anything you wouldn't put on a postcard.</li>
             </ul>
-            <p className="text-sm mt-2 text-muted-foreground">AI services may use your conversations to improve their systems. Most have a setting to turn that off — look in Settings → Data.</p>
+            <p className="text-base mt-2 text-muted-foreground">AI services may use your conversations to improve their systems. Most have a setting to turn that off — look in Settings → Data.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">The best way to learn</h3>
-            <p className="text-sm text-muted-foreground">Just play with it for 10 minutes. Ask it the question you've always wondered. Try writing one email together. The first time it surprises you, you'll get it.</p>
+            <p className="text-base text-muted-foreground">Just play with it for 10 minutes. Ask it the question you've always wondered. Try writing one email together. The first time it surprises you, you'll get it.</p>
           </CardContent>
         </Card>
       </main>

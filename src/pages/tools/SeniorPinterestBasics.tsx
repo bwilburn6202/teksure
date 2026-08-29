@@ -19,10 +19,10 @@ export default function SeniorPinterestBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free</h2><p>Free app and website. No ads in your feed (so far).</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">How it works</h2><p>Save (&ldquo;pin&rdquo;) ideas to boards. Like a digital scrapbook for your interests.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Make a board</h2><p>Tap your profile → + → Board. Name it &ldquo;Recipes&rdquo; or &ldquo;Garden Ideas.&rdquo;</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Search ideas</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>&ldquo;Easy crockpot recipes&rdquo;</li><li>&ldquo;Knitting patterns&rdquo;</li><li>&ldquo;Senior travel destinations&rdquo;</li><li>&ldquo;Bird feeder ideas&rdquo;</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Search ideas</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>&ldquo;Easy crockpot recipes&rdquo;</li><li>&ldquo;Knitting patterns&rdquo;</li><li>&ldquo;Senior travel destinations&rdquo;</li><li>&ldquo;Bird feeder ideas&rdquo;</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Click through carefully</h2><p>Some pins lead to spam sites. Stay on Pinterest for safety.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share with family</h2><p>Send a recipe pin in a text. Great for &ldquo;dinner ideas?&rdquo; conversations.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: A board for each season — refresh decor ideas all year.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: A board for each season — refresh decor ideas all year.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

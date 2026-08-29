@@ -32,10 +32,10 @@ export default function HomeFitnessSubscriptions() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base mb-1">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function HomeFitnessSubscriptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup tips</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Stream on the BIGGEST screen you have — TV is best, tablet 2nd, phone last.</li>
               <li>Cast from phone to Apple TV, Roku, Chromecast, or Fire TV.</li>
               <li>Wear comfortable clothes you can move in.</li>
@@ -57,7 +57,7 @@ export default function HomeFitnessSubscriptions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free alternatives that work great</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Yoga With Adriene</strong> — free on YouTube. Best yoga teacher on the internet.</li>
               <li><strong>SilverSneakers GO (free with most Medicare Advantage)</strong> — full senior fitness library.</li>
               <li><strong>HASfit YouTube</strong> — free strength, walking, and senior workouts.</li>
@@ -70,7 +70,7 @@ export default function HomeFitnessSubscriptions() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">Try Apple Fitness+ free trial OR a week of YouTube\'s "yoga for seniors". 7 days will tell you if you like the format. Then pick the cheapest one that fits.</p>
+            <p className="text-base text-muted-foreground">Try Apple Fitness+ free trial OR a week of YouTube\'s "yoga for seniors". 7 days will tell you if you like the format. Then pick the cheapest one that fits.</p>
           </CardContent>
         </Card>
       </main>

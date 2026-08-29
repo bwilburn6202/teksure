@@ -30,10 +30,10 @@ export default function CaregiverApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function CaregiverApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Family Caregiver Alliance</strong> — caregiver.org. Free education + state-by-state resources.</li>
               <li><strong>AARP Caregiving</strong> — aarp.org/caregiving. Free advice, financial tools, support groups.</li>
               <li><strong>Eldercare Locator</strong> — 1-800-677-1116. Free hotline finds local services.</li>
@@ -55,7 +55,7 @@ export default function CaregiverApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tax breaks for caregivers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Medical expense deduction</strong> — care costs deductible if &gt; 7.5% of income.</li>
               <li><strong>Dependent Care FSA</strong> — through employer, $5,000/year tax-free.</li>
               <li><strong>Credit for Other Dependents</strong> — $500/year if you provide more than half of parent&apos;s support.</li>
@@ -68,7 +68,7 @@ export default function CaregiverApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Top tips for new caregivers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ask the doctor for "advance directive" + "POA for healthcare" forms early.</li>
               <li>Get medical records online via MyChart, FollowMyHealth.</li>
               <li>Keep a medication list with you ALWAYS (in phone notes).</li>
@@ -82,7 +82,7 @@ export default function CaregiverApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">You&apos;re not alone</h3>
-            <p className="text-sm text-muted-foreground">53 million Americans are unpaid caregivers right now. Average of 4 years per caregiving stretch. Burnout is real. Find your local caregiver support group through AAA (Area Agency on Aging) or AARP. Talking to others who understand changes everything.</p>
+            <p className="text-base text-muted-foreground">53 million Americans are unpaid caregivers right now. Average of 4 years per caregiving stretch. Burnout is real. Find your local caregiver support group through AAA (Area Agency on Aging) or AARP. Talking to others who understand changes everything.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function DisasterPrepApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Essential free apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>FEMA app</strong> — official emergency alerts, shelter finder, post-disaster aid.</li>
               <li><strong>Red Cross First Aid app</strong> — what to do for falls, choking, heart attack.</li>
               <li><strong>Watch Duty</strong> — wildfire-specific (Western US). Run by volunteer fire-watchers. Better than government feeds.</li>
@@ -33,8 +33,8 @@ export default function DisasterPrepApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">72-hour kit (grab and go)</h2>
-            <p className="text-sm mb-2">A duffel or backpack near the door, ready always:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">A duffel or backpack near the door, ready always:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>1 gallon of water per person per day × 3 days.</li>
               <li>Non-perishable food: granola bars, peanut butter, canned goods, can opener.</li>
               <li>Battery-powered or hand-crank radio.</li>
@@ -58,7 +58,7 @@ export default function DisasterPrepApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stay-at-home supplies (longer outages)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>2 weeks of food and water.</li>
               <li>NOAA weather radio with battery backup.</li>
               <li>Power station (Jackery 240 or larger) — runs CPAP, phones, light.</li>
@@ -76,7 +76,7 @@ export default function DisasterPrepApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Region-specific</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hurricane country (FL, LA, NC, SC, TX)</strong> — plywood for windows, sandbags, evacuation plan, fuel for generator.</li>
               <li><strong>Wildfire country (CA, OR, WA, CO)</strong> — defensible space around home, N95 masks, air purifier with HEPA filter, evacuation plan.</li>
               <li><strong>Tornado alley (TX, OK, KS, NE, MO, AR)</strong> — designated shelter (basement, interior closet), helmet for kids, NOAA weather radio.</li>
@@ -88,7 +88,7 @@ export default function DisasterPrepApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For medication-dependent people</h3>
-            <p className="text-sm text-muted-foreground">Talk to your doctor about a 30-day "emergency supply" of essential medications. Most insurance allows this once a year, especially for hurricane-prone regions. Insulin, oxygen, dialysis — make a written plan with your doctor about what to do during extended outages.</p>
+            <p className="text-base text-muted-foreground">Talk to your doctor about a 30-day "emergency supply" of essential medications. Most insurance allows this once a year, especially for hurricane-prone regions. Insulin, oxygen, dialysis — make a written plan with your doctor about what to do during extended outages.</p>
           </CardContent>
         </Card>
       </main>

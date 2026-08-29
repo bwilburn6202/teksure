@@ -19,7 +19,7 @@ export default function ChaseBankAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Chase Mobile app from app store.</li>
               <li>Sign in with Chase.com username + password.</li>
               <li>Set up Touch ID / Face ID for quick access.</li>
@@ -33,7 +33,7 @@ export default function ChaseBankAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mobile deposit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photograph check with phone — no bank trip.</li>
               <li>Tap Deposit Checks in app.</li>
               <li>Photograph front + back of check.</li>
@@ -47,7 +47,7 @@ export default function ChaseBankAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Account alerts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Profile + Settings → Alerts.</li>
               <li>Get text/email when transactions occur.</li>
               <li>Catches fraudulent charges fast.</li>
@@ -61,7 +61,7 @@ export default function ChaseBankAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Zelle for transfers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Send money to family + friends.</li>
               <li>Built into Chase app.</li>
               <li>Free, fast — minutes to recipient.</li>
@@ -75,7 +75,7 @@ export default function ChaseBankAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adjustable text size.</li>
               <li>Voice transactions via Apple Pay.</li>
               <li>Simple visual layout.</li>
@@ -89,7 +89,7 @@ export default function ChaseBankAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stay safe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Never share Chase login or codes.</li>
               <li>Chase NEVER calls asking for codes/passwords.</li>
               <li>If suspicious, hang up + call number on card.</li>
@@ -103,7 +103,7 @@ export default function ChaseBankAppForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Mobile deposit changes everything</h3>
-            <p className="text-sm text-muted-foreground">If you receive paper checks (Social Security, pension, dividend), mobile deposit eliminates trips to the bank. Photograph the check, deposit it, done. Funds available next business day. Combined with account alerts that catch fraud instantly, the Chase app turns banking from a chore into a simple morning task.</p>
+            <p className="text-base text-muted-foreground">If you receive paper checks (Social Security, pension, dividend), mobile deposit eliminates trips to the bank. Photograph the check, deposit it, done. Funds available next business day. Combined with account alerts that catch fraud instantly, the Chase app turns banking from a chore into a simple morning task.</p>
           </CardContent>
         </Card>
       </main>

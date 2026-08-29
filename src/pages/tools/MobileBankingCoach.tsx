@@ -19,14 +19,14 @@ export default function MobileBankingCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why mobile banking is safe</h2>
-            <p className="text-sm">Bank apps from real banks (Chase, Wells Fargo, Bank of America, Schwab, your local credit union) are encrypted, require fingerprint or Face ID to open, and lock if anyone tries to log in incorrectly. They\'re actually safer than logging into the bank website on a public computer.</p>
+            <p className="text-base">Bank apps from real banks (Chase, Wells Fargo, Bank of America, Schwab, your local credit union) are encrypted, require fingerprint or Face ID to open, and lock if anyone tries to log in incorrectly. They\'re actually safer than logging into the bank website on a public computer.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time setup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install YOUR bank\'s app from the App Store or Play Store. CRITICAL — type your bank\'s name in the search bar; don\'t click ads.</li>
               <li>Verify it\'s the real one — check the developer name matches your bank, and the app has millions of downloads.</li>
               <li>Sign in with your usual online banking username and password.</li>
@@ -39,7 +39,7 @@ export default function MobileBankingCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mobile check deposit</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Open the bank app.</li>
               <li>Look for "Deposit" or "Mobile Deposit" or "Deposit a Check".</li>
               <li>Pick the account it goes into.</li>
@@ -57,22 +57,22 @@ export default function MobileBankingCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up alerts (do this today)</h2>
-            <p className="text-sm mb-2">Alerts are the single best protection against fraud.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Alerts are the single best protection against fraud.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Every transaction over $1</strong> — text alert.</li>
               <li><strong>ATM withdrawals</strong> — text alert.</li>
               <li><strong>Login from new device.</strong></li>
               <li><strong>Failed login attempt.</strong></li>
               <li><strong>Low balance warning.</strong></li>
             </ul>
-            <p className="text-sm mt-2">If a fraudulent charge appears, you know within 30 seconds. Reverse it before more happen.</p>
+            <p className="text-base mt-2">If a fraudulent charge appears, you know within 30 seconds. Reverse it before more happen.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other things you can do from the app</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Transfer between your own accounts.</li>
               <li>Pay bills (electric, water, credit card).</li>
               <li>Send money to people via Zelle (built into most US bank apps).</li>
@@ -84,10 +84,10 @@ export default function MobileBankingCoach() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Stay safe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Never click on "your bank" texts</strong> — log in by opening the app yourself.</li>
               <li><strong>Real banks NEVER ask for your full PIN or password by text or phone.</strong></li>
               <li><strong>Don\'t download "bank tools" or "bank speedup" apps</strong> — fakes.</li>
@@ -100,7 +100,7 @@ export default function MobileBankingCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">If your bank app is too small or hard to read — most have a "Big text" setting in the app\'s preferences. Or use your phone\'s system-wide big text (Settings → Display → Text Size).</p>
+            <p className="text-base text-muted-foreground">If your bank app is too small or hard to read — most have a "Big text" setting in the app\'s preferences. Or use your phone\'s system-wide big text (Settings → Display → Text Size).</p>
           </CardContent>
         </Card>
       </main>

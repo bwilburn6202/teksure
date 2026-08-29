@@ -19,10 +19,10 @@ export default function SeniorLandlineSolutions() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Ooma</h2><p>$100 device + $5/month taxes. FREE phone service forever. Internet-based.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Magic Jack</h2><p>$40/year. Cheap. Some quality issues.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Verizon Phone-In-One</h2><p>$10/month. Unlimited US/Canada calls.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why keep landline</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Reliable in power outages (with battery)</li><li>911 location accurate</li><li>Backup for cell phone</li><li>Familiar for very-senior parents</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why keep landline</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Reliable in power outages (with battery)</li><li>911 location accurate</li><li>Backup for cell phone</li><li>Familiar for very-senior parents</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip if</h2><p>Cell phone works fine. Saves $20-$50/month.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voip 911</h2><p>Internet phones (Ooma) require setup for 911 location accuracy.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Ooma pays for itself in 5 months vs $20/month landline.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Ooma pays for itself in 5 months vs $20/month landline.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

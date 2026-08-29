@@ -20,9 +20,9 @@ export default function SeniorVisionTesting() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Warby Parker app</h2><p>FREE. Try on glasses virtually. Renew prescription online.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">1-800 Contacts</h2><p>FREE app. Renew contact prescription online.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Amsler Grid (FREE)</h2><p>Search &ldquo;Amsler Grid&rdquo; — a 1-minute home test for macular degeneration.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to see a doctor</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Sudden vision change</li><li>Flashing lights</li><li>Curtain across vision</li><li>Eye pain</li><li>Annual at minimum</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to see a doctor</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Sudden vision change</li><li>Flashing lights</li><li>Curtain across vision</li><li>Eye pain</li><li>Annual at minimum</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare coverage</h2><p>Annual diabetic eye exams covered. Cataract surgery covered.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Apps don&apos;t replace your eye doctor. Use as a backup, not main care.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Apps don&apos;t replace your eye doctor. Use as a backup, not main care.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

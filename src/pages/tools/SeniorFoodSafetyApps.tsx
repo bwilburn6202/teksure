@@ -22,7 +22,7 @@ export default function SeniorFoodSafetyApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Yuka</h2><p>FREE. Scan food and cosmetics. Health rating + bad ingredients flagged.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Expiration tracker</h2><p>Plant Jammer or NoWaste. Track what you have and expire dates.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior food safety</h2><p>Older immune systems = more risk. Stricter expiration follow-through.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: When in doubt, throw it out. $10 of food is cheaper than food poisoning.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: When in doubt, throw it out. $10 of food is cheaper than food poisoning.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

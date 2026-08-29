@@ -22,7 +22,7 @@ export default function SeniorTSAGuide() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pacemaker</h2><p>Skip body scanner. Get pat-down instead. Tell agent.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Oxygen</h2><p>Portable concentrators allowed. Print FAA approval letter.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mobility devices</h2><p>Wheelchair, walker, cane all fine. Stay in own chair.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Use TSA Cares 72 hrs before. Whole airport experience easier.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Use TSA Cares 72 hrs before. Whole airport experience easier.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

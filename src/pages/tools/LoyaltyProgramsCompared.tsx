@@ -34,10 +34,10 @@ export default function LoyaltyProgramsCompared() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -46,14 +46,14 @@ export default function LoyaltyProgramsCompared() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Math your money</h2>
-            <p className="text-sm">Before paying — open the previous 12 months of statements. How much did you ACTUALLY spend at the store / category? If membership cost is more than 5% of spend, probably not worth it.</p>
+            <p className="text-base">Before paying — open the previous 12 months of statements. How much did you ACTUALLY spend at the store / category? If membership cost is more than 5% of spend, probably not worth it.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free programs worth signing up for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Kroger / Albertsons / Publix</strong> — every grocery has free loyalty. $50-200/year in savings.</li>
               <li><strong>Walgreens Cash Rewards</strong> — free, earns ~5% on store brand.</li>
               <li><strong>CVS ExtraCare</strong> — free coupons.</li>
@@ -67,7 +67,7 @@ export default function LoyaltyProgramsCompared() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Most-worth-it for seniors</h3>
-            <p className="text-sm text-muted-foreground"><strong>AARP ($16/year)</strong> — single biggest ROI in this list. Saves on everything from car rentals to glasses to restaurants. Plus access to free tax prep, medication safety, fraud helpline.</p>
+            <p className="text-base text-muted-foreground"><strong>AARP ($16/year)</strong> — single biggest ROI in this list. Saves on everything from car rentals to glasses to restaurants. Plus access to free tax prep, medication safety, fraud helpline.</p>
           </CardContent>
         </Card>
       </main>

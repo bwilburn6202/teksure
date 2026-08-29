@@ -19,7 +19,7 @@ export default function GuestNetworkSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why guest network</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Visitors&apos; phones can&apos;t see your computer/files.</li>
               <li>If a visitor has malware — protected.</li>
               <li>Can have simpler "guest" password to share.</li>
@@ -32,7 +32,7 @@ export default function GuestNetworkSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (10 min)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open router app (Eero, Nest, Xfinity, etc.).</li>
               <li>Find "Guest Network" or "Guest WiFi".</li>
               <li>Toggle ON.</li>
@@ -47,7 +47,7 @@ export default function GuestNetworkSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best practices</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Print guest password on a card. Tape inside guest room.</li>
               <li>Or display QR code (apps like "WiFi QR Code Generator").</li>
               <li>Change yearly OR after big party.</li>
@@ -60,7 +60,7 @@ export default function GuestNetworkSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">QR code shortcut</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Generate a QR code with WiFi info (WiFi QR Code Generator app or qifi.org).</li>
               <li>Print it. Frame it. Hang in guest room or kitchen.</li>
               <li>Visitors scan with phone camera → auto-connect.</li>
@@ -72,7 +72,7 @@ export default function GuestNetworkSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Different from main network</h3>
-            <p className="text-sm text-muted-foreground">Guest WiFi is SEPARATE from your main wifi. Different password. Different name. Visitors can&apos;t see your computers, printers, smart home devices. Big privacy improvement for 5 minutes setup.</p>
+            <p className="text-base text-muted-foreground">Guest WiFi is SEPARATE from your main wifi. Different password. Different name. Visitors can&apos;t see your computers, printers, smart home devices. Big privacy improvement for 5 minutes setup.</p>
           </CardContent>
         </Card>
       </main>

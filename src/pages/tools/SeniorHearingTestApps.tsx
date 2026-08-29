@@ -19,10 +19,10 @@ export default function SeniorHearingTestApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mimi Hearing Test</h2><p>FREE. 5-minute test. Calibrated for headphones.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SonicCloud</h2><p>FREE. Custom sound profile. Adjusts music to your hearing.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple AirPods test</h2><p>iPhone 14+. Settings → AirPods Pro → Audiogram. Personalized audio.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to see audiologist</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Asking people to repeat often</li><li>TV volume up too loud</li><li>Trouble in noisy restaurants</li><li>Tinnitus (ringing)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to see audiologist</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Asking people to repeat often</li><li>TV volume up too loud</li><li>Trouble in noisy restaurants</li><li>Tinnitus (ringing)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free hearing tests</h2><p>Costco free. Many audiologists free. Phonak Online Test free.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare</h2><p>Annual exam covered. Hearing aids not covered (yet).</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Apps screen for hearing loss. Real audiologist for diagnosis.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Apps screen for hearing loss. Real audiologist for diagnosis.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

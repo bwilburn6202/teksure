@@ -206,12 +206,12 @@ export default function ThreadDetail() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 mb-1">
-                          <span className="text-sm font-semibold">{reply.author_name}</span>
-                          <span className="text-xs text-muted-foreground">
+                          <span className="text-base font-semibold">{reply.author_name}</span>
+                          <span className="text-sm text-muted-foreground">
                             {formatDistanceToNow(new Date(reply.created_at), { addSuffix: true })}
                           </span>
                         </div>
-                        <p className="text-sm text-foreground/90 leading-relaxed whitespace-pre-wrap">{reply.body}</p>
+                        <p className="text-base text-foreground/90 leading-relaxed whitespace-pre-wrap">{reply.body}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -219,7 +219,7 @@ export default function ThreadDetail() {
               ))}
             </div>
           ) : (
-            <p className="text-muted-foreground text-sm mb-6 text-center py-4">
+            <p className="text-muted-foreground text-base mb-6 text-center py-4">
               No replies yet — be the first to help out!
             </p>
           )}
@@ -241,7 +241,7 @@ export default function ThreadDetail() {
                     disabled={postReply.isPending}
                   />
                   <div className="flex justify-between items-center">
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                       Posting as <span className="font-medium">{user.fullName || user.email}</span>
                     </p>
                     <Button
@@ -256,7 +256,7 @@ export default function ThreadDetail() {
                 </>
               ) : (
                 <div className="text-center py-2">
-                  <p className="text-sm text-muted-foreground mb-3">
+                  <p className="text-base text-muted-foreground mb-3">
                     Join the conversation — it's free!
                   </p>
                   <div className="flex gap-2 justify-center">

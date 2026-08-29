@@ -19,7 +19,7 @@ export default function AIShoppingAssistant() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use cases</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Compare products: &quot;Best electric razor under $200?&quot;</li>
               <li>Read product reviews: &quot;Summarize Yelp reviews for X.&quot;</li>
               <li>Find alternatives: &quot;What&apos;s like Y but cheaper?&quot;</li>
@@ -33,7 +33,7 @@ export default function AIShoppingAssistant() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">ChatGPT example</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;I&apos;m 70 years old. I need a new phone.&quot;</li>
               <li>&quot;Important: large screen, easy to use, loud.&quot;</li>
               <li>&quot;Budget $400.&quot;</li>
@@ -47,7 +47,7 @@ export default function AIShoppingAssistant() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best AI for shopping</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ChatGPT-4</strong> — premium info ($20/mo).</li>
               <li><strong>Claude AI</strong> — good for analysis.</li>
               <li><strong>Google Gemini</strong> — connects search.</li>
@@ -61,7 +61,7 @@ export default function AIShoppingAssistant() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Honey + browser</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Honey — auto-applies coupons.</li>
               <li>Camelizer — Amazon price history.</li>
               <li>Rakuten — cashback.</li>
@@ -75,7 +75,7 @@ export default function AIShoppingAssistant() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Verify AI suggestions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AI sometimes wrong — verify.</li>
               <li>Check current price on website.</li>
               <li>Read recent reviews yourself.</li>
@@ -89,7 +89,7 @@ export default function AIShoppingAssistant() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific search</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Add &quot;for seniors&quot; or &quot;65+&quot;.</li>
               <li>&quot;Senior-friendly&quot; — gets adapted recommendations.</li>
               <li>&quot;Easy to use&quot; — simplified options.</li>
@@ -103,7 +103,7 @@ export default function AIShoppingAssistant() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Skepticism healthy</h3>
-            <p className="text-sm text-muted-foreground">AI sometimes recommends sponsored products. Sometimes outdated. Sometimes wrong. AI is research starting point, not final word. Cross-reference with Consumer Reports, Wirecutter, NYTimes Wirecutter. Local store advice — still valuable. Family member opinion. AI helps narrow choices, doesn&apos;t eliminate research.</p>
+            <p className="text-base text-muted-foreground">AI sometimes recommends sponsored products. Sometimes outdated. Sometimes wrong. AI is research starting point, not final word. Cross-reference with Consumer Reports, Wirecutter, NYTimes Wirecutter. Local store advice — still valuable. Family member opinion. AI helps narrow choices, doesn&apos;t eliminate research.</p>
           </CardContent>
         </Card>
       </main>

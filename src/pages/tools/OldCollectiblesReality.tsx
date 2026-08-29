@@ -16,17 +16,17 @@ export default function OldCollectiblesReality() {
           <p className="text-lg text-muted-foreground">The painful truth about Beanie Babies + 1990s collectibles.</p>
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The 1990s collectibles bubble</h2>
-            <p className="text-sm">A LOT of "collectibles" sold in the 1990s — Beanie Babies, Hummel figurines, Precious Moments, decorative plates from Bradford Exchange — were marketed as "investments". They weren\'t. They\'re mostly worth less than purchase price.</p>
+            <p className="text-base">A LOT of "collectibles" sold in the 1990s — Beanie Babies, Hummel figurines, Precious Moments, decorative plates from Bradford Exchange — were marketed as "investments". They weren\'t. They\'re mostly worth less than purchase price.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Honest values today (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Beanie Babies</strong> — almost all worth $1-5. Rare exceptions (Princess Diana bear with paper hangtag in PSA 10) — $1,000+. 99.9% are pocket change.</li>
               <li><strong>Hummel figurines</strong> — most $20-100. Rare/early ones $300+.</li>
               <li><strong>Precious Moments</strong> — most $5-25.</li>
@@ -42,7 +42,7 @@ export default function OldCollectiblesReality() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What\'s actually valuable now</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Mid-century furniture (1945-1970)</strong> — strong market.</li>
               <li><strong>Original Star Wars toys 1977-1985</strong> in original packaging.</li>
               <li><strong>Vintage Apple products</strong> (original iPhone in box, original iPod, etc.).</li>
@@ -60,7 +60,7 @@ export default function OldCollectiblesReality() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to value YOUR things</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>eBay search → click "Sold listings" filter on left. See REAL recent prices.</li>
               <li>WorthPoint.com — paid site, comprehensive past sales.</li>
               <li>For high-value items — get certified appraisal. (See our Find an Appraiser tool.)</li>
@@ -72,7 +72,7 @@ export default function OldCollectiblesReality() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Sentimental value</h3>
-            <p className="text-sm text-muted-foreground">Things from your loved ones often have HUGE sentimental value but little dollar value. That\'s OK. Keep what brings joy or memory. Donate what doesn\'t — you don\'t need to maximize money on every item. Free of clutter and emotionally complete is its own reward.</p>
+            <p className="text-base text-muted-foreground">Things from your loved ones often have HUGE sentimental value but little dollar value. That\'s OK. Keep what brings joy or memory. Donate what doesn\'t — you don\'t need to maximize money on every item. Free of clutter and emotionally complete is its own reward.</p>
           </CardContent>
         </Card>
       </main>

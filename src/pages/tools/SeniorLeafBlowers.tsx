@@ -22,7 +22,7 @@ export default function SeniorLeafBlowers() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Stihl BGA 56</h2><p>$200. Quiet. Trusted senior brand.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Battery system</h2><p>Buy mowers + trimmers from same brand. Share batteries. Save money.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hire instead</h2><p>$30-$60/visit. Worth it for many seniors. Saves back/heart.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: TaskRabbit and lawn services often $30 to do leaves. Save your back.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: TaskRabbit and lawn services often $30 to do leaves. Save your back.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

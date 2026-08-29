@@ -29,10 +29,10 @@ export default function SousVidePicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -41,14 +41,14 @@ export default function SousVidePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it works</h2>
-            <p className="text-sm">Vacuum-seal food in plastic bag. Drop into water bath at exact temperature (e.g. 130°F for medium-rare). Cook 1-4 hours. Sear in pan for 60 seconds for crust. Result: perfect doneness end-to-end. Can&apos;t overcook.</p>
+            <p className="text-base">Vacuum-seal food in plastic bag. Drop into water bath at exact temperature (e.g. 130°F for medium-rare). Cook 1-4 hours. Sear in pan for 60 seconds for crust. Result: perfect doneness end-to-end. Can&apos;t overcook.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors love it</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set + forget. No babysitting the stove.</li>
               <li>Tough cuts (chuck, brisket) become tender.</li>
               <li>Perfect doneness every time.</li>
@@ -62,7 +62,7 @@ export default function SousVidePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Starter recipes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Steak — 130°F for 1-2 hours, sear hot pan 1 min/side.</li>
               <li>Chicken breast — 145°F for 1-2 hours.</li>
               <li>Salmon — 125°F for 30-45 min.</li>
@@ -76,7 +76,7 @@ export default function SousVidePicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free recipe sources</h3>
-            <p className="text-sm text-muted-foreground"><strong>Anova app</strong> — free with Anova or without. Best curated. <strong>Serious Eats sous vide guide</strong> — free, scientific. <strong>YouTube — Sous Vide Everything</strong> — entertaining, lots of tests. Skip "Joule app" — Apple-only.</p>
+            <p className="text-base text-muted-foreground"><strong>Anova app</strong> — free with Anova or without. Best curated. <strong>Serious Eats sous vide guide</strong> — free, scientific. <strong>YouTube — Sous Vide Everything</strong> — entertaining, lots of tests. Skip "Joule app" — Apple-only.</p>
           </CardContent>
         </Card>
       </main>

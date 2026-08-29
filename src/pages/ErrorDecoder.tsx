@@ -252,17 +252,17 @@ export default function ErrorDecoder() {
               </CardHeader>
               <CardContent className="pt-4 space-y-4">
                 <div className="flex gap-2">
-                  <Info className="h-4 w-4 text-blue-500 shrink-0 mt-0.5" />
-                  <p className="text-sm text-muted-foreground">{entry.explanation}</p>
+                  <Info className="h-4 w-4 text-info-foreground shrink-0 mt-0.5" />
+                  <p className="text-base text-muted-foreground">{entry.explanation}</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-sm flex items-center gap-1.5 mb-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-500" />
+                    <CheckCircle2 className="h-4 w-4 text-success-foreground" />
                     How to Fix It
                   </h3>
                   <ol className="space-y-1.5 list-decimal list-inside">
                     {entry.fixes.map((fix, i) => (
-                      <li key={i} className="text-sm text-muted-foreground">{fix}</li>
+                      <li key={i} className="text-base text-muted-foreground">{fix}</li>
                     ))}
                   </ol>
                 </div>

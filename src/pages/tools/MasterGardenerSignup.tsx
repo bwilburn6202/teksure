@@ -19,14 +19,14 @@ export default function MasterGardenerSignup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it is</h2>
-            <p className="text-sm">USDA-certified program through state Cooperative Extension. 40-50 hours of advanced gardening + horticulture training. Pay back with 40-50 volunteer hours teaching others. Senior favorite.</p>
+            <p className="text-base">USDA-certified program through state Cooperative Extension. 40-50 hours of advanced gardening + horticulture training. Pay back with 40-50 volunteer hours teaching others. Senior favorite.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most states: $100-200 (training materials).</li>
               <li>Some states FREE.</li>
               <li>Discounts often for low-income, veterans.</li>
@@ -38,7 +38,7 @@ export default function MasterGardenerSignup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you learn</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Soil science.</li>
               <li>Plant pathology + pest management.</li>
               <li>Vegetables, fruits, ornamentals.</li>
@@ -54,7 +54,7 @@ export default function MasterGardenerSignup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Volunteer ways to pay back</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hotline answer at Extension office (phone/email questions).</li>
               <li>Demo gardens at libraries, schools, senior centers.</li>
               <li>Farmers market education tables.</li>
@@ -69,7 +69,7 @@ export default function MasterGardenerSignup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sign up</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Search "[your county] Master Gardener Program".</li>
               <li>Or "[your state] Cooperative Extension".</li>
               <li>Application + interview.</li>
@@ -82,7 +82,7 @@ export default function MasterGardenerSignup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Built-in community</h3>
-            <p className="text-sm text-muted-foreground">Most Master Gardeners are 55+. Built-in community of like-minded gardening seniors. Field trips, plant swaps, study groups. Best volunteer program for many seniors who love plants + community.</p>
+            <p className="text-base text-muted-foreground">Most Master Gardeners are 55+. Built-in community of like-minded gardening seniors. Field trips, plant swaps, study groups. Best volunteer program for many seniors who love plants + community.</p>
           </CardContent>
         </Card>
       </main>

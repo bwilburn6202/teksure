@@ -33,10 +33,10 @@ export default function DigitalCameraPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm mb-1"><strong>Best:</strong> {p.best}</p>
-                <p className="text-sm text-muted-foreground"><strong>Cons:</strong> {p.cons}</p>
+                <p className="text-base mb-1"><strong>Best:</strong> {p.best}</p>
+                <p className="text-base text-muted-foreground"><strong>Cons:</strong> {p.cons}</p>
               </CardContent>
             </Card>
           ))}
@@ -45,7 +45,7 @@ export default function DigitalCameraPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When you NEED a real camera</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sports / fast action</strong> — phones blur.</li>
               <li><strong>Wildlife / birds</strong> — need real zoom.</li>
               <li><strong>Low-light venues (concerts, recitals)</strong> — phones get noisy.</li>
@@ -58,7 +58,7 @@ export default function DigitalCameraPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip — phone is fine if</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Mostly daylight, family snapshots.</li>
               <li>You hate carrying extra gear.</li>
               <li>You\'ll just leave a separate camera at home.</li>
@@ -69,7 +69,7 @@ export default function DigitalCameraPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to buy</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>B&H Photo (bhphotovideo.com)</strong> — top US camera store. Free shipping, no sales tax in many states.</li>
               <li><strong>Adorama</strong> — main competitor.</li>
               <li><strong>Used: KEH Camera, MPB</strong> — reputable used. Often 30-50% off new.</li>
@@ -81,7 +81,7 @@ export default function DigitalCameraPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — buy used</h3>
-            <p className="text-sm text-muted-foreground">A 2-year-old mirrorless camera with a kit lens is 90% as good as a brand new one. Save 30-50%. KEH and MPB stand behind their used gear.</p>
+            <p className="text-base text-muted-foreground">A 2-year-old mirrorless camera with a kit lens is 90% as good as a brand new one. Save 30-50%. KEH and MPB stand behind their used gear.</p>
           </CardContent>
         </Card>
       </main>

@@ -28,7 +28,7 @@ export default function OnlineNotaryCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Is it legal?</h2>
-            <p className="text-sm">Yes — online notarization (called RON, Remote Online Notarization) is legal in 45+ states. The notary is real, certified, and verified by ID + selfie + knowledge-based questions. The document is just as valid as in-person notarization.</p>
+            <p className="text-base">Yes — online notarization (called RON, Remote Online Notarization) is legal in 45+ states. The notary is real, certified, and verified by ID + selfie + knowledge-based questions. The document is just as valid as in-person notarization.</p>
           </CardContent>
         </Card>
 
@@ -38,10 +38,10 @@ export default function OnlineNotaryCoach() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base mb-1">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function OnlineNotaryCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How online notarization works</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign up. Upload your document (PDF or photo).</li>
               <li>Verify ID — selfie + driver\'s license photo.</li>
               <li>Answer 5 random "knowledge-based authentication" questions (your old addresses, etc.).</li>
@@ -65,7 +65,7 @@ export default function OnlineNotaryCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Power of Attorney forms.</li>
               <li>Real estate closing documents.</li>
               <li>Affidavits.</li>
@@ -79,7 +79,7 @@ export default function OnlineNotaryCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to do it in person instead</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Will signing — many states require in-person witnesses.</li>
               <li>Some states (CA, IA, SC) don\'t fully accept online notarization yet.</li>
               <li>Banks sometimes require their own notary for big transactions.</li>
@@ -91,7 +91,7 @@ export default function OnlineNotaryCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cheapest option</h3>
-            <p className="text-sm text-muted-foreground">If you have ANY checking account at a bank or credit union — they\'ll notarize FREE for customers. Walk in, ask the teller. 5 minutes. Worth the trip if you have time.</p>
+            <p className="text-base text-muted-foreground">If you have ANY checking account at a bank or credit union — they\'ll notarize FREE for customers. Walk in, ask the teller. 5 minutes. Worth the trip if you have time.</p>
           </CardContent>
         </Card>
       </main>

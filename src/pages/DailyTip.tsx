@@ -51,7 +51,7 @@ export default function DailyTip() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <Sun className="h-8 w-8 text-amber-600" />
+                <Sun className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <Badge variant="outline" className="mb-2 gap-1">
@@ -90,10 +90,10 @@ export default function DailyTip() {
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
               <div className="flex items-start gap-3">
-                <Lightbulb className="h-5 w-5 text-amber-500 shrink-0 mt-0.5" />
+                <Lightbulb className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm font-semibold mb-1">Want this every morning?</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-base font-semibold mb-1">Want this every morning?</p>
+                  <p className="text-sm text-muted-foreground">
                     Bookmark <code className="text-xs bg-background px-1.5 py-0.5 rounded">teksure.com/daily-tip</code> on your phone&apos;s home screen and tap it with your morning coffee. Or sign up for the weekly newsletter — five tips a week, no spam, free.
                   </p>
                   <Button variant="outline" size="sm" asChild className="mt-3">
@@ -104,22 +104,22 @@ export default function DailyTip() {
             </CardContent>
           </Card>
 
-          <p className="text-xs text-muted-foreground text-center mb-8">Tip #{dayIdx % weeklyTips.length + 1} in the rotating set</p>
+          <p className="text-sm text-muted-foreground text-center mb-8">Tip #{dayIdx % weeklyTips.length + 1} in the rotating set</p>
 
           <div className="mt-10 pt-8 border-t border-border">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">More like this</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/weekly-tips" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">All weekly tips</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Five fresh tips every week.</p>
+                <p className="font-medium text-base">All weekly tips</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Five fresh tips every week.</p>
               </Link>
               <Link to="/tips" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Quick tips library</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Browse by topic.</p>
+                <p className="font-medium text-base">Quick tips library</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Browse by topic.</p>
               </Link>
               <Link to="/guides" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Full guides</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Step-by-step walkthroughs.</p>
+                <p className="font-medium text-base">Full guides</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Step-by-step walkthroughs.</p>
               </Link>
             </div>
           </div>

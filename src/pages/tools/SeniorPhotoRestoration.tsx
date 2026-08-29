@@ -20,9 +20,9 @@ export default function SeniorPhotoRestoration() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Photomyne</h2><p>$5/month. Scan + restore + colorize old photos.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">MyHeritage Photo Enhancer</h2><p>$13/month. Add motion to old photos. See ancestors smile.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">FREE option</h2><p>Apple Photos colorize. Limited but free.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Wedding photos from 50s</li><li>Childhood photos</li><li>Black & white to color</li><li>Damaged photo repair</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Wedding photos from 50s</li><li>Childhood photos</li><li>Black & white to color</li><li>Damaged photo repair</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Print as gifts</h2><p>Restored photos. Frame. Gift to family. Treasure.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Remini is the magic app. $10/month transforms old family photos.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Remini is the magic app. $10/month transforms old family photos.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

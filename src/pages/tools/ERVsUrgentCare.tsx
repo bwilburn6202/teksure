@@ -19,7 +19,7 @@ export default function ERVsUrgentCare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">CALL 911 / GO ER for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Chest pain or pressure.</li>
               <li>Trouble breathing.</li>
               <li>Stroke signs (FAST: face droop, arm weak, slurred speech, time).</li>
@@ -36,7 +36,7 @@ export default function ERVsUrgentCare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Urgent care for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>UTIs, ear/sinus infections.</li>
               <li>Sprains, simple fractures.</li>
               <li>Cuts that may need stitches.</li>
@@ -53,7 +53,7 @@ export default function ERVsUrgentCare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Primary doctor / telehealth for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Chronic condition flares.</li>
               <li>Med refills.</li>
               <li>Routine concerns.</li>
@@ -69,7 +69,7 @@ export default function ERVsUrgentCare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Subtle senior symptoms can mean serious.</li>
               <li>Confusion = often UTI or infection.</li>
               <li>Falls — even if seem okay, get checked.</li>
@@ -83,7 +83,7 @@ export default function ERVsUrgentCare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost comparison</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Telehealth</strong> — $0-50.</li>
               <li><strong>Doctor office</strong> — $20-100 copay.</li>
               <li><strong>Urgent care</strong> — $50-150 copay.</li>
@@ -98,7 +98,7 @@ export default function ERVsUrgentCare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you go to ER</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bring ID, insurance card, med list.</li>
               <li>Bring spouse / advocate.</li>
               <li>Tell EMT you want X hospital (preference).</li>
@@ -112,7 +112,7 @@ export default function ERVsUrgentCare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Triage line</h3>
-            <p className="text-sm text-muted-foreground">Most insurance + doctor offices have 24/7 nurse triage line. Free phone consultation. Often: &quot;You need ER&quot; or &quot;Urgent care&quot; or &quot;Wait until tomorrow.&quot; Call BEFORE going. Saves $$$. Number on your insurance card or doctor portal.</p>
+            <p className="text-base text-muted-foreground">Most insurance + doctor offices have 24/7 nurse triage line. Free phone consultation. Often: &quot;You need ER&quot; or &quot;Urgent care&quot; or &quot;Wait until tomorrow.&quot; Call BEFORE going. Saves $$$. Number on your insurance card or doctor portal.</p>
           </CardContent>
         </Card>
       </main>

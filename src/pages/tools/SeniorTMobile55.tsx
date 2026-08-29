@@ -22,7 +22,7 @@ export default function SeniorTMobile55() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Scam Shield</h2><p>FREE. Blocks robocalls. Identifies scammers.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tuesday rewards</h2><p>FREE coffee, food, gas via T-Mobile Tuesdays app.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">2-line discount</h2><p>Senior couples save $20/month vs single lines.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: T-Mobile lets you switch back if not satisfied within 30 days.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: T-Mobile lets you switch back if not satisfied within 30 days.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

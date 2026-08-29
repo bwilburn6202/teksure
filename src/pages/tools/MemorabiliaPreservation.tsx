@@ -19,7 +19,7 @@ export default function MemorabiliaPreservation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photo digitization services</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Legacybox</strong> — most popular. $200-700 box. Mail-in.</li>
               <li><strong>iMemories</strong> — $0.50/photo. Cloud + DVD.</li>
               <li><strong>Costco Photo Center</strong> — $20/100 photos. Cheapest reliable.</li>
@@ -33,7 +33,7 @@ export default function MemorabiliaPreservation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">VHS, film, slides</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Costco/Walmart kiosks</strong> — VHS to DVD/digital. $20-30/tape.</li>
               <li><strong>Legacybox</strong> — all formats one box.</li>
               <li><strong>iMemories</strong> — slides + 8mm + VHS.</li>
@@ -47,7 +47,7 @@ export default function MemorabiliaPreservation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Documents + letters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Adobe Scan</strong> — phone app, FREE. Auto-crops.</li>
               <li><strong>Genius Scan</strong> — alternative.</li>
               <li>Acid-free archival boxes for originals worth keeping.</li>
@@ -61,7 +61,7 @@ export default function MemorabiliaPreservation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Storage + sharing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Google Photos</strong> — FREE 15GB. Auto-faces, search.</li>
               <li><strong>Apple iCloud Photos</strong> — 50GB $1/mo, 200GB $3/mo.</li>
               <li><strong>Amazon Prime Photos</strong> — UNLIMITED with Prime. Best value.</li>
@@ -75,7 +75,7 @@ export default function MemorabiliaPreservation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Heirloom items</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Take photos of items + write story.</li>
               <li>Family meeting — let family pick what they want.</li>
               <li>Use Photo Books (Shutterfly) for photos of objects.</li>
@@ -89,7 +89,7 @@ export default function MemorabiliaPreservation() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Story preservation</h3>
-            <p className="text-sm text-muted-foreground"><strong>StoryWorth</strong> — $99/yr. Weekly questions. Year-end book of your life. <strong>StoryCorps</strong> — FREE. Record family interview, archived at Library of Congress. <strong>Voice Memo on phone</strong> — record stories yourself, family treasures forever.</p>
+            <p className="text-base text-muted-foreground"><strong>StoryWorth</strong> — $99/yr. Weekly questions. Year-end book of your life. <strong>StoryCorps</strong> — FREE. Record family interview, archived at Library of Congress. <strong>Voice Memo on phone</strong> — record stories yourself, family treasures forever.</p>
           </CardContent>
         </Card>
       </main>

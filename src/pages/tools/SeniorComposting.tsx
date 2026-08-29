@@ -20,9 +20,9 @@ export default function SeniorComposting() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">FoodCycler</h2><p>$400. Same idea. Vitamix-made.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Outdoor tumbler</h2><p>$80. Simple barrel. Spin once a week. 6-week compost cycle.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Curbside pickup</h2><p>Many cities pick up compost weekly. Some free. Often $5-$10/month.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What to compost</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Vegetable scraps</li><li>Coffee grounds</li><li>Eggshells</li><li>Paper coffee filters</li><li>Leaves and yard waste</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What to compost</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Vegetable scraps</li><li>Coffee grounds</li><li>Eggshells</li><li>Paper coffee filters</li><li>Leaves and yard waste</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip these</h2><p>Meat, dairy, oily foods. Attracts pests.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: A 10-gallon bin with worms makes great soil with no smell.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: A 10-gallon bin with worms makes great soil with no smell.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

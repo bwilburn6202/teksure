@@ -17,12 +17,12 @@ export default function SeniorAARPGames() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Visit aarp.org/games</h2><p>FREE without AARP membership. No login required.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best games</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Mahjongg Dimensions</li><li>Daily Solitaire</li><li>Crossword Puzzles</li><li>Word Wipe</li><li>Bubble Shooter</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best games</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Mahjongg Dimensions</li><li>Daily Solitaire</li><li>Crossword Puzzles</li><li>Word Wipe</li><li>Bubble Shooter</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">No downloads</h2><p>Play in any browser. No software to install.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Big text</h2><p>Browser zoom: Ctrl + (PC) or Cmd + (Mac) — makes everything bigger.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Brain benefits</h2><p>15-20 minutes daily linked to slower cognitive decline. Real evidence.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tablet best</h2><p>Bigger screen than phone, easier than computer mouse.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Bookmark aarp.org/games. One-tap access daily.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Bookmark aarp.org/games. One-tap access daily.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

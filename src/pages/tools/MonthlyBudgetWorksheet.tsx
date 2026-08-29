@@ -157,16 +157,16 @@ export default function MonthlyBudgetWorksheet() {
         title="Monthly Budget Worksheet — TekSure"
         description="A simple monthly budget worksheet for seniors. Enter your income and expenses to see your monthly balance and print a summary."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4 print:bg-white print:py-4">
+      <main className="min-h-screen bg-muted py-8 px-4 print:bg-card print:py-4">
         <div className="max-w-2xl mx-auto">
 
           {/* Header */}
           <div className="text-center mb-6 print:mb-4">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-indigo-100 dark:bg-indigo-950/60 mb-4 print:hidden">
-              <Calculator className="w-8 h-8 text-indigo-600 dark:text-indigo-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-4 print:hidden">
+              <Calculator className="w-8 h-8 text-primary " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Monthly Budget Worksheet</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Monthly Budget Worksheet</h1>
+            <p className="text-lg text-muted-foreground ">
               Enter your monthly income and expenses to see where your money goes — and how much you have left over.
             </p>
           </div>
@@ -177,23 +177,23 @@ export default function MonthlyBudgetWorksheet() {
               ? 'bg-green-50 dark:bg-green-950/30 border-green-400 dark:border-green-700'
               : balance < 0
               ? 'bg-red-50 dark:bg-red-950/30 border-red-400 dark:border-red-700'
-              : 'bg-gray-100 dark:bg-gray-800 border-gray-300 dark:border-gray-600'
+              : 'bg-gray-100 dark:bg-gray-800 border-border dark:border-gray-600'
           }`}>
             <div className="flex items-center justify-between flex-wrap gap-3">
               <div className="space-y-0.5">
-                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Monthly Income</p>
-                <p className="text-xl font-bold text-gray-900 dark:text-gray-100">{fmt(totalIncome)}</p>
+                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">Monthly Income</p>
+                <p className="text-xl font-bold text-foreground ">{fmt(totalIncome)}</p>
               </div>
               <div className="space-y-0.5 text-right">
-                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">Monthly Expenses</p>
-                <p className="text-xl font-bold text-gray-900 dark:text-gray-100">{fmt(totalExpenses)}</p>
+                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wide">Monthly Expenses</p>
+                <p className="text-xl font-bold text-foreground ">{fmt(totalExpenses)}</p>
               </div>
-              <div className="w-full border-t border-gray-300 dark:border-gray-600 pt-2 flex items-center justify-between">
+              <div className="w-full border-t border-border pt-2 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  {balance > 0 ? <TrendingUp className="w-5 h-5 text-green-600 dark:text-green-400" /> :
-                   balance < 0 ? <TrendingDown className="w-5 h-5 text-red-600 dark:text-red-400" /> :
-                   <Minus className="w-5 h-5 text-gray-500" />}
-                  <span className="font-semibold text-gray-700 dark:text-gray-300">
+                  {balance > 0 ? <TrendingUp className="w-5 h-5 text-success-foreground " /> :
+                   balance < 0 ? <TrendingDown className="w-5 h-5 text-danger-foreground " /> :
+                   <Minus className="w-5 h-5 text-muted-foreground" />}
+                  <span className="font-semibold text-foreground ">
                     {balance > 0 ? 'Left over each month' : balance < 0 ? 'Over budget each month' : 'Balance'}
                   </span>
                 </div>
@@ -205,36 +205,36 @@ export default function MonthlyBudgetWorksheet() {
               </div>
             </div>
             {balance < 0 && (
-              <p className="text-sm text-red-700 dark:text-red-300 mt-2">
+              <p className="text-base text-danger-foreground mt-2">
                 Your expenses are {fmt(Math.abs(balance))} more than your income. Look at the categories below to find places to cut.
               </p>
             )}
           </div>
 
           {/* Income section */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm mb-4 overflow-hidden">
+          <div className="bg-card rounded-2xl border border-border shadow-sm mb-4 overflow-hidden">
             <button
               onClick={() => toggleGroup('Income')}
               className="w-full flex items-center justify-between p-4 text-left"
             >
               <div>
-                <p className="font-bold text-gray-900 dark:text-gray-100 text-lg">Monthly Income</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Total: {fmt(totalIncome)}</p>
+                <p className="font-bold text-foreground text-lg">Monthly Income</p>
+                <p className="text-base text-muted-foreground ">Total: {fmt(totalIncome)}</p>
               </div>
               {collapsed['Income']
-                ? <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                : <ChevronUp className="w-5 h-5 text-gray-400 flex-shrink-0" />}
+                ? <ChevronDown className="w-5 h-5 text-muted-foreground flex-shrink-0" />
+                : <ChevronUp className="w-5 h-5 text-muted-foreground flex-shrink-0" />}
             </button>
             {!collapsed['Income'] && (
-              <div className="px-4 pb-4 space-y-3 border-t border-gray-100 dark:border-gray-800 pt-3">
+              <div className="px-4 pb-4 space-y-3 border-t border-border pt-3">
                 {INCOME_ITEMS.map(item => (
                   <div key={item.id} className="flex items-start gap-3">
                     <div className="flex-1">
-                      <label htmlFor={item.id} className="block text-sm font-medium text-gray-800 dark:text-gray-200">{item.label}</label>
-                      {item.sublabel && <p className="text-xs text-gray-400">{item.sublabel}</p>}
+                      <label htmlFor={item.id} className="block text-base font-medium text-foreground ">{item.label}</label>
+                      {item.sublabel && <p className="text-sm text-muted-foreground">{item.sublabel}</p>}
                     </div>
                     <div className="relative w-28 flex-shrink-0">
-                      <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm">$</span>
+                      <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">$</span>
                       <input
                         id={item.id}
                         type="number"
@@ -244,7 +244,7 @@ export default function MonthlyBudgetWorksheet() {
                         value={values[item.id] ?? ''}
                         onChange={e => set(item.id, e.target.value)}
                         placeholder="0"
-                        className="w-full pl-6 pr-2 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-right text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                        className="w-full pl-6 pr-2 py-2 rounded-lg border border-border bg-card text-foreground text-right text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
                       />
                     </div>
                   </div>
@@ -265,22 +265,22 @@ export default function MonthlyBudgetWorksheet() {
                 >
                   <div>
                     <p className={`font-bold text-lg ${headerColorMap[group.color]}`}>{group.label}</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">Total: {fmt(groupTotal)}</p>
+                    <p className="text-base text-muted-foreground ">Total: {fmt(groupTotal)}</p>
                   </div>
                   {!isOpen
-                    ? <ChevronDown className="w-5 h-5 text-gray-400 flex-shrink-0" />
-                    : <ChevronUp className="w-5 h-5 text-gray-400 flex-shrink-0" />}
+                    ? <ChevronDown className="w-5 h-5 text-muted-foreground flex-shrink-0" />
+                    : <ChevronUp className="w-5 h-5 text-muted-foreground flex-shrink-0" />}
                 </button>
                 {isOpen && (
-                  <div className="px-4 pb-4 space-y-3 border-t border-gray-200 dark:border-gray-700 pt-3 bg-white/50 dark:bg-gray-900/50">
+                  <div className="px-4 pb-4 space-y-3 border-t border-border pt-3 bg-white/50 dark:bg-gray-900/50">
                     {group.items.map(item => (
                       <div key={item.id} className="flex items-start gap-3">
                         <div className="flex-1">
-                          <label htmlFor={item.id} className="block text-sm font-medium text-gray-800 dark:text-gray-200">{item.label}</label>
-                          {item.sublabel && <p className="text-xs text-gray-400">{item.sublabel}</p>}
+                          <label htmlFor={item.id} className="block text-base font-medium text-foreground ">{item.label}</label>
+                          {item.sublabel && <p className="text-sm text-muted-foreground">{item.sublabel}</p>}
                         </div>
                         <div className="relative w-28 flex-shrink-0">
-                          <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-400 text-sm">$</span>
+                          <span className="absolute left-2.5 top-1/2 -translate-y-1/2 text-muted-foreground text-sm">$</span>
                           <input
                             id={item.id}
                             type="number"
@@ -290,7 +290,7 @@ export default function MonthlyBudgetWorksheet() {
                             value={values[item.id] ?? ''}
                             onChange={e => set(item.id, e.target.value)}
                             placeholder="0"
-                            className="w-full pl-6 pr-2 py-2 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 text-right text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
+                            className="w-full pl-6 pr-2 py-2 rounded-lg border border-border bg-card text-foreground text-right text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400"
                           />
                         </div>
                       </div>
@@ -312,7 +312,7 @@ export default function MonthlyBudgetWorksheet() {
             </button>
             <button
               onClick={reset}
-              className="flex items-center gap-2 px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              className="flex items-center gap-2 px-4 py-3 rounded-xl border border-border text-muted-foreground hover:bg-muted transition-colors"
             >
               <RotateCcw className="w-4 h-4" />
               Clear
@@ -320,9 +320,9 @@ export default function MonthlyBudgetWorksheet() {
           </div>
 
           {/* Tips */}
-          <div className="mt-5 bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-xl p-4 print:hidden">
-            <p className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Tips for using this worksheet</p>
-            <ul className="text-sm text-blue-700 dark:text-blue-300 space-y-1 list-disc list-inside">
+          <div className="mt-5 bg-info border border-info-foreground/25 rounded-xl p-4 print:hidden">
+            <p className="text-base font-semibold text-info-foreground mb-2">Tips for using this worksheet</p>
+            <ul className="text-base text-info-foreground space-y-1 list-disc list-inside">
               <li>Use your most recent bank statements or bills to fill in the numbers.</li>
               <li>For irregular expenses (car repairs, medical bills), estimate a monthly average.</li>
               <li>If your balance is negative, start with your largest expense categories and look for one thing to reduce.</li>
@@ -331,7 +331,7 @@ export default function MonthlyBudgetWorksheet() {
           </div>
 
         </div>
-      </div>
+      </main>
     </>
   );
 }

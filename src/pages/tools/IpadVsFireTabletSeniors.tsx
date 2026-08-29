@@ -19,7 +19,7 @@ export default function IpadVsFireTabletSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple iPad — best overall</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPad (10th gen) — $349, great starter.</li>
               <li>iPad Air — $599, more power.</li>
               <li>Best app selection — every major app available.</li>
@@ -33,7 +33,7 @@ export default function IpadVsFireTabletSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Amazon Fire HD — cheapest</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fire HD 8 — $90, basic tasks.</li>
               <li>Fire HD 10 — $150, larger screen.</li>
               <li>Excellent for Amazon Prime Video, Kindle books.</li>
@@ -47,7 +47,7 @@ export default function IpadVsFireTabletSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Samsung Galaxy Tab</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Galaxy Tab A9 — $200, good Android tablet.</li>
               <li>Galaxy Tab S9 — $700, premium.</li>
               <li>Best if you have Samsung Galaxy phone.</li>
@@ -61,7 +61,7 @@ export default function IpadVsFireTabletSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">GrandPad — senior specialty</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$50/month subscription including device.</li>
               <li>Big buttons, simple icons.</li>
               <li>Pre-loaded with family contacts.</li>
@@ -75,7 +75,7 @@ export default function IpadVsFireTabletSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Which to choose?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Already have iPhone? → iPad (10th gen).</li>
               <li>Tight budget? → Fire HD 10.</li>
               <li>Have Samsung phone? → Galaxy Tab.</li>
@@ -89,7 +89,7 @@ export default function IpadVsFireTabletSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior accessibility</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>All have text size adjustment.</li>
               <li>iPad: best built-in voice control.</li>
               <li>Fire: simpler home screen layout.</li>
@@ -103,7 +103,7 @@ export default function IpadVsFireTabletSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">iPad 10th gen for most</h3>
-            <p className="text-sm text-muted-foreground">For most seniors, the iPad 10th gen at $349 is the right tablet. Best app support, easiest interface, and lasts 5+ years. If you&apos;re on a budget under $200, the Amazon Fire HD 10 ($150) handles email, video calls, and Kindle reading well. Avoid generic Android tablets — they often get abandoned without updates after a year or two.</p>
+            <p className="text-base text-muted-foreground">For most seniors, the iPad 10th gen at $349 is the right tablet. Best app support, easiest interface, and lasts 5+ years. If you&apos;re on a budget under $200, the Amazon Fire HD 10 ($150) handles email, video calls, and Kindle reading well. Avoid generic Android tablets — they often get abandoned without updates after a year or two.</p>
           </CardContent>
         </Card>
       </main>

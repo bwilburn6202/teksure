@@ -19,35 +19,35 @@ export default function WifiExtenderVsMesh() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Wi-Fi Extender (cheap, simple)</h2>
-            <p className="text-sm">$30-80 device that plugs into a wall outlet. Catches your existing Wi-Fi, rebroadcasts.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">$30-80 device that plugs into a wall outlet. Catches your existing Wi-Fi, rebroadcasts.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li><strong>Pros</strong>: Cheap, fast install (10 minutes).</li>
               <li><strong>Cons</strong>: Halves the speed at the extender. Creates a SECOND network name. Phone may stay on weak primary instead of switching.</li>
               <li><strong>When to use</strong>: One small area not getting signal (back bedroom, garage). Budget under $100.</li>
             </ul>
-            <p className="text-sm mt-2"><strong>Picks</strong>: TP-Link RE315 ($30), Netgear EX3700 ($40).</p>
+            <p className="text-base mt-2"><strong>Picks</strong>: TP-Link RE315 ($30), Netgear EX3700 ($40).</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Mesh System (premium, smooth)</h2>
-            <p className="text-sm">$150-400 set of 2-3 units. Replaces your existing router. Creates ONE network with full coverage.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">$150-400 set of 2-3 units. Replaces your existing router. Creates ONE network with full coverage.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li><strong>Pros</strong>: Same network everywhere. Full speed. Auto-switches as you walk.</li>
               <li><strong>Cons</strong>: 3-5x more expensive than extender.</li>
               <li><strong>When to use</strong>: Whole-home coverage problems. Big house. Multiple dead zones.</li>
             </ul>
-            <p className="text-sm mt-2"><strong>Picks</strong>: eero 6+ 2-pack ($200), TP-Link Deco X20 3-pack ($170), Google Nest Wifi Pro 3-pack ($300).</p>
-            <p className="text-sm mt-2">(See our Mesh Wi-Fi Picker for more.)</p>
+            <p className="text-base mt-2"><strong>Picks</strong>: eero 6+ 2-pack ($200), TP-Link Deco X20 3-pack ($170), Google Nest Wifi Pro 3-pack ($300).</p>
+            <p className="text-base mt-2">(See our Mesh Wi-Fi Picker for more.)</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Powerline adapter (alternative)</h2>
-            <p className="text-sm">Sends internet through your home\'s electrical wiring. $80-150 for a kit. Plug one in near router, one in dead zone.</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Sends internet through your home\'s electrical wiring. $80-150 for a kit. Plug one in near router, one in dead zone.</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li><strong>Pros</strong>: Bypasses Wi-Fi entirely. Wired-quality speeds.</li>
               <li><strong>Cons</strong>: Older homes with split electrical panels often don\'t work.</li>
               <li><strong>When to use</strong>: Smart TV in basement that needs hard internet.</li>
@@ -58,7 +58,7 @@ export default function WifiExtenderVsMesh() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free fixes to try first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Move router</strong> — central in home, off floor, away from microwave/big appliances.</li>
               <li><strong>Restart router</strong> — unplug 30 sec, plug back. Fixes 50% of complaints.</li>
               <li><strong>Update firmware</strong> — log into router admin page, click "Check for updates".</li>
@@ -71,7 +71,7 @@ export default function WifiExtenderVsMesh() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Decision rule</h3>
-            <p className="text-sm text-muted-foreground">One small dead zone → extender. Multiple dead zones / whole-house → mesh. Stuck on bad Wi-Fi for years → just upgrade to mesh, spend the money once. The savings on stress is enormous.</p>
+            <p className="text-base text-muted-foreground">One small dead zone → extender. Multiple dead zones / whole-house → mesh. Stuck on bad Wi-Fi for years → just upgrade to mesh, spend the money once. The savings on stress is enormous.</p>
           </CardContent>
         </Card>
       </main>

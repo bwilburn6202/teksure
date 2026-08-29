@@ -22,7 +22,7 @@ export default function SeniorBigKeyboards() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">iPhone keyboard tips</h2><p>Settings → Display → Text Size. Larger keyboard letters.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tablet keyboards</h2><p>$30 for stand-alone Bluetooth keyboard. Type faster than tablet glass.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Trackball mouse</h2><p>$30. Easier than regular mouse for arthritis or tremors.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Try a USB-C external keyboard with iPad. Senior typing 3x faster.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Try a USB-C external keyboard with iPad. Senior typing 3x faster.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

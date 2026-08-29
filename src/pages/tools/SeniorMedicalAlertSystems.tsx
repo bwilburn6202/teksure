@@ -20,9 +20,9 @@ export default function SeniorMedicalAlertSystems() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lifeline (by Philips)</h2><p>$30/month. Most established brand. Auto-fall detection extra.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medical Guardian</h2><p>$30/month. Mobile units work outside the home.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Watch fall detection</h2><p>$249 one-time. Auto-detects falls. Calls 911 if no response.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Compare features</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Auto fall detection</li><li>Cellular vs landline</li><li>GPS tracking</li><li>Range from base</li><li>Waterproof rating</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Compare features</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Auto fall detection</li><li>Cellular vs landline</li><li>GPS tracking</li><li>Range from base</li><li>Waterproof rating</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">No long contracts</h2><p>Best brands offer month-to-month. Try before committing.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Test your pendant monthly. Push the button, talk to the operator, confirm it&apos;s working.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Test your pendant monthly. Push the button, talk to the operator, confirm it&apos;s working.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

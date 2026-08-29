@@ -106,6 +106,7 @@ export default function HealthCheck() {
     <div className="min-h-screen">
       <SEOHead title="Tech Health Check | TekSure" description="Take a quick 5-question quiz to check the health of your device and get personalized tips." path="/tools/health-check" />
       <Navbar />
+      <main className="flex-1">
 
       <section className="border-b">
         <div className="container py-16 md:py-20">
@@ -157,9 +158,9 @@ export default function HealthCheck() {
             {/* Overall */}
             <Card className="border-2">
               <CardContent className="pt-6 text-center">
-                <p className="text-sm text-muted-foreground mb-1">Overall Result</p>
+                <p className="text-base text-muted-foreground mb-1">Overall Result</p>
                 <p className={`text-2xl font-bold ${overallScore().color}`}>{overallScore().label}</p>
-                <p className="text-sm text-muted-foreground mt-2">{overallScore().message}</p>
+                <p className="text-base text-muted-foreground mt-2">{overallScore().message}</p>
               </CardContent>
             </Card>
 
@@ -174,9 +175,9 @@ export default function HealthCheck() {
                     <div className="flex items-start gap-3">
                       <Icon className={`h-5 w-5 mt-0.5 shrink-0 ${cfg.text}`} />
                       <div>
-                        <p className="font-medium text-sm mb-1">{q.question}</p>
-                        <p className={`text-xs font-semibold mb-1 ${cfg.text}`}>Your answer: {result.label} — {cfg.label}</p>
-                        <p className="text-sm text-muted-foreground">{result.tip}</p>
+                        <p className="font-medium text-base mb-1">{q.question}</p>
+                        <p className={`text-sm font-semibold mb-1 ${cfg.text}`}>Your answer: {result.label} — {cfg.label}</p>
+                        <p className="text-base text-muted-foreground">{result.tip}</p>
                       </div>
                     </div>
                   </CardContent>
@@ -191,6 +192,7 @@ export default function HealthCheck() {
         )}
       </section>
 
+      </main>
       <Footer />
     </div>
   );

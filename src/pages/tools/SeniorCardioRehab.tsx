@@ -22,7 +22,7 @@ export default function SeniorCardioRehab() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Maintenance</h2><p>After 36 sessions, continue gym at home. Many can&apos;t afford to skip.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SilverSneakers</h2><p>FREE. Many gyms have cardiac-rehab-friendly programs.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Show up</h2><p>Most seniors who skip rehab regret it. 12 weeks change everything.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Cardiac rehab is the best 12 weeks of senior life after heart event.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Cardiac rehab is the best 12 weeks of senior life after heart event.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

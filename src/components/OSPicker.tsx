@@ -30,7 +30,7 @@ export function OSPicker({ onSelect, selected }: OSPickerProps) {
       <p className="text-base font-semibold text-foreground mb-1">
         What device are you using?
       </p>
-      <p className="text-sm text-muted-foreground mb-4">
+      <p className="text-base text-muted-foreground mb-4">
         We'll show you the right video for your device.
       </p>
 
@@ -54,10 +54,10 @@ export function OSPicker({ onSelect, selected }: OSPickerProps) {
                 className={`h-7 w-7 ${isActive ? 'text-primary' : 'text-muted-foreground'}`}
                 aria-hidden="true"
               />
-              <span className={`text-sm font-semibold leading-tight ${isActive ? 'text-primary' : 'text-foreground'}`}>
+              <span className={`text-base font-semibold leading-tight ${isActive ? 'text-primary' : 'text-foreground'}`}>
                 {opt.label}
               </span>
-              <span className="text-xs text-muted-foreground leading-tight">{opt.subLabel}</span>
+              <span className="text-sm text-muted-foreground leading-tight">{opt.subLabel}</span>
             </button>
           );
         })}

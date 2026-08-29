@@ -283,7 +283,7 @@ export default function NewPhoneSetupAssistant() {
         description="A step-by-step checklist to set up your new iPhone or Android phone the right way — backup, emergency info, security, and more."
       />
       <Navbar />
-      <main className="min-h-screen bg-gray-50 dark:bg-gray-950 pb-16">
+      <main className="min-h-screen bg-muted pb-16">
         <div className="max-w-xl mx-auto px-4 pt-6">
           <PageBreadcrumb
             items={[
@@ -294,10 +294,10 @@ export default function NewPhoneSetupAssistant() {
 
           <div className="text-center mb-8 mt-4">
             <div className="text-5xl mb-3">📱</div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+            <h1 className="text-3xl font-bold text-foreground dark:text-white mb-2">
               New Phone Setup Assistant
             </h1>
-            <p className="text-gray-600 dark:text-gray-300 text-lg">
+            <p className="text-muted-foreground text-lg">
               A personalized checklist to set up your new phone the right way — step by step.
             </p>
           </div>
@@ -306,7 +306,7 @@ export default function NewPhoneSetupAssistant() {
           {!phoneType && (
             <Card className="mb-6">
               <CardContent className="p-6 text-center space-y-4">
-                <p className="font-semibold text-gray-900 dark:text-white text-lg">
+                <p className="font-semibold text-foreground dark:text-white text-lg">
                   What kind of phone do you have?
                 </p>
                 <div className="flex gap-4 justify-center">
@@ -323,7 +323,7 @@ export default function NewPhoneSetupAssistant() {
                     🤖 Android
                   </Button>
                 </div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">
+                <p className="text-base text-muted-foreground ">
                   iPhone is made by Apple. Android phones include Samsung Galaxy, Pixel, Motorola, and most others.
                 </p>
               </CardContent>
@@ -346,12 +346,12 @@ export default function NewPhoneSetupAssistant() {
                   </Badge>
                   <button
                     onClick={() => { setPhoneType(null); setChecked(new Set()); }}
-                    className="text-xs text-blue-500 hover:underline"
+                    className="text-xs text-info-foreground hover:underline"
                   >
                     Change
                   </button>
                 </div>
-                <div className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                <div className="text-sm font-medium text-foreground ">
                   {checkedCount}/{totalItems} done ({pct}%)
                 </div>
               </div>
@@ -376,33 +376,33 @@ export default function NewPhoneSetupAssistant() {
                     <Card key={section.id} className={allDone ? 'border-green-200 dark:border-green-800' : ''}>
                       <CardContent className="p-0">
                         <button
-                          className="w-full flex items-center gap-3 p-4 text-left hover:bg-gray-50 dark:hover:bg-gray-800/40 transition-colors"
+                          className="w-full flex items-center gap-3 p-4 text-left hover:bg-muted transition-colors"
                           onClick={() => toggleSection(section.id)}
                           aria-expanded={isOpen}
                         >
-                          <div className={`p-1.5 rounded-lg bg-gray-100 dark:bg-gray-800 ${section.color}`}>
+                          <div className={`p-1.5 rounded-lg bg-muted ${section.color}`}>
                             <Icon size={18} />
                           </div>
                           <div className="flex-1 min-w-0">
-                            <div className="font-semibold text-gray-900 dark:text-white">
+                            <div className="font-semibold text-foreground dark:text-white">
                               {section.title}
                             </div>
-                            <div className="text-xs text-gray-500 dark:text-gray-400">
+                            <div className="text-xs text-muted-foreground ">
                               {sectionChecked}/{section.items.length} completed
                             </div>
                           </div>
                           {allDone && (
-                            <CheckCircle2 size={18} className="text-green-500 shrink-0" />
+                            <CheckCircle2 size={18} className="text-success-foreground shrink-0" />
                           )}
                           {isOpen ? (
-                            <ChevronUp size={16} className="text-gray-400 shrink-0" />
+                            <ChevronUp size={16} className="text-muted-foreground shrink-0" />
                           ) : (
-                            <ChevronDown size={16} className="text-gray-400 shrink-0" />
+                            <ChevronDown size={16} className="text-muted-foreground shrink-0" />
                           )}
                         </button>
 
                         {isOpen && (
-                          <div className="border-t border-gray-100 dark:border-gray-700 divide-y divide-gray-100 dark:divide-gray-700">
+                          <div className="border-t border-border divide-y divide-gray-100 dark:divide-gray-700">
                             {section.items.map((item) => {
                               const isDone = checked.has(item.id);
                               return (
@@ -412,9 +412,9 @@ export default function NewPhoneSetupAssistant() {
                                     onClick={() => toggle(item.id)}
                                   >
                                     {isDone ? (
-                                      <CheckCircle2 size={20} className="text-green-500 shrink-0 mt-0.5" />
+                                      <CheckCircle2 size={20} className="text-success-foreground shrink-0 mt-0.5" />
                                     ) : (
-                                      <Circle size={20} className="text-gray-300 dark:text-gray-600 shrink-0 mt-0.5" />
+                                      <Circle size={20} className="text-muted-foreground shrink-0 mt-0.5" />
                                     )}
                                     <div className="flex-1">
                                       <div
@@ -426,11 +426,11 @@ export default function NewPhoneSetupAssistant() {
                                       >
                                         {item.label}
                                       </div>
-                                      <div className="text-xs text-gray-500 dark:text-gray-400 mt-1 leading-relaxed">
+                                      <div className="text-xs text-muted-foreground mt-1 leading-relaxed">
                                         {item.detail}
                                       </div>
                                       {item.tip && (
-                                        <div className="mt-2 bg-amber-50 dark:bg-amber-900/20 text-amber-800 dark:text-amber-200 text-xs rounded p-2">
+                                        <div className="mt-2 bg-warn text-warn-foreground text-xs rounded p-2">
                                           💡 {item.tip}
                                         </div>
                                       )}
@@ -448,13 +448,13 @@ export default function NewPhoneSetupAssistant() {
               </div>
 
               {pct === 100 && (
-                <Card className="mb-4 border-green-300 dark:border-green-700 bg-green-50 dark:bg-green-900/20">
+                <Card className="mb-4 border-success-foreground/25 bg-success ">
                   <CardContent className="p-5 text-center">
                     <div className="text-3xl mb-2">🎉</div>
-                    <p className="font-bold text-green-800 dark:text-green-200 text-lg">
+                    <p className="font-bold text-success-foreground text-lg">
                       Your phone is all set up!
                     </p>
-                    <p className="text-green-700 dark:text-green-300 text-sm mt-1">
+                    <p className="text-success-foreground text-base mt-1">
                       You have covered all the important steps. Your phone is secured, backed up, and ready to use.
                     </p>
                   </CardContent>

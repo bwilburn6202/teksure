@@ -22,7 +22,7 @@ export default function SeniorEmailBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Spam filter</h2><p>Both Gmail and Outlook auto-block spam. Check spam folder weekly for important messages.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out for scams</h2><p>If an email asks for money, password, or social security — delete and call the company directly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Save important emails</h2><p>Tap star or flag. Find them later in &ldquo;Starred&rdquo; folder.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Make font bigger — Settings → Display → Text Size.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Make font bigger — Settings → Display → Text Size.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

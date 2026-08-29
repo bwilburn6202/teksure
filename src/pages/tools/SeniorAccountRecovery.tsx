@@ -22,7 +22,7 @@ export default function SeniorAccountRecovery() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bank lockouts</h2><p>Visit branch in person. Bring 2 IDs. Faster than phone support.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Legacy Contact</h2><p>If you pass away, family can recover your iCloud. Set this up.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Recovery email</h2><p>Use spouse&apos;s or kid&apos;s email as backup recovery.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Set up recovery before you need it. Locked out = panic time.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Set up recovery before you need it. Locked out = panic time.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

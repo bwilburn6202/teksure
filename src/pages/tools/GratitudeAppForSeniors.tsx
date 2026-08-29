@@ -19,7 +19,7 @@ export default function GratitudeAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Research-backed benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily gratitude practice improves mood.</li>
               <li>Reduces depression symptoms.</li>
               <li>Better sleep.</li>
@@ -33,7 +33,7 @@ export default function GratitudeAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Gratitude — popular app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free with optional premium.</li>
               <li>Daily prompts.</li>
               <li>Photo + text entries.</li>
@@ -47,7 +47,7 @@ export default function GratitudeAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Five Minute Journal</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Famous structured journal format.</li>
               <li>5 minutes morning + 5 minutes evening.</li>
               <li>3 things grateful for + 3 today&apos;s wins.</li>
@@ -61,7 +61,7 @@ export default function GratitudeAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY in Notes app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Create &quot;Gratitude&quot; note in Apple Notes / Google Keep.</li>
               <li>Add date + 3 things grateful for daily.</li>
               <li>Free — no app needed.</li>
@@ -75,7 +75,7 @@ export default function GratitudeAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Counters retirement isolation feelings.</li>
               <li>Notice good things despite health issues.</li>
               <li>Stronger family relationships through awareness.</li>
@@ -89,7 +89,7 @@ export default function GratitudeAppForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pair with morning coffee</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Habit stack — coffee + gratitude.</li>
               <li>5 minutes after first sip.</li>
               <li>Same place, same time.</li>
@@ -103,7 +103,7 @@ export default function GratitudeAppForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">DIY Notes app first</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t pay for a gratitude app yet. Open your phone&apos;s Notes app right now. Type today&apos;s date. Write 3 things you&apos;re grateful for. Repeat tomorrow. After a week of this free practice, decide if you want a fancier app. Most seniors find the simple Notes approach works perfectly. Free, no learning curve, full benefits.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t pay for a gratitude app yet. Open your phone&apos;s Notes app right now. Type today&apos;s date. Write 3 things you&apos;re grateful for. Repeat tomorrow. After a week of this free practice, decide if you want a fancier app. Most seniors find the simple Notes approach works perfectly. Free, no learning curve, full benefits.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function VivinoWineApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photograph wine label.</li>
               <li>Shows ratings, reviews, prices.</li>
               <li>50 million users.</li>
@@ -33,7 +33,7 @@ export default function VivinoWineApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Vivino app.</li>
               <li>Tap camera icon.</li>
               <li>Photograph wine label.</li>
@@ -47,7 +47,7 @@ export default function VivinoWineApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for senior wine lovers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick wine in store with confidence.</li>
               <li>See what others think before buying.</li>
               <li>Discover wines similar to ones you like.</li>
@@ -61,7 +61,7 @@ export default function VivinoWineApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Buy through Vivino</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Order wine direct in app.</li>
               <li>Often cheaper than retail.</li>
               <li>Delivered to door.</li>
@@ -75,7 +75,7 @@ export default function VivinoWineApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Premium features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vivino Premium — $30/year.</li>
               <li>Detailed taste profile.</li>
               <li>Vintage chart for years.</li>
@@ -89,7 +89,7 @@ export default function VivinoWineApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other wine apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>CellarTracker — for serious collectors.</li>
               <li>Delectable — pretty interface.</li>
               <li>Wine.com app — direct shipping.</li>
@@ -103,7 +103,7 @@ export default function VivinoWineApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Restaurant menu trick</h3>
-            <p className="text-sm text-muted-foreground">When dining out, photograph the restaurant&apos;s wine list with Vivino. App scans every wine and shows ratings. Pick the highest-rated affordable option in seconds. Many senior wine lovers say this single trick has dramatically improved their restaurant wine experiences. Free with Vivino, no expertise required.</p>
+            <p className="text-base text-muted-foreground">When dining out, photograph the restaurant&apos;s wine list with Vivino. App scans every wine and shows ratings. Pick the highest-rated affordable option in seconds. Many senior wine lovers say this single trick has dramatically improved their restaurant wine experiences. Free with Vivino, no expertise required.</p>
           </CardContent>
         </Card>
       </main>

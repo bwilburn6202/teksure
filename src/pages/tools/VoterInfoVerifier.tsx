@@ -90,7 +90,7 @@ export default function VoterInfoVerifier() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <Vote className="h-8 w-8 text-blue-600" />
+                <Vote className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Voter Info Verifier</h1>
@@ -105,7 +105,7 @@ export default function VoterInfoVerifier() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <label htmlFor="state" className="text-sm font-semibold mb-2 block">Pick your state</label>
+              <label htmlFor="state" className="text-base font-semibold mb-2 block">Pick your state</label>
               <select id="state" value={stateAbbr} onChange={(e) => setStateAbbr(e.target.value)}
                 className="w-full max-w-sm rounded-md border border-border bg-background px-3 py-2 text-sm">
                 <option value="">— Select a state —</option>
@@ -121,8 +121,8 @@ export default function VoterInfoVerifier() {
               <Card className="border-border mb-4">
                 <CardContent className="p-5">
                   <Badge className="mb-2">{state.name}</Badge>
-                  <p className="text-sm font-semibold mb-1">Register to vote</p>
-                  <p className="text-xs text-muted-foreground mb-3">Online, free, official Secretary of State or election division.</p>
+                  <p className="text-base font-semibold mb-1">Register to vote</p>
+                  <p className="text-sm text-muted-foreground mb-3">Online, free, official Secretary of State or election division.</p>
                   <a href={state.registerUrl} target="_blank" rel="noreferrer"
                     className="inline-flex items-center gap-1 text-sm text-primary hover:underline font-medium">
                     {state.registerUrl} <ExternalLink className="h-4 w-4" />
@@ -132,8 +132,8 @@ export default function VoterInfoVerifier() {
 
               <Card className="border-border mb-4">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-1">Verify you are registered</p>
-                  <p className="text-xs text-muted-foreground mb-3">Make sure your registration is current and your address is right. Do this 30 days before any election.</p>
+                  <p className="text-base font-semibold mb-1">Verify you are registered</p>
+                  <p className="text-sm text-muted-foreground mb-3">Make sure your registration is current and your address is right. Do this 30 days before any election.</p>
                   <a href={state.verifyUrl} target="_blank" rel="noreferrer"
                     className="inline-flex items-center gap-1 text-sm text-primary hover:underline font-medium">
                     {state.verifyUrl} <ExternalLink className="h-4 w-4" />
@@ -143,8 +143,8 @@ export default function VoterInfoVerifier() {
 
               <Card className="border-border mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-1">Find your polling place</p>
-                  <p className="text-xs text-muted-foreground mb-3">Polling places change. Confirm yours a few days before, especially in primaries.</p>
+                  <p className="text-base font-semibold mb-1">Find your polling place</p>
+                  <p className="text-sm text-muted-foreground mb-3">Polling places change. Confirm yours a few days before, especially in primaries.</p>
                   <a href={state.pollingPlaceUrl} target="_blank" rel="noreferrer"
                     className="inline-flex items-center gap-1 text-sm text-primary hover:underline font-medium">
                     {state.pollingPlaceUrl} <ExternalLink className="h-4 w-4" />
@@ -154,9 +154,9 @@ export default function VoterInfoVerifier() {
             </>
           )}
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch out for fake voter sites</p>
                 <p className="text-muted-foreground">
@@ -170,20 +170,20 @@ export default function VoterInfoVerifier() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Check election-season scam texts.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Check election-season scam texts.</p>
               </Link>
               <Link to="/tools/government-benefits-portal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Government Benefits Portal</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Other official .gov resources.</p>
+                <p className="font-medium text-base">Government Benefits Portal</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Other official .gov resources.</p>
               </Link>
               <Link to="/tools/ai-image-spotter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">AI Image Spotter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Check viral political images.</p>
+                <p className="font-medium text-base">AI Image Spotter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Check viral political images.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: bookmark your state\'s verify link. You will use it every couple of years.
           </p>
         </div>

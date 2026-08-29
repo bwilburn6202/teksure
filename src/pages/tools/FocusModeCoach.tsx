@@ -22,8 +22,8 @@ export default function FocusModeCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What Do Not Disturb does</h2>
-            <p className="text-sm">Silences calls, texts, and notifications during the hours you pick. Both iPhone and Android can be set so:</p>
-            <ul className="text-sm list-disc pl-5 mt-2">
+            <p className="text-base">Silences calls, texts, and notifications during the hours you pick. Both iPhone and Android can be set so:</p>
+            <ul className="text-base list-disc pl-5 mt-2">
               <li>Emergency contacts (spouse, kids) ALWAYS ring through.</li>
               <li>Anyone who calls twice in 3 minutes rings through (in case of real emergency).</li>
               <li>Alarms still work.</li>
@@ -41,7 +41,7 @@ export default function FocusModeCoach() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone — Focus / Sleep mode</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → <strong>Focus</strong>.</li>
                 <li>Tap <strong>Sleep</strong> (or "Do Not Disturb").</li>
                 <li>Tap <strong>People</strong> → Allow Notifications From → Add anyone who can ALWAYS reach you (spouse, kids, your doctor's office).</li>
@@ -61,7 +61,7 @@ export default function FocusModeCoach() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android — Do Not Disturb</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings → <strong>Sound & vibration</strong> → <strong>Do Not Disturb</strong>. (Samsung: Notifications → Do not disturb.)</li>
                 <li>Tap <strong>People</strong> → Calls → "Starred contacts" or "Contacts". (Star your spouse and kids in the Contacts app first.)</li>
                 <li>Turn ON <strong>"Allow repeat callers"</strong> — second call within 15 minutes rings through.</li>
@@ -82,7 +82,7 @@ export default function FocusModeCoach() {
               <Bell className="w-6 h-6 text-primary shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Other Focus modes worth knowing</h3>
-                <ul className="list-disc pl-5 space-y-1 text-sm">
+                <ul className="list-disc pl-5 space-y-1 text-base">
                   <li><strong>Driving</strong> — silences notifications when your phone detects you're in a moving car.</li>
                   <li><strong>Personal</strong> — silences work email outside work hours.</li>
                   <li><strong>Custom</strong> — make your own (e.g., "At Doctor" — silence everything except family).</li>
@@ -95,7 +95,7 @@ export default function FocusModeCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worried about missing a real emergency?</h3>
-            <p className="text-sm text-muted-foreground">Don't be. With Repeated Calls turned on, anyone calling twice within a few minutes rings through. And family members starred as contacts always reach you. Real emergencies get through; midnight Amazon delivery alerts don't.</p>
+            <p className="text-base text-muted-foreground">Don't be. With Repeated Calls turned on, anyone calling twice within a few minutes rings through. And family members starred as contacts always reach you. Real emergencies get through; midnight Amazon delivery alerts don't.</p>
           </CardContent>
         </Card>
       </main>

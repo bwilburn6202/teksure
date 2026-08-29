@@ -150,7 +150,7 @@ export default function RobotVacuumPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <Sparkles className="h-8 w-8 text-emerald-600" />
+                <Sparkles className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Robot Vacuum Picker</h1>
@@ -163,12 +163,12 @@ export default function RobotVacuumPicker() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Robot Vacuum Picker' }]} />
 
-          <Card className="border-amber-200 dark:border-amber-800 bg-amber-50 dark:bg-amber-900/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2 flex items-center gap-2 text-amber-800 dark:text-amber-200">
+              <p className="text-base font-semibold mb-2 flex items-center gap-2 text-warn-foreground ">
                 <AlertTriangle className="h-4 w-4" /> Watch out for monthly subscription brands
               </p>
-              <p className="text-sm text-amber-800 dark:text-amber-200">
+              <p className="text-base text-warn-foreground ">
                 A few newer robot vacuum brands (and some premium models) now lock features behind a monthly cloud subscription — saved room maps, no-go zones, scheduled cleaning, even voice control. If a robot needs $5 to $10 a month forever to keep working the way the box promised, that is a real cost over five years. Every pick on this page works fully without a paid subscription. If a salesperson pushes a different model, ask the question out loud: "Does anything on this robot stop working if I cancel a subscription?"
               </p>
             </CardContent>
@@ -188,26 +188,26 @@ export default function RobotVacuumPicker() {
                     </div>
                   </div>
 
-                  <p className="text-sm mb-3"><span className="font-semibold">Who it fits: </span>{p.whoItFits}</p>
+                  <p className="text-base mb-3"><span className="font-semibold">Who it fits: </span>{p.whoItFits}</p>
 
                   <div className="grid sm:grid-cols-2 gap-3 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-emerald-700 dark:text-emerald-400 uppercase tracking-wider mb-1.5">Pros</p>
+                      <p className="text-xs font-semibold text-success-foreground uppercase tracking-wider mb-1.5">Pros</p>
                       <ul className="space-y-1">
                         {p.pros.map((pro, k) => (
-                          <li key={k} className="flex gap-2 text-sm">
-                            <span className="text-emerald-600 shrink-0">+</span>
+                          <li key={k} className="flex gap-2 text-base">
+                            <span className="text-success-foreground shrink-0">+</span>
                             <span>{pro}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-rose-700 dark:text-rose-400 uppercase tracking-wider mb-1.5">Cons</p>
+                      <p className="text-xs font-semibold text-danger-foreground uppercase tracking-wider mb-1.5">Cons</p>
                       <ul className="space-y-1">
                         {p.cons.map((con, k) => (
-                          <li key={k} className="flex gap-2 text-sm">
-                            <span className="text-rose-600 shrink-0">−</span>
+                          <li key={k} className="flex gap-2 text-base">
+                            <span className="text-danger-foreground shrink-0">−</span>
                             <span>{con}</span>
                           </li>
                         ))}
@@ -226,8 +226,8 @@ export default function RobotVacuumPicker() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Quick guide: which feature do you actually need?</p>
-              <ul className="space-y-2 text-sm">
+              <p className="text-base font-semibold mb-2">Quick guide: which feature do you actually need?</p>
+              <ul className="space-y-2 text-base">
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span><strong>Self-empty base:</strong> worth it if you have pets, allergies, or you do not want to bend down to a small bin every other day. Adds about $100 to $150 to the price.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span><strong>Vacuum plus mop:</strong> only worth it if at least 60% of your floors are hard surface (tile, sealed wood, vinyl). On mostly carpet, the mop sits unused.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span><strong>Lidar mapping:</strong> needed if you want to tell the robot "skip the bedroom" or "clean the kitchen now." Bump-and-go robots without a map will run forever and miss spots.</span></li>
@@ -242,22 +242,22 @@ export default function RobotVacuumPicker() {
                 onClick={() => setShowSkip(!showSkip)}
                 className="w-full flex items-center justify-between text-left"
               >
-                <p className="text-sm font-semibold">When NOT to buy a robot vacuum</p>
+                <p className="text-base font-semibold">When NOT to buy a robot vacuum</p>
                 <ChevronRight className={`h-4 w-4 transition-transform ${showSkip ? 'rotate-90' : ''}`} />
               </button>
               {showSkip && (
                 <div className="mt-4 space-y-3">
-                  <p className="text-sm text-muted-foreground">A robot vacuum is not the right answer for every home. Here are the cases where a regular vacuum (or a hired cleaner) gives you more for your money.</p>
+                  <p className="text-base text-muted-foreground">A robot vacuum is not the right answer for every home. Here are the cases where a regular vacuum (or a hired cleaner) gives you more for your money.</p>
                   {SKIP_REASONS.map((r, i) => (
                     <div key={i} className="p-3 rounded-lg border border-border bg-muted/20">
-                      <p className="font-medium text-sm mb-1">{r.title}</p>
-                      <p className="text-sm text-muted-foreground">{r.detail}</p>
+                      <p className="font-medium text-base mb-1">{r.title}</p>
+                      <p className="text-base text-muted-foreground">{r.detail}</p>
                     </div>
                   ))}
                 </div>
               )}
               {!showSkip && (
-                <p className="text-sm text-muted-foreground mt-2">A robot vacuum is the wrong tool for some homes. Tap to see six honest reasons to skip it.</p>
+                <p className="text-base text-muted-foreground mt-2">A robot vacuum is the wrong tool for some homes. Tap to see six honest reasons to skip it.</p>
               )}
             </CardContent>
           </Card>
@@ -274,16 +274,16 @@ export default function RobotVacuumPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/smart-home-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Smart Home Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Bulbs, plugs, doorbells — what to add first.</p>
+                <p className="font-medium text-base">Smart Home Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Bulbs, plugs, doorbells — what to add first.</p>
               </Link>
               <Link to="/tools/senior-friendly-apps" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Senior-Friendly Apps</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Apps that pair well with smart home gear.</p>
+                <p className="font-medium text-base">Senior-Friendly Apps</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Apps that pair well with smart home gear.</p>
               </Link>
               <Link to="/tools/find-lost-items" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Find Lost Items</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Tile and AirTag picks for keys, bags, remotes.</p>
+                <p className="font-medium text-base">Find Lost Items</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Tile and AirTag picks for keys, bags, remotes.</p>
               </Link>
             </div>
           </div>

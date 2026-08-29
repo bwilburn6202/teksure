@@ -363,7 +363,7 @@ export default function WidowhoodTechHub() {
               <Card key={item.title} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{item.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -389,7 +389,7 @@ export default function WidowhoodTechHub() {
                 <Card key={item.category} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{item.category}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.examples}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{item.examples}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -415,10 +415,10 @@ export default function WidowhoodTechHub() {
               <Card key={p.title} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{p.title}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-2">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-2">
                     {p.description}
                   </p>
-                  <p className="text-xs text-primary font-medium">{p.action}</p>
+                  <p className="text-sm text-primary font-medium">{p.action}</p>
                 </CardContent>
               </Card>
             ))}
@@ -444,7 +444,7 @@ export default function WidowhoodTechHub() {
                 <Card key={e.service} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{e.service}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{e.steps}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{e.steps}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -470,7 +470,7 @@ export default function WidowhoodTechHub() {
               <Card key={s.service} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{s.service}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{s.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -496,7 +496,7 @@ export default function WidowhoodTechHub() {
                 <Card key={f.title} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{f.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{f.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{f.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -522,7 +522,7 @@ export default function WidowhoodTechHub() {
               <Card key={s.category} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{s.category}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{s.examples}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{s.examples}</p>
                 </CardContent>
               </Card>
             ))}
@@ -548,7 +548,7 @@ export default function WidowhoodTechHub() {
                 <Card key={p.title} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{p.title}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{p.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{p.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -574,7 +574,7 @@ export default function WidowhoodTechHub() {
               <Card key={l.name} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <h3 className="font-semibold text-foreground mb-2">{l.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{l.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed">{l.description}</p>
                 </CardContent>
               </Card>
             ))}
@@ -600,7 +600,7 @@ export default function WidowhoodTechHub() {
                 <Card key={g.name} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-2">{g.name}</h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{g.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{g.description}</p>
                   </CardContent>
                 </Card>
               ))}

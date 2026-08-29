@@ -17,12 +17,12 @@ export default function SeniorEyeNutrition() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AREDS2 supplements</h2><p>$15/month. Doctor-recommended. Slows macular degeneration progression.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best foods</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Spinach (lutein)</li><li>Salmon (omega-3)</li><li>Eggs (zeaxanthin)</li><li>Bell peppers (vitamin C)</li><li>Nuts (vitamin E)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best foods</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Spinach (lutein)</li><li>Salmon (omega-3)</li><li>Eggs (zeaxanthin)</li><li>Bell peppers (vitamin C)</li><li>Nuts (vitamin E)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip</h2><p>Vitamin A overdose harmful. Stick to recommended daily.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Carrots myth</h2><p>Helps but spinach better. Beta carotene for night vision.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Annual eye exam</h2><p>Macular degeneration silent. Yearly screen catches early.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hydration</h2><p>Dry eyes from dehydration. 8 glasses of water daily helps.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Real food beats supplements. Eat spinach 3x weekly.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Real food beats supplements. Eat spinach 3x weekly.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

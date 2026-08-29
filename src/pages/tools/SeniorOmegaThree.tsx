@@ -20,9 +20,9 @@ export default function SeniorOmegaThree() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best brands</h2><p>Nordic Naturals, Carlson, Costco Kirkland. USP-verified.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Food sources</h2><p>Salmon, mackerel, sardines, anchovies. 2x weekly = supplement equivalent.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Vegan option</h2><p>Algae oil. Same benefits without fish.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefits</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Lower triglycerides</li><li>Less joint pain</li><li>Better mood</li><li>Reduced macular degeneration</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefits</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Lower triglycerides</li><li>Less joint pain</li><li>Better mood</li><li>Reduced macular degeneration</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip flaxseed</h2><p>Plant omega-3s convert poorly. Need fish or algae for benefits.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: $0.10/day fish oil supplement. Many doctor-recommended.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: $0.10/day fish oil supplement. Many doctor-recommended.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -29,15 +29,15 @@ export default function AppPhoneFrozenFix() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone</h3>
-              <p className="font-semibold text-sm mt-2">App stuck:</p>
-              <ol className="list-decimal pl-5 space-y-1 text-sm mb-3">
+              <p className="font-semibold text-base mt-2">App stuck:</p>
+              <ol className="list-decimal pl-5 space-y-1 text-base mb-3">
                 <li>Swipe up from bottom (or double-press home button on older iPhones).</li>
                 <li>App switcher appears.</li>
                 <li>Swipe stuck app UP off screen.</li>
                 <li>Re-open the app.</li>
               </ol>
-              <p className="font-semibold text-sm">iPhone fully frozen:</p>
-              <ol className="list-decimal pl-5 space-y-1 text-sm">
+              <p className="font-semibold text-base">iPhone fully frozen:</p>
+              <ol className="list-decimal pl-5 space-y-1 text-base">
                 <li><strong>iPhone 8 and later</strong>: Press volume UP, release. Press volume DOWN, release. Press AND HOLD side button until Apple logo appears.</li>
                 <li><strong>iPhone 7</strong>: Hold volume DOWN + side button.</li>
                 <li><strong>iPhone 6 / SE</strong>: Hold home button + side button.</li>
@@ -50,13 +50,13 @@ export default function AppPhoneFrozenFix() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android</h3>
-              <p className="font-semibold text-sm mt-2">App stuck:</p>
-              <ol className="list-decimal pl-5 space-y-1 text-sm mb-3">
+              <p className="font-semibold text-base mt-2">App stuck:</p>
+              <ol className="list-decimal pl-5 space-y-1 text-base mb-3">
                 <li>Settings → Apps → tap stuck app → "Force Stop".</li>
                 <li>Or use the recent apps button (square at bottom) → swipe app away.</li>
               </ol>
-              <p className="font-semibold text-sm">Phone fully frozen:</p>
-              <ol className="list-decimal pl-5 space-y-1 text-sm">
+              <p className="font-semibold text-base">Phone fully frozen:</p>
+              <ol className="list-decimal pl-5 space-y-1 text-base">
                 <li>Hold POWER button + Volume DOWN for 10-20 seconds.</li>
                 <li>Phone should restart.</li>
               </ol>
@@ -68,14 +68,14 @@ export default function AppPhoneFrozenFix() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Mac</h3>
-              <p className="font-semibold text-sm mt-2">App not responding:</p>
-              <ol className="list-decimal pl-5 space-y-1 text-sm mb-3">
+              <p className="font-semibold text-base mt-2">App not responding:</p>
+              <ol className="list-decimal pl-5 space-y-1 text-base mb-3">
                 <li>Press <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Option</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Esc</kbd></li>
                 <li>Force Quit window opens. Pick frozen app. Click "Force Quit".</li>
                 <li>Or right-click the app icon in dock → Force Quit.</li>
               </ol>
-              <p className="font-semibold text-sm">Mac fully frozen:</p>
-              <ol className="list-decimal pl-5 space-y-1 text-sm">
+              <p className="font-semibold text-base">Mac fully frozen:</p>
+              <ol className="list-decimal pl-5 space-y-1 text-base">
                 <li>Hold POWER button 10 seconds — Mac shuts off.</li>
                 <li>Press power again to restart.</li>
               </ol>
@@ -87,13 +87,13 @@ export default function AppPhoneFrozenFix() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Windows</h3>
-              <p className="font-semibold text-sm mt-2">App not responding:</p>
-              <ol className="list-decimal pl-5 space-y-1 text-sm mb-3">
+              <p className="font-semibold text-base mt-2">App not responding:</p>
+              <ol className="list-decimal pl-5 space-y-1 text-base mb-3">
                 <li>Press <kbd className="bg-muted px-1.5 py-0.5 rounded">Ctrl</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Shift</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">Esc</kbd> → Task Manager.</li>
                 <li>Click the frozen app. Click "End Task".</li>
               </ol>
-              <p className="font-semibold text-sm">PC fully frozen:</p>
-              <ol className="list-decimal pl-5 space-y-1 text-sm">
+              <p className="font-semibold text-base">PC fully frozen:</p>
+              <ol className="list-decimal pl-5 space-y-1 text-base">
                 <li>Hold POWER button 10 seconds — PC shuts off.</li>
                 <li>Press power again to restart.</li>
                 <li>If freeze repeats → may be virus, full disk, or hardware issue. (See our Computer Cleanup Coach.)</li>
@@ -105,7 +105,7 @@ export default function AppPhoneFrozenFix() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Restart fixes a lot</h3>
-            <p className="text-sm text-muted-foreground">"Have you tried turning it off and on again?" exists as a meme because it works. Restart any device once a week. Solves 60% of weird tech problems.</p>
+            <p className="text-base text-muted-foreground">"Have you tried turning it off and on again?" exists as a meme because it works. Restart any device once a week. Solves 60% of weird tech problems.</p>
           </CardContent>
         </Card>
       </main>

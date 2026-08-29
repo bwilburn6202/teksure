@@ -22,7 +22,7 @@ export default function SeniorEmergencyKit() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Light + radio</h2><p>NOAA weather radio with hand crank ($30). Flashlights with extra batteries.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Power bank</h2><p>10,000 mAh+ ($25). Charges phone 2-3 times.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Documents</h2><p>Copies of ID, insurance, Medicare card in waterproof bag.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Ready.gov has free senior emergency checklists. Print and check.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Ready.gov has free senior emergency checklists. Print and check.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

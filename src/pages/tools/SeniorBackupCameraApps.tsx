@@ -22,7 +22,7 @@ export default function SeniorBackupCameraApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Dash cam alternative</h2><p>$50 dash cams record both directions. Insurance discounts available.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Blind spot help</h2><p>Many newer cars have side-mirror cameras for lane changes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AAA installation</h2><p>AAA members get discounted backup camera installation at member shops.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Backup accidents drop 95% with cameras. Save $1000s in scrapes.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Backup accidents drop 95% with cameras. Save $1000s in scrapes.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function FacebookForBeginners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior Facebook</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>See grandkids&apos; photos.</li>
               <li>Reconnect old friends.</li>
               <li>School + church alumni groups.</li>
@@ -34,7 +34,7 @@ export default function FacebookForBeginners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup steps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sign up at facebook.com.</li>
               <li>Strong password + 2FA.</li>
               <li>Profile photo (clear face shot).</li>
@@ -49,7 +49,7 @@ export default function FacebookForBeginners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy settings (do FIRST)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Privacy → Audience.</li>
               <li>Default: Friends only.</li>
               <li>Profile visible to friends only.</li>
@@ -65,7 +65,7 @@ export default function FacebookForBeginners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t click ads with too-good prices.</li>
               <li>&quot;Friend&quot; messages asking for money — call them direct.</li>
               <li>Quiz apps that take your data — skip.</li>
@@ -79,7 +79,7 @@ export default function FacebookForBeginners() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Healthy Facebook</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Limit to 30 min/day.</li>
               <li>Unfollow (don&apos;t unfriend) toxic feeds.</li>
               <li>Hide political ads.</li>
@@ -94,7 +94,7 @@ export default function FacebookForBeginners() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Healthier social</h3>
-            <p className="text-sm text-muted-foreground"><strong>Nextdoor</strong> for neighbors. <strong>Group texts</strong> for family. Many seniors find Facebook stressful — fine to skip. Phone calls + visits beat scrolling. Use Facebook only for specific connection benefits.</p>
+            <p className="text-base text-muted-foreground"><strong>Nextdoor</strong> for neighbors. <strong>Group texts</strong> for family. Many seniors find Facebook stressful — fine to skip. Phone calls + visits beat scrolling. Use Facebook only for specific connection benefits.</p>
           </CardContent>
         </Card>
       </main>

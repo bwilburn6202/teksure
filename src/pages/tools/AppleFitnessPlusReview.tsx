@@ -19,7 +19,7 @@ export default function AppleFitnessPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it offers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$9.99/month or $79.99/year.</li>
               <li>Free 1 month trial.</li>
               <li>Hundreds of workouts — yoga, strength, walking, meditation.</li>
@@ -33,7 +33,7 @@ export default function AppleFitnessPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Time to Walk&quot; — guided audio walks with celebrities.</li>
               <li>Mindful Cooldown — meditation + stretches.</li>
               <li>Yoga for All Levels.</li>
@@ -47,7 +47,7 @@ export default function AppleFitnessPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Fitness app on iPhone.</li>
               <li>Tap Fitness+ tab.</li>
               <li>Browse + select workout.</li>
@@ -61,7 +61,7 @@ export default function AppleFitnessPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Versus competitors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Fitness+ ($10/mo) — best for Apple users.</li>
               <li>Peloton App ($13/mo) — variety, no bike needed.</li>
               <li>Beachbody on Demand ($10/mo) — strength focus.</li>
@@ -75,7 +75,7 @@ export default function AppleFitnessPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SilverSneakers first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most Medicare Advantage plans include FREE.</li>
               <li>SilverSneakers GO app — at-home videos.</li>
               <li>Senior-specific instructors.</li>
@@ -89,7 +89,7 @@ export default function AppleFitnessPlusReview() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free YouTube alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>HASfit — completely free senior workouts.</li>
               <li>Yoga With Adriene — free yoga.</li>
               <li>Search YouTube: &quot;senior chair exercises.&quot;</li>
@@ -103,7 +103,7 @@ export default function AppleFitnessPlusReview() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">SilverSneakers + YouTube usually enough</h3>
-            <p className="text-sm text-muted-foreground">For most seniors, SilverSneakers (free with Medicare Advantage) plus free YouTube workouts (HASfit, Yoga With Adriene) cover all home fitness needs without spending extra. Apple Fitness+ is excellent if you have Apple devices and prefer their interface, but rarely necessary. Try free options first. Spend the $10/month on a personal trainer once monthly instead.</p>
+            <p className="text-base text-muted-foreground">For most seniors, SilverSneakers (free with Medicare Advantage) plus free YouTube workouts (HASfit, Yoga With Adriene) cover all home fitness needs without spending extra. Apple Fitness+ is excellent if you have Apple devices and prefer their interface, but rarely necessary. Try free options first. Spend the $10/month on a personal trainer once monthly instead.</p>
           </CardContent>
         </Card>
       </main>

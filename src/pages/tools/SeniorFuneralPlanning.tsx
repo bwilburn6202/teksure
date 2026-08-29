@@ -22,7 +22,7 @@ export default function SeniorFuneralPlanning() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Direct cremation</h2><p>$1,000-$2,000. No service. Family does memorial separately.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Veterans benefits</h2><p>FREE military burial in national cemetery. Spouse included.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Final Roadmap app</h2><p>$15. Stores all final wishes. Family accesses when needed.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Tell family wishes now. Saves them stressful decisions in grief.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Tell family wishes now. Saves them stressful decisions in grief.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

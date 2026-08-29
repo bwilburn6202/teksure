@@ -22,7 +22,7 @@ export default function SeniorOldPhoneCharger() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Power bank</h2><p>$20. 10,000 mAh battery. 2-3 phone charges. Lifesaver in airports.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Battery health</h2><p>iPhone: Settings → Battery → Battery Health. Should stay over 80%.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When to replace</h2><p>If battery health under 80% and phone dies fast. ~$80 Apple replacement.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Charge in kitchen, not bedside. Better sleep + safer.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Charge in kitchen, not bedside. Better sleep + safer.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

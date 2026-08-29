@@ -29,7 +29,7 @@ export default function FreeUpPhoneStorage() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Step 1 — See where space is going</h3>
-                <ol className="list-decimal pl-5 space-y-1 text-sm">
+                <ol className="list-decimal pl-5 space-y-1 text-base">
                   <li>Settings → General → iPhone Storage.</li>
                   <li>Wait 30 seconds — a colorful bar appears.</li>
                   <li>Below that, apps are sorted by the most space they use.</li>
@@ -39,7 +39,7 @@ export default function FreeUpPhoneStorage() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Step 2 — Apply the easy wins</h3>
-                <ul className="list-disc pl-5 space-y-2 text-sm">
+                <ul className="list-disc pl-5 space-y-2 text-base">
                   <li><strong>Turn on iCloud Photos with Optimize:</strong> Settings → tap your name → iCloud → Photos → "Optimize iPhone Storage". Phone keeps small versions; full quality stays in iCloud. Often saves 5-30 GB.</li>
                   <li><strong>Empty the Recently Deleted album:</strong> Photos app → Albums → scroll down → Recently Deleted → "Select" → "Delete All".</li>
                   <li><strong>Delete giant videos:</strong> In Photos, tap "Videos" → Sort by Size if available → review the biggest. Each 4K video is often 1-3 GB.</li>
@@ -57,7 +57,7 @@ export default function FreeUpPhoneStorage() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Step 1 — See where space is going</h3>
-                <ol className="list-decimal pl-5 space-y-1 text-sm">
+                <ol className="list-decimal pl-5 space-y-1 text-base">
                   <li>Settings → Storage. (On Samsung: Battery and device care → Storage.)</li>
                   <li>You'll see a breakdown — apps, photos, videos, audio, downloads.</li>
                 </ol>
@@ -66,7 +66,7 @@ export default function FreeUpPhoneStorage() {
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg mb-3">Step 2 — Apply the easy wins</h3>
-                <ul className="list-disc pl-5 space-y-2 text-sm">
+                <ul className="list-disc pl-5 space-y-2 text-base">
                   <li><strong>Run Files by Google:</strong> Free app, often pre-installed. Open it — it suggests "Junk files", "Duplicate photos", "Large videos" you can delete with one tap.</li>
                   <li><strong>Back up + free space in Google Photos:</strong> Open Photos app → Library → "Free up space". Removes photos already backed up to Google.</li>
                   <li><strong>Clear app caches:</strong> Settings → Apps → tap a big app like Facebook or Chrome → Storage → "Clear cache". Doesn't delete your data — just temporary files.</li>
@@ -82,7 +82,7 @@ export default function FreeUpPhoneStorage() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Long-term fix — pay $1-3/month for cloud storage</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>iCloud+ (Apple):</strong> 50 GB for $1/month, 200 GB for $3. Photos move to the cloud automatically; phone gets light again.</li>
               <li><strong>Google One:</strong> 100 GB for $2/month. Same idea for Android.</li>
               <li>$3/month is far cheaper than buying a new phone because the old one fills up.</li>
@@ -93,7 +93,7 @@ export default function FreeUpPhoneStorage() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">Photos and videos are 90% of "full storage" problems. Once your photos are backing up to the cloud, you almost never run out of space again — even on a phone with only 64 GB.</p>
+            <p className="text-base text-muted-foreground">Photos and videos are 90% of "full storage" problems. Once your photos are backing up to the cloud, you almost never run out of space again — even on a phone with only 64 GB.</p>
           </CardContent>
         </Card>
       </main>

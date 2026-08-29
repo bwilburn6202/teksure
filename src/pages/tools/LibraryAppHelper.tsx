@@ -22,8 +22,8 @@ export default function LibraryAppHelper() {
               <Sparkles className="w-6 h-6 text-primary shrink-0" />
               <div>
                 <h2 className="font-bold mb-1">Best-kept secret in tech</h2>
-                <p className="text-sm">Most US libraries pay for two free apps — <strong>Libby</strong> and <strong>Hoopla</strong> — that let you borrow e-books, audiobooks, and movies just like physical books. Brand-new releases. Free. Limited only by your library card.</p>
-                <p className="text-sm mt-2">If you don't have a library card, signing up is free at any local library — and many libraries let you sign up online with proof of address.</p>
+                <p className="text-base">Most US libraries pay for two free apps — <strong>Libby</strong> and <strong>Hoopla</strong> — that let you borrow e-books, audiobooks, and movies just like physical books. Brand-new releases. Free. Limited only by your library card.</p>
+                <p className="text-base mt-2">If you don't have a library card, signing up is free at any local library — and many libraries let you sign up online with proof of address.</p>
               </div>
             </div>
           </CardContent>
@@ -32,8 +32,8 @@ export default function LibraryAppHelper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Libby — for e-books and audiobooks</h2>
-            <p className="text-sm mb-3">Made by OverDrive. The cleanest, most popular library app.</p>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <p className="text-base mb-3">Made by OverDrive. The cleanest, most popular library app.</p>
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install <strong>Libby</strong> from the App Store or Play Store. Free, no ads.</li>
               <li>Open it. Tap "Yes" when it asks if you have a library card.</li>
               <li>Tap "Search For A Library". Type your zip code or library name.</li>
@@ -52,8 +52,8 @@ export default function LibraryAppHelper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Hoopla — for movies, TV, comics, and instant books</h2>
-            <p className="text-sm mb-3">Different model — no holds, ever. Borrow up to a monthly limit.</p>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <p className="text-base mb-3">Different model — no holds, ever. Borrow up to a monthly limit.</p>
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install <strong>Hoopla Digital</strong> from the App Store or Play Store.</li>
               <li>Tap "Sign up". Type your email and pick a password.</li>
               <li>Pick your library.</li>
@@ -71,7 +71,7 @@ export default function LibraryAppHelper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reading on a Kindle</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>In Libby, after you borrow a book — tap "Read with…" → "Kindle".</li>
               <li>It opens Amazon. Sign in with your Kindle account.</li>
               <li>Click "Get Library Book". The book lands on your Kindle automatically.</li>
@@ -83,21 +83,21 @@ export default function LibraryAppHelper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other free library apps to know</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Kanopy</strong> — free movies (often arthouse, documentaries). Limit usually 4-10 a month.</li>
               <li><strong>cloudLibrary</strong> — alternative e-book app some libraries use instead of Libby.</li>
               <li><strong>Flipster</strong> — free magazines.</li>
               <li><strong>RBdigital</strong> — newspapers and magazines.</li>
               <li><strong>Brainfuse</strong> — free tutoring (helps grandkids with homework).</li>
             </ul>
-            <p className="text-sm mt-2">Check your library's website to see which they offer.</p>
+            <p className="text-base mt-2">Check your library's website to see which they offer.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">No library card?</h3>
-            <p className="text-sm text-muted-foreground">Walk into any local library with a photo ID and a piece of mail showing your address. Free. Takes 5 minutes. Many libraries also let you sign up online — search "[your city] library card application".</p>
+            <p className="text-base text-muted-foreground">Walk into any local library with a photo ID and a piece of mail showing your address. Free. Takes 5 minutes. Many libraries also let you sign up online — search "[your city] library card application".</p>
           </CardContent>
         </Card>
       </main>

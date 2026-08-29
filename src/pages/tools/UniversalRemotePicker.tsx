@@ -28,7 +28,7 @@ export default function UniversalRemotePicker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Logitech Harmony is gone</h2>
-            <p className="text-sm">Logitech retired Harmony in 2021. Existing Harmony remotes still work for now but updates have stopped. Time to plan a replacement.</p>
+            <p className="text-base">Logitech retired Harmony in 2021. Existing Harmony remotes still work for now but updates have stopped. Time to plan a replacement.</p>
           </CardContent>
         </Card>
 
@@ -38,10 +38,10 @@ export default function UniversalRemotePicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base mb-1">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,8 +50,8 @@ export default function UniversalRemotePicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For grandparents — KISS principle</h2>
-            <p className="text-sm">Multi-remote setups are confusing. Best for seniors:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base">Multi-remote setups are confusing. Best for seniors:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Apple TV 4K (or Roku) + simple remote</strong> — one device handles streaming. The Apple TV remote includes TV power and volume.</li>
               <li><strong>Big-button "Senior remote"</strong> — single remote for cable + TV. Best Buy carries options.</li>
               <li><strong>Voice-controlled</strong> — "Alexa, turn on TV" with Echo + Fire TV.</li>
@@ -62,7 +62,7 @@ export default function UniversalRemotePicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Big-button senior remotes (TV only)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Flipper Big Button Universal</strong> — only 6 buttons. Made for memory loss.</li>
               <li><strong>Tek Pal TV Remote</strong> — extra-large buttons.</li>
               <li><strong>GE Big Button</strong> — Walmart, ~$10. Simple.</li>
@@ -74,7 +74,7 @@ export default function UniversalRemotePicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — labels</h3>
-            <p className="text-sm text-muted-foreground">Use clear nail polish or white-out to mark the "On", "Volume", and "Channel" buttons on any remote. Or stick large dots from the office store. Costs $1, makes any remote senior-friendly.</p>
+            <p className="text-base text-muted-foreground">Use clear nail polish or white-out to mark the "On", "Volume", and "Channel" buttons on any remote. Or stick large dots from the office store. Costs $1, makes any remote senior-friendly.</p>
           </CardContent>
         </Card>
       </main>

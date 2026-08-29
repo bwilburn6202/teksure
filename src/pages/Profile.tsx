@@ -201,7 +201,7 @@ export default function Profile() {
                   disabled
                   className="h-11 opacity-60 cursor-not-allowed"
                 />
-                <p className="text-xs text-muted-foreground">Email address cannot be changed here.</p>
+                <p className="text-sm text-muted-foreground">Email address cannot be changed here.</p>
               </div>
 
               <div className="space-y-2">
@@ -242,7 +242,7 @@ export default function Profile() {
               Learning Progress
             </p>
             <div className="flex items-end justify-between mb-2">
-              <p className="text-sm font-medium">{progressStats.completed} guides completed</p>
+              <p className="text-base font-medium">{progressStats.completed} guides completed</p>
               <p className="text-lg font-bold text-primary">{progressStats.pct}%</p>
             </div>
             <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
@@ -251,7 +251,7 @@ export default function Profile() {
                 style={{ width: `${progressStats.pct}%` }}
               />
             </div>
-            <p className="text-xs text-muted-foreground mt-2">
+            <p className="text-sm text-muted-foreground mt-2">
               {progressStats.completed === 0
                 ? 'Complete your first guide to start tracking progress!'
                 : `${progressStats.total - progressStats.completed} more to go — keep it up!`}
@@ -266,7 +266,7 @@ export default function Profile() {
               <Map className="h-4 w-4 text-primary" />
               Your Learning Path
             </CardTitle>
-            <p className="text-xs text-muted-foreground mt-0.5">{activePath.label} — {activePath.description}</p>
+            <p className="text-sm text-muted-foreground mt-0.5">{activePath.label} — {activePath.description}</p>
           </CardHeader>
           <CardContent className="pb-5">
             <div className="space-y-2">
@@ -280,7 +280,7 @@ export default function Profile() {
                     to={`/guides/${guide.slug}`}
                     className={`flex items-center gap-3 p-3 rounded-lg border transition-all ${
                       done
-                        ? 'border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950/20'
+                        ? 'border-green-200 dark:border-green-800 bg-success dark:bg-green-950/20'
                         : isNext
                         ? 'border-primary/40 bg-primary/5 hover:bg-primary/10'
                         : 'border-border bg-muted/30 hover:bg-muted/50'
@@ -290,9 +290,9 @@ export default function Profile() {
                       done ? 'bg-green-100 dark:bg-green-900' : isNext ? 'bg-primary/10' : 'bg-muted'
                     }`}>
                       {done
-                        ? <CheckCircle2 className="h-4 w-4 text-green-600" />
+                        ? <CheckCircle2 className="h-4 w-4 text-success-foreground" />
                         : isNext
-                        ? <span className="text-sm font-bold text-primary">{index + 1}</span>
+                        ? <span className="text-base font-bold text-primary">{index + 1}</span>
                         : <Lock className="h-3.5 w-3.5 text-muted-foreground" />
                       }
                     </div>
@@ -306,7 +306,7 @@ export default function Profile() {
                       <span className="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded-full shrink-0">Next up</span>
                     )}
                     {done && (
-                      <span className="text-xs text-green-600 shrink-0">Done </span>
+                      <span className="text-sm text-success-foreground shrink-0">Done </span>
                     )}
                   </Link>
                 );
@@ -327,7 +327,7 @@ export default function Profile() {
         <Card className="mb-6 rounded-2xl border border-border bg-card">
           <CardHeader className="pb-3 border-b border-border">
             <CardTitle className="text-base flex items-center gap-2 text-primary">
-              <Trophy className="h-4 w-4 text-amber-500" />
+              <Trophy className="h-4 w-4 text-warn-foreground" />
               Achievement Badges
               <Badge variant="secondary" className="text-xs ml-auto">
                 {badges.filter(b => b.earned).length} / {badges.length}
@@ -336,7 +336,7 @@ export default function Profile() {
           </CardHeader>
           <CardContent className="pb-5">
             {badges.filter(b => b.earned).length === 0 && (
-              <p className="text-sm text-muted-foreground mb-4">Complete guides to earn your first badge!</p>
+              <p className="text-base text-muted-foreground mb-4">Complete guides to earn your first badge!</p>
             )}
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {badges.map(badge => (
@@ -344,15 +344,15 @@ export default function Profile() {
                   key={badge.id}
                   className={`flex flex-col items-center gap-1.5 p-3 rounded-xl border text-center transition-all ${
                     badge.earned
-                      ? 'border-amber-400/40 bg-amber-50 dark:bg-amber-950/20'
+                      ? 'border-amber-400/40 bg-warn dark:bg-amber-950/20'
                       : 'border-border bg-muted/30 opacity-50 grayscale'
                   }`}
                 >
                   <span className="text-2xl">{badge.emoji}</span>
-                  <p className="text-xs font-semibold leading-tight">{badge.title}</p>
-                  <p className="text-xs text-muted-foreground leading-tight">{badge.description}</p>
+                  <p className="text-sm font-semibold leading-tight">{badge.title}</p>
+                  <p className="text-sm text-muted-foreground leading-tight">{badge.description}</p>
                   {badge.earned && badge.earnedAt && (
-                    <p className="text-xs text-amber-600 dark:text-amber-400 mt-0.5">
+                    <p className="text-sm text-warn-foreground mt-0.5">
                       {new Date(badge.earnedAt).toLocaleDateString('en-US', { day: 'numeric', month: 'short' })}
                     </p>
                   )}
@@ -374,7 +374,7 @@ export default function Profile() {
                 className="w-full justify-between h-11"
                 onClick={() => navigate('/my-requests')}
               >
-                <span className="flex items-center gap-2 text-sm">
+                <span className="flex items-center gap-2 text-base">
                   <MessageSquare className="h-4 w-4 text-primary" />
                   My Help Requests
                 </span>
@@ -385,7 +385,7 @@ export default function Profile() {
                 className="w-full justify-between h-11"
                 onClick={() => navigate('/guides')}
               >
-                <span className="flex items-center gap-2 text-sm">
+                <span className="flex items-center gap-2 text-base">
                   <BookOpen className="h-4 w-4 text-primary" />
                   Browse Free Guides
                 </span>
@@ -396,7 +396,7 @@ export default function Profile() {
                 className="w-full justify-between h-11"
                 onClick={() => navigate('/get-help')}
               >
-                <span className="flex items-center gap-2 text-sm">
+                <span className="flex items-center gap-2 text-base">
                   <Shield className="h-4 w-4 text-primary" />
                   Get Tech Help
                 </span>

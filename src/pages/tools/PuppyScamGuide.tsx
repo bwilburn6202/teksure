@@ -16,17 +16,17 @@ export default function PuppyScamGuide() {
           <p className="text-lg text-muted-foreground">No puppy. Just heartbreak and lost money.</p>
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The numbers</h2>
-            <p className="text-sm">Better Business Bureau says 80% of sponsored search ads for puppies online are scams. Average loss: $850. The puppy never existed. Photos were stolen from real breeders.</p>
+            <p className="text-base">Better Business Bureau says 80% of sponsored search ads for puppies online are scams. Average loss: $850. The puppy never existed. Photos were stolen from real breeders.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How the scam works</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Beautiful puppy photos online. Suspiciously low price.</li>
               <li>"Breeder" emails or texts only. Never video chat.</li>
               <li>Asks for deposit. Then "shipping fee".</li>
@@ -40,7 +40,7 @@ export default function PuppyScamGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Price way below typical for breed (real Frenchie = $3,000+, scammers offer $500).</li>
               <li>Refuses to video chat with the puppy.</li>
               <li>Won&apos;t let you visit in person.</li>
@@ -56,7 +56,7 @@ export default function PuppyScamGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to find a real puppy/pet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Petfinder.com</strong> + <strong>AdoptaPet.com</strong> — verified shelters and rescues.</li>
               <li><strong>Local shelter or humane society</strong> — visit in person.</li>
               <li><strong>Breed-specific rescue</strong> — search "[breed] rescue near me".</li>
@@ -70,7 +70,7 @@ export default function PuppyScamGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reverse image search</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Save the puppy photo from the listing.</li>
               <li>Go to <strong>images.google.com</strong>.</li>
               <li>Click the camera icon. Upload the photo.</li>
@@ -83,7 +83,7 @@ export default function PuppyScamGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you sent money</h3>
-            <p className="text-sm text-muted-foreground">Report at <strong>petscams.com</strong>, <strong>BBB.org</strong>, and <strong>reportfraud.ftc.gov</strong>. Credit card payments can sometimes be reversed. Wire/gift card almost never. Tell the platform (Facebook Marketplace, Craigslist) so the listing comes down.</p>
+            <p className="text-base text-muted-foreground">Report at <strong>petscams.com</strong>, <strong>BBB.org</strong>, and <strong>reportfraud.ftc.gov</strong>. Credit card payments can sometimes be reversed. Wire/gift card almost never. Tell the platform (Facebook Marketplace, Craigslist) so the listing comes down.</p>
           </CardContent>
         </Card>
       </main>

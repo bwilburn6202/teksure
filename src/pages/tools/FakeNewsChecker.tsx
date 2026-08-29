@@ -302,7 +302,7 @@ export default function FakeNewsChecker() {
       <main id="main-content" className="container py-12 min-h-[80vh] max-w-3xl mx-auto">
         {/* ── Hero ── */}
         <section
-          className="relative text-center mb-10 rounded-3xl p-8 sm:p-10 border-2 border-emerald-200 dark:border-emerald-900 bg-gradient-to-br from-emerald-50 via-green-50 to-teal-50 dark:from-emerald-950/40 dark:via-green-950/30 dark:to-teal-950/40"
+          className="relative text-center mb-10 rounded-3xl p-8 sm:p-10 border-2 border-success-foreground/25 bg-gradient-to-br from-emerald-50 via-green-50 to-teal-50 dark:from-emerald-950/40 dark:via-green-950/30 dark:to-teal-950/40"
         >
           <div className="absolute right-4 top-4 print:hidden">
             <BookmarkButton
@@ -312,14 +312,14 @@ export default function FakeNewsChecker() {
               url="/tools/fake-news-checker"
             />
           </div>
-          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-emerald-100 text-emerald-700 dark:bg-emerald-900/50 dark:text-emerald-200 mb-5">
+          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-success text-success-foreground mb-5">
             <div className="relative">
               <Newspaper className="h-12 w-12" aria-hidden="true" />
-              <ShieldCheck className="h-6 w-6 absolute -bottom-1 -right-1 text-emerald-700 dark:text-emerald-200" aria-hidden="true" />
+              <ShieldCheck className="h-6 w-6 absolute -bottom-1 -right-1 text-success-foreground " aria-hidden="true" />
             </div>
           </div>
           <Badge className="mb-4 bg-emerald-600 hover:bg-emerald-600 text-white">New</Badge>
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 text-emerald-900 dark:text-emerald-100">
+          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 text-success-foreground ">
             Is This News Real?
           </h1>
           <p className="text-lg sm:text-xl text-emerald-900/90 dark:text-emerald-100/90 max-w-xl mx-auto leading-relaxed">
@@ -338,7 +338,7 @@ export default function FakeNewsChecker() {
               size="lg"
               variant="outline"
               onClick={resetChecklist}
-              className="gap-2 min-h-14 text-base border-emerald-300 text-emerald-800 dark:text-emerald-200 dark:border-emerald-700"
+              className="gap-2 min-h-14 text-base border-success-foreground/25 text-success-foreground "
             >
               <Eye className="h-5 w-5" aria-hidden="true" />
               Reset checklist
@@ -351,11 +351,11 @@ export default function FakeNewsChecker() {
           <CardContent className="p-5 sm:p-6">
             <div className="flex items-center justify-between gap-3 mb-4 flex-wrap">
               <h2 className="text-2xl font-bold flex items-center gap-2">
-                <CheckCircle2 className="h-7 w-7 text-emerald-600 dark:text-emerald-400" aria-hidden="true" />
+                <CheckCircle2 className="h-7 w-7 text-success-foreground " aria-hidden="true" />
                 Your 10-step fake news checklist
               </h2>
               <span
-                className="text-base font-semibold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 rounded-full px-3 py-1"
+                className="text-base font-semibold text-success-foreground bg-success border border-success-foreground/25 rounded-full px-3 py-1"
                 aria-live="polite"
               >
                 {doneCount} of {CHECKLIST.length} done
@@ -374,7 +374,7 @@ export default function FakeNewsChecker() {
                       htmlFor={id}
                       className={`flex items-start gap-3 p-4 rounded-xl border-2 cursor-pointer transition-colors min-h-14 ${
                         isChecked
-                          ? 'bg-emerald-50 border-emerald-300 dark:bg-emerald-950/30 dark:border-emerald-800'
+                          ? 'bg-emerald-50 border-success-foreground/25 dark:bg-emerald-950/30 dark:border-emerald-800'
                           : 'bg-background border-border hover:bg-muted/40'
                       }`}
                     >
@@ -410,18 +410,18 @@ export default function FakeNewsChecker() {
         </Card>
 
         {/* ── Bias vs. falsehood card ── */}
-        <Card className="mb-8 border-2 border-sky-300 bg-sky-50/70 dark:bg-sky-950/30 dark:border-sky-800">
+        <Card className="mb-8 border-2 border-info-foreground/25 bg-sky-50/70 dark:bg-sky-950/30 ">
           <CardContent className="p-5 sm:p-6">
-            <h2 className="text-2xl font-bold mb-3 flex items-center gap-2 text-sky-900 dark:text-sky-200">
+            <h2 className="text-2xl font-bold mb-3 flex items-center gap-2 text-info-foreground ">
               <Scale className="h-7 w-7" aria-hidden="true" />
               Biased is not the same as fake
             </h2>
             <p className="text-base text-sky-900/90 dark:text-sky-100/90 leading-relaxed mb-4">
               Every outlet has a lean — a point of view on what stories matter and how to tell them. That's different from making things up. A reliable-but-slanted source can still have the facts right. A "neutral" source can still get a story wrong. Your job is to read critically, not pick a team.
             </p>
-            <div className="rounded-xl bg-white/70 dark:bg-background border border-sky-200 dark:border-sky-800 p-4 mb-4">
-              <p className="text-sm font-semibold text-sky-900 dark:text-sky-200 mb-2 uppercase tracking-wide">A rough reliability ladder</p>
-              <ol className="space-y-2 text-base text-sky-900 dark:text-sky-100">
+            <div className="rounded-xl bg-white/70 dark:bg-background border border-info-foreground/25 p-4 mb-4">
+              <p className="text-sm font-semibold text-info-foreground mb-2 uppercase tracking-wide">A rough reliability ladder</p>
+              <ol className="space-y-2 text-base text-info-foreground ">
                 <li className="flex items-start gap-2">
                   <span className="shrink-0 inline-flex items-center justify-center h-6 w-6 rounded-full bg-emerald-600 text-white font-bold text-xs">1</span>
                   <span><strong>Least biased:</strong> AP, Reuters, BBC, NPR news desk.</span>
@@ -452,7 +452,7 @@ export default function FakeNewsChecker() {
                 href="https://mediabiasfactcheck.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                className="inline-flex items-center gap-2 text-base font-semibold text-sky-700 dark:text-sky-300 hover:underline"
+                className="inline-flex items-center gap-2 text-base font-semibold text-info-foreground hover:underline"
               >
                 Look up an outlet at Media Bias / Fact Check
                 <ExternalLink className="h-4 w-4" aria-hidden="true" />
@@ -462,17 +462,17 @@ export default function FakeNewsChecker() {
         </Card>
 
         {/* ── Red flags ── */}
-        <Card className="mb-8 border-2 border-red-300 bg-red-50 dark:bg-red-950/30 dark:border-red-800">
+        <Card className="mb-8 border-2 border-danger-foreground/25 bg-danger ">
           <CardContent className="p-5 sm:p-6">
-            <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-red-900 dark:text-red-200">
+            <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-danger-foreground ">
               <ShieldAlert className="h-7 w-7" aria-hidden="true" />
               10 red flags of fake news
             </h2>
             <ul className="space-y-3">
               {RED_FLAGS.map((flag, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <XCircle className="h-5 w-5 text-red-600 dark:text-red-400 shrink-0 mt-1" aria-hidden="true" />
-                  <span className="text-base text-red-900 dark:text-red-100 leading-relaxed">{flag}</span>
+                  <XCircle className="h-5 w-5 text-danger-foreground shrink-0 mt-1" aria-hidden="true" />
+                  <span className="text-base text-danger-foreground leading-relaxed">{flag}</span>
                 </li>
               ))}
             </ul>
@@ -480,9 +480,9 @@ export default function FakeNewsChecker() {
         </Card>
 
         {/* ── Check before you share ── */}
-        <Card className="mb-8 border-2 border-amber-300 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-800">
+        <Card className="mb-8 border-2 border-warn-foreground/25 bg-warn ">
           <CardContent className="p-5 sm:p-6">
-            <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-amber-900 dark:text-amber-200">
+            <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-warn-foreground ">
               <Share2 className="h-7 w-7" aria-hidden="true" />
               Check before you share — 4 quick steps
             </h2>
@@ -492,7 +492,7 @@ export default function FakeNewsChecker() {
                   <span className="shrink-0 inline-flex items-center justify-center h-8 w-8 rounded-full bg-amber-600 text-white font-bold text-base">
                     {i + 1}
                   </span>
-                  <span className="text-base sm:text-lg text-amber-900 dark:text-amber-100 leading-relaxed pt-1">
+                  <span className="text-base sm:text-lg text-warn-foreground leading-relaxed pt-1">
                     {step}
                   </span>
                 </li>
@@ -523,7 +523,7 @@ export default function FakeNewsChecker() {
                     <ExternalLink className="h-5 w-5 text-primary shrink-0 mt-0.5" aria-hidden="true" />
                     <div className="flex-1 min-w-0">
                       <p className="text-base font-semibold text-foreground">{r.label}</p>
-                      {r.note && <p className="text-sm text-muted-foreground mt-0.5 leading-snug">{r.note}</p>}
+                      {r.note && <p className="text-base text-muted-foreground mt-0.5 leading-snug">{r.note}</p>}
                     </div>
                   </a>
                 </li>
@@ -563,7 +563,7 @@ export default function FakeNewsChecker() {
                     <p className="text-base font-semibold text-fuchsia-900 dark:text-fuchsia-100 inline-flex items-center gap-1.5">
                       {t.label} <ExternalLink className="h-4 w-4" aria-hidden="true" />
                     </p>
-                    {t.note && <p className="text-xs text-fuchsia-900/80 dark:text-fuchsia-100/80 mt-0.5">{t.note}</p>}
+                    {t.note && <p className="text-sm text-fuchsia-900/80 dark:text-fuchsia-100/80 mt-0.5">{t.note}</p>}
                   </a>
                 </li>
               ))}
@@ -571,14 +571,14 @@ export default function FakeNewsChecker() {
             <div className="flex flex-wrap gap-3">
               <Link
                 to="/tools/is-this-real"
-                className="inline-flex items-center gap-2 rounded-xl border-2 border-fuchsia-300 dark:border-fuchsia-700 bg-white dark:bg-background px-4 py-3 text-base font-semibold text-fuchsia-900 dark:text-fuchsia-100 hover:bg-fuchsia-100 dark:hover:bg-fuchsia-950/40 min-h-14"
+                className="inline-flex items-center gap-2 rounded-xl border-2 border-fuchsia-300 dark:border-fuchsia-700 bg-card dark:bg-background px-4 py-3 text-base font-semibold text-fuchsia-900 dark:text-fuchsia-100 hover:bg-fuchsia-100 dark:hover:bg-fuchsia-950/40 min-h-14"
               >
                 <Eye className="h-5 w-5" aria-hidden="true" />
                 Open Is This Real?
               </Link>
               <Link
                 to="/deepfake-defense-hub"
-                className="inline-flex items-center gap-2 rounded-xl border-2 border-fuchsia-300 dark:border-fuchsia-700 bg-white dark:bg-background px-4 py-3 text-base font-semibold text-fuchsia-900 dark:text-fuchsia-100 hover:bg-fuchsia-100 dark:hover:bg-fuchsia-950/40 min-h-14"
+                className="inline-flex items-center gap-2 rounded-xl border-2 border-fuchsia-300 dark:border-fuchsia-700 bg-card dark:bg-background px-4 py-3 text-base font-semibold text-fuchsia-900 dark:text-fuchsia-100 hover:bg-fuchsia-100 dark:hover:bg-fuchsia-950/40 min-h-14"
               >
                 <ShieldCheck className="h-5 w-5" aria-hidden="true" />
                 Deepfake Defense Hub
@@ -623,9 +623,9 @@ export default function FakeNewsChecker() {
         </Card>
 
         {/* ── Family sharing card ── */}
-        <Card className="mb-8 border-2 border-rose-300 bg-rose-50 dark:bg-rose-950/30 dark:border-rose-800">
+        <Card className="mb-8 border-2 border-danger-foreground/25 bg-danger ">
           <CardContent className="p-5 sm:p-6">
-            <h2 className="text-2xl font-bold mb-3 flex items-center gap-2 text-rose-900 dark:text-rose-200">
+            <h2 className="text-2xl font-bold mb-3 flex items-center gap-2 text-danger-foreground ">
               <Heart className="h-7 w-7" aria-hidden="true" />
               My family member keeps sharing fake news — what do I do?
             </h2>
@@ -635,8 +635,8 @@ export default function FakeNewsChecker() {
             <ul className="space-y-3">
               {FAMILY_ADVICE.map((tip, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <Users className="h-5 w-5 text-rose-600 dark:text-rose-400 shrink-0 mt-1" aria-hidden="true" />
-                  <span className="text-base text-rose-900 dark:text-rose-100 leading-relaxed">{tip}</span>
+                  <Users className="h-5 w-5 text-danger-foreground shrink-0 mt-1" aria-hidden="true" />
+                  <span className="text-base text-danger-foreground leading-relaxed">{tip}</span>
                 </li>
               ))}
             </ul>
@@ -647,16 +647,16 @@ export default function FakeNewsChecker() {
         </Card>
 
         {/* ── Senior safety tips ── */}
-        <Alert className="mb-8 border-2 border-amber-300 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-800">
-          <ShieldAlert className="h-6 w-6 text-amber-700 dark:text-amber-400" aria-hidden="true" />
-          <AlertTitle className="text-lg font-bold text-amber-900 dark:text-amber-200">
+        <Alert className="mb-8 border-2 border-warn-foreground/25 bg-warn ">
+          <ShieldAlert className="h-6 w-6 text-warn-foreground " aria-hidden="true" />
+          <AlertTitle className="text-lg font-bold text-warn-foreground ">
             Heads up — scammers disguise scams as news
           </AlertTitle>
           <AlertDescription className="text-base text-amber-900/90 dark:text-amber-100/90 leading-relaxed">
             <ul className="space-y-2 mt-2">
               {SENIOR_TIPS.map((tip, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <Flag className="h-5 w-5 text-amber-700 dark:text-amber-400 shrink-0 mt-1" aria-hidden="true" />
+                  <Flag className="h-5 w-5 text-warn-foreground shrink-0 mt-1" aria-hidden="true" />
                   <span>{tip}</span>
                 </li>
               ))}
@@ -664,14 +664,14 @@ export default function FakeNewsChecker() {
             <div className="flex flex-wrap gap-3 mt-4">
               <Link
                 to="/tools/is-this-real"
-                className="inline-flex items-center gap-2 rounded-xl border-2 border-amber-300 dark:border-amber-700 bg-white dark:bg-background px-4 py-3 text-base font-semibold text-amber-900 dark:text-amber-100 hover:bg-amber-100 dark:hover:bg-amber-950/40 min-h-14"
+                className="inline-flex items-center gap-2 rounded-xl border-2 border-warn-foreground/25 bg-card dark:bg-background px-4 py-3 text-base font-semibold text-warn-foreground hover:bg-warn min-h-14"
               >
                 <Eye className="h-5 w-5" aria-hidden="true" />
                 Is This Real?
               </Link>
               <Link
                 to="/tools/scam-simulator"
-                className="inline-flex items-center gap-2 rounded-xl border-2 border-amber-300 dark:border-amber-700 bg-white dark:bg-background px-4 py-3 text-base font-semibold text-amber-900 dark:text-amber-100 hover:bg-amber-100 dark:hover:bg-amber-950/40 min-h-14"
+                className="inline-flex items-center gap-2 rounded-xl border-2 border-warn-foreground/25 bg-card dark:bg-background px-4 py-3 text-base font-semibold text-warn-foreground hover:bg-warn min-h-14"
               >
                 <ShieldAlert className="h-5 w-5" aria-hidden="true" />
                 Scam Simulator
@@ -703,9 +703,9 @@ export default function FakeNewsChecker() {
         </Card>
 
         {/* ── Related tools ── */}
-        <Card className="mb-8 border-2 border-emerald-300 bg-emerald-50/60 dark:bg-emerald-950/20 dark:border-emerald-800">
+        <Card className="mb-8 border-2 border-success-foreground/25 bg-emerald-50/60 dark:bg-emerald-950/20 ">
           <CardContent className="p-5 sm:p-6">
-            <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-emerald-900 dark:text-emerald-200">
+            <h2 className="text-2xl font-bold mb-4 flex items-center gap-2 text-success-foreground ">
               <ArrowUpRight className="h-7 w-7" aria-hidden="true" />
               Related TekSure tools
             </h2>
@@ -714,10 +714,10 @@ export default function FakeNewsChecker() {
                 <Link
                   key={i}
                   to={r.to}
-                  className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-emerald-50 dark:hover:bg-emerald-950/20 transition-colors p-4 min-h-[4.5rem]"
+                  className="block rounded-xl border-2 border-border bg-background hover:border-emerald-400 hover:bg-success transition-colors p-4 min-h-[4.5rem]"
                 >
                   <p className="font-semibold text-base mb-1 text-foreground">{r.label}</p>
-                  <p className="text-sm text-muted-foreground leading-snug">{r.desc}</p>
+                  <p className="text-base text-muted-foreground leading-snug">{r.desc}</p>
                 </Link>
               ))}
             </div>
@@ -725,9 +725,9 @@ export default function FakeNewsChecker() {
         </Card>
 
         {/* ── Golden rule ── */}
-        <Alert className="mb-8 border-2 border-emerald-300 bg-emerald-50 dark:bg-emerald-950/30 dark:border-emerald-800">
-          <AlertTriangle className="h-6 w-6 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
-          <AlertTitle className="text-lg font-bold text-emerald-900 dark:text-emerald-200">
+        <Alert className="mb-8 border-2 border-success-foreground/25 bg-success ">
+          <AlertTriangle className="h-6 w-6 text-success-foreground " aria-hidden="true" />
+          <AlertTitle className="text-lg font-bold text-success-foreground ">
             The golden rule
           </AlertTitle>
           <AlertDescription className="text-base text-emerald-900/90 dark:text-emerald-100/90 leading-relaxed">
@@ -742,12 +742,12 @@ export default function FakeNewsChecker() {
         >
           <div className="mb-4">
             <h2 className="text-2xl font-bold mb-1">TekSure Fake News Pocket Guide</h2>
-            <p className="text-sm text-muted-foreground">teksure.com/tools/fake-news-checker</p>
+            <p className="text-base text-muted-foreground">teksure.com/tools/fake-news-checker</p>
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div>
               <p className="text-base font-bold mb-2">10-step checklist</p>
-              <ol className="list-decimal pl-5 space-y-1 text-sm">
+              <ol className="list-decimal pl-5 space-y-1 text-base">
                 {CHECKLIST.map((item, i) => (
                   <li key={i}>
                     <span className="font-semibold">{item.title}</span>
@@ -757,19 +757,19 @@ export default function FakeNewsChecker() {
             </div>
             <div>
               <p className="text-base font-bold mb-2">Red flags</p>
-              <ul className="list-disc pl-5 space-y-1 text-sm">
+              <ul className="list-disc pl-5 space-y-1 text-base">
                 {RED_FLAGS.slice(0, 6).map((f, i) => (
                   <li key={i}>{f}</li>
                 ))}
               </ul>
               <p className="text-base font-bold mt-3 mb-2">Check before you share</p>
-              <ol className="list-decimal pl-5 space-y-1 text-sm">
+              <ol className="list-decimal pl-5 space-y-1 text-base">
                 {SHARE_STEPS.map((s, i) => (
                   <li key={i}>{s}</li>
                 ))}
               </ol>
               <p className="text-base font-bold mt-3 mb-2">Fact-check sites</p>
-              <p className="text-sm leading-snug">
+              <p className="text-base leading-snug">
                 snopes.com · politifact.com · factcheck.org · reuters.com/fact-check · apnews.com · mediabiasfactcheck.com
               </p>
             </div>

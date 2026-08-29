@@ -19,7 +19,7 @@ export default function PrintableHobby3D() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best beginner printers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Bambu Lab A1</strong> — $400. Easiest. Plug in + print.</li>
               <li><strong>Bambu Lab P1S</strong> — $700. Better quality.</li>
               <li><strong>Prusa Mini+</strong> — $440. Reliable, smaller.</li>
@@ -32,7 +32,7 @@ export default function PrintableHobby3D() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What seniors print</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adaptive grip aids (jar openers, etc.).</li>
               <li>Replacement parts for old appliances.</li>
               <li>Christmas ornaments (custom for grandkids).</li>
@@ -48,7 +48,7 @@ export default function PrintableHobby3D() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">No design skills needed</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Thingiverse</strong> — millions of FREE 3D files.</li>
               <li><strong>Printables.com</strong> — Prusa community files.</li>
               <li><strong>MakerWorld</strong> — Bambu community.</li>
@@ -61,7 +61,7 @@ export default function PrintableHobby3D() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Costs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Printer $250-700.</li>
               <li>Filament: $20-30 per kg (most prints under $1 in material).</li>
               <li>Electricity: pennies per print.</li>
@@ -75,7 +75,7 @@ export default function PrintableHobby3D() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Try before buying</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Library 3D printers (many libraries have).</li>
               <li>Maker spaces.</li>
               <li>Community college classes.</li>
@@ -89,7 +89,7 @@ export default function PrintableHobby3D() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free + paid resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>3D Print General</strong> YouTube — best beginner channel. <strong>CHEP</strong> YouTube — calibration help. <strong>Reddit r/3Dprinting</strong> — friendly community. <strong>Bambu Lab forums</strong>. Endless free learning. Hobby that engages mind + creativity. Many retirees love it.</p>
+            <p className="text-base text-muted-foreground"><strong>3D Print General</strong> YouTube — best beginner channel. <strong>CHEP</strong> YouTube — calibration help. <strong>Reddit r/3Dprinting</strong> — friendly community. <strong>Bambu Lab forums</strong>. Endless free learning. Hobby that engages mind + creativity. Many retirees love it.</p>
           </CardContent>
         </Card>
       </main>

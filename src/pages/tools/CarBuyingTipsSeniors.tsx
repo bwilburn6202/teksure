@@ -19,7 +19,7 @@ export default function CarBuyingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best senior cars 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Toyota Camry / RAV4</strong> — reliable.</li>
               <li><strong>Honda Accord / CR-V</strong> — reliable.</li>
               <li><strong>Subaru Outback / Forester</strong> — high seat, AWD.</li>
@@ -33,7 +33,7 @@ export default function CarBuyingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior must-haves</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Backup camera (required 2018+).</li>
               <li>Blind spot warning.</li>
               <li>Lane departure warning.</li>
@@ -48,7 +48,7 @@ export default function CarBuyingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Research first</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Consumer Reports</strong> — reliability rankings.</li>
               <li><strong>Edmunds.com</strong> — true cost to own.</li>
               <li><strong>KBB.com</strong> — fair price.</li>
@@ -62,7 +62,7 @@ export default function CarBuyingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">New vs certified used</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>New car — 20% depreciation year 1.</li>
               <li>2-3 year certified pre-owned — sweet spot.</li>
               <li>Manufacturer-certified = warranty.</li>
@@ -76,7 +76,7 @@ export default function CarBuyingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Negotiation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Get quotes from 3+ dealers.</li>
               <li>Email negotiate first.</li>
               <li>Avoid &quot;dealer add-ons&quot;.</li>
@@ -91,7 +91,7 @@ export default function CarBuyingTipsSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Avoid scams</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Limited time only&quot; pressure = walk away.</li>
               <li>&quot;Yours today only&quot; = lie.</li>
               <li>VIN-etching ($300) = scam.</li>
@@ -106,7 +106,7 @@ export default function CarBuyingTipsSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior discount</h3>
-            <p className="text-sm text-muted-foreground">AARP — auto buying program. AAA member discounts. Costco Auto Program — pre-negotiated prices. Senior trade-in often higher value (better-maintained). Insurance senior discount — 5-10%. Geico, State Farm rate retired drivers favorably. Driver education course = insurance discount.</p>
+            <p className="text-base text-muted-foreground">AARP — auto buying program. AAA member discounts. Costco Auto Program — pre-negotiated prices. Senior trade-in often higher value (better-maintained). Insurance senior discount — 5-10%. Geico, State Farm rate retired drivers favorably. Driver education course = insurance discount.</p>
           </CardContent>
         </Card>
       </main>

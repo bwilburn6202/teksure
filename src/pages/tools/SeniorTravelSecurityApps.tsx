@@ -22,7 +22,7 @@ export default function SeniorTravelSecurityApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Travel.State.Gov</h2><p>FREE. Country-specific safety information.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Photograph documents</h2><p>Passport, insurance card, IDs. Email to yourself. Backup if stolen.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hidden money</h2><p>Money belt, hidden pocket. Don&apos;t keep all cash in wallet.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: STEP enrollment essential. Free. State Dept rescues American seniors abroad.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: STEP enrollment essential. Free. State Dept rescues American seniors abroad.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

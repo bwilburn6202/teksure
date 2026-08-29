@@ -53,9 +53,9 @@ export default function DigitalFootprintScan() {
 
         <div className="container max-w-2xl mx-auto px-4 py-8">
           {/* Privacy note */}
-          <div className="flex items-start gap-2 p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 mb-6">
-            <Info className="h-4 w-4 text-blue-600 shrink-0 mt-0.5" aria-hidden="true" />
-            <p className="text-xs text-blue-700 dark:text-blue-300">
+          <div className="flex items-start gap-2 p-3 rounded-lg bg-info border border-info-foreground/25 mb-6">
+            <Info className="h-4 w-4 text-info-foreground shrink-0 mt-0.5" aria-hidden="true" />
+            <p className="text-sm text-info-foreground ">
               <strong>Your privacy:</strong> Your email is sent to the Have I Been Pwned service through our secure server to look up known breaches. We do not store, share, or email you. Results are cached for 24 hours to save on repeat checks.
             </p>
           </div>
@@ -64,7 +64,7 @@ export default function DigitalFootprintScan() {
           {!result && (
             <Card className="border-border shadow-sm mb-6">
               <CardContent className="p-6">
-                <label className="block text-sm font-medium mb-2" htmlFor="email-input">
+                <label className="block text-base font-medium mb-2" htmlFor="email-input">
                   Enter your email address
                 </label>
                 <div className="flex gap-2">
@@ -100,7 +100,7 @@ export default function DigitalFootprintScan() {
                     )}
                   </Button>
                 </div>
-                <p className="text-xs text-muted-foreground mt-3">
+                <p className="text-sm text-muted-foreground mt-3">
                   Tip: you can check any email you own — yourself, a family member (with permission), or an old account you stopped using.
                 </p>
               </CardContent>
@@ -119,16 +119,16 @@ export default function DigitalFootprintScan() {
                     What to do next
                   </p>
                   {result.verdict === 'safe' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       No known breaches have exposed this address. Keep using a strong, unique password for every site — and turn on two-step verification where you can.
                     </p>
                   )}
                   {(result.verdict === 'caution' || result.verdict === 'danger') && (
                     <div className="space-y-3">
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         Your email has appeared in one or more data breaches. Here's the plain-English checklist:
                       </p>
-                      <ol className="space-y-2 text-sm text-muted-foreground list-decimal pl-5">
+                      <ol className="space-y-2 text-base text-muted-foreground list-decimal pl-5">
                         <li>
                           <strong>Change your password</strong> on every account that uses this email — starting with your bank, main email, and anything with payment cards saved.
                         </li>
@@ -145,7 +145,7 @@ export default function DigitalFootprintScan() {
                     </div>
                   )}
                   {result.verdict === 'unknown' && (
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       We couldn't reach the breach database right now. Try again in a few minutes, or strengthen your account anyway — strong unique passwords and two-step verification are always a win.
                     </p>
                   )}
@@ -171,9 +171,9 @@ export default function DigitalFootprintScan() {
               <CardContent className="p-5">
                 <div className="flex items-center gap-2 mb-3">
                   <BookOpen className="h-4 w-4 text-primary" aria-hidden="true" />
-                  <p className="text-sm font-medium">Why check your email?</p>
+                  <p className="text-base font-medium">Why check your email?</p>
                 </div>
-                <p className="text-xs text-muted-foreground leading-relaxed">
+                <p className="text-sm text-muted-foreground leading-relaxed">
                   Big websites sometimes get hacked, and when they do, usernames and passwords can end up for sale online. Scammers use those lists to try to break into other accounts that share the same password. Knowing which of your accounts have been exposed tells you exactly where to update your password first.
                 </p>
               </CardContent>

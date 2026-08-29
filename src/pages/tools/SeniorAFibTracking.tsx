@@ -22,7 +22,7 @@ export default function SeniorAFibTracking() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why critical</h2><p>AFib increases stroke risk 5x. Often silent. Tracking saves lives.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share with doctor</h2><p>Apps email PDF reports. Show during cardiology visits.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Symptoms</h2><p>Skipped beats, fluttering, lightheaded. Use device when symptoms occur.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Many seniors discover AFib only when wearing Apple Watch. Lifesaver.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Many seniors discover AFib only when wearing Apple Watch. Lifesaver.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

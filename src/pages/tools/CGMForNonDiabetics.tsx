@@ -19,7 +19,7 @@ export default function CGMForNonDiabetics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What CGM shows</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Glucose every 5 minutes, 24/7.</li>
               <li>Spikes from food.</li>
               <li>Energy crashes.</li>
@@ -34,7 +34,7 @@ export default function CGMForNonDiabetics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">2024+ over-the-counter CGMs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Stelo (Dexcom)</strong> — $89/2 sensors. NO prescription needed.</li>
               <li><strong>Lingo (Abbott)</strong> — $99/sensor. NO prescription.</li>
               <li>14-day sensor.</li>
@@ -48,7 +48,7 @@ export default function CGMForNonDiabetics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior insights</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>White rice / bread spike huge for seniors.</li>
               <li>Walking 10 min after meals = much lower spike.</li>
               <li>Eating protein first = lower spike.</li>
@@ -63,7 +63,7 @@ export default function CGMForNonDiabetics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Prediabetes prevention</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>50% of seniors have prediabetes.</li>
               <li>Most don&apos;t know.</li>
               <li>CGM catches issues before A1C blood test.</li>
@@ -77,7 +77,7 @@ export default function CGMForNonDiabetics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apply sensor to back of arm (painless).</li>
               <li>Lasts 14 days.</li>
               <li>Pair with phone app.</li>
@@ -92,7 +92,7 @@ export default function CGMForNonDiabetics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Caution</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Not medical advice — just data.</li>
               <li>Don&apos;t obsess over readings.</li>
               <li>Some people develop anxiety / disordered eating.</li>
@@ -106,7 +106,7 @@ export default function CGMForNonDiabetics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Future of senior health</h3>
-            <p className="text-sm text-muted-foreground">Personalized health = data + action. CGM cheap + accessible 2024+. Apple/Samsung adding non-invasive glucose to watches eventually. Smart rings adding too. Tracking your body = key to aging well. Many seniors lose 10-20 lbs + reverse prediabetes after 1 month with CGM.</p>
+            <p className="text-base text-muted-foreground">Personalized health = data + action. CGM cheap + accessible 2024+. Apple/Samsung adding non-invasive glucose to watches eventually. Smart rings adding too. Tracking your body = key to aging well. Many seniors lose 10-20 lbs + reverse prediabetes after 1 month with CGM.</p>
           </CardContent>
         </Card>
       </main>

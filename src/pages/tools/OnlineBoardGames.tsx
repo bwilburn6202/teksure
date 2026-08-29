@@ -33,10 +33,10 @@ export default function OnlineBoardGames() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -45,7 +45,7 @@ export default function OnlineBoardGames() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For grandkids specifically</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Words With Friends</strong> — easy app on any phone.</li>
               <li><strong>Chess.com</strong> — set lessons + play together.</li>
               <li><strong>Boardgame Arena</strong> — play Ticket to Ride, Catan during video call.</li>
@@ -59,7 +59,7 @@ export default function OnlineBoardGames() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best Sunday ritual</h3>
-            <p className="text-sm text-muted-foreground">Schedule a weekly Words With Friends or Chess game with one friend or grandchild. Once-a-week move-and-respond stays connected without long phone calls. After a year, you\'ve stayed close in a way that holiday cards never managed.</p>
+            <p className="text-base text-muted-foreground">Schedule a weekly Words With Friends or Chess game with one friend or grandchild. Once-a-week move-and-respond stays connected without long phone calls. After a year, you\'ve stayed close in a way that holiday cards never managed.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorPreparedMeals() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Silver Cuisine</h2><p>$18/meal. BistroMD-quality. Senior portions.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare Advantage benefit</h2><p>Many cover post-hospital meals. Free 28 meals.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Costco frozen</h2><p>Stouffers, Healthy Choice. Heat in 5 min. Cheaper than meal services.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Mom&apos;s Meals often free post-hospital. Worth asking discharge nurse.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Mom&apos;s Meals often free post-hospital. Worth asking discharge nurse.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

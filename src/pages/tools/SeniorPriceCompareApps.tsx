@@ -22,7 +22,7 @@ export default function SeniorPriceCompareApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">PriceGrabber</h2><p>FREE. Compare across multiple US retailers.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Slickdeals</h2><p>FREE. Community-found deals. $20-$200 off common products.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">CamelCamelCamel chrome</h2><p>FREE browser extension. Shows Amazon price history on every product page.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 5 minutes of comparison saves $20+ on most $100 purchases.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 5 minutes of comparison saves $20+ on most $100 purchases.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

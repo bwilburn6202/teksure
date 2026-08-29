@@ -1232,7 +1232,7 @@ export default function StateBenefitsFinder() {
         {/* "Don't leave money on the table" alert */}
         <section className="container py-8 md:py-10">
           <Alert className="border-emerald-500/60 bg-emerald-50/60 dark:bg-emerald-950/20">
-            <DollarSign className="h-5 w-5 text-emerald-700 dark:text-emerald-400" />
+            <DollarSign className="h-5 w-5 text-success-foreground " />
             <AlertTitle className="text-lg md:text-xl font-semibold">
               Don&apos;t leave money on the table
             </AlertTitle>
@@ -1644,7 +1644,7 @@ export default function StateBenefitsFinder() {
           <div className="container py-10 md:py-14">
             <div className="mb-6">
               <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-                <ShieldAlert className="w-7 h-7 text-red-600 dark:text-red-400" />
+                <ShieldAlert className="w-7 h-7 text-danger-foreground " />
                 Red flags — scams that target people applying for benefits
               </h2>
               <p className="text-base md:text-lg text-muted-foreground max-w-3xl leading-relaxed">
@@ -1657,12 +1657,12 @@ export default function StateBenefitsFinder() {
                 <ul className="space-y-3">
                   {RED_FLAGS.map((r) => (
                     <li key={r} className="flex gap-3 text-base leading-relaxed">
-                      <AlertTriangle className="w-5 h-5 text-red-700 dark:text-red-400 shrink-0 mt-0.5" />
+                      <AlertTriangle className="w-5 h-5 text-danger-foreground shrink-0 mt-0.5" />
                       <span>{r}</span>
                     </li>
                   ))}
                 </ul>
-                <div className="mt-5 pt-5 border-t border-red-200 dark:border-red-900">
+                <div className="mt-5 pt-5 border-t border-danger-foreground/25 ">
                   <p className="text-base md:text-lg leading-relaxed">
                     Not sure if a website or caller is real?{' '}
                     <Link

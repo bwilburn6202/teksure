@@ -113,16 +113,16 @@ function analyzeUrl(raw: string): { results: CheckResult[]; verdict: Severity; s
 
 function VerdictBadge({ verdict }: { verdict: Severity }) {
   const styles = {
-    safe: { wrap: 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-800', icon: <ShieldCheck className="h-6 w-6 text-emerald-600" />, title: 'Looks OK', text: 'No common red flags. Still — only scan QR codes from trusted sources.', titleClass: 'text-emerald-900 dark:text-emerald-100', textClass: 'text-emerald-800/80 dark:text-emerald-200/80' },
-    caution: { wrap: 'bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-800', icon: <AlertTriangle className="h-6 w-6 text-amber-600" />, title: 'Proceed with caution', text: 'Some warning signs. Verify the source before continuing.', titleClass: 'text-amber-900 dark:text-amber-100', textClass: 'text-amber-800/80 dark:text-amber-200/80' },
-    danger: { wrap: 'bg-red-50 dark:bg-red-950/30 border-red-200 dark:border-red-800', icon: <ShieldAlert className="h-6 w-6 text-red-600" />, title: 'Red flags detected', text: 'Multiple warning signs — we recommend you do not visit this link.', titleClass: 'text-red-900 dark:text-red-100', textClass: 'text-red-800/80 dark:text-red-200/80' },
+    safe: { wrap: 'bg-emerald-50 dark:bg-emerald-950/30 border-emerald-200 dark:border-emerald-800', icon: <ShieldCheck className="h-6 w-6 text-success-foreground" />, title: 'Looks OK', text: 'No common red flags. Still — only scan QR codes from trusted sources.', titleClass: 'text-emerald-900 dark:text-emerald-100', textClass: 'text-emerald-800/80 dark:text-emerald-200/80' },
+    caution: { wrap: 'bg-amber-50 dark:bg-amber-950/30 border-amber-200 dark:border-amber-800', icon: <AlertTriangle className="h-6 w-6 text-warn-foreground" />, title: 'Proceed with caution', text: 'Some warning signs. Verify the source before continuing.', titleClass: 'text-amber-900 dark:text-amber-100', textClass: 'text-amber-800/80 dark:text-amber-200/80' },
+    danger: { wrap: 'bg-red-50 dark:bg-red-950/30 border-red-200 dark:border-red-800', icon: <ShieldAlert className="h-6 w-6 text-danger-foreground" />, title: 'Red flags detected', text: 'Multiple warning signs — we recommend you do not visit this link.', titleClass: 'text-red-900 dark:text-red-100', textClass: 'text-red-800/80 dark:text-red-200/80' },
   }[verdict];
   return (
     <div className={`flex items-center gap-3 p-4 rounded-xl border ${styles.wrap}`}>
       <div className="flex-shrink-0">{styles.icon}</div>
       <div>
         <p className={`font-semibold ${styles.titleClass}`}>{styles.title}</p>
-        <p className={`text-sm ${styles.textClass}`}>{styles.text}</p>
+        <p className={`text-base ${styles.textClass}`}>{styles.text}</p>
       </div>
     </div>
   );
@@ -184,8 +184,8 @@ export default function QrCodeExplainer() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-purple-50 dark:bg-purple-950/30 flex items-center justify-center flex-shrink-0">
-                <QrCode className="h-6 w-6 text-purple-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <QrCode className="h-6 w-6 text-primary" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -201,22 +201,22 @@ export default function QrCodeExplainer() {
           <Card>
             <CardHeader>
               <CardTitle className="text-lg flex items-center gap-2">
-                <Smartphone className="h-5 w-5 text-purple-600" aria-hidden="true" />
+                <Smartphone className="h-5 w-5 text-primary" aria-hidden="true" />
                 3 Ways to Check a QR Code Before Scanning
               </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="rounded-lg border p-4">
-                <p className="font-semibold text-sm mb-1">On iPhone</p>
-                <p className="text-sm text-muted-foreground">Open the Camera app and point it at the QR code. iOS shows the URL as a banner first — it does not open automatically. Read the URL. If it looks wrong, do not tap.</p>
+                <p className="font-semibold text-base mb-1">On iPhone</p>
+                <p className="text-base text-muted-foreground">Open the Camera app and point it at the QR code. iOS shows the URL as a banner first — it does not open automatically. Read the URL. If it looks wrong, do not tap.</p>
               </div>
               <div className="rounded-lg border p-4">
-                <p className="font-semibold text-sm mb-1">On Android</p>
-                <p className="text-sm text-muted-foreground">Use Google Lens (built into the Camera app on most Androids). It previews the URL before opening. If your phone auto-opens links, switch to Lens for QR codes.</p>
+                <p className="font-semibold text-base mb-1">On Android</p>
+                <p className="text-base text-muted-foreground">Use Google Lens (built into the Camera app on most Androids). It previews the URL before opening. If your phone auto-opens links, switch to Lens for QR codes.</p>
               </div>
               <div className="rounded-lg border p-4">
-                <p className="font-semibold text-sm mb-1">Use a desktop QR decoder</p>
-                <p className="text-sm text-muted-foreground">If you suspect a QR is malicious, take a photo and upload it to a decoder website like qrserver.com or qr.io on a computer. Read the URL there before deciding to visit.</p>
+                <p className="font-semibold text-base mb-1">Use a desktop QR decoder</p>
+                <p className="text-base text-muted-foreground">If you suspect a QR is malicious, take a photo and upload it to a decoder website like qrserver.com or qr.io on a computer. Read the URL there before deciding to visit.</p>
               </div>
             </CardContent>
           </Card>
@@ -262,11 +262,11 @@ export default function QrCodeExplainer() {
                   {analysis.results.map((r, i) => (
                     <div key={i} className="flex gap-3 p-3 rounded-lg border">
                       <div className="flex-shrink-0 mt-0.5">
-                        {r.passed ? <Check className="h-5 w-5 text-emerald-600" /> : r.weight === 2 ? <X className="h-5 w-5 text-red-600" /> : <AlertTriangle className="h-5 w-5 text-amber-600" />}
+                        {r.passed ? <Check className="h-5 w-5 text-success-foreground" /> : r.weight === 2 ? <X className="h-5 w-5 text-danger-foreground" /> : <AlertTriangle className="h-5 w-5 text-warn-foreground" />}
                       </div>
                       <div>
-                        <p className="font-medium text-sm">{r.label}</p>
-                        <p className="text-sm text-muted-foreground">{r.detail}</p>
+                        <p className="font-medium text-base">{r.label}</p>
+                        <p className="text-base text-muted-foreground">{r.detail}</p>
                       </div>
                     </div>
                   ))}
@@ -281,8 +281,8 @@ export default function QrCodeExplainer() {
             <CardContent className="space-y-3">
               {QR_SCAMS.map((s) => (
                 <div key={s.title} className="rounded-lg border p-4">
-                  <p className="font-semibold text-sm mb-1">{s.title}</p>
-                  <p className="text-sm text-muted-foreground">{s.detail}</p>
+                  <p className="font-semibold text-base mb-1">{s.title}</p>
+                  <p className="text-base text-muted-foreground">{s.detail}</p>
                 </div>
               ))}
             </CardContent>
@@ -294,10 +294,10 @@ export default function QrCodeExplainer() {
             <CardContent className="space-y-3">
               {SAFE_CASES.map((s) => (
                 <div key={s.title} className="flex gap-3">
-                  <Check className="h-5 w-5 text-emerald-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <Check className="h-5 w-5 text-success-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                   <div>
-                    <p className="font-semibold text-sm">{s.title}</p>
-                    <p className="text-sm text-muted-foreground">{s.detail}</p>
+                    <p className="font-semibold text-base">{s.title}</p>
+                    <p className="text-base text-muted-foreground">{s.detail}</p>
                   </div>
                 </div>
               ))}
@@ -305,13 +305,13 @@ export default function QrCodeExplainer() {
           </Card>
 
           {/* Skip it if */}
-          <Card className="border-red-200 dark:border-red-800/50">
-            <CardHeader><CardTitle className="text-lg flex items-center gap-2"><AlertTriangle className="h-5 w-5 text-red-600" aria-hidden="true" /> Skip it if...</CardTitle></CardHeader>
+          <Card className="border-danger-foreground/25 ">
+            <CardHeader><CardTitle className="text-lg flex items-center gap-2"><AlertTriangle className="h-5 w-5 text-danger-foreground" aria-hidden="true" /> Skip it if...</CardTitle></CardHeader>
             <CardContent>
               <ul className="space-y-2">
                 {RED_FLAGS.map((f) => (
-                  <li key={f} className="flex gap-2 text-sm">
-                    <X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                  <li key={f} className="flex gap-2 text-base">
+                    <X className="h-4 w-4 text-danger-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <span>{f}</span>
                   </li>
                 ))}
@@ -321,7 +321,7 @@ export default function QrCodeExplainer() {
 
           <div className="text-sm text-muted-foreground">
             Want a deeper link check?{' '}
-            <a href="/tools/url-safety-checker" className="text-blue-600 hover:underline inline-flex items-center gap-1">
+            <a href="/tools/url-safety-checker" className="text-info-foreground hover:underline inline-flex items-center gap-1">
               Try the URL Safety Checker <ExternalLink className="h-3 w-3" aria-hidden="true" />
             </a>
           </div>

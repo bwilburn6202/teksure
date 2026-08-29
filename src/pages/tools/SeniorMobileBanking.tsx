@@ -22,7 +22,7 @@ export default function SeniorMobileBanking() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Set transaction alerts</h2><p>Get a text any time over $50 is spent. Catches fraud fast.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Never click links</h2><p>If you get a text or email, open the bank app yourself. Never tap suspicious links.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lock the app</h2><p>Set a 4-digit PIN even after Face ID. Two layers protect against scammers.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Banks NEVER call asking for your password. If they do — hang up and call the number on your card.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Banks NEVER call asking for your password. If they do — hang up and call the number on your card.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

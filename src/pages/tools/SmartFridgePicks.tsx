@@ -19,7 +19,7 @@ export default function SmartFridgePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Honest assessment</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smart fridges are 80% gimmick.</li>
               <li>Touch screens fail before fridge dies.</li>
               <li>Apps stop being supported after 5 yrs.</li>
@@ -33,7 +33,7 @@ export default function SmartFridgePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Genuinely useful features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Internal cameras</strong> — see what&apos;s inside without opening (saves trip to store).</li>
               <li><strong>Door-in-door</strong> — minimize air loss.</li>
               <li><strong>Counter-depth</strong> — kitchen doesn&apos;t feel cramped.</li>
@@ -46,7 +46,7 @@ export default function SmartFridgePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Skip these features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Recipe display on door — nobody uses.</li>
               <li>Calendar / family bulletin — phone better.</li>
               <li>TV streaming on fridge — silly.</li>
@@ -60,7 +60,7 @@ export default function SmartFridgePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best non-smart picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>LG counter-depth</strong> — quiet, reliable. $1,500-2,500.</li>
               <li><strong>Whirlpool 25 cu ft</strong> — basic + reliable. $1,000-1,500.</li>
               <li><strong>GE Profile</strong> — beautiful + lasts. $2,000-3,000.</li>
@@ -73,7 +73,7 @@ export default function SmartFridgePicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>French door (2 short doors) easier than full door.</li>
               <li>Bottom freezer = bend less.</li>
               <li>Counter-depth = less protrusion.</li>
@@ -87,7 +87,7 @@ export default function SmartFridgePicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Replace timing</h3>
-            <p className="text-sm text-muted-foreground">Fridges last 12-15 years. New efficient model saves $50-100/yr energy. Best deals: Memorial Day, Black Friday, Labor Day. Costco has best appliance bundles + delivery + haul-away. Avoid extended warranty — usually waste of $.</p>
+            <p className="text-base text-muted-foreground">Fridges last 12-15 years. New efficient model saves $50-100/yr energy. Best deals: Memorial Day, Black Friday, Labor Day. Costco has best appliance bundles + delivery + haul-away. Avoid extended warranty — usually waste of $.</p>
           </CardContent>
         </Card>
       </main>

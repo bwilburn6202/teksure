@@ -19,7 +19,7 @@ export default function AirbnbHostingForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spare room option</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Rent guest room when not used.</li>
               <li>$50-$200/night typical.</li>
               <li>Meet interesting travelers.</li>
@@ -33,7 +33,7 @@ export default function AirbnbHostingForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Whole property</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Vacation home rental.</li>
               <li>$100-$500+/night.</li>
               <li>Hire cleaning service between.</li>
@@ -47,7 +47,7 @@ export default function AirbnbHostingForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup process</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>List on Airbnb (free).</li>
               <li>Photograph well.</li>
               <li>Set price + availability.</li>
@@ -61,7 +61,7 @@ export default function AirbnbHostingForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Verify guests carefully.</li>
               <li>Check reviews + ID.</li>
               <li>Lock private areas.</li>
@@ -75,7 +75,7 @@ export default function AirbnbHostingForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tax + legal</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Income reportable on taxes.</li>
               <li>Some states require permits.</li>
               <li>HOA may forbid rentals.</li>
@@ -89,7 +89,7 @@ export default function AirbnbHostingForRetirees() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">VRBO alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>VRBO — whole-home only.</li>
               <li>Older demographic guests.</li>
               <li>More family travelers.</li>
@@ -103,7 +103,7 @@ export default function AirbnbHostingForRetirees() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Spare room low-risk start</h3>
-            <p className="text-sm text-muted-foreground">For seniors with empty nest, renting one room on Airbnb is low-risk way to earn $1,000-$3,000/month. You meet the guests + can decline anyone. Many retired hosts love the income + social connection. Use Airbnb&apos;s host insurance + verify guests. Test the waters before committing to whole-home rental.</p>
+            <p className="text-base text-muted-foreground">For seniors with empty nest, renting one room on Airbnb is low-risk way to earn $1,000-$3,000/month. You meet the guests + can decline anyone. Many retired hosts love the income + social connection. Use Airbnb&apos;s host insurance + verify guests. Test the waters before committing to whole-home rental.</p>
           </CardContent>
         </Card>
       </main>

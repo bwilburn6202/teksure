@@ -22,7 +22,7 @@ export default function SeniorWeatherStations() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><p>Indoor temp matters for health. Outdoor for gardening. Frost warnings save plants.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cheap option</h2><p>$50 indoor/outdoor thermometer. Big display. No Wi-Fi.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Share weather</h2><p>Tempest and AcuRite can share to Weather Underground. Help neighbors.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Weather station + smart sprinkler = efficient watering.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Weather station + smart sprinkler = efficient watering.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

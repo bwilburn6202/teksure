@@ -36,32 +36,32 @@ export default function TempUnitConverter() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Temperature Unit Converter | TekSure" description="Convert between Fahrenheit and Celsius. Body temperature, weather, cooking — instant two-way conversion." />
       <div className="max-w-xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Thermometer className="h-7 w-7 text-orange-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Temperature Converter</h1>
+            <Thermometer className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Temperature Converter</h1>
           </div>
-          <p className="text-gray-600 text-lg">Type into either box. The other one updates instantly.</p>
+          <p className="text-muted-foreground text-lg">Type into either box. The other one updates instantly.</p>
         </div>
         <Card>
           <CardContent className="py-6 px-4 space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-[1fr_auto_1fr] gap-4 items-center">
               <div>
-                <label className="text-base font-medium text-gray-700">Fahrenheit (°F)</label>
+                <label className="text-base font-medium text-foreground">Fahrenheit (°F)</label>
                 <Input type="number" step="0.1" placeholder="98.6" value={fahrenheit} onChange={e => fromF(e.target.value)} className="mt-1 text-2xl text-center h-14" />
               </div>
-              <ArrowLeftRight className="h-6 w-6 text-gray-400 mx-auto" />
+              <ArrowLeftRight className="h-6 w-6 text-muted-foreground mx-auto" />
               <div>
-                <label className="text-base font-medium text-gray-700">Celsius (°C)</label>
+                <label className="text-base font-medium text-foreground">Celsius (°C)</label>
                 <Input type="number" step="0.1" placeholder="37" value={celsius} onChange={e => fromC(e.target.value)} className="mt-1 text-2xl text-center h-14" />
               </div>
             </div>
             {context && (
-              <div className="text-center bg-blue-50 border border-blue-200 rounded-md py-2 px-3">
-                <p className="text-sm text-blue-800 font-medium">{context}</p>
+              <div className="text-center bg-info border border-info-foreground/25 rounded-md py-2 px-3">
+                <p className="text-base text-info-foreground font-medium">{context}</p>
               </div>
             )}
           </CardContent>
@@ -73,17 +73,17 @@ export default function TempUnitConverter() {
           </CardHeader>
           <CardContent>
             <div className="space-y-1 text-sm">
-              <p><span className="text-gray-500">Freezing point of water:</span> <span className="font-mono">32°F = 0°C</span></p>
-              <p><span className="text-gray-500">Normal body temperature:</span> <span className="font-mono">98.6°F = 37°C</span></p>
-              <p><span className="text-gray-500">Fever threshold (CDC):</span> <span className="font-mono">100.4°F = 38°C</span></p>
-              <p><span className="text-gray-500">Comfortable room:</span> <span className="font-mono">72°F = 22.2°C</span></p>
-              <p><span className="text-gray-500">Hot summer day:</span> <span className="font-mono">90°F = 32.2°C</span></p>
-              <p><span className="text-gray-500">Boiling point of water:</span> <span className="font-mono">212°F = 100°C</span></p>
-              <p><span className="text-gray-500">Bake a cake:</span> <span className="font-mono">350°F = 177°C</span></p>
+              <p><span className="text-muted-foreground">Freezing point of water:</span> <span className="font-mono">32°F = 0°C</span></p>
+              <p><span className="text-muted-foreground">Normal body temperature:</span> <span className="font-mono">98.6°F = 37°C</span></p>
+              <p><span className="text-muted-foreground">Fever threshold (CDC):</span> <span className="font-mono">100.4°F = 38°C</span></p>
+              <p><span className="text-muted-foreground">Comfortable room:</span> <span className="font-mono">72°F = 22.2°C</span></p>
+              <p><span className="text-muted-foreground">Hot summer day:</span> <span className="font-mono">90°F = 32.2°C</span></p>
+              <p><span className="text-muted-foreground">Boiling point of water:</span> <span className="font-mono">212°F = 100°C</span></p>
+              <p><span className="text-muted-foreground">Bake a cake:</span> <span className="font-mono">350°F = 177°C</span></p>
             </div>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

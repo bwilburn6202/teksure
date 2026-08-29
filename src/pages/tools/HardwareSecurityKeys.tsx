@@ -19,7 +19,7 @@ export default function HardwareSecurityKeys() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What they are</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Small USB key (size of car key).</li>
               <li>Plug into computer or tap to phone (NFC).</li>
               <li>Login requires the physical key.</li>
@@ -33,7 +33,7 @@ export default function HardwareSecurityKeys() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">YubiKey 5 Series</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$50–$70 — gold standard.</li>
               <li>YubiKey 5C NFC — most popular.</li>
               <li>USB-C + NFC tap to iPhone.</li>
@@ -47,7 +47,7 @@ export default function HardwareSecurityKeys() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Google Titan</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$30 — Google&apos;s alternative.</li>
               <li>Bluetooth + USB versions.</li>
               <li>Works smoothly with Google accounts.</li>
@@ -61,7 +61,7 @@ export default function HardwareSecurityKeys() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Buy two keys</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One primary — keep on keychain.</li>
               <li>One backup — in fireproof safe at home.</li>
               <li>Without backup, lost key = locked out.</li>
@@ -75,7 +75,7 @@ export default function HardwareSecurityKeys() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for these accounts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Email — your master key.</li>
               <li>Investment accounts.</li>
               <li>Major bank accounts.</li>
@@ -89,7 +89,7 @@ export default function HardwareSecurityKeys() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup process</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Login to account.</li>
               <li>Settings → Security → 2-Step Verification.</li>
               <li>Add Security Key option.</li>
@@ -103,7 +103,7 @@ export default function HardwareSecurityKeys() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Worth it for major accounts</h3>
-            <p className="text-sm text-muted-foreground">For most seniors, a YubiKey 5C NFC + a backup ($120 total) protects email, banking, and investment accounts at the highest level available. If hackers steal your password, they STILL can&apos;t get in without the physical key. Many financial advisors recommend this for clients with significant assets. Yes, $120 — but compared to losing a $200,000 retirement account to fraud, it&apos;s the cheapest insurance you&apos;ll ever buy.</p>
+            <p className="text-base text-muted-foreground">For most seniors, a YubiKey 5C NFC + a backup ($120 total) protects email, banking, and investment accounts at the highest level available. If hackers steal your password, they STILL can&apos;t get in without the physical key. Many financial advisors recommend this for clients with significant assets. Yes, $120 — but compared to losing a $200,000 retirement account to fraud, it&apos;s the cheapest insurance you&apos;ll ever buy.</p>
           </CardContent>
         </Card>
       </main>

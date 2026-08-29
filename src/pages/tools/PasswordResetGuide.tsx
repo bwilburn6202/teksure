@@ -224,80 +224,80 @@ export default function PasswordResetGuide() {
         title="Password Reset Guide — TekSure"
         description="Forgot your password? Pick the service you're locked out of — Gmail, Facebook, Amazon, Apple ID, and more — and get step-by-step reset instructions."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4">
+      <main className="min-h-screen bg-muted py-8 px-4">
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-violet-100 dark:bg-violet-950/60 mb-4">
-              <KeyRound className="w-8 h-8 text-violet-600 dark:text-violet-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-4">
+              <KeyRound className="w-8 h-8 text-primary " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Password Reset Guide</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Password Reset Guide</h1>
+            <p className="text-lg text-muted-foreground ">
               Pick the service you're locked out of — we'll walk you through the reset steps.
             </p>
           </div>
 
           {/* Scam warning */}
-          <div className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-xl p-4 mb-5">
+          <div className="bg-warn border border-warn-foreground/25 rounded-xl p-4 mb-5">
             <div className="flex items-start gap-2">
-              <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" />
-              <p className="text-sm text-amber-800 dark:text-amber-200">
+              <AlertTriangle className="w-5 h-5 text-warn-foreground flex-shrink-0 mt-0.5" />
+              <p className="text-base text-warn-foreground ">
                 <span className="font-semibold">Before you start:</span> Only reset your password using the company's own official website or app. Never click a "reset your password" link in an email you did not request — that is a common scam. If you did not ask for a reset email, ignore it.
               </p>
             </div>
           </div>
 
           {!selected ? (
-            <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
-              <p className="font-semibold text-gray-900 dark:text-gray-100 mb-4 text-lg">Which account are you locked out of?</p>
+            <div className="bg-card rounded-2xl border border-border p-5 shadow-sm">
+              <p className="font-semibold text-foreground mb-4 text-lg">Which account are you locked out of?</p>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                 {SERVICE_LIST.map(s => (
                   <button
                     key={s.key}
                     onClick={() => setSelected(s.key)}
-                    className="flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-violet-500 hover:bg-violet-50 dark:hover:bg-violet-950/30 transition-all text-center"
+                    className="flex flex-col items-center gap-2 p-4 rounded-xl border-2 border-border hover:border-violet-500 hover:bg-primary/10 transition-all text-center"
                   >
                     <span className="text-3xl">{s.emoji}</span>
-                    <span className="text-sm font-semibold text-gray-800 dark:text-gray-200 leading-tight">{s.name}</span>
+                    <span className="text-base font-semibold text-foreground leading-tight">{s.name}</span>
                   </button>
                 ))}
               </div>
             </div>
           ) : guide ? (
             <>
-              <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
+              <div className="bg-card rounded-2xl border border-border p-5 shadow-sm">
                 <div className="flex items-center gap-3 mb-5">
                   <span className="text-3xl">{guide.emoji}</span>
                   <div>
-                    <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100">{guide.name}</h2>
+                    <h2 className="text-xl font-bold text-foreground ">{guide.name}</h2>
                     {guide.loginUrl && (
-                      <p className="text-sm text-violet-600 dark:text-violet-400">{guide.loginUrl}</p>
+                      <p className="text-base text-primary ">{guide.loginUrl}</p>
                     )}
                   </div>
                 </div>
 
                 {guide.warning && (
-                  <div className="bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 rounded-lg p-3 mb-4">
-                    <p className="text-sm text-red-800 dark:text-red-200"><span className="font-semibold">Warning:</span> {guide.warning}</p>
+                  <div className="bg-danger border border-danger-foreground/25 rounded-lg p-3 mb-4">
+                    <p className="text-base text-danger-foreground "><span className="font-semibold">Warning:</span> {guide.warning}</p>
                   </div>
                 )}
 
-                <h3 className="font-semibold text-gray-900 dark:text-gray-100 mb-3">Steps to reset your password</h3>
+                <h3 className="font-semibold text-foreground mb-3">Steps to reset your password</h3>
                 <ol className="space-y-3 mb-5">
                   {guide.steps.map((step, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-violet-100 dark:bg-violet-950/50 text-violet-700 dark:text-violet-300 text-xs font-bold flex items-center justify-center mt-0.5">
+                      <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary text-xs font-bold flex items-center justify-center mt-0.5">
                         {i + 1}
                       </span>
-                      <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{step}</p>
+                      <p className="text-base text-foreground leading-relaxed">{step}</p>
                     </li>
                   ))}
                 </ol>
 
-                <div className="bg-violet-50 dark:bg-violet-950/30 border border-violet-200 dark:border-violet-800 rounded-lg p-3 mb-4">
-                  <p className="text-sm font-semibold text-violet-800 dark:text-violet-200 mb-1">Recovery options for {guide.name}</p>
+                <div className="bg-primary/10 border border-primary/25 rounded-lg p-3 mb-4">
+                  <p className="text-base font-semibold text-primary mb-1">Recovery options for {guide.name}</p>
                   <ul className="space-y-1">
                     {guide.recoverOptions.map((opt, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-violet-700 dark:text-violet-300">
+                      <li key={i} className="flex items-start gap-2 text-base text-primary ">
                         <span className="flex-shrink-0 mt-0.5">→</span>
                         {opt}
                       </li>
@@ -305,16 +305,16 @@ export default function PasswordResetGuide() {
                   </ul>
                 </div>
 
-                <div className="bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-lg p-3">
-                  <p className="text-sm text-blue-800 dark:text-blue-200">{guide.tip}</p>
+                <div className="bg-info border border-info-foreground/25 rounded-lg p-3">
+                  <p className="text-base text-info-foreground ">{guide.tip}</p>
                 </div>
               </div>
 
               {/* After-reset tip */}
-              <div className="mt-4 bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-800 rounded-xl p-4">
+              <div className="mt-4 bg-success border border-success-foreground/25 rounded-xl p-4">
                 <div className="flex items-start gap-2">
-                  <ShieldCheck className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
-                  <p className="text-sm text-green-800 dark:text-green-200">
+                  <ShieldCheck className="w-5 h-5 text-success-foreground flex-shrink-0 mt-0.5" />
+                  <p className="text-base text-success-foreground ">
                     <span className="font-semibold">After you reset:</span> Write your new password down in a safe place — a notebook kept in your home. Do not store passwords in a text message or email. A free password manager like Bitwarden can also store them securely for you.
                   </p>
                 </div>
@@ -323,13 +323,13 @@ export default function PasswordResetGuide() {
               <div className="mt-4 flex items-center gap-3">
                 <button
                   onClick={() => setSelected(null)}
-                  className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+                  className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground "
                 >
                   <ChevronLeft className="w-4 h-4" /> Back to service list
                 </button>
                 <button
                   onClick={() => setSelected(null)}
-                  className="ml-auto flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+                  className="ml-auto flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground "
                 >
                   <RotateCcw className="w-3.5 h-3.5" /> Start Over
                 </button>
@@ -337,7 +337,7 @@ export default function PasswordResetGuide() {
             </>
           ) : null}
         </div>
-      </div>
+      </main>
     </>
   );
 }

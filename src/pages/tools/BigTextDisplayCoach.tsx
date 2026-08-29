@@ -31,8 +31,8 @@ export default function BigTextDisplayCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Before you start</h2>
-            <p className="text-sm">All of these are FREE and built into your phone. Nothing to download. You can change any setting back at any time.</p>
-            <ul className="text-sm mt-2 list-disc pl-5">
+            <p className="text-base">All of these are FREE and built into your phone. Nothing to download. You can change any setting back at any time.</p>
+            <ul className="text-base mt-2 list-disc pl-5">
               {tweaks.map((t, i) => <li key={i}><strong>{t.name}</strong> — {t.why}</li>)}
             </ul>
           </CardContent>
@@ -78,7 +78,7 @@ export default function BigTextDisplayCoach() {
               <Eye className="w-6 h-6 text-muted-foreground shrink-0" />
               <div>
                 <h3 className="font-bold mb-1">Don't forget your computer</h3>
-                <p className="text-sm text-muted-foreground">On a Mac: System Settings → Accessibility → Display. On Windows: Settings → Accessibility → Text size. Same idea, even bigger payoff for long sessions.</p>
+                <p className="text-base text-muted-foreground">On a Mac: System Settings → Accessibility → Display. On Windows: Settings → Accessibility → Text size. Same idea, even bigger payoff for long sessions.</p>
               </div>
             </div>
           </CardContent>

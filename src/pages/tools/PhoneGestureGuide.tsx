@@ -250,29 +250,29 @@ export default function PhoneGestureGuide() {
         title="Phone Gesture Guide — TekSure"
         description="Tap, double-tap, swipe up, pinch — what every gesture on your iPhone or Android phone does. Plain-English reference for seniors."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4">
+      <main className="min-h-screen bg-muted py-8 px-4">
         <div className="max-w-2xl mx-auto">
           {/* Header */}
           <div className="text-center mb-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-teal-100 dark:bg-teal-950/60 mb-4">
-              <Hand className="w-8 h-8 text-teal-600 dark:text-teal-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-success mb-4">
+              <Hand className="w-8 h-8 text-success-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Phone Gesture Guide</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Phone Gesture Guide</h1>
+            <p className="text-lg text-muted-foreground ">
               Tap, swipe, pinch — what every gesture on your phone does, explained in plain English.
             </p>
           </div>
 
           {/* Search + filters */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-4 shadow-sm mb-4">
+          <div className="bg-card rounded-2xl border border-border p-4 shadow-sm mb-4">
             <div className="relative mb-3">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
               <input
                 type="text"
                 placeholder="Search gestures (e.g. 'swipe', 'screenshot')"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 outline-none focus:border-teal-400"
+                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-muted border border-border text-foreground outline-none focus:border-teal-400"
               />
             </div>
             <div className="flex flex-wrap gap-2">
@@ -283,7 +283,7 @@ export default function PhoneGestureGuide() {
                   className={`text-sm px-3 py-1.5 rounded-full transition-colors ${
                     category === c
                       ? 'bg-teal-600 text-white'
-                      : 'bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700'
+                      : 'bg-gray-100 dark:bg-gray-800 text-muted-foreground hover:bg-gray-200 dark:hover:bg-gray-700'
                   }`}
                 >
                   {c}
@@ -301,7 +301,7 @@ export default function PhoneGestureGuide() {
                 className={`flex-1 py-2 rounded-xl text-sm font-medium transition-colors ${
                   platform === p
                     ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900'
-                    : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700'
+                    : 'bg-white dark:bg-gray-800 text-muted-foreground border border-border dark:border-gray-700'
                 }`}
               >
                 {p === 'both' ? 'Both Phones' : p === 'iPhone' ? '🍎 iPhone' : '🤖 Android'}
@@ -309,7 +309,7 @@ export default function PhoneGestureGuide() {
             ))}
           </div>
 
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-3">
+          <p className="text-base text-muted-foreground mb-3">
             {filtered.length} gesture{filtered.length === 1 ? '' : 's'}
           </p>
 
@@ -318,32 +318,32 @@ export default function PhoneGestureGuide() {
             {filtered.map(g => {
               const isOpen = expanded === g.id;
               return (
-                <div key={g.id} className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 overflow-hidden shadow-sm">
+                <div key={g.id} className="bg-card rounded-2xl border border-border overflow-hidden shadow-sm">
                   <button
                     onClick={() => toggle(g.id)}
-                    className="w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+                    className="w-full flex items-center gap-4 px-5 py-4 text-left hover:bg-muted transition-colors"
                   >
                     <span className="text-3xl flex-shrink-0">{g.emoji}</span>
                     <div className="flex-1 min-w-0">
-                      <p className="font-semibold text-gray-900 dark:text-gray-100">{g.name}</p>
-                      <p className="text-sm text-gray-500 dark:text-gray-400">{g.motion}</p>
+                      <p className="font-semibold text-foreground ">{g.name}</p>
+                      <p className="text-base text-muted-foreground ">{g.motion}</p>
                     </div>
-                    {isOpen ? <ChevronUp className="w-5 h-5 text-gray-400" /> : <ChevronDown className="w-5 h-5 text-gray-400" />}
+                    {isOpen ? <ChevronUp className="w-5 h-5 text-muted-foreground" /> : <ChevronDown className="w-5 h-5 text-muted-foreground" />}
                   </button>
                   {isOpen && (
-                    <div className="px-5 pb-5 border-t border-gray-100 dark:border-gray-800 pt-4 space-y-3">
+                    <div className="px-5 pb-5 border-t border-border pt-4 space-y-3">
                       {(platform === 'both' || platform === 'iPhone') && (
-                        <div className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-4">
-                          <p className="font-semibold text-gray-800 dark:text-gray-200 mb-2 text-sm">🍎 On iPhone</p>
-                          <p className="text-sm text-gray-700 dark:text-gray-300 mb-2"><strong>What it does:</strong> {g.iphone.what}</p>
-                          <p className="text-sm text-gray-600 dark:text-gray-400"><strong>How:</strong> {g.iphone.how}</p>
+                        <div className="bg-muted rounded-xl p-4">
+                          <p className="font-semibold text-foreground mb-2 text-base">🍎 On iPhone</p>
+                          <p className="text-base text-foreground mb-2"><strong>What it does:</strong> {g.iphone.what}</p>
+                          <p className="text-base text-muted-foreground "><strong>How:</strong> {g.iphone.how}</p>
                         </div>
                       )}
                       {(platform === 'both' || platform === 'Android') && (
-                        <div className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-4">
-                          <p className="font-semibold text-gray-800 dark:text-gray-200 mb-2 text-sm">🤖 On Android</p>
-                          <p className="text-sm text-gray-700 dark:text-gray-300 mb-2"><strong>What it does:</strong> {g.android.what}</p>
-                          <p className="text-sm text-gray-600 dark:text-gray-400"><strong>How:</strong> {g.android.how}</p>
+                        <div className="bg-muted rounded-xl p-4">
+                          <p className="font-semibold text-foreground mb-2 text-base">🤖 On Android</p>
+                          <p className="text-base text-foreground mb-2"><strong>What it does:</strong> {g.android.what}</p>
+                          <p className="text-base text-muted-foreground "><strong>How:</strong> {g.android.how}</p>
                         </div>
                       )}
                     </div>
@@ -354,13 +354,13 @@ export default function PhoneGestureGuide() {
           </div>
 
           {/* Footer note */}
-          <div className="mt-6 bg-teal-50 dark:bg-teal-950/30 border border-teal-200 dark:border-teal-800 rounded-xl p-4 text-center">
-            <p className="text-sm text-teal-800 dark:text-teal-200">
+          <div className="mt-6 bg-success border border-success-foreground/25 rounded-xl p-4 text-center">
+            <p className="text-base text-success-foreground ">
               <strong>Quick Tip:</strong> Practice each gesture a few times when you have a quiet moment — they become automatic with repetition.
             </p>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }

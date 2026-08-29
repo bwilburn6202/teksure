@@ -28,7 +28,7 @@ export default function SmartThermostatCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why upgrade</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Auto-adjusts when you\'re away (saves 8-15% on heat/cool).</li>
               <li>Sense room temperature, not just hallway temp.</li>
               <li>Alerts on weird usage spikes — caught early HVAC failures.</li>
@@ -44,10 +44,10 @@ export default function SmartThermostatCoach() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,7 +56,7 @@ export default function SmartThermostatCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install (DIY)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Turn OFF power to HVAC at breaker.</li>
               <li>Photograph current thermostat\'s wiring (so you can replicate).</li>
               <li>Remove old thermostat (2 screws).</li>
@@ -72,7 +72,7 @@ export default function SmartThermostatCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Recommendation</h3>
-            <p className="text-sm text-muted-foreground"><strong>Ecobee Smart Enhanced</strong> for most homes. Best balance of features and price. Pair with utility rebate to bring net cost to $50-100.</p>
+            <p className="text-base text-muted-foreground"><strong>Ecobee Smart Enhanced</strong> for most homes. Best balance of features and price. Pair with utility rebate to bring net cost to $50-100.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function RothConversionCalculators() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Roth conversion?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Move money from Traditional IRA to Roth IRA.</li>
               <li>Pay taxes on conversion now.</li>
               <li>Tax-free growth + withdrawals later.</li>
@@ -33,7 +33,7 @@ export default function RothConversionCalculators() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free calculators</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fidelity Roth Conversion calculator — free.</li>
               <li>Schwab Roth IRA Conversion — free.</li>
               <li>NewRetirement.com — free + paid.</li>
@@ -47,7 +47,7 @@ export default function RothConversionCalculators() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When conversion makes sense</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Income lower in retirement than working years.</li>
               <li>Years between retirement + 73 (RMD age).</li>
               <li>Want to leave tax-free inheritance.</li>
@@ -61,7 +61,7 @@ export default function RothConversionCalculators() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When NOT to convert</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Need to pay taxes from IRA itself (defeats purpose).</li>
               <li>Already in highest tax bracket.</li>
               <li>Plan to leave to charity (charity pays no tax).</li>
@@ -75,7 +75,7 @@ export default function RothConversionCalculators() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Watch IRMAA</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Income-Related Monthly Adjustment Amount.</li>
               <li>High income raises Medicare premiums.</li>
               <li>Big Roth conversions can trigger.</li>
@@ -89,7 +89,7 @@ export default function RothConversionCalculators() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Talk to professional</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free consultations from Fidelity/Schwab/Vanguard.</li>
               <li>Or pay fee-only fiduciary advisor.</li>
               <li>One-time advice often worth $500–$1,500.</li>
@@ -103,7 +103,7 @@ export default function RothConversionCalculators() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pre-RMD years are golden</h3>
-            <p className="text-sm text-muted-foreground">For most retirees, the years between retirement (62–67) and RMDs (73) are the prime Roth conversion window. Lower income years before Social Security maximizes. Convert just enough each year to fill up your current tax bracket. Run Fidelity&apos;s free calculator. Talk to a fee-only advisor for personalized strategy.</p>
+            <p className="text-base text-muted-foreground">For most retirees, the years between retirement (62–67) and RMDs (73) are the prime Roth conversion window. Lower income years before Social Security maximizes. Convert just enough each year to fill up your current tax bracket. Run Fidelity&apos;s free calculator. Talk to a fee-only advisor for personalized strategy.</p>
           </CardContent>
         </Card>
       </main>

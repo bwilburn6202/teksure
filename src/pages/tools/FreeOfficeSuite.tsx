@@ -116,7 +116,7 @@ export default function FreeOfficeSuite() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <FileText className="h-8 w-8 text-blue-600" />
+                <FileText className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Free Office Suite Picker</h1>
@@ -131,8 +131,8 @@ export default function FreeOfficeSuite() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">For most people, the answer is Google Docs</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">For most people, the answer is Google Docs</p>
+              <p className="text-sm text-muted-foreground">
                 Free, works on every device, auto-saves, opens Word and Excel files. Unless you have a specific reason to use something else (Apple-only home, employer requires Microsoft), Google Docs handles 90% of what most home users do.
               </p>
             </CardContent>
@@ -146,19 +146,19 @@ export default function FreeOfficeSuite() {
                     <p className="font-semibold text-base">{s.name}</p>
                     <Badge variant="outline">{s.cost}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {s.bestFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {s.bestFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {s.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}
+                        {s.pros.map((p, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {s.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                        {s.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -177,8 +177,8 @@ export default function FreeOfficeSuite() {
 
           <Card className="border-border">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A note about old .doc and .xls files</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A note about old .doc and .xls files</p>
+              <p className="text-sm text-muted-foreground">
                 Files made in Microsoft Office 2003 or earlier (.doc, .xls, .ppt) open fine in everything above. Modern .docx, .xlsx, .pptx open everywhere too. Saving back to .docx works in all options. So your old files are NOT trapped — you can switch any time.
               </p>
             </CardContent>
@@ -188,20 +188,20 @@ export default function FreeOfficeSuite() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/free-software" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Free Software</p>
-                <p className="text-xs text-muted-foreground mt-0.5">More free alternatives.</p>
+                <p className="font-medium text-base">Free Software</p>
+                <p className="text-sm text-muted-foreground mt-0.5">More free alternatives.</p>
               </Link>
               <Link to="/tools/document-scanner-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Document Scanner</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Scan paper into your document app.</p>
+                <p className="font-medium text-base">Document Scanner</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Scan paper into your document app.</p>
               </Link>
               <Link to="/tools/library-power-pack" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Library Power Pack</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Free LinkedIn Learning courses on Office.</p>
+                <p className="font-medium text-base">Library Power Pack</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Free LinkedIn Learning courses on Office.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: write your important documents in Google Docs and download a copy as Word format whenever you need to send to someone using Microsoft Office.
           </p>
         </div>

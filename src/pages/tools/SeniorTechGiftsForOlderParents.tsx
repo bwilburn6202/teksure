@@ -22,7 +22,7 @@ export default function SeniorTechGiftsForOlderParents() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Kindle Paperwhite</h2><p>$150. Big text, easier on eyes than print books.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Watch SE</h2><p>$249. Fall detection. Heart monitoring. Calls with cellular option.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Set it up</h2><p>Setting up tech is the gift. Don&apos;t hand a parent a box. Hand them a working device.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Echo Show + Aura frame combo for $300. Total game changer for parents.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Echo Show + Aura frame combo for $300. Total game changer for parents.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

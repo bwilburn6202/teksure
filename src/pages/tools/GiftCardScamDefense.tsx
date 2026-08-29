@@ -38,14 +38,14 @@ export default function GiftCardScamDefense() {
           <CardContent className="pt-6">
             <h2 className="font-bold text-2xl mb-2 text-destructive">The one rule</h2>
             <p>If anyone asks you to pay with a <strong>gift card</strong> — Apple, Google Play, Amazon, eBay, Target, Walmart, Steam — <strong>it is always a scam.</strong> Always. No exceptions.</p>
-            <p className="text-sm mt-2">Hang up. Walk away. Tell a family member.</p>
+            <p className="text-base mt-2">Hang up. Walk away. Tell a family member.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Red flags — if you see ANY of these</h2>
-            <ul className="space-y-2 list-disc pl-5 text-sm">
+            <ul className="space-y-2 list-disc pl-5 text-base">
               {RED_FLAGS.map((f, i) => <li key={i}>{f}</li>)}
             </ul>
           </CardContent>
@@ -57,18 +57,18 @@ export default function GiftCardScamDefense() {
             <div className="space-y-3">
               {WHO_FAKE.map(([who, real], i) => (
                 <div key={i} className="border-l-4 border-destructive pl-3">
-                  <p className="font-semibold text-sm">{who}</p>
-                  <p className="text-sm text-muted-foreground">{real}</p>
+                  <p className="font-semibold text-base">{who}</p>
+                  <p className="text-base text-muted-foreground">{real}</p>
                 </div>
               ))}
             </div>
           </CardContent>
         </Card>
 
-        <Card className="mb-6 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-6 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If you already bought the cards</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Don't give them the numbers</strong> if you haven't yet. Stop right there.</li>
               <li>If you already shared the card numbers, <strong>call the gift card company immediately</strong> — sometimes they can freeze the funds before they're spent.</li>
               <li>Save the receipt and the cards.</li>
@@ -94,7 +94,7 @@ export default function GiftCardScamDefense() {
           <CardContent className="pt-6">
             <div className="flex gap-3">
               <AlertTriangle className="w-6 h-6 text-muted-foreground shrink-0" />
-              <p className="text-sm">Many stores now train cashiers to ask "Is anyone telling you to buy these?" Don't be embarrassed — say yes. They've stopped thousands of scams in progress.</p>
+              <p className="text-base">Many stores now train cashiers to ask "Is anyone telling you to buy these?" Don't be embarrassed — say yes. They've stopped thousands of scams in progress.</p>
             </div>
           </CardContent>
         </Card>

@@ -31,10 +31,10 @@ export default function DiyRepairApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{r.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{r.cost}</span>
+                  <span className="text-base font-semibold text-primary">{r.cost}</span>
                 </div>
-                <p className="text-sm">{r.best}</p>
-                <p className="text-sm text-muted-foreground">{r.good}</p>
+                <p className="text-base">{r.best}</p>
+                <p className="text-base text-muted-foreground">{r.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function DiyRepairApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DIY worth attempting</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Replace a toilet flapper or fill valve ($5 + 30 min).</li>
               <li>Unclog a drain (snake $15, plunger $10).</li>
               <li>Replace a refrigerator water filter.</li>
@@ -59,10 +59,10 @@ export default function DiyRepairApps() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 border-yellow-300 dark:border-yellow-800">
+        <Card className="mb-4 border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Get a pro for</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Anything gas (water heaters, gas stove, furnace).</li>
               <li>Major electrical (panel, new circuits).</li>
               <li>Roof repairs (fall risk).</li>
@@ -77,7 +77,7 @@ export default function DiyRepairApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When you\'re unsure</h3>
-            <p className="text-sm text-muted-foreground">Try DIY for 30 minutes. If you\'re not making progress — STOP, call a pro. The hours you save sometimes cost more than the pro would have. Knowing your limits is wisdom.</p>
+            <p className="text-base text-muted-foreground">Try DIY for 30 minutes. If you\'re not making progress — STOP, call a pro. The hours you save sometimes cost more than the pro would have. Knowing your limits is wisdom.</p>
           </CardContent>
         </Card>
       </main>

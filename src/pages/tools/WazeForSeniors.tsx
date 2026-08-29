@@ -19,7 +19,7 @@ export default function WazeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Waze</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Real-time traffic</strong> from millions of drivers.</li>
               <li><strong>Police alerts</strong> — speed traps reported.</li>
               <li><strong>Crashes + hazards</strong> — avoid jams.</li>
@@ -34,7 +34,7 @@ export default function WazeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Waze vs Google Maps vs Apple Maps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Waze</strong> — best driving navigation. Most senior-friendly.</li>
               <li><strong>Google Maps</strong> — better for walking/transit + business info.</li>
               <li><strong>Apple Maps</strong> — built into iPhone. Cleaner interface. Improving.</li>
@@ -47,7 +47,7 @@ export default function WazeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Display → Larger text size.</li>
               <li>Enable voice commands (&quot;OK Waze&quot;).</li>
               <li>Avoid highways toggle — for seniors who prefer slower.</li>
@@ -61,7 +61,7 @@ export default function WazeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-helpful features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Avoid highways&quot; — slower country roads.</li>
               <li>&quot;Avoid difficult intersections.&quot;</li>
               <li>&quot;Avoid tolls.&quot;</li>
@@ -76,7 +76,7 @@ export default function WazeForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy concerns</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tracks where you drive (Google).</li>
               <li>Settings → Privacy adjusts data sharing.</li>
               <li>Disable contacts integration if don&apos;t want.</li>
@@ -90,7 +90,7 @@ export default function WazeForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Carplay + Android Auto</h3>
-            <p className="text-sm text-muted-foreground">Most cars 2018+ support CarPlay (iPhone) + Android Auto. Plug phone in — Waze + Google Maps + Apple Maps shown on car&apos;s screen. Larger display = safer for seniors. Voice control while driving = both hands on wheel. Massive senior safety upgrade.</p>
+            <p className="text-base text-muted-foreground">Most cars 2018+ support CarPlay (iPhone) + Android Auto. Plug phone in — Waze + Google Maps + Apple Maps shown on car&apos;s screen. Larger display = safer for seniors. Voice control while driving = both hands on wheel. Massive senior safety upgrade.</p>
           </CardContent>
         </Card>
       </main>

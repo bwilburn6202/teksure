@@ -31,7 +31,7 @@ export default function OldDeviceDisposal() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2"> Wipe data FIRST</h2>
-            <p className="text-sm">Old phones and computers contain banking, photos, contacts, accounts. Always WIPE before donating or recycling. (See our "Erase Old Phone" tool.) For old hard drives — hammer + drill = guaranteed wiped, or pay $5 at a UPS Store for shredding.</p>
+            <p className="text-base">Old phones and computers contain banking, photos, contacts, accounts. Always WIPE before donating or recycling. (See our "Erase Old Phone" tool.) For old hard drives — hammer + drill = guaranteed wiped, or pay $5 at a UPS Store for shredding.</p>
           </CardContent>
         </Card>
 
@@ -40,8 +40,8 @@ export default function OldDeviceDisposal() {
             <Card key={p.name}>
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{p.name}</h3>
-                <p className="text-sm mb-1">{p.what}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base mb-1">{p.what}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function OldDeviceDisposal() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where each device goes</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Working phone (less than 5 years old)</strong> — Apple Trade In, carrier, or Decluttr.</li>
               <li><strong>Old phone (5+ years)</strong> — recycle at Best Buy or e-waste event.</li>
               <li><strong>Old laptop with HDD/SSD</strong> — wipe drive, then Best Buy or sell on eBay.</li>
@@ -67,7 +67,7 @@ export default function OldDeviceDisposal() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Maximize trade-in value</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Trade in within first year of new model launch — values drop fast.</li>
               <li>Compare offers — Apple, Best Buy, your carrier all offer different prices.</li>
               <li>Original box and charger boost value $20-50.</li>
@@ -79,7 +79,7 @@ export default function OldDeviceDisposal() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">DON\'T put in regular trash</h3>
-            <p className="text-sm text-muted-foreground">Electronics contain lead, mercury, lithium that pollute landfills. Many states ban e-waste in trash. Also — your old data could be recovered. Always recycle properly.</p>
+            <p className="text-base text-muted-foreground">Electronics contain lead, mercury, lithium that pollute landfills. Many states ban e-waste in trash. Also — your old data could be recovered. Always recycle properly.</p>
           </CardContent>
         </Card>
       </main>

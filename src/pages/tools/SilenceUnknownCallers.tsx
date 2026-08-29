@@ -22,7 +22,7 @@ export default function SilenceUnknownCallers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <p className="text-sm">Phone rings ONLY for numbers in your contacts. Unknown callers go straight to voicemail. Real people (doctors, family, businesses you&apos;ve called) leave a message. Robocallers don&apos;t.</p>
+            <p className="text-base">Phone rings ONLY for numbers in your contacts. Unknown callers go straight to voicemail. Real people (doctors, family, businesses you&apos;ve called) leave a message. Robocallers don&apos;t.</p>
           </CardContent>
         </Card>
 
@@ -35,14 +35,14 @@ export default function SilenceUnknownCallers() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Settings.</li>
                 <li>Apps → Phone (or just "Phone" on older iOS).</li>
                 <li>Scroll down to "Silence Unknown Callers".</li>
                 <li>Toggle ON.</li>
                 <li>That&apos;s it. Done.</li>
               </ol>
-              <p className="text-sm mt-3">Bonus: turn on "Live Voicemail" — iPhone shows you the voicemail being left in real time. You can pick up if it&apos;s real.</p>
+              <p className="text-base mt-3">Bonus: turn on "Live Voicemail" — iPhone shows you the voicemail being left in real time. You can pick up if it&apos;s real.</p>
             </CardContent>
           </Card>
         )}
@@ -51,14 +51,14 @@ export default function SilenceUnknownCallers() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android (Pixel/Samsung Phone app)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open Phone app.</li>
                 <li>Tap three-dot menu (top right).</li>
                 <li>Settings → "Caller ID &amp; spam".</li>
                 <li>Turn ON "Filter spam calls".</li>
                 <li>Also turn ON "See caller and spam ID".</li>
               </ol>
-              <p className="text-sm mt-3">For Pixel — turn on "Call Screen". Google AI answers unknown calls and screens them.</p>
+              <p className="text-base mt-3">For Pixel — turn on "Call Screen". Google AI answers unknown calls and screens them.</p>
             </CardContent>
           </Card>
         )}
@@ -66,8 +66,8 @@ export default function SilenceUnknownCallers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Add important numbers to contacts</h2>
-            <p className="text-sm">Once silencing is on, anyone NOT in contacts goes to voicemail. Add:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Once silencing is on, anyone NOT in contacts goes to voicemail. Add:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Doctor&apos;s office.</li>
               <li>Pharmacy.</li>
               <li>Bank.</li>
@@ -81,8 +81,8 @@ export default function SilenceUnknownCallers() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Add the National Do Not Call list</h2>
-            <p className="text-sm">Free. Stops most legitimate telemarketers. Doesn&apos;t stop scammers, but layers help.</p>
-            <ol className="list-decimal pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Free. Stops most legitimate telemarketers. Doesn&apos;t stop scammers, but layers help.</p>
+            <ol className="list-decimal pl-5 space-y-1 text-base mt-2">
               <li>Call <strong>1-888-382-1222</strong> from the phone you want to register.</li>
               <li>Or visit <strong>donotcall.gov</strong>.</li>
               <li>Takes 30 days. Permanent.</li>
@@ -93,7 +93,7 @@ export default function SilenceUnknownCallers() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Phone bliss</h3>
-            <p className="text-sm text-muted-foreground">Most people who turn this on say it&apos;s the best phone setting they ever changed. Phone goes from ringing 10 times a day to 2-3. Stress level drops. You only hear the people you actually want to hear from.</p>
+            <p className="text-base text-muted-foreground">Most people who turn this on say it&apos;s the best phone setting they ever changed. Phone goes from ringing 10 times a day to 2-3. Stress level drops. You only hear the people you actually want to hear from.</p>
           </CardContent>
         </Card>
       </main>

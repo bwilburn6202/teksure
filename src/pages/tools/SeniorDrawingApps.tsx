@@ -22,7 +22,7 @@ export default function SeniorDrawingApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Stylus</h2><p>Apple Pencil ($79+). Logitech Crayon ($69) cheaper option.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">No mess</h2><p>Unlimited &ldquo;paint&rdquo; — no waste. Undo any mistake. Try anything.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">YouTube tutorials</h2><p>Free Procreate lessons. Search &ldquo;Procreate beginner.&rdquo; Many seniors learn fast.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Drawing reduces anxiety and boosts mood. Real therapy.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Drawing reduces anxiety and boosts mood. Real therapy.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

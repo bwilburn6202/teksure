@@ -470,14 +470,14 @@ export default function GriefTechHelper() {
           <div className="absolute inset-0 bg-gradient-to-br from-violet-100 via-slate-100 to-violet-50 dark:from-violet-950/40 dark:via-slate-900 dark:to-violet-950/20" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(167,139,250,0.18),transparent_60%)]" />
           <div className="relative container max-w-5xl mx-auto px-4 pt-10 pb-12">
-            <div className="flex items-center gap-3 text-violet-700 dark:text-violet-300 text-sm font-bold uppercase tracking-widest mb-4">
+            <div className="flex items-center gap-3 text-primary text-sm font-bold uppercase tracking-widest mb-4">
               <Heart className="h-5 w-5" fill="currentColor" />
               <span>Grief & Digital Aftercare</span>
             </div>
-            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 mb-4 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-foreground mb-4 leading-tight">
               After a Loved One Passes — The Digital Side
             </h1>
-            <p className="text-lg md:text-xl text-slate-700 dark:text-slate-300 max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-xl text-foreground max-w-3xl leading-relaxed">
               There&apos;s no rush. Here&apos;s how to handle accounts, memories, and devices
               when you&apos;re ready.
             </p>
@@ -504,17 +504,17 @@ export default function GriefTechHelper() {
 
         {/* ── Opening care card ─────────────────────────────────────── */}
         <section className="gt-no-print container max-w-4xl mx-auto px-4 -mt-4 relative z-10">
-          <Card className="border-2 border-violet-200 dark:border-violet-900 shadow-lg">
+          <Card className="border-2 border-primary/25 shadow-lg">
             <CardContent className="p-6 md:p-8">
               <div className="flex gap-4 items-start">
-                <div className="shrink-0 w-12 h-12 rounded-full bg-violet-100 dark:bg-violet-950/50 flex items-center justify-center">
-                  <HandHeart className="h-6 w-6 text-violet-700 dark:text-violet-300" />
+                <div className="shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <HandHeart className="h-6 w-6 text-primary " />
                 </div>
                 <div className="space-y-2">
-                  <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100">
+                  <h2 className="text-xl md:text-2xl font-bold text-foreground ">
                     Handling this tech work is an act of love.
                   </h2>
-                  <p className="text-base md:text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                  <p className="text-base md:text-lg text-foreground leading-relaxed">
                     There is no timeline. Come back whenever you&apos;re ready. Save this
                     page to a bookmark, work through one section at a time, and leave
                     the rest for another day. Your loved one&apos;s digital life will be
@@ -537,17 +537,17 @@ export default function GriefTechHelper() {
             {urgentSteps.map((step) => {
               const Icon = step.icon;
               return (
-                <Card key={step.title} className="border-slate-200 dark:border-slate-800">
+                <Card key={step.title} className="border-border ">
                   <CardContent className="p-5 md:p-6">
                     <div className="flex gap-4 items-start">
-                      <div className="shrink-0 w-11 h-11 rounded-lg bg-violet-50 dark:bg-violet-950/40 flex items-center justify-center">
-                        <Icon className="h-5 w-5 text-violet-700 dark:text-violet-300" />
+                      <div className="shrink-0 w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center">
+                        <Icon className="h-5 w-5 text-primary " />
                       </div>
                       <div className="space-y-1.5">
-                        <h3 className="font-semibold text-base md:text-lg text-slate-900 dark:text-slate-100">
+                        <h3 className="font-semibold text-base md:text-lg text-foreground ">
                           {step.title}
                         </h3>
-                        <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                        <p className="text-base text-foreground leading-relaxed">
                           {step.detail}
                         </p>
                       </div>
@@ -558,9 +558,9 @@ export default function GriefTechHelper() {
             })}
           </div>
 
-          <Alert className="mt-6 border-amber-300 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-900/60">
-            <AlertTriangle className="h-5 w-5 text-amber-700 dark:text-amber-300" />
-            <AlertTitle className="text-base font-bold text-amber-900 dark:text-amber-200">
+          <Alert className="mt-6 border-warn-foreground/25 bg-warn ">
+            <AlertTriangle className="h-5 w-5 text-warn-foreground " />
+            <AlertTitle className="text-base font-bold text-warn-foreground ">
               A gentle note about phones
             </AlertTitle>
             <AlertDescription className="text-base text-amber-900/90 dark:text-amber-100/90 leading-relaxed">
@@ -581,7 +581,7 @@ export default function GriefTechHelper() {
 
           <div className="mt-6">
             <Tabs value={activeAccount} onValueChange={setActiveAccount}>
-              <TabsList className="flex flex-wrap h-auto gap-1.5 bg-slate-100 dark:bg-slate-900 p-2 mb-6">
+              <TabsList className="flex flex-wrap h-auto gap-1.5 bg-muted p-2 mb-6">
                 {accounts.map((a) => (
                   <TabsTrigger
                     key={a.id}
@@ -595,10 +595,10 @@ export default function GriefTechHelper() {
 
               {accounts.map((a) => (
                 <TabsContent key={a.id} value={a.id} className="mt-0">
-                  <Card className="border-violet-200 dark:border-violet-900">
+                  <Card className="border-primary/25 ">
                     <CardContent className="p-6 md:p-8 space-y-6">
                       <div>
-                        <h3 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100">
+                        <h3 className="text-xl md:text-2xl font-bold text-foreground ">
                           {a.name}
                         </h3>
                       </div>
@@ -607,48 +607,48 @@ export default function GriefTechHelper() {
                         {a.options.map((opt, i) => (
                           <div
                             key={i}
-                            className="border-l-4 border-violet-300 dark:border-violet-700 pl-4 py-1"
+                            className="border-l-4 border-primary/25 pl-4 py-1"
                           >
                             <div className="flex items-start gap-2 mb-1">
-                              <Badge variant="outline" className="text-xs bg-violet-50 border-violet-300 text-violet-900 dark:bg-violet-950/40 dark:border-violet-800 dark:text-violet-200">
+                              <Badge variant="outline" className="text-xs bg-primary/10 border-primary/25 text-primary ">
                                 Option {i + 1}
                               </Badge>
-                              <h4 className="font-semibold text-base md:text-lg text-slate-900 dark:text-slate-100">
+                              <h4 className="font-semibold text-base md:text-lg text-foreground ">
                                 {opt.label}
                               </h4>
                             </div>
-                            <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                            <p className="text-base text-foreground leading-relaxed">
                               {opt.detail}
                             </p>
                           </div>
                         ))}
                       </div>
 
-                      <div className="grid md:grid-cols-2 gap-4 pt-4 border-t border-slate-200 dark:border-slate-800">
+                      <div className="grid md:grid-cols-2 gap-4 pt-4 border-t border-border ">
                         <div>
-                          <div className="flex items-center gap-2 text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-1">
+                          <div className="flex items-center gap-2 text-sm font-bold text-muted-foreground uppercase tracking-wide mb-1">
                             <FileText className="h-4 w-4" />
                             Paperwork needed
                           </div>
-                          <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                          <p className="text-base text-foreground leading-relaxed">
                             {a.paperwork}
                           </p>
                         </div>
                         <div>
-                          <div className="flex items-center gap-2 text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-1">
+                          <div className="flex items-center gap-2 text-sm font-bold text-muted-foreground uppercase tracking-wide mb-1">
                             <Clock className="h-4 w-4" />
                             Typical timeline
                           </div>
-                          <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                          <p className="text-base text-foreground leading-relaxed">
                             {a.timeline}
                           </p>
                         </div>
                       </div>
 
                       {a.note && (
-                        <div className="rounded-lg bg-violet-50 dark:bg-violet-950/30 border border-violet-200 dark:border-violet-900 p-4 flex gap-3">
-                          <Info className="h-5 w-5 text-violet-700 dark:text-violet-300 shrink-0 mt-0.5" />
-                          <p className="text-base text-violet-900 dark:text-violet-100 leading-relaxed">
+                        <div className="rounded-lg bg-primary/10 border border-primary/25 p-4 flex gap-3">
+                          <Info className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                          <p className="text-base text-primary leading-relaxed">
                             {a.note}
                           </p>
                         </div>
@@ -660,7 +660,7 @@ export default function GriefTechHelper() {
                             href={a.officialLink.href}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-2 text-base font-semibold text-violet-700 dark:text-violet-300 hover:underline min-h-14"
+                            className="inline-flex items-center gap-2 text-base font-semibold text-primary hover:underline min-h-14"
                           >
                             <ExternalLink className="h-4 w-4" />
                             {a.officialLink.label}
@@ -736,9 +736,9 @@ export default function GriefTechHelper() {
             subtitle="Save memories first. Then decide: keep, pass on, or wipe and donate."
           />
 
-          <Alert className="mt-6 border-rose-300 bg-rose-50 dark:bg-rose-950/20 dark:border-rose-900/60">
-            <ShieldAlert className="h-5 w-5 text-rose-700 dark:text-rose-300" />
-            <AlertTitle className="text-base font-bold text-rose-900 dark:text-rose-200">
+          <Alert className="mt-6 border-danger-foreground/25 bg-danger ">
+            <ShieldAlert className="h-5 w-5 text-danger-foreground " />
+            <AlertTitle className="text-base font-bold text-danger-foreground ">
               Before you wipe anything, save memories
             </AlertTitle>
             <AlertDescription className="text-base text-rose-900/90 dark:text-rose-100/90 leading-relaxed">
@@ -801,15 +801,15 @@ export default function GriefTechHelper() {
           />
 
           <div className="grid md:grid-cols-2 gap-5 mt-6">
-            <Card className="border-violet-200 dark:border-violet-900">
+            <Card className="border-primary/25 ">
               <CardContent className="p-6 space-y-4">
                 <div className="flex items-center gap-3">
-                  <LifeBuoy className="h-6 w-6 text-violet-700 dark:text-violet-300" />
-                  <h3 className="font-bold text-lg text-slate-900 dark:text-slate-100">
+                  <LifeBuoy className="h-6 w-6 text-primary " />
+                  <h3 className="font-bold text-lg text-foreground ">
                     Grief support (free)
                   </h3>
                 </div>
-                <ul className="space-y-2.5 text-base text-slate-700 dark:text-slate-300">
+                <ul className="space-y-2.5 text-base text-foreground ">
                   <ResourceRow
                     label="GriefShare"
                     detail="Support groups at churches nationwide — non-denominational welcome"
@@ -834,28 +834,28 @@ export default function GriefTechHelper() {
               </CardContent>
             </Card>
 
-            <Card className="border-violet-200 dark:border-violet-900">
+            <Card className="border-primary/25 ">
               <CardContent className="p-6 space-y-4">
                 <div className="flex items-center gap-3">
-                  <HandHeart className="h-6 w-6 text-violet-700 dark:text-violet-300" />
-                  <h3 className="font-bold text-lg text-slate-900 dark:text-slate-100">
+                  <HandHeart className="h-6 w-6 text-primary " />
+                  <h3 className="font-bold text-lg text-foreground ">
                     Tech-grief that hits hard
                   </h3>
                 </div>
-                <ul className="space-y-3 text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                <ul className="space-y-3 text-base text-foreground leading-relaxed">
                   <li>
-                    <strong className="text-slate-900 dark:text-slate-100">Their phone texts you.</strong>{' '}
+                    <strong className="text-foreground ">Their phone texts you.</strong>{' '}
                     Usually a forwarded text from a new number after the line was re-issued.
                     You can block the number, or call your own carrier to confirm.
                   </li>
                   <li>
-                    <strong className="text-slate-900 dark:text-slate-100">Photos memories.</strong>{' '}
+                    <strong className="text-foreground ">Photos memories.</strong>{' '}
                     iPhone and Google Photos surface old photos in notifications. Turn
                     off &quot;Memories&quot; in Photo settings if those are painful. You can turn
                     them back on later.
                   </li>
                   <li>
-                    <strong className="text-slate-900 dark:text-slate-100">Facebook reminders.</strong>{' '}
+                    <strong className="text-foreground ">Facebook reminders.</strong>{' '}
                     Memorializing a Facebook profile stops birthday reminders to friends.
                     That relieves friends from the panic of wishing a happy birthday to
                     someone who has passed.
@@ -864,15 +864,15 @@ export default function GriefTechHelper() {
               </CardContent>
             </Card>
 
-            <Card className="border-violet-200 dark:border-violet-900">
+            <Card className="border-primary/25 ">
               <CardContent className="p-6 space-y-4">
                 <div className="flex items-center gap-3">
-                  <Users className="h-6 w-6 text-violet-700 dark:text-violet-300" />
-                  <h3 className="font-bold text-lg text-slate-900 dark:text-slate-100">
+                  <Users className="h-6 w-6 text-primary " />
+                  <h3 className="font-bold text-lg text-foreground ">
                     Muting reminders without deleting
                   </h3>
                 </div>
-                <ul className="space-y-3 text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                <ul className="space-y-3 text-base text-foreground leading-relaxed">
                   <li>• Turn off Facebook birthday reminders for their profile.</li>
                   <li>• Archive their name in your Contacts instead of deleting — you keep the number without the daily reminder.</li>
                   <li>• Hide their photos in the Photos app using Face ID removal (iPhone) or Group Exclusions (Google Photos).</li>
@@ -881,15 +881,15 @@ export default function GriefTechHelper() {
               </CardContent>
             </Card>
 
-            <Card className="border-violet-200 dark:border-violet-900">
+            <Card className="border-primary/25 ">
               <CardContent className="p-6 space-y-4">
                 <div className="flex items-center gap-3">
-                  <HelpCircle className="h-6 w-6 text-violet-700 dark:text-violet-300" />
-                  <h3 className="font-bold text-lg text-slate-900 dark:text-slate-100">
+                  <HelpCircle className="h-6 w-6 text-primary " />
+                  <h3 className="font-bold text-lg text-foreground ">
                     When family disagrees
                   </h3>
                 </div>
-                <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                <p className="text-base text-foreground leading-relaxed">
                   One sibling wants to memorialize. Another wants to delete. Both are
                   grieving. A helpful middle path: download everything first (photos,
                   posts, videos), then memorialize. The content is saved for anyone who
@@ -899,15 +899,15 @@ export default function GriefTechHelper() {
               </CardContent>
             </Card>
 
-            <Card className="border-violet-200 dark:border-violet-900">
+            <Card className="border-primary/25 ">
               <CardContent className="p-6 space-y-4">
                 <div className="flex items-center gap-3">
-                  <BookOpen className="h-6 w-6 text-violet-700 dark:text-violet-300" />
-                  <h3 className="font-bold text-lg text-slate-900 dark:text-slate-100">
+                  <BookOpen className="h-6 w-6 text-primary " />
+                  <h3 className="font-bold text-lg text-foreground ">
                     Journaling the loss
                   </h3>
                 </div>
-                <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                <p className="text-base text-foreground leading-relaxed">
                   Writing helps. The app Day One (free tier, works on iPhone and
                   Android) saves entries by date and lets you add photos. A plain paper
                   notebook works as well as any app. There is no wrong way to journal —
@@ -916,15 +916,15 @@ export default function GriefTechHelper() {
               </CardContent>
             </Card>
 
-            <Card className="border-violet-200 dark:border-violet-900">
+            <Card className="border-primary/25 ">
               <CardContent className="p-6 space-y-4">
                 <div className="flex items-center gap-3">
-                  <HandHeart className="h-6 w-6 text-violet-700 dark:text-violet-300" />
-                  <h3 className="font-bold text-lg text-slate-900 dark:text-slate-100">
+                  <HandHeart className="h-6 w-6 text-primary " />
+                  <h3 className="font-bold text-lg text-foreground ">
                     Finding a therapist
                   </h3>
                 </div>
-                <ul className="space-y-2 text-base text-slate-700 dark:text-slate-300">
+                <ul className="space-y-2 text-base text-foreground ">
                   <ResourceRow
                     label="Psychology Today therapist finder"
                     detail="Search by insurance, zip code, and grief specialty"
@@ -959,9 +959,9 @@ export default function GriefTechHelper() {
             subtitle="People who read obituaries for a living. Be ready."
           />
 
-          <Alert className="mt-6 border-rose-300 bg-rose-50 dark:bg-rose-950/20 dark:border-rose-900/60">
-            <ShieldAlert className="h-5 w-5 text-rose-700 dark:text-rose-300" />
-            <AlertTitle className="text-base font-bold text-rose-900 dark:text-rose-200">
+          <Alert className="mt-6 border-danger-foreground/25 bg-danger ">
+            <ShieldAlert className="h-5 w-5 text-danger-foreground " />
+            <AlertTitle className="text-base font-bold text-danger-foreground ">
               The single biggest red flag
             </AlertTitle>
             <AlertDescription className="text-base text-rose-900/90 dark:text-rose-100/90 leading-relaxed">
@@ -991,11 +991,11 @@ export default function GriefTechHelper() {
             />
           </div>
 
-          <div className="mt-6 rounded-xl border-2 border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 p-5 md:p-6">
-            <h3 className="font-bold text-lg text-slate-900 dark:text-slate-100 mb-2">
+          <div className="mt-6 rounded-xl border-2 border-border bg-muted p-5 md:p-6">
+            <h3 className="font-bold text-lg text-foreground mb-2">
               Freeze the deceased&apos;s credit
             </h3>
-            <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+            <p className="text-base text-foreground leading-relaxed">
               Contact all three credit bureaus — Equifax, Experian, and TransUnion —
               and ask them to place a <strong>&quot;deceased alert&quot;</strong> on the file. This stops
               identity thieves from opening new accounts in their name. Each bureau
@@ -1013,15 +1013,15 @@ export default function GriefTechHelper() {
           />
 
           <div className="mt-6 space-y-4">
-            <Card className="border-slate-200 dark:border-slate-800">
+            <Card className="border-border ">
               <CardContent className="p-6">
                 <div className="flex items-start gap-3">
-                  <Scale className="h-6 w-6 text-violet-700 dark:text-violet-300 shrink-0 mt-0.5" />
+                  <Scale className="h-6 w-6 text-primary shrink-0 mt-0.5" />
                   <div className="space-y-2">
-                    <h3 className="font-bold text-lg text-slate-900 dark:text-slate-100">
+                    <h3 className="font-bold text-lg text-foreground ">
                       Executor tasks
                     </h3>
-                    <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                    <p className="text-base text-foreground leading-relaxed">
                       The executor named in the will handles paying final bills,
                       closing accounts, distributing assets, and filing final taxes.
                       Ask the estate attorney for a full executor checklist — every
@@ -1032,15 +1032,15 @@ export default function GriefTechHelper() {
               </CardContent>
             </Card>
 
-            <Card className="border-slate-200 dark:border-slate-800">
+            <Card className="border-border ">
               <CardContent className="p-6">
                 <div className="flex items-start gap-3">
-                  <DollarSign className="h-6 w-6 text-violet-700 dark:text-violet-300 shrink-0 mt-0.5" />
+                  <DollarSign className="h-6 w-6 text-primary shrink-0 mt-0.5" />
                   <div className="space-y-2">
-                    <h3 className="font-bold text-lg text-slate-900 dark:text-slate-100">
+                    <h3 className="font-bold text-lg text-foreground ">
                       Final tax return
                     </h3>
-                    <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                    <p className="text-base text-foreground leading-relaxed">
                       The deceased&apos;s final Form 1040 is due April 15 of the year after
                       they passed. A CPA or tax software (TurboTax, H&amp;R Block) handles
                       this. The executor signs in their name. If there was income in
@@ -1051,15 +1051,15 @@ export default function GriefTechHelper() {
               </CardContent>
             </Card>
 
-            <Card className="border-slate-200 dark:border-slate-800">
+            <Card className="border-border ">
               <CardContent className="p-6">
                 <div className="flex items-start gap-3">
-                  <FileText className="h-6 w-6 text-violet-700 dark:text-violet-300 shrink-0 mt-0.5" />
+                  <FileText className="h-6 w-6 text-primary shrink-0 mt-0.5" />
                   <div className="space-y-2">
-                    <h3 className="font-bold text-lg text-slate-900 dark:text-slate-100">
+                    <h3 className="font-bold text-lg text-foreground ">
                       Estate vs. probate
                     </h3>
-                    <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                    <p className="text-base text-foreground leading-relaxed">
                       An <strong>estate</strong> is everything they owned. <strong>Probate</strong> is the
                       court process that transfers their estate to heirs. Probate
                       takes months to a year. Assets with named beneficiaries
@@ -1073,15 +1073,15 @@ export default function GriefTechHelper() {
               </CardContent>
             </Card>
 
-            <Card className="border-slate-200 dark:border-slate-800">
+            <Card className="border-border ">
               <CardContent className="p-6">
                 <div className="flex items-start gap-3">
-                  <HandHeart className="h-6 w-6 text-violet-700 dark:text-violet-300 shrink-0 mt-0.5" />
+                  <HandHeart className="h-6 w-6 text-primary shrink-0 mt-0.5" />
                   <div className="space-y-2">
-                    <h3 className="font-bold text-lg text-slate-900 dark:text-slate-100">
+                    <h3 className="font-bold text-lg text-foreground ">
                       Transfer-on-death accounts
                     </h3>
-                    <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+                    <p className="text-base text-foreground leading-relaxed">
                       Bank accounts, brokerage accounts, and even some car titles can
                       have a &quot;transfer-on-death&quot; (TOD) beneficiary. When one exists,
                       the account transfers directly to the named person, no court
@@ -1096,35 +1096,35 @@ export default function GriefTechHelper() {
 
         {/* ── Preventive CTA ────────────────────────────────────────── */}
         <section className="gt-no-print container max-w-4xl mx-auto px-4 pt-14">
-          <Card className="border-2 border-violet-300 dark:border-violet-800 bg-gradient-to-br from-violet-50 to-slate-50 dark:from-violet-950/30 dark:to-slate-950/30">
+          <Card className="border-2 border-primary/25 bg-gradient-to-br from-violet-50 to-slate-50 dark:from-violet-950/30 dark:to-slate-950/30">
             <CardContent className="p-6 md:p-8">
               <div className="flex items-start gap-4">
                 <div className="shrink-0 w-12 h-12 rounded-full bg-violet-600 flex items-center justify-center">
                   <Sparkles className="h-6 w-6 text-white" />
                 </div>
                 <div className="space-y-3">
-                  <h2 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100">
+                  <h2 className="text-xl md:text-2xl font-bold text-foreground ">
                     Don&apos;t want your family to go through this?
                   </h2>
-                  <p className="text-base md:text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+                  <p className="text-base md:text-lg text-foreground leading-relaxed">
                     The kindest thing you can do for your family is to set up your own
                     digital legacy today. Takes about 30 minutes.
                   </p>
-                  <ul className="space-y-2 text-base text-slate-700 dark:text-slate-300">
+                  <ul className="space-y-2 text-base text-foreground ">
                     <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-violet-700 dark:text-violet-300 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                       <span>Set up an <strong>Apple Legacy Contact</strong> in Settings → Apple ID → Legacy Contact</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-violet-700 dark:text-violet-300 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                       <span>Set up <strong>Google Inactive Account Manager</strong> at myaccount.google.com/inactive</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-violet-700 dark:text-violet-300 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                       <span>Name a <strong>Facebook Legacy Contact</strong> in Settings → Memorialization</span>
                     </li>
                     <li className="flex items-start gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-violet-700 dark:text-violet-300 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                       <span>Fill out our free <strong>Digital Will Template</strong> to record it all in one place</span>
                     </li>
                   </ul>
@@ -1145,10 +1145,10 @@ export default function GriefTechHelper() {
 
         {/* ── Gentle note card ──────────────────────────────────────── */}
         <section className="gt-no-print container max-w-4xl mx-auto px-4 pt-10">
-          <Card className="border-violet-200 dark:border-violet-900 bg-violet-50/60 dark:bg-violet-950/20">
+          <Card className="border-primary/25 bg-violet-50/60 dark:bg-violet-950/20">
             <CardContent className="p-6 md:p-8 text-center">
-              <Heart className="h-8 w-8 text-violet-700 dark:text-violet-300 mx-auto mb-3" fill="currentColor" />
-              <p className="text-lg md:text-xl text-slate-800 dark:text-slate-200 leading-relaxed max-w-2xl mx-auto">
+              <Heart className="h-8 w-8 text-primary mx-auto mb-3" fill="currentColor" />
+              <p className="text-lg md:text-xl text-foreground leading-relaxed max-w-2xl mx-auto">
                 You don&apos;t have to do it all. Skip sections. Come back. Take breaks.
                 This is grief, not a project.
               </p>
@@ -1164,11 +1164,11 @@ export default function GriefTechHelper() {
           />
 
           <Accordion type="single" collapsible className="mt-6 space-y-3">
-            <AccordionItem value="q1" className="border rounded-lg px-4 border-slate-200 dark:border-slate-800">
+            <AccordionItem value="q1" className="border rounded-lg px-4 border-border ">
               <AccordionTrigger className="text-base md:text-lg font-semibold text-left hover:no-underline min-h-14">
                 Do I have to close all the accounts?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+              <AccordionContent className="text-base text-foreground leading-relaxed">
                 No. Many social media accounts can be memorialized and left in place
                 for years. That means the profile stays visible to friends, no one new
                 can sign in, and the content is preserved. Only banks, credit cards,
@@ -1176,11 +1176,11 @@ export default function GriefTechHelper() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="q2" className="border rounded-lg px-4 border-slate-200 dark:border-slate-800">
+            <AccordionItem value="q2" className="border rounded-lg px-4 border-border ">
               <AccordionTrigger className="text-base md:text-lg font-semibold text-left hover:no-underline min-h-14">
                 What if I don&apos;t know all their accounts?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+              <AccordionContent className="text-base text-foreground leading-relaxed">
                 Start with the banks and credit cards. Their statements will show every
                 recurring charge from the last three months — streaming services,
                 apps, gyms, subscriptions, and other billers. The card statements and
@@ -1189,11 +1189,11 @@ export default function GriefTechHelper() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="q3" className="border rounded-lg px-4 border-slate-200 dark:border-slate-800">
+            <AccordionItem value="q3" className="border rounded-lg px-4 border-border ">
               <AccordionTrigger className="text-base md:text-lg font-semibold text-left hover:no-underline min-h-14">
                 Is cryptocurrency really gone without the seed phrase?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+              <AccordionContent className="text-base text-foreground leading-relaxed">
                 For self-custody wallets, almost always yes. Without the 12- or
                 24-word recovery phrase (or the private key), no one — including the
                 wallet company — can recover the funds. For custodial exchanges like
@@ -1202,11 +1202,11 @@ export default function GriefTechHelper() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="q4" className="border rounded-lg px-4 border-slate-200 dark:border-slate-800">
+            <AccordionItem value="q4" className="border rounded-lg px-4 border-border ">
               <AccordionTrigger className="text-base md:text-lg font-semibold text-left hover:no-underline min-h-14">
                 Can I read their emails?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+              <AccordionContent className="text-base text-foreground leading-relaxed">
                 This is legally gray. Federal law and provider terms of service often
                 prohibit accessing someone else&apos;s email without permission, even
                 after death. If you know the login, pulling account data (via Google
@@ -1215,11 +1215,11 @@ export default function GriefTechHelper() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="q5" className="border rounded-lg px-4 border-slate-200 dark:border-slate-800">
+            <AccordionItem value="q5" className="border rounded-lg px-4 border-border ">
               <AccordionTrigger className="text-base md:text-lg font-semibold text-left hover:no-underline min-h-14">
                 How long does all this take?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+              <AccordionContent className="text-base text-foreground leading-relaxed">
                 Months. Sometimes a full year. That is normal. The paperwork for
                 banks, Social Security, insurance, and estate settlement moves slowly.
                 Big tech platforms take weeks to months. Give yourself grace, and
@@ -1227,11 +1227,11 @@ export default function GriefTechHelper() {
               </AccordionContent>
             </AccordionItem>
 
-            <AccordionItem value="q6" className="border rounded-lg px-4 border-slate-200 dark:border-slate-800">
+            <AccordionItem value="q6" className="border rounded-lg px-4 border-border ">
               <AccordionTrigger className="text-base md:text-lg font-semibold text-left hover:no-underline min-h-14">
                 What about their smart home devices?
               </AccordionTrigger>
-              <AccordionContent className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+              <AccordionContent className="text-base text-foreground leading-relaxed">
                 Smart speakers, thermostats, and doorbells are tied to an account
                 (usually Amazon, Google, or Apple). When you close or transfer that
                 account, the devices stop working. If a surviving spouse uses them,
@@ -1320,11 +1320,11 @@ function SectionHeader({
         {number}
       </div>
       <div className="flex-1 pt-1">
-        <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 dark:text-slate-100 leading-tight">
+        <h2 className="text-2xl md:text-3xl font-extrabold text-foreground leading-tight">
           {title}
         </h2>
         {subtitle && (
-          <p className="mt-2 text-base md:text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+          <p className="mt-2 text-base md:text-lg text-muted-foreground leading-relaxed">
             {subtitle}
           </p>
         )}
@@ -1343,17 +1343,17 @@ function MemoryCard({
   detail: string;
 }) {
   return (
-    <Card className="border-slate-200 dark:border-slate-800">
+    <Card className="border-border ">
       <CardContent className="p-5 md:p-6">
         <div className="flex gap-3 items-start">
-          <div className="shrink-0 w-10 h-10 rounded-lg bg-violet-50 dark:bg-violet-950/40 flex items-center justify-center">
-            <Icon className="h-5 w-5 text-violet-700 dark:text-violet-300" />
+          <div className="shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+            <Icon className="h-5 w-5 text-primary " />
           </div>
           <div className="space-y-1.5">
-            <h3 className="font-semibold text-base md:text-lg text-slate-900 dark:text-slate-100">
+            <h3 className="font-semibold text-base md:text-lg text-foreground ">
               {title}
             </h3>
-            <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+            <p className="text-base text-foreground leading-relaxed">
               {detail}
             </p>
           </div>
@@ -1378,15 +1378,15 @@ function ResourceRow({
         href={href}
         target={href.startsWith('http') ? '_blank' : undefined}
         rel={href.startsWith('http') ? 'noopener noreferrer' : undefined}
-        className="block py-1 hover:bg-violet-50 dark:hover:bg-violet-950/30 rounded-md px-1"
+        className="block py-1 hover:bg-primary/10 rounded-md px-1"
       >
         <div className="flex items-start gap-2">
-          <ChevronRight className="h-4 w-4 text-violet-600 shrink-0 mt-1" />
+          <ChevronRight className="h-4 w-4 text-primary shrink-0 mt-1" />
           <div>
-            <div className="font-semibold text-slate-900 dark:text-slate-100">
+            <div className="font-semibold text-foreground ">
               {label}
             </div>
-            <div className="text-sm text-slate-600 dark:text-slate-400">
+            <div className="text-sm text-muted-foreground ">
               {detail}
             </div>
           </div>
@@ -1404,17 +1404,17 @@ function FraudCard({
   detail: string;
 }) {
   return (
-    <Card className="border-rose-200 dark:border-rose-900/60">
+    <Card className="border-danger-foreground/25 ">
       <CardContent className="p-5 md:p-6">
         <div className="flex gap-3 items-start">
-          <div className="shrink-0 w-10 h-10 rounded-lg bg-rose-50 dark:bg-rose-950/40 flex items-center justify-center">
-            <AlertTriangle className="h-5 w-5 text-rose-700 dark:text-rose-300" />
+          <div className="shrink-0 w-10 h-10 rounded-lg bg-danger flex items-center justify-center">
+            <AlertTriangle className="h-5 w-5 text-danger-foreground " />
           </div>
           <div className="space-y-1.5">
-            <h3 className="font-semibold text-base md:text-lg text-slate-900 dark:text-slate-100">
+            <h3 className="font-semibold text-base md:text-lg text-foreground ">
               {title}
             </h3>
-            <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+            <p className="text-base text-foreground leading-relaxed">
               {detail}
             </p>
           </div>
@@ -1438,18 +1438,18 @@ function RelatedLinkCard({
   return (
     <Link
       to={href}
-      className="group block rounded-xl border border-slate-200 dark:border-slate-800 hover:border-violet-400 dark:hover:border-violet-700 transition-colors p-5 md:p-6 bg-card"
+      className="group block rounded-xl border border-border hover:border-violet-400 transition-colors p-5 md:p-6 bg-card"
     >
       <div className="flex gap-3 items-start">
-        <div className="shrink-0 w-11 h-11 rounded-lg bg-violet-50 dark:bg-violet-950/40 flex items-center justify-center">
-          <Icon className="h-5 w-5 text-violet-700 dark:text-violet-300" />
+        <div className="shrink-0 w-11 h-11 rounded-lg bg-primary/10 flex items-center justify-center">
+          <Icon className="h-5 w-5 text-primary " />
         </div>
         <div className="space-y-1">
-          <h3 className="font-semibold text-base md:text-lg text-slate-900 dark:text-slate-100 group-hover:text-violet-700 dark:group-hover:text-violet-300">
+          <h3 className="font-semibold text-base md:text-lg text-foreground group-hover:text-primary ">
             {title}
             <ArrowRight className="inline-block ml-1 h-4 w-4 opacity-0 group-hover:opacity-100 group-hover:translate-x-0.5 transition-all" />
           </h3>
-          <p className="text-base text-slate-700 dark:text-slate-300 leading-relaxed">
+          <p className="text-base text-foreground leading-relaxed">
             {description}
           </p>
         </div>

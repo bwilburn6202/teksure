@@ -28,7 +28,7 @@ export default function AiImageGenerators() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Fun things to make</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Custom birthday card images for grandkids.</li>
               <li>Holiday illustrations for the family newsletter.</li>
               <li>"Imagine our dog as a knight" — pet portraits.</li>
@@ -44,10 +44,10 @@ export default function AiImageGenerators() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base mb-1">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -56,10 +56,10 @@ export default function AiImageGenerators() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Writing good prompts</h2>
-            <p className="text-sm mb-2">More detail = better images. Try this format:</p>
-            <p className="text-sm italic bg-muted/50 p-3 rounded">"[Subject], [setting], [style], [mood]"</p>
-            <p className="text-sm mt-3"><strong>Examples:</strong></p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">More detail = better images. Try this format:</p>
+            <p className="text-base italic bg-muted/50 p-3 rounded">"[Subject], [setting], [style], [mood]"</p>
+            <p className="text-base mt-3"><strong>Examples:</strong></p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>"A golden retriever puppy, in a sunlit kitchen, watercolor painting style, cheerful"</li>
               <li>"An elderly couple holding hands at a beach, photorealistic, soft warm sunset"</li>
               <li>"A birthday cake with 90 candles, cartoon style, bright colors, party setting"</li>
@@ -70,7 +70,7 @@ export default function AiImageGenerators() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Important warnings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Don\'t generate images of real people without permission</strong> — especially celebrities or public figures.</li>
               <li><strong>AI images can\'t be copyrighted</strong> in the US — anyone can use yours; you can\'t legally use someone else\'s commercially.</li>
               <li><strong>Recognize AI images</strong> — strange hands/teeth, weird text, "smooth" backgrounds. Many photos shared online today are AI-made.</li>
@@ -82,7 +82,7 @@ export default function AiImageGenerators() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">Open Microsoft Copilot at copilot.microsoft.com (free, no signup needed for some). Type "Make me an image of a cat reading a newspaper". 30 seconds. Magic moment.</p>
+            <p className="text-base text-muted-foreground">Open Microsoft Copilot at copilot.microsoft.com (free, no signup needed for some). Type "Make me an image of a cat reading a newspaper". 30 seconds. Magic moment.</p>
           </CardContent>
         </Card>
       </main>

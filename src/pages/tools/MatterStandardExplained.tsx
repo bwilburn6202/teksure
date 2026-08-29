@@ -19,7 +19,7 @@ export default function MatterStandardExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Matter?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Universal smart home language.</li>
               <li>Apple, Google, Amazon, Samsung all support it.</li>
               <li>Buy any &quot;Matter&quot; device — works with any voice assistant.</li>
@@ -32,7 +32,7 @@ export default function MatterStandardExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why seniors should care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Stop switching between 5 apps.</li>
               <li>One app controls everything.</li>
               <li>Buying decisions easier — just look for &quot;Matter&quot; logo.</li>
@@ -45,7 +45,7 @@ export default function MatterStandardExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Matter-compatible hubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple HomePod (any)</strong> — built-in.</li>
               <li><strong>Apple TV 4K</strong> — built-in.</li>
               <li><strong>Amazon Echo (4th gen+)</strong> — built-in.</li>
@@ -59,7 +59,7 @@ export default function MatterStandardExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recommended approach</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use the voice assistant you already have.</li>
               <li>When buying NEW smart home devices — look for &quot;Matter&quot; logo.</li>
               <li>Skip the manufacturer app — use Apple Home / Google Home / Alexa app.</li>
@@ -72,7 +72,7 @@ export default function MatterStandardExplained() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up a Matter device</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open phone&apos;s home app (Apple Home, Google Home, etc.).</li>
               <li>Tap + → Add Device.</li>
               <li>Scan the Matter QR code on box.</li>
@@ -85,7 +85,7 @@ export default function MatterStandardExplained() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Look for Matter logo</h3>
-            <p className="text-sm text-muted-foreground">Check box for Matter logo + supported assistants. Most new smart bulbs, plugs, locks, sensors are Matter as of 2025+. Don&apos;t replace working devices — just buy Matter when adding new ones. Smart home is finally simple.</p>
+            <p className="text-base text-muted-foreground">Check box for Matter logo + supported assistants. Most new smart bulbs, plugs, locks, sensors are Matter as of 2025+. Don&apos;t replace working devices — just buy Matter when adding new ones. Smart home is finally simple.</p>
           </CardContent>
         </Card>
       </main>

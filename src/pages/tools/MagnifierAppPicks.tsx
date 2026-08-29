@@ -30,10 +30,10 @@ export default function MagnifierAppPicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function MagnifierAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Magnifier setup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Magnifier app (already on iPhone — search "Magnifier" on home screen).</li>
               <li>Or add to Control Center: Settings → Control Center → Magnifier.</li>
               <li>Triple-press side button as accessibility shortcut.</li>
@@ -57,7 +57,7 @@ export default function MagnifierAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Seeing AI — for vision loss</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Aim phone at any text — instantly reads it aloud.</li>
               <li>Reads documents (handles handwritten too).</li>
               <li>Identifies US currency by denomination.</li>
@@ -72,7 +72,7 @@ export default function MagnifierAppPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Be My Eyes — volunteer help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free app. Tap "Call a Volunteer".</li>
               <li>Random sighted volunteer from millions worldwide answers your video call.</li>
               <li>You point camera at: medication label, recipe, mail, etc.</li>
@@ -86,7 +86,7 @@ export default function MagnifierAppPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When to see a low-vision specialist</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re struggling daily — see an optometrist who specializes in low vision. They can prescribe specialty glasses, electronic magnifiers (CCTVs $300-3,000), or refer to occupational therapy. Medicare and most insurance covers low-vision evaluations. Find specialist at LowVision.org.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re struggling daily — see an optometrist who specializes in low vision. They can prescribe specialty glasses, electronic magnifiers (CCTVs $300-3,000), or refer to occupational therapy. Medicare and most insurance covers low-vision evaluations. Find specialist at LowVision.org.</p>
           </CardContent>
         </Card>
       </main>

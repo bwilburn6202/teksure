@@ -19,7 +19,7 @@ export default function HelpGrandkidsHomework() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apps schools actually use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Google Classroom</strong> — most US K-12 schools. The kid logs into classroom.google.com and sees assignments.</li>
               <li><strong>Schoology / Canvas / Blackboard</strong> — what it\'s called varies by school district.</li>
               <li><strong>Microsoft Teams for Education</strong> — used by some schools.</li>
@@ -32,7 +32,7 @@ export default function HelpGrandkidsHomework() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Helping a grandkid</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Ask the kid (or their parent) "what app do you use for school?"</li>
               <li>Sit with them at their device. Let them open it — they know how.</li>
               <li>Find the assignment (usually says due date and instructions).</li>
@@ -46,7 +46,7 @@ export default function HelpGrandkidsHomework() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free resources for any subject</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Khan Academy</strong> — free, K-12 + college. Math, science, English, history. Best free homework helper.</li>
               <li><strong>Crash Course (YouTube)</strong> — short, funny, accurate videos on every subject.</li>
               <li><strong>NoRedInk</strong> — grammar and writing practice.</li>
@@ -60,21 +60,21 @@ export default function HelpGrandkidsHomework() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AI and homework — a tricky topic</h2>
-            <p className="text-sm mb-2">ChatGPT and other AI tools can write essays. Most schools forbid using them for assignments — and detect them. But AI is great for:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">ChatGPT and other AI tools can write essays. Most schools forbid using them for assignments — and detect them. But AI is great for:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Explaining concepts ("What does photosynthesis mean? Explain like I\'m 10.").</li>
               <li>Generating practice problems.</li>
               <li>Brainstorming ideas (then the kid writes their own version).</li>
               <li>Checking their work AFTER they\'ve done it.</li>
             </ul>
-            <p className="text-sm mt-2">Talk to the parent about what\'s allowed before using AI.</p>
+            <p className="text-base mt-2">Talk to the parent about what\'s allowed before using AI.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Library card unlocks more</h3>
-            <p className="text-sm text-muted-foreground">Most US public libraries provide FREE access to <strong>Brainfuse / HelpNow</strong> — real human tutors available evenings, K-college. Saves hundreds in tutoring fees.</p>
+            <p className="text-base text-muted-foreground">Most US public libraries provide FREE access to <strong>Brainfuse / HelpNow</strong> — real human tutors available evenings, K-college. Saves hundreds in tutoring fees.</p>
           </CardContent>
         </Card>
       </main>

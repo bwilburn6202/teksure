@@ -19,7 +19,7 @@ export default function TeachGrandkidsTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why this works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Kids LOVE being the expert.</li>
               <li>You actually learn (kids show you tricks).</li>
               <li>Real conversation beats forced "how&apos;s school?".</li>
@@ -33,7 +33,7 @@ export default function TeachGrandkidsTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Things to learn</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FaceTime / video call setup.</li>
               <li>Take + send photos.</li>
               <li>Voice texting tricks.</li>
@@ -49,7 +49,7 @@ export default function TeachGrandkidsTech() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-tech-class for grandkids to teach</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Schedule 30-60 min session.</li>
               <li>1-2 specific topics (not 10).</li>
               <li>Take notes — write down steps.</li>
@@ -62,7 +62,7 @@ export default function TeachGrandkidsTech() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best gift exchange</h3>
-            <p className="text-sm text-muted-foreground">You teach grandkid: cooking, story from your life, old skills (knitting, woodworking, fishing). They teach: tech, slang, current music. Mutual learning = real relationship. Lasts decades.</p>
+            <p className="text-base text-muted-foreground">You teach grandkid: cooking, story from your life, old skills (knitting, woodworking, fishing). They teach: tech, slang, current music. Mutual learning = real relationship. Lasts decades.</p>
           </CardContent>
         </Card>
       </main>

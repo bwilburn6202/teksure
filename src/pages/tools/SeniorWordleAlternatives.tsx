@@ -22,7 +22,7 @@ export default function SeniorWordleAlternatives() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Octordle</h2><p>FREE. 8 Wordles at once. Hard.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Worldle</h2><p>FREE. Guess country from outline. Geography Wordle.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Daily Crossword</h2><p>NYT Mini FREE. 5x5 grid. 1-2 minutes.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 3-4 daily puzzles = 15 minutes of brain work. Sharpens memory.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 3-4 daily puzzles = 15 minutes of brain work. Sharpens memory.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -17,12 +17,12 @@ export default function SeniorB12Tracking() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why seniors deficient</h2><p>Stomach acid drops with age. B12 absorption decreases. Common.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Symptoms</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Fatigue</li><li>Memory problems</li><li>Tingling hands/feet</li><li>Balance issues</li><li>Mood changes</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Symptoms</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Fatigue</li><li>Memory problems</li><li>Tingling hands/feet</li><li>Balance issues</li><li>Mood changes</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Test it</h2><p>Annual blood test. Medicare covers. Cheap to check.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Supplements</h2><p>$10-$20/year. Sublingual tablet under tongue better than swallowed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Food sources</h2><p>Beef, fish, eggs, dairy. Vegans always need supplement.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Metformin issue</h2><p>Diabetes med depletes B12. Take supplement if on metformin.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Don&apos;t accept fatigue as &ldquo;just aging.&rdquo; Test B12 first.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Don&apos;t accept fatigue as &ldquo;just aging.&rdquo; Test B12 first.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function DownsizeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">90 days out</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Measure new place. Get floor plan.</li>
               <li>What furniture WILL fit? Mark on plan.</li>
               <li>Take photos of every room currently.</li>
@@ -32,7 +32,7 @@ export default function DownsizeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">60 days out</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sort one room at a time.</li>
               <li>4 piles: Keep, Sell, Donate, Toss.</li>
               <li>Hire estate sale company ($500-2,000) — they handle ALL of "Sell".</li>
@@ -46,7 +46,7 @@ export default function DownsizeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">30 days out</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Final pass — every closet, drawer, cabinet.</li>
               <li>Estate sale weekend.</li>
               <li>Movers booked.</li>
@@ -60,7 +60,7 @@ export default function DownsizeChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hardest decisions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mom&apos;s china (sentimental, no one wants).</li>
               <li>Dad&apos;s tools (big, useful, no buyer).</li>
               <li>30 years of family photos (digitize first — see /tools/scan-old-photos).</li>
@@ -74,7 +74,7 @@ export default function DownsizeChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior Move Manager</h3>
-            <p className="text-sm text-muted-foreground">National Association of Senior Move Managers (nasmm.org) — pros who specialize in senior downsizing. They sort, organize, sell, set up new home. $1,500-5,000. Worth it for many. Especially big homes.</p>
+            <p className="text-base text-muted-foreground">National Association of Senior Move Managers (nasmm.org) — pros who specialize in senior downsizing. They sort, organize, sell, set up new home. $1,500-5,000. Worth it for many. Especially big homes.</p>
           </CardContent>
         </Card>
       </main>

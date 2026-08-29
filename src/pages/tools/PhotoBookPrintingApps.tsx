@@ -19,7 +19,7 @@ export default function PhotoBookPrintingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why photo books?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Photos on phone get forgotten in cloud.</li>
               <li>Printed books last for generations.</li>
               <li>Beautiful coffee table conversation pieces.</li>
@@ -33,7 +33,7 @@ export default function PhotoBookPrintingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Shutterfly — most popular</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>20-page hardcover book starts $30.</li>
               <li>Free templates — drag photos in.</li>
               <li>Frequent 50% off promos.</li>
@@ -47,7 +47,7 @@ export default function PhotoBookPrintingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mixbook — premium</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Higher-quality books — thicker paper.</li>
               <li>20-page book starts $40.</li>
               <li>Beautiful designs + customization.</li>
@@ -61,7 +61,7 @@ export default function PhotoBookPrintingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Chatbooks — easiest</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Auto-creates books from your phone photos.</li>
               <li>$10 + shipping — softcover, 60 photos.</li>
               <li>Subscription option — monthly photo book.</li>
@@ -75,7 +75,7 @@ export default function PhotoBookPrintingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free + cheap options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walmart Photo — books from $10.</li>
               <li>Costco Photo — high quality, member prices.</li>
               <li>CVS, Walgreens — same-day photo books.</li>
@@ -89,7 +89,7 @@ export default function PhotoBookPrintingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for great photo books</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pick 30–50 best photos, not 200.</li>
               <li>Group by event or year.</li>
               <li>Add captions with dates + names.</li>
@@ -103,7 +103,7 @@ export default function PhotoBookPrintingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Annual family yearbook</h3>
-            <p className="text-sm text-muted-foreground">A wonderful yearly tradition: every January, make a family photo book of the previous year. Pick 50–80 best photos from the year — birthdays, holidays, trips, everyday moments. Order from Shutterfly during a 50% off sale ($20–$25). After 10 years you have a complete visual family history. Future generations will treasure these — far more than thousands of unsorted phone photos.</p>
+            <p className="text-base text-muted-foreground">A wonderful yearly tradition: every January, make a family photo book of the previous year. Pick 50–80 best photos from the year — birthdays, holidays, trips, everyday moments. Order from Shutterfly during a 50% off sale ($20–$25). After 10 years you have a complete visual family history. Future generations will treasure these — far more than thousands of unsorted phone photos.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function SeniorDiscountApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> The big membership programs</h2>
-            <ul className="space-y-3 text-sm">
+            <ul className="space-y-3 text-base">
               <li><strong>AARP ($16/year)</strong> — open to anyone 50+. Offers savings on car rentals (Avis, Budget), hotels (Best Western, Hilton, Hyatt), restaurants (Outback, Denny's), insurance, glasses, and more. Pays for itself in one good vacation.</li>
               <li><strong>AAA</strong> — roadside assistance plus surprisingly good travel and shopping discounts.</li>
               <li><strong>Costco / Sam's Club</strong> — beyond bulk groceries, member-only travel, gas, optical, tires.</li>
@@ -32,7 +32,7 @@ export default function SeniorDiscountApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Prescription savings</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>GoodRx (free app)</strong> — show your phone at the pharmacy. Often beats your insurance copay. Saves seniors hundreds per year.</li>
               <li><strong>Mark Cuban Cost Plus Drug Co (costplusdrugs.com)</strong> — generic prescriptions at cost + 15%. Often dramatically cheaper.</li>
               <li><strong>Amazon Pharmacy</strong> — for Prime members, often discounted, delivered.</li>
@@ -45,7 +45,7 @@ export default function SeniorDiscountApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Restaurant senior days/nights</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>IHOP</strong> — 55+ menu, 10% off, free coffee.</li>
               <li><strong>Denny's</strong> — 55+ menu items, AARP discount.</li>
               <li><strong>Wendy's, Burger King, McDonald's</strong> — senior coffee discount at most locations.</li>
@@ -53,14 +53,14 @@ export default function SeniorDiscountApps() {
               <li><strong>Chick-fil-A</strong> — many locations offer free drinks for seniors (varies by store).</li>
               <li><strong>Subway, Arby's, Sonic</strong> — 10% senior discount at most.</li>
             </ul>
-            <p className="text-sm mt-2 text-muted-foreground">Always ask — many discounts aren't advertised but the cashier will apply them.</p>
+            <p className="text-base mt-2 text-muted-foreground">Always ask — many discounts aren't advertised but the cashier will apply them.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Free or discounted entertainment</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>America the Beautiful Senior Pass</strong> — $80 lifetime, gets you and 3 adults into all 2,000+ federal recreation sites (national parks, monuments). Best deal in the US for travelers.</li>
               <li><strong>Museum free days</strong> — most major museums have one free day per month. Check their website.</li>
               <li><strong>Smithsonian</strong> — always free.</li>
@@ -73,7 +73,7 @@ export default function SeniorDiscountApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Shopping savings</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Kohl's</strong> — 15% off for 60+ on Wednesdays.</li>
               <li><strong>Ross Dress for Less</strong> — 10% off Tuesdays for 55+.</li>
               <li><strong>Goodwill</strong> — 10-25% off senior days vary by location.</li>
@@ -88,7 +88,7 @@ export default function SeniorDiscountApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Just ASK</h3>
-            <p className="text-sm text-muted-foreground">Many businesses offer senior discounts but don't advertise them. At the cash register, just ask: "Do you have a senior discount?" Restaurants, hotels, airlines, hair salons — about 1 in 3 gives you something. Worst case, they say no.</p>
+            <p className="text-base text-muted-foreground">Many businesses offer senior discounts but don't advertise them. At the cash register, just ask: "Do you have a senior discount?" Restaurants, hotels, airlines, hair salons — about 1 in 3 gives you something. Worst case, they say no.</p>
           </CardContent>
         </Card>
       </main>

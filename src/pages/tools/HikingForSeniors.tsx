@@ -19,7 +19,7 @@ export default function HikingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior hiking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cardio + strength + balance combined.</li>
               <li>Lower BP, better mood.</li>
               <li>Outdoors = vitamin D + better sleep.</li>
@@ -34,7 +34,7 @@ export default function HikingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find right trails</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AllTrails app</strong> — filter by difficulty, length.</li>
               <li>Start with &quot;easy&quot; trails (paved or flat).</li>
               <li>Loop trails better than out-and-back (boredom).</li>
@@ -49,7 +49,7 @@ export default function HikingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior gear</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Trekking poles</strong> ($50-150) — knee + balance help. Game-changer.</li>
               <li><strong>Hiking shoes</strong> — Hoka, Merrell, Keen. Wide widths.</li>
               <li><strong>Wool socks</strong> — blister prevention.</li>
@@ -62,7 +62,7 @@ export default function HikingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tell someone your route + return time.</li>
               <li>Bring fully charged phone.</li>
               <li>Garmin inReach satellite messenger ($300 + $15/mo) for remote.</li>
@@ -78,7 +78,7 @@ export default function HikingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior National Park Pass</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$80 LIFETIME for 62+ ($20/year option too).</li>
               <li>Free entry to ALL national parks.</li>
               <li>Free at federal recreation sites.</li>
@@ -92,7 +92,7 @@ export default function HikingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior hiking groups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sierra Club</strong> — many senior-paced hikes.</li>
               <li><strong>AMC (Appalachian Mountain Club)</strong> — Northeast.</li>
               <li><strong>Meetup.com</strong> — search &quot;senior hiking [city].&quot;</li>
@@ -106,7 +106,7 @@ export default function HikingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Build slowly</h3>
-            <p className="text-sm text-muted-foreground">Start: 1-mile flat trail. Each month, add 0.5 miles or harder. Year 1: comfortable 5-mile hikes. Many seniors do 10+ mile hikes regularly. National parks 5-10x easier than imagined. Gear + pacing = key. Hike weekly = transformative health.</p>
+            <p className="text-base text-muted-foreground">Start: 1-mile flat trail. Each month, add 0.5 miles or harder. Year 1: comfortable 5-mile hikes. Many seniors do 10+ mile hikes regularly. National parks 5-10x easier than imagined. Gear + pacing = key. Hike weekly = transformative health.</p>
           </CardContent>
         </Card>
       </main>

@@ -198,7 +198,7 @@ const MockupA = () => {
                   <span className="inline-flex px-2 py-0.5 rounded-full text-xs font-medium" style={{ background: '#f2f9ff', color: '#097fe8' }}>
                     {guide.category}
                   </span>
-                  <span className="text-xs" style={{ color: 'rgba(0,0,0,0.40)' }}>{guide.time} read</span>
+                  <span className="text-sm" style={{ color: 'rgba(0,0,0,0.40)' }}>{guide.time} read</span>
                 </div>
               </div>
             ))}
@@ -221,7 +221,7 @@ const MockupA = () => {
                   <item.icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-lg font-bold mb-2">{item.title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: 'rgba(0,0,0,0.55)' }}>{item.desc}</p>
+                <p className="text-base leading-relaxed" style={{ color: 'rgba(0,0,0,0.55)' }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -244,7 +244,7 @@ const MockupA = () => {
               <div key={item.title} className="p-5 rounded-xl" style={{ border: '1px solid rgba(0,0,0,0.06)' }}>
                 <item.icon className="w-5 h-5 mb-3" style={{ color: '#0075de' }} />
                 <h3 className="text-[15px] font-semibold mb-1">{item.title}</h3>
-                <p className="text-sm" style={{ color: 'rgba(0,0,0,0.50)' }}>{item.desc}</p>
+                <p className="text-base" style={{ color: 'rgba(0,0,0,0.50)' }}>{item.desc}</p>
               </div>
             ))}
           </div>
@@ -280,7 +280,7 @@ const MockupA = () => {
                 <div className="w-6 h-6 rounded flex items-center justify-center text-white font-bold text-xs" style={{ background: '#0075de' }}>T</div>
                 <span className="font-bold">TekSure</span>
               </div>
-              <p className="text-sm" style={{ color: 'rgba(0,0,0,0.45)' }}>Free tech help for everyone.</p>
+              <p className="text-base" style={{ color: 'rgba(0,0,0,0.45)' }}>Free tech help for everyone.</p>
             </div>
             <div>
               <h4 className="text-sm font-semibold mb-3">Learn</h4>

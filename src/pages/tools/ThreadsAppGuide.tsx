@@ -19,7 +19,7 @@ export default function ThreadsAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Threads?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Made by Meta (Facebook + Instagram).</li>
               <li>Like Twitter but text-focused.</li>
               <li>Launched 2023 — newer.</li>
@@ -33,7 +33,7 @@ export default function ThreadsAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Threads vs Twitter (X)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Threads — calmer atmosphere.</li>
               <li>Less political extremism.</li>
               <li>News + lifestyle balance.</li>
@@ -47,7 +47,7 @@ export default function ThreadsAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sign up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Need Instagram account first.</li>
               <li>Download Threads app.</li>
               <li>Sign in with Instagram.</li>
@@ -61,7 +61,7 @@ export default function ThreadsAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to post</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap pencil icon bottom.</li>
               <li>Type up to 500 characters.</li>
               <li>Add photo or video.</li>
@@ -75,7 +75,7 @@ export default function ThreadsAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to follow</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local news sources.</li>
               <li>Favorite authors / celebrities.</li>
               <li>AARP for seniors.</li>
@@ -89,7 +89,7 @@ export default function ThreadsAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior cautions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Same Meta privacy policy as Facebook.</li>
               <li>Tied to Instagram = harder to delete.</li>
               <li>Ads in feed.</li>
@@ -103,7 +103,7 @@ export default function ThreadsAppGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Skip if not interested</h3>
-            <p className="text-sm text-muted-foreground">Many seniors don&apos;t need yet another platform. If Facebook + Instagram + email + texting enough = skip Threads. No FOMO. Most don&apos;t miss it. Twitter (X) declining. If wanting alternative — try BlueSky too. Or skip social text platforms entirely. Quality over quantity.</p>
+            <p className="text-base text-muted-foreground">Many seniors don&apos;t need yet another platform. If Facebook + Instagram + email + texting enough = skip Threads. No FOMO. Most don&apos;t miss it. Twitter (X) declining. If wanting alternative — try BlueSky too. Or skip social text platforms entirely. Quality over quantity.</p>
           </CardContent>
         </Card>
       </main>

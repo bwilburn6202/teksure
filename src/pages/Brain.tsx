@@ -175,11 +175,11 @@ export default function BrainPage() {
             <p className="text-muted-foreground text-lg mb-2">
               Ask any tech question. Get answers from our library of {guides.length.toLocaleString()}+ guides.
             </p>
-            <p className="text-xs text-muted-foreground mb-8 flex items-center justify-center gap-1">
+            <p className="text-sm text-muted-foreground mb-8 flex items-center justify-center gap-1">
               {ollamaStatus === 'online' ? (
-                <><CheckCircle className="h-3 w-3 text-green-500" /> Ollama connected — AI answers enabled</>
+                <><CheckCircle className="h-3 w-3 text-success-foreground" /> Ollama connected — AI answers enabled</>
               ) : ollamaStatus === 'offline' ? (
-                <><AlertCircle className="h-3 w-3 text-amber-500" /> Ollama not detected — using guide search only</>
+                <><AlertCircle className="h-3 w-3 text-warn-foreground" /> Ollama not detected — using guide search only</>
               ) : (
                 <><Loader2 className="h-3 w-3 animate-spin" /> Checking for local AI...</>
               )}
@@ -236,17 +236,17 @@ export default function BrainPage() {
                   <CardContent className="p-5">
                     <div className="flex items-center gap-2 mb-3">
                       <Sparkles className="h-4 w-4 text-primary" />
-                      <span className="text-sm font-semibold text-primary">AI Answer</span>
+                      <span className="text-base font-semibold text-primary">AI Answer</span>
                       <Badge variant="outline" className="text-xs ml-auto">Powered by Ollama</Badge>
                     </div>
-                    <p className="text-sm leading-relaxed">{result.aiAnswer}</p>
+                    <p className="text-base leading-relaxed">{result.aiAnswer}</p>
                   </CardContent>
                 </Card>
               )}
 
               {/* Guide results */}
               <div>
-                <p className="text-sm text-muted-foreground mb-4">
+                <p className="text-base text-muted-foreground mb-4">
                   {result.guides.length > 0
                     ? `Found ${result.guides.length} relevant guide${result.guides.length !== 1 ? 's' : ''} for "${result.query}"`
                     : `No guides found for "${result.query}"`}
@@ -256,7 +256,7 @@ export default function BrainPage() {
                   <div className="text-center py-12 rounded-2xl border border-border bg-muted/30">
                     <p className="text-2xl mb-3"></p>
                     <p className="font-medium mb-2">No exact matches found</p>
-                    <p className="text-sm text-muted-foreground mb-4">Try different words or browse all guides.</p>
+                    <p className="text-base text-muted-foreground mb-4">Try different words or browse all guides.</p>
                     <Button asChild variant="outline" className="rounded-xl gap-2">
                       <Link to="/guides"><BookOpen className="h-4 w-4" /> Browse all guides</Link>
                     </Button>
@@ -272,7 +272,7 @@ export default function BrainPage() {
                               <div className="flex-1 min-w-0">
                                 <div className="flex items-center gap-2 mb-1 flex-wrap">
                                   <Badge variant="secondary" className="text-xs">{categoryLabels[guide.category]}</Badge>
-                                  <span className="text-xs text-muted-foreground flex items-center gap-1">
+                                  <span className="text-sm text-muted-foreground flex items-center gap-1">
                                     <Clock className="h-3 w-3" />{guide.readTime}
                                   </span>
                                 </div>
@@ -291,7 +291,7 @@ export default function BrainPage() {
 
               {/* Try another search */}
               <div className="pt-4 border-t border-border">
-                <p className="text-xs text-muted-foreground mb-3 text-center">Try another question</p>
+                <p className="text-sm text-muted-foreground mb-3 text-center">Try another question</p>
                 <div className="flex flex-wrap justify-center gap-2">
                   {SUGGESTED_QUESTIONS.filter(q => q !== result.query).slice(0, 4).map(q => (
                     <button
@@ -315,7 +315,7 @@ export default function BrainPage() {
                   <span className="text-2xl shrink-0"></span>
                   <div>
                     <h3 className="font-semibold text-sm mb-1">AI answers coming soon</h3>
-                    <p className="text-xs text-muted-foreground">
+                    <p className="text-sm text-muted-foreground">
                       The guide search below works great right now. AI-powered answers are being set up and will appear here automatically once ready.
                     </p>
                   </div>
@@ -334,7 +334,7 @@ export default function BrainPage() {
               <div key={item.title} className="p-4 rounded-xl border border-border bg-muted/30">
                 <div className="text-2xl mb-2">{item.emoji}</div>
                 <h3 className="font-semibold text-sm mb-1">{item.title}</h3>
-                <p className="text-xs text-muted-foreground">{item.desc}</p>
+                <p className="text-sm text-muted-foreground">{item.desc}</p>
               </div>
             ))}
           </div>

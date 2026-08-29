@@ -304,7 +304,7 @@ export default function WifiTroubleshooter() {
                         className="w-full flex items-center gap-3 text-left px-4 py-3.5 rounded-xl border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
                       >
                         <span className="text-2xl">{opt.emoji}</span>
-                        <span className="font-medium text-sm">{opt.label}</span>
+                        <span className="font-medium text-base">{opt.label}</span>
                         <ChevronRight className="h-4 w-4 text-muted-foreground ml-auto" />
                       </button>
                     ))}
@@ -327,7 +327,7 @@ export default function WifiTroubleshooter() {
                         className="w-full flex items-center gap-3 text-left px-4 py-3.5 rounded-xl border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
                       >
                         <span className="text-2xl">{opt.emoji}</span>
-                        <span className="font-medium text-sm">{opt.label}</span>
+                        <span className="font-medium text-base">{opt.label}</span>
                         <ChevronRight className="h-4 w-4 text-muted-foreground ml-auto" />
                       </button>
                     ))}
@@ -343,21 +343,21 @@ export default function WifiTroubleshooter() {
                     <h2 className="text-lg font-semibold leading-snug">{current.question}</h2>
                   </div>
                   {current.helpText && (
-                    <div className="flex items-start gap-2 p-2.5 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 mb-4">
-                      <Lightbulb className="h-3.5 w-3.5 text-blue-600 shrink-0 mt-0.5" />
-                      <p className="text-xs text-blue-700 dark:text-blue-300">{current.helpText}</p>
+                    <div className="flex items-start gap-2 p-2.5 rounded-lg bg-info border border-info-foreground/25 mb-4">
+                      <Lightbulb className="h-3.5 w-3.5 text-info-foreground shrink-0 mt-0.5" />
+                      <p className="text-sm text-info-foreground ">{current.helpText}</p>
                     </div>
                   )}
                   <div className="grid grid-cols-2 gap-3 mt-4">
                     <button
                       onClick={() => current.yesNext && goTo(current.yesNext)}
-                      className="py-4 rounded-xl border-2 border-green-400/60 bg-green-50 dark:bg-green-900/20 hover:bg-green-100 dark:hover:bg-green-900/40 transition-colors font-semibold text-green-700 dark:text-green-300 flex items-center justify-center gap-2"
+                      className="py-4 rounded-xl border-2 border-green-400/60 bg-success hover:bg-success transition-colors font-semibold text-success-foreground flex items-center justify-center gap-2"
                     >
                       <CheckCircle2 className="h-5 w-5" /> Yes
                     </button>
                     <button
                       onClick={() => current.noNext && goTo(current.noNext)}
-                      className="py-4 rounded-xl border-2 border-red-300/60 bg-red-50 dark:bg-red-900/20 hover:bg-red-100 dark:hover:bg-red-900/40 transition-colors font-semibold text-red-600 dark:text-red-300 flex items-center justify-center gap-2"
+                      className="py-4 rounded-xl border-2 border-red-300/60 bg-danger hover:bg-danger transition-colors font-semibold text-danger-foreground flex items-center justify-center gap-2"
                     >
                       No
                     </button>
@@ -371,7 +371,7 @@ export default function WifiTroubleshooter() {
                   <div className="text-center mb-4">
                     <div className="text-5xl mb-2">{current.emoji}</div>
                     <h2 className="text-xl font-bold">{current.statement}</h2>
-                    <p className="text-sm text-muted-foreground mt-1">{current.solution}</p>
+                    <p className="text-base text-muted-foreground mt-1">{current.solution}</p>
                   </div>
                   {current.solutionSteps && (
                     <div className="mt-4">
@@ -380,14 +380,14 @@ export default function WifiTroubleshooter() {
                         {current.solutionSteps.map((step, i) => (
                           <li key={i} className="flex gap-3">
                             <span className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary text-xs font-bold flex items-center justify-center mt-0.5">{i + 1}</span>
-                            <p className="text-sm text-muted-foreground leading-relaxed">{step}</p>
+                            <p className="text-base text-muted-foreground leading-relaxed">{step}</p>
                           </li>
                         ))}
                       </ol>
                     </div>
                   )}
-                  <div className="mt-6 p-3 rounded-lg bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-800">
-                    <p className="text-xs text-amber-700 dark:text-amber-300">
+                  <div className="mt-6 p-3 rounded-lg bg-warn border border-warn-foreground/25 ">
+                    <p className="text-sm text-warn-foreground ">
                       <strong>Still not working?</strong> If these steps don't resolve the issue, it's likely a problem with your router or internet provider. Call them directly — most issues can be resolved remotely.
                     </p>
                   </div>

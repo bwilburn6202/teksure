@@ -30,10 +30,10 @@ export default function SleepHygieneApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function SleepHygieneApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior sleep tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Same bedtime + wake time daily.</li>
               <li>No phone in bed — see /tools/bedtime-phone-routine.</li>
               <li>Cool bedroom (65-68°F).</li>
@@ -56,10 +56,10 @@ export default function SleepHygieneApps() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sleep apnea — common in seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>30-50% of seniors have sleep apnea, often undiagnosed.</li>
               <li>Symptoms: snoring, gasping at night, daytime tiredness, headache morning.</li>
               <li>Untreated = doubles dementia + heart disease risk.</li>
@@ -73,7 +73,7 @@ export default function SleepHygieneApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If app helps — great. If it stresses — skip</h3>
-            <p className="text-sm text-muted-foreground">Some seniors get anxious tracking sleep ("orthosomnia"). If app makes you more anxious about sleep — STOP using. Many sleep best with no tracking. Trust how you feel in morning.</p>
+            <p className="text-base text-muted-foreground">Some seniors get anxious tracking sleep ("orthosomnia"). If app makes you more anxious about sleep — STOP using. Many sleep best with no tracking. Trust how you feel in morning.</p>
           </CardContent>
         </Card>
       </main>

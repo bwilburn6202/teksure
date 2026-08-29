@@ -31,10 +31,10 @@ export default function JewishCalendarApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function JewishCalendarApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stream services</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Most Reform/Conservative synagogues stream Shabbat services on Facebook or Zoom.</li>
               <li>Yom Kippur livestreams free for everyone (high holy day tradition).</li>
               <li>Central Synagogue (NYC) has a top-tier worldwide livestream.</li>
@@ -55,7 +55,7 @@ export default function JewishCalendarApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other useful</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>JewishGen</strong> — best for Jewish genealogy / Holocaust ancestry.</li>
               <li><strong>Yad Vashem</strong> — Holocaust victim database, Survivor testimonies.</li>
               <li><strong>JewBelong</strong> — for the unaffiliated. Modern voice.</li>
@@ -67,7 +67,7 @@ export default function JewishCalendarApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For grandkids</h3>
-            <p className="text-sm text-muted-foreground">PJ Library (free) sends Jewish children\'s books for ages 0-8. Sign up grandkids at pjlibrary.org. Free monthly mailing for the first year.</p>
+            <p className="text-base text-muted-foreground">PJ Library (free) sends Jewish children\'s books for ages 0-8. Sign up grandkids at pjlibrary.org. Free monthly mailing for the first year.</p>
           </CardContent>
         </Card>
       </main>

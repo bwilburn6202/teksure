@@ -57,22 +57,22 @@ export default function BowlingScoreCard() {
   const gamesPlayed = allScores.length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Bowling Score Card | TekSure" description="Log up to 3 games per session. See your season average, high game, and total games. Print for league records." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <Target className="h-7 w-7 text-rose-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Bowling Score Card</h1>
+            <Target className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Bowling Score Card</h1>
           </div>
-          <p className="text-gray-600 text-lg">Log your scores after league night or open bowling. Watch your average climb over the season.</p>
+          <p className="text-muted-foreground text-lg">Log your scores after league night or open bowling. Watch your average climb over the season.</p>
         </div>
 
         {games.length > 0 && (
           <div className="grid grid-cols-3 gap-3 mb-4">
-            <Card><CardContent className="py-3 px-3 text-center"><p className="text-xs text-gray-500">Games played</p><p className="text-2xl font-bold text-rose-700">{gamesPlayed}</p></CardContent></Card>
-            <Card><CardContent className="py-3 px-3 text-center"><p className="text-xs text-gray-500">Season average</p><p className="text-2xl font-bold text-rose-700">{seasonAvg}</p></CardContent></Card>
-            <Card><CardContent className="py-3 px-3 text-center"><p className="text-xs text-gray-500">High game</p><p className="text-2xl font-bold text-rose-700">{seasonHigh}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-3 text-center"><p className="text-sm text-muted-foreground">Games played</p><p className="text-2xl font-bold text-danger-foreground">{gamesPlayed}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-3 text-center"><p className="text-sm text-muted-foreground">Season average</p><p className="text-2xl font-bold text-danger-foreground">{seasonAvg}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-3 text-center"><p className="text-sm text-muted-foreground">High game</p><p className="text-2xl font-bold text-danger-foreground">{seasonHigh}</p></CardContent></Card>
           </div>
         )}
 
@@ -108,15 +108,15 @@ export default function BowlingScoreCard() {
                   <div key={g.id} className="py-2 text-sm flex items-start justify-between gap-2">
                     <div className="flex-1 min-w-0">
                       <div className="flex flex-wrap gap-2 items-center">
-                        <span className="text-gray-500 text-xs">{g.date}</span>
-                        {g.alley && <span className="text-xs text-gray-700">{g.alley}</span>}
+                        <span className="text-muted-foreground text-sm">{g.date}</span>
+                        {g.alley && <span className="text-sm text-foreground">{g.alley}</span>}
                       </div>
-                      <p className="font-semibold text-gray-900 mt-0.5">
-                        {g.scores.join(" / ")} &nbsp; <span className="text-xs font-normal text-gray-500">total {g.total}, avg {g.avg.toFixed(1)}</span>
+                      <p className="font-semibold text-foreground mt-0.5">
+                        {g.scores.join(" / ")} &nbsp; <span className="text-sm font-normal text-muted-foreground">total {g.total}, avg {g.avg.toFixed(1)}</span>
                       </p>
-                      {g.note && <p className="text-xs text-gray-600 italic mt-0.5">{g.note}</p>}
+                      {g.note && <p className="text-sm text-muted-foreground italic mt-0.5">{g.note}</p>}
                     </div>
-                    <Button variant="ghost" size="icon" onClick={() => remove(g.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                    <Button variant="ghost" size="icon" onClick={() => remove(g.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                       <Trash2 className="h-3 w-3" />
                     </Button>
                   </div>
@@ -126,12 +126,12 @@ export default function BowlingScoreCard() {
           </Card>
         )}
 
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">League average matters:</span> Your USBC league average is calculated after 21 games. League secretaries use it for handicap. Most senior leagues use 80% handicap to a 220 scratch — meaning a lower-average bowler gets pins added to make a fair game.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">League average matters:</span> Your USBC league average is calculated after 21 games. League secretaries use it for handicap. Most senior leagues use 80% handicap to a 220 scratch — meaning a lower-average bowler gets pins added to make a fair game.</p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

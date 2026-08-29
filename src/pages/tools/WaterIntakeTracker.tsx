@@ -57,7 +57,7 @@ export default function WaterIntakeTracker() {
     : 0;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Water Intake Tracker | TekSure"
         description="Tap a button each time you drink a glass of water. See progress against the 8-glass goal and a 7-day history."
@@ -66,10 +66,10 @@ export default function WaterIntakeTracker() {
       <div className="max-w-xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Droplet className="h-7 w-7 text-blue-500" />
-            <h1 className="text-3xl font-bold text-gray-900">Water Intake Tracker</h1>
+            <Droplet className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Water Intake Tracker</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Tap the plus button each time you finish a glass. Aim for about 8 glasses a day — adjust as your doctor advises.
           </p>
         </div>
@@ -77,15 +77,15 @@ export default function WaterIntakeTracker() {
         {/* Today's tracker */}
         <Card className="mb-4">
           <CardHeader className="pb-2 pt-3">
-            <CardTitle className="text-lg text-gray-700 text-center">
+            <CardTitle className="text-lg text-foreground text-center">
               Today: {formatDate(today)}
             </CardTitle>
           </CardHeader>
           <CardContent className="text-center">
             {/* Big counter */}
             <div className="my-4">
-              <p className="text-6xl font-bold text-blue-600">{todayCount}</p>
-              <p className="text-sm text-gray-500 mt-1">{cupCount === 1 ? "glass" : "glasses"} · about {ozCount} oz</p>
+              <p className="text-6xl font-bold text-info-foreground">{todayCount}</p>
+              <p className="text-base text-muted-foreground mt-1">{cupCount === 1 ? "glass" : "glasses"} · about {ozCount} oz</p>
             </div>
 
             {/* Visual glasses */}
@@ -105,7 +105,7 @@ export default function WaterIntakeTracker() {
                 style={{ width: `${pct}%` }}
               />
             </div>
-            <p className={`text-sm font-medium mb-4 ${goalMet ? "text-green-700" : "text-gray-600"}`}>
+            <p className={`text-base font-medium mb-4 ${goalMet ? "text-green-700" : "text-gray-600"}`}>
               {goalMet ? "Goal met! Keep sipping." : `${GOAL_GLASSES - todayCount} more to reach today's goal`}
             </p>
 
@@ -132,7 +132,7 @@ export default function WaterIntakeTracker() {
             </div>
 
             {todayCount > 0 && (
-              <Button variant="ghost" onClick={saveDay} className="mt-3 text-sm text-gray-500 print:hidden">
+              <Button variant="ghost" onClick={saveDay} className="mt-3 text-sm text-muted-foreground print:hidden">
                 Save today and start tomorrow
               </Button>
             )}
@@ -155,14 +155,14 @@ export default function WaterIntakeTracker() {
                   const dayMet = h.glasses >= GOAL_GLASSES;
                   return (
                     <div key={h.date} className="flex items-center gap-2 text-sm py-1">
-                      <span className="w-20 text-gray-600">{formatDate(h.date)}</span>
+                      <span className="w-20 text-muted-foreground">{formatDate(h.date)}</span>
                       <div className="flex-1 bg-gray-200 rounded-full h-2 overflow-hidden">
                         <div
                           className={`h-2 rounded-full ${dayMet ? "bg-green-500" : "bg-blue-500"}`}
                           style={{ width: `${dayPct}%` }}
                         />
                       </div>
-                      <span className="w-12 text-right text-gray-700 font-medium">{h.glasses}</span>
+                      <span className="w-12 text-right text-foreground font-medium">{h.glasses}</span>
                     </div>
                   );
                 })}
@@ -178,21 +178,21 @@ export default function WaterIntakeTracker() {
               Print History
             </Button>
           )}
-          <Button variant="ghost" onClick={reset} className="gap-2 text-gray-500">
+          <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground">
             <RotateCcw className="h-4 w-4" />
             Reset All
           </Button>
         </div>
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Set a glass on the kitchen counter and refill it any time it is empty. The visual reminder works better than counting.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

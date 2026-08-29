@@ -22,7 +22,7 @@ export default function SeniorDepressionApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common in seniors</h2><p>1 in 5 seniors has depression. Often missed. Treatable.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Light therapy</h2><p>$60 box. 30 min daily. Real benefit for winter depression.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Get checked</h2><p>Annual depression screening covered by Medicare. Don&apos;t skip.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Senior depression = treatable. Walking + therapy + light = often enough.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Senior depression = treatable. Walking + therapy + light = often enough.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

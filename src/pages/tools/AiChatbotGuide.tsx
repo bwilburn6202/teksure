@@ -135,7 +135,7 @@ export default function AiChatbotGuide() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-purple-500/10 rounded-full">
-                <Sparkles className="h-8 w-8 text-purple-600" />
+                <Sparkles className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">AI Chatbot Beginner&apos;s Guide</h1>
@@ -169,14 +169,14 @@ export default function AiChatbotGuide() {
                 <CardContent className="p-5 space-y-4">
                   <div>
                     <p className="font-semibold mb-1">What is an AI chatbot, in one paragraph?</p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       You type a question; a computer program writes back in conversational English. Underneath, it has read large amounts of text and learned to predict good answers. It is not a person, not a search engine, and not always right — but it is fast, patient, and never tired of explaining the same thing twice.
                     </p>
                   </div>
 
                   <div>
                     <p className="font-semibold mb-1">Why might I want to try one?</p>
-                    <ul className="space-y-1.5 text-sm">
+                    <ul className="space-y-1.5 text-base">
                       <li className="flex gap-2"><span className="text-primary">•</span><span><strong>Plain-English explanations</strong> of confusing things — Medicare, computer errors, medication names.</span></li>
                       <li className="flex gap-2"><span className="text-primary">•</span><span><strong>Drafting letters</strong> you do not want to write from scratch.</span></li>
                       <li className="flex gap-2"><span className="text-primary">•</span><span><strong>Practice conversations</strong> — what to say to the cable company\'s retention line, how to ask a question of your doctor.</span></li>
@@ -194,7 +194,7 @@ export default function AiChatbotGuide() {
                       <Badge variant="outline" className="mb-2">{p.use}</Badge>
                       <ul className="space-y-1.5">
                         {p.examples.map((e, i) => (
-                          <li key={i} className="text-sm font-mono p-2 rounded bg-muted/40 border border-border">{e}</li>
+                          <li key={i} className="text-base font-mono p-2 rounded bg-muted/40 border border-border">{e}</li>
                         ))}
                       </ul>
                     </CardContent>
@@ -213,12 +213,12 @@ export default function AiChatbotGuide() {
                       <p className="font-semibold text-base">{t.name}</p>
                       <Badge variant="outline">{t.cost}</Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {t.bestFor}</p>
+                    <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {t.bestFor}</p>
 
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">How to start</p>
                     <ol className="space-y-1.5 mb-3">
                       {t.signup.map((s, i) => (
-                        <li key={i} className="flex gap-2 text-sm">
+                        <li key={i} className="flex gap-2 text-base">
                           <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                           <span>{s}</span>
                         </li>
@@ -228,7 +228,7 @@ export default function AiChatbotGuide() {
                     {t.notes && (
                       <ul className="space-y-1 mt-3 pt-3 border-t border-border">
                         {t.notes.map((n, i) => (
-                          <li key={i} className="text-xs text-muted-foreground flex gap-2"><span className="text-primary">•</span><span>{n}</span></li>
+                          <li key={i} className="text-sm text-muted-foreground flex gap-2"><span className="text-primary">•</span><span>{n}</span></li>
                         ))}
                       </ul>
                     )}
@@ -245,17 +245,17 @@ export default function AiChatbotGuide() {
 
           {tab === 'safe' && (
             <>
-              <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+              <Card className="border-warn-foreground/25 bg-warn mb-6">
                 <CardContent className="p-5 flex gap-3">
-                  <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                   <div className="text-sm">
                     <p className="font-semibold mb-1">Five rules for using AI chatbots safely</p>
                     <ol className="space-y-2 mt-2">
-                      <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold shrink-0">1.</span><span>Never share Social Security numbers, passwords, or credit-card numbers. Treat the chat like a postcard, not a bank vault.</span></li>
-                      <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold shrink-0">2.</span><span>Do not trust medical, legal, or financial answers without checking with a real professional. AI gets specifics wrong sometimes — confidently.</span></li>
-                      <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold shrink-0">3.</span><span>Verify any URL the AI gives you before clicking. AI sometimes invents URLs that go nowhere or worse.</span></li>
-                      <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold shrink-0">4.</span><span>If anyone calls or emails claiming to be from "ChatGPT support" or "Gemini security" — it is a scam. None of these companies call you.</span></li>
-                      <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold shrink-0">5.</span><span>Free is fine. Do not pay for a "premium AI experience" until you have used the free version for a couple of weeks.</span></li>
+                      <li className="flex gap-2"><span className="text-warn-foreground font-semibold shrink-0">1.</span><span>Never share Social Security numbers, passwords, or credit-card numbers. Treat the chat like a postcard, not a bank vault.</span></li>
+                      <li className="flex gap-2"><span className="text-warn-foreground font-semibold shrink-0">2.</span><span>Do not trust medical, legal, or financial answers without checking with a real professional. AI gets specifics wrong sometimes — confidently.</span></li>
+                      <li className="flex gap-2"><span className="text-warn-foreground font-semibold shrink-0">3.</span><span>Verify any URL the AI gives you before clicking. AI sometimes invents URLs that go nowhere or worse.</span></li>
+                      <li className="flex gap-2"><span className="text-warn-foreground font-semibold shrink-0">4.</span><span>If anyone calls or emails claiming to be from "ChatGPT support" or "Gemini security" — it is a scam. None of these companies call you.</span></li>
+                      <li className="flex gap-2"><span className="text-warn-foreground font-semibold shrink-0">5.</span><span>Free is fine. Do not pay for a "premium AI experience" until you have used the free version for a couple of weeks.</span></li>
                     </ol>
                   </div>
                 </CardContent>
@@ -263,8 +263,8 @@ export default function AiChatbotGuide() {
 
               <Card className="border-border bg-muted/30">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-2">A useful habit: ask the AI to cite</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-base font-semibold mb-2">A useful habit: ask the AI to cite</p>
+                  <p className="text-sm text-muted-foreground">
                     When asking factual questions, end with: "and cite your sources." The AI will give you links — and you can click through to the real source. Saves you from confidently wrong answers.
                   </p>
                 </CardContent>
@@ -276,20 +276,20 @@ export default function AiChatbotGuide() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/ai-image-spotter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">AI Image Spotter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Tell AI photos from real ones.</p>
+                <p className="font-medium text-base">AI Image Spotter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Tell AI photos from real ones.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Paste any suspicious text.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Paste any suspicious text.</p>
               </Link>
               <Link to="/tools/dictation-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Dictation Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Talk to AI instead of typing.</p>
+                <p className="font-medium text-base">Dictation Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Talk to AI instead of typing.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: AI chatbots are at their best when you are SPECIFIC. "Help me write a letter" is okay; "Help me write a friendly letter to my HOA asking them to repaint a faded crosswalk" is much better.
           </p>
         </div>

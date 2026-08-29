@@ -19,7 +19,7 @@ export default function FamilyPasswordSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stop doing this</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Texting passwords. Sits in chat history forever.</li>
               <li>Emailing passwords. Email gets hacked, all gone.</li>
               <li>Sticky notes on the fridge.</li>
@@ -31,7 +31,7 @@ export default function FamilyPasswordSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best options (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>1Password Families</strong> — $5/mo for 5 people. Shared vaults. Different vaults for "Streaming", "Bills", "Wifi". Best overall.</li>
               <li><strong>Bitwarden Family</strong> — $40/year for 6. Open-source. Cheaper.</li>
               <li><strong>Apple Passwords + Family Sharing</strong> — free for Apple families. Limited to iPhone/Mac users.</li>
@@ -43,7 +43,7 @@ export default function FamilyPasswordSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Passwords sharing (FREE)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>iOS 17+ — open Passwords app (or Settings → Passwords).</li>
               <li>Tap "Get Started" under "Shared Group".</li>
               <li>Pick family members (must have iPhone with iOS 17+).</li>
@@ -56,7 +56,7 @@ export default function FamilyPasswordSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">1Password Families setup</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign up at <strong>1password.com</strong> for Family.</li>
               <li>Email invitations to family members.</li>
               <li>Each person creates their OWN master password.</li>
@@ -70,7 +70,7 @@ export default function FamilyPasswordSharing() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to share vs keep private</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Share</strong> — wifi, streaming (Netflix, Disney+), Costco/Amazon family account, Spotify Family, smart-home apps.</li>
               <li><strong>Don&apos;t share routinely</strong> — individual bank logins, credit cards, work email, medical portal.</li>
               <li><strong>Emergency-share</strong> — most managers let one trusted family member request emergency access. After waiting period, they get everything. Set this up.</li>
@@ -81,7 +81,7 @@ export default function FamilyPasswordSharing() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick win</h3>
-            <p className="text-sm text-muted-foreground">Set up family password sharing for ONE thing first — the wifi password. Once that works, expand to streaming. Within a month, the whole family stops texting credentials. Marriage saver.</p>
+            <p className="text-base text-muted-foreground">Set up family password sharing for ONE thing first — the wifi password. Once that works, expand to streaming. Within a month, the whole family stops texting credentials. Marriage saver.</p>
           </CardContent>
         </Card>
       </main>

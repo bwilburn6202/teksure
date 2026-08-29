@@ -19,7 +19,7 @@ export default function AlexaSkillsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily life skills</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Alexa, set timer 10 minutes&quot; — kitchen helper.</li>
               <li>&quot;Alexa, what&apos;s the weather?&quot;</li>
               <li>&quot;Alexa, add milk to shopping list.&quot;</li>
@@ -34,7 +34,7 @@ export default function AlexaSkillsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific skills</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Alexa Together</strong> — $20/mo. Family caregiver dashboard.</li>
               <li><strong>Ask My Buddy</strong> — emergency call to contacts.</li>
               <li><strong>Mayo Clinic First-Aid</strong> — guides through emergency.</li>
@@ -49,7 +49,7 @@ export default function AlexaSkillsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Brain games</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Alexa, let&apos;s play Jeopardy.&quot;</li>
               <li>&quot;Alexa, open Word of the Day.&quot;</li>
               <li>&quot;Alexa, trivia.&quot;</li>
@@ -63,7 +63,7 @@ export default function AlexaSkillsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Routines (auto-actions)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Alexa, good morning&quot; → lights on, weather, news.</li>
               <li>&quot;Alexa, goodnight&quot; → lights off, alarm set.</li>
               <li>&quot;Alexa, I&apos;m leaving&quot; → lock doors, set thermostat.</li>
@@ -77,7 +77,7 @@ export default function AlexaSkillsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best Alexa devices for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Echo Show 8</strong> — $150. Screen + voice. Senior favorite.</li>
               <li><strong>Echo Show 5</strong> — $90. Bedside.</li>
               <li><strong>Echo Dot</strong> — $50. Voice only.</li>
@@ -90,7 +90,7 @@ export default function AlexaSkillsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Privacy</h3>
-            <p className="text-sm text-muted-foreground">Alexa records when wake word said. Settings in app to delete recordings. Mute button physically disables mic. Worth privacy trade-off for seniors with mobility/vision issues. Apple HomePod = better privacy alternative if iPhone user.</p>
+            <p className="text-base text-muted-foreground">Alexa records when wake word said. Settings in app to delete recordings. Mute button physically disables mic. Worth privacy trade-off for seniors with mobility/vision issues. Apple HomePod = better privacy alternative if iPhone user.</p>
           </CardContent>
         </Card>
       </main>

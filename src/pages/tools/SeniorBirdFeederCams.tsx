@@ -22,7 +22,7 @@ export default function SeniorBirdFeederCams() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why seniors love them</h2><p>Watch from inside on cold days. Save photos to share with grandkids.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Wi-Fi range</h2><p>Mount within 30 ft of house Wi-Fi. Test before buying long pole.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best seeds</h2><p>Black-oil sunflower attracts widest variety. Nyjer for finches.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Add nearby Merlin Bird ID app — combo is the ultimate backyard birding setup.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Add nearby Merlin Bird ID app — combo is the ultimate backyard birding setup.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

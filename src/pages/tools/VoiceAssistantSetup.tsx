@@ -559,7 +559,7 @@ function DoneScreen({
     <Card className="border-green-600/40 bg-green-50/40 dark:bg-green-950/20">
       <CardContent className="p-6 md:p-8 space-y-6">
         <div className="flex items-center gap-3">
-          <div className="p-3 rounded-full bg-green-600/10 text-green-700 dark:text-green-400">
+          <div className="p-3 rounded-full bg-green-600/10 text-success-foreground ">
             <CheckCircle2 className="w-8 h-8" />
           </div>
           <div>
@@ -584,7 +584,7 @@ function DoneScreen({
                 </li>
               ))}
             </ul>
-            <p className="text-sm text-muted-foreground mt-3 leading-relaxed">
+            <p className="text-base text-muted-foreground mt-3 leading-relaxed">
               Try at least 3 of these in your first day — it builds confidence and helps you find your favorites.
             </p>
           </CardContent>
@@ -877,28 +877,28 @@ export default function VoiceAssistantSetup() {
 
                     <div className="grid grid-cols-1 gap-3">
                       <div>
-                        <h4 className="text-sm font-semibold text-green-800 dark:text-green-400 mb-1.5 flex items-center gap-1.5">
+                        <h4 className="text-sm font-semibold text-success-foreground mb-1.5 flex items-center gap-1.5">
                           <CheckCircle2 className="w-4 h-4" />
                           Strengths
                         </h4>
                         <ul className="space-y-1.5">
                           {c.strengths.map((s) => (
                             <li key={s} className="text-base leading-relaxed flex gap-2">
-                              <span className="text-green-700 dark:text-green-400 shrink-0" aria-hidden="true">+</span>
+                              <span className="text-success-foreground shrink-0" aria-hidden="true">+</span>
                               <span>{s}</span>
                             </li>
                           ))}
                         </ul>
                       </div>
                       <div>
-                        <h4 className="text-sm font-semibold text-amber-800 dark:text-amber-400 mb-1.5 flex items-center gap-1.5">
+                        <h4 className="text-sm font-semibold text-warn-foreground mb-1.5 flex items-center gap-1.5">
                           <XCircle className="w-4 h-4" />
                           Weaknesses
                         </h4>
                         <ul className="space-y-1.5">
                           {c.weaknesses.map((w) => (
                             <li key={w} className="text-base leading-relaxed flex gap-2">
-                              <span className="text-amber-700 dark:text-amber-400 shrink-0" aria-hidden="true">−</span>
+                              <span className="text-warn-foreground shrink-0" aria-hidden="true">−</span>
                               <span>{w}</span>
                             </li>
                           ))}
@@ -956,25 +956,25 @@ export default function VoiceAssistantSetup() {
                   </h3>
                   <ul className="space-y-2 text-base leading-relaxed">
                     <li className="flex gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" />
                       <span>They only start recording AFTER hearing the wake word (mostly — occasional mis-hears happen).</span>
                     </li>
                     <li className="flex gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" />
                       <span>All let you review and delete your recordings in the app or a website.</span>
                     </li>
                     <li className="flex gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-0.5" />
+                      <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" />
                       <span>All have a physical microphone mute button or switch that electrically disconnects the mic.</span>
                     </li>
                   </ul>
                 </CardContent>
               </Card>
 
-              <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+              <Card className="bg-warn border-amber-500/40">
                 <CardContent className="p-5 space-y-3">
                   <h3 className="text-lg font-semibold flex items-center gap-2">
-                    <AlertTriangle className="w-5 h-5 text-amber-700 dark:text-amber-400" />
+                    <AlertTriangle className="w-5 h-5 text-warn-foreground " />
                     What&apos;s different
                   </h3>
                   <ul className="space-y-2 text-base leading-relaxed">
@@ -993,7 +993,7 @@ export default function VoiceAssistantSetup() {
                     <Speaker className="w-4 h-4" />
                     Delete Alexa recordings
                   </h4>
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-base leading-relaxed">
                     Alexa app → More → Settings → Alexa Privacy → Review Voice History → Delete All.
                     Or just say: <em>&quot;Alexa, delete everything I said today.&quot;</em>
                   </p>
@@ -1005,7 +1005,7 @@ export default function VoiceAssistantSetup() {
                     <Mic className="w-4 h-4" />
                     Delete Google recordings
                   </h4>
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-base leading-relaxed">
                     Go to <strong>myactivity.google.com</strong> in any browser, sign in, and delete recordings.
                     Or say: <em>&quot;Hey Google, delete what I just said.&quot;</em>
                   </p>
@@ -1017,7 +1017,7 @@ export default function VoiceAssistantSetup() {
                     <Apple className="w-4 h-4" />
                     Delete Siri recordings
                   </h4>
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-base leading-relaxed">
                     On iPhone: <strong>Settings → Siri &amp; Search → Siri &amp; Dictation History → Delete Siri &amp; Dictation History</strong>.
                   </p>
                 </CardContent>
@@ -1041,7 +1041,7 @@ export default function VoiceAssistantSetup() {
                   <Card key={item.title}>
                     <CardContent className="p-5">
                       <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
-                        <AlertTriangle className="w-5 h-5 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+                        <AlertTriangle className="w-5 h-5 text-warn-foreground " aria-hidden="true" />
                         {item.title}
                       </h3>
                       <p className="text-base leading-relaxed">{item.body}</p>
@@ -1083,15 +1083,15 @@ export default function VoiceAssistantSetup() {
             </div>
 
             <div className="flex items-center gap-3 mb-2">
-              <span className="text-sm md:text-base font-medium text-muted-foreground">
+              <span className="text-base md:text-base font-medium text-muted-foreground">
                 {isDone ? 'All done' : `Step ${stepIndex + 1} of ${totalSteps}`}
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 {completed.size} completed
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 Wake word: <strong>{device.wakeWord}</strong>
               </span>
             </div>
@@ -1145,10 +1145,10 @@ export default function VoiceAssistantSetup() {
 
               {/* Stumbling block */}
               {current.stumble && (
-                <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+                <Card className="bg-warn border-amber-500/40">
                   <CardContent className="p-5 flex items-start gap-3">
                     <Lightbulb
-                      className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5"
+                      className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5"
                       aria-hidden="true"
                     />
                     <div>
@@ -1242,9 +1242,9 @@ export default function VoiceAssistantSetup() {
                     <Lock className="w-5 h-5 text-primary" />
                     Privacy for {device.shortName}
                   </h3>
-                  <p className="text-sm leading-relaxed"><strong>Wake word:</strong> {device.privacyNote.wakeWord}</p>
-                  <p className="text-sm leading-relaxed"><strong>Delete recordings:</strong> {device.privacyNote.deletePath}</p>
-                  <p className="text-sm leading-relaxed"><strong>Mute the microphone:</strong> {device.privacyNote.muteButton}</p>
+                  <p className="text-base leading-relaxed"><strong>Wake word:</strong> {device.privacyNote.wakeWord}</p>
+                  <p className="text-base leading-relaxed"><strong>Delete recordings:</strong> {device.privacyNote.deletePath}</p>
+                  <p className="text-base leading-relaxed"><strong>Mute the microphone:</strong> {device.privacyNote.muteButton}</p>
                 </CardContent>
               </Card>
             </article>

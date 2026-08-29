@@ -46,21 +46,21 @@ export default function WidowhoodFirst30Days() {
   const completedCount = Object.values(done).filter(Boolean).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="First 30 Days After Losing a Spouse | TekSure" description="A compassionate, plainspoken checklist of the most important tasks after losing a husband or wife. Print and work through at your own pace." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Heart className="h-7 w-7 text-rose-700" />
-            <h1 className="text-3xl font-bold text-gray-900">First 30 Days After Losing a Spouse</h1>
+            <Heart className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">First 30 Days After Losing a Spouse</h1>
           </div>
-          <p className="text-gray-600 text-lg">A compassionate checklist for the most overwhelming month. Take it one item at a time. Nothing on this list has to be done today.</p>
+          <p className="text-muted-foreground text-lg">A compassionate checklist for the most overwhelming month. Take it one item at a time. Nothing on this list has to be done today.</p>
         </div>
 
         {completedCount > 0 && (
-          <Card className="mb-4 bg-rose-50 border-rose-200">
+          <Card className="mb-4 bg-danger border-danger-foreground/25">
             <CardContent className="py-3 px-4 text-center">
-              <p className="text-rose-900 font-semibold">{completedCount} of {TASKS.length} done</p>
+              <p className="text-danger-foreground font-semibold">{completedCount} of {TASKS.length} done</p>
             </CardContent>
           </Card>
         )}
@@ -68,14 +68,14 @@ export default function WidowhoodFirst30Days() {
         {CATEGORIES.map(cat => (
           <Card key={cat} className="mb-4">
             <CardContent className="py-4 px-4">
-              <h2 className="text-xl font-bold text-gray-900 mb-3">{cat}</h2>
+              <h2 className="text-xl font-bold text-foreground mb-3">{cat}</h2>
               <div className="space-y-3">
                 {TASKS.filter(t => t.category === cat).map(t => (
-                  <div key={t.id} className="flex items-start gap-3 p-3 rounded-lg border border-gray-200 bg-white">
+                  <div key={t.id} className="flex items-start gap-3 p-3 rounded-lg border border-border bg-card">
                     <Checkbox checked={!!done[t.id]} onCheckedChange={() => toggle(t.id)} className="mt-1 print:hidden" />
                     <div className="flex-1 min-w-0">
                       <p className={`font-semibold ${done[t.id] ? "line-through text-gray-400" : "text-gray-900"}`}>{t.title}</p>
-                      <p className="text-sm text-gray-600 mt-1">{t.detail}</p>
+                      <p className="text-base text-muted-foreground mt-1">{t.detail}</p>
                     </div>
                   </div>
                 ))}
@@ -84,9 +84,9 @@ export default function WidowhoodFirst30Days() {
           </Card>
         ))}
 
-        <Card className="bg-blue-50 border-blue-200 mb-4">
+        <Card className="bg-info border-info-foreground/25 mb-4">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Free help:</span> Many funeral homes provide a 30-day survivor checklist booklet. Hospice agencies have bereavement counselors at no cost for 13 months after a loss. AARP Tax-Aide files final returns free. A 211 call connects you to local grief support groups.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Free help:</span> Many funeral homes provide a 30-day survivor checklist booklet. Hospice agencies have bereavement counselors at no cost for 13 months after a loss. AARP Tax-Aide files final returns free. A 211 call connects you to local grief support groups.</p>
           </CardContent>
         </Card>
 
@@ -96,6 +96,6 @@ export default function WidowhoodFirst30Days() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

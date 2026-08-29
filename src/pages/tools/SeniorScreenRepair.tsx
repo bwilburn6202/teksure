@@ -22,7 +22,7 @@ export default function SeniorScreenRepair() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">AppleCare+ saves</h2><p>If you have AppleCare+: $29 screen repair instead of $300.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">DIY kits</h2><p>$30-$80 from iFixit. Difficult. Only if comfortable.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mail-in repair</h2><p>iCracked, CPR Cell Phone Repair. Mail in. 5-7 day return.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Add AppleCare+ when buying iPhone. $300 break = $29 instead.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Add AppleCare+ when buying iPhone. $300 break = $29 instead.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -31,10 +31,10 @@ export default function RemittancesGuide() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{s.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{s.cost}</span>
+                  <span className="text-base font-semibold text-primary">{s.cost}</span>
                 </div>
-                <p className="text-sm">{s.best}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.best}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function RemittancesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to compare</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Check fees PLUS exchange rate markup. Both matter.</li>
               <li>Use <strong>monito.com</strong> or <strong>compareremit.com</strong> — free comparison sites.</li>
               <li>Test send small amounts first.</li>
@@ -55,7 +55,7 @@ export default function RemittancesGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Use major regulated services. Avoid sketchy "send agents".</li>
               <li>Verify recipient name + ID exactly — wrong letter = held money.</li>
               <li>Save tracking numbers + receipts.</li>
@@ -65,17 +65,17 @@ export default function RemittancesGuide() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Romance + Family Scams</h2>
-            <p className="text-sm">Many seniors lose $1,000s sending "to family in trouble overseas". Real family rarely needs urgent international wires. NEVER send via Western Union/MoneyGram unless you 100% verified by phone (call them). See /tools/grandparent-scam-defense + /tools/scam-dating-flags.</p>
+            <p className="text-base">Many seniors lose $1,000s sending "to family in trouble overseas". Real family rarely needs urgent international wires. NEVER send via Western Union/MoneyGram unless you 100% verified by phone (call them). See /tools/grandparent-scam-defense + /tools/scam-dating-flags.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best fixed-amount option</h3>
-            <p className="text-sm text-muted-foreground">For routine monthly remittances (e.g., support to family in Mexico) — Wise saves 50-80% vs Western Union over a year. $0 fee on small transfers if first time. Set up auto-recurring sends.</p>
+            <p className="text-base text-muted-foreground">For routine monthly remittances (e.g., support to family in Mexico) — Wise saves 50-80% vs Western Union over a year. $0 fee on small transfers if first time. Set up auto-recurring sends.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,7 +19,7 @@ export default function DVTPreventionSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">DVT basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Deep Vein Thrombosis = blood clot in leg.</li>
               <li>Can break loose + travel to lungs (PE) = fatal.</li>
               <li>Risk increases with age.</li>
@@ -33,7 +33,7 @@ export default function DVTPreventionSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Symptoms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Leg swelling (one side usually).</li>
               <li>Warm to touch.</li>
               <li>Pain in calf.</li>
@@ -48,7 +48,7 @@ export default function DVTPreventionSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Prevent during flights/long drives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walk every 1-2 hours.</li>
               <li>Ankle pumps (point + flex feet) every 20 min.</li>
               <li>Compression socks 15-20 mmHg.</li>
@@ -63,7 +63,7 @@ export default function DVTPreventionSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After surgery</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walk early + often.</li>
               <li>Compression boots in hospital.</li>
               <li>Sometimes blood thinners briefly.</li>
@@ -77,7 +77,7 @@ export default function DVTPreventionSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily prevention</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walk daily.</li>
               <li>Stay hydrated.</li>
               <li>Don&apos;t sit 4+ hours without breaks.</li>
@@ -92,7 +92,7 @@ export default function DVTPreventionSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If diagnosed DVT</h3>
-            <p className="text-sm text-muted-foreground">Blood thinner 3-6+ months. Often outpatient. Compression stockings reduce post-DVT issues. Some get caval filters. Recurrence common — prevention matters. Don&apos;t ignore leg symptoms.</p>
+            <p className="text-base text-muted-foreground">Blood thinner 3-6+ months. Often outpatient. Compression stockings reduce post-DVT issues. Some get caval filters. Recurrence common — prevention matters. Don&apos;t ignore leg symptoms.</p>
           </CardContent>
         </Card>
       </main>

@@ -180,7 +180,7 @@ Printed from TekSure.com
                         {card.items.map((item, i) => (
                           <div key={i}>
                             <h4 className="font-medium text-sm mb-1">{item.title}</h4>
-                            <p className="text-sm text-muted-foreground">{item.content}</p>
+                            <p className="text-base text-muted-foreground">{item.content}</p>
                           </div>
                         ))}
                       </div>
@@ -205,7 +205,7 @@ Printed from TekSure.com
                         {card.items.map((item, i) => (
                           <div key={i}>
                             <h4 className="font-medium text-sm mb-1">{item.title}</h4>
-                            <p className="text-sm text-muted-foreground">{item.content}</p>
+                            <p className="text-base text-muted-foreground">{item.content}</p>
                           </div>
                         ))}
                       </div>
@@ -230,7 +230,7 @@ Printed from TekSure.com
                         {card.items.map((item, i) => (
                           <div key={i}>
                             <h4 className="font-medium text-sm mb-1">{item.title}</h4>
-                            <p className="text-sm text-muted-foreground">{item.content}</p>
+                            <p className="text-base text-muted-foreground">{item.content}</p>
                           </div>
                         ))}
                       </div>
@@ -247,7 +247,7 @@ Printed from TekSure.com
                 <CheckCircle className="h-5 w-5 text-primary" />
                 Want to learn more?
               </h3>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base text-muted-foreground mb-4">
                 These quick reference cards give you the essentials. For detailed step-by-step guides on each topic, visit our full guides section.
               </p>
               <Button asChild>

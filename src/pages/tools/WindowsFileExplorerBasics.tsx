@@ -19,7 +19,7 @@ export default function WindowsFileExplorerBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Open File Explorer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Click yellow folder icon on taskbar.</li>
               <li>Or Windows key + E.</li>
               <li>Or right-click Start, then File Explorer.</li>
@@ -33,7 +33,7 @@ export default function WindowsFileExplorerBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Default folders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Desktop</strong> — files visible on screen.</li>
               <li><strong>Documents</strong> — Word docs, PDFs.</li>
               <li><strong>Downloads</strong> — files downloaded from web.</li>
@@ -47,7 +47,7 @@ export default function WindowsFileExplorerBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find a file</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Search bar top-right.</li>
               <li>Type any part of file name.</li>
               <li>Searches current folder.</li>
@@ -61,7 +61,7 @@ export default function WindowsFileExplorerBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Move + copy files</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Right-click file, then &quot;Cut&quot; (move).</li>
               <li>Right-click file, then &quot;Copy&quot;.</li>
               <li>Open destination folder.</li>
@@ -75,7 +75,7 @@ export default function WindowsFileExplorerBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Make new folder</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Right-click empty area.</li>
               <li>Choose &quot;New&quot;, then &quot;Folder&quot;.</li>
               <li>Type name immediately.</li>
@@ -89,7 +89,7 @@ export default function WindowsFileExplorerBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Delete + recover</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Right-click file, then &quot;Delete&quot;.</li>
               <li>Or select + Delete key.</li>
               <li>File goes to Recycle Bin.</li>
@@ -103,7 +103,7 @@ export default function WindowsFileExplorerBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Backup essentials</h3>
-            <p className="text-sm text-muted-foreground">Critical: regularly back up files. OneDrive (built-in) syncs to cloud free 5GB. External hard drive ($60-100). Don&apos;t lose photos in computer crash. File Explorer &gt; right-click critical folder &gt; Properties &gt; backup options. Check OneDrive icon in tray for sync status.</p>
+            <p className="text-base text-muted-foreground">Critical: regularly back up files. OneDrive (built-in) syncs to cloud free 5GB. External hard drive ($60-100). Don&apos;t lose photos in computer crash. File Explorer &gt; right-click critical folder &gt; Properties &gt; backup options. Check OneDrive icon in tray for sync status.</p>
           </CardContent>
         </Card>
       </main>

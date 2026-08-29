@@ -22,7 +22,7 @@ export default function SeniorLifeReview() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice Memos</h2><p>FREE. iPhone built in. Talk for 5 minutes about a memory weekly. 200+ memories.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why important</h2><p>Voice fades after death. Stories disappear. Record now.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best gift</h2><p>Family treasures life stories more than money. Records last forever.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Storyworth is best gift adult children give parents. Memories before fade.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Storyworth is best gift adult children give parents. Memories before fade.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

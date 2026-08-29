@@ -22,7 +22,7 @@ export default function SeniorPublicTransitApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior discount</h2><p>Most US transit systems offer 50% off for seniors. Apply with photo ID.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Citymapper</h2><p>Free. Best for NYC, Chicago, DC, San Francisco, LA, Boston.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Paratransit</h2><p>Door-to-door rides for seniors with mobility issues. Apply through your local transit agency.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Many cities give seniors free off-peak rides. Worth asking.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Many cities give seniors free off-peak rides. Worth asking.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

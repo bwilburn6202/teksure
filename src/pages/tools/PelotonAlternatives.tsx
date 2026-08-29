@@ -30,10 +30,10 @@ export default function PelotonAlternatives() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function PelotonAlternatives() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Peloton App without Peloton bike</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Peloton App — $13/mo. Use ANY bike + treadmill.</li>
               <li>Get classes from instructors.</li>
               <li>Strength, yoga, meditation, walking too.</li>
@@ -56,7 +56,7 @@ export default function PelotonAlternatives() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">FREE senior fitness</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SilverSneakers</strong> — FREE with most Medicare Advantage. Online + in-person.</li>
               <li><strong>Renew Active</strong> — UnitedHealthcare benefit. FREE.</li>
               <li><strong>Get Set Up</strong> — free senior classes.</li>
@@ -70,7 +70,7 @@ export default function PelotonAlternatives() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best home equipment senior</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Resistance bands</strong> ($30) — full body workout, low impact.</li>
               <li><strong>5-10 lb dumbbells</strong> ($50) — strength essential.</li>
               <li><strong>Yoga mat</strong> ($30) — floor exercises + stretching.</li>
@@ -84,7 +84,7 @@ export default function PelotonAlternatives() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Strength matters most</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cardio gets attention — strength prevents falls.</li>
               <li>Lift weights 2-3x/week — even light weights.</li>
               <li>Sit-to-stand 10-15x = leg strength.</li>
@@ -98,7 +98,7 @@ export default function PelotonAlternatives() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">YMCA + Senior Centers</h3>
-            <p className="text-sm text-muted-foreground">Many YMCAs offer senior memberships $30-50/mo. Pool + classes + sauna. Free with most Medicare Advantage. Senior centers often have free fitness classes. Group exercise = social + health. More fun than home alone.</p>
+            <p className="text-base text-muted-foreground">Many YMCAs offer senior memberships $30-50/mo. Pool + classes + sauna. Free with most Medicare Advantage. Senior centers often have free fitness classes. Group exercise = social + health. More fun than home alone.</p>
           </CardContent>
         </Card>
       </main>

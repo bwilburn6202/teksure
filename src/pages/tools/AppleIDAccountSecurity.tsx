@@ -19,7 +19,7 @@ export default function AppleIDAccountSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why this matters</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple ID = key to all Apple devices + services.</li>
               <li>Lost Apple ID = lost iCloud, photos, app purchases.</li>
               <li>Hijacked Apple ID = devices can be locked remotely.</li>
@@ -33,7 +33,7 @@ export default function AppleIDAccountSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to check</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone: Settings → tap your name at top.</li>
               <li>Mac: System Settings → tap your name.</li>
               <li>Web: AppleID.Apple.com.</li>
@@ -47,7 +47,7 @@ export default function AppleIDAccountSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Enable 2FA (if not already)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Apple ID → Sign In + Security.</li>
               <li>Tap Two-Factor Authentication.</li>
               <li>Enable + verify trusted phone numbers.</li>
@@ -61,7 +61,7 @@ export default function AppleIDAccountSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recovery contacts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Designate trusted family members.</li>
               <li>Account Recovery → Add Recovery Contact.</li>
               <li>They can help if you forget password.</li>
@@ -75,7 +75,7 @@ export default function AppleIDAccountSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Legacy contact</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Designates who gets your data after death.</li>
               <li>Apple ID → Sign In + Security → Legacy Contact.</li>
               <li>Up to 5 legacy contacts.</li>
@@ -89,7 +89,7 @@ export default function AppleIDAccountSecurity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Connected devices</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Settings → Apple ID → scroll down — devices list.</li>
               <li>See every device signed into your account.</li>
               <li>Old phones, tablets, computers.</li>
@@ -103,7 +103,7 @@ export default function AppleIDAccountSecurity() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Set up Recovery Contact this week</h3>
-            <p className="text-sm text-muted-foreground">If you forget your Apple ID password, recovery contacts can help you back in within hours instead of days. Add your spouse and an adult child as Recovery Contacts. Also enable Legacy Contact for digital inheritance. These two settings take 10 minutes and are critical for any senior using Apple devices. They prevent both lockouts AND data loss after death.</p>
+            <p className="text-base text-muted-foreground">If you forget your Apple ID password, recovery contacts can help you back in within hours instead of days. Add your spouse and an adult child as Recovery Contacts. Also enable Legacy Contact for digital inheritance. These two settings take 10 minutes and are critical for any senior using Apple devices. They prevent both lockouts AND data loss after death.</p>
           </CardContent>
         </Card>
       </main>

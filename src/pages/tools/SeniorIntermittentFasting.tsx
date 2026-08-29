@@ -20,9 +20,9 @@ export default function SeniorIntermittentFasting() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Fastic</h2><p>FREE basic. More social features.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">12:12 method</h2><p>Easy senior start. 12 hours fasting (overnight) + 12 eating window.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">16:8 method</h2><p>Skip breakfast. 8-hour eating window. Some senior research benefits.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SAFETY</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Talk to doctor first</li><li>Diabetes meds need adjustment</li><li>Underweight seniors should avoid</li><li>Stop if dizzy or weak</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SAFETY</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Talk to doctor first</li><li>Diabetes meds need adjustment</li><li>Underweight seniors should avoid</li><li>Stop if dizzy or weak</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Drink water</h2><p>Black coffee, tea, water are okay during fast.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Many seniors find 12:12 plenty of benefit without strict 16:8.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Many seniors find 12:12 plenty of benefit without strict 16:8.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

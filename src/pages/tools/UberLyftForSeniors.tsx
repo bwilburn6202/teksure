@@ -19,7 +19,7 @@ export default function UberLyftForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What are they?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apps that let you order a car ride.</li>
               <li>Driver picks you up + takes you anywhere.</li>
               <li>Pay through app — no cash or card swipe.</li>
@@ -33,7 +33,7 @@ export default function UberLyftForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First time setup</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download Uber or Lyft from app store.</li>
               <li>Create account — phone, email, password.</li>
               <li>Add credit card or PayPal.</li>
@@ -47,7 +47,7 @@ export default function UberLyftForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Ordering a ride</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open app — your location auto-fills.</li>
               <li>Type destination address.</li>
               <li>Choose ride type (UberX = cheapest).</li>
@@ -61,7 +61,7 @@ export default function UberLyftForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety verification</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Check license plate matches before getting in.</li>
               <li>Ask driver: &quot;What&apos;s my name?&quot;</li>
               <li>If wrong — don&apos;t get in.</li>
@@ -75,7 +75,7 @@ export default function UberLyftForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>UberWAV — wheelchair-accessible vehicle.</li>
               <li>Uber Assist — drivers trained to help seniors.</li>
               <li>Lyft Healthcare — for medical appointments.</li>
@@ -89,7 +89,7 @@ export default function UberLyftForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">No smartphone? Try GoGoGrandparent</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>GoGoGrandparent — order rides by PHONE CALL.</li>
               <li>Call 1-855-464-6872 to set up.</li>
               <li>Operator orders Uber/Lyft for you.</li>
@@ -103,7 +103,7 @@ export default function UberLyftForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Try one short ride first</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;ve never used a rideshare app, ask an adult child to set up Uber on your phone and walk you through one short trip — like to a nearby restaurant. After one experience, you&apos;ll see how easy it is. Many seniors say Uber/Lyft restored independence after they stopped driving. The peace of mind for adult children is invaluable too.</p>
+            <p className="text-base text-muted-foreground">If you&apos;ve never used a rideshare app, ask an adult child to set up Uber on your phone and walk you through one short trip — like to a nearby restaurant. After one experience, you&apos;ll see how easy it is. Many seniors say Uber/Lyft restored independence after they stopped driving. The peace of mind for adult children is invaluable too.</p>
           </CardContent>
         </Card>
       </main>

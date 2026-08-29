@@ -22,7 +22,7 @@ export default function SeniorChessApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior leagues</h2><p>USCF.org. National senior chess events. Online too.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Daily puzzles</h2><p>5-minute brain workout. Most apps have one daily.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Play computer first</h2><p>Build skills against AI. Then graduate to real opponents.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Even 1 game daily slows cognitive decline. Real benefit.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Even 1 game daily slows cognitive decline. Real benefit.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

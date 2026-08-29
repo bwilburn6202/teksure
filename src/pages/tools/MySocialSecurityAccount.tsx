@@ -19,7 +19,7 @@ export default function MySocialSecurityAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you can do</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apply for benefits online.</li>
               <li>Check benefit status.</li>
               <li>Get benefit letter (proof of income).</li>
@@ -35,7 +35,7 @@ export default function MySocialSecurityAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (15 min)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to ssa.gov/myaccount.</li>
               <li>Click &quot;Sign In or Create Account.&quot;</li>
               <li>Click &quot;Sign in with Login.gov.&quot;</li>
@@ -50,7 +50,7 @@ export default function MySocialSecurityAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Login.gov vs ID.me</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Login.gov</strong> — federal government&apos;s system. Free.</li>
               <li><strong>ID.me</strong> — third-party. Same access.</li>
               <li>Many seniors find ID.me easier.</li>
@@ -64,7 +64,7 @@ export default function MySocialSecurityAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Block scammers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set up account NOW — even if not collecting yet.</li>
               <li>Otherwise scammer creates fake account in your name.</li>
               <li>Reroutes your benefits!</li>
@@ -78,7 +78,7 @@ export default function MySocialSecurityAccount() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SSA never calls — fraud if they do.</li>
               <li>Use 2FA on Login.gov account.</li>
               <li>Don&apos;t share SSN.</li>
@@ -92,7 +92,7 @@ export default function MySocialSecurityAccount() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">In-person help</h3>
-            <p className="text-sm text-muted-foreground">Local SSA office — appointment recommended (1-800-772-1213). Free help. Bring ID + Medicare card. <strong>SHIP counselors</strong> — free Medicare help. Most issues resolved by phone or online now. 99% don&apos;t need office visit.</p>
+            <p className="text-base text-muted-foreground">Local SSA office — appointment recommended (1-800-772-1213). Free help. Bring ID + Medicare card. <strong>SHIP counselors</strong> — free Medicare help. Most issues resolved by phone or online now. 99% don&apos;t need office visit.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorMedicationSyncing() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Combine with delivery</h2><p>Sync + delivery = zero pharmacy trips. Free.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior simplicity</h2><p>Easier to remember when all pills due same day.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Set up phone</h2><p>Ask pharmacist to call phone before refill. Removes effort.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Free service. Saves seniors hours yearly. Just ask pharmacist.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Free service. Saves seniors hours yearly. Just ask pharmacist.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorDentalInsurance() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Dental schools</h2><p>50-70% off. Supervised by professors. Quality care.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free clinics</h2><p>Mission of Mercy events. Local United Way.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mexican dental tourism</h2><p>Major work for less. Crowns $300 vs $1,500. Research carefully.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Cleaning twice yearly. Cheap. Prevents $5,000 of future problems.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Cleaning twice yearly. Cheap. Prevents $5,000 of future problems.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

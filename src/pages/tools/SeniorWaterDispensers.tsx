@@ -22,7 +22,7 @@ export default function SeniorWaterDispensers() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bottle delivery</h2><p>Primo, Culligan deliver new bottles, take empties. Free option.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hydration</h2><p>Senior thirst signal weakens. Visible water = drink more.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Filter alternative</h2><p>$30 PUR/Brita pitcher. Cheaper. Just no temperature.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Counter water dispenser increases senior daily water intake 50%.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Counter water dispenser increases senior daily water intake 50%.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

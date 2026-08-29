@@ -104,7 +104,7 @@ export default function FamilyTechRoundtable() {
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">How to run it</p>
-              <ol className="space-y-2 text-sm">
+              <ol className="space-y-2 text-base">
                 <li className="flex gap-2"><span className="text-primary font-semibold">1.</span><span>Pick a calm 30 minutes — no rushed dinners, no holidays.</span></li>
                 <li className="flex gap-2"><span className="text-primary font-semibold">2.</span><span>Pass the prompts around. Everyone answers each one — kids included.</span></li>
                 <li className="flex gap-2"><span className="text-primary font-semibold">3.</span><span>Listen. Do not fix anything yet. Just listen.</span></li>
@@ -119,11 +119,11 @@ export default function FamilyTechRoundtable() {
               <div className="space-y-3">
                 {PROMPTS.map((p, i) => (
                   <div key={i} className="p-3 rounded-lg border border-border">
-                    <p className="font-medium text-sm flex items-start gap-2">
+                    <p className="font-medium text-base flex items-start gap-2">
                       <MessageCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
                       {p.title}
                     </p>
-                    <p className="text-xs text-muted-foreground mt-1 ml-6">{p.why}</p>
+                    <p className="text-sm text-muted-foreground mt-1 ml-6">{p.why}</p>
                   </div>
                 ))}
               </div>
@@ -133,7 +133,7 @@ export default function FamilyTechRoundtable() {
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Action ideas to pick from</p>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-base">
                 {ACTIONS.map((a, i) => (
                   <li key={i} className="flex gap-2"><span className="text-primary">•</span><span>{a}</span></li>
                 ))}
@@ -145,16 +145,16 @@ export default function FamilyTechRoundtable() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/tech-cheatsheet-generator" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Tech Cheatsheet Generator</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Print a one-pager for the kitchen counter.</p>
+                <p className="font-medium text-base">Tech Cheatsheet Generator</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Print a one-pager for the kitchen counter.</p>
               </Link>
               <Link to="/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Account After Loss</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Plan ahead for digital legacy.</p>
+                <p className="font-medium text-base">Account After Loss</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Plan ahead for digital legacy.</p>
               </Link>
               <Link to="/caregiver" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Caregiver Hub</p>
-                <p className="text-xs text-muted-foreground mt-0.5">More for adult children helping parents.</p>
+                <p className="font-medium text-base">Caregiver Hub</p>
+                <p className="text-sm text-muted-foreground mt-0.5">More for adult children helping parents.</p>
               </Link>
             </div>
           </div>
@@ -164,17 +164,17 @@ export default function FamilyTechRoundtable() {
         <div className="hidden print:block px-8 py-6">
           <header className="border-b-2 border-black pb-3 mb-5">
             <h1 className="text-2xl font-bold">{familyName || 'Family Tech Roundtable'}</h1>
-            {date && <p className="text-sm text-gray-700">{new Date(date).toLocaleDateString('en-US', { dateStyle: 'long' })}</p>}
-            <p className="text-xs text-gray-600 mt-2">A 30-minute, judgment-free conversation. Pass these prompts around — everyone answers each one.</p>
+            {date && <p className="text-base text-foreground">{new Date(date).toLocaleDateString('en-US', { dateStyle: 'long' })}</p>}
+            <p className="text-sm text-muted-foreground mt-2">A 30-minute, judgment-free conversation. Pass these prompts around — everyone answers each one.</p>
           </header>
 
           <section className="mb-5">
             <h2 className="text-base font-bold uppercase tracking-wider mb-2">Conversation prompts</h2>
-            <ol className="space-y-2 text-sm">
+            <ol className="space-y-2 text-base">
               {PROMPTS.map((p, i) => (
                 <li key={i} className="break-inside-avoid">
                   <p className="font-semibold">{i + 1}. {p.title}</p>
-                  <p className="text-xs text-gray-600 italic ml-4">{p.why}</p>
+                  <p className="text-sm text-muted-foreground italic ml-4">{p.why}</p>
                 </li>
               ))}
             </ol>
@@ -182,7 +182,7 @@ export default function FamilyTechRoundtable() {
 
           <section className="mb-5 break-inside-avoid">
             <h2 className="text-base font-bold uppercase tracking-wider mb-2">Pick one or two action steps</h2>
-            <ul className="space-y-1 text-sm">
+            <ul className="space-y-1 text-base">
               {ACTIONS.map((a, i) => (
                 <li key={i}> {a}</li>
               ))}
@@ -201,7 +201,7 @@ export default function FamilyTechRoundtable() {
               </thead>
               <tbody>
                 {[1, 2, 3, 4].map(i => (
-                  <tr key={i} className="border-b border-gray-300 h-8">
+                  <tr key={i} className="border-b border-border h-8">
                     <td></td><td></td><td></td>
                   </tr>
                 ))}
@@ -209,7 +209,7 @@ export default function FamilyTechRoundtable() {
             </table>
           </section>
 
-          <footer className="mt-8 pt-3 border-t border-gray-300 text-xs text-gray-600">
+          <footer className="mt-8 pt-3 border-t border-border text-xs text-muted-foreground">
             More free family tech tools at TekSure.com.
           </footer>
         </div>

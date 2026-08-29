@@ -18,11 +18,11 @@ export default function SeniorPelotonGuide() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Just the App</h2><p>$13/month. Use without a Peloton bike. Strength, walking, yoga, meditation classes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Peloton Bike</h2><p>$1,445 + $44/month. Lower-impact than running. Adjustable for any height.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior-friendly classes</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Low Impact rides</li><li>Beginner Strength</li><li>Yoga (chair-friendly)</li><li>20-minute Walking</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior-friendly classes</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Low Impact rides</li><li>Beginner Strength</li><li>Yoga (chair-friendly)</li><li>20-minute Walking</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Refurbished</h2><p>Peloton Bike $995 used. Same warranty.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SilverSneakers alternative</h2><p>FREE with most Medicare Advantage. Same kind of online classes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Fitness+</h2><p>$10/month. Big senior-friendly walking program. Works on Apple Watch.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Try the app free for 30 days before buying a bike.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Try the app free for 30 days before buying a bike.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

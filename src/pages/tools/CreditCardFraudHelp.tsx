@@ -19,7 +19,7 @@ export default function CreditCardFraudHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Spot fraud</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Check statements monthly (or weekly).</li>
               <li>Use bank app for instant alerts.</li>
               <li>Charges you don&apos;t recognize.</li>
@@ -33,7 +33,7 @@ export default function CreditCardFraudHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Found fraud — act NOW</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Call card company immediately (number on back).</li>
               <li>Report fraud charges.</li>
               <li>They issue new card + reverse charges.</li>
@@ -47,7 +47,7 @@ export default function CreditCardFraudHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Disputes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>60 days to dispute charge from statement.</li>
               <li>Call OR submit online via portal.</li>
               <li>Provide details, receipts, screenshots.</li>
@@ -61,7 +61,7 @@ export default function CreditCardFraudHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After fraud — protect</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free credit freeze at 3 bureaus (Equifax, Experian, TransUnion).</li>
               <li>Identity theft report at FTC IdentityTheft.gov.</li>
               <li>Police report (some banks require).</li>
@@ -74,7 +74,7 @@ export default function CreditCardFraudHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Prevent fraud</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bank alerts on every charge over $X.</li>
               <li>Apple Pay / Google Pay = much safer than swipe.</li>
               <li>Don&apos;t save card info on shady sites.</li>
@@ -88,7 +88,7 @@ export default function CreditCardFraudHelp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If overwhelmed</h3>
-            <p className="text-sm text-muted-foreground">If victimized + confused — Identity Theft Resource Center (idtheftcenter.org) free help. AARP Fraud Watch helpline 1-877-908-3360. Trusted family member can help reach out. Don&apos;t try to handle alone if anxiety. Help available.</p>
+            <p className="text-base text-muted-foreground">If victimized + confused — Identity Theft Resource Center (idtheftcenter.org) free help. AARP Fraud Watch helpline 1-877-908-3360. Trusted family member can help reach out. Don&apos;t try to handle alone if anxiety. Help available.</p>
           </CardContent>
         </Card>
       </main>

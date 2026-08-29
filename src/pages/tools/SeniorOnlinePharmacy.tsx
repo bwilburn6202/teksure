@@ -22,7 +22,7 @@ export default function SeniorOnlinePharmacy() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">CVS / Walgreens app</h2><p>Refill prescriptions, schedule vaccines, transfer prescriptions to mail order.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare Part D mail order</h2><p>Often 90-day fills with no copay. Call your plan to set up.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch for fakes</h2><p>Use the FDA BeSafeRx site to verify any online pharmacy before buying.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Compare GoodRx, Cost Plus, and Amazon for every prescription. Prices vary wildly.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Compare GoodRx, Cost Plus, and Amazon for every prescription. Prices vary wildly.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

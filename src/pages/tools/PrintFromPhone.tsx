@@ -120,7 +120,7 @@ export default function PrintFromPhone() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-emerald-500/10 rounded-full">
-                <Printer className="h-8 w-8 text-emerald-600" />
+                <Printer className="h-8 w-8 text-success-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Print from Your Phone</h1>
@@ -135,7 +135,7 @@ export default function PrintFromPhone() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Where are you printing?</p>
+              <p className="text-base font-semibold mb-3">Where are you printing?</p>
               <div className="grid sm:grid-cols-3 gap-2">
                 {([
                   { id: 'home' as Tab, label: 'At home' },
@@ -149,7 +149,7 @@ export default function PrintFromPhone() {
                       tab === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}
                   >
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -160,7 +160,7 @@ export default function PrintFromPhone() {
             <>
               <Card className="border-border shadow-sm mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-3">Pick your phone</p>
+                  <p className="text-base font-semibold mb-3">Pick your phone</p>
                   <div className="grid sm:grid-cols-2 gap-2">
                     {([
                       { id: 'airprint' as const, label: 'iPhone / iPad (AirPrint)' },
@@ -173,7 +173,7 @@ export default function PrintFromPhone() {
                           homeApp === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                         }`}
                       >
-                        <p className="font-medium text-sm">{o.label}</p>
+                        <p className="font-medium text-base">{o.label}</p>
                       </button>
                     ))}
                   </div>
@@ -187,7 +187,7 @@ export default function PrintFromPhone() {
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-3 mb-2">Setup</p>
                   <ol className="space-y-2 mb-4">
                     {homeGuide.setup.map((s, i) => (
-                      <li key={i} className="flex gap-3 text-sm">
+                      <li key={i} className="flex gap-3 text-base">
                         <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                         <span>{s}</span>
                       </li>
@@ -198,30 +198,30 @@ export default function PrintFromPhone() {
                   <div className="space-y-2">
                     {homeGuide.pro.map((t, i) => (
                       <div key={i} className="p-3 rounded-lg border border-border">
-                        <p className="font-medium text-sm">{t.title}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{t.detail}</p>
+                        <p className="font-medium text-base">{t.title}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{t.detail}</p>
                       </div>
                     ))}
                   </div>
                 </CardContent>
               </Card>
 
-              <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-800 mb-6">
+              <Card className="border-warn-foreground/25 bg-warn mb-6">
                 <CardContent className="p-5">
                   <div className="flex gap-3">
-                    <AlertTriangle className="h-5 w-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+                    <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                     <div>
-                      <p className="font-semibold text-sm mb-1">Heads-up about HP Instant Ink</p>
-                      <p className="text-xs text-muted-foreground mb-2">
+                      <p className="font-semibold text-base mb-1">Heads-up about HP Instant Ink</p>
+                      <p className="text-sm text-muted-foreground mb-2">
                         HP sells a monthly subscription called Instant Ink. The printer counts your printed pages and HP mails you ink before you run out. The price looks low, but read the terms carefully:
                       </p>
-                      <ul className="text-xs text-muted-foreground space-y-1 list-disc pl-4">
+                      <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-4">
                         <li>Pages are counted whether you print one line or a full color photo. Both count the same.</li>
                         <li>Unused pages roll over only up to a small monthly cap. Most go to waste if you do not print much.</li>
                         <li>The printer phones home to HP. If you cancel the subscription, the cartridges they sent stop working — even if there is ink left.</li>
                         <li>Cancel by going to instantink.hpconnected.com → Account → Cancel. HP makes you click through several pages.</li>
                       </ul>
-                      <p className="text-xs text-muted-foreground mt-2">
+                      <p className="text-sm text-muted-foreground mt-2">
                         It can be a fair deal for high-volume printers. For someone who prints a few pages a week, buying a generic ink cartridge is usually cheaper.
                       </p>
                     </div>
@@ -235,15 +235,15 @@ export default function PrintFromPhone() {
             <>
               <Card className="border-border mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm mb-3">
+                  <p className="text-base mb-3">
                     No printer at home, or your printer is broken? Plenty of places will print from your phone — most of them within the hour. Pick the one closest to you.
                   </p>
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Places to print without a home printer</p>
                   <div className="space-y-3">
                     {AWAY_OPTIONS.map((o, i) => (
                       <div key={i} className="p-3 rounded-lg border border-border">
-                        <p className="font-medium text-sm">{o.name}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{o.detail}</p>
+                        <p className="font-medium text-base">{o.name}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{o.detail}</p>
                       </div>
                     ))}
                   </div>
@@ -252,8 +252,8 @@ export default function PrintFromPhone() {
 
               <Card className="border-border bg-muted/30 mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-2">Tip for boarding passes and tickets</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-base font-semibold mb-2">Tip for boarding passes and tickets</p>
+                  <p className="text-sm text-muted-foreground">
                     Most airlines accept the boarding pass right on your phone screen — no printing needed. Add it to Apple Wallet (iPhone) or Google Wallet (Android) so it shows up at the airport even without cell service. Same goes for concert and sports tickets.
                   </p>
                 </CardContent>
@@ -265,15 +265,15 @@ export default function PrintFromPhone() {
             <>
               <Card className="border-border mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm mb-3">
+                  <p className="text-base mb-3">
                     Phone photos look great on the screen, but printed photos still mean something — for the fridge, the photo album, or a frame for your grandkids. Most stores let you order from the app and pick up the same day.
                   </p>
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Where to print phone photos</p>
                   <div className="space-y-3">
                     {PHOTO_OPTIONS.map((o, i) => (
                       <div key={i} className="p-3 rounded-lg border border-border">
-                        <p className="font-medium text-sm">{o.name}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{o.detail}</p>
+                        <p className="font-medium text-base">{o.name}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{o.detail}</p>
                       </div>
                     ))}
                   </div>
@@ -282,8 +282,8 @@ export default function PrintFromPhone() {
 
               <Card className="border-border bg-muted/30 mb-6">
                 <CardContent className="p-5">
-                  <p className="text-sm font-semibold mb-2">Photo print sizing — quick guide</p>
-                  <ul className="text-xs text-muted-foreground space-y-1 list-disc pl-4">
+                  <p className="text-base font-semibold mb-2">Photo print sizing — quick guide</p>
+                  <ul className="text-sm text-muted-foreground space-y-1 list-disc pl-4">
                     <li><strong>4x6:</strong> standard photo, fits most albums and fridge magnets.</li>
                     <li><strong>5x7:</strong> good for desk frames.</li>
                     <li><strong>8x10:</strong> wall frames, gifts.</li>
@@ -298,16 +298,16 @@ export default function PrintFromPhone() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/document-scanner-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Document Scanner Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Turn paper into a PDF using your phone camera.</p>
+                <p className="font-medium text-base">Document Scanner Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Turn paper into a PDF using your phone camera.</p>
               </Link>
               <Link to="/tools/photo-library-tips" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Photo Library Tips</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Organize and back up photos before printing.</p>
+                <p className="font-medium text-base">Photo Library Tips</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Organize and back up photos before printing.</p>
               </Link>
               <Link to="/tools/printer-troubleshooter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Printer Troubleshooter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Fix offline, jam, and ink errors at home.</p>
+                <p className="font-medium text-base">Printer Troubleshooter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Fix offline, jam, and ink errors at home.</p>
               </Link>
             </div>
           </div>

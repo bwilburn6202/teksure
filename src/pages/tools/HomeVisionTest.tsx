@@ -94,11 +94,11 @@ function TestCard({ test }: { test: HomeTest }) {
         <p className="font-semibold text-base">{test.name}</p>
         <Badge variant="outline">{test.cost}</Badge>
       </div>
-      <p className="text-sm mb-3">{test.what}</p>
+      <p className="text-base mb-3">{test.what}</p>
       <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">How to use it</p>
       <ol className="space-y-2 mb-4">
         {test.how.map((step, i) => (
-          <li key={i} className="flex gap-3 text-sm">
+          <li key={i} className="flex gap-3 text-base">
             <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
             <span>{step}</span>
           </li>
@@ -124,7 +124,7 @@ export default function HomeVisionTest() {
       <main className="min-h-screen bg-background">
         <section className="bg-gradient-to-br from-blue-50 via-background to-green-50 dark:from-blue-950/20 dark:to-green-950/20 border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto text-center">
-            <div className="flex justify-center mb-3"><div className="p-3 bg-blue-500/10 rounded-full"><Eye className="h-8 w-8 text-blue-600" /></div></div>
+            <div className="flex justify-center mb-3"><div className="p-3 bg-blue-500/10 rounded-full"><Eye className="h-8 w-8 text-info-foreground" /></div></div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">At-Home Vision & Hearing Self-Tests</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">Free and low-cost tests you can run on your phone, in plain English. A first check before you book an appointment.</p>
           </div>
@@ -133,8 +133,8 @@ export default function HomeVisionTest() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Home Vision & Hearing Tests' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6"><CardContent className="p-5 flex gap-3">
-            <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+          <Card className="border-warn-foreground/25 bg-warn mb-6"><CardContent className="p-5 flex gap-3">
+            <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
             <div className="text-sm">
               <p className="font-semibold mb-1">Read this first — these are screening tools, not a diagnosis</p>
               <p className="text-muted-foreground">Every test on this page is a screening. They give you a hint about whether something is off — they cannot replace a real eye doctor or audiologist. If a test shows a concern, if your vision changes suddenly, if you see flashes or floaters, or if you have ear pain, ringing, or sudden hearing loss in one ear, please book an in-person appointment that week. A home test is a first step, not the answer.</p>
@@ -143,7 +143,7 @@ export default function HomeVisionTest() {
 
           <div className="mb-10">
             <h2 className="text-2xl font-bold mb-3">1. At-home vision tests</h2>
-            <p className="text-sm text-muted-foreground mb-5">
+            <p className="text-base text-muted-foreground mb-5">
               Three picks: a free phone app, a low-cost device that estimates a glasses prescription, and a printable grid that catches early macular degeneration.
             </p>
             <div className="space-y-4">
@@ -153,7 +153,7 @@ export default function HomeVisionTest() {
 
           <div className="mb-10">
             <h2 className="text-2xl font-bold mb-3">2. At-home hearing tests</h2>
-            <p className="text-sm text-muted-foreground mb-5">
+            <p className="text-base text-muted-foreground mb-5">
               Three free picks. Wired headphones and a quiet room give you the most accurate result on any of them.
             </p>
             <div className="space-y-4">
@@ -162,8 +162,8 @@ export default function HomeVisionTest() {
           </div>
 
           <Card className="border-border bg-muted/30 mb-6"><CardContent className="p-5">
-            <p className="text-sm font-semibold mb-2">When to skip the home test and call a real doctor</p>
-            <ul className="space-y-1.5 text-xs text-muted-foreground">
+            <p className="text-base font-semibold mb-2">When to skip the home test and call a real doctor</p>
+            <ul className="space-y-1.5 text-sm text-muted-foreground">
               <li className="flex gap-2"><span className="text-primary">•</span><span>Sudden vision loss, flashes of light, a curtain across your view, or new floaters — call an eye doctor that day or go to urgent care.</span></li>
               <li className="flex gap-2"><span className="text-primary">•</span><span>Hearing loss in only one ear, ear pain, dizziness, or constant ringing — see an ENT or audiologist within a week.</span></li>
               <li className="flex gap-2"><span className="text-primary">•</span><span>Wavy lines on the Amsler grid or missing letters on a vision app — book an ophthalmologist.</span></li>
@@ -174,12 +174,12 @@ export default function HomeVisionTest() {
           <div className="mt-10 pt-8 border-t border-border">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
-              <Link to="/tools/hearing-aid-apps" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"><p className="font-medium text-sm">Hearing Aid Apps & OTC Aids</p><p className="text-xs text-muted-foreground mt-0.5">Free tests and a picker for over-the-counter aids.</p></Link>
-              <Link to="/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"><p className="font-medium text-sm">Low-Vision Setup</p><p className="text-xs text-muted-foreground mt-0.5">Make your phone and computer easier to read.</p></Link>
-              <Link to="/tools/telehealth-prep" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"><p className="font-medium text-sm">Telehealth Prep</p><p className="text-xs text-muted-foreground mt-0.5">Get ready for a video visit with your doctor.</p></Link>
+              <Link to="/tools/hearing-aid-apps" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"><p className="font-medium text-base">Hearing Aid Apps & OTC Aids</p><p className="text-sm text-muted-foreground mt-0.5">Free tests and a picker for over-the-counter aids.</p></Link>
+              <Link to="/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"><p className="font-medium text-base">Low-Vision Setup</p><p className="text-sm text-muted-foreground mt-0.5">Make your phone and computer easier to read.</p></Link>
+              <Link to="/tools/telehealth-prep" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"><p className="font-medium text-base">Telehealth Prep</p><p className="text-sm text-muted-foreground mt-0.5">Get ready for a video visit with your doctor.</p></Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: run the same home test every 3-6 months and save your result. A small change you would not notice day-to-day shows up clearly when you compare two screenshots.
           </p>
         </div>

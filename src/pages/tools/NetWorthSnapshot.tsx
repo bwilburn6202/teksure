@@ -69,7 +69,7 @@ export default function NetWorthSnapshot() {
   const categories = form.kind === "asset" ? ASSET_CATEGORIES : DEBT_CATEGORIES;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Net Worth Snapshot | TekSure"
         description="A quick way to add up all your accounts and see your net worth. Print a snapshot for your records."
@@ -78,10 +78,10 @@ export default function NetWorthSnapshot() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <DollarSign className="h-7 w-7 text-emerald-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Net Worth Snapshot</h1>
+            <DollarSign className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Net Worth Snapshot</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Add up everything you own and everything you owe. Doing this once or twice a year gives you a clear picture.
           </p>
         </div>
@@ -100,19 +100,19 @@ export default function NetWorthSnapshot() {
             <CardContent className="py-4 px-4">
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div>
-                  <p className="text-xs text-gray-500 flex items-center justify-center gap-1">
+                  <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
                     <TrendingUp className="h-3 w-3" /> Assets
                   </p>
-                  <p className="text-xl font-bold text-green-700">{formatMoney(totalAssets)}</p>
+                  <p className="text-xl font-bold text-success-foreground">{formatMoney(totalAssets)}</p>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 flex items-center justify-center gap-1">
+                  <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
                     <TrendingDown className="h-3 w-3" /> Debts
                   </p>
-                  <p className="text-xl font-bold text-red-700">{formatMoney(totalDebts)}</p>
+                  <p className="text-xl font-bold text-danger-foreground">{formatMoney(totalDebts)}</p>
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500">Net Worth</p>
+                  <p className="text-sm text-muted-foreground">Net Worth</p>
                   <p className={`text-2xl font-bold ${netWorth >= 0 ? "text-emerald-700" : "text-red-700"}`}>{formatMoney(netWorth)}</p>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export default function NetWorthSnapshot() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-emerald-600" />
+              <PlusCircle className="h-5 w-5 text-success-foreground" />
               Add an Account
             </CardTitle>
           </CardHeader>
@@ -133,21 +133,21 @@ export default function NetWorthSnapshot() {
               <button
                 type="button"
                 onClick={() => setForm(f => ({ ...f, kind: "asset", category: ASSET_CATEGORIES[0] }))}
-                className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${form.kind === "asset" ? "bg-green-50 border-green-400 text-green-800" : "bg-white border-gray-200 text-gray-700"}`}
+                className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${form.kind === "asset" ? "bg-green-50 border-green-400 text-green-800" : "bg-white border-border text-gray-700"}`}
               >
                 What I Own (Asset)
               </button>
               <button
                 type="button"
                 onClick={() => setForm(f => ({ ...f, kind: "debt", category: DEBT_CATEGORIES[0] }))}
-                className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${form.kind === "debt" ? "bg-red-50 border-red-400 text-red-800" : "bg-white border-gray-200 text-gray-700"}`}
+                className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${form.kind === "debt" ? "bg-red-50 border-red-400 text-red-800" : "bg-white border-border text-gray-700"}`}
               >
                 What I Owe (Debt)
               </button>
             </div>
             <div>
               <Label className="text-base font-medium">Category</Label>
-              <select value={form.category} onChange={e => setForm(f => ({ ...f, category: e.target.value }))} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <select value={form.category} onChange={e => setForm(f => ({ ...f, category: e.target.value }))} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card">
                 {categories.map(c => <option key={c}>{c}</option>)}
               </select>
             </div>
@@ -161,7 +161,7 @@ export default function NetWorthSnapshot() {
                 <Input id="acct-value" type="number" min="0" step="0.01" placeholder="0" value={form.value} onChange={e => setForm(f => ({ ...f, value: e.target.value }))} className="mt-1 text-base" />
               </div>
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base">Add to Snapshot</Button>
           </CardContent>
         </Card>
@@ -178,26 +178,26 @@ export default function NetWorthSnapshot() {
         {/* Print header */}
         <div className="hidden print:block mb-3 border-b pb-2">
           <h2 className="text-xl font-bold">Net Worth Snapshot</h2>
-          <p className="text-xs text-gray-500">As of {formatDate(snapshotDate)}</p>
+          <p className="text-sm text-muted-foreground">As of {formatDate(snapshotDate)}</p>
         </div>
 
         {/* Assets */}
         {assets.length > 0 && (
           <Card className="mb-4 print:break-inside-avoid">
-            <CardHeader className="pb-2 pt-3 bg-green-50">
-              <CardTitle className="text-lg text-green-800">Assets — what I own</CardTitle>
+            <CardHeader className="pb-2 pt-3 bg-success">
+              <CardTitle className="text-lg text-success-foreground">Assets — what I own</CardTitle>
             </CardHeader>
             <CardContent className="pt-2">
               {Object.entries(assetGroups).map(([cat, items]) => (
                 <div key={cat} className="mb-2">
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-2">{cat}</p>
+                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mt-2">{cat}</p>
                   <div className="divide-y">
                     {items.map(a => (
                       <div key={a.id} className="py-1.5 flex items-center justify-between text-sm">
-                        <span className="text-gray-800">{a.name}</span>
+                        <span className="text-foreground">{a.name}</span>
                         <div className="flex items-center gap-2">
-                          <span className="font-semibold text-green-700">{formatMoney(a.value)}</span>
-                          <Button variant="ghost" size="icon" onClick={() => remove(a.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                          <span className="font-semibold text-success-foreground">{formatMoney(a.value)}</span>
+                          <Button variant="ghost" size="icon" onClick={() => remove(a.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                             <Trash2 className="h-3 w-3" />
                           </Button>
                         </div>
@@ -207,8 +207,8 @@ export default function NetWorthSnapshot() {
                 </div>
               ))}
               <div className="border-t mt-3 pt-2 flex justify-between text-base">
-                <span className="font-semibold text-gray-700">Total Assets</span>
-                <span className="font-bold text-green-700">{formatMoney(totalAssets)}</span>
+                <span className="font-semibold text-foreground">Total Assets</span>
+                <span className="font-bold text-success-foreground">{formatMoney(totalAssets)}</span>
               </div>
             </CardContent>
           </Card>
@@ -217,20 +217,20 @@ export default function NetWorthSnapshot() {
         {/* Debts */}
         {debts.length > 0 && (
           <Card className="mb-4 print:break-inside-avoid">
-            <CardHeader className="pb-2 pt-3 bg-red-50">
-              <CardTitle className="text-lg text-red-800">Debts — what I owe</CardTitle>
+            <CardHeader className="pb-2 pt-3 bg-danger">
+              <CardTitle className="text-lg text-danger-foreground">Debts — what I owe</CardTitle>
             </CardHeader>
             <CardContent className="pt-2">
               {Object.entries(debtGroups).map(([cat, items]) => (
                 <div key={cat} className="mb-2">
-                  <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mt-2">{cat}</p>
+                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mt-2">{cat}</p>
                   <div className="divide-y">
                     {items.map(a => (
                       <div key={a.id} className="py-1.5 flex items-center justify-between text-sm">
-                        <span className="text-gray-800">{a.name}</span>
+                        <span className="text-foreground">{a.name}</span>
                         <div className="flex items-center gap-2">
-                          <span className="font-semibold text-red-700">{formatMoney(a.value)}</span>
-                          <Button variant="ghost" size="icon" onClick={() => remove(a.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                          <span className="font-semibold text-danger-foreground">{formatMoney(a.value)}</span>
+                          <Button variant="ghost" size="icon" onClick={() => remove(a.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                             <Trash2 className="h-3 w-3" />
                           </Button>
                         </div>
@@ -240,8 +240,8 @@ export default function NetWorthSnapshot() {
                 </div>
               ))}
               <div className="border-t mt-3 pt-2 flex justify-between text-base">
-                <span className="font-semibold text-gray-700">Total Debts</span>
-                <span className="font-bold text-red-700">{formatMoney(totalDebts)}</span>
+                <span className="font-semibold text-foreground">Total Debts</span>
+                <span className="font-bold text-danger-foreground">{formatMoney(totalDebts)}</span>
               </div>
             </CardContent>
           </Card>
@@ -251,7 +251,7 @@ export default function NetWorthSnapshot() {
         {accounts.length > 0 && (
           <Card className={`mb-4 print:break-inside-avoid ${netWorth >= 0 ? "bg-emerald-50 border-emerald-200" : "bg-red-50 border-red-200"}`}>
             <CardContent className="py-3 px-4 text-center">
-              <p className="text-sm text-gray-600">Net Worth</p>
+              <p className="text-base text-muted-foreground">Net Worth</p>
               <p className={`text-3xl font-bold ${netWorth >= 0 ? "text-emerald-700" : "text-red-700"}`}>{formatMoney(netWorth)}</p>
             </CardContent>
           </Card>
@@ -259,23 +259,23 @@ export default function NetWorthSnapshot() {
 
         {accounts.length === 0 && (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <DollarSign className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <DollarSign className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">Empty snapshot.</p>
-              <p className="text-sm mt-1">Start by adding your checking account or another asset.</p>
+              <p className="text-base mt-1">Start by adding your checking account or another asset.</p>
             </CardContent>
           </Card>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Take a snapshot every January and July. The number itself matters less than the trend over time.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

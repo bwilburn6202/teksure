@@ -32,10 +32,10 @@ export default function SportsStreamingPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function SportsStreamingPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Math vs cable</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Cable with sports tier: $150-200/month.</li>
               <li>YouTube TV alone: $83/month. Saves $800-1,400/year.</li>
               <li>Antenna + ESPN+ ($11/mo): about $11/month — covers most casual fans.</li>
@@ -56,7 +56,7 @@ export default function SportsStreamingPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Specific sport tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>NFL fan, ALL teams</strong> — YouTube TV + NFL Sunday Ticket ($430/year extra).</li>
               <li><strong>NFL fan, just my team</strong> — antenna gets local CBS/FOX. + ESPN+ for Monday Night Football.</li>
               <li><strong>NBA fan, ALL teams</strong> — YouTube TV + NBA League Pass.</li>
@@ -71,7 +71,7 @@ export default function SportsStreamingPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — pause when sport is off-season</h3>
-            <p className="text-sm text-muted-foreground">YouTube TV and Hulu + Live let you PAUSE for 1-3 months free. NFL fan paying for live TV in May? Pause until August. Saves $250+ per year.</p>
+            <p className="text-base text-muted-foreground">YouTube TV and Hulu + Live let you PAUSE for 1-3 months free. NFL fan paying for live TV in May? Pause until August. Saves $250+ per year.</p>
           </CardContent>
         </Card>
       </main>

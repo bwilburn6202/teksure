@@ -19,7 +19,7 @@ export default function LIHEAPGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What LIHEAP is</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Low Income Home Energy Assistance Program.</li>
               <li>Federal funding, state-run.</li>
               <li>Helps pay heat + electric bills.</li>
@@ -33,7 +33,7 @@ export default function LIHEAPGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Eligibility</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Income up to 150% of poverty (~$23,500/year individual 2026).</li>
               <li>Some states 200% (~$31K/yr).</li>
               <li>Renters AND owners eligible.</li>
@@ -47,7 +47,7 @@ export default function LIHEAPGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How much you get</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$300-1,500/year typical.</li>
               <li>Higher in cold-winter states.</li>
               <li>Crisis grant: $400-800 emergency for shutoff.</li>
@@ -60,7 +60,7 @@ export default function LIHEAPGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apply</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find state office at acl.gov/programs/older-adults/LIHEAP-and-related.</li>
               <li>Or 1-866-674-6327.</li>
               <li>Bring: ID, SS#, recent utility bill, income proof.</li>
@@ -74,7 +74,7 @@ export default function LIHEAPGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Weatherization Assistance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>FREE home weatherization (insulation, heating, etc.).</li>
               <li>Same income limits as LIHEAP.</li>
               <li>$8,000+ home improvements free.</li>
@@ -88,7 +88,7 @@ export default function LIHEAPGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Utility company programs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most utilities have senior + low-income discounts.</li>
               <li>&quot;CARE program&quot; in California.</li>
               <li>&quot;LiHEAP&quot; in many other states (state-funded supplement).</li>
@@ -102,7 +102,7 @@ export default function LIHEAPGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save more on bills</h3>
-            <p className="text-sm text-muted-foreground"><strong>Smart thermostat</strong> — $150 saves $200/yr. <strong>LED bulbs</strong> — pay back in months. <strong>Insulate water heater</strong> — $30 wrap saves $50/yr. <strong>Caulk windows + doors</strong> — $20 saves $100/yr. <strong>Energy Star appliances</strong> when replacing. Combine LIHEAP + savings = lower bills.</p>
+            <p className="text-base text-muted-foreground"><strong>Smart thermostat</strong> — $150 saves $200/yr. <strong>LED bulbs</strong> — pay back in months. <strong>Insulate water heater</strong> — $30 wrap saves $50/yr. <strong>Caulk windows + doors</strong> — $20 saves $100/yr. <strong>Energy Star appliances</strong> when replacing. Combine LIHEAP + savings = lower bills.</p>
           </CardContent>
         </Card>
       </main>

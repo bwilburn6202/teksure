@@ -398,7 +398,7 @@ export default function MedicareCostEstimator() {
                         <span className="text-base">No / not sure</span>
                       </label>
                     </RadioGroup>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       If yes, Part A is free. If no, you owe up to ${PART_A_NO_CREDITS_PREMIUM}/mo.
                     </p>
                   </div>
@@ -420,7 +420,7 @@ export default function MedicareCostEstimator() {
                         ))}
                       </SelectContent>
                     </Select>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-base text-muted-foreground">
                       Based on your tax return from 2 years ago (2024 for 2026 Medicare).
                     </p>
                   </div>
@@ -461,7 +461,7 @@ export default function MedicareCostEstimator() {
                     onChange={setPrescriptions}
                     suffix={prescriptions === 1 ? 'med' : 'meds'}
                   />
-                  <p className="text-sm text-muted-foreground -mt-3">
+                  <p className="text-base text-muted-foreground -mt-3">
                     Rough copay estimate: ${PART_D_PER_MED_MONTHLY}/med/mo after deductible.
                   </p>
 
@@ -559,16 +559,16 @@ export default function MedicareCostEstimator() {
                   color="emerald"
                 />
                 {/* Cheapest */}
-                <Card className="border-2 border-amber-400 bg-amber-50 dark:bg-amber-950/30">
+                <Card className="border-2 border-amber-400 bg-warn ">
                   <CardContent className="p-5">
                     <div className="flex items-center gap-2 mb-2">
-                      <Trophy className="h-5 w-5 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+                      <Trophy className="h-5 w-5 text-warn-foreground " aria-hidden="true" />
                       <h3 className="text-base font-bold">Cheapest for you</h3>
                     </div>
                     <p className="text-2xl font-bold mb-1">
                       {cheapest === 'original' ? 'Original + Medigap' : 'Medicare Advantage'}
                     </p>
-                    <p className="text-sm text-muted-foreground mb-3">
+                    <p className="text-base text-muted-foreground mb-3">
                       Saves about ${savings.toLocaleString()}/year over the other option — based on the care you expect.
                     </p>
                     <Badge variant="secondary" className="text-xs">
@@ -651,11 +651,11 @@ export default function MedicareCostEstimator() {
 
         {/* ── Free help reminder ──────────────────────────────────── */}
         <section className="container mx-auto px-4 py-12 md:py-16 max-w-5xl">
-          <Card className="border-2 border-emerald-500 bg-emerald-50 dark:bg-emerald-950/30">
+          <Card className="border-2 border-emerald-500 bg-success ">
             <CardContent className="p-6 md:p-8">
               <div className="flex flex-col md:flex-row items-start gap-5">
-                <div className="bg-emerald-100 dark:bg-emerald-900 p-3 rounded-full shrink-0">
-                  <HandHeart className="h-8 w-8 text-emerald-700 dark:text-emerald-300" aria-hidden="true" />
+                <div className="bg-success p-3 rounded-full shrink-0">
+                  <HandHeart className="h-8 w-8 text-success-foreground " aria-hidden="true" />
                 </div>
                 <div className="flex-1 space-y-4">
                   <h2 className="text-2xl font-bold">Free, neutral help — never pay a "helper" site</h2>
@@ -670,9 +670,9 @@ export default function MedicareCostEstimator() {
                       href="https://www.shiphelp.org"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 p-4 bg-white dark:bg-background rounded-lg border hover:border-emerald-500 transition-colors min-h-14"
+                      className="flex items-center gap-3 p-4 bg-card dark:bg-background rounded-lg border hover:border-emerald-500 transition-colors min-h-14"
                     >
-                      <Phone className="h-5 w-5 text-emerald-700 dark:text-emerald-300 shrink-0" aria-hidden="true" />
+                      <Phone className="h-5 w-5 text-success-foreground shrink-0" aria-hidden="true" />
                       <div>
                         <div className="font-semibold text-base">Find your state SHIP</div>
                         <div className="text-sm text-muted-foreground">shiphelp.org · free counselor</div>
@@ -682,9 +682,9 @@ export default function MedicareCostEstimator() {
                       href="https://www.medicare.gov/plan-compare"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 p-4 bg-white dark:bg-background rounded-lg border hover:border-emerald-500 transition-colors min-h-14"
+                      className="flex items-center gap-3 p-4 bg-card dark:bg-background rounded-lg border hover:border-emerald-500 transition-colors min-h-14"
                     >
-                      <Globe className="h-5 w-5 text-emerald-700 dark:text-emerald-300 shrink-0" aria-hidden="true" />
+                      <Globe className="h-5 w-5 text-success-foreground shrink-0" aria-hidden="true" />
                       <div>
                         <div className="font-semibold text-base">Medicare Plan Finder</div>
                         <div className="text-sm text-muted-foreground">medicare.gov · real quotes</div>
@@ -887,7 +887,7 @@ function ScenarioCard({ title, icon, monthly, yearly, isCheapest, color }: Scena
           <h3 className="text-base font-bold">{title}</h3>
         </div>
         <p className="text-3xl font-bold mb-1">${monthly.toLocaleString()}<span className="text-base font-normal text-muted-foreground">/mo</span></p>
-        <p className="text-sm text-muted-foreground mb-3">
+        <p className="text-base text-muted-foreground mb-3">
           About ${yearly.toLocaleString()}/year including deductibles
         </p>
         {isCheapest && (
@@ -916,7 +916,7 @@ function BreakdownCard({ scenario, accent }: BreakdownCardProps) {
             <div key={i} className="flex justify-between items-start gap-3 text-sm border-b pb-2 last:border-0">
               <div className="flex-1">
                 <dt className="font-medium">{item.label}</dt>
-                {item.note && <dd className="text-xs text-muted-foreground mt-0.5">{item.note}</dd>}
+                {item.note && <dd className="text-sm text-muted-foreground mt-0.5">{item.note}</dd>}
               </div>
               <div className="font-semibold tabular-nums shrink-0">
                 ${Math.round(item.amount).toLocaleString()}/mo
@@ -939,7 +939,7 @@ function BreakdownCard({ scenario, accent }: BreakdownCardProps) {
           </div>
         </div>
         {scenario.notes.length > 0 && (
-          <ul className="mt-4 space-y-1.5 text-sm text-muted-foreground">
+          <ul className="mt-4 space-y-1.5 text-base text-muted-foreground">
             {scenario.notes.map((n, i) => (
               <li key={i} className="flex gap-2">
                 <Info className="h-4 w-4 shrink-0 mt-0.5" aria-hidden="true" />

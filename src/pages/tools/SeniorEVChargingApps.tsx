@@ -22,7 +22,7 @@ export default function SeniorEVChargingApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tesla Supercharger</h2><p>For Tesla. Newer models from Ford, GM, Rivian also use Tesla now.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">EVgo</h2><p>Common in city parking garages. Pay-per-use or membership.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Costs</h2><p>Level 2 ~$0.20/kWh. Fast charging ~$0.45/kWh. Add 200 miles for $20-$40.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Plug in at hotels and movie theaters — many free during your stay.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Plug in at hotels and movie theaters — many free during your stay.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

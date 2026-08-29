@@ -22,7 +22,7 @@ export default function SeniorIPhoneEasyMode() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Simple home screen</h2><p>Long-press apps you don&apos;t use → Remove from Home Screen. Cleaner phone.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Triple-click button</h2><p>Settings → Accessibility → Triple-Click Side Button. Set to Magnifier or Zoom.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free help</h2><p>Apple Genius Bar appointments are free. Up to 90 minutes of teaching.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Ask a tech-savvy grandchild to set up Assistive Access. Done in 10 minutes.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Ask a tech-savvy grandchild to set up Assistive Access. Done in 10 minutes.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

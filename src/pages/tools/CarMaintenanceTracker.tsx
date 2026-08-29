@@ -28,7 +28,7 @@ export default function CarMaintenanceTracker() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why track</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Documented maintenance increases resale value $500-1,500.</li>
               <li>Knowing your last oil change prevents over-paying jiffy lubes.</li>
               <li>Catches problems early — slow MPG drop signals needed tune-up.</li>
@@ -43,10 +43,10 @@ export default function CarMaintenanceTracker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -55,7 +55,7 @@ export default function CarMaintenanceTracker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to track</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Oil changes — every 5,000-7,500 miles for most cars.</li>
               <li>Tire rotation — every 5,000-7,500 miles.</li>
               <li>Tire replacement — every 30,000-60,000 miles depending on tread wear.</li>
@@ -73,14 +73,14 @@ export default function CarMaintenanceTracker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save receipts</h2>
-            <p className="text-sm">Take a photo of every service receipt. Store in a "Car" album in your phone OR upload to your tracking app. When selling, you can show 5-10 years of records.</p>
+            <p className="text-base">Take a photo of every service receipt. Store in a "Car" album in your phone OR upload to your tracking app. When selling, you can show 5-10 years of records.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Recall checking</h3>
-            <p className="text-sm text-muted-foreground">Every 6 months, check <strong>nhtsa.gov/recalls</strong> with your VIN. Open recalls are FREE to fix at any dealer (regardless of who did the work).</p>
+            <p className="text-base text-muted-foreground">Every 6 months, check <strong>nhtsa.gov/recalls</strong> with your VIN. Open recalls are FREE to fix at any dealer (regardless of who did the work).</p>
           </CardContent>
         </Card>
       </main>

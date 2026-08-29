@@ -22,7 +22,7 @@ export default function SeniorPassportApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Passport photos</h2><p>$15 at CVS or Walgreens. Most reliable.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smart Traveler Enrollment</h2><p>FREE at step.state.gov. State Department contacts you in emergencies abroad.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Travel insurance</h2><p>Always buy. Medical evac alone can cost $50,000+.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Photograph passport. Email to yourself. Lost passport replacement faster.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Photograph passport. Email to yourself. Lost passport replacement faster.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

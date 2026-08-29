@@ -46,21 +46,21 @@ export default function SeniorFirearmSafetyChecklist() {
   const completedCount = Object.values(done).filter(Boolean).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Senior Firearm Safety Checklist | TekSure" description="Compassionate firearm safety and estate-planning checklist for older adults and families navigating cognitive decline. Respectful of gun owners, focused on planning." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Lock className="h-7 w-7 text-slate-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Firearm Safety for Seniors</h1>
+            <Lock className="h-7 w-7 text-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Firearm Safety for Seniors</h1>
           </div>
-          <p className="text-gray-600 text-lg">For senior gun owners and families planning ahead. Respect for ownership combined with safety as cognitive health changes.</p>
+          <p className="text-muted-foreground text-lg">For senior gun owners and families planning ahead. Respect for ownership combined with safety as cognitive health changes.</p>
         </div>
 
         {completedCount > 0 && (
-          <Card className="mb-4 bg-slate-50 border-slate-200">
+          <Card className="mb-4 bg-muted border-border">
             <CardContent className="py-3 px-4 text-center">
-              <p className="text-slate-900 font-semibold">{completedCount} of {ITEMS.length} done</p>
+              <p className="text-foreground font-semibold">{completedCount} of {ITEMS.length} done</p>
             </CardContent>
           </Card>
         )}
@@ -68,14 +68,14 @@ export default function SeniorFirearmSafetyChecklist() {
         {CATEGORIES.map(cat => (
           <Card key={cat} className="mb-4">
             <CardContent className="py-4 px-4">
-              <h2 className="text-xl font-bold text-gray-900 mb-3">{cat}</h2>
+              <h2 className="text-xl font-bold text-foreground mb-3">{cat}</h2>
               <div className="space-y-3">
                 {ITEMS.filter(i => i.category === cat).map(i => (
-                  <div key={i.id} className="flex items-start gap-3 p-3 rounded-lg border border-gray-200 bg-white">
+                  <div key={i.id} className="flex items-start gap-3 p-3 rounded-lg border border-border bg-card">
                     <Checkbox checked={!!done[i.id]} onCheckedChange={() => toggle(i.id)} className="mt-1 print:hidden" />
                     <div className="flex-1 min-w-0">
                       <p className={`font-semibold ${done[i.id] ? "line-through text-gray-400" : "text-gray-900"}`}>{i.title}</p>
-                      <p className="text-sm text-gray-600 mt-1">{i.detail}</p>
+                      <p className="text-base text-muted-foreground mt-1">{i.detail}</p>
                     </div>
                   </div>
                 ))}
@@ -84,9 +84,9 @@ export default function SeniorFirearmSafetyChecklist() {
           </Card>
         ))}
 
-        <Card className="mb-4 bg-blue-50 border-blue-200">
+        <Card className="mb-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Crisis line:</span> If you or a loved one is in immediate danger, call <span className="font-bold">988</span> (Suicide and Crisis Lifeline). Veterans press 1 after calling. Free, 24/7, trained crisis counselors. Your firearm staying safely stored — even temporarily — is the single most effective suicide prevention measure researchers have studied.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Crisis line:</span> If you or a loved one is in immediate danger, call <span className="font-bold">988</span> (Suicide and Crisis Lifeline). Veterans press 1 after calling. Free, 24/7, trained crisis counselors. Your firearm staying safely stored — even temporarily — is the single most effective suicide prevention measure researchers have studied.</p>
           </CardContent>
         </Card>
 
@@ -96,6 +96,6 @@ export default function SeniorFirearmSafetyChecklist() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

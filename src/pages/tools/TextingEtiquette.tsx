@@ -19,7 +19,7 @@ export default function TextingEtiquette() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common senior texting mistakes</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>ALL CAPS</strong> — sounds like yelling.</li>
               <li><strong>Period at end</strong> — younger people read as cold/angry.</li>
               <li><strong>Multiple texts in a row</strong> — pings repeatedly.</li>
@@ -33,7 +33,7 @@ export default function TextingEtiquette() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Better practices</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One thought per text.</li>
               <li>Skip the period for casual texts.</li>
               <li>Heart emoji + thumbs up = friendly.</li>
@@ -47,7 +47,7 @@ export default function TextingEtiquette() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to call instead</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Long stories.</li>
               <li>Emotional topics.</li>
               <li>Time-sensitive medical/safety.</li>
@@ -61,7 +61,7 @@ export default function TextingEtiquette() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Slang decoder</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"lol" = laughing (often just acknowledging).</li>
               <li>"omg" = oh my goodness.</li>
               <li>"tbh" = to be honest.</li>
@@ -76,7 +76,7 @@ export default function TextingEtiquette() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Be yourself</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t force teen-speak. Grandparents text formally — that&apos;s charming, not wrong. Just keep messages short + don&apos;t spam. Kids treasure thoughtful texts.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t force teen-speak. Grandparents text formally — that&apos;s charming, not wrong. Just keep messages short + don&apos;t spam. Kids treasure thoughtful texts.</p>
           </CardContent>
         </Card>
       </main>

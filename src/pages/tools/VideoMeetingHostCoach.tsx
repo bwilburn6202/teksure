@@ -19,7 +19,7 @@ export default function VideoMeetingHostCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Best free options</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li><strong>Zoom Free</strong> — up to 100 people, 40-minute limit per meeting (just rejoin if longer).</li>
               <li><strong>Google Meet Free</strong> — up to 100 people, 60-minute limit. Free with Gmail.</li>
               <li><strong>Microsoft Teams Free</strong> — up to 100 people, 60 minutes.</li>
@@ -32,7 +32,7 @@ export default function VideoMeetingHostCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Schedule a Zoom meeting</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Sign in at zoom.us. Click "Schedule a Meeting".</li>
               <li>Topic ("Sunday Family Call"), date, time.</li>
               <li>Optional: Recurring meeting — "Every Sunday at 5 PM".</li>
@@ -46,7 +46,7 @@ export default function VideoMeetingHostCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">During the meeting</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Mute people who aren\'t talking</strong> — tap their name → Mute. Stops echo.</li>
               <li><strong>Spotlight a speaker</strong> — pin on screen for everyone.</li>
               <li><strong>Screen share</strong> — show photos, recipes, or an article. Tap "Share screen".</li>
@@ -60,7 +60,7 @@ export default function VideoMeetingHostCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Managing chaos</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Mute on entry"</strong> — Zoom setting that mutes everyone joining. Saves echo chaos.</li>
               <li><strong>Waiting room</strong> — you approve people one by one. Stops Zoom-bombing.</li>
               <li><strong>Co-host</strong> — promote one tech-savvy family member to help mute and manage.</li>
@@ -73,7 +73,7 @@ export default function VideoMeetingHostCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For older relatives joining</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Send the link 5 minutes before, not days ahead — they\'ll lose it.</li>
               <li>Add a phone number they can call IN to (Zoom and Meet both have toll-free dial-in numbers).</li>
               <li>Walk them through joining once on a separate test call.</li>
@@ -86,7 +86,7 @@ export default function VideoMeetingHostCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best practice for family rituals</h3>
-            <p className="text-sm text-muted-foreground">Set a recurring weekly call — Sunday 5 PM family check-in. Use the same Zoom link every week. Family knows when to be there. Even 20-30 minutes a week keeps everyone connected.</p>
+            <p className="text-base text-muted-foreground">Set a recurring weekly call — Sunday 5 PM family check-in. Use the same Zoom link every week. Family knows when to be there. Even 20-30 minutes a week keeps everyone connected.</p>
           </CardContent>
         </Card>
       </main>

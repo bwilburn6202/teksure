@@ -62,15 +62,15 @@ export default function RecipeScaler() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Recipe Scaler | TekSure" description="Type a recipe and the number of servings you want. The tool scales every ingredient amount." />
       <div className="max-w-2xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <ChefHat className="h-7 w-7 text-amber-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Recipe Scaler</h1>
+            <ChefHat className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Recipe Scaler</h1>
           </div>
-          <p className="text-gray-600 text-lg">Paste a recipe and the number of servings you want. The tool will adjust the amounts.</p>
+          <p className="text-muted-foreground text-lg">Paste a recipe and the number of servings you want. The tool will adjust the amounts.</p>
         </div>
         <Card>
           <CardContent className="py-4 px-4 space-y-3">
@@ -86,7 +86,7 @@ export default function RecipeScaler() {
             </div>
             <div>
               <label className="text-base font-medium">Ingredients (one per line)</label>
-              <textarea rows={8} value={ingredients} onChange={e => setIngredients(e.target.value)} placeholder={"2 cups flour\n1 cup sugar\n3 eggs\n1/2 tsp salt"} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white font-mono" />
+              <textarea rows={8} value={ingredients} onChange={e => setIngredients(e.target.value)} placeholder={"2 cups flour\n1 cup sugar\n3 eggs\n1/2 tsp salt"} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card font-mono" />
             </div>
           </CardContent>
         </Card>
@@ -94,8 +94,8 @@ export default function RecipeScaler() {
         {lines.length > 0 && newServings && factor > 0 && (
           <Card className="mt-4">
             <CardContent className="py-4 px-4">
-              <p className="text-sm font-semibold text-amber-700 mb-2">Scaled for {newServings} serving{parseFloat(newServings) !== 1 ? "s" : ""}:</p>
-              <ul className="space-y-1 font-mono text-sm">
+              <p className="text-base font-semibold text-warn-foreground mb-2">Scaled for {newServings} serving{parseFloat(newServings) !== 1 ? "s" : ""}:</p>
+              <ul className="space-y-1 font-mono text-base">
                 {lines.map((l, i) => (
                   <li key={i} className="py-1 border-b last:border-0">{scaleLine(l)}</li>
                 ))}
@@ -104,6 +104,6 @@ export default function RecipeScaler() {
           </Card>
         )}
       </div>
-    </div>
+    </main>
   );
 }

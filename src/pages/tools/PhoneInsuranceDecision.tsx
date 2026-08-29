@@ -124,7 +124,7 @@ export default function PhoneInsuranceDecision() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-indigo-500/10 rounded-full">
-                <ShieldCheck className="h-8 w-8 text-indigo-600" />
+                <ShieldCheck className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Phone Insurance Decision</h1>
@@ -153,7 +153,7 @@ export default function PhoneInsuranceDecision() {
                 <div>
                   <Label htmlFor="price" className="text-sm font-semibold">2. How much did the phone cost?</Label>
                   <Input id="price" type="number" placeholder="e.g. 800" value={phonePrice} onChange={(e) => setPhonePrice(e.target.value)} className="mt-1 max-w-[200px]" />
-                  <p className="text-xs text-muted-foreground mt-1">If you do not know, $800 is a reasonable middle.</p>
+                  <p className="text-sm text-muted-foreground mt-1">If you do not know, $800 is a reasonable middle.</p>
                 </div>
               )}
 
@@ -176,7 +176,7 @@ export default function PhoneInsuranceDecision() {
                     <div className="flex items-center gap-3"><RadioGroupItem value="no" id="cc-no" /><Label htmlFor="cc-no" className="cursor-pointer">No</Label></div>
                     <div className="flex items-center gap-3"><RadioGroupItem value="not-sure" id="cc-ns" /><Label htmlFor="cc-ns" className="cursor-pointer">Not sure (treat as no)</Label></div>
                   </RadioGroup>
-                  <p className="text-xs text-muted-foreground mt-1">Only counts if the monthly bill is paid with that same card.</p>
+                  <p className="text-sm text-muted-foreground mt-1">Only counts if the monthly bill is paid with that same card.</p>
                 </div>
               )}
             </CardContent>
@@ -185,9 +185,9 @@ export default function PhoneInsuranceDecision() {
           {result && (
             <>
               <Card className={`border-2 mb-6 ${
-                result.recommendation === 'buy' ? 'border-green-300 bg-green-50 dark:bg-green-950/20' :
-                result.recommendation === 'skip' ? 'border-blue-300 bg-blue-50 dark:bg-blue-950/20' :
-                'border-amber-300 bg-amber-50 dark:bg-amber-950/20'
+                result.recommendation === 'buy' ? 'border-green-300 bg-success dark:bg-green-950/20' :
+                result.recommendation === 'skip' ? 'border-blue-300 bg-info dark:bg-blue-950/20' :
+                'border-amber-300 bg-warn dark:bg-amber-950/20'
               }`}>
                 <CardContent className="p-6">
                   <Badge className="mb-2">
@@ -198,32 +198,32 @@ export default function PhoneInsuranceDecision() {
                     {result.recommendation === 'skip' && `Skip ${result.label.split(' (')[0]}`}
                     {result.recommendation === 'consider' && `It is close — ${result.label} could go either way`}
                   </h2>
-                  <p className="text-sm text-muted-foreground">{result.reason}</p>
+                  <p className="text-base text-muted-foreground">{result.reason}</p>
                 </CardContent>
               </Card>
 
               <Card className="border-border mb-6">
                 <CardContent className="p-5">
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">{result.label} — at a glance</p>
-                  <p className="text-sm mb-3">2 years of premiums: <strong>${result.twoYearPlanCost}</strong>. Typical deductible: <strong>${result.typicalDeductible}</strong>.</p>
+                  <p className="text-base mb-3">2 years of premiums: <strong>${result.twoYearPlanCost}</strong>. Typical deductible: <strong>${result.typicalDeductible}</strong>.</p>
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Pros</p>
                   <ul className="space-y-1 mb-3">
                     {result.pros.map((p, i) => (
-                      <li key={i} className="flex gap-2 text-sm"><span className="text-green-600 shrink-0">+</span><span>{p}</span></li>
+                      <li key={i} className="flex gap-2 text-base"><span className="text-success-foreground shrink-0">+</span><span>{p}</span></li>
                     ))}
                   </ul>
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Cons</p>
                   <ul className="space-y-1">
                     {result.cons.map((c, i) => (
-                      <li key={i} className="flex gap-2 text-sm"><span className="text-red-600 shrink-0">−</span><span>{c}</span></li>
+                      <li key={i} className="flex gap-2 text-base"><span className="text-danger-foreground shrink-0">−</span><span>{c}</span></li>
                     ))}
                   </ul>
                 </CardContent>
               </Card>
 
-              <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20">
+              <Card className="border-warn-foreground/25 bg-warn ">
                 <CardContent className="p-5 flex gap-3">
-                  <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+                  <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                   <div className="text-sm">
                     <p className="font-semibold mb-1">A real alternative — your own savings envelope</p>
                     <p className="text-muted-foreground">
@@ -239,16 +239,16 @@ export default function PhoneInsuranceDecision() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/device-age-checker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Device Age Checker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Should you replace before insuring?</p>
+                <p className="font-medium text-base">Device Age Checker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Should you replace before insuring?</p>
               </Link>
               <Link to="/tools/device-retirement-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Device Retirement</p>
-                <p className="text-xs text-muted-foreground mt-0.5">When the old one finally dies.</p>
+                <p className="font-medium text-base">Device Retirement</p>
+                <p className="text-sm text-muted-foreground mt-0.5">When the old one finally dies.</p>
               </Link>
               <Link to="/tools/warranty-checker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Warranty Checker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">What is already covered for free?</p>
+                <p className="font-medium text-base">Warranty Checker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">What is already covered for free?</p>
               </Link>
             </div>
           </div>

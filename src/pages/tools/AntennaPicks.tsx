@@ -30,10 +30,10 @@ export default function AntennaPicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function AntennaPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What you get free</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NBC, CBS, ABC, FOX, PBS — all major networks.</li>
               <li>Local news + weather.</li>
               <li>Major sports — NFL games, college, MLB local broadcasts.</li>
@@ -56,7 +56,7 @@ export default function AntennaPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Check signal in your area</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>antennaweb.org</strong> — free FCC tool.</li>
               <li>Enter your zip code + house orientation.</li>
               <li>Shows which channels you can get + which antenna type needed.</li>
@@ -69,7 +69,7 @@ export default function AntennaPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Higher = better. Top floor or attic best.</li>
               <li>Near a window facing broadcast towers (towers usually city center).</li>
               <li>Away from metal (radiators, blinds, refrigerator).</li>
@@ -82,7 +82,7 @@ export default function AntennaPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Combine with streaming</h3>
-            <p className="text-sm text-muted-foreground">Antenna for live news + sports + local + free reruns. Add ONE streaming service ($10-15/mo) for new shows. Combined cost ~$10-15/mo vs $150 cable. Saves $1,500+/year.</p>
+            <p className="text-base text-muted-foreground">Antenna for live news + sports + local + free reruns. Add ONE streaming service ($10-15/mo) for new shows. Combined cost ~$10-15/mo vs $150 cable. Saves $1,500+/year.</p>
           </CardContent>
         </Card>
       </main>

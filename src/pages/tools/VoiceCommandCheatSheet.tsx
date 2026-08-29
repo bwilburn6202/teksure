@@ -636,7 +636,7 @@ function AssistantPanel({
       <Card className="border-amber-300/60 bg-amber-50/40 dark:bg-amber-950/20">
         <CardContent className="p-5 md:p-6 flex flex-wrap items-center gap-4 justify-between">
           <div className="flex items-start gap-3">
-            <div className="p-3 rounded-xl bg-amber-200/60 dark:bg-amber-900/40 text-amber-800 dark:text-amber-300 shrink-0">
+            <div className="p-3 rounded-xl bg-amber-200/60 dark:bg-amber-900/40 text-warn-foreground shrink-0">
               <assistant.icon className="w-7 h-7" aria-hidden="true" />
             </div>
             <div>
@@ -682,14 +682,14 @@ function AssistantPanel({
               <CardContent className="p-5 md:p-6 space-y-3">
                 <div>
                   <h3 className="text-lg md:text-xl font-semibold leading-tight">{group.title}</h3>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  <p className="text-base md:text-base text-muted-foreground leading-relaxed">
                     {group.description}
                   </p>
                 </div>
                 <ul className="space-y-2">
                   {group.commands.map((c) => (
                     <li key={c.text} className="flex items-start gap-2">
-                      <Volume2 className="w-5 h-5 text-amber-700 dark:text-amber-400 mt-0.5 shrink-0" aria-hidden="true" />
+                      <Volume2 className="w-5 h-5 text-warn-foreground mt-0.5 shrink-0" aria-hidden="true" />
                       <div className="text-base leading-relaxed">
                         <div>"{c.text}"</div>
                         {c.note ? (
@@ -744,7 +744,7 @@ export default function VoiceCommandCheatSheet() {
               />
             </div>
             <div className="flex items-center gap-2 mb-4">
-              <Mic className="w-5 h-5 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+              <Mic className="w-5 h-5 text-warn-foreground " aria-hidden="true" />
               <Badge variant="outline" className="text-xs">Everyday Tech &middot; Reference</Badge>
             </div>
             <h1 className="text-3xl md:text-5xl font-bold mb-3 pr-14 leading-tight">
@@ -810,7 +810,7 @@ export default function VoiceCommandCheatSheet() {
         <section className="border-t border-border bg-muted/30">
           <div className="container py-10 md:py-14">
             <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-              <Radio className="w-7 h-7 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+              <Radio className="w-7 h-7 text-warn-foreground " aria-hidden="true" />
               Wake your assistant without saying the wake word
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -832,7 +832,7 @@ export default function VoiceCommandCheatSheet() {
         {/* Senior-friendly setup */}
         <section className="container py-10 md:py-14">
           <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-            <Sparkles className="w-7 h-7 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+            <Sparkles className="w-7 h-7 text-warn-foreground " aria-hidden="true" />
             Senior-friendly setup
           </h2>
           <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -861,7 +861,7 @@ export default function VoiceCommandCheatSheet() {
         <section className="border-t border-border bg-muted/30">
           <div className="container py-10 md:py-14">
             <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-              <Lock className="w-7 h-7 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+              <Lock className="w-7 h-7 text-warn-foreground " aria-hidden="true" />
               What gets recorded — and how to delete it
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -873,7 +873,7 @@ export default function VoiceCommandCheatSheet() {
                 <Card key={card.assistant}>
                   <CardContent className="p-5 space-y-3">
                     <h3 className="text-lg md:text-xl font-semibold flex items-center gap-2">
-                      <ShieldCheck className="w-5 h-5 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+                      <ShieldCheck className="w-5 h-5 text-warn-foreground " aria-hidden="true" />
                       {card.assistant}
                     </h3>
                     <p className="text-base leading-relaxed">{card.recordedDescription}</p>
@@ -893,7 +893,7 @@ export default function VoiceCommandCheatSheet() {
         {/* Troubleshooting */}
         <section className="container py-10 md:py-14">
           <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-            <MicOff className="w-7 h-7 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+            <MicOff className="w-7 h-7 text-warn-foreground " aria-hidden="true" />
             Troubleshooting
           </h2>
           <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -905,7 +905,7 @@ export default function VoiceCommandCheatSheet() {
               <AccordionItem key={item.title} value={`tr-${i}`}>
                 <AccordionTrigger className="text-base md:text-lg font-semibold text-left min-h-14">
                   <span className="flex items-center gap-2">
-                    <Lightbulb className="w-5 h-5 text-amber-700 dark:text-amber-400 shrink-0" aria-hidden="true" />
+                    <Lightbulb className="w-5 h-5 text-warn-foreground shrink-0" aria-hidden="true" />
                     {item.title}
                   </span>
                 </AccordionTrigger>
@@ -921,7 +921,7 @@ export default function VoiceCommandCheatSheet() {
         <section className="border-t border-border bg-muted/30">
           <div className="container py-10 md:py-14">
             <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-              <Heart className="w-7 h-7 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+              <Heart className="w-7 h-7 text-warn-foreground " aria-hidden="true" />
               Accessibility — voice for hearing aids, low vision, and tremor
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -943,7 +943,7 @@ export default function VoiceCommandCheatSheet() {
         {/* Family setup */}
         <section className="container py-10 md:py-14">
           <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-            <Users className="w-7 h-7 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+            <Users className="w-7 h-7 text-warn-foreground " aria-hidden="true" />
             Family setup &middot; multi-voice profiles
           </h2>
           <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -965,7 +965,7 @@ export default function VoiceCommandCheatSheet() {
         <section className="border-t border-border bg-muted/30">
           <div className="container py-10 md:py-14">
             <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-              <Sparkles className="w-7 h-7 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+              <Sparkles className="w-7 h-7 text-warn-foreground " aria-hidden="true" />
               Fun commands to try
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -975,7 +975,7 @@ export default function VoiceCommandCheatSheet() {
               {FUN_COMMANDS.map((cmd) => (
                 <Card key={cmd.text}>
                   <CardContent className="p-4 flex items-start gap-3">
-                    <Volume2 className="w-5 h-5 text-amber-700 dark:text-amber-400 mt-0.5 shrink-0" aria-hidden="true" />
+                    <Volume2 className="w-5 h-5 text-warn-foreground mt-0.5 shrink-0" aria-hidden="true" />
                     <div>
                       <div className="text-base leading-relaxed">{cmd.text}</div>
                       <div className="text-xs text-muted-foreground mt-0.5">{cmd.assistant}</div>
@@ -990,7 +990,7 @@ export default function VoiceCommandCheatSheet() {
         {/* FAQ */}
         <section className="container py-10 md:py-14">
           <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-            <HelpCircle className="w-7 h-7 text-amber-700 dark:text-amber-400" aria-hidden="true" />
+            <HelpCircle className="w-7 h-7 text-warn-foreground " aria-hidden="true" />
             Frequently asked questions
           </h2>
           <Accordion type="single" collapsible className="max-w-3xl">

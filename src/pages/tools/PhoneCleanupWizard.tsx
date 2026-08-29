@@ -391,7 +391,7 @@ function SummaryStep({
     <Card className="border-green-600/40 bg-green-50/40 dark:bg-green-950/20">
       <CardContent className="p-6 md:p-8 space-y-6">
         <div className="flex items-center gap-3">
-          <div className="p-3 rounded-full bg-green-600/10 text-green-700 dark:text-green-400">
+          <div className="p-3 rounded-full bg-green-600/10 text-success-foreground ">
             <CheckCircle2 className="w-8 h-8" />
           </div>
           <div>
@@ -590,12 +590,12 @@ export default function PhoneCleanupWizard() {
               </Card>
             </div>
 
-            <Card className="mt-8 bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+            <Card className="mt-8 bg-warn border-amber-500/40">
               <CardContent className="p-5 flex items-start gap-3">
-                <ShieldCheck className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
+                <ShieldCheck className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-semibold text-base mb-1">This tool is a guide — not an app</h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     TekSure does not install anything on your phone and never sees your data. We just
                     tell you which buttons to press and what&apos;s safe to delete.
                   </p>
@@ -635,13 +635,13 @@ export default function PhoneCleanupWizard() {
             </div>
 
             <div className="flex items-center gap-3 mb-2">
-              <span className="text-sm md:text-base font-medium text-muted-foreground">
+              <span className="text-base md:text-base font-medium text-muted-foreground">
                 {isSummary
                   ? 'Review'
                   : `Step ${stepIndex + 1} of ${totalSteps}`}
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 {completed.size} completed
               </span>
             </div>
@@ -732,10 +732,10 @@ export default function PhoneCleanupWizard() {
 
               {/* Tip */}
               {current.tip && (
-                <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+                <Card className="bg-warn border-amber-500/40">
                   <CardContent className="p-5 flex items-start gap-3">
                     <Lightbulb
-                      className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5"
+                      className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5"
                       aria-hidden="true"
                     />
                     <div>
@@ -748,10 +748,10 @@ export default function PhoneCleanupWizard() {
 
               {/* Warning */}
               {current.warning && (
-                <Card className="bg-red-50 dark:bg-red-950/20 border-red-500/40">
+                <Card className="bg-danger border-red-500/40">
                   <CardContent className="p-5 flex items-start gap-3">
                     <AlertTriangle
-                      className="w-6 h-6 text-red-700 dark:text-red-400 shrink-0 mt-0.5"
+                      className="w-6 h-6 text-danger-foreground shrink-0 mt-0.5"
                       aria-hidden="true"
                     />
                     <div>

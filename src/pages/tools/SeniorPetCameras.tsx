@@ -22,7 +22,7 @@ export default function SeniorPetCameras() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Setup</h2><p>Plug in. Open app. Connect Wi-Fi. Place near pet&apos;s favorite spot.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Two-way audio</h2><p>Talk to your pet from across town. They hear your voice through the camera.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Night vision</h2><p>All work in dark rooms. Great for nighttime check-ins.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Two cameras (living room + bedroom) covers most homes.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Two cameras (living room + bedroom) covers most homes.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

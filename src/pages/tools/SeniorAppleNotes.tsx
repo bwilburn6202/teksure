@@ -22,7 +22,7 @@ export default function SeniorAppleNotes() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lock private notes</h2><p>Long-press a note → Lock. Use Face ID to unlock.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tags</h2><p>Type #recipes anywhere in a note. Filter all #recipes notes instantly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sketches</h2><p>Tap pencil. Draw with finger or Apple Pencil.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Use Notes for grocery lists. Check items off as you shop.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Use Notes for grocery lists. Check items off as you shop.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

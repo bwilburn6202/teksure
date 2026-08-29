@@ -237,7 +237,7 @@ export default function IphoneShortcuts() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <Smartphone className="h-8 w-8 text-blue-600" />
+                <Smartphone className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">20 iPhone Shortcuts Most Seniors Don't Know</h1>
@@ -250,13 +250,13 @@ export default function IphoneShortcuts() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'iPhone Shortcuts' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 dark:border-amber-900 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5">
               <div className="flex gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
+                <AlertTriangle className="h-5 w-5 text-warn-foreground flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="font-semibold text-sm mb-1">Worth knowing about Back Tap and accessibility shortcuts</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="font-semibold text-base mb-1">Worth knowing about Back Tap and accessibility shortcuts</p>
+                  <p className="text-sm text-muted-foreground">
                     Double-tap and triple-tap accessibility shortcuts can be set to do almost anything on your iPhone — open Camera, run a Siri Shortcut, mute the phone, take a screenshot, or trigger an Emergency SOS. Spend a few minutes in Settings → Accessibility → Touch and explore. You can also set up the Side button (Settings → Accessibility → Accessibility Shortcut) to toggle features with three quick presses.
                   </p>
                 </div>
@@ -282,11 +282,11 @@ export default function IphoneShortcuts() {
                     <div className="ml-12 space-y-3">
                       <div>
                         <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">What it does</p>
-                        <p className="text-sm text-muted-foreground">{t.whatItDoes}</p>
+                        <p className="text-base text-muted-foreground">{t.whatItDoes}</p>
                       </div>
                       <div>
                         <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">How</p>
-                        <ol className="text-sm text-muted-foreground space-y-1 list-decimal list-inside">
+                        <ol className="text-base text-muted-foreground space-y-1 list-decimal list-inside">
                           {t.how.map((step, idx) => (
                             <li key={idx}>{step}</li>
                           ))}
@@ -304,8 +304,8 @@ export default function IphoneShortcuts() {
               <div className="flex gap-3">
                 <Volume2 className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
-                  <p className="text-sm font-semibold mb-2">A small piece of advice</p>
-                  <p className="text-xs text-muted-foreground">
+                  <p className="text-base font-semibold mb-2">A small piece of advice</p>
+                  <p className="text-sm text-muted-foreground">
                     Pick three of these to try this week — not all twenty at once. The ones most people end up loving are spacebar-as-trackpad (#5), Back Tap for screenshots (#3), and copy-text-from-a-photo (#16). After a week they will feel like second nature.
                   </p>
                 </div>
@@ -317,20 +317,20 @@ export default function IphoneShortcuts() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/dictation-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Dictation Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Talk to type instead of pecking the keyboard.</p>
+                <p className="font-medium text-base">Dictation Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Talk to type instead of pecking the keyboard.</p>
               </Link>
               <Link to="/tools/voicemail-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Voicemail Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Record a greeting and read voicemails as text.</p>
+                <p className="font-medium text-base">Voicemail Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Record a greeting and read voicemails as text.</p>
               </Link>
               <Link to="/tools/tech-cheatsheet-generator" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Tech Cheatsheet Generator</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Print a one-page guide for your phone.</p>
+                <p className="font-medium text-base">Tech Cheatsheet Generator</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Print a one-page guide for your phone.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: every iPhone update brings new gestures. Once a year, scroll through Settings → Accessibility for ten minutes — you almost always find something useful.
           </p>
         </div>

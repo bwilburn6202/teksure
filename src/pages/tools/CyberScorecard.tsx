@@ -122,7 +122,7 @@ export default function CyberScorecard() {
                       answered === catChecks.length
                         ? 'bg-primary/10 border-primary/30 text-primary'
                         : answered > 0
-                        ? 'bg-amber-50 dark:bg-amber-900/20 border-amber-300 dark:border-amber-700 text-amber-700 dark:text-amber-300'
+                        ? 'bg-amber-50 dark:bg-amber-900/20 border-warn-foreground/25 text-warn-foreground dark:text-amber-300'
                         : 'bg-muted border-border text-muted-foreground'
                     }`}>
                       {answered === catChecks.length ? ' ' : ''}{cat}
@@ -153,13 +153,13 @@ export default function CyberScorecard() {
                   <div className="grid grid-cols-2 gap-3">
                     <button
                       onClick={() => handleAnswer(true)}
-                      className="py-4 rounded-xl border-2 border-green-400/60 bg-green-50 dark:bg-green-900/20 hover:bg-green-100 dark:hover:bg-green-900/40 transition-colors font-semibold text-green-700 dark:text-green-300 flex items-center justify-center gap-2"
+                      className="py-4 rounded-xl border-2 border-green-400/60 bg-success hover:bg-success transition-colors font-semibold text-success-foreground flex items-center justify-center gap-2"
                     >
                       <CheckCircle2 className="h-5 w-5" /> Yes
                     </button>
                     <button
                       onClick={() => handleAnswer(false)}
-                      className="py-4 rounded-xl border-2 border-red-300/60 bg-red-50 dark:bg-red-900/20 hover:bg-red-100 dark:hover:bg-red-900/40 transition-colors font-semibold text-red-600 dark:text-red-300 flex items-center justify-center gap-2"
+                      className="py-4 rounded-xl border-2 border-red-300/60 bg-danger hover:bg-danger transition-colors font-semibold text-danger-foreground flex items-center justify-center gap-2"
                     >
                       <XCircle className="h-5 w-5" /> No
                     </button>
@@ -184,7 +184,7 @@ export default function CyberScorecard() {
                     <div className="text-5xl font-black">{grade!.grade}</div>
                     <div className="text-left">
                       <p className={`text-xl font-bold ${grade!.color}`}>{grade!.label}</p>
-                      <p className="text-sm text-muted-foreground">Score: {totalScore} / {MAX_SCORE} ({pct}%)</p>
+                      <p className="text-base text-muted-foreground">Score: {totalScore} / {MAX_SCORE} ({pct}%)</p>
                     </div>
                   </div>
                   <div className="w-full bg-white/50 dark:bg-black/20 rounded-full h-3 overflow-hidden">
@@ -231,7 +231,7 @@ export default function CyberScorecard() {
               {failedChecks.length > 0 && (
                 <div className="mb-6">
                   <h2 className="text-base font-semibold mb-3 flex items-center gap-2">
-                    <AlertTriangle className="h-4 w-4 text-amber-500" />
+                    <AlertTriangle className="h-4 w-4 text-warn-foreground" />
                     {failedChecks.length} thing{failedChecks.length !== 1 ? 's' : ''} to fix
                   </h2>
                   <div className="space-y-2">
@@ -242,16 +242,16 @@ export default function CyberScorecard() {
                             className="w-full text-left p-4 flex items-start gap-3"
                             onClick={() => setExpandedRec(expandedRec === check.id ? null : check.id)}
                           >
-                            <XCircle className="h-4 w-4 text-red-400 shrink-0 mt-0.5" />
+                            <XCircle className="h-4 w-4 text-danger-foreground shrink-0 mt-0.5" />
                             <div className="flex-1">
-                              <p className="text-sm font-medium leading-snug">{check.question}</p>
-                              <span className="text-xs text-muted-foreground">+{check.yesPoints} pts if you fix this</span>
+                              <p className="text-base font-medium leading-snug">{check.question}</p>
+                              <span className="text-sm text-muted-foreground">+{check.yesPoints} pts if you fix this</span>
                             </div>
                             <ChevronRight className={`h-4 w-4 text-muted-foreground shrink-0 mt-0.5 transition-transform ${expandedRec === check.id ? 'rotate-90' : ''}`} />
                           </button>
                           {expandedRec === check.id && (
                             <div className="px-4 pb-4 border-t border-border bg-muted/30">
-                              <p className="text-sm text-muted-foreground mt-3 leading-relaxed">{check.tip}</p>
+                              <p className="text-base text-muted-foreground mt-3 leading-relaxed">{check.tip}</p>
                               {check.guideSlug && (
                                 <Link
                                   to={`/guides/${check.guideSlug}`}
@@ -273,14 +273,14 @@ export default function CyberScorecard() {
               {passedChecks.length > 0 && (
                 <div className="mb-6">
                   <h2 className="text-base font-semibold mb-3 flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-500" />
+                    <CheckCircle2 className="h-4 w-4 text-success-foreground" />
                     {passedChecks.length} thing{passedChecks.length !== 1 ? 's' : ''} {"you're"} already doing right
                   </h2>
                   <div className="space-y-2">
                     {passedChecks.map(check => (
-                      <div key={check.id} className="flex items-start gap-3 p-3 rounded-lg border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-950/20">
-                        <CheckCircle2 className="h-4 w-4 text-green-500 shrink-0 mt-0.5" />
-                        <p className="text-sm text-green-800 dark:text-green-200 leading-snug">{check.question}</p>
+                      <div key={check.id} className="flex items-start gap-3 p-3 rounded-lg border border-success-foreground/25 bg-success ">
+                        <CheckCircle2 className="h-4 w-4 text-success-foreground shrink-0 mt-0.5" />
+                        <p className="text-base text-success-foreground leading-snug">{check.question}</p>
                       </div>
                     ))}
                   </div>

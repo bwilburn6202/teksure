@@ -22,7 +22,7 @@ export default function SeniorElectricKettles() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cosori temperature kettle</h2><p>$50. Pick exact temp for green tea, French press, etc.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tip-resistant base</h2><p>Lift kettle off — base stays put. Safer for shaky hands.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Fewer dishes</h2><p>No pot to scrub. Just rinse the kettle.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Boil only what you need. 1-cup boils in 30 seconds — fastest tea or coffee.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Boil only what you need. 1-cup boils in 30 seconds — fastest tea or coffee.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

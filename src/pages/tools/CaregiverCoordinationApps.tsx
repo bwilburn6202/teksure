@@ -28,7 +28,7 @@ export default function CaregiverCoordinationApps() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why these matter</h2>
-            <p className="text-sm">A serious illness brings dozens of "let me know if you need anything!" calls. Apps like these turn good intentions into real help — meals delivered, rides arranged, family kept up to date — without one exhausted person fielding 50 calls a day.</p>
+            <p className="text-base">A serious illness brings dozens of "let me know if you need anything!" calls. Apps like these turn good intentions into real help — meals delivered, rides arranged, family kept up to date — without one exhausted person fielding 50 calls a day.</p>
           </CardContent>
         </Card>
 
@@ -38,10 +38,10 @@ export default function CaregiverCoordinationApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function CaregiverCoordinationApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (CaringBridge as example)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>caringbridge.org</strong>.</li>
               <li>Click "Start a Site". Free.</li>
               <li>Pick a privacy level — usually "Friends and Family" (link-only access).</li>
@@ -64,14 +64,14 @@ export default function CaregiverCoordinationApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When friends say "let me know if you need anything"</h2>
-            <p className="text-sm">Send them the Meal Train or Lotsa link. They sign up for what they\'re willing to do. You get the help without having to ask, schedule, or remember who promised what.</p>
+            <p className="text-base">Send them the Meal Train or Lotsa link. They sign up for what they\'re willing to do. You get the help without having to ask, schedule, or remember who promised what.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For caregivers — yourself first</h3>
-            <p className="text-sm text-muted-foreground">Caregiver burnout is real and serious. Use these apps to OFFLOAD work, not just to update. Accept the meals. Take the offered rides. Schedule a 30-minute walk for yourself. Recover so you can keep showing up.</p>
+            <p className="text-base text-muted-foreground">Caregiver burnout is real and serious. Use these apps to OFFLOAD work, not just to update. Accept the meals. Take the offered rides. Schedule a 30-minute walk for yourself. Recover so you can keep showing up.</p>
           </CardContent>
         </Card>
       </main>

@@ -31,10 +31,10 @@ export default function PlantIdApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function PlantIdApps() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for accurate ID</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Take 2-3 photos from different angles — leaves, flower, full plant.</li>
               <li>Get close. Apps need detail, not the whole forest.</li>
               <li>Daylight is best.</li>
@@ -56,7 +56,7 @@ export default function PlantIdApps() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground"><strong>Seek</strong> for free, ad-free identification. <strong>PictureThis</strong> if you want plant care reminders for houseplants and a polished interface — start with the free trial, decide if it\'s worth $30/year.</p>
+            <p className="text-base text-muted-foreground"><strong>Seek</strong> for free, ad-free identification. <strong>PictureThis</strong> if you want plant care reminders for houseplants and a polished interface — start with the free trial, decide if it\'s worth $30/year.</p>
           </CardContent>
         </Card>
       </main>

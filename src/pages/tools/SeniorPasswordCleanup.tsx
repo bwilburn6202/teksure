@@ -22,7 +22,7 @@ export default function SeniorPasswordCleanup() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Update breached passwords</h2><p>Especially banks, email, social media. Use a password manager.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Different password each site</h2><p>If one is breached, others stay safe. Manager remembers them all.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Two-factor everything</h2><p>Especially banks and email. Even breached passwords are useless.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 1 hour password audit yearly. Prevents 99% of identity theft.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 1 hour password audit yearly. Prevents 99% of identity theft.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

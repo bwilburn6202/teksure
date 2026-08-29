@@ -30,7 +30,7 @@ export default function AdultVaccineSchedule() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Where to get them</h2>
-            <p className="text-sm">Most adults can walk into <strong>CVS, Walgreens, Rite Aid, Costco, Walmart, or your local pharmacy</strong> for vaccines without an appointment. Medicare Part B and most insurance covers most adult vaccines free. Save the receipts.</p>
+            <p className="text-base">Most adults can walk into <strong>CVS, Walgreens, Rite Aid, Costco, Walmart, or your local pharmacy</strong> for vaccines without an appointment. Medicare Part B and most insurance covers most adult vaccines free. Save the receipts.</p>
           </CardContent>
         </Card>
 
@@ -39,9 +39,9 @@ export default function AdultVaccineSchedule() {
             <Card key={v.name}>
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{v.name}</h3>
-                <p className="text-sm mb-1"><strong>When:</strong> {v.when}</p>
-                <p className="text-sm mb-1"><strong>Who:</strong> {v.who}</p>
-                <p className="text-sm text-muted-foreground"><strong>Why:</strong> {v.why}</p>
+                <p className="text-base mb-1"><strong>When:</strong> {v.when}</p>
+                <p className="text-base mb-1"><strong>Who:</strong> {v.who}</p>
+                <p className="text-base text-muted-foreground"><strong>Why:</strong> {v.why}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function AdultVaccineSchedule() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Track your vaccinations</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Apple Health → Vaccinations</strong> — phones can scan the CDC card.</li>
               <li><strong>Your state\'s immunization registry</strong> — most states have one. Search "[state] immunization registry".</li>
               <li><strong>Pharmacy app</strong> (CVS, Walgreens) — they keep records of what they gave you.</li>
@@ -62,7 +62,7 @@ export default function AdultVaccineSchedule() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best time to get them</h3>
-            <p className="text-sm text-muted-foreground">Annual flu shot in early October is the gold standard. Pair with COVID booster. Get the Shingrix series the year you turn 50. Get RSV after 60. Pneumonia at 65. Most pharmacies will check your record and recommend what\'s due.</p>
+            <p className="text-base text-muted-foreground">Annual flu shot in early October is the gold standard. Pair with COVID booster. Get the Shingrix series the year you turn 50. Get RSV after 60. Pneumonia at 65. Most pharmacies will check your record and recommend what\'s due.</p>
           </CardContent>
         </Card>
       </main>

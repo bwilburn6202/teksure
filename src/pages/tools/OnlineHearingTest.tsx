@@ -19,14 +19,14 @@ export default function OnlineHearingTest() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">When to test</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>People mumble more than they used to (it\'s probably you).</li>
               <li>You ask "what?" often.</li>
               <li>Restaurants are too loud to converse.</li>
               <li>TV volume keeps creeping up.</li>
               <li>You\'re missing parts of phone conversations.</li>
             </ul>
-            <p className="text-sm mt-2"><strong>Why it matters:</strong> Untreated hearing loss is linked to faster cognitive decline. Treating it early matters more than people realize.</p>
+            <p className="text-base mt-2"><strong>Why it matters:</strong> Untreated hearing loss is linked to faster cognitive decline. Treating it early matters more than people realize.</p>
           </CardContent>
         </Card>
 
@@ -61,20 +61,20 @@ export default function OnlineHearingTest() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Read your results</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Normal hearing:</strong> Hears tones at 0-25 dB.</li>
               <li><strong>Mild loss:</strong> 26-40 dB. Can hear most speech, miss whispers and quiet voices.</li>
               <li><strong>Moderate loss:</strong> 41-55 dB. Hearing aids strongly recommended.</li>
               <li><strong>Severe:</strong> 56+ dB. Likely need stronger hearing aids or a cochlear implant.</li>
             </ul>
-            <p className="text-sm mt-2">Get a formal test from an audiologist if any test comes back "moderate" or worse, or if you have ringing/tinnitus.</p>
+            <p className="text-base mt-2">Get a formal test from an audiologist if any test comes back "moderate" or worse, or if you have ringing/tinnitus.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hearing aid options at every price point</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>$0:</strong> AirPods Pro 2 in hearing aid mode (iOS 18+) — for mild loss.</li>
               <li><strong>$200-$500:</strong> OTC hearing aids — Jabra Enhance, Lexie, Sony, Audien. Available at Best Buy, CVS, Costco. No prescription.</li>
               <li><strong>$1,500-$5,000/pair:</strong> Prescription hearing aids — fitted by an audiologist. Best for moderate to severe loss.</li>
@@ -87,7 +87,7 @@ export default function OnlineHearingTest() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Costco is the best deal</h3>
-            <p className="text-sm text-muted-foreground">Costco Hearing Aid Center sells prescription hearing aids at $1,500-$2,000/pair — half what most audiologists charge. Free testing, free fitting, free follow-ups for life. Membership pays for itself with one purchase.</p>
+            <p className="text-base text-muted-foreground">Costco Hearing Aid Center sells prescription hearing aids at $1,500-$2,000/pair — half what most audiologists charge. Free testing, free fitting, free follow-ups for life. Membership pays for itself with one purchase.</p>
           </CardContent>
         </Card>
       </main>

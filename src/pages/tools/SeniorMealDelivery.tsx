@@ -22,7 +22,7 @@ export default function SeniorMealDelivery() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Magic Kitchen</h2><p>Senior-focused. Pre-cooked, frozen meals. From $7/meal.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Factor</h2><p>$11/meal. Fresh-prepared. Many low-carb options.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare Advantage benefit</h2><p>Many plans cover post-hospital meals — call your plan and ask.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Check your local senior center — many have FREE Tuesday and Thursday meals.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Check your local senior center — many have FREE Tuesday and Thursday meals.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

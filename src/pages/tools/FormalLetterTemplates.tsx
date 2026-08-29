@@ -77,7 +77,7 @@ export default function FormalLetterTemplates() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Formal Letter Templates | TekSure"
         description="7 ready-to-customize letter templates: complaint, thank-you, condolence, Medicare appeal, congratulations, congressional, medical records request."
@@ -86,10 +86,10 @@ export default function FormalLetterTemplates() {
       <div className="max-w-3xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <Mail className="h-7 w-7 text-blue-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Formal Letter Templates</h1>
+            <Mail className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Formal Letter Templates</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Real letter templates for situations when the right words matter. Pick one, copy it, and fill in the brackets.
           </p>
         </div>
@@ -98,7 +98,7 @@ export default function FormalLetterTemplates() {
         <div className="flex flex-wrap gap-2 mb-4 print:hidden">
           <button
             onClick={() => setFilter("All")}
-            className={`px-3 py-1 rounded-full text-sm font-medium ${filter === "All" ? "bg-blue-700 text-white" : "bg-white border border-gray-200 text-gray-700"}`}
+            className={`px-3 py-1 rounded-full text-sm font-medium ${filter === "All" ? "bg-blue-700 text-white" : "bg-white border border-border text-gray-700"}`}
           >
             All
           </button>
@@ -106,7 +106,7 @@ export default function FormalLetterTemplates() {
             <button
               key={c}
               onClick={() => setFilter(c)}
-              className={`px-3 py-1 rounded-full text-sm font-medium ${filter === c ? "bg-blue-700 text-white" : "bg-white border border-gray-200 text-gray-700"}`}
+              className={`px-3 py-1 rounded-full text-sm font-medium ${filter === c ? "bg-blue-700 text-white" : "bg-white border border-border text-gray-700"}`}
             >
               {c}
             </button>
@@ -120,8 +120,8 @@ export default function FormalLetterTemplates() {
               <Card key={t.id} className="hover:shadow-md cursor-pointer transition-shadow" onClick={() => setActiveId(t.id)}>
                 <CardContent className="py-3 px-4 flex items-center justify-between">
                   <div>
-                    <p className="font-semibold text-gray-900">{t.title}</p>
-                    <p className="text-xs text-gray-500 mt-0.5">{t.category}</p>
+                    <p className="font-semibold text-foreground">{t.title}</p>
+                    <p className="text-sm text-muted-foreground mt-0.5">{t.category}</p>
                   </div>
                   <Button variant="outline" size="sm" onClick={(e) => { e.stopPropagation(); setActiveId(t.id); }}>View</Button>
                 </CardContent>
@@ -137,11 +137,11 @@ export default function FormalLetterTemplates() {
               <CardHeader className="pb-2 pt-3">
                 <CardTitle className="text-xl flex items-center justify-between">
                   <span>{active.title}</span>
-                  <button onClick={() => setActiveId(null)} className="text-sm text-blue-600 underline print:hidden">Back to list</button>
+                  <button onClick={() => setActiveId(null)} className="text-sm text-info-foreground underline print:hidden">Back to list</button>
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <pre className="whitespace-pre-wrap font-sans text-sm text-gray-800 leading-relaxed bg-white p-4 border border-gray-200 rounded">{active.body}</pre>
+                <pre className="whitespace-pre-wrap font-sans text-sm text-foreground leading-relaxed bg-card p-4 border border-border rounded">{active.body}</pre>
               </CardContent>
             </Card>
             <div className="flex flex-wrap gap-3 mt-4 print:hidden">
@@ -156,15 +156,15 @@ export default function FormalLetterTemplates() {
           </>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">How to use: </span>
               Pick a template, tap Copy, paste into Word or Notes, replace the bracketed [parts] with your info. Print or mail when done.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

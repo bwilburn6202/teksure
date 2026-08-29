@@ -19,10 +19,10 @@ export default function SeniorAdjustableBeds() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sleep Number</h2><p>$1,500-$5,000. Adjustable firmness. App-controlled.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tempur-Pedic</h2><p>$2,000+. Adjustable base + memory foam.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lucid L300</h2><p>$700. Budget adjustable base. Sleep position memory.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior benefits</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Reduces snoring</li><li>Eases acid reflux</li><li>Helps with breathing</li><li>Lifts to standing position</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior benefits</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Reduces snoring</li><li>Eases acid reflux</li><li>Helps with breathing</li><li>Lifts to standing position</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare</h2><p>If doctor prescribes for medical condition, may be partially covered.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Wireless remote</h2><p>Most beds include wireless remote. Some pair with phone app.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Test for 30 days. Most companies offer return if not happy.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Test for 30 days. Most companies offer return if not happy.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

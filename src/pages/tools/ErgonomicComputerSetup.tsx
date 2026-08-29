@@ -19,7 +19,7 @@ export default function ErgonomicComputerSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Mouse — for wrist & arthritis pain</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Vertical mouse (Logitech MX Vertical, Anker)</strong> — $40-100. Hand position is "handshake" instead of palm-down. Cuts forearm strain.</li>
               <li><strong>Trackball mouse (Logitech M575)</strong> — $40. Move thumb, not whole arm. Easy on shoulders.</li>
               <li><strong>Apple Magic Trackpad</strong> — gestures via swipes. Works on Mac and iPad.</li>
@@ -30,7 +30,7 @@ export default function ErgonomicComputerSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Keyboard — for visibility & typing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Logitech K780 / K780 Plus</strong> — large keys, easy on aging hands.</li>
               <li><strong>Apple Magic Keyboard with Numeric Keypad</strong> — bigger than the slim version.</li>
               <li><strong>Logitech ERGO K860</strong> — split, curved layout. Best for serious typers.</li>
@@ -43,7 +43,7 @@ export default function ErgonomicComputerSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Monitor & laptop placement</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Top of screen at eye level</strong> — stops the head-tilt-down that wrecks necks.</li>
               <li><strong>Laptop stand</strong> ($30) — props laptop up. PAIR with external keyboard so you\'re not reaching up.</li>
               <li><strong>Monitor arm</strong> ($60-150) — adjustable height and angle. Game-changer for desk setups.</li>
@@ -57,7 +57,7 @@ export default function ErgonomicComputerSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Chair & posture</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Feet flat on the floor (or on a footrest).</li>
               <li>Knees at 90°.</li>
               <li>Hips slightly higher than knees.</li>
@@ -72,7 +72,7 @@ export default function ErgonomicComputerSetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Eye strain</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Computer glasses</strong> — drugstore +1.0 to +1.5 reading glasses for screen distance. Cheap and effective.</li>
               <li><strong>Get a real eye exam yearly</strong> — astigmatism gets worse with age and causes screen pain.</li>
               <li><strong>Increase font size system-wide</strong> — Settings → Display → Larger Text. Don\'t squint at default size.</li>
@@ -85,7 +85,7 @@ export default function ErgonomicComputerSetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Order of impact</h3>
-            <p className="text-sm text-muted-foreground">If you have $100 to spend on ONE thing — get a vertical mouse. If $150 — laptop stand + external keyboard. If $200 — adjustable monitor arm. If $50 — drugstore computer glasses. Each of these eliminates a different daily pain.</p>
+            <p className="text-base text-muted-foreground">If you have $100 to spend on ONE thing — get a vertical mouse. If $150 — laptop stand + external keyboard. If $200 — adjustable monitor arm. If $50 — drugstore computer glasses. Each of these eliminates a different daily pain.</p>
           </CardContent>
         </Card>
       </main>

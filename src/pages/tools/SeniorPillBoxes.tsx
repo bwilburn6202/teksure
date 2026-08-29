@@ -22,7 +22,7 @@ export default function SeniorPillBoxes() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pillpack by Amazon</h2><p>FREE. Pre-sorted by dose time. Mailed monthly. Game-changer.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Phone reminders</h2><p>Medisafe. Apple Reminders. Echo Show. Multiple alerts.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Brown bag check</h2><p>Take ALL meds to pharmacist yearly. Spots interactions and old prescriptions.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pillpack is best for seniors on 5+ medications. Free service.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pillpack is best for seniors on 5+ medications. Free service.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

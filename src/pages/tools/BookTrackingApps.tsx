@@ -30,10 +30,10 @@ export default function BookTrackingApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BookTrackingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup (Goodreads as example)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Install <strong>Goodreads</strong> from App Store / Play Store.</li>
               <li>Sign in with email or Amazon account.</li>
               <li>Set a yearly reading goal — try 12 books your first year.</li>
@@ -57,7 +57,7 @@ export default function BookTrackingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Book club tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Goodreads Groups</strong> — make a private group for your book club, schedule reads, post questions.</li>
               <li><strong>Local library book clubs</strong> — most libraries run free in-person clubs. Different genre each month.</li>
               <li><strong>Bookshop.org</strong> — buy books, supports local independent bookstores.</li>
@@ -69,7 +69,7 @@ export default function BookTrackingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best feature: "What did I read in 2019?"</h3>
-            <p className="text-sm text-muted-foreground">Years from now you\'ll wonder "what was that mystery I loved?". With Goodreads or StoryGraph, the answer is one tap. Worth setting up just for the record.</p>
+            <p className="text-base text-muted-foreground">Years from now you\'ll wonder "what was that mystery I loved?". With Goodreads or StoryGraph, the answer is one tap. Worth setting up just for the record.</p>
           </CardContent>
         </Card>
       </main>

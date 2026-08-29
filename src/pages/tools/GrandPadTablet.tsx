@@ -19,7 +19,7 @@ export default function GrandPadTablet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it is</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tablet built JUST for seniors.</li>
               <li>Big buttons + simple icons.</li>
               <li>Pre-set with family contacts only.</li>
@@ -33,7 +33,7 @@ export default function GrandPadTablet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Video calls with family (one tap).</li>
               <li>Photos shared from family phones.</li>
               <li>Voice messages.</li>
@@ -49,7 +49,7 @@ export default function GrandPadTablet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Seniors with mild cognitive decline.</li>
               <li>Family wants to share photos / video chat.</li>
               <li>Senior unable to manage WiFi/passwords.</li>
@@ -63,7 +63,7 @@ export default function GrandPadTablet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">vs regular tablet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPad</strong> — better long-term value if senior can manage.</li>
               <li><strong>iPad with Assistive Access</strong> (iOS 17+) — free senior simplified mode.</li>
               <li><strong>GrandPad</strong> — much simpler, but locked-in.</li>
@@ -76,7 +76,7 @@ export default function GrandPadTablet() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Subscription</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$40/mo includes cellular data.</li>
               <li>NO contract.</li>
               <li>24/7 customer support.</li>
@@ -90,7 +90,7 @@ export default function GrandPadTablet() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free alternative: iPad Assistive Access</h3>
-            <p className="text-sm text-muted-foreground">iOS 17+ has &quot;Assistive Access&quot; — limits iPad to 5 apps senior chooses (Phone, Camera, Photos, Music, Messages). Big text + simple icons. Set up by family. FREE if you have iPad. Try this BEFORE buying GrandPad. Settings → Accessibility → Assistive Access.</p>
+            <p className="text-base text-muted-foreground">iOS 17+ has &quot;Assistive Access&quot; — limits iPad to 5 apps senior chooses (Phone, Camera, Photos, Music, Messages). Big text + simple icons. Set up by family. FREE if you have iPad. Try this BEFORE buying GrandPad. Settings → Accessibility → Assistive Access.</p>
           </CardContent>
         </Card>
       </main>

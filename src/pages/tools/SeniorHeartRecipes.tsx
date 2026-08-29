@@ -22,7 +22,7 @@ export default function SeniorHeartRecipes() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Filter by sodium</h2><p>Yummly, Allrecipes filter under 600 mg. Real heart-healthy meals.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Replace salt</h2><p>Lemon, herbs, garlic. Same flavor without sodium.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefit</h2><p>DASH diet drops BP 8-14 mmHg. Better than some medications.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Cook 80% from scratch. Restaurant food has 3x sodium.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Cook 80% from scratch. Restaurant food has 3x sodium.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

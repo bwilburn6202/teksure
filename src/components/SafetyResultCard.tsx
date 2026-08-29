@@ -43,8 +43,8 @@ export function SafetyResultCard({ query, result }: SafetyResultCardProps) {
                   </span>
                 )}
               </div>
-              <p className="text-xs text-muted-foreground break-all mb-2 font-mono">{query}</p>
-              <p className="text-sm text-foreground/80 leading-relaxed">{result.summary}</p>
+              <p className="text-sm text-muted-foreground break-all mb-2 font-mono">{query}</p>
+              <p className="text-base text-foreground/80 leading-relaxed">{result.summary}</p>
             </div>
           </div>
         </CardContent>
@@ -65,8 +65,8 @@ export function SafetyResultCard({ query, result }: SafetyResultCardProps) {
                   <li key={i} className="flex items-start gap-3">
                     <SubIcon className={`h-4 w-4 ${sub.iconClass} shrink-0 mt-0.5`} aria-hidden="true" />
                     <div className="flex-1 min-w-0">
-                      <p className="text-sm text-foreground/90 leading-snug">{r.detail}</p>
-                      <p className="text-sm text-muted-foreground mt-0.5">
+                      <p className="text-base text-foreground/90 leading-snug">{r.detail}</p>
+                      <p className="text-base text-muted-foreground mt-0.5">
                         Source: <span className="font-mono">{r.source}</span>
                       </p>
                     </div>

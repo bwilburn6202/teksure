@@ -19,7 +19,7 @@ export default function GasBuddyAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is GasBuddy?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free app shows gas prices at nearby stations.</li>
               <li>Updated by community of drivers.</li>
               <li>Save 10–30 cents per gallon often.</li>
@@ -33,7 +33,7 @@ export default function GasBuddyAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How it works</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open app — sees your location.</li>
               <li>Shows all gas stations within set radius.</li>
               <li>Sorted by price, lowest first.</li>
@@ -47,7 +47,7 @@ export default function GasBuddyAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">GasBuddy Pay</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Optional payment service.</li>
               <li>Save up to 25 cents/gallon at participating stations.</li>
               <li>Connects to your bank account.</li>
@@ -61,7 +61,7 @@ export default function GasBuddyAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other gas apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Gas Guru — also free, similar features.</li>
               <li>Waze — shows gas prices on routes.</li>
               <li>Google Maps — shows gas stations + prices.</li>
@@ -75,7 +75,7 @@ export default function GasBuddyAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior gas saving tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>AAA discount at Shell — 5 cents/gallon.</li>
               <li>Grocery store gas points (Kroger, Safeway).</li>
               <li>Walmart+ — 10 cents/gallon at Walmart + Murphy.</li>
@@ -89,7 +89,7 @@ export default function GasBuddyAppGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Privacy considerations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>App tracks location to find nearby gas.</li>
               <li>Limit location: only when using app.</li>
               <li>Data may be sold to advertisers.</li>
@@ -103,7 +103,7 @@ export default function GasBuddyAppGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save $200+ per year</h3>
-            <p className="text-sm text-muted-foreground">If you drive an average amount, GasBuddy can save you $200–$400 per year by directing you to the cheapest stations on your normal routes. Free to download, no subscription. Many seniors check it before any drive across town. Combine with Costco gas membership and grocery rewards programs for maximum savings.</p>
+            <p className="text-base text-muted-foreground">If you drive an average amount, GasBuddy can save you $200–$400 per year by directing you to the cheapest stations on your normal routes. Free to download, no subscription. Many seniors check it before any drive across town. Combine with Costco gas membership and grocery rewards programs for maximum savings.</p>
           </CardContent>
         </Card>
       </main>

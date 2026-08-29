@@ -96,7 +96,7 @@ export default function GiftCardBalanceTracker() {
   const expiringSoon = cards.filter(c => isExpiringSoon(c.expiration) && !isExpired(c.expiration));
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Gift Card Balance Tracker | TekSure"
         description="Keep track of all your gift cards in one place. Record balances, expiration dates, and print a tidy list."
@@ -106,9 +106,9 @@ export default function GiftCardBalanceTracker() {
         <div className="mb-6 print:mb-4">
           <div className="flex items-center gap-2 mb-1">
             <Gift className="h-7 w-7 text-pink-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Gift Card Balance Tracker</h1>
+            <h1 className="text-3xl font-bold text-foreground">Gift Card Balance Tracker</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Keep your gift cards organized so none of them gather dust or expire unused.
           </p>
         </div>
@@ -137,7 +137,7 @@ export default function GiftCardBalanceTracker() {
                     key={s}
                     type="button"
                     onClick={() => handlePickStore(s)}
-                    className="text-xs px-2 py-1 rounded-full bg-gray-100 hover:bg-pink-100 text-gray-700 hover:text-pink-700 transition"
+                    className="text-xs px-2 py-1 rounded-full bg-muted hover:bg-pink-100 text-foreground hover:text-pink-700 transition"
                   >
                     {s}
                   </button>
@@ -192,7 +192,7 @@ export default function GiftCardBalanceTracker() {
                 />
               </div>
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={handleAdd} size="lg" className="w-full sm:w-auto text-base">
               Add Gift Card
             </Button>
@@ -203,7 +203,7 @@ export default function GiftCardBalanceTracker() {
         {cards.length > 0 && (
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
             <div>
-              <p className="text-sm text-gray-500">Total balance across {cards.length} card{cards.length !== 1 ? "s" : ""}</p>
+              <p className="text-base text-muted-foreground">Total balance across {cards.length} card{cards.length !== 1 ? "s" : ""}</p>
               <p className="text-2xl font-bold text-pink-700">{formatCurrency(totalBalance)}</p>
             </div>
             <Button variant="outline" onClick={() => window.print()} className="print:hidden gap-2">
@@ -215,14 +215,14 @@ export default function GiftCardBalanceTracker() {
 
         {/* Expiring warning */}
         {expiringSoon.length > 0 && (
-          <Card className="mb-4 bg-amber-50 border-amber-200 print:hidden">
+          <Card className="mb-4 bg-warn border-warn-foreground/25 print:hidden">
             <CardContent className="py-3 px-4 flex items-start gap-2">
-              <AlertTriangle className="h-5 w-5 text-amber-600 mt-0.5 shrink-0" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground mt-0.5 shrink-0" />
               <div>
-                <p className="font-semibold text-amber-800 text-sm">
+                <p className="font-semibold text-warn-foreground text-base">
                   {expiringSoon.length} card{expiringSoon.length !== 1 ? "s" : ""} expiring within 60 days
                 </p>
-                <p className="text-sm text-amber-700">
+                <p className="text-base text-warn-foreground">
                   Plan to use {expiringSoon.length === 1 ? "it" : "them"} soon so the value isn't lost.
                 </p>
               </div>
@@ -233,9 +233,9 @@ export default function GiftCardBalanceTracker() {
         {/* Cards */}
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
+            <CardContent className="py-10 text-center text-muted-foreground">
               <p className="text-lg">No gift cards added yet.</p>
-              <p className="text-sm mt-1">Add your first card above to start tracking balances.</p>
+              <p className="text-base mt-1">Add your first card above to start tracking balances.</p>
             </CardContent>
           </Card>
         ) : (
@@ -248,11 +248,11 @@ export default function GiftCardBalanceTracker() {
                   <CardContent className="py-3 px-4">
                     <div className="flex items-start justify-between gap-2">
                       <div className="flex-1 min-w-0">
-                        <p className="font-semibold text-gray-900 text-base">{c.store}</p>
+                        <p className="font-semibold text-foreground text-base">{c.store}</p>
                         <div className="flex flex-wrap gap-2 mt-1 items-center">
                           <span className="text-pink-700 font-bold text-lg">{formatCurrency(c.balance)}</span>
                           {c.original > c.balance && (
-                            <span className="text-gray-400 text-sm">of {formatCurrency(c.original)}</span>
+                            <span className="text-muted-foreground text-base">of {formatCurrency(c.original)}</span>
                           )}
                           {c.expiration && (
                             <Badge
@@ -263,12 +263,12 @@ export default function GiftCardBalanceTracker() {
                             </Badge>
                           )}
                         </div>
-                        {c.notes && <p className="text-sm text-gray-500 mt-1 italic">{c.notes}</p>}
+                        {c.notes && <p className="text-base text-muted-foreground mt-1 italic">{c.notes}</p>}
                       </div>
                       <Button
                         variant="ghost"
                         size="icon"
-                        className="shrink-0 text-red-400 hover:text-red-600 print:hidden"
+                        className="shrink-0 text-danger-foreground hover:text-danger-foreground print:hidden"
                         onClick={() => handleRemove(c.id)}
                         aria-label="Remove gift card"
                       >
@@ -284,10 +284,10 @@ export default function GiftCardBalanceTracker() {
 
         {/* Tips */}
         {cards.length > 0 && (
-          <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+          <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
             <CardContent className="py-4 px-4">
-              <p className="text-sm font-semibold text-blue-800 mb-2">Gift Card Tips</p>
-              <ul className="text-sm text-blue-700 space-y-1 list-disc pl-4">
+              <p className="text-base font-semibold text-info-foreground mb-2">Gift Card Tips</p>
+              <ul className="text-base text-info-foreground space-y-1 list-disc pl-4">
                 <li>Most retailer gift cards have no expiration date by federal law, but inactivity fees can apply after 12 months.</li>
                 <li>Visa and Mastercard prepaid cards often expire — check the back of the card.</li>
                 <li>If you lose a card and registered it online, the issuer may be able to replace it.</li>
@@ -297,6 +297,6 @@ export default function GiftCardBalanceTracker() {
           </Card>
         )}
       </div>
-    </div>
+    </main>
   );
 }

@@ -22,7 +22,7 @@ export default function SeniorMeditationApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smiling Mind</h2><p>Free, no ads. Designed by psychologists. Programs for grief and chronic pain.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Start small</h2><p>5 minutes when you wake up, 5 before bed. Two weeks in, it becomes habit.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use earbuds or speaker</h2><p>Quality sound makes a big difference. Even cheap earbuds help.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Sleep stories work — most people fall asleep before the story ends.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Sleep stories work — most people fall asleep before the story ends.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

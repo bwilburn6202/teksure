@@ -93,7 +93,7 @@ export default function EstateSaleHelper() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <Home className="h-8 w-8 text-amber-700 dark:text-amber-300" />
+                <Home className="h-8 w-8 text-warn-foreground " />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Estate Sale Helper</h1>
@@ -106,8 +106,8 @@ export default function EstateSaleHelper() {
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Estate Sale Helper' }]} />
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Three paths for clearing a home</p>
-              <p className="text-xs text-muted-foreground mb-3">
+              <p className="text-base font-semibold mb-2">Three paths for clearing a home</p>
+              <p className="text-sm text-muted-foreground mb-3">
                 Path one — hire a professional estate-sale company to run the whole event for a 30-50 percent commission. Path two — do it yourself with phone photos, price-check apps, and a weekend yard sale. Path three — donate or auction online and let a hauler take the rest. Most families use a mix of all three. Start by walking room to room and tagging items into four buckets: keep, sell, donate, haul.
               </p>
             </CardContent>
@@ -120,18 +120,18 @@ export default function EstateSaleHelper() {
                     <p className="font-semibold text-base">{s.name}</p>
                     <Badge variant="outline">{s.cost}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {s.whoFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {s.whoFor}</p>
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {s.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}
+                        {s.pros.map((p, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {s.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                        {s.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -143,24 +143,24 @@ export default function EstateSaleHelper() {
             ))}
             {!showAll && <Button variant="outline" onClick={() => setShowAll(true)}>Show all 7 services</Button>}
           </div>
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch out for lowball buyers and "we buy estates" cold callers</p>
                 <p className="mb-2">Once an obituary or probate filing goes public, the phone starts ringing. Strangers offer to buy "the whole house contents" for a flat thousand or two. They are betting your family has not checked what is actually there.</p>
                 <ul className="space-y-1.5 mt-2">
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">·</span><span>Never accept a "today only" cash offer for contents you have not inventoried.</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">·</span><span>Get a second opinion from a licensed appraiser before signing anything ($200-$500 is worth it).</span></li>
-                  <li className="flex gap-2"><span className="text-amber-700 dark:text-amber-300 font-semibold">·</span><span>"We buy estates" callers who refuse to put a written quote on letterhead are not legitimate.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">·</span><span>Never accept a "today only" cash offer for contents you have not inventoried.</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">·</span><span>Get a second opinion from a licensed appraiser before signing anything ($200-$500 is worth it).</span></li>
+                  <li className="flex gap-2"><span className="text-warn-foreground font-semibold">·</span><span>"We buy estates" callers who refuse to put a written quote on letterhead are not legitimate.</span></li>
                 </ul>
               </div>
             </CardContent>
           </Card>
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Before the sale — the digital cleanup</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Before the sale — the digital cleanup</p>
+              <p className="text-sm text-muted-foreground">
                 Walk every drawer for paperwork: tax records, deeds, insurance policies, safe-deposit keys. Scan with Apple Notes or Adobe Scan before tossing anything. Wipe phones, tablets, and computers before they leave the house — see our Device Retirement Helper. Do not throw out address books, old letters, or photo albums until family has reviewed them.
               </p>
             </CardContent>
@@ -169,20 +169,20 @@ export default function EstateSaleHelper() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Account After Loss</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Close, memorialize, or transfer online accounts.</p>
+                <p className="font-medium text-base">Account After Loss</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Close, memorialize, or transfer online accounts.</p>
               </Link>
               <Link to="/tools/sell-online-safely" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Sell Online Safely</p>
-                <p className="text-xs text-muted-foreground mt-0.5">eBay, Facebook Marketplace, OfferUp without scams.</p>
+                <p className="font-medium text-base">Sell Online Safely</p>
+                <p className="text-sm text-muted-foreground mt-0.5">eBay, Facebook Marketplace, OfferUp without scams.</p>
               </Link>
               <Link to="/tools/device-retirement-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Device Retirement Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Wipe phones and computers before they leave.</p>
+                <p className="font-medium text-base">Device Retirement Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Wipe phones and computers before they leave.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: photograph every room from four corners before any item leaves. Your future self will want the record for insurance, taxes, and family memory.
           </p>
         </div>

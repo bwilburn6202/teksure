@@ -95,7 +95,7 @@ export default function PodcastStarter() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <Headphones className="h-8 w-8 text-amber-600" />
+                <Headphones className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Podcast Starter Guide</h1>
@@ -110,7 +110,7 @@ export default function PodcastStarter() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your phone</p>
+              <p className="text-base font-semibold mb-3">Pick your phone</p>
               <div className="flex gap-2">
                 {(['iphone', 'android'] as Phone[]).map(p => (
                   <Button key={p} variant={phone === p ? 'default' : 'outline'} onClick={() => setPhone(p)}>
@@ -126,7 +126,7 @@ export default function PodcastStarter() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Step 1 — App: {setup.app}</p>
               <ol className="space-y-2 mb-5">
                 {setup.steps.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{s}</span>
                   </li>
@@ -136,7 +136,7 @@ export default function PodcastStarter() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Tricks worth knowing</p>
               <ul className="space-y-1.5">
                 {setup.features.map((f, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-primary shrink-0">•</span><span>{f}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-primary shrink-0">•</span><span>{f}</span></li>
                 ))}
               </ul>
             </CardContent>
@@ -159,11 +159,11 @@ export default function PodcastStarter() {
               <Card key={p.title} className="border-border">
                 <CardContent className="p-4">
                   <div className="flex items-start justify-between gap-3 mb-1 flex-wrap">
-                    <p className="font-semibold text-sm">{p.title}</p>
+                    <p className="font-semibold text-base">{p.title}</p>
                     <Badge variant="outline" className="text-xs">{p.category}</Badge>
                   </div>
-                  <p className="text-xs text-muted-foreground"><strong>About:</strong> {p.about}</p>
-                  <p className="text-xs text-muted-foreground mt-1"><strong>Why:</strong> {p.why}</p>
+                  <p className="text-sm text-muted-foreground"><strong>About:</strong> {p.about}</p>
+                  <p className="text-sm text-muted-foreground mt-1"><strong>Why:</strong> {p.why}</p>
                 </CardContent>
               </Card>
             ))}
@@ -171,8 +171,8 @@ export default function PodcastStarter() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Listening tips that make a difference</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Listening tips that make a difference</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Pair with chores or walks. The audio fills time you would not otherwise spend listening to anything.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Try 1.25x or 1.5x speed for talkier shows. After a week, normal speed sounds slow.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span>Bluetooth headphones (cheap pair, $30 on Amazon) make hour-long listens far better than phone speaker.</span></li>
@@ -185,20 +185,20 @@ export default function PodcastStarter() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/library-power-pack" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Library Power Pack</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Audiobooks via Libby, free.</p>
+                <p className="font-medium text-base">Library Power Pack</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Audiobooks via Libby, free.</p>
               </Link>
               <Link to="/tools/hearing-aid-pairing-wizard" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Hearing Aid Pairing</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Stream podcasts to hearing aids.</p>
+                <p className="font-medium text-base">Hearing Aid Pairing</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Stream podcasts to hearing aids.</p>
               </Link>
               <Link to="/tools/podcast-directory" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Podcast Directory</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Browse more shows by category.</p>
+                <p className="font-medium text-base">Podcast Directory</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Browse more shows by category.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: subscribe to two news podcasts and one fun one. The variety keeps the queue feeling fresh.
           </p>
         </div>

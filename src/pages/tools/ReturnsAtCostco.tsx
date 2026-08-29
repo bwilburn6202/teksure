@@ -19,14 +19,14 @@ export default function ReturnsAtCostco() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Costco&apos;s policy in plain English</h2>
-            <p className="text-sm">"Risk-Free 100% Satisfaction Guarantee" — return ANY item, ANY time, for ANY reason, with full refund. Even years later. No receipt required (they look it up by membership card).</p>
+            <p className="text-base">"Risk-Free 100% Satisfaction Guarantee" — return ANY item, ANY time, for ANY reason, with full refund. Even years later. No receipt required (they look it up by membership card).</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Exceptions (90-day return)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Electronics — TVs, computers, cameras, printers.</li>
               <li>Major appliances — fridge, washer, dryer.</li>
               <li>Cell phones (90-day from carrier).</li>
@@ -41,7 +41,7 @@ export default function ReturnsAtCostco() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to return</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Bring item to Returns counter (any Costco).</li>
               <li>Bring membership card.</li>
               <li>Receipt helps but not required.</li>
@@ -55,7 +55,7 @@ export default function ReturnsAtCostco() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Smart use cases</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Half-eaten food that went bad before expected — return for refund.</li>
               <li>Furniture that didn&apos;t fit — return.</li>
               <li>Mattress 6 months in, hurts your back — return for refund.</li>
@@ -66,17 +66,17 @@ export default function ReturnsAtCostco() {
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t abuse</h2>
-            <p className="text-sm">Costco tracks return patterns. Excessive returns CAN result in membership cancellation. Be reasonable. The policy exists to build trust, not for you to use it as 90-day rental service.</p>
+            <p className="text-base">Costco tracks return patterns. Excessive returns CAN result in membership cancellation. Be reasonable. The policy exists to build trust, not for you to use it as 90-day rental service.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Membership refund</h3>
-            <p className="text-sm text-muted-foreground">If Costco isn&apos;t for you, ask for full membership refund — even at end of year. They give 100% back, no fine print. Try a year. Get money back if it didn&apos;t pay off. Risk-free.</p>
+            <p className="text-base text-muted-foreground">If Costco isn&apos;t for you, ask for full membership refund — even at end of year. They give 100% back, no fine print. Try a year. Get money back if it didn&apos;t pay off. Risk-free.</p>
           </CardContent>
         </Card>
       </main>

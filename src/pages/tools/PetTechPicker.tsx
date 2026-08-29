@@ -214,7 +214,7 @@ export default function PetTechPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <PawPrint className="h-8 w-8 text-amber-700 dark:text-amber-300" />
+                <PawPrint className="h-8 w-8 text-warn-foreground " />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Pet Tech Picker</h1>
@@ -229,8 +229,8 @@ export default function PetTechPicker() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Pet tech can help — if you pick the right thing</p>
-              <p className="text-xs text-muted-foreground mb-3">
+              <p className="text-base font-semibold mb-2">Pet tech can help — if you pick the right thing</p>
+              <p className="text-sm text-muted-foreground mb-3">
                 For senior pet owners, the right gadget can take pressure off daily routines: a feeder that handles breakfast on a tough morning, a camera that lets the grandkids wave at the dog, a tracker that takes the panic out of a slipped leash. The wrong gadget gathers dust on a shelf. Below: five common categories, what each one actually does, and which type of household it fits.
               </p>
             </CardContent>
@@ -247,20 +247,20 @@ export default function PetTechPicker() {
                     </div>
                     <Badge variant="outline">{d.price}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-2"><strong>What it does:</strong> {d.whatItDoes}</p>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {d.whoFor}</p>
+                  <p className="text-base text-muted-foreground mb-2"><strong>What it does:</strong> {d.whatItDoes}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {d.whoFor}</p>
 
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
                       <ul className="space-y-0.5">
-                        {d.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}
+                        {d.pros.map((p, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>)}
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
                       <ul className="space-y-0.5">
-                        {d.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}
+                        {d.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}
                       </ul>
                     </div>
                   </div>
@@ -277,12 +277,12 @@ export default function PetTechPicker() {
             )}
           </div>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch for subscription creep</p>
-                <p className="text-xs text-muted-foreground mt-1">
+                <p className="text-sm text-muted-foreground mt-1">
                   Many pet gadgets look cheap on the box and then quietly add a monthly fee. A Tractive GPS at $5/month is $60 a year. A Fi collar plan can run $189 a year. Furbo charges $7/month for the smart features most owners want. Add a pet camera, a tracker, and a feeder, and you can be paying $200+ a year in fees on top of the device cost. Before you buy, check the fine print: which features stop working without the subscription? Add up the first three years total cost — device plus fees — and compare it to a no-subscription option like an AirTag (indoors) or PETLIBRO feeder.
                 </p>
               </div>
@@ -291,8 +291,8 @@ export default function PetTechPicker() {
 
           <Card className="border-border bg-muted/30">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Quick decision guide</p>
-              <ul className="text-xs text-muted-foreground space-y-1.5">
+              <p className="text-base font-semibold mb-2">Quick decision guide</p>
+              <ul className="text-sm text-muted-foreground space-y-1.5">
                 <li><strong>Outdoor cat or runaway dog?</strong> Tractive (cheaper monthly) or Fi (better battery).</li>
                 <li><strong>Indoor pet only?</strong> AirTag is plenty — no monthly fee.</li>
                 <li><strong>Travel a lot or sleep in?</strong> PETLIBRO automatic feeder.</li>
@@ -307,20 +307,20 @@ export default function PetTechPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/find-lost-items" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Find Lost Items</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Trackers for keys, wallets, and more.</p>
+                <p className="font-medium text-base">Find Lost Items</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Trackers for keys, wallets, and more.</p>
               </Link>
               <Link to="/tools/smart-home-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Smart Home Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">First steps into connected gadgets.</p>
+                <p className="font-medium text-base">Smart Home Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">First steps into connected gadgets.</p>
               </Link>
               <Link to="/tools/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Grandparent Device Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Phones and tablets made simple.</p>
+                <p className="font-medium text-base">Grandparent Device Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Phones and tablets made simple.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: ask your vet to confirm your pet has a working microchip before buying any microchip-based device. About 1 in 10 chips have shifted under the skin or stopped reading.
           </p>
         </div>

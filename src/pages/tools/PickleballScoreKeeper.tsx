@@ -64,15 +64,15 @@ export default function PickleballScoreKeeper() {
   const serverName = s.serverTeam === 1 ? s.team1Name : s.team2Name;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Pickleball Score Keeper | TekSure" description="A no-fuss pickleball scoreboard for older players. Track the score, server number, and side-out without arguing. Plays to 11, 15, or 21. Print the score history at game end." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <Trophy className="h-7 w-7 text-amber-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Pickleball Score Keeper</h1>
+            <Trophy className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Pickleball Score Keeper</h1>
           </div>
-          <p className="text-gray-600 text-lg">No more debates about whose turn it is to serve. Tap who won the rally — the score and server update automatically.</p>
+          <p className="text-muted-foreground text-lg">No more debates about whose turn it is to serve. Tap who won the rally — the score and server update automatically.</p>
         </div>
 
         <Card className="mb-4 print:hidden">
@@ -91,10 +91,10 @@ export default function PickleballScoreKeeper() {
         </Card>
 
         {winner && (
-          <Card className="mb-4 bg-amber-50 border-amber-300 border-2">
+          <Card className="mb-4 bg-warn border-warn-foreground/25 border-2">
             <CardContent className="py-6 px-4 text-center">
-              <p className="text-2xl font-bold text-amber-800">{winner} wins!</p>
-              <p className="text-lg text-amber-700">{s.team1Score} - {s.team2Score}</p>
+              <p className="text-2xl font-bold text-warn-foreground">{winner} wins!</p>
+              <p className="text-lg text-warn-foreground">{s.team1Score} - {s.team2Score}</p>
             </CardContent>
           </Card>
         )}
@@ -103,17 +103,17 @@ export default function PickleballScoreKeeper() {
           <CardContent className="py-6 px-4">
             <div className="grid grid-cols-2 gap-4">
               <div className={`text-center p-3 rounded-lg ${s.serverTeam === 1 ? "bg-amber-50 border-2 border-amber-300" : ""}`}>
-                <p className="text-sm text-gray-600">{s.team1Name}</p>
-                <p className="text-6xl font-bold text-gray-900">{s.team1Score}</p>
-                {s.serverTeam === 1 && <p className="text-xs text-amber-700 mt-1">Server {s.serverNumber}</p>}
+                <p className="text-base text-muted-foreground">{s.team1Name}</p>
+                <p className="text-6xl font-bold text-foreground">{s.team1Score}</p>
+                {s.serverTeam === 1 && <p className="text-sm text-warn-foreground mt-1">Server {s.serverNumber}</p>}
               </div>
               <div className={`text-center p-3 rounded-lg ${s.serverTeam === 2 ? "bg-amber-50 border-2 border-amber-300" : ""}`}>
-                <p className="text-sm text-gray-600">{s.team2Name}</p>
-                <p className="text-6xl font-bold text-gray-900">{s.team2Score}</p>
-                {s.serverTeam === 2 && <p className="text-xs text-amber-700 mt-1">Server {s.serverNumber}</p>}
+                <p className="text-base text-muted-foreground">{s.team2Name}</p>
+                <p className="text-6xl font-bold text-foreground">{s.team2Score}</p>
+                {s.serverTeam === 2 && <p className="text-sm text-warn-foreground mt-1">Server {s.serverNumber}</p>}
               </div>
             </div>
-            <p className="text-center text-lg text-gray-700 mt-4">
+            <p className="text-center text-lg text-foreground mt-4">
               <span className="font-semibold">{serverName}</span> calls: <span className="font-mono font-bold">{callout}</span>
             </p>
           </CardContent>
@@ -131,8 +131,8 @@ export default function PickleballScoreKeeper() {
         {s.log.length > 0 && (
           <Card className="mb-4">
             <CardContent className="py-3 px-4">
-              <p className="text-xs font-semibold text-gray-500 mb-1">RECENT</p>
-              <ol className="text-sm text-gray-700 space-y-0.5">
+              <p className="text-sm font-semibold text-muted-foreground mb-1">RECENT</p>
+              <ol className="text-base text-foreground space-y-0.5">
                 {s.log.map((entry, i) => <li key={i}>{entry}</li>)}
               </ol>
             </CardContent>
@@ -144,12 +144,12 @@ export default function PickleballScoreKeeper() {
           <Button variant="outline" onClick={() => window.print()} className="gap-2"><Printer className="h-4 w-4" />Print</Button>
         </div>
 
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Rules reminder:</span> Only the serving team can score. The server calls THREE numbers before serving: their team score, the receiving team score, and their server number (1 or 2). Side-out switches the serve to the other team. Win by 2.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Rules reminder:</span> Only the serving team can score. The server calls THREE numbers before serving: their team score, the receiving team score, and their server number (1 or 2). Side-out switches the serve to the other team. Win by 2.</p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

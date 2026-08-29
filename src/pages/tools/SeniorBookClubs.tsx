@@ -22,7 +22,7 @@ export default function SeniorBookClubs() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior centers</h2><p>Often weekly groups. In-person friendships.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Zoom book clubs</h2><p>Many run virtually. Make global friends.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Audio club</h2><p>Listen on Audible while doing tasks. Discuss virtually.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Library book clubs free + senior-friendly. Start there.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Library book clubs free + senior-friendly. Start there.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

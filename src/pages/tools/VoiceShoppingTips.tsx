@@ -19,7 +19,7 @@ export default function VoiceShoppingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup — Amazon Alexa</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Alexa app → Settings → Voice Purchasing.</li>
               <li>Add a 4-digit confirmation PIN. (Critical — keeps grandkids from ordering toys.)</li>
               <li>Verify shipping address.</li>
@@ -32,7 +32,7 @@ export default function VoiceShoppingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup — Google Home</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Google Home app → Settings → Payments.</li>
               <li>Add credit card.</li>
               <li>Add shipping address.</li>
@@ -45,7 +45,7 @@ export default function VoiceShoppingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What works well by voice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Repeat orders — "order more paper towels" reorders your usual brand.</li>
               <li>Quick groceries via Whole Foods (Alexa) or Walmart (Google).</li>
               <li>Adding things to a list — "add milk to my shopping list".</li>
@@ -58,7 +58,7 @@ export default function VoiceShoppingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What NOT to buy by voice</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Anything over $50 — go online, see photos and reviews first.</li>
               <li>First-time purchases of new products.</li>
               <li>Clothing or anything with size, color, etc.</li>
@@ -71,7 +71,7 @@ export default function VoiceShoppingTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Safety must-haves</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Confirmation PIN ON</strong> — required for every voice purchase.</li>
               <li><strong>Voice Match ON</strong> — only your voice can buy.</li>
               <li><strong>Use credit card, not debit</strong> — easier to dispute.</li>
@@ -85,7 +85,7 @@ export default function VoiceShoppingTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Shopping list trick</h3>
-            <p className="text-sm text-muted-foreground">Better than ordering by voice — ADD to a shopping list by voice, then review later. Say "Alexa, add eggs to my shopping list" 5 times during the week. On Saturday, open the Alexa app — full grocery list ready. Order through your favorite delivery app or print and take to store.</p>
+            <p className="text-base text-muted-foreground">Better than ordering by voice — ADD to a shopping list by voice, then review later. Say "Alexa, add eggs to my shopping list" 5 times during the week. On Saturday, open the Alexa app — full grocery list ready. Order through your favorite delivery app or print and take to store.</p>
           </CardContent>
         </Card>
       </main>

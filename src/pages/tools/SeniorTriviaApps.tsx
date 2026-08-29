@@ -22,7 +22,7 @@ export default function SeniorTriviaApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sporcle</h2><p>FREE. Quizzes about everything. Geography quizzes are popular.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">NPR News Quiz</h2><p>FREE. Weekly current events quiz on Wait Wait podcast.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family game</h2><p>Trivia Crack with grandkids. Fun multi-generation activity.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 15 minutes daily. Memory recall + new learning combo.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 15 minutes daily. Memory recall + new learning combo.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

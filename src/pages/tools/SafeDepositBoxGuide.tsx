@@ -19,7 +19,7 @@ export default function SafeDepositBoxGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to KEEP</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Birth certificates.</li>
               <li>Marriage certificates.</li>
               <li>Death certificates.</li>
@@ -36,7 +36,7 @@ export default function SafeDepositBoxGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What NOT to keep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Original will</strong> — bank may freeze access.</li>
               <li><strong>Power of attorney</strong> — needed quickly.</li>
               <li><strong>Healthcare directive</strong> — needed in emergency.</li>
@@ -50,7 +50,7 @@ export default function SafeDepositBoxGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost + sizing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$50-200/yr depending on size.</li>
               <li>3x5 inch — small ($50/yr).</li>
               <li>10x10 inch — medium ($150/yr).</li>
@@ -64,7 +64,7 @@ export default function SafeDepositBoxGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance reality</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NOT FDIC-insured contents.</li>
               <li>Bank not liable for loss.</li>
               <li>Get separate &quot;valuable items&quot; rider.</li>
@@ -78,7 +78,7 @@ export default function SafeDepositBoxGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Co-signers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Add adult child as co-renter.</li>
               <li>They access without your presence.</li>
               <li>Avoid &quot;frozen at death&quot; problem.</li>
@@ -92,7 +92,7 @@ export default function SafeDepositBoxGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Home safe alternative</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Fireproof + waterproof safe ($150-300).</li>
               <li>Bolted to floor.</li>
               <li>Backup of digital scans.</li>
@@ -106,7 +106,7 @@ export default function SafeDepositBoxGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Digital backup essential</h3>
-            <p className="text-sm text-muted-foreground">Whatever&apos;s in safe deposit box — also scan + store in cloud. Family can access digital copy if needed urgently. Originals in box for legal weight. Copies always available. Inventory list updated yearly. Tell trusted family member box location, key location, what&apos;s inside. Backup = peace of mind.</p>
+            <p className="text-base text-muted-foreground">Whatever&apos;s in safe deposit box — also scan + store in cloud. Family can access digital copy if needed urgently. Originals in box for legal weight. Copies always available. Inventory list updated yearly. Tell trusted family member box location, key location, what&apos;s inside. Backup = peace of mind.</p>
           </CardContent>
         </Card>
       </main>

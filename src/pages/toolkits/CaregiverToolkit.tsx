@@ -834,7 +834,7 @@ export default function CaregiverToolkit() {
               />
             </div>
             <div className="flex items-center gap-3 mb-5">
-              <div className="p-3 rounded-2xl bg-rose-500/15 text-rose-700 dark:text-rose-300 shadow-sm">
+              <div className="p-3 rounded-2xl bg-rose-500/15 text-danger-foreground shadow-sm">
                 <HandHeart className="w-8 h-8" aria-hidden="true" />
               </div>
               <Badge variant="outline" className="text-sm bg-white/70 dark:bg-background/70">
@@ -913,8 +913,8 @@ export default function CaregiverToolkit() {
                         <p key={i}>"{line}"</p>
                       ))}
                     </div>
-                    <Alert className="mt-4 border-amber-300 bg-amber-50 dark:bg-amber-950/30">
-                      <AlertTriangle className="h-4 w-4 text-amber-700" aria-hidden="true" />
+                    <Alert className="mt-4 border-warn-foreground/25 bg-warn ">
+                      <AlertTriangle className="h-4 w-4 text-warn-foreground" aria-hidden="true" />
                       <AlertTitle className="text-sm">Quick Tip</AlertTitle>
                       <AlertDescription className="text-sm">
                         Never install anything on their device without asking. The one time you do, you lose trust for the next five years.
@@ -997,7 +997,7 @@ export default function CaregiverToolkit() {
                       </div>
                       <h3 className="font-semibold text-lg text-foreground">{s.topic}</h3>
                     </div>
-                    <p className="text-sm text-muted-foreground italic mb-3">{s.intro}</p>
+                    <p className="text-base text-muted-foreground italic mb-3">{s.intro}</p>
                     <blockquote className="border-l-2 border-primary/40 pl-4 text-base text-foreground/90 leading-relaxed">
                       {s.script}
                     </blockquote>
@@ -1157,7 +1157,7 @@ export default function CaregiverToolkit() {
                         {r.label}
                         <ArrowRight className="inline-block ml-1 h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
                       </h3>
-                      <p className="text-sm text-muted-foreground mt-1 leading-relaxed">
+                      <p className="text-base text-muted-foreground mt-1 leading-relaxed">
                         {r.description}
                       </p>
                     </div>

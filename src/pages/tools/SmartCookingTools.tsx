@@ -31,10 +31,10 @@ export default function SmartCookingTools() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{t.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{t.price}</span>
+                  <span className="text-base font-semibold text-primary">{t.price}</span>
                 </div>
-                <p className="text-sm mb-1"><strong>Best for:</strong> {t.best}</p>
-                <p className="text-sm text-muted-foreground">{t.good}</p>
+                <p className="text-base mb-1"><strong>Best for:</strong> {t.best}</p>
+                <p className="text-base text-muted-foreground">{t.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function SmartCookingTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best companion apps</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Instant Pot app</strong> — recipes specifically for the cooker.</li>
               <li><strong>MEATER app</strong> — auto-cooking modes and notifications.</li>
               <li><strong>Joule (Anova)</strong> — sous-vide guides for any cut of meat.</li>
@@ -56,7 +56,7 @@ export default function SmartCookingTools() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What I\'d skip</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Smart fridges with screens — gimmick. Buy a normal good fridge instead.</li>
               <li>Coffee makers with apps — still need to fill water and beans manually.</li>
               <li>Smart toaster ovens — no real benefit over regular ones.</li>
@@ -68,7 +68,7 @@ export default function SmartCookingTools() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">If you cook 3+ times a week and don\'t have one — get an Instant Pot OR an air fryer. Pick whichever fits your usual meals more. Both are usually $80-100, used widely, with thousands of free recipes online.</p>
+            <p className="text-base text-muted-foreground">If you cook 3+ times a week and don\'t have one — get an Instant Pot OR an air fryer. Pick whichever fits your usual meals more. Both are usually $80-100, used widely, with thousands of free recipes online.</p>
           </CardContent>
         </Card>
       </main>

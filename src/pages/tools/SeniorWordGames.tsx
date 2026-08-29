@@ -22,7 +22,7 @@ export default function SeniorWordGames() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Boggle</h2><p>$3 app. Find words in letter grid. Quick rounds.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Newspaper crosswords</h2><p>FREE in newspaper. Track of weekly progress.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Studies show</h2><p>Word games linked to slower cognitive aging. Real measurable benefit.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Daily crossword + Wordle = best 15 min senior brain workout.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Daily crossword + Wordle = best 15 min senior brain workout.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

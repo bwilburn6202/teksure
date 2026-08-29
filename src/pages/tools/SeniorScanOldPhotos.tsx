@@ -19,10 +19,10 @@ export default function SeniorScanOldPhotos() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Google PhotoScan</h2><p>FREE. Removes glare. Auto-crops. Best free option.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Photomyne</h2><p>Free trial. Scans 4 photos at once from a single album page.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Notes</h2><p>iPhone built in. Open Notes → camera icon → Scan Documents. Works for photos too.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tips for quality</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Bright, even light</li><li>Place photo on dark surface</li><li>Hold phone steady, parallel</li><li>No flash</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tips for quality</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Bright, even light</li><li>Place photo on dark surface</li><li>Hold phone steady, parallel</li><li>No flash</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Send to a service</h2><p>If 1000+ photos: Legacybox, ScanMyPhotos. They scan everything for $300-$1,000.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tag faces and dates</h2><p>Once digital, label who&apos;s in each photo. Future generations will thank you.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Scan 5 a day during morning coffee. A box is done in a month.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Scan 5 a day during morning coffee. A box is done in a month.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

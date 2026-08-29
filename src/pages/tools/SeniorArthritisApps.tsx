@@ -22,7 +22,7 @@ export default function SeniorArthritisApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Heat/cold therapy</h2><p>Free. Heat for stiff joints. Cold for swelling.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Range of motion</h2><p>Daily 5-min stretches keep joints mobile. Use it or lose it.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">When weather hurts</h2><p>Apps track if pain correlates with barometric pressure changes.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Movement reduces arthritis pain. Avoid all-day sitting.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Movement reduces arthritis pain. Avoid all-day sitting.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -19,7 +19,7 @@ export default function AccessibleTravelGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Airlines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Federal law — wheelchair assistance MUST be free.</li>
               <li>Request via airline app/site 24+ hours before flight.</li>
               <li>Tip helper $5-10 (not required but appreciated).</li>
@@ -34,7 +34,7 @@ export default function AccessibleTravelGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hotels</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"ADA accessible rooms" — wider doorways, roll-in showers, grab bars.</li>
               <li>Always book directly so you can request specific accessibility features.</li>
               <li>Confirm 24h before arrival — staff sometimes give away accessible rooms.</li>
@@ -48,7 +48,7 @@ export default function AccessibleTravelGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cruises</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most major lines have ADA-accessible cabins.</li>
               <li>Book early — small number per ship.</li>
               <li>Disney + Royal Caribbean rated highest for accessibility.</li>
@@ -62,7 +62,7 @@ export default function AccessibleTravelGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tools + apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>WheelMate</strong> — accessible toilets/parking worldwide. Free.</li>
               <li><strong>AccessNow</strong> — crowdsourced accessible places.</li>
               <li><strong>AbleScout</strong> — accessible travel community.</li>
@@ -76,7 +76,7 @@ export default function AccessibleTravelGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Equipment rental</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Scootaround</strong> — rent scooters/wheelchairs at most cruise ports + cities.</li>
               <li><strong>Cloud of Goods</strong> — also walkers, knee walkers, oxygen.</li>
               <li><strong>Special Needs at Sea</strong> — for cruise ships specifically.</li>
@@ -89,7 +89,7 @@ export default function AccessibleTravelGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Travel agents who specialize</h3>
-            <p className="text-sm text-muted-foreground">For first complex trip — hire travel agent specializing in accessible travel. They handle ALL accessibility logistics. Search "travel agent for [your need] travel". Cost ~$100-300, saves headaches.</p>
+            <p className="text-base text-muted-foreground">For first complex trip — hire travel agent specializing in accessible travel. They handle ALL accessibility logistics. Search "travel agent for [your need] travel". Cost ~$100-300, saves headaches.</p>
           </CardContent>
         </Card>
       </main>

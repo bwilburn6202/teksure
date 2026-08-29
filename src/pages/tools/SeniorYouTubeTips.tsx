@@ -21,8 +21,8 @@ export default function SeniorYouTubeTips() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Captions</h2><p>Tap CC button. Even auto-captions work on most videos.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Slow speed</h2><p>Tap gear icon → Playback speed → 0.75x. Helpful for fast talkers.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Subscribe to favorites</h2><p>Hit the red Subscribe button. Notifications when new videos post.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Apple Support official channel</li><li>AARP</li><li>How-To Geek</li><li>Senior Planet</li></ul></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Add &ldquo;for seniors&rdquo; to any search to find clearer, slower walkthroughs.</p></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for seniors</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Apple Support official channel</li><li>AARP</li><li>How-To Geek</li><li>Senior Planet</li></ul></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Add &ldquo;for seniors&rdquo; to any search to find clearer, slower walkthroughs.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

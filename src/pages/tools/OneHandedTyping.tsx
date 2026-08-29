@@ -19,7 +19,7 @@ export default function OneHandedTyping() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone — One-Handed Keyboard</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open any keyboard.</li>
               <li>Press and hold the globe icon  (bottom-left).</li>
               <li>Pick "Right" or "Left" handed keyboard.</li>
@@ -32,8 +32,8 @@ export default function OneHandedTyping() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone — Reachability</h2>
-            <p className="text-sm">Brings the top of the screen down to your thumb&apos;s reach:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm mt-2">
+            <p className="text-base">Brings the top of the screen down to your thumb&apos;s reach:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base mt-2">
               <li>Settings → Accessibility → Touch → "Reachability" ON.</li>
               <li>Swipe DOWN on the bottom edge of screen.</li>
               <li>Top half of screen drops to thumb level.</li>
@@ -45,7 +45,7 @@ export default function OneHandedTyping() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice typing (saves your hand)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tap microphone icon on keyboard. Speak. Phone types.</li>
               <li><strong>iPhone</strong> — built into keyboard. Says "comma", "period", "new paragraph" for punctuation.</li>
               <li><strong>Android</strong> — Gboard mic icon. Same idea.</li>
@@ -58,7 +58,7 @@ export default function OneHandedTyping() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bigger touch targets</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iPhone</strong> — Settings → Accessibility → Display &amp; Text Size → "Larger Text". Also "Bold Text".</li>
               <li><strong>iPhone Display Zoom</strong> — Settings → Display &amp; Brightness → Display Zoom → "Larger Text".</li>
               <li><strong>Android</strong> — Settings → Display → Font Size + Display Size sliders.</li>
@@ -70,7 +70,7 @@ export default function OneHandedTyping() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Useful accessories</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>PopSocket</strong> ($15) — grip on back of phone. One-handed grip much steadier.</li>
               <li><strong>Phone tripod</strong> ($20) — for reading recipes/articles hands-free.</li>
               <li><strong>Stylus</strong> ($10-30) — easier to tap than fingertip if grip is weak.</li>
@@ -83,7 +83,7 @@ export default function OneHandedTyping() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Voice control everything</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Siri / Google Assistant / Alexa</strong> — calls, messages, reminders without touching phone.</li>
               <li><strong>iPhone Voice Control</strong> (Settings → Accessibility) — control entire phone by voice.</li>
               <li><strong>Android Voice Access</strong> — same on Android.</li>
@@ -95,7 +95,7 @@ export default function OneHandedTyping() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free occupational therapy</h3>
-            <p className="text-sm text-muted-foreground">Medicare covers occupational therapy for hand recovery. OTs are experts in adaptive tech — they&apos;ll show you tricks specific to your situation. Ask doctor for referral. Many strokes/injuries qualify automatically.</p>
+            <p className="text-base text-muted-foreground">Medicare covers occupational therapy for hand recovery. OTs are experts in adaptive tech — they&apos;ll show you tricks specific to your situation. Ask doctor for referral. Many strokes/injuries qualify automatically.</p>
           </CardContent>
         </Card>
       </main>

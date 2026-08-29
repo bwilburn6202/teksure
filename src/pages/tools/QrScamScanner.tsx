@@ -71,14 +71,14 @@ export default function QrScamScanner() {
           <>
             <Card className={`mb-4 border-2 ${verdict.level === 'danger' ? 'border-destructive' : verdict.level === 'warn' ? 'border-yellow-500' : 'border-green-600'}`}>
               <CardContent className="pt-6 text-center">
-                {verdict.level === 'danger' ? <AlertTriangle className="w-12 h-12 text-destructive mx-auto mb-2" /> : verdict.level === 'warn' ? <AlertTriangle className="w-12 h-12 text-yellow-600 mx-auto mb-2" /> : <ShieldCheck className="w-12 h-12 text-green-600 mx-auto mb-2" />}
+                {verdict.level === 'danger' ? <AlertTriangle className="w-12 h-12 text-destructive mx-auto mb-2" /> : verdict.level === 'warn' ? <AlertTriangle className="w-12 h-12 text-warn-foreground mx-auto mb-2" /> : <ShieldCheck className="w-12 h-12 text-success-foreground mx-auto mb-2" />}
                 <h2 className="text-2xl font-bold">{verdict.title}</h2>
               </CardContent>
             </Card>
             <Card className="mb-4">
               <CardContent className="pt-6">
                 <h3 className="font-bold mb-2">What to do</h3>
-                <ul className="space-y-2 list-disc pl-5 text-sm">{verdict.advice.map((a, i) => <li key={i}>{a}</li>)}</ul>
+                <ul className="space-y-2 list-disc pl-5 text-base">{verdict.advice.map((a, i) => <li key={i}>{a}</li>)}</ul>
               </CardContent>
             </Card>
             <Button onClick={() => setPath(['start'])} variant="outline" className="w-full"><RotateCcw className="w-4 h-4 mr-2" />Check another QR code</Button>

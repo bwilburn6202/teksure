@@ -19,9 +19,9 @@ export default function AdvanceDirectiveCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What an advance directive is</h2>
-            <p className="text-sm">A legal document where you write down your medical wishes IF you can\'t speak for yourself someday. Without it, doctors have to guess and family argues.</p>
-            <p className="text-sm mt-2">Two main parts:</p>
-            <ul className="text-sm list-disc pl-5 mt-1">
+            <p className="text-base">A legal document where you write down your medical wishes IF you can\'t speak for yourself someday. Without it, doctors have to guess and family argues.</p>
+            <p className="text-base mt-2">Two main parts:</p>
+            <ul className="text-base list-disc pl-5 mt-1">
               <li><strong>Living will</strong> — your wishes about end-of-life treatments.</li>
               <li><strong>Healthcare proxy / Healthcare Power of Attorney</strong> — names ONE person who decides if you can\'t.</li>
             </ul>
@@ -31,7 +31,7 @@ export default function AdvanceDirectiveCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best free options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Five Wishes (fivewishes.org)</strong> — most loved by patients and families. $5 for the booklet. State-recognized in most US states. Covers physical, emotional, spiritual.</li>
               <li><strong>Your state health department</strong> — every state has a free standard advance directive form. Search "[your state] advance directive form".</li>
               <li><strong>AARP\'s free template</strong> — aarp.org/caregiving/financial-legal/. State-specific.</li>
@@ -43,7 +43,7 @@ export default function AdvanceDirectiveCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Decisions to think through</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>CPR</strong> — if your heart stops, do you want resuscitation?</li>
               <li><strong>Mechanical ventilation</strong> — breathing machine?</li>
               <li><strong>Tube feeding</strong> — if you can\'t swallow?</li>
@@ -53,29 +53,29 @@ export default function AdvanceDirectiveCoach() {
               <li><strong>Where you want to die</strong> — home, hospice, hospital?</li>
               <li><strong>Organ donation</strong>?</li>
             </ul>
-            <p className="text-sm mt-3">No one answer is "right". The point is YOUR answer, written down.</p>
+            <p className="text-base mt-3">No one answer is "right". The point is YOUR answer, written down.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Choosing your healthcare proxy</h2>
-            <p className="text-sm mb-2">Pick ONE person who can:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">Pick ONE person who can:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Be calm in a crisis.</li>
               <li>Honor your wishes (not impose theirs).</li>
               <li>Live close enough to come quickly.</li>
               <li>Have time to be at the hospital if needed.</li>
               <li>Communicate clearly with doctors.</li>
             </ul>
-            <p className="text-sm mt-2">Often a spouse, then an adult child as backup. Tell that person they\'re named — and have a real conversation about your wishes.</p>
+            <p className="text-base mt-2">Often a spouse, then an adult child as backup. Tell that person they\'re named — and have a real conversation about your wishes.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">After you sign it</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Original kept in a safe but accessible place (not a safety deposit box — too slow).</li>
               <li>Give copies to: your healthcare proxy, your spouse, your primary doctor, the hospital you usually use.</li>
               <li>Keep a card in your wallet stating "I have an advance directive — see [proxy name and phone]".</li>
@@ -88,7 +88,7 @@ export default function AdvanceDirectiveCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Have "the conversation"</h3>
-            <p className="text-sm text-muted-foreground">The free <strong>Conversation Project (theconversationproject.org)</strong> has gentle starter conversations for families. National Healthcare Decisions Day (April 16) is a good prompt to do this together.</p>
+            <p className="text-base text-muted-foreground">The free <strong>Conversation Project (theconversationproject.org)</strong> has gentle starter conversations for families. National Healthcare Decisions Day (April 16) is a good prompt to do this together.</p>
           </CardContent>
         </Card>
       </main>

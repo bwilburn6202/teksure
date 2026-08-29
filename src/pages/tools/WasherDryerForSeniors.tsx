@@ -19,7 +19,7 @@ export default function WasherDryerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Front-load vs top-load</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Front-load</strong> — gentler on clothes, more efficient.</li>
               <li><strong>Top-load</strong> — easier loading (no bending).</li>
               <li><strong>Pedestal raises front-loaders</strong> — best for seniors.</li>
@@ -33,7 +33,7 @@ export default function WasherDryerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Big easy-to-press buttons (NOT touchscreen).</li>
               <li>Top dial controls (no kneeling).</li>
               <li>Auto-detect water level.</li>
@@ -49,7 +49,7 @@ export default function WasherDryerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best brands 2026</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>LG</strong> — popular, reliable.</li>
               <li><strong>Speed Queen</strong> — built like a tank, lasts 25 yrs.</li>
               <li><strong>Maytag</strong> — solid + American.</li>
@@ -63,7 +63,7 @@ export default function WasherDryerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Compact / portable</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apartment seniors — compact stackable.</li>
               <li><strong>Bosch 500 Series</strong> — quietest compact.</li>
               <li>Portable washers ($300) — wheel to kitchen sink.</li>
@@ -76,7 +76,7 @@ export default function WasherDryerForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save on laundry</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cold water — most clothes don&apos;t need hot.</li>
               <li>Energy-efficient cycle saves 30%.</li>
               <li>Clean lint trap every load.</li>
@@ -90,7 +90,7 @@ export default function WasherDryerForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t lift heavy</h3>
-            <p className="text-sm text-muted-foreground">Wet laundry HEAVY for seniors. Tips: wash smaller loads, use rolling laundry cart, ask family to help. Consider laundry service ($1-2/lb) — many seniors find this huge relief. Outsource if hurting your back.</p>
+            <p className="text-base text-muted-foreground">Wet laundry HEAVY for seniors. Tips: wash smaller loads, use rolling laundry cart, ask family to help. Consider laundry service ($1-2/lb) — many seniors find this huge relief. Outsource if hurting your back.</p>
           </CardContent>
         </Card>
       </main>

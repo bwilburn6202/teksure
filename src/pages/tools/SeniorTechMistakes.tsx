@@ -124,7 +124,7 @@ export default function SeniorTechMistakes() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <AlertTriangle className="h-8 w-8 text-amber-600" />
+                <AlertTriangle className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">10 Common Tech Mistakes Seniors Make</h1>
@@ -143,19 +143,19 @@ export default function SeniorTechMistakes() {
                 <CardContent className="p-5">
                   <div className="flex items-start justify-between gap-3 mb-2 flex-wrap">
                     <p className="font-semibold text-base">
-                      <span className="text-amber-600 mr-2">#{m.number}</span>{m.title}
+                      <span className="text-warn-foreground mr-2">#{m.number}</span>{m.title}
                     </p>
                     <Badge variant="outline">{m.category}</Badge>
                   </div>
 
                   <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-3 mb-1">What people do</p>
-                  <p className="text-sm">{m.whatPeopleDo}</p>
+                  <p className="text-base">{m.whatPeopleDo}</p>
 
-                  <p className="text-xs font-semibold text-red-700 dark:text-red-300 uppercase tracking-wider mt-3 mb-1">Why it is bad</p>
-                  <p className="text-sm p-2 rounded bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800">{m.whyItIsBad}</p>
+                  <p className="text-xs font-semibold text-danger-foreground uppercase tracking-wider mt-3 mb-1">Why it is bad</p>
+                  <p className="text-base p-2 rounded bg-danger border border-danger-foreground/25 ">{m.whyItIsBad}</p>
 
-                  <p className="text-xs font-semibold text-green-700 dark:text-green-300 uppercase tracking-wider mt-3 mb-1">The fix</p>
-                  <p className="text-sm p-2 rounded bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800">{m.theFix}</p>
+                  <p className="text-xs font-semibold text-success-foreground uppercase tracking-wider mt-3 mb-1">The fix</p>
+                  <p className="text-base p-2 rounded bg-success border border-success-foreground/25 ">{m.theFix}</p>
 
                   {m.fixLink && (
                     <Link to={m.fixLink.to} className="inline-flex items-center gap-1 text-sm text-primary hover:underline mt-3">
@@ -171,21 +171,21 @@ export default function SeniorTechMistakes() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/password-health" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Password Health</p>
-                <p className="text-xs text-muted-foreground mt-0.5">See where you are exposed.</p>
+                <p className="font-medium text-base">Password Health</p>
+                <p className="text-sm text-muted-foreground mt-0.5">See where you are exposed.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Paste a text and check it.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Paste a text and check it.</p>
               </Link>
               <Link to="/tools/family-tech-roundtable" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Family Tech Roundtable</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Have the conversation.</p>
+                <p className="font-medium text-base">Family Tech Roundtable</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Have the conversation.</p>
               </Link>
             </div>
           </div>
 
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: pick one mistake per week and fix that one. Ten weeks from now you will be ahead of most people online.
           </p>
         </div>

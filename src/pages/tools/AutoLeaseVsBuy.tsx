@@ -19,7 +19,7 @@ export default function AutoLeaseVsBuy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lease: pros</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lower monthly payment.</li>
               <li>New car every 3 years.</li>
               <li>No major repairs (under warranty).</li>
@@ -33,7 +33,7 @@ export default function AutoLeaseVsBuy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lease: cons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mileage limits — 10-12K/yr typical.</li>
               <li>Wear-and-tear charges.</li>
               <li>Forever payments.</li>
@@ -47,7 +47,7 @@ export default function AutoLeaseVsBuy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Buy: pros</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Own the car after loan paid.</li>
               <li>No mileage limits.</li>
               <li>Modify if want.</li>
@@ -61,7 +61,7 @@ export default function AutoLeaseVsBuy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Buy: cons</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Higher monthly payment.</li>
               <li>Major repairs after warranty.</li>
               <li>Older car gradually.</li>
@@ -75,7 +75,7 @@ export default function AutoLeaseVsBuy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: lease IF</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Drive less than 12K miles/year.</li>
               <li>Want latest safety features.</li>
               <li>Don&apos;t like maintenance.</li>
@@ -89,7 +89,7 @@ export default function AutoLeaseVsBuy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior pick: buy IF</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Long road trips frequent.</li>
               <li>Want to keep car forever.</li>
               <li>Have cash for purchase.</li>
@@ -103,7 +103,7 @@ export default function AutoLeaseVsBuy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cash vs financing</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cash — no interest, simple.</li>
               <li>Financing — sometimes 0% promotions.</li>
               <li>Don&apos;t deplete emergency fund.</li>
@@ -117,7 +117,7 @@ export default function AutoLeaseVsBuy() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Calculator</h3>
-            <p className="text-sm text-muted-foreground">Edmunds.com lease-vs-buy calculator. Plug in numbers. Honest comparison. Generally — buy is cheaper if you keep car 7+ years. Lease cheaper if you trade every 3 years. Most seniors keep cars long = buy makes sense. Talk to financial advisor — they figure your specific situation.</p>
+            <p className="text-base text-muted-foreground">Edmunds.com lease-vs-buy calculator. Plug in numbers. Honest comparison. Generally — buy is cheaper if you keep car 7+ years. Lease cheaper if you trade every 3 years. Most seniors keep cars long = buy makes sense. Talk to financial advisor — they figure your specific situation.</p>
           </CardContent>
         </Card>
       </main>

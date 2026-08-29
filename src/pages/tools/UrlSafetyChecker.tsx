@@ -150,32 +150,32 @@ function analyzeUrl(raw: string): { results: CheckResult[]; verdict: Severity; s
 function VerdictBadge({ verdict }: { verdict: Severity }) {
   if (verdict === 'safe') {
     return (
-      <div className="flex items-center gap-3 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800">
-        <ShieldCheck className="h-6 w-6 text-emerald-600 flex-shrink-0" aria-hidden="true" />
+      <div className="flex items-center gap-3 p-4 rounded-xl bg-success border border-success-foreground/25 ">
+        <ShieldCheck className="h-6 w-6 text-success-foreground flex-shrink-0" aria-hidden="true" />
         <div>
-          <p className="font-semibold text-emerald-900 dark:text-emerald-100">Looks OK</p>
-          <p className="text-sm text-emerald-800/80 dark:text-emerald-200/80">No common red flags found, but stay alert and read below.</p>
+          <p className="font-semibold text-success-foreground ">Looks OK</p>
+          <p className="text-base text-emerald-800/80 dark:text-emerald-200/80">No common red flags found, but stay alert and read below.</p>
         </div>
       </div>
     );
   }
   if (verdict === 'caution') {
     return (
-      <div className="flex items-center gap-3 p-4 rounded-xl bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800">
-        <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0" aria-hidden="true" />
+      <div className="flex items-center gap-3 p-4 rounded-xl bg-warn border border-warn-foreground/25 ">
+        <AlertTriangle className="h-6 w-6 text-warn-foreground flex-shrink-0" aria-hidden="true" />
         <div>
-          <p className="font-semibold text-amber-900 dark:text-amber-100">Proceed with caution</p>
-          <p className="text-sm text-amber-800/80 dark:text-amber-200/80">Some warning signs detected. Review the checks below before clicking.</p>
+          <p className="font-semibold text-warn-foreground ">Proceed with caution</p>
+          <p className="text-base text-amber-800/80 dark:text-amber-200/80">Some warning signs detected. Review the checks below before clicking.</p>
         </div>
       </div>
     );
   }
   return (
-    <div className="flex items-center gap-3 p-4 rounded-xl bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800">
-      <ShieldAlert className="h-6 w-6 text-red-600 flex-shrink-0" aria-hidden="true" />
+    <div className="flex items-center gap-3 p-4 rounded-xl bg-danger border border-danger-foreground/25 ">
+      <ShieldAlert className="h-6 w-6 text-danger-foreground flex-shrink-0" aria-hidden="true" />
       <div>
-        <p className="font-semibold text-red-900 dark:text-red-100">Red flags detected</p>
-        <p className="text-sm text-red-800/80 dark:text-red-200/80">Multiple warning signs. We recommend you do not click this link.</p>
+        <p className="font-semibold text-danger-foreground ">Red flags detected</p>
+        <p className="text-base text-red-800/80 dark:text-red-200/80">Multiple warning signs. We recommend you do not click this link.</p>
       </div>
     </div>
   );
@@ -207,8 +207,8 @@ export default function UrlSafetyChecker() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-blue-50 dark:bg-blue-950/30 flex items-center justify-center flex-shrink-0">
-                <Link2 className="h-6 w-6 text-blue-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-info flex items-center justify-center flex-shrink-0">
+                <Link2 className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -238,7 +238,7 @@ export default function UrlSafetyChecker() {
                   <Search className="h-4 w-4 mr-2" aria-hidden="true" /> Analyze
                 </Button>
               </div>
-              <p className="text-xs text-muted-foreground">Tip: long-press a link on mobile or hover on desktop to copy it without clicking.</p>
+              <p className="text-sm text-muted-foreground">Tip: long-press a link on mobile or hover on desktop to copy it without clicking.</p>
             </CardContent>
           </Card>
 
@@ -253,8 +253,8 @@ export default function UrlSafetyChecker() {
                     onClick={() => run(ex.url)}
                     className="text-left p-3 rounded-lg border hover:border-primary hover:bg-muted/50 transition-colors"
                   >
-                    <p className="font-medium text-sm">{ex.label}</p>
-                    <p className="text-xs text-muted-foreground font-mono break-all mt-1">{ex.url}</p>
+                    <p className="font-medium text-base">{ex.label}</p>
+                    <p className="text-sm text-muted-foreground font-mono break-all mt-1">{ex.url}</p>
                   </button>
                 ))}
               </div>
@@ -272,16 +272,16 @@ export default function UrlSafetyChecker() {
                     <div key={i} className="flex gap-3 p-3 rounded-lg border">
                       <div className="flex-shrink-0 mt-0.5">
                         {r.passed ? (
-                          <Check className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+                          <Check className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                         ) : r.weight === 2 ? (
-                          <X className="h-5 w-5 text-red-600" aria-hidden="true" />
+                          <X className="h-5 w-5 text-danger-foreground" aria-hidden="true" />
                         ) : (
-                          <AlertTriangle className="h-5 w-5 text-amber-600" aria-hidden="true" />
+                          <AlertTriangle className="h-5 w-5 text-warn-foreground" aria-hidden="true" />
                         )}
                       </div>
                       <div>
-                        <p className="font-medium text-sm">{r.label}</p>
-                        <p className="text-sm text-muted-foreground">{r.detail}</p>
+                        <p className="font-medium text-base">{r.label}</p>
+                        <p className="text-base text-muted-foreground">{r.detail}</p>
                       </div>
                     </div>
                   ))}
@@ -291,13 +291,13 @@ export default function UrlSafetyChecker() {
           )}
 
           {/* Disclaimer */}
-          <Card className="border-amber-200 dark:border-amber-800/50">
+          <Card className="border-warn-foreground/25 ">
             <CardContent className="pt-6">
               <div className="flex gap-3">
-                <AlertTriangle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <AlertTriangle className="h-5 w-5 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
-                  <p className="font-semibold text-sm mb-1">This is automated analysis only</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="font-semibold text-base mb-1">This is automated analysis only</p>
+                  <p className="text-base text-muted-foreground">
                     It cannot detect every threat. When in doubt, do not click. Verify by typing the company's official URL directly into your browser.
                   </p>
                 </div>
@@ -310,33 +310,33 @@ export default function UrlSafetyChecker() {
             <Card>
               <CardHeader><CardTitle className="text-base">What this tool checks</CardTitle></CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" /> HTTPS encryption</li>
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" /> Suspicious top-level domains</li>
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" /> Known URL shorteners</li>
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" /> Excessive subdomains</li>
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" /> Brand-name misspellings (amaz0n, paypa1)</li>
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" /> Lookalike characters from other alphabets</li>
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" /> Excessively long domains</li>
-                  <li className="flex gap-2"><Check className="h-4 w-4 text-emerald-600 flex-shrink-0 mt-0.5" /> Numbers replacing letters</li>
+                <ul className="space-y-2 text-base text-muted-foreground">
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" /> HTTPS encryption</li>
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" /> Suspicious top-level domains</li>
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" /> Known URL shorteners</li>
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" /> Excessive subdomains</li>
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" /> Brand-name misspellings (amaz0n, paypa1)</li>
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" /> Lookalike characters from other alphabets</li>
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" /> Excessively long domains</li>
+                  <li className="flex gap-2"><Check className="h-4 w-4 text-success-foreground flex-shrink-0 mt-0.5" /> Numbers replacing letters</li>
                 </ul>
               </CardContent>
             </Card>
             <Card>
               <CardHeader><CardTitle className="text-base">What it cannot detect</CardTitle></CardHeader>
               <CardContent>
-                <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li className="flex gap-2"><X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" /> Phishing that uses real, hijacked domains</li>
-                  <li className="flex gap-2"><X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" /> Malware downloads</li>
-                  <li className="flex gap-2"><X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" /> Browser exploits or drive-by installs</li>
-                  <li className="flex gap-2"><X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" /> Where a shortened link actually leads</li>
-                  <li className="flex gap-2"><X className="h-4 w-4 text-red-600 flex-shrink-0 mt-0.5" /> Whether the page is a known scam site</li>
+                <ul className="space-y-2 text-base text-muted-foreground">
+                  <li className="flex gap-2"><X className="h-4 w-4 text-danger-foreground flex-shrink-0 mt-0.5" /> Phishing that uses real, hijacked domains</li>
+                  <li className="flex gap-2"><X className="h-4 w-4 text-danger-foreground flex-shrink-0 mt-0.5" /> Malware downloads</li>
+                  <li className="flex gap-2"><X className="h-4 w-4 text-danger-foreground flex-shrink-0 mt-0.5" /> Browser exploits or drive-by installs</li>
+                  <li className="flex gap-2"><X className="h-4 w-4 text-danger-foreground flex-shrink-0 mt-0.5" /> Where a shortened link actually leads</li>
+                  <li className="flex gap-2"><X className="h-4 w-4 text-danger-foreground flex-shrink-0 mt-0.5" /> Whether the page is a known scam site</li>
                 </ul>
                 <a
                   href="https://transparencyreport.google.com/safe-browsing/search"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-1 mt-4 text-sm text-blue-600 hover:underline"
+                  className="inline-flex items-center gap-1 mt-4 text-sm text-info-foreground hover:underline"
                 >
                   Check Google Safe Browsing <ExternalLink className="h-3 w-3" aria-hidden="true" />
                 </a>

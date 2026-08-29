@@ -19,19 +19,19 @@ export default function PensionLumpSumDecision() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">The decision</h2>
-            <p className="text-sm">Many pensions offer two options at retirement:</p>
-            <ul className="text-sm list-disc pl-5 mt-2">
+            <p className="text-base">Many pensions offer two options at retirement:</p>
+            <ul className="text-base list-disc pl-5 mt-2">
               <li><strong>Monthly check for life</strong> ("annuity") — guaranteed income, no investment risk.</li>
               <li><strong>One-time lump sum</strong> — they give you all the money now; you invest it yourself.</li>
             </ul>
-            <p className="text-sm mt-2">It\'s usually irrevocable. Pick wrong, you can\'t change it.</p>
+            <p className="text-base mt-2">It\'s usually irrevocable. Pick wrong, you can\'t change it.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When MONTHLY is usually better</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Long life expectancy / family longevity.</li>
               <li>Spousal benefit (50% to surviving spouse) is included.</li>
               <li>You\'re not confident in managing investments yourself.</li>
@@ -45,7 +45,7 @@ export default function PensionLumpSumDecision() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When LUMP SUM is usually better</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Short life expectancy / family history of early death.</li>
               <li>The pension fund is troubled (underfunded or company struggling).</li>
               <li>You want to leave money to heirs.</li>
@@ -59,30 +59,30 @@ export default function PensionLumpSumDecision() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">The math</h2>
-            <p className="text-sm mb-2">Compare: monthly amount × 12 ÷ lump sum = the "implied yield".</p>
-            <p className="text-sm mb-2">Example: $2,000/month or $400,000 lump? = $24,000/year ÷ $400,000 = 6%.</p>
-            <p className="text-sm">If you can confidently earn 6%+ on the lump sum, it\'s competitive. If not, the monthly check is hard to beat — especially with no market risk.</p>
-            <p className="text-sm mt-2">Add survivor benefits to the equation. A pension with 100% survivor benefit is worth more than a single-life pension.</p>
+            <p className="text-base mb-2">Compare: monthly amount × 12 ÷ lump sum = the "implied yield".</p>
+            <p className="text-base mb-2">Example: $2,000/month or $400,000 lump? = $24,000/year ÷ $400,000 = 6%.</p>
+            <p className="text-base">If you can confidently earn 6%+ on the lump sum, it\'s competitive. If not, the monthly check is hard to beat — especially with no market risk.</p>
+            <p className="text-base mt-2">Add survivor benefits to the equation. A pension with 100% survivor benefit is worth more than a single-life pension.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Check pension safety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Federal pensions (military, federal employee) — extremely safe.</li>
               <li>State/municipal pensions — varies. Some states (IL, NJ, KY) are underfunded.</li>
               <li>Private corporate pensions — protected up to ~$72,000/year by PBGC (federal insurance).</li>
               <li>Multi-employer (union) pensions — some are at risk; ARP Act 2021 helped.</li>
             </ul>
-            <p className="text-sm mt-2">If your pension is at risk, taking the lump sum reduces uncertainty.</p>
+            <p className="text-base mt-2">If your pension is at risk, taking the lump sum reduces uncertainty.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get help — this is too big to DIY</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fee-only fiduciary advisor</strong> (NAPFA.org, $300-1500 one-time) — runs the math for YOUR specific case.</li>
               <li><strong>Vanguard Personal Advisor</strong> — at 0.30%/year for retirement accounts.</li>
               <li><strong>Don\'t use the broker who calls offering to "roll over your pension"</strong> — they often push expensive annuities or front-loaded mutual funds.</li>
@@ -93,7 +93,7 @@ export default function PensionLumpSumDecision() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When in doubt, take the monthly check</h3>
-            <p className="text-sm text-muted-foreground">For most retirees, the monthly pension is the right answer. It\'s essentially a free annuity — you don\'t pay sales commission. It hedges against living too long. The lump sum sounds appealing but loses to monthly more often than not.</p>
+            <p className="text-base text-muted-foreground">For most retirees, the monthly pension is the right answer. It\'s essentially a free annuity — you don\'t pay sales commission. It hedges against living too long. The lump sum sounds appealing but loses to monthly more often than not.</p>
           </CardContent>
         </Card>
       </main>

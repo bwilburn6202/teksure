@@ -22,7 +22,7 @@ export default function SeniorHolidayDecor() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pre-lit trees</h2><p>$200-$600. Already strung. No wrestling lights anymore.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Outdoor laser</h2><p>$30-$80. Project lights on house. No climbing ladders.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Schedule lights</h2><p>Smart plug schedules — lights on at 5 PM, off at midnight automatically.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Smart plug + Christmas tree = best $15 senior holiday upgrade.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Smart plug + Christmas tree = best $15 senior holiday upgrade.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorAndroidEasyMode() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Live Caption</h2><p>Auto-captions any audio or call. Free on Pixel and Samsung.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sound Amplifier</h2><p>Free Google app. Earbuds turn phone into hearing assist in noisy places.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Personal Safety app</h2><p>Built into Pixel. Send emergency info to contacts with one button.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Verizon and AT&amp;T offer free in-store sessions to set this up.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Verizon and AT&amp;T offer free in-store sessions to set this up.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -30,10 +30,10 @@ export default function AccessibleTravelApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function AccessibleTravelApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Accessible cruises</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Modern cruise ships highly accessible.</li>
               <li>Accessible cabins fill 1-2 yrs ahead — book early.</li>
               <li>Royal Caribbean, Princess, Norwegian = best accessible.</li>
@@ -56,7 +56,7 @@ export default function AccessibleTravelApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Air travel tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wheelchair assistance FREE — see /tools/airport-wheelchair-help.</li>
               <li>TSA Cares — call 855-787-2227 ahead.</li>
               <li>Pre-board for extra time.</li>
@@ -70,7 +70,7 @@ export default function AccessibleTravelApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Accessible destinations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Disney + Universal</strong> — extremely accessible.</li>
               <li><strong>Las Vegas</strong> — flat, accessible everywhere.</li>
               <li><strong>Cruise ships</strong> — best accessibility option.</li>
@@ -84,7 +84,7 @@ export default function AccessibleTravelApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free National Park Pass</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Access Pass</strong> — FREE lifetime for permanently disabled US residents.</li>
               <li>Free entry to 2,000+ federal sites.</li>
               <li>50% off camping.</li>
@@ -98,7 +98,7 @@ export default function AccessibleTravelApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Specialized travel agencies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Sage Traveling</strong> — accessible Europe specialist.</li>
               <li><strong>Accessible Travel Solutions</strong> — Mexico, Costa Rica.</li>
               <li><strong>Sand &amp; Surf</strong> — beach accessibility.</li>
@@ -111,7 +111,7 @@ export default function AccessibleTravelApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don&apos;t self-limit</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t assume you can&apos;t travel. Modern accessibility incredible. Many wheelchair users, scooter users, walker users travel internationally regularly. Right planning = unlimited destinations. Many find travel improves mood + cognition. Apply for accessible passes + book early.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t assume you can&apos;t travel. Modern accessibility incredible. Many wheelchair users, scooter users, walker users travel internationally regularly. Right planning = unlimited destinations. Many find travel improves mood + cognition. Apply for accessible passes + book early.</p>
           </CardContent>
         </Card>
       </main>

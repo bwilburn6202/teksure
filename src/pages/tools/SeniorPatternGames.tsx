@@ -22,7 +22,7 @@ export default function SeniorPatternGames() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Solitaire</h2><p>FREE. Klondike, FreeCell. Classic pattern game.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Connections (NYT)</h2><p>FREE. Find 4 related word groups. Pattern thinking.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real card games</h2><p>Bridge, Hearts, Spades. Multi-generation. Strong pattern training.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Different game types train different brain areas. Mix them daily.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Different game types train different brain areas. Mix them daily.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

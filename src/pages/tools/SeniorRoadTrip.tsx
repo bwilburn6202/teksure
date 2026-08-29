@@ -22,7 +22,7 @@ export default function SeniorRoadTrip() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior pace</h2><p>4-5 hours driving max per day. Stop every 2 hours. Stretch.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Audiobooks</h2><p>Libby (free with library). Hours fly. Audible $15/month.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">CarPlay/Android Auto</h2><p>Phone on dashboard. Hands-free everything. Safer.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Senior road trip = 3 weeks instead of 1. Slower pace, see more.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Senior road trip = 3 weeks instead of 1. Slower pace, see more.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -127,8 +127,8 @@ export default function VpnGuide() {
                 <CardContent className="p-5 flex items-start gap-3">
                   <AlertTriangle className="h-5 w-5 text-[hsl(var(--teksure-warning))] shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold text-sm">When do you most need a VPN?</p>
-                    <p className="text-sm text-muted-foreground mt-0.5">
+                    <p className="font-semibold text-base">When do you most need a VPN?</p>
+                    <p className="text-base text-muted-foreground mt-0.5">
                       Any time you use public Wi-Fi — coffee shops, airports, hotels, libraries. On your home Wi-Fi, it's optional but adds extra privacy.
                     </p>
                   </div>
@@ -153,9 +153,9 @@ export default function VpnGuide() {
                         <div>
                           <div className="flex items-center gap-2 mb-0.5">
                             <Icon className="h-4 w-4 text-primary" />
-                            <span className="font-semibold text-sm">{step.title}</span>
+                            <span className="font-semibold text-base">{step.title}</span>
                           </div>
-                          <p className="text-sm text-muted-foreground">{step.body}</p>
+                          <p className="text-base text-muted-foreground">{step.body}</p>
                         </div>
                       </div>
                     );
@@ -177,7 +177,7 @@ export default function VpnGuide() {
                             <span className="font-bold">{vpn.name}</span>
                             {vpn.free && <Badge variant="outline" className="bg-[hsl(var(--teksure-success)/0.1)] text-[hsl(var(--teksure-success))] border-[hsl(var(--teksure-success)/0.3)] text-xs">Free tier</Badge>}
                           </div>
-                          <p className="text-sm text-muted-foreground mb-2">{vpn.note}</p>
+                          <p className="text-base text-muted-foreground mb-2">{vpn.note}</p>
                           <div className="flex flex-wrap gap-1">
                             {vpn.platforms.map(p => (
                               <Badge key={p} variant="secondary" className="text-xs">{p}</Badge>
@@ -194,7 +194,7 @@ export default function VpnGuide() {
                   </Card>
                 ))}
               </div>
-              <p className="text-xs text-muted-foreground mt-2">
+              <p className="text-sm text-muted-foreground mt-2">
                 TekSure has no affiliate relationship with any VPN provider. These recommendations are based on independent privacy audits and community trust.
               </p>
             </div>
@@ -207,11 +207,11 @@ export default function VpnGuide() {
                   <Card key={i} className="cursor-pointer" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
                     <CardContent className="p-4">
                       <div className="flex items-center justify-between gap-3">
-                        <span className="font-medium text-sm">{faq.q}</span>
+                        <span className="font-medium text-base">{faq.q}</span>
                         {openFaq === i ? <ChevronUp className="h-4 w-4 text-muted-foreground shrink-0" /> : <ChevronDown className="h-4 w-4 text-muted-foreground shrink-0" />}
                       </div>
                       {openFaq === i && (
-                        <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                        <p className="mt-3 text-base text-muted-foreground leading-relaxed">
                           {faq.a}
                         </p>
                       )}

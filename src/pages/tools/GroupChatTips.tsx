@@ -19,7 +19,7 @@ export default function GroupChatTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Group chat platforms</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iMessage</strong> — if everyone has iPhone. Built-in.</li>
               <li><strong>WhatsApp</strong> — works iPhone + Android. Free worldwide.</li>
               <li><strong>Facebook Messenger</strong> — for Facebook families.</li>
@@ -32,7 +32,7 @@ export default function GroupChatTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Group chat etiquette</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Reply to ONE person — don&apos;t blast group.</li>
               <li>"Tapback" reactions instead of "Yes ok thanks Bill."</li>
               <li>Mute notifications during sleep.</li>
@@ -46,7 +46,7 @@ export default function GroupChatTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Manage the noise</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone: Tap chat → "Hide Alerts" — silences notifications.</li>
               <li>Android: Mute notifications per chat.</li>
               <li>Keep checking on YOUR schedule.</li>
@@ -59,7 +59,7 @@ export default function GroupChatTips() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Family chat for: photos, scheduling, daily updates.</li>
               <li>Friend chat for: planning meetups, sharing recipes.</li>
               <li>NEVER use group chat for: serious health news, big arguments, gossip.</li>
@@ -72,7 +72,7 @@ export default function GroupChatTips() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">When to leave</h3>
-            <p className="text-sm text-muted-foreground">If group chat causes more stress than joy — leave it. "Just stepping back from the chat — call me anytime!" No drama needed. Everyone has limits with notifications.</p>
+            <p className="text-base text-muted-foreground">If group chat causes more stress than joy — leave it. "Just stepping back from the chat — call me anytime!" No drama needed. Everyone has limits with notifications.</p>
           </CardContent>
         </Card>
       </main>

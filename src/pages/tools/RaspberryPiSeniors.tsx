@@ -19,7 +19,7 @@ export default function RaspberryPiSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is it?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Small computer designed for learning + tinkering.</li>
               <li>Raspberry Pi 5 = $80. Or Pi 4 = $35.</li>
               <li>Plug in keyboard, mouse, monitor — full computer.</li>
@@ -33,7 +33,7 @@ export default function RaspberryPiSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior project ideas</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pi-hole</strong> — block ads + scams network-wide.</li>
               <li><strong>Home automation hub</strong> — Home Assistant.</li>
               <li><strong>Photo frame</strong> — display family photos rotation.</li>
@@ -49,7 +49,7 @@ export default function RaspberryPiSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pi-hole = senior favorite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$60-100 setup (Pi + accessories).</li>
               <li>Blocks ads on whole home network.</li>
               <li>Blocks tracking + scam sites.</li>
@@ -64,7 +64,7 @@ export default function RaspberryPiSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Starter kit</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Pi 5 with case, charger, microSD card $130 starter kit.</li>
               <li>Buy on canakit.com or Amazon.</li>
               <li>Use existing keyboard/mouse/monitor (HDMI).</li>
@@ -78,7 +78,7 @@ export default function RaspberryPiSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Learning resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>raspberrypi.com</strong> — official tutorials.</li>
               <li><strong>YouTube</strong> — &quot;Raspberry Pi for beginners&quot; channels.</li>
               <li><strong>Reddit r/raspberry_pi</strong> — friendly community.</li>
@@ -92,7 +92,7 @@ export default function RaspberryPiSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best for which seniors</h3>
-            <p className="text-sm text-muted-foreground">Retired engineers, tech workers, teachers, hobbyists. Low entry cost, deep learning curve. Hours of tinkering. Many seniors say best retirement hobby. Connect with grandkids over shared tech project. Make something useful + meaningful.</p>
+            <p className="text-base text-muted-foreground">Retired engineers, tech workers, teachers, hobbyists. Low entry cost, deep learning curve. Hours of tinkering. Many seniors say best retirement hobby. Connect with grandkids over shared tech project. Make something useful + meaningful.</p>
           </CardContent>
         </Card>
       </main>

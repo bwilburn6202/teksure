@@ -19,7 +19,7 @@ export default function CampendiumAllStaysApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Campendium</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most comprehensive camping app.</li>
               <li>Free + Premium ($60/year).</li>
               <li>Reviews from other RVers.</li>
@@ -33,7 +33,7 @@ export default function CampendiumAllStaysApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AllStays — biggest database</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Camp + RV app — $10 one-time.</li>
               <li>Largest campground database.</li>
               <li>Walmart parking allowed locations.</li>
@@ -47,7 +47,7 @@ export default function CampendiumAllStaysApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Harvest Hosts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$99/year membership.</li>
               <li>Stay free at wineries, farms, breweries.</li>
               <li>5,000+ unique locations.</li>
@@ -61,7 +61,7 @@ export default function CampendiumAllStaysApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reserve America</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Book state park campsites.</li>
               <li>Federal recreation sites.</li>
               <li>National Forest, BLM lands.</li>
@@ -75,7 +75,7 @@ export default function CampendiumAllStaysApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">KOA + Good Sam</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>KOA — chain of campgrounds.</li>
               <li>KOA Rewards — annual fee discount.</li>
               <li>Senior-friendly amenities.</li>
@@ -89,7 +89,7 @@ export default function CampendiumAllStaysApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Boondocking apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iOverlander — free worldwide camping.</li>
               <li>FreeRoam — boondocking-focused.</li>
               <li>Public Lands app — BLM + Forest Service.</li>
@@ -103,7 +103,7 @@ export default function CampendiumAllStaysApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Campendium + Harvest Hosts combo</h3>
-            <p className="text-sm text-muted-foreground">For most senior RVers, combine Campendium (find traditional campgrounds + read reviews) with Harvest Hosts (unique stays at wineries + farms). The Harvest Hosts variety prevents burnout from cookie-cutter campgrounds. Both worth the small annual fees. Combined cost: $159/year — a small fraction of typical RV travel expenses.</p>
+            <p className="text-base text-muted-foreground">For most senior RVers, combine Campendium (find traditional campgrounds + read reviews) with Harvest Hosts (unique stays at wineries + farms). The Harvest Hosts variety prevents burnout from cookie-cutter campgrounds. Both worth the small annual fees. Combined cost: $159/year — a small fraction of typical RV travel expenses.</p>
           </CardContent>
         </Card>
       </main>

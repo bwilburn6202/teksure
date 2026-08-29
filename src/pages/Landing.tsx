@@ -150,7 +150,7 @@ export default function Landing() {
           </nav>
 
           {/* Trust line */}
-          <p className="text-sm sm:text-[15px] text-muted-foreground text-center">
+          <p className="text-base sm:text-[15px] text-muted-foreground text-center">
             <span className="font-bold text-foreground">{GUIDE_COUNT_LABEL}</span>
             <span className="ml-1.5">free guides</span>
             <span className="mx-2 opacity-50" aria-hidden="true">·</span>

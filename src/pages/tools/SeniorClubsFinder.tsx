@@ -22,7 +22,7 @@ export default function SeniorClubsFinder() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Garden clubs</h2><p>Most cities. Free or low-cost. Senior-friendly.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior centers</h2><p>FREE in most cities. Daily activities. Lunch programs.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Meetup.com</h2><p>FREE. Hundreds of senior interest groups in most cities.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Even joining one club reduces senior loneliness dramatically.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Even joining one club reduces senior loneliness dramatically.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

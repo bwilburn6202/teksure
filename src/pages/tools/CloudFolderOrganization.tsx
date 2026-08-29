@@ -19,7 +19,7 @@ export default function CloudFolderOrganization() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pick one cloud</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>iCloud</strong> — Apple users (5GB free, $1/mo for 50GB).</li>
               <li><strong>Google Drive</strong> — most universal (15GB free).</li>
               <li><strong>OneDrive</strong> — Microsoft (5GB free).</li>
@@ -33,7 +33,7 @@ export default function CloudFolderOrganization() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Top-level folder structure</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>1-Personal</strong> — IDs, taxes, finances.</li>
               <li><strong>2-Family</strong> — kids, photos, recipes.</li>
               <li><strong>3-Health</strong> — medical, prescriptions.</li>
@@ -48,7 +48,7 @@ export default function CloudFolderOrganization() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Inside each folder</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Year subfolders — &quot;2024&quot;, &quot;2025&quot;.</li>
               <li>Or category subfolders.</li>
               <li>Date filename — &quot;2025-04-15-doctor-visit.pdf&quot;.</li>
@@ -62,7 +62,7 @@ export default function CloudFolderOrganization() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photo organization</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Photos / Google Photos — use built-in albums.</li>
               <li>Don&apos;t make separate folders for photos.</li>
               <li>Albums by year + event.</li>
@@ -76,7 +76,7 @@ export default function CloudFolderOrganization() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Important files folder</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Birth certificate scan.</li>
               <li>Passport scan + expiration.</li>
               <li>Driver&apos;s license scan.</li>
@@ -93,7 +93,7 @@ export default function CloudFolderOrganization() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sharing cloud folders</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Right-click folder, then &quot;Share&quot;.</li>
               <li>Type family member&apos;s email.</li>
               <li>Select view-only or edit.</li>
@@ -108,7 +108,7 @@ export default function CloudFolderOrganization() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Yearly cleanup</h3>
-            <p className="text-sm text-muted-foreground">Once a year — January is good — review folders. Delete what no longer matters. Archive old years to subfolder &quot;Archive&quot;. Keep cloud paid storage low. 100GB usually enough for life. Empty Recycle Bin / Trash. Cloud organized = peace of mind. Family accesses if you can&apos;t.</p>
+            <p className="text-base text-muted-foreground">Once a year — January is good — review folders. Delete what no longer matters. Archive old years to subfolder &quot;Archive&quot;. Keep cloud paid storage low. 100GB usually enough for life. Empty Recycle Bin / Trash. Cloud organized = peace of mind. Family accesses if you can&apos;t.</p>
           </CardContent>
         </Card>
       </main>

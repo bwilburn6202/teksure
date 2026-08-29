@@ -19,7 +19,7 @@ export default function DrumsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why drumming?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Coordination + memory.</li>
               <li>Light cardio.</li>
               <li>Stress release.</li>
@@ -33,7 +33,7 @@ export default function DrumsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Easy options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Hand drum</strong> ($30-50) — bongos, djembe.</li>
               <li><strong>Cajón box</strong> ($75-200) — sit on it.</li>
               <li><strong>Practice pad</strong> ($30) — quiet.</li>
@@ -47,7 +47,7 @@ export default function DrumsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drum circles</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most cities have drum circles.</li>
               <li>Free, beginner-welcome.</li>
               <li>Senior centers often host.</li>
@@ -61,7 +61,7 @@ export default function DrumsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Learn online</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Drumeo</strong> — best paid online ($30/mo).</li>
               <li><strong>Stephen Taylor</strong> — YouTube.</li>
               <li><strong>Mike Johnston</strong> — YouTube.</li>
@@ -75,7 +75,7 @@ export default function DrumsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior comforts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sit while drumming OK.</li>
               <li>Adjustable height stool.</li>
               <li>Drumsticks — lighter weight.</li>
@@ -89,7 +89,7 @@ export default function DrumsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drumming for dementia</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Studies — improves cognition.</li>
               <li>Rhythm = brain stimulation.</li>
               <li>Group drumming = social bond.</li>
@@ -103,7 +103,7 @@ export default function DrumsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Why now?</h3>
-            <p className="text-sm text-muted-foreground">Some seniors think drumming is for young rockers. Wrong. Drumming benefits exclusively brain + body. Hand drums quiet. Headphone drums silent. Apartment-friendly. Try drum circle in your city = free. After 90 days = surprisingly skilled. Senior bands always need drummer.</p>
+            <p className="text-base text-muted-foreground">Some seniors think drumming is for young rockers. Wrong. Drumming benefits exclusively brain + body. Hand drums quiet. Headphone drums silent. Apartment-friendly. Try drum circle in your city = free. After 90 days = surprisingly skilled. Senior bands always need drummer.</p>
           </CardContent>
         </Card>
       </main>

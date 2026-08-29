@@ -22,7 +22,7 @@ export default function SeniorOneDriveBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family ($10/month)</h2><p>Up to 6 people. Each gets 1 TB. Best for big families.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Auto-backup PC</h2><p>OneDrive syncs Documents, Desktop, Pictures. Automatic Windows backup.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Photo wall</h2><p>Phone photos auto-upload. View as &ldquo;On This Day&rdquo; memories.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 365 Family $10 = 6 TB total + Word/Excel for everyone. Best deal.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 365 Family $10 = 6 TB total + Word/Excel for everyone. Best deal.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

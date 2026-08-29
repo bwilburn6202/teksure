@@ -19,7 +19,7 @@ export default function PocketCastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free + Premium</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free — most features.</li>
               <li>Premium $4/month — extra polish.</li>
               <li>Sync across iPhone + Android + Mac.</li>
@@ -33,7 +33,7 @@ export default function PocketCastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pro features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Trim Silence — auto-skip silent parts.</li>
               <li>Volume Boost — quiet podcasts louder.</li>
               <li>Smart Speed — slightly faster without distortion.</li>
@@ -47,7 +47,7 @@ export default function PocketCastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Volume Boost helps hearing loss.</li>
               <li>Trim Silence saves time.</li>
               <li>Sleep timer for bedtime.</li>
@@ -61,7 +61,7 @@ export default function PocketCastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cross-platform</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Works iPhone + Android + Mac + PC.</li>
               <li>Sync progress across devices.</li>
               <li>Apple Podcasts only on Apple devices.</li>
@@ -75,7 +75,7 @@ export default function PocketCastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other premium podcast apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Overcast — iPhone only, $10/year.</li>
               <li>Castro — beautiful, queue-focused.</li>
               <li>Castbox — Android favorite.</li>
@@ -89,7 +89,7 @@ export default function PocketCastsForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to upgrade</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>If listen 1+ hour daily.</li>
               <li>Subscribe to 10+ podcasts.</li>
               <li>Want Smart Speed + Volume Boost.</li>
@@ -103,7 +103,7 @@ export default function PocketCastsForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Apple Podcasts for most</h3>
-            <p className="text-sm text-muted-foreground">For most senior listeners, Apple Podcasts (free, built-in) is plenty. Pocket Casts only worth $4/month if you&apos;re a power listener wanting Volume Boost, Smart Speed, or cross-platform sync. Try Pocket Casts free version first — if features feel important, upgrade. Don&apos;t complicate podcast listening.</p>
+            <p className="text-base text-muted-foreground">For most senior listeners, Apple Podcasts (free, built-in) is plenty. Pocket Casts only worth $4/month if you&apos;re a power listener wanting Volume Boost, Smart Speed, or cross-platform sync. Try Pocket Casts free version first — if features feel important, upgrade. Don&apos;t complicate podcast listening.</p>
           </CardContent>
         </Card>
       </main>

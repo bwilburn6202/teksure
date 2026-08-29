@@ -19,14 +19,14 @@ export default function LifelineInternetCoach() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What Lifeline is</h2>
-            <p className="text-sm">A federal program that gives a $9.25/month discount on EITHER phone OR home internet (one per household). Tribal lands get $34.25/month off. Has been around since 1985 — still many people don\'t know.</p>
+            <p className="text-base">A federal program that gives a $9.25/month discount on EITHER phone OR home internet (one per household). Tribal lands get $34.25/month off. Has been around since 1985 — still many people don\'t know.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Who qualifies (any of these)</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Income at or below 135% of federal poverty (about $20,331/year single, $27,594 couple).</li>
               <li>Receive SNAP (food stamps).</li>
               <li>Receive Medicaid.</li>
@@ -40,7 +40,7 @@ export default function LifelineInternetCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to apply</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <strong>lifelinesupport.org</strong>.</li>
               <li>Click "Get Started" and verify eligibility.</li>
               <li>Pick a participating provider:
@@ -63,14 +63,14 @@ export default function LifelineInternetCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free smartphone option</h2>
-            <p className="text-sm">SafeLink, Q Link, and Assurance offer a free smartphone PLUS service. Limited monthly minutes/data ($35-40/month value), but FREE if you qualify. Great for seniors on tight budgets.</p>
+            <p className="text-base">SafeLink, Q Link, and Assurance offer a free smartphone PLUS service. Limited monthly minutes/data ($35-40/month value), but FREE if you qualify. Great for seniors on tight budgets.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Other internet help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Comcast Internet Essentials</strong> — $10/month. Available in most US areas. Includes Wi-Fi modem.</li>
               <li><strong>Spectrum Internet Assist</strong> — $20/month. 50 Mbps.</li>
               <li><strong>AT&T Access from AT&T</strong> — $5-30/month based on speed.</li>
@@ -83,7 +83,7 @@ export default function LifelineInternetCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free help applying</h3>
-            <p className="text-sm text-muted-foreground">Your local <strong>Area Agency on Aging</strong> (call Eldercare Locator, 1-800-677-1116) or <strong>211</strong> can help apply for Lifeline. They know the participating providers in your area and walk you through forms.</p>
+            <p className="text-base text-muted-foreground">Your local <strong>Area Agency on Aging</strong> (call Eldercare Locator, 1-800-677-1116) or <strong>211</strong> can help apply for Lifeline. They know the participating providers in your area and walk you through forms.</p>
           </CardContent>
         </Card>
       </main>

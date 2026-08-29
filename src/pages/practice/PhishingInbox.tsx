@@ -659,12 +659,12 @@ function renderBody(body: string, links?: EmailLink[]) {
             <a
               href="#"
               onClick={(e) => e.preventDefault()}
-              className="text-blue-600 underline break-all"
+              className="text-info-foreground underline break-all"
               title={`Looks like: ${p.shownHref} — Actually goes to: ${p.realHref}`}
             >
               {p.text}
             </a>
-            <span className="inline-flex text-xs text-muted-foreground items-center gap-1">
+            <span className="inline-flex text-sm text-muted-foreground items-center gap-1">
               <Link2 className="h-3 w-3" aria-hidden="true" />
               {p.realHref}
             </span>
@@ -846,8 +846,8 @@ export default function PhishingInbox() {
 
         {/* Practice no-risk card */}
         <section className="container py-8 md:py-10">
-          <Alert className="max-w-5xl mx-auto border-emerald-200 bg-emerald-50/60 dark:border-emerald-900/40 dark:bg-emerald-950/20">
-            <ShieldCheck className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+          <Alert className="max-w-5xl mx-auto border-success-foreground/25 bg-emerald-50/60 dark:bg-emerald-950/20">
+            <ShieldCheck className="h-5 w-5 text-success-foreground" aria-hidden="true" />
             <AlertTitle className="text-base font-semibold">Practice, no risk</AlertTitle>
             <AlertDescription className="text-base leading-relaxed mt-1">
               Nothing here goes anywhere. No real links. Nothing you do affects real accounts. Tap on
@@ -867,7 +867,7 @@ export default function PhishingInbox() {
                 <TabsTrigger value="hard" className="text-base min-h-12">Hard</TabsTrigger>
               </TabsList>
             </Tabs>
-            <p className="text-sm text-muted-foreground mt-2">
+            <p className="text-base text-muted-foreground mt-2">
               Easy = obvious tells. Medium = tricky. Hard = AI-polished modern phishing.
             </p>
           </div>
@@ -883,7 +883,7 @@ export default function PhishingInbox() {
                   <Inbox className="h-4 w-4" aria-hidden="true" />
                   <span className="font-semibold text-base">Inbox</span>
                 </div>
-                <span className="text-xs text-muted-foreground">
+                <span className="text-sm text-muted-foreground">
                   {totalDecisions}/{filteredEmails.length} done
                 </span>
               </div>
@@ -903,7 +903,7 @@ export default function PhishingInbox() {
                       <div className="flex items-start gap-2">
                         <div className="mt-1 shrink-0">
                           {decided ? (
-                            <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600" aria-hidden="true" />
+                            <CheckCircle2 className="h-3.5 w-3.5 text-success-foreground" aria-hidden="true" />
                           ) : (
                             <span className="block h-2.5 w-2.5 rounded-full bg-blue-600" aria-hidden="true" />
                           )}
@@ -913,7 +913,7 @@ export default function PhishingInbox() {
                             <span className={`text-sm truncate ${decided ? 'font-normal' : 'font-semibold'}`}>
                               {e.fromName}
                             </span>
-                            <span className="text-xs text-muted-foreground shrink-0">
+                            <span className="text-sm text-muted-foreground shrink-0">
                               {e.dateLabel.split(',')[0]}
                             </span>
                           </div>
@@ -952,7 +952,7 @@ export default function PhishingInbox() {
                         {selected.attachments.map((a) => (
                           <span
                             key={a}
-                            className="inline-flex items-center gap-1 text-xs px-2 py-1 rounded border bg-background"
+                            className="inline-flex items-center gap-1 text-sm px-2 py-1 rounded border bg-background"
                           >
                             <Mail className="h-3 w-3" aria-hidden="true" />
                             {a}
@@ -978,7 +978,7 @@ export default function PhishingInbox() {
                           {selected.links.map((l, i) => (
                             <li key={i} className="px-3 py-2 flex flex-col gap-1">
                               <span>
-                                Looks like: <span className="text-blue-600">{l.shownHref}</span>
+                                Looks like: <span className="text-info-foreground">{l.shownHref}</span>
                               </span>
                               <span className="break-all">
                                 Actually goes to:{' '}
@@ -1086,22 +1086,22 @@ export default function PhishingInbox() {
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-                    <Card className="bg-emerald-50 dark:bg-emerald-950/30 border-emerald-200">
+                    <Card className="bg-success border-success-foreground/25">
                       <CardContent className="p-5">
-                        <div className="text-sm font-medium text-emerald-700 dark:text-emerald-300 mb-1">
+                        <div className="text-sm font-medium text-success-foreground mb-1">
                           Money you would have saved
                         </div>
-                        <div className="text-3xl font-bold text-emerald-700 dark:text-emerald-200">
+                        <div className="text-3xl font-bold text-success-foreground ">
                           ${scoreBreakdown.moneySaved.toLocaleString()}
                         </div>
                       </CardContent>
                     </Card>
-                    <Card className="bg-red-50 dark:bg-red-950/30 border-red-200">
+                    <Card className="bg-danger border-danger-foreground/25">
                       <CardContent className="p-5">
-                        <div className="text-sm font-medium text-red-700 dark:text-red-300 mb-1">
+                        <div className="text-sm font-medium text-danger-foreground mb-1">
                           Money you would have lost
                         </div>
-                        <div className="text-3xl font-bold text-red-700 dark:text-red-200">
+                        <div className="text-3xl font-bold text-danger-foreground ">
                           ${scoreBreakdown.moneyLost.toLocaleString()}
                         </div>
                       </CardContent>
@@ -1122,11 +1122,11 @@ export default function PhishingInbox() {
                           className="w-full text-left p-3 min-h-14 rounded border hover:bg-muted/50 flex items-center gap-3"
                         >
                           {result === 'correct' ? (
-                            <CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0" aria-hidden="true" />
+                            <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0" aria-hidden="true" />
                           ) : result === 'partial' ? (
-                            <HelpCircle className="h-5 w-5 text-amber-500 shrink-0" aria-hidden="true" />
+                            <HelpCircle className="h-5 w-5 text-warn-foreground shrink-0" aria-hidden="true" />
                           ) : (
-                            <XCircle className="h-5 w-5 text-red-600 shrink-0" aria-hidden="true" />
+                            <XCircle className="h-5 w-5 text-danger-foreground shrink-0" aria-hidden="true" />
                           )}
                           <div className="min-w-0 flex-1">
                             <div className="font-medium truncate">{e.subject}</div>
@@ -1169,10 +1169,10 @@ export default function PhishingInbox() {
         {/* How scammers are getting better */}
         <section className="container py-10 md:py-12">
           <div className="max-w-4xl mx-auto">
-            <Card className="border-amber-200 dark:border-amber-900/40">
+            <Card className="border-warn-foreground/25 ">
               <CardContent className="p-6 md:p-8">
                 <div className="flex items-center gap-2 mb-3">
-                  <AlertTriangle className="h-6 w-6 text-amber-600" aria-hidden="true" />
+                  <AlertTriangle className="h-6 w-6 text-warn-foreground" aria-hidden="true" />
                   <h2 className="text-2xl font-bold">How scammers are getting better</h2>
                 </div>
                 <p className="text-base leading-relaxed mb-4">
@@ -1401,7 +1401,7 @@ function Rule({
       </div>
       <div>
         <div className="font-semibold text-base">{title}</div>
-        <p className="text-sm text-muted-foreground leading-relaxed mt-1">{children}</p>
+        <p className="text-base text-muted-foreground leading-relaxed mt-1">{children}</p>
       </div>
     </div>
   );
@@ -1442,7 +1442,7 @@ function TeachableMoment({ email, choice }: { email: EmailItem; choice: UserChoi
       </div>
       <div className="rounded-lg border bg-muted/30 p-4">
         <div className="flex items-center gap-2 mb-2">
-          <Lightbulb className="h-4 w-4 text-amber-500" aria-hidden="true" />
+          <Lightbulb className="h-4 w-4 text-warn-foreground" aria-hidden="true" />
           <span className="font-semibold">Why</span>
         </div>
         <p className="text-base leading-relaxed">{email.teachable}</p>
@@ -1459,8 +1459,8 @@ function TeachableMoment({ email, choice }: { email: EmailItem; choice: UserChoi
         </ul>
       </div>
       {email.typicalLoss && (email.verdict === 'phishing' || email.verdict === 'gray') && (
-        <Alert className="border-red-200 bg-red-50/60 dark:border-red-900/40 dark:bg-red-950/20">
-          <AlertTriangle className="h-4 w-4 text-red-600" aria-hidden="true" />
+        <Alert className="border-danger-foreground/25 bg-red-50/60 dark:bg-red-950/20">
+          <AlertTriangle className="h-4 w-4 text-danger-foreground" aria-hidden="true" />
           <AlertDescription className="text-base">
             Average loss if someone falls for this one:{' '}
             <strong>${email.typicalLoss.toLocaleString()}</strong>.

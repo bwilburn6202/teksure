@@ -236,7 +236,7 @@ export default function StreamingCalculator() {
             />
             <div className="flex-1 min-w-0">
               <div className="flex items-center justify-between gap-2">
-                <span className="font-medium text-sm">
+                <span className="font-medium text-base">
                   {svc.emoji} {svc.name}
                 </span>
                 <span className="text-sm font-semibold text-muted-foreground whitespace-nowrap">
@@ -246,7 +246,7 @@ export default function StreamingCalculator() {
                 </span>
               </div>
               {svc.hasFreeTrialNote && !isChecked && (
-                <p className="text-xs text-green-600 dark:text-green-400 mt-0.5 flex items-center gap-1">
+                <p className="text-sm text-success-foreground mt-0.5 flex items-center gap-1">
                   <CheckCircle className="h-3 w-3 flex-shrink-0" aria-hidden="true" />
                   {svc.hasFreeTrialNote}
                 </p>
@@ -289,8 +289,8 @@ export default function StreamingCalculator() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-5xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-blue-50 dark:bg-blue-950/30 flex items-center justify-center flex-shrink-0">
-                <Tv className="h-6 w-6 text-blue-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-info flex items-center justify-center flex-shrink-0">
+                <Tv className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -331,7 +331,7 @@ export default function StreamingCalculator() {
               {/* Total card */}
               <div className={`rounded-2xl border-2 p-6 transition-colors ${colorInfo.bg}`}>
                 <div className="flex items-center justify-between mb-1">
-                  <p className="text-sm font-medium text-muted-foreground">Monthly total</p>
+                  <p className="text-base font-medium text-muted-foreground">Monthly total</p>
                   {selectedCount > 0 && (
                     <span className={`text-xs font-semibold px-2 py-0.5 rounded-full bg-white/60 dark:bg-black/20 ${colorInfo.text}`}>
                       {colorInfo.label}
@@ -342,7 +342,7 @@ export default function StreamingCalculator() {
                   ${monthlyTotal}
                   <span className="text-xl font-normal">/mo</span>
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground">
                   {selectedCount === 0
                     ? 'Check services on the left to get started.'
                     : `$${annualTotal} per year · ${selectedCount} service${selectedCount !== 1 ? 's' : ''}`}
@@ -351,13 +351,13 @@ export default function StreamingCalculator() {
                 {selectedCount > 0 && (
                   <>
                     <div className="border-t border-black/10 dark:border-white/10 mt-4 pt-4">
-                      <p className="text-sm font-medium mb-0.5">Annual total</p>
+                      <p className="text-base font-medium mb-0.5">Annual total</p>
                       <p className="text-2xl font-bold">${annualTotal}</p>
                     </div>
 
                     <div className="border-t border-black/10 dark:border-white/10 mt-4 pt-4 flex items-start gap-2">
-                      <Coffee className="h-4 w-4 mt-0.5 flex-shrink-0 text-amber-600" aria-hidden="true" />
-                      <p className="text-sm text-muted-foreground">
+                      <Coffee className="h-4 w-4 mt-0.5 flex-shrink-0 text-warn-foreground" aria-hidden="true" />
+                      <p className="text-base text-muted-foreground">
                         That's about <span className="font-semibold text-foreground">{coffees} cups of coffee</span> per year at $5 each.
                       </p>
                     </div>
@@ -369,10 +369,10 @@ export default function StreamingCalculator() {
               {servicesWithCheaperTiers.length > 0 && (
                 <div className="rounded-2xl border border-border bg-card p-5">
                   <h3 className="font-semibold text-sm mb-3 flex items-center gap-2">
-                    <TrendingDown className="h-4 w-4 text-green-500" aria-hidden="true" />
+                    <TrendingDown className="h-4 w-4 text-success-foreground" aria-hidden="true" />
                     Could you cut any of these?
                   </h3>
-                  <p className="text-xs text-muted-foreground mb-3">
+                  <p className="text-sm text-muted-foreground mb-3">
                     These services have a cheaper ad-supported tier you're not using:
                   </p>
                   <div className="space-y-2">
@@ -383,7 +383,7 @@ export default function StreamingCalculator() {
                       return (
                         <div key={svc.id} className="flex items-center justify-between text-sm gap-2">
                           <span>{svc.emoji} {svc.name}</span>
-                          <span className="text-green-600 dark:text-green-400 font-medium whitespace-nowrap">
+                          <span className="text-success-foreground font-medium whitespace-nowrap">
                             Save ${saving}/mo
                           </span>
                         </div>
@@ -400,7 +400,7 @@ export default function StreamingCalculator() {
                     <CheckCircle className="h-4 w-4 text-primary" aria-hidden="true" />
                     Services that offer free trials
                   </h3>
-                  <p className="text-xs text-muted-foreground mb-3">
+                  <p className="text-sm text-muted-foreground mb-3">
                     Services you haven't selected that have free trials:
                   </p>
                   <div className="space-y-1">
@@ -420,21 +420,21 @@ export default function StreamingCalculator() {
                   <Info className="h-4 w-4 text-primary" aria-hidden="true" />
                   Money-saving ideas
                 </h3>
-                <ul className="space-y-2 text-xs text-muted-foreground">
+                <ul className="space-y-2 text-sm text-muted-foreground">
                   <li className="flex gap-2">
-                    <AlertTriangle className="h-3.5 w-3.5 text-amber-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <AlertTriangle className="h-3.5 w-3.5 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <span>Rotate services — watch one for a month, pause it, then try another.</span>
                   </li>
                   <li className="flex gap-2">
-                    <AlertTriangle className="h-3.5 w-3.5 text-amber-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <AlertTriangle className="h-3.5 w-3.5 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <span>Check your bank statement — you may be paying for services you forgot about.</span>
                   </li>
                   <li className="flex gap-2">
-                    <AlertTriangle className="h-3.5 w-3.5 text-amber-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <AlertTriangle className="h-3.5 w-3.5 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <span>Your phone carrier or internet plan may include a free streaming service.</span>
                   </li>
                   <li className="flex gap-2">
-                    <AlertTriangle className="h-3.5 w-3.5 text-amber-500 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                    <AlertTriangle className="h-3.5 w-3.5 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                     <span>Free options: Tubi, Pluto TV, and Freevee have movies and shows at no cost (with ads).</span>
                   </li>
                 </ul>

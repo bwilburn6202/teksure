@@ -22,7 +22,7 @@ export default function SeniorMemoryAids() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Photo familiar faces</h2><p>Print and post photos of family with names. Helps recognition daily.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smart speaker reminders</h2><p>&ldquo;Alexa, remind me to take pill at 8.&rdquo; Reduces missed doses.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">GPS tracker</h2><p>For wandering risk. AirTag, Tile, or dedicated medical alert with GPS.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Keep one notebook + one calendar in the same place. Habit beats memory.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Keep one notebook + one calendar in the same place. Habit beats memory.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

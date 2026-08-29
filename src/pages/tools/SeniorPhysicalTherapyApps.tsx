@@ -22,7 +22,7 @@ export default function SeniorPhysicalTherapyApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare Part B</h2><p>Outpatient PT covered. Often $30-$50 copay per visit.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">In-home PT</h2><p>Medicare may cover if homebound. Real therapist comes to you.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">YouTube</h2><p>FREE. Bob and Brad PT channel. Famous PT videos. Trustworthy.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Apps work for prevention. Real PT for injuries or post-surgery.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Apps work for prevention. Real PT for injuries or post-surgery.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

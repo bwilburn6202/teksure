@@ -109,7 +109,7 @@ export default function CourseHub() {
           <Card className="border-border mt-10">
             <CardContent className="p-6">
               <h2 className="text-xl font-bold mb-3">How a course works</h2>
-              <ol className="space-y-3 text-sm text-muted-foreground list-decimal pl-5">
+              <ol className="space-y-3 text-base text-muted-foreground list-decimal pl-5">
                 <li>
                   <strong className="text-foreground">Open a lesson.</strong> You'll read a
                   short guide with clear steps.
@@ -179,13 +179,13 @@ function CourseCard({ course, progress }: { course: Course; progress: CourseProg
           </div>
         </div>
         {complete ? (
-          <CheckCircle2 className="h-5 w-5 text-emerald-600 shrink-0" aria-label="Completed" />
+          <CheckCircle2 className="h-5 w-5 text-success-foreground shrink-0" aria-label="Completed" />
         ) : (
           <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition-all shrink-0" />
         )}
       </div>
 
-      <p className="text-sm text-muted-foreground mb-4">{course.tagline}</p>
+      <p className="text-base text-muted-foreground mb-4">{course.tagline}</p>
 
       <div className="border-t border-border/60 pt-3">
         <div className="flex items-center justify-between text-xs text-muted-foreground mb-2">

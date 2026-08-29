@@ -213,7 +213,7 @@ export default function Explore() {
                       </div>
                       <div>
                         <h2 className="text-lg font-bold">{section.title}</h2>
-                        <p className="text-xs text-muted-foreground">{section.description}</p>
+                        <p className="text-sm text-muted-foreground">{section.description}</p>
                       </div>
                     </div>
 
@@ -244,7 +244,7 @@ export default function Explore() {
           className="mt-14 text-center p-10 rounded-2xl bg-muted/50 border border-border"
         >
           <h2 className="text-xl font-bold mb-2">Not sure where to start?</h2>
-          <p className="text-sm text-muted-foreground mb-5 max-w-sm mx-auto">
+          <p className="text-base text-muted-foreground mb-5 max-w-sm mx-auto">
             Take our quick onboarding quiz and we'll point you to the perfect guides for your skill level.
           </p>
           <Link

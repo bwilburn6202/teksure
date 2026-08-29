@@ -17,12 +17,12 @@ export default function SeniorSkinHealth() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Annual skin check</h2><p>Medicare covers. Catches skin cancer early. 99% cure rate if early.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch ABCDE</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Asymmetry</li><li>Border irregular</li><li>Color varies</li><li>Diameter &gt;6mm</li><li>Evolving</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch ABCDE</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Asymmetry</li><li>Border irregular</li><li>Color varies</li><li>Diameter &gt;6mm</li><li>Evolving</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Dry skin</h2><p>CeraVe lotion. Apply right after bath. Prevents winter cracks.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Age spots</h2><p>Cosmetic. Talk to dermatologist if bothered. Lasers safe.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sunscreen daily</h2><p>SPF 30+ on face/hands. Even cloudy days. Even in car.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hat outside</h2><p>Wide brim. Best skin cancer prevention.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Use phone to photo any new spot. Track over months. Show doctor if changes.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Use phone to photo any new spot. Track over months. Show doctor if changes.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -114,7 +114,7 @@ export default function ScamPhoneDatabase() {
         <section className="container py-10 md:py-14">
           <Card className="mb-8 bg-amber-50/50 dark:bg-amber-950/20 border-amber-500/40">
             <CardContent className="p-5 flex items-start gap-3">
-              <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+              <AlertTriangle className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm leading-relaxed">
                 <strong className="block mb-1">If you got a suspicious call, don\'t call back.</strong>
                 <span className="text-muted-foreground">Even if the number isn\'t listed here, scammers change numbers constantly. If it\'s about your bank, IRS, Medicare, or a relative — hang up and call the official number yourself (on the back of your card, a real bill, or your records). Never trust caller ID.</span>
@@ -151,7 +151,7 @@ export default function ScamPhoneDatabase() {
             <Card><CardContent className="p-8 text-center">
               <Phone className="w-12 h-12 text-muted-foreground mx-auto mb-3" />
               <p className="text-muted-foreground">No scam numbers match your search.</p>
-              <p className="text-sm text-muted-foreground mt-1">That\'s good news — but always be cautious with unexpected calls.</p>
+              <p className="text-base text-muted-foreground mt-1">That\'s good news — but always be cautious with unexpected calls.</p>
             </CardContent></Card>
           ) : (
             <div className="space-y-3">
@@ -166,10 +166,10 @@ export default function ScamPhoneDatabase() {
                             <h3 className="font-bold text-lg font-mono">{n.number}</h3>
                             <Badge className={meta.color}>{meta.label}</Badge>
                           </div>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{n.description}</p>
+                          <p className="text-base text-muted-foreground leading-relaxed">{n.description}</p>
                         </div>
                         <div className="text-right">
-                          <div className="flex items-center gap-1 text-red-600">
+                          <div className="flex items-center gap-1 text-danger-foreground">
                             <TrendingUp className="w-3 h-3" />
                             <span className="font-semibold">{n.reports}</span>
                           </div>
@@ -193,7 +193,7 @@ export default function ScamPhoneDatabase() {
                 <Shield className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <div>
                   <h3 className="font-semibold mb-1">Got a scam call? Report it.</h3>
-                  <p className="text-sm text-muted-foreground">Reporting helps protect others. Report to the official agencies, then optionally share with TekSure so we can add it here.</p>
+                  <p className="text-base text-muted-foreground">Reporting helps protect others. Report to the official agencies, then optionally share with TekSure so we can add it here.</p>
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
@@ -220,14 +220,14 @@ export default function ScamPhoneDatabase() {
             <Card>
               <CardContent className="p-5">
                 <h3 className="font-semibold mb-2 flex items-center gap-2"><PhoneOff className="w-4 h-4" />Block a scam number</h3>
-                <p className="text-sm text-muted-foreground mb-3 leading-relaxed">Already got a call from a scam number? Here\'s how to block it on your phone.</p>
+                <p className="text-base text-muted-foreground mb-3 leading-relaxed">Already got a call from a scam number? Here\'s how to block it on your phone.</p>
                 <Button size="sm" variant="outline" asChild><a href="/tools/robocall-blocker">Robocall Blocker Setup →</a></Button>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="p-5">
                 <h3 className="font-semibold mb-2 flex items-center gap-2"><Shield className="w-4 h-4" />Test your scam IQ</h3>
-                <p className="text-sm text-muted-foreground mb-3 leading-relaxed">How good are you at spotting scams? Take our 12-question test to find out.</p>
+                <p className="text-base text-muted-foreground mb-3 leading-relaxed">How good are you at spotting scams? Take our 12-question test to find out.</p>
                 <Button size="sm" variant="outline" asChild><a href="/tools/scam-iq-test">Scam IQ Test →</a></Button>
               </CardContent>
             </Card>

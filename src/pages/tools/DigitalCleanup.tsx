@@ -29,14 +29,14 @@ export default function DigitalCleanup() {
       <Navbar />
       <main className="min-h-screen bg-background"><div className="container max-w-2xl py-12 px-4">
         <div className="text-center mb-10"><Trash2 className="h-12 w-12 text-primary mx-auto mb-4" /><h1 className="text-3xl font-bold mb-2">Digital Cleanup Checklist</h1><p className="text-muted-foreground">Clean up your devices in 30 minutes</p></div>
-        <div className="flex items-center justify-between mb-4"><span className="text-sm font-medium">{done.size}/{TASKS.length} tasks done</span>{done.size > 0 && <Button size="sm" variant="ghost" onClick={() => setDone(new Set())} className="gap-1 text-xs"><RotateCcw className="h-3 w-3" /> Reset</Button>}</div>
+        <div className="flex items-center justify-between mb-4"><span className="text-base font-medium">{done.size}/{TASKS.length} tasks done</span>{done.size > 0 && <Button size="sm" variant="ghost" onClick={() => setDone(new Set())} className="gap-1 text-xs"><RotateCcw className="h-3 w-3" /> Reset</Button>}</div>
         <div className="h-2 rounded-full bg-muted mb-6 overflow-hidden"><div className="h-full bg-primary rounded-full transition-all duration-300" style={{ width: `${progress}%` }} /></div>
         <div className="space-y-3">{TASKS.map(task => (
           <Card key={task.id} className={`cursor-pointer transition-all ${done.has(task.id) ? 'border-green-500/30 bg-green-50/50 dark:bg-green-950/20' : ''}`} onClick={() => toggle(task.id)}>
-            <CardContent className="p-4 flex gap-3"><div className="mt-0.5">{done.has(task.id) ? <CheckCircle className="h-5 w-5 text-green-500" /> : <Circle className="h-5 w-5 text-muted-foreground" />}</div><div><h3 className={`font-medium text-sm ${done.has(task.id) ? 'line-through text-muted-foreground' : ''}`}>{task.title}</h3><p className="text-xs text-muted-foreground mt-1">{task.tip}</p></div></CardContent>
+            <CardContent className="p-4 flex gap-3"><div className="mt-0.5">{done.has(task.id) ? <CheckCircle className="h-5 w-5 text-success-foreground" /> : <Circle className="h-5 w-5 text-muted-foreground" />}</div><div><h3 className={`font-medium text-sm ${done.has(task.id) ? 'line-through text-muted-foreground' : ''}`}>{task.title}</h3><p className="text-sm text-muted-foreground mt-1">{task.tip}</p></div></CardContent>
           </Card>
         ))}</div>
-        {done.size === TASKS.length && <div className="text-center mt-8 p-6 rounded-xl bg-green-500/10 border border-green-500/30"><Sparkles className="h-8 w-8 text-green-500 mx-auto mb-2" /><h2 className="text-lg font-bold">All clean!</h2><p className="text-sm text-muted-foreground">Your digital life is freshly organized.</p></div>}
+        {done.size === TASKS.length && <div className="text-center mt-8 p-6 rounded-xl bg-green-500/10 border border-green-500/30"><Sparkles className="h-8 w-8 text-success-foreground mx-auto mb-2" /><h2 className="text-lg font-bold">All clean!</h2><p className="text-base text-muted-foreground">Your digital life is freshly organized.</p></div>}
       </div></main>
       <Footer />
     </>

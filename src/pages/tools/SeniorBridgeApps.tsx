@@ -22,7 +22,7 @@ export default function SeniorBridgeApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mental benefits</h2><p>Bridge linked to slower cognitive decline. Real measurable benefit.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior leagues</h2><p>ACBL.org has senior tournaments. Often free for ages 75+.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Friends online</h2><p>Set up table on BBO. Play with real friends remotely.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Bridge is the senior brain workout. 1-2 games daily great for cognitive health.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Bridge is the senior brain workout. 1-2 games daily great for cognitive health.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

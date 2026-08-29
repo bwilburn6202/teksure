@@ -159,14 +159,14 @@ export default function InternetFixGuide() {
         title="Internet & Router Fix Guide — TekSure"
         description="Answer a few questions and we'll walk you through exactly what to do when your home internet isn't working — step by step."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4">
+      <main className="min-h-screen bg-muted py-8 px-4">
         <div className="max-w-xl mx-auto">
           <div className="text-center mb-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-100 dark:bg-blue-950/60 mb-4">
-              <Wifi className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-info mb-4">
+              <Wifi className="w-8 h-8 text-info-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Internet & Router Fix Guide</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Internet & Router Fix Guide</h1>
+            <p className="text-lg text-muted-foreground ">
               Answer a few questions — we'll walk you through what to do.
             </p>
           </div>
@@ -175,39 +175,39 @@ export default function InternetFixGuide() {
           {history.length > 0 && (
             <div className="flex items-center gap-1 mb-3 flex-wrap">
               {history.map((h, i) => (
-                <span key={i} className="text-xs text-gray-400 dark:text-gray-500 flex items-center gap-1">
+                <span key={i} className="text-sm text-muted-foreground flex items-center gap-1">
                   <span className="truncate max-w-[120px]">{STEPS[h].title.split('?')[0].split(':')[0]}</span>
                   <ChevronRight className="w-3 h-3 flex-shrink-0" />
                 </span>
               ))}
-              <span className="text-xs font-medium text-blue-600 dark:text-blue-400 truncate max-w-[120px]">
+              <span className="text-xs font-medium text-info-foreground truncate max-w-[120px]">
                 {step.title.split('?')[0].split(':')[0]}
               </span>
             </div>
           )}
 
-          <div className={`bg-white dark:bg-gray-900 rounded-2xl border ${isFinal && currentStep === 'fixed' ? 'border-green-200 dark:border-green-800' : isFinal ? 'border-blue-200 dark:border-blue-800' : 'border-gray-200 dark:border-gray-800'} p-5 shadow-sm`}>
+          <div className={`bg-card rounded-2xl border ${isFinal && currentStep === 'fixed' ? 'border-green-200 dark:border-green-800' : isFinal ? 'border-blue-200 dark:border-blue-800' : 'border-gray-200 dark:border-gray-800'} p-5 shadow-sm`}>
             {Icon && (
               <div className={`mb-3 ${step.color || 'text-blue-500'}`}>
                 <Icon className="w-7 h-7" />
               </div>
             )}
 
-            <h2 className="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">{step.title}</h2>
+            <h2 className="text-xl font-bold text-foreground mb-3">{step.title}</h2>
 
             {step.body.split('\n\n').map((para, i) => (
-              <p key={i} className="text-gray-700 dark:text-gray-300 mb-3 text-sm leading-relaxed whitespace-pre-line">{para}</p>
+              <p key={i} className="text-foreground mb-3 text-base leading-relaxed whitespace-pre-line">{para}</p>
             ))}
 
             {step.tip && (
-              <div className="bg-blue-50 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-800 rounded-lg p-3 mb-3">
-                <p className="text-sm text-blue-800 dark:text-blue-200"><span className="font-semibold">Quick Tip:</span> {step.tip}</p>
+              <div className="bg-info border border-info-foreground/25 rounded-lg p-3 mb-3">
+                <p className="text-base text-info-foreground "><span className="font-semibold">Quick Tip:</span> {step.tip}</p>
               </div>
             )}
 
             {step.warning && (
-              <div className="bg-amber-50 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-800 rounded-lg p-3 mb-3">
-                <p className="text-sm text-amber-800 dark:text-amber-200"><span className="font-semibold">Important:</span> {step.warning}</p>
+              <div className="bg-warn border border-warn-foreground/25 rounded-lg p-3 mb-3">
+                <p className="text-base text-warn-foreground "><span className="font-semibold">Important:</span> {step.warning}</p>
               </div>
             )}
 
@@ -217,10 +217,10 @@ export default function InternetFixGuide() {
                   <button
                     key={i}
                     onClick={() => go(c.next)}
-                    className="w-full text-left px-4 py-3 rounded-xl border-2 border-gray-200 dark:border-gray-700 hover:border-blue-500 hover:bg-blue-50 dark:hover:bg-blue-950/30 transition-all text-sm font-medium text-gray-800 dark:text-gray-200 flex items-center justify-between gap-2"
+                    className="w-full text-left px-4 py-3 rounded-xl border-2 border-border hover:border-blue-500 hover:bg-info transition-all text-sm font-medium text-foreground flex items-center justify-between gap-2"
                   >
                     <span>{c.label}</span>
-                    <ChevronRight className="w-4 h-4 flex-shrink-0 text-gray-400" />
+                    <ChevronRight className="w-4 h-4 flex-shrink-0 text-muted-foreground" />
                   </button>
                 ))}
               </div>
@@ -232,20 +232,20 @@ export default function InternetFixGuide() {
             {history.length > 0 && (
               <button
                 onClick={goBack}
-                className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+                className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground "
               >
                 <ChevronLeft className="w-4 h-4" /> Back
               </button>
             )}
             <button
               onClick={reset}
-              className="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 ml-auto"
+              className="flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground ml-auto"
             >
               <RotateCcw className="w-3.5 h-3.5" /> Start Over
             </button>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }

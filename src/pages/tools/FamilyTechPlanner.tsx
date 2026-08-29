@@ -293,7 +293,7 @@ export default function FamilyTechPlanner() {
             </div>
             <div>
               <h1 className="text-3xl sm:text-4xl font-bold">Family Tech Planner</h1>
-              <p className="text-sm text-muted-foreground">For families organizing tech support for aging parents</p>
+              <p className="text-base text-muted-foreground">For families organizing tech support for aging parents</p>
             </div>
           </div>
           <p className="text-lg text-foreground/80 mb-8 leading-relaxed">
@@ -546,7 +546,7 @@ export default function FamilyTechPlanner() {
                     <CheckCircle2 className="h-6 w-6 text-primary" />
                     <h3 className="text-xl font-bold">Priority setup checklist</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-base text-muted-foreground mb-4">
                     Do these in order — each one takes 5–15 minutes. Skip nothing; the early ones make everything else safer.
                   </p>
                   <ol className="space-y-3">
@@ -559,7 +559,7 @@ export default function FamilyTechPlanner() {
                           <Link to={g.slug} className="text-base font-semibold text-primary hover:underline">
                             {g.title}
                           </Link>
-                          <p className="text-sm text-muted-foreground mt-0.5">{g.why}</p>
+                          <p className="text-base text-muted-foreground mt-0.5">{g.why}</p>
                         </div>
                       </li>
                     ))}
@@ -612,7 +612,7 @@ export default function FamilyTechPlanner() {
                     </p>
                   ) : (
                     <div className="space-y-3">
-                      <p className="text-sm text-muted-foreground">
+                      <p className="text-base text-muted-foreground">
                         Try the first option below first — set it up once on a calm afternoon so it's ready when it's needed.
                       </p>
                       {plan.remoteSupport.map((r, i) => (
@@ -624,7 +624,7 @@ export default function FamilyTechPlanner() {
                             <span className="font-semibold text-base">{r.name}</span>
                             {r.best && <Badge className="bg-primary text-primary-foreground text-xs">Best pick</Badge>}
                           </div>
-                          <p className="text-sm text-muted-foreground">{r.desc}</p>
+                          <p className="text-base text-muted-foreground">{r.desc}</p>
                         </div>
                       ))}
                     </div>
@@ -633,10 +633,10 @@ export default function FamilyTechPlanner() {
               </Card>
 
               {/* Emergency contacts callout */}
-              <Card className="border-rose-200 bg-rose-50 dark:bg-rose-950/30 dark:border-rose-900">
+              <Card className="border-danger-foreground/25 bg-danger ">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <Heart className="h-6 w-6 text-rose-600 dark:text-rose-400" />
+                    <Heart className="h-6 w-6 text-danger-foreground " />
                     <h3 className="text-xl font-bold">Emergency contacts setup</h3>
                   </div>
                   <p className="text-base mb-3">
@@ -644,9 +644,9 @@ export default function FamilyTechPlanner() {
                     they need to reach someone in seconds without unlocking it.
                   </p>
                   <ul className="space-y-2 text-base">
-                    <li className="flex items-start gap-2"><span className="text-rose-600 dark:text-rose-400">•</span> Add 3 emergency contacts visible on the lock screen</li>
-                    <li className="flex items-start gap-2"><span className="text-rose-600 dark:text-rose-400">•</span> Fill in Medical ID (allergies, medications, blood type)</li>
-                    <li className="flex items-start gap-2"><span className="text-rose-600 dark:text-rose-400">•</span> Test that 911 works with the phone locked</li>
+                    <li className="flex items-start gap-2"><span className="text-danger-foreground ">•</span> Add 3 emergency contacts visible on the lock screen</li>
+                    <li className="flex items-start gap-2"><span className="text-danger-foreground ">•</span> Fill in Medical ID (allergies, medications, blood type)</li>
+                    <li className="flex items-start gap-2"><span className="text-danger-foreground ">•</span> Test that 911 works with the phone locked</li>
                   </ul>
                   <div className="mt-4">
                     <Button variant="outline" size="sm" asChild>
@@ -665,7 +665,7 @@ export default function FamilyTechPlanner() {
                     <Calendar className="h-6 w-6 text-primary" />
                     <h3 className="text-xl font-bold">Weekly check-in rhythm</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-base text-muted-foreground mb-4">
                     Small, consistent contact catches problems early. Pick one or two that feel natural.
                   </p>
                   <ul className="space-y-2">
@@ -680,10 +680,10 @@ export default function FamilyTechPlanner() {
               </Card>
 
               {/* Red flags */}
-              <Card className="border-amber-200 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-900">
+              <Card className="border-warn-foreground/25 bg-warn ">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <AlertTriangle className="h-6 w-6 text-amber-600 dark:text-amber-400" />
+                    <AlertTriangle className="h-6 w-6 text-warn-foreground " />
                     <h3 className="text-xl font-bold">Red flags to watch for</h3>
                   </div>
                   <p className="text-base mb-3">
@@ -693,7 +693,7 @@ export default function FamilyTechPlanner() {
                   <ul className="space-y-2 text-base">
                     {plan.redFlags.map((f, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <span className="text-amber-600 dark:text-amber-400 font-bold"></span>
+                        <span className="text-warn-foreground font-bold"></span>
                         <span>{f}</span>
                       </li>
                     ))}
@@ -708,7 +708,7 @@ export default function FamilyTechPlanner() {
                     <BookOpen className="h-6 w-6 text-primary" />
                     <h3 className="text-xl font-bold">Resources for caregivers</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-4">
+                  <p className="text-base text-muted-foreground mb-4">
                     You're doing an important job. These hubs collect deeper reads, templates, and community stories.
                   </p>
                   <div className="grid sm:grid-cols-2 gap-2">

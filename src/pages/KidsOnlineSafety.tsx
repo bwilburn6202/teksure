@@ -278,7 +278,7 @@ export default function KidsOnlineSafety() {
               {ageGroups.map((g) => (
                 <TabsTrigger key={g.id} value={g.id} className="rounded-xl flex-col py-3 h-auto">
                   <span className="font-semibold">{g.label}</span>
-                  <span className="text-xs text-muted-foreground">{g.ages}</span>
+                  <span className="text-sm text-muted-foreground">{g.ages}</span>
                 </TabsTrigger>
               ))}
             </TabsList>
@@ -302,7 +302,7 @@ export default function KidsOnlineSafety() {
                           <span className="rounded-full bg-primary/10 text-primary text-xs font-bold w-6 h-6 flex items-center justify-center shrink-0 mt-0.5">
                             {i + 1}
                           </span>
-                          <p className="text-sm text-muted-foreground leading-relaxed flex-1">{b}</p>
+                          <p className="text-base text-muted-foreground leading-relaxed flex-1">{b}</p>
                         </li>
                       ))}
                     </ul>
@@ -336,11 +336,11 @@ export default function KidsOnlineSafety() {
                     <div className="flex items-start justify-between mb-2">
                       <div>
                         <h3 className="font-semibold text-foreground">{t.name}</h3>
-                        <p className="text-xs text-muted-foreground/80">{t.platform}</p>
+                        <p className="text-sm text-muted-foreground/80">{t.platform}</p>
                       </div>
                       <Badge variant="secondary" className="text-xs shrink-0">{t.cost}</Badge>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">{t.description}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed mb-4 flex-1">{t.description}</p>
                     <Button asChild variant="outline" size="sm" className="rounded-xl gap-2 self-start">
                       <a href={t.url} target="_blank" rel="noopener noreferrer">
                         Visit
@@ -371,13 +371,13 @@ export default function KidsOnlineSafety() {
               <Card key={t.name} className="rounded-2xl border border-border bg-card">
                 <CardContent className="p-5">
                   <div className="flex items-start gap-3 mb-3">
-                    <div className="rounded-lg bg-rose-50 dark:bg-rose-950/40 p-2 shrink-0">
-                      <t.icon className="h-4 w-4 text-rose-700 dark:text-rose-300" />
+                    <div className="rounded-lg bg-danger p-2 shrink-0">
+                      <t.icon className="h-4 w-4 text-danger-foreground " />
                     </div>
                     <h3 className="font-semibold text-foreground">{t.name}</h3>
                   </div>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-3">{t.description}</p>
-                  <p className="text-sm text-foreground/80 leading-relaxed bg-muted/40 rounded-xl p-3">
+                  <p className="text-base text-muted-foreground leading-relaxed mb-3">{t.description}</p>
+                  <p className="text-base text-foreground/80 leading-relaxed bg-muted/40 rounded-xl p-3">
                     {t.signs}
                   </p>
                 </CardContent>
@@ -407,7 +407,7 @@ export default function KidsOnlineSafety() {
                 <Card key={c.title} className="rounded-2xl border border-border bg-card">
                   <CardContent className="p-5">
                     <h3 className="font-semibold text-foreground mb-3">{c.title}</h3>
-                    <blockquote className="text-sm text-muted-foreground leading-relaxed italic border-l-4 border-primary/40 pl-4">
+                    <blockquote className="text-base text-muted-foreground leading-relaxed italic border-l-4 border-primary/40 pl-4">
                       {c.script}
                     </blockquote>
                   </CardContent>
@@ -431,7 +431,7 @@ export default function KidsOnlineSafety() {
               <Card key={r.name} className="rounded-2xl border border-border bg-card hover:border-primary/40 transition-colors">
                 <CardContent className="p-5 flex flex-col h-full">
                   <h3 className="font-semibold text-foreground mb-2">{r.name}</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">{r.description}</p>
+                  <p className="text-base text-muted-foreground leading-relaxed mb-4 flex-1">{r.description}</p>
                   <div className="space-y-2">
                     {r.phone && (
                       <Button asChild variant="default" size="sm" className="rounded-xl gap-2 w-full">

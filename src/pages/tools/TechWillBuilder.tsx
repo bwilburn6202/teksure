@@ -70,14 +70,14 @@ export default function TechWillBuilder() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <ScrollText className="h-8 w-8 text-blue-600" />
+                <ScrollText className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Tech Will Builder</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">
               A one-page plan for your digital life. Print it, sign it, and put it where the right person will find it.
             </p>
-            <p className="text-sm text-muted-foreground mt-3">Not a legal will — pair this with a real one through an attorney.</p>
+            <p className="text-base text-muted-foreground mt-3">Not a legal will — pair this with a real one through an attorney.</p>
           </div>
         </section>
 
@@ -92,7 +92,7 @@ export default function TechWillBuilder() {
               </div>
 
               <div className="border-t border-border pt-5">
-                <p className="text-sm font-semibold mb-3">Who do you trust to handle this?</p>
+                <p className="text-base font-semibold mb-3">Who do you trust to handle this?</p>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div><Label htmlFor="tp">Trusted person</Label><Input id="tp" value={w.trustedPerson} onChange={(e) => set('trustedPerson', e.target.value)} className="mt-1" /></div>
                   <div><Label htmlFor="tr">Relation</Label><Input id="tr" placeholder="e.g. daughter" value={w.trustedRelation} onChange={(e) => set('trustedRelation', e.target.value)} className="mt-1" /></div>
@@ -102,7 +102,7 @@ export default function TechWillBuilder() {
               </div>
 
               <div className="border-t border-border pt-5">
-                <p className="text-sm font-semibold mb-3">Your devices and accounts</p>
+                <p className="text-base font-semibold mb-3">Your devices and accounts</p>
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div><Label htmlFor="dev">Primary phone / computer</Label><Input id="dev" placeholder="iPhone 13, etc." value={w.primaryDevice} onChange={(e) => set('primaryDevice', e.target.value)} className="mt-1" /></div>
                   <div><Label htmlFor="ph">Phone carrier</Label><Input id="ph" value={w.carrierName} onChange={(e) => set('carrierName', e.target.value)} className="mt-1" /></div>
@@ -113,7 +113,7 @@ export default function TechWillBuilder() {
               </div>
 
               <div className="border-t border-border pt-5">
-                <p className="text-sm font-semibold mb-3">How to get in</p>
+                <p className="text-base font-semibold mb-3">How to get in</p>
                 <div className="space-y-4">
                   <div>
                     <Label htmlFor="pm">Password manager I use</Label>
@@ -122,7 +122,7 @@ export default function TechWillBuilder() {
                   <div>
                     <Label htmlFor="pmw">Where the master password is kept</Label>
                     <Input id="pmw" placeholder="e.g. with my attorney, or in the safe" value={w.passwordManagerWhere} onChange={(e) => set('passwordManagerWhere', e.target.value)} className="mt-1" />
-                    <p className="text-xs text-muted-foreground mt-1">Never write the actual master password here. Just where to find it.</p>
+                    <p className="text-sm text-muted-foreground mt-1">Never write the actual master password here. Just where to find it.</p>
                   </div>
                   <div>
                     <Label htmlFor="2fa">Where my 2-factor / backup codes are</Label>
@@ -131,13 +131,13 @@ export default function TechWillBuilder() {
                   <div>
                     <Label htmlFor="pin">Phone unlock hint</Label>
                     <Input id="pin" placeholder="e.g. our anniversary year" value={w.pinHint} onChange={(e) => set('pinHint', e.target.value)} className="mt-1" />
-                    <p className="text-xs text-muted-foreground mt-1">A hint only you and your trusted person would understand. Not the actual PIN.</p>
+                    <p className="text-sm text-muted-foreground mt-1">A hint only you and your trusted person would understand. Not the actual PIN.</p>
                   </div>
                 </div>
               </div>
 
               <div className="border-t border-border pt-5">
-                <p className="text-sm font-semibold mb-3">Accounts and subscriptions</p>
+                <p className="text-base font-semibold mb-3">Accounts and subscriptions</p>
                 <div className="space-y-4">
                   <div>
                     <Label htmlFor="soc">Social media accounts</Label>
@@ -151,7 +151,7 @@ export default function TechWillBuilder() {
               </div>
 
               <div className="border-t border-border pt-5">
-                <p className="text-sm font-semibold mb-3">My wishes</p>
+                <p className="text-base font-semibold mb-3">My wishes</p>
                 <div className="space-y-4">
                   <div>
                     <Label htmlFor="wp">What I want done with photos and videos</Label>
@@ -195,20 +195,20 @@ export default function TechWillBuilder() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Account After Loss</p>
-                <p className="text-xs text-muted-foreground mt-0.5">When you are the trusted person.</p>
+                <p className="font-medium text-base">Account After Loss</p>
+                <p className="text-sm text-muted-foreground mt-0.5">When you are the trusted person.</p>
               </Link>
               <Link to="/tools/family-tech-roundtable" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Family Tech Roundtable</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Talk through this with the family.</p>
+                <p className="font-medium text-base">Family Tech Roundtable</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Talk through this with the family.</p>
               </Link>
               <Link to="/tools/data-broker-removal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Data Broker Removal</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Clean up your digital trail.</p>
+                <p className="font-medium text-base">Data Broker Removal</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Clean up your digital trail.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Nothing you fill in leaves your device. We do not store, send, or save any of this.
           </p>
         </div>
@@ -218,8 +218,8 @@ export default function TechWillBuilder() {
           <header className="border-b-2 border-black pb-3 mb-5">
             <h1 className="text-2xl font-bold">My Tech Will</h1>
             <p>{w.ownerName || '________________'}</p>
-            <p className="text-xs text-gray-600">{w.date ? new Date(w.date).toLocaleDateString('en-US', { dateStyle: 'long' }) : '_______________'}</p>
-            <p className="text-xs text-gray-600 italic mt-2">Not a legal document — a practical guide for the person handling my digital life.</p>
+            <p className="text-sm text-muted-foreground">{w.date ? new Date(w.date).toLocaleDateString('en-US', { dateStyle: 'long' }) : '_______________'}</p>
+            <p className="text-sm text-muted-foreground italic mt-2">Not a legal document — a practical guide for the person handling my digital life.</p>
           </header>
 
           <section className="mb-4 break-inside-avoid">
@@ -270,7 +270,7 @@ export default function TechWillBuilder() {
             <p className="mt-3">Date: ______________________</p>
           </section>
 
-          <footer className="mt-6 text-xs text-gray-600">Built free at TekSure.com — pair this with a real legal will.</footer>
+          <footer className="mt-6 text-xs text-muted-foreground">Built free at TekSure.com — pair this with a real legal will.</footer>
         </div>
       </main>
 

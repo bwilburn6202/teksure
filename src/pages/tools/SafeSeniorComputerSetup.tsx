@@ -78,7 +78,7 @@ export default function SafeSeniorComputerSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <ShieldCheck className="h-8 w-8 text-amber-600" />
+                <ShieldCheck className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Safe Computer Setup for an Elderly Parent</h1>
@@ -91,9 +91,9 @@ export default function SafeSeniorComputerSetup() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Safe Senior Computer Setup' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex items-start gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 mt-0.5 shrink-0" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground mt-0.5 shrink-0" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">This is a guard-rails setup — not a normal full computer setup.</p>
                 <p className="text-muted-foreground">
@@ -106,7 +106,7 @@ export default function SafeSeniorComputerSetup() {
           </Card>
 
           <div className="flex items-center justify-between mb-3">
-            <p className="text-sm text-muted-foreground">{done.size} of {ITEMS.length} done</p>
+            <p className="text-base text-muted-foreground">{done.size} of {ITEMS.length} done</p>
             {done.size > 0 && (
               <Button variant="ghost" size="sm" onClick={reset} className="text-xs h-7">Reset</Button>
             )}
@@ -122,8 +122,8 @@ export default function SafeSeniorComputerSetup() {
                     }`}>
                     <Checkbox checked={done.has(item.id)} onCheckedChange={() => toggle(item.id)} className="mt-1" />
                     <div className="flex-1">
-                      <p className={`font-medium text-sm ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{item.detail}</p>
+                      <p className={`font-medium text-base ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
+                      <p className="text-sm text-muted-foreground mt-1">{item.detail}</p>
                     </div>
                   </label>
                 ))}
@@ -132,11 +132,11 @@ export default function SafeSeniorComputerSetup() {
           </Card>
 
           {done.size === ITEMS.length && (
-            <Card className="border-green-300 bg-green-50 dark:bg-green-950/20 mb-6">
+            <Card className="border-success-foreground/25 bg-success mb-6">
               <CardContent className="p-5 text-center">
-                <Badge className="mb-2 bg-green-100 text-green-700 border-green-300">Guard rails up</Badge>
+                <Badge className="mb-2 bg-success text-success-foreground border-success-foreground/25">Guard rails up</Badge>
                 <p className="font-semibold">The computer is locked down and ready.</p>
-                <p className="text-sm text-muted-foreground mt-1">Save the Scam Message Decoder for the next suspicious text or email.</p>
+                <p className="text-base text-muted-foreground mt-1">Save the Scam Message Decoder for the next suspicious text or email.</p>
                 <Button asChild variant="outline" size="sm" className="mt-3">
                   <Link to="/tools/scam-message-decoder">Scam Message Decoder</Link>
                 </Button>
@@ -148,16 +148,16 @@ export default function SafeSeniorComputerSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/new-computer-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">New Computer Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Standard first-time setup checklist.</p>
+                <p className="font-medium text-base">New Computer Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Standard first-time setup checklist.</p>
               </Link>
               <Link to="/tools/remote-tech-help" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Remote Tech Help</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Help from across the country.</p>
+                <p className="font-medium text-base">Remote Tech Help</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Help from across the country.</p>
               </Link>
               <Link to="/tools/scam-message-decoder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Scam Message Decoder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Paste a suspicious message, get a verdict.</p>
+                <p className="font-medium text-base">Scam Message Decoder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Paste a suspicious message, get a verdict.</p>
               </Link>
             </div>
           </div>

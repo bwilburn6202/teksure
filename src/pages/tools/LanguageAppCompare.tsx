@@ -31,10 +31,10 @@ export default function LanguageAppCompare() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function LanguageAppCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick decision</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Just want to try free</strong> → Duolingo or Mango (library).</li>
               <li><strong>Hear better than read</strong> → Pimsleur audio.</li>
               <li><strong>Need real grammar</strong> → Babbel or Rosetta Stone.</li>
@@ -56,7 +56,7 @@ export default function LanguageAppCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adults can learn languages — research shows 60+ retain just as well with practice.</li>
               <li>Pronunciation may be harder. Listen + repeat slowly.</li>
               <li>Spaced repetition apps (Anki, Memrise) help vocabulary stick.</li>
@@ -70,7 +70,7 @@ export default function LanguageAppCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Brain benefit</h3>
-            <p className="text-sm text-muted-foreground">Bilingual seniors show 4-5 year delay in dementia onset on average. Even partial language learning helps cognitive reserve. 15 min/day is plenty.</p>
+            <p className="text-base text-muted-foreground">Bilingual seniors show 4-5 year delay in dementia onset on average. Even partial language learning helps cognitive reserve. 15 min/day is plenty.</p>
           </CardContent>
         </Card>
       </main>

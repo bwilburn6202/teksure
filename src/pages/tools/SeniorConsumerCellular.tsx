@@ -21,8 +21,8 @@ export default function SeniorConsumerCellular() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Network</h2><p>Uses AT&amp;T and T-Mobile networks. Same coverage as the big carriers.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bring your phone</h2><p>Works with most iPhone, Samsung, and Pixel phones.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">US-based support</h2><p>Real people in Oregon. No long waits. Patient with senior questions.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Other senior options</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>T-Mobile 55+ ($40/month)</li><li>Verizon 55+ in Florida</li><li>Mint Mobile ($15/month for unlimited)</li></ul></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Most seniors only need 1-2 GB data. Don&apos;t pay for unlimited unless you stream a lot.</p></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Other senior options</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>T-Mobile 55+ ($40/month)</li><li>Verizon 55+ in Florida</li><li>Mint Mobile ($15/month for unlimited)</li></ul></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Most seniors only need 1-2 GB data. Don&apos;t pay for unlimited unless you stream a lot.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

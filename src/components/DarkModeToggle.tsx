@@ -39,7 +39,7 @@ export function DarkModeToggle() {
         </Button>
       </TooltipTrigger>
       <TooltipContent>
-        <p className="text-xs">{dark ? 'Light mode' : 'Dark mode'}</p>
+        <p className="text-sm">{dark ? 'Light mode' : 'Dark mode'}</p>
       </TooltipContent>
     </Tooltip>
   );

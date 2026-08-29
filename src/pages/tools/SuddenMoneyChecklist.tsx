@@ -19,14 +19,14 @@ export default function SuddenMoneyChecklist() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">First — pause</h2>
-            <p className="text-sm">70% of lottery winners are broke within 5 years. Sudden inheritance often disappears in 18 months. The reason: emotional decisions made while still grieving or shocked. Pause for 30-90 days before any big moves.</p>
+            <p className="text-base">70% of lottery winners are broke within 5 years. Sudden inheritance often disappears in 18 months. The reason: emotional decisions made while still grieving or shocked. Pause for 30-90 days before any big moves.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Day 1-7</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Don\'t tell people</strong>. The fewer who know, the fewer asks for loans/handouts.</li>
               <li><strong>Park money in HIGH-YIELD savings</strong> at a different bank than your daily one. (See our High-Yield Savings tool.) Earn 4-5% while you think.</li>
               <li><strong>Sit on it</strong>. Don\'t buy anything bigger than dinner.</li>
@@ -37,7 +37,7 @@ export default function SuddenMoneyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Day 7-30</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Hire a fee-only fiduciary</strong> for a one-time plan ($1,500-5,000). NAPFA.org. (See our Fiduciary Advisor Finder.)</li>
               <li><strong>CPA</strong> — for large windfalls, tax planning matters. Estate, gift, capital gains.</li>
               <li><strong>Estate attorney</strong> — update YOUR will, trust, beneficiaries.</li>
@@ -50,7 +50,7 @@ export default function SuddenMoneyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Month 2-6</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li><strong>Long-term plan</strong> — invest for retirement, charity, children/grandchildren.</li>
               <li><strong>Max out tax-advantaged accounts</strong> for the year.</li>
               <li><strong>Consider Roth conversions</strong> if you suddenly have low income.</li>
@@ -64,7 +64,7 @@ export default function SuddenMoneyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Big mistakes</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Buying a luxury car in week 1.</li>
               <li>Lending family huge sums (more than 3 family members ALL coming with big asks).</li>
               <li>Investing in a friend\'s business.</li>
@@ -79,7 +79,7 @@ export default function SuddenMoneyChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If lottery</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Sign back of ticket. Photocopy. Lock in safe deposit box.</li>
               <li>Check state rules — some allow anonymity (DE, KS, MD, ND, OH, SC, etc.).</li>
               <li>Hire CPA + attorney + financial planner BEFORE claiming.</li>
@@ -93,7 +93,7 @@ export default function SuddenMoneyChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Resource</h3>
-            <p className="text-sm text-muted-foreground">"Sudden Money: Managing a Financial Windfall" by Susan Bradley. Top book on the topic. Free at most libraries.</p>
+            <p className="text-base text-muted-foreground">"Sudden Money: Managing a Financial Windfall" by Susan Bradley. Top book on the topic. Free at most libraries.</p>
           </CardContent>
         </Card>
       </main>

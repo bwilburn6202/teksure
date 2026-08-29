@@ -86,7 +86,7 @@ export default function OnlineWillEstate() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <Scroll className="h-8 w-8 text-amber-700 dark:text-amber-300" />
+                <Scroll className="h-8 w-8 text-warn-foreground " />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Online Will & Estate Tools</h1>
@@ -99,8 +99,8 @@ export default function OnlineWillEstate() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Why an online will may be enough</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Why an online will may be enough</p>
+              <p className="text-sm text-muted-foreground">
                 If your estate is straightforward — a home, a bank account, a retirement fund, and clear heirs — a reputable online service produces the same document a $1,500 attorney would, for under $200. The catch: the document still needs to be printed, signed in wet ink, and witnessed properly to count in court. The tool handles the writing; you handle the signing ritual.
               </p>
             </CardContent>
@@ -114,15 +114,15 @@ export default function OnlineWillEstate() {
                     <p className="font-semibold text-base">{s.name}</p>
                     <Badge variant="outline">{s.cost}</Badge>
                   </div>
-                  <p className="text-sm text-muted-foreground mb-3"><strong>Best for:</strong> {s.whoFor}</p>
+                  <p className="text-base text-muted-foreground mb-3"><strong>Best for:</strong> {s.whoFor}</p>
                   <div className="grid sm:grid-cols-2 gap-2 mb-3">
                     <div>
-                      <p className="text-xs font-semibold text-green-700 dark:text-green-300 mb-1">Pros</p>
-                      <ul className="space-y-0.5">{s.pros.map((p, i) => <li key={i} className="text-xs flex gap-1"><span className="text-green-600">+</span><span>{p}</span></li>)}</ul>
+                      <p className="text-sm font-semibold text-success-foreground mb-1">Pros</p>
+                      <ul className="space-y-0.5">{s.pros.map((p, i) => <li key={i} className="text-sm flex gap-1"><span className="text-success-foreground">+</span><span>{p}</span></li>)}</ul>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-red-700 dark:text-red-300 mb-1">Cons</p>
-                      <ul className="space-y-0.5">{s.cons.map((c, i) => <li key={i} className="text-xs flex gap-1"><span className="text-red-600">−</span><span>{c}</span></li>)}</ul>
+                      <p className="text-sm font-semibold text-danger-foreground mb-1">Cons</p>
+                      <ul className="space-y-0.5">{s.cons.map((c, i) => <li key={i} className="text-sm flex gap-1"><span className="text-danger-foreground">−</span><span>{c}</span></li>)}</ul>
                     </div>
                   </div>
                   <a href={s.link} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-primary hover:underline">
@@ -134,12 +134,12 @@ export default function OnlineWillEstate() {
             {!showAll && (<Button variant="outline" onClick={() => setShowAll(true)}>Show all 6 services</Button>)}
           </div>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Signing rules — most wills require wet ink</p>
-                <p className="text-xs mt-1">
+                <p className="text-sm mt-1">
                   In nearly every state, your will is not valid until you print it, sign it in pen, and have two adult witnesses sign in front of you. Some states (Nevada, Indiana, Arizona, Colorado, Florida, Illinois, North Dakota, Utah, Washington) allow electronic wills with notary video sessions, but the rules vary. When unsure: print, pen, two witnesses, notary if your state asks. Store the original in a fireproof box and tell your executor where it is.
                 </p>
               </div>
@@ -148,8 +148,8 @@ export default function OnlineWillEstate() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">When to skip these tools and hire an attorney</p>
-              <ul className="text-xs text-muted-foreground space-y-1.5">
+              <p className="text-base font-semibold mb-2">When to skip these tools and hire an attorney</p>
+              <ul className="text-sm text-muted-foreground space-y-1.5">
                 <li>• Estate is over $1 million or you own property in multiple states.</li>
                 <li>• You own a business or rental properties.</li>
                 <li>• You have a child with special needs (a special needs trust is involved).</li>
@@ -157,7 +157,7 @@ export default function OnlineWillEstate() {
                 <li>• You expect family conflict or a contested will.</li>
                 <li>• You want a tax-saving trust structure.</li>
               </ul>
-              <p className="text-xs text-muted-foreground mt-3">In any of those cases, a $1,500 attorney saves your family $50,000 in probate fees later. Worth every dollar.</p>
+              <p className="text-sm text-muted-foreground mt-3">In any of those cases, a $1,500 attorney saves your family $50,000 in probate fees later. Worth every dollar.</p>
             </CardContent>
           </Card>
 
@@ -165,20 +165,20 @@ export default function OnlineWillEstate() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/tech-will-builder" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Tech Will Builder</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Plan what happens to your digital accounts.</p>
+                <p className="font-medium text-base">Tech Will Builder</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Plan what happens to your digital accounts.</p>
               </Link>
               <Link to="/tools/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Account After Loss</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Close accounts of a loved one who passed.</p>
+                <p className="font-medium text-base">Account After Loss</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Close accounts of a loved one who passed.</p>
               </Link>
               <Link to="/tools/free-legal-help" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Free Legal Help</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Find no-cost legal aid in your state.</p>
+                <p className="font-medium text-base">Free Legal Help</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Find no-cost legal aid in your state.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: tell your executor where the signed original lives. A perfect will hidden in a drawer no one knows about helps no one.
           </p>
         </div>

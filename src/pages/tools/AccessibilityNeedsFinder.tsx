@@ -267,7 +267,7 @@ export default function AccessibilityNeedsFinder() {
                             onChange={() => toggleAnswer(q.id)}
                             className="mt-0.5"
                           />
-                          <span className="text-sm leading-relaxed">{q.question}</span>
+                          <span className="text-base leading-relaxed">{q.question}</span>
                         </Label>
                       ))}
                     </div>
@@ -287,7 +287,7 @@ export default function AccessibilityNeedsFinder() {
               </div>
 
               {answers.size === 0 && (
-                <p className="text-sm text-muted-foreground mt-3 text-center">
+                <p className="text-base text-muted-foreground mt-3 text-center">
                   Check at least one item above to see recommendations.
                 </p>
               )}
@@ -312,11 +312,11 @@ export default function AccessibilityNeedsFinder() {
                   <Card key={rec.feature}>
                     <CardContent className="p-5">
                       <div className="flex items-center gap-2 mb-2 flex-wrap">
-                        <CheckCircle className="w-5 h-5 text-green-600" />
+                        <CheckCircle className="w-5 h-5 text-success-foreground" />
                         <h3 className="font-semibold text-lg">{rec.feature}</h3>
                         <Badge variant="outline" className="text-xs">Matches {rec.matchCount} item{rec.matchCount !== 1 ? 's' : ''}</Badge>
                       </div>
-                      <p className="text-sm text-muted-foreground mb-4 leading-relaxed">{rec.description}</p>
+                      <p className="text-base text-muted-foreground mb-4 leading-relaxed">{rec.description}</p>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mb-3">
                         {rec.platforms.map((p) => (
                           <div key={p.name} className="p-3 rounded-md bg-muted/40 border border-border">

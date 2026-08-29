@@ -19,7 +19,7 @@ export default function EvacuationGoBag() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior go-bag essentials</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>7-day medications</strong> — rotate every 3 months.</li>
               <li><strong>Glasses + reading glasses</strong> — extra pair.</li>
               <li><strong>Hearing aid + batteries</strong>.</li>
@@ -40,7 +40,7 @@ export default function EvacuationGoBag() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Documents in waterproof bag</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Birth + marriage certificates.</li>
               <li>Passport.</li>
               <li>Driver&apos;s license / state ID.</li>
@@ -58,7 +58,7 @@ export default function EvacuationGoBag() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pet go-bag</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>3 days food + water.</li>
               <li>Leash + carrier.</li>
               <li>Medications.</li>
@@ -72,7 +72,7 @@ export default function EvacuationGoBag() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to keep</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Closet near front door.</li>
               <li>Backpack — easier to carry than suitcase.</li>
               <li>Tell family WHERE it is.</li>
@@ -86,7 +86,7 @@ export default function EvacuationGoBag() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Daily essentials separately</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t put critical daily items (current meds, glasses, hearing aids) IN the bag — you need them daily. Have a "grab" list taped on bag: phone + glasses + hearing aid + meds. 30 seconds. Out the door.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t put critical daily items (current meds, glasses, hearing aids) IN the bag — you need them daily. Have a "grab" list taped on bag: phone + glasses + hearing aid + meds. 30 seconds. Out the door.</p>
           </CardContent>
         </Card>
       </main>

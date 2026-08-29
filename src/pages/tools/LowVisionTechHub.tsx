@@ -1078,17 +1078,17 @@ export default function LowVisionTechHub() {
                 Back to all devices
               </Button>
               <div className="flex items-center gap-3 mb-3">
-                <div className="p-3 rounded-xl bg-violet-600/10 text-violet-700 dark:text-violet-300">
+                <div className="p-3 rounded-xl bg-violet-600/10 text-primary ">
                   <selectedDevice.icon className="w-8 h-8" />
                 </div>
                 <Badge variant="outline" className="text-sm">
                   {walks.length} settings walkthroughs
                 </Badge>
               </div>
-              <h1 className="text-3xl md:text-5xl font-bold mb-3 text-slate-900 dark:text-slate-50">
+              <h1 className="text-3xl md:text-5xl font-bold mb-3 text-foreground ">
                 {selectedDevice.name}
               </h1>
-              <p className="text-lg md:text-2xl text-slate-700 dark:text-slate-200 max-w-3xl leading-relaxed">
+              <p className="text-lg md:text-2xl text-foreground max-w-3xl leading-relaxed">
                 {selectedDevice.tagline}
               </p>
             </div>
@@ -1100,7 +1100,7 @@ export default function LowVisionTechHub() {
                 <AccordionItem
                   key={w.title}
                   value={`item-${i}`}
-                  className="border-2 border-violet-200 dark:border-violet-800 rounded-xl bg-card px-2"
+                  className="border-2 border-primary/25 rounded-xl bg-card px-2"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-5">
                     <div className="flex items-start gap-3 pr-4">
@@ -1111,7 +1111,7 @@ export default function LowVisionTechHub() {
                     </div>
                   </AccordionTrigger>
                   <AccordionContent className="pt-2 pb-6 px-2 space-y-4">
-                    <div className="rounded-xl bg-amber-50 dark:bg-amber-950/20 border-l-4 border-amber-600 p-4">
+                    <div className="rounded-xl bg-warn border-l-4 border-amber-600 p-4">
                       <p className="text-base md:text-lg leading-relaxed">
                         <strong>Where:</strong> {w.path}
                       </p>
@@ -1176,17 +1176,17 @@ export default function LowVisionTechHub() {
               <div className="p-3 rounded-xl bg-violet-600 text-white shadow-lg">
                 <Eye className="w-8 h-8" />
               </div>
-              <Badge variant="outline" className="text-sm md:text-base border-violet-300 dark:border-violet-700">
+              <Badge variant="outline" className="text-sm md:text-base border-primary/25 ">
                 Accessibility · For everyday vision challenges
               </Badge>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight text-slate-900 dark:text-slate-50 pr-14">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight text-foreground pr-14">
               Tech You Can Actually See
             </h1>
-            <p className="text-xl md:text-3xl text-slate-800 dark:text-slate-100 max-w-3xl leading-relaxed font-medium">
+            <p className="text-xl md:text-3xl text-foreground max-w-3xl leading-relaxed font-medium">
               Every setting, every trick, every tool to make your devices easier to see.
             </p>
-            <p className="text-base md:text-xl text-slate-700 dark:text-slate-200 max-w-3xl leading-relaxed mt-4">
+            <p className="text-base md:text-xl text-foreground max-w-3xl leading-relaxed mt-4">
               Built for macular degeneration, glaucoma, cataracts, diabetic retinopathy, and just plain aging eyes. No jargon. No assumptions. Start wherever makes sense.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -1206,10 +1206,10 @@ export default function LowVisionTechHub() {
 
         {/* ── Device picker ─────────────────────────────────── */}
         <section className="container py-10 md:py-14">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-slate-900 dark:text-slate-50">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-foreground ">
             Start with your device
           </h2>
-          <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 mb-8 max-w-3xl leading-relaxed">
+          <p className="text-lg md:text-xl text-foreground mb-8 max-w-3xl leading-relaxed">
             Pick the thing you use most. Every option below opens a full step-by-step walkthrough.
           </p>
 
@@ -1219,22 +1219,22 @@ export default function LowVisionTechHub() {
                 key={d.id}
                 type="button"
                 onClick={() => pickDevice(d.id)}
-                className="group text-left p-6 rounded-2xl border-2 border-violet-200 dark:border-violet-800 bg-card hover:border-violet-600 dark:hover:border-violet-400 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 transition-all min-h-40"
+                className="group text-left p-6 rounded-2xl border-2 border-primary/25 bg-card hover:border-violet-600 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 transition-all min-h-40"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 rounded-xl bg-violet-100 dark:bg-violet-900/40 text-violet-700 dark:text-violet-300 group-hover:bg-violet-600 group-hover:text-white transition-colors shrink-0">
+                  <div className="p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-violet-600 group-hover:text-white transition-colors shrink-0">
                     <d.icon className="w-8 h-8" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2 text-slate-900 dark:text-slate-50">
+                    <h3 className="text-2xl font-bold mb-2 text-foreground ">
                       {d.name}
                     </h3>
-                    <p className="text-base md:text-lg leading-relaxed text-slate-700 dark:text-slate-200">
+                    <p className="text-base md:text-lg leading-relaxed text-foreground ">
                       {d.tagline}
                     </p>
                   </div>
                 </div>
-                <div className="mt-4 flex items-center gap-2 text-violet-700 dark:text-violet-300 font-semibold text-base">
+                <div className="mt-4 flex items-center gap-2 text-primary font-semibold text-base">
                   Open walkthrough
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
@@ -1244,18 +1244,18 @@ export default function LowVisionTechHub() {
         </section>
 
         {/* ── Standalone low-vision tech ────────────────────── */}
-        <section className="border-t border-border bg-slate-50 dark:bg-slate-900/40">
+        <section className="border-t border-border bg-muted ">
           <div className="container py-10 md:py-14">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-slate-900 dark:text-slate-50">
-              <Sparkles className="w-8 h-8 text-violet-600 dark:text-violet-400" />
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-foreground ">
+              <Sparkles className="w-8 h-8 text-primary " />
               Tools beyond the built-in settings
             </h2>
-            <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 mb-8 max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-xl text-foreground mb-8 max-w-3xl leading-relaxed">
               These apps and pieces of hardware go further than anything built into your phone or computer.
             </p>
 
-            <h3 className="text-2xl md:text-3xl font-bold mt-4 mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-50">
-              <Search className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+            <h3 className="text-2xl md:text-3xl font-bold mt-4 mb-4 flex items-center gap-2 text-foreground ">
+              <Search className="w-6 h-6 text-primary " />
               Magnifying &amp; reading apps
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1263,13 +1263,13 @@ export default function LowVisionTechHub() {
                 <Card key={t.name} className="border-2">
                   <CardContent className="p-5 space-y-3">
                     <div className="flex items-start justify-between gap-2">
-                      <h4 className="text-xl font-bold text-slate-900 dark:text-slate-50">{t.name}</h4>
+                      <h4 className="text-xl font-bold text-foreground ">{t.name}</h4>
                       <Badge variant="secondary" className="text-sm shrink-0">{t.price}</Badge>
                     </div>
                     <p className="text-base leading-relaxed">{t.what}</p>
                     <p className="text-base leading-relaxed text-muted-foreground"><strong>Best for:</strong> {t.who}</p>
                     {t.link && (
-                      <a href={t.link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-violet-700 dark:text-violet-300 underline font-semibold text-base">
+                      <a href={t.link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-primary underline font-semibold text-base">
                         {t.link.label} <ExternalLink className="w-4 h-4" />
                       </a>
                     )}
@@ -1278,8 +1278,8 @@ export default function LowVisionTechHub() {
               ))}
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold mt-10 mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-50">
-              <Volume2 className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+            <h3 className="text-2xl md:text-3xl font-bold mt-10 mb-4 flex items-center gap-2 text-foreground ">
+              <Volume2 className="w-6 h-6 text-primary " />
               Screen readers
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1287,13 +1287,13 @@ export default function LowVisionTechHub() {
                 <Card key={t.name} className="border-2">
                   <CardContent className="p-5 space-y-3">
                     <div className="flex items-start justify-between gap-2">
-                      <h4 className="text-xl font-bold text-slate-900 dark:text-slate-50">{t.name}</h4>
+                      <h4 className="text-xl font-bold text-foreground ">{t.name}</h4>
                       <Badge variant="secondary" className="text-sm shrink-0">{t.price}</Badge>
                     </div>
                     <p className="text-base leading-relaxed">{t.what}</p>
                     <p className="text-base leading-relaxed text-muted-foreground"><strong>Best for:</strong> {t.who}</p>
                     {t.link && (
-                      <a href={t.link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-violet-700 dark:text-violet-300 underline font-semibold text-base">
+                      <a href={t.link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-primary underline font-semibold text-base">
                         {t.link.label} <ExternalLink className="w-4 h-4" />
                       </a>
                     )}
@@ -1302,8 +1302,8 @@ export default function LowVisionTechHub() {
               ))}
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold mt-10 mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-50">
-              <Glasses className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+            <h3 className="text-2xl md:text-3xl font-bold mt-10 mb-4 flex items-center gap-2 text-foreground ">
+              <Glasses className="w-6 h-6 text-primary " />
               Electronic magnifiers &amp; smart glasses
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1311,13 +1311,13 @@ export default function LowVisionTechHub() {
                 <Card key={t.name} className="border-2">
                   <CardContent className="p-5 space-y-3">
                     <div className="flex items-start justify-between gap-2">
-                      <h4 className="text-xl font-bold text-slate-900 dark:text-slate-50">{t.name}</h4>
+                      <h4 className="text-xl font-bold text-foreground ">{t.name}</h4>
                       <Badge variant="secondary" className="text-sm shrink-0">{t.price}</Badge>
                     </div>
                     <p className="text-base leading-relaxed">{t.what}</p>
                     <p className="text-base leading-relaxed text-muted-foreground"><strong>Best for:</strong> {t.who}</p>
                     {t.link && (
-                      <a href={t.link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-violet-700 dark:text-violet-300 underline font-semibold text-base">
+                      <a href={t.link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-primary underline font-semibold text-base">
                         {t.link.label} <ExternalLink className="w-4 h-4" />
                       </a>
                     )}
@@ -1326,22 +1326,22 @@ export default function LowVisionTechHub() {
               ))}
             </div>
 
-            <h3 className="text-2xl md:text-3xl font-bold mt-10 mb-4 flex items-center gap-2 text-slate-900 dark:text-slate-50">
-              <HeartHandshake className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+            <h3 className="text-2xl md:text-3xl font-bold mt-10 mb-4 flex items-center gap-2 text-foreground ">
+              <HeartHandshake className="w-6 h-6 text-primary " />
               Visual help on demand
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {HELP_SERVICES.map((t) => (
-                <Card key={t.name} className="border-2 border-violet-300 dark:border-violet-700">
+                <Card key={t.name} className="border-2 border-primary/25 ">
                   <CardContent className="p-5 space-y-3">
                     <div className="flex items-start justify-between gap-2">
-                      <h4 className="text-xl font-bold text-slate-900 dark:text-slate-50">{t.name}</h4>
+                      <h4 className="text-xl font-bold text-foreground ">{t.name}</h4>
                       <Badge variant="secondary" className="text-sm shrink-0">{t.price}</Badge>
                     </div>
                     <p className="text-base leading-relaxed">{t.what}</p>
                     <p className="text-base leading-relaxed text-muted-foreground"><strong>Best for:</strong> {t.who}</p>
                     {t.link && (
-                      <a href={t.link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-violet-700 dark:text-violet-300 underline font-semibold text-base">
+                      <a href={t.link.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-primary underline font-semibold text-base">
                         {t.link.label} <ExternalLink className="w-4 h-4" />
                       </a>
                     )}
@@ -1354,21 +1354,21 @@ export default function LowVisionTechHub() {
 
         {/* ── Lighting & environment ─────────────────────────── */}
         <section className="container py-10 md:py-14">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-slate-900 dark:text-slate-50">
-            <Sun className="w-8 h-8 text-amber-600 dark:text-amber-400" />
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-foreground ">
+            <Sun className="w-8 h-8 text-warn-foreground " />
             Lighting &amp; your space
           </h2>
-          <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 mb-8 max-w-3xl leading-relaxed">
+          <p className="text-lg md:text-xl text-foreground mb-8 max-w-3xl leading-relaxed">
             Tech settings matter, but the room around you matters too. Small changes here often do more than any screen setting.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {LIGHTING_TIPS.map((tip) => (
-              <Card key={tip.title} className="border-2 border-amber-200 dark:border-amber-900 bg-amber-50/50 dark:bg-amber-950/10">
+              <Card key={tip.title} className="border-2 border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/10">
                 <CardContent className="p-5">
                   <div className="flex items-start gap-3 mb-2">
-                    <Lightbulb className="w-6 h-6 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
-                    <h3 className="text-xl font-bold text-slate-900 dark:text-slate-50">{tip.title}</h3>
+                    <Lightbulb className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                    <h3 className="text-xl font-bold text-foreground ">{tip.title}</h3>
                   </div>
                   <p className="text-base leading-relaxed">{tip.body}</p>
                 </CardContent>
@@ -1378,13 +1378,13 @@ export default function LowVisionTechHub() {
         </section>
 
         {/* ── Organization helpers ───────────────────────────── */}
-        <section className="border-t border-border bg-slate-50 dark:bg-slate-900/40">
+        <section className="border-t border-border bg-muted ">
           <div className="container py-10 md:py-14">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-slate-900 dark:text-slate-50">
-              <Settings className="w-8 h-8 text-violet-600 dark:text-violet-400" />
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-foreground ">
+              <Settings className="w-8 h-8 text-primary " />
               Organization helpers
             </h2>
-            <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 mb-8 max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-xl text-foreground mb-8 max-w-3xl leading-relaxed">
               A few setup choices up front save hours of squinting later.
             </p>
 
@@ -1392,8 +1392,8 @@ export default function LowVisionTechHub() {
               {ORGANIZATION_TIPS.map((tip) => (
                 <Card key={tip.title} className="border-2">
                   <CardContent className="p-5">
-                    <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-slate-50 flex items-center gap-2">
-                      <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400" />
+                    <h3 className="text-xl font-bold mb-2 text-foreground flex items-center gap-2">
+                      <CheckCircle2 className="w-5 h-5 text-success-foreground " />
                       {tip.title}
                     </h3>
                     <p className="text-base leading-relaxed">{tip.body}</p>
@@ -1406,11 +1406,11 @@ export default function LowVisionTechHub() {
 
         {/* ── Eye condition quick-fit ────────────────────────── */}
         <section id="eye-conditions" className="container py-10 md:py-14">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-slate-900 dark:text-slate-50">
-            <Eye className="w-8 h-8 text-violet-600 dark:text-violet-400" />
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-foreground ">
+            <Eye className="w-8 h-8 text-primary " />
             Match your eye condition
           </h2>
-          <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 mb-8 max-w-3xl leading-relaxed">
+          <p className="text-lg md:text-xl text-foreground mb-8 max-w-3xl leading-relaxed">
             Different conditions benefit from different settings. Tap the one that sounds like your situation for a tailored plan.
           </p>
 
@@ -1432,7 +1432,7 @@ export default function LowVisionTechHub() {
                   <div className="flex items-start gap-3">
                     <c.icon className={['w-7 h-7 shrink-0 mt-1', active ? 'text-violet-700 dark:text-violet-300' : 'text-violet-500 dark:text-violet-400'].join(' ')} />
                     <div>
-                      <h3 className="text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-50 mb-1">{c.condition}</h3>
+                      <h3 className="text-xl md:text-2xl font-bold text-foreground mb-1">{c.condition}</h3>
                       <p className="text-base leading-relaxed">{c.plain}</p>
                     </div>
                   </div>
@@ -1443,15 +1443,15 @@ export default function LowVisionTechHub() {
 
           {activeCondition && (
             <Alert className="border-2 border-violet-400 dark:border-violet-700 bg-violet-50/60 dark:bg-violet-950/30">
-              <Sparkles className="h-5 w-5 text-violet-700 dark:text-violet-300" />
-              <AlertTitle className="text-xl md:text-2xl font-bold mb-2 text-slate-900 dark:text-slate-50">
+              <Sparkles className="h-5 w-5 text-primary " />
+              <AlertTitle className="text-xl md:text-2xl font-bold mb-2 text-foreground ">
                 Suggestions for {activeCondition}
               </AlertTitle>
               <AlertDescription>
                 <ul className="space-y-2 mt-2">
                   {CONDITIONS.find((c) => c.condition === activeCondition)?.suggestions.map((s) => (
                     <li key={s} className="flex gap-2 text-base md:text-lg leading-relaxed">
-                      <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-1" />
+                      <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-1" />
                       <span>{s}</span>
                     </li>
                   ))}
@@ -1462,13 +1462,13 @@ export default function LowVisionTechHub() {
         </section>
 
         {/* ── Free services & orgs ──────────────────────────── */}
-        <section className="border-t border-border bg-slate-50 dark:bg-slate-900/40">
+        <section className="border-t border-border bg-muted ">
           <div className="container py-10 md:py-14">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-slate-900 dark:text-slate-50">
-              <HeartHandshake className="w-8 h-8 text-violet-600 dark:text-violet-400" />
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-foreground ">
+              <HeartHandshake className="w-8 h-8 text-primary " />
               Free services &amp; organizations
             </h2>
-            <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 mb-8 max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-xl text-foreground mb-8 max-w-3xl leading-relaxed">
               These groups offer free audiobooks, training, classes, and visual help. They are all legitimate nonprofits or government programs.
             </p>
 
@@ -1476,9 +1476,9 @@ export default function LowVisionTechHub() {
               {FREE_SERVICES.map((r) => (
                 <Card key={r.name} className="border-2">
                   <CardContent className="p-5">
-                    <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-slate-50">{r.name}</h3>
+                    <h3 className="text-xl font-bold mb-2 text-foreground ">{r.name}</h3>
                     <p className="text-base leading-relaxed mb-3">{r.what}</p>
-                    <a href={r.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-violet-700 dark:text-violet-300 underline font-semibold text-base min-h-10">
+                    <a href={r.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-primary underline font-semibold text-base min-h-10">
                       Visit website <ExternalLink className="w-4 h-4" />
                     </a>
                   </CardContent>
@@ -1490,20 +1490,20 @@ export default function LowVisionTechHub() {
 
         {/* ── Insurance & Medicare ──────────────────────────── */}
         <section className="container py-10 md:py-14">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-slate-900 dark:text-slate-50">
-            <ShieldCheck className="w-8 h-8 text-violet-600 dark:text-violet-400" />
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-foreground ">
+            <ShieldCheck className="w-8 h-8 text-primary " />
             Insurance &amp; Medicare
           </h2>
-          <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 mb-8 max-w-3xl leading-relaxed">
+          <p className="text-lg md:text-xl text-foreground mb-8 max-w-3xl leading-relaxed">
             Low-vision care is covered more than people realize. Here is what you can ask about.
           </p>
 
           <div className="space-y-4">
             {INSURANCE_INFO.map((item) => (
-              <Card key={item.title} className="border-2 border-violet-200 dark:border-violet-800">
+              <Card key={item.title} className="border-2 border-primary/25 ">
                 <CardContent className="p-5">
-                  <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-slate-50 flex items-center gap-2">
-                    <Building2 className="w-5 h-5 text-violet-600 dark:text-violet-400" />
+                  <h3 className="text-xl font-bold mb-2 text-foreground flex items-center gap-2">
+                    <Building2 className="w-5 h-5 text-primary " />
                     {item.title}
                   </h3>
                   <p className="text-base md:text-lg leading-relaxed">{item.body}</p>
@@ -1512,8 +1512,8 @@ export default function LowVisionTechHub() {
             ))}
           </div>
 
-          <Alert className="mt-6 border-2 border-amber-400 bg-amber-50 dark:bg-amber-950/20">
-            <AlertTriangle className="h-5 w-5 text-amber-700 dark:text-amber-400" />
+          <Alert className="mt-6 border-2 border-amber-400 bg-warn ">
+            <AlertTriangle className="h-5 w-5 text-warn-foreground " />
             <AlertTitle className="text-lg md:text-xl font-bold">A note on benefits</AlertTitle>
             <AlertDescription className="text-base md:text-lg leading-relaxed mt-1">
               Coverage varies by state and plan. Call your insurance company directly — or ask your eye doctor&apos;s office to help check — before assuming something isn&apos;t covered.
@@ -1522,13 +1522,13 @@ export default function LowVisionTechHub() {
         </section>
 
         {/* ── Caregiver section ─────────────────────────────── */}
-        <section className="border-t border-border bg-slate-50 dark:bg-slate-900/40">
+        <section className="border-t border-border bg-muted ">
           <div className="container py-10 md:py-14">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-slate-900 dark:text-slate-50">
-              <Users className="w-8 h-8 text-violet-600 dark:text-violet-400" />
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-foreground ">
+              <Users className="w-8 h-8 text-primary " />
               Helping a family member with vision loss
             </h2>
-            <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 mb-8 max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-xl text-foreground mb-8 max-w-3xl leading-relaxed">
               If you&apos;re the one helping a parent, spouse, or friend, these are the setups that save everyone time and frustration.
             </p>
 
@@ -1536,7 +1536,7 @@ export default function LowVisionTechHub() {
               {CAREGIVER_TIPS.map((tip) => (
                 <Card key={tip.title} className="border-2">
                   <CardContent className="p-5">
-                    <h3 className="text-xl font-bold mb-2 text-slate-900 dark:text-slate-50">{tip.title}</h3>
+                    <h3 className="text-xl font-bold mb-2 text-foreground ">{tip.title}</h3>
                     <p className="text-base leading-relaxed">{tip.body}</p>
                   </CardContent>
                 </Card>
@@ -1552,10 +1552,10 @@ export default function LowVisionTechHub() {
               <div className="inline-flex p-4 rounded-full bg-violet-600 text-white">
                 <Printer className="w-10 h-10" />
               </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-50">
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground ">
                 Print the Quick-Fix Cheat Sheet
               </h2>
-              <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-lg md:text-xl text-foreground max-w-2xl mx-auto leading-relaxed">
                 One page. Extra-large print. The top 5 low-vision settings for iPhone, Android, Windows, and Mac. Keep it by your TV or desk.
               </p>
               <Button size="lg" onClick={printCheatSheet} className="gap-2 text-lg min-h-14 bg-violet-700 hover:bg-violet-800 text-white mt-2">
@@ -1567,13 +1567,13 @@ export default function LowVisionTechHub() {
         </section>
 
         {/* ── FAQ ────────────────────────────────────────────── */}
-        <section className="border-t border-border bg-slate-50 dark:bg-slate-900/40">
+        <section className="border-t border-border bg-muted ">
           <div className="container py-10 md:py-14 max-w-4xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-slate-900 dark:text-slate-50">
-              <HelpCircle className="w-8 h-8 text-violet-600 dark:text-violet-400" />
+            <h2 className="text-3xl md:text-4xl font-bold mb-3 flex items-center gap-3 text-foreground ">
+              <HelpCircle className="w-8 h-8 text-primary " />
               Questions people ask
             </h2>
-            <p className="text-lg md:text-xl text-slate-700 dark:text-slate-200 mb-8 leading-relaxed">
+            <p className="text-lg md:text-xl text-foreground mb-8 leading-relaxed">
               Straight answers to the most common low-vision tech questions.
             </p>
 
@@ -1582,7 +1582,7 @@ export default function LowVisionTechHub() {
                 <AccordionItem
                   key={f.q}
                   value={`faq-${i}`}
-                  className="border-2 border-violet-200 dark:border-violet-800 rounded-xl bg-card px-4"
+                  className="border-2 border-primary/25 rounded-xl bg-card px-4"
                 >
                   <AccordionTrigger className="text-left hover:no-underline py-5 text-lg md:text-2xl font-semibold">
                     {f.q}
@@ -1598,47 +1598,47 @@ export default function LowVisionTechHub() {
 
         {/* ── Related links ─────────────────────────────────── */}
         <section className="container py-10 md:py-14">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-slate-900 dark:text-slate-50">Keep going</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-foreground ">Keep going</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Link
               to="/accessibility"
-              className="p-5 rounded-xl border-2 border-violet-200 dark:border-violet-800 bg-card hover:border-violet-600 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 transition-all flex items-center justify-between gap-3 min-h-16"
+              className="p-5 rounded-xl border-2 border-primary/25 bg-card hover:border-violet-600 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 transition-all flex items-center justify-between gap-3 min-h-16"
             >
               <div className="flex items-center gap-3">
-                <Contrast className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+                <Contrast className="w-6 h-6 text-primary " />
                 <span className="text-lg font-semibold">Accessibility Hub — all senses covered</span>
               </div>
-              <ArrowRight className="w-5 h-5 text-violet-600 dark:text-violet-400" />
+              <ArrowRight className="w-5 h-5 text-primary " />
             </Link>
             <Link
               to="/tools/my-first-smartphone"
-              className="p-5 rounded-xl border-2 border-violet-200 dark:border-violet-800 bg-card hover:border-violet-600 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 transition-all flex items-center justify-between gap-3 min-h-16"
+              className="p-5 rounded-xl border-2 border-primary/25 bg-card hover:border-violet-600 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 transition-all flex items-center justify-between gap-3 min-h-16"
             >
               <div className="flex items-center gap-3">
-                <Phone className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+                <Phone className="w-6 h-6 text-primary " />
                 <span className="text-lg font-semibold">My First Smartphone</span>
               </div>
-              <ArrowRight className="w-5 h-5 text-violet-600 dark:text-violet-400" />
+              <ArrowRight className="w-5 h-5 text-primary " />
             </Link>
             <Link
               to="/tools/ipad-for-seniors"
-              className="p-5 rounded-xl border-2 border-violet-200 dark:border-violet-800 bg-card hover:border-violet-600 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 transition-all flex items-center justify-between gap-3 min-h-16"
+              className="p-5 rounded-xl border-2 border-primary/25 bg-card hover:border-violet-600 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 transition-all flex items-center justify-between gap-3 min-h-16"
             >
               <div className="flex items-center gap-3">
-                <Tablet className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+                <Tablet className="w-6 h-6 text-primary " />
                 <span className="text-lg font-semibold">iPad for Seniors</span>
               </div>
-              <ArrowRight className="w-5 h-5 text-violet-600 dark:text-violet-400" />
+              <ArrowRight className="w-5 h-5 text-primary " />
             </Link>
             <Link
               to="/guides"
-              className="p-5 rounded-xl border-2 border-violet-200 dark:border-violet-800 bg-card hover:border-violet-600 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 transition-all flex items-center justify-between gap-3 min-h-16"
+              className="p-5 rounded-xl border-2 border-primary/25 bg-card hover:border-violet-600 hover:bg-violet-50/50 dark:hover:bg-violet-950/30 transition-all flex items-center justify-between gap-3 min-h-16"
             >
               <div className="flex items-center gap-3">
-                <BookOpen className="w-6 h-6 text-violet-600 dark:text-violet-400" />
+                <BookOpen className="w-6 h-6 text-primary " />
                 <span className="text-lg font-semibold">All TekSure guides</span>
               </div>
-              <ArrowRight className="w-5 h-5 text-violet-600 dark:text-violet-400" />
+              <ArrowRight className="w-5 h-5 text-primary " />
             </Link>
           </div>
         </section>

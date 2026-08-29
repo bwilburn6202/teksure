@@ -20,9 +20,9 @@ export default function SeniorDatingApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">OurTime</h2><p>$30/month. Mature audience. Easy to use.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Match.com</h2><p>$30/month. Largest. Mixed ages but lots of seniors.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">eHarmony</h2><p>$36/month. Personality matching. Many seniors find serious relationships.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SAFETY RULES</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>NEVER send money</li><li>Meet in public first</li><li>Tell a family member</li><li>Video chat before meeting</li><li>If they avoid video, scam</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SAFETY RULES</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>NEVER send money</li><li>Meet in public first</li><li>Tell a family member</li><li>Video chat before meeting</li><li>If they avoid video, scam</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Romance scams</h2><p>$1.3 billion stolen yearly. If they ask for money, they&apos;re scamming.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Real love takes time. Anyone rushing &ldquo;love&rdquo; in 1 week is suspicious.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Real love takes time. Anyone rushing &ldquo;love&rdquo; in 1 week is suspicious.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

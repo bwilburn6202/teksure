@@ -95,19 +95,19 @@ function scoreToRating(score: number): { label: string; color: string; icon: Rea
   if (score >= 3) return {
     label: "Great habits",
     color: "text-green-700",
-    icon: <BatteryFull className="h-8 w-8 text-green-600" />,
+    icon: <BatteryFull className="h-8 w-8 text-success-foreground" />,
     advice: "Your charging habits are already protecting your battery. Keep it up — and review the tips below to make sure you haven't missed anything.",
   };
   if (score >= 0) return {
     label: "Room to improve",
     color: "text-yellow-700",
-    icon: <BatteryMedium className="h-8 w-8 text-yellow-500" />,
+    icon: <BatteryMedium className="h-8 w-8 text-warn-foreground" />,
     advice: "Your habits are decent but a few small changes could noticeably extend your battery life and health over time.",
   };
   return {
     label: "Battery at risk",
     color: "text-red-700",
-    icon: <BatteryLow className="h-8 w-8 text-red-500" />,
+    icon: <BatteryLow className="h-8 w-8 text-danger-foreground" />,
     advice: "Some of your current habits may be wearing down your battery faster than normal. The tips below will help you change that.",
   };
 }
@@ -130,7 +130,7 @@ export default function PhoneBatteryCareGuide() {
   const platformTips = platform ? TIPS_BY_PLATFORM[platform] : [];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Phone Battery Care Guide | TekSure"
         description="Find out if your charging habits are hurting your battery. Get personalized tips for iPhone and Android to extend battery life."
@@ -138,8 +138,8 @@ export default function PhoneBatteryCareGuide() {
 
       <div className="max-w-xl mx-auto px-4 py-8">
         <div className="mb-6">
-          <h1 className="text-3xl font-bold text-gray-900 mb-2">Phone Battery Care Guide</h1>
-          <p className="text-gray-600 text-lg">
+          <h1 className="text-3xl font-bold text-foreground mb-2">Phone Battery Care Guide</h1>
+          <p className="text-muted-foreground text-lg">
             Answer 5 quick questions about your charging habits, then get personalized tips for your phone.
           </p>
         </div>
@@ -166,7 +166,7 @@ export default function PhoneBatteryCareGuide() {
           <div className="space-y-4">
             <div className="flex items-center gap-2 mb-4">
               <Badge variant="secondary">{platform === "iphone" ? "iPhone" : "Android"}</Badge>
-              <button onClick={() => setPlatform(null)} className="text-sm text-blue-600 underline">Change</button>
+              <button onClick={() => setPlatform(null)} className="text-sm text-info-foreground underline">Change</button>
             </div>
 
             {QUESTIONS.map((q, i) => (
@@ -184,7 +184,7 @@ export default function PhoneBatteryCareGuide() {
                       className={`w-full text-left px-4 py-3 rounded-lg border text-sm transition-colors ${
                         answers[q.id] === opt.score
                           ? "bg-blue-50 border-blue-400 font-medium text-blue-800"
-                          : "bg-white border-gray-200 hover:bg-gray-50 text-gray-800"
+                          : "bg-white border-border hover:bg-muted text-gray-800"
                       }`}
                     >
                       {opt.label}
@@ -215,20 +215,20 @@ export default function PhoneBatteryCareGuide() {
                   {rating.icon}
                   <span className={`text-xl font-bold ${rating.color}`}>{rating.label}</span>
                 </div>
-                <p className="text-gray-700 text-sm">{rating.advice}</p>
+                <p className="text-foreground text-base">{rating.advice}</p>
               </CardContent>
             </Card>
 
             {/* Charging habits that hurt */}
             {totalScore < 3 && (
-              <Card className="bg-amber-50 border-amber-200">
+              <Card className="bg-warn border-warn-foreground/25">
                 <CardHeader className="pb-2">
-                  <CardTitle className="text-base flex items-center gap-2 text-amber-800">
+                  <CardTitle className="text-base flex items-center gap-2 text-warn-foreground">
                     <AlertTriangle className="h-4 w-4" /> Habits to change
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="pt-0">
-                  <ul className="text-sm text-amber-900 space-y-1 list-disc pl-4">
+                  <ul className="text-base text-warn-foreground space-y-1 list-disc pl-4">
                     {answers["overnight"] === -1 && <li>Charging overnight keeps the battery at 100% for hours, which adds stress over time.</li>}
                     {answers["drain"] !== undefined && answers["drain"] <= -1 && <li>Letting the battery hit 0% regularly degrades it faster. Try to plug in before 20%.</li>}
                     {answers["heat"] === -2 && <li>Heat is the biggest enemy of phone batteries. A hot phone while charging is a warning sign.</li>}
@@ -241,7 +241,7 @@ export default function PhoneBatteryCareGuide() {
 
             {/* Platform tips */}
             <div>
-              <h2 className="text-lg font-bold text-gray-800 mb-3">
+              <h2 className="text-lg font-bold text-foreground mb-3">
                 Tips for your {platform === "iphone" ? "iPhone" : "Android phone"}
               </h2>
               <div className="space-y-3">
@@ -249,10 +249,10 @@ export default function PhoneBatteryCareGuide() {
                   <Card key={tip.title}>
                     <CardContent className="py-3 px-4">
                       <div className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-blue-500 mt-0.5 shrink-0" />
+                        <CheckCircle2 className="h-4 w-4 text-info-foreground mt-0.5 shrink-0" />
                         <div>
-                          <p className="text-sm font-semibold text-gray-900">{tip.title}</p>
-                          <p className="text-sm text-gray-600 mt-0.5">{tip.detail}</p>
+                          <p className="text-base font-semibold text-foreground">{tip.title}</p>
+                          <p className="text-base text-muted-foreground mt-0.5">{tip.detail}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -263,16 +263,16 @@ export default function PhoneBatteryCareGuide() {
 
             {/* General tips */}
             <div>
-              <h2 className="text-lg font-bold text-gray-800 mb-3">Good habits for any phone</h2>
+              <h2 className="text-lg font-bold text-foreground mb-3">Good habits for any phone</h2>
               <div className="space-y-3">
                 {GENERAL_TIPS.map(tip => (
                   <Card key={tip.title}>
                     <CardContent className="py-3 px-4">
                       <div className="flex items-start gap-2">
-                        <CheckCircle2 className="h-4 w-4 text-green-500 mt-0.5 shrink-0" />
+                        <CheckCircle2 className="h-4 w-4 text-success-foreground mt-0.5 shrink-0" />
                         <div>
-                          <p className="text-sm font-semibold text-gray-900">{tip.title}</p>
-                          <p className="text-sm text-gray-600 mt-0.5">{tip.detail}</p>
+                          <p className="text-base font-semibold text-foreground">{tip.title}</p>
+                          <p className="text-base text-muted-foreground mt-0.5">{tip.detail}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -287,6 +287,6 @@ export default function PhoneBatteryCareGuide() {
           </div>
         )}
       </div>
-    </div>
+    </main>
   );
 }

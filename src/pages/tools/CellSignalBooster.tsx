@@ -27,8 +27,8 @@ export default function CellSignalBooster() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Try Wi-Fi calling FIRST (free)</h2>
-            <p className="text-sm">Most modern phones make calls over Wi-Fi if cellular is weak. Free.</p>
-            <ul className="text-sm list-disc pl-5 mt-2">
+            <p className="text-base">Most modern phones make calls over Wi-Fi if cellular is weak. Free.</p>
+            <ul className="text-base list-disc pl-5 mt-2">
               <li><strong>iPhone:</strong> Settings → Phone → Wi-Fi Calling → ON.</li>
               <li><strong>Android:</strong> Settings → Connections / Network → Wi-Fi Calling → ON.</li>
               <li>If you have decent home Wi-Fi, this fixes 90% of poor-signal complaints.</li>
@@ -42,10 +42,10 @@ export default function CellSignalBooster() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -54,7 +54,7 @@ export default function CellSignalBooster() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How a booster works</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Outdoor antenna goes on roof or in attic — captures weak signal.</li>
               <li>Coax cable runs to indoor amplifier.</li>
               <li>Indoor antenna rebroadcasts amplified signal in your home.</li>
@@ -66,7 +66,7 @@ export default function CellSignalBooster() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>DIY install — 2-4 hours. Run cable through attic.</li>
               <li>Pro install — $200-400.</li>
               <li>Need at least 1 bar OUTSIDE for booster to work. Boosters amplify weak signal — they don\'t create signal from nothing.</li>
@@ -77,7 +77,7 @@ export default function CellSignalBooster() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best path</h3>
-            <p className="text-sm text-muted-foreground">Try Wi-Fi calling first (free). If you have NO cellular at all but good Wi-Fi — done. If Wi-Fi calling drops or you need cellular outdoors on the property — get a weBoost. Cheapest fix that actually fixes.</p>
+            <p className="text-base text-muted-foreground">Try Wi-Fi calling first (free). If you have NO cellular at all but good Wi-Fi — done. If Wi-Fi calling drops or you need cellular outdoors on the property — get a weBoost. Cheapest fix that actually fixes.</p>
           </CardContent>
         </Card>
       </main>

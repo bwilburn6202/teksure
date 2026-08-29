@@ -77,7 +77,7 @@ export default function Articles() {
             <p className="text-muted-foreground text-base max-w-xl mx-auto leading-relaxed">
               We take official guides from Apple, Google, Microsoft, and other trusted sources and rewrite them in everyday language — no jargon, just clear steps.
             </p>
-            <p className="text-xs text-muted-foreground mt-3">
+            <p className="text-sm text-muted-foreground mt-3">
               <Link to="/sources" className="underline underline-offset-2 hover:text-foreground transition-colors">
                 Learn about our content sources →
               </Link>
@@ -103,7 +103,7 @@ export default function Articles() {
 
             {/* Filter chips row */}
             <div className="flex flex-wrap gap-2 items-center">
-              <span className="flex items-center gap-1 text-xs text-muted-foreground shrink-0">
+              <span className="flex items-center gap-1 text-sm text-muted-foreground shrink-0">
                 <Filter className="h-3 w-3" aria-hidden="true" />
                 Filter:
               </span>
@@ -212,7 +212,7 @@ export default function Articles() {
               <div className="text-center py-16 text-muted-foreground">
                 <p className="text-4xl mb-4"></p>
                 <p className="font-medium mb-1">No articles found</p>
-                <p className="text-sm">Try adjusting your search or filters.</p>
+                <p className="text-base">Try adjusting your search or filters.</p>
                 <Button variant="outline" size="sm" className="mt-4" onClick={clearFilters}>
                   Clear filters
                 </Button>

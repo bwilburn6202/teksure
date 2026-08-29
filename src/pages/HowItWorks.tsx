@@ -97,7 +97,7 @@ const HowItWorks = () => (
                 <div className="flex-1">
                   <span className="text-xs font-semibold text-primary uppercase tracking-wide">Step {i + 1}</span>
                   <h3 className="font-semibold text-lg mt-1 mb-2">{step.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{step.desc}</p>
+                  <p className="text-muted-foreground text-base leading-relaxed">{step.desc}</p>
                 </div>
               </div>
             ))}

@@ -29,7 +29,7 @@ export default function OnlineTherapyApps() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">When therapy helps</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Depression or persistent low mood.</li>
               <li>Anxiety, panic, intrusive worry.</li>
               <li>Grief — especially complicated grief or one that doesn\'t lift after 6+ months.</li>
@@ -47,10 +47,10 @@ export default function OnlineTherapyApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -59,7 +59,7 @@ export default function OnlineTherapyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free crisis resources</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>988 — Suicide & Crisis Lifeline</strong> (call or text). Available 24/7.</li>
               <li><strong>Crisis Text Line</strong> — text HOME to 741741.</li>
               <li><strong>Veterans Crisis Line</strong> — 988 then press 1.</li>
@@ -73,14 +73,14 @@ export default function OnlineTherapyApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use Medicare for therapy</h2>
-            <p className="text-sm">Original Medicare covers 80% of mental health visits with a Medigap plan covering the rest. Find Medicare-accepting therapists at <strong>psychologytoday.com</strong> (filter by insurance) or your patient portal.</p>
+            <p className="text-base">Original Medicare covers 80% of mental health visits with a Medigap plan covering the rest. Find Medicare-accepting therapists at <strong>psychologytoday.com</strong> (filter by insurance) or your patient portal.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Where to start</h3>
-            <p className="text-sm text-muted-foreground">Sign up for BetterHelp\'s 7-day trial OR ask your primary care doctor for a referral. The first therapist is rarely the right fit — give it 2-3 sessions before deciding. Don\'t hesitate to switch.</p>
+            <p className="text-base text-muted-foreground">Sign up for BetterHelp\'s 7-day trial OR ask your primary care doctor for a referral. The first therapist is rarely the right fit — give it 2-3 sessions before deciding. Don\'t hesitate to switch.</p>
           </CardContent>
         </Card>
       </main>

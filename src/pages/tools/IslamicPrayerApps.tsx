@@ -32,10 +32,10 @@ export default function IslamicPrayerApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function IslamicPrayerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Find a mosque + community</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>SalatomaticThe</strong> — most comprehensive mosque finder.</li>
               <li><strong>ISNA, ICNA</strong> — major US Muslim organizations with directories.</li>
               <li><strong>Local Muslim community Facebook groups</strong>.</li>
@@ -56,7 +56,7 @@ export default function IslamicPrayerApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For Ramadan specifically</h3>
-            <p className="text-sm text-muted-foreground">During Ramadan, most apps have iftar + suhoor reminder, Quran-in-30-days reading plan, and tarawih schedule. Set notifications for last 10 nights when many seek Laylat al-Qadr.</p>
+            <p className="text-base text-muted-foreground">During Ramadan, most apps have iftar + suhoor reminder, Quran-in-30-days reading plan, and tarawih schedule. Set notifications for last 10 nights when many seek Laylat al-Qadr.</p>
           </CardContent>
         </Card>
       </main>

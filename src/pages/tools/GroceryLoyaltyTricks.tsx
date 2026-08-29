@@ -19,7 +19,7 @@ export default function GroceryLoyaltyTricks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior discount day</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Albertsons / Safeway</strong> — Wednesdays/Tuesdays, varies, 5-10%.</li>
               <li><strong>Harris Teeter</strong> — Thursdays.</li>
               <li><strong>Kroger</strong> — varies by region.</li>
@@ -33,7 +33,7 @@ export default function GroceryLoyaltyTricks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Loyalty cards (FREE)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sign up for ALL local store programs.</li>
               <li>Sale prices often only with card.</li>
               <li>Personalized coupons.</li>
@@ -48,7 +48,7 @@ export default function GroceryLoyaltyTricks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Digital coupon stacking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Clip digital coupons in store app BEFORE shopping.</li>
               <li>Stack with paper coupon (some stores).</li>
               <li>Stack with cashback app rebate (Ibotta).</li>
@@ -62,7 +62,7 @@ export default function GroceryLoyaltyTricks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cheapest grocery options</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Aldi</strong> — generally 30-40% cheaper than Kroger.</li>
               <li><strong>Costco</strong> — bulk savings (split with neighbor).</li>
               <li><strong>Walmart</strong> — Great Value brand high-quality + cheap.</li>
@@ -76,7 +76,7 @@ export default function GroceryLoyaltyTricks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save more</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Store brand vs name</strong> — same factory often, save 30%.</li>
               <li><strong>Markdown bins</strong> — meat/produce 50-70% off near sell-by date.</li>
               <li><strong>Bakery markdown</strong> — half-price end of day.</li>
@@ -91,7 +91,7 @@ export default function GroceryLoyaltyTricks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">SNAP if eligible</h3>
-            <p className="text-sm text-muted-foreground">Many seniors qualify for SNAP (food stamps) but don&apos;t apply. Income limits higher than you think. Average benefit ~$130/mo. Apply at <strong>fns.usda.gov</strong>. Use to buy groceries normally — no stigma. Also <strong>Senior Farmers Market Program</strong> — free $20-50/yr at farmers markets if income-eligible.</p>
+            <p className="text-base text-muted-foreground">Many seniors qualify for SNAP (food stamps) but don&apos;t apply. Income limits higher than you think. Average benefit ~$130/mo. Apply at <strong>fns.usda.gov</strong>. Use to buy groceries normally — no stigma. Also <strong>Senior Farmers Market Program</strong> — free $20-50/yr at farmers markets if income-eligible.</p>
           </CardContent>
         </Card>
       </main>

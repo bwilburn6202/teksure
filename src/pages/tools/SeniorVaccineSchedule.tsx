@@ -22,7 +22,7 @@ export default function SeniorVaccineSchedule() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">RSV</h2><p>60+. New vaccine. Single dose. FREE.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">COVID-19</h2><p>Annual. FREE through Medicare.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tdap</h2><p>Every 10 years. Tetanus, pertussis, diphtheria.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pharmacy gives most vaccines. CVS, Walgreens. Often same day.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pharmacy gives most vaccines. CVS, Walgreens. Often same day.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

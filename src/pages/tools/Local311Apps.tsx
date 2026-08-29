@@ -19,8 +19,8 @@ export default function Local311Apps() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">What 311 is</h2>
-            <p className="text-sm">A non-emergency number/app for reporting city issues. Most US cities offer it. Used for:</p>
-            <ul className="text-sm list-disc pl-5 mt-2">
+            <p className="text-base">A non-emergency number/app for reporting city issues. Most US cities offer it. Used for:</p>
+            <ul className="text-base list-disc pl-5 mt-2">
               <li>Potholes.</li>
               <li>Missed trash pickup.</li>
               <li>Broken streetlight.</li>
@@ -37,7 +37,7 @@ export default function Local311Apps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to find your city\'s app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Search your city\'s App Store</strong> — most cities have a "[City Name] 311" or "[City Name] Connect" app.</li>
               <li><strong>Big cities</strong> with established apps:
                 <ul className="list-disc pl-5 mt-1 text-muted-foreground">
@@ -60,7 +60,7 @@ export default function Local311Apps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to report effectively</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Take a photo with location data (most phones add GPS automatically).</li>
               <li>Pick the right category — wrong category goes to wrong department.</li>
               <li>Describe specifically: "Pothole 6 inches deep in middle lane of Maple Ave between 5th and 6th street, expanding daily".</li>
@@ -74,7 +74,7 @@ export default function Local311Apps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to use other apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Emergency (fire, life-threatening) → 911</strong>.</li>
               <li><strong>Power outage → utility\'s app</strong> (e.g., FPL, Duke Energy).</li>
               <li><strong>Water leak in street → water department</strong>.</li>
@@ -88,7 +88,7 @@ export default function Local311Apps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">Many cities require multiple complaints to act on a pothole or streetlight. Tell neighbors. The 5th report on a pothole gets it fixed faster than the 1st.</p>
+            <p className="text-base text-muted-foreground">Many cities require multiple complaints to act on a pothole or streetlight. Tell neighbors. The 5th report on a pothole gets it fixed faster than the 1st.</p>
           </CardContent>
         </Card>
       </main>

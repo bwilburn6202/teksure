@@ -19,7 +19,7 @@ export default function SupplementSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">FDA reality</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Supplements NOT FDA-approved like drugs.</li>
               <li>No safety testing required.</li>
               <li>Claims often unverified.</li>
@@ -33,7 +33,7 @@ export default function SupplementSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Trusted brands</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Nature Made</strong> — USP-verified.</li>
               <li><strong>Centrum / One A Day</strong> — established.</li>
               <li><strong>Kirkland (Costco)</strong> — quality + price.</li>
@@ -47,7 +47,7 @@ export default function SupplementSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common dangerous interactions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Warfarin + vitamin K</strong> = bleeding.</li>
               <li><strong>Statins + grapefruit/red yeast</strong>.</li>
               <li><strong>Ginkgo + blood thinners</strong>.</li>
@@ -61,7 +61,7 @@ export default function SupplementSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">SKIP these dangerous</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Kava</strong> — liver damage.</li>
               <li><strong>Comfrey</strong> — liver toxic.</li>
               <li><strong>Ephedra</strong> — banned but reappears.</li>
@@ -75,7 +75,7 @@ export default function SupplementSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Talk to doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bring complete supplement list.</li>
               <li>Mention before procedures.</li>
               <li>2 weeks pre-surgery — stop most.</li>
@@ -89,7 +89,7 @@ export default function SupplementSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Generally safe + helpful</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Vitamin D3</strong> — most seniors low.</li>
               <li><strong>Calcium</strong> — bones.</li>
               <li><strong>B12</strong> — energy + nerves.</li>
@@ -103,7 +103,7 @@ export default function SupplementSafety() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Less is more</h3>
-            <p className="text-sm text-muted-foreground">Most adults need 1-2 supplements at most. More = waste of money. Mega-doses dangerous. Whole foods first. ConsumerLab.com — independent testing reports. Don&apos;t fall for &quot;senior-specific&quot; marketing. Your doctor is best supplement advisor. Save money + stay safe.</p>
+            <p className="text-base text-muted-foreground">Most adults need 1-2 supplements at most. More = waste of money. Mega-doses dangerous. Whole foods first. ConsumerLab.com — independent testing reports. Don&apos;t fall for &quot;senior-specific&quot; marketing. Your doctor is best supplement advisor. Save money + stay safe.</p>
           </CardContent>
         </Card>
       </main>

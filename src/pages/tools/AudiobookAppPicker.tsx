@@ -32,10 +32,10 @@ export default function AudiobookAppPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function AudiobookAppPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Listening tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Speed up to 1.25x or 1.5x</strong> if the narrator feels slow. Most apps offer this.</li>
               <li><strong>Sleep timer</strong> — most apps stop after 20-30 min. Great for bedtime.</li>
               <li><strong>Bluetooth headphones / earbuds</strong> — no cord while doing chores.</li>
@@ -57,7 +57,7 @@ export default function AudiobookAppPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best place to start</h3>
-            <p className="text-sm text-muted-foreground"><strong>Libby (free with library card)</strong>. Set it up once, borrow your first audiobook today. If your library doesn\'t have what you want, then look at Spotify Premium (since you might already have it) or Audible.</p>
+            <p className="text-base text-muted-foreground"><strong>Libby (free with library card)</strong>. Set it up once, borrow your first audiobook today. If your library doesn\'t have what you want, then look at Spotify Premium (since you might already have it) or Audible.</p>
           </CardContent>
         </Card>
       </main>

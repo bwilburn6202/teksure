@@ -96,7 +96,7 @@ export default function TechPurchaseWarrantyTracker() {
   const expiringSoon = purchases.filter(p => { const d = daysLeft(p); return d >= 0 && d <= 30; }).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Warranty & Purchase Tracker | TekSure"
         description="Track every major purchase with warranty length and receipt location. See what is still covered and what is about to expire."
@@ -105,10 +105,10 @@ export default function TechPurchaseWarrantyTracker() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Receipt className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Warranty &amp; Purchase Tracker</h1>
+            <Receipt className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Warranty &amp; Purchase Tracker</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Note every major purchase with the warranty length. The tool tells you exactly when each warranty ends.
           </p>
         </div>
@@ -118,20 +118,20 @@ export default function TechPurchaseWarrantyTracker() {
           <div className="grid grid-cols-3 gap-3 mb-4">
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Items tracked</p>
-                <p className="text-xl font-bold text-blue-700">{purchases.length}</p>
+                <p className="text-sm text-muted-foreground">Items tracked</p>
+                <p className="text-xl font-bold text-info-foreground">{purchases.length}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Under warranty</p>
-                <p className="text-xl font-bold text-green-700">{active}</p>
+                <p className="text-sm text-muted-foreground">Under warranty</p>
+                <p className="text-xl font-bold text-success-foreground">{active}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Expiring in 30 days</p>
-                <p className="text-xl font-bold text-amber-700">{expiringSoon}</p>
+                <p className="text-sm text-muted-foreground">Expiring in 30 days</p>
+                <p className="text-xl font-bold text-warn-foreground">{expiringSoon}</p>
               </CardContent>
             </Card>
           </div>
@@ -141,7 +141,7 @@ export default function TechPurchaseWarrantyTracker() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-blue-600" />
+              <PlusCircle className="h-5 w-5 text-info-foreground" />
               Track a Purchase
             </CardTitle>
           </CardHeader>
@@ -153,7 +153,7 @@ export default function TechPurchaseWarrantyTracker() {
             <div className="grid grid-cols-2 gap-3">
               <div>
                 <Label htmlFor="store" className="text-base font-medium">Store</Label>
-                <select id="store" value={form.store} onChange={e => setForm(f => ({ ...f, store: e.target.value }))} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+                <select id="store" value={form.store} onChange={e => setForm(f => ({ ...f, store: e.target.value }))} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card">
                   {STORES.map(s => <option key={s}>{s}</option>)}
                 </select>
               </div>
@@ -176,7 +176,7 @@ export default function TechPurchaseWarrantyTracker() {
                   key={w.v}
                   type="button"
                   onClick={() => setForm(f => ({ ...f, warrantyMonths: String(w.v) }))}
-                  className={`text-xs px-2 py-1 rounded-full border ${form.warrantyMonths === String(w.v) ? "bg-blue-100 border-blue-400 text-blue-800" : "bg-white border-gray-200 text-gray-700"}`}
+                  className={`text-xs px-2 py-1 rounded-full border ${form.warrantyMonths === String(w.v) ? "bg-blue-100 border-blue-400 text-blue-800" : "bg-white border-border text-gray-700"}`}
                 >
                   {w.label}
                 </button>
@@ -190,7 +190,7 @@ export default function TechPurchaseWarrantyTracker() {
               <Label htmlFor="warranty-notes" className="text-base font-medium">Notes (optional)</Label>
               <Input id="warranty-notes" placeholder="e.g. Serial number 12345, paid with Amex" value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base">Add Purchase</Button>
           </CardContent>
         </Card>
@@ -206,10 +206,10 @@ export default function TechPurchaseWarrantyTracker() {
 
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Receipt className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Receipt className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No purchases tracked yet.</p>
-              <p className="text-sm mt-1">Add your most recent appliance, electronic, or tool purchase.</p>
+              <p className="text-base mt-1">Add your most recent appliance, electronic, or tool purchase.</p>
             </CardContent>
           </Card>
         ) : (
@@ -225,21 +225,21 @@ export default function TechPurchaseWarrantyTracker() {
                     <div key={p.id} className="py-2 flex items-start justify-between gap-2 print:break-inside-avoid">
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <span className="font-medium text-gray-900">{p.item}</span>
+                          <span className="font-medium text-foreground">{p.item}</span>
                           <Badge variant="secondary" className={`text-xs ${s.color}`}>
                             <ShieldCheck className="h-3 w-3 mr-1 inline" />
                             {s.label}
                           </Badge>
                         </div>
-                        <p className="text-xs text-gray-600 mt-1">
+                        <p className="text-sm text-muted-foreground mt-1">
                           Bought from {p.store} on {formatDate(p.purchaseDate)}
                           {p.price > 0 && ` for ${formatMoney(p.price)}`}
                           {p.warrantyMonths > 0 && ` · Warranty ends ${formatDate(warrantyEnds(p))}`}
                         </p>
-                        {p.receiptLocation && <p className="text-xs text-gray-500 mt-0.5"><span className="font-semibold">Receipt:</span> {p.receiptLocation}</p>}
-                        {p.notes && <p className="text-xs text-gray-500 italic">{p.notes}</p>}
+                        {p.receiptLocation && <p className="text-sm text-muted-foreground mt-0.5"><span className="font-semibold">Receipt:</span> {p.receiptLocation}</p>}
+                        {p.notes && <p className="text-sm text-muted-foreground italic">{p.notes}</p>}
                       </div>
-                      <Button variant="ghost" size="icon" onClick={() => remove(p.id)} className="h-7 w-7 text-red-400 hover:text-red-600 print:hidden">
+                      <Button variant="ghost" size="icon" onClick={() => remove(p.id)} className="h-7 w-7 text-danger-foreground hover:text-danger-foreground print:hidden">
                         <Trash2 className="h-3 w-3" />
                       </Button>
                     </div>
@@ -250,15 +250,15 @@ export default function TechPurchaseWarrantyTracker() {
           </Card>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Snap a photo of the receipt with your phone right after the purchase. Email it to yourself with the item name in the subject line — easy to find later.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

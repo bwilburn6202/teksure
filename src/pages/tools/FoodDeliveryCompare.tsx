@@ -29,33 +29,33 @@ export default function FoodDeliveryCompare() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Real cost — typical $20 meal</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Food: $20</li>
               <li>Delivery fee: $4-6</li>
               <li>Service fee: $3-5</li>
               <li>Tip (15-20%): $3-5</li>
               <li><strong>Total: $30-36</strong> for a $20 meal.</li>
             </ul>
-            <p className="text-sm mt-3">Delivery is convenient but expensive. Use sparingly or get a subscription if you order weekly.</p>
+            <p className="text-base mt-3">Delivery is convenient but expensive. Use sparingly or get a subscription if you order weekly.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save money</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pickup instead of delivery</strong> — saves $7-10 per order. Many people forget this option.</li>
               <li><strong>DashPass / Uber One / Grubhub+</strong> — $10/mo, kills delivery fee. Worth it if 4+ orders/month.</li>
               <li><strong>Order from restaurant directly</strong> — many use ChowNow or own app. No service fee.</li>
@@ -68,7 +68,7 @@ export default function FoodDeliveryCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First-time order — easy</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Download app. Sign up with phone, email, credit card.</li>
               <li>Enter your delivery address.</li>
               <li>Browse restaurants. Filter by "fastest" or "best rated".</li>
@@ -83,7 +83,7 @@ export default function FoodDeliveryCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tip generously</h3>
-            <p className="text-sm text-muted-foreground">Drivers earn most income from tips. $3-5 minimum, $5-8 in bad weather or long drives. Pre-tip in app gets your order picked up faster — drivers see the tip before accepting.</p>
+            <p className="text-base text-muted-foreground">Drivers earn most income from tips. $3-5 minimum, $5-8 in bad weather or long drives. Pre-tip in app gets your order picked up faster — drivers see the tip before accepting.</p>
           </CardContent>
         </Card>
       </main>

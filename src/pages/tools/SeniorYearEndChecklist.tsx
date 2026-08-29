@@ -23,7 +23,7 @@ export default function SeniorYearEndChecklist() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Backup photos</h2><p>Verify cloud backup is working. Try restoring one photo as test.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Subscription cleanup</h2><p>Cancel unused. Apple ID → Subscriptions. Often $30+/month forgotten.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tax docs</h2><p>Set up folder for 1099s arriving in January. Saves panic in March.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Block 1 December morning. Run through checklist. Stress-free new year.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Block 1 December morning. Run through checklist. Stress-free new year.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

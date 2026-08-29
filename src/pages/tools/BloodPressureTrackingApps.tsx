@@ -19,7 +19,7 @@ export default function BloodPressureTrackingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why track at home?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Doctor&apos;s office readings often higher — &quot;white coat&quot; effect.</li>
               <li>Home readings show real daily pattern.</li>
               <li>Catch high readings before next appointment.</li>
@@ -33,7 +33,7 @@ export default function BloodPressureTrackingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best home BP monitors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Omron Platinum — gold standard, app-connected.</li>
               <li>Withings BPM Connect — Bluetooth, syncs to Apple Health.</li>
               <li>Omron Silver — simpler, no app, stores 80 readings.</li>
@@ -47,7 +47,7 @@ export default function BloodPressureTrackingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best tracking apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Omron Connect — pairs with Omron devices.</li>
               <li>Apple Health — records readings, shows charts.</li>
               <li>Heart Habit — log readings + medication together.</li>
@@ -61,7 +61,7 @@ export default function BloodPressureTrackingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to measure correctly</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sit quietly for 5 minutes first.</li>
               <li>No caffeine or exercise 30 minutes before.</li>
               <li>Sit with back supported, feet flat on floor.</li>
@@ -75,7 +75,7 @@ export default function BloodPressureTrackingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Understanding your numbers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Normal: below 120/80 mmHg.</li>
               <li>Elevated: 120–129 / below 80.</li>
               <li>High (Stage 1): 130–139 / 80–89.</li>
@@ -89,7 +89,7 @@ export default function BloodPressureTrackingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sharing with your doctor</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Export data from app as PDF.</li>
               <li>Email to doctor&apos;s office before appointment.</li>
               <li>Apple Health: share with provider directly.</li>
@@ -103,7 +103,7 @@ export default function BloodPressureTrackingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Omron Platinum with app is the standard</h3>
-            <p className="text-sm text-muted-foreground">The Omron Platinum ($80) is what most cardiologists and pharmacists recommend for home monitoring. It pairs to the Omron Connect app via Bluetooth, stores all your readings with timestamps, and lets you email a PDF report to your doctor. If Bluetooth feels complicated, the Omron Silver ($55) stores 80 readings without any app — just write them down in a notebook.</p>
+            <p className="text-base text-muted-foreground">The Omron Platinum ($80) is what most cardiologists and pharmacists recommend for home monitoring. It pairs to the Omron Connect app via Bluetooth, stores all your readings with timestamps, and lets you email a PDF report to your doctor. If Bluetooth feels complicated, the Omron Silver ($55) stores 80 readings without any app — just write them down in a notebook.</p>
           </CardContent>
         </Card>
       </main>

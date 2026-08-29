@@ -30,10 +30,10 @@ export default function BidetSeniorGuide() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BidetSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why senior favorite</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Less reaching/twisting.</li>
               <li>Better hygiene than paper.</li>
               <li>Reduces UTIs (women).</li>
@@ -57,7 +57,7 @@ export default function BidetSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Install (15-30 min)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Turn off water at toilet.</li>
               <li>Disconnect supply line.</li>
               <li>Install T-valve to feed bidet.</li>
@@ -72,7 +72,7 @@ export default function BidetSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adjustable spray pressure.</li>
               <li>Warm water (avoid cold shock).</li>
               <li>Heated seat (winter).</li>
@@ -87,7 +87,7 @@ export default function BidetSeniorGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cold water OK?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cold water — many adapt fine.</li>
               <li>Warm water more comfortable, especially winter.</li>
               <li>Mid-range models easy upgrade.</li>
@@ -101,7 +101,7 @@ export default function BidetSeniorGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Premium worth it?</h3>
-            <p className="text-sm text-muted-foreground">$700 TOTO Washlet feels like luxury hotel. Heated seat, dryer, warm water = no toilet paper needed. Senior favorite. Pays back in toilet paper savings + comfort. If $700 too much — TUSHY Spa $180 = 80% benefit.</p>
+            <p className="text-base text-muted-foreground">$700 TOTO Washlet feels like luxury hotel. Heated seat, dryer, warm water = no toilet paper needed. Senior favorite. Pays back in toilet paper savings + comfort. If $700 too much — TUSHY Spa $180 = 80% benefit.</p>
           </CardContent>
         </Card>
       </main>

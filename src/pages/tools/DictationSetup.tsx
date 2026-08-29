@@ -140,7 +140,7 @@ export default function DictationSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-purple-500/10 rounded-full">
-                <Mic className="h-8 w-8 text-purple-600" />
+                <Mic className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Dictation Setup Helper</h1>
@@ -155,14 +155,14 @@ export default function DictationSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your device</p>
+              <p className="text-base font-semibold mb-3">Pick your device</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {DEVICES.map(d => (
                   <button key={d.id} onClick={() => setDevice(d.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       device === d.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{d.label}</p>
+                    <p className="font-medium text-base">{d.label}</p>
                   </button>
                 ))}
               </div>
@@ -174,7 +174,7 @@ export default function DictationSetup() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Turn it on</p>
               <ol className="space-y-2 mb-5">
                 {setup.steps.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{s}</span>
                   </li>
@@ -183,7 +183,7 @@ export default function DictationSetup() {
 
               <div className="p-3 rounded-lg bg-primary/5 border border-primary/20">
                 <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-1">Trigger</p>
-                <p className="text-sm">{setup.triggerHow}</p>
+                <p className="text-base">{setup.triggerHow}</p>
               </div>
             </CardContent>
           </Card>
@@ -191,13 +191,13 @@ export default function DictationSetup() {
           <Card className="border-border mb-6">
             <CardContent className="p-5">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Say this — get this</p>
-              <p className="text-xs text-muted-foreground mb-3">The trick most people never learn: dictation does not auto-punctuate. You speak the punctuation.</p>
+              <p className="text-sm text-muted-foreground mb-3">The trick most people never learn: dictation does not auto-punctuate. You speak the punctuation.</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {setup.punctuation.map((p, i) => (
                   <div key={i} className="p-2 rounded border border-border flex items-center gap-3 bg-muted/30">
                     <code className="text-xs font-mono px-2 py-0.5 rounded bg-background border border-border">{p.phrase}</code>
                     <span className="text-muted-foreground">→</span>
-                    <span className="text-sm">{p.result}</span>
+                    <span className="text-base">{p.result}</span>
                   </div>
                 ))}
               </div>
@@ -207,7 +207,7 @@ export default function DictationSetup() {
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Tricks worth knowing</p>
-              <ul className="space-y-2 text-sm">
+              <ul className="space-y-2 text-base">
                 {setup.pro.map((p, i) => (
                   <li key={i} className="flex gap-2"><span className="text-primary shrink-0">•</span><span>{p}</span></li>
                 ))}
@@ -219,20 +219,20 @@ export default function DictationSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/voice-assistant-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Voice Assistant Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Siri, Alexa, Google Assistant.</p>
+                <p className="font-medium text-base">Voice Assistant Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Siri, Alexa, Google Assistant.</p>
               </Link>
               <Link to="/tools/voice-commands" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Voice Command Cheat Sheet</p>
-                <p className="text-xs text-muted-foreground mt-0.5">All the voice tricks in one place.</p>
+                <p className="font-medium text-base">Voice Command Cheat Sheet</p>
+                <p className="text-sm text-muted-foreground mt-0.5">All the voice tricks in one place.</p>
               </Link>
               <Link to="/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Low-Vision Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Turn the screen into the listener too.</p>
+                <p className="font-medium text-base">Low-Vision Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Turn the screen into the listener too.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: dictation is twice as accurate after the first day. Your phone learns your voice.
           </p>
         </div>

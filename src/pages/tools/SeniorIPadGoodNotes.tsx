@@ -19,10 +19,10 @@ export default function SeniorIPadGoodNotes() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">GoodNotes 6</h2><p>$30/year. Best handwriting app. Convert to text.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Notability</h2><p>$15/year. Easier interface. Audio recording too.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Apple Notes</h2><p>FREE. Built-in handwriting. Works with Apple Pencil.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Familiar handwriting feel</li><li>No more paper notes lost</li><li>Search handwriting</li><li>Search by date</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Why for seniors</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Familiar handwriting feel</li><li>No more paper notes lost</li><li>Search handwriting</li><li>Search by date</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Convert handwriting</h2><p>GoodNotes converts your handwriting to typed text.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Better than paper</h2><p>Search 100+ pages instantly. Find anything fast.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Apple Notes is FREE. Try first before paying.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Apple Notes is FREE. Try first before paying.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

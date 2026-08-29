@@ -19,7 +19,7 @@ export default function CPAPMaintenanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Manufacturer apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ResMed myAir — most popular.</li>
               <li>Philips DreamMapper.</li>
               <li>Track usage hours nightly.</li>
@@ -33,7 +33,7 @@ export default function CPAPMaintenanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance compliance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medicare requires 4 hours/night × 22 of 30 days.</li>
               <li>Tracked automatically.</li>
               <li>Otherwise lose coverage.</li>
@@ -47,7 +47,7 @@ export default function CPAPMaintenanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cleaning routine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Daily — wipe mask cushion.</li>
               <li>Weekly — wash mask + tubing.</li>
               <li>Monthly — replace water in humidifier.</li>
@@ -61,7 +61,7 @@ export default function CPAPMaintenanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Replacement supplies</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Insurance covers most.</li>
               <li>Set calendar reminders.</li>
               <li>Replace per Medicare schedule.</li>
@@ -75,7 +75,7 @@ export default function CPAPMaintenanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Travel CPAP</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smaller, lighter machines available.</li>
               <li>$700-$1,200 typical cost.</li>
               <li>TSA accepts as carry-on (not luggage).</li>
@@ -89,7 +89,7 @@ export default function CPAPMaintenanceApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If CPAP not working</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Mask uncomfortable — try different style.</li>
               <li>Pressure too high/low — adjust with sleep doc.</li>
               <li>Dry mouth — humidifier help.</li>
@@ -103,7 +103,7 @@ export default function CPAPMaintenanceApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Use the app</h3>
-            <p className="text-sm text-muted-foreground">If you have CPAP, use the manufacturer app (ResMed myAir or Philips DreamMapper). Track compliance for Medicare. See your progress + leak data. Adjust if not working. Many seniors give up on CPAP — the app data helps doctor solve issues. Stick with it. Your heart + brain depend on quality sleep.</p>
+            <p className="text-base text-muted-foreground">If you have CPAP, use the manufacturer app (ResMed myAir or Philips DreamMapper). Track compliance for Medicare. See your progress + leak data. Adjust if not working. Many seniors give up on CPAP — the app data helps doctor solve issues. Stick with it. Your heart + brain depend on quality sleep.</p>
           </CardContent>
         </Card>
       </main>

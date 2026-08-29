@@ -34,8 +34,8 @@ export default function SellAntiquesAuctions() {
             <Card key={v.name}>
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{v.name}</h3>
-                <p className="text-sm">{v.what}</p>
-                <p className="text-sm text-muted-foreground">{v.good}</p>
+                <p className="text-base">{v.what}</p>
+                <p className="text-base text-muted-foreground">{v.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function SellAntiquesAuctions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Match item to venue</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Fine art (signed, museum-quality)</strong> → Sotheby\'s/Christie\'s.</li>
               <li><strong>Mid-century furniture, designer pieces</strong> → 1stDibs or Heritage.</li>
               <li><strong>Sports cards, comics, coins</strong> → Heritage or PWCC.</li>
@@ -61,20 +61,20 @@ export default function SellAntiquesAuctions() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Auction commissions</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Sotheby\'s/Christie\'s: 5-25% seller commission + buyer\'s premium 25-30% (you keep 70-75% of hammer price).</li>
               <li>Heritage: ~10% seller.</li>
               <li>Local: 15-30% commission.</li>
               <li>eBay: 10-13% + payment processing.</li>
             </ul>
-            <p className="text-sm mt-2">Higher commissions = higher prices generally. Sotheby\'s Audubon prints sell for 5x what eBay would fetch.</p>
+            <p className="text-base mt-2">Higher commissions = higher prices generally. Sotheby\'s Audubon prints sell for 5x what eBay would fetch.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Key advice</h3>
-            <p className="text-sm text-muted-foreground">For high-value items — get certified appraisal FIRST. Then approach 2-3 auction houses for free estimate. Compare. Pick the one that specializes in your item type. They\'ll get you the best price.</p>
+            <p className="text-base text-muted-foreground">For high-value items — get certified appraisal FIRST. Then approach 2-3 auction houses for free estimate. Compare. Pick the one that specializes in your item type. They\'ll get you the best price.</p>
           </CardContent>
         </Card>
       </main>

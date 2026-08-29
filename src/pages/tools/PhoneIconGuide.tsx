@@ -233,30 +233,30 @@ export default function PhoneIconGuide() {
         title="Phone Icon Guide — TekSure"
         description="Wondering what those tiny symbols at the top of your phone screen mean? Plain-English explanations of every common phone icon, for iPhone and Android."
       />
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-950 py-8 px-4">
+      <main className="min-h-screen bg-muted py-8 px-4">
         <div className="max-w-2xl mx-auto">
 
           {/* Header */}
           <div className="text-center mb-6">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-cyan-100 dark:bg-cyan-950/60 mb-4">
-              <Smartphone className="w-8 h-8 text-cyan-600 dark:text-cyan-400" />
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-info mb-4">
+              <Smartphone className="w-8 h-8 text-info-foreground " />
             </div>
-            <h1 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-2">Phone Icon Guide</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
+            <h1 className="text-3xl font-bold text-foreground mb-2">Phone Icon Guide</h1>
+            <p className="text-lg text-muted-foreground ">
               Wondering what those tiny symbols at the top of your phone mean? Look them up here.
             </p>
           </div>
 
           {/* Search */}
-          <div className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-4 shadow-sm mb-4">
+          <div className="bg-card rounded-2xl border border-border p-4 shadow-sm mb-4">
             <div className="relative">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
               <input
                 type="text"
                 placeholder="Search icons (e.g. 'moon', 'wifi', 'battery')"
                 value={search}
                 onChange={e => setSearch(e.target.value)}
-                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 outline-none focus:border-cyan-400"
+                className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-muted border border-border text-foreground outline-none focus:border-cyan-400"
               />
             </div>
           </div>
@@ -270,7 +270,7 @@ export default function PhoneIconGuide() {
                 className={`text-sm px-3 py-1.5 rounded-full font-medium transition-colors ${
                   platform === p
                     ? 'bg-cyan-600 text-white'
-                    : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700'
+                    : 'bg-white dark:bg-gray-800 text-muted-foreground border border-border dark:border-gray-700'
                 }`}
               >
                 {p === 'all' ? 'Both Phones' : p === 'iPhone' ? '🍎 iPhone' : '🤖 Android'}
@@ -286,7 +286,7 @@ export default function PhoneIconGuide() {
                 className={`text-xs px-3 py-1 rounded-full transition-colors ${
                   category === c
                     ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900'
-                    : 'bg-white dark:bg-gray-800 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400'
+                    : 'bg-white dark:bg-gray-800 text-muted-foreground border border-border hover:border-gray-400'
                 }`}
               >
                 {c}
@@ -295,14 +295,14 @@ export default function PhoneIconGuide() {
           </div>
 
           {/* Results count */}
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             Showing {filtered.length} of {ICONS.length} icons
           </p>
 
           {/* Icon list */}
           <div className="space-y-3">
             {filtered.length === 0 && (
-              <div className="text-center py-12 text-gray-400 dark:text-gray-600 bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800">
+              <div className="text-center py-12 text-muted-foreground bg-card rounded-2xl border border-border ">
                 <Search className="w-10 h-10 mx-auto mb-2 opacity-40" />
                 <p>No icons match your search. Try a different keyword.</p>
               </div>
@@ -310,37 +310,37 @@ export default function PhoneIconGuide() {
             {filtered.map((icon, i) => {
               const LucideIcon = icon.iconType === 'lucide' && icon.iconName ? getLucideIcon(icon.iconName) : null;
               return (
-                <div key={i} className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-800 p-5 shadow-sm">
+                <div key={i} className="bg-card rounded-2xl border border-border p-5 shadow-sm">
                   <div className="flex items-start gap-4">
                     {/* Icon display */}
-                    <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+                    <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-muted flex items-center justify-center">
                       {icon.iconType === 'lucide' && LucideIcon && (
-                        <LucideIcon className="w-7 h-7 text-gray-700 dark:text-gray-300" />
+                        <LucideIcon className="w-7 h-7 text-foreground " />
                       )}
                       {icon.iconType === 'emoji' && (
                         <span className="text-2xl">{icon.emoji}</span>
                       )}
                       {icon.iconType === 'text' && (
-                        <span className="text-sm font-bold text-gray-700 dark:text-gray-300">{icon.text}</span>
+                        <span className="text-base font-bold text-foreground ">{icon.text}</span>
                       )}
                     </div>
                     {/* Content */}
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1 flex-wrap">
-                        <h3 className="font-semibold text-gray-900 dark:text-gray-100">{icon.name}</h3>
-                        <span className="text-xs px-2 py-0.5 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400">
+                        <h3 className="font-semibold text-foreground ">{icon.name}</h3>
+                        <span className="text-xs px-2 py-0.5 rounded-full bg-muted text-muted-foreground ">
                           {icon.category}
                         </span>
                       </div>
-                      <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                      <p className="text-base text-foreground mb-2">
                         <strong>What it means:</strong> {icon.meaning}
                       </p>
-                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                      <p className="text-base text-muted-foreground ">
                         <strong>What to do:</strong> {icon.whatToDo}
                       </p>
                       <div className="mt-2 flex gap-1.5">
                         {icon.platforms.map(p => (
-                          <span key={p} className="text-xs px-2 py-0.5 rounded bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300">
+                          <span key={p} className="text-sm px-2 py-0.5 rounded bg-info text-info-foreground ">
                             {p}
                           </span>
                         ))}
@@ -353,13 +353,13 @@ export default function PhoneIconGuide() {
           </div>
 
           {/* Footer note */}
-          <div className="mt-6 bg-cyan-50 dark:bg-cyan-950/30 border border-cyan-200 dark:border-cyan-800 rounded-xl p-4 text-center">
-            <p className="text-sm text-cyan-800 dark:text-cyan-200">
+          <div className="mt-6 bg-info border border-info-foreground/25 rounded-xl p-4 text-center">
+            <p className="text-base text-info-foreground ">
               <strong>Quick Tip:</strong> Pull down from the top of your screen at any time to see your phone\'s status icons up close, plus a label for each one.
             </p>
           </div>
         </div>
-      </div>
+      </main>
     </>
   );
 }

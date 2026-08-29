@@ -19,7 +19,7 @@ export default function MaxHBOStreamingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Max?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Formerly called HBO Max.</li>
               <li>Owned by Warner Bros. Discovery.</li>
               <li>Premium quality — award-winning shows.</li>
@@ -33,7 +33,7 @@ export default function MaxHBOStreamingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plans + cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>With Ads — $9.99/month.</li>
               <li>Ad-Free — $15.99/month.</li>
               <li>Ultimate — $19.99/month (4K + downloads).</li>
@@ -47,7 +47,7 @@ export default function MaxHBOStreamingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best content for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Succession — family + power drama.</li>
               <li>Band of Brothers — WWII epic.</li>
               <li>The Sopranos — classic mob drama.</li>
@@ -61,7 +61,7 @@ export default function MaxHBOStreamingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to Max.com or download Max app.</li>
               <li>Create account with email.</li>
               <li>Choose plan + enter payment.</li>
@@ -75,7 +75,7 @@ export default function MaxHBOStreamingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Navigation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Home — curated for your taste.</li>
               <li>Series + Movies tabs — browse all.</li>
               <li>My List — save for later.</li>
@@ -89,7 +89,7 @@ export default function MaxHBOStreamingGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why it stands out</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Highest quality TV production.</li>
               <li>HGTV + Food Network great for at-home interest.</li>
               <li>New Warner Bros. movies quickly.</li>
@@ -103,7 +103,7 @@ export default function MaxHBOStreamingGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quality over quantity</h3>
-            <p className="text-sm text-muted-foreground">Max has fewer total titles than Netflix but the quality is consistently higher. If you love HGTV, Food Network, or prestige dramas like The Sopranos or Succession, Max delivers. The $9.99 ad-supported plan is a good starting point. Ads are less frequent than regular TV — typically 4 minutes per hour.</p>
+            <p className="text-base text-muted-foreground">Max has fewer total titles than Netflix but the quality is consistently higher. If you love HGTV, Food Network, or prestige dramas like The Sopranos or Succession, Max delivers. The $9.99 ad-supported plan is a good starting point. Ads are less frequent than regular TV — typically 4 minutes per hour.</p>
           </CardContent>
         </Card>
       </main>

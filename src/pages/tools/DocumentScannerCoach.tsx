@@ -28,7 +28,7 @@ export default function DocumentScannerCoach() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">iPhone — Scan in Notes (built in)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open the <strong>Notes</strong> app.</li>
                 <li>Tap "+ New Note".</li>
                 <li>Tap the camera icon → "Scan Documents".</li>
@@ -38,7 +38,7 @@ export default function DocumentScannerCoach() {
                 <li>Tap "+" to add more pages, or "Save".</li>
                 <li>Tap the share icon → "Mail" or "Messages" — sends as a clean PDF.</li>
               </ol>
-              <p className="text-sm mt-3 bg-muted/50 p-3 rounded"><strong>Or use Files app:</strong> Files → tap the three dots top right → "Scan Documents".</p>
+              <p className="text-base mt-3 bg-muted/50 p-3 rounded"><strong>Or use Files app:</strong> Files → tap the three dots top right → "Scan Documents".</p>
             </CardContent>
           </Card>
         )}
@@ -47,7 +47,7 @@ export default function DocumentScannerCoach() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Android — Google Drive (built in, free)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open the <strong>Google Drive</strong> app.</li>
                 <li>Tap the colorful <strong>+</strong> button.</li>
                 <li>Tap "Scan".</li>
@@ -57,7 +57,7 @@ export default function DocumentScannerCoach() {
                 <li>Tap "+" for more pages, or "Save" — saves as PDF in Drive.</li>
                 <li>Tap the file → Share → Email.</li>
               </ol>
-              <p className="text-sm mt-3"><strong>Samsung Galaxy alternative:</strong> Open camera → point at document → little yellow scan icon appears at the bottom → tap it.</p>
+              <p className="text-base mt-3"><strong>Samsung Galaxy alternative:</strong> Open camera → point at document → little yellow scan icon appears at the bottom → tap it.</p>
             </CardContent>
           </Card>
         )}
@@ -65,7 +65,7 @@ export default function DocumentScannerCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best free apps (better than built-in for some)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Adobe Scan</strong> — best free scanner. Auto-OCR (reads text in the image, lets you copy/paste). Very clean PDFs.</li>
               <li><strong>Microsoft Lens</strong> — great if you use Outlook/OneDrive. Free.</li>
               <li><strong>CamScanner</strong> — popular but free version has watermarks. Avoid the privacy concerns from older versions.</li>
@@ -77,7 +77,7 @@ export default function DocumentScannerCoach() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for best results</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Lay the document flat on a darker surface — apps detect the edge better.</li>
               <li>Daylight is best. Don\'t use the flash unless really dim.</li>
               <li>Hold phone DIRECTLY above, not at an angle.</li>
@@ -91,7 +91,7 @@ export default function DocumentScannerCoach() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">What to scan</h3>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Tax forms to email to your accountant.</li>
               <li>Insurance cards for your wallet (digital backup).</li>
               <li>Receipts for warranties and returns.</li>

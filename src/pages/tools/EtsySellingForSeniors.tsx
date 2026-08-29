@@ -19,7 +19,7 @@ export default function EtsySellingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What sells well</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Handmade quilts + blankets.</li>
               <li>Knitted + crocheted items.</li>
               <li>Vintage items from your collection.</li>
@@ -33,7 +33,7 @@ export default function EtsySellingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup costs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$0.20 per listing fee.</li>
               <li>6.5% transaction fee.</li>
               <li>3% + $0.25 payment fee.</li>
@@ -47,7 +47,7 @@ export default function EtsySellingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Process basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Create Etsy seller account.</li>
               <li>Photograph items in good light.</li>
               <li>Write descriptions + measurements.</li>
@@ -61,7 +61,7 @@ export default function EtsySellingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly perks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Work from home.</li>
               <li>Set your own pace.</li>
               <li>Use existing skills.</li>
@@ -75,7 +75,7 @@ export default function EtsySellingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Photography tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Natural light by window best.</li>
               <li>Plain background — white sheet works.</li>
               <li>Multiple angles — 5+ photos per listing.</li>
@@ -89,7 +89,7 @@ export default function EtsySellingForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pricing strategy</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Materials cost + 3x markup minimum.</li>
               <li>Don&apos;t undervalue handmade.</li>
               <li>Research similar listings.</li>
@@ -103,7 +103,7 @@ export default function EtsySellingForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Start with 5 listings</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t overthink it — start with 5 of your best handmade items. Photograph well, write clear descriptions, set fair prices. Etsy handles the rest. First sale takes a few weeks typically. Once you see your work selling and people loving it, motivation grows. Many seniors earn $200–$2,000+ monthly from Etsy doing crafts they already enjoy.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t overthink it — start with 5 of your best handmade items. Photograph well, write clear descriptions, set fair prices. Etsy handles the rest. First sale takes a few weeks typically. Once you see your work selling and people loving it, motivation grows. Many seniors earn $200–$2,000+ monthly from Etsy doing crafts they already enjoy.</p>
           </CardContent>
         </Card>
       </main>

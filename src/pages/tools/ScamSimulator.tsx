@@ -319,7 +319,7 @@ export default function ScamSimulator() {
             {/* Simulated message */}
             <Card className="mb-6 border-2">
               <CardContent className="p-6">
-                <p className="text-sm font-medium text-muted-foreground mb-3">
+                <p className="text-base font-medium text-muted-foreground mb-3">
                   From: <span className="font-mono text-foreground">{scenario.from}</span>
                 </p>
                 <div className="bg-muted/50 rounded-xl p-5 font-mono text-base leading-relaxed whitespace-pre-wrap">
@@ -336,7 +336,7 @@ export default function ScamSimulator() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="min-h-16 text-lg font-semibold border-2 hover:bg-red-50 hover:border-red-400 hover:text-red-700 dark:hover:bg-red-950 dark:hover:border-red-500 dark:hover:text-red-300 transition-all"
+                    className="min-h-16 text-lg font-semibold border-2 hover:bg-danger hover:border-red-400 hover:text-danger-foreground dark:hover:border-red-500 transition-all"
                     onClick={() => handleAnswer(true)}
                   >
                     <ShieldAlert className="h-6 w-6 mr-2" />
@@ -345,7 +345,7 @@ export default function ScamSimulator() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="min-h-16 text-lg font-semibold border-2 hover:bg-green-50 hover:border-green-400 hover:text-green-700 dark:hover:bg-green-950 dark:hover:border-green-500 dark:hover:text-green-300 transition-all"
+                    className="min-h-16 text-lg font-semibold border-2 hover:bg-success hover:border-green-400 hover:text-success-foreground dark:hover:border-green-500 transition-all"
                     onClick={() => handleAnswer(false)}
                   >
                     <CheckCircle2 className="h-6 w-6 mr-2" />
@@ -362,14 +362,14 @@ export default function ScamSimulator() {
                 <div
                   className={`rounded-xl p-5 flex items-start gap-4 ${
                     isCorrect
-                      ? 'bg-green-50 border-2 border-green-300 dark:bg-green-950/40 dark:border-green-700'
-                      : 'bg-red-50 border-2 border-red-300 dark:bg-red-950/40 dark:border-red-700'
+                      ? 'bg-green-50 border-2 border-success-foreground/25 dark:bg-green-950/40 dark:border-green-700'
+                      : 'bg-red-50 border-2 border-danger-foreground/25 dark:bg-red-950/40 dark:border-red-700'
                   }`}
                 >
                   {isCorrect ? (
-                    <CheckCircle2 className="h-8 w-8 text-green-600 dark:text-green-400 shrink-0 mt-0.5" />
+                    <CheckCircle2 className="h-8 w-8 text-success-foreground shrink-0 mt-0.5" />
                   ) : (
-                    <XCircle className="h-8 w-8 text-red-600 dark:text-red-400 shrink-0 mt-0.5" />
+                    <XCircle className="h-8 w-8 text-danger-foreground shrink-0 mt-0.5" />
                   )}
                   <div>
                     <p className={`text-xl font-bold ${isCorrect ? 'text-green-800 dark:text-green-300' : 'text-red-800 dark:text-red-300'}`}>
@@ -380,16 +380,16 @@ export default function ScamSimulator() {
                 </div>
 
                 {/* Red flags list */}
-                <Card className="border-2 border-amber-300 dark:border-amber-700 bg-amber-50/50 dark:bg-amber-950/30">
+                <Card className="border-2 border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/30">
                   <CardContent className="p-5">
                     <div className="flex items-center gap-2 mb-3">
-                      <Eye className="h-6 w-6 text-amber-600 dark:text-amber-400" />
-                      <h3 className="text-lg font-bold text-amber-800 dark:text-amber-300">Red Flags to Watch For</h3>
+                      <Eye className="h-6 w-6 text-warn-foreground " />
+                      <h3 className="text-lg font-bold text-warn-foreground ">Red Flags to Watch For</h3>
                     </div>
                     <ul className="space-y-3">
                       {scenario.redFlags.map((flag, i) => (
                         <li key={i} className="flex items-start gap-3">
-                          <AlertTriangle className="h-5 w-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+                          <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                           <span className="text-base">{flag}</span>
                         </li>
                       ))}
@@ -446,13 +446,13 @@ export default function ScamSimulator() {
                     <CardContent className="p-5">
                       <div className="flex items-center gap-3 mb-2 flex-wrap">
                         {wasCorrect ? (
-                          <CheckCircle2 className="h-6 w-6 text-green-600 dark:text-green-400" />
+                          <CheckCircle2 className="h-6 w-6 text-success-foreground " />
                         ) : (
-                          <XCircle className="h-6 w-6 text-red-600 dark:text-red-400" />
+                          <XCircle className="h-6 w-6 text-danger-foreground " />
                         )}
                         <span className="text-lg font-semibold">{s.title}</span>
                         <TypeBadge type={s.type} />
-                        <Badge className="bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200 text-sm ml-auto">
+                        <Badge className="bg-danger text-danger-foreground text-sm ml-auto">
                           Scam
                         </Badge>
                       </div>
@@ -464,7 +464,7 @@ export default function ScamSimulator() {
                         <ul className="mt-3 space-y-2 pl-2">
                           {s.redFlags.map((flag, j) => (
                             <li key={j} className="flex items-start gap-2">
-                              <AlertTriangle className="h-4 w-4 text-amber-600 dark:text-amber-400 shrink-0 mt-1" />
+                              <AlertTriangle className="h-4 w-4 text-warn-foreground shrink-0 mt-1" />
                               <span className="text-base">{flag}</span>
                             </li>
                           ))}
@@ -477,9 +477,9 @@ export default function ScamSimulator() {
             </div>
 
             {/* Safety tips box */}
-            <Card className="mb-8 border-2 border-amber-300 dark:border-amber-700 bg-amber-50/50 dark:bg-amber-950/30">
+            <Card className="mb-8 border-2 border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/30">
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold text-amber-800 dark:text-amber-300 mb-3">Golden Rules to Stay Safe</h3>
+                <h3 className="text-xl font-bold text-warn-foreground mb-3">Golden Rules to Stay Safe</h3>
                 <ul className="space-y-3">
                   {[
                     'Never give personal info (Social Security, Medicare, bank details) to someone who contacts you first.',
@@ -489,7 +489,7 @@ export default function ScamSimulator() {
                     'When in doubt, ask a trusted friend or family member before taking action.',
                   ].map((tip, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <ShieldAlert className="h-5 w-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+                      <ShieldAlert className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
                       <span className="text-lg">{tip}</span>
                     </li>
                   ))}

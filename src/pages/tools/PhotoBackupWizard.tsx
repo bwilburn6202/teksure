@@ -413,10 +413,10 @@ export default function PhotoBackupWizard() {
               />
             </div>
             <div className="flex items-center gap-2 mb-4">
-              <Cloud className="w-5 h-5 text-sky-700 dark:text-sky-300" />
+              <Cloud className="w-5 h-5 text-info-foreground " />
               <Badge
                 variant="outline"
-                className="text-xs border-sky-300 text-sky-800 dark:text-sky-200"
+                className="text-xs border-info-foreground/25 text-info-foreground "
               >
                 Photo safety · Walk-through
               </Badge>
@@ -432,8 +432,8 @@ export default function PhotoBackupWizard() {
 
         <div className="container max-w-4xl py-10 space-y-10">
           {/* ── Why this matters ────────────────────── */}
-          <Alert className="border-sky-200 bg-sky-50 dark:bg-sky-950/30">
-            <AlertTriangle className="h-5 w-5 text-sky-700" />
+          <Alert className="border-info-foreground/25 bg-info ">
+            <AlertTriangle className="h-5 w-5 text-info-foreground" />
             <AlertTitle className="text-base">Why this matters</AlertTitle>
             <AlertDescription className="text-base leading-relaxed">
               About 1 in 3 people lose photos permanently — dropped phones, stolen devices, accidental
@@ -548,7 +548,7 @@ export default function PhotoBackupWizard() {
                 {quizComplete && (
                   <div className="space-y-4 border-t border-border pt-6">
                     <h3 className="text-xl font-semibold flex items-center gap-2">
-                      <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+                      <CheckCircle2 className="h-5 w-5 text-success-foreground" />
                       Your top 2 matches
                     </h3>
                     <div className="grid md:grid-cols-2 gap-3">
@@ -607,7 +607,7 @@ export default function PhotoBackupWizard() {
                       <Icon className={`h-5 w-5 ${s.color}`} />
                     </div>
                     <p className="font-semibold text-lg leading-tight">{s.name}</p>
-                    <p className="text-sm text-muted-foreground mt-1">{s.tagline}</p>
+                    <p className="text-base text-muted-foreground mt-1">{s.tagline}</p>
                     <div className="mt-3 space-y-1 text-sm">
                       <p><span className="text-muted-foreground">Who it&apos;s for:</span> {s.who}</p>
                       <p><span className="text-muted-foreground">Free tier:</span> {s.free}</p>
@@ -752,10 +752,10 @@ export default function PhotoBackupWizard() {
                   <li>Check that the total photo count looks right.</li>
                 </ol>
                 <div className="grid md:grid-cols-2 gap-3 mt-3">
-                  <Card className="border-sky-200">
+                  <Card className="border-info-foreground/25">
                     <CardContent className="py-4">
                       <p className="font-semibold flex items-center gap-2 text-base">
-                        <Cloud className="h-4 w-4 text-sky-600" /> iCloud
+                        <Cloud className="h-4 w-4 text-info-foreground" /> iCloud
                       </p>
                       <p className="text-base text-muted-foreground mt-1">
                         Turn on "Optimize iPhone Storage" (Settings → Photos). Your phone will replace
@@ -763,10 +763,10 @@ export default function PhotoBackupWizard() {
                       </p>
                     </CardContent>
                   </Card>
-                  <Card className="border-emerald-200">
+                  <Card className="border-success-foreground/25">
                     <CardContent className="py-4">
                       <p className="font-semibold flex items-center gap-2 text-base">
-                        <ImageIcon className="h-4 w-4 text-emerald-600" /> Google Photos
+                        <ImageIcon className="h-4 w-4 text-success-foreground" /> Google Photos
                       </p>
                       <p className="text-base text-muted-foreground mt-1">
                         Open the app → Free up space. It only deletes photos that are safely backed up.
@@ -836,8 +836,8 @@ export default function PhotoBackupWizard() {
                 </Card>
               ))}
             </div>
-            <Alert className="mt-4 border-amber-200 bg-amber-50 dark:bg-amber-950/20">
-              <Lock className="h-5 w-5 text-amber-700" />
+            <Alert className="mt-4 border-warn-foreground/25 bg-warn ">
+              <Lock className="h-5 w-5 text-warn-foreground" />
               <AlertTitle className="text-base">Privacy: who sees what</AlertTitle>
               <AlertDescription className="text-base leading-relaxed">
                 Anyone invited to a shared album can see every photo in it, but not your main library.
@@ -1107,15 +1107,15 @@ function SetupCard({ plan, officialUrl }: { plan: SetupPlan; officialUrl: string
         </ol>
 
         {plan.tip && (
-          <Alert className="mt-5 border-amber-200 bg-amber-50 dark:bg-amber-950/20">
-            <Info className="h-5 w-5 text-amber-700" />
+          <Alert className="mt-5 border-warn-foreground/25 bg-warn ">
+            <Info className="h-5 w-5 text-warn-foreground" />
             <AlertTitle className="text-base">Quick Tip</AlertTitle>
             <AlertDescription className="text-base leading-relaxed">{plan.tip}</AlertDescription>
           </Alert>
         )}
 
         {officialUrl && (
-          <p className="text-sm text-muted-foreground mt-4">
+          <p className="text-base text-muted-foreground mt-4">
             Official help:{' '}
             <a
               href={officialUrl}

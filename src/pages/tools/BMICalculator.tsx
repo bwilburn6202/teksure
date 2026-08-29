@@ -26,29 +26,29 @@ export default function BMICalculator() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="BMI Calculator | TekSure" description="Enter your height and weight in US units and see your Body Mass Index with the standard health range." />
       <div className="max-w-xl mx-auto px-4 py-8">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <HeartPulse className="h-7 w-7 text-red-600" />
-            <h1 className="text-3xl font-bold text-gray-900">BMI Calculator</h1>
+            <HeartPulse className="h-7 w-7 text-danger-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">BMI Calculator</h1>
           </div>
-          <p className="text-gray-600 text-lg">Body Mass Index based on your height in feet/inches and weight in pounds.</p>
+          <p className="text-muted-foreground text-lg">Body Mass Index based on your height in feet/inches and weight in pounds.</p>
         </div>
         <Card>
           <CardContent className="py-6 px-4 space-y-4">
             <div className="grid grid-cols-3 gap-2">
               <div>
-                <label className="text-base font-medium text-gray-700">Feet</label>
+                <label className="text-base font-medium text-foreground">Feet</label>
                 <Input type="number" min="3" max="8" placeholder="5" value={feet} onChange={e => setFeet(e.target.value)} className="mt-1 text-2xl text-center h-14" />
               </div>
               <div>
-                <label className="text-base font-medium text-gray-700">Inches</label>
+                <label className="text-base font-medium text-foreground">Inches</label>
                 <Input type="number" min="0" max="11" placeholder="7" value={inches} onChange={e => setInches(e.target.value)} className="mt-1 text-2xl text-center h-14" />
               </div>
               <div>
-                <label className="text-base font-medium text-gray-700">Pounds</label>
+                <label className="text-base font-medium text-foreground">Pounds</label>
                 <Input type="number" min="50" max="600" placeholder="150" value={pounds} onChange={e => setPounds(e.target.value)} className="mt-1 text-2xl text-center h-14" />
               </div>
             </div>
@@ -56,20 +56,20 @@ export default function BMICalculator() {
               <div className={`text-center border rounded-md py-4 px-3 ${color}`}>
                 <p className="text-5xl font-bold">{bmiStr}</p>
                 <p className="text-base mt-2 font-semibold">{category}</p>
-                <p className="text-xs mt-1 opacity-80">Standard CDC ranges: 18.5-24.9 healthy, 25-29.9 overweight, 30+ obese</p>
+                <p className="text-sm mt-1 opacity-80">Standard CDC ranges: 18.5-24.9 healthy, 25-29.9 overweight, 30+ obese</p>
               </div>
             )}
           </CardContent>
         </Card>
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Important: </span>
               BMI is one rough measure. It doesn't account for muscle mass, bone density, or differences across ages and ethnicities. Talk with your doctor about what's healthy for you.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

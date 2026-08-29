@@ -19,7 +19,7 @@ export default function CarRepairFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best free tools</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>RepairPal.com</strong> — type your car + repair. Get a fair-price range for your zip code. Free.</li>
               <li><strong>RepairPal Certified Shop locator</strong> — only certified shops. Pre-screened for honesty + fair pricing.</li>
               <li><strong>Yelp / Google Reviews</strong> — read reviews. Look for ones with photos.</li>
@@ -32,7 +32,7 @@ export default function CarRepairFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Get 3 quotes</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>For any repair over $300, get 3 written quotes.</li>
               <li>Email or text photos of any "needed" parts they show you.</li>
               <li>Quotes should match within 20% of each other.</li>
@@ -45,7 +45,7 @@ export default function CarRepairFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Common rip-offs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"Engine flush"</strong> — almost never needed. $100-200 padding.</li>
               <li><strong>"Fuel injection cleaning"</strong> — modern cars don&apos;t need it. $80-200 padding.</li>
               <li><strong>"Replace cabin air filter"</strong> — $30 part shops charge $100+. Buy on Amazon, change yourself in 2 min.</li>
@@ -59,7 +59,7 @@ export default function CarRepairFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Honest mechanic — green flags</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Shows you the broken part. Lets you keep it.</li>
               <li>Explains repair without sales pressure.</li>
               <li>Written estimate before starting work.</li>
@@ -74,7 +74,7 @@ export default function CarRepairFinder() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Maintenance schedule (skip the salesman)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Oil change</strong> — every 5,000-7,500 miles for synthetic. Every 3,000 only on very old cars.</li>
               <li><strong>Tire rotation</strong> — every 6,000-7,500 miles. Free at Costco, Sam&apos;s, Discount Tire if you bought tires there.</li>
               <li><strong>Brake pads</strong> — typically every 30,000-70,000 miles depending on driving.</li>
@@ -87,7 +87,7 @@ export default function CarRepairFinder() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free oil-change inspection trick</h3>
-            <p className="text-sm text-muted-foreground">When the oil-change shop tries to upsell you a $400 repair: politely thank them, drive to RepairPal.com, get a fair price. Then call your trusted mechanic for a second opinion. Many "urgent" repairs aren&apos;t urgent.</p>
+            <p className="text-base text-muted-foreground">When the oil-change shop tries to upsell you a $400 repair: politely thank them, drive to RepairPal.com, get a fair price. Then call your trusted mechanic for a second opinion. Many "urgent" repairs aren&apos;t urgent.</p>
           </CardContent>
         </Card>
       </main>

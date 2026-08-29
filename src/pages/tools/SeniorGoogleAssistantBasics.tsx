@@ -18,11 +18,11 @@ export default function SeniorGoogleAssistantBasics() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Built into Android</h2><p>Hold home button or say &ldquo;Hey Google.&rdquo; iPhone? Download the Google app.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Nest Mini ($30)</h2><p>Smallest Google speaker. Same features as bigger speakers.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Top commands</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>&ldquo;Hey Google, call Mom&rdquo;</li><li>&ldquo;Hey Google, set reminder&rdquo;</li><li>&ldquo;Hey Google, play 60s music&rdquo;</li><li>&ldquo;Hey Google, what&apos;s 30% of $80?&rdquo;</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Top commands</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>&ldquo;Hey Google, call Mom&rdquo;</li><li>&ldquo;Hey Google, set reminder&rdquo;</li><li>&ldquo;Hey Google, play 60s music&rdquo;</li><li>&ldquo;Hey Google, what&apos;s 30% of $80?&rdquo;</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Read websites aloud</h2><p>&ldquo;Hey Google, read this page.&rdquo; Useful for low vision.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Routines</h2><p>Set a Good Morning routine — lights on, weather, news, all by voice.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Privacy</h2><p>Say &ldquo;Hey Google, delete my recent activity.&rdquo; Or change in app settings.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Train your voice. Settings → Assistant → Voice Match. Better recognition.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Train your voice. Settings → Assistant → Voice Match. Better recognition.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -156,7 +156,7 @@ export default function GuestWifiSetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-cyan-500/10 rounded-full">
-                <Wifi className="h-8 w-8 text-cyan-600" />
+                <Wifi className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Guest Wi-Fi Setup</h1>
@@ -171,7 +171,7 @@ export default function GuestWifiSetup() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5 flex gap-3">
-              <ShieldCheck className="h-5 w-5 text-cyan-600 shrink-0 mt-0.5" />
+              <ShieldCheck className="h-5 w-5 text-info-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Why a guest network matters</p>
                 <p className="text-muted-foreground">
@@ -183,7 +183,7 @@ export default function GuestWifiSetup() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your router</p>
+              <p className="text-base font-semibold mb-3">Pick your router</p>
               <div className="flex gap-2 flex-wrap">
                 {(Object.keys(ROUTERS) as Router[]).map(r => (
                   <Button
@@ -196,7 +196,7 @@ export default function GuestWifiSetup() {
                   </Button>
                 ))}
               </div>
-              <p className="text-xs text-muted-foreground mt-3">
+              <p className="text-sm text-muted-foreground mt-3">
                 Not sure what you have? Look at the sticker on the back of the router. The brand name is printed there.
               </p>
             </CardContent>
@@ -207,14 +207,14 @@ export default function GuestWifiSetup() {
               <div className="flex items-start justify-between gap-3 mb-3 flex-wrap">
                 <div>
                   <Badge variant="outline" className="mb-2">{guide.label}</Badge>
-                  <p className="text-xs text-muted-foreground">App: {guide.app}</p>
+                  <p className="text-sm text-muted-foreground">App: {guide.app}</p>
                 </div>
               </div>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Setup steps</p>
               <ol className="space-y-3 mb-5">
                 {guide.steps.map((s, i) => (
-                  <li key={i} className="flex gap-3 text-sm">
+                  <li key={i} className="flex gap-3 text-base">
                     <span className="shrink-0 w-6 h-6 rounded-full bg-primary/10 text-primary font-semibold text-xs flex items-center justify-center mt-0.5">{i + 1}</span>
                     <span>{s}</span>
                   </li>
@@ -223,26 +223,26 @@ export default function GuestWifiSetup() {
 
               <div className="rounded-lg border border-border bg-muted/30 p-4 mb-4">
                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Hide your devices from guests</p>
-                <p className="text-sm">{guide.isolation}</p>
+                <p className="text-base">{guide.isolation}</p>
               </div>
 
               <div className="rounded-lg border border-border bg-muted/30 p-4 mb-4">
                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Set a daily time limit</p>
-                <p className="text-sm">{guide.timeLimit}</p>
+                <p className="text-base">{guide.timeLimit}</p>
               </div>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Worth knowing</p>
               <ul className="space-y-1.5">
                 {guide.notes.map((n, i) => (
-                  <li key={i} className="flex gap-2 text-sm"><span className="text-primary shrink-0">•</span><span>{n}</span></li>
+                  <li key={i} className="flex gap-2 text-base"><span className="text-primary shrink-0">•</span><span>{n}</span></li>
                 ))}
               </ul>
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Always set a password — never leave the guest network "open"</p>
                 <p className="text-muted-foreground">
@@ -254,8 +254,8 @@ export default function GuestWifiSetup() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A few good guest-network habits</p>
-              <ul className="space-y-1.5 text-sm text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A few good guest-network habits</p>
+              <ul className="space-y-1.5 text-base text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span>Write the guest name and password on a small card and tape it inside a kitchen cabinet door. Visitors find it without you having to look it up.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span>Change the guest password once a year. Old visitors\' phones stop auto-connecting — that is fine.</span></li>
                 <li className="flex gap-2"><span className="text-primary shrink-0">•</span><span>Use the guest network for any new gadget you are unsure about — a smart bulb from a brand you have never heard of, for example. Keeps it away from your real devices.</span></li>
@@ -268,20 +268,20 @@ export default function GuestWifiSetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/router-upgrade-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Router Upgrade Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Newer routers make guest setup faster.</p>
+                <p className="font-medium text-base">Router Upgrade Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Newer routers make guest setup faster.</p>
               </Link>
               <Link to="/tools/smart-home-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Smart Home Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pick safe smart devices to add.</p>
+                <p className="font-medium text-base">Smart Home Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pick safe smart devices to add.</p>
               </Link>
               <Link to="/tools/online-banking-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Online Banking Safety</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Protect the laptop you bank on.</p>
+                <p className="font-medium text-base">Online Banking Safety</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Protect the laptop you bank on.</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: write the guest password somewhere a visitor can find it without bothering you. Inside a cabinet door works great.
           </p>
         </div>

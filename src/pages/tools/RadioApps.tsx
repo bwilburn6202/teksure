@@ -31,10 +31,10 @@ export default function RadioApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function RadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why radio still wins for many</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local news + weather always.</li>
               <li>Sports — your home team always.</li>
               <li>No "now playing" guesswork — always something on.</li>
@@ -57,7 +57,7 @@ export default function RadioApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Listen via Echo / Google</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Alexa, play NPR" — instant national.</li>
               <li>"Alexa, play 89.7 FM" — your local station.</li>
               <li>"Hey Google, play classic rock radio."</li>
@@ -70,7 +70,7 @@ export default function RadioApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Old-school radios still work</h3>
-            <p className="text-sm text-muted-foreground">If you LOVE physical knobs — buy a tabletop radio (Sangean, Tivoli). $50-200. Sounds great. No app battle. Many include Bluetooth + AM/FM.</p>
+            <p className="text-base text-muted-foreground">If you LOVE physical knobs — buy a tabletop radio (Sangean, Tivoli). $50-200. Sounds great. No app battle. Many include Bluetooth + AM/FM.</p>
           </CardContent>
         </Card>
       </main>

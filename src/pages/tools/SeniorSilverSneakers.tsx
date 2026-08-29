@@ -18,11 +18,11 @@ export default function SeniorSilverSneakers() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free with Medicare Advantage</h2><p>15,000+ gyms nationwide. LA Fitness, YMCA, Gold&apos;s, Anytime Fitness.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sign up</h2><p>Visit silversneakers.com. Enter your insurance. Get your member ID.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior classes</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Classic (low-impact)</li><li>Yoga for seniors</li><li>Boom Mind &amp; Move</li><li>Splash water aerobics</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior classes</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Classic (low-impact)</li><li>Yoga for seniors</li><li>Boom Mind &amp; Move</li><li>Splash water aerobics</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">SilverSneakers GO app</h2><p>Free. At-home videos. Track activities.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">If you don&apos;t qualify</h2><p>Renew Active (UnitedHealthcare). Active &amp; Fit Direct. Same idea, similar networks.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Worth it</h2><p>Even using once a week saves $30+/month vs paying gym fees.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Many YMCAs accept SilverSneakers. Often the friendliest senior environment.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Many YMCAs accept SilverSneakers. Often the friendliest senior environment.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

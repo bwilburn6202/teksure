@@ -19,7 +19,7 @@ export default function CrochetForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why crochet?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>One hook (knitting = 2 needles).</li>
               <li>Easier to fix mistakes.</li>
               <li>Hand exercise for arthritis.</li>
@@ -33,7 +33,7 @@ export default function CrochetForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Starter kit ($25)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Size H/8 (5mm) hook</strong> — universal beginner size.</li>
               <li><strong>Worsted weight yarn</strong> — light color (see stitches).</li>
               <li><strong>Scissors + yarn needle</strong>.</li>
@@ -47,7 +47,7 @@ export default function CrochetForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Learn online (free)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>YouTube</strong> — Bella Coco, Sarah Maker. Best.</li>
               <li><strong>Sheep &amp; Stitch</strong> — written + video.</li>
               <li><strong>Ravelry.com</strong> — patterns + community.</li>
@@ -61,7 +61,7 @@ export default function CrochetForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First projects</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Dishcloth</strong> — single-stitch practice.</li>
               <li><strong>Scarf</strong> — chain + single crochet.</li>
               <li><strong>Granny square</strong> — joins make blanket.</li>
@@ -75,7 +75,7 @@ export default function CrochetForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior comfort tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Ergonomic hooks</strong> — Clover Amour, Furls.</li>
               <li><strong>Larger hook</strong> — easier on hands.</li>
               <li><strong>Good light</strong> — daylight LED lamp.</li>
@@ -89,7 +89,7 @@ export default function CrochetForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Charity crochet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Project Linus — blankets for kids in need.</li>
               <li>Knitted Knockers — post-mastectomy.</li>
               <li>Hats for newborns at hospitals.</li>
@@ -103,7 +103,7 @@ export default function CrochetForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Crochet groups</h3>
-            <p className="text-sm text-muted-foreground">Most libraries have crochet groups — free + welcoming. Yarn shops host weekly &quot;stitch &apos;n bitch&quot; sessions. Senior centers + churches. Online — Ravelry forums. Crochet teaches patience, builds finger strength, makes friends.</p>
+            <p className="text-base text-muted-foreground">Most libraries have crochet groups — free + welcoming. Yarn shops host weekly &quot;stitch &apos;n bitch&quot; sessions. Senior centers + churches. Online — Ravelry forums. Crochet teaches patience, builds finger strength, makes friends.</p>
           </CardContent>
         </Card>
       </main>

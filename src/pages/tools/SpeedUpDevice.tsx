@@ -97,7 +97,7 @@ export default function SpeedUpDevice() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-yellow-500/10 rounded-full">
-                <Zap className="h-8 w-8 text-yellow-600" />
+                <Zap className="h-8 w-8 text-warn-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Speed Up Your Device</h1>
@@ -112,7 +112,7 @@ export default function SpeedUpDevice() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Pick your device</p>
+              <p className="text-base font-semibold mb-3">Pick your device</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {DEVICES.map(d => {
                   const Icon = d.icon;
@@ -122,7 +122,7 @@ export default function SpeedUpDevice() {
                         device === d.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                       }`}>
                       <Icon className="h-5 w-5 text-muted-foreground shrink-0" />
-                      <p className="font-medium text-sm">{d.label}</p>
+                      <p className="font-medium text-base">{d.label}</p>
                     </button>
                   );
                 })}
@@ -130,7 +130,7 @@ export default function SpeedUpDevice() {
             </CardContent>
           </Card>
 
-          <p className="text-sm text-muted-foreground mb-3">{done.size} of {steps.length} done</p>
+          <p className="text-base text-muted-foreground mb-3">{done.size} of {steps.length} done</p>
 
           <div className="space-y-3 mb-6">
             {steps.map((s, i) => {
@@ -145,12 +145,12 @@ export default function SpeedUpDevice() {
                       <Checkbox checked={isDone} onCheckedChange={() => toggle(`${device}-${i}`)} className="mt-1" />
                       <div className="flex-1">
                         <div className="flex items-center justify-between gap-2 flex-wrap mb-1">
-                          <p className={`font-medium text-sm ${isDone ? 'line-through text-muted-foreground' : ''}`}>{i + 1}. {s.title}</p>
+                          <p className={`font-medium text-base ${isDone ? 'line-through text-muted-foreground' : ''}`}>{i + 1}. {s.title}</p>
                           <Badge variant="outline" className={`text-xs ${impactCls}`}>
                             {s.impact === 'big' ? 'Big impact' : s.impact === 'medium' ? 'Medium' : 'Small'}
                           </Badge>
                         </div>
-                        <p className="text-xs text-muted-foreground mt-1">{s.detail}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{s.detail}</p>
                       </div>
                     </label>
                   </CardContent>
@@ -161,8 +161,8 @@ export default function SpeedUpDevice() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">What NOT to install</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">What NOT to install</p>
+              <p className="text-sm text-muted-foreground">
                 Avoid "PC cleaner", "speed booster", "junk remover" apps. Most are scams that themselves slow your device, show ads, and sometimes inject malware. Windows 10 and 11 have everything you need built in. Same on Mac with the App Store. iPhone and Android are even more locked down — there is no legitimate "phone booster" app.
               </p>
             </CardContent>
@@ -172,20 +172,20 @@ export default function SpeedUpDevice() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/storage-cleanup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Storage Cleanup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">More space-saving tactics.</p>
+                <p className="font-medium text-base">Storage Cleanup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">More space-saving tactics.</p>
               </Link>
               <Link to="/tools/device-age-checker" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Device Age Checker</p>
-                <p className="text-xs text-muted-foreground mt-0.5">When to replace instead.</p>
+                <p className="font-medium text-base">Device Age Checker</p>
+                <p className="text-sm text-muted-foreground mt-0.5">When to replace instead.</p>
               </Link>
               <Link to="/tools/update-decision-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Update Decision Helper</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Should you install that update?</p>
+                <p className="font-medium text-base">Update Decision Helper</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Should you install that update?</p>
               </Link>
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1">
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1">
             <ChevronRight className="h-3 w-3" /> Quick Tip: a slow device usually has one big cause. Try the "Big impact" fixes first.
           </p>
         </div>

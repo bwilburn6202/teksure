@@ -482,7 +482,7 @@ export default function PodcastDirectory() {
               url="/tools/podcast-directory"
             />
           </div>
-          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-purple-200 via-pink-100 to-rose-100 text-purple-700 dark:from-purple-900/60 dark:via-pink-950/40 dark:to-rose-950/40 dark:text-purple-300 mb-5 shadow-sm">
+          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-purple-200 via-pink-100 to-rose-100 text-primary dark:from-purple-900/60 dark:via-pink-950/40 dark:to-rose-950/40 mb-5 shadow-sm">
             <Headphones className="h-12 w-12" aria-hidden="true" />
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 bg-gradient-to-br from-purple-700 via-purple-600 to-rose-600 bg-clip-text text-transparent dark:from-purple-300 dark:via-pink-400 dark:to-rose-300">
@@ -501,12 +501,12 @@ export default function PodcastDirectory() {
         </div>
 
         {/* ── What is a podcast ── */}
-        <Alert className="mb-10 border-2 border-purple-200 bg-purple-50 dark:bg-purple-950/30 dark:border-purple-800">
-          <Radio className="h-5 w-5 text-purple-700 dark:text-purple-300" />
-          <AlertTitle className="text-lg font-bold text-purple-900 dark:text-purple-100">
+        <Alert className="mb-10 border-2 border-primary/25 bg-primary/10 ">
+          <Radio className="h-5 w-5 text-primary " />
+          <AlertTitle className="text-lg font-bold text-primary ">
             What is a podcast?
           </AlertTitle>
-          <AlertDescription className="text-base text-purple-900 dark:text-purple-100 leading-relaxed">
+          <AlertDescription className="text-base text-primary leading-relaxed">
             Think of a podcast like a radio show you can play whenever you
             want. Most are free. New episodes arrive on a schedule, and you
             can "follow" a show so your phone downloads them for you. No
@@ -584,8 +584,8 @@ export default function PodcastDirectory() {
                       <em>0.8x</em> or speed up to <em>1.5x</em>.
                     </li>
                   </ol>
-                  <Alert className="border-purple-200 bg-purple-50 dark:bg-purple-950/30 dark:border-purple-800">
-                    <AlertDescription className="text-base text-purple-900 dark:text-purple-100">
+                  <Alert className="border-primary/25 bg-primary/10 ">
+                    <AlertDescription className="text-base text-primary ">
                       <strong>Quick Tip:</strong> The app can delete episodes
                       after you finish them so your phone doesn&apos;t fill up.
                       Go to <em>Settings → Podcasts → Remove Downloads</em>{' '}
@@ -611,7 +611,7 @@ export default function PodcastDirectory() {
                     <Card className="border-2">
                       <CardContent className="p-5 space-y-2">
                         <h4 className="font-bold text-lg">YouTube Music</h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           Comes on many Androids. Podcasts live under the{' '}
                           <em>Explore</em> tab → <em>Podcasts</em>.
                         </p>
@@ -620,7 +620,7 @@ export default function PodcastDirectory() {
                     <Card className="border-2">
                       <CardContent className="p-5 space-y-2">
                         <h4 className="font-bold text-lg">Spotify</h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           Free tier plays podcasts with no ads on most shows.
                           Install from Play Store.
                         </p>
@@ -629,7 +629,7 @@ export default function PodcastDirectory() {
                     <Card className="border-2">
                       <CardContent className="p-5 space-y-2">
                         <h4 className="font-bold text-lg">Pocket Casts</h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           A fan favorite — big play buttons, easy to learn,
                           no sign-in required to start.
                         </p>
@@ -638,7 +638,7 @@ export default function PodcastDirectory() {
                     <Card className="border-2">
                       <CardContent className="p-5 space-y-2">
                         <h4 className="font-bold text-lg">Amazon Music</h4>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-base text-muted-foreground">
                           Free for Prime members. Podcasts show under the{' '}
                           <em>Podcasts</em> tab.
                         </p>
@@ -666,7 +666,7 @@ export default function PodcastDirectory() {
                     can play a podcast out loud without touching your phone.
                   </p>
                   <div className="space-y-4">
-                    <div className="p-5 rounded-lg bg-purple-50 dark:bg-purple-950/30 border border-purple-200 dark:border-purple-800">
+                    <div className="p-5 rounded-lg bg-primary/10 border border-primary/25 ">
                       <p className="font-bold text-lg mb-2">Amazon Echo (Alexa)</p>
                       <p className="text-base mb-2">Say:</p>
                       <ul className="space-y-2 text-base">
@@ -681,7 +681,7 @@ export default function PodcastDirectory() {
                         </li>
                       </ul>
                     </div>
-                    <div className="p-5 rounded-lg bg-purple-50 dark:bg-purple-950/30 border border-purple-200 dark:border-purple-800">
+                    <div className="p-5 rounded-lg bg-primary/10 border border-primary/25 ">
                       <p className="font-bold text-lg mb-2">Google Nest (Google Assistant)</p>
                       <p className="text-base mb-2">Say:</p>
                       <ul className="space-y-2 text-base">
@@ -701,7 +701,7 @@ export default function PodcastDirectory() {
                     New to voice assistants? See our{' '}
                     <Link
                       to="/tools/voice-assistant-setup"
-                      className="text-purple-700 dark:text-purple-300 underline underline-offset-4 font-semibold"
+                      className="text-primary underline underline-offset-4 font-semibold"
                     >
                       Voice Assistant Setup guide
                     </Link>
@@ -721,14 +721,14 @@ export default function PodcastDirectory() {
                   </p>
                   <ul className="space-y-3 text-base">
                     <li className="flex items-start gap-3">
-                      <ExternalLink className="h-5 w-5 mt-1 text-purple-600 dark:text-purple-400 flex-shrink-0" aria-hidden="true" />
+                      <ExternalLink className="h-5 w-5 mt-1 text-primary flex-shrink-0" aria-hidden="true" />
                       <span>
                         <strong>podcasts.apple.com</strong> — search any show
                         and click the episode&apos;s play button.
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <ExternalLink className="h-5 w-5 mt-1 text-purple-600 dark:text-purple-400 flex-shrink-0" aria-hidden="true" />
+                      <ExternalLink className="h-5 w-5 mt-1 text-primary flex-shrink-0" aria-hidden="true" />
                       <span>
                         <strong>open.spotify.com</strong> — same idea. Free
                         account lets you follow shows and pick up where you
@@ -736,15 +736,15 @@ export default function PodcastDirectory() {
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <ExternalLink className="h-5 w-5 mt-1 text-purple-600 dark:text-purple-400 flex-shrink-0" aria-hidden="true" />
+                      <ExternalLink className="h-5 w-5 mt-1 text-primary flex-shrink-0" aria-hidden="true" />
                       <span>
                         <strong>The show&apos;s own website</strong> — almost
                         every podcast has a play button on its homepage.
                       </span>
                     </li>
                   </ul>
-                  <Alert className="border-purple-200 bg-purple-50 dark:bg-purple-950/30 dark:border-purple-800">
-                    <AlertDescription className="text-base text-purple-900 dark:text-purple-100">
+                  <Alert className="border-primary/25 bg-primary/10 ">
+                    <AlertDescription className="text-base text-primary ">
                       <strong>Quick Tip:</strong> Use headphones or turn up
                       your computer speakers. Volume controls work like any
                       other video or song.
@@ -769,7 +769,7 @@ export default function PodcastDirectory() {
           <div className="space-y-10">
             {categories.map((cat) => (
               <div key={cat.id}>
-                <h3 className="text-2xl font-bold mb-1 text-purple-800 dark:text-purple-200">
+                <h3 className="text-2xl font-bold mb-1 text-primary ">
                   {cat.label}{' '}
                   <span className="text-base font-normal text-muted-foreground">
                     ({cat.shows.length})
@@ -782,14 +782,14 @@ export default function PodcastDirectory() {
                   {cat.shows.map((show) => (
                     <Card
                       key={show.name}
-                      className="border-2 hover:border-purple-300 dark:hover:border-purple-700 transition-colors"
+                      className="border-2 hover:border-primary/25 transition-colors"
                     >
                       <CardContent className="p-5 space-y-3">
                         <div>
                           <h4 className="font-bold text-lg leading-tight">
                             {show.name}
                           </h4>
-                          <p className="text-sm text-muted-foreground mt-1">
+                          <p className="text-base text-muted-foreground mt-1">
                             Hosted by {show.host}
                           </p>
                         </div>
@@ -898,7 +898,7 @@ export default function PodcastDirectory() {
                 <CardContent className="p-5 space-y-2">
                   <h3 className="font-bold text-lg">{src.name}</h3>
                   <p
-                    className="text-sm text-muted-foreground"
+                    className="text-base text-muted-foreground"
                     dangerouslySetInnerHTML={{ __html: src.note }}
                   />
                   <Button asChild size="sm" variant="outline" className="min-h-10 mt-2">
@@ -965,7 +965,7 @@ export default function PodcastDirectory() {
             <Card className="border-2">
               <CardContent className="p-5 space-y-2">
                 <div className="flex items-center gap-2">
-                  <Volume2 className="h-5 w-5 text-purple-600" aria-hidden="true" />
+                  <Volume2 className="h-5 w-5 text-primary" aria-hidden="true" />
                   <h3 className="font-bold text-lg">Slower playback</h3>
                 </div>
                 <p className="text-base">
@@ -978,7 +978,7 @@ export default function PodcastDirectory() {
             <Card className="border-2">
               <CardContent className="p-5 space-y-2">
                 <div className="flex items-center gap-2">
-                  <Headphones className="h-5 w-5 text-purple-600" aria-hidden="true" />
+                  <Headphones className="h-5 w-5 text-primary" aria-hidden="true" />
                   <h3 className="font-bold text-lg">Hearing aid streaming</h3>
                 </div>
                 <p className="text-base">
@@ -986,7 +986,7 @@ export default function PodcastDirectory() {
                   See our{' '}
                   <Link
                     to="/tools/hearing-aid-tech-helper"
-                    className="text-purple-700 dark:text-purple-300 underline underline-offset-4 font-semibold"
+                    className="text-primary underline underline-offset-4 font-semibold"
                   >
                     Hearing Aid Tech Helper
                   </Link>
@@ -997,7 +997,7 @@ export default function PodcastDirectory() {
             <Card className="border-2">
               <CardContent className="p-5 space-y-2">
                 <div className="flex items-center gap-2">
-                  <Search className="h-5 w-5 text-purple-600" aria-hidden="true" />
+                  <Search className="h-5 w-5 text-primary" aria-hidden="true" />
                   <h3 className="font-bold text-lg">Large-text transcripts</h3>
                 </div>
                 <p className="text-base">
@@ -1009,7 +1009,7 @@ export default function PodcastDirectory() {
             <Card className="border-2">
               <CardContent className="p-5 space-y-2">
                 <div className="flex items-center gap-2">
-                  <Download className="h-5 w-5 text-purple-600" aria-hidden="true" />
+                  <Download className="h-5 w-5 text-primary" aria-hidden="true" />
                   <h3 className="font-bold text-lg">Sleep timer</h3>
                 </div>
                 <p className="text-base">
@@ -1043,7 +1043,7 @@ export default function PodcastDirectory() {
                 <CardContent className="p-5">
                   <div className="text-4xl mb-2" aria-hidden="true">{item.icon}</div>
                   <h3 className="font-bold text-lg mb-1">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground">{item.body}</p>
+                  <p className="text-base text-muted-foreground">{item.body}</p>
                 </CardContent>
               </Card>
             ))}
@@ -1051,12 +1051,12 @@ export default function PodcastDirectory() {
         </section>
 
         {/* ── Scam warning ── */}
-        <Alert className="mb-14 border-2 border-rose-300 bg-rose-50 dark:bg-rose-950/30 dark:border-rose-800">
-          <ShieldAlert className="h-5 w-5 text-rose-700 dark:text-rose-300" />
-          <AlertTitle className="text-lg font-bold text-rose-900 dark:text-rose-100">
+        <Alert className="mb-14 border-2 border-danger-foreground/25 bg-danger ">
+          <ShieldAlert className="h-5 w-5 text-danger-foreground " />
+          <AlertTitle className="text-lg font-bold text-danger-foreground ">
             Scam warning — watch for these
           </AlertTitle>
-          <AlertDescription className="text-base text-rose-900 dark:text-rose-100 leading-relaxed">
+          <AlertDescription className="text-base text-danger-foreground leading-relaxed">
             <ul className="list-disc pl-5 space-y-2 mt-2">
               <li>
                 <strong>&ldquo;Free podcast course&rdquo; that actually charges.</strong>{' '}
@@ -1087,7 +1087,7 @@ export default function PodcastDirectory() {
             <Card className="border-2">
               <CardContent className="p-5 space-y-3">
                 <div className="flex items-center gap-2">
-                  <BookmarkPlus className="h-5 w-5 text-purple-600" aria-hidden="true" />
+                  <BookmarkPlus className="h-5 w-5 text-primary" aria-hidden="true" />
                   <h3 className="font-bold text-lg">Save episodes for later</h3>
                 </div>
                 <p className="text-base">
@@ -1106,7 +1106,7 @@ export default function PodcastDirectory() {
             <Card className="border-2">
               <CardContent className="p-5 space-y-3">
                 <div className="flex items-center gap-2">
-                  <Users className="h-5 w-5 text-purple-600" aria-hidden="true" />
+                  <Users className="h-5 w-5 text-primary" aria-hidden="true" />
                   <h3 className="font-bold text-lg">Share with family</h3>
                 </div>
                 <p className="text-base">
@@ -1117,7 +1117,7 @@ export default function PodcastDirectory() {
                   if they use a different app.
                 </p>
                 <p className="text-base text-muted-foreground flex items-center gap-2">
-                  <Heart className="h-4 w-4 text-rose-500" aria-hidden="true" />
+                  <Heart className="h-4 w-4 text-danger-foreground" aria-hidden="true" />
                   Try a listen-along on your next video call with the grandkids.
                 </p>
               </CardContent>
@@ -1189,7 +1189,7 @@ export default function PodcastDirectory() {
                 Audible, Libro.fm, or your library&apos;s Libby app. See our{' '}
                 <Link
                   to="/tools/library-tech-helper"
-                  className="text-purple-700 dark:text-purple-300 underline underline-offset-4 font-semibold"
+                  className="text-primary underline underline-offset-4 font-semibold"
                 >
                   Library Tech Helper
                 </Link>{' '}
@@ -1238,10 +1238,10 @@ export default function PodcastDirectory() {
                 body: 'Set up Alexa or Google so you can play podcasts out loud, hands-free.',
               },
             ].map((r) => (
-              <Card key={r.to} className="border-2 hover:border-purple-300 dark:hover:border-purple-700 transition-colors">
+              <Card key={r.to} className="border-2 hover:border-primary/25 transition-colors">
                 <CardContent className="p-5">
                   <Link to={r.to} className="block space-y-1">
-                    <h3 className="font-bold text-lg text-purple-800 dark:text-purple-200">
+                    <h3 className="font-bold text-lg text-primary ">
                       {r.title}
                     </h3>
                     <p className="text-base text-muted-foreground">{r.body}</p>

@@ -19,7 +19,7 @@ export default function FreeLegalAidForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">National resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Legal Services Corporation</strong> — lsc.gov. Find local LSC programs.</li>
               <li><strong>LawHelp.org</strong> — by state. Self-help + lawyer referrals.</li>
               <li><strong>Justice in Aging</strong> — justiceinaging.org. Senior-specific.</li>
@@ -33,7 +33,7 @@ export default function FreeLegalAidForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What they help with (FREE)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wills + simple estate planning.</li>
               <li>Power of Attorney + advance directives.</li>
               <li>Medicaid + Medicare appeals.</li>
@@ -49,7 +49,7 @@ export default function FreeLegalAidForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Income limits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most LSC programs: 125% of federal poverty.</li>
               <li>~$18,800/yr individual, $25,400 couple.</li>
               <li>Some go to 200% (~$30K/$40K).</li>
@@ -63,7 +63,7 @@ export default function FreeLegalAidForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free for ALL seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SHIP</strong> — Medicare counseling. shiphelp.org.</li>
               <li><strong>SMP</strong> — Medicare fraud help. smpresource.org.</li>
               <li><strong>VA legal services</strong> — for veterans.</li>
@@ -77,7 +77,7 @@ export default function FreeLegalAidForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bar associations</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Most state bars offer Senior Lawyer Service.</li>
               <li>Free 30-min consults.</li>
               <li>Reduced fees for follow-up.</li>
@@ -90,7 +90,7 @@ export default function FreeLegalAidForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Self-help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Court Forms Self-Help</strong> — most states have free forms.</li>
               <li><strong>Pro Se Help Centers</strong> — court staff help self-representers.</li>
               <li><strong>Library legal collections</strong> — research books + databases.</li>
@@ -103,7 +103,7 @@ export default function FreeLegalAidForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hospice + nursing home</h3>
-            <p className="text-sm text-muted-foreground">Many hospices include social workers who help with legal needs (Medicaid, advance directives, estate). Nursing home <strong>Long-term Care Ombudsman</strong> — your free advocate. Reports issues, fights for resident rights. Every state has one. Call 1-800-677-1116.</p>
+            <p className="text-base text-muted-foreground">Many hospices include social workers who help with legal needs (Medicaid, advance directives, estate). Nursing home <strong>Long-term Care Ombudsman</strong> — your free advocate. Reports issues, fights for resident rights. Every state has one. Call 1-800-677-1116.</p>
           </CardContent>
         </Card>
       </main>

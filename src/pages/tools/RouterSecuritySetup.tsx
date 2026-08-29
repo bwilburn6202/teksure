@@ -19,7 +19,7 @@ export default function RouterSecuritySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Change default passwords</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Default router admin password = unsafe.</li>
               <li>Open browser, type 192.168.1.1.</li>
               <li>Login (default usually admin/admin).</li>
@@ -33,7 +33,7 @@ export default function RouterSecuritySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Enable WPA3 encryption</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Latest WiFi security standard.</li>
               <li>In router settings — Security mode.</li>
               <li>Pick WPA3 if available.</li>
@@ -47,7 +47,7 @@ export default function RouterSecuritySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Update firmware</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Router updates patch security holes.</li>
               <li>Check router admin panel.</li>
               <li>Or use ISP&apos;s app to update.</li>
@@ -61,7 +61,7 @@ export default function RouterSecuritySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Guest network</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Separate WiFi for visitors.</li>
               <li>They can use internet.</li>
               <li>Can&apos;t access your devices.</li>
@@ -75,7 +75,7 @@ export default function RouterSecuritySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Disable WPS</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>WPS button has security weaknesses.</li>
               <li>Turn off in router settings.</li>
               <li>Use WiFi password instead.</li>
@@ -89,7 +89,7 @@ export default function RouterSecuritySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">If router is 5+ years old</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Replace it.</li>
               <li>Newer routers more secure.</li>
               <li>Better range too.</li>
@@ -103,7 +103,7 @@ export default function RouterSecuritySetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Just call ISP for help</h3>
-            <p className="text-sm text-muted-foreground">If router admin panels intimidate you, call your internet provider. Comcast, Verizon, AT&amp;T all offer free phone support to help you change passwords and enable security features. Tell them: &quot;I want to change my WiFi password, change admin password, and turn off WPS.&quot; They&apos;ll walk you through it. Or stop by their store.</p>
+            <p className="text-base text-muted-foreground">If router admin panels intimidate you, call your internet provider. Comcast, Verizon, AT&amp;T all offer free phone support to help you change passwords and enable security features. Tell them: &quot;I want to change my WiFi password, change admin password, and turn off WPS.&quot; They&apos;ll walk you through it. Or stop by their store.</p>
           </CardContent>
         </Card>
       </main>

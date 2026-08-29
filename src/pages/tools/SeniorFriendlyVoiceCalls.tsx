@@ -22,7 +22,7 @@ export default function SeniorFriendlyVoiceCalls() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Crisis Text Line</h2><p>Text HOME to 741741. Free 24/7 emotional support.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">988 Suicide Lifeline</h2><p>FREE 988. If feeling depressed or hopeless. 24/7.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">No shame</h2><p>Loneliness is real. Phone friends are real friends. Use these resources.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Friendship Line is FREE 24/7. Trained listeners. Senior-specific.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Friendship Line is FREE 24/7. Trained listeners. Senior-specific.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

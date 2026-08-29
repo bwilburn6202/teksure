@@ -19,7 +19,7 @@ export default function RingAlarmSystemGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is Ring Alarm?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Home security from Ring (owned by Amazon).</li>
               <li>Works perfectly with Alexa.</li>
               <li>Works with Ring video doorbells + cameras.</li>
@@ -33,7 +33,7 @@ export default function RingAlarmSystemGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Starter kit — around $199–$299.</li>
               <li>Self-monitoring — free.</li>
               <li>Ring Protect Pro — $20/month or $200/year.</li>
@@ -47,7 +47,7 @@ export default function RingAlarmSystemGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What&apos;s included</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Base station + siren.</li>
               <li>Keypad for arming/disarming.</li>
               <li>Contact sensors (doors + windows).</li>
@@ -61,7 +61,7 @@ export default function RingAlarmSystemGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Alexa integration</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;Alexa, arm Ring Alarm.&quot;</li>
               <li>&quot;Alexa, what&apos;s the status of my alarm?&quot;</li>
               <li>Alexa Guard Plus — listens for glass breaking, alarms.</li>
@@ -75,7 +75,7 @@ export default function RingAlarmSystemGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Ring app</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>See all sensors in one place.</li>
               <li>Arm and disarm remotely.</li>
               <li>Get alerts when motion detected.</li>
@@ -89,7 +89,7 @@ export default function RingAlarmSystemGuide() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Ring vs SimpliSafe</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Ring — better if you have Alexa + Echo devices.</li>
               <li>SimpliSafe — better standalone system.</li>
               <li>Ring — great camera integration.</li>
@@ -103,7 +103,7 @@ export default function RingAlarmSystemGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you have a Fire Stick or Echo</h3>
-            <p className="text-sm text-muted-foreground">Ring Alarm is a natural choice if your home already has Amazon devices. You can watch camera feeds on an Echo Show screen, arm and disarm by voice, and get doorbell alerts through your speakers. It&apos;s also frequently discounted during Amazon Prime Day. If you&apos;re not in the Amazon ecosystem, SimpliSafe may feel simpler.</p>
+            <p className="text-base text-muted-foreground">Ring Alarm is a natural choice if your home already has Amazon devices. You can watch camera feeds on an Echo Show screen, arm and disarm by voice, and get doorbell alerts through your speakers. It&apos;s also frequently discounted during Amazon Prime Day. If you&apos;re not in the Amazon ecosystem, SimpliSafe may feel simpler.</p>
           </CardContent>
         </Card>
       </main>

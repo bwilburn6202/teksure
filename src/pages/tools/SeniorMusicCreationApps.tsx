@@ -22,7 +22,7 @@ export default function SeniorMusicCreationApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Songsterr</h2><p>$10/month. Find tabs for any song. Learn classics on guitar.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Studies show</h2><p>Music learning slows cognitive decline. Real measured benefit.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Piano keyboards</h2><p>Yamaha P-45 ($450) is great for seniors learning piano.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Never too late. Many seniors start piano in 70s and play beautifully.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Never too late. Many seniors start piano in 70s and play beautifully.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

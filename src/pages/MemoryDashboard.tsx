@@ -115,14 +115,14 @@ function TierSection({
         <span className={config.color}>{config.icon}</span>
         <div>
           <h2 className="font-bold text-lg text-foreground">{config.label}</h2>
-          <p className="text-sm text-muted-foreground">{config.description}</p>
+          <p className="text-base text-muted-foreground">{config.description}</p>
         </div>
         <span className="ml-auto rounded-full bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground">
           {entries.length}
         </span>
       </div>
       {entries.length === 0 ? (
-        <p className="text-sm text-muted-foreground italic pl-7">No memories yet in this tier.</p>
+        <p className="text-base text-muted-foreground italic pl-7">No memories yet in this tier.</p>
       ) : (
         <div className="space-y-2 pl-7">
           {entries.map(e => (
@@ -166,7 +166,7 @@ export default function MemoryDashboard() {
         {/* Hero */}
         <div className="border-b border-border bg-gradient-to-b from-muted/50 to-background">
           <div className="max-w-3xl mx-auto px-4 py-12 text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-purple-100 dark:bg-purple-900/30 px-4 py-1.5 text-sm font-medium text-purple-700 dark:text-purple-300 mb-4">
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-4">
               <Brain className="h-4 w-4" />
               Agent Memory
             </div>
@@ -214,7 +214,7 @@ export default function MemoryDashboard() {
             </Button>
             {confirmClear ? (
               <div className="flex items-center gap-2 ml-auto">
-                <span className="text-sm text-destructive flex items-center gap-1">
+                <span className="text-base text-destructive flex items-center gap-1">
                   <AlertTriangle className="h-4 w-4" /> Are you sure? This cannot be undone.
                 </span>
                 <Button
@@ -252,7 +252,7 @@ export default function MemoryDashboard() {
             <Shield className="h-5 w-5 text-teksure-success shrink-0 mt-0.5" />
             <div>
               <p className="font-medium text-foreground" style={{ fontSize: 15 }}>Your privacy matters</p>
-              <p className="text-sm text-muted-foreground mt-0.5">
+              <p className="text-base text-muted-foreground mt-0.5">
                 Memories are stored privately and never shared. Personal information like email addresses
                 and phone numbers are automatically removed before saving. You are always in control
                 of what TekBot remembers.

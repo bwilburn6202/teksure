@@ -22,7 +22,7 @@ export default function SeniorDarkModeBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Windows</h2><p>Settings → Personalization → Colors → Dark.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Auto switch</h2><p>Set to switch automatically — light during day, dark at sunset.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Battery saver</h2><p>OLED screens use 30-60% less battery in dark mode.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Try dark mode for a week. Most seniors say their eyes feel less tired at night.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Try dark mode for a week. Most seniors say their eyes feel less tired at night.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

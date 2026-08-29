@@ -227,7 +227,7 @@ const lessons: Lesson[] = [
 const Certificate = ({ onReset }: { onReset: () => void }) => (
   <div className="text-center">
     <div className="text-6xl mb-4"></div>
-    <Badge className="bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200 text-sm px-4 py-1.5 mb-4">
+    <Badge className="bg-warn text-warn-foreground text-sm px-4 py-1.5 mb-4">
       Course Complete!
     </Badge>
     <h2 className="text-2xl font-bold mb-2">You're Internet Safety Certified!</h2>
@@ -236,14 +236,14 @@ const Certificate = ({ onReset }: { onReset: () => void }) => (
     </p>
 
     <div className="border-2 border-amber-400/40 rounded-2xl p-8 bg-amber-50/50 dark:bg-amber-950/20 mb-8 max-w-sm mx-auto">
-      <Shield className="h-12 w-12 text-amber-500 mx-auto mb-3" />
+      <Shield className="h-12 w-12 text-warn-foreground mx-auto mb-3" />
       <p className="text-lg font-bold mb-1">Internet Safety Certificate</p>
-      <p className="text-sm text-muted-foreground">Issued by TekSure</p>
-      <p className="text-xs text-muted-foreground mt-1">{new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
-      <div className="mt-4 pt-4 border-t border-amber-200 dark:border-amber-800 grid grid-cols-1 gap-1.5 text-xs text-left">
+      <p className="text-base text-muted-foreground">Issued by TekSure</p>
+      <p className="text-sm text-muted-foreground mt-1">{new Date().toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
+      <div className="mt-4 pt-4 border-t border-warn-foreground/25 grid grid-cols-1 gap-1.5 text-xs text-left">
         {lessons.map(l => (
           <div key={l.id} className="flex items-center gap-2">
-            <CheckCircle2 className="h-3.5 w-3.5 text-green-500 shrink-0" />
+            <CheckCircle2 className="h-3.5 w-3.5 text-success-foreground shrink-0" />
             <span className="flex items-center gap-1.5"><l.icon className="h-3.5 w-3.5" /> {l.title}</span>
           </div>
         ))}
@@ -359,7 +359,7 @@ export default function SafetyCourse() {
                 <CardContent className="py-8 text-center">
                   <div className="text-5xl mb-4"></div>
                   <h2 className="text-xl font-semibold mb-3">Stay Safe Online</h2>
-                  <p className="text-muted-foreground text-sm leading-relaxed max-w-md mx-auto">
+                  <p className="text-muted-foreground text-base leading-relaxed max-w-md mx-auto">
                     5 short lessons covering everything beginners need to know about staying safe online — from spotting scams to protecting your privacy. Each lesson takes about 3 minutes.
                   </p>
                 </CardContent>
@@ -370,7 +370,7 @@ export default function SafetyCourse() {
                   <div key={l.id} className="flex items-center gap-4 p-3 rounded-xl bg-muted/50 border border-border">
                     <l.icon className="h-5 w-5 text-primary shrink-0" />
                     <div className="flex-1 min-w-0">
-                      <p className="font-medium text-sm">{l.title}</p>
+                      <p className="font-medium text-base">{l.title}</p>
                       <p className="text-xs text-muted-foreground truncate">{l.subtitle}</p>
                     </div>
                     <Badge variant="outline" className="text-xs shrink-0">Lesson {i + 1}</Badge>
@@ -407,7 +407,7 @@ export default function SafetyCourse() {
                       {block.heading && (
                         <h3 className="font-semibold text-base mb-1.5">{block.heading}</h3>
                       )}
-                      <p className="text-sm text-muted-foreground leading-relaxed">{block.text}</p>
+                      <p className="text-base text-muted-foreground leading-relaxed">{block.text}</p>
                     </div>
                   ))}
                 </CardContent>
@@ -424,7 +424,7 @@ export default function SafetyCourse() {
             <div key={`lesson-${currentLesson}-quiz-${currentQuizQ}`}>
               <div className="flex items-center gap-3 mb-2">
                 <Badge variant="outline" className="text-xs gap-1"><lesson.icon className="h-3 w-3" /> Quiz — {lesson.title}</Badge>
-                <span className="text-xs text-muted-foreground ml-auto">
+                <span className="text-sm text-muted-foreground ml-auto">
                   Q{currentQuizQ + 1} of {lesson.quiz.length}
                 </span>
               </div>
@@ -457,9 +457,9 @@ export default function SafetyCourse() {
                       <span className="shrink-0 w-6 h-6 rounded-full border flex items-center justify-center text-xs font-bold">
                         {String.fromCharCode(65 + i)}
                       </span>
-                      <span className="text-sm leading-relaxed">{option}</span>
+                      <span className="text-base leading-relaxed">{option}</span>
                       {selectedAnswer !== null && i === lesson.quiz[currentQuizQ].correct && (
-                        <CheckCircle2 className="h-4 w-4 text-green-500 shrink-0 ml-auto mt-0.5" />
+                        <CheckCircle2 className="h-4 w-4 text-success-foreground shrink-0 ml-auto mt-0.5" />
                       )}
                       {selectedAnswer !== null && i === selectedAnswer && i !== lesson.quiz[currentQuizQ].correct && (
                         <XCircle className="h-4 w-4 text-destructive shrink-0 ml-auto mt-0.5" />
@@ -473,11 +473,11 @@ export default function SafetyCourse() {
                 <div>
                   <div className={`rounded-xl p-4 mb-5 flex items-start gap-3 ${
                     answeredCorrectly
-                      ? 'bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800/40'
-                      : 'bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/40'
+                      ? 'bg-green-50 dark:bg-green-950/20 border border-success-foreground/25 dark:border-green-800/40'
+                      : 'bg-amber-50 dark:bg-amber-950/20 border border-warn-foreground/25 dark:border-amber-800/40'
                   }`}>
                     <span className="text-xl shrink-0">{answeredCorrectly ? '' : ''}</span>
-                    <p className="text-sm leading-relaxed">{lesson.quiz[currentQuizQ].explanation}</p>
+                    <p className="text-base leading-relaxed">{lesson.quiz[currentQuizQ].explanation}</p>
                   </div>
 
                   <Button size="lg" className="w-full h-12 gap-2" onClick={nextQuestion}>

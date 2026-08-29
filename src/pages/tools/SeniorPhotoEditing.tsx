@@ -22,7 +22,7 @@ export default function SeniorPhotoEditing() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Lightroom Mobile</h2><p>$10/month. Pro-level editing. Worth it for hobbyists.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Restore old photos</h2><p>Apple Photos can colorize. Or use Remini app for AI restoration.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Print magnets</h2><p>Shutterfly. Apple Photos. Make magnets/calendars from edits.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Apple Photos auto-enhance is enough for most senior photos.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Apple Photos auto-enhance is enough for most senior photos.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

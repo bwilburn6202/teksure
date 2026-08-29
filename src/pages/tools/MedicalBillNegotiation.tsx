@@ -19,7 +19,7 @@ export default function MedicalBillNegotiation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 1: Get itemized bill</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Demand itemized bill (not summary).</li>
               <li>Federal law requires it free.</li>
               <li>Lists every service + code + charge.</li>
@@ -33,7 +33,7 @@ export default function MedicalBillNegotiation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 2: Verify with insurance</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Match against EOB (Explanation of Benefits).</li>
               <li>Insurance not paying contractually agreed = call them.</li>
               <li>Hospital billed full retail vs negotiated rate?</li>
@@ -47,7 +47,7 @@ export default function MedicalBillNegotiation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Step 3: Negotiate</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Call billing department — not collection agency.</li>
               <li>Ask for &quot;cash discount&quot; — 30-50% off.</li>
               <li>Mention financial hardship — even if not severe.</li>
@@ -62,7 +62,7 @@ export default function MedicalBillNegotiation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Charity care</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>All non-profit hospitals must offer charity care.</li>
               <li>Often 100% forgiveness for low income.</li>
               <li>50%+ for moderate income.</li>
@@ -76,7 +76,7 @@ export default function MedicalBillNegotiation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pro negotiators</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Patient Advocate Foundation</strong> — patientadvocate.org. Free.</li>
               <li><strong>Medical Billing Advocates</strong> — claims professionals. Take 30%.</li>
               <li><strong>BillCutterz</strong> — negotiate any bill. Take % of savings.</li>
@@ -89,7 +89,7 @@ export default function MedicalBillNegotiation() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t do these</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t pay before insurance processes.</li>
               <li>Don&apos;t put on credit card unless paying off immediately.</li>
               <li>Don&apos;t ignore — goes to collections + credit damage.</li>
@@ -104,7 +104,7 @@ export default function MedicalBillNegotiation() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Save 50% on common care</h3>
-            <p className="text-sm text-muted-foreground"><strong>Healthcare Bluebook</strong> + <strong>FAIR Health Consumer</strong> show fair prices. <strong>Sesame Care</strong> + <strong>Mira</strong> — direct-pay clinics often half ER cost. <strong>Costco / Walmart pharmacies</strong> + <strong>GoodRx</strong> save 50%+. Many seniors overpay due to not shopping. Compare always.</p>
+            <p className="text-base text-muted-foreground"><strong>Healthcare Bluebook</strong> + <strong>FAIR Health Consumer</strong> show fair prices. <strong>Sesame Care</strong> + <strong>Mira</strong> — direct-pay clinics often half ER cost. <strong>Costco / Walmart pharmacies</strong> + <strong>GoodRx</strong> save 50%+. Many seniors overpay due to not shopping. Compare always.</p>
           </CardContent>
         </Card>
       </main>

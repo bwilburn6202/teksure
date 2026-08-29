@@ -20,9 +20,9 @@ export default function SeniorOLLISeniorPlanet() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">OLLI cost</h2><p>$25-$300/year, varies by location. Unlimited classes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior Planet</h2><p>Free. Online tech and life skills classes for seniors. seniorplanet.org.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cyber-Seniors</h2><p>Free 1-on-1 tech tutoring with high schoolers. cyberseniors.org.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Topics</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Smartphone basics</li><li>Memoir writing</li><li>Yoga and Tai Chi</li><li>Financial planning</li><li>Birding</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Topics</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Smartphone basics</li><li>Memoir writing</li><li>Yoga and Tai Chi</li><li>Financial planning</li><li>Birding</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Local libraries</h2><p>Most public libraries offer free senior classes too. Call yours and ask.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: OLLI classes are taught by retired professors — they love teaching adult learners.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: OLLI classes are taught by retired professors — they love teaching adult learners.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

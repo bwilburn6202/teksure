@@ -98,7 +98,7 @@ export default function OnlineClassesPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-indigo-500/10 rounded-full">
-                <GraduationCap className="h-8 w-8 text-indigo-600" />
+                <GraduationCap className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Online Classes Picker</h1>
@@ -140,8 +140,8 @@ export default function OnlineClassesPicker() {
                         </div>
                       </div>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-2"><strong>Who it fits:</strong> {s.whoFits}</p>
-                    <p className="text-xs text-muted-foreground mb-2"><strong>How to start:</strong> {s.howToStart}</p>
+                    <p className="text-base text-muted-foreground mb-2"><strong>Who it fits:</strong> {s.whoFits}</p>
+                    <p className="text-sm text-muted-foreground mb-2"><strong>How to start:</strong> {s.howToStart}</p>
 
                     {s.link && (
                       <a href={s.link} target="_blank" rel="noreferrer"
@@ -157,8 +157,8 @@ export default function OnlineClassesPicker() {
 
           <Card className="border-border bg-gradient-to-br from-indigo-50 to-blue-50 dark:from-indigo-950/20 dark:to-blue-950/20 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Honest note on state college tuition</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Honest note on state college tuition</p>
+              <p className="text-sm text-muted-foreground">
                 Most US states waive or reduce tuition for residents 60 or 65+ at public colleges and universities. The rules vary widely — some cover for-credit classes, some only audit, some apply only when seats are open. Call your state public college registrar and ask about the "senior citizen tuition waiver". This is one of the most under-used benefits in the country.
               </p>
             </CardContent>
@@ -168,16 +168,16 @@ export default function OnlineClassesPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/library-power-pack" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Library Power Pack</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Free library learning and ebooks.</p>
+                <p className="font-medium text-base">Library Power Pack</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Free library learning and ebooks.</p>
               </Link>
               <Link to="/tools/stay-connected" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Stay Connected</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Calls, classes, and hobby groups.</p>
+                <p className="font-medium text-base">Stay Connected</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Calls, classes, and hobby groups.</p>
               </Link>
               <Link to="/tools/free-resources" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Free Resources</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Programs that cost nothing.</p>
+                <p className="font-medium text-base">Free Resources</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Programs that cost nothing.</p>
               </Link>
             </div>
           </div>

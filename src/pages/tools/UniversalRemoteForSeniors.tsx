@@ -19,7 +19,7 @@ export default function UniversalRemoteForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why a universal remote?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Replaces 4–5 different remotes.</li>
               <li>One device for TV, cable, soundbar, streaming.</li>
               <li>Bigger buttons easier on aging eyes.</li>
@@ -33,7 +33,7 @@ export default function UniversalRemoteForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Big-button basic</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>GE Big Button Universal — $20.</li>
               <li>Huge buttons for low vision.</li>
               <li>Replaces basic TV + cable.</li>
@@ -47,7 +47,7 @@ export default function UniversalRemoteForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Logitech Harmony</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Sadly discontinued but used ones still work.</li>
               <li>Find on eBay, Facebook Marketplace.</li>
               <li>Activity-based — &quot;Watch TV&quot; turns on everything.</li>
@@ -61,7 +61,7 @@ export default function UniversalRemoteForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Modern alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SofaBaton U2 — $80, similar to Harmony.</li>
               <li>SofaBaton X1 — $110, with hub.</li>
               <li>BroadLink RM4 Pro — $40, smartphone-controlled.</li>
@@ -75,7 +75,7 @@ export default function UniversalRemoteForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific picks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Flipper Big Button Universal — $25.</li>
               <li>Made specifically for seniors.</li>
               <li>Only 6 large buttons.</li>
@@ -89,7 +89,7 @@ export default function UniversalRemoteForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setting up universal</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Find code for your TV brand.</li>
               <li>Press setup button.</li>
               <li>Enter code or auto-search.</li>
@@ -103,7 +103,7 @@ export default function UniversalRemoteForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Flipper for memory issues</h3>
-            <p className="text-sm text-muted-foreground">For seniors with early dementia or memory issues, the Flipper Big Button Universal Remote ($25) is wonderful — only 6 buttons, all clearly labeled, replaces all remote complexity. Many caregivers buy these for elderly parents to reduce TV-related frustration. For tech-comfortable seniors who want fancy features, used Logitech Harmony remotes are still the gold standard.</p>
+            <p className="text-base text-muted-foreground">For seniors with early dementia or memory issues, the Flipper Big Button Universal Remote ($25) is wonderful — only 6 buttons, all clearly labeled, replaces all remote complexity. Many caregivers buy these for elderly parents to reduce TV-related frustration. For tech-comfortable seniors who want fancy features, used Logitech Harmony remotes are still the gold standard.</p>
           </CardContent>
         </Card>
       </main>

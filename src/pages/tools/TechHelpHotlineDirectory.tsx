@@ -450,7 +450,7 @@ export default function TechHelpHotlineDirectory() {
           <div className="container max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-amber-500/10 rounded-full">
-                <Phone className="h-8 w-8 text-amber-600" aria-hidden="true" />
+                <Phone className="h-8 w-8 text-warn-foreground" aria-hidden="true" />
               </div>
             </div>
             <Badge variant="secondary" className="mb-3">Free Directory · Print &amp; save</Badge>
@@ -519,7 +519,7 @@ export default function TechHelpHotlineDirectory() {
           {/* Print header */}
           <div className="hidden print:block">
             <h1 className="text-3xl font-bold mb-2">Tech Help Hotline Directory</h1>
-            <p className="text-sm mb-4">Printed from TekSure.com — current as of 2026</p>
+            <p className="text-base mb-4">Printed from TekSure.com — current as of 2026</p>
           </div>
 
           {/* Empty state */}
@@ -570,7 +570,7 @@ export default function TechHelpHotlineDirectory() {
                           </p>
                           <p className="text-muted-foreground">{h.notes}</p>
                           {h.url && (
-                            <p className="text-xs">
+                            <p className="text-sm">
                               <a
                                 href={h.url}
                                 target="_blank"
@@ -591,13 +591,13 @@ export default function TechHelpHotlineDirectory() {
           ))}
 
           {/* Scam warning */}
-          <Card className="border-amber-200 dark:border-amber-900/40 print:break-inside-avoid">
+          <Card className="border-warn-foreground/25 print:break-inside-avoid">
             <CardContent className="p-6 bg-amber-50/40 dark:bg-amber-950/10">
               <div className="flex items-start gap-3">
-                <AlertCircle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <AlertCircle className="h-5 w-5 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <h3 className="font-semibold mb-1">Watch for fake "tech support" numbers</h3>
-                  <p className="text-sm leading-relaxed">
+                  <p className="text-base leading-relaxed">
                     Scammers buy ads in search results that pretend to be Apple, Microsoft, or your
                     bank. The phone numbers in this directory come directly from each company\'s
                     official .com or .gov website. If a number you find online does not match the
@@ -633,7 +633,7 @@ export default function TechHelpHotlineDirectory() {
             </CardContent>
           </Card>
 
-          <p className="text-xs text-muted-foreground text-center max-w-prose mx-auto">
+          <p className="text-sm text-muted-foreground text-center max-w-prose mx-auto">
             All numbers verified against the listed company\'s or agency\'s official website as of
             May 2026. Hours of operation can change — call to confirm current availability.
           </p>

@@ -74,9 +74,9 @@ export default function TechEmergencyKit() {
           <Card className="rounded-2xl mb-8">
             <CardContent className="pt-6">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-sm font-medium">{done.size} of {KIT_ITEMS.length} completed</span>
+                <span className="text-base font-medium">{done.size} of {KIT_ITEMS.length} completed</span>
                 <div className="flex items-center gap-2">
-                  <span className="text-sm font-bold">{progress}%</span>
+                  <span className="text-base font-bold">{progress}%</span>
                   {done.size > 0 && <Button size="sm" variant="ghost" onClick={() => setDone(new Set())} className="gap-1 text-xs h-7"><RotateCcw className="h-3 w-3" /> Reset</Button>}
                 </div>
               </div>
@@ -89,9 +89,9 @@ export default function TechEmergencyKit() {
           {progress === 100 && (
             <Card className="rounded-2xl mb-8 border-green-500/30 bg-green-50/50 dark:bg-green-950/20">
               <CardContent className="py-8 text-center">
-                <Sparkles className="h-10 w-10 text-green-500 mx-auto mb-3" />
+                <Sparkles className="h-10 w-10 text-success-foreground mx-auto mb-3" />
                 <h2 className="text-xl font-bold mb-1">Your emergency kit is complete!</h2>
-                <p className="text-sm text-muted-foreground">You are prepared. Revisit this checklist every 6 months to make sure everything is still up to date.</p>
+                <p className="text-base text-muted-foreground">You are prepared. Revisit this checklist every 6 months to make sure everything is still up to date.</p>
               </CardContent>
             </Card>
           )}
@@ -125,10 +125,10 @@ export default function TechEmergencyKit() {
                     className={`w-full text-left rounded-xl p-4 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 ${done.has(item.id) ? 'bg-green-50/50 dark:bg-green-950/10' : 'hover:bg-muted/50'}`}
                   >
                     <div className="flex items-start gap-3">
-                      {done.has(item.id) ? <CheckCircle className="h-5 w-5 text-green-500 shrink-0 mt-0.5" aria-hidden="true" /> : <Circle className="h-5 w-5 text-muted-foreground/40 shrink-0 mt-0.5" aria-hidden="true" />}
+                      {done.has(item.id) ? <CheckCircle className="h-5 w-5 text-success-foreground shrink-0 mt-0.5" aria-hidden="true" /> : <Circle className="h-5 w-5 text-muted-foreground/40 shrink-0 mt-0.5" aria-hidden="true" />}
                       <div>
-                        <p className={`text-sm font-medium ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
-                        <p className="text-xs text-muted-foreground mt-1">{item.description}</p>
+                        <p className={`text-base font-medium ${done.has(item.id) ? 'line-through text-muted-foreground' : ''}`}>{item.title}</p>
+                        <p className="text-sm text-muted-foreground mt-1">{item.description}</p>
                       </div>
                     </div>
                   </button>

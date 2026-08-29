@@ -22,7 +22,7 @@ export default function SeniorContactsManagement() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Add photos</h2><p>Personal photos appear when calling. Easier recognition.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Add details</h2><p>Address, birthday, notes. App reminds birthdays. Address helps with directions.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Print emergency list</h2><p>Family + doctor + lawyer. Tape inside kitchen cabinet.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Yearly contact cleanup. Delete unknown numbers. Mark family as favorites.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Yearly contact cleanup. Delete unknown numbers. Mark family as favorites.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

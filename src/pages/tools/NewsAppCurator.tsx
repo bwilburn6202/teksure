@@ -29,7 +29,7 @@ export default function NewsAppCurator() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why this matters</h2>
-            <p className="text-sm">Facebook and YouTube show what gets clicks — usually scary or angry stories. That's not news, that's outrage. Real news apps below show what actually happened, in plain language.</p>
+            <p className="text-base">Facebook and YouTube show what gets clicks — usually scary or angry stories. That's not news, that's outrage. Real news apps below show what actually happened, in plain language.</p>
           </CardContent>
         </Card>
 
@@ -39,10 +39,10 @@ export default function NewsAppCurator() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm text-muted-foreground mb-2">{a.who}</p>
-                <p className="text-sm">{a.best}</p>
+                <p className="text-base text-muted-foreground mb-2">{a.who}</p>
+                <p className="text-base">{a.best}</p>
               </CardContent>
             </Card>
           ))}
@@ -51,27 +51,27 @@ export default function NewsAppCurator() {
         <Card className="mt-6">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">A balanced reading diet</h2>
-            <p className="text-sm mb-2">If you want news without bias either way, mix these three:</p>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <p className="text-base mb-2">If you want news without bias either way, mix these three:</p>
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>AP News</strong> for hard facts (free).</li>
               <li><strong>Reuters</strong> as a second-source check (free).</li>
               <li><strong>BBC News</strong> for global perspective (free).</li>
             </ul>
-            <p className="text-sm mt-2">Read 15 minutes of those a day; you'll be better informed than 90% of cable news viewers.</p>
+            <p className="text-base mt-2">Read 15 minutes of those a day; you'll be better informed than 90% of cable news viewers.</p>
           </CardContent>
         </Card>
 
         <Card className="mt-4">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Spot the slant</h3>
-            <p className="text-sm">Free site <strong>AllSides.com</strong> labels every news outlet on a Left-Center-Right scale. Useful when you're not sure if a story is straight news or commentary. <strong>Ground News</strong> (free app) shows the same headline reported by left, center, and right outlets so you see the difference.</p>
+            <p className="text-base">Free site <strong>AllSides.com</strong> labels every news outlet on a Left-Center-Right scale. Useful when you're not sure if a story is straight news or commentary. <strong>Ground News</strong> (free app) shows the same headline reported by left, center, and right outlets so you see the difference.</p>
           </CardContent>
         </Card>
 
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — turn off most notifications</h3>
-            <p className="text-sm text-muted-foreground">News apps default to "breaking news" alerts every 20 minutes. Almost none are urgent. Settings → Notifications → tap each news app → "Important only" or off. Read on your schedule, not theirs.</p>
+            <p className="text-base text-muted-foreground">News apps default to "breaking news" alerts every 20 minutes. Almost none are urgent. Settings → Notifications → tap each news app → "Important only" or off. Read on your schedule, not theirs.</p>
           </CardContent>
         </Card>
       </main>

@@ -19,10 +19,10 @@ export default function SeniorOnlineCharityGiving() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Charity Navigator</h2><p>FREE. Rates 200,000 charities. Pick 4-star ones.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">GuideStar</h2><p>FREE. Detailed financial reports for any charity.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">GoFundMe</h2><p>FREE. Personal crowdfunding. Verify person before donating.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out for scams</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Unsolicited calls/texts</li><li>Fake police/fire fund</li><li>Pressure to give now</li><li>Asking for cryptocurrency</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out for scams</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Unsolicited calls/texts</li><li>Fake police/fire fund</li><li>Pressure to give now</li><li>Asking for cryptocurrency</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">QCDs from IRA</h2><p>Direct charity giving from IRA = tax-free. Saves on taxes.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tax records</h2><p>Save donation receipts. Itemized seniors deduct charitable giving.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Give to charities you research, not ones that contact you. Avoids 90% of scams.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Give to charities you research, not ones that contact you. Avoids 90% of scams.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -75,7 +75,7 @@ export function BeforeAfterSlider({
         </div>
         <div className="flex-1 mx-3 h-6 rounded-md bg-background/80 border border-border flex items-center justify-center gap-1.5 px-3">
           <ArrowLeftRight className="h-3 w-3 text-muted-foreground" />
-          <span className="text-xs text-muted-foreground">Drag to compare</span>
+          <span className="text-sm text-muted-foreground">Drag to compare</span>
         </div>
       </div>
 
@@ -91,7 +91,7 @@ export function BeforeAfterSlider({
         <div className="absolute inset-0 flex items-center justify-center px-6 py-4">
           <div className="flex items-start gap-2 max-w-sm">
             <Info className="h-4 w-4 text-secondary shrink-0 mt-0.5" />
-            <p className="text-xs text-muted-foreground leading-relaxed italic">{afterCaption}</p>
+            <p className="text-sm text-muted-foreground leading-relaxed italic">{afterCaption}</p>
           </div>
         </div>
 
@@ -103,7 +103,7 @@ export function BeforeAfterSlider({
           <div className="absolute inset-0 flex items-center justify-center px-6 py-4">
             <div className="flex items-start gap-2" style={{ width: '100%', maxWidth: 320 }}>
               <Info className="h-4 w-4 text-muted-foreground shrink-0 mt-0.5" />
-              <p className="text-xs text-muted-foreground leading-relaxed italic">{beforeCaption}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed italic">{beforeCaption}</p>
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ export function BeforeAfterSlider({
           <div className="w-0.5 h-full bg-white/80 shadow" />
           {/* Handle knob */}
           <div
-            className="absolute z-10 flex items-center justify-center w-8 h-8 rounded-full bg-white shadow-lg border border-border pointer-events-auto cursor-col-resize"
+            className="absolute z-10 flex items-center justify-center w-8 h-8 rounded-full bg-card shadow-lg border border-border pointer-events-auto cursor-col-resize"
             style={{ top: '50%', transform: 'translate(-50%, -50%)', left: '50%' }}
           >
             <ArrowLeftRight className="h-4 w-4 text-muted-foreground" />

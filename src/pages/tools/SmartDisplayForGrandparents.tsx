@@ -26,7 +26,7 @@ export default function SmartDisplayForGrandparents() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why these are perfect for seniors</h2>
-            <ul className="text-sm list-disc pl-5">
+            <ul className="text-base list-disc pl-5">
               <li>Always-on photo frame of family photos.</li>
               <li>Voice-controlled — "Show me the weather", "Call my daughter", "Play classical music".</li>
               <li>Video calls answered automatically with "Drop In" — like a doorbell that opens.</li>
@@ -43,10 +43,10 @@ export default function SmartDisplayForGrandparents() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base mb-1">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -55,7 +55,7 @@ export default function SmartDisplayForGrandparents() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup as a gift (best practices)</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>BEFORE wrapping — set it up at YOUR home with their Wi-Fi password.</li>
               <li>Add their Amazon (or Google) account.</li>
               <li>Pre-load family photos: open the Photos section in the Alexa or Google Home app, link the family Amazon Photos / Google Photos account.</li>
@@ -69,7 +69,7 @@ export default function SmartDisplayForGrandparents() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Useful voice commands</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>"Alexa, show me family photos."</li>
               <li>"Alexa, drop in on John."</li>
               <li>"Alexa, video call Sarah."</li>
@@ -85,7 +85,7 @@ export default function SmartDisplayForGrandparents() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Privacy concern?</h3>
-            <p className="text-sm text-muted-foreground">Echo and Nest devices listen for the wake word ("Alexa", "Hey Google"). They don\'t record full conversations. There\'s a microphone-off button if it ever bothers them. Some seniors put it in the kitchen, away from the bedroom.</p>
+            <p className="text-base text-muted-foreground">Echo and Nest devices listen for the wake word ("Alexa", "Hey Google"). They don\'t record full conversations. There\'s a microphone-off button if it ever bothers them. Some seniors put it in the kitchen, away from the bedroom.</p>
           </CardContent>
         </Card>
       </main>

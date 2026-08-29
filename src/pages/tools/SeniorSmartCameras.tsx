@@ -20,9 +20,9 @@ export default function SeniorSmartCameras() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Ring Stick Up</h2><p>$100. Battery or wired. Free with subscription for full features.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Arlo Pro</h2><p>$200. Best video quality. Battery powered.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Eufy Solo</h2><p>$80. No monthly fees ever. Local SD card storage.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best places</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Front door (with doorbell cam)</li><li>Driveway</li><li>Back door</li><li>Garage</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best places</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Front door (with doorbell cam)</li><li>Driveway</li><li>Back door</li><li>Garage</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Privacy</h2><p>Don&apos;t point at neighbors. Many states require disclosure if audio recording.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Geek Squad installs for ~$100. Many seniors prefer professional install.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Geek Squad installs for ~$100. Many seniors prefer professional install.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

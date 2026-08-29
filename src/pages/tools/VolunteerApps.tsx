@@ -29,7 +29,7 @@ export default function VolunteerApps() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why this matters</h2>
-            <p className="text-sm">Studies consistently show retirees who volunteer 100+ hours/year live longer, sleep better, and report higher life satisfaction. The benefits to your brain may even rival (or beat) the dementia-prevention case for brain games.</p>
+            <p className="text-base">Studies consistently show retirees who volunteer 100+ hours/year live longer, sleep better, and report higher life satisfaction. The benefits to your brain may even rival (or beat) the dementia-prevention case for brain games.</p>
           </CardContent>
         </Card>
 
@@ -39,10 +39,10 @@ export default function VolunteerApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -51,7 +51,7 @@ export default function VolunteerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Volunteer from home (no driving needed)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Be My Eyes</strong> — video-call helper for blind users. ~5 minutes per call.</li>
               <li><strong>Smithsonian Digital Volunteers</strong> — transcribe historical documents from home.</li>
               <li><strong>Crisis Text Line</strong> — train (~30 hours), then text-message support people in crisis from your home.</li>
@@ -64,7 +64,7 @@ export default function VolunteerApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local options</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Local library</strong> — shelving, reading hours, computer help for other seniors.</li>
               <li><strong>Hospital gift shop or volunteer desk.</strong></li>
               <li><strong>Meals on Wheels</strong> — drive routes 1 morning a week.</li>
@@ -79,7 +79,7 @@ export default function VolunteerApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you\'re not sure where to start</h3>
-            <p className="text-sm text-muted-foreground">Walk into your local library or church. Either will know exactly which local groups need volunteers. Sometimes the best path isn\'t through an app at all — it\'s saying yes to the first invitation.</p>
+            <p className="text-base text-muted-foreground">Walk into your local library or church. Either will know exactly which local groups need volunteers. Sometimes the best path isn\'t through an app at all — it\'s saying yes to the first invitation.</p>
           </CardContent>
         </Card>
       </main>

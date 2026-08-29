@@ -60,7 +60,7 @@ export default function DailyHabitTracker() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Daily Habit Tracker | TekSure"
         description="Track 7 days of healthy habits in a simple grid. Build a walking streak, water habit, or any routine you want to keep."
@@ -69,10 +69,10 @@ export default function DailyHabitTracker() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Sparkles className="h-7 w-7 text-violet-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Daily Habit Tracker</h1>
+            <Sparkles className="h-7 w-7 text-primary" />
+            <h1 className="text-3xl font-bold text-foreground">Daily Habit Tracker</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Pick a few small habits, then check off each day you do them. Watch your streaks grow.
           </p>
         </div>
@@ -81,7 +81,7 @@ export default function DailyHabitTracker() {
         <Card className="mb-4 print:hidden">
           <CardHeader className="pb-2">
             <CardTitle className="text-lg flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-violet-600" />
+              <PlusCircle className="h-5 w-5 text-primary" />
               Add a habit
             </CardTitle>
           </CardHeader>
@@ -96,17 +96,17 @@ export default function DailyHabitTracker() {
               />
               <Button onClick={() => addHabit()} className="text-base">Add</Button>
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             {habits.length < 3 && (
               <div>
-                <p className="text-sm text-gray-500 mb-1">Quick add:</p>
+                <p className="text-base text-muted-foreground mb-1">Quick add:</p>
                 <div className="flex flex-wrap gap-1">
                   {SUGGESTIONS.filter(s => !habits.some(h => h.name === s)).slice(0, 6).map(s => (
                     <button
                       key={s}
                       type="button"
                       onClick={() => addHabit(s)}
-                      className="text-xs px-2 py-1 rounded-full bg-violet-50 border border-violet-200 text-violet-700 hover:bg-violet-100"
+                      className="text-xs px-2 py-1 rounded-full bg-primary/10 border border-primary/25 text-primary hover:bg-primary/10"
                     >
                       + {s}
                     </button>
@@ -120,9 +120,9 @@ export default function DailyHabitTracker() {
         {/* Habit grid */}
         {habits.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
+            <CardContent className="py-10 text-center text-muted-foreground">
               <p className="text-lg">No habits yet.</p>
-              <p className="text-sm mt-1">Add one or two small habits to start tracking.</p>
+              <p className="text-base mt-1">Add one or two small habits to start tracking.</p>
             </CardContent>
           </Card>
         ) : (
@@ -135,7 +135,7 @@ export default function DailyHabitTracker() {
                   <CardContent className="py-3 px-4">
                     <div className="flex items-start justify-between gap-2 mb-2">
                       <div>
-                        <p className="font-semibold text-gray-900 text-base">{h.name}</p>
+                        <p className="font-semibold text-foreground text-base">{h.name}</p>
                         <div className="flex flex-wrap gap-1 mt-1">
                           {s > 0 && (
                             <Badge className="text-xs bg-orange-500 hover:bg-orange-600 gap-1">
@@ -151,7 +151,7 @@ export default function DailyHabitTracker() {
                       <Button
                         variant="ghost"
                         size="icon"
-                        className="shrink-0 text-red-400 hover:text-red-600 print:hidden"
+                        className="shrink-0 text-danger-foreground hover:text-danger-foreground print:hidden"
                         onClick={() => removeHabit(h.id)}
                         aria-label="Remove habit"
                       >
@@ -166,13 +166,13 @@ export default function DailyHabitTracker() {
                           key={i}
                           onClick={() => toggleDay(h.id, i)}
                           className={`flex flex-col items-center justify-center py-2 rounded-md border transition-colors ${
-                            checked ? "bg-green-100 border-green-400" : "bg-white border-gray-200 hover:bg-gray-50"
+                            checked ? "bg-green-100 border-green-400" : "bg-white border-border hover:bg-gray-50"
                           }`}
                           aria-label={`Toggle ${DAY_LABELS[i]}`}
                         >
-                          <span className="text-xs font-medium text-gray-600">{DAY_LABELS[i]}</span>
+                          <span className="text-sm font-medium text-muted-foreground">{DAY_LABELS[i]}</span>
                           {checked
-                            ? <CheckCircle2 className="h-5 w-5 text-green-600 mt-0.5" />
+                            ? <CheckCircle2 className="h-5 w-5 text-success-foreground mt-0.5" />
                             : <span className="h-5 w-5 mt-0.5" />}
                         </button>
                       ))}
@@ -193,15 +193,15 @@ export default function DailyHabitTracker() {
           </div>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Start with two or three habits at most. Once those feel automatic, add another. Trying too many at once is the fastest way to give up.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

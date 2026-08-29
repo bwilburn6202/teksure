@@ -489,7 +489,7 @@ export function TekBot() {
                       id="tekbot-device-listbox"
                       role="listbox"
                       aria-label="Select your device type"
-                      className="absolute right-0 top-8 z-10 rounded-xl border border-border bg-white shadow-xl"
+                      className="absolute right-0 top-8 z-10 rounded-xl border border-border bg-card shadow-xl"
                       style={{ minWidth: 160 }}
                       onKeyDown={(e) => {
                         if (e.key === 'Escape') {
@@ -498,7 +498,7 @@ export function TekBot() {
                         }
                       }}
                     >
-                      <p className="px-3 pt-2 pb-1 text-xs font-semibold text-muted-foreground" aria-hidden="true">Your device</p>
+                      <p className="px-3 pt-2 pb-1 text-sm font-semibold text-muted-foreground" aria-hidden="true">Your device</p>
                       {DEVICE_OPTIONS.map(opt => (
                         <button
                           key={opt.value}
@@ -562,7 +562,7 @@ export function TekBot() {
                   {/* Related guides */}
                   {msg.role === 'bot' && msg.relatedGuides && msg.relatedGuides.length > 0 && (
                     <div className="mt-2 max-w-[88%] w-full">
-                      <p className="text-xs text-muted-foreground font-medium mb-1.5 flex items-center gap-1">
+                      <p className="text-sm text-muted-foreground font-medium mb-1.5 flex items-center gap-1">
                         <BookOpen className="h-3 w-3" aria-hidden="true" /> Related guides
                       </p>
                       <div className="space-y-1">
@@ -571,7 +571,7 @@ export function TekBot() {
                             key={g.slug}
                             href={`/guides/${g.slug}`}
                             aria-label={`Read guide: ${g.title}`}
-                            className="flex items-center gap-2 rounded-lg px-3 py-2 bg-white border border-border hover:border-primary/40 hover:bg-primary/5 transition-all text-sm group"
+                            className="flex items-center gap-2 rounded-lg px-3 py-2 bg-card border border-border hover:border-primary/40 hover:bg-primary/5 transition-all text-sm group"
                           >
                             <img src={getGuideThumbnailSmall(g)} alt="" className="w-5 h-5 rounded object-cover shrink-0" loading="lazy" />
                             <span className="flex-1 font-medium leading-tight group-hover:text-primary transition-colors line-clamp-1">
@@ -609,7 +609,7 @@ export function TekBot() {
                   <button
                     key={p}
                     onClick={() => send(p)}
-                    className="text-sm px-3 py-2 rounded-full bg-white border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
+                    className="text-sm px-3 py-2 rounded-full bg-card border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
                     style={{ minHeight: 44 }}
                   >
                     {p}
@@ -619,7 +619,7 @@ export function TekBot() {
             )}
 
             {/* Input */}
-            <div className="flex items-center gap-2 border-t border-border bg-white px-3 py-3">
+            <div className="flex items-center gap-2 border-t border-border bg-card px-3 py-3">
               <label htmlFor="tekbot-input" className="sr-only">Type your question for TekBot</label>
               <input
                 id="tekbot-input"

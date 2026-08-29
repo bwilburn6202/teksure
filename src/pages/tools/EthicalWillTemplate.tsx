@@ -19,7 +19,7 @@ export default function EthicalWillTemplate() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What&apos;s an ethical will?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>NOT legally binding.</li>
               <li>Personal letter to family + future generations.</li>
               <li>Shares values, lessons, hopes.</li>
@@ -33,7 +33,7 @@ export default function EthicalWillTemplate() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sections to include</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Opening</strong> — &quot;Dear family, I want to share...&quot;</li>
               <li><strong>What I&apos;ve learned</strong> — top 5 life lessons.</li>
               <li><strong>Values that mattered</strong> — what I tried to live by.</li>
@@ -49,7 +49,7 @@ export default function EthicalWillTemplate() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Sample prompts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>&quot;I am grateful for...&quot;</li>
               <li>&quot;Things I learned the hard way...&quot;</li>
               <li>&quot;What I wish I&apos;d known at 30...&quot;</li>
@@ -66,7 +66,7 @@ export default function EthicalWillTemplate() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Length + format</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>2-10 pages typical.</li>
               <li>Short = more likely to be read repeatedly.</li>
               <li>One letter to all OR letters to each child/grandchild.</li>
@@ -81,7 +81,7 @@ export default function EthicalWillTemplate() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to keep + share</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Give copies NOW (don&apos;t wait until you&apos;re gone).</li>
               <li>Read at family gathering.</li>
               <li>Keep with legal documents.</li>
@@ -95,7 +95,7 @@ export default function EthicalWillTemplate() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>celebrationsoflife.net</strong> — free templates. <strong>&quot;Ethical Wills&quot; book by Barry Baines</strong> — examples + framework. <strong>StoryWorth</strong> + <strong>Remento</strong> — services help capture similar content. Many synagogues, churches, hospices offer ethical-will writing workshops.</p>
+            <p className="text-base text-muted-foreground"><strong>celebrationsoflife.net</strong> — free templates. <strong>&quot;Ethical Wills&quot; book by Barry Baines</strong> — examples + framework. <strong>StoryWorth</strong> + <strong>Remento</strong> — services help capture similar content. Many synagogues, churches, hospices offer ethical-will writing workshops.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function SeniorVoiceTextSeniors() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mac voice typing</h2><p>System Settings → Keyboard → Dictation. Press fn key twice.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Windows voice typing</h2><p>Press Windows + H. Built-in. Works in any app.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Slow down</h2><p>Speak clearly. Pause between sentences. Accuracy improves with practice.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Voice typing saves seniors with arthritis or shaky hands hours a week.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Voice typing saves seniors with arthritis or shaky hands hours a week.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

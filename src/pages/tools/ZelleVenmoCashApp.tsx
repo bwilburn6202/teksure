@@ -30,26 +30,26 @@ export default function ZelleVenmoCashApp() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <Card className="mb-4 bg-yellow-50 border-yellow-300 dark:bg-yellow-950/20 dark:border-yellow-800">
+        <Card className="mb-4 bg-warn border-warn-foreground/25 ">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Zelle scam warning</h2>
-            <p className="text-sm">Zelle is INSTANT and IRREVERSIBLE. Once sent, banks rarely refund — even if you were scammed. Scammers love it for this. Common trick: "We need to transfer your money to a safe account" or "Click this link to verify your Zelle account". <strong>Real banks NEVER ask you to send money via Zelle to "verify" or "secure" anything.</strong></p>
+            <p className="text-base">Zelle is INSTANT and IRREVERSIBLE. Once sent, banks rarely refund — even if you were scammed. Scammers love it for this. Common trick: "We need to transfer your money to a safe account" or "Click this link to verify your Zelle account". <strong>Real banks NEVER ask you to send money via Zelle to "verify" or "secure" anything.</strong></p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use Zelle ONLY with people you know</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Spouse, kids, grandkids, sibling, trusted close friend.</li>
               <li>NEVER for online purchases (no buyer protection).</li>
               <li>NEVER to a stranger.</li>
@@ -62,14 +62,14 @@ export default function ZelleVenmoCashApp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">For online purchases — use PayPal</h2>
-            <p className="text-sm">If buying from a stranger online (Facebook Marketplace, Craigslist, eBay): <strong>PayPal &quot;Goods &amp; Services&quot;</strong> is the safest. Costs 3% fee but gives full buyer protection. Item never arrived? PayPal refunds you. Don&apos;t use Zelle/Venmo/Cash App for purchases — no protection.</p>
+            <p className="text-base">If buying from a stranger online (Facebook Marketplace, Craigslist, eBay): <strong>PayPal &quot;Goods &amp; Services&quot;</strong> is the safest. Costs 3% fee but gives full buyer protection. Item never arrived? PayPal refunds you. Don&apos;t use Zelle/Venmo/Cash App for purchases — no protection.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Setup tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Set up 2FA on the app and your bank.</li>
               <li>Set a transfer limit (most apps allow $500-1,000/day max).</li>
               <li>Don&apos;t leave money sitting in Venmo/Cash App — they&apos;re not FDIC-insured. Move to bank.</li>
@@ -82,7 +82,7 @@ export default function ZelleVenmoCashApp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If you got scammed</h3>
-            <p className="text-sm text-muted-foreground">Call your BANK immediately — same day, ideally within an hour. New 2024 federal rules require some Zelle scam refunds. Report to <strong>reportfraud.ftc.gov</strong>. File a police report (paper trail). Scams via Venmo/Cash App: open dispute in app + report to FTC. Recovery rare but try.</p>
+            <p className="text-base text-muted-foreground">Call your BANK immediately — same day, ideally within an hour. New 2024 federal rules require some Zelle scam refunds. Report to <strong>reportfraud.ftc.gov</strong>. File a police report (paper trail). Scams via Venmo/Cash App: open dispute in app + report to FTC. Recovery rare but try.</p>
           </CardContent>
         </Card>
       </main>

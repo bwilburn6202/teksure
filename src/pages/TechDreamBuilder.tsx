@@ -86,11 +86,11 @@ function DreamCard({ goal, selected, completedCount, totalCount, onClick }: { go
         <Icon className={`h-5 w-5 ${selected ? 'text-primary' : 'text-muted-foreground'}`} />
       </div>
       <h3 className={`font-semibold mb-1 ${selected ? 'text-primary' : ''}`}>{goal.label}</h3>
-      <p className="text-sm text-muted-foreground mb-2">{goal.description}</p>
+      <p className="text-base text-muted-foreground mb-2">{goal.description}</p>
       <div className="flex items-center gap-2">
         <Badge variant="outline" className="text-xs">{goal.difficulty}</Badge>
         {completedCount !== undefined && totalCount && totalCount > 0 && (
-          <span className="text-xs text-teksure-success flex items-center gap-1">
+          <span className="text-sm text-teksure-success flex items-center gap-1">
             <CheckCircle className="h-3 w-3" /> {completedCount}/{totalCount} done
           </span>
         )}
@@ -116,8 +116,8 @@ function GuideJourney({ guides: journeyGuides, goalSlug }: { guides: Guide[]; go
   return (
     <div>
       <div className="flex items-center justify-between mb-4">
-        <span className="text-sm text-muted-foreground">Your progress</span>
-        <span className="text-sm font-medium">{progress} of {total} complete</span>
+        <span className="text-base text-muted-foreground">Your progress</span>
+        <span className="text-base font-medium">{progress} of {total} complete</span>
       </div>
       <Progress value={pct} className="h-2 mb-6" />
       
@@ -232,7 +232,7 @@ function DreamResult({
 
         <div className="glass-card p-6">
           <div className="flex items-center gap-2 mb-4">
-            <Trophy className="h-5 w-5 text-amber-500" />
+            <Trophy className="h-5 w-5 text-warn-foreground" />
             <h3 className="font-semibold">Your Goals</h3>
           </div>
           <div className="space-y-2">
@@ -249,7 +249,7 @@ function DreamResult({
               </div>
             ))}
             {matchedGuides.length > 4 && (
-              <p className="text-sm text-muted-foreground">+{matchedGuides.length - 4} more guides</p>
+              <p className="text-base text-muted-foreground">+{matchedGuides.length - 4} more guides</p>
             )}
           </div>
         </div>
@@ -296,7 +296,7 @@ function MyJourneys() {
   return (
     <div className="glass-card p-6">
       <h3 className="font-semibold text-lg mb-4 flex items-center gap-2">
-        <Flame className="h-5 w-5 text-orange-500" />
+        <Flame className="h-5 w-5 text-warn-foreground" />
         Your Active Journeys
       </h3>
       <div className="space-y-3">
@@ -315,7 +315,7 @@ function MyJourneys() {
                   <p className="font-medium text-sm truncate">{goal.label}</p>
                   <Progress value={pct} className="h-1 mt-1" />
                 </div>
-                <span className="text-sm text-muted-foreground">{pct}%</span>
+                <span className="text-base text-muted-foreground">{pct}%</span>
               </div>
             </Link>
           );
@@ -439,7 +439,7 @@ const TechDreamBuilder = () => {
                   })}
                 </div>
 
-                <p className="text-center text-sm text-muted-foreground mt-8">
+                <p className="text-center text-base text-muted-foreground mt-8">
                   <Lightbulb className="h-4 w-4 inline mr-1" />
                   Can't find your goal? <Link to="/get-help" className="text-primary hover:underline">Talk to a real person</Link>
                 </p>

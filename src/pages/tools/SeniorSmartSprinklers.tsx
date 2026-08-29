@@ -22,7 +22,7 @@ export default function SeniorSmartSprinklers() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Save 30-50% water</h2><p>Studies show smart sprinklers save $100-$300/year on water bills.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Water utility rebate</h2><p>Many cities give $50-$200 rebate. Check before buying.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice control</h2><p>&ldquo;Alexa, water front yard 10 minutes.&rdquo; Easy adjustments.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Schedule watering pre-dawn (5 AM). Less evaporation.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Schedule watering pre-dawn (5 AM). Less evaporation.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

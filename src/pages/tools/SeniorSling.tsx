@@ -22,7 +22,7 @@ export default function SeniorSling() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Local channels</h2><p>Limited. Most cities don&apos;t get NBC/ABC/CBS via Sling.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Add antenna</h2><p>$30 antenna gets ABC/NBC/CBS/FOX free. Combine with Sling = full cable replacement.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">DVR</h2><p>Free 50 hours. $5/month for 200 hours.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Sling + antenna + Netflix = $60/month vs $150 cable.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Sling + antenna + Netflix = $60/month vs $150 cable.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

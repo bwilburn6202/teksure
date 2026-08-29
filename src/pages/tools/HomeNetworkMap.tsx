@@ -51,17 +51,17 @@ export default function HomeNetworkMap() {
 
         {devices.length > 0 && (
           <>
-            <div className="flex items-center justify-between mb-4"><span className="text-sm font-medium">{devices.length} device{devices.length !== 1 ? 's' : ''} mapped</span>{devices.length > 0 && <Badge variant={securedCount === devices.length ? 'default' : 'secondary'} className="text-xs">{securedCount}/{devices.length} secured</Badge>}</div>
+            <div className="flex items-center justify-between mb-4"><span className="text-base font-medium">{devices.length} device{devices.length !== 1 ? 's' : ''} mapped</span>{devices.length > 0 && <Badge variant={securedCount === devices.length ? 'default' : 'secondary'} className="text-xs">{securedCount}/{devices.length} secured</Badge>}</div>
             <div className="space-y-2">{devices.map(dev => { const info = CATEGORY_INFO[dev.category]; return (
               <Card key={dev.id} className={dev.secured ? 'border-green-500/30' : 'border-amber-500/30'}>
                 <CardContent className="p-4">
                   <div className="flex items-center gap-3 mb-2">
                     <info.icon className={`h-5 w-5 ${dev.secured ? 'text-green-500' : 'text-amber-500'}`} />
-                    <div className="flex-1"><h3 className="font-medium text-sm">{dev.name}</h3><p className="text-xs text-muted-foreground">{info.label}</p></div>
+                    <div className="flex-1"><h3 className="font-medium text-sm">{dev.name}</h3><p className="text-sm text-muted-foreground">{info.label}</p></div>
                     <Button size="sm" variant={dev.secured ? 'default' : 'outline'} onClick={() => toggleSecured(dev.id)} className="gap-1 text-xs">{dev.secured ? <Shield className="h-3 w-3" /> : <AlertTriangle className="h-3 w-3" />}{dev.secured ? 'Secured' : 'Mark Secure'}</Button>
                     <Button size="sm" variant="ghost" onClick={() => removeDevice(dev.id)}><Trash2 className="h-4 w-4 text-muted-foreground" /></Button>
                   </div>
-                  {!dev.secured && <div className="rounded-lg bg-amber-500/5 border border-amber-500/10 p-3 text-xs text-muted-foreground flex gap-2"><AlertTriangle className="h-4 w-4 text-amber-500 shrink-0 mt-0.5" />{info.tips}</div>}
+                  {!dev.secured && <div className="rounded-lg bg-amber-500/5 border border-amber-500/10 p-3 text-xs text-muted-foreground flex gap-2"><AlertTriangle className="h-4 w-4 text-warn-foreground shrink-0 mt-0.5" />{info.tips}</div>}
                 </CardContent>
               </Card>
             ); })}</div>
@@ -69,7 +69,7 @@ export default function HomeNetworkMap() {
         )}
 
         {devices.length === 0 && (
-          <div className="text-center py-12 text-muted-foreground"><Wifi className="h-12 w-12 mx-auto mb-3 opacity-30" /><p className="text-sm">Start by adding the devices connected to your home WiFi.</p><p className="text-xs mt-1">Think about: phones, laptops, smart TVs, speakers, cameras, printers, game consoles, and smart home devices.</p></div>
+          <div className="text-center py-12 text-muted-foreground"><Wifi className="h-12 w-12 mx-auto mb-3 opacity-30" /><p className="text-base">Start by adding the devices connected to your home WiFi.</p><p className="text-sm mt-1">Think about: phones, laptops, smart TVs, speakers, cameras, printers, game consoles, and smart home devices.</p></div>
         )}
       </div></main>
       <Footer />

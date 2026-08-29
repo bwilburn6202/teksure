@@ -32,8 +32,8 @@ export default function DonationPickup() {
             <Card key={s.name}>
               <CardContent className="pt-6">
                 <h3 className="font-bold text-lg">{s.name}</h3>
-                <p className="text-sm">{s.what}</p>
-                <p className="text-sm text-muted-foreground">{s.good}</p>
+                <p className="text-base">{s.what}</p>
+                <p className="text-base text-muted-foreground">{s.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function DonationPickup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How pickup works</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Schedule online or by phone — give a list of items.</li>
               <li>Pickup window is usually 4 hours wide.</li>
               <li>Items go on the porch, driveway, or in the garage. Truck driver doesn\'t enter the home.</li>
@@ -55,7 +55,7 @@ export default function DonationPickup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What\'s usually accepted</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Couches, chairs, tables, beds (frame and mattress vary).</li>
               <li>Working appliances.</li>
               <li>Clothing, shoes, hats.</li>
@@ -64,14 +64,14 @@ export default function DonationPickup() {
               <li>Toys.</li>
               <li>Kitchen and household items.</li>
             </ul>
-            <p className="text-sm mt-2"><strong>Usually NOT</strong>: torn upholstery, mattresses without protector, broken items, big-box junk. Look at the charity\'s "what we accept" list.</p>
+            <p className="text-base mt-2"><strong>Usually NOT</strong>: torn upholstery, mattresses without protector, broken items, big-box junk. Look at the charity\'s "what we accept" list.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tax deduction</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Save the receipt — required for amounts over $250.</li>
               <li>Take photos of donated items before pickup.</li>
               <li>Use IT\'S DEDUCTIBLE app or Goodwill Donation Tracker for fair-market values.</li>
@@ -83,7 +83,7 @@ export default function DonationPickup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Pair with downsizing</h3>
-            <p className="text-sm text-muted-foreground">If moving or decluttering, schedule pickups in waves. Use NASMM (Senior Move Manager) to coordinate the whole process — they\'ll handle pickup scheduling, sales of valuable items, and donation receipts.</p>
+            <p className="text-base text-muted-foreground">If moving or decluttering, schedule pickups in waves. Use NASMM (Senior Move Manager) to coordinate the whole process — they\'ll handle pickup scheduling, sales of valuable items, and donation receipts.</p>
           </CardContent>
         </Card>
       </main>

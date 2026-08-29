@@ -22,7 +22,7 @@ export default function SeniorWhiteNoiseApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smart speaker</h2><p>&ldquo;Alexa, play rain sounds.&rdquo; FREE. No app needed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">For tinnitus</h2><p>Many seniors find white/brown noise reduces ringing in ears.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sleep timer</h2><p>Most apps have sleep timer. Audio fades after 30-60 minutes. Saves battery.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Bose Sleepbuds II ($300) play white noise without disturbing spouse.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Bose Sleepbuds II ($300) play white noise without disturbing spouse.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

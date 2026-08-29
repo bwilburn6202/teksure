@@ -19,7 +19,7 @@ export default function PhilipsLifelineSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why Philips Lifeline?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>40+ years in medical alert business.</li>
               <li>Recommended by 200,000+ healthcare professionals.</li>
               <li>Often discharge planners suggest at hospital.</li>
@@ -33,7 +33,7 @@ export default function PhilipsLifelineSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>HomeSafe Standard — $30/month.</li>
               <li>HomeSafe with AutoAlert (fall detection) — $45/month.</li>
               <li>On the Go (mobile + GPS) — $50/month.</li>
@@ -47,7 +47,7 @@ export default function PhilipsLifelineSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">AutoAlert fall detection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Detects falls automatically.</li>
               <li>Alerts monitoring center even if can&apos;t press button.</li>
               <li>Most lab-tested technology.</li>
@@ -61,7 +61,7 @@ export default function PhilipsLifelineSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cancel anytime</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No long-term contracts.</li>
               <li>30-day risk-free trial.</li>
               <li>Cancel anytime no fees.</li>
@@ -75,7 +75,7 @@ export default function PhilipsLifelineSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">vs Medical Guardian</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lifeline — established + healthcare-trusted.</li>
               <li>Medical Guardian — newer, more options.</li>
               <li>Lifeline often $5–$15/month more.</li>
@@ -89,7 +89,7 @@ export default function PhilipsLifelineSenior() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Insurance + tax deduction</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Medical alert NOT covered by Medicare/insurance usually.</li>
               <li>May be tax-deductible as medical expense.</li>
               <li>Long-term care insurance sometimes covers.</li>
@@ -103,7 +103,7 @@ export default function PhilipsLifelineSenior() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">If hospital recommended Lifeline</h3>
-            <p className="text-sm text-muted-foreground">If a hospital discharge planner recommended Philips Lifeline, that&apos;s a strong endorsement. The service is established and reliable. The slightly higher cost vs Medical Guardian or Bay Alarm Medical reflects their healthcare relationships. Either way — get something. Studies show medical alerts dramatically reduce death + hospital time after falls.</p>
+            <p className="text-base text-muted-foreground">If a hospital discharge planner recommended Philips Lifeline, that&apos;s a strong endorsement. The service is established and reliable. The slightly higher cost vs Medical Guardian or Bay Alarm Medical reflects their healthcare relationships. Either way — get something. Studies show medical alerts dramatically reduce death + hospital time after falls.</p>
           </CardContent>
         </Card>
       </main>

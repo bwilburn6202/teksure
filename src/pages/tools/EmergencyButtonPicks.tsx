@@ -30,10 +30,10 @@ export default function EmergencyButtonPicks() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.cost}</span>
+                  <span className="text-base font-semibold text-primary">{p.cost}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function EmergencyButtonPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apple Watch vs traditional PERS</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apple Watch</strong> — $300 once + $10/mo. Watch is "always on you" since you wear it. Plus fitness, heart, texts. Modern.</li>
               <li><strong>Traditional PERS</strong> — $30-50/mo subscription. Pendant feels stigmatized. Battery 24-72 hrs.</li>
               <li>Watch is better for tech-comfortable seniors.</li>
@@ -54,7 +54,7 @@ export default function EmergencyButtonPicks() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Critical features</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Fall detection</strong> — auto-call without pressing button. Most important.</li>
               <li><strong>2-way voice</strong> — talk to operator from device.</li>
               <li><strong>GPS</strong> — operator finds you anywhere.</li>
@@ -68,7 +68,7 @@ export default function EmergencyButtonPicks() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Always wear it</h3>
-            <p className="text-sm text-muted-foreground">A button on the dresser doesn&apos;t help. Wear in shower, wear at night (under pillow), wear on walks. Best emergency button is the one you have ON when something happens. Apple Watch is hardest to take off (slick wrist).</p>
+            <p className="text-base text-muted-foreground">A button on the dresser doesn&apos;t help. Wear in shower, wear at night (under pillow), wear on walks. Best emergency button is the one you have ON when something happens. Apple Watch is hardest to take off (slick wrist).</p>
           </CardContent>
         </Card>
       </main>

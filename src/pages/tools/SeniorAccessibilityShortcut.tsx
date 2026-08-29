@@ -17,12 +17,12 @@ export default function SeniorAccessibilityShortcut() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">iPhone setup</h2><p>Settings → Accessibility → Accessibility Shortcut. Pick favorites.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best to add</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Magnifier (camera lens)</li><li>Zoom (screen)</li><li>VoiceOver (read aloud)</li><li>Larger Text toggle</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best to add</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Magnifier (camera lens)</li><li>Zoom (screen)</li><li>VoiceOver (read aloud)</li><li>Larger Text toggle</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use it</h2><p>Triple-click side button. Instantly enables magnifier or zoom.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Android equivalent</h2><p>Settings → Accessibility → Accessibility Shortcut. Hold both volume buttons.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Back Tap (iPhone)</h2><p>Triple-tap back of phone. Custom action — flashlight, screenshot, etc.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Practice it</h2><p>Try shortcut once a day. Becomes muscle memory.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Magnifier shortcut = always-on portable magnifying glass. Read pill bottles instantly.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Magnifier shortcut = always-on portable magnifying glass. Read pill bottles instantly.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

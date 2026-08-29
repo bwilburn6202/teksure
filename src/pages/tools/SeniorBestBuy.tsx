@@ -17,12 +17,12 @@ export default function SeniorBestBuy() {
         </div>
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">In-store consultation</h2><p>FREE. Walk in. Ask any tech question.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common services</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>TV mounting ($99)</li><li>Smart device install ($100)</li><li>Computer setup ($100)</li><li>Virus removal ($150)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Common services</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>TV mounting ($99)</li><li>Smart device install ($100)</li><li>Computer setup ($100)</li><li>Virus removal ($150)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Total Tech</h2><p>$200/year membership. Free Geek Squad service. Worth it if you call often.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior friendly</h2><p>Geek Squad agents trained to be patient. Don&apos;t feel rushed.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">In-home service</h2><p>$100-$200 for Geek Squad to come install. Set up smart home, mount TV, etc.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Phone help</h2><p>1-800-GEEK-SQUAD. 24/7 phone support.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Total Tech Membership saves seniors $300+/year if they need tech help quarterly.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Total Tech Membership saves seniors $300+/year if they need tech help quarterly.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

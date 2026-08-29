@@ -19,7 +19,7 @@ export default function MediaLiteracySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How algorithms work</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Social media shows you content that triggers EMOTIONS.</li>
               <li>Outrage + fear = high engagement = served more.</li>
               <li>Calm reasonable content = less shown.</li>
@@ -33,7 +33,7 @@ export default function MediaLiteracySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Resist the manipulation</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Don&apos;t engage with rage-bait — it amplifies.</li>
               <li>Read article BEFORE reacting / sharing.</li>
               <li>Click outside your "side" sometimes.</li>
@@ -48,7 +48,7 @@ export default function MediaLiteracySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Source bias check</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>AllSides.com</strong> — rates news sources Left/Center/Right.</li>
               <li><strong>Ad Fontes Media Bias Chart</strong> — visual map.</li>
               <li><strong>Media Bias/Fact Check</strong> — searchable database.</li>
@@ -61,7 +61,7 @@ export default function MediaLiteracySeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Stop scams using these skills</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Senator says SS will end" — verify on AP.</li>
               <li>"Doctor: don&apos;t take this medication" — search original study.</li>
               <li>"FREE government program ending Friday" — usually scam.</li>
@@ -73,7 +73,7 @@ export default function MediaLiteracySeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>News Literacy Project</strong> — newslit.org. Free. Designed for adults. 5-min lessons. <strong>AARP scam alerts</strong> — free email. <strong>Stanford History Education Group</strong> — free media literacy courses.</p>
+            <p className="text-base text-muted-foreground"><strong>News Literacy Project</strong> — newslit.org. Free. Designed for adults. 5-min lessons. <strong>AARP scam alerts</strong> — free email. <strong>Stanford History Education Group</strong> — free media literacy courses.</p>
           </CardContent>
         </Card>
       </main>

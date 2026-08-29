@@ -509,7 +509,7 @@ export default function VocabFlashcards() {
           <div className="container py-12 sm:py-16 max-w-5xl">
             <div className="flex items-start justify-between gap-4 flex-wrap">
               <div className="flex items-center gap-4">
-                <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-violet-200/70 text-violet-800 dark:bg-violet-900/60 dark:text-violet-200 shadow-sm">
+                <div className="inline-flex items-center justify-center h-16 w-16 rounded-2xl bg-violet-200/70 text-primary dark:bg-violet-900/60 shadow-sm">
                   <Brain className="h-9 w-9" aria-hidden="true" />
                 </div>
                 <div>
@@ -551,8 +551,8 @@ export default function VocabFlashcards() {
         </section>
 
         <section className="container py-8 max-w-5xl">
-          <Alert className="mb-6 border-violet-200 dark:border-violet-900 bg-violet-50/60 dark:bg-violet-950/40">
-            <Shield className="h-5 w-5 text-violet-700 dark:text-violet-300" />
+          <Alert className="mb-6 border-primary/25 bg-violet-50/60 dark:bg-violet-950/40">
+            <Shield className="h-5 w-5 text-primary " />
             <AlertTitle className="text-base">Why bother?</AlertTitle>
             <AlertDescription className="text-base">
               Every word you learn = one less scam that can confuse you.
@@ -670,7 +670,7 @@ export default function VocabFlashcards() {
                             </div>
                             <p className="mt-3 text-base text-muted-foreground">Tap card to reveal</p>
                           </div>
-                          <div className="flip-face flip-back bg-white dark:bg-slate-900 border shadow-sm">
+                          <div className="flip-face flip-back bg-card border shadow-sm">
                             <p className="text-lg leading-relaxed text-center">
                               {currentCard.back}
                             </p>
@@ -683,21 +683,21 @@ export default function VocabFlashcards() {
                           <Button
                             onClick={() => handleRating(1)}
                             variant="outline"
-                            className="min-h-14 text-base border-rose-300 hover:bg-rose-50 dark:hover:bg-rose-950/40"
+                            className="min-h-14 text-base border-danger-foreground/25 hover:bg-danger "
                           >
-                            <X className="h-5 w-5 mr-2 text-rose-600" aria-hidden="true" />
+                            <X className="h-5 w-5 mr-2 text-danger-foreground" aria-hidden="true" />
                             Stuck
-                            <Star className="h-4 w-4 ml-2 fill-rose-500 text-rose-500" aria-hidden="true" />
+                            <Star className="h-4 w-4 ml-2 fill-rose-500 text-danger-foreground" aria-hidden="true" />
                           </Button>
                           <Button
                             onClick={() => handleRating(2)}
                             variant="outline"
-                            className="min-h-14 text-base border-amber-300 hover:bg-amber-50 dark:hover:bg-amber-950/40"
+                            className="min-h-14 text-base border-warn-foreground/25 hover:bg-warn "
                           >
                             Fuzzy
                             <span className="ml-2 flex">
-                              <Star className="h-4 w-4 fill-amber-500 text-amber-500" aria-hidden="true" />
-                              <Star className="h-4 w-4 fill-amber-500 text-amber-500" aria-hidden="true" />
+                              <Star className="h-4 w-4 fill-amber-500 text-warn-foreground" aria-hidden="true" />
+                              <Star className="h-4 w-4 fill-amber-500 text-warn-foreground" aria-hidden="true" />
                             </span>
                           </Button>
                           <Button
@@ -718,7 +718,7 @@ export default function VocabFlashcards() {
                       <div className="mt-4">
                         <Link
                           to={`/tools/tech-jargon-translator?term=${encodeURIComponent(currentCard.front)}`}
-                          className="inline-flex items-center gap-1 text-base text-violet-700 dark:text-violet-300 hover:underline"
+                          className="inline-flex items-center gap-1 text-base text-primary hover:underline"
                         >
                           Learn this word better
                           <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -728,11 +728,11 @@ export default function VocabFlashcards() {
                   )}
 
                   {sessionDone && todayDeck.length > 0 && (
-                    <div className="rounded-lg border bg-emerald-50 dark:bg-emerald-950/30 p-8 text-center space-y-3">
-                      <div className="text-2xl font-semibold text-emerald-900 dark:text-emerald-100">
+                    <div className="rounded-lg border bg-success p-8 text-center space-y-3">
+                      <div className="text-2xl font-semibold text-success-foreground ">
                         You're done for today!
                       </div>
-                      <p className="text-lg text-emerald-800 dark:text-emerald-200">
+                      <p className="text-lg text-success-foreground ">
                         Come back tomorrow. Streak: {progress.streakDays} {progress.streakDays === 1 ? 'day' : 'days'}.
                       </p>
                       <Button
@@ -810,7 +810,7 @@ export default function VocabFlashcards() {
                           <p className="text-base leading-relaxed">{c.back}</p>
                           <Link
                             to={`/tools/tech-jargon-translator?term=${encodeURIComponent(c.front)}`}
-                            className="inline-flex items-center gap-1 mt-3 text-base text-violet-700 dark:text-violet-300 hover:underline"
+                            className="inline-flex items-center gap-1 mt-3 text-base text-primary hover:underline"
                           >
                             Learn this word better
                             <ArrowRight className="h-4 w-4" aria-hidden="true" />

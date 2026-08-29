@@ -30,10 +30,10 @@ export default function PillOrganizerSmart() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{o.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{o.cost}</span>
+                  <span className="text-base font-semibold text-primary">{o.cost}</span>
                 </div>
-                <p className="text-sm">{o.best}</p>
-                <p className="text-sm text-muted-foreground">{o.good}</p>
+                <p className="text-base">{o.best}</p>
+                <p className="text-base text-muted-foreground">{o.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function PillOrganizerSmart() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Quick decision</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>1-3 medications</strong> — weekly pill box, $5.</li>
               <li><strong>4-7 medications</strong> — Pillpack (free) + maybe simple reminder app.</li>
               <li><strong>Memory issues</strong> — Hero or MedMinder. Worth $40-65/mo for safety.</li>
@@ -54,7 +54,7 @@ export default function PillOrganizerSmart() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free reminder apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Medisafe</strong> — most popular medication app. Free + family alerts.</li>
               <li><strong>MyTherapy</strong> — German-quality, free, ad-free.</li>
               <li><strong>Round Health</strong> — simpler interface.</li>
@@ -67,7 +67,7 @@ export default function PillOrganizerSmart() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Amazon Pillpack genius</h3>
-            <p className="text-sm text-muted-foreground">If on 4+ medications: Pillpack by Amazon Pharmacy is free. They sort each dose into a labeled pouch. Tear open at 8 AM, swallow contents. Tear open at noon, etc. No more weekly sorting. Insurance covers normally. Delivered monthly.</p>
+            <p className="text-base text-muted-foreground">If on 4+ medications: Pillpack by Amazon Pharmacy is free. They sort each dose into a labeled pouch. Tear open at 8 AM, swallow contents. Tear open at noon, etc. No more weekly sorting. Insurance covers normally. Delivered monthly.</p>
           </CardContent>
         </Card>
       </main>

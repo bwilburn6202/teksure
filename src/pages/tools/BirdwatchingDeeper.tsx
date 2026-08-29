@@ -19,7 +19,7 @@ export default function BirdwatchingDeeper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best gear</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Binoculars</strong> — 8x42 senior favorite.</li>
               <li><strong>Vortex Diamondback HD</strong> — $250. Excellent value.</li>
               <li><strong>Nikon Monarch M5</strong> — $400. Premium.</li>
@@ -33,7 +33,7 @@ export default function BirdwatchingDeeper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-essential apps</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Merlin Bird ID</strong> — FREE. Identify by photo OR sound.</li>
               <li><strong>eBird</strong> — track + report sightings. FREE.</li>
               <li><strong>Audubon Bird Guide</strong> — FREE.</li>
@@ -46,7 +46,7 @@ export default function BirdwatchingDeeper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Birding hot spots</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Cape May, NJ</strong> — fall migration mecca.</li>
               <li><strong>Bosque del Apache, NM</strong> — sandhill cranes.</li>
               <li><strong>Magee Marsh, OH</strong> — spring warblers.</li>
@@ -60,7 +60,7 @@ export default function BirdwatchingDeeper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior birding clubs</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Local Audubon chapters — most cities.</li>
               <li>Free / cheap memberships.</li>
               <li>Group bird walks.</li>
@@ -74,7 +74,7 @@ export default function BirdwatchingDeeper() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Backyard birding</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Bird feeders attract.</li>
               <li>Window cameras feed phone.</li>
               <li>Native plants for habitat.</li>
@@ -89,7 +89,7 @@ export default function BirdwatchingDeeper() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Bird tours senior</h3>
-            <p className="text-sm text-muted-foreground"><strong>Road Scholar</strong> — birding tours senior-paced. <strong>WINGS Birding Tours</strong> — premium. <strong>Naturalist Journeys</strong> — small group. Costa Rica, Galapagos, Borneo for adventurous. Africa for safari + birds.</p>
+            <p className="text-base text-muted-foreground"><strong>Road Scholar</strong> — birding tours senior-paced. <strong>WINGS Birding Tours</strong> — premium. <strong>Naturalist Journeys</strong> — small group. Costa Rica, Galapagos, Borneo for adventurous. Africa for safari + birds.</p>
           </CardContent>
         </Card>
       </main>

@@ -22,7 +22,7 @@ export default function OfflineMapsHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Why you want this</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Driving through mountains, deserts, rural areas — signal cuts out.</li>
               <li>Traveling overseas — avoid huge data roaming charges.</li>
               <li>Backup if cell network is down.</li>
@@ -40,7 +40,7 @@ export default function OfflineMapsHowTo() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Google Maps (iPhone &amp; Android)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open Google Maps.</li>
                 <li>Search the area you want (city or region).</li>
                 <li>Tap the place name at the bottom.</li>
@@ -48,7 +48,7 @@ export default function OfflineMapsHowTo() {
                 <li>Adjust the box to cover the area you want. Tap "Download".</li>
                 <li>Map saves to phone. Works for 1 year (auto-refreshes when on wifi).</li>
               </ol>
-              <p className="text-sm mt-3 text-muted-foreground">Typical map ~150-500MB. Use wifi to download.</p>
+              <p className="text-base mt-3 text-muted-foreground">Typical map ~150-500MB. Use wifi to download.</p>
             </CardContent>
           </Card>
         )}
@@ -57,7 +57,7 @@ export default function OfflineMapsHowTo() {
           <Card className="mb-4">
             <CardContent className="pt-6">
               <h3 className="font-bold text-lg mb-3">Apple Maps (iPhone iOS 17+)</h3>
-              <ol className="list-decimal pl-5 space-y-2 text-sm">
+              <ol className="list-decimal pl-5 space-y-2 text-base">
                 <li>Open Maps.</li>
                 <li>Tap your account icon (top right).</li>
                 <li>Tap "Offline Maps".</li>
@@ -73,7 +73,7 @@ export default function OfflineMapsHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for road trips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Download EVERY state you&apos;ll cross. Better safe than stuck.</li>
               <li>Download a wider area than you think — accidents reroute you.</li>
               <li>Do it at home on wifi the night before.</li>
@@ -86,7 +86,7 @@ export default function OfflineMapsHowTo() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Best for international travel</h3>
-            <p className="text-sm text-muted-foreground">Download maps of your destination cities BEFORE leaving. Walking around Rome or Tokyo with no data plan? Apple/Google Maps still works — even shows your blue dot moving in real time. Saves hundreds in roaming.</p>
+            <p className="text-base text-muted-foreground">Download maps of your destination cities BEFORE leaving. Walking around Rome or Tokyo with no data plan? Apple/Google Maps still works — even shows your blue dot moving in real time. Saves hundreds in roaming.</p>
           </CardContent>
         </Card>
       </main>

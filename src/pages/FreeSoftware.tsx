@@ -543,7 +543,7 @@ const FreeSoftware = () => {
               );
             })}
           </div>
-          <p className="text-center text-sm text-muted-foreground mt-4">
+          <p className="text-center text-base text-muted-foreground mt-4">
             Showing <strong>{filteredPrograms.length}</strong>{' '}
             {filteredPrograms.length === 1 ? 'program' : 'programs'}
             {activeCategory !== 'All' ? ` in ${activeCategory}` : ''}
@@ -572,7 +572,7 @@ const FreeSoftware = () => {
                 </div>
               </CardHeader>
               <CardContent className="flex-1 flex flex-col pt-0">
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                <p className="text-base text-muted-foreground leading-relaxed mb-4">
                   {p.description}
                 </p>
                 <div className="text-xs text-muted-foreground mb-4 pb-4 border-b">
@@ -620,7 +620,7 @@ const FreeSoftware = () => {
                 <CardTitle className="text-lg">Costs nothing</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   No monthly subscriptions, no upfront purchase, no trial countdown. These programs
                   are free today and stay free forever.
                 </p>
@@ -634,7 +634,7 @@ const FreeSoftware = () => {
                 <CardTitle className="text-lg">Community-supported</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Built and maintained by thousands of volunteers and nonprofits. Bugs get fixed,
                   features get added, and your data is not the product.
                 </p>
@@ -648,7 +648,7 @@ const FreeSoftware = () => {
                 <CardTitle className="text-lg">Often better than paid</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   Free alternatives like VLC, Firefox, and Blender are widely considered best in
                   class — used by professionals around the world every day.
                 </p>

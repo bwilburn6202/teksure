@@ -197,7 +197,7 @@ export default function MusicStreamingPicker() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-purple-500/10 rounded-full">
-                <Music className="h-8 w-8 text-purple-600" />
+                <Music className="h-8 w-8 text-primary" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Music Streaming Picker</h1>
@@ -212,14 +212,14 @@ export default function MusicStreamingPicker() {
 
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Compare a service</p>
+              <p className="text-base font-semibold mb-3">Compare a service</p>
               <div className="grid sm:grid-cols-2 gap-2">
                 {SERVICE_LIST.map(o => (
                   <button key={o.id} onClick={() => setS(o.id)}
                     className={`p-3 rounded-lg border text-left transition-all ${
                       s === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
@@ -232,16 +232,16 @@ export default function MusicStreamingPicker() {
               <Badge variant="outline" className="ml-2 mb-2">{info.cost}</Badge>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mt-3 mb-1">Library</p>
-              <p className="text-sm mb-3">{info.library}</p>
+              <p className="text-base mb-3">{info.library}</p>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">Who it fits</p>
-              <p className="text-sm mb-4">{info.fits}</p>
+              <p className="text-base mb-4">{info.fits}</p>
 
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Pros</p>
               <ul className="space-y-1.5 mb-4">
                 {info.pros.map((pro, i) => (
-                  <li key={i} className="flex gap-2 text-sm">
-                    <ChevronRight className="h-4 w-4 text-green-600 shrink-0 mt-0.5" />
+                  <li key={i} className="flex gap-2 text-base">
+                    <ChevronRight className="h-4 w-4 text-success-foreground shrink-0 mt-0.5" />
                     <span>{pro}</span>
                   </li>
                 ))}
@@ -250,8 +250,8 @@ export default function MusicStreamingPicker() {
               <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">Cons</p>
               <ul className="space-y-1.5 mb-4">
                 {info.cons.map((con, i) => (
-                  <li key={i} className="flex gap-2 text-sm">
-                    <ChevronRight className="h-4 w-4 text-amber-600 shrink-0 mt-0.5" />
+                  <li key={i} className="flex gap-2 text-base">
+                    <ChevronRight className="h-4 w-4 text-warn-foreground shrink-0 mt-0.5" />
                     <span>{con}</span>
                   </li>
                 ))}
@@ -267,8 +267,8 @@ export default function MusicStreamingPicker() {
           <Card className="border-border shadow-sm mb-6">
             <CardContent className="p-5">
               <div className="flex items-center gap-2 mb-3">
-                <Headphones className="h-5 w-5 text-purple-600" />
-                <p className="text-sm font-semibold">What matters most to you?</p>
+                <Headphones className="h-5 w-5 text-primary" />
+                <p className="text-base font-semibold">What matters most to you?</p>
               </div>
               <div className="grid sm:grid-cols-2 gap-2 mb-4">
                 {PRIORITY_LIST.map(o => (
@@ -276,60 +276,60 @@ export default function MusicStreamingPicker() {
                     className={`p-3 rounded-lg border text-left transition-all ${
                       p === o.id ? 'border-primary bg-primary/5 ring-2 ring-primary/20' : 'border-border hover:border-primary/50'
                     }`}>
-                    <p className="font-medium text-sm">{o.label}</p>
+                    <p className="font-medium text-base">{o.label}</p>
                   </button>
                 ))}
               </div>
 
               <div className="p-4 rounded-lg bg-primary/5 border border-primary/20">
                 <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-1">{pick.label}</p>
-                <p className="font-semibold text-sm mb-2">Our pick: {pick.pick}</p>
-                <p className="text-sm text-muted-foreground">{pick.reason}</p>
+                <p className="font-semibold text-base mb-2">Our pick: {pick.pick}</p>
+                <p className="text-base text-muted-foreground">{pick.reason}</p>
               </div>
             </CardContent>
           </Card>
 
           <Card className="border-border mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">What about free?</p>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-base font-semibold mb-3">What about free?</p>
+              <p className="text-base text-muted-foreground mb-4">
                 You do not have to pay to listen to music. Three real options to consider before opening your wallet.
               </p>
 
               <div className="space-y-3">
                 <div className="p-3 rounded-lg border border-border">
-                  <p className="font-medium text-sm">Spotify Free</p>
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="font-medium text-base">Spotify Free</p>
+                  <p className="text-sm text-muted-foreground mt-1">
                     <strong>Pros:</strong> Same 100 million-song library as paid Spotify. Unlimited listening on a phone or computer. Works on most smart speakers.
                   </p>
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="text-sm text-muted-foreground mt-1">
                     <strong>Cons:</strong> An ad every 3 to 5 songs (about 30 seconds each). On a phone, you can only shuffle most playlists — you cannot pick a specific song to play next.
                   </p>
                 </div>
 
                 <div className="p-3 rounded-lg border border-border">
-                  <p className="font-medium text-sm">Pandora Free</p>
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="font-medium text-base">Pandora Free</p>
+                  <p className="text-sm text-muted-foreground mt-1">
                     <strong>Pros:</strong> Type one artist or song, get a full station of similar music. Limited skips but the stations are surprisingly good. Best for "I want some classic rock playing while I cook."
                   </p>
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="text-sm text-muted-foreground mt-1">
                     <strong>Cons:</strong> Ads (audio and visual). Cannot pick a specific song. Six skips per hour, per station.
                   </p>
                 </div>
 
                 <div className="p-3 rounded-lg border border-border">
-                  <p className="font-medium text-sm">YouTube (regular, not Music)</p>
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="font-medium text-base">YouTube (regular, not Music)</p>
+                  <p className="text-sm text-muted-foreground mt-1">
                     <strong>Pros:</strong> Almost every song ever recorded is on YouTube somewhere — official videos, live performances, full albums, DJ mixes. All free.
                   </p>
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="text-sm text-muted-foreground mt-1">
                     <strong>Cons:</strong> Ads before and during videos. The phone app stops playing if you lock the screen (unless you pay for Premium). Not designed for background listening.
                   </p>
                 </div>
 
                 <div className="p-3 rounded-lg border border-border bg-purple-50/50 dark:bg-purple-950/10">
-                  <p className="font-medium text-sm">Bonus: Freegal (free with a library card)</p>
-                  <p className="text-xs text-muted-foreground mt-1">
+                  <p className="font-medium text-base">Bonus: Freegal (free with a library card)</p>
+                  <p className="text-sm text-muted-foreground mt-1">
                     Many US public libraries give cardholders access to Freegal — free music streaming and even some downloads you keep forever. See the Library Power Pack tool below to check what your library offers.
                   </p>
                 </div>
@@ -339,8 +339,8 @@ export default function MusicStreamingPicker() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">A note on free trials</p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">A note on free trials</p>
+              <p className="text-sm text-muted-foreground">
                 Every paid service offers a free trial (usually 1 month, sometimes 3 months for Apple Music with a new device). Set a phone reminder to cancel the day before the trial ends if you decide it is not for you. Otherwise the charges start automatically.
               </p>
               <Button asChild variant="outline" size="sm" className="mt-3">
@@ -353,16 +353,16 @@ export default function MusicStreamingPicker() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/podcast-starter" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Podcast Starter</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Find your first podcasts.</p>
+                <p className="font-medium text-base">Podcast Starter</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Find your first podcasts.</p>
               </Link>
               <Link to="/tools/streaming-service-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Streaming Service Setup</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Set up Netflix, Hulu, and more.</p>
+                <p className="font-medium text-base">Streaming Service Setup</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Set up Netflix, Hulu, and more.</p>
               </Link>
               <Link to="/tools/library-power-pack" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Library Power Pack</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Free music with a library card.</p>
+                <p className="font-medium text-base">Library Power Pack</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Free music with a library card.</p>
               </Link>
             </div>
           </div>

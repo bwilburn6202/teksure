@@ -19,14 +19,14 @@ export default function NewlyWidowedChecklist() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">First — give yourself grace</h2>
-            <p className="text-sm">Don\'t make BIG decisions for 6-12 months. No selling the house, no big charity gift, no major investment moves. Brain fog from grief is real. Lean on family and a trusted advisor for these.</p>
+            <p className="text-base">Don\'t make BIG decisions for 6-12 months. No selling the house, no big charity gift, no major investment moves. Brain fog from grief is real. Lean on family and a trusted advisor for these.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First week</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Get 10-15 certified copies of the death certificate</strong> from the funeral home. Almost every account asks for one.</li>
               <li><strong>Call employer / pension</strong> if spouse worked. Stop direct deposits, start survivor benefits.</li>
               <li><strong>Call Social Security (1-800-772-1213)</strong> — they need to know. Survivor benefits start at 60. (Funeral home often reports automatically.)</li>
@@ -40,7 +40,7 @@ export default function NewlyWidowedChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First 30 days</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>File the will</strong> with probate court (usually executor does this).</li>
               <li><strong>Notify these</strong> with death certificate copies:
                 <ul className="list-disc pl-5 mt-1 text-muted-foreground">
@@ -64,7 +64,7 @@ export default function NewlyWidowedChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">First 90 days</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Apply for survivor benefits</strong> at SSA — you keep the larger of the two Social Security checks.</li>
               <li><strong>VA benefits if veteran spouse</strong> — Aid & Attendance, life insurance, survivor pension. Call 1-800-827-1000.</li>
               <li><strong>Pension survivor benefits</strong> — apply if applicable.</li>
@@ -79,7 +79,7 @@ export default function NewlyWidowedChecklist() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Where to find help</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>AARP Widow/Widower resources</strong> — aarp.org/family/.</li>
               <li><strong>Soaring Spirits International</strong> — peer-led grief group online and in person.</li>
               <li><strong>WomansLifeAfterLoss.com</strong> — practical financial guidance.</li>
@@ -94,7 +94,7 @@ export default function NewlyWidowedChecklist() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Most important advice</h3>
-            <p className="text-sm text-muted-foreground">Tell people what to do. "I need someone to bring dinner Tuesday." "I need help with paperwork Saturday." Specific asks are answered. Vague "let me know if you need anything" is rarely followed up. Friends WANT to help. Tell them how.</p>
+            <p className="text-base text-muted-foreground">Tell people what to do. "I need someone to bring dinner Tuesday." "I need help with paperwork Saturday." Specific asks are answered. Vague "let me know if you need anything" is rarely followed up. Friends WANT to help. Tell them how.</p>
           </CardContent>
         </Card>
       </main>

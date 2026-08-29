@@ -60,40 +60,40 @@ export default function ChessGameLog() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Chess Game Log | TekSure" description="Track every chess game you play - opponent, color, time control, result. See your win rate and game total. Print for tournament records." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <Crown className="h-7 w-7 text-amber-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Chess Game Log</h1>
+            <Crown className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Chess Game Log</h1>
           </div>
-          <p className="text-gray-600 text-lg">Log every game over the board or online. Patterns and progress become visible after about 20 games.</p>
+          <p className="text-muted-foreground text-lg">Log every game over the board or online. Patterns and progress become visible after about 20 games.</p>
         </div>
 
         {games.length > 0 && (
-          <div className="grid grid-cols-4 gap-2 mb-4">
-            <Card><CardContent className="py-3 px-2 text-center"><p className="text-xs text-gray-500">Games</p><p className="text-xl font-bold text-gray-900">{games.length}</p></CardContent></Card>
-            <Card><CardContent className="py-3 px-2 text-center"><p className="text-xs text-gray-500">Win rate</p><p className="text-xl font-bold text-emerald-700">{winRate}%</p></CardContent></Card>
-            <Card><CardContent className="py-3 px-2 text-center"><p className="text-xs text-gray-500">Record</p><p className="text-sm font-semibold text-gray-900">{wins}-{losses}-{draws}</p></CardContent></Card>
-            <Card><CardContent className="py-3 px-2 text-center"><p className="text-xs text-gray-500">Score</p><p className="text-sm font-bold text-gray-900">{score} / {games.length}</p></CardContent></Card>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
+            <Card><CardContent className="py-3 px-2 text-center"><p className="text-sm text-muted-foreground">Games</p><p className="text-xl font-bold text-foreground">{games.length}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-2 text-center"><p className="text-sm text-muted-foreground">Win rate</p><p className="text-xl font-bold text-success-foreground">{winRate}%</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-2 text-center"><p className="text-sm text-muted-foreground">Record</p><p className="text-base font-semibold text-foreground">{wins}-{losses}-{draws}</p></CardContent></Card>
+            <Card><CardContent className="py-3 px-2 text-center"><p className="text-sm text-muted-foreground">Score</p><p className="text-base font-bold text-foreground">{score} / {games.length}</p></CardContent></Card>
           </div>
         )}
 
         <Card className="mb-4 print:hidden">
           <CardContent className="py-4 px-4 space-y-2">
-            <h2 className="text-lg font-semibold flex items-center gap-2"><PlusCircle className="h-5 w-5 text-amber-700" />Log a game</h2>
+            <h2 className="text-lg font-semibold flex items-center gap-2"><PlusCircle className="h-5 w-5 text-warn-foreground" />Log a game</h2>
             <Input value={form.opponent} onChange={e => setForm(f => ({ ...f, opponent: e.target.value }))} placeholder="Opponent name or handle" />
             <div className="grid grid-cols-2 gap-2">
               <Input type="date" value={form.date} onChange={e => setForm(f => ({ ...f, date: e.target.value }))} />
               <Input value={form.timeControl} onChange={e => setForm(f => ({ ...f, timeControl: e.target.value }))} placeholder="Time control (10+0, 15+10, classical)" />
             </div>
             <div className="grid grid-cols-2 gap-2">
-              <select value={form.color} onChange={e => setForm(f => ({ ...f, color: e.target.value as Color }))} className="border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <select value={form.color} onChange={e => setForm(f => ({ ...f, color: e.target.value as Color }))} className="border border-border rounded-md px-3 py-2 text-base bg-card">
                 <option>White</option>
                 <option>Black</option>
               </select>
-              <select value={form.result} onChange={e => setForm(f => ({ ...f, result: e.target.value as Result }))} className="border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <select value={form.result} onChange={e => setForm(f => ({ ...f, result: e.target.value as Result }))} className="border border-border rounded-md px-3 py-2 text-base bg-card">
                 <option>Win</option>
                 <option>Loss</option>
                 <option>Draw</option>
@@ -118,15 +118,15 @@ export default function ChessGameLog() {
                   <div key={g.id} className="py-2 flex items-start justify-between gap-2 text-sm">
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-gray-500 text-xs">{g.date}</span>
+                        <span className="text-muted-foreground text-sm">{g.date}</span>
                         <Badge variant="outline" className="text-xs">{g.color}</Badge>
                         <Badge variant="outline" className={`text-xs ${resultColor(g.result)}`}>{g.result}</Badge>
                         <Badge variant="secondary" className="text-xs">{g.timeControl}</Badge>
                       </div>
-                      <p className="font-semibold text-gray-900 mt-0.5">vs {g.opponent}</p>
-                      {g.note && <p className="text-xs text-gray-600 italic mt-0.5">{g.note}</p>}
+                      <p className="font-semibold text-foreground mt-0.5">vs {g.opponent}</p>
+                      {g.note && <p className="text-sm text-muted-foreground italic mt-0.5">{g.note}</p>}
                     </div>
-                    <Button variant="ghost" size="icon" onClick={() => remove(g.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                    <Button variant="ghost" size="icon" onClick={() => remove(g.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                       <Trash2 className="h-3 w-3" />
                     </Button>
                   </div>
@@ -136,12 +136,12 @@ export default function ChessGameLog() {
           </Card>
         )}
 
-        <Card className="mt-4 bg-blue-50 border-blue-200">
+        <Card className="mt-4 bg-info border-info-foreground/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-900"><span className="font-semibold">Play more, study a little:</span> Most senior improvement comes from playing slow games and reviewing one move per game. Free tools: chess.com Game Review (3 free reviews per day), lichess.org analysis (unlimited and free). Join a USCF rated club if you want a real rating.</p>
+            <p className="text-base text-info-foreground"><span className="font-semibold">Play more, study a little:</span> Most senior improvement comes from playing slow games and reviewing one move per game. Free tools: chess.com Game Review (3 free reviews per day), lichess.org analysis (unlimited and free). Join a USCF rated club if you want a real rating.</p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

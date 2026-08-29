@@ -19,7 +19,7 @@ export default function GoogleHomeBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily commands</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>"Hey Google, what&apos;s the weather?"</li>
               <li>"Hey Google, set timer for 10 minutes."</li>
               <li>"Hey Google, play classical music."</li>
@@ -35,7 +35,7 @@ export default function GoogleHomeBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-friendly settings</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Google Home app on phone.</li>
               <li>Tap your speaker → settings gear.</li>
               <li><strong>Voice and Match</strong> — train it to recognize YOUR voice. Personalized responses.</li>
@@ -49,7 +49,7 @@ export default function GoogleHomeBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Routines</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>"OK Google, good morning"</strong> — turns on lights, reads weather + calendar.</li>
               <li><strong>"OK Google, bedtime"</strong> — turns off lights, sets thermostat, plays sleep sounds.</li>
               <li><strong>"OK Google, I&apos;m leaving"</strong> — locks doors, lights off, away mode.</li>
@@ -61,14 +61,14 @@ export default function GoogleHomeBasics() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Calls without a phone</h2>
-            <p className="text-sm">Set up Duo or Google Voice. Then say "Hey Google, call John." Speaker dials. Works hands-free — great for arthritis or low vision.</p>
+            <p className="text-base">Set up Duo or Google Voice. Then say "Hey Google, call John." Speaker dials. Works hands-free — great for arthritis or low vision.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best Google speakers (2025)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Nest Mini</strong> ($35-50) — small, audio only. Bedside.</li>
               <li><strong>Nest Audio</strong> ($100) — bigger sound. Living room or kitchen.</li>
               <li><strong>Nest Hub (2nd gen)</strong> ($100) — 7" screen. Photo frame, recipes, video calls.</li>
@@ -80,7 +80,7 @@ export default function GoogleHomeBasics() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Privacy</h3>
-            <p className="text-sm text-muted-foreground">Google says it doesn&apos;t record until it hears "Hey Google". To erase what it&apos;s heard, say "Hey Google, delete what I said today" or open Google Home app → Settings → Activity. You can also turn off the mic with the switch on the back.</p>
+            <p className="text-base text-muted-foreground">Google says it doesn&apos;t record until it hears "Hey Google". To erase what it&apos;s heard, say "Hey Google, delete what I said today" or open Google Home app → Settings → Activity. You can also turn off the mic with the switch on the back.</p>
           </CardContent>
         </Card>
       </main>

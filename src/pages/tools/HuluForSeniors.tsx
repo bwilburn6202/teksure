@@ -19,7 +19,7 @@ export default function HuluForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What makes Hulu different</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Shows available next day after TV airing.</li>
               <li>Large library of current TV seasons.</li>
               <li>Movies — newer than Netflix often.</li>
@@ -33,7 +33,7 @@ export default function HuluForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Plans + cost</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hulu (with ads) — $7.99/month.</li>
               <li>Hulu (no ads) — $17.99/month.</li>
               <li>Hulu + Live TV — $82.99/month.</li>
@@ -47,7 +47,7 @@ export default function HuluForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best content for seniors</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Catch up on missed network TV episodes.</li>
               <li>Handmaid&apos;s Tale, The Bear — award winners.</li>
               <li>Classic TV shows — older seasons.</li>
@@ -61,7 +61,7 @@ export default function HuluForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to Hulu.com or download app.</li>
               <li>Create account with email.</li>
               <li>Choose plan + enter payment.</li>
@@ -75,7 +75,7 @@ export default function HuluForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Live TV option</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Replace cable with Hulu + Live TV.</li>
               <li>ABC, CBS, NBC, Fox, CNN, ESPN included.</li>
               <li>50 hours cloud DVR included.</li>
@@ -89,7 +89,7 @@ export default function HuluForSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>My Stuff — save shows + movies.</li>
               <li>Continue Watching — pick up where left off.</li>
               <li>Subtitles — tap CC during playback.</li>
@@ -103,7 +103,7 @@ export default function HuluForSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cable replacement?</h3>
-            <p className="text-sm text-muted-foreground">Hulu + Live TV is the best cable replacement for seniors who watch network TV. You get local channels, news, sports, and on-demand. At $82.99/month it&apos;s cheaper than most cable bills. The basic streaming-only plan at $7.99 is great if you just want current TV shows the day after they air.</p>
+            <p className="text-base text-muted-foreground">Hulu + Live TV is the best cable replacement for seniors who watch network TV. You get local channels, news, sports, and on-demand. At $82.99/month it&apos;s cheaper than most cable bills. The basic streaming-only plan at $7.99 is great if you just want current TV shows the day after they air.</p>
           </CardContent>
         </Card>
       </main>

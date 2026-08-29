@@ -22,7 +22,7 @@ export default function SeniorTravelChargers() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Multi-port USB</h2><p>$30. Charges 6 devices at once from one outlet.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Watch out</h2><p>USB ports in airports are SECURITY RISK. Use your own charger + outlet.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Solar charger</h2><p>$30. Outdoor backup. Slow but works in emergencies.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: One adapter + one GaN charger = all senior travel power needs.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: One adapter + one GaN charger = all senior travel power needs.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

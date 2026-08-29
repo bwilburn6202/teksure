@@ -151,8 +151,8 @@ export default function SeniorTechPath() {
         <section className="border-b">
           <div className="container py-12 md:py-20 max-w-4xl">
             <div className="flex items-center gap-3 mb-5">
-              <div className="h-14 w-14 rounded-2xl bg-rose-50 dark:bg-rose-950/30 flex items-center justify-center flex-shrink-0">
-                <HandHeart className="h-7 w-7 text-rose-600" aria-hidden="true" />
+              <div className="h-14 w-14 rounded-2xl bg-danger flex items-center justify-center flex-shrink-0">
+                <HandHeart className="h-7 w-7 text-danger-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary" className="text-base py-1 px-3">For Adults 60+</Badge>
             </div>
@@ -228,10 +228,10 @@ export default function SeniorTechPath() {
 
         {/* Take Your Time callout */}
         <section className="container py-12 max-w-4xl">
-          <div className="rounded-3xl border-2 border-rose-200 bg-rose-50/60 dark:bg-rose-950/20 dark:border-rose-900 p-8 md:p-10">
+          <div className="rounded-3xl border-2 border-danger-foreground/25 bg-rose-50/60 dark:bg-rose-950/20 p-8 md:p-10">
             <div className="flex items-start gap-4">
-              <div className="h-14 w-14 rounded-2xl bg-rose-100 dark:bg-rose-950/50 flex items-center justify-center flex-shrink-0">
-                <Heart className="h-7 w-7 text-rose-600" aria-hidden="true" />
+              <div className="h-14 w-14 rounded-2xl bg-danger flex items-center justify-center flex-shrink-0">
+                <Heart className="h-7 w-7 text-danger-foreground" aria-hidden="true" />
               </div>
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold mb-3">Take Your Time</h2>
@@ -250,8 +250,8 @@ export default function SeniorTechPath() {
           <Card className="border-2">
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className="h-12 w-12 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 flex items-center justify-center flex-shrink-0">
-                  <BookOpen className="h-6 w-6 text-emerald-600" aria-hidden="true" />
+                <div className="h-12 w-12 rounded-xl bg-success flex items-center justify-center flex-shrink-0">
+                  <BookOpen className="h-6 w-6 text-success-foreground" aria-hidden="true" />
                 </div>
                 <CardTitle className="text-2xl">Free Tech Help Programs</CardTitle>
               </div>
@@ -263,15 +263,15 @@ export default function SeniorTechPath() {
               </p>
               <ul className="space-y-3 text-lg">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
+                  <CheckCircle2 className="h-6 w-6 text-success-foreground mt-1 flex-shrink-0" aria-hidden="true" />
                   <span><strong>Senior Planet</strong> — free online classes for adults 60+.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
+                  <CheckCircle2 className="h-6 w-6 text-success-foreground mt-1 flex-shrink-0" aria-hidden="true" />
                   <span><strong>AARP TEK</strong> — free workshops and phone help for members and non-members.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-emerald-600 mt-1 flex-shrink-0" aria-hidden="true" />
+                  <CheckCircle2 className="h-6 w-6 text-success-foreground mt-1 flex-shrink-0" aria-hidden="true" />
                   <span><strong>Cyber-Seniors</strong> — free tech tutoring from trained student volunteers.</span>
                 </li>
               </ul>
@@ -299,8 +299,8 @@ export default function SeniorTechPath() {
               to="/brain"
               className="group block rounded-2xl border-2 bg-card p-6 min-h-[180px] transition hover:shadow-md hover:border-primary focus:outline-none focus:ring-2 focus:ring-primary"
             >
-              <div className="h-12 w-12 rounded-xl bg-violet-50 dark:bg-violet-950/30 flex items-center justify-center mb-3">
-                <Brain className="h-6 w-6 text-violet-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3">
+                <Brain className="h-6 w-6 text-primary" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold mb-2">Ask Any Question</h3>
               <p className="text-base text-muted-foreground leading-relaxed">
@@ -312,8 +312,8 @@ export default function SeniorTechPath() {
               to="/get-help"
               className="group block rounded-2xl border-2 bg-card p-6 min-h-[180px] transition hover:shadow-md hover:border-primary focus:outline-none focus:ring-2 focus:ring-primary"
             >
-              <div className="h-12 w-12 rounded-xl bg-sky-50 dark:bg-sky-950/30 flex items-center justify-center mb-3">
-                <Calendar className="h-6 w-6 text-sky-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-xl bg-info flex items-center justify-center mb-3">
+                <Calendar className="h-6 w-6 text-info-foreground" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold mb-2">Book a Session</h3>
               <p className="text-base text-muted-foreground leading-relaxed">
@@ -325,8 +325,8 @@ export default function SeniorTechPath() {
               to="/tech-help-near-me"
               className="group block rounded-2xl border-2 bg-card p-6 min-h-[180px] transition hover:shadow-md hover:border-primary focus:outline-none focus:ring-2 focus:ring-primary"
             >
-              <div className="h-12 w-12 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 flex items-center justify-center mb-3">
-                <MapPin className="h-6 w-6 text-emerald-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-xl bg-success flex items-center justify-center mb-3">
+                <MapPin className="h-6 w-6 text-success-foreground" aria-hidden="true" />
               </div>
               <h3 className="text-xl font-bold mb-2">Find Local Help</h3>
               <p className="text-base text-muted-foreground leading-relaxed">

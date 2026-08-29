@@ -19,7 +19,7 @@ export default function MagnifyTextHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone — Zoom anywhere</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Settings → Accessibility → Zoom → Toggle ON.</li>
               <li>Triple-tap with 3 fingers anywhere — zoom in.</li>
               <li>Drag with 3 fingers to pan around.</li>
@@ -32,7 +32,7 @@ export default function MagnifyTextHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">iPhone Magnifier app</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Search "Magnifier" on iPhone — built-in.</li>
               <li>Add to Control Center: Settings → Control Center.</li>
               <li>Triple-press side button (set as accessibility shortcut).</li>
@@ -46,7 +46,7 @@ export default function MagnifyTextHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mac — Zoom screen</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>System Settings → Accessibility → Zoom.</li>
               <li>Use  + Option + = to zoom in.</li>
               <li> + Option + - to zoom out.</li>
@@ -58,7 +58,7 @@ export default function MagnifyTextHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Windows — Magnifier</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Press <kbd className="bg-muted px-1.5 py-0.5 rounded">Win</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">+</kbd> to start magnifier.</li>
               <li>Press <kbd className="bg-muted px-1.5 py-0.5 rounded">Win</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">+</kbd> again to zoom more.</li>
               <li>Win + - to zoom out.</li>
@@ -71,7 +71,7 @@ export default function MagnifyTextHowTo() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Web pages — zoom in browser</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><kbd className="bg-muted px-1.5 py-0.5 rounded">Ctrl</kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">+</kbd> (PC) or <kbd className="bg-muted px-1.5 py-0.5 rounded"></kbd> + <kbd className="bg-muted px-1.5 py-0.5 rounded">+</kbd> (Mac).</li>
               <li>Each press zooms 10%.</li>
               <li>Reset: Ctrl + 0 or  + 0.</li>
@@ -84,7 +84,7 @@ export default function MagnifyTextHowTo() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">iPad &gt; iPhone for vision</h3>
-            <p className="text-sm text-muted-foreground">If reading on phone is hard, iPad gives 3x more screen real estate. iPad mini is only $499. For non-tech seniors, iPad is the friendly tablet — see /tools/ipad-for-seniors.</p>
+            <p className="text-base text-muted-foreground">If reading on phone is hard, iPad gives 3x more screen real estate. iPad mini is only $499. For non-tech seniors, iPad is the friendly tablet — see /tools/ipad-for-seniors.</p>
           </CardContent>
         </Card>
       </main>

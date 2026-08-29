@@ -19,7 +19,7 @@ export default function WidowedRelationships() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Are you ready?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>No "right" timeline. Some 6 months. Some 6 years. Some never.</li>
               <li>Common signs: thinking of company beyond friends/family, ready to share new experiences.</li>
               <li>Common signs to wait: still crying daily, can&apos;t mention late spouse without breakdown.</li>
@@ -31,7 +31,7 @@ export default function WidowedRelationships() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Mention late spouse?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Once relationship gets serious, yes — natural to share.</li>
               <li>NOT in dating profile (focus on now).</li>
               <li>NOT on first date (overwhelming).</li>
@@ -45,7 +45,7 @@ export default function WidowedRelationships() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Adult kids</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Adult kids&apos; reactions vary widely — supportive, jealous, worried about money, etc.</li>
               <li>Your life. Your choice.</li>
               <li>BUT — let them know early. Don&apos;t hide. Resentment grows in secrecy.</li>
@@ -59,7 +59,7 @@ export default function WidowedRelationships() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Practical concerns</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Social Security widow benefits</strong> — remarrying after 60 doesn&apos;t affect them. Before 60 does.</li>
               <li><strong>Pension survivor benefits</strong> — some plans end at remarriage. Check.</li>
               <li><strong>Estate planning</strong> — update will, beneficiaries, POA. Especially if cohabiting.</li>
@@ -72,7 +72,7 @@ export default function WidowedRelationships() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Support resources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>WidowsHope.org</strong> — community for widows + widowers.</li>
               <li><strong>Modern Widows Club</strong> — modernwidowsclub.org.</li>
               <li><strong>Soaring Spirits</strong> — international widowed community.</li>
@@ -85,7 +85,7 @@ export default function WidowedRelationships() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Two truths</h3>
-            <p className="text-sm text-muted-foreground">Loving someone new doesn&apos;t mean you loved them less. The heart isn&apos;t a finite resource. Late spouse would want you happy.</p>
+            <p className="text-base text-muted-foreground">Loving someone new doesn&apos;t mean you loved them less. The heart isn&apos;t a finite resource. Late spouse would want you happy.</p>
           </CardContent>
         </Card>
       </main>

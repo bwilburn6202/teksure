@@ -70,7 +70,7 @@ export default function BillsDueDateCalendar() {
   const onAutopay = bills.filter(b => b.autopay).length;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Bills Due Date Calendar | TekSure"
         description="Track every monthly bill with due day and amount. See what's coming up in the next 7 days. Print to put on the fridge."
@@ -79,10 +79,10 @@ export default function BillsDueDateCalendar() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Calendar className="h-7 w-7 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Bills Due Date Calendar</h1>
+            <Calendar className="h-7 w-7 text-info-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Bills Due Date Calendar</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Add every recurring bill with the day of the month it is due. Print a clean monthly view for the fridge.
           </p>
         </div>
@@ -92,20 +92,20 @@ export default function BillsDueDateCalendar() {
           <div className="grid grid-cols-3 gap-3 mb-4">
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Bills</p>
-                <p className="text-xl font-bold text-blue-700">{bills.length}</p>
+                <p className="text-sm text-muted-foreground">Bills</p>
+                <p className="text-xl font-bold text-info-foreground">{bills.length}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">Monthly total</p>
-                <p className="text-xl font-bold text-blue-700">${monthlyTotal.toFixed(2)}</p>
+                <p className="text-sm text-muted-foreground">Monthly total</p>
+                <p className="text-xl font-bold text-info-foreground">${monthlyTotal.toFixed(2)}</p>
               </CardContent>
             </Card>
             <Card>
               <CardContent className="py-3 px-3 text-center">
-                <p className="text-xs text-gray-500">On auto-pay</p>
-                <p className="text-xl font-bold text-blue-700">{onAutopay}/{bills.length}</p>
+                <p className="text-sm text-muted-foreground">On auto-pay</p>
+                <p className="text-xl font-bold text-info-foreground">{onAutopay}/{bills.length}</p>
               </CardContent>
             </Card>
           </div>
@@ -113,10 +113,10 @@ export default function BillsDueDateCalendar() {
 
         {/* Alert */}
         {due7Days.length > 0 && (
-          <Card className="mb-4 bg-amber-50 border-amber-200 print:hidden">
+          <Card className="mb-4 bg-warn border-warn-foreground/25 print:hidden">
             <CardContent className="py-3 px-4 flex items-start gap-2">
-              <AlertTriangle className="h-5 w-5 text-amber-600 mt-0.5 shrink-0" />
-              <p className="text-sm text-amber-800">
+              <AlertTriangle className="h-5 w-5 text-warn-foreground mt-0.5 shrink-0" />
+              <p className="text-base text-warn-foreground">
                 <span className="font-semibold">{due7Days.length} bill{due7Days.length !== 1 ? "s" : ""}</span> due in the next 7 days. Make sure your account has enough to cover them.
               </p>
             </CardContent>
@@ -127,7 +127,7 @@ export default function BillsDueDateCalendar() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-blue-600" />
+              <PlusCircle className="h-5 w-5 text-info-foreground" />
               Add a Bill
             </CardTitle>
           </CardHeader>
@@ -141,7 +141,7 @@ export default function BillsDueDateCalendar() {
                     key={c}
                     type="button"
                     onClick={() => setForm(f => ({ ...f, name: c }))}
-                    className="text-xs px-2 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 hover:bg-blue-100"
+                    className="text-xs px-2 py-1 rounded-full bg-info border border-info-foreground/25 text-info-foreground hover:bg-info"
                   >
                     {c}
                   </button>
@@ -158,7 +158,7 @@ export default function BillsDueDateCalendar() {
                 <Input id="amount" type="number" min="0" step="0.01" placeholder="0.00" value={form.amount} onChange={e => setForm(f => ({ ...f, amount: e.target.value }))} className="mt-1 text-base" />
               </div>
             </div>
-            <label className="flex items-center gap-2 text-sm cursor-pointer">
+            <label className="flex items-center gap-2 text-base cursor-pointer">
               <input type="checkbox" checked={form.autopay} onChange={e => setForm(f => ({ ...f, autopay: e.target.checked }))} className="h-4 w-4" />
               <span>This bill is on auto-pay</span>
             </label>
@@ -166,7 +166,7 @@ export default function BillsDueDateCalendar() {
               <Label htmlFor="bill-notes" className="text-base font-medium">Notes (optional)</Label>
               <Input id="bill-notes" placeholder="e.g. Paid from checking, account #1234" value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={() => add()} size="lg" className="w-full sm:w-auto text-base">Add Bill</Button>
           </CardContent>
         </Card>
@@ -182,10 +182,10 @@ export default function BillsDueDateCalendar() {
 
         {sorted.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Calendar className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Calendar className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No bills tracked yet.</p>
-              <p className="text-sm mt-1">Add your first bill above to start the calendar.</p>
+              <p className="text-base mt-1">Add your first bill above to start the calendar.</p>
             </CardContent>
           </Card>
         ) : (
@@ -202,23 +202,23 @@ export default function BillsDueDateCalendar() {
                     <div key={b.id} className={`py-2 flex items-start justify-between gap-2 ${soon ? "bg-amber-50/50 -mx-3 px-3 rounded" : ""}`}>
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 flex-wrap">
-                          <span className="font-medium text-gray-900">{b.name}</span>
+                          <span className="font-medium text-foreground">{b.name}</span>
                           {b.amount > 0 && <Badge variant="secondary" className="text-xs">${b.amount.toFixed(2)}</Badge>}
-                          {b.autopay && <Badge className="text-xs bg-green-100 text-green-700 border-green-200">Auto-pay</Badge>}
+                          {b.autopay && <Badge className="text-xs bg-success text-success-foreground border-success-foreground/25">Auto-pay</Badge>}
                         </div>
-                        <p className="text-xs text-gray-600 mt-1">
+                        <p className="text-sm text-muted-foreground mt-1">
                           Due the {ordinal(b.dueDay)} · {days === 0 ? "today" : days === 1 ? "tomorrow" : `in ${days} days`}
                         </p>
-                        {b.notes && <p className="text-xs text-gray-500 italic mt-0.5">{b.notes}</p>}
+                        {b.notes && <p className="text-sm text-muted-foreground italic mt-0.5">{b.notes}</p>}
                       </div>
                       <div className="flex flex-col gap-1 shrink-0 print:hidden">
                         <button
                           onClick={() => toggleAutopay(b.id)}
-                          className="text-xs text-blue-600 underline hover:text-blue-800"
+                          className="text-xs text-info-foreground underline hover:text-info-foreground"
                         >
                           {b.autopay ? "Mark manual" : "Mark auto-pay"}
                         </button>
-                        <Button variant="ghost" size="icon" onClick={() => remove(b.id)} className="h-6 w-6 text-red-400 hover:text-red-600">
+                        <Button variant="ghost" size="icon" onClick={() => remove(b.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground">
                           <Trash2 className="h-3 w-3" />
                         </Button>
                       </div>
@@ -230,15 +230,15 @@ export default function BillsDueDateCalendar() {
           </Card>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Auto-pay prevents late fees, but keep tracking the bills here so you can spot a charge that suddenly goes up.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

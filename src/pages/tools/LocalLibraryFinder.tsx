@@ -428,7 +428,7 @@ export default function LocalLibraryFinder() {
               url="/tools/local-library-finder"
             />
           </div>
-          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-teal-200 via-amber-100 to-orange-100 text-teal-700 dark:from-teal-900/60 dark:via-amber-950/40 dark:to-orange-950/40 dark:text-teal-300 mb-5 shadow-sm">
+          <div className="inline-flex items-center justify-center h-20 w-20 rounded-2xl bg-gradient-to-br from-teal-200 via-amber-100 to-orange-100 text-success-foreground dark:from-teal-900/60 dark:via-amber-950/40 dark:to-orange-950/40 mb-5 shadow-sm">
             <Library className="h-12 w-12" aria-hidden="true" />
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight mb-3 bg-gradient-to-br from-teal-700 via-teal-600 to-amber-600 bg-clip-text text-transparent dark:from-teal-300 dark:via-teal-400 dark:to-amber-300">
@@ -445,12 +445,12 @@ export default function LocalLibraryFinder() {
         </div>
 
         {/* ── Budget-saver banner ── */}
-        <Alert className="mb-10 border-2 border-amber-300 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-800">
-          <PiggyBank className="h-5 w-5 text-amber-700 dark:text-amber-300" />
-          <AlertTitle className="text-lg font-bold text-amber-900 dark:text-amber-100">
+        <Alert className="mb-10 border-2 border-warn-foreground/25 bg-warn ">
+          <PiggyBank className="h-5 w-5 text-warn-foreground " />
+          <AlertTitle className="text-lg font-bold text-warn-foreground ">
             Your library card is worth at least $2,000 a year
           </AlertTitle>
-          <AlertDescription className="text-base text-amber-900 dark:text-amber-100">
+          <AlertDescription className="text-base text-warn-foreground ">
             If you paid separately for the streaming, ebooks, audiobooks, magazines, Consumer Reports, LinkedIn
             Learning, language apps, and museum passes your library offers, you would spend over $2,000 a year.
             With a library card, it is all free.
@@ -460,7 +460,7 @@ export default function LocalLibraryFinder() {
         {/* ── Find your library section ── */}
         <section aria-labelledby="find-heading" className="mb-12">
           <h2 id="find-heading" className="text-3xl font-bold mb-2 flex items-center gap-2">
-            <MapPin className="h-8 w-8 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+            <MapPin className="h-8 w-8 text-success-foreground " aria-hidden="true" />
             Find your library
           </h2>
           <p className="text-base text-muted-foreground mb-6">
@@ -501,7 +501,7 @@ export default function LocalLibraryFinder() {
                       Find libraries near me
                     </Button>
                   </div>
-                  <p id="zip-help" className="text-sm text-muted-foreground">
+                  <p id="zip-help" className="text-base text-muted-foreground">
                     This opens a Google search in a new tab — we do not collect or store your ZIP code.
                   </p>
                 </CardContent>
@@ -537,7 +537,7 @@ export default function LocalLibraryFinder() {
                       Open state directory
                     </Button>
                   </div>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="text-base text-muted-foreground">
                     {selectedState
                       ? `Links to the ${selectedState.name} state library — the official directory for every public library in the state.`
                       : 'Each state has an official library commission that lists every public library and its services.'}
@@ -577,7 +577,7 @@ export default function LocalLibraryFinder() {
         {/* ── Major library systems spotlight ── */}
         <section aria-labelledby="major-heading" className="mb-14">
           <h2 id="major-heading" className="text-3xl font-bold mb-2 flex items-center gap-2">
-            <Building2 className="h-8 w-8 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+            <Building2 className="h-8 w-8 text-success-foreground " aria-hidden="true" />
             Major library systems
           </h2>
           <p className="text-base text-muted-foreground mb-6">
@@ -586,10 +586,10 @@ export default function LocalLibraryFinder() {
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             {MAJOR_LIBS.map((lib) => (
-              <Card key={lib.name} className="border-2 hover:border-teal-300 transition-colors">
+              <Card key={lib.name} className="border-2 hover:border-success-foreground/25 transition-colors">
                 <CardContent className="p-5">
                   <h3 className="text-lg font-bold mb-1">{lib.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-3 flex items-center gap-1">
+                  <p className="text-base text-muted-foreground mb-3 flex items-center gap-1">
                     <MapPin className="h-4 w-4" aria-hidden="true" />
                     {lib.city}
                   </p>
@@ -614,7 +614,7 @@ export default function LocalLibraryFinder() {
         {/* ── Services every library has ── */}
         <section aria-labelledby="core-heading" className="mb-14">
           <h2 id="core-heading" className="text-3xl font-bold mb-2 flex items-center gap-2">
-            <Star className="h-8 w-8 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+            <Star className="h-8 w-8 text-success-foreground " aria-hidden="true" />
             Services every library has
           </h2>
           <p className="text-base text-muted-foreground mb-6">
@@ -627,7 +627,7 @@ export default function LocalLibraryFinder() {
                 <Card key={svc.title} className="border-2">
                   <CardContent className="p-5">
                     <div className="flex items-start gap-3">
-                      <div className={`shrink-0 rounded-xl p-2 bg-teal-50 dark:bg-teal-950/30 ${svc.color}`}>
+                      <div className={`shrink-0 rounded-xl p-2 bg-success ${svc.color}`}>
                         <Icon className="h-6 w-6" aria-hidden="true" />
                       </div>
                       <div className="flex-1 min-w-0">
@@ -636,7 +636,7 @@ export default function LocalLibraryFinder() {
                         {svc.linkTo && (
                           <Link
                             to={svc.linkTo}
-                            className="inline-flex items-center gap-1 mt-2 text-sm font-semibold text-teal-700 dark:text-teal-400 hover:underline"
+                            className="inline-flex items-center gap-1 mt-2 text-sm font-semibold text-success-foreground hover:underline"
                           >
                             {svc.linkLabel}
                             <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
@@ -654,7 +654,7 @@ export default function LocalLibraryFinder() {
         {/* ── Extended services ── */}
         <section aria-labelledby="extended-heading" className="mb-14">
           <h2 id="extended-heading" className="text-3xl font-bold mb-2 flex items-center gap-2">
-            <Lightbulb className="h-8 w-8 text-amber-600 dark:text-amber-400" aria-hidden="true" />
+            <Lightbulb className="h-8 w-8 text-warn-foreground " aria-hidden="true" />
             Services you might not know about
           </h2>
           <p className="text-base text-muted-foreground mb-6">
@@ -664,10 +664,10 @@ export default function LocalLibraryFinder() {
             {EXTENDED_SERVICES.map((svc) => {
               const Icon = svc.icon;
               return (
-                <Card key={svc.title} className="border-2 border-amber-200 dark:border-amber-900 bg-amber-50/50 dark:bg-amber-950/10">
+                <Card key={svc.title} className="border-2 border-warn-foreground/25 bg-amber-50/50 dark:bg-amber-950/10">
                   <CardContent className="p-5">
                     <div className="flex items-start gap-3">
-                      <div className={`shrink-0 rounded-xl p-2 bg-amber-100 dark:bg-amber-950/30 ${svc.color}`}>
+                      <div className={`shrink-0 rounded-xl p-2 bg-warn ${svc.color}`}>
                         <Icon className="h-6 w-6" aria-hidden="true" />
                       </div>
                       <div className="flex-1 min-w-0">
@@ -684,19 +684,19 @@ export default function LocalLibraryFinder() {
 
         {/* ── First visit checklist ── */}
         <section aria-labelledby="first-visit-heading" className="mb-14">
-          <Card className="border-2 border-teal-300 bg-teal-50 dark:bg-teal-950/30 dark:border-teal-800">
+          <Card className="border-2 border-success-foreground/25 bg-success ">
             <CardContent className="p-6 sm:p-8">
-              <h2 id="first-visit-heading" className="text-2xl font-bold mb-4 flex items-center gap-2 text-teal-900 dark:text-teal-100">
+              <h2 id="first-visit-heading" className="text-2xl font-bold mb-4 flex items-center gap-2 text-success-foreground ">
                 <CheckCircle2 className="h-7 w-7" aria-hidden="true" />
                 First visit checklist
               </h2>
-              <p className="text-base mb-5 text-teal-900 dark:text-teal-100">
+              <p className="text-base mb-5 text-success-foreground ">
                 Everything you need to walk out with a card and a plan:
               </p>
-              <ul className="space-y-3 text-base text-teal-900 dark:text-teal-100">
+              <ul className="space-y-3 text-base text-success-foreground ">
                 {FIRST_VISIT.map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-teal-700 dark:text-teal-300" aria-hidden="true" />
+                    <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-success-foreground " aria-hidden="true" />
                     <span>{item}</span>
                   </li>
                 ))}
@@ -708,7 +708,7 @@ export default function LocalLibraryFinder() {
         {/* ── Senior-specific programs ── */}
         <section aria-labelledby="senior-heading" className="mb-14">
           <h2 id="senior-heading" className="text-3xl font-bold mb-2 flex items-center gap-2">
-            <Heart className="h-8 w-8 text-rose-600 dark:text-rose-400" aria-hidden="true" />
+            <Heart className="h-8 w-8 text-danger-foreground " aria-hidden="true" />
             Programs for adults 60+
           </h2>
           <p className="text-base text-muted-foreground mb-6">
@@ -731,7 +731,7 @@ export default function LocalLibraryFinder() {
           <Card className="border-2">
             <CardContent className="p-6 sm:p-8">
               <h2 id="reciprocal-heading" className="text-2xl font-bold mb-3 flex items-center gap-2">
-                <Users className="h-7 w-7 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+                <Users className="h-7 w-7 text-success-foreground " aria-hidden="true" />
                 Reciprocal and regional cards
               </h2>
               <p className="text-base mb-3">
@@ -750,46 +750,46 @@ export default function LocalLibraryFinder() {
 
         {/* ── Rural / no library fallback ── */}
         <section aria-labelledby="rural-heading" className="mb-14">
-          <Card className="border-2 border-cyan-300 bg-cyan-50 dark:bg-cyan-950/30 dark:border-cyan-800">
+          <Card className="border-2 border-info-foreground/25 bg-info ">
             <CardContent className="p-6 sm:p-8">
-              <h2 id="rural-heading" className="text-2xl font-bold mb-3 flex items-center gap-2 text-cyan-900 dark:text-cyan-100">
+              <h2 id="rural-heading" className="text-2xl font-bold mb-3 flex items-center gap-2 text-info-foreground ">
                 <Globe className="h-7 w-7" aria-hidden="true" />
                 No library close by? You still have options.
               </h2>
-              <p className="text-base mb-4 text-cyan-900 dark:text-cyan-100">
+              <p className="text-base mb-4 text-info-foreground ">
                 Rural areas and very small towns sometimes lack a physical branch, but you still have access:
               </p>
-              <ul className="space-y-3 text-base text-cyan-900 dark:text-cyan-100">
+              <ul className="space-y-3 text-base text-info-foreground ">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-cyan-700 dark:text-cyan-300" aria-hidden="true" />
+                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-info-foreground " aria-hidden="true" />
                   <span>
                     <strong>Statewide virtual library card.</strong> Many state library commissions offer a digital
                     card to any resident — no branch visit required. Pick your state above.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-cyan-700 dark:text-cyan-300" aria-hidden="true" />
+                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-info-foreground " aria-hidden="true" />
                   <span>
                     <strong>County-level Libby access.</strong> Even if your town has no library, your county often
                     has a system that lets you read digitally through OverDrive / Libby.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-cyan-700 dark:text-cyan-300" aria-hidden="true" />
+                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-info-foreground " aria-hidden="true" />
                   <span>
                     <strong>Internet Archive</strong> (<a href="https://archive.org" target="_blank" rel="noopener noreferrer" className="font-semibold underline">archive.org</a>) lets anyone borrow millions
                     of digital books for free — no card needed.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-cyan-700 dark:text-cyan-300" aria-hidden="true" />
+                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-info-foreground " aria-hidden="true" />
                   <span>
                     <strong>Project Gutenberg</strong> (<a href="https://gutenberg.org" target="_blank" rel="noopener noreferrer" className="font-semibold underline">gutenberg.org</a>) has 70,000+ free classic
                     ebooks, forever, with no account required.
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-cyan-700 dark:text-cyan-300" aria-hidden="true" />
+                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-info-foreground " aria-hidden="true" />
                   <span>
                     <strong>LibriVox</strong> (<a href="https://librivox.org" target="_blank" rel="noopener noreferrer" className="font-semibold underline">librivox.org</a>) offers free audiobooks of public-domain
                     titles, read by volunteers.
@@ -802,10 +802,10 @@ export default function LocalLibraryFinder() {
 
         {/* ── Librarian is your friend ── */}
         <section className="mb-14">
-          <Card className="border-2 border-teal-200 dark:border-teal-900">
+          <Card className="border-2 border-success-foreground/25 ">
             <CardContent className="p-6 sm:p-8">
               <h2 className="text-2xl font-bold mb-3 flex items-center gap-2">
-                <HandHeart className="h-7 w-7 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+                <HandHeart className="h-7 w-7 text-success-foreground " aria-hidden="true" />
                 The reference librarian is your friend
               </h2>
               <p className="text-base mb-3">
@@ -826,28 +826,28 @@ export default function LocalLibraryFinder() {
           <Card className="border-2">
             <CardContent className="p-6 sm:p-8">
               <h2 className="text-2xl font-bold mb-3 flex items-center gap-2">
-                <ShieldCheck className="h-7 w-7 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+                <ShieldCheck className="h-7 w-7 text-success-foreground " aria-hidden="true" />
                 Library etiquette
               </h2>
               <ul className="space-y-3 text-base">
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-success-foreground " aria-hidden="true" />
                   <span><strong>Quiet zones are real.</strong> Keep phone conversations to the lobby or a meeting room. Most libraries have a "loud" and a "quiet" area — ask which is which.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-success-foreground " aria-hidden="true" />
                   <span><strong>Renew online.</strong> Most items can be renewed one or two times with a tap in the library&apos;s app or website — as long as no one else is waiting.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-success-foreground " aria-hidden="true" />
                   <span><strong>Late fees mostly vanished.</strong> Most US libraries went fine-free between 2019 and 2022. Check your library&apos;s policy — you might owe less than you think.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-success-foreground " aria-hidden="true" />
                   <span><strong>Return books in the slot.</strong> Most libraries have an outdoor book drop that works 24/7 — no need to come in during hours.</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+                  <CheckCircle2 className="h-5 w-5 shrink-0 mt-1 text-success-foreground " aria-hidden="true" />
                   <span><strong>Food policies vary.</strong> Many libraries allow covered drinks and small snacks in most areas. Big meals, no.</span>
                 </li>
               </ul>
@@ -857,10 +857,10 @@ export default function LocalLibraryFinder() {
 
         {/* ── Volunteer ── */}
         <section className="mb-14">
-          <Card className="border-2 border-rose-200 dark:border-rose-900 bg-rose-50/50 dark:bg-rose-950/10">
+          <Card className="border-2 border-danger-foreground/25 bg-rose-50/50 dark:bg-rose-950/10">
             <CardContent className="p-6 sm:p-8">
               <h2 className="text-2xl font-bold mb-3 flex items-center gap-2">
-                <HandHeart className="h-7 w-7 text-rose-600 dark:text-rose-400" aria-hidden="true" />
+                <HandHeart className="h-7 w-7 text-danger-foreground " aria-hidden="true" />
                 Volunteer at your library
               </h2>
               <p className="text-base mb-3">
@@ -879,7 +879,7 @@ export default function LocalLibraryFinder() {
         {/* ── FAQ ── */}
         <section aria-labelledby="faq-heading" className="mb-14">
           <h2 id="faq-heading" className="text-3xl font-bold mb-4 flex items-center gap-2">
-            <HelpCircle className="h-8 w-8 text-teal-600 dark:text-teal-400" aria-hidden="true" />
+            <HelpCircle className="h-8 w-8 text-success-foreground " aria-hidden="true" />
             Frequently asked questions
           </h2>
           <Accordion type="single" collapsible className="w-full">
@@ -905,30 +905,30 @@ export default function LocalLibraryFinder() {
               className="block rounded-xl border-2 border-border bg-card p-5 hover:border-teal-400 hover:bg-teal-50/50 dark:hover:bg-teal-950/20 transition-colors min-h-24"
             >
               <div className="flex items-center gap-2 mb-1">
-                <BookOpen className="h-5 w-5 text-teal-600" aria-hidden="true" />
+                <BookOpen className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                 <span className="font-bold text-base">Library Tech Helper</span>
               </div>
-              <p className="text-sm text-muted-foreground">Set up Libby, Hoopla, Kanopy, and other library apps.</p>
+              <p className="text-base text-muted-foreground">Set up Libby, Hoopla, Kanopy, and other library apps.</p>
             </Link>
             <Link
               to="/tools/free-learning-hub"
               className="block rounded-xl border-2 border-border bg-card p-5 hover:border-teal-400 hover:bg-teal-50/50 dark:hover:bg-teal-950/20 transition-colors min-h-24"
             >
               <div className="flex items-center gap-2 mb-1">
-                <GraduationCap className="h-5 w-5 text-teal-600" aria-hidden="true" />
+                <GraduationCap className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                 <span className="font-bold text-base">Free Learning Hub</span>
               </div>
-              <p className="text-sm text-muted-foreground">Free courses on any topic from real universities.</p>
+              <p className="text-base text-muted-foreground">Free courses on any topic from real universities.</p>
             </Link>
             <Link
               to="/tools/free-resource-hub"
               className="block rounded-xl border-2 border-border bg-card p-5 hover:border-teal-400 hover:bg-teal-50/50 dark:hover:bg-teal-950/20 transition-colors min-h-24"
             >
               <div className="flex items-center gap-2 mb-1">
-                <DollarSign className="h-5 w-5 text-teal-600" aria-hidden="true" />
+                <DollarSign className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                 <span className="font-bold text-base">Free Resource Hub</span>
               </div>
-              <p className="text-sm text-muted-foreground">Free tech, internet, and utility programs you may qualify for.</p>
+              <p className="text-base text-muted-foreground">Free tech, internet, and utility programs you may qualify for.</p>
             </Link>
           </div>
         </section>

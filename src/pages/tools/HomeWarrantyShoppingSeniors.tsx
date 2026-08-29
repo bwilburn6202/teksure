@@ -19,7 +19,7 @@ export default function HomeWarrantyShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What is home warranty?</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Covers home appliances + systems.</li>
               <li>NOT same as homeowners insurance.</li>
               <li>$50-$80/month + $75-$125 service fee.</li>
@@ -33,7 +33,7 @@ export default function HomeWarrantyShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Major providers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>American Home Shield — largest.</li>
               <li>Choice Home Warranty.</li>
               <li>First American Home Warranty.</li>
@@ -47,7 +47,7 @@ export default function HomeWarrantyShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Worth it when</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Older home (10+ years).</li>
               <li>Aging HVAC + appliances.</li>
               <li>Don&apos;t have plumber/electrician you trust.</li>
@@ -61,7 +61,7 @@ export default function HomeWarrantyShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Drawbacks</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Companies often deny claims.</li>
               <li>You don&apos;t pick the contractor.</li>
               <li>Cheap parts replacements.</li>
@@ -75,7 +75,7 @@ export default function HomeWarrantyShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Math the value</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$60/month × 12 = $720/year.</li>
               <li>+ $100 service fee per call.</li>
               <li>HVAC replacement = $5,000-$10,000.</li>
@@ -89,7 +89,7 @@ export default function HomeWarrantyShoppingSeniors() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Self-insurance approach</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Save $60/month in &quot;home repair fund.&quot;</li>
               <li>Build to $5,000+ over time.</li>
               <li>Pay actual repairs from fund.</li>
@@ -103,7 +103,7 @@ export default function HomeWarrantyShoppingSeniors() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Self-fund unless aging home</h3>
-            <p className="text-sm text-muted-foreground">For most senior homeowners, putting $60/month in a home repair fund beats buying a home warranty. You control quality of repairs + keep extra funds. Home warranties make sense only if you have an aging home with multiple systems near failure. Read reviews carefully — many homeowners find warranties frustrating.</p>
+            <p className="text-base text-muted-foreground">For most senior homeowners, putting $60/month in a home repair fund beats buying a home warranty. You control quality of repairs + keep extra funds. Home warranties make sense only if you have an aging home with multiple systems near failure. Read reviews carefully — many homeowners find warranties frustrating.</p>
           </CardContent>
         </Card>
       </main>

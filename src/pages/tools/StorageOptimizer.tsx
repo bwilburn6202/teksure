@@ -590,11 +590,12 @@ export default function StorageOptimizer() {
         path="/tools/storage-optimizer"
       />
       <Navbar />
+      <main className="flex-1">
 
       {/* Hero */}
       <section className="bg-gradient-to-b from-emerald-50 to-white dark:from-emerald-950/30 dark:to-background py-16">
         <div className="container max-w-5xl mx-auto px-4 text-center">
-          <Badge className="mb-4 bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">
+          <Badge className="mb-4 bg-success text-success-foreground ">
             <HardDrive className="h-3 w-3 mr-1" /> Storage Cleanup
           </Badge>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Running Out of Storage? Here is How to Fix It</h1>
@@ -614,7 +615,7 @@ export default function StorageOptimizer() {
               return (
                 <button key={d.id}
                   onClick={() => switchDevice(d.id)}
-                  className={`px-4 py-2.5 rounded-lg border flex items-center gap-2 text-sm font-medium transition ${active ? 'border-emerald-500 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300' : 'hover:border-slate-400'}`}>
+                  className={`px-4 py-2.5 rounded-lg border flex items-center gap-2 text-sm font-medium transition ${active ? 'border-emerald-500 bg-success text-success-foreground dark:text-emerald-300' : 'hover:border-slate-400'}`}>
                   <Icon className="h-4 w-4" />
                   {d.label}
                 </button>
@@ -625,23 +626,23 @@ export default function StorageOptimizer() {
       </section>
 
       {/* Progress bar */}
-      <section className="py-6 bg-slate-50 dark:bg-slate-950 border-b">
+      <section className="py-6 bg-muted border-b">
         <div className="container max-w-3xl mx-auto px-4">
           <div className="flex items-end justify-between mb-2">
             <div>
               <p className="text-xs uppercase font-semibold text-muted-foreground">Space freed</p>
-              <p className="text-3xl font-bold text-emerald-700 dark:text-emerald-400">
+              <p className="text-3xl font-bold text-success-foreground ">
                 {savedGb} <span className="text-lg font-semibold text-muted-foreground">/ up to {totalSavedMax} GB</span>
               </p>
             </div>
             <div className="text-right">
-              <p className="text-xs text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 {Object.values(completed).filter(Boolean).length} / {current.steps.length} steps done
               </p>
             </div>
           </div>
           <Progress value={percent} className="h-3" />
-          <p className="text-xs text-muted-foreground mt-2">Estimates are rough — actual space freed depends on how much data you have.</p>
+          <p className="text-sm text-muted-foreground mt-2">Estimates are rough — actual space freed depends on how much data you have.</p>
         </div>
       </section>
 
@@ -677,8 +678,8 @@ export default function StorageOptimizer() {
                           {i + 1}. {step.title}
                         </p>
                         {step.savedGb > 0 && (
-                          <p className="text-xs text-muted-foreground">
-                            Expected savings: up to <strong className="text-emerald-700 dark:text-emerald-400">{step.savedGb} GB</strong>
+                          <p className="text-sm text-muted-foreground">
+                            Expected savings: up to <strong className="text-success-foreground ">{step.savedGb} GB</strong>
                           </p>
                         )}
                       </div>
@@ -687,8 +688,8 @@ export default function StorageOptimizer() {
                   </div>
                   {isOpen && (
                     <div className="px-4 pb-5 pl-14">
-                      <p className="text-xs font-semibold text-muted-foreground mb-2">HOW TO</p>
-                      <ol className="space-y-1.5 text-sm list-decimal list-inside text-muted-foreground">
+                      <p className="text-sm font-semibold text-muted-foreground mb-2">HOW TO</p>
+                      <ol className="space-y-1.5 text-base list-decimal list-inside text-muted-foreground">
                         {step.how.map((h, hi) => <li key={hi}><span className="text-foreground">{h}</span></li>)}
                       </ol>
                     </div>
@@ -701,10 +702,10 @@ export default function StorageOptimizer() {
       </section>
 
       {/* Still not enough? */}
-      <section className="bg-slate-50 dark:bg-slate-950 py-12">
+      <section className="bg-muted py-12">
         <div className="container max-w-5xl mx-auto px-4">
           <div className="flex items-center gap-2 mb-6">
-            <Lightbulb className="h-6 w-6 text-amber-500" />
+            <Lightbulb className="h-6 w-6 text-warn-foreground" />
             <h2 className="text-2xl font-bold">Still not enough space? Here is what to do.</h2>
           </div>
 
@@ -712,34 +713,34 @@ export default function StorageOptimizer() {
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-3">
-                  <Cloud className="h-5 w-5 text-sky-600" />
+                  <Cloud className="h-5 w-5 text-info-foreground" />
                   <h3 className="font-bold">Pay for more cloud storage (cheap)</h3>
                 </div>
-                <ul className="space-y-2 text-sm">
+                <ul className="space-y-2 text-base">
                   <li className="flex justify-between"><span>iCloud+ 50 GB</span><strong>$0.99 / month</strong></li>
                   <li className="flex justify-between"><span>iCloud+ 200 GB</span><strong>$2.99 / month</strong></li>
                   <li className="flex justify-between"><span>Google One 100 GB</span><strong>$1.99 / month</strong></li>
                   <li className="flex justify-between"><span>Google One 200 GB</span><strong>$2.99 / month</strong></li>
                   <li className="flex justify-between"><span>Microsoft 365 (1 TB + Office)</span><strong>$6.99 / month</strong></li>
                 </ul>
-                <p className="text-xs text-muted-foreground mt-3">Prices are 2026 US rates and may change.</p>
+                <p className="text-sm text-muted-foreground mt-3">Prices are 2026 US rates and may change.</p>
               </CardContent>
             </Card>
 
             <Card>
               <CardContent className="p-6">
                 <div className="flex items-center gap-2 mb-3">
-                  <Sparkles className="h-5 w-5 text-amber-500" />
+                  <Sparkles className="h-5 w-5 text-warn-foreground" />
                   <h3 className="font-bold">When do you really need a new device?</h3>
                 </div>
-                <ul className="space-y-2 text-sm text-muted-foreground">
+                <ul className="space-y-2 text-base text-muted-foreground">
                   <li>• The device is more than 5 years old</li>
                   <li>• You cannot install the latest operating system update</li>
                   <li>• Even after cleanup, you have less than 5 GB free</li>
                   <li>• The battery no longer holds a charge for more than a couple hours</li>
                   <li>• Apps crash often or the device feels sluggish for everyday tasks</li>
                 </ul>
-                <Link to="/tools/device-age-checker" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-emerald-700 dark:text-emerald-400 hover:underline">
+                <Link to="/tools/device-age-checker" className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-success-foreground hover:underline">
                   Check your device age <ArrowRight className="h-3 w-3" />
                 </Link>
               </CardContent>
@@ -751,7 +752,7 @@ export default function StorageOptimizer() {
                   className="border rounded-lg p-5 bg-background hover:shadow-md transition group flex items-center justify-between">
               <div>
                 <h3 className="font-semibold">Tech budget planner</h3>
-                <p className="text-sm text-muted-foreground">See what your subscriptions are costing you.</p>
+                <p className="text-base text-muted-foreground">See what your subscriptions are costing you.</p>
               </div>
               <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-1 transition" />
             </Link>
@@ -759,7 +760,7 @@ export default function StorageOptimizer() {
                   className="border rounded-lg p-5 bg-background hover:shadow-md transition group flex items-center justify-between">
               <div>
                 <h3 className="font-semibold">Backup wizard</h3>
-                <p className="text-sm text-muted-foreground">Back up everything before a big cleanup.</p>
+                <p className="text-base text-muted-foreground">Back up everything before a big cleanup.</p>
               </div>
               <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:translate-x-1 transition" />
             </Link>
@@ -770,9 +771,9 @@ export default function StorageOptimizer() {
       {/* Safety note */}
       <section className="py-10">
         <div className="container max-w-3xl mx-auto px-4">
-          <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-200 dark:border-amber-900">
+          <Card className="bg-warn border-warn-foreground/25 ">
             <CardContent className="p-5 flex gap-3 items-start">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Back up first</p>
                 <p className="text-muted-foreground">
@@ -785,6 +786,7 @@ export default function StorageOptimizer() {
         </div>
       </section>
 
+      </main>
       <Footer />
     </div>
   );

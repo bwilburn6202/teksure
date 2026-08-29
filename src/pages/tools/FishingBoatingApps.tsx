@@ -32,10 +32,10 @@ export default function FishingBoatingApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function FishingBoatingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Fishing licenses</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Most states: senior discount or FREE for 65+. Check your state\'s fish & wildlife site.</li>
               <li>Lifetime senior license available in many states ($30-150 once).</li>
               <li>Fish Brain has license info per state.</li>
@@ -55,7 +55,7 @@ export default function FishingBoatingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Identifying fish</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Picture Fish</strong> — point camera at fish; get ID.</li>
               <li><strong>iNaturalist Seek</strong> — free, identifies fish + everything else.</li>
               <li><strong>FishVerify</strong> — Florida-specific, good for grouper/snapper.</li>
@@ -66,7 +66,7 @@ export default function FishingBoatingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Safety apps too</h3>
-            <p className="text-sm text-muted-foreground">USCG\'s "USCG Mobile" app — float plan, distress button. Check it BEFORE going out. Wearing PFD + sharing float plan with someone on shore = simple way to come back safely.</p>
+            <p className="text-base text-muted-foreground">USCG\'s "USCG Mobile" app — float plan, distress button. Check it BEFORE going out. Wearing PFD + sharing float plan with someone on shore = simple way to come back safely.</p>
           </CardContent>
         </Card>
       </main>

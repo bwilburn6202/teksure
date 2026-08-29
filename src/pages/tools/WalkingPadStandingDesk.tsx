@@ -28,7 +28,7 @@ export default function WalkingPadStandingDesk() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Why this matters at 60+</h2>
-            <p className="text-sm">Sitting all day is tied to higher heart disease, diabetes, and dementia risk — even if you exercise on weekends. Combining walking and standing breaks during the day adds 30-90 minutes of light movement, which independent research links to longer healthier life.</p>
+            <p className="text-base">Sitting all day is tied to higher heart disease, diabetes, and dementia risk — even if you exercise on weekends. Combining walking and standing breaks during the day adds 30-90 minutes of light movement, which independent research links to longer healthier life.</p>
           </CardContent>
         </Card>
 
@@ -38,10 +38,10 @@ export default function WalkingPadStandingDesk() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm mb-1">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base mb-1">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -50,7 +50,7 @@ export default function WalkingPadStandingDesk() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to actually use them</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Walking pad while watching TV</strong> — perfect afternoon news routine.</li>
               <li><strong>Walk during phone calls</strong> — 30-min calls = 1.5+ miles.</li>
               <li><strong>Standing desk</strong> — alternate every 30-60 min between sitting and standing. Don\'t stand all day.</li>
@@ -62,7 +62,7 @@ export default function WalkingPadStandingDesk() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don\'t buy if</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>You don\'t have a quiet, dedicated space.</li>
               <li>You won\'t actually use it daily — better to walk outside.</li>
               <li>Balance issues — talk to PT first.</li>
@@ -73,7 +73,7 @@ export default function WalkingPadStandingDesk() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">If you have a recliner — get a $400 WalkingPad and set it up in front of your TV. Walk 30 min while watching the evening news every day. Adds 1.5+ miles. Easy to maintain. Big health benefit.</p>
+            <p className="text-base text-muted-foreground">If you have a recliner — get a $400 WalkingPad and set it up in front of your TV. Walk 30 min while watching the evening news every day. Adds 1.5+ miles. Easy to maintain. Big health benefit.</p>
           </CardContent>
         </Card>
       </main>

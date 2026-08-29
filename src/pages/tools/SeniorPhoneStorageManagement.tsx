@@ -22,7 +22,7 @@ export default function SeniorPhoneStorageManagement() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Clear browser cache</h2><p>Safari: Settings → Safari → Clear History. Saves 1-3 GB.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Delete videos</h2><p>1 video = 100 photos in space. Delete old. Save space.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Recently deleted</h2><p>Photos → Recently Deleted. Empty for full reclaim of space.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Keep 1 GB free always. Phone runs faster.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Keep 1 GB free always. Phone runs faster.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

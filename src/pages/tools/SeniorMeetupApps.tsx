@@ -31,10 +31,10 @@ export default function SeniorMeetupApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function SeniorMeetupApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Local senior groups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Senior centers — every county has one. Free or low-cost.</li>
               <li>YMCA / YWCA — senior fitness classes.</li>
               <li>Library — book clubs, classes, lectures.</li>
@@ -58,7 +58,7 @@ export default function SeniorMeetupApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Showing up matters</h3>
-            <p className="text-sm text-muted-foreground">Loneliness has bigger health impact than smoking. Even 1-2 standing weekly social events transforms life satisfaction. Pick one. Show up consistently. Connections grow over months.</p>
+            <p className="text-base text-muted-foreground">Loneliness has bigger health impact than smoking. Even 1-2 standing weekly social events transforms life satisfaction. Pick one. Show up consistently. Connections grow over months.</p>
           </CardContent>
         </Card>
       </main>

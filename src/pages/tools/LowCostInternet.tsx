@@ -142,7 +142,7 @@ export default function LowCostInternet() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-cyan-500/10 rounded-full">
-                <Wifi className="h-8 w-8 text-cyan-600" />
+                <Wifi className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Low-Cost Internet Helper</h1>
@@ -155,9 +155,9 @@ export default function LowCostInternet() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Low-Cost Internet' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">A note on the Affordable Connectivity Program (ACP)</p>
                 <p className="text-muted-foreground">
@@ -185,12 +185,12 @@ export default function LowCostInternet() {
                         </div>
                       </div>
                     </div>
-                    <p className="text-sm text-muted-foreground mb-3"><strong>Who qualifies:</strong> {p.who}</p>
+                    <p className="text-base text-muted-foreground mb-3"><strong>Who qualifies:</strong> {p.who}</p>
 
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">How to sign up</p>
                     <ol className="space-y-1.5 mb-3">
                       {p.signup.map((s, i) => (
-                        <li key={i} className="flex gap-2 text-sm">
+                        <li key={i} className="flex gap-2 text-base">
                           <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                           <span>{s}</span>
                         </li>
@@ -200,7 +200,7 @@ export default function LowCostInternet() {
                     {p.notes && (
                       <ul className="space-y-1 mt-3 pt-3 border-t border-border">
                         {p.notes.map((n, i) => (
-                          <li key={i} className="text-xs text-muted-foreground flex gap-2">
+                          <li key={i} className="text-sm text-muted-foreground flex gap-2">
                             <span className="text-primary">•</span><span>{n}</span>
                           </li>
                         ))}
@@ -219,8 +219,8 @@ export default function LowCostInternet() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Other places to look</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Other places to look</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2"><span className="text-primary">•</span><span><strong>Public library Wi-Fi:</strong> often works in the parking lot too. Many libraries also lend portable hotspots for free.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span><strong>Senior centers and county Area Agency on Aging:</strong> often run free computer rooms.</span></li>
                 <li className="flex gap-2"><span className="text-primary">•</span><span><strong>EveryoneOn.org:</strong> a non-profit that finds the best low-cost program for your zip code in 2 minutes.</span></li>
@@ -232,16 +232,16 @@ export default function LowCostInternet() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/router-upgrade-helper" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Router Upgrade</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Stop renting from your ISP.</p>
+                <p className="font-medium text-base">Router Upgrade</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Stop renting from your ISP.</p>
               </Link>
               <Link to="/tools/bill-negotiator" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Bill Negotiator</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Lower an existing bill.</p>
+                <p className="font-medium text-base">Bill Negotiator</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Lower an existing bill.</p>
               </Link>
               <Link to="/tools/library-power-pack" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Library Power Pack</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Free streaming and books.</p>
+                <p className="font-medium text-base">Library Power Pack</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Free streaming and books.</p>
               </Link>
             </div>
           </div>

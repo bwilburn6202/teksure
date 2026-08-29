@@ -1858,7 +1858,7 @@ export default function KitchenTechHelper() {
                   {appliance.recipe.note && (
                     <div className="mt-4 p-4 bg-amber-100/60 dark:bg-amber-900/20 rounded-lg border border-amber-300/50">
                       <p className="text-base leading-relaxed flex gap-2">
-                        <Lightbulb className="w-5 h-5 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
+                        <Lightbulb className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                         <span><strong>Quick Tip:</strong> {appliance.recipe.note}</span>
                       </p>
                     </div>
@@ -1882,7 +1882,7 @@ export default function KitchenTechHelper() {
                 <AccordionItem key={item.title} value={`trouble-${i}`}>
                   <AccordionTrigger className="px-5 py-4 text-left text-base md:text-lg font-medium">
                     <span className="flex items-start gap-2 text-left">
-                      <AlertTriangle className="w-5 h-5 text-amber-700 dark:text-amber-400 shrink-0 mt-1" aria-hidden="true" />
+                      <AlertTriangle className="w-5 h-5 text-warn-foreground shrink-0 mt-1" aria-hidden="true" />
                       <span>{item.title}</span>
                     </span>
                   </AccordionTrigger>
@@ -1920,18 +1920,18 @@ export default function KitchenTechHelper() {
           {/* Safety */}
           <section className="container py-10 md:py-14">
             <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-              <ShieldAlert className="w-7 h-7 text-red-600 dark:text-red-400" />
+              <ShieldAlert className="w-7 h-7 text-danger-foreground " />
               Safety — what never to do
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
               Every one of these has sent someone to the ER. Read twice.
             </p>
-            <Card className="max-w-3xl bg-red-50 dark:bg-red-950/20 border-red-500/40">
+            <Card className="max-w-3xl bg-danger border-red-500/40">
               <CardContent className="p-6 space-y-3">
                 <ul className="space-y-3">
                   {appliance.safety.map((s, i) => (
                     <li key={i} className="flex gap-3 text-base md:text-lg leading-relaxed">
-                      <AlertTriangle className="w-5 h-5 text-red-700 dark:text-red-400 shrink-0 mt-0.5" />
+                      <AlertTriangle className="w-5 h-5 text-danger-foreground shrink-0 mt-0.5" />
                       <span>{s}</span>
                     </li>
                   ))}
@@ -1943,10 +1943,10 @@ export default function KitchenTechHelper() {
           {/* Subscription warning */}
           {appliance.subscriptionWarning && (
             <section className="container pb-10 md:pb-14">
-              <Card className="max-w-3xl bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+              <Card className="max-w-3xl bg-warn border-amber-500/40">
                 <CardContent className="p-6 space-y-3">
                   <h3 className="text-xl font-semibold flex items-center gap-2">
-                    <DollarSign className="w-6 h-6 text-amber-700 dark:text-amber-400" />
+                    <DollarSign className="w-6 h-6 text-warn-foreground " />
                     Watch for auto-renewing subscriptions
                   </h3>
                   <p className="text-base md:text-lg leading-relaxed">{appliance.subscriptionWarning}</p>
@@ -1990,18 +1990,18 @@ export default function KitchenTechHelper() {
               />
             </div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="p-2 rounded-lg bg-orange-500/20 text-orange-700 dark:text-orange-300">
+              <div className="p-2 rounded-lg bg-orange-500/20 text-warn-foreground ">
                 <ChefHat className="w-5 h-5" />
               </div>
               <Badge variant="outline" className="text-xs">Everyday Tech · Setup &amp; Daily Use</Badge>
             </div>
             <div className="flex items-center gap-4 mb-3">
-              <UtensilsCrossed className="w-10 h-10 md:w-14 md:h-14 text-rose-700 dark:text-rose-300 shrink-0" aria-hidden="true" />
+              <UtensilsCrossed className="w-10 h-10 md:w-14 md:h-14 text-danger-foreground shrink-0" aria-hidden="true" />
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold pr-14">
                 Kitchen Gadgets — Without the Manual
               </h1>
             </div>
-            <p className="text-lg md:text-2xl text-slate-700 dark:text-slate-300 max-w-3xl leading-relaxed">
+            <p className="text-lg md:text-2xl text-foreground max-w-3xl leading-relaxed">
               Unbox, set up, and actually use your kitchen tech — no 60-page manual required.
             </p>
 
@@ -2090,7 +2090,7 @@ export default function KitchenTechHelper() {
               <ul className="space-y-2.5">
                 {FOOD_SCALE_TIPS.map((t, i) => (
                   <li key={i} className="flex gap-3 text-base md:text-lg leading-relaxed">
-                    <CheckCircle2 className="w-5 h-5 text-green-700 dark:text-green-400 shrink-0 mt-1" />
+                    <CheckCircle2 className="w-5 h-5 text-success-foreground shrink-0 mt-1" />
                     <span>{t}</span>
                   </li>
                 ))}
@@ -2161,7 +2161,7 @@ export default function KitchenTechHelper() {
         <section className="border-t border-border bg-muted/30">
           <div className="container py-10 md:py-14">
             <h2 className="text-2xl md:text-3xl font-semibold mb-3 flex items-center gap-3">
-              <ShieldAlert className="w-7 h-7 text-amber-700 dark:text-amber-400" />
+              <ShieldAlert className="w-7 h-7 text-warn-foreground " />
               Smart appliance warnings — the honest truth
             </h2>
             <p className="text-base md:text-lg text-muted-foreground mb-6 max-w-3xl leading-relaxed">
@@ -2173,7 +2173,7 @@ export default function KitchenTechHelper() {
                 return (
                   <Card key={w.title}>
                     <CardContent className="p-5 flex gap-3 items-start">
-                      <Icon className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0 mt-1" />
+                      <Icon className="w-6 h-6 text-warn-foreground shrink-0 mt-1" />
                       <div>
                         <h3 className="font-semibold text-lg mb-1">{w.title}</h3>
                         <p className="text-base leading-relaxed text-muted-foreground">{w.body}</p>

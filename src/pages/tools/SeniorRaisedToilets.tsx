@@ -22,7 +22,7 @@ export default function SeniorRaisedToilets() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Medicare</h2><p>Often covers raised seats with doctor prescription.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">After hip surgery</h2><p>Required for 6 weeks. Doctor sends prescription.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Easy clean</h2><p>Removes for cleaning. Most are dishwasher-safe.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Toilet falls are common. $30 raised seat prevents most.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Toilet falls are common. $30 raised seat prevents most.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

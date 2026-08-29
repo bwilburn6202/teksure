@@ -22,7 +22,7 @@ export default function SeniorTabletAccessibility() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Speak Selection</h2><p>Highlight any text. Tap Speak. iPad reads it aloud.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Display Zoom</h2><p>Settings → Display → Zoomed. Everything bigger.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">VoiceOver</h2><p>Full screen reader. Steeper learning curve. Worth it for low vision.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Triple-click side button → Magnifier. Instant magnifying glass.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Triple-click side button → Magnifier. Instant magnifying glass.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

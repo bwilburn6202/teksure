@@ -184,7 +184,7 @@ export default function ScamIqTest() {
               <div className={`text-6xl font-bold mb-2 ${g.color}`}>{percent}%</div>
               <Badge className="text-base px-4 py-1">{g.grade}</Badge>
               <p className="text-muted-foreground mt-4 leading-relaxed">{g.message}</p>
-              <p className="text-sm text-muted-foreground mt-2">
+              <p className="text-base text-muted-foreground mt-2">
                 You got <strong>{correct} of {QUESTIONS.length}</strong> correct.
               </p>
             </div>
@@ -199,13 +199,13 @@ export default function ScamIqTest() {
                     <Card key={q.id} className={correct ? 'border-green-600/40' : 'border-red-600/40'}>
                       <CardContent className="p-4">
                         <div className="flex items-start gap-2">
-                          {correct ? <CheckCircle className="w-5 h-5 text-green-600 shrink-0 mt-0.5" /> : <XCircle className="w-5 h-5 text-red-600 shrink-0 mt-0.5" />}
+                          {correct ? <CheckCircle className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" /> : <XCircle className="w-5 h-5 text-danger-foreground shrink-0 mt-0.5" />}
                           <div>
                             <div className="flex items-center gap-2 mb-1 flex-wrap">
                               <Badge variant="outline" className="text-xs">#{i + 1}</Badge>
                               <h4 className="font-semibold text-sm">{q.scenario}</h4>
                             </div>
-                            <p className="text-xs text-muted-foreground">
+                            <p className="text-sm text-muted-foreground">
                               You said it was <strong>{userAns ? 'a scam' : 'legitimate'}</strong>. It was <strong>{q.isScam ? 'a scam' : 'legitimate'}</strong>.
                             </p>
                           </div>
@@ -279,11 +279,11 @@ export default function ScamIqTest() {
                 <h3 className="font-semibold mb-3">Is this a scam or legitimate?</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <Button size="lg" variant="outline" onClick={() => handleAnswer(true)} className="h-20 text-base">
-                    <ShieldAlert className="w-5 h-5 mr-2 text-red-600" />
+                    <ShieldAlert className="w-5 h-5 mr-2 text-danger-foreground" />
                     It's a SCAM
                   </Button>
                   <Button size="lg" variant="outline" onClick={() => handleAnswer(false)} className="h-20 text-base">
-                    <CheckCircle className="w-5 h-5 mr-2 text-green-600" />
+                    <CheckCircle className="w-5 h-5 mr-2 text-success-foreground" />
                     It's LEGITIMATE
                   </Button>
                 </div>
@@ -293,23 +293,23 @@ export default function ScamIqTest() {
                 <Card className={wasCorrect ? 'border-green-600/40 bg-green-50/50 dark:bg-green-950/20' : 'border-red-600/40 bg-red-50/50 dark:bg-red-950/20'}>
                   <CardContent className="p-5">
                     <div className="flex items-center gap-2 mb-3">
-                      {wasCorrect ? <CheckCircle className="w-6 h-6 text-green-600" /> : <XCircle className="w-6 h-6 text-red-600" />}
+                      {wasCorrect ? <CheckCircle className="w-6 h-6 text-success-foreground" /> : <XCircle className="w-6 h-6 text-danger-foreground" />}
                       <h3 className="text-xl font-bold">
                         {wasCorrect ? 'Correct!' : 'Not quite.'}
                       </h3>
                     </div>
-                    <p className="text-sm mb-4 font-medium">
+                    <p className="text-base mb-4 font-medium">
                       The answer: <strong>{currentQ.isScam ? 'This IS a scam.' : 'This is legitimate.'}</strong>
                     </p>
-                    <p className="text-sm leading-relaxed mb-4">{currentQ.explanation}</p>
+                    <p className="text-base leading-relaxed mb-4">{currentQ.explanation}</p>
 
                     {currentQ.redFlags.length > 0 && (
                       <div>
                         <h4 className="font-semibold text-sm mb-2">Red flags:</h4>
                         <ul className="space-y-1">
                           {currentQ.redFlags.map((f, i) => (
-                            <li key={i} className="text-sm flex gap-2">
-                              <span className="text-red-600 mt-0.5">•</span>
+                            <li key={i} className="text-base flex gap-2">
+                              <span className="text-danger-foreground mt-0.5">•</span>
                               <span>{f}</span>
                             </li>
                           ))}

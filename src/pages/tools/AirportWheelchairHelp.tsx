@@ -19,7 +19,7 @@ export default function AirportWheelchairHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When to request</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Tire easily walking long distances.</li>
               <li>Knee/hip/back issues.</li>
               <li>Heart or breathing condition.</li>
@@ -33,7 +33,7 @@ export default function AirportWheelchairHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to request</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>When booking — &quot;Special assistance&quot; checkbox.</li>
               <li>Or call airline 48 hrs before flight.</li>
               <li>Or at airport check-in counter.</li>
@@ -47,7 +47,7 @@ export default function AirportWheelchairHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What to expect</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Attendant pushes you through airport.</li>
               <li>Goes through security express line.</li>
               <li>Boards before everyone (early board).</li>
@@ -62,7 +62,7 @@ export default function AirportWheelchairHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior travel tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>TSA PreCheck</strong> — keep shoes on, faster line. $78 for 5 yrs.</li>
               <li><strong>TSA Cares</strong> — call 855-787-2227 for medical assistance.</li>
               <li><strong>Family bathroom</strong> at most airports.</li>
@@ -76,7 +76,7 @@ export default function AirportWheelchairHelp() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Bringing your own wheelchair</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Wheelchair flies FREE — never count toward bags.</li>
               <li>Powered chair — ground crew handles batteries.</li>
               <li>Tag chair before gate-check.</li>
@@ -90,7 +90,7 @@ export default function AirportWheelchairHelp() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Cruise + train</h3>
-            <p className="text-sm text-muted-foreground"><strong>Cruises</strong> — accessible cabins fill fast. Book early. Cruise lines provide wheelchair assistance free. <strong>Amtrak</strong> — accessible bedrooms. Senior 65+ discount 10% on most fares. Plan for slower boarding/disembark.</p>
+            <p className="text-base text-muted-foreground"><strong>Cruises</strong> — accessible cabins fill fast. Book early. Cruise lines provide wheelchair assistance free. <strong>Amtrak</strong> — accessible bedrooms. Senior 65+ discount 10% on most fares. Plan for slower boarding/disembark.</p>
           </CardContent>
         </Card>
       </main>

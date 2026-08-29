@@ -22,7 +22,7 @@ export default function SeniorOnlineGroceryBasics() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Amazon Fresh / Whole Foods</h2><p>Free delivery for Prime in many cities.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Use SNAP/EBT</h2><p>Walmart, Amazon, and Instacart accept EBT cards online for groceries.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Tip the shopper</h2><p>$5-$10 standard. They pick fresh produce more carefully when tipped.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pickup is often free — drive up, they load your trunk. No tipping.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pickup is often free — drive up, they load your trunk. No tipping.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

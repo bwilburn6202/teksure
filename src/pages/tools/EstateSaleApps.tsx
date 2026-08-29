@@ -19,7 +19,7 @@ export default function EstateSaleApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">EstateSales.net</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free app + website.</li>
               <li>Find estate sales by zip.</li>
               <li>Photos of items in sale.</li>
@@ -33,7 +33,7 @@ export default function EstateSaleApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Hire estate sale company</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>For downsizing or after parent passes.</li>
               <li>Companies handle everything.</li>
               <li>30-50% commission typical.</li>
@@ -47,7 +47,7 @@ export default function EstateSaleApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Run your own sale</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Cheaper but more work.</li>
               <li>Photograph + price all items.</li>
               <li>Advertise on EstateSales.net (small fee).</li>
@@ -61,7 +61,7 @@ export default function EstateSaleApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online auctions</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>EBTH (Everything But The House).</li>
               <li>MaxSold - online estate auctions.</li>
               <li>Pickup-only auctions.</li>
@@ -75,7 +75,7 @@ export default function EstateSaleApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior shopping at sales</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Best deals last day of sale.</li>
               <li>First day for best selection.</li>
               <li>Cash for power.</li>
@@ -89,7 +89,7 @@ export default function EstateSaleApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior downsizing tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Start 6 months before move.</li>
               <li>Family member as project manager.</li>
               <li>Photograph everything for memory.</li>
@@ -103,7 +103,7 @@ export default function EstateSaleApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Hire pros for big sales</h3>
-            <p className="text-sm text-muted-foreground">When downsizing or settling parent&apos;s estate with thousands of items, hire an estate sale company. The 30-40% commission saves weeks of your time. They price, advertise, run the sale, and clean out unsold items. For smaller sales (one room of stuff), DIY via Facebook Marketplace works fine. Match the tool to scale.</p>
+            <p className="text-base text-muted-foreground">When downsizing or settling parent&apos;s estate with thousands of items, hire an estate sale company. The 30-40% commission saves weeks of your time. They price, advertise, run the sale, and clean out unsold items. For smaller sales (one room of stuff), DIY via Facebook Marketplace works fine. Match the tool to scale.</p>
           </CardContent>
         </Card>
       </main>

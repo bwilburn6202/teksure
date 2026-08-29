@@ -248,7 +248,7 @@ export default function VeteranTechBenefits() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <Shield className="h-8 w-8 text-blue-600" />
+                <Shield className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Veteran Tech Benefits</h1>
@@ -261,18 +261,18 @@ export default function VeteranTechBenefits() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'Veteran Tech Benefits' }]} />
 
-          <Card className="border-red-300 bg-red-50 dark:bg-red-950/20 mb-6">
+          <Card className="border-danger-foreground/25 bg-danger mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-red-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-danger-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch out for VA scam calls</p>
                 <p className="text-muted-foreground mb-2">
                   Scammers target veterans with fake "VA refund" calls, fake claim-help fees, and pretend pension increases. The real VA will <strong>never</strong> call to demand a payment, gift cards, or your bank login to release a refund.
                 </p>
                 <ul className="text-muted-foreground space-y-1">
-                  <li className="flex gap-2"><span className="text-red-600">•</span><span>Hang up on anyone claiming to be from "VA Refund Department" — that office does not exist.</span></li>
-                  <li className="flex gap-2"><span className="text-red-600">•</span><span>Never pay a "claim filing fee" — VSOs (DAV, VFW, American Legion) help file claims for free.</span></li>
-                  <li className="flex gap-2"><span className="text-red-600">•</span><span>Report scam calls to the VA Office of Inspector General at 1-800-488-8244 or to the FTC at ReportFraud.ftc.gov.</span></li>
+                  <li className="flex gap-2"><span className="text-danger-foreground">•</span><span>Hang up on anyone claiming to be from "VA Refund Department" — that office does not exist.</span></li>
+                  <li className="flex gap-2"><span className="text-danger-foreground">•</span><span>Never pay a "claim filing fee" — VSOs (DAV, VFW, American Legion) help file claims for free.</span></li>
+                  <li className="flex gap-2"><span className="text-danger-foreground">•</span><span>Report scam calls to the VA Office of Inspector General at 1-800-488-8244 or to the FTC at ReportFraud.ftc.gov.</span></li>
                 </ul>
               </div>
             </CardContent>
@@ -297,17 +297,17 @@ export default function VeteranTechBenefits() {
                       </div>
                     </div>
 
-                    <p className="text-sm text-muted-foreground mb-2">
+                    <p className="text-base text-muted-foreground mb-2">
                       <strong>Who qualifies:</strong> {b.who}
                     </p>
-                    <p className="text-sm text-muted-foreground mb-3">
+                    <p className="text-base text-muted-foreground mb-3">
                       <strong>What it provides:</strong> {b.provides}
                     </p>
 
                     <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">How to apply</p>
                     <ol className="space-y-1.5 mb-3">
                       {b.apply.map((s, i) => (
-                        <li key={i} className="flex gap-2 text-sm">
+                        <li key={i} className="flex gap-2 text-base">
                           <span className="text-primary font-semibold shrink-0">{i + 1}.</span>
                           <span>{s}</span>
                         </li>
@@ -317,7 +317,7 @@ export default function VeteranTechBenefits() {
                     {b.notes && (
                       <ul className="space-y-1 mt-3 pt-3 border-t border-border">
                         {b.notes.map((n, i) => (
-                          <li key={i} className="text-xs text-muted-foreground flex gap-2">
+                          <li key={i} className="text-sm text-muted-foreground flex gap-2">
                             <span className="text-primary">•</span><span>{n}</span>
                           </li>
                         ))}
@@ -340,8 +340,8 @@ export default function VeteranTechBenefits() {
 
           <Card className="border-border bg-muted/30 mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-2">Other places to check</p>
-              <ul className="space-y-1.5 text-xs text-muted-foreground">
+              <p className="text-base font-semibold mb-2">Other places to check</p>
+              <ul className="space-y-1.5 text-sm text-muted-foreground">
                 <li className="flex gap-2">
                   <span className="text-primary">•</span>
                   <span><strong>Veterans Service Officers (VSOs):</strong> DAV, VFW, and American Legion file claims for you at no cost. Find one at va.gov/ogc/apps/accreditation.</span>
@@ -365,28 +365,28 @@ export default function VeteranTechBenefits() {
                 to="/tools/government-benefits-portal"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
-                <p className="font-medium text-sm flex items-center gap-1">
+                <p className="font-medium text-base flex items-center gap-1">
                   Benefits Portal <ChevronRight className="h-3 w-3" />
                 </p>
-                <p className="text-xs text-muted-foreground mt-0.5">All government benefits in one place.</p>
+                <p className="text-sm text-muted-foreground mt-0.5">All government benefits in one place.</p>
               </Link>
               <Link
                 to="/tools/free-resources"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
-                <p className="font-medium text-sm flex items-center gap-1">
+                <p className="font-medium text-base flex items-center gap-1">
                   Free Resources <ChevronRight className="h-3 w-3" />
                 </p>
-                <p className="text-xs text-muted-foreground mt-0.5">Free tech programs and tools.</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Free tech programs and tools.</p>
               </Link>
               <Link
                 to="/tools/scam-message-decoder"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
-                <p className="font-medium text-sm flex items-center gap-1">
+                <p className="font-medium text-base flex items-center gap-1">
                   Scam Decoder <ChevronRight className="h-3 w-3" />
                 </p>
-                <p className="text-xs text-muted-foreground mt-0.5">Spot fake calls and texts.</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Spot fake calls and texts.</p>
               </Link>
             </div>
           </div>

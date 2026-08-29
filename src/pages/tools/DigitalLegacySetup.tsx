@@ -22,7 +22,7 @@ export default function DigitalLegacySetup() {
               <Heart className="w-6 h-6 text-primary shrink-0" />
               <div>
                 <h2 className="font-bold mb-1">Why this matters</h2>
-                <p className="text-sm">When someone dies, their photos, emails, and Facebook posts often get locked behind passwords no one knows. Apple, Google, and Facebook now let you pre-name a "legacy contact" — a family member who can access (or memorialize) your accounts after you're gone.</p>
+                <p className="text-base">When someone dies, their photos, emails, and Facebook posts often get locked behind passwords no one knows. Apple, Google, and Facebook now let you pre-name a "legacy contact" — a family member who can access (or memorialize) your accounts after you're gone.</p>
               </div>
             </div>
           </CardContent>
@@ -31,8 +31,8 @@ export default function DigitalLegacySetup() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Apple Legacy Contact</h2>
-            <p className="text-sm mb-3">Lets a family member access your iCloud photos, notes, contacts, and messages after you pass.</p>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <p className="text-base mb-3">Lets a family member access your iCloud photos, notes, contacts, and messages after you pass.</p>
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>On iPhone: Settings → tap your name at top → <strong>Sign-In & Security</strong>.</li>
               <li>Tap <strong>Legacy Contact</strong>.</li>
               <li>Tap <strong>Add Legacy Contact</strong> → pick a person from your contacts (must have an Apple ID).</li>
@@ -40,15 +40,15 @@ export default function DigitalLegacySetup() {
               <li>Print a backup of the access key and tell your family where to find it (with your will, ideally).</li>
               <li>Pick more than one contact if you can.</li>
             </ol>
-            <p className="text-sm mt-3">After you pass, that person uses the access key + a death certificate at Apple's website to unlock your account.</p>
+            <p className="text-base mt-3">After you pass, that person uses the access key + a death certificate at Apple's website to unlock your account.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Google Inactive Account Manager</h2>
-            <p className="text-sm mb-3">Tells Google what to do if you don't sign in for a chosen length of time (3, 6, 12, or 18 months).</p>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <p className="text-base mb-3">Tells Google what to do if you don't sign in for a chosen length of time (3, 6, 12, or 18 months).</p>
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Go to <a href="https://myaccount.google.com/inactive" target="_blank" rel="noopener noreferrer" className="text-primary underline">myaccount.google.com/inactive</a>.</li>
               <li>Sign in. Click "Start".</li>
               <li>Choose how long Google should wait before considering you inactive (most people pick 12 months).</li>
@@ -58,27 +58,27 @@ export default function DigitalLegacySetup() {
               <li>Decide if you want Google to delete the account after this — many people leave that off.</li>
               <li>Save.</li>
             </ol>
-            <p className="text-sm mt-3">If you don't sign in for the period you chose, Google emails your contacts with a download link.</p>
+            <p className="text-base mt-3">If you don't sign in for the period you chose, Google emails your contacts with a download link.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Facebook Legacy Contact</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Open Facebook → tap your photo → <strong>Settings & privacy</strong> → <strong>Settings</strong>.</li>
               <li>Search for "Legacy Contact" or find it under Personal and account information.</li>
               <li>Pick one Facebook friend to manage your memorialized account.</li>
               <li>Choose if they can download a copy of your data and posts.</li>
             </ol>
-            <p className="text-sm mt-3">After you pass, your account is "memorialized" — friends can post tributes, but no one can log in. Your legacy contact can pin a final post and update your photo.</p>
+            <p className="text-base mt-3">After you pass, your account is "memorialized" — friends can post tributes, but no one can log in. Your legacy contact can pin a final post and update your photo.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3"> Other accounts to think about</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>Password manager</strong> — most (1Password, Bitwarden) have an "Emergency Access" feature where one designated family member can request access after a waiting period.</li>
               <li><strong>Bank, brokerage, retirement</strong> — make sure each has a beneficiary listed. Login info goes in your will or a sealed envelope with your attorney.</li>
               <li><strong>Email-based two-factor</strong> — make sure your legacy contact will be able to access your phone number and primary email, or two-factor will lock them out.</li>
@@ -91,7 +91,7 @@ export default function DigitalLegacySetup() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Don't forget the paper</h3>
-            <p className="text-sm text-muted-foreground">Write down your phone passcode, computer password, and the names of the people you've set up as legacy contacts. Put it in a sealed envelope with your will, or somewhere your spouse and adult children know to look. Update once a year.</p>
+            <p className="text-base text-muted-foreground">Write down your phone passcode, computer password, and the names of the people you've set up as legacy contacts. Put it in a sealed envelope with your will, or somewhere your spouse and adult children know to look. Update once a year.</p>
           </CardContent>
         </Card>
       </main>

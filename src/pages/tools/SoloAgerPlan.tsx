@@ -40,15 +40,15 @@ export default function SoloAgerPlan() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead title="Solo Ager Plan Worksheet | TekSure" description="A planning worksheet for aging without close family. Map your healthcare proxy, daily check-in person, key contacts, and what happens if anything goes wrong." />
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <Users className="h-7 w-7 text-indigo-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Solo Ager Plan</h1>
+            <Users className="h-7 w-7 text-primary" />
+            <h1 className="text-3xl font-bold text-foreground">Solo Ager Plan</h1>
           </div>
-          <p className="text-gray-600 text-lg">For older adults aging without a spouse, children, or close family. Build your chosen support circle one row at a time.</p>
+          <p className="text-muted-foreground text-lg">For older adults aging without a spouse, children, or close family. Build your chosen support circle one row at a time.</p>
         </div>
 
         <Card className="mb-4">
@@ -70,12 +70,12 @@ export default function SoloAgerPlan() {
 
         <Card className="mb-4">
           <CardContent className="py-4 px-4">
-            <h2 className="text-xl font-bold text-gray-900 mb-3">Your support circle</h2>
+            <h2 className="text-xl font-bold text-foreground mb-3">Your support circle</h2>
             <div className="space-y-3">
               {contacts.map((c, i) => (
-                <div key={i} className="border border-gray-200 rounded-lg p-3 bg-white">
-                  <p className="text-sm font-semibold text-gray-700">{c.role}</p>
-                  {c.note && <p className="text-xs text-gray-500 italic">{c.note}</p>}
+                <div key={i} className="border border-border rounded-lg p-3 bg-card">
+                  <p className="text-base font-semibold text-foreground">{c.role}</p>
+                  {c.note && <p className="text-sm text-muted-foreground italic">{c.note}</p>}
                   <div className="grid grid-cols-2 gap-2 mt-2">
                     <Input value={c.name} onChange={e => updateContact(i, "name", e.target.value)} placeholder="Name" />
                     <Input value={c.phone} onChange={e => updateContact(i, "phone", e.target.value)} placeholder="Phone" />
@@ -89,22 +89,22 @@ export default function SoloAgerPlan() {
         <Card className="mb-4">
           <CardContent className="py-4 px-4">
             <label className="text-base font-medium">Where your important documents are kept</label>
-            <p className="text-xs text-gray-500">Will, advance directive, financial POA, deed, insurance policies, passport, etc.</p>
-            <textarea value={docNotes} onChange={e => setDocNotes(e.target.value)} rows={3} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white" placeholder="In the green file box on the top shelf of the bedroom closet. Spare set with attorney Jane Doe." />
+            <p className="text-sm text-muted-foreground">Will, advance directive, financial POA, deed, insurance policies, passport, etc.</p>
+            <textarea value={docNotes} onChange={e => setDocNotes(e.target.value)} rows={3} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card" placeholder="In the green file box on the top shelf of the bedroom closet. Spare set with attorney Jane Doe." />
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="py-4 px-4">
             <label className="text-base font-medium">Personal wishes and instructions</label>
-            <p className="text-xs text-gray-500">Funeral preferences, who gets what, pets, favorite music, anything that matters to you.</p>
-            <textarea value={wishes} onChange={e => setWishes(e.target.value)} rows={4} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white" />
+            <p className="text-sm text-muted-foreground">Funeral preferences, who gets what, pets, favorite music, anything that matters to you.</p>
+            <textarea value={wishes} onChange={e => setWishes(e.target.value)} rows={4} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card" />
           </CardContent>
         </Card>
 
-        <Card className="mb-4 bg-indigo-50 border-indigo-200">
+        <Card className="mb-4 bg-primary/10 border-primary/25">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-indigo-900"><span className="font-semibold">Where to keep this plan:</span> Print three copies. Keep one in your home file. Give one to your primary healthcare proxy. Give one to your attorney or geriatric care manager. Update once a year.</p>
+            <p className="text-base text-primary"><span className="font-semibold">Where to keep this plan:</span> Print three copies. Keep one in your home file. Give one to your primary healthcare proxy. Give one to your attorney or geriatric care manager. Update once a year.</p>
           </CardContent>
         </Card>
 
@@ -114,6 +114,6 @@ export default function SoloAgerPlan() {
           </Button>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

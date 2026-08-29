@@ -4014,7 +4014,7 @@ function ToolCard({ tool, highlight }: { tool: Tool; highlight?: boolean }) {
           >
             {tool.difficulty}
           </span>
-          <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
+          <span className="inline-flex items-center gap-1 text-sm text-muted-foreground">
             <Clock className="h-3.5 w-3.5" aria-hidden="true" />
             {tool.time}
           </span>
@@ -4196,7 +4196,7 @@ export default function Tools() {
                       <Sparkles className="h-5 w-5 text-primary" aria-hidden="true" />
                       <h2 id="featured-heading" className="text-2xl font-bold">Featured tools</h2>
                     </div>
-                    <p className="text-sm text-muted-foreground">Start here if you're new</p>
+                    <p className="text-base text-muted-foreground">Start here if you're new</p>
                   </div>
                   <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     {featuredTools.map(tool => (
@@ -4213,7 +4213,7 @@ export default function Tools() {
                       <span className="text-xl" aria-hidden="true"></span>
                       <h2 id="new-heading" className="text-2xl font-bold">New this month</h2>
                     </div>
-                    <p className="text-sm text-muted-foreground">Fresh in April 2026</p>
+                    <p className="text-base text-muted-foreground">Fresh in April 2026</p>
                   </div>
                   <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                     {newTools.map(tool => (
@@ -4228,7 +4228,7 @@ export default function Tools() {
           {/* ── Result count / results ──────────────── */}
           <section aria-live="polite" aria-atomic="true">
             {!isDefaultView && (
-              <p className="text-sm text-muted-foreground mb-6">
+              <p className="text-base text-muted-foreground mb-6">
                 Showing {filtered.length} tool{filtered.length !== 1 ? 's' : ''}
                 {search.trim() && <> matching "<span className="font-medium text-foreground">{search}</span>"</>}
                 {activeCategory !== 'All' && <> in {activeCategory}</>}
@@ -4239,7 +4239,7 @@ export default function Tools() {
               <div className="text-center py-20 border border-dashed rounded-2xl">
                 <p className="text-4xl mb-3" aria-hidden="true"></p>
                 <p className="text-lg font-semibold mb-1">No tools match that search</p>
-                <p className="text-sm text-muted-foreground mb-6 max-w-sm mx-auto">
+                <p className="text-base text-muted-foreground mb-6 max-w-sm mx-auto">
                   Try a different word, pick another category, or ask TekBrain in plain English.
                 </p>
                 <div className="flex gap-2 justify-center flex-wrap">

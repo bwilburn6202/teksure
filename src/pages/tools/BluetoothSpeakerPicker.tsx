@@ -32,10 +32,10 @@ export default function BluetoothSpeakerPicker() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{p.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{p.price}</span>
+                  <span className="text-base font-semibold text-primary">{p.price}</span>
                 </div>
-                <p className="text-sm">{p.best}</p>
-                <p className="text-sm text-muted-foreground">{p.good}</p>
+                <p className="text-base">{p.best}</p>
+                <p className="text-base text-muted-foreground">{p.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function BluetoothSpeakerPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Use cases</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Pool / patio</strong> → waterproof JBL or UE.</li>
               <li><strong>Kitchen radio</strong> → Echo Dot or HomePod Mini.</li>
               <li><strong>Multi-room music</strong> → Sonos system.</li>
@@ -57,7 +57,7 @@ export default function BluetoothSpeakerPicker() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Pair to phone (any speaker)</h2>
-            <ol className="list-decimal pl-5 space-y-1 text-sm">
+            <ol className="list-decimal pl-5 space-y-1 text-base">
               <li>Turn ON the speaker. Press the Bluetooth button (looks like a ⑂).</li>
               <li>On phone: Settings → Bluetooth → ON.</li>
               <li>Speaker name appears in list. Tap it.</li>
@@ -69,7 +69,7 @@ export default function BluetoothSpeakerPicker() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For party hosts</h3>
-            <p className="text-sm text-muted-foreground">Many JBL and Sonos speakers can pair to EACH OTHER for stereo or whole-house. Read the manual on "Stereo Pair" or "PartyConnect" feature.</p>
+            <p className="text-base text-muted-foreground">Many JBL and Sonos speakers can pair to EACH OTHER for stereo or whole-house. Read the manual on "Stereo Pair" or "PartyConnect" feature.</p>
           </CardContent>
         </Card>
       </main>

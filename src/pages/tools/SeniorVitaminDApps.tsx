@@ -22,7 +22,7 @@ export default function SeniorVitaminDApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sun helps</h2><p>15 minutes daily, hands and arms exposed. Supplement if can&apos;t.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Food sources</h2><p>Salmon, sardines, fortified milk. Hard to get enough from food alone.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Real benefits</h2><p>Stronger bones. Better immune. Improved mood. Reduces falls.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: $10/year supplement covers most senior Vitamin D needs.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: $10/year supplement covers most senior Vitamin D needs.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

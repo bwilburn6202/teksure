@@ -22,7 +22,7 @@ export default function SeniorPeakBrain() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Coach mode</h2><p>Premium. Detailed insights and progress tracking.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior accessibility</h2><p>Adjustable text size. Color-blind friendly. Larger touch targets.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cambridge research</h2><p>Used in University of Cambridge cognitive studies.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Play with grandkids. Many games feel like fun, not training.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Play with grandkids. Many games feel like fun, not training.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

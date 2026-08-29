@@ -22,7 +22,7 @@ export default function SeniorSewingApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">YouTube</h2><p>FREE. Search &ldquo;sewing for seniors.&rdquo; Sewing With Nancy is excellent.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Smart sewing machines</h2><p>Brother Disney machines have built-in tutorials. Easier learning.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sell crafts</h2><p>Pair with Etsy app to sell handmade. Hobby that pays.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Senior centers often have free sewing groups. Skill share + community.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Senior centers often have free sewing groups. Skill share + community.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -32,10 +32,10 @@ export default function RvCampingApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -44,7 +44,7 @@ export default function RvCampingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free overnight options (worth knowing)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Walmart parking lot</strong> — call store first; many allow overnight RVs.</li>
               <li><strong>Cracker Barrel</strong> — most allow RV overnight if you eat there.</li>
               <li><strong>Cabela\'s, Bass Pro Shops</strong> — many accept overnight RVers.</li>
@@ -57,7 +57,7 @@ export default function RvCampingApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior-specific perks</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li><strong>America the Beautiful Senior Pass</strong> — $80 lifetime, 50% off federal campgrounds plus free park entry.</li>
               <li><strong>Good Sam Club</strong> — 10% discount at thousands of campgrounds. $35/year membership pays for itself in a few nights.</li>
               <li><strong>Passport America</strong> — 50% off at participating private campgrounds. $44/year.</li>
@@ -69,7 +69,7 @@ export default function RvCampingApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip</h3>
-            <p className="text-sm text-muted-foreground">Start with <strong>Campendium (free)</strong> to read reviews. Use <strong>RV LIFE Trip Wizard</strong> if your rig is bigger than 25 feet — it\'s saved many an RV from a destroyed roof on a low overpass.</p>
+            <p className="text-base text-muted-foreground">Start with <strong>Campendium (free)</strong> to read reviews. Use <strong>RV LIFE Trip Wizard</strong> if your rig is bigger than 25 feet — it\'s saved many an RV from a destroyed roof on a low overpass.</p>
           </CardContent>
         </Card>
       </main>

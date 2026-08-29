@@ -158,7 +158,7 @@ export default function PracticeHub() {
           <Card className="border-border mb-6">
             <CardContent className="p-6">
               <h2 className="text-xl font-bold mb-3">How it works</h2>
-              <ol className="space-y-3 text-sm text-muted-foreground list-decimal pl-5">
+              <ol className="space-y-3 text-base text-muted-foreground list-decimal pl-5">
                 <li>
                   Each scenario is a fake email, call, or text. Some are scams. Some are real.
                 </li>
@@ -252,7 +252,7 @@ function RoomCard({
         <ArrowRight className="h-5 w-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-0.5 transition-all" />
       </div>
       <h3 className="text-xl font-bold mb-1">{title}</h3>
-      <p className="text-sm text-muted-foreground mb-4">{tagline}</p>
+      <p className="text-base text-muted-foreground mb-4">{tagline}</p>
 
       {stats ? (
         <div className="flex items-center gap-4 text-xs text-muted-foreground border-t border-border/60 pt-3">
@@ -263,14 +263,14 @@ function RoomCard({
             <strong className="text-foreground">{stats.accuracy}%</strong> accuracy
           </span>
           {stats.currentStreak > 0 && (
-            <span className="ml-auto inline-flex items-center gap-1 text-orange-600 dark:text-orange-400">
+            <span className="ml-auto inline-flex items-center gap-1 text-warn-foreground ">
               <Flame className="h-3.5 w-3.5" />
               {stats.currentStreak} streak
             </span>
           )}
         </div>
       ) : (
-        <p className="text-xs text-muted-foreground border-t border-border/60 pt-3">
+        <p className="text-sm text-muted-foreground border-t border-border/60 pt-3">
           New — start your first round
         </p>
       )}

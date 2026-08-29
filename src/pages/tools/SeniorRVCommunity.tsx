@@ -19,7 +19,7 @@ export default function SeniorRVCommunity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Escapees RV Club</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>$50/year membership.</li>
               <li>Largest club for full-time RVers.</li>
               <li>Mail forwarding service.</li>
@@ -33,7 +33,7 @@ export default function SeniorRVCommunity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Online forums</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iRV2 Forums — largest RV discussion.</li>
               <li>RV.net — Good Sam community.</li>
               <li>Reddit r/GoRVing — active community.</li>
@@ -47,7 +47,7 @@ export default function SeniorRVCommunity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RV rallies + meetups</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>RV brand owner rallies (Tiffin, Newmar, Airstream).</li>
               <li>Quartzsite, Arizona winter gatherings.</li>
               <li>Escapade — Escapees annual rally.</li>
@@ -61,7 +61,7 @@ export default function SeniorRVCommunity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Solo senior RVers</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>RVing Women — women&apos;s RV club.</li>
               <li>Wandering Individuals Network — solo group.</li>
               <li>Loners on Wheels — singles RV club.</li>
@@ -75,7 +75,7 @@ export default function SeniorRVCommunity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">RV blogs + YouTube</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>RVgeeks — couple sharing tips.</li>
               <li>Long Long Honeymoon — popular YT.</li>
               <li>Less Junk More Journey — family RV.</li>
@@ -89,7 +89,7 @@ export default function SeniorRVCommunity() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Camp host opportunities</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>State + national parks need camp hosts.</li>
               <li>Free site in exchange for hosting.</li>
               <li>Greet campers, light maintenance.</li>
@@ -103,7 +103,7 @@ export default function SeniorRVCommunity() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Join Escapees if full-timing</h3>
-            <p className="text-sm text-muted-foreground">If you&apos;re a full-time or part-time RVer, the $50/year Escapees membership pays for itself many times over. Discounted parks, mail forwarding, community of other senior RVers, and resources for life on the road. Combined with iRV2 forums (free) for technical questions, you&apos;re connected to thousands of other senior RVers.</p>
+            <p className="text-base text-muted-foreground">If you&apos;re a full-time or part-time RVer, the $50/year Escapees membership pays for itself many times over. Discounted parks, mail forwarding, community of other senior RVers, and resources for life on the road. Combined with iRV2 forums (free) for technical questions, you&apos;re connected to thousands of other senior RVers.</p>
           </CardContent>
         </Card>
       </main>

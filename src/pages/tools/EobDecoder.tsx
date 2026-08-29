@@ -299,8 +299,8 @@ export default function EobDecoder() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-rose-50 dark:bg-rose-950/30 flex items-center justify-center flex-shrink-0">
-                <Stethoscope className="h-6 w-6 text-rose-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-danger flex items-center justify-center flex-shrink-0">
+                <Stethoscope className="h-6 w-6 text-danger-foreground" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -318,15 +318,15 @@ export default function EobDecoder() {
           {/* ---------------- AMBER "THIS IS NOT A BILL" BANNER ---------------- */}
           <div
             role="alert"
-            className="rounded-2xl border-4 border-amber-400 bg-amber-50 dark:bg-amber-950/30 dark:border-amber-500 p-6 md:p-7 shadow-sm"
+            className="rounded-2xl border-4 border-amber-400 bg-warn dark:border-amber-500 p-6 md:p-7 shadow-sm"
           >
             <div className="flex items-start gap-4">
-              <AlertTriangle className="h-8 w-8 md:h-10 md:w-10 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-0.5" aria-hidden="true" />
+              <AlertTriangle className="h-8 w-8 md:h-10 md:w-10 text-warn-foreground flex-shrink-0 mt-0.5" aria-hidden="true" />
               <div>
-                <h2 className="text-2xl md:text-3xl font-extrabold text-amber-900 dark:text-amber-200 mb-2 tracking-tight">
+                <h2 className="text-2xl md:text-3xl font-extrabold text-warn-foreground mb-2 tracking-tight">
                   THIS IS NOT A BILL
                 </h2>
-                <p className="text-base md:text-lg text-amber-900 dark:text-amber-100 leading-relaxed">
+                <p className="text-base md:text-lg text-warn-foreground leading-relaxed">
                   An <strong>Explanation of Benefits (EOB)</strong> is a statement from your insurance
                   company. It shows how they processed a medical claim. <strong>You do not send payment in
                   response to an EOB.</strong> A separate bill comes from the doctor or hospital — and you
@@ -348,7 +348,7 @@ export default function EobDecoder() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <Label htmlFor="provider" className="text-base font-semibold">Provider</Label>
-                  <p className="text-xs text-muted-foreground mb-2">Doctor, clinic, or hospital name.</p>
+                  <p className="text-sm text-muted-foreground mb-2">Doctor, clinic, or hospital name.</p>
                   <Input
                     id="provider"
                     className="h-12 text-base"
@@ -359,7 +359,7 @@ export default function EobDecoder() {
                 </div>
                 <div>
                   <Label htmlFor="dos" className="text-base font-semibold">Date of service</Label>
-                  <p className="text-xs text-muted-foreground mb-2">The day you got care.</p>
+                  <p className="text-sm text-muted-foreground mb-2">The day you got care.</p>
                   <Input
                     id="dos"
                     className="h-12 text-base"
@@ -372,7 +372,7 @@ export default function EobDecoder() {
 
               <div>
                 <Label htmlFor="cpt" className="text-base font-semibold">Service / CPT code (optional)</Label>
-                <p className="text-xs text-muted-foreground mb-2">A 5-digit code like 99213 — we'll decode it.</p>
+                <p className="text-sm text-muted-foreground mb-2">A 5-digit code like 99213 — we'll decode it.</p>
                 <Input
                   id="cpt"
                   className="h-12 text-base font-mono"
@@ -381,7 +381,7 @@ export default function EobDecoder() {
                   onChange={e => updateForm('cpt', e.target.value)}
                 />
                 {form.cpt && (
-                  <div className={`mt-3 rounded-xl p-4 text-sm leading-relaxed ${matchedCpt ? 'bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-900' : 'bg-muted border border-border'}`}>
+                  <div className={`mt-3 rounded-xl p-4 text-sm leading-relaxed ${matchedCpt ? 'bg-emerald-50 dark:bg-emerald-950/30 border border-success-foreground/25 dark:border-emerald-900' : 'bg-muted border border-border'}`}>
                     {matchedCpt ? (
                       <>
                         <p className="font-semibold mb-1">{matchedCpt.code} — {matchedCpt.category}</p>
@@ -401,7 +401,7 @@ export default function EobDecoder() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div>
                   <Label htmlFor="billed" className="text-base font-semibold">Amount billed by provider</Label>
-                  <p className="text-xs text-muted-foreground mb-2">The charge — often much higher than what anyone pays.</p>
+                  <p className="text-sm text-muted-foreground mb-2">The charge — often much higher than what anyone pays.</p>
                   <Input
                     id="billed"
                     className="h-12 text-base font-mono"
@@ -413,7 +413,7 @@ export default function EobDecoder() {
                 </div>
                 <div>
                   <Label htmlFor="approved" className="text-base font-semibold">Amount insurance approved</Label>
-                  <p className="text-xs text-muted-foreground mb-2">The negotiated "allowed" amount.</p>
+                  <p className="text-sm text-muted-foreground mb-2">The negotiated "allowed" amount.</p>
                   <Input
                     id="approved"
                     className="h-12 text-base font-mono"
@@ -425,7 +425,7 @@ export default function EobDecoder() {
                 </div>
                 <div>
                   <Label htmlFor="insPaid" className="text-base font-semibold">Amount insurance paid</Label>
-                  <p className="text-xs text-muted-foreground mb-2">What your plan actually sent the provider.</p>
+                  <p className="text-sm text-muted-foreground mb-2">What your plan actually sent the provider.</p>
                   <Input
                     id="insPaid"
                     className="h-12 text-base font-mono"
@@ -437,7 +437,7 @@ export default function EobDecoder() {
                 </div>
                 <div>
                   <Label htmlFor="deductible" className="text-base font-semibold">Deductible applied</Label>
-                  <p className="text-xs text-muted-foreground mb-2">Amount that counts toward your yearly deductible.</p>
+                  <p className="text-sm text-muted-foreground mb-2">Amount that counts toward your yearly deductible.</p>
                   <Input
                     id="deductible"
                     className="h-12 text-base font-mono"
@@ -449,7 +449,7 @@ export default function EobDecoder() {
                 </div>
                 <div>
                   <Label htmlFor="copay" className="text-base font-semibold">Copay</Label>
-                  <p className="text-xs text-muted-foreground mb-2">Flat fee like $30.</p>
+                  <p className="text-sm text-muted-foreground mb-2">Flat fee like $30.</p>
                   <Input
                     id="copay"
                     className="h-12 text-base font-mono"
@@ -461,7 +461,7 @@ export default function EobDecoder() {
                 </div>
                 <div>
                   <Label htmlFor="coinsurance" className="text-base font-semibold">Coinsurance</Label>
-                  <p className="text-xs text-muted-foreground mb-2">Your percentage share (often 20%).</p>
+                  <p className="text-sm text-muted-foreground mb-2">Your percentage share (often 20%).</p>
                   <Input
                     id="coinsurance"
                     className="h-12 text-base font-mono"
@@ -479,9 +479,9 @@ export default function EobDecoder() {
                   <div className={`rounded-2xl p-6 ${isABillLater ? 'bg-amber-50 dark:bg-amber-950/30 border-2 border-amber-400' : 'bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-400'}`}>
                     <div className="flex items-start gap-3 mb-3">
                       {isABillLater ? (
-                        <Receipt className="h-7 w-7 text-amber-700 dark:text-amber-300 flex-shrink-0" aria-hidden="true" />
+                        <Receipt className="h-7 w-7 text-warn-foreground flex-shrink-0" aria-hidden="true" />
                       ) : (
-                        <CheckCircle2 className="h-7 w-7 text-emerald-700 dark:text-emerald-300 flex-shrink-0" aria-hidden="true" />
+                        <CheckCircle2 className="h-7 w-7 text-success-foreground flex-shrink-0" aria-hidden="true" />
                       )}
                       <div>
                         <p className={`text-sm font-semibold uppercase tracking-wide ${isABillLater ? 'text-amber-800 dark:text-amber-200' : 'text-emerald-800 dark:text-emerald-200'}`}>
@@ -492,7 +492,7 @@ export default function EobDecoder() {
                         </p>
                       </div>
                     </div>
-                    <p className={`text-sm leading-relaxed ${isABillLater ? 'text-amber-900 dark:text-amber-100' : 'text-emerald-900 dark:text-emerald-100'}`}>
+                    <p className={`text-base leading-relaxed ${isABillLater ? 'text-amber-900 dark:text-amber-100' : 'text-emerald-900 dark:text-emerald-100'}`}>
                       {isABillLater ? (
                         <>
                           The EOB itself is <strong>still not a bill.</strong> But the provider will usually
@@ -511,7 +511,7 @@ export default function EobDecoder() {
 
                     {/* Write-off note */}
                     {writeOff > 0 && (
-                      <p className="text-xs text-muted-foreground mt-4 leading-relaxed">
+                      <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
                         The <strong>${writeOff.toFixed(2)}</strong> difference between what the provider
                         billed and what insurance approved is a <strong>contractual write-off</strong>. You
                         do NOT pay that, even though it shows up on the statement. If the provider bills you
@@ -533,7 +533,7 @@ export default function EobDecoder() {
             <div className="rounded-2xl border border-border bg-card overflow-hidden">
               <div className="bg-muted/50 px-5 py-4 border-b border-border">
                 <p className="text-xs font-mono uppercase text-muted-foreground">Blue Shield of Illinois — Explanation of Benefits</p>
-                <p className="text-xs font-mono text-muted-foreground">This is not a bill.</p>
+                <p className="text-sm font-mono text-muted-foreground">This is not a bill.</p>
               </div>
               <div className="divide-y divide-border">
                 {groups.map(group => {
@@ -547,7 +547,7 @@ export default function EobDecoder() {
                       >
                         <div>
                           <p className="font-semibold text-base">{group.title}</p>
-                          <p className="text-sm text-muted-foreground mt-0.5">{group.intro}</p>
+                          <p className="text-base text-muted-foreground mt-0.5">{group.intro}</p>
                         </div>
                         {isOpen
                           ? <ChevronUp className="h-5 w-5 text-muted-foreground flex-shrink-0 ml-3" aria-hidden="true" />
@@ -559,8 +559,8 @@ export default function EobDecoder() {
                             <details key={f.key} className="group rounded-xl border border-border bg-background">
                               <summary className="cursor-pointer list-none px-4 py-3 flex items-center justify-between gap-4">
                                 <div className="flex-1 min-w-0">
-                                  <p className="font-mono text-xs text-muted-foreground mb-0.5">{f.label}</p>
-                                  <p className="font-mono text-sm font-semibold">{f.sample}</p>
+                                  <p className="font-mono text-sm text-muted-foreground mb-0.5">{f.label}</p>
+                                  <p className="font-mono text-base font-semibold">{f.sample}</p>
                                 </div>
                                 <div className="flex items-center gap-1.5 text-xs text-primary font-semibold flex-shrink-0">
                                   <HelpCircle className="h-4 w-4" aria-hidden="true" />
@@ -605,11 +605,11 @@ export default function EobDecoder() {
               {filteredCpt.map(c => (
                 <div key={c.code} className="p-4 flex gap-4 items-start">
                   <div className="flex-shrink-0 w-20 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <span className="font-mono font-bold text-primary text-sm">{c.code}</span>
+                    <span className="font-mono font-bold text-primary text-base">{c.code}</span>
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-sm mb-0.5">{c.category}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{c.plain}</p>
+                    <p className="font-semibold text-base mb-0.5">{c.category}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{c.plain}</p>
                   </div>
                 </div>
               ))}
@@ -629,8 +629,8 @@ export default function EobDecoder() {
                     <span className="font-mono font-bold text-primary">{c.code}</span>
                   </div>
                   <div className="flex-1">
-                    <p className="font-semibold text-sm mb-0.5">{c.meaning}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{c.detail}</p>
+                    <p className="font-semibold text-base mb-0.5">{c.meaning}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{c.detail}</p>
                   </div>
                 </div>
               ))}
@@ -638,15 +638,15 @@ export default function EobDecoder() {
           </section>
 
           {/* ---------------- RED FLAGS ---------------- */}
-          <section className="rounded-2xl border-2 border-red-300 dark:border-red-900 bg-red-50 dark:bg-red-950/20 p-6 md:p-8">
-            <h2 className="text-xl md:text-2xl font-bold mb-2 flex items-center gap-2 text-red-900 dark:text-red-200">
+          <section className="rounded-2xl border-2 border-danger-foreground/25 bg-danger p-6 md:p-8">
+            <h2 className="text-xl md:text-2xl font-bold mb-2 flex items-center gap-2 text-danger-foreground ">
               <ShieldAlert className="h-6 w-6" aria-hidden="true" />
               Red flags — signs of a billing error or fraud
             </h2>
-            <p className="text-sm text-red-900 dark:text-red-200 mb-4">
+            <p className="text-base text-danger-foreground mb-4">
               If you see any of these, stop and investigate before you pay anything.
             </p>
-            <ul className="space-y-3 text-base text-red-900 dark:text-red-200 leading-relaxed">
+            <ul className="space-y-3 text-base text-danger-foreground leading-relaxed">
               <li className="flex gap-3">
                 <span className="flex-shrink-0 mt-1">•</span>
                 <span><strong>Services you don't remember receiving.</strong> Even if it's a small lab fee — if you didn't get it, it shouldn't be on your EOB.</span>
@@ -697,7 +697,7 @@ export default function EobDecoder() {
                 <ExternalLink className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <p className="font-bold text-base mb-1">Medicare.gov/fraud</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     Report Medicare fraud online. Works for Medicare Parts A, B, C, and D.
                   </p>
                 </div>
@@ -709,13 +709,13 @@ export default function EobDecoder() {
                 <Phone className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
                   <p className="font-bold text-base mb-1">1-800-MEDICARE</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                  <p className="text-base text-muted-foreground leading-relaxed">
                     (1-800-633-4227) — Call 24/7. Tell them you want to report suspected fraud and have your Medicare number ready.
                   </p>
                 </div>
               </a>
             </div>
-            <p className="text-xs text-muted-foreground mt-4">
+            <p className="text-sm text-muted-foreground mt-4">
               For private insurance, call the fraud line on the back of your insurance card instead.
             </p>
           </section>
@@ -755,7 +755,7 @@ export default function EobDecoder() {
               <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
               <div>
                 <p className="font-bold text-base mb-1">Rule of thumb</p>
-                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                <p className="text-base md:text-base text-muted-foreground leading-relaxed">
                   Never pay a medical bill until you see the matching EOB. Line up both pieces of paper. The <strong>"you may owe"</strong> number on the EOB is the ceiling. You rarely owe the full "billed amount" — and you never owe the "contractual adjustment" if the provider is in network.
                 </p>
               </div>
@@ -767,7 +767,7 @@ export default function EobDecoder() {
               <FileText className="h-5 w-5 text-primary" aria-hidden="true" />
               See your official Medicare claims
             </h3>
-            <p className="text-sm md:text-base text-muted-foreground mb-4 leading-relaxed">
+            <p className="text-base md:text-base text-muted-foreground mb-4 leading-relaxed">
               If you're on Medicare, you can see every claim ever filed on your behalf — and download your Medicare Summary Notices (the Medicare version of an EOB) — directly from the official website.
             </p>
             <Button asChild size="lg" className="w-full sm:w-auto">
@@ -788,7 +788,7 @@ export default function EobDecoder() {
               <HelpCircle className="h-5 w-5 text-primary" aria-hidden="true" />
               Before you hang up with insurance, always ask:
             </h3>
-            <ul className="space-y-2 text-sm md:text-base text-muted-foreground">
+            <ul className="space-y-2 text-base md:text-base text-muted-foreground">
               <li className="flex gap-2"><span>•</span> "Can you give me the call reference number?"</li>
               <li className="flex gap-2"><span>•</span> "What is the appeal deadline for this claim?"</li>
               <li className="flex gap-2"><span>•</span> "What's the exact reason code on this line?"</li>

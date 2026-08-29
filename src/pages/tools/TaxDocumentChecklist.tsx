@@ -114,7 +114,7 @@ export default function TaxDocumentChecklist() {
   const pct = total > 0 ? Math.round((done / total) * 100) : 0;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Tax Document Checklist | TekSure"
         description="An organized checklist of tax documents seniors typically need for filing — income, health, charity, retirement, and personal information."
@@ -123,10 +123,10 @@ export default function TaxDocumentChecklist() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <FileText className="h-7 w-7 text-green-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Tax Document Checklist</h1>
+            <FileText className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Tax Document Checklist</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Gather everything you need before tax time. Mark items as collected or "not applicable" to focus on what is left.
           </p>
         </div>
@@ -135,14 +135,14 @@ export default function TaxDocumentChecklist() {
         <Card className="mb-4">
           <CardContent className="py-4 px-4">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-lg font-semibold text-gray-800">{done} of {total} gathered</span>
-              <span className="text-2xl font-bold text-green-700">{pct}%</span>
+              <span className="text-lg font-semibold text-foreground">{done} of {total} gathered</span>
+              <span className="text-2xl font-bold text-success-foreground">{pct}%</span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
               <div className="h-3 bg-green-500 rounded-full transition-all duration-300" style={{ width: `${pct}%` }} />
             </div>
             {pct === 100 && total > 0 && (
-              <p className="text-green-700 font-semibold mt-2 text-center">
+              <p className="text-success-foreground font-semibold mt-2 text-center">
                 Ready to file! Time to make an appointment with your tax preparer or open IRS Free File.
               </p>
             )}
@@ -170,7 +170,7 @@ export default function TaxDocumentChecklist() {
                       <div
                         key={item.id}
                         className={`p-3 rounded-lg border transition-colors ${
-                          isNA ? "bg-gray-100 border-gray-200 opacity-60"
+                          isNA ? "bg-gray-100 border-border opacity-60"
                             : isDone ? "bg-green-50 border-green-200"
                               : "bg-white border-gray-200"
                         }`}
@@ -181,18 +181,18 @@ export default function TaxDocumentChecklist() {
                           className="w-full text-left flex items-start gap-3"
                         >
                           <span className="mt-0.5 shrink-0">
-                            {isDone ? <CheckCircle2 className="h-5 w-5 text-green-600" /> : <Circle className="h-5 w-5 text-gray-400" />}
+                            {isDone ? <CheckCircle2 className="h-5 w-5 text-success-foreground" /> : <Circle className="h-5 w-5 text-muted-foreground" />}
                           </span>
                           <span className="flex-1">
-                            <span className={`block text-sm font-semibold ${isDone ? "line-through text-gray-400" : isNA ? "text-gray-400 line-through" : "text-gray-900"}`}>
+                            <span className={`block text-base font-semibold ${isDone ? "line-through text-gray-400" : isNA ? "text-gray-400 line-through" : "text-gray-900"}`}>
                               {item.task}
                             </span>
-                            {!isDone && !isNA && <span className="block text-sm text-gray-500 mt-0.5">{item.detail}</span>}
+                            {!isDone && !isNA && <span className="block text-base text-muted-foreground mt-0.5">{item.detail}</span>}
                           </span>
                         </button>
                         <button
                           onClick={(e) => markNA(item.id, e)}
-                          className="mt-1 ml-8 text-xs text-blue-600 underline hover:text-blue-800 print:hidden"
+                          className="mt-1 ml-8 text-xs text-info-foreground underline hover:text-info-foreground print:hidden"
                         >
                           {isNA ? "Bring back" : "Not applicable to me"}
                         </button>
@@ -210,21 +210,21 @@ export default function TaxDocumentChecklist() {
             <Printer className="h-4 w-4" />
             Print Checklist
           </Button>
-          <Button variant="ghost" onClick={reset} className="gap-2 text-gray-500">
+          <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground">
             <RotateCcw className="h-4 w-4" />
             Start Over
           </Button>
         </div>
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Don't worry if you cannot find every item — your tax preparer or AARP Tax-Aide volunteer can help track down missing documents.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

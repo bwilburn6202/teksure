@@ -80,7 +80,7 @@ const Pricing = () => (
             <p className="text-muted-foreground text-lg mb-3 max-w-xl mx-auto">
               One rate for every kind of problem. No subscriptions, no hidden fees, no upselling.
             </p>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-base text-muted-foreground">
               {BRAND_PROMISE} — available anywhere in the United States.
             </p>
           </div>
@@ -92,7 +92,7 @@ const Pricing = () => (
         <div className="max-w-2xl mx-auto mb-12">
           <div className="rounded-3xl border border-primary bg-primary/[0.03] shadow-lg shadow-primary/10 p-6 md:p-10 text-center">
             <h2 className="text-xl font-bold mb-1">Tech help, by the hour</h2>
-            <p className="text-sm text-muted-foreground mb-6">
+            <p className="text-base text-muted-foreground mb-6">
               {ONSITE_AVAILABLE
                 ? 'Remote or in your home — same rate either way'
                 : 'Over the phone, anywhere in the United States'}
@@ -106,13 +106,13 @@ const Pricing = () => (
               then {formatPrice(ADDITIONAL_HOUR_PRICE)} for each additional hour
             </p>
 
-            <p className="text-sm text-primary font-medium mb-8">
+            <p className="text-base text-primary font-medium mb-8">
               Most jobs are done within the first hour.
             </p>
 
             <ul className="space-y-3 mb-8 text-left max-w-md mx-auto">
               {included.map((f) => (
-                <li key={f} className="flex items-start gap-3 text-sm">
+                <li key={f} className="flex items-start gap-3 text-base">
                   <Check className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">{f}</span>
                 </li>
@@ -128,7 +128,7 @@ const Pricing = () => (
         {/* Deposit explainer */}
         <div className="max-w-lg mx-auto rounded-2xl border border-border bg-muted/30 p-6 text-center mb-8">
           <h3 className="font-semibold text-base mb-2">You can book without paying anything</h3>
-          <p className="text-sm text-muted-foreground leading-relaxed">
+          <p className="text-base text-muted-foreground leading-relaxed">
             Pay the whole amount on the day, or hold your slot with a{' '}
             <strong className="text-foreground">{formatPrice(DEPOSIT_AMOUNT)} deposit</strong>. The deposit
             comes off your bill — on a one-hour job that leaves{' '}
@@ -143,7 +143,7 @@ const Pricing = () => (
 
         {/* Honest extras */}
         <div className="max-w-lg mx-auto text-center">
-          <p className="text-sm text-muted-foreground">
+          <p className="text-base text-muted-foreground">
             {ONSITE_AVAILABLE ? (
               <>
                 The only thing that can change the price: in-home visits more than{' '}
@@ -170,8 +170,8 @@ const Pricing = () => (
                 <div className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-primary/10 mb-4">
                   <Icon className="h-6 w-6 text-primary" />
                 </div>
-                <p className="font-semibold text-sm mb-1">{label}</p>
-                <p className="text-xs text-muted-foreground">{sub}</p>
+                <p className="font-semibold text-base mb-1">{label}</p>
+                <p className="text-sm text-muted-foreground">{sub}</p>
               </div>
             ))}
           </div>

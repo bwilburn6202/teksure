@@ -22,7 +22,7 @@ export default function SeniorMedicareSupplement() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Cost</h2><p>$100-$300/month. Varies by state and age.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Compare on Medicare.gov</h2><p>FREE official comparison tool. Plans identical by letter, only price varies.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Free help</h2><p>SHIP counselors. Free unbiased advice. 1-800-633-4227.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Buy at 65 = guaranteed acceptance. After 65 = pre-existing conditions can be denied.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Buy at 65 = guaranteed acceptance. After 65 = pre-existing conditions can be denied.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

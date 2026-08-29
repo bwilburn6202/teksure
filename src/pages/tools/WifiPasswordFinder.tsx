@@ -149,10 +149,10 @@ export default function WifiPasswordFinder() {
         <section className="container py-10 md:py-14">
           <Card className="mb-8 border-amber-500/40 bg-amber-50/50 dark:bg-amber-950/20">
             <CardContent className="p-5 flex items-start gap-3">
-              <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+              <AlertTriangle className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
               <div>
                 <h4 className="font-semibold mb-1">Only recover passwords for networks you own</h4>
-                <p className="text-sm text-muted-foreground leading-relaxed">
+                <p className="text-base text-muted-foreground leading-relaxed">
                   This tool helps you find passwords for your own home Wi-Fi or networks you have permission to access. Accessing someone else's network without permission is illegal in most places.
                 </p>
               </div>
@@ -177,7 +177,7 @@ export default function WifiPasswordFinder() {
                         </div>
                         <div className="flex-1">
                           <h3 className="font-semibold mb-1">{g.name}</h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{g.tagline}</p>
+                          <p className="text-base text-muted-foreground leading-relaxed">{g.tagline}</p>
                         </div>
                         <ArrowRight className="w-4 h-4 text-muted-foreground shrink-0 mt-1" />
                       </CardContent>
@@ -205,7 +205,7 @@ export default function WifiPasswordFinder() {
                         <span className="shrink-0 w-7 h-7 rounded-full bg-primary text-primary-foreground font-semibold flex items-center justify-center text-sm">
                           {i + 1}
                         </span>
-                        <span className="pt-0.5 leading-relaxed text-sm">{step}</span>
+                        <span className="pt-0.5 leading-relaxed text-base">{step}</span>
                       </li>
                     ))}
                   </ol>
@@ -216,7 +216,7 @@ export default function WifiPasswordFinder() {
                 <Card className="bg-muted/50 border-border">
                   <CardContent className="p-4 flex items-start gap-3">
                     <Lock className="w-4 h-4 text-muted-foreground shrink-0 mt-0.5" />
-                    <p className="text-sm text-muted-foreground leading-relaxed">{selected.note}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed">{selected.note}</p>
                   </CardContent>
                 </Card>
               )}
@@ -231,7 +231,7 @@ export default function WifiPasswordFinder() {
               <Card>
                 <CardContent className="p-4">
                   <h4 className="font-semibold mb-1 text-sm">Make it a strong password</h4>
-                  <p className="text-xs text-muted-foreground mb-3">A good Wi-Fi password is 12+ characters with a mix of letters and numbers.</p>
+                  <p className="text-sm text-muted-foreground mb-3">A good Wi-Fi password is 12+ characters with a mix of letters and numbers.</p>
                   <Button variant="outline" size="sm" asChild>
                     <a href="/guides/create-strong-password">Read guide <ExternalLink className="w-3 h-3 ml-1" /></a>
                   </Button>
@@ -240,7 +240,7 @@ export default function WifiPasswordFinder() {
               <Card>
                 <CardContent className="p-4">
                   <h4 className="font-semibold mb-1 text-sm">Check who's on your Wi-Fi</h4>
-                  <p className="text-xs text-muted-foreground mb-3">See every device connected to your home network right now.</p>
+                  <p className="text-sm text-muted-foreground mb-3">See every device connected to your home network right now.</p>
                   <Button variant="outline" size="sm" asChild>
                     <a href="/tools/home-network-map">Home Network Map <ArrowRight className="w-3 h-3 ml-1" /></a>
                   </Button>
@@ -249,7 +249,7 @@ export default function WifiPasswordFinder() {
               <Card>
                 <CardContent className="p-4">
                   <h4 className="font-semibold mb-1 text-sm">Save it in a password manager</h4>
-                  <p className="text-xs text-muted-foreground mb-3">Never forget your Wi-Fi password again — store it with Bitwarden or 1Password.</p>
+                  <p className="text-sm text-muted-foreground mb-3">Never forget your Wi-Fi password again — store it with Bitwarden or 1Password.</p>
                   <Button variant="outline" size="sm" asChild>
                     <a href="/guides/password-managers-explained">Learn how <ArrowRight className="w-3 h-3 ml-1" /></a>
                   </Button>

@@ -22,7 +22,7 @@ export default function SeniorAlzheimersResources() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Trial Match</h2><p>FREE clinical trial finder. New treatments emerging.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Walk to End Alzheimer&apos;s</h2><p>Free annual community walks. Fundraise + connect.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">MedicAlert</h2><p>$30/year. ID bracelet for wandering risk. Emergency notification.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 24/7 Helpline answers any question. Free. Even at 3 AM.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 24/7 Helpline answers any question. Free. Even at 3 AM.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

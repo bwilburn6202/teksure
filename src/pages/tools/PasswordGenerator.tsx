@@ -95,8 +95,8 @@ export default function PasswordGenerator() {
         <section className="border-b">
           <div className="container py-12 md:py-16 max-w-3xl">
             <div className="flex items-center gap-3 mb-4">
-              <div className="h-12 w-12 rounded-2xl bg-violet-50 dark:bg-violet-950/30 flex items-center justify-center flex-shrink-0">
-                <KeyRound className="h-6 w-6 text-violet-600" aria-hidden="true" />
+              <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <KeyRound className="h-6 w-6 text-primary" aria-hidden="true" />
               </div>
               <Badge variant="secondary">Free Tool</Badge>
             </div>
@@ -126,7 +126,7 @@ export default function PasswordGenerator() {
                    ['Numbers (0-9)', numbers, setNumbers],
                    ['Symbols (!@#$%)', symbols, setSymbols]] as const).map(([label, val, setter]) => (
                   <div key={label} className="flex items-center justify-between">
-                    <span className="text-sm">{label}</span>
+                    <span className="text-base">{label}</span>
                     <Switch checked={val as boolean} onCheckedChange={v => (setter as (v: boolean) => void)(v)} />
                   </div>
                 ))}
@@ -144,7 +144,7 @@ export default function PasswordGenerator() {
                 <div className="flex items-center gap-2">
                   <code className="flex-1 bg-muted rounded-lg px-4 py-3 text-sm font-mono break-all select-all">{password}</code>
                   <Button variant="outline" size="icon" onClick={() => copyToClipboard(password)} aria-label="Copy password">
-                    {copied === password ? <Check className="h-4 w-4 text-emerald-600" /> : <Copy className="h-4 w-4" />}
+                    {copied === password ? <Check className="h-4 w-4 text-success-foreground" /> : <Copy className="h-4 w-4" />}
                   </Button>
                 </div>
                 <div>
@@ -161,13 +161,13 @@ export default function PasswordGenerator() {
           )}
 
           {/* Why this matters */}
-          <Card className="border-violet-200 dark:border-violet-800/50">
+          <Card className="border-primary/25 ">
             <CardContent className="pt-6">
               <div className="flex gap-3">
-                <ShieldCheck className="h-5 w-5 text-violet-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
+                <ShieldCheck className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" aria-hidden="true" />
                 <div>
-                  <p className="font-semibold text-sm mb-1">Why This Matters</p>
-                  <p className="text-sm text-muted-foreground">
+                  <p className="font-semibold text-base mb-1">Why This Matters</p>
+                  <p className="text-base text-muted-foreground">
                     A short or predictable password can be cracked in seconds. A 16-character random password with mixed characters would take millions of years to crack with current technology. Using a unique password for every account prevents a breach at one site from compromising all your accounts.
                   </p>
                 </div>
@@ -188,7 +188,7 @@ export default function PasswordGenerator() {
                     <div key={i} className="flex items-center gap-2">
                       <code className="flex-1 bg-muted rounded-lg px-3 py-2 text-xs font-mono break-all">{s}</code>
                       <button onClick={() => copyToClipboard(s)} className="text-muted-foreground hover:text-primary transition-colors" aria-label={`Copy password ${i + 1}`}>
-                        {copied === s ? <Check className="h-4 w-4 text-emerald-600" /> : <Copy className="h-4 w-4" />}
+                        {copied === s ? <Check className="h-4 w-4 text-success-foreground" /> : <Copy className="h-4 w-4" />}
                       </button>
                     </div>
                   ))}
@@ -200,15 +200,15 @@ export default function PasswordGenerator() {
           {/* Tips */}
           <div className="rounded-2xl border p-6">
             <button onClick={() => setShowTips(!showTips)} className="flex items-center gap-3 w-full text-left">
-              <Lightbulb className="h-5 w-5 text-amber-500 flex-shrink-0" aria-hidden="true" />
-              <span className="font-semibold text-sm flex-1">Tips for Using a Password Manager</span>
+              <Lightbulb className="h-5 w-5 text-warn-foreground flex-shrink-0" aria-hidden="true" />
+              <span className="font-semibold text-base flex-1">Tips for Using a Password Manager</span>
               {showTips ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
             </button>
             {showTips && (
               <ul className="mt-4 space-y-2">
                 {managerTips.map((tip, i) => (
-                  <li key={i} className="flex gap-3 text-sm text-muted-foreground">
-                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-amber-100 dark:bg-amber-950/30 text-amber-700 text-xs flex items-center justify-center font-medium">{i + 1}</span>
+                  <li key={i} className="flex gap-3 text-base text-muted-foreground">
+                    <span className="flex-shrink-0 w-5 h-5 rounded-full bg-warn text-warn-foreground text-xs flex items-center justify-center font-medium">{i + 1}</span>
                     {tip}
                   </li>
                 ))}

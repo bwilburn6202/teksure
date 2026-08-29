@@ -19,7 +19,7 @@ export default function ACPInternetSubsidy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">2026 status update</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>ACP funding ran out June 2024.</li>
               <li>Congress debating renewal.</li>
               <li>Some ISPs continue similar discounts.</li>
@@ -33,7 +33,7 @@ export default function ACPInternetSubsidy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Lifeline (similar program)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Federal program, still funded.</li>
               <li>$9.25/mo internet OR phone discount.</li>
               <li>Income limits 135% federal poverty (~$20K individual).</li>
@@ -47,7 +47,7 @@ export default function ACPInternetSubsidy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">ISP low-income plans</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Comcast Internet Essentials</strong> — $10-15/mo.</li>
               <li><strong>Spectrum Internet Assist</strong> — $20/mo.</li>
               <li><strong>AT&amp;T Access</strong> — $5-10/mo.</li>
@@ -62,7 +62,7 @@ export default function ACPInternetSubsidy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Apply</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Lifeline: lifelinesupport.org. Federal application.</li>
               <li>Then choose participating ISP.</li>
               <li>Apply individually with each ISP.</li>
@@ -76,7 +76,7 @@ export default function ACPInternetSubsidy() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free internet alternatives</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Library WiFi</strong> — free in lobby.</li>
               <li><strong>McDonald&apos;s, Starbucks, Panera</strong> — free WiFi.</li>
               <li><strong>Library hotspot lending</strong> — many lend free.</li>
@@ -90,7 +90,7 @@ export default function ACPInternetSubsidy() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Senior internet essentials</h3>
-            <p className="text-sm text-muted-foreground">Internet not luxury anymore — needed for telehealth, banking, government accounts. If income tight — apply for Lifeline + ISP discount programs. Most seniors qualify but don&apos;t know. <strong>EveryoneOn.org</strong> connects with discount programs by ZIP. Free.</p>
+            <p className="text-base text-muted-foreground">Internet not luxury anymore — needed for telehealth, banking, government accounts. If income tight — apply for Lifeline + ISP discount programs. Most seniors qualify but don&apos;t know. <strong>EveryoneOn.org</strong> connects with discount programs by ZIP. Free.</p>
           </CardContent>
         </Card>
       </main>

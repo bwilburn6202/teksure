@@ -18,11 +18,11 @@ export default function SeniorWiFiPrintersFamily() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">HP Tango</h2><p>$200. Email-to-print. Family texts/emails photos to a print address.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Canon PIXMA TR8620</h2><p>$200. Built-in scanner. AirPrint and Google Cloud Print.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mini photo printers</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Canon Selphy QX10 ($150)</li><li>HP Sprocket ($110)</li><li>Polaroid Hi-Print ($150)</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Mini photo printers</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Canon Selphy QX10 ($150)</li><li>HP Sprocket ($110)</li><li>Polaroid Hi-Print ($150)</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">HP Instant Ink</h2><p>$3-$10/month for ink delivered. Never run out.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Skip the printer</h2><p>Aura digital frame. Family sends photos. Frame displays them. No paper.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Easiest setup</h2><p>HP Smart app sends photos straight from phone. 30 seconds.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Buy this for grandparents. Photos magically appear in their kitchen.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Buy this for grandparents. Photos magically appear in their kitchen.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

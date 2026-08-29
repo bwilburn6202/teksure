@@ -22,7 +22,7 @@ export default function SeniorMouthGuard() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Dentist custom</h2><p>$300-$700. Best fit. Lasts 5+ years.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Insurance</h2><p>Some dental insurance covers night guards. Always ask.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Care</h2><p>Rinse daily. Brush weekly. Replace every 3-5 years.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Try drug store first. Upgrade if needs more.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Try drug store first. Upgrade if needs more.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

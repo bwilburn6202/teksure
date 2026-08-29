@@ -19,7 +19,7 @@ export default function BenefitsCheckUpTool() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free service from National Council on Aging.</li>
               <li>Asks questions about you.</li>
               <li>Matches you to 2,500+ benefit programs.</li>
@@ -34,7 +34,7 @@ export default function BenefitsCheckUpTool() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Programs it finds</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>SNAP (food stamps).</li>
               <li>Medicare Savings Programs.</li>
               <li>Medicare Extra Help (drug costs).</li>
@@ -51,7 +51,7 @@ export default function BenefitsCheckUpTool() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">How to use</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Go to benefitscheckup.org.</li>
               <li>FREE — no signup required.</li>
               <li>Enter ZIP code.</li>
@@ -66,7 +66,7 @@ export default function BenefitsCheckUpTool() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Most-missed benefits</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>SNAP</strong> — many seniors qualify, don&apos;t apply.</li>
               <li><strong>Medicare Savings Programs</strong> — pays Part B premium.</li>
               <li><strong>Extra Help</strong> — drug subsidies.</li>
@@ -81,7 +81,7 @@ export default function BenefitsCheckUpTool() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free application help</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Eldercare Locator</strong> — 1-800-677-1116.</li>
               <li><strong>Area Agency on Aging</strong> — local office helps.</li>
               <li><strong>SHIP</strong> — Medicare-specific.</li>
@@ -95,7 +95,7 @@ export default function BenefitsCheckUpTool() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Higher income limits</h3>
-            <p className="text-sm text-muted-foreground">Many seniors think they&apos;re too &quot;rich&quot; for benefits. Income limits often higher than expected. Many seniors with $40-60K/yr qualify for programs. Asset limits often EXCLUDE home + 1 car. Check — could save $5K+/year.</p>
+            <p className="text-base text-muted-foreground">Many seniors think they&apos;re too &quot;rich&quot; for benefits. Income limits often higher than expected. Many seniors with $40-60K/yr qualify for programs. Asset limits often EXCLUDE home + 1 car. Check — could save $5K+/year.</p>
           </CardContent>
         </Card>
       </main>

@@ -53,7 +53,7 @@ const Terms = () => (
             This is the agreement between you and TekSure. We've written it in plain English instead
             of legal jargon, because terms you can't read aren't much use to anyone.
           </p>
-          <p className="text-sm text-muted-foreground">Last updated: July 26, 2026</p>
+          <p className="text-base text-muted-foreground">Last updated: July 26, 2026</p>
         </div>
 
         {/* Agreement */}
@@ -96,7 +96,7 @@ const Terms = () => (
                 remote and available anywhere in the United States.
               </li>
             </ul>
-            <p className="text-sm">
+            <p className="text-base">
               We're an independent tech support company. We are not affiliated with, endorsed by, or
               acting on behalf of Apple, Microsoft, Google, Amazon, or any device manufacturer,
               internet provider, or government agency. When our guides mention those companies, it's
@@ -179,7 +179,7 @@ const Terms = () => (
               financial, medical, or legal topics are there to help you use the technology involved
               — they are not a substitute for a doctor, lawyer, or financial advisor.
             </p>
-            <p className="text-sm">
+            <p className="text-base">
               Found something wrong or out of date?{' '}
               <a href="mailto:hello@teksure.com" className="text-primary hover:underline">
                 Tell us
@@ -211,7 +211,7 @@ const Terms = () => (
               amount you paid us for the session in question. We aren't liable for indirect losses
               such as lost income or lost opportunity.
             </p>
-            <p className="text-sm">
+            <p className="text-base">
               Some states don't allow certain limitations of liability, so parts of this section may
               not apply to you. Nothing here removes rights you have under your state's consumer
               protection laws.
@@ -259,7 +259,7 @@ const Terms = () => (
               . If any part of this page is unclear, ask us — a confusing terms page is our problem
               to fix, not yours to decipher.
             </p>
-            <p className="text-sm">
+            <p className="text-base">
               See also our{' '}
               <Link to="/privacy" className="text-primary hover:underline">
                 Privacy Policy

@@ -98,7 +98,7 @@ export default function BigPrintTipCalculator() {
         <Card className="mt-4 bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tip Quick Tips</h3>
-            <ul className="text-sm space-y-1 list-disc pl-5 text-muted-foreground">
+            <ul className="text-base space-y-1 list-disc pl-5 text-muted-foreground">
               <li><strong>Sit-down restaurant:</strong> 18-20% is standard in the US.</li>
               <li><strong>Take-out:</strong> 10% is generous; nothing is also fine.</li>
               <li><strong>Hairdresser:</strong> 18-20% on the service price.</li>

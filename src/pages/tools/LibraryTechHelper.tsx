@@ -1217,7 +1217,7 @@ function DoneScreen({
     <Card className="border-teal-600/40 bg-teal-50/40 dark:bg-teal-950/20">
       <CardContent className="p-6 md:p-8 space-y-6">
         <div className="flex items-center gap-3">
-          <div className="p-3 rounded-full bg-teal-600/10 text-teal-700 dark:text-teal-400">
+          <div className="p-3 rounded-full bg-teal-600/10 text-success-foreground ">
             <CheckCircle2 className="w-8 h-8" />
           </div>
           <div>
@@ -1324,7 +1324,7 @@ export default function LibraryTechHelper() {
                 />
               </div>
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-3 rounded-xl bg-teal-600/10 text-teal-700 dark:text-teal-300">
+                <div className="p-3 rounded-xl bg-teal-600/10 text-success-foreground ">
                   <BookOpen className="w-7 h-7" />
                 </div>
                 <Badge variant="outline" className="text-sm bg-background/60">
@@ -1377,7 +1377,7 @@ export default function LibraryTechHelper() {
               <Card>
                 <CardContent className="p-6 md:p-7 space-y-4">
                   <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-lg bg-teal-100 text-teal-800 dark:bg-teal-950/40 dark:text-teal-300">
+                    <div className="p-2.5 rounded-lg bg-success text-success-foreground ">
                       <Library className="w-6 h-6" />
                     </div>
                     <h3 className="text-xl md:text-2xl font-semibold">Walk-in signup</h3>
@@ -1401,7 +1401,7 @@ export default function LibraryTechHelper() {
               <Card>
                 <CardContent className="p-6 md:p-7 space-y-4">
                   <div className="flex items-center gap-3">
-                    <div className="p-2.5 rounded-lg bg-cyan-100 text-cyan-800 dark:bg-cyan-950/40 dark:text-cyan-300">
+                    <div className="p-2.5 rounded-lg bg-info text-info-foreground ">
                       <Wifi className="w-6 h-6" />
                     </div>
                     <h3 className="text-xl md:text-2xl font-semibold">Online signup</h3>
@@ -1425,7 +1425,7 @@ export default function LibraryTechHelper() {
 
             <Card className="mt-5 bg-muted/40">
               <CardContent className="p-5 md:p-6 flex items-start gap-3">
-                <Lightbulb className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5" />
+                <Lightbulb className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5" />
                 <div className="space-y-2">
                   <h4 className="font-semibold text-base md:text-lg">Ages and reciprocal borrowing</h4>
                   <p className="text-base leading-relaxed">
@@ -1583,7 +1583,7 @@ export default function LibraryTechHelper() {
           {/* Tipping the balance */}
           <section className="container py-10 md:py-14">
             <div className="flex items-center gap-3 mb-3">
-              <Heart className="w-7 h-7 text-rose-600" />
+              <Heart className="w-7 h-7 text-danger-foreground" />
               <h2 className="text-2xl md:text-3xl font-semibold">
                 Tipping the balance — get what you want
               </h2>
@@ -1597,7 +1597,7 @@ export default function LibraryTechHelper() {
               {TIPS.map((t) => (
                 <Card key={t.title}>
                   <CardContent className="p-6 flex gap-4">
-                    <div className="p-2.5 rounded-lg bg-rose-100 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 shrink-0 self-start">
+                    <div className="p-2.5 rounded-lg bg-danger text-danger-foreground shrink-0 self-start">
                       <t.icon className="w-6 h-6" />
                     </div>
                     <div>
@@ -1614,7 +1614,7 @@ export default function LibraryTechHelper() {
           <section className="border-t border-border bg-muted/20">
             <div className="container py-10 md:py-14">
               <div className="flex items-center gap-3 mb-3">
-                <AlertTriangle className="w-7 h-7 text-amber-700 dark:text-amber-400" />
+                <AlertTriangle className="w-7 h-7 text-warn-foreground " />
                 <h2 className="text-2xl md:text-3xl font-semibold">
                   Common issues (and easy fixes)
                 </h2>
@@ -1629,7 +1629,7 @@ export default function LibraryTechHelper() {
                     <CardContent className="p-5">
                       <h3 className="font-semibold text-lg mb-2 flex items-center gap-2">
                         <AlertTriangle
-                          className="w-5 h-5 text-amber-700 dark:text-amber-400"
+                          className="w-5 h-5 text-warn-foreground "
                           aria-hidden="true"
                         />
                         {item.title}
@@ -1746,15 +1746,15 @@ export default function LibraryTechHelper() {
             </div>
 
             <div className="flex flex-wrap items-center gap-3 mb-2">
-              <span className="text-sm md:text-base font-medium text-muted-foreground">
+              <span className="text-base md:text-base font-medium text-muted-foreground">
                 {isDone ? 'All done' : `Step ${stepIndex + 1} of ${totalSteps}`}
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground">
                 {completed.size} completed
               </span>
-              <span className="text-sm md:text-base text-muted-foreground">·</span>
-              <span className="text-sm md:text-base text-muted-foreground inline-flex items-center gap-1">
+              <span className="text-base md:text-base text-muted-foreground">·</span>
+              <span className="text-base md:text-base text-muted-foreground inline-flex items-center gap-1">
                 <Clock className="w-4 h-4" />
                 {wizard.estTime}
               </span>
@@ -1812,10 +1812,10 @@ export default function LibraryTechHelper() {
 
               {/* Stumble */}
               {current.stumble && (
-                <Card className="bg-amber-50 dark:bg-amber-950/20 border-amber-500/40">
+                <Card className="bg-warn border-amber-500/40">
                   <CardContent className="p-5 flex items-start gap-3">
                     <Lightbulb
-                      className="w-6 h-6 text-amber-700 dark:text-amber-400 shrink-0 mt-0.5"
+                      className="w-6 h-6 text-warn-foreground shrink-0 mt-0.5"
                       aria-hidden="true"
                     />
                     <div>

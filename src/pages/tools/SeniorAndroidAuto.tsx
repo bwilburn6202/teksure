@@ -19,10 +19,10 @@ export default function SeniorAndroidAuto() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">What it does</h2><p>Plug Android phone into car. Phone screen on dashboard. Big senior-friendly icons.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Compatible cars</h2><p>Most 2017+ cars. Check androidauto.com for full list.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice control</h2><p>&ldquo;Hey Google&rdquo; or steering wheel button. Same as CarPlay for Apple.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Top apps</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Google Maps or Waze</li><li>YouTube Music</li><li>Spotify</li><li>Audible</li><li>Phone calls</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Top apps</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Google Maps or Waze</li><li>YouTube Music</li><li>Spotify</li><li>Audible</li><li>Phone calls</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Wireless</h2><p>Newer cars connect via Bluetooth. No cable.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">No Android Auto?</h2><p>Use Google Maps Driving Mode instead. Same idea, on phone screen.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 90% of distracted driving accidents involve phones. Android Auto = much safer.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 90% of distracted driving accidents involve phones. Android Auto = much safer.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

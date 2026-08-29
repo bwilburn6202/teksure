@@ -31,10 +31,10 @@ export default function NewsAppCompare() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,7 +43,7 @@ export default function NewsAppCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Most-trusted sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Associated Press (AP)</strong> — wire service. Used by everyone.</li>
               <li><strong>Reuters</strong> — same. Just facts.</li>
               <li><strong>NPR / PBS</strong> — public radio + TV. Mixed audience trust.</li>
@@ -57,7 +57,7 @@ export default function NewsAppCompare() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Reduce news anxiety</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Read news 1-2 times/day (not all day).</li>
               <li>Set time limit — 15 min morning, 15 min evening.</li>
               <li>Avoid notifications (kills focus + raises stress).</li>
@@ -71,7 +71,7 @@ export default function NewsAppCompare() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Print is OK</h3>
-            <p className="text-sm text-muted-foreground">Many seniors prefer paper newspaper. Slower-paced. No notifications. Comfortable. Costs more, but real benefits. Don&apos;t feel obligated to "go digital".</p>
+            <p className="text-base text-muted-foreground">Many seniors prefer paper newspaper. Slower-paced. No notifications. Comfortable. Costs more, but real benefits. Don&apos;t feel obligated to "go digital".</p>
           </CardContent>
         </Card>
       </main>

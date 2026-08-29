@@ -119,7 +119,7 @@ export default function AggregatedArticlePage() {
               </span>
 
               {/* Read time */}
-              <span className="flex items-center gap-1.5 text-sm text-muted-foreground">
+              <span className="flex items-center gap-1.5 text-base text-muted-foreground">
                 <Clock className="h-4 w-4" aria-hidden="true" />
                 {article.readTime}
               </span>
@@ -173,15 +173,15 @@ export default function AggregatedArticlePage() {
                       <h2 className="text-base font-semibold text-foreground mb-2 leading-snug">
                         {step.title}
                       </h2>
-                      <p className="text-sm text-foreground/85 leading-relaxed mb-3">
+                      <p className="text-base text-foreground/85 leading-relaxed mb-3">
                         {step.content}
                       </p>
 
                       {/* Tip box */}
                       {step.tip && (
-                        <div className="flex gap-2.5 p-3 rounded-lg bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 mb-3">
-                          <Lightbulb className="h-4 w-4 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
-                          <p className="text-sm text-amber-900 dark:text-amber-100 leading-relaxed">
+                        <div className="flex gap-2.5 p-3 rounded-lg bg-warn border border-warn-foreground/25 mb-3">
+                          <Lightbulb className="h-4 w-4 text-warn-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                          <p className="text-base text-warn-foreground leading-relaxed">
                             <strong>Tip: </strong>{step.tip}
                           </p>
                         </div>
@@ -189,9 +189,9 @@ export default function AggregatedArticlePage() {
 
                       {/* Warning box */}
                       {step.warning && (
-                        <div className="flex gap-2.5 p-3 rounded-lg bg-red-50 dark:bg-red-950/20 border border-red-200 dark:border-red-800 mb-3">
-                          <AlertTriangle className="h-4 w-4 text-red-600 dark:text-red-400 shrink-0 mt-0.5" aria-hidden="true" />
-                          <p className="text-sm text-red-900 dark:text-red-100 leading-relaxed">
+                        <div className="flex gap-2.5 p-3 rounded-lg bg-danger border border-danger-foreground/25 mb-3">
+                          <AlertTriangle className="h-4 w-4 text-danger-foreground shrink-0 mt-0.5" aria-hidden="true" />
+                          <p className="text-base text-danger-foreground leading-relaxed">
                             <strong>Important: </strong>{step.warning}
                           </p>
                         </div>
@@ -208,12 +208,12 @@ export default function AggregatedArticlePage() {
                 {feedbackGiven ? (
                   <div>
                     <p className="text-lg font-semibold text-foreground mb-1">Thank you for your feedback!</p>
-                    <p className="text-sm text-muted-foreground">Your input helps us make TekSure better for everyone.</p>
+                    <p className="text-base text-muted-foreground">Your input helps us make TekSure better for everyone.</p>
                   </div>
                 ) : (
                   <div>
                     <p className="text-base font-semibold text-foreground mb-1">Was this article helpful?</p>
-                    <p className="text-sm text-muted-foreground mb-4">Your feedback helps us improve our guides.</p>
+                    <p className="text-base text-muted-foreground mb-4">Your feedback helps us improve our guides.</p>
                     <div className="flex items-center justify-center gap-3">
                       <Button
                         variant="outline"
@@ -239,19 +239,19 @@ export default function AggregatedArticlePage() {
               </div>
 
               {/* Transparency note */}
-              <div className="mt-6 p-4 rounded-xl bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800">
-                <p className="text-xs text-blue-700 dark:text-blue-300 leading-relaxed">
+              <div className="mt-6 p-4 rounded-xl bg-info border border-info-foreground/25 ">
+                <p className="text-sm text-info-foreground leading-relaxed">
                   <strong>About this article:</strong> This guide was simplified and rewritten by TekSure from content originally published by <strong>{source.name}</strong>.
                   We make it easier to read for everyday users — no jargon, just plain steps.{' '}
                   <a
                     href={article.originalUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="underline underline-offset-2 hover:text-blue-900 dark:hover:text-blue-100"
+                    className="underline underline-offset-2 hover:text-info-foreground "
                   >
                     View the original article.
                   </a>{' '}
-                  <Link to="/sources" className="underline underline-offset-2 hover:text-blue-900 dark:hover:text-blue-100">
+                  <Link to="/sources" className="underline underline-offset-2 hover:text-info-foreground ">
                     Learn about our content sources.
                   </Link>
                 </p>

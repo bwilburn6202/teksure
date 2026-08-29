@@ -22,7 +22,7 @@ export default function SeniorTranslationTravel() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Download offline</h2><p>Before flight. Free without data abroad. Critical.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Camera translate</h2><p>Point at menu, sign. Instant translation overlay.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Air translation</h2><p>AirPods + iPhone Live Translate. Real-time conversation.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Free Google Translate offline = $300 device equivalent. Save money.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Free Google Translate offline = $300 device equivalent. Save money.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

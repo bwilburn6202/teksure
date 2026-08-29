@@ -19,10 +19,10 @@ export default function SeniorTelevet() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pawp</h2><p>$24/month for unlimited 24/7 vet calls. $3,000 emergency fund included.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Vetster</h2><p>$50-$80 per video visit. Pay per visit. Real licensed vets.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Chewy Connect with a Vet</h2><p>Free for autoship customers. 24/7 chat.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Skin issues</li><li>Mild stomach upset</li><li>Behavior questions</li><li>Med refills</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Best for</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Skin issues</li><li>Mild stomach upset</li><li>Behavior questions</li><li>Med refills</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Not for emergencies</h2><p>Bleeding, breathing trouble, won&apos;t eat 24+ hours — go to a real vet ER.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Save money</h2><p>$50 video visit beats a $200 vet visit for minor issues.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Have a list of pet&apos;s symptoms ready. Saves time on the call.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Have a list of pet&apos;s symptoms ready. Saves time on the call.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

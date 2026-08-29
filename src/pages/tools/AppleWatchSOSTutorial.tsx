@@ -19,7 +19,7 @@ export default function AppleWatchSOSTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">What it does</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Detects falls automatically.</li>
               <li>Calls 911 if you can&apos;t respond.</li>
               <li>Texts emergency contacts your location.</li>
@@ -33,7 +33,7 @@ export default function AppleWatchSOSTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Set up Fall Detection</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>iPhone Watch app → My Watch → Emergency SOS.</li>
               <li>Toggle Fall Detection ON.</li>
               <li>Choose &quot;Always On&quot; (for seniors recommended).</li>
@@ -47,7 +47,7 @@ export default function AppleWatchSOSTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Emergency Contacts</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Open Health app on iPhone.</li>
               <li>Tap your photo — Medical ID.</li>
               <li>Add Emergency Contacts.</li>
@@ -61,7 +61,7 @@ export default function AppleWatchSOSTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Manual SOS (any time)</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Hold side button until SOS slider appears.</li>
               <li>Slide right — calls 911 immediately.</li>
               <li>Or release button + tap SOS.</li>
@@ -75,7 +75,7 @@ export default function AppleWatchSOSTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Cellular vs GPS</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>GPS-only watch needs iPhone nearby.</li>
               <li>Cellular watch works alone.</li>
               <li>Cellular adds $10/month.</li>
@@ -89,7 +89,7 @@ export default function AppleWatchSOSTutorial() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Recommended models</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Apple Watch SE — $249 GPS or $299 cellular.</li>
               <li>Series 10 — $399+ for newer features.</li>
               <li>Series 4+ all have fall detection.</li>
@@ -103,7 +103,7 @@ export default function AppleWatchSOSTutorial() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Test it once</h3>
-            <p className="text-sm text-muted-foreground">After setting up, do a practice run. Hold the side button until SOS slider appears. Cancel before it dials. This way you know exactly how to trigger it in a real emergency. Cost of an Apple Watch SE cellular ($299 + $10/month) is comparable to Medical Guardian, but with way more features. Best senior safety device available.</p>
+            <p className="text-base text-muted-foreground">After setting up, do a practice run. Hold the side button until SOS slider appears. Cancel before it dials. This way you know exactly how to trigger it in a real emergency. Cost of an Apple Watch SE cellular ($299 + $10/month) is comparable to Medical Guardian, but with way more features. Best senior safety device available.</p>
           </CardContent>
         </Card>
       </main>

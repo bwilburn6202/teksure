@@ -96,7 +96,7 @@ export default function SocialSecuritySetup() {
           <div className="container max-w-3xl mx-auto text-center">
             <div className="flex justify-center mb-3">
               <div className="p-3 bg-blue-500/10 rounded-full">
-                <Shield className="h-8 w-8 text-blue-600" />
+                <Shield className="h-8 w-8 text-info-foreground" />
               </div>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">My Social Security Setup</h1>
@@ -109,9 +109,9 @@ export default function SocialSecuritySetup() {
         <div className="container max-w-3xl mx-auto px-4 py-8">
           <PageBreadcrumb segments={[{ label: 'Tools', href: '/tools' }, { label: 'My Social Security Setup' }]} />
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20 mb-6">
+          <Card className="border-warn-foreground/25 bg-warn mb-6">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Even if you are not retired yet — set this up</p>
                 <p className="text-muted-foreground">
@@ -121,7 +121,7 @@ export default function SocialSecuritySetup() {
             </CardContent>
           </Card>
 
-          <p className="text-sm text-muted-foreground mb-3">{done.size} of {total} done</p>
+          <p className="text-base text-muted-foreground mb-3">{done.size} of {total} done</p>
 
           {SECTIONS.map(s => {
             const Icon = s.icon;
@@ -133,7 +133,7 @@ export default function SocialSecuritySetup() {
                   </div>
                   <div>
                     <h2 className="text-xl font-bold">{s.title}</h2>
-                    <p className="text-xs text-muted-foreground italic mt-0.5">{s.why}</p>
+                    <p className="text-sm text-muted-foreground italic mt-0.5">{s.why}</p>
                   </div>
                 </div>
                 <Card className="border-border">
@@ -146,8 +146,8 @@ export default function SocialSecuritySetup() {
                           }`}>
                           <Checkbox checked={done.has(step.id)} onCheckedChange={() => toggle(step.id)} className="mt-1" />
                           <div className="flex-1">
-                            <p className={`font-medium text-sm ${done.has(step.id) ? 'line-through text-muted-foreground' : ''}`}>{step.title}</p>
-                            <p className="text-xs text-muted-foreground mt-1">{step.detail}</p>
+                            <p className={`font-medium text-base ${done.has(step.id) ? 'line-through text-muted-foreground' : ''}`}>{step.title}</p>
+                            <p className="text-sm text-muted-foreground mt-1">{step.detail}</p>
                           </div>
                         </label>
                       ))}
@@ -160,8 +160,8 @@ export default function SocialSecuritySetup() {
 
           <Card className="border-border mb-6">
             <CardContent className="p-5">
-              <p className="text-sm font-semibold mb-3">Useful direct links</p>
-              <ul className="space-y-2 text-sm">
+              <p className="text-base font-semibold mb-3">Useful direct links</p>
+              <ul className="space-y-2 text-base">
                 <li><a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">ssa.gov/myaccount <ExternalLink className="h-3 w-3" /></a> — main login</li>
                 <li><a href="https://secure.ssa.gov/RIL/SiView.do" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">Estimate Benefits <ExternalLink className="h-3 w-3" /></a> — public calculator (no account needed)</li>
                 <li><a href="https://faq.ssa.gov" target="_blank" rel="noreferrer" className="text-primary hover:underline inline-flex items-center gap-1">faq.ssa.gov <ExternalLink className="h-3 w-3" /></a> — official FAQs</li>
@@ -169,9 +169,9 @@ export default function SocialSecuritySetup() {
             </CardContent>
           </Card>
 
-          <Card className="border-amber-300 bg-amber-50 dark:bg-amber-950/20">
+          <Card className="border-warn-foreground/25 bg-warn ">
             <CardContent className="p-5 flex gap-3">
-              <AlertTriangle className="h-5 w-5 text-amber-600 shrink-0 mt-0.5" />
+              <AlertTriangle className="h-5 w-5 text-warn-foreground shrink-0 mt-0.5" />
               <div className="text-sm">
                 <p className="font-semibold mb-1">Watch for "SSA" calls</p>
                 <p className="text-muted-foreground">
@@ -185,16 +185,16 @@ export default function SocialSecuritySetup() {
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
               <Link to="/tools/medicare-plan-chooser" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Medicare Plan Chooser</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Pair with the right Medicare plan.</p>
+                <p className="font-medium text-base">Medicare Plan Chooser</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Pair with the right Medicare plan.</p>
               </Link>
               <Link to="/tools/id-theft-recovery" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">ID Theft Recovery</p>
-                <p className="text-xs text-muted-foreground mt-0.5">If something has gone wrong.</p>
+                <p className="font-medium text-base">ID Theft Recovery</p>
+                <p className="text-sm text-muted-foreground mt-0.5">If something has gone wrong.</p>
               </Link>
               <Link to="/tools/password-health" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                <p className="font-medium text-sm">Password Health Check</p>
-                <p className="text-xs text-muted-foreground mt-0.5">Strong passphrase first.</p>
+                <p className="font-medium text-base">Password Health Check</p>
+                <p className="text-sm text-muted-foreground mt-0.5">Strong passphrase first.</p>
               </Link>
             </div>
           </div>

@@ -31,10 +31,10 @@ export default function RecipeMealApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm mb-1">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base mb-1">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -43,27 +43,27 @@ export default function RecipeMealApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Save your family\'s old recipes</h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm">
+            <ol className="list-decimal pl-5 space-y-2 text-base">
               <li>Take a photo of the handwritten recipe card.</li>
               <li>In Apple Notes (or Google Keep) — tap and hold the photo → "Look Up" or use Live Text — many handwriting becomes selectable text you can copy.</li>
               <li>Paste it into Paprika, Apple Notes, or a shared Google Doc with family.</li>
               <li>Add the photo of the original card to keep that personal touch.</li>
             </ol>
-            <p className="text-sm mt-2">An afternoon with grandma\'s recipe box, scanned into Paprika, is one of the best gifts a family can give itself.</p>
+            <p className="text-base mt-2">An afternoon with grandma\'s recipe box, scanned into Paprika, is one of the best gifts a family can give itself.</p>
           </CardContent>
         </Card>
 
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Just ask AI for help</h2>
-            <p className="text-sm">"I have chicken thighs, broccoli, and rice. What\'s a 30-minute dinner?" — open ChatGPT, Claude, or Google Gemini. They\'re great at recipe ideas based on what\'s in your fridge.</p>
+            <p className="text-base">"I have chicken thighs, broccoli, and rice. What\'s a 30-minute dinner?" — open ChatGPT, Claude, or Google Gemini. They\'re great at recipe ideas based on what\'s in your fridge.</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Quick Tip — print a few favorites</h3>
-            <p className="text-sm text-muted-foreground">For recipes you make 50 times a year, print the page and put it in a plastic sheet protector in a binder. Recipe apps come and go, but a printed binder lasts decades and survives spaghetti splatters.</p>
+            <p className="text-base text-muted-foreground">For recipes you make 50 times a year, print the page and put it in a plastic sheet protector in a binder. Recipe apps come and go, but a printed binder lasts decades and survives spaghetti splatters.</p>
           </CardContent>
         </Card>
       </main>

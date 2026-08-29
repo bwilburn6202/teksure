@@ -22,7 +22,7 @@ export default function SeniorPandoraTips() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Thumbs up/down</h2><p>Pandora learns your taste. Better recommendations over time.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice control</h2><p>&ldquo;Alexa, play Pandora.&rdquo; Resumes your station.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Easier than Spotify</h2><p>Type a song name. Music starts. No playlists to build.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Pandora is best for seniors who want music without thinking about it.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Pandora is best for seniors who want music without thinking about it.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

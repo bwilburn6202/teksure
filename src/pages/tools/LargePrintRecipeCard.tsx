@@ -25,7 +25,7 @@ export default function LargePrintRecipeCard() {
   const filled = !!(title || ingredients || instructions);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Large-Print Recipe Card | TekSure"
         description="Make a clean, large-print recipe card you can read while cooking. Easy on the eyes, perfect for the kitchen."
@@ -34,10 +34,10 @@ export default function LargePrintRecipeCard() {
       <div className="max-w-3xl mx-auto px-4 py-8 print:p-0 print:max-w-full">
         <div className="mb-6 print:hidden">
           <div className="flex items-center gap-2 mb-1">
-            <ChefHat className="h-7 w-7 text-orange-600" />
-            <h1 className="text-3xl font-bold text-gray-900">Large-Print Recipe Card</h1>
+            <ChefHat className="h-7 w-7 text-warn-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Large-Print Recipe Card</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Type in your favorite family recipe. Print a large-text card to keep in the kitchen.
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function LargePrintRecipeCard() {
                 placeholder={"2 cups flour\n1 cup sugar\n3 ripe bananas, mashed\n1/2 cup butter, softened\n2 eggs\n1 tsp baking soda"}
                 value={ingredients}
                 onChange={e => setIngredients(e.target.value)}
-                className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white"
+                className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card"
               />
             </div>
             <div>
@@ -85,7 +85,7 @@ export default function LargePrintRecipeCard() {
                 placeholder={"Heat oven to 350°F.\nGrease a loaf pan.\nMix flour, sugar, and baking soda.\nIn another bowl, mash bananas, then add butter and eggs.\nCombine wet and dry ingredients.\nPour into pan and bake 45 minutes."}
                 value={instructions}
                 onChange={e => setInstructions(e.target.value)}
-                className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white"
+                className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card"
               />
             </div>
             <div>
@@ -97,10 +97,10 @@ export default function LargePrintRecipeCard() {
 
         {/* Preview / printable card */}
         {filled && (
-          <div className="border-2 border-orange-400 rounded-2xl bg-white p-8 print:border-2 print:rounded-none print:p-6 print:break-inside-avoid">
-            {title && <h2 className="text-4xl font-bold text-orange-700 mb-4 print:text-5xl">{title}</h2>}
+          <div className="border-2 border-orange-400 rounded-2xl bg-card p-8 print:border-2 print:rounded-none print:p-6 print:break-inside-avoid">
+            {title && <h2 className="text-4xl font-bold text-warn-foreground mb-4 print:text-5xl">{title}</h2>}
             {(servings || prepTime || cookTime) && (
-              <div className="flex flex-wrap gap-x-6 gap-y-1 text-base mb-5 pb-3 border-b border-gray-200">
+              <div className="flex flex-wrap gap-x-6 gap-y-1 text-base mb-5 pb-3 border-b border-border">
                 {servings && <span><span className="font-semibold">Serves:</span> {servings}</span>}
                 {prepTime && <span><span className="font-semibold">Prep:</span> {prepTime}</span>}
                 {cookTime && <span><span className="font-semibold">Cook:</span> {cookTime}</span>}
@@ -108,7 +108,7 @@ export default function LargePrintRecipeCard() {
             )}
             {ingredientLines.length > 0 && (
               <div className="mb-5">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2 print:text-3xl">Ingredients</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-2 print:text-3xl">Ingredients</h3>
                 <ul className="list-disc pl-6 space-y-1.5 text-xl print:text-2xl">
                   {ingredientLines.map((line, i) => <li key={i}>{line}</li>)}
                 </ul>
@@ -116,14 +116,14 @@ export default function LargePrintRecipeCard() {
             )}
             {instructionLines.length > 0 && (
               <div className="mb-3">
-                <h3 className="text-2xl font-bold text-gray-800 mb-2 print:text-3xl">Instructions</h3>
+                <h3 className="text-2xl font-bold text-foreground mb-2 print:text-3xl">Instructions</h3>
                 <ol className="list-decimal pl-6 space-y-2 text-xl print:text-2xl">
                   {instructionLines.map((line, i) => <li key={i}>{line}</li>)}
                 </ol>
               </div>
             )}
             {notes && (
-              <div className="mt-4 pt-3 border-t border-gray-200 text-base italic text-gray-600">
+              <div className="mt-4 pt-3 border-t border-border text-base italic text-muted-foreground">
                 {notes}
               </div>
             )}
@@ -135,21 +135,21 @@ export default function LargePrintRecipeCard() {
             <Printer className="h-4 w-4" />
             Print Recipe Card
           </Button>
-          <Button variant="ghost" onClick={reset} className="gap-2 text-gray-500">
+          <Button variant="ghost" onClick={reset} className="gap-2 text-muted-foreground">
             <RotateCcw className="h-4 w-4" />
             Clear
           </Button>
         </div>
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Slip the printed card into a clear plastic sleeve to keep splatters off. You can wipe it clean and reuse it for years.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

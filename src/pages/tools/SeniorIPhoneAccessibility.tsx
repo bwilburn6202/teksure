@@ -22,7 +22,7 @@ export default function SeniorIPhoneAccessibility() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Speak Selection</h2><p>Highlight any text. Tap &ldquo;Speak.&rdquo; iPhone reads it aloud.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hearing aids</h2><p>Pair Made-for-iPhone hearing aids. Calls stream straight in.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Live Captions</h2><p>Auto-captions on calls, FaceTime, videos. Free and life-changing.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Settings → Accessibility → Triple-Click Side Button. Pick magnifier or zoom for one-button access.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Settings → Accessibility → Triple-Click Side Button. Pick magnifier or zoom for one-button access.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -332,9 +332,9 @@ function KpiCard({ icon, label, value, sub, color }: { icon: React.ReactNode; la
         <div className="flex items-center gap-3">
           <div className={`${color}`}>{icon}</div>
           <div>
-            <p className="text-xs text-muted-foreground">{label}</p>
+            <p className="text-sm text-muted-foreground">{label}</p>
             <p className="text-xl font-bold">{value}</p>
-            <p className="text-xs text-muted-foreground">{sub}</p>
+            <p className="text-sm text-muted-foreground">{sub}</p>
           </div>
         </div>
       </CardContent>

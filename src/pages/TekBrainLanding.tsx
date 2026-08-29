@@ -80,18 +80,18 @@ export default function TekBrainLanding() {
 
           <div className="relative container max-w-4xl px-4 py-16 md:py-24 text-center">
             {/* Brand chip so the page feels like part of the TekSure family. */}
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-white border border-violet-200 shadow-lg shadow-violet-200/30 mb-8">
-              <Brain className="h-10 w-10 text-violet-600" aria-hidden="true" />
+            <div className="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-card border border-primary/25 shadow-lg shadow-violet-200/30 mb-8">
+              <Brain className="h-10 w-10 text-primary" aria-hidden="true" />
             </div>
 
             <h1
               id="tekbrain-hero-heading"
-              className="text-4xl md:text-6xl font-bold tracking-tight text-slate-900 mb-6 text-balance leading-[1.08]"
+              className="text-4xl md:text-6xl font-bold tracking-tight text-foreground mb-6 text-balance leading-[1.08]"
             >
               Meet <span className="text-[#2A5FCC]">TekBrain</span> — Your AI Tech Helper
             </h1>
 
-            <p className="text-xl md:text-2xl text-slate-700 leading-relaxed max-w-2xl mx-auto mb-10">
+            <p className="text-xl md:text-2xl text-foreground leading-relaxed max-w-2xl mx-auto mb-10">
               Ask any tech question, get answers in plain English.
             </p>
 
@@ -109,23 +109,23 @@ export default function TekBrainLanding() {
             </div>
 
             {/* Trust note — row of pill-badges on desktop, stacked on mobile. */}
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-base md:text-lg text-slate-600 font-medium">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-base md:text-lg text-muted-foreground font-medium">
               <span className="inline-flex items-center gap-2">
-                <Check className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+                <Check className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                 Free
               </span>
-              <span className="hidden md:inline text-slate-300" aria-hidden="true">
+              <span className="hidden md:inline text-muted-foreground" aria-hidden="true">
                 ·
               </span>
               <span className="inline-flex items-center gap-2">
-                <Check className="h-5 w-5 text-emerald-600" aria-hidden="true" />
+                <Check className="h-5 w-5 text-success-foreground" aria-hidden="true" />
                 No signup
               </span>
-              <span className="hidden md:inline text-slate-300" aria-hidden="true">
+              <span className="hidden md:inline text-muted-foreground" aria-hidden="true">
                 ·
               </span>
               <span className="inline-flex items-center gap-2">
-                <BookOpen className="h-5 w-5 text-amber-600" aria-hidden="true" />
+                <BookOpen className="h-5 w-5 text-warn-foreground" aria-hidden="true" />
                 Powered by 1,800+ expert guides
               </span>
             </div>
@@ -140,11 +140,11 @@ export default function TekBrainLanding() {
           <div className="text-center mb-12">
             <h2
               id="tekbrain-how-heading"
-              className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-3"
+              className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-3"
             >
               How it works
             </h2>
-            <p className="text-lg md:text-xl text-slate-600">
+            <p className="text-lg md:text-xl text-muted-foreground">
               Three simple steps. No tech jargon required.
             </p>
           </div>
@@ -152,28 +152,28 @@ export default function TekBrainLanding() {
           <ol className="grid gap-6 md:grid-cols-3">
             {/* Step 1 — plain-words input */}
             <li>
-              <Card className="h-full border-2 border-amber-100 bg-white shadow-sm hover:shadow-md transition-shadow">
+              <Card className="h-full border-2 border-amber-100 bg-card shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-7 md:p-8">
                   <div className="flex items-center gap-3 mb-5">
                     <span
                       aria-hidden="true"
-                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-amber-100 text-amber-700 font-bold text-lg"
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-warn text-warn-foreground font-bold text-lg"
                     >
                       1
                     </span>
-                    <span className="text-sm font-semibold tracking-wide uppercase text-amber-700">
+                    <span className="text-sm font-semibold tracking-wide uppercase text-warn-foreground">
                       Step 1
                     </span>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">
                     Type your question in plain words
                   </h3>
-                  <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-5">
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-5">
                     No special terms, no perfect spelling. Just ask like you would a friend.
                   </p>
                   {/* Visual example — a faux chat input */}
-                  <div className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
-                    <p className="text-base md:text-lg text-slate-700 italic">
+                  <div className="rounded-xl border border-border bg-muted px-4 py-3">
+                    <p className="text-base md:text-lg text-foreground italic">
                       “My WiFi keeps dropping”
                     </p>
                   </div>
@@ -183,42 +183,42 @@ export default function TekBrainLanding() {
 
             {/* Step 2 — finds the right guide */}
             <li>
-              <Card className="h-full border-2 border-amber-100 bg-white shadow-sm hover:shadow-md transition-shadow">
+              <Card className="h-full border-2 border-amber-100 bg-card shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-7 md:p-8">
                   <div className="flex items-center gap-3 mb-5">
                     <span
                       aria-hidden="true"
-                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-amber-100 text-amber-700 font-bold text-lg"
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-warn text-warn-foreground font-bold text-lg"
                     >
                       2
                     </span>
-                    <span className="text-sm font-semibold tracking-wide uppercase text-amber-700">
+                    <span className="text-sm font-semibold tracking-wide uppercase text-warn-foreground">
                       Step 2
                     </span>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">
                     TekBrain finds the right guide for you
                   </h3>
-                  <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-5">
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-5">
                     It searches 1,800+ TekSure guides and picks the ones that actually match your question.
                   </p>
                   {/* Visual example — stacked guide cards */}
                   <div className="space-y-2">
-                    <div className="flex items-center gap-3 rounded-lg border border-amber-200 bg-amber-50/70 px-3 py-2.5">
-                      <BookOpen className="h-4 w-4 text-amber-700 shrink-0" aria-hidden="true" />
-                      <span className="text-sm md:text-base font-medium text-slate-800 truncate">
+                    <div className="flex items-center gap-3 rounded-lg border border-warn-foreground/25 bg-amber-50/70 px-3 py-2.5">
+                      <BookOpen className="h-4 w-4 text-warn-foreground shrink-0" aria-hidden="true" />
+                      <span className="text-sm md:text-base font-medium text-foreground truncate">
                         Fix slow or dropping WiFi
                       </span>
                     </div>
-                    <div className="flex items-center gap-3 rounded-lg border border-slate-200 bg-white px-3 py-2.5">
-                      <BookOpen className="h-4 w-4 text-slate-500 shrink-0" aria-hidden="true" />
-                      <span className="text-sm md:text-base text-slate-700 truncate">
+                    <div className="flex items-center gap-3 rounded-lg border border-border bg-card px-3 py-2.5">
+                      <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" aria-hidden="true" />
+                      <span className="text-sm md:text-base text-foreground truncate">
                         Restart your router safely
                       </span>
                     </div>
-                    <div className="flex items-center gap-3 rounded-lg border border-slate-200 bg-white px-3 py-2.5">
-                      <BookOpen className="h-4 w-4 text-slate-500 shrink-0" aria-hidden="true" />
-                      <span className="text-sm md:text-base text-slate-700 truncate">
+                    <div className="flex items-center gap-3 rounded-lg border border-border bg-card px-3 py-2.5">
+                      <BookOpen className="h-4 w-4 text-muted-foreground shrink-0" aria-hidden="true" />
+                      <span className="text-sm md:text-base text-foreground truncate">
                         Check your internet speed
                       </span>
                     </div>
@@ -229,23 +229,23 @@ export default function TekBrainLanding() {
 
             {/* Step 3 — step-by-step chat with follow-ups */}
             <li>
-              <Card className="h-full border-2 border-amber-100 bg-white shadow-sm hover:shadow-md transition-shadow">
+              <Card className="h-full border-2 border-amber-100 bg-card shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-7 md:p-8">
                   <div className="flex items-center gap-3 mb-5">
                     <span
                       aria-hidden="true"
-                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-amber-100 text-amber-700 font-bold text-lg"
+                      className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-warn text-warn-foreground font-bold text-lg"
                     >
                       3
                     </span>
-                    <span className="text-sm font-semibold tracking-wide uppercase text-amber-700">
+                    <span className="text-sm font-semibold tracking-wide uppercase text-warn-foreground">
                       Step 3
                     </span>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground mb-3">
                     Get step-by-step help, or ask follow-ups
                   </h3>
-                  <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-5">
+                  <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-5">
                     Read the answer at your own pace. Stuck? Just ask another question — it remembers the conversation.
                   </p>
                   {/* Visual example — tiny chat bubbles */}
@@ -256,7 +256,7 @@ export default function TekBrainLanding() {
                       </div>
                     </div>
                     <div className="flex justify-start">
-                      <div className="rounded-2xl rounded-tl-sm bg-slate-100 text-slate-800 px-3.5 py-2 text-sm md:text-base max-w-[85%]">
+                      <div className="rounded-2xl rounded-tl-sm bg-muted text-foreground px-3.5 py-2 text-sm md:text-base max-w-[85%]">
                         No — your WiFi name and password will stay the same.
                       </div>
                     </div>
@@ -276,11 +276,11 @@ export default function TekBrainLanding() {
             <div className="text-center mb-10">
               <h2
                 id="tekbrain-examples-heading"
-                className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-3"
+                className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-3"
               >
                 Not sure where to start?
               </h2>
-              <p className="text-lg md:text-xl text-slate-600">
+              <p className="text-lg md:text-xl text-muted-foreground">
                 Tap one of these questions to jump right in.
               </p>
             </div>
@@ -294,19 +294,19 @@ export default function TekBrainLanding() {
                   <button
                     type="button"
                     onClick={() => startWithExample(q)}
-                    className="group w-full text-left h-full p-5 md:p-6 rounded-2xl border-2 border-amber-200 bg-white hover:border-amber-500 hover:bg-amber-50/60 focus:outline-none focus-visible:ring-4 focus-visible:ring-amber-500/40 focus-visible:border-amber-500 transition-all min-h-[120px] shadow-sm hover:shadow-md hover:-translate-y-0.5"
+                    className="group w-full text-left h-full p-5 md:p-6 rounded-2xl border-2 border-warn-foreground/25 bg-card hover:border-amber-500 hover:bg-amber-50/60 focus:outline-none focus-visible:ring-4 focus-visible:ring-amber-500/40 focus-visible:border-amber-500 transition-all min-h-[120px] shadow-sm hover:shadow-md hover:-translate-y-0.5"
                     aria-label={`Ask TekBrain: ${q}`}
                   >
                     <div className="flex items-start justify-between gap-3 mb-3">
-                      <span className="text-xs font-semibold uppercase tracking-wide text-amber-700 bg-amber-100 rounded-full px-2.5 py-1">
+                      <span className="text-xs font-semibold uppercase tracking-wide text-warn-foreground bg-warn rounded-full px-2.5 py-1">
                         {tag}
                       </span>
                       <ArrowRight
-                        className="h-5 w-5 text-slate-400 group-hover:text-amber-600 group-hover:translate-x-0.5 transition-all shrink-0 mt-0.5"
+                        className="h-5 w-5 text-muted-foreground group-hover:text-warn-foreground group-hover:translate-x-0.5 transition-all shrink-0 mt-0.5"
                         aria-hidden="true"
                       />
                     </div>
-                    <p className="text-lg md:text-xl font-semibold text-slate-800 leading-snug">
+                    <p className="text-lg md:text-xl font-semibold text-foreground leading-snug">
                       {q}
                     </p>
                   </button>
@@ -324,18 +324,18 @@ export default function TekBrainLanding() {
           <div className="text-center mb-12">
             <h2
               id="tekbrain-strengths-heading"
-              className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900 mb-3"
+              className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-3"
             >
               What TekBrain can (and can’t) do
             </h2>
-            <p className="text-lg md:text-xl text-slate-600">
+            <p className="text-lg md:text-xl text-muted-foreground">
               A quick, honest look at what you’ll get.
             </p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
             {/* Good at */}
-            <Card className="border-2 border-emerald-200 bg-emerald-50/40">
+            <Card className="border-2 border-success-foreground/25 bg-emerald-50/40">
               <CardContent className="p-7 md:p-8">
                 <div className="flex items-center gap-3 mb-5">
                   <div
@@ -344,7 +344,7 @@ export default function TekBrainLanding() {
                   >
                     <Check className="h-6 w-6" />
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-emerald-900">
+                  <h3 className="text-xl md:text-2xl font-bold text-success-foreground">
                     Good at
                   </h3>
                 </div>
@@ -357,10 +357,10 @@ export default function TekBrainLanding() {
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <Check
-                        className="h-5 w-5 text-emerald-600 mt-1 shrink-0"
+                        className="h-5 w-5 text-success-foreground mt-1 shrink-0"
                         aria-hidden="true"
                       />
-                      <span className="text-base md:text-lg text-slate-800 leading-relaxed">
+                      <span className="text-base md:text-lg text-foreground leading-relaxed">
                         {item}
                       </span>
                     </li>
@@ -370,7 +370,7 @@ export default function TekBrainLanding() {
             </Card>
 
             {/* Not good at */}
-            <Card className="border-2 border-slate-200 bg-slate-50/60">
+            <Card className="border-2 border-border bg-slate-50/60">
               <CardContent className="p-7 md:p-8">
                 <div className="flex items-center gap-3 mb-5">
                   <div
@@ -379,7 +379,7 @@ export default function TekBrainLanding() {
                   >
                     <X className="h-6 w-6" />
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold text-slate-900">
+                  <h3 className="text-xl md:text-2xl font-bold text-foreground">
                     Not good at
                   </h3>
                 </div>
@@ -391,16 +391,16 @@ export default function TekBrainLanding() {
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <X
-                        className="h-5 w-5 text-slate-500 mt-1 shrink-0"
+                        className="h-5 w-5 text-muted-foreground mt-1 shrink-0"
                         aria-hidden="true"
                       />
-                      <span className="text-base md:text-lg text-slate-700 leading-relaxed">
+                      <span className="text-base md:text-lg text-foreground leading-relaxed">
                         {item}
                       </span>
                     </li>
                   ))}
                 </ul>
-                <p className="text-sm md:text-base text-slate-500 mt-5 pt-5 border-t border-slate-200 leading-relaxed">
+                <p className="text-base md:text-base text-muted-foreground mt-5 pt-5 border-t border-border leading-relaxed">
                   Need hands-on help? You can always{' '}
                   <a
                     href="/get-help"
@@ -421,7 +421,7 @@ export default function TekBrainLanding() {
           className="bg-[#FAF8F4] border-y border-amber-100"
         >
           <div className="container max-w-3xl px-4 py-16 md:py-20">
-            <Card className="border-2 border-[#2A5FCC]/20 bg-white shadow-md">
+            <Card className="border-2 border-[#2A5FCC]/20 bg-card shadow-md">
               <CardContent className="p-8 md:p-10">
                 <div className="flex flex-col md:flex-row md:items-start gap-6">
                   <div
@@ -433,11 +433,11 @@ export default function TekBrainLanding() {
                   <div className="flex-1 text-center md:text-left">
                     <h2
                       id="tekbrain-privacy-heading"
-                      className="text-2xl md:text-3xl font-bold text-slate-900 mb-3"
+                      className="text-2xl md:text-3xl font-bold text-foreground mb-3"
                     >
                       Your questions stay private
                     </h2>
-                    <p className="text-base md:text-lg text-slate-700 leading-relaxed mb-4">
+                    <p className="text-base md:text-lg text-foreground leading-relaxed mb-4">
                       We take privacy seriously — especially for anything you’d ask a tech helper.
                     </p>
                     <ul className="space-y-2" role="list">
@@ -454,13 +454,13 @@ export default function TekBrainLanding() {
                             className="h-5 w-5 text-[#2A5FCC] shrink-0"
                             aria-hidden="true"
                           />
-                          <span className="text-base md:text-lg text-slate-800 font-medium">
+                          <span className="text-base md:text-lg text-foreground font-medium">
                             {label}
                           </span>
                         </li>
                       ))}
                     </ul>
-                    <p className="text-sm md:text-base text-slate-500 mt-5 leading-relaxed">
+                    <p className="text-base md:text-base text-muted-foreground mt-5 leading-relaxed">
                       Read the full{' '}
                       <a
                         href="/privacy"
@@ -482,17 +482,17 @@ export default function TekBrainLanding() {
           aria-labelledby="tekbrain-final-cta-heading"
           className="container max-w-3xl px-4 py-20 md:py-24 text-center"
         >
-          <div className="inline-flex items-center gap-2 rounded-full bg-white border border-amber-200 px-4 py-2 text-sm font-semibold text-amber-800 mb-6 shadow-sm">
+          <div className="inline-flex items-center gap-2 rounded-full bg-card border border-warn-foreground/25 px-4 py-2 text-sm font-semibold text-warn-foreground mb-6 shadow-sm">
             <Sparkles className="h-4 w-4" aria-hidden="true" />
             Ready when you are
           </div>
           <h2
             id="tekbrain-final-cta-heading"
-            className="text-3xl md:text-5xl font-bold tracking-tight text-slate-900 mb-5 text-balance leading-tight"
+            className="text-3xl md:text-5xl font-bold tracking-tight text-foreground mb-5 text-balance leading-tight"
           >
             Ask TekBrain your first question.
           </h2>
-          <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-xl mx-auto leading-relaxed">
             No account. No credit card. Just plain-English answers, whenever you need them.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -222,7 +222,7 @@ export default function RouterSetupWizard() {
                         </div>
                         <div className="flex-1">
                           <h3 className="font-semibold mb-1">{b.name}</h3>
-                          <p className="text-xs text-muted-foreground font-mono">{b.adminUrl}</p>
+                          <p className="text-sm text-muted-foreground font-mono">{b.adminUrl}</p>
                         </div>
                       </div>
                     </CardContent>
@@ -232,10 +232,10 @@ export default function RouterSetupWizard() {
 
               <Card className="mt-8 bg-amber-50/50 dark:bg-amber-950/20 border-amber-500/40">
                 <CardContent className="p-5 flex items-start gap-3">
-                  <AlertTriangle className="w-5 h-5 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
+                  <AlertTriangle className="w-5 h-5 text-warn-foreground shrink-0 mt-0.5" />
                   <div>
                     <h4 className="font-semibold mb-1">Don't know your brand?</h4>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
+                    <p className="text-base text-muted-foreground leading-relaxed">
                       Look on the box, or at the front/back of the router itself. The brand name is usually printed in large letters.
                     </p>
                   </div>
@@ -265,7 +265,7 @@ export default function RouterSetupWizard() {
               </div>
 
               <div className="flex items-center justify-between mb-4 p-3 rounded-md bg-muted/50 border border-border">
-                <span className="text-sm font-medium">{completedSteps.size} of {selectedBrand.steps.length} steps done</span>
+                <span className="text-base font-medium">{completedSteps.size} of {selectedBrand.steps.length} steps done</span>
                 <div className="flex-1 mx-4 h-2 bg-border rounded-full overflow-hidden max-w-xs">
                   <div className="h-full bg-primary transition-all duration-300"
                     style={{ width: `${(completedSteps.size / selectedBrand.steps.length) * 100}%` }} />
@@ -279,13 +279,13 @@ export default function RouterSetupWizard() {
                     <Card key={i} onClick={() => toggleStep(i)}
                       className={`cursor-pointer transition-colors ${done ? 'border-green-600/40 bg-green-50/40 dark:bg-green-950/20' : 'hover:border-primary/40'}`}>
                       <CardContent className="p-4 flex items-start gap-3">
-                        {done ? <CheckCircle className="w-5 h-5 text-green-600 shrink-0 mt-0.5" /> : <Circle className="w-5 h-5 text-muted-foreground shrink-0 mt-0.5" />}
+                        {done ? <CheckCircle className="w-5 h-5 text-success-foreground shrink-0 mt-0.5" /> : <Circle className="w-5 h-5 text-muted-foreground shrink-0 mt-0.5" />}
                         <div className="flex-1">
                           <div className="flex items-center gap-2 mb-1">
                             <Badge variant="outline" className="text-xs">Step {i + 1}</Badge>
                             <h4 className={`font-semibold ${done ? 'line-through text-muted-foreground' : ''}`}>{step.title}</h4>
                           </div>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{step.detail}</p>
+                          <p className="text-base text-muted-foreground leading-relaxed">{step.detail}</p>
                         </div>
                       </CardContent>
                     </Card>
@@ -297,7 +297,7 @@ export default function RouterSetupWizard() {
                 {selectedBrand.appName && selectedBrand.appLink && (
                   <Card className="bg-primary/5 border-primary/20"><CardContent className="p-5">
                     <h4 className="font-semibold mb-1">Official app</h4>
-                    <p className="text-sm text-muted-foreground mb-3">{selectedBrand.appName}</p>
+                    <p className="text-base text-muted-foreground mb-3">{selectedBrand.appName}</p>
                     <Button asChild size="sm"><a href={selectedBrand.appLink} target="_blank" rel="noopener noreferrer">
                       Download <ExternalLink className="w-3 h-3 ml-1" />
                     </a></Button>
@@ -305,7 +305,7 @@ export default function RouterSetupWizard() {
                 )}
                 <Card className="bg-muted/30"><CardContent className="p-5">
                   <h4 className="font-semibold mb-1">Stuck?</h4>
-                  <p className="text-sm text-muted-foreground mb-3">Official support from the manufacturer.</p>
+                  <p className="text-base text-muted-foreground mb-3">Official support from the manufacturer.</p>
                   <Button asChild variant="outline" size="sm"><a href={selectedBrand.support.url} target="_blank" rel="noopener noreferrer">
                     {selectedBrand.support.label} <ExternalLink className="w-3 h-3 ml-1" />
                   </a></Button>
@@ -317,7 +317,7 @@ export default function RouterSetupWizard() {
                   <h4 className="font-semibold mb-3">Quick Tips</h4>
                   <ul className="space-y-2">
                     {selectedBrand.tips.map((tip, i) => (
-                      <li key={i} className="text-sm text-muted-foreground flex gap-2">
+                      <li key={i} className="text-base text-muted-foreground flex gap-2">
                         <span className="text-primary mt-0.5">•</span>
                         <span>{tip}</span>
                       </li>

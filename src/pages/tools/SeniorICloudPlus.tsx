@@ -22,7 +22,7 @@ export default function SeniorICloudPlus() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">2 TB ($9.99/month)</h2><p>Massive photo libraries. Full Mac backups too.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hide My Email</h2><p>Free with iCloud+. Generate fake emails for sites. Spam goes there.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Private Relay</h2><p>Free with iCloud+. Hides your IP from websites. Privacy boost.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Family Sharing 200 GB plan = best value. $0.60/person.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Family Sharing 200 GB plan = best value. $0.60/person.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

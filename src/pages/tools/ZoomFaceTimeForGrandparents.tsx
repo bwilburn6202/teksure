@@ -19,7 +19,7 @@ export default function ZoomFaceTimeForGrandparents() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">FaceTime — Apple devices</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Built into every iPhone, iPad, Mac.</li>
               <li>Tap green camera icon next to contact.</li>
               <li>Both must have Apple device — no PC.</li>
@@ -33,7 +33,7 @@ export default function ZoomFaceTimeForGrandparents() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Zoom — universal</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free for 40-minute group calls.</li>
               <li>Works on any device — phone, tablet, computer.</li>
               <li>Mix of Apple + Android + Windows users.</li>
@@ -47,7 +47,7 @@ export default function ZoomFaceTimeForGrandparents() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Google Meet</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free with Google account.</li>
               <li>Works on any device.</li>
               <li>1-hour limit on free version.</li>
@@ -61,7 +61,7 @@ export default function ZoomFaceTimeForGrandparents() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">WhatsApp video</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Free if both have WhatsApp.</li>
               <li>Works iPhone + Android.</li>
               <li>International calls free over WiFi.</li>
@@ -75,7 +75,7 @@ export default function ZoomFaceTimeForGrandparents() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Tips for grandparent video calls</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Schedule weekly time — Sunday after dinner works.</li>
               <li>Tablet on stand is easier than holding phone.</li>
               <li>Read a book together aloud.</li>
@@ -89,7 +89,7 @@ export default function ZoomFaceTimeForGrandparents() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">When tech fails</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Audio only? Internet too slow — close other apps.</li>
               <li>Frozen screen? Hang up + restart call.</li>
               <li>Echo? One person mute when not talking.</li>
@@ -103,7 +103,7 @@ export default function ZoomFaceTimeForGrandparents() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Schedule weekly grandparent time</h3>
-            <p className="text-sm text-muted-foreground">The best video chat strategy: set a weekly recurring family video call. Sunday afternoons work for many. Use FaceTime if everyone has Apple, Zoom for mixed devices. Read a book to grandkids, ask about their week, share what you&apos;re doing. Even 20 minutes weekly maintains connection during seasons when in-person visits aren&apos;t possible.</p>
+            <p className="text-base text-muted-foreground">The best video chat strategy: set a weekly recurring family video call. Sunday afternoons work for many. Use FaceTime if everyone has Apple, Zoom for mixed devices. Read a book to grandkids, ask about their week, share what you&apos;re doing. Even 20 minutes weekly maintains connection during seasons when in-person visits aren&apos;t possible.</p>
           </CardContent>
         </Card>
       </main>

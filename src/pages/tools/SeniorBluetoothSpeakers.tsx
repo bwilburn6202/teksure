@@ -22,7 +22,7 @@ export default function SeniorBluetoothSpeakers() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Anker Soundcore</h2><p>$50. Budget pick. Surprisingly good.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pair to phone</h2><p>Settings → Bluetooth → Tap speaker name. Once paired, auto-connects.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Bigger sound for hearing loss</h2><p>Many speakers louder than phone. Better music for hard-of-hearing seniors.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Take to porch, kitchen, bedroom. Music goes wherever you do.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Take to porch, kitchen, bedroom. Music goes wherever you do.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

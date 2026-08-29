@@ -22,7 +22,7 @@ export default function SeniorPropertyDeeds() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Add child to deed</h2><p>NOT recommended. Tax issues. Use trust instead. Talk to estate attorney.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Transfer-on-death deed</h2><p>Available in most states. Property transfers automatically. No probate.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Reverse mortgage</h2><p>Different from selling. Keep deed. Borrow against equity. Risky, get advice.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Sign up for free property fraud alerts. County recorders offer.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Sign up for free property fraud alerts. County recorders offer.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

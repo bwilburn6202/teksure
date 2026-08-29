@@ -30,10 +30,10 @@ export default function DiabetesManagementApps() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function DiabetesManagementApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">CGM is the game-changer</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Continuous Glucose Monitor — patch on arm. No fingersticks.</li>
               <li>Reads BG every 5 min, 24/7.</li>
               <li>Phone shows trends + alerts highs/lows.</li>
@@ -56,7 +56,7 @@ export default function DiabetesManagementApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Daily routine</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Check BG morning + before/after meals.</li>
               <li>Log carbs + meals.</li>
               <li>Insulin per doctor&apos;s plan.</li>
@@ -71,7 +71,7 @@ export default function DiabetesManagementApps() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Diabetes-friendly food</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Low-carb veggies — broccoli, spinach, peppers.</li>
               <li>Lean protein every meal.</li>
               <li>Whole grains over white.</li>
@@ -85,7 +85,7 @@ export default function DiabetesManagementApps() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Free resources</h3>
-            <p className="text-sm text-muted-foreground"><strong>Diabetes.org</strong> (ADA) — recipes, free magazine. <strong>NIDDK</strong> — niddk.nih.gov. <strong>Medicare DSMT</strong> — Diabetes Self-Management Training, covered, find local. <strong>Beyond Type 2</strong> — community + tips. Talk to certified diabetes educator (CDE) — most plans cover.</p>
+            <p className="text-base text-muted-foreground"><strong>Diabetes.org</strong> (ADA) — recipes, free magazine. <strong>NIDDK</strong> — niddk.nih.gov. <strong>Medicare DSMT</strong> — Diabetes Self-Management Training, covered, find local. <strong>Beyond Type 2</strong> — community + tips. Talk to certified diabetes educator (CDE) — most plans cover.</p>
           </CardContent>
         </Card>
       </main>

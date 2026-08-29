@@ -126,18 +126,18 @@ export function TechJournal() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <label className="text-sm font-medium mb-2 block">What are you learning about?</label>
+                    <label className="text-base font-medium mb-2 block">What are you learning about?</label>
                     <Input
                       placeholder="e.g., How to set up two-factor authentication"
                       value={selectedGuide}
                       onChange={(e) => setSelectedGuide(e.target.value)}
                     />
-                    <p className="text-xs text-muted-foreground mt-1">
+                    <p className="text-sm text-muted-foreground mt-1">
                       Or paste the guide URL slug, like: "two-factor-authentication"
                     </p>
                   </div>
                   <div>
-                    <label className="text-sm font-medium mb-2 block">Your notes</label>
+                    <label className="text-base font-medium mb-2 block">Your notes</label>
                     <Textarea
                       placeholder="What did you learn? What was confusing? What will you remember?"
                       value={newNote}
@@ -233,7 +233,7 @@ export function TechJournal() {
                                       </Button>
                                     </div>
                                   </div>
-                                  <p className="text-sm whitespace-pre-wrap">{entry.note}</p>
+                                  <p className="text-base whitespace-pre-wrap">{entry.note}</p>
                                 </>
                               )}
                             </CardContent>

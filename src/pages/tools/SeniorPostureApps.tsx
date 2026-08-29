@@ -20,9 +20,9 @@ export default function SeniorPostureApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Upright Go 2</h2><p>$70 wearable. Beeps when you slouch. Trains better posture.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Posture by Lumo</h2><p>FREE app. Reminders + stretching exercises.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Phone height</h2><p>Hold phone at eye level. Don&apos;t look down. Saves neck.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Stretches</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Chin tucks (10x daily)</li><li>Shoulder rolls</li><li>Doorway chest stretch</li><li>Neck stretches</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Stretches</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Chin tucks (10x daily)</li><li>Shoulder rolls</li><li>Doorway chest stretch</li><li>Neck stretches</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Standing desk</h2><p>$40 desk converter. Stand 1-2 hours daily. Less back pain.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Phone causes 60 lbs of neck strain. Look up. Use Siri. Save your spine.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Phone causes 60 lbs of neck strain. Look up. Use Siri. Save your spine.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

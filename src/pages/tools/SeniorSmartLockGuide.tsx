@@ -22,7 +22,7 @@ export default function SeniorSmartLockGuide() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Yale Assure</h2><p>$240. Quiet motor. Auto-locks after 30 seconds.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Family codes</h2><p>Give each child a unique 4-6 digit code. See in the app who came and when.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Battery life</h2><p>Most last 6-12 months on AA batteries. App warns when low.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Hide a physical key with a trusted neighbor as a backup if batteries die.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Hide a physical key with a trusted neighbor as a backup if batteries die.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

@@ -22,7 +22,7 @@ export default function SeniorWritingApps() {
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Google Docs</h2><p>FREE. Auto-saves. Family can read and add comments.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Voice typing</h2><p>Speak instead of type. iPhone, Android, Mac all support free.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Self-publishing</h2><p>Amazon KDP. Free. Print your memoir as a real book for family.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: 10 minutes daily writing. 1 year = 60,000 words. Real memoir done.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: 10 minutes daily writing. 1 year = 60,000 words. Real memoir done.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

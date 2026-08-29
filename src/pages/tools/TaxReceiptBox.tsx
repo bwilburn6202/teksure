@@ -67,7 +67,7 @@ export default function TaxReceiptBox() {
   const total = yearReceipts.reduce((s, r) => s + r.amount, 0);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <main className="min-h-screen bg-muted">
       <SEOHead
         title="Tax Receipt Box | TekSure"
         description="Track tax-deductible receipts year-round. Group by category, see yearly totals, print a clean summary for your tax preparer."
@@ -76,10 +76,10 @@ export default function TaxReceiptBox() {
       <div className="max-w-2xl mx-auto px-4 py-8 print:p-4">
         <div className="mb-6">
           <div className="flex items-center gap-2 mb-1">
-            <Receipt className="h-7 w-7 text-emerald-700" />
-            <h1 className="text-3xl font-bold text-gray-900">Tax Receipt Box</h1>
+            <Receipt className="h-7 w-7 text-success-foreground" />
+            <h1 className="text-3xl font-bold text-foreground">Tax Receipt Box</h1>
           </div>
-          <p className="text-gray-600 text-lg">
+          <p className="text-muted-foreground text-lg">
             Drop a receipt in here every time you pay something tax-deductible. By April you have an organized total.
           </p>
         </div>
@@ -92,8 +92,8 @@ export default function TaxReceiptBox() {
               <Input id="year" type="number" min="2000" max="2099" value={taxYear} onChange={e => setTaxYear(e.target.value)} className="text-base w-24" />
             </div>
             <div className="text-right">
-              <p className="text-xs text-gray-500">Total {taxYear}</p>
-              <p className="text-2xl font-bold text-emerald-700">{formatMoney(total)}</p>
+              <p className="text-sm text-muted-foreground">Total {taxYear}</p>
+              <p className="text-2xl font-bold text-success-foreground">{formatMoney(total)}</p>
             </div>
           </CardContent>
         </Card>
@@ -102,7 +102,7 @@ export default function TaxReceiptBox() {
         <Card className="mb-6 print:hidden">
           <CardHeader>
             <CardTitle className="text-xl flex items-center gap-2">
-              <PlusCircle className="h-5 w-5 text-emerald-700" />
+              <PlusCircle className="h-5 w-5 text-success-foreground" />
               Add a Receipt
             </CardTitle>
           </CardHeader>
@@ -119,7 +119,7 @@ export default function TaxReceiptBox() {
             </div>
             <div>
               <Label className="text-base font-medium">Category</Label>
-              <select value={form.category} onChange={e => setForm(f => ({ ...f, category: e.target.value as Category }))} className="mt-1 w-full border border-gray-300 rounded-md px-3 py-2 text-base bg-white">
+              <select value={form.category} onChange={e => setForm(f => ({ ...f, category: e.target.value as Category }))} className="mt-1 w-full border border-border rounded-md px-3 py-2 text-base bg-card">
                 {CATEGORIES.map(c => <option key={c}>{c}</option>)}
               </select>
             </div>
@@ -130,15 +130,15 @@ export default function TaxReceiptBox() {
             <div>
               <Label className="text-base font-medium">Receipt is...</Label>
               <div className="flex gap-2 mt-1">
-                <button type="button" onClick={() => setForm(f => ({ ...f, paperOrDigital: "paper" }))} className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${form.paperOrDigital === "paper" ? "bg-emerald-50 border-emerald-300 text-emerald-800" : "bg-white border-gray-200 text-gray-700"}`}>📄 Paper (in box)</button>
-                <button type="button" onClick={() => setForm(f => ({ ...f, paperOrDigital: "digital" }))} className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${form.paperOrDigital === "digital" ? "bg-emerald-50 border-emerald-300 text-emerald-800" : "bg-white border-gray-200 text-gray-700"}`}>📱 Digital (saved)</button>
+                <button type="button" onClick={() => setForm(f => ({ ...f, paperOrDigital: "paper" }))} className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${form.paperOrDigital === "paper" ? "bg-emerald-50 border-success-foreground/25 text-emerald-800" : "bg-white border-border text-gray-700"}`}>📄 Paper (in box)</button>
+                <button type="button" onClick={() => setForm(f => ({ ...f, paperOrDigital: "digital" }))} className={`flex-1 px-3 py-2 rounded-md border text-sm font-medium ${form.paperOrDigital === "digital" ? "bg-emerald-50 border-success-foreground/25 text-emerald-800" : "bg-white border-border text-gray-700"}`}>📱 Digital (saved)</button>
               </div>
             </div>
             <div>
               <Label htmlFor="r-notes" className="text-base font-medium">Notes (optional)</Label>
               <Input id="r-notes" placeholder="e.g. Prescription co-pay, mileage 12 miles" value={form.notes} onChange={e => setForm(f => ({ ...f, notes: e.target.value }))} className="mt-1 text-base" />
             </div>
-            {error && <p className="text-red-600 text-sm">{error}</p>}
+            {error && <p className="text-danger-foreground text-base">{error}</p>}
             <Button onClick={add} size="lg" className="w-full sm:w-auto text-base">Add Receipt</Button>
           </CardContent>
         </Card>
@@ -155,15 +155,15 @@ export default function TaxReceiptBox() {
         {/* Print header */}
         <div className="hidden print:block mb-3 border-b pb-2">
           <h2 className="text-xl font-bold">{taxYear} Tax Receipt Summary</h2>
-          <p className="text-xs text-gray-500">Total: {formatMoney(total)}</p>
+          <p className="text-sm text-muted-foreground">Total: {formatMoney(total)}</p>
         </div>
 
         {yearReceipts.length === 0 ? (
           <Card className="print:hidden">
-            <CardContent className="py-10 text-center text-gray-500">
-              <Receipt className="h-10 w-10 text-gray-300 mx-auto mb-2" />
+            <CardContent className="py-10 text-center text-muted-foreground">
+              <Receipt className="h-10 w-10 text-muted-foreground mx-auto mb-2" />
               <p className="text-lg">No receipts logged for {taxYear}.</p>
-              <p className="text-sm mt-1">Start with your most recent medical or charity payment.</p>
+              <p className="text-base mt-1">Start with your most recent medical or charity payment.</p>
             </CardContent>
           </Card>
         ) : (
@@ -172,8 +172,8 @@ export default function TaxReceiptBox() {
               const catTotal = items.reduce((s, r) => s + r.amount, 0);
               return (
                 <Card key={cat} className="print:break-inside-avoid">
-                  <CardHeader className="pb-2 pt-3 bg-emerald-50">
-                    <CardTitle className="text-base text-emerald-800 flex items-center justify-between">
+                  <CardHeader className="pb-2 pt-3 bg-success">
+                    <CardTitle className="text-base text-success-foreground flex items-center justify-between">
                       <span>{cat}</span>
                       <Badge variant="secondary" className="text-xs">{formatMoney(catTotal)}</Badge>
                     </CardTitle>
@@ -183,13 +183,13 @@ export default function TaxReceiptBox() {
                       {items.map(r => (
                         <div key={r.id} className="py-2 flex items-start justify-between gap-2">
                           <div className="flex-1 min-w-0">
-                            <p className="text-sm font-medium text-gray-900">{r.payee}</p>
-                            <p className="text-xs text-gray-500">{formatDate(r.date)} · {r.paperOrDigital === "paper" ? "📄 Paper" : "📱 Digital"}</p>
-                            {r.notes && <p className="text-xs text-gray-500 italic mt-0.5">{r.notes}</p>}
+                            <p className="text-base font-medium text-foreground">{r.payee}</p>
+                            <p className="text-sm text-muted-foreground">{formatDate(r.date)} · {r.paperOrDigital === "paper" ? "📄 Paper" : "📱 Digital"}</p>
+                            {r.notes && <p className="text-sm text-muted-foreground italic mt-0.5">{r.notes}</p>}
                           </div>
                           <div className="flex items-center gap-2 shrink-0">
-                            <span className="font-semibold text-emerald-700">{formatMoney(r.amount)}</span>
-                            <Button variant="ghost" size="icon" onClick={() => remove(r.id)} className="h-6 w-6 text-red-400 hover:text-red-600 print:hidden">
+                            <span className="font-semibold text-success-foreground">{formatMoney(r.amount)}</span>
+                            <Button variant="ghost" size="icon" onClick={() => remove(r.id)} className="h-6 w-6 text-danger-foreground hover:text-danger-foreground print:hidden">
                               <Trash2 className="h-3 w-3" />
                             </Button>
                           </div>
@@ -203,15 +203,15 @@ export default function TaxReceiptBox() {
           </div>
         )}
 
-        <Card className="mt-6 bg-blue-50 border-blue-200 print:hidden">
+        <Card className="mt-6 bg-info border-info-foreground/25 print:hidden">
           <CardContent className="py-3 px-4">
-            <p className="text-sm text-blue-800">
+            <p className="text-base text-info-foreground">
               <span className="font-semibold">Quick Tip: </span>
               Keep one folder labeled "{taxYear} Taxes" by your desk. Whenever you log a receipt here, drop the paper into that folder. By April, you have everything in one place.
             </p>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </main>
   );
 }

@@ -60,14 +60,14 @@ const TONE = {
 const Block = ({ title, items, ordered, tone = 'none' }: { title: string; items: string[]; ordered?: boolean; tone?: keyof typeof TONE }) => (
   <Card className={TONE[tone]}><CardContent className="p-5">
     <p className="font-semibold mb-3 flex items-center gap-2">
-      {tone === 'green' && <CheckCircle2 className="h-4 w-4 text-green-700" />}
-      {tone === 'red' && <XCircle className="h-4 w-4 text-red-700" />}
+      {tone === 'green' && <CheckCircle2 className="h-4 w-4 text-success-foreground" />}
+      {tone === 'red' && <XCircle className="h-4 w-4 text-danger-foreground" />}
       {title}
     </p>
     {ordered ? (
-      <ol className="space-y-2 text-sm text-muted-foreground list-decimal list-inside">{items.map((s, i) => <li key={i}>{s}</li>)}</ol>
+      <ol className="space-y-2 text-base text-muted-foreground list-decimal list-inside">{items.map((s, i) => <li key={i}>{s}</li>)}</ol>
     ) : (
-      <ul className="space-y-2 text-sm text-muted-foreground list-disc list-inside">{items.map((s, i) => <li key={i}>{s}</li>)}</ul>
+      <ul className="space-y-2 text-base text-muted-foreground list-disc list-inside">{items.map((s, i) => <li key={i}>{s}</li>)}</ul>
     )}
   </CardContent></Card>
 );
@@ -88,7 +88,7 @@ export default function SocialMediaFirstSteps() {
       <main className="min-h-screen bg-background">
         <section className="bg-gradient-to-br from-sky-50 via-background to-emerald-50 dark:from-sky-950/20 dark:to-emerald-950/20 border-b border-border py-10 px-4">
           <div className="container max-w-3xl mx-auto text-center">
-            <div className="flex justify-center mb-3"><div className="p-3 bg-sky-500/10 rounded-full"><Users className="h-8 w-8 text-sky-600" /></div></div>
+            <div className="flex justify-center mb-3"><div className="p-3 bg-sky-500/10 rounded-full"><Users className="h-8 w-8 text-info-foreground" /></div></div>
             <h1 className="text-3xl md:text-4xl font-bold mb-2">Social Media First Steps</h1>
             <p className="text-muted-foreground text-lg max-w-xl mx-auto">A first-time walkthrough for Facebook, Instagram, and Nextdoor. Set privacy before you post anything.</p>
           </div>
@@ -112,7 +112,7 @@ export default function SocialMediaFirstSteps() {
             </TabsList>
             {GUIDES.map(g => (
               <TabsContent key={g.id} value={g.id} className="space-y-4 mt-4">
-                <Card className="border-border"><CardContent className="p-5"><p className="text-sm text-muted-foreground">{g.intro}</p></CardContent></Card>
+                <Card className="border-border"><CardContent className="p-5"><p className="text-base text-muted-foreground">{g.intro}</p></CardContent></Card>
                 <Block title="1. Sign up" items={g.signup} ordered />
                 <Block title="2. Privacy first — do this before posting" items={g.privacy} ordered tone="amber" />
                 <Block title="3. Find family and friends" items={g.findFamily} ordered />
@@ -129,13 +129,13 @@ export default function SocialMediaFirstSteps() {
             <div className="grid sm:grid-cols-3 gap-3">
               {RELATED.map(r => (
                 <Link key={r.to} to={r.to} className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
-                  <p className="font-medium text-sm">{r.title}</p>
-                  <p className="text-xs text-muted-foreground mt-0.5">{r.sub}</p>
+                  <p className="font-medium text-base">{r.title}</p>
+                  <p className="text-sm text-muted-foreground mt-0.5">{r.sub}</p>
                 </Link>
               ))}
             </div>
           </div>
-          <p className="text-xs text-muted-foreground mt-4 flex items-center gap-1"><ChevronRight className="h-3 w-3" /> Quick Tip: privacy first, post second. Once something is public it can be screenshotted forever.</p>
+          <p className="text-sm text-muted-foreground mt-4 flex items-center gap-1"><ChevronRight className="h-3 w-3" /> Quick Tip: privacy first, post second. Once something is public it can be screenshotted forever.</p>
         </div>
       </main>
       <Footer />

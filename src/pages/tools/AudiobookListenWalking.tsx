@@ -19,7 +19,7 @@ export default function AudiobookListenWalking() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Math</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Walk 30 min/day = 3.5 hrs/week.</li>
               <li>Average book 8-10 hours.</li>
               <li>Read 1 book every 2-3 weeks.</li>
@@ -32,7 +32,7 @@ export default function AudiobookListenWalking() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Equipment basics</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Smartphone (have one).</li>
               <li>Wireless headphones / AirPods.</li>
               <li>Or one in-ear bud (hear traffic).</li>
@@ -46,7 +46,7 @@ export default function AudiobookListenWalking() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Free audiobook sources</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Libby</strong> (library) — FREE. Best.</li>
               <li><strong>Hoopla</strong> (library) — FREE.</li>
               <li><strong>Librivox</strong> — FREE classics.</li>
@@ -60,7 +60,7 @@ export default function AudiobookListenWalking() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Best for walking</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Memoirs (engaging).</li>
               <li>Mysteries (driving you forward).</li>
               <li>Light novels.</li>
@@ -74,7 +74,7 @@ export default function AudiobookListenWalking() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Senior tips</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Speed up to 1.25x once comfortable.</li>
               <li>Sleep timer for at-bed listening.</li>
               <li>Save bookmark when interesting.</li>
@@ -88,7 +88,7 @@ export default function AudiobookListenWalking() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Ear safety</h3>
-            <p className="text-sm text-muted-foreground">Don&apos;t blast volume — preserves hearing. 60-70% volume max. Take breaks between books. Some hearing aids stream audiobooks directly. Combine exercise + reading = double benefit.</p>
+            <p className="text-base text-muted-foreground">Don&apos;t blast volume — preserves hearing. 60-70% volume max. Take breaks between books. Some hearing aids stream audiobooks directly. Combine exercise + reading = double benefit.</p>
           </CardContent>
         </Card>
       </main>

@@ -30,10 +30,10 @@ export default function BabbelVsRosetta() {
               <CardContent className="pt-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h3 className="font-bold text-lg">{a.name}</h3>
-                  <span className="text-sm font-semibold text-primary">{a.cost}</span>
+                  <span className="text-base font-semibold text-primary">{a.cost}</span>
                 </div>
-                <p className="text-sm">{a.best}</p>
-                <p className="text-sm text-muted-foreground">{a.good}</p>
+                <p className="text-base">{a.best}</p>
+                <p className="text-base text-muted-foreground">{a.good}</p>
               </CardContent>
             </Card>
           ))}
@@ -42,7 +42,7 @@ export default function BabbelVsRosetta() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Which to pick</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li><strong>Casual / fun</strong> — Duolingo (free).</li>
               <li><strong>Serious + grammar</strong> — Babbel.</li>
               <li><strong>No translation, immersion</strong> — Rosetta Stone.</li>
@@ -56,7 +56,7 @@ export default function BabbelVsRosetta() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Don&apos;t buy lifetime</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Rosetta Stone Lifetime sometimes $99 sale.</li>
               <li>Most quit within 6 months.</li>
               <li>Free trial first.</li>
@@ -69,7 +69,7 @@ export default function BabbelVsRosetta() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Maximize learning</h2>
-            <ul className="list-disc pl-5 space-y-2 text-sm">
+            <ul className="list-disc pl-5 space-y-2 text-base">
               <li>Combine apps + real practice.</li>
               <li>1 app + 1 podcast + 1 show in language.</li>
               <li>Speak OUT LOUD with apps.</li>
@@ -84,7 +84,7 @@ export default function BabbelVsRosetta() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Real talk</h3>
-            <p className="text-sm text-muted-foreground">Apps alone won&apos;t make you fluent. Combine with real conversation. Even speaking poorly = practice. Travel + immersion = best teacher. Many seniors learn enough Spanish/French in 1-2 years to converse on travel. Worth the effort.</p>
+            <p className="text-base text-muted-foreground">Apps alone won&apos;t make you fluent. Combine with real conversation. Even speaking poorly = practice. Travel + immersion = best teacher. Many seniors learn enough Spanish/French in 1-2 years to converse on travel. Worth the effort.</p>
           </CardContent>
         </Card>
       </main>

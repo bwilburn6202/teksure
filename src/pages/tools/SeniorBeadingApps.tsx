@@ -18,11 +18,11 @@ export default function SeniorBeadingApps() {
         <div className="space-y-4">
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Pinterest</h2><p>FREE. Save craft ideas. Patterns. Tutorials.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">YouTube</h2><p>FREE. Search any craft + tutorial. Visual instructions.</p></CardContent></Card>
-          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior crafts</h2><ul className="list-disc pl-5 space-y-1 text-sm"><li>Knitting</li><li>Crochet</li><li>Beading</li><li>Card-making</li><li>Soap-making</li><li>Quilting</li></ul></CardContent></Card>
+          <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior crafts</h2><ul className="list-disc pl-5 space-y-1 text-base"><li>Knitting</li><li>Crochet</li><li>Beading</li><li>Card-making</li><li>Soap-making</li><li>Quilting</li></ul></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Sell on Etsy</h2><p>Pay for hobby. Many seniors earn $200+/month.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Senior craft clubs</h2><p>Local senior centers. Free supplies often. Social.</p></CardContent></Card>
           <Card><CardContent className="pt-6"><h2 className="font-semibold mb-2">Hand strength</h2><p>Beading and knitting maintain hand dexterity. Combats arthritis stiffness.</p></CardContent></Card>
-          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-sm">Quick Tip: Magnifying lamps $30 help senior eyes. Worth every penny.</p></CardContent></Card>
+          <Card className="bg-muted/40"><CardContent className="pt-6"><p className="text-base">Quick Tip: Magnifying lamps $30 help senior eyes. Worth every penny.</p></CardContent></Card>
         </div>
       </main>
       <Footer />

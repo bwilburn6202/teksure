@@ -77,7 +77,7 @@ export default function LocalHelp() {
                 <Search className="h-4 w-4" /> Search
               </Button>
             </form>
-            {searched && <p className="text-sm text-muted-foreground mt-3">Showing resources for: <strong>{searched}</strong></p>}
+            {searched && <p className="text-base text-muted-foreground mt-3">Showing resources for: <strong>{searched}</strong></p>}
           </div>
         </div>
 
@@ -90,10 +90,10 @@ export default function LocalHelp() {
                   <CardContent className="pt-5 pb-4">
                     <div className={`inline-flex items-center gap-2 rounded-lg border px-3 py-1.5 mb-3 ${type.color}`}>
                       <type.icon className="h-4 w-4" />
-                      <span className="font-semibold text-sm">{type.label}</span>
+                      <span className="font-semibold text-base">{type.label}</span>
                     </div>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-3">{type.description}</p>
-                    <p className="text-xs text-muted-foreground bg-muted rounded-lg px-3 py-2 mb-3 italic">{type.tip}</p>
+                    <p className="text-base text-muted-foreground leading-relaxed mb-3">{type.description}</p>
+                    <p className="text-sm text-muted-foreground bg-muted rounded-lg px-3 py-2 mb-3 italic">{type.tip}</p>
                     <Button variant="outline" size="sm" className="gap-1.5 rounded-lg" asChild>
                       <a href={buildUrl(type.searchTemplate)} target="_blank" rel="noopener noreferrer">
                         <MapPin className="h-3.5 w-3.5" /> Find {type.label} near {searched || 'me'}
@@ -112,7 +112,7 @@ export default function LocalHelp() {
               <Card key={r.name} className="rounded-2xl border border-border bg-card hover:shadow-md transition-shadow">
                 <CardContent className="pt-5 pb-4">
                   <h3 className="font-semibold mb-1 text-primary">{r.name}</h3>
-                  <p className="text-sm text-muted-foreground mb-3">{r.desc}</p>
+                  <p className="text-base text-muted-foreground mb-3">{r.desc}</p>
                   <div className="flex flex-wrap gap-2">
                     {r.phone && (
                       <Badge variant="outline" className="gap-1 text-xs">

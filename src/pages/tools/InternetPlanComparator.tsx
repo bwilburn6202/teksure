@@ -147,7 +147,7 @@ export default function InternetPlanComparator() {
                     value={householdSize}
                     onChange={(e) => setHouseholdSize(parseInt(e.target.value) || 1)}
                   />
-                  <p className="text-xs text-muted-foreground mt-1">People using Wi-Fi at the same time.</p>
+                  <p className="text-sm text-muted-foreground mt-1">People using Wi-Fi at the same time.</p>
                 </div>
 
                 <div>
@@ -163,7 +163,7 @@ export default function InternetPlanComparator() {
                     value={maxBudget}
                     onChange={(e) => setMaxBudget(parseInt(e.target.value) || 50)}
                   />
-                  <p className="text-xs text-muted-foreground mt-1">Including equipment fees.</p>
+                  <p className="text-sm text-muted-foreground mt-1">Including equipment fees.</p>
                 </div>
 
                 <div>
@@ -180,7 +180,7 @@ export default function InternetPlanComparator() {
                           onChange={() => toggleUse(uc.id)}
                           className="mt-0.5"
                         />
-                        <span className="text-sm leading-tight">{uc.label}</span>
+                        <span className="text-base leading-tight">{uc.label}</span>
                       </Label>
                     ))}
                   </div>
@@ -209,19 +209,19 @@ export default function InternetPlanComparator() {
                             {idx === 0 && <Badge className="bg-primary">Top pick</Badge>}
                             <h3 className="font-semibold text-lg">{plan.provider}</h3>
                             <Badge className={typeMeta.color}>{typeMeta.label}</Badge>
-                            {!hasEnoughSpeed && <Badge variant="outline" className="text-amber-600 border-amber-600">Speed may be low</Badge>}
-                            {!withinBudget && <Badge variant="outline" className="text-red-600 border-red-600">Over budget</Badge>}
+                            {!hasEnoughSpeed && <Badge variant="outline" className="text-warn-foreground border-amber-600">Speed may be low</Badge>}
+                            {!withinBudget && <Badge variant="outline" className="text-danger-foreground border-red-600">Over budget</Badge>}
                           </div>
-                          <p className="text-sm text-muted-foreground">{plan.planName}</p>
+                          <p className="text-base text-muted-foreground">{plan.planName}</p>
                         </div>
                         <div className="text-right">
                           {plan.firstYearPrice ? (
                             <>
-                              <div className="text-2xl font-bold">${plan.firstYearPrice}<span className="text-sm font-normal text-muted-foreground">/mo</span></div>
+                              <div className="text-2xl font-bold">${plan.firstYearPrice}<span className="text-base font-normal text-muted-foreground">/mo</span></div>
                               <div className="text-xs text-muted-foreground">then ${plan.monthlyPrice}/mo</div>
                             </>
                           ) : (
-                            <div className="text-2xl font-bold">${plan.monthlyPrice}<span className="text-sm font-normal text-muted-foreground">/mo</span></div>
+                            <div className="text-2xl font-bold">${plan.monthlyPrice}<span className="text-base font-normal text-muted-foreground">/mo</span></div>
                           )}
                         </div>
                       </div>
@@ -245,10 +245,10 @@ export default function InternetPlanComparator() {
                         </div>
                       </div>
 
-                      <p className="text-xs text-muted-foreground mb-3 italic">{plan.notes}</p>
+                      <p className="text-sm text-muted-foreground mb-3 italic">{plan.notes}</p>
 
                       {matchesUses > 0 && (
-                        <div className="mb-3 flex items-center gap-2 text-xs text-green-700 dark:text-green-400">
+                        <div className="mb-3 flex items-center gap-2 text-xs text-success-foreground ">
                           <Check className="w-3 h-3" />
                           <span>Matches {matchesUses} of your selected uses</span>
                         </div>

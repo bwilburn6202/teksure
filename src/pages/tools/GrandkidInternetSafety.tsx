@@ -19,8 +19,8 @@ export default function GrandkidInternetSafety() {
         <Card className="mb-6 bg-primary/5 border-primary/20">
           <CardContent className="pt-6">
             <h2 className="font-bold mb-2">Your role</h2>
-            <p className="text-sm">Parents set rules. You don\'t need to police, but you SHOULD know enough to:</p>
-            <ul className="text-sm list-disc pl-5 mt-2">
+            <p className="text-base">Parents set rules. You don\'t need to police, but you SHOULD know enough to:</p>
+            <ul className="text-base list-disc pl-5 mt-2">
               <li>Not let a 7-year-old freely use TikTok at your house.</li>
               <li>Recognize signs of online problems.</li>
               <li>Talk to grandkids in a way that earns their trust.</li>
@@ -49,7 +49,7 @@ export default function GrandkidInternetSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Talk-to-grandkid tips</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Ask "what\'s your favorite app?" not "do you use X?".</li>
               <li>Ask them to SHOW you. They love to teach.</li>
               <li>Don\'t panic-react. They\'ll just hide it next time.</li>
@@ -62,21 +62,21 @@ export default function GrandkidInternetSafety() {
         <Card className="mb-4">
           <CardContent className="pt-6">
             <h2 className="font-bold text-xl mb-3">Warning signs</h2>
-            <ul className="list-disc pl-5 space-y-1 text-sm">
+            <ul className="list-disc pl-5 space-y-1 text-base">
               <li>Sudden secrecy with phone — face down, password change, hides screen.</li>
               <li>New friends or "older friend" they only know online.</li>
               <li>Big mood swings around screen time.</li>
               <li>Receiving expensive gifts they can\'t explain.</li>
               <li>Wanting to meet someone "from online" in person.</li>
             </ul>
-            <p className="text-sm mt-2 text-muted-foreground">If concerned, talk to the parent. Worst case — call <strong>CyberTipline at 1-800-843-5678</strong> (NCMEC).</p>
+            <p className="text-base mt-2 text-muted-foreground">If concerned, talk to the parent. Worst case — call <strong>CyberTipline at 1-800-843-5678</strong> (NCMEC).</p>
           </CardContent>
         </Card>
 
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">For parental controls when watching grandkids</h3>
-            <p className="text-sm text-muted-foreground">See our "Childproof for Visits" tool. Set up Guided Access (iPhone) or Kids Mode (Android) on your devices BEFORE the visit. Saves headaches.</p>
+            <p className="text-base text-muted-foreground">See our "Childproof for Visits" tool. Set up Guided Access (iPhone) or Kids Mode (Android) on your devices BEFORE the visit. Saves headaches.</p>
           </CardContent>
         </Card>
       </main>
