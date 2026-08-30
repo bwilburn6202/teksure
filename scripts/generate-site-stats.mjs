@@ -19,6 +19,7 @@
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { readToolSlugs } from './tool-slugs.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -44,15 +45,11 @@ for (const file of readdirSync(DATA)) {
 }
 
 // ── Count tools ──────────────────────────────────────────────────────────────
-// Same source of truth the tools directory uses: concrete /tools/* routes.
-const appTsx = readFileSync(join(ROOT, 'src', 'App.tsx'), 'utf8');
-const toolPaths = new Set();
-for (const m of appTsx.matchAll(/path="(\/tools\/[^"]+)"/g)) {
-  const p = m[1];
-  if (p.includes(':') || p.includes('*') || p === '/tools/all') continue;
-  toolPaths.add(p);
-}
-const toolCount = toolPaths.size;
+// Same source of truth the tools directory uses: src/data/tools-registry.ts.
+// This used to scrape concrete /tools/* routes out of App.tsx. When the route
+// table collapsed to a single dynamic /tools/:slug (2026-08-30) that count fell
+// to 13 and the homepage was one build away from advertising "0+ tools".
+const toolCount = readToolSlugs().length;
 
 // ── Friendly, always-true rounding ───────────────────────────────────────────
 // Round DOWN so the claim stays true even if content lands between builds.

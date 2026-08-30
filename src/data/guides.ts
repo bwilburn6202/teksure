@@ -228,25 +228,7 @@ const coreGuides: Guide[] = [
       { title: 'Force close a frozen program', content: 'Press Ctrl+Alt+Delete → Task Manager → select the frozen program → End Task.' },
     ]
   },
-  {
-    slug: 'use-taskbar-windows',
-    title: 'How to Use the Taskbar on Windows',
-    excerpt: 'Navigate Windows like a pro by understanding the taskbar and its features.',
-    category: 'windows-guides',
-    tags: ['beginner', 'windows', 'taskbar', 'navigation'],
-    readTime: '4 min',
-    thumbnailEmoji: '📌',
-    publishedAt: '2026-01-08',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Understand the taskbar layout', content: 'The taskbar sits at the bottom of your screen. It includes the Start button, search bar, pinned apps, and the system tray.' },
-      { title: 'Pin apps to the taskbar', content: 'Right-click any app in the Start menu and select "Pin to taskbar" for quick access.' },
-      { title: 'Switch between open windows', content: 'Click an app icon on the taskbar to switch to it. Hover to preview open windows.' },
-      { title: 'Use the system tray', content: 'The right side of the taskbar shows Wi-Fi, volume, battery, and notification icons. Click them for quick settings.' },
-      { title: 'Access Task View', content: 'Click the Task View button (or press Win+Tab) to see all open windows and virtual desktops.' },
-    ]
-  },
-    {
+      {
     slug: 'copy-paste-windows',
     title: 'How to Copy and Paste on Windows',
     excerpt: 'One of the most essential computer skills — learn to copy and paste text, files, and more.',
@@ -352,25 +334,7 @@ const coreGuides: Guide[] = [
       { title: 'Adjust per-app volume', content: 'In Sound Settings → Volume Mixer, you can set different volume levels for each application.' },
     ]
   },
-  {
-    slug: 'use-microsoft-edge',
-    title: 'How to Use Microsoft Edge Browser',
-    excerpt: `Get started with Microsoft Edge — Windows' built-in web browser for browsing the internet.`,
-    category: 'windows-guides',
-    tags: ['beginner', 'windows', 'edge', 'browser', 'internet'],
-    readTime: '5 min',
-    thumbnailEmoji: '🌐',
-    publishedAt: '2026-01-16',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Open Microsoft Edge', content: 'Click the Edge icon on the taskbar (blue wave icon) or search for "Edge" in the Start menu.' },
-      { title: 'Navigate to a website', content: 'Click the address bar at the top, type a URL (like google.com) or a search term, and press Enter.' },
-      { title: 'Use tabs', content: 'Click the + button next to your current tab to open a new tab. Click X on a tab to close it. Use Ctrl+T for a new tab.' },
-      { title: 'Bookmark a page', content: 'Click the star icon in the address bar to bookmark (save) a page for quick access later.' },
-      { title: 'Manage downloads', content: 'Press Ctrl+J to see your downloads. By default, files save to your Downloads folder.' },
-    ]
-  },
-  {
+    {
     slug: 'manage-windows-windows',
     title: 'How to Manage Windows on Windows',
     excerpt: 'Learn to resize, snap, minimize, and arrange application windows for better multitasking.',
@@ -497,25 +461,7 @@ const coreGuides: Guide[] = [
   },
 
   // Intermediate (21-40)
-  {
-    slug: 'customize-taskbar-windows',
-    title: 'How to Customize the Taskbar on Windows',
-    excerpt: 'Make the taskbar your own by rearranging, hiding, and configuring its features.',
-    category: 'windows-guides',
-    tags: ['intermediate', 'windows', 'taskbar', 'customization'],
-    readTime: '5 min',
-    thumbnailEmoji: '⚙️',
-    publishedAt: '2026-01-25',
-    difficulty: 'Intermediate',
-    steps: [
-      { title: 'Open Taskbar settings', content: 'Right-click the taskbar and select "Taskbar settings" to access all customization options.' },
-      { title: 'Show or hide system icons', content: 'Toggle which system tray icons are visible — clock, volume, network, etc.' },
-      { title: 'Change taskbar alignment', content: 'Switch between center-aligned (default in Windows 11) or left-aligned taskbar icons.' },
-      { title: 'Auto-hide the taskbar', content: 'Enable "Automatically hide the taskbar" to give yourself more screen space. Move your cursor to the bottom to reveal it.' },
-      { title: 'Pin and unpin items', content: 'Right-click any running app → Pin to Taskbar. Right-click a pinned app → Unpin from Taskbar.' },
-    ]
-  },
-  {
+    {
     slug: 'use-file-explorer-windows',
     title: 'How to Use File Explorer',
     excerpt: 'Master File Explorer to browse, organize, and manage all files on your Windows PC.',
@@ -534,25 +480,7 @@ const coreGuides: Guide[] = [
       { title: 'Use tabs', content: 'In Windows 11, press Ctrl+T to open a new tab in File Explorer for side-by-side file management.' },
     ]
   },
-  {
-    slug: 'setup-windows-hello',
-    title: 'How to Set Up Windows Hello (Face/Fingerprint)',
-    excerpt: 'Unlock your PC faster and more securely with facial recognition or a fingerprint.',
-    category: 'windows-guides',
-    tags: ['intermediate', 'windows', 'windows-hello', 'biometrics', 'security'],
-    readTime: '4 min',
-    thumbnailEmoji: '👤',
-    publishedAt: '2026-01-27',
-    difficulty: 'Intermediate',
-    steps: [
-      { title: 'Open Sign-in settings', content: 'Go to Settings → Accounts → Sign-in Options to see available Windows Hello methods.' },
-      { title: 'Set up fingerprint', content: 'Click "Fingerprint recognition" → Set Up. Touch the fingerprint reader repeatedly to register your finger.' , tip: 'Register the same finger twice for better recognition, or register fingers from both hands for convenience.' },
-      { title: 'Set up face recognition', content: 'Click "Facial recognition" → Set Up. Look directly at the camera while it scans your face.' },
-      { title: 'Set a PIN as backup', content: 'Windows Hello requires a PIN as a fallback. Create a numeric PIN (or alphanumeric for more security).' , warning: 'Without a backup PIN, you could be locked out of your computer if the fingerprint reader or camera stops working.' },
-      { title: 'Test your setup', content: 'Lock your PC (Win+L) and try unlocking with your face or fingerprint to confirm it works.' },
-    ]
-  },
-  {
+    {
     slug: 'connect-bluetooth-windows',
     title: 'How to Connect to a Bluetooth Device on Windows',
     excerpt: 'Pair headphones, speakers, mice, and other Bluetooth devices with your Windows PC.',
@@ -570,41 +498,7 @@ const coreGuides: Guide[] = [
       { title: 'Set as default', content: 'For audio devices, go to Sound Settings and set the Bluetooth device as your default output or input.', tip: `If Bluetooth is not working properly, visit support.microsoft.com/en-us/windows/fix-bluetooth-problems-in-windows — Microsoft's official Bluetooth troubleshooting guide.` },
     ]
   },
-  {
-    slug: 'do-not-disturb-windows',
-    title: 'How to Use Do Not Disturb on Windows',
-    excerpt: 'Silence notifications when you need to focus — perfect for work or presentations.',
-    category: 'windows-guides',
-    tags: ['intermediate', 'windows', 'notifications', 'focus'],
-    readTime: '3 min',
-    thumbnailEmoji: '🔕',
-    publishedAt: '2026-01-29',
-    difficulty: 'Intermediate',
-    steps: [
-      { title: 'Turn on Do Not Disturb', content: 'Open Quick Settings from the taskbar and click the "Do Not Disturb" (bell) icon to silence notifications.' },
-      { title: 'Use Focus mode', content: 'Go to Settings → System → Focus to set up Focus sessions with a timer and automatic DND.' },
-      { title: 'Schedule quiet hours', content: 'In Focus settings, set automatic rules — e.g., DND during 10 PM–7 AM or during screen sharing.' },
-      { title: 'Allow priority notifications', content: 'Customize which apps can still send notifications during DND in Settings → System → Notifications → Priority.' },
-    ]
-  },
-  {
-    slug: 'use-quick-settings-windows',
-    title: 'How to Use Quick Settings on Windows',
-    excerpt: 'Access frequently used controls like Wi-Fi, Bluetooth, and brightness in one click.',
-    category: 'windows-guides',
-    tags: ['intermediate', 'windows', 'quick-settings', 'productivity'],
-    readTime: '3 min',
-    thumbnailEmoji: '⚡',
-    publishedAt: '2026-01-30',
-    difficulty: 'Intermediate',
-    steps: [
-      { title: 'Open Quick Settings', content: 'Click the Wi-Fi, speaker, or battery icons in the bottom-right of the taskbar to open Quick Settings.' },
-      { title: 'Toggle common features', content: 'Quickly toggle Wi-Fi, Bluetooth, Airplane Mode, Do Not Disturb, Night Light, and more.' },
-      { title: 'Adjust sliders', content: 'Use the brightness and volume sliders for quick adjustments without opening full settings.' },
-      { title: 'Customize the panel', content: 'Click the pencil icon to add, remove, or rearrange Quick Settings tiles to suit your workflow.' },
-    ]
-  },
-  {
+      {
     slug: 'use-snipping-tool-windows',
     title: 'How to Use the Snipping Tool on Windows',
     excerpt: `Capture, annotate, and share screenshots with Windows' built-in Snipping Tool.`,
@@ -1382,24 +1276,7 @@ const coreGuides: Guide[] = [
       { title: 'Add multiple tags', content: 'You can add multiple tags to a single file for flexible cross-referencing and organization.' },
     ]
   },
-  {
-    slug: 'setup-hot-corners-mac',
-    title: 'How to Set Up Hot Corners on Mac',
-    excerpt: 'Trigger actions by moving your cursor to screen corners — a hidden macOS power feature.',
-    category: 'mac-guides',
-    tags: ['intermediate', 'mac', 'hot-corners', 'productivity', 'shortcuts'],
-    readTime: '3 min',
-    thumbnailEmoji: '🔥',
-    publishedAt: '2026-01-24',
-    difficulty: 'Intermediate',
-    steps: [
-      { title: 'Open Hot Corners settings', content: 'Go to System Settings → Desktop & Dock → scroll down → Hot Corners button.' },
-      { title: 'Assign actions to corners', content: 'Click a corner dropdown to assign: Mission Control, Desktop, Notification Center, Lock Screen, etc.' },
-      { title: 'Use modifier keys', content: 'Hold a modifier key (like Cmd) when setting a corner to prevent accidental triggers.' },
-      { title: 'Recommended setup', content: 'Popular config: top-left = Mission Control, bottom-left = Desktop, bottom-right = Lock Screen.' },
-    ]
-  },
-  {
+    {
     slug: 'use-activity-monitor-mac',
     title: 'How to Use Activity Monitor on Mac',
     excerpt: `Monitor your Mac's performance and find resource-hungry apps with Activity Monitor.`,
@@ -1520,24 +1397,7 @@ const coreGuides: Guide[] = [
       { title: 'Add startup apps', content: 'Click the plus (+) button and browse to an app you want to launch at login.' },
     ]
   },
-  {
-    slug: 'force-quit-frozen-apps-mac',
-    title: 'How to Force Quit Frozen Apps on Mac',
-    excerpt: 'When an app stops responding, force quit it to regain control of your Mac.',
-    category: 'mac-guides',
-    tags: ['intermediate', 'mac', 'force-quit', 'frozen', 'troubleshooting'],
-    readTime: '3 min',
-    thumbnailEmoji: '⚠️',
-    publishedAt: '2026-02-01',
-    difficulty: 'Intermediate',
-    steps: [
-      { title: 'Use the keyboard shortcut', content: 'Press Cmd+Option+Esc to open the Force Quit Applications window.' },
-      { title: 'Select the frozen app', content: 'In the Force Quit window, click the unresponsive app (it may say "Not Responding").' },
-      { title: 'Click Force Quit', content: 'Click "Force Quit" and confirm. The app will close right away.' },
-      { title: 'Alternative method', content: 'Click the Apple menu → Force Quit. Or right-click the app in the Dock with Option held → Force Quit.' },
-    ]
-  },
-
+  
   // Advanced (34-50)
   {
     slug: 'reinstall-macos',
@@ -1709,26 +1569,7 @@ const coreGuides: Guide[] = [
   // Social: "You don't have to memorize 20 different passwords. Here's the simple system that keeps all your accounts safe."
   // Social: "The strongest passwords aren't random symbols — they're phrases. Here's why (and how to make one)."
   // Newsletter: "Most people use passwords that are already in hackers' databases — and they have no idea. Our quick guide shows you exactly what makes a strong password, the one trick that makes them easy to remember, and why a password manager is the smartest upgrade you can make today. Read the full guide at TekSure."
-  {
-    slug: 'create-strong-password',
-    title: 'How to Create a Strong Password',
-    excerpt: 'Learn the rules for creating passwords that are nearly impossible to crack.',
-    category: 'essential-skills',
-    tags: ['security', 'passwords', 'all-devices', 'beginner'],
-    readTime: '4 min',
-    videoUrl: 'https://www.youtube.com/embed/5Im87VPQZ_0',
-    thumbnailEmoji: '🔐',
-    publishedAt: '2026-01-05',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Use at least 12 characters', content: 'Longer passwords are exponentially harder to crack. Aim for 12-16 characters minimum.' , tip: 'Every extra character makes your password exponentially harder to crack. 16 characters is ideal.' },
-      { title: 'Mix character types', content: 'Use uppercase, lowercase, numbers, and special characters (!@#$%^&*) for maximum strength.' },
-      { title: 'Use passphrases', content: 'A random phrase like "purple-elephant-dancing-rain" is strong AND easy to remember.' },
-      { title: 'Never reuse passwords', content: 'Each account should have a unique password. If one gets breached, the others stay safe.' , warning: 'If you use the same password on multiple sites and one gets hacked, attackers will try that password on all your other accounts.' },
-      { title: 'Use a password manager', content: 'Tools like 1Password, Bitwarden, or Apple Keychain generate and store unique passwords for every account.', tip: 'For more security basics, visit cisa.gov — the Cybersecurity & Infrastructure Security Agency offers free, plain-English guides to staying safe online.' },
-    ]
-  },
-  {
+    {
     slug: 'setup-two-factor-any-account',
     title: 'How to Set Up Two-Factor Authentication on Any Account',
     excerpt: 'Add an extra layer of security to your online accounts with 2FA — a must for everyone.',
@@ -2151,25 +1992,7 @@ const coreGuides: Guide[] = [
       { title: 'Use Search effectively', content: `Press Win+S and use search operators: "type:pdf" finds all PDFs, "date:today" finds today's files.` },
     ]
   },
-  {
-    slug: 'windows-edge-browser-tips',
-    title: 'Windows: Microsoft Edge Tips',
-    excerpt: 'Hidden Edge browser features that make browsing faster and better.',
-    category: 'tips-tricks',
-    tags: ['windows', 'edge', 'browser', 'tips'],
-    readTime: '4 min',
-    thumbnailEmoji: '🌐',
-    publishedAt: '2026-01-25',
-    difficulty: 'Intermediate',
-    steps: [
-      { title: 'Use Collections', content: 'Click the Collections icon (stacked pages) to save and organize web content for research or shopping.' },
-      { title: 'Vertical tabs', content: 'Click the tab icon in the top-left to switch to vertical tabs for easier management of many tabs.' },
-      { title: 'Immersive Reader', content: 'Click the book icon in the address bar for a clean, ad-free reading experience.' },
-      { title: 'Split screen in Edge', content: 'Right-click a link → "Open link in split screen" to view two pages side by side in one tab.' },
-      { title: 'Web capture', content: 'Press Ctrl+Shift+S to capture a screenshot of the web page with annotation tools.' },
-    ]
-  },
-  {
+    {
     slug: 'keeping-devices-in-sync',
     title: 'Tips for Keeping Your Devices in Sync',
     excerpt: 'Keep your files, photos, and data synced across iPhone, Mac, Windows, and more.',
@@ -2631,25 +2454,7 @@ const coreGuides: Guide[] = [
       { title: 'Snap a photo of your fridge', content: 'With Gemini or ChatGPT vision, take a photo of your fridge contents and ask for recipe suggestions based on what it sees.' },
     ]
   },
-  {
-    slug: 'ai-for-travel-planning',
-    title: 'Plan Your Next Trip with AI',
-    excerpt: 'Use AI to create itineraries, find hidden gems, and get travel advice for any destination.',
-    category: 'ai-guides',
-    tags: ['beginner', 'travel', 'planning', 'itinerary'],
-    readTime: '6 min',
-    thumbnailEmoji: '✈️',
-    publishedAt: '2026-03-06',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Generate an itinerary', content: 'Ask: "Create a 5-day itinerary for Tokyo on a moderate budget. Include food recommendations and transit tips."' },
-      { title: 'Get local tips', content: 'Ask about customs, tipping culture, safety tips, best neighborhoods to stay in, and phrases to learn in the local language.' },
-      { title: 'Compare options', content: 'Say "Compare staying in Shibuya vs. Shinjuku for a first-time visitor" to get pros and cons of different choices.' },
-      { title: 'Create packing lists', content: `Tell the AI your destination, dates, and planned activities. It'll generate a customized packing list based on weather and activities.` },
-      { title: 'Verify with real sources', content: 'AI travel info can be outdated. Cross-check opening hours, prices, and visa requirements on official websites.' },
-    ]
-  },
-  {
+    {
     slug: 'ai-grammar-checker',
     title: 'Using AI as a Grammar and Writing Coach',
     excerpt: 'Improve your writing with AI-powered grammar checking, style suggestions, and readability scoring.',
@@ -2666,24 +2471,7 @@ const coreGuides: Guide[] = [
       { title: 'Learn from corrections', content: `Ask the AI to explain why a change was made: "Why is 'affect' correct here instead of 'effect'?" to improve your skills over time.` },
     ]
   },
-  {
-    slug: 'ai-for-job-search',
-    title: 'How AI Can Help You Find a Job',
-    excerpt: 'Use AI to optimize your resume, prepare for interviews, and find job openings that match your skills.',
-    category: 'ai-guides',
-    tags: ['beginner', 'jobs', 'resume', 'career'],
-    readTime: '6 min',
-    thumbnailEmoji: '💼',
-    publishedAt: '2026-03-08',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Optimize your resume', content: 'Paste a job description and your resume into ChatGPT. Ask it to tailor your resume to match the job requirements and keywords.' },
-      { title: 'Write cover letters', content: 'Provide the job listing and ask: "Write a cover letter highlighting my 5 years of project management experience for this role."' },
-      { title: 'Practice interviews', content: 'Say "Act as an interviewer for a marketing manager position. Ask me common interview questions one at a time and give feedback on my answers."' },
-      { title: 'Research companies', content: `Ask the AI to summarize a company's recent news, culture, competitors, and common interview questions to prepare thoroughly.` },
-    ]
-  },
-  {
+    {
     slug: 'ai-photo-editing',
     title: 'Edit Photos with AI: Remove Backgrounds, Enhance, and More',
     excerpt: 'Use free AI tools to remove backgrounds, enhance quality, and edit photos without Photoshop skills.',
@@ -5822,45 +5610,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
   // Social: "Setting up a new iPhone is easier than you think. This guide walks you through every screen."
   // Social: "The first thing you should do with a new iPhone isn't downloading apps — it's this."
   // Newsletter: "New iPhone day is exciting — but the setup process can feel overwhelming if you've never done it before. Our step-by-step guide walks you through every screen, from the Hello screen to your first software update, so your phone is backed up and secure from day one. Read the full guide at TekSure."
-  {
-    slug: 'how-to-set-up-a-new-iphone',
-    title: 'How to Set Up a New iPhone',
-    excerpt: 'Got a new iPhone? This guide walks you through every step from turning it on to signing in with your Apple ID.',
-    category: 'phone-guides',
-    tags: ['iphone', 'setup', 'apple', 'beginner', 'apple-id'],
-    readTime: '6 min',
-    thumbnailEmoji: '📱',
-    publishedAt: '2026-03-31',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Turn on your iPhone', content: 'Press and hold the side button until the Apple logo appears. Place the phone on a flat surface and wait for the "Hello" screen.' },
-      { title: 'Choose your language and connect to Wi-Fi', content: 'Swipe up and follow the prompts to select your language and country. Then select your home Wi-Fi network from the list and enter the password.', tip: 'Write your Wi-Fi password down before you start. You will find it on a sticker on the bottom of your router.' },
-      { title: 'Set up Face ID or Touch ID', content: 'Follow the on-screen instructions to scan your face or fingerprint. This lets you unlock your phone securely without typing a password every time.' },
-      { title: 'Sign in with your Apple ID', content: `Enter your Apple ID email and password. If you do not have one, tap "Forgot password or don't have an Apple ID?" to create one for free. Your Apple ID connects to the App Store, iCloud, and iMessage.`, warning: 'Write down your Apple ID email and password and keep them somewhere safe. You will need them if you ever get a new phone.' },
-      { title: 'Restore or start fresh', content: 'If you have an old iPhone, choose "Transfer from iPhone" or "Restore from iCloud Backup" to move your apps and photos across. If this is your first iPhone, choose "Set Up as New iPhone."' },
-      { title: 'Update to the latest iOS', content: 'Go to Settings, then General, then Software Update. If an update is available, tap Download and Install. This keeps your phone secure.', tip: `Plug your phone into a charger before updating. Updates can take 15-30 minutes. For the full official setup guide, visit support.apple.com/en-us/108854 — Apple's free step-by-step new iPhone setup page.` },
-    ]
-  },
-  {
-    slug: 'how-to-set-up-a-new-android-phone',
-    title: 'How to Set Up a New Android Phone',
-    excerpt: 'A beginner-friendly walkthrough for setting up a new Android phone from scratch — including your Google account.',
-    category: 'phone-guides',
-    tags: ['android', 'setup', 'google', 'beginner', 'google-account'],
-    readTime: '6 min',
-    thumbnailEmoji: '🤖',
-    publishedAt: '2026-03-31',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Turn on your Android phone', content: 'Press and hold the power button on the right side until the screen lights up. Wait for the welcome screen to appear.' },
-      { title: 'Select language and connect to Wi-Fi', content: 'Choose your preferred language, then select your home Wi-Fi network and enter the password.', tip: 'Your Wi-Fi password is usually on a sticker on the bottom of your router.' },
-      { title: 'Sign in with your Google account', content: 'Enter your Gmail address and password. This connects you to the Play Store, Google Photos, Gmail, and Google Drive. If you do not have a Gmail account, tap "Create account" to make one for free.', warning: 'Write down your Google account email and password. You will need these to download apps and access your photos.' },
-      { title: 'Transfer from your old phone', content: `You can transfer contacts, apps, and photos from your old phone using a cable or wirelessly. If this is your first smartphone, tap "Don't copy."` },
-      { title: 'Set up a screen lock', content: 'Choose a PIN, pattern, or fingerprint unlock. A PIN of 6 or more digits is recommended. Avoid patterns as they are easier to guess.' },
-      { title: 'Check for software updates', content: 'Go to Settings, then System, then System Update. Install any available updates to keep your phone secure.', tip: `Turn on automatic updates so your phone stays protected without you needing to remember. For official Android setup help, visit support.google.com/android — Google's free help center for all Android phones.` },
-    ]
-  },
-  {
+      {
     slug: 'how-to-move-contacts-to-a-new-phone',
     title: 'How to Move Your Contacts to a New Phone',
     excerpt: "Don't lose your contacts when switching phones. Here's how to transfer them to iPhone or Android in minutes.",
@@ -5930,24 +5680,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'Zoom in on any part of the screen', content: 'For extra help reading specific things, turn on Zoom. Go to Settings > Accessibility > Zoom and turn it on. Then double-tap the screen with three fingers to zoom in on anything — a menu, a small label, or a phone number.', tip: 'You can also pinch and spread two fingers in Safari to zoom in on any webpage, even without turning on Zoom in Settings.' },
     ],
   },
-  {
-    slug: 'make-text-bigger-android',
-    title: 'How to Make Text Bigger on Android',
-    excerpt: 'Increase font size on your Android phone so text is easier to read — takes less than a minute.',
-    category: 'phone-guides',
-    tags: ['android', 'accessibility', 'text-size', 'font', 'beginner'],
-    readTime: '2 min',
-    thumbnailEmoji: '🔤',
-    publishedAt: '2026-03-31',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Open Settings and find Font Size', content: 'Open the Settings app. Depending on your phone brand: Samsung Galaxy — tap Display > Font Size and Style. Google Pixel — tap Accessibility > Text and Display > Font Size. Most other Android phones — tap Display > Font Size, or tap Accessibility > Font Size.', tip: 'If you cannot find the font size setting, open Settings and use the search bar at the top. Type "font" or "text size" and it will take you right there.' },
-      { title: 'Drag the slider to make text bigger', content: 'Once you find the Font Size slider, drag it to the right to increase the text. As you move the slider, a preview shows what text will look like at that size. Release the slider and the change applies right away.' },
-      { title: 'Make everything bigger — icons and all', content: 'For Samsung: go to Settings > Display > Screen Zoom to make icons and images bigger too, not just text. For Pixel: go to Settings > Display > Display Size. Increasing the display size makes the entire screen easier to see.', tip: `Google's accessibility guide for Android is at support.google.com/accessibility/android/answer/6006986` },
-      { title: 'Turn on Magnification to zoom in anywhere', content: 'Go to Settings > Accessibility > Magnification and turn it on. Once enabled, you can triple-tap anywhere on the screen to zoom in — great for reading a small menu, a price tag on a website, or a tiny phone number.', warning: 'Magnification stays on until you triple-tap again to zoom back out. If your screen suddenly seems zoomed in and stuck, triple-tap the screen with one finger to return to normal.' },
-    ],
-  },
-  {
+    {
     slug: 'free-up-storage-iphone',
     title: 'How to Free Up Space on Your iPhone',
     excerpt: 'Getting the "iPhone storage is full" warning? Here are the quickest ways to free up space without deleting what matters.',
@@ -5966,25 +5699,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'Delete duplicate photos', content: 'Open the Photos app, tap Albums at the bottom, scroll down and tap "Duplicates." You will see pairs of identical or near-identical photos. Tap "Merge" to keep one copy and delete the other. This works on iPhones running iOS 17 or later (including iOS 18).' },
     ],
   },
-  {
-    slug: 'free-up-storage-android',
-    title: 'How to Free Up Space on Your Android Phone',
-    excerpt: 'Running out of storage? Here are simple steps to clear space on your Android without losing important photos or apps.',
-    category: 'phone-guides',
-    tags: ['android', 'storage', 'space', 'photos', 'beginner'],
-    readTime: '4 min',
-    thumbnailEmoji: '💾',
-    publishedAt: '2026-03-31',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Check what is using your storage', content: 'Go to Settings > Storage (on Samsung: Settings > Device Care > Storage). You will see a bar graph and a breakdown showing how much space photos, apps, and other files are using. Start by identifying the biggest categories.' },
-      { title: 'Use Files by Google to clean up automatically', content: 'Open the Files app (pre-installed on most Android phones) or download "Files by Google" free from the Play Store. Tap "Clean" at the bottom. The app will find junk files, duplicate photos, and large unused files and walk you through deleting them safely.', tip: `Google's guide to managing storage on Android is at support.google.com/android/answer/9355956` },
-      { title: 'Back up photos and free up space with Google Photos', content: `Open Google Photos and make sure backup is turned on (tap your profile photo > Photos Settings > Backup). Once your photos are safely backed up to Google's servers, tap your profile photo > "Free up space on this device" — this removes local copies from your phone while keeping them safe in Google Photos.`, warning: 'Only free up space after you confirm your photos are fully backed up. Look for "Backup is on" and "X photos backed up" before tapping Free up space.' },
-      { title: 'Clear app cache', content: 'Go to Settings > Apps. Tap any large app like Chrome, Facebook, or YouTube. Tap "Storage & Cache" and then "Clear Cache." This removes temporary files stored by that app. It does not delete your login information or personal data — just temporary junk.' },
-      { title: 'Delete files in your Downloads folder', content: 'Open the Files app and tap "Downloads." You will often find old documents, PDFs, or files you downloaded months ago and no longer need. Select them and delete. This folder is often full of forgotten downloads.' },
-    ],
-  },
-  {
+    {
     slug: 'backup-iphone-to-icloud',
     title: 'How to Back Up Your iPhone to iCloud',
     excerpt: `Backing up your iPhone means your photos and contacts are safe even if your phone is lost or broken. Here's how.`,
@@ -6368,24 +6083,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
   // HOW-TO: EMAIL GUIDES (8 new guides)
   // ═══════════════════════════════════════════
 
-  {
-    slug: 'set-up-gmail-account',
-    title: 'How to Create a Free Gmail Account',
-    excerpt: `Gmail is Google's free email service used by 1.8 billion people. Here's how to create your account in five minutes.`,
-    category: 'how-to',
-    tags: ['gmail', 'email', 'google', 'account', 'beginner'],
-    readTime: '4 min',
-    thumbnailEmoji: '📧',
-    publishedAt: '2026-03-31',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Go to Gmail', content: 'Open your web browser and go to gmail.com. Click "Create account" at the bottom of the sign-in page.' },
-      { title: 'Fill in your details', content: 'Enter your first name and last name. Choose a username (this becomes your email address, e.g., yourname@gmail.com). Choose a strong password and confirm it.', warning: 'Your username cannot be changed later, so choose carefully. Simple names like john.smith may already be taken.' },
-      { title: 'Add recovery information', content: 'Enter a phone number and an alternative email address. These help you get back into your account if you forget your password.', tip: 'Always add a phone number. It is the easiest way to recover your account.' },
-      { title: 'Accept and start using Gmail', content: `Read and accept Google's terms. Your new Gmail account is ready. You can now send and receive emails at your new address.`, tip: `For official Gmail help and tutorials, visit support.google.com/mail — Google's free help center covers everything from basic setup to advanced features.` },
-    ]
-  },
-  {
+    {
     slug: 'how-to-send-an-email',
     title: 'How to Send Your First Email',
     excerpt: 'Not sure how to send an email? This step-by-step guide shows you how using Gmail, Outlook, or any email service.',
@@ -6454,25 +6152,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'Unsubscribe from emails you do not need', content: 'The fastest way to tidy your inbox is to open any newsletter you no longer want, scroll to the very bottom, and click "Unsubscribe." In Gmail, many marketing emails also show an "Unsubscribe" link right at the top, next to the sender name.', tip: 'Unsubscribing from emails you never read can cut your daily inbox clutter in half.' },
     ]
   },
-  {
-    slug: 'unsubscribe-from-emails',
-    title: 'How to Stop Receiving Unwanted Emails',
-    excerpt: 'Spam and mailing lists clogging up your inbox? Here are the best ways to unsubscribe and clean up your email in minutes.',
-    category: 'how-to',
-    tags: ['email', 'spam', 'unsubscribe', 'inbox', 'beginner'],
-    readTime: '3 min',
-    thumbnailEmoji: '🚫',
-    publishedAt: '2026-03-31',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Unsubscribe from newsletters and marketing emails', content: 'Open the unwanted email and scroll to the very bottom. Look for a link that says "Unsubscribe" or "Manage preferences" and click it. Legitimate companies are legally required to include this link. It may take up to 10 business days to take effect.' },
-      { title: `Use Gmail's built-in unsubscribe button`, content: `In Gmail, many marketing emails show an "Unsubscribe" link right at the top of the email, next to the sender's name. Click it for a quick one-click unsubscribe — much faster than scrolling to the bottom.`, tip: 'This top-of-email unsubscribe link only appears on emails Gmail recognizes as marketing or newsletters.' },
-      { title: 'Mark genuine spam as junk', content: 'If an email is real spam (not something you ever signed up for), click the spam or junk button instead of unsubscribing. This trains your email filter to catch similar messages in the future. In Gmail, click the exclamation mark (!) icon. In Outlook, right-click the email, choose Junk, then Mark as Junk.', warning: 'Never click links inside a suspicious spam email. Use the spam button in your email app instead.' },
-      { title: 'Block a specific sender', content: `In Gmail, open the email, click the three dots menu, and choose "Block" followed by the sender's name. In Outlook, right-click the email, choose Junk, then Block Sender. You will no longer receive emails from that address.` },
-      { title: 'Create a filter to automatically delete or archive', content: 'If unwanted emails keep getting through, you can set up a filter. In Gmail, open an email from the sender, click the three dots menu, and choose "Filter messages like these." Then set it to automatically delete or archive those messages. In Outlook, go to Rules and create a rule for that sender.' },
-    ]
-  },
-  {
+    {
     slug: 'spot-phishing-email',
     title: `How to Spot a Phishing Email: A Beginner's Guide`,
     excerpt: 'Phishing emails trick you into clicking dangerous links or sharing personal details. Learn the 5 red flags that give every scam email away.',
@@ -6490,25 +6170,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'Report and delete', content: 'If you think an email is a scam, do not reply. Mark it as spam or phishing in your email app. If it claims to be from your bank, call your bank using the number on the back of your card to report it.', tip: `You can forward phishing emails to report@phishing.gov.uk in the UK. In the US, report scams at ReportFraud.ftc.gov and stay informed at consumer.ftc.gov/consumer-alerts — the FTC's free consumer alert page.` },
     ]
   },
-  {
-    slug: 'set-up-gmail-on-phone',
-    title: 'How to Set Up Gmail on Your Phone',
-    excerpt: 'Access all your emails on the go by setting up Gmail (or any email account) on your smartphone.',
-    category: 'how-to',
-    tags: ['gmail', 'email', 'phone', 'setup', 'iphone', 'android', 'beginner'],
-    readTime: '3 min',
-    thumbnailEmoji: '📱',
-    publishedAt: '2026-03-31',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Download the Gmail app', content: 'On an iPhone, open the App Store, search for "Gmail," and tap Get — it is free. On an Android phone, Gmail is usually already installed. If you do not see it, open the Play Store and search for "Gmail" to download it.' },
-      { title: 'Sign in with your Google account', content: 'Open the Gmail app. Tap "Sign in." Type your Gmail address (for example, yourname@gmail.com) and tap Next. Enter your password and tap Next again. Your emails will start loading within a minute.' },
-      { title: 'Set up notifications', content: `Gmail will ask if you want to receive notifications when new emails arrive. Tap "Allow" so you do not miss important messages. You can change this later in your phone's Settings app.`, tip: 'If you get too many notifications, you can set Gmail to only notify you about emails marked as important. Look in the Gmail app settings under Notifications.' },
-      { title: 'Read, reply, and write new emails', content: 'Tap any email to open it. To reply, tap the arrow pointing left at the bottom of the message. To forward, tap the arrow pointing right. To write a brand new email, tap the pencil icon in the bottom right corner of the screen.' },
-      { title: 'Keep your inbox tidy', content: 'Swipe an email to the left to archive it — this hides it from your inbox but keeps it saved. Swipe right to mark it as read or unread. To select several emails at once, press and hold on one email, then tap the others.' },
-    ]
-  },
-
+  
   // ═══════════════════════════════════════════
   // HOW-TO: PRINTING GUIDES (6 new guides)
   // ═══════════════════════════════════════════
@@ -6656,25 +6318,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'Learn the Roku remote basics', content: 'Use the arrow buttons to move around the screen and press OK to select. The Home button always takes you back to the main menu. The star (*) button opens settings for whatever you are watching. Some remotes also have shortcut buttons for popular apps like Netflix.' },
     ]
   },
-  {
-    slug: 'use-amazon-fire-stick',
-    title: 'How to Use an Amazon Fire Stick',
-    excerpt: `The Amazon Fire Stick turns any TV into a smart TV — here's how to set it up and start watching.`,
-    category: 'how-to',
-    tags: ['fire-stick', 'amazon', 'streaming', 'tv', 'beginner'],
-    readTime: '4 min',
-    thumbnailEmoji: '🔥',
-    publishedAt: '2026-03-31',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Plug the Fire Stick into your TV', content: 'Insert the Fire Stick into an HDMI port on the back or side of your TV. Plug the power adapter into a wall outlet and connect the other end to the Fire Stick. Then use your TV remote to switch to that HDMI input — look for a button labeled "Input" or "Source."' },
-      { title: 'Pair the remote and connect to Wi-Fi', content: 'The Fire Stick remote usually pairs with the device automatically. If it does not, press and hold the Home button for 10 seconds. Make sure batteries are inserted. Then follow the on-screen setup to connect to your home Wi-Fi network by selecting your network and typing your password.', tip: 'Have your Wi-Fi password ready before you start. You will need to type it using the on-screen keyboard.' },
-      { title: 'Sign in with your Amazon account', content: 'Enter your Amazon email address and password when prompted. If you bought the Fire Stick from Amazon while logged into your account, it may already be registered to you and this step will be done automatically.' },
-      { title: 'Find and watch shows', content: 'The home screen shows popular apps across the top, including Netflix, Prime Video, YouTube, and more. Use the arrow buttons on the remote to browse. To search across all your streaming services at once, select the magnifying glass icon at the top of the screen and type or speak what you are looking for.' },
-      { title: 'Use Alexa voice search and set parental controls', content: 'Press and hold the microphone button on the remote and say something like "Search for comedy movies" or "Play Stranger Things on Netflix." Alexa can also pause, play, and control the volume. To set parental controls, go to Settings, then Parental Controls, and create a PIN to restrict purchases or block certain content.' },
-    ]
-  },
-  {
+    {
     slug: 'cast-phone-to-tv',
     title: 'How to Cast Your Phone Screen to the TV',
     excerpt: `Show photos, videos, or anything from your phone on the big screen — here's how to cast using Chromecast, AirPlay, or screen mirroring.`,
@@ -7833,25 +7477,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'Rate and tip', content: 'After delivery, the app asks you to rate the restaurant and driver. A tip is not required but is appreciated — drivers rely on tips. You can adjust the tip amount after delivery if the service was especially good or bad.' },
     ]
   },
-  {
-    slug: 'instacart-guide',
-    title: 'How to Order Groceries with Instacart',
-    excerpt: 'Get groceries delivered from your favorite local stores without leaving home.',
-    category: 'app-guides',
-    tags: ['instacart', 'groceries', 'delivery', 'apps', 'beginner'],
-    readTime: '5 min',
-    thumbnailEmoji: '🛒',
-    publishedAt: '2026-04-05',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Download and sign up', content: 'Download Instacart from the App Store or Google Play. Create an account and enter your delivery address. Instacart will show you which stores deliver to your area (Costco, Kroger, Safeway, Publix, and many more).' },
-      { title: 'Choose your store and shop', content: 'Tap a store to start shopping. Browse by category (produce, dairy, meat) or use the search bar to find specific items. Tap an item to add it to your cart. You can adjust quantities and see the price per item.', tip: 'Add "replacement preferences" for each item. If your chicken brand is out of stock, do you want a similar brand or no replacement? This saves back-and-forth with your shopper.' },
-      { title: 'Schedule your delivery', content: 'When ready, go to your cart. Choose a delivery window: same day (sometimes within an hour), tomorrow, or schedule for later in the week. Earlier time slots tend to have lower fees.' },
-      { title: 'Communicate with your shopper', content: 'After placing your order, a personal shopper at the store picks your items. They may message you through the app about substitutions. You can approve replacements, choose a different item, or skip it entirely. They will also send a photo of your items at checkout.' },
-      { title: 'Receive your delivery', content: 'The app tracks your shopper in real-time. You will be notified when they are on the way. They will leave groceries at your door or hand-deliver them. Check the order for accuracy and rate your experience in the app.' },
-    ]
-  },
-
+  
   // ═══════════════════════════════════════════════════════════════════════════
   // BATCH 3: HOW-TO GUIDES (April 2026)
   // ═══════════════════════════════════════════════════════════════════════════
@@ -7893,25 +7519,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'Use email for a few photos', content: 'For just 1-5 photos: open your email app, create a new message to yourself, attach the photos, and send. Then open that email on your computer and download the attachments. This is the simplest method but only works for small numbers of photos (most email limits attachments to 25MB).', tip: 'For large numbers of photos (100+), cloud services or a USB cable are much faster than email.' },
     ]
   },
-  {
-    slug: 'cloud-storage-basics',
-    title: 'Understanding Cloud Storage: iCloud, Google Drive, and OneDrive',
-    excerpt: 'What is "the cloud"? Where are your files actually stored? A plain-English explanation.',
-    category: 'how-to',
-    tags: ['cloud', 'storage', 'icloud', 'google-drive', 'onedrive', 'beginner'],
-    readTime: '5 min',
-    thumbnailEmoji: '☁️',
-    publishedAt: '2026-04-06',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'What is cloud storage', content: 'Cloud storage means your files are saved on a computer in a secure data center (not just on your device). This means: you can access your files from any device, your files are safe even if your phone or computer breaks. And you can share files with others easily. Think of it like a safety deposit box at a bank — your stuff is there whenever you need it.' },
-      { title: 'Which cloud service should you use', content: 'Use the one that matches your devices: iPhone/iPad/Mac users — iCloud (5GB free, built into every Apple device). Android/Chrome users — Google Drive (15GB free, connected to Gmail). Windows users — OneDrive (5GB free, built into Windows). You can use more than one, but keeping it simple with one service is easiest.' },
-      { title: 'How to check your storage', content: 'iCloud: Settings, your name, iCloud, Manage Storage. Google Drive: drive.google.com, click the storage bar at the bottom-left. OneDrive: Open OneDrive app or go to onedrive.com, click Settings, then Storage.' },
-      { title: 'Free up space when you run out', content: 'Delete: old photos and videos (the biggest space hogs), email attachments you have already saved, old backups from devices you no longer own, and files in the trash (empty it to reclaim space). If you still need more, upgrade to a paid plan — usually $1-3/month for 50-200GB.' },
-      { title: 'Keep your cloud account secure', content: 'Use a strong, unique password for your cloud account. Turn on two-factor authentication (an extra code when you sign in). Never share your cloud login details with anyone. Review which apps have access to your cloud storage and remove any you do not recognize.' },
-    ]
-  },
-    
+      
   // ═══════════════════════════════════════════════════════════════════════════
   // BATCH 4: REMAINING GUIDES (April 2026)
   // ═══════════════════════════════════════════════════════════════════════════
@@ -8652,12 +8260,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Review permissions on Android', content: `Go to Settings > Privacy > Permission Manager. Tap a permission type (Camera, Location, Microphone) to see which apps have access. Change any app to "Don't allow" or "Ask every time" if it does not need that permission.` },
     { title: 'Permissions to watch carefully', content: 'Location: Only maps, weather, and ride-sharing apps truly need this. Set others to "Never" or "While Using." Camera & Microphone: Only apps you actively use for photos, video calls, or voice notes. Contacts: Very few apps need access to your contacts. If a flashlight app asks for contacts, that is a red flag.', warning: 'If an app stops working after you remove a permission, you can always grant it again. Start restrictive and loosen only if needed.' },
   ] },
-    { slug: 'use-do-not-disturb', title: 'How to Set Up Do Not Disturb on Your Phone', excerpt: 'Silence notifications at night or during important moments without missing emergency calls.', category: 'phone-guides', tags: ['do-not-disturb', 'notifications', 'iphone', 'android', 'beginner'], readTime: '3 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
-    { title: 'Turn on Do Not Disturb manually', content: 'iPhone: Open Control Center (swipe down from top-right) and tap the crescent moon icon. Android: Swipe down from the top and tap "Do Not Disturb." This silences all notifications, calls, and alerts until you turn it off.' },
-    { title: 'Schedule Do Not Disturb', content: 'iPhone: Settings > Focus > Do Not Disturb > Set a Schedule. Choose times like 10 PM to 7 AM. Android: Settings > Sound > Do Not Disturb > Schedules. Set "Sleeping" to your bedtime hours. Your phone will automatically go silent at night and wake up in the morning.' },
-    { title: 'Allow important calls through', content: 'You probably still want emergency calls to ring through. iPhone: Settings > Focus > Do Not Disturb > People > Allow Calls From > Favorites (or Everyone). Android: Settings > Sound > Do Not Disturb > People > Calls > Starred contacts. Add important people to your Favorites or Starred contacts.', tip: 'Most phones also allow repeated callers through — if someone calls twice within 3 minutes, the second call will ring. This catches genuine emergencies.' },
-  ] },
-  { slug: 'find-lost-phone', title: 'How to Find Your Lost Phone', excerpt: 'Use built-in tracking to locate, ring, or lock your phone if it goes missing.', category: 'phone-guides', tags: ['find-my', 'lost-phone', 'iphone', 'android', 'beginner'], readTime: '4 min', thumbnailEmoji: '📍', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
+      { slug: 'find-lost-phone', title: 'How to Find Your Lost Phone', excerpt: 'Use built-in tracking to locate, ring, or lock your phone if it goes missing.', category: 'phone-guides', tags: ['find-my', 'lost-phone', 'iphone', 'android', 'beginner'], readTime: '4 min', thumbnailEmoji: '📍', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
     { title: 'Find a lost iPhone', content: 'On any web browser, go to icloud.com/find. Sign in with your Apple ID. Click "All Devices" and select your iPhone. You will see its location on a map. Click "Play Sound" to make it ring (even on silent). If you cannot recover it, click "Lost Mode" to lock it and display a message.' },
     { title: 'Find a lost Android phone', content: 'On any web browser, go to google.com/android/find. Sign in with the same Google account on your phone. Your phone location will appear on a map. Click "Play sound" to make it ring for 5 minutes at full volume. Click "Secure device" to lock it remotely.' },
     { title: 'Set this up BEFORE you lose your phone', content: 'iPhone: Settings > [your name] > Find My > Find My iPhone — make sure it is ON. Also turn on "Send Last Location." Android: Settings > Security > Find My Device — make sure it is ON. These features only work if they were enabled before the phone was lost.', warning: 'If you believe your phone was stolen, do NOT try to retrieve it yourself. Use the "Lost Mode" or "Secure device" feature to lock it, then file a police report.' },
@@ -8675,14 +8278,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Review your profile information', content: 'Go to your profile and tap "About." Review each section: work, education, places lived, contact info, family. Remove anything you do not want public. For each item, tap the audience selector (globe or friends icon) to control who can see it.' },
     { title: 'Check your tagged photos', content: 'Go to Settings > Privacy > Profile and Tagging. Turn on "Review tags people add to your posts before they appear" and "Review posts you are tagged in before they appear on your profile." This gives you control over what others post about you.' },
   ] },
-  { slug: 'instagram-beginners', title: 'Getting Started with Instagram', excerpt: 'Create an account, find people to follow, and share your first photo on Instagram.', category: 'social-media', tags: ['instagram', 'beginner', 'photos', 'social'], readTime: '5 min', thumbnailEmoji: '📸', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
-    { title: 'Download and create your account', content: 'Download Instagram from the App Store or Google Play. Open it and tap "Create new account." Enter your email or phone number, create a username and password. Your username is how people find you. It can be your real name or a nickname.' },
-    { title: 'Set up your profile', content: 'Tap your profile icon (bottom right). Tap "Edit Profile." Add a profile photo (a clear photo of yourself helps friends find you). Write a short bio — just a line or two about yourself. Set your account to "Private" if you only want approved followers to see your posts: Settings > Account Privacy > toggle on.' },
-    { title: 'Find people to follow', content: 'Instagram will suggest people from your contacts if you allow it. You can also search for people by name using the search icon (magnifying glass). Tap "Follow" next to anyone you want to follow. Start with family and close friends. You will see their photos and videos in your feed.' },
-    { title: 'Share your first photo', content: 'Tap the + icon at the bottom center. Choose a photo from your gallery or take a new one. Apply a filter if you want (swipe left/right to see options). Write a caption describing the photo. Tap "Share." Your followers will now see it in their feed.' },
-    { title: 'Interact with posts', content: 'Double-tap a photo to "like" it (a heart appears). Tap the speech bubble icon to leave a comment. Tap the paper plane icon to share a post with someone via direct message. Liking and commenting is how you stay connected with friends and family on Instagram.' },
-  ] },
-  { slug: 'youtube-for-beginners', title: 'How to Use YouTube: Find, Watch, and Subscribe', excerpt: 'YouTube has a video for almost everything. Here is how to find what you need and make the most of it.', category: 'social-media', tags: ['youtube', 'video', 'streaming', 'beginner'], readTime: '4 min', thumbnailEmoji: '📺', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
+    { slug: 'youtube-for-beginners', title: 'How to Use YouTube: Find, Watch, and Subscribe', excerpt: 'YouTube has a video for almost everything. Here is how to find what you need and make the most of it.', category: 'social-media', tags: ['youtube', 'video', 'streaming', 'beginner'], readTime: '4 min', thumbnailEmoji: '📺', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
     { title: 'Search for videos', content: 'Go to youtube.com in your browser or open the YouTube app. Tap the search icon (magnifying glass) and type what you want to learn or watch. For example: "how to connect WiFi" or "easy dinner recipes." Press Enter or tap Search.' },
     { title: 'Watch a video', content: 'Tap any video thumbnail to start watching. Use the controls at the bottom: play/pause, skip forward/back, and adjust volume. Tap the fullscreen icon (square in the corner) to watch in full screen. Tap anywhere on the video to show/hide controls.' },
     { title: 'Subscribe to channels you like', content: 'If you find a creator whose videos you enjoy, tap the "Subscribe" button below the video. Subscribed channels will appear in your "Subscriptions" tab, making it easy to find their new videos. Subscribing is free.', tip: 'Some great YouTube channels for tech beginners: "Kevin Stratvert" for Windows, "9to5Mac" for Apple, and "AARP" for senior-focused tech tutorials.' },
@@ -8803,13 +8399,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Reduce brightness', content: 'Swipe down from top-right for Control Center. Drag brightness to 40-50%.' },
     { title: 'Disable unnecessary Location Services', content: 'Settings > Privacy > Location Services. Set apps to "While Using" instead of "Always."' },
   ] },
-  { slug: 'android-battery-tips', title: 'How to Extend Your Android Battery Life', excerpt: 'Get more hours from your Android phone with these tips.', category: 'phone-guides', tags: ['android', 'battery', 'settings'], readTime: '5 min', thumbnailEmoji: '🔋', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/n1-9LS0ICC8', steps: [
-    { title: 'Turn on Battery Saver', content: 'Settings > Battery > Battery Saver. Limits background activity.' },
-    { title: 'Reduce brightness', content: 'Swipe down for Quick Settings. Lower the brightness slider.' },
-    { title: 'Turn off unused connections', content: 'Turn off Bluetooth, Wi-Fi, or Data when not using them.' },
-    { title: 'Use Dark Mode', content: 'Settings > Display > Dark Theme. On OLED screens, this saves significant battery.' },
-  ] },
-    { slug: 'phone-block-calls', title: 'How to Block Unwanted Phone Calls', excerpt: 'Stop spam calls and telemarketers.', category: 'phone-guides', tags: ['phone', 'spam', 'calls'], readTime: '5 min', thumbnailEmoji: '🚫', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+      { slug: 'phone-block-calls', title: 'How to Block Unwanted Phone Calls', excerpt: 'Stop spam calls and telemarketers.', category: 'phone-guides', tags: ['phone', 'spam', 'calls'], readTime: '5 min', thumbnailEmoji: '🚫', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Block on iPhone', content: 'Phone app > Recents > tap (i) next to number > Block this Caller.' },
     { title: 'Block on Android', content: 'Phone app > Recent calls > long-press > Block/Report spam.' },
     { title: 'Silence unknown callers', content: 'iPhone: Settings > Phone > Silence Unknown Callers. Unknowns go to voicemail.' },
@@ -8826,38 +8416,17 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Open Bluetooth settings', content: 'iPhone: Settings > Bluetooth. Android: Settings > Connected Devices > Pair New.' },
     { title: 'Select your device', content: 'Tap the device name in the list to connect.' },
   ] },
-  { slug: 'phone-take-screenshot', title: 'How to Take a Screenshot on Any Phone', excerpt: 'Capture what is on your screen.', category: 'phone-guides', tags: ['phone', 'screenshot', 'basics'], readTime: '3 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'iPhone (Face ID)', content: 'Press Side + Volume Up simultaneously.' },
-    { title: 'iPhone (Home button)', content: 'Press Home + Side button simultaneously.' },
-    { title: 'Android', content: 'Press Power + Volume Down for one second.' },
-  ] },
-    { slug: 'phone-mobile-banking', title: 'How to Use Mobile Banking Safely', excerpt: 'Manage your bank account from your phone securely.', category: 'phone-guides', tags: ['phone', 'banking', 'security'], readTime: '6 min', thumbnailEmoji: '🏦', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+      { slug: 'phone-mobile-banking', title: 'How to Use Mobile Banking Safely', excerpt: 'Manage your bank account from your phone securely.', category: 'phone-guides', tags: ['phone', 'banking', 'security'], readTime: '6 min', thumbnailEmoji: '🏦', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Download official app', content: 'Search your bank name in app store. Only download the verified official app.' },
     { title: 'Enable biometric login', content: 'Turn on Face ID, Touch ID, or fingerprint in app settings.' },
     { title: 'Stay safe', content: 'Never use public Wi-Fi for banking. Enable transaction notifications. Report lost phone right away.' },
   ] },
-  { slug: 'phone-do-not-disturb', title: 'How to Use Do Not Disturb', excerpt: 'Silence notifications when you need quiet time.', category: 'phone-guides', tags: ['phone', 'do-not-disturb'], readTime: '4 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'iPhone', content: 'Open Control Center > tap the crescent moon icon.' },
-    { title: 'Android', content: 'Swipe down twice > tap Do Not Disturb.' },
-    { title: 'Allow important calls', content: 'Allow calls from Favorites to come through for emergencies.' },
-  ] },
-      { slug: 'phone-increase-text-size', title: 'How to Make Text Bigger on Your Phone', excerpt: 'Increase text size so everything is easier to read.', category: 'phone-guides', tags: ['phone', 'accessibility', 'text-size'], readTime: '4 min', thumbnailEmoji: '🔍', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+        { slug: 'phone-increase-text-size', title: 'How to Make Text Bigger on Your Phone', excerpt: 'Increase text size so everything is easier to read.', category: 'phone-guides', tags: ['phone', 'accessibility', 'text-size'], readTime: '4 min', thumbnailEmoji: '🔍', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'iPhone', content: 'Settings > Display & Brightness > Text Size. Drag slider right.' },
     { title: 'Android', content: 'Settings > Display > Font Size. Move slider to increase.' },
     { title: 'Bold text', content: 'iPhone: Settings > Display > Bold Text. Makes everything thicker and easier to read.' },
   ] },
-  { slug: 'phone-send-photos-text', title: 'How to Send Photos by Text Message', excerpt: 'Share photos with friends and family via text.', category: 'phone-guides', tags: ['phone', 'photos', 'messaging'], readTime: '4 min', thumbnailEmoji: '💬', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Open Messages', content: 'Open the Messages app. Start or open a conversation.' },
-    { title: 'Attach photos', content: 'Tap the + or photo icon. Select photos from your camera roll.' },
-    { title: 'Send', content: 'Add a caption if you want, then tap the send button.' },
-  ] },
-  { slug: 'iphone-take-better-photos', title: 'How to Take Better Photos on iPhone', excerpt: 'Simple tips for getting great pictures.', category: 'phone-guides', tags: ['iphone', 'camera', 'photos'], readTime: '6 min', thumbnailEmoji: '📸', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Clean your lens', content: 'Wipe the camera lens with a soft cloth. Smudges cause blurry photos.' },
-    { title: 'Tap to focus', content: 'Tap the screen where your subject is. A yellow square shows the focus point.' },
-    { title: 'Use Portrait mode', content: 'Swipe to Portrait. Blurs the background beautifully for people and pets.' },
-    { title: 'Use natural light', content: 'Face subjects toward a window. Natural light looks better than flash.' },
-  ] },
-
+    
   // ===== BATCH 7: Social Media (12 new) =====
     { slug: 'facebook-privacy-settings-v2', title: 'How to Adjust Facebook Privacy Settings', excerpt: 'Control who sees your posts and personal information.', category: 'social-media', tags: ['facebook', 'privacy', 'settings'], readTime: '6 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Open Privacy', content: 'Profile picture > Settings & Privacy > Settings > Privacy.' },
@@ -8881,13 +8450,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Phishing links', content: `Don't click links from strangers. "Is this you?" links steal your login.` },
     { title: 'Report and block', content: 'Three dots > Report. Block the account. Warn friends.' },
   ] },
-  { slug: 'facebook-marketplace', title: 'How to Use Facebook Marketplace', excerpt: 'Buy and sell locally through Facebook.', category: 'social-media', tags: ['facebook', 'marketplace', 'shopping'], readTime: '6 min', thumbnailEmoji: '🏷️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/7lCXyy1e5Zo', steps: [
-    { title: 'Open Marketplace', content: 'In Facebook, tap the Marketplace icon (storefront).' },
-    { title: 'Browse or search', content: 'Scroll items near you or search for something specific.' },
-    { title: 'Sell an item', content: 'Tap Sell. Take clear photos, write description, set price.' },
-    { title: 'Stay safe', content: 'Meet in public places. Bring a friend. Use cash or electronic payment.' },
-  ] },
-  { slug: 'nextdoor-neighborhood', title: 'How to Use Nextdoor', excerpt: 'Connect with neighbors for local news and recommendations.', category: 'social-media', tags: ['nextdoor', 'neighborhood', 'local'], readTime: '5 min', thumbnailEmoji: '🏘️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'nextdoor-neighborhood', title: 'How to Use Nextdoor', excerpt: 'Connect with neighbors for local news and recommendations.', category: 'social-media', tags: ['nextdoor', 'neighborhood', 'local'], readTime: '5 min', thumbnailEmoji: '🏘️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Sign up', content: 'Download Nextdoor. Enter your address to join your neighborhood.' },
     { title: 'Browse', content: 'See posts about lost pets, plumber recommendations, events, safety alerts.' },
     { title: 'Post', content: 'Tap + to ask questions or share helpful information.' },
@@ -8925,17 +8488,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Verify', content: 'Bank verifies via text, email, or call.' },
     { title: 'Pay in stores', content: 'Double-click side button > Face ID > hold near terminal.' },
   ] },
-  { slug: 'how-to-use-uber-lyft-v2', title: 'How to Use Uber or Lyft', excerpt: 'Get a ride with a rideshare app.', category: 'how-to', tags: ['uber', 'lyft', 'rideshare'], readTime: '5 min', thumbnailEmoji: '🚗', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/jWW0-ub8d90', steps: [
-    { title: 'Download', content: 'Get Uber or Lyft. Create account with phone and payment method.' },
-    { title: 'Request', content: 'Enter destination. Choose ride type. Tap Request.' },
-    { title: 'Safety', content: 'Check driver photo, car, and plate. Share trip status with family.' },
-  ] },
-  { slug: 'how-to-set-up-alexa', title: 'How to Set Up Amazon Alexa', excerpt: 'Get your Echo set up with voice commands.', category: 'how-to', tags: ['alexa', 'smart-home'], readTime: '5 min', thumbnailEmoji: '🔊', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Plug in', content: 'Plug in Echo. Wait for orange light ring.' },
-    { title: 'Download app', content: 'Get Alexa app. Sign in with Amazon account. Follow Wi-Fi setup.' },
-    { title: 'Try commands', content: `"Alexa, what's the weather?" "Set a timer for 20 minutes." "Remind me at 3 PM."` },
-  ] },
-  { slug: 'how-to-use-siri', title: 'How to Use Siri', excerpt: 'Your iPhone voice assistant.', category: 'how-to', tags: ['siri', 'iphone', 'voice'], readTime: '5 min', thumbnailEmoji: '🗣️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/7ZQcMOeu860', steps: [
+      { slug: 'how-to-use-siri', title: 'How to Use Siri', excerpt: 'Your iPhone voice assistant.', category: 'how-to', tags: ['siri', 'iphone', 'voice'], readTime: '5 min', thumbnailEmoji: '🗣️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/7ZQcMOeu860', steps: [
     { title: 'Activate', content: 'Say "Hey Siri" or hold the side button.' },
     { title: 'Ask', content: `"What's the weather?" "Set alarm for 7 AM." "Call Mom."` },
     { title: 'Control phone', content: '"Turn on flashlight." "Play jazz music." "Set timer 15 minutes."' },
@@ -8955,12 +8508,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Setup', content: 'Prop phone at eye level. Good lighting. Connect to Wi-Fi.' },
     { title: 'Fun activities', content: 'Read a book, show your garden, play I Spy, cook together.' },
   ] },
-  { slug: 'how-to-set-up-smart-tv', title: 'How to Set Up a Smart TV', excerpt: 'Get streaming on your new TV.', category: 'how-to', tags: ['smart-tv', 'streaming'], readTime: '6 min', thumbnailEmoji: '📺', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Connect', content: 'Plug in power and HDMI. Follow the setup wizard.' },
-    { title: 'Wi-Fi', content: 'Select your network and enter password.' },
-    { title: 'Install apps', content: 'Go to app store on TV. Install Netflix, Hulu, Disney+, YouTube.' },
-  ] },
-  
+    
   // ===== BATCH 9: AI Guides — Claude Code, Codex, Practical AI (20 new) =====
   { slug: 'what-is-claude-code', title: 'What Is Claude Code and How Does It Work', excerpt: 'An AI coding assistant that reads, writes, and fixes code using plain English.', category: 'ai-guides', tags: ['claude', 'ai', 'coding'], readTime: '6 min', thumbnailEmoji: '🤖', publishedAt: '2026-04-02', difficulty: 'Intermediate', videoUrl: 'https://www.youtube.com/embed/AJpK3YTTKZ4', steps: [
     { title: 'What it does', content: 'Claude Code is an AI assistant by Anthropic that reads your entire codebase, writes new code, fixes bugs, and runs commands — all from plain English instructions.' },
@@ -9074,21 +8622,12 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
   ] },
 
   // ===== BATCH 10: Essential Skills (8 new) =====
-  { slug: 'understanding-cloud-storage-v2', title: 'What Is Cloud Storage', excerpt: 'Understand the cloud and how it keeps files safe.', category: 'essential-skills', tags: ['cloud', 'storage', 'backup'], readTime: '5 min', thumbnailEmoji: '☁️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/Mzl4Wud_Bp0', steps: [
-    { title: 'What is it', content: 'Secure servers on the internet. Your files are stored safely online and accessible anywhere.' },
-    { title: 'Services', content: 'iCloud (5 GB free), Google Drive (15 GB free), OneDrive (5 GB free).' },
-    { title: 'Is it safe', content: 'Major services use strong encryption. Safer than a single device that can be lost or damaged.' },
-  ] },
-  { slug: 'understanding-phishing', title: 'How to Recognize Phishing', excerpt: 'Protect yourself from fake emails stealing your info.', category: 'essential-skills', tags: ['phishing', 'scams', 'security'], readTime: '6 min', thumbnailEmoji: '🎣', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'understanding-phishing', title: 'How to Recognize Phishing', excerpt: 'Protect yourself from fake emails stealing your info.', category: 'essential-skills', tags: ['phishing', 'scams', 'security'], readTime: '6 min', thumbnailEmoji: '🎣', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'What is phishing', content: 'Fake emails pretending to be trusted companies to steal your information.' },
     { title: 'Red flags', content: 'Urgent language, spelling errors, generic greetings, suspicious sender addresses.' },
     { title: 'What to do', content: 'Never click suspicious links. Go directly to the real website. Change passwords if you clicked.' },
   ] },
-  { slug: 'understanding-two-factor-auth', title: 'What Is Two-Factor Authentication', excerpt: 'An extra lock hackers cannot bypass.', category: 'essential-skills', tags: ['2fa', 'security'], readTime: '5 min', thumbnailEmoji: '🔒', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/0mvCeNsTa1g', steps: [
-    { title: 'How it works', content: 'Password + code sent to your phone. Even if someone has your password, they need your phone too.' },
-    { title: 'Enable it', content: 'Gmail: myaccount.google.com > Security > 2-Step Verification. Facebook: Settings > Security > 2FA.' },
-  ] },
-  { slug: 'understanding-backups', title: 'How to Back Up Your Devices', excerpt: 'Protect photos, contacts, and files with backups.', category: 'essential-skills', tags: ['backup', 'data-protection'], readTime: '6 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'understanding-backups', title: 'How to Back Up Your Devices', excerpt: 'Protect photos, contacts, and files with backups.', category: 'essential-skills', tags: ['backup', 'data-protection'], readTime: '6 min', thumbnailEmoji: '💾', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'iPhone', content: 'Settings > [Your Name] > iCloud > iCloud Backup > Back Up Now.' },
     { title: 'Android', content: 'Settings > System > Backup > Turn on Google Drive backup.' },
     { title: 'Computer', content: 'Windows: File History or OneDrive. Mac: Time Machine with external drive.' },
@@ -9125,11 +8664,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Magnifier', content: 'Windows + Plus to zoom in. Windows + Minus to zoom out.' },
     { title: 'High contrast', content: 'Settings > Accessibility > Contrast Themes.' },
   ] },
-  { slug: 'windows-uninstall-programs', title: 'Uninstall Programs on Windows', excerpt: 'Remove programs to free up space.', category: 'windows-guides', tags: ['windows', 'uninstall'], readTime: '4 min', thumbnailEmoji: '🗑️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Open', content: 'Settings > Apps > Installed Apps.' },
-    { title: 'Uninstall', content: 'Find app > three dots > Uninstall > confirm.' },
-  ] },
-  { slug: 'mac-finder-basics', title: 'How to Use Finder on Mac', excerpt: 'Navigate and organize files.', category: 'mac-guides', tags: ['mac', 'finder', 'files'], readTime: '5 min', thumbnailEmoji: '📁', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'mac-finder-basics', title: 'How to Use Finder on Mac', excerpt: 'Navigate and organize files.', category: 'mac-guides', tags: ['mac', 'finder', 'files'], readTime: '5 min', thumbnailEmoji: '📁', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Open', content: 'Click the smiley face in the Dock.' },
     { title: 'Sidebar', content: 'Desktop, Documents, Downloads, Applications, iCloud Drive.' },
     { title: 'Spotlight', content: 'Command + Space to search for anything instantly.' },
@@ -9176,22 +8711,12 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Order', content: 'Add to Cart > Proceed to Checkout > confirm address.' },
     { title: 'Track', content: 'Your Orders shows status and tracking info.' },
   ] },
-  { slug: 'venmo-send-money', title: 'Send Money with Venmo', excerpt: 'Split bills and pay friends easily.', category: 'app-guides', tags: ['venmo', 'payments'], readTime: '5 min', thumbnailEmoji: '💸', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/YhXkJYPLhC4', steps: [
-    { title: 'Setup', content: 'Download Venmo. Link bank or debit card.' },
-    { title: 'Pay', content: 'Tap Pay > search person > enter amount > Pay.' },
-    { title: 'Privacy', content: 'Settings > Privacy > set to Private.' },
-  ] },
-  { slug: 'gmail-organize-inbox', title: 'Organize Your Gmail', excerpt: 'See what matters in your inbox.', category: 'app-guides', tags: ['gmail', 'email'], readTime: '5 min', thumbnailEmoji: '📧', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'gmail-organize-inbox', title: 'Organize Your Gmail', excerpt: 'See what matters in your inbox.', category: 'app-guides', tags: ['gmail', 'email'], readTime: '5 min', thumbnailEmoji: '📧', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Search', content: 'Type "from:amazon" or keywords instead of scrolling.' },
     { title: 'Star', content: 'Tap star icon on important emails for quick access.' },
     { title: 'Unsubscribe', content: 'Open newsletter > click Unsubscribe at top.' },
   ] },
-  { slug: 'google-translate-app', title: 'Using Google Translate', excerpt: 'Translate text, speech, and signs.', category: 'app-guides', tags: ['translate', 'language'], readTime: '5 min', thumbnailEmoji: '🌍', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Text', content: 'Type or paste text. Select languages. Instant translation.' },
-    { title: 'Camera', content: 'Tap camera icon. Point at sign or menu. Real-time overlay.' },
-    { title: 'Offline', content: 'Download languages for use without internet.' },
-  ] },
-  { slug: 'doordash-food-delivery', title: 'Order Food with DoorDash', excerpt: 'Restaurant food delivered to your door.', category: 'app-guides', tags: ['doordash', 'delivery'], readTime: '5 min', thumbnailEmoji: '🍔', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/vY0IH8eMwio', steps: [
+    { slug: 'doordash-food-delivery', title: 'Order Food with DoorDash', excerpt: 'Restaurant food delivered to your door.', category: 'app-guides', tags: ['doordash', 'delivery'], readTime: '5 min', thumbnailEmoji: '🍔', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/vY0IH8eMwio', steps: [
     { title: 'Browse', content: 'See restaurants near you. Filter by cuisine, price, rating.' },
     { title: 'Order', content: 'Choose items, customize, review cart, place order.' },
     { title: 'Track', content: 'Watch your driver on the map in real time.' },
@@ -9386,15 +8911,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Facebook memorialization', content: 'In Facebook Settings > Memorialization Settings, choose a Legacy Contact who can manage your profile after you pass. They can pin a tribute post and respond to friend requests.' },
     { title: 'Tell someone your plan', content: 'Let a trusted family member know your plan exists and where to find your digital inventory. Consider including digital account info in your will or giving it to your estate attorney.' },
   ] },
-  { slug: 'telehealth-appointments', title: 'How to Do a Telehealth Video Appointment', excerpt: 'See your doctor through a video call from the comfort of home.', category: 'health-tech', tags: ['telehealth', 'doctor', 'video-call', 'healthcare'], readTime: '6 min', thumbnailEmoji: '🏥', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/Ed40jgObFA4', steps: [
-    { title: 'What is telehealth', content: 'A telehealth appointment is a video call with your doctor. You see and talk to them on your phone, tablet, or computer. It is real medical care. They can diagnose, prescribe medicine, and refer you to specialists.' },
-    { title: 'Schedule your appointment', content: `Call your doctor's office and ask for a telehealth visit. Or use your patient portal (MyChart, patient website) to book online. They will send you a link or instructions.` },
-    { title: 'Prepare your technology', content: 'Test your camera and microphone before the appointment. Make sure you have a stable internet connection (Wi-Fi is best). Charge your device. Find a quiet, well-lit room.' },
-    { title: 'Prepare for the visit', content: 'Have your medications nearby so you can show them. Write down your symptoms and questions beforehand. Have your insurance card ready.' },
-    { title: 'Join the appointment', content: `Click the link sent by your doctor's office a few minutes early. You may need to enter a virtual waiting room. When the doctor joins, the video call begins just like FaceTime or Zoom.` },
-    { title: 'After the visit', content: 'The doctor may send prescriptions to your pharmacy electronically. Notes from the visit appear in your patient portal. Follow up on any referrals or tests they recommend.' },
-  ] },
-  { slug: 'medicare-online-account', title: 'How to Create and Use Your Medicare.gov Account', excerpt: 'Manage your Medicare benefits online — check claims, find doctors, and compare plans.', category: 'health-tech', tags: ['medicare', 'healthcare', 'government', 'insurance'], readTime: '6 min', thumbnailEmoji: '🏥', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/jJsIEHNUQhQ', steps: [
+    { slug: 'medicare-online-account', title: 'How to Create and Use Your Medicare.gov Account', excerpt: 'Manage your Medicare benefits online — check claims, find doctors, and compare plans.', category: 'health-tech', tags: ['medicare', 'healthcare', 'government', 'insurance'], readTime: '6 min', thumbnailEmoji: '🏥', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/jJsIEHNUQhQ', steps: [
     { title: 'Create your account', content: `Go to medicare.gov and click "Log in to your Medicare account." If you don't have an account, click "Create an account." You will need your Medicare number (on your red, white, and blue card).` },
     { title: 'What you can do', content: 'View your claims and what Medicare paid, see your coverage details, find doctors and hospitals that accept Medicare, and compare Medicare Advantage and Part D plans.' },
     { title: 'Check your claims', content: 'After a doctor visit, the claim appears in your account (usually within a few weeks). You can see what was charged, what Medicare paid, and what you may owe.' },
@@ -9502,16 +9019,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Listening tips', content: 'Start with a topic or author you already enjoy. Use bookmarks to save your place. Adjust narration speed. Download books over Wi-Fi to save cellular data.' },
     { title: 'Connect to car speakers', content: 'Use Bluetooth to connect your phone to your car. The audiobook plays through your car speakers. Most cars also support Apple CarPlay or Android Auto for on-screen controls.' },
   ] },
-  { slug: 'social-security-online-account', title: 'How to Create and Use Your Social Security Online Account', excerpt: 'Access your Social Security statement, benefits, and documents online without visiting an office.', category: 'how-to', tags: ['social-security', 'ssa', 'government', 'benefits', 'retirement'], readTime: '7 min', thumbnailEmoji: '🏛️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Go to ssa.gov', content: 'Visit ssa.gov and click "Sign In / Up" at the top. This is the official Social Security Administration website. Never use any other site for Social Security business.' },
-    { title: 'Create your account', content: `Click "Create an Account." You'll need to verify your identity through Login.gov or ID.me. Have your Social Security number, a valid ID, and a phone or email ready.` },
-    { title: 'Verify your identity', content: `ID.me may ask you to upload a photo of your driver's license or state ID and take a selfie. This one-time process protects your account from fraud.` },
-    { title: 'View your Social Security statement', content: `Once logged in, view your estimated benefits for retirement, disability, and survivors. See your complete earnings history to make sure it's accurate.` },
-    { title: 'Request benefit verification letters', content: 'Need proof of benefits for housing, loans, or Medicaid? Download an official Benefit Verification Letter instantly — no need to visit an office.' },
-    { title: 'Change your information', content: 'Update your address, phone number, and direct deposit information online. Report changes promptly to avoid payment delays.' },
-    { title: 'Replace your Social Security card', content: `You can request a replacement Social Security card online if you have a my Social Security account. It's free — up to 3 per year, 10 in a lifetime.` },
-  ] },
-  { slug: 'irs-online-account-guide', title: 'How to Use IRS Online Tools', excerpt: 'Check your refund status, make payments, and access tax transcripts through the IRS website.', category: 'how-to', tags: ['irs', 'taxes', 'government', 'refund', 'finance'], readTime: '7 min', thumbnailEmoji: '🏛️', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { slug: 'irs-online-account-guide', title: 'How to Use IRS Online Tools', excerpt: 'Check your refund status, make payments, and access tax transcripts through the IRS website.', category: 'how-to', tags: ['irs', 'taxes', 'government', 'refund', 'finance'], readTime: '7 min', thumbnailEmoji: '🏛️', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Access the IRS website', content: `Go to irs.gov. This is the only official IRS website. The IRS never initiates contact by email, text, or social media — if someone claims to be the IRS online, it's a scam.` },
     { title: 'Check your refund status', content: `Click "Where's My Refund?" or use the IRS2Go mobile app. Enter your Social Security number, filing status, and exact refund amount. Updates are available 24 hours after e-filing.` },
     { title: 'Create an IRS Online Account', content: 'Click "Sign In to Your Online Account." Verify your identity through ID.me (similar to Social Security). Once verified, you can view your tax records anytime.' },
@@ -9803,25 +9311,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
   ] },
   
   // ── Batch 21: Productivity & Work From Home ─────────────────────────────────
-  { slug: 'work-from-home-setup', title: 'How to Set Up a Home Office', excerpt: 'Create a comfortable, productive workspace at home for remote work or personal projects.', category: 'how-to', tags: ['home-office', 'remote-work', 'productivity', 'ergonomics'], readTime: '7 min', thumbnailEmoji: '🏡', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Choose your space', content: 'Find a quiet area with a door if possible. A spare bedroom, corner of the living room, or even a closet conversion can work. The key is separation from household distractions.' },
-    { title: 'Get the right desk and chair', content: `Your desk should fit your computer and have room for notes. Invest in a comfortable chair with back support — you'll spend hours in it. An adjustable office chair ($100-200) is worth it.` },
-    { title: 'Monitor and keyboard', content: `A separate monitor ($120+) reduces neck strain compared to a laptop screen. An external keyboard and mouse improve comfort. Position the monitor at eye level, arm's length away.` },
-    { title: 'Lighting', content: 'Face a window for natural light during video calls. Add a desk lamp for task lighting. Avoid overhead lights directly above — they create shadows. Ring lights ($20-40) are great for video calls.' },
-    { title: 'Internet and networking', content: 'Test your internet speed at speedtest.net. For video calls, you need at least 10 Mbps. If Wi-Fi is weak in your office, use a Wi-Fi extender or powerline ethernet adapter.' },
-    { title: 'Essential software', content: 'Video calls: Zoom or Google Meet. Documents: Google Docs or Microsoft 365. Notes: OneNote or Apple Notes. Password manager: Bitwarden. Cloud storage: Google Drive or OneDrive.' },
-    { title: 'Ergonomics basics', content: 'Feet flat on the floor. Knees at 90 degrees. Screen at eye level. Wrists straight when typing. Take breaks every 30-60 minutes. The 20-20-20 rule: every 20 minutes, look at something 20 feet away for 20 seconds.' },
-  ] },
-  { slug: 'microsoft-365-overview', title: 'Microsoft 365: What You Get and How to Use It', excerpt: 'Understand what Microsoft 365 includes and whether the subscription is worth it for you.', category: 'app-guides', tags: ['microsoft', 'office', '365', 'word', 'excel', 'subscription'], readTime: '7 min', thumbnailEmoji: '📎', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'What is Microsoft 365?', content: 'Microsoft 365 is a subscription that includes Word, Excel, PowerPoint, Outlook, and 1 TB of OneDrive cloud storage. It replaces buying Office software outright. Everything stays updated automatically.' },
-    { title: 'Plans and pricing', content: 'Personal: $6.99/month for 1 person. Family: $9.99/month for up to 6 people. Both include full desktop apps, mobile apps, and 1 TB storage per person. Free alternatives exist (Google Docs, LibreOffice).' },
-    { title: 'Install on your devices', content: 'Sign in at microsoft365.com and click Install. Install on up to 5 computers plus 5 phones/tablets. Works on Windows, Mac, iPhone, iPad, and Android.' },
-    { title: 'Microsoft Word', content: 'The gold standard word processor. Create documents, letters, resumes, and reports. Use templates for a professional starting point. Auto-save to OneDrive makes sure you never lose work.' },
-    { title: 'OneDrive cloud storage', content: '1 TB (1,000 GB) of cloud storage. Access files from any device. Share files and folders with others. Files sync automatically — edit on your phone, see changes on your computer.' },
-    { title: 'Free alternatives', content: 'If cost is a concern: use Office online free at microsoft365.com (limited features). Google Docs/Sheets/Slides are completely free. LibreOffice is a free downloadable alternative.' },
-    { title: 'Is it worth it?', content: 'If you need full Office apps and 1 TB storage: yes, especially the Family plan ($1.67/person/month). If you mainly do basic documents: free Google Docs or Office Online may be enough.' },
-  ] },
-  { slug: 'notion-beginners-guide', title: 'Notion for Beginners: Organize Everything in One Place', excerpt: 'Use Notion to create notes, to-do lists, databases, and wikis — all in one free app.', category: 'app-guides', tags: ['notion', 'productivity', 'notes', 'organization', 'free'], readTime: '7 min', thumbnailEmoji: '📝', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+      { slug: 'notion-beginners-guide', title: 'Notion for Beginners: Organize Everything in One Place', excerpt: 'Use Notion to create notes, to-do lists, databases, and wikis — all in one free app.', category: 'app-guides', tags: ['notion', 'productivity', 'notes', 'organization', 'free'], readTime: '7 min', thumbnailEmoji: '📝', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'What is Notion?', content: 'Notion is a free all-in-one workspace. Think of it as a combination of notes, to-do lists, spreadsheets, and wikis. Students, professionals, and families use it to organize everything.' },
     { title: 'Get started', content: 'Visit notion.so and create a free account. The free plan includes unlimited pages for personal use. Install the desktop app and mobile app for access everywhere.' },
     { title: 'Create your first page', content: 'Click + New Page in the sidebar. Type a title and start writing. Use / (slash) commands to add headings, bullet lists, checkboxes, images, tables, and more.' },
@@ -9848,16 +9338,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Use search', content: `Can't find a file? Windows: Press Win+S and type the filename. Mac: Press Cmd+Space (Spotlight) and type. Search is faster than browsing through folders.` },
     { title: 'Clean up regularly', content: `Delete files you don't need. Empty the Recycle Bin (Windows) or Trash (Mac) to free up space. Uninstall programs you no longer use. Set a monthly reminder to tidy up.` },
   ] },
-  { slug: 'cloud-storage-comparison', title: 'Cloud Storage Compared: Google Drive vs OneDrive vs iCloud vs Dropbox', excerpt: 'Choose the best cloud storage service for backing up and accessing your files anywhere.', category: 'essential-skills', tags: ['cloud', 'storage', 'google-drive', 'onedrive', 'icloud', 'dropbox'], readTime: '7 min', thumbnailEmoji: '☁️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/Mzl4Wud_Bp0', steps: [
-    { title: 'What is cloud storage?', content: 'Cloud storage saves your files on secure internet servers instead of (or in addition to) your computer. Access files from any device. If your computer breaks, your files are safe in the cloud.' },
-    { title: 'Google Drive', content: '15 GB free (shared with Gmail and Photos). Works on everything. Tight integration with Google Docs, Sheets, and Slides. 100 GB for $1.99/month. Best for Android and Google users.' },
-    { title: 'Microsoft OneDrive', content: '5 GB free. 100 GB for $1.99/month. 1 TB included with Microsoft 365 ($6.99/month, which also includes Office apps). Best for Windows users and Microsoft 365 subscribers.' },
-    { title: 'Apple iCloud', content: '5 GB free. 50 GB for $0.99/month, 200 GB for $2.99/month, 2 TB for $9.99/month. Works smoothly on Apple devices. Required for iPhone backups and Photos sync. Best for Apple-only households.' },
-    { title: 'Dropbox', content: '2 GB free (very limited). Plans start at $11.99/month for 2 TB. Works great across all platforms. Popular for sharing files with others. Best for cross-platform file sharing.' },
-    { title: 'Which should you choose?', content: 'Apple devices: iCloud for photos/backup + Google Drive for documents. Windows: OneDrive (especially with Microsoft 365). Android: Google Drive. Need to share with others: Google Drive or Dropbox.' },
-    { title: 'How to set up any cloud storage', content: 'Download the app on your phone and computer. Sign in with your account. Choose which folders to sync. Files in those folders automatically upload to the cloud and stay current on all devices.' },
-  ] },
-  { slug: 'printing-from-any-device', title: 'How to Print from Your Phone, Tablet, or Computer', excerpt: 'Connect to printers wirelessly and print documents, photos, and web pages from any device.', category: 'how-to', tags: ['printing', 'wireless', 'airprint', 'wifi', 'productivity'], readTime: '6 min', thumbnailEmoji: '🖨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'printing-from-any-device', title: 'How to Print from Your Phone, Tablet, or Computer', excerpt: 'Connect to printers wirelessly and print documents, photos, and web pages from any device.', category: 'how-to', tags: ['printing', 'wireless', 'airprint', 'wifi', 'productivity'], readTime: '6 min', thumbnailEmoji: '🖨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Print from iPhone/iPad', content: 'Open the document, photo, or webpage. Tap the Share icon (box with arrow) > Print. Your iPhone automatically finds AirPrint printers on your Wi-Fi network. Select the printer and tap Print.' },
     { title: 'Print from Android', content: `Open the document or photo. Tap the three-dot menu > Print (or Share > Print). Android finds printers on your network. If your printer isn't found, download its manufacturer's app.` },
     { title: 'Print from Windows', content: 'Press Ctrl+P in most programs to open the print dialog. Select your printer, choose number of copies and pages, then click Print. For first-time setup: Settings > Bluetooth & Devices > Printers.' },
@@ -9867,16 +9348,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
   ] },
 
   // ── Batch 22: Security & Safety In Depth ───────────────────────────────────
-      { slug: 'avoid-phishing-emails', title: 'How to Spot Phishing Emails and Texts', excerpt: 'Learn to identify fake messages designed to steal your personal information.', category: 'safety-guides', tags: ['phishing', 'email', 'scams', 'security', 'fraud'], readTime: '7 min', thumbnailEmoji: '🎣', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'What is phishing?', content: 'Phishing is when scammers send fake emails or texts pretending to be from companies you trust (banks, Amazon, USPS, Netflix). They want you to click a link and enter your password or personal information.' },
-    { title: `Check the sender's email address`, content: `The "From" name might say "Bank of America" but the email address could be bankofamerica@secure-login-notice.com. Hover over (or tap) the sender's name to see the real email address. Legitimate companies use their own domain.` },
-    { title: 'Look for urgency and threats', content: `"Your account will be suspended in 24 hours!" "Unauthorized login detected!" "Payment failed!" Scammers create panic so you act without thinking. Real companies don't threaten you by email.` },
-    { title: `Don't click links in emails`, content: `Instead of clicking an email link, open your browser and go to the company's website directly. Type the URL yourself or use a bookmark. This way you know you're on the real site.` },
-    { title: 'Check for poor grammar', content: 'Many phishing emails have spelling mistakes, odd formatting, or unusual language. Legitimate companies proofread their communications. Errors are a red flag.' },
-    { title: 'Common phishing scenarios', content: 'Package delivery problems (USPS/FedEx). Payment issues (PayPal/Venmo). Account verification (bank/email). Prize winning. Tax refund. Netflix/subscription problems. All designed to get you to click.' },
-    { title: 'What to do if you clicked', content: 'Change your password right away on the affected account. Enable 2FA. Check your account for unauthorized activity. If you entered financial info, call your bank. Report to reportphishing@apwg.org.' },
-  ] },
-      { slug: 'safe-browsing-habits', title: 'Safe Browsing: How to Stay Safe on the Internet', excerpt: 'Protect yourself while browsing the web with these essential habits and tools.', category: 'safety-guides', tags: ['browsing', 'safety', 'internet', 'security', 'privacy'], readTime: '7 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+            { slug: 'safe-browsing-habits', title: 'Safe Browsing: How to Stay Safe on the Internet', excerpt: 'Protect yourself while browsing the web with these essential habits and tools.', category: 'safety-guides', tags: ['browsing', 'safety', 'internet', 'security', 'privacy'], readTime: '7 min', thumbnailEmoji: '🌐', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Keep your browser updated', content: `Chrome, Firefox, Safari, and Edge all update automatically. These updates fix security holes. Make sure auto-updates are enabled. Use a modern browser — don't use Internet Explorer.` },
     { title: 'Look for the lock icon', content: 'A padlock icon in the address bar means the connection is encrypted (HTTPS). Never enter passwords or credit cards on sites without it. Most legitimate sites use HTTPS.' },
     { title: 'Install an ad blocker', content: 'uBlock Origin (free, available for Chrome and Firefox) blocks ads and many malicious scripts. This prevents pop-ups, redirect scams, and malicious advertisements.' },
@@ -9925,16 +9397,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Manage your subscriptions', content: `Keep track of what you're paying. iPhone: Settings > your name > Subscriptions. Android: Google Play > Subscriptions. Cancel services you haven't used in a month.` },
     { title: 'Sharing and family plans', content: 'Most services offer family/household plans. Netflix Standard allows 2 screens simultaneously. Disney+ allows 4 screens. Set up profiles for each family member to get personalized recommendations.' },
   ] },
-  { slug: 'smart-tv-setup-guide', title: 'How to Set Up and Use a Smart TV', excerpt: 'Connect your smart TV to the internet and start streaming your favorite shows and apps.', category: 'how-to', tags: ['smart-tv', 'streaming', 'setup', 'entertainment', 'wifi'], readTime: '7 min', thumbnailEmoji: '📺', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Initial setup', content: 'When you first turn on your smart TV, it walks you through setup: language, Wi-Fi connection, and account sign-in (Google for Android TV, Samsung for Samsung, LG for LG, etc.).' },
-    { title: 'Connect to Wi-Fi', content: `During setup (or Settings > Network): select your Wi-Fi network and enter the password using the on-screen keyboard. Use the remote's directional buttons to navigate. This can be slow — be patient.` },
-    { title: 'Install streaming apps', content: 'Open the app store on your TV. Search for Netflix, Hulu, Disney+, YouTube, and others. Click Install. Sign in with your account on each app. Most TVs come with popular apps pre-installed.' },
-    { title: 'Connect a streaming device (optional)', content: `If your TV's built-in apps are slow, plug in a Roku, Fire Stick, or Apple TV into an HDMI port. Switch your TV input to that HDMI port. Streaming devices are usually faster and get updates longer.` },
-    { title: 'Use voice control', content: 'Many smart TV remotes have a microphone button. Press it and say "Open Netflix" or "Search for action movies." This is much faster than typing with a remote.' },
-    { title: 'Cast from your phone', content: 'Send content from your phone to the TV. iPhone: use AirPlay (swipe and tap the AirPlay icon). Android: use Chromecast (tap the Cast icon in apps). Your phone becomes a remote control.' },
-    { title: 'Adjust picture and sound', content: 'Settings > Picture: choose a picture mode (Standard or Movie for most accurate colors). Settings > Sound: enable dialogue enhancement if voices are hard to hear. Turn off motion smoothing for movies.' },
-  ] },
-  { slug: 'ebook-reader-guide', title: 'How to Read eBooks on Any Device', excerpt: 'Read books on your phone, tablet, eReader, or computer. Many options are free through your library.', category: 'how-to', tags: ['ebooks', 'reading', 'kindle', 'library', 'books'], readTime: '7 min', thumbnailEmoji: '📖', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'ebook-reader-guide', title: 'How to Read eBooks on Any Device', excerpt: 'Read books on your phone, tablet, eReader, or computer. Many options are free through your library.', category: 'how-to', tags: ['ebooks', 'reading', 'kindle', 'library', 'books'], readTime: '7 min', thumbnailEmoji: '📖', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Free eBooks from your library', content: 'Download the Libby app and sign in with your library card. Browse and borrow eBooks for free — they return automatically. Your library has thousands of bestsellers, new releases, and classics.' },
     { title: 'Kindle by Amazon', content: 'The Kindle app (free on all devices) is the most popular eBook platform. Buy books from Amazon. Kindle Unlimited ($11.99/month) gives access to millions of books. Dedicated Kindle devices ($99-$149) are easy on the eyes.' },
     { title: 'Apple Books', content: 'Built into iPhone, iPad, and Mac. Buy books from the Apple Book Store. Clean reading interface with adjustable fonts and backgrounds. Free public domain classics available.' },
@@ -9988,15 +9451,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Credit card reimbursement', content: 'Many credit cards reimburse the TSA PreCheck or Global Entry fee. Check if your card offers this before paying out of pocket. Popular cards: Chase Sapphire, Amex Platinum, Capital One Venture.' },
     { title: 'Add it to your boarding pass', content: 'After approval, add your Known Traveler Number (KTN) to your airline profiles and booking confirmations. "TSA PRE" appears on your boarding pass automatically.' },
   ] },
-  { slug: 'google-translate-guide', title: 'How to Use Google Translate', excerpt: 'Translate text, conversations, menus, and signs in real time using your phone.', category: 'app-guides', tags: ['google', 'translate', 'language', 'travel', 'communication'], readTime: '6 min', thumbnailEmoji: '🌍', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/W0JQqkKjHZw', steps: [
-    { title: 'Text translation', content: 'Open Google Translate (app or translate.google.com). Select source and target languages. Type or paste text. Translation appears instantly. Copy it to share via text or email.' },
-    { title: 'Camera translation', content: 'Tap the camera icon in the app. Point at signs, menus, or text in another language. The translation overlays the original text in real time — like magic. Great for travel.' },
-    { title: 'Conversation mode', content: 'Tap the microphone icon and select Conversation. Speak in your language, then hand the phone to the other person. The app translates speech in both directions — like a personal interpreter.' },
-    { title: 'Download languages for offline use', content: 'Settings > Offline Translation > Download languages you need. This way Google Translate works without internet — essential when traveling abroad without cell service.' },
-    { title: 'Translate screenshots and images', content: 'Take a screenshot of text you want to translate. Open Google Translate > Camera > Import. Select the photo. The app recognizes and translates the text in the image.' },
-    { title: 'Quick access on your phone', content: 'On Android, add the Google Translate widget to your home screen for instant access. On iPhone, add it to Control Center or use the Translate app built into iOS (Settings > Translate).' },
-  ] },
-
+  
   // ── Batch 26: Finance & Money Management ────────────────────────────────────
   { slug: 'mobile-payment-guide', title: 'How to Use Apple Pay, Google Pay, and Samsung Pay', excerpt: 'Pay at stores with your phone or watch — faster and more secure than a physical card.', category: 'how-to', tags: ['apple-pay', 'google-pay', 'mobile-payment', 'finance', 'phone'], readTime: '7 min', thumbnailEmoji: '💳', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'How mobile payments work', content: 'Your phone stores an encrypted version of your card. When you tap to pay, it sends a one-time code to the terminal — your actual card number is never shared. This is more secure than swiping a physical card.' },
@@ -10256,15 +9711,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'LinkedIn Learning', content: 'LinkedIn offers thousands of professional courses (included with Premium, or accessible through many libraries for free). Earn certificates for completed courses that display on your profile.' },
     { title: 'Privacy settings', content: `Settings > Visibility. Control who sees your connections, profile views, and activity. You can browse profiles privately (they won't know you viewed them) but you also won't see who viewed yours.` },
   ] },
-  { slug: 'twitter-x-beginners', title: 'How to Use X (Formerly Twitter)', excerpt: 'Follow news, join conversations, and share your thoughts on the real-time social platform.', category: 'social-media', tags: ['twitter', 'x', 'social-media', 'news', 'communication'], readTime: '6 min', thumbnailEmoji: '📢', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/0WFoAZEwDB0', steps: [
-    { title: 'Create an account', content: 'Visit x.com or download the X app. Sign up with your email or phone number. Choose a username (@handle). Add a profile photo and brief bio describing yourself or interests.' },
-    { title: 'Follow accounts', content: 'Follow news outlets, public figures, and topics you care about. Their posts appear in your timeline. X will suggest accounts based on your interests. Start with 20-30 follows.' },
-    { title: 'Post (formerly Tweet)', content: 'Click the compose button (+) to write a post (up to 280 characters for free, longer with premium). Add photos, videos, polls, or links. Keep it concise — brevity is valued here.' },
-    { title: 'The timeline', content: 'The "For You" tab shows algorithmically chosen posts. The "Following" tab shows posts from people you follow in chronological order. Switch between them based on your preference.' },
-    { title: 'Interact with posts', content: 'Heart (like), Repost (share with your followers), Reply (join the conversation), Bookmark (save for later). Quote posts to add your own commentary when sharing.' },
-    { title: 'Manage your experience', content: 'Mute or block accounts that bother you. Mute specific words or phrases. Turn off Retweets from specific accounts. Control who can reply to your posts.' },
-  ] },
-  { slug: 'pinterest-guide', title: 'How to Use Pinterest for Ideas and Inspiration', excerpt: 'Discover recipes, home decor, DIY projects, and more with visual bookmarking on Pinterest.', category: 'social-media', tags: ['pinterest', 'social-media', 'ideas', 'diy', 'recipes'], readTime: '6 min', thumbnailEmoji: '📌', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'pinterest-guide', title: 'How to Use Pinterest for Ideas and Inspiration', excerpt: 'Discover recipes, home decor, DIY projects, and more with visual bookmarking on Pinterest.', category: 'social-media', tags: ['pinterest', 'social-media', 'ideas', 'diy', 'recipes'], readTime: '6 min', thumbnailEmoji: '📌', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'What is Pinterest?', content: `Pinterest is a visual discovery platform. Think of it as a digital bulletin board where you save ("pin") images and ideas you find online. It's great for planning projects, finding recipes, and getting inspiration.` },
     { title: 'Create boards', content: 'Boards organize your pins by topic. Create boards like "Recipes to Try," "Garden Ideas," "Home Decorating," "Gift Ideas." You can make boards private (only you see them) or public.' },
     { title: 'Search and save', content: 'Search for anything: "easy dinner recipes," "small garden design," "birthday party ideas." When you find something you like, tap Save and choose which board to pin it to.' },
@@ -10308,26 +9755,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Version history', content: 'Dropbox keeps 30 days of file history (180 days on paid plans). If you accidentally delete or change a file, right-click > Version History to restore a previous version.' },
     { title: 'Plans and alternatives', content: 'Free: 2 GB (very limited). Plus: $11.99/month for 2 TB. Google Drive offers 15 GB free and may be more cost-effective for most people. OneDrive gives 1 TB with Microsoft 365.' },
   ] },
-  { slug: 'amazon-alexa-guide', title: 'How to Set Up and Use Amazon Alexa', excerpt: 'Get the most out of your Echo device with voice commands, routines, and smart home control.', category: 'app-guides', tags: ['alexa', 'amazon', 'echo', 'smart-home', 'voice-assistant'], readTime: '8 min', thumbnailEmoji: '🔊', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Set up your Echo', content: 'Plug in your Echo device. Download the Alexa app on your phone. Follow the setup wizard: connect to Wi-Fi, sign in with your Amazon account. The setup takes about 5 minutes.' },
-    { title: 'Basic voice commands', content: `Start every command with "Alexa." Try: "What time is it?" "What's the weather?" "Play jazz music." "Set a timer for 10 minutes." "What's on my calendar?" "Tell me a joke."` },
-    { title: 'Music and audio', content: '"Alexa, play relaxing music." "Play NPR." "Play my audiobook." Supports Amazon Music (free tier included), Spotify, Apple Music, Pandora, and more. Link your accounts in the Alexa app.' },
-    { title: 'Smart home control', content: '"Alexa, turn off the living room lights." "Set the thermostat to 72." "Lock the front door." Add smart home devices through the Alexa app > Devices > + icon.' },
-    { title: 'Routines', content: 'In the Alexa app, create routines that chain multiple actions. "Good morning" routine: turn on lights, read weather, play news, and start coffee maker. "Bedtime" routine: lock doors, turn off lights, set alarm.' },
-    { title: 'Shopping and reminders', content: '"Alexa, add milk to my shopping list." "Remind me to call the doctor at 2 PM." "Reorder paper towels." Lists appear in the Alexa app. Reminders announce at the set time.' },
-    { title: 'Communication', content: '"Alexa, call Mom." "Drop in on the kitchen." "Send a message to David." Echo devices can make free calls to other Echo devices and phone numbers. Set up Drop In for instant intercom between rooms.' },
-    { title: 'Privacy controls', content: 'In the Alexa app: Settings > Alexa Privacy. Review and delete voice recordings. Turn off "Use of voice recordings" for improvement. Press the microphone mute button when you want privacy.' },
-  ] },
-  { slug: 'google-assistant-guide', title: 'How to Use Google Assistant', excerpt: `Control your phone, smart home, and daily tasks with Google's voice assistant.`, category: 'app-guides', tags: ['google', 'assistant', 'voice', 'smart-home', 'productivity'], readTime: '7 min', thumbnailEmoji: '🎤', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Access Google Assistant', content: 'On Android: say "Hey Google" or "OK Google," or long-press the home button. On iPhone: download the Google Assistant app. On Nest/Home speakers: say "Hey Google."' },
-    { title: 'Everyday commands', content: `"What's the weather?" "Navigate to Walmart." "Call Mom." "Set an alarm for 7 AM." "How do you say hello in Spanish?" "What's 18% tip on $47?" Google Assistant handles conversational follow-ups.` },
-    { title: 'Smart home control', content: '"Turn on the bedroom lights." "Set the living room to 70 degrees." "Show me the front door camera on the TV." Connect devices through the Google Home app.' },
-    { title: 'Get information', content: '"Who won the game last night?" "When does the pharmacy close?" "How far is it to the airport?" "What movies are playing tonight?" Assistant pulls real-time information from Google.' },
-    { title: 'Routines', content: 'Google Home app > Automations. Create routines: "Good morning" can read your calendar, commute time, weather, and news. Custom routines can trigger any combination of actions.' },
-    { title: 'Translate conversations', content: `"Hey Google, help me speak French." Interpreter mode translates conversations in real time between two languages. Speak in your language, and it translates to the other person's language.` },
-    { title: 'Family features', content: 'Family Bell: set custom announcements ("Time for homework!"). Broadcast: send voice messages to all speakers ("Dinner is ready!"). Family notes: shared to-do lists on smart displays.' },
-  ] },
-  { slug: 'siri-tips-tricks', title: 'Getting the Most Out of Siri', excerpt: `Use Apple's voice assistant more effectively with these commands, shortcuts, and tips.`, category: 'app-guides', tags: ['siri', 'apple', 'voice-assistant', 'iphone', 'productivity'], readTime: '7 min', thumbnailEmoji: '🗣️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/uG1UTAJsyMc', steps: [
+      { slug: 'siri-tips-tricks', title: 'Getting the Most Out of Siri', excerpt: `Use Apple's voice assistant more effectively with these commands, shortcuts, and tips.`, category: 'app-guides', tags: ['siri', 'apple', 'voice-assistant', 'iphone', 'productivity'], readTime: '7 min', thumbnailEmoji: '🗣️', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/uG1UTAJsyMc', steps: [
     { title: 'Activate Siri', content: 'Say "Hey Siri" (or just "Siri" on newer devices). Or press and hold the side button (iPhone) or top button (iPad). On Mac: hold Cmd+Space or click the Siri icon.' },
     { title: 'Useful daily commands', content: `"What's the weather?" "Set a timer for 15 minutes." "Remind me to pick up prescriptions at 3 PM." "Call my daughter." "Send a text to John saying I'll be late."` },
     { title: 'Navigation and local', content: `"Navigate home." "Where's the nearest gas station?" "What restaurants are nearby?" "How long to drive to the airport?" Siri integrates with Apple Maps for directions.` },
@@ -10594,16 +10022,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'HDR for tricky lighting', content: 'HDR (High Dynamic Range) balances bright and dark areas. Most phones set HDR to auto. Use it when photographing scenes with both bright sky and dark shadows.' },
     { title: 'Google Photos editing', content: 'Google Photos includes powerful free editing: crop, adjust brightness/contrast, apply filters, remove objects (Magic Eraser on Pixel). Edit after shooting to improve any photo.' },
   ] },
-  { slug: 'iphone-siri-shortcuts-guide', title: 'iPhone Shortcuts: Automate Your Daily Tasks', excerpt: 'Create powerful automations on your iPhone that save time on repetitive tasks.', category: 'phone-guides', tags: ['iphone', 'shortcuts', 'automation', 'siri', 'productivity'], readTime: '7 min', thumbnailEmoji: '⚡', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
-    { title: 'What are Shortcuts?', content: 'Shortcuts let you chain multiple iPhone actions into one tap or voice command. Instead of opening 3 apps and tapping 10 times, a shortcut does it all instantly.' },
-    { title: 'Download the Shortcuts app', content: 'Shortcuts comes pre-installed on iOS 17 and later (including iOS 18). Open it and browse the Gallery for hundreds of pre-made shortcuts: "Calculate Tip," "Shazam Shortcut," "Water Reminder," and more.' },
-    { title: 'Create a morning routine', content: 'New Shortcut: "Get weather forecast" > "Read text aloud" > "Open Calendar" > "Play playlist." Name it "Good Morning." Say "Hey Siri, good morning" to run your entire morning briefing.' },
-    { title: 'Location-based automations', content: 'Automations tab > Create Personal Automation > Arrive/Leave. When you arrive home: turn on smart lights, play music. When you leave work: start navigation home. These run automatically.' },
-    { title: 'Time-based automations', content: 'Create automations that run at specific times. Example: at 10 PM, activate Night mode + Do Not Disturb + dim lights. At 7 AM, disable Do Not Disturb and show your calendar.' },
-    { title: 'Share shortcuts', content: 'Download shortcuts shared by the community at routinehub.co and shortcutsgallery.com. These are pre-built automations created by power users. Install with one tap.' },
-    { title: 'Practical examples', content: 'Text your ETA to a contact. Log water intake. Convert files between formats. Calculate split bills. Create meeting notes. Schedule texts. Resize photos for social media.' },
-  ] },
-  { slug: 'android-widgets-guide', title: 'How to Use Android Widgets', excerpt: 'Put useful information and controls right on your home screen with Android widgets.', category: 'phone-guides', tags: ['android', 'widgets', 'home-screen', 'customization', 'productivity'], readTime: '6 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/2cXxpBm3U2c', steps: [
+    { slug: 'android-widgets-guide', title: 'How to Use Android Widgets', excerpt: 'Put useful information and controls right on your home screen with Android widgets.', category: 'phone-guides', tags: ['android', 'widgets', 'home-screen', 'customization', 'productivity'], readTime: '6 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Beginner', videoUrl: 'https://www.youtube.com/embed/2cXxpBm3U2c', steps: [
     { title: 'What are widgets?', content: 'Widgets are mini app windows that live on your home screen. See weather, calendar events, news, music controls, and more without opening any app. They display live, updating information.' },
     { title: 'Add a widget', content: 'Long-press on empty home screen space > Widgets. Browse by app. Press and drag a widget to your home screen. Resize by long-pressing the widget and dragging its edges.' },
     { title: 'Essential widgets', content: 'Clock/Weather: see time and forecast at a glance. Calendar: see upcoming events. Google Search bar: search from the home screen. Music controls: play/pause without opening the app.' },
@@ -10611,15 +10030,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Remove or resize', content: 'Long-press a widget > Remove or Resize. You can stack widgets (on Samsung: Smart Widget Stack). Swipe through stacked widgets to save home screen space.' },
     { title: 'Widget recommendations', content: 'At a Glance (Google): shows date, weather, upcoming events, travel time. Spotify/YouTube Music: playback controls. Photos: displays memories. Calculator: quick calculations without opening an app.' },
   ] },
-  { slug: 'phone-battery-tips', title: 'How to Make Your Phone Battery Last Longer', excerpt: `Simple settings and habits that extend your phone's battery life throughout the day.`, category: 'phone-guides', tags: ['battery', 'phone', 'power', 'tips', 'optimization'], readTime: '6 min', thumbnailEmoji: '🔋', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Lower screen brightness', content: 'The screen is the biggest battery drain. Lower brightness manually or use Auto-Brightness. Even dropping from 80% to 50% brightness makes a noticeable difference in battery life.' },
-    { title: 'Reduce screen timeout', content: 'Set your screen to turn off after 30 seconds of inactivity instead of 2-5 minutes. iPhone: Settings > Display > Auto-Lock > 30 Seconds. Android: Settings > Display > Screen Timeout.' },
-    { title: 'Turn off unused features', content: `Disable Bluetooth and Wi-Fi when not in use. Turn off location services for apps that don't need it. Disable background app refresh for non-essential apps.` },
-    { title: 'Use dark mode', content: 'Dark mode saves significant battery on phones with OLED screens (most modern phones). Settings > Display > Dark Mode. The black pixels are literally turned off, saving power.' },
-    { title: 'Manage power-hungry apps', content: 'iPhone: Settings > Battery shows usage by app. Android: Settings > Battery > Battery Usage. Identify and limit apps draining the most power. Social media and gaming are usually the worst.' },
-    { title: 'Charging tips for battery health', content: `Don't let your battery drop below 20% regularly. Don't charge to 100% every time (80% is ideal for longevity). Avoid extreme heat while charging. Use the included charger or a certified one.` },
-  ] },
-  { slug: 'nfc-tap-to-pay-guide', title: 'How NFC and Tap-to-Pay Work', excerpt: 'Understand the technology behind contactless payments and how to use it safely.', category: 'essential-skills', tags: ['nfc', 'contactless', 'payment', 'technology', 'phone'], readTime: '5 min', thumbnailEmoji: '📡', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+    { slug: 'nfc-tap-to-pay-guide', title: 'How NFC and Tap-to-Pay Work', excerpt: 'Understand the technology behind contactless payments and how to use it safely.', category: 'essential-skills', tags: ['nfc', 'contactless', 'payment', 'technology', 'phone'], readTime: '5 min', thumbnailEmoji: '📡', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'What is NFC?', content: `NFC (Near Field Communication) lets devices communicate when they're very close together (within 1-2 inches). It powers tap-to-pay, transit cards, and smart tags. Your phone has an NFC chip built in.` },
     { title: 'How tap-to-pay works', content: 'When you hold your phone near a payment terminal, NFC sends an encrypted one-time token. The terminal charges your card without ever seeing your actual card number. Faster and more secure than swiping.' },
     { title: 'Where to use it', content: 'Look for the contactless symbol (four curved lines) at checkout. Most major retailers, grocery stores, restaurants, and transit systems accept contactless payments. Over 80% of US stores now support it.' },
@@ -10680,16 +10091,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
   ] },
 
   // ── Batch 41: More How-To Guides ────────────────────────────────────────────
-  { slug: 'home-security-camera-guide', title: 'Home Security Cameras: A Complete Guide', excerpt: 'Choose, install, and manage security cameras to protect your home.', category: 'how-to', tags: ['security', 'camera', 'smart-home', 'safety', 'home'], readTime: '8 min', thumbnailEmoji: '📹', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
-    { title: 'Indoor vs outdoor cameras', content: 'Indoor cameras monitor rooms, pets, and baby areas. Outdoor cameras watch entries, driveways, and yards. Outdoor cameras need weatherproofing (look for IP65+ rating). Some cameras work for both.' },
-    { title: 'Popular options', content: 'Budget: Wyze Cam v3 ($36). Mid-range: Ring Indoor/Outdoor ($60-100). Premium: Arlo Pro 5 ($200). Google Nest Cam ($100-180). All offer mobile apps, motion alerts, and night vision.' },
-    { title: 'Wired vs wireless', content: 'Wireless (battery): easy install, no wires, needs charging every 2-6 months. Wired: permanent power, no battery worries, harder to install. Wi-Fi is needed for all cameras regardless.' },
-    { title: 'Storage options', content: 'Cloud storage (monthly subscription): $3-13/month depending on brand and features. Local storage (SD card or NVR): one-time cost, no subscription. Some cameras offer both options.' },
-    { title: 'Installation tips', content: 'Mount cameras 8-10 feet high for best view. Point them at entries, driveways, and high-traffic areas. Avoid pointing directly at the sun. Make sure strong Wi-Fi signal where the camera is placed.' },
-    { title: 'Motion detection zones', content: 'In the camera app, draw zones to detect motion only in specific areas. This prevents constant alerts from cars on the street or trees moving in the wind. Focus on doorways and walkways.' },
-    { title: 'Privacy and legal considerations', content: `Don't point cameras at neighbors' property. Check local laws about outdoor surveillance and recording. Some states require notifying visitors of recording. Don't place cameras in private areas (bathrooms, bedrooms).` },
-  ] },
-  { slug: 'vpn-setup-guide', title: 'How to Set Up and Use a VPN', excerpt: 'Step-by-step guide to installing and configuring a VPN on your phone, computer, and router.', category: 'how-to', tags: ['vpn', 'privacy', 'security', 'setup', 'networking'], readTime: '7 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { slug: 'vpn-setup-guide', title: 'How to Set Up and Use a VPN', excerpt: 'Step-by-step guide to installing and configuring a VPN on your phone, computer, and router.', category: 'how-to', tags: ['vpn', 'privacy', 'security', 'setup', 'networking'], readTime: '7 min', thumbnailEmoji: '🔐', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Choose a VPN service', content: 'Recommended paid options: NordVPN ($3.49/month/2-year plan), ExpressVPN ($6.67/month/annual), Surfshark ($2.49/month/2-year). Free option: ProtonVPN (limited but trustworthy). Avoid most other free VPNs.' },
     { title: 'Install on your phone', content: `Download the VPN app from the App Store or Google Play. Sign in with your account. Tap Connect. The VPN icon appears in your status bar when active. It's that simple.` },
     { title: 'Install on your computer', content: `Download the app from the VPN provider's website. Install and sign in. Click Connect. A system tray icon shows your connection status. Most VPNs auto-connect when you start your computer.` },
@@ -10770,15 +10172,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Wi-Fi 7', content: `The latest standard. Dramatically faster speeds and lower latency. Best for gaming, VR, and 8K video. Premium pricing for now. Most people don't need it yet — Wi-Fi 6 or 6E is enough.` },
     { title: 'What to buy', content: 'Budget: Wi-Fi 6 router ($50-80). Mid-range: Wi-Fi 6E mesh system ($200-300). Future-proof: Wi-Fi 7 router ($300+). For most homes in 2026, a Wi-Fi 6 mesh system hits the sweet spot.' },
   ] },
-  { slug: 'printer-buying-guide', title: 'How to Choose the Right Printer', excerpt: 'Inkjet vs laser, single vs multifunction, and how to avoid expensive ink traps.', category: 'essential-skills', tags: ['printer', 'buying-guide', 'hardware', 'inkjet', 'laser'], readTime: '6 min', thumbnailEmoji: '🖨️', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'Inkjet vs laser', content: 'Inkjet: better for photos and color printing, cheaper printers but expensive ink. Laser: better for text documents, faster printing, much cheaper per page. For most homes: laser is the smarter long-term choice.' },
-    { title: 'The ink trap', content: 'Some inkjet printers cost $50 but replacement ink costs $60+. Check ink/toner costs before buying. Look for printers with tank systems (EcoTank, MegaTank) that cost $0.01-$0.02 per page instead of $0.10+.' },
-    { title: 'Recommended printers', content: 'Budget laser: Brother HL-L2350DW (~$120, mono). Color laser: Brother HL-L3270CDW (~$250). Budget inkjet with cheap ink: Epson EcoTank ET-2800 (~$200, tank system). Photo printing: Canon PIXMA G620 (~$250).' },
-    { title: 'Multifunction printers', content: 'MFPs combine printing, scanning, and copying in one device. Good if you need all three. Brother MFC-L2750DW (~$200) is excellent for home offices.' },
-    { title: 'Wireless printing is essential', content: 'All modern printers should connect via Wi-Fi. This lets you print from your phone, tablet, or any computer on the network. AirPrint (Apple) and Mopria (Android) enable phone printing.' },
-    { title: 'Consider not owning one', content: 'If you print less than 50 pages/month, consider printing at the library (often free), FedEx/UPS Store, or Staples. Many people save money by not owning a printer at all.' },
-  ] },
-
+  
   // ── Batch 43: Cooking & Lifestyle Tech ──────────────────────────────────────
   { slug: 'meal-planning-apps', title: 'Best Meal Planning and Recipe Apps', excerpt: 'Plan meals, build grocery lists, and discover recipes with free apps on your phone.', category: 'app-guides', tags: ['cooking', 'recipes', 'meal-planning', 'apps', 'food'], readTime: '6 min', thumbnailEmoji: '🍳', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'Mealime (free)', content: 'Pick your diet preferences and Mealime builds a personalized weekly meal plan. Generates a grocery list organized by store aisle. Step-by-step cooking instructions with photos.' },
@@ -10947,16 +10341,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Always-on display', content: 'Settings > Lock Screen > Always On Display. Show time, date, notifications, and music controls without waking your screen. Customize what appears and when it activates.' },
     { title: 'Quick Settings tiles', content: 'Swipe down twice, tap the pencil icon. Add, remove, and reorder tiles for flashlight, Bluetooth, hotspot, screen recording, and more. Put your most-used toggles first.' },
   ] },
-  { slug: 'phone-data-transfer', title: 'How to Transfer Data to a New Phone', excerpt: 'Move everything from your old phone to your new one: contacts, photos, apps, and messages.', category: 'phone-guides', tags: ['phone', 'data-transfer', 'setup', 'backup', 'migration'], readTime: '7 min', thumbnailEmoji: '🔄', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
-    { title: 'iPhone to iPhone', content: 'Use Quick Start: place your new iPhone next to your old one. A setup prompt appears. Scan the animation with your old phone. Everything transfers wirelessly: apps, data, settings. Takes 30-60 minutes.' },
-    { title: 'Android to Android', content: `Connect both phones with the included cable (or use Wi-Fi). During new phone setup, choose "Copy data from old phone." Google's transfer tool moves apps, contacts, photos, messages, and settings.` },
-    { title: 'iPhone to Android', content: 'Download "Switch to Android" app on your iPhone. During Android setup, choose "Copy data from iPhone." Transfers contacts, photos, videos, calendar, and messages. Apps need to be re-downloaded.' },
-    { title: 'Android to iPhone', content: 'Download "Move to iOS" app on your Android. During iPhone setup, choose "Move Data from Android." Transfers contacts, messages, photos, Google account, and bookmarks. Re-download apps from App Store.' },
-    { title: 'Before you transfer', content: 'Back up your old phone first (iCloud or Google). Charge both phones above 50%. Connect to Wi-Fi. Know your Apple ID and Google account passwords. The transfer can take 1-3 hours for large amounts of data.' },
-    { title: 'After the transfer', content: 'Sign into apps individually (banking, social media). Re-download any missing apps. Set up fingerprint/Face ID. Update your payment methods. Verify two-factor authentication is working on the new phone.' },
-    { title: 'What about your old phone?', content: `Keep it as a backup for 2-4 weeks. Once you're confident the new phone has everything, factory reset the old phone (Settings > General > Transfer or Reset). Trade it in, sell it, or recycle it.` },
-  ] },
-  { slug: 'iphone-hidden-features-v2', title: '15 Hidden iPhone Features You Should Know', excerpt: `Unlock useful iPhone capabilities that most people don't know exist.`, category: 'phone-guides', tags: ['iphone', 'tips', 'hidden-features', 'tricks', 'ios'], readTime: '8 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
+    { slug: 'iphone-hidden-features-v2', title: '15 Hidden iPhone Features You Should Know', excerpt: `Unlock useful iPhone capabilities that most people don't know exist.`, category: 'phone-guides', tags: ['iphone', 'tips', 'hidden-features', 'tricks', 'ios'], readTime: '8 min', thumbnailEmoji: '📱', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
     { title: 'Back Tap', content: 'Settings > Accessibility > Touch > Back Tap. Double or triple tap the back of your iPhone to trigger actions: screenshot, flashlight, home, or any Shortcut. Incredibly useful.' },
     { title: 'Measure distances', content: 'The Measure app (pre-installed) uses AR to measure objects. Point your camera at something and tap to place measurement points. Surprisingly accurate for furniture shopping and DIY projects.' },
     { title: 'Scan text from camera', content: 'Point your camera at any text (sign, receipt, business card). Tap the Live Text icon. Copy, paste, look up, or translate the text instantly. Also works in Photos on existing images.' },
@@ -11034,25 +10419,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
   // ═══════════════════════════════════════════
   // SMART TV & STREAMING (20 guides)
   // ═══════════════════════════════════════════
-      {
-    slug: 'set-up-google-chromecast',
-    title: 'How to Set Up a Google Chromecast',
-    excerpt: 'Learn how to set up your Chromecast and send shows from your phone to your TV.',
-    category: 'how-to',
-    tags: ['chromecast', 'google', 'streaming', 'setup', 'cast'],
-    readTime: '5 min',
-    thumbnailEmoji: '📡',
-    publishedAt: '2026-03-03',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Plug in the Chromecast', content: 'Connect the Chromecast to an HDMI port on your TV. Plug the USB power cable into the Chromecast and the other end into a wall outlet using the included adapter.' },
-      { title: 'Download the Google Home app', content: 'On your phone or tablet, open the App Store (iPhone) or Google Play Store (Android) and download the free Google Home app.', tip: 'Make sure your phone is connected to the same Wi-Fi network you want to use with the Chromecast.' },
-      { title: 'Set up in the Google Home app', content: 'Open the Google Home app. Tap the + button, then "Set up device," then "New device." The app will find your Chromecast. Follow the on-screen steps to connect it to your Wi-Fi.' },
-      { title: 'Cast from your phone to the TV', content: 'Open any streaming app on your phone (like YouTube or Netflix). Tap the Cast button — it looks like a little TV screen with Wi-Fi waves in the corner. Choose your Chromecast from the list. The video will play on your TV.' },
-      { title: 'Control playback from your phone', content: 'Use your phone to pause, play, rewind, or change the volume. Your phone works like a remote control for the Chromecast.' },
-    ]
-  },
-    {
+          {
     slug: 'connect-smart-tv-to-wifi',
     title: 'How to Connect Your Smart TV to Wi-Fi',
     excerpt: 'Get your smart TV online so you can stream shows, movies, and more.',
@@ -11178,24 +10545,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'Why it is free', content: 'Pluto TV is free because it shows short ads during programs, similar to regular TV. You never have to pay anything.', tip: 'Pluto TV has over 250 channels. Try browsing categories like Movies, Entertainment, and News to find something you enjoy.' },
     ]
   },
-  {
-    slug: 'watch-free-movies-tubi',
-    title: 'How to Watch Free Movies with Tubi',
-    excerpt: 'Stream thousands of free movies and TV shows on Tubi — no credit card needed.',
-    category: 'app-guides',
-    tags: ['tubi', 'free streaming', 'movies', 'tv shows', 'free'],
-    readTime: '3 min',
-    thumbnailEmoji: '🎥',
-    publishedAt: '2026-03-12',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Download the Tubi app', content: 'Find Tubi in your smart TV app store, phone app store, or go to tubitv.com on your computer. Download it for free.' },
-      { title: 'Create a free account', content: 'Open Tubi and create a free account with your email address. You do not need a credit card or payment method — Tubi is completely free.', tip: 'Creating an account lets Tubi remember what you were watching and suggest shows you might like.' },
-      { title: 'Browse and search', content: 'Scroll through categories like Action, Comedy, Drama, Documentaries, and more. Use the search bar to find a specific movie or show by name.' },
-      { title: 'Start watching', content: 'Click on any movie or show to start watching. Tubi shows short ads during the program (like regular TV), but everything is free. No hidden charges.' },
-    ]
-  },
-  {
+    {
     slug: 'adjust-picture-settings-smart-tv',
     title: 'How to Adjust Picture Settings on Your Smart TV',
     excerpt: 'Make your TV picture look its best by adjusting brightness, color, and picture mode.',
@@ -11248,25 +10598,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'Tips for better results', content: 'Speak clearly and not too fast. Use simple phrases like the name of a show or a genre like "action movies." If the TV does not understand you, try again with different words.', warning: 'Voice search needs a Wi-Fi connection to work. If your TV is not connected to the internet, voice search will not function.' },
     ]
   },
-  {
-    slug: 'cast-phone-screen-to-tv',
-    title: 'How to Cast Your Phone Screen to Your TV',
-    excerpt: 'Show photos, videos, and apps from your phone on your big TV screen.',
-    category: 'how-to',
-    tags: ['screen casting', 'mirroring', 'phone to tv', 'airplay', 'chromecast'],
-    readTime: '5 min',
-    thumbnailEmoji: '📱',
-    publishedAt: '2026-03-16',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Make sure both devices are on the same Wi-Fi', content: 'Your phone and your TV (or streaming device) must be connected to the same Wi-Fi network. If they are on different networks, casting will not work.', warning: 'If casting is not working, double-check that both your phone and TV are on the exact same Wi-Fi network.' },
-      { title: 'For iPhone users (AirPlay)', content: 'Open the Control Center by swiping down from the top-right corner of your iPhone screen. Tap "Screen Mirroring" and select your TV from the list. Your phone screen will appear on the TV.' },
-      { title: 'For Android users (Cast)', content: 'Swipe down from the top of your screen to open Quick Settings. Look for a button called "Cast," "Smart View," or "Screen Mirror." Tap it and select your TV from the list.' },
-      { title: 'Cast from a specific app', content: 'You can also cast from inside apps like YouTube, Netflix, or Photos. Look for the Cast icon. It looks like a little TV screen with Wi-Fi waves in the corner. Tap it and choose your TV.', tip: 'Casting from inside an app (like YouTube) often works better than mirroring your whole screen.' },
-      { title: 'Stop casting', content: 'To stop, go back to the casting menu on your phone and tap "Disconnect" or "Stop Mirroring." You can also just close the app you were casting from.' },
-    ]
-  },
-  {
+    {
     slug: 'switch-between-streaming-apps-smart-tv',
     title: 'How to Switch Between Streaming Apps on Smart TV',
     excerpt: 'Learn how to move between Netflix, Hulu, YouTube, and other apps on your TV.',
@@ -11360,26 +10692,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'Rate your ride', content: 'After you arrive, the app will ask you to rate your driver with stars (1-5). Payment is charged automatically to your card — no tipping is required. But you can add a tip in the app if you want.' },
     ]
   },
-  {
-    slug: 'use-lyft-to-get-a-ride',
-    title: 'How to Use Lyft to Get a Ride',
-    excerpt: 'Request a ride with the Lyft app and get picked up wherever you are.',
-    category: 'app-guides',
-    tags: ['lyft', 'rideshare', 'transportation', 'app', 'beginner'],
-    readTime: '5 min',
-    thumbnailEmoji: '🚙',
-    publishedAt: '2026-03-22',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Download the Lyft app', content: 'Search for "Lyft" in the App Store (iPhone) or Google Play Store (Android). Download it for free and open it.' },
-      { title: 'Set up your account', content: 'Enter your phone number to get a verification code by text. Then add your name, email, and a payment method like a credit card or debit card.' },
-      { title: 'Enter where you want to go', content: 'Type your destination in the "Where are you going?" box. You can type an address, a business name, or a landmark. Pick the correct option from the list.' },
-      { title: 'Pick a ride and confirm', content: 'Lyft will show you ride options and prices. Standard is the regular option. Tap "Choose Lyft" or your preferred ride type, then tap "Confirm." A driver nearby will accept your request.' },
-      { title: 'Wait for your driver', content: `The app shows your driver's name, photo, car make, model, and license plate. Wait at your pickup location. You can watch the car approach on the map in real time.`, warning: 'Verify the car and driver match what the app says before getting in. If something seems wrong, do not get in the car.' },
-      { title: 'Arrive and pay', content: 'When you arrive, the ride is over. Payment is automatic — your card is charged. You can tip your driver in the app if you would like.' },
-    ]
-  },
-      {
+        {
     slug: 'use-amazon-shopping-app',
     title: 'How to Use the Amazon Shopping App',
     excerpt: 'Shop for anything on your phone with the Amazon app — from everyday items to gifts.',
@@ -11416,43 +10729,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'Check out and pay', content: 'Add items to your cart, review your order, and choose your payment method. Tap "Place Order" to finish. You will get a confirmation email and updates about your order.' },
     ]
   },
-  {
-    slug: 'use-google-maps-directions',
-    title: 'How to Use Google Maps for Directions',
-    excerpt: 'Get turn-by-turn directions to anywhere using the free Google Maps app on your phone.',
-    category: 'app-guides',
-    tags: ['google maps', 'navigation', 'directions', 'driving', 'app'],
-    readTime: '4 min',
-    thumbnailEmoji: '🗺️',
-    publishedAt: '2026-03-27',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Open Google Maps', content: 'Find the Google Maps app on your phone (it has a colorful map pin icon). If you do not have it, download it for free from the App Store or Google Play Store.' },
-      { title: 'Search for a destination', content: 'Tap the search bar at the top and type where you want to go. You can type an address, a business name (like "Walgreens"), or a general place (like "gas station near me").' },
-      { title: 'Tap Directions', content: 'After selecting your destination, tap the blue "Directions" button. Google Maps will show you the best route and how long it will take to get there.' },
-      { title: 'Choose how you are traveling', content: 'At the top of the screen, you can choose between driving (car icon), transit (bus icon), walking (person icon), or rideshare. Pick the one that matches how you are getting there.', tip: 'If you take public transit, Google Maps will show you which bus or train to take, where to get on, and when to get off.' },
-      { title: 'Start navigation', content: 'Tap the "Start" button to begin turn-by-turn directions. Your phone will speak directions out loud so you do not have to look at the screen while driving.', warning: 'Never hold your phone while driving. Use a phone mount or have a passenger hold the phone for you.' },
-    ]
-  },
-  {
-    slug: 'use-apple-maps-directions',
-    title: 'How to Use Apple Maps for Directions',
-    excerpt: 'Get directions on your iPhone using Apple Maps — no extra app download needed.',
-    category: 'app-guides',
-    tags: ['apple maps', 'navigation', 'directions', 'iphone', 'driving'],
-    readTime: '4 min',
-    thumbnailEmoji: '🧭',
-    publishedAt: '2026-03-28',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Open Apple Maps', content: 'On your iPhone, find the Maps app (it has a map icon with a road on it). It comes pre-installed on every iPhone — no download needed.' },
-      { title: 'Search for where you want to go', content: 'Tap the search bar at the bottom of the screen and type an address, business name, or place. Select the correct result from the list.' },
-      { title: 'Tap Directions', content: 'After selecting your destination, tap the blue "Directions" button. Apple Maps will calculate the best route for you.' },
-      { title: 'Pick your travel method', content: 'Choose between Drive, Walk, Transit, or Ride at the top of the screen. Each option shows estimated travel time.', tip: `Apple Maps integrates with your car's CarPlay system if you have it. The directions will show up on your car's screen.` },
-      { title: 'Tap Go to start', content: `Tap the green "Go" button to start turn-by-turn navigation. Siri will speak the directions out loud. You can adjust the volume using your phone's volume buttons.` },
-    ]
-  },
-  {
+      {
     slug: 'use-weather-app-phone',
     title: 'How to Use the Weather App on Your Phone',
     excerpt: 'Check the weather forecast on your phone so you know what to expect before heading out.',
@@ -11650,25 +10927,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'View your history', content: 'Shazam saves every song you identify. Tap the Library or History section to see all the songs you have discovered. It is a great way to build a list of new music to listen to.', tip: 'On iPhone, you can add Shazam to your Control Center for even faster access. Swipe down and tap the Shazam icon without opening the app.' },
     ]
   },
-    {
-    slug: 'use-duolingo-learn-language',
-    title: 'How to Use Duolingo to Learn a Language',
-    excerpt: 'Learn a new language for free with fun, bite-sized lessons on Duolingo.',
-    category: 'app-guides',
-    tags: ['duolingo', 'language learning', 'education', 'free', 'app'],
-    readTime: '4 min',
-    thumbnailEmoji: '🦉',
-    publishedAt: '2026-04-02',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Download Duolingo', content: 'Search for "Duolingo" in the App Store or Google Play Store. Download it for free and open it.' },
-      { title: 'Choose a language', content: 'Pick the language you want to learn. Duolingo offers over 40 languages including Spanish, French, Italian, German, Japanese, and more. You can always add more languages later.' },
-      { title: 'Set your daily goal', content: 'Duolingo will ask how much time you want to spend each day. Choose "Casual" (5 minutes), "Regular" (10 minutes), "Serious" (15 minutes), or "Intense" (20 minutes). You can change this anytime.', tip: 'Start with just 5 minutes a day. It is better to practice a little bit every day than to do a lot once a week.' },
-      { title: 'Complete lessons', content: 'Each lesson teaches you new words and phrases through matching, multiple choice, listening, and speaking exercises. Lessons are short — usually about 5 minutes each. You earn points and streak badges for practicing every day.' },
-      { title: 'Practice daily', content: 'Duolingo sends you daily reminders to practice. Try to keep your streak going. It tracks how many days in a row you have practiced. Even one lesson a day makes a difference over time.' },
-    ]
-  },
-  {
+      {
     slug: 'use-libby-app-library-books',
     title: 'How to Use the Libby App for Library Books',
     excerpt: 'Borrow free e-books and audiobooks from your local library using the Libby app.',

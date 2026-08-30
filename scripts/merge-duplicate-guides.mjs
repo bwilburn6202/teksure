@@ -20,7 +20,7 @@ import path from 'node:path';
 const DATA_DIR = 'src/data';
 const APPLY = process.argv.includes('--apply');
 
-function listGuideFiles() {
+export function listGuideFiles() {
   return fs.readdirSync(DATA_DIR)
     .filter(f => f.startsWith('guides') && f.endsWith('.ts'))
     .map(f => path.join(DATA_DIR, f));
@@ -32,7 +32,7 @@ function listGuideFiles() {
  * directly inside the top-level exported array. Span is inclusive of the
  * trailing `,` if present so deleting it leaves clean syntax.
  */
-function findGuideSpans(content) {
+export function findGuideSpans(content) {
   const spans = [];
   let depth = 0, bracketDepth = 0;
   let inSingle = false, inDouble = false, inTemplate = false;
@@ -211,4 +211,9 @@ function main() {
   console.log(`Wrote ${outPath} (${redirects.length} redirects)`);
 }
 
-main();
+// Only run when invoked directly. scripts/merge-thin-guides.mjs imports the span
+// finder from here, and an unguarded main() would run the whole duplicate-title
+// merge as a side effect of that import.
+if (process.argv[1] && process.argv[1].endsWith('merge-duplicate-guides.mjs')) {
+  main();
+}

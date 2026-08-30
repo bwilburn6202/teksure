@@ -508,7 +508,7 @@
     },
     {
       "source": "/tools/cloud-storage-picker",
-      "destination": "/guides/use-cloud-storage",
+      "destination": "/guides/what-is-cloud-storage-and-how-to-use-it-2026",
       "permanent": true
     },
     {
@@ -638,7 +638,7 @@
     },
     {
       "source": "/tools/facebook-marketplace-tips",
-      "destination": "/guides/facebook-marketplace",
+      "destination": "/guides/how-to-use-facebook-marketplace-safely-2026",
       "permanent": true
     },
     {
@@ -738,17 +738,17 @@
     },
     {
       "source": "/tools/google-assistant-routines-for-seniors",
-      "destination": "/guides/google-assistant-guide",
+      "destination": "/guides/google-assistant-basics-guide",
       "permanent": true
     },
     {
       "source": "/tools/google-assistant-senior-commands",
-      "destination": "/guides/google-assistant-guide",
+      "destination": "/guides/google-assistant-basics-guide",
       "permanent": true
     },
     {
       "source": "/tools/google-assistant-training",
-      "destination": "/guides/google-assistant-guide",
+      "destination": "/guides/google-assistant-basics-guide",
       "permanent": true
     },
     {
@@ -768,7 +768,7 @@
     },
     {
       "source": "/tools/google-flights-for-seniors",
-      "destination": "/guides/use-google-flights",
+      "destination": "/guides/google-flights-guide",
       "permanent": true
     },
     {
@@ -783,7 +783,7 @@
     },
     {
       "source": "/tools/google-keep-for-seniors",
-      "destination": "/guides/use-google-keep-notes",
+      "destination": "/guides/google-keep-notes-guide",
       "permanent": true
     },
     {
@@ -818,7 +818,7 @@
     },
     {
       "source": "/tools/google-translate-mastery",
-      "destination": "/guides/google-translate-app",
+      "destination": "/guides/how-to-use-google-translate-on-your-phone-2026",
       "permanent": true
     },
     {
@@ -903,7 +903,7 @@
     },
     {
       "source": "/tools/instacart-for-seniors",
-      "destination": "/guides/instacart-guide",
+      "destination": "/guides/how-to-use-instacart-for-grocery-delivery-2026",
       "permanent": true
     },
     {
@@ -938,7 +938,7 @@
     },
     {
       "source": "/tools/iphone-voiceover-guide",
-      "destination": "/guides/use-voiceover-iphone",
+      "destination": "/guides/how-to-use-voiceover-iphone",
       "permanent": true
     },
     {
@@ -1198,7 +1198,7 @@
     },
     {
       "source": "/tools/pet-sitter-apps-for-seniors",
-      "destination": "/guides/use-rover-pet-sitter",
+      "destination": "/guides/how-to-find-pet-sitter-rover-app",
       "permanent": true
     },
     {
@@ -1213,7 +1213,7 @@
     },
     {
       "source": "/tools/phone-transfer-for-seniors",
-      "destination": "/guides/phone-data-transfer",
+      "destination": "/guides/how-to-transfer-data-from-your-old-phone-to-a-new-phone-2026",
       "permanent": true
     },
     {
@@ -1363,7 +1363,7 @@
     },
     {
       "source": "/tools/senior-android-battery",
-      "destination": "/guides/android-battery-tips",
+      "destination": "/guides/android-battery-saver-guide",
       "permanent": true
     },
     {
@@ -1503,7 +1503,7 @@
     },
     {
       "source": "/tools/senior-cloud-storage-picker",
-      "destination": "/guides/use-cloud-storage",
+      "destination": "/guides/what-is-cloud-storage-and-how-to-use-it-2026",
       "permanent": true
     },
     {
@@ -1633,7 +1633,7 @@
     },
     {
       "source": "/tools/senior-facebook-marketplace",
-      "destination": "/guides/facebook-marketplace",
+      "destination": "/guides/how-to-use-facebook-marketplace-safely-2026",
       "permanent": true
     },
     {
@@ -1658,7 +1658,7 @@
     },
     {
       "source": "/tools/senior-google-assistant-basics",
-      "destination": "/guides/google-assistant-guide",
+      "destination": "/guides/google-assistant-basics-guide",
       "permanent": true
     },
     {
@@ -1728,7 +1728,7 @@
     },
     {
       "source": "/tools/senior-instacart",
-      "destination": "/guides/instacart-guide",
+      "destination": "/guides/how-to-use-instacart-for-grocery-delivery-2026",
       "permanent": true
     },
     {
@@ -1938,7 +1938,7 @@
     },
     {
       "source": "/tools/senior-phone-transfer",
-      "destination": "/guides/phone-data-transfer",
+      "destination": "/guides/how-to-transfer-data-from-your-old-phone-to-a-new-phone-2026",
       "permanent": true
     },
     {
@@ -2043,7 +2043,7 @@
     },
     {
       "source": "/tools/senior-social-security-online",
-      "destination": "/guides/social-security-online-account",
+      "destination": "/guides/managing-your-social-security-online",
       "permanent": true
     },
     {
@@ -2108,7 +2108,7 @@
     },
     {
       "source": "/tools/senior-twitter-x",
-      "destination": "/guides/twitter-x-beginners",
+      "destination": "/guides/twitter-x-tips",
       "permanent": true
     },
     {
@@ -2288,7 +2288,7 @@
     },
     {
       "source": "/tools/siri-shortcuts-for-seniors",
-      "destination": "/guides/iphone-siri-shortcuts-guide",
+      "destination": "/guides/iphone-shortcuts-automation",
       "permanent": true
     },
     {
@@ -2383,7 +2383,7 @@
     },
     {
       "source": "/tools/social-security-online",
-      "destination": "/guides/social-security-online-account",
+      "destination": "/guides/managing-your-social-security-online",
       "permanent": true
     },
     {

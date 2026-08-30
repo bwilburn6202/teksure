@@ -3,28 +3,7 @@ import type { Guide } from './guides';
 
 export const guidesBatch10: Guide[] = [
   // ── TRAVEL APPS ─────────────────────────────────────────────────────────────
-  {
-    slug: 'use-google-flights',
-    title: 'How to Use Google Flights to Find Cheap Tickets',
-    excerpt: 'Search airfare across dozens of airlines at once and track price drops so you know when to book.',
-    category: 'app-guides',
-    tags: ['Google Flights', 'travel', 'airfare', 'booking'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Google Flights is a free website that shows prices for the same trip across many airlines on one page. It also lets you watch a route over weeks or months so you can see when prices are lowest.
-
-You do not book through Google itself — once you find a good price, Google sends you to the airline or travel site to finish paying.`,
-    steps: [
-      { title: 'Open Google Flights', content: 'Go to google.com/flights in any web browser. You do not need to sign in to search, but signing in with a Google account lets you save trips.' },
-      { title: 'Enter your cities and dates', content: 'Type your departure city in the "Where from?" box and your destination in the "Where to?" box. Pick your travel dates, or tap the date box and choose "Flexible dates" to see a calendar of prices.' },
-      { title: 'Sort by price or duration', content: 'After you search, use the filters at the top to hide long layovers, pick preferred airlines, or cap the price. The cheapest results appear first by default.' },
-      { title: 'Turn on price tracking', content: 'Pick a flight and toggle on "Track prices." Google will email you when the fare goes up or down so you know whether to book now or wait.' },
-      { title: 'Book on the airline site', content: `When you are ready, click "Select flight" and then "Continue." Google will send you to the airline's own website to pay. Booking direct usually makes changes and refunds easier than going through a third party.` },
-    ],
-  },
-  {
+    {
     slug: 'use-expedia-bookings',
     title: 'How to Book Travel on Expedia',
     excerpt: 'Book flights, hotels, and rental cars in one place and bundle them to save money on a full trip.',
@@ -278,28 +257,7 @@ H&R Block also lets you drop off your documents at a local office if you prefer 
       { title: 'File and pay', content: 'Review your summary, pay any H&R Block fees, then e-file your federal and state returns. H&R Block emails a confirmation within 24 hours that the IRS accepted your return.' },
     ],
   },
-  {
-    slug: 'use-freetaxusa-online',
-    title: 'How to File Free Taxes with FreeTaxUSA',
-    excerpt: 'File your federal return for free and your state return for about $15 — no upsells or gotchas.',
-    category: 'financial-tech',
-    tags: ['FreeTaxUSA', 'taxes', 'free', 'IRS'],
-    readTime: '8 min',
-    thumbnailEmoji: '🆓',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `FreeTaxUSA is a lesser-known tax service. It is free for federal returns no matter how complex your tax situation is — even with self-employment income, rental property, or investments. State returns cost about $15.
-
-The site looks plainer than TurboTax or H&R Block. But the tax math is just as accurate, and it is an IRS-authorized e-file provider.`,
-    steps: [
-      { title: 'Create a free account', content: 'Go to freetaxusa.com and click "Sign In" then "Create a new account." Use an email you check and set a strong password.' },
-      { title: 'Enter your personal info', content: 'Type your name, Social Security number, address, and filing status (single, married filing jointly, head of household). If you have dependents, add their info too.' },
-      { title: 'Add your income', content: 'Click through each income section — W-2, 1099, self-employment, investments — and type in the numbers from your forms. There is no photo import like TurboTax, so double-check each box.' },
-      { title: 'Claim your deductions and credits', content: 'FreeTaxUSA walks you through the standard deduction versus itemizing, then common credits like the Earned Income Credit or Child Tax Credit. Answer yes or no to each prompt.' },
-      { title: 'E-file and save your return', content: 'Review the summary, pay for the state filing (if you need one) with a card, and e-file. Download a PDF copy of your final return and save it in a folder you will remember next tax season.' },
-    ],
-  },
-  {
+    {
     slug: 'irs-transcript-online',
     title: 'How to Get Your IRS Tax Transcript Online',
     excerpt: 'Download a record of past tax returns for a mortgage application, student aid form, or your own records.',
@@ -384,50 +342,8 @@ You save 5% on every order, and 35% on your first one. You can skip or reschedul
       { title: 'Manage your schedule anytime', content: 'In the Chewy app, tap "Account" then "Autoship." You can skip the next delivery, change the date, swap products, or cancel without any fee. Chewy emails you 3 days before each shipment so you can adjust.' },
     ],
   },
-  {
-    slug: 'use-rover-pet-sitter',
-    title: 'How to Book a Pet Sitter on Rover',
-    excerpt: 'Find and book a local dog walker, boarding sitter, or drop-in visitor for your pet while you are away.',
-    category: 'app-guides',
-    tags: ['Rover', 'pet sitter', 'dog walker', 'boarding'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Rover is a website and app that connects pet owners with sitters, walkers, and boarding hosts in their area. You pick the type of care you need, message sitters, and book through the app — all payments are handled by Rover.
-
-Every booking comes with the Rover Guarantee, which covers vet bills up to $25,000 if something goes wrong.`,
-    steps: [
-      { title: `Sign up and add your pet's profile`, content: 'Download the Rover app or go to rover.com. Create an account and add your pet — breed, age, size, and special notes like "afraid of thunderstorms" or "needs insulin twice a day."' },
-      { title: 'Pick the service you need', content: `Choose from Boarding (sitter's home overnight), House Sitting (sitter stays at your home), Drop-In Visits (30 minutes at your home), Doggy Day Care, or Dog Walking.` },
-      { title: 'Search and compare sitters', content: 'Enter your dates and your zip code. Filter by price, experience, and rating. Read reviews carefully — sitters with 50+ stays and 4.9 stars or higher are the safest bet.' },
-      { title: 'Do a free meet and greet', content: 'Before booking, message your top 2 sitters and schedule a 15-minute meet-and-greet at your home. This lets you see how they interact with your pet and ask questions.' },
-      { title: 'Book and stay in touch', content: 'Once you pick a sitter, tap "Book" and pay through the app. During the stay, ask for photo updates — most sitters send 2 to 3 photos a day. Leave a review afterward to help other owners.' },
-    ],
-  },
-  // ── READING APPS ────────────────────────────────────────────────────────────
-  {
-    slug: 'use-libby-library-audiobooks',
-    title: 'How to Borrow Free Audiobooks with Libby',
-    excerpt: 'Listen to thousands of audiobooks and read e-books for free with your public library card.',
-    category: 'app-guides',
-    tags: ['Libby', 'audiobooks', 'library', 'free'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Libby is a free app from your public library that lets you borrow audiobooks, e-books, and magazines using only your library card. Books return themselves automatically, so there are no late fees.
-
-Most U.S. public libraries have Libby. If there is a waitlist for a popular title, it is the same as the physical library — you get in line.`,
-    steps: [
-      { title: 'Download Libby', content: 'Install the free Libby app from the App Store (iPhone) or Play Store (Android). You can also use libbyapp.com in a web browser on a computer.' },
-      { title: 'Add your library card', content: 'Tap "Yes" when Libby asks if you have a library card. Pick your library from the list or search by your zip code. Enter your card number and PIN — the same ones you use at the library.' },
-      { title: 'Browse and borrow', content: 'Tap the library icon at the bottom to see available titles. The search bar and "Explore" section help you find new books. Tap any title and then "Borrow" to check it out for 2 to 3 weeks.' },
-      { title: 'Send to Kindle or listen in Libby', content: 'For e-books, you can choose "Read with Kindle" to send the book to your Kindle app or device. For audiobooks, tap "Open in Libby" to start listening right in the app.' },
-      { title: 'Return early or renew', content: 'Tap the shelf icon to see your loans. Tap any book then "Manage loan" to return it early (freeing it up for someone else) or renew it if nobody is waiting.' },
-    ],
-  },
-  {
+    // ── READING APPS ────────────────────────────────────────────────────────────
+    {
     slug: 'use-hoopla-free-library-media',
     title: 'How to Use Hoopla for Free Library Movies and Books',
     excerpt: 'Stream movies, TV shows, audiobooks, music, and comics for free with your library card — no waitlists.',
@@ -533,28 +449,7 @@ It is especially popular after a move to a new city or after life changes like r
       { title: 'Meet up for coffee', content: 'After a few back-and-forth messages, suggest a low-pressure first meet — coffee, a dog park, or a yoga class. Meet in a public place and tell someone where you are going, same as any first meeting with someone online.' },
     ],
   },
-  {
-    slug: 'join-facebook-groups-safely',
-    title: 'How to Join and Use Facebook Groups Safely',
-    excerpt: 'Find groups for your hobbies, neighborhood, or health conditions — while avoiding scams and fake accounts.',
-    category: 'social-media',
-    tags: ['Facebook', 'groups', 'community', 'safety'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-17',
-    difficulty: 'Beginner',
-    body: `Facebook Groups are private or public communities about almost any topic — gardening, specific medical conditions, your high school reunion, or neighborhood buy-sell-trade groups.
-
-Most groups are great for getting advice and meeting like-minded people, but scammers and fake accounts do show up. Knowing how to spot them keeps you safe.`,
-    steps: [
-      { title: 'Search for groups on Facebook', content: 'On Facebook, click the menu icon then "Groups," or type what you are looking for in the search bar and click "Groups" on the results page. Look at member counts — well-run groups usually have hundreds to thousands of active members.' },
-      { title: 'Read the rules and description', content: 'Every group has a description and rules posted at the top. Read them before joining — some groups require answering screening questions about why you want to join.' },
-      { title: 'Request to join', content: 'Click "Join Group." Many private groups have admins who review every request and might take a few days to approve. Public groups let you join instantly.' },
-      { title: 'Watch for scams', content: 'Never buy anything from a stranger in a group who asks to use Zelle or Venmo "friends and family." Ignore messages from members claiming you won a prize. Report anyone who private-messages you asking for money or personal info.' },
-      { title: 'Leave if it turns toxic', content: 'Click the three-dot menu on the group page and choose "Leave group." You can also mute the group to stop notifications without leaving. Your mental health matters more than staying in a group full of arguments.' },
-    ],
-  },
-  // ── SENIOR-SPECIFIC APPS ────────────────────────────────────────────────────
+    // ── SENIOR-SPECIFIC APPS ────────────────────────────────────────────────────
   {
     slug: 'use-grandpad-tablet',
     title: 'How to Set Up a GrandPad Tablet',

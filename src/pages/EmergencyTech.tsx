@@ -39,7 +39,7 @@ const beforeChecklist: Item[] = [
     title: 'Set up Medical ID',
     description:
       'On iPhone, Medical ID shows your meds, allergies, and emergency contacts on the lock screen — even if your phone is locked. First responders are trained to look for it.',
-    link: { to: '/guides/set-up-medical-id-iphone', label: 'How to set up Medical ID' },
+    link: { to: '/guides/how-to-set-up-medical-id-iphone-lock-screen', label: 'How to set up Medical ID' },
   },
   {
     title: 'Enable Emergency SOS',

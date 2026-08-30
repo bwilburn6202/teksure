@@ -233,7 +233,7 @@ export default function WifiPasswordFinder() {
                   <h4 className="font-semibold mb-1 text-sm">Make it a strong password</h4>
                   <p className="text-sm text-muted-foreground mb-3">A good Wi-Fi password is 12+ characters with a mix of letters and numbers.</p>
                   <Button variant="outline" size="sm" asChild>
-                    <a href="/guides/create-strong-password">Read guide <ExternalLink className="w-3 h-3 ml-1" /></a>
+                    <a href="/guides/create-strong-password-remember">Read guide <ExternalLink className="w-3 h-3 ml-1" /></a>
                   </Button>
                 </CardContent>
               </Card>

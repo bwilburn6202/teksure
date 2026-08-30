@@ -563,7 +563,7 @@ const InternetBasics = () => {
               </ol>
               <p>
                 Step-by-step with pictures:{' '}
-                <Link to="/guides/set-up-gmail-account" className="text-primary font-medium underline underline-offset-2">Set up a Gmail account</Link>{' '}
+                <Link to="/guides/create-gmail-account" className="text-primary font-medium underline underline-offset-2">Set up a Gmail account</Link>{' '}
                 and{' '}
                 <Link to="/guides/send-receive-email" className="text-primary font-medium underline underline-offset-2">Send and receive email</Link>.
               </p>

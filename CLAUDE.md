@@ -13,7 +13,7 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 - **Local:** `~/Documents/Claude/Projects/TekSure` · dev on :5173
 
 ## Current state (2026-08-30)
-4,032 guides · 387 tools · 4,542 sitemap URLs · TypeScript clean · 106/106 tests · prerendering live
+3,939 guides · 387 tools · 4,449 sitemap URLs · TypeScript clean · 106/106 tests · prerendering live
 
 **Thin-content cut, 2026-08-30.** `/tools` went from 2,970 pages to 387. 2,246 of the
 removed pages were under 300 words, 2,480 had no editorial inbound link, and 207
@@ -23,6 +23,15 @@ to guides and never to tool pages. 474 removed slugs with a genuine equivalent r
 (308 at the edge); the rest 404 on purpose, because pointing 2,000 unrelated thin pages at
 a hub reads as a soft 404. Full reasoning: `docs/REDUNDANCY-AUDIT-2026-08-30.md`.
 **Do not add `/tools` pages to move a number either.**
+
+**Thin guides, same day.** 110 guides that duplicated a longer guide on the same topic
+were merged away (17 by title via `scripts/merge-duplicate-guides.mjs`, 93 by topic via
+`scripts/merge-thin-guides.mjs` + `scripts/thin-guide-merges.json`) and redirect to the
+guide that actually answers the question. The merge map is hand-reviewed on purpose:
+automatic topic matching proposed a VPN guide onto a OneDrive guide and an Apple Watch
+guide onto Apple Pay. **~700 guides under 300 words remain and were left alone** — each is
+the only coverage of its topic, so they need expanding or an explicit decision to accept
+them, not deleting. That is a content call, not a cleanup.
 
 **Guide count target: retired.** Closed as MISSED at 4,049 by decision on 2026-08-04. 4,000 mediocre pages rank worse than 400 excellent ones. Do not add guides to move a number.
 

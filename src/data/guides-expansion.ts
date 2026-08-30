@@ -920,35 +920,7 @@ Siri searches across all installed apps — hold the microphone button and say "
     ],
   },
 
-  {
-    slug: 'set-up-ring-doorbell',
-    title: 'How to Set Up a Ring Doorbell',
-    excerpt: 'Install your Ring Video Doorbell to see who is at your door from your phone — home or away.',
-    category: 'smart-home' as any,
-    tags: ['Ring', 'doorbell', 'home security', 'smart home', 'camera'],
-    readTime: '8 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-15',
-    difficulty: 'Intermediate',
-    body: `A Ring Video Doorbell lets you see, hear, and talk to whoever is at your door from your phone. It records video and sends motion alerts. Most models can be installed with basic tools.
-
-Download the Ring app, create an account, tap "Set Up a Device" → "Doorbells," and scan the QR code on the back of the Ring. The app guides you through WiFi connection.
-
-For battery-powered models: position the mounting bracket at about 4 feet from the ground, mark and drill screw holes, attach the bracket, and snap the Ring onto it. For wired models: turn off power at the breaker, remove your old doorbell, connect the two wires to the Ring's terminals, mount it, and turn power back on.
-
-Test by pressing the doorbell button. You should receive a notification and see live video. Adjust motion sensitivity in the app to reduce false alerts. Use Motion Zones to focus detection on your porch and walkway only.
-
-Ring Protect subscription plans let you save and review video recordings. Without a plan, you still get live video and motion alerts.`,
-    steps: [
-      { title: 'Download the Ring app', content: 'Get the Ring app from App Store or Google Play Store. Create an account or sign in.' },
-      { title: 'Add your device', content: `Tap "Set Up a Device" → "Doorbells." Scan the QR code on the Ring's back to begin WiFi setup.` },
-      { title: 'Choose installation type', content: 'Battery-powered models need no wiring. Wired models connect to existing doorbell wires.' },
-      { title: 'Mount the doorbell', content: 'Position the bracket at 4 feet high, drill screw holes, attach the bracket, and snap on the Ring.' },
-      { title: 'Test the doorbell', content: 'Press the button to trigger a notification and live video on your phone. Test two-way audio.' },
-      { title: 'Adjust motion settings', content: 'In the app, set Motion Zones and sensitivity to reduce false alerts from street traffic and pets.' },
-    ],
-  },
-
+  
   {
     slug: 'set-up-smart-light-bulbs',
     title: 'How to Set Up Smart Light Bulbs',
@@ -4826,46 +4798,8 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'use-cloud-storage',
-    title: 'How to Use Cloud Storage — Google Drive, OneDrive, and iCloud',
-    excerpt: 'Store your photos, documents, and files online so you can access them from any device and never lose them.',
-    category: 'essential-skills' as any,
-    tags: ['cloud storage', 'google drive', 'onedrive', 'icloud', 'backup'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Cloud storage saves your files on the internet so you can access them from any phone, tablet, or computer — and so you do not lose them if your device is lost or breaks. Google Drive, Microsoft OneDrive, and Apple iCloud each offer free storage. Knowing how to use at least one of these is one of the most useful digital skills you can have.`,
-    steps: [
-      { title: 'Choose a cloud storage service', content: 'Use Google Drive (drive.google.com) if you have a Gmail account. It gives you 15 GB free. Use OneDrive (onedrive.com) if you use Windows or Microsoft — also 15 GB free. Use iCloud if you have an iPhone or Mac — 5 GB free, with upgrades available.' },
-      { title: 'Upload a file', content: 'On Google Drive or OneDrive, go to the website and drag a file from your computer into the browser window, or click "New" then "File upload." On iPhone, files saved in apps like Photos or Notes sync to iCloud automatically.' },
-      { title: 'Access your files from another device', content: 'Sign in to the same account on any device and your files will be there. On a phone, download the Google Drive, OneDrive, or Files app (iPhone) to access your cloud files.' },
-      { title: 'Organize files into folders', content: 'Right-click (or tap and hold on mobile) to create a new folder. Drag files into folders to keep things organized. Good folder names like "Tax Documents 2025" or "Family Photos" make it easy to find things later.' },
-      { title: 'Share a file with someone', content: `Right-click a file and choose "Share." Enter the other person's email address or click "Copy link" to get a shareable link. You can choose whether they can just view it or also edit it.` },
-    ],
-  },
-
-  {
-    slug: 'sign-documents-electronically',
-    title: 'How to Sign Documents Electronically',
-    excerpt: 'Sign PDF contracts, forms, and agreements electronically on your phone or computer — no printing required.',
-    category: 'how-to' as any,
-    tags: ['e-signature', 'sign pdf', 'docusign', 'adobe', 'electronic signature'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Electronic signatures are legally valid in the United States and accepted by banks, landlords, employers, and government agencies. You can sign a document without printing, signing by hand, and scanning it back — saving time and paper. Several free tools make this quick and easy on any device.`,
-    steps: [
-      { title: 'Use Adobe Acrobat Reader to sign a PDF (free)', content: 'Download Adobe Acrobat Reader for free from adobe.com. Open your PDF, click "Fill & Sign" in the toolbar, then click "Sign" and draw or type your signature. Click where you want to place it on the document.' },
-      { title: 'Sign on iPhone using Markup', content: 'Open the PDF in the Files or Mail app on your iPhone. Tap the pen icon (Markup) then tap the "+" button and choose "Signature." Draw your signature with your finger and tap "Done." Drag it to the correct spot.' },
-      { title: 'Use DocuSign for documents sent to you', content: 'If someone sends you a DocuSign request by email, click the link in the email. Follow the prompts — you do not need to create an account to sign a document sent to you. Click the signature box and type or draw your name.' },
-      { title: 'Use a free online tool', content: 'Go to smallpdf.com/sign-pdf or docusign.com and upload your PDF. These sites let you add a signature, initials, and date without installing anything. Download the signed copy when done.' },
-      { title: 'Save and send the signed document', content: 'After signing, always save a copy of the signed document to your files or cloud storage before sending it. Email the signed PDF as an attachment, or use the share option in the app.' },
-    ],
-  },
-
+  
+  
   {
     slug: 'organize-digital-files-folders',
     title: 'How to Organize Your Digital Files and Folders',
@@ -5055,26 +4989,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
   // TRAVEL TECH (6 guides)
   // ═══════════════════════════════════════════
 
-  {
-    slug: 'use-google-maps-driving-directions',
-    title: 'How to Use Google Maps for Driving Directions',
-    excerpt: 'Get turn-by-turn driving directions, check traffic, and find parking using Google Maps on your phone.',
-    category: 'app-guides' as any,
-    tags: ['google maps', 'directions', 'navigation', 'gps', 'driving'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Google Maps is the most widely used navigation app in the world. And it is free on both iPhone and Android. It gives you turn-by-turn voice directions, real-time traffic updates, and estimated arrival times. Knowing how to use it confidently takes the stress out of driving somewhere new.`,
-    steps: [
-      { title: 'Open Google Maps and allow location access', content: 'Download the Google Maps app from the App Store or Google Play if you do not already have it. When you open it for the first time, allow it to access your location — this is how it knows where you are starting from.' },
-      { title: 'Enter your destination', content: 'Tap the search bar at the top of the screen and type the address, business name, or place you want to go. A list of suggestions will appear as you type — tap the correct one from the list.' },
-      { title: 'Choose driving and review the route', content: 'Tap the blue "Directions" button. Make sure the car icon is selected at the top (not walking or transit). Google Maps will show you the fastest route and its estimated travel time, plus alternative routes you can choose.' },
-      { title: 'Start navigation', content: `Tap the blue "Start" button at the bottom of the screen. Google Maps will begin giving you voice directions through your phone's speaker. The screen shows your next turn, your current speed, and your estimated arrival time.` },
-      { title: 'Use features during the drive', content: 'You can mute or adjust the voice volume using the speaker icon during navigation. If you miss a turn, Google Maps will automatically recalculate your route. When you arrive, tap the X to stop navigation.' },
-    ],
-  },
-
+  
   {
     slug: 'book-flights-online-safely',
     title: 'How to Book Flights Online Safely',
@@ -5180,26 +5095,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'set-up-apple-tv-app',
-    title: 'How to Set Up the Apple TV App',
-    excerpt: 'Use the Apple TV app to watch Apple TV+ originals, rent movies, and access your streaming services in one place.',
-    category: 'entertainment' as any,
-    tags: ['apple tv', 'apple tv plus', 'streaming', 'iphone', 'smart tv'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `The Apple TV app is both a streaming service and a hub that brings together content from multiple streaming apps in one place. It comes free on all iPhones and iPads and is available on many smart TVs. Apple TV+ is Apple's subscription service with original shows and movies, while the TV app itself also lets you rent or buy other movies.`,
-    steps: [
-      { title: 'Find the Apple TV app on your device', content: 'On iPhone or iPad, the Apple TV app comes pre-installed — look for the black and white TV icon. On a Samsung, LG, or Vizio smart TV, go to the app store on your TV and search for "Apple TV." It is also built into Roku, Fire TV, and Apple TV devices.' },
-      { title: 'Sign in with your Apple ID', content: 'Open the app and sign in with your Apple ID (the email and password you use for the App Store). If you do not have an Apple ID, you can create one for free at appleid.apple.com.' },
-      { title: 'Subscribe to Apple TV+ for original content', content: 'Tap "Apple TV+" in the app to see original shows and movies. Tap "Subscribe" to start a subscription. It costs around $10 per month and includes a free trial for new subscribers. Many Apple devices come with a complimentary trial period as well.' },
-      { title: 'Browse and watch', content: 'The "Watch Now" tab shows recommendations and content from your connected streaming apps. The "Apple TV+" tab shows only Apple originals. Tap any title and select "Play" to start watching.' },
-      { title: 'Rent or buy movies', content: 'Tap the "Store" tab to browse movies available to rent or buy. Rental prices are usually around $4 to $6 and give you 30 days to start watching and 48 hours to finish once you press play. Purchased movies stay in your library permanently.' },
-    ],
-  },
-
+  
   {
     slug: 'use-youtube-on-tv',
     title: 'How to Use YouTube on Your TV',
@@ -5264,46 +5160,8 @@ Set a Screen Time passcode that is different from the child's login password. Th
   // FINANCIAL TECH (6 guides)
   // ═══════════════════════════════════════════
 
-  {
-    slug: 'set-up-online-banking',
-    title: 'How to Set Up Online Banking',
-    excerpt: 'Set up online access to your bank account to check balances, pay bills, and transfer money from home.',
-    category: 'financial-tech' as any,
-    tags: ['online banking', 'bank account', 'mobile banking', 'bill pay', 'transfers'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Online banking lets you check your balance, view transactions, pay bills, and transfer money without visiting a branch or calling your bank. Every major US bank offers free online and mobile banking. Setting it up takes about 10 minutes, and the convenience of handling banking tasks from home is well worth it.`,
-    steps: [
-      { title: `Go to your bank's official website`, content: `Type your bank's name into your browser (for example, bankofamerica.com, chase.com, or wellsfargo.com). Do not click search result ads — type the address directly. Look for the "Sign In" or "Enroll in Online Banking" button.` },
-      { title: 'Enroll and verify your identity', content: 'Click "Enroll" and enter your account number or debit card number, Social Security number (last 4 or full), and date of birth. The bank uses this to confirm you are the account holder. You will also verify your identity with a code sent to your phone or email.' },
-      { title: 'Create a username and password', content: 'Choose a unique username and a strong password with a mix of letters, numbers, and symbols. Do not use the same password you use for other websites. Write it down and store it in a safe place.' },
-      { title: 'Set up two-factor authentication', content: 'Enable two-factor authentication (2FA) in your security settings. This sends a one-time code to your phone every time you log in from a new device, preventing anyone else from accessing your account even if they have your password.' },
-      { title: 'Download the mobile app', content: `Search for your bank's official app in the App Store or Google Play. Download it and sign in with your new username and password. The mobile app lets you check your balance, deposit checks by photo, and pay bills on the go.` },
-    ],
-  },
-
-  {
-    slug: 'use-zelle-send-money',
-    title: 'How to Use Zelle to Send Money Safely',
-    excerpt: 'Send money directly to friends, family, or businesses using Zelle — fast, free, and built into most bank apps.',
-    category: 'financial-tech' as any,
-    tags: ['zelle', 'send money', 'bank transfer', 'p2p payments', 'digital payments'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `Zelle lets you send money directly from your bank account to another person's bank account in minutes — for free. It is built into the apps of most major US banks including Bank of America, Chase, Wells Fargo, and hundreds of others. Because transfers go directly between bank accounts, the money usually arrives within minutes.`,
-    steps: [
-      { title: 'Find Zelle in your bank app', content: `Open your bank's mobile app and look for "Zelle" in the menu — usually under "Transfer Money," "Pay and Transfer," or "Send Money." If your bank supports Zelle, it will be listed there. You do not need to download a separate app.` },
-      { title: 'Enroll your email or phone number', content: 'The first time you use Zelle, you will need to enroll by entering your email address or US mobile phone number and verifying it with a code. This is a one-time setup.' },
-      { title: 'Send money', content: `Tap "Send" and enter the recipient's email address or US phone number. Enter the amount you want to send and add a note if you like (such as "Dinner last night"). Review the details and tap "Send." If the recipient is already enrolled in Zelle, they receive the money in minutes.` },
-      { title: 'Know the safety rules', content: 'Only send money to people you know and trust — Zelle transfers are instant and generally cannot be reversed. The FTC warns that scammers often ask for Zelle payments pretending to be utilities, government agencies, or relatives in trouble. No legitimate company asks for Zelle payments for bills or emergencies.' },
-      { title: 'Request money from others', content: `You can also use Zelle to request money. Tap "Request" and enter the person's email or phone number, then enter the amount. They will receive a notification and can send you the money through their own bank app.` },
-    ],
-  },
-
+  
+  
   {
     slug: 'spot-bank-impersonation-scam',
     title: 'How to Spot a Bank Impersonation Scam',
@@ -5344,26 +5202,7 @@ Set a Screen Time passcode that is different from the child's login password. Th
     ],
   },
 
-  {
-    slug: 'file-taxes-online-free-file',
-    title: 'How to File Your Taxes Online with IRS Free File',
-    excerpt: 'File your federal income taxes for free online using the IRS Free File program if your income qualifies.',
-    category: 'government-civic' as any,
-    tags: ['taxes', 'irs', 'free file', 'tax return', 'government'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner' as any,
-    body: `The IRS Free File program offers free tax filing software to taxpayers who meet the income requirements. This includes free preparation and e-filing of your federal return — no hidden fees. Several companies participate, including TurboTax Free File and TaxAct. Filing electronically gets you your refund faster, often within 21 days.`,
-    steps: [
-      { title: 'Gather your tax documents', content: `Before you start, collect your W-2 forms from employers, 1099 forms for freelance or retirement income, Social Security statements (SSA-1099), last year's tax return, and your Social Security number and those of any dependents.` },
-      { title: 'Go to IRS Free File at irs.gov/freefile', content: 'Type irs.gov/freefile directly into your browser — do not search for it to avoid lookalike scam sites. Click "Use Free Guided Tax Software" to see the list of participating companies. Each has different income requirements and state filing options.' },
-      { title: 'Choose a Free File partner and start your return', content: 'Compare the options and click the link to your chosen provider. You will be taken directly to their Free File version. Create an account with your email address and start a new tax return. The software will ask you questions and fill in the forms for you.' },
-      { title: 'Enter your income and deductions', content: 'Follow the step-by-step interview. Enter your wages from your W-2, any other income sources, and answer questions about deductions. The software calculates your refund or amount owed automatically as you go.' },
-      { title: 'Review and submit your return', content: 'Review your completed return before submitting. If you are getting a refund, enter your bank account number and routing number for direct deposit. It is faster and safer than a paper check. Click "Submit" to file. You will receive an email confirmation that the IRS accepted your return.' },
-    ],
-  },
-
+  
   // ═══════════════════════════════════════════
   // HEALTH TECH (6 guides)
   // ═══════════════════════════════════════════

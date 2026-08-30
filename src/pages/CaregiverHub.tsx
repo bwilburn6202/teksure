@@ -157,7 +157,7 @@ const caregiverTools = [
     title: 'Apple Family Sharing',
     description:
       'Share subscriptions, locations, and screen time with up to six family members. The best way to help manage an Apple ID without sharing the password.',
-    to: '/guides/set-up-family-sharing-apple',
+    to: '/guides/how-to-set-up-family-sharing-caregiving',
   },
   {
     icon: Users,

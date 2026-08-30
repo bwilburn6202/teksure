@@ -191,30 +191,7 @@ Tablet screens are wide enough that split screen actually feels comfortable — 
   },
 
   // ── EMAIL PLATFORMS ──────────────────────────────────────────────────────────
-  {
-    slug: 'use-outlook-hotmail-email',
-    title: 'How to Set Up and Use Outlook (Hotmail) Email',
-    excerpt: `Set up a free Outlook.com (formerly Hotmail) email account and learn to send, receive, and organize your messages with Microsoft's email service.`,
-    category: 'essential-skills',
-    tags: ['Outlook', 'Hotmail', 'email', 'Microsoft', 'beginners'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-16',
-    difficulty: 'Beginner',
-    body: `Outlook.com (which was previously called Hotmail) is Microsoft's free email service. If you have an email address ending in @outlook.com, @hotmail.com, or @live.com, you already have a Microsoft account. Outlook.com works well in any web browser and also has a free app for iPhone and Android phones.
-
-Having a Microsoft account also gives you access to the free web versions of Microsoft Word, Excel, and PowerPoint at office.com — a helpful bonus if you ever need to work on those types of files. Setting up a new Outlook account takes about five minutes.
-
-Outlook is a good choice if you use a Windows PC, because your email account can connect to the built-in Outlook desktop app that comes with Windows.`,
-    steps: [
-      { title: 'Create a Microsoft account', content: 'Go to outlook.com and click "Create free account." Choose an email address ending in @outlook.com, then set a password. You will also provide your name, birthdate, and country.' },
-      { title: 'Verify your account', content: 'Microsoft may ask you to verify your identity by entering a code sent to a phone number or another email address. This step protects your account from being created by automated programs.' },
-      { title: 'Explore your inbox', content: 'Once inside, your inbox appears on the left side. Unread emails are shown in bold. Click any email to read it in the panel on the right side of the screen.' },
-      { title: 'Write and send an email', content: `Click the "+ New message" button at the top left. Fill in the "To" field with the recipient's email address, add a subject, write your message, and click "Send."` },
-      { title: 'Organize with folders', content: 'Right-click on any email to see options including "Move to folder." You can create folders — like "Family" or "Bills" — to keep emails organized. Click the folder names in the left sidebar to view them.' },
-    ],
-  },
-  {
+    {
     slug: 'use-yahoo-mail',
     title: 'How to Set Up and Use Yahoo Mail',
     excerpt: `Create a free Yahoo Mail account and learn to send emails, manage your inbox, and stay organized with Yahoo's email service.`,

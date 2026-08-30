@@ -270,37 +270,7 @@ export const guidesBatch15: Guide[] = [
     ],
   },
 
-  {
-    slug: 'how-to-use-iphone-widgets',
-    title: `How to Add Widgets to Your iPhone's Home Screen`,
-    excerpt: `iPhone widgets show weather, calendar, battery level, and more directly on your home screen — here's how to add and arrange them.`,
-    category: 'tips-tricks',
-    tags: ['widgets', 'iphone', 'home screen', 'ios', 'weather', 'customize'],
-    readTime: '3 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: "iPhone widgets show live information right on your Home Screen — no app opening needed. Popular widgets include the weather for the next few hours, upcoming calendar appointments, and a fitness ring showing your daily activity progress.",
-    steps: [
-      {
-        title: 'Enter editing mode',
-        content: `Press and hold any empty space on your iPhone's Home Screen until the apps start to wiggle. Tap the plus (+) button in the top left corner of the screen. The "Add a Widget" gallery opens showing all available widgets.`,
-      },
-      {
-        title: 'Choose and add a widget',
-        content: `Scroll through or search the widget gallery. Tap any widget to see size options — small (about the size of 4 app icons), medium (8 app icons wide), or large (a full row). Swipe through the size options and tap "Add Widget" when you've chosen the one you want. The widget is added to your Home Screen.`,
-      },
-      {
-        title: 'Move and arrange widgets',
-        content: `While still in wiggle mode, press and hold any widget or app to drag it to a new position. Widgets can sit alongside regular app icons or be placed together in a "Smart Stack" (a stack of widgets you swipe through). Tap "Done" in the top right corner when you're satisfied with the arrangement.`,
-      },
-      {
-        title: 'Add widgets to your Lock Screen',
-        content: 'On any current iPhone, you can also add small widgets to your Lock Screen (the screen you see when your phone is locked). Press and hold your Lock Screen, tap "Customize," then tap "Lock Screen." Tap the date area at the top to add a widget above the clock, or tap the widget row below the clock to add up to four small widgets. Useful options: battery percentage, next calendar event, temperature, or steps walked.',
-      },
-    ],
-  },
-
+  
   {
     slug: 'how-to-recover-deleted-photos-iphone',
     title: 'How to Recover Photos You Accidentally Deleted on iPhone',
