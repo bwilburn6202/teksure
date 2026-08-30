@@ -140,7 +140,7 @@ const STORIES: Story[] = [
     ],
     tools: [
       { label: 'Subscription Audit guide', href: '/guide/audit-your-subscriptions' },
-      { label: 'Money-saving tools', href: '/tools/money' },
+      { label: 'Money-saving tools', href: '/tools' },
     ],
     timeInvested: 'One afternoon',
   },

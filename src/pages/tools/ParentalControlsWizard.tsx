@@ -315,7 +315,7 @@ export default function ParentalControlsWizard() {
                   <h4 className="font-semibold mb-1 text-sm">Family Tech Agreement</h4>
                   <p className="text-sm text-muted-foreground mb-3">Printable rules for screens, passwords, and online behavior.</p>
                   <Button variant="outline" size="sm" asChild>
-                    <a href="/tools/family-tech-agreement">Open <ArrowRight className="w-3 h-3 ml-1" /></a>
+                    <a href="/tools/family-tech-planner">Open <ArrowRight className="w-3 h-3 ml-1" /></a>
                   </Button>
                 </CardContent>
               </Card>

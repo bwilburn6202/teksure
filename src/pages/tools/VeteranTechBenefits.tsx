@@ -371,7 +371,7 @@ export default function VeteranTechBenefits() {
                 <p className="text-sm text-muted-foreground mt-0.5">All government benefits in one place.</p>
               </Link>
               <Link
-                to="/tools/free-resources"
+                to="/free-resources"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
                 <p className="font-medium text-base flex items-center gap-1">

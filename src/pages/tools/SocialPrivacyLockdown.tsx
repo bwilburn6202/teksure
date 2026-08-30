@@ -169,7 +169,7 @@ export default function SocialPrivacyLockdown() {
           <div className="mt-10 pt-8 border-t border-border">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
-              <Link to="/tools/data-broker-removal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/data-broker-removal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Data Broker Removal</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Remove yourself from people-search.</p>
               </Link>

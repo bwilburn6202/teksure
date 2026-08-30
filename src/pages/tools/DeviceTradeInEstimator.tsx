@@ -38,7 +38,7 @@ export default function DeviceTradeInEstimator() {
 
   return (
     <>
-      <SEOHead title="Device Trade-In Estimator" description="Find out how much your old phone, tablet, or laptop is worth. Compare trade-in values across 8 buyback services." path="/tools/device-trade-in" />
+      <SEOHead title="Device Trade-In Estimator" description="Find out how much your old phone, tablet, or laptop is worth. Compare trade-in values across 8 buyback services." path="/tools/trade-in-estimator" />
       <Navbar />
       <main className="min-h-screen bg-background"><div className="container max-w-2xl py-12 px-4">
         <div className="text-center mb-10"><DollarSign className="h-12 w-12 text-primary mx-auto mb-4" /><h1 className="text-3xl font-bold mb-2">Device Trade-In Estimator</h1><p className="text-muted-foreground">Find out what your old device is worth</p></div>

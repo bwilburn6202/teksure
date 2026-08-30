@@ -226,11 +226,11 @@ export default function PhoneFamilyLinkSetup() {
           <div className="mt-10 pt-8 border-t border-border">
             <p className="text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-3">Related</p>
             <div className="grid sm:grid-cols-3 gap-3">
-              <Link to="/tools/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Grandparent Device Setup</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Get a spare phone or tablet ready to share.</p>
               </Link>
-              <Link to="/tools/kids-online-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/kids-online-safety" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Kids Online Safety</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Wider safety habits beyond the device itself.</p>
               </Link>

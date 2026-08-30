@@ -853,7 +853,7 @@ export default function DigitalEstateBinder() {
                 your actual passwords belong in a password manager like Bitwarden (free) or
                 1Password.{' '}
                 <Link
-                  to="/tools/password-strength-tester"
+                  to="/tools/password-strength"
                   className="underline font-semibold"
                 >
                   See our password guide
@@ -1310,7 +1310,7 @@ export default function DigitalEstateBinder() {
                     <AlertDescription>
                       Don't write full account numbers or real passwords. The actual password
                       should live in a password manager like{' '}
-                      <Link to="/tools/password-strength-tester" className="underline font-semibold">
+                      <Link to="/tools/password-strength" className="underline font-semibold">
                         Bitwarden or 1Password
                       </Link>
                       .

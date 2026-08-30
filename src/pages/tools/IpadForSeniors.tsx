@@ -927,7 +927,7 @@ export default function IpadForSeniors() {
                     <>
                       {' '}
                       <Link
-                        to="/tools/password-strength-tester"
+                        to="/tools/password-strength"
                         className="text-primary underline font-medium"
                       >
                         Try our password strength tester

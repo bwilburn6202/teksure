@@ -2535,6 +2535,11 @@
       "source": "/tools/youtube-tv-for-seniors",
       "destination": "/guides/use-youtube-on-tv",
       "permanent": true
+    },
+    {
+      "source": "/tools/tech-budget",
+      "destination": "/tools/monthly-budget-worksheet",
+      "permanent": true
     }
   ]
 }

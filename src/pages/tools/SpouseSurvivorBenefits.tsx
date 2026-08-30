@@ -335,7 +335,7 @@ export default function SpouseSurvivorBenefits() {
                 <p className="font-medium text-base">My Social Security Setup</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Create the account first.</p>
               </Link>
-              <Link to="/tools/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Accounts After a Loss</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Closing and transferring accounts.</p>
               </Link>

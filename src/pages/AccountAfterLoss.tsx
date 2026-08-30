@@ -223,7 +223,7 @@ export default function AccountAfterLoss() {
                 <p className="font-medium text-base">Bereavement Tech Hub</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Wider guide for the months after.</p>
               </Link>
-              <Link to="/tools/data-broker-removal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/data-broker-removal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Data Broker Removal</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Stop their info appearing online.</p>
               </Link>

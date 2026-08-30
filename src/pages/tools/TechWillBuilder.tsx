@@ -202,7 +202,7 @@ export default function TechWillBuilder() {
                 <p className="font-medium text-base">Family Tech Roundtable</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Talk through this with the family.</p>
               </Link>
-              <Link to="/tools/data-broker-removal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/data-broker-removal" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Data Broker Removal</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Clean up your digital trail.</p>
               </Link>

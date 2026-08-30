@@ -1183,7 +1183,7 @@ export default function CaregiverPlannerPack() {
                 <AlertTitle>Use a password manager</AlertTitle>
                 <AlertDescription>
                   Need help picking one?{' '}
-                  <Link to="/tools/password-strength-tester" className="underline font-semibold">
+                  <Link to="/tools/password-strength" className="underline font-semibold">
                     Test a password + see manager options
                   </Link>
                   .

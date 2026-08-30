@@ -87,7 +87,7 @@ const MISTAKES: Mistake[] = [
     whatPeopleDo: 'Posting birthday parties, vacation dates, full birthdates, mother\'s maiden name memes, and grandkids\' full names — all public.',
     whyItIsBad: 'Scammers harvest these details to answer security questions, target grandparent scams, and know exactly when your house is empty.',
     theFix: 'Change your Facebook posts to "Friends only". Skip the fun memes that ask for your first car, first pet, or street you grew up on — those are security-question answers.',
-    fixLink: { to: '/tools/privacy-checkup', label: 'Privacy Checkup' },
+    fixLink: { to: '/tools/privacy-audit', label: 'Privacy Checkup' },
   },
   {
     number: 9,

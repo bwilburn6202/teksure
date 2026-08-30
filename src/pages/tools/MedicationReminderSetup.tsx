@@ -330,7 +330,7 @@ const MedicationReminderSetup = () => {
           </div>
           <div className="mt-4">
             <Button asChild variant="outline" className="text-base">
-              <Link to="/tools/emergency-contacts-setup">
+              <Link to="/tools/emergency-info-card">
                 Set up Emergency Contacts <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>

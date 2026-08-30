@@ -222,7 +222,7 @@ export default function BedtimeTechRoutine() {
                 <p className="font-medium text-base">Fitness Tracker Picker</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Pick the right watch.</p>
               </Link>
-              <Link to="/tools/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Grandparent Device Setup</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Phone or tablet, ready to go.</p>
               </Link>

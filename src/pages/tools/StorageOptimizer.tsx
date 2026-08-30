@@ -748,7 +748,7 @@ export default function StorageOptimizer() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-4 mt-6">
-            <Link to="/tools/tech-budget-planner"
+            <Link to="/tools/monthly-budget-worksheet"
                   className="border rounded-lg p-5 bg-background hover:shadow-md transition group flex items-center justify-between">
               <div>
                 <h3 className="font-semibold">Tech budget planner</h3>

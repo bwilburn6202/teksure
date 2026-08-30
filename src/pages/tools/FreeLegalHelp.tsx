@@ -285,7 +285,7 @@ export default function FreeLegalHelp() {
                 <p className="text-sm text-muted-foreground mt-0.5">Find every benefit you qualify for.</p>
               </Link>
               <Link
-                to="/tools/account-after-loss"
+                to="/account-after-loss"
                 className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all"
               >
                 <p className="font-medium text-base">Account After Loss</p>

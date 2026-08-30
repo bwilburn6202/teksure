@@ -1009,7 +1009,7 @@ function DoneScreen({
             <li>Turn on geofencing if your schedule is unpredictable.</li>
             <li>
               Test your Wi-Fi where the thermostat lives with our{' '}
-              <Link to="/tools/wifi-speed-doctor" className="text-primary underline font-medium">
+              <Link to="/tools/wifi-speed" className="text-primary underline font-medium">
                 Wi-Fi Speed Doctor
               </Link>
               .
@@ -1501,7 +1501,7 @@ export default function SmartThermostatSetup() {
                     <Wifi className="w-6 h-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-lg mb-1">
-                        <Link to="/tools/wifi-speed-doctor" className="hover:underline">Wi-Fi Speed Doctor</Link>
+                        <Link to="/tools/wifi-speed" className="hover:underline">Wi-Fi Speed Doctor</Link>
                       </h3>
                       <p className="text-base leading-relaxed text-muted-foreground">
                         Check that Wi-Fi is strong enough in the hallway where your thermostat lives. Weak Wi-Fi is the #1 cause of a smart thermostat going offline.
@@ -1543,7 +1543,7 @@ export default function SmartThermostatSetup() {
                     <DollarSign className="w-6 h-6 text-primary shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-lg mb-1">
-                        <Link to="/tools/free-software" className="hover:underline">Free Tech Programs</Link>
+                        <Link to="/free-software" className="hover:underline">Free Tech Programs</Link>
                       </h3>
                       <p className="text-base leading-relaxed text-muted-foreground">
                         Federal and state programs that help with energy bills, Internet, and home efficiency upgrades.

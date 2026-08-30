@@ -482,4 +482,5 @@ export const toolRedirects: Record<string, string> = {
   'youtube-for-seniors': '/guides/youtube-guide',
   'youtube-music-for-seniors': '/guides/use-youtube-music',
   'youtube-tv-for-seniors': '/guides/use-youtube-on-tv',
+  'tech-budget': '/tools/monthly-budget-worksheet',
 };

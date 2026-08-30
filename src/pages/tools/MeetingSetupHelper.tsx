@@ -219,7 +219,7 @@ export default function MeetingSetupHelper() {
       <SEOHead
         title="Meeting Setup Helper — Video Call Guide for Zoom, Meet, FaceTime | TekSure"
         description="Step-by-step guide to set up and join video calls on Zoom, Google Meet, FaceTime, Microsoft Teams, and WhatsApp. Includes troubleshooting and pre-meeting checklist."
-        path="/tools/meeting-setup-helper"
+        path="/tools/meeting-setup"
       />
       <Navbar />
       <main className="min-h-screen bg-background">

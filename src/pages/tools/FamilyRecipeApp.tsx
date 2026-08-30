@@ -207,7 +207,7 @@ export default function FamilyRecipeApp() {
                 <p className="font-medium text-base">Photo Library Tips</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Organize photos and scans.</p>
               </Link>
-              <Link to="/tools/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Grandparent Device Setup</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Make the phone friendlier first.</p>
               </Link>

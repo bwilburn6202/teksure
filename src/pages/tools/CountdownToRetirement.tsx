@@ -81,7 +81,7 @@ const PHASES: Phase[] = [
 const RELATED = [
   { href: '/tools/social-security-setup', label: 'Social Security Setup', sub: 'Open my Social Security the right way.' },
   { href: '/tools/medicare-plan-chooser', label: 'Medicare Plan Chooser', sub: 'Compare Original, Advantage, and Part D.' },
-  { href: '/tools/account-after-loss', label: 'Account After Loss', sub: 'Plan what family will need access to.' },
+  { href: '/account-after-loss', label: 'Account After Loss', sub: 'Plan what family will need access to.' },
 ];
 
 export default function CountdownToRetirement() {

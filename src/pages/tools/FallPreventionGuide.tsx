@@ -74,7 +74,7 @@ export default function FallPreventionGuide() {
         <Card className="bg-muted/40">
           <CardContent className="pt-6">
             <h3 className="font-bold mb-2">Tech that helps</h3>
-            <p className="text-base text-muted-foreground"><strong>Apple Watch fall detection</strong> — auto-calls 911 + emergency contacts. <strong>Medical alert pendants</strong> (Lively, Medical Guardian) — $20-40/mo. <strong>Ring/Nest cameras</strong> — family can check in. See /tools/medical-alert-comparison.</p>
+            <p className="text-base text-muted-foreground"><strong>Apple Watch fall detection</strong> — auto-calls 911 + emergency contacts. <strong>Medical alert pendants</strong> (Lively, Medical Guardian) — $20-40/mo. <strong>Ring/Nest cameras</strong> — family can check in.</p>
           </CardContent>
         </Card>
       </main>

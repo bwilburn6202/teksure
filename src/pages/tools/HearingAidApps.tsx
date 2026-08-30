@@ -352,7 +352,7 @@ export default function HearingAidApps() {
                 <p className="font-medium text-base">Hearing Aid Pairing Wizard</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Connect your aids to iPhone or Android.</p>
               </Link>
-              <Link to="/tools/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Low-Vision Setup</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Sight tools to pair with hearing.</p>
               </Link>

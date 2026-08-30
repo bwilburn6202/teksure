@@ -175,7 +175,7 @@ export default function OnlineClassesPicker() {
                 <p className="font-medium text-base">Stay Connected</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Calls, classes, and hobby groups.</p>
               </Link>
-              <Link to="/tools/free-resources" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/free-resources" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Free Resources</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Programs that cost nothing.</p>
               </Link>

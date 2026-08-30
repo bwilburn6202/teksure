@@ -168,7 +168,7 @@ export default function OnlineWillEstate() {
                 <p className="font-medium text-base">Tech Will Builder</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Plan what happens to your digital accounts.</p>
               </Link>
-              <Link to="/tools/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Account After Loss</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Close accounts of a loved one who passed.</p>
               </Link>

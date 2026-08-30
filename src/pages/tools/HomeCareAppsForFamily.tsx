@@ -180,7 +180,7 @@ export default function HomeCareAppsForFamily() {
                 <p className="font-medium text-base">Tech Buddy Setup</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Pair a parent with a regular helper.</p>
               </Link>
-              <Link to="/tools/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/account-after-loss" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Account After Loss</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Handle accounts after a death.</p>
               </Link>

@@ -1441,7 +1441,7 @@ function AccessibilitySection() {
             <Sparkles className="h-5 w-5 text-primary " />
             <AlertDescription className="text-base leading-relaxed">
               Looking for more help with accessibility across all your devices?{' '}
-              <Link to="/tools/accessibility-hub" className="text-primary underline font-medium">
+              <Link to="/accessibility" className="text-primary underline font-medium">
                 Visit the TekSure Accessibility Hub
               </Link>{' '}
               for vision, hearing, and mobility guides.

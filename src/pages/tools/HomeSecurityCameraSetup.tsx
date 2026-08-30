@@ -1033,14 +1033,14 @@ function DoneScreen({
             <li>Share access with one family member (there&apos;s an &quot;Invite&quot; button in the app settings).</li>
             <li>
               Run a{' '}
-              <Link to="/tools/password-strength-tester" className="text-primary underline font-medium">
+              <Link to="/tools/password-strength" className="text-primary underline font-medium">
                 password strength check
               </Link>{' '}
               on your camera account password.
             </li>
             <li>
               Test your Wi-Fi at the camera with our{' '}
-              <Link to="/tools/wifi-speed-doctor" className="text-primary underline font-medium">
+              <Link to="/tools/wifi-speed" className="text-primary underline font-medium">
                 Wi-Fi Speed Doctor
               </Link>.
             </li>
@@ -1517,7 +1517,7 @@ export default function HomeSecurityCameraSetup() {
                     <li>Turn on <strong>two-factor authentication (2FA)</strong> — yes, it&apos;s one extra step, and yes, it stops 99% of attacks.</li>
                     <li>
                       Check your password strength with our{' '}
-                      <Link to="/tools/password-strength-tester" className="text-primary underline font-medium">
+                      <Link to="/tools/password-strength" className="text-primary underline font-medium">
                         Password Strength Tester
                       </Link>.
                     </li>
@@ -1628,7 +1628,7 @@ export default function HomeSecurityCameraSetup() {
                   <Wifi className="w-6 h-6 text-primary shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">
-                      <Link to="/tools/wifi-speed-doctor" className="hover:underline">Wi-Fi Speed Doctor</Link>
+                      <Link to="/tools/wifi-speed" className="hover:underline">Wi-Fi Speed Doctor</Link>
                     </h3>
                     <p className="text-base leading-relaxed text-muted-foreground">
                       Check that your Wi-Fi is strong enough where your camera will live. Almost every camera problem starts here.

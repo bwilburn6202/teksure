@@ -465,7 +465,7 @@ const courseStayingSafe: Course = {
       title: 'Lesson 3 — Safe vs unsafe links',
       outcome: 'You can read a URL and spot look-alikes.',
       guideSlug: 'identify-phishing-emails',
-      practice: { label: 'Check a link in the URL Safety tool', path: '/tools/url-safety-check' },
+      practice: { label: 'Check a link in the URL Safety tool', path: '/tools/url-safety-checker' },
       quiz: [
         q(
           'Which URL is really Apple\'s?',
@@ -581,7 +581,7 @@ const courseStayingSafe: Course = {
       title: 'Lesson 7 — Check if you\'ve been in a data leak',
       outcome: 'You know what to do when your email appears in a breach.',
       guideSlug: 'hacked-social-media-recovery',
-      practice: { label: 'Run a Digital Footprint Scan', path: '/tools/digital-footprint' },
+      practice: { label: 'Run a Digital Footprint Scan', path: '/tools/digital-footprint-scanner' },
       quiz: [
         q(
           'Your email shows up in a data breach. First step?',
@@ -743,7 +743,7 @@ const courseStayingSafe: Course = {
       title: 'Lesson 12 — If it already happened',
       outcome: 'You have a clear 5-step playbook if you\'ve been scammed.',
       guideSlug: 'hacked-social-media-recovery',
-      practice: { label: 'Run URL Safety on any link you clicked', path: '/tools/url-safety-check' },
+      practice: { label: 'Run URL Safety on any link you clicked', path: '/tools/url-safety-checker' },
       quiz: [
         q(
           'You gave your bank details to a scammer. First call?',
@@ -1006,7 +1006,7 @@ const coursePasswordMastery: Course = {
       title: 'Lesson 4 — Rotate the weak ones',
       outcome: 'Your top 10 accounts have unique, strong passwords.',
       guideSlug: 'create-strong-password',
-      practice: { label: 'Check your email against leaks', path: '/tools/digital-footprint' },
+      practice: { label: 'Check your email against leaks', path: '/tools/digital-footprint-scanner' },
       quiz: [
         q('Priority order for rotating passwords:', ['Email → Bank → Shopping → Social', 'Random order', 'Shopping first', 'Nothing'], 0, 'Email first — it resets everything else. Then money, then anything that touches personal info.'),
         q('A "good" generated password is…', ['20+ random characters', 'Your birthday', 'password123'], 0, 'Password managers generate 20-char strings. You never type them, so length is free.'),
@@ -1051,7 +1051,7 @@ const coursePasswordMastery: Course = {
       title: 'Lesson 8 — Quarterly audit',
       outcome: 'You have a 15-minute routine every three months to stay secure.',
       guideSlug: 'hacked-social-media-recovery',
-      practice: { label: 'Run a full Digital Footprint Scan', path: '/tools/digital-footprint' },
+      practice: { label: 'Run a full Digital Footprint Scan', path: '/tools/digital-footprint-scanner' },
       quiz: [
         q('Quarterly audit checklist:', ['Run leak check + rotate flagged passwords + review connected apps', 'Nothing', 'Change all passwords'], 0, 'Check breaches, rotate any flagged passwords, and review which third-party apps have access to your email/social.'),
         q('Connected apps list on Google/Apple shows…', ['Every app that can read your email/calendar/photos', 'Ads only', 'Passwords'], 0, 'Over years, you grant access to dozens of apps. Most go unused. Revoke the ones you don\'t recognize.'),
@@ -1222,7 +1222,7 @@ const courseCyber101: Course = {
       title: 'Lesson 2 — OSINT yourself',
       outcome: 'You know what a stranger can find about you in 15 minutes.',
       guideSlug: 'hacked-social-media-recovery',
-      practice: { label: 'Run a Digital Footprint Scan', path: '/tools/digital-footprint' },
+      practice: { label: 'Run a Digital Footprint Scan', path: '/tools/digital-footprint-scanner' },
       quiz: [
         q('OSINT stands for…', ['Open-source intelligence — info gathered from public sources', 'A program'], 0, 'Not a tool — a method. It\'s how stalkers, scammers, and recruiters research you.'),
         q('Main sources of exposed personal info:', ['Data broker sites, social media, breach dumps', 'Only the dark web'], 0, 'Data brokers (Spokeo, WhitePages) and breach databases are the biggest leaks for most people.'),
@@ -1301,7 +1301,7 @@ const courseCyber101: Course = {
       title: 'Lesson 9 — Analyze a suspicious URL',
       outcome: 'Given any link, you can tell if it\'s safe before clicking.',
       guideSlug: 'identify-phishing-emails',
-      practice: { label: 'Check any link in the URL Safety tool', path: '/tools/url-safety-check' },
+      practice: { label: 'Check any link in the URL Safety tool', path: '/tools/url-safety-checker' },
       quiz: [
         q('The true domain is always…', ['Immediately before the first single slash after https://', 'Anywhere'], 0, 'https://apple.com.login-secure.net/x — the real domain is login-secure.net, not apple.com.'),
         q('Red flags in a URL:', ['IP address instead of name, unusual TLD (.xyz, .support), random subdomains', 'All fine'], 0, 'IP-only addresses, unusual TLDs, and long random subdomains are classic phishing signatures.'),

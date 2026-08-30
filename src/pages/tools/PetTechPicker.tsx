@@ -314,7 +314,7 @@ export default function PetTechPicker() {
                 <p className="font-medium text-base">Smart Home Starter</p>
                 <p className="text-sm text-muted-foreground mt-0.5">First steps into connected gadgets.</p>
               </Link>
-              <Link to="/tools/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/grandparent-device-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Grandparent Device Setup</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Phones and tablets made simple.</p>
               </Link>

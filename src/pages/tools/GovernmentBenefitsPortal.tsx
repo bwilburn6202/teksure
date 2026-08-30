@@ -1185,7 +1185,7 @@ export default function GovernmentBenefitsPortal() {
                 <p className="text-base leading-relaxed text-muted-foreground">
                   Test your portal passwords for strength.
                 </p>
-                <Link to="/tools/password-strength-tester" className="text-primary underline font-medium text-base">
+                <Link to="/tools/password-strength" className="text-primary underline font-medium text-base">
                   Open tool →
                 </Link>
               </CardContent>

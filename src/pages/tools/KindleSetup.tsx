@@ -225,7 +225,7 @@ export default function KindleSetup() {
                 <p className="font-medium text-base">Podcast Starter</p>
                 <p className="text-sm text-muted-foreground mt-0.5">For audiobooks-by-another-name.</p>
               </Link>
-              <Link to="/tools/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
+              <Link to="/low-vision-setup" className="p-3 rounded-lg border border-border hover:border-primary/50 hover:bg-primary/5 transition-all">
                 <p className="font-medium text-base">Low-Vision Setup</p>
                 <p className="text-sm text-muted-foreground mt-0.5">Make any device easier to read.</p>
               </Link>

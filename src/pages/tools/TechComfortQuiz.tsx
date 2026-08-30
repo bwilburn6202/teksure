@@ -152,7 +152,7 @@ const guidesByLevel: Record<Level, { heading: string; emoji: string; message: st
       "You've got the basics down — nice work! Now it's time to level up your skills. These guides will help you get more done, stay safer online, and feel confident with everyday tech tasks.",
     guides: [
       { title: 'Password Manager Guide', description: 'Stop reusing passwords — set up a secure password manager in minutes.', path: '/tools/password-manager', emoji: '' },
-      { title: 'Meeting Setup Helper', description: 'Join Zoom, FaceTime, and other video calls without the stress.', path: '/tools/meeting-setup-helper', emoji: '' },
+      { title: 'Meeting Setup Helper', description: 'Join Zoom, FaceTime, and other video calls without the stress.', path: '/tools/meeting-setup', emoji: '' },
       { title: 'App Recommender', description: 'Find the best apps for your device and needs — personalized picks.', path: '/tools/app-recommender', emoji: '' },
       { title: 'Phishing Scanner', description: 'Learn to spot fake emails and messages before they trick you.', path: '/tools/phishing-scanner', emoji: '' },
       { title: 'Backup Wizard', description: "Make sure your photos, contacts, and files are backed up — so you never lose what matters.", path: '/tools/backup-wizard', emoji: '' },
