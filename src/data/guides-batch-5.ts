@@ -2,45 +2,7 @@
 import type { Guide } from './guides';
 
 export const guidesBatch5: Guide[] = [
-  {
-    slug: 'what-to-do-phone-stolen',
-    canonicalSlug: 'what-to-do-if-phone-lost-or-stolen-2026',
-    title: 'What to Do If Your Phone Is Lost or Stolen',
-    excerpt: 'Act fast to protect your accounts, lock your device remotely, and prevent anyone from accessing your personal information.',
-    category: 'safety-guides',
-    tags: ['phone', 'stolen', 'lost', 'security', 'find my phone'],
-    thumbnailEmoji: '',
-    difficulty: 'Beginner' as const,
-    readTime: '6 min',
-    videoUrl: 'https://www.youtube.com/embed/27opg4HVzW8',
-    publishedAt: '2026-04-14',
-    body: `Losing your phone — or having it stolen — is stressful. But there are steps you can take right now to protect your personal information, lock your device remotely, and prevent anyone from accessing your accounts. Acting quickly makes a big difference.
-
-**The most important thing: you have a window of time.** Most phone thieves right away try to access email, banking apps, and photos. The steps below will lock them out.
-
-**Step 1: Use another device to locate your phone.** If you have an iPhone, go to icloud.com/find on any computer or tablet and sign in with your Apple ID. If you have an Android, go to android.com/find and sign in with your Google account. You'll see a map showing where your phone is (if it's still on).
-
-**Step 2: Lock your phone remotely.** On the same "Find My" or "Find My Device" website, choose "Mark as Lost" (iPhone) or "Lock" (Android). This locks the screen with a PIN and shows a message (like your name and a callback number) on the lock screen.
-
-**Step 3: Change your most important passwords.** From a computer or tablet, change the password on your email account first — because your email is used to reset every other password. Then change your banking app password and Apple ID or Google account password.
-
-**Step 4: Contact your phone carrier.** Call your carrier (AT&T, Verizon, T-Mobile, etc.) and tell them your phone was stolen. They can suspend your service so the thief can't make calls on your account or use your data plan. They can also flag your phone's unique ID (called an IMEI) so it can't be activated on another account.
-
-**Step 5: File a police report.** If the phone was stolen, file a report with your local police department. You'll need the report for your insurance claim. Note your phone's IMEI number, which you can find on your original box or in your carrier's account portal.
-
-**Step 6: If you can't recover the phone, erase it.** On icloud.com/find or android.com/find, select "Erase Device." This permanently wipes all your data. Do this only if you're sure you won't get the phone back — erasing is permanent.
-
-**Quick Tip:** Write down your phone's IMEI number now (before anything happens) and keep it somewhere safe. You can find it in Settings → About Phone, or printed on the original box.`,
-    steps: [
-      { title: 'Locate your phone remotely', content: `On a computer, go to icloud.com/find (iPhone) or android.com/find (Android). Sign in and see your phone's last known location on a map.` },
-      { title: 'Lock the screen remotely', content: 'Click "Mark as Lost" (iPhone) or "Lock Device" (Android). This prevents anyone from getting past the lock screen without your PIN.' },
-      { title: 'Change your email password immediately', content: 'On a computer, change your Gmail, Outlook, or Apple Mail password. Your email controls access to all your other accounts — this is the most critical step.' },
-      { title: 'Call your phone carrier to suspend service', content: `Call the number on the back of your carrier's card (or their website) and tell them your phone was lost or stolen. They can suspend service so the thief can't use your plan.` },
-      { title: 'File a police report', content: 'Call your local non-emergency police line and report the theft. Ask for a case number for your insurance claim.' },
-      { title: `Erase the device if you won't get it back`, content: `If you're sure the phone is gone, select "Erase" on the Find My website. This permanently deletes all data so no one can access your photos, apps, or messages.` },
-    ],
-  },
-  {
+    {
     slug: 'how-to-use-google-lens',
     title: 'How to Use Google Lens to Identify Anything with Your Camera',
     excerpt: 'Google Lens lets you point your camera at text, plants, animals, or products and instantly find out what they are — no typing needed.',

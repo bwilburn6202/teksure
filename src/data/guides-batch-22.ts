@@ -439,44 +439,7 @@ export const guidesBatch22: Guide[] = [
     ],
   },
 
-  {
-    slug: 'iphone-home-screen-organize',
-    canonicalSlug: 'how-to-organize-your-iphone-home-screen-2026',
-    title: 'How to Organize Your iPhone Home Screen',
-    excerpt: 'Move apps around, create folders to group similar apps, remove clutter, and set up your iPhone home screen so your most-used apps are always within reach.',
-    category: 'tips-tricks',
-    tags: ['iphone home screen', 'organize apps', 'app folder', 'iphone tips', 'home screen'],
-    readTime: '5 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-19',
-    difficulty: 'Beginner',
-    body: `A cluttered iPhone home screen makes it harder to find what you need. If you have dozens of apps scattered across multiple pages, taking two minutes to organize them can make your phone feel much more manageable.\n\nOn iPhone, you can move apps anywhere you like, create folders to group similar apps (like putting all health apps in one folder and all photos apps in another), and move rarely-used apps to later pages or to the App Library (a hidden organized list of all your apps).\n\nThis guide shows you how to enter the editing mode that lets you move and organize everything, and gives you a simple approach to keeping things neat.`,
-    steps: [
-      {
-        title: 'Enter jiggle mode to move apps',
-        content: 'Press and hold any app icon on your home screen for about 1 second until the apps start wiggling (jiggle mode). Small "X" marks will appear on apps. Now you can drag any app to a new position by pressing and holding it and dragging it where you want.',
-        tip: 'Quick Tip: To exit jiggle mode without changing anything, tap "Done" in the top right corner, or press the side button.',
-      },
-      {
-        title: 'Move your most-used apps to the Dock',
-        content: 'The Dock is the row of apps at the bottom of your screen. It appears on every home screen page. You can have up to 4 apps in the Dock. While in jiggle mode, drag your most-used apps down to the Dock. Most people keep Phone, Messages, Safari, and Mail there — or substitute your own most-used apps.',
-      },
-      {
-        title: 'Create a folder to group similar apps',
-        content: 'In jiggle mode, drag one app on top of another app. A folder appears automatically containing both apps. iPhone may name it automatically (like "Health & Fitness") — tap the folder name to rename it. You can drag more apps into the folder by dropping them on the folder icon. Good folder ideas: "Health," "News," "Shopping," "Travel," "Photos."',
-      },
-      {
-        title: 'Remove rarely-used apps from the home screen',
-        content: `Apps you almost never open don't need to take up prime home screen real estate. In jiggle mode, tap the "X" on an app you want to remove from the home screen. Choose "Remove from Home Screen" (this doesn't delete the app — it moves it to the App Library). You can still find it by swiping right to the App Library.`,
-        warning: 'If you choose "Delete App" instead of "Remove from Home Screen," it will be deleted entirely. Be careful — "Remove from Home Screen" keeps the app installed but hidden from the main home screen.',
-      },
-      {
-        title: 'Rearrange home screen pages',
-        content: `In jiggle mode, tap and hold the small dots at the bottom of the screen that represent your pages. You'll see thumbnails of all your home screen pages. Drag to reorder them. Tap the checkmark under any page to hide it (uncheck means it won't show — apps go to App Library instead).`,
-      },
-    ],
-  },
-
+  
   {
     slug: 'autocorrect-settings-iphone',
     title: 'How to Fix Autocorrect and Keyboard Settings on iPhone',

@@ -1,27 +1,7 @@
 import { Guide } from './guides';
 
 export const guidesBatch170: Guide[] = [
-  {
-    slug: "how-to-share-location-iphone-family",
-    title: "How to share your location with family on iPhone",
-    excerpt: "Let your loved ones see where you are on iPhone using Find My. A clear, step-by-step guide for seniors.",
-    body: "Sharing your location with family on iPhone gives everyone peace of mind. Your spouse, children, or grandchildren can see where you are on a map, which helps when you are traveling, going to appointments, or running errands. The Find My app is built into every iPhone. And it lets you choose who can see your location and for how long. You stay in full control. You can stop sharing at any time.\n\nThis guide walks you through turning on location sharing, adding a family member, and choosing how long to share. The whole process takes about three minutes. You will need your iPhone unlocked, an internet connection, and the phone number or Apple ID email of the person you want to share with.\n\nWhy this matters: if you ever fall, get lost, or have car trouble, family can find you fast. It also saves you the trouble of texting your address when you arrive somewhere. Once it is set up, it works in the background.\n\nA quick note on privacy: only the people you pick can see your location. Apple does not share it with anyone else. You will see a small arrow icon at the top of your screen now and then, which means an app checked your location. That is normal.\n\nIf you ever want to stop, open the Find My app, tap the person's name, and tap Stop Sharing My Location. You can also pause sharing for one hour, until the end of the day, or forever. The choice is yours.\n\nFollow the steps below in order. If you get stuck, ask the family member you are sharing with to try the same steps on their phone so you can compare.",
-    category: "phone-guides",
-    tags: ["iPhone", "Find My", "location", "family", "safety"],
-    thumbnailEmoji: "📍",
-    difficulty: "Beginner",
-    readTime: "5 min",
-    publishedAt: "2026-05-08",
-    lastVerifiedAt: "2026-05-08",
-    steps: [
-      { title: "Open the Find My app", content: "Find the green app with a radar circle on it. It is named Find My. If you cannot see it, swipe down on the home screen and type \"Find My\" in the search bar at the top." },
-      { title: "Tap the People tab", content: "At the bottom of the screen, tap People. This shows everyone who is already sharing with you. Then tap the blue Share My Location button or the plus sign at the top." },
-      { title: "Pick the person", content: "Type the name, phone number, or Apple ID email of your family member. Tap Send. Your iPhone will reach out to their device with your invitation." },
-      { title: "Choose how long to share", content: "Pick Share for One Hour, Share Until End of Day, or Share Indefinitely. For family, Share Indefinitely works well. Tap OK to finish." },
-      { title: "Ask them to share back", content: "Tap the person's name in Find My and tap Ask To Follow Location. Once they accept, you will see them on your map too." }
-    ]
-  },
-  {
+    {
     slug: "how-to-share-location-google-maps-android",
     title: "How to share your location on Google Maps (Android)",
     excerpt: "Send your live location to family on Android using Google Maps. Step-by-step instructions for seniors.",

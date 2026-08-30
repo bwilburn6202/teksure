@@ -747,60 +747,7 @@ Common pitfall: if your headphones were already paired to another phone or table
     sourceUrl: 'https://support.apple.com/guide/iphone/pair-a-bluetooth-accessory-iph3c50f191e/ios',
   },
 
-  {
-    slug: `better-phone-photos-guide`,
-    canonicalSlug: 'how-to-take-better-phone-photos-2026',
-    title: 'How to Take Better Photos With Your Phone',
-    excerpt: 'Simple, senior-friendly photo tips — lighting, framing, and a few built-in features that make every picture look nicer.',
-    category: 'tips-tricks',
-    tags: ['photos', 'camera', 'iphone', 'android'],
-    readTime: '7 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-21',
-    difficulty: 'Beginner',
-    body: `You do not need an expensive camera to take nice photos. The phone in your pocket can take pictures that look as good as what a professional camera took ten years ago — if you pay attention to a few simple things. The biggest differences between a snapshot and a picture your grandkids will want printed are light, steadiness, and taking a moment to frame the shot.
-
-Light is the single most important thing. A face lit by a window in the morning looks soft and flattering. A face lit by a bright overhead light looks harsh. Try to put the sun or window behind you as the photographer — not behind the person you are photographing, which makes them a dark silhouette. Outdoors on a cloudy day is the best light of all because clouds spread the sun into a giant softbox.
-
-Steadiness is the second biggest thing. When you press the shutter, the phone is still recording for a split second. If you move, everything blurs. Hold the phone with both hands, brace your elbows against your body, breathe out, then press. Better yet, rest the phone on a table, a railing, or use a small tripod.
-
-Framing is about what is in the picture. Before pressing the button, look at all four edges of the screen. Is there a trash can in the corner? A telephone pole growing out of your grandson's head? Move a step left or right to clean it up. The "rule of thirds" also helps: imagine a tic-tac-toe grid on the screen and put the important thing where two lines cross, not dead center.
-
-A few built-in features make a huge difference. Portrait Mode (on newer iPhones and Androids) blurs the background behind a person, making them look like a professional portrait. Night Mode brightens dark rooms automatically. Live Photos (iPhone) and Motion Photos (Android) record a second or two of video, which you can later choose a better still frame from.`,
-    steps: [
-      {
-        title: 'Clean the camera lens',
-        content: 'Use a soft cloth — a T-shirt works — to wipe the small glass circle on the back of your phone. Oil from your fingers lives there and makes every picture look foggy. This 5-second step is the single biggest quick improvement.',
-      },
-      {
-        title: 'Put the light behind you, not the subject',
-        content: 'Stand so the window or sun is at your back, shining on the face of whoever you are photographing. If the sun is behind them, their face comes out dark. Outdoors on an overcast day is the most flattering light.',
-      },
-      {
-        title: 'Tap the screen where you want to focus',
-        content: 'Before taking the picture, tap on the person\'s face on the screen. A yellow square appears and the phone adjusts focus and brightness for that spot. The picture comes out much sharper.',
-      },
-      {
-        title: 'Hold the phone with both hands and brace',
-        content: 'Use both hands on the phone. Tuck your elbows against your ribs. Take a breath and let it out before pressing the shutter. If you can, lean against a wall or rest the phone on a table.',
-      },
-      {
-        title: 'Try Portrait Mode for people and pets',
-        content: 'In the Camera app, swipe across the bottom row of modes until you see Portrait. Point at a person or pet about 3 to 8 feet away. The background turns softly blurry — a professional look. Press the shutter.',
-      },
-      {
-        title: 'Use the grid to frame your shot',
-        content: 'Turn on the gridlines in your Camera settings (iPhone: Settings > Camera > Grid; Android: inside the Camera app\'s gear icon). Put your subject where the grid lines cross. Pictures look balanced instead of dead-center.',
-      },
-      {
-        title: 'Take a few shots and pick the best later',
-        content: 'Take 3 to 5 of the same scene, not just one. Little differences — a blink, a smile, a head turn — make a big difference in which picture you will love. Delete the rest in your Photos app.',
-      },
-    ],
-    sourceName: 'Apple Support — Take photos with your iPhone',
-    sourceUrl: 'https://support.apple.com/guide/iphone/take-photos-iph3b0a3e8e7/ios',
-  },
-
+  
   {
     slug: `share-photos-text-email-guide`,
     title: 'How to Share Photos by Text Message or Email',
@@ -1013,60 +960,7 @@ The controls look the same on every device. A microphone icon at the bottom to m
     sourceUrl: 'https://support.google.com/meet/answer/9302870',
   },
 
-  {
-    slug: `siri-iphone-guide`,
-    canonicalSlug: 'how-to-use-siri-on-iphone-2026',
-    title: 'How to Use Siri on Your iPhone',
-    excerpt: 'Ask Siri to call, text, set reminders, and answer questions hands-free — here is how to get started and what to say.',
-    category: 'tips-tricks',
-    tags: ['siri', 'iphone', 'voice assistant', 'apple'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-21',
-    difficulty: 'Beginner',
-    body: `Siri is Apple's voice assistant, built into every iPhone and iPad. You can ask Siri to call people, send text messages, set alarms and timers, check the weather, play music, find directions, and answer questions — all without tapping anything on the screen. This is especially helpful when your hands are full or when fine motor control is tricky.
-
-You can wake Siri up two ways. The hands-free way is to say "Hey Siri" or (on newer iPhones) just "Siri" out loud, and wait for the little animated swirl to appear at the bottom of the screen. The hands-on way is to press and hold the side button on the right edge of the iPhone until Siri appears.
-
-The first time you set up your iPhone, you are asked to train Siri by saying a few phrases so she recognizes your voice. If you skipped this, you can turn it on later in Settings > Siri & Search > Listen for "Hey Siri." Training takes about 2 minutes.
-
-Siri works best with simple, direct commands. "Call Mary." "Set a timer for 10 minutes." "What's the weather tomorrow?" "Remind me to take my pills at 8 PM." Longer, complicated sentences sometimes confuse her. If Siri does not understand, the screen shows what she thought you said. You can correct it by tapping and fixing the text.
-
-Siri can also read your text messages and emails out loud when you have a Bluetooth headset in or are connected to your car. This makes catching up on messages while driving safer and easier. Ask "Read my latest messages" and she reads them to you, then asks if you want to reply.`,
-    steps: [
-      {
-        title: 'Turn on "Hey Siri" if it is off',
-        content: 'Open the Settings app. Scroll down to Siri & Search. Tap "Listen for" and pick "Hey Siri" or "Siri." Go through the short training (say a few phrases when asked). This takes about 2 minutes.',
-      },
-      {
-        title: 'Wake Siri up by voice',
-        content: 'Say "Hey Siri" out loud. A glowing swirl appears at the bottom of the screen. When you see it, speak your request. Siri listens, processes, and responds with a spoken answer.',
-      },
-      {
-        title: 'Wake Siri with the side button',
-        content: 'If your room is noisy or you do not want to speak the wake word, press and hold the side button on the right edge of the iPhone for about 1 second. Siri appears the same way.',
-      },
-      {
-        title: 'Make a hands-free call',
-        content: 'Say "Hey Siri, call Bob." If you have more than one Bob in contacts, Siri asks which. Say "Mobile" or "Home." The call starts right away. Say "Hey Siri, hang up" at the end.',
-      },
-      {
-        title: 'Send a text message',
-        content: 'Say "Hey Siri, text Sarah I\'m running 10 minutes late." Siri shows the message, reads it back, and asks "Ready to send it?" Say Yes. If something is wrong, say "Change it" and she re-listens.',
-      },
-      {
-        title: 'Set timers, alarms, and reminders',
-        content: 'Say "Hey Siri, set a timer for 25 minutes" or "Set an alarm for 7 AM tomorrow" or "Remind me to take my heart pills at 8 PM every day." All three work without ever unlocking the phone.',
-      },
-      {
-        title: 'Ask questions',
-        content: 'Siri can answer "What\'s the weather today?" "What time does the pharmacy open?" "How many tablespoons in a cup?" and "Who was president in 1965?" She reads the answer out loud and shows details on screen.',
-      },
-    ],
-    sourceName: 'Apple Support — Use Siri on your iPhone',
-    sourceUrl: 'https://support.apple.com/guide/iphone/use-siri-iph3d3eb845c/ios',
-  },
-
+  
   {
     slug: `google-assistant-basics-guide`,
     title: 'How to Use Google Assistant on Your Phone',

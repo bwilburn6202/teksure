@@ -8652,15 +8652,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Review permissions on Android', content: `Go to Settings > Privacy > Permission Manager. Tap a permission type (Camera, Location, Microphone) to see which apps have access. Change any app to "Don't allow" or "Ask every time" if it does not need that permission.` },
     { title: 'Permissions to watch carefully', content: 'Location: Only maps, weather, and ride-sharing apps truly need this. Set others to "Never" or "While Using." Camera & Microphone: Only apps you actively use for photos, video calls, or voice notes. Contacts: Very few apps need access to your contacts. If a flashlight app asks for contacts, that is a red flag.', warning: 'If an app stops working after you remove a permission, you can always grant it again. Start restrictive and loosen only if needed.' },
   ] },
-  { slug: 'clear-phone-storage',
-    canonicalSlug: 'phone-storage-full-how-to-free-up-space-2026', title: 'How to Free Up Space When Your Phone Says "Storage Full"', excerpt: 'Quick steps to reclaim storage space on any phone without losing important files.', category: 'phone-guides', tags: ['storage', 'iphone', 'android', 'beginner'], readTime: '4 min', thumbnailEmoji: '💾', publishedAt: '2026-04-06', difficulty: 'Beginner', steps: [
-    { title: 'Check what is using your storage', content: 'iPhone: Settings > General > iPhone Storage. Android: Settings > Storage. Both show a breakdown of what is taking up space — apps, photos, messages, and system files. Look for the biggest categories first.' },
-    { title: 'Delete old photos and videos', content: 'Photos and especially videos are usually the biggest space hogs. Open your Photos app, go to Albums > Videos, and delete any you no longer need. Then empty the "Recently Deleted" folder (iPhone) or Trash (Android) — deleted photos still take up space for 30 days.', tip: 'Before deleting photos, back them up to Google Photos or iCloud first. Then you can delete them from your phone knowing they are safely stored in the cloud.' },
-    { title: 'Remove apps you do not use', content: 'iPhone: Settings > General > iPhone Storage > tap an app > Delete App. Android: Settings > Apps > tap an app > Uninstall. Focus on large apps and games you have not opened in months.' },
-    { title: 'Clear message attachments', content: 'Text messages with photos and videos can use gigabytes of space. iPhone: Settings > General > iPhone Storage > Messages > Review Large Attachments. Delete old photos and videos from conversations. Android: Open Messages > tap a conversation > tap the contact name > Media > delete old items.' },
-    { title: 'Use cloud storage going forward', content: 'To prevent this from happening again, enable cloud photo backup: iPhone: Settings > [your name] > iCloud > Photos > On. Android: Google Photos app > tap profile > Photos settings > Backup > On. Once backed up, you can safely delete photos from your phone.' },
-  ] },
-  { slug: 'use-do-not-disturb', title: 'How to Set Up Do Not Disturb on Your Phone', excerpt: 'Silence notifications at night or during important moments without missing emergency calls.', category: 'phone-guides', tags: ['do-not-disturb', 'notifications', 'iphone', 'android', 'beginner'], readTime: '3 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
+    { slug: 'use-do-not-disturb', title: 'How to Set Up Do Not Disturb on Your Phone', excerpt: 'Silence notifications at night or during important moments without missing emergency calls.', category: 'phone-guides', tags: ['do-not-disturb', 'notifications', 'iphone', 'android', 'beginner'], readTime: '3 min', thumbnailEmoji: '🌙', publishedAt: '2026-04-07', difficulty: 'Beginner', steps: [
     { title: 'Turn on Do Not Disturb manually', content: 'iPhone: Open Control Center (swipe down from top-right) and tap the crescent moon icon. Android: Swipe down from the top and tap "Do Not Disturb." This silences all notifications, calls, and alerts until you turn it off.' },
     { title: 'Schedule Do Not Disturb', content: 'iPhone: Settings > Focus > Do Not Disturb > Set a Schedule. Choose times like 10 PM to 7 AM. Android: Settings > Sound > Do Not Disturb > Schedules. Set "Sleeping" to your bedtime hours. Your phone will automatically go silent at night and wake up in the morning.' },
     { title: 'Allow important calls through', content: 'You probably still want emergency calls to ring through. iPhone: Settings > Focus > Do Not Disturb > People > Allow Calls From > Favorites (or Everyone). Android: Settings > Sound > Do Not Disturb > People > Calls > Starred contacts. Add important people to your Favorites or Starred contacts.', tip: 'Most phones also allow repeated callers through — if someone calls twice within 3 minutes, the second call will ring. This catches genuine emergencies.' },
@@ -8849,13 +8841,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
     { title: 'Android', content: 'Swipe down twice > tap Do Not Disturb.' },
     { title: 'Allow important calls', content: 'Allow calls from Favorites to come through for emergencies.' },
   ] },
-    { slug: 'phone-hotspot',
-    canonicalSlug: 'how-to-use-your-phone-as-a-wifi-hotspot-2026', title: 'How to Use Your Phone as a Wi-Fi Hotspot', excerpt: 'Share your phone internet with a laptop or tablet.', category: 'phone-guides', tags: ['phone', 'hotspot', 'wifi'], readTime: '4 min', thumbnailEmoji: '📡', publishedAt: '2026-04-02', difficulty: 'Intermediate', steps: [
-    { title: 'iPhone', content: 'Settings > Personal Hotspot > Allow Others to Join.' },
-    { title: 'Android', content: 'Settings > Network > Hotspot & Tethering > Wi-Fi Hotspot.' },
-    { title: 'Connect device', content: 'On your laptop, find your phone in Wi-Fi settings and connect using the password shown.' },
-  ] },
-  { slug: 'phone-increase-text-size', title: 'How to Make Text Bigger on Your Phone', excerpt: 'Increase text size so everything is easier to read.', category: 'phone-guides', tags: ['phone', 'accessibility', 'text-size'], readTime: '4 min', thumbnailEmoji: '🔍', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
+      { slug: 'phone-increase-text-size', title: 'How to Make Text Bigger on Your Phone', excerpt: 'Increase text size so everything is easier to read.', category: 'phone-guides', tags: ['phone', 'accessibility', 'text-size'], readTime: '4 min', thumbnailEmoji: '🔍', publishedAt: '2026-04-02', difficulty: 'Beginner', steps: [
     { title: 'iPhone', content: 'Settings > Display & Brightness > Text Size. Drag slider right.' },
     { title: 'Android', content: 'Settings > Display > Font Size. Move slider to increase.' },
     { title: 'Bold text', content: 'iPhone: Settings > Display > Bold Text. Makes everything thicker and easier to read.' },
@@ -11701,26 +11687,7 @@ The strongest option is to turn the Play Store off completely: Settings → Apps
       { title: 'Books return automatically', content: 'You never have to worry about late fees. Libby automatically returns books when the lending period ends. You can also return them early if you finish before the due date.' },
     ]
   },
-  {
-    slug: 'use-goodrx-save-prescriptions',
-    canonicalSlug: 'how-to-use-goodrx-save-on-prescriptions',
-    title: 'How to Use GoodRx to Save on Prescriptions',
-    excerpt: 'Find lower prices on your prescription medications using the free GoodRx app.',
-    category: 'app-guides',
-    tags: ['goodrx', 'prescriptions', 'savings', 'pharmacy', 'health'],
-    readTime: '4 min',
-    thumbnailEmoji: '💊',
-    publishedAt: '2026-04-02',
-    difficulty: 'Beginner',
-    steps: [
-      { title: 'Download GoodRx', content: 'Search for "GoodRx" in the App Store or Google Play Store. Download it for free. You do not need insurance to use it.' },
-      { title: 'Search for your medication', content: 'Type the name of your prescription medication in the search bar. GoodRx will show you the price at different pharmacies near you, like CVS, Walgreens, Walmart, and Costco.' },
-      { title: 'Compare prices', content: 'GoodRx shows you the price at each pharmacy so you can pick the cheapest one. Prices can vary a lot between pharmacies — sometimes by $50 or more for the same medication.', tip: 'Prices change regularly. Check GoodRx each time you refill a prescription to make sure you are getting the best deal.' },
-      { title: 'Get your coupon', content: 'Tap on the pharmacy with the best price. GoodRx will show you a coupon with a discount code. You can show this coupon on your phone screen at the pharmacy counter.' },
-      { title: 'Use the coupon at the pharmacy', content: 'At the pharmacy, show the GoodRx coupon on your phone to the pharmacist when picking up your prescription. They will apply the discount. You can use GoodRx even if you have insurance — just compare to see which price is lower.', warning: 'GoodRx is not insurance. It is a discount program. Always ask your pharmacist to compare the GoodRx price with your insurance price to see which is cheaper.' },
-    ]
-  },
-  {
+    {
     slug: 'use-alltrails-hiking',
     title: 'How to Use the AllTrails App for Hiking',
     excerpt: 'Find hiking trails near you, read reviews, and navigate trails with the AllTrails app.',

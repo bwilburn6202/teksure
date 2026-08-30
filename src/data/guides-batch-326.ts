@@ -150,43 +150,7 @@ export const guidesBatch326: Guide[] = [
       },
     ],
   },
-  {
-    slug: "check-if-your-email-was-in-a-data-breach",
-    title: "How to Check If Your Email Was Exposed in a Data Breach",
-    excerpt: "Use free, reputable tools to check whether your email address has appeared in a known data breach, and what to do if it has.",
-    category: "online-privacy",
-    tags: ["data breach", "email security", "password safety", "identity protection"],
-    readTime: "6 min",
-    thumbnailEmoji: "🔓",
-    publishedAt: "2026-07-20",
-    lastVerifiedAt: "2026-07-20",
-    difficulty: "Beginner",
-    body: "Data breaches happen when a company's customer database is hacked or leaked, sometimes exposing email addresses, passwords, and other personal details for millions of users at once. Because many companies you've used online over the years have had breaches at some point, it's worth checking whether any of your own accounts were part of one. So you know to change passwords that may be compromised.\n\nHave I Been Pwned is a widely trusted, free website run by a security researcher that lets you type in your email address to see which known breaches, if any, included it. It doesn't show your actual password — only which breached services had your email address in their records — and it doesn't require creating an account or entering a password to use.\n\nIf you discover your email was part of a breach, the most important response is to change the password for that specific service, and to change it everywhere else too if you had reused that same password anywhere else, since reused passwords are one of the most common ways accounts get broken into. Source: haveibeenpwned.com and consumer.ftc.gov/articles/what-do-if-your-personal-information-exposed-data-breach.",
-    steps: [
-      {
-        title: "Go to a trusted, free breach-checking site",
-        content: "Open a browser and go to haveibeenpwned.com, a well-known and free tool that checks whether your email address has appeared in a known data breach.",
-      },
-      {
-        title: "Enter your email address to check",
-        content: "Type your email address into the search box on the homepage and press enter. The site will show a list of any known breaches that included your email address, along with brief details about each one.",
-      },
-      {
-        title: "Change passwords for any breached accounts",
-        content: "For each account listed, go to that company's website and change your password to something new and unique. Avoid reusing a password you use anywhere else.",
-        tip: "Use a password manager to generate and remember strong, unique passwords for every account, so a single breach never puts multiple accounts at risk.",
-      },
-      {
-        title: "Turn on two-factor authentication where possible",
-        content: "For any breached account, also turn on two-factor authentication if the service offers it. This adds a second step, like a text code, so a stolen password alone isn't enough to break in.",
-      },
-      {
-        title: "Set up free breach notifications going forward",
-        content: "On Have I Been Pwned, click 'Notify me' and enter your email to receive a free alert automatically if it ever appears in a future breach. So you don't have to remember to check manually again.",
-      },
-    ],
-  },
-  {
+    {
     slug: "remove-duplicate-photos-windows-11",
     title: "How to Find and Remove Duplicate Photos on Windows 11",
     excerpt: "Free up storage space on your Windows 11 computer by finding and safely deleting duplicate photos using the built-in Photos app.",

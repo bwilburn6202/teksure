@@ -1505,37 +1505,7 @@ During a call, you can switch between front and back cameras, mute your micropho
     ],
   },
 
-  {
-    slug: 'use-facebook-marketplace-safely',
-    canonicalSlug: 'how-to-use-facebook-marketplace-safely-2026',
-    title: 'How to Use Facebook Marketplace Safely',
-    excerpt: 'Buy and sell items locally on Facebook Marketplace — with tips to avoid scams and stay safe meeting strangers.',
-    category: 'communication' as any,
-    tags: ['Facebook', 'Marketplace', 'buying', 'selling', 'safety'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Facebook Marketplace is a free way to buy and sell items locally — furniture, electronics, cars, clothing, and more. It is built into the Facebook app and shows listings from people in your area. You message sellers directly and arrange to meet in person.
-
-To browse: open the Facebook app and tap the Marketplace icon (storefront icon) at the bottom or top of the screen. Browse categories or search for specific items. Filter by location, price range, and condition.
-
-To sell: tap "Create new listing" → choose a category → add photos, a title, price, description, and your location. Your listing appears to people in your area. Respond promptly to messages from potential buyers.
-
-Safety rules for buying: always meet in a public place (police station parking lots are ideal — many have designated "Safe Exchange Zones"). Bring a friend. Never send payment before seeing the item in person. If a deal sounds too good to be true, it probably is. Never share personal financial information.
-
-Safety rules for selling: do not invite strangers to your home. Meet in public. Accept cash or use Facebook's built-in checkout for shipped items. Be wary of anyone who offers more than your asking price or wants to pay with a cashier's check.
-
-Check the buyer or seller's Facebook profile. Established profiles with friends, photos, and posting history are more trustworthy than brand-new profiles with no activity.`,
-    steps: [
-      { title: 'Open Marketplace', content: 'In the Facebook app, tap the Marketplace icon (storefront). Browse listings or search for specific items.' },
-      { title: 'Filter your search', content: 'Use filters for location, price range, condition (new/used), and category to narrow results.' },
-      { title: 'Message the seller', content: 'Tap "Message" on a listing to ask questions or arrange a meeting. Be specific about when and where to meet.' },
-      { title: 'Meet in a safe public place', content: 'Always meet at a police station parking lot, coffee shop, or other well-lit public location. Bring a friend.' },
-      { title: 'Check profiles before dealing', content: `Review the buyer or seller's Facebook profile. Established accounts with history are more trustworthy than brand-new empty profiles.` },
-    ],
-  },
-
+  
   {
     slug: 'set-up-group-chat-phone',
     title: 'How to Set Up a Group Chat on iPhone or Android',
@@ -3400,40 +3370,7 @@ Google Maps also works offline — handy for areas with poor cell service. Befor
     ],
   },
 
-  {
-    slug: 'use-uber-lyft-first-time',
-    canonicalSlug: 'use-uber-lyft-first-time-seniors',
-    title: 'How to Use Uber or Lyft for the First Time',
-    excerpt: 'Request a ride with Uber or Lyft — from downloading the app to getting picked up and arriving safely.',
-    category: 'app-guides' as any,
-    tags: ['Uber', 'Lyft', 'rideshare', 'transportation', 'ride'],
-    readTime: '6 min',
-    thumbnailEmoji: '',
-    publishedAt: '2026-04-15',
-    difficulty: 'Beginner',
-    body: `Uber and Lyft are ride-hailing apps that let you request a car and driver to take you somewhere — like a taxi. But you request and pay for it through your phone. Both apps work very similarly, so once you know one, you know the other.
-
-To get started, download the Uber or Lyft app from the App Store (iPhone) or Google Play Store (Android). Create an account with your name, phone number, and email address. You will also need to add a payment method: a credit card, debit card, or connect a service like PayPal or Apple Pay. The app charges automatically — you never need cash.
-
-When you open the app, it uses your phone's location to know where you are. Type where you want to go in the "Where to?" field. The app shows you ride options with estimated prices and arrival times. Common options include: standard rides (UberX or Lyft), shared rides (cheaper but you may share with other passengers), and larger vehicles (UberXL or Lyft XL for groups).
-
-Tap the ride type you want and then tap "Request" or "Confirm." The app matches you with a nearby driver and shows their name, photo, car make, model, color, and license plate number. You will see their estimated arrival time on the map.
-
-When the driver is close, go outside to your pickup location. Verify the car matches what the app shows — check the license plate number. Many riders also confirm by asking the driver "Who are you here for?" to make sure they get in the right car.
-
-During the ride, the app shows your route in real time. You can share your trip status with a friend or family member using the "Share trip" feature. They can follow your ride live on a map.
-
-When you arrive, you do not need to do anything — the fare is charged to your payment method automatically. After the trip, the app asks you to rate your driver (1 to 5 stars) and leave an optional tip.`,
-    steps: [
-      { title: 'Download the app and create an account', content: 'Get Uber or Lyft from the App Store or Google Play. Sign up with your phone number, email, and name. Add a credit card, debit card, or other payment method.' },
-      { title: 'Enter your destination', content: 'Open the app and type where you want to go in the "Where to?" field. The app shows ride options with estimated prices and arrival times.' },
-      { title: 'Choose your ride type and request', content: 'Select a ride type (standard, shared, or larger vehicle). Review the estimated price, then tap "Request" or "Confirm Ride."' },
-      { title: 'Wait for your driver', content: 'The app matches you with a driver and shows their name, photo, car details, and estimated arrival time. Go outside when they are close.' },
-      { title: 'Verify the car and get in', content: 'Check that the car make, model, color, and license plate match what the app shows. Ask "Who are you picking up?" to confirm before getting in.' },
-      { title: 'Arrive and rate your driver', content: 'The fare charges automatically when you arrive. Rate your driver (1 to 5 stars) and add an optional tip. The receipt is emailed to you.' },
-    ],
-  },
-
+  
   {
     slug: 'use-amazon-shop-online-safely',
     title: 'How to Use Amazon to Shop Online Safely',

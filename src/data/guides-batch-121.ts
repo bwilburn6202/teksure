@@ -4,62 +4,7 @@
 import type { Guide } from './guides';
 
 export const guidesBatch121: Guide[] = [
-  {
-    slug: 'how-to-set-up-online-banking',
-    canonicalSlug: 'online-banking-setup-guide',
-    title: 'How to Set Up Online Banking for the First Time',
-    excerpt: 'A step-by-step walkthrough for creating your bank\'s online account so you can check your balance and pay bills from home.',
-    category: 'online-banking',
-    tags: ['online banking', 'bank account', 'setup', 'beginners'],
-    readTime: '7 min',
-    thumbnailEmoji: '🏦',
-    publishedAt: '2026-05-03',
-    lastVerifiedAt: '2026-05-03',
-    difficulty: 'Beginner',
-    body: `Online banking lets you check your account balance, pay bills, review transactions, and transfer money — all from your phone, tablet, or computer, without driving to a branch. The vast majority of US banks offer free online access to every account holder.
-
-Setting it up takes about 15 minutes and only has to be done once. After that, logging in takes seconds.
-
-Before you start, gather two things: your bank account number (found on a check or your last paper statement) and the debit card or ATM card tied to that account. You will also need access to your email address or mobile phone, because your bank will send a verification code to confirm it is really you.
-
-Every bank's website or app looks slightly different, but the process is almost always the same: visit the bank's official website or download the bank's official app, click "Enroll" or "Sign Up," enter your account information, create a username and password, and verify your identity with a code your bank sends you.
-
-A few safety reminders: always go directly to your bank's website by typing the address yourself (for example, chase.com or wellsfargo.com) rather than clicking a link in an email. The real enrollment page will start with https:// — the "s" stands for secure. Never share your password with anyone, including people who claim to be from the bank.
-
-If you get stuck at any point, call the phone number printed on the back of your debit card. A bank representative can walk you through each screen over the phone.
-
-(Source: FDIC, fdic.gov/resources/consumers/money-smart)`,
-    steps: [
-      {
-        title: 'Gather your account information',
-        content: 'Find your bank account number and routing number. Both appear on the bottom of a personal check: the routing number is the first 9 digits on the left, and your account number follows it. You can also call your bank or check your last paper statement.',
-        tip: 'Quick Tip: If you do not have checks, the last four digits of your debit card are not your full account number — call the bank\'s customer service line to get the full number.',
-      },
-      {
-        title: 'Go to your bank\'s official website',
-        content: 'Open a browser and type your bank\'s web address directly into the address bar at the top. For example: bankofamerica.com, chase.com, or usbank.com. Do not search for it in Google and click an ad — go directly to the address you know.',
-        warning: 'Watch out for look-alike websites with small typos like "chasse.com" or "bankofamerica-login.com." Your real bank\'s address is printed on your statement or on the back of your card.',
-      },
-      {
-        title: 'Click "Enroll" or "Sign Up for Online Banking"',
-        content: 'Look for a button or link that says Enroll, Register, Sign Up, or Set Up Online Banking. It is usually near the login box. Click it and follow the prompts. The bank will ask for your account number, Social Security Number (last 4 digits or full, depending on the bank), and your date of birth to confirm your identity.',
-      },
-      {
-        title: 'Create your username and password',
-        content: 'Choose a username that is not your full name or email address — something only you would know. For the password, use at least 12 characters mixing letters, numbers, and a symbol. Write it down and store it somewhere safe at home, not on a sticky note on your computer.',
-        tip: 'Quick Tip: A password like "Sunrise!2026BlueSky" is strong and much easier to remember than a string of random characters.',
-      },
-      {
-        title: 'Verify your identity with a code',
-        content: 'Your bank will send a 6-digit code to your phone number or email address on file. Check your texts or email, type that code into the website within a few minutes, and click Confirm. This step proves to the bank that you — not a stranger — are setting up the account.',
-      },
-      {
-        title: 'Log in and explore your account',
-        content: 'Once enrolled, log in with your new username and password. You should see your account balance, recent transactions, and menu options for paying bills, transferring money, and viewing statements. Take a few minutes to click around and get familiar.',
-      },
-    ],
-  },
-
+  
   {
     slug: 'understanding-fdic-insurance',
     title: 'What Is FDIC Insurance and How Does It Protect You?',

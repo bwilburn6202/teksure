@@ -59,7 +59,7 @@ const DeviceCompare          = lazy(() => import("./pages/tools/DeviceCompare"))
 const KeyboardShortcuts      = lazy(() => import("./pages/tools/KeyboardShortcuts"));
 const EmailTemplates         = lazy(() => import("./pages/EmailTemplates"));
 const ScamAlerts             = lazy(() => import("./pages/ScamAlerts"));
-const ErrorDecoder           = lazy(() => import("./pages/ErrorDecoder"));
+const ErrorDecoder           = lazy(() => import("./pages/tools/ErrorDecoder"));
 const Tips                   = lazy(() => import("./pages/Tips"));
 const QuickReference         = lazy(() => import("./pages/tools/QuickReference"));
 const Troubleshooter         = lazy(() => import("./pages/tools/Troubleshooter"));

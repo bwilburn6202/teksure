@@ -371,53 +371,7 @@ Before you leave, take a few minutes to make sure your important accounts are se
       },
     ],
   },
-  {
-    slug: `google-translate-phone-guide`,
-    canonicalSlug: 'how-to-use-google-translate-on-your-phone-2026',
-    title: `How to Use Google Translate on Your Phone`,
-    excerpt: `Google Translate can translate text, signs, menus, and spoken words in real time using your phone's camera and microphone — here is how.`,
-    category: `app-guides`,
-    tags: [`google translate`, `translation`, `travel`, `language`, `camera translate`, `app`],
-    readTime: `6 min`,
-    thumbnailEmoji: ``,
-    publishedAt: `2026-04-20`,
-    difficulty: `Beginner`,
-    body: `Google Translate is a free app available for both iPhone and Android that can translate text between over 130 languages. For anyone who travels, lives in a multilingual community, or has family members who speak a different language, it is an incredibly practical tool that has improved a lot in recent years.
-
-The most impressive feature is the camera translation. You point your phone's camera at a sign, menu, label, or document, and the app translates the text in real time right on your screen. The foreign words seem to disappear and be replaced with the translation in your own language. This works particularly well for restaurant menus, street signs, and product labels when traveling. You do not even need to take a photo — the translation happens live as you hold your camera up.
-
-Google Translate also lets you type text and get a translation, translate your own speech, and have a real-time two-way conversation with someone who speaks a different language. The conversation mode is especially useful. You both speak into the same phone. And it translates back and forth between you automatically. This has made it possible for many people to communicate in medical settings, at stores, or with new neighbors even with no shared language.
-
-For travel, one of the best features is offline translation. You can download language packs for countries you plan to visit while you are still connected to Wi-Fi at home. Then, even without any internet connection abroad, Google Translate works for basic text and camera translation. This is invaluable when you are somewhere with limited or expensive cellular data.
-
-The app is completely free to download and use. Google does not charge for translations. You do not need a Google account to use basic features, though signing in allows you to save translations for later reference.`,
-    steps: [
-      {
-        title: `Download Google Translate`,
-        content: `On iPhone, open the App Store. On Android, open the Google Play Store. Search for Google Translate — it is the app with a blue speech bubble icon made by Google. Tap Get or Install. The app is free. Once downloaded, tap Open to launch it.`,
-      },
-      {
-        title: `Translate typed text`,
-        content: `Open Google Translate. At the top, you will see two language boxes — the language you are translating from on the left, and the language you want to translate to on the right. Tap the left language box and choose the original language (or leave it on Detect Language and the app will figure it out). Tap the right box and choose your target language. Tap in the text box and type the words you want to translate. The translation appears right away below.`,
-        tip: `Tap the speaker icon next to either language to hear the translation spoken aloud. This is helpful for learning pronunciation or for communicating with someone who speaks the other language.`,
-      },
-      {
-        title: `Use the camera to translate signs and text`,
-        content: `Open Google Translate and tap the Camera icon (it looks like a camera viewfinder). Allow the app to access your camera when prompted. Point your camera at the text you want to translate — a menu, sign, or label. The app translates the text in real time and overlays the translation on your screen. Tap the screen to take a photo if you want to zoom in or adjust the translation. You can also tap Scan to import a photo you have already taken.`,
-        tip: `The camera translation works best with clear, printed text. Handwriting and decorative fonts can be harder to recognize accurately. For critical information like medical instructions, type out the text manually for a more reliable translation.`,
-      },
-      {
-        title: `Use conversation mode for two-way translation`,
-        content: `Open Google Translate and set the two languages for your conversation — for example, English on the left and Spanish on the right. Tap the Conversation icon (two speech bubbles). Both people speak into the same phone. Tap the microphone on the left to speak English, or the microphone on the right to speak Spanish. The app translates what each person says and plays it back in the other language.`,
-      },
-      {
-        title: `Download languages for offline use`,
-        content: `Open Google Translate and tap the three horizontal lines or your profile picture in the top corner, then tap Offline Languages. Select the language you want to download — for example, Spanish, French, or German. Tap the download icon next to it and wait for the download to complete. You can now use text and camera translation in that language without an internet connection.`,
-        tip: `Download offline language packs before any trip while you are connected to Wi-Fi at home. This makes sure you have translation access even in places with limited cell service or when you want to avoid data charges abroad.`,
-      },
-    ],
-  },
-  {
+    {
     slug: `ibotta-guide`,
     title: `How to Use Ibotta to Earn Cash Back on Groceries`,
     excerpt: `Ibotta is a free app that gives you real cash back on groceries and everyday purchases by scanning your receipt or shopping through the app.`,
