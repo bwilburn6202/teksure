@@ -17,6 +17,7 @@ import { MeshGradientBackground } from "@/components/MeshGradientBackground";
 import { MobileBottomNav } from "@/components/MobileBottomNav";
 import { SearchModal, useSearchModal } from "@/components/SearchModal";
 import { ErrorBoundary } from "@/components/ErrorBoundary";
+import ToolRoute from "@/components/ToolRoute";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { BackToTop } from "@/components/BackToTop";
 import { CookieConsent } from "@/components/CookieConsent";
@@ -52,32 +53,12 @@ const Roadmap                = lazy(() => import("./pages/Roadmap"));
 const SearchResults          = lazy(() => import("./pages/SearchResults"));
 const Tools                  = lazy(() => import("./pages/Tools"));
 const AllToolsDirectory      = lazy(() => import("./pages/AllToolsDirectory"));
-const PasswordStrength       = lazy(() => import("./pages/tools/PasswordStrength"));
-const WifiSpeed              = lazy(() => import("./pages/tools/WifiSpeed"));
-const HealthCheck            = lazy(() => import("./pages/tools/HealthCheck"));
-const DeviceCompare          = lazy(() => import("./pages/tools/DeviceCompare"));
-const KeyboardShortcuts      = lazy(() => import("./pages/tools/KeyboardShortcuts"));
-const EmailTemplates         = lazy(() => import("./pages/EmailTemplates"));
 const ScamAlerts             = lazy(() => import("./pages/ScamAlerts"));
-const ErrorDecoder           = lazy(() => import("./pages/tools/ErrorDecoder"));
 const Tips                   = lazy(() => import("./pages/Tips"));
-const QuickReference         = lazy(() => import("./pages/tools/QuickReference"));
-const Troubleshooter         = lazy(() => import("./pages/tools/Troubleshooter"));
-const DeviceChooser          = lazy(() => import("./pages/tools/DeviceChooser"));
-const BackupWizard           = lazy(() => import("./pages/tools/BackupWizard"));
-const PhotoBackupWizard      = lazy(() => import("./pages/tools/PhotoBackupWizard"));
-const SafetyCourse           = lazy(() => import("./pages/tools/SafetyCourse"));
 const Setup                  = lazy(() => import("./pages/Setup"));
-const AppRecommender         = lazy(() => import("./pages/tools/AppRecommender"));
-const WarrantyChecker        = lazy(() => import("./pages/tools/WarrantyChecker"));
-const EmailDeclutter         = lazy(() => import("./pages/tools/EmailDeclutter"));
-const AccessibilityCheck     = lazy(() => import("./pages/tools/AccessibilityCheck"));
-const CyberScorecard         = lazy(() => import("./pages/tools/CyberScorecard"));
 const Blog                   = lazy(() => import("./pages/Blog"));
 const Webinars               = lazy(() => import("./pages/Webinars"));
 const Ambassadors            = lazy(() => import("./pages/community/Ambassadors"));
-const WifiTroubleshooter     = lazy(() => import("./pages/tools/WifiTroubleshooter"));
-const TechnicianProfile      = lazy(() => import("./pages/TechnicianProfile"));
 const PaymentSuccess         = lazy(() => import("./pages/payment/Success"));
 const PaymentCancel          = lazy(() => import("./pages/payment/Cancel"));
 const ForumIndex             = lazy(() => import("./pages/forum/Index"));
@@ -98,9 +79,6 @@ const MyPath                 = lazy(() => import("./pages/MyPath"));
 const Profile                = lazy(() => import("./pages/Profile"));
 const News                   = lazy(() => import("./pages/News"));
 const NotFound               = lazy(() => import("./pages/NotFound"));
-const TechConfidenceScore    = lazy(() => import("./pages/tools/TechConfidenceScore"));
-const ScamReport             = lazy(() => import("./pages/tools/ScamReport"));
-const GuidePacks             = lazy(() => import("./pages/tools/GuidePacks"));
 const TechGiftGuide          = lazy(() => import("./pages/TechGiftGuide"));
 const TechAnxiety            = lazy(() => import("./pages/TechAnxiety"));
 const LocalHelp              = lazy(() => import("./pages/LocalHelp"));
@@ -109,39 +87,16 @@ const AiTutor                = lazy(() => import("./pages/AiTutor"));
 const ProgressReport         = lazy(() => import("./pages/ProgressReport"));
 const FamilySharing          = lazy(() => import("./pages/FamilySharing"));
 const Caregiver              = lazy(() => import("./pages/Caregiver"));
-const DeviceHealthDashboard  = lazy(() => import("./pages/tools/DeviceHealthDashboard"));
-const BluetoothTroubleshooter = lazy(() => import("./pages/tools/BluetoothTroubleshooter"));
-const BluetoothPairingHelper = lazy(() => import("./pages/tools/BluetoothPairingHelper"));
-const TechHealthQuiz         = lazy(() => import("./pages/tools/TechHealthQuiz"));
-const StorageCleanup         = lazy(() => import("./pages/tools/StorageCleanup"));
-const VpnGuide               = lazy(() => import("./pages/tools/VpnGuide"));
-const AppPermissions         = lazy(() => import("./pages/tools/AppPermissions"));
-const TwoFactorSetup         = lazy(() => import("./pages/tools/TwoFactorSetup"));
 const Notifications          = lazy(() => import("./pages/Notifications"));
-const CyberToolkit           = lazy(() => import("./pages/tools/CyberToolkit"));
-const SecurityOsintTools     = lazy(() => import("./pages/tools/SecurityOsintTools"));
-const PasswordManager        = lazy(() => import("./pages/tools/PasswordManager"));
-const BitwardenSetupSeniors  = lazy(() => import("./pages/tools/BitwardenSetupSeniors"));
-const TwoFactorAuthSetup     = lazy(() => import("./pages/tools/TwoFactorAuthSetup"));
-const AppleIDAccountSecurity = lazy(() => import("./pages/tools/AppleIDAccountSecurity"));
-const GoogleAccountSecurityCheckup = lazy(() => import("./pages/tools/GoogleAccountSecurityCheckup"));
-const HardwareSecurityKeys   = lazy(() => import("./pages/tools/HardwareSecurityKeys"));
-const AccountRecovery        = lazy(() => import("./pages/tools/AccountRecovery"));
-const OsintFramework         = lazy(() => import("./pages/tools/OsintFramework"));
 const Onboarding             = lazy(() => import("./pages/Onboarding"));
 const Explore                = lazy(() => import("./pages/Explore"));
 const Articles               = lazy(() => import("./pages/Articles"));
 const AggregatedArticlePage  = lazy(() => import("./pages/AggregatedArticlePage"));
 const Sources                = lazy(() => import("./pages/Sources"));
 const Videos                 = lazy(() => import("./pages/Videos"));
-const DocBrowser             = lazy(() => import("./pages/tools/DocBrowser"));
 const LlmKnowledgeBase       = lazy(() => import("./pages/LlmKnowledgeBase"));
 
 const EmergencyHelp          = lazy(() => import("./pages/EmergencyHelp"));
-const PrinterTroubleshooter  = lazy(() => import("./pages/tools/PrinterTroubleshooter"));
-const NotificationDecoder    = lazy(() => import("./pages/tools/NotificationDecoder"));
-const SafeCall               = lazy(() => import("./pages/tools/SafeCall"));
-const BillDecoder            = lazy(() => import("./pages/tools/BillDecoder"));
 const KeyboardNavigation     = lazy(() => import("./pages/KeyboardNavigation"));
 const Privacy                = lazy(() => import("./pages/Privacy"));
 const Changelog              = lazy(() => import("./pages/Changelog"));
@@ -150,3315 +105,607 @@ const MemoryDashboard        = lazy(() => import("./pages/MemoryDashboard"));
 const FAQ                    = lazy(() => import("./pages/FAQ"));
 
 // ── New tools (April 2026 expansion) ──
-const ScamSimulator          = lazy(() => import("./pages/tools/ScamSimulator"));
-const PrivacyAudit           = lazy(() => import("./pages/tools/PrivacyAudit"));
-const BrowserSafetyAudit     = lazy(() => import("./pages/tools/BrowserSafetyAudit"));
-const StreamingCalculator    = lazy(() => import("./pages/tools/StreamingCalculator"));
 const SubscriptionCostAggregator = lazy(() => import("./pages/calculators/SubscriptionCostAggregator"));
 const PhoneBillDecoder       = lazy(() => import("./pages/calculators/PhoneBillDecoder"));
-const DataBreachChecker      = lazy(() => import("./pages/tools/DataBreachChecker"));
-const NewPhoneSetup          = lazy(() => import("./pages/tools/NewPhoneSetup"));
-const InternetSpeedAdvisor   = lazy(() => import("./pages/tools/InternetSpeedAdvisor"));
-const DigitalCleanup         = lazy(() => import("./pages/tools/DigitalCleanup"));
-const DeviceSetupChecklist   = lazy(() => import("./pages/tools/DeviceSetupChecklist"));
-const TechGlossaryQuiz       = lazy(() => import("./pages/tools/TechGlossaryQuiz"));
-const RobocallBlocker        = lazy(() => import("./pages/tools/RobocallBlocker"));
-const PhonePlanComparison    = lazy(() => import("./pages/tools/PhonePlanComparison"));
-const DigitalLiteracyAssessment = lazy(() => import("./pages/tools/DigitalLiteracyAssessment"));
-const MeetingSetupHelper     = lazy(() => import("./pages/tools/MeetingSetupHelper"));
-const ContactBackupTool      = lazy(() => import("./pages/tools/ContactBackupTool"));
 const InternetPlanCalculator = lazy(() => import("./pages/calculators/InternetPlanCalculator"));
 
 // ── OSINT.link-inspired tools ──
-const GoogleDorkGenerator    = lazy(() => import("./pages/tools/GoogleDorkGenerator"));
-const DataLeakDashboard      = lazy(() => import("./pages/tools/DataLeakDashboard"));
-const ReverseImageSearch     = lazy(() => import("./pages/tools/ReverseImageSearch"));
-const FactCheckToolkit       = lazy(() => import("./pages/tools/FactCheckToolkit"));
 
 // ── Tools expansion (April 16 2026) ──
-const PasswordGenerator      = lazy(() => import("./pages/tools/PasswordGenerator"));
-const ScreenTimeAnalyzer     = lazy(() => import("./pages/tools/ScreenTimeAnalyzer"));
-const EmailSecurityCheck     = lazy(() => import("./pages/tools/EmailSecurityCheck"));
-const AppCleanup             = lazy(() => import("./pages/tools/AppCleanup"));
-const TechBudgetPlanner      = lazy(() => import("./pages/tools/TechBudgetPlanner"));
-const DeviceAgeChecker       = lazy(() => import("./pages/tools/DeviceAgeChecker"));
-const BatteryHealthCoach     = lazy(() => import("./pages/tools/BatteryHealthCoach"));
-const TwoFactorRecoveryPlan  = lazy(() => import("./pages/tools/TwoFactorRecoveryPlan"));
-const PhoneDiagnosticChecklist = lazy(() => import("./pages/tools/PhoneDiagnosticChecklist"));
-const TechHelpHotlineDirectory = lazy(() => import("./pages/tools/TechHelpHotlineDirectory"));
-const MonthlyTechExpenseAudit  = lazy(() => import("./pages/tools/MonthlyTechExpenseAudit"));
-const PasswordStrengthChecker  = lazy(() => import("./pages/tools/PasswordStrengthChecker"));
-const NewPhoneSetupAssistant   = lazy(() => import("./pages/tools/NewPhoneSetupAssistant"));
-const EmergencyContactCard        = lazy(() => import("./pages/tools/EmergencyContactCard"));
-const SafeOnlineShoppingChecklist = lazy(() => import("./pages/tools/SafeOnlineShoppingChecklist"));
-const ScreenTimeAdvisor = lazy(() => import("./pages/tools/ScreenTimeAdvisor"));
-const DisplaySettingsAdvisor = lazy(() => import("./pages/tools/DisplaySettingsAdvisor"));
-const MonthlyBillTracker = lazy(() => import("./pages/tools/MonthlyBillTracker"));
-const ImportantDocumentsOrganizer = lazy(() => import("./pages/tools/ImportantDocumentsOrganizer"));
-const ScamOrLegitQuiz = lazy(() => import("./pages/tools/ScamOrLegitQuiz"));
-const PhoneIconGuide = lazy(() => import("./pages/tools/PhoneIconGuide"));
-const HomeSafetyWalkthrough = lazy(() => import("./pages/tools/HomeSafetyWalkthrough"));
-const TVSizeCalculator = lazy(() => import("./pages/tools/TVSizeCalculator"));
-const DigitalSpringCleaning = lazy(() => import("./pages/tools/DigitalSpringCleaning"));
-const PhoneGestureGuide = lazy(() => import("./pages/tools/PhoneGestureGuide"));
-const SeniorPhoneCallScripts = lazy(() => import("./pages/tools/SeniorPhoneCallScripts"));
-const AccessibilitySettingsWizard = lazy(() => import("./pages/tools/AccessibilitySettingsWizard"));
-const TechSupportPrepSheet = lazy(() => import("./pages/tools/TechSupportPrepSheet"));
-const InternetFixGuide = lazy(() => import("./pages/tools/InternetFixGuide"));
-const FormalLetterBuilder = lazy(() => import("./pages/tools/FormalLetterBuilder"));
-const PasswordResetGuide = lazy(() => import("./pages/tools/PasswordResetGuide"));
-const SeniorBenefitsFinder = lazy(() => import("./pages/tools/SeniorBenefitsFinder"));
-const MonthlyBudgetWorksheet = lazy(() => import("./pages/tools/MonthlyBudgetWorksheet"));
-const CordCuttingPlanner = lazy(() => import("./pages/tools/CordCuttingPlanner"));
-const HomeInventoryTool = lazy(() => import("./pages/tools/HomeInventoryTool"));
-const FreeTrialTracker = lazy(() => import("./pages/tools/FreeTrialTracker"));
-const MedicationListBuilder = lazy(() => import("./pages/tools/MedicationListBuilder"));
-const NewPhoneSetupChecklist = lazy(() => import("./pages/tools/NewPhoneSetupChecklist"));
-const CharitableDonationTracker = lazy(() => import("./pages/tools/CharitableDonationTracker"));
-const AnnualTechCheckup = lazy(() => import("./pages/tools/AnnualTechCheckup"));
-const PhoneBatteryCareGuide = lazy(() => import("./pages/tools/PhoneBatteryCareGuide"));
-const GroupTextSetupWizard = lazy(() => import("./pages/tools/GroupTextSetupWizard"));
-const GiftCardBalanceTracker = lazy(() => import("./pages/tools/GiftCardBalanceTracker"));
-const BirthdayAnniversaryTracker = lazy(() => import("./pages/tools/BirthdayAnniversaryTracker"));
-const PetCareScheduleTracker = lazy(() => import("./pages/tools/PetCareScheduleTracker"));
-const TripPreparationChecklist = lazy(() => import("./pages/tools/TripPreparationChecklist"));
-const TaxDocumentChecklist = lazy(() => import("./pages/tools/TaxDocumentChecklist"));
-const BookMovieWatchlist = lazy(() => import("./pages/tools/BookMovieWatchlist"));
-const HomeMaintenanceTracker = lazy(() => import("./pages/tools/HomeMaintenanceTracker"));
-const DoctorQuestionPrepBuilder = lazy(() => import("./pages/tools/DoctorQuestionPrepBuilder"));
-const DailyRoutineBuilder = lazy(() => import("./pages/tools/DailyRoutineBuilder"));
-const GroceryListBuilder = lazy(() => import("./pages/tools/GroceryListBuilder"));
-const WeeklyMealPlanner = lazy(() => import("./pages/tools/WeeklyMealPlanner"));
-const WalletMedicalCard = lazy(() => import("./pages/tools/WalletMedicalCard"));
-const DailyHabitTracker = lazy(() => import("./pages/tools/DailyHabitTracker"));
-const WeightLogTracker = lazy(() => import("./pages/tools/WeightLogTracker"));
-const PrintableAddressBook = lazy(() => import("./pages/tools/PrintableAddressBook"));
-const PrescriptionRefillCalendar = lazy(() => import("./pages/tools/PrescriptionRefillCalendar"));
-const LargePrintRecipeCard = lazy(() => import("./pages/tools/LargePrintRecipeCard"));
-const SleepDiary = lazy(() => import("./pages/tools/SleepDiary"));
-const WalkingLog = lazy(() => import("./pages/tools/WalkingLog"));
-const PainSymptomLog = lazy(() => import("./pages/tools/PainSymptomLog"));
-const BillsDueDateCalendar = lazy(() => import("./pages/tools/BillsDueDateCalendar"));
-const CaregiverNotebook = lazy(() => import("./pages/tools/CaregiverNotebook"));
-const SavingsGoalTracker = lazy(() => import("./pages/tools/SavingsGoalTracker"));
-const GlucoseLog = lazy(() => import("./pages/tools/GlucoseLog"));
-const VolunteerHoursTracker = lazy(() => import("./pages/tools/VolunteerHoursTracker"));
-const WaterIntakeTracker = lazy(() => import("./pages/tools/WaterIntakeTracker"));
-const NetWorthSnapshot = lazy(() => import("./pages/tools/NetWorthSnapshot"));
-const TechPurchaseWarrantyTracker = lazy(() => import("./pages/tools/TechPurchaseWarrantyTracker"));
-const GratitudeJournal = lazy(() => import("./pages/tools/GratitudeJournal"));
-const PrintableCheckRegister = lazy(() => import("./pages/tools/PrintableCheckRegister"));
-const TripBudgetCalculator = lazy(() => import("./pages/tools/TripBudgetCalculator"));
-const GardenPlantLog = lazy(() => import("./pages/tools/GardenPlantLog"));
-const GiftIdeasList = lazy(() => import("./pages/tools/GiftIdeasList"));
-const MoodTracker = lazy(() => import("./pages/tools/MoodTracker"));
-const FamilyCheckInLog = lazy(() => import("./pages/tools/FamilyCheckInLog"));
-const TechHelpRequestForm = lazy(() => import("./pages/tools/TechHelpRequestForm"));
-const PhotoCaptionWorkbook = lazy(() => import("./pages/tools/PhotoCaptionWorkbook"));
-const HomeProjectWishlist = lazy(() => import("./pages/tools/HomeProjectWishlist"));
-const TravelJournal = lazy(() => import("./pages/tools/TravelJournal"));
-const LostWalletChecklist = lazy(() => import("./pages/tools/LostWalletChecklist"));
-const BloodPressureLog = lazy(() => import("./pages/tools/BloodPressureLog"));
-const HearingAidCareLog = lazy(() => import("./pages/tools/HearingAidCareLog"));
-const DigitalAccountInventory = lazy(() => import("./pages/tools/DigitalAccountInventory"));
-const TaxReceiptBox = lazy(() => import("./pages/tools/TaxReceiptBox"));
-const TextMessageTemplates = lazy(() => import("./pages/tools/TextMessageTemplates"));
-const FormalLetterTemplates = lazy(() => import("./pages/tools/FormalLetterTemplates"));
-const SeniorMedTimer = lazy(() => import("./pages/tools/SeniorMedTimer"));
-const DividendIncomeTracker = lazy(() => import("./pages/tools/DividendIncomeTracker"));
-const WeeklyChoresChecklist = lazy(() => import("./pages/tools/WeeklyChoresChecklist"));
-const ScamCallLog = lazy(() => import("./pages/tools/ScamCallLog"));
-const TempUnitConverter = lazy(() => import("./pages/tools/TempUnitConverter"));
-const CookingMeasureConverter = lazy(() => import("./pages/tools/CookingMeasureConverter"));
-const AgeCalculator = lazy(() => import("./pages/tools/AgeCalculator"));
-const DistanceConverter = lazy(() => import("./pages/tools/DistanceConverter"));
-const WeightUnitConverter = lazy(() => import("./pages/tools/WeightUnitConverter"));
-const TimeZoneConverter = lazy(() => import("./pages/tools/TimeZoneConverter"));
-const DaysBetweenDates = lazy(() => import("./pages/tools/DaysBetweenDates"));
-const PercentOffCalculator = lazy(() => import("./pages/tools/PercentOffCalculator"));
-const BMICalculator = lazy(() => import("./pages/tools/BMICalculator"));
-const LoanPaymentCalculator = lazy(() => import("./pages/tools/LoanPaymentCalculator"));
-const HourlyToAnnualCalculator = lazy(() => import("./pages/tools/HourlyToAnnualCalculator"));
-const RMDCalculator = lazy(() => import("./pages/tools/RMDCalculator"));
-const TextSizeShowcase = lazy(() => import("./pages/tools/TextSizeShowcase"));
-const CarLoanCompare = lazy(() => import("./pages/tools/CarLoanCompare"));
-const MailAddressLabelMaker = lazy(() => import("./pages/tools/MailAddressLabelMaker"));
-const EmergencyContactQuickDial = lazy(() => import("./pages/tools/EmergencyContactQuickDial"));
-const PrintableMonthlyCalendar = lazy(() => import("./pages/tools/PrintableMonthlyCalendar"));
-const MortgageRefiBreakEven = lazy(() => import("./pages/tools/MortgageRefiBreakEven"));
-const FallPreventionAssessment = lazy(() => import("./pages/tools/FallPreventionAssessment"));
-const CompoundInterestCalculator = lazy(() => import("./pages/tools/CompoundInterestCalculator"));
-const RecipeScaler = lazy(() => import("./pages/tools/RecipeScaler"));
-const SSAClaimingAgeChart = lazy(() => import("./pages/tools/SSAClaimingAgeChart"));
-const DailySpendingLog = lazy(() => import("./pages/tools/DailySpendingLog"));
-const AdvanceDirectiveWorksheet = lazy(() => import("./pages/tools/AdvanceDirectiveWorksheet"));
-const BloodPressureTracker = lazy(() => import("./pages/tools/BloodPressureTracker"));
-const TinnitusTrackingLog = lazy(() => import("./pages/tools/TinnitusTrackingLog"));
-const WidowhoodFirst30Days = lazy(() => import("./pages/tools/WidowhoodFirst30Days"));
-const SoloAgerPlan = lazy(() => import("./pages/tools/SoloAgerPlan"));
-const DementiaCaregiverStressLog = lazy(() => import("./pages/tools/DementiaCaregiverStressLog"));
-const Retirement90DayChecklist = lazy(() => import("./pages/tools/Retirement90DayChecklist"));
-const ScamRecoveryChecklist = lazy(() => import("./pages/tools/ScamRecoveryChecklist"));
-const HoardingDownsizingPlan = lazy(() => import("./pages/tools/HoardingDownsizingPlan"));
-const MemoirPromptGenerator = lazy(() => import("./pages/tools/MemoirPromptGenerator"));
-const AccessibleTravelChecklist = lazy(() => import("./pages/tools/AccessibleTravelChecklist"));
-const SeniorFirearmSafetyChecklist = lazy(() => import("./pages/tools/SeniorFirearmSafetyChecklist"));
-const DivorceAt70Checklist = lazy(() => import("./pages/tools/DivorceAt70Checklist"));
-const ChronicPainDailyLog = lazy(() => import("./pages/tools/ChronicPainDailyLog"));
-const AlcoholModerationTracker = lazy(() => import("./pages/tools/AlcoholModerationTracker"));
-const LowVisionAccessibility = lazy(() => import("./pages/tools/LowVisionAccessibility"));
-const PrescriptionPriceCompare = lazy(() => import("./pages/tools/PrescriptionPriceCompare"));
-const PickleballScoreKeeper = lazy(() => import("./pages/tools/PickleballScoreKeeper"));
-const RVPreTripChecklist = lazy(() => import("./pages/tools/RVPreTripChecklist"));
-const KitchenAdaptationGuide = lazy(() => import("./pages/tools/KitchenAdaptationGuide"));
-const AntiqueSaleTracker = lazy(() => import("./pages/tools/AntiqueSaleTracker"));
-const CataractRecoveryEyeDrops = lazy(() => import("./pages/tools/CataractRecoveryEyeDrops"));
-const StrengthRoutineBuilder = lazy(() => import("./pages/tools/StrengthRoutineBuilder"));
-const BirdSightingLog = lazy(() => import("./pages/tools/BirdSightingLog"));
-const PetCareDailySchedule = lazy(() => import("./pages/tools/PetCareDailySchedule"));
-const ChessGameLog = lazy(() => import("./pages/tools/ChessGameLog"));
-const ChairYogaSequenceBuilder = lazy(() => import("./pages/tools/ChairYogaSequenceBuilder"));
-const SeasonalStarChart = lazy(() => import("./pages/tools/SeasonalStarChart"));
-const KnittingProjectQueue = lazy(() => import("./pages/tools/KnittingProjectQueue"));
-const BowlingScoreCard = lazy(() => import("./pages/tools/BowlingScoreCard"));
-const CasinoBudgetLimit = lazy(() => import("./pages/tools/CasinoBudgetLimit"));
-const DeviceTradeInEstimator = lazy(() => import("./pages/tools/DeviceTradeInEstimator"));
-const ParentalControlsWizard = lazy(() => import("./pages/tools/ParentalControlsWizard"));
-const HomeNetworkMap         = lazy(() => import("./pages/tools/HomeNetworkMap"));
-const WifiPasswordFinder     = lazy(() => import("./pages/tools/WifiPasswordFinder"));
-const TechEmergencyKit       = lazy(() => import("./pages/tools/TechEmergencyKit"));
-const TechBreakReminder      = lazy(() => import("./pages/tools/TechBreakReminder"));
 const WeeklyTips             = lazy(() => import("./pages/WeeklyTips"));
 
 // ── Cycle 1 (April 29 2026) — net-new tools ──
-const PhishingLinkInspector  = lazy(() => import("./pages/tools/PhishingLinkInspector"));
-const TwoFactorCoach         = lazy(() => import("./pages/tools/TwoFactorCoach"));
-const SafeWordKit            = lazy(() => import("./pages/tools/SafeWordKit"));
-const PrintFromPhoneHelper   = lazy(() => import("./pages/tools/PrintFromPhoneHelper"));
-const ChargerCableIdentifier = lazy(() => import("./pages/tools/ChargerCableIdentifier"));
 
 // ── Cycle 2 (April 29 2026) — net-new tools ──
-const QrScamScanner          = lazy(() => import("./pages/tools/QrScamScanner"));
-const BatteryHealthChecker   = lazy(() => import("./pages/tools/BatteryHealthChecker"));
-const AppPermissionsReset    = lazy(() => import("./pages/tools/AppPermissionsReset"));
-const EsimSetupGuide         = lazy(() => import("./pages/tools/EsimSetupGuide"));
-const PhoneHotspotHelper     = lazy(() => import("./pages/tools/PhoneHotspotHelper"));
 
 // ── Cycle 3 (April 29 2026) — net-new tools ──
-const CreditFreezeCoach      = lazy(() => import("./pages/tools/CreditFreezeCoach"));
-const TollTextScamDecoder    = lazy(() => import("./pages/tools/TollTextScamDecoder"));
-const GiftCardScamDefense    = lazy(() => import("./pages/tools/GiftCardScamDefense"));
-const PaymentAppSafety       = lazy(() => import("./pages/tools/PaymentAppSafety"));
-const HotelWifiSafety        = lazy(() => import("./pages/tools/HotelWifiSafety"));
 
 // ── Cycle 4 (April 29 2026) — net-new tools ──
-const BreachResponseChecklist = lazy(() => import("./pages/tools/BreachResponseChecklist"));
-const AirTagStalkingDefense  = lazy(() => import("./pages/tools/AirTagStalkingDefense"));
-const UspsInformedDelivery   = lazy(() => import("./pages/tools/UspsInformedDelivery"));
-const CallerIdVerification   = lazy(() => import("./pages/tools/CallerIdVerification"));
-const PublicChargingSafety   = lazy(() => import("./pages/tools/PublicChargingSafety"));
 
 // ── Cycle 5 (April 29 2026) — health/accessibility ──
-const MedicalIdSetup         = lazy(() => import("./pages/tools/MedicalIdSetup"));
-const LiveCaptionsSetup      = lazy(() => import("./pages/tools/LiveCaptionsSetup"));
-const BigTextDisplayCoach    = lazy(() => import("./pages/tools/BigTextDisplayCoach"));
-const MyChartHelper          = lazy(() => import("./pages/tools/MyChartHelper"));
-const CastPhoneToTv          = lazy(() => import("./pages/tools/CastPhoneToTv"));
 
 // ── Cycle 6 (April 29 2026) — money & daily life ──
-const TapToPaySetup          = lazy(() => import("./pages/tools/TapToPaySetup"));
-const ScreenshotCoach        = lazy(() => import("./pages/tools/ScreenshotCoach"));
-const AirDropHelper          = lazy(() => import("./pages/tools/AirDropHelper"));
-const MarketplaceSafety      = lazy(() => import("./pages/tools/MarketplaceSafety"));
-const BigPrintTipCalculator  = lazy(() => import("./pages/tools/BigPrintTipCalculator"));
 
 // ── Cycle 7 (April 29 2026) — communication & SOS ──
-const GroupTextCoach         = lazy(() => import("./pages/tools/GroupTextCoach"));
-const FocusModeCoach         = lazy(() => import("./pages/tools/FocusModeCoach"));
-const BlockSpamCallsTexts    = lazy(() => import("./pages/tools/BlockSpamCallsTexts"));
-const RemoteHelpSetup        = lazy(() => import("./pages/tools/RemoteHelpSetup"));
-const EmergencySosSetup      = lazy(() => import("./pages/tools/EmergencySosSetup"));
 
 // ── Cycle 8 (April 29 2026) — caregiver / legacy / language ──
-const DigitalLegacySetup     = lazy(() => import("./pages/tools/DigitalLegacySetup"));
-const CaregiverPhoneSetup    = lazy(() => import("./pages/tools/CaregiverPhoneSetup"));
-const PhoneSwitchHelper      = lazy(() => import("./pages/tools/PhoneSwitchHelper"));
-const TranslationAppCoach    = lazy(() => import("./pages/tools/TranslationAppCoach"));
-const CaptionedPhoneService  = lazy(() => import("./pages/tools/CaptionedPhoneService"));
 
 // ── Cycle 9 (April 29 2026) — entertainment & home network ──
-const FreeStreamingServices  = lazy(() => import("./pages/tools/FreeStreamingServices"));
-const AntennaTvSetup         = lazy(() => import("./pages/tools/AntennaTvSetup"));
-const LibraryAppHelper       = lazy(() => import("./pages/tools/LibraryAppHelper"));
-const RideshareCoach         = lazy(() => import("./pages/tools/RideshareCoach"));
-const MeshWifiPicker         = lazy(() => import("./pages/tools/MeshWifiPicker"));
 
 // ── Cycle 10 (April 29 2026) — AI / photos / docs / govt ──
-const AiBeginnerCoach        = lazy(() => import("./pages/tools/AiBeginnerCoach"));
-const OldPhotoRestore        = lazy(() => import("./pages/tools/OldPhotoRestore"));
-const DigitizeOldMedia       = lazy(() => import("./pages/tools/DigitizeOldMedia"));
-const ESignCoach             = lazy(() => import("./pages/tools/ESignCoach"));
-const LoginGovIdMeHelper     = lazy(() => import("./pages/tools/LoginGovIdMeHelper"));
 
 // ── Cycle 11 (April 29 2026) — scams + tablet + basics ──
-const RomanceScamDefense     = lazy(() => import("./pages/tools/RomanceScamDefense"));
-const PigButcheringDefense   = lazy(() => import("./pages/tools/PigButcheringDefense"));
-const CharityVettingTool     = lazy(() => import("./pages/tools/CharityVettingTool"));
-const SeniorTabletPicker     = lazy(() => import("./pages/tools/SeniorTabletPicker"));
-const CopyPasteCoach         = lazy(() => import("./pages/tools/CopyPasteCoach"));
 
 // ── Cycle 12 (April 29 2026) — cleanup, delivery, video calls ──
-const TechSupportPopupDefense = lazy(() => import("./pages/tools/TechSupportPopupDefense"));
-const FreeUpPhoneStorage     = lazy(() => import("./pages/tools/FreeUpPhoneStorage"));
-const ComputerCleanupCoach   = lazy(() => import("./pages/tools/ComputerCleanupCoach"));
-const GroceryDeliveryCoach   = lazy(() => import("./pages/tools/GroceryDeliveryCoach"));
-const VideoCallTipsForFamily = lazy(() => import("./pages/tools/VideoCallTipsForFamily"));
 
 // ── Cycle 13 (April 29 2026) — calendar / news / wellness / weather / pets ──
-const FamilyCalendarSharing  = lazy(() => import("./pages/tools/FamilyCalendarSharing"));
-const NewsAppCurator         = lazy(() => import("./pages/tools/NewsAppCurator"));
-const MeditationAppPicker    = lazy(() => import("./pages/tools/MeditationAppPicker"));
-const WeatherAlertPicker     = lazy(() => import("./pages/tools/WeatherAlertPicker"));
-const PetTechCoach           = lazy(() => import("./pages/tools/PetTechCoach"));
 
 // ── Cycle 14 (April 29 2026) — travel / maps / dining / discounts / Prime ──
-const TravelTechPack         = lazy(() => import("./pages/tools/TravelTechPack"));
-const MapsGpsCoach           = lazy(() => import("./pages/tools/MapsGpsCoach"));
-const RestaurantReservationCoach = lazy(() => import("./pages/tools/RestaurantReservationCoach"));
-const LifeLockForSeniors     = lazy(() => import("./pages/tools/LifeLockForSeniors"));
-const DeleteMeForSeniorPrivacy = lazy(() => import("./pages/tools/DeleteMeForSeniorPrivacy"));
-const RobocallBlockerApps    = lazy(() => import("./pages/tools/RobocallBlockerApps"));
-const EmailScamSpotterTutorial = lazy(() => import("./pages/tools/EmailScamSpotterTutorial"));
-const SocialMediaPrivacyDeep = lazy(() => import("./pages/tools/SocialMediaPrivacyDeep"));
-const SeniorDiscountApps     = lazy(() => import("./pages/tools/SeniorDiscountApps"));
-const AmazonPrimeMastery     = lazy(() => import("./pages/tools/AmazonPrimeMastery"));
 
 // ── Cycle 15 (April 29 2026) — finance & retirement ──
-const BudgetAppPicker        = lazy(() => import("./pages/tools/BudgetAppPicker"));
-const RmdExplainer           = lazy(() => import("./pages/tools/RmdExplainer"));
-const FreeTaxFilingCoach     = lazy(() => import("./pages/tools/FreeTaxFilingCoach"));
-const MedicarePartDPicker    = lazy(() => import("./pages/tools/MedicarePartDPicker"));
-const AutoInsuranceComparison = lazy(() => import("./pages/tools/AutoInsuranceComparison"));
-const HomeInsuranceShoppingSeniors = lazy(() => import("./pages/tools/HomeInsuranceShoppingSeniors"));
-const UmbrellaInsuranceSeniors = lazy(() => import("./pages/tools/UmbrellaInsuranceSeniors"));
-const LongTermCareInsuranceDeep = lazy(() => import("./pages/tools/LongTermCareInsuranceDeep"));
-const PetInsuranceComparison = lazy(() => import("./pages/tools/PetInsuranceComparison"));
-const MedigapVsAdvantage     = lazy(() => import("./pages/tools/MedigapVsAdvantage"));
 
 // ── Cycle 16 (April 29 2026) — music/photos/scan/audio/home screen ──
-const MusicAppPicker         = lazy(() => import("./pages/tools/MusicAppPicker"));
-const PhotoBookCreator       = lazy(() => import("./pages/tools/PhotoBookCreator"));
-const DocumentScannerCoach   = lazy(() => import("./pages/tools/DocumentScannerCoach"));
-const WirelessEarbudPicker   = lazy(() => import("./pages/tools/WirelessEarbudPicker"));
-const HomeScreenOrganizer    = lazy(() => import("./pages/tools/HomeScreenOrganizer"));
 
 // ── Cycle 17 (April 29 2026) — nature/cooking/watch ──
-const PlantIdApps            = lazy(() => import("./pages/tools/PlantIdApps"));
-const BirdIdMerlin           = lazy(() => import("./pages/tools/BirdIdMerlin"));
-const AllTrailsForSeniors    = lazy(() => import("./pages/tools/AllTrailsForSeniors"));
-const NationalParksAppSeniors = lazy(() => import("./pages/tools/NationalParksAppSeniors"));
-const MerlinBirdSongID       = lazy(() => import("./pages/tools/MerlinBirdSongID"));
-const INaturalistAppForSeniors = lazy(() => import("./pages/tools/INaturalistAppForSeniors"));
-const SeniorOutdoorClubsApps = lazy(() => import("./pages/tools/SeniorOutdoorClubsApps"));
-const StargazingApps         = lazy(() => import("./pages/tools/StargazingApps"));
-const RecipeMealApps         = lazy(() => import("./pages/tools/RecipeMealApps"));
-const AppleWatchHealthCoach  = lazy(() => import("./pages/tools/AppleWatchHealthCoach"));
 
 // ── Cycle 18 (April 29 2026) — comms / smart home / health ──
-const WhatsAppCoach          = lazy(() => import("./pages/tools/WhatsAppCoach"));
-const SmartDoorbellPicker    = lazy(() => import("./pages/tools/SmartDoorbellPicker"));
-const CgmCoach               = lazy(() => import("./pages/tools/CgmCoach"));
-const OnlineHearingTest      = lazy(() => import("./pages/tools/OnlineHearingTest"));
-const SkypeReplacement       = lazy(() => import("./pages/tools/SkypeReplacement"));
 
 // ── Cycle 19 (April 29 2026) — brain/genealogy/frame/sound/volunteer ──
-const BrainTrainingApps      = lazy(() => import("./pages/tools/BrainTrainingApps"));
-const GenealogyApps          = lazy(() => import("./pages/tools/GenealogyApps"));
-const FamilySearchFreeApp    = lazy(() => import("./pages/tools/FamilySearchFreeApp"));
-const StoryWorthFamilyMemoir = lazy(() => import("./pages/tools/StoryWorthFamilyMemoir"));
-const MyHeritageDNAComparison = lazy(() => import("./pages/tools/MyHeritageDNAComparison"));
-const RecordFamilyHistoryAudio = lazy(() => import("./pages/tools/RecordFamilyHistoryAudio"));
-const OldPhotoScanningApps   = lazy(() => import("./pages/tools/OldPhotoScanningApps"));
-const DigitalPhotoFramePicker = lazy(() => import("./pages/tools/DigitalPhotoFramePicker"));
-const TvSoundBarPicker       = lazy(() => import("./pages/tools/TvSoundBarPicker"));
-const VolunteerApps          = lazy(() => import("./pages/tools/VolunteerApps"));
-const MasterClassReviewSeniors = lazy(() => import("./pages/tools/MasterClassReviewSeniors"));
-const KhanAcademyForSeniors  = lazy(() => import("./pages/tools/KhanAcademyForSeniors"));
-const OLLILifelongLearning   = lazy(() => import("./pages/tools/OLLILifelongLearning"));
-const AARPCreateSeniorClasses = lazy(() => import("./pages/tools/AARPCreateSeniorClasses"));
-const SeniorVolunteerOpportunities = lazy(() => import("./pages/tools/SeniorVolunteerOpportunities"));
 
 // ── Cycle 20 (April 29 2026) — cloud/passwords/speed/browser/learning ──
-const CloudStoragePicker     = lazy(() => import("./pages/tools/CloudStoragePicker"));
-const PasswordManagerPicker  = lazy(() => import("./pages/tools/PasswordManagerPicker"));
-const InternetSpeedTestCoach = lazy(() => import("./pages/tools/InternetSpeedTestCoach"));
-const BrowserPicker          = lazy(() => import("./pages/tools/BrowserPicker"));
-const OnlineLearningPicker   = lazy(() => import("./pages/tools/OnlineLearningPicker"));
 
 // ── Cycle 21 (April 29 2026) — podcasts/outdoors/repair ──
-const PodcastAppPicker       = lazy(() => import("./pages/tools/PodcastAppPicker"));
-const HikingTrailApps        = lazy(() => import("./pages/tools/HikingTrailApps"));
-const GardeningApps          = lazy(() => import("./pages/tools/GardeningApps"));
-const RvCampingApps          = lazy(() => import("./pages/tools/RvCampingApps"));
-const PhoneRepairCoach       = lazy(() => import("./pages/tools/PhoneRepairCoach"));
 
 // ── Cycle 22 (April 29 2026) — scams/contractors/cell/handyman/jobs ──
-const DoorToDoorScamDefense  = lazy(() => import("./pages/tools/DoorToDoorScamDefense"));
-const ContractorVetting      = lazy(() => import("./pages/tools/ContractorVetting"));
-const SeniorCellPlanPicker   = lazy(() => import("./pages/tools/SeniorCellPlanPicker"));
-const HandymanServiceApps    = lazy(() => import("./pages/tools/HandymanServiceApps"));
-const RetirementJobsApps     = lazy(() => import("./pages/tools/RetirementJobsApps"));
 
 // ── Cycle 23 (April 29 2026) — privacy/banking/travel/brokerage/screen ──
-const FacebookPrivacyCoach   = lazy(() => import("./pages/tools/FacebookPrivacyCoach"));
-const MobileBankingCoach     = lazy(() => import("./pages/tools/MobileBankingCoach"));
-const InternationalTravelSim = lazy(() => import("./pages/tools/InternationalTravelSim"));
-const BrokeragePicker        = lazy(() => import("./pages/tools/BrokeragePicker"));
-const FidelityAppForSeniors  = lazy(() => import("./pages/tools/FidelityAppForSeniors"));
-const VanguardForRetirees    = lazy(() => import("./pages/tools/VanguardForRetirees"));
-const RobinhoodWebullSeniorWarning = lazy(() => import("./pages/tools/RobinhoodWebullSeniorWarning"));
-const SchwabIntelligentPortfolios = lazy(() => import("./pages/tools/SchwabIntelligentPortfolios"));
-const EstateBeneficiaryReview = lazy(() => import("./pages/tools/EstateBeneficiaryReview"));
-const AdultScreenTimeCoach   = lazy(() => import("./pages/tools/AdultScreenTimeCoach"));
 
 // ── Cycle 24 (April 29 2026) — backup/photo-org/medical/bills/journal ──
-const BackupStrategy         = lazy(() => import("./pages/tools/BackupStrategy"));
-const PhotoOrganizationCoach = lazy(() => import("./pages/tools/PhotoOrganizationCoach"));
-const MedicalRecordsOrganizer = lazy(() => import("./pages/tools/MedicalRecordsOrganizer"));
-const BillsPaperlessOrganizer = lazy(() => import("./pages/tools/BillsPaperlessOrganizer"));
-const JournalingApps         = lazy(() => import("./pages/tools/JournalingApps"));
-const DayOneJournalApp       = lazy(() => import("./pages/tools/DayOneJournalApp"));
-const SeniorMemoirWriting    = lazy(() => import("./pages/tools/SeniorMemoirWriting"));
-const GratitudeAppForSeniors = lazy(() => import("./pages/tools/GratitudeAppForSeniors"));
-const AmazonKDPForSeniors    = lazy(() => import("./pages/tools/AmazonKDPForSeniors"));
-const SeniorBookClubsOnline  = lazy(() => import("./pages/tools/SeniorBookClubsOnline"));
 
 // ── Cycle 25 (April 29 2026) — caregiving / accessibility / health ──
-const CaregiverCoordinationApps = lazy(() => import("./pages/tools/CaregiverCoordinationApps"));
-const VoiceControlAccessibility = lazy(() => import("./pages/tools/VoiceControlAccessibility"));
-const MedicalAlertPicker     = lazy(() => import("./pages/tools/MedicalAlertPicker"));
-const TelehealthVisitCoach   = lazy(() => import("./pages/tools/TelehealthVisitCoach"));
-const OnlinePharmacyCoach    = lazy(() => import("./pages/tools/OnlinePharmacyCoach"));
-const AmazonPharmacyForSeniors = lazy(() => import("./pages/tools/AmazonPharmacyForSeniors"));
-const CostPlusDrugsExplained = lazy(() => import("./pages/tools/CostPlusDrugsExplained"));
-const CapsulePharmacyDelivery = lazy(() => import("./pages/tools/CapsulePharmacyDelivery"));
-const PillPackForSeniors     = lazy(() => import("./pages/tools/PillPackForSeniors"));
-const Medicare90DaySupply    = lazy(() => import("./pages/tools/Medicare90DaySupply"));
 
 // ── Cycle 26 (April 29 2026) — kitchen / inventory / privacy / sell / utilities ──
-const SmartCookingTools      = lazy(() => import("./pages/tools/SmartCookingTools"));
-const HomeInventoryApp       = lazy(() => import("./pages/tools/HomeInventoryApp"));
-const HiddenCameraDetector   = lazy(() => import("./pages/tools/HiddenCameraDetector"));
-const SellOnlineCoach        = lazy(() => import("./pages/tools/SellOnlineCoach"));
-const UtilityBillReduction   = lazy(() => import("./pages/tools/UtilityBillReduction"));
 
 // ── Cycle 27 (April 29 2026) — books/reading/ergonomics/notes ──
-const AudiobookAppPicker     = lazy(() => import("./pages/tools/AudiobookAppPicker"));
-const ReadingAppPicker       = lazy(() => import("./pages/tools/ReadingAppPicker"));
-const BookTrackingApps       = lazy(() => import("./pages/tools/BookTrackingApps"));
-const ErgonomicComputerSetup = lazy(() => import("./pages/tools/ErgonomicComputerSetup"));
-const NotesAppPicker         = lazy(() => import("./pages/tools/NotesAppPicker"));
 
 // ── Cycle 28 (April 29 2026) — driving/sleep/power/disaster/grandkids ──
-const DefensiveDrivingCoach  = lazy(() => import("./pages/tools/DefensiveDrivingCoach"));
-const SleepTrackingApps      = lazy(() => import("./pages/tools/SleepTrackingApps"));
-const PowerBankPicker        = lazy(() => import("./pages/tools/PowerBankPicker"));
-const DisasterPrepApps       = lazy(() => import("./pages/tools/DisasterPrepApps"));
-const ChildproofForVisits    = lazy(() => import("./pages/tools/ChildproofForVisits"));
 
 // ── Cycle 29 (April 29 2026) — passkeys/antivirus/recovery/shortcuts/tremors ──
-const PasskeysCoach          = lazy(() => import("./pages/tools/PasskeysCoach"));
-const AntivirusPicker        = lazy(() => import("./pages/tools/AntivirusPicker"));
-const VPNForSeniorsExplained = lazy(() => import("./pages/tools/VPNForSeniorsExplained"));
-const MalwarebytesForSeniors = lazy(() => import("./pages/tools/MalwarebytesForSeniors"));
-const PublicWifiSafetyTutorial = lazy(() => import("./pages/tools/PublicWifiSafetyTutorial"));
-const RouterSecuritySetup    = lazy(() => import("./pages/tools/RouterSecuritySetup"));
-const PhoneSecurityCheckup   = lazy(() => import("./pages/tools/PhoneSecurityCheckup"));
-const AppleGoogleAccountRecovery = lazy(() => import("./pages/tools/AppleGoogleAccountRecovery"));
-const KeyboardShortcutsCheatsheet = lazy(() => import("./pages/tools/KeyboardShortcutsCheatsheet"));
-const TremorPhoneSetup       = lazy(() => import("./pages/tools/TremorPhoneSetup"));
 
 // ── Cycle 30 (April 29 2026) — car/EV/used cars/flights/window mgmt ──
-const CarPlayAndroidAuto     = lazy(() => import("./pages/tools/CarPlayAndroidAuto"));
-const EvChargingApps         = lazy(() => import("./pages/tools/EvChargingApps"));
-const UsedCarResearchApps    = lazy(() => import("./pages/tools/UsedCarResearchApps"));
-const FlightSearchApps       = lazy(() => import("./pages/tools/FlightSearchApps"));
-const WindowManagementCoach  = lazy(() => import("./pages/tools/WindowManagementCoach"));
 
 // ── Cycle 31 (April 29 2026) — diet/meds/exercise/fitness/cognitive ──
-const CalorieTrackingApps    = lazy(() => import("./pages/tools/CalorieTrackingApps"));
-const MedicationReminderApps = lazy(() => import("./pages/tools/MedicationReminderApps"));
-const SeniorExerciseApps     = lazy(() => import("./pages/tools/SeniorExerciseApps"));
-const HomeFitnessSubscriptions = lazy(() => import("./pages/tools/HomeFitnessSubscriptions"));
-const CognitiveSelfTest      = lazy(() => import("./pages/tools/CognitiveSelfTest"));
 
 // ── Cycle 32 (April 29 2026) — homework/tutoring/creative/cameras/docs ──
-const HelpGrandkidsHomework  = lazy(() => import("./pages/tools/HelpGrandkidsHomework"));
-const OnlineTutoringApps     = lazy(() => import("./pages/tools/OnlineTutoringApps"));
-const DrawingPhotoEditingApps = lazy(() => import("./pages/tools/DrawingPhotoEditingApps"));
-const DigitalCameraPicker    = lazy(() => import("./pages/tools/DigitalCameraPicker"));
-const DocumentaryStreaming   = lazy(() => import("./pages/tools/DocumentaryStreaming"));
 
 // ── Cycle 33 (April 29 2026) — vaccines/drugs/symptoms/doctors ──
-const AdultVaccineSchedule   = lazy(() => import("./pages/tools/AdultVaccineSchedule"));
-const DrugInteractionChecker = lazy(() => import("./pages/tools/DrugInteractionChecker"));
-const PillIdentifierApp      = lazy(() => import("./pages/tools/PillIdentifierApp"));
-const SymptomCheckerApps     = lazy(() => import("./pages/tools/SymptomCheckerApps"));
-const FindADoctorApps        = lazy(() => import("./pages/tools/FindADoctorApps"));
 
 // ── Cycle 34 (April 29 2026) — wills/directives/savings/529/notary ──
-const WillEstateOnline       = lazy(() => import("./pages/tools/WillEstateOnline"));
-const AdvanceDirectiveCoach  = lazy(() => import("./pages/tools/AdvanceDirectiveCoach"));
-const HighYieldSavingsAndIBonds = lazy(() => import("./pages/tools/HighYieldSavingsAndIBonds"));
-const CollegeSavingsForGrandkids = lazy(() => import("./pages/tools/CollegeSavingsForGrandkids"));
-const OnlineNotaryCoach      = lazy(() => import("./pages/tools/OnlineNotaryCoach"));
 
 // ── Cycle 35 (April 29 2026) — Social Security/Medicare/LTC/reverse mortgage/pension ──
-const WhenToTakeSocialSecurity = lazy(() => import("./pages/tools/WhenToTakeSocialSecurity"));
-const LongTermCarePlanning   = lazy(() => import("./pages/tools/LongTermCarePlanning"));
-const ReverseMortgageExplained = lazy(() => import("./pages/tools/ReverseMortgageExplained"));
-const PensionLumpSumDecision = lazy(() => import("./pages/tools/PensionLumpSumDecision"));
 
 // ── Cycle 36 (April 29 2026) — funeral/hospice/therapy/widow/downsize ──
-const FuneralPlanningCoach   = lazy(() => import("./pages/tools/FuneralPlanningCoach"));
-const HospicePalliativeCoach = lazy(() => import("./pages/tools/HospicePalliativeCoach"));
-const OnlineTherapyApps      = lazy(() => import("./pages/tools/OnlineTherapyApps"));
-const NewlyWidowedChecklist  = lazy(() => import("./pages/tools/NewlyWidowedChecklist"));
-const SeniorDownsizingCoach  = lazy(() => import("./pages/tools/SeniorDownsizingCoach"));
 
 // ── Cycle 37 (April 29 2026) — smart display/robot vac/health tests/scale/zoom host ──
-const SmartDisplayForGrandparents = lazy(() => import("./pages/tools/SmartDisplayForGrandparents"));
-const RobotVacuumCoach       = lazy(() => import("./pages/tools/RobotVacuumCoach"));
-const AtHomeHealthTests      = lazy(() => import("./pages/tools/AtHomeHealthTests"));
-const SmartScaleBpCuffPicker = lazy(() => import("./pages/tools/SmartScaleBpCuffPicker"));
-const VideoMeetingHostCoach  = lazy(() => import("./pages/tools/VideoMeetingHostCoach"));
 
 // ── Cycle 38 (April 29 2026) — accounts/privacy/search/VA/SSDI ──
-const AppleIdGoogleAccountSetup = lazy(() => import("./pages/tools/AppleIdGoogleAccountSetup"));
-const PrivacyEmailPicker     = lazy(() => import("./pages/tools/PrivacyEmailPicker"));
-const BetterWebSearchCoach   = lazy(() => import("./pages/tools/BetterWebSearchCoach"));
-const VaBenefitsAndApp       = lazy(() => import("./pages/tools/VaBenefitsAndApp"));
-const SsdiVsSsiCoach         = lazy(() => import("./pages/tools/SsdiVsSsiCoach"));
 
 // ── Cycle 39 (April 29 2026) — VPN/encryption/cyber/remote ──
-const VpnPicker              = lazy(() => import("./pages/tools/VpnPicker"));
-const DiskEncryptionCoach    = lazy(() => import("./pages/tools/DiskEncryptionCoach"));
-const CyberInsuranceExplainer = lazy(() => import("./pages/tools/CyberInsuranceExplainer"));
-const UniversalRemotePicker  = lazy(() => import("./pages/tools/UniversalRemotePicker"));
-const LostTvRemoteCoach      = lazy(() => import("./pages/tools/LostTvRemoteCoach"));
-const RokuSetupForSeniors    = lazy(() => import("./pages/tools/RokuSetupForSeniors"));
-const FireTVStickGuide       = lazy(() => import("./pages/tools/FireTVStickGuide"));
-const UniversalRemoteForSeniors = lazy(() => import("./pages/tools/UniversalRemoteForSeniors"));
-const CaptioningCallSeniors  = lazy(() => import("./pages/tools/CaptioningCallSeniors"));
-const SoundbarTVAudioForSeniors = lazy(() => import("./pages/tools/SoundbarTVAudioForSeniors"));
 
 // ── Cycle 40 (April 29 2026) — taxes/SNAP/eldercare/lifeline/HSA-FSA ──
-const SeniorTaxCredits       = lazy(() => import("./pages/tools/SeniorTaxCredits"));
-const SeniorSnapAndFood      = lazy(() => import("./pages/tools/SeniorSnapAndFood"));
-const EldercareLocator       = lazy(() => import("./pages/tools/EldercareLocator"));
-const LifelineInternetCoach  = lazy(() => import("./pages/tools/LifelineInternetCoach"));
-const HsaFsaCoach            = lazy(() => import("./pages/tools/HsaFsaCoach"));
 
 // ── Cycle 41 (April 29 2026) — laptop/phone/grandkid safety/apps/console ──
-const SeniorLaptopPick       = lazy(() => import("./pages/tools/SeniorLaptopPick"));
-const SeniorPhonePick        = lazy(() => import("./pages/tools/SeniorPhonePick"));
-const GrandkidInternetSafety = lazy(() => import("./pages/tools/GrandkidInternetSafety"));
-const AppsGrandkidsUseExplained = lazy(() => import("./pages/tools/AppsGrandkidsUseExplained"));
-const GameConsoleGiftGuide   = lazy(() => import("./pages/tools/GameConsoleGiftGuide"));
 
 // ── Cycle 42 (April 29 2026) — AI/resume/smart home ──
-const AiComparisonCoach      = lazy(() => import("./pages/tools/AiComparisonCoach"));
-const AiImageGenerators      = lazy(() => import("./pages/tools/AiImageGenerators"));
-const ResumeBuilderApps      = lazy(() => import("./pages/tools/ResumeBuilderApps"));
-const SmartHomePlatformPick  = lazy(() => import("./pages/tools/SmartHomePlatformPick"));
-const SmartBulbPicker        = lazy(() => import("./pages/tools/SmartBulbPicker"));
 
 // ── Cycle 43 (April 29 2026) — printer/fax/cam/weather/walk ──
-const SeniorPrinterPicker    = lazy(() => import("./pages/tools/SeniorPrinterPicker"));
-const OnlineFaxCoach         = lazy(() => import("./pages/tools/OnlineFaxCoach"));
-const OutdoorSecurityCamera  = lazy(() => import("./pages/tools/OutdoorSecurityCamera"));
-const HomeWeatherStation     = lazy(() => import("./pages/tools/HomeWeatherStation"));
-const WalkingPadStandingDesk = lazy(() => import("./pages/tools/WalkingPadStandingDesk"));
 
 // ── Cycle 44 (April 29 2026) — car/mileage/subs/dispute/refi ──
-const CarMaintenanceTracker  = lazy(() => import("./pages/tools/CarMaintenanceTracker"));
-const MileageTracker         = lazy(() => import("./pages/tools/MileageTracker"));
-const SubscriptionAuditCoach = lazy(() => import("./pages/tools/SubscriptionAuditCoach"));
-const DisputeChargeCoach     = lazy(() => import("./pages/tools/DisputeChargeCoach"));
-const MortgageRefinanceCoach = lazy(() => import("./pages/tools/MortgageRefinanceCoach"));
 
 // ── Cycle 45 (April 29 2026) — retirement accounts/withdrawal/bonds/index ──
-const RetirementAccountTypes = lazy(() => import("./pages/tools/RetirementAccountTypes"));
-const Plan401kRolloverCoach  = lazy(() => import("./pages/tools/Plan401kRolloverCoach"));
-const SafeWithdrawalRate     = lazy(() => import("./pages/tools/SafeWithdrawalRate"));
-const BondLadderCoach        = lazy(() => import("./pages/tools/BondLadderCoach"));
-const IndexFundCoach         = lazy(() => import("./pages/tools/IndexFundCoach"));
 
 // ── Cycle 46 (April 29 2026) — passport/disposal/erase/photos/in-person ──
-const PassportRenewalOnline  = lazy(() => import("./pages/tools/PassportRenewalOnline"));
-const OldDeviceDisposal      = lazy(() => import("./pages/tools/OldDeviceDisposal"));
-const EraseOldPhone          = lazy(() => import("./pages/tools/EraseOldPhone"));
-const PhotoPrintAndCards     = lazy(() => import("./pages/tools/PhotoPrintAndCards"));
-const InPersonTechHelp       = lazy(() => import("./pages/tools/InPersonTechHelp"));
 
 // ── Cycle 47 (April 29 2026) — dental/vision/deepfake/genealogy/citizen ──
-const DentalInsuranceCoach   = lazy(() => import("./pages/tools/DentalInsuranceCoach"));
-const VisionInsuranceCoach   = lazy(() => import("./pages/tools/VisionInsuranceCoach"));
-const DeepfakeSpotter        = lazy(() => import("./pages/tools/DeepfakeSpotter"));
-const GenealogyDeepDive      = lazy(() => import("./pages/tools/GenealogyDeepDive"));
-const CitizenEmergencyApp    = lazy(() => import("./pages/tools/CitizenEmergencyApp"));
 
 // ── Cycle 48 (April 29 2026) — donate/mail/311/energy/solar ──
-const DonationPickup         = lazy(() => import("./pages/tools/DonationPickup"));
-const UspsMailForwardHold    = lazy(() => import("./pages/tools/UspsMailForwardHold"));
-const Local311Apps           = lazy(() => import("./pages/tools/Local311Apps"));
-const HomeEnergyMonitor      = lazy(() => import("./pages/tools/HomeEnergyMonitor"));
-const SolarPanelDecisionCoach = lazy(() => import("./pages/tools/SolarPanelDecisionCoach"));
 
 // ── Cycle 49 (April 29 2026) — air/smoke/water/vacuum/recalls ──
-const IndoorAirQuality       = lazy(() => import("./pages/tools/IndoorAirQuality"));
-const SmokeCoDetectorMaintenance = lazy(() => import("./pages/tools/SmokeCoDetectorMaintenance"));
-const WaterFilterPicker      = lazy(() => import("./pages/tools/WaterFilterPicker"));
-const SeniorVacuumPicker     = lazy(() => import("./pages/tools/SeniorVacuumPicker"));
-const RecallChecker          = lazy(() => import("./pages/tools/RecallChecker"));
 
 // ── Cycle 50 (April 29 2026) — TV/speakers/vinyl/sports/golf ──
-const SeniorTvBuyingGuide    = lazy(() => import("./pages/tools/SeniorTvBuyingGuide"));
-const BluetoothSpeakerPicker = lazy(() => import("./pages/tools/BluetoothSpeakerPicker"));
-const VinylTurntableCoach    = lazy(() => import("./pages/tools/VinylTurntableCoach"));
-const SportsStreamingPicker  = lazy(() => import("./pages/tools/SportsStreamingPicker"));
-const GolfApps               = lazy(() => import("./pages/tools/GolfApps"));
 
 // ── Cycle 51 (April 29 2026) — fishing/pickleball/games/wine/cocktail ──
-const FishingBoatingApps     = lazy(() => import("./pages/tools/FishingBoatingApps"));
-const PickleballTennisApps   = lazy(() => import("./pages/tools/PickleballTennisApps"));
-const OnlineBoardGames       = lazy(() => import("./pages/tools/OnlineBoardGames"));
-const WineApps               = lazy(() => import("./pages/tools/WineApps"));
-const ChessComForSeniors     = lazy(() => import("./pages/tools/ChessComForSeniors"));
-const VivinoWineApp          = lazy(() => import("./pages/tools/VivinoWineApp"));
-const TriviaAppsForSeniors   = lazy(() => import("./pages/tools/TriviaAppsForSeniors"));
-const AARPGamesForSeniors    = lazy(() => import("./pages/tools/AARPGamesForSeniors"));
-const JeopardyAtHomeApps     = lazy(() => import("./pages/tools/JeopardyAtHomeApps"));
-const CocktailCoffeeApps     = lazy(() => import("./pages/tools/CocktailCoffeeApps"));
 
 // ── Cycle 52 (April 29 2026) — security/thermostat/lock/leak/insurance ──
-const HomeSecuritySystemPick = lazy(() => import("./pages/tools/HomeSecuritySystemPick"));
-const SmartThermostatCoach   = lazy(() => import("./pages/tools/SmartThermostatCoach"));
-const SmartDeadboltPicker    = lazy(() => import("./pages/tools/SmartDeadboltPicker"));
-const WaterLeakDetector      = lazy(() => import("./pages/tools/WaterLeakDetector"));
-const SpecialtyInsuranceCoach = lazy(() => import("./pages/tools/SpecialtyInsuranceCoach"));
 
 // ── Cycle 53 (April 29 2026) — networking ──
-const RuralInternet          = lazy(() => import("./pages/tools/RuralInternet"));
-const CellSignalBooster      = lazy(() => import("./pages/tools/CellSignalBooster"));
-const WifiExtenderVsMesh     = lazy(() => import("./pages/tools/WifiExtenderVsMesh"));
-const HomeMediaServer        = lazy(() => import("./pages/tools/HomeMediaServer"));
-const EthernetCoach          = lazy(() => import("./pages/tools/EthernetCoach"));
 
 // ── Cycle 54 (April 29 2026) — warehouse/advisor/annuity/trust/loyalty ──
-const WarehouseClubPick      = lazy(() => import("./pages/tools/WarehouseClubPick"));
-const FiduciaryAdvisorFinder = lazy(() => import("./pages/tools/FiduciaryAdvisorFinder"));
-const AnnuityWarning         = lazy(() => import("./pages/tools/AnnuityWarning"));
-const TrustVsWillExplainer   = lazy(() => import("./pages/tools/TrustVsWillExplainer"));
-const LoyaltyProgramsCompared = lazy(() => import("./pages/tools/LoyaltyProgramsCompared"));
 
 // ── Cycle 55 (April 29 2026) — faith / disease support ──
-const BibleChristianApps     = lazy(() => import("./pages/tools/BibleChristianApps"));
-const CatholicMassApps       = lazy(() => import("./pages/tools/CatholicMassApps"));
-const YouVersionBibleApp     = lazy(() => import("./pages/tools/YouVersionBibleApp"));
-const HallowPrayerApp        = lazy(() => import("./pages/tools/HallowPrayerApp"));
-const JewishHolidayApps      = lazy(() => import("./pages/tools/JewishHolidayApps"));
-const InsightTimerMeditation = lazy(() => import("./pages/tools/InsightTimerMeditation"));
-const ChurchLiveStreamApps   = lazy(() => import("./pages/tools/ChurchLiveStreamApps"));
-const JewishCalendarApps     = lazy(() => import("./pages/tools/JewishCalendarApps"));
-const IslamicPrayerApps      = lazy(() => import("./pages/tools/IslamicPrayerApps"));
-const DiseaseSupportCommunities = lazy(() => import("./pages/tools/DiseaseSupportCommunities"));
 
 // ── Cycle 56 (April 29 2026) — DIY/garage/lawn/mower/snow ──
-const DiyRepairApps          = lazy(() => import("./pages/tools/DiyRepairApps"));
-const SmartGarageOpener      = lazy(() => import("./pages/tools/SmartGarageOpener"));
-const LawnCareApps           = lazy(() => import("./pages/tools/LawnCareApps"));
-const RoboticMowerPick       = lazy(() => import("./pages/tools/RoboticMowerPick"));
-const SnowBlowerPick         = lazy(() => import("./pages/tools/SnowBlowerPick"));
 
 // ── Cycle 57 (April 29 2026) — pet/birds/chickens/sales ──
-const PetLossGrief           = lazy(() => import("./pages/tools/PetLossGrief"));
-const BirdFeederCam          = lazy(() => import("./pages/tools/BirdFeederCam"));
-const BackyardChickenApps    = lazy(() => import("./pages/tools/BackyardChickenApps"));
-const EstateSaleFinder       = lazy(() => import("./pages/tools/EstateSaleFinder"));
-const YardSaleApps           = lazy(() => import("./pages/tools/YardSaleApps"));
 
 // ── Cycle 58 (April 29 2026) — pencil/email/pipes/generator/grill ──
-const ApplePencilIpadCoach   = lazy(() => import("./pages/tools/ApplePencilIpadCoach"));
-const EmailFoldersRules      = lazy(() => import("./pages/tools/EmailFoldersRules"));
-const FrozenPipesPrevention  = lazy(() => import("./pages/tools/FrozenPipesPrevention"));
-const GeneratorPick          = lazy(() => import("./pages/tools/GeneratorPick"));
-const PelletGrillCoach       = lazy(() => import("./pages/tools/PelletGrillCoach"));
 
 // ── Cycle 59 (April 29 2026) — credit/HELOC/airbnb/windfall ──
-const CreditScoreCoach       = lazy(() => import("./pages/tools/CreditScoreCoach"));
-const CreditRepairScamWarning = lazy(() => import("./pages/tools/CreditRepairScamWarning"));
-const HelocCoach             = lazy(() => import("./pages/tools/HelocCoach"));
-const BecomeAirbnbHost       = lazy(() => import("./pages/tools/BecomeAirbnbHost"));
-const SuddenMoneyChecklist   = lazy(() => import("./pages/tools/SuddenMoneyChecklist"));
 
 // ── Cycle 60 (April 29 2026) — appraisers/auctions/coins/cards/collectibles ──
-const FindAnAppraiser        = lazy(() => import("./pages/tools/FindAnAppraiser"));
-const SellAntiquesAuctions   = lazy(() => import("./pages/tools/SellAntiquesAuctions"));
-const CoinCollectingApps     = lazy(() => import("./pages/tools/CoinCollectingApps"));
-const SportsCardsComics      = lazy(() => import("./pages/tools/SportsCardsComics"));
-const OldCollectiblesReality = lazy(() => import("./pages/tools/OldCollectiblesReality"));
 
 // ── Cycle 61 (April 29 2026) — troubleshooting ──
-const BluetoothPairingTroubleshoot = lazy(() => import("./pages/tools/BluetoothPairingTroubleshoot"));
-const PhoneWontCharge        = lazy(() => import("./pages/tools/PhoneWontCharge"));
-const BatteryDrainFix        = lazy(() => import("./pages/tools/BatteryDrainFix"));
-const InternetDownTroubleshoot = lazy(() => import("./pages/tools/InternetDownTroubleshoot"));
-const AppPhoneFrozenFix      = lazy(() => import("./pages/tools/AppPhoneFrozenFix"));
 
 // ── Cycle 62 (April 29 2026) — pharmacy/bundles/grocery/Apple ──
-const PharmacyRewards        = lazy(() => import("./pages/tools/PharmacyRewards"));
-const AppleWalletForLoyalty  = lazy(() => import("./pages/tools/AppleWalletForLoyalty"));
-const StarbucksAppRewards    = lazy(() => import("./pages/tools/StarbucksAppRewards"));
-const PharmacyAppRewards     = lazy(() => import("./pages/tools/PharmacyAppRewards"));
-const GroceryAppDeepDive     = lazy(() => import("./pages/tools/GroceryAppDeepDive"));
-const GasStationAppRewards   = lazy(() => import("./pages/tools/GasStationAppRewards"));
-const StreamingBundleStrategy = lazy(() => import("./pages/tools/StreamingBundleStrategy"));
-const PauseStreamingRotation = lazy(() => import("./pages/tools/PauseStreamingRotation"));
-const GroceryRewards         = lazy(() => import("./pages/tools/GroceryRewards"));
-const AppleOneBundleCoach    = lazy(() => import("./pages/tools/AppleOneBundleCoach"));
 
 // ── Cycle 63 (April 29 2026) — read-aloud / wifi / relay / pet / coupons ──
-const ReadAloudAnywhere      = lazy(() => import("./pages/tools/ReadAloudAnywhere"));
-const WifiPasswordSharing    = lazy(() => import("./pages/tools/WifiPasswordSharing"));
-const RelayServicesTty       = lazy(() => import("./pages/tools/RelayServicesTty"));
-const PetAdoptionApps        = lazy(() => import("./pages/tools/PetAdoptionApps"));
-const DeepCouponApps         = lazy(() => import("./pages/tools/DeepCouponApps"));
 
 // ── Cycle 64 (April 29 2026) — utility savings + smart-home + food ──
-const ElectricBillCutters    = lazy(() => import("./pages/tools/ElectricBillCutters"));
-const HomeWarrantyReality    = lazy(() => import("./pages/tools/HomeWarrantyReality"));
-const GasPriceApps           = lazy(() => import("./pages/tools/GasPriceApps"));
-const SmartPlugBasics        = lazy(() => import("./pages/tools/SmartPlugBasics"));
-const FreezerInventory       = lazy(() => import("./pages/tools/FreezerInventory"));
 
 // ── Cycle 65 (April 29 2026) — travel + legacy ──
-const TravelInsuranceReality = lazy(() => import("./pages/tools/TravelInsuranceReality"));
-const LuggageTrackerPicks    = lazy(() => import("./pages/tools/LuggageTrackerPicks"));
-const OfflineMapsHowTo       = lazy(() => import("./pages/tools/OfflineMapsHowTo"));
-const DigitalLegacyPlanner   = lazy(() => import("./pages/tools/DigitalLegacyPlanner"));
-const MemorialFacebookGuide  = lazy(() => import("./pages/tools/MemorialFacebookGuide"));
 
 // ── Cycle 66 (April 29 2026) — health tech ──
-const GlucoseMonitorPicks    = lazy(() => import("./pages/tools/GlucoseMonitorPicks"));
-const MedicalAlertCompare    = lazy(() => import("./pages/tools/MedicalAlertCompare"));
-const MedicalGuardianReview  = lazy(() => import("./pages/tools/MedicalGuardianReview"));
-const LifeAlertVsCompetitors = lazy(() => import("./pages/tools/LifeAlertVsCompetitors"));
-const AppleWatchSOSTutorial  = lazy(() => import("./pages/tools/AppleWatchSOSTutorial"));
-const AloeCareCaregivingApp  = lazy(() => import("./pages/tools/AloeCareCaregivingApp"));
-const PhilipsLifelineSenior  = lazy(() => import("./pages/tools/PhilipsLifelineSenior"));
-const TelehealthBasics       = lazy(() => import("./pages/tools/TelehealthBasics"));
-const HearingTestApps        = lazy(() => import("./pages/tools/HearingTestApps"));
-const WellnessRingPicks      = lazy(() => import("./pages/tools/WellnessRingPicks"));
 
 // ── Cycle 67 (April 29 2026) — scam defenses ──
-const GrandparentScamDefense = lazy(() => import("./pages/tools/GrandparentScamDefense"));
-const IrsScamPlaybook        = lazy(() => import("./pages/tools/IrsScamPlaybook"));
-const FakeAmazonCalls        = lazy(() => import("./pages/tools/FakeAmazonCalls"));
-const MedicareScamGuide      = lazy(() => import("./pages/tools/MedicareScamGuide"));
-const PuppyScamGuide         = lazy(() => import("./pages/tools/PuppyScamGuide"));
 
 // ── Cycle 68 (April 29 2026) — phone basics ──
-const BlockNumberHowTo       = lazy(() => import("./pages/tools/BlockNumberHowTo"));
-const EmailOrganizingBasics  = lazy(() => import("./pages/tools/EmailOrganizingBasics"));
-const SilenceUnknownCallers  = lazy(() => import("./pages/tools/SilenceUnknownCallers"));
-const PhoneStorageCleanup    = lazy(() => import("./pages/tools/PhoneStorageCleanup"));
-const ScreenshotHowTo        = lazy(() => import("./pages/tools/ScreenshotHowTo"));
 
 // ── Cycle 69 (April 29 2026) — passwords + accounts ──
-const PasswordManagerCompare = lazy(() => import("./pages/tools/PasswordManagerCompare"));
-const TwoFactorAppPicks      = lazy(() => import("./pages/tools/TwoFactorAppPicks"));
-const PasskeyExplainer       = lazy(() => import("./pages/tools/PasskeyExplainer"));
-const AccountRecoveryPlan    = lazy(() => import("./pages/tools/AccountRecoveryPlan"));
-const FamilyPasswordSharing  = lazy(() => import("./pages/tools/FamilyPasswordSharing"));
 
 // ── Cycle 70 (April 29 2026) — entertainment + connection ──
-const VideoCallGroupTips     = lazy(() => import("./pages/tools/VideoCallGroupTips"));
-const AudiobookApps          = lazy(() => import("./pages/tools/AudiobookApps"));
-const DigitalPhotoFrames     = lazy(() => import("./pages/tools/DigitalPhotoFrames"));
-const RetirementCommunityWifi = lazy(() => import("./pages/tools/RetirementCommunityWifi"));
-const JigsawPuzzleApps       = lazy(() => import("./pages/tools/JigsawPuzzleApps"));
 
 // ── Cycle 71 (April 29 2026) — driving + delivery ──
-const RideshareForSeniors    = lazy(() => import("./pages/tools/RideshareForSeniors"));
-const FoodDeliveryCompare    = lazy(() => import("./pages/tools/FoodDeliveryCompare"));
-const CarRepairFinder        = lazy(() => import("./pages/tools/CarRepairFinder"));
-const EvChargingBasics       = lazy(() => import("./pages/tools/EvChargingBasics"));
-const RoadsideAssistanceApps = lazy(() => import("./pages/tools/RoadsideAssistanceApps"));
-const UberLyftForSeniors     = lazy(() => import("./pages/tools/UberLyftForSeniors"));
-const SeniorParatransitGuide = lazy(() => import("./pages/tools/SeniorParatransitGuide"));
-const SeniorDriverEvaluation = lazy(() => import("./pages/tools/SeniorDriverEvaluation"));
-const CarRentalAppsForSeniors = lazy(() => import("./pages/tools/CarRentalAppsForSeniors"));
-const GasBuddyAppGuide       = lazy(() => import("./pages/tools/GasBuddyAppGuide"));
 
 // ── Cycle 72 (April 29 2026) — kitchen + home tech ──
-const AirFryerBasics         = lazy(() => import("./pages/tools/AirFryerBasics"));
-const RobotVacuumPicks       = lazy(() => import("./pages/tools/RobotVacuumPicks"));
-const SmartDoorbellCompare   = lazy(() => import("./pages/tools/SmartDoorbellCompare"));
-const LeakDetectionSensors   = lazy(() => import("./pages/tools/LeakDetectionSensors"));
-const GarageDoorOpenerSmart  = lazy(() => import("./pages/tools/GarageDoorOpenerSmart"));
 
 // ── Cycle 73 (April 29 2026) — money + banking ──
-const HighYieldSavingsPicks  = lazy(() => import("./pages/tools/HighYieldSavingsPicks"));
-const ZelleVenmoCashApp      = lazy(() => import("./pages/tools/ZelleVenmoCashApp"));
-const FraudAlertSetup        = lazy(() => import("./pages/tools/FraudAlertSetup"));
-const RetirementCalculatorPicks = lazy(() => import("./pages/tools/RetirementCalculatorPicks"));
-const CreditFreezeHowTo      = lazy(() => import("./pages/tools/CreditFreezeHowTo"));
 
 // ── Cycle 74 (April 29 2026) — smart speakers + AI voice ──
-const AlexaRoutinesPrimer    = lazy(() => import("./pages/tools/AlexaRoutinesPrimer"));
-const GoogleHomeBasics       = lazy(() => import("./pages/tools/GoogleHomeBasics"));
-const ChatGptForSeniors      = lazy(() => import("./pages/tools/ChatGptForSeniors"));
-const AppleIntelligenceGuide = lazy(() => import("./pages/tools/AppleIntelligenceGuide"));
-const VoiceShoppingTips      = lazy(() => import("./pages/tools/VoiceShoppingTips"));
 
 // ── Cycle 75 (April 29 2026) — photos + memories ──
-const PhotoBackupCompare     = lazy(() => import("./pages/tools/PhotoBackupCompare"));
-const ScanOldPhotos          = lazy(() => import("./pages/tools/ScanOldPhotos"));
-const FamilyTreeApps         = lazy(() => import("./pages/tools/FamilyTreeApps"));
-const VideoConverterFree     = lazy(() => import("./pages/tools/VideoConverterFree"));
-const PhotoBookServices      = lazy(() => import("./pages/tools/PhotoBookServices"));
 
 // ── Cycle 76 (April 29 2026) — shopping + buying ──
-const AmazonShoppingTips     = lazy(() => import("./pages/tools/AmazonShoppingTips"));
-const CostcoMembershipMath   = lazy(() => import("./pages/tools/CostcoMembershipMath"));
-const OutletDealsApps        = lazy(() => import("./pages/tools/OutletDealsApps"));
-const ReturnsRefundsHowTo    = lazy(() => import("./pages/tools/ReturnsRefundsHowTo"));
-const OnlineThriftStores     = lazy(() => import("./pages/tools/OnlineThriftStores"));
 
 // ── Cycle 77 (April 29 2026) — travel + cruise tech ──
-const CruiseAppGuide         = lazy(() => import("./pages/tools/CruiseAppGuide"));
-const AirlineAppPicks        = lazy(() => import("./pages/tools/AirlineAppPicks"));
-const TsaPrecheckGlobal      = lazy(() => import("./pages/tools/TsaPrecheckGlobal"));
-const PassportPhotoApps      = lazy(() => import("./pages/tools/PassportPhotoApps"));
-const HotelLoyaltyPrograms   = lazy(() => import("./pages/tools/HotelLoyaltyPrograms"));
 
 // ── Cycle 78 (April 29 2026) — estate + insurance ──
-const HomeInventoryApps      = lazy(() => import("./pages/tools/HomeInventoryApps"));
-const WillSoftwareCompare    = lazy(() => import("./pages/tools/WillSoftwareCompare"));
-const EstateExecutorTools    = lazy(() => import("./pages/tools/EstateExecutorTools"));
-const BeneficiaryCheckup     = lazy(() => import("./pages/tools/BeneficiaryCheckup"));
-const FuneralPrearrangement  = lazy(() => import("./pages/tools/FuneralPrearrangement"));
 
 // ── Cycle 79 (April 29 2026) — hobbies + crafts ──
-const KnittingCommunityApps  = lazy(() => import("./pages/tools/KnittingCommunityApps"));
-const BirdIdApps             = lazy(() => import("./pages/tools/BirdIdApps"));
-const RecipeAppPicks         = lazy(() => import("./pages/tools/RecipeAppPicks"));
-const WoodworkingPlans       = lazy(() => import("./pages/tools/WoodworkingPlans"));
-const FishingApps            = lazy(() => import("./pages/tools/FishingApps"));
 
 // ── Cycle 80 (April 29 2026) — caregivers + senior care ──
-const CaregiverApps          = lazy(() => import("./pages/tools/CaregiverApps"));
-const AgingInPlaceTech       = lazy(() => import("./pages/tools/AgingInPlaceTech"));
-const MemoryCareApps         = lazy(() => import("./pages/tools/MemoryCareApps"));
-const ParkinsonsApps         = lazy(() => import("./pages/tools/ParkinsonsApps"));
-const RespiteCareFinders     = lazy(() => import("./pages/tools/RespiteCareFinders"));
 
 // ── Cycle 81 (April 29 2026) — tax + paperwork ──
-const TaxFilingPicks         = lazy(() => import("./pages/tools/TaxFilingPicks"));
-const PropertyTaxAppeal      = lazy(() => import("./pages/tools/PropertyTaxAppeal"));
-const PaperShreddingGuide    = lazy(() => import("./pages/tools/PaperShreddingGuide"));
-const ScannerAppPicks        = lazy(() => import("./pages/tools/ScannerAppPicks"));
-const MedicalRecordsRequest  = lazy(() => import("./pages/tools/MedicalRecordsRequest"));
 
 // ── Cycle 82 (April 29 2026) — accessibility ──
-const MagnifierAppPicks      = lazy(() => import("./pages/tools/MagnifierAppPicks"));
-const IphoneMagnifierTutorial = lazy(() => import("./pages/tools/IphoneMagnifierTutorial"));
-const LiveCaptionsForSeniors = lazy(() => import("./pages/tools/LiveCaptionsForSeniors"));
-const AccessibilityShortcutsIphone = lazy(() => import("./pages/tools/AccessibilityShortcutsIphone"));
-const AndroidAccessibilityFeatures = lazy(() => import("./pages/tools/AndroidAccessibilityFeatures"));
-const EmergencySOSPhones     = lazy(() => import("./pages/tools/EmergencySOSPhones"));
-const ColorBlindTools        = lazy(() => import("./pages/tools/ColorBlindTools"));
-const SnapseedPhotoEditing   = lazy(() => import("./pages/tools/SnapseedPhotoEditing"));
-const IphoneCameraTipsSeniors = lazy(() => import("./pages/tools/IphoneCameraTipsSeniors"));
-const PhotoOrganizingMassive = lazy(() => import("./pages/tools/PhotoOrganizingMassive"));
-const AirDropForSharing      = lazy(() => import("./pages/tools/AirDropForSharing"));
-const GooglePhotosForSeniors = lazy(() => import("./pages/tools/GooglePhotosForSeniors"));
-const OneHandedTyping        = lazy(() => import("./pages/tools/OneHandedTyping"));
-const BrailleDisplays        = lazy(() => import("./pages/tools/BrailleDisplays"));
-const DictationTraining      = lazy(() => import("./pages/tools/DictationTraining"));
 
 // ── Cycle 83 (April 29 2026) — home safety ──
-const WaterShutoffGuide      = lazy(() => import("./pages/tools/WaterShutoffGuide"));
-const FireSafetyChecklist    = lazy(() => import("./pages/tools/FireSafetyChecklist"));
-const GasLeakDetect          = lazy(() => import("./pages/tools/GasLeakDetect"));
-const CarbonMonoxidePicks    = lazy(() => import("./pages/tools/CarbonMonoxidePicks"));
-const EmergencyKitChecklist  = lazy(() => import("./pages/tools/EmergencyKitChecklist"));
 
 // ── Cycle 84 (April 29 2026) — weather + outdoor ──
-const WeatherAppPicks        = lazy(() => import("./pages/tools/WeatherAppPicks"));
-const GardenWeatherTools     = lazy(() => import("./pages/tools/GardenWeatherTools"));
-const HikingGpsApps          = lazy(() => import("./pages/tools/HikingGpsApps"));
-const BackyardSafetyAudit    = lazy(() => import("./pages/tools/BackyardSafetyAudit"));
-const SnowSafetyTech         = lazy(() => import("./pages/tools/SnowSafetyTech"));
 
 // ── Cycle 85 (April 29 2026) — civic + community ──
-const VotingTechHelp         = lazy(() => import("./pages/tools/VotingTechHelp"));
-const NextdoorBasics         = lazy(() => import("./pages/tools/NextdoorBasics"));
-const EbayForSeniorSellers   = lazy(() => import("./pages/tools/EbayForSeniorSellers"));
-const FacebookMarketplaceTips = lazy(() => import("./pages/tools/FacebookMarketplaceTips"));
-const PoshmarkVintageSelling = lazy(() => import("./pages/tools/PoshmarkVintageSelling"));
-const EstateSaleApps         = lazy(() => import("./pages/tools/EstateSaleApps"));
-const SeniorYardSaleStrategy = lazy(() => import("./pages/tools/SeniorYardSaleStrategy"));
-const VolunteerMatchApps     = lazy(() => import("./pages/tools/VolunteerMatchApps"));
-const LocalNewsApps          = lazy(() => import("./pages/tools/LocalNewsApps"));
-const CityOpenDataTools      = lazy(() => import("./pages/tools/CityOpenDataTools"));
 
 // ── Cycle 86 (April 29 2026) — pet tech ──
-const PetCameraPicks         = lazy(() => import("./pages/tools/PetCameraPicks"));
-const PetGpsTrackers         = lazy(() => import("./pages/tools/PetGpsTrackers"));
-const AutoFeederPicks        = lazy(() => import("./pages/tools/AutoFeederPicks"));
-const PetTelevetVisits       = lazy(() => import("./pages/tools/PetTelevetVisits"));
-const OnlinePetPharmacies    = lazy(() => import("./pages/tools/OnlinePetPharmacies"));
 
 // ── Cycle 87 (April 29 2026) — kids/grandkids tech ──
-const ScreenTimeForKids      = lazy(() => import("./pages/tools/ScreenTimeForKids"));
-const KidSafeYouTube         = lazy(() => import("./pages/tools/KidSafeYouTube"));
-const GamingForGrandkids     = lazy(() => import("./pages/tools/GamingForGrandkids"));
-const OnlineLearningKids     = lazy(() => import("./pages/tools/OnlineLearningKids"));
-const AudiobookKids          = lazy(() => import("./pages/tools/AudiobookKids"));
 
 // ── Cycle 88 (April 29 2026) — senior fitness ──
-const ChairYogaApps          = lazy(() => import("./pages/tools/ChairYogaApps"));
-const BalanceExerciseApps    = lazy(() => import("./pages/tools/BalanceExerciseApps"));
-const SwimWorkoutTrackers    = lazy(() => import("./pages/tools/SwimWorkoutTrackers"));
-const SeniorFitnessYouTube   = lazy(() => import("./pages/tools/SeniorFitnessYouTube"));
-const StepCounterCompare     = lazy(() => import("./pages/tools/StepCounterCompare"));
 
 // ── Cycle 89 (April 29 2026) — clinical tech ──
-const TeleDentistry          = lazy(() => import("./pages/tools/TeleDentistry"));
-const EyeExamApps            = lazy(() => import("./pages/tools/EyeExamApps"));
-const HeartTrackerApps       = lazy(() => import("./pages/tools/HeartTrackerApps"));
-const BloodPressureCuffs     = lazy(() => import("./pages/tools/BloodPressureCuffs"));
-const MentalHealthAppsCompare = lazy(() => import("./pages/tools/MentalHealthAppsCompare"));
 
 // ── Cycle 90 (April 29 2026) — faith + community ──
-const ChurchLivestreamSetup  = lazy(() => import("./pages/tools/ChurchLivestreamSetup"));
-const HymnAppPicks           = lazy(() => import("./pages/tools/HymnAppPicks"));
-const BibleAppCompare        = lazy(() => import("./pages/tools/BibleAppCompare"));
-const OnlineGriefSupport     = lazy(() => import("./pages/tools/OnlineGriefSupport"));
-const SeniorPenPalApps       = lazy(() => import("./pages/tools/SeniorPenPalApps"));
 
 // ── Cycle 91 (April 29 2026) — phone carrier ──
-const ProviderSwitchGuide    = lazy(() => import("./pages/tools/ProviderSwitchGuide"));
-const MvnoPickerGuide        = lazy(() => import("./pages/tools/MvnoPickerGuide"));
-const FamilyPlanCompare      = lazy(() => import("./pages/tools/FamilyPlanCompare"));
-const BurnerPhoneTips        = lazy(() => import("./pages/tools/BurnerPhoneTips"));
-const RoamingTips            = lazy(() => import("./pages/tools/RoamingTips"));
 
 // ── Cycle 92 (April 29 2026) — TV + entertainment ──
-const AntennaPicks           = lazy(() => import("./pages/tools/AntennaPicks"));
-const FreeStreamingChannels  = lazy(() => import("./pages/tools/FreeStreamingChannels"));
-const SportsStreamCompare    = lazy(() => import("./pages/tools/SportsStreamCompare"));
-const LocalTvCordCutting     = lazy(() => import("./pages/tools/LocalTvCordCutting"));
-const ClosedCaptioningSetup  = lazy(() => import("./pages/tools/ClosedCaptioningSetup"));
 
 // ── Cycle 93 (April 29 2026) — DIY + handyman ──
-const HandymanFinder         = lazy(() => import("./pages/tools/HandymanFinder"));
-const HomeImprovementApps    = lazy(() => import("./pages/tools/HomeImprovementApps"));
-const AppliancePartsApps     = lazy(() => import("./pages/tools/AppliancePartsApps"));
-const PaintColorApps         = lazy(() => import("./pages/tools/PaintColorApps"));
-const FurnitureAssemblyHelp  = lazy(() => import("./pages/tools/FurnitureAssemblyHelp"));
 
 // ── Cycle 94 (April 29 2026) — nutrition + meals ──
-const MealKitDelivery        = lazy(() => import("./pages/tools/MealKitDelivery"));
-const GroceryDeliveryApps    = lazy(() => import("./pages/tools/GroceryDeliveryApps"));
-const OpenTableForSeniors    = lazy(() => import("./pages/tools/OpenTableForSeniors"));
-const DoorDashGrubhubSeniors = lazy(() => import("./pages/tools/DoorDashGrubhubSeniors"));
-const YelpForSeniorReviewers = lazy(() => import("./pages/tools/YelpForSeniorReviewers"));
-const TipCalculatorApps      = lazy(() => import("./pages/tools/TipCalculatorApps"));
-const HappyHourFinderApps    = lazy(() => import("./pages/tools/HappyHourFinderApps"));
-const InstacartForSeniors    = lazy(() => import("./pages/tools/InstacartForSeniors"));
-const IbottaCashbackForSeniors = lazy(() => import("./pages/tools/IbottaCashbackForSeniors"));
-const AmazonFreshWalmartPlus = lazy(() => import("./pages/tools/AmazonFreshWalmartPlus"));
-const CostcoMembershipForSeniors = lazy(() => import("./pages/tools/CostcoMembershipForSeniors"));
-const AmazonReturnsBasics    = lazy(() => import("./pages/tools/AmazonReturnsBasics"));
-const NutritionLabelScanner  = lazy(() => import("./pages/tools/NutritionLabelScanner"));
-const DietApps               = lazy(() => import("./pages/tools/DietApps"));
-const SeniorMealPrograms     = lazy(() => import("./pages/tools/SeniorMealPrograms"));
 
 // ── Cycle 95 (April 29 2026) — senior dating ──
-const SeniorDatingApps       = lazy(() => import("./pages/tools/SeniorDatingApps"));
-const WidowedRelationships   = lazy(() => import("./pages/tools/WidowedRelationships"));
-const ScamDatingFlags        = lazy(() => import("./pages/tools/ScamDatingFlags"));
-const GraceDating60Plus      = lazy(() => import("./pages/tools/GraceDating60Plus"));
-const FirstDateTech          = lazy(() => import("./pages/tools/FirstDateTech"));
 
 // ── Cycle 96 (April 29 2026) — language + learning ──
-const LanguageAppCompare     = lazy(() => import("./pages/tools/LanguageAppCompare"));
-const FreeUniversityCourses  = lazy(() => import("./pages/tools/FreeUniversityCourses"));
-const CrosswordApps          = lazy(() => import("./pages/tools/CrosswordApps"));
-const MemoirWritingApps      = lazy(() => import("./pages/tools/MemoirWritingApps"));
-const ChessPicks             = lazy(() => import("./pages/tools/ChessPicks"));
 
 // ── Cycle 97 (April 29 2026) — medication safety ──
-const PillOrganizerSmart     = lazy(() => import("./pages/tools/PillOrganizerSmart"));
-const MedReconciliation      = lazy(() => import("./pages/tools/MedReconciliation"));
-const DrugInteractionCheckers = lazy(() => import("./pages/tools/DrugInteractionCheckers"));
-const RxCouponApps           = lazy(() => import("./pages/tools/RxCouponApps"));
-const MedicationDeliveryServices = lazy(() => import("./pages/tools/MedicationDeliveryServices"));
 
 // ── Cycle 98 (April 29 2026) — kitchen tech ──
-const SousVidePicks          = lazy(() => import("./pages/tools/SousVidePicks"));
-const InstantPotApps         = lazy(() => import("./pages/tools/InstantPotApps"));
-const PaprikaRecipeManager   = lazy(() => import("./pages/tools/PaprikaRecipeManager"));
-const AllrecipesYummlyApps   = lazy(() => import("./pages/tools/AllrecipesYummlyApps"));
-const SmartKitchenScalesApps = lazy(() => import("./pages/tools/SmartKitchenScalesApps"));
-const MealPlanningApps       = lazy(() => import("./pages/tools/MealPlanningApps"));
-const HelloFreshSeniorReview = lazy(() => import("./pages/tools/HelloFreshSeniorReview"));
-const AmericasTestKitchenApp = lazy(() => import("./pages/tools/AmericasTestKitchenApp"));
-const PBSPassportForSeniors  = lazy(() => import("./pages/tools/PBSPassportForSeniors"));
-const MagnoliaNetworkApp     = lazy(() => import("./pages/tools/MagnoliaNetworkApp"));
-const CrockpotInstantPotApps = lazy(() => import("./pages/tools/CrockpotInstantPotApps"));
-const SeniorBakingTutorials  = lazy(() => import("./pages/tools/SeniorBakingTutorials"));
-const KitchenScalePicks      = lazy(() => import("./pages/tools/KitchenScalePicks"));
-const RecipeOrganizers       = lazy(() => import("./pages/tools/RecipeOrganizers"));
-const SmartOvenPicks         = lazy(() => import("./pages/tools/SmartOvenPicks"));
 
 // ── Cycle 99 (April 29 2026) — home gym + fitness gear ──
-const HomeGymStarter         = lazy(() => import("./pages/tools/HomeGymStarter"));
-const ResistanceBandsGuide   = lazy(() => import("./pages/tools/ResistanceBandsGuide"));
-const MassageGunPicks        = lazy(() => import("./pages/tools/MassageGunPicks"));
-const FoamRollerGuide        = lazy(() => import("./pages/tools/FoamRollerGuide"));
-const SeniorBikeOptions      = lazy(() => import("./pages/tools/SeniorBikeOptions"));
 
 // ── Cycle 100 (April 29 2026) — digital wellness ──
-const BlueLightFilters       = lazy(() => import("./pages/tools/BlueLightFilters"));
-const DigitalDetoxApps       = lazy(() => import("./pages/tools/DigitalDetoxApps"));
-const EyeStrainTips          = lazy(() => import("./pages/tools/EyeStrainTips"));
-const BedtimePhoneRoutine    = lazy(() => import("./pages/tools/BedtimePhoneRoutine"));
-const ScreenBreakReminders   = lazy(() => import("./pages/tools/ScreenBreakReminders"));
 
 // ── Cycle 101 (April 29 2026) — senior travel + adventure ──
-const ScenicByways           = lazy(() => import("./pages/tools/ScenicByways"));
-const AccessibleTravelGuide  = lazy(() => import("./pages/tools/AccessibleTravelGuide"));
-const SeniorTrainTravel      = lazy(() => import("./pages/tools/SeniorTrainTravel"));
-const RoadTripPlanners       = lazy(() => import("./pages/tools/RoadTripPlanners"));
-const CruisePicks            = lazy(() => import("./pages/tools/CruisePicks"));
 
 // ── Cycle 102 (April 29 2026) — senior workforce ──
-const PartTimeJobsForSeniors = lazy(() => import("./pages/tools/PartTimeJobsForSeniors"));
-const RetirementHobbyMonetize = lazy(() => import("./pages/tools/RetirementHobbyMonetize"));
-const EncoreCareers          = lazy(() => import("./pages/tools/EncoreCareers"));
-const OnlineBusinessForSeniors = lazy(() => import("./pages/tools/OnlineBusinessForSeniors"));
-const FreelanceSenior        = lazy(() => import("./pages/tools/FreelanceSenior"));
 
 // ── Cycle 103 (April 29 2026) — crime + safety ──
-const HomeSecuritySystems    = lazy(() => import("./pages/tools/HomeSecuritySystems"));
-const IdentityTheftRecovery  = lazy(() => import("./pages/tools/IdentityTheftRecovery"));
-const SmokeAlarmTesting      = lazy(() => import("./pages/tools/SmokeAlarmTesting"));
-const FrozenAccountsRecovery = lazy(() => import("./pages/tools/FrozenAccountsRecovery"));
-const EstateFraudPrevention  = lazy(() => import("./pages/tools/EstateFraudPrevention"));
 
 // ── Cycle 104 (April 29 2026) — grandparent-grandkid tech ──
-const GrandparentTextingApps = lazy(() => import("./pages/tools/GrandparentTextingApps"));
-const FamilyVideoGames       = lazy(() => import("./pages/tools/FamilyVideoGames"));
-const KidsPenPalApps         = lazy(() => import("./pages/tools/KidsPenPalApps"));
-const GrandparentBookClub    = lazy(() => import("./pages/tools/GrandparentBookClub"));
-const RemoteStorytelling     = lazy(() => import("./pages/tools/RemoteStorytelling"));
 
 // ── Cycle 105 (April 29 2026) — medical visit advocacy ──
-const DoctorVisitPrep        = lazy(() => import("./pages/tools/DoctorVisitPrep"));
-const SecondOpinionApps      = lazy(() => import("./pages/tools/SecondOpinionApps"));
-const MedicalRecordsCarry    = lazy(() => import("./pages/tools/MedicalRecordsCarry"));
-const SymptomCheckers        = lazy(() => import("./pages/tools/SymptomCheckers"));
-const AdvocateForYourself    = lazy(() => import("./pages/tools/AdvocateForYourself"));
 
 // ── Cycle 106 (April 29 2026) — financial well-being ──
-const BudgetingApps          = lazy(() => import("./pages/tools/BudgetingApps"));
-const DebtPayoffPlanner      = lazy(() => import("./pages/tools/DebtPayoffPlanner"));
-const RothConversionGuide    = lazy(() => import("./pages/tools/RothConversionGuide"));
-const AnnuityRealityCheck    = lazy(() => import("./pages/tools/AnnuityRealityCheck"));
-const ReverseMortgageGuide   = lazy(() => import("./pages/tools/ReverseMortgageGuide"));
 
 // ── Cycle 107 (April 29 2026) — Spanish-speaking seniors ──
-const SpanishSpeakingSupport = lazy(() => import("./pages/tools/SpanishSpeakingSupport"));
-const BilingualMedicalApps   = lazy(() => import("./pages/tools/BilingualMedicalApps"));
-const RemittancesGuide       = lazy(() => import("./pages/tools/RemittancesGuide"));
-const SpanishVotingHelp      = lazy(() => import("./pages/tools/SpanishVotingHelp"));
-const SpanishRetirementResources = lazy(() => import("./pages/tools/SpanishRetirementResources"));
 
 // ── Cycle 108 (April 29 2026) — smart home ──
-const SmartHomeStarterKit    = lazy(() => import("./pages/tools/SmartHomeStarterKit"));
-const SmartLockGuide         = lazy(() => import("./pages/tools/SmartLockGuide"));
-const SmartThermostatPicks   = lazy(() => import("./pages/tools/SmartThermostatPicks"));
-const SmartLightingBasics    = lazy(() => import("./pages/tools/SmartLightingBasics"));
-const SmartHubExplained      = lazy(() => import("./pages/tools/SmartHubExplained"));
 
 // ── Cycle 109 (April 29 2026) — senior phones + simple devices ──
-const SimplePhonesForSeniors = lazy(() => import("./pages/tools/SimplePhonesForSeniors"));
-const Jitterbug              = lazy(() => import("./pages/tools/Jitterbug"));
-const GrandPadReview         = lazy(() => import("./pages/tools/GrandPadReview"));
-const IpadVsFireTabletSeniors = lazy(() => import("./pages/tools/IpadVsFireTabletSeniors"));
-const AppleWatchVsFitbitSeniors = lazy(() => import("./pages/tools/AppleWatchVsFitbitSeniors"));
-const SeniorMobileGames      = lazy(() => import("./pages/tools/SeniorMobileGames"));
-const ZoomFaceTimeForGrandparents = lazy(() => import("./pages/tools/ZoomFaceTimeForGrandparents"));
-const DigitalLegacyPlanning  = lazy(() => import("./pages/tools/DigitalLegacyPlanning"));
-const AppleWatchAsPhone      = lazy(() => import("./pages/tools/AppleWatchAsPhone"));
-const EmergencyButtonPicks   = lazy(() => import("./pages/tools/EmergencyButtonPicks"));
 
 // ── Cycle 110 (April 29 2026) — holiday + special occasions ──
-const HolidayShoppingApps    = lazy(() => import("./pages/tools/HolidayShoppingApps"));
-const GiftIdeasForGrandkids  = lazy(() => import("./pages/tools/GiftIdeasForGrandkids"));
-const CardSendingApps        = lazy(() => import("./pages/tools/CardSendingApps"));
-const FamilyCalendarApps     = lazy(() => import("./pages/tools/FamilyCalendarApps"));
-const ZoomThanksgivingTips   = lazy(() => import("./pages/tools/ZoomThanksgivingTips"));
 
 // ── Cycle 111 (April 29 2026) — post-retirement living ──
-const SeniorVillageOptions   = lazy(() => import("./pages/tools/SeniorVillageOptions"));
-const AssistedLivingTechCheck = lazy(() => import("./pages/tools/AssistedLivingTechCheck"));
-const RetirementCommunityFinder = lazy(() => import("./pages/tools/RetirementCommunityFinder"));
-const AgingInPlaceModifications = lazy(() => import("./pages/tools/AgingInPlaceModifications"));
-const CCRCExplained          = lazy(() => import("./pages/tools/CCRCExplained"));
 
 // ── Cycle 112 (April 29 2026) — dental + vision + hearing ──
-const OverTheCounterHearingAids = lazy(() => import("./pages/tools/OverTheCounterHearingAids"));
-const PrescriptionGlassesOnline = lazy(() => import("./pages/tools/PrescriptionGlassesOnline"));
-const DentalImplantGuide     = lazy(() => import("./pages/tools/DentalImplantGuide"));
-const ContactLensApps        = lazy(() => import("./pages/tools/ContactLensApps"));
-const WarbyParkerForSeniors  = lazy(() => import("./pages/tools/WarbyParkerForSeniors"));
-const ZenniOpticalReview     = lazy(() => import("./pages/tools/ZenniOpticalReview"));
-const OnlineEyeExamApps      = lazy(() => import("./pages/tools/OnlineEyeExamApps"));
-const SeniorReadingGlassesGuide = lazy(() => import("./pages/tools/SeniorReadingGlassesGuide"));
-const ContactLensOnlineSeniors = lazy(() => import("./pages/tools/ContactLensOnlineSeniors"));
-const TeethCleaningApps      = lazy(() => import("./pages/tools/TeethCleaningApps"));
 
 // ── Cycle 113 (April 29 2026) — senior auto + driving ──
-const SeniorDrivingTests     = lazy(() => import("./pages/tools/SeniorDrivingTests"));
-const AutoInsuranceSeniors   = lazy(() => import("./pages/tools/AutoInsuranceSeniors"));
-const BackupCameraRetrofit   = lazy(() => import("./pages/tools/BackupCameraRetrofit"));
-const NexarDashCamApp        = lazy(() => import("./pages/tools/NexarDashCamApp"));
-const ParkMobileSparkSeniors = lazy(() => import("./pages/tools/ParkMobileSparkSeniors"));
-const AAAMobileForSeniors    = lazy(() => import("./pages/tools/AAAMobileForSeniors"));
-const SeniorDrivingAssist    = lazy(() => import("./pages/tools/SeniorDrivingAssist"));
-const RentalCarAppsForSeniors = lazy(() => import("./pages/tools/RentalCarAppsForSeniors"));
-const BlindSpotMirrorSetups  = lazy(() => import("./pages/tools/BlindSpotMirrorSetups"));
-const SeniorRideShareAlternatives = lazy(() => import("./pages/tools/SeniorRideShareAlternatives"));
 
 // ── Cycle 114 (April 29 2026) — senior shopping smart ──
-const BulkBuyingMath         = lazy(() => import("./pages/tools/BulkBuyingMath"));
-const CouponStackingTips     = lazy(() => import("./pages/tools/CouponStackingTips"));
-const ReturnsAtCostco        = lazy(() => import("./pages/tools/ReturnsAtCostco"));
-const BestBuyOpenBox         = lazy(() => import("./pages/tools/BestBuyOpenBox"));
-const TraderJoesAppGuide     = lazy(() => import("./pages/tools/TraderJoesAppGuide"));
 
 // ── Cycle 115 (April 29 2026) — senior music + audio ──
-const SpotifyForSeniors      = lazy(() => import("./pages/tools/SpotifyForSeniors"));
-const RecordPlayerStreaming  = lazy(() => import("./pages/tools/RecordPlayerStreaming"));
-const BluetoothSpeakerPicks  = lazy(() => import("./pages/tools/BluetoothSpeakerPicks"));
-const RadioApps              = lazy(() => import("./pages/tools/RadioApps"));
-const ConcertTicketTips      = lazy(() => import("./pages/tools/ConcertTicketTips"));
 
 // ── Cycle 116 (April 29 2026) — senior parenting + family ──
-const AdultChildBoundaries   = lazy(() => import("./pages/tools/AdultChildBoundaries"));
-const GrandparentRights      = lazy(() => import("./pages/tools/GrandparentRights"));
-const FamilyConflictApps     = lazy(() => import("./pages/tools/FamilyConflictApps"));
-const BlendedFamilyTech      = lazy(() => import("./pages/tools/BlendedFamilyTech"));
-const EstateGiftingPlanning  = lazy(() => import("./pages/tools/EstateGiftingPlanning"));
 
 // ── Cycle 117 (April 29 2026) — privacy + data ──
-const PrivacyAuditChecklist  = lazy(() => import("./pages/tools/PrivacyAuditChecklist"));
-const DataBrokerOptOut       = lazy(() => import("./pages/tools/DataBrokerOptOut"));
-const GooglePrivacyDashboard = lazy(() => import("./pages/tools/GooglePrivacyDashboard"));
-const ApplePrivacyReport     = lazy(() => import("./pages/tools/ApplePrivacyReport"));
-const FacebookPrivacyAudit   = lazy(() => import("./pages/tools/FacebookPrivacyAudit"));
 
 // ── Cycle 118 (April 29 2026) — AI for seniors ──
-const ChatGPTRecipes         = lazy(() => import("./pages/tools/ChatGPTRecipes"));
-const AILetterDrafting       = lazy(() => import("./pages/tools/AILetterDrafting"));
-const AIPhotoEdit            = lazy(() => import("./pages/tools/AIPhotoEdit"));
-const AIBillNegotiate        = lazy(() => import("./pages/tools/AIBillNegotiate"));
-const AISeniorSearch         = lazy(() => import("./pages/tools/AISeniorSearch"));
 
 // ── Cycle 119 (April 29 2026) — recovery + rehab ──
-const SurgeryRecoveryTech    = lazy(() => import("./pages/tools/SurgeryRecoveryTech"));
-const PhysicalTherapyApps    = lazy(() => import("./pages/tools/PhysicalTherapyApps"));
-const MedicalEquipmentRental = lazy(() => import("./pages/tools/MedicalEquipmentRental"));
-const HomeHealthAideFind     = lazy(() => import("./pages/tools/HomeHealthAideFind"));
-const HospiceTechSupport     = lazy(() => import("./pages/tools/HospiceTechSupport"));
 
 // ── Cycle 120 (April 29 2026) — wellness milestone ──
-const SleepHygieneApps       = lazy(() => import("./pages/tools/SleepHygieneApps"));
-const MeditationFreeApps     = lazy(() => import("./pages/tools/MeditationFreeApps"));
-const SunscreenAppPicks      = lazy(() => import("./pages/tools/SunscreenAppPicks"));
-const HydrationTrackers      = lazy(() => import("./pages/tools/HydrationTrackers"));
-const GardeningHelpApps      = lazy(() => import("./pages/tools/GardeningHelpApps"));
 
 // ── Cycle 121 (April 29 2026) — internet basics ──
-const WifiPasswordReset      = lazy(() => import("./pages/tools/WifiPasswordReset"));
-const RouterPicksForSeniors  = lazy(() => import("./pages/tools/RouterPicksForSeniors"));
-const WifiExtenders          = lazy(() => import("./pages/tools/WifiExtenders"));
-const GuestNetworkSetup      = lazy(() => import("./pages/tools/GuestNetworkSetup"));
-const EthernetVsWifi         = lazy(() => import("./pages/tools/EthernetVsWifi"));
 
 // ── Cycle 122 (April 29 2026) — tax + Medicare deeper ──
-const TaxLossHarvesting      = lazy(() => import("./pages/tools/TaxLossHarvesting"));
-const MedicareEnrollmentTimeline = lazy(() => import("./pages/tools/MedicareEnrollmentTimeline"));
-const MedicareSupplementCompare = lazy(() => import("./pages/tools/MedicareSupplementCompare"));
-const IRMAACliffs            = lazy(() => import("./pages/tools/IRMAACliffs"));
-const RMDStrategies          = lazy(() => import("./pages/tools/RMDStrategies"));
 
 // ── Cycle 123 (April 29 2026) — civic + service ──
-const AmericorpVista         = lazy(() => import("./pages/tools/AmericorpVista"));
-const RetiredEducatorPrograms = lazy(() => import("./pages/tools/RetiredEducatorPrograms"));
-const MasterGardenerSignup   = lazy(() => import("./pages/tools/MasterGardenerSignup"));
-const JuryDutyApps           = lazy(() => import("./pages/tools/JuryDutyApps"));
-const GoodSamaritanLaws      = lazy(() => import("./pages/tools/GoodSamaritanLaws"));
 
 // ── Cycle 124 (April 29 2026) — Office productivity ──
-const ZoomBeginnerTips       = lazy(() => import("./pages/tools/ZoomBeginnerTips"));
-const EmailAttachmentBasics  = lazy(() => import("./pages/tools/EmailAttachmentBasics"));
-const GoogleDocsSeniorBasics = lazy(() => import("./pages/tools/GoogleDocsSeniorBasics"));
-const PrintingFromPhone      = lazy(() => import("./pages/tools/PrintingFromPhone"));
-const BackupYourPhone        = lazy(() => import("./pages/tools/BackupYourPhone"));
 
 // ── Cycle 125 (April 29 2026) — government online services ──
-const SocialSecurityOnline   = lazy(() => import("./pages/tools/SocialSecurityOnline"));
-const MyMedicareGov          = lazy(() => import("./pages/tools/MyMedicareGov"));
-const IRSPaymentPortal       = lazy(() => import("./pages/tools/IRSPaymentPortal"));
-const VaCom                  = lazy(() => import("./pages/tools/VaCom"));
-const DmvOnlineServices      = lazy(() => import("./pages/tools/DmvOnlineServices"));
 
 // ── Cycle 126 (April 29 2026) — phone tricks ──
-const VoiceTextingTrick      = lazy(() => import("./pages/tools/VoiceTextingTrick"));
-const FontSizeAccessibility  = lazy(() => import("./pages/tools/FontSizeAccessibility"));
-const MagnifyTextHowTo       = lazy(() => import("./pages/tools/MagnifyTextHowTo"));
-const EmergencyContactsLockScreen = lazy(() => import("./pages/tools/EmergencyContactsLockScreen"));
-const AppleWatchTextingTips  = lazy(() => import("./pages/tools/AppleWatchTextingTips"));
 
 // ── Cycle 127 (April 29 2026) — senior insurance ──
-const HomeInsuranceShop      = lazy(() => import("./pages/tools/HomeInsuranceShop"));
-const UmbrellaInsurance      = lazy(() => import("./pages/tools/UmbrellaInsurance"));
-const LongTermCareInsurance  = lazy(() => import("./pages/tools/LongTermCareInsurance"));
-const FinalExpenseInsurance  = lazy(() => import("./pages/tools/FinalExpenseInsurance"));
-const RentersInsuranceSeniors = lazy(() => import("./pages/tools/RentersInsuranceSeniors"));
 
 // ── Cycle 128 (April 29 2026) — community + clubs ──
-const SeniorMeetupApps       = lazy(() => import("./pages/tools/SeniorMeetupApps"));
-const ClassReunionTools      = lazy(() => import("./pages/tools/ClassReunionTools"));
-const BookClubAppPicks       = lazy(() => import("./pages/tools/BookClubAppPicks"));
-const GardenClubFinder       = lazy(() => import("./pages/tools/GardenClubFinder"));
-const SeniorTravelGroups     = lazy(() => import("./pages/tools/SeniorTravelGroups"));
 
 // ── Cycle 129 (April 29 2026) — home cleanup + organization ──
-const DownsizeChecklist      = lazy(() => import("./pages/tools/DownsizeChecklist"));
-const JunkRemovalApps        = lazy(() => import("./pages/tools/JunkRemovalApps"));
-const OrganizingApps         = lazy(() => import("./pages/tools/OrganizingApps"));
-const StorageUnitPicks       = lazy(() => import("./pages/tools/StorageUnitPicks"));
 
 // ── Cycle 130 (April 29 2026) — emergency preparedness ──
-const HurricanePrep          = lazy(() => import("./pages/tools/HurricanePrep"));
-const RadarScopeWeatherApp   = lazy(() => import("./pages/tools/RadarScopeWeatherApp"));
-const HurricanePrepDigital   = lazy(() => import("./pages/tools/HurricanePrepDigital"));
-const SeniorWaterSafety      = lazy(() => import("./pages/tools/SeniorWaterSafety"));
-const AppleWeatherIphone     = lazy(() => import("./pages/tools/AppleWeatherIphone"));
-const SeniorEmergencyKitDigital = lazy(() => import("./pages/tools/SeniorEmergencyKitDigital"));
-const EarthquakePrep         = lazy(() => import("./pages/tools/EarthquakePrep"));
-const BlackoutKit            = lazy(() => import("./pages/tools/BlackoutKit"));
-const EvacuationGoBag        = lazy(() => import("./pages/tools/EvacuationGoBag"));
-const FEMAAppForSeniors      = lazy(() => import("./pages/tools/FEMAAppForSeniors"));
-const EmergencyKitChecklistSenior = lazy(() => import("./pages/tools/EmergencyKitChecklistSenior"));
-const PowerOutagePrep        = lazy(() => import("./pages/tools/PowerOutagePrep"));
-const EmergencyContactPlan   = lazy(() => import("./pages/tools/EmergencyContactPlan"));
-const CarbonMonoxideSafety   = lazy(() => import("./pages/tools/CarbonMonoxideSafety"));
-const FloodPrep              = lazy(() => import("./pages/tools/FloodPrep"));
 
 // ── Cycle 131 (April 29 2026) — senior cooking ──
-const SlowCookerBasics       = lazy(() => import("./pages/tools/SlowCookerBasics"));
-const OnePotMeals            = lazy(() => import("./pages/tools/OnePotMeals"));
-const FreezerMealPrep        = lazy(() => import("./pages/tools/FreezerMealPrep"));
-const HealthySnackIdeas      = lazy(() => import("./pages/tools/HealthySnackIdeas"));
-const SoupRecipes            = lazy(() => import("./pages/tools/SoupRecipes"));
 
 // ── Cycle 132 (April 29 2026) — gardening + outdoor ──
-const RaisedBedGuide         = lazy(() => import("./pages/tools/RaisedBedGuide"));
-const ContainerGardening     = lazy(() => import("./pages/tools/ContainerGardening"));
-const BirdfeederGuide        = lazy(() => import("./pages/tools/BirdfeederGuide"));
-const ButterflyGarden        = lazy(() => import("./pages/tools/ButterflyGarden"));
-const IndoorPlantsLowMaintenance = lazy(() => import("./pages/tools/IndoorPlantsLowMaintenance"));
 
 // ── Cycle 133 (April 29 2026) — intergenerational ──
-const TeachGrandkidsTech     = lazy(() => import("./pages/tools/TeachGrandkidsTech"));
-const DigitalSavingPlans     = lazy(() => import("./pages/tools/DigitalSavingPlans"));
-const GrandparentBudgetTalks = lazy(() => import("./pages/tools/GrandparentBudgetTalks"));
-const FinancialLiteracyKids  = lazy(() => import("./pages/tools/FinancialLiteracyKids"));
-const KidsCodingApps         = lazy(() => import("./pages/tools/KidsCodingApps"));
 
 // ── Cycle 134 (April 29 2026) — tech repair + maintenance ──
-const TonerCartridgeRefill   = lazy(() => import("./pages/tools/TonerCartridgeRefill"));
-const HardDriveBackup        = lazy(() => import("./pages/tools/HardDriveBackup"));
-const ScreenCleaner          = lazy(() => import("./pages/tools/ScreenCleaner"));
-const BatteryReplacement     = lazy(() => import("./pages/tools/BatteryReplacement"));
-const OldPhoneRepurpose      = lazy(() => import("./pages/tools/OldPhoneRepurpose"));
 
 // ── Cycle 135 (April 29 2026) — media literacy ──
-const NewsAppCompare         = lazy(() => import("./pages/tools/NewsAppCompare"));
-const FactCheckingTools      = lazy(() => import("./pages/tools/FactCheckingTools"));
-const MisinfoSpotting        = lazy(() => import("./pages/tools/MisinfoSpotting"));
-const NewsletterPicks        = lazy(() => import("./pages/tools/NewsletterPicks"));
-const MediaLiteracySeniors   = lazy(() => import("./pages/tools/MediaLiteracySeniors"));
 
 // ── Cycle 136 (April 29 2026) — memory + cognitive ──
-const MemoryAppTraining      = lazy(() => import("./pages/tools/MemoryAppTraining"));
-const ToDoListSeniors        = lazy(() => import("./pages/tools/ToDoListSeniors"));
-const CalendarRemindersApps  = lazy(() => import("./pages/tools/CalendarRemindersApps"));
-const AppleNotesForSeniors   = lazy(() => import("./pages/tools/AppleNotesForSeniors"));
-const GoogleKeepForSeniors   = lazy(() => import("./pages/tools/GoogleKeepForSeniors"));
-const GoogleCalendarSeniorTutorial = lazy(() => import("./pages/tools/GoogleCalendarSeniorTutorial"));
-const RemindersAppForSeniors = lazy(() => import("./pages/tools/RemindersAppForSeniors"));
-const SeniorContactsAppTutorial = lazy(() => import("./pages/tools/SeniorContactsAppTutorial"));
-const SudokuApps             = lazy(() => import("./pages/tools/SudokuApps"));
-const MathChallengeApps      = lazy(() => import("./pages/tools/MathChallengeApps"));
 
 // ── Cycle 137 (April 29 2026) — friend communication ──
-const TextingEtiquette       = lazy(() => import("./pages/tools/TextingEtiquette"));
-const GroupChatTips          = lazy(() => import("./pages/tools/GroupChatTips"));
-const SnailMailRevival       = lazy(() => import("./pages/tools/SnailMailRevival"));
-const HolidayCardSetup       = lazy(() => import("./pages/tools/HolidayCardSetup"));
-const ShutterflyForSeniors   = lazy(() => import("./pages/tools/ShutterflyForSeniors"));
-const PaperlessPostInvitations = lazy(() => import("./pages/tools/PaperlessPostInvitations"));
-const MintedHolidayCardsReview = lazy(() => import("./pages/tools/MintedHolidayCardsReview"));
-const CostcoPhotoCenter      = lazy(() => import("./pages/tools/CostcoPhotoCenter"));
-const MailMerge100Cards      = lazy(() => import("./pages/tools/MailMerge100Cards"));
-const ChainEmailDontShare    = lazy(() => import("./pages/tools/ChainEmailDontShare"));
 
 // ── Cycle 138 (April 29 2026) — fall prevention + mobility ──
-const FallPreventionGuide    = lazy(() => import("./pages/tools/FallPreventionGuide"));
-const PostureCheckApps       = lazy(() => import("./pages/tools/PostureCheckApps"));
-const GripStrengthTools      = lazy(() => import("./pages/tools/GripStrengthTools"));
-const StairSafetyChecklist   = lazy(() => import("./pages/tools/StairSafetyChecklist"));
-const CaneWalkerPicker       = lazy(() => import("./pages/tools/CaneWalkerPicker"));
 
 // ── Cycle 139 (April 29 2026) — senior nutrition ──
-const ProteinForSeniors      = lazy(() => import("./pages/tools/ProteinForSeniors"));
-const SaltReductionTips      = lazy(() => import("./pages/tools/SaltReductionTips"));
-const SugarReductionGuide    = lazy(() => import("./pages/tools/SugarReductionGuide"));
-const AntiInflammatoryEating = lazy(() => import("./pages/tools/AntiInflammatoryEating"));
-const SeniorSmoothieRecipes  = lazy(() => import("./pages/tools/SeniorSmoothieRecipes"));
 
 // ── Cycle 140 (April 29 2026) — sleep + rest ──
-const InsomniaSeniorGuide    = lazy(() => import("./pages/tools/InsomniaSeniorGuide"));
-const MelatoninSafetyGuide   = lazy(() => import("./pages/tools/MelatoninSafetyGuide"));
-const CPAPHelpSeniors        = lazy(() => import("./pages/tools/CPAPHelpSeniors"));
-const MattressPillowPicker   = lazy(() => import("./pages/tools/MattressPillowPicker"));
-const WhiteNoiseGuide        = lazy(() => import("./pages/tools/WhiteNoiseGuide"));
-const CalmAppForSeniors      = lazy(() => import("./pages/tools/CalmAppForSeniors"));
-const SleepCycleAppReview    = lazy(() => import("./pages/tools/SleepCycleAppReview"));
-const AppleWatchSleepFor60   = lazy(() => import("./pages/tools/AppleWatchSleepFor60"));
-const SleepHygieneTechSeniors = lazy(() => import("./pages/tools/SleepHygieneTechSeniors"));
-const CPAPMaintenanceApps    = lazy(() => import("./pages/tools/CPAPMaintenanceApps"));
 
 // ── Cycle 141 (April 29 2026) — senior personal care ──
-const EarwaxRemovalGuide     = lazy(() => import("./pages/tools/EarwaxRemovalGuide"));
-const DentureCareGuide       = lazy(() => import("./pages/tools/DentureCareGuide"));
-const FootCareSeniors        = lazy(() => import("./pages/tools/FootCareSeniors"));
-const SkinCareAfter65        = lazy(() => import("./pages/tools/SkinCareAfter65"));
-const HairThinningOptions    = lazy(() => import("./pages/tools/HairThinningOptions"));
 
 // ── Cycle 142 (April 29 2026) — social + emotional ──
-const LonelinessReliefGuide  = lazy(() => import("./pages/tools/LonelinessReliefGuide"));
-const SeniorMentorshipGuide  = lazy(() => import("./pages/tools/SeniorMentorshipGuide"));
-const DatingAfter60Guide     = lazy(() => import("./pages/tools/DatingAfter60Guide"));
-const OurTimeReviewSeniors   = lazy(() => import("./pages/tools/OurTimeReviewSeniors"));
-const SilverSinglesReview    = lazy(() => import("./pages/tools/SilverSinglesReview"));
-const RomanceScamSpottingFor60Plus = lazy(() => import("./pages/tools/RomanceScamSpottingFor60Plus"));
-const SeniorWidowedDating    = lazy(() => import("./pages/tools/SeniorWidowedDating"));
-const StitchAppFor50Plus     = lazy(() => import("./pages/tools/StitchAppFor50Plus"));
-const SeniorRoommateMatching = lazy(() => import("./pages/tools/SeniorRoommateMatching"));
-const JoinASeniorClub        = lazy(() => import("./pages/tools/JoinASeniorClub"));
 
 // ── Cycle 143 (April 29 2026) — senior travel mechanics ──
-const SnowbirdSetup          = lazy(() => import("./pages/tools/SnowbirdSetup"));
-const RVTravelSeniors        = lazy(() => import("./pages/tools/RVTravelSeniors"));
-const RVTripWizardGuide      = lazy(() => import("./pages/tools/RVTripWizardGuide"));
-const CampendiumAllStaysApps = lazy(() => import("./pages/tools/CampendiumAllStaysApps"));
-const StarlinkRVInternet     = lazy(() => import("./pages/tools/StarlinkRVInternet"));
-const RVMaintenanceAppsCheck = lazy(() => import("./pages/tools/RVMaintenanceAppsCheck"));
-const SeniorRVCommunity      = lazy(() => import("./pages/tools/SeniorRVCommunity"));
-const AirportWheelchairHelp  = lazy(() => import("./pages/tools/AirportWheelchairHelp"));
-const JetLagSeniors          = lazy(() => import("./pages/tools/JetLagSeniors"));
-const PackingChecklistSeniors = lazy(() => import("./pages/tools/PackingChecklistSeniors"));
 
 // ── Cycle 144 (April 29 2026) — downsizing + decluttering ──
-const GarageSaleSeniors      = lazy(() => import("./pages/tools/GarageSaleSeniors"));
-const SeniorRelocationServices = lazy(() => import("./pages/tools/SeniorRelocationServices"));
-const HoarderHelpResources   = lazy(() => import("./pages/tools/HoarderHelpResources"));
-const MemorabiliaPreservation = lazy(() => import("./pages/tools/MemorabiliaPreservation"));
-const AtticBasementClearout  = lazy(() => import("./pages/tools/AtticBasementClearout"));
 
 // ── Cycle 145 (April 29 2026) — senior finance + scams ──
-const BurialInsuranceVsLife  = lazy(() => import("./pages/tools/BurialInsuranceVsLife"));
-const EstimatedQuarterlyTaxes = lazy(() => import("./pages/tools/EstimatedQuarterlyTaxes"));
-const MedicareScamDefense    = lazy(() => import("./pages/tools/MedicareScamDefense"));
-const SweepstakesScamGuide   = lazy(() => import("./pages/tools/SweepstakesScamGuide"));
-const CharityScamCheck       = lazy(() => import("./pages/tools/CharityScamCheck"));
 
 // ── Cycle 146 (April 29 2026) — smart home additions ──
-const SmartBlindsForSeniors  = lazy(() => import("./pages/tools/SmartBlindsForSeniors"));
-const RobotMopGuide          = lazy(() => import("./pages/tools/RobotMopGuide"));
-const AirPurifierPicks       = lazy(() => import("./pages/tools/AirPurifierPicks"));
-const MatterStandardExplained = lazy(() => import("./pages/tools/MatterStandardExplained"));
-const SmartCeilingFanGuide   = lazy(() => import("./pages/tools/SmartCeilingFanGuide"));
 
 // ── Cycle 147 (April 29 2026) — chronic conditions ──
-const DiabetesManagementApps = lazy(() => import("./pages/tools/DiabetesManagementApps"));
-const HighBloodPressureApps  = lazy(() => import("./pages/tools/HighBloodPressureApps"));
-const CholesterolGuideSeniors = lazy(() => import("./pages/tools/CholesterolGuideSeniors"));
-const ArthritisManagement    = lazy(() => import("./pages/tools/ArthritisManagement"));
-const OsteoporosisGuide      = lazy(() => import("./pages/tools/OsteoporosisGuide"));
 
 // ── Cycle 148 (April 29 2026) — caregiving + late-stage care ──
-const AlzheimersEarlyStage   = lazy(() => import("./pages/tools/AlzheimersEarlyStage"));
-const DementiaWanderingPrevention = lazy(() => import("./pages/tools/DementiaWanderingPrevention"));
-const AdultDayCareGuide      = lazy(() => import("./pages/tools/AdultDayCareGuide"));
-const InHomeCareAgencyVet    = lazy(() => import("./pages/tools/InHomeCareAgencyVet"));
-const NursingHomeChecklist   = lazy(() => import("./pages/tools/NursingHomeChecklist"));
 
 // ── Cycle 149 (April 29 2026) — pets for seniors ──
-const BestPetsForSeniors     = lazy(() => import("./pages/tools/BestPetsForSeniors"));
-const PetSupplyDelivery      = lazy(() => import("./pages/tools/PetSupplyDelivery"));
-const PetInsuranceForSeniors = lazy(() => import("./pages/tools/PetInsuranceForSeniors"));
-const RoverPetSittingApp     = lazy(() => import("./pages/tools/RoverPetSittingApp"));
-const ChewyPetSuppliesGuide  = lazy(() => import("./pages/tools/ChewyPetSuppliesGuide"));
-const CanvaForSeniorsGuide   = lazy(() => import("./pages/tools/CanvaForSeniorsGuide"));
-const PhotoBookPrintingApps  = lazy(() => import("./pages/tools/PhotoBookPrintingApps"));
-const DigitalScrapbookingApps = lazy(() => import("./pages/tools/DigitalScrapbookingApps"));
-const EmotionalSupportAnimal = lazy(() => import("./pages/tools/EmotionalSupportAnimal"));
-const FosterPetsForSeniors   = lazy(() => import("./pages/tools/FosterPetsForSeniors"));
 
 // ── Cycle 150 (April 29 2026) — driving + cars ──
-const WhenToStopDriving      = lazy(() => import("./pages/tools/WhenToStopDriving"));
-const EVForSeniors           = lazy(() => import("./pages/tools/EVForSeniors"));
-const CarRentalSeniorTips    = lazy(() => import("./pages/tools/CarRentalSeniorTips"));
-const RoadsideAssistanceCompare = lazy(() => import("./pages/tools/RoadsideAssistanceCompare"));
-const AutomaticEmergencyBraking = lazy(() => import("./pages/tools/AutomaticEmergencyBraking"));
 
 // ── Cycle 151 (April 29 2026) — digital payments + money ──
-const ApplePaySetupSeniors   = lazy(() => import("./pages/tools/ApplePaySetupSeniors"));
-const PayPalSafelyForSeniors = lazy(() => import("./pages/tools/PayPalSafelyForSeniors"));
-const OnlineBrokerageStarter = lazy(() => import("./pages/tools/OnlineBrokerageStarter"));
-const CDTreasuryHighYield    = lazy(() => import("./pages/tools/CDTreasuryHighYield"));
-const AutoBillPaySetup       = lazy(() => import("./pages/tools/AutoBillPaySetup"));
 
 // ── Cycle 152 (April 29 2026) — entertainment + leisure ──
-const LibbyAppForSeniors     = lazy(() => import("./pages/tools/LibbyAppForSeniors"));
-const HooplaForSeniors       = lazy(() => import("./pages/tools/HooplaForSeniors"));
-const SonosSetupGuide        = lazy(() => import("./pages/tools/SonosSetupGuide"));
-const BroadwayHDForSeniors   = lazy(() => import("./pages/tools/BroadwayHDForSeniors"));
-const FreeAudiobookSources   = lazy(() => import("./pages/tools/FreeAudiobookSources"));
 
 // ── Cycle 153 (April 29 2026) — outdoor + seasonal ──
-const HummingbirdFeederSetup = lazy(() => import("./pages/tools/HummingbirdFeederSetup"));
-const CompostingForSeniors   = lazy(() => import("./pages/tools/CompostingForSeniors"));
-const TreeCareWhenToCallPro  = lazy(() => import("./pages/tools/TreeCareWhenToCallPro"));
-const LeafBlowerPicker       = lazy(() => import("./pages/tools/LeafBlowerPicker"));
-const IceMeltSidewalkSafety  = lazy(() => import("./pages/tools/IceMeltSidewalkSafety"));
 
 // ── Cycle 154 (April 29 2026) — saving money shopping ──
-const AmazonPrimePerks       = lazy(() => import("./pages/tools/AmazonPrimePerks"));
-const WalmartPlusReview      = lazy(() => import("./pages/tools/WalmartPlusReview"));
-const CashbackAppPicks       = lazy(() => import("./pages/tools/CashbackAppPicks"));
-const PrimeDayBlackFriday    = lazy(() => import("./pages/tools/PrimeDayBlackFriday"));
-const GroceryLoyaltyTricks   = lazy(() => import("./pages/tools/GroceryLoyaltyTricks"));
 
 // ── Cycle 155 (April 29 2026) — legacy + history ──
-const AncestryDNAGuide       = lazy(() => import("./pages/tools/AncestryDNAGuide"));
-const WriteYourMemoir        = lazy(() => import("./pages/tools/WriteYourMemoir"));
-const VideoLettersGrandkids  = lazy(() => import("./pages/tools/VideoLettersGrandkids"));
-const FamilyHistoryInterview = lazy(() => import("./pages/tools/FamilyHistoryInterview"));
-const EthicalWillTemplate    = lazy(() => import("./pages/tools/EthicalWillTemplate"));
 
 // ── Cycle 156 (April 29 2026) — home maintenance ──
-const HVACMaintenanceGuide   = lazy(() => import("./pages/tools/HVACMaintenanceGuide"));
-const WaterHeaterGuide       = lazy(() => import("./pages/tools/WaterHeaterGuide"));
-const GutterCleaningOptions  = lazy(() => import("./pages/tools/GutterCleaningOptions"));
-const RoofInspectionGuide    = lazy(() => import("./pages/tools/RoofInspectionGuide"));
-const ContractorVettingGuide = lazy(() => import("./pages/tools/ContractorVettingGuide"));
 
 // ── Cycle 157 (April 29 2026) — kitchen for seniors ──
-const SeniorFriendlyCookware = lazy(() => import("./pages/tools/SeniorFriendlyCookware"));
-const ToasterOvenGuide       = lazy(() => import("./pages/tools/ToasterOvenGuide"));
-const AdaptiveKitchenTools   = lazy(() => import("./pages/tools/AdaptiveKitchenTools"));
-const CoffeeMakerForSeniors  = lazy(() => import("./pages/tools/CoffeeMakerForSeniors"));
-const InductionStoveExplained = lazy(() => import("./pages/tools/InductionStoveExplained"));
 
 // ── Cycle 158 (April 29 2026) — legal + credit ──
-const PowerOfAttorneyTypes   = lazy(() => import("./pages/tools/PowerOfAttorneyTypes"));
-const GuardianshipVsConservatorship = lazy(() => import("./pages/tools/GuardianshipVsConservatorship"));
-const ElderLawAttorneyFinder = lazy(() => import("./pages/tools/ElderLawAttorneyFinder"));
-const FreeLegalAidForSeniors = lazy(() => import("./pages/tools/FreeLegalAidForSeniors"));
-const DebtCollectorRights    = lazy(() => import("./pages/tools/DebtCollectorRights"));
 
 // ── Cycle 159 (April 29 2026) — languages + free college ──
-const DuolingoForSeniors     = lazy(() => import("./pages/tools/DuolingoForSeniors"));
-const BabbelVsRosetta        = lazy(() => import("./pages/tools/BabbelVsRosetta"));
-const GoogleTranslateMastery = lazy(() => import("./pages/tools/GoogleTranslateMastery"));
-const FreeCollegeForSeniors  = lazy(() => import("./pages/tools/FreeCollegeForSeniors"));
-const CourseraSeniorAudit    = lazy(() => import("./pages/tools/CourseraSeniorAudit"));
-const EdXCoursesForSeniors   = lazy(() => import("./pages/tools/EdXCoursesForSeniors"));
-const GreatCoursesPlusReview = lazy(() => import("./pages/tools/GreatCoursesPlusReview"));
-const AcademicSearchSeniors  = lazy(() => import("./pages/tools/AcademicSearchSeniors"));
-const SeniorTutorialResources = lazy(() => import("./pages/tools/SeniorTutorialResources"));
-const SeniorClassesAtCommunityCollege = lazy(() => import("./pages/tools/SeniorClassesAtCommunityCollege"));
 
 // ── Cycle 160 (April 29 2026) — veteran benefits ──
-const VAAidAndAttendance     = lazy(() => import("./pages/tools/VAAidAndAttendance"));
-const TricareForLife         = lazy(() => import("./pages/tools/TricareForLife"));
-const NationalCemeteryBurial = lazy(() => import("./pages/tools/NationalCemeteryBurial"));
-const VAHomeLoanGuide        = lazy(() => import("./pages/tools/VAHomeLoanGuide"));
-const AgentOrangeBenefits    = lazy(() => import("./pages/tools/AgentOrangeBenefits"));
 
 // ── Cycle 161 (April 29 2026) — government benefits ──
-const MealsOnWheelsGuide     = lazy(() => import("./pages/tools/MealsOnWheelsGuide"));
-const PictureThisPlantID     = lazy(() => import("./pages/tools/PictureThisPlantID"));
-const FishbrainAnglerApps    = lazy(() => import("./pages/tools/FishbrainAnglerApps"));
-const WoodworkingPlansApps   = lazy(() => import("./pages/tools/WoodworkingPlansApps"));
-const BackyardBirdfeederApps = lazy(() => import("./pages/tools/BackyardBirdfeederApps"));
-const HuntingAppsForSeniors  = lazy(() => import("./pages/tools/HuntingAppsForSeniors"));
-const MedicareSavingsPrograms = lazy(() => import("./pages/tools/MedicareSavingsPrograms"));
-const MedicareExtraHelp      = lazy(() => import("./pages/tools/MedicareExtraHelp"));
-const LIHEAPGuide            = lazy(() => import("./pages/tools/LIHEAPGuide"));
-const SeniorPropertyTaxRelief = lazy(() => import("./pages/tools/SeniorPropertyTaxRelief"));
 
 // ── Cycle 162 (April 29 2026) — practical AI ──
-const AIWriteEmailHelp       = lazy(() => import("./pages/tools/AIWriteEmailHelp"));
-const AIDoctorAppointmentPrep = lazy(() => import("./pages/tools/AIDoctorAppointmentPrep"));
-const AITranslateRecipe      = lazy(() => import("./pages/tools/AITranslateRecipe"));
-const AIScamProtection       = lazy(() => import("./pages/tools/AIScamProtection"));
-const ClaudeForSeniors       = lazy(() => import("./pages/tools/ClaudeForSeniors"));
 
 // ── Cycle 163 (April 29 2026) — wearables + exercise ──
-const OuraRingForSeniors     = lazy(() => import("./pages/tools/OuraRingForSeniors"));
-const AppleHealthDeepDive    = lazy(() => import("./pages/tools/AppleHealthDeepDive"));
-const CGMForNonDiabetics     = lazy(() => import("./pages/tools/CGMForNonDiabetics"));
-const WalkingProgramFreshStart = lazy(() => import("./pages/tools/WalkingProgramFreshStart"));
-const PelotonAlternatives    = lazy(() => import("./pages/tools/PelotonAlternatives"));
-const AppleFitnessPlusReview = lazy(() => import("./pages/tools/AppleFitnessPlusReview"));
-const SilverSneakersAppDeep  = lazy(() => import("./pages/tools/SilverSneakersAppDeep"));
-const PelotonAppForSeniors   = lazy(() => import("./pages/tools/PelotonAppForSeniors"));
-const SeniorWalkingApps      = lazy(() => import("./pages/tools/SeniorWalkingApps"));
-const HASfitFreeYouTube      = lazy(() => import("./pages/tools/HASfitFreeYouTube"));
 
 // ── Cycle 164 (April 29 2026) — medical management ──
-const HospitalCompareGuide   = lazy(() => import("./pages/tools/HospitalCompareGuide"));
-const PreSurgeryChecklist    = lazy(() => import("./pages/tools/PreSurgeryChecklist"));
-const ERVsUrgentCare         = lazy(() => import("./pages/tools/ERVsUrgentCare"));
-const MedicalBillNegotiation = lazy(() => import("./pages/tools/MedicalBillNegotiation"));
-const PrescriptionPriceShop  = lazy(() => import("./pages/tools/PrescriptionPriceShop"));
 
 // ── Cycle 165 (April 29 2026) — second-career income ──
-const EtsySellingForSeniors  = lazy(() => import("./pages/tools/EtsySellingForSeniors"));
-const FiverrFreelanceSeniors = lazy(() => import("./pages/tools/FiverrFreelanceSeniors"));
-const BecomeATutorRetiree    = lazy(() => import("./pages/tools/BecomeATutorRetiree"));
-const PetSittingIncome       = lazy(() => import("./pages/tools/PetSittingIncome"));
-const ConsultingSecondAct    = lazy(() => import("./pages/tools/ConsultingSecondAct"));
-const SeniorConsultingPlatforms = lazy(() => import("./pages/tools/SeniorConsultingPlatforms"));
-const AirbnbHostingForRetirees = lazy(() => import("./pages/tools/AirbnbHostingForRetirees"));
-const PetSittingIncomeForSeniors = lazy(() => import("./pages/tools/PetSittingIncomeForSeniors"));
-const SeniorTutoringIncomeApps = lazy(() => import("./pages/tools/SeniorTutoringIncomeApps"));
-const SeniorBookkeepingFreelance = lazy(() => import("./pages/tools/SeniorBookkeepingFreelance"));
 
 // ── Cycle 166 (April 29 2026) — mindfulness + simple living ──
-const GratitudePracticeApp   = lazy(() => import("./pages/tools/GratitudePracticeApp"));
-const StoicPhilosophySeniors = lazy(() => import("./pages/tools/StoicPhilosophySeniors"));
-const RetreatCentersForSeniors = lazy(() => import("./pages/tools/RetreatCentersForSeniors"));
-const IntermittentFastingSeniors = lazy(() => import("./pages/tools/IntermittentFastingSeniors"));
-const MinimalismForSeniors   = lazy(() => import("./pages/tools/MinimalismForSeniors"));
 
 // ── Cycle 167 (April 29 2026) — senior tech basics ──
-const GrandPadTablet         = lazy(() => import("./pages/tools/GrandPadTablet"));
-const RazMobilityPhones      = lazy(() => import("./pages/tools/RazMobilityPhones"));
-const ConsumerCellularPlans  = lazy(() => import("./pages/tools/ConsumerCellularPlans"));
-const FirstSmartphoneStarter = lazy(() => import("./pages/tools/FirstSmartphoneStarter"));
-const TabletForSeniorsBasics = lazy(() => import("./pages/tools/TabletForSeniorsBasics"));
 
 // ── Cycle 168 (April 29 2026) — emerging tech for curious seniors ──
-const VRForSeniors           = lazy(() => import("./pages/tools/VRForSeniors"));
-const DronesForSeniors       = lazy(() => import("./pages/tools/DronesForSeniors"));
-const PrintableHobby3D       = lazy(() => import("./pages/tools/PrintableHobby3D"));
-const RaspberryPiSeniors     = lazy(() => import("./pages/tools/RaspberryPiSeniors"));
-const CodingHobbyForSeniors  = lazy(() => import("./pages/tools/CodingHobbyForSeniors"));
 
 // ── Cycle 169 (April 29 2026) — senior movement ──
-const TaiChiBeginner         = lazy(() => import("./pages/tools/TaiChiBeginner"));
-const QigongForSeniors       = lazy(() => import("./pages/tools/QigongForSeniors"));
-const SeniorCyclingTips      = lazy(() => import("./pages/tools/SeniorCyclingTips"));
-const HikingForSeniors       = lazy(() => import("./pages/tools/HikingForSeniors"));
-const AquaticExerciseGuide   = lazy(() => import("./pages/tools/AquaticExerciseGuide"));
-const StretchingAppsForSeniors = lazy(() => import("./pages/tools/StretchingAppsForSeniors"));
-const HiitForActiveSeniors   = lazy(() => import("./pages/tools/HiitForActiveSeniors"));
-const StrengthTrainingForSeniors = lazy(() => import("./pages/tools/StrengthTrainingForSeniors"));
-const SeniorTaiChiClasses    = lazy(() => import("./pages/tools/SeniorTaiChiClasses"));
-const PickleballForBeginnerSeniors = lazy(() => import("./pages/tools/PickleballForBeginnerSeniors"));
 
 // ── Cycle 170 (April 29 2026) — computers + ecosystems ──
-const ChromebookForSeniors   = lazy(() => import("./pages/tools/ChromebookForSeniors"));
-const MacForSeniors          = lazy(() => import("./pages/tools/MacForSeniors"));
-const WindowsBasicsForSeniors = lazy(() => import("./pages/tools/WindowsBasicsForSeniors"));
-const MicrosoftO365vsGoogle  = lazy(() => import("./pages/tools/MicrosoftO365vsGoogle"));
-const IPadVsLaptopForSeniors = lazy(() => import("./pages/tools/IPadVsLaptopForSeniors"));
 
 // ── Cycle 171 (April 29 2026) — indoor + small-space gardening ──
-const AeroGardenForSeniors   = lazy(() => import("./pages/tools/AeroGardenForSeniors"));
-const GrowLightSetup         = lazy(() => import("./pages/tools/GrowLightSetup"));
-const VegetableGardenSeniors = lazy(() => import("./pages/tools/VegetableGardenSeniors"));
-const HerbGardeningWindow    = lazy(() => import("./pages/tools/HerbGardeningWindow"));
-const RainBarrelGuide        = lazy(() => import("./pages/tools/RainBarrelGuide"));
 
 // ── Cycle 172 (April 29 2026) — senior crafts ──
-const WatercolorBeginnerSeniors = lazy(() => import("./pages/tools/WatercolorBeginnerSeniors"));
-const RavelryForKnitters     = lazy(() => import("./pages/tools/RavelryForKnitters"));
-const CricutForSeniorCrafters = lazy(() => import("./pages/tools/CricutForSeniorCrafters"));
-const QuiltDesignSoftware    = lazy(() => import("./pages/tools/QuiltDesignSoftware"));
-const SeniorPaintingClasses  = lazy(() => import("./pages/tools/SeniorPaintingClasses"));
-const PaintByNumbersAdult    = lazy(() => import("./pages/tools/PaintByNumbersAdult"));
-const JewelryMakingSeniors   = lazy(() => import("./pages/tools/JewelryMakingSeniors"));
-const PotteryClassesGuide    = lazy(() => import("./pages/tools/PotteryClassesGuide"));
-const AdultColoringBooks     = lazy(() => import("./pages/tools/AdultColoringBooks"));
 
 // ── Cycle 173 (April 29 2026) — collecting hobbies ──
-const StampCollectingForSeniors = lazy(() => import("./pages/tools/StampCollectingForSeniors"));
-const AntiqueValueAppraisalApps = lazy(() => import("./pages/tools/AntiqueValueAppraisalApps"));
-const ComicBookCollecting    = lazy(() => import("./pages/tools/ComicBookCollecting"));
-const BaseballCardValuation  = lazy(() => import("./pages/tools/BaseballCardValuation"));
-const RecordCollectingGuide  = lazy(() => import("./pages/tools/RecordCollectingGuide"));
 
 // ── Cycle 174 (April 29 2026) — travel apps for seniors ──
-const WazeForSeniors         = lazy(() => import("./pages/tools/WazeForSeniors"));
-const AirbnbForSeniorTravelers = lazy(() => import("./pages/tools/AirbnbForSeniorTravelers"));
-const RoadtripPlanningApps   = lazy(() => import("./pages/tools/RoadtripPlanningApps"));
-const AccessibleTravelApps   = lazy(() => import("./pages/tools/AccessibleTravelApps"));
-const NationalParksTrip      = lazy(() => import("./pages/tools/NationalParksTrip"));
 
 // ── Cycle 175 (April 29 2026) — streaming services ──
-const NetflixForSeniors      = lazy(() => import("./pages/tools/NetflixForSeniors"));
-const YouTubeForSeniors      = lazy(() => import("./pages/tools/YouTubeForSeniors"));
-const AppleTVPlusGuide       = lazy(() => import("./pages/tools/AppleTVPlusGuide"));
-const ParamountPlusReview    = lazy(() => import("./pages/tools/ParamountPlusReview"));
-const StreamingDeviceCompare = lazy(() => import("./pages/tools/StreamingDeviceCompare"));
 
 // ── Cycle 176 (April 29 2026) — senior puzzles + games ──
-const ChessForSeniors        = lazy(() => import("./pages/tools/ChessForSeniors"));
-const MahjongAppPicks        = lazy(() => import("./pages/tools/MahjongAppPicks"));
-const BridgeOnlineApps       = lazy(() => import("./pages/tools/BridgeOnlineApps"));
-const ScrabbleAlternatives   = lazy(() => import("./pages/tools/ScrabbleAlternatives"));
-const JigsawPuzzleStrategy   = lazy(() => import("./pages/tools/JigsawPuzzleStrategy"));
 
 // ── Cycle 177 (April 29 2026) — security upgrades ──
-const TwoFactorAuthGuide     = lazy(() => import("./pages/tools/TwoFactorAuthGuide"));
-const YubiKeyForSeniors      = lazy(() => import("./pages/tools/YubiKeyForSeniors"));
-const FaceIDFingerprintSetup = lazy(() => import("./pages/tools/FaceIDFingerprintSetup"));
-const AppleICloudSecurity    = lazy(() => import("./pages/tools/AppleICloudSecurity"));
-const PasskeyExplained       = lazy(() => import("./pages/tools/PasskeyExplained"));
 
 // ── Cycle 178 (April 29 2026) — government online ──
-const MySocialSecurityAccount = lazy(() => import("./pages/tools/MySocialSecurityAccount"));
-const IRSOnlineAccount       = lazy(() => import("./pages/tools/IRSOnlineAccount"));
-const MedicareDotGovTour     = lazy(() => import("./pages/tools/MedicareDotGovTour"));
-const BenefitsCheckUpTool    = lazy(() => import("./pages/tools/BenefitsCheckUpTool"));
-const USAJobsForSeniors      = lazy(() => import("./pages/tools/USAJobsForSeniors"));
 
 // ── Cycle 179 (April 29 2026) — voice assistants ──
-const AlexaSkillsForSeniors  = lazy(() => import("./pages/tools/AlexaSkillsForSeniors"));
-const GoogleAssistantTraining = lazy(() => import("./pages/tools/GoogleAssistantTraining"));
-const AlexaShoppingList      = lazy(() => import("./pages/tools/AlexaShoppingList"));
-const AlexaMedReminders      = lazy(() => import("./pages/tools/AlexaMedReminders"));
-const AlexaWithDementia      = lazy(() => import("./pages/tools/AlexaWithDementia"));
 
 // ── Cycle 180 (April 29 2026) — internet + ISP ──
-const ISPNegotiationGuide    = lazy(() => import("./pages/tools/ISPNegotiationGuide"));
-const FiberVsCableInternet   = lazy(() => import("./pages/tools/FiberVsCableInternet"));
-const StarlinkForRural       = lazy(() => import("./pages/tools/StarlinkForRural"));
-const TMobileHomeInternet    = lazy(() => import("./pages/tools/TMobileHomeInternet"));
-const ACPInternetSubsidy     = lazy(() => import("./pages/tools/ACPInternetSubsidy"));
 
 // ── Cycle 181 (April 29 2026) — hearing tech ──
-const TinnitusReliefApps     = lazy(() => import("./pages/tools/TinnitusReliefApps"));
-const ASLLearningSeniors     = lazy(() => import("./pages/tools/ASLLearningSeniors"));
-const LiveCaptionsApps       = lazy(() => import("./pages/tools/LiveCaptionsApps"));
-const CochlearImplantBasics  = lazy(() => import("./pages/tools/CochlearImplantBasics"));
-const AssistiveListeningDevices = lazy(() => import("./pages/tools/AssistiveListeningDevices"));
 
 // ── Cycle 182 (April 29 2026) — smartwatches health ──
-const GarminForSeniors       = lazy(() => import("./pages/tools/GarminForSeniors"));
-const FitbitVsAppleWatch     = lazy(() => import("./pages/tools/FitbitVsAppleWatch"));
-const SmartwatchHealthFeatures = lazy(() => import("./pages/tools/SmartwatchHealthFeatures"));
-const AppleWatchFallDetection = lazy(() => import("./pages/tools/AppleWatchFallDetection"));
-const ECGOnAppleWatch        = lazy(() => import("./pages/tools/ECGOnAppleWatch"));
 
 // ── Cycle 183 (April 29 2026) — appliances ──
-const SmartFridgePicks       = lazy(() => import("./pages/tools/SmartFridgePicks"));
-const BidetSeniorGuide       = lazy(() => import("./pages/tools/BidetSeniorGuide"));
-const DehumidifierForSeniors = lazy(() => import("./pages/tools/DehumidifierForSeniors"));
-const MicrowaveSeniorBuy     = lazy(() => import("./pages/tools/MicrowaveSeniorBuy"));
-const WasherDryerForSeniors  = lazy(() => import("./pages/tools/WasherDryerForSeniors"));
 
 // ── Cycle 184 (April 29 2026) — alternative travel modes ──
-const AmtrakForSeniors       = lazy(() => import("./pages/tools/AmtrakForSeniors"));
-const BusTravelForSeniors    = lazy(() => import("./pages/tools/BusTravelForSeniors"));
-const RiverCruiseGuide       = lazy(() => import("./pages/tools/RiverCruiseGuide"));
-const TrainAroundTheWorld    = lazy(() => import("./pages/tools/TrainAroundTheWorld"));
-const TouristAttractionPasses = lazy(() => import("./pages/tools/TouristAttractionPasses"));
 
 // ── Cycle 185 (April 29 2026) — basic skills ──
-const WordForSeniors         = lazy(() => import("./pages/tools/WordForSeniors"));
-const ExcelForSeniors        = lazy(() => import("./pages/tools/ExcelForSeniors"));
-const GmailForSeniors        = lazy(() => import("./pages/tools/GmailForSeniors"));
-const OutlookForSeniors      = lazy(() => import("./pages/tools/OutlookForSeniors"));
-const BrowserBookmarksGuide  = lazy(() => import("./pages/tools/BrowserBookmarksGuide"));
 
 // ── Cycle 186 (April 29 2026) — social media beginners ──
-const FacebookForBeginners   = lazy(() => import("./pages/tools/FacebookForBeginners"));
-const LinkedInForRetirees    = lazy(() => import("./pages/tools/LinkedInForRetirees"));
-const RedditForSeniors       = lazy(() => import("./pages/tools/RedditForSeniors"));
-const TikTokSafetyGuide      = lazy(() => import("./pages/tools/TikTokSafetyGuide"));
-const TikTokForSeniorViewers = lazy(() => import("./pages/tools/TikTokForSeniorViewers"));
-const InstagramReelsForSeniors = lazy(() => import("./pages/tools/InstagramReelsForSeniors"));
-const SeniorYouTubeChannels  = lazy(() => import("./pages/tools/SeniorYouTubeChannels"));
-const DiscogsForRecordCollectors = lazy(() => import("./pages/tools/DiscogsForRecordCollectors"));
-const PinterestForSeniorIdeas = lazy(() => import("./pages/tools/PinterestForSeniorIdeas"));
-const InstagramSeniorGuide   = lazy(() => import("./pages/tools/InstagramSeniorGuide"));
 
 // ── Cycle 187 (April 29 2026) — credit cards ──
-const BestCreditCardsSeniors = lazy(() => import("./pages/tools/BestCreditCardsSeniors"));
-const CreditCardFraudHelp    = lazy(() => import("./pages/tools/CreditCardFraudHelp"));
-const ATMSafetyGuide         = lazy(() => import("./pages/tools/ATMSafetyGuide"));
-const ChaseSapphireExplain   = lazy(() => import("./pages/tools/ChaseSapphireExplain"));
-const AmexPlatinumWorthIt    = lazy(() => import("./pages/tools/AmexPlatinumWorthIt"));
 
 // ── Cycle 188 (April 29 2026) — preventive health ──
-const ColonCancerScreening   = lazy(() => import("./pages/tools/ColonCancerScreening"));
-const MammogramGuide         = lazy(() => import("./pages/tools/MammogramGuide"));
-const ProstateScreeningSeniors = lazy(() => import("./pages/tools/ProstateScreeningSeniors"));
-const AnnualWellnessVisit    = lazy(() => import("./pages/tools/AnnualWellnessVisit"));
-const SeniorVaccinesGuide    = lazy(() => import("./pages/tools/SeniorVaccinesGuide"));
 
 // ── Cycle 189 (April 29 2026) — mental health ──
-const SeniorDepressionGuide  = lazy(() => import("./pages/tools/SeniorDepressionGuide"));
-const AnxietyToolsForSeniors = lazy(() => import("./pages/tools/AnxietyToolsForSeniors"));
-const ChronicPainManagement  = lazy(() => import("./pages/tools/ChronicPainManagement"));
-const GriefAfterLoss         = lazy(() => import("./pages/tools/GriefAfterLoss"));
-const CrisisLineGuide        = lazy(() => import("./pages/tools/CrisisLineGuide"));
 
 // ── Cycle 190 (April 29 2026) — substance use ──
-const AlcoholForSeniors      = lazy(() => import("./pages/tools/AlcoholForSeniors"));
-const QuitSmokingSeniors     = lazy(() => import("./pages/tools/QuitSmokingSeniors"));
-const MarijuanaForMedicalSeniors = lazy(() => import("./pages/tools/MarijuanaForMedicalSeniors"));
-const BenzodiazepineSafety   = lazy(() => import("./pages/tools/BenzodiazepineSafety"));
-const CaffeineForSeniors     = lazy(() => import("./pages/tools/CaffeineForSeniors"));
 
 // ── Cycle 191 (April 29 2026) — chronic conditions ──
-const BladderHealthSeniors   = lazy(() => import("./pages/tools/BladderHealthSeniors"));
-const ThyroidHealthSeniors   = lazy(() => import("./pages/tools/ThyroidHealthSeniors"));
-const COPDManagement         = lazy(() => import("./pages/tools/COPDManagement"));
-const KidneyHealthGuide      = lazy(() => import("./pages/tools/KidneyHealthGuide"));
-const AcidRefluxSeniors      = lazy(() => import("./pages/tools/AcidRefluxSeniors"));
 
 // ── Cycle 192 (April 29 2026) — cardiovascular ──
-const StrokeWarningSigns     = lazy(() => import("./pages/tools/StrokeWarningSigns"));
-const HeartFailureBasics     = lazy(() => import("./pages/tools/HeartFailureBasics"));
-const AFibInformation        = lazy(() => import("./pages/tools/AFibInformation"));
-const BloodThinnerGuide      = lazy(() => import("./pages/tools/BloodThinnerGuide"));
-const DVTPreventionSeniors   = lazy(() => import("./pages/tools/DVTPreventionSeniors"));
 
 // ── Cycle 193 (April 29 2026) — end-of-life ──
-const GreenBurialOptions     = lazy(() => import("./pages/tools/GreenBurialOptions"));
-const DeathDoulaGuide        = lazy(() => import("./pages/tools/DeathDoulaGuide"));
-const POLSTOrders            = lazy(() => import("./pages/tools/POLSTOrders"));
-const HospiceMyths           = lazy(() => import("./pages/tools/HospiceMyths"));
-const GriefForFamilyAfterDeath = lazy(() => import("./pages/tools/GriefForFamilyAfterDeath"));
 
 // ── Cycle 194 (April 29 2026) — car maintenance ──
-const TirePickGuide          = lazy(() => import("./pages/tools/TirePickGuide"));
-const OilChangeFrequency     = lazy(() => import("./pages/tools/OilChangeFrequency"));
-const DashcamPicker          = lazy(() => import("./pages/tools/DashcamPicker"));
-const CarBatteryReplacement  = lazy(() => import("./pages/tools/CarBatteryReplacement"));
-const CarMaintenanceSchedule = lazy(() => import("./pages/tools/CarMaintenanceSchedule"));
 
 // ── Cycle 277 (April 30 2026) — auto + driving apps ──
-const CarfaxKBBAppGuide        = lazy(() => import("./pages/tools/CarfaxKBBAppGuide"));
-const EVChargingForSeniors     = lazy(() => import("./pages/tools/EVChargingForSeniors"));
-const SmartParkingForSeniors   = lazy(() => import("./pages/tools/SmartParkingForSeniors"));
-const AutoFixDIYAppsForSeniors = lazy(() => import("./pages/tools/AutoFixDIYAppsForSeniors"));
-const SeniorMotorcycleRiding   = lazy(() => import("./pages/tools/SeniorMotorcycleRiding"));
 
 // ── Cycle 278 (April 30 2026) — senior healthcare apps ──
-const MedicareAdvantageCompare    = lazy(() => import("./pages/tools/MedicareAdvantageCompare"));
-const GoodRxForPrescriptions      = lazy(() => import("./pages/tools/GoodRxForPrescriptions"));
-const MyChartPatientPortalGuide   = lazy(() => import("./pages/tools/MyChartPatientPortalGuide"));
-const PillReminderAppsForSeniors  = lazy(() => import("./pages/tools/PillReminderAppsForSeniors"));
-const TelehealthForSeniors        = lazy(() => import("./pages/tools/TelehealthForSeniors"));
 
 // ── Cycle 279 (April 30 2026) — senior travel apps ──
-const TSAPreCheckGlobalEntryGuide    = lazy(() => import("./pages/tools/TSAPreCheckGlobalEntryGuide"));
-const MyTSAAppGuide                  = lazy(() => import("./pages/tools/MyTSAAppGuide"));
-const RoadtripPlannerAppsForSeniors  = lazy(() => import("./pages/tools/RoadtripPlannerAppsForSeniors"));
-const PassportRenewalGuide           = lazy(() => import("./pages/tools/PassportRenewalGuide"));
 
 // ── Cycle 280 (April 30 2026) — senior hobby apps ──
-const HomeCanningGuideForSeniors      = lazy(() => import("./pages/tools/HomeCanningGuideForSeniors"));
-const HamRadioForSeniors              = lazy(() => import("./pages/tools/HamRadioForSeniors"));
-const ModelTrainsAppsForSeniors       = lazy(() => import("./pages/tools/ModelTrainsAppsForSeniors"));
-const SeniorWoodworkingApps           = lazy(() => import("./pages/tools/SeniorWoodworkingApps"));
-const PhotographyForSeniorBeginners   = lazy(() => import("./pages/tools/PhotographyForSeniorBeginners"));
 
 // ── Cycle 281 (April 30 2026) — senior games + brain ──
-const BridgeOnlineForSeniors          = lazy(() => import("./pages/tools/BridgeOnlineForSeniors"));
-const SudokuAppsForSeniors            = lazy(() => import("./pages/tools/SudokuAppsForSeniors"));
-const MahjongOnlineForSeniors         = lazy(() => import("./pages/tools/MahjongOnlineForSeniors"));
-const ChessAppsForSeniorBeginners     = lazy(() => import("./pages/tools/ChessAppsForSeniorBeginners"));
-const CrosswordAppsForSeniorPlayers   = lazy(() => import("./pages/tools/CrosswordAppsForSeniorPlayers"));
 
 // ── Cycle 282 (April 30 2026) — senior accessibility apps ──
-const SeeingAIAppForSeniors           = lazy(() => import("./pages/tools/SeeingAIAppForSeniors"));
-const IPhoneVoiceoverGuide            = lazy(() => import("./pages/tools/iPhoneVoiceoverGuide"));
-const HearingAidConnectIphone         = lazy(() => import("./pages/tools/HearingAidConnectIphone"));
-const CaptionsForSeniorVideoCalls     = lazy(() => import("./pages/tools/CaptionsForSeniorVideoCalls"));
-const ParkinsonsAppsForSeniors        = lazy(() => import("./pages/tools/ParkinsonsAppsForSeniors"));
 
 // ── Cycle 283 (April 30 2026) — senior shopping savings ──
-const RakutenCashbackForSeniors       = lazy(() => import("./pages/tools/RakutenCashbackForSeniors"));
-const HoneyCouponAppForSeniors        = lazy(() => import("./pages/tools/HoneyCouponAppForSeniors"));
-const CapitalOneShoppingForSeniors    = lazy(() => import("./pages/tools/CapitalOneShoppingForSeniors"));
-const FetchRewardsForSeniors          = lazy(() => import("./pages/tools/FetchRewardsForSeniors"));
-const MercariForSeniorSellers         = lazy(() => import("./pages/tools/MercariForSeniorSellers"));
 
 // ── Cycle 284 (April 30 2026) — senior fitness apps ──
-const ResistanceBandsForSeniors          = lazy(() => import("./pages/tools/ResistanceBandsForSeniors"));
-const WaterAerobicsForSeniors            = lazy(() => import("./pages/tools/WaterAerobicsForSeniors"));
-const BalanceTrainingForFallPrevention   = lazy(() => import("./pages/tools/BalanceTrainingForFallPrevention"));
-const YogaForSeniorsApps                 = lazy(() => import("./pages/tools/YogaForSeniorsApps"));
-const WalkingGroupsForSeniorsApps        = lazy(() => import("./pages/tools/WalkingGroupsForSeniorsApps"));
 
 // ── Cycle 285 (April 30 2026) — senior communication apps ──
-const MarcoPoloForSeniorFamilies          = lazy(() => import("./pages/tools/MarcoPoloForSeniorFamilies"));
-const SignalAppForPrivateMessaging        = lazy(() => import("./pages/tools/SignalAppForPrivateMessaging"));
-const TextingBasicsForSeniors             = lazy(() => import("./pages/tools/TextingBasicsForSeniors"));
-const GroupTextSetupForSeniorFamilies     = lazy(() => import("./pages/tools/GroupTextSetupForSeniorFamilies"));
-const EmojiAndGifsForSeniors              = lazy(() => import("./pages/tools/EmojiAndGifsForSeniors"));
 
 // ── Cycle 286 (April 30 2026) — senior smart home apps ──
-const GoogleNestHubForSeniors             = lazy(() => import("./pages/tools/GoogleNestHubForSeniors"));
-const AppleTVSetupForSeniors              = lazy(() => import("./pages/tools/AppleTVSetupForSeniors"));
-const ChromecastForSeniorTV               = lazy(() => import("./pages/tools/ChromecastForSeniorTV"));
-const SmartSprinklerForSeniors            = lazy(() => import("./pages/tools/SmartSprinklerForSeniors"));
-const SmartCeilingFanForSeniors           = lazy(() => import("./pages/tools/SmartCeilingFanForSeniors"));
 
 // ── Cycle 287 (April 30 2026) — senior security + lost devices ──
-const AirTagSetupForSeniors                = lazy(() => import("./pages/tools/AirTagSetupForSeniors"));
-const FindMyDeviceAndroidSeniors           = lazy(() => import("./pages/tools/FindMyDeviceAndroidSeniors"));
-const AuthenticatorAppForSeniors           = lazy(() => import("./pages/tools/AuthenticatorAppForSeniors"));
-const OnePasswordForSeniors                = lazy(() => import("./pages/tools/OnePasswordForSeniors"));
-const PixelPhoneForSeniors                 = lazy(() => import("./pages/tools/PixelPhoneForSeniors"));
 
 // ── Cycle 288 (April 30 2026) — senior banking apps deeper ──
-const CreditKarmaForSeniors                 = lazy(() => import("./pages/tools/CreditKarmaForSeniors"));
-const CreditFreezeForSeniors                = lazy(() => import("./pages/tools/CreditFreezeForSeniors"));
-const MonarchMoneyForSeniorBudget           = lazy(() => import("./pages/tools/MonarchMoneyForSeniorBudget"));
-const EmpowerPersonalCapitalForSeniors      = lazy(() => import("./pages/tools/EmpowerPersonalCapitalForSeniors"));
-const OnlineHighYieldSavingsForSeniors      = lazy(() => import("./pages/tools/OnlineHighYieldSavingsForSeniors"));
 
 // ── Cycle 289 (April 30 2026) — senior wellness + mental health ──
-const BetterHelpForSeniors                  = lazy(() => import("./pages/tools/BetterHelpForSeniors"));
-const CompanionRobotsForSeniors             = lazy(() => import("./pages/tools/CompanionRobotsForSeniors"));
-const HeadspaceForSeniors                   = lazy(() => import("./pages/tools/HeadspaceForSeniors"));
-const AICompanionAppsForSeniors             = lazy(() => import("./pages/tools/AICompanionAppsForSeniors"));
-const SleepStoriesForSeniorInsomnia         = lazy(() => import("./pages/tools/SleepStoriesForSeniorInsomnia"));
 
 // ── Cycle 290 (April 30 2026) — senior Apple ecosystem ──
-const AirPodsProHearingAidMode              = lazy(() => import("./pages/tools/AirPodsProHearingAidMode"));
-const AppleContinuityForSeniors             = lazy(() => import("./pages/tools/AppleContinuityForSeniors"));
-const IMessageMasteryForSeniors             = lazy(() => import("./pages/tools/iMessageMasteryForSeniors"));
-const MacBookForSeniors                     = lazy(() => import("./pages/tools/MacBookForSeniors"));
-const SiriShortcutsForSeniors               = lazy(() => import("./pages/tools/SiriShortcutsForSeniors"));
 
 // ── Cycle 291 (April 30 2026) — senior streaming alternatives ──
-const YouTubeTVForSeniors                   = lazy(() => import("./pages/tools/YouTubeTVForSeniors"));
-const FrndlyTVForSeniors                    = lazy(() => import("./pages/tools/FrndlyTVForSeniors"));
-const SlingTVForSeniors                     = lazy(() => import("./pages/tools/SlingTVForSeniors"));
-const PhiloTVForSeniors                     = lazy(() => import("./pages/tools/PhiloTVForSeniors"));
-const RokuChannelFreeForSeniors             = lazy(() => import("./pages/tools/RokuChannelFreeForSeniors"));
 
 // ── Cycle 292 (April 30 2026) — senior browser/web essentials ──
-const AdBlockerForSeniorBrowsers            = lazy(() => import("./pages/tools/AdBlockerForSeniorBrowsers"));
-const BrowserTabManagementForSeniors        = lazy(() => import("./pages/tools/BrowserTabManagementForSeniors"));
-const ChromeBookmarksSyncForSeniors         = lazy(() => import("./pages/tools/ChromeBookmarksSyncForSeniors"));
-const IncognitoModeForSeniors               = lazy(() => import("./pages/tools/IncognitoModeForSeniors"));
-const PocketReadingListForSeniors           = lazy(() => import("./pages/tools/PocketReadingListForSeniors"));
 
 // ── Cycle 293 (April 30 2026) — senior food + recipes ──
-const NYTCookingForSeniors                  = lazy(() => import("./pages/tools/NYTCookingForSeniors"));
-const LoseItAppForSeniors                   = lazy(() => import("./pages/tools/LoseItAppForSeniors"));
-const MealPlanningForSeniors                = lazy(() => import("./pages/tools/MealPlanningForSeniors"));
-const SeriousEatsForSeniorCooks             = lazy(() => import("./pages/tools/SeriousEatsForSeniorCooks"));
-const AmericasTestKitchenForSeniors         = lazy(() => import("./pages/tools/AmericasTestKitchenForSeniors"));
 
 // ── Cycle 294 (April 30 2026) — senior AI assistants ──
-const PerplexityAIForSeniors                = lazy(() => import("./pages/tools/PerplexityAIForSeniors"));
-const GoogleGeminiForSeniors                = lazy(() => import("./pages/tools/GoogleGeminiForSeniors"));
-const MicrosoftCopilotForSeniors            = lazy(() => import("./pages/tools/MicrosoftCopilotForSeniors"));
-const AIForSeniorEmailWriting               = lazy(() => import("./pages/tools/AIForSeniorEmailWriting"));
-const AIPhotoEditingForSeniors              = lazy(() => import("./pages/tools/AIPhotoEditingForSeniors"));
 
 // ── Cycle 295 (April 30 2026) — senior document tools ──
-const AdobeScanForSeniors                   = lazy(() => import("./pages/tools/AdobeScanForSeniors"));
-const DocuSignForSeniorContracts            = lazy(() => import("./pages/tools/DocuSignForSeniorContracts"));
-const MobilePrintingForSeniors              = lazy(() => import("./pages/tools/MobilePrintingForSeniors"));
-const IPhoneScannerTechniquesForSeniors     = lazy(() => import("./pages/tools/iPhoneScannerTechniquesForSeniors"));
-const OCRForSeniorTextExtraction            = lazy(() => import("./pages/tools/OCRForSeniorTextExtraction"));
 
 // ── Cycle 296 (April 30 2026) — senior cloud + storage ──
-const ICloudUpgradeGuideForSeniors          = lazy(() => import("./pages/tools/iCloudUpgradeGuideForSeniors"));
-const GoogleOneForSeniors                   = lazy(() => import("./pages/tools/GoogleOneForSeniors"));
-const DropboxForSeniors                     = lazy(() => import("./pages/tools/DropboxForSeniors"));
-const BackblazeForSeniorBackup              = lazy(() => import("./pages/tools/BackblazeForSeniorBackup"));
-const SeniorPhotoBackupStrategy             = lazy(() => import("./pages/tools/SeniorPhotoBackupStrategy"));
 
 // ── Cycle 297 (April 30 2026) — senior phone tips ──
-const MagSafeChargingForSeniors             = lazy(() => import("./pages/tools/MagSafeChargingForSeniors"));
-const PhoneWaterDamageForSeniors            = lazy(() => import("./pages/tools/PhoneWaterDamageForSeniors"));
-const CrackedScreenRepairForSeniors         = lazy(() => import("./pages/tools/CrackedScreenRepairForSeniors"));
-const PopSocketGripForSeniors               = lazy(() => import("./pages/tools/PopSocketGripForSeniors"));
-const SeniorFriendlyPhoneCases              = lazy(() => import("./pages/tools/SeniorFriendlyPhoneCases"));
 
 // ── Cycle 298 (April 30 2026) — senior video calling deep ──
-const GoogleMeetForSeniors                  = lazy(() => import("./pages/tools/GoogleMeetForSeniors"));
-const FaceTimeMasteryForSeniors             = lazy(() => import("./pages/tools/FaceTimeMasteryForSeniors"));
-const WebexForSeniorMedicalVisits           = lazy(() => import("./pages/tools/WebexForSeniorMedicalVisits"));
-const VideoCallLightingForSeniors           = lazy(() => import("./pages/tools/VideoCallLightingForSeniors"));
-const USBMicrophoneForSeniors               = lazy(() => import("./pages/tools/USBMicrophoneForSeniors"));
 
 // ── Cycle 299 (April 30 2026) — senior services ──
-const GoGoGrandparentForSeniors             = lazy(() => import("./pages/tools/GoGoGrandparentForSeniors"));
-const CarwashSubscriptionForSeniors         = lazy(() => import("./pages/tools/CarwashSubscriptionForSeniors"));
-const LaundryPickupForSeniors               = lazy(() => import("./pages/tools/LaundryPickupForSeniors"));
-const AAAAppForSeniorEmergency              = lazy(() => import("./pages/tools/AAAAppForSeniorEmergency"));
-const AirportAssistanceForSeniors           = lazy(() => import("./pages/tools/AirportAssistanceForSeniors"));
 
 // ── Cycle 300 (April 30 2026) — senior wearables + health monitors ──
-const AppleWatchFacesForSeniors             = lazy(() => import("./pages/tools/AppleWatchFacesForSeniors"));
-const AppleWatchBandsForSeniors             = lazy(() => import("./pages/tools/AppleWatchBandsForSeniors"));
-const KardiaMobileEKGForSeniors             = lazy(() => import("./pages/tools/KardiaMobileEKGForSeniors"));
-const WithingsSmartScaleForSeniors          = lazy(() => import("./pages/tools/WithingsSmartScaleForSeniors"));
-const ContinuousGlucoseMonitorForSeniors    = lazy(() => import("./pages/tools/ContinuousGlucoseMonitorForSeniors"));
 
 // ── Cycle 301 (April 30 2026) — senior shopping memberships ──
-const TargetCircle360ForSeniors             = lazy(() => import("./pages/tools/TargetCircle360ForSeniors"));
-const WalmartPlusForSeniors                 = lazy(() => import("./pages/tools/WalmartPlusForSeniors"));
-const KrogerDigitalForSeniors               = lazy(() => import("./pages/tools/KrogerDigitalForSeniors"));
-const WalgreensAppForSeniors                = lazy(() => import("./pages/tools/WalgreensAppForSeniors"));
-const CostcoAppForSeniors                   = lazy(() => import("./pages/tools/CostcoAppForSeniors"));
 
 // ── Cycle 302 (April 30 2026) — senior education + learning ──
-const GetSetUpForSeniors                    = lazy(() => import("./pages/tools/GetSetUpForSeniors"));
-const RoadScholarForSeniors                 = lazy(() => import("./pages/tools/RoadScholarForSeniors"));
-const SkillshareForSeniorLearning           = lazy(() => import("./pages/tools/SkillshareForSeniorLearning"));
-const UdemyForSeniorCourses                 = lazy(() => import("./pages/tools/UdemyForSeniorCourses"));
-const OutschoolForGrandkidSharing           = lazy(() => import("./pages/tools/OutschoolForGrandkidSharing"));
 
 // ── Cycle 303 (April 30 2026) — senior tax + financial planning ──
-const IRSDirectFileForSeniors               = lazy(() => import("./pages/tools/IRSDirectFileForSeniors"));
-const EstateOrganizingAppsForSeniors        = lazy(() => import("./pages/tools/EstateOrganizingAppsForSeniors"));
-const SocialSecurityClaimingApps            = lazy(() => import("./pages/tools/SocialSecurityClaimingApps"));
-const RetirementCalculatorsForSeniors       = lazy(() => import("./pages/tools/RetirementCalculatorsForSeniors"));
-const TaxLossHarvestingForSeniors           = lazy(() => import("./pages/tools/TaxLossHarvestingForSeniors"));
 
 // ── Cycle 304 (April 30 2026) — senior smart speaker deep ──
-const AlexaDropInForSeniorFamilies          = lazy(() => import("./pages/tools/AlexaDropInForSeniorFamilies"));
-const EchoShowForSeniorMomCenter            = lazy(() => import("./pages/tools/EchoShowForSeniorMomCenter"));
-const GoogleAssistantRoutinesForSeniors     = lazy(() => import("./pages/tools/GoogleAssistantRoutinesForSeniors"));
-const SiriFamilyGroupForSeniors             = lazy(() => import("./pages/tools/SiriFamilyGroupForSeniors"));
-const SmartSpeakerPrivacyForSeniors         = lazy(() => import("./pages/tools/SmartSpeakerPrivacyForSeniors"));
 
 // ── Cycle 305 (April 30 2026) — senior writing + journaling ──
-const JournalingAppsForSeniors              = lazy(() => import("./pages/tools/JournalingAppsForSeniors"));
-const MemoirWritingAppsForSeniors           = lazy(() => import("./pages/tools/MemoirWritingAppsForSeniors"));
-const GoogleDocsForSeniorWriting            = lazy(() => import("./pages/tools/GoogleDocsForSeniorWriting"));
-const GrammarlyForSeniorWriting             = lazy(() => import("./pages/tools/GrammarlyForSeniorWriting"));
-const PenZuJournalAlternative               = lazy(() => import("./pages/tools/PenZuJournalAlternative"));
 
 // ── Cycle 306 (April 30 2026) — senior travel apps deeper ──
-const HotelTonightForSeniors                = lazy(() => import("./pages/tools/HotelTonightForSeniors"));
-const GoogleFlightsForSeniors               = lazy(() => import("./pages/tools/GoogleFlightsForSeniors"));
-const TripItForSeniorTravelers              = lazy(() => import("./pages/tools/TripItForSeniorTravelers"));
-const RVTripsForSeniors                     = lazy(() => import("./pages/tools/RVTripsForSeniors"));
-const CruiseAppsDeepDive                    = lazy(() => import("./pages/tools/CruiseAppsDeepDive"));
 
 // ── Cycle 307 (April 30 2026) — senior streaming alternatives ──
-const MaxStreamingForSeniors                = lazy(() => import("./pages/tools/MaxStreamingForSeniors"));
-const AppleTVPlusForSeniors                 = lazy(() => import("./pages/tools/AppleTVPlusForSeniors"));
-const PrimeVideoForSeniors                  = lazy(() => import("./pages/tools/PrimeVideoForSeniors"));
-const PBSForSeniors                         = lazy(() => import("./pages/tools/PBSForSeniors"));
-const AcornTVForSeniorBritishFans           = lazy(() => import("./pages/tools/AcornTVForSeniorBritishFans"));
 
 // ── Cycle 308 (April 30 2026) — senior wellness deep ──
-const RingFitForSeniors                     = lazy(() => import("./pages/tools/RingFitForSeniors"));
-const CPAPMaskForSeniors                    = lazy(() => import("./pages/tools/CPAPMaskForSeniors"));
-const SunsetLampsForSeniorSleep             = lazy(() => import("./pages/tools/SunsetLampsForSeniorSleep"));
-const EatingWindowAppsForSeniors            = lazy(() => import("./pages/tools/EatingWindowAppsForSeniors"));
-const SauerkrautBeansForSeniorGut           = lazy(() => import("./pages/tools/SauerkrautBeansForSeniorGut"));
 
 // ── Cycle 309 (April 30 2026) — senior productivity hacks ──
-const EmailFiltersForSeniors                = lazy(() => import("./pages/tools/EmailFiltersForSeniors"));
-const UnsubscribeAppsForSeniors             = lazy(() => import("./pages/tools/UnsubscribeAppsForSeniors"));
-const PhoneStorageOptimizationForSeniors    = lazy(() => import("./pages/tools/PhoneStorageOptimizationForSeniors"));
-const HomeScreenLayoutForSeniors            = lazy(() => import("./pages/tools/HomeScreenLayoutForSeniors"));
-const NotificationManagementForSeniors      = lazy(() => import("./pages/tools/NotificationManagementForSeniors"));
 
 // ── Cycle 310 (April 30 2026) — senior life skills tech ──
-const QRCodeBasicsForSeniors                = lazy(() => import("./pages/tools/QRCodeBasicsForSeniors"));
-const MapsOfflineForSeniorTravel            = lazy(() => import("./pages/tools/MapsOfflineForSeniorTravel"));
-const CalculatorAppsForSeniors              = lazy(() => import("./pages/tools/CalculatorAppsForSeniors"));
-const FlashlightForSeniors                  = lazy(() => import("./pages/tools/FlashlightForSeniors"));
-const TimerAlarmForSeniors                  = lazy(() => import("./pages/tools/TimerAlarmForSeniors"));
 
 // ── Cycle 311 (April 30 2026) — senior household helpers ──
-const MintMobileForSeniors                  = lazy(() => import("./pages/tools/MintMobileForSeniors"));
-const HomeMaintenanceAppsForSeniors         = lazy(() => import("./pages/tools/HomeMaintenanceAppsForSeniors"));
-const SmartPlugsForSeniorHome               = lazy(() => import("./pages/tools/SmartPlugsForSeniorHome"));
-const CleaningAppsForSeniors                = lazy(() => import("./pages/tools/CleaningAppsForSeniors"));
-const PlumberHandymanAppsForSeniors         = lazy(() => import("./pages/tools/PlumberHandymanAppsForSeniors"));
 
 // ── Cycle 312 (April 30 2026) — senior pet apps deeper ──
-const PetCameraForSeniors                   = lazy(() => import("./pages/tools/PetCameraForSeniors"));
-const AutomatedFeedersForSeniorPets         = lazy(() => import("./pages/tools/AutomatedFeedersForSeniorPets"));
-const PetMedicationApps                     = lazy(() => import("./pages/tools/PetMedicationApps"));
-const PetTrackerForSeniors                  = lazy(() => import("./pages/tools/PetTrackerForSeniors"));
-const VetTelehealthForSeniorPets            = lazy(() => import("./pages/tools/VetTelehealthForSeniorPets"));
 
 // ── Cycle 313 (April 30 2026) — senior emergency tech ──
-const MedicalAlertWatchesForSeniors         = lazy(() => import("./pages/tools/MedicalAlertWatchesForSeniors"));
-const SOSiPhoneSetupForSeniors              = lazy(() => import("./pages/tools/SOSiPhoneSetupForSeniors"));
-const CrashDetectionForSeniors              = lazy(() => import("./pages/tools/CrashDetectionForSeniors"));
-const SatellitePhonesForSeniorTravel        = lazy(() => import("./pages/tools/SatellitePhonesForSeniorTravel"));
-const EmergencyContactsForSeniorPhones      = lazy(() => import("./pages/tools/EmergencyContactsForSeniorPhones"));
 
 // ── Cycle 314 (April 30 2026) — senior caregiver tools ──
-const CaringBridgeForSeniorFamilies         = lazy(() => import("./pages/tools/CaringBridgeForSeniorFamilies"));
-const MealTrainForSeniorRecovery            = lazy(() => import("./pages/tools/MealTrainForSeniorRecovery"));
-const CaregiverAppCareCoordinationForSeniors = lazy(() => import("./pages/tools/CaregiverAppCareCoordinationForSeniors"));
-const HomeHealthAideAppsForSeniors          = lazy(() => import("./pages/tools/HomeHealthAideAppsForSeniors"));
-const MedicareAdvisorAppsForSeniors         = lazy(() => import("./pages/tools/MedicareAdvisorAppsForSeniors"));
 
 // ── Cycle 315 (April 30 2026) — senior music apps deeper ──
-const SiriusXMForSeniors                    = lazy(() => import("./pages/tools/SiriusXMForSeniors"));
-const PandoraForSeniors                     = lazy(() => import("./pages/tools/PandoraForSeniors"));
-const MusicTherapyAppsForSeniors            = lazy(() => import("./pages/tools/MusicTherapyAppsForSeniors"));
-const AudibleForSeniorListeners             = lazy(() => import("./pages/tools/AudibleForSeniorListeners"));
-const RecordPlayerForSeniorRecords          = lazy(() => import("./pages/tools/RecordPlayerForSeniorRecords"));
 
 // ── Cycle 316 (April 30 2026) — senior digital security deep ──
-const VPNForSeniorPrivacy                   = lazy(() => import("./pages/tools/VPNForSeniorPrivacy"));
-const PasswordManagerComparisonForSeniors   = lazy(() => import("./pages/tools/PasswordManagerComparisonForSeniors"));
-const PhishingTrainingForSeniors            = lazy(() => import("./pages/tools/PhishingTrainingForSeniors"));
-const SafeBankingAppsForSeniors             = lazy(() => import("./pages/tools/SafeBankingAppsForSeniors"));
-const SocialMediaPrivacyForSeniors          = lazy(() => import("./pages/tools/SocialMediaPrivacyForSeniors"));
 
 // ── Cycle 317 (April 30 2026) — senior shopping deals deep ──
-const CamelCamelCamelForSeniors             = lazy(() => import("./pages/tools/CamelCamelCamelForSeniors"));
-const CashbackCardsForSeniors               = lazy(() => import("./pages/tools/CashbackCardsForSeniors"));
-const AARPDiscountAppForSeniors             = lazy(() => import("./pages/tools/AARPDiscountAppForSeniors"));
-const SeniorMovieDiscountFinder             = lazy(() => import("./pages/tools/SeniorMovieDiscountFinder"));
-const SeniorRestaurantSavings               = lazy(() => import("./pages/tools/SeniorRestaurantSavings"));
 
 // ── Cycle 318 (April 30 2026) — senior reading apps deeper ──
-const KindleForSeniorReaders                = lazy(() => import("./pages/tools/KindleForSeniorReaders"));
-const GoodreadsForSeniors                   = lazy(() => import("./pages/tools/GoodreadsForSeniors"));
-const AudibleVsLibbyForSeniors              = lazy(() => import("./pages/tools/AudibleVsLibbyForSeniors"));
-const LargePrintBookFinderForSeniors        = lazy(() => import("./pages/tools/LargePrintBookFinderForSeniors"));
 
 // ── Cycle 319 (April 30 2026) — senior video creation ──
-const IMovieForSeniors                      = lazy(() => import("./pages/tools/iMovieForSeniors"));
-const YouTubeChannelForSeniors              = lazy(() => import("./pages/tools/YouTubeChannelForSeniors"));
-const GooglePhotosVideosForSeniors          = lazy(() => import("./pages/tools/GooglePhotosVideosForSeniors"));
-const MagicMomentsForSeniors                = lazy(() => import("./pages/tools/MagicMomentsForSeniors"));
-const SenderSlideShowForSeniors             = lazy(() => import("./pages/tools/SenderSlideShowForSeniors"));
 
 // ── Cycle 320 (April 30 2026) — senior smart home essentials ──
-const SmartDoorbellForSeniors               = lazy(() => import("./pages/tools/SmartDoorbellForSeniors"));
-const SmartLockForSeniors                   = lazy(() => import("./pages/tools/SmartLockForSeniors"));
-const SmartThermostatForSeniors             = lazy(() => import("./pages/tools/SmartThermostatForSeniors"));
-const SmartLightingForSeniors               = lazy(() => import("./pages/tools/SmartLightingForSeniors"));
-const SmartSmokeDetectorForSeniors          = lazy(() => import("./pages/tools/SmartSmokeDetectorForSeniors"));
 
 // ── Cycle 321 (April 30 2026) — senior fitness equipment ──
-const MirrorFitnessForSeniors               = lazy(() => import("./pages/tools/MirrorFitnessForSeniors"));
-const AppleFitnessPlusForSeniors            = lazy(() => import("./pages/tools/AppleFitnessPlusForSeniors"));
-const HomeGymBudgetForSeniors               = lazy(() => import("./pages/tools/HomeGymBudgetForSeniors"));
-const RecumbentBikeForSeniors               = lazy(() => import("./pages/tools/RecumbentBikeForSeniors"));
-const MassageGunForSeniors                  = lazy(() => import("./pages/tools/MassageGunForSeniors"));
 
 // ── Cycle 322 (April 30 2026) — senior travel deeper ──
-const AirHelpForSeniors                     = lazy(() => import("./pages/tools/AirHelpForSeniors"));
-const SeatGuruForSeniors                    = lazy(() => import("./pages/tools/SeatGuruForSeniors"));
-const PassportPhotoAppsForSeniors           = lazy(() => import("./pages/tools/PassportPhotoAppsForSeniors"));
-const CurrencyExchangeForSeniorTravel       = lazy(() => import("./pages/tools/CurrencyExchangeForSeniorTravel"));
 
 // ── Cycle 323 (April 30 2026) — senior personal care ──
-const HearingTestAppsForSeniors             = lazy(() => import("./pages/tools/HearingTestAppsForSeniors"));
-const SkincareAppsForSeniors                = lazy(() => import("./pages/tools/SkincareAppsForSeniors"));
-const EyeCareAppsForSeniors                 = lazy(() => import("./pages/tools/EyeCareAppsForSeniors"));
-const HairLossAppsForSeniors                = lazy(() => import("./pages/tools/HairLossAppsForSeniors"));
-const DentalAppsForSeniors                  = lazy(() => import("./pages/tools/DentalAppsForSeniors"));
 
 // ── Cycle 324 (April 30 2026) — senior tech support ──
-const AppleCareForSeniors                   = lazy(() => import("./pages/tools/AppleCareForSeniors"));
-const GenSpecsuPGuideForSeniors             = lazy(() => import("./pages/tools/GenSpecsuPGuideForSeniors"));
-const RemoteSupportForSeniors               = lazy(() => import("./pages/tools/RemoteSupportForSeniors"));
-const SeniorTechClassesOnline               = lazy(() => import("./pages/tools/SeniorTechClassesOnline"));
-const AppleAccessibilityHelplineSeniors     = lazy(() => import("./pages/tools/AppleAccessibilityHelplineSeniors"));
 
 // ── Cycle 325 (April 30 2026) — senior gardening apps deeper ──
-const SeekByINaturalistSeniors              = lazy(() => import("./pages/tools/SeekByINaturalistSeniors"));
-const RaisedBedAppsForSeniors               = lazy(() => import("./pages/tools/RaisedBedAppsForSeniors"));
-const PestIDAppsForSeniors                  = lazy(() => import("./pages/tools/PestIDAppsForSeniors"));
-const CompostAppsForSeniors                 = lazy(() => import("./pages/tools/CompostAppsForSeniors"));
-const HydroponicForSeniors                  = lazy(() => import("./pages/tools/HydroponicForSeniors"));
 
 // ── Cycle 326 (April 30 2026) — senior phone backup + recovery ──
-const ICloudBackupForSeniors                = lazy(() => import("./pages/tools/iCloudBackupForSeniors"));
-const PhoneTransferForSeniors               = lazy(() => import("./pages/tools/PhoneTransferForSeniors"));
-const AppleIDRecoveryForSeniors             = lazy(() => import("./pages/tools/AppleIDRecoveryForSeniors"));
-const SIMTransferForSeniors                 = lazy(() => import("./pages/tools/SIMTransferForSeniors"));
-const IPhoneInsuranceForSeniors             = lazy(() => import("./pages/tools/iPhoneInsuranceForSeniors"));
 
 // ── Cycle 327 (April 30 2026) — senior calendar + scheduling ──
-const AppleCalendarTipsForSeniors           = lazy(() => import("./pages/tools/AppleCalendarTipsForSeniors"));
-const RemindersAppForSeniorsPro             = lazy(() => import("./pages/tools/RemindersAppForSeniorsPro"));
-const AppointmentTrackingForSeniors         = lazy(() => import("./pages/tools/AppointmentTrackingForSeniors"));
-const RecurringTaskSetupForSeniors          = lazy(() => import("./pages/tools/RecurringTaskSetupForSeniors"));
-const CalendlyForSeniorScheduling           = lazy(() => import("./pages/tools/CalendlyForSeniorScheduling"));
 
 // ── Cycle 328 (April 30 2026) — senior weather + safety ──
-const AccuWeatherForSeniors                 = lazy(() => import("./pages/tools/AccuWeatherForSeniors"));
-const EmergencyBroadcastsForSeniors         = lazy(() => import("./pages/tools/EmergencyBroadcastsForSeniors"));
-const HomeSecurityCamerasForSeniors         = lazy(() => import("./pages/tools/HomeSecurityCamerasForSeniors"));
-const PoolSafetyForSeniorGrandkids          = lazy(() => import("./pages/tools/PoolSafetyForSeniorGrandkids"));
-const CarbonMonoxideAppsForSeniors          = lazy(() => import("./pages/tools/CarbonMonoxideAppsForSeniors"));
 
 // ── Cycle 329 (April 30 2026) — senior fitness trackers deeper ──
-const FitbitInspireForSeniors               = lazy(() => import("./pages/tools/FitbitInspireForSeniors"));
-const StepCountAppsForSeniors               = lazy(() => import("./pages/tools/StepCountAppsForSeniors"));
-const SeniorHRZonesGuide                    = lazy(() => import("./pages/tools/SeniorHRZonesGuide"));
-const StravaForSeniorWalkers                = lazy(() => import("./pages/tools/StravaForSeniorWalkers"));
-const StrengthTrainingForSeniorAppGuide     = lazy(() => import("./pages/tools/StrengthTrainingForSeniorAppGuide"));
 
 // ── Cycle 330 (April 30 2026) — senior speech + voice ──
-const SpeechToTextSeniorPro                 = lazy(() => import("./pages/tools/SpeechToTextSeniorPro"));
-const AICloneVoiceForSeniors                = lazy(() => import("./pages/tools/AICloneVoiceForSeniors"));
-const SpeakSelectionForSeniors              = lazy(() => import("./pages/tools/SpeakSelectionForSeniors"));
-const VoicePinSetupForSeniors               = lazy(() => import("./pages/tools/VoicePinSetupForSeniors"));
-const PodcastTranscriptsForSeniors          = lazy(() => import("./pages/tools/PodcastTranscriptsForSeniors"));
 
 // ── Cycle 331 (April 30 2026) — senior keyboard + streaming ──
-const SeniorMacShortcuts                    = lazy(() => import("./pages/tools/SeniorMacShortcuts"));
-const SeniorWindowsShortcuts                = lazy(() => import("./pages/tools/SeniorWindowsShortcuts"));
-const IPadProForSeniors                     = lazy(() => import("./pages/tools/iPadProForSeniors"));
-const RokuStreamingForSeniors               = lazy(() => import("./pages/tools/RokuStreamingForSeniors"));
-const FireStickForSeniors                   = lazy(() => import("./pages/tools/FireStickForSeniors"));
 
 // ── Cycle 332 (May 2 2026) — senior tech essentials ──
-const ApplePencilForSeniors                 = lazy(() => import("./pages/tools/ApplePencilForSeniors"));
-const IPhoneCameraTipsForSeniors            = lazy(() => import("./pages/tools/iPhoneCameraTipsForSeniors"));
-const HomeWifiOptimizationSeniors           = lazy(() => import("./pages/tools/HomeWifiOptimizationSeniors"));
-const SeniorPhoneSecuritySetup              = lazy(() => import("./pages/tools/SeniorPhoneSecuritySetup"));
-const SeniorTechBudgetGuide                 = lazy(() => import("./pages/tools/SeniorTechBudgetGuide"));
 
 // ── Cycle 333 (May 2 2026) — senior crafting hobbies ──
-const QuiltingAppsForSeniors                = lazy(() => import("./pages/tools/QuiltingAppsForSeniors"));
-const PaintingAppsForSeniorArtists          = lazy(() => import("./pages/tools/PaintingAppsForSeniorArtists"));
-const RavelryForKnittersSeniors             = lazy(() => import("./pages/tools/RavelryForKnittersSeniors"));
-const EtsyForSeniorSellers                  = lazy(() => import("./pages/tools/EtsyForSeniorSellers"));
 
 // ── Cycle 334 (May 2 2026) — senior gardening tools ──
-const SmartIrrigationForSeniors             = lazy(() => import("./pages/tools/SmartIrrigationForSeniors"));
-const RobotMowerForSeniors                  = lazy(() => import("./pages/tools/RobotMowerForSeniors"));
-const LeafBlowerSafeForSeniors              = lazy(() => import("./pages/tools/LeafBlowerSafeForSeniors"));
-const SmartGardenForSeniors                 = lazy(() => import("./pages/tools/SmartGardenForSeniors"));
-const BirdFeederSmartCamForSeniors          = lazy(() => import("./pages/tools/BirdFeederSmartCamForSeniors"));
 
 // ── Cycle 335 (May 2 2026) — senior pet care deeper ──
-const PetSitterAppsForSeniors               = lazy(() => import("./pages/tools/PetSitterAppsForSeniors"));
-const AKCAppForSeniorDogOwners              = lazy(() => import("./pages/tools/AKCAppForSeniorDogOwners"));
-const CatBehaviorAppsForSeniors             = lazy(() => import("./pages/tools/CatBehaviorAppsForSeniors"));
-const PetGriefSupportForSeniors             = lazy(() => import("./pages/tools/PetGriefSupportForSeniors"));
-const ServiceAnimalAppsSeniors              = lazy(() => import("./pages/tools/ServiceAnimalAppsSeniors"));
 
 // ── Cycle 336 (May 2 2026) — senior healthcare apps deeper ──
-const Hims4SeniorTelehealth                 = lazy(() => import("./pages/tools/Hims4SeniorTelehealth"));
-const CalmRedSeniorMental                   = lazy(() => import("./pages/tools/CalmRedSeniorMental"));
-const AlcoholFreeAppsSeniors                = lazy(() => import("./pages/tools/AlcoholFreeAppsSeniors"));
-const ChronicConditionAppsSeniors           = lazy(() => import("./pages/tools/ChronicConditionAppsSeniors"));
-const HospiceAppsForFamilies                = lazy(() => import("./pages/tools/HospiceAppsForFamilies"));
 
 // ── Cycle 337 (May 2 2026) — senior accessibility deep ──
-const AssistiveListeningSeniors             = lazy(() => import("./pages/tools/AssistiveListeningSeniors"));
-const SwitchControlSeniorAccess             = lazy(() => import("./pages/tools/SwitchControlSeniorAccess"));
-const ColorBlindSeniorTools                 = lazy(() => import("./pages/tools/ColorBlindSeniorTools"));
-const SubtitleGlassesForSeniors             = lazy(() => import("./pages/tools/SubtitleGlassesForSeniors"));
-const SeniorAccessibilityChecklist          = lazy(() => import("./pages/tools/SeniorAccessibilityChecklist"));
 
 // ── Cycle 338 (May 2 2026) — senior smart appliances ──
-const SmartFridgeForSeniors                 = lazy(() => import("./pages/tools/SmartFridgeForSeniors"));
-const SmartOvenForSeniors                   = lazy(() => import("./pages/tools/SmartOvenForSeniors"));
-const SmartWasherForSeniors                 = lazy(() => import("./pages/tools/SmartWasherForSeniors"));
-const SmartDishwasherForSeniors             = lazy(() => import("./pages/tools/SmartDishwasherForSeniors"));
-const SmartCoffeeForSeniors                 = lazy(() => import("./pages/tools/SmartCoffeeForSeniors"));
 
 // ── Cycle 339 (May 2 2026) — senior wellness deeper ──
-const MovementMonitorForSeniors             = lazy(() => import("./pages/tools/MovementMonitorForSeniors"));
-const PainTrackingAppsSeniors               = lazy(() => import("./pages/tools/PainTrackingAppsSeniors"));
-const HydrationAppsSeniors                  = lazy(() => import("./pages/tools/HydrationAppsSeniors"));
-const SeniorRehabAppsPostSurgery            = lazy(() => import("./pages/tools/SeniorRehabAppsPostSurgery"));
-const SeniorBalanceCoachApps                = lazy(() => import("./pages/tools/SeniorBalanceCoachApps"));
 
 // ── Cycle 340 (May 2 2026) — senior productivity deeper ──
-const PasswordGeneratorForSeniors           = lazy(() => import("./pages/tools/PasswordGeneratorForSeniors"));
-const PrintFromPhoneForSeniors              = lazy(() => import("./pages/tools/PrintFromPhoneForSeniors"));
-const CloudSyncForSeniors                   = lazy(() => import("./pages/tools/CloudSyncForSeniors"));
-const EmailDeclutterForSeniors              = lazy(() => import("./pages/tools/EmailDeclutterForSeniors"));
-const DigitalDeclutterForSeniors            = lazy(() => import("./pages/tools/DigitalDeclutterForSeniors"));
 
 // ── Cycle 341 (May 2 2026) — senior banking deeper ──
-const AppleCardForSeniors                   = lazy(() => import("./pages/tools/AppleCardForSeniors"));
-const RetirementBucketStrategySeniors       = lazy(() => import("./pages/tools/RetirementBucketStrategySeniors"));
-const SeniorEstateAttorney                  = lazy(() => import("./pages/tools/SeniorEstateAttorney"));
-const IBondsForSeniorSavers                 = lazy(() => import("./pages/tools/IBondsForSeniorSavers"));
-const CreditFreezeForSeniorsDeep            = lazy(() => import("./pages/tools/CreditFreezeForSeniorsDeep"));
 
 // ── Cycle 342 (May 2 2026) — senior travel deeper ──
-const AirBnBHostingForSeniors               = lazy(() => import("./pages/tools/AirBnBHostingForSeniors"));
-const SeniorVRTravelExperiences             = lazy(() => import("./pages/tools/SeniorVRTravelExperiences"));
-const MotorhomeRentalForSeniors             = lazy(() => import("./pages/tools/MotorhomeRentalForSeniors"));
-const SeniorBucketListAppPlanning           = lazy(() => import("./pages/tools/SeniorBucketListAppPlanning"));
-const SeniorTravelInsurance                 = lazy(() => import("./pages/tools/SeniorTravelInsurance"));
 
 // ── Cycle 343 (May 2 2026) — senior gifts + family ──
-const AppleArcadeForSeniorGames             = lazy(() => import("./pages/tools/AppleArcadeForSeniorGames"));
-const SeniorGiftIdeasApps                   = lazy(() => import("./pages/tools/SeniorGiftIdeasApps"));
-const FaceTimeSharePlayForSeniors           = lazy(() => import("./pages/tools/FaceTimeSharePlayForSeniors"));
-const SeniorBirthdayRemindersApp            = lazy(() => import("./pages/tools/SeniorBirthdayRemindersApp"));
-const SeniorChristmasShoppingApps           = lazy(() => import("./pages/tools/SeniorChristmasShoppingApps"));
 
 // ── Cycle 344 (May 2 2026) — senior cooking deeper ──
-const MealKitsForSeniors                    = lazy(() => import("./pages/tools/MealKitsForSeniors"));
-const InstantPotForSeniors                  = lazy(() => import("./pages/tools/InstantPotForSeniors"));
-const AirFryerForSeniors                    = lazy(() => import("./pages/tools/AirFryerForSeniors"));
-const SeniorRecipeOrganizer                 = lazy(() => import("./pages/tools/SeniorRecipeOrganizer"));
-const SeniorFoodLogTrack                    = lazy(() => import("./pages/tools/SeniorFoodLogTrack"));
 
 // ── Cycle 345 (May 2 2026) — senior privacy + protection ──
-const SeniorIDTheftRecovery                 = lazy(() => import("./pages/tools/SeniorIDTheftRecovery"));
-const PrivacyDataDeletionSeniors            = lazy(() => import("./pages/tools/PrivacyDataDeletionSeniors"));
-const SeniorPasskeysSetup                   = lazy(() => import("./pages/tools/SeniorPasskeysSetup"));
-const SeniorRobocallBlock                   = lazy(() => import("./pages/tools/SeniorRobocallBlock"));
-const SeniorPrivacyChecklist                = lazy(() => import("./pages/tools/SeniorPrivacyChecklist"));
 
 // ── Cycle 346 (May 2 2026) — senior medical apps deeper ──
-const SeniorBPMonitorApps                   = lazy(() => import("./pages/tools/SeniorBPMonitorApps"));
-const SeniorWeightAndDietApps               = lazy(() => import("./pages/tools/SeniorWeightAndDietApps"));
-const SeniorMedicationManagement            = lazy(() => import("./pages/tools/SeniorMedicationManagement"));
-const MyChartUserGuide                      = lazy(() => import("./pages/tools/MyChartUserGuide"));
-const SeniorMentalHealthApps                = lazy(() => import("./pages/tools/SeniorMentalHealthApps"));
 
 // ── Cycle 347 (May 2 2026) — senior wellness deeper ──
-const SeniorMassageTherapy                  = lazy(() => import("./pages/tools/SeniorMassageTherapy"));
-const SeniorYogaSeniorPrograms              = lazy(() => import("./pages/tools/SeniorYogaSeniorPrograms"));
-const SeniorWalkingClubs                    = lazy(() => import("./pages/tools/SeniorWalkingClubs"));
-const SeniorAcupunctureApps                 = lazy(() => import("./pages/tools/SeniorAcupunctureApps"));
-const SeniorChiropracticGuide               = lazy(() => import("./pages/tools/SeniorChiropracticGuide"));
 
 // ── Cycle 348 (May 2 2026) — senior shopping deeper ──
-const SeniorOnlineGroceryDeep               = lazy(() => import("./pages/tools/SeniorOnlineGroceryDeep"));
-const SeniorBatchCookingApps                = lazy(() => import("./pages/tools/SeniorBatchCookingApps"));
-const AmazonFreshSeniorOrder                = lazy(() => import("./pages/tools/AmazonFreshSeniorOrder"));
-const SeniorPharmacyDeliveryApps            = lazy(() => import("./pages/tools/SeniorPharmacyDeliveryApps"));
-const SeniorBigBoxAppsMembership            = lazy(() => import("./pages/tools/SeniorBigBoxAppsMembership"));
-const SeniorDigitalLegacyPlanning            = lazy(() => import("./pages/tools/SeniorDigitalLegacyPlanning"));
-const SeniorObituaryPlanning                 = lazy(() => import("./pages/tools/SeniorObituaryPlanning"));
-const SeniorAdvanceDirectives                = lazy(() => import("./pages/tools/SeniorAdvanceDirectives"));
-const SeniorPasswordSharing                  = lazy(() => import("./pages/tools/SeniorPasswordSharing"));
-const SeniorEthicalWillApps                  = lazy(() => import("./pages/tools/SeniorEthicalWillApps"));
-const SeniorTSAPrecheckGuide                 = lazy(() => import("./pages/tools/SeniorTSAPrecheckGuide"));
-const SeniorMobilePassportApp                = lazy(() => import("./pages/tools/SeniorMobilePassportApp"));
-const SeniorTravelInsuranceApps              = lazy(() => import("./pages/tools/SeniorTravelInsuranceApps"));
-const SeniorAirlineAppGuide                  = lazy(() => import("./pages/tools/SeniorAirlineAppGuide"));
-const SeniorTravelTranslationApps            = lazy(() => import("./pages/tools/SeniorTravelTranslationApps"));
-const SeniorSmartDoorbellSetup               = lazy(() => import("./pages/tools/SeniorSmartDoorbellSetup"));
-const SeniorSmartLightsGuide                 = lazy(() => import("./pages/tools/SeniorSmartLightsGuide"));
-const SeniorSmartPlugs                       = lazy(() => import("./pages/tools/SeniorSmartPlugs"));
-const SeniorRobotVacuumGuide                 = lazy(() => import("./pages/tools/SeniorRobotVacuumGuide"));
-const SeniorSmartLockGuide                   = lazy(() => import("./pages/tools/SeniorSmartLockGuide"));
-const SeniorBloodPressureApps                = lazy(() => import("./pages/tools/SeniorBloodPressureApps"));
-const SeniorMedicationReminders              = lazy(() => import("./pages/tools/SeniorMedicationReminders"));
-const SeniorGlucoseTracking                  = lazy(() => import("./pages/tools/SeniorGlucoseTracking"));
-const SeniorSymptomTracker                   = lazy(() => import("./pages/tools/SeniorSymptomTracker"));
-const SeniorHearingAidApps                   = lazy(() => import("./pages/tools/SeniorHearingAidApps"));
-const SeniorYogaApps                         = lazy(() => import("./pages/tools/SeniorYogaApps"));
-const SeniorMeditationApps                   = lazy(() => import("./pages/tools/SeniorMeditationApps"));
-const SeniorBrainGames                       = lazy(() => import("./pages/tools/SeniorBrainGames"));
-const SeniorSleepTracking                    = lazy(() => import("./pages/tools/SeniorSleepTracking"));
-const SeniorMobileBanking                    = lazy(() => import("./pages/tools/SeniorMobileBanking"));
-const SeniorZelleVenmo                       = lazy(() => import("./pages/tools/SeniorZelleVenmo"));
-const SeniorBudgetingApps                    = lazy(() => import("./pages/tools/SeniorBudgetingApps"));
-const SeniorSocialSecurityOnline             = lazy(() => import("./pages/tools/SeniorSocialSecurityOnline"));
-const SeniorOnlineTaxes                      = lazy(() => import("./pages/tools/SeniorOnlineTaxes"));
-const SeniorRokuGuide                        = lazy(() => import("./pages/tools/SeniorRokuGuide"));
-const SeniorNetflixTips                      = lazy(() => import("./pages/tools/SeniorNetflixTips"));
-const SeniorYouTubeTips                      = lazy(() => import("./pages/tools/SeniorYouTubeTips"));
-const SeniorAudiobookApps                    = lazy(() => import("./pages/tools/SeniorAudiobookApps"));
-const SeniorFreeMusicApps                    = lazy(() => import("./pages/tools/SeniorFreeMusicApps"));
-const SeniorZoomBasics                       = lazy(() => import("./pages/tools/SeniorZoomBasics"));
-const SeniorFaceTimeBasics                   = lazy(() => import("./pages/tools/SeniorFaceTimeBasics"));
-const SeniorWhatsAppBasics                   = lazy(() => import("./pages/tools/SeniorWhatsAppBasics"));
-const SeniorEmailBasics                      = lazy(() => import("./pages/tools/SeniorEmailBasics"));
-const SeniorTextingTips                      = lazy(() => import("./pages/tools/SeniorTextingTips"));
-const SeniorPhotoBackup                      = lazy(() => import("./pages/tools/SeniorPhotoBackup"));
-const SeniorPhotoSharing                     = lazy(() => import("./pages/tools/SeniorPhotoSharing"));
-const SeniorScanOldPhotos                    = lazy(() => import("./pages/tools/SeniorScanOldPhotos"));
-const SeniorDigitalFrames                    = lazy(() => import("./pages/tools/SeniorDigitalFrames"));
-const SeniorPhotoBookApps                    = lazy(() => import("./pages/tools/SeniorPhotoBookApps"));
-const SeniorAmazonTips                       = lazy(() => import("./pages/tools/SeniorAmazonTips"));
-const SeniorOnlineGroceryBasics              = lazy(() => import("./pages/tools/SeniorOnlineGroceryBasics"));
-const SeniorRakutenCashback                  = lazy(() => import("./pages/tools/SeniorRakutenCashback"));
-const SeniorOnlinePharmacy                   = lazy(() => import("./pages/tools/SeniorOnlinePharmacy"));
-const SeniorOnlineCouponApps                 = lazy(() => import("./pages/tools/SeniorOnlineCouponApps"));
-const SeniorPasswordManagers                 = lazy(() => import("./pages/tools/SeniorPasswordManagers"));
-const SeniorTwoFactorAuth                    = lazy(() => import("./pages/tools/SeniorTwoFactorAuth"));
-const SeniorVPNGuide                         = lazy(() => import("./pages/tools/SeniorVPNGuide"));
-const SeniorIdentityProtection               = lazy(() => import("./pages/tools/SeniorIdentityProtection"));
-const SeniorRobocallBlockers                 = lazy(() => import("./pages/tools/SeniorRobocallBlockers"));
-const SeniorUberLyft                         = lazy(() => import("./pages/tools/SeniorUberLyft"));
-const SeniorGoogleMapsBasics                 = lazy(() => import("./pages/tools/SeniorGoogleMapsBasics"));
-const SeniorParkingApps                      = lazy(() => import("./pages/tools/SeniorParkingApps"));
-const SeniorEVChargingApps                   = lazy(() => import("./pages/tools/SeniorEVChargingApps"));
-const SeniorPublicTransitApps                = lazy(() => import("./pages/tools/SeniorPublicTransitApps"));
-const SeniorAlexaBasics                      = lazy(() => import("./pages/tools/SeniorAlexaBasics"));
-const SeniorGoogleAssistantBasics            = lazy(() => import("./pages/tools/SeniorGoogleAssistantBasics"));
-const SeniorSiriBasics                       = lazy(() => import("./pages/tools/SeniorSiriBasics"));
-const SeniorChatGPTBasics                    = lazy(() => import("./pages/tools/SeniorChatGPTBasics"));
-const SeniorAIVoiceCloneRisks                = lazy(() => import("./pages/tools/SeniorAIVoiceCloneRisks"));
-const SeniorMedicalAlertSystems              = lazy(() => import("./pages/tools/SeniorMedicalAlertSystems"));
-const SeniorEmergencySOS                     = lazy(() => import("./pages/tools/SeniorEmergencySOS"));
-const SeniorWeatherAlerts                    = lazy(() => import("./pages/tools/SeniorWeatherAlerts"));
-const SeniorFindMyPhone                      = lazy(() => import("./pages/tools/SeniorFindMyPhone"));
-const SeniorLifelineTracking                 = lazy(() => import("./pages/tools/SeniorLifelineTracking"));
-const SeniorIPhoneAccessibility              = lazy(() => import("./pages/tools/SeniorIPhoneAccessibility"));
-const SeniorAndroidAccessibility             = lazy(() => import("./pages/tools/SeniorAndroidAccessibility"));
-const SeniorBeMyEyes                         = lazy(() => import("./pages/tools/SeniorBeMyEyes"));
-const SeniorVoiceTextSeniors                 = lazy(() => import("./pages/tools/SeniorVoiceTextSeniors"));
-const SeniorDarkModeBasics                   = lazy(() => import("./pages/tools/SeniorDarkModeBasics"));
-const SeniorPetCameras                       = lazy(() => import("./pages/tools/SeniorPetCameras"));
-const SeniorPetTrackingGPS                   = lazy(() => import("./pages/tools/SeniorPetTrackingGPS"));
-const SeniorChewyApp                         = lazy(() => import("./pages/tools/SeniorChewyApp"));
-const SeniorTelevet                          = lazy(() => import("./pages/tools/SeniorTelevet"));
-const SeniorAutoFeeders                      = lazy(() => import("./pages/tools/SeniorAutoFeeders"));
-const SeniorDuolingoBasics                   = lazy(() => import("./pages/tools/SeniorDuolingoBasics"));
-const SeniorMasterClass                      = lazy(() => import("./pages/tools/SeniorMasterClass"));
-const SeniorKhanAcademy                      = lazy(() => import("./pages/tools/SeniorKhanAcademy"));
-const SeniorCourseraEdX                      = lazy(() => import("./pages/tools/SeniorCourseraEdX"));
-const SeniorOLLISeniorPlanet                 = lazy(() => import("./pages/tools/SeniorOLLISeniorPlanet"));
-const SeniorGardeningApps                    = lazy(() => import("./pages/tools/SeniorGardeningApps"));
-const SeniorBirdingApps                      = lazy(() => import("./pages/tools/SeniorBirdingApps"));
-const SeniorAncestryApp                      = lazy(() => import("./pages/tools/SeniorAncestryApp"));
-const SeniorRecipeApps                       = lazy(() => import("./pages/tools/SeniorRecipeApps"));
-const SeniorPuzzleGames                      = lazy(() => import("./pages/tools/SeniorPuzzleGames"));
-const SeniorSmartThermostats                 = lazy(() => import("./pages/tools/SeniorSmartThermostats"));
-const SeniorEnergyTracking                   = lazy(() => import("./pages/tools/SeniorEnergyTracking"));
-const SeniorWaterLeakSensors                 = lazy(() => import("./pages/tools/SeniorWaterLeakSensors"));
-const SeniorSmartSmokeDetectors              = lazy(() => import("./pages/tools/SeniorSmartSmokeDetectors"));
-const SeniorSmartCameras                     = lazy(() => import("./pages/tools/SeniorSmartCameras"));
-const SeniorFacebookBasics                   = lazy(() => import("./pages/tools/SeniorFacebookBasics"));
-const SeniorInstagramBasics                  = lazy(() => import("./pages/tools/SeniorInstagramBasics"));
-const SeniorNextdoorBasics                   = lazy(() => import("./pages/tools/SeniorNextdoorBasics"));
-const SeniorPinterestBasics                  = lazy(() => import("./pages/tools/SeniorPinterestBasics"));
-const SeniorRedditBasics                     = lazy(() => import("./pages/tools/SeniorRedditBasics"));
-const SeniorAppleWatchSetup                  = lazy(() => import("./pages/tools/SeniorAppleWatchSetup"));
-const SeniorFitbitGuide                      = lazy(() => import("./pages/tools/SeniorFitbitGuide"));
-const SeniorGarminGuide                      = lazy(() => import("./pages/tools/SeniorGarminGuide"));
-const SeniorOuraRing                         = lazy(() => import("./pages/tools/SeniorOuraRing"));
-const SeniorBPMonitorReview                  = lazy(() => import("./pages/tools/SeniorBPMonitorReview"));
-const SeniorTelehealthBasics                 = lazy(() => import("./pages/tools/SeniorTelehealthBasics"));
-const SeniorMyChartGuide                     = lazy(() => import("./pages/tools/SeniorMyChartGuide"));
-const SeniorMedicareOnline                   = lazy(() => import("./pages/tools/SeniorMedicareOnline"));
-const SeniorAppointmentApps                  = lazy(() => import("./pages/tools/SeniorAppointmentApps"));
-const SeniorPrescriptionApps                 = lazy(() => import("./pages/tools/SeniorPrescriptionApps"));
-const SeniorJitterbug                        = lazy(() => import("./pages/tools/SeniorJitterbug"));
-const SeniorConsumerCellular                 = lazy(() => import("./pages/tools/SeniorConsumerCellular"));
-const SeniorIPhoneEasyMode                   = lazy(() => import("./pages/tools/SeniorIPhoneEasyMode"));
-const SeniorAndroidEasyMode                  = lazy(() => import("./pages/tools/SeniorAndroidEasyMode"));
-const SeniorWifiCallingGuide                 = lazy(() => import("./pages/tools/SeniorWifiCallingGuide"));
-const SeniorCaringApps                       = lazy(() => import("./pages/tools/SeniorCaringApps"));
-const SeniorAdultDayCareTech                 = lazy(() => import("./pages/tools/SeniorAdultDayCareTech"));
-const SeniorMealDelivery                     = lazy(() => import("./pages/tools/SeniorMealDelivery"));
-const SeniorRespiteCareApps                  = lazy(() => import("./pages/tools/SeniorRespiteCareApps"));
-const SeniorMemoryAids                       = lazy(() => import("./pages/tools/SeniorMemoryAids"));
-const SeniorMeetupGroups                     = lazy(() => import("./pages/tools/SeniorMeetupGroups"));
-const SeniorVolunteering                     = lazy(() => import("./pages/tools/SeniorVolunteering"));
-const SeniorClassmates                       = lazy(() => import("./pages/tools/SeniorClassmates"));
-const SeniorEReaders                         = lazy(() => import("./pages/tools/SeniorEReaders"));
-const SeniorMagnifierApps                    = lazy(() => import("./pages/tools/SeniorMagnifierApps"));
-const SeniorVisionTesting                    = lazy(() => import("./pages/tools/SeniorVisionTesting"));
-const SeniorOnlineGlasses                    = lazy(() => import("./pages/tools/SeniorOnlineGlasses"));
-const SeniorSeeingAIApp                      = lazy(() => import("./pages/tools/SeniorSeeingAIApp"));
-const SeniorPelotonGuide                     = lazy(() => import("./pages/tools/SeniorPelotonGuide"));
-const SeniorAppleFitness                     = lazy(() => import("./pages/tools/SeniorAppleFitness"));
-const SeniorSilverSneakers                   = lazy(() => import("./pages/tools/SeniorSilverSneakers"));
-const SeniorChairExerciseApps                = lazy(() => import("./pages/tools/SeniorChairExerciseApps"));
-const SeniorPickleballApps                   = lazy(() => import("./pages/tools/SeniorPickleballApps"));
-const SeniorSmartFridges                     = lazy(() => import("./pages/tools/SeniorSmartFridges"));
-const SeniorAirFryers                        = lazy(() => import("./pages/tools/SeniorAirFryers"));
-const SeniorInstantPots                      = lazy(() => import("./pages/tools/SeniorInstantPots"));
-const SeniorElectricKettles                  = lazy(() => import("./pages/tools/SeniorElectricKettles"));
-const SeniorWasherDryerApps                  = lazy(() => import("./pages/tools/SeniorWasherDryerApps"));
-const SeniorGoogleCalendar                   = lazy(() => import("./pages/tools/SeniorGoogleCalendar"));
-const SeniorAppleNotes                       = lazy(() => import("./pages/tools/SeniorAppleNotes"));
-const SeniorGoogleDocs                       = lazy(() => import("./pages/tools/SeniorGoogleDocs"));
-const SeniorTaskApps                         = lazy(() => import("./pages/tools/SeniorTaskApps"));
-const SeniorPDFApps                          = lazy(() => import("./pages/tools/SeniorPDFApps"));
-const SeniorMedicalIDLockScreen              = lazy(() => import("./pages/tools/SeniorMedicalIDLockScreen"));
-const SeniorICEContacts                      = lazy(() => import("./pages/tools/SeniorICEContacts"));
-const SeniorFamilySharing                    = lazy(() => import("./pages/tools/SeniorFamilySharing"));
-const SeniorEmergencyChecklist               = lazy(() => import("./pages/tools/SeniorEmergencyChecklist"));
-const SeniorGrandkidPhotoApps                = lazy(() => import("./pages/tools/SeniorGrandkidPhotoApps"));
-const SeniorPrinterSetup                     = lazy(() => import("./pages/tools/SeniorPrinterSetup"));
-const SeniorScannerApps                      = lazy(() => import("./pages/tools/SeniorScannerApps"));
-const SeniorComputerBasics                   = lazy(() => import("./pages/tools/SeniorComputerBasics"));
-const SeniorRouterSetup                      = lazy(() => import("./pages/tools/SeniorRouterSetup"));
-const SeniorBackupGuide                      = lazy(() => import("./pages/tools/SeniorBackupGuide"));
-const SeniorEncoreCareers                    = lazy(() => import("./pages/tools/SeniorEncoreCareers"));
-const SeniorOnlineFreelancing                = lazy(() => import("./pages/tools/SeniorOnlineFreelancing"));
-const SeniorEtsyShop                         = lazy(() => import("./pages/tools/SeniorEtsyShop"));
-const SeniorEbaySelling                      = lazy(() => import("./pages/tools/SeniorEbaySelling"));
-const SeniorBlogStarter                      = lazy(() => import("./pages/tools/SeniorBlogStarter"));
-const SeniorRetirementCalculators            = lazy(() => import("./pages/tools/SeniorRetirementCalculators"));
-const SeniorRMDApp                           = lazy(() => import("./pages/tools/SeniorRMDApp"));
-const SeniorEstateApps                       = lazy(() => import("./pages/tools/SeniorEstateApps"));
-const SeniorLongTermCare                     = lazy(() => import("./pages/tools/SeniorLongTermCare"));
-const SeniorTaxStrategiesApps                = lazy(() => import("./pages/tools/SeniorTaxStrategiesApps"));
-const SeniorBrainHQRev                       = lazy(() => import("./pages/tools/SeniorBrainHQRev"));
-const SeniorWordleSpellingBee                = lazy(() => import("./pages/tools/SeniorWordleSpellingBee"));
-const SeniorAARPGames                        = lazy(() => import("./pages/tools/SeniorAARPGames"));
-const SeniorElevateApp                       = lazy(() => import("./pages/tools/SeniorElevateApp"));
-const SeniorPeakBrain                        = lazy(() => import("./pages/tools/SeniorPeakBrain"));
-const SeniorBookingDotCom                    = lazy(() => import("./pages/tools/SeniorBookingDotCom"));
-const SeniorRoadScholar                      = lazy(() => import("./pages/tools/SeniorRoadScholar"));
-const SeniorAARPTravelDiscounts              = lazy(() => import("./pages/tools/SeniorAARPTravelDiscounts"));
-const SeniorAirbnbBasics                     = lazy(() => import("./pages/tools/SeniorAirbnbBasics"));
-const SeniorCruiseBookingApps                = lazy(() => import("./pages/tools/SeniorCruiseBookingApps"));
-const SeniorAmazonHouseholdShare             = lazy(() => import("./pages/tools/SeniorAmazonHouseholdShare"));
-const SeniorGrandkidGifts                    = lazy(() => import("./pages/tools/SeniorGrandkidGifts"));
-const SeniorVideoCallTablets                 = lazy(() => import("./pages/tools/SeniorVideoCallTablets"));
-const SeniorWiFiPrintersFamily               = lazy(() => import("./pages/tools/SeniorWiFiPrintersFamily"));
-const SeniorTechGiftsForOlderParents         = lazy(() => import("./pages/tools/SeniorTechGiftsForOlderParents"));
-const SeniorDigitalDeclutter                 = lazy(() => import("./pages/tools/SeniorDigitalDeclutter"));
-const SeniorOldDevicesRecycle                = lazy(() => import("./pages/tools/SeniorOldDevicesRecycle"));
-const SeniorPasswordCleanup                  = lazy(() => import("./pages/tools/SeniorPasswordCleanup"));
-const SeniorOldEmailCleanup                  = lazy(() => import("./pages/tools/SeniorOldEmailCleanup"));
-const SeniorAccountSimplification            = lazy(() => import("./pages/tools/SeniorAccountSimplification"));
-const SeniorDictationApps                    = lazy(() => import("./pages/tools/SeniorDictationApps"));
-const SeniorVoiceMemo                        = lazy(() => import("./pages/tools/SeniorVoiceMemo"));
-const SeniorBigKeyboards                     = lazy(() => import("./pages/tools/SeniorBigKeyboards"));
-const SeniorScreenReaders                    = lazy(() => import("./pages/tools/SeniorScreenReaders"));
-const SeniorOneHandedKeyboard                = lazy(() => import("./pages/tools/SeniorOneHandedKeyboard"));
-const SeniorWeatherApps                      = lazy(() => import("./pages/tools/SeniorWeatherApps"));
-const SeniorNewsApps                         = lazy(() => import("./pages/tools/SeniorNewsApps"));
-const SeniorPodcastApps                      = lazy(() => import("./pages/tools/SeniorPodcastApps"));
-const SeniorTrafficApps                      = lazy(() => import("./pages/tools/SeniorTrafficApps"));
-const SeniorRSSReaders                       = lazy(() => import("./pages/tools/SeniorRSSReaders"));
-const SeniorPriceCompareApps                 = lazy(() => import("./pages/tools/SeniorPriceCompareApps"));
-const SeniorOfferUp                          = lazy(() => import("./pages/tools/SeniorOfferUp"));
-const SeniorReceiptApps                      = lazy(() => import("./pages/tools/SeniorReceiptApps"));
-const SeniorWalmartApp                       = lazy(() => import("./pages/tools/SeniorWalmartApp"));
-const SeniorTargetApp                        = lazy(() => import("./pages/tools/SeniorTargetApp"));
-const SeniorMealPlanningApps                 = lazy(() => import("./pages/tools/SeniorMealPlanningApps"));
-const SeniorRecipeBox                        = lazy(() => import("./pages/tools/SeniorRecipeBox"));
-const SeniorKitchenScales                    = lazy(() => import("./pages/tools/SeniorKitchenScales"));
-const SeniorMyFitnessPal                     = lazy(() => import("./pages/tools/SeniorMyFitnessPal"));
-const SeniorGroceryListApps                  = lazy(() => import("./pages/tools/SeniorGroceryListApps"));
-const SeniorPlantIDApps                      = lazy(() => import("./pages/tools/SeniorPlantIDApps"));
-const SeniorSmartSprinklers                  = lazy(() => import("./pages/tools/SeniorSmartSprinklers"));
-const SeniorGardenPlannerApps                = lazy(() => import("./pages/tools/SeniorGardenPlannerApps"));
-const SeniorBugIDApps                        = lazy(() => import("./pages/tools/SeniorBugIDApps"));
-const SeniorAirQualityApps                   = lazy(() => import("./pages/tools/SeniorAirQualityApps"));
-const SeniorBirdFeederCams                   = lazy(() => import("./pages/tools/SeniorBirdFeederCams"));
-const SeniorWildlifeCams                     = lazy(() => import("./pages/tools/SeniorWildlifeCams"));
-const SeniorPetHealthApps                    = lazy(() => import("./pages/tools/SeniorPetHealthApps"));
-const SeniorAnimalRescueApps                 = lazy(() => import("./pages/tools/SeniorAnimalRescueApps"));
-const SeniorAquariumTech                     = lazy(() => import("./pages/tools/SeniorAquariumTech"));
-const SeniorDrawingApps                      = lazy(() => import("./pages/tools/SeniorDrawingApps"));
-const SeniorMusicCreationApps                = lazy(() => import("./pages/tools/SeniorMusicCreationApps"));
-const SeniorSewingApps                       = lazy(() => import("./pages/tools/SeniorSewingApps"));
-const SeniorWritingApps                      = lazy(() => import("./pages/tools/SeniorWritingApps"));
-const SeniorICloudPlus                       = lazy(() => import("./pages/tools/SeniorICloudPlus"));
-const SeniorGoogleOne                        = lazy(() => import("./pages/tools/SeniorGoogleOne"));
-const SeniorDropboxBasics                    = lazy(() => import("./pages/tools/SeniorDropboxBasics"));
-const SeniorOneDriveBasics                   = lazy(() => import("./pages/tools/SeniorOneDriveBasics"));
-const SeniorBackblaze                        = lazy(() => import("./pages/tools/SeniorBackblaze"));
-const SeniorGoogleMeet                       = lazy(() => import("./pages/tools/SeniorGoogleMeet"));
-const SeniorMessengerVideo                   = lazy(() => import("./pages/tools/SeniorMessengerVideo"));
-const SeniorMarcoPolo                        = lazy(() => import("./pages/tools/SeniorMarcoPolo"));
-const SeniorSkypeBasics                      = lazy(() => import("./pages/tools/SeniorSkypeBasics"));
-const SeniorVideoCallEtiquette               = lazy(() => import("./pages/tools/SeniorVideoCallEtiquette"));
-const SeniorScreenTimeApps                   = lazy(() => import("./pages/tools/SeniorScreenTimeApps"));
-const SeniorBlueLightFilters                 = lazy(() => import("./pages/tools/SeniorBlueLightFilters"));
-const SeniorFocusModes                       = lazy(() => import("./pages/tools/SeniorFocusModes"));
-const SeniorDigitalDetoxApps                 = lazy(() => import("./pages/tools/SeniorDigitalDetoxApps"));
-const SeniorPostureApps                      = lazy(() => import("./pages/tools/SeniorPostureApps"));
-const SeniorCarPlay                          = lazy(() => import("./pages/tools/SeniorCarPlay"));
-const SeniorAndroidAuto                      = lazy(() => import("./pages/tools/SeniorAndroidAuto"));
-const SeniorBackupCameraApps                 = lazy(() => import("./pages/tools/SeniorBackupCameraApps"));
-const SeniorGasPriceApps                     = lazy(() => import("./pages/tools/SeniorGasPriceApps"));
-const SeniorTireInsurance                    = lazy(() => import("./pages/tools/SeniorTireInsurance"));
-const SeniorRingtones                        = lazy(() => import("./pages/tools/SeniorRingtones"));
-const SeniorWidgets                          = lazy(() => import("./pages/tools/SeniorWidgets"));
-const SeniorWallpapers                       = lazy(() => import("./pages/tools/SeniorWallpapers"));
-const SeniorAccessibilityShortcut            = lazy(() => import("./pages/tools/SeniorAccessibilityShortcut"));
-const SeniorBigIcons                         = lazy(() => import("./pages/tools/SeniorBigIcons"));
-const SeniorOnlineCharityGiving              = lazy(() => import("./pages/tools/SeniorOnlineCharityGiving"));
-const SeniorVolunteerOnline                  = lazy(() => import("./pages/tools/SeniorVolunteerOnline"));
-const SeniorPolitical                        = lazy(() => import("./pages/tools/SeniorPolitical"));
-const SeniorMentorPrograms                   = lazy(() => import("./pages/tools/SeniorMentorPrograms"));
-const SeniorReligiousTech                    = lazy(() => import("./pages/tools/SeniorReligiousTech"));
-const SeniorAppleSupport                     = lazy(() => import("./pages/tools/SeniorAppleSupport"));
-const SeniorBestBuy                          = lazy(() => import("./pages/tools/SeniorBestBuy"));
-const SeniorTechRepairScams                  = lazy(() => import("./pages/tools/SeniorTechRepairScams"));
-const SeniorLocalLibraryTech                 = lazy(() => import("./pages/tools/SeniorLocalLibraryTech"));
-const SeniorTekSureBookmark                  = lazy(() => import("./pages/tools/SeniorTekSureBookmark"));
-const SeniorChristmasShopping                = lazy(() => import("./pages/tools/SeniorChristmasShopping"));
-const SeniorHolidayCardApps                  = lazy(() => import("./pages/tools/SeniorHolidayCardApps"));
-const SeniorHolidayDecor                     = lazy(() => import("./pages/tools/SeniorHolidayDecor"));
-const SeniorHolidayTravelTech                = lazy(() => import("./pages/tools/SeniorHolidayTravelTech"));
-const SeniorYearEndChecklist                 = lazy(() => import("./pages/tools/SeniorYearEndChecklist"));
-const SeniorEchoDot                          = lazy(() => import("./pages/tools/SeniorEchoDot"));
-const SeniorBluetoothSpeakers                = lazy(() => import("./pages/tools/SeniorBluetoothSpeakers"));
-const SeniorAirPodsAndAlternatives           = lazy(() => import("./pages/tools/SeniorAirPodsAndAlternatives"));
-const SeniorHomeRadioApps                    = lazy(() => import("./pages/tools/SeniorHomeRadioApps"));
-const SeniorWhiteNoiseApps                   = lazy(() => import("./pages/tools/SeniorWhiteNoiseApps"));
-const SeniorSmartAlarmClocks                 = lazy(() => import("./pages/tools/SeniorSmartAlarmClocks"));
-const SeniorAdjustableBeds                   = lazy(() => import("./pages/tools/SeniorAdjustableBeds"));
-const SeniorSleepTrackerComparison           = lazy(() => import("./pages/tools/SeniorSleepTrackerComparison"));
-const SeniorSnoreApps                        = lazy(() => import("./pages/tools/SeniorSnoreApps"));
-const SeniorRedLightTherapy                  = lazy(() => import("./pages/tools/SeniorRedLightTherapy"));
-const SeniorMassageGuns                      = lazy(() => import("./pages/tools/SeniorMassageGuns"));
-const SeniorTensUnits                        = lazy(() => import("./pages/tools/SeniorTensUnits"));
-const SeniorHotColdTherapy                   = lazy(() => import("./pages/tools/SeniorHotColdTherapy"));
-const SeniorPercussionTherapy                = lazy(() => import("./pages/tools/SeniorPercussionTherapy"));
-const SeniorCompressionBoots                 = lazy(() => import("./pages/tools/SeniorCompressionBoots"));
-const SeniorNutritionTracking                = lazy(() => import("./pages/tools/SeniorNutritionTracking"));
-const SeniorWaterTracking                    = lazy(() => import("./pages/tools/SeniorWaterTracking"));
-const SeniorVitaminApps                      = lazy(() => import("./pages/tools/SeniorVitaminApps"));
-const SeniorIntermittentFasting              = lazy(() => import("./pages/tools/SeniorIntermittentFasting"));
-const SeniorFoodSafetyApps                   = lazy(() => import("./pages/tools/SeniorFoodSafetyApps"));
-const SeniorPhoneTransfer                    = lazy(() => import("./pages/tools/SeniorPhoneTransfer"));
-const SeniorOldPhoneCharger                  = lazy(() => import("./pages/tools/SeniorOldPhoneCharger"));
-const SeniorPhoneCases                       = lazy(() => import("./pages/tools/SeniorPhoneCases"));
-const SeniorScreenRepair                     = lazy(() => import("./pages/tools/SeniorScreenRepair"));
-const SeniorPhoneInsurance                   = lazy(() => import("./pages/tools/SeniorPhoneInsurance"));
-const SeniorIPadBuyingGuide                  = lazy(() => import("./pages/tools/SeniorIPadBuyingGuide"));
-const SeniorTabletStands                     = lazy(() => import("./pages/tools/SeniorTabletStands"));
-const SeniorIPadKidsMode                     = lazy(() => import("./pages/tools/SeniorIPadKidsMode"));
-const SeniorAndroidTablets                   = lazy(() => import("./pages/tools/SeniorAndroidTablets"));
-const SeniorTabletAccessibility              = lazy(() => import("./pages/tools/SeniorTabletAccessibility"));
-const SeniorTSAPreCheckRenewal               = lazy(() => import("./pages/tools/SeniorTSAPreCheckRenewal"));
-const SeniorPackingApps                      = lazy(() => import("./pages/tools/SeniorPackingApps"));
-const SeniorAirlineSeniorDiscounts           = lazy(() => import("./pages/tools/SeniorAirlineSeniorDiscounts"));
-const SeniorPassportApps                     = lazy(() => import("./pages/tools/SeniorPassportApps"));
-const SeniorTravelClubs                      = lazy(() => import("./pages/tools/SeniorTravelClubs"));
-const SeniorInternetSpeedTest                = lazy(() => import("./pages/tools/SeniorInternetSpeedTest"));
-const SeniorAffordableConnectivity           = lazy(() => import("./pages/tools/SeniorAffordableConnectivity"));
-const SeniorWifiExtenders                    = lazy(() => import("./pages/tools/SeniorWifiExtenders"));
-const SeniorEthernetCables                   = lazy(() => import("./pages/tools/SeniorEthernetCables"));
-const SeniorMobileHotspots                   = lazy(() => import("./pages/tools/SeniorMobileHotspots"));
-const SeniorSpotifyTips                      = lazy(() => import("./pages/tools/SeniorSpotifyTips"));
-const SeniorAppleMusic                       = lazy(() => import("./pages/tools/SeniorAppleMusic"));
-const SeniorPandoraTips                      = lazy(() => import("./pages/tools/SeniorPandoraTips"));
-const SeniorIHeartRadio                      = lazy(() => import("./pages/tools/SeniorIHeartRadio"));
-const SeniorAudibleAlternatives              = lazy(() => import("./pages/tools/SeniorAudibleAlternatives"));
-const SeniorYouTubeTV                        = lazy(() => import("./pages/tools/SeniorYouTubeTV"));
-const SeniorHuluLive                         = lazy(() => import("./pages/tools/SeniorHuluLive"));
-const SeniorSling                            = lazy(() => import("./pages/tools/SeniorSling"));
-const SeniorPlutoTV                          = lazy(() => import("./pages/tools/SeniorPlutoTV"));
-const SeniorOTAAntennas                      = lazy(() => import("./pages/tools/SeniorOTAAntennas"));
-const SeniorElectricToothbrush               = lazy(() => import("./pages/tools/SeniorElectricToothbrush"));
-const SeniorWaterFlosser                     = lazy(() => import("./pages/tools/SeniorWaterFlosser"));
-const SeniorHearingTestApps                  = lazy(() => import("./pages/tools/SeniorHearingTestApps"));
-const SeniorOTCHearingAids                   = lazy(() => import("./pages/tools/SeniorOTCHearingAids"));
-const SeniorEyeDropReminders                 = lazy(() => import("./pages/tools/SeniorEyeDropReminders"));
-const SeniorFallDetectors                    = lazy(() => import("./pages/tools/SeniorFallDetectors"));
-const SeniorMotionSensors                    = lazy(() => import("./pages/tools/SeniorMotionSensors"));
-const SeniorStoveAutoShutoff                 = lazy(() => import("./pages/tools/SeniorStoveAutoShutoff"));
-const SeniorMattressSensors                  = lazy(() => import("./pages/tools/SeniorMattressSensors"));
-const SeniorVoiceMonitoring                  = lazy(() => import("./pages/tools/SeniorVoiceMonitoring"));
-const SeniorBalanceApps                      = lazy(() => import("./pages/tools/SeniorBalanceApps"));
-const SeniorPhysicalTherapyApps              = lazy(() => import("./pages/tools/SeniorPhysicalTherapyApps"));
-const SeniorWalkerCanes                      = lazy(() => import("./pages/tools/SeniorWalkerCanes"));
-const SeniorBathSafetyTech                   = lazy(() => import("./pages/tools/SeniorBathSafetyTech"));
-const SeniorHomeMods                         = lazy(() => import("./pages/tools/SeniorHomeMods"));
-const SeniorMedicalBilling                   = lazy(() => import("./pages/tools/SeniorMedicalBilling"));
-const SeniorMedicareSupplement               = lazy(() => import("./pages/tools/SeniorMedicareSupplement"));
-const SeniorPartDPlanFinder                  = lazy(() => import("./pages/tools/SeniorPartDPlanFinder"));
-const SeniorDentalInsurance                  = lazy(() => import("./pages/tools/SeniorDentalInsurance"));
-const SeniorVisionInsurance                  = lazy(() => import("./pages/tools/SeniorVisionInsurance"));
-const SeniorEmergencyKit                     = lazy(() => import("./pages/tools/SeniorEmergencyKit"));
-const SeniorPowerOutage                      = lazy(() => import("./pages/tools/SeniorPowerOutage"));
-const SeniorEvacuationApps                   = lazy(() => import("./pages/tools/SeniorEvacuationApps"));
-const SeniorFlashlightApps                   = lazy(() => import("./pages/tools/SeniorFlashlightApps"));
-const SeniorEmergencyContacts                = lazy(() => import("./pages/tools/SeniorEmergencyContacts"));
-const SeniorAntivirus                        = lazy(() => import("./pages/tools/SeniorAntivirus"));
-const SeniorRomanceScams                     = lazy(() => import("./pages/tools/SeniorRomanceScams"));
-const SeniorIRSCallScams                     = lazy(() => import("./pages/tools/SeniorIRSCallScams"));
-const SeniorGiftCardScams                    = lazy(() => import("./pages/tools/SeniorGiftCardScams"));
-const SeniorScamReporting                    = lazy(() => import("./pages/tools/SeniorScamReporting"));
-const SeniorComposting                       = lazy(() => import("./pages/tools/SeniorComposting"));
-const SeniorWeatherStations                  = lazy(() => import("./pages/tools/SeniorWeatherStations"));
-const SeniorChickenKeeping                   = lazy(() => import("./pages/tools/SeniorChickenKeeping"));
-const SeniorIndoorGarden                     = lazy(() => import("./pages/tools/SeniorIndoorGarden"));
-const SeniorLeafBlowers                      = lazy(() => import("./pages/tools/SeniorLeafBlowers"));
-const SeniorMintMobile                       = lazy(() => import("./pages/tools/SeniorMintMobile"));
-const SeniorVerizonPlans                     = lazy(() => import("./pages/tools/SeniorVerizonPlans"));
-const SeniorTMobile55                        = lazy(() => import("./pages/tools/SeniorTMobile55"));
-const SeniorVisible                          = lazy(() => import("./pages/tools/SeniorVisible"));
-const SeniorLandlineSolutions                = lazy(() => import("./pages/tools/SeniorLandlineSolutions"));
-const SeniorBridgeApps                       = lazy(() => import("./pages/tools/SeniorBridgeApps"));
-const SeniorChessApps                        = lazy(() => import("./pages/tools/SeniorChessApps"));
-const SeniorTriviaApps                       = lazy(() => import("./pages/tools/SeniorTriviaApps"));
-const SeniorWordleAlternatives               = lazy(() => import("./pages/tools/SeniorWordleAlternatives"));
-const SeniorPokerApps                        = lazy(() => import("./pages/tools/SeniorPokerApps"));
-const SeniorPhoneStorageManagement           = lazy(() => import("./pages/tools/SeniorPhoneStorageManagement"));
-const SeniorPhotoOrganizing                  = lazy(() => import("./pages/tools/SeniorPhotoOrganizing"));
-const SeniorContactsManagement               = lazy(() => import("./pages/tools/SeniorContactsManagement"));
-const SeniorAccountRecovery                  = lazy(() => import("./pages/tools/SeniorAccountRecovery"));
-const SeniorAirTagsBasics                    = lazy(() => import("./pages/tools/SeniorAirTagsBasics"));
-const SeniorTravelInsuranceSelection         = lazy(() => import("./pages/tools/SeniorTravelInsuranceSelection"));
-const SeniorMedicalEvacInsurance             = lazy(() => import("./pages/tools/SeniorMedicalEvacInsurance"));
-const SeniorTravelSecurityApps               = lazy(() => import("./pages/tools/SeniorTravelSecurityApps"));
-const SeniorRoamingTips                      = lazy(() => import("./pages/tools/SeniorRoamingTips"));
-const SeniorTravelChargers                   = lazy(() => import("./pages/tools/SeniorTravelChargers"));
-const SeniorMouthGuard                       = lazy(() => import("./pages/tools/SeniorMouthGuard"));
-const SeniorTeethWhitening                   = lazy(() => import("./pages/tools/SeniorTeethWhitening"));
-const SeniorDenturesCare                     = lazy(() => import("./pages/tools/SeniorDenturesCare"));
-const SeniorMouthwashChoice                  = lazy(() => import("./pages/tools/SeniorMouthwashChoice"));
-const SeniorOralCancerCheck                  = lazy(() => import("./pages/tools/SeniorOralCancerCheck"));
-const SeniorReadingGlasses                   = lazy(() => import("./pages/tools/SeniorReadingGlasses"));
-const SeniorEyeNutrition                     = lazy(() => import("./pages/tools/SeniorEyeNutrition"));
-const SeniorDryEyeHelp                       = lazy(() => import("./pages/tools/SeniorDryEyeHelp"));
-const SeniorCataractApps                     = lazy(() => import("./pages/tools/SeniorCataractApps"));
-const SeniorGlaucomaTracking                 = lazy(() => import("./pages/tools/SeniorGlaucomaTracking"));
-const SeniorAFibTracking                     = lazy(() => import("./pages/tools/SeniorAFibTracking"));
-const SeniorBPLogging                        = lazy(() => import("./pages/tools/SeniorBPLogging"));
-const SeniorCardioRehab                      = lazy(() => import("./pages/tools/SeniorCardioRehab"));
-const SeniorPulseOximeters                   = lazy(() => import("./pages/tools/SeniorPulseOximeters"));
-const SeniorHeartRecipes                     = lazy(() => import("./pages/tools/SeniorHeartRecipes"));
-const SeniorDiabetesEducation                = lazy(() => import("./pages/tools/SeniorDiabetesEducation"));
-const SeniorInsulinPumps                     = lazy(() => import("./pages/tools/SeniorInsulinPumps"));
-const SeniorLowCarbCooking                   = lazy(() => import("./pages/tools/SeniorLowCarbCooking"));
-const SeniorDiabeticFootCare                 = lazy(() => import("./pages/tools/SeniorDiabeticFootCare"));
-const SeniorA1CTracking                      = lazy(() => import("./pages/tools/SeniorA1CTracking"));
-const SeniorOsteoporosisTracking             = lazy(() => import("./pages/tools/SeniorOsteoporosisTracking"));
-const SeniorArthritisApps                    = lazy(() => import("./pages/tools/SeniorArthritisApps"));
-const SeniorKneeReplacementApps              = lazy(() => import("./pages/tools/SeniorKneeReplacementApps"));
-const SeniorBackPainApps                     = lazy(() => import("./pages/tools/SeniorBackPainApps"));
-const SeniorJointSupplements                 = lazy(() => import("./pages/tools/SeniorJointSupplements"));
-const SeniorMemoryCareApps                   = lazy(() => import("./pages/tools/SeniorMemoryCareApps"));
-const SeniorAlzheimersResources              = lazy(() => import("./pages/tools/SeniorAlzheimersResources"));
-const SeniorBrainHealthDiet                  = lazy(() => import("./pages/tools/SeniorBrainHealthDiet"));
-const SeniorMeditationDementia               = lazy(() => import("./pages/tools/SeniorMeditationDementia"));
-const SeniorHearingProtectsBrain             = lazy(() => import("./pages/tools/SeniorHearingProtectsBrain"));
-const SeniorProteinIntake                    = lazy(() => import("./pages/tools/SeniorProteinIntake"));
-const SeniorAntiInflammatoryDiet             = lazy(() => import("./pages/tools/SeniorAntiInflammatoryDiet"));
-const SeniorB12Tracking                      = lazy(() => import("./pages/tools/SeniorB12Tracking"));
-const SeniorVitaminDApps                     = lazy(() => import("./pages/tools/SeniorVitaminDApps"));
-const SeniorOmegaThree                       = lazy(() => import("./pages/tools/SeniorOmegaThree"));
-const SeniorWalkingMonitors                  = lazy(() => import("./pages/tools/SeniorWalkingMonitors"));
-const SeniorTreadmillApps                    = lazy(() => import("./pages/tools/SeniorTreadmillApps"));
-const SeniorBikeStationary                   = lazy(() => import("./pages/tools/SeniorBikeStationary"));
-const SeniorPilatesApps                      = lazy(() => import("./pages/tools/SeniorPilatesApps"));
-const SeniorSwimmingApps                     = lazy(() => import("./pages/tools/SeniorSwimmingApps"));
-const SeniorResistanceBands                  = lazy(() => import("./pages/tools/SeniorResistanceBands"));
-const SeniorDumbbells                        = lazy(() => import("./pages/tools/SeniorDumbbells"));
-const SeniorBodyweightApps                   = lazy(() => import("./pages/tools/SeniorBodyweightApps"));
-const SeniorTaiChiApps                       = lazy(() => import("./pages/tools/SeniorTaiChiApps"));
-const SeniorPostSurgeryRehab                 = lazy(() => import("./pages/tools/SeniorPostSurgeryRehab"));
-const SeniorTherapyPets                      = lazy(() => import("./pages/tools/SeniorTherapyPets"));
-const SeniorRobotPets                        = lazy(() => import("./pages/tools/SeniorRobotPets"));
-const SeniorPetTransportApps                 = lazy(() => import("./pages/tools/SeniorPetTransportApps"));
-const SeniorPetEmergencyApps                 = lazy(() => import("./pages/tools/SeniorPetEmergencyApps"));
-const SeniorPetGoneApps                      = lazy(() => import("./pages/tools/SeniorPetGoneApps"));
-const SeniorPaintByNumbersApps               = lazy(() => import("./pages/tools/SeniorPaintByNumbersApps"));
-const SeniorJigsawPuzzleApps                 = lazy(() => import("./pages/tools/SeniorJigsawPuzzleApps"));
-const SeniorBeadingApps                      = lazy(() => import("./pages/tools/SeniorBeadingApps"));
-const SeniorPhotographyApps                  = lazy(() => import("./pages/tools/SeniorPhotographyApps"));
-const SeniorScrapbooking                     = lazy(() => import("./pages/tools/SeniorScrapbooking"));
-const SeniorDanceApps                        = lazy(() => import("./pages/tools/SeniorDanceApps"));
-const SeniorBalanceVibration                 = lazy(() => import("./pages/tools/SeniorBalanceVibration"));
-const SeniorMassageChairs                    = lazy(() => import("./pages/tools/SeniorMassageChairs"));
-const SeniorBreathingExercises               = lazy(() => import("./pages/tools/SeniorBreathingExercises"));
-const SeniorSinging                          = lazy(() => import("./pages/tools/SeniorSinging"));
-const SeniorAdvanceCarePlanning              = lazy(() => import("./pages/tools/SeniorAdvanceCarePlanning"));
-const SeniorHospiceApps                      = lazy(() => import("./pages/tools/SeniorHospiceApps"));
-const SeniorFuneralPlanning                  = lazy(() => import("./pages/tools/SeniorFuneralPlanning"));
-const SeniorDigitalLegacy                    = lazy(() => import("./pages/tools/SeniorDigitalLegacy"));
-const SeniorLifeReview                       = lazy(() => import("./pages/tools/SeniorLifeReview"));
-const SeniorPillBoxes                        = lazy(() => import("./pages/tools/SeniorPillBoxes"));
-const SeniorMedicationLists                  = lazy(() => import("./pages/tools/SeniorMedicationLists"));
-const SeniorPharmacyDelivery                 = lazy(() => import("./pages/tools/SeniorPharmacyDelivery"));
-const SeniorMedicationSyncing                = lazy(() => import("./pages/tools/SeniorMedicationSyncing"));
-const SeniorDrugInteractionApps              = lazy(() => import("./pages/tools/SeniorDrugInteractionApps"));
-const SeniorBidet                            = lazy(() => import("./pages/tools/SeniorBidet"));
-const SeniorRaisedToilets                    = lazy(() => import("./pages/tools/SeniorRaisedToilets"));
-const SeniorAdultDiapersGuide                = lazy(() => import("./pages/tools/SeniorAdultDiapersGuide"));
-const SeniorShowerChairs                     = lazy(() => import("./pages/tools/SeniorShowerChairs"));
-const SeniorDressingAids                     = lazy(() => import("./pages/tools/SeniorDressingAids"));
-const SeniorKitchenAids                      = lazy(() => import("./pages/tools/SeniorKitchenAids"));
-const SeniorMealKits                         = lazy(() => import("./pages/tools/SeniorMealKits"));
-const SeniorPreparedMeals                    = lazy(() => import("./pages/tools/SeniorPreparedMeals"));
-const SeniorOneHandedCooking                 = lazy(() => import("./pages/tools/SeniorOneHandedCooking"));
-const SeniorMicrowaveTips                    = lazy(() => import("./pages/tools/SeniorMicrowaveTips"));
-const SeniorPapaCompanions                   = lazy(() => import("./pages/tools/SeniorPapaCompanions"));
-const SeniorFriendlyVoiceCalls               = lazy(() => import("./pages/tools/SeniorFriendlyVoiceCalls"));
-const SeniorOnlineCommunities                = lazy(() => import("./pages/tools/SeniorOnlineCommunities"));
-const SeniorPenPalProgramsApps               = lazy(() => import("./pages/tools/SeniorPenPalProgramsApps"));
-const SeniorIntergenerational                = lazy(() => import("./pages/tools/SeniorIntergenerational"));
-const SeniorRVApps                           = lazy(() => import("./pages/tools/SeniorRVApps"));
-const SeniorNationalParks                    = lazy(() => import("./pages/tools/SeniorNationalParks"));
-const SeniorCruiseTips                       = lazy(() => import("./pages/tools/SeniorCruiseTips"));
-const SeniorRoadTrip                         = lazy(() => import("./pages/tools/SeniorRoadTrip"));
-const SeniorTinnitusApps                     = lazy(() => import("./pages/tools/SeniorTinnitusApps"));
-const SeniorVertigoExercises                 = lazy(() => import("./pages/tools/SeniorVertigoExercises"));
-const SeniorBraceMonitorApps                 = lazy(() => import("./pages/tools/SeniorBraceMonitorApps"));
-const SeniorWoundCareApps                    = lazy(() => import("./pages/tools/SeniorWoundCareApps"));
-const SeniorSkinHealth                       = lazy(() => import("./pages/tools/SeniorSkinHealth"));
-const SeniorVaccineSchedule                  = lazy(() => import("./pages/tools/SeniorVaccineSchedule"));
-const SeniorColonoscopy                      = lazy(() => import("./pages/tools/SeniorColonoscopy"));
-const SeniorMammogramSchedule                = lazy(() => import("./pages/tools/SeniorMammogramSchedule"));
-const SeniorProstateScreening                = lazy(() => import("./pages/tools/SeniorProstateScreening"));
-const SeniorBoneScreening                    = lazy(() => import("./pages/tools/SeniorBoneScreening"));
-const SeniorTherapyApps                      = lazy(() => import("./pages/tools/SeniorTherapyApps"));
-const SeniorAnxietyApps                      = lazy(() => import("./pages/tools/SeniorAnxietyApps"));
-const SeniorDepressionApps                   = lazy(() => import("./pages/tools/SeniorDepressionApps"));
-const SeniorGriefSupport                     = lazy(() => import("./pages/tools/SeniorGriefSupport"));
-const SeniorJournalingApps                   = lazy(() => import("./pages/tools/SeniorJournalingApps"));
-const SeniorMemoryGames                      = lazy(() => import("./pages/tools/SeniorMemoryGames"));
-const SeniorMathGames                        = lazy(() => import("./pages/tools/SeniorMathGames"));
-const SeniorWordGames                        = lazy(() => import("./pages/tools/SeniorWordGames"));
-const SeniorPatternGames                     = lazy(() => import("./pages/tools/SeniorPatternGames"));
-const SeniorVisualMemory                     = lazy(() => import("./pages/tools/SeniorVisualMemory"));
-const SeniorBookClubs                        = lazy(() => import("./pages/tools/SeniorBookClubs"));
-const SeniorPolitics                         = lazy(() => import("./pages/tools/SeniorPolitics"));
-const SeniorChurchTech                       = lazy(() => import("./pages/tools/SeniorChurchTech"));
-const SeniorVeterans                         = lazy(() => import("./pages/tools/SeniorVeterans"));
-const SeniorClubsFinder                      = lazy(() => import("./pages/tools/SeniorClubsFinder"));
-const SeniorSmartGarageDoor                  = lazy(() => import("./pages/tools/SeniorSmartGarageDoor"));
-const SeniorSmartLocks                       = lazy(() => import("./pages/tools/SeniorSmartLocks"));
-const SeniorWaterDispensers                  = lazy(() => import("./pages/tools/SeniorWaterDispensers"));
-const SeniorRobotMops                        = lazy(() => import("./pages/tools/SeniorRobotMops"));
-const SeniorVoiceShopping                    = lazy(() => import("./pages/tools/SeniorVoiceShopping"));
-const SeniorTravelBuddy                      = lazy(() => import("./pages/tools/SeniorTravelBuddy"));
-const SeniorTranslationTravel                = lazy(() => import("./pages/tools/SeniorTranslationTravel"));
-const SeniorCurrency                         = lazy(() => import("./pages/tools/SeniorCurrency"));
-const SeniorTSAGuide                         = lazy(() => import("./pages/tools/SeniorTSAGuide"));
-const SeniorAirportShuttles                  = lazy(() => import("./pages/tools/SeniorAirportShuttles"));
-const SeniorCallScreening                    = lazy(() => import("./pages/tools/SeniorCallScreening"));
-const SeniorPhoneAccessibility               = lazy(() => import("./pages/tools/SeniorPhoneAccessibility"));
-const SeniorWalkieTalkies                    = lazy(() => import("./pages/tools/SeniorWalkieTalkies"));
-const SeniorEmergencyButtons                 = lazy(() => import("./pages/tools/SeniorEmergencyButtons"));
-const SeniorRealID                           = lazy(() => import("./pages/tools/SeniorRealID"));
-const SeniorVitalRecords                     = lazy(() => import("./pages/tools/SeniorVitalRecords"));
-const SeniorImportantDocs                    = lazy(() => import("./pages/tools/SeniorImportantDocs"));
-const SeniorPropertyDeeds                    = lazy(() => import("./pages/tools/SeniorPropertyDeeds"));
-const SeniorPasswordsForFamily               = lazy(() => import("./pages/tools/SeniorPasswordsForFamily"));
-const SeniorEmergencyTextLine                = lazy(() => import("./pages/tools/SeniorEmergencyTextLine"));
-const SeniorSatellitePhones                  = lazy(() => import("./pages/tools/SeniorSatellitePhones"));
-const SeniorEmergencyAlerts                  = lazy(() => import("./pages/tools/SeniorEmergencyAlerts"));
-const SeniorReadyApp                         = lazy(() => import("./pages/tools/SeniorReadyApp"));
-const SeniorEmergencyEmail                   = lazy(() => import("./pages/tools/SeniorEmergencyEmail"));
-const SeniorPhotoEditing                     = lazy(() => import("./pages/tools/SeniorPhotoEditing"));
-const SeniorPhotoRestoration                 = lazy(() => import("./pages/tools/SeniorPhotoRestoration"));
-const SeniorVideoMaking                      = lazy(() => import("./pages/tools/SeniorVideoMaking"));
-const SeniorPhotoFraming                     = lazy(() => import("./pages/tools/SeniorPhotoFraming"));
-const SeniorPhotoSlideshow                   = lazy(() => import("./pages/tools/SeniorPhotoSlideshow"));
-const SeniorPlantSensors                     = lazy(() => import("./pages/tools/SeniorPlantSensors"));
-const SeniorRaisedBeds                       = lazy(() => import("./pages/tools/SeniorRaisedBeds"));
-const SeniorSeedlingApps                     = lazy(() => import("./pages/tools/SeniorSeedlingApps"));
-const SeniorPestControl                      = lazy(() => import("./pages/tools/SeniorPestControl"));
-const SeniorComposting2                      = lazy(() => import("./pages/tools/SeniorComposting2"));
-const SeniorIPadProcreate                    = lazy(() => import("./pages/tools/SeniorIPadProcreate"));
-const SeniorIPadGoodNotes                    = lazy(() => import("./pages/tools/SeniorIPadGoodNotes"));
-const SeniorBigCalcApps                      = lazy(() => import("./pages/tools/SeniorBigCalcApps"));
-const SeniorIPadKindle                       = lazy(() => import("./pages/tools/SeniorIPadKindle"));
-const SeniorIPadCanvaApp                     = lazy(() => import("./pages/tools/SeniorIPadCanvaApp"));
-const SeniorIPadZoomCalls                    = lazy(() => import("./pages/tools/SeniorIPadZoomCalls"));
-const SeniorIPadFaceTime                     = lazy(() => import("./pages/tools/SeniorIPadFaceTime"));
-const SeniorIPadMail                         = lazy(() => import("./pages/tools/SeniorIPadMail"));
-const SeniorIPadCalendar                     = lazy(() => import("./pages/tools/SeniorIPadCalendar"));
-const SeniorIPadNotes                        = lazy(() => import("./pages/tools/SeniorIPadNotes"));
-const SeniorIPadPhotos                       = lazy(() => import("./pages/tools/SeniorIPadPhotos"));
-const SeniorIPadSafari                       = lazy(() => import("./pages/tools/SeniorIPadSafari"));
-const SeniorIPadMessages                     = lazy(() => import("./pages/tools/SeniorIPadMessages"));
-const SeniorIPadMaps                         = lazy(() => import("./pages/tools/SeniorIPadMaps"));
-const SeniorIPadWeather                      = lazy(() => import("./pages/tools/SeniorIPadWeather"));
-const SeniorIPadHealth                       = lazy(() => import("./pages/tools/SeniorIPadHealth"));
-const SeniorIPadBanking                      = lazy(() => import("./pages/tools/SeniorIPadBanking"));
-const SeniorIPadShopping                     = lazy(() => import("./pages/tools/SeniorIPadShopping"));
-const SeniorIPadStreaming                    = lazy(() => import("./pages/tools/SeniorIPadStreaming"));
-const SeniorIPadGames                        = lazy(() => import("./pages/tools/SeniorIPadGames"));
-const SeniorIPadAccessibility                = lazy(() => import("./pages/tools/SeniorIPadAccessibility"));
-const SeniorIPadSiri                         = lazy(() => import("./pages/tools/SeniorIPadSiri"));
-const SeniorIPadFamilySharing                = lazy(() => import("./pages/tools/SeniorIPadFamilySharing"));
-const SeniorIPadFindMy                       = lazy(() => import("./pages/tools/SeniorIPadFindMy"));
-const SeniorIPadBackup                       = lazy(() => import("./pages/tools/SeniorIPadBackup"));
-const SeniorIPadKeyboard                     = lazy(() => import("./pages/tools/SeniorIPadKeyboard"));
-const SeniorIPadAppleID                      = lazy(() => import("./pages/tools/SeniorIPadAppleID"));
-const SeniorIPadAppStoreBasics               = lazy(() => import("./pages/tools/SeniorIPadAppStoreBasics"));
-const SeniorIPadWiFi                         = lazy(() => import("./pages/tools/SeniorIPadWiFi"));
-const SeniorIPadBattery                      = lazy(() => import("./pages/tools/SeniorIPadBattery"));
-const SeniorIPadPrint                        = lazy(() => import("./pages/tools/SeniorIPadPrint"));
-const SeniorIPadScanDocs                     = lazy(() => import("./pages/tools/SeniorIPadScanDocs"));
-const SeniorIPadStorage                      = lazy(() => import("./pages/tools/SeniorIPadStorage"));
-const SeniorIPadUpdates                      = lazy(() => import("./pages/tools/SeniorIPadUpdates"));
-const SeniorIPadHomeScreen                   = lazy(() => import("./pages/tools/SeniorIPadHomeScreen"));
-const SeniorAndroidBasics                    = lazy(() => import("./pages/tools/SeniorAndroidBasics"));
-const SeniorAndroidGmail                     = lazy(() => import("./pages/tools/SeniorAndroidGmail"));
-const SeniorAndroidPlayStore                 = lazy(() => import("./pages/tools/SeniorAndroidPlayStore"));
-const SeniorAndroidGoogleAssistant           = lazy(() => import("./pages/tools/SeniorAndroidGoogleAssistant"));
-const SeniorAndroidPhotos                    = lazy(() => import("./pages/tools/SeniorAndroidPhotos"));
-const SeniorAndroidMessages                  = lazy(() => import("./pages/tools/SeniorAndroidMessages"));
-const SeniorAndroidContacts                  = lazy(() => import("./pages/tools/SeniorAndroidContacts"));
-const SeniorAndroidCamera                    = lazy(() => import("./pages/tools/SeniorAndroidCamera"));
-const SeniorAndroidMaps                      = lazy(() => import("./pages/tools/SeniorAndroidMaps"));
-const SeniorAndroidCalendar                  = lazy(() => import("./pages/tools/SeniorAndroidCalendar"));
-const SeniorAndroidVoiceTyping               = lazy(() => import("./pages/tools/SeniorAndroidVoiceTyping"));
-const SeniorAndroidLockScreen                = lazy(() => import("./pages/tools/SeniorAndroidLockScreen"));
-const SeniorAndroidUpdates                   = lazy(() => import("./pages/tools/SeniorAndroidUpdates"));
-const SeniorAndroidBackup                    = lazy(() => import("./pages/tools/SeniorAndroidBackup"));
-const SeniorAndroidStorage                   = lazy(() => import("./pages/tools/SeniorAndroidStorage"));
-const SeniorAndroidWiFi                      = lazy(() => import("./pages/tools/SeniorAndroidWiFi"));
-const SeniorAndroidBattery                   = lazy(() => import("./pages/tools/SeniorAndroidBattery"));
-const SeniorAndroidFindMyDevice              = lazy(() => import("./pages/tools/SeniorAndroidFindMyDevice"));
-const SeniorAndroidEmergencySOS              = lazy(() => import("./pages/tools/SeniorAndroidEmergencySOS"));
-const SeniorChromeBasics                     = lazy(() => import("./pages/tools/SeniorChromeBasics"));
-const SeniorChromePasswords                  = lazy(() => import("./pages/tools/SeniorChromePasswords"));
-const SeniorChromeBookmarks                  = lazy(() => import("./pages/tools/SeniorChromeBookmarks"));
-const SeniorChromeIncognito                  = lazy(() => import("./pages/tools/SeniorChromeIncognito"));
-const SeniorChromeExtensions                 = lazy(() => import("./pages/tools/SeniorChromeExtensions"));
-const SeniorWindowsBasics                    = lazy(() => import("./pages/tools/SeniorWindowsBasics"));
-const SeniorWindowsUpdates                   = lazy(() => import("./pages/tools/SeniorWindowsUpdates"));
-const SeniorWindowsAntivirus                 = lazy(() => import("./pages/tools/SeniorWindowsAntivirus"));
-const SeniorWindowsBackup                    = lazy(() => import("./pages/tools/SeniorWindowsBackup"));
-const SeniorWindowsAccessibility             = lazy(() => import("./pages/tools/SeniorWindowsAccessibility"));
-const SeniorWindowsFileExplorer              = lazy(() => import("./pages/tools/SeniorWindowsFileExplorer"));
-const SeniorWindowsKeyboardShortcuts         = lazy(() => import("./pages/tools/SeniorWindowsKeyboardShortcuts"));
-const SeniorWindowsPrint                     = lazy(() => import("./pages/tools/SeniorWindowsPrint"));
-const SeniorWindowsZoom                      = lazy(() => import("./pages/tools/SeniorWindowsZoom"));
-const SeniorWindowsEmail                     = lazy(() => import("./pages/tools/SeniorWindowsEmail"));
-const SeniorMacBasics                        = lazy(() => import("./pages/tools/SeniorMacBasics"));
-const SeniorMacFinder                        = lazy(() => import("./pages/tools/SeniorMacFinder"));
-const SeniorMacTimeMachine                   = lazy(() => import("./pages/tools/SeniorMacTimeMachine"));
-const SeniorMacUpdates                       = lazy(() => import("./pages/tools/SeniorMacUpdates"));
-const SeniorMacAccessibility                 = lazy(() => import("./pages/tools/SeniorMacAccessibility"));
-const SeniorVPN                              = lazy(() => import("./pages/tools/SeniorVPN"));
-const SeniorPhishingDefense                  = lazy(() => import("./pages/tools/SeniorPhishingDefense"));
-const SeniorMedicareApp                      = lazy(() => import("./pages/tools/SeniorMedicareApp"));
-const SeniorSocialSecurityApp                = lazy(() => import("./pages/tools/SeniorSocialSecurityApp"));
-const SeniorIRSApp                           = lazy(() => import("./pages/tools/SeniorIRSApp"));
-const SeniorVAApp                            = lazy(() => import("./pages/tools/SeniorVAApp"));
-const SeniorAARPDigital                      = lazy(() => import("./pages/tools/SeniorAARPDigital"));
-const SeniorTelehealth                       = lazy(() => import("./pages/tools/SeniorTelehealth"));
-const SeniorMyChart                          = lazy(() => import("./pages/tools/SeniorMyChart"));
-const SeniorPillReminders                    = lazy(() => import("./pages/tools/SeniorPillReminders"));
-const SeniorPharmacyApps                     = lazy(() => import("./pages/tools/SeniorPharmacyApps"));
-const SeniorBloodPressureLog                 = lazy(() => import("./pages/tools/SeniorBloodPressureLog"));
-const SeniorYouTube                          = lazy(() => import("./pages/tools/SeniorYouTube"));
-const SeniorFacebookSafer                    = lazy(() => import("./pages/tools/SeniorFacebookSafer"));
-const SeniorWhatsApp                         = lazy(() => import("./pages/tools/SeniorWhatsApp"));
-const SeniorNextDoor                         = lazy(() => import("./pages/tools/SeniorNextDoor"));
-const SeniorVrboBasics                       = lazy(() => import("./pages/tools/SeniorVrboBasics"));
-const SeniorBookingCom                       = lazy(() => import("./pages/tools/SeniorBookingCom"));
-const SeniorCruiseApps                       = lazy(() => import("./pages/tools/SeniorCruiseApps"));
-const SeniorTSAPrecheck                      = lazy(() => import("./pages/tools/SeniorTSAPrecheck"));
-const SeniorUberRideshare                    = lazy(() => import("./pages/tools/SeniorUberRideshare"));
-const SeniorLyftRideshare                    = lazy(() => import("./pages/tools/SeniorLyftRideshare"));
-const SeniorGoGoGrandparent                  = lazy(() => import("./pages/tools/SeniorGoGoGrandparent"));
-const SeniorGasApps                          = lazy(() => import("./pages/tools/SeniorGasApps"));
-const SeniorBankAlerts                       = lazy(() => import("./pages/tools/SeniorBankAlerts"));
-const SeniorVenmo                            = lazy(() => import("./pages/tools/SeniorVenmo"));
-const SeniorZelle                            = lazy(() => import("./pages/tools/SeniorZelle"));
-const SeniorPayPal                           = lazy(() => import("./pages/tools/SeniorPayPal"));
-const SeniorChatGPT                          = lazy(() => import("./pages/tools/SeniorChatGPT"));
-const SeniorGoogleGemini                     = lazy(() => import("./pages/tools/SeniorGoogleGemini"));
-const SeniorAppleIntelligence                = lazy(() => import("./pages/tools/SeniorAppleIntelligence"));
-const SeniorAITranslation                    = lazy(() => import("./pages/tools/SeniorAITranslation"));
-const SeniorAIPhotoTools                     = lazy(() => import("./pages/tools/SeniorAIPhotoTools"));
-const SeniorRingDoorbell                     = lazy(() => import("./pages/tools/SeniorRingDoorbell"));
-const SeniorNestThermostat                   = lazy(() => import("./pages/tools/SeniorNestThermostat"));
-const SeniorGoogleHomeBasics                 = lazy(() => import("./pages/tools/SeniorGoogleHomeBasics"));
-const SeniorSmartLights                      = lazy(() => import("./pages/tools/SeniorSmartLights"));
-const SeniorAirTags                          = lazy(() => import("./pages/tools/SeniorAirTags"));
-const SeniorTileTrackers                     = lazy(() => import("./pages/tools/SeniorTileTrackers"));
-const SeniorMedicalAlertWatches              = lazy(() => import("./pages/tools/SeniorMedicalAlertWatches"));
-const SeniorHearingAidsBluetooth             = lazy(() => import("./pages/tools/SeniorHearingAidsBluetooth"));
-const SeniorAppleWatch                       = lazy(() => import("./pages/tools/SeniorAppleWatch"));
-const SeniorFitbitBasics                     = lazy(() => import("./pages/tools/SeniorFitbitBasics"));
-const SeniorGarminBasics                     = lazy(() => import("./pages/tools/SeniorGarminBasics"));
-const SeniorCGMSensor                        = lazy(() => import("./pages/tools/SeniorCGMSensor"));
-const SeniorEbooksKindle                     = lazy(() => import("./pages/tools/SeniorEbooksKindle"));
-const SeniorAudibleBooks                     = lazy(() => import("./pages/tools/SeniorAudibleBooks"));
-const SeniorLibbyLibrary                     = lazy(() => import("./pages/tools/SeniorLibbyLibrary"));
-const SeniorSpotifyMusic                     = lazy(() => import("./pages/tools/SeniorSpotifyMusic"));
-const SeniorAirPods                          = lazy(() => import("./pages/tools/SeniorAirPods"));
-const SeniorBluetoothBasics                  = lazy(() => import("./pages/tools/SeniorBluetoothBasics"));
-const SeniorChromecast                       = lazy(() => import("./pages/tools/SeniorChromecast"));
-const SeniorAppleTVBasics                    = lazy(() => import("./pages/tools/SeniorAppleTVBasics"));
-const SeniorRokuBasics                       = lazy(() => import("./pages/tools/SeniorRokuBasics"));
-const SeniorEbayBasics                       = lazy(() => import("./pages/tools/SeniorEbayBasics"));
-const SeniorAmazonShopping                   = lazy(() => import("./pages/tools/SeniorAmazonShopping"));
-const SeniorTargetCircle                     = lazy(() => import("./pages/tools/SeniorTargetCircle"));
-const SeniorInstacart                        = lazy(() => import("./pages/tools/SeniorInstacart"));
-const SeniorDoorDash                         = lazy(() => import("./pages/tools/SeniorDoorDash"));
-const SeniorUberEats                         = lazy(() => import("./pages/tools/SeniorUberEats"));
-const SeniorMealKitsApps                     = lazy(() => import("./pages/tools/SeniorMealKitsApps"));
-const SeniorMealsOnWheels                    = lazy(() => import("./pages/tools/SeniorMealsOnWheels"));
-const SeniorYelpReviews                      = lazy(() => import("./pages/tools/SeniorYelpReviews"));
-const SeniorOpenTable                        = lazy(() => import("./pages/tools/SeniorOpenTable"));
-const SeniorTripAdvisor                      = lazy(() => import("./pages/tools/SeniorTripAdvisor"));
-const SeniorWaze                             = lazy(() => import("./pages/tools/SeniorWaze"));
-const SeniorAncestryDNA                      = lazy(() => import("./pages/tools/SeniorAncestryDNA"));
-const SeniorFamilySearchOrg                  = lazy(() => import("./pages/tools/SeniorFamilySearchOrg"));
-const SeniorMyHeritage                       = lazy(() => import("./pages/tools/SeniorMyHeritage"));
-const SeniorScrapbookApps                    = lazy(() => import("./pages/tools/SeniorScrapbookApps"));
-const SeniorOldPhotoScanning                 = lazy(() => import("./pages/tools/SeniorOldPhotoScanning"));
-const SeniorDuolingo                         = lazy(() => import("./pages/tools/SeniorDuolingo"));
-const SeniorAARPLearning                     = lazy(() => import("./pages/tools/SeniorAARPLearning"));
-const SeniorGolfGPS                          = lazy(() => import("./pages/tools/SeniorGolfGPS"));
-const SeniorYogaSilverSneakers               = lazy(() => import("./pages/tools/SeniorYogaSilverSneakers"));
-const SeniorAllTrails                        = lazy(() => import("./pages/tools/SeniorAllTrails"));
-const SeniorJigsawApps                       = lazy(() => import("./pages/tools/SeniorJigsawApps"));
-const SeniorBridgeOnline                     = lazy(() => import("./pages/tools/SeniorBridgeOnline"));
-const SeniorChessOnline                      = lazy(() => import("./pages/tools/SeniorChessOnline"));
-const SeniorWordleNYTGames                   = lazy(() => import("./pages/tools/SeniorWordleNYTGames"));
-const SeniorBrainTraining                    = lazy(() => import("./pages/tools/SeniorBrainTraining"));
-const SeniorTaxAct                           = lazy(() => import("./pages/tools/SeniorTaxAct"));
-const SeniorMintAlternative                  = lazy(() => import("./pages/tools/SeniorMintAlternative"));
-const SeniorRetirementCalcs                  = lazy(() => import("./pages/tools/SeniorRetirementCalcs"));
-const SeniorEstatePlan                       = lazy(() => import("./pages/tools/SeniorEstatePlan"));
-const SeniorMedigapTools                     = lazy(() => import("./pages/tools/SeniorMedigapTools"));
-const SeniorEbird                            = lazy(() => import("./pages/tools/SeniorEbird"));
-const SeniorINaturalist                      = lazy(() => import("./pages/tools/SeniorINaturalist"));
-const SeniorPlantIdentify                    = lazy(() => import("./pages/tools/SeniorPlantIdentify"));
-const SeniorMushroomID                       = lazy(() => import("./pages/tools/SeniorMushroomID"));
-const SeniorTextToSpeech                     = lazy(() => import("./pages/tools/SeniorTextToSpeech"));
-const SeniorClosedCaptioning                 = lazy(() => import("./pages/tools/SeniorClosedCaptioning"));
-const SeniorVoiceMessages                    = lazy(() => import("./pages/tools/SeniorVoiceMessages"));
-const SeniorRecipesApps                      = lazy(() => import("./pages/tools/SeniorRecipesApps"));
-const SeniorPaprikaCookbook                  = lazy(() => import("./pages/tools/SeniorPaprikaCookbook"));
-const SeniorWaterReminder                    = lazy(() => import("./pages/tools/SeniorWaterReminder"));
-const SeniorMeditation                       = lazy(() => import("./pages/tools/SeniorMeditation"));
-const SeniorVeteransOnline                   = lazy(() => import("./pages/tools/SeniorVeteransOnline"));
-const SeniorElderlyTransportation            = lazy(() => import("./pages/tools/SeniorElderlyTransportation"));
-const SeniorLowIncomeApps                    = lazy(() => import("./pages/tools/SeniorLowIncomeApps"));
-const SeniorVotingOnline                     = lazy(() => import("./pages/tools/SeniorVotingOnline"));
-const SeniorOnlineDating                     = lazy(() => import("./pages/tools/SeniorOnlineDating"));
-const SeniorChurchOnline                     = lazy(() => import("./pages/tools/SeniorChurchOnline"));
-const SeniorVolunteerApps                    = lazy(() => import("./pages/tools/SeniorVolunteerApps"));
-const SeniorPasskeysSetup2                   = lazy(() => import("./pages/tools/SeniorPasskeysSetup2"));
-const SeniorEmailEncryption                  = lazy(() => import("./pages/tools/SeniorEmailEncryption"));
-const SeniorBrowserPrivacy                   = lazy(() => import("./pages/tools/SeniorBrowserPrivacy"));
-const SeniorIdentityTheftHelp                = lazy(() => import("./pages/tools/SeniorIdentityTheftHelp"));
-const SeniorAirlineApps                      = lazy(() => import("./pages/tools/SeniorAirlineApps"));
-const SeniorAARPTravel                       = lazy(() => import("./pages/tools/SeniorAARPTravel"));
-const SeniorTripIt                           = lazy(() => import("./pages/tools/SeniorTripIt"));
-const SeniorPassportRenewal                  = lazy(() => import("./pages/tools/SeniorPassportRenewal"));
-const SeniorEbookFonts                       = lazy(() => import("./pages/tools/SeniorEbookFonts"));
-const SeniorMagazinesDigital                 = lazy(() => import("./pages/tools/SeniorMagazinesDigital"));
-const SeniorBibleApps                        = lazy(() => import("./pages/tools/SeniorBibleApps"));
-const SeniorObituariesOnline                 = lazy(() => import("./pages/tools/SeniorObituariesOnline"));
-const SeniorPodcastTopPicks                  = lazy(() => import("./pages/tools/SeniorPodcastTopPicks"));
-const SeniorAudioBookClubs                   = lazy(() => import("./pages/tools/SeniorAudioBookClubs"));
-const SeniorEmailEtiquette                   = lazy(() => import("./pages/tools/SeniorEmailEtiquette"));
-const SeniorPhoneStandSetup                  = lazy(() => import("./pages/tools/SeniorPhoneStandSetup"));
-const SeniorChairStandWorkout                = lazy(() => import("./pages/tools/SeniorChairStandWorkout"));
-const SeniorAppleWatchHeart                  = lazy(() => import("./pages/tools/SeniorAppleWatchHeart"));
-const SeniorReadingMode                      = lazy(() => import("./pages/tools/SeniorReadingMode"));
-const SeniorPasswordHygiene                  = lazy(() => import("./pages/tools/SeniorPasswordHygiene"));
-const SeniorVoiceMail                        = lazy(() => import("./pages/tools/SeniorVoiceMail"));
-const SeniorContactsCleanup                  = lazy(() => import("./pages/tools/SeniorContactsCleanup"));
-const SeniorTimeZoneApps                     = lazy(() => import("./pages/tools/SeniorTimeZoneApps"));
-const SeniorCalculatorApps                   = lazy(() => import("./pages/tools/SeniorCalculatorApps"));
-const SeniorTakeoutOrdering                  = lazy(() => import("./pages/tools/SeniorTakeoutOrdering"));
-const SeniorAirPodsHearing                   = lazy(() => import("./pages/tools/SeniorAirPodsHearing"));
-const SeniorBigCalcApps2                     = lazy(() => import("./pages/tools/SeniorBigCalcApps2"));
-const SeniorTechHelpResources                = lazy(() => import("./pages/tools/SeniorTechHelpResources"));
-const SeniorCloudStoragePicker               = lazy(() => import("./pages/tools/SeniorCloudStoragePicker"));
-const SeniorCheatSheet                       = lazy(() => import("./pages/tools/SeniorCheatSheet"));
-const SeniorTextToTV                         = lazy(() => import("./pages/tools/SeniorTextToTV"));
-const SeniorRecyclingApps                    = lazy(() => import("./pages/tools/SeniorRecyclingApps"));
-const SeniorPowerOutageApps                  = lazy(() => import("./pages/tools/SeniorPowerOutageApps"));
-const SeniorPetCareApps                      = lazy(() => import("./pages/tools/SeniorPetCareApps"));
-const SeniorPlantCareApps                    = lazy(() => import("./pages/tools/SeniorPlantCareApps"));
-const SeniorKnittingApps                     = lazy(() => import("./pages/tools/SeniorKnittingApps"));
-const SeniorPaintingApps                     = lazy(() => import("./pages/tools/SeniorPaintingApps"));
-const SeniorMovingApps                       = lazy(() => import("./pages/tools/SeniorMovingApps"));
-const SeniorRealEstate                       = lazy(() => import("./pages/tools/SeniorRealEstate"));
-const SeniorHomeImprovement                  = lazy(() => import("./pages/tools/SeniorHomeImprovement"));
-const SeniorAutoApps                         = lazy(() => import("./pages/tools/SeniorAutoApps"));
-const SeniorElectricalSafety                 = lazy(() => import("./pages/tools/SeniorElectricalSafety"));
-const SeniorBookEbay                         = lazy(() => import("./pages/tools/SeniorBookEbay"));
-const SeniorPoshmark                         = lazy(() => import("./pages/tools/SeniorPoshmark"));
-const SeniorFacebookMarketplace              = lazy(() => import("./pages/tools/SeniorFacebookMarketplace"));
-const SeniorBuyNothing                       = lazy(() => import("./pages/tools/SeniorBuyNothing"));
-const SeniorChromebookBasics                 = lazy(() => import("./pages/tools/SeniorChromebookBasics"));
-const SeniorBackToWork                       = lazy(() => import("./pages/tools/SeniorBackToWork"));
-const SeniorVolunteerMatch                   = lazy(() => import("./pages/tools/SeniorVolunteerMatch"));
-const SeniorEbayBuying                       = lazy(() => import("./pages/tools/SeniorEbayBuying"));
-const SeniorTechSupportRoles                 = lazy(() => import("./pages/tools/SeniorTechSupportRoles"));
-const SeniorScrabbleOnline                   = lazy(() => import("./pages/tools/SeniorScrabbleOnline"));
-const SeniorOnlineCanasta                    = lazy(() => import("./pages/tools/SeniorOnlineCanasta"));
-const SeniorOnlineDominoes                   = lazy(() => import("./pages/tools/SeniorOnlineDominoes"));
-const SeniorOnlineMahjong                    = lazy(() => import("./pages/tools/SeniorOnlineMahjong"));
-const SeniorOnlineHearts                     = lazy(() => import("./pages/tools/SeniorOnlineHearts"));
-const SeniorAirplaneEntertainment            = lazy(() => import("./pages/tools/SeniorAirplaneEntertainment"));
-const SeniorRoadTripApps                     = lazy(() => import("./pages/tools/SeniorRoadTripApps"));
-const SeniorMuseumApps                       = lazy(() => import("./pages/tools/SeniorMuseumApps"));
-const SeniorNationalParkApps                 = lazy(() => import("./pages/tools/SeniorNationalParkApps"));
-const SeniorRetirementCommunities            = lazy(() => import("./pages/tools/SeniorRetirementCommunities"));
-const SeniorEnergyAuditApps                  = lazy(() => import("./pages/tools/SeniorEnergyAuditApps"));
-const SeniorWaterUsage                       = lazy(() => import("./pages/tools/SeniorWaterUsage"));
-const SeniorAppleHomeSetup                   = lazy(() => import("./pages/tools/SeniorAppleHomeSetup"));
-const SeniorMatterStandard                   = lazy(() => import("./pages/tools/SeniorMatterStandard"));
-const SeniorWiFiMeshNetwork                  = lazy(() => import("./pages/tools/SeniorWiFiMeshNetwork"));
-const SeniorRobotVacuum                      = lazy(() => import("./pages/tools/SeniorRobotVacuum"));
-const SeniorEcobeeThermostat                 = lazy(() => import("./pages/tools/SeniorEcobeeThermostat"));
-const SeniorSmartCamera                      = lazy(() => import("./pages/tools/SeniorSmartCamera"));
-const SeniorPersonalAlarm                    = lazy(() => import("./pages/tools/SeniorPersonalAlarm"));
-const SeniorPaperlessBills                   = lazy(() => import("./pages/tools/SeniorPaperlessBills"));
-const SeniorAutoBillPay                      = lazy(() => import("./pages/tools/SeniorAutoBillPay"));
-const SeniorTaxBracketEstimator              = lazy(() => import("./pages/tools/SeniorTaxBracketEstimator"));
-const SeniorCharityNavigator                 = lazy(() => import("./pages/tools/SeniorCharityNavigator"));
-const SeniorScamDeepfake                     = lazy(() => import("./pages/tools/SeniorScamDeepfake"));
-const SeniorAutoUpdate                       = lazy(() => import("./pages/tools/SeniorAutoUpdate"));
-const SeniorClearStorage                     = lazy(() => import("./pages/tools/SeniorClearStorage"));
-const SeniorPhoneCharging                    = lazy(() => import("./pages/tools/SeniorPhoneCharging"));
-const SeniorTradeIn                          = lazy(() => import("./pages/tools/SeniorTradeIn"));
-const SeniorIPadStylus                       = lazy(() => import("./pages/tools/SeniorIPadStylus"));
-const SeniorIPadKeyboardCase                 = lazy(() => import("./pages/tools/SeniorIPadKeyboardCase"));
-const SeniorTabletProtectScreen              = lazy(() => import("./pages/tools/SeniorTabletProtectScreen"));
-const SeniorIPadAdaptiveInk                  = lazy(() => import("./pages/tools/SeniorIPadAdaptiveInk"));
-const SeniorMagicKeyboard                    = lazy(() => import("./pages/tools/SeniorMagicKeyboard"));
-const SeniorMagicMouse                       = lazy(() => import("./pages/tools/SeniorMagicMouse"));
-const SeniorAccessoryHubs                    = lazy(() => import("./pages/tools/SeniorAccessoryHubs"));
-const SeniorMonitorBigText                   = lazy(() => import("./pages/tools/SeniorMonitorBigText"));
-const SeniorWebcamSetup                      = lazy(() => import("./pages/tools/SeniorWebcamSetup"));
-const SeniorBlueLightGlasses                 = lazy(() => import("./pages/tools/SeniorBlueLightGlasses"));
-const SeniorEyeExamApps                      = lazy(() => import("./pages/tools/SeniorEyeExamApps"));
-const SeniorAudiologyApps                    = lazy(() => import("./pages/tools/SeniorAudiologyApps"));
-const SeniorEyeExercises                     = lazy(() => import("./pages/tools/SeniorEyeExercises"));
-const SeniorRPMRemote                        = lazy(() => import("./pages/tools/SeniorRPMRemote"));
-const SeniorYouTubeKidsApp                   = lazy(() => import("./pages/tools/SeniorYouTubeKidsApp"));
-const SeniorMessenger                        = lazy(() => import("./pages/tools/SeniorMessenger"));
-const SeniorTwitterX                         = lazy(() => import("./pages/tools/SeniorTwitterX"));
-const SeniorBluesky                          = lazy(() => import("./pages/tools/SeniorBluesky"));
-const SeniorThreads                          = lazy(() => import("./pages/tools/SeniorThreads"));
-const SeniorPodcastApple                     = lazy(() => import("./pages/tools/SeniorPodcastApple"));
-const SeniorPandora                          = lazy(() => import("./pages/tools/SeniorPandora"));
-const SeniorTuneIn                           = lazy(() => import("./pages/tools/SeniorTuneIn"));
-const SeniorRetirementPodcasts               = lazy(() => import("./pages/tools/SeniorRetirementPodcasts"));
-const SeniorAmateurRadio                     = lazy(() => import("./pages/tools/SeniorAmateurRadio"));
-const SeniorMetalDetecting                   = lazy(() => import("./pages/tools/SeniorMetalDetecting"));
-const SeniorWoodCarving                      = lazy(() => import("./pages/tools/SeniorWoodCarving"));
-const SeniorBeekeeping                       = lazy(() => import("./pages/tools/SeniorBeekeeping"));
-const SeniorAstronomy                        = lazy(() => import("./pages/tools/SeniorAstronomy"));
 
 // ── Cycle 195 (April 29 2026) — DIY home ──
-const BasicToolsForSeniors   = lazy(() => import("./pages/tools/BasicToolsForSeniors"));
-const PaintingTipsSeniors    = lazy(() => import("./pages/tools/PaintingTipsSeniors"));
-const CaulkingBasics         = lazy(() => import("./pages/tools/CaulkingBasics"));
-const GeneratorTestRoutine   = lazy(() => import("./pages/tools/GeneratorTestRoutine"));
-const FurnaceFilterSwap      = lazy(() => import("./pages/tools/FurnaceFilterSwap"));
 
 // ── Cycle 196 (April 29 2026) — energy + sustainability ──
-const HeatPumpForSeniors     = lazy(() => import("./pages/tools/HeatPumpForSeniors"));
-const EVHomeChargerGuide     = lazy(() => import("./pages/tools/EVHomeChargerGuide"));
-const TeslaPowerwallReview   = lazy(() => import("./pages/tools/TeslaPowerwallReview"));
-const SolarTaxCredits        = lazy(() => import("./pages/tools/SolarTaxCredits"));
-const EnergyAuditFree        = lazy(() => import("./pages/tools/EnergyAuditFree"));
 
 // ── Cycle 197 (April 29 2026) — disaster prep ──
-const TornadoPrepGuide       = lazy(() => import("./pages/tools/TornadoPrepGuide"));
-const WildfirePrepGuide      = lazy(() => import("./pages/tools/WildfirePrepGuide"));
-const HeatwaveSafety         = lazy(() => import("./pages/tools/HeatwaveSafety"));
-const ColdSnapSafety         = lazy(() => import("./pages/tools/ColdSnapSafety"));
-const FireAlarmTest          = lazy(() => import("./pages/tools/FireAlarmTest"));
 
 // ── Cycle 198 (April 29 2026) — senior housing alternatives ──
-const ADUForSeniors          = lazy(() => import("./pages/tools/ADUForSeniors"));
-const ActiveAdultCommunity   = lazy(() => import("./pages/tools/ActiveAdultCommunity"));
-const CohousingForSeniors    = lazy(() => import("./pages/tools/CohousingForSeniors"));
-const AssistedLivingChoosing = lazy(() => import("./pages/tools/AssistedLivingChoosing"));
-const StayingPutChecklist    = lazy(() => import("./pages/tools/StayingPutChecklist"));
 
 // ── Cycle 199 (April 29 2026) — travel deals ──
-const HotelDealForSeniors    = lazy(() => import("./pages/tools/HotelDealForSeniors"));
-const AAADiscountList        = lazy(() => import("./pages/tools/AAADiscountList"));
-const AARPMembershipUse      = lazy(() => import("./pages/tools/AARPMembershipUse"));
-const SeniorAirfareDeals     = lazy(() => import("./pages/tools/SeniorAirfareDeals"));
-const SeniorRentalCarDeals   = lazy(() => import("./pages/tools/SeniorRentalCarDeals"));
 
 // ── Cycle 200 (April 29 2026) — grandparenting ──
-const GrandkidVisitChecklist = lazy(() => import("./pages/tools/GrandkidVisitChecklist"));
-const BabysittingTipsSeniors = lazy(() => import("./pages/tools/BabysittingTipsSeniors"));
-const AttendGrandchildWedding = lazy(() => import("./pages/tools/AttendGrandchildWedding"));
-const GrandparentLegalRights = lazy(() => import("./pages/tools/GrandparentLegalRights"));
-const GrandkidSummerVisits   = lazy(() => import("./pages/tools/GrandkidSummerVisits"));
 
 // ── Cycle 201 (April 29 2026) — books + podcasts ──
-const BestBooksForSeniors    = lazy(() => import("./pages/tools/BestBooksForSeniors"));
-const BookClubsHowToFind     = lazy(() => import("./pages/tools/BookClubsHowToFind"));
-const BestPodcastsSeniors    = lazy(() => import("./pages/tools/BestPodcastsSeniors"));
-const ApplePodcastsForSeniors = lazy(() => import("./pages/tools/ApplePodcastsForSeniors"));
-const SpotifyForSeniorListeners = lazy(() => import("./pages/tools/SpotifyForSeniorListeners"));
-const AudibleAppForSeniors   = lazy(() => import("./pages/tools/AudibleAppForSeniors"));
-const SeniorRadioApps        = lazy(() => import("./pages/tools/SeniorRadioApps"));
-const PocketCastsForSeniors  = lazy(() => import("./pages/tools/PocketCastsForSeniors"));
-const KindleVsPaperbookSeniors = lazy(() => import("./pages/tools/KindleVsPaperbookSeniors"));
-const AudiobookListenWalking = lazy(() => import("./pages/tools/AudiobookListenWalking"));
 
 // ── Cycle 202 (April 29 2026) — outdoor recreation ──
-const SeniorCampingGuide     = lazy(() => import("./pages/tools/SeniorCampingGuide"));
-const KayakingForSeniors     = lazy(() => import("./pages/tools/KayakingForSeniors"));
-const BoatingForSeniors      = lazy(() => import("./pages/tools/BoatingForSeniors"));
-const BirdwatchingDeeper     = lazy(() => import("./pages/tools/BirdwatchingDeeper"));
-const OutdoorPhotographyTips = lazy(() => import("./pages/tools/OutdoorPhotographyTips"));
 
 // ── Cycle 203 (April 29 2026) — food + drink hobbies ──
-const WineTastingForSeniors  = lazy(() => import("./pages/tools/WineTastingForSeniors"));
-const CocktailMixingSenior   = lazy(() => import("./pages/tools/CocktailMixingSenior"));
-const BakingForSeniors       = lazy(() => import("./pages/tools/BakingForSeniors"));
-const SourdoughForSeniors    = lazy(() => import("./pages/tools/SourdoughForSeniors"));
-const CookbookPicksForSeniors = lazy(() => import("./pages/tools/CookbookPicksForSeniors"));
 
 // ── Cycle 204 (April 29 2026) — music + dance ──
-const PianoForSeniors        = lazy(() => import("./pages/tools/PianoForSeniors"));
-const UkuleleForSeniors      = lazy(() => import("./pages/tools/UkuleleForSeniors"));
-const BallroomDancingSeniors = lazy(() => import("./pages/tools/BallroomDancingSeniors"));
-const ChoirForSeniors        = lazy(() => import("./pages/tools/ChoirForSeniors"));
-const MusicTherapyApps       = lazy(() => import("./pages/tools/MusicTherapyApps"));
 
 // ── Cycle 205 (April 29 2026) — crafts ──
-const CrochetForSeniors      = lazy(() => import("./pages/tools/CrochetForSeniors"));
-const SewingMachineBasics    = lazy(() => import("./pages/tools/SewingMachineBasics"));
-const QuiltingForBeginners   = lazy(() => import("./pages/tools/QuiltingForBeginners"));
-const EmbroideryForSeniors   = lazy(() => import("./pages/tools/EmbroideryForSeniors"));
-const ScrapbookingDigital    = lazy(() => import("./pages/tools/ScrapbookingDigital"));
 
 // ── Cycle 206 (April 29 2026) — holidays ──
-const ChristmasShoppingSeniors = lazy(() => import("./pages/tools/ChristmasShoppingSeniors"));
-const ThanksgivingHostingTech  = lazy(() => import("./pages/tools/ThanksgivingHostingTech"));
-const ValentinesDayDigital     = lazy(() => import("./pages/tools/ValentinesDayDigital"));
-const HalloweenSafetySeniors   = lazy(() => import("./pages/tools/HalloweenSafetySeniors"));
-const NewYearGoalsApps         = lazy(() => import("./pages/tools/NewYearGoalsApps"));
 
 // ── Cycle 207 (April 29 2026) — pet care ──
-const DogTrainingApps          = lazy(() => import("./pages/tools/DogTrainingApps"));
-const CatCareApps              = lazy(() => import("./pages/tools/CatCareApps"));
-const PetGroomingHome          = lazy(() => import("./pages/tools/PetGroomingHome"));
-const AquariumStarterSenior    = lazy(() => import("./pages/tools/AquariumStarterSenior"));
-const PetSitterFinder          = lazy(() => import("./pages/tools/PetSitterFinder"));
 
 // ── Cycle 208 (April 29 2026) — instruments ──
-const GuitarForSeniors         = lazy(() => import("./pages/tools/GuitarForSeniors"));
-const HarmonicaForSeniors      = lazy(() => import("./pages/tools/HarmonicaForSeniors"));
-const ViolinForSeniors         = lazy(() => import("./pages/tools/ViolinForSeniors"));
-const DrumsForSeniors          = lazy(() => import("./pages/tools/DrumsForSeniors"));
-const SingingForSeniors        = lazy(() => import("./pages/tools/SingingForSeniors"));
 
 // ── Cycle 209 (April 29 2026) — entertainment + writing ──
-const ClassicMoviePicks        = lazy(() => import("./pages/tools/ClassicMoviePicks"));
-const FamilyMovieNight         = lazy(() => import("./pages/tools/FamilyMovieNight"));
-const BlogStartingSenior       = lazy(() => import("./pages/tools/BlogStartingSenior"));
-const PoetryAppsSenior         = lazy(() => import("./pages/tools/PoetryAppsSenior"));
-const ShortStoryWriting        = lazy(() => import("./pages/tools/ShortStoryWriting"));
 
 // ── Cycle 210 (April 29 2026) — file mgmt + display ──
-const WindowsFileExplorerBasics = lazy(() => import("./pages/tools/WindowsFileExplorerBasics"));
-const MacFinderBasics           = lazy(() => import("./pages/tools/MacFinderBasics"));
-const CloudFolderOrganization   = lazy(() => import("./pages/tools/CloudFolderOrganization"));
-const DarkModeGuide             = lazy(() => import("./pages/tools/DarkModeGuide"));
-const WallpaperBackgroundGuide  = lazy(() => import("./pages/tools/WallpaperBackgroundGuide"));
 
 // ── Cycle 211 (April 29 2026) — banking essentials ──
-const CheckbookBalancingApps    = lazy(() => import("./pages/tools/CheckbookBalancingApps"));
-const MobileDepositGuide        = lazy(() => import("./pages/tools/MobileDepositGuide"));
-const DirectDepositSetup        = lazy(() => import("./pages/tools/DirectDepositSetup"));
-const SafeDepositBoxGuide       = lazy(() => import("./pages/tools/SafeDepositBoxGuide"));
-const EmergencyFundForSeniors   = lazy(() => import("./pages/tools/EmergencyFundForSeniors"));
 
 // ── Cycle 212 (April 29 2026) — fitness deeper ──
-const SilverSneakersGuide       = lazy(() => import("./pages/tools/SilverSneakersGuide"));
-const SeniorWalkingShoes        = lazy(() => import("./pages/tools/SeniorWalkingShoes"));
-const PilatesForSeniors         = lazy(() => import("./pages/tools/PilatesForSeniors"));
-const SwimmingForSeniors        = lazy(() => import("./pages/tools/SwimmingForSeniors"));
-const BocceLawnGames            = lazy(() => import("./pages/tools/BocceLawnGames"));
 
 // ── Cycle 213 (April 29 2026) — nutrition deeper ──
-const VitaminsForSeniors        = lazy(() => import("./pages/tools/VitaminsForSeniors"));
-const SupplementSafety          = lazy(() => import("./pages/tools/SupplementSafety"));
-const MealPrepForOne            = lazy(() => import("./pages/tools/MealPrepForOne"));
-const HighFiberRecipes          = lazy(() => import("./pages/tools/HighFiberRecipes"));
-const OmegaFishOilGuide         = lazy(() => import("./pages/tools/OmegaFishOilGuide"));
 
 // ── Cycle 214 (April 29 2026) — auto deeper ──
-const CarBuyingTipsSeniors      = lazy(() => import("./pages/tools/CarBuyingTipsSeniors"));
-const AutoLeaseVsBuy            = lazy(() => import("./pages/tools/AutoLeaseVsBuy"));
-const ElectricCarsForSeniors    = lazy(() => import("./pages/tools/ElectricCarsForSeniors"));
-const CarTradeInApps            = lazy(() => import("./pages/tools/CarTradeInApps"));
-const AutoExtendedWarranty      = lazy(() => import("./pages/tools/AutoExtendedWarranty"));
 
 // ── Cycle 215 (April 29 2026) — security deeper ──
-const SSNCompromiseSteps        = lazy(() => import("./pages/tools/SSNCompromiseSteps"));
-const SocialMediaFakeAccounts   = lazy(() => import("./pages/tools/SocialMediaFakeAccounts"));
-const ComputerVirusRemoval      = lazy(() => import("./pages/tools/ComputerVirusRemoval"));
-const EmailHackedRecovery       = lazy(() => import("./pages/tools/EmailHackedRecovery"));
-const WhatsAppScamSpotting      = lazy(() => import("./pages/tools/WhatsAppScamSpotting"));
 
 // ── Cycle 216 (April 29 2026) — beauty + grooming ──
-const SeniorMakeupTipsApps      = lazy(() => import("./pages/tools/SeniorMakeupTipsApps"));
-const HairCareForSeniors        = lazy(() => import("./pages/tools/HairCareForSeniors"));
-const NailCareForSeniors        = lazy(() => import("./pages/tools/NailCareForSeniors"));
-const ShavingForSeniors         = lazy(() => import("./pages/tools/ShavingForSeniors"));
-const PerfumeColognePicks       = lazy(() => import("./pages/tools/PerfumeColognePicks"));
 
 // ── Cycle 217 (April 29 2026) — home maintenance ──
-const PlumbingBasicsForSeniors  = lazy(() => import("./pages/tools/PlumbingBasicsForSeniors"));
-const ElectricalBasicsForSeniors = lazy(() => import("./pages/tools/ElectricalBasicsForSeniors"));
-const AirFilterChangingGuide    = lazy(() => import("./pages/tools/AirFilterChangingGuide"));
-const ThumbtackForSeniors       = lazy(() => import("./pages/tools/ThumbtackForSeniors"));
-const HomeWarrantyShoppingSeniors = lazy(() => import("./pages/tools/HomeWarrantyShoppingSeniors"));
-const HouseCleaningServiceApps  = lazy(() => import("./pages/tools/HouseCleaningServiceApps"));
-const LawnCareSubscriptions     = lazy(() => import("./pages/tools/LawnCareSubscriptions"));
-const HVACMaintenanceApps       = lazy(() => import("./pages/tools/HVACMaintenanceApps"));
-const SeasonalHomeChecklist     = lazy(() => import("./pages/tools/SeasonalHomeChecklist"));
-const ApplianceLifespanGuide    = lazy(() => import("./pages/tools/ApplianceLifespanGuide"));
 
 // ── Cycle 218 (April 29 2026) — phone basics ──
-const PhoneCaseScreenProtector  = lazy(() => import("./pages/tools/PhoneCaseScreenProtector"));
-const SwitchCellCarrier         = lazy(() => import("./pages/tools/SwitchCellCarrier"));
-const PrepaidVsContractPhones   = lazy(() => import("./pages/tools/PrepaidVsContractPhones"));
-const RingtoneCustomization     = lazy(() => import("./pages/tools/RingtoneCustomization"));
-const PhoneTrackingFamily       = lazy(() => import("./pages/tools/PhoneTrackingFamily"));
 
 // ── Cycle 219 (April 29 2026) — AI use cases ──
-const AIMemoryHelpForSeniors    = lazy(() => import("./pages/tools/AIMemoryHelpForSeniors"));
-const AIShoppingAssistant       = lazy(() => import("./pages/tools/AIShoppingAssistant"));
-const AIHealthQuestions         = lazy(() => import("./pages/tools/AIHealthQuestions"));
-const AIFinanceAdvice           = lazy(() => import("./pages/tools/AIFinanceAdvice"));
-const AILegalQuestions          = lazy(() => import("./pages/tools/AILegalQuestions"));
 
 // ── Cycle 220 (April 29 2026) — productivity apps ──
-const GoogleSheetsBasics        = lazy(() => import("./pages/tools/GoogleSheetsBasics"));
-const GoogleSlidesBasics        = lazy(() => import("./pages/tools/GoogleSlidesBasics"));
-const MicrosoftTeamsForSeniors  = lazy(() => import("./pages/tools/MicrosoftTeamsForSeniors"));
-const OutlookBasicsSeniors      = lazy(() => import("./pages/tools/OutlookBasicsSeniors"));
-const OneDriveBasics            = lazy(() => import("./pages/tools/OneDriveBasics"));
 
 // ── Cycle 221 (April 29 2026) — music streaming ──
-const AppleMusicForSeniors      = lazy(() => import("./pages/tools/AppleMusicForSeniors"));
-const AmazonMusicForSeniors     = lazy(() => import("./pages/tools/AmazonMusicForSeniors"));
-const SimplyPianoForSeniors     = lazy(() => import("./pages/tools/SimplyPianoForSeniors"));
-const YousicianGuitarApp        = lazy(() => import("./pages/tools/YousicianGuitarApp"));
-const MetronomeTunerApps        = lazy(() => import("./pages/tools/MetronomeTunerApps"));
-const SmuleKaraokeApp           = lazy(() => import("./pages/tools/SmuleKaraokeApp"));
-const SheetMusicAppsDigital     = lazy(() => import("./pages/tools/SheetMusicAppsDigital"));
-const YouTubeMusicForSeniors    = lazy(() => import("./pages/tools/YouTubeMusicForSeniors"));
-const TuneInRadioApps           = lazy(() => import("./pages/tools/TuneInRadioApps"));
 
 // ── Cycle 222 (April 29 2026) — social media ──
-const PinterestForSeniors       = lazy(() => import("./pages/tools/PinterestForSeniors"));
-const ThreadsAppGuide           = lazy(() => import("./pages/tools/ThreadsAppGuide"));
-const BlueskyExplained          = lazy(() => import("./pages/tools/BlueskyExplained"));
-const FacebookGroupsForSeniors  = lazy(() => import("./pages/tools/FacebookGroupsForSeniors"));
-const SocialMediaPrivacyAudit   = lazy(() => import("./pages/tools/SocialMediaPrivacyAudit"));
-const DisneyPlusForSeniors      = lazy(() => import("./pages/tools/DisneyPlusForSeniors"));
-const HuluForSeniors            = lazy(() => import("./pages/tools/HuluForSeniors"));
-const PeacockStreamingGuide     = lazy(() => import("./pages/tools/PeacockStreamingGuide"));
-const MaxHBOStreamingGuide      = lazy(() => import("./pages/tools/MaxHBOStreamingGuide"));
-const TubiPlutoFreeStreaming    = lazy(() => import("./pages/tools/TubiPlutoFreeStreaming"));
-const SimpliSafeReview          = lazy(() => import("./pages/tools/SimpliSafeReview"));
-const RingAlarmSystemGuide      = lazy(() => import("./pages/tools/RingAlarmSystemGuide"));
-const HomeSecuritySystemCompare = lazy(() => import("./pages/tools/HomeSecuritySystemCompare"));
-const MotionSensorLightsGuide   = lazy(() => import("./pages/tools/MotionSensorLightsGuide"));
-const HomeSecurityChecklist     = lazy(() => import("./pages/tools/HomeSecurityChecklist"));
-const TripItAppGuide            = lazy(() => import("./pages/tools/TripItAppGuide"));
-const PocketWifiAbroad          = lazy(() => import("./pages/tools/PocketWifiAbroad"));
-const VRBOAirbnbCompareSeniors  = lazy(() => import("./pages/tools/VRBOAirbnbCompareSeniors"));
-const SoloSeniorTravelTips      = lazy(() => import("./pages/tools/SoloSeniorTravelTips"));
-const CurrencyExchangeForSeniors = lazy(() => import("./pages/tools/CurrencyExchangeForSeniors"));
-const GoodRxDrugSavings         = lazy(() => import("./pages/tools/GoodRxDrugSavings"));
-const MedisafePillReminder      = lazy(() => import("./pages/tools/MedisafePillReminder"));
-const BloodPressureTrackingApps = lazy(() => import("./pages/tools/BloodPressureTrackingApps"));
-const AppleHealthAppTutorial    = lazy(() => import("./pages/tools/AppleHealthAppTutorial"));
-const SmartScaleForSeniors      = lazy(() => import("./pages/tools/SmartScaleForSeniors"));
-const LumosityBrainHQCompare    = lazy(() => import("./pages/tools/LumosityBrainHQCompare"));
-const ChairExercisesForSeniors  = lazy(() => import("./pages/tools/ChairExercisesForSeniors"));
-const BalanceExercisesSeniors   = lazy(() => import("./pages/tools/BalanceExercisesSeniors"));
-const WordsWithFriendsSeniors   = lazy(() => import("./pages/tools/WordsWithFriendsSeniors"));
-const AARPTaxAideGuide          = lazy(() => import("./pages/tools/AARPTaxAideGuide"));
-const TurboTaxForSeniors        = lazy(() => import("./pages/tools/TurboTaxForSeniors"));
-const HRBlockForSeniors         = lazy(() => import("./pages/tools/HRBlockForSeniors"));
-const QuickenForRetirees        = lazy(() => import("./pages/tools/QuickenForRetirees"));
-const RothConversionCalculators = lazy(() => import("./pages/tools/RothConversionCalculators"));
-const IRSGovOnlineAccount       = lazy(() => import("./pages/tools/IRSGovOnlineAccount"));
-const PropertyTaxExemptionSeniors = lazy(() => import("./pages/tools/PropertyTaxExemptionSeniors"));
-const SocialSecurityClaimingStrategy = lazy(() => import("./pages/tools/SocialSecurityClaimingStrategy"));
-const SeniorDiscountFinder      = lazy(() => import("./pages/tools/SeniorDiscountFinder"));
 
 // ── Master Plan tools (April 16 2026 batch-2) ──
-const RouterSetupWizard      = lazy(() => import("./pages/tools/RouterSetupWizard"));
-const SmartTvSetupWizard     = lazy(() => import("./pages/tools/SmartTvSetupWizard"));
-const VoiceAssistantSetup    = lazy(() => import("./pages/tools/VoiceAssistantSetup"));
-const VoiceCommandCheatSheet = lazy(() => import("./pages/tools/VoiceCommandCheatSheet"));
-const LibraryTechHelper      = lazy(() => import("./pages/tools/LibraryTechHelper"));
-const LocalLibraryFinder     = lazy(() => import("./pages/tools/LocalLibraryFinder"));
-const PodcastDirectory       = lazy(() => import("./pages/tools/PodcastDirectory"));
-const TechGiftGuideTool      = lazy(() => import("./pages/tools/TechGiftGuide"));
-const MyFirstSmartphone      = lazy(() => import("./pages/tools/MyFirstSmartphone"));
-const IpadForSeniors         = lazy(() => import("./pages/tools/IpadForSeniors"));
-const AppleWatchSetup        = lazy(() => import("./pages/tools/AppleWatchSetup"));
-const ComputerCleanupWizard  = lazy(() => import("./pages/tools/ComputerCleanupWizard"));
-const PhoneCleanupWizard     = lazy(() => import("./pages/tools/PhoneCleanupWizard"));
-const DigitalFootprintScanner = lazy(() => import("./pages/tools/DigitalFootprintScanner"));
-const InternetPlanComparator = lazy(() => import("./pages/tools/InternetPlanComparator"));
-const ScamIqTest             = lazy(() => import("./pages/tools/ScamIqTest"));
 const ScamIqQuiz             = lazy(() => import("./pages/quizzes/ScamIqQuiz"));
 const TechConfidenceQuiz     = lazy(() => import("./pages/quizzes/TechConfidenceQuiz"));
 const PhishingInbox          = lazy(() => import("./pages/practice/PhishingInbox"));
-const AccessibilityNeedsFinder = lazy(() => import("./pages/tools/AccessibilityNeedsFinder"));
-const FileOrganizerGuide     = lazy(() => import("./pages/tools/FileOrganizerGuide"));
-const ScamPhoneDatabase      = lazy(() => import("./pages/tools/ScamPhoneDatabase"));
-const MedicationReminderSetup = lazy(() => import("./pages/tools/MedicationReminderSetup"));
-const HomeSecurityCameraSetup = lazy(() => import("./pages/tools/HomeSecurityCameraSetup"));
-const SmartThermostatSetup  = lazy(() => import("./pages/tools/SmartThermostatSetup"));
-const HearingAidTechHelper  = lazy(() => import("./pages/tools/HearingAidTechHelper"));
-const LowVisionTechHub       = lazy(() => import("./pages/tools/LowVisionTechHub"));
-const ScreenReaderStarter    = lazy(() => import("./pages/tools/ScreenReaderStarter"));
-const AudioTutorialHub       = lazy(() => import("./pages/tools/AudioTutorialHub"));
-const RemoteControlDecoder   = lazy(() => import("./pages/tools/RemoteControlDecoder"));
-const RideshareSetup         = lazy(() => import("./pages/tools/RideshareSetup"));
-const BankingAppSetup        = lazy(() => import("./pages/tools/BankingAppSetup"));
-const VideoCallHelper        = lazy(() => import("./pages/tools/VideoCallHelper"));
-const GovernmentBenefitsPortal = lazy(() => import("./pages/tools/GovernmentBenefitsPortal"));
-const StateBenefitsFinder   = lazy(() => import("./pages/tools/StateBenefitsFinder"));
-const DmvOnlineHelper        = lazy(() => import("./pages/tools/DmvOnlineHelper"));
 const GuidesEspanol          = lazy(() => import("./pages/GuidesEspanol"));
 const Brain                  = lazy(() => import("./pages/Brain"));
 const TekBrainPage           = lazy(() => import("./pages/TekBrain"));
@@ -3484,15 +731,6 @@ const DigitalEstateBinder    = lazy(() => import("./pages/printables/DigitalEsta
 // ── Calculators ──
 const MedicareCostEstimator  = lazy(() => import("./pages/calculators/MedicareCostEstimator"));
 
-const TechComfortQuiz        = lazy(() => import("./pages/tools/TechComfortQuiz"));
-const IsThisAScam            = lazy(() => import("./pages/tools/IsThisAScam"));
-const DeviceComparison       = lazy(() => import("./pages/tools/DeviceComparison"));
-const SubscriptionAuditor    = lazy(() => import("./pages/tools/SubscriptionAuditor"));
-const RocketMoneySubscriptionTracker = lazy(() => import("./pages/tools/RocketMoneySubscriptionTracker"));
-const AppleHomeKitForSeniors = lazy(() => import("./pages/tools/AppleHomeKitForSeniors"));
-const EchoShowForSeniors     = lazy(() => import("./pages/tools/EchoShowForSeniors"));
-const IPostalMailScanning    = lazy(() => import("./pages/tools/IPostalMailScanning"));
-const SnowbirdTechSetup      = lazy(() => import("./pages/tools/SnowbirdTechSetup"));
 const PrivacyHub             = lazy(() => import("./pages/PrivacyHub"));
 const DataBrokerRemoval      = lazy(() => import("./pages/DataBrokerRemoval"));
 const VeteransTechHub        = lazy(() => import("./pages/VeteransTechHub"));
@@ -3507,18 +745,8 @@ const AskTekSureCommunity    = lazy(() => import("./pages/community/AskTekSure")
 const SuccessStories         = lazy(() => import("./pages/SuccessStories"));
 const Stories                = lazy(() => import("./pages/Stories"));
 const TechProblemOfWeek      = lazy(() => import("./pages/TechProblemOfWeek"));
-const UrlSafetyChecker       = lazy(() => import("./pages/tools/UrlSafetyChecker"));
-const QrCodeExplainer        = lazy(() => import("./pages/tools/QrCodeExplainer"));
-const InternetSpeedNeeds     = lazy(() => import("./pages/tools/InternetSpeedNeeds"));
-const BatteryOptimizer       = lazy(() => import("./pages/tools/BatteryOptimizer"));
-const PasswordPhraseGenerator = lazy(() => import("./pages/tools/PasswordPhraseGenerator"));
 const PasswordPractice       = lazy(() => import("./pages/practice/PasswordPractice"));
-const DigitalWillTemplate    = lazy(() => import("./pages/tools/DigitalWillTemplate"));
-const GriefTechHelper        = lazy(() => import("./pages/tools/GriefTechHelper"));
-const EmergencyInfoCard      = lazy(() => import("./pages/tools/EmergencyInfoCard"));
 const CaregiverPlannerPack   = lazy(() => import("./pages/printables/CaregiverPlannerPack"));
-const WifiCoveragePlanner    = lazy(() => import("./pages/tools/WifiCoveragePlanner"));
-const StorageOptimizer       = lazy(() => import("./pages/tools/StorageOptimizer"));
 // ── Round 4 hubs ──
 const SmallBusinessTechHub   = lazy(() => import("./pages/SmallBusinessTechHub"));
 const AiLiteracyHub          = lazy(() => import("./pages/AiLiteracyHub"));
@@ -3534,35 +762,10 @@ const BereavementTech        = lazy(() => import("./pages/BereavementTech"));
 const EmptyNestTech          = lazy(() => import("./pages/EmptyNestTech"));
 const FirstApartmentTech     = lazy(() => import("./pages/FirstApartmentTech"));
 // ── Round 4 tools ──
-const AccessibilityProfileBuilder = lazy(() => import("./pages/tools/AccessibilityProfileBuilder"));
-const TechSetupCostEstimator = lazy(() => import("./pages/tools/TechSetupCostEstimator"));
-const WifiQrGenerator        = lazy(() => import("./pages/tools/WifiQrGenerator"));
-const EmailWriterHelper      = lazy(() => import("./pages/tools/EmailWriterHelper"));
-const CreditReportReader     = lazy(() => import("./pages/tools/CreditReportReader"));
-const EobDecoder             = lazy(() => import("./pages/tools/EobDecoder"));
-const ReceiptScannerDemo     = lazy(() => import("./pages/tools/ReceiptScannerDemo"));
-const ChildAppSafetyChecker  = lazy(() => import("./pages/tools/ChildAppSafetyChecker"));
-const InternetSpeedDoctor    = lazy(() => import("./pages/tools/InternetSpeedDoctor"));
-const PhoneFirstAid          = lazy(() => import("./pages/tools/PhoneFirstAid"));
-const FamilyTechPlanner      = lazy(() => import("./pages/tools/FamilyTechPlanner"));
-const BillNegotiator         = lazy(() => import("./pages/tools/BillNegotiator"));
-const FreeLearningHub        = lazy(() => import("./pages/tools/FreeLearningHub"));
-const SocialMediaSafety      = lazy(() => import("./pages/tools/SocialMediaSafety"));
-const FakeNewsChecker        = lazy(() => import("./pages/tools/FakeNewsChecker"));
-const MedicarePlanChooser    = lazy(() => import("./pages/tools/MedicarePlanChooser"));
-const PracticeMode           = lazy(() => import("./pages/tools/PracticeMode"));
 const SiteIndex              = lazy(() => import("./pages/SiteIndex"));
 const Volunteer              = lazy(() => import("./pages/Volunteer"));
 const WeeklyNewsletterTemplate = lazy(() => import("./pages/printables/WeeklyNewsletterTemplate"));
-const SettingsFinder         = lazy(() => import("./pages/tools/SettingsFinder"));
-const EmailSpamManager       = lazy(() => import("./pages/tools/EmailSpamManager"));
-const StreamingServicePicker = lazy(() => import("./pages/tools/StreamingServicePicker"));
 
-const RefundAndReturnHelper  = lazy(() => import("./pages/tools/RefundAndReturnHelper"));
-const KitchenTechHelper      = lazy(() => import("./pages/tools/KitchenTechHelper"));
-const FreeResourceHub        = lazy(() => import("./pages/tools/FreeResourceHub"));
-const TechJargonTranslator   = lazy(() => import("./pages/tools/TechJargonTranslator"));
-const StateAgScamLookup      = lazy(() => import("./pages/tools/StateAgScamLookup"));
 
 // ── Toolkits (hub pages) ─────────────────────────────────────────────────────
 const CaregiverToolkit       = lazy(() => import("./pages/toolkits/CaregiverToolkit"));
@@ -3572,170 +775,11 @@ const SuspiciousCallSim      = lazy(() => import("./pages/practice/SuspiciousCal
 const VocabFlashcards        = lazy(() => import("./pages/practice/VocabFlashcards"));
 
 // ── New tools and hubs (April 2026 expansion) ──────────────────────────────
-const ScamMessageDecoder     = lazy(() => import("./pages/tools/ScamMessageDecoder"));
-const PasswordHealth         = lazy(() => import("./pages/tools/PasswordHealth"));
-const DeviceRetirementHelper = lazy(() => import("./pages/tools/DeviceRetirementHelper"));
-const RobocallBlockerSetup   = lazy(() => import("./pages/tools/RobocallBlockerSetup"));
-const ScamWitnessStatement   = lazy(() => import("./pages/tools/ScamWitnessStatement"));
-const TechCheatsheetGenerator = lazy(() => import("./pages/tools/TechCheatsheetGenerator"));
-const FamilyTechRoundtable   = lazy(() => import("./pages/tools/FamilyTechRoundtable"));
 const GrandparentDeviceSetup = lazy(() => import("./pages/GrandparentDeviceSetup"));
 const AccountAfterLoss       = lazy(() => import("./pages/AccountAfterLoss"));
 const LowVisionSetup         = lazy(() => import("./pages/LowVisionSetup"));
 const DailyTip               = lazy(() => import("./pages/DailyTip"));
-const TechWillBuilder        = lazy(() => import("./pages/tools/TechWillBuilder"));
-const UpdateDecisionHelper   = lazy(() => import("./pages/tools/UpdateDecisionHelper"));
-const HearingAidPairingWizard = lazy(() => import("./pages/tools/HearingAidPairingWizard"));
 const Start                  = lazy(() => import("./pages/Start"));
-const IdTheftRecovery        = lazy(() => import("./pages/tools/IdTheftRecovery"));
-const EmailMigration         = lazy(() => import("./pages/tools/EmailMigration"));
-const FallDetectionSetup     = lazy(() => import("./pages/tools/FallDetectionSetup"));
-const TravelTechChecklist    = lazy(() => import("./pages/tools/TravelTechChecklist"));
-const SmartHomeStarter       = lazy(() => import("./pages/tools/SmartHomeStarter"));
-const HospitalDischargeKit   = lazy(() => import("./pages/tools/HospitalDischargeKit"));
-const AiImageSpotter         = lazy(() => import("./pages/tools/AiImageSpotter"));
-const CordCutterWizard       = lazy(() => import("./pages/tools/CordCutterWizard"));
-const OnlineBankingSafety    = lazy(() => import("./pages/tools/OnlineBankingSafety"));
-const ChaseBankAppForSeniors = lazy(() => import("./pages/tools/ChaseBankAppForSeniors"));
-const BankOfAmericaAppGuide  = lazy(() => import("./pages/tools/BankOfAmericaAppGuide"));
-const CreditCardAppManagement = lazy(() => import("./pages/tools/CreditCardAppManagement"));
-const CreditScoreMonitorApps = lazy(() => import("./pages/tools/CreditScoreMonitorApps"));
-const UsaaForVeteranSeniors  = lazy(() => import("./pages/tools/UsaaForVeteranSeniors"));
-const SeniorFriendlyApps     = lazy(() => import("./pages/tools/SeniorFriendlyApps"));
-const FindLostItems          = lazy(() => import("./pages/tools/FindLostItems"));
-const SmartSpeakerPicker     = lazy(() => import("./pages/tools/SmartSpeakerPicker"));
-const TabletOrLaptop         = lazy(() => import("./pages/tools/TabletOrLaptop"));
-const PhoneInsuranceDecision = lazy(() => import("./pages/tools/PhoneInsuranceDecision"));
-const PhotoLibraryTips       = lazy(() => import("./pages/tools/PhotoLibraryTips"));
-const VoicemailSetup         = lazy(() => import("./pages/tools/VoicemailSetup"));
-const TechBuddySetup         = lazy(() => import("./pages/tools/TechBuddySetup"));
-const VoterInfoVerifier      = lazy(() => import("./pages/tools/VoterInfoVerifier"));
-const AmazonReviewSpotter    = lazy(() => import("./pages/tools/AmazonReviewSpotter"));
-const SpeedUpDevice          = lazy(() => import("./pages/tools/SpeedUpDevice"));
-const RouterUpgradeHelper    = lazy(() => import("./pages/tools/RouterUpgradeHelper"));
-const TelehealthPrep         = lazy(() => import("./pages/tools/TelehealthPrep"));
-const MarketplaceScamSpotter = lazy(() => import("./pages/tools/MarketplaceScamSpotter"));
-const DictationSetup         = lazy(() => import("./pages/tools/DictationSetup"));
-const OtterAITranscription   = lazy(() => import("./pages/tools/OtterAITranscription"));
-const VoiceTypingPhoneTutorial = lazy(() => import("./pages/tools/VoiceTypingPhoneTutorial"));
-const SiriCommandsCheatSheet = lazy(() => import("./pages/tools/SiriCommandsCheatSheet"));
-const GoogleAssistantSeniorCommands = lazy(() => import("./pages/tools/GoogleAssistantSeniorCommands"));
-const StylusForSeniorTablets = lazy(() => import("./pages/tools/StylusForSeniorTablets"));
-const AppleWatchAccessibility = lazy(() => import("./pages/tools/AppleWatchAccessibility"));
-const PhoneStylusForArthritis = lazy(() => import("./pages/tools/PhoneStylusForArthritis"));
-const AccountDeletionWizard  = lazy(() => import("./pages/tools/AccountDeletionWizard"));
-const FreeTaxFiling          = lazy(() => import("./pages/tools/FreeTaxFiling"));
-const LibraryPowerPack       = lazy(() => import("./pages/tools/LibraryPowerPack"));
-const SharedFamilyCalendar   = lazy(() => import("./pages/tools/SharedFamilyCalendar"));
-const LowCostInternet        = lazy(() => import("./pages/tools/LowCostInternet"));
-const StayConnected          = lazy(() => import("./pages/tools/StayConnected"));
-const AiChatbotGuide         = lazy(() => import("./pages/tools/AiChatbotGuide"));
-const RenewIdOnline          = lazy(() => import("./pages/tools/RenewIdOnline"));
-const CommonScamsLibrary     = lazy(() => import("./pages/tools/CommonScamsLibrary"));
-const CookieConsentDecoder   = lazy(() => import("./pages/tools/CookieConsentDecoder"));
-const SocialPrivacyLockdown  = lazy(() => import("./pages/tools/SocialPrivacyLockdown"));
-const WeatherAlertsSetup     = lazy(() => import("./pages/tools/WeatherAlertsSetup"));
-const SocialSecuritySetup    = lazy(() => import("./pages/tools/SocialSecuritySetup"));
-const CarPhoneSetup          = lazy(() => import("./pages/tools/CarPhoneSetup"));
-const SellOnlineSafely       = lazy(() => import("./pages/tools/SellOnlineSafely"));
-const CreditFreezeWalkthrough = lazy(() => import("./pages/tools/CreditFreezeWalkthrough"));
-const PodcastStarter         = lazy(() => import("./pages/tools/PodcastStarter"));
-const OnlineMemorialSetup    = lazy(() => import("./pages/tools/OnlineMemorialSetup"));
-const PaymentAppSetup        = lazy(() => import("./pages/tools/PaymentAppSetup"));
-const OnlineShoppingSafety   = lazy(() => import("./pages/tools/OnlineShoppingSafety"));
-const WifiCallingSetup       = lazy(() => import("./pages/tools/WifiCallingSetup"));
-const FitnessTrackerPicker   = lazy(() => import("./pages/tools/FitnessTrackerPicker"));
-const SmartLockPicker        = lazy(() => import("./pages/tools/SmartLockPicker"));
-const KindleSetup            = lazy(() => import("./pages/tools/KindleSetup"));
-const EReaderComparisonGuide = lazy(() => import("./pages/tools/EReaderComparisonGuide"));
-const KindleUnlimitedScribdReview = lazy(() => import("./pages/tools/KindleUnlimitedScribdReview"));
-const GunSafeBiometric       = lazy(() => import("./pages/tools/GunSafeBiometric"));
-const PowerBankSeniorPicks   = lazy(() => import("./pages/tools/PowerBankSeniorPicks"));
-const SeniorJobSearchPlatforms = lazy(() => import("./pages/tools/SeniorJobSearchPlatforms"));
-const MapsNavigationSetup    = lazy(() => import("./pages/tools/MapsNavigationSetup"));
-const FindLostPhone          = lazy(() => import("./pages/tools/FindLostPhone"));
-const VideoDoorbellPicker    = lazy(() => import("./pages/tools/VideoDoorbellPicker"));
-const StreamingServiceSetup  = lazy(() => import("./pages/tools/StreamingServiceSetup"));
-const DocumentScannerSetup   = lazy(() => import("./pages/tools/DocumentScannerSetup"));
-const RemoteTechHelp         = lazy(() => import("./pages/tools/RemoteTechHelp"));
-const OnlineFormsHelper      = lazy(() => import("./pages/tools/OnlineFormsHelper"));
-const ScreenRecordingGuide   = lazy(() => import("./pages/tools/ScreenRecordingGuide"));
-const FreeOfficeSuite        = lazy(() => import("./pages/tools/FreeOfficeSuite"));
-const NewComputerSetup       = lazy(() => import("./pages/tools/NewComputerSetup"));
-const TranslationTools       = lazy(() => import("./pages/tools/TranslationTools"));
-const SeniorFitnessApps      = lazy(() => import("./pages/tools/SeniorFitnessApps"));
-const AiVoiceDefense         = lazy(() => import("./pages/tools/AiVoiceDefense"));
-const OnlineDoctorPortalSetup = lazy(() => import("./pages/tools/OnlineDoctorPortalSetup"));
-const CreditCardRewardsPicker = lazy(() => import("./pages/tools/CreditCardRewardsPicker"));
-const EmailOrganization      = lazy(() => import("./pages/tools/EmailOrganization"));
-const UsbStorageGuide        = lazy(() => import("./pages/tools/UsbStorageGuide"));
-const PetTechPicker          = lazy(() => import("./pages/tools/PetTechPicker"));
-const EmailSignatureBuilder  = lazy(() => import("./pages/tools/EmailSignatureBuilder"));
-const GuestWifiSetup         = lazy(() => import("./pages/tools/GuestWifiSetup"));
-const HearingAidApps         = lazy(() => import("./pages/tools/HearingAidApps"));
-const SmartGarageDoor        = lazy(() => import("./pages/tools/SmartGarageDoor"));
-const RobotVacuumPicker      = lazy(() => import("./pages/tools/RobotVacuumPicker"));
-const ESignatureSetup        = lazy(() => import("./pages/tools/ESignatureSetup"));
-const MusicStreamingPicker   = lazy(() => import("./pages/tools/MusicStreamingPicker"));
-const HomeOfficeSetup        = lazy(() => import("./pages/tools/HomeOfficeSetup"));
-const DeepfakeVideoSpotter   = lazy(() => import("./pages/tools/DeepfakeVideoSpotter"));
-const FreeLegalHelp          = lazy(() => import("./pages/tools/FreeLegalHelp"));
-const SpouseSurvivorBenefits = lazy(() => import("./pages/tools/SpouseSurvivorBenefits"));
-const CallerIdSetup          = lazy(() => import("./pages/tools/CallerIdSetup"));
-const BackupVerification     = lazy(() => import("./pages/tools/BackupVerification"));
-const PhoneFamilyLinkSetup   = lazy(() => import("./pages/tools/PhoneFamilyLinkSetup"));
-const VeteranTechBenefits    = lazy(() => import("./pages/tools/VeteranTechBenefits"));
-const PrintFromPhone         = lazy(() => import("./pages/tools/PrintFromPhone"));
-const LowVisionApps          = lazy(() => import("./pages/tools/LowVisionApps"));
-const NetworkPrivacyChecker  = lazy(() => import("./pages/tools/NetworkPrivacyChecker"));
-const SeniorTransitApps      = lazy(() => import("./pages/tools/SeniorTransitApps"));
-const BillRefundDispute      = lazy(() => import("./pages/tools/BillRefundDispute"));
-const OnlineDatingSafety     = lazy(() => import("./pages/tools/OnlineDatingSafety"));
-const TravelBookingSafety    = lazy(() => import("./pages/tools/TravelBookingSafety"));
-const ComputerRepairOptions  = lazy(() => import("./pages/tools/ComputerRepairOptions"));
-const NotebookAlternatives   = lazy(() => import("./pages/tools/NotebookAlternatives"));
-const BedtimeTechRoutine     = lazy(() => import("./pages/tools/BedtimeTechRoutine"));
-const RealEstateWireScam     = lazy(() => import("./pages/tools/RealEstateWireScam"));
-const IphoneShortcuts        = lazy(() => import("./pages/tools/IphoneShortcuts"));
-const AndroidShortcuts       = lazy(() => import("./pages/tools/AndroidShortcuts"));
-const CryptoScamDefense      = lazy(() => import("./pages/tools/CryptoScamDefense"));
-const NutritionAppPicker     = lazy(() => import("./pages/tools/NutritionAppPicker"));
-const InvestmentAppPicker    = lazy(() => import("./pages/tools/InvestmentAppPicker"));
-const BloodPressureApps      = lazy(() => import("./pages/tools/BloodPressureApps"));
-const OnlineWillEstate       = lazy(() => import("./pages/tools/OnlineWillEstate"));
-const SocialMediaFirstSteps  = lazy(() => import("./pages/tools/SocialMediaFirstSteps"));
-const CountdownToRetirement  = lazy(() => import("./pages/tools/CountdownToRetirement"));
-const BluetoothEarbudPicker  = lazy(() => import("./pages/tools/BluetoothEarbudPicker"));
-const VideoCallEtiquette     = lazy(() => import("./pages/tools/VideoCallEtiquette"));
-const PrescriptionDeliveryApps = lazy(() => import("./pages/tools/PrescriptionDeliveryApps"));
-const LanguageLearningApps   = lazy(() => import("./pages/tools/LanguageLearningApps"));
-const BrainGamesApps         = lazy(() => import("./pages/tools/BrainGamesApps"));
-const NewsAppPicker          = lazy(() => import("./pages/tools/NewsAppPicker"));
-const NYTimesAppForSeniors   = lazy(() => import("./pages/tools/NYTimesAppForSeniors"));
-const AppleNewsPlusReview    = lazy(() => import("./pages/tools/AppleNewsPlusReview"));
-const WashingtonPostAppGuide = lazy(() => import("./pages/tools/WashingtonPostAppGuide"));
-const NPRPodcastsForSeniors  = lazy(() => import("./pages/tools/NPRPodcastsForSeniors"));
-const SubstackForSeniors     = lazy(() => import("./pages/tools/SubstackForSeniors"));
-const VoiceMemoTranscribe    = lazy(() => import("./pages/tools/VoiceMemoTranscribe"));
-const HomeVisionTest         = lazy(() => import("./pages/tools/HomeVisionTest"));
-const SmartTvAccessibility   = lazy(() => import("./pages/tools/SmartTvAccessibility"));
-const TelevetSetup           = lazy(() => import("./pages/tools/TelevetSetup"));
-const BoardGamesOnline       = lazy(() => import("./pages/tools/BoardGamesOnline"));
-const GasBuddyAlternatives   = lazy(() => import("./pages/tools/GasBuddyAlternatives"));
-const VideoEditingApps       = lazy(() => import("./pages/tools/VideoEditingApps"));
-const HomeCareAppsForFamily  = lazy(() => import("./pages/tools/HomeCareAppsForFamily"));
-const RealEstateAppPicker    = lazy(() => import("./pages/tools/RealEstateAppPicker"));
-const EstateSaleHelper       = lazy(() => import("./pages/tools/EstateSaleHelper"));
-const GroceryListApps        = lazy(() => import("./pages/tools/GroceryListApps"));
-const SmartScalePicker       = lazy(() => import("./pages/tools/SmartScalePicker"));
-const SeniorTechMistakes     = lazy(() => import("./pages/tools/SeniorTechMistakes"));
-const PhoneCarrierComparison = lazy(() => import("./pages/tools/PhoneCarrierComparison"));
-const PhoneRepairOrReplace   = lazy(() => import("./pages/tools/PhoneRepairOrReplace"));
-const OnlineClassesPicker    = lazy(() => import("./pages/tools/OnlineClassesPicker"));
-const CallScreenerSetup      = lazy(() => import("./pages/tools/CallScreenerSetup"));
-const EmailUnsubscribeFlow   = lazy(() => import("./pages/tools/EmailUnsubscribeFlow"));
-const FamilyRecipeApp        = lazy(() => import("./pages/tools/FamilyRecipeApp"));
-const SafeSeniorComputerSetup = lazy(() => import("./pages/tools/SafeSeniorComputerSetup"));
 
 // ── Query client ──────────────────────────────────────────────────────────────
 const queryClient = new QueryClient({
@@ -3941,58 +985,23 @@ const AppContent = () => {
           <Route path="/device-hub" element={<DeviceHub />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/tools/all" element={<AllToolsDirectory />} />
+          {/* Every other /tools/<slug> resolves through src/data/tools-registry.ts. */}
+          <Route path="/tools/:slug" element={<ToolRoute />} />
           <Route path="/brain" element={<Brain />} />
           {/* /tekbrain is the welcoming landing page; /tekbrain/chat is the
               actual chat UI. First-time visitors now see an explainer before
               being dropped into a conversation. */}
           <Route path="/tekbrain" element={<TekBrainLanding />} />
           <Route path="/tekbrain/chat" element={<TekBrainPage />} />
-          <Route path="/tools/password-strength" element={<PasswordStrength />} />
-          <Route path="/tools/wifi-speed" element={<WifiSpeed />} />
-          <Route path="/tools/health-check" element={<HealthCheck />} />
-          <Route path="/tools/device-compare" element={<DeviceCompare />} />
-          <Route path="/tools/keyboard-shortcuts" element={<KeyboardShortcuts />} />
-          <Route path="/tools/email-templates" element={<EmailTemplates />} />
           <Route path="/safety/scam-alerts" element={<ScamAlerts />} />
-          <Route path="/tools/error-decoder" element={<ErrorDecoder />} />
           <Route path="/tips" element={<Tips />} />
           <Route path="/tools/jargon-translator" element={<Navigate to="/tools/tech-jargon-translator" replace />} />
-          <Route path="/tools/quick-reference" element={<QuickReference />} />
-          <Route path="/tools/troubleshooter" element={<Troubleshooter />} />
-          <Route path="/tools/device-chooser" element={<DeviceChooser />} />
-          <Route path="/tools/backup-wizard" element={<BackupWizard />} />
-          <Route path="/tools/photo-backup-wizard" element={<PhotoBackupWizard />} />
-          <Route path="/tools/safety-course" element={<SafetyCourse />} />
           <Route path="/setup" element={<Setup />} />
-          <Route path="/tools/app-recommender" element={<AppRecommender />} />
-          <Route path="/tools/tech-comfort-quiz" element={<TechComfortQuiz />} />
-          <Route path="/tools/warranty-checker" element={<WarrantyChecker />} />
-          <Route path="/tools/email-declutter" element={<EmailDeclutter />} />
-          <Route path="/tools/accessibility-check" element={<AccessibilityCheck />} />
-          <Route path="/tools/cyber-scorecard" element={<CyberScorecard />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<Blog />} />
           <Route path="/webinars" element={<Webinars />} />
           <Route path="/community/ambassadors" element={<Ambassadors />} />
           <Route path="/tools/phishing-scanner" element={<Navigate to="/tools/url-safety-checker" replace />} />
-          <Route path="/tools/wifi-troubleshooter" element={<WifiTroubleshooter />} />
-          <Route path="/tools/account-recovery" element={<AccountRecovery />} />
-          <Route path="/tools/printer-troubleshooter" element={<PrinterTroubleshooter />} />
-          <Route path="/tools/device-health" element={<DeviceHealthDashboard />} />
-          <Route path="/tools/bluetooth-troubleshooter" element={<BluetoothTroubleshooter />} />
-          <Route path="/tools/bluetooth-pairing-helper" element={<BluetoothPairingHelper />} />
-          <Route path="/tools/tech-health-quiz" element={<TechHealthQuiz />} />
-          <Route path="/tools/storage-cleanup" element={<StorageCleanup />} />
-          <Route path="/tools/vpn-guide" element={<VpnGuide />} />
-          <Route path="/tools/app-permissions" element={<AppPermissions />} />
-          <Route path="/tools/two-factor-setup" element={<TwoFactorSetup />} />
-          <Route path="/tools/password-manager" element={<PasswordManager />} />
-          <Route path="/tools/bitwarden-setup-seniors" element={<BitwardenSetupSeniors />} />
-          <Route path="/tools/two-factor-auth-setup" element={<TwoFactorAuthSetup />} />
-          <Route path="/tools/apple-id-account-security" element={<AppleIDAccountSecurity />} />
-          <Route path="/tools/google-account-security-checkup" element={<GoogleAccountSecurityCheckup />} />
-          <Route path="/tools/hardware-security-keys" element={<HardwareSecurityKeys />} />
-          <Route path="/tools/state-benefits-finder" element={<StateBenefitsFinder />} />
           <Route path="/notifications" element={<Notifications />} />
           {/* /technicians is taken out of public reach on purpose.
               The page shipped four invented technician profiles ("James R.",
@@ -4031,9 +1040,6 @@ const AppContent = () => {
           <Route path="/my-path" element={<MyPath />} />
           <Route path="/my-requests" element={<MyRequests />} />
           <Route path="/profile" element={<ProtectedRoute allowedRoles={['customer', 'tech', 'admin']}><Profile /></ProtectedRoute>} />
-          <Route path="/tools/confidence-score" element={<TechConfidenceScore />} />
-          <Route path="/tools/scam-report" element={<ScamReport />} />
-          <Route path="/tools/guide-packs" element={<GuidePacks />} />
           <Route path="/gift-guide" element={<TechGiftGuide />} />
           <Route path="/tech-anxiety" element={<TechAnxiety />} />
           <Route path="/local-help" element={<LocalHelp />} />
@@ -4042,9 +1048,6 @@ const AppContent = () => {
           <Route path="/progress-report" element={<ProgressReport />} />
           <Route path="/family-sharing" element={<FamilySharing />} />
           <Route path="/caregiver" element={<Caregiver />} />
-          <Route path="/tools/cyber-toolkit" element={<CyberToolkit />} />
-          <Route path="/tools/security-osint" element={<SecurityOsintTools />} />
-          <Route path="/tools/osint-framework" element={<OsintFramework />} />
           <Route path="/tools/osint-tools" element={<Navigate to="/tools/security-osint?tab=osint" replace />} />
           <Route path="/tools/geoint" element={<Navigate to="/tools/security-osint?tab=geoint" replace />} />
           <Route path="/tools/osint-collections" element={<Navigate to="/tools/security-osint?tab=collections" replace />} />
@@ -4068,18 +1071,8 @@ const AppContent = () => {
           <Route path="/chromebook" element={<ChromebookHub />} />
           <Route path="/courses/internet-basics" element={<InternetBasics />} />
 
-          <Route path="/tools/is-this-a-scam" element={<IsThisAScam />} />
-          <Route path="/tools/device-comparison" element={<DeviceComparison />} />
           <Route path="/tools/phone-plan-comparator" element={<Navigate to="/tools/phone-plan-comparison" replace />} />
-          <Route path="/tools/phone-plan-comparison" element={<PhonePlanComparison />} />
-          <Route path="/tools/robocall-blocker" element={<RobocallBlocker />} />
           <Route path="/tools/password-leak-checker" element={<Navigate to="/tools/password-health" replace />} />
-          <Route path="/tools/subscription-auditor" element={<SubscriptionAuditor />} />
-          <Route path="/tools/rocket-money-subscription-tracker" element={<RocketMoneySubscriptionTracker />} />
-          <Route path="/tools/apple-homekit-for-seniors" element={<AppleHomeKitForSeniors />} />
-          <Route path="/tools/echo-show-for-seniors" element={<EchoShowForSeniors />} />
-          <Route path="/tools/ipostal-mail-scanning" element={<IPostalMailScanning />} />
-          <Route path="/tools/snowbird-tech-setup" element={<SnowbirdTechSetup />} />
           <Route path="/privacy-hub" element={<PrivacyHub />} />
           <Route path="/data-broker-removal" element={<DataBrokerRemoval />} />
           <Route path="/veterans-tech-hub" element={<VeteransTechHub />} />
@@ -4094,19 +1087,8 @@ const AppContent = () => {
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/stories" element={<Stories />} />
           <Route path="/tech-problem-of-week" element={<TechProblemOfWeek />} />
-          <Route path="/tools/url-safety-checker" element={<UrlSafetyChecker />} />
-          <Route path="/tools/grief-tech-helper" element={<GriefTechHelper />} />
-          <Route path="/tools/qr-code-explainer" element={<QrCodeExplainer />} />
-          <Route path="/tools/internet-speed-needs" element={<InternetSpeedNeeds />} />
-          <Route path="/tools/battery-optimizer" element={<BatteryOptimizer />} />
-          <Route path="/tools/password-phrase-generator" element={<PasswordPhraseGenerator />} />
           <Route path="/practice/password-practice" element={<PasswordPractice />} />
-          <Route path="/tools/digital-will-template" element={<DigitalWillTemplate />} />
-          <Route path="/tools/emergency-info-card" element={<EmergencyInfoCard />} />
           <Route path="/printables/caregiver-planner" element={<CaregiverPlannerPack />} />
-          <Route path="/tools/wifi-coverage-planner" element={<WifiCoveragePlanner />} />
-          <Route path="/tools/storage-optimizer" element={<StorageOptimizer />} />
-          <Route path="/tools/tech-jargon-translator" element={<TechJargonTranslator />} />
           {/* Round 4 hubs */}
           <Route path="/small-business-tech-hub" element={<SmallBusinessTechHub />} />
           <Route path="/ai-literacy-hub" element={<AiLiteracyHub />} />
@@ -4123,3087 +1105,317 @@ const AppContent = () => {
           <Route path="/first-apartment-tech" element={<FirstApartmentTech />} />
           {/* Round 4 tools */}
           <Route path="/tools/plain-english-translator" element={<Navigate to="/tools/tech-jargon-translator" replace />} />
-          <Route path="/tools/bill-decoder" element={<BillDecoder />} />
-          <Route path="/tools/bill-negotiator" element={<BillNegotiator />} />
-          <Route path="/tools/accessibility-profile-builder" element={<AccessibilityProfileBuilder />} />
-          <Route path="/tools/tech-setup-cost-estimator" element={<TechSetupCostEstimator />} />
-          <Route path="/tools/wifi-qr-generator" element={<WifiQrGenerator />} />
-          <Route path="/tools/email-writer-helper" element={<EmailWriterHelper />} />
-          <Route path="/tools/credit-report-reader" element={<CreditReportReader />} />
-          <Route path="/tools/eob-decoder" element={<EobDecoder />} />
-          <Route path="/tools/receipt-scanner-demo" element={<ReceiptScannerDemo />} />
-          <Route path="/tools/child-app-safety-checker" element={<ChildAppSafetyChecker />} />
-          <Route path="/tools/internet-speed-doctor" element={<InternetSpeedDoctor />} />
-          <Route path="/tools/phone-first-aid" element={<PhoneFirstAid />} />
-          <Route path="/tools/family-tech-planner" element={<FamilyTechPlanner />} />
           <Route path="/tools/safe-link-checker" element={<Navigate to="/tools/url-safety-checker" replace />} />
           <Route path="/tools/is-this-real" element={<Navigate to="/tools/is-this-a-scam" replace />} />
-          <Route path="/tools/free-learning-hub" element={<FreeLearningHub />} />
-          <Route path="/tools/free-resource-hub" element={<FreeResourceHub />} />
-          <Route path="/tools/social-media-safety" element={<SocialMediaSafety />} />
-          <Route path="/tools/fake-news-checker" element={<FakeNewsChecker />} />
-          <Route path="/tools/senior-discount-finder" element={<SeniorDiscountFinder />} />
-          <Route path="/tools/medicare-plan-chooser" element={<MedicarePlanChooser />} />
           <Route path="/videos" element={<Videos />} />
-          <Route path="/tools/doc-browser" element={<DocBrowser />} />
           <Route path="/llm-knowledge-base" element={<LlmKnowledgeBase />} />
-          <Route path="/tools/llm-knowledge-base" element={<LlmKnowledgeBase />} />
           <Route path="/keyboard-navigation" element={<KeyboardNavigation />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/changelog" element={<Changelog />} />
           <Route path="/whats-new" element={<WhatsNew />} />
           <Route path="/memory" element={<MemoryDashboard />} />
           <Route path="/faq" element={<FAQ />} />
-          <Route path="/tools/notification-decoder" element={<NotificationDecoder />} />
-          <Route path="/tools/safe-call" element={<SafeCall />} />
 
           {/* ── New tools (April 2026 expansion) ── */}
-          <Route path="/tools/scam-simulator" element={<ScamSimulator />} />
-          <Route path="/tools/privacy-audit" element={<PrivacyAudit />} />
-          <Route path="/tools/browser-safety-audit" element={<BrowserSafetyAudit />} />
-          <Route path="/tools/streaming-calculator" element={<StreamingCalculator />} />
           <Route path="/calculators/internet-plan" element={<InternetPlanCalculator />} />
           <Route path="/calculators/subscriptions" element={<SubscriptionCostAggregator />} />
-          <Route path="/tools/data-breach-checker" element={<DataBreachChecker />} />
-          <Route path="/tools/new-phone-setup" element={<NewPhoneSetup />} />
           <Route path="/tools/subscription-tracker" element={<Navigate to="/tools/subscription-auditor" replace />} />
-          <Route path="/tools/internet-speed-advisor" element={<InternetSpeedAdvisor />} />
-          <Route path="/tools/digital-cleanup" element={<DigitalCleanup />} />
-          <Route path="/tools/device-setup-checklist" element={<DeviceSetupChecklist />} />
-          <Route path="/tools/tech-glossary-quiz" element={<TechGlossaryQuiz />} />
-          <Route path="/tools/digital-literacy-assessment" element={<DigitalLiteracyAssessment />} />
-          <Route path="/tools/meeting-setup" element={<MeetingSetupHelper />} />
-          <Route path="/tools/contact-backup" element={<ContactBackupTool />} />
 
           {/* OSINT.link-inspired tools */}
-          <Route path="/tools/google-dork-generator" element={<GoogleDorkGenerator />} />
-          <Route path="/tools/data-leak-dashboard" element={<DataLeakDashboard />} />
-          <Route path="/tools/reverse-image-search" element={<ReverseImageSearch />} />
-          <Route path="/tools/fact-check-toolkit" element={<FactCheckToolkit />} />
 
           {/* ── Tools expansion April 16 ── */}
-          <Route path="/tools/password-generator" element={<PasswordGenerator />} />
-          <Route path="/tools/screen-time" element={<ScreenTimeAnalyzer />} />
-          <Route path="/tools/email-security-check" element={<EmailSecurityCheck />} />
-          <Route path="/tools/app-cleanup" element={<AppCleanup />} />
-          <Route path="/tools/tech-budget" element={<TechBudgetPlanner />} />
-          <Route path="/tools/device-age-checker" element={<DeviceAgeChecker />} />
-          <Route path="/tools/battery-health-coach" element={<BatteryHealthCoach />} />
-          <Route path="/tools/two-factor-recovery-plan" element={<TwoFactorRecoveryPlan />} />
-          <Route path="/tools/phone-diagnostic-checklist" element={<PhoneDiagnosticChecklist />} />
-          <Route path="/tools/tech-help-hotline-directory" element={<TechHelpHotlineDirectory />} />
-          <Route path="/tools/monthly-tech-expense-audit" element={<MonthlyTechExpenseAudit />} />
-          <Route path="/tools/password-strength-checker" element={<PasswordStrengthChecker />} />
-          <Route path="/tools/new-phone-setup-assistant" element={<NewPhoneSetupAssistant />} />
-          <Route path="/tools/emergency-contact-card" element={<EmergencyContactCard />} />
-          <Route path="/tools/safe-online-shopping-checklist" element={<SafeOnlineShoppingChecklist />} />
-          <Route path="/tools/screen-time-advisor" element={<ScreenTimeAdvisor />} />
-          <Route path="/tools/display-settings-advisor" element={<DisplaySettingsAdvisor />} />
-          <Route path="/tools/monthly-bill-tracker" element={<MonthlyBillTracker />} />
-          <Route path="/tools/important-documents-organizer" element={<ImportantDocumentsOrganizer />} />
-          <Route path="/tools/scam-or-legit-quiz" element={<ScamOrLegitQuiz />} />
-          <Route path="/tools/phone-icon-guide" element={<PhoneIconGuide />} />
-          <Route path="/tools/home-safety-walkthrough" element={<HomeSafetyWalkthrough />} />
-          <Route path="/tools/tv-size-calculator" element={<TVSizeCalculator />} />
-          <Route path="/tools/digital-spring-cleaning" element={<DigitalSpringCleaning />} />
-          <Route path="/tools/phone-gesture-guide" element={<PhoneGestureGuide />} />
-          <Route path="/tools/phone-call-scripts" element={<SeniorPhoneCallScripts />} />
-          <Route path="/tools/accessibility-settings-wizard" element={<AccessibilitySettingsWizard />} />
-          <Route path="/tools/tech-support-prep-sheet" element={<TechSupportPrepSheet />} />
-          <Route path="/tools/internet-fix-guide" element={<InternetFixGuide />} />
-          <Route path="/tools/formal-letter-builder" element={<FormalLetterBuilder />} />
-          <Route path="/tools/password-reset-guide" element={<PasswordResetGuide />} />
-          <Route path="/tools/senior-benefits-finder" element={<SeniorBenefitsFinder />} />
-          <Route path="/tools/monthly-budget-worksheet" element={<MonthlyBudgetWorksheet />} />
-          <Route path="/tools/cord-cutting-planner" element={<CordCuttingPlanner />} />
-          <Route path="/tools/home-inventory-tool" element={<HomeInventoryTool />} />
-          <Route path="/tools/free-trial-tracker" element={<FreeTrialTracker />} />
-          <Route path="/tools/medication-list-builder" element={<MedicationListBuilder />} />
-          <Route path="/tools/new-phone-setup-checklist" element={<NewPhoneSetupChecklist />} />
-          <Route path="/tools/charitable-donation-tracker" element={<CharitableDonationTracker />} />
-          <Route path="/tools/annual-tech-checkup" element={<AnnualTechCheckup />} />
-          <Route path="/tools/phone-battery-care" element={<PhoneBatteryCareGuide />} />
-          <Route path="/tools/group-text-setup" element={<GroupTextSetupWizard />} />
-          <Route path="/tools/gift-card-tracker" element={<GiftCardBalanceTracker />} />
-          <Route path="/tools/birthday-tracker" element={<BirthdayAnniversaryTracker />} />
-          <Route path="/tools/pet-care-schedule" element={<PetCareScheduleTracker />} />
-          <Route path="/tools/trip-preparation-checklist" element={<TripPreparationChecklist />} />
-          <Route path="/tools/tax-document-checklist" element={<TaxDocumentChecklist />} />
-          <Route path="/tools/reading-watch-list" element={<BookMovieWatchlist />} />
-          <Route path="/tools/home-maintenance-tracker" element={<HomeMaintenanceTracker />} />
-          <Route path="/tools/doctor-question-prep" element={<DoctorQuestionPrepBuilder />} />
-          <Route path="/tools/daily-routine-builder" element={<DailyRoutineBuilder />} />
-          <Route path="/tools/grocery-list-builder" element={<GroceryListBuilder />} />
-          <Route path="/tools/weekly-meal-planner" element={<WeeklyMealPlanner />} />
-          <Route path="/tools/wallet-medical-card" element={<WalletMedicalCard />} />
-          <Route path="/tools/daily-habit-tracker" element={<DailyHabitTracker />} />
-          <Route path="/tools/weight-log-tracker" element={<WeightLogTracker />} />
-          <Route path="/tools/printable-address-book" element={<PrintableAddressBook />} />
-          <Route path="/tools/prescription-refill-calendar" element={<PrescriptionRefillCalendar />} />
-          <Route path="/tools/large-print-recipe-card" element={<LargePrintRecipeCard />} />
-          <Route path="/tools/sleep-diary" element={<SleepDiary />} />
-          <Route path="/tools/walking-log" element={<WalkingLog />} />
-          <Route path="/tools/pain-symptom-log" element={<PainSymptomLog />} />
-          <Route path="/tools/bills-due-date-calendar" element={<BillsDueDateCalendar />} />
-          <Route path="/tools/caregiver-notebook" element={<CaregiverNotebook />} />
-          <Route path="/tools/savings-goal-tracker" element={<SavingsGoalTracker />} />
-          <Route path="/tools/glucose-log" element={<GlucoseLog />} />
-          <Route path="/tools/volunteer-hours-tracker" element={<VolunteerHoursTracker />} />
-          <Route path="/tools/water-intake-tracker" element={<WaterIntakeTracker />} />
-          <Route path="/tools/net-worth-snapshot" element={<NetWorthSnapshot />} />
-          <Route path="/tools/warranty-tracker" element={<TechPurchaseWarrantyTracker />} />
-          <Route path="/tools/gratitude-journal" element={<GratitudeJournal />} />
-          <Route path="/tools/check-register" element={<PrintableCheckRegister />} />
-          <Route path="/tools/trip-budget-calculator" element={<TripBudgetCalculator />} />
-          <Route path="/tools/garden-plant-log" element={<GardenPlantLog />} />
-          <Route path="/tools/gift-ideas-list" element={<GiftIdeasList />} />
-          <Route path="/tools/mood-tracker" element={<MoodTracker />} />
-          <Route path="/tools/family-check-in-log" element={<FamilyCheckInLog />} />
-          <Route path="/tools/tech-help-request" element={<TechHelpRequestForm />} />
-          <Route path="/tools/photo-caption-workbook" element={<PhotoCaptionWorkbook />} />
-          <Route path="/tools/home-project-wishlist" element={<HomeProjectWishlist />} />
-          <Route path="/tools/travel-journal" element={<TravelJournal />} />
-          <Route path="/tools/lost-wallet-checklist" element={<LostWalletChecklist />} />
-          <Route path="/tools/blood-pressure-log" element={<BloodPressureLog />} />
-          <Route path="/tools/hearing-aid-care-log" element={<HearingAidCareLog />} />
-          <Route path="/tools/digital-account-inventory" element={<DigitalAccountInventory />} />
-          <Route path="/tools/tax-receipt-box" element={<TaxReceiptBox />} />
-          <Route path="/tools/text-message-templates" element={<TextMessageTemplates />} />
-          <Route path="/tools/formal-letter-templates" element={<FormalLetterTemplates />} />
-          <Route path="/tools/medication-timer" element={<SeniorMedTimer />} />
-          <Route path="/tools/dividend-income-tracker" element={<DividendIncomeTracker />} />
-          <Route path="/tools/weekly-chores-checklist" element={<WeeklyChoresChecklist />} />
-          <Route path="/tools/scam-call-log" element={<ScamCallLog />} />
-          <Route path="/tools/temperature-converter" element={<TempUnitConverter />} />
-          <Route path="/tools/cooking-measure-converter" element={<CookingMeasureConverter />} />
-          <Route path="/tools/age-calculator" element={<AgeCalculator />} />
-          <Route path="/tools/distance-converter" element={<DistanceConverter />} />
-          <Route path="/tools/weight-converter" element={<WeightUnitConverter />} />
-          <Route path="/tools/time-zone-converter" element={<TimeZoneConverter />} />
-          <Route path="/tools/days-between-dates" element={<DaysBetweenDates />} />
-          <Route path="/tools/percent-off-calculator" element={<PercentOffCalculator />} />
-          <Route path="/tools/bmi-calculator" element={<BMICalculator />} />
-          <Route path="/tools/loan-payment-calculator" element={<LoanPaymentCalculator />} />
-          <Route path="/tools/hourly-to-annual" element={<HourlyToAnnualCalculator />} />
-          <Route path="/tools/rmd-calculator" element={<RMDCalculator />} />
-          <Route path="/tools/text-size-showcase" element={<TextSizeShowcase />} />
-          <Route path="/tools/car-loan-compare" element={<CarLoanCompare />} />
-          <Route path="/tools/mail-label-maker" element={<MailAddressLabelMaker />} />
-          <Route path="/tools/emergency-quick-dial-card" element={<EmergencyContactQuickDial />} />
-          <Route path="/tools/printable-monthly-calendar" element={<PrintableMonthlyCalendar />} />
-          <Route path="/tools/refi-break-even-calculator" element={<MortgageRefiBreakEven />} />
-          <Route path="/tools/fall-prevention-assessment" element={<FallPreventionAssessment />} />
-          <Route path="/tools/compound-interest-calculator" element={<CompoundInterestCalculator />} />
-          <Route path="/tools/recipe-scaler" element={<RecipeScaler />} />
-          <Route path="/tools/ssa-claiming-age-chart" element={<SSAClaimingAgeChart />} />
-          <Route path="/tools/daily-spending-log" element={<DailySpendingLog />} />
-          <Route path="/tools/advance-directive-worksheet" element={<AdvanceDirectiveWorksheet />} />
-          <Route path="/tools/blood-pressure-tracker" element={<BloodPressureTracker />} />
-          <Route path="/tools/tinnitus-tracking-log" element={<TinnitusTrackingLog />} />
-          <Route path="/tools/widowhood-first-30-days" element={<WidowhoodFirst30Days />} />
-          <Route path="/tools/solo-ager-plan" element={<SoloAgerPlan />} />
-          <Route path="/tools/dementia-caregiver-stress-log" element={<DementiaCaregiverStressLog />} />
-          <Route path="/tools/retirement-90-day-checklist" element={<Retirement90DayChecklist />} />
-          <Route path="/tools/scam-recovery-checklist" element={<ScamRecoveryChecklist />} />
-          <Route path="/tools/hoarding-downsizing-plan" element={<HoardingDownsizingPlan />} />
-          <Route path="/tools/memoir-prompt-generator" element={<MemoirPromptGenerator />} />
-          <Route path="/tools/accessible-travel-checklist" element={<AccessibleTravelChecklist />} />
-          <Route path="/tools/senior-firearm-safety-checklist" element={<SeniorFirearmSafetyChecklist />} />
-          <Route path="/tools/divorce-at-70-checklist" element={<DivorceAt70Checklist />} />
-          <Route path="/tools/chronic-pain-daily-log" element={<ChronicPainDailyLog />} />
-          <Route path="/tools/alcohol-moderation-tracker" element={<AlcoholModerationTracker />} />
-          <Route path="/tools/low-vision-accessibility" element={<LowVisionAccessibility />} />
-          <Route path="/tools/prescription-price-compare" element={<PrescriptionPriceCompare />} />
-          <Route path="/tools/pickleball-score-keeper" element={<PickleballScoreKeeper />} />
-          <Route path="/tools/rv-pre-trip-checklist" element={<RVPreTripChecklist />} />
-          <Route path="/tools/kitchen-adaptation-guide" element={<KitchenAdaptationGuide />} />
-          <Route path="/tools/antique-sale-tracker" element={<AntiqueSaleTracker />} />
-          <Route path="/tools/cataract-recovery-eye-drops" element={<CataractRecoveryEyeDrops />} />
-          <Route path="/tools/strength-routine-builder" element={<StrengthRoutineBuilder />} />
-          <Route path="/tools/bird-sighting-log" element={<BirdSightingLog />} />
-          <Route path="/tools/pet-care-daily-schedule" element={<PetCareDailySchedule />} />
-          <Route path="/tools/chess-game-log" element={<ChessGameLog />} />
-          <Route path="/tools/chair-yoga-sequence-builder" element={<ChairYogaSequenceBuilder />} />
-          <Route path="/tools/seasonal-star-chart" element={<SeasonalStarChart />} />
-          <Route path="/tools/knitting-project-queue" element={<KnittingProjectQueue />} />
-          <Route path="/tools/bowling-score-card" element={<BowlingScoreCard />} />
-          <Route path="/tools/casino-budget-limit" element={<CasinoBudgetLimit />} />
-          <Route path="/tools/trade-in-estimator" element={<DeviceTradeInEstimator />} />
-          <Route path="/tools/parental-controls-wizard" element={<ParentalControlsWizard />} />
-          <Route path="/tools/home-network-map" element={<HomeNetworkMap />} />
-          <Route path="/tools/wifi-password-finder" element={<WifiPasswordFinder />} />
-          <Route path="/tools/tech-emergency-kit" element={<TechEmergencyKit />} />
-          <Route path="/tools/tech-break-reminder" element={<TechBreakReminder />} />
           <Route path="/weekly-tips" element={<WeeklyTips />} />
           <Route path="/this-week" element={<WeeklyTips />} />
 
           {/* Cycle 1 — net-new tools (April 29 2026) */}
-          <Route path="/tools/phishing-link-inspector" element={<PhishingLinkInspector />} />
-          <Route path="/tools/two-factor-coach" element={<TwoFactorCoach />} />
-          <Route path="/tools/safe-word-kit" element={<SafeWordKit />} />
-          <Route path="/tools/print-from-phone" element={<PrintFromPhoneHelper />} />
-          <Route path="/tools/cable-identifier" element={<ChargerCableIdentifier />} />
 
           {/* Cycle 2 — net-new tools */}
-          <Route path="/tools/qr-scam-scanner" element={<QrScamScanner />} />
-          <Route path="/tools/battery-health-checker" element={<BatteryHealthChecker />} />
-          <Route path="/tools/app-permissions-reset" element={<AppPermissionsReset />} />
-          <Route path="/tools/esim-setup-guide" element={<EsimSetupGuide />} />
-          <Route path="/tools/phone-hotspot-helper" element={<PhoneHotspotHelper />} />
 
           {/* Cycle 3 — net-new tools */}
-          <Route path="/tools/credit-freeze-coach" element={<CreditFreezeCoach />} />
-          <Route path="/tools/toll-text-scam" element={<TollTextScamDecoder />} />
-          <Route path="/tools/gift-card-scam-defense" element={<GiftCardScamDefense />} />
-          <Route path="/tools/payment-app-safety" element={<PaymentAppSafety />} />
-          <Route path="/tools/hotel-wifi-safety" element={<HotelWifiSafety />} />
 
           {/* Cycle 4 — net-new tools */}
-          <Route path="/tools/breach-response" element={<BreachResponseChecklist />} />
-          <Route path="/tools/airtag-stalking-defense" element={<AirTagStalkingDefense />} />
-          <Route path="/tools/usps-informed-delivery" element={<UspsInformedDelivery />} />
-          <Route path="/tools/caller-id-verification" element={<CallerIdVerification />} />
-          <Route path="/tools/public-charging-safety" element={<PublicChargingSafety />} />
 
           {/* Cycle 5 — health/accessibility */}
-          <Route path="/tools/medical-id-setup" element={<MedicalIdSetup />} />
-          <Route path="/tools/live-captions-setup" element={<LiveCaptionsSetup />} />
-          <Route path="/tools/big-text-display" element={<BigTextDisplayCoach />} />
-          <Route path="/tools/mychart-helper" element={<MyChartHelper />} />
-          <Route path="/tools/cast-phone-to-tv" element={<CastPhoneToTv />} />
 
           {/* Cycle 6 — money & daily life */}
-          <Route path="/tools/tap-to-pay-setup" element={<TapToPaySetup />} />
-          <Route path="/tools/screenshot-coach" element={<ScreenshotCoach />} />
-          <Route path="/tools/airdrop-helper" element={<AirDropHelper />} />
-          <Route path="/tools/marketplace-safety" element={<MarketplaceSafety />} />
-          <Route path="/tools/big-print-tip-calculator" element={<BigPrintTipCalculator />} />
 
           {/* Cycle 7 — communication & SOS */}
-          <Route path="/tools/group-text-coach" element={<GroupTextCoach />} />
-          <Route path="/tools/focus-mode-coach" element={<FocusModeCoach />} />
-          <Route path="/tools/block-spam-calls-texts" element={<BlockSpamCallsTexts />} />
-          <Route path="/tools/remote-help-setup" element={<RemoteHelpSetup />} />
-          <Route path="/tools/emergency-sos-setup" element={<EmergencySosSetup />} />
 
           {/* Cycle 8 — caregiver / legacy / language */}
-          <Route path="/tools/digital-legacy-setup" element={<DigitalLegacySetup />} />
-          <Route path="/tools/caregiver-phone-setup" element={<CaregiverPhoneSetup />} />
-          <Route path="/tools/phone-switch-helper" element={<PhoneSwitchHelper />} />
-          <Route path="/tools/translation-app-coach" element={<TranslationAppCoach />} />
-          <Route path="/tools/captioned-phone-service" element={<CaptionedPhoneService />} />
 
           {/* Cycle 9 — entertainment & home network */}
-          <Route path="/tools/free-streaming-services" element={<FreeStreamingServices />} />
-          <Route path="/tools/antenna-tv-setup" element={<AntennaTvSetup />} />
-          <Route path="/tools/library-app-helper" element={<LibraryAppHelper />} />
-          <Route path="/tools/rideshare-coach" element={<RideshareCoach />} />
-          <Route path="/tools/mesh-wifi-picker" element={<MeshWifiPicker />} />
 
           {/* Cycle 10 — AI / photos / docs / govt */}
-          <Route path="/tools/ai-beginner-coach" element={<AiBeginnerCoach />} />
-          <Route path="/tools/old-photo-restore" element={<OldPhotoRestore />} />
-          <Route path="/tools/digitize-old-media" element={<DigitizeOldMedia />} />
-          <Route path="/tools/esign-coach" element={<ESignCoach />} />
-          <Route path="/tools/login-gov-id-me-helper" element={<LoginGovIdMeHelper />} />
 
           {/* Cycle 11 — scams + tablet + basics */}
-          <Route path="/tools/romance-scam-defense" element={<RomanceScamDefense />} />
-          <Route path="/tools/pig-butchering-defense" element={<PigButcheringDefense />} />
-          <Route path="/tools/charity-vetting-tool" element={<CharityVettingTool />} />
-          <Route path="/tools/senior-tablet-picker" element={<SeniorTabletPicker />} />
-          <Route path="/tools/copy-paste-coach" element={<CopyPasteCoach />} />
 
           {/* Cycle 12 — cleanup, delivery, video calls */}
-          <Route path="/tools/tech-support-popup-defense" element={<TechSupportPopupDefense />} />
-          <Route path="/tools/free-up-phone-storage" element={<FreeUpPhoneStorage />} />
-          <Route path="/tools/computer-cleanup-coach" element={<ComputerCleanupCoach />} />
-          <Route path="/tools/grocery-delivery-coach" element={<GroceryDeliveryCoach />} />
-          <Route path="/tools/video-call-tips-for-family" element={<VideoCallTipsForFamily />} />
 
           {/* Cycle 13 — calendar / news / wellness / weather / pets */}
-          <Route path="/tools/family-calendar-sharing" element={<FamilyCalendarSharing />} />
-          <Route path="/tools/news-app-curator" element={<NewsAppCurator />} />
-          <Route path="/tools/meditation-app-picker" element={<MeditationAppPicker />} />
-          <Route path="/tools/weather-alert-picker" element={<WeatherAlertPicker />} />
-          <Route path="/tools/pet-tech-coach" element={<PetTechCoach />} />
 
           {/* Cycle 14 — travel / maps / dining / discounts / Prime */}
-          <Route path="/tools/travel-tech-pack" element={<TravelTechPack />} />
-          <Route path="/tools/maps-gps-coach" element={<MapsGpsCoach />} />
-          <Route path="/tools/restaurant-reservation-coach" element={<RestaurantReservationCoach />} />
-          <Route path="/tools/life-lock-for-seniors" element={<LifeLockForSeniors />} />
-          <Route path="/tools/delete-me-for-senior-privacy" element={<DeleteMeForSeniorPrivacy />} />
-          <Route path="/tools/robocall-blocker-apps" element={<RobocallBlockerApps />} />
-          <Route path="/tools/email-scam-spotter-tutorial" element={<EmailScamSpotterTutorial />} />
-          <Route path="/tools/social-media-privacy-deep" element={<SocialMediaPrivacyDeep />} />
-          <Route path="/tools/senior-discount-apps" element={<SeniorDiscountApps />} />
-          <Route path="/tools/amazon-prime-mastery" element={<AmazonPrimeMastery />} />
 
           {/* Cycle 15 — finance & retirement */}
-          <Route path="/tools/budget-app-picker" element={<BudgetAppPicker />} />
-          <Route path="/tools/rmd-explainer" element={<RmdExplainer />} />
-          <Route path="/tools/free-tax-filing-coach" element={<FreeTaxFilingCoach />} />
-          <Route path="/tools/medicare-part-d-picker" element={<MedicarePartDPicker />} />
-          <Route path="/tools/auto-insurance-comparison" element={<AutoInsuranceComparison />} />
-          <Route path="/tools/home-insurance-shopping-seniors" element={<HomeInsuranceShoppingSeniors />} />
-          <Route path="/tools/umbrella-insurance-seniors" element={<UmbrellaInsuranceSeniors />} />
-          <Route path="/tools/long-term-care-insurance-deep" element={<LongTermCareInsuranceDeep />} />
-          <Route path="/tools/pet-insurance-comparison" element={<PetInsuranceComparison />} />
-          <Route path="/tools/medigap-vs-advantage" element={<MedigapVsAdvantage />} />
 
           {/* Cycle 16 — music/photos/scan/audio/home screen */}
-          <Route path="/tools/music-app-picker" element={<MusicAppPicker />} />
-          <Route path="/tools/photo-book-creator" element={<PhotoBookCreator />} />
-          <Route path="/tools/document-scanner-coach" element={<DocumentScannerCoach />} />
-          <Route path="/tools/wireless-earbud-picker" element={<WirelessEarbudPicker />} />
-          <Route path="/tools/home-screen-organizer" element={<HomeScreenOrganizer />} />
 
           {/* Cycle 17 — nature / cooking / watch */}
-          <Route path="/tools/plant-id-apps" element={<PlantIdApps />} />
-          <Route path="/tools/bird-id-merlin" element={<BirdIdMerlin />} />
-          <Route path="/tools/all-trails-for-seniors" element={<AllTrailsForSeniors />} />
-          <Route path="/tools/national-parks-app-seniors" element={<NationalParksAppSeniors />} />
-          <Route path="/tools/merlin-bird-song-id" element={<MerlinBirdSongID />} />
-          <Route path="/tools/inaturalist-app-for-seniors" element={<INaturalistAppForSeniors />} />
-          <Route path="/tools/senior-outdoor-clubs-apps" element={<SeniorOutdoorClubsApps />} />
-          <Route path="/tools/stargazing-apps" element={<StargazingApps />} />
-          <Route path="/tools/recipe-meal-apps" element={<RecipeMealApps />} />
-          <Route path="/tools/apple-watch-health-coach" element={<AppleWatchHealthCoach />} />
 
           {/* Cycle 18 — comms / smart home / health */}
-          <Route path="/tools/whatsapp-coach" element={<WhatsAppCoach />} />
-          <Route path="/tools/smart-doorbell-picker" element={<SmartDoorbellPicker />} />
-          <Route path="/tools/cgm-coach" element={<CgmCoach />} />
-          <Route path="/tools/online-hearing-test" element={<OnlineHearingTest />} />
-          <Route path="/tools/skype-replacement" element={<SkypeReplacement />} />
 
           {/* Cycle 19 — brain/genealogy/frame/sound/volunteer */}
-          <Route path="/tools/brain-training-apps" element={<BrainTrainingApps />} />
-          <Route path="/tools/genealogy-apps" element={<GenealogyApps />} />
-          <Route path="/tools/family-search-free-app" element={<FamilySearchFreeApp />} />
-          <Route path="/tools/story-worth-family-memoir" element={<StoryWorthFamilyMemoir />} />
-          <Route path="/tools/my-heritage-dna-comparison" element={<MyHeritageDNAComparison />} />
-          <Route path="/tools/record-family-history-audio" element={<RecordFamilyHistoryAudio />} />
-          <Route path="/tools/old-photo-scanning-apps" element={<OldPhotoScanningApps />} />
-          <Route path="/tools/digital-photo-frame-picker" element={<DigitalPhotoFramePicker />} />
-          <Route path="/tools/tv-sound-bar-picker" element={<TvSoundBarPicker />} />
-          <Route path="/tools/volunteer-apps" element={<VolunteerApps />} />
-          <Route path="/tools/masterclass-review-seniors" element={<MasterClassReviewSeniors />} />
-          <Route path="/tools/khan-academy-for-seniors" element={<KhanAcademyForSeniors />} />
-          <Route path="/tools/olli-lifelong-learning" element={<OLLILifelongLearning />} />
-          <Route path="/tools/aarp-create-senior-classes" element={<AARPCreateSeniorClasses />} />
-          <Route path="/tools/senior-volunteer-opportunities" element={<SeniorVolunteerOpportunities />} />
 
           {/* Cycle 20 — cloud/passwords/speed/browser/learning */}
-          <Route path="/tools/cloud-storage-picker" element={<CloudStoragePicker />} />
-          <Route path="/tools/password-manager-picker" element={<PasswordManagerPicker />} />
-          <Route path="/tools/internet-speed-test-coach" element={<InternetSpeedTestCoach />} />
-          <Route path="/tools/browser-picker" element={<BrowserPicker />} />
-          <Route path="/tools/online-learning-picker" element={<OnlineLearningPicker />} />
 
           {/* Cycle 21 — podcasts / outdoors / repair */}
-          <Route path="/tools/podcast-app-picker" element={<PodcastAppPicker />} />
-          <Route path="/tools/hiking-trail-apps" element={<HikingTrailApps />} />
-          <Route path="/tools/gardening-apps" element={<GardeningApps />} />
-          <Route path="/tools/rv-camping-apps" element={<RvCampingApps />} />
-          <Route path="/tools/phone-repair-coach" element={<PhoneRepairCoach />} />
 
           {/* Cycle 22 — scams / contractors / cell / handyman / jobs */}
-          <Route path="/tools/door-to-door-scam-defense" element={<DoorToDoorScamDefense />} />
-          <Route path="/tools/contractor-vetting" element={<ContractorVetting />} />
-          <Route path="/tools/senior-cell-plan-picker" element={<SeniorCellPlanPicker />} />
-          <Route path="/tools/handyman-service-apps" element={<HandymanServiceApps />} />
-          <Route path="/tools/retirement-jobs-apps" element={<RetirementJobsApps />} />
 
           {/* Cycle 23 — privacy / banking / travel / brokerage / screen */}
-          <Route path="/tools/facebook-privacy-coach" element={<FacebookPrivacyCoach />} />
-          <Route path="/tools/mobile-banking-coach" element={<MobileBankingCoach />} />
-          <Route path="/tools/international-travel-sim" element={<InternationalTravelSim />} />
-          <Route path="/tools/brokerage-picker" element={<BrokeragePicker />} />
-          <Route path="/tools/fidelity-app-for-seniors" element={<FidelityAppForSeniors />} />
-          <Route path="/tools/vanguard-for-retirees" element={<VanguardForRetirees />} />
-          <Route path="/tools/robinhood-webull-senior-warning" element={<RobinhoodWebullSeniorWarning />} />
-          <Route path="/tools/schwab-intelligent-portfolios" element={<SchwabIntelligentPortfolios />} />
-          <Route path="/tools/estate-beneficiary-review" element={<EstateBeneficiaryReview />} />
-          <Route path="/tools/adult-screen-time-coach" element={<AdultScreenTimeCoach />} />
 
           {/* Cycle 24 — backup / photo-org / medical / bills / journal */}
-          <Route path="/tools/backup-strategy" element={<BackupStrategy />} />
-          <Route path="/tools/photo-organization-coach" element={<PhotoOrganizationCoach />} />
-          <Route path="/tools/medical-records-organizer" element={<MedicalRecordsOrganizer />} />
-          <Route path="/tools/bills-paperless-organizer" element={<BillsPaperlessOrganizer />} />
-          <Route path="/tools/journaling-apps" element={<JournalingApps />} />
-          <Route path="/tools/day-one-journal-app" element={<DayOneJournalApp />} />
-          <Route path="/tools/senior-memoir-writing" element={<SeniorMemoirWriting />} />
-          <Route path="/tools/gratitude-app-for-seniors" element={<GratitudeAppForSeniors />} />
-          <Route path="/tools/amazon-kdp-for-seniors" element={<AmazonKDPForSeniors />} />
-          <Route path="/tools/senior-book-clubs-online" element={<SeniorBookClubsOnline />} />
 
           {/* Cycle 25 — caregiving / accessibility / health */}
-          <Route path="/tools/caregiver-coordination-apps" element={<CaregiverCoordinationApps />} />
-          <Route path="/tools/voice-control-accessibility" element={<VoiceControlAccessibility />} />
-          <Route path="/tools/medical-alert-picker" element={<MedicalAlertPicker />} />
-          <Route path="/tools/telehealth-visit-coach" element={<TelehealthVisitCoach />} />
-          <Route path="/tools/online-pharmacy-coach" element={<OnlinePharmacyCoach />} />
-          <Route path="/tools/amazon-pharmacy-for-seniors" element={<AmazonPharmacyForSeniors />} />
-          <Route path="/tools/cost-plus-drugs-explained" element={<CostPlusDrugsExplained />} />
-          <Route path="/tools/capsule-pharmacy-delivery" element={<CapsulePharmacyDelivery />} />
-          <Route path="/tools/pillpack-for-seniors" element={<PillPackForSeniors />} />
-          <Route path="/tools/medicare-90-day-supply" element={<Medicare90DaySupply />} />
 
           {/* Cycle 26 — kitchen / inventory / privacy / sell / utilities */}
-          <Route path="/tools/smart-cooking-tools" element={<SmartCookingTools />} />
-          <Route path="/tools/home-inventory-app" element={<HomeInventoryApp />} />
-          <Route path="/tools/hidden-camera-detector" element={<HiddenCameraDetector />} />
-          <Route path="/tools/sell-online-coach" element={<SellOnlineCoach />} />
-          <Route path="/tools/utility-bill-reduction" element={<UtilityBillReduction />} />
 
           {/* Cycle 27 — books / reading / ergonomics / notes */}
-          <Route path="/tools/audiobook-app-picker" element={<AudiobookAppPicker />} />
-          <Route path="/tools/reading-app-picker" element={<ReadingAppPicker />} />
-          <Route path="/tools/book-tracking-apps" element={<BookTrackingApps />} />
-          <Route path="/tools/ergonomic-computer-setup" element={<ErgonomicComputerSetup />} />
-          <Route path="/tools/notes-app-picker" element={<NotesAppPicker />} />
 
           {/* Cycle 28 — driving / sleep / power / disaster / grandkids */}
-          <Route path="/tools/defensive-driving-coach" element={<DefensiveDrivingCoach />} />
-          <Route path="/tools/sleep-tracking-apps" element={<SleepTrackingApps />} />
-          <Route path="/tools/power-bank-picker" element={<PowerBankPicker />} />
-          <Route path="/tools/disaster-prep-apps" element={<DisasterPrepApps />} />
-          <Route path="/tools/childproof-for-visits" element={<ChildproofForVisits />} />
 
           {/* Cycle 29 — passkeys / antivirus / recovery / shortcuts / tremors */}
-          <Route path="/tools/passkeys-coach" element={<PasskeysCoach />} />
-          <Route path="/tools/antivirus-picker" element={<AntivirusPicker />} />
-          <Route path="/tools/vpn-for-seniors-explained" element={<VPNForSeniorsExplained />} />
-          <Route path="/tools/malwarebytes-for-seniors" element={<MalwarebytesForSeniors />} />
-          <Route path="/tools/public-wifi-safety-tutorial" element={<PublicWifiSafetyTutorial />} />
-          <Route path="/tools/router-security-setup" element={<RouterSecuritySetup />} />
-          <Route path="/tools/phone-security-checkup" element={<PhoneSecurityCheckup />} />
-          <Route path="/tools/account-recovery" element={<AppleGoogleAccountRecovery />} />
-          <Route path="/tools/keyboard-shortcuts-cheatsheet" element={<KeyboardShortcutsCheatsheet />} />
-          <Route path="/tools/tremor-phone-setup" element={<TremorPhoneSetup />} />
 
           {/* Cycle 30 — car / EV / used cars / flights / window management */}
-          <Route path="/tools/carplay-android-auto" element={<CarPlayAndroidAuto />} />
-          <Route path="/tools/ev-charging-apps" element={<EvChargingApps />} />
-          <Route path="/tools/used-car-research-apps" element={<UsedCarResearchApps />} />
-          <Route path="/tools/flight-search-apps" element={<FlightSearchApps />} />
-          <Route path="/tools/window-management-coach" element={<WindowManagementCoach />} />
 
           {/* Cycle 31 — diet / meds / exercise / fitness / cognitive */}
-          <Route path="/tools/calorie-tracking-apps" element={<CalorieTrackingApps />} />
-          <Route path="/tools/medication-reminder-apps" element={<MedicationReminderApps />} />
-          <Route path="/tools/senior-exercise-apps" element={<SeniorExerciseApps />} />
-          <Route path="/tools/home-fitness-subscriptions" element={<HomeFitnessSubscriptions />} />
-          <Route path="/tools/cognitive-self-test" element={<CognitiveSelfTest />} />
 
           {/* Cycle 32 — homework / tutoring / creative / cameras / docs */}
-          <Route path="/tools/help-grandkids-homework" element={<HelpGrandkidsHomework />} />
-          <Route path="/tools/online-tutoring-apps" element={<OnlineTutoringApps />} />
-          <Route path="/tools/drawing-photo-editing-apps" element={<DrawingPhotoEditingApps />} />
-          <Route path="/tools/digital-camera-picker" element={<DigitalCameraPicker />} />
-          <Route path="/tools/documentary-streaming" element={<DocumentaryStreaming />} />
 
           {/* Cycle 33 — vaccines / drugs / symptoms / doctors */}
-          <Route path="/tools/adult-vaccine-schedule" element={<AdultVaccineSchedule />} />
-          <Route path="/tools/drug-interaction-checker" element={<DrugInteractionChecker />} />
-          <Route path="/tools/pill-identifier-app" element={<PillIdentifierApp />} />
-          <Route path="/tools/symptom-checker-apps" element={<SymptomCheckerApps />} />
-          <Route path="/tools/find-a-doctor-apps" element={<FindADoctorApps />} />
 
           {/* Cycle 34 — wills / directives / savings / 529 / notary */}
-          <Route path="/tools/will-estate-online" element={<WillEstateOnline />} />
-          <Route path="/tools/advance-directive-coach" element={<AdvanceDirectiveCoach />} />
-          <Route path="/tools/high-yield-savings-i-bonds" element={<HighYieldSavingsAndIBonds />} />
-          <Route path="/tools/college-savings-for-grandkids" element={<CollegeSavingsForGrandkids />} />
-          <Route path="/tools/online-notary-coach" element={<OnlineNotaryCoach />} />
 
           {/* Cycle 35 — Social Security / Medicare / LTC / reverse mortgage / pension */}
-          <Route path="/tools/when-to-take-social-security" element={<WhenToTakeSocialSecurity />} />
-          <Route path="/tools/medigap-vs-advantage" element={<MedigapVsAdvantage />} />
-          <Route path="/tools/long-term-care-planning" element={<LongTermCarePlanning />} />
-          <Route path="/tools/reverse-mortgage-explained" element={<ReverseMortgageExplained />} />
-          <Route path="/tools/pension-lump-sum-decision" element={<PensionLumpSumDecision />} />
 
           {/* Cycle 36 — funeral / hospice / therapy / widow / downsize */}
-          <Route path="/tools/funeral-planning-coach" element={<FuneralPlanningCoach />} />
-          <Route path="/tools/hospice-palliative-coach" element={<HospicePalliativeCoach />} />
-          <Route path="/tools/online-therapy-apps" element={<OnlineTherapyApps />} />
-          <Route path="/tools/newly-widowed-checklist" element={<NewlyWidowedChecklist />} />
-          <Route path="/tools/senior-downsizing-coach" element={<SeniorDownsizingCoach />} />
 
           {/* Cycle 37 — smart display / robot vac / health tests / scale / zoom host */}
-          <Route path="/tools/smart-display-for-grandparents" element={<SmartDisplayForGrandparents />} />
-          <Route path="/tools/robot-vacuum-coach" element={<RobotVacuumCoach />} />
-          <Route path="/tools/at-home-health-tests" element={<AtHomeHealthTests />} />
-          <Route path="/tools/smart-scale-bp-cuff-picker" element={<SmartScaleBpCuffPicker />} />
-          <Route path="/tools/video-meeting-host-coach" element={<VideoMeetingHostCoach />} />
 
           {/* Cycle 38 — accounts / privacy / search / VA / SSDI */}
-          <Route path="/tools/apple-id-google-account-setup" element={<AppleIdGoogleAccountSetup />} />
-          <Route path="/tools/privacy-email-picker" element={<PrivacyEmailPicker />} />
-          <Route path="/tools/better-web-search-coach" element={<BetterWebSearchCoach />} />
-          <Route path="/tools/va-benefits-and-app" element={<VaBenefitsAndApp />} />
-          <Route path="/tools/ssdi-vs-ssi-coach" element={<SsdiVsSsiCoach />} />
 
           {/* Cycle 39 — VPN / encryption / cyber / remote */}
-          <Route path="/tools/vpn-picker" element={<VpnPicker />} />
-          <Route path="/tools/disk-encryption-coach" element={<DiskEncryptionCoach />} />
-          <Route path="/tools/cyber-insurance-explainer" element={<CyberInsuranceExplainer />} />
-          <Route path="/tools/universal-remote-picker" element={<UniversalRemotePicker />} />
-          <Route path="/tools/lost-tv-remote-coach" element={<LostTvRemoteCoach />} />
-          <Route path="/tools/roku-setup-for-seniors" element={<RokuSetupForSeniors />} />
-          <Route path="/tools/fire-tv-stick-guide" element={<FireTVStickGuide />} />
-          <Route path="/tools/universal-remote-for-seniors" element={<UniversalRemoteForSeniors />} />
-          <Route path="/tools/captioning-call-seniors" element={<CaptioningCallSeniors />} />
-          <Route path="/tools/soundbar-tv-audio-for-seniors" element={<SoundbarTVAudioForSeniors />} />
 
           {/* Cycle 40 — taxes / SNAP / eldercare / lifeline / HSA-FSA */}
-          <Route path="/tools/senior-tax-credits" element={<SeniorTaxCredits />} />
-          <Route path="/tools/senior-snap-and-food" element={<SeniorSnapAndFood />} />
-          <Route path="/tools/eldercare-locator" element={<EldercareLocator />} />
-          <Route path="/tools/lifeline-internet-coach" element={<LifelineInternetCoach />} />
-          <Route path="/tools/hsa-fsa-coach" element={<HsaFsaCoach />} />
 
           {/* Cycle 41 — laptop / phone / grandkid safety / apps / console */}
-          <Route path="/tools/senior-laptop-pick" element={<SeniorLaptopPick />} />
-          <Route path="/tools/senior-phone-pick" element={<SeniorPhonePick />} />
-          <Route path="/tools/grandkid-internet-safety" element={<GrandkidInternetSafety />} />
-          <Route path="/tools/apps-grandkids-use-explained" element={<AppsGrandkidsUseExplained />} />
-          <Route path="/tools/game-console-gift-guide" element={<GameConsoleGiftGuide />} />
 
           {/* Cycle 42 — AI / resume / smart home */}
-          <Route path="/tools/ai-comparison-coach" element={<AiComparisonCoach />} />
-          <Route path="/tools/ai-image-generators" element={<AiImageGenerators />} />
-          <Route path="/tools/resume-builder-apps" element={<ResumeBuilderApps />} />
-          <Route path="/tools/smart-home-platform-pick" element={<SmartHomePlatformPick />} />
-          <Route path="/tools/smart-bulb-picker" element={<SmartBulbPicker />} />
 
           {/* Cycle 43 — printer / fax / cam / weather / walk */}
-          <Route path="/tools/senior-printer-picker" element={<SeniorPrinterPicker />} />
-          <Route path="/tools/online-fax-coach" element={<OnlineFaxCoach />} />
-          <Route path="/tools/outdoor-security-camera" element={<OutdoorSecurityCamera />} />
-          <Route path="/tools/home-weather-station" element={<HomeWeatherStation />} />
-          <Route path="/tools/walking-pad-standing-desk" element={<WalkingPadStandingDesk />} />
 
           {/* Cycle 44 — car / mileage / subs / dispute / refi */}
-          <Route path="/tools/car-maintenance-tracker" element={<CarMaintenanceTracker />} />
-          <Route path="/tools/mileage-tracker" element={<MileageTracker />} />
-          <Route path="/tools/subscription-audit-coach" element={<SubscriptionAuditCoach />} />
-          <Route path="/tools/dispute-charge-coach" element={<DisputeChargeCoach />} />
-          <Route path="/tools/mortgage-refinance-coach" element={<MortgageRefinanceCoach />} />
 
           {/* Cycle 45 — retirement accounts / rollover / withdrawal / bonds / index */}
-          <Route path="/tools/retirement-account-types" element={<RetirementAccountTypes />} />
-          <Route path="/tools/401k-rollover-coach" element={<Plan401kRolloverCoach />} />
-          <Route path="/tools/safe-withdrawal-rate" element={<SafeWithdrawalRate />} />
-          <Route path="/tools/bond-ladder-coach" element={<BondLadderCoach />} />
-          <Route path="/tools/index-fund-coach" element={<IndexFundCoach />} />
 
           {/* Cycle 46 — passport / disposal / erase / photos / in-person */}
-          <Route path="/tools/passport-renewal-online" element={<PassportRenewalOnline />} />
-          <Route path="/tools/old-device-disposal" element={<OldDeviceDisposal />} />
-          <Route path="/tools/erase-old-phone" element={<EraseOldPhone />} />
-          <Route path="/tools/photo-print-and-cards" element={<PhotoPrintAndCards />} />
-          <Route path="/tools/in-person-tech-help" element={<InPersonTechHelp />} />
 
           {/* Cycle 47 — dental / vision / deepfake / genealogy / citizen */}
-          <Route path="/tools/dental-insurance-coach" element={<DentalInsuranceCoach />} />
-          <Route path="/tools/vision-insurance-coach" element={<VisionInsuranceCoach />} />
-          <Route path="/tools/deepfake-spotter" element={<DeepfakeSpotter />} />
-          <Route path="/tools/genealogy-deep-dive" element={<GenealogyDeepDive />} />
-          <Route path="/tools/citizen-emergency-app" element={<CitizenEmergencyApp />} />
 
           {/* Cycle 48 — donate / mail / 311 / energy / solar */}
-          <Route path="/tools/donation-pickup" element={<DonationPickup />} />
-          <Route path="/tools/usps-mail-forward-hold" element={<UspsMailForwardHold />} />
-          <Route path="/tools/local-311-apps" element={<Local311Apps />} />
-          <Route path="/tools/home-energy-monitor" element={<HomeEnergyMonitor />} />
-          <Route path="/tools/solar-panel-decision-coach" element={<SolarPanelDecisionCoach />} />
 
           {/* Cycle 49 — air / smoke / water / vacuum / recalls */}
-          <Route path="/tools/indoor-air-quality" element={<IndoorAirQuality />} />
-          <Route path="/tools/smoke-co-detector-maintenance" element={<SmokeCoDetectorMaintenance />} />
-          <Route path="/tools/water-filter-picker" element={<WaterFilterPicker />} />
-          <Route path="/tools/senior-vacuum-picker" element={<SeniorVacuumPicker />} />
-          <Route path="/tools/recall-checker" element={<RecallChecker />} />
 
           {/* Cycle 50 — TV / speakers / vinyl / sports / golf */}
-          <Route path="/tools/senior-tv-buying-guide" element={<SeniorTvBuyingGuide />} />
-          <Route path="/tools/bluetooth-speaker-picker" element={<BluetoothSpeakerPicker />} />
-          <Route path="/tools/vinyl-turntable-coach" element={<VinylTurntableCoach />} />
-          <Route path="/tools/sports-streaming-picker" element={<SportsStreamingPicker />} />
-          <Route path="/tools/golf-apps" element={<GolfApps />} />
 
           {/* Cycle 51 — fishing / pickleball / games / wine / cocktail */}
-          <Route path="/tools/fishing-boating-apps" element={<FishingBoatingApps />} />
-          <Route path="/tools/pickleball-tennis-apps" element={<PickleballTennisApps />} />
-          <Route path="/tools/online-board-games" element={<OnlineBoardGames />} />
-          <Route path="/tools/wine-apps" element={<WineApps />} />
-          <Route path="/tools/chess-com-for-seniors" element={<ChessComForSeniors />} />
-          <Route path="/tools/vivino-wine-app" element={<VivinoWineApp />} />
-          <Route path="/tools/trivia-apps-for-seniors" element={<TriviaAppsForSeniors />} />
-          <Route path="/tools/aarp-games-for-seniors" element={<AARPGamesForSeniors />} />
-          <Route path="/tools/jeopardy-at-home-apps" element={<JeopardyAtHomeApps />} />
-          <Route path="/tools/cocktail-coffee-apps" element={<CocktailCoffeeApps />} />
 
           {/* Cycle 52 — security / thermostat / lock / leak / insurance */}
-          <Route path="/tools/home-security-system-pick" element={<HomeSecuritySystemPick />} />
-          <Route path="/tools/smart-thermostat-coach" element={<SmartThermostatCoach />} />
-          <Route path="/tools/smart-deadbolt-picker" element={<SmartDeadboltPicker />} />
-          <Route path="/tools/water-leak-detector" element={<WaterLeakDetector />} />
-          <Route path="/tools/specialty-insurance-coach" element={<SpecialtyInsuranceCoach />} />
 
           {/* Cycle 53 — networking */}
-          <Route path="/tools/rural-internet" element={<RuralInternet />} />
-          <Route path="/tools/cell-signal-booster" element={<CellSignalBooster />} />
-          <Route path="/tools/wifi-extender-vs-mesh" element={<WifiExtenderVsMesh />} />
-          <Route path="/tools/home-media-server" element={<HomeMediaServer />} />
-          <Route path="/tools/ethernet-coach" element={<EthernetCoach />} />
 
           {/* Cycle 54 — warehouse / advisor / annuity / trust / loyalty */}
-          <Route path="/tools/warehouse-club-pick" element={<WarehouseClubPick />} />
-          <Route path="/tools/fiduciary-advisor-finder" element={<FiduciaryAdvisorFinder />} />
-          <Route path="/tools/annuity-warning" element={<AnnuityWarning />} />
-          <Route path="/tools/trust-vs-will-explainer" element={<TrustVsWillExplainer />} />
-          <Route path="/tools/loyalty-programs-compared" element={<LoyaltyProgramsCompared />} />
 
           {/* Cycle 55 — faith / disease support */}
-          <Route path="/tools/bible-christian-apps" element={<BibleChristianApps />} />
-          <Route path="/tools/catholic-mass-apps" element={<CatholicMassApps />} />
-          <Route path="/tools/you-version-bible-app" element={<YouVersionBibleApp />} />
-          <Route path="/tools/hallow-prayer-app" element={<HallowPrayerApp />} />
-          <Route path="/tools/jewish-holiday-apps" element={<JewishHolidayApps />} />
-          <Route path="/tools/insight-timer-meditation" element={<InsightTimerMeditation />} />
-          <Route path="/tools/church-live-stream-apps" element={<ChurchLiveStreamApps />} />
-          <Route path="/tools/jewish-calendar-apps" element={<JewishCalendarApps />} />
-          <Route path="/tools/islamic-prayer-apps" element={<IslamicPrayerApps />} />
-          <Route path="/tools/disease-support-communities" element={<DiseaseSupportCommunities />} />
 
           {/* Cycle 56 — DIY / garage / lawn / mower / snow */}
-          <Route path="/tools/diy-repair-apps" element={<DiyRepairApps />} />
-          <Route path="/tools/smart-garage-opener" element={<SmartGarageOpener />} />
-          <Route path="/tools/lawn-care-apps" element={<LawnCareApps />} />
-          <Route path="/tools/robotic-mower-pick" element={<RoboticMowerPick />} />
-          <Route path="/tools/snow-blower-pick" element={<SnowBlowerPick />} />
 
           {/* Cycle 57 — pet / birds / chickens / sales */}
-          <Route path="/tools/pet-loss-grief" element={<PetLossGrief />} />
-          <Route path="/tools/bird-feeder-cam" element={<BirdFeederCam />} />
-          <Route path="/tools/backyard-chicken-apps" element={<BackyardChickenApps />} />
-          <Route path="/tools/estate-sale-finder" element={<EstateSaleFinder />} />
-          <Route path="/tools/yard-sale-apps" element={<YardSaleApps />} />
 
           {/* Cycle 58 — pencil / email / pipes / generator / grill */}
-          <Route path="/tools/apple-pencil-ipad-coach" element={<ApplePencilIpadCoach />} />
-          <Route path="/tools/email-folders-rules" element={<EmailFoldersRules />} />
-          <Route path="/tools/frozen-pipes-prevention" element={<FrozenPipesPrevention />} />
-          <Route path="/tools/generator-pick" element={<GeneratorPick />} />
-          <Route path="/tools/pellet-grill-coach" element={<PelletGrillCoach />} />
 
           {/* Cycle 59 — credit / HELOC / airbnb / windfall */}
-          <Route path="/tools/credit-score-coach" element={<CreditScoreCoach />} />
-          <Route path="/tools/credit-repair-scam-warning" element={<CreditRepairScamWarning />} />
-          <Route path="/tools/heloc-coach" element={<HelocCoach />} />
-          <Route path="/tools/become-airbnb-host" element={<BecomeAirbnbHost />} />
-          <Route path="/tools/sudden-money-checklist" element={<SuddenMoneyChecklist />} />
 
           {/* Cycle 60 — appraisers / auctions / coins / cards / collectibles */}
-          <Route path="/tools/find-an-appraiser" element={<FindAnAppraiser />} />
-          <Route path="/tools/sell-antiques-auctions" element={<SellAntiquesAuctions />} />
-          <Route path="/tools/coin-collecting-apps" element={<CoinCollectingApps />} />
-          <Route path="/tools/sports-cards-comics" element={<SportsCardsComics />} />
-          <Route path="/tools/old-collectibles-reality" element={<OldCollectiblesReality />} />
 
           {/* Cycle 61 — troubleshooting */}
-          <Route path="/tools/bluetooth-pairing-troubleshoot" element={<BluetoothPairingTroubleshoot />} />
-          <Route path="/tools/phone-wont-charge" element={<PhoneWontCharge />} />
-          <Route path="/tools/battery-drain-fix" element={<BatteryDrainFix />} />
-          <Route path="/tools/internet-down-troubleshoot" element={<InternetDownTroubleshoot />} />
-          <Route path="/tools/app-phone-frozen-fix" element={<AppPhoneFrozenFix />} />
 
           {/* Cycle 62 — pharmacy / bundles / grocery / Apple */}
-          <Route path="/tools/pharmacy-rewards" element={<PharmacyRewards />} />
-          <Route path="/tools/apple-wallet-for-loyalty" element={<AppleWalletForLoyalty />} />
-          <Route path="/tools/starbucks-app-rewards" element={<StarbucksAppRewards />} />
-          <Route path="/tools/pharmacy-app-rewards" element={<PharmacyAppRewards />} />
-          <Route path="/tools/grocery-app-deep-dive" element={<GroceryAppDeepDive />} />
-          <Route path="/tools/gas-station-app-rewards" element={<GasStationAppRewards />} />
-          <Route path="/tools/streaming-bundle-strategy" element={<StreamingBundleStrategy />} />
-          <Route path="/tools/pause-streaming-rotation" element={<PauseStreamingRotation />} />
-          <Route path="/tools/grocery-rewards" element={<GroceryRewards />} />
-          <Route path="/tools/apple-one-bundle-coach" element={<AppleOneBundleCoach />} />
 
           {/* Cycle 63 — read-aloud / wifi / relay / pet / coupons */}
-          <Route path="/tools/read-aloud-anywhere" element={<ReadAloudAnywhere />} />
-          <Route path="/tools/wifi-password-sharing" element={<WifiPasswordSharing />} />
-          <Route path="/tools/relay-services-tty" element={<RelayServicesTty />} />
-          <Route path="/tools/pet-adoption-apps" element={<PetAdoptionApps />} />
-          <Route path="/tools/deep-coupon-apps" element={<DeepCouponApps />} />
 
           {/* Cycle 64 — utility savings + smart-home + food */}
-          <Route path="/tools/electric-bill-cutters" element={<ElectricBillCutters />} />
-          <Route path="/tools/home-warranty-reality" element={<HomeWarrantyReality />} />
-          <Route path="/tools/gas-price-apps" element={<GasPriceApps />} />
-          <Route path="/tools/smart-plug-basics" element={<SmartPlugBasics />} />
-          <Route path="/tools/freezer-inventory" element={<FreezerInventory />} />
 
           {/* Cycle 65 — travel + legacy */}
-          <Route path="/tools/travel-insurance-reality" element={<TravelInsuranceReality />} />
-          <Route path="/tools/luggage-tracker-picks" element={<LuggageTrackerPicks />} />
-          <Route path="/tools/offline-maps-how-to" element={<OfflineMapsHowTo />} />
-          <Route path="/tools/digital-legacy-planner" element={<DigitalLegacyPlanner />} />
-          <Route path="/tools/memorial-facebook-guide" element={<MemorialFacebookGuide />} />
 
           {/* Cycle 66 — health tech */}
-          <Route path="/tools/glucose-monitor-picks" element={<GlucoseMonitorPicks />} />
-          <Route path="/tools/medical-alert-compare" element={<MedicalAlertCompare />} />
-          <Route path="/tools/medical-guardian-review" element={<MedicalGuardianReview />} />
-          <Route path="/tools/life-alert-vs-competitors" element={<LifeAlertVsCompetitors />} />
-          <Route path="/tools/apple-watch-sos-tutorial" element={<AppleWatchSOSTutorial />} />
-          <Route path="/tools/aloe-care-caregiving-app" element={<AloeCareCaregivingApp />} />
-          <Route path="/tools/philips-lifeline-senior" element={<PhilipsLifelineSenior />} />
-          <Route path="/tools/telehealth-basics" element={<TelehealthBasics />} />
-          <Route path="/tools/hearing-test-apps" element={<HearingTestApps />} />
-          <Route path="/tools/wellness-ring-picks" element={<WellnessRingPicks />} />
 
           {/* Cycle 67 — scam defenses */}
-          <Route path="/tools/grandparent-scam-defense" element={<GrandparentScamDefense />} />
-          <Route path="/tools/irs-scam-playbook" element={<IrsScamPlaybook />} />
-          <Route path="/tools/fake-amazon-calls" element={<FakeAmazonCalls />} />
-          <Route path="/tools/medicare-scam-guide" element={<MedicareScamGuide />} />
-          <Route path="/tools/puppy-scam-guide" element={<PuppyScamGuide />} />
 
           {/* Cycle 68 — phone basics */}
-          <Route path="/tools/block-number-how-to" element={<BlockNumberHowTo />} />
-          <Route path="/tools/email-organizing-basics" element={<EmailOrganizingBasics />} />
-          <Route path="/tools/silence-unknown-callers" element={<SilenceUnknownCallers />} />
-          <Route path="/tools/phone-storage-cleanup" element={<PhoneStorageCleanup />} />
-          <Route path="/tools/screenshot-how-to" element={<ScreenshotHowTo />} />
 
           {/* Cycle 69 — passwords + accounts */}
-          <Route path="/tools/password-manager-compare" element={<PasswordManagerCompare />} />
-          <Route path="/tools/two-factor-app-picks" element={<TwoFactorAppPicks />} />
-          <Route path="/tools/passkey-explainer" element={<PasskeyExplainer />} />
-          <Route path="/tools/account-recovery-plan" element={<AccountRecoveryPlan />} />
-          <Route path="/tools/family-password-sharing" element={<FamilyPasswordSharing />} />
 
           {/* Cycle 70 — entertainment + connection */}
-          <Route path="/tools/video-call-group-tips" element={<VideoCallGroupTips />} />
-          <Route path="/tools/audiobook-apps" element={<AudiobookApps />} />
-          <Route path="/tools/digital-photo-frames" element={<DigitalPhotoFrames />} />
-          <Route path="/tools/retirement-community-wifi" element={<RetirementCommunityWifi />} />
-          <Route path="/tools/jigsaw-puzzle-apps" element={<JigsawPuzzleApps />} />
 
           {/* Cycle 71 — driving + delivery */}
-          <Route path="/tools/rideshare-for-seniors" element={<RideshareForSeniors />} />
-          <Route path="/tools/food-delivery-compare" element={<FoodDeliveryCompare />} />
-          <Route path="/tools/car-repair-finder" element={<CarRepairFinder />} />
-          <Route path="/tools/ev-charging-basics" element={<EvChargingBasics />} />
-          <Route path="/tools/roadside-assistance-apps" element={<RoadsideAssistanceApps />} />
-          <Route path="/tools/uber-lyft-for-seniors" element={<UberLyftForSeniors />} />
-          <Route path="/tools/senior-paratransit-guide" element={<SeniorParatransitGuide />} />
-          <Route path="/tools/senior-driver-evaluation" element={<SeniorDriverEvaluation />} />
-          <Route path="/tools/car-rental-apps-for-seniors" element={<CarRentalAppsForSeniors />} />
-          <Route path="/tools/gas-buddy-app-guide" element={<GasBuddyAppGuide />} />
 
           {/* Cycle 72 — kitchen + home tech */}
-          <Route path="/tools/air-fryer-basics" element={<AirFryerBasics />} />
-          <Route path="/tools/robot-vacuum-picks" element={<RobotVacuumPicks />} />
-          <Route path="/tools/smart-doorbell-compare" element={<SmartDoorbellCompare />} />
-          <Route path="/tools/leak-detection-sensors" element={<LeakDetectionSensors />} />
-          <Route path="/tools/garage-door-opener-smart" element={<GarageDoorOpenerSmart />} />
 
           {/* Cycle 73 — money + banking */}
-          <Route path="/tools/high-yield-savings-picks" element={<HighYieldSavingsPicks />} />
-          <Route path="/tools/zelle-venmo-cash-app" element={<ZelleVenmoCashApp />} />
-          <Route path="/tools/fraud-alert-setup" element={<FraudAlertSetup />} />
-          <Route path="/tools/retirement-calculator-picks" element={<RetirementCalculatorPicks />} />
-          <Route path="/tools/credit-freeze-how-to" element={<CreditFreezeHowTo />} />
 
           {/* Cycle 74 — smart speakers + AI voice */}
-          <Route path="/tools/alexa-routines-primer" element={<AlexaRoutinesPrimer />} />
-          <Route path="/tools/google-home-basics" element={<GoogleHomeBasics />} />
-          <Route path="/tools/chatgpt-for-seniors" element={<ChatGptForSeniors />} />
-          <Route path="/tools/apple-intelligence-guide" element={<AppleIntelligenceGuide />} />
-          <Route path="/tools/voice-shopping-tips" element={<VoiceShoppingTips />} />
 
           {/* Cycle 75 — photos + memories */}
-          <Route path="/tools/photo-backup-compare" element={<PhotoBackupCompare />} />
-          <Route path="/tools/scan-old-photos" element={<ScanOldPhotos />} />
-          <Route path="/tools/family-tree-apps" element={<FamilyTreeApps />} />
-          <Route path="/tools/video-converter-free" element={<VideoConverterFree />} />
-          <Route path="/tools/photo-book-services" element={<PhotoBookServices />} />
 
           {/* Cycle 76 — shopping + buying */}
-          <Route path="/tools/amazon-shopping-tips" element={<AmazonShoppingTips />} />
-          <Route path="/tools/costco-membership-math" element={<CostcoMembershipMath />} />
-          <Route path="/tools/outlet-deals-apps" element={<OutletDealsApps />} />
-          <Route path="/tools/returns-refunds-how-to" element={<ReturnsRefundsHowTo />} />
-          <Route path="/tools/online-thrift-stores" element={<OnlineThriftStores />} />
 
           {/* Cycle 77 — travel + cruise tech */}
-          <Route path="/tools/cruise-app-guide" element={<CruiseAppGuide />} />
-          <Route path="/tools/airline-app-picks" element={<AirlineAppPicks />} />
-          <Route path="/tools/tsa-precheck-global" element={<TsaPrecheckGlobal />} />
-          <Route path="/tools/passport-photo-apps" element={<PassportPhotoApps />} />
-          <Route path="/tools/hotel-loyalty-programs" element={<HotelLoyaltyPrograms />} />
 
           {/* Cycle 78 — estate + insurance */}
-          <Route path="/tools/home-inventory-apps" element={<HomeInventoryApps />} />
-          <Route path="/tools/will-software-compare" element={<WillSoftwareCompare />} />
-          <Route path="/tools/estate-executor-tools" element={<EstateExecutorTools />} />
-          <Route path="/tools/beneficiary-checkup" element={<BeneficiaryCheckup />} />
-          <Route path="/tools/funeral-prearrangement" element={<FuneralPrearrangement />} />
 
           {/* Cycle 79 — hobbies + crafts */}
-          <Route path="/tools/knitting-community-apps" element={<KnittingCommunityApps />} />
-          <Route path="/tools/bird-id-apps" element={<BirdIdApps />} />
-          <Route path="/tools/recipe-app-picks" element={<RecipeAppPicks />} />
-          <Route path="/tools/woodworking-plans" element={<WoodworkingPlans />} />
-          <Route path="/tools/fishing-apps" element={<FishingApps />} />
 
           {/* Cycle 80 — caregivers + senior care */}
-          <Route path="/tools/caregiver-apps" element={<CaregiverApps />} />
-          <Route path="/tools/aging-in-place-tech" element={<AgingInPlaceTech />} />
-          <Route path="/tools/memory-care-apps" element={<MemoryCareApps />} />
-          <Route path="/tools/parkinsons-apps" element={<ParkinsonsApps />} />
-          <Route path="/tools/respite-care-finders" element={<RespiteCareFinders />} />
 
           {/* Cycle 81 — tax + paperwork */}
-          <Route path="/tools/tax-filing-picks" element={<TaxFilingPicks />} />
-          <Route path="/tools/property-tax-appeal" element={<PropertyTaxAppeal />} />
-          <Route path="/tools/paper-shredding-guide" element={<PaperShreddingGuide />} />
-          <Route path="/tools/scanner-app-picks" element={<ScannerAppPicks />} />
-          <Route path="/tools/medical-records-request" element={<MedicalRecordsRequest />} />
 
           {/* Cycle 82 — accessibility */}
-          <Route path="/tools/magnifier-app-picks" element={<MagnifierAppPicks />} />
-          <Route path="/tools/iphone-magnifier-tutorial" element={<IphoneMagnifierTutorial />} />
-          <Route path="/tools/live-captions-for-seniors" element={<LiveCaptionsForSeniors />} />
-          <Route path="/tools/accessibility-shortcuts-iphone" element={<AccessibilityShortcutsIphone />} />
-          <Route path="/tools/android-accessibility-features" element={<AndroidAccessibilityFeatures />} />
-          <Route path="/tools/emergency-sos-phones" element={<EmergencySOSPhones />} />
-          <Route path="/tools/color-blind-tools" element={<ColorBlindTools />} />
-          <Route path="/tools/snapseed-photo-editing" element={<SnapseedPhotoEditing />} />
-          <Route path="/tools/iphone-camera-tips-seniors" element={<IphoneCameraTipsSeniors />} />
-          <Route path="/tools/photo-organizing-massive" element={<PhotoOrganizingMassive />} />
-          <Route path="/tools/airdrop-for-sharing" element={<AirDropForSharing />} />
-          <Route path="/tools/google-photos-for-seniors" element={<GooglePhotosForSeniors />} />
-          <Route path="/tools/one-handed-typing" element={<OneHandedTyping />} />
-          <Route path="/tools/braille-displays" element={<BrailleDisplays />} />
-          <Route path="/tools/dictation-training" element={<DictationTraining />} />
 
           {/* Cycle 83 — home safety */}
-          <Route path="/tools/water-shutoff-guide" element={<WaterShutoffGuide />} />
-          <Route path="/tools/fire-safety-checklist" element={<FireSafetyChecklist />} />
-          <Route path="/tools/gas-leak-detect" element={<GasLeakDetect />} />
-          <Route path="/tools/carbon-monoxide-picks" element={<CarbonMonoxidePicks />} />
-          <Route path="/tools/emergency-kit-checklist" element={<EmergencyKitChecklist />} />
 
           {/* Cycle 84 — weather + outdoor */}
-          <Route path="/tools/weather-app-picks" element={<WeatherAppPicks />} />
-          <Route path="/tools/garden-weather-tools" element={<GardenWeatherTools />} />
-          <Route path="/tools/hiking-gps-apps" element={<HikingGpsApps />} />
-          <Route path="/tools/backyard-safety-audit" element={<BackyardSafetyAudit />} />
-          <Route path="/tools/snow-safety-tech" element={<SnowSafetyTech />} />
 
           {/* Cycle 85 — civic + community */}
-          <Route path="/tools/voting-tech-help" element={<VotingTechHelp />} />
-          <Route path="/tools/nextdoor-basics" element={<NextdoorBasics />} />
-          <Route path="/tools/ebay-for-senior-sellers" element={<EbayForSeniorSellers />} />
-          <Route path="/tools/facebook-marketplace-tips" element={<FacebookMarketplaceTips />} />
-          <Route path="/tools/poshmark-vintage-selling" element={<PoshmarkVintageSelling />} />
-          <Route path="/tools/estate-sale-apps" element={<EstateSaleApps />} />
-          <Route path="/tools/senior-yard-sale-strategy" element={<SeniorYardSaleStrategy />} />
-          <Route path="/tools/volunteer-match-apps" element={<VolunteerMatchApps />} />
-          <Route path="/tools/local-news-apps" element={<LocalNewsApps />} />
-          <Route path="/tools/city-open-data-tools" element={<CityOpenDataTools />} />
 
           {/* Cycle 86 — pet tech */}
-          <Route path="/tools/pet-camera-picks" element={<PetCameraPicks />} />
-          <Route path="/tools/pet-gps-trackers" element={<PetGpsTrackers />} />
-          <Route path="/tools/auto-feeder-picks" element={<AutoFeederPicks />} />
-          <Route path="/tools/pet-televet-visits" element={<PetTelevetVisits />} />
-          <Route path="/tools/online-pet-pharmacies" element={<OnlinePetPharmacies />} />
 
           {/* Cycle 87 — kids/grandkids tech */}
-          <Route path="/tools/screen-time-for-kids" element={<ScreenTimeForKids />} />
-          <Route path="/tools/kid-safe-youtube" element={<KidSafeYouTube />} />
-          <Route path="/tools/gaming-for-grandkids" element={<GamingForGrandkids />} />
-          <Route path="/tools/online-learning-kids" element={<OnlineLearningKids />} />
-          <Route path="/tools/audiobook-kids" element={<AudiobookKids />} />
 
           {/* Cycle 88 — senior fitness */}
-          <Route path="/tools/chair-yoga-apps" element={<ChairYogaApps />} />
-          <Route path="/tools/balance-exercise-apps" element={<BalanceExerciseApps />} />
-          <Route path="/tools/swim-workout-trackers" element={<SwimWorkoutTrackers />} />
-          <Route path="/tools/senior-fitness-youtube" element={<SeniorFitnessYouTube />} />
-          <Route path="/tools/step-counter-compare" element={<StepCounterCompare />} />
 
           {/* Cycle 89 — clinical tech */}
-          <Route path="/tools/tele-dentistry" element={<TeleDentistry />} />
-          <Route path="/tools/eye-exam-apps" element={<EyeExamApps />} />
-          <Route path="/tools/heart-tracker-apps" element={<HeartTrackerApps />} />
-          <Route path="/tools/blood-pressure-cuffs" element={<BloodPressureCuffs />} />
-          <Route path="/tools/mental-health-apps-compare" element={<MentalHealthAppsCompare />} />
 
           {/* Cycle 90 — faith + community */}
-          <Route path="/tools/church-livestream-setup" element={<ChurchLivestreamSetup />} />
-          <Route path="/tools/hymn-app-picks" element={<HymnAppPicks />} />
-          <Route path="/tools/bible-app-compare" element={<BibleAppCompare />} />
-          <Route path="/tools/online-grief-support" element={<OnlineGriefSupport />} />
-          <Route path="/tools/senior-pen-pal-apps" element={<SeniorPenPalApps />} />
 
           {/* Cycle 91 — phone carrier */}
-          <Route path="/tools/provider-switch-guide" element={<ProviderSwitchGuide />} />
-          <Route path="/tools/mvno-picker-guide" element={<MvnoPickerGuide />} />
-          <Route path="/tools/family-plan-compare" element={<FamilyPlanCompare />} />
-          <Route path="/tools/burner-phone-tips" element={<BurnerPhoneTips />} />
-          <Route path="/tools/roaming-tips" element={<RoamingTips />} />
 
           {/* Cycle 92 — TV + entertainment */}
-          <Route path="/tools/antenna-picks" element={<AntennaPicks />} />
-          <Route path="/tools/free-streaming-channels" element={<FreeStreamingChannels />} />
-          <Route path="/tools/sports-stream-compare" element={<SportsStreamCompare />} />
-          <Route path="/tools/local-tv-cord-cutting" element={<LocalTvCordCutting />} />
-          <Route path="/tools/closed-captioning-setup" element={<ClosedCaptioningSetup />} />
 
           {/* Cycle 93 — DIY + handyman */}
-          <Route path="/tools/handyman-finder" element={<HandymanFinder />} />
-          <Route path="/tools/home-improvement-apps" element={<HomeImprovementApps />} />
-          <Route path="/tools/appliance-parts-apps" element={<AppliancePartsApps />} />
-          <Route path="/tools/paint-color-apps" element={<PaintColorApps />} />
-          <Route path="/tools/furniture-assembly-help" element={<FurnitureAssemblyHelp />} />
 
           {/* Cycle 94 — nutrition + meals */}
-          <Route path="/tools/meal-kit-delivery" element={<MealKitDelivery />} />
-          <Route path="/tools/grocery-delivery-apps" element={<GroceryDeliveryApps />} />
-          <Route path="/tools/open-table-for-seniors" element={<OpenTableForSeniors />} />
-          <Route path="/tools/doordash-grubhub-seniors" element={<DoorDashGrubhubSeniors />} />
-          <Route path="/tools/yelp-for-senior-reviewers" element={<YelpForSeniorReviewers />} />
-          <Route path="/tools/tip-calculator-apps" element={<TipCalculatorApps />} />
-          <Route path="/tools/happy-hour-finder-apps" element={<HappyHourFinderApps />} />
-          <Route path="/tools/instacart-for-seniors" element={<InstacartForSeniors />} />
-          <Route path="/tools/ibotta-cashback-for-seniors" element={<IbottaCashbackForSeniors />} />
-          <Route path="/tools/amazon-fresh-walmart-plus" element={<AmazonFreshWalmartPlus />} />
-          <Route path="/tools/costco-membership-for-seniors" element={<CostcoMembershipForSeniors />} />
-          <Route path="/tools/amazon-returns-basics" element={<AmazonReturnsBasics />} />
-          <Route path="/tools/nutrition-label-scanner" element={<NutritionLabelScanner />} />
-          <Route path="/tools/diet-apps" element={<DietApps />} />
-          <Route path="/tools/senior-meal-programs" element={<SeniorMealPrograms />} />
 
           {/* Cycle 95 — senior dating */}
-          <Route path="/tools/senior-dating-apps" element={<SeniorDatingApps />} />
-          <Route path="/tools/widowed-relationships" element={<WidowedRelationships />} />
-          <Route path="/tools/scam-dating-flags" element={<ScamDatingFlags />} />
-          <Route path="/tools/grace-dating-60-plus" element={<GraceDating60Plus />} />
-          <Route path="/tools/first-date-tech" element={<FirstDateTech />} />
 
           {/* Cycle 96 — language + learning */}
-          <Route path="/tools/language-app-compare" element={<LanguageAppCompare />} />
-          <Route path="/tools/free-university-courses" element={<FreeUniversityCourses />} />
-          <Route path="/tools/crossword-apps" element={<CrosswordApps />} />
-          <Route path="/tools/memoir-writing-apps" element={<MemoirWritingApps />} />
-          <Route path="/tools/chess-picks" element={<ChessPicks />} />
 
           {/* Cycle 97 — medication safety */}
-          <Route path="/tools/pill-organizer-smart" element={<PillOrganizerSmart />} />
-          <Route path="/tools/med-reconciliation" element={<MedReconciliation />} />
-          <Route path="/tools/drug-interaction-checkers" element={<DrugInteractionCheckers />} />
-          <Route path="/tools/rx-coupon-apps" element={<RxCouponApps />} />
-          <Route path="/tools/medication-delivery-services" element={<MedicationDeliveryServices />} />
 
           {/* Cycle 98 — kitchen tech */}
-          <Route path="/tools/sous-vide-picks" element={<SousVidePicks />} />
-          <Route path="/tools/instant-pot-apps" element={<InstantPotApps />} />
-          <Route path="/tools/paprika-recipe-manager" element={<PaprikaRecipeManager />} />
-          <Route path="/tools/allrecipes-yummly-apps" element={<AllrecipesYummlyApps />} />
-          <Route path="/tools/smart-kitchen-scales-apps" element={<SmartKitchenScalesApps />} />
-          <Route path="/tools/meal-planning-apps" element={<MealPlanningApps />} />
-          <Route path="/tools/hellofresh-senior-review" element={<HelloFreshSeniorReview />} />
-          <Route path="/tools/americas-test-kitchen-app" element={<AmericasTestKitchenApp />} />
-          <Route path="/tools/pbs-passport-for-seniors" element={<PBSPassportForSeniors />} />
-          <Route path="/tools/magnolia-network-app" element={<MagnoliaNetworkApp />} />
-          <Route path="/tools/crockpot-instant-pot-apps" element={<CrockpotInstantPotApps />} />
-          <Route path="/tools/senior-baking-tutorials" element={<SeniorBakingTutorials />} />
-          <Route path="/tools/kitchen-scale-picks" element={<KitchenScalePicks />} />
-          <Route path="/tools/recipe-organizers" element={<RecipeOrganizers />} />
-          <Route path="/tools/smart-oven-picks" element={<SmartOvenPicks />} />
 
           {/* Cycle 99 — home gym + fitness gear */}
-          <Route path="/tools/home-gym-starter" element={<HomeGymStarter />} />
-          <Route path="/tools/resistance-bands-guide" element={<ResistanceBandsGuide />} />
-          <Route path="/tools/massage-gun-picks" element={<MassageGunPicks />} />
-          <Route path="/tools/foam-roller-guide" element={<FoamRollerGuide />} />
-          <Route path="/tools/senior-bike-options" element={<SeniorBikeOptions />} />
 
           {/* Cycle 100 — digital wellness */}
-          <Route path="/tools/blue-light-filters" element={<BlueLightFilters />} />
-          <Route path="/tools/digital-detox-apps" element={<DigitalDetoxApps />} />
-          <Route path="/tools/eye-strain-tips" element={<EyeStrainTips />} />
-          <Route path="/tools/bedtime-phone-routine" element={<BedtimePhoneRoutine />} />
-          <Route path="/tools/screen-break-reminders" element={<ScreenBreakReminders />} />
 
           {/* Cycle 101 — senior travel + adventure */}
-          <Route path="/tools/scenic-byways" element={<ScenicByways />} />
-          <Route path="/tools/accessible-travel-guide" element={<AccessibleTravelGuide />} />
-          <Route path="/tools/senior-train-travel" element={<SeniorTrainTravel />} />
-          <Route path="/tools/road-trip-planners" element={<RoadTripPlanners />} />
-          <Route path="/tools/cruise-picks" element={<CruisePicks />} />
 
           {/* Cycle 102 — senior workforce */}
-          <Route path="/tools/part-time-jobs-for-seniors" element={<PartTimeJobsForSeniors />} />
-          <Route path="/tools/retirement-hobby-monetize" element={<RetirementHobbyMonetize />} />
-          <Route path="/tools/encore-careers" element={<EncoreCareers />} />
-          <Route path="/tools/online-business-for-seniors" element={<OnlineBusinessForSeniors />} />
-          <Route path="/tools/freelance-senior" element={<FreelanceSenior />} />
 
           {/* Cycle 103 — crime + safety */}
-          <Route path="/tools/home-security-systems" element={<HomeSecuritySystems />} />
-          <Route path="/tools/identity-theft-recovery" element={<IdentityTheftRecovery />} />
-          <Route path="/tools/smoke-alarm-testing" element={<SmokeAlarmTesting />} />
-          <Route path="/tools/frozen-accounts-recovery" element={<FrozenAccountsRecovery />} />
-          <Route path="/tools/estate-fraud-prevention" element={<EstateFraudPrevention />} />
 
           {/* Cycle 104 — grandparent-grandkid tech */}
-          <Route path="/tools/grandparent-texting-apps" element={<GrandparentTextingApps />} />
-          <Route path="/tools/family-video-games" element={<FamilyVideoGames />} />
-          <Route path="/tools/kids-pen-pal-apps" element={<KidsPenPalApps />} />
-          <Route path="/tools/grandparent-book-club" element={<GrandparentBookClub />} />
-          <Route path="/tools/remote-storytelling" element={<RemoteStorytelling />} />
 
           {/* Cycle 105 — medical visit advocacy */}
-          <Route path="/tools/doctor-visit-prep" element={<DoctorVisitPrep />} />
-          <Route path="/tools/second-opinion-apps" element={<SecondOpinionApps />} />
-          <Route path="/tools/medical-records-carry" element={<MedicalRecordsCarry />} />
-          <Route path="/tools/symptom-checkers" element={<SymptomCheckers />} />
-          <Route path="/tools/advocate-for-yourself" element={<AdvocateForYourself />} />
 
           {/* Cycle 106 — financial well-being */}
-          <Route path="/tools/budgeting-apps" element={<BudgetingApps />} />
-          <Route path="/tools/debt-payoff-planner" element={<DebtPayoffPlanner />} />
-          <Route path="/tools/roth-conversion-guide" element={<RothConversionGuide />} />
-          <Route path="/tools/annuity-reality-check" element={<AnnuityRealityCheck />} />
-          <Route path="/tools/reverse-mortgage-guide" element={<ReverseMortgageGuide />} />
 
           {/* Cycle 107 — Spanish-speaking seniors */}
-          <Route path="/tools/spanish-speaking-support" element={<SpanishSpeakingSupport />} />
-          <Route path="/tools/bilingual-medical-apps" element={<BilingualMedicalApps />} />
-          <Route path="/tools/remittances-guide" element={<RemittancesGuide />} />
-          <Route path="/tools/spanish-voting-help" element={<SpanishVotingHelp />} />
-          <Route path="/tools/spanish-retirement-resources" element={<SpanishRetirementResources />} />
 
           {/* Cycle 108 — smart home */}
-          <Route path="/tools/smart-home-starter-kit" element={<SmartHomeStarterKit />} />
-          <Route path="/tools/smart-lock-guide" element={<SmartLockGuide />} />
-          <Route path="/tools/smart-thermostat-picks" element={<SmartThermostatPicks />} />
-          <Route path="/tools/smart-lighting-basics" element={<SmartLightingBasics />} />
-          <Route path="/tools/smart-hub-explained" element={<SmartHubExplained />} />
 
           {/* Cycle 109 — senior phones + simple devices */}
-          <Route path="/tools/simple-phones-for-seniors" element={<SimplePhonesForSeniors />} />
-          <Route path="/tools/jitterbug" element={<Jitterbug />} />
-          <Route path="/tools/grandpad-review" element={<GrandPadReview />} />
-          <Route path="/tools/ipad-vs-fire-tablet-seniors" element={<IpadVsFireTabletSeniors />} />
-          <Route path="/tools/apple-watch-vs-fitbit-seniors" element={<AppleWatchVsFitbitSeniors />} />
-          <Route path="/tools/senior-mobile-games" element={<SeniorMobileGames />} />
-          <Route path="/tools/zoom-facetime-for-grandparents" element={<ZoomFaceTimeForGrandparents />} />
-          <Route path="/tools/digital-legacy-planning" element={<DigitalLegacyPlanning />} />
-          <Route path="/tools/apple-watch-as-phone" element={<AppleWatchAsPhone />} />
-          <Route path="/tools/emergency-button-picks" element={<EmergencyButtonPicks />} />
 
           {/* Cycle 110 — holiday + special occasions */}
-          <Route path="/tools/holiday-shopping-apps" element={<HolidayShoppingApps />} />
-          <Route path="/tools/gift-ideas-for-grandkids" element={<GiftIdeasForGrandkids />} />
-          <Route path="/tools/card-sending-apps" element={<CardSendingApps />} />
-          <Route path="/tools/family-calendar-apps" element={<FamilyCalendarApps />} />
-          <Route path="/tools/zoom-thanksgiving-tips" element={<ZoomThanksgivingTips />} />
 
           {/* Cycle 111 — post-retirement living */}
-          <Route path="/tools/senior-village-options" element={<SeniorVillageOptions />} />
-          <Route path="/tools/assisted-living-tech-check" element={<AssistedLivingTechCheck />} />
-          <Route path="/tools/retirement-community-finder" element={<RetirementCommunityFinder />} />
-          <Route path="/tools/aging-in-place-modifications" element={<AgingInPlaceModifications />} />
-          <Route path="/tools/ccrc-explained" element={<CCRCExplained />} />
 
           {/* Cycle 112 — dental + vision + hearing */}
-          <Route path="/tools/over-the-counter-hearing-aids" element={<OverTheCounterHearingAids />} />
-          <Route path="/tools/prescription-glasses-online" element={<PrescriptionGlassesOnline />} />
-          <Route path="/tools/dental-implant-guide" element={<DentalImplantGuide />} />
-          <Route path="/tools/contact-lens-apps" element={<ContactLensApps />} />
-          <Route path="/tools/warby-parker-for-seniors" element={<WarbyParkerForSeniors />} />
-          <Route path="/tools/zenni-optical-review" element={<ZenniOpticalReview />} />
-          <Route path="/tools/online-eye-exam-apps" element={<OnlineEyeExamApps />} />
-          <Route path="/tools/senior-reading-glasses-guide" element={<SeniorReadingGlassesGuide />} />
-          <Route path="/tools/contact-lens-online-seniors" element={<ContactLensOnlineSeniors />} />
-          <Route path="/tools/teeth-cleaning-apps" element={<TeethCleaningApps />} />
 
           {/* Cycle 113 — senior auto + driving */}
-          <Route path="/tools/senior-driving-tests" element={<SeniorDrivingTests />} />
-          <Route path="/tools/auto-insurance-seniors" element={<AutoInsuranceSeniors />} />
-          <Route path="/tools/backup-camera-retrofit" element={<BackupCameraRetrofit />} />
-          <Route path="/tools/nexar-dash-cam-app" element={<NexarDashCamApp />} />
-          <Route path="/tools/park-mobile-spark-seniors" element={<ParkMobileSparkSeniors />} />
-          <Route path="/tools/aaa-mobile-for-seniors" element={<AAAMobileForSeniors />} />
-          <Route path="/tools/senior-driving-assist" element={<SeniorDrivingAssist />} />
-          <Route path="/tools/rental-car-apps-for-seniors" element={<RentalCarAppsForSeniors />} />
-          <Route path="/tools/blind-spot-mirror-setups" element={<BlindSpotMirrorSetups />} />
-          <Route path="/tools/senior-rideshare-alternatives" element={<SeniorRideShareAlternatives />} />
 
           {/* Cycle 114 — senior shopping smart */}
-          <Route path="/tools/bulk-buying-math" element={<BulkBuyingMath />} />
-          <Route path="/tools/coupon-stacking-tips" element={<CouponStackingTips />} />
-          <Route path="/tools/returns-at-costco" element={<ReturnsAtCostco />} />
-          <Route path="/tools/best-buy-open-box" element={<BestBuyOpenBox />} />
-          <Route path="/tools/trader-joes-app-guide" element={<TraderJoesAppGuide />} />
 
           {/* Cycle 115 — senior music + audio */}
-          <Route path="/tools/spotify-for-seniors" element={<SpotifyForSeniors />} />
-          <Route path="/tools/record-player-streaming" element={<RecordPlayerStreaming />} />
-          <Route path="/tools/bluetooth-speaker-picks" element={<BluetoothSpeakerPicks />} />
-          <Route path="/tools/radio-apps" element={<RadioApps />} />
-          <Route path="/tools/concert-ticket-tips" element={<ConcertTicketTips />} />
 
           {/* Cycle 116 — senior parenting + family */}
-          <Route path="/tools/adult-child-boundaries" element={<AdultChildBoundaries />} />
-          <Route path="/tools/grandparent-rights" element={<GrandparentRights />} />
-          <Route path="/tools/family-conflict-apps" element={<FamilyConflictApps />} />
-          <Route path="/tools/blended-family-tech" element={<BlendedFamilyTech />} />
-          <Route path="/tools/estate-gifting-planning" element={<EstateGiftingPlanning />} />
 
           {/* Cycle 117 — privacy + data */}
-          <Route path="/tools/privacy-audit-checklist" element={<PrivacyAuditChecklist />} />
-          <Route path="/tools/data-broker-opt-out" element={<DataBrokerOptOut />} />
-          <Route path="/tools/google-privacy-dashboard" element={<GooglePrivacyDashboard />} />
-          <Route path="/tools/apple-privacy-report" element={<ApplePrivacyReport />} />
-          <Route path="/tools/facebook-privacy-audit" element={<FacebookPrivacyAudit />} />
 
           {/* Cycle 118 — AI for seniors */}
-          <Route path="/tools/chatgpt-recipes" element={<ChatGPTRecipes />} />
-          <Route path="/tools/ai-letter-drafting" element={<AILetterDrafting />} />
-          <Route path="/tools/ai-photo-edit" element={<AIPhotoEdit />} />
-          <Route path="/tools/ai-bill-negotiate" element={<AIBillNegotiate />} />
-          <Route path="/tools/ai-senior-search" element={<AISeniorSearch />} />
 
           {/* Cycle 119 — recovery + rehab */}
-          <Route path="/tools/surgery-recovery-tech" element={<SurgeryRecoveryTech />} />
-          <Route path="/tools/physical-therapy-apps" element={<PhysicalTherapyApps />} />
-          <Route path="/tools/medical-equipment-rental" element={<MedicalEquipmentRental />} />
-          <Route path="/tools/home-health-aide-find" element={<HomeHealthAideFind />} />
-          <Route path="/tools/hospice-tech-support" element={<HospiceTechSupport />} />
 
           {/* Cycle 120 — wellness milestone */}
-          <Route path="/tools/sleep-hygiene-apps" element={<SleepHygieneApps />} />
-          <Route path="/tools/meditation-free-apps" element={<MeditationFreeApps />} />
-          <Route path="/tools/sunscreen-app-picks" element={<SunscreenAppPicks />} />
-          <Route path="/tools/hydration-trackers" element={<HydrationTrackers />} />
-          <Route path="/tools/gardening-help-apps" element={<GardeningHelpApps />} />
 
           {/* Cycle 121 — internet basics */}
-          <Route path="/tools/wifi-password-reset" element={<WifiPasswordReset />} />
-          <Route path="/tools/router-picks-for-seniors" element={<RouterPicksForSeniors />} />
-          <Route path="/tools/wifi-extenders" element={<WifiExtenders />} />
-          <Route path="/tools/guest-network-setup" element={<GuestNetworkSetup />} />
-          <Route path="/tools/ethernet-vs-wifi" element={<EthernetVsWifi />} />
 
           {/* Cycle 122 — tax + Medicare deeper */}
-          <Route path="/tools/tax-loss-harvesting" element={<TaxLossHarvesting />} />
-          <Route path="/tools/medicare-enrollment-timeline" element={<MedicareEnrollmentTimeline />} />
-          <Route path="/tools/medicare-supplement-compare" element={<MedicareSupplementCompare />} />
-          <Route path="/tools/irmaa-cliffs" element={<IRMAACliffs />} />
-          <Route path="/tools/rmd-strategies" element={<RMDStrategies />} />
 
           {/* Cycle 123 — civic + service */}
-          <Route path="/tools/americorp-vista" element={<AmericorpVista />} />
-          <Route path="/tools/retired-educator-programs" element={<RetiredEducatorPrograms />} />
-          <Route path="/tools/master-gardener-signup" element={<MasterGardenerSignup />} />
-          <Route path="/tools/jury-duty-apps" element={<JuryDutyApps />} />
-          <Route path="/tools/good-samaritan-laws" element={<GoodSamaritanLaws />} />
 
           {/* Cycle 124 — Office productivity */}
-          <Route path="/tools/zoom-beginner-tips" element={<ZoomBeginnerTips />} />
-          <Route path="/tools/email-attachment-basics" element={<EmailAttachmentBasics />} />
-          <Route path="/tools/google-docs-senior-basics" element={<GoogleDocsSeniorBasics />} />
-          <Route path="/tools/printing-from-phone" element={<PrintingFromPhone />} />
-          <Route path="/tools/backup-your-phone" element={<BackupYourPhone />} />
 
           {/* Cycle 125 — government online services */}
-          <Route path="/tools/social-security-online" element={<SocialSecurityOnline />} />
-          <Route path="/tools/my-medicare-gov" element={<MyMedicareGov />} />
-          <Route path="/tools/irs-payment-portal" element={<IRSPaymentPortal />} />
-          <Route path="/tools/va-com" element={<VaCom />} />
-          <Route path="/tools/dmv-online-services" element={<DmvOnlineServices />} />
 
           {/* Cycle 126 — phone tricks */}
-          <Route path="/tools/voice-texting-trick" element={<VoiceTextingTrick />} />
-          <Route path="/tools/font-size-accessibility" element={<FontSizeAccessibility />} />
-          <Route path="/tools/magnify-text-how-to" element={<MagnifyTextHowTo />} />
-          <Route path="/tools/emergency-contacts-lock-screen" element={<EmergencyContactsLockScreen />} />
-          <Route path="/tools/apple-watch-texting-tips" element={<AppleWatchTextingTips />} />
 
           {/* Cycle 127 — senior insurance */}
-          <Route path="/tools/home-insurance-shop" element={<HomeInsuranceShop />} />
-          <Route path="/tools/umbrella-insurance" element={<UmbrellaInsurance />} />
-          <Route path="/tools/long-term-care-insurance" element={<LongTermCareInsurance />} />
-          <Route path="/tools/final-expense-insurance" element={<FinalExpenseInsurance />} />
-          <Route path="/tools/renters-insurance-seniors" element={<RentersInsuranceSeniors />} />
 
           {/* Cycle 128 — community + clubs */}
-          <Route path="/tools/senior-meetup-apps" element={<SeniorMeetupApps />} />
-          <Route path="/tools/class-reunion-tools" element={<ClassReunionTools />} />
-          <Route path="/tools/book-club-app-picks" element={<BookClubAppPicks />} />
-          <Route path="/tools/garden-club-finder" element={<GardenClubFinder />} />
-          <Route path="/tools/senior-travel-groups" element={<SeniorTravelGroups />} />
 
           {/* Cycle 129 — home cleanup + organization */}
-          <Route path="/tools/downsize-checklist" element={<DownsizeChecklist />} />
-          <Route path="/tools/estate-sale-apps" element={<EstateSaleApps />} />
-          <Route path="/tools/junk-removal-apps" element={<JunkRemovalApps />} />
-          <Route path="/tools/organizing-apps" element={<OrganizingApps />} />
-          <Route path="/tools/storage-unit-picks" element={<StorageUnitPicks />} />
 
           {/* Cycle 130 — emergency preparedness */}
-          <Route path="/tools/hurricane-prep" element={<HurricanePrep />} />
-          <Route path="/tools/radar-scope-weather-app" element={<RadarScopeWeatherApp />} />
-          <Route path="/tools/hurricane-prep-digital" element={<HurricanePrepDigital />} />
-          <Route path="/tools/senior-water-safety" element={<SeniorWaterSafety />} />
-          <Route path="/tools/apple-weather-iphone" element={<AppleWeatherIphone />} />
-          <Route path="/tools/senior-emergency-kit-digital" element={<SeniorEmergencyKitDigital />} />
-          <Route path="/tools/earthquake-prep" element={<EarthquakePrep />} />
-          <Route path="/tools/blackout-kit" element={<BlackoutKit />} />
-          <Route path="/tools/evacuation-go-bag" element={<EvacuationGoBag />} />
-          <Route path="/tools/fema-app-for-seniors" element={<FEMAAppForSeniors />} />
-          <Route path="/tools/emergency-kit-checklist-senior" element={<EmergencyKitChecklistSenior />} />
-          <Route path="/tools/power-outage-prep" element={<PowerOutagePrep />} />
-          <Route path="/tools/emergency-contact-plan" element={<EmergencyContactPlan />} />
-          <Route path="/tools/carbon-monoxide-safety" element={<CarbonMonoxideSafety />} />
-          <Route path="/tools/flood-prep" element={<FloodPrep />} />
 
           {/* Cycle 131 — senior cooking */}
-          <Route path="/tools/slow-cooker-basics" element={<SlowCookerBasics />} />
-          <Route path="/tools/one-pot-meals" element={<OnePotMeals />} />
-          <Route path="/tools/freezer-meal-prep" element={<FreezerMealPrep />} />
-          <Route path="/tools/healthy-snack-ideas" element={<HealthySnackIdeas />} />
-          <Route path="/tools/soup-recipes" element={<SoupRecipes />} />
 
           {/* Cycle 132 — gardening + outdoor */}
-          <Route path="/tools/raised-bed-guide" element={<RaisedBedGuide />} />
-          <Route path="/tools/container-gardening" element={<ContainerGardening />} />
-          <Route path="/tools/birdfeeder-guide" element={<BirdfeederGuide />} />
-          <Route path="/tools/butterfly-garden" element={<ButterflyGarden />} />
-          <Route path="/tools/indoor-plants-low-maintenance" element={<IndoorPlantsLowMaintenance />} />
 
           {/* Cycle 133 — intergenerational */}
-          <Route path="/tools/teach-grandkids-tech" element={<TeachGrandkidsTech />} />
-          <Route path="/tools/digital-saving-plans" element={<DigitalSavingPlans />} />
-          <Route path="/tools/grandparent-budget-talks" element={<GrandparentBudgetTalks />} />
-          <Route path="/tools/financial-literacy-kids" element={<FinancialLiteracyKids />} />
-          <Route path="/tools/kids-coding-apps" element={<KidsCodingApps />} />
 
           {/* Cycle 134 — tech repair + maintenance */}
-          <Route path="/tools/toner-cartridge-refill" element={<TonerCartridgeRefill />} />
-          <Route path="/tools/hard-drive-backup" element={<HardDriveBackup />} />
-          <Route path="/tools/screen-cleaner" element={<ScreenCleaner />} />
-          <Route path="/tools/battery-replacement" element={<BatteryReplacement />} />
-          <Route path="/tools/old-phone-repurpose" element={<OldPhoneRepurpose />} />
 
           {/* Cycle 135 — media literacy */}
-          <Route path="/tools/news-app-compare" element={<NewsAppCompare />} />
-          <Route path="/tools/fact-checking-tools" element={<FactCheckingTools />} />
-          <Route path="/tools/misinfo-spotting" element={<MisinfoSpotting />} />
-          <Route path="/tools/newsletter-picks" element={<NewsletterPicks />} />
-          <Route path="/tools/media-literacy-seniors" element={<MediaLiteracySeniors />} />
 
           {/* Cycle 136 — memory + cognitive */}
-          <Route path="/tools/memory-app-training" element={<MemoryAppTraining />} />
-          <Route path="/tools/to-do-list-seniors" element={<ToDoListSeniors />} />
-          <Route path="/tools/calendar-reminders-apps" element={<CalendarRemindersApps />} />
-          <Route path="/tools/apple-notes-for-seniors" element={<AppleNotesForSeniors />} />
-          <Route path="/tools/google-keep-for-seniors" element={<GoogleKeepForSeniors />} />
-          <Route path="/tools/google-calendar-senior-tutorial" element={<GoogleCalendarSeniorTutorial />} />
-          <Route path="/tools/reminders-app-for-seniors" element={<RemindersAppForSeniors />} />
-          <Route path="/tools/senior-contacts-app-tutorial" element={<SeniorContactsAppTutorial />} />
-          <Route path="/tools/sudoku-apps" element={<SudokuApps />} />
-          <Route path="/tools/math-challenge-apps" element={<MathChallengeApps />} />
-          <Route path="/tools/texting-etiquette" element={<TextingEtiquette />} />
-          <Route path="/tools/group-chat-tips" element={<GroupChatTips />} />
-          <Route path="/tools/snail-mail-revival" element={<SnailMailRevival />} />
-          <Route path="/tools/holiday-card-setup" element={<HolidayCardSetup />} />
-          <Route path="/tools/shutterfly-for-seniors" element={<ShutterflyForSeniors />} />
-          <Route path="/tools/paperless-post-invitations" element={<PaperlessPostInvitations />} />
-          <Route path="/tools/minted-holiday-cards-review" element={<MintedHolidayCardsReview />} />
-          <Route path="/tools/costco-photo-center" element={<CostcoPhotoCenter />} />
-          <Route path="/tools/mail-merge-100-cards" element={<MailMerge100Cards />} />
-          <Route path="/tools/chain-email-dont-share" element={<ChainEmailDontShare />} />
-          <Route path="/tools/fall-prevention-guide" element={<FallPreventionGuide />} />
-          <Route path="/tools/posture-check-apps" element={<PostureCheckApps />} />
-          <Route path="/tools/grip-strength-tools" element={<GripStrengthTools />} />
-          <Route path="/tools/stair-safety-checklist" element={<StairSafetyChecklist />} />
-          <Route path="/tools/cane-walker-picker" element={<CaneWalkerPicker />} />
-          <Route path="/tools/protein-for-seniors" element={<ProteinForSeniors />} />
-          <Route path="/tools/salt-reduction-tips" element={<SaltReductionTips />} />
-          <Route path="/tools/sugar-reduction-guide" element={<SugarReductionGuide />} />
-          <Route path="/tools/anti-inflammatory-eating" element={<AntiInflammatoryEating />} />
-          <Route path="/tools/senior-smoothie-recipes" element={<SeniorSmoothieRecipes />} />
-          <Route path="/tools/insomnia-senior-guide" element={<InsomniaSeniorGuide />} />
-          <Route path="/tools/melatonin-safety-guide" element={<MelatoninSafetyGuide />} />
-          <Route path="/tools/cpap-help-seniors" element={<CPAPHelpSeniors />} />
-          <Route path="/tools/mattress-pillow-picker" element={<MattressPillowPicker />} />
-          <Route path="/tools/white-noise-guide" element={<WhiteNoiseGuide />} />
-          <Route path="/tools/calm-app-for-seniors" element={<CalmAppForSeniors />} />
-          <Route path="/tools/sleep-cycle-app-review" element={<SleepCycleAppReview />} />
-          <Route path="/tools/apple-watch-sleep-for-60" element={<AppleWatchSleepFor60 />} />
-          <Route path="/tools/sleep-hygiene-tech-seniors" element={<SleepHygieneTechSeniors />} />
-          <Route path="/tools/cpap-maintenance-apps" element={<CPAPMaintenanceApps />} />
-          <Route path="/tools/earwax-removal-guide" element={<EarwaxRemovalGuide />} />
-          <Route path="/tools/denture-care-guide" element={<DentureCareGuide />} />
-          <Route path="/tools/foot-care-seniors" element={<FootCareSeniors />} />
-          <Route path="/tools/skin-care-after-65" element={<SkinCareAfter65 />} />
-          <Route path="/tools/hair-thinning-options" element={<HairThinningOptions />} />
-          <Route path="/tools/loneliness-relief-guide" element={<LonelinessReliefGuide />} />
-          <Route path="/tools/senior-mentorship-guide" element={<SeniorMentorshipGuide />} />
-          <Route path="/tools/dating-after-60-guide" element={<DatingAfter60Guide />} />
-          <Route path="/tools/our-time-review-seniors" element={<OurTimeReviewSeniors />} />
-          <Route path="/tools/silver-singles-review" element={<SilverSinglesReview />} />
-          <Route path="/tools/romance-scam-spotting-for-60-plus" element={<RomanceScamSpottingFor60Plus />} />
-          <Route path="/tools/senior-widowed-dating" element={<SeniorWidowedDating />} />
-          <Route path="/tools/stitch-app-for-50-plus" element={<StitchAppFor50Plus />} />
-          <Route path="/tools/senior-roommate-matching" element={<SeniorRoommateMatching />} />
-          <Route path="/tools/join-a-senior-club" element={<JoinASeniorClub />} />
-          <Route path="/tools/snowbird-setup" element={<SnowbirdSetup />} />
-          <Route path="/tools/rv-travel-seniors" element={<RVTravelSeniors />} />
-          <Route path="/tools/rv-trip-wizard-guide" element={<RVTripWizardGuide />} />
-          <Route path="/tools/campendium-allstays-apps" element={<CampendiumAllStaysApps />} />
-          <Route path="/tools/starlink-rv-internet" element={<StarlinkRVInternet />} />
-          <Route path="/tools/rv-maintenance-apps-check" element={<RVMaintenanceAppsCheck />} />
-          <Route path="/tools/senior-rv-community" element={<SeniorRVCommunity />} />
-          <Route path="/tools/airport-wheelchair-help" element={<AirportWheelchairHelp />} />
-          <Route path="/tools/jet-lag-seniors" element={<JetLagSeniors />} />
-          <Route path="/tools/packing-checklist-seniors" element={<PackingChecklistSeniors />} />
-          <Route path="/tools/garage-sale-seniors" element={<GarageSaleSeniors />} />
-          <Route path="/tools/senior-relocation-services" element={<SeniorRelocationServices />} />
-          <Route path="/tools/hoarder-help-resources" element={<HoarderHelpResources />} />
-          <Route path="/tools/memorabilia-preservation" element={<MemorabiliaPreservation />} />
-          <Route path="/tools/attic-basement-clearout" element={<AtticBasementClearout />} />
-          <Route path="/tools/burial-insurance-vs-life" element={<BurialInsuranceVsLife />} />
-          <Route path="/tools/estimated-quarterly-taxes" element={<EstimatedQuarterlyTaxes />} />
-          <Route path="/tools/medicare-scam-defense" element={<MedicareScamDefense />} />
-          <Route path="/tools/sweepstakes-scam-guide" element={<SweepstakesScamGuide />} />
-          <Route path="/tools/charity-scam-check" element={<CharityScamCheck />} />
-          <Route path="/tools/smart-blinds-for-seniors" element={<SmartBlindsForSeniors />} />
-          <Route path="/tools/robot-mop-guide" element={<RobotMopGuide />} />
-          <Route path="/tools/air-purifier-picks" element={<AirPurifierPicks />} />
-          <Route path="/tools/matter-standard-explained" element={<MatterStandardExplained />} />
-          <Route path="/tools/smart-ceiling-fan-guide" element={<SmartCeilingFanGuide />} />
-          <Route path="/tools/diabetes-management-apps" element={<DiabetesManagementApps />} />
-          <Route path="/tools/high-blood-pressure-apps" element={<HighBloodPressureApps />} />
-          <Route path="/tools/cholesterol-guide-seniors" element={<CholesterolGuideSeniors />} />
-          <Route path="/tools/arthritis-management" element={<ArthritisManagement />} />
-          <Route path="/tools/osteoporosis-guide" element={<OsteoporosisGuide />} />
-          <Route path="/tools/alzheimers-early-stage" element={<AlzheimersEarlyStage />} />
-          <Route path="/tools/dementia-wandering-prevention" element={<DementiaWanderingPrevention />} />
-          <Route path="/tools/adult-day-care-guide" element={<AdultDayCareGuide />} />
-          <Route path="/tools/in-home-care-agency-vet" element={<InHomeCareAgencyVet />} />
-          <Route path="/tools/nursing-home-checklist" element={<NursingHomeChecklist />} />
-          <Route path="/tools/best-pets-for-seniors" element={<BestPetsForSeniors />} />
-          <Route path="/tools/pet-supply-delivery" element={<PetSupplyDelivery />} />
-          <Route path="/tools/pet-insurance-for-seniors" element={<PetInsuranceForSeniors />} />
-          <Route path="/tools/rover-pet-sitting-app" element={<RoverPetSittingApp />} />
-          <Route path="/tools/chewy-pet-supplies-guide" element={<ChewyPetSuppliesGuide />} />
-          <Route path="/tools/canva-for-seniors-guide" element={<CanvaForSeniorsGuide />} />
-          <Route path="/tools/photo-book-printing-apps" element={<PhotoBookPrintingApps />} />
-          <Route path="/tools/digital-scrapbooking-apps" element={<DigitalScrapbookingApps />} />
-          <Route path="/tools/emotional-support-animal" element={<EmotionalSupportAnimal />} />
-          <Route path="/tools/foster-pets-for-seniors" element={<FosterPetsForSeniors />} />
-          <Route path="/tools/when-to-stop-driving" element={<WhenToStopDriving />} />
-          <Route path="/tools/ev-for-seniors" element={<EVForSeniors />} />
-          <Route path="/tools/car-rental-senior-tips" element={<CarRentalSeniorTips />} />
-          <Route path="/tools/roadside-assistance-compare" element={<RoadsideAssistanceCompare />} />
-          <Route path="/tools/automatic-emergency-braking" element={<AutomaticEmergencyBraking />} />
-          <Route path="/tools/apple-pay-setup-seniors" element={<ApplePaySetupSeniors />} />
-          <Route path="/tools/paypal-safely-for-seniors" element={<PayPalSafelyForSeniors />} />
-          <Route path="/tools/online-brokerage-starter" element={<OnlineBrokerageStarter />} />
-          <Route path="/tools/cd-treasury-high-yield" element={<CDTreasuryHighYield />} />
-          <Route path="/tools/auto-bill-pay-setup" element={<AutoBillPaySetup />} />
-          <Route path="/tools/libby-app-for-seniors" element={<LibbyAppForSeniors />} />
-          <Route path="/tools/hoopla-for-seniors" element={<HooplaForSeniors />} />
-          <Route path="/tools/sonos-setup-guide" element={<SonosSetupGuide />} />
-          <Route path="/tools/broadway-hd-for-seniors" element={<BroadwayHDForSeniors />} />
-          <Route path="/tools/free-audiobook-sources" element={<FreeAudiobookSources />} />
-          <Route path="/tools/hummingbird-feeder-setup" element={<HummingbirdFeederSetup />} />
-          <Route path="/tools/composting-for-seniors" element={<CompostingForSeniors />} />
-          <Route path="/tools/tree-care-when-to-call-pro" element={<TreeCareWhenToCallPro />} />
-          <Route path="/tools/leaf-blower-picker" element={<LeafBlowerPicker />} />
-          <Route path="/tools/ice-melt-sidewalk-safety" element={<IceMeltSidewalkSafety />} />
-          <Route path="/tools/amazon-prime-perks" element={<AmazonPrimePerks />} />
-          <Route path="/tools/walmart-plus-review" element={<WalmartPlusReview />} />
-          <Route path="/tools/cashback-app-picks" element={<CashbackAppPicks />} />
-          <Route path="/tools/prime-day-black-friday" element={<PrimeDayBlackFriday />} />
-          <Route path="/tools/grocery-loyalty-tricks" element={<GroceryLoyaltyTricks />} />
-          <Route path="/tools/ancestry-dna-guide" element={<AncestryDNAGuide />} />
-          <Route path="/tools/write-your-memoir" element={<WriteYourMemoir />} />
-          <Route path="/tools/video-letters-grandkids" element={<VideoLettersGrandkids />} />
-          <Route path="/tools/family-history-interview" element={<FamilyHistoryInterview />} />
-          <Route path="/tools/ethical-will-template" element={<EthicalWillTemplate />} />
-          <Route path="/tools/hvac-maintenance-guide" element={<HVACMaintenanceGuide />} />
-          <Route path="/tools/water-heater-guide" element={<WaterHeaterGuide />} />
-          <Route path="/tools/gutter-cleaning-options" element={<GutterCleaningOptions />} />
-          <Route path="/tools/roof-inspection-guide" element={<RoofInspectionGuide />} />
-          <Route path="/tools/contractor-vetting-guide" element={<ContractorVettingGuide />} />
-          <Route path="/tools/senior-friendly-cookware" element={<SeniorFriendlyCookware />} />
-          <Route path="/tools/toaster-oven-guide" element={<ToasterOvenGuide />} />
-          <Route path="/tools/adaptive-kitchen-tools" element={<AdaptiveKitchenTools />} />
-          <Route path="/tools/coffee-maker-for-seniors" element={<CoffeeMakerForSeniors />} />
-          <Route path="/tools/induction-stove-explained" element={<InductionStoveExplained />} />
-          <Route path="/tools/power-of-attorney-types" element={<PowerOfAttorneyTypes />} />
-          <Route path="/tools/guardianship-vs-conservatorship" element={<GuardianshipVsConservatorship />} />
-          <Route path="/tools/elder-law-attorney-finder" element={<ElderLawAttorneyFinder />} />
-          <Route path="/tools/free-legal-aid-for-seniors" element={<FreeLegalAidForSeniors />} />
-          <Route path="/tools/debt-collector-rights" element={<DebtCollectorRights />} />
-          <Route path="/tools/duolingo-for-seniors" element={<DuolingoForSeniors />} />
-          <Route path="/tools/babbel-vs-rosetta" element={<BabbelVsRosetta />} />
-          <Route path="/tools/google-translate-mastery" element={<GoogleTranslateMastery />} />
-          <Route path="/tools/free-college-for-seniors" element={<FreeCollegeForSeniors />} />
-          <Route path="/tools/coursera-senior-audit" element={<CourseraSeniorAudit />} />
-          <Route path="/tools/edx-courses-for-seniors" element={<EdXCoursesForSeniors />} />
-          <Route path="/tools/great-courses-plus-review" element={<GreatCoursesPlusReview />} />
-          <Route path="/tools/academic-search-seniors" element={<AcademicSearchSeniors />} />
-          <Route path="/tools/senior-tutorial-resources" element={<SeniorTutorialResources />} />
-          <Route path="/tools/senior-classes-at-community-college" element={<SeniorClassesAtCommunityCollege />} />
-          <Route path="/tools/va-aid-and-attendance" element={<VAAidAndAttendance />} />
-          <Route path="/tools/tricare-for-life" element={<TricareForLife />} />
-          <Route path="/tools/national-cemetery-burial" element={<NationalCemeteryBurial />} />
-          <Route path="/tools/va-home-loan-guide" element={<VAHomeLoanGuide />} />
-          <Route path="/tools/agent-orange-benefits" element={<AgentOrangeBenefits />} />
-          <Route path="/tools/meals-on-wheels-guide" element={<MealsOnWheelsGuide />} />
-          <Route path="/tools/picture-this-plant-id" element={<PictureThisPlantID />} />
-          <Route path="/tools/fishbrain-angler-apps" element={<FishbrainAnglerApps />} />
-          <Route path="/tools/woodworking-plans-apps" element={<WoodworkingPlansApps />} />
-          <Route path="/tools/backyard-birdfeeder-apps" element={<BackyardBirdfeederApps />} />
-          <Route path="/tools/hunting-apps-for-seniors" element={<HuntingAppsForSeniors />} />
-          <Route path="/tools/medicare-savings-programs" element={<MedicareSavingsPrograms />} />
-          <Route path="/tools/medicare-extra-help" element={<MedicareExtraHelp />} />
-          <Route path="/tools/liheap-guide" element={<LIHEAPGuide />} />
-          <Route path="/tools/senior-property-tax-relief" element={<SeniorPropertyTaxRelief />} />
-          <Route path="/tools/ai-write-email-help" element={<AIWriteEmailHelp />} />
-          <Route path="/tools/ai-doctor-appointment-prep" element={<AIDoctorAppointmentPrep />} />
-          <Route path="/tools/ai-translate-recipe" element={<AITranslateRecipe />} />
-          <Route path="/tools/ai-scam-protection" element={<AIScamProtection />} />
-          <Route path="/tools/claude-for-seniors" element={<ClaudeForSeniors />} />
-          <Route path="/tools/oura-ring-for-seniors" element={<OuraRingForSeniors />} />
-          <Route path="/tools/apple-health-deep-dive" element={<AppleHealthDeepDive />} />
-          <Route path="/tools/cgm-for-non-diabetics" element={<CGMForNonDiabetics />} />
-          <Route path="/tools/walking-program-fresh-start" element={<WalkingProgramFreshStart />} />
-          <Route path="/tools/peloton-alternatives" element={<PelotonAlternatives />} />
-          <Route path="/tools/apple-fitness-plus-review" element={<AppleFitnessPlusReview />} />
-          <Route path="/tools/silver-sneakers-app-deep" element={<SilverSneakersAppDeep />} />
-          <Route path="/tools/peloton-app-for-seniors" element={<PelotonAppForSeniors />} />
-          <Route path="/tools/senior-walking-apps" element={<SeniorWalkingApps />} />
-          <Route path="/tools/hasfit-free-youtube" element={<HASfitFreeYouTube />} />
-          <Route path="/tools/hospital-compare-guide" element={<HospitalCompareGuide />} />
-          <Route path="/tools/pre-surgery-checklist" element={<PreSurgeryChecklist />} />
-          <Route path="/tools/er-vs-urgent-care" element={<ERVsUrgentCare />} />
-          <Route path="/tools/medical-bill-negotiation" element={<MedicalBillNegotiation />} />
-          <Route path="/tools/prescription-price-shop" element={<PrescriptionPriceShop />} />
-          <Route path="/tools/etsy-selling-for-seniors" element={<EtsySellingForSeniors />} />
-          <Route path="/tools/fiverr-freelance-seniors" element={<FiverrFreelanceSeniors />} />
-          <Route path="/tools/become-a-tutor-retiree" element={<BecomeATutorRetiree />} />
-          <Route path="/tools/pet-sitting-income" element={<PetSittingIncome />} />
-          <Route path="/tools/consulting-second-act" element={<ConsultingSecondAct />} />
-          <Route path="/tools/senior-consulting-platforms" element={<SeniorConsultingPlatforms />} />
-          <Route path="/tools/airbnb-hosting-for-retirees" element={<AirbnbHostingForRetirees />} />
-          <Route path="/tools/pet-sitting-income-for-seniors" element={<PetSittingIncomeForSeniors />} />
-          <Route path="/tools/senior-tutoring-income-apps" element={<SeniorTutoringIncomeApps />} />
-          <Route path="/tools/senior-bookkeeping-freelance" element={<SeniorBookkeepingFreelance />} />
-          <Route path="/tools/gratitude-practice-app" element={<GratitudePracticeApp />} />
-          <Route path="/tools/stoic-philosophy-seniors" element={<StoicPhilosophySeniors />} />
-          <Route path="/tools/retreat-centers-for-seniors" element={<RetreatCentersForSeniors />} />
-          <Route path="/tools/intermittent-fasting-seniors" element={<IntermittentFastingSeniors />} />
-          <Route path="/tools/minimalism-for-seniors" element={<MinimalismForSeniors />} />
-          <Route path="/tools/grandpad-tablet" element={<GrandPadTablet />} />
-          <Route path="/tools/raz-mobility-phones" element={<RazMobilityPhones />} />
-          <Route path="/tools/consumer-cellular-plans" element={<ConsumerCellularPlans />} />
-          <Route path="/tools/first-smartphone-starter" element={<FirstSmartphoneStarter />} />
-          <Route path="/tools/tablet-for-seniors-basics" element={<TabletForSeniorsBasics />} />
-          <Route path="/tools/vr-for-seniors" element={<VRForSeniors />} />
-          <Route path="/tools/drones-for-seniors" element={<DronesForSeniors />} />
-          <Route path="/tools/printable-hobby-3d" element={<PrintableHobby3D />} />
-          <Route path="/tools/raspberry-pi-seniors" element={<RaspberryPiSeniors />} />
-          <Route path="/tools/coding-hobby-for-seniors" element={<CodingHobbyForSeniors />} />
-          <Route path="/tools/tai-chi-beginner" element={<TaiChiBeginner />} />
-          <Route path="/tools/qigong-for-seniors" element={<QigongForSeniors />} />
-          <Route path="/tools/senior-cycling-tips" element={<SeniorCyclingTips />} />
-          <Route path="/tools/stretching-apps-for-seniors" element={<StretchingAppsForSeniors />} />
-          <Route path="/tools/hiit-for-active-seniors" element={<HiitForActiveSeniors />} />
-          <Route path="/tools/strength-training-for-seniors" element={<StrengthTrainingForSeniors />} />
-          <Route path="/tools/senior-tai-chi-classes" element={<SeniorTaiChiClasses />} />
-          <Route path="/tools/pickleball-for-beginner-seniors" element={<PickleballForBeginnerSeniors />} />
-          <Route path="/tools/hiking-for-seniors" element={<HikingForSeniors />} />
-          <Route path="/tools/aquatic-exercise-guide" element={<AquaticExerciseGuide />} />
-          <Route path="/tools/chromebook-for-seniors" element={<ChromebookForSeniors />} />
-          <Route path="/tools/mac-for-seniors" element={<MacForSeniors />} />
-          <Route path="/tools/windows-basics-for-seniors" element={<WindowsBasicsForSeniors />} />
-          <Route path="/tools/microsoft-o365-vs-google" element={<MicrosoftO365vsGoogle />} />
-          <Route path="/tools/ipad-vs-laptop-for-seniors" element={<IPadVsLaptopForSeniors />} />
-          <Route path="/tools/aerogarden-for-seniors" element={<AeroGardenForSeniors />} />
-          <Route path="/tools/grow-light-setup" element={<GrowLightSetup />} />
-          <Route path="/tools/vegetable-garden-seniors" element={<VegetableGardenSeniors />} />
-          <Route path="/tools/herb-gardening-window" element={<HerbGardeningWindow />} />
-          <Route path="/tools/rain-barrel-guide" element={<RainBarrelGuide />} />
-          <Route path="/tools/watercolor-beginner-seniors" element={<WatercolorBeginnerSeniors />} />
-          <Route path="/tools/ravelry-for-knitters" element={<RavelryForKnitters />} />
-          <Route path="/tools/cricut-for-senior-crafters" element={<CricutForSeniorCrafters />} />
-          <Route path="/tools/etsy-selling-for-seniors" element={<EtsySellingForSeniors />} />
-          <Route path="/tools/quilt-design-software" element={<QuiltDesignSoftware />} />
-          <Route path="/tools/senior-painting-classes" element={<SeniorPaintingClasses />} />
-          <Route path="/tools/paint-by-numbers-adult" element={<PaintByNumbersAdult />} />
-          <Route path="/tools/jewelry-making-seniors" element={<JewelryMakingSeniors />} />
-          <Route path="/tools/pottery-classes-guide" element={<PotteryClassesGuide />} />
-          <Route path="/tools/adult-coloring-books" element={<AdultColoringBooks />} />
-          <Route path="/tools/stamp-collecting-for-seniors" element={<StampCollectingForSeniors />} />
-          <Route path="/tools/antique-value-appraisal-apps" element={<AntiqueValueAppraisalApps />} />
-          <Route path="/tools/comic-book-collecting" element={<ComicBookCollecting />} />
-          <Route path="/tools/baseball-card-valuation" element={<BaseballCardValuation />} />
-          <Route path="/tools/record-collecting-guide" element={<RecordCollectingGuide />} />
-          <Route path="/tools/waze-for-seniors" element={<WazeForSeniors />} />
-          <Route path="/tools/airbnb-for-senior-travelers" element={<AirbnbForSeniorTravelers />} />
-          <Route path="/tools/roadtrip-planning-apps" element={<RoadtripPlanningApps />} />
-          <Route path="/tools/accessible-travel-apps" element={<AccessibleTravelApps />} />
-          <Route path="/tools/national-parks-trip" element={<NationalParksTrip />} />
-          <Route path="/tools/netflix-for-seniors" element={<NetflixForSeniors />} />
-          <Route path="/tools/youtube-for-seniors" element={<YouTubeForSeniors />} />
-          <Route path="/tools/apple-tv-plus-guide" element={<AppleTVPlusGuide />} />
-          <Route path="/tools/paramount-plus-review" element={<ParamountPlusReview />} />
-          <Route path="/tools/streaming-device-compare" element={<StreamingDeviceCompare />} />
-          <Route path="/tools/chess-for-seniors" element={<ChessForSeniors />} />
-          <Route path="/tools/mahjong-app-picks" element={<MahjongAppPicks />} />
-          <Route path="/tools/bridge-online-apps" element={<BridgeOnlineApps />} />
-          <Route path="/tools/scrabble-alternatives" element={<ScrabbleAlternatives />} />
-          <Route path="/tools/jigsaw-puzzle-strategy" element={<JigsawPuzzleStrategy />} />
-          <Route path="/tools/two-factor-auth-guide" element={<TwoFactorAuthGuide />} />
-          <Route path="/tools/yubikey-for-seniors" element={<YubiKeyForSeniors />} />
-          <Route path="/tools/face-id-fingerprint-setup" element={<FaceIDFingerprintSetup />} />
-          <Route path="/tools/apple-icloud-security" element={<AppleICloudSecurity />} />
-          <Route path="/tools/passkey-explained" element={<PasskeyExplained />} />
-          <Route path="/tools/my-social-security-account" element={<MySocialSecurityAccount />} />
-          <Route path="/tools/irs-online-account" element={<IRSOnlineAccount />} />
-          <Route path="/tools/medicare-dot-gov-tour" element={<MedicareDotGovTour />} />
-          <Route path="/tools/benefits-check-up-tool" element={<BenefitsCheckUpTool />} />
-          <Route path="/tools/usa-jobs-for-seniors" element={<USAJobsForSeniors />} />
-          <Route path="/tools/alexa-skills-for-seniors" element={<AlexaSkillsForSeniors />} />
-          <Route path="/tools/google-assistant-training" element={<GoogleAssistantTraining />} />
-          <Route path="/tools/alexa-shopping-list" element={<AlexaShoppingList />} />
-          <Route path="/tools/alexa-med-reminders" element={<AlexaMedReminders />} />
-          <Route path="/tools/alexa-with-dementia" element={<AlexaWithDementia />} />
-          <Route path="/tools/isp-negotiation-guide" element={<ISPNegotiationGuide />} />
-          <Route path="/tools/fiber-vs-cable-internet" element={<FiberVsCableInternet />} />
-          <Route path="/tools/starlink-for-rural" element={<StarlinkForRural />} />
-          <Route path="/tools/t-mobile-home-internet" element={<TMobileHomeInternet />} />
-          <Route path="/tools/acp-internet-subsidy" element={<ACPInternetSubsidy />} />
-          <Route path="/tools/tinnitus-relief-apps" element={<TinnitusReliefApps />} />
-          <Route path="/tools/asl-learning-seniors" element={<ASLLearningSeniors />} />
-          <Route path="/tools/live-captions-apps" element={<LiveCaptionsApps />} />
-          <Route path="/tools/cochlear-implant-basics" element={<CochlearImplantBasics />} />
-          <Route path="/tools/assistive-listening-devices" element={<AssistiveListeningDevices />} />
-          <Route path="/tools/garmin-for-seniors" element={<GarminForSeniors />} />
-          <Route path="/tools/fitbit-vs-apple-watch" element={<FitbitVsAppleWatch />} />
-          <Route path="/tools/smartwatch-health-features" element={<SmartwatchHealthFeatures />} />
-          <Route path="/tools/apple-watch-fall-detection" element={<AppleWatchFallDetection />} />
-          <Route path="/tools/ecg-on-apple-watch" element={<ECGOnAppleWatch />} />
-          <Route path="/tools/smart-fridge-picks" element={<SmartFridgePicks />} />
-          <Route path="/tools/bidet-senior-guide" element={<BidetSeniorGuide />} />
-          <Route path="/tools/dehumidifier-for-seniors" element={<DehumidifierForSeniors />} />
-          <Route path="/tools/microwave-senior-buy" element={<MicrowaveSeniorBuy />} />
-          <Route path="/tools/washer-dryer-for-seniors" element={<WasherDryerForSeniors />} />
-          <Route path="/tools/amtrak-for-seniors" element={<AmtrakForSeniors />} />
-          <Route path="/tools/bus-travel-for-seniors" element={<BusTravelForSeniors />} />
-          <Route path="/tools/river-cruise-guide" element={<RiverCruiseGuide />} />
-          <Route path="/tools/train-around-the-world" element={<TrainAroundTheWorld />} />
-          <Route path="/tools/tourist-attraction-passes" element={<TouristAttractionPasses />} />
-          <Route path="/tools/word-for-seniors" element={<WordForSeniors />} />
-          <Route path="/tools/excel-for-seniors" element={<ExcelForSeniors />} />
-          <Route path="/tools/gmail-for-seniors" element={<GmailForSeniors />} />
-          <Route path="/tools/outlook-for-seniors" element={<OutlookForSeniors />} />
-          <Route path="/tools/browser-bookmarks-guide" element={<BrowserBookmarksGuide />} />
-          <Route path="/tools/facebook-for-beginners" element={<FacebookForBeginners />} />
-          <Route path="/tools/linkedin-for-retirees" element={<LinkedInForRetirees />} />
-          <Route path="/tools/reddit-for-seniors" element={<RedditForSeniors />} />
-          <Route path="/tools/tiktok-safety-guide" element={<TikTokSafetyGuide />} />
-          <Route path="/tools/tiktok-for-senior-viewers" element={<TikTokForSeniorViewers />} />
-          <Route path="/tools/instagram-reels-for-seniors" element={<InstagramReelsForSeniors />} />
-          <Route path="/tools/senior-youtube-channels" element={<SeniorYouTubeChannels />} />
-          <Route path="/tools/discogs-for-record-collectors" element={<DiscogsForRecordCollectors />} />
-          <Route path="/tools/pinterest-for-senior-ideas" element={<PinterestForSeniorIdeas />} />
-          <Route path="/tools/instagram-senior-guide" element={<InstagramSeniorGuide />} />
-          <Route path="/tools/best-credit-cards-seniors" element={<BestCreditCardsSeniors />} />
-          <Route path="/tools/credit-card-fraud-help" element={<CreditCardFraudHelp />} />
-          <Route path="/tools/atm-safety-guide" element={<ATMSafetyGuide />} />
-          <Route path="/tools/chase-sapphire-explain" element={<ChaseSapphireExplain />} />
-          <Route path="/tools/amex-platinum-worth-it" element={<AmexPlatinumWorthIt />} />
-          <Route path="/tools/colon-cancer-screening" element={<ColonCancerScreening />} />
-          <Route path="/tools/mammogram-guide" element={<MammogramGuide />} />
-          <Route path="/tools/prostate-screening-seniors" element={<ProstateScreeningSeniors />} />
-          <Route path="/tools/annual-wellness-visit" element={<AnnualWellnessVisit />} />
-          <Route path="/tools/senior-vaccines-guide" element={<SeniorVaccinesGuide />} />
-          <Route path="/tools/senior-depression-guide" element={<SeniorDepressionGuide />} />
-          <Route path="/tools/anxiety-tools-for-seniors" element={<AnxietyToolsForSeniors />} />
-          <Route path="/tools/chronic-pain-management" element={<ChronicPainManagement />} />
-          <Route path="/tools/grief-after-loss" element={<GriefAfterLoss />} />
-          <Route path="/tools/crisis-line-guide" element={<CrisisLineGuide />} />
-          <Route path="/tools/alcohol-for-seniors" element={<AlcoholForSeniors />} />
-          <Route path="/tools/quit-smoking-seniors" element={<QuitSmokingSeniors />} />
-          <Route path="/tools/marijuana-for-medical-seniors" element={<MarijuanaForMedicalSeniors />} />
-          <Route path="/tools/benzodiazepine-safety" element={<BenzodiazepineSafety />} />
-          <Route path="/tools/caffeine-for-seniors" element={<CaffeineForSeniors />} />
-          <Route path="/tools/bladder-health-seniors" element={<BladderHealthSeniors />} />
-          <Route path="/tools/thyroid-health-seniors" element={<ThyroidHealthSeniors />} />
-          <Route path="/tools/copd-management" element={<COPDManagement />} />
-          <Route path="/tools/kidney-health-guide" element={<KidneyHealthGuide />} />
-          <Route path="/tools/acid-reflux-seniors" element={<AcidRefluxSeniors />} />
-          <Route path="/tools/stroke-warning-signs" element={<StrokeWarningSigns />} />
-          <Route path="/tools/heart-failure-basics" element={<HeartFailureBasics />} />
-          <Route path="/tools/afib-information" element={<AFibInformation />} />
-          <Route path="/tools/blood-thinner-guide" element={<BloodThinnerGuide />} />
-          <Route path="/tools/dvt-prevention-seniors" element={<DVTPreventionSeniors />} />
-          <Route path="/tools/green-burial-options" element={<GreenBurialOptions />} />
-          <Route path="/tools/death-doula-guide" element={<DeathDoulaGuide />} />
-          <Route path="/tools/polst-orders" element={<POLSTOrders />} />
-          <Route path="/tools/hospice-myths" element={<HospiceMyths />} />
-          <Route path="/tools/grief-for-family-after-death" element={<GriefForFamilyAfterDeath />} />
-          <Route path="/tools/tire-pick-guide" element={<TirePickGuide />} />
-          <Route path="/tools/oil-change-frequency" element={<OilChangeFrequency />} />
-          <Route path="/tools/dashcam-picker" element={<DashcamPicker />} />
-          <Route path="/tools/car-battery-replacement" element={<CarBatteryReplacement />} />
-          <Route path="/tools/car-maintenance-schedule" element={<CarMaintenanceSchedule />} />
-          <Route path="/tools/carfax-kbb-app-guide" element={<CarfaxKBBAppGuide />} />
-          <Route path="/tools/ev-charging-for-seniors" element={<EVChargingForSeniors />} />
-          <Route path="/tools/smart-parking-for-seniors" element={<SmartParkingForSeniors />} />
-          <Route path="/tools/auto-fix-diy-apps-for-seniors" element={<AutoFixDIYAppsForSeniors />} />
-          <Route path="/tools/senior-motorcycle-riding" element={<SeniorMotorcycleRiding />} />
-          <Route path="/tools/medicare-advantage-compare" element={<MedicareAdvantageCompare />} />
-          <Route path="/tools/goodrx-for-prescriptions" element={<GoodRxForPrescriptions />} />
-          <Route path="/tools/mychart-patient-portal-guide" element={<MyChartPatientPortalGuide />} />
-          <Route path="/tools/pill-reminder-apps-for-seniors" element={<PillReminderAppsForSeniors />} />
-          <Route path="/tools/telehealth-for-seniors" element={<TelehealthForSeniors />} />
-          <Route path="/tools/tsa-precheck-global-entry-guide" element={<TSAPreCheckGlobalEntryGuide />} />
-          <Route path="/tools/mytsa-app-guide" element={<MyTSAAppGuide />} />
-          <Route path="/tools/roadtrip-planner-apps-for-seniors" element={<RoadtripPlannerAppsForSeniors />} />
-          <Route path="/tools/airbnb-for-senior-travelers" element={<AirbnbForSeniorTravelers />} />
-          <Route path="/tools/passport-renewal-guide" element={<PassportRenewalGuide />} />
-          <Route path="/tools/home-canning-guide-for-seniors" element={<HomeCanningGuideForSeniors />} />
-          <Route path="/tools/ham-radio-for-seniors" element={<HamRadioForSeniors />} />
-          <Route path="/tools/model-trains-apps-for-seniors" element={<ModelTrainsAppsForSeniors />} />
-          <Route path="/tools/senior-woodworking-apps" element={<SeniorWoodworkingApps />} />
-          <Route path="/tools/photography-for-senior-beginners" element={<PhotographyForSeniorBeginners />} />
-          <Route path="/tools/bridge-online-for-seniors" element={<BridgeOnlineForSeniors />} />
-          <Route path="/tools/sudoku-apps-for-seniors" element={<SudokuAppsForSeniors />} />
-          <Route path="/tools/mahjong-online-for-seniors" element={<MahjongOnlineForSeniors />} />
-          <Route path="/tools/chess-apps-for-senior-beginners" element={<ChessAppsForSeniorBeginners />} />
-          <Route path="/tools/crossword-apps-for-senior-players" element={<CrosswordAppsForSeniorPlayers />} />
-          <Route path="/tools/seeing-ai-app-for-seniors" element={<SeeingAIAppForSeniors />} />
-          <Route path="/tools/iphone-voiceover-guide" element={<IPhoneVoiceoverGuide />} />
-          <Route path="/tools/hearing-aid-connect-iphone" element={<HearingAidConnectIphone />} />
-          <Route path="/tools/captions-for-senior-video-calls" element={<CaptionsForSeniorVideoCalls />} />
-          <Route path="/tools/parkinsons-apps-for-seniors" element={<ParkinsonsAppsForSeniors />} />
-          <Route path="/tools/rakuten-cashback-for-seniors" element={<RakutenCashbackForSeniors />} />
-          <Route path="/tools/honey-coupon-app-for-seniors" element={<HoneyCouponAppForSeniors />} />
-          <Route path="/tools/capital-one-shopping-for-seniors" element={<CapitalOneShoppingForSeniors />} />
-          <Route path="/tools/fetch-rewards-for-seniors" element={<FetchRewardsForSeniors />} />
-          <Route path="/tools/mercari-for-senior-sellers" element={<MercariForSeniorSellers />} />
-          <Route path="/tools/resistance-bands-for-seniors" element={<ResistanceBandsForSeniors />} />
-          <Route path="/tools/water-aerobics-for-seniors" element={<WaterAerobicsForSeniors />} />
-          <Route path="/tools/balance-training-for-fall-prevention" element={<BalanceTrainingForFallPrevention />} />
-          <Route path="/tools/yoga-for-seniors-apps" element={<YogaForSeniorsApps />} />
-          <Route path="/tools/walking-groups-for-seniors-apps" element={<WalkingGroupsForSeniorsApps />} />
-          <Route path="/tools/marco-polo-for-senior-families" element={<MarcoPoloForSeniorFamilies />} />
-          <Route path="/tools/signal-app-for-private-messaging" element={<SignalAppForPrivateMessaging />} />
-          <Route path="/tools/texting-basics-for-seniors" element={<TextingBasicsForSeniors />} />
-          <Route path="/tools/group-text-setup-for-senior-families" element={<GroupTextSetupForSeniorFamilies />} />
-          <Route path="/tools/emoji-and-gifs-for-seniors" element={<EmojiAndGifsForSeniors />} />
-          <Route path="/tools/google-nest-hub-for-seniors" element={<GoogleNestHubForSeniors />} />
-          <Route path="/tools/apple-tv-setup-for-seniors" element={<AppleTVSetupForSeniors />} />
-          <Route path="/tools/chromecast-for-senior-tv" element={<ChromecastForSeniorTV />} />
-          <Route path="/tools/smart-sprinkler-for-seniors" element={<SmartSprinklerForSeniors />} />
-          <Route path="/tools/smart-ceiling-fan-for-seniors" element={<SmartCeilingFanForSeniors />} />
-          <Route path="/tools/airtag-setup-for-seniors" element={<AirTagSetupForSeniors />} />
-          <Route path="/tools/find-my-device-android-seniors" element={<FindMyDeviceAndroidSeniors />} />
-          <Route path="/tools/authenticator-app-for-seniors" element={<AuthenticatorAppForSeniors />} />
-          <Route path="/tools/one-password-for-seniors" element={<OnePasswordForSeniors />} />
-          <Route path="/tools/pixel-phone-for-seniors" element={<PixelPhoneForSeniors />} />
-          <Route path="/tools/credit-karma-for-seniors" element={<CreditKarmaForSeniors />} />
-          <Route path="/tools/credit-freeze-for-seniors" element={<CreditFreezeForSeniors />} />
-          <Route path="/tools/monarch-money-for-senior-budget" element={<MonarchMoneyForSeniorBudget />} />
-          <Route path="/tools/empower-personal-capital-for-seniors" element={<EmpowerPersonalCapitalForSeniors />} />
-          <Route path="/tools/online-high-yield-savings-for-seniors" element={<OnlineHighYieldSavingsForSeniors />} />
-          <Route path="/tools/better-help-for-seniors" element={<BetterHelpForSeniors />} />
-          <Route path="/tools/companion-robots-for-seniors" element={<CompanionRobotsForSeniors />} />
-          <Route path="/tools/headspace-for-seniors" element={<HeadspaceForSeniors />} />
-          <Route path="/tools/ai-companion-apps-for-seniors" element={<AICompanionAppsForSeniors />} />
-          <Route path="/tools/sleep-stories-for-senior-insomnia" element={<SleepStoriesForSeniorInsomnia />} />
-          <Route path="/tools/airpods-pro-hearing-aid-mode" element={<AirPodsProHearingAidMode />} />
-          <Route path="/tools/apple-continuity-for-seniors" element={<AppleContinuityForSeniors />} />
-          <Route path="/tools/imessage-mastery-for-seniors" element={<IMessageMasteryForSeniors />} />
-          <Route path="/tools/macbook-for-seniors" element={<MacBookForSeniors />} />
-          <Route path="/tools/siri-shortcuts-for-seniors" element={<SiriShortcutsForSeniors />} />
-          <Route path="/tools/youtube-tv-for-seniors" element={<YouTubeTVForSeniors />} />
-          <Route path="/tools/frndly-tv-for-seniors" element={<FrndlyTVForSeniors />} />
-          <Route path="/tools/sling-tv-for-seniors" element={<SlingTVForSeniors />} />
-          <Route path="/tools/philo-tv-for-seniors" element={<PhiloTVForSeniors />} />
-          <Route path="/tools/roku-channel-free-for-seniors" element={<RokuChannelFreeForSeniors />} />
-          <Route path="/tools/ad-blocker-for-senior-browsers" element={<AdBlockerForSeniorBrowsers />} />
-          <Route path="/tools/browser-tab-management-for-seniors" element={<BrowserTabManagementForSeniors />} />
-          <Route path="/tools/chrome-bookmarks-sync-for-seniors" element={<ChromeBookmarksSyncForSeniors />} />
-          <Route path="/tools/incognito-mode-for-seniors" element={<IncognitoModeForSeniors />} />
-          <Route path="/tools/pocket-reading-list-for-seniors" element={<PocketReadingListForSeniors />} />
-          <Route path="/tools/nyt-cooking-for-seniors" element={<NYTCookingForSeniors />} />
-          <Route path="/tools/lose-it-app-for-seniors" element={<LoseItAppForSeniors />} />
-          <Route path="/tools/meal-planning-for-seniors" element={<MealPlanningForSeniors />} />
-          <Route path="/tools/serious-eats-for-senior-cooks" element={<SeriousEatsForSeniorCooks />} />
-          <Route path="/tools/americas-test-kitchen-for-seniors" element={<AmericasTestKitchenForSeniors />} />
-          <Route path="/tools/perplexity-ai-for-seniors" element={<PerplexityAIForSeniors />} />
-          <Route path="/tools/google-gemini-for-seniors" element={<GoogleGeminiForSeniors />} />
-          <Route path="/tools/microsoft-copilot-for-seniors" element={<MicrosoftCopilotForSeniors />} />
-          <Route path="/tools/ai-for-senior-email-writing" element={<AIForSeniorEmailWriting />} />
-          <Route path="/tools/ai-photo-editing-for-seniors" element={<AIPhotoEditingForSeniors />} />
-          <Route path="/tools/adobe-scan-for-seniors" element={<AdobeScanForSeniors />} />
-          <Route path="/tools/docusign-for-senior-contracts" element={<DocuSignForSeniorContracts />} />
-          <Route path="/tools/mobile-printing-for-seniors" element={<MobilePrintingForSeniors />} />
-          <Route path="/tools/iphone-scanner-techniques-for-seniors" element={<IPhoneScannerTechniquesForSeniors />} />
-          <Route path="/tools/ocr-for-senior-text-extraction" element={<OCRForSeniorTextExtraction />} />
-          <Route path="/tools/icloud-upgrade-guide-for-seniors" element={<ICloudUpgradeGuideForSeniors />} />
-          <Route path="/tools/google-one-for-seniors" element={<GoogleOneForSeniors />} />
-          <Route path="/tools/dropbox-for-seniors" element={<DropboxForSeniors />} />
-          <Route path="/tools/backblaze-for-senior-backup" element={<BackblazeForSeniorBackup />} />
-          <Route path="/tools/senior-photo-backup-strategy" element={<SeniorPhotoBackupStrategy />} />
-          <Route path="/tools/magsafe-charging-for-seniors" element={<MagSafeChargingForSeniors />} />
-          <Route path="/tools/phone-water-damage-for-seniors" element={<PhoneWaterDamageForSeniors />} />
-          <Route path="/tools/cracked-screen-repair-for-seniors" element={<CrackedScreenRepairForSeniors />} />
-          <Route path="/tools/popsocket-grip-for-seniors" element={<PopSocketGripForSeniors />} />
-          <Route path="/tools/senior-friendly-phone-cases" element={<SeniorFriendlyPhoneCases />} />
-          <Route path="/tools/google-meet-for-seniors" element={<GoogleMeetForSeniors />} />
-          <Route path="/tools/facetime-mastery-for-seniors" element={<FaceTimeMasteryForSeniors />} />
-          <Route path="/tools/webex-for-senior-medical-visits" element={<WebexForSeniorMedicalVisits />} />
-          <Route path="/tools/video-call-lighting-for-seniors" element={<VideoCallLightingForSeniors />} />
-          <Route path="/tools/usb-microphone-for-seniors" element={<USBMicrophoneForSeniors />} />
-          <Route path="/tools/gogograndparent-for-seniors" element={<GoGoGrandparentForSeniors />} />
-          <Route path="/tools/carwash-subscription-for-seniors" element={<CarwashSubscriptionForSeniors />} />
-          <Route path="/tools/laundry-pickup-for-seniors" element={<LaundryPickupForSeniors />} />
-          <Route path="/tools/aaa-app-for-senior-emergency" element={<AAAAppForSeniorEmergency />} />
-          <Route path="/tools/airport-assistance-for-seniors" element={<AirportAssistanceForSeniors />} />
-          <Route path="/tools/apple-watch-faces-for-seniors" element={<AppleWatchFacesForSeniors />} />
-          <Route path="/tools/apple-watch-bands-for-seniors" element={<AppleWatchBandsForSeniors />} />
-          <Route path="/tools/kardiamobile-ekg-for-seniors" element={<KardiaMobileEKGForSeniors />} />
-          <Route path="/tools/withings-smart-scale-for-seniors" element={<WithingsSmartScaleForSeniors />} />
-          <Route path="/tools/continuous-glucose-monitor-for-seniors" element={<ContinuousGlucoseMonitorForSeniors />} />
-          <Route path="/tools/target-circle-360-for-seniors" element={<TargetCircle360ForSeniors />} />
-          <Route path="/tools/walmart-plus-for-seniors" element={<WalmartPlusForSeniors />} />
-          <Route path="/tools/kroger-digital-for-seniors" element={<KrogerDigitalForSeniors />} />
-          <Route path="/tools/walgreens-app-for-seniors" element={<WalgreensAppForSeniors />} />
-          <Route path="/tools/costco-app-for-seniors" element={<CostcoAppForSeniors />} />
-          <Route path="/tools/getsetup-for-seniors" element={<GetSetUpForSeniors />} />
-          <Route path="/tools/road-scholar-for-seniors" element={<RoadScholarForSeniors />} />
-          <Route path="/tools/skillshare-for-senior-learning" element={<SkillshareForSeniorLearning />} />
-          <Route path="/tools/udemy-for-senior-courses" element={<UdemyForSeniorCourses />} />
-          <Route path="/tools/outschool-for-grandkid-sharing" element={<OutschoolForGrandkidSharing />} />
-          <Route path="/tools/irs-direct-file-for-seniors" element={<IRSDirectFileForSeniors />} />
-          <Route path="/tools/estate-organizing-apps-for-seniors" element={<EstateOrganizingAppsForSeniors />} />
-          <Route path="/tools/social-security-claiming-apps" element={<SocialSecurityClaimingApps />} />
-          <Route path="/tools/retirement-calculators-for-seniors" element={<RetirementCalculatorsForSeniors />} />
-          <Route path="/tools/tax-loss-harvesting-for-seniors" element={<TaxLossHarvestingForSeniors />} />
-          <Route path="/tools/alexa-drop-in-for-senior-families" element={<AlexaDropInForSeniorFamilies />} />
-          <Route path="/tools/echo-show-for-senior-mom-center" element={<EchoShowForSeniorMomCenter />} />
-          <Route path="/tools/google-assistant-routines-for-seniors" element={<GoogleAssistantRoutinesForSeniors />} />
-          <Route path="/tools/siri-family-group-for-seniors" element={<SiriFamilyGroupForSeniors />} />
-          <Route path="/tools/smart-speaker-privacy-for-seniors" element={<SmartSpeakerPrivacyForSeniors />} />
-          <Route path="/tools/journaling-apps-for-seniors" element={<JournalingAppsForSeniors />} />
-          <Route path="/tools/memoir-writing-apps-for-seniors" element={<MemoirWritingAppsForSeniors />} />
-          <Route path="/tools/google-docs-for-senior-writing" element={<GoogleDocsForSeniorWriting />} />
-          <Route path="/tools/grammarly-for-senior-writing" element={<GrammarlyForSeniorWriting />} />
-          <Route path="/tools/penzu-journal-alternative" element={<PenZuJournalAlternative />} />
-          <Route path="/tools/hotel-tonight-for-seniors" element={<HotelTonightForSeniors />} />
-          <Route path="/tools/google-flights-for-seniors" element={<GoogleFlightsForSeniors />} />
-          <Route path="/tools/tripit-for-senior-travelers" element={<TripItForSeniorTravelers />} />
-          <Route path="/tools/rv-trips-for-seniors" element={<RVTripsForSeniors />} />
-          <Route path="/tools/cruise-apps-deep-dive" element={<CruiseAppsDeepDive />} />
-          <Route path="/tools/max-streaming-for-seniors" element={<MaxStreamingForSeniors />} />
-          <Route path="/tools/apple-tv-plus-for-seniors" element={<AppleTVPlusForSeniors />} />
-          <Route path="/tools/prime-video-for-seniors" element={<PrimeVideoForSeniors />} />
-          <Route path="/tools/pbs-for-seniors" element={<PBSForSeniors />} />
-          <Route path="/tools/acorn-tv-for-senior-british-fans" element={<AcornTVForSeniorBritishFans />} />
-          <Route path="/tools/ring-fit-for-seniors" element={<RingFitForSeniors />} />
-          <Route path="/tools/cpap-mask-for-seniors" element={<CPAPMaskForSeniors />} />
-          <Route path="/tools/sunset-lamps-for-senior-sleep" element={<SunsetLampsForSeniorSleep />} />
-          <Route path="/tools/eating-window-apps-for-seniors" element={<EatingWindowAppsForSeniors />} />
-          <Route path="/tools/sauerkraut-beans-for-senior-gut" element={<SauerkrautBeansForSeniorGut />} />
-          <Route path="/tools/email-filters-for-seniors" element={<EmailFiltersForSeniors />} />
-          <Route path="/tools/unsubscribe-apps-for-seniors" element={<UnsubscribeAppsForSeniors />} />
-          <Route path="/tools/phone-storage-optimization-for-seniors" element={<PhoneStorageOptimizationForSeniors />} />
-          <Route path="/tools/home-screen-layout-for-seniors" element={<HomeScreenLayoutForSeniors />} />
-          <Route path="/tools/notification-management-for-seniors" element={<NotificationManagementForSeniors />} />
-          <Route path="/tools/qr-code-basics-for-seniors" element={<QRCodeBasicsForSeniors />} />
-          <Route path="/tools/maps-offline-for-senior-travel" element={<MapsOfflineForSeniorTravel />} />
-          <Route path="/tools/calculator-apps-for-seniors" element={<CalculatorAppsForSeniors />} />
-          <Route path="/tools/flashlight-for-seniors" element={<FlashlightForSeniors />} />
-          <Route path="/tools/timer-alarm-for-seniors" element={<TimerAlarmForSeniors />} />
-          <Route path="/tools/mint-mobile-for-seniors" element={<MintMobileForSeniors />} />
-          <Route path="/tools/home-maintenance-apps-for-seniors" element={<HomeMaintenanceAppsForSeniors />} />
-          <Route path="/tools/smart-plugs-for-senior-home" element={<SmartPlugsForSeniorHome />} />
-          <Route path="/tools/cleaning-apps-for-seniors" element={<CleaningAppsForSeniors />} />
-          <Route path="/tools/plumber-handyman-apps-for-seniors" element={<PlumberHandymanAppsForSeniors />} />
-          <Route path="/tools/pet-camera-for-seniors" element={<PetCameraForSeniors />} />
-          <Route path="/tools/automated-feeders-for-senior-pets" element={<AutomatedFeedersForSeniorPets />} />
-          <Route path="/tools/pet-medication-apps" element={<PetMedicationApps />} />
-          <Route path="/tools/pet-tracker-for-seniors" element={<PetTrackerForSeniors />} />
-          <Route path="/tools/vet-telehealth-for-senior-pets" element={<VetTelehealthForSeniorPets />} />
-          <Route path="/tools/medical-alert-watches-for-seniors" element={<MedicalAlertWatchesForSeniors />} />
-          <Route path="/tools/sos-iphone-setup-for-seniors" element={<SOSiPhoneSetupForSeniors />} />
-          <Route path="/tools/crash-detection-for-seniors" element={<CrashDetectionForSeniors />} />
-          <Route path="/tools/satellite-phones-for-senior-travel" element={<SatellitePhonesForSeniorTravel />} />
-          <Route path="/tools/emergency-contacts-for-senior-phones" element={<EmergencyContactsForSeniorPhones />} />
-          <Route path="/tools/caringbridge-for-senior-families" element={<CaringBridgeForSeniorFamilies />} />
-          <Route path="/tools/meal-train-for-senior-recovery" element={<MealTrainForSeniorRecovery />} />
-          <Route path="/tools/caregiver-app-care-coordination-for-seniors" element={<CaregiverAppCareCoordinationForSeniors />} />
-          <Route path="/tools/home-health-aide-apps-for-seniors" element={<HomeHealthAideAppsForSeniors />} />
-          <Route path="/tools/medicare-advisor-apps-for-seniors" element={<MedicareAdvisorAppsForSeniors />} />
-          <Route path="/tools/siriusxm-for-seniors" element={<SiriusXMForSeniors />} />
-          <Route path="/tools/pandora-for-seniors" element={<PandoraForSeniors />} />
-          <Route path="/tools/music-therapy-apps-for-seniors" element={<MusicTherapyAppsForSeniors />} />
-          <Route path="/tools/audible-for-senior-listeners" element={<AudibleForSeniorListeners />} />
-          <Route path="/tools/record-player-for-senior-records" element={<RecordPlayerForSeniorRecords />} />
-          <Route path="/tools/vpn-for-senior-privacy" element={<VPNForSeniorPrivacy />} />
-          <Route path="/tools/password-manager-comparison-for-seniors" element={<PasswordManagerComparisonForSeniors />} />
-          <Route path="/tools/phishing-training-for-seniors" element={<PhishingTrainingForSeniors />} />
-          <Route path="/tools/safe-banking-apps-for-seniors" element={<SafeBankingAppsForSeniors />} />
-          <Route path="/tools/social-media-privacy-for-seniors" element={<SocialMediaPrivacyForSeniors />} />
-          <Route path="/tools/camelcamelcamel-for-seniors" element={<CamelCamelCamelForSeniors />} />
-          <Route path="/tools/cashback-cards-for-seniors" element={<CashbackCardsForSeniors />} />
-          <Route path="/tools/aarp-discount-app-for-seniors" element={<AARPDiscountAppForSeniors />} />
-          <Route path="/tools/senior-movie-discount-finder" element={<SeniorMovieDiscountFinder />} />
-          <Route path="/tools/senior-restaurant-savings" element={<SeniorRestaurantSavings />} />
-          <Route path="/tools/kindle-for-senior-readers" element={<KindleForSeniorReaders />} />
-          <Route path="/tools/libby-app-for-seniors" element={<LibbyAppForSeniors />} />
-          <Route path="/tools/goodreads-for-seniors" element={<GoodreadsForSeniors />} />
-          <Route path="/tools/audible-vs-libby-for-seniors" element={<AudibleVsLibbyForSeniors />} />
-          <Route path="/tools/large-print-book-finder-for-seniors" element={<LargePrintBookFinderForSeniors />} />
-          <Route path="/tools/imovie-for-seniors" element={<IMovieForSeniors />} />
-          <Route path="/tools/youtube-channel-for-seniors" element={<YouTubeChannelForSeniors />} />
-          <Route path="/tools/google-photos-videos-for-seniors" element={<GooglePhotosVideosForSeniors />} />
-          <Route path="/tools/magic-moments-for-seniors" element={<MagicMomentsForSeniors />} />
-          <Route path="/tools/sender-slideshow-for-seniors" element={<SenderSlideShowForSeniors />} />
-          <Route path="/tools/smart-doorbell-for-seniors" element={<SmartDoorbellForSeniors />} />
-          <Route path="/tools/smart-lock-for-seniors" element={<SmartLockForSeniors />} />
-          <Route path="/tools/smart-thermostat-for-seniors" element={<SmartThermostatForSeniors />} />
-          <Route path="/tools/smart-lighting-for-seniors" element={<SmartLightingForSeniors />} />
-          <Route path="/tools/smart-smoke-detector-for-seniors" element={<SmartSmokeDetectorForSeniors />} />
-          <Route path="/tools/mirror-fitness-for-seniors" element={<MirrorFitnessForSeniors />} />
-          <Route path="/tools/apple-fitness-plus-for-seniors" element={<AppleFitnessPlusForSeniors />} />
-          <Route path="/tools/home-gym-budget-for-seniors" element={<HomeGymBudgetForSeniors />} />
-          <Route path="/tools/recumbent-bike-for-seniors" element={<RecumbentBikeForSeniors />} />
-          <Route path="/tools/massage-gun-for-seniors" element={<MassageGunForSeniors />} />
-          <Route path="/tools/airhelp-for-seniors" element={<AirHelpForSeniors />} />
-          <Route path="/tools/seatguru-for-seniors" element={<SeatGuruForSeniors />} />
-          <Route path="/tools/rental-car-apps-for-seniors" element={<RentalCarAppsForSeniors />} />
-          <Route path="/tools/passport-photo-apps-for-seniors" element={<PassportPhotoAppsForSeniors />} />
-          <Route path="/tools/currency-exchange-for-senior-travel" element={<CurrencyExchangeForSeniorTravel />} />
-          <Route path="/tools/hearing-test-apps-for-seniors" element={<HearingTestAppsForSeniors />} />
-          <Route path="/tools/skincare-apps-for-seniors" element={<SkincareAppsForSeniors />} />
-          <Route path="/tools/eye-care-apps-for-seniors" element={<EyeCareAppsForSeniors />} />
-          <Route path="/tools/hair-loss-apps-for-seniors" element={<HairLossAppsForSeniors />} />
-          <Route path="/tools/dental-apps-for-seniors" element={<DentalAppsForSeniors />} />
-          <Route path="/tools/applecare-for-seniors" element={<AppleCareForSeniors />} />
-          <Route path="/tools/geek-squad-for-seniors" element={<GenSpecsuPGuideForSeniors />} />
-          <Route path="/tools/remote-support-for-seniors" element={<RemoteSupportForSeniors />} />
-          <Route path="/tools/senior-tech-classes-online" element={<SeniorTechClassesOnline />} />
-          <Route path="/tools/apple-accessibility-helpline-seniors" element={<AppleAccessibilityHelplineSeniors />} />
-          <Route path="/tools/seek-by-inaturalist-seniors" element={<SeekByINaturalistSeniors />} />
-          <Route path="/tools/raised-bed-apps-for-seniors" element={<RaisedBedAppsForSeniors />} />
-          <Route path="/tools/pest-id-apps-for-seniors" element={<PestIDAppsForSeniors />} />
-          <Route path="/tools/compost-apps-for-seniors" element={<CompostAppsForSeniors />} />
-          <Route path="/tools/hydroponic-for-seniors" element={<HydroponicForSeniors />} />
-          <Route path="/tools/icloud-backup-for-seniors" element={<ICloudBackupForSeniors />} />
-          <Route path="/tools/phone-transfer-for-seniors" element={<PhoneTransferForSeniors />} />
-          <Route path="/tools/apple-id-recovery-for-seniors" element={<AppleIDRecoveryForSeniors />} />
-          <Route path="/tools/sim-transfer-for-seniors" element={<SIMTransferForSeniors />} />
-          <Route path="/tools/iphone-insurance-for-seniors" element={<IPhoneInsuranceForSeniors />} />
-          <Route path="/tools/apple-calendar-tips-for-seniors" element={<AppleCalendarTipsForSeniors />} />
-          <Route path="/tools/reminders-app-for-seniors-pro" element={<RemindersAppForSeniorsPro />} />
-          <Route path="/tools/appointment-tracking-for-seniors" element={<AppointmentTrackingForSeniors />} />
-          <Route path="/tools/recurring-task-setup-for-seniors" element={<RecurringTaskSetupForSeniors />} />
-          <Route path="/tools/calendly-for-senior-scheduling" element={<CalendlyForSeniorScheduling />} />
-          <Route path="/tools/accuweather-for-seniors" element={<AccuWeatherForSeniors />} />
-          <Route path="/tools/emergency-broadcasts-for-seniors" element={<EmergencyBroadcastsForSeniors />} />
-          <Route path="/tools/home-security-cameras-for-seniors" element={<HomeSecurityCamerasForSeniors />} />
-          <Route path="/tools/pool-safety-for-senior-grandkids" element={<PoolSafetyForSeniorGrandkids />} />
-          <Route path="/tools/carbon-monoxide-apps-for-seniors" element={<CarbonMonoxideAppsForSeniors />} />
-          <Route path="/tools/fitbit-inspire-for-seniors" element={<FitbitInspireForSeniors />} />
-          <Route path="/tools/step-count-apps-for-seniors" element={<StepCountAppsForSeniors />} />
-          <Route path="/tools/senior-hr-zones-guide" element={<SeniorHRZonesGuide />} />
-          <Route path="/tools/strava-for-senior-walkers" element={<StravaForSeniorWalkers />} />
-          <Route path="/tools/strength-training-for-senior-app-guide" element={<StrengthTrainingForSeniorAppGuide />} />
-          <Route path="/tools/speech-to-text-senior-pro" element={<SpeechToTextSeniorPro />} />
-          <Route path="/tools/ai-clone-voice-for-seniors" element={<AICloneVoiceForSeniors />} />
-          <Route path="/tools/speak-selection-for-seniors" element={<SpeakSelectionForSeniors />} />
-          <Route path="/tools/voice-pin-setup-for-seniors" element={<VoicePinSetupForSeniors />} />
-          <Route path="/tools/podcast-transcripts-for-seniors" element={<PodcastTranscriptsForSeniors />} />
-          <Route path="/tools/senior-mac-shortcuts" element={<SeniorMacShortcuts />} />
-          <Route path="/tools/senior-windows-shortcuts" element={<SeniorWindowsShortcuts />} />
-          <Route path="/tools/ipad-pro-for-seniors" element={<IPadProForSeniors />} />
-          <Route path="/tools/roku-streaming-for-seniors" element={<RokuStreamingForSeniors />} />
-          <Route path="/tools/firestick-for-seniors" element={<FireStickForSeniors />} />
-          <Route path="/tools/apple-pencil-for-seniors" element={<ApplePencilForSeniors />} />
-          <Route path="/tools/iphone-camera-tips-for-seniors" element={<IPhoneCameraTipsForSeniors />} />
-          <Route path="/tools/home-wifi-optimization-seniors" element={<HomeWifiOptimizationSeniors />} />
-          <Route path="/tools/senior-phone-security-setup" element={<SeniorPhoneSecuritySetup />} />
-          <Route path="/tools/senior-tech-budget-guide" element={<SeniorTechBudgetGuide />} />
-          <Route path="/tools/cricut-for-senior-crafters-2" element={<CricutForSeniorCrafters />} />
-          <Route path="/tools/quilting-apps-for-seniors" element={<QuiltingAppsForSeniors />} />
-          <Route path="/tools/painting-apps-for-senior-artists" element={<PaintingAppsForSeniorArtists />} />
-          <Route path="/tools/ravelry-for-knitters-seniors" element={<RavelryForKnittersSeniors />} />
-          <Route path="/tools/etsy-for-senior-sellers-2" element={<EtsyForSeniorSellers />} />
-          <Route path="/tools/smart-irrigation-for-seniors" element={<SmartIrrigationForSeniors />} />
-          <Route path="/tools/robot-mower-for-seniors" element={<RobotMowerForSeniors />} />
-          <Route path="/tools/leaf-blower-safe-for-seniors" element={<LeafBlowerSafeForSeniors />} />
-          <Route path="/tools/smart-garden-for-seniors" element={<SmartGardenForSeniors />} />
-          <Route path="/tools/bird-feeder-smart-cam-for-seniors" element={<BirdFeederSmartCamForSeniors />} />
-          <Route path="/tools/pet-sitter-apps-for-seniors" element={<PetSitterAppsForSeniors />} />
-          <Route path="/tools/akc-app-for-senior-dog-owners" element={<AKCAppForSeniorDogOwners />} />
-          <Route path="/tools/cat-behavior-apps-for-seniors" element={<CatBehaviorAppsForSeniors />} />
-          <Route path="/tools/pet-grief-support-for-seniors" element={<PetGriefSupportForSeniors />} />
-          <Route path="/tools/service-animal-apps-seniors" element={<ServiceAnimalAppsSeniors />} />
-          <Route path="/tools/hims-for-senior-telehealth" element={<Hims4SeniorTelehealth />} />
-          <Route path="/tools/calm-app-senior-mental" element={<CalmRedSeniorMental />} />
-          <Route path="/tools/alcohol-free-apps-seniors" element={<AlcoholFreeAppsSeniors />} />
-          <Route path="/tools/chronic-condition-apps-seniors" element={<ChronicConditionAppsSeniors />} />
-          <Route path="/tools/hospice-apps-for-families" element={<HospiceAppsForFamilies />} />
-          <Route path="/tools/assistive-listening-seniors" element={<AssistiveListeningSeniors />} />
-          <Route path="/tools/switch-control-senior-access" element={<SwitchControlSeniorAccess />} />
-          <Route path="/tools/color-blind-senior-tools" element={<ColorBlindSeniorTools />} />
-          <Route path="/tools/subtitle-glasses-for-seniors" element={<SubtitleGlassesForSeniors />} />
-          <Route path="/tools/senior-accessibility-checklist" element={<SeniorAccessibilityChecklist />} />
-          <Route path="/tools/smart-fridge-for-seniors" element={<SmartFridgeForSeniors />} />
-          <Route path="/tools/smart-oven-for-seniors" element={<SmartOvenForSeniors />} />
-          <Route path="/tools/smart-washer-for-seniors" element={<SmartWasherForSeniors />} />
-          <Route path="/tools/smart-dishwasher-for-seniors" element={<SmartDishwasherForSeniors />} />
-          <Route path="/tools/smart-coffee-for-seniors" element={<SmartCoffeeForSeniors />} />
-          <Route path="/tools/movement-monitor-for-seniors" element={<MovementMonitorForSeniors />} />
-          <Route path="/tools/pain-tracking-apps-seniors" element={<PainTrackingAppsSeniors />} />
-          <Route path="/tools/hydration-apps-seniors" element={<HydrationAppsSeniors />} />
-          <Route path="/tools/senior-rehab-apps-post-surgery" element={<SeniorRehabAppsPostSurgery />} />
-          <Route path="/tools/senior-balance-coach-apps" element={<SeniorBalanceCoachApps />} />
-          <Route path="/tools/password-generator-for-seniors" element={<PasswordGeneratorForSeniors />} />
-          <Route path="/tools/print-from-phone-for-seniors" element={<PrintFromPhoneForSeniors />} />
-          <Route path="/tools/cloud-sync-for-seniors" element={<CloudSyncForSeniors />} />
-          <Route path="/tools/email-declutter-for-seniors" element={<EmailDeclutterForSeniors />} />
-          <Route path="/tools/digital-declutter-for-seniors" element={<DigitalDeclutterForSeniors />} />
-          <Route path="/tools/apple-card-for-seniors" element={<AppleCardForSeniors />} />
-          <Route path="/tools/retirement-bucket-strategy-seniors" element={<RetirementBucketStrategySeniors />} />
-          <Route path="/tools/senior-estate-attorney" element={<SeniorEstateAttorney />} />
-          <Route path="/tools/i-bonds-for-senior-savers" element={<IBondsForSeniorSavers />} />
-          <Route path="/tools/credit-freeze-for-seniors-deep" element={<CreditFreezeForSeniorsDeep />} />
-          <Route path="/tools/airbnb-hosting-for-seniors" element={<AirBnBHostingForSeniors />} />
-          <Route path="/tools/senior-vr-travel-experiences" element={<SeniorVRTravelExperiences />} />
-          <Route path="/tools/motorhome-rental-for-seniors" element={<MotorhomeRentalForSeniors />} />
-          <Route path="/tools/senior-bucket-list-app-planning" element={<SeniorBucketListAppPlanning />} />
-          <Route path="/tools/senior-travel-insurance" element={<SeniorTravelInsurance />} />
-          <Route path="/tools/apple-arcade-for-senior-games" element={<AppleArcadeForSeniorGames />} />
-          <Route path="/tools/senior-gift-ideas-apps" element={<SeniorGiftIdeasApps />} />
-          <Route path="/tools/facetime-shareplay-for-seniors" element={<FaceTimeSharePlayForSeniors />} />
-          <Route path="/tools/senior-birthday-reminders-app" element={<SeniorBirthdayRemindersApp />} />
-          <Route path="/tools/senior-christmas-shopping-apps" element={<SeniorChristmasShoppingApps />} />
-          <Route path="/tools/meal-kits-for-seniors" element={<MealKitsForSeniors />} />
-          <Route path="/tools/instant-pot-for-seniors" element={<InstantPotForSeniors />} />
-          <Route path="/tools/air-fryer-for-seniors" element={<AirFryerForSeniors />} />
-          <Route path="/tools/senior-recipe-organizer" element={<SeniorRecipeOrganizer />} />
-          <Route path="/tools/senior-food-log-track" element={<SeniorFoodLogTrack />} />
-          <Route path="/tools/senior-id-theft-recovery" element={<SeniorIDTheftRecovery />} />
-          <Route path="/tools/privacy-data-deletion-seniors" element={<PrivacyDataDeletionSeniors />} />
-          <Route path="/tools/senior-passkeys-setup" element={<SeniorPasskeysSetup />} />
-          <Route path="/tools/senior-robocall-block" element={<SeniorRobocallBlock />} />
-          <Route path="/tools/senior-privacy-checklist" element={<SeniorPrivacyChecklist />} />
-          <Route path="/tools/senior-bp-monitor-apps" element={<SeniorBPMonitorApps />} />
-          <Route path="/tools/senior-weight-and-diet-apps" element={<SeniorWeightAndDietApps />} />
-          <Route path="/tools/senior-medication-management" element={<SeniorMedicationManagement />} />
-          <Route path="/tools/mychart-user-guide" element={<MyChartUserGuide />} />
-          <Route path="/tools/senior-mental-health-apps" element={<SeniorMentalHealthApps />} />
-          <Route path="/tools/senior-massage-therapy" element={<SeniorMassageTherapy />} />
-          <Route path="/tools/senior-yoga-senior-programs" element={<SeniorYogaSeniorPrograms />} />
-          <Route path="/tools/senior-walking-clubs" element={<SeniorWalkingClubs />} />
-          <Route path="/tools/senior-acupuncture-apps" element={<SeniorAcupunctureApps />} />
-          <Route path="/tools/senior-chiropractic-guide" element={<SeniorChiropracticGuide />} />
-          <Route path="/tools/senior-online-grocery-deep" element={<SeniorOnlineGroceryDeep />} />
-          <Route path="/tools/senior-batch-cooking-apps" element={<SeniorBatchCookingApps />} />
-          <Route path="/tools/amazon-fresh-senior-order" element={<AmazonFreshSeniorOrder />} />
-          <Route path="/tools/senior-pharmacy-delivery-apps" element={<SeniorPharmacyDeliveryApps />} />
-          <Route path="/tools/senior-big-box-apps-membership" element={<SeniorBigBoxAppsMembership />} />
-          <Route path="/tools/senior-digital-legacy-planning" element={<SeniorDigitalLegacyPlanning />} />
-          <Route path="/tools/senior-obituary-planning" element={<SeniorObituaryPlanning />} />
-          <Route path="/tools/senior-advance-directives" element={<SeniorAdvanceDirectives />} />
-          <Route path="/tools/senior-password-sharing" element={<SeniorPasswordSharing />} />
-          <Route path="/tools/senior-ethical-will-apps" element={<SeniorEthicalWillApps />} />
-          <Route path="/tools/senior-tsa-precheck-guide" element={<SeniorTSAPrecheckGuide />} />
-          <Route path="/tools/senior-mobile-passport-app" element={<SeniorMobilePassportApp />} />
-          <Route path="/tools/senior-travel-insurance-apps" element={<SeniorTravelInsuranceApps />} />
-          <Route path="/tools/senior-airline-app-guide" element={<SeniorAirlineAppGuide />} />
-          <Route path="/tools/senior-travel-translation-apps" element={<SeniorTravelTranslationApps />} />
-          <Route path="/tools/senior-smart-doorbell-setup" element={<SeniorSmartDoorbellSetup />} />
-          <Route path="/tools/senior-smart-lights-guide" element={<SeniorSmartLightsGuide />} />
-          <Route path="/tools/senior-smart-plugs" element={<SeniorSmartPlugs />} />
-          <Route path="/tools/senior-robot-vacuum-guide" element={<SeniorRobotVacuumGuide />} />
-          <Route path="/tools/senior-smart-lock-guide" element={<SeniorSmartLockGuide />} />
-          <Route path="/tools/senior-blood-pressure-apps" element={<SeniorBloodPressureApps />} />
-          <Route path="/tools/senior-medication-reminders" element={<SeniorMedicationReminders />} />
-          <Route path="/tools/senior-glucose-tracking" element={<SeniorGlucoseTracking />} />
-          <Route path="/tools/senior-symptom-tracker" element={<SeniorSymptomTracker />} />
-          <Route path="/tools/senior-hearing-aid-apps" element={<SeniorHearingAidApps />} />
-          <Route path="/tools/senior-yoga-apps" element={<SeniorYogaApps />} />
-          <Route path="/tools/senior-meditation-apps" element={<SeniorMeditationApps />} />
-          <Route path="/tools/senior-brain-games" element={<SeniorBrainGames />} />
-          <Route path="/tools/senior-sleep-tracking" element={<SeniorSleepTracking />} />
-          <Route path="/tools/senior-mobile-banking" element={<SeniorMobileBanking />} />
-          <Route path="/tools/senior-zelle-venmo" element={<SeniorZelleVenmo />} />
-          <Route path="/tools/senior-budgeting-apps" element={<SeniorBudgetingApps />} />
-          <Route path="/tools/senior-social-security-online" element={<SeniorSocialSecurityOnline />} />
-          <Route path="/tools/senior-online-taxes" element={<SeniorOnlineTaxes />} />
-          <Route path="/tools/senior-roku-guide" element={<SeniorRokuGuide />} />
-          <Route path="/tools/senior-netflix-tips" element={<SeniorNetflixTips />} />
-          <Route path="/tools/senior-youtube-tips" element={<SeniorYouTubeTips />} />
-          <Route path="/tools/senior-audiobook-apps" element={<SeniorAudiobookApps />} />
-          <Route path="/tools/senior-free-music-apps" element={<SeniorFreeMusicApps />} />
-          <Route path="/tools/senior-zoom-basics" element={<SeniorZoomBasics />} />
-          <Route path="/tools/senior-facetime-basics" element={<SeniorFaceTimeBasics />} />
-          <Route path="/tools/senior-whatsapp-basics" element={<SeniorWhatsAppBasics />} />
-          <Route path="/tools/senior-email-basics" element={<SeniorEmailBasics />} />
-          <Route path="/tools/senior-texting-tips" element={<SeniorTextingTips />} />
-          <Route path="/tools/senior-photo-backup" element={<SeniorPhotoBackup />} />
-          <Route path="/tools/senior-photo-sharing" element={<SeniorPhotoSharing />} />
-          <Route path="/tools/senior-scan-old-photos" element={<SeniorScanOldPhotos />} />
-          <Route path="/tools/senior-digital-frames" element={<SeniorDigitalFrames />} />
-          <Route path="/tools/senior-photo-book-apps" element={<SeniorPhotoBookApps />} />
-          <Route path="/tools/senior-amazon-tips" element={<SeniorAmazonTips />} />
-          <Route path="/tools/senior-online-grocery-basics" element={<SeniorOnlineGroceryBasics />} />
-          <Route path="/tools/senior-rakuten-cashback" element={<SeniorRakutenCashback />} />
-          <Route path="/tools/senior-online-pharmacy" element={<SeniorOnlinePharmacy />} />
-          <Route path="/tools/senior-online-coupon-apps" element={<SeniorOnlineCouponApps />} />
-          <Route path="/tools/senior-password-managers" element={<SeniorPasswordManagers />} />
-          <Route path="/tools/senior-two-factor-auth" element={<SeniorTwoFactorAuth />} />
-          <Route path="/tools/senior-vpn-guide" element={<SeniorVPNGuide />} />
-          <Route path="/tools/senior-identity-protection" element={<SeniorIdentityProtection />} />
-          <Route path="/tools/senior-robocall-blockers" element={<SeniorRobocallBlockers />} />
-          <Route path="/tools/senior-uber-lyft" element={<SeniorUberLyft />} />
-          <Route path="/tools/senior-google-maps-basics" element={<SeniorGoogleMapsBasics />} />
-          <Route path="/tools/senior-parking-apps" element={<SeniorParkingApps />} />
-          <Route path="/tools/senior-ev-charging-apps" element={<SeniorEVChargingApps />} />
-          <Route path="/tools/senior-public-transit-apps" element={<SeniorPublicTransitApps />} />
-          <Route path="/tools/senior-alexa-basics" element={<SeniorAlexaBasics />} />
-          <Route path="/tools/senior-google-assistant-basics" element={<SeniorGoogleAssistantBasics />} />
-          <Route path="/tools/senior-siri-basics" element={<SeniorSiriBasics />} />
-          <Route path="/tools/senior-chatgpt-basics" element={<SeniorChatGPTBasics />} />
-          <Route path="/tools/senior-ai-voice-clone-risks" element={<SeniorAIVoiceCloneRisks />} />
-          <Route path="/tools/senior-medical-alert-systems" element={<SeniorMedicalAlertSystems />} />
-          <Route path="/tools/senior-emergency-sos" element={<SeniorEmergencySOS />} />
-          <Route path="/tools/senior-weather-alerts" element={<SeniorWeatherAlerts />} />
-          <Route path="/tools/senior-find-my-phone" element={<SeniorFindMyPhone />} />
-          <Route path="/tools/senior-lifeline-tracking" element={<SeniorLifelineTracking />} />
-          <Route path="/tools/senior-iphone-accessibility" element={<SeniorIPhoneAccessibility />} />
-          <Route path="/tools/senior-android-accessibility" element={<SeniorAndroidAccessibility />} />
-          <Route path="/tools/senior-be-my-eyes" element={<SeniorBeMyEyes />} />
-          <Route path="/tools/senior-voice-typing" element={<SeniorVoiceTextSeniors />} />
-          <Route path="/tools/senior-dark-mode-basics" element={<SeniorDarkModeBasics />} />
-          <Route path="/tools/senior-pet-cameras" element={<SeniorPetCameras />} />
-          <Route path="/tools/senior-pet-tracking-gps" element={<SeniorPetTrackingGPS />} />
-          <Route path="/tools/senior-chewy-app" element={<SeniorChewyApp />} />
-          <Route path="/tools/senior-televet" element={<SeniorTelevet />} />
-          <Route path="/tools/senior-auto-feeders" element={<SeniorAutoFeeders />} />
-          <Route path="/tools/senior-duolingo-basics" element={<SeniorDuolingoBasics />} />
-          <Route path="/tools/senior-masterclass" element={<SeniorMasterClass />} />
-          <Route path="/tools/senior-khan-academy" element={<SeniorKhanAcademy />} />
-          <Route path="/tools/senior-coursera-edx" element={<SeniorCourseraEdX />} />
-          <Route path="/tools/senior-olli-senior-planet" element={<SeniorOLLISeniorPlanet />} />
-          <Route path="/tools/senior-gardening-apps" element={<SeniorGardeningApps />} />
-          <Route path="/tools/senior-birding-apps" element={<SeniorBirdingApps />} />
-          <Route path="/tools/senior-ancestry-app" element={<SeniorAncestryApp />} />
-          <Route path="/tools/senior-recipe-apps" element={<SeniorRecipeApps />} />
-          <Route path="/tools/senior-puzzle-games" element={<SeniorPuzzleGames />} />
-          <Route path="/tools/senior-smart-thermostats" element={<SeniorSmartThermostats />} />
-          <Route path="/tools/senior-energy-tracking" element={<SeniorEnergyTracking />} />
-          <Route path="/tools/senior-water-leak-sensors" element={<SeniorWaterLeakSensors />} />
-          <Route path="/tools/senior-smart-smoke-detectors" element={<SeniorSmartSmokeDetectors />} />
-          <Route path="/tools/senior-smart-cameras" element={<SeniorSmartCameras />} />
-          <Route path="/tools/senior-facebook-basics" element={<SeniorFacebookBasics />} />
-          <Route path="/tools/senior-instagram-basics" element={<SeniorInstagramBasics />} />
-          <Route path="/tools/senior-nextdoor-basics" element={<SeniorNextdoorBasics />} />
-          <Route path="/tools/senior-pinterest-basics" element={<SeniorPinterestBasics />} />
-          <Route path="/tools/senior-reddit-basics" element={<SeniorRedditBasics />} />
-          <Route path="/tools/senior-apple-watch-setup" element={<SeniorAppleWatchSetup />} />
-          <Route path="/tools/senior-fitbit-guide" element={<SeniorFitbitGuide />} />
-          <Route path="/tools/senior-garmin-guide" element={<SeniorGarminGuide />} />
-          <Route path="/tools/senior-oura-ring" element={<SeniorOuraRing />} />
-          <Route path="/tools/senior-bp-monitor-review" element={<SeniorBPMonitorReview />} />
-          <Route path="/tools/senior-telehealth-basics" element={<SeniorTelehealthBasics />} />
-          <Route path="/tools/senior-mychart-guide" element={<SeniorMyChartGuide />} />
-          <Route path="/tools/senior-medicare-online" element={<SeniorMedicareOnline />} />
-          <Route path="/tools/senior-appointment-apps" element={<SeniorAppointmentApps />} />
-          <Route path="/tools/senior-prescription-apps" element={<SeniorPrescriptionApps />} />
-          <Route path="/tools/senior-jitterbug" element={<SeniorJitterbug />} />
-          <Route path="/tools/senior-consumer-cellular" element={<SeniorConsumerCellular />} />
-          <Route path="/tools/senior-iphone-easy-mode" element={<SeniorIPhoneEasyMode />} />
-          <Route path="/tools/senior-android-easy-mode" element={<SeniorAndroidEasyMode />} />
-          <Route path="/tools/senior-wifi-calling-guide" element={<SeniorWifiCallingGuide />} />
-          <Route path="/tools/senior-caring-apps" element={<SeniorCaringApps />} />
-          <Route path="/tools/senior-adult-day-care-tech" element={<SeniorAdultDayCareTech />} />
-          <Route path="/tools/senior-meal-delivery" element={<SeniorMealDelivery />} />
-          <Route path="/tools/senior-respite-care-apps" element={<SeniorRespiteCareApps />} />
-          <Route path="/tools/senior-memory-aids" element={<SeniorMemoryAids />} />
-          <Route path="/tools/senior-meetup-groups" element={<SeniorMeetupGroups />} />
-          <Route path="/tools/senior-volunteering" element={<SeniorVolunteering />} />
-          <Route path="/tools/senior-classmates" element={<SeniorClassmates />} />
-          <Route path="/tools/senior-e-readers" element={<SeniorEReaders />} />
-          <Route path="/tools/senior-magnifier-apps" element={<SeniorMagnifierApps />} />
-          <Route path="/tools/senior-vision-testing" element={<SeniorVisionTesting />} />
-          <Route path="/tools/senior-online-glasses" element={<SeniorOnlineGlasses />} />
-          <Route path="/tools/senior-seeing-ai-app" element={<SeniorSeeingAIApp />} />
-          <Route path="/tools/senior-peloton-guide" element={<SeniorPelotonGuide />} />
-          <Route path="/tools/senior-apple-fitness" element={<SeniorAppleFitness />} />
-          <Route path="/tools/senior-silver-sneakers" element={<SeniorSilverSneakers />} />
-          <Route path="/tools/senior-chair-exercise-apps" element={<SeniorChairExerciseApps />} />
-          <Route path="/tools/senior-pickleball-apps" element={<SeniorPickleballApps />} />
-          <Route path="/tools/senior-smart-fridges" element={<SeniorSmartFridges />} />
-          <Route path="/tools/senior-air-fryers" element={<SeniorAirFryers />} />
-          <Route path="/tools/senior-instant-pots" element={<SeniorInstantPots />} />
-          <Route path="/tools/senior-electric-kettles" element={<SeniorElectricKettles />} />
-          <Route path="/tools/senior-washer-dryer-apps" element={<SeniorWasherDryerApps />} />
-          <Route path="/tools/senior-google-calendar" element={<SeniorGoogleCalendar />} />
-          <Route path="/tools/senior-apple-notes" element={<SeniorAppleNotes />} />
-          <Route path="/tools/senior-google-docs" element={<SeniorGoogleDocs />} />
-          <Route path="/tools/senior-task-apps" element={<SeniorTaskApps />} />
-          <Route path="/tools/senior-pdf-apps" element={<SeniorPDFApps />} />
-          <Route path="/tools/senior-medical-id-lock-screen" element={<SeniorMedicalIDLockScreen />} />
-          <Route path="/tools/senior-ice-contacts" element={<SeniorICEContacts />} />
-          <Route path="/tools/senior-family-sharing" element={<SeniorFamilySharing />} />
-          <Route path="/tools/senior-emergency-checklist" element={<SeniorEmergencyChecklist />} />
-          <Route path="/tools/senior-grandkid-photo-apps" element={<SeniorGrandkidPhotoApps />} />
-          <Route path="/tools/senior-printer-setup" element={<SeniorPrinterSetup />} />
-          <Route path="/tools/senior-scanner-apps" element={<SeniorScannerApps />} />
-          <Route path="/tools/senior-computer-basics" element={<SeniorComputerBasics />} />
-          <Route path="/tools/senior-router-setup" element={<SeniorRouterSetup />} />
-          <Route path="/tools/senior-backup-guide" element={<SeniorBackupGuide />} />
-          <Route path="/tools/senior-encore-careers" element={<SeniorEncoreCareers />} />
-          <Route path="/tools/senior-online-freelancing" element={<SeniorOnlineFreelancing />} />
-          <Route path="/tools/senior-etsy-shop" element={<SeniorEtsyShop />} />
-          <Route path="/tools/senior-ebay-selling" element={<SeniorEbaySelling />} />
-          <Route path="/tools/senior-blog-starter" element={<SeniorBlogStarter />} />
-          <Route path="/tools/senior-retirement-calculators" element={<SeniorRetirementCalculators />} />
-          <Route path="/tools/senior-rmd-app" element={<SeniorRMDApp />} />
-          <Route path="/tools/senior-estate-apps" element={<SeniorEstateApps />} />
-          <Route path="/tools/senior-long-term-care" element={<SeniorLongTermCare />} />
-          <Route path="/tools/senior-tax-strategies-apps" element={<SeniorTaxStrategiesApps />} />
-          <Route path="/tools/senior-brain-hq-review" element={<SeniorBrainHQRev />} />
-          <Route path="/tools/senior-wordle-spelling-bee" element={<SeniorWordleSpellingBee />} />
-          <Route path="/tools/senior-aarp-games" element={<SeniorAARPGames />} />
-          <Route path="/tools/senior-elevate-app" element={<SeniorElevateApp />} />
-          <Route path="/tools/senior-peak-brain" element={<SeniorPeakBrain />} />
-          <Route path="/tools/senior-booking-dot-com" element={<SeniorBookingDotCom />} />
-          <Route path="/tools/senior-road-scholar" element={<SeniorRoadScholar />} />
-          <Route path="/tools/senior-aarp-travel-discounts" element={<SeniorAARPTravelDiscounts />} />
-          <Route path="/tools/senior-airbnb-basics" element={<SeniorAirbnbBasics />} />
-          <Route path="/tools/senior-cruise-booking-apps" element={<SeniorCruiseBookingApps />} />
-          <Route path="/tools/senior-amazon-household-share" element={<SeniorAmazonHouseholdShare />} />
-          <Route path="/tools/senior-grandkid-gifts" element={<SeniorGrandkidGifts />} />
-          <Route path="/tools/senior-video-call-tablets" element={<SeniorVideoCallTablets />} />
-          <Route path="/tools/senior-wifi-printers-family" element={<SeniorWiFiPrintersFamily />} />
-          <Route path="/tools/senior-tech-gifts-for-older-parents" element={<SeniorTechGiftsForOlderParents />} />
-          <Route path="/tools/senior-digital-declutter" element={<SeniorDigitalDeclutter />} />
-          <Route path="/tools/senior-old-devices-recycle" element={<SeniorOldDevicesRecycle />} />
-          <Route path="/tools/senior-password-cleanup" element={<SeniorPasswordCleanup />} />
-          <Route path="/tools/senior-old-email-cleanup" element={<SeniorOldEmailCleanup />} />
-          <Route path="/tools/senior-account-simplification" element={<SeniorAccountSimplification />} />
-          <Route path="/tools/senior-dictation-apps" element={<SeniorDictationApps />} />
-          <Route path="/tools/senior-voice-memo" element={<SeniorVoiceMemo />} />
-          <Route path="/tools/senior-big-keyboards" element={<SeniorBigKeyboards />} />
-          <Route path="/tools/senior-screen-readers" element={<SeniorScreenReaders />} />
-          <Route path="/tools/senior-one-handed-keyboard" element={<SeniorOneHandedKeyboard />} />
-          <Route path="/tools/senior-weather-apps" element={<SeniorWeatherApps />} />
-          <Route path="/tools/senior-news-apps" element={<SeniorNewsApps />} />
-          <Route path="/tools/senior-podcast-apps" element={<SeniorPodcastApps />} />
-          <Route path="/tools/senior-traffic-apps" element={<SeniorTrafficApps />} />
-          <Route path="/tools/senior-rss-readers" element={<SeniorRSSReaders />} />
-          <Route path="/tools/senior-price-compare-apps" element={<SeniorPriceCompareApps />} />
-          <Route path="/tools/senior-offer-up" element={<SeniorOfferUp />} />
-          <Route path="/tools/senior-receipt-apps" element={<SeniorReceiptApps />} />
-          <Route path="/tools/senior-walmart-app" element={<SeniorWalmartApp />} />
-          <Route path="/tools/senior-target-app" element={<SeniorTargetApp />} />
-          <Route path="/tools/senior-meal-planning-apps" element={<SeniorMealPlanningApps />} />
-          <Route path="/tools/senior-recipe-box" element={<SeniorRecipeBox />} />
-          <Route path="/tools/senior-kitchen-scales" element={<SeniorKitchenScales />} />
-          <Route path="/tools/senior-myfitnesspal" element={<SeniorMyFitnessPal />} />
-          <Route path="/tools/senior-grocery-list-apps" element={<SeniorGroceryListApps />} />
-          <Route path="/tools/senior-plant-id-apps" element={<SeniorPlantIDApps />} />
-          <Route path="/tools/senior-smart-sprinklers" element={<SeniorSmartSprinklers />} />
-          <Route path="/tools/senior-garden-planner-apps" element={<SeniorGardenPlannerApps />} />
-          <Route path="/tools/senior-bug-id-apps" element={<SeniorBugIDApps />} />
-          <Route path="/tools/senior-air-quality-apps" element={<SeniorAirQualityApps />} />
-          <Route path="/tools/senior-bird-feeder-cams" element={<SeniorBirdFeederCams />} />
-          <Route path="/tools/senior-wildlife-cams" element={<SeniorWildlifeCams />} />
-          <Route path="/tools/senior-pet-health-apps" element={<SeniorPetHealthApps />} />
-          <Route path="/tools/senior-animal-rescue-apps" element={<SeniorAnimalRescueApps />} />
-          <Route path="/tools/senior-aquarium-tech" element={<SeniorAquariumTech />} />
-          <Route path="/tools/senior-drawing-apps" element={<SeniorDrawingApps />} />
-          <Route path="/tools/senior-music-creation-apps" element={<SeniorMusicCreationApps />} />
-          <Route path="/tools/senior-sewing-apps" element={<SeniorSewingApps />} />
-          <Route path="/tools/senior-writing-apps" element={<SeniorWritingApps />} />
-          <Route path="/tools/senior-icloud-plus" element={<SeniorICloudPlus />} />
-          <Route path="/tools/senior-google-one" element={<SeniorGoogleOne />} />
-          <Route path="/tools/senior-dropbox-basics" element={<SeniorDropboxBasics />} />
-          <Route path="/tools/senior-onedrive-basics" element={<SeniorOneDriveBasics />} />
-          <Route path="/tools/senior-backblaze" element={<SeniorBackblaze />} />
-          <Route path="/tools/senior-google-meet" element={<SeniorGoogleMeet />} />
-          <Route path="/tools/senior-messenger-video" element={<SeniorMessengerVideo />} />
-          <Route path="/tools/senior-marco-polo" element={<SeniorMarcoPolo />} />
-          <Route path="/tools/senior-skype-basics" element={<SeniorSkypeBasics />} />
-          <Route path="/tools/senior-video-call-etiquette" element={<SeniorVideoCallEtiquette />} />
-          <Route path="/tools/senior-screen-time-apps" element={<SeniorScreenTimeApps />} />
-          <Route path="/tools/senior-blue-light-filters" element={<SeniorBlueLightFilters />} />
-          <Route path="/tools/senior-focus-modes" element={<SeniorFocusModes />} />
-          <Route path="/tools/senior-digital-detox-apps" element={<SeniorDigitalDetoxApps />} />
-          <Route path="/tools/senior-posture-apps" element={<SeniorPostureApps />} />
-          <Route path="/tools/senior-carplay" element={<SeniorCarPlay />} />
-          <Route path="/tools/senior-android-auto" element={<SeniorAndroidAuto />} />
-          <Route path="/tools/senior-backup-camera-apps" element={<SeniorBackupCameraApps />} />
-          <Route path="/tools/senior-gas-price-apps" element={<SeniorGasPriceApps />} />
-          <Route path="/tools/senior-tire-insurance" element={<SeniorTireInsurance />} />
-          <Route path="/tools/senior-ringtones" element={<SeniorRingtones />} />
-          <Route path="/tools/senior-widgets" element={<SeniorWidgets />} />
-          <Route path="/tools/senior-wallpapers" element={<SeniorWallpapers />} />
-          <Route path="/tools/senior-accessibility-shortcut" element={<SeniorAccessibilityShortcut />} />
-          <Route path="/tools/senior-big-icons" element={<SeniorBigIcons />} />
-          <Route path="/tools/senior-online-charity-giving" element={<SeniorOnlineCharityGiving />} />
-          <Route path="/tools/senior-volunteer-online" element={<SeniorVolunteerOnline />} />
-          <Route path="/tools/senior-political" element={<SeniorPolitical />} />
-          <Route path="/tools/senior-mentor-programs" element={<SeniorMentorPrograms />} />
-          <Route path="/tools/senior-religious-tech" element={<SeniorReligiousTech />} />
-          <Route path="/tools/senior-apple-support" element={<SeniorAppleSupport />} />
-          <Route path="/tools/senior-best-buy" element={<SeniorBestBuy />} />
-          <Route path="/tools/senior-tech-repair-scams" element={<SeniorTechRepairScams />} />
-          <Route path="/tools/senior-local-library-tech" element={<SeniorLocalLibraryTech />} />
-          <Route path="/tools/senior-teksure-bookmark" element={<SeniorTekSureBookmark />} />
-          <Route path="/tools/senior-christmas-shopping" element={<SeniorChristmasShopping />} />
-          <Route path="/tools/senior-holiday-card-apps" element={<SeniorHolidayCardApps />} />
-          <Route path="/tools/senior-holiday-decor" element={<SeniorHolidayDecor />} />
-          <Route path="/tools/senior-holiday-travel-tech" element={<SeniorHolidayTravelTech />} />
-          <Route path="/tools/senior-year-end-checklist" element={<SeniorYearEndChecklist />} />
-          <Route path="/tools/senior-echo-dot" element={<SeniorEchoDot />} />
-          <Route path="/tools/senior-bluetooth-speakers" element={<SeniorBluetoothSpeakers />} />
-          <Route path="/tools/senior-airpods-and-alternatives" element={<SeniorAirPodsAndAlternatives />} />
-          <Route path="/tools/senior-home-radio-apps" element={<SeniorHomeRadioApps />} />
-          <Route path="/tools/senior-white-noise-apps" element={<SeniorWhiteNoiseApps />} />
-          <Route path="/tools/senior-smart-alarm-clocks" element={<SeniorSmartAlarmClocks />} />
-          <Route path="/tools/senior-adjustable-beds" element={<SeniorAdjustableBeds />} />
-          <Route path="/tools/senior-sleep-tracker-comparison" element={<SeniorSleepTrackerComparison />} />
-          <Route path="/tools/senior-snore-apps" element={<SeniorSnoreApps />} />
-          <Route path="/tools/senior-red-light-therapy" element={<SeniorRedLightTherapy />} />
-          <Route path="/tools/senior-massage-guns" element={<SeniorMassageGuns />} />
-          <Route path="/tools/senior-tens-units" element={<SeniorTensUnits />} />
-          <Route path="/tools/senior-hot-cold-therapy" element={<SeniorHotColdTherapy />} />
-          <Route path="/tools/senior-percussion-therapy" element={<SeniorPercussionTherapy />} />
-          <Route path="/tools/senior-compression-boots" element={<SeniorCompressionBoots />} />
-          <Route path="/tools/senior-nutrition-tracking" element={<SeniorNutritionTracking />} />
-          <Route path="/tools/senior-water-tracking" element={<SeniorWaterTracking />} />
-          <Route path="/tools/senior-vitamin-apps" element={<SeniorVitaminApps />} />
-          <Route path="/tools/senior-intermittent-fasting" element={<SeniorIntermittentFasting />} />
-          <Route path="/tools/senior-food-safety-apps" element={<SeniorFoodSafetyApps />} />
-          <Route path="/tools/senior-phone-transfer" element={<SeniorPhoneTransfer />} />
-          <Route path="/tools/senior-old-phone-charger" element={<SeniorOldPhoneCharger />} />
-          <Route path="/tools/senior-phone-cases" element={<SeniorPhoneCases />} />
-          <Route path="/tools/senior-screen-repair" element={<SeniorScreenRepair />} />
-          <Route path="/tools/senior-phone-insurance" element={<SeniorPhoneInsurance />} />
-          <Route path="/tools/senior-ipad-buying-guide" element={<SeniorIPadBuyingGuide />} />
-          <Route path="/tools/senior-tablet-stands" element={<SeniorTabletStands />} />
-          <Route path="/tools/senior-ipad-kids-mode" element={<SeniorIPadKidsMode />} />
-          <Route path="/tools/senior-android-tablets" element={<SeniorAndroidTablets />} />
-          <Route path="/tools/senior-tablet-accessibility" element={<SeniorTabletAccessibility />} />
-          <Route path="/tools/senior-tsa-precheck-renewal" element={<SeniorTSAPreCheckRenewal />} />
-          <Route path="/tools/senior-packing-apps" element={<SeniorPackingApps />} />
-          <Route path="/tools/senior-airline-senior-discounts" element={<SeniorAirlineSeniorDiscounts />} />
-          <Route path="/tools/senior-passport-apps" element={<SeniorPassportApps />} />
-          <Route path="/tools/senior-travel-clubs" element={<SeniorTravelClubs />} />
-          <Route path="/tools/senior-internet-speed-test" element={<SeniorInternetSpeedTest />} />
-          <Route path="/tools/senior-affordable-connectivity" element={<SeniorAffordableConnectivity />} />
-          <Route path="/tools/senior-wifi-extenders" element={<SeniorWifiExtenders />} />
-          <Route path="/tools/senior-ethernet-cables" element={<SeniorEthernetCables />} />
-          <Route path="/tools/senior-mobile-hotspots" element={<SeniorMobileHotspots />} />
-          <Route path="/tools/senior-spotify-tips" element={<SeniorSpotifyTips />} />
-          <Route path="/tools/senior-apple-music" element={<SeniorAppleMusic />} />
-          <Route path="/tools/senior-pandora-tips" element={<SeniorPandoraTips />} />
-          <Route path="/tools/senior-iheartradio" element={<SeniorIHeartRadio />} />
-          <Route path="/tools/senior-audible-alternatives" element={<SeniorAudibleAlternatives />} />
-          <Route path="/tools/senior-youtube-tv" element={<SeniorYouTubeTV />} />
-          <Route path="/tools/senior-hulu-live" element={<SeniorHuluLive />} />
-          <Route path="/tools/senior-sling" element={<SeniorSling />} />
-          <Route path="/tools/senior-pluto-tv" element={<SeniorPlutoTV />} />
-          <Route path="/tools/senior-ota-antennas" element={<SeniorOTAAntennas />} />
-          <Route path="/tools/senior-electric-toothbrush" element={<SeniorElectricToothbrush />} />
-          <Route path="/tools/senior-water-flosser" element={<SeniorWaterFlosser />} />
-          <Route path="/tools/senior-hearing-test-apps" element={<SeniorHearingTestApps />} />
-          <Route path="/tools/senior-otc-hearing-aids" element={<SeniorOTCHearingAids />} />
-          <Route path="/tools/senior-eye-drop-reminders" element={<SeniorEyeDropReminders />} />
-          <Route path="/tools/senior-fall-detectors" element={<SeniorFallDetectors />} />
-          <Route path="/tools/senior-motion-sensors" element={<SeniorMotionSensors />} />
-          <Route path="/tools/senior-stove-auto-shutoff" element={<SeniorStoveAutoShutoff />} />
-          <Route path="/tools/senior-mattress-sensors" element={<SeniorMattressSensors />} />
-          <Route path="/tools/senior-voice-monitoring" element={<SeniorVoiceMonitoring />} />
-          <Route path="/tools/senior-balance-apps" element={<SeniorBalanceApps />} />
-          <Route path="/tools/senior-physical-therapy-apps" element={<SeniorPhysicalTherapyApps />} />
-          <Route path="/tools/senior-walker-canes" element={<SeniorWalkerCanes />} />
-          <Route path="/tools/senior-bath-safety-tech" element={<SeniorBathSafetyTech />} />
-          <Route path="/tools/senior-home-mods" element={<SeniorHomeMods />} />
-          <Route path="/tools/senior-medical-billing" element={<SeniorMedicalBilling />} />
-          <Route path="/tools/senior-medicare-supplement" element={<SeniorMedicareSupplement />} />
-          <Route path="/tools/senior-part-d-plan-finder" element={<SeniorPartDPlanFinder />} />
-          <Route path="/tools/senior-dental-insurance" element={<SeniorDentalInsurance />} />
-          <Route path="/tools/senior-vision-insurance" element={<SeniorVisionInsurance />} />
-          <Route path="/tools/senior-emergency-kit" element={<SeniorEmergencyKit />} />
-          <Route path="/tools/senior-power-outage" element={<SeniorPowerOutage />} />
-          <Route path="/tools/senior-evacuation-apps" element={<SeniorEvacuationApps />} />
-          <Route path="/tools/senior-flashlight-apps" element={<SeniorFlashlightApps />} />
-          <Route path="/tools/senior-emergency-contacts" element={<SeniorEmergencyContacts />} />
-          <Route path="/tools/senior-antivirus" element={<SeniorAntivirus />} />
-          <Route path="/tools/senior-romance-scams" element={<SeniorRomanceScams />} />
-          <Route path="/tools/senior-irs-call-scams" element={<SeniorIRSCallScams />} />
-          <Route path="/tools/senior-gift-card-scams" element={<SeniorGiftCardScams />} />
-          <Route path="/tools/senior-scam-reporting" element={<SeniorScamReporting />} />
-          <Route path="/tools/senior-composting" element={<SeniorComposting />} />
-          <Route path="/tools/senior-weather-stations" element={<SeniorWeatherStations />} />
-          <Route path="/tools/senior-chicken-keeping" element={<SeniorChickenKeeping />} />
-          <Route path="/tools/senior-indoor-garden" element={<SeniorIndoorGarden />} />
-          <Route path="/tools/senior-leaf-blowers" element={<SeniorLeafBlowers />} />
-          <Route path="/tools/senior-mint-mobile" element={<SeniorMintMobile />} />
-          <Route path="/tools/senior-verizon-plans" element={<SeniorVerizonPlans />} />
-          <Route path="/tools/senior-tmobile-55" element={<SeniorTMobile55 />} />
-          <Route path="/tools/senior-visible" element={<SeniorVisible />} />
-          <Route path="/tools/senior-landline-solutions" element={<SeniorLandlineSolutions />} />
-          <Route path="/tools/senior-bridge-apps" element={<SeniorBridgeApps />} />
-          <Route path="/tools/senior-chess-apps" element={<SeniorChessApps />} />
-          <Route path="/tools/senior-trivia-apps" element={<SeniorTriviaApps />} />
-          <Route path="/tools/senior-wordle-alternatives" element={<SeniorWordleAlternatives />} />
-          <Route path="/tools/senior-poker-apps" element={<SeniorPokerApps />} />
-          <Route path="/tools/senior-phone-storage-management" element={<SeniorPhoneStorageManagement />} />
-          <Route path="/tools/senior-photo-organizing" element={<SeniorPhotoOrganizing />} />
-          <Route path="/tools/senior-contacts-management" element={<SeniorContactsManagement />} />
-          <Route path="/tools/senior-account-recovery" element={<SeniorAccountRecovery />} />
-          <Route path="/tools/senior-airtags-basics" element={<SeniorAirTagsBasics />} />
-          <Route path="/tools/senior-travel-insurance-selection" element={<SeniorTravelInsuranceSelection />} />
-          <Route path="/tools/senior-medical-evac-insurance" element={<SeniorMedicalEvacInsurance />} />
-          <Route path="/tools/senior-travel-security-apps" element={<SeniorTravelSecurityApps />} />
-          <Route path="/tools/senior-roaming-tips" element={<SeniorRoamingTips />} />
-          <Route path="/tools/senior-travel-chargers" element={<SeniorTravelChargers />} />
-          <Route path="/tools/senior-mouth-guard" element={<SeniorMouthGuard />} />
-          <Route path="/tools/senior-teeth-whitening" element={<SeniorTeethWhitening />} />
-          <Route path="/tools/senior-dentures-care" element={<SeniorDenturesCare />} />
-          <Route path="/tools/senior-mouthwash-choice" element={<SeniorMouthwashChoice />} />
-          <Route path="/tools/senior-oral-cancer-check" element={<SeniorOralCancerCheck />} />
-          <Route path="/tools/senior-reading-glasses" element={<SeniorReadingGlasses />} />
-          <Route path="/tools/senior-eye-nutrition" element={<SeniorEyeNutrition />} />
-          <Route path="/tools/senior-dry-eye-help" element={<SeniorDryEyeHelp />} />
-          <Route path="/tools/senior-cataract-apps" element={<SeniorCataractApps />} />
-          <Route path="/tools/senior-glaucoma-tracking" element={<SeniorGlaucomaTracking />} />
-          <Route path="/tools/senior-afib-tracking" element={<SeniorAFibTracking />} />
-          <Route path="/tools/senior-bp-logging" element={<SeniorBPLogging />} />
-          <Route path="/tools/senior-cardio-rehab" element={<SeniorCardioRehab />} />
-          <Route path="/tools/senior-pulse-oximeters" element={<SeniorPulseOximeters />} />
-          <Route path="/tools/senior-heart-recipes" element={<SeniorHeartRecipes />} />
-          <Route path="/tools/senior-diabetes-education" element={<SeniorDiabetesEducation />} />
-          <Route path="/tools/senior-insulin-pumps" element={<SeniorInsulinPumps />} />
-          <Route path="/tools/senior-low-carb-cooking" element={<SeniorLowCarbCooking />} />
-          <Route path="/tools/senior-diabetic-foot-care" element={<SeniorDiabeticFootCare />} />
-          <Route path="/tools/senior-a1c-tracking" element={<SeniorA1CTracking />} />
-          <Route path="/tools/senior-osteoporosis-tracking" element={<SeniorOsteoporosisTracking />} />
-          <Route path="/tools/senior-arthritis-apps" element={<SeniorArthritisApps />} />
-          <Route path="/tools/senior-knee-replacement-apps" element={<SeniorKneeReplacementApps />} />
-          <Route path="/tools/senior-back-pain-apps" element={<SeniorBackPainApps />} />
-          <Route path="/tools/senior-joint-supplements" element={<SeniorJointSupplements />} />
-          <Route path="/tools/senior-memory-care-apps" element={<SeniorMemoryCareApps />} />
-          <Route path="/tools/senior-alzheimers-resources" element={<SeniorAlzheimersResources />} />
-          <Route path="/tools/senior-brain-health-diet" element={<SeniorBrainHealthDiet />} />
-          <Route path="/tools/senior-meditation-dementia" element={<SeniorMeditationDementia />} />
-          <Route path="/tools/senior-hearing-protects-brain" element={<SeniorHearingProtectsBrain />} />
-          <Route path="/tools/senior-protein-intake" element={<SeniorProteinIntake />} />
-          <Route path="/tools/senior-anti-inflammatory-diet" element={<SeniorAntiInflammatoryDiet />} />
-          <Route path="/tools/senior-b12-tracking" element={<SeniorB12Tracking />} />
-          <Route path="/tools/senior-vitamin-d-apps" element={<SeniorVitaminDApps />} />
-          <Route path="/tools/senior-omega-three" element={<SeniorOmegaThree />} />
-          <Route path="/tools/senior-walking-monitors" element={<SeniorWalkingMonitors />} />
-          <Route path="/tools/senior-treadmill-apps" element={<SeniorTreadmillApps />} />
-          <Route path="/tools/senior-bike-stationary" element={<SeniorBikeStationary />} />
-          <Route path="/tools/senior-pilates-apps" element={<SeniorPilatesApps />} />
-          <Route path="/tools/senior-swimming-apps" element={<SeniorSwimmingApps />} />
-          <Route path="/tools/senior-resistance-bands" element={<SeniorResistanceBands />} />
-          <Route path="/tools/senior-dumbbells" element={<SeniorDumbbells />} />
-          <Route path="/tools/senior-bodyweight-apps" element={<SeniorBodyweightApps />} />
-          <Route path="/tools/senior-tai-chi-apps" element={<SeniorTaiChiApps />} />
-          <Route path="/tools/senior-post-surgery-rehab" element={<SeniorPostSurgeryRehab />} />
-          <Route path="/tools/senior-therapy-pets" element={<SeniorTherapyPets />} />
-          <Route path="/tools/senior-robot-pets" element={<SeniorRobotPets />} />
-          <Route path="/tools/senior-pet-transport-apps" element={<SeniorPetTransportApps />} />
-          <Route path="/tools/senior-pet-emergency-apps" element={<SeniorPetEmergencyApps />} />
-          <Route path="/tools/senior-pet-gone-apps" element={<SeniorPetGoneApps />} />
-          <Route path="/tools/senior-paint-by-numbers-apps" element={<SeniorPaintByNumbersApps />} />
-          <Route path="/tools/senior-jigsaw-puzzle-apps" element={<SeniorJigsawPuzzleApps />} />
-          <Route path="/tools/senior-beading-apps" element={<SeniorBeadingApps />} />
-          <Route path="/tools/senior-photography-apps" element={<SeniorPhotographyApps />} />
-          <Route path="/tools/senior-scrapbooking" element={<SeniorScrapbooking />} />
-          <Route path="/tools/senior-dance-apps" element={<SeniorDanceApps />} />
-          <Route path="/tools/senior-balance-vibration" element={<SeniorBalanceVibration />} />
-          <Route path="/tools/senior-massage-chairs" element={<SeniorMassageChairs />} />
-          <Route path="/tools/senior-breathing-exercises" element={<SeniorBreathingExercises />} />
-          <Route path="/tools/senior-singing" element={<SeniorSinging />} />
-          <Route path="/tools/senior-advance-care-planning" element={<SeniorAdvanceCarePlanning />} />
-          <Route path="/tools/senior-hospice-apps" element={<SeniorHospiceApps />} />
-          <Route path="/tools/senior-funeral-planning" element={<SeniorFuneralPlanning />} />
-          <Route path="/tools/senior-digital-legacy" element={<SeniorDigitalLegacy />} />
-          <Route path="/tools/senior-life-review" element={<SeniorLifeReview />} />
-          <Route path="/tools/senior-pill-boxes" element={<SeniorPillBoxes />} />
-          <Route path="/tools/senior-medication-lists" element={<SeniorMedicationLists />} />
-          <Route path="/tools/senior-pharmacy-delivery" element={<SeniorPharmacyDelivery />} />
-          <Route path="/tools/senior-medication-syncing" element={<SeniorMedicationSyncing />} />
-          <Route path="/tools/senior-drug-interaction-apps" element={<SeniorDrugInteractionApps />} />
-          <Route path="/tools/senior-bidet" element={<SeniorBidet />} />
-          <Route path="/tools/senior-raised-toilets" element={<SeniorRaisedToilets />} />
-          <Route path="/tools/senior-adult-diapers-guide" element={<SeniorAdultDiapersGuide />} />
-          <Route path="/tools/senior-shower-chairs" element={<SeniorShowerChairs />} />
-          <Route path="/tools/senior-dressing-aids" element={<SeniorDressingAids />} />
-          <Route path="/tools/senior-kitchen-aids" element={<SeniorKitchenAids />} />
-          <Route path="/tools/senior-meal-kits" element={<SeniorMealKits />} />
-          <Route path="/tools/senior-prepared-meals" element={<SeniorPreparedMeals />} />
-          <Route path="/tools/senior-one-handed-cooking" element={<SeniorOneHandedCooking />} />
-          <Route path="/tools/senior-microwave-tips" element={<SeniorMicrowaveTips />} />
-          <Route path="/tools/senior-papa-companions" element={<SeniorPapaCompanions />} />
-          <Route path="/tools/senior-friendly-voice-calls" element={<SeniorFriendlyVoiceCalls />} />
-          <Route path="/tools/senior-online-communities" element={<SeniorOnlineCommunities />} />
-          <Route path="/tools/senior-pen-pal-programs-apps" element={<SeniorPenPalProgramsApps />} />
-          <Route path="/tools/senior-intergenerational" element={<SeniorIntergenerational />} />
-          <Route path="/tools/senior-rv-apps" element={<SeniorRVApps />} />
-          <Route path="/tools/senior-national-parks" element={<SeniorNationalParks />} />
-          <Route path="/tools/senior-cruise-tips" element={<SeniorCruiseTips />} />
-          <Route path="/tools/senior-road-trip" element={<SeniorRoadTrip />} />
-          <Route path="/tools/senior-tinnitus-apps" element={<SeniorTinnitusApps />} />
-          <Route path="/tools/senior-vertigo-exercises" element={<SeniorVertigoExercises />} />
-          <Route path="/tools/senior-brace-monitor-apps" element={<SeniorBraceMonitorApps />} />
-          <Route path="/tools/senior-wound-care-apps" element={<SeniorWoundCareApps />} />
-          <Route path="/tools/senior-skin-health" element={<SeniorSkinHealth />} />
-          <Route path="/tools/senior-vaccine-schedule" element={<SeniorVaccineSchedule />} />
-          <Route path="/tools/senior-colonoscopy" element={<SeniorColonoscopy />} />
-          <Route path="/tools/senior-mammogram-schedule" element={<SeniorMammogramSchedule />} />
-          <Route path="/tools/senior-prostate-screening" element={<SeniorProstateScreening />} />
-          <Route path="/tools/senior-bone-screening" element={<SeniorBoneScreening />} />
-          <Route path="/tools/senior-therapy-apps" element={<SeniorTherapyApps />} />
-          <Route path="/tools/senior-anxiety-apps" element={<SeniorAnxietyApps />} />
-          <Route path="/tools/senior-depression-apps" element={<SeniorDepressionApps />} />
-          <Route path="/tools/senior-grief-support" element={<SeniorGriefSupport />} />
-          <Route path="/tools/senior-journaling-apps" element={<SeniorJournalingApps />} />
-          <Route path="/tools/senior-memory-games" element={<SeniorMemoryGames />} />
-          <Route path="/tools/senior-math-games" element={<SeniorMathGames />} />
-          <Route path="/tools/senior-word-games" element={<SeniorWordGames />} />
-          <Route path="/tools/senior-pattern-games" element={<SeniorPatternGames />} />
-          <Route path="/tools/senior-visual-memory" element={<SeniorVisualMemory />} />
-          <Route path="/tools/senior-book-clubs" element={<SeniorBookClubs />} />
-          <Route path="/tools/senior-politics" element={<SeniorPolitics />} />
-          <Route path="/tools/senior-church-tech" element={<SeniorChurchTech />} />
-          <Route path="/tools/senior-veterans" element={<SeniorVeterans />} />
-          <Route path="/tools/senior-clubs-finder" element={<SeniorClubsFinder />} />
-          <Route path="/tools/senior-smart-garage-door" element={<SeniorSmartGarageDoor />} />
-          <Route path="/tools/senior-smart-locks" element={<SeniorSmartLocks />} />
-          <Route path="/tools/senior-water-dispensers" element={<SeniorWaterDispensers />} />
-          <Route path="/tools/senior-robot-mops" element={<SeniorRobotMops />} />
-          <Route path="/tools/senior-voice-shopping" element={<SeniorVoiceShopping />} />
-          <Route path="/tools/senior-travel-buddy" element={<SeniorTravelBuddy />} />
-          <Route path="/tools/senior-translation-travel" element={<SeniorTranslationTravel />} />
-          <Route path="/tools/senior-currency" element={<SeniorCurrency />} />
-          <Route path="/tools/senior-tsa-guide" element={<SeniorTSAGuide />} />
-          <Route path="/tools/senior-airport-shuttles" element={<SeniorAirportShuttles />} />
-          <Route path="/tools/senior-call-screening" element={<SeniorCallScreening />} />
-          <Route path="/tools/senior-phone-accessibility" element={<SeniorPhoneAccessibility />} />
-          <Route path="/tools/senior-walkie-talkies" element={<SeniorWalkieTalkies />} />
-          <Route path="/tools/senior-emergency-buttons" element={<SeniorEmergencyButtons />} />
-          <Route path="/tools/senior-real-id" element={<SeniorRealID />} />
-          <Route path="/tools/senior-vital-records" element={<SeniorVitalRecords />} />
-          <Route path="/tools/senior-important-docs" element={<SeniorImportantDocs />} />
-          <Route path="/tools/senior-property-deeds" element={<SeniorPropertyDeeds />} />
-          <Route path="/tools/senior-passwords-for-family" element={<SeniorPasswordsForFamily />} />
-          <Route path="/tools/senior-emergency-text-line" element={<SeniorEmergencyTextLine />} />
-          <Route path="/tools/senior-satellite-phones" element={<SeniorSatellitePhones />} />
-          <Route path="/tools/senior-emergency-alerts" element={<SeniorEmergencyAlerts />} />
-          <Route path="/tools/senior-ready-app" element={<SeniorReadyApp />} />
-          <Route path="/tools/senior-emergency-email" element={<SeniorEmergencyEmail />} />
-          <Route path="/tools/senior-photo-editing" element={<SeniorPhotoEditing />} />
-          <Route path="/tools/senior-photo-restoration" element={<SeniorPhotoRestoration />} />
-          <Route path="/tools/senior-video-making" element={<SeniorVideoMaking />} />
-          <Route path="/tools/senior-photo-framing" element={<SeniorPhotoFraming />} />
-          <Route path="/tools/senior-photo-slideshow" element={<SeniorPhotoSlideshow />} />
-          <Route path="/tools/senior-plant-sensors" element={<SeniorPlantSensors />} />
-          <Route path="/tools/senior-raised-beds" element={<SeniorRaisedBeds />} />
-          <Route path="/tools/senior-seedling-apps" element={<SeniorSeedlingApps />} />
-          <Route path="/tools/senior-pest-control" element={<SeniorPestControl />} />
-          <Route path="/tools/senior-composting-easy" element={<SeniorComposting2 />} />
-          <Route path="/tools/senior-ipad-procreate" element={<SeniorIPadProcreate />} />
-          <Route path="/tools/senior-ipad-goodnotes" element={<SeniorIPadGoodNotes />} />
-          <Route path="/tools/senior-big-calc-apps" element={<SeniorBigCalcApps />} />
-          <Route path="/tools/senior-ipad-kindle" element={<SeniorIPadKindle />} />
-          <Route path="/tools/senior-ipad-canva-app" element={<SeniorIPadCanvaApp />} />
-          <Route path="/tools/senior-ipad-zoom" element={<SeniorIPadZoomCalls />} />
-          <Route path="/tools/senior-ipad-facetime" element={<SeniorIPadFaceTime />} />
-          <Route path="/tools/senior-ipad-mail" element={<SeniorIPadMail />} />
-          <Route path="/tools/senior-ipad-calendar" element={<SeniorIPadCalendar />} />
-          <Route path="/tools/senior-ipad-notes" element={<SeniorIPadNotes />} />
-          <Route path="/tools/senior-ipad-photos" element={<SeniorIPadPhotos />} />
-          <Route path="/tools/senior-ipad-safari" element={<SeniorIPadSafari />} />
-          <Route path="/tools/senior-ipad-messages" element={<SeniorIPadMessages />} />
-          <Route path="/tools/senior-ipad-maps" element={<SeniorIPadMaps />} />
-          <Route path="/tools/senior-ipad-weather" element={<SeniorIPadWeather />} />
-          <Route path="/tools/senior-ipad-health" element={<SeniorIPadHealth />} />
-          <Route path="/tools/senior-ipad-banking" element={<SeniorIPadBanking />} />
-          <Route path="/tools/senior-ipad-shopping" element={<SeniorIPadShopping />} />
-          <Route path="/tools/senior-ipad-streaming" element={<SeniorIPadStreaming />} />
-          <Route path="/tools/senior-ipad-games" element={<SeniorIPadGames />} />
-          <Route path="/tools/senior-ipad-accessibility" element={<SeniorIPadAccessibility />} />
-          <Route path="/tools/senior-ipad-siri" element={<SeniorIPadSiri />} />
-          <Route path="/tools/senior-ipad-family-sharing" element={<SeniorIPadFamilySharing />} />
-          <Route path="/tools/senior-ipad-find-my" element={<SeniorIPadFindMy />} />
-          <Route path="/tools/senior-ipad-backup" element={<SeniorIPadBackup />} />
-          <Route path="/tools/senior-ipad-keyboard" element={<SeniorIPadKeyboard />} />
-          <Route path="/tools/senior-ipad-apple-id" element={<SeniorIPadAppleID />} />
-          <Route path="/tools/senior-ipad-app-store" element={<SeniorIPadAppStoreBasics />} />
-          <Route path="/tools/senior-ipad-wifi" element={<SeniorIPadWiFi />} />
-          <Route path="/tools/senior-ipad-battery" element={<SeniorIPadBattery />} />
-          <Route path="/tools/senior-ipad-print" element={<SeniorIPadPrint />} />
-          <Route path="/tools/senior-ipad-scan-docs" element={<SeniorIPadScanDocs />} />
-          <Route path="/tools/senior-ipad-storage" element={<SeniorIPadStorage />} />
-          <Route path="/tools/senior-ipad-updates" element={<SeniorIPadUpdates />} />
-          <Route path="/tools/senior-ipad-home-screen" element={<SeniorIPadHomeScreen />} />
-          <Route path="/tools/senior-android-basics" element={<SeniorAndroidBasics />} />
-          <Route path="/tools/senior-android-gmail" element={<SeniorAndroidGmail />} />
-          <Route path="/tools/senior-android-play-store" element={<SeniorAndroidPlayStore />} />
-          <Route path="/tools/senior-android-google-assistant" element={<SeniorAndroidGoogleAssistant />} />
-          <Route path="/tools/senior-android-photos" element={<SeniorAndroidPhotos />} />
-          <Route path="/tools/senior-android-messages" element={<SeniorAndroidMessages />} />
-          <Route path="/tools/senior-android-contacts" element={<SeniorAndroidContacts />} />
-          <Route path="/tools/senior-android-camera" element={<SeniorAndroidCamera />} />
-          <Route path="/tools/senior-android-maps" element={<SeniorAndroidMaps />} />
-          <Route path="/tools/senior-android-calendar" element={<SeniorAndroidCalendar />} />
-          <Route path="/tools/senior-android-voice-typing" element={<SeniorAndroidVoiceTyping />} />
-          <Route path="/tools/senior-android-lock-screen" element={<SeniorAndroidLockScreen />} />
-          <Route path="/tools/senior-android-updates" element={<SeniorAndroidUpdates />} />
-          <Route path="/tools/senior-android-backup" element={<SeniorAndroidBackup />} />
-          <Route path="/tools/senior-android-storage" element={<SeniorAndroidStorage />} />
-          <Route path="/tools/senior-android-accessibility" element={<SeniorAndroidAccessibility />} />
-          <Route path="/tools/senior-android-wifi" element={<SeniorAndroidWiFi />} />
-          <Route path="/tools/senior-android-battery" element={<SeniorAndroidBattery />} />
-          <Route path="/tools/senior-android-find-my-device" element={<SeniorAndroidFindMyDevice />} />
-          <Route path="/tools/senior-android-emergency-sos" element={<SeniorAndroidEmergencySOS />} />
-          <Route path="/tools/senior-chrome-basics" element={<SeniorChromeBasics />} />
-          <Route path="/tools/senior-chrome-passwords" element={<SeniorChromePasswords />} />
-          <Route path="/tools/senior-chrome-bookmarks" element={<SeniorChromeBookmarks />} />
-          <Route path="/tools/senior-chrome-incognito" element={<SeniorChromeIncognito />} />
-          <Route path="/tools/senior-chrome-extensions" element={<SeniorChromeExtensions />} />
-          <Route path="/tools/senior-windows-basics" element={<SeniorWindowsBasics />} />
-          <Route path="/tools/senior-windows-updates" element={<SeniorWindowsUpdates />} />
-          <Route path="/tools/senior-windows-antivirus" element={<SeniorWindowsAntivirus />} />
-          <Route path="/tools/senior-windows-backup" element={<SeniorWindowsBackup />} />
-          <Route path="/tools/senior-windows-accessibility" element={<SeniorWindowsAccessibility />} />
-          <Route path="/tools/senior-windows-file-explorer" element={<SeniorWindowsFileExplorer />} />
-          <Route path="/tools/senior-windows-shortcuts" element={<SeniorWindowsKeyboardShortcuts />} />
-          <Route path="/tools/senior-windows-print" element={<SeniorWindowsPrint />} />
-          <Route path="/tools/senior-windows-zoom" element={<SeniorWindowsZoom />} />
-          <Route path="/tools/senior-windows-email" element={<SeniorWindowsEmail />} />
-          <Route path="/tools/senior-mac-basics" element={<SeniorMacBasics />} />
-          <Route path="/tools/senior-mac-finder" element={<SeniorMacFinder />} />
-          <Route path="/tools/senior-mac-time-machine" element={<SeniorMacTimeMachine />} />
-          <Route path="/tools/senior-mac-updates" element={<SeniorMacUpdates />} />
-          <Route path="/tools/senior-mac-accessibility" element={<SeniorMacAccessibility />} />
-          <Route path="/tools/senior-password-managers" element={<SeniorPasswordManagers />} />
-          <Route path="/tools/senior-two-factor-auth" element={<SeniorTwoFactorAuth />} />
-          <Route path="/tools/senior-vpn" element={<SeniorVPN />} />
-          <Route path="/tools/senior-phishing-defense" element={<SeniorPhishingDefense />} />
-          <Route path="/tools/senior-medicare-app" element={<SeniorMedicareApp />} />
-          <Route path="/tools/senior-social-security-app" element={<SeniorSocialSecurityApp />} />
-          <Route path="/tools/senior-irs-app" element={<SeniorIRSApp />} />
-          <Route path="/tools/senior-va-app" element={<SeniorVAApp />} />
-          <Route path="/tools/senior-aarp-digital" element={<SeniorAARPDigital />} />
-          <Route path="/tools/senior-telehealth" element={<SeniorTelehealth />} />
-          <Route path="/tools/senior-mychart" element={<SeniorMyChart />} />
-          <Route path="/tools/senior-pill-reminders" element={<SeniorPillReminders />} />
-          <Route path="/tools/senior-pharmacy-apps" element={<SeniorPharmacyApps />} />
-          <Route path="/tools/senior-blood-pressure-log" element={<SeniorBloodPressureLog />} />
-          <Route path="/tools/senior-youtube" element={<SeniorYouTube />} />
-          <Route path="/tools/senior-facebook-safer" element={<SeniorFacebookSafer />} />
-          <Route path="/tools/senior-whatsapp" element={<SeniorWhatsApp />} />
-          <Route path="/tools/senior-nextdoor" element={<SeniorNextDoor />} />
-          <Route path="/tools/senior-airbnb-basics" element={<SeniorAirbnbBasics />} />
-          <Route path="/tools/senior-vrbo-basics" element={<SeniorVrboBasics />} />
-          <Route path="/tools/senior-booking-com" element={<SeniorBookingCom />} />
-          <Route path="/tools/senior-cruise-apps" element={<SeniorCruiseApps />} />
-          <Route path="/tools/senior-tsa-precheck" element={<SeniorTSAPrecheck />} />
-          <Route path="/tools/senior-uber-rideshare" element={<SeniorUberRideshare />} />
-          <Route path="/tools/senior-lyft-rideshare" element={<SeniorLyftRideshare />} />
-          <Route path="/tools/senior-gogograndparent" element={<SeniorGoGoGrandparent />} />
-          <Route path="/tools/senior-parking-apps" element={<SeniorParkingApps />} />
-          <Route path="/tools/senior-gas-apps" element={<SeniorGasApps />} />
-          <Route path="/tools/senior-bank-alerts" element={<SeniorBankAlerts />} />
-          <Route path="/tools/senior-venmo" element={<SeniorVenmo />} />
-          <Route path="/tools/senior-zelle" element={<SeniorZelle />} />
-          <Route path="/tools/senior-paypal" element={<SeniorPayPal />} />
-          <Route path="/tools/senior-chatgpt" element={<SeniorChatGPT />} />
-          <Route path="/tools/senior-google-gemini" element={<SeniorGoogleGemini />} />
-          <Route path="/tools/senior-apple-intelligence" element={<SeniorAppleIntelligence />} />
-          <Route path="/tools/senior-ai-translation" element={<SeniorAITranslation />} />
-          <Route path="/tools/senior-ai-photo-tools" element={<SeniorAIPhotoTools />} />
-          <Route path="/tools/senior-ring-doorbell" element={<SeniorRingDoorbell />} />
-          <Route path="/tools/senior-nest-thermostat" element={<SeniorNestThermostat />} />
-          <Route path="/tools/senior-alexa-basics" element={<SeniorAlexaBasics />} />
-          <Route path="/tools/senior-google-home-basics" element={<SeniorGoogleHomeBasics />} />
-          <Route path="/tools/senior-smart-lights" element={<SeniorSmartLights />} />
-          <Route path="/tools/senior-airtags" element={<SeniorAirTags />} />
-          <Route path="/tools/senior-tile-trackers" element={<SeniorTileTrackers />} />
-          <Route path="/tools/senior-medical-alert-watches" element={<SeniorMedicalAlertWatches />} />
-          <Route path="/tools/senior-hearing-aids-bluetooth" element={<SeniorHearingAidsBluetooth />} />
-          <Route path="/tools/senior-apple-watch" element={<SeniorAppleWatch />} />
-          <Route path="/tools/senior-fitbit-basics" element={<SeniorFitbitBasics />} />
-          <Route path="/tools/senior-garmin-basics" element={<SeniorGarminBasics />} />
-          <Route path="/tools/senior-oura-ring" element={<SeniorOuraRing />} />
-          <Route path="/tools/senior-cgm-sensor" element={<SeniorCGMSensor />} />
-          <Route path="/tools/senior-ebooks-kindle" element={<SeniorEbooksKindle />} />
-          <Route path="/tools/senior-audible-books" element={<SeniorAudibleBooks />} />
-          <Route path="/tools/senior-libby-library" element={<SeniorLibbyLibrary />} />
-          <Route path="/tools/senior-podcast-apps" element={<SeniorPodcastApps />} />
-          <Route path="/tools/senior-spotify-music" element={<SeniorSpotifyMusic />} />
-          <Route path="/tools/senior-airpods" element={<SeniorAirPods />} />
-          <Route path="/tools/senior-bluetooth-basics" element={<SeniorBluetoothBasics />} />
-          <Route path="/tools/senior-chromecast" element={<SeniorChromecast />} />
-          <Route path="/tools/senior-apple-tv-basics" element={<SeniorAppleTVBasics />} />
-          <Route path="/tools/senior-roku-basics" element={<SeniorRokuBasics />} />
-          <Route path="/tools/senior-ebay-basics" element={<SeniorEbayBasics />} />
-          <Route path="/tools/senior-etsy-shop" element={<SeniorEtsyShop />} />
-          <Route path="/tools/senior-amazon-shopping" element={<SeniorAmazonShopping />} />
-          <Route path="/tools/senior-walmart-app" element={<SeniorWalmartApp />} />
-          <Route path="/tools/senior-target-circle" element={<SeniorTargetCircle />} />
-          <Route path="/tools/senior-instacart" element={<SeniorInstacart />} />
-          <Route path="/tools/senior-doordash" element={<SeniorDoorDash />} />
-          <Route path="/tools/senior-uber-eats" element={<SeniorUberEats />} />
-          <Route path="/tools/senior-meal-kits-apps" element={<SeniorMealKitsApps />} />
-          <Route path="/tools/senior-meals-on-wheels" element={<SeniorMealsOnWheels />} />
-          <Route path="/tools/senior-yelp-reviews" element={<SeniorYelpReviews />} />
-          <Route path="/tools/senior-opentable" element={<SeniorOpenTable />} />
-          <Route path="/tools/senior-tripadvisor" element={<SeniorTripAdvisor />} />
-          <Route path="/tools/senior-waze" element={<SeniorWaze />} />
-          <Route path="/tools/senior-ancestry-dna" element={<SeniorAncestryDNA />} />
-          <Route path="/tools/senior-familysearch" element={<SeniorFamilySearchOrg />} />
-          <Route path="/tools/senior-myheritage" element={<SeniorMyHeritage />} />
-          <Route path="/tools/senior-scrapbook-apps" element={<SeniorScrapbookApps />} />
-          <Route path="/tools/senior-old-photo-scanning" element={<SeniorOldPhotoScanning />} />
-          <Route path="/tools/senior-duolingo" element={<SeniorDuolingo />} />
-          <Route path="/tools/senior-khan-academy" element={<SeniorKhanAcademy />} />
-          <Route path="/tools/senior-coursera-edx" element={<SeniorCourseraEdX />} />
-          <Route path="/tools/senior-masterclass" element={<SeniorMasterClass />} />
-          <Route path="/tools/senior-aarp-learning" element={<SeniorAARPLearning />} />
-          <Route path="/tools/senior-pickleball-apps" element={<SeniorPickleballApps />} />
-          <Route path="/tools/senior-golf-gps" element={<SeniorGolfGPS />} />
-          <Route path="/tools/senior-yoga-silversneakers" element={<SeniorYogaSilverSneakers />} />
-          <Route path="/tools/senior-alltrails" element={<SeniorAllTrails />} />
-          <Route path="/tools/senior-jigsaw-apps" element={<SeniorJigsawApps />} />
-          <Route path="/tools/senior-bridge-online" element={<SeniorBridgeOnline />} />
-          <Route path="/tools/senior-chess-online" element={<SeniorChessOnline />} />
-          <Route path="/tools/senior-wordle-nyt-games" element={<SeniorWordleNYTGames />} />
-          <Route path="/tools/senior-brain-training" element={<SeniorBrainTraining />} />
-          <Route path="/tools/senior-tax-act" element={<SeniorTaxAct />} />
-          <Route path="/tools/senior-mint-alternative" element={<SeniorMintAlternative />} />
-          <Route path="/tools/senior-retirement-calcs" element={<SeniorRetirementCalcs />} />
-          <Route path="/tools/senior-estate-plan" element={<SeniorEstatePlan />} />
-          <Route path="/tools/senior-medigap-tools" element={<SeniorMedigapTools />} />
-          <Route path="/tools/senior-ebird" element={<SeniorEbird />} />
-          <Route path="/tools/senior-inaturalist" element={<SeniorINaturalist />} />
-          <Route path="/tools/senior-plant-identify" element={<SeniorPlantIdentify />} />
-          <Route path="/tools/senior-mushroom-id" element={<SeniorMushroomID />} />
-          <Route path="/tools/senior-text-to-speech" element={<SeniorTextToSpeech />} />
-          <Route path="/tools/senior-magnifier-apps" element={<SeniorMagnifierApps />} />
-          <Route path="/tools/senior-be-my-eyes" element={<SeniorBeMyEyes />} />
-          <Route path="/tools/senior-closed-captioning" element={<SeniorClosedCaptioning />} />
-          <Route path="/tools/senior-voice-messages" element={<SeniorVoiceMessages />} />
-          <Route path="/tools/senior-recipes-apps" element={<SeniorRecipesApps />} />
-          <Route path="/tools/senior-paprika-cookbook" element={<SeniorPaprikaCookbook />} />
-          <Route path="/tools/senior-myfitnesspal" element={<SeniorMyFitnessPal />} />
-          <Route path="/tools/senior-water-reminder" element={<SeniorWaterReminder />} />
-          <Route path="/tools/senior-meditation" element={<SeniorMeditation />} />
-          <Route path="/tools/senior-veterans-online" element={<SeniorVeteransOnline />} />
-          <Route path="/tools/senior-elderly-transportation" element={<SeniorElderlyTransportation />} />
-          <Route path="/tools/senior-property-tax-relief" element={<SeniorPropertyTaxRelief />} />
-          <Route path="/tools/senior-low-income-apps" element={<SeniorLowIncomeApps />} />
-          <Route path="/tools/senior-voting-online" element={<SeniorVotingOnline />} />
-          <Route path="/tools/senior-online-dating" element={<SeniorOnlineDating />} />
-          <Route path="/tools/senior-church-online" element={<SeniorChurchOnline />} />
-          <Route path="/tools/senior-volunteer-apps" element={<SeniorVolunteerApps />} />
-          <Route path="/tools/senior-passkeys-setup-2" element={<SeniorPasskeysSetup2 />} />
-          <Route path="/tools/senior-email-encryption" element={<SeniorEmailEncryption />} />
-          <Route path="/tools/senior-browser-privacy" element={<SeniorBrowserPrivacy />} />
-          <Route path="/tools/senior-identity-theft-help" element={<SeniorIdentityTheftHelp />} />
-          <Route path="/tools/senior-airline-apps" element={<SeniorAirlineApps />} />
-          <Route path="/tools/senior-aarp-travel" element={<SeniorAARPTravel />} />
-          <Route path="/tools/senior-tripit" element={<SeniorTripIt />} />
-          <Route path="/tools/senior-passport-renewal" element={<SeniorPassportRenewal />} />
-          <Route path="/tools/senior-ebook-fonts" element={<SeniorEbookFonts />} />
-          <Route path="/tools/senior-magazines-digital" element={<SeniorMagazinesDigital />} />
-          <Route path="/tools/senior-news-apps" element={<SeniorNewsApps />} />
-          <Route path="/tools/senior-bible-apps" element={<SeniorBibleApps />} />
-          <Route path="/tools/senior-obituaries-online" element={<SeniorObituariesOnline />} />
-          <Route path="/tools/senior-podcast-top-picks" element={<SeniorPodcastTopPicks />} />
-          <Route path="/tools/senior-youtube-channels" element={<SeniorYouTubeChannels />} />
-          <Route path="/tools/senior-audio-book-clubs" element={<SeniorAudioBookClubs />} />
-          <Route path="/tools/senior-video-call-etiquette" element={<SeniorVideoCallEtiquette />} />
-          <Route path="/tools/senior-email-etiquette" element={<SeniorEmailEtiquette />} />
-          <Route path="/tools/senior-phone-stand-setup" element={<SeniorPhoneStandSetup />} />
-          <Route path="/tools/senior-chair-stand-workout" element={<SeniorChairStandWorkout />} />
-          <Route path="/tools/senior-apple-watch-heart" element={<SeniorAppleWatchHeart />} />
-          <Route path="/tools/senior-reading-mode" element={<SeniorReadingMode />} />
-          <Route path="/tools/senior-password-hygiene" element={<SeniorPasswordHygiene />} />
-          <Route path="/tools/senior-voicemail" element={<SeniorVoiceMail />} />
-          <Route path="/tools/senior-contacts-cleanup" element={<SeniorContactsCleanup />} />
-          <Route path="/tools/senior-time-zone-apps" element={<SeniorTimeZoneApps />} />
-          <Route path="/tools/senior-calculator-apps" element={<SeniorCalculatorApps />} />
-          <Route path="/tools/senior-takeout-ordering" element={<SeniorTakeoutOrdering />} />
-          <Route path="/tools/senior-airpods-hearing" element={<SeniorAirPodsHearing />} />
-          <Route path="/tools/senior-big-calc-apps-2" element={<SeniorBigCalcApps2 />} />
-          <Route path="/tools/senior-tech-help-resources" element={<SeniorTechHelpResources />} />
-          <Route path="/tools/senior-cloud-storage-picker" element={<SeniorCloudStoragePicker />} />
-          <Route path="/tools/senior-cheat-sheet" element={<SeniorCheatSheet />} />
-          <Route path="/tools/senior-text-to-tv" element={<SeniorTextToTV />} />
-          <Route path="/tools/senior-recycling-apps" element={<SeniorRecyclingApps />} />
-          <Route path="/tools/senior-weather-alerts" element={<SeniorWeatherAlerts />} />
-          <Route path="/tools/senior-power-outage-apps" element={<SeniorPowerOutageApps />} />
-          <Route path="/tools/senior-emergency-kit-digital" element={<SeniorEmergencyKitDigital />} />
-          <Route path="/tools/senior-pet-care-apps" element={<SeniorPetCareApps />} />
-          <Route path="/tools/senior-plant-care-apps" element={<SeniorPlantCareApps />} />
-          <Route path="/tools/senior-knitting-apps" element={<SeniorKnittingApps />} />
-          <Route path="/tools/senior-painting-apps" element={<SeniorPaintingApps />} />
-          <Route path="/tools/senior-moving-apps" element={<SeniorMovingApps />} />
-          <Route path="/tools/senior-real-estate" element={<SeniorRealEstate />} />
-          <Route path="/tools/senior-home-improvement" element={<SeniorHomeImprovement />} />
-          <Route path="/tools/senior-auto-apps" element={<SeniorAutoApps />} />
-          <Route path="/tools/senior-electrical-safety" element={<SeniorElectricalSafety />} />
-          <Route path="/tools/senior-book-ebay" element={<SeniorBookEbay />} />
-          <Route path="/tools/senior-poshmark" element={<SeniorPoshmark />} />
-          <Route path="/tools/senior-facebook-marketplace" element={<SeniorFacebookMarketplace />} />
-          <Route path="/tools/senior-offerup" element={<SeniorOfferUp />} />
-          <Route path="/tools/senior-buy-nothing" element={<SeniorBuyNothing />} />
-          <Route path="/tools/senior-chromebook-basics" element={<SeniorChromebookBasics />} />
-          <Route path="/tools/senior-back-to-work" element={<SeniorBackToWork />} />
-          <Route path="/tools/senior-volunteer-match" element={<SeniorVolunteerMatch />} />
-          <Route path="/tools/senior-ebay-buying" element={<SeniorEbayBuying />} />
-          <Route path="/tools/senior-tech-support-roles" element={<SeniorTechSupportRoles />} />
-          <Route path="/tools/senior-scrabble-online" element={<SeniorScrabbleOnline />} />
-          <Route path="/tools/senior-online-canasta" element={<SeniorOnlineCanasta />} />
-          <Route path="/tools/senior-online-dominoes" element={<SeniorOnlineDominoes />} />
-          <Route path="/tools/senior-online-mahjong" element={<SeniorOnlineMahjong />} />
-          <Route path="/tools/senior-online-hearts" element={<SeniorOnlineHearts />} />
-          <Route path="/tools/senior-airplane-entertainment" element={<SeniorAirplaneEntertainment />} />
-          <Route path="/tools/senior-road-trip-apps" element={<SeniorRoadTripApps />} />
-          <Route path="/tools/senior-museum-apps" element={<SeniorMuseumApps />} />
-          <Route path="/tools/senior-national-park-apps" element={<SeniorNationalParkApps />} />
-          <Route path="/tools/senior-retirement-communities" element={<SeniorRetirementCommunities />} />
-          <Route path="/tools/senior-energy-audit-apps" element={<SeniorEnergyAuditApps />} />
-          <Route path="/tools/senior-water-usage" element={<SeniorWaterUsage />} />
-          <Route path="/tools/senior-apple-home-setup" element={<SeniorAppleHomeSetup />} />
-          <Route path="/tools/senior-matter-standard" element={<SeniorMatterStandard />} />
-          <Route path="/tools/senior-wifi-mesh-network" element={<SeniorWiFiMeshNetwork />} />
-          <Route path="/tools/senior-robot-vacuum" element={<SeniorRobotVacuum />} />
-          <Route path="/tools/senior-ecobee-thermostat" element={<SeniorEcobeeThermostat />} />
-          <Route path="/tools/senior-smart-locks" element={<SeniorSmartLocks />} />
-          <Route path="/tools/senior-smart-camera" element={<SeniorSmartCamera />} />
-          <Route path="/tools/senior-personal-alarm" element={<SeniorPersonalAlarm />} />
-          <Route path="/tools/senior-paperless-bills" element={<SeniorPaperlessBills />} />
-          <Route path="/tools/senior-auto-bill-pay" element={<SeniorAutoBillPay />} />
-          <Route path="/tools/senior-tax-bracket-estimator" element={<SeniorTaxBracketEstimator />} />
-          <Route path="/tools/senior-charity-navigator" element={<SeniorCharityNavigator />} />
-          <Route path="/tools/senior-scam-deepfake" element={<SeniorScamDeepfake />} />
-          <Route path="/tools/senior-auto-update" element={<SeniorAutoUpdate />} />
-          <Route path="/tools/senior-clear-storage" element={<SeniorClearStorage />} />
-          <Route path="/tools/senior-phone-charging" element={<SeniorPhoneCharging />} />
-          <Route path="/tools/senior-phone-cases" element={<SeniorPhoneCases />} />
-          <Route path="/tools/senior-trade-in" element={<SeniorTradeIn />} />
-          <Route path="/tools/senior-ipad-stylus" element={<SeniorIPadStylus />} />
-          <Route path="/tools/senior-ipad-keyboard-case" element={<SeniorIPadKeyboardCase />} />
-          <Route path="/tools/senior-tablet-protect-screen" element={<SeniorTabletProtectScreen />} />
-          <Route path="/tools/senior-ipad-adaptive-ink" element={<SeniorIPadAdaptiveInk />} />
-          <Route path="/tools/senior-magic-keyboard" element={<SeniorMagicKeyboard />} />
-          <Route path="/tools/senior-magic-mouse" element={<SeniorMagicMouse />} />
-          <Route path="/tools/senior-accessory-hubs" element={<SeniorAccessoryHubs />} />
-          <Route path="/tools/senior-monitor-big-text" element={<SeniorMonitorBigText />} />
-          <Route path="/tools/senior-webcam-setup" element={<SeniorWebcamSetup />} />
-          <Route path="/tools/senior-blue-light-glasses" element={<SeniorBlueLightGlasses />} />
-          <Route path="/tools/senior-eye-exam-apps" element={<SeniorEyeExamApps />} />
-          <Route path="/tools/senior-audiology-apps" element={<SeniorAudiologyApps />} />
-          <Route path="/tools/senior-eye-exercises" element={<SeniorEyeExercises />} />
-          <Route path="/tools/senior-rpm-remote" element={<SeniorRPMRemote />} />
-          <Route path="/tools/senior-youtube-kids" element={<SeniorYouTubeKidsApp />} />
-          <Route path="/tools/senior-messenger" element={<SeniorMessenger />} />
-          <Route path="/tools/senior-twitter-x" element={<SeniorTwitterX />} />
-          <Route path="/tools/senior-bluesky" element={<SeniorBluesky />} />
-          <Route path="/tools/senior-threads" element={<SeniorThreads />} />
-          <Route path="/tools/senior-podcast-apple" element={<SeniorPodcastApple />} />
-          <Route path="/tools/senior-apple-music" element={<SeniorAppleMusic />} />
-          <Route path="/tools/senior-pandora" element={<SeniorPandora />} />
-          <Route path="/tools/senior-tunein" element={<SeniorTuneIn />} />
-          <Route path="/tools/senior-retirement-podcasts" element={<SeniorRetirementPodcasts />} />
-          <Route path="/tools/senior-amateur-radio" element={<SeniorAmateurRadio />} />
-          <Route path="/tools/senior-metal-detecting" element={<SeniorMetalDetecting />} />
-          <Route path="/tools/senior-wood-carving" element={<SeniorWoodCarving />} />
-          <Route path="/tools/senior-beekeeping" element={<SeniorBeekeeping />} />
-          <Route path="/tools/senior-astronomy" element={<SeniorAstronomy />} />
-          <Route path="/tools/basic-tools-for-seniors" element={<BasicToolsForSeniors />} />
-          <Route path="/tools/painting-tips-seniors" element={<PaintingTipsSeniors />} />
-          <Route path="/tools/caulking-basics" element={<CaulkingBasics />} />
-          <Route path="/tools/generator-test-routine" element={<GeneratorTestRoutine />} />
-          <Route path="/tools/furnace-filter-swap" element={<FurnaceFilterSwap />} />
-          <Route path="/tools/heat-pump-for-seniors" element={<HeatPumpForSeniors />} />
-          <Route path="/tools/ev-home-charger-guide" element={<EVHomeChargerGuide />} />
-          <Route path="/tools/tesla-powerwall-review" element={<TeslaPowerwallReview />} />
-          <Route path="/tools/solar-tax-credits" element={<SolarTaxCredits />} />
-          <Route path="/tools/energy-audit-free" element={<EnergyAuditFree />} />
-          <Route path="/tools/tornado-prep-guide" element={<TornadoPrepGuide />} />
-          <Route path="/tools/wildfire-prep-guide" element={<WildfirePrepGuide />} />
-          <Route path="/tools/heatwave-safety" element={<HeatwaveSafety />} />
-          <Route path="/tools/cold-snap-safety" element={<ColdSnapSafety />} />
-          <Route path="/tools/fire-alarm-test" element={<FireAlarmTest />} />
-          <Route path="/tools/adu-for-seniors" element={<ADUForSeniors />} />
-          <Route path="/tools/active-adult-community" element={<ActiveAdultCommunity />} />
-          <Route path="/tools/cohousing-for-seniors" element={<CohousingForSeniors />} />
-          <Route path="/tools/assisted-living-choosing" element={<AssistedLivingChoosing />} />
-          <Route path="/tools/staying-put-checklist" element={<StayingPutChecklist />} />
-          <Route path="/tools/hotel-deal-for-seniors" element={<HotelDealForSeniors />} />
-          <Route path="/tools/aaa-discount-list" element={<AAADiscountList />} />
-          <Route path="/tools/aarp-membership-use" element={<AARPMembershipUse />} />
-          <Route path="/tools/senior-airfare-deals" element={<SeniorAirfareDeals />} />
-          <Route path="/tools/senior-rental-car-deals" element={<SeniorRentalCarDeals />} />
-          <Route path="/tools/grandkid-visit-checklist" element={<GrandkidVisitChecklist />} />
-          <Route path="/tools/babysitting-tips-seniors" element={<BabysittingTipsSeniors />} />
-          <Route path="/tools/attend-grandchild-wedding" element={<AttendGrandchildWedding />} />
-          <Route path="/tools/grandparent-legal-rights" element={<GrandparentLegalRights />} />
-          <Route path="/tools/grandkid-summer-visits" element={<GrandkidSummerVisits />} />
-          <Route path="/tools/best-books-for-seniors" element={<BestBooksForSeniors />} />
-          <Route path="/tools/book-clubs-how-to-find" element={<BookClubsHowToFind />} />
-          <Route path="/tools/best-podcasts-seniors" element={<BestPodcastsSeniors />} />
-          <Route path="/tools/apple-podcasts-for-seniors" element={<ApplePodcastsForSeniors />} />
-          <Route path="/tools/spotify-for-senior-listeners" element={<SpotifyForSeniorListeners />} />
-          <Route path="/tools/audible-app-for-seniors" element={<AudibleAppForSeniors />} />
-          <Route path="/tools/senior-radio-apps" element={<SeniorRadioApps />} />
-          <Route path="/tools/pocket-casts-for-seniors" element={<PocketCastsForSeniors />} />
-          <Route path="/tools/kindle-vs-paperbook-seniors" element={<KindleVsPaperbookSeniors />} />
-          <Route path="/tools/audiobook-listen-walking" element={<AudiobookListenWalking />} />
-          <Route path="/tools/senior-camping-guide" element={<SeniorCampingGuide />} />
-          <Route path="/tools/kayaking-for-seniors" element={<KayakingForSeniors />} />
-          <Route path="/tools/boating-for-seniors" element={<BoatingForSeniors />} />
-          <Route path="/tools/birdwatching-deeper" element={<BirdwatchingDeeper />} />
-          <Route path="/tools/outdoor-photography-tips" element={<OutdoorPhotographyTips />} />
-          <Route path="/tools/wine-tasting-for-seniors" element={<WineTastingForSeniors />} />
-          <Route path="/tools/cocktail-mixing-senior" element={<CocktailMixingSenior />} />
-          <Route path="/tools/baking-for-seniors" element={<BakingForSeniors />} />
-          <Route path="/tools/sourdough-for-seniors" element={<SourdoughForSeniors />} />
-          <Route path="/tools/cookbook-picks-for-seniors" element={<CookbookPicksForSeniors />} />
-          <Route path="/tools/piano-for-seniors" element={<PianoForSeniors />} />
-          <Route path="/tools/ukulele-for-seniors" element={<UkuleleForSeniors />} />
-          <Route path="/tools/ballroom-dancing-seniors" element={<BallroomDancingSeniors />} />
-          <Route path="/tools/choir-for-seniors" element={<ChoirForSeniors />} />
-          <Route path="/tools/music-therapy-apps" element={<MusicTherapyApps />} />
-          <Route path="/tools/crochet-for-seniors" element={<CrochetForSeniors />} />
-          <Route path="/tools/sewing-machine-basics" element={<SewingMachineBasics />} />
-          <Route path="/tools/quilting-for-beginners" element={<QuiltingForBeginners />} />
-          <Route path="/tools/embroidery-for-seniors" element={<EmbroideryForSeniors />} />
-          <Route path="/tools/scrapbooking-digital" element={<ScrapbookingDigital />} />
-          <Route path="/tools/christmas-shopping-seniors" element={<ChristmasShoppingSeniors />} />
-          <Route path="/tools/thanksgiving-hosting-tech" element={<ThanksgivingHostingTech />} />
-          <Route path="/tools/valentines-day-digital" element={<ValentinesDayDigital />} />
-          <Route path="/tools/halloween-safety-seniors" element={<HalloweenSafetySeniors />} />
-          <Route path="/tools/new-year-goals-apps" element={<NewYearGoalsApps />} />
-          <Route path="/tools/dog-training-apps" element={<DogTrainingApps />} />
-          <Route path="/tools/cat-care-apps" element={<CatCareApps />} />
-          <Route path="/tools/pet-grooming-home" element={<PetGroomingHome />} />
-          <Route path="/tools/aquarium-starter-senior" element={<AquariumStarterSenior />} />
-          <Route path="/tools/pet-sitter-finder" element={<PetSitterFinder />} />
-          <Route path="/tools/guitar-for-seniors" element={<GuitarForSeniors />} />
-          <Route path="/tools/harmonica-for-seniors" element={<HarmonicaForSeniors />} />
-          <Route path="/tools/violin-for-seniors" element={<ViolinForSeniors />} />
-          <Route path="/tools/drums-for-seniors" element={<DrumsForSeniors />} />
-          <Route path="/tools/singing-for-seniors" element={<SingingForSeniors />} />
-          <Route path="/tools/classic-movie-picks" element={<ClassicMoviePicks />} />
-          <Route path="/tools/family-movie-night" element={<FamilyMovieNight />} />
-          <Route path="/tools/blog-starting-senior" element={<BlogStartingSenior />} />
-          <Route path="/tools/poetry-apps-senior" element={<PoetryAppsSenior />} />
-          <Route path="/tools/short-story-writing" element={<ShortStoryWriting />} />
-          <Route path="/tools/windows-file-explorer-basics" element={<WindowsFileExplorerBasics />} />
-          <Route path="/tools/mac-finder-basics" element={<MacFinderBasics />} />
-          <Route path="/tools/cloud-folder-organization" element={<CloudFolderOrganization />} />
-          <Route path="/tools/dark-mode-guide" element={<DarkModeGuide />} />
-          <Route path="/tools/wallpaper-background-guide" element={<WallpaperBackgroundGuide />} />
-          <Route path="/tools/checkbook-balancing-apps" element={<CheckbookBalancingApps />} />
-          <Route path="/tools/mobile-deposit-guide" element={<MobileDepositGuide />} />
-          <Route path="/tools/direct-deposit-setup" element={<DirectDepositSetup />} />
-          <Route path="/tools/safe-deposit-box-guide" element={<SafeDepositBoxGuide />} />
-          <Route path="/tools/emergency-fund-for-seniors" element={<EmergencyFundForSeniors />} />
-          <Route path="/tools/silver-sneakers-guide" element={<SilverSneakersGuide />} />
-          <Route path="/tools/senior-walking-shoes" element={<SeniorWalkingShoes />} />
-          <Route path="/tools/pilates-for-seniors" element={<PilatesForSeniors />} />
-          <Route path="/tools/swimming-for-seniors" element={<SwimmingForSeniors />} />
-          <Route path="/tools/bocce-lawn-games" element={<BocceLawnGames />} />
-          <Route path="/tools/vitamins-for-seniors" element={<VitaminsForSeniors />} />
-          <Route path="/tools/supplement-safety" element={<SupplementSafety />} />
-          <Route path="/tools/meal-prep-for-one" element={<MealPrepForOne />} />
-          <Route path="/tools/high-fiber-recipes" element={<HighFiberRecipes />} />
-          <Route path="/tools/omega-fish-oil-guide" element={<OmegaFishOilGuide />} />
-          <Route path="/tools/car-buying-tips-seniors" element={<CarBuyingTipsSeniors />} />
-          <Route path="/tools/auto-lease-vs-buy" element={<AutoLeaseVsBuy />} />
-          <Route path="/tools/electric-cars-for-seniors" element={<ElectricCarsForSeniors />} />
-          <Route path="/tools/car-trade-in-apps" element={<CarTradeInApps />} />
-          <Route path="/tools/auto-extended-warranty" element={<AutoExtendedWarranty />} />
-          <Route path="/tools/ssn-compromise-steps" element={<SSNCompromiseSteps />} />
-          <Route path="/tools/social-media-fake-accounts" element={<SocialMediaFakeAccounts />} />
-          <Route path="/tools/computer-virus-removal" element={<ComputerVirusRemoval />} />
-          <Route path="/tools/email-hacked-recovery" element={<EmailHackedRecovery />} />
-          <Route path="/tools/whatsapp-scam-spotting" element={<WhatsAppScamSpotting />} />
-          <Route path="/tools/senior-makeup-tips-apps" element={<SeniorMakeupTipsApps />} />
-          <Route path="/tools/hair-care-for-seniors" element={<HairCareForSeniors />} />
-          <Route path="/tools/nail-care-for-seniors" element={<NailCareForSeniors />} />
-          <Route path="/tools/shaving-for-seniors" element={<ShavingForSeniors />} />
-          <Route path="/tools/perfume-cologne-picks" element={<PerfumeColognePicks />} />
-          <Route path="/tools/plumbing-basics-for-seniors" element={<PlumbingBasicsForSeniors />} />
-          <Route path="/tools/electrical-basics-for-seniors" element={<ElectricalBasicsForSeniors />} />
-          <Route path="/tools/air-filter-changing-guide" element={<AirFilterChangingGuide />} />
-          <Route path="/tools/thumbtack-for-seniors" element={<ThumbtackForSeniors />} />
-          <Route path="/tools/home-warranty-shopping-seniors" element={<HomeWarrantyShoppingSeniors />} />
-          <Route path="/tools/house-cleaning-service-apps" element={<HouseCleaningServiceApps />} />
-          <Route path="/tools/lawn-care-subscriptions" element={<LawnCareSubscriptions />} />
-          <Route path="/tools/hvac-maintenance-apps" element={<HVACMaintenanceApps />} />
-          <Route path="/tools/seasonal-home-checklist" element={<SeasonalHomeChecklist />} />
-          <Route path="/tools/appliance-lifespan-guide" element={<ApplianceLifespanGuide />} />
-          <Route path="/tools/phone-case-screen-protector" element={<PhoneCaseScreenProtector />} />
-          <Route path="/tools/switch-cell-carrier" element={<SwitchCellCarrier />} />
-          <Route path="/tools/prepaid-vs-contract-phones" element={<PrepaidVsContractPhones />} />
-          <Route path="/tools/ringtone-customization" element={<RingtoneCustomization />} />
-          <Route path="/tools/phone-tracking-family" element={<PhoneTrackingFamily />} />
-          <Route path="/tools/ai-memory-help-for-seniors" element={<AIMemoryHelpForSeniors />} />
-          <Route path="/tools/ai-shopping-assistant" element={<AIShoppingAssistant />} />
-          <Route path="/tools/ai-health-questions" element={<AIHealthQuestions />} />
-          <Route path="/tools/ai-finance-advice" element={<AIFinanceAdvice />} />
-          <Route path="/tools/ai-legal-questions" element={<AILegalQuestions />} />
-          <Route path="/tools/google-sheets-basics" element={<GoogleSheetsBasics />} />
-          <Route path="/tools/google-slides-basics" element={<GoogleSlidesBasics />} />
-          <Route path="/tools/microsoft-teams-for-seniors" element={<MicrosoftTeamsForSeniors />} />
-          <Route path="/tools/outlook-basics-seniors" element={<OutlookBasicsSeniors />} />
-          <Route path="/tools/onedrive-basics" element={<OneDriveBasics />} />
-          <Route path="/tools/apple-music-for-seniors" element={<AppleMusicForSeniors />} />
-          <Route path="/tools/amazon-music-for-seniors" element={<AmazonMusicForSeniors />} />
-          <Route path="/tools/pandora-for-seniors" element={<PandoraForSeniors />} />
-          <Route path="/tools/simply-piano-for-seniors" element={<SimplyPianoForSeniors />} />
-          <Route path="/tools/yousician-guitar-app" element={<YousicianGuitarApp />} />
-          <Route path="/tools/metronome-tuner-apps" element={<MetronomeTunerApps />} />
-          <Route path="/tools/smule-karaoke-app" element={<SmuleKaraokeApp />} />
-          <Route path="/tools/sheet-music-apps-digital" element={<SheetMusicAppsDigital />} />
-          <Route path="/tools/youtube-music-for-seniors" element={<YouTubeMusicForSeniors />} />
-          <Route path="/tools/tunein-radio-apps" element={<TuneInRadioApps />} />
-          <Route path="/tools/pinterest-for-seniors" element={<PinterestForSeniors />} />
-          <Route path="/tools/threads-app-guide" element={<ThreadsAppGuide />} />
-          <Route path="/tools/bluesky-explained" element={<BlueskyExplained />} />
-          <Route path="/tools/facebook-groups-for-seniors" element={<FacebookGroupsForSeniors />} />
-          <Route path="/tools/social-media-privacy-audit" element={<SocialMediaPrivacyAudit />} />
-          <Route path="/tools/disney-plus-for-seniors" element={<DisneyPlusForSeniors />} />
-          <Route path="/tools/hulu-for-seniors" element={<HuluForSeniors />} />
-          <Route path="/tools/peacock-streaming-guide" element={<PeacockStreamingGuide />} />
-          <Route path="/tools/max-hbo-streaming-guide" element={<MaxHBOStreamingGuide />} />
-          <Route path="/tools/tubi-pluto-free-streaming" element={<TubiPlutoFreeStreaming />} />
-          <Route path="/tools/simplisafe-review" element={<SimpliSafeReview />} />
-          <Route path="/tools/ring-alarm-system-guide" element={<RingAlarmSystemGuide />} />
-          <Route path="/tools/home-security-system-compare" element={<HomeSecuritySystemCompare />} />
-          <Route path="/tools/motion-sensor-lights-guide" element={<MotionSensorLightsGuide />} />
-          <Route path="/tools/home-security-checklist" element={<HomeSecurityChecklist />} />
-          <Route path="/tools/tripit-app-guide" element={<TripItAppGuide />} />
-          <Route path="/tools/pocket-wifi-abroad" element={<PocketWifiAbroad />} />
-          <Route path="/tools/vrbo-airbnb-compare-seniors" element={<VRBOAirbnbCompareSeniors />} />
-          <Route path="/tools/solo-senior-travel-tips" element={<SoloSeniorTravelTips />} />
-          <Route path="/tools/currency-exchange-for-seniors" element={<CurrencyExchangeForSeniors />} />
-          <Route path="/tools/goodrx-drug-savings" element={<GoodRxDrugSavings />} />
-          <Route path="/tools/medisafe-pill-reminder" element={<MedisafePillReminder />} />
-          <Route path="/tools/blood-pressure-tracking-apps" element={<BloodPressureTrackingApps />} />
-          <Route path="/tools/apple-health-app-tutorial" element={<AppleHealthAppTutorial />} />
-          <Route path="/tools/smart-scale-for-seniors" element={<SmartScaleForSeniors />} />
-          <Route path="/tools/lumosity-brainhq-compare" element={<LumosityBrainHQCompare />} />
-          <Route path="/tools/chair-exercises-for-seniors" element={<ChairExercisesForSeniors />} />
-          <Route path="/tools/balance-exercises-seniors" element={<BalanceExercisesSeniors />} />
-          <Route path="/tools/words-with-friends-seniors" element={<WordsWithFriendsSeniors />} />
-          <Route path="/tools/aarp-tax-aide-guide" element={<AARPTaxAideGuide />} />
-          <Route path="/tools/turbotax-for-seniors" element={<TurboTaxForSeniors />} />
-          <Route path="/tools/hr-block-for-seniors" element={<HRBlockForSeniors />} />
-          <Route path="/tools/quicken-for-retirees" element={<QuickenForRetirees />} />
-          <Route path="/tools/roth-conversion-calculators" element={<RothConversionCalculators />} />
-          <Route path="/tools/irs-gov-online-account" element={<IRSGovOnlineAccount />} />
-          <Route path="/tools/property-tax-exemption-seniors" element={<PropertyTaxExemptionSeniors />} />
-          <Route path="/tools/social-security-claiming-strategy" element={<SocialSecurityClaimingStrategy />} />
-          <Route path="/tools/senior-discount-finder" element={<SeniorDiscountFinder />} />
 
           {/* Master Plan tools */}
-          <Route path="/tools/router-setup-wizard" element={<RouterSetupWizard />} />
-          <Route path="/tools/smart-tv-setup" element={<SmartTvSetupWizard />} />
-          <Route path="/tools/voice-assistant-setup" element={<VoiceAssistantSetup />} />
-          <Route path="/tools/voice-commands" element={<VoiceCommandCheatSheet />} />
-          <Route path="/tools/library-tech-helper" element={<LibraryTechHelper />} />
-          <Route path="/tools/local-library-finder" element={<LocalLibraryFinder />} />
-          <Route path="/tools/podcast-directory" element={<PodcastDirectory />} />
-          <Route path="/tools/tech-gift-guide" element={<TechGiftGuideTool />} />
-          <Route path="/tools/my-first-smartphone" element={<MyFirstSmartphone />} />
-          <Route path="/tools/ipad-for-seniors" element={<IpadForSeniors />} />
-          <Route path="/tools/apple-watch-setup" element={<AppleWatchSetup />} />
-          <Route path="/tools/computer-cleanup-wizard" element={<ComputerCleanupWizard />} />
-          <Route path="/tools/phone-cleanup" element={<PhoneCleanupWizard />} />
-          <Route path="/tools/digital-footprint-scanner" element={<DigitalFootprintScanner />} />
-          <Route path="/tools/internet-plan-comparator" element={<InternetPlanComparator />} />
-          <Route path="/tools/scam-iq-test" element={<ScamIqTest />} />
           <Route path="/quizzes/scam-iq" element={<ScamIqQuiz />} />
           <Route path="/quizzes/tech-confidence" element={<TechConfidenceQuiz />} />
-          <Route path="/tools/accessibility-needs-finder" element={<AccessibilityNeedsFinder />} />
-          <Route path="/tools/file-organizer-guide" element={<FileOrganizerGuide />} />
-          <Route path="/tools/scam-phone-database" element={<ScamPhoneDatabase />} />
-          <Route path="/tools/medication-reminder-setup" element={<MedicationReminderSetup />} />
-          <Route path="/tools/home-security-camera-setup" element={<HomeSecurityCameraSetup />} />
-          <Route path="/tools/smart-thermostat-setup" element={<SmartThermostatSetup />} />
-          <Route path="/tools/hearing-aid-tech-helper" element={<HearingAidTechHelper />} />
-          <Route path="/tools/low-vision-tech-hub" element={<LowVisionTechHub />} />
-          <Route path="/tools/audio-tutorials" element={<AudioTutorialHub />} />
-          <Route path="/tools/screen-reader-starter" element={<ScreenReaderStarter />} />
-          <Route path="/tools/remote-control-decoder" element={<RemoteControlDecoder />} />
-          <Route path="/tools/rideshare-setup" element={<RideshareSetup />} />
-          <Route path="/tools/banking-app-setup" element={<BankingAppSetup />} />
-          <Route path="/tools/video-call-helper" element={<VideoCallHelper />} />
-          <Route path="/tools/government-benefits-portal" element={<GovernmentBenefitsPortal />} />
-          <Route path="/tools/dmv-online-helper" element={<DmvOnlineHelper />} />
 
           {/* Practice Mode — simulated phone interface for fearless practice */}
-          <Route path="/tools/practice-mode" element={<PracticeMode />} />
 
           {/* Settings Finder — "where's that setting on my device?" lookup */}
-          <Route path="/tools/settings-finder" element={<SettingsFinder />} />
 
           {/* Email Spam Manager — guide-tool hybrid for inbox cleanup */}
-          <Route path="/tools/email-spam-manager" element={<EmailSpamManager />} />
 
           {/* Streaming Service Picker — senior-friendly recommender for cord-cutters */}
-          <Route path="/tools/streaming-service-picker" element={<StreamingServicePicker />} />
 
           {/* Refund & Return Helper — step-by-step walkthroughs for getting money back */}
-          <Route path="/tools/refund-and-return-helper" element={<RefundAndReturnHelper />} />
 
           {/* Kitchen Tech Helper — setup & daily-use guide for 10 kitchen appliances */}
-          <Route path="/tools/kitchen-tech-helper" element={<KitchenTechHelper />} />
 
           {/* State AG Scam Lookup — per-state consumer protection + federal agency directory */}
-          <Route path="/tools/state-ag-scam-lookup" element={<StateAgScamLookup />} />
 
           {/* Toolkits — hub pages that group a situation into actionable sections */}
           <Route path="/toolkits/caregiver" element={<CaregiverToolkit />} />
@@ -7223,13 +1435,6 @@ const AppContent = () => {
           <Route path="/printables/weekly-newsletter" element={<WeeklyNewsletterTemplate />} />
 
           {/* ── April 2026 expansion: new tools ─────────────────────────── */}
-          <Route path="/tools/scam-message-decoder"     element={<ScamMessageDecoder />} />
-          <Route path="/tools/password-health"          element={<PasswordHealth />} />
-          <Route path="/tools/device-retirement-helper" element={<DeviceRetirementHelper />} />
-          <Route path="/tools/robocall-blocker-setup"   element={<RobocallBlockerSetup />} />
-          <Route path="/tools/scam-witness-statement"   element={<ScamWitnessStatement />} />
-          <Route path="/tools/tech-cheatsheet-generator" element={<TechCheatsheetGenerator />} />
-          <Route path="/tools/family-tech-roundtable"   element={<FamilyTechRoundtable />} />
 
           {/* ── April 2026 expansion: new top-level hubs ────────────────── */}
           <Route path="/grandparent-device-setup" element={<GrandparentDeviceSetup />} />
@@ -7238,161 +1443,9 @@ const AppContent = () => {
           <Route path="/daily-tip"                element={<DailyTip />} />
 
           {/* ── April 2026 expansion (round 2) ──────────────────────────── */}
-          <Route path="/tools/tech-will-builder"          element={<TechWillBuilder />} />
-          <Route path="/tools/update-decision-helper"     element={<UpdateDecisionHelper />} />
-          <Route path="/tools/hearing-aid-pairing-wizard" element={<HearingAidPairingWizard />} />
           <Route path="/start"                            element={<Start />} />
-          <Route path="/tools/id-theft-recovery"          element={<IdTheftRecovery />} />
-          <Route path="/tools/email-migration"            element={<EmailMigration />} />
-          <Route path="/tools/fall-detection-setup"       element={<FallDetectionSetup />} />
-          <Route path="/tools/travel-tech-checklist"      element={<TravelTechChecklist />} />
-          <Route path="/tools/smart-home-starter"         element={<SmartHomeStarter />} />
-          <Route path="/tools/hospital-discharge-kit"     element={<HospitalDischargeKit />} />
-          <Route path="/tools/ai-image-spotter"            element={<AiImageSpotter />} />
-          <Route path="/tools/cord-cutter-wizard"          element={<CordCutterWizard />} />
-          <Route path="/tools/online-banking-safety"       element={<OnlineBankingSafety />} />
-          <Route path="/tools/chase-bank-app-for-seniors" element={<ChaseBankAppForSeniors />} />
-          <Route path="/tools/bank-of-america-app-guide" element={<BankOfAmericaAppGuide />} />
-          <Route path="/tools/credit-card-app-management" element={<CreditCardAppManagement />} />
-          <Route path="/tools/credit-score-monitor-apps" element={<CreditScoreMonitorApps />} />
-          <Route path="/tools/usaa-for-veteran-seniors" element={<UsaaForVeteranSeniors />} />
-          <Route path="/tools/senior-friendly-apps"        element={<SeniorFriendlyApps />} />
-          <Route path="/tools/find-lost-items"             element={<FindLostItems />} />
-          <Route path="/tools/smart-speaker-picker"        element={<SmartSpeakerPicker />} />
-          <Route path="/tools/tablet-or-laptop"            element={<TabletOrLaptop />} />
-          <Route path="/tools/phone-insurance-decision"    element={<PhoneInsuranceDecision />} />
-          <Route path="/tools/photo-library-tips"          element={<PhotoLibraryTips />} />
-          <Route path="/tools/voicemail-setup"             element={<VoicemailSetup />} />
-          <Route path="/tools/tech-buddy-setup"            element={<TechBuddySetup />} />
-          <Route path="/tools/voter-info-verifier"         element={<VoterInfoVerifier />} />
-          <Route path="/tools/amazon-review-spotter"       element={<AmazonReviewSpotter />} />
-          <Route path="/tools/speed-up-device"             element={<SpeedUpDevice />} />
-          <Route path="/tools/router-upgrade-helper"       element={<RouterUpgradeHelper />} />
-          <Route path="/tools/telehealth-prep"             element={<TelehealthPrep />} />
-          <Route path="/tools/marketplace-scam-spotter"    element={<MarketplaceScamSpotter />} />
-          <Route path="/tools/dictation-setup"             element={<DictationSetup />} />
-          <Route path="/tools/otter-ai-transcription" element={<OtterAITranscription />} />
-          <Route path="/tools/voice-typing-phone-tutorial" element={<VoiceTypingPhoneTutorial />} />
-          <Route path="/tools/siri-commands-cheat-sheet" element={<SiriCommandsCheatSheet />} />
-          <Route path="/tools/google-assistant-senior-commands" element={<GoogleAssistantSeniorCommands />} />
-          <Route path="/tools/stylus-for-senior-tablets" element={<StylusForSeniorTablets />} />
-          <Route path="/tools/apple-watch-accessibility" element={<AppleWatchAccessibility />} />
-          <Route path="/tools/phone-stylus-for-arthritis" element={<PhoneStylusForArthritis />} />
-          <Route path="/tools/account-deletion-wizard"     element={<AccountDeletionWizard />} />
-          <Route path="/tools/free-tax-filing"             element={<FreeTaxFiling />} />
-          <Route path="/tools/library-power-pack"          element={<LibraryPowerPack />} />
-          <Route path="/tools/shared-family-calendar"      element={<SharedFamilyCalendar />} />
-          <Route path="/tools/low-cost-internet"           element={<LowCostInternet />} />
-          <Route path="/tools/stay-connected"              element={<StayConnected />} />
-          <Route path="/tools/ai-chatbot-guide"            element={<AiChatbotGuide />} />
-          <Route path="/tools/renew-id-online"             element={<RenewIdOnline />} />
-          <Route path="/tools/common-scams-library"        element={<CommonScamsLibrary />} />
-          <Route path="/tools/cookie-consent-decoder"      element={<CookieConsentDecoder />} />
-          <Route path="/tools/social-privacy-lockdown"     element={<SocialPrivacyLockdown />} />
-          <Route path="/tools/weather-alerts-setup"        element={<WeatherAlertsSetup />} />
-          <Route path="/tools/social-security-setup"       element={<SocialSecuritySetup />} />
-          <Route path="/tools/car-phone-setup"             element={<CarPhoneSetup />} />
-          <Route path="/tools/sell-online-safely"          element={<SellOnlineSafely />} />
-          <Route path="/tools/credit-freeze-walkthrough"   element={<CreditFreezeWalkthrough />} />
-          <Route path="/tools/podcast-starter"             element={<PodcastStarter />} />
-          <Route path="/tools/online-memorial-setup"       element={<OnlineMemorialSetup />} />
-          <Route path="/tools/payment-app-setup"           element={<PaymentAppSetup />} />
-          <Route path="/tools/online-shopping-safety"      element={<OnlineShoppingSafety />} />
-          <Route path="/tools/wifi-calling-setup"          element={<WifiCallingSetup />} />
-          <Route path="/tools/fitness-tracker-picker"      element={<FitnessTrackerPicker />} />
-          <Route path="/tools/smart-lock-picker"           element={<SmartLockPicker />} />
-          <Route path="/tools/kindle-setup"                element={<KindleSetup />} />
-          <Route path="/tools/e-reader-comparison-guide" element={<EReaderComparisonGuide />} />
-          <Route path="/tools/kindle-unlimited-scribd-review" element={<KindleUnlimitedScribdReview />} />
-          <Route path="/tools/gun-safe-biometric" element={<GunSafeBiometric />} />
-          <Route path="/tools/power-bank-senior-picks" element={<PowerBankSeniorPicks />} />
-          <Route path="/tools/senior-job-search-platforms" element={<SeniorJobSearchPlatforms />} />
-          <Route path="/tools/maps-navigation-setup"       element={<MapsNavigationSetup />} />
-          <Route path="/tools/find-lost-phone"             element={<FindLostPhone />} />
-          <Route path="/tools/video-doorbell-picker"       element={<VideoDoorbellPicker />} />
-          <Route path="/tools/streaming-service-setup"     element={<StreamingServiceSetup />} />
-          <Route path="/tools/document-scanner-setup"      element={<DocumentScannerSetup />} />
-          <Route path="/tools/remote-tech-help"            element={<RemoteTechHelp />} />
-          <Route path="/tools/online-forms-helper"         element={<OnlineFormsHelper />} />
-          <Route path="/tools/screen-recording-guide"      element={<ScreenRecordingGuide />} />
-          <Route path="/tools/free-office-suite"           element={<FreeOfficeSuite />} />
-          <Route path="/tools/new-computer-setup"          element={<NewComputerSetup />} />
-          <Route path="/tools/translation-tools"           element={<TranslationTools />} />
-          <Route path="/tools/senior-fitness-apps"         element={<SeniorFitnessApps />} />
-          <Route path="/tools/ai-voice-defense"            element={<AiVoiceDefense />} />
-          <Route path="/tools/online-doctor-portal-setup"  element={<OnlineDoctorPortalSetup />} />
-          <Route path="/tools/credit-card-rewards-picker"  element={<CreditCardRewardsPicker />} />
-          <Route path="/tools/email-organization"          element={<EmailOrganization />} />
-          <Route path="/tools/usb-storage-guide"           element={<UsbStorageGuide />} />
-          <Route path="/tools/pet-tech-picker"             element={<PetTechPicker />} />
-          <Route path="/tools/email-signature-builder"     element={<EmailSignatureBuilder />} />
-          <Route path="/tools/guest-wifi-setup"            element={<GuestWifiSetup />} />
-          <Route path="/tools/hearing-aid-apps"            element={<HearingAidApps />} />
-          <Route path="/tools/smart-garage-door"           element={<SmartGarageDoor />} />
-          <Route path="/tools/robot-vacuum-picker"         element={<RobotVacuumPicker />} />
-          <Route path="/tools/e-signature-setup"           element={<ESignatureSetup />} />
-          <Route path="/tools/music-streaming-picker"      element={<MusicStreamingPicker />} />
-          <Route path="/tools/home-office-setup"           element={<HomeOfficeSetup />} />
-          <Route path="/tools/deepfake-video-spotter"      element={<DeepfakeVideoSpotter />} />
-          <Route path="/tools/free-legal-help"             element={<FreeLegalHelp />} />
-          <Route path="/tools/spouse-survivor-benefits"    element={<SpouseSurvivorBenefits />} />
-          <Route path="/tools/caller-id-setup"             element={<CallerIdSetup />} />
-          <Route path="/tools/backup-verification"         element={<BackupVerification />} />
-          <Route path="/tools/phone-family-link-setup"     element={<PhoneFamilyLinkSetup />} />
-          <Route path="/tools/veteran-tech-benefits"       element={<VeteranTechBenefits />} />
-          <Route path="/tools/print-from-phone"            element={<PrintFromPhone />} />
-          <Route path="/tools/low-vision-apps"             element={<LowVisionApps />} />
-          <Route path="/tools/network-privacy-checker"     element={<NetworkPrivacyChecker />} />
-          <Route path="/tools/senior-transit-apps"         element={<SeniorTransitApps />} />
-          <Route path="/tools/bill-refund-dispute"         element={<BillRefundDispute />} />
-          <Route path="/tools/online-dating-safety"        element={<OnlineDatingSafety />} />
-          <Route path="/tools/travel-booking-safety"       element={<TravelBookingSafety />} />
-          <Route path="/tools/computer-repair-options"     element={<ComputerRepairOptions />} />
           <Route path="/tools/senior-discount-finder-app"  element={<Navigate to="/tools/senior-discount-finder" replace />} />
-          <Route path="/tools/notebook-alternatives"       element={<NotebookAlternatives />} />
-          <Route path="/tools/bedtime-tech-routine"        element={<BedtimeTechRoutine />} />
-          <Route path="/tools/real-estate-wire-scam"       element={<RealEstateWireScam />} />
-          <Route path="/tools/iphone-shortcuts"            element={<IphoneShortcuts />} />
-          <Route path="/tools/android-shortcuts"           element={<AndroidShortcuts />} />
-          <Route path="/tools/crypto-scam-defense"         element={<CryptoScamDefense />} />
-          <Route path="/tools/nutrition-app-picker"        element={<NutritionAppPicker />} />
-          <Route path="/tools/investment-app-picker"       element={<InvestmentAppPicker />} />
-          <Route path="/tools/blood-pressure-apps"         element={<BloodPressureApps />} />
-          <Route path="/tools/online-will-estate"          element={<OnlineWillEstate />} />
-          <Route path="/tools/social-media-first-steps"    element={<SocialMediaFirstSteps />} />
-          <Route path="/tools/countdown-to-retirement"     element={<CountdownToRetirement />} />
-          <Route path="/tools/bluetooth-earbud-picker"     element={<BluetoothEarbudPicker />} />
-          <Route path="/tools/video-call-etiquette"        element={<VideoCallEtiquette />} />
-          <Route path="/tools/prescription-delivery-apps"  element={<PrescriptionDeliveryApps />} />
-          <Route path="/tools/language-learning-apps"      element={<LanguageLearningApps />} />
-          <Route path="/tools/brain-games-apps"            element={<BrainGamesApps />} />
-          <Route path="/tools/news-app-picker"             element={<NewsAppPicker />} />
-          <Route path="/tools/nytimes-app-for-seniors" element={<NYTimesAppForSeniors />} />
-          <Route path="/tools/apple-news-plus-review" element={<AppleNewsPlusReview />} />
-          <Route path="/tools/washington-post-app-guide" element={<WashingtonPostAppGuide />} />
-          <Route path="/tools/npr-podcasts-for-seniors" element={<NPRPodcastsForSeniors />} />
-          <Route path="/tools/substack-for-seniors" element={<SubstackForSeniors />} />
-          <Route path="/tools/voice-memo-transcribe"       element={<VoiceMemoTranscribe />} />
-          <Route path="/tools/home-vision-test"            element={<HomeVisionTest />} />
-          <Route path="/tools/smart-tv-accessibility"      element={<SmartTvAccessibility />} />
-          <Route path="/tools/televet-setup"               element={<TelevetSetup />} />
-          <Route path="/tools/board-games-online"          element={<BoardGamesOnline />} />
-          <Route path="/tools/gas-buddy-alternatives"      element={<GasBuddyAlternatives />} />
-          <Route path="/tools/video-editing-apps"          element={<VideoEditingApps />} />
-          <Route path="/tools/home-care-apps-for-family"   element={<HomeCareAppsForFamily />} />
-          <Route path="/tools/real-estate-app-picker"      element={<RealEstateAppPicker />} />
-          <Route path="/tools/estate-sale-helper"          element={<EstateSaleHelper />} />
-          <Route path="/tools/grocery-list-apps"           element={<GroceryListApps />} />
-          <Route path="/tools/smart-scale-picker"          element={<SmartScalePicker />} />
-          <Route path="/tools/senior-tech-mistakes"        element={<SeniorTechMistakes />} />
-          <Route path="/tools/phone-carrier-comparison"    element={<PhoneCarrierComparison />} />
           <Route path="/tools/bluetooth-pairing-help"      element={<Navigate to="/tools/bluetooth-pairing-helper" replace />} />
-          <Route path="/tools/phone-repair-or-replace"     element={<PhoneRepairOrReplace />} />
-          <Route path="/tools/online-classes-picker"       element={<OnlineClassesPicker />} />
-          <Route path="/tools/call-screener-setup"         element={<CallScreenerSetup />} />
-          <Route path="/tools/email-unsubscribe-flow"      element={<EmailUnsubscribeFlow />} />
-          <Route path="/tools/family-recipe-app"           element={<FamilyRecipeApp />} />
-          <Route path="/tools/safe-senior-computer-setup"  element={<SafeSeniorComputerSetup />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>

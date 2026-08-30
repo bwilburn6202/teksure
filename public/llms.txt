@@ -4,7 +4,7 @@
 
 ## About this site
 
-- 3,763 step-by-step guides and 2,969 interactive tools, all free and without a paywall.
+- 3,747 step-by-step guides and 387 interactive tools, all free and without a paywall.
 - Audience: non-technical adults, especially people aged 60+, and caregivers.
 - US-focused: prices in USD, US carriers, US government services (Medicare, Social Security, IRS).
 - Editorial rule: plain English, no jargon without an explanation, no "it's easy".
@@ -28,7 +28,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 
 ## Guides by topic
 
-### tips tricks (539)
+### tips tricks (536)
 
 - [How to Stop Your iPhone Battery From Draining So Fast](https://www.teksure.com/guides/fix-iphone-battery-draining-fast)
 - [How to Find and Cancel Subscriptions You Forgot You Had](https://www.teksure.com/guides/how-to-cancel-unwanted-subscriptions)
@@ -70,9 +70,9 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Record Your iPhone Screen (Screen Recording)](https://www.teksure.com/guides/screen-recorder-iphone-guide)
 - [How to Convert Recipes to Smaller Portions for Cooking for One](https://www.teksure.com/guides/how-to-convert-recipes-smaller-portions)
 - [How to Substitute Ingredients When You Run Out](https://www.teksure.com/guides/how-to-substitute-ingredients-recipe)
-- …and 499 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 496 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### app guides (408)
+### app guides (405)
 
 - [How to Use Google Flights to Find Cheap Tickets](https://www.teksure.com/guides/use-google-flights)
 - [How to Book Travel on Expedia](https://www.teksure.com/guides/use-expedia-bookings)
@@ -114,9 +114,9 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Use Amazon Photos to Back Up and Store Your Pictures](https://www.teksure.com/guides/amazon-photos-backup)
 - [How to Use Google Calendar to Track Appointments and Set Reminders](https://www.teksure.com/guides/how-to-use-google-calendar-for-appointments-and-reminders-2026)
 - [How to Use Google One to Manage Your Storage](https://www.teksure.com/guides/google-one-storage-guide)
-- …and 368 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 365 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### Phones (iPhone and Android) (350)
+### Phones (iPhone and Android) (347)
 
 - [How to Set Up a GrandPad Tablet](https://www.teksure.com/guides/use-grandpad-tablet)
 - [Why Is My Phone Battery Dying So Fast? 5 Ways to Fix It](https://www.teksure.com/guides/why-is-my-phone-battery-dying-so-fast)
@@ -158,7 +158,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Erase Your Phone Before Selling, Donating, or Recycling It](https://www.teksure.com/guides/erase-phone-before-selling)
 - [Is a Refurbished Phone Worth Buying? What You Need to Know](https://www.teksure.com/guides/refurbished-phone-buying-guide)
 - [How to Use the Different Camera Modes on Your iPhone](https://www.teksure.com/guides/iphone-camera-modes-guide)
-- …and 310 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 307 more in this topic — see https://www.teksure.com/sitemap.xml
 
 ### Health technology and accessibility (339)
 
@@ -204,7 +204,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Use the Apple Watch ECG and Heart Rate Features](https://www.teksure.com/guides/apple-watch-ecg-heart-health)
 - …and 299 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### Essential everyday skills (303)
+### Essential everyday skills (302)
 
 - [Cloud Storage Explained: Your Photos and Files, Safe and Sound](https://www.teksure.com/guides/cloud-storage-explained-photos-files-safe)
 - [How to Use QR Codes (They're Everywhere Now)](https://www.teksure.com/guides/qr-codes-scanning-guide)
@@ -246,9 +246,9 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Get Live Captions During Phone Calls](https://www.teksure.com/guides/phone-captions-for-calls)
 - [How to Open, Read, and Save PDF Files on Your Phone](https://www.teksure.com/guides/read-pdf-on-phone-guide)
 - [How to Use Apple Calendar on iPhone, iPad, and Mac](https://www.teksure.com/guides/apple-calendar-beginners)
-- …and 263 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 262 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### Staying safe online (scams, phishing, privacy) (295)
+### Staying safe online (scams, phishing, privacy) (294)
 
 - [Two-Factor Authentication: The Extra Lock on Your Digital Door](https://www.teksure.com/guides/two-factor-authentication-extra-lock)
 - [Online Banking Made Safe and Simple](https://www.teksure.com/guides/online-banking-made-safe-and-simple)
@@ -290,9 +290,9 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [Pig-Butchering Scams: How Fake Friends Steal Your Savings](https://www.teksure.com/guides/pig-butchering-investment-scam)
 - [How to Share Your Location With Family Members](https://www.teksure.com/guides/family-location-sharing)
 - [How Scammers Use AI to Clone Voices on Phone Calls](https://www.teksure.com/guides/ai-voice-call-scam-prevention)
-- …and 255 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 254 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### Money, banking and bills (186)
+### Money, banking and bills (185)
 
 - [How to File an Auto Insurance Claim Online](https://www.teksure.com/guides/file-auto-insurance-claim-online)
 - [How to File a Home Insurance Claim Online](https://www.teksure.com/guides/file-home-insurance-claim)
@@ -334,7 +334,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Update Beneficiaries on Retirement Accounts](https://www.teksure.com/guides/how-to-update-retirement-beneficiaries)
 - [How to Balance Your Checkbook Each Month](https://www.teksure.com/guides/how-to-balance-checkbook-monthly)
 - [How to Deposit a Check Using Your Phone (Mobile Deposit)](https://www.teksure.com/guides/how-to-deposit-check-with-phone)
-- …and 146 more in this topic — see https://www.teksure.com/sitemap.xml
+- …and 145 more in this topic — see https://www.teksure.com/sitemap.xml
 
 ### Windows computers (173)
 
@@ -468,7 +468,7 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Transcribe Meetings Automatically with Otter.ai](https://www.teksure.com/guides/otter-ai-transcription-guide)
 - …and 93 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### Government and civic services (131)
+### Government and civic services (130)
 
 - [How to Get Your IRS Tax Transcript Online](https://www.teksure.com/guides/irs-transcript-online)
 - [How to Set Up and Use Your Medicare Online Account](https://www.teksure.com/guides/understand-medicare-online-account)
@@ -476,7 +476,6 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [Free Tax Preparation for Seniors: AARP, IRS, and Online Options](https://www.teksure.com/guides/free-tax-preparation-aarp-irs)
 - [Set Up Your Medicare.gov Account — The 2026 Walkthrough](https://www.teksure.com/guides/medicare-gov-account-setup-2026-step-by-step)
 - [Medicare Open Enrollment 2026 — How to Enroll Online, Step by Step](https://www.teksure.com/guides/medicare-open-enrollment-2026-online-step-by-step)
-- [How to Read Your Medicare Explanation of Benefits Letter](https://www.teksure.com/guides/understanding-medicare-explanation-of-benefits-2026)
 - [How to Get the Most from Your AARP Membership](https://www.teksure.com/guides/how-to-use-aarp-website-and-app-2026)
 - [Free and Discounted Tech Programs for Seniors](https://www.teksure.com/guides/senior-citizen-discount-apps-programs)
 - [How to Check Your Medicare Account Online at Medicare.gov](https://www.teksure.com/guides/how-to-check-your-medicare-account-online-2026)
@@ -510,7 +509,8 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Apply for the Native American Housing Block Grant](https://www.teksure.com/guides/how-to-apply-native-american-housing-grant)
 - [How to Update Social Security After a Divorce](https://www.teksure.com/guides/how-to-update-social-security-after-divorce)
 - [How to Claim Social Security Based on an Ex-Spouse's Record](https://www.teksure.com/guides/how-to-claim-social-security-ex-spouse)
-- …and 91 more in this topic — see https://www.teksure.com/sitemap.xml
+- [How to Forward Your Mail Seasonally With USPS](https://www.teksure.com/guides/how-to-forward-mail-seasonally-usps)
+- …and 90 more in this topic — see https://www.teksure.com/sitemap.xml
 
 ### TV, music and entertainment (119)
 
@@ -644,50 +644,6 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Use the Apple Home App to Control Smart Devices](https://www.teksure.com/guides/apple-home-app-guide)
 - …and 67 more in this topic — see https://www.teksure.com/sitemap.xml
 
-### Staying in touch (77)
-
-- [How to Use Gmail's "Help Me Write" AI to Draft Emails Faster](https://www.teksure.com/guides/gmail-help-me-write-gemini-ai)
-- [How to Send Photos by Text Message or Email](https://www.teksure.com/guides/how-to-send-photos-by-text-or-email-2026)
-- [How to Unsubscribe from Unwanted Marketing Emails](https://www.teksure.com/guides/how-to-unsubscribe-from-junk-email-2026)
-- [How to Share Your Location with a Family Member](https://www.teksure.com/guides/how-to-share-your-location-with-family-2026)
-- [How to Use WhatsApp for the First Time](https://www.teksure.com/guides/how-to-use-whatsapp-for-the-first-time-2026)
-- [How to Use Skype for Free Video Calls](https://www.teksure.com/guides/skype-video-calls-guide)
-- [How to Make a Group FaceTime Call With Family](https://www.teksure.com/guides/facetime-group-call-guide)
-- [How to Make Video Calls on a Smart TV](https://www.teksure.com/guides/video-call-on-smart-tv)
-- [How to Look and Sound Better on Video Calls](https://www.teksure.com/guides/look-better-on-video-calls)
-- [How to Manage a Joint Email Account After a Spouse Passes Away](https://www.teksure.com/guides/how-to-manage-joint-email-after-spouse-passes)
-- [How to Schedule Emails in Gmail to Send at a Later Time](https://www.teksure.com/guides/schedule-email-gmail-guide)
-- [How to Manage Spam and Unwanted Email in Gmail](https://www.teksure.com/guides/gmail-spam-management)
-- [Microsoft Outlook Tips for Everyday Email Users](https://www.teksure.com/guides/outlook-tips-seniors)
-- [How to Video Call Android and Windows Users Using FaceTime](https://www.teksure.com/guides/facetime-android-link-guide)
-- [What Is Discord and How to Use It to Stay Connected with Family](https://www.teksure.com/guides/discord-basics-guide)
-- [Understanding Gmail's Category Tabs (Primary, Social, Promotions)](https://www.teksure.com/guides/gmail-tabs-guide)
-- [How to Use GroupMe for Group Texting](https://www.teksure.com/guides/groupme-group-messaging)
-- [How to Send Voice Messages on iPhone](https://www.teksure.com/guides/voice-message-iphone-guide)
-- [How to Video Call Family and Friends (FaceTime, Google Meet, and More)](https://www.teksure.com/guides/how-to-video-call-family-with-facetime-or-google-duo)
-- [How to Turn On RCS Messaging Between iPhone and Android](https://www.teksure.com/guides/turn-on-rcs-messaging-iphone-android)
-- [iPhone Mail App "Categories": What They Are and How to Use Them](https://www.teksure.com/guides/ios-mail-app-categories-explained)
-- [How to Create and Manage a WhatsApp Group Chat](https://www.teksure.com/guides/whatsapp-group-chat-guide)
-- [What Is Signal and Why Do People Use It for Private Texting](https://www.teksure.com/guides/signal-private-messaging-guide)
-- [How to Use Marco Polo to Send Video Messages to Family](https://www.teksure.com/guides/marco-polo-video-messaging)
-- [How to Use WhatsApp Channels to Follow News and Updates](https://www.teksure.com/guides/whatsapp-channels-guide)
-- [How to Watch Movies and TV Together Over FaceTime Using SharePlay](https://www.teksure.com/guides/facetime-shareplay-watch-together)
-- [How to Send a Video Message — Text, Email, and Social](https://www.teksure.com/guides/video-message-send-guide)
-- [How to Join a Zoom Call on Your Smart TV](https://www.teksure.com/guides/zoom-on-smart-tv-guide)
-- [How to Host a Zoom Meeting: Waiting Rooms, Muting, and Invites](https://www.teksure.com/guides/zoom-host-meeting-guide)
-- [How to Turn On Live Captions in Zoom for Easier Listening](https://www.teksure.com/guides/zoom-captions-guide)
-- [How to Record a Zoom Meeting to Watch Later](https://www.teksure.com/guides/zoom-record-meeting-guide)
-- [How to Use FaceTime Reactions and Effects During a Video Call](https://www.teksure.com/guides/facetime-reactions-guide)
-- [How to Create and Manage an iMessage Group Chat](https://www.teksure.com/guides/imessage-group-chat-guide)
-- [How to Share and Collaborate on a Note in Apple Notes](https://www.teksure.com/guides/share-notes-iphone-guide)
-- [How to Use WhatsApp Status to Share Photos and Updates](https://www.teksure.com/guides/whatsapp-status-guide)
-- [How to Send Free Digital Greeting Cards with Hallmark eCards](https://www.teksure.com/guides/hallmark-ecard-guide)
-- [How to Look Better on Video Calls](https://www.teksure.com/guides/improve-video-call-lighting)
-- [How to Send and Receive Voice Messages in WhatsApp](https://www.teksure.com/guides/whatsapp-voice-message-guide)
-- [How to Back Up Your WhatsApp Chats](https://www.teksure.com/guides/whatsapp-backup-guide)
-- [Telegram for Beginners: Messages, Groups, and Channels](https://www.teksure.com/guides/telegram-basics-guide)
-- …and 37 more in this topic — see https://www.teksure.com/sitemap.xml
-
 ### Social media (76)
 
 - [How to Use Nextdoor to Meet Neighbors](https://www.teksure.com/guides/use-nextdoor-neighborhood)
@@ -730,6 +686,50 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [How to Go Live on TikTok](https://www.teksure.com/guides/tiktok-live-streaming-guide)
 - [Cómo usar Facebook Marketplace de forma segura](https://www.teksure.com/guides/es-facebook-marketplace-safe)
 - [Cómo usar Facebook para principiantes](https://www.teksure.com/guides/es-facebook-beginners)
+- …and 36 more in this topic — see https://www.teksure.com/sitemap.xml
+
+### Staying in touch (76)
+
+- [How to Use Gmail's "Help Me Write" AI to Draft Emails Faster](https://www.teksure.com/guides/gmail-help-me-write-gemini-ai)
+- [How to Send Photos by Text Message or Email](https://www.teksure.com/guides/how-to-send-photos-by-text-or-email-2026)
+- [How to Unsubscribe from Unwanted Marketing Emails](https://www.teksure.com/guides/how-to-unsubscribe-from-junk-email-2026)
+- [How to Share Your Location with a Family Member](https://www.teksure.com/guides/how-to-share-your-location-with-family-2026)
+- [How to Use WhatsApp for the First Time](https://www.teksure.com/guides/how-to-use-whatsapp-for-the-first-time-2026)
+- [How to Use Skype for Free Video Calls](https://www.teksure.com/guides/skype-video-calls-guide)
+- [How to Make a Group FaceTime Call With Family](https://www.teksure.com/guides/facetime-group-call-guide)
+- [How to Make Video Calls on a Smart TV](https://www.teksure.com/guides/video-call-on-smart-tv)
+- [How to Look and Sound Better on Video Calls](https://www.teksure.com/guides/look-better-on-video-calls)
+- [How to Manage a Joint Email Account After a Spouse Passes Away](https://www.teksure.com/guides/how-to-manage-joint-email-after-spouse-passes)
+- [How to Schedule Emails in Gmail to Send at a Later Time](https://www.teksure.com/guides/schedule-email-gmail-guide)
+- [How to Manage Spam and Unwanted Email in Gmail](https://www.teksure.com/guides/gmail-spam-management)
+- [Microsoft Outlook Tips for Everyday Email Users](https://www.teksure.com/guides/outlook-tips-seniors)
+- [How to Video Call Android and Windows Users Using FaceTime](https://www.teksure.com/guides/facetime-android-link-guide)
+- [What Is Discord and How to Use It to Stay Connected with Family](https://www.teksure.com/guides/discord-basics-guide)
+- [Understanding Gmail's Category Tabs (Primary, Social, Promotions)](https://www.teksure.com/guides/gmail-tabs-guide)
+- [How to Use GroupMe for Group Texting](https://www.teksure.com/guides/groupme-group-messaging)
+- [How to Send Voice Messages on iPhone](https://www.teksure.com/guides/voice-message-iphone-guide)
+- [How to Video Call Family and Friends (FaceTime, Google Meet, and More)](https://www.teksure.com/guides/how-to-video-call-family-with-facetime-or-google-duo)
+- [How to Turn On RCS Messaging Between iPhone and Android](https://www.teksure.com/guides/turn-on-rcs-messaging-iphone-android)
+- [iPhone Mail App "Categories": What They Are and How to Use Them](https://www.teksure.com/guides/ios-mail-app-categories-explained)
+- [How to Create and Manage a WhatsApp Group Chat](https://www.teksure.com/guides/whatsapp-group-chat-guide)
+- [What Is Signal and Why Do People Use It for Private Texting](https://www.teksure.com/guides/signal-private-messaging-guide)
+- [How to Use Marco Polo to Send Video Messages to Family](https://www.teksure.com/guides/marco-polo-video-messaging)
+- [How to Use WhatsApp Channels to Follow News and Updates](https://www.teksure.com/guides/whatsapp-channels-guide)
+- [How to Watch Movies and TV Together Over FaceTime Using SharePlay](https://www.teksure.com/guides/facetime-shareplay-watch-together)
+- [How to Send a Video Message — Text, Email, and Social](https://www.teksure.com/guides/video-message-send-guide)
+- [How to Join a Zoom Call on Your Smart TV](https://www.teksure.com/guides/zoom-on-smart-tv-guide)
+- [How to Host a Zoom Meeting: Waiting Rooms, Muting, and Invites](https://www.teksure.com/guides/zoom-host-meeting-guide)
+- [How to Turn On Live Captions in Zoom for Easier Listening](https://www.teksure.com/guides/zoom-captions-guide)
+- [How to Record a Zoom Meeting to Watch Later](https://www.teksure.com/guides/zoom-record-meeting-guide)
+- [How to Use FaceTime Reactions and Effects During a Video Call](https://www.teksure.com/guides/facetime-reactions-guide)
+- [How to Create and Manage an iMessage Group Chat](https://www.teksure.com/guides/imessage-group-chat-guide)
+- [How to Share and Collaborate on a Note in Apple Notes](https://www.teksure.com/guides/share-notes-iphone-guide)
+- [How to Use WhatsApp Status to Share Photos and Updates](https://www.teksure.com/guides/whatsapp-status-guide)
+- [How to Send Free Digital Greeting Cards with Hallmark eCards](https://www.teksure.com/guides/hallmark-ecard-guide)
+- [How to Look Better on Video Calls](https://www.teksure.com/guides/improve-video-call-lighting)
+- [How to Send and Receive Voice Messages in WhatsApp](https://www.teksure.com/guides/whatsapp-voice-message-guide)
+- [How to Back Up Your WhatsApp Chats](https://www.teksure.com/guides/whatsapp-backup-guide)
+- [Telegram for Beginners: Messages, Groups, and Channels](https://www.teksure.com/guides/telegram-basics-guide)
 - …and 36 more in this topic — see https://www.teksure.com/sitemap.xml
 
 ### life transitions (47)
@@ -816,9 +816,8 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [Cómo conectarse a una red WiFi](https://www.teksure.com/guides/es-connect-wifi)
 - [Cómo configurar un router WiFi nuevo](https://www.teksure.com/guides/es-setup-wifi-router)
 
-### online banking (36)
+### online banking (35)
 
-- [How to Set Up Online Banking for the First Time](https://www.teksure.com/guides/how-to-set-up-online-banking)
 - [What Is FDIC Insurance and How Does It Protect You?](https://www.teksure.com/guides/understanding-fdic-insurance)
 - [How to Deposit a Check With Your Phone Camera](https://www.teksure.com/guides/mobile-check-deposit-how-to)
 - [How to Pay Bills Online Safely](https://www.teksure.com/guides/pay-bills-online-safely)
@@ -948,14 +947,13 @@ each guide is self-contained and includes the exact menu paths for the device.
 - [Claude Code Agent Teams for Complex Projects](https://www.teksure.com/guides/claude-code-agent-teams)
 - [Automating with Claude Code Schedules](https://www.teksure.com/guides/claude-code-scheduled-tasks)
 
-### online privacy (18)
+### online privacy (17)
 
 - [Spring Clean Your Google Account in 30 Minutes](https://www.teksure.com/guides/google-account-spring-cleaning-2026)
 - [Reset What Your Amazon Echo Has Heard — Delete Old Recordings](https://www.teksure.com/guides/reset-amazon-echo-privacy-recordings)
 - [Turn Off Smart TV Ad Tracking — Vizio, Samsung, LG, Roku](https://www.teksure.com/guides/smart-tv-ad-tracking-turn-off-2026)
 - [How to Stop Unwanted Emails](https://www.teksure.com/guides/how-to-stop-unwanted-emails-unsubscribe-2026)
 - [How to Stop Apps From Tracking You on Your iPhone](https://www.teksure.com/guides/turn-off-ad-tracking-iphone-app-tracking-transparency)
-- [How to Check If Your Email Was Exposed in a Data Breach](https://www.teksure.com/guides/check-if-your-email-was-in-a-data-breach)
 - [How to Turn Off Personalized Ads on Facebook, Instagram, and Google](https://www.teksure.com/guides/turn-off-targeted-ads-facebook-instagram-google)
 - [What Is a Password Manager, and Do You Actually Need One?](https://www.teksure.com/guides/password-manager-basics-for-beginners)
 - [What Is the Dark Web? A Plain-English Explanation](https://www.teksure.com/guides/what-is-the-dark-web)

@@ -165,6 +165,2376 @@
       "source": "/tools/bluetooth-pairing-help",
       "destination": "/tools/bluetooth-pairing-helper",
       "permanent": true
+    },
+    {
+      "source": "/tools/aarp-membership-use",
+      "destination": "/guides/aarp-membership-tech-benefits",
+      "permanent": true
+    },
+    {
+      "source": "/tools/aarp-tax-aide-guide",
+      "destination": "/guides/senior-free-tax-prep-aarp-tax-aide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/accessibility-shortcuts-iphone",
+      "destination": "/tools/iphone-shortcuts",
+      "permanent": true
+    },
+    {
+      "source": "/tools/accessible-travel-apps",
+      "destination": "/tools/accessible-travel-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/tools/accessible-travel-guide",
+      "destination": "/tools/accessible-travel-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/tools/account-recovery-plan",
+      "destination": "/tools/account-recovery",
+      "permanent": true
+    },
+    {
+      "source": "/tools/accuweather-for-seniors",
+      "destination": "/guides/accuweather-app-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/ai-clone-voice-for-seniors",
+      "destination": "/guides/ai-voice-clone-scam-warning",
+      "permanent": true
+    },
+    {
+      "source": "/tools/ai-for-senior-email-writing",
+      "destination": "/guides/ai-for-email-writing",
+      "permanent": true
+    },
+    {
+      "source": "/tools/ai-health-questions",
+      "destination": "/guides/how-to-use-claude-ai-health-questions",
+      "permanent": true
+    },
+    {
+      "source": "/tools/ai-image-generators",
+      "destination": "/guides/ai-image-generators",
+      "permanent": true
+    },
+    {
+      "source": "/tools/ai-photo-editing-for-seniors",
+      "destination": "/guides/ai-photo-editing",
+      "permanent": true
+    },
+    {
+      "source": "/tools/ai-senior-search",
+      "destination": "/guides/ai-search-engines",
+      "permanent": true
+    },
+    {
+      "source": "/tools/air-fryer-for-seniors",
+      "destination": "/tools/air-fryer-basics",
+      "permanent": true
+    },
+    {
+      "source": "/tools/alexa-med-reminders",
+      "destination": "/guides/alexa-reminders-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/alexa-routines-primer",
+      "destination": "/guides/alexa-routines-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/alexa-shopping-list",
+      "destination": "/guides/alexa-shopping-list-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/amazon-fresh-senior-order",
+      "destination": "/guides/amazon-fresh-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/amazon-music-for-seniors",
+      "destination": "/guides/amazon-music-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/amazon-pharmacy-for-seniors",
+      "destination": "/guides/use-amazon-pharmacy",
+      "permanent": true
+    },
+    {
+      "source": "/tools/amazon-prime-mastery",
+      "destination": "/guides/how-to-use-amazon-prime",
+      "permanent": true
+    },
+    {
+      "source": "/tools/amazon-prime-perks",
+      "destination": "/guides/how-to-use-amazon-prime",
+      "permanent": true
+    },
+    {
+      "source": "/tools/amazon-returns-basics",
+      "destination": "/guides/amazon-returns-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/amazon-shopping-tips",
+      "destination": "/guides/amazon-shopping",
+      "permanent": true
+    },
+    {
+      "source": "/tools/android-accessibility-features",
+      "destination": "/guides/android-accessibility-features",
+      "permanent": true
+    },
+    {
+      "source": "/tools/app-phone-frozen-fix",
+      "destination": "/guides/phone-screen-frozen-fix",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-calendar-tips-for-seniors",
+      "destination": "/guides/apple-calendar-beginners",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-fitness-plus-for-seniors",
+      "destination": "/guides/apple-fitness-plus-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-fitness-plus-review",
+      "destination": "/guides/apple-fitness-plus-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-health-app-tutorial",
+      "destination": "/guides/use-apple-health-app-for-seniors-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-id-account-security",
+      "destination": "/guides/apple-id-security-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-id-recovery-for-seniors",
+      "destination": "/guides/apple-id-recovery-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-intelligence-guide",
+      "destination": "/guides/apple-intelligence-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-music-for-seniors",
+      "destination": "/guides/use-apple-music-beginners",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-notes-for-seniors",
+      "destination": "/guides/apple-notes-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-podcasts-for-seniors",
+      "destination": "/guides/apple-podcasts-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-tv-plus-for-seniors",
+      "destination": "/guides/apple-tv-plus-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-tv-plus-guide",
+      "destination": "/guides/apple-tv-plus-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-tv-setup-for-seniors",
+      "destination": "/guides/how-to-use-apple-tv",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-watch-accessibility",
+      "destination": "/tools/apple-watch-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-watch-bands-for-seniors",
+      "destination": "/tools/apple-watch-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-watch-faces-for-seniors",
+      "destination": "/tools/apple-watch-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-watch-sleep-for-60",
+      "destination": "/guides/how-to-track-sleep-apple-watch",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-watch-texting-tips",
+      "destination": "/tools/apple-watch-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/apple-watch-vs-fitbit-seniors",
+      "destination": "/guides/fitbit-vs-apple-watch-compare",
+      "permanent": true
+    },
+    {
+      "source": "/tools/auto-bill-pay-setup",
+      "destination": "/guides/how-to-set-up-bill-auto-pay",
+      "permanent": true
+    },
+    {
+      "source": "/tools/backup-strategy",
+      "destination": "/guides/data-backup-strategy",
+      "permanent": true
+    },
+    {
+      "source": "/tools/backup-your-phone",
+      "destination": "/guides/es-phone-backup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/battery-drain-fix",
+      "destination": "/guides/android-battery-drain-background-apps-how-to-fix",
+      "permanent": true
+    },
+    {
+      "source": "/tools/bird-id-merlin",
+      "destination": "/tools/bird-id-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/bitwarden-setup-seniors",
+      "destination": "/guides/bitwarden-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/block-number-how-to",
+      "destination": "/guides/block-phone-number-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/block-spam-calls-texts",
+      "destination": "/guides/block-spam-calls-iphone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/blood-pressure-cuffs",
+      "destination": "/tools/blood-pressure-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/blood-pressure-log",
+      "destination": "/tools/blood-pressure-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/blood-pressure-tracker",
+      "destination": "/tools/blood-pressure-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/blood-pressure-tracking-apps",
+      "destination": "/tools/blood-pressure-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/bluetooth-pairing-troubleshoot",
+      "destination": "/guides/bluetooth-troubleshoot",
+      "permanent": true
+    },
+    {
+      "source": "/tools/brain-training-apps",
+      "destination": "/guides/lumosity-brain-training-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/breach-response",
+      "destination": "/guides/data-breach-response",
+      "permanent": true
+    },
+    {
+      "source": "/tools/budgeting-apps",
+      "destination": "/guides/budgeting-apps-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/calendar-reminders-apps",
+      "destination": "/guides/calendar-reminders",
+      "permanent": true
+    },
+    {
+      "source": "/tools/caller-id-verification",
+      "destination": "/tools/caller-id-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/camelcamelcamel-for-seniors",
+      "destination": "/guides/camelcamelcamel-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/canva-for-seniors-guide",
+      "destination": "/guides/canva-basics-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/carplay-android-auto",
+      "destination": "/guides/apple-carplay-android-auto",
+      "permanent": true
+    },
+    {
+      "source": "/tools/cast-phone-to-tv",
+      "destination": "/guides/cast-phone-to-tv",
+      "permanent": true
+    },
+    {
+      "source": "/tools/charity-scam-check",
+      "destination": "/guides/charity-scam-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/cloud-storage-picker",
+      "destination": "/guides/use-cloud-storage",
+      "permanent": true
+    },
+    {
+      "source": "/tools/consumer-cellular-plans",
+      "destination": "/guides/consumer-cellular-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/continuous-glucose-monitor-for-seniors",
+      "destination": "/guides/how-to-choose-continuous-glucose-monitor",
+      "permanent": true
+    },
+    {
+      "source": "/tools/copy-paste-coach",
+      "destination": "/guides/how-to-copy-paste",
+      "permanent": true
+    },
+    {
+      "source": "/tools/costco-app-for-seniors",
+      "destination": "/guides/costco-app-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/crash-detection-for-seniors",
+      "destination": "/guides/iphone-crash-detection",
+      "permanent": true
+    },
+    {
+      "source": "/tools/credit-freeze-for-seniors",
+      "destination": "/tools/credit-freeze-walkthrough",
+      "permanent": true
+    },
+    {
+      "source": "/tools/credit-freeze-how-to",
+      "destination": "/tools/credit-freeze-walkthrough",
+      "permanent": true
+    },
+    {
+      "source": "/tools/crockpot-instant-pot-apps",
+      "destination": "/guides/use-instant-pot-app",
+      "permanent": true
+    },
+    {
+      "source": "/tools/dark-mode-guide",
+      "destination": "/guides/dark-mode-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/deepfake-spotter",
+      "destination": "/tools/deepfake-video-spotter",
+      "permanent": true
+    },
+    {
+      "source": "/tools/digital-declutter-for-seniors",
+      "destination": "/guides/digital-declutter",
+      "permanent": true
+    },
+    {
+      "source": "/tools/digital-detox-apps",
+      "destination": "/guides/digital-detox-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/digital-legacy-planning",
+      "destination": "/guides/digital-legacy",
+      "permanent": true
+    },
+    {
+      "source": "/tools/digital-legacy-setup",
+      "destination": "/guides/digital-legacy",
+      "permanent": true
+    },
+    {
+      "source": "/tools/digital-photo-frame-picker",
+      "destination": "/guides/digital-photo-frame-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/digital-photo-frames",
+      "destination": "/guides/digital-photo-frames-best-for-seniors-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/document-scanner-coach",
+      "destination": "/tools/document-scanner-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/dropbox-for-seniors",
+      "destination": "/guides/dropbox-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/email-declutter-for-seniors",
+      "destination": "/tools/email-declutter",
+      "permanent": true
+    },
+    {
+      "source": "/tools/emergency-kit-checklist-senior",
+      "destination": "/tools/emergency-kit-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/tools/emergency-sos-setup",
+      "destination": "/guides/emergency-sos-phone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/esim-setup-guide",
+      "destination": "/guides/esim-setup-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/estate-sale-apps",
+      "destination": "/tools/estate-sale-helper",
+      "permanent": true
+    },
+    {
+      "source": "/tools/excel-for-seniors",
+      "destination": "/guides/excel-basics-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/facebook-for-beginners",
+      "destination": "/guides/es-facebook-beginners",
+      "permanent": true
+    },
+    {
+      "source": "/tools/facebook-marketplace-tips",
+      "destination": "/guides/facebook-marketplace",
+      "permanent": true
+    },
+    {
+      "source": "/tools/facebook-privacy-audit",
+      "destination": "/tools/privacy-audit",
+      "permanent": true
+    },
+    {
+      "source": "/tools/facebook-privacy-coach",
+      "destination": "/guides/facebook-privacy-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/fall-prevention-assessment",
+      "destination": "/tools/fall-prevention-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/family-calendar-apps",
+      "destination": "/tools/shared-family-calendar",
+      "permanent": true
+    },
+    {
+      "source": "/tools/family-password-sharing",
+      "destination": "/guides/password-sharing-family-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/family-tree-apps",
+      "destination": "/guides/use-ancestry-family-tree",
+      "permanent": true
+    },
+    {
+      "source": "/tools/fetch-rewards-for-seniors",
+      "destination": "/guides/fetch-rewards-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/find-a-doctor-apps",
+      "destination": "/guides/healthgrades-find-doctor-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/find-my-device-android-seniors",
+      "destination": "/guides/find-my-device-android",
+      "permanent": true
+    },
+    {
+      "source": "/tools/fire-tv-stick-guide",
+      "destination": "/guides/how-to-use-fire-tv-stick",
+      "permanent": true
+    },
+    {
+      "source": "/tools/fitbit-vs-apple-watch",
+      "destination": "/guides/fitbit-vs-apple-watch-compare",
+      "permanent": true
+    },
+    {
+      "source": "/tools/food-delivery-compare",
+      "destination": "/guides/food-delivery-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/free-legal-aid-for-seniors",
+      "destination": "/tools/free-legal-help",
+      "permanent": true
+    },
+    {
+      "source": "/tools/free-tax-filing-coach",
+      "destination": "/tools/free-tax-filing",
+      "permanent": true
+    },
+    {
+      "source": "/tools/free-up-phone-storage",
+      "destination": "/guides/free-up-storage-phone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/garage-door-opener-smart",
+      "destination": "/tools/smart-garage-door",
+      "permanent": true
+    },
+    {
+      "source": "/tools/gas-buddy-app-guide",
+      "destination": "/tools/gas-buddy-alternatives",
+      "permanent": true
+    },
+    {
+      "source": "/tools/gift-card-scam-defense",
+      "destination": "/guides/gift-card-scam-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-account-security-checkup",
+      "destination": "/guides/google-account-security-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-assistant-routines-for-seniors",
+      "destination": "/guides/google-assistant-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-assistant-senior-commands",
+      "destination": "/guides/google-assistant-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-assistant-training",
+      "destination": "/guides/google-assistant-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-calendar-senior-tutorial",
+      "destination": "/guides/google-calendar-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-docs-for-senior-writing",
+      "destination": "/guides/use-google-docs-writing",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-docs-senior-basics",
+      "destination": "/guides/google-docs-basics",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-flights-for-seniors",
+      "destination": "/guides/use-google-flights",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-gemini-for-seniors",
+      "destination": "/guides/using-google-gemini",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-home-basics",
+      "destination": "/guides/google-home-setup-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-keep-for-seniors",
+      "destination": "/guides/use-google-keep-notes",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-meet-for-seniors",
+      "destination": "/guides/how-to-use-google-meet",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-one-for-seniors",
+      "destination": "/guides/google-one-storage-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-photos-for-seniors",
+      "destination": "/guides/google-photos-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-photos-videos-for-seniors",
+      "destination": "/guides/google-photos-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-sheets-basics",
+      "destination": "/guides/google-sheets-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-slides-basics",
+      "destination": "/guides/google-slides-basics",
+      "permanent": true
+    },
+    {
+      "source": "/tools/google-translate-mastery",
+      "destination": "/guides/google-translate-app",
+      "permanent": true
+    },
+    {
+      "source": "/tools/grandpad-tablet",
+      "destination": "/guides/use-grandpad-tablet",
+      "permanent": true
+    },
+    {
+      "source": "/tools/gratitude-practice-app",
+      "destination": "/guides/how-to-start-gratitude-practice",
+      "permanent": true
+    },
+    {
+      "source": "/tools/grocery-delivery-apps",
+      "destination": "/guides/grocery-delivery-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/grocery-delivery-coach",
+      "destination": "/guides/grocery-delivery-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/grocery-list-builder",
+      "destination": "/tools/grocery-list-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/group-chat-tips",
+      "destination": "/guides/whatsapp-group-chat-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/group-text-coach",
+      "destination": "/tools/group-text-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/group-text-setup-for-senior-families",
+      "destination": "/tools/group-text-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/high-blood-pressure-apps",
+      "destination": "/tools/blood-pressure-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/home-health-aide-find",
+      "destination": "/guides/how-to-find-culturally-competent-home-health-aide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/home-inventory-app",
+      "destination": "/guides/home-inventory-documentation",
+      "permanent": true
+    },
+    {
+      "source": "/tools/home-inventory-apps",
+      "destination": "/guides/home-inventory-documentation",
+      "permanent": true
+    },
+    {
+      "source": "/tools/home-security-cameras-for-seniors",
+      "destination": "/guides/best-home-security-cameras-seniors",
+      "permanent": true
+    },
+    {
+      "source": "/tools/honey-coupon-app-for-seniors",
+      "destination": "/guides/honey-coupon-extension",
+      "permanent": true
+    },
+    {
+      "source": "/tools/icloud-backup-for-seniors",
+      "destination": "/guides/backup-iphone-to-icloud",
+      "permanent": true
+    },
+    {
+      "source": "/tools/identity-theft-recovery",
+      "destination": "/guides/identity-theft-recovery",
+      "permanent": true
+    },
+    {
+      "source": "/tools/instacart-for-seniors",
+      "destination": "/guides/instacart-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/instagram-senior-guide",
+      "destination": "/guides/how-to-use-instagram",
+      "permanent": true
+    },
+    {
+      "source": "/tools/instant-pot-apps",
+      "destination": "/guides/use-instant-pot-app",
+      "permanent": true
+    },
+    {
+      "source": "/tools/instant-pot-for-seniors",
+      "destination": "/guides/use-instant-pot-app",
+      "permanent": true
+    },
+    {
+      "source": "/tools/internet-speed-test-coach",
+      "destination": "/guides/test-internet-speed-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/iphone-camera-tips-for-seniors",
+      "destination": "/guides/iphone-camera-tips",
+      "permanent": true
+    },
+    {
+      "source": "/tools/iphone-camera-tips-seniors",
+      "destination": "/guides/iphone-camera-tips",
+      "permanent": true
+    },
+    {
+      "source": "/tools/iphone-voiceover-guide",
+      "destination": "/guides/use-voiceover-iphone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/irs-gov-online-account",
+      "destination": "/guides/irs-online-account-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/irs-online-account",
+      "destination": "/guides/irs-online-account-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/keyboard-shortcuts-cheatsheet",
+      "destination": "/tools/keyboard-shortcuts",
+      "permanent": true
+    },
+    {
+      "source": "/tools/library-app-helper",
+      "destination": "/tools/library-tech-helper",
+      "permanent": true
+    },
+    {
+      "source": "/tools/live-captions-apps",
+      "destination": "/guides/use-live-captions-phone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/live-captions-for-seniors",
+      "destination": "/guides/use-live-captions-phone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/live-captions-setup",
+      "destination": "/guides/use-live-captions-phone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/local-tv-cord-cutting",
+      "destination": "/guides/tv-antenna-setup-cord-cutting-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/mac-finder-basics",
+      "destination": "/guides/mac-finder-tips",
+      "permanent": true
+    },
+    {
+      "source": "/tools/magsafe-charging-for-seniors",
+      "destination": "/guides/magsafe-wireless-charging-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/maps-offline-for-senior-travel",
+      "destination": "/guides/how-to-download-google-maps-offline-for-travel",
+      "permanent": true
+    },
+    {
+      "source": "/tools/max-hbo-streaming-guide",
+      "destination": "/guides/max-hbo-streaming-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/max-streaming-for-seniors",
+      "destination": "/guides/max-streaming-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/meal-planning-apps",
+      "destination": "/guides/meal-planning-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/meal-planning-for-seniors",
+      "destination": "/guides/meal-planning-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/meals-on-wheels-guide",
+      "destination": "/guides/how-to-find-kosher-meals-on-wheels",
+      "permanent": true
+    },
+    {
+      "source": "/tools/medical-id-setup",
+      "destination": "/guides/use-medical-id-phone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/medicare-advantage-compare",
+      "destination": "/guides/compare-medicare-advantage-plans",
+      "permanent": true
+    },
+    {
+      "source": "/tools/medicare-extra-help",
+      "destination": "/guides/medicare-extra-help-program",
+      "permanent": true
+    },
+    {
+      "source": "/tools/medication-reminder-apps",
+      "destination": "/tools/medication-reminder-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/memoir-writing-apps-for-seniors",
+      "destination": "/tools/memoir-writing-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/mental-health-apps-compare",
+      "destination": "/guides/mental-health-apps-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/mesh-wifi-picker",
+      "destination": "/guides/mesh-wifi-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/microsoft-copilot-for-seniors",
+      "destination": "/guides/microsoft-copilot-beginners",
+      "permanent": true
+    },
+    {
+      "source": "/tools/microsoft-teams-for-seniors",
+      "destination": "/guides/microsoft-teams-basics",
+      "permanent": true
+    },
+    {
+      "source": "/tools/mint-mobile-for-seniors",
+      "destination": "/guides/mint-mobile-plan-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/mobile-deposit-guide",
+      "destination": "/guides/mobile-check-deposit",
+      "permanent": true
+    },
+    {
+      "source": "/tools/music-app-picker",
+      "destination": "/tools/music-streaming-picker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/my-medicare-gov",
+      "destination": "/guides/medicare-gov-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/my-social-security-account",
+      "destination": "/guides/my-social-security-account-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/mychart-patient-portal-guide",
+      "destination": "/guides/use-patient-portal-mychart",
+      "permanent": true
+    },
+    {
+      "source": "/tools/national-parks-app-seniors",
+      "destination": "/tools/national-parks-trip",
+      "permanent": true
+    },
+    {
+      "source": "/tools/nextdoor-basics",
+      "destination": "/guides/nextdoor-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/nyt-cooking-for-seniors",
+      "destination": "/guides/use-nyt-cooking-app",
+      "permanent": true
+    },
+    {
+      "source": "/tools/offline-maps-how-to",
+      "destination": "/guides/download-offline-maps-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/onedrive-basics",
+      "destination": "/guides/onedrive-setup-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/online-board-games",
+      "destination": "/tools/board-games-online",
+      "permanent": true
+    },
+    {
+      "source": "/tools/online-eye-exam-apps",
+      "destination": "/tools/eye-exam-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/online-high-yield-savings-for-seniors",
+      "destination": "/guides/how-to-open-high-yield-savings-online",
+      "permanent": true
+    },
+    {
+      "source": "/tools/online-notary-coach",
+      "destination": "/guides/online-notary-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/outlook-basics-seniors",
+      "destination": "/guides/outlook-tips-seniors",
+      "permanent": true
+    },
+    {
+      "source": "/tools/outlook-for-seniors",
+      "destination": "/guides/outlook-tips-seniors",
+      "permanent": true
+    },
+    {
+      "source": "/tools/password-generator-for-seniors",
+      "destination": "/tools/password-generator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/password-manager-compare",
+      "destination": "/tools/password-manager",
+      "permanent": true
+    },
+    {
+      "source": "/tools/password-manager-comparison-for-seniors",
+      "destination": "/tools/password-manager",
+      "permanent": true
+    },
+    {
+      "source": "/tools/password-manager-picker",
+      "destination": "/tools/password-manager",
+      "permanent": true
+    },
+    {
+      "source": "/tools/password-strength-checker",
+      "destination": "/tools/password-strength",
+      "permanent": true
+    },
+    {
+      "source": "/tools/paypal-safely-for-seniors",
+      "destination": "/guides/use-paypal-safely",
+      "permanent": true
+    },
+    {
+      "source": "/tools/peacock-streaming-guide",
+      "destination": "/guides/use-peacock-streaming",
+      "permanent": true
+    },
+    {
+      "source": "/tools/perplexity-ai-for-seniors",
+      "destination": "/guides/perplexity-ai-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/pet-adoption-apps",
+      "destination": "/guides/senior-pet-adoption-senior-for-senior-programs",
+      "permanent": true
+    },
+    {
+      "source": "/tools/pet-sitter-apps-for-seniors",
+      "destination": "/guides/use-rover-pet-sitter",
+      "permanent": true
+    },
+    {
+      "source": "/tools/pet-tracker-for-seniors",
+      "destination": "/guides/how-to-use-pet-gps-tracker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/phone-storage-cleanup",
+      "destination": "/tools/storage-cleanup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/phone-transfer-for-seniors",
+      "destination": "/guides/phone-data-transfer",
+      "permanent": true
+    },
+    {
+      "source": "/tools/phone-wont-charge",
+      "destination": "/guides/phone-wont-charge-7-fixes-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/photo-organization-coach",
+      "destination": "/guides/photo-organization",
+      "permanent": true
+    },
+    {
+      "source": "/tools/photo-print-and-cards",
+      "destination": "/guides/how-to-print-a-photo",
+      "permanent": true
+    },
+    {
+      "source": "/tools/pill-identifier-app",
+      "destination": "/guides/pill-identifier-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/pill-reminder-apps-for-seniors",
+      "destination": "/guides/pill-reminder-medication-app",
+      "permanent": true
+    },
+    {
+      "source": "/tools/pinterest-for-seniors",
+      "destination": "/guides/pinterest-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/plant-id-apps",
+      "destination": "/guides/picturethis-plant-id-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/power-of-attorney-types",
+      "destination": "/guides/power-of-attorney-basics",
+      "permanent": true
+    },
+    {
+      "source": "/tools/print-from-phone-for-seniors",
+      "destination": "/tools/print-from-phone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/privacy-audit-checklist",
+      "destination": "/tools/privacy-audit",
+      "permanent": true
+    },
+    {
+      "source": "/tools/qr-code-basics-for-seniors",
+      "destination": "/guides/qr-code-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/radar-scope-weather-app",
+      "destination": "/guides/weather-radar-app-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/rakuten-cashback-for-seniors",
+      "destination": "/guides/rakuten-cashback-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/raspberry-pi-seniors",
+      "destination": "/guides/raspberry-pi-introduction",
+      "permanent": true
+    },
+    {
+      "source": "/tools/reddit-for-seniors",
+      "destination": "/guides/reddit-basics-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/remote-help-setup",
+      "destination": "/tools/remote-tech-help",
+      "permanent": true
+    },
+    {
+      "source": "/tools/robocall-blocker-apps",
+      "destination": "/tools/robocall-blocker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/rural-internet",
+      "destination": "/guides/how-to-get-rural-internet-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/screen-time",
+      "destination": "/tools/screen-time-advisor",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-aarp-travel-discounts",
+      "destination": "/guides/senior-travel-discounts-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-account-recovery",
+      "destination": "/tools/account-recovery",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-adult-day-care-tech",
+      "destination": "/tools/adult-day-care-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-ai-translation",
+      "destination": "/guides/ai-translation-tools",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-airbnb-basics",
+      "destination": "/guides/airbnb-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-airpods",
+      "destination": "/guides/how-to-use-airpods",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-amazon-shopping",
+      "destination": "/guides/amazon-shopping",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-android-accessibility",
+      "destination": "/guides/android-magnification-accessibility",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-android-auto",
+      "destination": "/guides/android-auto-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-android-backup",
+      "destination": "/guides/backup-contacts-android",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-android-battery",
+      "destination": "/guides/android-battery-tips",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-android-camera",
+      "destination": "/guides/android-camera-tips",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-android-contacts",
+      "destination": "/guides/backup-contacts-android",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-android-emergency-sos",
+      "destination": "/guides/android-emergency-sos-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-android-find-my-device",
+      "destination": "/guides/find-my-device-android",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-android-google-assistant",
+      "destination": "/guides/how-to-use-google-assistant-android",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-android-lock-screen",
+      "destination": "/guides/android-app-lock-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-android-voice-typing",
+      "destination": "/guides/voice-typing-android-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-apple-fitness",
+      "destination": "/guides/apple-fitness-plus-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-apple-intelligence",
+      "destination": "/guides/apple-intelligence-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-apple-music",
+      "destination": "/guides/use-apple-music-beginners",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-apple-notes",
+      "destination": "/guides/apple-notes-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-apple-tv-basics",
+      "destination": "/guides/how-to-use-apple-tv",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-apple-watch",
+      "destination": "/tools/apple-watch-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-apple-watch-heart",
+      "destination": "/tools/apple-watch-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-apple-watch-setup",
+      "destination": "/tools/apple-watch-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-auto-bill-pay",
+      "destination": "/guides/how-to-set-up-bill-auto-pay",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-auto-update",
+      "destination": "/guides/windows-auto-update-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-backup-camera-apps",
+      "destination": "/tools/backup-camera-retrofit",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-blood-pressure-apps",
+      "destination": "/tools/blood-pressure-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-blood-pressure-log",
+      "destination": "/tools/blood-pressure-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-bluetooth-basics",
+      "destination": "/guides/bluetooth-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-brain-games",
+      "destination": "/tools/brain-games-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-brain-training",
+      "destination": "/guides/lumosity-brain-training-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-budgeting-apps",
+      "destination": "/guides/budgeting-apps-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-buy-nothing",
+      "destination": "/guides/buy-nothing-group-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-chrome-basics",
+      "destination": "/guides/chrome-tips",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-chromecast",
+      "destination": "/guides/how-to-use-chromecast",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-cloud-storage-picker",
+      "destination": "/guides/use-cloud-storage",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-consumer-cellular",
+      "destination": "/guides/consumer-cellular-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-cruise-booking-apps",
+      "destination": "/guides/cruise-booking-seniors",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-dark-mode-basics",
+      "destination": "/guides/dark-mode-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-dating-apps",
+      "destination": "/guides/senior-dating-apps-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-diabetic-foot-care",
+      "destination": "/tools/foot-care-seniors",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-dictation-apps",
+      "destination": "/tools/dictation-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-digital-declutter",
+      "destination": "/guides/digital-declutter",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-digital-detox-apps",
+      "destination": "/guides/digital-detox-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-digital-frames",
+      "destination": "/guides/digital-photo-frames-best-for-seniors-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-digital-legacy",
+      "destination": "/guides/digital-legacy",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-digital-legacy-planning",
+      "destination": "/guides/digital-legacy",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-doordash",
+      "destination": "/guides/doordash-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-dropbox-basics",
+      "destination": "/guides/dropbox-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-ebooks-kindle",
+      "destination": "/guides/use-kindle-app-ebooks",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-echo-dot",
+      "destination": "/guides/amazon-echo-dot-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-email-basics",
+      "destination": "/guides/email-basics-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-email-encryption",
+      "destination": "/guides/email-encryption-basics",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-emergency-alerts",
+      "destination": "/guides/emergency-weather-alerts-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-emergency-checklist",
+      "destination": "/tools/emergency-kit-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-emergency-contacts",
+      "destination": "/guides/emergency-contacts-iphone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-emergency-kit",
+      "destination": "/tools/tech-emergency-kit",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-emergency-kit-digital",
+      "destination": "/tools/tech-emergency-kit",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-emergency-sos",
+      "destination": "/guides/emergency-sos-phone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-eye-exam-apps",
+      "destination": "/tools/eye-exam-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-facebook-basics",
+      "destination": "/guides/how-to-use-facebook",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-facebook-marketplace",
+      "destination": "/guides/facebook-marketplace",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-facetime-basics",
+      "destination": "/guides/facetime-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-family-sharing",
+      "destination": "/guides/family-location-sharing",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-find-my-phone",
+      "destination": "/guides/use-find-my-iphone-find-lost-phone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-focus-modes",
+      "destination": "/guides/iphone-focus-modes",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-google-assistant-basics",
+      "destination": "/guides/google-assistant-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-google-calendar",
+      "destination": "/guides/google-calendar-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-google-docs",
+      "destination": "/guides/google-docs-basics",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-google-gemini",
+      "destination": "/guides/using-google-gemini",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-google-home-basics",
+      "destination": "/guides/google-home-setup-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-google-maps-basics",
+      "destination": "/guides/google-maps-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-google-meet",
+      "destination": "/guides/how-to-use-google-meet",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-google-one",
+      "destination": "/guides/google-one-storage-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-grocery-list-apps",
+      "destination": "/tools/grocery-list-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-hearing-aid-apps",
+      "destination": "/tools/hearing-aid-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-hearing-aids-bluetooth",
+      "destination": "/guides/connect-hearing-aids-phone-bluetooth",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-id-theft-recovery",
+      "destination": "/tools/id-theft-recovery",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-identity-theft-help",
+      "destination": "/guides/identity-theft-recovery",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-iheartradio",
+      "destination": "/guides/iheartradio-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-instacart",
+      "destination": "/guides/instacart-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-instagram-basics",
+      "destination": "/guides/how-to-use-instagram",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-internet-speed-test",
+      "destination": "/guides/test-internet-speed-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-ipad-buying-guide",
+      "destination": "/guides/ipad-buying-guide-seniors",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-ipad-facetime",
+      "destination": "/guides/use-facetime-iphone-ipad",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-ipad-wifi",
+      "destination": "/guides/how-to-join-wifi-ipad",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-iphone-accessibility",
+      "destination": "/guides/iphone-accessibility-features",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-libby-library",
+      "destination": "/guides/use-libby-app-library-books",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-local-library-tech",
+      "destination": "/tools/local-library-finder",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-mac-accessibility",
+      "destination": "/guides/mac-accessibility-features",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-mac-finder",
+      "destination": "/guides/mac-finder-tips",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-mac-shortcuts",
+      "destination": "/guides/mac-automator-shortcuts",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-mac-time-machine",
+      "destination": "/guides/mac-time-machine",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-mammogram-schedule",
+      "destination": "/guides/schedule-mammogram-online",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-meal-planning-apps",
+      "destination": "/guides/meal-planning-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-meals-on-wheels",
+      "destination": "/guides/how-to-find-kosher-meals-on-wheels",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-medical-alert-systems",
+      "destination": "/guides/best-medical-alert-systems-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-medicare-app",
+      "destination": "/guides/medicare-app-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-medicare-online",
+      "destination": "/guides/medicare-online-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-medication-management",
+      "destination": "/guides/medication-management-digital",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-medication-reminders",
+      "destination": "/guides/es-medication-reminders",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-meetup-groups",
+      "destination": "/guides/use-meetup-finding-groups",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-memoir-writing",
+      "destination": "/tools/memoir-writing-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-mental-health-apps",
+      "destination": "/guides/mental-health-apps-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-mint-mobile",
+      "destination": "/guides/mint-mobile-plan-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-mobile-banking",
+      "destination": "/guides/phone-mobile-banking",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-movie-discount-finder",
+      "destination": "/tools/senior-discount-finder",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-mychart",
+      "destination": "/guides/how-to-use-mychart",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-mychart-guide",
+      "destination": "/guides/how-to-use-mychart",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-national-parks",
+      "destination": "/tools/national-parks-trip",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-nest-thermostat",
+      "destination": "/guides/google-nest-thermostat-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-nextdoor",
+      "destination": "/guides/nextdoor-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-nextdoor-basics",
+      "destination": "/guides/nextdoor-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-onedrive-basics",
+      "destination": "/guides/onedrive-setup-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-online-dating",
+      "destination": "/tools/online-dating-safety",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-passkeys-setup",
+      "destination": "/guides/passkeys-explained",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-password-managers",
+      "destination": "/guides/best-password-managers-2026",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-password-sharing",
+      "destination": "/guides/password-sharing-family-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-paypal",
+      "destination": "/guides/paypal-guide-seniors",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-pharmacy-apps",
+      "destination": "/guides/pharmacy-app-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-phone-accessibility",
+      "destination": "/guides/vision-accessibility-phone",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-phone-insurance",
+      "destination": "/tools/phone-insurance-decision",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-phone-transfer",
+      "destination": "/guides/phone-data-transfer",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-photo-backup",
+      "destination": "/tools/photo-backup-wizard",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-photo-book-apps",
+      "destination": "/guides/shutterfly-photo-book-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-photo-editing",
+      "destination": "/guides/ai-photo-editing",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-photo-slideshow",
+      "destination": "/guides/iphone-photo-slideshow",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-pinterest-basics",
+      "destination": "/guides/pinterest-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-plant-id-apps",
+      "destination": "/guides/picturethis-plant-id-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-rakuten-cashback",
+      "destination": "/guides/rakuten-cashback-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-real-estate",
+      "destination": "/tools/real-estate-app-picker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-reddit-basics",
+      "destination": "/guides/reddit-basics-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-ring-doorbell",
+      "destination": "/guides/ring-doorbell-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-robot-vacuum",
+      "destination": "/tools/robot-vacuum-picker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-robot-vacuum-guide",
+      "destination": "/tools/robot-vacuum-picker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-scan-old-photos",
+      "destination": "/tools/scan-old-photos",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-screen-time-apps",
+      "destination": "/tools/screen-time-advisor",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-siri-basics",
+      "destination": "/guides/how-to-use-siri",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-sleep-tracking",
+      "destination": "/guides/sleep-tracking-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-smart-doorbell-setup",
+      "destination": "/guides/smart-doorbell-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-smart-garage-door",
+      "destination": "/tools/smart-garage-door",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-smart-lock-guide",
+      "destination": "/tools/smart-lock-picker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-social-security-app",
+      "destination": "/tools/social-security-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-social-security-online",
+      "destination": "/guides/social-security-online-account",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-spotify-music",
+      "destination": "/guides/spotify-music",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-spotify-tips",
+      "destination": "/guides/how-to-use-spotify",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-symptom-tracker",
+      "destination": "/guides/health-symptom-tracker-app",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-target-circle",
+      "destination": "/guides/target-circle-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-tech-classes-online",
+      "destination": "/tools/online-classes-picker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-telehealth",
+      "destination": "/tools/telehealth-basics",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-telehealth-basics",
+      "destination": "/tools/telehealth-basics",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-televet",
+      "destination": "/tools/televet-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-trade-in",
+      "destination": "/tools/trade-in-estimator",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-travel-insurance",
+      "destination": "/tools/travel-insurance-reality",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-travel-insurance-apps",
+      "destination": "/tools/travel-insurance-reality",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-tv-buying-guide",
+      "destination": "/guides/smart-tv-buying-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-twitter-x",
+      "destination": "/guides/twitter-x-beginners",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-two-factor-auth",
+      "destination": "/guides/two-factor-auth",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-uber-eats",
+      "destination": "/guides/uber-eats-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-uber-lyft",
+      "destination": "/guides/how-to-use-uber-lyft",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-vacuum-picker",
+      "destination": "/tools/robot-vacuum-picker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-video-call-etiquette",
+      "destination": "/tools/video-call-etiquette",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-video-call-tablets",
+      "destination": "/guides/how-to-video-call",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-voice-memo",
+      "destination": "/tools/voice-memo-transcribe",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-voice-typing",
+      "destination": "/guides/use-voice-typing",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-voicemail",
+      "destination": "/tools/voicemail-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-volunteer-apps",
+      "destination": "/tools/volunteer-apps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-vpn",
+      "destination": "/tools/vpn-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-vpn-guide",
+      "destination": "/tools/vpn-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-walmart-app",
+      "destination": "/guides/use-walmart-app",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-weather-alerts",
+      "destination": "/tools/weather-alerts-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-weather-apps",
+      "destination": "/guides/weather-apps-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-whatsapp",
+      "destination": "/guides/whatsapp-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-whatsapp-basics",
+      "destination": "/guides/whatsapp-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-wifi-calling-guide",
+      "destination": "/tools/wifi-calling-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-wifi-mesh-network",
+      "destination": "/guides/mesh-wifi-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-windows-accessibility",
+      "destination": "/guides/windows-accessibility",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-windows-antivirus",
+      "destination": "/guides/best-antivirus-windows-seniors",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-windows-backup",
+      "destination": "/guides/windows-backup-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-windows-email",
+      "destination": "/guides/setup-email-windows-mail",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-windows-file-explorer",
+      "destination": "/guides/use-file-explorer-windows",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-windows-print",
+      "destination": "/guides/print-document-windows",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-windows-shortcuts",
+      "destination": "/guides/windows-advanced-shortcuts",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-windows-updates",
+      "destination": "/guides/check-windows-updates",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-youtube",
+      "destination": "/guides/youtube-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-youtube-channels",
+      "destination": "/guides/subscribe-youtube-channels",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-youtube-tips",
+      "destination": "/guides/youtube-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-youtube-tv",
+      "destination": "/guides/use-youtube-on-tv",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-zelle",
+      "destination": "/guides/zelle-basics-for-seniors",
+      "permanent": true
+    },
+    {
+      "source": "/tools/senior-zelle-venmo",
+      "destination": "/guides/venmo-zelle-cashapp-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/signal-app-for-private-messaging",
+      "destination": "/guides/use-signal-private-messaging",
+      "permanent": true
+    },
+    {
+      "source": "/tools/silence-unknown-callers",
+      "destination": "/guides/silence-unknown-callers-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/siri-shortcuts-for-seniors",
+      "destination": "/guides/iphone-siri-shortcuts-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/sleep-tracking-apps",
+      "destination": "/guides/sleep-tracking-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/sling-tv-for-seniors",
+      "destination": "/guides/sling-tv-setup-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-dishwasher-for-seniors",
+      "destination": "/guides/use-smart-dishwasher",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-doorbell-compare",
+      "destination": "/guides/smart-doorbell-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-doorbell-for-seniors",
+      "destination": "/guides/smart-doorbell-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-doorbell-picker",
+      "destination": "/guides/smart-doorbell-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-home-starter-kit",
+      "destination": "/tools/smart-home-starter",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-lock-for-seniors",
+      "destination": "/tools/smart-lock-picker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-lock-guide",
+      "destination": "/tools/smart-lock-picker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-plugs-for-senior-home",
+      "destination": "/guides/use-smart-plugs-automate-home",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-scale-bp-cuff-picker",
+      "destination": "/tools/smart-scale-picker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-scale-for-seniors",
+      "destination": "/tools/smart-scale-picker",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-speaker-privacy-for-seniors",
+      "destination": "/guides/smart-speaker-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-thermostat-coach",
+      "destination": "/tools/smart-thermostat-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-thermostat-for-seniors",
+      "destination": "/tools/smart-thermostat-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smart-thermostat-picks",
+      "destination": "/tools/smart-thermostat-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/smartwatch-health-features",
+      "destination": "/guides/best-smartwatch-health-seniors",
+      "permanent": true
+    },
+    {
+      "source": "/tools/social-security-claiming-apps",
+      "destination": "/tools/social-security-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/social-security-online",
+      "destination": "/guides/social-security-online-account",
+      "permanent": true
+    },
+    {
+      "source": "/tools/spotify-for-seniors",
+      "destination": "/guides/how-to-use-spotify",
+      "permanent": true
+    },
+    {
+      "source": "/tools/starlink-for-rural",
+      "destination": "/guides/how-to-use-starlink-for-rural-seniors",
+      "permanent": true
+    },
+    {
+      "source": "/tools/sweepstakes-scam-guide",
+      "destination": "/guides/lottery-sweepstakes-scam-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tap-to-pay-setup",
+      "destination": "/guides/nfc-tap-to-pay-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/target-circle-360-for-seniors",
+      "destination": "/guides/target-circle-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/telehealth-for-seniors",
+      "destination": "/tools/telehealth-basics",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tiktok-safety-guide",
+      "destination": "/guides/tiktok-safety-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/toll-text-scam",
+      "destination": "/guides/unpaid-toll-text-scam",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tsa-precheck-global",
+      "destination": "/guides/tsa-precheck-global-entry",
+      "permanent": true
+    },
+    {
+      "source": "/tools/tsa-precheck-global-entry-guide",
+      "destination": "/guides/tsa-precheck-global-entry",
+      "permanent": true
+    },
+    {
+      "source": "/tools/two-factor-app-picks",
+      "destination": "/tools/two-factor-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/two-factor-auth-guide",
+      "destination": "/guides/two-factor-auth",
+      "permanent": true
+    },
+    {
+      "source": "/tools/two-factor-auth-setup",
+      "destination": "/guides/two-factor-auth",
+      "permanent": true
+    },
+    {
+      "source": "/tools/uber-lyft-for-seniors",
+      "destination": "/guides/how-to-use-uber-lyft",
+      "permanent": true
+    },
+    {
+      "source": "/tools/usps-informed-delivery",
+      "destination": "/guides/usps-informed-delivery-setup",
+      "permanent": true
+    },
+    {
+      "source": "/tools/usps-mail-forward-hold",
+      "destination": "/guides/how-to-forward-mail-seasonally-usps",
+      "permanent": true
+    },
+    {
+      "source": "/tools/va-aid-and-attendance",
+      "destination": "/guides/how-to-apply-va-aid-and-attendance",
+      "permanent": true
+    },
+    {
+      "source": "/tools/video-call-group-tips",
+      "destination": "/guides/make-group-video-call",
+      "permanent": true
+    },
+    {
+      "source": "/tools/video-call-lighting-for-seniors",
+      "destination": "/guides/how-to-video-call",
+      "permanent": true
+    },
+    {
+      "source": "/tools/video-call-tips-for-family",
+      "destination": "/guides/how-to-video-call",
+      "permanent": true
+    },
+    {
+      "source": "/tools/vpn-for-seniors-explained",
+      "destination": "/tools/vpn-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/wallet-medical-card",
+      "destination": "/guides/how-to-make-paper-medical-wallet-card",
+      "permanent": true
+    },
+    {
+      "source": "/tools/walmart-plus-for-seniors",
+      "destination": "/guides/walmart-plus-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/when-to-stop-driving",
+      "destination": "/guides/how-to-know-when-time-to-stop-driving",
+      "permanent": true
+    },
+    {
+      "source": "/tools/wifi-password-reset",
+      "destination": "/tools/password-reset-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/will-estate-online",
+      "destination": "/tools/online-will-estate",
+      "permanent": true
+    },
+    {
+      "source": "/tools/windows-file-explorer-basics",
+      "destination": "/guides/use-file-explorer-windows",
+      "permanent": true
+    },
+    {
+      "source": "/tools/youtube-for-seniors",
+      "destination": "/guides/youtube-guide",
+      "permanent": true
+    },
+    {
+      "source": "/tools/youtube-music-for-seniors",
+      "destination": "/guides/use-youtube-music",
+      "permanent": true
+    },
+    {
+      "source": "/tools/youtube-tv-for-seniors",
+      "destination": "/guides/use-youtube-on-tv",
+      "permanent": true
     }
   ]
 }

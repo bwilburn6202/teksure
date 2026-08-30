@@ -3,14 +3,14 @@
 //
 // These numbers used to be hardcoded in Landing.tsx, Tools.tsx and
 // SiteIndex.tsx and had drifted badly (homepage claimed "2,500+ guides"
-// against ~4049; /tools claimed "150+" against 2969). Stale numbers read
+// against ~4032; /tools claimed "150+" against 13). Stale numbers read
 // as carelessness to a cautious audience. Use these constants in copy —
 // never type a count literal into a component.
 
 /** Exact counts at build time. */
-export const GUIDE_COUNT = 4049;
-export const TOOL_COUNT = 2969;
+export const GUIDE_COUNT = 4032;
+export const TOOL_COUNT = 13;
 
 /** Display strings, rounded down so the claim is always true. */
 export const GUIDE_COUNT_LABEL = '4,000+';
-export const TOOL_COUNT_LABEL = '2,900+';
+export const TOOL_COUNT_LABEL = '0+';

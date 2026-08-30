@@ -15,6 +15,7 @@
  * list and skip them.
  */
 import { readFileSync, writeFileSync } from 'fs';
+import { readToolRedirects } from './tool-slugs.mjs';
 import { dirname, join, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -33,7 +34,7 @@ export function readNavigateRedirects() {
 
 // Running as a script (not just imported as a helper).
 if (process.argv[1] && process.argv[1].endsWith('generate-redirects.mjs')) {
-  const redirects = readNavigateRedirects();
+  const redirects = [...readNavigateRedirects(), ...readToolRedirects()];
   const vercelPath = join(ROOT, 'vercel.json');
   const config = JSON.parse(readFileSync(vercelPath, 'utf8'));
 

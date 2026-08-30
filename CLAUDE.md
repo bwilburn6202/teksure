@@ -12,12 +12,21 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 - **Repo:** github.com/bwilburn6202/teksure · **Live:** https://www.teksure.com (canonical host is `www`; apex currently **307s**, not 301 — see blockers)
 - **Local:** `~/Documents/Claude/Projects/TekSure` · dev on :5173
 
-## Current state (2026-08-06)
-4,049 guides · 285 tools · ~7,100 sitemap URLs · TypeScript clean · 104/104 tests · prerendering live
+## Current state (2026-08-30)
+4,032 guides · 387 tools · 4,542 sitemap URLs · TypeScript clean · 106/106 tests · prerendering live
+
+**Thin-content cut, 2026-08-30.** `/tools` went from 2,970 pages to 387. 2,246 of the
+removed pages were under 300 words, 2,480 had no editorial inbound link, and 207
+near-duplicate topic clusters covered 443 of them. This was the guide-count problem
+repeated at the route layer — the 2026-08-04 quality-over-count decision had been applied
+to guides and never to tool pages. 474 removed slugs with a genuine equivalent redirect
+(308 at the edge); the rest 404 on purpose, because pointing 2,000 unrelated thin pages at
+a hub reads as a soft 404. Full reasoning: `docs/REDUNDANCY-AUDIT-2026-08-30.md`.
+**Do not add `/tools` pages to move a number either.**
 
 **Guide count target: retired.** Closed as MISSED at 4,049 by decision on 2026-08-04. 4,000 mediocre pages rank worse than 400 excellent ones. Do not add guides to move a number.
 
-**Open blockers (raise, don't work around):** analytics wiring unverified · monetization needs AdSense/affiliate credentials · hosted Ollama needs the Hetzner CX22 · `npm run build` OOMs in sandbox (needs ≥8GB) · readability sits at grade 8.3 with ~58.5% above grade 8 and needs one scripted bulk pass or an explicit decision to accept it · **apex `teksure.com` redirects to `www` with a 307 (temporary), not a 308/301** — path is preserved so users are fine, but a 307 does not consolidate link equity onto the canonical host. This is a Vercel *domain* setting, not `vercel.json`, so it cannot be fixed from the repo: Vercel dashboard → Project → Settings → Domains → `teksure.com` → set the redirect to permanent.
+**Open blockers (raise, don't work around):** analytics wiring unverified · monetization needs AdSense/affiliate credentials · hosted Ollama needs the Hetzner CX22 · ~~`npm run build` OOMs in sandbox~~ — fixed by the 2026-08-30 cut: 4,542 routes prerender in 5 shards at ~420MB RSS, 0 failed · readability sits at grade 8.3 with ~58.5% above grade 8 and needs one scripted bulk pass or an explicit decision to accept it · **apex `teksure.com` redirects to `www` with a 307 (temporary), not a 308/301** — path is preserved so users are fine, but a 307 does not consolidate link equity onto the canonical host. This is a Vercel *domain* setting, not `vercel.json`, so it cannot be fixed from the repo: Vercel dashboard → Project → Settings → Domains → `teksure.com` → set the redirect to permanent.
 
 ---
 
@@ -32,7 +41,9 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 - Verify what's actually live: `curl -s https://www.teksure.com/build-info.json`
 
 **Redirects**
-- Redirects come from `<Navigate>` routes in `App.tsx` via `scripts/generate-redirects.mjs`. Add them there, never by hand in `vercel.json`.
+- Redirects come from two places, both consumed by `scripts/generate-redirects.mjs`:
+  `<Navigate>` routes in `App.tsx`, and `src/data/tool-redirects.ts` for tool pages removed
+  in the 2026-08-30 cut. Add them there, never by hand in `vercel.json`.
 - **Turning a redirect back into a real page takes TWO steps.** `generate-redirects.mjs` preserves any redirect it no longer finds in `App.tsx`, treating it as hand-added — so the stale 308 survives and shadows the new page forever while the source looks correct. Delete the `vercel.json` entry by hand as well. (Cost a full session on `/pricing`, 2026-07-26.)
 
 **Data shape — this is the one that caused 440 type errors**
@@ -51,6 +62,16 @@ Tech support and digital literacy for non-technical users and seniors (60+). Fre
 ```
 - `GuideCategory` derives from `GUIDE_CATEGORIES` in `src/data/guides.ts`. Add categories to that array only — the type, tests, and `Record<GuideCategory, …>` maps follow.
 - **Every new batch file must be imported AND spread** in `guides.ts`, or its guides silently do not exist.
+
+**Tool pages are a registry, not a route table**
+- `/tools/<slug>` resolves through `src/data/tools-registry.ts` via a single dynamic
+  `/tools/:slug` route and `src/components/ToolRoute.tsx`. A tool that is not in that map
+  does not exist. `App.tsx` used to carry one `lazy()` and one `<Route>` per tool, which is
+  how it reached 7,445 lines and accumulated 37 duplicate route declarations that were
+  silently unreachable — React Router matched the first and ignored the second.
+- `scripts/generate-sitemap.mjs`, `scripts/generate-tools-directory.mjs` and
+  `scripts/prerender.mjs` all read the slug list through `scripts/tool-slugs.mjs`. If you
+  add a tool, add it to the registry — nothing scrapes `App.tsx` for tool routes any more.
 
 **Generated files — never hand-edit**
 `public/sitemap.xml` · `src/data/tools-directory.ts` · `src/data/site-stats.ts` · `vercel.json` (except redirect deletions above). All produced in `prebuild`. Do NOT add a second sitemap generator to `vite.config.ts` — one used to overwrite the good sitemap with guides only.
@@ -82,7 +103,7 @@ The 70+ accumulated `.stale*`/`.bak*` files are from past sessions hitting this 
 npx tsc --noEmit -p tsconfig.app.json
 npm test                        # 104 tests — brand voice + schema
 node scripts/validate-slugs.mjs
-npm run build                   # OOMs in sandbox — if it dies, SAY SO
+npm run build                   # ~40s + 5 prerender shards; verify prerender-report.json says complete
 ```
 
 ## Key locations

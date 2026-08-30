@@ -35,6 +35,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { readNavigateRedirects } from './generate-redirects.mjs';
+import { readToolSlugs, readToolRedirects } from './tool-slugs.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, '..');
@@ -95,7 +96,13 @@ function collectRoutes() {
   // Routes that only exist to redirect are served as real 308s by Vercel
   // (see scripts/generate-redirects.mjs). Prerendering them would emit an
   // empty page that competes with the destination in search results.
-  const redirectSources = new Set(readNavigateRedirects().map((r) => r.source));
+  const redirectSources = new Set([
+    ...readNavigateRedirects().map((r) => r.source),
+    ...readToolRedirects().map((r) => r.source),
+  ]);
+
+  // Tool pages resolve through src/data/tools-registry.ts, not the route table.
+  for (const slug of readToolSlugs()) routes.add(`/tools/${slug}`);
 
   for (const m of appTsx.matchAll(/path="(\/[^"]*)"/g)) {
     const p = m[1];
